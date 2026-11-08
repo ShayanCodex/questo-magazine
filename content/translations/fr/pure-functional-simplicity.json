@@ -1,0 +1,29 @@
+{
+  "slug": "pure-functional-simplicity",
+  "title": "[fr] Pure functional simplicity",
+  "excerpt": "[fr] A meditation on keeping architectures minimal and rejecting unnecessary runtime abstractions.",
+  "date": "2026-11-09",
+  "author": "Elena Vance",
+  "tags": [
+    "craft",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "[fr] Minimalist architectural perspective with crisp geometric shadows",
+  "body": [
+    {
+      "type": "p",
+      "text": "[fr] Every line of code added to a project represents liability. When static generation satisfies every business requirement, introducing a complex runtime server is an architectural misstep."
+    },
+    {
+      "type": "quote",
+      "text": "[fr] Simplicity is prerequisite for reliability.",
+      "cite": "[fr] Edsger W. Dijkstra"
+    },
+    {
+      "type": "p",
+      "text": "[fr] By generating every permutation of language and route ahead of time, we achieve absolute predictability."
+    }
+  ],
+  "sourceHash": "faf87086c35ea11823c378fdcafa67836fea7b30"
+}

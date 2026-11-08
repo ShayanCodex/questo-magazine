@@ -22,6 +22,12 @@ export const translations: Record<string, I18nStrings> = {
     returnHome: 'Return to home',
     articlesTagged: 'Articles tagged',
     noArticlesFound: 'No articles found in this collection.',
+    newsTicker: 'NEWS TICKER +++',
+    tickerHeadline:
+      'Dispatches on visual culture, architectural restraint, and modern typography +++ Issue 03 now in print +++',
+    printMagazine: 'PRINTMAGAZINE',
+    issueNumber: '03 / 2026',
+    textBy: 'Text',
   },
   es: {
     menu: 'Menú',
@@ -44,6 +50,12 @@ export const translations: Record<string, I18nStrings> = {
     returnHome: 'Volver al inicio',
     articlesTagged: 'Artículos con la etiqueta',
     noArticlesFound: 'No se encontraron artículos en esta colección.',
+    newsTicker: 'TELETIPO +++',
+    tickerHeadline:
+      'Despachos sobre cultura visual, arquitectura y tipografía moderna +++ Edición 03 ya impresa +++',
+    printMagazine: 'EDICIÓN IMPRESA',
+    issueNumber: '03 / 2026',
+    textBy: 'Texto',
   },
   fr: {
     menu: 'Menu',
@@ -66,6 +78,12 @@ export const translations: Record<string, I18nStrings> = {
     returnHome: "Retour à l'accueil",
     articlesTagged: 'Articles étiquetés',
     noArticlesFound: 'Aucun article trouvé dans cette rubrique.',
+    newsTicker: 'FIL INFO +++',
+    tickerHeadline:
+      'Dépêches sur la culture visuelle, la sobriété architecturale et la typographie +++ Numéro 03 en kiosque +++',
+    printMagazine: 'MAGAZINE IMPRIMÉ',
+    issueNumber: '03 / 2026',
+    textBy: 'Texte',
   },
   de: {
     menu: 'Menü',
@@ -88,6 +106,12 @@ export const translations: Record<string, I18nStrings> = {
     returnHome: 'Zur Startseite zurückkehren',
     articlesTagged: 'Artikel mit dem Schlagwort',
     noArticlesFound: 'Keine Artikel in diesem Bereich gefunden.',
+    newsTicker: 'TICKER +++',
+    tickerHeadline:
+      'Berichte über visuelle Kultur, architektonische Zurückhaltung und Typografie +++ Ausgabe 03 jetzt erhältlich +++',
+    printMagazine: 'PRINTAUSGABE',
+    issueNumber: '03 / 2026',
+    textBy: 'Text',
   },
   ar: {
     menu: 'القائمة',
@@ -110,6 +134,12 @@ export const translations: Record<string, I18nStrings> = {
     returnHome: 'العودة إلى الرئيسية',
     articlesTagged: 'مقالات تحت وسم',
     noArticlesFound: 'لم يتم العثور على مقالات في هذا القسم.',
+    newsTicker: 'شريط الأخبار +++',
+    tickerHeadline:
+      'تقارير حصرية عن الثقافة البصرية، العمارة، وفنون التصميم والخط +++ العدد 03 متاح الآن للطباعة +++',
+    printMagazine: 'المجلة المطبوعة',
+    issueNumber: '03 / 2026',
+    textBy: 'بقلم',
   },
   ur: {
     menu: 'مینو',
@@ -132,6 +162,11 @@ export const translations: Record<string, I18nStrings> = {
     returnHome: 'صفحۂ اول پر واپس جائیں',
     articlesTagged: 'اس ٹیگ کے مضامین',
     noArticlesFound: 'اس زمرے میں کوئی تحریر نہیں ملی۔',
+    newsTicker: 'تازہ خبریں +++',
+    tickerHeadline:
+      'بصری ثقافت، طرزِ تعمیر، ڈیزائن اور جدید طباعت پر مضامین +++ شمارہ نمبر 03 اب دستیاب ہے +++',
+    printMagazine: 'پرنٹ شمارہ',
+    issueNumber: '03 / 2026',
+    textBy: 'تحریر',
   },
 };
-

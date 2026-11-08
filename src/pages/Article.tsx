@@ -42,12 +42,13 @@ export function Article() {
   const canonicalPath = article.isFallback ? `/articles/${article.slug}` : pathname;
 
   return (
-    <article className="space-y-12 max-w-4xl">
+    <article className="space-y-10 sm:space-y-12 max-w-4xl mx-auto">
       <Seo
         title={article.title}
         description={article.excerpt}
         pathname={pathname}
         canonicalPath={canonicalPath}
+        image={article.image}
         type="article"
         articleDate={article.date}
         articleUpdated={article.updated}
@@ -71,13 +72,19 @@ export function Article() {
           </div>
         )}
 
-        <h1 className="font-display font-extrabold text-[clamp(2.25rem,5.5vw,3.75rem)] leading-[1.1] tracking-tight text-editorial-text text-start">
+        <h1 className="font-display font-black text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.05] tracking-tight text-editorial-text text-start uppercase">
           {article.title}
         </h1>
 
+        <p className="font-serif text-lg sm:text-xl text-editorial-muted leading-relaxed max-w-2xl">
+          {article.excerpt}
+        </p>
+
         {/* Article Meta */}
-        <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-sm font-mono text-editorial-muted pt-2 border-b border-editorial-border pb-6">
-          <span className="text-editorial-text font-medium">{article.author}</span>
+        <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-mono uppercase tracking-wider text-editorial-muted pt-2 border-b border-editorial-border pb-6">
+          <span>
+            <strong className="text-editorial-text font-semibold">{t.textBy}:</strong> {article.author}
+          </span>
           <span>•</span>
           <time dateTime={article.date}>{formattedDate}</time>
           {formattedUpdated && (
@@ -90,7 +97,19 @@ export function Article() {
         </div>
       </header>
 
-      {/* Main Prose Content */}
+      {/* Feature Hero Image */}
+      {article.image && (
+        <div className="w-full overflow-hidden rounded-sm border border-editorial-border my-8 aspect-[16/9] sm:aspect-[21/9]">
+          <img
+            src={article.image}
+            alt={article.imageAlt || article.title}
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+        </div>
+      )}
+
+      {/* Main Prose Content with Images and Videos */}
       <div className="pt-2">
         <Body blocks={article.body} />
       </div>
@@ -137,4 +156,3 @@ export function Article() {
     </article>
   );
 }
-

@@ -7,6 +7,7 @@ export interface SeoProps {
   description: string;
   pathname: string;
   canonicalPath?: string;
+  image?: string;
   type?: 'website' | 'article';
   articleDate?: string;
   articleUpdated?: string;
@@ -21,6 +22,7 @@ export function Seo({
   description,
   pathname,
   canonicalPath,
+  image,
   type = 'website',
   articleDate,
   articleUpdated,
@@ -33,6 +35,10 @@ export function Seo({
   const siteUrl = siteConfig.url.replace(/\/+$/, '');
   const pageTitle = `${title} — ${siteConfig.name}`;
   const canonicalUrl = getCanonicalUrl(canonicalPath || pathname);
+
+  const ogImage = image
+    ? (image.startsWith('http') ? image : `${siteUrl}${image.startsWith('/') ? image : `/${image}`}`)
+    : `${siteUrl}/favicon.svg`;
 
   // Compute hreflangs
   const langsToInclude = availableLanguages || siteConfig.languages.map((l) => l.code);
@@ -54,6 +60,7 @@ export function Seo({
       '@type': 'BlogPosting',
       headline: title,
       description,
+      image: ogImage,
       url: canonicalUrl,
       inLanguage: language.code,
       mainEntityOfPage: {
@@ -118,12 +125,14 @@ export function Seo({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:image" content={ogImage} />
       <meta property="og:locale" content={language.code} />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
 
       {/* JSON-LD Schemas */}
       <script type="application/ld+json">
@@ -137,4 +146,3 @@ export function Seo({
     </Head>
   );
 }
-

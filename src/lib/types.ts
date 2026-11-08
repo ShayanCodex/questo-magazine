@@ -12,7 +12,7 @@ export interface SiteConfig {
   languages: SiteLanguage[];
 }
 
-export type BlockType = 'p' | 'h2' | 'h3' | 'ul' | 'ol' | 'quote' | 'code';
+export type BlockType = 'p' | 'h2' | 'h3' | 'ul' | 'ol' | 'quote' | 'code' | 'image' | 'video';
 
 export interface ContentBlock {
   type: BlockType;
@@ -21,6 +21,11 @@ export interface ContentBlock {
   items?: string[];
   lang?: string;
   code?: string;
+  src?: string;
+  alt?: string;
+  caption?: string;
+  title?: string;
+  poster?: string;
 }
 
 export interface ArticleData {
@@ -32,6 +37,9 @@ export interface ArticleData {
   author: string;
   tags: string[];
   body: ContentBlock[];
+  image?: string;
+  imageAlt?: string;
+  featured?: boolean;
   sourceHash?: string;
   isFallback?: boolean; // Set true when serving English fallback on untranslated route
 }
@@ -60,5 +68,9 @@ export interface I18nStrings {
   returnHome: string;
   articlesTagged: string;
   noArticlesFound: string;
+  newsTicker: string;
+  tickerHeadline: string;
+  printMagazine: string;
+  issueNumber: string;
+  textBy: string;
 }
-

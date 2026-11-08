@@ -93,6 +93,12 @@ async function translateArticle(article, targetLang) {
   // Excerpt
   stringPool.push(article.excerpt);
 
+  let imageAltIdx = null;
+  if (typeof article.imageAlt === 'string') {
+    imageAltIdx = stringPool.length;
+    stringPool.push(article.imageAlt);
+  }
+
   // Body translatable elements
   const bodyMapping = [];
 
@@ -118,6 +124,30 @@ async function translateArticle(article, targetLang) {
         stringPool.push(item);
       }
       bodyMapping.push({ blockIndex: bi, type: block.type, itemIndices });
+    } else if (block.type === 'image') {
+      let altIdx = null;
+      let captionIdx = null;
+      if (block.alt) {
+        altIdx = stringPool.length;
+        stringPool.push(block.alt);
+      }
+      if (block.caption) {
+        captionIdx = stringPool.length;
+        stringPool.push(block.caption);
+      }
+      bodyMapping.push({ blockIndex: bi, type: 'image', raw: block, altIdx, captionIdx });
+    } else if (block.type === 'video') {
+      let titleIdx = null;
+      let captionIdx = null;
+      if (block.title) {
+        titleIdx = stringPool.length;
+        stringPool.push(block.title);
+      }
+      if (block.caption) {
+        captionIdx = stringPool.length;
+        stringPool.push(block.caption);
+      }
+      bodyMapping.push({ blockIndex: bi, type: 'video', raw: block, titleIdx, captionIdx });
     } else if (block.type === 'code') {
       bodyMapping.push({ blockIndex: bi, type: 'code', raw: block });
     }
@@ -127,6 +157,7 @@ async function translateArticle(article, targetLang) {
 
   const translatedTitle = translatedPool[0];
   const translatedExcerpt = translatedPool[1];
+  const translatedImageAlt = imageAltIdx !== null ? translatedPool[imageAltIdx] : undefined;
 
   const translatedBody = [];
 
@@ -150,6 +181,21 @@ async function translateArticle(article, targetLang) {
         type: m.type,
         items: m.itemIndices.map(idx => translatedPool[idx]),
       });
+    } else if (m.type === 'image') {
+      translatedBody.push({
+        type: 'image',
+        src: m.raw.src,
+        alt: m.altIdx !== null ? translatedPool[m.altIdx] : m.raw.alt,
+        ...(m.captionIdx !== null ? { caption: translatedPool[m.captionIdx] } : (m.raw.caption ? { caption: m.raw.caption } : {})),
+      });
+    } else if (m.type === 'video') {
+      translatedBody.push({
+        type: 'video',
+        src: m.raw.src,
+        ...(m.raw.poster ? { poster: m.raw.poster } : {}),
+        ...(m.titleIdx !== null ? { title: translatedPool[m.titleIdx] } : (m.raw.title ? { title: m.raw.title } : {})),
+        ...(m.captionIdx !== null ? { caption: translatedPool[m.captionIdx] } : (m.raw.caption ? { caption: m.raw.caption } : {})),
+      });
     } else if (m.type === 'code') {
       // NEVER translate code blocks
       translatedBody.push({ ...m.raw });
@@ -166,6 +212,9 @@ async function translateArticle(article, targetLang) {
     ...(article.updated ? { updated: article.updated } : {}),
     author: article.author,
     tags: [...article.tags],
+    ...(article.image ? { image: article.image } : {}),
+    ...(translatedImageAlt ? { imageAlt: translatedImageAlt } : (article.imageAlt ? { imageAlt: article.imageAlt } : {})),
+    ...(article.featured !== undefined ? { featured: article.featured } : {}),
     body: translatedBody,
     sourceHash,
   };
@@ -218,4 +267,3 @@ run().catch(err => {
   console.error('\n❌ Translation failed:', err);
   process.exit(1);
 });
-

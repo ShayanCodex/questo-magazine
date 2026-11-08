@@ -59,7 +59,7 @@ export function getAllTags() {
 
 /**
  * Extract all translatable strings from an article in consistent order.
- * Strictly excludes code blocks.
+ * Strictly excludes code blocks and media URL sources.
  */
 export function extractTranslatableStrings(article) {
   const strings = [];
@@ -68,6 +68,9 @@ export function extractTranslatableStrings(article) {
   }
   if (typeof article.excerpt === 'string') {
     strings.push(article.excerpt);
+  }
+  if (typeof article.imageAlt === 'string') {
+    strings.push(article.imageAlt);
   }
   if (Array.isArray(article.body)) {
     for (const block of article.body) {
@@ -81,8 +84,14 @@ export function extractTranslatableStrings(article) {
         for (const item of block.items) {
           if (typeof item === 'string') strings.push(item);
         }
+      } else if (block.type === 'image') {
+        if (typeof block.alt === 'string') strings.push(block.alt);
+        if (typeof block.caption === 'string') strings.push(block.caption);
+      } else if (block.type === 'video') {
+        if (typeof block.title === 'string') strings.push(block.title);
+        if (typeof block.caption === 'string') strings.push(block.caption);
       }
-      // code blocks are intentionally never added
+      // code blocks and media URLs (src, poster) are intentionally never translated
     }
   }
   return strings;
@@ -128,4 +137,3 @@ export function getIncludedRoutes() {
 
   return routes;
 }
-

@@ -25,7 +25,7 @@ export function Layout({ tags = [] }: LayoutProps) {
   const currentPath = location.pathname;
 
   return (
-    <div className="min-h-screen flex flex-col bg-editorial-bg text-editorial-text">
+    <div className="min-h-screen flex flex-col bg-editorial-bg text-editorial-text selection:bg-accent selection:text-white">
       {/* Accessible Skip Link */}
       <a
         href="#main-content"
@@ -34,45 +34,64 @@ export function Layout({ tags = [] }: LayoutProps) {
         {t.skipToContent}
       </a>
 
-      {/* Editorial Header */}
-      <header className="border-b border-editorial-border py-6 px-6 sm:px-10 lg:px-16">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
+      {/* Editorial Top Bar (Fyrre Magazine Style) */}
+      <header className="border-b border-editorial-border py-4 px-6 sm:px-10 lg:px-16">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Brand Wordmark / Publication Title */}
           <Link
             to={localePath('/')}
-            className="font-display font-extrabold text-2xl tracking-tighter hover:text-accent transition-colors"
+            className="font-display font-extrabold text-sm sm:text-base uppercase tracking-widest text-editorial-text hover:text-accent transition-colors"
           >
-            {siteConfig.name}
+            {siteConfig.name} Magazine
           </Link>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setDrawerOpen(true)}
-            className="text-xs uppercase font-mono tracking-wider gap-2 min-h-[44px] min-w-[44px] px-3.5"
-            aria-label={t.menu}
-          >
-            <Bars3Icon className="h-4 w-4" />
-            <span>{t.menu}</span>
-          </Button>
+          {/* Top navigation links & icons */}
+          <div className="flex items-center gap-6 sm:gap-8">
+            <nav className="hidden md:flex items-center gap-6 text-xs uppercase font-mono tracking-wider text-editorial-muted">
+              <Link to={localePath('/')} className="hover:text-editorial-text transition-colors">
+                {t.home}
+              </Link>
+              <Link to={localePath('/articles')} className="hover:text-editorial-text transition-colors">
+                {t.articles}
+              </Link>
+            </nav>
+
+            {/* Quick Language Indicator */}
+            <div className="hidden sm:flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-editorial-muted border-x border-editorial-border px-4 py-1">
+              <span>{language.name}</span>
+            </div>
+
+            {/* Menu Trigger */}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setDrawerOpen(true)}
+              className="text-xs uppercase font-mono tracking-wider gap-2 min-h-[36px] min-w-[36px] px-3 border-editorial-border hover:border-editorial-text"
+              aria-label={t.menu}
+            >
+              <Bars3Icon className="h-4 w-4" />
+              <span>{t.menu}</span>
+            </Button>
+          </div>
         </div>
       </header>
 
       {/* Main Content Viewport */}
       <main
         id="main-content"
-        className="flex-1 max-w-6xl w-full mx-auto px-6 sm:px-10 lg:px-16 py-12 sm:py-16"
+        className="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-10 lg:px-16 py-6 sm:py-10"
       >
         <Outlet />
       </main>
 
-      {/* Editorial Footer with Plain Language Links for Crawlers */}
-      <footer className="border-t border-editorial-border py-12 px-6 sm:px-10 lg:px-16 mt-auto">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+      {/* Editorial Footer */}
+      <footer className="border-t border-editorial-border py-12 px-6 sm:px-10 lg:px-16 mt-auto bg-editorial-surface/40">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div>
-            <span className="font-display font-bold text-lg tracking-tight">
-              {siteConfig.name}
+            <span className="font-display font-black text-xl uppercase tracking-tighter">
+              {siteConfig.name} Magazine
             </span>
-            <p className="font-serif text-sm text-editorial-muted mt-1 max-w-md">
+            <p className="font-serif text-sm text-editorial-muted mt-2 max-w-md">
               {siteConfig.description}
             </p>
           </div>
@@ -111,12 +130,12 @@ export function Layout({ tags = [] }: LayoutProps) {
         </div>
       </footer>
 
-      {/* Drawer Navigation (Radix Dialog / Shadcn Sheet) */}
+      {/* Drawer Navigation */}
       <Sheet open={drawerOpen} onOpenChange={setDrawerOpen}>
         <SheetContent side="inlineEnd" className="flex flex-col justify-between">
           <div className="space-y-8">
             <SheetHeader>
-              <SheetTitle>{siteConfig.name}</SheetTitle>
+              <SheetTitle>{siteConfig.name} Magazine</SheetTitle>
               <SheetDescription className="sr-only">
                 Main navigation and language selection
               </SheetDescription>
@@ -127,14 +146,14 @@ export function Layout({ tags = [] }: LayoutProps) {
               <Link
                 to={localePath('/')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-3xl font-semibold tracking-tight hover:text-accent transition-colors"
+                className="font-display text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.home}
               </Link>
               <Link
                 to={localePath('/articles')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-3xl font-semibold tracking-tight hover:text-accent transition-colors"
+                className="font-display text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.articles}
               </Link>
@@ -196,4 +215,3 @@ export function Layout({ tags = [] }: LayoutProps) {
     </div>
   );
 }
-

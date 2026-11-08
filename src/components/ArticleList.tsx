@@ -32,7 +32,7 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
         return (
           <article
             key={article.slug}
-            className="article-row group/row relative py-8 sm:py-12 transition-opacity"
+            className="article-row group/row relative py-8 sm:py-10 transition-opacity"
           >
             {/* The primary link covering the whole row */}
             <Link
@@ -42,16 +42,16 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
               tabIndex={-1}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start pointer-events-none">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start pointer-events-none">
               {/* Meta column: date & reading time */}
-              <div className="md:col-span-3 text-sm text-editorial-muted font-mono tracking-tight flex flex-row md:flex-col justify-between md:justify-start gap-1">
+              <div className="md:col-span-3 text-xs font-mono uppercase tracking-wider text-editorial-muted flex flex-row md:flex-col justify-between md:justify-start gap-1">
                 <time dateTime={article.date}>{formattedDate}</time>
                 <span className="opacity-70">{readingTime}</span>
               </div>
 
               {/* Content column: Title, excerpt, and tags */}
-              <div className="md:col-span-9 space-y-3">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-semibold tracking-tight text-editorial-text group-hover/row:text-accent transition-colors leading-[1.15]">
+              <div className="md:col-span-6 space-y-3">
+                <h2 className="text-2xl sm:text-3xl font-display font-black tracking-tight text-editorial-text group-hover/row:text-accent transition-colors leading-[1.1] uppercase">
                   <Link
                     to={articlePath}
                     className="pointer-events-auto hover:text-accent transition-colors focus-visible:outline-none"
@@ -60,7 +60,7 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
                   </Link>
                 </h2>
 
-                <p className="font-serif text-editorial-muted text-base sm:text-lg leading-relaxed max-w-[64ch]">
+                <p className="font-serif text-editorial-muted text-sm sm:text-base leading-relaxed max-w-[60ch]">
                   {article.excerpt}
                 </p>
 
@@ -73,12 +73,28 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
                         to={localePath(`/tags/${tag}`)}
                         className="focus:outline-none"
                       >
-                        <Badge variant="default">#{tag}</Badge>
+                        <Badge variant="default" className="text-[10px] uppercase">
+                          #{tag}
+                        </Badge>
                       </Link>
                     ))}
                   </div>
                 )}
               </div>
+
+              {/* Artwork thumbnail column */}
+              {article.image && (
+                <div className="md:col-span-3 hidden sm:block">
+                  <div className="aspect-[4/3] rounded-sm overflow-hidden border border-editorial-border bg-editorial-surface">
+                    <img
+                      src={article.image}
+                      alt={article.imageAlt || article.title}
+                      className="w-full h-full object-cover group-hover/row:scale-105 transition-transform duration-500 ease-out"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           </article>
         );
@@ -86,4 +102,3 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
     </div>
   );
 }
-

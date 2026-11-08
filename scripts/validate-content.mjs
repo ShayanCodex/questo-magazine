@@ -12,7 +12,7 @@ const translationsDir = path.join(rootDir, 'content', 'translations');
 
 const SLUG_REGEX = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE_REGEX = /^\d{4}-\d{2}-\d{2}$/;
-const ALLOWED_BLOCK_TYPES = new Set(['p', 'h2', 'h3', 'ul', 'ol', 'quote', 'code']);
+const ALLOWED_BLOCK_TYPES = new Set(['p', 'h2', 'h3', 'ul', 'ol', 'quote', 'code', 'image', 'video']);
 
 let hasError = false;
 
@@ -69,6 +69,31 @@ function validateBlock(block, index, filePath) {
         reportError(filePath, `body[${index}].lang`, 'Block "code" lang must be a string if provided');
       }
       break;
+    case 'image':
+      if (typeof block.src !== 'string' || block.src.trim() === '') {
+        reportError(filePath, `body[${index}].src`, 'Block "image" must have a non-empty string "src"');
+      }
+      if (typeof block.alt !== 'string') {
+        reportError(filePath, `body[${index}].alt`, 'Block "image" must have a string "alt"');
+      }
+      if (block.caption !== undefined && typeof block.caption !== 'string') {
+        reportError(filePath, `body[${index}].caption`, 'Block "image" caption must be a string if provided');
+      }
+      break;
+    case 'video':
+      if (typeof block.src !== 'string' || block.src.trim() === '') {
+        reportError(filePath, `body[${index}].src`, 'Block "video" must have a non-empty string "src"');
+      }
+      if (block.title !== undefined && typeof block.title !== 'string') {
+        reportError(filePath, `body[${index}].title`, 'Block "video" title must be a string if provided');
+      }
+      if (block.caption !== undefined && typeof block.caption !== 'string') {
+        reportError(filePath, `body[${index}].caption`, 'Block "video" caption must be a string if provided');
+      }
+      if (block.poster !== undefined && typeof block.poster !== 'string') {
+        reportError(filePath, `body[${index}].poster`, 'Block "video" poster must be a string if provided');
+      }
+      break;
   }
 }
 
@@ -113,6 +138,21 @@ function validateArticleObject(article, filePath, expectedSlug) {
   // Author
   if (typeof article.author !== 'string' || article.author.trim() === '') {
     reportError(filePath, 'author', 'Author must be a non-empty string');
+  }
+
+  // Optional Image
+  if (article.image !== undefined && typeof article.image !== 'string') {
+    reportError(filePath, 'image', 'Article image must be a string URL/path if provided');
+  }
+
+  // Optional ImageAlt
+  if (article.imageAlt !== undefined && typeof article.imageAlt !== 'string') {
+    reportError(filePath, 'imageAlt', 'Article imageAlt must be a string if provided');
+  }
+
+  // Optional Featured
+  if (article.featured !== undefined && typeof article.featured !== 'boolean') {
+    reportError(filePath, 'featured', 'Article featured must be a boolean if provided');
   }
 
   // Tags
@@ -226,4 +266,3 @@ if (hasError) {
 } else {
   console.log(`\n✅ Content validation passed: ${articleFiles.length} source article(s) validated successfully.\n`);
 }
-

@@ -79,6 +79,58 @@ export function Body({ blocks }: BodyProps) {
               </blockquote>
             );
 
+          case 'image':
+            return (
+              <figure key={index} className="my-10 space-y-3">
+                <img
+                  src={block.src}
+                  alt={block.alt || 'Editorial illustration'}
+                  loading="lazy"
+                  className="w-full h-auto rounded-sm border border-editorial-border object-cover max-h-[560px]"
+                />
+                {block.caption && (
+                  <figcaption className="text-xs sm:text-sm font-sans text-editorial-muted italic tracking-wide">
+                    — {block.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+
+          case 'video': {
+            const isEmbed = block.src?.includes('embed') || block.src?.includes('youtube.com') || block.src?.includes('vimeo.com');
+
+            return (
+              <figure key={index} className="my-10 space-y-3">
+                {isEmbed ? (
+                  <div className="aspect-video w-full rounded-sm overflow-hidden border border-editorial-border bg-black">
+                    <iframe
+                      src={block.src}
+                      title={block.title || 'Video player'}
+                      className="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : (
+                  <video
+                    src={block.src}
+                    poster={block.poster}
+                    controls
+                    className="w-full rounded-sm border border-editorial-border aspect-video bg-black"
+                    preload="metadata"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                )}
+                {block.caption && (
+                  <figcaption className="text-xs sm:text-sm font-sans text-editorial-muted italic tracking-wide">
+                    — {block.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+          }
+
           case 'code':
             return (
               <div
@@ -103,4 +155,3 @@ export function Body({ blocks }: BodyProps) {
     </div>
   );
 }
-

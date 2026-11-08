@@ -1,18 +1,21 @@
 {
   "slug": "the-death-of-the-card-grid",
-  "title": "The death of the card grid",
-  "excerpt": "Why editorial publications are returning to typographic indexes, confident scale, and intentional whitespace.",
-  "date": "2026-11-07",
+  "title": "Don't close your eyes",
+  "excerpt": "Why editorial publications are returning to monumental typography, confident scale, and cinematic visual rhythm.",
+  "date": "2026-11-08",
   "author": "Elena Vance",
+  "featured": true,
+  "image": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Large monochrome street art mural with layered human expressions",
   "tags": [
-    "design-systems",
-    "editorial",
-    "typography"
+    "art",
+    "street-art",
+    "design-systems"
   ],
   "body": [
     {
       "type": "p",
-      "text": "For over a decade, digital publishing followed an unquestioned convention: everything must reside in a rounded card with a drop shadow, a generic unsplash thumbnail, and an eyebrow badge. Web layouts began to resemble supermarket shelves rather than considered reading environments."
+      "text": "For over a decade, digital publishing followed an unquestioned convention: everything must reside in a rounded card with a drop shadow, a generic thumbnail, and an eyebrow badge. Web layouts began to resemble supermarket shelves rather than considered reading environments."
     },
     {
       "type": "h2",
@@ -23,13 +26,19 @@
       "text": "When we remove the visual scaffolding of cards, borders, and colorful chips, something remarkable happens. The typography is forced to carry the weight of hierarchy. The relationship between headline scale, baseline grid, and generous negative space creates an authentic editorial cadence."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Dramatic high contrast street art mural painted across textured brick",
+      "caption": "Figure 1: Murals in Berlin demonstrating raw scale and uncompromised graphic voice."
+    },
+    {
       "type": "quote",
       "text": "Whitespace is not empty space; it is the silent room in which typography speaks.",
       "cite": "Jan Tschichold, The New Typography"
     },
     {
       "type": "p",
-      "text": "By shifting focus from containers to content, editorial sites achieve several distinct advantages:"
+      "text": "By shifting focus from containers to content, editorial sites achieve distinct advantages:"
     },
     {
       "type": "ul",
@@ -41,21 +50,23 @@
     },
     {
       "type": "h2",
-      "text": "The index pattern"
+      "text": "Cinematic visual pacing"
     },
     {
-      "type": "p",
-      "text": "The typographic index replaces uniform card grids with a deliberate table of contents. Dates and metadata sit calmly at the side, while headline typography commands the viewport. A single micro-interaction—dimming non-hovered siblings—guides attention without theatrical animations."
+      "type": "video",
+      "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "poster": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
+      "title": "Documentary excerpt on public murals and typography",
+      "caption": "Short film: Documenting the intersection of urban surfaces, typography, and contemporary life."
     },
     {
       "type": "code",
       "lang": "css",
-      "code": ".index-list:hover .index-row:not(:hover) {\n  opacity: 0.3;\n  transition: opacity 180ms ease;\n}"
+      "code": ".masthead-title {\n  font-size: clamp(4rem, 14vw, 11rem);\n  letter-spacing: -0.05em;\n  line-height: 0.9;\n}"
     },
     {
       "type": "p",
-      "text": "Restraint is not the absence of design; it is the courage to let the text be the centerpiece."
+      "text": "Restraint is not the absence of design; it is the courage to let the image and the word be the centerpiece."
     }
   ]
 }
-

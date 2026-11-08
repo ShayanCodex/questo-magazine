@@ -1,21 +1,30 @@
 {
   "slug": "craft-over-convenience",
-  "title": "[ar] Craft over convenience",
-  "excerpt": "[ar] Rejecting generic SaaS templates in favor of typographic restraint, tactile hover states, and bi-directional prose.",
+  "title": "[ar] Hope dies last",
+  "excerpt": "[ar] A visual and critical exploration of classical form, enduring craftsmanship, and contemporary relevance.",
   "date": "2026-11-06",
-  "author": "Marcus Lind",
+  "author": "Anne Hardy",
   "tags": [
+    "art",
     "craft",
-    "design-systems"
+    "sculpture"
   ],
+  "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+  "imageAlt": "[ar] Classical renaissance marble statue bust in contemplative shadow",
   "body": [
     {
       "type": "p",
-      "text": "[ar] Every tool offers a default path. Modern component libraries often funnel design teams toward the same beige aesthetic: rounded buttons, soft purple shadows, and card carousels. Breaking free of this gravitational pull requires intentional resistance."
+      "text": "[ar] Every tool offers a default path. Modern publishing tools often funnel teams toward the same beige aesthetic: rounded buttons, soft purple shadows, and card carousels. Breaking free of this gravitational pull requires intentional resistance."
     },
     {
       "type": "h2",
       "text": "[ar] Principles of restraint"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80",
+      "alt": "[ar] Contemplative marble sculpture under directional studio illumination",
+      "caption": "[ar] Figure 2: The tension between permanence and ephemeral digital trends."
     },
     {
       "type": "p",
@@ -43,5 +52,5 @@
       "text": "[ar] True craft is felt in what is left out."
     }
   ],
-  "sourceHash": "6fa74381e0b3466a99a9ad10e40749cc1466b2db"
+  "sourceHash": "be85304c03b198371701b2dc151cc9b74bda73ef"
 }
