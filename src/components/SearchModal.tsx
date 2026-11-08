@@ -6,6 +6,7 @@ import {
   XMarkIcon,
   ArrowRightIcon,
 } from '@heroicons/react/24/outline';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { cn } from '../lib/utils';
@@ -28,9 +29,48 @@ export function SearchModal({
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
   const navigate = useNavigate();
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
+
+  const checkSliderScroll = () => {
+    if (!sliderRef.current) return;
+    const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
+    const maxScroll = scrollWidth - clientWidth;
+    if (maxScroll <= 0) {
+      setCanScrollLeft(false);
+      setCanScrollRight(false);
+      return;
+    }
+    const current = Math.abs(scrollLeft);
+    setCanScrollLeft(current > 4);
+    setCanScrollRight(current < maxScroll - 4);
+  };
+
+  useEffect(() => {
+    checkSliderScroll();
+    const el = sliderRef.current;
+    if (el) {
+      el.addEventListener('scroll', checkSliderScroll);
+      window.addEventListener('resize', checkSliderScroll);
+      return () => {
+        el.removeEventListener('scroll', checkSliderScroll);
+        window.removeEventListener('resize', checkSliderScroll);
+      };
+    }
+  }, [tags, open]);
+
+  const slide = (direction: 'left' | 'right') => {
+    if (!sliderRef.current) return;
+    const scrollAmount = 180;
+    const multiplier = direction === 'left' ? -1 : 1;
+    const delta = isRtl ? -multiplier * scrollAmount : multiplier * scrollAmount;
+    sliderRef.current.scrollBy({ left: delta, behavior: 'smooth' });
+    setTimeout(checkSliderScroll, 250);
+  };
 
   // Filter items based on query and selected tag
   const filtered = useMemo(() => {
@@ -128,36 +168,74 @@ export function SearchModal({
             </kbd>
           </div>
 
-          {/* Topic Filters Row (No landscape scrollbar) */}
+          {/* Topic Filters Row with Landscape Slider Arrows */}
           {tags.length > 0 && (
-            <div className="flex items-center gap-1.5 px-4 py-2.5 sm:px-6 border-b border-editorial-border/60 bg-editorial-bg/50 overflow-x-auto no-scrollbar text-xs font-mono">
+            <div className="relative flex items-center border-b border-editorial-border/60 bg-editorial-bg/50 px-2 sm:px-4 py-2">
+              {/* Left Slide Arrow Button */}
               <button
                 type="button"
-                onClick={() => setSelectedTag(null)}
+                onClick={() => slide('left')}
+                disabled={!canScrollLeft}
                 className={cn(
-                  'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
-                  selectedTag === null
-                    ? 'bg-accent text-white font-semibold shadow-xs'
-                    : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
+                  'shrink-0 p-1.5 rounded-sm bg-editorial-surface border border-editorial-border transition-all cursor-pointer me-1.5',
+                  canScrollLeft
+                    ? 'text-editorial-text hover:border-accent hover:text-accent opacity-100 shadow-2xs'
+                    : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
                 )}
+                aria-label="Slide topics left"
               >
-                {t.allTopics}
+                <ChevronLeftIcon className="h-4 w-4" />
               </button>
-              {tags.map((tag) => (
+
+              {/* Scrollable Topics Track */}
+              <div
+                ref={sliderRef}
+                className="flex items-center gap-1.5 overflow-x-auto no-scrollbar scroll-smooth flex-1 py-0.5 text-xs font-mono"
+              >
                 <button
-                  key={tag}
                   type="button"
-                  onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+                  onClick={() => setSelectedTag(null)}
                   className={cn(
                     'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
-                    selectedTag === tag
+                    selectedTag === null
                       ? 'bg-accent text-white font-semibold shadow-xs'
                       : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
                   )}
                 >
-                  #{tag}
+                  {t.allTopics}
                 </button>
-              ))}
+                {tags.map((tag) => (
+                  <button
+                    key={tag}
+                    type="button"
+                    onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+                    className={cn(
+                      'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
+                      selectedTag === tag
+                        ? 'bg-accent text-white font-semibold shadow-xs'
+                        : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
+                    )}
+                  >
+                    #{tag}
+                  </button>
+                ))}
+              </div>
+
+              {/* Right Slide Arrow Button */}
+              <button
+                type="button"
+                onClick={() => slide('right')}
+                disabled={!canScrollRight}
+                className={cn(
+                  'shrink-0 p-1.5 rounded-sm bg-editorial-surface border border-editorial-border transition-all cursor-pointer ms-1.5',
+                  canScrollRight
+                    ? 'text-editorial-text hover:border-accent hover:text-accent opacity-100 shadow-2xs'
+                    : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
+                )}
+                aria-label="Slide topics right"
+              >
+                <ChevronRightIcon className="h-4 w-4" />
+              </button>
             </div>
           )}
 

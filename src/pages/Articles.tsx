@@ -1,10 +1,11 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import {
   MagnifyingGlassIcon,
   XMarkIcon,
   AdjustmentsHorizontalIcon,
 } from '@heroicons/react/24/outline';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
@@ -20,11 +21,52 @@ interface ArticlesLoaderData {
 
 export function Articles() {
   const { articles, pathname } = useLoaderData() as ArticlesLoaderData;
-  const { t, localePath } = useLanguage();
+  const { t, localePath, language } = useLanguage();
+  const isRtl = language.dir === 'rtl';
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<'newest' | 'oldest'>('newest');
+
+  const topicSliderRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const checkTopicScroll = () => {
+    if (!topicSliderRef.current) return;
+    const { scrollLeft, scrollWidth, clientWidth } = topicSliderRef.current;
+    const maxScroll = scrollWidth - clientWidth;
+    if (maxScroll <= 0) {
+      setCanScrollLeft(false);
+      setCanScrollRight(false);
+      return;
+    }
+    const current = Math.abs(scrollLeft);
+    setCanScrollLeft(current > 4);
+    setCanScrollRight(current < maxScroll - 4);
+  };
+
+  useEffect(() => {
+    checkTopicScroll();
+    const el = topicSliderRef.current;
+    if (el) {
+      el.addEventListener('scroll', checkTopicScroll);
+      window.addEventListener('resize', checkTopicScroll);
+      return () => {
+        el.removeEventListener('scroll', checkTopicScroll);
+        window.removeEventListener('resize', checkTopicScroll);
+      };
+    }
+  }, [articles]);
+
+  const slideTopics = (direction: 'left' | 'right') => {
+    if (!topicSliderRef.current) return;
+    const scrollAmount = 200;
+    const multiplier = direction === 'left' ? -1 : 1;
+    const delta = isRtl ? -multiplier * scrollAmount : multiplier * scrollAmount;
+    topicSliderRef.current.scrollBy({ left: delta, behavior: 'smooth' });
+    setTimeout(checkTopicScroll, 250);
+  };
 
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
@@ -163,39 +205,77 @@ export function Articles() {
           </div>
         </div>
 
-        {/* Topic Filter Pills using Theme Accents */}
+        {/* Topic Filter Pills using Theme Accents with Click-to-Slide Arrows */}
         {allTags.length > 0 && (
-          <div className="flex flex-wrap items-center gap-2 pt-3 border-t border-editorial-border/60">
+          <div className="relative flex items-center pt-3 border-t border-editorial-border/60 gap-1.5">
+            {/* Left Slide Arrow */}
             <button
               type="button"
-              onClick={() => setSelectedTag(null)}
+              onClick={() => slideTopics('left')}
+              disabled={!canScrollLeft}
               className={cn(
-                'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer',
-                selectedTag === null
-                  ? 'bg-accent text-white font-semibold shadow-xs'
-                  : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
+                'shrink-0 p-1.5 rounded-sm bg-editorial-bg border border-editorial-border transition-all cursor-pointer me-1',
+                canScrollLeft
+                  ? 'text-editorial-text hover:border-accent hover:text-accent shadow-2xs opacity-100'
+                  : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
               )}
+              aria-label="Slide topics left"
             >
-              {t.allTopics} ({articles.length})
+              <ChevronLeftIcon className="h-4 w-4" />
             </button>
-            {allTags.map((tag) => {
-              const count = articles.filter((a) => a.tags?.includes(tag)).length;
-              return (
-                <button
-                  key={tag}
-                  type="button"
-                  onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
-                  className={cn(
-                    'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer',
-                    selectedTag === tag
-                      ? 'bg-accent text-white font-semibold shadow-xs'
-                      : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
-                  )}
-                >
-                  #{tag} ({count})
-                </button>
-              );
-            })}
+
+            {/* Scrollable Track */}
+            <div
+              ref={topicSliderRef}
+              className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth flex-1 py-1"
+            >
+              <button
+                type="button"
+                onClick={() => setSelectedTag(null)}
+                className={cn(
+                  'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
+                  selectedTag === null
+                    ? 'bg-accent text-white font-semibold shadow-xs'
+                    : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
+                )}
+              >
+                {t.allTopics} ({articles.length})
+              </button>
+              {allTags.map((tag) => {
+                const count = articles.filter((a) => a.tags?.includes(tag)).length;
+                return (
+                  <button
+                    key={tag}
+                    type="button"
+                    onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+                    className={cn(
+                      'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
+                      selectedTag === tag
+                        ? 'bg-accent text-white font-semibold shadow-xs'
+                        : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
+                    )}
+                  >
+                    #{tag} ({count})
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Right Slide Arrow */}
+            <button
+              type="button"
+              onClick={() => slideTopics('right')}
+              disabled={!canScrollRight}
+              className={cn(
+                'shrink-0 p-1.5 rounded-sm bg-editorial-bg border border-editorial-border transition-all cursor-pointer ms-1',
+                canScrollRight
+                  ? 'text-editorial-text hover:border-accent hover:text-accent shadow-2xs opacity-100'
+                  : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
+              )}
+              aria-label="Slide topics right"
+            >
+              <ChevronRightIcon className="h-4 w-4" />
+            </button>
           </div>
         )}
       </section>

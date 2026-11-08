@@ -13,35 +13,38 @@ async function run() {
   const page = await browser.newPage();
   await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 2 });
 
-  // 1. Articles archive with themed search bar
-  console.log('Capturing Articles archive with themed search bar...');
-  await page.goto('http://localhost:4173/articles', { waitUntil: 'networkidle0' });
-  await page.screenshot({
-    path: path.join(artifactsDir, 'screenshot-articles-themed-search.png'),
-    fullPage: false,
-  });
-
-  // 2. Open Search Modal to verify landscape scrollbar is completely removed
-  console.log('Opening and capturing search modal...');
+  // 1. Open Search Modal
+  console.log('Opening Search Modal...');
+  await page.goto('http://localhost:4173/', { waitUntil: 'networkidle0' });
   const searchBtn = await page.$('button[aria-label="Search"]');
   if (searchBtn) {
     await searchBtn.click();
     await new Promise((r) => setTimeout(r, 400));
     await page.screenshot({
-      path: path.join(artifactsDir, 'screenshot-search-modal-fixed.png'),
+      path: path.join(artifactsDir, 'screenshot-search-modal-slider-initial.png'),
     });
+
+    // 2. Click the right arrow slider button to slide topics
+    console.log('Clicking the right arrow slider button...');
+    const slideRightBtn = await page.$('button[aria-label="Slide topics right"]');
+    if (slideRightBtn) {
+      await slideRightBtn.click();
+      await new Promise((r) => setTimeout(r, 500));
+      await page.screenshot({
+        path: path.join(artifactsDir, 'screenshot-search-modal-slider-slid.png'),
+      });
+    }
   }
 
-  // 3. Home page with new sections (FAQ, Disciplines, Manifesto, Dispatch)
-  console.log('Capturing Home page with new editorial components...');
-  await page.goto('http://localhost:4173/', { waitUntil: 'networkidle0' });
+  // 3. Articles archive page with topic arrow slider
+  console.log('Capturing Articles archive page topic arrow slider...');
+  await page.goto('http://localhost:4173/articles', { waitUntil: 'networkidle0' });
   await page.screenshot({
-    path: path.join(artifactsDir, 'screenshot-home-new-components.png'),
-    fullPage: true,
+    path: path.join(artifactsDir, 'screenshot-articles-arrow-slider.png'),
   });
 
   await browser.close();
-  console.log('All screenshots captured successfully!');
+  console.log('All slider screenshots captured successfully!');
 }
 
 run().catch((err) => {
