@@ -1,0 +1,16 @@
+# Default caching and security headers for all clean URLs and HTML pages
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Sitemap and robots
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Content-hashed static JavaScript, CSS, and media assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

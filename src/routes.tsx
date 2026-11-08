@@ -26,7 +26,16 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
     element: <LanguageRoot language={lang} />,
     loader: async () => {
       const tags = await loadAllTags();
-      return { tags };
+      const allArticles = await loadAllArticles(lang.code);
+      const searchIndex = allArticles.map((a) => ({
+        slug: a.slug,
+        title: a.title,
+        excerpt: a.excerpt,
+        date: a.date,
+        tags: a.tags,
+        author: a.author,
+      }));
+      return { tags, searchIndex };
     },
     children: [
       {

@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Bars3Icon } from '@heroicons/react/24/outline';
+import { Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
 import { Button } from './ui/button';
@@ -12,17 +13,32 @@ import {
   SheetDescription,
 } from './ui/sheet';
 import { Badge } from './ui/badge';
+import { SearchModal } from './SearchModal';
 
 export interface LayoutProps {
   tags?: string[];
+  searchIndex?: SearchItem[];
 }
 
-export function Layout({ tags = [] }: LayoutProps) {
+export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const { language, t, switchLanguagePath, localePath } = useLanguage();
 
   const currentPath = location.pathname;
+
+  // Global keyboard shortcut for search (⌘K / Ctrl+K)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setSearchOpen((prev) => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-editorial-bg text-editorial-text selection:bg-accent selection:text-white">
@@ -46,7 +62,7 @@ export function Layout({ tags = [] }: LayoutProps) {
           </Link>
 
           {/* Top navigation links & icons */}
-          <div className="flex items-center gap-6 sm:gap-8">
+          <div className="flex items-center gap-4 sm:gap-6 lg:gap-8">
             <nav className="hidden md:flex items-center gap-6 text-xs uppercase font-mono tracking-wider text-editorial-muted">
               <Link to={localePath('/')} className="hover:text-editorial-text transition-colors">
                 {t.home}
@@ -55,6 +71,20 @@ export function Layout({ tags = [] }: LayoutProps) {
                 {t.articles}
               </Link>
             </nav>
+
+            {/* Quick Search Button */}
+            <button
+              type="button"
+              onClick={() => setSearchOpen(true)}
+              className="flex items-center gap-2 px-2.5 py-1.5 rounded-sm border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono cursor-pointer"
+              aria-label={t.search}
+            >
+              <MagnifyingGlassIcon className="h-4 w-4" />
+              <span className="hidden sm:inline">{t.search}</span>
+              <kbd className="hidden sm:inline-block ms-1 px-1 text-[10px] bg-editorial-bg border border-editorial-border rounded-xs">
+                ⌘K
+              </kbd>
+            </button>
 
             {/* Quick Language Indicator */}
             <div className="hidden sm:flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-editorial-muted border-x border-editorial-border px-4 py-1">
@@ -66,7 +96,7 @@ export function Layout({ tags = [] }: LayoutProps) {
               variant="outline"
               size="sm"
               onClick={() => setDrawerOpen(true)}
-              className="text-xs uppercase font-mono tracking-wider gap-2 min-h-[36px] min-w-[36px] px-3 border-editorial-border hover:border-editorial-text"
+              className="text-xs uppercase font-mono tracking-wider gap-2 min-h-[36px] min-w-[36px] px-3 border-editorial-border hover:border-editorial-text cursor-pointer"
               aria-label={t.menu}
             >
               <Bars3Icon className="h-4 w-4" />
@@ -137,12 +167,30 @@ export function Layout({ tags = [] }: LayoutProps) {
             <SheetHeader>
               <SheetTitle>{siteConfig.name} Magazine</SheetTitle>
               <SheetDescription className="sr-only">
-                Main navigation and language selection
+                Main navigation, search, and language selection
               </SheetDescription>
             </SheetHeader>
 
+            {/* Quick Search in Drawer */}
+            <button
+              type="button"
+              onClick={() => {
+                setDrawerOpen(false);
+                setSearchOpen(true);
+              }}
+              className="w-full flex items-center justify-between p-3 rounded-sm border border-editorial-border hover:border-accent text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono uppercase tracking-wider cursor-pointer"
+            >
+              <span className="flex items-center gap-2">
+                <MagnifyingGlassIcon className="h-4 w-4 text-accent" />
+                <span>{t.search}</span>
+              </span>
+              <kbd className="px-1.5 py-0.5 text-[10px] bg-editorial-bg border border-editorial-border rounded-sm">
+                ⌘K
+              </kbd>
+            </button>
+
             {/* Primary Large Links */}
-            <nav className="flex flex-col space-y-4 pt-4">
+            <nav className="flex flex-col space-y-4 pt-2">
               <Link
                 to={localePath('/')}
                 onClick={() => setDrawerOpen(false)}
@@ -212,6 +260,14 @@ export function Layout({ tags = [] }: LayoutProps) {
           </div>
         </SheetContent>
       </Sheet>
+
+      {/* Global Advanced Search Modal */}
+      <SearchModal
+        open={searchOpen}
+        onOpenChange={setSearchOpen}
+        items={searchIndex}
+        tags={tags}
+      />
     </div>
   );
 }

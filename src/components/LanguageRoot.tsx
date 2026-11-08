@@ -1,5 +1,6 @@
+import { useEffect } from 'react';
 import { useLoaderData, ScrollRestoration } from 'react-router-dom';
-import type { SiteLanguage } from '../lib/types';
+import type { SiteLanguage, SearchItem } from '../lib/types';
 import { LanguageContext, buildSwitchLanguagePath } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
 import { translations } from '../i18n/strings';
@@ -11,13 +12,23 @@ export interface LanguageRootProps {
 
 interface LanguageRootLoaderData {
   tags: string[];
+  searchIndex?: SearchItem[];
 }
 
 export function LanguageRoot({ language }: LanguageRootProps) {
   const data = useLoaderData() as LanguageRootLoaderData | undefined;
   const tags = data?.tags || [];
+  const searchIndex = data?.searchIndex || [];
 
   const t = translations[language.code] || translations.en;
+
+  // Dynamically synchronize document element lang and dir attributes in the browser
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = language.code;
+      document.documentElement.dir = language.dir;
+    }
+  }, [language]);
 
   const contextValue = {
     language,
@@ -35,7 +46,7 @@ export function LanguageRoot({ language }: LanguageRootProps) {
 
   return (
     <LanguageContext.Provider value={contextValue}>
-      <Layout tags={tags} />
+      <Layout tags={tags} searchIndex={searchIndex} />
       <ScrollRestoration />
     </LanguageContext.Provider>
   );

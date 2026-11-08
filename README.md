@@ -215,23 +215,44 @@ npm run translate -- --mock
    - The entire row acts as a primary link, with tag chips elevated above it.
 4. **Bidirectional Layout (RTL)**:
    - Arabic and Urdu render with `dir="rtl"`.
+   - Dynamic client-side synchronization: root `<html>` updates `dir` and `lang` on route changes without full page reload.
    - Drawer navigation slides in from the inline end (left in RTL, right in LTR).
-   - Breadcrumb chevrons invert direction automatically.
+   - Breadcrumb chevrons invert direction automatically (`rtl:rotate-180`).
+5. **Advanced Search & Filter System**:
+   - **Global Search Modal**: Triggered via `⌘K` / `Ctrl+K` or top bar search icon. Real-time fuzzy query filtering with topic chips and keyboard navigation (`↑↓` / `↵` / `ESC`).
+   - **In-Page Toolbar**: On the Articles archive, live search input with quick tag filters, article count indicators, and date sorting (`Newest` / `Oldest`).
 
 ---
 
 ## Deployment & Cache-Control Headers
 
-Deployments are automated through GitHub Actions, Netlify, or Vercel on push to `main`.
+Questo is fully pre-configured for automated zero-configuration deployment across **Cloudflare Pages**, **Netlify**, and **Vercel**.
 
-Both `netlify.toml` and `vercel.json` are pre-configured with explicit Cache-Control headers:
+### 1. Cloudflare Pages
+- **Configuration File**: `wrangler.toml` and `public/_headers` (compiled to `dist/_headers`).
+- **Build Settings**:
+  - **Framework Preset**: None (or Vite)
+  - **Build Command**: `npm run build`
+  - **Build Output Directory**: `dist`
+  - **Environment Variable**: `NODE_VERSION: 22`
+- **CLI Deployment**:
+  ```bash
+  npx wrangler pages deploy dist --project-name questo-editorial-blog
+  ```
+- **Caching & Security**: Handled via `dist/_headers` which Cloudflare Pages applies natively:
+  - `/*`: `Cache-Control: public, max-age=0, must-revalidate`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`
+  - `/assets/*`: `Cache-Control: public, max-age=31536000, immutable`
+
+### 2. Netlify & Vercel
+- **Netlify**: Configured via `netlify.toml`.
+- **Vercel**: Configured via `vercel.json` with clean URLs and custom route headers.
 
 ### Caching Policy
 - **HTML pages, loader JSON, and sitemap**:
   ```http
   Cache-Control: public, max-age=0, must-revalidate
   ```
-  Ensures CDN caches revalidate immediately so GitHub CMS edits go live instantly.
+  Ensures CDN edge caches revalidate immediately so GitHub CMS edits go live instantly.
 - **Content-Hashed Static Assets (`/assets/*`)**:
   ```http
   Cache-Control: public, max-age=31536000, immutable
@@ -245,6 +266,6 @@ Both `netlify.toml` and `vercel.json` are pre-configured with explicit Cache-Con
 ### Verifying Headers Locally
 ```bash
 curl.exe -sI http://localhost:4173/
-curl.exe -sI http://localhost:4173/assets/app-DZQsam53.css
+curl.exe -sI http://localhost:4173/assets/app-CD3XNzTl.css
 ```
 

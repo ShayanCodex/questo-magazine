@@ -44,6 +44,16 @@ export interface ArticleData {
   isFallback?: boolean; // Set true when serving English fallback on untranslated route
 }
 
+export interface SearchItem {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  tags: string[];
+  author: string;
+  minRead?: number;
+}
+
 export interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -73,4 +83,16 @@ export interface I18nStrings {
   printMagazine: string;
   issueNumber: string;
   textBy: string;
+  search: string;
+  searchPlaceholder: string;
+  searchShortcut: string;
+  allTopics: string;
+  sortBy: string;
+  newest: string;
+  oldest: string;
+  articlesFound: string;
+  resetFilters: string;
+  noSearchResults: string;
+  quickSearch: string;
+  clearSearch: string;
 }
