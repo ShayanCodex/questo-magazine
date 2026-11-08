@@ -1,0 +1,61 @@
+{
+  "slug": "the-death-of-the-card-grid",
+  "title": "[es] The death of the card grid",
+  "excerpt": "[es] Why editorial publications are returning to typographic indexes, confident scale, and intentional whitespace.",
+  "date": "2026-11-07",
+  "author": "Elena Vance",
+  "tags": [
+    "design-systems",
+    "editorial",
+    "typography"
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "[es] For over a decade, digital publishing followed an unquestioned convention: everything must reside in a rounded card with a drop shadow, a generic unsplash thumbnail, and an eyebrow badge. Web layouts began to resemble supermarket shelves rather than considered reading environments."
+    },
+    {
+      "type": "h2",
+      "text": "[es] Typography as structure"
+    },
+    {
+      "type": "p",
+      "text": "[es] When we remove the visual scaffolding of cards, borders, and colorful chips, something remarkable happens. The typography is forced to carry the weight of hierarchy. The relationship between headline scale, baseline grid, and generous negative space creates an authentic editorial cadence."
+    },
+    {
+      "type": "quote",
+      "text": "[es] Whitespace is not empty space; it is the silent room in which typography speaks.",
+      "cite": "[es] Jan Tschichold, The New Typography"
+    },
+    {
+      "type": "p",
+      "text": "[es] By shifting focus from containers to content, editorial sites achieve several distinct advantages:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "[es] Faster visual scanning through consistent vertical alignment",
+        "[es] Significantly lower DOM complexity and layout recalculations",
+        "[es] Higher focus on author voice and journalistic rhythm"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "[es] The index pattern"
+    },
+    {
+      "type": "p",
+      "text": "[es] The typographic index replaces uniform card grids with a deliberate table of contents. Dates and metadata sit calmly at the side, while headline typography commands the viewport. A single micro-interaction—dimming non-hovered siblings—guides attention without theatrical animations."
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "code": ".index-list:hover .index-row:not(:hover) {\n  opacity: 0.3;\n  transition: opacity 180ms ease;\n}"
+    },
+    {
+      "type": "p",
+      "text": "[es] Restraint is not the absence of design; it is the courage to let the text be the centerpiece."
+    }
+  ],
+  "sourceHash": "141972f678ea4246c92d83d131353b804debf690"
+}

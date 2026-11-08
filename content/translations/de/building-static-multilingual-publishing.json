@@ -1,0 +1,54 @@
+{
+  "slug": "building-static-multilingual-publishing",
+  "title": "[de] Building static multilingual publishing",
+  "excerpt": "[de] How pre-rendering six distinct languages with zero runtime client fetching maximizes search crawling and fidelity.",
+  "date": "2026-11-08",
+  "updated": "2026-11-09",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "engineering",
+    "performance",
+    "ssg"
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "[de] Client-rendered single page applications broke the fundamental premise of the web: that every URL corresponds to a tangible HTML document containing real words. When translation layers are added client-side via runtime JSON fetches, international readers and search bots suffer flash of untranslated content and incomplete indexing."
+    },
+    {
+      "type": "h2",
+      "text": "[de] The build time pipeline"
+    },
+    {
+      "type": "p",
+      "text": "[de] Questo inverts this model. Every article is written as a localized JSON file in Git. At build time, static site generation compiles distinct HTML pages for English, Spanish, French, German, Arabic, and Urdu."
+    },
+    {
+      "type": "code",
+      "lang": "ts",
+      "code": "export const includedRoutes = async () => {\n  return ['/', '/articles', ...allSlugs.map(s => `/articles/${s}`)];\n};"
+    },
+    {
+      "type": "quote",
+      "text": "[de] If a page cannot be read with JavaScript disabled, it is not truly published on the open web.",
+      "cite": "[de] Principles of Resilient Publishing"
+    },
+    {
+      "type": "h3",
+      "text": "[de] Core architectural guarantees"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "[de] Zero runtime database dependencies or API network roundtrips",
+        "[de] Deterministic Open Graph and JSON-LD schemas baked into raw HTML markup",
+        "[de] Explicit bidirectional rendering with dir=rtl for Arabic and Urdu scripts"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "[de] The result is instantaneous first contentful paint, perfect crawlability, and edge deployment that costs nothing to operate at scale."
+    }
+  ],
+  "sourceHash": "6ca6ab6f88477c4f236dccb4d8ca0800cc51b01e"
+}

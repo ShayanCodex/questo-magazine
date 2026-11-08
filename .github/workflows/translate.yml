@@ -1,0 +1,47 @@
+name: Translate Articles
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/articles/**'
+
+jobs:
+  translate:
+    # Avoid infinite loop if commit is made by GitHub Actions bot
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run translation script
+        env:
+          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+        run: npm run translate
+
+      - name: Commit and push translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/translations/
+          if git diff --staged --quiet; then
+            echo "No translation changes to commit."
+          else
+            git commit -m "chore(i18n): update automated article translations [automated]"
+            git push origin main
+          fi
+

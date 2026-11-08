@@ -1,0 +1,47 @@
+{
+  "slug": "craft-over-convenience",
+  "title": "[ur] Craft over convenience",
+  "excerpt": "[ur] Rejecting generic SaaS templates in favor of typographic restraint, tactile hover states, and bi-directional prose.",
+  "date": "2026-11-06",
+  "author": "Marcus Lind",
+  "tags": [
+    "craft",
+    "design-systems"
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "[ur] Every tool offers a default path. Modern component libraries often funnel design teams toward the same beige aesthetic: rounded buttons, soft purple shadows, and card carousels. Breaking free of this gravitational pull requires intentional resistance."
+    },
+    {
+      "type": "h2",
+      "text": "[ur] Principles of restraint"
+    },
+    {
+      "type": "p",
+      "text": "[ur] We chose a single high-chroma accent color and paired it with two disparate typographic families: a tight variable grotesque for headlines and an open literary serif for narrative prose. Every interactive element earns its place through utility rather than ornamentation."
+    },
+    {
+      "type": "quote",
+      "text": "[ur] Simplicity is about subtracting the obvious and adding the meaningful.",
+      "cite": "[ur] John Maeda, The Laws of Simplicity"
+    },
+    {
+      "type": "p",
+      "text": "[ur] Consider the reading experience across different languages and cultures. When a publication respects right-to-left readers natively, the drawer navigates from the left, breadcrumb arrows invert, and typographic measure adjusts naturally."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "[ur] Audit every element for unnecessary visual noise",
+        "[ur] Enforce strict character limits per line to protect reading comfort",
+        "[ur] Deliver full semantic markup directly to every visitor"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "[ur] True craft is felt in what is left out."
+    }
+  ],
+  "sourceHash": "6fa74381e0b3466a99a9ad10e40749cc1466b2db"
+}

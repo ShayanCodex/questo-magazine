@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #FBFBFA;
+    --surface: #FFFFFF;
+    --text: #111110;
+    --muted: #6E6D6A;
+    --border: #E4E4E0;
+    --accent: #D83A17;
+    --accent-hover: #B52F10;
+    --ring: rgba(216, 58, 23, 0.4);
+    --drawer-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0D0D0C;
+      --surface: #141413;
+      --text: #EDEDEB;
+      --muted: #94938F;
+      --border: #262624;
+      --accent: #FF5436;
+      --accent-hover: #FF7057;
+      --ring: rgba(255, 84, 54, 0.4);
+      --drawer-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  html {
+    background-color: var(--bg);
+    color: var(--text);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: 'Literata', Georgia, serif;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  /* Headings use Display Sans (or Naskh/Nastaliq for RTL languages) */
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.035em;
+  }
+
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .font-display {
+    font-family: 'Noto Naskh Arabic', 'Noto Nastaliq Urdu', system-ui, sans-serif;
+    letter-spacing: normal;
+  }
+
+  [dir="rtl"] body, [dir="rtl"] .font-serif {
+    font-family: 'Noto Naskh Arabic', 'Noto Nastaliq Urdu', serif;
+  }
+
+  /* Universal focus styles */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  /* Respect reduced motion by zeroing transitions */
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Custom editorial utility classes */
+.bg-editorial-bg {
+  background-color: var(--bg);
+}
+
+.bg-editorial-surface {
+  background-color: var(--surface);
+}
+
+.text-editorial-text {
+  color: var(--text);
+}
+
+.text-editorial-muted {
+  color: var(--muted);
+}
+
+.border-editorial-border {
+  border-color: var(--border);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.border-accent {
+  border-color: var(--accent);
+}
+
+/* Typographic index dimming interaction */
+.article-index:hover .article-row:not(:hover) {
+  opacity: 0.32;
+  transition: opacity 180ms ease;
+}
+
+.article-row {
+  transition: opacity 180ms ease;
+}
+
