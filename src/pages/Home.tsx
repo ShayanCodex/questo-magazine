@@ -5,6 +5,10 @@ import { siteConfig } from '../lib/site';
 import { formatDate, calculateReadingTime } from '../lib/content';
 import { Seo } from '../components/Seo';
 import { Badge } from '../components/ui/badge';
+import { ManifestoBanner } from '../components/ManifestoBanner';
+import { EditorialDisciplines } from '../components/EditorialDisciplines';
+import { EditorialFaq } from '../components/EditorialFaq';
+import { EditorialDispatch } from '../components/EditorialDispatch';
 
 interface HomeLoaderData {
   articles: ArticleData[];
@@ -23,7 +27,7 @@ export function Home() {
   const heroReadingTime = heroArticle ? calculateReadingTime(heroArticle, t.minRead) : '';
 
   return (
-    <div className="space-y-10 sm:space-y-14">
+    <div className="space-y-12 sm:space-y-16">
       <Seo
         title={`${siteConfig.name} Magazine — Art & Life`}
         description={siteConfig.description}
@@ -115,7 +119,7 @@ export function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Main Column: Secondary Stories with artwork thumbnails */}
           <div className="lg:col-span-8 divide-y divide-editorial-border">
-            {secondaryArticles.map((article) => {
+            {secondaryArticles.slice(0, 4).map((article) => {
               const formattedDate = formatDate(article.date, language.code);
               const readingTime = calculateReadingTime(article, t.minRead);
 
@@ -128,7 +132,7 @@ export function Home() {
                   {article.image && (
                     <Link
                       to={localePath(`/articles/${article.slug}`)}
-                      className="shrink-0 w-full sm:w-40 h-44 sm:h-36 overflow-hidden rounded-sm border border-editorial-border bg-editorial-surface block"
+                      className="shrink-0 w-full sm:w-44 h-44 sm:h-36 overflow-hidden rounded-sm border border-editorial-border bg-editorial-surface block"
                     >
                       <img
                         src={article.image}
@@ -173,6 +177,17 @@ export function Home() {
                 </article>
               );
             })}
+
+            {/* View All Articles Link */}
+            <div className="pt-6">
+              <Link
+                to={localePath('/articles')}
+                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-accent hover:underline font-semibold"
+              >
+                <span>{t.allArticles} ({articles.length})</span>
+                <span>→</span>
+              </Link>
+            </div>
           </div>
 
           {/* Side Column: Print Magazine Issue Box (Matches Reference Image) */}
@@ -215,12 +230,35 @@ export function Home() {
               </div>
             </div>
 
+            {/* Technical Specifications Table */}
+            <div className="p-4 bg-editorial-surface border border-editorial-border rounded-sm space-y-2 text-xs font-mono">
+              <div className="text-editorial-text font-bold uppercase tracking-wider mb-2">
+                {t.printSpecsTitle}
+              </div>
+              <div className="text-editorial-muted">{t.printSpecsFormat}</div>
+              <div className="text-editorial-muted">{t.printSpecsPaper}</div>
+              <div className="text-editorial-muted">{t.printSpecsBinding}</div>
+              <div className="text-editorial-muted text-accent font-semibold">{t.printSpecsCopies}</div>
+            </div>
+
             <div className="pt-2 text-xs font-serif text-editorial-muted leading-relaxed">
               Available globally in selected bookshops and galleries. Hand-printed on 120gsm recycled newsprint paper.
             </div>
           </aside>
         </div>
       </section>
+
+      {/* 5. Editorial Disciplines & Pillars */}
+      <EditorialDisciplines />
+
+      {/* 6. Editorial Manifesto Banner */}
+      <ManifestoBanner />
+
+      {/* 7. Editorial FAQ & Inquiries */}
+      <EditorialFaq />
+
+      {/* 8. The Weekly Sunday Dispatch */}
+      <EditorialDispatch />
     </div>
   );
 }

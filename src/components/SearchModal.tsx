@@ -101,9 +101,9 @@ export function SearchModal({
             {t.searchPlaceholder}
           </DialogPrimitive.Description>
 
-          {/* Search Input Bar */}
-          <div className="relative flex items-center border-b border-editorial-border px-4 py-3 sm:px-6">
-            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted shrink-0 me-3" />
+          {/* Search Input Bar with Theme Styling */}
+          <div className="group relative flex items-center border-b border-editorial-border bg-editorial-surface px-4 py-3.5 sm:px-6 focus-within:bg-editorial-bg/60 transition-colors">
+            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted group-focus-within:text-accent shrink-0 me-3 transition-colors" />
             <input
               ref={inputRef}
               type="text"
@@ -117,7 +117,7 @@ export function SearchModal({
               <button
                 type="button"
                 onClick={() => setQuery('')}
-                className="p-1 rounded-sm text-editorial-muted hover:text-editorial-text transition-colors"
+                className="p-1 rounded-sm text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
                 aria-label={t.clearSearch}
               >
                 <XMarkIcon className="h-4 w-4" />
@@ -128,17 +128,17 @@ export function SearchModal({
             </kbd>
           </div>
 
-          {/* Topic Filters Row */}
+          {/* Topic Filters Row (No landscape scrollbar) */}
           {tags.length > 0 && (
-            <div className="flex items-center gap-1.5 px-4 py-2.5 sm:px-6 border-b border-editorial-border/60 bg-editorial-bg/50 overflow-x-auto text-xs font-mono">
+            <div className="flex items-center gap-1.5 px-4 py-2.5 sm:px-6 border-b border-editorial-border/60 bg-editorial-bg/50 overflow-x-auto no-scrollbar text-xs font-mono">
               <button
                 type="button"
                 onClick={() => setSelectedTag(null)}
                 className={cn(
-                  'px-2 py-0.5 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
+                  'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
                   selectedTag === null
-                    ? 'bg-editorial-text text-editorial-bg font-bold'
-                    : 'text-editorial-muted hover:text-editorial-text border border-editorial-border'
+                    ? 'bg-accent text-white font-semibold shadow-xs'
+                    : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
                 )}
               >
                 {t.allTopics}
@@ -149,10 +149,10 @@ export function SearchModal({
                   type="button"
                   onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
                   className={cn(
-                    'px-2 py-0.5 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
+                    'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
                     selectedTag === tag
-                      ? 'bg-editorial-text text-editorial-bg font-bold'
-                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border'
+                      ? 'bg-accent text-white font-semibold shadow-xs'
+                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
                   )}
                 >
                   #{tag}
@@ -161,8 +161,8 @@ export function SearchModal({
             </div>
           )}
 
-          {/* Results List */}
-          <div className="max-h-80 sm:max-h-96 overflow-y-auto divide-y divide-editorial-border/40 p-2 sm:p-3">
+          {/* Results List with Clean Custom Scrollbar */}
+          <div className="max-h-80 sm:max-h-96 overflow-y-auto custom-scrollbar divide-y divide-editorial-border/40 p-2 sm:p-3">
             {filtered.length === 0 ? (
               <div className="py-12 text-center space-y-3">
                 <p className="font-serif text-sm text-editorial-muted">

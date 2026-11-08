@@ -102,25 +102,25 @@ export function Articles() {
         </div>
       </header>
 
-      {/* Advanced In-Page Search & Filter Toolbar */}
-      <section className="space-y-5 bg-editorial-surface/60 border border-editorial-border p-4 sm:p-6 rounded-sm">
+      {/* Advanced In-Page Search & Filter Toolbar with Theme Styling */}
+      <section className="space-y-6 bg-editorial-surface border border-editorial-border p-5 sm:p-7 rounded-sm shadow-xs">
         <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4">
-          {/* Live Search Input */}
-          <div className="relative flex-1 flex items-center">
-            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted absolute start-3 pointer-events-none" />
+          {/* Live Search Input using Theme Accent & Surface */}
+          <div className="group relative flex-1 flex items-center bg-editorial-bg border border-editorial-border focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/20 rounded-sm transition-all">
+            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted group-focus-within:text-accent transition-colors absolute start-3.5 pointer-events-none" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t.searchPlaceholder}
-              className="w-full bg-editorial-bg border border-editorial-border rounded-sm ps-10 pe-10 py-2.5 font-serif text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none focus:border-accent transition-colors"
+              className="w-full bg-transparent ps-11 pe-11 py-3 font-serif text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
               aria-label={t.search}
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                className="absolute end-3 p-1 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
+                className="absolute end-3 p-1.5 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
                 aria-label={t.clearSearch}
               >
                 <XMarkIcon className="h-4 w-4" />
@@ -128,21 +128,21 @@ export function Articles() {
             )}
           </div>
 
-          {/* Sort Selector */}
+          {/* Sort Selector using Theme Colors */}
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider shrink-0">
-            <span className="text-editorial-muted flex items-center gap-1">
-              <AdjustmentsHorizontalIcon className="h-4 w-4" />
+            <span className="text-editorial-muted flex items-center gap-1.5 font-medium">
+              <AdjustmentsHorizontalIcon className="h-4 w-4 text-accent" />
               <span>{t.sortBy}:</span>
             </span>
-            <div className="inline-flex rounded-sm border border-editorial-border overflow-hidden">
+            <div className="inline-flex rounded-sm border border-editorial-border bg-editorial-bg overflow-hidden p-0.5">
               <button
                 type="button"
                 onClick={() => setSortBy('newest')}
                 className={cn(
-                  'px-3 py-2 cursor-pointer transition-colors',
+                  'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'newest'
-                    ? 'bg-editorial-text text-editorial-bg font-bold'
-                    : 'bg-editorial-bg text-editorial-muted hover:text-editorial-text'
+                    ? 'bg-accent text-white font-semibold shadow-xs'
+                    : 'text-editorial-muted hover:text-editorial-text'
                 )}
               >
                 {t.newest}
@@ -151,10 +151,10 @@ export function Articles() {
                 type="button"
                 onClick={() => setSortBy('oldest')}
                 className={cn(
-                  'px-3 py-2 cursor-pointer transition-colors border-s border-editorial-border',
+                  'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'oldest'
-                    ? 'bg-editorial-text text-editorial-bg font-bold'
-                    : 'bg-editorial-bg text-editorial-muted hover:text-editorial-text'
+                    ? 'bg-accent text-white font-semibold shadow-xs'
+                    : 'text-editorial-muted hover:text-editorial-text'
                 )}
               >
                 {t.oldest}
@@ -163,17 +163,17 @@ export function Articles() {
           </div>
         </div>
 
-        {/* Topic Filter Pills */}
+        {/* Topic Filter Pills using Theme Accents */}
         {allTags.length > 0 && (
-          <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-editorial-border/60">
+          <div className="flex flex-wrap items-center gap-2 pt-3 border-t border-editorial-border/60">
             <button
               type="button"
               onClick={() => setSelectedTag(null)}
               className={cn(
-                'px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-sm transition-colors cursor-pointer',
+                'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer',
                 selectedTag === null
-                  ? 'bg-editorial-text text-editorial-bg font-bold'
-                  : 'border border-editorial-border text-editorial-muted hover:text-editorial-text bg-editorial-bg'
+                  ? 'bg-accent text-white font-semibold shadow-xs'
+                  : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
               )}
             >
               {t.allTopics} ({articles.length})
@@ -186,10 +186,10 @@ export function Articles() {
                   type="button"
                   onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
                   className={cn(
-                    'px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-sm transition-colors cursor-pointer',
+                    'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer',
                     selectedTag === tag
-                      ? 'bg-editorial-text text-editorial-bg font-bold'
-                      : 'border border-editorial-border text-editorial-muted hover:text-editorial-text bg-editorial-bg'
+                      ? 'bg-accent text-white font-semibold shadow-xs'
+                      : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
                   )}
                 >
                   #{tag} ({count})

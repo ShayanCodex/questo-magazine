@@ -1,0 +1,72 @@
+{
+  "slug": "the-grid-as-an-instrument",
+  "title": "[ar] The grid as an instrument",
+  "excerpt": "[ar] Why the mathematical rigor of mid-century editorial grids remains the most powerful antidote to chaotic digital layouts.",
+  "date": "2026-11-09",
+  "author": "Saskia Lindqvist",
+  "tags": [
+    "craft",
+    "art",
+    "design-systems"
+  ],
+  "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "[ar] Editorial print layout specimens with precise typographic grid systems",
+  "body": [
+    {
+      "type": "p",
+      "text": "[ar] The typographic grid is frequently misunderstood as a restrictive cage. In the hands of Josef Müller-Brockmann, Karl Gerstner, and Emil Ruder, the grid was never intended to constrain thought; it was designed as a musical stave upon which complex polyphonic ideas could be performed."
+    },
+    {
+      "type": "h2",
+      "text": "[ar] The discipline of mathematical proportions"
+    },
+    {
+      "type": "p",
+      "text": "[ar] When an editorial designer establishes baseline rhythm, gutter ratios, and modular divisions, every decision ceases to be arbitrary. The relationship between a 72-point masthead and an 11-point caption becomes mathematically harmonious, imparting a subconscious sense of order and serenity to the reader."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80",
+      "alt": "[ar] Vintage Swiss International style posters arranged chronologically",
+      "caption": "[ar] Figure 1: Modular grid studies showcasing rational clarity and typographic tension."
+    },
+    {
+      "type": "quote",
+      "text": "[ar] The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style.",
+      "cite": "[ar] Josef Müller-Brockmann, Grid Systems in Graphic Design"
+    },
+    {
+      "type": "p",
+      "text": "[ar] To construct an editorial grid that endures across screens and physical pages, observe this sequential discipline:"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "[ar] Define the optical body size and line-height before choosing column divisions",
+        "[ar] Lock all margins and gutters into whole multiples of the baseline unit",
+        "[ar] Use asymmetry deliberately to generate focal tension without breaking the underlying rhythm"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "[ar] Translating print rigor to the browser"
+    },
+    {
+      "type": "video",
+      "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      "poster": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
+      "title": "[ar] Study in Swiss typographic composition",
+      "caption": "[ar] Video analysis: Demonstrating how modular grid frameworks guide the eye through dense cultural essays."
+    },
+    {
+      "type": "p",
+      "text": "[ar] CSS Grid and subgrid finally allow front-end engineers to implement Swiss International typography without compromising responsive fluidity or semantic accessibility."
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "code": "/* Swiss modular grid baseline rhythm */\n.editorial-stave {\n  display: grid;\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n  column-gap: clamp(1rem, 2.5vw, 2.5rem);\n}"
+    }
+  ],
+  "sourceHash": "2c62f9834c8afa24a08c71f9c9c93ca466cd1275"
+}

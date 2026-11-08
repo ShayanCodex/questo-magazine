@@ -95,4 +95,22 @@ export interface I18nStrings {
   noSearchResults: string;
   quickSearch: string;
   clearSearch: string;
+  editorialDisciplines: string;
+  disciplinesSubtitle: string;
+  faqTitle: string;
+  faqSubtitle: string;
+  manifestoText: string;
+  manifestoAuthor: string;
+  newsletterTitle: string;
+  newsletterSubtitle: string;
+  newsletterPlaceholder: string;
+  newsletterButton: string;
+  newsletterSuccess: string;
+  printSpecsTitle: string;
+  printSpecsFormat: string;
+  printSpecsPaper: string;
+  printSpecsBinding: string;
+  printSpecsCopies: string;
+  orderPrintCopy: string;
+  readMore: string;
 }

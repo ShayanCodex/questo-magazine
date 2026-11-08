@@ -1,0 +1,72 @@
+{
+  "slug": "the-geometry-of-silence",
+  "title": "[ur] The geometry of silence",
+  "excerpt": "[ur] How raw concrete, unadorned stone, and void space create sanctuaries of contemplation in an era of hyper-connected visual noise.",
+  "date": "2026-11-09",
+  "author": "Mateo Silva",
+  "tags": [
+    "architecture",
+    "sculpture",
+    "design-systems"
+  ],
+  "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "[ur] Monolithic brutalist architecture with dramatic play of light and shadow",
+  "body": [
+    {
+      "type": "p",
+      "text": "[ur] Silence in architecture is not merely the absence of acoustic noise; it is the deliberate reduction of competing formal stimuli. When a pavilion or living space strips away ornamental mouldings, dynamic lighting gimmicks, and superfluous surfaces, the visitor is confronted with pure volume and daylight."
+    },
+    {
+      "type": "h2",
+      "text": "[ur] Monolithic mass and tectonic truth"
+    },
+    {
+      "type": "p",
+      "text": "[ur] Brutalist structures from the mid-twentieth century understood that material honesty establishes an enduring emotional gravity. Board-marked cast concrete does not conceal the seams of the timber formwork that birthed it; rather, it celebrates the tactile imperfection of craft."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "[ur] Minimalist concrete hallway with angled skylight cutting through darkness",
+      "caption": "[ur] Figure 1: Monolithic corridor designed with pure geometries, allowing natural light to sculpt the interior planes."
+    },
+    {
+      "type": "quote",
+      "text": "[ur] Architecture is the learned game, correct and magnificent, of forms assembled in the light.",
+      "cite": "[ur] Le Corbusier, Vers une architecture"
+    },
+    {
+      "type": "p",
+      "text": "[ur] When approaching spatial design with restraint, several core principles emerge:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "[ur] Uncompromised honesty of raw materials without surface veneers",
+        "[ur] The use of solar orientation as the primary interior lighting instrument",
+        "[ur] Generous spatial thresholds that permit acoustic absorption and quietness"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "[ur] The void as a functional element"
+    },
+    {
+      "type": "video",
+      "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "poster": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "title": "[ur] Documentary excerpt on brutalist light and shadow",
+      "caption": "[ur] Cinematic study: Examining the interplay of shadow and monolithic concrete in contemporary pavilions."
+    },
+    {
+      "type": "p",
+      "text": "[ur] Just as in typography, where letterforms cannot exist without counter-spaces, an architectural sanctuary requires the void to give meaning to mass."
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "code": "/* Spatial rhythm expressed as geometric proportions */\n:root {\n  --golden-ratio: 1.618;\n  --monolith-void: calc(100vw / var(--golden-ratio));\n}"
+    }
+  ],
+  "sourceHash": "f64dc110e42f22d210566881b0541f832e2d99c8"
+}

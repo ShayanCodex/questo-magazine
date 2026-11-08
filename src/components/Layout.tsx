@@ -72,16 +72,16 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               </Link>
             </nav>
 
-            {/* Quick Search Button */}
+            {/* Quick Search Button with Theme Styling */}
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="flex items-center gap-2 px-2.5 py-1.5 rounded-sm border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono cursor-pointer"
+              className="group flex items-center gap-2 px-3 py-1.5 rounded-sm bg-editorial-surface border border-editorial-border hover:border-accent hover:text-editorial-text text-editorial-muted transition-all text-xs font-mono cursor-pointer shadow-2xs"
               aria-label={t.search}
             >
-              <MagnifyingGlassIcon className="h-4 w-4" />
-              <span className="hidden sm:inline">{t.search}</span>
-              <kbd className="hidden sm:inline-block ms-1 px-1 text-[10px] bg-editorial-bg border border-editorial-border rounded-xs">
+              <MagnifyingGlassIcon className="h-4 w-4 text-editorial-muted group-hover:text-accent transition-colors" />
+              <span className="hidden sm:inline font-medium">{t.search}</span>
+              <kbd className="hidden sm:inline-block ms-1 px-1.5 py-0.5 text-[10px] bg-editorial-bg border border-editorial-border rounded-xs group-hover:border-accent/40 transition-colors">
                 ⌘K
               </kbd>
             </button>

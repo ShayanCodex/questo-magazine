@@ -40,6 +40,28 @@ export const translations: Record<string, I18nStrings> = {
     noSearchResults: 'No articles match your search criteria.',
     quickSearch: 'Quick search',
     clearSearch: 'Clear search',
+    editorialDisciplines: 'Disciplines & Niches',
+    disciplinesSubtitle:
+      'Four dedicated publishing pillars exploring the intersection of physical craft and modern digital architecture.',
+    faqTitle: 'Editorial Inquiries & FAQ',
+    faqSubtitle:
+      'Everything you need to know about our slow-publishing model, submissions, and print editions.',
+    manifestoText:
+      'We believe digital publishing should feel like walking through an architectural gallery: quiet, considered, and built to outlive the weekly cycle of software trends.',
+    manifestoAuthor: 'Questo Editorial Board, 2026',
+    newsletterTitle: 'The Sunday Dispatch',
+    newsletterSubtitle:
+      'Curated architectural monographs, typographic criticism, and quiet thoughts delivered to your inbox every Sunday morning. Zero tracking, zero spam.',
+    newsletterPlaceholder: 'Enter your email address...',
+    newsletterButton: 'Subscribe to Dispatch',
+    newsletterSuccess: 'Thank you. You are now subscribed to The Sunday Dispatch.',
+    printSpecsTitle: 'Issue 03 Specifications',
+    printSpecsFormat: 'Format: 210 × 280 mm, 164 pages',
+    printSpecsPaper: 'Paper: 120gsm Fedrigoni Tintoretto uncoated',
+    printSpecsBinding: 'Binding: Smyth-sewn exposed spine with foil-stamped jacket',
+    printSpecsCopies: 'Edition: Limited run of 1,500 hand-numbered copies',
+    orderPrintCopy: 'Order Print Edition',
+    readMore: 'Read monograph',
   },
   es: {
     menu: 'Menú',
@@ -80,6 +102,28 @@ export const translations: Record<string, I18nStrings> = {
     noSearchResults: 'No se encontraron artículos con estos criterios.',
     quickSearch: 'Búsqueda rápida',
     clearSearch: 'Borrar búsqueda',
+    editorialDisciplines: 'Disciplinas y Nichos',
+    disciplinesSubtitle:
+      'Cuatro pilares editoriales dedicados a explorar la intersección del oficio físico y la arquitectura digital.',
+    faqTitle: 'Consultas Editoriales y FAQ',
+    faqSubtitle:
+      'Todo lo que necesita saber sobre nuestro modelo de publicación pausada, envíos y ediciones impresas.',
+    manifestoText:
+      'Creemos que la publicación digital debe sentirse como caminar por una galería arquitectónica: silenciosa, meditada y construida para perdurar.',
+    manifestoAuthor: 'Consejo Editorial de Questo, 2026',
+    newsletterTitle: 'El Despacho Dominical',
+    newsletterSubtitle:
+      'Monografías arquitectónicas, crítica tipográfica y reflexiones entregadas cada domingo por la mañana. Cero rastreo, cero spam.',
+    newsletterPlaceholder: 'Introduzca su correo electrónico...',
+    newsletterButton: 'Suscribirse al Despacho',
+    newsletterSuccess: 'Gracias. Ahora está suscrito a El Despacho Dominical.',
+    printSpecsTitle: 'Especificaciones de la Edición 03',
+    printSpecsFormat: 'Formato: 210 × 280 mm, 164 páginas',
+    printSpecsPaper: 'Papel: 120 g/m² Fedrigoni Tintoretto sin estucar',
+    printSpecsBinding: 'Encuadernación: Cosido Smyth con lomo visto y estampación',
+    printSpecsCopies: 'Edición: Tirada limitada de 1.500 ejemplares numerados',
+    orderPrintCopy: 'Pedir Edición Impresa',
+    readMore: 'Leer monografía',
   },
   fr: {
     menu: 'Menu',
@@ -120,6 +164,28 @@ export const translations: Record<string, I18nStrings> = {
     noSearchResults: 'Aucun article ne correspond à votre recherche.',
     quickSearch: 'Recherche rapide',
     clearSearch: 'Effacer la recherche',
+    editorialDisciplines: 'Champs & Disciplines',
+    disciplinesSubtitle:
+      'Quatre piliers éditoriaux explorant la convergence de l’artisanat physique et de l’architecture numérique.',
+    faqTitle: 'Questions & Ligne Éditoriale',
+    faqSubtitle:
+      'Tout ce qu’il faut savoir sur notre démarche de publication lente, nos soumissions et nos tirages papier.',
+    manifestoText:
+      'Nous croyons que l’édition numérique doit évoquer la visite d’une galerie architecturale : silencieuse, réfléchie et durable.',
+    manifestoAuthor: 'Comité Éditorial Questo, 2026',
+    newsletterTitle: 'La Dépêche du Dimanche',
+    newsletterSubtitle:
+      'Monographies d’architecture, critique typographique et pensées livrées chaque dimanche matin. Sans traceur, sans spam.',
+    newsletterPlaceholder: 'Votre adresse e-mail...',
+    newsletterButton: 'S’abonner à la Dépêche',
+    newsletterSuccess: 'Merci. Vous êtes désormais abonné à La Dépêche du Dimanche.',
+    printSpecsTitle: 'Fiche Technique Numéro 03',
+    printSpecsFormat: 'Format : 210 × 280 mm, 164 pages',
+    printSpecsPaper: 'Papier : 120 g/m² Fedrigoni Tintoretto non couché',
+    printSpecsBinding: 'Reliure : Cousue au fil Smyth, dos apparent et dorure',
+    printSpecsCopies: 'Tirage : Édition limitée à 1 500 exemplaires numérotés',
+    orderPrintCopy: 'Commander l’édition papier',
+    readMore: 'Lire la monographie',
   },
   de: {
     menu: 'Menü',
@@ -160,6 +226,28 @@ export const translations: Record<string, I18nStrings> = {
     noSearchResults: 'Keine Artikel entsprechen Ihren Suchkriterien.',
     quickSearch: 'Schnellsuche',
     clearSearch: 'Suche löschen',
+    editorialDisciplines: 'Disziplinen & Bereiche',
+    disciplinesSubtitle:
+      'Vier redaktionelle Schwerpunkte an der Schnittstelle von Handwerk und digitaler Architektur.',
+    faqTitle: 'Redaktionelle Fragen & FAQ',
+    faqSubtitle:
+      'Alles Wissenswerte über unser Slow-Publishing-Modell, Manuskripte und die Printausgaben.',
+    manifestoText:
+      'Wir glauben, dass digitales Publizieren wie ein Rundgang durch eine Architektur-Galerie sein sollte: leise, überlegt und beständig.',
+    manifestoAuthor: 'Questo Redaktion, 2026',
+    newsletterTitle: 'Die Sonntagsdepesche',
+    newsletterSubtitle:
+      'Architekturmonografien, typografische Kritik und Denkanstöße jeden Sonntagmorgen. Kein Tracking, kein Spam.',
+    newsletterPlaceholder: 'Ihre E-Mail-Adresse...',
+    newsletterButton: 'Depesche abonnieren',
+    newsletterSuccess: 'Vielen Dank. Sie haben die Sonntagsdepesche abonniert.',
+    printSpecsTitle: 'Spezifikationen Ausgabe 03',
+    printSpecsFormat: 'Format: 210 × 280 mm, 164 Seiten',
+    printSpecsPaper: 'Papier: 120 g/m² Fedrigoni Tintoretto ungestrichen',
+    printSpecsBinding: 'Bindung: Fadenheftung mit offenem Rücken und Folienprägung',
+    printSpecsCopies: 'Auflage: Limitierte Edition von 1.500 nummerierten Exemplaren',
+    orderPrintCopy: 'Printausgabe bestellen',
+    readMore: 'Monografie lesen',
   },
   ar: {
     menu: 'القائمة',
@@ -200,6 +288,28 @@ export const translations: Record<string, I18nStrings> = {
     noSearchResults: 'لم يتم العثور على مقالات تطابق معايير البحث.',
     quickSearch: 'بحث سريع',
     clearSearch: 'مسح البحث',
+    editorialDisciplines: 'المجالات والتخصصات',
+    disciplinesSubtitle:
+      'أربعة ركائز نشر متخصصة تستكشف تقاطع الحرفية المادية مع العمارة الرقمية الحديثة.',
+    faqTitle: 'الاستفسارات التحريرية والأسئلة الشائعة',
+    faqSubtitle:
+      'كل ما تود معرفته عن نموذج النشر المتأني، وتقديم المقالات، والنسخ المطبوعة.',
+    manifestoText:
+      'نؤمن بأن النشر الرقمي ينبغي أن يكون مثل التجول في معرض معماري: هادئ، عميق، ومبني ليبقى متجاوزاً موجات التكنولوجيا المؤقتة.',
+    manifestoAuthor: 'هيئة تحرير مجلة Questo، 2026',
+    newsletterTitle: 'بريد الأحد التحريري',
+    newsletterSubtitle:
+      'دراسات معمارية ونقد طباعي يصل إلى بريدك كل صباح أحد. بلا تتبع ولا إعلانات.',
+    newsletterPlaceholder: 'أدخل بريدك الإلكتروني...',
+    newsletterButton: 'الاشتراك في النشرة',
+    newsletterSuccess: 'شكراً لك. تم اشتراكك بنجاح في بريد الأحد التحريري.',
+    printSpecsTitle: 'مواصفات العدد المطبوع 03',
+    printSpecsFormat: 'المقاس: 210 × 280 ملم، 164 صفحة',
+    printSpecsPaper: 'الورق: 120 غرام فيدريغوني تينتوريتو غير مصقول',
+    printSpecsBinding: 'التجليد: خياطة سميث بكعب مكشوف وختم حراري',
+    printSpecsCopies: 'النسخ: إصدار محدود من 1500 نسخة مرقمة يدوياً',
+    orderPrintCopy: 'طلب النسخة المطبوعة',
+    readMore: 'قراءة الدراسة',
   },
   ur: {
     menu: 'مینو',
@@ -240,5 +350,27 @@ export const translations: Record<string, I18nStrings> = {
     noSearchResults: 'آپ کے معیار کے مطابق کوئی مضمون نہیں ملا۔',
     quickSearch: 'فوری تلاش',
     clearSearch: 'تلاش صاف کریں',
+    editorialDisciplines: 'ادارتی شعبہ جات اور موضوعات',
+    disciplinesSubtitle:
+      'چار تحقیقی شعبہ جات جو روایتی کاریگری اور جدید ڈیجیٹل فنِ تعمیر کے امتزاج کا احاطہ کرتے ہیں۔',
+    faqTitle: 'ادارتی سوالات و عمومی جوابات',
+    faqSubtitle:
+      'ہمارے سنجیدہ اشاعتی طریقہ کار، تحریروں کی پیشکش اور پرنٹ شماروں کی مکمل معلومات۔',
+    manifestoText:
+      'ہمارا ایمان ہے کہ ڈیجیٹل اشاعت کو ایک پرسکون آرٹ گیلری کی مانند ہونا چاہیے: پرسکون، پروقار اور دیرپا۔',
+    manifestoAuthor: 'ادارتی بورڈ، Questo 2026',
+    newsletterTitle: 'اتوار کا ادارتی مراسلہ',
+    newsletterSubtitle:
+      'معماری مقالات، طباعتی نقد اور فکری تحریریں ہر اتوار کی صبح آپ کے ان باکس میں۔ بلا اشتہار و بلا ٹریکنگ۔',
+    newsletterPlaceholder: 'اپنا ای میل درج کریں...',
+    newsletterButton: 'مراسلہ حاصل کریں',
+    newsletterSuccess: 'شکریہ! آپ اتوار کے ادارتی مراسلے میں کامیابی سے شامل ہو چکے ہیں۔',
+    printSpecsTitle: 'شمارہ نمبر 03 کی تفصیلات',
+    printSpecsFormat: 'سائز: 210 × 280 ملی میٹر، 164 صفحات',
+    printSpecsPaper: 'کاغذ: 120 گرام فیڈریگونی ان کوٹڈ',
+    printSpecsBinding: 'جلد سازی: اسمتھ سوئی دھاگے کی روایتی بائنڈنگ مع گولڈن پرنٹ',
+    printSpecsCopies: 'تعداد: صرف 1500 دستی نمبر شدہ خصوصی نسخے',
+    orderPrintCopy: 'پرنٹ نسخہ طلب کریں',
+    readMore: 'تحریر پڑھیں',
   },
 };

@@ -13,43 +13,31 @@ async function run() {
   const page = await browser.newPage();
   await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 2 });
 
-  // 1. Articles archive with advanced search & filter bar
-  console.log('Capturing Articles archive with advanced search...');
+  // 1. Articles archive with themed search bar
+  console.log('Capturing Articles archive with themed search bar...');
   await page.goto('http://localhost:4173/articles', { waitUntil: 'networkidle0' });
   await page.screenshot({
-    path: path.join(artifactsDir, 'screenshot-articles-search-bar.png'),
+    path: path.join(artifactsDir, 'screenshot-articles-themed-search.png'),
     fullPage: false,
   });
 
-  // 2. Open Search Modal
+  // 2. Open Search Modal to verify landscape scrollbar is completely removed
   console.log('Opening and capturing search modal...');
-  // Click the search button in the header
   const searchBtn = await page.$('button[aria-label="Search"]');
   if (searchBtn) {
     await searchBtn.click();
     await new Promise((r) => setTimeout(r, 400));
-    // Type a query
-    await page.keyboard.type('art');
-    await new Promise((r) => setTimeout(r, 400));
     await page.screenshot({
-      path: path.join(artifactsDir, 'screenshot-search-modal-active.png'),
+      path: path.join(artifactsDir, 'screenshot-search-modal-fixed.png'),
     });
   }
 
-  // 3. Urdu RTL Home
-  console.log('Capturing Urdu RTL Home...');
-  await page.goto('http://localhost:4173/ur', { waitUntil: 'networkidle0' });
+  // 3. Home page with new sections (FAQ, Disciplines, Manifesto, Dispatch)
+  console.log('Capturing Home page with new editorial components...');
+  await page.goto('http://localhost:4173/', { waitUntil: 'networkidle0' });
   await page.screenshot({
-    path: path.join(artifactsDir, 'screenshot-urdu-home-rtl.png'),
-    fullPage: false,
-  });
-
-  // 4. Arabic RTL Article
-  console.log('Capturing Arabic RTL Article...');
-  await page.goto('http://localhost:4173/ar/articles/the-death-of-the-card-grid', { waitUntil: 'networkidle0' });
-  await page.screenshot({
-    path: path.join(artifactsDir, 'screenshot-arabic-media-rtl.png'),
-    fullPage: false,
+    path: path.join(artifactsDir, 'screenshot-home-new-components.png'),
+    fullPage: true,
   });
 
   await browser.close();
