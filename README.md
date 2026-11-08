@@ -121,6 +121,11 @@ Articles are added directly in Git under `content/articles/<slug>.json`.
   "date": "2026-11-08",
   "updated": "2026-11-09",
   "author": "Elena Vance",
+  "heroImage": {
+    "url": "https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?auto=format&fit=crop&w=1600&q=80",
+    "alt": "Full width feature artwork",
+    "credit": "Photo by Elena Vance"
+  },
   "tags": ["design-systems", "typography"],
   "body": [
     { "type": "p", "text": "This is an editorial paragraph." },
@@ -128,7 +133,18 @@ Articles are added directly in Git under `content/articles/<slug>.json`.
     { "type": "quote", "text": "Whitespace is not empty space.", "cite": "Jan Tschichold" },
     { "type": "ul", "items": ["First insight", "Second insight"] },
     { "type": "ol", "items": ["Step one", "Step two"] },
-    { "type": "code", "lang": "ts", "code": "console.log('Crafted');" }
+    { "type": "code", "lang": "ts", "code": "console.log('Crafted');" },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Editorial detail caption",
+      "caption": "Figure 1: High-fidelity typographic specimen."
+    },
+    {
+      "type": "video",
+      "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "caption": "Short documentary on typographic craft."
+    }
   ]
 }
 ```
@@ -137,7 +153,8 @@ Articles are added directly in Git under `content/articles/<slug>.json`.
 - File name must match `slug` (`content/articles/<slug>.json`).
 - `slug` and `tags` must match kebab-case: `^[a-z0-9]+(?:-[a-z0-9]+)*$`.
 - Dates must match `YYYY-MM-DD`.
-- Block types allowed: `p`, `h2`, `h3`, `ul`, `ol`, `quote`, `code`.
+- Block types allowed: `p`, `h2`, `h3`, `ul`, `ol`, `quote`, `code`, `image`, `video`.
+- Optional `heroImage` with `url`, `alt`, and optional `credit`.
 - Duplicate slugs across articles are rejected with exit code 1.
 - Each translation in `content/translations/<lang>/` must have the exact same number and types of blocks as its source article.
 
