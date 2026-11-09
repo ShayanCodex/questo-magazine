@@ -145,24 +145,24 @@ export function Articles() {
       </header>
 
       {/* Advanced In-Page Search & Filter Toolbar with Adaptive Theme Styling */}
-      <section className="space-y-6 bg-editorial-surface border border-editorial-border p-5 sm:p-7 rounded-sm shadow-xs">
-        <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4">
+      <section className="space-y-5 bg-editorial-surface border border-editorial-border p-4 sm:p-5 rounded-sm shadow-xs">
+        <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3">
           {/* Live Search Input */}
-          <div className="group relative flex-1 flex items-center bg-editorial-surface border border-editorial-border focus-within:border-editorial-text focus-within:ring-2 focus-within:ring-editorial-text/10 rounded-sm transition-all">
-            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted group-focus-within:text-editorial-text transition-colors absolute start-3.5 pointer-events-none" />
+          <div className="group relative flex-1 flex items-center bg-editorial-surface border border-editorial-border focus-within:border-editorial-text focus-within:ring-1 focus-within:ring-editorial-text/20 rounded-sm transition-all">
+            <MagnifyingGlassIcon className="h-4.5 w-4.5 text-editorial-muted group-focus-within:text-editorial-text transition-colors absolute start-3 pointer-events-none" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t.searchPlaceholder}
-              className="w-full bg-transparent ps-11 pe-11 py-3 font-serif text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
+              className="w-full bg-transparent ps-10 pe-10 py-2.5 font-serif text-sm sm:text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
               aria-label={t.search}
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                className="absolute end-3 p-1.5 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
+                className="absolute end-2.5 p-1 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
                 aria-label={t.clearSearch}
               >
                 <XMarkIcon className="h-4 w-4" />
@@ -181,7 +181,7 @@ export function Articles() {
                 type="button"
                 onClick={() => setSortBy('newest')}
                 className={cn(
-                  'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
+                  'px-3 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'newest'
                     ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'
@@ -193,7 +193,7 @@ export function Articles() {
                 type="button"
                 onClick={() => setSortBy('oldest')}
                 className={cn(
-                  'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
+                  'px-3 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'oldest'
                     ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'

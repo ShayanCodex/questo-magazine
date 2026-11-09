@@ -10,7 +10,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>('light');
   const [fallbackOverlay, setFallbackOverlay] = useState<'light' | 'dark' | null>(null);
   const mountedRef = useRef(false);
-  const isTransitioningRef = useRef(false);
 
   // On client mount, read current active theme from document or localStorage
   useEffect(() => {
@@ -54,62 +53,93 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     }
   }, [theme]);
 
-  const toggleTheme = () => {
-    if (isTransitioningRef.current) return;
-    const nextTheme: Theme = theme === 'light' ? 'dark' : 'light';
+  const activeTransitionRef = useRef<{ skipTransition?: () => void } | null>(null);
+  const fallbackTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-    // 1. Native View Transitions API (Chrome, Edge, Safari 18+) with circular reveal from left top corner (0% 0%)
+  const toggleTheme = () => {
+    // 1. If any transition is currently animating, cancel/skip it immediately so rapid clicks respond instantly
+    if (activeTransitionRef.current?.skipTransition) {
+      try {
+        activeTransitionRef.current.skipTransition();
+      } catch {
+        // already settled
+      }
+      activeTransitionRef.current = null;
+    }
+
+    if (fallbackTimerRef.current) {
+      clearTimeout(fallbackTimerRef.current);
+      fallbackTimerRef.current = null;
+      setFallbackOverlay(null);
+    }
+
+    // 2. Read live DOM state to guarantee 100% accuracy on instant repeated clicks
+    const isCurrentlyDark =
+      typeof document !== 'undefined'
+        ? document.documentElement.classList.contains('dark') ||
+          document.documentElement.getAttribute('data-theme') === 'dark'
+        : theme === 'dark';
+
+    const nextTheme: Theme = isCurrentlyDark ? 'light' : 'dark';
+
+    // 3. Native View Transitions API (Chrome, Edge, Safari 18+) with circular reveal from left top corner (0% 0%)
     if (
       typeof document !== 'undefined' &&
       'startViewTransition' in document &&
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
-      isTransitioningRef.current = true;
       const transitionDoc = document as Document & {
-        startViewTransition: (callback: () => void) => { finished: Promise<void> };
+        startViewTransition: (callback: () => void) => {
+          finished: Promise<void>;
+          skipTransition: () => void;
+        };
       };
 
-      const transition = transitionDoc.startViewTransition(() => {
-        flushSync(() => {
-          setThemeState(nextTheme);
-          const root = document.documentElement;
-          if (nextTheme === 'dark') {
-            root.classList.add('dark');
-            root.setAttribute('data-theme', 'dark');
-          } else {
-            root.classList.remove('dark');
-            root.setAttribute('data-theme', 'light');
+      try {
+        const transition = transitionDoc.startViewTransition(() => {
+          flushSync(() => {
+            setThemeState(nextTheme);
+            const root = document.documentElement;
+            if (nextTheme === 'dark') {
+              root.classList.add('dark');
+              root.setAttribute('data-theme', 'dark');
+            } else {
+              root.classList.remove('dark');
+              root.setAttribute('data-theme', 'light');
+            }
+          });
+        });
+
+        activeTransitionRef.current = transition;
+
+        transition.finished.finally(() => {
+          if (activeTransitionRef.current === transition) {
+            activeTransitionRef.current = null;
           }
         });
-      });
-
-      transition.finished.finally(() => {
-        isTransitioningRef.current = false;
-      });
-      return;
+        return;
+      } catch {
+        // In case startViewTransition throws, proceed to direct state update
+      }
     }
 
-    // 2. Circular Grow Fallback for browsers without View Transitions API
+    // 4. Circular Grow Fallback for browsers without View Transitions API
     if (
       typeof window !== 'undefined' &&
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
-      isTransitioningRef.current = true;
       setFallbackOverlay(nextTheme);
+      setThemeState(nextTheme);
 
-      setTimeout(() => {
-        setThemeState(nextTheme);
-      }, 350);
-
-      setTimeout(() => {
+      fallbackTimerRef.current = setTimeout(() => {
         setFallbackOverlay(null);
-        isTransitioningRef.current = false;
-      }, 700);
+        fallbackTimerRef.current = null;
+      }, 450);
 
       return;
     }
 
-    // 3. Fallback for reduced motion or SSR
+    // 5. Fallback for reduced motion or SSR
     setThemeState(nextTheme);
   };
 

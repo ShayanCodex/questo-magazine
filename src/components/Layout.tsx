@@ -73,16 +73,20 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               </Link>
             </nav>
 
-            {/* Quick Search Button with Theme Styling */}
+            {/* Attractive Editorial Search Capsule Bar */}
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center gap-2 px-3 py-1.5 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text hover:text-editorial-text text-editorial-muted transition-all text-xs font-mono cursor-pointer shadow-2xs"
+              className="group flex items-center justify-between gap-3 px-3 py-1.5 h-9 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-36 sm:w-56 md:w-64"
               aria-label={t.search}
             >
-              <MagnifyingGlassIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text transition-colors" />
-              <span className="hidden sm:inline font-medium">{t.search}</span>
-              <kbd className="hidden sm:inline-block ms-1 px-1.5 py-0.5 text-[10px] bg-editorial-surface-subtle border border-editorial-border rounded-xs group-hover:border-editorial-text transition-colors">
+              <div className="flex items-center gap-2 truncate">
+                <MagnifyingGlassIcon className="h-4 w-4 text-editorial-text shrink-0" />
+                <span className="font-serif text-xs text-editorial-muted/80 group-hover:text-editorial-text truncate transition-colors">
+                  {t.searchPlaceholder || 'Search articles...'}
+                </span>
+              </div>
+              <kbd className="hidden sm:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-xs group-hover:border-editorial-text transition-colors shrink-0">
                 ⌘K
               </kbd>
             </button>
