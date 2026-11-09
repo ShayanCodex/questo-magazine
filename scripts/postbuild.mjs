@@ -74,6 +74,27 @@ ${alternates.join('\n')}
   </url>`);
   }
 
+  // 2b. Categories page entries (available in all languages)
+  for (const lang of languages) {
+    const isDefault = lang.code === defaultLang;
+    const pathPart = isDefault ? 'categories' : `${lang.code}/categories`;
+    const loc = cleanUrl(baseUrl, pathPart);
+
+    const alternates = languages.map(l => {
+      const p = l.code === defaultLang ? 'categories' : `${l.code}/categories`;
+      return `    <xhtml:link rel="alternate" hreflang="${l.code}" href="${cleanUrl(baseUrl, p)}" />`;
+    });
+    alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${cleanUrl(baseUrl, 'categories')}" />`);
+
+    entries.push(`  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+${alternates.join('\n')}
+  </url>`);
+  }
+
   // 3. Tags pages entries (available in all languages)
   for (const tag of tags) {
     for (const lang of languages) {

@@ -18,7 +18,7 @@ import { Badge } from './ui/badge';
 import {
   CATEGORIES,
   getArticleCategory,
-  getSearchSuggestions,
+  getStructuredSearchSuggestions,
   type SearchSuggestion,
 } from '../lib/categories';
 
@@ -77,9 +77,9 @@ export function SearchModal({
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
 
-  // Smart live suggestions (Categories, Subcategories, Topics, Queries)
-  const liveSuggestions = useMemo(() => {
-    return getSearchSuggestions(query, items);
+  // Smart live structured suggestions (Categories, Subcategories, Topics, Queries)
+  const liveStructured = useMemo(() => {
+    return getStructuredSearchSuggestions(query, items);
   }, [query, items]);
 
   // Load recent searches from localStorage on mount & open
@@ -289,25 +289,59 @@ export function SearchModal({
             </kbd>
           </div>
 
-          {/* Smart Live Suggestions Strip */}
-          {liveSuggestions.length > 0 && (
-            <div className="px-3 py-1.5 border-b border-editorial-border/60 bg-editorial-surface-subtle flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
-                <SparklesIcon className="h-3 w-3 text-editorial-text" />
-                <span>Suggestions:</span>
-              </span>
-              {liveSuggestions.map((sug, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => handleApplySuggestion(sug)}
-                  className="font-mono text-[11px] px-2 py-0.5 rounded-xs bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text transition-colors cursor-pointer shrink-0 flex items-center gap-1"
-                >
-                  {sug.type === 'category' && <FolderIcon className="h-3 w-3 text-editorial-muted" />}
-                  {sug.type === 'topic' && <TagIcon className="h-3 w-3 text-editorial-muted" />}
-                  <span>{sug.label}</span>
-                </button>
-              ))}
+          {/* Smart Live Suggestions Strip with Sections: Categories, Subcategories, Topics & #Tags */}
+          {liveStructured.total > 0 && (
+            <div className="px-3.5 py-2 border-b border-editorial-border/60 bg-editorial-surface-subtle flex flex-col gap-1.5 text-xs font-mono">
+              {/* Category Suggestions */}
+              {liveStructured.categories.length > 0 && (
+                <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
+                    <FolderIcon className="h-3 w-3 text-editorial-text" />
+                    <span>Categories:</span>
+                  </span>
+                  {liveStructured.categories.map((sug, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => handleApplySuggestion(sug)}
+                      className={cn(
+                        'font-mono text-[11px] px-2 py-0.5 rounded-xs border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
+                        selectedCategory === sug.categoryId
+                          ? 'bg-editorial-text text-editorial-bg font-semibold'
+                          : 'bg-editorial-surface border-editorial-border hover:border-editorial-text text-editorial-text'
+                      )}
+                    >
+                      <FolderIcon className="h-3 w-3 text-editorial-muted" />
+                      <span>{sug.label}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Topics & #Tags Suggestions */}
+              {liveStructured.topics.length > 0 && (
+                <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
+                    <TagIcon className="h-3 w-3 text-editorial-text" />
+                    <span>Topics:</span>
+                  </span>
+                  {liveStructured.topics.map((sug, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => handleApplySuggestion(sug)}
+                      className={cn(
+                        'font-mono text-[11px] px-2 py-0.5 rounded-xs border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
+                        selectedTag === sug.value
+                          ? 'bg-editorial-text text-editorial-bg font-semibold'
+                          : 'bg-editorial-surface border-editorial-border hover:border-editorial-text text-editorial-text'
+                      )}
+                    >
+                      <span>{sug.label}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           )}
 
@@ -454,7 +488,7 @@ export function SearchModal({
           {/* Results List: Balanced, Normal-Sized, Clean Cards with Match Highlighting & ZERO Hover Borders */}
           <div
             ref={resultsContainerRef}
-            className="max-h-72 sm:max-h-84 overflow-y-auto custom-scrollbar p-2 space-y-1"
+            className="max-h-72 sm:max-h-84 overflow-y-auto custom-scrollbar p-3 pb-6 space-y-2"
           >
             {filtered.length === 0 ? (
               <div className="py-10 px-4 text-center space-y-3">

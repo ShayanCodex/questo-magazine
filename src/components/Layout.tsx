@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Bars3Icon, MagnifyingGlassIcon, FolderIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, MagnifyingGlassIcon, FolderIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
@@ -75,6 +75,9 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               </Link>
               <Link to={localePath('/articles')} className="hover:text-editorial-text transition-colors">
                 {t.articles}
+              </Link>
+              <Link to={localePath('/categories')} className="hover:text-editorial-text transition-colors">
+                {t.categories || 'Categories'}
               </Link>
             </nav>
 
@@ -173,17 +176,38 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
         </div>
       </footer>
 
-      {/* Drawer Navigation */}
+      {/* Drawer Navigation - Fully Responsive & Scrollable on Mobile/Desktop */}
       <Sheet open={drawerOpen} onOpenChange={setDrawerOpen}>
-        <SheetContent side="inlineEnd" className="flex flex-col justify-between">
-          <div className="space-y-8">
-            <SheetHeader>
-              <SheetTitle>{siteConfig.name} Magazine</SheetTitle>
-              <SheetDescription className="sr-only">
-                Main navigation, search, and language selection
-              </SheetDescription>
-            </SheetHeader>
+        <SheetContent
+          side="inlineEnd"
+          hideDefaultClose={true}
+          className="w-full sm:max-w-md h-full flex flex-col p-0 overflow-hidden bg-editorial-surface border-editorial-border shadow-2xl"
+        >
+          {/* Accessible Dialog Title & Description */}
+          <SheetHeader className="sr-only">
+            <SheetTitle>{siteConfig.name} Magazine</SheetTitle>
+            <SheetDescription>
+              Main navigation, search, categories, and language selection
+            </SheetDescription>
+          </SheetHeader>
 
+          {/* Sticky Responsive Drawer Header */}
+          <div className="sticky top-0 z-20 flex items-center justify-between px-5 sm:px-6 py-4 border-b border-editorial-border bg-editorial-surface/95 backdrop-blur-xs">
+            <span className="font-display font-black text-xl uppercase tracking-tighter text-editorial-text">
+              {siteConfig.name} Magazine
+            </span>
+            <button
+              type="button"
+              onClick={() => setDrawerOpen(false)}
+              className="rounded-sm p-2 text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover transition-colors cursor-pointer min-h-[44px] min-w-[44px] flex items-center justify-center"
+              aria-label={t.close || 'Close navigation menu'}
+            >
+              <XMarkIcon className="h-5 w-5 text-editorial-text" />
+            </button>
+          </div>
+
+          {/* Scrollable Drawer Body with Touch Momentum & Safe Bottom Area */}
+          <div className="flex-1 overflow-y-auto custom-scrollbar overscroll-contain px-5 sm:px-6 py-5 space-y-6">
             {/* Quick Search in Drawer */}
             <button
               type="button"
@@ -191,13 +215,13 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 setDrawerOpen(false);
                 setSearchOpen(true);
               }}
-              className="w-full flex items-center justify-between p-3 rounded-sm border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono uppercase tracking-wider cursor-pointer"
+              className="w-full flex items-center justify-between p-3 rounded-sm border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono uppercase tracking-wider cursor-pointer bg-editorial-surface-subtle"
             >
               <span className="flex items-center gap-2">
                 <MagnifyingGlassIcon className="h-4 w-4 text-editorial-text" />
                 <span>{t.search}</span>
               </span>
-              <kbd className="px-1.5 py-0.5 text-[10px] bg-editorial-surface-subtle border border-editorial-border rounded-sm">
+              <kbd className="px-1.5 py-0.5 text-[10px] bg-editorial-surface border border-editorial-border rounded-sm">
                 ⌘K
               </kbd>
             </button>
@@ -210,34 +234,53 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               <ThemeToggle showLabel={true} />
             </div>
 
-            {/* Primary Large Links */}
-            <nav className="flex flex-col space-y-4 pt-2">
+            {/* Primary Large Links (Home, Articles, Categories) */}
+            <nav className="flex flex-col space-y-3 pt-2">
               <Link
                 to={localePath('/')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
+                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.home}
               </Link>
               <Link
                 to={localePath('/articles')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
+                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.articles}
+              </Link>
+              <Link
+                to={localePath('/categories')}
+                onClick={() => setDrawerOpen(false)}
+                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors"
+              >
+                {t.categories || 'Categories'}
               </Link>
             </nav>
 
             {/* Categories & Subcategories Explorer */}
             <div className="space-y-4 pt-4 border-t border-editorial-border">
-              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted flex items-center gap-1.5 font-medium">
-                <FolderIcon className="h-4 w-4 text-editorial-text" />
-                <span>Categories &amp; Subcategories</span>
-              </span>
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted flex items-center gap-1.5 font-medium">
+                  <FolderIcon className="h-4 w-4 text-editorial-text" />
+                  <span>{t.categories || 'Categories & Subcategories'}</span>
+                </span>
+                <Link
+                  to={localePath('/categories')}
+                  onClick={() => setDrawerOpen(false)}
+                  className="text-[10px] font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline"
+                >
+                  {t.allCategoriesAtoZ || 'View A–Z'}
+                </Link>
+              </div>
 
-              <div className="space-y-3.5">
+              <div className="space-y-3">
                 {CATEGORIES.map((cat) => (
-                  <div key={cat.id} className="space-y-1.5">
+                  <div
+                    key={cat.id}
+                    className="p-3 rounded-sm border border-editorial-border/70 bg-editorial-surface-subtle space-y-2"
+                  >
                     <Link
                       to={localePath(`/articles?category=${cat.id}`)}
                       onClick={() => setDrawerOpen(false)}
@@ -246,13 +289,13 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                       <span>{cat.name}</span>
                       <span className="text-[10px] font-mono text-editorial-muted">→</span>
                     </Link>
-                    <div className="flex flex-wrap gap-1.5 ps-1">
+                    <div className="flex flex-wrap gap-1.5">
                       {cat.subcategories.map((sub) => (
                         <Link
                           key={sub.id}
                           to={localePath(`/articles?category=${cat.id}&subcategory=${sub.id}`)}
                           onClick={() => setDrawerOpen(false)}
-                          className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border/60 hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors"
+                          className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-xs bg-editorial-surface border border-editorial-border/60 hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors"
                         >
                           {sub.name}
                         </Link>
@@ -269,49 +312,51 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted block">
                   {t.topics}
                 </span>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {tags.map((tag) => (
                     <Link
                       key={tag}
                       to={localePath(`/tags/${tag}`)}
                       onClick={() => setDrawerOpen(false)}
                     >
-                      <Badge variant="default">#{tag}</Badge>
+                      <Badge variant="default" className="text-[10px] uppercase">
+                        #{tag}
+                      </Badge>
                     </Link>
                   ))}
                 </div>
               </div>
             )}
-          </div>
 
-          {/* Pinned Language List at Bottom */}
-          <div className="pt-6 border-t border-editorial-border">
-            <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted block mb-3">
-              {t.languages}
-            </span>
-            <div className="grid grid-cols-2 gap-2 text-sm font-medium">
-              {siteConfig.languages.map((lang) => {
-                const targetPath = switchLanguagePath(lang.code, currentPath);
-                const isCurrent = lang.code === language.code;
+            {/* Pinned Language List with Safe Bottom Spacing */}
+            <div className="pt-4 pb-8 border-t border-editorial-border space-y-3">
+              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted block">
+                {t.languages}
+              </span>
+              <div className="grid grid-cols-2 gap-2 text-xs font-mono">
+                {siteConfig.languages.map((lang) => {
+                  const targetPath = switchLanguagePath(lang.code, currentPath);
+                  const isCurrent = lang.code === language.code;
 
-                return (
-                  <Link
-                    key={lang.code}
-                    to={targetPath}
-                    onClick={() => setDrawerOpen(false)}
-                    className={`px-3 py-2 rounded-sm border transition-colors flex items-center justify-between ${
-                      isCurrent
-                        ? 'border-editorial-text text-editorial-text font-semibold bg-editorial-surface-hover'
-                        : 'border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text'
-                    }`}
-                    aria-current={isCurrent ? 'true' : undefined}
-                    hrefLang={lang.code}
-                  >
-                    <span>{lang.name}</span>
-                    {isCurrent && <span className="h-1.5 w-1.5 rounded-full bg-editorial-text" />}
-                  </Link>
-                );
-              })}
+                  return (
+                    <Link
+                      key={lang.code}
+                      to={targetPath}
+                      onClick={() => setDrawerOpen(false)}
+                      className={`px-3 py-2 rounded-sm border transition-colors flex items-center justify-between ${
+                        isCurrent
+                          ? 'border-editorial-text text-editorial-text font-semibold bg-editorial-surface-hover'
+                          : 'border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text'
+                      }`}
+                      aria-current={isCurrent ? 'true' : undefined}
+                      hrefLang={lang.code}
+                    >
+                      <span>{lang.name}</span>
+                      {isCurrent && <span className="h-1.5 w-1.5 rounded-full bg-editorial-text" />}
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </SheetContent>

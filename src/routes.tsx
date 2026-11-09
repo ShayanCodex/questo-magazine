@@ -9,6 +9,7 @@ import {
 import { LanguageRoot } from './components/LanguageRoot';
 import { Home } from './pages/Home';
 import { Articles } from './pages/Articles';
+import { Categories } from './pages/Categories';
 import { Article } from './pages/Article';
 import { Tag } from './pages/Tag';
 import { NotFound } from './pages/NotFound';
@@ -50,6 +51,15 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
       {
         path: 'articles',
         element: <Articles />,
+        loader: async ({ request }) => {
+          const url = new URL(request.url);
+          const articles = await loadAllArticles(lang.code);
+          return { articles, pathname: url.pathname };
+        },
+      },
+      {
+        path: 'categories',
+        element: <Categories />,
         loader: async ({ request }) => {
           const url = new URL(request.url);
           const articles = await loadAllArticles(lang.code);

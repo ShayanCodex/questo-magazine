@@ -124,6 +124,9 @@ export function getIncludedRoutes() {
     // Articles Index
     routes.push(`${prefix}/articles`);
 
+    // Categories Index
+    routes.push(`${prefix}/categories`);
+
     // Dynamic Article routes
     for (const article of articles) {
       routes.push(`${prefix}/articles/${article.slug}`);

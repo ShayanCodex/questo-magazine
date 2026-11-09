@@ -27,12 +27,14 @@ SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
 
 export interface SheetContentProps
   extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
-    VariantProps<typeof sheetVariants> {}
+    VariantProps<typeof sheetVariants> {
+  hideDefaultClose?: boolean;
+}
 
 export const SheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
   SheetContentProps
->(({ side = 'inlineEnd', className, children, ...props }, ref) => (
+>(({ side = 'inlineEnd', hideDefaultClose = false, className, children, ...props }, ref) => (
   <SheetPortal>
     <SheetOverlay />
     <SheetPrimitive.Content
@@ -41,12 +43,14 @@ export const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close
-        className="absolute top-6 inline-end-6 ltr:right-6 rtl:left-6 rounded-sm opacity-70 hover:opacity-100 transition-opacity focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer"
-        aria-label="Close navigation menu"
-      >
-        <XMarkIcon className="h-6 w-6 text-editorial-text" />
-      </SheetPrimitive.Close>
+      {!hideDefaultClose && (
+        <SheetPrimitive.Close
+          className="absolute top-4 inline-end-4 ltr:right-4 rtl:left-4 z-30 rounded-sm opacity-70 hover:opacity-100 transition-opacity focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer"
+          aria-label="Close navigation menu"
+        >
+          <XMarkIcon className="h-5 w-5 text-editorial-text" />
+        </SheetPrimitive.Close>
+      )}
     </SheetPrimitive.Content>
   </SheetPortal>
 ));

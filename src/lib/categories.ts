@@ -101,38 +101,37 @@ export interface SearchSuggestion {
 /**
  * Generates smart suggestions for search inputs based on current query and articles
  */
-export function getSearchSuggestions(
+export interface StructuredSearchSuggestions {
+  categories: SearchSuggestion[];
+  subcategories: SearchSuggestion[];
+  topics: SearchSuggestion[];
+  queries: SearchSuggestion[];
+  total: number;
+}
+
+export function getStructuredSearchSuggestions(
   rawQuery: string,
   articles: Array<{ title: string; tags: string[]; slug: string; category?: string; subcategory?: string }> = []
-): SearchSuggestion[] {
+): StructuredSearchSuggestions {
   const q = rawQuery.trim().toLowerCase();
-  const suggestions: SearchSuggestion[] = [];
-  const seen = new Set<string>();
+  const categories: SearchSuggestion[] = [];
+  const subcategories: SearchSuggestion[] = [];
+  const topics: SearchSuggestion[] = [];
+  const queries: SearchSuggestion[] = [];
 
-  const add = (item: SearchSuggestion) => {
-    const key = `${item.type}:${item.value.toLowerCase()}`;
-    if (!seen.has(key)) {
-      seen.add(key);
-      suggestions.push(item);
-    }
-  };
-
-  // If query is empty, suggest categories, top subcategories and popular editorial topics
+  // When query is empty, surface all categories, top subcategories, and popular tags
   if (!q) {
     CATEGORIES.forEach((cat) => {
-      add({
+      categories.push({
         type: 'category',
         label: cat.name,
         value: cat.name,
         categoryId: cat.id,
       });
-    });
-
-    CATEGORIES.forEach((cat) => {
-      cat.subcategories.slice(0, 1).forEach((sub) => {
-        add({
+      cat.subcategories.slice(0, 2).forEach((sub) => {
+        subcategories.push({
           type: 'subcategory',
-          label: `${cat.name} › ${sub.name}`,
+          label: sub.name,
           value: sub.name,
           categoryId: cat.id,
           subcategoryId: sub.id,
@@ -140,32 +139,39 @@ export function getSearchSuggestions(
       });
     });
 
-    ['#architecture', '#minimalism', '#editorial', '#ssg', '#sculpture'].forEach((topic) => {
-      add({
+    const popularTags = ['architecture', 'art', 'craft', 'design-systems', 'engineering', 'sculpture', 'minimalism'];
+    popularTags.forEach((tg) => {
+      topics.push({
         type: 'topic',
-        label: topic,
-        value: topic.replace('#', ''),
+        label: `#${tg}`,
+        value: tg,
       });
     });
 
-    return suggestions.slice(0, 10);
+    return {
+      categories,
+      subcategories,
+      topics,
+      queries,
+      total: categories.length + subcategories.length + topics.length,
+    };
   }
 
-  // Matching Categories
+  // Filter Categories
   for (const cat of CATEGORIES) {
     if (cat.name.toLowerCase().includes(q) || cat.id.includes(q)) {
-      add({
+      categories.push({
         type: 'category',
-        label: `Category: ${cat.name}`,
+        label: cat.name,
         value: cat.name,
         categoryId: cat.id,
       });
     }
 
-    // Matching Subcategories
+    // Filter Subcategories
     for (const sub of cat.subcategories) {
       if (sub.name.toLowerCase().includes(q) || sub.id.includes(q)) {
-        add({
+        subcategories.push({
           type: 'subcategory',
           label: `${cat.name} › ${sub.name}`,
           value: sub.name,
@@ -176,7 +182,7 @@ export function getSearchSuggestions(
     }
   }
 
-  // Matching Tags / Topics across articles
+  // Filter Tags / Topics across articles
   const tagCounts = new Map<string, number>();
   articles.forEach((art) => {
     (art.tags || []).forEach((t) => {
@@ -187,7 +193,7 @@ export function getSearchSuggestions(
 
   for (const [tag, count] of tagCounts.entries()) {
     if (tag.includes(q)) {
-      add({
+      topics.push({
         type: 'topic',
         label: `#${tag}`,
         value: tag,
@@ -196,10 +202,10 @@ export function getSearchSuggestions(
     }
   }
 
-  // Matching Article Titles (as instant query suggestions)
+  // Matching Article Titles
   for (const art of articles) {
     if (art.title.toLowerCase().includes(q)) {
-      add({
+      queries.push({
         type: 'query',
         label: art.title,
         value: art.title,
@@ -207,6 +213,25 @@ export function getSearchSuggestions(
     }
   }
 
-  return suggestions.slice(0, 8);
+  return {
+    categories: categories.slice(0, 6),
+    subcategories: subcategories.slice(0, 6),
+    topics: topics.slice(0, 8),
+    queries: queries.slice(0, 5),
+    total: categories.length + subcategories.length + topics.length + queries.length,
+  };
+}
+
+export function getSearchSuggestions(
+  rawQuery: string,
+  articles: Array<{ title: string; tags: string[]; slug: string; category?: string; subcategory?: string }> = []
+): SearchSuggestion[] {
+  const structured = getStructuredSearchSuggestions(rawQuery, articles);
+  return [
+    ...structured.categories,
+    ...structured.subcategories,
+    ...structured.topics,
+    ...structured.queries,
+  ];
 }
 

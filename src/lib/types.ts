@@ -128,4 +128,14 @@ export interface I18nStrings {
   searchSuggestions?: string;
   clearAllFilters?: string;
   activeFilters?: string;
+  nextPage?: string;
+  prevPage?: string;
+  page?: string;
+  of?: string;
+  showingArticles?: string;
+  categoriesArchiveTitle?: string;
+  categoriesSubtitle?: string;
+  relatedArticles?: string;
+  exploreSubcategories?: string;
+  allCategoriesAtoZ?: string;
 }

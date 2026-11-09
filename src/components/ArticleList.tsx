@@ -5,13 +5,15 @@ import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory } from '../lib/categories';
 import { Badge } from './ui/badge';
 import { ArticleViewCount } from './ArticleViewCount';
+import { cn } from '../lib/utils';
 
 export interface ArticleListProps {
   articles: ArticleData[];
   emptyMessage?: string;
+  className?: string;
 }
 
-export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
+export function ArticleList({ articles, emptyMessage, className }: ArticleListProps) {
   const { language, t, localePath } = useLanguage();
 
   if (articles.length === 0) {
@@ -25,19 +27,25 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
   }
 
   return (
-    <div className="article-index divide-y divide-editorial-border border-y border-editorial-border">
+    <div
+      className={cn(
+        'article-index divide-y divide-editorial-border border-y border-editorial-border',
+        className
+      )}
+    >
       {articles.map((article) => {
         const articlePath = localePath(`/articles/${article.slug}`);
         const formattedDate = formatDate(article.date, language.code);
         const readingTime = calculateReadingTime(article, t.minRead);
         const { category, subcategory } = getArticleCategory(article);
+        const hasImage = Boolean(article.image);
 
         return (
           <article
             key={article.slug}
             className="article-row group/row relative py-8 sm:py-10 transition-opacity"
           >
-            {/* The primary link covering the whole row */}
+            {/* The primary link covering the whole row for accessibility & 1-click navigate */}
             <Link
               to={articlePath}
               className="absolute inset-0 z-0 focus:outline-none"
@@ -46,15 +54,20 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
             />
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start pointer-events-none">
-              {/* Meta column: date & reading time & real-time views */}
+              {/* Meta column: date, reading time & real-time GoatCounter views */}
               <div className="md:col-span-3 text-xs font-mono uppercase tracking-wider text-editorial-muted flex flex-row md:flex-col justify-between md:justify-start gap-1">
                 <time dateTime={article.date}>{formattedDate}</time>
                 <span className="opacity-70">{readingTime}</span>
                 <ArticleViewCount path={`/articles/${article.slug}`} slug={article.slug} compact />
               </div>
 
-              {/* Content column: Title, excerpt, and tags */}
-              <div className="md:col-span-6 space-y-3">
+              {/* Content column: Category breadcrumb, title, excerpt, and tags */}
+              <div
+                className={cn(
+                  'space-y-3',
+                  hasImage ? 'md:col-span-5 lg:col-span-6' : 'md:col-span-9'
+                )}
+              >
                 {/* Category & Subcategory Taxonomy Breadcrumb */}
                 <div className="flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider pointer-events-auto relative z-10">
                   <Link
@@ -107,17 +120,25 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
                 )}
               </div>
 
-              {/* Artwork thumbnail column */}
+              {/* Responsive Right-Side Image Column (Visible on mobile, tablet & desktop) */}
               {article.image && (
-                <div className="md:col-span-3 hidden sm:block">
-                  <div className="aspect-[4/3] rounded-sm overflow-hidden border border-editorial-border bg-editorial-surface">
+                <div className="md:col-span-4 lg:col-span-3 w-full order-first md:order-last pointer-events-auto relative z-10">
+                  <Link
+                    to={articlePath}
+                    tabIndex={-1}
+                    aria-hidden="true"
+                    className="block aspect-[16/10] sm:aspect-[4/3] rounded-sm overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
+                  >
                     <img
                       src={article.image}
                       alt={article.imageAlt || article.title}
                       className="w-full h-full object-cover group-hover/row:scale-105 transition-transform duration-500 ease-out"
                       loading="lazy"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLElement).style.display = 'none';
+                      }}
                     />
-                  </div>
+                  </Link>
                 </div>
               )}
             </div>
