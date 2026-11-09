@@ -30,6 +30,10 @@ export function CinematicScrollVideo({
   const [isMuted, setIsMuted] = useState(true);
   const [videoError, setVideoError] = useState(false);
 
+  // Fallback video URL if primary video fails to load
+  const fallbackVideoSrc = '/showcase-video.mp4';
+  const [activeVideoSrc, setActiveVideoSrc] = useState(videoSrc);
+
   useEffect(() => {
     let animationFrameId: number;
 
@@ -39,10 +43,11 @@ export function CinematicScrollVideo({
         const rect = containerRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        // Progress goes from 0 (when top enters lower viewport) to 1 (when centered in screen)
-        const startOffset = windowHeight * 0.88;
-        const endOffset = windowHeight * 0.18;
-        const progress = (startOffset - rect.top) / (startOffset - endOffset);
+        // Start expanding when top of container enters viewport (90% window height)
+        // Reach 100% full expansion when centered (18% window height)
+        const startY = windowHeight * 0.90;
+        const endY = windowHeight * 0.18;
+        const progress = (startY - rect.top) / (startY - endY);
         const clamped = Math.max(0, Math.min(1, progress));
         setScrollProgress(clamped);
       });
@@ -75,22 +80,31 @@ export function CinematicScrollVideo({
     setIsMuted(videoRef.current.muted);
   };
 
+  const handleVideoError = () => {
+    if (activeVideoSrc !== fallbackVideoSrc) {
+      setActiveVideoSrc(fallbackVideoSrc);
+    } else {
+      setVideoError(true);
+    }
+  };
+
   // Interpolations based on scroll progress (0 -> 1)
-  const widthPercent = 84 + scrollProgress * 16; // 84% -> 100%
-  const borderRadiusPx = Math.max(0, Math.round(18 * (1 - scrollProgress * 1.3))); // 18px -> 0px
-  const scale = 0.97 + scrollProgress * 0.03;
-  const headlineScale = 1 + scrollProgress * 0.15;
+  // Expands from a compact centered box (~50% width on desktop) to full 100% width (Framer reference)
+  const widthPercent = 50 + scrollProgress * 50; // 50% -> 100%
+  const borderRadiusPx = Math.max(0, Math.round(24 * (1 - scrollProgress * 1.35))); // 24px -> 0px
+  const scale = 0.94 + scrollProgress * 0.06; // 0.94 -> 1.0
+  const headlineScale = 1 + scrollProgress * 0.12;
 
   return (
     <section
       ref={containerRef}
-      className="relative w-full my-6 sm:my-10 flex flex-col items-center overflow-hidden"
+      className="relative w-full my-8 sm:my-14 flex flex-col items-center overflow-hidden"
       aria-label="Cinematic architectural video expansion"
     >
       {/* Intro Tag Header above Frame before fully expanded */}
       <div
-        className="pb-3 text-center space-y-1 transition-opacity duration-300 pointer-events-none"
-        style={{ opacity: Math.max(0.15, 1 - scrollProgress * 1.8) }}
+        className="pb-4 text-center space-y-1.5 transition-opacity duration-300 pointer-events-none"
+        style={{ opacity: Math.max(0.1, 1 - scrollProgress * 1.7) }}
       >
         <span className="font-sans text-xs text-editorial-muted flex items-center justify-center gap-2 font-medium">
           <FilmIcon className="h-3.5 w-3.5 text-editorial-text" />
@@ -98,17 +112,17 @@ export function CinematicScrollVideo({
           <span className="opacity-40">•</span>
           <span className="flex items-center gap-1 text-xs text-editorial-text font-medium">
             <ArrowsPointingOutIcon className="h-3 w-3" />
-            <span>Scroll to Expand</span>
+            <span>Scroll to Expand Fullscreen</span>
           </span>
         </span>
-        <p className="font-display font-black text-lg sm:text-2xl uppercase tracking-tight text-editorial-text">
+        <p className="font-display font-black text-xl sm:text-3xl uppercase tracking-tight text-editorial-text">
           Spatial Volume &amp; Architecture
         </p>
       </div>
 
-      {/* Morphing Video / Visual Frame - Natural Aspect Ratio with Zero Empty Void */}
+      {/* Morphing Video Frame - Framer-style fluid expansion with Zero Black Void */}
       <div
-        className="relative overflow-hidden transition-all duration-100 ease-out shadow-2xl border border-editorial-border bg-neutral-900 group aspect-[16/9] sm:aspect-[21/10] md:h-[68vh] md:max-h-[760px] md:min-h-[460px] md:aspect-auto"
+        className="relative overflow-hidden transition-all duration-75 ease-out shadow-2xl border border-editorial-border bg-neutral-900 group aspect-[16/10] sm:aspect-[21/10] md:h-[70vh] md:max-h-[780px] md:min-h-[460px] md:aspect-auto"
         style={{
           width: `${widthPercent}%`,
           borderRadius: `${borderRadiusPx}px`,
@@ -129,13 +143,13 @@ export function CinematicScrollVideo({
         {!videoError && (
           <video
             ref={videoRef}
-            src={videoSrc}
+            src={activeVideoSrc}
             poster={posterSrc}
             autoPlay
             loop
             muted={isMuted}
             playsInline
-            onError={() => setVideoError(true)}
+            onError={handleVideoError}
             className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700"
           />
         )}
@@ -216,11 +230,18 @@ export function CinematicScrollVideo({
                 />
               </div>
               <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-sans font-medium bg-black/50 border border-white/20 backdrop-blur-xs">
-                {scrollProgress >= 0.9 ? 'Fullscreen Active' : `${Math.round(scrollProgress * 100)}% Expanded`}
+                {scrollProgress >= 0.88 ? 'Fullscreen Active' : `${Math.round(scrollProgress * 100)}% Expanded`}
               </span>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Framer-Style Centered Editorial Statement Under Video */}
+      <div className="pt-6 sm:pt-8 text-center max-w-2xl mx-auto px-4">
+        <p className="font-sans text-editorial-muted text-xs sm:text-sm md:text-base leading-relaxed font-medium">
+          Questo investigates the architectural dialogue between monumental mass, tactile stone, and contemplative acoustic silence across modern visual culture.
+        </p>
       </div>
     </section>
   );

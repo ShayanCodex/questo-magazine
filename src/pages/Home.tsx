@@ -14,6 +14,7 @@ import { ManifestoBanner } from '../components/ManifestoBanner';
 import { EditorialDisciplines } from '../components/EditorialDisciplines';
 import { EditorialFaq } from '../components/EditorialFaq';
 import { EditorialDispatch } from '../components/EditorialDispatch';
+import { CircularStamp } from '../components/CircularStamp';
 
 interface HomeLoaderData {
   articles: ArticleData[];
@@ -43,18 +44,33 @@ export function Home() {
         type="website"
       />
 
-      {/* 1. Giant Masthead: ART & LIFE (Click to browse Art & Life) */}
+      {/* 1. Giant Masthead: QUESTO ART & LIFE with Outline Typography & Rotating Stamp (Inspired by Awwwards / Framer Reference) */}
       <section className="pt-2">
-        <div className="border-y-2 border-editorial-text py-2 sm:py-4">
+        <div className="border-y-2 border-editorial-text py-3 sm:py-5 flex flex-col md:flex-row items-center justify-between gap-4">
           <Link
             to={localePath('/articles?category=art-and-culture')}
-            className="block group"
+            className="block group flex-1 w-full"
             title="Browse Art & Life Collection"
           >
-            <h1 className="font-display font-black text-[clamp(3.5rem,14vw,10.5rem)] leading-[0.88] tracking-[-0.05em] text-editorial-text uppercase text-center sm:text-start select-none group-hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-colors cursor-pointer">
-              Art &amp; Life
-            </h1>
+            <div className="select-none flex flex-col items-center sm:items-start leading-none">
+              <span className="font-display font-black text-[clamp(2.8rem,9vw,6.8rem)] leading-[0.88] tracking-[-0.05em] text-editorial-text uppercase group-hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-colors">
+                Questo
+              </span>
+              <span
+                className="font-display font-black text-[clamp(2.4rem,7.5vw,5.8rem)] leading-[0.9] tracking-[-0.04em] uppercase text-transparent transition-all"
+                style={{
+                  WebkitTextStroke: '2px var(--color-editorial-text, currentColor)',
+                }}
+              >
+                Art &amp; Life
+              </span>
+            </div>
           </Link>
+
+          {/* Rotating Circular Stamp Badge */}
+          <div className="hidden md:flex shrink-0 items-center justify-center pe-2">
+            <CircularStamp />
+          </div>
         </div>
 
         {/* 2. High-Contrast News Ticker Strip */}
