@@ -102,7 +102,7 @@ export function FeaturedShowcaseSlider({
       aria-label="Featured Articles Showcase"
     >
       {/* Background Images with Crossfade & Slow Zoom */}
-      <div className="relative h-[480px] sm:h-[540px] lg:h-[600px] w-full overflow-hidden">
+      <div className="relative h-[380px] sm:h-[430px] md:h-[460px] lg:h-[480px] w-full overflow-hidden">
         {showcaseArticles.map((article, idx) => {
           const isActive = idx === currentIndex;
           return (
@@ -157,7 +157,7 @@ export function FeaturedShowcaseSlider({
         </div>
 
         {/* Foreground Content Card: Oversized Editorial Type */}
-        <div className="absolute bottom-14 sm:bottom-16 start-6 sm:start-12 end-6 sm:end-12 z-20 space-y-4 max-w-3xl">
+        <div className="absolute bottom-12 sm:bottom-14 start-6 sm:start-10 end-6 sm:end-10 z-20 space-y-3 max-w-3xl">
           {/* Metadata Row */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-wider text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
             <Link
