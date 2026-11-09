@@ -202,29 +202,31 @@ export function Home() {
             </div>
 
             {/* Stylized Magazine Cover Card */}
-            <div className="relative rounded-sm border border-editorial-border bg-neutral-900 text-white overflow-hidden p-6 aspect-[4/5] flex flex-col justify-between shadow-lg group">
-              <div className="absolute inset-0 opacity-40 mix-blend-overlay">
+            <div className="relative rounded-sm border border-editorial-border bg-neutral-950 text-white overflow-hidden p-6 aspect-[4/5] flex flex-col justify-between shadow-lg group">
+              <div className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
-                  alt="Magazine cover art"
+                  src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=85"
+                  alt="Questo Magazine Issue 03 Cover Art"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none" />
               </div>
 
               <div className="relative z-10 flex justify-between items-start">
-                <span className="font-mono text-xs uppercase tracking-widest bg-black/60 px-2 py-0.5 rounded-xs">
+                <span className="font-mono text-xs uppercase tracking-widest bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-xs border border-white/10 text-white">
                   Issue 03
                 </span>
-                <span className="font-mono text-xs uppercase text-white/70">
+                <span className="font-mono text-xs uppercase text-white/90 tracking-wider bg-black/40 px-2 py-0.5 rounded-xs backdrop-blur-xs">
                   Autumn 2026
                 </span>
               </div>
 
-              <div className="relative z-10 space-y-2">
-                <h4 className="font-display font-black text-4xl sm:text-5xl uppercase tracking-tighter leading-none text-white">
+              <div className="relative z-10 space-y-1.5">
+                <h4 className="font-display font-black text-4xl sm:text-5xl uppercase tracking-tighter leading-none text-white drop-shadow-md">
                   Questo
                 </h4>
-                <p className="text-xs font-sans text-white/80 uppercase tracking-widest">
+                <p className="text-xs font-sans text-white/90 uppercase tracking-widest font-medium drop-shadow-sm">
                   Magazin • Art &amp; Life
                 </p>
               </div>
