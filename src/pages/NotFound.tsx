@@ -16,7 +16,7 @@ export function NotFound() {
         noIndex={true}
       />
 
-      <span className="font-mono text-sm uppercase tracking-widest text-accent font-semibold">
+      <span className="font-mono text-sm uppercase tracking-widest text-editorial-text font-semibold">
         404
       </span>
 

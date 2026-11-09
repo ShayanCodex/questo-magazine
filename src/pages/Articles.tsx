@@ -183,7 +183,7 @@ export function Articles() {
                 className={cn(
                   'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'newest'
-                    ? 'bg-editorial-text text-editorial-inverted font-semibold shadow-xs'
+                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'
                 )}
               >
@@ -195,7 +195,7 @@ export function Articles() {
                 className={cn(
                   'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'oldest'
-                    ? 'bg-editorial-text text-editorial-inverted font-semibold shadow-xs'
+                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'
                 )}
               >
@@ -235,7 +235,7 @@ export function Articles() {
                 className={cn(
                   'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
                   selectedTag === null
-                    ? 'bg-editorial-text text-editorial-inverted font-semibold shadow-xs'
+                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                     : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
                 )}
               >
@@ -251,7 +251,7 @@ export function Articles() {
                     className={cn(
                       'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
                       selectedTag === tag
-                        ? 'bg-editorial-text text-editorial-inverted font-semibold shadow-xs'
+                        ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                         : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
                     )}
                   >

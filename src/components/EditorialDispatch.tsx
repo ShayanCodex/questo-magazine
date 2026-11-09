@@ -25,7 +25,7 @@ export function EditorialDispatch() {
 
         <div className="relative z-10 max-w-2xl space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-accent font-semibold flex items-center gap-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-editorial-text font-semibold flex items-center gap-2">
               <EnvelopeIcon className="h-4 w-4" />
               <span>Weekly Editorial Journal</span>
             </span>
@@ -54,7 +54,7 @@ export function EditorialDispatch() {
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-accent text-white font-mono text-xs uppercase tracking-wider font-semibold rounded-sm hover:bg-accent/90 transition-colors cursor-pointer shrink-0 shadow-xs"
+                className="px-6 py-3 bg-editorial-text text-editorial-bg font-mono text-xs uppercase tracking-wider font-semibold rounded-sm hover:opacity-90 transition-opacity cursor-pointer shrink-0 shadow-xs"
               >
                 {t.newsletterButton}
               </button>

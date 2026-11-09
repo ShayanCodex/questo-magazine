@@ -65,9 +65,9 @@ export function Article() {
         {article.isFallback && (
           <div
             role="status"
-            className="p-4 rounded-sm border border-editorial-border bg-editorial-border/20 text-editorial-text text-sm font-sans"
+            className="p-4 rounded-sm border border-editorial-border bg-editorial-surface-subtle text-editorial-text text-sm font-sans"
           >
-            <p className="font-medium text-accent mb-0.5">Translation Notice</p>
+            <p className="font-semibold text-editorial-text mb-0.5">Translation Notice</p>
             <p className="text-editorial-muted">{t.fallbackNotice}</p>
           </div>
         )}

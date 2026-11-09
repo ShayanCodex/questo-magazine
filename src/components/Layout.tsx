@@ -42,7 +42,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-editorial-bg text-editorial-text selection:bg-accent selection:text-white">
+    <div className="min-h-screen flex flex-col bg-editorial-bg text-editorial-text selection:bg-editorial-text selection:text-editorial-bg">
       {/* Accessible Skip Link */}
       <a
         href="#main-content"
@@ -257,14 +257,14 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                     onClick={() => setDrawerOpen(false)}
                     className={`px-3 py-2 rounded-sm border transition-colors flex items-center justify-between ${
                       isCurrent
-                        ? 'border-accent text-accent font-semibold bg-accent/5'
+                        ? 'border-editorial-text text-editorial-text font-semibold bg-editorial-surface-hover'
                         : 'border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text'
                     }`}
                     aria-current={isCurrent ? 'true' : undefined}
                     hrefLang={lang.code}
                   >
                     <span>{lang.name}</span>
-                    {isCurrent && <span className="h-1.5 w-1.5 rounded-full bg-accent" />}
+                    {isCurrent && <span className="h-1.5 w-1.5 rounded-full bg-editorial-text" />}
                   </Link>
                 );
               })}

@@ -49,7 +49,7 @@ export function Home() {
           <span className="font-bold text-editorial-bg shrink-0">
             {t.newsTicker}
           </span>
-          <div className="truncate whitespace-nowrap opacity-90">
+          <div className="truncate whitespace-nowrap opacity-90 text-editorial-bg">
             {t.tickerHeadline}
           </div>
         </div>

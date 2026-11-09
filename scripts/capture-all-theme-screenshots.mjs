@@ -15,7 +15,7 @@ async function run() {
   await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 2 });
 
   // 1. Start in Light Mode
-  console.log('Loading page...');
+  console.log('Loading page in Light Mode...');
   await page.goto('http://localhost:4173/', { waitUntil: 'networkidle0' });
 
   // Ensure Light Mode first
@@ -28,75 +28,51 @@ async function run() {
     }
   }
 
-  // 1. Capture Light Mode Home
-  console.log('Capturing Light Mode Home...');
+  // 1. Capture Light Mode Home (Top with Masthead and News Ticker)
+  console.log('Capturing Light Mode Home (News Ticker)...');
   await page.screenshot({
     path: path.join(artifactsDir, 'screenshot-theme-light-home.png'),
   });
 
-  // 2. Open Search Modal in Light Mode and hover card
-  console.log('Opening Search Modal in Light Mode...');
-  const searchBtnLight = await page.$('button[aria-label="Search"]');
-  if (searchBtnLight) {
-    await searchBtnLight.click();
-    await new Promise((r) => setTimeout(r, 400));
-
-    const cards = await page.$$('[role="button"][tabindex="0"]');
-    if (cards.length > 1) {
-      await cards[1].hover();
-      await new Promise((r) => setTimeout(r, 300));
+  // 2. Scroll to Manifesto specifically in Light Mode
+  console.log('Capturing Light Mode Manifesto...');
+  await page.evaluate(() => {
+    const manifesto = document.querySelector('blockquote');
+    if (manifesto) {
+      manifesto.scrollIntoView({ block: 'center' });
     }
-    await page.screenshot({
-      path: path.join(artifactsDir, 'screenshot-theme-light-search-modal-hovered.png'),
-    });
-
-    await page.keyboard.press('Escape');
-    await new Promise((r) => setTimeout(r, 300));
-  }
-
-  // 3. Click Theme Toggle to switch to Dark Mode!
-  console.log('Clicking Theme Toggle to switch to Dark Mode...');
-  const toggleToDark = await page.$('header button[title*="theme"], header button[aria-label*="theme"]');
-  if (toggleToDark) {
-    await toggleToDark.click();
-    await new Promise((r) => setTimeout(r, 400));
-  }
-
-  // 4. Capture Dark Mode Home
-  console.log('Capturing Dark Mode Home...');
+  });
+  await new Promise((r) => setTimeout(r, 400));
   await page.screenshot({
-    path: path.join(artifactsDir, 'screenshot-theme-dark-home.png'),
+    path: path.join(artifactsDir, 'screenshot-theme-light-manifesto.png'),
   });
 
-  // 5. Open Search Modal in Dark Mode and hover card
-  console.log('Opening Search Modal in Dark Mode...');
-  const searchBtnDark = await page.$('button[aria-label="Search"]');
-  if (searchBtnDark) {
-    await searchBtnDark.click();
-    await new Promise((r) => setTimeout(r, 400));
+  // 3. Scroll to Dispatch in Light Mode
+  console.log('Capturing Light Mode Dispatch...');
+  await page.evaluate(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+  await new Promise((r) => setTimeout(r, 400));
+  await page.screenshot({
+    path: path.join(artifactsDir, 'screenshot-theme-light-bottom.png'),
+  });
 
-    const cardsDark = await page.$$('[role="button"][tabindex="0"]');
-    if (cardsDark.length > 1) {
-      await cardsDark[1].hover();
-      await new Promise((r) => setTimeout(r, 300));
-    }
-    await page.screenshot({
-      path: path.join(artifactsDir, 'screenshot-theme-dark-search-modal-hovered.png'),
-    });
-
-    await page.keyboard.press('Escape');
-    await new Promise((r) => setTimeout(r, 300));
-  }
-
-  // 6. Navigate to Articles in Dark Mode
-  console.log('Capturing Articles archive in Dark Mode...');
+  // 4. Capture Articles in Light Mode
+  console.log('Capturing Articles archive in Light Mode...');
   await page.goto('http://localhost:4173/articles', { waitUntil: 'networkidle0' });
   await page.screenshot({
-    path: path.join(artifactsDir, 'screenshot-theme-dark-articles.png'),
+    path: path.join(artifactsDir, 'screenshot-theme-light-articles.png'),
+  });
+
+  // 5. Capture Article detail in Light Mode
+  console.log('Capturing Article detail in Light Mode...');
+  await page.goto('http://localhost:4173/articles/the-death-of-the-card-grid', { waitUntil: 'networkidle0' });
+  await page.screenshot({
+    path: path.join(artifactsDir, 'screenshot-theme-light-article-detail.png'),
   });
 
   await browser.close();
-  console.log('All light and dark screenshots captured successfully!');
+  console.log('All additional light theme screenshots captured successfully!');
 }
 
 run().catch((err) => {

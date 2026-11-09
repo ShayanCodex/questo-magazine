@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-editorial-bg: var(--bg);
+  --color-editorial-surface: var(--surface);
+  --color-editorial-surface-hover: var(--surface-hover);
+  --color-editorial-surface-subtle: var(--surface-subtle);
+  --color-editorial-text: var(--text);
+  --color-editorial-inverted: var(--text-inverted);
+  --color-editorial-muted: var(--muted);
+  --color-editorial-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+}
+
 @layer base {
   :root {
     --bg: #FFFFFF;
@@ -96,10 +109,6 @@
   background-color: var(--surface-subtle);
 }
 
-.text-editorial-text {
-  color: var(--text);
-}
-
 .bg-editorial-text {
   background-color: var(--text);
 }
@@ -108,16 +117,28 @@
   border-color: var(--text);
 }
 
+.border-editorial-border {
+  border-color: var(--border);
+}
+
+.text-editorial-text {
+  color: var(--text);
+}
+
+.text-editorial-bg {
+  color: var(--bg);
+}
+
+.text-editorial-surface {
+  color: var(--surface);
+}
+
 .text-editorial-inverted {
   color: var(--text-inverted);
 }
 
 .text-editorial-muted {
   color: var(--muted);
-}
-
-.border-editorial-border {
-  border-color: var(--border);
 }
 
 .text-accent {

@@ -8,11 +8,11 @@ export const buttonVariants = cva(
         default:
           'bg-editorial-text text-editorial-bg hover:opacity-90',
         outline:
-          'border border-editorial-border bg-transparent text-editorial-text hover:border-accent hover:text-accent',
+          'border border-editorial-border bg-transparent text-editorial-text hover:border-editorial-text hover:text-editorial-text',
         ghost:
-          'text-editorial-text hover:bg-editorial-border/30 hover:text-accent',
+          'text-editorial-text hover:bg-editorial-surface-hover hover:text-editorial-text',
         link:
-          'text-accent underline-offset-4 hover:underline p-0 h-auto',
+          'text-editorial-text underline-offset-4 hover:underline p-0 h-auto',
       },
       size: {
         default: 'h-11 min-h-[44px] px-4 py-2',
@@ -34,11 +34,11 @@ export const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          'border border-editorial-border bg-transparent text-editorial-muted hover:border-accent hover:text-accent',
+          'border border-editorial-border bg-editorial-surface text-editorial-muted hover:border-editorial-text hover:text-editorial-text',
         active:
-          'border border-accent text-accent font-medium',
+          'border border-editorial-text text-editorial-text font-medium bg-editorial-surface-subtle',
         muted:
-          'bg-editorial-border/40 text-editorial-muted border-transparent',
+          'bg-editorial-surface-subtle text-editorial-muted border-transparent',
       },
     },
     defaultVariants: {

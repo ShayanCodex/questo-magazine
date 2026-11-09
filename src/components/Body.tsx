@@ -15,7 +15,7 @@ export function Body({ blocks }: BodyProps) {
         switch (block.type) {
           case 'p':
             return (
-              <p key={index} className="text-editorial-text/95">
+              <p key={index} className="text-editorial-text">
                 {block.text}
               </p>
             );
@@ -44,7 +44,7 @@ export function Body({ blocks }: BodyProps) {
             return (
               <ul
                 key={index}
-                className="list-disc list-outside ltr:pl-6 rtl:pr-6 space-y-2.5 text-editorial-text/90"
+                className="list-disc list-outside ltr:pl-6 rtl:pr-6 space-y-2.5 text-editorial-text"
               >
                 {block.items?.map((item, itemIdx) => (
                   <li key={itemIdx}>{item}</li>
@@ -56,7 +56,7 @@ export function Body({ blocks }: BodyProps) {
             return (
               <ol
                 key={index}
-                className="list-decimal list-outside ltr:pl-6 rtl:pr-6 space-y-2.5 text-editorial-text/90"
+                className="list-decimal list-outside ltr:pl-6 rtl:pr-6 space-y-2.5 text-editorial-text"
               >
                 {block.items?.map((item, itemIdx) => (
                   <li key={itemIdx}>{item}</li>
@@ -68,7 +68,7 @@ export function Body({ blocks }: BodyProps) {
             return (
               <blockquote
                 key={index}
-                className="my-8 ltr:border-l-2 rtl:border-r-2 border-accent ltr:pl-6 rtl:pr-6 py-1 italic text-xl sm:text-2xl text-editorial-text/90 font-serif leading-relaxed"
+                className="my-8 ltr:border-l-2 rtl:border-r-2 border-editorial-text ltr:pl-6 rtl:pr-6 py-1 italic text-xl sm:text-2xl text-editorial-text font-serif leading-relaxed"
               >
                 <p>"{block.text}"</p>
                 {block.cite && (
@@ -138,7 +138,7 @@ export function Body({ blocks }: BodyProps) {
                 className="my-6 rounded-sm border border-editorial-border bg-editorial-surface overflow-x-auto text-sm font-mono"
               >
                 {block.lang && (
-                  <div className="px-4 py-1.5 border-b border-editorial-border text-xs uppercase tracking-wider text-editorial-muted/80 bg-editorial-border/20 flex justify-between items-center">
+                  <div className="px-4 py-1.5 border-b border-editorial-border text-xs uppercase tracking-wider text-editorial-muted bg-editorial-surface-subtle flex justify-between items-center">
                     <span>{block.lang}</span>
                   </div>
                 )}

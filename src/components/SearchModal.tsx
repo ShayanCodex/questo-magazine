@@ -198,7 +198,7 @@ export function SearchModal({
                   className={cn(
                     'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
                     selectedTag === null
-                      ? 'bg-editorial-text text-editorial-inverted font-semibold shadow-xs'
+                      ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                       : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
                   )}
                 >
@@ -212,7 +212,7 @@ export function SearchModal({
                     className={cn(
                       'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
                       selectedTag === tag
-                        ? 'bg-editorial-text text-editorial-inverted font-semibold shadow-xs'
+                        ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                         : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
                     )}
                   >
