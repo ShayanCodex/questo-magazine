@@ -67,16 +67,16 @@ export function Home() {
           </div>
         </div>
 
-        {/* 2b. Clean Single-Line Category Quick-Nav (Short Names - Click to Go) */}
+        {/* 2b. Clean Single-Line Category Quick-Nav (Short Names - Click to Go in Poppins) */}
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-2.5 border-b border-editorial-border text-xs font-sans">
-          <span className="text-editorial-muted text-[11px] font-mono uppercase tracking-wider shrink-0 me-1">
+          <span className="text-editorial-muted text-xs font-sans font-medium shrink-0 me-1">
             Browse:
           </span>
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.id}
               to={localePath(`/articles?category=${cat.id}`)}
-              className="px-3 py-1 rounded-sm border border-editorial-border bg-editorial-surface hover:border-editorial-text hover:bg-editorial-surface-hover text-editorial-text font-semibold uppercase tracking-wider text-[11px] transition-all shrink-0 flex items-center gap-1 shadow-2xs"
+              className="px-3.5 py-1 rounded-full border border-editorial-border bg-editorial-surface hover:border-editorial-text hover:bg-editorial-surface-hover text-editorial-text font-medium text-xs transition-all shrink-0 flex items-center gap-1 shadow-2xs"
             >
               <span>{getCategoryShortName(cat.id)}</span>
               <span className="opacity-40 text-[10px]">→</span>
@@ -84,7 +84,7 @@ export function Home() {
           ))}
           <Link
             to={localePath('/categories')}
-            className="px-2.5 py-1 text-editorial-muted hover:text-editorial-text underline ms-auto shrink-0 text-[11px] font-mono uppercase tracking-wider"
+            className="px-3 py-1 rounded-full text-editorial-muted hover:text-editorial-text border border-editorial-border/60 hover:border-editorial-text ms-auto shrink-0 text-xs font-medium transition-colors"
           >
             All A–Z →
           </Link>
@@ -144,7 +144,7 @@ export function Home() {
 
           {/* Full-Width Feature Hero Image */}
           {heroArticle.image && (
-            <div className="w-full overflow-hidden rounded-sm border border-editorial-border group relative aspect-[16/9] sm:aspect-[21/9] shadow-lg">
+            <div className="w-full overflow-hidden rounded-xl border border-editorial-border group relative aspect-[16/9] sm:aspect-[21/9] shadow-lg">
               <Link to={localePath(`/articles/${heroArticle.slug}`)} className="block w-full h-full">
                 <img
                   src={heroArticle.image}
@@ -178,7 +178,7 @@ export function Home() {
                   {article.image && (
                     <Link
                       to={localePath(`/articles/${article.slug}`)}
-                      className="shrink-0 w-full sm:w-48 h-48 sm:h-36 overflow-hidden rounded-sm border border-editorial-border bg-editorial-surface block relative shadow-xs group/img"
+                      className="shrink-0 w-full sm:w-48 h-48 sm:h-36 overflow-hidden rounded-lg border border-editorial-border bg-editorial-surface block relative shadow-xs group/img"
                     >
                       <img
                         src={article.image}

@@ -266,7 +266,7 @@ export function SearchModal({
                       type="button"
                       onClick={() => handleApplySuggestion(sug)}
                       className={cn(
-                        'font-mono text-[11px] px-2 py-0.5 rounded-xs border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
+                        'font-sans text-xs font-medium px-3 py-1 rounded-full border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
                         selectedCategory === sug.categoryId
                           ? 'bg-editorial-text text-editorial-bg font-semibold'
                           : 'bg-editorial-surface border-editorial-border hover:border-editorial-text text-editorial-text'
@@ -279,10 +279,10 @@ export function SearchModal({
                 </div>
               )}
 
-              {/* Topics & #Tags Suggestions */}
+              {/* Topics Suggestions */}
               {liveStructured.topics.length > 0 && (
                 <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
+                  <span className="font-sans text-xs font-medium text-editorial-muted flex items-center gap-1 shrink-0">
                     <TagIcon className="h-3 w-3 text-editorial-text" />
                     <span>Topics:</span>
                   </span>
@@ -292,7 +292,7 @@ export function SearchModal({
                       type="button"
                       onClick={() => handleApplySuggestion(sug)}
                       className={cn(
-                        'font-mono text-[11px] px-2 py-0.5 rounded-xs border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
+                        'font-sans text-xs font-medium px-3 py-1 rounded-full border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
                         selectedTag === sug.value
                           ? 'bg-editorial-text text-editorial-bg font-semibold'
                           : 'bg-editorial-surface border-editorial-border hover:border-editorial-text text-editorial-text'
@@ -375,7 +375,7 @@ export function SearchModal({
           {!query && recentSearches.length > 0 && (
             <div className="px-4 py-2 border-b border-editorial-border/60 bg-editorial-surface flex items-center justify-between text-xs">
               <div className="flex items-center gap-2 overflow-x-auto no-scrollbar flex-1 pe-2">
-                <span className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
+                <span className="font-sans text-xs font-medium text-editorial-muted flex items-center gap-1 shrink-0">
                   <ClockIcon className="h-3.5 w-3.5 text-editorial-muted" />
                   <span>Recent:</span>
                 </span>
@@ -384,7 +384,7 @@ export function SearchModal({
                     key={term}
                     type="button"
                     onClick={() => setQuery(term)}
-                    className="font-mono text-[11px] px-2 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border hover:border-editorial-text text-editorial-text transition-colors cursor-pointer shrink-0"
+                    className="font-sans text-xs font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border hover:border-editorial-text text-editorial-text transition-colors cursor-pointer shrink-0"
                   >
                     {term}
                   </button>
@@ -393,7 +393,7 @@ export function SearchModal({
               <button
                 type="button"
                 onClick={clearRecentSearches}
-                className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted hover:text-editorial-text cursor-pointer shrink-0"
+                className="font-sans text-xs font-medium text-editorial-muted hover:text-editorial-text cursor-pointer shrink-0"
               >
                 Clear
               </button>
@@ -412,7 +412,7 @@ export function SearchModal({
                 </p>
                 {/* Helpful Suggestions */}
                 <div className="pt-2 flex flex-col items-center gap-2">
-                  <span className="font-mono text-[11px] uppercase tracking-wider text-editorial-muted flex items-center gap-1.5">
+                  <span className="font-sans text-xs font-medium text-editorial-muted flex items-center gap-1.5">
                     <SparklesIcon className="h-3.5 w-3.5" />
                     <span>Popular editorial topics:</span>
                   </span>
@@ -425,9 +425,9 @@ export function SearchModal({
                           setSelectedTag(tg);
                           setQuery('');
                         }}
-                        className="px-2 py-0.5 font-mono text-[11px] rounded-xs border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text transition-colors cursor-pointer"
+                        className="px-3 py-1 font-sans text-xs font-medium rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text transition-colors cursor-pointer"
                       >
-                        #{tg}
+                        {formatTopicName(tg)}
                       </button>
                     ))}
                   </div>

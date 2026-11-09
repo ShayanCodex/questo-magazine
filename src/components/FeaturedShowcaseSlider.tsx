@@ -92,7 +92,7 @@ export function FeaturedShowcaseSlider({
 
   return (
     <section
-      className="relative rounded-sm border border-editorial-border overflow-hidden bg-neutral-950 text-white shadow-2xl group"
+      className="relative rounded-xl border border-editorial-border overflow-hidden bg-neutral-950 text-white shadow-2xl group"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
@@ -129,16 +129,16 @@ export function FeaturedShowcaseSlider({
           );
         })}
 
-        {/* Top Control Bar: Slide Index Counter & Live Badge */}
+        {/* Top Control Bar: Slide Index Counter & Live Badge (Rounded Full + Poppins) */}
         <div className="absolute top-6 start-6 end-6 z-20 flex items-center justify-between pointer-events-none">
           <div className="flex items-center gap-2">
-            <span className="font-mono text-xs uppercase tracking-widest bg-black/70 backdrop-blur-md px-3 py-1 rounded-xs border border-white/15 text-white flex items-center gap-1.5 shadow-sm">
+            <span className="font-sans text-xs font-medium bg-black/70 backdrop-blur-md px-3.5 py-1 rounded-full border border-white/15 text-white flex items-center gap-1.5 shadow-sm">
               <SparklesIcon className="h-3.5 w-3.5 text-white" />
               <span>Featured Monograph</span>
             </span>
             <Link
               to={localePath(`/articles?category=${category.id}`)}
-              className="hidden sm:inline-flex font-mono text-[11px] uppercase tracking-wider bg-white/15 backdrop-blur-md px-2.5 py-1 rounded-xs text-white/90 border border-white/10 hover:bg-white hover:text-neutral-950 transition-all cursor-pointer pointer-events-auto shadow-sm"
+              className="hidden sm:inline-flex font-sans text-xs font-medium bg-white/15 backdrop-blur-md px-3 py-1 rounded-full text-white/90 border border-white/10 hover:bg-white hover:text-neutral-950 transition-all cursor-pointer pointer-events-auto shadow-sm"
               title={`View ${category.name} collection`}
             >
               {getCategoryShortName(category.id)} →
@@ -146,7 +146,7 @@ export function FeaturedShowcaseSlider({
           </div>
 
           {/* Slide Numeric Counter (e.g. 01 / 04) */}
-          <div className="font-mono text-xs uppercase tracking-widest bg-black/70 backdrop-blur-md px-3 py-1 rounded-xs border border-white/15 text-white shadow-sm flex items-center gap-2">
+          <div className="font-sans text-xs font-medium bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/15 text-white shadow-sm flex items-center gap-2">
             <span className="font-bold text-white">0{currentIndex + 1}</span>
             <span className="opacity-40">/</span>
             <span className="opacity-70">0{totalSlides}</span>
@@ -202,7 +202,7 @@ export function FeaturedShowcaseSlider({
           <div className="pt-2 flex items-center gap-4">
             <Link
               to={articleUrl}
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-neutral-950 font-mono text-xs uppercase tracking-widest font-bold rounded-sm hover:bg-neutral-100 transition-all shadow-md group/btn"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-white text-neutral-950 font-sans text-xs font-semibold rounded-full hover:bg-neutral-100 transition-all shadow-md group/btn"
             >
               <span>{t.readMore || 'Read Monograph'}</span>
               <span className="transition-transform group-hover/btn:translate-x-1">→</span>
@@ -245,7 +245,7 @@ export function FeaturedShowcaseSlider({
             <button
               type="button"
               onClick={prevSlide}
-              className="p-1.5 rounded-xs border border-white/20 bg-black/40 hover:bg-white hover:text-neutral-950 text-white transition-all cursor-pointer min-h-[36px] min-w-[36px] flex items-center justify-center"
+              className="p-2 rounded-full border border-white/20 bg-black/40 hover:bg-white hover:text-neutral-950 text-white transition-all cursor-pointer min-h-[36px] min-w-[36px] flex items-center justify-center"
               aria-label="Previous featured article"
             >
               <ChevronLeftIcon className="h-4 w-4" />
@@ -255,7 +255,7 @@ export function FeaturedShowcaseSlider({
             <button
               type="button"
               onClick={nextSlide}
-              className="p-1.5 rounded-xs border border-white/20 bg-black/40 hover:bg-white hover:text-neutral-950 text-white transition-all cursor-pointer min-h-[36px] min-w-[36px] flex items-center justify-center"
+              className="p-2 rounded-full border border-white/20 bg-black/40 hover:bg-white hover:text-neutral-950 text-white transition-all cursor-pointer min-h-[36px] min-w-[36px] flex items-center justify-center"
               aria-label="Next featured article"
             >
               <ChevronRightIcon className="h-4 w-4" />

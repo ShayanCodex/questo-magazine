@@ -176,15 +176,15 @@ export function Article() {
           {/* Reading Assistance Toolbar: Font Size Controls & Share Link */}
           <div className="flex items-center justify-between py-2 border-b border-editorial-border/60 text-xs font-sans">
             <div className="flex items-center gap-2">
-              <span className="text-[11px] font-mono uppercase text-editorial-muted font-medium">Text size:</span>
-              <div className="inline-flex rounded-sm border border-editorial-border overflow-hidden p-0.5 bg-editorial-surface-subtle">
+              <span className="text-xs font-sans text-editorial-muted font-medium">Text size:</span>
+              <div className="inline-flex rounded-full border border-editorial-border overflow-hidden p-0.5 bg-editorial-surface-subtle">
                 <button
                   type="button"
                   onClick={() => setFontSize('sm')}
                   className={cn(
-                    'px-2.5 py-0.5 text-xs font-mono font-bold rounded-xs cursor-pointer transition-all',
+                    'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
                     fontSize === 'sm'
-                      ? 'bg-editorial-text text-editorial-bg'
+                      ? 'bg-editorial-text text-editorial-bg shadow-xs'
                       : 'text-editorial-muted hover:text-editorial-text'
                   )}
                   title="Small text"
@@ -195,9 +195,9 @@ export function Article() {
                   type="button"
                   onClick={() => setFontSize('base')}
                   className={cn(
-                    'px-2.5 py-0.5 text-xs font-mono font-bold rounded-xs cursor-pointer transition-all',
+                    'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
                     fontSize === 'base'
-                      ? 'bg-editorial-text text-editorial-bg'
+                      ? 'bg-editorial-text text-editorial-bg shadow-xs'
                       : 'text-editorial-muted hover:text-editorial-text'
                   )}
                   title="Default text"
@@ -208,9 +208,9 @@ export function Article() {
                   type="button"
                   onClick={() => setFontSize('lg')}
                   className={cn(
-                    'px-2.5 py-0.5 text-xs font-mono font-bold rounded-xs cursor-pointer transition-all',
+                    'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
                     fontSize === 'lg'
-                      ? 'bg-editorial-text text-editorial-bg'
+                      ? 'bg-editorial-text text-editorial-bg shadow-xs'
                       : 'text-editorial-muted hover:text-editorial-text'
                   )}
                   title="Large text"
@@ -223,7 +223,7 @@ export function Article() {
             <button
               type="button"
               onClick={handleCopyLink}
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-sm border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text font-mono text-[11px] uppercase tracking-wider transition-all cursor-pointer shadow-2xs"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text font-sans text-xs font-medium transition-all cursor-pointer shadow-2xs"
             >
               {copied ? (
                 <CheckIcon className="h-3.5 w-3.5 text-emerald-500" />
@@ -348,7 +348,7 @@ export function Article() {
                             loading="lazy"
                           />
                           <div className="absolute top-2.5 start-2.5">
-                            <span className="px-2 py-0.5 text-[9px] font-mono uppercase tracking-wider bg-black/75 backdrop-blur-xs text-white rounded-xs border border-white/10 shadow-xs">
+                            <span className="px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/75 backdrop-blur-xs text-white rounded-full border border-white/15 shadow-xs">
                               {getCategoryShortName(relCat.id)}
                             </span>
                           </div>

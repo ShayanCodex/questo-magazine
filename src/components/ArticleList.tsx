@@ -131,7 +131,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                     to={articlePath}
                     tabIndex={-1}
                     aria-hidden="true"
-                    className="block relative aspect-[16/10] sm:aspect-[4/3] rounded-sm overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
+                    className="block relative aspect-[16/10] sm:aspect-[4/3] rounded-lg overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
                   >
                     <img
                       src={article.image}
@@ -143,16 +143,16 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                       }}
                     />
 
-                    {/* Floating Category Badge over Artwork */}
+                    {/* Floating Category Badge over Artwork (Rounded Full + Poppins) */}
                     <div className="absolute top-2.5 start-2.5 z-10">
-                      <span className="px-2 py-0.5 text-[9px] font-mono uppercase tracking-wider bg-black/75 backdrop-blur-xs text-white rounded-xs border border-white/10 shadow-xs">
+                      <span className="px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/75 backdrop-blur-xs text-white rounded-full border border-white/15 shadow-xs">
                         {category.name}
                       </span>
                     </div>
 
-                    {/* Floating Reading Time Badge */}
+                    {/* Floating Reading Time Badge (Rounded Full + Poppins) */}
                     <div className="absolute bottom-2.5 end-2.5 z-10">
-                      <span className="px-1.5 py-0.5 text-[9px] font-mono uppercase tracking-wider bg-black/65 backdrop-blur-xs text-white/90 rounded-xs">
+                      <span className="px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/65 backdrop-blur-xs text-white/90 rounded-full border border-white/10">
                         {readingTime}
                       </span>
                     </div>

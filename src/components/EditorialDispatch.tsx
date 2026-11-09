@@ -17,7 +17,7 @@ export function EditorialDispatch() {
 
   return (
     <section className="pt-12 sm:pt-16 border-t border-editorial-border">
-      <div className="relative rounded-sm border border-editorial-border overflow-hidden p-8 sm:p-14 lg:p-16 shadow-xl group">
+      <div className="relative rounded-xl border border-editorial-border overflow-hidden p-8 sm:p-14 lg:p-16 shadow-xl group">
         {/* Awwwards Editorial Background Photography */}
         <div className="absolute inset-0 z-0">
           <img
@@ -38,12 +38,12 @@ export function EditorialDispatch() {
 
         <div className="relative z-10 max-w-2xl space-y-6 text-white">
           <div className="space-y-3">
-            <span className="text-xs font-mono uppercase tracking-widest text-white/80 font-semibold flex items-center gap-2">
-              <span className="p-1 rounded-xs bg-white/10 backdrop-blur-xs border border-white/20">
+            <span className="text-xs font-sans text-white/80 font-medium flex items-center gap-2">
+              <span className="p-1 rounded-full bg-white/10 backdrop-blur-xs border border-white/20">
                 <EnvelopeIcon className="h-3.5 w-3.5 text-white" />
               </span>
               <span>Weekly Editorial Journal</span>
-              <span className="inline-flex items-center gap-1 text-[10px] bg-white/20 px-2 py-0.5 rounded-full border border-white/30 text-white">
+              <span className="inline-flex items-center gap-1 text-[10px] bg-white/20 px-2.5 py-0.5 rounded-full border border-white/30 text-white font-medium">
                 <SparklesIcon className="h-3 w-3" />
                 <span>Zero Spam</span>
               </span>
@@ -59,7 +59,7 @@ export function EditorialDispatch() {
           </div>
 
           {submitted ? (
-            <div className="p-4 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 rounded-sm text-emerald-200 flex items-center gap-3 text-sm font-medium shadow-md">
+            <div className="p-4 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 rounded-xl text-emerald-200 flex items-center gap-3 text-sm font-medium shadow-md">
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-emerald-300" />
               <span>{t.newsletterSuccess}</span>
             </div>
@@ -72,12 +72,12 @@ export function EditorialDispatch() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={t.newsletterPlaceholder}
                   required
-                  className="w-full bg-black/60 backdrop-blur-md border border-white/25 rounded-sm px-4 py-3 font-serif text-sm sm:text-base text-white placeholder:text-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all shadow-inner"
+                  className="w-full bg-black/60 backdrop-blur-md border border-white/25 rounded-full px-5 py-3 font-serif text-sm sm:text-base text-white placeholder:text-white/60 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all shadow-inner"
                 />
               </div>
               <button
                 type="submit"
-                className="px-7 py-3 bg-white text-neutral-950 font-mono text-xs uppercase tracking-wider font-bold rounded-sm hover:bg-neutral-100 hover:shadow-lg transition-all cursor-pointer shrink-0"
+                className="px-7 py-3 bg-white text-neutral-950 font-sans text-xs font-semibold rounded-full hover:bg-neutral-100 hover:shadow-lg transition-all cursor-pointer shrink-0"
               >
                 {t.newsletterButton}
               </button>

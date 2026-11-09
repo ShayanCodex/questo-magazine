@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority';
 
 export const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 rounded-sm cursor-pointer',
+  'inline-flex items-center justify-center whitespace-nowrap text-sm font-sans font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 rounded-full cursor-pointer',
   {
     variants: {
       variant: {
@@ -29,7 +29,7 @@ export const buttonVariants = cva(
 );
 
 export const badgeVariants = cva(
-  'inline-flex items-center px-2 py-0.5 text-xs font-mono tracking-tight transition-colors rounded-sm',
+  'inline-flex items-center px-2.5 py-0.5 text-xs font-sans font-medium tracking-normal transition-colors rounded-full',
   {
     variants: {
       variant: {

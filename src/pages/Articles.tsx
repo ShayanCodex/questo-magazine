@@ -627,7 +627,7 @@ export function Articles() {
                     type="button"
                     onClick={() => handlePageChange(safeCurrentPage - 1)}
                     disabled={safeCurrentPage === 1}
-                    className="px-3.5 py-1.5 rounded-sm border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1"
+                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1 font-sans text-xs font-medium"
                   >
                     <span>{isRtl ? '→' : '←'}</span>
                     <span>{t.prevPage || (isRtl ? 'التالي' : 'Previous')}</span>
@@ -640,7 +640,7 @@ export function Articles() {
                       type="button"
                       onClick={() => handlePageChange(pageNum)}
                       className={cn(
-                        'w-8 h-8 rounded-sm text-xs font-mono transition-colors cursor-pointer flex items-center justify-center',
+                        'w-8 h-8 rounded-full text-xs font-sans font-medium transition-colors cursor-pointer flex items-center justify-center',
                         pageNum === safeCurrentPage
                           ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
                           : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
@@ -655,7 +655,7 @@ export function Articles() {
                     type="button"
                     onClick={() => handlePageChange(safeCurrentPage + 1)}
                     disabled={safeCurrentPage === totalPages}
-                    className="px-3.5 py-1.5 rounded-sm border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1"
+                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1 font-sans text-xs font-medium"
                   >
                     <span>{t.nextPage || (isRtl ? 'السابق' : 'Next')}</span>
                     <span>{isRtl ? '←' : '→'}</span>

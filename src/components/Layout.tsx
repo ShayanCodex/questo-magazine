@@ -178,7 +178,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center justify-center sm:justify-between gap-2 px-2.5 sm:px-3 h-9 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-9 sm:w-36 md:w-44 lg:w-56 shrink-0"
+              className="group flex items-center justify-center sm:justify-between gap-2 px-2.5 sm:px-3.5 h-9 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-9 sm:w-36 md:w-44 lg:w-56 shrink-0"
               aria-label={t.search}
               title={t.searchPlaceholder || 'Search articles...'}
             >
@@ -188,7 +188,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                   {t.searchPlaceholder || 'Search...'}
                 </span>
               </div>
-              <kbd className="hidden md:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-xs group-hover:border-editorial-text transition-colors shrink-0">
+              <kbd className="hidden md:inline-flex items-center px-2 py-0.5 text-[10px] font-mono text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-full group-hover:border-editorial-text transition-colors shrink-0">
                 ⌘K
               </kbd>
             </button>
@@ -202,7 +202,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 type="button"
                 onClick={() => setLangDropdownOpen((prev) => !prev)}
                 className={cn(
-                  'inline-flex items-center gap-1.5 px-2 sm:px-2.5 md:px-3 py-1.5 h-9 rounded-sm border transition-all text-xs font-sans font-medium cursor-pointer shadow-2xs',
+                  'inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 h-9 rounded-full border transition-all text-xs font-sans font-medium cursor-pointer shadow-2xs',
                   langDropdownOpen
                     ? 'border-editorial-text bg-editorial-surface-hover text-editorial-text ring-1 ring-editorial-text/20'
                     : 'border-editorial-border bg-editorial-surface hover:bg-editorial-surface-hover hover:border-editorial-text text-editorial-text'
@@ -266,7 +266,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               variant="outline"
               size="sm"
               onClick={() => setDrawerOpen(true)}
-              className="text-xs uppercase font-mono tracking-wider gap-1.5 sm:gap-2 h-9 min-w-[36px] px-2.5 sm:px-3 border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
+              className="text-xs font-sans font-medium gap-1.5 sm:gap-2 h-9 min-w-[36px] px-3.5 rounded-full border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
               aria-label={t.menu}
             >
               <Bars3Icon className="h-4 w-4" />

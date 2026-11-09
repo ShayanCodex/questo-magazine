@@ -22,7 +22,7 @@ export function ThemeToggle({ className, showLabel = false }: ThemeToggleProps) 
       type="button"
       onClick={toggleTheme}
       className={cn(
-        'group flex items-center gap-2 p-2 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer min-h-[36px] min-w-[36px] justify-center shadow-2xs',
+        'group flex items-center gap-2 p-2 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer min-h-[36px] min-w-[36px] justify-center shadow-2xs',
         className
       )}
       aria-label={label}
@@ -34,7 +34,7 @@ export function ThemeToggle({ className, showLabel = false }: ThemeToggleProps) 
         <MoonIcon className="h-4 w-4 text-editorial-text transition-transform duration-300 group-hover:-rotate-12" />
       )}
       {showLabel && (
-        <span className="text-xs font-mono uppercase tracking-wider font-medium text-editorial-text">
+        <span className="text-xs font-sans font-medium text-editorial-text">
           {label}
         </span>
       )}

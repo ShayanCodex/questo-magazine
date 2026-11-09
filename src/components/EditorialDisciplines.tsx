@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
 import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
+import { formatTopicName } from '../lib/categories';
 
 export function EditorialDisciplines() {
   const { t, localePath, language } = useLanguage();
@@ -85,7 +86,7 @@ export function EditorialDisciplines() {
         {disciplines.map((item) => (
           <div
             key={item.number}
-            className="group relative p-6 bg-editorial-surface border border-editorial-border rounded-sm hover:border-accent transition-all flex flex-col justify-between space-y-6"
+            className="group relative p-6 bg-editorial-surface border border-editorial-border rounded-xl hover:border-accent transition-all flex flex-col justify-between space-y-6 shadow-xs"
           >
             <div className="space-y-4">
               <div className="flex items-center justify-between">
@@ -94,7 +95,7 @@ export function EditorialDisciplines() {
                 </span>
                 <Link
                   to={localePath(`/articles?category=${item.categoryId}`)}
-                  className="p-1 rounded-sm text-editorial-muted group-hover:text-accent transition-colors"
+                  className="p-1.5 rounded-full text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover transition-colors"
                   aria-label={item.title}
                 >
                   <ArrowUpRightIcon className="h-4 w-4" />
@@ -111,13 +112,13 @@ export function EditorialDisciplines() {
                 {item.desc}
               </p>
 
-              {/* Subcategories quick pills */}
+              {/* Subcategories quick pills in Poppins font */}
               <div className="pt-2 flex flex-wrap gap-1.5">
                 {item.subcategories.map((sub) => (
                   <Link
                     key={sub.id}
                     to={localePath(`/articles?category=${item.categoryId}&subcategory=${sub.id}`)}
-                    className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border/60 hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors"
+                    className="text-xs font-sans font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border/60 hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors"
                   >
                     {sub.name}
                   </Link>
@@ -125,18 +126,18 @@ export function EditorialDisciplines() {
               </div>
             </div>
 
-            <div className="pt-4 border-t border-editorial-border/60 flex items-center justify-between">
+            <div className="pt-4 border-t border-editorial-border/60 flex items-center justify-between gap-2">
               <Link
                 to={localePath(`/articles?category=${item.categoryId}`)}
-                className="inline-block text-[11px] font-mono uppercase tracking-wider text-editorial-text font-bold hover:text-accent transition-colors"
+                className="inline-block text-xs font-sans font-medium text-editorial-text hover:text-accent transition-colors"
               >
                 Browse Category →
               </Link>
               <Link
                 to={localePath(`/tags/${item.tag}`)}
-                className="text-[10px] font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text transition-colors"
+                className="text-xs font-sans font-medium px-2.5 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border/60 text-editorial-muted hover:text-editorial-text transition-colors"
               >
-                {item.tagLabel}
+                {formatTopicName(item.tag)}
               </Link>
             </div>
           </div>

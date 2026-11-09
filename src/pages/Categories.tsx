@@ -185,15 +185,15 @@ export function Categories() {
             </p>
           </div>
 
-          {/* Editorial Meta Stats Badge Capsule */}
-          <div className="flex flex-wrap items-center gap-2 text-xs font-mono uppercase tracking-wider text-editorial-muted">
-            <div className="px-3 py-1.5 rounded-sm bg-editorial-surface border border-editorial-border shadow-2xs">
+          {/* Editorial Meta Stats Badge Capsule in Poppins */}
+          <div className="flex flex-wrap items-center gap-2 text-xs font-sans text-editorial-muted font-medium">
+            <div className="px-3.5 py-1 rounded-full bg-editorial-surface border border-editorial-border shadow-2xs">
               <span className="font-bold text-editorial-text">{CATEGORIES.length}</span> Categories
             </div>
-            <div className="px-3 py-1.5 rounded-sm bg-editorial-surface border border-editorial-border shadow-2xs">
+            <div className="px-3.5 py-1 rounded-full bg-editorial-surface border border-editorial-border shadow-2xs">
               <span className="font-bold text-editorial-text">{totalSubcategories}</span> Subcategories
             </div>
-            <div className="px-3 py-1.5 rounded-sm bg-editorial-surface border border-editorial-border shadow-2xs">
+            <div className="px-3.5 py-1 rounded-full bg-editorial-surface border border-editorial-border shadow-2xs">
               <span className="font-bold text-editorial-text">{articles.length}</span> Articles
             </div>
           </div>
@@ -218,15 +218,15 @@ export function Categories() {
           )}
         </div>
 
-        {/* Sort Controls (A-Z vs Most Articles) */}
-        <div className="flex items-center gap-2 text-xs font-mono">
-          <span className="text-editorial-muted uppercase tracking-wider">{t.sortBy}:</span>
-          <div className="inline-flex rounded-sm border border-editorial-border bg-editorial-surface overflow-hidden p-0.5">
+        {/* Sort Controls (A-Z vs Most Articles in Poppins) */}
+        <div className="flex items-center gap-2 text-xs font-sans">
+          <span className="text-editorial-muted font-medium">{t.sortBy}:</span>
+          <div className="inline-flex rounded-full border border-editorial-border bg-editorial-surface overflow-hidden p-0.5">
             <button
               type="button"
               onClick={() => setSortOrder('az')}
               className={cn(
-                'px-3 py-1 rounded-xs transition-colors cursor-pointer flex items-center gap-1',
+                'px-3.5 py-1 rounded-full transition-colors cursor-pointer flex items-center gap-1 font-medium',
                 sortOrder === 'az'
                   ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                   : 'text-editorial-muted hover:text-editorial-text'
@@ -239,7 +239,7 @@ export function Categories() {
               type="button"
               onClick={() => setSortOrder('count')}
               className={cn(
-                'px-3 py-1 rounded-xs transition-colors cursor-pointer flex items-center gap-1',
+                'px-3.5 py-1 rounded-full transition-colors cursor-pointer flex items-center gap-1 font-medium',
                 sortOrder === 'count'
                   ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                   : 'text-editorial-muted hover:text-editorial-text'
@@ -271,7 +271,7 @@ export function Categories() {
                 }
               }}
               className={cn(
-                'group relative p-6 sm:p-7 rounded-sm border transition-all cursor-pointer flex flex-col justify-between gap-6 text-start shadow-xs',
+                'group relative p-6 sm:p-7 rounded-xl border transition-all cursor-pointer flex flex-col justify-between gap-6 text-start shadow-xs',
                 isSelected
                   ? 'border-editorial-text bg-editorial-surface-hover ring-2 ring-editorial-text/20 shadow-md'
                   : 'border-editorial-border bg-editorial-surface hover:border-editorial-text/70 hover:shadow-sm'
@@ -283,7 +283,7 @@ export function Categories() {
                   <div className="flex items-center gap-3">
                     <div
                       className={cn(
-                        'w-10 h-10 rounded-sm flex items-center justify-center transition-colors',
+                        'w-10 h-10 rounded-full flex items-center justify-center transition-colors',
                         isSelected
                           ? 'bg-editorial-text text-editorial-bg'
                           : 'bg-editorial-surface-subtle text-editorial-text border border-editorial-border group-hover:border-editorial-text'
@@ -295,7 +295,7 @@ export function Categories() {
                       <h3 className="font-display font-black text-xl sm:text-2xl uppercase tracking-tight text-editorial-text group-hover:text-accent transition-colors">
                         {cat.name}
                       </h3>
-                      <span className="text-[11px] font-mono uppercase tracking-wider text-editorial-muted">
+                      <span className="text-xs font-sans text-editorial-muted font-medium">
                         {articleCount} {articleCount === 1 ? 'article' : 'articles'}
                       </span>
                     </div>
@@ -303,7 +303,7 @@ export function Categories() {
 
                   <span
                     className={cn(
-                      'text-xs font-mono uppercase tracking-wider px-2 py-0.5 rounded-xs transition-colors',
+                      'text-xs font-sans font-medium px-3 py-0.5 rounded-full transition-colors',
                       isSelected
                         ? 'bg-editorial-text text-editorial-bg font-bold'
                         : 'border border-editorial-border text-editorial-muted group-hover:text-editorial-text'
@@ -317,9 +317,9 @@ export function Categories() {
                   {cat.description}
                 </p>
 
-                {/* Subcategories quick badges */}
+                {/* Subcategories quick badges (Rounded Full + Poppins) */}
                 <div className="pt-2">
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-editorial-muted block mb-2 font-medium">
+                  <span className="text-xs font-sans text-editorial-muted block mb-2 font-medium">
                     {t.subcategories || 'Subcategories'}:
                   </span>
                   <div className="flex flex-wrap gap-1.5">
@@ -334,7 +334,7 @@ export function Categories() {
                             handleSelectSubcategory(sub.id);
                           }}
                           className={cn(
-                            'text-[11px] font-mono uppercase px-2.5 py-1 rounded-xs transition-colors cursor-pointer',
+                            'text-xs font-sans font-medium px-3 py-1 rounded-full transition-colors cursor-pointer',
                             isSubSelected
                               ? 'bg-editorial-text text-editorial-bg font-bold'
                               : 'bg-editorial-surface-subtle border border-editorial-border/70 hover:border-editorial-text text-editorial-muted hover:text-editorial-text'
@@ -413,7 +413,7 @@ export function Categories() {
                     }
                   }}
                   className={cn(
-                    'p-5 rounded-sm border transition-all cursor-pointer flex flex-col justify-between gap-4 text-start',
+                    'p-5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between gap-4 text-start shadow-xs',
                     isSubSelected
                       ? 'border-editorial-text bg-editorial-surface-hover ring-2 ring-editorial-text/20 shadow-xs'
                       : 'border-editorial-border bg-editorial-surface hover:border-editorial-text/70'
@@ -421,14 +421,14 @@ export function Categories() {
                 >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-editorial-muted">
+                      <span className="text-xs font-sans text-editorial-muted font-medium">
                         Subcategory
                       </span>
                       <span
                         className={cn(
-                          'text-[10px] font-mono px-2 py-0.5 rounded-xs font-bold uppercase',
+                          'text-xs font-sans px-2.5 py-0.5 rounded-full font-medium',
                           isSubSelected
-                            ? 'bg-editorial-text text-editorial-bg'
+                            ? 'bg-editorial-text text-editorial-bg font-semibold'
                             : 'bg-editorial-surface-subtle text-editorial-muted'
                         )}
                       >
