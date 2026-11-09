@@ -14,6 +14,7 @@ import {
 } from './ui/sheet';
 import { Badge } from './ui/badge';
 import { SearchModal } from './SearchModal';
+import { ThemeToggle } from './ThemeToggle';
 
 export interface LayoutProps {
   tags?: string[];
@@ -76,15 +77,18 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center gap-2 px-3 py-1.5 rounded-sm bg-editorial-surface border border-editorial-border hover:border-accent hover:text-editorial-text text-editorial-muted transition-all text-xs font-mono cursor-pointer shadow-2xs"
+              className="group flex items-center gap-2 px-3 py-1.5 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text hover:text-editorial-text text-editorial-muted transition-all text-xs font-mono cursor-pointer shadow-2xs"
               aria-label={t.search}
             >
-              <MagnifyingGlassIcon className="h-4 w-4 text-editorial-muted group-hover:text-accent transition-colors" />
+              <MagnifyingGlassIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text transition-colors" />
               <span className="hidden sm:inline font-medium">{t.search}</span>
-              <kbd className="hidden sm:inline-block ms-1 px-1.5 py-0.5 text-[10px] bg-editorial-bg border border-editorial-border rounded-xs group-hover:border-accent/40 transition-colors">
+              <kbd className="hidden sm:inline-block ms-1 px-1.5 py-0.5 text-[10px] bg-editorial-surface-subtle border border-editorial-border rounded-xs group-hover:border-editorial-text transition-colors">
                 ⌘K
               </kbd>
             </button>
+
+            {/* Theme Toggle Button */}
+            <ThemeToggle />
 
             {/* Quick Language Indicator */}
             <div className="hidden sm:flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-editorial-muted border-x border-editorial-border px-4 py-1">
@@ -178,16 +182,24 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 setDrawerOpen(false);
                 setSearchOpen(true);
               }}
-              className="w-full flex items-center justify-between p-3 rounded-sm border border-editorial-border hover:border-accent text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono uppercase tracking-wider cursor-pointer"
+              className="w-full flex items-center justify-between p-3 rounded-sm border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono uppercase tracking-wider cursor-pointer"
             >
               <span className="flex items-center gap-2">
-                <MagnifyingGlassIcon className="h-4 w-4 text-accent" />
+                <MagnifyingGlassIcon className="h-4 w-4 text-editorial-text" />
                 <span>{t.search}</span>
               </span>
-              <kbd className="px-1.5 py-0.5 text-[10px] bg-editorial-bg border border-editorial-border rounded-sm">
+              <kbd className="px-1.5 py-0.5 text-[10px] bg-editorial-surface-subtle border border-editorial-border rounded-sm">
                 ⌘K
               </kbd>
             </button>
+
+            {/* Theme Toggle in Drawer */}
+            <div className="flex items-center justify-between p-3 rounded-sm border border-editorial-border bg-editorial-surface">
+              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted">
+                {t.theme || 'Theme'}
+              </span>
+              <ThemeToggle showLabel={true} />
+            </div>
 
             {/* Primary Large Links */}
             <nav className="flex flex-col space-y-4 pt-2">

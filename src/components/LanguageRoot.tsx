@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLoaderData, ScrollRestoration } from 'react-router-dom';
 import type { SiteLanguage, SearchItem } from '../lib/types';
 import { LanguageContext, buildSwitchLanguagePath } from '../lib/lang-context';
+import { ThemeProvider } from './ThemeProvider';
 import { siteConfig } from '../lib/site';
 import { translations } from '../i18n/strings';
 import { Layout } from './Layout';
@@ -45,10 +46,12 @@ export function LanguageRoot({ language }: LanguageRootProps) {
   };
 
   return (
-    <LanguageContext.Provider value={contextValue}>
-      <Layout tags={tags} searchIndex={searchIndex} />
-      <ScrollRestoration />
-    </LanguageContext.Provider>
+    <ThemeProvider>
+      <LanguageContext.Provider value={contextValue}>
+        <Layout tags={tags} searchIndex={searchIndex} />
+        <ScrollRestoration />
+      </LanguageContext.Provider>
+    </ThemeProvider>
   );
 }
 

@@ -113,4 +113,7 @@ export interface I18nStrings {
   printSpecsCopies: string;
   orderPrintCopy: string;
   readMore: string;
+  theme?: string;
+  lightMode?: string;
+  darkMode?: string;
 }

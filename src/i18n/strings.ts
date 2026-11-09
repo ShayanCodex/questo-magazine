@@ -62,6 +62,9 @@ export const translations: Record<string, I18nStrings> = {
     printSpecsCopies: 'Edition: Limited run of 1,500 hand-numbered copies',
     orderPrintCopy: 'Order Print Edition',
     readMore: 'Read monograph',
+    theme: 'Theme',
+    lightMode: 'Light theme',
+    darkMode: 'Dark theme',
   },
   es: {
     menu: 'Menú',
@@ -124,6 +127,9 @@ export const translations: Record<string, I18nStrings> = {
     printSpecsCopies: 'Edición: Tirada limitada de 1.500 ejemplares numerados',
     orderPrintCopy: 'Pedir Edición Impresa',
     readMore: 'Leer monografía',
+    theme: 'Tema',
+    lightMode: 'Tema claro',
+    darkMode: 'Tema oscuro',
   },
   fr: {
     menu: 'Menu',
@@ -186,6 +192,9 @@ export const translations: Record<string, I18nStrings> = {
     printSpecsCopies: 'Tirage : Édition limitée à 1 500 exemplaires numérotés',
     orderPrintCopy: 'Commander l’édition papier',
     readMore: 'Lire la monographie',
+    theme: 'Thème',
+    lightMode: 'Thème clair',
+    darkMode: 'Thème sombre',
   },
   de: {
     menu: 'Menü',
@@ -248,6 +257,9 @@ export const translations: Record<string, I18nStrings> = {
     printSpecsCopies: 'Auflage: Limitierte Edition von 1.500 nummerierten Exemplaren',
     orderPrintCopy: 'Printausgabe bestellen',
     readMore: 'Monografie lesen',
+    theme: 'Thema',
+    lightMode: 'Helles Thema',
+    darkMode: 'Dunkles Thema',
   },
   ar: {
     menu: 'القائمة',
@@ -310,6 +322,9 @@ export const translations: Record<string, I18nStrings> = {
     printSpecsCopies: 'النسخ: إصدار محدود من 1500 نسخة مرقمة يدوياً',
     orderPrintCopy: 'طلب النسخة المطبوعة',
     readMore: 'قراءة الدراسة',
+    theme: 'المظهر',
+    lightMode: 'المظهر الفاتح',
+    darkMode: 'المظهر الداكن',
   },
   ur: {
     menu: 'مینو',
@@ -372,5 +387,8 @@ export const translations: Record<string, I18nStrings> = {
     printSpecsCopies: 'تعداد: صرف 1500 دستی نمبر شدہ خصوصی نسخے',
     orderPrintCopy: 'پرنٹ نسخہ طلب کریں',
     readMore: 'تحریر پڑھیں',
+    theme: 'تھیم',
+    lightMode: 'لائٹ تھیم',
+    darkMode: 'ڈارک تھیم',
   },
 };
