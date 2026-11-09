@@ -15,6 +15,7 @@ export interface SeoProps {
   availableLanguages?: string[];
   noIndex?: boolean;
   breadcrumbsJsonLd?: string;
+  keywords?: string[] | string;
 }
 
 export function Seo({
@@ -30,6 +31,7 @@ export function Seo({
   availableLanguages,
   noIndex = false,
   breadcrumbsJsonLd,
+  keywords,
 }: SeoProps) {
   const { language } = useLanguage();
   const siteUrl = siteConfig.url.replace(/\/+$/, '');
@@ -51,6 +53,20 @@ export function Seo({
     ? `${siteUrl}/${pathWithoutLang}`
     : `${siteUrl}/`;
 
+  const defaultKeywords = [
+    'Questo Magazine',
+    'editorial architecture',
+    'minimalist design systems',
+    'typography monographs',
+    'systems architecture',
+    'visual culture',
+    siteConfig.name,
+  ];
+
+  const computedKeywords = keywords
+    ? (Array.isArray(keywords) ? keywords.join(', ') : keywords)
+    : defaultKeywords.join(', ');
+
   // Build JSON-LD Structured Data
   let mainSchema: Record<string, unknown>;
 
@@ -63,6 +79,7 @@ export function Seo({
       image: ogImage,
       url: canonicalUrl,
       inLanguage: language.code,
+      keywords: computedKeywords,
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': canonicalUrl,
@@ -75,6 +92,10 @@ export function Seo({
         '@type': 'Organization',
         name: siteConfig.name,
         url: siteUrl,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${siteUrl}/favicon.svg`,
+        },
       },
       datePublished: articleDate,
       dateModified: articleUpdated || articleDate,
@@ -95,6 +116,7 @@ export function Seo({
       <html lang={language.code} dir={language.dir} />
       <title>{pageTitle}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content={computedKeywords} />
       <meta
         name="robots"
         content={noIndex ? 'noindex, follow' : 'index, follow'}
@@ -126,10 +148,13 @@ export function Seo({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:alt" content={title} />
       <meta property="og:locale" content={language.code} />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@QuestoMagazine" />
+      <meta name="twitter:creator" content="@QuestoMagazine" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />

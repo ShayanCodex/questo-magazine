@@ -91,7 +91,14 @@ export function trackGoatCounterPageView(path: string, title?: string): boolean 
   }
 
   // 3. Send beacon to GoatCounter official tracker
-  if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+  // In localhost or test environments, avoid remote beacons to prevent 429 rate-limiting and stats pollution
+  const isLocalhost =
+    typeof window !== 'undefined' &&
+    (window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname.endsWith('.local'));
+
+  if (!isLocalhost && window.goatcounter && typeof window.goatcounter.count === 'function') {
     try {
       window.goatcounter.count({
         path: currentPath,
@@ -123,6 +130,22 @@ export async function fetchGoatCounterViews(path: string): Promise<string> {
   if (cached && Date.now() - cached.timestamp < CACHE_TTL_MS) {
     const numericCached = parseInt(cached.count, 10) || 0;
     return String(Math.max(numericCached, localCount, 1));
+  }
+
+  // Avoid cross-origin fetch noise or polluting production counts during local dev/audits
+  const isLocalhost =
+    typeof window !== 'undefined' &&
+    (window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname.endsWith('.local'));
+
+  if (isLocalhost) {
+    const fallback = String(Math.max(localCount, 1));
+    viewCountCache.set(normalized, {
+      count: fallback,
+      timestamp: Date.now(),
+    });
+    return fallback;
   }
 
   try {

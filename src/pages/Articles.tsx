@@ -223,6 +223,15 @@ export function Articles() {
         description={`Explore all published articles and editorial thoughts in ${t.articles.toLowerCase()}.`}
         pathname={pathname}
         breadcrumbsJsonLd={createBreadcrumbJsonLd(breadcrumbs)}
+        keywords={[
+          'Questo articles',
+          'editorial archive',
+          'architecture essays',
+          'design theory',
+          'functional programming',
+          'minimalism',
+          'visual culture',
+        ]}
       />
 
       <header className="space-y-6">

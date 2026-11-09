@@ -184,6 +184,14 @@ export function Categories() {
         }
         pathname={pathname}
         breadcrumbsJsonLd={createBreadcrumbJsonLd(breadcrumbs)}
+        keywords={[
+          'Architecture & Space',
+          'Art & Culture',
+          'Design & Typography',
+          'Engineering & Technology',
+          'Questo categories',
+          'disciplines directory',
+        ]}
       />
 
       {/* Page Header */}

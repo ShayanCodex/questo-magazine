@@ -53,6 +53,18 @@ export function Home() {
         pathname={pathname}
         image={heroArticle?.image}
         type="website"
+        keywords={[
+          'Questo Magazine',
+          'Art & Life',
+          'editorial architecture',
+          'minimalist design systems',
+          'swiss typography',
+          'monographs',
+          'visual culture',
+          'digital craftsmanship',
+          'systems architecture',
+          'print magazine',
+        ]}
       />
 
       {/* 1. Coordinated Hero Showcase Suite (Masthead + Marquee + Slider + Thin Browse Bar) */}

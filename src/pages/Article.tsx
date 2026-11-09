@@ -117,6 +117,7 @@ export function Article() {
           availableLanguages={availableLanguages}
           noIndex={article.isFallback}
           breadcrumbsJsonLd={createBreadcrumbJsonLd(breadcrumbs)}
+          keywords={article.tags}
         />
 
         <header className="space-y-6">

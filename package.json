@@ -11,6 +11,8 @@
     "typecheck": "tsc --noEmit",
     "validate-content": "node scripts/validate-content.mjs",
     "translate": "node scripts/translate.mjs",
+    "curate": "node scripts/autonomous-curator.mjs",
+    "audit": "node scripts/audit-site.mjs",
     "ssg:build": "vite-react-ssg build",
     "postbuild": "node scripts/postbuild.mjs",
     "build": "npm run lint && npm run typecheck && npm run validate-content && npm run ssg:build && npm run postbuild",

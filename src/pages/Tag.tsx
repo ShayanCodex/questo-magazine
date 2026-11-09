@@ -32,6 +32,7 @@ export function Tag() {
         description={`Articles, essays, and notes tagged with #${tag}.`}
         pathname={pathname}
         breadcrumbsJsonLd={createBreadcrumbJsonLd(breadcrumbs)}
+        keywords={[tag, formattedTagName, 'Questo magazine', 'topic archive']}
       />
 
       <header className="space-y-6">
