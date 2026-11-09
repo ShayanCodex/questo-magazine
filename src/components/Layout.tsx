@@ -141,7 +141,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
       {/* Editorial Top Bar with Smart Auto-Hide on Scroll Down & Reveal on Minor Scroll Up */}
       <header
         className={cn(
-          'fixed top-0 start-0 end-0 z-40 py-3.5 sm:py-4 px-6 sm:px-10 lg:px-16 transition-all duration-300 ease-in-out border-b',
+          'fixed top-0 start-0 end-0 z-40 py-3 sm:py-3.5 px-4 sm:px-6 lg:px-12 transition-all duration-300 ease-in-out border-b',
           navVisible
             ? 'translate-y-0 opacity-100'
             : '-translate-y-full opacity-0 pointer-events-none',
@@ -150,18 +150,19 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             : 'bg-editorial-bg border-editorial-border'
         )}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4 w-full min-w-0">
           {/* Brand Wordmark / Publication Title */}
           <Link
             to={localePath('/')}
-            className="font-display font-extrabold text-sm sm:text-base uppercase tracking-widest text-editorial-text hover:text-accent transition-colors shrink-0"
+            className="font-display font-extrabold text-xs sm:text-sm md:text-base uppercase tracking-widest text-editorial-text hover:text-accent transition-colors shrink-0 me-2 sm:me-4 truncate max-w-[150px] sm:max-w-none"
           >
             {siteConfig.name} Magazine
           </Link>
 
           {/* Top navigation links & icons */}
-          <div className="flex items-center gap-3 sm:gap-5 lg:gap-7">
-            <nav className="hidden md:flex items-center gap-6 text-xs uppercase font-mono tracking-wider text-editorial-muted">
+          <div className="flex items-center gap-1.5 sm:gap-2.5 md:gap-3 shrink-0">
+            {/* Desktop Navigation Links - hidden on < xl to avoid overflowing screen */}
+            <nav className="hidden xl:flex items-center gap-6 text-xs uppercase font-mono tracking-wider text-editorial-muted me-3">
               <Link to={localePath('/')} className="hover:text-editorial-text transition-colors">
                 {t.home}
               </Link>
@@ -173,20 +174,21 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               </Link>
             </nav>
 
-            {/* Attractive Editorial Search Capsule Bar */}
+            {/* Compact Editorial Search Capsule Button (icon-only on small, compact on medium, full on desktop) */}
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center justify-between gap-2.5 px-3 py-1.5 h-9 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-32 sm:w-52 md:w-60"
+              className="group flex items-center justify-center sm:justify-between gap-2 px-2.5 sm:px-3 h-9 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-9 sm:w-36 md:w-44 lg:w-56 shrink-0"
               aria-label={t.search}
+              title={t.searchPlaceholder || 'Search articles...'}
             >
               <div className="flex items-center gap-2 truncate">
                 <MagnifyingGlassIcon className="h-4 w-4 text-editorial-text shrink-0" />
-                <span className="font-sans text-xs text-editorial-muted/80 group-hover:text-editorial-text truncate transition-colors">
-                  {t.searchPlaceholder || 'Search articles...'}
+                <span className="hidden sm:inline font-sans text-xs text-editorial-muted/80 group-hover:text-editorial-text truncate transition-colors">
+                  {t.searchPlaceholder || 'Search...'}
                 </span>
               </div>
-              <kbd className="hidden sm:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-xs group-hover:border-editorial-text transition-colors shrink-0">
+              <kbd className="hidden md:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-xs group-hover:border-editorial-text transition-colors shrink-0">
                 ⌘K
               </kbd>
             </button>
@@ -195,12 +197,12 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             <ThemeToggle />
 
             {/* Interactive 1-Click Language Switcher Dropdown */}
-            <div className="relative" ref={langDropdownRef}>
+            <div className="relative shrink-0" ref={langDropdownRef}>
               <button
                 type="button"
                 onClick={() => setLangDropdownOpen((prev) => !prev)}
                 className={cn(
-                  'inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 h-9 rounded-sm border transition-all text-xs font-sans font-medium cursor-pointer shadow-2xs',
+                  'inline-flex items-center gap-1.5 px-2 sm:px-2.5 md:px-3 py-1.5 h-9 rounded-sm border transition-all text-xs font-sans font-medium cursor-pointer shadow-2xs',
                   langDropdownOpen
                     ? 'border-editorial-text bg-editorial-surface-hover text-editorial-text ring-1 ring-editorial-text/20'
                     : 'border-editorial-border bg-editorial-surface hover:bg-editorial-surface-hover hover:border-editorial-text text-editorial-text'
@@ -264,11 +266,11 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               variant="outline"
               size="sm"
               onClick={() => setDrawerOpen(true)}
-              className="text-xs uppercase font-mono tracking-wider gap-2 min-h-[36px] min-w-[36px] px-3 border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
+              className="text-xs uppercase font-mono tracking-wider gap-1.5 sm:gap-2 h-9 min-w-[36px] px-2.5 sm:px-3 border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
               aria-label={t.menu}
             >
               <Bars3Icon className="h-4 w-4" />
-              <span>{t.menu}</span>
+              <span className="hidden sm:inline">{t.menu}</span>
             </Button>
           </div>
         </div>
@@ -277,7 +279,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
       {/* Main Content Viewport with top padding for fixed navbar */}
       <main
         id="main-content"
-        className="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-10 lg:px-16 pt-20 sm:pt-24 pb-6 sm:pb-10"
+        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-12 pt-20 sm:pt-24 pb-6 sm:pb-10"
       >
         <Outlet />
       </main>

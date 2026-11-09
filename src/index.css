@@ -58,6 +58,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: background-color 150ms ease, color 150ms ease;
+    overflow-x: hidden;
   }
 
   body {
@@ -66,6 +67,7 @@
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.65;
+    overflow-x: hidden;
   }
 
   /* Headings & Display use Poppins for clean, modern aesthetic */
