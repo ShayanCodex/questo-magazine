@@ -7,6 +7,10 @@ import {
   BarsArrowDownIcon,
   BarsArrowUpIcon,
   Squares2X2Icon,
+  BuildingOffice2Icon,
+  PaintBrushIcon,
+  SwatchIcon,
+  CpuChipIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -27,6 +31,21 @@ import {
 interface CategoriesLoaderData {
   articles: ArticleData[];
   pathname: string;
+}
+
+function getCategoryIcon(catId: string) {
+  switch (catId) {
+    case 'architecture-and-space':
+      return BuildingOffice2Icon;
+    case 'art-and-culture':
+      return PaintBrushIcon;
+    case 'design-and-typography':
+      return SwatchIcon;
+    case 'engineering-and-technology':
+      return CpuChipIcon;
+    default:
+      return FolderIcon;
+  }
 }
 
 export function Categories() {
@@ -173,10 +192,10 @@ export function Categories() {
 
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-editorial-border pb-8">
           <div className="space-y-3">
-            <span className="text-xs font-mono uppercase tracking-widest text-editorial-muted block">
+            <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted block">
               {t.allCategoriesAtoZ || 'All Categories (A to Z)'}
             </span>
-            <h1 className="font-display font-black text-[clamp(2.2rem,5vw,4rem)] leading-none tracking-tight text-editorial-text uppercase">
+            <h1 className="font-sans font-bold sm:font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-editorial-text leading-tight">
               {t.categoriesArchiveTitle || 'Categories & Disciplines'}
             </h1>
             <p className="font-serif text-base sm:text-lg text-editorial-muted max-w-2xl leading-relaxed">
@@ -204,14 +223,14 @@ export function Categories() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
         <div className="flex items-center gap-2">
           <Squares2X2Icon className="h-5 w-5 text-editorial-text" />
-          <h2 className="font-display font-bold text-xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-sans font-bold text-xl tracking-tight text-editorial-text">
             {t.categories || 'Editorial Categories'}
           </h2>
           {selectedCategory && (
             <button
               type="button"
               onClick={handleClearFilters}
-              className="text-xs font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline ms-2 cursor-pointer"
+              className="text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text underline ms-2 cursor-pointer"
             >
               {t.allCategories || 'View All Categories'}
             </button>
@@ -257,6 +276,7 @@ export function Categories() {
         {sortedCategories.map((cat: Category) => {
           const isSelected = selectedCategory === cat.id;
           const articleCount = counts.catMap.get(cat.id) || 0;
+          const CategoryIcon = getCategoryIcon(cat.id);
 
           return (
             <div
@@ -271,55 +291,63 @@ export function Categories() {
                 }
               }}
               className={cn(
-                'group relative p-6 sm:p-7 rounded-xl border transition-all cursor-pointer flex flex-col justify-between gap-6 text-start shadow-xs',
+                'group relative p-6 sm:p-8 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between gap-6 text-start shadow-xs hover:shadow-md hover:-translate-y-0.5',
                 isSelected
                   ? 'border-editorial-text bg-editorial-surface-hover ring-2 ring-editorial-text/20 shadow-md'
-                  : 'border-editorial-border bg-editorial-surface hover:border-editorial-text/70 hover:shadow-sm'
+                  : 'border-editorial-border bg-editorial-surface hover:border-editorial-text/70'
               )}
             >
-              <div className="space-y-3.5">
-                {/* Header row: Icon, Category Name, and Article Count badge */}
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <div
-                      className={cn(
-                        'w-10 h-10 rounded-full flex items-center justify-center transition-colors',
-                        isSelected
-                          ? 'bg-editorial-text text-editorial-bg'
-                          : 'bg-editorial-surface-subtle text-editorial-text border border-editorial-border group-hover:border-editorial-text'
-                      )}
-                    >
-                      <FolderIcon className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h3 className="font-display font-black text-xl sm:text-2xl uppercase tracking-tight text-editorial-text group-hover:text-accent transition-colors">
-                        {cat.name}
-                      </h3>
-                      <span className="text-xs font-sans text-editorial-muted font-medium">
-                        {articleCount} {articleCount === 1 ? 'article' : 'articles'}
-                      </span>
-                    </div>
-                  </div>
-
-                  <span
+              <div className="space-y-4">
+                {/* Top Action Row: Distinctive Category Icon on left, Badges & Explore on right */}
+                <div className="flex items-center justify-between gap-3">
+                  <div
                     className={cn(
-                      'text-xs font-sans font-medium px-3 py-0.5 rounded-full transition-colors',
+                      'w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-2xs shrink-0',
                       isSelected
-                        ? 'bg-editorial-text text-editorial-bg font-bold'
-                        : 'border border-editorial-border text-editorial-muted group-hover:text-editorial-text'
+                        ? 'bg-editorial-text text-editorial-bg shadow-sm scale-105'
+                        : 'bg-editorial-surface-subtle text-editorial-text border border-editorial-border group-hover:border-editorial-text group-hover:bg-editorial-text group-hover:text-editorial-bg'
                     )}
                   >
-                    {isSelected ? 'Active' : 'Explore'}
-                  </span>
+                    <CategoryIcon className="h-5.5 w-5.5 transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-sans text-editorial-muted font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border/80 shadow-2xs">
+                      {articleCount} {articleCount === 1 ? 'article' : 'articles'}
+                    </span>
+                    <span
+                      className={cn(
+                        'text-xs font-sans font-semibold px-3.5 py-1 rounded-full transition-all duration-200 flex items-center gap-1 shadow-2xs',
+                        isSelected
+                          ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
+                          : 'border border-editorial-border text-editorial-muted group-hover:border-editorial-text group-hover:text-editorial-text group-hover:bg-editorial-surface-hover'
+                      )}
+                    >
+                      <span>{isSelected ? 'Active' : 'Explore'}</span>
+                      <ArrowRightIcon
+                        className={cn(
+                          'h-3.5 w-3.5 transition-transform duration-200',
+                          isRtl ? 'rotate-180' : '',
+                          isSelected ? '' : 'group-hover:translate-x-0.5'
+                        )}
+                      />
+                    </span>
+                  </div>
                 </div>
 
-                <p className="font-serif text-editorial-muted text-sm sm:text-base leading-relaxed">
-                  {cat.description}
-                </p>
+                {/* Category Title & Description - Full Width */}
+                <div className="space-y-2">
+                  <h3 className="font-sans font-bold text-2xl sm:text-[1.65rem] tracking-tight text-editorial-text group-hover:text-accent transition-colors leading-tight">
+                    {cat.name}
+                  </h3>
+                  <p className="font-serif text-editorial-muted text-sm sm:text-base leading-relaxed">
+                    {cat.description}
+                  </p>
+                </div>
 
                 {/* Subcategories quick badges (Rounded Full + Poppins) */}
-                <div className="pt-2">
-                  <span className="text-xs font-sans text-editorial-muted block mb-2 font-medium">
+                <div className="pt-1">
+                  <span className="text-xs font-sans text-editorial-muted/80 block mb-2 font-medium">
                     {t.subcategories || 'Subcategories'}:
                   </span>
                   <div className="flex flex-wrap gap-1.5">
@@ -334,10 +362,10 @@ export function Categories() {
                             handleSelectSubcategory(sub.id);
                           }}
                           className={cn(
-                            'text-xs font-sans font-medium px-3 py-1 rounded-full transition-colors cursor-pointer',
+                            'text-xs font-sans font-medium px-3.5 py-1 rounded-full transition-all cursor-pointer shadow-2xs',
                             isSubSelected
                               ? 'bg-editorial-text text-editorial-bg font-bold'
-                              : 'bg-editorial-surface-subtle border border-editorial-border/70 hover:border-editorial-text text-editorial-muted hover:text-editorial-text'
+                              : 'bg-editorial-surface-subtle border border-editorial-border/80 hover:border-editorial-text text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
                           )}
                         >
                           {sub.name}
@@ -349,15 +377,15 @@ export function Categories() {
               </div>
 
               {/* Action row at bottom of card */}
-              <div className="pt-4 border-t border-editorial-border/60 flex items-center justify-between text-xs font-mono uppercase tracking-wider">
+              <div className="pt-4 border-t border-editorial-border/60 flex items-center justify-between text-xs font-sans font-medium">
                 <span className="text-editorial-muted group-hover:text-editorial-text transition-colors">
-                  {isSelected ? 'Click to deselect' : 'Click to show subcategories & articles'}
+                  {isSelected ? 'Click to deselect category' : 'Click to show subcategories & articles'}
                 </span>
                 <ArrowRightIcon
                   className={cn(
                     'h-4 w-4 transition-transform duration-200',
                     isRtl ? 'rotate-180' : '',
-                    isSelected ? 'translate-x-1 text-editorial-text' : 'group-hover:translate-x-1 text-editorial-muted'
+                    isSelected ? 'translate-x-1 text-editorial-text' : 'group-hover:translate-x-1 text-editorial-muted group-hover:text-editorial-text'
                   )}
                 />
               </div>
@@ -371,10 +399,10 @@ export function Categories() {
         <section className="space-y-6 pt-6 border-t border-editorial-border animate-fade-in">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="space-y-1">
-              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted block">
+              <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted block">
                 Category Drilldown
               </span>
-              <h3 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text flex items-center gap-2">
+              <h3 className="font-sans font-bold text-2xl sm:text-3xl tracking-tight text-editorial-text flex items-center gap-2">
                 <span>{activeCategory.name}</span>
                 <span className="text-editorial-muted font-normal text-lg">
                   ({activeCategory.subcategories.length} Subcategories)
@@ -386,7 +414,7 @@ export function Categories() {
               <button
                 type="button"
                 onClick={() => handleSelectSubcategory(selectedSubcategory)}
-                className="text-xs font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline cursor-pointer self-start sm:self-auto"
+                className="text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text underline cursor-pointer self-start sm:self-auto"
               >
                 Show All {activeCategory.name} Subcategories
               </button>
@@ -413,7 +441,7 @@ export function Categories() {
                     }
                   }}
                   className={cn(
-                    'p-5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between gap-4 text-start shadow-xs',
+                    'p-6 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between gap-4 text-start shadow-xs hover:shadow-md hover:-translate-y-0.5',
                     isSubSelected
                       ? 'border-editorial-text bg-editorial-surface-hover ring-2 ring-editorial-text/20 shadow-xs'
                       : 'border-editorial-border bg-editorial-surface hover:border-editorial-text/70'
@@ -436,7 +464,7 @@ export function Categories() {
                       </span>
                     </div>
 
-                    <h4 className="font-display font-bold text-lg uppercase tracking-tight text-editorial-text">
+                    <h4 className="font-sans font-bold text-lg tracking-tight text-editorial-text">
                       {sub.name}
                     </h4>
 
@@ -445,7 +473,7 @@ export function Categories() {
                     </p>
                   </div>
 
-                  <div className="pt-3 border-t border-editorial-border/60 flex items-center justify-between text-[11px] font-mono uppercase tracking-wider">
+                  <div className="pt-3.5 border-t border-editorial-border/60 flex items-center justify-between text-xs font-sans font-medium">
                     <span className={isSubSelected ? 'text-editorial-text font-semibold' : 'text-editorial-muted'}>
                       {isSubSelected ? 'Selected' : 'View Articles'}
                     </span>
@@ -468,7 +496,7 @@ export function Categories() {
       <section className="space-y-6 pt-8 border-t border-editorial-border">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h3 className="font-display font-black text-2xl uppercase tracking-tight text-editorial-text flex items-center gap-2">
+            <h3 className="font-sans font-bold text-2xl sm:text-3xl tracking-tight text-editorial-text flex items-center gap-2">
               <SparklesIcon className="h-5 w-5 text-editorial-text" />
               <span>
                 {selectedCategory
@@ -476,7 +504,7 @@ export function Categories() {
                   : (t.allArticles || 'All Editorial Articles')}
               </span>
             </h3>
-            <p className="font-mono text-xs uppercase tracking-wider text-editorial-muted mt-1">
+            <p className="font-sans text-xs text-editorial-muted font-medium mt-1">
               {filteredArticles.length} {t.articlesFound}
             </p>
           </div>
@@ -488,7 +516,7 @@ export function Categories() {
                   ? `/articles?category=${selectedCategory}${selectedSubcategory ? `&subcategory=${selectedSubcategory}` : ''}`
                   : '/articles'
               )}
-              className="text-xs font-mono uppercase tracking-widest text-accent hover:underline flex items-center gap-1 font-semibold"
+              className="text-xs font-sans uppercase tracking-wider text-accent hover:underline flex items-center gap-1 font-semibold"
             >
               <span>View in Full Archive</span>
               <span>{isRtl ? '←' : '→'}</span>

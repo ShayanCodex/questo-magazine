@@ -94,7 +94,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                   )}
                 </div>
 
-                <h2 className="text-2xl sm:text-3xl font-display font-black tracking-tight text-editorial-text group-hover/row:text-accent transition-colors leading-[1.1] uppercase">
+                <h2 className="text-2xl sm:text-3xl font-sans font-bold tracking-tight text-editorial-text group-hover/row:text-accent transition-colors leading-[1.18]">
                   <Link
                     to={articlePath}
                     className="pointer-events-auto hover:text-accent transition-colors focus-visible:outline-none"
@@ -132,7 +132,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                     to={articlePath}
                     tabIndex={-1}
                     aria-hidden="true"
-                    className="block relative aspect-[16/10] sm:aspect-[4/3] rounded-lg overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
+                    className="block relative aspect-[16/10] sm:aspect-[4/3] rounded-xl overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
                   >
                     <img
                       src={article.image}
