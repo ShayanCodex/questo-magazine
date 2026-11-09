@@ -272,8 +272,12 @@ export function Home() {
               </div>
             </div>
 
-            {/* Stylized Magazine Cover Card - Bright High-Contrast Editorial Monograph */}
-            <div className="relative rounded-lg border border-editorial-border bg-neutral-950 text-white overflow-hidden p-6 aspect-[4/5] flex flex-col justify-between shadow-lg group">
+            {/* Stylized Magazine Cover Card - Clickable Hyperlink & Compact on Mobile */}
+            <Link
+              to={localePath('/articles?category=art-and-culture')}
+              className="relative rounded-xl border border-editorial-border bg-neutral-950 text-white overflow-hidden p-5 sm:p-6 aspect-[16/10] sm:aspect-[4/5] flex flex-col justify-between shadow-lg group hover:border-editorial-text transition-all block cursor-pointer"
+              title="Explore Questo Magazine Issue 03"
+            >
               <div className="absolute inset-0">
                 <img
                   src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=900&q=85"
@@ -288,23 +292,30 @@ export function Home() {
                 <span className="font-sans font-medium text-xs bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-white shadow-xs">
                   Issue 03
                 </span>
-                <span className="font-sans font-medium text-xs text-white/90 bg-black/40 px-2.5 py-1 rounded-full backdrop-blur-md border border-white/10 shadow-xs">
-                  Autumn 2026
+                <span className="font-sans font-medium text-xs text-white/90 bg-black/50 px-2.5 py-1 rounded-full backdrop-blur-md border border-white/10 shadow-xs flex items-center gap-1 group-hover:bg-white group-hover:text-neutral-950 transition-all">
+                  <span>Autumn 2026</span>
+                  <span className="transition-transform group-hover:translate-x-0.5">→</span>
                 </span>
               </div>
 
-              <div className="relative z-10 space-y-1.5">
-                <h4 className="font-display font-black text-4xl sm:text-5xl uppercase tracking-tighter leading-none text-white drop-shadow-md">
+              <div className="relative z-10 space-y-1 sm:space-y-1.5">
+                <h4 className="font-display font-black text-3xl sm:text-5xl uppercase tracking-tighter leading-none text-white drop-shadow-md group-hover:text-white/95 transition-colors">
                   Questo
                 </h4>
-                <p className="text-xs font-sans text-white/90 uppercase tracking-widest font-medium drop-shadow-sm">
-                  Magazin • Art &amp; Life
-                </p>
+                <div className="flex items-center justify-between">
+                  <p className="text-xs font-sans text-white/90 uppercase tracking-widest font-medium drop-shadow-sm">
+                    Magazin • Art &amp; Life
+                  </p>
+                  <span className="text-[11px] font-sans font-semibold text-white/80 group-hover:text-white group-hover:underline flex items-center gap-1">
+                    <span>Read Issue</span>
+                    <span>→</span>
+                  </span>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* Editorial Specifications Document Card (Word/Docs Clean Style) */}
-            <div className="bg-editorial-surface border border-editorial-border rounded-lg overflow-hidden shadow-xs">
+            <div className="bg-editorial-surface border border-editorial-border rounded-xl overflow-hidden shadow-xs space-y-0">
               <div className="px-4 py-3 bg-editorial-surface-subtle border-b border-editorial-border flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <DocumentTextIcon className="h-4 w-4 text-editorial-text" />
@@ -328,12 +339,22 @@ export function Home() {
                   const label = splitIdx !== -1 ? raw.slice(0, splitIdx).trim() : '';
                   const value = splitIdx !== -1 ? raw.slice(splitIdx + 1).trim() : raw;
                   return (
-                    <div key={i} className="px-4 py-2.5 flex items-center justify-between gap-3">
+                    <div key={i} className="px-3.5 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between gap-3">
                       <span className="text-editorial-muted font-medium shrink-0">{label}</span>
                       <span className="text-editorial-text font-semibold text-end truncate">{value}</span>
                     </div>
                   );
                 })}
+              </div>
+
+              <div className="p-3 bg-editorial-surface-subtle/50 border-t border-editorial-border/60">
+                <Link
+                  to={localePath('/articles?category=art-and-culture')}
+                  className="flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-full bg-editorial-surface hover:bg-editorial-text hover:text-editorial-bg text-editorial-text border border-editorial-border font-sans text-xs font-semibold transition-all shadow-xs text-center"
+                >
+                  <span>Explore Art &amp; Life Articles</span>
+                  <span>→</span>
+                </Link>
               </div>
             </div>
 
