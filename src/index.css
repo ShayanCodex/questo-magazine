@@ -11,6 +11,13 @@
   --color-editorial-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
+
+  /* Modern Professional Typography: Poppins for Headings & UI + Clean Word Document Text */
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-document: 'Calibri', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: 'Calibri', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Consolas', 'Courier New', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
 }
 
 @layer base {
@@ -55,24 +62,36 @@
 
   body {
     min-height: 100vh;
-    font-family: 'Literata', Georgia, serif;
+    font-family: 'Calibri', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg);
     color: var(--text);
+    line-height: 1.65;
   }
 
-  /* Headings use Display Sans (or Naskh/Nastaliq for RTL languages) */
-  h1, h2, h3, h4, h5, h6, .font-display {
-    font-family: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
-    letter-spacing: -0.035em;
+  /* Headings & Display use Poppins for clean, modern aesthetic */
+  h1, h2, h3, h4, h5, h6, .font-display, .font-sans {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.015em;
   }
 
-  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .font-display {
+  /* Document text, article reading and excerpts */
+  .font-serif, .font-document, .article-body {
+    font-family: 'Calibri', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  /* Monospace for code, badges, technical specs */
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'Consolas', 'Courier New', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+  }
+
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6, [dir="rtl"] .font-display, [dir="rtl"] .font-sans {
     font-family: 'Noto Naskh Arabic', 'Noto Nastaliq Urdu', system-ui, sans-serif;
     letter-spacing: normal;
   }
 
-  [dir="rtl"] body, [dir="rtl"] .font-serif {
-    font-family: 'Noto Naskh Arabic', 'Noto Nastaliq Urdu', serif;
+  [dir="rtl"] body, [dir="rtl"] .font-serif, [dir="rtl"] .font-document, [dir="rtl"] .article-body {
+    font-family: 'Noto Naskh Arabic', 'Noto Nastaliq Urdu', system-ui, serif;
+    letter-spacing: normal;
   }
 
   /* Universal focus styles */

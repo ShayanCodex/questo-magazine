@@ -36,6 +36,8 @@ export interface ArticleData {
   updated?: string;
   author: string;
   tags: string[];
+  category?: string;
+  subcategory?: string;
   body: ContentBlock[];
   image?: string;
   imageAlt?: string;
@@ -50,6 +52,8 @@ export interface SearchItem {
   excerpt: string;
   date: string;
   tags: string[];
+  category?: string;
+  subcategory?: string;
   author: string;
   minRead?: number;
 }
@@ -116,4 +120,12 @@ export interface I18nStrings {
   theme?: string;
   lightMode?: string;
   darkMode?: string;
+  categories?: string;
+  subcategories?: string;
+  allCategories?: string;
+  allSubcategories?: string;
+  suggestions?: string;
+  searchSuggestions?: string;
+  clearAllFilters?: string;
+  activeFilters?: string;
 }

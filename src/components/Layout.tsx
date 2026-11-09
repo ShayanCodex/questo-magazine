@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, MagnifyingGlassIcon, FolderIcon } from '@heroicons/react/24/outline';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
@@ -15,6 +15,7 @@ import {
 import { Badge } from './ui/badge';
 import { SearchModal } from './SearchModal';
 import { ThemeToggle } from './ThemeToggle';
+import { CATEGORIES } from '../lib/categories';
 
 export interface LayoutProps {
   tags?: string[];
@@ -82,7 +83,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             >
               <div className="flex items-center gap-2 truncate">
                 <MagnifyingGlassIcon className="h-4 w-4 text-editorial-text shrink-0" />
-                <span className="font-serif text-xs text-editorial-muted/80 group-hover:text-editorial-text truncate transition-colors">
+                <span className="font-sans text-xs text-editorial-muted/80 group-hover:text-editorial-text truncate transition-colors">
                   {t.searchPlaceholder || 'Search articles...'}
                 </span>
               </div>
@@ -222,6 +223,41 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 {t.articles}
               </Link>
             </nav>
+
+            {/* Categories & Subcategories Explorer */}
+            <div className="space-y-4 pt-4 border-t border-editorial-border">
+              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted flex items-center gap-1.5 font-medium">
+                <FolderIcon className="h-4 w-4 text-editorial-text" />
+                <span>Categories &amp; Subcategories</span>
+              </span>
+
+              <div className="space-y-3.5">
+                {CATEGORIES.map((cat) => (
+                  <div key={cat.id} className="space-y-1.5">
+                    <Link
+                      to={localePath(`/articles?category=${cat.id}`)}
+                      onClick={() => setDrawerOpen(false)}
+                      className="font-display font-bold text-sm uppercase text-editorial-text hover:text-accent flex items-center justify-between transition-colors"
+                    >
+                      <span>{cat.name}</span>
+                      <span className="text-[10px] font-mono text-editorial-muted">→</span>
+                    </Link>
+                    <div className="flex flex-wrap gap-1.5 ps-1">
+                      {cat.subcategories.map((sub) => (
+                        <Link
+                          key={sub.id}
+                          to={localePath(`/articles?category=${cat.id}&subcategory=${sub.id}`)}
+                          onClick={() => setDrawerOpen(false)}
+                          className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border/60 hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors"
+                        >
+                          {sub.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             {/* Topics / Tag Chips */}
             {tags.length > 0 && (

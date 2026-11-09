@@ -68,5 +68,7 @@
       "code": "/* Spatial rhythm expressed as geometric proportions */\n:root {\n  --golden-ratio: 1.618;\n  --monolith-void: calc(100vw / var(--golden-ratio));\n}"
     }
   ],
-  "sourceHash": "f64dc110e42f22d210566881b0541f832e2d99c8"
+  "sourceHash": "f64dc110e42f22d210566881b0541f832e2d99c8",
+  "category": "architecture-and-space",
+  "subcategory": "minimalist-design"
 }

@@ -3,6 +3,7 @@ import { ArrowLeftIcon, PencilSquareIcon } from '@heroicons/react/24/outline';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
+import { getArticleCategory } from '../lib/categories';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
@@ -71,6 +72,32 @@ export function Article() {
             <p className="text-editorial-muted">{t.fallbackNotice}</p>
           </div>
         )}
+
+        {/* Category & Subcategory Taxonomy Badges */}
+        {(() => {
+          const { category, subcategory } = getArticleCategory(article);
+          return (
+            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider">
+              <Link
+                to={localePath(`/articles?category=${category.id}`)}
+                className="text-editorial-text font-bold hover:text-accent transition-colors"
+              >
+                {category.name}
+              </Link>
+              {subcategory && (
+                <>
+                  <span className="text-editorial-muted">/</span>
+                  <Link
+                    to={localePath(`/articles?category=${category.id}&subcategory=${subcategory.id}`)}
+                    className="text-editorial-muted hover:text-editorial-text transition-colors"
+                  >
+                    {subcategory.name}
+                  </Link>
+                </>
+              )}
+            </div>
+          );
+        })()}
 
         <h1 className="font-display font-black text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.05] tracking-tight text-editorial-text text-start uppercase">
           {article.title}

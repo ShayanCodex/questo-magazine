@@ -10,12 +10,12 @@ export function Body({ blocks }: BodyProps) {
   }
 
   return (
-    <div className="article-body font-serif text-editorial-text text-lg sm:text-[1.1875rem] leading-[1.8] max-w-[44rem] space-y-7 sm:space-y-8">
+    <div className="article-body font-document text-editorial-text text-[1.0625rem] sm:text-[1.125rem] leading-[1.75] max-w-[46rem] space-y-6 sm:space-y-7">
       {blocks.map((block, index) => {
         switch (block.type) {
           case 'p':
             return (
-              <p key={index} className="text-editorial-text">
+              <p key={index} className="text-editorial-text leading-[1.75]">
                 {block.text}
               </p>
             );
@@ -24,7 +24,7 @@ export function Body({ blocks }: BodyProps) {
             return (
               <h2
                 key={index}
-                className="font-display font-bold text-2xl sm:text-3xl text-editorial-text tracking-tight pt-6 sm:pt-8"
+                className="font-display font-bold text-2xl sm:text-[1.75rem] text-editorial-text tracking-tight pt-6 sm:pt-8"
               >
                 {block.text}
               </h2>
@@ -44,7 +44,7 @@ export function Body({ blocks }: BodyProps) {
             return (
               <ul
                 key={index}
-                className="list-disc list-outside ltr:pl-6 rtl:pr-6 space-y-2.5 text-editorial-text"
+                className="list-disc list-outside ltr:pl-6 rtl:pr-6 space-y-2 text-editorial-text leading-relaxed"
               >
                 {block.items?.map((item, itemIdx) => (
                   <li key={itemIdx}>{item}</li>
@@ -56,7 +56,7 @@ export function Body({ blocks }: BodyProps) {
             return (
               <ol
                 key={index}
-                className="list-decimal list-outside ltr:pl-6 rtl:pr-6 space-y-2.5 text-editorial-text"
+                className="list-decimal list-outside ltr:pl-6 rtl:pr-6 space-y-2 text-editorial-text leading-relaxed"
               >
                 {block.items?.map((item, itemIdx) => (
                   <li key={itemIdx}>{item}</li>
@@ -68,11 +68,11 @@ export function Body({ blocks }: BodyProps) {
             return (
               <blockquote
                 key={index}
-                className="my-8 ltr:border-l-2 rtl:border-r-2 border-editorial-text ltr:pl-6 rtl:pr-6 py-1 italic text-xl sm:text-2xl text-editorial-text font-serif leading-relaxed"
+                className="my-7 ltr:border-l-4 rtl:border-r-4 border-editorial-text/70 ltr:pl-5 rtl:pr-5 py-2.5 bg-editorial-surface-subtle/50 rounded-r-xs italic text-lg sm:text-xl text-editorial-text leading-relaxed"
               >
                 <p>"{block.text}"</p>
                 {block.cite && (
-                  <cite className="block not-italic text-sm font-sans tracking-normal text-editorial-muted mt-3">
+                  <cite className="block not-italic text-xs font-sans uppercase tracking-wider text-editorial-muted mt-2">
                     — {block.cite}
                   </cite>
                 )}

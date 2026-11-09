@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
+import { getArticleCategory } from '../lib/categories';
 import { Badge } from './ui/badge';
 
 export interface ArticleListProps {
@@ -28,6 +29,7 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
         const articlePath = localePath(`/articles/${article.slug}`);
         const formattedDate = formatDate(article.date, language.code);
         const readingTime = calculateReadingTime(article, t.minRead);
+        const { category, subcategory } = getArticleCategory(article);
 
         return (
           <article
@@ -51,6 +53,27 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
 
               {/* Content column: Title, excerpt, and tags */}
               <div className="md:col-span-6 space-y-3">
+                {/* Category & Subcategory Taxonomy Breadcrumb */}
+                <div className="flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider pointer-events-auto relative z-10">
+                  <Link
+                    to={localePath(`/articles?category=${category.id}`)}
+                    className="text-editorial-text font-bold hover:text-accent transition-colors"
+                  >
+                    {category.name}
+                  </Link>
+                  {subcategory && (
+                    <>
+                      <span className="text-editorial-muted/60">/</span>
+                      <Link
+                        to={localePath(`/articles?category=${category.id}&subcategory=${subcategory.id}`)}
+                        className="text-editorial-muted hover:text-editorial-text transition-colors"
+                      >
+                        {subcategory.name}
+                      </Link>
+                    </>
+                  )}
+                </div>
+
                 <h2 className="text-2xl sm:text-3xl font-display font-black tracking-tight text-editorial-text group-hover/row:text-accent transition-colors leading-[1.1] uppercase">
                   <Link
                     to={articlePath}

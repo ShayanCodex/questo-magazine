@@ -7,12 +7,20 @@ import {
   ArrowRightIcon,
   ClockIcon,
   SparklesIcon,
+  TagIcon,
+  FolderIcon,
 } from '@heroicons/react/24/outline';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { cn } from '../lib/utils';
 import { Badge } from './ui/badge';
+import {
+  CATEGORIES,
+  getArticleCategory,
+  getSearchSuggestions,
+  type SearchSuggestion,
+} from '../lib/categories';
 
 const RECENT_SEARCHES_KEY = 'questo-recent-searches';
 
@@ -56,6 +64,8 @@ export function SearchModal({
 }: SearchModalProps) {
   const [query, setQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -66,6 +76,11 @@ export function SearchModal({
   const navigate = useNavigate();
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
+
+  // Smart live suggestions (Categories, Subcategories, Topics, Queries)
+  const liveSuggestions = useMemo(() => {
+    return getSearchSuggestions(query, items);
+  }, [query, items]);
 
   // Load recent searches from localStorage on mount & open
   useEffect(() => {
@@ -144,10 +159,13 @@ export function SearchModal({
     setTimeout(checkSliderScroll, 200);
   };
 
-  // Fast client-side multi-field matching
+  // Fast client-side multi-field matching with category & subcategory support
   const filtered = useMemo(() => {
     const cleanQuery = query.trim().toLowerCase();
     return items.filter((item) => {
+      const { category, subcategory } = getArticleCategory(item);
+      if (selectedCategory && category.id !== selectedCategory) return false;
+      if (selectedSubcategory && subcategory?.id !== selectedSubcategory) return false;
       const matchesTag = selectedTag ? item.tags?.includes(selectedTag) : true;
       if (!matchesTag) return false;
       if (!cleanQuery) return true;
@@ -156,10 +174,33 @@ export function SearchModal({
       const excerptMatch = item.excerpt.toLowerCase().includes(cleanQuery);
       const authorMatch = item.author.toLowerCase().includes(cleanQuery);
       const tagsMatch = item.tags?.some((tg) => tg.toLowerCase().includes(cleanQuery));
+      const categoryMatch = category.name.toLowerCase().includes(cleanQuery);
+      const subcategoryMatch = subcategory?.name.toLowerCase().includes(cleanQuery);
 
-      return titleMatch || excerptMatch || authorMatch || tagsMatch;
+      return titleMatch || excerptMatch || authorMatch || tagsMatch || categoryMatch || subcategoryMatch;
     });
-  }, [items, query, selectedTag]);
+  }, [items, query, selectedTag, selectedCategory, selectedSubcategory]);
+
+  const handleApplySuggestion = (suggestion: SearchSuggestion) => {
+    if (suggestion.type === 'category' && suggestion.categoryId) {
+      setSelectedCategory(suggestion.categoryId);
+      setSelectedSubcategory(null);
+      setQuery('');
+    } else if (
+      suggestion.type === 'subcategory' &&
+      suggestion.categoryId &&
+      suggestion.subcategoryId
+    ) {
+      setSelectedCategory(suggestion.categoryId);
+      setSelectedSubcategory(suggestion.subcategoryId);
+      setQuery('');
+    } else if (suggestion.type === 'topic') {
+      setSelectedTag(suggestion.value);
+      setQuery('');
+    } else {
+      setQuery(suggestion.value);
+    }
+  };
 
   // Reset selected index when results change
   useEffect(() => {
@@ -230,7 +271,7 @@ export function SearchModal({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={t.searchPlaceholder}
-              className="w-full bg-transparent font-serif text-sm sm:text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
+              className="w-full bg-transparent font-sans text-sm sm:text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
               aria-label={t.search}
             />
             {query && (
@@ -246,6 +287,68 @@ export function SearchModal({
             <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono uppercase text-editorial-muted border border-editorial-border rounded-xs bg-editorial-surface-subtle">
               ESC
             </kbd>
+          </div>
+
+          {/* Smart Live Suggestions Strip */}
+          {liveSuggestions.length > 0 && (
+            <div className="px-3 py-1.5 border-b border-editorial-border/60 bg-editorial-surface-subtle flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
+                <SparklesIcon className="h-3 w-3 text-editorial-text" />
+                <span>Suggestions:</span>
+              </span>
+              {liveSuggestions.map((sug, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => handleApplySuggestion(sug)}
+                  className="font-mono text-[11px] px-2 py-0.5 rounded-xs bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text transition-colors cursor-pointer shrink-0 flex items-center gap-1"
+                >
+                  {sug.type === 'category' && <FolderIcon className="h-3 w-3 text-editorial-muted" />}
+                  {sug.type === 'topic' && <TagIcon className="h-3 w-3 text-editorial-muted" />}
+                  <span>{sug.label}</span>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Quick Categories Filter Strip */}
+          <div className="px-3 py-1.5 border-b border-editorial-border/60 bg-editorial-surface flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs font-mono">
+            <span className="text-[10px] uppercase tracking-wider text-editorial-muted shrink-0 me-1">
+              Category:
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedCategory(null);
+                setSelectedSubcategory(null);
+              }}
+              className={cn(
+                'px-2 py-0.5 text-[11px] rounded-xs uppercase tracking-wider transition-colors cursor-pointer shrink-0',
+                selectedCategory === null && selectedSubcategory === null
+                  ? 'bg-editorial-text text-editorial-bg font-semibold'
+                  : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface-subtle'
+              )}
+            >
+              All
+            </button>
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat.id}
+                type="button"
+                onClick={() => {
+                  setSelectedCategory(selectedCategory === cat.id ? null : cat.id);
+                  setSelectedSubcategory(null);
+                }}
+                className={cn(
+                  'px-2 py-0.5 text-[11px] rounded-xs uppercase tracking-wider transition-colors cursor-pointer shrink-0',
+                  selectedCategory === cat.id
+                    ? 'bg-editorial-text text-editorial-bg font-semibold'
+                    : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface-subtle'
+                )}
+              >
+                {cat.name}
+              </button>
+            ))}
           </div>
 
           {/* Compact Topic Filter Slider */}
@@ -420,12 +523,25 @@ export function SearchModal({
                     )}
                   >
                     <div className="space-y-1 min-w-0 flex-1">
-                      {/* Compact Meta Row */}
-                      <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-wider text-editorial-muted">
-                        <span>{item.date}</span>
-                        <span>•</span>
-                        <span>{highlightMatch(item.author, query)}</span>
-                      </div>
+                      {/* Compact Meta & Category Taxonomy Row */}
+                      {(() => {
+                        const { category, subcategory } = getArticleCategory(item);
+                        return (
+                          <div className="flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider text-editorial-muted">
+                            <span className="text-editorial-text font-bold">{category.name}</span>
+                            {subcategory && (
+                              <>
+                                <span className="opacity-40">/</span>
+                                <span className="opacity-80">{subcategory.name}</span>
+                              </>
+                            )}
+                            <span className="opacity-40">•</span>
+                            <span>{item.date}</span>
+                            <span className="opacity-40">•</span>
+                            <span>{highlightMatch(item.author, query)}</span>
+                          </div>
+                        );
+                      })()}
 
                       {/* Clean Single-Line Title with Match Highlighting */}
                       <h4 className="font-display font-bold text-sm sm:text-[15px] text-editorial-text leading-tight line-clamp-1">

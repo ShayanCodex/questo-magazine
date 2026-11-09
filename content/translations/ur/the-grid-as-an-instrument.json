@@ -68,5 +68,7 @@
       "code": "/* Swiss modular grid baseline rhythm */\n.editorial-stave {\n  display: grid;\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n  column-gap: clamp(1rem, 2.5vw, 2.5rem);\n}"
     }
   ],
-  "sourceHash": "2c62f9834c8afa24a08c71f9c9c93ca466cd1275"
+  "sourceHash": "2c62f9834c8afa24a08c71f9c9c93ca466cd1275",
+  "category": "design-and-typography",
+  "subcategory": "editorial-systems"
 }
