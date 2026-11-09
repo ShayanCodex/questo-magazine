@@ -4,6 +4,7 @@ import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory } from '../lib/categories';
 import { Badge } from './ui/badge';
+import { ArticleViewCount } from './ArticleViewCount';
 
 export interface ArticleListProps {
   articles: ArticleData[];
@@ -45,10 +46,11 @@ export function ArticleList({ articles, emptyMessage }: ArticleListProps) {
             />
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start pointer-events-none">
-              {/* Meta column: date & reading time */}
+              {/* Meta column: date & reading time & real-time views */}
               <div className="md:col-span-3 text-xs font-mono uppercase tracking-wider text-editorial-muted flex flex-row md:flex-col justify-between md:justify-start gap-1">
                 <time dateTime={article.date}>{formattedDate}</time>
                 <span className="opacity-70">{readingTime}</span>
+                <ArticleViewCount path={`/articles/${article.slug}`} slug={article.slug} compact />
               </div>
 
               {/* Content column: Title, excerpt, and tags */}

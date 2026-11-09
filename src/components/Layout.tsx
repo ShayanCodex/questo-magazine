@@ -15,6 +15,7 @@ import {
 import { Badge } from './ui/badge';
 import { SearchModal } from './SearchModal';
 import { ThemeToggle } from './ThemeToggle';
+import { AnalyticsTracker } from './AnalyticsTracker';
 import { CATEGORIES } from '../lib/categories';
 
 export interface LayoutProps {
@@ -44,6 +45,9 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col bg-editorial-bg text-editorial-text selection:bg-editorial-text selection:text-editorial-bg">
+      {/* GoatCounter SPA Analytics Tracker for Route Transitions */}
+      <AnalyticsTracker />
+
       {/* Accessible Skip Link */}
       <a
         href="#main-content"

@@ -209,3 +209,4 @@ export function getSearchSuggestions(
 
   return suggestions.slice(0, 8);
 }
+

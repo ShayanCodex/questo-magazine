@@ -9,6 +9,7 @@ import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { Body } from '../components/Body';
 import { Badge } from '../components/ui/badge';
+import { ArticleViewCount } from '../components/ArticleViewCount';
 
 interface ArticleLoaderData {
   article: ArticleData;
@@ -121,6 +122,8 @@ export function Article() {
           )}
           <span>•</span>
           <span>{readingTime}</span>
+          <span>•</span>
+          <ArticleViewCount path={`/articles/${article.slug}`} slug={article.slug} />
         </div>
       </header>
 
