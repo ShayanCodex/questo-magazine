@@ -345,7 +345,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* 6. Signature Awwwards Scroll-Driven Expanding Video Animation */}
+      {/* 6. Full-Width Cinematic Architectural Video Player */}
       <CinematicScrollVideo />
 
       {/* 7. Editorial Disciplines & Pillars */}
