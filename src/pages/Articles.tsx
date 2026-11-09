@@ -20,6 +20,8 @@ import {
   CATEGORIES,
   getArticleCategory,
   getCategoryById,
+  getCategoryShortName,
+  formatTopicName,
   getStructuredSearchSuggestions,
   type SearchSuggestion,
 } from '../lib/categories';
@@ -32,7 +34,9 @@ interface ArticlesLoaderData {
 const ARTICLES_PER_PAGE = 4;
 
 export function Articles() {
-  const { articles, pathname } = useLoaderData() as ArticlesLoaderData;
+  const loaderData = (useLoaderData() as ArticlesLoaderData) || {};
+  const articles = loaderData.articles || [];
+  const pathname = loaderData.pathname || '/articles';
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
 
@@ -281,24 +285,24 @@ export function Articles() {
               )}
             </div>
 
-            {/* Smart Search Suggestions Dropdown: Only shown when user has typed (never shows beforehand) */}
+            {/* Smart Search Suggestions Dropdown: Only shown when user has typed */}
             {showSuggestions && searchQuery.trim().length >= 1 && structuredSuggestions.total > 0 && (
               <div
-                className="absolute top-full start-0 end-0 mt-1.5 z-40 bg-editorial-surface border border-editorial-border rounded-sm shadow-2xl p-3.5 space-y-3 max-h-80 overflow-y-auto custom-scrollbar"
+                className="absolute top-full start-0 end-0 mt-1.5 z-40 bg-editorial-surface border border-editorial-border rounded-lg shadow-2xl p-3.5 space-y-3 max-h-80 overflow-y-auto custom-scrollbar font-sans"
                 onMouseDown={(e) => e.preventDefault()}
               >
-                <div className="flex items-center justify-between pb-1.5 border-b border-editorial-border text-[10px] font-mono uppercase tracking-wider text-editorial-muted">
+                <div className="flex items-center justify-between pb-1.5 border-b border-editorial-border text-xs text-editorial-muted font-medium">
                   <span className="flex items-center gap-1.5">
                     <SparklesIcon className="h-3.5 w-3.5 text-editorial-text" />
                     <span>Suggestions</span>
                   </span>
-                  <span>Click suggestion to filter</span>
+                  <span className="text-[11px] opacity-75">Click to filter</span>
                 </div>
 
                 {/* Section A: Categories Suggestions */}
                 {structuredSuggestions.categories.length > 0 && (
                   <div className="space-y-1.5">
-                    <div className="flex items-center gap-1 text-[11px] font-mono uppercase tracking-wider text-editorial-muted font-semibold">
+                    <div className="flex items-center gap-1 text-xs text-editorial-muted font-semibold">
                       <FolderIcon className="h-3.5 w-3.5 text-editorial-text" />
                       <span>{t.categories || 'Categories'}</span>
                     </div>
@@ -308,7 +312,7 @@ export function Articles() {
                           key={i}
                           type="button"
                           onClick={() => handleApplySuggestion(sug)}
-                          className="px-2.5 py-1 text-xs font-mono rounded-xs border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface text-editorial-text transition-colors cursor-pointer flex items-center gap-1.5"
+                          className="px-3 py-1 text-xs rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface text-editorial-text transition-colors cursor-pointer flex items-center gap-1.5 font-medium"
                         >
                           <FolderIcon className="h-3 w-3 text-editorial-muted" />
                           <span>{sug.label}</span>
@@ -321,7 +325,7 @@ export function Articles() {
                 {/* Section B: Subcategories Suggestions */}
                 {structuredSuggestions.subcategories.length > 0 && (
                   <div className="space-y-1.5 pt-2 border-t border-editorial-border/50">
-                    <div className="flex items-center gap-1 text-[11px] font-mono uppercase tracking-wider text-editorial-muted font-semibold">
+                    <div className="flex items-center gap-1 text-xs text-editorial-muted font-semibold">
                       <span>{t.subcategories || 'Subcategories'}</span>
                     </div>
                     <div className="flex flex-wrap gap-1.5">
@@ -330,7 +334,7 @@ export function Articles() {
                           key={i}
                           type="button"
                           onClick={() => handleApplySuggestion(sug)}
-                          className="px-2.5 py-1 text-xs font-mono rounded-xs border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface text-editorial-text transition-colors cursor-pointer flex items-center gap-1.5"
+                          className="px-3 py-1 text-xs rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface text-editorial-text transition-colors cursor-pointer flex items-center gap-1.5 font-medium"
                         >
                           <span>{sug.label}</span>
                         </button>
@@ -339,12 +343,12 @@ export function Articles() {
                   </div>
                 )}
 
-                {/* Section C: Topics & #Tags Suggestions */}
+                {/* Section C: Topics Suggestions */}
                 {structuredSuggestions.topics.length > 0 && (
                   <div className="space-y-1.5 pt-2 border-t border-editorial-border/50">
-                    <div className="flex items-center gap-1 text-[11px] font-mono uppercase tracking-wider text-editorial-muted font-semibold">
+                    <div className="flex items-center gap-1 text-xs text-editorial-muted font-semibold">
                       <TagIcon className="h-3.5 w-3.5 text-editorial-text" />
-                      <span>{t.topics || 'Topics & #Tags'}</span>
+                      <span>{t.topics || 'Topics'}</span>
                     </div>
                     <div className="flex flex-wrap gap-1.5">
                       {structuredSuggestions.topics.map((sug, i) => (
@@ -352,9 +356,8 @@ export function Articles() {
                           key={i}
                           type="button"
                           onClick={() => handleApplySuggestion(sug)}
-                          className="px-2.5 py-1 text-xs font-mono rounded-xs border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface text-editorial-text transition-colors cursor-pointer flex items-center gap-1"
+                          className="px-3 py-1 text-xs rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface text-editorial-text transition-colors cursor-pointer flex items-center gap-1 font-medium"
                         >
-                          <TagIcon className="h-3 w-3 text-editorial-muted" />
                           <span>{sug.label}</span>
                           {sug.count && <span className="opacity-60 text-[10px]">({sug.count})</span>}
                         </button>
@@ -366,7 +369,7 @@ export function Articles() {
                 {/* Section D: Direct Article Matches */}
                 {structuredSuggestions.queries.length > 0 && (
                   <div className="space-y-1.5 pt-2 border-t border-editorial-border/50">
-                    <div className="flex items-center gap-1 text-[11px] font-mono uppercase tracking-wider text-editorial-muted font-semibold">
+                    <div className="flex items-center gap-1 text-xs text-editorial-muted font-semibold">
                       <DocumentTextIcon className="h-3.5 w-3.5 text-editorial-text" />
                       <span>Articles</span>
                     </div>
@@ -376,7 +379,7 @@ export function Articles() {
                           key={i}
                           type="button"
                           onClick={() => handleApplySuggestion(sug)}
-                          className="text-start px-2 py-1.5 rounded-xs hover:bg-editorial-surface-hover text-editorial-text transition-colors cursor-pointer font-serif text-xs truncate flex items-center gap-2"
+                          className="text-start px-2.5 py-1.5 rounded-md hover:bg-editorial-surface-hover text-editorial-text transition-colors cursor-pointer text-xs truncate flex items-center gap-2 font-medium"
                         >
                           <span className="text-editorial-muted font-mono text-[10px]">→</span>
                           <span>"{sug.label}"</span>
@@ -390,12 +393,12 @@ export function Articles() {
           </div>
 
           {/* Sort Selector: Newest | Oldest */}
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider shrink-0 self-end sm:self-center">
+          <div className="flex items-center gap-2 text-xs shrink-0 self-end sm:self-center font-sans">
             <span className="text-editorial-muted flex items-center gap-1.5 font-medium">
               <AdjustmentsHorizontalIcon className="h-4 w-4 text-editorial-text" />
               <span>{t.sortBy}:</span>
             </span>
-            <div className="inline-flex rounded-sm border border-editorial-border bg-editorial-surface-subtle overflow-hidden p-0.5">
+            <div className="inline-flex rounded-full border border-editorial-border bg-editorial-surface-subtle overflow-hidden p-0.5 shadow-2xs">
               <button
                 type="button"
                 onClick={() => {
@@ -403,7 +406,7 @@ export function Articles() {
                   setCurrentPage(1);
                 }}
                 className={cn(
-                  'px-3 py-1.5 rounded-xs cursor-pointer transition-all',
+                  'px-3 py-1 text-xs rounded-full cursor-pointer transition-all font-medium',
                   sortBy === 'newest'
                     ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'
@@ -418,7 +421,7 @@ export function Articles() {
                   setCurrentPage(1);
                 }}
                 className={cn(
-                  'px-3 py-1.5 rounded-xs cursor-pointer transition-all',
+                  'px-3 py-1 text-xs rounded-full cursor-pointer transition-all font-medium',
                   sortBy === 'oldest'
                     ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'
@@ -430,20 +433,20 @@ export function Articles() {
           </div>
         </div>
 
-        {/* Minimalist Editorial Category Filter Strip */}
-        <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto no-scrollbar py-2 border-b border-editorial-border">
+        {/* Clean Single-Line Horizontal Category Filter Bar in Poppins */}
+        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar py-2.5 border-y border-editorial-border font-sans">
           <button
             type="button"
             onClick={() => handleSelectCategory(null)}
             className={cn(
-              'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0',
+              'px-3.5 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
               selectedCategory === null
-                ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
-                : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
+                ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
+                : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border/60'
             )}
           >
             <span>{t.allCategories || 'All Categories'}</span>
-            <span className="opacity-70 text-[10px] ms-1">({articles.length})</span>
+            <span className="opacity-70 text-[10px]">({articles.length})</span>
           </button>
 
           {CATEGORIES.map((cat) => {
@@ -456,13 +459,13 @@ export function Articles() {
                 type="button"
                 onClick={() => handleSelectCategory(isSelected ? null : cat.id)}
                 className={cn(
-                  'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
+                  'px-3.5 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
                   isSelected
-                    ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
-                    : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
+                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
+                    : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border/60'
                 )}
               >
-                <span>{cat.name}</span>
+                <span>{getCategoryShortName(cat.id)}</span>
                 {count > 0 && <span className="opacity-70 text-[10px]">({count})</span>}
               </button>
             );
@@ -471,18 +474,18 @@ export function Articles() {
 
         {/* Dynamic Subcategories (Revealed ONLY when a category is selected) */}
         {activeCategoryDef && (
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
-            <span className="text-[11px] font-mono uppercase tracking-wider text-editorial-muted shrink-0">
-              {activeCategoryDef.name}:
+          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar py-1 font-sans">
+            <span className="text-xs font-semibold text-editorial-text shrink-0 flex items-center gap-1">
+              <span>{getCategoryShortName(activeCategoryDef.id)}:</span>
             </span>
             <button
               type="button"
               onClick={() => handleSelectSubcategory(null)}
               className={cn(
-                'px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0',
+                'px-3 py-1 text-xs rounded-full transition-all cursor-pointer shrink-0 font-medium',
                 selectedSubcategory === null
                   ? 'bg-editorial-text text-editorial-bg font-semibold'
-                  : 'text-editorial-muted hover:text-editorial-text border border-editorial-border'
+                  : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
               )}
             >
               All
@@ -497,10 +500,10 @@ export function Articles() {
                   type="button"
                   onClick={() => handleSelectSubcategory(sub.id)}
                   className={cn(
-                    'px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0 flex items-center gap-1',
+                    'px-3 py-1 text-xs rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1 font-medium',
                     isSelected
                       ? 'bg-editorial-text text-editorial-bg font-semibold'
-                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border'
+                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
                   )}
                 >
                   <span>{sub.name}</span>
@@ -513,13 +516,13 @@ export function Articles() {
 
         {/* Active Filters Removable Chips & 1-Click Clear (Shown ONLY when filters are active) */}
         {hasActiveFilters && (
-          <div className="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono">
-            <span className="text-editorial-muted text-[11px] uppercase tracking-wider">
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-sans">
+            <span className="text-editorial-muted font-medium">
               {t.activeFilters || 'Active'}:
             </span>
             {selectedCategory && (
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border text-editorial-text">
-                <span>Category: {getCategoryById(selectedCategory)?.name}</span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-text font-medium">
+                <span>Category: {getCategoryShortName(selectedCategory)}</span>
                 <button
                   type="button"
                   onClick={() => handleSelectCategory(null)}
@@ -531,7 +534,7 @@ export function Articles() {
               </span>
             )}
             {selectedSubcategory && selectedCategory && (
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border text-editorial-text">
+              <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-text font-medium">
                 <span>
                   Subcategory:{' '}
                   {activeCategoryDef?.subcategories.find((s) => s.id === selectedSubcategory)?.name}
@@ -547,8 +550,8 @@ export function Articles() {
               </span>
             )}
             {selectedTag && (
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border text-editorial-text">
-                <span>#{selectedTag}</span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-text font-medium">
+                <span>Topic: {formatTopicName(selectedTag)}</span>
                 <button
                   type="button"
                   onClick={() => handleSelectTag(null)}
@@ -560,7 +563,7 @@ export function Articles() {
               </span>
             )}
             {searchQuery && (
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border text-editorial-text">
+              <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-text font-medium">
                 <span>"{searchQuery}"</span>
                 <button
                   type="button"
@@ -579,7 +582,7 @@ export function Articles() {
             <button
               type="button"
               onClick={handleResetFilters}
-              className="text-editorial-muted hover:text-editorial-text underline cursor-pointer text-[11px] uppercase tracking-wider ms-auto"
+              className="text-editorial-muted hover:text-editorial-text underline cursor-pointer text-xs font-medium ms-auto"
             >
               {t.clearAllFilters || 'Clear all'}
             </button>

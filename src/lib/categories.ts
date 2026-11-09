@@ -70,6 +70,35 @@ export function getCategoryById(id: string): Category | undefined {
   return CATEGORIES.find((cat) => cat.id === id);
 }
 
+export function getCategoryShortName(categoryId: string): string {
+  switch (categoryId) {
+    case 'art-and-culture':
+      return 'Art & Life';
+    case 'architecture-and-space':
+      return 'Architecture';
+    case 'design-and-typography':
+      return 'Design';
+    case 'engineering-and-technology':
+      return 'Tech';
+    default:
+      return 'Editorial';
+  }
+}
+
+/**
+ * Formats a raw tag or topic slug into a human-readable editorial label (e.g. "design-systems" -> "Design Systems", "ssg" -> "SSG")
+ * Removes leading '#' hashtags to avoid AI-generated website aesthetics.
+ */
+export function formatTopicName(topic: string): string {
+  if (!topic) return '';
+  const clean = topic.replace(/^#+/, '').trim();
+  if (clean.toLowerCase() === 'ssg') return 'SSG';
+  return clean
+    .split(/[-_]+/)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+}
+
 export function getSubcategoryById(categoryId: string, subcategoryId: string): Subcategory | undefined {
   const category = getCategoryById(categoryId);
   return category?.subcategories.find((sub) => sub.id === subcategoryId);
@@ -195,7 +224,7 @@ export function getStructuredSearchSuggestions(
     if (tag.includes(q)) {
       topics.push({
         type: 'topic',
-        label: `#${tag}`,
+        label: formatTopicName(tag),
         value: tag,
         count,
       });

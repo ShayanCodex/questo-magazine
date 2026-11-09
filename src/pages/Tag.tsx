@@ -2,6 +2,7 @@ import { useLoaderData } from 'react-router-dom';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
+import { formatTopicName } from '../lib/categories';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ArticleList } from '../components/ArticleList';
@@ -16,10 +17,12 @@ export function Tag() {
   const { tag, articles, pathname } = useLoaderData() as TagLoaderData;
   const { t, localePath } = useLanguage();
 
+  const formattedTagName = formatTopicName(tag);
+
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
     { label: t.articles, href: localePath('/articles') },
-    { label: `#${tag}` },
+    { label: formattedTagName },
   ];
 
   return (
@@ -39,7 +42,7 @@ export function Tag() {
             {t.topics}
           </span>
           <h1 className="font-display font-extrabold text-[clamp(2.5rem,5vw,4.5rem)] leading-none tracking-tight text-editorial-text">
-            #{tag}
+            {formattedTagName}
           </h1>
         </div>
       </header>

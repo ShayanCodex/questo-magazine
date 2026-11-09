@@ -5,12 +5,11 @@ import {
   ChevronRightIcon,
   SparklesIcon,
   ClockIcon,
-  EyeIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
-import { getArticleCategory } from '../lib/categories';
+import { getArticleCategory, getCategoryShortName } from '../lib/categories';
 import { cn } from '../lib/utils';
 
 export interface FeaturedShowcaseSliderProps {
@@ -137,9 +136,13 @@ export function FeaturedShowcaseSlider({
               <SparklesIcon className="h-3.5 w-3.5 text-white" />
               <span>Featured Monograph</span>
             </span>
-            <span className="hidden sm:inline-flex font-mono text-[11px] uppercase tracking-wider bg-white/15 backdrop-blur-md px-2.5 py-1 rounded-xs text-white/90 border border-white/10">
-              {category.name}
-            </span>
+            <Link
+              to={localePath(`/articles?category=${category.id}`)}
+              className="hidden sm:inline-flex font-mono text-[11px] uppercase tracking-wider bg-white/15 backdrop-blur-md px-2.5 py-1 rounded-xs text-white/90 border border-white/10 hover:bg-white hover:text-neutral-950 transition-all cursor-pointer pointer-events-auto shadow-sm"
+              title={`View ${category.name} collection`}
+            >
+              {getCategoryShortName(category.id)} →
+            </Link>
           </div>
 
           {/* Slide Numeric Counter (e.g. 01 / 04) */}
@@ -154,11 +157,21 @@ export function FeaturedShowcaseSlider({
         <div className="absolute bottom-14 sm:bottom-16 start-6 sm:start-12 end-6 sm:end-12 z-20 space-y-4 max-w-3xl">
           {/* Metadata Row */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-wider text-white/80">
-            <span className="text-white font-bold">{category.name}</span>
+            <Link
+              to={localePath(`/articles?category=${category.id}`)}
+              className="text-white font-bold hover:underline transition-colors pointer-events-auto"
+            >
+              {getCategoryShortName(category.id)}
+            </Link>
             {subcategory && (
               <>
                 <span className="opacity-40">/</span>
-                <span>{subcategory.name}</span>
+                <Link
+                  to={localePath(`/articles?category=${category.id}&subcategory=${subcategory.id}`)}
+                  className="hover:underline transition-colors pointer-events-auto"
+                >
+                  {subcategory.name}
+                </Link>
               </>
             )}
             <span className="opacity-40">•</span>
@@ -167,11 +180,6 @@ export function FeaturedShowcaseSlider({
             <span className="flex items-center gap-1">
               <ClockIcon className="h-3 w-3" />
               <span>{readingTime}</span>
-            </span>
-            <span className="opacity-40">•</span>
-            <span className="flex items-center gap-1">
-              <EyeIcon className="h-3 w-3" />
-              <span>Tracked Live</span>
             </span>
           </div>
 
@@ -199,19 +207,6 @@ export function FeaturedShowcaseSlider({
               <span>{t.readMore || 'Read Monograph'}</span>
               <span className="transition-transform group-hover/btn:translate-x-1">→</span>
             </Link>
-
-            {currentArticle.tags && currentArticle.tags.length > 0 && (
-              <div className="hidden sm:flex items-center gap-1.5">
-                {currentArticle.tags.slice(0, 3).map((tg) => (
-                  <span
-                    key={tg}
-                    className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-xs bg-black/50 backdrop-blur-xs border border-white/10 text-white/80"
-                  >
-                    #{tg}
-                  </span>
-                ))}
-              </div>
-            )}
           </div>
         </div>
 
@@ -271,3 +266,4 @@ export function FeaturedShowcaseSlider({
     </section>
   );
 }
+

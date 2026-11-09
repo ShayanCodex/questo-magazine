@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
-import { getArticleCategory } from '../lib/categories';
-import { Badge } from './ui/badge';
+import { getArticleCategory, getCategoryShortName, formatTopicName } from '../lib/categories';
 import { ArticleViewCount } from './ArticleViewCount';
 import { cn } from '../lib/utils';
 
@@ -74,16 +73,16 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                 )}
               >
                 {/* Category & Subcategory Taxonomy Breadcrumb */}
-                <div className="flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider pointer-events-auto relative z-10">
+                <div className="flex items-center gap-1.5 text-xs font-sans tracking-wide pointer-events-auto relative z-10 font-medium">
                   <Link
                     to={localePath(`/articles?category=${category.id}`)}
                     className="text-editorial-text font-bold hover:text-accent transition-colors"
                   >
-                    {category.name}
+                    {getCategoryShortName(category.id)}
                   </Link>
                   {subcategory && (
                     <>
-                      <span className="text-editorial-muted/60">/</span>
+                      <span className="text-editorial-muted/50 font-normal">/</span>
                       <Link
                         to={localePath(`/articles?category=${category.id}&subcategory=${subcategory.id}`)}
                         className="text-editorial-muted hover:text-editorial-text transition-colors"
@@ -107,18 +106,18 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                   {article.excerpt}
                 </p>
 
-                {/* Layered tag links */}
+                {/* Layered clean topic pill links (no '#' symbol, Poppins typography) */}
                 {article.tags && article.tags.length > 0 && (
-                  <div className="pt-2 flex flex-wrap gap-2 pointer-events-auto relative z-10">
+                  <div className="pt-2 flex flex-wrap gap-1.5 pointer-events-auto relative z-10">
                     {article.tags.map((tag) => (
                       <Link
                         key={tag}
                         to={localePath(`/tags/${tag}`)}
                         className="focus:outline-none"
                       >
-                        <Badge variant="default" className="text-[10px] uppercase">
-                          #{tag}
-                        </Badge>
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-sans font-medium bg-editorial-surface-subtle border border-editorial-border/70 text-editorial-text/80 hover:text-editorial-text hover:border-editorial-text transition-all">
+                          {formatTopicName(tag)}
+                        </span>
                       </Link>
                     ))}
                   </div>

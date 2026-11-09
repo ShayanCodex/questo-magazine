@@ -12,11 +12,10 @@ import {
   SheetTitle,
   SheetDescription,
 } from './ui/sheet';
-import { Badge } from './ui/badge';
 import { SearchModal } from './SearchModal';
 import { ThemeToggle } from './ThemeToggle';
 import { AnalyticsTracker } from './AnalyticsTracker';
-import { CATEGORIES } from '../lib/categories';
+import { CATEGORIES, getCategoryShortName, formatTopicName } from '../lib/categories';
 
 export interface LayoutProps {
   tags?: string[];
@@ -260,86 +259,94 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             </nav>
 
             {/* Editorial Categories Directory */}
-            <div className="space-y-3 pt-4 border-t border-editorial-border">
+            <div className="space-y-3 pt-4 border-t border-editorial-border font-sans">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted flex items-center gap-1.5 font-medium">
+                <span className="text-xs font-semibold text-editorial-muted flex items-center gap-1.5">
                   <FolderIcon className="h-4 w-4 text-editorial-text" />
                   <span>{t.categories || 'Categories'}</span>
                 </span>
                 <Link
                   to={localePath('/categories')}
                   onClick={() => setDrawerOpen(false)}
-                  className="text-[11px] font-mono uppercase tracking-wider text-accent hover:underline"
+                  className="text-xs font-medium text-accent hover:underline"
                 >
                   {t.allCategoriesAtoZ || 'View A–Z'} →
                 </Link>
               </div>
 
-              <div className="grid grid-cols-1 gap-1.5">
+              <div className="grid grid-cols-1 gap-2">
                 {CATEGORIES.map((cat) => (
-                  <Link
+                  <div
                     key={cat.id}
-                    to={localePath(`/articles?category=${cat.id}`)}
-                    onClick={() => setDrawerOpen(false)}
-                    className="group flex items-center justify-between p-2.5 rounded-sm border border-editorial-border/60 hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface transition-all"
+                    className="p-3 rounded-lg border border-editorial-border/70 bg-editorial-surface-subtle space-y-2"
                   >
-                    <span className="font-display font-bold text-sm uppercase text-editorial-text group-hover:text-accent transition-colors">
-                      {cat.name}
-                    </span>
-                    <span className="text-xs font-mono text-editorial-muted group-hover:text-editorial-text group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">
-                      →
-                    </span>
-                  </Link>
+                    <Link
+                      to={localePath(`/articles?category=${cat.id}`)}
+                      onClick={() => setDrawerOpen(false)}
+                      className="group flex items-center justify-between transition-colors"
+                    >
+                      <span className="font-sans font-bold text-sm text-editorial-text group-hover:text-accent transition-colors">
+                        {getCategoryShortName(cat.id)}
+                      </span>
+                      <span className="text-xs text-editorial-muted group-hover:text-editorial-text group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">
+                        →
+                      </span>
+                    </Link>
+
+                    {/* Subcategories as clean pills */}
+                    <div className="flex flex-wrap gap-1.5 pt-0.5">
+                      {cat.subcategories.map((sub) => (
+                        <Link
+                          key={sub.id}
+                          to={localePath(`/articles?category=${cat.id}&subcategory=${sub.id}`)}
+                          onClick={() => setDrawerOpen(false)}
+                          className="px-2.5 py-0.5 text-[11px] rounded-full bg-editorial-surface border border-editorial-border/60 text-editorial-muted hover:text-editorial-text hover:border-editorial-text transition-colors font-medium"
+                        >
+                          {sub.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
 
             {/* Curated Topics */}
             {tags.length > 0 && (
-              <div className="space-y-2.5 pt-4 border-t border-editorial-border">
+              <div className="space-y-2.5 pt-4 border-t border-editorial-border font-sans">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted">
+                  <span className="text-xs font-semibold text-editorial-muted">
                     {t.topics}
                   </span>
                   <Link
                     to={localePath('/articles')}
                     onClick={() => setDrawerOpen(false)}
-                    className="text-[10px] font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline"
+                    className="text-xs font-medium text-editorial-muted hover:text-editorial-text underline"
                   >
                     All Tags
                   </Link>
                 </div>
                 <div className="flex flex-wrap gap-1.5">
-                  {tags.slice(0, 5).map((tag) => (
+                  {tags.map((tag) => (
                     <Link
                       key={tag}
                       to={localePath(`/tags/${tag}`)}
                       onClick={() => setDrawerOpen(false)}
+                      className="px-3 py-1 rounded-full text-xs font-medium bg-editorial-surface border border-editorial-border/70 hover:border-editorial-text text-editorial-text transition-colors"
                     >
-                      <Badge variant="default" className="text-[10px] uppercase font-mono">
-                        #{tag}
-                      </Badge>
+                      {formatTopicName(tag)}
                     </Link>
                   ))}
-                  {tags.length > 5 && (
-                    <Link
-                      to={localePath('/articles')}
-                      onClick={() => setDrawerOpen(false)}
-                      className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-xs border border-editorial-border text-editorial-muted hover:text-editorial-text"
-                    >
-                      +{tags.length - 5} more
-                    </Link>
-                  )}
                 </div>
               </div>
             )}
 
             {/* Pinned Language List with Safe Bottom Spacing */}
-            <div className="pt-4 pb-8 border-t border-editorial-border space-y-3">
-              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted block">
+            <div className="pt-4 pb-8 border-t border-editorial-border space-y-3 font-sans">
+              <span className="text-xs font-semibold text-editorial-muted block">
                 {t.languages}
               </span>
-              <div className="grid grid-cols-2 gap-2 text-xs font-mono">
+              <div className="grid grid-cols-2 gap-2 text-xs">
                 {siteConfig.languages.map((lang) => {
                   const targetPath = switchLanguagePath(lang.code, currentPath);
                   const isCurrent = lang.code === language.code;
@@ -349,10 +356,10 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                       key={lang.code}
                       to={targetPath}
                       onClick={() => setDrawerOpen(false)}
-                      className={`px-3 py-2 rounded-sm border transition-colors flex items-center justify-between ${
+                      className={`px-3 py-2 rounded-lg border transition-colors flex items-center justify-between font-medium ${
                         isCurrent
-                          ? 'border-editorial-text text-editorial-text font-semibold bg-editorial-surface-hover'
-                          : 'border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text'
+                          ? 'border-editorial-text text-editorial-text font-semibold bg-editorial-surface-hover shadow-xs'
+                          : 'border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface-subtle'
                       }`}
                       aria-current={isCurrent ? 'true' : undefined}
                       hrefLang={lang.code}

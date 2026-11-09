@@ -6,6 +6,7 @@ import {
   loadAllTags,
   getAvailableRealLanguages,
 } from './lib/content';
+import { getArticleCategory } from './lib/categories';
 import { LanguageRoot } from './components/LanguageRoot';
 import { Home } from './pages/Home';
 import { Articles } from './pages/Articles';
@@ -78,9 +79,23 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           if (!article) {
             throw new Response('Not Found', { status: 404 });
           }
+          const allArticles = await loadAllArticles(lang.code);
+          const articleCatId = getArticleCategory(article).category.id;
+          const relatedArticles = allArticles
+            .filter((a) => a.slug !== slug)
+            .sort((a, b) => {
+              const aSameCat = getArticleCategory(a).category.id === articleCatId;
+              const bSameCat = getArticleCategory(b).category.id === articleCatId;
+              if (aSameCat && !bSameCat) return -1;
+              if (!aSameCat && bSameCat) return 1;
+              return new Date(b.date).getTime() - new Date(a.date).getTime();
+            })
+            .slice(0, 3);
+
           const url = new URL(request.url);
           return {
             article,
+            relatedArticles,
             availableLanguages: getAvailableRealLanguages(slug),
             pathname: url.pathname,
           };

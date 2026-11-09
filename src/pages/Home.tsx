@@ -1,9 +1,10 @@
 import { useLoaderData, Link } from 'react-router-dom';
+import { DocumentTextIcon } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
 import { formatDate, calculateReadingTime } from '../lib/content';
-import { getArticleCategory } from '../lib/categories';
+import { getArticleCategory, CATEGORIES, getCategoryShortName, formatTopicName } from '../lib/categories';
 import { Seo } from '../components/Seo';
 import { Badge } from '../components/ui/badge';
 import { ArticleViewCount } from '../components/ArticleViewCount';
@@ -20,7 +21,9 @@ interface HomeLoaderData {
 }
 
 export function Home() {
-  const { articles, pathname } = useLoaderData() as HomeLoaderData;
+  const loaderData = (useLoaderData() as HomeLoaderData) || {};
+  const articles = loaderData.articles || [];
+  const pathname = loaderData.pathname || '/';
   const { language, t, localePath } = useLanguage();
 
   // Primary feature story (featured or first)
@@ -40,12 +43,18 @@ export function Home() {
         type="website"
       />
 
-      {/* 1. Giant Masthead: ART & LIFE */}
+      {/* 1. Giant Masthead: ART & LIFE (Click to browse Art & Life) */}
       <section className="pt-2">
         <div className="border-y-2 border-editorial-text py-2 sm:py-4">
-          <h1 className="font-display font-black text-[clamp(3.5rem,14vw,10.5rem)] leading-[0.88] tracking-[-0.05em] text-editorial-text uppercase text-center sm:text-start select-none">
-            Art &amp; Life
-          </h1>
+          <Link
+            to={localePath('/articles?category=art-and-culture')}
+            className="block group"
+            title="Browse Art & Life Collection"
+          >
+            <h1 className="font-display font-black text-[clamp(3.5rem,14vw,10.5rem)] leading-[0.88] tracking-[-0.05em] text-editorial-text uppercase text-center sm:text-start select-none group-hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-colors cursor-pointer">
+              Art &amp; Life
+            </h1>
+          </Link>
         </div>
 
         {/* 2. High-Contrast News Ticker Strip */}
@@ -56,6 +65,29 @@ export function Home() {
           <div className="truncate whitespace-nowrap opacity-90 text-editorial-bg">
             {t.tickerHeadline}
           </div>
+        </div>
+
+        {/* 2b. Clean Single-Line Category Quick-Nav (Short Names - Click to Go) */}
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-2.5 border-b border-editorial-border text-xs font-sans">
+          <span className="text-editorial-muted text-[11px] font-mono uppercase tracking-wider shrink-0 me-1">
+            Browse:
+          </span>
+          {CATEGORIES.map((cat) => (
+            <Link
+              key={cat.id}
+              to={localePath(`/articles?category=${cat.id}`)}
+              className="px-3 py-1 rounded-sm border border-editorial-border bg-editorial-surface hover:border-editorial-text hover:bg-editorial-surface-hover text-editorial-text font-semibold uppercase tracking-wider text-[11px] transition-all shrink-0 flex items-center gap-1 shadow-2xs"
+            >
+              <span>{getCategoryShortName(cat.id)}</span>
+              <span className="opacity-40 text-[10px]">→</span>
+            </Link>
+          ))}
+          <Link
+            to={localePath('/categories')}
+            className="px-2.5 py-1 text-editorial-muted hover:text-editorial-text underline ms-auto shrink-0 text-[11px] font-mono uppercase tracking-wider"
+          >
+            All A–Z →
+          </Link>
         </div>
       </section>
 
@@ -155,8 +187,8 @@ export function Home() {
                         loading="lazy"
                       />
                       {/* Floating Category Tag */}
-                      <span className="absolute top-2 start-2 z-10 px-2 py-0.5 text-[9px] font-mono uppercase tracking-wider bg-black/75 backdrop-blur-xs text-white rounded-xs border border-white/10 shadow-xs">
-                        {category.name}
+                      <span className="absolute top-2 start-2 z-10 px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/80 backdrop-blur-md text-white rounded-full border border-white/20 shadow-xs">
+                        {getCategoryShortName(category.id)}
                       </span>
                     </Link>
                   )}
@@ -173,7 +205,7 @@ export function Home() {
                       {article.excerpt}
                     </p>
 
-                    <div className="pt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono uppercase tracking-wider text-editorial-muted">
+                    <div className="pt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-sans text-editorial-muted">
                       <div className="flex items-center gap-1.5">
                         <div className="w-4 h-4 rounded-full bg-editorial-surface-subtle border border-editorial-border flex items-center justify-center text-[9px] font-bold text-editorial-text shrink-0">
                           {article.author.charAt(0)}
@@ -189,9 +221,9 @@ export function Home() {
                       {article.tags && article.tags.length > 0 && (
                         <span className="ltr:ml-auto rtl:mr-auto">
                           <Link to={localePath(`/tags/${article.tags[0]}`)}>
-                            <Badge variant="default" className="text-[10px] uppercase">
-                              #{article.tags[0]}
-                            </Badge>
+                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-sans font-medium bg-editorial-surface-subtle border border-editorial-border/70 text-editorial-text/80 hover:text-editorial-text hover:border-editorial-text transition-all">
+                              {formatTopicName(article.tags[0])}
+                            </span>
                           </Link>
                         </span>
                       )}
@@ -216,7 +248,7 @@ export function Home() {
           {/* Side Column: Print Magazine Issue Box */}
           <aside className="lg:col-span-4 border-t lg:border-t-0 ltr:lg:border-l rtl:lg:border-r border-editorial-border pt-6 lg:pt-0 ltr:lg:pl-8 rtl:lg:pr-8 space-y-6">
             <div className="space-y-1">
-              <span className="text-xs font-mono uppercase tracking-widest text-editorial-muted block">
+              <span className="text-xs font-sans uppercase tracking-widest text-editorial-muted block font-medium">
                 {t.printMagazine}
               </span>
               <div className="font-display font-black text-3xl sm:text-4xl text-editorial-text tracking-tight">
@@ -224,23 +256,23 @@ export function Home() {
               </div>
             </div>
 
-            {/* Stylized Magazine Cover Card */}
-            <div className="relative rounded-sm border border-editorial-border bg-neutral-950 text-white overflow-hidden p-6 aspect-[4/5] flex flex-col justify-between shadow-lg group">
+            {/* Stylized Magazine Cover Card - Bright High-Contrast Editorial Monograph */}
+            <div className="relative rounded-lg border border-editorial-border bg-neutral-950 text-white overflow-hidden p-6 aspect-[4/5] flex flex-col justify-between shadow-lg group">
               <div className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85"
+                  src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=900&q=85"
                   alt="Questo Magazine Issue 03 Cover Art"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/30 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/35 pointer-events-none" />
               </div>
 
               <div className="relative z-10 flex justify-between items-start">
-                <span className="font-mono text-xs uppercase tracking-widest bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-xs border border-white/10 text-white">
+                <span className="font-sans font-medium text-xs bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-white shadow-xs">
                   Issue 03
                 </span>
-                <span className="font-mono text-xs uppercase text-white/90 tracking-wider bg-black/40 px-2 py-0.5 rounded-xs backdrop-blur-xs">
+                <span className="font-sans font-medium text-xs text-white/90 bg-black/40 px-2.5 py-1 rounded-full backdrop-blur-md border border-white/10 shadow-xs">
                   Autumn 2026
                 </span>
               </div>
@@ -255,19 +287,43 @@ export function Home() {
               </div>
             </div>
 
-            {/* Technical Specifications Table */}
-            <div className="p-4 bg-editorial-surface border border-editorial-border rounded-sm space-y-2 text-xs font-mono">
-              <div className="text-editorial-text font-bold uppercase tracking-wider mb-2">
-                {t.printSpecsTitle}
+            {/* Editorial Specifications Document Card (Word/Docs Clean Style) */}
+            <div className="bg-editorial-surface border border-editorial-border rounded-lg overflow-hidden shadow-xs">
+              <div className="px-4 py-3 bg-editorial-surface-subtle border-b border-editorial-border flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <DocumentTextIcon className="h-4 w-4 text-editorial-text" />
+                  <span className="font-sans font-semibold text-xs text-editorial-text tracking-wide">
+                    {t.printSpecsTitle}
+                  </span>
+                </div>
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-sans font-medium bg-editorial-text/10 text-editorial-text border border-editorial-border/60">
+                  Limited Run
+                </span>
               </div>
-              <div className="text-editorial-muted">{t.printSpecsFormat}</div>
-              <div className="text-editorial-muted">{t.printSpecsPaper}</div>
-              <div className="text-editorial-muted">{t.printSpecsBinding}</div>
-              <div className="text-editorial-text font-semibold">{t.printSpecsCopies}</div>
+
+              <div className="divide-y divide-editorial-border/60 text-xs font-sans">
+                {[
+                  t.printSpecsFormat,
+                  t.printSpecsPaper,
+                  t.printSpecsBinding,
+                  t.printSpecsCopies,
+                ].map((raw, i) => {
+                  const splitIdx = raw.indexOf(':');
+                  const label = splitIdx !== -1 ? raw.slice(0, splitIdx).trim() : '';
+                  const value = splitIdx !== -1 ? raw.slice(splitIdx + 1).trim() : raw;
+                  return (
+                    <div key={i} className="px-4 py-2.5 flex items-center justify-between gap-3">
+                      <span className="text-editorial-muted font-medium shrink-0">{label}</span>
+                      <span className="text-editorial-text font-semibold text-end truncate">{value}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
 
-            <div className="pt-2 text-xs font-serif text-editorial-muted leading-relaxed">
-              Available globally in selected bookshops and galleries. Hand-printed on 120gsm recycled newsprint paper.
+            <div className="pt-2 text-xs font-sans text-editorial-muted leading-relaxed flex items-start gap-2">
+              <span className="text-editorial-text font-medium leading-none">•</span>
+              <span>Available globally in selected bookshops and galleries. Hand-printed on 120gsm recycled newsprint paper.</span>
             </div>
           </aside>
         </div>

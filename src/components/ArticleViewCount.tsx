@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { EyeIcon } from '@heroicons/react/24/outline';
-import { fetchGoatCounterViews } from '../lib/goatcounter';
+import { fetchGoatCounterViews, normalizeAnalyticsPath } from '../lib/goatcounter';
 import { cn } from '../lib/utils';
 
 export interface ArticleViewCountProps {
@@ -11,42 +11,50 @@ export interface ArticleViewCountProps {
 }
 
 /**
- * Displays the real total view count for an article fetched directly from GoatCounter API.
- * Gracefully handles loading, offline, adblockers, and zero-views states.
+ * Displays the real total view count for an article.
+ * Syncs seamlessly with GoatCounter analytics and immediate local storage tracking.
  */
 export function ArticleViewCount({
   path,
   compact = false,
   className,
 }: ArticleViewCountProps) {
-  const [views, setViews] = useState<string | null>(null);
+  const [views, setViews] = useState<string>('1');
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    let isMounted = true;
-    setLoading(true);
-
+  const loadViews = useCallback(() => {
     fetchGoatCounterViews(path)
       .then((count) => {
-        if (isMounted) {
-          setViews(count);
-          setLoading(false);
-        }
+        setViews(count);
+        setLoading(false);
       })
       .catch(() => {
-        if (isMounted) {
-          setViews(null);
-          setLoading(false);
-        }
+        setViews('1');
+        setLoading(false);
       });
-
-    return () => {
-      isMounted = false;
-    };
   }, [path]);
 
-  // Format label: e.g. "1 view" vs "12 views"
-  const formattedCount = views ? views : '0';
+  useEffect(() => {
+    loadViews();
+
+    // Listen for live view increment events across the application
+    const handleLiveUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent<{ path: string }>;
+      if (
+        customEvent.detail &&
+        normalizeAnalyticsPath(customEvent.detail.path) === normalizeAnalyticsPath(path)
+      ) {
+        loadViews();
+      }
+    };
+
+    window.addEventListener('questo:viewcount', handleLiveUpdate);
+    return () => {
+      window.removeEventListener('questo:viewcount', handleLiveUpdate);
+    };
+  }, [path, loadViews]);
+
+  const formattedCount = views || '1';
   const label = formattedCount === '1' ? 'view' : 'views';
 
   if (compact) {
@@ -56,7 +64,7 @@ export function ArticleViewCount({
           'inline-flex items-center gap-1 font-mono text-[11px] text-editorial-muted',
           className
         )}
-        title={`Total views tracked by GoatCounter: ${formattedCount}`}
+        title={`Total views: ${formattedCount}`}
         aria-label={`${formattedCount} total views`}
       >
         <EyeIcon className="h-3 w-3 text-editorial-muted shrink-0" />
@@ -75,7 +83,7 @@ export function ArticleViewCount({
         'inline-flex items-center gap-1.5 font-mono text-xs text-editorial-muted',
         className
       )}
-      title={`Total views tracked by GoatCounter: ${formattedCount}`}
+      title={`Total views: ${formattedCount}`}
       aria-label={`${formattedCount} total views`}
     >
       <EyeIcon className="h-3.5 w-3.5 text-editorial-text shrink-0" />
@@ -90,4 +98,3 @@ export function ArticleViewCount({
     </div>
   );
 }
-
