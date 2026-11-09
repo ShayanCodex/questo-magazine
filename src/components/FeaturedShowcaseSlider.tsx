@@ -10,6 +10,7 @@ import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory, getCategoryShortName } from '../lib/categories';
+import { BookmarkButton } from './BookmarkButton';
 import { cn } from '../lib/utils';
 
 export interface FeaturedShowcaseSliderProps {
@@ -144,11 +145,14 @@ export function FeaturedShowcaseSlider({
             </Link>
           </div>
 
-          {/* Slide Numeric Counter (e.g. 01 / 04) */}
-          <div className="font-sans text-xs font-medium bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/15 text-white shadow-sm flex items-center gap-2">
-            <span className="font-bold text-white">0{currentIndex + 1}</span>
-            <span className="opacity-40">/</span>
-            <span className="opacity-70">0{totalSlides}</span>
+          {/* Slide Numeric Counter (e.g. 01 / 04) & Bookmark Button */}
+          <div className="flex items-center gap-2 pointer-events-auto">
+            <BookmarkButton slug={currentArticle.slug} variant="card" />
+            <div className="font-sans text-xs font-medium bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-white/15 text-white shadow-sm flex items-center gap-2">
+              <span className="font-bold text-white">0{currentIndex + 1}</span>
+              <span className="opacity-40">/</span>
+              <span className="opacity-70">0{totalSlides}</span>
+            </div>
           </div>
         </div>
 

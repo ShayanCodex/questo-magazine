@@ -15,6 +15,12 @@ import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { Body } from '../components/Body';
 import { ArticleViewCount } from '../components/ArticleViewCount';
+import { BookmarkButton } from '../components/BookmarkButton';
+import { ArticleAudioPlayer } from '../components/ArticleAudioPlayer';
+import { ArticleTakeaways } from '../components/ArticleTakeaways';
+import { QuoteSelectionPopup } from '../components/QuoteSelectionPopup';
+import { ImageLightbox } from '../components/ImageLightbox';
+import { ArticleToc } from '../components/ArticleToc';
 import { cn } from '../lib/utils';
 
 interface ArticleLoaderData {
@@ -31,6 +37,7 @@ export function Article() {
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('base');
   const [copied, setCopied] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [lightboxImg, setLightboxImg] = useState<{ src: string; alt?: string } | null>(null);
 
   // Track document scroll progress for sticky reading indicator
   useEffect(() => {
@@ -173,91 +180,127 @@ export function Article() {
             <ArticleViewCount path={`/articles/${article.slug}`} slug={article.slug} />
           </div>
 
-          {/* Reading Assistance Toolbar: Font Size Controls & Share Link */}
-          <div className="flex items-center justify-between py-2 border-b border-editorial-border/60 text-xs font-sans">
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-sans text-editorial-muted font-medium">Text size:</span>
-              <div className="inline-flex rounded-full border border-editorial-border overflow-hidden p-0.5 bg-editorial-surface-subtle">
-                <button
-                  type="button"
-                  onClick={() => setFontSize('sm')}
-                  className={cn(
-                    'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
-                    fontSize === 'sm'
-                      ? 'bg-editorial-text text-editorial-bg shadow-xs'
-                      : 'text-editorial-muted hover:text-editorial-text'
-                  )}
-                  title="Small text"
-                >
-                  A-
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setFontSize('base')}
-                  className={cn(
-                    'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
-                    fontSize === 'base'
-                      ? 'bg-editorial-text text-editorial-bg shadow-xs'
-                      : 'text-editorial-muted hover:text-editorial-text'
-                  )}
-                  title="Default text"
-                >
-                  A
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setFontSize('lg')}
-                  className={cn(
-                    'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
-                    fontSize === 'lg'
-                      ? 'bg-editorial-text text-editorial-bg shadow-xs'
-                      : 'text-editorial-muted hover:text-editorial-text'
-                  )}
-                  title="Large text"
-                >
-                  A+
-                </button>
+          {/* Reading Assistance Toolbar: Audio Player, Font Size Controls, Bookmark & Share */}
+          <div className="flex flex-wrap items-center justify-between gap-3 py-3 border-b border-editorial-border/60 text-xs font-sans">
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Native Speech Audio Player */}
+              <ArticleAudioPlayer article={article} langCode={language.code} />
+
+              {/* Text Size Controls */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-sans text-editorial-muted font-medium">Text size:</span>
+                <div className="inline-flex rounded-full border border-editorial-border overflow-hidden p-0.5 bg-editorial-surface-subtle">
+                  <button
+                    type="button"
+                    onClick={() => setFontSize('sm')}
+                    className={cn(
+                      'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
+                      fontSize === 'sm'
+                        ? 'bg-editorial-text text-editorial-bg shadow-xs'
+                        : 'text-editorial-muted hover:text-editorial-text'
+                    )}
+                    title="Small text"
+                  >
+                    A-
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setFontSize('base')}
+                    className={cn(
+                      'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
+                      fontSize === 'base'
+                        ? 'bg-editorial-text text-editorial-bg shadow-xs'
+                        : 'text-editorial-muted hover:text-editorial-text'
+                    )}
+                    title="Default text"
+                  >
+                    A
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setFontSize('lg')}
+                    className={cn(
+                      'px-3 py-1 text-xs font-sans font-medium rounded-full cursor-pointer transition-all',
+                      fontSize === 'lg'
+                        ? 'bg-editorial-text text-editorial-bg shadow-xs'
+                        : 'text-editorial-muted hover:text-editorial-text'
+                    )}
+                    title="Large text"
+                  >
+                    A+
+                  </button>
+                </div>
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={handleCopyLink}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text font-sans text-xs font-medium transition-all cursor-pointer shadow-2xs"
-            >
-              {copied ? (
-                <CheckIcon className="h-3.5 w-3.5 text-emerald-500" />
-              ) : (
-                <ShareIcon className="h-3.5 w-3.5 text-editorial-muted" />
-              )}
-              <span>{copied ? 'Link Copied!' : 'Share Article'}</span>
-            </button>
+            <div className="flex items-center gap-2">
+              {/* Bookmark Button */}
+              <BookmarkButton slug={article.slug} variant="pill" />
+
+              {/* Share Article Link */}
+              <button
+                type="button"
+                onClick={handleCopyLink}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text font-sans text-xs font-medium transition-all cursor-pointer shadow-2xs"
+              >
+                {copied ? (
+                  <CheckIcon className="h-3.5 w-3.5 text-emerald-500" />
+                ) : (
+                  <ShareIcon className="h-3.5 w-3.5 text-editorial-muted" />
+                )}
+                <span>{copied ? 'Link Copied!' : 'Share Article'}</span>
+              </button>
+            </div>
           </div>
         </header>
 
-        {/* Feature Hero Image */}
+        {/* Feature Hero Image with Click-to-Zoom Lightbox */}
         {article.image && (
-          <div className="w-full overflow-hidden rounded-sm border border-editorial-border my-8 aspect-[16/9] sm:aspect-[21/9]">
+          <div
+            onClick={() => setLightboxImg({ src: article.image!, alt: article.imageAlt || article.title })}
+            className="w-full overflow-hidden rounded-xl border border-editorial-border my-8 aspect-[16/9] sm:aspect-[21/9] cursor-zoom-in group/img relative shadow-md"
+            title="Click to expand high-resolution photograph"
+          >
             <img
               src={article.image}
               alt={article.imageAlt || article.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover group-hover/img:scale-102 transition-transform duration-500 ease-out"
               loading="eager"
             />
+            <div className="absolute bottom-3 end-3 opacity-0 group-hover/img:opacity-100 transition-opacity bg-black/75 backdrop-blur-md text-white text-[11px] font-sans font-medium px-3 py-1 rounded-full border border-white/20 shadow-md flex items-center gap-1.5 pointer-events-none">
+              <span>Zoom Artwork</span>
+              <span>⤢</span>
+            </div>
           </div>
         )}
 
-        {/* Main Prose Content with Dynamic Font Sizing */}
-        <div
-          className={cn(
-            'pt-2 transition-all',
-            fontSize === 'sm' && 'text-sm [&_p]:text-sm [&_p]:leading-relaxed',
-            fontSize === 'base' && 'text-base sm:text-lg [&_p]:text-base sm:[&_p]:text-lg [&_p]:leading-relaxed',
-            fontSize === 'lg' && 'text-lg sm:text-xl [&_p]:text-lg sm:[&_p]:text-xl [&_p]:leading-relaxed'
-          )}
-        >
-          <Body blocks={article.body} />
+        {/* Executive Summary / Key Takeaways Box */}
+        <ArticleTakeaways article={article} />
+
+        {/* Article Body with Sticky ScrollSpy Table of Contents */}
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-12 items-start">
+          <div className="xl:col-span-8 min-w-0">
+            {/* Main Prose Content with Dynamic Font Sizing */}
+            <div
+              className={cn(
+                'pt-2 transition-all',
+                fontSize === 'sm' && 'text-sm [&_p]:text-sm [&_p]:leading-relaxed',
+                fontSize === 'base' && 'text-base sm:text-lg [&_p]:text-base sm:[&_p]:text-lg [&_p]:leading-relaxed',
+                fontSize === 'lg' && 'text-lg sm:text-xl [&_p]:text-lg sm:[&_p]:text-xl [&_p]:leading-relaxed'
+              )}
+            >
+              <Body blocks={article.body} />
+            </div>
+          </div>
+
+          {/* Desktop Table of Contents Sidebar */}
+          <div className="hidden xl:block xl:col-span-4 ps-4">
+            <ArticleToc blocks={article.body} />
+          </div>
         </div>
+
+        {/* Mobile Table of Contents Floating Pill & Sheet */}
+        <ArticleToc blocks={article.body} />
 
         {/* Article Footer */}
         <footer className="pt-8 border-t border-editorial-border space-y-8">
@@ -386,6 +429,16 @@ export function Article() {
             </div>
           </section>
         )}
+
+        {/* Interactive Text Selection Quote Sharer */}
+        <QuoteSelectionPopup author={article.author} articleTitle={article.title} />
+
+        {/* High-Resolution Architectural Image Lightbox Modal */}
+        <ImageLightbox
+          src={lightboxImg?.src || null}
+          alt={lightboxImg?.alt}
+          onClose={() => setLightboxImg(null)}
+        />
       </article>
     </>
   );

@@ -20,25 +20,35 @@ export function Body({ blocks }: BodyProps) {
               </p>
             );
 
-          case 'h2':
+          case 'h2': {
+            const headingId = block.text
+              ? block.text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')
+              : `heading-${index}`;
             return (
               <h2
                 key={index}
-                className="font-display font-bold text-2xl sm:text-[1.75rem] text-editorial-text tracking-tight pt-6 sm:pt-8"
+                id={headingId}
+                className="font-display font-bold text-2xl sm:text-[1.75rem] text-editorial-text tracking-tight pt-6 sm:pt-8 scroll-mt-24"
               >
                 {block.text}
               </h2>
             );
+          }
 
-          case 'h3':
+          case 'h3': {
+            const headingId = block.text
+              ? block.text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')
+              : `heading-${index}`;
             return (
               <h3
                 key={index}
-                className="font-display font-semibold text-xl sm:text-2xl text-editorial-text tracking-tight pt-4 sm:pt-6"
+                id={headingId}
+                className="font-display font-semibold text-xl sm:text-2xl text-editorial-text tracking-tight pt-4 sm:pt-6 scroll-mt-24"
               >
                 {block.text}
               </h3>
             );
+          }
 
           case 'ul':
             return (

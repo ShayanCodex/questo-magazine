@@ -8,9 +8,11 @@ import {
   GlobeAltIcon,
   ChevronDownIcon,
   CheckIcon,
+  BookmarkIcon,
 } from '@heroicons/react/24/outline';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
+import { useReadingList } from '../lib/reading-list';
 import { siteConfig } from '../lib/site';
 import { Button } from './ui/button';
 import {
@@ -22,6 +24,7 @@ import {
 } from './ui/sheet';
 import { SearchModal } from './SearchModal';
 import { ThemeToggle } from './ThemeToggle';
+import { ReadingListDrawer } from './ReadingListDrawer';
 import { AnalyticsTracker } from './AnalyticsTracker';
 import { CATEGORIES, getCategoryShortName, formatTopicName } from '../lib/categories';
 import { cn } from '../lib/utils';
@@ -34,11 +37,14 @@ export interface LayoutProps {
 export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [readingListOpen, setReadingListOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const lastScrollY = useRef(0);
   const langDropdownRef = useRef<HTMLDivElement>(null);
+
+  const { count: readingListCount } = useReadingList();
 
   const location = useLocation();
   const { language, t, switchLanguagePath, localePath } = useLanguage();
@@ -195,6 +201,23 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
             {/* Theme Toggle Button */}
             <ThemeToggle />
+
+            {/* Reading List Drawer Trigger Button */}
+            <button
+              type="button"
+              onClick={() => setReadingListOpen(true)}
+              className="inline-flex items-center justify-center gap-1.5 px-2.5 sm:px-3 h-9 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0 font-sans text-xs font-medium"
+              title="Saved Reading List"
+              aria-label="Open reading list"
+            >
+              <BookmarkIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text" />
+              <span className="hidden lg:inline">Saved</span>
+              {readingListCount > 0 && (
+                <span className="w-4 h-4 rounded-full bg-editorial-text text-editorial-bg text-[10px] font-bold flex items-center justify-center">
+                  {readingListCount}
+                </span>
+              )}
+            </button>
 
             {/* Interactive 1-Click Language Switcher Dropdown */}
             <div className="relative shrink-0" ref={langDropdownRef}>
@@ -411,6 +434,21 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               >
                 {t.categories || 'Categories'}
               </Link>
+              <button
+                type="button"
+                onClick={() => {
+                  setDrawerOpen(false);
+                  setReadingListOpen(true);
+                }}
+                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors text-start flex items-center justify-between cursor-pointer"
+              >
+                <span>Reading List</span>
+                {readingListCount > 0 && (
+                  <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-editorial-text text-editorial-bg font-bold">
+                    {readingListCount}
+                  </span>
+                )}
+              </button>
             </nav>
 
             {/* Editorial Categories Directory */}
@@ -536,6 +574,13 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
         onOpenChange={setSearchOpen}
         items={searchIndex}
         tags={tags}
+      />
+
+      {/* Global Offline Reading List Drawer */}
+      <ReadingListDrawer
+        open={readingListOpen}
+        onOpenChange={setReadingListOpen}
+        searchIndex={searchIndex}
       />
     </div>
   );

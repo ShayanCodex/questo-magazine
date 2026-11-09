@@ -4,6 +4,7 @@ import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory, getCategoryShortName, formatTopicName } from '../lib/categories';
 import { ArticleViewCount } from './ArticleViewCount';
+import { BookmarkButton } from './BookmarkButton';
 import { cn } from '../lib/utils';
 
 export interface ArticleListProps {
@@ -148,6 +149,11 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                       <span className="px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/75 backdrop-blur-xs text-white rounded-full border border-white/15 shadow-xs">
                         {category.name}
                       </span>
+                    </div>
+
+                    {/* Floating Bookmark Button */}
+                    <div className="absolute top-2.5 end-2.5 z-20">
+                      <BookmarkButton slug={article.slug} variant="card" />
                     </div>
 
                     {/* Floating Reading Time Badge (Rounded Full + Poppins) */}
