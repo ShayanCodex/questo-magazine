@@ -323,3 +323,36 @@ html.dark .awwwards-glow-border:hover {
   box-shadow: 0 0 25px -5px rgba(255, 255, 255, 0.08);
 }
 
+/* Infinite Editorial Marquee Animation (Awwwards 60fps GPU-Accelerated) */
+@keyframes editorial-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: editorial-marquee 36s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover,
+.animate-marquee:focus-within {
+  animation-play-state: paused;
+}
+
+[dir="rtl"] .animate-marquee {
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+

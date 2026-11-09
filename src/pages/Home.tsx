@@ -15,6 +15,7 @@ import { EditorialDisciplines } from '../components/EditorialDisciplines';
 import { EditorialFaq } from '../components/EditorialFaq';
 import { EditorialDispatch } from '../components/EditorialDispatch';
 import { CircularStamp } from '../components/CircularStamp';
+import { EditorialMarquee } from '../components/EditorialMarquee';
 
 interface HomeLoaderData {
   articles: ArticleData[];
@@ -44,65 +45,93 @@ export function Home() {
         type="website"
       />
 
-      {/* 1. Giant Masthead: QUESTO ART & LIFE with Outline Typography & Rotating Stamp (Inspired by Awwwards / Framer Reference) */}
-      <section className="pt-2">
-        <div className="border-y-2 border-editorial-text py-3 sm:py-5 flex flex-col md:flex-row items-center justify-between gap-4">
+      {/* 1. Giant Awwwards Masthead: QUESTO ART & LIFE with Editorial Top Rail & Rotating Stamp */}
+      <section className="pt-1">
+        {/* Top Editorial Metadata Ledger Line */}
+        <div className="flex items-center justify-between py-2 border-b border-editorial-border text-[11px] font-sans font-medium uppercase tracking-wider text-editorial-muted">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="text-editorial-text font-semibold">Issue 03 / 2026</span>
+            <span className="hidden sm:inline opacity-30">•</span>
+            <span className="hidden sm:inline">Autumn Print Monograph</span>
+          </div>
+          <div className="hidden lg:block text-editorial-muted/80 tracking-widest text-[10px]">
+            International Journal of Architecture, Art &amp; Functional Design
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-editorial-text font-semibold">Global Edition</span>
+            <span className="opacity-30">•</span>
+            <span>Est. 2024</span>
+          </div>
+        </div>
+
+        {/* Masthead Main Row: Monumental Typography + Interactive Circular Stamp */}
+        <div className="border-b-2 border-editorial-text py-4 sm:py-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <Link
             to={localePath('/articles?category=art-and-culture')}
             className="block group flex-1 w-full"
             title="Browse Art & Life Collection"
           >
-            <div className="select-none flex flex-col items-center sm:items-start leading-none">
-              <span className="font-display font-black text-[clamp(2.8rem,9vw,6.8rem)] leading-[0.88] tracking-[-0.05em] text-editorial-text uppercase group-hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-colors">
-                Questo
-              </span>
+            <div className="select-none flex flex-col items-center sm:items-start leading-none space-y-1">
+              <div className="flex items-baseline gap-3 sm:gap-4">
+                <span className="font-display font-black text-[clamp(2.8rem,9vw,6.8rem)] leading-[0.88] tracking-[-0.05em] text-editorial-text uppercase group-hover:text-accent transition-colors">
+                  Questo
+                </span>
+                <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-full border border-editorial-border bg-editorial-surface-subtle text-editorial-muted tracking-wider uppercase">
+                  Vol. 03
+                </span>
+              </div>
               <span
-                className="font-display font-black text-[clamp(2.4rem,7.5vw,5.8rem)] leading-[0.9] tracking-[-0.04em] uppercase text-transparent transition-all"
+                className="font-display font-black text-[clamp(2.4rem,7.5vw,5.8rem)] leading-[0.9] tracking-[-0.04em] uppercase text-transparent group-hover:text-editorial-text/15 transition-all duration-300"
                 style={{
                   WebkitTextStroke: '2px var(--color-editorial-text, currentColor)',
                 }}
               >
                 Art &amp; Life
               </span>
+              <p className="font-serif text-editorial-muted text-xs sm:text-sm pt-2 tracking-normal font-normal max-w-md hidden sm:block">
+                A quarterly review exploring architectural restraint, monumental mass, and minimalist digital craftsmanship.
+              </p>
             </div>
           </Link>
 
-          {/* Rotating Circular Stamp Badge */}
-          <div className="hidden md:flex shrink-0 items-center justify-center pe-2">
-            <CircularStamp />
+          {/* Interactive Rotating Circular Stamp Badge */}
+          <div className="flex shrink-0 items-center justify-center pe-2">
+            <Link
+              to={localePath('/articles?category=art-and-culture')}
+              className="block transition-transform duration-300 hover:scale-105"
+              title="Explore Autumn 2026 Issue"
+            >
+              <CircularStamp />
+            </Link>
           </div>
         </div>
 
-        {/* 2. High-Contrast News Ticker Strip */}
-        <div className="bg-editorial-text text-editorial-bg px-4 py-2 flex items-center gap-4 text-xs font-mono uppercase tracking-wider overflow-hidden">
-          <span className="font-bold text-editorial-bg shrink-0">
-            {t.newsTicker}
-          </span>
-          <div className="truncate whitespace-nowrap opacity-90 text-editorial-bg">
-            {t.tickerHeadline}
-          </div>
-        </div>
+        {/* 2. High-Contrast Infinite Smooth Scrolling Marquee (Awwwards Live Ticker) */}
+        <EditorialMarquee articles={articles} />
 
         {/* 2b. Clean Single-Line Category Quick-Nav (Short Names - Click to Go in Poppins) */}
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-2.5 border-b border-editorial-border text-xs font-sans">
-          <span className="text-editorial-muted text-xs font-sans font-medium shrink-0 me-1">
-            Browse:
-          </span>
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-3 border-b border-editorial-border text-xs font-sans">
+          <div className="flex items-center gap-1.5 text-editorial-text font-bold text-xs shrink-0 me-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-editorial-text" />
+            <span>Browse:</span>
+          </div>
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.id}
               to={localePath(`/articles?category=${cat.id}`)}
-              className="px-3.5 py-1 rounded-full border border-editorial-border bg-editorial-surface hover:border-editorial-text hover:bg-editorial-surface-hover text-editorial-text font-medium text-xs transition-all shrink-0 flex items-center gap-1 shadow-2xs"
+              className="px-3.5 py-1.5 rounded-full border border-editorial-border bg-editorial-surface hover:border-editorial-text hover:bg-editorial-text hover:text-editorial-bg text-editorial-text font-medium text-xs transition-all shrink-0 flex items-center gap-1.5 shadow-2xs group/cat"
             >
               <span>{getCategoryShortName(cat.id)}</span>
-              <span className="opacity-40 text-[10px]">→</span>
+              <span className="opacity-40 text-[10px] group-hover/cat:translate-x-0.5 transition-transform">→</span>
             </Link>
           ))}
           <Link
             to={localePath('/categories')}
-            className="px-3 py-1 rounded-full text-editorial-muted hover:text-editorial-text border border-editorial-border/60 hover:border-editorial-text ms-auto shrink-0 text-xs font-medium transition-colors"
+            className="px-4 py-1.5 rounded-full text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border hover:border-editorial-text ms-auto shrink-0 text-xs font-medium transition-all flex items-center gap-1"
           >
-            All A–Z →
+            <span>All Categories A–Z</span>
+            <span>→</span>
           </Link>
         </div>
       </section>
