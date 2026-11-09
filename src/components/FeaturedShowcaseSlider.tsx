@@ -121,10 +121,9 @@ export function FeaturedShowcaseSlider({
                 )}
                 loading={idx === 0 ? 'eager' : 'lazy'}
               />
-              {/* Multi-layer cinematic vignette overlays */}
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/60 to-black/40 pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/90 via-neutral-950/40 to-transparent pointer-events-none" />
-              <div className="absolute inset-0 bg-radial from-transparent via-black/20 to-black/70 pointer-events-none" />
+              {/* Focused directional gradients: Leaves the upper 65%+ in 100% full vibrant color and brightness */}
+              <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/50 via-black/20 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-black/85 via-black/40 to-transparent pointer-events-none" />
             </div>
           );
         })}
@@ -156,7 +155,7 @@ export function FeaturedShowcaseSlider({
         {/* Foreground Content Card: Oversized Editorial Type */}
         <div className="absolute bottom-14 sm:bottom-16 start-6 sm:start-12 end-6 sm:end-12 z-20 space-y-4 max-w-3xl">
           {/* Metadata Row */}
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-wider text-white/80">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-wider text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
             <Link
               to={localePath(`/articles?category=${category.id}`)}
               className="text-white font-bold hover:underline transition-colors pointer-events-auto"
@@ -165,7 +164,7 @@ export function FeaturedShowcaseSlider({
             </Link>
             {subcategory && (
               <>
-                <span className="opacity-40">/</span>
+                <span className="opacity-50">/</span>
                 <Link
                   to={localePath(`/articles?category=${category.id}&subcategory=${subcategory.id}`)}
                   className="hover:underline transition-colors pointer-events-auto"
@@ -174,9 +173,9 @@ export function FeaturedShowcaseSlider({
                 </Link>
               </>
             )}
-            <span className="opacity-40">•</span>
+            <span className="opacity-50">•</span>
             <span>{formattedDate}</span>
-            <span className="opacity-40">•</span>
+            <span className="opacity-50">•</span>
             <span className="flex items-center gap-1">
               <ClockIcon className="h-3 w-3" />
               <span>{readingTime}</span>
@@ -184,7 +183,7 @@ export function FeaturedShowcaseSlider({
           </div>
 
           {/* Monumental Headline */}
-          <h2 className="font-display font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter text-white drop-shadow-md leading-[1.05]">
+          <h2 className="font-display font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)] leading-[1.05]">
             <Link
               to={articleUrl}
               className="hover:text-neutral-200 transition-colors focus-visible:outline-none"
@@ -194,7 +193,7 @@ export function FeaturedShowcaseSlider({
           </h2>
 
           {/* Excerpt */}
-          <p className="font-serif text-sm sm:text-base lg:text-lg text-white/90 line-clamp-2 leading-relaxed max-w-2xl drop-shadow-xs">
+          <p className="font-serif text-sm sm:text-base lg:text-lg text-white/95 line-clamp-2 leading-relaxed max-w-2xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.85)]">
             {currentArticle.excerpt}
           </p>
 

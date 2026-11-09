@@ -8,8 +8,8 @@
     "craft",
     "engineering"
   ],
-  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Minimalist architectural perspective with crisp geometric shadows",
+  "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "[ar] Minimalist architectural perspective with crisp geometric light and spiral geometry",
   "body": [
     {
       "type": "p",
@@ -25,7 +25,5 @@
       "text": "[ar] By generating every permutation of language and route ahead of time, we achieve absolute predictability."
     }
   ],
-  "sourceHash": "faf87086c35ea11823c378fdcafa67836fea7b30",
-  "category": "engineering-and-technology",
-  "subcategory": "system-architecture"
+  "sourceHash": "8dbc8006b67b71be0a868834893e2cc645d6301f"
 }
