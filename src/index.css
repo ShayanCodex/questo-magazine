@@ -191,3 +191,67 @@
 .article-row {
   transition: opacity 180ms ease;
 }
+
+/* ==========================================================================
+   Circular Theme Reveal Animation (Originating from Left Top Corner)
+   Expands dynamically to cover all screen elements (100vw, 100vh)
+   ========================================================================== */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 99999;
+  animation: circle-grow-left-top 0.7s ease-in-out;
+}
+
+@keyframes circle-grow-left-top {
+  0% {
+    clip-path: circle(0% at 0% 0%);
+  }
+  100% {
+    clip-path: circle(220% at 0% 0%);
+  }
+}
+
+/* Fallback circular animation overlay elements */
+.darkCircle,
+.lightCircle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99999;
+  clip-path: circle(0% at 0% 0%);
+}
+
+.darkCircle {
+  background-color: #0D0D0C;
+}
+
+.lightCircle {
+  background-color: #FFFFFF;
+}
+
+.darkCircle.grow,
+.lightCircle.grow {
+  animation: circle-grow-left-top 0.7s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-new(root),
+  .darkCircle.grow,
+  .lightCircle.grow {
+    animation: none !important;
+  }
+}
+
