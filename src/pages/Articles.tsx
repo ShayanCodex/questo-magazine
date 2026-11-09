@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
+import { useState, useMemo, useRef, useCallback } from 'react';
 import { useLoaderData, useSearchParams } from 'react-router-dom';
 import {
   MagnifyingGlassIcon,
@@ -9,7 +9,6 @@ import {
   TagIcon,
   DocumentTextIcon,
 } from '@heroicons/react/24/outline';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
@@ -56,10 +55,7 @@ export function Articles() {
     isNaN(initialPage) || initialPage < 1 ? 1 : initialPage
   );
 
-  const topicSliderRef = useRef<HTMLDivElement>(null);
   const articleSectionRef = useRef<HTMLElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
 
   // Sync state to URL search parameters
   const syncParams = useCallback(
@@ -75,55 +71,10 @@ export function Articles() {
     [setSearchParams]
   );
 
-  const checkTopicScroll = () => {
-    if (!topicSliderRef.current) return;
-    const { scrollLeft, scrollWidth, clientWidth } = topicSliderRef.current;
-    const maxScroll = scrollWidth - clientWidth;
-    if (maxScroll <= 0) {
-      setCanScrollLeft(false);
-      setCanScrollRight(false);
-      return;
-    }
-    const current = Math.abs(scrollLeft);
-    setCanScrollLeft(current > 4);
-    setCanScrollRight(current < maxScroll - 4);
-  };
-
-  useEffect(() => {
-    checkTopicScroll();
-    const el = topicSliderRef.current;
-    if (el) {
-      el.addEventListener('scroll', checkTopicScroll);
-      window.addEventListener('resize', checkTopicScroll);
-      return () => {
-        el.removeEventListener('scroll', checkTopicScroll);
-        window.removeEventListener('resize', checkTopicScroll);
-      };
-    }
-  }, [articles]);
-
-  const slideTopics = (direction: 'left' | 'right') => {
-    if (!topicSliderRef.current) return;
-    const scrollAmount = 200;
-    const multiplier = direction === 'left' ? -1 : 1;
-    const delta = isRtl ? -multiplier * scrollAmount : multiplier * scrollAmount;
-    topicSliderRef.current.scrollBy({ left: delta, behavior: 'smooth' });
-    setTimeout(checkTopicScroll, 250);
-  };
-
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
     { label: t.articles },
   ];
-
-  // Extract all unique tags
-  const allTags = useMemo(() => {
-    const tagSet = new Set<string>();
-    articles.forEach((a) => {
-      a.tags?.forEach((tItem) => tagSet.add(tItem));
-    });
-    return Array.from(tagSet).sort();
-  }, [articles]);
 
   // Compute live article counts per category and subcategory
   const categoryCounts = useMemo(() => {
@@ -291,115 +242,14 @@ export function Articles() {
         </div>
       </header>
 
-      {/* Advanced In-Page Search, Categories & Subcategories Filter Toolbar */}
-      <section className="space-y-4 bg-editorial-surface border border-editorial-border p-4 sm:p-5 rounded-sm shadow-xs">
-        {/* Row 1: Primary Categories Strip */}
-        <div className="space-y-2 pb-2">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted flex items-center gap-1.5 font-medium">
-              <FolderIcon className="h-4 w-4 text-editorial-text" />
-              <span>{t.categories || 'Categories'}:</span>
-            </span>
-            {selectedCategory && (
-              <button
-                type="button"
-                onClick={() => handleSelectCategory(null)}
-                className="text-[11px] font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text cursor-pointer underline"
-              >
-                {t.allCategories || 'View all categories'}
-              </button>
-            )}
-          </div>
-
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
-            <button
-              type="button"
-              onClick={() => handleSelectCategory(null)}
-              className={cn(
-                'px-3.5 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
-                selectedCategory === null
-                  ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                  : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
-              )}
-            >
-              <span>{t.allCategories || 'All Categories'}</span>
-              <span className="opacity-70 text-[10px]">({articles.length})</span>
-            </button>
-            {CATEGORIES.map((cat) => {
-              const count = categoryCounts.catMap.get(cat.id) || 0;
-              const isSelected = selectedCategory === cat.id;
-
-              return (
-                <button
-                  key={cat.id}
-                  type="button"
-                  onClick={() => handleSelectCategory(isSelected ? null : cat.id)}
-                  className={cn(
-                    'px-3.5 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
-                    isSelected
-                      ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                      : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
-                  )}
-                >
-                  <span>{cat.name}</span>
-                  {count > 0 && <span className="opacity-70 text-[10px]">({count})</span>}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Row 2: Subcategories Filter (Revealed when a category is selected) */}
-        {activeCategoryDef && (
-          <div className="pt-3 border-t border-editorial-border/60 space-y-2">
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-editorial-muted">
-              <span>{activeCategoryDef.name} {t.subcategories || 'Subcategories'}:</span>
-            </div>
-
-            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-              <button
-                type="button"
-                onClick={() => handleSelectSubcategory(null)}
-                className={cn(
-                  'px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0',
-                  selectedSubcategory === null
-                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                    : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface-subtle'
-                )}
-              >
-                All {activeCategoryDef.name}
-              </button>
-              {activeCategoryDef.subcategories.map((sub) => {
-                const count = categoryCounts.subMap.get(`${activeCategoryDef.id}:${sub.id}`) || 0;
-                const isSelected = selectedSubcategory === sub.id;
-
-                return (
-                  <button
-                    key={sub.id}
-                    type="button"
-                    onClick={() => handleSelectSubcategory(sub.id)}
-                    className={cn(
-                      'px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0 flex items-center gap-1',
-                      isSelected
-                        ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                        : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
-                    )}
-                  >
-                    <span>{sub.name}</span>
-                    {count > 0 && <span className="opacity-60 text-[10px]">({count})</span>}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
-        {/* Row 3: Search Input + Live Auto-complete Suggestions + Sort Selector */}
-        <div className="pt-3 border-t border-editorial-border/60 flex flex-col md:flex-row items-stretch md:items-center gap-3">
-          {/* Live Search Input with Suggestions Dropdown */}
+      {/* Sleek Awwwards-Level Search & Filter Section */}
+      <section className="space-y-4">
+        {/* Row 1: Compact Search Input + Sort Controls */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+          {/* Real-Time Live Search Input with Dynamic Suggestions Dropdown */}
           <div className="group relative flex-1">
-            <div className="flex items-center bg-editorial-surface border border-editorial-border focus-within:border-editorial-text focus-within:ring-1 focus-within:ring-editorial-text/20 rounded-sm transition-all">
-              <MagnifyingGlassIcon className="h-4.5 w-4.5 text-editorial-muted group-focus-within:text-editorial-text transition-colors absolute start-3 pointer-events-none" />
+            <div className="flex items-center bg-editorial-surface border border-editorial-border focus-within:border-editorial-text focus-within:ring-1 focus-within:ring-editorial-text/20 rounded-sm transition-all h-11">
+              <MagnifyingGlassIcon className="h-4.5 w-4.5 text-editorial-muted group-focus-within:text-editorial-text transition-colors absolute start-3.5 pointer-events-none" />
               <input
                 type="text"
                 value={searchQuery}
@@ -411,8 +261,8 @@ export function Articles() {
                   setCurrentPage(1);
                   syncParams(selectedCategory, selectedSubcategory, selectedTag, e.target.value, 1);
                 }}
-                placeholder={t.searchPlaceholder || 'Search articles, categories, or keywords...'}
-                className="w-full bg-transparent ps-10 pe-10 py-2.5 font-sans text-sm sm:text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
+                placeholder={t.searchPlaceholder || 'Search articles, topics, or categories...'}
+                className="w-full bg-transparent ps-11 pe-10 py-2.5 font-sans text-sm sm:text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
                 aria-label={t.search}
               />
               {searchQuery && (
@@ -423,7 +273,7 @@ export function Articles() {
                     setCurrentPage(1);
                     syncParams(selectedCategory, selectedSubcategory, selectedTag, '', 1);
                   }}
-                  className="absolute end-2.5 p-1 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
+                  className="absolute end-3 p-1 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
                   aria-label={t.clearSearch}
                 >
                   <XMarkIcon className="h-4 w-4" />
@@ -431,8 +281,8 @@ export function Articles() {
               )}
             </div>
 
-            {/* Smart Search Suggestions Dropdown with Sections: Categories, Subcategories, Topics & #Tags */}
-            {showSuggestions && structuredSuggestions.total > 0 && (
+            {/* Smart Search Suggestions Dropdown: Only shown when user has typed (never shows beforehand) */}
+            {showSuggestions && searchQuery.trim().length >= 1 && structuredSuggestions.total > 0 && (
               <div
                 className="absolute top-full start-0 end-0 mt-1.5 z-40 bg-editorial-surface border border-editorial-border rounded-sm shadow-2xl p-3.5 space-y-3 max-h-80 overflow-y-auto custom-scrollbar"
                 onMouseDown={(e) => e.preventDefault()}
@@ -480,7 +330,7 @@ export function Articles() {
                           key={i}
                           type="button"
                           onClick={() => handleApplySuggestion(sug)}
-                          className="px-2.5 py-0.5 text-xs font-mono rounded-xs border border-editorial-border hover:border-editorial-text bg-editorial-surface hover:bg-editorial-surface-hover text-editorial-text transition-colors cursor-pointer"
+                          className="px-2.5 py-1 text-xs font-mono rounded-xs border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle hover:bg-editorial-surface text-editorial-text transition-colors cursor-pointer flex items-center gap-1.5"
                         >
                           <span>{sug.label}</span>
                         </button>
@@ -539,8 +389,8 @@ export function Articles() {
             )}
           </div>
 
-          {/* Sort Selector using Theme Colors */}
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider shrink-0">
+          {/* Sort Selector: Newest | Oldest */}
+          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider shrink-0 self-end sm:self-center">
             <span className="text-editorial-muted flex items-center gap-1.5 font-medium">
               <AdjustmentsHorizontalIcon className="h-4 w-4 text-editorial-text" />
               <span>{t.sortBy}:</span>
@@ -580,85 +430,92 @@ export function Articles() {
           </div>
         </div>
 
-        {/* Row 4: Topic / Tag Filter Pills with Click-to-Slide Arrows */}
-        {allTags.length > 0 && (
-          <div className="relative flex items-center pt-3 border-t border-editorial-border/60 gap-1.5">
-            {/* Left Slide Arrow */}
-            <button
-              type="button"
-              onClick={() => slideTopics('left')}
-              disabled={!canScrollLeft}
-              className={cn(
-                'shrink-0 p-1.5 rounded-sm bg-editorial-surface border border-editorial-border transition-all cursor-pointer me-1',
-                canScrollLeft
-                  ? 'text-editorial-text hover:border-editorial-text hover:text-editorial-text shadow-2xs opacity-100'
-                  : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
-              )}
-              aria-label="Slide topics left"
-            >
-              <ChevronLeftIcon className="h-4 w-4" />
-            </button>
+        {/* Minimalist Editorial Category Filter Strip */}
+        <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto no-scrollbar py-2 border-b border-editorial-border">
+          <button
+            type="button"
+            onClick={() => handleSelectCategory(null)}
+            className={cn(
+              'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0',
+              selectedCategory === null
+                ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
+                : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
+            )}
+          >
+            <span>{t.allCategories || 'All Categories'}</span>
+            <span className="opacity-70 text-[10px] ms-1">({articles.length})</span>
+          </button>
 
-            {/* Scrollable Track */}
-            <div
-              ref={topicSliderRef}
-              className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth flex-1 py-1"
-            >
+          {CATEGORIES.map((cat) => {
+            const count = categoryCounts.catMap.get(cat.id) || 0;
+            const isSelected = selectedCategory === cat.id;
+
+            return (
               <button
+                key={cat.id}
                 type="button"
-                onClick={() => handleSelectTag(null)}
+                onClick={() => handleSelectCategory(isSelected ? null : cat.id)}
                 className={cn(
-                  'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
-                  selectedTag === null
-                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                    : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
+                  'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
+                  isSelected
+                    ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
+                    : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
                 )}
               >
-                {t.allTopics} ({articles.length})
+                <span>{cat.name}</span>
+                {count > 0 && <span className="opacity-70 text-[10px]">({count})</span>}
               </button>
-              {allTags.map((tag) => {
-                const count = articles.filter((a) => a.tags?.includes(tag)).length;
-                return (
-                  <button
-                    key={tag}
-                    type="button"
-                    onClick={() => handleSelectTag(tag)}
-                    className={cn(
-                      'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
-                      selectedTag === tag
-                        ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                        : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
-                    )}
-                  >
-                    #{tag} ({count})
-                  </button>
-                );
-              })}
-            </div>
+            );
+          })}
+        </div>
 
-            {/* Right Slide Arrow */}
+        {/* Dynamic Subcategories (Revealed ONLY when a category is selected) */}
+        {activeCategoryDef && (
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+            <span className="text-[11px] font-mono uppercase tracking-wider text-editorial-muted shrink-0">
+              {activeCategoryDef.name}:
+            </span>
             <button
               type="button"
-              onClick={() => slideTopics('right')}
-              disabled={!canScrollRight}
+              onClick={() => handleSelectSubcategory(null)}
               className={cn(
-                'shrink-0 p-1.5 rounded-sm bg-editorial-surface border border-editorial-border transition-all cursor-pointer ms-1',
-                canScrollRight
-                  ? 'text-editorial-text hover:border-editorial-text hover:text-editorial-text shadow-2xs opacity-100'
-                  : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
+                'px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0',
+                selectedSubcategory === null
+                  ? 'bg-editorial-text text-editorial-bg font-semibold'
+                  : 'text-editorial-muted hover:text-editorial-text border border-editorial-border'
               )}
-              aria-label="Slide topics right"
             >
-              <ChevronRightIcon className="h-4 w-4" />
+              All
             </button>
+            {activeCategoryDef.subcategories.map((sub) => {
+              const count = categoryCounts.subMap.get(`${activeCategoryDef.id}:${sub.id}`) || 0;
+              const isSelected = selectedSubcategory === sub.id;
+
+              return (
+                <button
+                  key={sub.id}
+                  type="button"
+                  onClick={() => handleSelectSubcategory(sub.id)}
+                  className={cn(
+                    'px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider rounded-xs transition-all cursor-pointer shrink-0 flex items-center gap-1',
+                    isSelected
+                      ? 'bg-editorial-text text-editorial-bg font-semibold'
+                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border'
+                  )}
+                >
+                  <span>{sub.name}</span>
+                  {count > 0 && <span className="opacity-60 text-[10px]">({count})</span>}
+                </button>
+              );
+            })}
           </div>
         )}
 
-        {/* Row 5: Active Filters Removable Chips & 1-Click Clear */}
+        {/* Active Filters Removable Chips & 1-Click Clear (Shown ONLY when filters are active) */}
         {hasActiveFilters && (
-          <div className="flex flex-wrap items-center gap-2 pt-3 border-t border-editorial-border/60 text-xs font-mono">
+          <div className="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono">
             <span className="text-editorial-muted text-[11px] uppercase tracking-wider">
-              {t.activeFilters || 'Active Filters'}:
+              {t.activeFilters || 'Active'}:
             </span>
             {selectedCategory && (
               <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-xs bg-editorial-surface-subtle border border-editorial-border text-editorial-text">
@@ -724,7 +581,7 @@ export function Articles() {
               onClick={handleResetFilters}
               className="text-editorial-muted hover:text-editorial-text underline cursor-pointer text-[11px] uppercase tracking-wider ms-auto"
             >
-              {t.clearAllFilters || 'Clear all filters'}
+              {t.clearAllFilters || 'Clear all'}
             </button>
           </div>
         )}

@@ -3,8 +3,12 @@ import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
 import { formatDate, calculateReadingTime } from '../lib/content';
+import { getArticleCategory } from '../lib/categories';
 import { Seo } from '../components/Seo';
 import { Badge } from '../components/ui/badge';
+import { ArticleViewCount } from '../components/ArticleViewCount';
+import { FeaturedShowcaseSlider } from '../components/FeaturedShowcaseSlider';
+import { CinematicScrollVideo } from '../components/CinematicScrollVideo';
 import { ManifestoBanner } from '../components/ManifestoBanner';
 import { EditorialDisciplines } from '../components/EditorialDisciplines';
 import { EditorialFaq } from '../components/EditorialFaq';
@@ -55,12 +59,18 @@ export function Home() {
         </div>
       </section>
 
-      {/* 3. Lead Hero Feature Story */}
+      {/* 3. Awwwards Featured Showcase Slider (Latest Blogs & Breaking News) */}
+      <FeaturedShowcaseSlider articles={articles} />
+
+      {/* 4. Lead Hero Feature Story */}
       {heroArticle && (
-        <section className="space-y-6 pt-2">
+        <section className="space-y-6 pt-4 border-t border-editorial-border">
           {/* Two-Column Lead Header */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start border-b border-editorial-border pb-8">
             <div className="lg:col-span-6">
+              <span className="text-xs font-mono uppercase tracking-widest text-editorial-muted block mb-2 font-medium">
+                Monograph of the Month
+              </span>
               <h2 className="font-display font-black text-[clamp(2.5rem,5.5vw,4.75rem)] leading-[0.98] tracking-tight uppercase text-editorial-text">
                 <Link
                   to={localePath(`/articles/${heroArticle.slug}`)}
@@ -85,6 +95,8 @@ export function Home() {
                 <span>{heroDate}</span>
                 <span>•</span>
                 <span>{heroReadingTime}</span>
+                <span>•</span>
+                <ArticleViewCount path={`/articles/${heroArticle.slug}`} slug={heroArticle.slug} compact />
                 {heroArticle.tags && heroArticle.tags.length > 0 && (
                   <span className="ltr:ml-auto rtl:mr-auto">
                     <Link to={localePath(`/tags/${heroArticle.tags[0]}`)}>
@@ -100,21 +112,22 @@ export function Home() {
 
           {/* Full-Width Feature Hero Image */}
           {heroArticle.image && (
-            <div className="w-full overflow-hidden rounded-sm border border-editorial-border group relative aspect-[16/9] sm:aspect-[21/9]">
+            <div className="w-full overflow-hidden rounded-sm border border-editorial-border group relative aspect-[16/9] sm:aspect-[21/9] shadow-lg">
               <Link to={localePath(`/articles/${heroArticle.slug}`)} className="block w-full h-full">
                 <img
                   src={heroArticle.image}
                   alt={heroArticle.imageAlt || heroArticle.title}
-                  className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                   loading="eager"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity" />
               </Link>
             </div>
           )}
         </section>
       )}
 
-      {/* 4. Secondary Multi-Column Editorial Section */}
+      {/* 5. Secondary Multi-Column Editorial Section */}
       <section className="pt-6 border-t border-editorial-border">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Main Column: Secondary Stories with artwork thumbnails */}
@@ -122,17 +135,18 @@ export function Home() {
             {secondaryArticles.slice(0, 4).map((article) => {
               const formattedDate = formatDate(article.date, language.code);
               const readingTime = calculateReadingTime(article, t.minRead);
+              const { category } = getArticleCategory(article);
 
               return (
                 <article
                   key={article.slug}
                   className="py-6 sm:py-8 group flex flex-col sm:flex-row gap-6 items-start"
                 >
-                  {/* Thumbnail Artwork */}
+                  {/* Thumbnail Artwork with Badges */}
                   {article.image && (
                     <Link
                       to={localePath(`/articles/${article.slug}`)}
-                      className="shrink-0 w-full sm:w-44 h-44 sm:h-36 overflow-hidden rounded-sm border border-editorial-border bg-editorial-surface block"
+                      className="shrink-0 w-full sm:w-48 h-48 sm:h-36 overflow-hidden rounded-sm border border-editorial-border bg-editorial-surface block relative shadow-xs group/img"
                     >
                       <img
                         src={article.image}
@@ -140,6 +154,10 @@ export function Home() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                         loading="lazy"
                       />
+                      {/* Floating Category Tag */}
+                      <span className="absolute top-2 start-2 z-10 px-2 py-0.5 text-[9px] font-mono uppercase tracking-wider bg-black/75 backdrop-blur-xs text-white rounded-xs border border-white/10 shadow-xs">
+                        {category.name}
+                      </span>
                     </Link>
                   )}
 
@@ -156,18 +174,23 @@ export function Home() {
                     </p>
 
                     <div className="pt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono uppercase tracking-wider text-editorial-muted">
-                      <span>
-                        <strong className="text-editorial-text font-semibold">{t.textBy}:</strong> {article.author}
-                      </span>
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-4 h-4 rounded-full bg-editorial-surface-subtle border border-editorial-border flex items-center justify-center text-[9px] font-bold text-editorial-text shrink-0">
+                          {article.author.charAt(0)}
+                        </div>
+                        <span className="text-editorial-text font-medium">{article.author}</span>
+                      </div>
                       <span>•</span>
                       <span>{formattedDate}</span>
                       <span>•</span>
                       <span>{readingTime}</span>
+                      <span>•</span>
+                      <ArticleViewCount path={`/articles/${article.slug}`} slug={article.slug} compact />
                       {article.tags && article.tags.length > 0 && (
                         <span className="ltr:ml-auto rtl:mr-auto">
                           <Link to={localePath(`/tags/${article.tags[0]}`)}>
                             <Badge variant="default" className="text-[10px] uppercase">
-                              {article.tags[0]}
+                              #{article.tags[0]}
                             </Badge>
                           </Link>
                         </span>
@@ -190,7 +213,7 @@ export function Home() {
             </div>
           </div>
 
-          {/* Side Column: Print Magazine Issue Box (Matches Reference Image) */}
+          {/* Side Column: Print Magazine Issue Box */}
           <aside className="lg:col-span-4 border-t lg:border-t-0 ltr:lg:border-l rtl:lg:border-r border-editorial-border pt-6 lg:pt-0 ltr:lg:pl-8 rtl:lg:pr-8 space-y-6">
             <div className="space-y-1">
               <span className="text-xs font-mono uppercase tracking-widest text-editorial-muted block">
@@ -205,12 +228,12 @@ export function Home() {
             <div className="relative rounded-sm border border-editorial-border bg-neutral-950 text-white overflow-hidden p-6 aspect-[4/5] flex flex-col justify-between shadow-lg group">
               <div className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=85"
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85"
                   alt="Questo Magazine Issue 03 Cover Art"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/30 pointer-events-none" />
               </div>
 
               <div className="relative z-10 flex justify-between items-start">
@@ -250,16 +273,19 @@ export function Home() {
         </div>
       </section>
 
-      {/* 5. Editorial Disciplines & Pillars */}
+      {/* 6. Signature Awwwards Scroll-Driven Expanding Video Animation */}
+      <CinematicScrollVideo />
+
+      {/* 7. Editorial Disciplines & Pillars */}
       <EditorialDisciplines />
 
-      {/* 6. Editorial Manifesto Banner */}
+      {/* 8. Editorial Manifesto Banner */}
       <ManifestoBanner />
 
-      {/* 7. Editorial FAQ & Inquiries */}
+      {/* 9. Editorial FAQ & Inquiries */}
       <EditorialFaq />
 
-      {/* 8. The Weekly Sunday Dispatch */}
+      {/* 10. The Weekly Sunday Dispatch with Editorial Background Image */}
       <EditorialDispatch />
     </div>
   );

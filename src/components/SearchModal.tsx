@@ -289,8 +289,8 @@ export function SearchModal({
             </kbd>
           </div>
 
-          {/* Smart Live Suggestions Strip with Sections: Categories, Subcategories, Topics & #Tags */}
-          {liveStructured.total > 0 && (
+          {/* Smart Live Suggestions Strip with Sections: Only shows when typing (never beforehand) */}
+          {query.trim().length >= 1 && liveStructured.total > 0 && (
             <div className="px-3.5 py-2 border-b border-editorial-border/60 bg-editorial-surface-subtle flex flex-col gap-1.5 text-xs font-mono">
               {/* Category Suggestions */}
               {liveStructured.categories.length > 0 && (

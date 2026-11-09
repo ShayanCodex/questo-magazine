@@ -54,10 +54,15 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
             />
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start pointer-events-none">
-              {/* Meta column: date, reading time & real-time GoatCounter views */}
-              <div className="md:col-span-3 text-xs font-mono uppercase tracking-wider text-editorial-muted flex flex-row md:flex-col justify-between md:justify-start gap-1">
+              {/* Meta column: Author avatar, date, and real-time GoatCounter views */}
+              <div className="md:col-span-3 text-xs font-mono uppercase tracking-wider text-editorial-muted flex flex-row md:flex-col justify-between md:justify-start gap-1.5">
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-editorial-surface-subtle border border-editorial-border flex items-center justify-center text-[10px] font-bold text-editorial-text shrink-0">
+                    {article.author.charAt(0)}
+                  </div>
+                  <span className="truncate text-editorial-text font-medium">{article.author}</span>
+                </div>
                 <time dateTime={article.date}>{formattedDate}</time>
-                <span className="opacity-70">{readingTime}</span>
                 <ArticleViewCount path={`/articles/${article.slug}`} slug={article.slug} compact />
               </div>
 
@@ -120,24 +125,40 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                 )}
               </div>
 
-              {/* Responsive Right-Side Image Column (Visible on mobile, tablet & desktop) */}
+              {/* Responsive Right-Side Image Column with floating badges & Awwwards zoom */}
               {article.image && (
                 <div className="md:col-span-4 lg:col-span-3 w-full order-first md:order-last pointer-events-auto relative z-10">
                   <Link
                     to={articlePath}
                     tabIndex={-1}
                     aria-hidden="true"
-                    className="block aspect-[16/10] sm:aspect-[4/3] rounded-sm overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
+                    className="block relative aspect-[16/10] sm:aspect-[4/3] rounded-sm overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
                   >
                     <img
                       src={article.image}
                       alt={article.imageAlt || article.title}
-                      className="w-full h-full object-cover group-hover/row:scale-105 transition-transform duration-500 ease-out"
+                      className="w-full h-full object-cover group-hover/row:scale-105 transition-transform duration-700 ease-out"
                       loading="lazy"
                       onError={(e) => {
                         (e.currentTarget as HTMLElement).style.display = 'none';
                       }}
                     />
+
+                    {/* Floating Category Badge over Artwork */}
+                    <div className="absolute top-2.5 start-2.5 z-10">
+                      <span className="px-2 py-0.5 text-[9px] font-mono uppercase tracking-wider bg-black/75 backdrop-blur-xs text-white rounded-xs border border-white/10 shadow-xs">
+                        {category.name}
+                      </span>
+                    </div>
+
+                    {/* Floating Reading Time Badge */}
+                    <div className="absolute bottom-2.5 end-2.5 z-10">
+                      <span className="px-1.5 py-0.5 text-[9px] font-mono uppercase tracking-wider bg-black/65 backdrop-blur-xs text-white/90 rounded-xs">
+                        {readingTime}
+                      </span>
+                    </div>
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover/row:opacity-100 transition-opacity duration-300 pointer-events-none" />
                   </Link>
                 </div>
               )}
