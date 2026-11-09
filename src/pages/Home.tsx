@@ -46,7 +46,7 @@ export function Home() {
 
         {/* 2. High-Contrast News Ticker Strip */}
         <div className="bg-editorial-text text-editorial-bg px-4 py-2 flex items-center gap-4 text-xs font-mono uppercase tracking-wider overflow-hidden">
-          <span className="font-bold text-accent shrink-0">
+          <span className="font-bold text-editorial-bg shrink-0">
             {t.newsTicker}
           </span>
           <div className="truncate whitespace-nowrap opacity-90">
@@ -238,7 +238,7 @@ export function Home() {
               <div className="text-editorial-muted">{t.printSpecsFormat}</div>
               <div className="text-editorial-muted">{t.printSpecsPaper}</div>
               <div className="text-editorial-muted">{t.printSpecsBinding}</div>
-              <div className="text-editorial-muted text-accent font-semibold">{t.printSpecsCopies}</div>
+              <div className="text-editorial-text font-semibold">{t.printSpecsCopies}</div>
             </div>
 
             <div className="pt-2 text-xs font-serif text-editorial-muted leading-relaxed">

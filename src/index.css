@@ -2,30 +2,18 @@
 
 @layer base {
   :root {
-    --bg: #FBFBFA;
+    --bg: #FFFFFF;
     --surface: #FFFFFF;
     --text: #111110;
-    --muted: #6E6D6A;
-    --border: #E4E4E0;
-    --accent: #D83A17;
-    --accent-hover: #B52F10;
-    --ring: rgba(216, 58, 23, 0.4);
-    --drawer-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+    --muted: #555552;
+    --border: #E5E5E3;
+    --accent: #111110;
+    --accent-hover: #000000;
+    --ring: rgba(17, 17, 16, 0.15);
+    --drawer-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.12);
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0D0D0C;
-      --surface: #141413;
-      --text: #EDEDEB;
-      --muted: #94938F;
-      --border: #262624;
-      --accent: #FF5436;
-      --accent-hover: #FF7057;
-      --ring: rgba(255, 84, 54, 0.4);
-      --drawer-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
-    }
-  }
+  /* Enforce pure white & black editorial theme by default across all devices */
 
   html {
     background-color: var(--bg);

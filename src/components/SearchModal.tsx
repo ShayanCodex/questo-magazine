@@ -128,10 +128,10 @@ export function SearchModal({
   return (
     <DialogPrimitive.Root open={open} onOpenChange={onOpenChange}>
       <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs transition-opacity duration-200 data-[state=open]:opacity-100 data-[state=closed]:opacity-0" />
+        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs transition-opacity duration-200 data-[state=open]:opacity-100 data-[state=closed]:opacity-0" />
         <DialogPrimitive.Content
           onKeyDown={handleKeyDown}
-          className="fixed start-1/2 top-1/2 z-50 w-[calc(100vw-2rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 bg-editorial-surface border border-editorial-border shadow-2xl rounded-sm overflow-hidden text-editorial-text focus:outline-none"
+          className="fixed start-1/2 top-1/2 z-50 w-[calc(100vw-2rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 bg-white border border-editorial-border shadow-2xl rounded-sm overflow-hidden text-editorial-text focus:outline-none"
         >
           {/* Accessible Dialog Title & Description */}
           <DialogPrimitive.Title className="sr-only">
@@ -141,9 +141,9 @@ export function SearchModal({
             {t.searchPlaceholder}
           </DialogPrimitive.Description>
 
-          {/* Search Input Bar with Theme Styling */}
-          <div className="group relative flex items-center border-b border-editorial-border bg-editorial-surface px-4 py-3.5 sm:px-6 focus-within:bg-editorial-bg/60 transition-colors">
-            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted group-focus-within:text-accent shrink-0 me-3 transition-colors" />
+          {/* Search Input Bar with Pure White Editorial Styling */}
+          <div className="group relative flex items-center border-b border-editorial-border bg-white px-4 py-3.5 sm:px-6 focus-within:bg-neutral-50/60 transition-colors">
+            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted group-focus-within:text-black shrink-0 me-3 transition-colors" />
             <input
               ref={inputRef}
               type="text"
@@ -157,29 +157,29 @@ export function SearchModal({
               <button
                 type="button"
                 onClick={() => setQuery('')}
-                className="p-1 rounded-sm text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
+                className="p-1 rounded-sm text-editorial-muted hover:text-black transition-colors cursor-pointer"
                 aria-label={t.clearSearch}
               >
                 <XMarkIcon className="h-4 w-4" />
               </button>
             )}
-            <kbd className="hidden sm:inline-block ms-3 px-1.5 py-0.5 text-[10px] font-mono uppercase text-editorial-muted border border-editorial-border rounded-sm">
+            <kbd className="hidden sm:inline-block ms-3 px-1.5 py-0.5 text-[10px] font-mono uppercase text-editorial-muted border border-editorial-border rounded-sm bg-neutral-50">
               ESC
             </kbd>
           </div>
 
           {/* Topic Filters Row with Landscape Slider Arrows */}
           {tags.length > 0 && (
-            <div className="relative flex items-center border-b border-editorial-border/60 bg-editorial-bg/50 px-2 sm:px-4 py-2">
+            <div className="relative flex items-center border-b border-editorial-border bg-neutral-50/70 px-2 sm:px-4 py-2">
               {/* Left Slide Arrow Button */}
               <button
                 type="button"
                 onClick={() => slide('left')}
                 disabled={!canScrollLeft}
                 className={cn(
-                  'shrink-0 p-1.5 rounded-sm bg-editorial-surface border border-editorial-border transition-all cursor-pointer me-1.5',
+                  'shrink-0 p-1.5 rounded-sm bg-white border border-editorial-border transition-all cursor-pointer me-1.5',
                   canScrollLeft
-                    ? 'text-editorial-text hover:border-accent hover:text-accent opacity-100 shadow-2xs'
+                    ? 'text-editorial-text hover:border-black hover:text-black opacity-100 shadow-2xs'
                     : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
                 )}
                 aria-label="Slide topics left"
@@ -198,8 +198,8 @@ export function SearchModal({
                   className={cn(
                     'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
                     selectedTag === null
-                      ? 'bg-accent text-white font-semibold shadow-xs'
-                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
+                      ? 'bg-black text-white font-semibold shadow-xs'
+                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-white'
                   )}
                 >
                   {t.allTopics}
@@ -212,8 +212,8 @@ export function SearchModal({
                     className={cn(
                       'px-2.5 py-1 rounded-sm transition-colors cursor-pointer shrink-0 uppercase tracking-wider',
                       selectedTag === tag
-                        ? 'bg-accent text-white font-semibold shadow-xs'
-                        : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-editorial-surface'
+                        ? 'bg-black text-white font-semibold shadow-xs'
+                        : 'text-editorial-muted hover:text-editorial-text border border-editorial-border bg-white'
                     )}
                   >
                     #{tag}
@@ -227,9 +227,9 @@ export function SearchModal({
                 onClick={() => slide('right')}
                 disabled={!canScrollRight}
                 className={cn(
-                  'shrink-0 p-1.5 rounded-sm bg-editorial-surface border border-editorial-border transition-all cursor-pointer ms-1.5',
+                  'shrink-0 p-1.5 rounded-sm bg-white border border-editorial-border transition-all cursor-pointer ms-1.5',
                   canScrollRight
-                    ? 'text-editorial-text hover:border-accent hover:text-accent opacity-100 shadow-2xs'
+                    ? 'text-editorial-text hover:border-black hover:text-black opacity-100 shadow-2xs'
                     : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
                 )}
                 aria-label="Slide topics right"
@@ -239,8 +239,8 @@ export function SearchModal({
             </div>
           )}
 
-          {/* Results List with Clean Custom Scrollbar */}
-          <div className="max-h-80 sm:max-h-96 overflow-y-auto custom-scrollbar divide-y divide-editorial-border/40 p-2 sm:p-3">
+          {/* Results List - Completely Borderless Cards with Clean Smooth Hover Background */}
+          <div className="max-h-80 sm:max-h-96 overflow-y-auto custom-scrollbar p-2 sm:p-3 space-y-1.5">
             {filtered.length === 0 ? (
               <div className="py-12 text-center space-y-3">
                 <p className="font-serif text-sm text-editorial-muted">
@@ -253,7 +253,7 @@ export function SearchModal({
                       setQuery('');
                       setSelectedTag(null);
                     }}
-                    className="inline-block text-xs uppercase font-mono tracking-wider text-accent hover:underline cursor-pointer"
+                    className="inline-block text-xs uppercase font-mono tracking-wider text-black hover:underline cursor-pointer"
                   >
                     {t.resetFilters}
                   </button>
@@ -276,10 +276,10 @@ export function SearchModal({
                       }
                     }}
                     className={cn(
-                      'group p-3 sm:p-4 rounded-sm transition-colors cursor-pointer flex items-center justify-between gap-4 text-start',
+                      'group p-3 sm:p-4 rounded-sm transition-colors cursor-pointer flex items-center justify-between gap-4 text-start border-0 outline-none focus:outline-none ring-0 focus:ring-0',
                       isSelected
-                        ? 'bg-editorial-bg border border-editorial-border'
-                        : 'hover:bg-editorial-bg/60'
+                        ? 'bg-neutral-100'
+                        : 'hover:bg-neutral-50'
                     )}
                   >
                     <div className="space-y-1.5 min-w-0">
@@ -288,7 +288,7 @@ export function SearchModal({
                         <span>•</span>
                         <span>{item.author}</span>
                       </div>
-                      <h4 className="font-display font-bold text-base sm:text-lg text-editorial-text group-hover:text-accent transition-colors line-clamp-1">
+                      <h4 className="font-display font-bold text-base sm:text-lg text-editorial-text group-hover:text-black transition-colors line-clamp-1">
                         {item.title}
                       </h4>
                       <p className="font-serif text-xs text-editorial-muted line-clamp-1">
@@ -296,7 +296,7 @@ export function SearchModal({
                       </p>
                       <div className="flex flex-wrap gap-1.5 pt-1">
                         {item.tags?.map((tg) => (
-                          <Badge key={tg} variant="default" className="text-[10px] py-0 px-1.5 font-mono uppercase">
+                          <Badge key={tg} variant="default" className="text-[10px] py-0 px-1.5 font-mono uppercase bg-white border-editorial-border">
                             #{tg}
                           </Badge>
                         ))}
@@ -305,7 +305,7 @@ export function SearchModal({
                     <ArrowRightIcon
                       className={cn(
                         'h-4 w-4 shrink-0 transition-transform duration-150',
-                        isSelected ? 'text-accent opacity-100' : 'text-editorial-muted opacity-40 group-hover:opacity-100',
+                        isSelected ? 'text-black opacity-100' : 'text-editorial-muted opacity-40 group-hover:opacity-100 group-hover:text-black',
                         isRtl ? 'rotate-180 -translate-x-1 group-hover:-translate-x-2' : 'translate-x-0 group-hover:translate-x-1'
                       )}
                     />
@@ -316,7 +316,7 @@ export function SearchModal({
           </div>
 
           {/* Accessible Footer Bar with Hotkey Hints */}
-          <div className="border-t border-editorial-border px-4 py-2.5 sm:px-6 bg-editorial-bg/60 flex items-center justify-between text-[11px] font-mono text-editorial-muted uppercase tracking-wider">
+          <div className="border-t border-editorial-border px-4 py-2.5 sm:px-6 bg-neutral-50/80 flex items-center justify-between text-[11px] font-mono text-editorial-muted uppercase tracking-wider">
             <span>
               {filtered.length} {t.articlesFound}
             </span>

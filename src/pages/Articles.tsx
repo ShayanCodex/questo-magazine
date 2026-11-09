@@ -144,12 +144,12 @@ export function Articles() {
         </div>
       </header>
 
-      {/* Advanced In-Page Search & Filter Toolbar with Theme Styling */}
-      <section className="space-y-6 bg-editorial-surface border border-editorial-border p-5 sm:p-7 rounded-sm shadow-xs">
+      {/* Advanced In-Page Search & Filter Toolbar with Pure White Theme Styling */}
+      <section className="space-y-6 bg-white border border-editorial-border p-5 sm:p-7 rounded-sm shadow-xs">
         <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4">
-          {/* Live Search Input using Theme Accent & Surface */}
-          <div className="group relative flex-1 flex items-center bg-editorial-bg border border-editorial-border focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/20 rounded-sm transition-all">
-            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted group-focus-within:text-accent transition-colors absolute start-3.5 pointer-events-none" />
+          {/* Live Search Input */}
+          <div className="group relative flex-1 flex items-center bg-white border border-editorial-border focus-within:border-black focus-within:ring-2 focus-within:ring-black/10 rounded-sm transition-all">
+            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-muted group-focus-within:text-black transition-colors absolute start-3.5 pointer-events-none" />
             <input
               type="text"
               value={searchQuery}
@@ -162,7 +162,7 @@ export function Articles() {
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                className="absolute end-3 p-1.5 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
+                className="absolute end-3 p-1.5 text-editorial-muted hover:text-black transition-colors cursor-pointer"
                 aria-label={t.clearSearch}
               >
                 <XMarkIcon className="h-4 w-4" />
@@ -173,17 +173,17 @@ export function Articles() {
           {/* Sort Selector using Theme Colors */}
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider shrink-0">
             <span className="text-editorial-muted flex items-center gap-1.5 font-medium">
-              <AdjustmentsHorizontalIcon className="h-4 w-4 text-accent" />
+              <AdjustmentsHorizontalIcon className="h-4 w-4 text-editorial-text" />
               <span>{t.sortBy}:</span>
             </span>
-            <div className="inline-flex rounded-sm border border-editorial-border bg-editorial-bg overflow-hidden p-0.5">
+            <div className="inline-flex rounded-sm border border-editorial-border bg-neutral-50 overflow-hidden p-0.5">
               <button
                 type="button"
                 onClick={() => setSortBy('newest')}
                 className={cn(
                   'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'newest'
-                    ? 'bg-accent text-white font-semibold shadow-xs'
+                    ? 'bg-black text-white font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'
                 )}
               >
@@ -195,7 +195,7 @@ export function Articles() {
                 className={cn(
                   'px-3.5 py-1.5 rounded-xs cursor-pointer transition-all',
                   sortBy === 'oldest'
-                    ? 'bg-accent text-white font-semibold shadow-xs'
+                    ? 'bg-black text-white font-semibold shadow-xs'
                     : 'text-editorial-muted hover:text-editorial-text'
                 )}
               >
@@ -214,9 +214,9 @@ export function Articles() {
               onClick={() => slideTopics('left')}
               disabled={!canScrollLeft}
               className={cn(
-                'shrink-0 p-1.5 rounded-sm bg-editorial-bg border border-editorial-border transition-all cursor-pointer me-1',
+                'shrink-0 p-1.5 rounded-sm bg-white border border-editorial-border transition-all cursor-pointer me-1',
                 canScrollLeft
-                  ? 'text-editorial-text hover:border-accent hover:text-accent shadow-2xs opacity-100'
+                  ? 'text-editorial-text hover:border-black hover:text-black shadow-2xs opacity-100'
                   : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
               )}
               aria-label="Slide topics left"
@@ -235,8 +235,8 @@ export function Articles() {
                 className={cn(
                   'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
                   selectedTag === null
-                    ? 'bg-accent text-white font-semibold shadow-xs'
-                    : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
+                    ? 'bg-black text-white font-semibold shadow-xs'
+                    : 'border border-editorial-border text-editorial-muted hover:text-black hover:border-editorial-muted bg-white'
                 )}
               >
                 {t.allTopics} ({articles.length})
@@ -251,8 +251,8 @@ export function Articles() {
                     className={cn(
                       'px-3 py-1.5 text-xs font-mono uppercase tracking-wider rounded-sm transition-all cursor-pointer shrink-0',
                       selectedTag === tag
-                        ? 'bg-accent text-white font-semibold shadow-xs'
-                        : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-muted bg-editorial-bg'
+                        ? 'bg-black text-white font-semibold shadow-xs'
+                        : 'border border-editorial-border text-editorial-muted hover:text-black hover:border-editorial-muted bg-white'
                     )}
                   >
                     #{tag} ({count})
@@ -267,9 +267,9 @@ export function Articles() {
               onClick={() => slideTopics('right')}
               disabled={!canScrollRight}
               className={cn(
-                'shrink-0 p-1.5 rounded-sm bg-editorial-bg border border-editorial-border transition-all cursor-pointer ms-1',
+                'shrink-0 p-1.5 rounded-sm bg-white border border-editorial-border transition-all cursor-pointer ms-1',
                 canScrollRight
-                  ? 'text-editorial-text hover:border-accent hover:text-accent shadow-2xs opacity-100'
+                  ? 'text-editorial-text hover:border-black hover:text-black shadow-2xs opacity-100'
                   : 'text-editorial-muted opacity-25 cursor-not-allowed border-transparent bg-transparent'
               )}
               aria-label="Slide topics right"
