@@ -13,11 +13,10 @@ export function EditorialMarquee({ articles, className }: EditorialMarqueeProps)
   const { localePath, t, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
 
-  // Build the list of ticker items
+  // Build the list of ticker items from live articles
   const tickerItems = articles.slice(0, 6).map((article) => {
     const { category } = getArticleCategory(article);
     return {
-      type: 'article' as const,
       slug: article.slug,
       title: article.title,
       author: article.author,
@@ -36,17 +35,17 @@ export function EditorialMarquee({ articles, className }: EditorialMarqueeProps)
     <div key={keyPrefix} className="flex items-center shrink-0">
       {tickerItems.map((item, idx) => (
         <span key={`${keyPrefix}-art-${item.slug}-${idx}`} className="inline-flex items-center">
-          <span className="opacity-40 px-3.5 select-none text-[11px] font-mono">✦</span>
-          <span className="text-[10px] font-sans font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-editorial-bg/15 text-editorial-bg me-1.5">
+          <span className="text-editorial-muted/30 px-3 select-none text-[10px]">✦</span>
+          <span className="text-[10px] font-sans font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-muted me-2 shadow-2xs">
             {item.categoryShort}
           </span>
           <Link
             to={localePath(`/articles/${item.slug}`)}
-            className="hover:underline underline-offset-4 font-sans font-semibold tracking-tight transition-opacity hover:opacity-80"
+            className="hover:text-accent hover:underline underline-offset-4 font-sans font-medium text-xs tracking-tight text-editorial-text transition-colors"
           >
             {item.title}
           </Link>
-          <span className="opacity-60 text-[11px] font-serif ms-1.5 italic">
+          <span className="text-editorial-muted text-[11px] font-serif ms-1.5 italic">
             by {item.author}
           </span>
         </span>
@@ -54,13 +53,13 @@ export function EditorialMarquee({ articles, className }: EditorialMarqueeProps)
 
       {editorialDispatches.map((dispatch, idx) => (
         <span key={`${keyPrefix}-disp-${idx}`} className="inline-flex items-center">
-          <span className="opacity-40 px-3.5 select-none text-[11px] font-mono">✦</span>
+          <span className="text-editorial-muted/30 px-3 select-none text-[10px]">✦</span>
           <span
             className={cn(
               'font-sans text-xs tracking-wider uppercase',
               dispatch.highlight
-                ? 'font-bold text-editorial-bg underline decoration-1 underline-offset-2'
-                : 'font-medium opacity-85'
+                ? 'font-bold text-editorial-text'
+                : 'font-normal text-editorial-muted'
             )}
           >
             {dispatch.text}
@@ -73,43 +72,43 @@ export function EditorialMarquee({ articles, className }: EditorialMarqueeProps)
   return (
     <div
       className={cn(
-        'relative bg-editorial-text text-editorial-bg overflow-hidden flex items-center select-none group border-y border-editorial-text shadow-sm',
+        'relative bg-editorial-surface border-y border-editorial-border overflow-hidden flex items-center select-none group text-editorial-text shadow-2xs py-1.5',
         className
       )}
       role="region"
       aria-label="Editorial News Ticker"
     >
-      {/* Fixed Live Ticker Capsule on Start */}
-      <div className="relative z-20 shrink-0 flex items-center gap-2 ps-3.5 pe-4 py-2 bg-editorial-text border-e border-editorial-bg/20 shadow-md">
+      {/* Refined Live Ticker Badge on Start */}
+      <div className="relative z-20 shrink-0 flex items-center gap-2 ps-4 pe-3.5 py-1 bg-editorial-surface border-e border-editorial-border">
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
           <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
         </span>
-        <span className="font-sans font-bold text-[11px] uppercase tracking-wider text-editorial-bg whitespace-nowrap">
-          {t.newsTicker || 'Live Ticker'}
+        <span className="font-sans font-bold text-[11px] uppercase tracking-wider text-editorial-text whitespace-nowrap">
+          {t.newsTicker || 'Dispatch'}
         </span>
       </div>
 
-      {/* Edge Gradient Mask Overlays */}
+      {/* Smooth Edge Gradient Mask Overlays */}
       <div
         className={cn(
-          'pointer-events-none absolute inset-y-0 start-[105px] w-8 z-10',
+          'pointer-events-none absolute inset-y-0 start-[100px] w-8 z-10',
           isRtl
-            ? 'bg-gradient-to-l from-editorial-text to-transparent'
-            : 'bg-gradient-to-r from-editorial-text to-transparent'
+            ? 'bg-gradient-to-l from-editorial-surface to-transparent'
+            : 'bg-gradient-to-r from-editorial-surface to-transparent'
         )}
       />
       <div
         className={cn(
           'pointer-events-none absolute inset-y-0 end-0 w-12 z-10',
           isRtl
-            ? 'bg-gradient-to-r from-editorial-text to-transparent'
-            : 'bg-gradient-to-l from-editorial-text to-transparent'
+            ? 'bg-gradient-to-r from-editorial-surface to-transparent'
+            : 'bg-gradient-to-l from-editorial-surface to-transparent'
         )}
       />
 
       {/* Infinite Scrolling Track */}
-      <div className="overflow-hidden w-full py-2">
+      <div className="overflow-hidden w-full py-0.5">
         <div className="animate-marquee flex items-center whitespace-nowrap text-xs font-sans">
           {renderSequence('seq1')}
           {renderSequence('seq2')}
