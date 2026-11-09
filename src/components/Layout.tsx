@@ -1,6 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Bars3Icon, MagnifyingGlassIcon, FolderIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+  Bars3Icon,
+  MagnifyingGlassIcon,
+  FolderIcon,
+  XMarkIcon,
+  GlobeAltIcon,
+  ChevronDownIcon,
+  CheckIcon,
+} from '@heroicons/react/24/outline';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
@@ -16,6 +24,7 @@ import { SearchModal } from './SearchModal';
 import { ThemeToggle } from './ThemeToggle';
 import { AnalyticsTracker } from './AnalyticsTracker';
 import { CATEGORIES, getCategoryShortName, formatTopicName } from '../lib/categories';
+import { cn } from '../lib/utils';
 
 export interface LayoutProps {
   tags?: string[];
@@ -25,6 +34,12 @@ export interface LayoutProps {
 export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+  const [navVisible, setNavVisible] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const lastScrollY = useRef(0);
+  const langDropdownRef = useRef<HTMLDivElement>(null);
+
   const location = useLocation();
   const { language, t, switchLanguagePath, localePath } = useLanguage();
 
@@ -42,6 +57,74 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  // Smart Auto-Hiding Navbar on scroll down / Reveal on minor scroll up
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      const currentScrollY = Math.max(0, window.scrollY);
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          // At the top of the page, navbar is always visible
+          if (currentScrollY <= 20) {
+            setNavVisible(true);
+            setIsScrolled(false);
+          } else {
+            setIsScrolled(true);
+            const delta = currentScrollY - lastScrollY.current;
+
+            // Scroll down: hide navbar when scrolling down past initial threshold
+            if (delta > 8 && currentScrollY > 70) {
+              setNavVisible(false);
+              setLangDropdownOpen(false);
+            }
+            // Scroll up: reveal navbar immediately on minor upward scroll (delta < -5)
+            else if (delta < -5) {
+              setNavVisible(true);
+            }
+          }
+
+          lastScrollY.current = currentScrollY;
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close language dropdown on outside click or route change
+  useEffect(() => {
+    setLangDropdownOpen(false);
+  }, [currentPath]);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langDropdownRef.current && !langDropdownRef.current.contains(e.target as Node)) {
+        setLangDropdownOpen(false);
+      }
+    };
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setLangDropdownOpen(false);
+      }
+    };
+
+    if (langDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscape);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [langDropdownOpen]);
+
   return (
     <div className="min-h-screen flex flex-col bg-editorial-bg text-editorial-text selection:bg-editorial-text selection:text-editorial-bg">
       {/* GoatCounter SPA Analytics Tracker for Route Transitions */}
@@ -55,19 +138,29 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
         {t.skipToContent}
       </a>
 
-      {/* Editorial Top Bar (Fyrre Magazine Style) */}
-      <header className="border-b border-editorial-border py-4 px-6 sm:px-10 lg:px-16">
+      {/* Editorial Top Bar with Smart Auto-Hide on Scroll Down & Reveal on Minor Scroll Up */}
+      <header
+        className={cn(
+          'fixed top-0 start-0 end-0 z-40 py-3.5 sm:py-4 px-6 sm:px-10 lg:px-16 transition-all duration-300 ease-in-out border-b',
+          navVisible
+            ? 'translate-y-0 opacity-100'
+            : '-translate-y-full opacity-0 pointer-events-none',
+          isScrolled
+            ? 'bg-editorial-bg/95 backdrop-blur-md border-editorial-border shadow-xs'
+            : 'bg-editorial-bg border-editorial-border'
+        )}
+      >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Brand Wordmark / Publication Title */}
           <Link
             to={localePath('/')}
-            className="font-display font-extrabold text-sm sm:text-base uppercase tracking-widest text-editorial-text hover:text-accent transition-colors"
+            className="font-display font-extrabold text-sm sm:text-base uppercase tracking-widest text-editorial-text hover:text-accent transition-colors shrink-0"
           >
             {siteConfig.name} Magazine
           </Link>
 
           {/* Top navigation links & icons */}
-          <div className="flex items-center gap-4 sm:gap-6 lg:gap-8">
+          <div className="flex items-center gap-3 sm:gap-5 lg:gap-7">
             <nav className="hidden md:flex items-center gap-6 text-xs uppercase font-mono tracking-wider text-editorial-muted">
               <Link to={localePath('/')} className="hover:text-editorial-text transition-colors">
                 {t.home}
@@ -84,7 +177,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center justify-between gap-3 px-3 py-1.5 h-9 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-36 sm:w-56 md:w-64"
+              className="group flex items-center justify-between gap-2.5 px-3 py-1.5 h-9 rounded-sm bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-32 sm:w-52 md:w-60"
               aria-label={t.search}
             >
               <div className="flex items-center gap-2 truncate">
@@ -101,9 +194,69 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             {/* Theme Toggle Button */}
             <ThemeToggle />
 
-            {/* Quick Language Indicator */}
-            <div className="hidden sm:flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-editorial-muted border-x border-editorial-border px-4 py-1">
-              <span>{language.name}</span>
+            {/* Interactive 1-Click Language Switcher Dropdown */}
+            <div className="relative" ref={langDropdownRef}>
+              <button
+                type="button"
+                onClick={() => setLangDropdownOpen((prev) => !prev)}
+                className={cn(
+                  'inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 h-9 rounded-sm border transition-all text-xs font-sans font-medium cursor-pointer shadow-2xs',
+                  langDropdownOpen
+                    ? 'border-editorial-text bg-editorial-surface-hover text-editorial-text ring-1 ring-editorial-text/20'
+                    : 'border-editorial-border bg-editorial-surface hover:bg-editorial-surface-hover hover:border-editorial-text text-editorial-text'
+                )}
+                aria-expanded={langDropdownOpen}
+                aria-haspopup="true"
+                aria-label={`${t.languages}: ${language.name}`}
+                title="Change language / زبان تبدیل کریں"
+              >
+                <GlobeAltIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text shrink-0" />
+                <span className="hidden sm:inline font-medium">{language.name}</span>
+                <span className="sm:hidden font-mono uppercase text-[11px]">{language.code}</span>
+                <ChevronDownIcon
+                  className={cn(
+                    'h-3.5 w-3.5 text-editorial-muted transition-transform duration-200 shrink-0',
+                    langDropdownOpen && 'rotate-180 text-editorial-text'
+                  )}
+                />
+              </button>
+
+              {/* Language Dropdown Menu */}
+              {langDropdownOpen && (
+                <div
+                  className="absolute end-0 top-full mt-2 z-50 w-44 rounded-md border border-editorial-border bg-editorial-surface shadow-2xl p-1.5 space-y-0.5 font-sans"
+                  role="menu"
+                  aria-orientation="vertical"
+                >
+                  <div className="px-2 py-1 text-[11px] font-semibold text-editorial-muted uppercase tracking-wider border-b border-editorial-border/60 mb-1 flex items-center justify-between">
+                    <span>{t.languages}</span>
+                    <span className="text-[10px] font-mono opacity-60">6 locales</span>
+                  </div>
+                  {siteConfig.languages.map((lang) => {
+                    const isCurrent = lang.code === language.code;
+                    const targetPath = switchLanguagePath(lang.code, currentPath);
+
+                    return (
+                      <Link
+                        key={lang.code}
+                        to={targetPath}
+                        onClick={() => setLangDropdownOpen(false)}
+                        className={cn(
+                          'flex items-center justify-between px-2.5 py-1.5 rounded-xs text-xs transition-colors cursor-pointer font-medium',
+                          isCurrent
+                            ? 'bg-editorial-text text-editorial-bg font-semibold shadow-2xs'
+                            : 'text-editorial-text hover:bg-editorial-surface-hover'
+                        )}
+                        role="menuitem"
+                        hrefLang={lang.code}
+                      >
+                        <span>{lang.name}</span>
+                        {isCurrent && <CheckIcon className="h-3.5 w-3.5" />}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
             </div>
 
             {/* Menu Trigger */}
@@ -111,7 +264,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               variant="outline"
               size="sm"
               onClick={() => setDrawerOpen(true)}
-              className="text-xs uppercase font-mono tracking-wider gap-2 min-h-[36px] min-w-[36px] px-3 border-editorial-border hover:border-editorial-text cursor-pointer"
+              className="text-xs uppercase font-mono tracking-wider gap-2 min-h-[36px] min-w-[36px] px-3 border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
               aria-label={t.menu}
             >
               <Bars3Icon className="h-4 w-4" />
@@ -121,10 +274,10 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
         </div>
       </header>
 
-      {/* Main Content Viewport */}
+      {/* Main Content Viewport with top padding for fixed navbar */}
       <main
         id="main-content"
-        className="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-10 lg:px-16 py-6 sm:py-10"
+        className="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-10 lg:px-16 pt-20 sm:pt-24 pb-6 sm:pb-10"
       >
         <Outlet />
       </main>
