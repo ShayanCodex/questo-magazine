@@ -31,34 +31,23 @@ export function FeaturedShowcaseSlider({
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [progress, setProgress] = useState(0);
   const touchStartXRef = useRef<number | null>(null);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (totalSlides > 0 ? (prev + 1) % totalSlides : 0));
-    setProgress(0);
   }, [totalSlides]);
 
   const prevSlide = useCallback(() => {
     setCurrentIndex((prev) => (totalSlides > 0 ? (prev - 1 + totalSlides) % totalSlides : 0));
-    setProgress(0);
   }, [totalSlides]);
 
-  // Autoplay and Progress Bar Timer
+  // Autoplay Timer (cycles slides smoothly when not hovered/paused)
   useEffect(() => {
     if (isPaused || totalSlides <= 1) return;
 
-    const intervalStep = 50; // update every 50ms
     const timer = setInterval(() => {
-      setProgress((prev) => {
-        const next = prev + (intervalStep / autoplayIntervalMs) * 100;
-        if (next >= 100) {
-          nextSlide();
-          return 0;
-        }
-        return next;
-      });
-    }, intervalStep);
+      nextSlide();
+    }, autoplayIntervalMs);
 
     return () => clearInterval(timer);
   }, [isPaused, totalSlides, autoplayIntervalMs, nextSlide]);
@@ -157,7 +146,7 @@ export function FeaturedShowcaseSlider({
         </div>
 
         {/* Foreground Content Card: Oversized Editorial Type */}
-        <div className="absolute bottom-12 sm:bottom-14 start-6 sm:start-10 end-6 sm:end-10 z-20 space-y-3 max-w-3xl">
+        <div className="absolute bottom-5 sm:bottom-7 start-6 sm:start-10 end-28 sm:end-36 z-20 space-y-3 max-w-3xl">
           {/* Metadata Row */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-wider text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
             <Link
@@ -213,57 +202,27 @@ export function FeaturedShowcaseSlider({
           </div>
         </div>
 
-        {/* Bottom Progress Bar & Navigation Controls */}
-        <div className="absolute bottom-0 start-0 end-0 z-20 flex items-center justify-between px-6 py-3 bg-black/60 backdrop-blur-md border-t border-white/10">
-          {/* Animated Progress Line */}
-          <div className="flex-1 me-6 h-1 bg-white/15 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-white transition-all duration-75 ease-linear rounded-full"
-              style={{ width: `${progress}%` }}
-            />
-          </div>
+        {/* Navigation Controls: Clean Left & Right Buttons Only (Slider bar & dots completely removed) */}
+        <div className="absolute bottom-5 sm:bottom-7 end-6 sm:end-10 z-20 flex items-center gap-2">
+          {/* Left / Prev Button */}
+          <button
+            type="button"
+            onClick={prevSlide}
+            className="p-2 sm:p-2.5 rounded-full border border-white/25 bg-black/50 hover:bg-white hover:text-neutral-950 text-white backdrop-blur-md transition-all cursor-pointer min-h-[38px] min-w-[38px] sm:min-h-[42px] sm:min-w-[42px] flex items-center justify-center shadow-lg hover:scale-105 active:scale-95"
+            aria-label="Previous featured article"
+          >
+            <ChevronLeftIcon className="h-4 w-4 sm:h-5 sm:w-5 rtl:rotate-180" />
+          </button>
 
-          {/* Navigation Arrows & Dot Indicators */}
-          <div className="flex items-center gap-3 shrink-0">
-            {/* Dots */}
-            <div className="hidden sm:flex items-center gap-1.5 me-2">
-              {showcaseArticles.map((_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => {
-                    setCurrentIndex(i);
-                    setProgress(0);
-                  }}
-                  className={cn(
-                    'h-1.5 rounded-full transition-all cursor-pointer',
-                    i === currentIndex ? 'w-6 bg-white' : 'w-1.5 bg-white/40 hover:bg-white/70'
-                  )}
-                  aria-label={`Go to slide ${i + 1}`}
-                />
-              ))}
-            </div>
-
-            {/* Prev Button */}
-            <button
-              type="button"
-              onClick={prevSlide}
-              className="p-2 rounded-full border border-white/20 bg-black/40 hover:bg-white hover:text-neutral-950 text-white transition-all cursor-pointer min-h-[36px] min-w-[36px] flex items-center justify-center"
-              aria-label="Previous featured article"
-            >
-              <ChevronLeftIcon className="h-4 w-4" />
-            </button>
-
-            {/* Next Button */}
-            <button
-              type="button"
-              onClick={nextSlide}
-              className="p-2 rounded-full border border-white/20 bg-black/40 hover:bg-white hover:text-neutral-950 text-white transition-all cursor-pointer min-h-[36px] min-w-[36px] flex items-center justify-center"
-              aria-label="Next featured article"
-            >
-              <ChevronRightIcon className="h-4 w-4" />
-            </button>
-          </div>
+          {/* Right / Next Button */}
+          <button
+            type="button"
+            onClick={nextSlide}
+            className="p-2 sm:p-2.5 rounded-full border border-white/25 bg-black/50 hover:bg-white hover:text-neutral-950 text-white backdrop-blur-md transition-all cursor-pointer min-h-[38px] min-w-[38px] sm:min-h-[42px] sm:min-w-[42px] flex items-center justify-center shadow-lg hover:scale-105 active:scale-95"
+            aria-label="Next featured article"
+          >
+            <ChevronRightIcon className="h-4 w-4 sm:h-5 sm:w-5 rtl:rotate-180" />
+          </button>
         </div>
       </div>
     </section>
