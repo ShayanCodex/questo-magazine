@@ -94,12 +94,12 @@ export function Home() {
             className="block group"
             title="Questo Magazine — Art & Life"
           >
-            <h1 className="font-display font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-none tracking-tight text-editorial-text uppercase select-none group-hover:text-accent transition-colors">
+            <h1 className="font-display font-black text-4xl sm:text-5xl md:text-[3.5rem] lg:text-[4.15rem] leading-none tracking-tight text-editorial-text uppercase select-none group-hover:text-accent transition-colors">
               Questo
             </h1>
           </Link>
 
-          <div className="text-end flex items-center gap-2 text-xs font-sans text-editorial-muted font-medium">
+          <div className="text-end flex items-center gap-2 text-xs sm:text-sm font-sans text-editorial-muted font-medium">
             <span className="font-bold text-editorial-text">Art &amp; Life</span>
             <span>•</span>
             <span>Vol. 03</span>
