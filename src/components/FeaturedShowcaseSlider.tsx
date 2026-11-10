@@ -5,6 +5,7 @@ import {
   ChevronRightIcon,
   SparklesIcon,
   ClockIcon,
+  ArrowRightIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -127,10 +128,11 @@ export function FeaturedShowcaseSlider({
             </span>
             <Link
               to={localePath(`/articles?category=${category.id}`)}
-              className="hidden sm:inline-flex font-sans text-xs font-medium bg-white/15 backdrop-blur-md px-3 py-1 rounded-full text-white/90 border border-white/10 hover:bg-white hover:text-neutral-950 transition-all cursor-pointer pointer-events-auto shadow-sm"
+              className="hidden sm:inline-flex items-center gap-1 font-sans text-xs font-medium bg-white/15 backdrop-blur-md px-3 py-1 rounded-full text-white/90 border border-white/10 hover:bg-white hover:text-neutral-950 transition-all cursor-pointer pointer-events-auto shadow-sm"
               title={`View ${category.name} collection`}
             >
-              {getCategoryShortName(category.id)} →
+              <span>{getCategoryShortName(category.id)}</span>
+              <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
             </Link>
           </div>
 
@@ -197,7 +199,7 @@ export function FeaturedShowcaseSlider({
               className="inline-flex items-center gap-2 px-6 py-2.5 bg-white text-neutral-950 font-sans text-xs font-semibold rounded-full hover:bg-neutral-100 transition-all shadow-md group/btn"
             >
               <span>{t.readMore || 'Read Monograph'}</span>
-              <span className="transition-transform group-hover/btn:translate-x-1">→</span>
+              <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover/btn:translate-x-1" />
             </Link>
           </div>
         </div>

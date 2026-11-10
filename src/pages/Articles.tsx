@@ -8,6 +8,8 @@ import {
   FolderIcon,
   TagIcon,
   DocumentTextIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -390,7 +392,7 @@ export function Articles() {
                           onClick={() => handleApplySuggestion(sug)}
                           className="text-start px-2.5 py-1.5 rounded-md hover:bg-editorial-surface-hover text-editorial-text transition-colors cursor-pointer text-xs truncate flex items-center gap-2 font-medium"
                         >
-                          <span className="text-editorial-muted font-mono text-[10px]">→</span>
+                          <ArrowRightIcon className="h-3 w-3 text-editorial-muted rtl:rotate-180" />
                           <span>"{sug.label}"</span>
                         </button>
                       ))}
@@ -636,9 +638,9 @@ export function Articles() {
                     type="button"
                     onClick={() => handlePageChange(safeCurrentPage - 1)}
                     disabled={safeCurrentPage === 1}
-                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1 font-sans text-xs font-medium"
+                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
                   >
-                    <span>{isRtl ? '→' : '←'}</span>
+                    <ArrowLeftIcon className="h-3.5 w-3.5 rtl:rotate-180" />
                     <span>{t.prevPage || (isRtl ? 'التالي' : 'Previous')}</span>
                   </button>
 
@@ -664,10 +666,10 @@ export function Articles() {
                     type="button"
                     onClick={() => handlePageChange(safeCurrentPage + 1)}
                     disabled={safeCurrentPage === totalPages}
-                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1 font-sans text-xs font-medium"
+                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
                   >
                     <span>{t.nextPage || (isRtl ? 'السابق' : 'Next')}</span>
-                    <span>{isRtl ? '←' : '→'}</span>
+                    <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180" />
                   </button>
                 </div>
               </div>

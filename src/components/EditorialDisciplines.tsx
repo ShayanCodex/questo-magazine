@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
-import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
+import { ArrowUpRightIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
 
 export function EditorialDisciplines() {
   const { t, localePath, language } = useLanguage();
@@ -170,7 +170,7 @@ export function EditorialDisciplines() {
                     className="font-medium text-editorial-text hover:text-accent transition-colors flex items-center gap-1 group/link"
                   >
                     <span>Browse</span>
-                    <span className="transition-transform group-hover/link:translate-x-0.5">→</span>
+                    <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover/link:translate-x-0.5" />
                   </Link>
                   <Link
                     to={localePath(`/tags/${item.tag}`)}

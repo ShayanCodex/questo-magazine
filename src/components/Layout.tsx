@@ -9,6 +9,7 @@ import {
   ChevronDownIcon,
   CheckIcon,
   BookmarkIcon,
+  ArrowRightIcon,
 } from '@heroicons/react/24/outline';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -461,9 +462,10 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 <Link
                   to={localePath('/categories')}
                   onClick={() => setDrawerOpen(false)}
-                  className="text-xs font-medium text-accent hover:underline"
+                  className="text-xs font-medium text-accent hover:underline flex items-center gap-1"
                 >
-                  {t.allCategoriesAtoZ || 'View A–Z'} →
+                  <span>{t.allCategoriesAtoZ || 'View A–Z'}</span>
+                  <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
                 </Link>
               </div>
 
@@ -481,9 +483,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                       <span className="font-sans font-bold text-sm text-editorial-text group-hover:text-accent transition-colors">
                         {getCategoryShortName(cat.id)}
                       </span>
-                      <span className="text-xs text-editorial-muted group-hover:text-editorial-text group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform">
-                        →
-                      </span>
+                      <ArrowRightIcon className="h-3.5 w-3.5 text-editorial-muted group-hover:text-editorial-text group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180 transition-transform" />
                     </Link>
 
                     {/* Subcategories as clean pills */}

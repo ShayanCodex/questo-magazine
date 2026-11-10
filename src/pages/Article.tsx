@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
 import {
   ArrowLeftIcon,
+  ArrowRightIcon,
   PencilSquareIcon,
   ShareIcon,
   CheckIcon,
@@ -21,6 +22,7 @@ import { ArticleTakeaways } from '../components/ArticleTakeaways';
 import { QuoteSelectionPopup } from '../components/QuoteSelectionPopup';
 import { ImageLightbox } from '../components/ImageLightbox';
 import { ArticleToc } from '../components/ArticleToc';
+import { ArticleHeadingBar } from '../components/ArticleHeadingBar';
 import { cn } from '../lib/utils';
 
 interface ArticleLoaderData {
@@ -278,6 +280,9 @@ export function Article() {
         {/* Executive Summary / Key Takeaways Box */}
         <ArticleTakeaways article={article} />
 
+        {/* Sticky Article Headings Navigation Bar (One-Click Jump to Heading) */}
+        <ArticleHeadingBar blocks={article.body} />
+
         {/* Article Body with Sticky ScrollSpy Table of Contents */}
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-12 items-start">
           <div className="xl:col-span-8 min-w-0">
@@ -299,9 +304,6 @@ export function Article() {
             <ArticleToc blocks={article.body} />
           </div>
         </div>
-
-        {/* Mobile Table of Contents Floating Pill & Sheet */}
-        <ArticleToc blocks={article.body} />
 
         {/* Article Footer */}
         <footer className="pt-8 border-t border-editorial-border space-y-8">
@@ -359,9 +361,10 @@ export function Article() {
               </div>
               <Link
                 to={localePath('/articles')}
-                className="text-xs font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline"
+                className="text-xs font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1"
               >
-                All Articles →
+                <span>All Articles</span>
+                <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
               </Link>
             </div>
 
@@ -420,7 +423,7 @@ export function Article() {
                         className="text-accent hover:underline flex items-center gap-1 font-semibold text-[11px] uppercase tracking-wider"
                       >
                         <span>Read</span>
-                        <span>→</span>
+                        <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
                       </Link>
                       <ArticleViewCount path={`/articles/${rel.slug}`} slug={rel.slug} compact />
                     </div>

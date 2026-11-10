@@ -133,7 +133,7 @@ export function ReadingListDrawer({
                           className="text-editorial-text hover:underline font-semibold flex items-center gap-1"
                         >
                           <span>{t.readMore || 'Read'}</span>
-                          <span className="text-[10px]">→</span>
+                          <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
                         </Link>
                       </div>
                     </div>

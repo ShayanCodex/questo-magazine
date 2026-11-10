@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
-import { DocumentTextIcon } from '@heroicons/react/24/outline';
+import { DocumentTextIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig } from '../lib/site';
@@ -132,18 +132,16 @@ export function Home() {
                     ({count})
                   </span>
                 )}
-                <span className="opacity-40 text-[10px] group-hover/pill:translate-x-0.5 transition-transform">
-                  →
-                </span>
+                <ArrowRightIcon className="h-2.5 w-2.5 rtl:rotate-180 opacity-50 group-hover/pill:translate-x-0.5 rtl:group-hover/pill:-translate-x-0.5 transition-transform" />
               </Link>
             );
           })}
           <Link
             to={localePath('/categories')}
-            className="px-3.5 py-1 rounded-full text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border hover:border-editorial-text ms-auto shrink-0 text-xs font-medium transition-all flex items-center gap-1 whitespace-nowrap"
+            className="px-3.5 py-1 rounded-full text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border hover:border-editorial-text ms-auto shrink-0 text-xs font-medium transition-all flex items-center gap-1.5 whitespace-nowrap group"
           >
             <span>All Categories (A–Z)</span>
-            <span>→</span>
+            <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
           </Link>
         </div>
       </div>
@@ -291,10 +289,10 @@ export function Home() {
             <div className="pt-6">
               <Link
                 to={localePath('/articles')}
-                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-accent hover:underline font-semibold"
+                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-accent hover:underline font-semibold group"
               >
                 <span>{t.allArticles} ({articles.length})</span>
-                <span>→</span>
+                <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
               </Link>
             </div>
           </div>
@@ -332,7 +330,7 @@ export function Home() {
                 </span>
                 <span className="font-sans font-medium text-xs text-white/90 bg-black/50 px-2.5 py-1 rounded-full backdrop-blur-md border border-white/10 shadow-xs flex items-center gap-1 group-hover:bg-white group-hover:text-neutral-950 transition-all">
                   <span>Autumn 2026</span>
-                  <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                  <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
                 </span>
               </div>
 
@@ -346,7 +344,7 @@ export function Home() {
                   </p>
                   <span className="text-[11px] font-sans font-semibold text-white/80 group-hover:text-white group-hover:underline flex items-center gap-1">
                     <span>Read Issue</span>
-                    <span>→</span>
+                    <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
                   </span>
                 </div>
               </div>
@@ -388,10 +386,10 @@ export function Home() {
               <div className="p-3 bg-editorial-surface-subtle/50 border-t border-editorial-border/60">
                 <Link
                   to={localePath('/articles?category=art-and-culture')}
-                  className="flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-full bg-editorial-surface hover:bg-editorial-text hover:text-editorial-bg text-editorial-text border border-editorial-border font-sans text-xs font-semibold transition-all shadow-xs text-center"
+                  className="flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-full bg-editorial-surface hover:bg-editorial-text hover:text-editorial-bg text-editorial-text border border-editorial-border font-sans text-xs font-semibold transition-all shadow-xs text-center group"
                 >
                   <span>Explore Art &amp; Life Articles</span>
-                  <span>→</span>
+                  <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
                 </Link>
               </div>
             </div>

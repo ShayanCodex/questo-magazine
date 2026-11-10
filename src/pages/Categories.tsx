@@ -524,10 +524,10 @@ export function Categories() {
                   ? `/articles?category=${selectedCategory}${selectedSubcategory ? `&subcategory=${selectedSubcategory}` : ''}`
                   : '/articles'
               )}
-              className="text-xs font-sans uppercase tracking-wider text-accent hover:underline flex items-center gap-1 font-semibold"
+              className="text-xs font-sans uppercase tracking-wider text-accent hover:underline flex items-center gap-1.5 font-semibold group"
             >
               <span>View in Full Archive</span>
-              <span>{isRtl ? '←' : '→'}</span>
+              <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
             </Link>
           </div>
         </div>
