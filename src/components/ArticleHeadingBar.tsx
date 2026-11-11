@@ -28,6 +28,7 @@ export function ArticleHeadingBar({ blocks = [], className }: ArticleHeadingBarP
 
   const railRef = useRef<HTMLDivElement>(null);
   const buttonRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const isInitialMount = useRef(true);
 
   // Extract headings from content blocks
   const headings: HeadingItem[] = [];
@@ -68,10 +69,6 @@ export function ArticleHeadingBar({ blocks = [], className }: ArticleHeadingBarP
   useEffect(() => {
     if (typeof window === 'undefined' || headings.length === 0) return;
 
-    if (!activeId && headings[0]) {
-      setActiveId(headings[0].id);
-    }
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -94,16 +91,31 @@ export function ArticleHeadingBar({ blocks = [], className }: ArticleHeadingBarP
     return () => observer.disconnect();
   }, [headings]);
 
-  // Keep active pill centered in the horizontal rail
+  // Keep active pill centered in the horizontal rail without affecting window scroll
   useEffect(() => {
     if (!activeId) return;
+
+    // Prevent rail auto-scroll on initial mount
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+
     const btn = buttonRefs.current[activeId];
-    if (btn && railRef.current) {
-      btn.scrollIntoView({
-        behavior: 'smooth',
-        inline: 'center',
-        block: 'nearest',
-      });
+    const rail = railRef.current;
+    if (btn && rail) {
+      const railRect = rail.getBoundingClientRect();
+      const btnRect = btn.getBoundingClientRect();
+      const btnCenter = btnRect.left + btnRect.width / 2;
+      const railCenter = railRect.left + railRect.width / 2;
+      const deltaX = btnCenter - railCenter;
+
+      if (Math.abs(deltaX) > 8) {
+        rail.scrollBy({
+          left: deltaX,
+          behavior: 'smooth',
+        });
+      }
     }
   }, [activeId]);
 
