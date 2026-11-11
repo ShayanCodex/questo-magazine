@@ -310,46 +310,85 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
       {/* Editorial Footer */}
       <footer className="border-t border-editorial-border py-12 px-6 sm:px-10 lg:px-16 mt-auto bg-editorial-surface/40">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-          <div>
-            <span className="font-display font-black text-xl uppercase tracking-tighter">
-              {siteConfig.name} Magazine
-            </span>
-            <p className="font-serif text-sm text-editorial-muted mt-2 max-w-md">
-              {siteConfig.description}
-            </p>
+        <div className="max-w-7xl mx-auto space-y-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div>
+              <span className="font-display font-black text-xl uppercase tracking-tighter">
+                {siteConfig.name} Magazine
+              </span>
+              <p className="font-serif text-sm text-editorial-muted mt-2 max-w-md">
+                {siteConfig.description}
+              </p>
+            </div>
+
+            {/* Crawler-accessible plain language links */}
+            <div className="flex flex-col gap-2">
+              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted">
+                {t.languages}
+              </span>
+              <nav
+                aria-label="Footer language navigation"
+                className="flex flex-wrap gap-4 text-sm font-medium"
+              >
+                {siteConfig.languages.map((lang) => {
+                  const targetPath = switchLanguagePath(lang.code, currentPath);
+                  const isCurrent = lang.code === language.code;
+
+                  return (
+                    <Link
+                      key={lang.code}
+                      to={targetPath}
+                      className={`transition-colors py-1 ${
+                        isCurrent
+                          ? 'text-accent font-semibold underline underline-offset-4'
+                          : 'text-editorial-muted hover:text-editorial-text'
+                      }`}
+                      aria-current={isCurrent ? 'true' : undefined}
+                      hrefLang={lang.code}
+                    >
+                      {lang.name}
+                    </Link>
+                  );
+                })}
+              </nav>
+            </div>
           </div>
 
-          {/* Crawler-accessible plain language links */}
-          <div className="flex flex-col gap-2">
-            <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted">
-              {t.languages}
-            </span>
-            <nav
-              aria-label="Footer language navigation"
-              className="flex flex-wrap gap-4 text-sm font-medium"
-            >
-              {siteConfig.languages.map((lang) => {
-                const targetPath = switchLanguagePath(lang.code, currentPath);
-                const isCurrent = lang.code === language.code;
+          {/* Bottom Legal & Regulatory Compliance Row */}
+          <div className="pt-6 border-t border-editorial-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-editorial-muted">
+            <div className="flex flex-wrap items-center gap-4">
+              <span>&copy; 2026 {siteConfig.name} Publishing Group. All rights reserved.</span>
+              <span>•</span>
+              <Link
+                to={localePath('/privacy')}
+                className="hover:text-editorial-text underline underline-offset-2 transition-colors"
+              >
+                Privacy &amp; Regulatory Disclosures
+              </Link>
+              <span>•</span>
+              <a
+                href="/feed.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-editorial-text underline underline-offset-2 transition-colors"
+              >
+                RSS Feed
+              </a>
+              <span>•</span>
+              <a
+                href="/atom.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-editorial-text underline underline-offset-2 transition-colors"
+              >
+                Atom Feed
+              </a>
+            </div>
 
-                return (
-                  <Link
-                    key={lang.code}
-                    to={targetPath}
-                    className={`transition-colors py-1 ${
-                      isCurrent
-                        ? 'text-accent font-semibold underline underline-offset-4'
-                        : 'text-editorial-muted hover:text-editorial-text'
-                    }`}
-                    aria-current={isCurrent ? 'true' : undefined}
-                    hrefLang={lang.code}
-                  >
-                    {lang.name}
-                  </Link>
-                );
-              })}
-            </nav>
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>Edge Verified • Cloudflare Pages</span>
+            </div>
           </div>
         </div>
       </footer>

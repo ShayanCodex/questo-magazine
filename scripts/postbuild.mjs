@@ -20,6 +20,15 @@ function cleanUrl(baseUrl, pathname) {
   return cleanPath ? `${base}/${cleanPath}` : `${base}/`;
 }
 
+function escapeXml(unsafe) {
+  return String(unsafe || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 function generateSitemap() {
   const siteConfig = getSiteConfig();
   const baseUrl = siteConfig.url || 'https://questo-blog.netlify.app';
@@ -95,6 +104,27 @@ ${alternates.join('\n')}
   </url>`);
   }
 
+  // 2c. Privacy policy page entries (available in all languages)
+  for (const lang of languages) {
+    const isDefault = lang.code === defaultLang;
+    const pathPart = isDefault ? 'privacy' : `${lang.code}/privacy`;
+    const loc = cleanUrl(baseUrl, pathPart);
+
+    const alternates = languages.map(l => {
+      const p = l.code === defaultLang ? 'privacy' : `${l.code}/privacy`;
+      return `    <xhtml:link rel="alternate" hreflang="${l.code}" href="${cleanUrl(baseUrl, p)}" />`;
+    });
+    alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${cleanUrl(baseUrl, 'privacy')}" />`);
+
+    entries.push(`  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+${alternates.join('\n')}
+  </url>`);
+  }
+
   // 3. Tags pages entries (available in all languages)
   for (const tag of tags) {
     for (const lang of languages) {
@@ -118,12 +148,11 @@ ${alternates.join('\n')}
     }
   }
 
-  // 4. Articles entries (ONLY real versions included; untranslated fallbacks are omitted from sitemap)
+  // 4. Articles entries
   for (const article of articles) {
     const slug = article.slug;
     const lastmod = article.updated || article.date || today;
 
-    // Determine available real languages for this article
     const availableLangs = [defaultLang];
     for (const lang of languages) {
       if (lang.code === defaultLang) continue;
@@ -153,14 +182,84 @@ ${alternates.join('\n')}
     }
   }
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+  return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${entries.join('\n')}
 </urlset>
 `;
+}
 
-  return xml;
+function generateRssFeed(articles, customTitle, customDescription, feedUrlPath) {
+  const siteConfig = getSiteConfig();
+  const baseUrl = siteConfig.url || 'https://questo-blog.netlify.app';
+  const title = customTitle || `${siteConfig.name} Magazine`;
+  const description = customDescription || siteConfig.description;
+  const feedUrl = cleanUrl(baseUrl, feedUrlPath || 'feed.xml');
+  const homeUrl = cleanUrl(baseUrl, '');
+
+  const itemsXml = articles.map(art => {
+    const artUrl = cleanUrl(baseUrl, `articles/${art.slug}`);
+    const pubDate = new Date(art.date).toUTCString();
+    return `    <item>
+      <title><![CDATA[${art.title}]]></title>
+      <link>${artUrl}</link>
+      <guid isPermaLink="true">${artUrl}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <description><![CDATA[${art.excerpt}]]></description>
+      <author><![CDATA[${art.author}]]></author>
+      ${art.category ? `<category>${escapeXml(art.category)}</category>` : ''}
+    </item>`;
+  }).join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeXml(title)}</title>
+    <link>${homeUrl}</link>
+    <description>${escapeXml(description)}</description>
+    <language>en</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />
+${itemsXml}
+  </channel>
+</rss>
+`;
+}
+
+function generateAtomFeed(articles) {
+  const siteConfig = getSiteConfig();
+  const baseUrl = siteConfig.url || 'https://questo-blog.netlify.app';
+  const feedUrl = cleanUrl(baseUrl, 'atom.xml');
+  const homeUrl = cleanUrl(baseUrl, '');
+  const updated = new Date().toISOString();
+
+  const entriesXml = articles.map(art => {
+    const artUrl = cleanUrl(baseUrl, `articles/${art.slug}`);
+    const artUpdated = new Date(art.updated || art.date).toISOString();
+    return `  <entry>
+    <title>${escapeXml(art.title)}</title>
+    <link href="${artUrl}" />
+    <id>${artUrl}</id>
+    <updated>${artUpdated}</updated>
+    <summary>${escapeXml(art.excerpt)}</summary>
+    <author>
+      <name>${escapeXml(art.author)}</name>
+    </author>
+  </entry>`;
+  }).join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>${escapeXml(siteConfig.name)} Magazine</title>
+  <subtitle>${escapeXml(siteConfig.description)}</subtitle>
+  <link href="${homeUrl}" />
+  <link href="${feedUrl}" rel="self" type="application/atom+xml" />
+  <id>${homeUrl}</id>
+  <updated>${updated}</updated>
+${entriesXml}
+</feed>
+`;
 }
 
 function run() {
@@ -171,6 +270,7 @@ function run() {
 
   const siteConfig = getSiteConfig();
   const baseUrl = siteConfig.url || 'https://questo-blog.netlify.app';
+  const articles = getAllArticles().sort((a, b) => b.date.localeCompare(a.date));
 
   // 1. Generate sitemap.xml
   const sitemapXml = generateSitemap();
@@ -187,8 +287,45 @@ Sitemap: ${cleanUrl(baseUrl, 'sitemap.xml')}
   const robotsPath = path.join(distDir, 'robots.txt');
   fs.writeFileSync(robotsPath, robotsTxt, 'utf8');
   console.log(`✓ Generated robots.txt at: ${path.relative(rootDir, robotsPath)}`);
-  console.log('✅ Postbuild complete.\n');
+
+  // 3. Generate Master RSS 2.0 Feed (feed.xml & rss.xml)
+  const rssXml = generateRssFeed(articles, `${siteConfig.name} Magazine — Master Feed`, siteConfig.description, 'feed.xml');
+  fs.writeFileSync(path.join(distDir, 'feed.xml'), rssXml, 'utf8');
+  fs.writeFileSync(path.join(distDir, 'rss.xml'), rssXml, 'utf8');
+  console.log(`✓ Generated master RSS feeds at: dist/feed.xml & dist/rss.xml`);
+
+  // 4. Generate Master Atom 1.0 Feed (atom.xml)
+  const atomXml = generateAtomFeed(articles);
+  fs.writeFileSync(path.join(distDir, 'atom.xml'), atomXml, 'utf8');
+  console.log(`✓ Generated master Atom feed at: dist/atom.xml`);
+
+  // 5. Generate Granular Per-Category RSS Feeds
+  const feedsDir = path.join(distDir, 'feeds');
+  if (!fs.existsSync(feedsDir)) {
+    fs.mkdirSync(feedsDir, { recursive: true });
+  }
+
+  const categories = [
+    { id: 'architecture-and-space', name: 'Architecture & Spatial Design' },
+    { id: 'art-and-culture', name: 'Art, Culture & Sculpture' },
+    { id: 'design-and-typography', name: 'Design & Typographic Systems' },
+    { id: 'engineering-and-technology', name: 'Engineering & Static Systems' },
+  ];
+
+  for (const cat of categories) {
+    const catArticles = articles.filter(a => a.category === cat.id);
+    const catRss = generateRssFeed(
+      catArticles,
+      `${siteConfig.name} — ${cat.name}`,
+      `Curated dispatches on ${cat.name}`,
+      `feeds/${cat.id}.xml`
+    );
+    const catPath = path.join(feedsDir, `${cat.id}.xml`);
+    fs.writeFileSync(catPath, catRss, 'utf8');
+    console.log(`✓ Generated category feed (${catArticles.length} items): dist/feeds/${cat.id}.xml`);
+  }
+
+  console.log('✅ Postbuild complete with RSS, Atom, and Category feeds.\n');
 }
 
 run();
-

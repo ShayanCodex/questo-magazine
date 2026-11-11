@@ -1,17 +1,30 @@
-# Default caching and security headers for all clean URLs and HTML pages
+# Cloudflare Pages Enterprise Edge Caching & Strict Security Headers
 /*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://giscus.app https://hits.sh; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://giscus.app; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' https: blob: data:; connect-src 'self' https://hits.sh https://api.visitorbadge.io https://giscus.app https://api.github.com; frame-src 'self' https://giscus.app;
   Cache-Control: public, max-age=0, must-revalidate
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
 
-# Sitemap and robots
+/data/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  X-Content-Type-Options: nosniff
+
+/feed.xml
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/atom.xml
+  Content-Type: application/atom+xml; charset=utf-8
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 /sitemap.xml
-  Cache-Control: public, max-age=0, must-revalidate
-
-/robots.txt
-  Cache-Control: public, max-age=0, must-revalidate
-
-# Content-hashed static JavaScript, CSS, and media assets
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
-
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=86400

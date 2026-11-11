@@ -127,6 +127,9 @@ export function getIncludedRoutes() {
     // Categories Index
     routes.push(`${prefix}/categories`);
 
+    // Privacy & Regulatory Disclosures
+    routes.push(`${prefix}/privacy`);
+
     // Dynamic Article routes
     for (const article of articles) {
       routes.push(`${prefix}/articles/${article.slug}`);

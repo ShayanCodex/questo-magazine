@@ -141,6 +141,20 @@ export function Seo({
       })}
       <link rel="alternate" hrefLang="x-default" href={xDefaultUrl} />
 
+      {/* RSS & Atom Feeds Autodiscovery */}
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title={`${siteConfig.name} Magazine RSS Feed`}
+        href={`${siteUrl}/feed.xml`}
+      />
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title={`${siteConfig.name} Magazine Atom Feed`}
+        href={`${siteUrl}/atom.xml`}
+      />
+
       {/* Open Graph */}
       <meta property="og:site_name" content={siteConfig.name} />
       <meta property="og:title" content={title} />

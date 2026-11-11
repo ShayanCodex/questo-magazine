@@ -13,6 +13,7 @@ import { Articles } from './pages/Articles';
 import { Categories } from './pages/Categories';
 import { Article } from './pages/Article';
 import { Tag } from './pages/Tag';
+import { Privacy } from './pages/Privacy';
 import { NotFound } from './pages/NotFound';
 
 const defaultLangObj =
@@ -120,6 +121,10 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           };
         },
         errorElement: <NotFound />,
+      },
+      {
+        path: 'privacy',
+        element: <Privacy />,
       },
       {
         path: '*',

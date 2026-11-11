@@ -1,11 +1,25 @@
 import type { ArticleData } from './types';
 import { defaultLanguage } from './site';
 
-// Lazy glob loaders for articles and translations
-const articleModules = import.meta.glob<ArticleData>('/content/articles/*.json');
-const translationModules = import.meta.glob<ArticleData>(
-  '/content/translations/*/*.json'
-);
+// Grouped compressed master JSON bundles generated during build
+import masterEn from '../data/master-articles.en.json';
+import masterEs from '../data/master-articles.es.json';
+import masterFr from '../data/master-articles.fr.json';
+import masterDe from '../data/master-articles.de.json';
+import masterAr from '../data/master-articles.ar.json';
+import masterUr from '../data/master-articles.ur.json';
+import availableLangsData from '../data/available-languages.json';
+
+const MASTER_BUNDLES: Record<string, ArticleData[]> = {
+  en: masterEn as unknown as ArticleData[],
+  es: masterEs as unknown as ArticleData[],
+  fr: masterFr as unknown as ArticleData[],
+  de: masterDe as unknown as ArticleData[],
+  ar: masterAr as unknown as ArticleData[],
+  ur: masterUr as unknown as ArticleData[],
+};
+
+const AVAILABLE_LANGS: Record<string, string[]> = availableLangsData as Record<string, string[]>;
 
 /**
  * Format a YYYY-MM-DD date string with fixed UTC timezone to prevent hydration mismatches.
@@ -60,55 +74,40 @@ export function calculateReadingTime(
  * Extract all unique slugs across content/articles
  */
 export function getAllArticleSlugs(): string[] {
-  return Object.keys(articleModules)
-    .map((path) => {
-      const match = path.match(/\/([^/]+)\.json$/);
-      return match ? match[1] : '';
-    })
-    .filter(Boolean)
-    .sort();
+  const baseArticles = MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
+  return baseArticles.map((a) => a.slug).sort();
 }
 
 /**
- * Load a single article for a specific language.
+ * Load a single article for a specific language from grouped master JSON array.
  * Falls back to default English article if translation is missing.
  */
 export async function loadArticle(
   slug: string,
   langCode: string
 ): Promise<ArticleData | null> {
-  const isDefaultLang = langCode === defaultLanguage;
-  const baseKey = `/content/articles/${slug}.json`;
-  const transKey = `/content/translations/${langCode}/${slug}.json`;
-
-  if (!isDefaultLang && translationModules[transKey]) {
-    const mod = await translationModules[transKey]();
-    return { ...mod, isFallback: false };
+  const bundle = MASTER_BUNDLES[langCode] || MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
+  const article = bundle.find((a) => a.slug === slug);
+  if (article) {
+    return article;
   }
 
-  if (articleModules[baseKey]) {
-    const mod = await articleModules[baseKey]();
-    return { ...mod, isFallback: !isDefaultLang };
+  // Fallback to default language
+  const defaultBundle = MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
+  const fallback = defaultBundle.find((a) => a.slug === slug);
+  if (fallback) {
+    return { ...fallback, isFallback: true };
   }
 
   return null;
 }
 
 /**
- * Load all articles for a specific language, sorted by date descending.
+ * Load all articles for a specific language from grouped master JSON array, sorted by date descending.
  */
 export async function loadAllArticles(langCode: string): Promise<ArticleData[]> {
-  const slugs = getAllArticleSlugs();
-  const articles: ArticleData[] = [];
-
-  for (const slug of slugs) {
-    const article = await loadArticle(slug, langCode);
-    if (article) {
-      articles.push(article);
-    }
-  }
-
-  return articles.sort((a, b) => b.date.localeCompare(a.date));
+  const bundle = MASTER_BUNDLES[langCode] || MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
+  return [...bundle].sort((a, b) => b.date.localeCompare(a.date));
 }
 
 /**
@@ -131,13 +130,6 @@ export async function loadAllTags(): Promise<string[]> {
  * Check which languages have a real (non-fallback) version of an article.
  */
 export function getAvailableRealLanguages(slug: string): string[] {
-  const langs = [defaultLanguage];
-  for (const path of Object.keys(translationModules)) {
-    const match = path.match(/\/content\/translations\/([^/]+)\/([^/]+)\.json$/);
-    if (match && match[2] === slug) {
-      langs.push(match[1]);
-    }
-  }
-  return Array.from(new Set(langs));
+  return AVAILABLE_LANGS[slug] || [defaultLanguage];
 }
 

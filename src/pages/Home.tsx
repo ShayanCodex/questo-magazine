@@ -16,6 +16,7 @@ import { EditorialDisciplines } from '../components/EditorialDisciplines';
 import { EditorialFaq } from '../components/EditorialFaq';
 import { EditorialDispatch } from '../components/EditorialDispatch';
 import { EditorialMarquee } from '../components/EditorialMarquee';
+import { LazyImage } from '../components/LazyImage';
 
 interface HomeLoaderData {
   articles: ArticleData[];
@@ -232,11 +233,10 @@ export function Home() {
                       to={localePath(`/articles/${article.slug}`)}
                       className="shrink-0 w-full sm:w-48 h-48 sm:h-36 overflow-hidden rounded-lg border border-editorial-border bg-editorial-surface block relative shadow-xs group/img"
                     >
-                      <img
+                      <LazyImage
                         src={article.image}
                         alt={article.imageAlt || article.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                        loading="lazy"
                       />
                       {/* Floating Category Tag */}
                       <span className="absolute top-2 start-2 z-10 px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/80 backdrop-blur-md text-white rounded-full border border-white/20 shadow-xs">

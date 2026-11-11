@@ -23,6 +23,8 @@ import { QuoteSelectionPopup } from '../components/QuoteSelectionPopup';
 import { ImageLightbox } from '../components/ImageLightbox';
 import { ArticleToc } from '../components/ArticleToc';
 import { ArticleHeadingBar } from '../components/ArticleHeadingBar';
+import { ArticleComments } from '../components/ArticleComments';
+import { LazyImage } from '../components/LazyImage';
 import { cn } from '../lib/utils';
 
 interface ArticleLoaderData {
@@ -347,6 +349,9 @@ export function Article() {
           </div>
         </footer>
 
+        {/* Client-Side Community Comments Powered by Giscus with Edge Caching Proxy */}
+        <ArticleComments slug={article.slug} title={article.title} />
+
         {/* Related Articles Section: Keeps readers engaged with high-contrast monographs */}
         {relatedArticles.length > 0 && (
           <section className="pt-12 mt-12 border-t border-editorial-border space-y-6">
@@ -388,11 +393,10 @@ export function Article() {
                           aria-hidden="true"
                           className="block aspect-[16/10] overflow-hidden bg-neutral-900 relative"
                         >
-                          <img
+                          <LazyImage
                             src={rel.image}
                             alt={rel.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                            loading="lazy"
                           />
                           <div className="absolute top-2.5 start-2.5">
                             <span className="px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/75 backdrop-blur-xs text-white rounded-full border border-white/15 shadow-xs">

@@ -1,4 +1,13 @@
 name = "questo-editorial-blog"
 compatibility_date = "2026-11-08"
+compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
+[build]
+command = "npm run build"
+
+[env.production]
+name = "questo-editorial-blog"
+
+[env.preview]
+name = "questo-editorial-blog-preview"

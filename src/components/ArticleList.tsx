@@ -5,6 +5,7 @@ import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory, getCategoryShortName, formatTopicName } from '../lib/categories';
 import { ArticleViewCount } from './ArticleViewCount';
 import { BookmarkButton } from './BookmarkButton';
+import { LazyImage } from './LazyImage';
 import { cn } from '../lib/utils';
 
 export interface ArticleListProps {
@@ -134,14 +135,10 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                     aria-hidden="true"
                     className="block relative aspect-[16/10] sm:aspect-[4/3] rounded-xl overflow-hidden border border-editorial-border bg-editorial-surface shadow-xs group/img transition-all hover:border-editorial-text"
                   >
-                    <img
+                    <LazyImage
                       src={article.image}
                       alt={article.imageAlt || article.title}
                       className="w-full h-full object-cover group-hover/row:scale-105 transition-transform duration-700 ease-out"
-                      loading="lazy"
-                      onError={(e) => {
-                        (e.currentTarget as HTMLElement).style.display = 'none';
-                      }}
                     />
 
                     {/* Floating Category Badge over Artwork (Rounded Full + Poppins) */}
