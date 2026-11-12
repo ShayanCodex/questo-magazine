@@ -88,7 +88,7 @@ export function EditorialFaq() {
     <section className="pt-12 sm:pt-16 border-t border-editorial-border space-y-8">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <span className="text-xs font-mono uppercase tracking-widest text-accent font-semibold block mb-2">
+          <span className="text-xs font-sans font-semibold uppercase tracking-widest text-accent block mb-2">
             Inquiries &amp; Standards
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-editorial-text uppercase tracking-tight">

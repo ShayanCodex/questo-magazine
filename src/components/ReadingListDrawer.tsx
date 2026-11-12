@@ -126,7 +126,7 @@ export function ReadingListDrawer({
                         {article.excerpt}
                       </p>
 
-                      <div className="pt-1 flex items-center gap-2 text-[11px] font-mono text-editorial-muted">
+                      <div className="pt-1 flex items-center gap-2 text-[11px] font-sans font-medium text-editorial-muted">
                         <Link
                           to={articleUrl}
                           onClick={() => onOpenChange(false)}

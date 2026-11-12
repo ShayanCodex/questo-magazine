@@ -188,7 +188,7 @@ export function ArticleAudioPlayer({
       <button
         type="button"
         onClick={cycleRate}
-        className="px-2 py-0.5 rounded-full border border-editorial-border/80 bg-editorial-surface-subtle hover:bg-editorial-text hover:text-editorial-bg text-editorial-muted hover:border-editorial-text text-[11px] font-mono font-semibold transition-all cursor-pointer shrink-0"
+        className="px-2 py-0.5 rounded-full border border-editorial-border/80 bg-editorial-surface-subtle hover:bg-editorial-text hover:text-editorial-bg text-editorial-muted hover:border-editorial-text text-[11px] font-sans font-semibold transition-all cursor-pointer shrink-0"
         title="Change audio playback speed"
       >
         {currentRate}x

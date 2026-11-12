@@ -61,7 +61,7 @@ export function ArticleViewCount({
     return (
       <span
         className={cn(
-          'inline-flex items-center gap-1 font-mono text-[11px] text-editorial-muted',
+          'inline-flex items-center gap-1 font-sans font-medium text-[11px] text-editorial-muted',
           className
         )}
         title={`Total views: ${formattedCount}`}
@@ -80,7 +80,7 @@ export function ArticleViewCount({
   return (
     <div
       className={cn(
-        'inline-flex items-center gap-1.5 font-mono text-xs text-editorial-muted',
+        'inline-flex items-center gap-1.5 font-sans font-medium text-xs text-editorial-muted',
         className
       )}
       title={`Total views: ${formattedCount}`}

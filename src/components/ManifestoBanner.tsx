@@ -6,7 +6,7 @@ export function ManifestoBanner() {
   return (
     <section className="pt-10 sm:pt-14 border-t border-editorial-border">
       <div className="py-12 sm:py-16 px-6 sm:px-12 bg-editorial-text text-editorial-bg rounded-sm space-y-6 text-center sm:text-start relative overflow-hidden">
-        <span className="font-mono text-xs uppercase tracking-widest text-editorial-bg/80 font-semibold block">
+        <span className="font-sans text-xs uppercase tracking-widest text-editorial-bg/80 font-semibold block">
           Editorial Manifesto
         </span>
 
@@ -14,7 +14,7 @@ export function ManifestoBanner() {
           “{t.manifestoText}”
         </blockquote>
 
-        <cite className="font-mono text-xs uppercase tracking-wider block text-editorial-bg/70 not-italic">
+        <cite className="font-sans text-xs uppercase tracking-wider block text-editorial-bg/70 not-italic font-medium">
           — {t.manifestoAuthor}
         </cite>
       </div>

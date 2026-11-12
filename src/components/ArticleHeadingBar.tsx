@@ -157,7 +157,7 @@ export function ArticleHeadingBar({ blocks = [], className }: ArticleHeadingBarP
           <span className="hidden sm:inline font-sans text-xs font-semibold uppercase tracking-wider">
             Jump to
           </span>
-          <span className="inline-flex items-center justify-center font-mono text-[10px] h-4 min-w-[1rem] px-1 rounded-full bg-editorial-text/10 text-editorial-text font-bold">
+          <span className="inline-flex items-center justify-center font-sans text-[10px] h-4 min-w-[1rem] px-1 rounded-full bg-editorial-text/10 text-editorial-text font-bold">
             {headings.length}
           </span>
         </div>
@@ -208,7 +208,7 @@ export function ArticleHeadingBar({ blocks = [], className }: ArticleHeadingBarP
                 ) : (
                   <span
                     className={cn(
-                      'font-mono text-[10px] shrink-0 font-bold',
+                      'font-sans text-[10px] shrink-0 font-bold',
                       isActive ? 'opacity-90' : 'opacity-50'
                     )}
                   >

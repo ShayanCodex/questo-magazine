@@ -249,7 +249,7 @@ export function Articles() {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-wider text-editorial-muted">
+          <div className="flex items-center gap-3 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
             <span>
               {filteredArticles.length} / {articles.length} {t.articlesFound}
             </span>
@@ -614,7 +614,7 @@ export function Articles() {
             <button
               type="button"
               onClick={handleResetFilters}
-              className="inline-block px-5 py-2.5 bg-editorial-text text-editorial-bg rounded-sm text-xs uppercase font-mono tracking-wider font-semibold hover:opacity-90 transition-opacity cursor-pointer shadow-xs"
+              className="inline-block px-5 py-2.5 bg-editorial-text text-editorial-bg rounded-sm text-xs uppercase font-sans tracking-wider font-semibold hover:opacity-90 transition-opacity cursor-pointer shadow-xs"
             >
               {t.resetFilters}
             </button>
@@ -626,13 +626,13 @@ export function Articles() {
             {/* Click Next Page / Pagination Controls */}
             {totalPages > 1 && (
               <div className="pt-8 border-t border-editorial-border flex flex-col sm:flex-row items-center justify-between gap-4">
-                <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted">
+                <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
                   Showing {(safeCurrentPage - 1) * ARTICLES_PER_PAGE + 1}–
                   {Math.min(safeCurrentPage * ARTICLES_PER_PAGE, filteredArticles.length)} of{' '}
                   {filteredArticles.length} {t.articlesFound} (Page {safeCurrentPage} of {totalPages})
                 </span>
 
-                <div className="flex items-center gap-1.5 text-xs font-mono">
+                <div className="flex items-center gap-1.5 text-xs font-sans">
                   {/* Previous Page Button */}
                   <button
                     type="button"

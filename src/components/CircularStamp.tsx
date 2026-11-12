@@ -24,7 +24,7 @@ export function CircularStamp({
           d="M 60, 60 m -44, 0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
           fill="none"
         />
-        <text className="font-mono text-[9px] uppercase tracking-[0.24em] fill-editorial-text font-bold opacity-80">
+        <text className="font-sans text-[9px] uppercase tracking-[0.24em] fill-editorial-text font-bold opacity-80">
           <textPath href="#stampCirclePath" startOffset="0%">
             {text}
           </textPath>

@@ -64,7 +64,7 @@ export function ArticleTakeaways({ article, className }: ArticleTakeawaysProps) 
           </div>
         </div>
 
-        <span className="hidden sm:inline-flex text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-muted">
+        <span className="hidden sm:inline-flex text-[11px] font-sans font-medium px-2.5 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-muted">
           3 Points
         </span>
       </div>
@@ -78,7 +78,7 @@ export function ArticleTakeaways({ article, className }: ArticleTakeawaysProps) 
           >
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-full bg-editorial-text text-editorial-bg shadow-2xs">
+                <span className="font-sans text-xs font-bold px-2 py-0.5 rounded-full bg-editorial-text text-editorial-bg shadow-2xs">
                   0{idx + 1}
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-editorial-muted/40 group-hover:bg-accent transition-colors" />
@@ -89,7 +89,7 @@ export function ArticleTakeaways({ article, className }: ArticleTakeawaysProps) 
               </p>
             </div>
 
-            <div className="pt-2 border-t border-editorial-border/40 text-[10px] font-mono uppercase tracking-wider text-editorial-muted flex items-center justify-between">
+            <div className="pt-2 border-t border-editorial-border/40 text-[10px] font-sans font-medium uppercase tracking-wider text-editorial-muted flex items-center justify-between">
               <span>Point 0{idx + 1}</span>
               <span>Essential Thesis</span>
             </div>

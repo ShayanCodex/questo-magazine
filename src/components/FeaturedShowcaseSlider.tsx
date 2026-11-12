@@ -150,7 +150,7 @@ export function FeaturedShowcaseSlider({
         {/* Foreground Content Card: Oversized Editorial Type */}
         <div className="absolute bottom-5 sm:bottom-7 start-6 sm:start-10 end-28 sm:end-36 z-20 space-y-3 max-w-3xl">
           {/* Metadata Row */}
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs uppercase tracking-wider text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-sans font-medium text-xs uppercase tracking-wider text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)]">
             <Link
               to={localePath(`/articles?category=${category.id}`)}
               className="text-white font-bold hover:underline transition-colors pointer-events-auto"

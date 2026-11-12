@@ -245,18 +245,18 @@ export function SearchModal({
                 <XMarkIcon className="h-4 w-4" />
               </button>
             )}
-            <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono uppercase text-editorial-muted border border-editorial-border rounded-xs bg-editorial-surface-subtle">
+            <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-sans font-medium uppercase text-editorial-muted border border-editorial-border rounded-xs bg-editorial-surface-subtle">
               ESC
             </kbd>
           </div>
 
           {/* Smart Live Suggestions Strip with Sections: Only shows when typing (never beforehand) */}
           {query.trim().length >= 1 && liveStructured.total > 0 && (
-            <div className="px-3.5 py-2 border-b border-editorial-border/60 bg-editorial-surface-subtle flex flex-col gap-1.5 text-xs font-mono">
+            <div className="px-3.5 py-2 border-b border-editorial-border/60 bg-editorial-surface-subtle flex flex-col gap-1.5 text-xs font-sans">
               {/* Category Suggestions */}
               {liveStructured.categories.length > 0 && (
                 <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
+                  <span className="font-sans text-[10px] font-semibold uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
                     <FolderIcon className="h-3 w-3 text-editorial-text" />
                     <span>Categories:</span>
                   </span>
@@ -347,7 +347,7 @@ export function SearchModal({
 
             {tags.length > 0 && (
               <>
-                <span className="text-editorial-border select-none shrink-0 px-0.5 font-mono opacity-60">|</span>
+                <span className="text-editorial-border select-none shrink-0 px-0.5 font-sans opacity-60">|</span>
                 {tags.slice(0, 5).map((tag) => (
                   <button
                     key={tag}
@@ -441,7 +441,7 @@ export function SearchModal({
                         setQuery('');
                         setSelectedTag(null);
                       }}
-                      className="inline-block text-xs uppercase font-mono tracking-wider text-editorial-text hover:underline cursor-pointer"
+                      className="inline-block text-xs uppercase font-sans font-medium tracking-wider text-editorial-text hover:underline cursor-pointer"
                     >
                       {t.resetFilters}
                     </button>
@@ -522,7 +522,7 @@ export function SearchModal({
           </div>
 
           {/* Compact Accessible Footer */}
-          <div className="border-t border-editorial-border px-3.5 py-2 bg-editorial-surface-subtle flex items-center justify-between text-[10px] font-mono text-editorial-muted uppercase tracking-wider">
+          <div className="border-t border-editorial-border px-3.5 py-2 bg-editorial-surface-subtle flex items-center justify-between text-[10px] font-sans font-medium text-editorial-muted uppercase tracking-wider">
             <span>
               {filtered.length} {t.articlesFound}
             </span>

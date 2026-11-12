@@ -78,7 +78,7 @@ export function EditorialDisciplines() {
       {/* Header Row */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <span className="text-xs font-mono uppercase tracking-widest text-accent font-semibold block mb-2">
+          <span className="text-xs font-sans font-semibold uppercase tracking-widest text-accent block mb-2">
             Categories &amp; Subcategories
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-editorial-text uppercase tracking-tight">
@@ -114,7 +114,7 @@ export function EditorialDisciplines() {
 
               {/* Number Badge (Top-Start) */}
               <div className="absolute top-3 start-3">
-                <span className="font-mono text-xs font-bold px-2.5 py-0.5 rounded-full bg-black/75 backdrop-blur-md text-white border border-white/20 shadow-xs">
+                <span className="font-sans text-xs font-bold px-2.5 py-0.5 rounded-full bg-black/75 backdrop-blur-md text-white border border-white/20 shadow-xs">
                   {item.number}
                 </span>
               </div>
@@ -174,7 +174,7 @@ export function EditorialDisciplines() {
                   </Link>
                   <Link
                     to={localePath(`/tags/${item.tag}`)}
-                    className="font-mono text-[11px] text-editorial-muted hover:text-editorial-text transition-colors"
+                    className="font-sans font-medium text-[11px] text-editorial-muted hover:text-editorial-text transition-colors"
                   >
                     {item.tagLabel}
                   </Link>

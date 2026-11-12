@@ -169,7 +169,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
           {/* Top navigation links & icons */}
           <div className="flex items-center gap-1.5 sm:gap-2.5 md:gap-3 shrink-0">
             {/* Desktop Navigation Links - hidden on < xl to avoid overflowing screen */}
-            <nav className="hidden xl:flex items-center gap-6 text-xs uppercase font-mono tracking-wider text-editorial-muted me-3">
+            <nav className="hidden xl:flex items-center gap-6 text-xs uppercase font-sans font-medium tracking-wider text-editorial-muted me-3">
               <Link to={localePath('/')} className="hover:text-editorial-text transition-colors">
                 {t.home}
               </Link>
@@ -195,7 +195,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                   {t.searchPlaceholder || 'Search...'}
                 </span>
               </div>
-              <kbd className="hidden md:inline-flex items-center px-2 py-0.5 text-[10px] font-mono text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-full group-hover:border-editorial-text transition-colors shrink-0">
+              <kbd className="hidden md:inline-flex items-center px-2 py-0.5 text-[10px] font-sans font-medium text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-full group-hover:border-editorial-text transition-colors shrink-0">
                 ⌘K
               </kbd>
             </button>
@@ -238,7 +238,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               >
                 <GlobeAltIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text shrink-0" />
                 <span className="hidden sm:inline font-medium">{language.name}</span>
-                <span className="sm:hidden font-mono uppercase text-[11px]">{language.code}</span>
+                <span className="sm:hidden font-sans font-semibold uppercase text-[11px]">{language.code}</span>
                 <ChevronDownIcon
                   className={cn(
                     'h-3.5 w-3.5 text-editorial-muted transition-transform duration-200 shrink-0',
@@ -256,7 +256,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 >
                   <div className="px-2 py-1 text-[11px] font-semibold text-editorial-muted uppercase tracking-wider border-b border-editorial-border/60 mb-1 flex items-center justify-between">
                     <span>{t.languages}</span>
-                    <span className="text-[10px] font-mono opacity-60">6 locales</span>
+                    <span className="text-[10px] font-sans font-medium opacity-60">6 locales</span>
                   </div>
                   {siteConfig.languages.map((lang) => {
                     const isCurrent = lang.code === language.code;
@@ -323,7 +323,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
             {/* Crawler-accessible plain language links */}
             <div className="flex flex-col gap-2">
-              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted">
+              <span className="text-xs font-sans font-semibold uppercase tracking-wider text-editorial-muted">
                 {t.languages}
               </span>
               <nav
@@ -355,7 +355,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
           </div>
 
           {/* Bottom Legal & Regulatory Compliance Row */}
-          <div className="pt-6 border-t border-editorial-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-editorial-muted">
+          <div className="pt-6 border-t border-editorial-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-editorial-muted">
             <div className="flex flex-wrap items-center gap-4">
               <span>&copy; 2026 {siteConfig.name} Publishing Group. All rights reserved.</span>
               <span>•</span>
@@ -432,20 +432,20 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 setDrawerOpen(false);
                 setSearchOpen(true);
               }}
-              className="w-full flex items-center justify-between p-3 rounded-sm border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors text-xs font-mono uppercase tracking-wider cursor-pointer bg-editorial-surface-subtle"
+              className="w-full flex items-center justify-between p-3 rounded-sm border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors text-xs font-sans font-medium uppercase tracking-wider cursor-pointer bg-editorial-surface-subtle"
             >
               <span className="flex items-center gap-2">
                 <MagnifyingGlassIcon className="h-4 w-4 text-editorial-text" />
                 <span>{t.search}</span>
               </span>
-              <kbd className="px-1.5 py-0.5 text-[10px] bg-editorial-surface border border-editorial-border rounded-sm">
+              <kbd className="px-1.5 py-0.5 text-[10px] font-sans font-medium bg-editorial-surface border border-editorial-border rounded-sm">
                 ⌘K
               </kbd>
             </button>
 
             {/* Theme Toggle in Drawer */}
             <div className="flex items-center justify-between p-3 rounded-sm border border-editorial-border bg-editorial-surface">
-              <span className="text-xs font-mono uppercase tracking-wider text-editorial-muted">
+              <span className="text-xs font-sans font-semibold uppercase tracking-wider text-editorial-muted">
                 {t.theme || 'Theme'}
               </span>
               <ThemeToggle showLabel={true} />
@@ -484,7 +484,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               >
                 <span>Reading List</span>
                 {readingListCount > 0 && (
-                  <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-editorial-text text-editorial-bg font-bold">
+                  <span className="text-xs font-sans px-2 py-0.5 rounded-full bg-editorial-text text-editorial-bg font-bold">
                     {readingListCount}
                   </span>
                 )}

@@ -19,7 +19,7 @@ export function Privacy() {
       <header className="space-y-4 border-b border-editorial-border pb-8">
         <Link
           to={localePath('/')}
-          className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted hover:text-editorial-text transition-colors"
         >
           <ArrowLeftIcon className="h-3.5 w-3.5 rtl:rotate-180" />
           <span>Back to Publication</span>
@@ -29,7 +29,7 @@ export function Privacy() {
           <span className="p-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
             <ShieldCheckIcon className="h-4 w-4" />
           </span>
-          <span className="text-xs font-mono uppercase tracking-widest text-emerald-600 dark:text-emerald-400 font-semibold">
+          <span className="text-xs font-sans font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
             Compliance &amp; Data Ethics
           </span>
         </div>
@@ -116,7 +116,7 @@ export function Privacy() {
         </section>
       </div>
 
-      <footer className="pt-8 border-t border-editorial-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-editorial-muted">
+      <footer className="pt-8 border-t border-editorial-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-sans text-editorial-muted">
         <span>Published by {siteConfig.name} Editorial Board</span>
         <span>Last Updated: November 12, 2026</span>
       </footer>

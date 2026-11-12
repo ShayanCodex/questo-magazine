@@ -53,7 +53,7 @@ export function LazyImage({
       <div
         ref={wrapperRef}
         className={cn(
-          'w-full h-full bg-editorial-surface-subtle flex items-center justify-center text-editorial-muted text-[10px] font-mono',
+          'w-full h-full bg-editorial-surface-subtle flex items-center justify-center text-editorial-muted text-[10px] font-sans font-medium',
           wrapperClassName
         )}
         style={aspectRatio ? { aspectRatio } : undefined}

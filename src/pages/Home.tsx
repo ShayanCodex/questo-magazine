@@ -129,7 +129,7 @@ export function Home() {
               >
                 <span>{getCategoryShortName(cat.id)}</span>
                 {count > 0 && (
-                  <span className="text-[10px] opacity-60 group-hover/pill:opacity-90 font-mono">
+                  <span className="text-[10px] opacity-60 group-hover/pill:opacity-90 font-sans font-medium">
                     ({count})
                   </span>
                 )}
@@ -153,7 +153,7 @@ export function Home() {
           {/* Two-Column Lead Header */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start border-b border-editorial-border pb-8">
             <div className="lg:col-span-6">
-              <span className="text-xs font-mono uppercase tracking-widest text-editorial-muted block mb-2 font-medium">
+              <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted block mb-2">
                 Monograph of the Month
               </span>
               <h2 className="font-display font-black text-[clamp(2.5rem,5.5vw,4.75rem)] leading-[0.98] tracking-tight uppercase text-editorial-text">
@@ -172,7 +172,7 @@ export function Home() {
               </p>
 
               {/* Editorial Meta Row */}
-              <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-mono uppercase tracking-wider text-editorial-muted">
+              <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
                 <span>
                   <strong className="text-editorial-text font-semibold">{t.textBy}:</strong> {heroArticle.author}
                 </span>
@@ -289,7 +289,7 @@ export function Home() {
             <div className="pt-6">
               <Link
                 to={localePath('/articles')}
-                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-accent hover:underline font-semibold group"
+                className="inline-flex items-center gap-2 text-xs font-sans uppercase tracking-widest text-accent hover:underline font-semibold group"
               >
                 <span>{t.allArticles} ({articles.length})</span>
                 <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />

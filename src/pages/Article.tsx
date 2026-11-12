@@ -139,7 +139,7 @@ export function Article() {
           )}
 
           {/* Category & Subcategory Taxonomy Badges (Click to Go) */}
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-xs font-sans font-medium uppercase tracking-wider">
             <Link
               to={localePath(`/articles?category=${category.id}`)}
               className="text-editorial-text font-bold hover:text-accent transition-colors"
@@ -168,7 +168,7 @@ export function Article() {
           </p>
 
           {/* Article Meta Bar */}
-          <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-mono uppercase tracking-wider text-editorial-muted pt-2 border-b border-editorial-border pb-4">
+          <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted pt-2 border-b border-editorial-border pb-4">
             <span>
               <strong className="text-editorial-text font-semibold">{t.textBy}:</strong> {article.author}
             </span>
@@ -357,7 +357,7 @@ export function Article() {
           <section className="pt-12 mt-12 border-t border-editorial-border space-y-6">
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-xs font-mono uppercase tracking-widest text-editorial-muted block font-medium">
+                <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted block">
                   Recommended Reading
                 </span>
                 <h3 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
@@ -366,7 +366,7 @@ export function Article() {
               </div>
               <Link
                 to={localePath('/articles')}
-                className="text-xs font-mono uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1"
+                className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1"
               >
                 <span>All Articles</span>
                 <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
@@ -407,7 +407,7 @@ export function Article() {
                       )}
 
                       <div className="p-4 space-y-2">
-                        <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-wider text-editorial-muted">
+                        <div className="flex items-center gap-2 text-[10px] font-sans font-medium uppercase tracking-wider text-editorial-muted">
                           <span>{relDate}</span>
                           <span>•</span>
                           <span>{relReading}</span>
@@ -421,7 +421,7 @@ export function Article() {
                       </div>
                     </div>
 
-                    <div className="px-4 pb-4 pt-2 flex items-center justify-between border-t border-editorial-border/50 text-xs font-mono">
+                    <div className="px-4 pb-4 pt-2 flex items-center justify-between border-t border-editorial-border/50 text-xs font-sans">
                       <Link
                         to={relUrl}
                         className="text-accent hover:underline flex items-center gap-1 font-semibold text-[11px] uppercase tracking-wider"

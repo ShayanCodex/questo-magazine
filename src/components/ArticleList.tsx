@@ -56,7 +56,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start pointer-events-none">
               {/* Meta column: Author avatar, date, and real-time GoatCounter views */}
-              <div className="md:col-span-3 text-xs font-mono uppercase tracking-wider text-editorial-muted flex flex-row md:flex-col justify-between md:justify-start gap-1.5">
+              <div className="md:col-span-3 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted flex flex-row md:flex-col justify-between md:justify-start gap-1.5">
                 <div className="flex items-center gap-2">
                   <div className="w-5 h-5 rounded-full bg-editorial-surface-subtle border border-editorial-border flex items-center justify-center text-[10px] font-bold text-editorial-text shrink-0">
                     {article.author.charAt(0)}

@@ -84,7 +84,7 @@ export function EditorialDispatch() {
             </form>
           )}
 
-          <div className="flex flex-wrap items-center gap-4 text-[11px] font-mono uppercase tracking-wider text-white/80 pt-2 drop-shadow-sm">
+          <div className="flex flex-wrap items-center gap-4 text-[11px] font-sans font-medium uppercase tracking-wider text-white/80 pt-2 drop-shadow-sm">
             <span>• Delivered every Sunday</span>
             <span>• Unsubscribe anytime</span>
             <span>• 1,500+ Curated Readers</span>

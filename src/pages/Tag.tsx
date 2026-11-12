@@ -39,7 +39,7 @@ export function Tag() {
         <Breadcrumbs items={breadcrumbs} />
 
         <div className="space-y-2">
-          <span className="text-xs font-mono uppercase tracking-widest text-editorial-muted">
+          <span className="text-xs font-sans font-medium uppercase tracking-widest text-editorial-muted">
             {t.topics}
           </span>
           <h1 className="font-display font-extrabold text-[clamp(2.5rem,5vw,4.5rem)] leading-none tracking-tight text-editorial-text">
