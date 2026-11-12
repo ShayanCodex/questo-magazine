@@ -97,10 +97,10 @@ export function Privacy() {
         {/* Section 4: Community Comments */}
         <section className="space-y-3">
           <h2 className="font-display font-bold text-xl uppercase tracking-wide text-editorial-text">
-            4. Community Discourse (Giscus)
+            4. Community Discourse &amp; Guest Comments
           </h2>
           <p className="text-editorial-muted">
-            Reader comments are powered by <a href="https://giscus.app" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Giscus</a>, utilizing GitHub Discussions as a public backend. Interacting with comments requires voluntary sign-in through GitHub OAuth. Questo does not receive or store your GitHub credentials, email, or password.
+            Reader comments are powered by Questo&rsquo;s zero-tracking, login-free community discourse system. No registration, third-party account, password, or cookies are required. Your comments are published immediately under your chosen name (or as an anonymous Guest) with zero tracking cookies.
           </p>
         </section>
 
