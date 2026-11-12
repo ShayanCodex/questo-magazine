@@ -31,114 +31,17 @@ export function getAvatarColor(name: string): string {
   return AVATAR_PALETTE[Math.abs(hash) % AVATAR_PALETTE.length];
 }
 
-// Curated authentic editorial starter comments for each monograph
-const SEED_COMMENTS: Record<string, Omit<CommentItem, 'slug'>[]> = {
-  'the-geometry-of-silence': [
-    {
-      id: 'seed-geo-1',
-      author: 'Elena Vance',
-      avatarColor: 'bg-emerald-600 text-white',
-      content:
-        'The juxtaposition between void and mass is reminiscent of Tadao Ando’s Church of Light. The restraint in material selection allows natural light to become the primary architectural finish.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 26).toISOString(), // 26 hours ago
-      likes: 9,
-      isGuest: false,
-    },
-    {
-      id: 'seed-geo-2',
-      author: 'Julian Thorne',
-      avatarColor: 'bg-sky-600 text-white',
-      content:
-        'The monochrome photography of the brutalist facade captures the texture of raw poured concrete exceptionally well. In an era of sensory overload, silence in space is indeed luxury.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 14).toISOString(), // 14 hours ago
-      likes: 5,
-      isGuest: true,
-    },
-  ],
-  'the-grid-as-an-instrument': [
-    {
-      id: 'seed-grid-1',
-      author: 'Lukas Weber',
-      avatarColor: 'bg-violet-600 text-white',
-      content:
-        'Josef Müller-Brockmann’s 12-column grid still remains the single most resilient system for responsive typographic hierarchy. Brilliant synthesis on modular layout staves.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 48).toISOString(),
-      likes: 12,
-      isGuest: false,
-    },
-    {
-      id: 'seed-grid-2',
-      author: 'Sarah Chen',
-      avatarColor: 'bg-amber-600 text-white',
-      content:
-        'Particularly enjoyed the critique of arbitrary breakpoints. The mathematical proportional ratio approach feels much more natural across dynamic viewport widths.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 18).toISOString(),
-      likes: 7,
-      isGuest: true,
-    },
-  ],
-  'the-poetics-of-concrete': [
-    {
-      id: 'seed-concrete-1',
-      author: 'Marcus Holloway',
-      avatarColor: 'bg-rose-600 text-white',
-      content:
-        'Tactile permanence vs digital ephemerality. This contrast defines our generation’s design dilemma. There is something profoundly grounding about brutalist endurance.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 36).toISOString(),
-      likes: 8,
-      isGuest: false,
-    },
-  ],
-  'building-static-multilingual-publishing': [
-    {
-      id: 'seed-ssg-1',
-      author: 'Alexandre Dumas',
-      avatarColor: 'bg-indigo-600 text-white',
-      content:
-        'Zero runtime overhead and pure static pre-rendering with Edge CDN is the gold standard for global digital publications. Sub-50ms TTFB worldwide is unmatched.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 12).toISOString(),
-      likes: 11,
-      isGuest: false,
-    },
-  ],
-  'the-death-of-the-card-grid': [
-    {
-      id: 'seed-card-1',
-      author: 'Klara Lindqvist',
-      avatarColor: 'bg-teal-600 text-white',
-      content:
-        'Thank you for addressing the homogenisation of card layouts! Editorial pacing requires asymmetry, typographic hierarchy, and varied reading rhythms.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 30).toISOString(),
-      likes: 15,
-      isGuest: false,
-    },
-  ],
-  'pure-functional-simplicity': [
-    {
-      id: 'seed-func-1',
-      author: 'Mateo Rossi',
-      avatarColor: 'bg-neutral-800 text-neutral-100',
-      content:
-        '“Simplicity is prerequisite for reliability.” Dijkstra’s words remain as urgent today as they were forty years ago. Every abstraction added to a project is future liability.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 20).toISOString(),
-      likes: 10,
-      isGuest: false,
-    },
-  ],
-  'craft-over-convenience': [
-    {
-      id: 'seed-craft-1',
-      author: 'Hassan Raza',
-      avatarColor: 'bg-emerald-600 text-white',
-      content:
-        'Hand-crafted typography and thoughtful editorial curation will always outlive algorithmic clickbait feeds. Quality over quantity every single time.',
-      createdAt: new Date(Date.now() - 1000 * 60 * 60 * 22).toISOString(),
-      likes: 13,
-      isGuest: false,
-    },
-  ],
+const ARTICLE_ISSUE_MAP: Record<string, number> = {
+  'the-geometry-of-silence': 1,
+  'the-grid-as-an-instrument': 2,
+  'the-poetics-of-concrete': 3,
+  'building-static-multilingual-publishing': 4,
+  'the-death-of-the-card-grid': 5,
+  'pure-functional-simplicity': 6,
+  'craft-over-convenience': 7,
 };
 
+const GITHUB_REPO = import.meta.env.VITE_GITHUB_REPO || 'ShayanCodex/questo-magazine';
 const STORAGE_KEY_PREFIX = 'questo_article_comments_v1_';
 const LIKES_STORAGE_KEY = 'questo_user_liked_comments_v1';
 const USER_NAME_KEY = 'questo_commenter_name_v1';
@@ -155,13 +58,10 @@ export function saveCommenterName(name: string): void {
   }
 }
 
-export function getArticleComments(slug: string): CommentItem[] {
-  if (typeof window === 'undefined') {
-    const seeds = SEED_COMMENTS[slug] || [];
-    return seeds.map((s) => ({ ...s, slug }));
-  }
+// 1. Get initial comments from local cache (0ms instant render)
+export function getLocalArticleComments(slug: string): CommentItem[] {
+  if (typeof window === 'undefined') return [];
 
-  // Load user-submitted comments stored in localStorage
   let userComments: CommentItem[] = [];
   try {
     const raw = localStorage.getItem(STORAGE_KEY_PREFIX + slug);
@@ -172,37 +72,145 @@ export function getArticleComments(slug: string): CommentItem[] {
     userComments = [];
   }
 
-  // Load seeds for this slug
-  const seeds: CommentItem[] = (SEED_COMMENTS[slug] || []).map((s) => ({
-    ...s,
-    slug,
-  }));
-
-  // Combine user comments (newest first) + seeds
-  const combined = [...userComments, ...seeds];
-
-  // Attach liked state for this device
   const likedIds = getLikedCommentIds();
-  return combined.map((c) => ({
+  return userComments.map((c) => ({
     ...c,
-    isUserOwned: userComments.some((uc) => uc.id === c.id),
-    likes: c.likes + (likedIds.has(c.id) && !c.isUserOwned ? 1 : 0),
+    avatarColor: getAvatarColor(c.author),
+    isUserOwned: true,
+    likes: c.likes + (likedIds.has(c.id) ? 1 : 0),
   }));
 }
 
-export function addArticleComment(
+// 2. Fetch global comments from Cloud (GitHub Issues / Netlify API) visible to worldwide readers
+export async function fetchCloudComments(slug: string): Promise<CommentItem[]> {
+  if (typeof window === 'undefined') return [];
+
+  // Try local/Netlify serverless endpoint first
+  try {
+    const res = await fetch(`/api/comments?slug=${encodeURIComponent(slug)}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data.comments)) {
+        return (data.comments as CommentItem[]).map((c) => ({
+          ...c,
+          avatarColor: getAvatarColor(c.author),
+        }));
+      }
+    }
+  } catch {
+    // Netlify function or proxy not responding, fallback to direct GitHub public API
+  }
+
+  // Direct public GitHub API fallback (Zero authentication needed, public GitHub CDN)
+  const issueNumber = ARTICLE_ISSUE_MAP[slug];
+  if (!issueNumber) return [];
+
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${GITHUB_REPO}/issues/${issueNumber}/comments?per_page=100`,
+      {
+        headers: {
+          Accept: 'application/vnd.github.v3+json',
+        },
+      }
+    );
+    if (!res.ok) return [];
+
+    const ghComments = await res.json();
+    if (!Array.isArray(ghComments)) return [];
+
+    return ghComments.map((c: Record<string, unknown>) => {
+      const bodyStr = String(c.body || '');
+      const metaMatch = bodyStr.match(/<!--\s*questo-comment:\s*({.*?})\s*-->/s);
+      const userObj = c.user as Record<string, unknown> | undefined;
+      let author = (userObj?.login as string) || 'Community Reader';
+      let createdAt = (c.created_at as string) || new Date().toISOString();
+      let isGuest = true;
+      let content = bodyStr;
+
+      if (metaMatch) {
+        try {
+          const meta = JSON.parse(metaMatch[1]);
+          if (meta.author) author = meta.author;
+          if (meta.createdAt) createdAt = meta.createdAt;
+          if (meta.isGuest !== undefined) isGuest = meta.isGuest;
+        } catch {
+          // Ignore JSON parse failure
+        }
+        content = bodyStr
+          .replace(/<!--\s*questo-comment:\s*{.*?}\s*-->/s, '')
+          .replace(/^\s*\*\*.*?\*\*.*?:?\s*\n\n?/s, '')
+          .trim();
+      }
+
+      const reactions = c.reactions as Record<string, number> | undefined;
+      return {
+        id: `gh_${c.id}`,
+        slug,
+        author,
+        avatarColor: getAvatarColor(author),
+        content,
+        createdAt,
+        likes: reactions?.['+1'] || 1,
+        isGuest,
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
+// 3. Post a comment to the global cloud database (Zero login required for visitor)
+export async function postCloudComment(
+  slug: string,
+  comment: { author: string; content: string; replyTo?: string }
+): Promise<CommentItem | null> {
+  if (typeof window === 'undefined') return null;
+
+  try {
+    const res = await fetch('/api/comments', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        slug,
+        author: comment.author,
+        content: comment.content,
+        replyTo: comment.replyTo,
+      }),
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      if (data.comment) {
+        return {
+          ...data.comment,
+          avatarColor: getAvatarColor(data.comment.author),
+        };
+      }
+    }
+  } catch {
+    // If offline or network glitch, graceful fallback
+  }
+
+  return null;
+}
+
+// Save local optimistic copy
+export function saveLocalComment(
   slug: string,
   data: { author?: string; content: string; replyTo?: string }
 ): CommentItem {
   const authorName = (data.author && data.author.trim()) || 'Guest Reader';
   const newComment: CommentItem = {
-    id: `c_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+    id: `local_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
     slug,
     author: authorName,
     avatarColor: getAvatarColor(authorName),
     content: data.content.trim(),
     createdAt: new Date().toISOString(),
-    likes: 1, // Author starts with 1 initial appreciation
+    likes: 1,
     isGuest: !data.author || data.author.trim().toLowerCase().includes('guest'),
     replyTo: data.replyTo,
     isUserOwned: true,
@@ -212,11 +220,11 @@ export function addArticleComment(
     try {
       const raw = localStorage.getItem(STORAGE_KEY_PREFIX + slug);
       const list: CommentItem[] = raw ? JSON.parse(raw) : [];
-      list.unshift(newComment); // Prepend so new comment appears at top
+      list.unshift(newComment);
       localStorage.setItem(STORAGE_KEY_PREFIX + slug, JSON.stringify(list));
       saveCommenterName(authorName);
     } catch {
-      // Storage quota or disabled fallback
+      // Storage quota fallback
     }
   }
 
@@ -266,7 +274,6 @@ export function toggleCommentLike(commentId: string): boolean {
   }
 }
 
-// Format relative date nicely: "Just now", "5 minutes ago", "2 hours ago", "Yesterday", "Nov 12, 2026"
 export function formatCommentTime(isoString: string): string {
   try {
     const date = new Date(isoString);

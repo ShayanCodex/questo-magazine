@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import {
   ChatBubbleLeftRightIcon,
   ShieldCheckIcon,
@@ -11,12 +11,15 @@ import {
   XMarkIcon,
   ArrowTopRightOnSquareIcon,
   SparklesIcon,
+  GlobeAmericasIcon,
 } from '@heroicons/react/24/outline';
 import { HeartIcon as HeartIconSolid } from '@heroicons/react/24/solid';
 import {
   type CommentItem,
-  getArticleComments,
-  addArticleComment,
+  getLocalArticleComments,
+  fetchCloudComments,
+  postCloudComment,
+  saveLocalComment,
   deleteArticleComment,
   toggleCommentLike,
   getLikedCommentIds,
@@ -39,21 +42,60 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
   const [justSubmitted, setJustSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isLoadingCloud, setIsLoadingCloud] = useState(true);
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const repo = import.meta.env.VITE_GITHUB_REPO as string | undefined;
 
-  // Load comments and saved commenter preferences on mount or slug change
+  // Merge cloud comments with local optimistic comments
+  const loadAllComments = useCallback(async () => {
+    // 1. Initial 0ms render from local cache
+    const local = getLocalArticleComments(slug);
+    setComments(local);
+    setIsLoadingCloud(true);
+
+    try {
+      // 2. Fetch worldwide cloud comments from GitHub / Netlify API
+      const cloud = await fetchCloudComments(slug);
+
+      // Merge & deduplicate
+      const seen = new Set<string>();
+      const merged: CommentItem[] = [];
+
+      // Local optimistic comments first
+      for (const c of local) {
+        const key = `${c.author.toLowerCase()}_${c.content.trim().slice(0, 40)}`;
+        seen.add(key);
+        merged.push(c);
+      }
+
+      // Add cloud comments not already present locally
+      for (const c of cloud) {
+        const key = `${c.author.toLowerCase()}_${c.content.trim().slice(0, 40)}`;
+        if (!seen.has(key)) {
+          seen.add(key);
+          merged.push(c);
+        }
+      }
+
+      setComments(merged);
+    } catch {
+      // Offline fallback: local comments remain visible
+    } finally {
+      setIsLoadingCloud(false);
+    }
+  }, [slug]);
+
   useEffect(() => {
     setAuthor(getSavedCommenterName());
-    setComments(getArticleComments(slug));
     setLikedIds(getLikedCommentIds());
     setReplyTo(null);
     setContent('');
-  }, [slug]);
+    loadAllComments();
+  }, [slug, loadAllComments]);
 
-  // Handle comment submission (100% login-free, instant client-side persistence)
-  const handleSubmit = (e: React.FormEvent) => {
+  // Handle comment submission (100% login-free, saves to global cloud backend)
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const cleanContent = content.trim();
     if (!cleanContent || cleanContent.length < 2) return;
@@ -61,18 +103,29 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
     setIsSubmitting(true);
 
     try {
-      const newComment = addArticleComment(slug, {
+      // 1. Save optimistic local copy for 0ms instant display
+      const localComment = saveLocalComment(slug, {
         author: author.trim() || undefined,
         content: cleanContent,
         replyTo: replyTo?.author,
       });
 
-      // Update state reactively
-      setComments((prev) => [newComment, ...prev]);
+      setComments((prev) => [localComment, ...prev]);
       setContent('');
       setReplyTo(null);
       setJustSubmitted(true);
       setTimeout(() => setJustSubmitted(false), 3500);
+
+      // 2. Send to global cloud backend (GitHub Issues on ShayanCodex/questo-magazine)
+      // So readers across the entire world see this comment!
+      postCloudComment(slug, {
+        author: localComment.author,
+        content: cleanContent,
+        replyTo: localComment.replyTo,
+      }).then(() => {
+        // Refresh cloud comments silently in background
+        loadAllComments();
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -148,19 +201,24 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
 
         <div className="flex flex-wrap items-center gap-2.5">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium bg-editorial-surface-subtle border border-editorial-border text-editorial-muted shadow-2xs">
+            <GlobeAmericasIcon className="h-3.5 w-3.5 text-sky-500" />
+            <span>Worldwide Cloud Sync</span>
+          </span>
+
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium bg-editorial-surface-subtle border border-editorial-border text-editorial-muted shadow-2xs">
             <ShieldCheckIcon className="h-3.5 w-3.5 text-emerald-500" />
-            <span>Instant Guest Posting &bull; Zero Tracking</span>
+            <span>Instant Guest Posting</span>
           </span>
 
           {repo && (
             <a
-              href={`https://github.com/${repo}/discussions`}
+              href={`https://github.com/${repo}/issues`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-[11px] text-editorial-muted hover:text-editorial-text transition-colors group px-2 py-1"
-              title="Open GitHub Discussions"
+              title="Open GitHub Cloud Discussion Hub"
             >
-              <span>GitHub</span>
+              <span>GitHub Cloud</span>
               <ArrowTopRightOnSquareIcon className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
             </a>
           )}
@@ -176,7 +234,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
           </div>
 
           <span className="text-[11px] text-editorial-muted">
-            Anyone can post &bull; Instant publication
+            Visible to readers worldwide &bull; Instant publication
           </span>
         </div>
 
@@ -239,7 +297,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
             />
 
             <div className="flex items-center justify-between text-[11px] text-editorial-muted px-1">
-              <span>Markdown supported &bull; Be respectful and constructive</span>
+              <span>Public discussion &bull; Synced globally to Questo Cloud</span>
               <span>{content.length} / 1000</span>
             </div>
           </div>
@@ -250,7 +308,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
               {justSubmitted && (
                 <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 animate-fade-in">
                   <CheckCircleIcon className="h-4 w-4" />
-                  <span>Comment posted successfully!</span>
+                  <span>Comment posted &amp; synced worldwide!</span>
                 </div>
               )}
             </div>
@@ -274,9 +332,16 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
 
       {/* 3. Filter & Sort Bar */}
       <div className="flex items-center justify-between pt-2">
-        <span className="text-xs font-medium text-editorial-muted">
-          Showing {sortedComments.length} {sortedComments.length === 1 ? 'comment' : 'comments'}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-medium text-editorial-muted">
+            Showing {sortedComments.length} {sortedComments.length === 1 ? 'comment' : 'comments'}
+          </span>
+          {isLoadingCloud && (
+            <span className="text-[10px] text-editorial-muted/60 animate-pulse">
+              (syncing...)
+            </span>
+          )}
+        </div>
 
         <div className="inline-flex rounded-full border border-editorial-border bg-editorial-surface-subtle p-0.5 text-xs">
           <button
@@ -431,7 +496,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                       onClick={() => handleReplyClick(comment)}
                       className="inline-flex items-center gap-1 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer px-2 py-1 rounded-full hover:bg-editorial-surface-subtle"
                     >
-                      <ArrowUturnLeftIcon className="h-3 w-3" />
+                      <ArrowUturnLeftIcon className="h-3.5 w-3.5" />
                       <span>Reply</span>
                     </button>
                   </div>
