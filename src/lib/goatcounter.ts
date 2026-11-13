@@ -16,8 +16,11 @@ const viewCountCache = new Map<string, { count: number; timestamp: number }>();
 const CACHE_TTL_MS = 60 * 1000; // 60 seconds cache
 
 const LOCAL_VIEW_KEY_PREFIX = 'questo_views_';
-const SESSION_VIEW_KEY_PREFIX = 'questo_session_view_';
 const CLOUD_CACHE_PREFIX = 'questo_cloud_views_';
+
+// Debounce tracking within 1.5s to prevent double-counting from React 18/19 StrictMode mounting
+const lastTrackedMap = new Map<string, number>();
+const DEBOUNCE_WINDOW_MS = 1500;
 
 /**
  * Editorial baseline seed counts for established monographs
@@ -219,7 +222,9 @@ async function readCloudViewCounter(slug: string): Promise<number | null> {
 }
 
 /**
- * Record a pageview in local storage and cloud database, then notify UI components
+ * Record a pageview in local storage and cloud database, then notify UI components.
+ * Every intentional visit (or click on an article card) counts as a view,
+ * while a 1.5s debounce prevents React StrictMode double-mount artifacts.
  */
 export function trackGoatCounterPageView(path: string, _title?: string): boolean {
   if (typeof window === 'undefined') return false;
@@ -227,57 +232,49 @@ export function trackGoatCounterPageView(path: string, _title?: string): boolean
   const slug = extractCanonicalSlug(path);
   const normalized = slug || normalizeAnalyticsPath(path);
 
-  // Check session storage to prevent double-counting on quick page reloads
-  const sessionKey = SESSION_VIEW_KEY_PREFIX + normalized;
-  let alreadyViewedInSession = false;
-  try {
-    alreadyViewedInSession = sessionStorage.getItem(sessionKey) === '1';
-  } catch {
-    // Ignore storage read errors
+  // Prevent duplicate execution within 1.5s (handles React 18/19 StrictMode mounting)
+  const now = Date.now();
+  const lastTracked = lastTrackedMap.get(normalized) || 0;
+  if (now - lastTracked < DEBOUNCE_WINDOW_MS) {
+    return false;
   }
+  lastTrackedMap.set(normalized, now);
 
-  if (!alreadyViewedInSession) {
-    try {
-      sessionStorage.setItem(sessionKey, '1');
-    } catch {
-      // Ignore
-    }
+  // 1. Immediately increment local view count
+  const newLocal = incrementLocalViewCount(normalized);
 
-    // 1. Immediately increment local view count
-    incrementLocalViewCount(normalized);
-
-    // 2. Asynchronously hit the cloud view counter for global persistence
-    if (slug) {
-      hitCloudViewCounter(slug).then((cloudVal) => {
-        if (cloudVal !== null) {
-          const total = getArticleBaseSeed(slug) + cloudVal;
-          viewCountCache.set(slug, { count: total, timestamp: Date.now() });
-          try {
-            localStorage.setItem(CLOUD_CACHE_PREFIX + slug, String(total));
-          } catch {
-            // Ignore
-          }
-          // Broadcast live update with exact new total
-          window.dispatchEvent(
-            new CustomEvent('questo:viewcount', {
-              detail: { slug, path: `/articles/${slug}`, count: total },
-            })
-          );
-        }
-      });
-    }
-  }
-
-  // 3. Immediately dispatch local viewcount event for instant UI update
+  // 2. Immediately dispatch local viewcount event for instant real-time UI response
+  const baseSeed = slug ? getArticleBaseSeed(slug) : 0;
+  const optimisticTotal = baseSeed + newLocal;
   try {
-    const currentSyncCount = getSynchronousViewCount(normalized);
     window.dispatchEvent(
       new CustomEvent('questo:viewcount', {
-        detail: { slug, path: slug ? `/articles/${slug}` : normalized, count: currentSyncCount },
+        detail: { slug, path: slug ? `/articles/${slug}` : normalized, count: optimisticTotal },
       })
     );
   } catch {
     // Ignore
+  }
+
+  // 3. Asynchronously hit the cloud view counter for global persistence across all users worldwide
+  if (slug) {
+    hitCloudViewCounter(slug).then((cloudVal) => {
+      if (cloudVal !== null) {
+        const total = getArticleBaseSeed(slug) + cloudVal;
+        viewCountCache.set(slug, { count: total, timestamp: Date.now() });
+        try {
+          localStorage.setItem(CLOUD_CACHE_PREFIX + slug, String(total));
+        } catch {
+          // Ignore
+        }
+        // Broadcast live update with exact new total from cloud
+        window.dispatchEvent(
+          new CustomEvent('questo:viewcount', {
+            detail: { slug, path: `/articles/${slug}`, count: total },
+          })
+        );
+      }
+    });
   }
 
   return true;
