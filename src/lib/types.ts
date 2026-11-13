@@ -138,4 +138,6 @@ export interface I18nStrings {
   relatedArticles?: string;
   exploreSubcategories?: string;
   allCategoriesAtoZ?: string;
+  markets?: string;
+  marketsSubtitle?: string;
 }

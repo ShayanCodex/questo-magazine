@@ -173,6 +173,13 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               <Link to={localePath('/')} className="hover:text-editorial-text transition-colors">
                 {t.home}
               </Link>
+              <Link
+                to={localePath('/markets')}
+                className="hover:text-editorial-text transition-colors flex items-center gap-1.5 text-editorial-text font-semibold"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span>{t.markets || 'Markets'}</span>
+              </Link>
               <Link to={localePath('/articles')} className="hover:text-editorial-text transition-colors">
                 {t.articles}
               </Link>
@@ -351,6 +358,12 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 <li>
                   <Link to={localePath('/categories/engineering-and-technology')} className="hover:text-editorial-text transition-colors">
                     Engineering &amp; Static Systems
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/markets')} className="hover:text-editorial-text transition-colors flex items-center gap-1.5 text-editorial-text font-semibold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    <span>Global Market Intelligence</span>
                   </Link>
                 </li>
                 <li className="pt-1">
@@ -549,6 +562,16 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.home}
+              </Link>
+              <Link
+                to={localePath('/markets')}
+                onClick={() => setDrawerOpen(false)}
+                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors flex items-center justify-between"
+              >
+                <span>{t.markets || 'Markets'}</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 uppercase tracking-widest font-bold">
+                  Live Feed
+                </span>
               </Link>
               <Link
                 to={localePath('/articles')}

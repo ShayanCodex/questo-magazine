@@ -77,6 +77,8 @@ export const translations: Record<string, I18nStrings> = {
     categoriesSubtitle: 'Comprehensive directory of publishing pillars and specialized subcategories from A to Z.',
     relatedArticles: 'Related Articles',
     allCategoriesAtoZ: 'All Categories (A to Z)',
+    markets: 'Markets',
+    marketsSubtitle: 'Worldwide Financial Market Intelligence & Open Research Platform',
   },
   es: {
     menu: 'Menú',
@@ -154,6 +156,8 @@ export const translations: Record<string, I18nStrings> = {
     categoriesSubtitle: 'Directorio completo de publicaciones y subcategorías especializadas de la A a la Z.',
     relatedArticles: 'Artículos relacionados',
     allCategoriesAtoZ: 'Todas las categorías (A a Z)',
+    markets: 'Mercados',
+    marketsSubtitle: 'Inteligencia de Mercados Financieros Globales e Investigación Abierta',
   },
   fr: {
     menu: 'Menu',
@@ -231,6 +235,8 @@ export const translations: Record<string, I18nStrings> = {
     categoriesSubtitle: 'Répertoire complet des piliers éditoriaux et sous-catégories spécialisées de A à Z.',
     relatedArticles: 'Articles connexes',
     allCategoriesAtoZ: 'Toutes les catégories (A à Z)',
+    markets: 'Marchés',
+    marketsSubtitle: 'Intelligence des Marchés Financiers Mondiaux et Recherche Ouverte',
   },
   de: {
     menu: 'Menü',
@@ -308,6 +314,8 @@ export const translations: Record<string, I18nStrings> = {
     categoriesSubtitle: 'Vollständiges Verzeichnis aller Veröffentlichungssäulen und Spezialgebiete von A bis Z.',
     relatedArticles: 'Verwandte Artikel',
     allCategoriesAtoZ: 'Alle Kategorien (A bis Z)',
+    markets: 'Märkte',
+    marketsSubtitle: 'Globale Finanzmarkt-Intelligence & Offene Forschungsplattform',
   },
   ar: {
     menu: 'القائمة',
@@ -385,6 +393,8 @@ export const translations: Record<string, I18nStrings> = {
     categoriesSubtitle: 'دليل شامل لركائز النشر والتصنيفات المتخصصة مرتبة أبجدياً.',
     relatedArticles: 'مقالات ذات صلة',
     allCategoriesAtoZ: 'جميع التصنيفات (أ إلى ي)',
+    markets: 'الأسواق',
+    marketsSubtitle: 'ذكاء الأسواق المالية العالمية ومنصة الأبحاث المفتوحة',
   },
   ur: {
     menu: 'مینو',
@@ -462,5 +472,7 @@ export const translations: Record<string, I18nStrings> = {
     categoriesSubtitle: 'تمام ادارتی زمروں اور ذیلی شعبہ جات کی حروفِ تہجی کے لحاظ سے جامع فہرست۔',
     relatedArticles: 'متعلقہ مضامین',
     allCategoriesAtoZ: 'تمام زمرے (الف سے ے)',
+    markets: 'مارکیٹس',
+    marketsSubtitle: 'عالمی مالیاتی منڈیوں کی ذہانت اور اوپن ریسرچ پلیٹ فارم',
   },
 };

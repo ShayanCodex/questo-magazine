@@ -140,6 +140,9 @@ export function getIncludedRoutes() {
     // Articles Index
     routes.push(`${prefix}/articles`);
 
+    // Markets Intelligence Dashboard
+    routes.push(`${prefix}/markets`);
+
     // Categories Index
     routes.push(`${prefix}/categories`);
 

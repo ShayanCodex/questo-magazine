@@ -11,6 +11,7 @@ import { getAuthorBySlug } from './data/authors';
 import { LanguageRoot } from './components/LanguageRoot';
 import { Home } from './pages/Home';
 import { Articles } from './pages/Articles';
+import { Markets } from './pages/Markets';
 import { Categories } from './pages/Categories';
 import { CategoryDetail } from './pages/CategoryDetail';
 import { Article } from './pages/Article';
@@ -64,6 +65,10 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           const articles = await loadAllArticles(lang.code);
           return { articles, pathname: url.pathname };
         },
+      },
+      {
+        path: 'markets',
+        element: <Markets />,
       },
       {
         path: 'categories',
