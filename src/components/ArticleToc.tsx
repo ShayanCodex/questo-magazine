@@ -48,7 +48,7 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
         });
       },
       {
-        rootMargin: '-80px 0px -60% 0px',
+        rootMargin: '-100px 0px -65% 0px',
         threshold: 0.1,
       }
     );
@@ -66,8 +66,11 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setActiveId(id);
+      if (typeof window !== 'undefined' && window.history.pushState) {
+        window.history.pushState(null, '', `#${id}`);
+      }
     }
   };
 
@@ -75,31 +78,31 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
     <nav
       aria-label="Table of contents"
       className={cn(
-        'w-64 shrink-0 sticky top-28 self-start space-y-3 font-sans text-xs',
+        'w-full space-y-3 font-sans text-xs',
         className
       )}
     >
-      <div className="flex items-center gap-1.5 text-editorial-muted font-bold uppercase tracking-wider text-[11px] border-b border-editorial-border pb-2">
+      <div className="flex items-center gap-1.5 text-editorial-muted font-bold uppercase tracking-wider text-[11px] border-b border-editorial-border pb-2.5">
         <ListBulletIcon className="h-3.5 w-3.5 text-editorial-text" />
         <span>Table of Contents</span>
       </div>
 
-      <ul className="space-y-1.5 pt-1">
+      <ul className="space-y-1 pt-1">
         {items.map((item) => {
           const isActive = activeId === item.id;
           return (
             <li
               key={item.id}
-              className={cn('transition-all', item.level === 3 && 'ps-3')}
+              className={cn('transition-all', item.level === 3 && 'ps-3 text-[11px]')}
             >
               <button
                 type="button"
                 onClick={() => scrollToSection(item.id)}
                 className={cn(
-                  'text-start py-1 px-2 rounded-md w-full transition-all cursor-pointer truncate block',
+                  'text-start py-1.5 px-2.5 rounded-lg w-full transition-all cursor-pointer truncate block leading-snug',
                   isActive
                     ? 'bg-editorial-text text-editorial-bg font-semibold shadow-2xs'
-                    : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-subtle'
+                    : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
                 )}
                 title={item.text}
               >

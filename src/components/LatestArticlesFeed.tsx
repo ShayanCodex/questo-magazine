@@ -122,3 +122,4 @@ export function LatestArticlesFeed({ articles, limit = 4 }: LatestArticlesFeedPr
     </section>
   );
 }
+

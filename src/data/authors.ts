@@ -104,3 +104,4 @@ export function authorNameToSlug(name: string): string {
   if (match) return match.slug;
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
+

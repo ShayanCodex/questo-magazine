@@ -23,7 +23,6 @@ import { ArticleTakeaways } from '../components/ArticleTakeaways';
 import { QuoteSelectionPopup } from '../components/QuoteSelectionPopup';
 import { ImageLightbox } from '../components/ImageLightbox';
 import { ArticleToc } from '../components/ArticleToc';
-import { ArticleHeadingBar } from '../components/ArticleHeadingBar';
 import { ArticleComments } from '../components/ArticleComments';
 import { LazyImage } from '../components/LazyImage';
 import { cn } from '../lib/utils';
@@ -106,6 +105,10 @@ export function Article() {
   const shareLinkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`;
   const shareWhatsAppUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(`${article.title} - ${currentUrl}`)}`;
 
+  const hasToc =
+    Array.isArray(article.body) &&
+    article.body.filter((b) => (b.type === 'h2' || b.type === 'h3') && b.text).length >= 2;
+
   return (
     <>
       {/* Sticky Top Reading Progress Bar */}
@@ -116,7 +119,10 @@ export function Article() {
         />
       </div>
 
-      <article className="space-y-10 sm:space-y-12 max-w-4xl mx-auto">
+      {/* Outer Layout: Main Article Column + Desktop Right-Side Sticky Table of Contents */}
+      <div className="relative max-w-7xl mx-auto flex justify-center gap-10 xl:gap-14 items-start">
+        {/* Main Article Reading Column (Matches full Key Takeaways width!) */}
+        <article className="w-full max-w-4xl min-w-0 space-y-10 sm:space-y-12">
         <Seo
           title={article.title}
           description={article.excerpt}
@@ -334,29 +340,16 @@ export function Article() {
         {/* Executive Summary / Key Takeaways Box */}
         <ArticleTakeaways article={article} />
 
-        {/* Sticky Article Headings Navigation Bar (One-Click Jump to Heading) */}
-        <ArticleHeadingBar blocks={article.body} />
-
-        {/* Article Body with Sticky ScrollSpy Table of Contents */}
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-12 items-start">
-          <div className="xl:col-span-8 min-w-0">
-            {/* Main Prose Content with Dynamic Font Sizing */}
-            <div
-              className={cn(
-                'pt-2 transition-all',
-                fontSize === 'sm' && 'text-sm [&_p]:text-sm [&_p]:leading-relaxed',
-                fontSize === 'base' && 'text-base sm:text-lg [&_p]:text-base sm:[&_p]:text-lg [&_p]:leading-relaxed',
-                fontSize === 'lg' && 'text-lg sm:text-xl [&_p]:text-lg sm:[&_p]:text-xl [&_p]:leading-relaxed'
-              )}
-            >
-              <Body blocks={article.body} />
-            </div>
-          </div>
-
-          {/* Desktop Table of Contents Sidebar */}
-          <div className="hidden xl:block xl:col-span-4 ps-4">
-            <ArticleToc blocks={article.body} />
-          </div>
+        {/* Main Prose Content with Dynamic Font Sizing (Full width matching Key Takeaways section!) */}
+        <div
+          className={cn(
+            'pt-2 transition-all w-full',
+            fontSize === 'sm' && 'text-sm [&_p]:text-sm [&_p]:leading-relaxed',
+            fontSize === 'base' && 'text-base sm:text-lg [&_p]:text-base sm:[&_p]:text-lg [&_p]:leading-relaxed',
+            fontSize === 'lg' && 'text-lg sm:text-xl [&_p]:text-lg sm:[&_p]:text-xl [&_p]:leading-relaxed'
+          )}
+        >
+          <Body blocks={article.body} />
         </div>
 
         {/* Article Footer */}
@@ -547,6 +540,17 @@ export function Article() {
           onClose={() => setLightboxImg(null)}
         />
       </article>
-    </>
-  );
+
+      {/* Right-Side Sticky Table of Contents (Desktop Only: xl:block - Completely Hidden on Mobile/Tablet) */}
+      {hasToc && (
+        <aside
+          aria-label="Table of contents"
+          className="hidden xl:block w-60 xl:w-64 shrink-0 sticky top-28 self-start pt-2"
+        >
+          <ArticleToc blocks={article.body} />
+        </aside>
+      )}
+    </div>
+  </>
+);
 }

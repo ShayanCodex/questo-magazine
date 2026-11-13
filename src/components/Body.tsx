@@ -10,7 +10,7 @@ export function Body({ blocks }: BodyProps) {
   }
 
   return (
-    <div className="article-body font-document text-editorial-text text-[1.0625rem] sm:text-[1.125rem] leading-[1.75] max-w-[46rem] space-y-6 sm:space-y-7">
+    <div className="article-body font-document text-editorial-text text-[1.0625rem] sm:text-[1.125rem] leading-[1.8] w-full max-w-none space-y-6 sm:space-y-7">
       {blocks.map((block, index) => {
         switch (block.type) {
           case 'p':
