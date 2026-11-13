@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { EyeIcon } from '@heroicons/react/24/outline';
 import {
   fetchGoatCounterViews,
@@ -17,8 +17,80 @@ export interface ArticleViewCountProps {
 }
 
 /**
- * Displays the real total view count for an article.
- * Syncs seamlessly with Cloud Edge analytics, instant local storage, and cross-tab events.
+ * Custom hook for smooth, lightweight 60fps counter animation
+ * Interpolates smoothly from previous value to target value using an ease-out cubic curve.
+ * Zero external libraries, zero jitter, perfectly tabular.
+ */
+function useAnimatedNumber(
+  target: number,
+  options: { duration?: number; animateOnMount?: boolean } = {}
+) {
+  const { duration = 750, animateOnMount = true } = options;
+  const isSsr = typeof window === 'undefined';
+  const initialMountRef = useRef(true);
+
+  // On client, start slightly below target on mount for smooth entrance animation
+  const [displayValue, setDisplayValue] = useState<number>(() => {
+    if (isSsr || !animateOnMount || target <= 2) return target;
+    const offset = Math.min(18, Math.max(2, Math.floor(target * 0.015)));
+    return Math.max(1, target - offset);
+  });
+
+  const [isIncrementing, setIsIncrementing] = useState<boolean>(false);
+  const currentValRef = useRef(displayValue);
+  currentValRef.current = displayValue;
+
+  useEffect(() => {
+    if (isSsr) return;
+
+    // Check if value actually changed
+    if (target === currentValRef.current && !initialMountRef.current) return;
+
+    const startValue = currentValRef.current;
+    const diff = target - startValue;
+    if (diff === 0) return;
+
+    if (diff > 0) {
+      setIsIncrementing(true);
+    }
+
+    const startTime = performance.now();
+    const animDuration = initialMountRef.current ? duration : Math.min(duration, 500);
+    initialMountRef.current = false;
+
+    let frameId: number;
+
+    const tick = (now: number) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(1, elapsed / animDuration);
+      // easeOutCubic curve for smooth decelerating deceleration
+      const ease = 1 - Math.pow(1 - progress, 3);
+      const nextVal = Math.round(startValue + diff * ease);
+
+      setDisplayValue(nextVal);
+
+      if (progress < 1) {
+        frameId = requestAnimationFrame(tick);
+      } else {
+        setDisplayValue(target);
+        setTimeout(() => setIsIncrementing(false), 600);
+      }
+    };
+
+    frameId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameId);
+  }, [target, duration, isSsr]);
+
+  return { displayValue, isIncrementing };
+}
+
+/**
+ * Displays the real total view count for an article with YouTube-style smooth counter animation.
+ * Features:
+ *  - Tabular numeric alignment (zero pixel shifting or glitch)
+ *  - Smooth 60fps ease-out numeric ticker animation on page open & increment
+ *  - Live periodic background cloud polling (syncs multi-user views while reading)
+ *  - Subtle pulse feedback on live view registration
  */
 export function ArticleViewCount({
   path,
@@ -33,19 +105,17 @@ export function ArticleViewCount({
 
   // Immediately initialize with synchronous count (0ms paint, zero flicker)
   const [views, setViews] = useState<number>(() => getSynchronousViewCount(targetSlug));
-  const [loading, setLoading] = useState<boolean>(false);
 
   const loadViews = useCallback(() => {
     fetchGoatCounterViews(targetSlug)
       .then((countStr) => {
         const num = parseInt(countStr, 10);
         if (!isNaN(num) && num > 0) {
-          setViews(num);
+          setViews((prev) => Math.max(prev, num));
         }
-        setLoading(false);
       })
       .catch(() => {
-        setLoading(false);
+        // Fallback gracefully
       });
   }, [targetSlug]);
 
@@ -84,31 +154,63 @@ export function ArticleViewCount({
     window.addEventListener('questo:viewcount', handleLiveUpdate);
     window.addEventListener('storage', handleStorageUpdate);
 
+    // 3. YouTube-style live reader polling (every 20s while article is open & visible)
+    let pollInterval: ReturnType<typeof setInterval> | null = null;
+    if (!compact && typeof window !== 'undefined') {
+      pollInterval = setInterval(() => {
+        if (!document.hidden) {
+          fetchGoatCounterViews(targetSlug)
+            .then((countStr) => {
+              const num = parseInt(countStr, 10);
+              if (!isNaN(num) && num > 0) {
+                setViews((prev) => Math.max(prev, num));
+              }
+            })
+            .catch(() => {});
+        }
+      }, 20000);
+    }
+
     return () => {
       window.removeEventListener('questo:viewcount', handleLiveUpdate);
       window.removeEventListener('storage', handleStorageUpdate);
+      if (pollInterval) clearInterval(pollInterval);
     };
-  }, [targetSlug, path, loadViews]);
+  }, [targetSlug, path, compact, loadViews]);
 
-  const formattedCount = formatViewCount(views, compact);
-  const label = views === 1 ? 'view' : 'views';
+  // Smooth numeric counter animation hook
+  const { displayValue, isIncrementing } = useAnimatedNumber(views, {
+    duration: compact ? 450 : 750,
+    animateOnMount: true,
+  });
+
+  const formattedCount = formatViewCount(displayValue, compact);
+  const label = displayValue === 1 ? 'view' : 'views';
 
   if (compact) {
     return (
       <span
         className={cn(
-          'inline-flex items-center gap-1 font-sans font-medium text-[11px] text-editorial-muted',
+          'inline-flex items-center gap-1 font-sans font-medium text-[11px] text-editorial-muted transition-colors duration-300',
           className
         )}
         title={`Total views: ${formatViewCount(views, false)}`}
         aria-label={`${formattedCount} total views`}
       >
-        <EyeIcon className="h-3 w-3 text-editorial-muted shrink-0" />
-        {loading ? (
-          <span className="opacity-40 animate-pulse">...</span>
-        ) : (
-          <span>{formattedCount}</span>
-        )}
+        <EyeIcon
+          className={cn(
+            'h-3 w-3 shrink-0 transition-colors duration-300',
+            isIncrementing ? 'text-emerald-500' : 'text-editorial-muted'
+          )}
+        />
+        <span
+          className={cn(
+            'tabular-nums transition-colors duration-300',
+            isIncrementing && 'text-emerald-500 font-semibold'
+          )}
+        >
+          {formattedCount}
+        </span>
       </span>
     );
   }
@@ -116,16 +218,33 @@ export function ArticleViewCount({
   return (
     <div
       className={cn(
-        'inline-flex items-center gap-1.5 font-sans font-medium text-xs text-editorial-muted',
+        'inline-flex items-center gap-1.5 font-sans font-medium text-xs text-editorial-muted transition-colors duration-300',
         className
       )}
       title={`Total views: ${formatViewCount(views, false)}`}
       aria-label={`${formattedCount} total views`}
     >
-      <EyeIcon className="h-3.5 w-3.5 text-editorial-text shrink-0" />
+      <div className="relative flex items-center justify-center">
+        <EyeIcon
+          className={cn(
+            'h-3.5 w-3.5 shrink-0 transition-colors duration-300',
+            isIncrementing ? 'text-emerald-500' : 'text-editorial-text'
+          )}
+        />
+        {isIncrementing && (
+          <span className="absolute -top-1 -end-1 w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping pointer-events-none" />
+        )}
+      </div>
       <span className="flex items-center gap-1">
-        <strong className="text-editorial-text font-semibold">{formattedCount}</strong>
-        <span>{label}</span>
+        <strong
+          className={cn(
+            'tabular-nums font-semibold transition-colors duration-300',
+            isIncrementing ? 'text-emerald-500 dark:text-emerald-400' : 'text-editorial-text'
+          )}
+        >
+          {formattedCount}
+        </strong>
+        <span className="text-editorial-muted">{label}</span>
       </span>
     </div>
   );
