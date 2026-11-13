@@ -39,6 +39,11 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
   useEffect(() => {
     if (typeof window === 'undefined' || items.length === 0) return;
 
+    // Clean up any stale hash in the URL on mount so browser reload never forces a jump down
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -58,7 +63,18 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
       if (el) observer.observe(el);
     });
 
-    return () => observer.disconnect();
+    const handleScroll = () => {
+      // If user scrolls back up near the top of the article (before headings)
+      if (window.scrollY < 300) {
+        setActiveId('');
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [items]);
 
   if (items.length < 2) return null;
@@ -68,9 +84,6 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setActiveId(id);
-      if (typeof window !== 'undefined' && window.history.pushState) {
-        window.history.pushState(null, '', `#${id}`);
-      }
     }
   };
 
