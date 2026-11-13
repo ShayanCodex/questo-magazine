@@ -90,7 +90,7 @@ export function Privacy() {
             3. Privacy-Preserving View Metrics
           </h2>
           <p className="text-editorial-muted">
-            Article views are computed via the open-source <code className="font-mono text-xs px-1.5 py-0.5 rounded bg-editorial-surface-subtle border border-editorial-border">hits.sh</code> edge counter. No IP addresses, device identifiers, or tracking cookies are collected or stored. Metrics are completely anonymous and aggregate.
+            Article views are computed via privacy-preserving anonymous edge counters and local storage synchronization. No personal data, IP addresses, device identifiers, or tracking cookies are collected or stored. Metrics are strictly anonymous and aggregate.
           </p>
         </section>
 
