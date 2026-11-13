@@ -19,12 +19,12 @@ export interface ArticleViewCountProps {
 /**
  * Custom hook for smooth, lightweight 60fps counter animation
  * Interpolates smoothly from previous value to target value using an ease-out cubic curve.
- * Zero external libraries, zero jitter, perfectly tabular.
+ * Zero external libraries, zero jitter, perfectly tabular, clean and simple.
  */
 function useAnimatedNumber(
   target: number,
   options: { duration?: number; animateOnMount?: boolean } = {}
-) {
+): number {
   const { duration = 750, animateOnMount = true } = options;
   const isSsr = typeof window === 'undefined';
   const initialMountRef = useRef(true);
@@ -36,7 +36,6 @@ function useAnimatedNumber(
     return Math.max(1, target - offset);
   });
 
-  const [isIncrementing, setIsIncrementing] = useState<boolean>(false);
   const currentValRef = useRef(displayValue);
   currentValRef.current = displayValue;
 
@@ -49,10 +48,6 @@ function useAnimatedNumber(
     const startValue = currentValRef.current;
     const diff = target - startValue;
     if (diff === 0) return;
-
-    if (diff > 0) {
-      setIsIncrementing(true);
-    }
 
     const startTime = performance.now();
     const animDuration = initialMountRef.current ? duration : Math.min(duration, 500);
@@ -73,7 +68,6 @@ function useAnimatedNumber(
         frameId = requestAnimationFrame(tick);
       } else {
         setDisplayValue(target);
-        setTimeout(() => setIsIncrementing(false), 600);
       }
     };
 
@@ -81,16 +75,16 @@ function useAnimatedNumber(
     return () => cancelAnimationFrame(frameId);
   }, [target, duration, isSsr]);
 
-  return { displayValue, isIncrementing };
+  return displayValue;
 }
 
 /**
- * Displays the real total view count for an article with YouTube-style smooth counter animation.
+ * Displays the real total view count for an article with smooth, clean counter animation.
  * Features:
+ *  - Clean, minimal aesthetic matching editorial typography (no green flash, no ping dot)
  *  - Tabular numeric alignment (zero pixel shifting or glitch)
  *  - Smooth 60fps ease-out numeric ticker animation on page open & increment
  *  - Live periodic background cloud polling (syncs multi-user views while reading)
- *  - Subtle pulse feedback on live view registration
  */
 export function ArticleViewCount({
   path,
@@ -178,8 +172,8 @@ export function ArticleViewCount({
     };
   }, [targetSlug, path, compact, loadViews]);
 
-  // Smooth numeric counter animation hook
-  const { displayValue, isIncrementing } = useAnimatedNumber(views, {
+  // Smooth numeric counter animation hook (clean, simple)
+  const displayValue = useAnimatedNumber(views, {
     duration: compact ? 450 : 750,
     animateOnMount: true,
   });
@@ -191,24 +185,14 @@ export function ArticleViewCount({
     return (
       <span
         className={cn(
-          'inline-flex items-center gap-1 font-sans font-medium text-[11px] text-editorial-muted transition-colors duration-300',
+          'inline-flex items-center gap-1 font-sans font-medium text-[11px] text-editorial-muted',
           className
         )}
         title={`Total views: ${formatViewCount(views, false)}`}
         aria-label={`${formattedCount} total views`}
       >
-        <EyeIcon
-          className={cn(
-            'h-3 w-3 shrink-0 transition-colors duration-300',
-            isIncrementing ? 'text-emerald-500' : 'text-editorial-muted'
-          )}
-        />
-        <span
-          className={cn(
-            'tabular-nums transition-colors duration-300',
-            isIncrementing && 'text-emerald-500 font-semibold'
-          )}
-        >
+        <EyeIcon className="h-3 w-3 shrink-0 text-editorial-muted" />
+        <span className="tabular-nums">
           {formattedCount}
         </span>
       </span>
@@ -218,30 +202,15 @@ export function ArticleViewCount({
   return (
     <div
       className={cn(
-        'inline-flex items-center gap-1.5 font-sans font-medium text-xs text-editorial-muted transition-colors duration-300',
+        'inline-flex items-center gap-1.5 font-sans font-medium text-xs text-editorial-muted',
         className
       )}
       title={`Total views: ${formatViewCount(views, false)}`}
       aria-label={`${formattedCount} total views`}
     >
-      <div className="relative flex items-center justify-center">
-        <EyeIcon
-          className={cn(
-            'h-3.5 w-3.5 shrink-0 transition-colors duration-300',
-            isIncrementing ? 'text-emerald-500' : 'text-editorial-text'
-          )}
-        />
-        {isIncrementing && (
-          <span className="absolute -top-1 -end-1 w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping pointer-events-none" />
-        )}
-      </div>
+      <EyeIcon className="h-3.5 w-3.5 shrink-0 text-editorial-text" />
       <span className="flex items-center gap-1">
-        <strong
-          className={cn(
-            'tabular-nums font-semibold transition-colors duration-300',
-            isIncrementing ? 'text-emerald-500 dark:text-emerald-400' : 'text-editorial-text'
-          )}
-        >
+        <strong className="tabular-nums font-semibold text-editorial-text">
           {formattedCount}
         </strong>
         <span className="text-editorial-muted">{label}</span>
