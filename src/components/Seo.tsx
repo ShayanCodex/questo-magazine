@@ -1,6 +1,7 @@
 import { Head } from 'vite-react-ssg';
 import { useLanguage } from '../lib/lang-context';
 import { siteConfig, getCanonicalUrl } from '../lib/site';
+import { authorNameToSlug } from '../data/authors';
 
 export interface SeoProps {
   title: string;
@@ -40,7 +41,7 @@ export function Seo({
 
   const ogImage = image
     ? (image.startsWith('http') ? image : `${siteUrl}${image.startsWith('/') ? image : `/${image}`}`)
-    : `${siteUrl}/favicon.svg`;
+    : `${siteUrl}/logo.png`;
 
   // Compute hreflangs
   const langsToInclude = availableLanguages || siteConfig.languages.map((l) => l.code);
@@ -87,6 +88,7 @@ export function Seo({
       author: {
         '@type': 'Person',
         name: articleAuthor || 'Author',
+        url: articleAuthor ? `${siteUrl}/authors/${authorNameToSlug(articleAuthor)}` : siteUrl,
       },
       publisher: {
         '@type': 'Organization',
@@ -94,7 +96,9 @@ export function Seo({
         url: siteUrl,
         logo: {
           '@type': 'ImageObject',
-          url: `${siteUrl}/favicon.svg`,
+          url: `${siteUrl}/logo.png`,
+          width: 512,
+          height: 512,
         },
       },
       datePublished: articleDate,
@@ -108,6 +112,17 @@ export function Seo({
       description: siteConfig.description,
       url: siteUrl,
       inLanguage: language.code,
+      publisher: {
+        '@type': 'Organization',
+        name: siteConfig.name,
+        url: siteUrl,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${siteUrl}/logo.png`,
+          width: 512,
+          height: 512,
+        },
+      },
     };
   }
 

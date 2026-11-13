@@ -181,11 +181,11 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               </Link>
             </nav>
 
-            {/* Compact Editorial Search Capsule Button (icon-only on small, compact on medium, full on desktop) */}
+            {/* Compact Editorial Search Capsule Button */}
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center justify-center sm:justify-between gap-2 px-2.5 sm:px-3.5 h-9 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs w-9 sm:w-36 md:w-44 lg:w-56 shrink-0"
+              className="group flex items-center justify-center sm:justify-between gap-2 px-3 h-10 min-h-[44px] min-w-[44px] sm:w-36 md:w-44 lg:w-56 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0"
               aria-label={t.search}
               title={t.searchPlaceholder || 'Search articles...'}
             >
@@ -207,7 +207,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             <button
               type="button"
               onClick={() => setReadingListOpen(true)}
-              className="inline-flex items-center justify-center gap-1.5 px-2.5 sm:px-3 h-9 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0 font-sans text-xs font-medium"
+              className="inline-flex items-center justify-center gap-1.5 px-3 h-10 min-h-[44px] min-w-[44px] rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0 font-sans text-xs font-medium"
               title="Saved Reading List"
               aria-label="Open reading list"
             >
@@ -226,7 +226,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 type="button"
                 onClick={() => setLangDropdownOpen((prev) => !prev)}
                 className={cn(
-                  'inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 h-9 rounded-full border transition-all text-xs font-sans font-medium cursor-pointer shadow-2xs',
+                  'inline-flex items-center gap-1.5 px-3 h-10 min-h-[44px] rounded-full border transition-all text-xs font-sans font-medium cursor-pointer shadow-2xs',
                   langDropdownOpen
                     ? 'border-editorial-text bg-editorial-surface-hover text-editorial-text ring-1 ring-editorial-text/20'
                     : 'border-editorial-border bg-editorial-surface hover:bg-editorial-surface-hover hover:border-editorial-text text-editorial-text'
@@ -290,7 +290,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               variant="outline"
               size="sm"
               onClick={() => setDrawerOpen(true)}
-              className="text-xs font-sans font-medium gap-1.5 sm:gap-2 h-9 min-w-[36px] px-3.5 rounded-full border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
+              className="text-xs font-sans font-medium gap-1.5 sm:gap-2 h-10 min-h-[44px] min-w-[44px] px-3.5 rounded-full border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
               aria-label={t.menu}
             >
               <Bars3Icon className="h-4 w-4" />
@@ -308,81 +308,171 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
         <Outlet />
       </main>
 
-      {/* Editorial Footer */}
-      <footer className="border-t border-editorial-border py-12 px-6 sm:px-10 lg:px-16 mt-auto bg-editorial-surface/40">
-        <div className="max-w-7xl mx-auto space-y-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-            <div>
-              <span className="font-display font-black text-xl uppercase tracking-tighter">
+      {/* Editorial Tier-1 Digital Publishing Footer */}
+      <footer className="border-t border-editorial-border py-14 px-6 sm:px-10 lg:px-16 mt-auto bg-editorial-surface/40 font-sans">
+        <div className="max-w-7xl mx-auto space-y-12">
+          {/* 4-Column Directory Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+            {/* Col 1: Brand & Mission */}
+            <div className="lg:col-span-4 space-y-4">
+              <span className="font-display font-black text-2xl uppercase tracking-tighter text-editorial-text block">
                 {siteConfig.name} Magazine
               </span>
-              <p className="font-serif text-sm text-editorial-muted mt-2 max-w-md">
-                {siteConfig.description}
+              <p className="font-serif text-sm text-editorial-muted leading-relaxed max-w-sm">
+                An international journal investigating brutalist permanence, Swiss typographic systems, tactile material craft, and zero-runtime digital architectures.
               </p>
+              <div className="pt-2 flex items-center gap-2 text-xs text-editorial-muted">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="font-medium text-editorial-text">Global Edition • ISSN 2974-8831</span>
+              </div>
             </div>
 
-            {/* Crawler-accessible plain language links */}
-            <div className="flex flex-col gap-2">
-              <span className="text-xs font-sans font-semibold uppercase tracking-wider text-editorial-muted">
-                {t.languages}
+            {/* Col 2: Editorial Disciplines */}
+            <div className="lg:col-span-3 space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-widest text-editorial-text block">
+                Disciplines
               </span>
-              <nav
-                aria-label="Footer language navigation"
-                className="flex flex-wrap gap-4 text-sm font-medium"
-              >
-                {siteConfig.languages.map((lang) => {
-                  const targetPath = switchLanguagePath(lang.code, currentPath);
-                  const isCurrent = lang.code === language.code;
+              <ul className="space-y-2 text-xs font-medium text-editorial-muted">
+                <li>
+                  <Link to={localePath('/categories/architecture-and-space')} className="hover:text-editorial-text transition-colors">
+                    Architecture &amp; Spatial Design
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/categories/design-and-typography')} className="hover:text-editorial-text transition-colors">
+                    Design &amp; Typographic Systems
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/categories/art-and-culture')} className="hover:text-editorial-text transition-colors">
+                    Art, Culture &amp; Sculpture
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/categories/engineering-and-technology')} className="hover:text-editorial-text transition-colors">
+                    Engineering &amp; Static Systems
+                  </Link>
+                </li>
+                <li className="pt-1">
+                  <Link to={localePath('/categories')} className="text-accent hover:underline flex items-center gap-1 font-semibold">
+                    <span>All Categories (A–Z)</span>
+                    <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-                  return (
-                    <Link
-                      key={lang.code}
-                      to={targetPath}
-                      className={`transition-colors py-1 ${
-                        isCurrent
-                          ? 'text-accent font-semibold underline underline-offset-4'
-                          : 'text-editorial-muted hover:text-editorial-text'
-                      }`}
-                      aria-current={isCurrent ? 'true' : undefined}
-                      hrefLang={lang.code}
-                    >
-                      {lang.name}
-                    </Link>
-                  );
-                })}
-              </nav>
+            {/* Col 3: The Magazine */}
+            <div className="lg:col-span-2 space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-widest text-editorial-text block">
+                The Journal
+              </span>
+              <ul className="space-y-2 text-xs font-medium text-editorial-muted">
+                <li>
+                  <Link to={localePath('/about')} className="hover:text-editorial-text transition-colors">
+                    About &amp; Manifesto
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/about#masthead')} className="hover:text-editorial-text transition-colors">
+                    The Masthead
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/contact')} className="hover:text-editorial-text transition-colors">
+                    Pitch a Monograph
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/terms')} className="hover:text-editorial-text transition-colors">
+                    Terms of Service
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/privacy')} className="hover:text-editorial-text transition-colors">
+                    Privacy Disclosures
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Col 4: Syndication & Languages */}
+            <div className="lg:col-span-3 space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-widest text-editorial-text block">
+                Syndication &amp; Locales
+              </span>
+              <div className="flex flex-wrap gap-2 text-xs font-medium pb-2">
+                <a
+                  href="/feed.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 rounded-full border border-editorial-border bg-editorial-surface hover:border-editorial-text text-editorial-text transition-colors"
+                >
+                  RSS 2.0
+                </a>
+                <a
+                  href="/atom.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 rounded-full border border-editorial-border bg-editorial-surface hover:border-editorial-text text-editorial-text transition-colors"
+                >
+                  Atom 1.0
+                </a>
+              </div>
+
+              <div className="space-y-1.5 pt-1">
+                <span className="text-[11px] uppercase tracking-wider text-editorial-muted font-medium block">
+                  {t.languages} (6 editions):
+                </span>
+                <nav
+                  aria-label="Footer language navigation"
+                  className="flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium"
+                >
+                  {siteConfig.languages.map((lang) => {
+                    const targetPath = switchLanguagePath(lang.code, currentPath);
+                    const isCurrent = lang.code === language.code;
+
+                    return (
+                      <Link
+                        key={lang.code}
+                        to={targetPath}
+                        className={`transition-colors py-0.5 ${
+                          isCurrent
+                            ? 'text-accent font-semibold underline underline-offset-4'
+                            : 'text-editorial-muted hover:text-editorial-text'
+                        }`}
+                        aria-current={isCurrent ? 'true' : undefined}
+                        hrefLang={lang.code}
+                      >
+                        {lang.name}
+                      </Link>
+                    );
+                  })}
+                </nav>
+              </div>
             </div>
           </div>
 
           {/* Bottom Legal & Regulatory Compliance Row */}
-          <div className="pt-6 border-t border-editorial-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-editorial-muted">
+          <div className="pt-8 border-t border-editorial-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-editorial-muted">
             <div className="flex flex-wrap items-center gap-4">
               <span>&copy; 2026 {siteConfig.name} Publishing Group. All rights reserved.</span>
+              <span>•</span>
+              <span>Zero-Tracker Architecture</span>
+              <span>•</span>
+              <Link
+                to={localePath('/terms')}
+                className="hover:text-editorial-text underline underline-offset-2 transition-colors"
+              >
+                Terms
+              </Link>
               <span>•</span>
               <Link
                 to={localePath('/privacy')}
                 className="hover:text-editorial-text underline underline-offset-2 transition-colors"
               >
-                Privacy &amp; Regulatory Disclosures
+                Privacy
               </Link>
-              <span>•</span>
-              <a
-                href="/feed.xml"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-editorial-text underline underline-offset-2 transition-colors"
-              >
-                RSS Feed
-              </a>
-              <span>•</span>
-              <a
-                href="/atom.xml"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-editorial-text underline underline-offset-2 transition-colors"
-              >
-                Atom Feed
-              </a>
             </div>
 
             <div className="flex items-center gap-2">
@@ -490,6 +580,43 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 )}
               </button>
             </nav>
+
+            {/* Institutional Publication Pages */}
+            <div className="pt-3 pb-2 flex flex-col space-y-2 border-t border-editorial-border font-sans">
+              <Link
+                to={localePath('/about')}
+                onClick={() => setDrawerOpen(false)}
+                className="text-sm font-semibold uppercase tracking-wider text-editorial-text hover:text-accent transition-colors py-1 flex items-center justify-between"
+              >
+                <span>About &amp; Masthead</span>
+                <ArrowRightIcon className="h-3.5 w-3.5 text-editorial-muted rtl:rotate-180" />
+              </Link>
+              <Link
+                to={localePath('/contact')}
+                onClick={() => setDrawerOpen(false)}
+                className="text-sm font-semibold uppercase tracking-wider text-editorial-text hover:text-accent transition-colors py-1 flex items-center justify-between"
+              >
+                <span>Pitch a Monograph</span>
+                <ArrowRightIcon className="h-3.5 w-3.5 text-editorial-muted rtl:rotate-180" />
+              </Link>
+              <div className="flex items-center gap-4 text-xs font-medium text-editorial-muted pt-1">
+                <Link
+                  to={localePath('/terms')}
+                  onClick={() => setDrawerOpen(false)}
+                  className="hover:text-editorial-text underline"
+                >
+                  Terms of Service
+                </Link>
+                <span>•</span>
+                <Link
+                  to={localePath('/privacy')}
+                  onClick={() => setDrawerOpen(false)}
+                  className="hover:text-editorial-text underline"
+                >
+                  Privacy Disclosures
+                </Link>
+              </div>
+            </div>
 
             {/* Editorial Categories Directory */}
             <div className="space-y-3 pt-4 border-t border-editorial-border font-sans">

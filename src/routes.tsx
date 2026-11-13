@@ -6,13 +6,19 @@ import {
   loadAllTags,
   getAvailableRealLanguages,
 } from './lib/content';
-import { getArticleCategory } from './lib/categories';
+import { getArticleCategory, getCategoryById } from './lib/categories';
+import { getAuthorBySlug } from './data/authors';
 import { LanguageRoot } from './components/LanguageRoot';
 import { Home } from './pages/Home';
 import { Articles } from './pages/Articles';
 import { Categories } from './pages/Categories';
+import { CategoryDetail } from './pages/CategoryDetail';
 import { Article } from './pages/Article';
+import { Author } from './pages/Author';
 import { Tag } from './pages/Tag';
+import { About } from './pages/About';
+import { Contact } from './pages/Contact';
+import { Terms } from './pages/Terms';
 import { Privacy } from './pages/Privacy';
 import { NotFound } from './pages/NotFound';
 
@@ -67,6 +73,68 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           const articles = await loadAllArticles(lang.code);
           return { articles, pathname: url.pathname };
         },
+      },
+      {
+        path: 'categories/:slug',
+        element: <CategoryDetail />,
+        loader: async ({ params, request }) => {
+          const slug = params.slug;
+          if (!slug) {
+            throw new Response('Not Found', { status: 404 });
+          }
+          const category = getCategoryById(slug);
+          if (!category) {
+            throw new Response('Not Found', { status: 404 });
+          }
+          const allArticles = await loadAllArticles(lang.code);
+          const filtered = allArticles.filter(
+            (a) => getArticleCategory(a).category.id === slug
+          );
+          const url = new URL(request.url);
+          return {
+            category,
+            articles: filtered,
+            pathname: url.pathname,
+          };
+        },
+        errorElement: <NotFound />,
+      },
+      {
+        path: 'authors/:slug',
+        element: <Author />,
+        loader: async ({ params, request }) => {
+          const slug = params.slug;
+          if (!slug) {
+            throw new Response('Not Found', { status: 404 });
+          }
+          const author = getAuthorBySlug(slug);
+          if (!author) {
+            throw new Response('Not Found', { status: 404 });
+          }
+          const allArticles = await loadAllArticles(lang.code);
+          const filtered = allArticles.filter(
+            (a) => a.author.toLowerCase() === author.name.toLowerCase()
+          );
+          const url = new URL(request.url);
+          return {
+            author,
+            articles: filtered,
+            pathname: url.pathname,
+          };
+        },
+        errorElement: <NotFound />,
+      },
+      {
+        path: 'about',
+        element: <About />,
+      },
+      {
+        path: 'contact',
+        element: <Contact />,
+      },
+      {
+        path: 'terms',
+        element: <Terms />,
       },
       {
         path: 'articles/:slug',

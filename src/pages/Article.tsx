@@ -11,6 +11,7 @@ import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory, getCategoryShortName, formatTopicName } from '../lib/categories';
+import { getAuthorByName, authorNameToSlug } from '../data/authors';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
@@ -88,14 +89,22 @@ export function Article() {
     ? `https://github.com/${githubRepo}/edit/${githubBranch}/content/articles/${article.slug}.json`
     : null;
 
+  const { category, subcategory } = getArticleCategory(article);
+  const authorSlug = authorNameToSlug(article.author);
+  const authorProfile = getAuthorByName(article.author);
+
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
-    { label: t.articles, href: localePath('/articles') },
+    { label: category.name, href: localePath(`/categories/${category.id}`) },
     { label: article.title },
   ];
 
   const canonicalPath = article.isFallback ? `/articles/${article.slug}` : pathname;
-  const { category, subcategory } = getArticleCategory(article);
+
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : `https://questo-blog.netlify.app/articles/${article.slug}`;
+  const shareTwitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(currentUrl)}`;
+  const shareLinkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`;
+  const shareWhatsAppUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(`${article.title} - ${currentUrl}`)}`;
 
   return (
     <>
@@ -141,7 +150,7 @@ export function Article() {
           {/* Category & Subcategory Taxonomy Badges (Click to Go) */}
           <div className="flex items-center gap-2 text-xs font-sans font-medium uppercase tracking-wider">
             <Link
-              to={localePath(`/articles?category=${category.id}`)}
+              to={localePath(`/categories/${category.id}`)}
               className="text-editorial-text font-bold hover:text-accent transition-colors"
             >
               {getCategoryShortName(category.id)}
@@ -150,7 +159,7 @@ export function Article() {
               <>
                 <span className="text-editorial-muted">/</span>
                 <Link
-                  to={localePath(`/articles?category=${category.id}&subcategory=${subcategory.id}`)}
+                  to={localePath(`/categories/${category.id}?subcategory=${subcategory.id}`)}
                   className="text-editorial-muted hover:text-editorial-text transition-colors"
                 >
                   {subcategory.name}
@@ -167,10 +176,16 @@ export function Article() {
             {article.excerpt}
           </p>
 
-          {/* Article Meta Bar */}
+          {/* Article Meta Bar with Clickable Author and In-Page Jump Links */}
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted pt-2 border-b border-editorial-border pb-4">
             <span>
-              <strong className="text-editorial-text font-semibold">{t.textBy}:</strong> {article.author}
+              <strong className="text-editorial-text font-semibold">{t.textBy}:</strong>{' '}
+              <Link
+                to={localePath(`/authors/${authorSlug}`)}
+                className="text-editorial-text font-bold hover:underline transition-colors"
+              >
+                {article.author}
+              </Link>
             </span>
             <span>•</span>
             <time dateTime={article.date}>{formattedDate}</time>
@@ -183,9 +198,16 @@ export function Article() {
             <span>{readingTime}</span>
             <span>•</span>
             <ArticleViewCount path={`/articles/${article.slug}`} slug={article.slug} />
+            <span>•</span>
+            <a
+              href="#comments"
+              className="text-editorial-muted hover:text-editorial-text underline underline-offset-2 transition-colors"
+            >
+              Discussion
+            </a>
           </div>
 
-          {/* Reading Assistance Toolbar: Audio Player, Font Size Controls, Bookmark & Share */}
+          {/* Reading Assistance Toolbar: Audio Player, Font Size Controls, Bookmark & Social Share Suite */}
           <div className="flex flex-wrap items-center justify-between gap-3 py-3 border-b border-editorial-border/60 text-xs font-sans">
             <div className="flex flex-wrap items-center gap-3">
               {/* Native Speech Audio Player */}
@@ -238,23 +260,53 @@ export function Article() {
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               {/* Bookmark Button */}
               <BookmarkButton slug={article.slug} variant="pill" />
 
-              {/* Share Article Link */}
-              <button
-                type="button"
-                onClick={handleCopyLink}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text font-sans text-xs font-medium transition-all cursor-pointer shadow-2xs"
-              >
-                {copied ? (
-                  <CheckIcon className="h-3.5 w-3.5 text-emerald-500" />
-                ) : (
-                  <ShareIcon className="h-3.5 w-3.5 text-editorial-muted" />
-                )}
-                <span>{copied ? 'Link Copied!' : 'Share Article'}</span>
-              </button>
+              {/* Social Share Suite */}
+              <div className="inline-flex items-center gap-1 rounded-full border border-editorial-border bg-editorial-surface p-1 shadow-2xs">
+                <a
+                  href={shareTwitterUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover rounded-full transition-colors"
+                  title="Share on Twitter / X"
+                >
+                  X
+                </a>
+                <a
+                  href={shareLinkedInUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover rounded-full transition-colors"
+                  title="Share on LinkedIn"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href={shareWhatsAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover rounded-full transition-colors"
+                  title="Share on WhatsApp"
+                >
+                  WhatsApp
+                </a>
+                <button
+                  type="button"
+                  onClick={handleCopyLink}
+                  className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-editorial-surface-subtle text-editorial-text hover:bg-editorial-surface-hover text-xs font-sans font-medium transition-all cursor-pointer"
+                  title="Copy permanent article link"
+                >
+                  {copied ? (
+                    <CheckIcon className="h-3.5 w-3.5 text-emerald-500" />
+                  ) : (
+                    <ShareIcon className="h-3.5 w-3.5 text-editorial-muted" />
+                  )}
+                  <span>{copied ? 'Copied' : 'Copy'}</span>
+                </button>
+              </div>
             </div>
           </div>
         </header>
@@ -348,6 +400,53 @@ export function Article() {
             )}
           </div>
         </footer>
+
+        {/* Author Profile Bio Card */}
+        {authorProfile && (
+          <section
+            data-testid="author-bio"
+            aria-label="Author biography"
+            className="p-6 sm:p-8 rounded-2xl border border-editorial-border bg-editorial-surface shadow-xs space-y-4 my-8"
+          >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+              <Link to={localePath(`/authors/${authorProfile.slug}`)} className="shrink-0">
+                <img
+                  src={authorProfile.avatar}
+                  alt={authorProfile.name}
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border border-editorial-border hover:opacity-90 transition-opacity"
+                />
+              </Link>
+              <div className="space-y-1.5 flex-1 min-w-0">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <span className="text-[11px] font-sans font-medium uppercase tracking-wider text-accent block">
+                      Written by Contributing Editor
+                    </span>
+                    <Link
+                      to={localePath(`/authors/${authorProfile.slug}`)}
+                      className="font-display font-black text-xl text-editorial-text hover:text-accent transition-colors"
+                    >
+                      {authorProfile.name}
+                    </Link>
+                  </div>
+                  <Link
+                    to={localePath(`/authors/${authorProfile.slug}`)}
+                    className="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full border border-editorial-border hover:border-editorial-text text-editorial-text font-sans text-xs font-semibold uppercase tracking-wider transition-colors shrink-0"
+                  >
+                    <span>More by {authorProfile.name.split(' ')[0]}</span>
+                    <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
+                  </Link>
+                </div>
+                <p className="text-xs font-sans text-editorial-muted font-medium">
+                  {authorProfile.role} • {authorProfile.location}
+                </p>
+                <p className="font-serif text-sm text-editorial-text/90 leading-relaxed pt-1">
+                  {authorProfile.bio}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Client-Side Community Comments Powered by Giscus with Edge Caching Proxy */}
         <ArticleComments slug={article.slug} title={article.title} />

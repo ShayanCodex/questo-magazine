@@ -178,6 +178,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
 
   return (
     <section
+      id="comments"
       aria-label="Discussion and Comments"
       className="mt-12 sm:mt-16 pt-10 border-t border-editorial-border space-y-8 font-sans"
     >

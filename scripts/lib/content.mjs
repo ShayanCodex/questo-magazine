@@ -114,6 +114,22 @@ export function getIncludedRoutes() {
   const tags = getAllTags();
   const routes = [];
 
+  const authorSlugs = [
+    'mateo-silva',
+    'saskia-lindqvist',
+    'julian-mercer',
+    'tariq-mahmood',
+    'elena-vance',
+    'anne-hardy',
+  ];
+
+  const categoryIds = [
+    'architecture-and-space',
+    'art-and-culture',
+    'design-and-typography',
+    'engineering-and-technology',
+  ];
+
   for (const lang of siteConfig.languages) {
     const isDefault = lang.code === siteConfig.defaultLanguage;
     const prefix = isDefault ? '' : `/${lang.code}`;
@@ -127,8 +143,21 @@ export function getIncludedRoutes() {
     // Categories Index
     routes.push(`${prefix}/categories`);
 
-    // Privacy & Regulatory Disclosures
+    // Institutional Pages
+    routes.push(`${prefix}/about`);
+    routes.push(`${prefix}/contact`);
+    routes.push(`${prefix}/terms`);
     routes.push(`${prefix}/privacy`);
+
+    // Dedicated Category routes
+    for (const catId of categoryIds) {
+      routes.push(`${prefix}/categories/${catId}`);
+    }
+
+    // Dynamic Author routes
+    for (const authorSlug of authorSlugs) {
+      routes.push(`${prefix}/authors/${authorSlug}`);
+    }
 
     // Dynamic Article routes
     for (const article of articles) {

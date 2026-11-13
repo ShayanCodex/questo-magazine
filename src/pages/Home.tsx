@@ -10,7 +10,9 @@ import { Seo } from '../components/Seo';
 import { Badge } from '../components/ui/badge';
 import { ArticleViewCount } from '../components/ArticleViewCount';
 import { FeaturedShowcaseSlider } from '../components/FeaturedShowcaseSlider';
-import { CinematicScrollVideo } from '../components/CinematicScrollVideo';
+import { EditorialSpotlight } from '../components/EditorialSpotlight';
+import { LatestArticlesFeed } from '../components/LatestArticlesFeed';
+import { EditorialMastheadStrip } from '../components/EditorialMastheadStrip';
 import { ManifestoBanner } from '../components/ManifestoBanner';
 import { EditorialDisciplines } from '../components/EditorialDisciplines';
 import { EditorialFaq } from '../components/EditorialFaq';
@@ -402,19 +404,25 @@ export function Home() {
         </div>
       </section>
 
-      {/* 6. Full-Width Cinematic Architectural Video Player */}
-      <CinematicScrollVideo />
+      {/* 6. Latest Chronological Articles & Dispatches */}
+      <LatestArticlesFeed articles={articles} limit={4} />
 
-      {/* 7. Editorial Disciplines & Pillars */}
+      {/* 7. Curated Architectural Monograph Spotlight */}
+      <EditorialSpotlight />
+
+      {/* 8. Editorial Disciplines & Pillars */}
       <EditorialDisciplines />
 
-      {/* 8. Editorial Manifesto Banner */}
+      {/* 9. Contributing Critics & Typographers Masthead Strip */}
+      <EditorialMastheadStrip />
+
+      {/* 10. Editorial Manifesto Banner */}
       <ManifestoBanner />
 
-      {/* 9. Editorial FAQ & Inquiries */}
+      {/* 11. Editorial FAQ & Inquiries */}
       <EditorialFaq />
 
-      {/* 10. The Weekly Sunday Dispatch with Editorial Background Image */}
+      {/* 12. The Weekly Sunday Dispatch with Editorial Background Image */}
       <EditorialDispatch />
     </div>
   );

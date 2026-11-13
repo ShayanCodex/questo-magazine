@@ -22,7 +22,7 @@ export function ThemeToggle({ className, showLabel = false }: ThemeToggleProps) 
       type="button"
       onClick={toggleTheme}
       className={cn(
-        'group flex items-center gap-2 p-2 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer min-h-[36px] min-w-[36px] justify-center shadow-2xs',
+        'group flex items-center gap-2 p-2.5 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer min-h-[44px] min-w-[44px] justify-center shadow-2xs',
         className
       )}
       aria-label={label}

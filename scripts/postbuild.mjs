@@ -125,6 +125,90 @@ ${alternates.join('\n')}
   </url>`);
   }
 
+  // 2d. About, Contact, Terms institutional pages
+  const institutionalPages = ['about', 'contact', 'terms'];
+  for (const pageName of institutionalPages) {
+    for (const lang of languages) {
+      const isDefault = lang.code === defaultLang;
+      const pathPart = isDefault ? pageName : `${lang.code}/${pageName}`;
+      const loc = cleanUrl(baseUrl, pathPart);
+
+      const alternates = languages.map(l => {
+        const p = l.code === defaultLang ? pageName : `${l.code}/${pageName}`;
+        return `    <xhtml:link rel="alternate" hreflang="${l.code}" href="${cleanUrl(baseUrl, p)}" />`;
+      });
+      alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${cleanUrl(baseUrl, pageName)}" />`);
+
+      entries.push(`  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+${alternates.join('\n')}
+  </url>`);
+    }
+  }
+
+  // 2e. Dedicated Category routes
+  const categoryIds = [
+    'architecture-and-space',
+    'art-and-culture',
+    'design-and-typography',
+    'engineering-and-technology',
+  ];
+  for (const catId of categoryIds) {
+    for (const lang of languages) {
+      const isDefault = lang.code === defaultLang;
+      const pathPart = isDefault ? `categories/${catId}` : `${lang.code}/categories/${catId}`;
+      const loc = cleanUrl(baseUrl, pathPart);
+
+      const alternates = languages.map(l => {
+        const p = l.code === defaultLang ? `categories/${catId}` : `${l.code}/categories/${catId}`;
+        return `    <xhtml:link rel="alternate" hreflang="${l.code}" href="${cleanUrl(baseUrl, p)}" />`;
+      });
+      alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${cleanUrl(baseUrl, `categories/${catId}`)}" />`);
+
+      entries.push(`  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+${alternates.join('\n')}
+  </url>`);
+    }
+  }
+
+  // 2f. Dedicated Author profiles
+  const authorSlugs = [
+    'mateo-silva',
+    'saskia-lindqvist',
+    'julian-mercer',
+    'tariq-mahmood',
+    'elena-vance',
+    'anne-hardy',
+  ];
+  for (const authorSlug of authorSlugs) {
+    for (const lang of languages) {
+      const isDefault = lang.code === defaultLang;
+      const pathPart = isDefault ? `authors/${authorSlug}` : `${lang.code}/authors/${authorSlug}`;
+      const loc = cleanUrl(baseUrl, pathPart);
+
+      const alternates = languages.map(l => {
+        const p = l.code === defaultLang ? `authors/${authorSlug}` : `${l.code}/authors/${authorSlug}`;
+        return `    <xhtml:link rel="alternate" hreflang="${l.code}" href="${cleanUrl(baseUrl, p)}" />`;
+      });
+      alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${cleanUrl(baseUrl, `authors/${authorSlug}`)}" />`);
+
+      entries.push(`  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+${alternates.join('\n')}
+  </url>`);
+    }
+  }
+
   // 3. Tags pages entries (available in all languages)
   for (const tag of tags) {
     for (const lang of languages) {
