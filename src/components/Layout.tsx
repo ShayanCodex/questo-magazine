@@ -27,6 +27,7 @@ import { SearchModal } from './SearchModal';
 import { ThemeToggle } from './ThemeToggle';
 import { ReadingListDrawer } from './ReadingListDrawer';
 import { AnalyticsTracker } from './AnalyticsTracker';
+import { QuestoLogo } from './QuestoLogo';
 import { CATEGORIES, getCategoryShortName, formatTopicName } from '../lib/categories';
 import { cn } from '../lib/utils';
 
@@ -158,12 +159,14 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4 w-full min-w-0">
-          {/* Brand Wordmark / Publication Title */}
+          {/* Brand Logo: 'The Discovery Q' + QUESTO */}
           <Link
             to={localePath('/')}
-            className="font-display font-extrabold text-xs sm:text-sm md:text-base uppercase tracking-widest text-editorial-text hover:text-accent transition-colors shrink-0 me-2 sm:me-4 truncate max-w-[150px] sm:max-w-none"
+            className="shrink-0 me-2 sm:me-4 transition-transform hover:opacity-90 flex items-center"
+            title="Questo Magazine — Home"
+            aria-label="Questo Magazine Home"
           >
-            {siteConfig.name} Magazine
+            <QuestoLogo iconClassName="h-5 w-5 sm:h-6 sm:w-6" textClassName="text-sm sm:text-base font-black tracking-[0.14em]" />
           </Link>
 
           {/* Top navigation links & icons */}
@@ -322,9 +325,9 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
             {/* Col 1: Brand & Mission */}
             <div className="lg:col-span-3 space-y-4">
-              <span className="font-display font-black text-2xl uppercase tracking-tighter text-editorial-text block">
-                {siteConfig.name} Magazine
-              </span>
+              <Link to={localePath('/')} className="block group" aria-label="Questo Magazine Home">
+                <QuestoLogo iconClassName="h-7 w-7" textClassName="text-xl font-black tracking-[0.16em]" showSubtitle />
+              </Link>
               <p className="font-serif text-sm text-editorial-muted leading-relaxed max-w-sm">
                 An international journal investigating brutalist permanence, Swiss typographic systems, tactile material craft, and zero-runtime digital architectures.
               </p>
@@ -513,9 +516,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
           {/* Sticky Responsive Drawer Header */}
           <div className="sticky top-0 z-20 flex items-center justify-between px-5 sm:px-6 py-4 border-b border-editorial-border bg-editorial-surface/95 backdrop-blur-xs">
-            <span className="font-display font-black text-xl uppercase tracking-tighter text-editorial-text">
-              {siteConfig.name} Magazine
-            </span>
+            <QuestoLogo iconClassName="h-6 w-6" textClassName="text-lg font-black tracking-[0.16em]" />
             <button
               type="button"
               onClick={() => setDrawerOpen(false)}
