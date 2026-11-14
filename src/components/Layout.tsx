@@ -321,7 +321,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
           {/* 4-Column Directory Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
             {/* Col 1: Brand & Mission */}
-            <div className="lg:col-span-4 space-y-4">
+            <div className="lg:col-span-3 space-y-4">
               <span className="font-display font-black text-2xl uppercase tracking-tighter text-editorial-text block">
                 {siteConfig.name} Magazine
               </span>
@@ -410,7 +410,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             </div>
 
             {/* Col 4: Syndication & Languages */}
-            <div className="lg:col-span-3 space-y-3">
+            <div className="lg:col-span-4 space-y-3">
               <span className="text-xs font-semibold uppercase tracking-widest text-editorial-text block">
                 Syndication &amp; Locales
               </span>
@@ -439,7 +439,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 </span>
                 <nav
                   aria-label="Footer language navigation"
-                  className="flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium"
+                  className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs font-medium"
                 >
                   {siteConfig.languages.map((lang) => {
                     const targetPath = switchLanguagePath(lang.code, currentPath);
@@ -449,7 +449,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                       <Link
                         key={lang.code}
                         to={targetPath}
-                        className={`transition-colors py-0.5 ${
+                        className={`transition-colors py-0.5 whitespace-nowrap ${
                           isCurrent
                             ? 'text-accent font-semibold underline underline-offset-4'
                             : 'text-editorial-muted hover:text-editorial-text'

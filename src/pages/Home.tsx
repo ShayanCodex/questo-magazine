@@ -7,9 +7,9 @@ import { siteConfig } from '../lib/site';
 import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory, CATEGORIES, getCategoryShortName, formatTopicName } from '../lib/categories';
 import { Seo } from '../components/Seo';
-import { Badge } from '../components/ui/badge';
 import { ArticleViewCount } from '../components/ArticleViewCount';
 import { FeaturedShowcaseSlider } from '../components/FeaturedShowcaseSlider';
+import { MonographOfTheMonth } from '../components/MonographOfTheMonth';
 import { EditorialSpotlight } from '../components/EditorialSpotlight';
 import { LatestArticlesFeed } from '../components/LatestArticlesFeed';
 import { EditorialMastheadStrip } from '../components/EditorialMastheadStrip';
@@ -34,9 +34,6 @@ export function Home() {
   // Primary feature story (featured or first)
   const heroArticle = articles.find((a) => a.featured) || articles[0];
   const secondaryArticles = articles.filter((a) => a.slug !== heroArticle?.slug);
-
-  const heroDate = heroArticle ? formatDate(heroArticle.date, language.code) : '';
-  const heroReadingTime = heroArticle ? calculateReadingTime(heroArticle, t.minRead) : '';
 
   // Live article counts by category
   const categoryCounts = useMemo(() => {
@@ -149,70 +146,8 @@ export function Home() {
         </div>
       </div>
 
-      {/* 4. Lead Hero Feature Story */}
-      {heroArticle && (
-        <section className="space-y-6 pt-4 border-t border-editorial-border">
-          {/* Two-Column Lead Header */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start border-b border-editorial-border pb-8">
-            <div className="lg:col-span-6">
-              <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted block mb-2">
-                Monograph of the Month
-              </span>
-              <h2 className="font-display font-black text-[clamp(2.5rem,5.5vw,4.75rem)] leading-[0.98] tracking-tight uppercase text-editorial-text">
-                <Link
-                  to={localePath(`/articles/${heroArticle.slug}`)}
-                  className="hover:text-accent transition-colors"
-                >
-                  {heroArticle.title}
-                </Link>
-              </h2>
-            </div>
-
-            <div className="lg:col-span-6 space-y-4">
-              <p className="font-serif text-editorial-muted text-base sm:text-lg leading-relaxed max-w-xl">
-                {heroArticle.excerpt}
-              </p>
-
-              {/* Editorial Meta Row */}
-              <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
-                <span>
-                  <strong className="text-editorial-text font-semibold">{t.textBy}:</strong> {heroArticle.author}
-                </span>
-                <span>•</span>
-                <span>{heroDate}</span>
-                <span>•</span>
-                <span>{heroReadingTime}</span>
-                <span>•</span>
-                <ArticleViewCount path={`/articles/${heroArticle.slug}`} slug={heroArticle.slug} compact />
-                {heroArticle.tags && heroArticle.tags.length > 0 && (
-                  <span className="ltr:ml-auto rtl:mr-auto">
-                    <Link to={localePath(`/tags/${heroArticle.tags[0]}`)}>
-                      <Badge variant="default" className="text-[11px] uppercase tracking-wider">
-                        {heroArticle.tags[0]}
-                      </Badge>
-                    </Link>
-                  </span>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Full-Width Feature Hero Image */}
-          {heroArticle.image && (
-            <div className="w-full overflow-hidden rounded-xl border border-editorial-border group relative aspect-[16/9] sm:aspect-[21/9] shadow-lg">
-              <Link to={localePath(`/articles/${heroArticle.slug}`)} className="block w-full h-full">
-                <img
-                  src={heroArticle.image}
-                  alt={heroArticle.imageAlt || heroArticle.title}
-                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
-                  loading="eager"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity" />
-              </Link>
-            </div>
-          )}
-        </section>
-      )}
+      {/* 4. Monograph of the Month Editorial Feature */}
+      {heroArticle && <MonographOfTheMonth article={heroArticle} />}
 
       {/* 5. Secondary Multi-Column Editorial Section */}
       <section className="pt-6 border-t border-editorial-border">
