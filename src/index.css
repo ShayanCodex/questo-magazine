@@ -12,7 +12,7 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
 
-  /* Modern Professional Typography: Montserrat (Brand Logo & Display Identity) + Poppins (UI) */
+  /* Modern Professional Typography: Montserrat (Logo Identity) + Poppins (UI) */
   --font-logo: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;

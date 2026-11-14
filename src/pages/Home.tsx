@@ -19,6 +19,7 @@ import { EditorialFaq } from '../components/EditorialFaq';
 import { EditorialDispatch } from '../components/EditorialDispatch';
 import { EditorialMarquee } from '../components/EditorialMarquee';
 import { LazyImage } from '../components/LazyImage';
+import { QuestoLogo } from '../components/QuestoLogo';
 
 interface HomeLoaderData {
   articles: ArticleData[];
@@ -88,15 +89,18 @@ export function Home() {
         </div>
 
         {/* Single-Line Proportional QUESTO Masthead Row */}
-        <div className="border-b-2 border-editorial-text py-2 sm:py-2.5 flex items-baseline justify-between gap-4">
+        <div className="border-b-2 border-editorial-text py-2 sm:py-2.5 flex items-center justify-between gap-4">
           <Link
             to={localePath('/articles?category=art-and-culture')}
             className="block group"
             title="Questo Magazine — Art & Life"
+            aria-label="Questo Magazine"
           >
-            <h1 className="font-logo font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] xl:text-[6rem] leading-none tracking-[0.04em] text-editorial-text uppercase select-none group-hover:text-accent transition-colors">
-              Questo
-            </h1>
+            <h1 className="sr-only">Questo Magazine</h1>
+            <QuestoLogo
+              textClassName="text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] xl:text-[6rem] font-bold tracking-[0.04em]"
+              className="items-center"
+            />
           </Link>
 
           <div className="text-end flex items-center gap-2 text-xs sm:text-sm font-sans text-editorial-muted font-medium">

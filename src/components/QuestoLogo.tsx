@@ -10,26 +10,31 @@ export interface QuestoLogoProps {
 
 /**
  * Official Questo Brand Identity Logo
- * Features 'The Discovery Q' geometric brand mark and bold editorial wordmark.
+ * Features 'The Discovery Q' geometric brand mark as the initial 'Q',
+ * seamlessly followed by 'UESTO' to form 'QUESTO' with zero duplication.
  * Supports theme-aware currentColor rendering across light and dark modes.
  */
 export function QuestoLogo({
   className = '',
-  iconClassName = 'h-7 w-7',
+  iconClassName = '',
   textClassName = 'text-xl',
   variant = 'horizontal',
   showSubtitle = false,
 }: QuestoLogoProps) {
   const maskId = useId();
 
-  // The Discovery Q Mathematical Geometry (viewBox: 0 0 200 200)
+  // The Discovery Q Mathematical Geometry (viewBox: 0 0 200 200 for square icon, or 28 20 144 160 for tight wordmark)
   // Center (99, 92), R=70, r=50, W=20, tail extension=32
+  const isStandaloneIcon = variant === 'icon';
+  const viewBox = isStandaloneIcon ? '0 0 200 200' : '28 20 144 160';
+  const resolvedIconClass = iconClassName || (isStandaloneIcon ? 'h-7 w-7' : 'h-[1.14em] w-auto');
+
   const icon = (
     <svg
-      viewBox="0 0 200 200"
+      viewBox={viewBox}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`shrink-0 transition-transform ${iconClassName}`}
+      className={`shrink-0 transition-transform ${resolvedIconClass}`}
       aria-hidden="true"
     >
       <defs>
@@ -72,12 +77,18 @@ export function QuestoLogo({
 
   if (variant === 'stacked') {
     return (
-      <div className={`inline-flex flex-col items-center gap-2 select-none ${className}`}>
-        {icon}
+      <div
+        role="img"
+        aria-label="Questo"
+        className={`inline-flex flex-col items-center gap-2 select-none ${textClassName} ${className}`}
+      >
+        <span className="sr-only">Questo</span>
+        <span aria-hidden="true" className="shrink-0">{icon}</span>
         <span
-          className={`font-logo font-bold uppercase tracking-[0.14em] text-editorial-text leading-none ${textClassName}`}
+          aria-hidden="true"
+          className="font-logo font-bold uppercase tracking-[0.06em] text-editorial-text leading-none"
         >
-          Questo
+          uesto
         </span>
         {showSubtitle && (
           <span className="text-[10px] uppercase font-mono tracking-[0.25em] text-editorial-muted">
@@ -88,18 +99,25 @@ export function QuestoLogo({
     );
   }
 
-  // Default: Horizontal Logo ('The Discovery Q' + 'QUESTO')
+  // Default: Horizontal Logo ('The Discovery Q' + 'UESTO' = 'QUESTO')
   return (
-    <div className={`inline-flex items-center gap-2 sm:gap-2.5 group select-none ${className}`}>
-      {icon}
-      <div className="inline-flex items-baseline gap-1.5">
+    <div
+      role="img"
+      aria-label="Questo"
+      className={`inline-flex items-center gap-[0.08em] group select-none ${textClassName} ${className}`}
+    >
+      <span className="sr-only">Questo</span>
+      <span aria-hidden="true" className="shrink-0 inline-flex items-center">
+        {icon}
+      </span>
+      <div className="inline-flex items-baseline gap-1.5" aria-hidden="true">
         <span
-          className={`font-logo font-bold uppercase tracking-[0.14em] text-editorial-text group-hover:text-accent transition-colors leading-none ${textClassName}`}
+          className="font-logo font-bold uppercase tracking-[0.06em] text-editorial-text group-hover:text-accent transition-colors leading-none"
         >
-          Questo
+          uesto
         </span>
         {showSubtitle && (
-          <span className="text-[10px] uppercase font-mono tracking-[0.2em] text-editorial-muted leading-none hidden sm:inline">
+          <span className="text-[10px] uppercase font-mono tracking-[0.2em] text-editorial-muted leading-none hidden sm:inline border-s border-editorial-border ps-2 ms-2">
             Magazine
           </span>
         )}
