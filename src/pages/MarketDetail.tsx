@@ -4,8 +4,8 @@ import { useTheme } from '../lib/theme-context';
 import { getMarketAssetBySlug } from '../lib/markets';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
-import { TradingViewAdvancedChart } from '../components/markets/TradingViewAdvancedChart';
-import { TradingViewTechnicalAnalysis } from '../components/markets/TradingViewTechnicalAnalysis';
+import { GoogleFinanceInteractiveChart } from '../components/markets/GoogleFinanceInteractiveChart';
+import { InstitutionalTechnicalGauge } from '../components/markets/InstitutionalTechnicalGauge';
 import {
   ArrowLeftIcon,
   ClockIcon,
@@ -14,7 +14,6 @@ import {
   ShieldCheckIcon,
   BuildingLibraryIcon,
   CheckCircleIcon,
-  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 export function MarketDetail() {
@@ -148,19 +147,20 @@ export function MarketDetail() {
         </p>
       </header>
 
-      {/* Main Feature: Institutional TradingView Advanced Chart Iframe */}
+      {/* Main Feature: Ultrafast Google Finance Style Interactive Vector Chart & TradingView Pro */}
       <section className="space-y-2">
-        <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-editorial-muted px-1">
-          <div className="flex items-center gap-1.5">
-            <SparklesIcon className="h-4 w-4 text-accent" />
-            <span>Interactive Multi-Timeframe Charting Engine</span>
-          </div>
-          <span className="text-[10px] font-mono text-emerald-500">Zero Redirect • In-Site Execution</span>
-        </div>
-        <TradingViewAdvancedChart
-          symbol={asset.tvSymbol}
+        <GoogleFinanceInteractiveChart
+          symbol={asset.symbol}
+          name={asset.name}
+          currentPrice={typeof asset.price === 'number' ? asset.price : 100}
+          change={asset.change}
+          changePercent={asset.changePercent}
+          currency={asset.currency}
+          tvSymbol={asset.tvSymbol}
+          googleFinanceUrl={asset.googleFinanceUrl}
+          high={asset.high}
+          low={asset.low}
           colorTheme={theme}
-          height={550}
         />
       </section>
 
@@ -235,11 +235,13 @@ export function MarketDetail() {
 
         {/* Right Column (4 cols): Live Technical Analysis Meter & Related Instruments */}
         <div className="lg:col-span-4 space-y-6">
-          {/* Technical Analysis Gauge */}
-          <TradingViewTechnicalAnalysis
-            symbol={asset.tvSymbol}
+          {/* Native Institutional Technical Analysis Gauge */}
+          <InstitutionalTechnicalGauge
+            symbol={asset.symbol}
+            name={asset.name}
+            currentPrice={typeof asset.price === 'number' ? asset.price : 100}
+            changePercent={asset.changePercent}
             colorTheme={theme}
-            height={430}
           />
 
           {/* Related Instruments Jump Cards */}

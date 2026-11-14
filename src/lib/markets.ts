@@ -253,7 +253,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'BMV Delayed Public Feed',
     lastUpdated: '2026-11-13T21:00:00Z',
-    tvSymbol: 'INDEX:MEIPC',
+    tvSymbol: 'INDEX:MXX',
   },
 
   // Europe
@@ -1889,6 +1889,9 @@ export interface MarketAssetDetail {
   status: MarketDataStatus;
   source: string;
   tvSymbol: string;
+  high?: number;
+  low?: number;
+  googleFinanceUrl?: string;
   description: string;
   fullAnalysis: string[];
   keyStats: Array<{ label: string; value: string }>;
@@ -1896,6 +1899,58 @@ export interface MarketAssetDetail {
   newsHighlights?: string[];
   relatedSlugs: string[];
 }
+
+export const GOOGLE_FINANCE_URL_MAP: Record<string, string> = {
+  // Global Indices
+  sp500: 'https://www.google.com/finance/quote/.INX:INDEXSP',
+  nasdaq100: 'https://www.google.com/finance/quote/NDX:INDEXNASDAQ',
+  dowjones: 'https://www.google.com/finance/quote/.DJI:INDEXDJX',
+  tsx: 'https://www.google.com/finance/quote/OSPTX:INDEXTSX',
+  'bmv-ipc': 'https://www.google.com/finance/quote/ME:INDEXBMV',
+  ftse100: 'https://www.google.com/finance/quote/UKX:INDEXFTSE',
+  dax40: 'https://www.google.com/finance/quote/DAX:INDEXDB',
+  cac40: 'https://www.google.com/finance/quote/PX1:INDEXEURO',
+  smi20: 'https://www.google.com/finance/quote/SMI:INDEXSWX',
+  ibex35: 'https://www.google.com/finance/quote/IBEX:INDEXBME',
+  nikkei225: 'https://www.google.com/finance/quote/NI225:INDEXNIKKEI',
+  hangseng: 'https://www.google.com/finance/quote/HSI:INDEXHANGSENG',
+  csi300: 'https://www.google.com/finance/quote/000300:SHA',
+  nifty50: 'https://www.google.com/finance/quote/NIFTY_50:INDEXNSE',
+  kse100: 'https://www.google.com/finance/quote/KSE100:KAR',
+  kospi: 'https://www.google.com/finance/quote/KOSPI:INDEXKRX',
+  asx200: 'https://www.google.com/finance/quote/XJO:INDEXASX',
+  tasi: 'https://www.google.com/finance/quote/TASI:TADAWUL',
+  dfmgi: 'https://www.google.com/finance/quote/DFMGI:DFM',
+  qse: 'https://www.google.com/finance/quote/QSI:DSM',
+  bist100: 'https://www.google.com/finance/quote/XU100:INDEXIST',
+
+  // Commodities & Energy
+  gold: 'https://www.google.com/finance/quote/GCW00:COMEX',
+  silver: 'https://www.google.com/finance/quote/SIW00:COMEX',
+  'crude-oil-brent': 'https://www.google.com/finance/quote/BZW00:NYMEX',
+  'crude-oil-wti': 'https://www.google.com/finance/quote/CLW00:NYMEX',
+  'natural-gas': 'https://www.google.com/finance/quote/NGW00:NYMEX',
+  copper: 'https://www.google.com/finance/quote/HG00:COMEX',
+
+  // Crypto Assets
+  bitcoin: 'https://www.google.com/finance/quote/BTC-USD',
+  ethereum: 'https://www.google.com/finance/quote/ETH-USD',
+  solana: 'https://www.google.com/finance/quote/SOL-USD',
+  binancecoin: 'https://www.google.com/finance/quote/BNB-USD',
+  ripple: 'https://www.google.com/finance/quote/XRP-USD',
+  dogecoin: 'https://www.google.com/finance/quote/DOGE-USD',
+  cardano: 'https://www.google.com/finance/quote/ADA-USD',
+  'avalanche-2': 'https://www.google.com/finance/quote/AVAX-USD',
+
+  // Forex Pairs
+  'eur-usd': 'https://www.google.com/finance/quote/EUR-USD',
+  'usd-pkr': 'https://www.google.com/finance/quote/USD-PKR',
+  'gbp-usd': 'https://www.google.com/finance/quote/GBP-USD',
+  'usd-jpy': 'https://www.google.com/finance/quote/USD-JPY',
+  'usd-inr': 'https://www.google.com/finance/quote/USD-INR',
+  'usd-aed': 'https://www.google.com/finance/quote/USD-AED',
+  'usd-sar': 'https://www.google.com/finance/quote/USD-SAR',
+};
 
 // Comprehensive metadata catalog for in-depth asset pages
 const ASSET_METADATA_CATALOG: Record<
@@ -2230,6 +2285,9 @@ export function getMarketAssetBySlug(slug: string): MarketAssetDetail | null {
       status: index.status,
       source: index.source,
       tvSymbol: index.tvSymbol,
+      high: index.high,
+      low: index.low,
+      googleFinanceUrl: GOOGLE_FINANCE_URL_MAP[cleanSlug] || `https://www.google.com/finance/quote/${index.symbol}`,
       description: meta.description,
       fullAnalysis: meta.fullAnalysis,
       keyStats: meta.keyStats,
@@ -2270,6 +2328,9 @@ export function getMarketAssetBySlug(slug: string): MarketAssetDetail | null {
       status: comm.status,
       source: comm.source,
       tvSymbol: comm.tvSymbol,
+      high: +(comm.price * 1.015).toFixed(2),
+      low: +(comm.price * 0.985).toFixed(2),
+      googleFinanceUrl: GOOGLE_FINANCE_URL_MAP[cleanSlug] || `https://www.google.com/finance/quote/${comm.symbol}`,
       description: meta.description,
       fullAnalysis: meta.fullAnalysis,
       keyStats: meta.keyStats,
@@ -2320,6 +2381,9 @@ export function getMarketAssetBySlug(slug: string): MarketAssetDetail | null {
       status: crypto.status,
       source: crypto.source,
       tvSymbol: tvMap[cleanSlug] || `BINANCE:${crypto.symbol}USDT`,
+      high: +(crypto.priceUsd * 1.035).toFixed(2),
+      low: +(crypto.priceUsd * 0.965).toFixed(2),
+      googleFinanceUrl: GOOGLE_FINANCE_URL_MAP[cleanSlug] || `https://www.google.com/finance/quote/${crypto.symbol}-USD`,
       description: meta.description,
       fullAnalysis: meta.fullAnalysis,
       keyStats: meta.keyStats,
@@ -2358,6 +2422,9 @@ export function getMarketAssetBySlug(slug: string): MarketAssetDetail | null {
       status: fx.status,
       source: fx.source,
       tvSymbol: `FX_IDC:${fx.base}${fx.quote}`,
+      high: +(fx.rate * 1.008).toFixed(4),
+      low: +(fx.rate * 0.992).toFixed(4),
+      googleFinanceUrl: GOOGLE_FINANCE_URL_MAP[cleanSlug] || `https://www.google.com/finance/quote/${fx.base}-${fx.quote}`,
       description: meta.description,
       fullAnalysis: meta.fullAnalysis,
       keyStats: meta.keyStats,
