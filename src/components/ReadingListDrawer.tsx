@@ -49,7 +49,7 @@ export function ReadingListDrawer({
               <BookmarkIcon className="h-4 w-4" />
             </span>
             <div>
-              <SheetTitle className="font-display font-black text-xl uppercase tracking-tight text-editorial-text">
+              <SheetTitle className="font-display font-bold text-xl uppercase tracking-tight text-editorial-text">
                 Reading List
               </SheetTitle>
               <SheetDescription className="text-xs font-sans text-editorial-muted">

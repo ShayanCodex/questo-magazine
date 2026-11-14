@@ -111,7 +111,7 @@ export function GlobalMarketOverview({ colorTheme = 'dark' }: GlobalMarketOvervi
             <GlobeAmericasIcon className="h-4 w-4" />
             <span>Worldwide Market Intelligence • Stage 1</span>
           </div>
-          <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
             Global Equity Indices
           </h2>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted mt-1 max-w-2xl">
@@ -254,7 +254,7 @@ export function GlobalMarketOverview({ colorTheme = 'dark' }: GlobalMarketOvervi
 
                   {/* Price & Change Row */}
                   <div className="flex items-baseline justify-between gap-2 mb-3">
-                    <span className="font-mono font-black text-xl sm:text-2xl tabular-nums text-editorial-text tracking-tight">
+                    <span className="font-mono font-bold text-xl sm:text-2xl tabular-nums text-editorial-text tracking-tight">
                       {idx.price.toLocaleString(undefined, {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,

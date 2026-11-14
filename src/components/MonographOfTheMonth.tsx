@@ -78,8 +78,8 @@ export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
             <span className="text-editorial-muted">Vol. 03</span>
           </div>
 
-          {/* Headline: Elegant Editorial Serif (Human Scale & Confident) */}
-          <h2 className="font-serif font-light text-3xl sm:text-4xl lg:text-[3.25rem] leading-[1.12] tracking-tight text-editorial-text text-balance">
+          {/* Headline: Confident Editorial Bold */}
+          <h2 className="font-sans font-bold text-3xl sm:text-4xl lg:text-[3.25rem] leading-[1.12] tracking-tight text-editorial-text text-balance">
             <Link
               to={articleUrl}
               className="hover:text-accent transition-colors block group"

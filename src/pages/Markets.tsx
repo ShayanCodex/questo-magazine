@@ -63,7 +63,7 @@ export function Markets() {
         </div>
 
         <div className="space-y-3">
-          <h1 className="font-display font-black text-3xl sm:text-5xl lg:text-6xl text-editorial-text uppercase tracking-tight leading-[1.05]">
+          <h1 className="font-display font-bold text-3xl sm:text-5xl lg:text-6xl text-editorial-text uppercase tracking-tight leading-[1.05]">
             Worldwide Financial Market Intelligence
           </h1>
           <p className="font-serif text-base sm:text-lg text-editorial-muted leading-relaxed max-w-4xl">

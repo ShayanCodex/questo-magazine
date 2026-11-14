@@ -46,7 +46,7 @@ export function EditorialSpotlight() {
               <span>Monograph Thesis</span>
             </div>
 
-            <h3 className="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-editorial-text uppercase tracking-tight leading-[1.1]">
+            <h3 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-editorial-text uppercase tracking-tight leading-[1.1]">
               The Geometry of Silence
             </h3>
 

@@ -166,7 +166,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             title="Questo Magazine — Home"
             aria-label="Questo Magazine Home"
           >
-            <QuestoLogo textClassName="text-base sm:text-lg font-bold tracking-[0.06em]" />
+            <QuestoLogo textClassName="text-base sm:text-lg font-bold tracking-tight" />
           </Link>
 
           {/* Top navigation links & icons */}
@@ -326,7 +326,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             {/* Col 1: Brand & Mission */}
             <div className="lg:col-span-3 space-y-4">
               <Link to={localePath('/')} className="block group" aria-label="Questo Magazine Home">
-                <QuestoLogo textClassName="text-xl font-bold tracking-[0.06em]" showSubtitle />
+                <QuestoLogo textClassName="text-xl font-bold tracking-tight" showSubtitle />
               </Link>
               <p className="font-serif text-sm text-editorial-muted leading-relaxed max-w-sm">
                 An international journal investigating brutalist permanence, Swiss typographic systems, tactile material craft, and zero-runtime digital architectures.
@@ -516,7 +516,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
           {/* Sticky Responsive Drawer Header */}
           <div className="sticky top-0 z-20 flex items-center justify-between px-5 sm:px-6 py-4 border-b border-editorial-border bg-editorial-surface/95 backdrop-blur-xs">
-            <QuestoLogo textClassName="text-lg font-bold tracking-[0.06em]" />
+            <QuestoLogo textClassName="text-lg font-bold tracking-tight" />
             <button
               type="button"
               onClick={() => setDrawerOpen(false)}
@@ -560,14 +560,14 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               <Link
                 to={localePath('/')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors"
+                className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.home}
               </Link>
               <Link
                 to={localePath('/markets')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors flex items-center justify-between"
+                className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors flex items-center justify-between"
               >
                 <span>{t.markets || 'Markets'}</span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 uppercase tracking-widest font-bold">
@@ -577,14 +577,14 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               <Link
                 to={localePath('/articles')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors"
+                className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.articles}
               </Link>
               <Link
                 to={localePath('/categories')}
                 onClick={() => setDrawerOpen(false)}
-                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors"
+                className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.categories || 'Categories'}
               </Link>
@@ -594,7 +594,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                   setDrawerOpen(false);
                   setReadingListOpen(true);
                 }}
-                className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight hover:text-accent transition-colors text-start flex items-center justify-between cursor-pointer"
+                className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors text-start flex items-center justify-between cursor-pointer"
               >
                 <span>Reading List</span>
                 {readingListCount > 0 && (

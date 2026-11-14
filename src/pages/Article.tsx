@@ -174,7 +174,7 @@ export function Article() {
             )}
           </div>
 
-          <h1 className="font-display font-black text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.05] tracking-tight text-editorial-text text-start uppercase">
+          <h1 className="font-display font-bold text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.05] tracking-tight text-editorial-text text-start uppercase">
             {article.title}
           </h1>
 
@@ -417,7 +417,7 @@ export function Article() {
                     </span>
                     <Link
                       to={localePath(`/authors/${authorProfile.slug}`)}
-                      className="font-display font-black text-xl text-editorial-text hover:text-accent transition-colors"
+                      className="font-display font-bold text-xl text-editorial-text hover:text-accent transition-colors"
                     >
                       {authorProfile.name}
                     </Link>
@@ -452,7 +452,7 @@ export function Article() {
                 <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted block">
                   Recommended Reading
                 </span>
-                <h3 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+                <h3 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
                   Related Monographs &amp; Essays
                 </h3>
               </div>

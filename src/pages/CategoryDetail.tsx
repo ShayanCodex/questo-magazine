@@ -71,7 +71,7 @@ export function CategoryDetail() {
             <span className="text-xs font-sans font-semibold uppercase tracking-widest text-accent block">
               Editorial Discipline
             </span>
-            <h1 className="font-display font-black text-3xl sm:text-5xl text-editorial-text uppercase tracking-tight">
+            <h1 className="font-display font-bold text-3xl sm:text-5xl text-editorial-text uppercase tracking-tight">
               {category.name}
             </h1>
             <p className="font-serif text-base sm:text-lg text-editorial-muted leading-relaxed">

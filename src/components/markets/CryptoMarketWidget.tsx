@@ -60,7 +60,7 @@ export function CryptoMarketWidget() {
             <CircleStackIcon className="h-4 w-4" />
             <span>Decentralized Capital & Digital Assets</span>
           </div>
-          <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
             Cryptocurrency Market Intelligence
           </h2>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted mt-1 max-w-2xl">
@@ -160,7 +160,7 @@ export function CryptoMarketWidget() {
 
                 {/* Price & Change */}
                 <div className="flex items-baseline justify-between gap-2 mb-3">
-                  <span className="font-mono font-black text-xl sm:text-2xl tabular-nums text-editorial-text tracking-tight">
+                  <span className="font-mono font-bold text-xl sm:text-2xl tabular-nums text-editorial-text tracking-tight">
                     ${asset.priceUsd.toLocaleString(undefined, {
                       minimumFractionDigits: asset.priceUsd < 1 ? 4 : 2,
                       maximumFractionDigits: asset.priceUsd < 1 ? 4 : 2,

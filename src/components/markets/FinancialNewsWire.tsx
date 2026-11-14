@@ -46,7 +46,7 @@ export function FinancialNewsWire() {
             <NewspaperIcon className="h-4 w-4" />
             <span>Global Financial News & Regulatory Intelligence</span>
           </div>
-          <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
             Worldwide Financial News Wire
           </h2>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted mt-1 max-w-2xl">

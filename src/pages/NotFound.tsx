@@ -20,7 +20,7 @@ export function NotFound() {
         404
       </span>
 
-      <h1 className="font-display font-extrabold text-4xl sm:text-6xl tracking-tight text-editorial-text leading-tight">
+      <h1 className="font-display font-bold text-4xl sm:text-6xl tracking-tight text-editorial-text leading-tight">
         {t.pageNotFound}
       </h1>
 

@@ -32,7 +32,7 @@ export function EditorialDispatch() {
         </div>
 
         {/* Subtle decorative watermark */}
-        <div className="absolute end-0 bottom-0 text-[10rem] sm:text-[14rem] font-display font-black text-white/10 select-none pointer-events-none leading-none -mb-10 -me-10 z-0">
+        <div className="absolute end-0 bottom-0 text-[10rem] sm:text-[14rem] font-display font-bold text-white/10 select-none pointer-events-none leading-none -mb-10 -me-10 z-0">
           DISPATCH
         </div>
 
@@ -49,7 +49,7 @@ export function EditorialDispatch() {
               </span>
             </span>
 
-            <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] leading-tight">
+            <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] leading-tight">
               {t.newsletterTitle}
             </h2>
 

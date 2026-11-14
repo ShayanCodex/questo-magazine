@@ -65,7 +65,7 @@ export function GlobalEconomicCalendar({ colorTheme = 'dark' }: GlobalEconomicCa
             <CalendarDaysIcon className="h-4 w-4" />
             <span>Economic Releases & Scheduled Central Bank Agendas</span>
           </div>
-          <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
             Global Economic Calendar
           </h2>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted mt-1 max-w-2xl">
@@ -201,7 +201,7 @@ export function GlobalEconomicCalendar({ colorTheme = 'dark' }: GlobalEconomicCa
                         {e.importance}
                       </span>
                     </td>
-                    <td className="py-2.5 text-right font-black text-editorial-text tabular-nums">
+                    <td className="py-2.5 text-right font-bold text-editorial-text tabular-nums">
                       {e.actual || '—'}
                     </td>
                     <td className="py-2.5 text-right font-medium text-editorial-muted tabular-nums">

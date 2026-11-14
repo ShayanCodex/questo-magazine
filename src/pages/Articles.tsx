@@ -241,7 +241,7 @@ export function Articles() {
 
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-editorial-border pb-8">
           <div>
-            <h1 className="font-display font-extrabold text-[clamp(2.5rem,5vw,4.5rem)] leading-none tracking-tight text-editorial-text uppercase">
+            <h1 className="font-display font-bold text-[clamp(2.5rem,5vw,4.5rem)] leading-none tracking-tight text-editorial-text uppercase">
               {t.allArticles}
             </h1>
             <p className="font-serif text-lg text-editorial-muted max-w-2xl mt-4">

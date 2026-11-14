@@ -36,7 +36,7 @@ export function About() {
           <span>Independent Journal of Architecture &amp; Craft</span>
         </div>
 
-        <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-editorial-text uppercase tracking-tight leading-[1.08]">
+        <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-editorial-text uppercase tracking-tight leading-[1.08]">
           The Poetics of Mass, Grid &amp; Permanence
         </h1>
 
@@ -47,13 +47,13 @@ export function About() {
 
       {/* Editorial Pillars */}
       <section className="space-y-8">
-        <h2 className="font-display font-black text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
+        <h2 className="font-display font-bold text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
           Our Four Core Pillars
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl border border-editorial-border bg-editorial-surface space-y-3">
-            <span className="font-display font-black text-2xl text-accent">01</span>
+            <span className="font-display font-bold text-2xl text-accent">01</span>
             <h3 className="font-display font-bold text-lg text-editorial-text">
               Material Endurance
             </h3>
@@ -63,7 +63,7 @@ export function About() {
           </div>
 
           <div className="p-6 rounded-2xl border border-editorial-border bg-editorial-surface space-y-3">
-            <span className="font-display font-black text-2xl text-accent">02</span>
+            <span className="font-display font-bold text-2xl text-accent">02</span>
             <h3 className="font-display font-bold text-lg text-editorial-text">
               Typographic Rigor
             </h3>
@@ -73,7 +73,7 @@ export function About() {
           </div>
 
           <div className="p-6 rounded-2xl border border-editorial-border bg-editorial-surface space-y-3">
-            <span className="font-display font-black text-2xl text-accent">03</span>
+            <span className="font-display font-bold text-2xl text-accent">03</span>
             <h3 className="font-display font-bold text-lg text-editorial-text">
               Zero-Runtime Minimalism
             </h3>
@@ -83,7 +83,7 @@ export function About() {
           </div>
 
           <div className="p-6 rounded-2xl border border-editorial-border bg-editorial-surface space-y-3">
-            <span className="font-display font-black text-2xl text-accent">04</span>
+            <span className="font-display font-bold text-2xl text-accent">04</span>
             <h3 className="font-display font-bold text-lg text-editorial-text">
               Global Multilingual Reach
             </h3>
@@ -101,7 +101,7 @@ export function About() {
             <span className="text-xs font-semibold uppercase tracking-widest text-editorial-muted block">
               Editorial Board
             </span>
-            <h2 className="font-display font-black text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
               The Masthead
             </h2>
           </div>

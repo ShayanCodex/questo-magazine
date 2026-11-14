@@ -203,7 +203,7 @@ export function Categories() {
             <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted block">
               {t.allCategoriesAtoZ || 'All Categories (A to Z)'}
             </span>
-            <h1 className="font-sans font-bold sm:font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-editorial-text leading-tight">
+            <h1 className="font-sans font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-editorial-text leading-tight">
               {t.categoriesArchiveTitle || 'Categories & Disciplines'}
             </h1>
             <p className="font-serif text-base sm:text-lg text-editorial-muted max-w-2xl leading-relaxed">

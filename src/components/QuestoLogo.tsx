@@ -80,18 +80,18 @@ export function QuestoLogo({
       <div
         role="img"
         aria-label="Questo"
-        className={`inline-flex flex-col items-center gap-2 select-none ${textClassName} ${className}`}
+        className={`inline-flex flex-col items-center gap-2 select-none tracking-tight ${textClassName} ${className}`}
       >
         <span className="sr-only">Questo</span>
         <span aria-hidden="true" className="shrink-0">{icon}</span>
         <span
           aria-hidden="true"
-          className="font-logo font-bold uppercase tracking-[0.06em] text-editorial-text leading-none"
+          className="font-logo font-bold uppercase tracking-tight text-editorial-text leading-none"
         >
           uesto
         </span>
         {showSubtitle && (
-          <span className="text-[10px] uppercase font-mono tracking-[0.25em] text-editorial-muted">
+          <span className="text-[10px] uppercase font-mono tracking-wider text-editorial-muted">
             Journal
           </span>
         )}
@@ -104,20 +104,20 @@ export function QuestoLogo({
     <div
       role="img"
       aria-label="Questo"
-      className={`inline-flex items-center gap-[0.08em] group select-none ${textClassName} ${className}`}
+      className={`inline-flex items-center gap-0 group select-none tracking-tight ${textClassName} ${className}`}
     >
       <span className="sr-only">Questo</span>
       <span aria-hidden="true" className="shrink-0 inline-flex items-center">
         {icon}
       </span>
-      <div className="inline-flex items-baseline gap-1.5" aria-hidden="true">
+      <div className="inline-flex items-baseline" aria-hidden="true">
         <span
-          className="font-logo font-bold uppercase tracking-[0.06em] text-editorial-text group-hover:text-accent transition-colors leading-none"
+          className="font-logo font-bold uppercase tracking-tight text-editorial-text group-hover:text-accent transition-colors leading-none"
         >
           uesto
         </span>
         {showSubtitle && (
-          <span className="text-[10px] uppercase font-mono tracking-[0.2em] text-editorial-muted leading-none hidden sm:inline border-s border-editorial-border ps-2 ms-2">
+          <span className="text-[10px] uppercase font-mono tracking-wider text-editorial-muted leading-none hidden sm:inline border-s border-editorial-border ps-2 ms-2">
             Magazine
           </span>
         )}

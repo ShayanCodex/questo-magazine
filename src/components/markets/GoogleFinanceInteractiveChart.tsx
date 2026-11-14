@@ -275,7 +275,7 @@ export function GoogleFinanceInteractiveChart({
 
           {/* Interactive Live Price Callout */}
           <div className="flex items-baseline gap-3 pt-1">
-            <div className="font-mono font-black text-2xl sm:text-3xl tabular-nums text-editorial-text tracking-tight">
+            <div className="font-mono font-bold text-2xl sm:text-3xl tabular-nums text-editorial-text tracking-tight">
               {currency === 'USD' ? '$' : ''}
               {activePoint ? formatPrice(activePoint.price) : formatPrice(currentPrice)}{' '}
               <span className="text-xs font-normal text-editorial-muted">{currency}</span>

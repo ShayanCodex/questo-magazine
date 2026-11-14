@@ -34,7 +34,7 @@ export function Privacy() {
           </span>
         </div>
 
-        <h1 className="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-editorial-text">
+        <h1 className="font-display font-bold text-3xl sm:text-5xl uppercase tracking-tight text-editorial-text">
           Privacy Policy &amp; Data Architecture
         </h1>
         <p className="font-serif text-base sm:text-lg text-editorial-muted max-w-2xl leading-relaxed">

@@ -13,7 +13,7 @@ export function EditorialMastheadStrip() {
           <span className="text-xs font-semibold uppercase tracking-widest text-accent block mb-1">
             Global Perspectives
           </span>
-          <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
             Contributing Critics &amp; Essayists
           </h2>
         </div>

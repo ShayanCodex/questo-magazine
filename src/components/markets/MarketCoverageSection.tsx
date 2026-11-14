@@ -36,7 +36,7 @@ export function MarketCoverageSection() {
             <ShieldCheckIcon className="h-4 w-4 text-emerald-500" />
             <span>Compliance, Licensing & Data Availability Matrix</span>
           </div>
-          <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
             Worldwide Market Coverage & Transparency
           </h2>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted mt-1 max-w-3xl">

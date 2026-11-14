@@ -98,7 +98,7 @@ export function Home() {
           >
             <h1 className="sr-only">Questo Magazine</h1>
             <QuestoLogo
-              textClassName="text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] xl:text-[6rem] font-bold tracking-[0.04em]"
+              textClassName="text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] xl:text-[6rem] font-bold tracking-tight"
               className="items-center"
             />
           </Link>
@@ -244,7 +244,7 @@ export function Home() {
               <span className="text-xs font-sans uppercase tracking-widest text-editorial-muted block font-medium">
                 {t.printMagazine}
               </span>
-              <div className="font-display font-black text-3xl sm:text-4xl text-editorial-text tracking-tight">
+              <div className="font-display font-bold text-3xl sm:text-4xl text-editorial-text tracking-tight">
                 {t.issueNumber}
               </div>
             </div>
@@ -276,7 +276,7 @@ export function Home() {
               </div>
 
               <div className="relative z-10 space-y-1 sm:space-y-1.5">
-                <h4 className="font-display font-black text-3xl sm:text-5xl uppercase tracking-tighter leading-none text-white drop-shadow-md group-hover:text-white/95 transition-colors">
+                <h4 className="font-display font-bold text-3xl sm:text-5xl uppercase tracking-tight leading-none text-white drop-shadow-md group-hover:text-white/95 transition-colors">
                   Questo
                 </h4>
                 <div className="flex items-center justify-between">

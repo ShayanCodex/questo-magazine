@@ -91,7 +91,7 @@ export function EditorialFaq() {
           <span className="text-xs font-sans font-semibold uppercase tracking-widest text-accent block mb-2">
             Inquiries &amp; Standards
           </span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-editorial-text uppercase tracking-tight">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl text-editorial-text uppercase tracking-tight">
             {t.faqTitle}
           </h2>
         </div>

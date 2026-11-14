@@ -58,7 +58,7 @@ export function Author() {
                 {author.location}
               </span>
             </div>
-            <h1 className="font-display font-black text-3xl sm:text-4xl text-editorial-text uppercase tracking-tight">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl text-editorial-text uppercase tracking-tight">
               {author.name}
             </h1>
             <p className="font-sans font-medium text-sm sm:text-base text-editorial-muted">
@@ -120,7 +120,7 @@ export function Author() {
             <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted block">
               Curated Portfolio
             </span>
-            <h2 className="font-display font-black text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
               Essays by {author.name}
             </h2>
           </div>

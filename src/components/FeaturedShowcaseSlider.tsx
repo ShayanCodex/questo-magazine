@@ -213,8 +213,8 @@ export function FeaturedShowcaseSlider({
             <span>{curatedMeta.issueTag}</span>
           </div>
 
-          {/* Majestic Editorial Headline: Serif, Elegant Leading, Human Scale */}
-          <h2 className="font-serif font-light text-2xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-[1.15] drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] text-balance">
+          {/* Majestic Editorial Headline: Bold, Elegant Leading, Human Scale */}
+          <h2 className="font-sans font-bold text-2xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-[1.15] drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] text-balance">
             <Link
               to={articleUrl}
               className="hover:text-neutral-200 transition-colors focus-visible:outline-none"

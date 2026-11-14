@@ -49,7 +49,7 @@ export function Contact() {
         <span className="text-xs font-semibold uppercase tracking-widest text-accent block">
           Editorial Inquiries &amp; Submissions
         </span>
-        <h1 className="font-display font-black text-3xl sm:text-5xl text-editorial-text uppercase tracking-tight">
+        <h1 className="font-display font-bold text-3xl sm:text-5xl text-editorial-text uppercase tracking-tight">
           Pitch an Essay or Monograph
         </h1>
         <p className="font-serif text-base sm:text-lg text-editorial-muted leading-relaxed">
@@ -74,7 +74,7 @@ export function Contact() {
       {submitted ? (
         <div className="p-8 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 text-center space-y-4">
           <CheckCircleIcon className="h-12 w-12 text-emerald-500 mx-auto" />
-          <h3 className="font-display font-black text-2xl uppercase tracking-tight text-editorial-text">
+          <h3 className="font-display font-bold text-2xl uppercase tracking-tight text-editorial-text">
             Pitch Received
           </h3>
           <p className="font-serif text-sm text-editorial-muted max-w-md mx-auto">

@@ -74,7 +74,7 @@ export function ForexMatrixWidget() {
             <BanknotesIcon className="h-4 w-4" />
             <span>Foreign Exchange & Sovereign Rates</span>
           </div>
-          <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
             Forex Cross Rates & FX Intelligence
           </h2>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted mt-1 max-w-2xl">
@@ -171,7 +171,7 @@ export function ForexMatrixWidget() {
               <div className="text-[11px] font-mono text-editorial-muted">
                 {amount.toLocaleString()} {fromCurr} =
               </div>
-              <div className="font-mono font-black text-2xl sm:text-3xl tabular-nums text-editorial-text tracking-tight">
+              <div className="font-mono font-bold text-2xl sm:text-3xl tabular-nums text-editorial-text tracking-tight">
                 {convertedResult.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {toCurr}
               </div>
               <div className="text-[10px] font-mono text-editorial-muted pt-1 border-t border-editorial-border/40">
@@ -266,7 +266,7 @@ export function ForexMatrixWidget() {
                           </span>
                         </Link>
                       </td>
-                      <td className="py-2.5 text-right font-black text-editorial-text tabular-nums">
+                      <td className="py-2.5 text-right font-bold text-editorial-text tabular-nums">
                         {p.rate.toLocaleString(undefined, {
                           minimumFractionDigits: p.quote === 'JPY' || p.quote === 'PKR' ? 2 : 4,
                           maximumFractionDigits: p.quote === 'JPY' || p.quote === 'PKR' ? 2 : 4,

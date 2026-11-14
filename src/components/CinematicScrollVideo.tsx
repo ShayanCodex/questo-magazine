@@ -121,7 +121,7 @@ export function CinematicScrollVideo({
 
           {/* Bottom Clean Typography (Metadata line and fullscreen progress removed) */}
           <div className="space-y-2 sm:space-y-3 max-w-3xl">
-            <h3 className="font-display font-black text-2xl sm:text-4xl md:text-5xl uppercase tracking-tighter text-white drop-shadow-xl leading-[1.05]">
+            <h3 className="font-display font-bold text-2xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white drop-shadow-xl leading-[1.05]">
               {title}
             </h3>
 

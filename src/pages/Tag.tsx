@@ -42,7 +42,7 @@ export function Tag() {
           <span className="text-xs font-sans font-medium uppercase tracking-widest text-editorial-muted">
             {t.topics}
           </span>
-          <h1 className="font-display font-extrabold text-[clamp(2.5rem,5vw,4.5rem)] leading-none tracking-tight text-editorial-text">
+          <h1 className="font-display font-bold text-[clamp(2.5rem,5vw,4.5rem)] leading-none tracking-tight text-editorial-text">
             {formattedTagName}
           </h1>
         </div>

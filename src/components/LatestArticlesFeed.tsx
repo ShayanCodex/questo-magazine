@@ -26,7 +26,7 @@ export function LatestArticlesFeed({ articles, limit = 4 }: LatestArticlesFeedPr
           <span className="text-xs font-semibold uppercase tracking-widest text-accent block mb-1">
             Chronological Publishing
           </span>
-          <h2 className="font-display font-extrabold text-2xl sm:text-4xl text-editorial-text uppercase tracking-tight">
+          <h2 className="font-display font-bold text-2xl sm:text-4xl text-editorial-text uppercase tracking-tight">
             Latest Monographs &amp; Dispatches
           </h2>
         </div>

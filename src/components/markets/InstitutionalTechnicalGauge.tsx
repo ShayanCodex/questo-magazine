@@ -254,7 +254,7 @@ export function InstitutionalTechnicalGauge({
             </svg>
 
             {/* Overall Status Pill */}
-            <div className={`mt-2 px-4 py-1 rounded-full text-xs font-mono font-black uppercase tracking-wider border ${techAnalysis.signalBg} ${techAnalysis.signalColor}`}>
+            <div className={`mt-2 px-4 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider border ${techAnalysis.signalBg} ${techAnalysis.signalColor}`}>
               {techAnalysis.overallSignal}
             </div>
           </div>
@@ -263,17 +263,17 @@ export function InstitutionalTechnicalGauge({
           <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono">
             <div className="p-2 rounded-lg bg-editorial-surface-subtle border border-editorial-border/60">
               <span className="text-[10px] text-rose-500 uppercase block font-bold">Sell</span>
-              <span className="text-sm font-black text-rose-500">{techAnalysis.totalSell}</span>
+              <span className="text-sm font-bold text-rose-500">{techAnalysis.totalSell}</span>
             </div>
             <div className="p-2 rounded-lg bg-editorial-surface-subtle border border-editorial-border/60">
               <span className="text-[10px] text-editorial-muted uppercase block font-bold">Neutral</span>
-              <span className="text-sm font-black text-editorial-muted">
+              <span className="text-sm font-bold text-editorial-muted">
                 {techAnalysis.oscNeutral + techAnalysis.maNeutralCount}
               </span>
             </div>
             <div className="p-2 rounded-lg bg-editorial-surface-subtle border border-editorial-border/60">
               <span className="text-[10px] text-emerald-500 uppercase block font-bold">Buy</span>
-              <span className="text-sm font-black text-emerald-500">{techAnalysis.totalBuy}</span>
+              <span className="text-sm font-bold text-emerald-500">{techAnalysis.totalBuy}</span>
             </div>
           </div>
 

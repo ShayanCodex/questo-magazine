@@ -26,7 +26,7 @@ export function Terms() {
         <span className="text-xs font-semibold uppercase tracking-widest text-accent block">
           Legal &amp; Regulatory Disclosures
         </span>
-        <h1 className="font-display font-black text-3xl sm:text-5xl text-editorial-text uppercase tracking-tight">
+        <h1 className="font-display font-bold text-3xl sm:text-5xl text-editorial-text uppercase tracking-tight">
           Terms of Service
         </h1>
         <p className="font-serif text-sm text-editorial-muted">

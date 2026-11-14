@@ -70,7 +70,7 @@ export function CommoditiesEnergyWidget({ colorTheme = 'dark' }: CommoditiesEner
             <FireIcon className="h-4 w-4" />
             <span>Raw Materials & Sovereign Energy Benchmarks</span>
           </div>
-          <h2 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
             Commodities, Energy & Metals
           </h2>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted mt-1 max-w-2xl">
@@ -139,7 +139,7 @@ export function CommoditiesEnergyWidget({ colorTheme = 'dark' }: CommoditiesEner
 
                   {/* Price & Change */}
                   <div className="flex items-baseline justify-between gap-2 mb-2">
-                    <span className="font-mono font-black text-xl tabular-nums text-editorial-text">
+                    <span className="font-mono font-bold text-xl tabular-nums text-editorial-text">
                       ${item.price.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                     </span>
                     <div

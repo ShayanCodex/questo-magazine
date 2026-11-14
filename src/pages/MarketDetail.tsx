@@ -26,7 +26,7 @@ export function MarketDetail() {
   if (!asset) {
     return (
       <div className="max-w-4xl mx-auto py-16 px-4 text-center space-y-6 font-sans">
-        <h1 className="font-display font-black text-3xl text-editorial-text uppercase">
+        <h1 className="font-display font-bold text-3xl text-editorial-text uppercase">
           Market Intelligence Record Not Found
         </h1>
         <p className="font-serif text-editorial-muted">
@@ -105,7 +105,7 @@ export function MarketDetail() {
                 {asset.exchange} • {asset.country}
               </span>
             </div>
-            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-editorial-text uppercase tracking-tight">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-editorial-text uppercase tracking-tight">
               {asset.name}
             </h1>
           </div>
@@ -113,7 +113,7 @@ export function MarketDetail() {
           {/* Large Price Readout */}
           {typeof asset.price === 'number' && (
             <div className="text-start md:text-right">
-              <div className="font-mono font-black text-3xl sm:text-4xl tabular-nums text-editorial-text tracking-tight">
+              <div className="font-mono font-bold text-3xl sm:text-4xl tabular-nums text-editorial-text tracking-tight">
                 {asset.currency === 'USD' ? '$' : ''}
                 {asset.price.toLocaleString(undefined, {
                   minimumFractionDigits: asset.price < 1 ? 4 : 2,
