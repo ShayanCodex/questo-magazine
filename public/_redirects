@@ -1,0 +1,21 @@
+# Cloudflare Pages Canonical Routing & SPA Fallbacks
+# Format: <source> <destination> <status_code>
+
+# 1. Canonical Redirects & Clean Normalization
+/home / 301
+/feed /feed.xml 301
+/rss /rss.xml 301
+/atom /atom.xml 301
+/sitemap /sitemap.xml 301
+
+# 2. Canonical Category Aliases (Logical hierarchy)
+/category/architecture /categories/architecture-and-space 301
+/category/art /categories/art-and-culture 301
+/category/design /categories/design-and-typography 301
+/category/tech /categories/engineering-and-technology 301
+/category/* /categories/:splat 301
+
+# 3. Cloudflare Pages SPA Fallback for Dynamic Routes (e.g. secondary market assets)
+# Static prerendered HTML pages are served directly by Cloudflare Pages;
+# Non-prerendered dynamic routes fallback to /index.html for client hydration.
+/* /index.html 200

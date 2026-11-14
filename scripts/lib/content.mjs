@@ -105,6 +105,46 @@ export function computeSourceHash(article) {
   return crypto.createHash('sha1').update(JSON.stringify(strings)).digest('hex');
 }
 
+export const ALL_AUTHOR_SLUGS = [
+  'mateo-silva',
+  'saskia-lindqvist',
+  'julian-mercer',
+  'tariq-mahmood',
+  'elena-vance',
+  'anne-hardy',
+];
+
+export const ALL_CATEGORY_IDS = [
+  'architecture-and-space',
+  'art-and-culture',
+  'design-and-typography',
+  'engineering-and-technology',
+];
+
+// All 60 market intelligence assets indexed across the site
+export const ALL_MARKET_ASSET_SLUGS = [
+  'sp500', 'nasdaq100', 'dowjones', 'tsx', 'bmv-ipc',
+  'ftse100', 'dax40', 'cac40', 'smi20', 'ibex35',
+  'nikkei225', 'hangseng', 'csi300', 'nifty50', 'kse100',
+  'kospi', 'asx200', 'tasi', 'dfmgi', 'qse', 'bist100',
+  'gold', 'silver', 'crude-oil-wti', 'crude-oil-brent', 'natural-gas', 'copper', 'platinum',
+  'eur-usd', 'gbp-usd', 'usd-jpy', 'usd-chf', 'usd-cad', 'aud-usd',
+  'eur-gbp', 'eur-jpy', 'gbp-jpy', 'usd-pkr', 'usd-inr', 'usd-sar',
+  'usd-aed', 'usd-try', 'usd-cny',
+  'bitcoin', 'ethereum', 'solana', 'binancecoin', 'ripple', 'dogecoin', 'cardano', 'avalanche-2',
+  'news-1', 'news-2', 'news-3', 'news-4', 'news-5', 'news-6', 'news-7', 'news-8',
+];
+
+// Essential Tier-1 high-value assets for initial static build target (keeps initial build strictly within 200–500 HTML target)
+// Configurable: Set SSG_ALL_MARKETS=true to prerender all 60 assets
+export const PRIORITY_SSG_MARKET_SLUGS = [
+  'sp500', 'nasdaq100', 'dowjones', 'ftse100', 'dax40', 'cac40',
+  'nikkei225', 'hangseng', 'csi300', 'nifty50', 'kse100',
+  'gold', 'silver', 'crude-oil-brent', 'crude-oil-wti', 'natural-gas',
+  'bitcoin', 'ethereum',
+  'eur-usd', 'gbp-usd',
+];
+
 /**
  * Get all paths to be statically rendered by vite-react-ssg
  */
@@ -114,34 +154,9 @@ export function getIncludedRoutes() {
   const tags = getAllTags();
   const routes = [];
 
-  const authorSlugs = [
-    'mateo-silva',
-    'saskia-lindqvist',
-    'julian-mercer',
-    'tariq-mahmood',
-    'elena-vance',
-    'anne-hardy',
-  ];
-
-  const categoryIds = [
-    'architecture-and-space',
-    'art-and-culture',
-    'design-and-typography',
-    'engineering-and-technology',
-  ];
-
-  const marketAssetSlugs = [
-    'sp500', 'nasdaq100', 'dowjones', 'tsx', 'bmv-ipc',
-    'ftse100', 'dax40', 'cac40', 'smi20', 'ibex35',
-    'nikkei225', 'hangseng', 'csi300', 'nifty50', 'kse100',
-    'kospi', 'asx200', 'tasi', 'dfmgi', 'qse', 'bist100',
-    'gold', 'silver', 'crude-oil-wti', 'crude-oil-brent', 'natural-gas', 'copper', 'platinum',
-    'eur-usd', 'gbp-usd', 'usd-jpy', 'usd-chf', 'usd-cad', 'aud-usd',
-    'eur-gbp', 'eur-jpy', 'gbp-jpy', 'usd-pkr', 'usd-inr', 'usd-sar',
-    'usd-aed', 'usd-try', 'usd-cny',
-    'bitcoin', 'ethereum', 'solana', 'binancecoin', 'ripple', 'dogecoin', 'cardano', 'avalanche-2',
-    'news-1', 'news-2', 'news-3', 'news-4', 'news-5', 'news-6', 'news-7', 'news-8',
-  ];
+  const authorSlugs = ALL_AUTHOR_SLUGS;
+  const categoryIds = ALL_CATEGORY_IDS;
+  const marketAssetSlugs = process.env.SSG_ALL_MARKETS === 'true' ? ALL_MARKET_ASSET_SLUGS : PRIORITY_SSG_MARKET_SLUGS;
 
   for (const lang of siteConfig.languages) {
     const isDefault = lang.code === siteConfig.defaultLanguage;

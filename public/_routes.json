@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/assets/*",
+    "/data/*",
+    "/feeds/*",
+    "/sitemap*.xml",
+    "/robots.txt",
+    "/feed.xml",
+    "/rss.xml",
+    "/atom.xml",
+    "/*.png",
+    "/*.ico",
+    "/*.svg"
+  ]
+}
