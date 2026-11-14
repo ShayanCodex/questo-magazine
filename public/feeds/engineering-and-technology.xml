@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Questo — Engineering &amp; Static Systems</title>
+    <link>https://questo-blog.netlify.app/</link>
+    <description>Curated dispatches on Engineering &amp; Static Systems</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Nov 2026 17:17:48 GMT</lastBuildDate>
+    <atom:link href="https://questo-blog.netlify.app/feeds/engineering-and-technology.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Pure functional simplicity]]></title>
+      <link>https://questo-blog.netlify.app/articles/pure-functional-simplicity</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pure-functional-simplicity</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A meditation on keeping architectures minimal and rejecting unnecessary runtime abstractions.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Building static multilingual publishing]]></title>
+      <link>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How pre-rendering six distinct languages with zero runtime client fetching maximizes search crawling and fidelity.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+  </channel>
+</rss>

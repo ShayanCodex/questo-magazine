@@ -106,3 +106,4 @@ export function TradingViewTickerTape({ colorTheme = 'dark' }: TradingViewTicker
     </div>
   );
 }
+

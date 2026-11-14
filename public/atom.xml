@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Questo Magazine</title>
+  <subtitle>An editorial static publication on craft, design systems, and typography.</subtitle>
+  <link href="https://questo-blog.netlify.app/" />
+  <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
+  <id>https://questo-blog.netlify.app/</id>
+  <updated>2026-11-14T17:17:48.685Z</updated>
+  <entry>
+    <title>The Poetics of Concrete</title>
+    <link href="https://questo-blog.netlify.app/articles/the-poetics-of-concrete" />
+    <id>https://questo-blog.netlify.app/articles/the-poetics-of-concrete</id>
+    <updated>2026-11-10T00:00:00.000Z</updated>
+    <summary>Monolithic mass, tactile brutalism, and quiet volumetric light in modern architectural monuments.</summary>
+    <author>
+      <name>Julian Mercer</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Pure functional simplicity</title>
+    <link href="https://questo-blog.netlify.app/articles/pure-functional-simplicity" />
+    <id>https://questo-blog.netlify.app/articles/pure-functional-simplicity</id>
+    <updated>2026-11-09T00:00:00.000Z</updated>
+    <summary>A meditation on keeping architectures minimal and rejecting unnecessary runtime abstractions.</summary>
+    <author>
+      <name>Elena Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The geometry of silence</title>
+    <link href="https://questo-blog.netlify.app/articles/the-geometry-of-silence" />
+    <id>https://questo-blog.netlify.app/articles/the-geometry-of-silence</id>
+    <updated>2026-11-09T00:00:00.000Z</updated>
+    <summary>How raw concrete, unadorned stone, and void space create sanctuaries of contemplation in an era of hyper-connected visual noise.</summary>
+    <author>
+      <name>Mateo Silva</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The grid as an instrument</title>
+    <link href="https://questo-blog.netlify.app/articles/the-grid-as-an-instrument" />
+    <id>https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</id>
+    <updated>2026-11-09T00:00:00.000Z</updated>
+    <summary>Why the mathematical rigor of mid-century editorial grids remains the most powerful antidote to chaotic digital layouts.</summary>
+    <author>
+      <name>Saskia Lindqvist</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Building static multilingual publishing</title>
+    <link href="https://questo-blog.netlify.app/articles/building-static-multilingual-publishing" />
+    <id>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</id>
+    <updated>2026-11-09T00:00:00.000Z</updated>
+    <summary>How pre-rendering six distinct languages with zero runtime client fetching maximizes search crawling and fidelity.</summary>
+    <author>
+      <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Don&apos;t close your eyes</title>
+    <link href="https://questo-blog.netlify.app/articles/the-death-of-the-card-grid" />
+    <id>https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</id>
+    <updated>2026-11-08T00:00:00.000Z</updated>
+    <summary>Why editorial publications are returning to monumental typography, confident scale, and cinematic visual rhythm.</summary>
+    <author>
+      <name>Elena Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Hope dies last</title>
+    <link href="https://questo-blog.netlify.app/articles/craft-over-convenience" />
+    <id>https://questo-blog.netlify.app/articles/craft-over-convenience</id>
+    <updated>2026-11-06T00:00:00.000Z</updated>
+    <summary>A visual and critical exploration of classical form, enduring craftsmanship, and contemporary relevance.</summary>
+    <author>
+      <name>Anne Hardy</name>
+    </author>
+  </entry>
+</feed>

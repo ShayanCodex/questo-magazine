@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../lib/lang-context';
 import {
   INITIAL_FINANCIAL_NEWS,
   type FinancialNewsItem,
 } from '../../lib/markets';
 import {
   NewspaperIcon,
-  ArrowTopRightOnSquareIcon,
+  ArrowRightIcon,
   MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline';
 
@@ -20,6 +22,7 @@ const NEWS_CATEGORIES = [
 ];
 
 export function FinancialNewsWire() {
+  const { localePath } = useLanguage();
   const [news] = useState<FinancialNewsItem[]>(INITIAL_FINANCIAL_NEWS);
   const [selectedCat, setSelectedCat] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -110,15 +113,13 @@ export function FinancialNewsWire() {
 
               {/* Title */}
               <h3 className="font-display font-bold text-base sm:text-lg text-editorial-text leading-snug">
-                <a
-                  href={item.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to={localePath(`/markets/${item.id}`)}
                   className="hover:text-accent transition-colors flex items-start justify-between gap-2 group"
                 >
                   <span>{item.title}</span>
-                  <ArrowTopRightOnSquareIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text shrink-0 mt-0.5 opacity-60 group-hover:opacity-100" />
-                </a>
+                  <ArrowRightIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text shrink-0 mt-0.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                </Link>
               </h3>
 
               {/* Executive Summary */}
@@ -127,7 +128,7 @@ export function FinancialNewsWire() {
               </p>
             </div>
 
-            {/* Symbols & Outbound Link Footer */}
+            {/* Symbols & In-Site Link Footer */}
             <div className="pt-3 mt-4 border-t border-editorial-border/40 flex items-center justify-between text-[11px] font-mono">
               <div className="flex items-center gap-1.5">
                 {item.symbols?.map((sym) => (
@@ -139,14 +140,13 @@ export function FinancialNewsWire() {
                   </span>
                 ))}
               </div>
-              <a
-                href={item.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px] text-editorial-muted hover:text-editorial-text underline"
+              <Link
+                to={localePath(`/markets/${item.id}`)}
+                className="text-[10px] text-editorial-text hover:text-accent font-semibold underline flex items-center gap-1"
               >
-                Official Publication
-              </a>
+                <span>Read Full In-Site Analysis &amp; Chart</span>
+                <ArrowRightIcon className="h-3 w-3" />
+              </Link>
             </div>
           </article>
         ))}
@@ -154,3 +154,4 @@ export function FinancialNewsWire() {
     </section>
   );
 }
+

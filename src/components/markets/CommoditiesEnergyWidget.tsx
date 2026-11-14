@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../lib/lang-context';
 import {
   INITIAL_COMMODITIES,
   type CommodityAsset,
@@ -15,6 +17,7 @@ interface CommoditiesEnergyWidgetProps {
 }
 
 export function CommoditiesEnergyWidget({ colorTheme = 'dark' }: CommoditiesEnergyWidgetProps) {
+  const { localePath } = useLanguage();
   const [commodities] = useState<CommodityAsset[]>(INITIAL_COMMODITIES);
   const [activeCategory, setActiveCategory] = useState<'all' | 'energy' | 'precious-metals' | 'industrial-metals'>('all');
   const [selectedChartSymbol, setSelectedChartSymbol] = useState<string>('OANDA:XAUUSD');
@@ -163,8 +166,14 @@ export function CommoditiesEnergyWidget({ colorTheme = 'dark' }: CommoditiesEner
                 </div>
 
                 <div className="pt-2 mt-2 border-t border-editorial-border/40 text-[10px] text-editorial-muted flex items-center justify-between">
-                  <span className="truncate max-w-[200px]">{item.source}</span>
-                  <span className="text-[9px] font-mono text-editorial-muted">Click for Chart</span>
+                  <span className="truncate max-w-[160px]">{item.source}</span>
+                  <Link
+                    to={localePath(`/markets/${item.id}`)}
+                    onClick={(e) => e.stopPropagation()}
+                    className="text-[10px] font-mono text-editorial-text hover:text-accent font-semibold underline"
+                  >
+                    Full Page &amp; Chart →
+                  </Link>
                 </div>
               </div>
             );

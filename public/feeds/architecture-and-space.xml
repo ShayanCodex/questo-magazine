@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Questo — Architecture &amp; Spatial Design</title>
+    <link>https://questo-blog.netlify.app/</link>
+    <description>Curated dispatches on Architecture &amp; Spatial Design</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Nov 2026 17:17:48 GMT</lastBuildDate>
+    <atom:link href="https://questo-blog.netlify.app/feeds/architecture-and-space.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[The Poetics of Concrete]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-poetics-of-concrete</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-poetics-of-concrete</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Monolithic mass, tactile brutalism, and quiet volumetric light in modern architectural monuments.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[The geometry of silence]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-geometry-of-silence</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-geometry-of-silence</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How raw concrete, unadorned stone, and void space create sanctuaries of contemplation in an era of hyper-connected visual noise.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>architecture-and-space</category>
+    </item>
+  </channel>
+</rss>

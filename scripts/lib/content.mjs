@@ -130,6 +130,19 @@ export function getIncludedRoutes() {
     'engineering-and-technology',
   ];
 
+  const marketAssetSlugs = [
+    'sp500', 'nasdaq100', 'dowjones', 'tsx', 'bmv-ipc',
+    'ftse100', 'dax40', 'cac40', 'smi20', 'ibex35',
+    'nikkei225', 'hangseng', 'csi300', 'nifty50', 'kse100',
+    'kospi', 'asx200', 'tasi', 'dfmgi', 'qse', 'bist100',
+    'gold', 'silver', 'crude-oil-wti', 'crude-oil-brent', 'natural-gas', 'copper', 'platinum',
+    'eur-usd', 'gbp-usd', 'usd-jpy', 'usd-chf', 'usd-cad', 'aud-usd',
+    'eur-gbp', 'eur-jpy', 'gbp-jpy', 'usd-pkr', 'usd-inr', 'usd-sar',
+    'usd-aed', 'usd-try', 'usd-cny',
+    'bitcoin', 'ethereum', 'solana', 'binancecoin', 'ripple', 'dogecoin', 'cardano', 'avalanche-2',
+    'news-1', 'news-2', 'news-3', 'news-4', 'news-5', 'news-6', 'news-7', 'news-8',
+  ];
+
   for (const lang of siteConfig.languages) {
     const isDefault = lang.code === siteConfig.defaultLanguage;
     const prefix = isDefault ? '' : `/${lang.code}`;
@@ -142,6 +155,11 @@ export function getIncludedRoutes() {
 
     // Markets Intelligence Dashboard
     routes.push(`${prefix}/markets`);
+
+    // Dynamic Market Asset & Article Detail routes (TradingView Iframe + Full In-Site Analysis)
+    for (const assetSlug of marketAssetSlugs) {
+      routes.push(`${prefix}/markets/${assetSlug}`);
+    }
 
     // Categories Index
     routes.push(`${prefix}/categories`);

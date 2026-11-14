@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Questo Magazine — Master Feed</title>
+    <link>https://questo-blog.netlify.app/</link>
+    <description>An editorial static publication on craft, design systems, and typography.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Nov 2026 17:17:48 GMT</lastBuildDate>
+    <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[The Poetics of Concrete]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-poetics-of-concrete</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-poetics-of-concrete</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Monolithic mass, tactile brutalism, and quiet volumetric light in modern architectural monuments.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[Pure functional simplicity]]></title>
+      <link>https://questo-blog.netlify.app/articles/pure-functional-simplicity</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pure-functional-simplicity</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A meditation on keeping architectures minimal and rejecting unnecessary runtime abstractions.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[The geometry of silence]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-geometry-of-silence</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-geometry-of-silence</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How raw concrete, unadorned stone, and void space create sanctuaries of contemplation in an era of hyper-connected visual noise.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[The grid as an instrument]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Why the mathematical rigor of mid-century editorial grids remains the most powerful antidote to chaotic digital layouts.]]></description>
+      <author><![CDATA[Saskia Lindqvist]]></author>
+      <category>design-and-typography</category>
+    </item>
+    <item>
+      <title><![CDATA[Building static multilingual publishing]]></title>
+      <link>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How pre-rendering six distinct languages with zero runtime client fetching maximizes search crawling and fidelity.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Don't close your eyes]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Why editorial publications are returning to monumental typography, confident scale, and cinematic visual rhythm.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>art-and-culture</category>
+    </item>
+    <item>
+      <title><![CDATA[Hope dies last]]></title>
+      <link>https://questo-blog.netlify.app/articles/craft-over-convenience</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/craft-over-convenience</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A visual and critical exploration of classical form, enduring craftsmanship, and contemporary relevance.]]></description>
+      <author><![CDATA[Anne Hardy]]></author>
+      <category>art-and-culture</category>
+    </item>
+  </channel>
+</rss>

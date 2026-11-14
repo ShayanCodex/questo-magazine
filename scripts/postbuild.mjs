@@ -11,6 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
+const publicDir = path.join(rootDir, 'public');
 const contentDir = path.join(rootDir, 'content');
 const translationsDir = path.join(contentDir, 'translations');
 
@@ -360,6 +361,7 @@ function run() {
   const sitemapXml = generateSitemap();
   const sitemapPath = path.join(distDir, 'sitemap.xml');
   fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf8');
   console.log(`✓ Generated sitemap at: ${path.relative(rootDir, sitemapPath)}`);
 
   // 2. Generate robots.txt
@@ -370,23 +372,31 @@ Sitemap: ${cleanUrl(baseUrl, 'sitemap.xml')}
 `;
   const robotsPath = path.join(distDir, 'robots.txt');
   fs.writeFileSync(robotsPath, robotsTxt, 'utf8');
+  fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt, 'utf8');
   console.log(`✓ Generated robots.txt at: ${path.relative(rootDir, robotsPath)}`);
 
   // 3. Generate Master RSS 2.0 Feed (feed.xml & rss.xml)
   const rssXml = generateRssFeed(articles, `${siteConfig.name} Magazine — Master Feed`, siteConfig.description, 'feed.xml');
   fs.writeFileSync(path.join(distDir, 'feed.xml'), rssXml, 'utf8');
   fs.writeFileSync(path.join(distDir, 'rss.xml'), rssXml, 'utf8');
+  fs.writeFileSync(path.join(publicDir, 'feed.xml'), rssXml, 'utf8');
+  fs.writeFileSync(path.join(publicDir, 'rss.xml'), rssXml, 'utf8');
   console.log(`✓ Generated master RSS feeds at: dist/feed.xml & dist/rss.xml`);
 
   // 4. Generate Master Atom 1.0 Feed (atom.xml)
   const atomXml = generateAtomFeed(articles);
   fs.writeFileSync(path.join(distDir, 'atom.xml'), atomXml, 'utf8');
+  fs.writeFileSync(path.join(publicDir, 'atom.xml'), atomXml, 'utf8');
   console.log(`✓ Generated master Atom feed at: dist/atom.xml`);
 
   // 5. Generate Granular Per-Category RSS Feeds
   const feedsDir = path.join(distDir, 'feeds');
+  const pubFeedsDir = path.join(publicDir, 'feeds');
   if (!fs.existsSync(feedsDir)) {
     fs.mkdirSync(feedsDir, { recursive: true });
+  }
+  if (!fs.existsSync(pubFeedsDir)) {
+    fs.mkdirSync(pubFeedsDir, { recursive: true });
   }
 
   const categories = [
@@ -406,6 +416,7 @@ Sitemap: ${cleanUrl(baseUrl, 'sitemap.xml')}
     );
     const catPath = path.join(feedsDir, `${cat.id}.xml`);
     fs.writeFileSync(catPath, catRss, 'utf8');
+    fs.writeFileSync(path.join(pubFeedsDir, `${cat.id}.xml`), catRss, 'utf8');
     console.log(`✓ Generated category feed (${catArticles.length} items): dist/feeds/${cat.id}.xml`);
   }
 

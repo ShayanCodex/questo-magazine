@@ -228,3 +228,4 @@ export function GlobalEconomicCalendar({ colorTheme = 'dark' }: GlobalEconomicCa
     </section>
   );
 }
+

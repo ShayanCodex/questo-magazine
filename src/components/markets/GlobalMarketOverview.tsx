@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../lib/lang-context';
 import {
   INITIAL_GLOBAL_INDICES,
   type MarketIndex,
@@ -16,6 +18,7 @@ interface GlobalMarketOverviewProps {
 }
 
 export function GlobalMarketOverview({ colorTheme = 'dark' }: GlobalMarketOverviewProps) {
+  const { localePath } = useLanguage();
   const [selectedRegion, setSelectedRegion] = useState<string>('all');
   const [viewMode, setViewMode] = useState<'cards' | 'tradingview'>('cards');
   const [indices] = useState<MarketIndex[]>(INITIAL_GLOBAL_INDICES);
@@ -209,9 +212,10 @@ export function GlobalMarketOverview({ colorTheme = 'dark' }: GlobalMarketOvervi
           {filteredIndices.map((idx) => {
             const isPositive = idx.change >= 0;
             return (
-              <div
+              <Link
                 key={idx.id}
-                className="group relative rounded-lg border border-editorial-border bg-editorial-surface hover:border-editorial-text p-4 transition-all duration-200 shadow-2xs hover:shadow-sm flex flex-col justify-between"
+                to={localePath(`/markets/${idx.id}`)}
+                className="group relative rounded-lg border border-editorial-border bg-editorial-surface hover:border-editorial-text p-4 transition-all duration-200 shadow-2xs hover:shadow-sm flex flex-col justify-between block cursor-pointer"
               >
                 <div>
                   {/* Top Bar: Country & Latency Badge */}
@@ -290,9 +294,12 @@ export function GlobalMarketOverview({ colorTheme = 'dark' }: GlobalMarketOvervi
                   <span className="truncate max-w-[190px]" title={idx.source}>
                     {idx.source}
                   </span>
-                  <CheckCircleIcon className="h-3 w-3 text-emerald-500 shrink-0" title="Verified Legal Source" />
+                  <span className="text-[10px] font-mono text-editorial-muted group-hover:text-editorial-text group-hover:underline flex items-center gap-1">
+                    <span>Full Chart</span>
+                    <CheckCircleIcon className="h-3 w-3 text-emerald-500 shrink-0" title="Verified Legal Source" />
+                  </span>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

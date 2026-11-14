@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Questo — Art, Culture &amp; Sculpture</title>
+    <link>https://questo-blog.netlify.app/</link>
+    <description>Curated dispatches on Art, Culture &amp; Sculpture</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Nov 2026 17:17:48 GMT</lastBuildDate>
+    <atom:link href="https://questo-blog.netlify.app/feeds/art-and-culture.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Don't close your eyes]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Why editorial publications are returning to monumental typography, confident scale, and cinematic visual rhythm.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>art-and-culture</category>
+    </item>
+    <item>
+      <title><![CDATA[Hope dies last]]></title>
+      <link>https://questo-blog.netlify.app/articles/craft-over-convenience</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/craft-over-convenience</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A visual and critical exploration of classical form, enduring craftsmanship, and contemporary relevance.]]></description>
+      <author><![CDATA[Anne Hardy]]></author>
+      <category>art-and-culture</category>
+    </item>
+  </channel>
+</rss>

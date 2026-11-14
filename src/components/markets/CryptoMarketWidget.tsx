@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../lib/lang-context';
 import {
   INITIAL_CRYPTO_ASSETS,
   fetchLiveCryptoAssets,
@@ -20,6 +22,7 @@ function formatLargeNumber(val: number): string {
 }
 
 export function CryptoMarketWidget() {
+  const { localePath } = useLanguage();
   const [assets, setAssets] = useState<CryptoAsset[]>(INITIAL_CRYPTO_ASSETS);
   const [isLoading, setIsLoading] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<string>('Just now');
@@ -134,9 +137,10 @@ export function CryptoMarketWidget() {
         {sortedAssets.map((asset) => {
           const isPositive = asset.change24h >= 0;
           return (
-            <div
+            <Link
               key={asset.id}
-              className="rounded-lg border border-editorial-border bg-editorial-surface hover:border-editorial-text p-4 transition-all duration-200 shadow-2xs flex flex-col justify-between"
+              to={localePath(`/markets/${asset.id}`)}
+              className="group rounded-lg border border-editorial-border bg-editorial-surface hover:border-editorial-text p-4 transition-all duration-200 shadow-2xs flex flex-col justify-between block cursor-pointer"
             >
               <div>
                 {/* Top Row: Rank & Symbol */}
@@ -199,12 +203,15 @@ export function CryptoMarketWidget() {
               {/* Attribution */}
               <div className="pt-2 border-t border-editorial-border/40 text-[10px] text-editorial-muted flex items-center justify-between">
                 <span>CoinPaprika / Public Feed</span>
-                <span className="text-emerald-500 uppercase text-[9px] font-semibold">Verified</span>
+                <span className="text-[10px] font-mono text-editorial-muted group-hover:text-editorial-text group-hover:underline">
+                  Full Chart →
+                </span>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
     </section>
   );
 }
+

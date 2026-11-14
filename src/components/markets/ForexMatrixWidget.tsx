@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../lib/lang-context';
 import {
   INITIAL_FOREX_PAIRS,
   fetchLiveForexRates,
@@ -28,6 +30,7 @@ const CONVERTER_CURRENCIES = [
 ];
 
 export function ForexMatrixWidget() {
+  const { localePath } = useLanguage();
   const [pairs, setPairs] = useState<ForexPair[]>(INITIAL_FOREX_PAIRS);
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'major' | 'minor' | 'asian-middle-east'>('all');
   const [isLoading, setIsLoading] = useState(false);
@@ -252,11 +255,16 @@ export function ForexMatrixWidget() {
                   const isPositive = p.changePercent24h >= 0;
                   return (
                     <tr key={p.id} className="hover:bg-editorial-surface-hover/50 transition-colors">
-                      <td className="py-2.5 font-bold text-editorial-text flex items-center gap-2">
-                        <span>{p.pair}</span>
-                        <span className="text-[10px] font-normal text-editorial-muted hidden sm:inline">
-                          ({p.base}/{p.quote})
-                        </span>
+                      <td className="py-2.5 font-bold text-editorial-text">
+                        <Link
+                          to={localePath(`/markets/${p.id}`)}
+                          className="hover:text-accent flex items-center gap-1.5 transition-colors group"
+                        >
+                          <span className="group-hover:underline">{p.pair}</span>
+                          <span className="text-[10px] font-normal text-editorial-muted hidden sm:inline">
+                            ({p.base}/{p.quote})
+                          </span>
+                        </Link>
                       </td>
                       <td className="py-2.5 text-right font-black text-editorial-text tabular-nums">
                         {p.rate.toLocaleString(undefined, {

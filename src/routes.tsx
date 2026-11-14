@@ -12,6 +12,7 @@ import { LanguageRoot } from './components/LanguageRoot';
 import { Home } from './pages/Home';
 import { Articles } from './pages/Articles';
 import { Markets } from './pages/Markets';
+import { MarketDetail } from './pages/MarketDetail';
 import { Categories } from './pages/Categories';
 import { CategoryDetail } from './pages/CategoryDetail';
 import { Article } from './pages/Article';
@@ -69,6 +70,10 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
       {
         path: 'markets',
         element: <Markets />,
+      },
+      {
+        path: 'markets/:slug',
+        element: <MarketDetail />,
       },
       {
         path: 'categories',

@@ -1868,3 +1868,562 @@ export function convertCurrency(
 
   return +(amount * finalRate).toFixed(2);
 }
+
+// ==========================================
+// 10. UNIFIED ASSET DETAIL DATA LAYER
+//     (Supports dedicated A-to-Z pages for all cards)
+// ==========================================
+
+export interface MarketAssetDetail {
+  slug: string;
+  name: string;
+  symbol: string;
+  type: 'index' | 'forex' | 'crypto' | 'commodity' | 'news';
+  price: string | number;
+  change: number;
+  changePercent: number;
+  currency: string;
+  exchange: string;
+  country: string;
+  region: string;
+  status: MarketDataStatus;
+  source: string;
+  tvSymbol: string;
+  description: string;
+  fullAnalysis: string[];
+  keyStats: Array<{ label: string; value: string }>;
+  constituents?: string[];
+  newsHighlights?: string[];
+  relatedSlugs: string[];
+}
+
+// Comprehensive metadata catalog for in-depth asset pages
+const ASSET_METADATA_CATALOG: Record<
+  string,
+  {
+    description: string;
+    fullAnalysis: string[];
+    keyStats: Array<{ label: string; value: string }>;
+    constituents?: string[];
+    newsHighlights?: string[];
+    relatedSlugs: string[];
+  }
+> = {
+  // Global Indices
+  sp500: {
+    description:
+      'The Standard & Poor’s 500 Index tracks 500 leading publicly traded companies across the United States. Weighted by float-adjusted market capitalization, it is widely regarded by institutional asset managers as the premier proxy for the American equity market and corporate earnings vitality.',
+    fullAnalysis: [
+      'The S&P 500 represents approximately 80% of total available U.S. stock market capitalization. Performance is heavily influenced by corporate earnings releases, Federal Reserve interest rate benchmarks, labor market productivity, and technological capital expenditures in generative AI and cloud infrastructure.',
+      'Historically, the index rebalances quarterly in March, June, September, and December. Valuation multiples fluctuate around 20-25x forward earnings, with index resilience supported by substantial cash-flow generation across mega-cap technology and healthcare conglomerates.',
+      'Risk factors currently monitored by market participants include services inflation persistence, sovereign debt issuance volumes, and consumer credit delinquencies.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Large-Cap Equities' },
+      { label: 'Weighting Method', value: 'Float-Adjusted Market Cap' },
+      { label: 'Calculation Agent', value: 'S&P Dow Jones Indices' },
+      { label: 'Rebalance Frequency', value: 'Quarterly (Mar/Jun/Sep/Dec)' },
+      { label: 'Base Currency', value: 'USD ($)' },
+      { label: 'Data Freshness', value: 'Real-Time Cboe BZX / 15m CTA' },
+    ],
+    constituents: [
+      'Apple Inc. (AAPL)',
+      'Microsoft Corp. (MSFT)',
+      'NVIDIA Corp. (NVDA)',
+      'Amazon.com Inc. (AMZN)',
+      'Alphabet Inc. (GOOGL)',
+      'Meta Platforms (META)',
+      'Berkshire Hathaway (BRK.B)',
+    ],
+    newsHighlights: [
+      'Federal Reserve Signals Measured Pace for Rate Easing as Services Inflation Persists',
+      'Technology sector capital expenditures expand 28% year-over-year.',
+    ],
+    relatedSlugs: ['nasdaq100', 'dowjones', 'tsx', 'ftse100'],
+  },
+  nasdaq100: {
+    description:
+      'The NASDAQ 100 Index includes 100 of the largest domestic and international non-financial securities listed on The NASDAQ Stock Market based on market capitalization. It is the premier global benchmark for modern innovative enterprises.',
+    fullAnalysis: [
+      'Dominated by computer hardware, software, telecommunications, retail, and biotechnology pioneers, the NASDAQ 100 serves as the primary conduit for international growth-oriented capital flows.',
+      'The index excludes financial firms such as commercial banks and investment brokers, making it exceptionally sensitive to long-term discount rates and yields on the 10-year US Treasury note.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Growth & Technology Equities' },
+      { label: 'Weighting Method', value: 'Modified Market Capitalization' },
+      { label: 'Calculation Agent', value: 'Nasdaq, Inc.' },
+      { label: 'Sector Dominance', value: 'Technology (~58%), Consumer (~18%)' },
+      { label: 'Base Currency', value: 'USD ($)' },
+    ],
+    constituents: [
+      'Apple Inc.',
+      'Microsoft Corp.',
+      'NVIDIA Corp.',
+      'Broadcom Inc.',
+      'Amazon.com Inc.',
+      'Tesla Inc.',
+    ],
+    relatedSlugs: ['sp500', 'dowjones', 'bitcoin'],
+  },
+  dowjones: {
+    description:
+      'The Dow Jones Industrial Average is a price-weighted measure of 30 significant American blue-chip corporations. Formed in 1896 by Charles Dow, it remains the oldest continuous equity market indicator in North America.',
+    fullAnalysis: [
+      'Unlike market-cap indices, the Dow is price-weighted, meaning higher-priced stocks have a proportionally larger influence over index point swings regardless of total enterprise size.',
+      'Its constituents span industrial giants, financial powerhouses, healthcare leaders, and modern technology bellwethers.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Blue-Chip Equities' },
+      { label: 'Weighting Method', value: 'Price-Weighted' },
+      { label: 'Number of Stocks', value: '30 Elite Corporations' },
+      { label: 'Calculation Agent', value: 'S&P Dow Jones Indices' },
+    ],
+    relatedSlugs: ['sp500', 'nasdaq100'],
+  },
+  kse100: {
+    description:
+      'The KSE 100 Index is the benchmark index of the Pakistan Stock Exchange (PSX). It comprises the top 100 listed companies categorized across 35 sectors, selected by market capitalization and sector representation.',
+    fullAnalysis: [
+      'The KSE 100 provides a comprehensive barometer of Pakistan’s commercial economy, with dominant weightings in Commercial Banks, Oil & Gas Exploration, Fertilizers, Cement, and Power Generation.',
+      'Recent index performance has benefited from sharp domestic disinflation, State Bank of Pakistan policy rate easing from 22% down to 15%, IMF program stabilization, and growing foreign direct investment commitments from GCC sovereign funds.',
+    ],
+    keyStats: [
+      { label: 'Exchange', value: 'Pakistan Stock Exchange (PSX)' },
+      { label: 'Trading Hub', value: 'Karachi, Pakistan' },
+      { label: 'Base Currency', value: 'Pakistani Rupee (PKR)' },
+      { label: 'Data Latency', value: 'Official End-of-Day Quotations' },
+      { label: 'Key Drivers', value: 'Monetary Policy, IMF Reviews, Energy Tariffs' },
+    ],
+    constituents: [
+      'Oil & Gas Development Co. (OGDC)',
+      'Engro Corporation (ENGRO)',
+      'Fauji Fertilizer Co. (FFC)',
+      'United Bank Limited (UBL)',
+      'Habib Bank Limited (HBL)',
+      'Lucky Cement (LUCK)',
+    ],
+    newsHighlights: [
+      'State Bank of Pakistan Lowers Benchmark Policy Rate as Disinflation Takes Hold',
+      'Foreign institutional portfolio inflows register net positive momentum on PSX.',
+    ],
+    relatedSlugs: ['usd-pkr', 'nifty50', 'tasi'],
+  },
+  ftse100: {
+    description:
+      'The FTSE 100 Index is a share index of the 100 companies listed on the London Stock Exchange with the highest market capitalization. It is heavily weighted toward international natural resources, pharmaceuticals, and global banking.',
+    fullAnalysis: [
+      'Over 75% of revenue generated by FTSE 100 constituents originates outside the United Kingdom, rendering the index an international earnings vehicle that frequently benefits from a weaker British Pound.',
+    ],
+    keyStats: [
+      { label: 'Exchange', value: 'London Stock Exchange (LSE)' },
+      { label: 'Base Currency', value: 'British Pound (GBP)' },
+      { label: 'Data Latency', value: '15-Minute Delayed Public Feed' },
+    ],
+    relatedSlugs: ['dax40', 'cac40', 'gbp-usd'],
+  },
+  dax40: {
+    description:
+      'The DAX 40 is the benchmark stock market index of Germany, tracking 40 major German blue-chip enterprises trading on the Frankfurt Stock Exchange via the Xetra electronic platform.',
+    fullAnalysis: [
+      'German industrial leaders in automotive manufacturing, chemicals, advanced engineering, and enterprise software dictate the index’s performance.',
+    ],
+    keyStats: [
+      { label: 'Exchange', value: 'Deutsche Börse Xetra' },
+      { label: 'Base Currency', value: 'Euro (EUR)' },
+      { label: 'Data Latency', value: '15-Minute Delayed Public Feed' },
+    ],
+    relatedSlugs: ['cac40', 'ftse100', 'eur-usd'],
+  },
+  nikkei225: {
+    description:
+      'The Nikkei 225 is Japan’s foremost price-weighted equity index, tracking 225 prominent companies listed on the Tokyo Stock Exchange.',
+    fullAnalysis: [
+      'Constituents include global automotive leaders, semiconductor equipment manufacturers, and consumer electronics conglomerates.',
+    ],
+    keyStats: [
+      { label: 'Exchange', value: 'Tokyo Stock Exchange (TSE)' },
+      { label: 'Base Currency', value: 'Japanese Yen (JPY)' },
+      { label: 'Data Latency', value: '15-Minute Delayed Feed' },
+    ],
+    relatedSlugs: ['hangseng', 'kospi', 'usd-jpy'],
+  },
+  hangseng: {
+    description:
+      'The Hang Seng Index is a free-float market-capitalization-weighted stock market index in Hong Kong, tracking major commercial and technology leaders in Greater China.',
+    fullAnalysis: [
+      'Serves as the vital international financial bridge between global capital allocators and Mainland Chinese corporate enterprises.',
+    ],
+    keyStats: [
+      { label: 'Exchange', value: 'Hong Kong Exchanges (HKEX)' },
+      { label: 'Base Currency', value: 'Hong Kong Dollar (HKD)' },
+      { label: 'Data Latency', value: '15-Minute Delayed Feed' },
+    ],
+    relatedSlugs: ['csi300', 'nikkei225'],
+  },
+  tasi: {
+    description:
+      'The Tadawul All Share Index (TASI) tracks all listed companies on the Saudi Exchange in Riyadh, representing the financial anchor of the Gulf Cooperation Council (GCC).',
+    fullAnalysis: [
+      'Underpinned by energy infrastructure, commercial banking, petrochemicals, and real estate development driving the Saudi Vision 2030 economic transformation.',
+    ],
+    keyStats: [
+      { label: 'Exchange', value: 'Saudi Exchange (Tadawul)' },
+      { label: 'Base Currency', value: 'Saudi Riyal (SAR)' },
+      { label: 'Data Latency', value: '15-Minute Delayed Feed' },
+    ],
+    relatedSlugs: ['crude-oil-brent', 'usd-sar', 'dfmgi'],
+  },
+
+  // Commodities
+  gold: {
+    description:
+      'Gold (XAU/USD) is the world’s preeminent monetary reserve asset and store of value. It trades internationally against the US Dollar in units of Troy Ounces, governed by LBMA spot fixing and COMEX futures pricing.',
+    fullAnalysis: [
+      'Gold exhibits a historically negative correlation with real interest rates. Central banks globally have acquired record bullion volumes over consecutive quarters to diversify sovereign foreign exchange reserves away from single-currency concentration risk.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Precious Metals / Sovereign Reserve' },
+      { label: 'Pricing Unit', value: 'USD per Troy Ounce ($/oz)' },
+      { label: 'Standard Bar', value: '400 Troy Ounces (99.5% pure)' },
+      { label: 'Primary Centers', value: 'London (LBMA), New York (COMEX), Shanghai' },
+    ],
+    relatedSlugs: ['silver', 'crude-oil-brent', 'usd-chf'],
+  },
+  silver: {
+    description:
+      'Silver (XAG/USD) serves dual roles as an investment store of value and an indispensable industrial metal vital to photovoltaic solar panels, semiconductor electronics, and medical technologies.',
+    fullAnalysis: [
+      'Industrial demand constitutes over 55% of global silver consumption, driving tight supply deficits as global green energy and electric vehicle manufacturing scales.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Precious & Industrial Metal' },
+      { label: 'Pricing Unit', value: 'USD per Troy Ounce ($/oz)' },
+    ],
+    relatedSlugs: ['gold', 'copper'],
+  },
+  'crude-oil-brent': {
+    description:
+      'Brent Crude is the international benchmark for Atlantic basin light sweet crude oil. Sourced from the North Sea, it prices roughly two-thirds of the world’s internationally traded physical oil supplies.',
+    fullAnalysis: [
+      'Prices are governed by OPEC+ production quota agreements, global industrial activity, non-OPEC deepwater exploration, and geopolitical shipping corridors through the Strait of Hormuz and Red Sea.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Global Energy Benchmark' },
+      { label: 'Pricing Unit', value: 'USD per Barrel ($/bbl = 42 US Gallons)' },
+      { label: 'Primary Exchange', value: 'ICE Futures Europe' },
+    ],
+    relatedSlugs: ['crude-oil-wti', 'natural-gas', 'tasi'],
+  },
+  'crude-oil-wti': {
+    description:
+      'West Texas Intermediate (WTI) is the domestic crude oil benchmark for the United States, delivered physically at Cushing, Oklahoma, the pivotal storage and pipeline junction of North America.',
+    fullAnalysis: [
+      'Extracted predominantly from the Permian Basin and Eagle Ford formations, WTI has cemented the United States as the world’s top petroleum producer.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'North American Energy Benchmark' },
+      { label: 'Pricing Unit', value: 'USD per Barrel ($/bbl)' },
+      { label: 'Primary Exchange', value: 'New York Mercantile Exchange (NYMEX)' },
+    ],
+    relatedSlugs: ['crude-oil-brent', 'natural-gas'],
+  },
+
+  // Crypto
+  bitcoin: {
+    description:
+      'Bitcoin (BTC) is the world’s first decentralized, cryptographically secured digital currency. Operating on a peer-to-peer Proof-of-Work blockchain, it features a mathematically hardcoded supply limit of 21 million units.',
+    fullAnalysis: [
+      'Institutional adoption has accelerated via regulated spot exchange-traded funds (ETFs), positioning Bitcoin as a programmatic hedge against fiat currency debasement and sovereign fiscal deficits.',
+      'The network undergoes a halving event every 210,000 blocks (roughly 4 years), cutting the block subsidy reward in half and mechanically diminishing new issuance.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Decentralized Digital Asset' },
+      { label: 'Max Supply Cap', value: '21,000,000 BTC' },
+      { label: 'Consensus Mechanism', value: 'Proof of Work (SHA-256)' },
+      { label: 'Block Time', value: '~10 Minutes' },
+      { label: 'Market Rank', value: '#1 Globally' },
+    ],
+    relatedSlugs: ['ethereum', 'solana', 'gold'],
+  },
+  ethereum: {
+    description:
+      'Ethereum is a decentralized open-source blockchain featuring smart contract functionality. Ether (ETH) serves as the native currency powering the decentralized finance (DeFi), tokenization, and web3 ecosystem.',
+    fullAnalysis: [
+      'Transitioned to Proof of Stake consensus via The Merge, reducing network electrical consumption by 99.9% and introducing a dynamic token burn mechanism that burns base fees during high network activity.',
+    ],
+    keyStats: [
+      { label: 'Asset Class', value: 'Smart Contract Platform' },
+      { label: 'Consensus', value: 'Proof of Stake' },
+      { label: 'Market Rank', value: '#2 Globally' },
+    ],
+    relatedSlugs: ['bitcoin', 'solana', 'binancecoin'],
+  },
+
+  // Forex
+  'eur-usd': {
+    description:
+      'The EUR/USD currency pair represents the relative value of the Euro against the United States Dollar. It is the single most liquid and actively traded financial instrument on earth, handling over 24% of daily global foreign exchange turnover.',
+    fullAnalysis: [
+      'Price trajectory is dictated by monetary policy rate divergence between the US Federal Reserve and the European Central Bank, sovereign debt spreads across Eurozone member states, and transatlantic trade flows.',
+    ],
+    keyStats: [
+      { label: 'Pair', value: 'Euro / US Dollar' },
+      { label: 'Base Currency', value: 'Euro (EUR)' },
+      { label: 'Quote Currency', value: 'US Dollar (USD)' },
+      { label: 'Standard Lot', value: '100,000 Units' },
+      { label: 'Data Source', value: 'European Central Bank (ECB) Reference' },
+    ],
+    relatedSlugs: ['gbp-usd', 'usd-chf', 'dax40'],
+  },
+  'usd-pkr': {
+    description:
+      'The USD/PKR exchange rate tracks the value of the United States Dollar against the Pakistani Rupee. It is regulated by the State Bank of Pakistan (SBP) via an interbank market framework with managed foreign exchange buffers.',
+    fullAnalysis: [
+      'Rate stability is supported by overseas Pakistani remittances exceeding $3 billion monthly, multi-year IMF Extended Fund Facility program benchmarks, structural energy sector reforms, and fiscal consolidation.',
+    ],
+    keyStats: [
+      { label: 'Pair', value: 'US Dollar / Pakistani Rupee' },
+      { label: 'Central Bank', value: 'State Bank of Pakistan (SBP)' },
+      { label: 'Fixing Source', value: 'SBP Interbank Weighted Average Closing' },
+      { label: 'Data Latency', value: 'End-of-Day Official Daily Rate' },
+    ],
+    relatedSlugs: ['kse100', 'usd-inr', 'usd-aed'],
+  },
+};
+
+/**
+ * Get unified detailed market asset by slug across all classes
+ */
+export function getMarketAssetBySlug(slug: string): MarketAssetDetail | null {
+  const cleanSlug = slug.toLowerCase().trim();
+
+  // 1. Check Global Indices
+  const index = INITIAL_GLOBAL_INDICES.find((i) => i.id === cleanSlug);
+  if (index) {
+    const meta = ASSET_METADATA_CATALOG[cleanSlug] || {
+      description: `${index.name} is a leading equity market benchmark tracking primary public corporations on ${index.exchange}.`,
+      fullAnalysis: [
+        `As a key barometer of ${index.country}'s economic activity, the ${index.name} reflects corporate earnings resilience, sovereign fiscal developments, and central bank interest rate settings.`,
+        `Trading information is provided under official exchange distribution terms with clear ${index.status} latency disclosures.`,
+      ],
+      keyStats: [
+        { label: 'Exchange', value: index.exchange },
+        { label: 'Country', value: index.country },
+        { label: 'Base Currency', value: index.currency },
+        { label: 'Data Latency', value: index.status === 'real-time' ? 'Real-Time' : '15-Min Delayed' },
+      ],
+      relatedSlugs: ['sp500', 'kse100', 'gold', 'bitcoin'],
+    };
+
+    return {
+      slug: index.id,
+      name: index.name,
+      symbol: index.symbol,
+      type: 'index',
+      price: index.price,
+      change: index.change,
+      changePercent: index.changePercent,
+      currency: index.currency,
+      exchange: index.exchange,
+      country: index.country,
+      region: index.region,
+      status: index.status,
+      source: index.source,
+      tvSymbol: index.tvSymbol,
+      description: meta.description,
+      fullAnalysis: meta.fullAnalysis,
+      keyStats: meta.keyStats,
+      constituents: meta.constituents,
+      newsHighlights: meta.newsHighlights,
+      relatedSlugs: meta.relatedSlugs,
+    };
+  }
+
+  // 2. Check Commodities
+  const comm = INITIAL_COMMODITIES.find((c) => c.id === cleanSlug);
+  if (comm) {
+    const meta = ASSET_METADATA_CATALOG[cleanSlug] || {
+      description: `${comm.name} (${comm.symbol}) is an internationally traded primary raw material priced in ${comm.unit}.`,
+      fullAnalysis: [
+        `Prices are benchmarked on leading commodities exchanges with active spot and front-month continuous futures trading.`,
+      ],
+      keyStats: [
+        { label: 'Category', value: comm.category },
+        { label: 'Quotation Unit', value: comm.unit },
+        { label: 'Contract Specification', value: comm.contract },
+      ],
+      relatedSlugs: ['gold', 'crude-oil-brent', 'crude-oil-wti'],
+    };
+
+    return {
+      slug: comm.id,
+      name: comm.name,
+      symbol: comm.symbol,
+      type: 'commodity',
+      price: comm.price,
+      change: comm.change,
+      changePercent: comm.changePercent,
+      currency: 'USD',
+      exchange: comm.source,
+      country: 'Global',
+      region: 'commodities',
+      status: comm.status,
+      source: comm.source,
+      tvSymbol: comm.tvSymbol,
+      description: meta.description,
+      fullAnalysis: meta.fullAnalysis,
+      keyStats: meta.keyStats,
+      relatedSlugs: meta.relatedSlugs,
+    };
+  }
+
+  // 3. Check Crypto Assets
+  const crypto = INITIAL_CRYPTO_ASSETS.find((c) => c.id === cleanSlug);
+  if (crypto) {
+    const meta = ASSET_METADATA_CATALOG[cleanSlug] || {
+      description: `${crypto.name} (${crypto.symbol}) is a decentralized digital asset trading on international cryptocurrency exchanges.`,
+      fullAnalysis: [
+        `Global market metrics, 24-hour liquidity volume, and circulating market capitalization are aggregated from public non-commercial feeds.`,
+      ],
+      keyStats: [
+        { label: 'Symbol', value: crypto.symbol },
+        { label: 'Market Rank', value: `#${crypto.rank}` },
+        { label: 'Circulating Cap', value: `$${(crypto.marketCap / 1e9).toFixed(2)}B` },
+        { label: '24h Volume', value: `$${(crypto.volume24h / 1e9).toFixed(2)}B` },
+      ],
+      relatedSlugs: ['bitcoin', 'ethereum', 'solana'],
+    };
+
+    const tvMap: Record<string, string> = {
+      bitcoin: 'BINANCE:BTCUSDT',
+      ethereum: 'BINANCE:ETHUSDT',
+      solana: 'BINANCE:SOLUSDT',
+      binancecoin: 'BINANCE:BNBUSDT',
+      ripple: 'BINANCE:XRPUSDT',
+      dogecoin: 'BINANCE:DOGEUSDT',
+      cardano: 'BINANCE:ADAUSDT',
+      'avalanche-2': 'BINANCE:AVAXUSDT',
+    };
+
+    return {
+      slug: crypto.id,
+      name: crypto.name,
+      symbol: crypto.symbol,
+      type: 'crypto',
+      price: crypto.priceUsd,
+      change: +(crypto.priceUsd * (crypto.change24h / 100)).toFixed(2),
+      changePercent: crypto.change24h,
+      currency: 'USD',
+      exchange: 'CoinPaprika / Binance Public Aggregation',
+      country: 'Decentralized',
+      region: 'global',
+      status: crypto.status,
+      source: crypto.source,
+      tvSymbol: tvMap[cleanSlug] || `BINANCE:${crypto.symbol}USDT`,
+      description: meta.description,
+      fullAnalysis: meta.fullAnalysis,
+      keyStats: meta.keyStats,
+      relatedSlugs: meta.relatedSlugs,
+    };
+  }
+
+  // 4. Check Forex Pairs
+  const fx = INITIAL_FOREX_PAIRS.find((f) => f.id === cleanSlug);
+  if (fx) {
+    const meta = ASSET_METADATA_CATALOG[cleanSlug] || {
+      description: `The ${fx.pair} exchange rate represents the value of ${fx.base} expressed in terms of ${fx.quote}.`,
+      fullAnalysis: [
+        `Official exchange rates provided via European Central Bank (ECB) daily reference rates and national central bank fixings.`,
+      ],
+      keyStats: [
+        { label: 'Base Currency', value: fx.base },
+        { label: 'Quote Currency', value: fx.quote },
+        { label: 'Pair Category', value: fx.category },
+      ],
+      relatedSlugs: ['eur-usd', 'usd-pkr', 'gbp-usd'],
+    };
+
+    return {
+      slug: fx.id,
+      name: `${fx.pair} Currency Rate`,
+      symbol: fx.pair,
+      type: 'forex',
+      price: fx.rate,
+      change: fx.change24h,
+      changePercent: fx.changePercent24h,
+      currency: fx.quote,
+      exchange: fx.source,
+      country: 'International',
+      region: 'forex',
+      status: fx.status,
+      source: fx.source,
+      tvSymbol: `FX_IDC:${fx.base}${fx.quote}`,
+      description: meta.description,
+      fullAnalysis: meta.fullAnalysis,
+      keyStats: meta.keyStats,
+      relatedSlugs: meta.relatedSlugs,
+    };
+  }
+
+  // 5. Check Financial News Dispatches (In-Site Article View)
+  const news = INITIAL_FINANCIAL_NEWS.find((n) => n.id === cleanSlug);
+  if (news) {
+    const tvSymbolForNews: Record<string, string> = {
+      'news-1': 'CAPITALCOM:US500',
+      'news-2': 'INDEX:DAX',
+      'news-3': 'PSX:KSE100',
+      'news-4': 'TVC:UKOIL',
+      'news-5': 'TADAWUL:TASI',
+      'news-6': 'INDEX:NKY',
+      'news-7': 'OANDA:XAUUSD',
+      'news-8': 'BINANCE:BTCUSDT',
+    };
+
+    return {
+      slug: news.id,
+      name: news.title,
+      symbol: news.symbols?.[0] || 'NEWS',
+      type: 'news',
+      price: 'Intelligence Dispatch',
+      change: 0,
+      changePercent: 0,
+      currency: 'N/A',
+      exchange: news.source,
+      country: news.region,
+      region: news.category,
+      status: 'real-time',
+      source: news.source,
+      tvSymbol: tvSymbolForNews[cleanSlug] || 'CAPITALCOM:US500',
+      description: news.summary,
+      fullAnalysis: [
+        news.summary,
+        `This executive financial intelligence dispatch was synthesized by Questo Market Intelligence from verified public regulatory disclosures, central bank announcements, and institutional reporting.`,
+        `Market participants should monitor key support and resistance thresholds along with scheduled macroeconomic calendar releases to gauge future directional volatility.`,
+      ],
+      keyStats: [
+        { label: 'Category', value: news.category.toUpperCase() },
+        { label: 'Primary Jurisdiction', value: news.region },
+        { label: 'Original Wire Source', value: news.source },
+        { label: 'Publication Timestamp', value: new Date(news.publishedAt).toUTCString() },
+        { label: 'Primary Tickers Tracked', value: (news.symbols || []).join(', ') },
+      ],
+      newsHighlights: [news.title],
+      relatedSlugs: ['sp500', 'kse100', 'gold', 'bitcoin', 'crude-oil-brent'],
+    };
+  }
+
+  return null;
+}
+
+/**
+ * Return all 59 asset slugs for static SSG generation and routing
+ */
+export function getAllMarketAssetSlugs(): string[] {
+  const indices = INITIAL_GLOBAL_INDICES.map((i) => i.id);
+  const comms = INITIAL_COMMODITIES.map((c) => c.id);
+  const cryptos = INITIAL_CRYPTO_ASSETS.map((c) => c.id);
+  const forex = INITIAL_FOREX_PAIRS.map((f) => f.id);
+  const news = INITIAL_FINANCIAL_NEWS.map((n) => n.id);
+
+  return [...indices, ...comms, ...cryptos, ...forex, ...news];
+}
