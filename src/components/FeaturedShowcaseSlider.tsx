@@ -8,7 +8,7 @@ import {
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
-import { getArticleCategory, getCategoryShortName } from '../lib/categories';
+import { getArticleCategory } from '../lib/categories';
 import { BookmarkButton } from './BookmarkButton';
 import { cn } from '../lib/utils';
 
@@ -201,30 +201,9 @@ export function FeaturedShowcaseSlider({
           );
         })}
 
-        {/* 2. Top Editorial Folio Strip (Minimal & Elegant) */}
-        <div className="absolute top-5 sm:top-7 start-6 sm:start-10 end-6 sm:end-10 z-20 flex items-center justify-between pointer-events-none">
-          {/* Left: Issue Discipline Tag */}
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-[10px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-white/90 drop-shadow-sm flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-              <span>Issue 03 // Curated Monograph</span>
-            </span>
-            <span className="text-white/40 hidden sm:inline">•</span>
-            <Link
-              to={localePath(`/articles?category=${category.id}`)}
-              className="hidden sm:inline-block font-mono text-[10px] sm:text-xs tracking-wider uppercase text-white/70 hover:text-white transition-colors pointer-events-auto underline-offset-4 hover:underline"
-            >
-              {getCategoryShortName(category.id)}
-            </Link>
-          </div>
-
-          {/* Right: Folio Stamp & Bookmark Action */}
-          <div className="flex items-center gap-3 pointer-events-auto">
-            <div className="hidden sm:flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-[0.2em] px-2.5 py-1 rounded-full border border-white/15 bg-black/40 backdrop-blur-md text-white/80">
-              <span>Collection Folio</span>
-            </div>
-            <BookmarkButton slug={currentArticle.slug} variant="card" />
-          </div>
+        {/* 2. Top Action (Minimal Bookmark) */}
+        <div className="absolute top-5 sm:top-7 end-6 sm:end-10 z-20 flex items-center justify-end pointer-events-auto">
+          <BookmarkButton slug={currentArticle.slug} variant="card" />
         </div>
 
         {/* 3. Primary Editorial Typography Suite (Lower-Third Golden Ratio Placement) */}

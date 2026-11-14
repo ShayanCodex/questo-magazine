@@ -152,20 +152,12 @@ export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
           <img
             src={curated.image}
             alt={curated.alt}
-            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+            className="w-full h-full object-cover group-hover:scale-[1.015] transition-transform duration-700 ease-out"
             loading="lazy"
           />
 
-          {/* Subtle directional vignette: 80%+ natural photographic clarity */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-
-          {/* Museum-Grade Figure Caption Stamp */}
-          <div className="absolute bottom-4 start-4 sm:bottom-6 sm:start-6 z-10 pointer-events-none">
-            <div className="px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-white/90 text-[10px] sm:text-xs font-mono uppercase tracking-[0.18em] shadow-md flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-white/70" />
-              <span>{curated.caption}</span>
-            </div>
-          </div>
+          {/* Pure photographic clarity with gentle hover accentuation */}
+          <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors" />
         </Link>
       </div>
     </section>
