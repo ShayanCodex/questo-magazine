@@ -75,6 +75,12 @@ function generatePagesSitemap(baseUrl, languages, defaultLang) {
     { id: 'contact', prio: '0.5', freq: 'monthly', tpl: (c, isDef) => (isDef ? 'contact' : `${c}/contact`) },
     { id: 'terms', prio: '0.4', freq: 'yearly', tpl: (c, isDef) => (isDef ? 'terms' : `${c}/terms`) },
     { id: 'privacy', prio: '0.4', freq: 'yearly', tpl: (c, isDef) => (isDef ? 'privacy' : `${c}/privacy`) },
+    { id: 'tools', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools' : `${c}/tools`) },
+    { id: 'tool-image-converter', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools/image-converter' : `${c}/tools/image-converter`) },
+    { id: 'tool-audio-extractor', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools/audio-extractor' : `${c}/tools/audio-extractor`) },
+    { id: 'tool-pdf-tools', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools/pdf-tools' : `${c}/tools/pdf-tools`) },
+    { id: 'tool-financial-calculator', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools/financial-calculator' : `${c}/tools/financial-calculator`) },
+    { id: 'tool-health-calculator', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools/health-calculator' : `${c}/tools/health-calculator`) },
   ];
 
   for (const page of pages) {
@@ -416,7 +422,7 @@ function auditBuildOutput() {
 
   // Sample HTML SEO Tag Verification
   console.log('\n🔍 Verifying Prerendered HTML SEO Tags on Primary Routes...');
-  const sampleRoutes = ['index.html', 'articles.html', 'markets.html', 'categories.html', 'about.html'];
+  const sampleRoutes = ['index.html', 'articles.html', 'markets.html', 'categories.html', 'about.html', 'tools.html'];
   let seoPassed = true;
 
   for (const sample of sampleRoutes) {

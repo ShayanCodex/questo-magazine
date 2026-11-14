@@ -24,6 +24,14 @@ import {
 
 const RECENT_SEARCHES_KEY = 'questo-recent-searches';
 
+const CLIENT_TOOLS_SEARCH = [
+  { name: 'Image Converter & Compressor', path: '/tools/image-converter', category: 'Zero-Upload Media', keywords: ['image', 'photo', 'webp', 'png', 'jpg', 'compress', 'convert', 'resize'] },
+  { name: 'Browser Video-to-Audio Extractor', path: '/tools/audio-extractor', category: 'Web Audio API', keywords: ['audio', 'video', 'extract', 'sound', 'mp3', 'wav', 'mp4', 'speech'] },
+  { name: 'Client-Side PDF Document Suite', path: '/tools/pdf-tools', category: 'Document Architecture', keywords: ['pdf', 'document', 'print', 'inspect', 'page'] },
+  { name: 'Financial Intelligence Calculator', path: '/tools/financial-calculator', category: 'Wealth Modeling', keywords: ['finance', 'compound', 'interest', 'money', 'loan', 'mortgage', 'inflation', 'calculator'] },
+  { name: 'Metabolic & Health Calculator', path: '/tools/health-calculator', category: 'Clinical Physiology', keywords: ['health', 'bmi', 'bmr', 'tdee', 'calorie', 'calories', 'weight', 'macro', 'nutrition', 'calculator'] },
+];
+
 export interface SearchModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
@@ -78,6 +86,18 @@ export function SearchModal({
   const liveStructured = useMemo(() => {
     return getStructuredSearchSuggestions(query, items);
   }, [query, items]);
+
+  // Client-side tools matching query
+  const matchingTools = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return CLIENT_TOOLS_SEARCH.filter(
+      (tool) =>
+        tool.name.toLowerCase().includes(q) ||
+        tool.category.toLowerCase().includes(q) ||
+        tool.keywords.some((k) => k.includes(q))
+    );
+  }, [query]);
 
   // Load recent searches from localStorage on mount & open
   useEffect(() => {
@@ -405,6 +425,36 @@ export function SearchModal({
             ref={resultsContainerRef}
             className="max-h-72 sm:max-h-84 overflow-y-auto custom-scrollbar p-3 pb-6 space-y-2"
           >
+            {matchingTools.length > 0 && (
+              <div className="mb-3 space-y-1.5 border-b border-editorial-border pb-3">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-500 font-semibold px-2 block">
+                  Interactive Client-Side Utilities
+                </span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                  {matchingTools.map((tool) => (
+                    <button
+                      key={tool.path}
+                      type="button"
+                      onClick={() => {
+                        onOpenChange(false);
+                        navigate(localePath(tool.path));
+                      }}
+                      className="p-2.5 rounded-lg bg-editorial-surface border border-editorial-border hover:border-editorial-text text-start transition-colors flex items-center justify-between cursor-pointer"
+                    >
+                      <div className="min-w-0">
+                        <span className="text-xs font-semibold font-sans text-editorial-text block truncate">
+                          {tool.name}
+                        </span>
+                        <span className="text-[10px] font-mono text-editorial-muted">
+                          {tool.category}
+                        </span>
+                      </div>
+                      <ArrowRightIcon className="w-3.5 h-3.5 text-editorial-muted shrink-0 ms-2 rtl:rotate-180" />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
             {filtered.length === 0 ? (
               <div className="py-10 px-4 text-center space-y-3">
                 <p className="font-serif text-sm text-editorial-muted">

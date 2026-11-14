@@ -14,6 +14,8 @@
     "translate": "node scripts/translate.mjs",
     "curate": "node scripts/autonomous-curator.mjs",
     "audit": "node scripts/audit-site.mjs",
+    "content:pipeline": "node scripts/autonomous-content-pipeline.mjs",
+    "self-heal": "node scripts/self-healing-audit.mjs",
     "ssg:build": "vite-react-ssg build",
     "postbuild": "node scripts/postbuild.mjs",
     "build": "npm run lint && npm run typecheck && npm run validate-content && npm run bundle-data && npm run ssg:build && npm run postbuild",

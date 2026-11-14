@@ -189,6 +189,9 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               <Link to={localePath('/categories')} className="hover:text-editorial-text transition-colors">
                 {t.categories || 'Categories'}
               </Link>
+              <Link to={localePath('/tools')} className="hover:text-editorial-text transition-colors">
+                Tools
+              </Link>
             </nav>
 
             {/* Compact Editorial Search Capsule Button */}
@@ -384,6 +387,11 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 The Journal
               </span>
               <ul className="space-y-2 text-xs font-medium text-editorial-muted">
+                <li>
+                  <Link to={localePath('/tools')} className="hover:text-editorial-text transition-colors">
+                    Interactive Utilities Suite
+                  </Link>
+                </li>
                 <li>
                   <Link to={localePath('/about')} className="hover:text-editorial-text transition-colors">
                     About &amp; Manifesto
@@ -587,6 +595,16 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.categories || 'Categories'}
+              </Link>
+              <Link
+                to={localePath('/tools')}
+                onClick={() => setDrawerOpen(false)}
+                className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors flex items-center justify-between"
+              >
+                <span>Tools</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-editorial-text/10 text-editorial-text border border-editorial-border uppercase tracking-widest font-bold">
+                  Zero Cost
+                </span>
               </Link>
               <button
                 type="button"

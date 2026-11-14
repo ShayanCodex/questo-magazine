@@ -13,6 +13,12 @@ import { Home } from './pages/Home';
 import { Articles } from './pages/Articles';
 import { Markets } from './pages/Markets';
 import { MarketDetail } from './pages/MarketDetail';
+import { Tools } from './pages/Tools';
+import { ImageConverter } from './pages/tools/ImageConverter';
+import { VideoToAudioExtractor } from './pages/tools/VideoToAudioExtractor';
+import { PdfTools } from './pages/tools/PdfTools';
+import { FinancialCalculator } from './pages/tools/FinancialCalculator';
+import { HealthCalculator } from './pages/tools/HealthCalculator';
 import { Categories } from './pages/Categories';
 import { CategoryDetail } from './pages/CategoryDetail';
 import { Article } from './pages/Article';
@@ -74,6 +80,30 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
       {
         path: 'markets/:slug',
         element: <MarketDetail />,
+      },
+      {
+        path: 'tools',
+        element: <Tools />,
+      },
+      {
+        path: 'tools/image-converter',
+        element: <ImageConverter />,
+      },
+      {
+        path: 'tools/audio-extractor',
+        element: <VideoToAudioExtractor />,
+      },
+      {
+        path: 'tools/pdf-tools',
+        element: <PdfTools />,
+      },
+      {
+        path: 'tools/financial-calculator',
+        element: <FinancialCalculator />,
+      },
+      {
+        path: 'tools/health-calculator',
+        element: <HealthCalculator />,
       },
       {
         path: 'categories',

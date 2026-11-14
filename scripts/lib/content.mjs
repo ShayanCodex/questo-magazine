@@ -121,6 +121,14 @@ export const ALL_CATEGORY_IDS = [
   'engineering-and-technology',
 ];
 
+export const ALL_TOOL_SLUGS = [
+  'image-converter',
+  'audio-extractor',
+  'pdf-tools',
+  'financial-calculator',
+  'health-calculator',
+];
+
 // All 60 market intelligence assets indexed across the site
 export const ALL_MARKET_ASSET_SLUGS = [
   'sp500', 'nasdaq100', 'dowjones', 'tsx', 'bmv-ipc',
@@ -178,6 +186,12 @@ export function getIncludedRoutes() {
 
     // Categories Index
     routes.push(`${prefix}/categories`);
+
+    // Interactive Utilities Hub & Client Tools
+    routes.push(`${prefix}/tools`);
+    for (const toolSlug of ALL_TOOL_SLUGS) {
+      routes.push(`${prefix}/tools/${toolSlug}`);
+    }
 
     // Institutional Pages
     routes.push(`${prefix}/about`);
