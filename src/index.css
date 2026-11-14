@@ -12,9 +12,10 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
 
-  /* Modern Professional Typography: 100% Unified Poppins Architecture */
+  /* Modern Professional Typography: Montserrat (Brand Logo & Display Identity) + Poppins (UI) */
+  --font-logo: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-document: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-serif: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-mono: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -70,9 +71,14 @@
     line-height: 1.65;
   }
 
-  /* Headings & Display use Poppins for clean, modern aesthetic */
-  h1, h2, h3, h4, h5, h6, .font-display, .font-sans {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Brand Logos, Mastheads & Display Headings use Montserrat */
+  .font-logo, .font-display {
+    font-family: var(--font-logo);
+  }
+
+  /* Headings & General UI */
+  h1, h2, h3, h4, h5, h6, .font-sans {
+    font-family: var(--font-sans);
     letter-spacing: -0.015em;
   }
 

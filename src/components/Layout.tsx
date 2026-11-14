@@ -162,11 +162,11 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
           {/* Brand Logo: 'The Discovery Q' + QUESTO */}
           <Link
             to={localePath('/')}
-            className="shrink-0 me-2 sm:me-4 transition-transform hover:opacity-90 flex items-center"
+            className="shrink-0 me-2 sm:me-4 transition-opacity hover:opacity-85 flex items-center py-0.5"
             title="Questo Magazine — Home"
             aria-label="Questo Magazine Home"
           >
-            <QuestoLogo iconClassName="h-5 w-5 sm:h-6 sm:w-6" textClassName="text-sm sm:text-base font-black tracking-[0.14em]" />
+            <QuestoLogo iconClassName="h-6 w-6 sm:h-7 sm:w-7" textClassName="text-base sm:text-lg font-bold tracking-[0.14em]" />
           </Link>
 
           {/* Top navigation links & icons */}
@@ -326,7 +326,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             {/* Col 1: Brand & Mission */}
             <div className="lg:col-span-3 space-y-4">
               <Link to={localePath('/')} className="block group" aria-label="Questo Magazine Home">
-                <QuestoLogo iconClassName="h-7 w-7" textClassName="text-xl font-black tracking-[0.16em]" showSubtitle />
+                <QuestoLogo iconClassName="h-7 w-7" textClassName="text-xl font-bold tracking-[0.14em]" showSubtitle />
               </Link>
               <p className="font-serif text-sm text-editorial-muted leading-relaxed max-w-sm">
                 An international journal investigating brutalist permanence, Swiss typographic systems, tactile material craft, and zero-runtime digital architectures.
@@ -516,7 +516,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
           {/* Sticky Responsive Drawer Header */}
           <div className="sticky top-0 z-20 flex items-center justify-between px-5 sm:px-6 py-4 border-b border-editorial-border bg-editorial-surface/95 backdrop-blur-xs">
-            <QuestoLogo iconClassName="h-6 w-6" textClassName="text-lg font-black tracking-[0.16em]" />
+            <QuestoLogo iconClassName="h-6 w-6" textClassName="text-lg font-bold tracking-[0.14em]" />
             <button
               type="button"
               onClick={() => setDrawerOpen(false)}

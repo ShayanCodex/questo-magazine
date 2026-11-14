@@ -72,10 +72,10 @@ export function QuestoLogo({
 
   if (variant === 'stacked') {
     return (
-      <div className={`inline-flex flex-col items-center gap-2 ${className}`}>
+      <div className={`inline-flex flex-col items-center gap-2 select-none ${className}`}>
         {icon}
         <span
-          className={`font-display font-extrabold uppercase tracking-[0.16em] text-editorial-text select-none leading-none ${textClassName}`}
+          className={`font-logo font-bold uppercase tracking-[0.14em] text-editorial-text leading-none ${textClassName}`}
         >
           Questo
         </span>
@@ -90,16 +90,16 @@ export function QuestoLogo({
 
   // Default: Horizontal Logo ('The Discovery Q' + 'QUESTO')
   return (
-    <div className={`inline-flex items-center gap-2.5 sm:gap-3 group ${className}`}>
+    <div className={`inline-flex items-center gap-2 sm:gap-2.5 group select-none ${className}`}>
       {icon}
-      <div className="flex flex-col">
+      <div className="inline-flex items-baseline gap-1.5">
         <span
-          className={`font-display font-black uppercase tracking-[0.16em] text-editorial-text group-hover:text-accent transition-colors select-none leading-none ${textClassName}`}
+          className={`font-logo font-bold uppercase tracking-[0.14em] text-editorial-text group-hover:text-accent transition-colors leading-none ${textClassName}`}
         >
           Questo
         </span>
         {showSubtitle && (
-          <span className="text-[9px] uppercase font-mono tracking-[0.22em] text-editorial-muted leading-tight mt-0.5">
+          <span className="text-[10px] uppercase font-mono tracking-[0.2em] text-editorial-muted leading-none hidden sm:inline">
             Magazine
           </span>
         )}
