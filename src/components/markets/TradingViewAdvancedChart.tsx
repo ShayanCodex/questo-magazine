@@ -47,7 +47,7 @@ export function TradingViewAdvancedChart({
       hide_side_toolbar: false,
       hide_legend: false,
       save_image: true,
-      details: true,
+      details: false,
       hotlist: false,
       support_host: 'https://www.tradingview.com',
     });

@@ -196,7 +196,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'real-time',
     source: 'NASDAQ / TradingView Real-Time',
     lastUpdated: '2026-11-13T21:00:00Z',
-    tvSymbol: 'NASDAQ:NDX',
+    tvSymbol: 'CAPITALCOM:US100',
   },
   {
     id: 'dowjones',
@@ -215,7 +215,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'real-time',
     source: 'NYSE Consolidated Tape',
     lastUpdated: '2026-11-13T21:00:00Z',
-    tvSymbol: 'DJ:DJI',
+    tvSymbol: 'CAPITALCOM:US30',
   },
   {
     id: 'tsx',
@@ -234,7 +234,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'TSX 15-Min Delayed Feed',
     lastUpdated: '2026-11-13T21:00:00Z',
-    tvSymbol: 'TSX:OSPTX',
+    tvSymbol: 'EWC',
   },
   {
     id: 'bmv-ipc',
@@ -350,7 +350,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'BME 15-Min Delayed Feed',
     lastUpdated: '2026-11-13T16:30:00Z',
-    tvSymbol: 'INDEX:IBEX',
+    tvSymbol: 'EWP',
   },
 
   // Asia-Pacific
@@ -428,7 +428,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'NSE India Delayed Public Feed',
     lastUpdated: '2026-11-13T10:00:00Z',
-    tvSymbol: 'NSE:NIFTY',
+    tvSymbol: 'INDA',
   },
   {
     id: 'kse100',
@@ -447,7 +447,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'end-of-day',
     source: 'Pakistan Stock Exchange (PSX) Official Daily Quotations',
     lastUpdated: '2026-11-13T11:00:00Z',
-    tvSymbol: 'PSX:KSE100',
+    tvSymbol: 'PAK',
   },
   {
     id: 'kospi',
@@ -466,7 +466,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'KRX 15-Min Delayed Feed',
     lastUpdated: '2026-11-13T06:30:00Z',
-    tvSymbol: 'KRX:KOSPI',
+    tvSymbol: 'EWY',
   },
   {
     id: 'asx200',
@@ -485,7 +485,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'ASX 15-Min Delayed Public Feed',
     lastUpdated: '2026-11-13T05:00:00Z',
-    tvSymbol: 'INDEX:AS51',
+    tvSymbol: 'EWA',
   },
 
   // Middle East & GCC
@@ -506,7 +506,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'Saudi Tadawul Group 15m Delayed Feed',
     lastUpdated: '2026-11-13T12:00:00Z',
-    tvSymbol: 'TADAWUL:TASI',
+    tvSymbol: 'KSA',
   },
   {
     id: 'dfmgi',
@@ -525,7 +525,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'DFM Official Delayed Public Feed',
     lastUpdated: '2026-11-13T11:00:00Z',
-    tvSymbol: 'DFM:DFMGI',
+    tvSymbol: 'UAE',
   },
   {
     id: 'qse',
@@ -544,7 +544,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'Qatar Stock Exchange Public Feed',
     lastUpdated: '2026-11-13T10:30:00Z',
-    tvSymbol: 'QSE:QSI',
+    tvSymbol: 'NASDAQ:QAT',
   },
   {
     id: 'bist100',
@@ -563,7 +563,7 @@ export const INITIAL_GLOBAL_INDICES: MarketIndex[] = [
     status: 'delayed-15m',
     source: 'Borsa Istanbul 15m Delayed Feed',
     lastUpdated: '2026-11-13T15:00:00Z',
-    tvSymbol: 'BIST:XU100',
+    tvSymbol: 'NASDAQ:TUR',
   },
 ];
 
@@ -2438,9 +2438,9 @@ export function getMarketAssetBySlug(slug: string): MarketAssetDetail | null {
     const tvSymbolForNews: Record<string, string> = {
       'news-1': 'CAPITALCOM:US500',
       'news-2': 'INDEX:DAX',
-      'news-3': 'PSX:KSE100',
+      'news-3': 'PAK',
       'news-4': 'TVC:UKOIL',
-      'news-5': 'TADAWUL:TASI',
+      'news-5': 'AMEX:KSA',
       'news-6': 'INDEX:NKY',
       'news-7': 'OANDA:XAUUSD',
       'news-8': 'BINANCE:BTCUSDT',

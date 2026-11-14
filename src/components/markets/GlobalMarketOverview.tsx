@@ -74,12 +74,12 @@ export function GlobalMarketOverview({ colorTheme = 'dark' }: GlobalMarketOvervi
           symbols: [
             { s: 'FOREXCOM:SPXUSD', d: 'S&P 500 (US)' },
             { s: 'FOREXCOM:NSXUSD', d: 'NASDAQ 100 (US)' },
-            { s: 'INDEX:FTSE', d: 'FTSE 100 (UK)' },
+            { s: 'CAPITALCOM:UK100', d: 'FTSE 100 (UK)' },
             { s: 'INDEX:DAX', d: 'DAX 40 (Germany)' },
             { s: 'INDEX:NKY', d: 'Nikkei 225 (Japan)' },
             { s: 'INDEX:HSI', d: 'Hang Seng (HK)' },
-            { s: 'TADAWUL:TASI', d: 'Tadawul TASI (Saudi)' },
-            { s: 'PSX:KSE100', d: 'KSE 100 (Pakistan)' },
+            { s: 'AMEX:KSA', d: 'Tadawul TASI (Saudi)' },
+            { s: 'PAK', d: 'KSE 100 (Pakistan)' },
           ],
         },
         {
