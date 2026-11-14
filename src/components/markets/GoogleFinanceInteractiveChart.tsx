@@ -69,10 +69,6 @@ export function GoogleFinanceInteractiveChart({
     const stepMs = totalMs / (pointsCount - 1);
     const startMs = now - totalMs;
 
-    // Determine baseline drift based on changePercent
-    const driftFactor = (changePercent / 100) * (activeTimeframe === '1D' ? 1 : 2.5);
-    const basePrice = currentPrice / (1 + driftFactor);
-
     // Seed pseudo-random generator with symbol name
     let seed = 0;
     for (let i = 0; i < symbol.length; i++) {
@@ -84,19 +80,39 @@ export function GoogleFinanceInteractiveChart({
       return seed / 233280;
     };
 
+    const isCrypto = symbol.includes('BTC') || symbol.includes('ETH') || symbol.includes('SOL');
+
+    // Realistic compounding historical benchmark returns
+    const periodReturnMap: Record<TimeframeOption, number> = {
+      '1D': changePercent,
+      '5D': changePercent * 1.8 + ((seed % 10) - 5) * 0.25,
+      '1M': 3.4 + ((seed % 14) - 7) * 0.3,
+      '6M': 9.2 + ((seed % 20) - 10) * 0.45,
+      'YTD': 14.8 + ((seed % 18) - 9) * 0.5,
+      '1Y': isCrypto ? 115.0 : 21.8 + ((seed % 22) - 11) * 0.6,
+      '5Y': isCrypto ? 420.0 : 54.2 + ((seed % 26) - 13) * 0.8,
+      'MAX': isCrypto ? 1850.0 : 138.5 + ((seed % 30) - 15) * 1.2,
+    };
+
+    const totalReturnPct = periodReturnMap[activeTimeframe];
+    const basePrice = currentPrice / (1 + totalReturnPct / 100);
+
     const points: PricePoint[] = [];
     let walkingPrice = basePrice;
-    const volatility = 0.008;
+    const volatility = activeTimeframe === '1D' ? 0.004 : activeTimeframe === '5D' ? 0.008 : 0.014;
 
     for (let i = 0; i < pointsCount; i++) {
       const pointTime = startMs + i * stepMs;
       const progress = i / (pointsCount - 1);
 
-      // Smooth geometric brownian walk towards current price
-      const shock = (random() - 0.49) * volatility * walkingPrice;
-      const targetPull = (currentPrice - walkingPrice) * (progress * 0.15);
+      // Smooth geometric brownian walk anchored to target currentPrice
+      const shock = (random() - 0.485) * volatility * walkingPrice;
+      const targetPull = (currentPrice - walkingPrice) * (progress * 0.18);
       walkingPrice += shock + targetPull;
 
+      if (i === 0) {
+        walkingPrice = basePrice;
+      }
       if (i === pointsCount - 1) {
         walkingPrice = currentPrice;
       }
@@ -105,8 +121,12 @@ export function GoogleFinanceInteractiveChart({
       let label: string;
       if (activeTimeframe === '1D') {
         label = dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-      } else if (activeTimeframe === '5D' || activeTimeframe === '1M') {
+      } else if (activeTimeframe === '5D') {
+        label = dateObj.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
+      } else if (activeTimeframe === '1M') {
         label = dateObj.toLocaleDateString([], { month: 'short', day: 'numeric' });
+      } else if (activeTimeframe === '6M' || activeTimeframe === 'YTD' || activeTimeframe === '1Y') {
+        label = dateObj.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' });
       } else {
         label = dateObj.toLocaleDateString([], { month: 'short', year: 'numeric' });
       }
@@ -191,16 +211,35 @@ export function GoogleFinanceInteractiveChart({
     return `${linePath} L ${lastX} ${bottomY} L ${firstX} ${bottomY} Z`;
   }, [linePath, svgCoords, paddingTop, innerHeight]);
 
-  // Handle Mouse Scrubbing
+  // Handle Mouse Scrubbing with 100% exact SVG coordinate alignment
   const handleMouseMove = useCallback(
     (e: React.MouseEvent<SVGSVGElement>) => {
       const rect = e.currentTarget.getBoundingClientRect();
+      if (!rect.width) return;
       const clientX = e.clientX - rect.left;
-      const pct = Math.max(0, Math.min(1, (clientX - paddingX) / innerWidth));
-      const idx = Math.round(pct * (dataSeries.length - 1));
+      const ratio = Math.max(0, Math.min(1, clientX / rect.width));
+      const svgX = ratio * svgWidth;
+      const innerPct = Math.max(0, Math.min(1, (svgX - paddingX) / innerWidth));
+      const idx = Math.round(innerPct * (dataSeries.length - 1));
       setHoverIndex(idx);
     },
-    [dataSeries.length, innerWidth]
+    [dataSeries.length, innerWidth, paddingX, svgWidth]
+  );
+
+  // Handle Touch Scrubbing for mobile & tablet
+  const handleTouchMove = useCallback(
+    (e: React.TouchEvent<SVGSVGElement>) => {
+      if (e.touches.length === 0) return;
+      const rect = e.currentTarget.getBoundingClientRect();
+      if (!rect.width) return;
+      const clientX = e.touches[0].clientX - rect.left;
+      const ratio = Math.max(0, Math.min(1, clientX / rect.width));
+      const svgX = ratio * svgWidth;
+      const innerPct = Math.max(0, Math.min(1, (svgX - paddingX) / innerWidth));
+      const idx = Math.round(innerPct * (dataSeries.length - 1));
+      setHoverIndex(idx);
+    },
+    [dataSeries.length, innerWidth, paddingX, svgWidth]
   );
 
   const handleMouseLeave = useCallback(() => {
@@ -341,6 +380,8 @@ export function GoogleFinanceInteractiveChart({
               className="w-full h-auto overflow-visible"
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={() => setHoverIndex(null)}
             >
               <defs>
                 <linearGradient id={`gradient-${symbol}`} x1="0" y1="0" x2="0" y2="1">
@@ -426,13 +467,40 @@ export function GoogleFinanceInteractiveChart({
                     strokeDasharray="3 3"
                     strokeWidth="1.5"
                   />
+                  {/* Floating Google-Finance Style Price Tooltip Badge */}
+                  <g
+                    transform={`translate(${Math.max(68, Math.min(svgWidth - 68, svgCoords[hoverIndex].x))}, ${Math.max(26, svgCoords[hoverIndex].y - 18)})`}
+                    style={{ pointerEvents: 'none' }}
+                  >
+                    <rect
+                      x="-60"
+                      y="-20"
+                      width="120"
+                      height="22"
+                      rx="6"
+                      fill="#09090b"
+                      stroke="#ffffff33"
+                      strokeWidth="1"
+                    />
+                    <text
+                      x="0"
+                      y="-5"
+                      textAnchor="middle"
+                      fill="#ffffff"
+                      fontSize="11"
+                      fontFamily="monospace"
+                      fontWeight="700"
+                    >
+                      {currency === 'USD' ? '$' : ''}{formatPrice(activePoint.price)} {currency}
+                    </text>
+                  </g>
                   {/* Outer Pulsing Ring */}
                   <circle
                     cx={svgCoords[hoverIndex].x}
                     cy={svgCoords[hoverIndex].y}
-                    r="6"
+                    r="6.5"
                     fill={strokeColor}
-                    opacity="0.3"
+                    opacity="0.35"
                   />
                   {/* Inner Solid Point */}
                   <circle
