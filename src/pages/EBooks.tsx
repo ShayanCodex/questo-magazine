@@ -8,6 +8,8 @@ import {
   AcademicCapIcon,
   BeakerIcon,
   FilmIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
 } from '@heroicons/react/24/outline';
 import type { EBook } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -83,6 +85,19 @@ export function EBooks() {
 
     return list;
   }, [selectedCategory, searchQuery]);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const PAGE_SIZE = 24;
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, searchQuery]);
+
+  const totalPages = Math.ceil(filteredEbooks.length / PAGE_SIZE) || 1;
+  const paginatedEbooks = useMemo(() => {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    return filteredEbooks.slice(start, start + PAGE_SIZE);
+  }, [filteredEbooks, currentPage]);
 
   const handleOpenReader = (book: EBook) => {
     setActivePdfBook(book);
@@ -208,19 +223,57 @@ export function EBooks() {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-5">
-              {filteredEbooks.map((book) => {
-                const detailUrl = localePath(`/ebooks/${book.slug}`);
+            <div className="space-y-8">
+              {/* Wide & Compact Horizontal Cards Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+                {paginatedEbooks.map((book) => {
+                  const detailUrl = localePath(`/ebooks/${book.slug}`);
 
-                return (
-                  <BookCard
-                    key={book.slug}
-                    book={book}
-                    detailUrl={detailUrl}
-                    onReadOnline={handleOpenReader}
-                  />
-                );
-              })}
+                  return (
+                    <BookCard
+                      key={book.slug}
+                      book={book}
+                      detailUrl={detailUrl}
+                      onReadOnline={handleOpenReader}
+                    />
+                  );
+                })}
+              </div>
+
+              {/* Pagination Controls */}
+              {totalPages > 1 && (
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-editorial-border text-xs font-sans">
+                  <div className="text-editorial-muted">
+                    Showing <strong className="text-editorial-text">{((currentPage - 1) * PAGE_SIZE) + 1}</strong> to <strong className="text-editorial-text">{Math.min(currentPage * PAGE_SIZE, filteredEbooks.length)}</strong> of <strong className="text-editorial-text">{filteredEbooks.length}</strong> monographs
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                      disabled={currentPage === 1}
+                      className="px-3 py-1.5 rounded-lg border border-editorial-border hover:border-editorial-text text-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors flex items-center gap-1 cursor-pointer"
+                    >
+                      <ChevronLeftIcon className="h-3.5 w-3.5 rtl:rotate-180" />
+                      <span>Previous</span>
+                    </button>
+
+                    <div className="px-3 py-1.5 rounded-lg bg-editorial-surface-subtle border border-editorial-border text-editorial-muted">
+                      Page <span className="font-bold text-editorial-text">{currentPage}</span> of <span className="font-bold text-editorial-text">{totalPages}</span>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                      disabled={currentPage === totalPages}
+                      className="px-3 py-1.5 rounded-lg border border-editorial-border hover:border-editorial-text text-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors flex items-center gap-1 cursor-pointer"
+                    >
+                      <span>Next</span>
+                      <ChevronRightIcon className="h-3.5 w-3.5 rtl:rotate-180" />
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </section>

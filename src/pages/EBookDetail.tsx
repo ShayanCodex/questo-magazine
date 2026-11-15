@@ -50,7 +50,8 @@ export function EBookDetail() {
     { label: ebook.title },
   ];
 
-  const readerEmbedUrl = `${ebook.pdfUrl}#toolbar=1&navpanes=1`;
+  // High-reliability proxy viewer to bypass third-party 503 blocks
+  const readerEmbedUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(ebook.pdfUrl)}&embedded=true`;
 
   const handleCopyLink = async () => {
     try {

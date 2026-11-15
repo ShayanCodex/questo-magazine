@@ -49,75 +49,86 @@ export function BookCard({ book, detailUrl, onReadOnline }: BookCardProps) {
   };
 
   return (
-    <article className="group rounded-xl border border-editorial-border bg-editorial-surface hover:border-editorial-text/40 transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-2xs hover:shadow-md hover:-translate-y-1">
-      <div>
-        {/* Compact Book Cover Frame */}
-        <Link to={detailUrl} className="block aspect-[2/3] bg-neutral-950 overflow-hidden relative border-b border-editorial-border group/cover">
-          {!imgFailed ? (
-            <LazyImage
-              src={book.coverUrl}
-              alt={`${book.title} cover`}
-              className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500 ease-out"
-              onError={() => setImgFailed(true)}
-            />
-          ) : (
-            /* Bespoke Hardcover Typographic Binding Fallback */
-            <div className={cn('w-full h-full p-4 flex flex-col justify-between text-center bg-gradient-to-b border-2 border-amber-500/20', gradientClass)}>
-              <div className="pt-2">
-                <span className="text-[9px] uppercase tracking-widest text-amber-400/70 font-sans font-semibold">Questo Classics</span>
-              </div>
-              <div className="my-auto px-1 space-y-1.5">
-                <h4 className="font-display font-bold text-sm text-neutral-100 leading-snug line-clamp-3">
-                  {book.title}
-                </h4>
-                <div className="w-8 h-px bg-amber-500/40 mx-auto" />
-                <p className="text-[10px] font-sans font-medium text-neutral-300 uppercase tracking-wider truncate">
-                  {book.author}
-                </p>
-              </div>
-              <div className="pb-1 text-[8px] uppercase tracking-widest text-neutral-400">
-                Public Domain
-              </div>
+    <article className="group rounded-xl border border-editorial-border bg-editorial-surface hover:border-editorial-text/40 transition-all duration-300 overflow-hidden shadow-2xs hover:shadow-md hover:-translate-y-0.5 flex flex-row items-stretch p-3 sm:p-3.5 gap-3.5 sm:gap-4 min-h-[148px]">
+      {/* Left: Compact Book Cover Thumbnail */}
+      <Link
+        to={detailUrl}
+        className="w-22 sm:w-26 shrink-0 aspect-[2/3] bg-neutral-950 rounded-lg overflow-hidden relative border border-editorial-border group/cover shadow-xs self-start"
+      >
+        {!imgFailed ? (
+          <LazyImage
+            src={book.coverUrl}
+            alt={`${book.title} cover`}
+            className="w-full h-full object-cover group-hover/cover:scale-105 transition-transform duration-500 ease-out"
+            onError={() => setImgFailed(true)}
+          />
+        ) : (
+          /* Bespoke Hardcover Typographic Binding Fallback */
+          <div className={cn('w-full h-full p-2.5 flex flex-col justify-between text-center bg-gradient-to-b border border-amber-500/20', gradientClass)}>
+            <div>
+              <span className="text-[7px] uppercase tracking-widest text-amber-400/80 font-sans font-semibold">Questo</span>
             </div>
-          )}
+            <div className="my-auto px-0.5 space-y-1">
+              <h4 className="font-display font-bold text-[11px] text-neutral-100 leading-tight line-clamp-2">
+                {book.title}
+              </h4>
+              <div className="w-5 h-px bg-amber-500/40 mx-auto" />
+              <p className="text-[8px] font-sans font-medium text-neutral-300 uppercase tracking-wider truncate">
+                {book.author}
+              </p>
+            </div>
+            <div className="text-[6px] uppercase tracking-widest text-neutral-400">
+              Classic
+            </div>
+          </div>
+        )}
 
-          {/* Discipline Chip */}
-          <div className="absolute top-2 start-2 pointer-events-none">
-            <span className="px-2 py-0.5 text-[9px] font-sans font-semibold uppercase tracking-wider bg-black/85 backdrop-blur-xs text-white rounded-full border border-white/15">
+        <div className="absolute bottom-1 end-1 pointer-events-none">
+          <span className="px-1.5 py-0.5 text-[8px] font-sans font-bold bg-black/80 backdrop-blur-xs text-white rounded">
+            PDF
+          </span>
+        </div>
+      </Link>
+
+      {/* Right: Wide Information & Action Suite */}
+      <div className="flex-1 flex flex-col justify-between min-w-0">
+        <div className="space-y-1">
+          {/* Metadata Row */}
+          <div className="flex items-center justify-between gap-2 text-[10px] font-sans">
+            <span className="px-2 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border font-semibold uppercase tracking-wider text-editorial-muted truncate">
               {book.subdiscipline || book.category}
             </span>
+            <span className="text-editorial-muted shrink-0">
+              {book.year}
+            </span>
           </div>
-        </Link>
 
-        {/* Crisp Information Block */}
-        <div className="p-3.5 space-y-1.5">
-          <p className="text-[10px] font-sans font-medium uppercase tracking-wider text-editorial-muted truncate">
-            {book.author}
-          </p>
-
-          <h3 className="font-display font-bold text-sm text-editorial-text group-hover:text-accent transition-colors line-clamp-1 leading-snug">
+          {/* Title */}
+          <h3 className="font-display font-bold text-sm sm:text-base text-editorial-text group-hover:text-accent transition-colors line-clamp-1 leading-snug pt-0.5">
             <Link to={detailUrl} title={book.title}>
               {book.title}
             </Link>
           </h3>
 
-          <div className="flex items-center gap-1.5 text-[11px] font-sans text-editorial-muted">
-            <span>{book.year}</span>
-            <span>•</span>
-            <span>{book.pageCount}p</span>
-          </div>
-        </div>
-      </div>
+          {/* Author */}
+          <p className="text-[11px] font-sans font-medium text-editorial-muted uppercase tracking-wider truncate">
+            {book.author}
+          </p>
 
-      {/* Sleek Compact Action Suite */}
-      <div className="p-3.5 pt-0">
-        <div className="flex items-center gap-1.5">
-          {/* Direct Read Button */}
+          {/* Curated Context (1-line concise snippet) */}
+          <p className="font-serif text-[11px] text-editorial-muted/90 line-clamp-2 leading-relaxed pt-0.5 hidden xs:block">
+            {book.curatedContext}
+          </p>
+        </div>
+
+        {/* Bottom Actions Suite */}
+        <div className="flex items-center gap-1.5 pt-2">
+          {/* Read Online Button */}
           <button
             type="button"
             onClick={() => onReadOnline(book)}
             className="flex-1 py-1.5 px-2.5 rounded-lg bg-editorial-text text-editorial-bg text-xs font-sans font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs"
-            title="Read online in Questo reader"
+            title="Read in Questo Reader"
           >
             <BookOpenIcon className="h-3.5 w-3.5 shrink-0" />
             <span>Read</span>
@@ -127,11 +138,11 @@ export function BookCard({ book, detailUrl, onReadOnline }: BookCardProps) {
           <a
             href={book.pdfUrl}
             download
-            className="py-1.5 px-2 rounded-lg border border-editorial-border hover:border-editorial-text text-editorial-text hover:bg-editorial-surface-subtle text-xs font-sans font-semibold transition-colors flex items-center justify-center gap-1"
+            className="py-1.5 px-2.5 rounded-lg border border-editorial-border hover:border-editorial-text text-editorial-text hover:bg-editorial-surface-subtle text-xs font-sans font-semibold transition-colors flex items-center justify-center gap-1 shrink-0"
             title="Download direct PDF"
           >
             <ArrowDownTrayIcon className="h-3.5 w-3.5 shrink-0" />
-            <span className="hidden sm:inline text-[11px]">PDF</span>
+            <span className="text-[11px]">PDF</span>
           </a>
 
           {/* Direct Link Copy Button */}
