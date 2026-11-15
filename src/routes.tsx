@@ -29,6 +29,8 @@ import { Contact } from './pages/Contact';
 import { Terms } from './pages/Terms';
 import { Privacy } from './pages/Privacy';
 import { AdminDashboard } from './pages/AdminDashboard';
+import { EBooks } from './pages/EBooks';
+import { EBookDetail } from './pages/EBookDetail';
 import { NotFound } from './pages/NotFound';
 
 const defaultLangObj =
@@ -73,6 +75,14 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           const articles = await loadAllArticles(lang.code);
           return { articles, pathname: url.pathname };
         },
+      },
+      {
+        path: 'ebooks',
+        element: <EBooks />,
+      },
+      {
+        path: 'ebooks/:slug',
+        element: <EBookDetail />,
       },
       {
         path: 'markets',

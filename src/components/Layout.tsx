@@ -186,6 +186,9 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               <Link to={localePath('/articles')} className="hover:text-editorial-text transition-colors">
                 {t.articles}
               </Link>
+              <Link to={localePath('/ebooks')} className="hover:text-editorial-text transition-colors">
+                {t.ebooks || 'E-Books'}
+              </Link>
               <Link to={localePath('/categories')} className="hover:text-editorial-text transition-colors">
                 {t.categories || 'Categories'}
               </Link>
@@ -387,6 +390,12 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 {t.theJournal || 'The Journal'}
               </span>
               <ul className="space-y-2 text-xs font-medium text-editorial-muted">
+                <li>
+                  <Link to={localePath('/ebooks')} className="hover:text-editorial-text transition-colors flex items-center gap-1.5">
+                    <span>{t.ebooks || 'Public Domain E-Books'}</span>
+                    <span className="text-[9px] font-mono px-1.5 py-0.2 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-bold uppercase">PDF</span>
+                  </Link>
+                </li>
                 <li>
                   <Link to={localePath('/tools')} className="hover:text-editorial-text transition-colors">
                     {t.interactiveUtilities || 'Interactive Utilities Suite'}
@@ -593,6 +602,16 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors"
               >
                 {t.articles}
+              </Link>
+              <Link
+                to={localePath('/ebooks')}
+                onClick={() => setDrawerOpen(false)}
+                className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors flex items-center justify-between"
+              >
+                <span>{t.ebooks || 'E-Books'}</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 uppercase tracking-widest font-bold">
+                  PDF
+                </span>
               </Link>
               <Link
                 to={localePath('/categories')}

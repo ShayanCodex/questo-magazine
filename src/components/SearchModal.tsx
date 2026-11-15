@@ -13,8 +13,9 @@ import {
   UserIcon,
   GlobeAltIcon,
   SparklesIcon,
+  BookOpenIcon,
 } from '@heroicons/react/24/outline';
-import type { SearchItem } from '../lib/types';
+import type { SearchItem, EBook } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { cn } from '../lib/utils';
 import {
@@ -23,6 +24,7 @@ import {
   getCategoryShortName,
 } from '../lib/categories';
 import { AUTHORS } from '../data/authors';
+import ebooksMasterData from '../data/ebooks.json';
 import {
   INITIAL_GLOBAL_INDICES,
   INITIAL_COMMODITIES,
@@ -32,7 +34,7 @@ import {
 
 const RECENT_SEARCHES_KEY = 'questo-recent-searches';
 
-export type UniversalResultType = 'article' | 'market' | 'tool' | 'category' | 'author' | 'page';
+export type UniversalResultType = 'article' | 'market' | 'tool' | 'category' | 'author' | 'page' | 'ebook';
 
 export interface UniversalSearchResult {
   id: string;
@@ -211,6 +213,8 @@ function getResultIcon(type: UniversalResultType) {
       return FolderIcon;
     case 'author':
       return UserIcon;
+    case 'ebook':
+      return BookOpenIcon;
     case 'page':
     default:
       return GlobeAltIcon;
@@ -229,6 +233,8 @@ function getBadgeColor(type: UniversalResultType) {
       return 'bg-amber-500/10 text-amber-400 border-amber-500/20';
     case 'author':
       return 'bg-rose-500/10 text-rose-400 border-rose-500/20';
+    case 'ebook':
+      return 'bg-teal-500/10 text-teal-400 border-teal-500/20';
     case 'page':
     default:
       return 'bg-zinc-500/10 text-zinc-400 border-zinc-500/20';
@@ -369,6 +375,31 @@ export function SearchModal({
 
     // 6. Core Pages
     list.push(...CORE_PAGES);
+
+    // 7. Public Domain E-Books
+    (ebooksMasterData as EBook[]).forEach((book) => {
+      list.push({
+        id: `ebook-${book.slug}`,
+        type: 'ebook',
+        title: book.title,
+        subtitle: `${book.author} (${book.year}) — ${book.curatedContext}`,
+        badge: 'E-BOOK',
+        url: `/ebooks/${book.slug}`,
+        meta: `${book.category} • Direct PDF (${book.pageCount}p)`,
+        keywords: [
+          book.title,
+          book.author,
+          book.category,
+          book.subdiscipline,
+          ...book.keyThemes,
+          'pdf',
+          'book',
+          'ebook',
+          'read',
+          'archive',
+        ],
+      });
+    });
 
     return list;
   }, [items]);

@@ -239,4 +239,26 @@ export interface I18nStrings {
   newsletterBullet1?: string;
   newsletterBullet2?: string;
   newsletterBullet3?: string;
+  ebooks?: string;
+}
+
+export interface EBook {
+  slug: string;
+  identifier: string;
+  title: string;
+  originalTitle: string;
+  author: string;
+  year: string;
+  category: string;
+  subdiscipline: string;
+  pageCount: number;
+  coverUrl: string;
+  pdfUrl: string;
+  publicDomainStatus: string;
+  license: string;
+  archiveSourceUrl: string;
+  curatedContext: string;
+  keyThemes: string[];
+  authorBio: string;
+  readingTimeHours: number;
 }

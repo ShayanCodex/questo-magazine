@@ -16,6 +16,7 @@ export interface SeoProps {
   availableLanguages?: string[];
   noIndex?: boolean;
   breadcrumbsJsonLd?: string;
+  customJsonLd?: string;
   keywords?: string[] | string;
 }
 
@@ -32,6 +33,7 @@ export function Seo({
   availableLanguages,
   noIndex = false,
   breadcrumbsJsonLd,
+  customJsonLd,
   keywords,
 }: SeoProps) {
   const { language } = useLanguage();
@@ -195,6 +197,11 @@ export function Seo({
       {breadcrumbsJsonLd && (
         <script type="application/ld+json">
           {breadcrumbsJsonLd}
+        </script>
+      )}
+      {customJsonLd && (
+        <script type="application/ld+json">
+          {customJsonLd}
         </script>
       )}
     </Head>
