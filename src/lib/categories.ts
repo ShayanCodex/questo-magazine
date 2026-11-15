@@ -244,6 +244,11 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'high-voltage-direct-current-transmission-and-intercontinental-supergrids': { categoryId: 'technology', subcategoryId: 'energy-and-infrastructure' },
   'constant-function-market-makers-impermanent-loss-and-concentrated-liquidity': { categoryId: 'crypto', subcategoryId: 'defi-and-protocols' },
   'reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays': { categoryId: 'architecture-and-space', subcategoryId: 'structural-design' },
+  'inverse-kinematics-and-impedance-control-in-bipedal-robotics': { categoryId: 'technology', subcategoryId: 'robotics-and-iot' },
+  'chemistry-of-espresso-extraction-and-particle-distribution': { categoryId: 'food', subcategoryId: 'culinary-techniques' },
+  'multilink-suspension-geometry-and-camber-recovery': { categoryId: 'sports', subcategoryId: 'motorsport' },
+  'glymphatic-clearance-and-slow-wave-sleep-architecture': { categoryId: 'health', subcategoryId: 'mental-wellness' },
+  'lng-liquefaction-mechanics-and-maritime-energy-corridors': { categoryId: 'finance', subcategoryId: 'commodities' },
 };
 
 export function getCategoryById(id: string): Category | undefined {

@@ -1,6 +1,6 @@
 {
   "slug": "compiler-driven-react-server-components-hydration-elimination",
-  "title": "Compiler-Driven React: React 19 Server Components, Memoization Automation & Hydration Elimination",
+  "title": "Compiler-Driven React & Server Components",
   "excerpt": "A technical treatise on React Compiler AST static analysis, React Server Components (RSC) wire formats, the obsolescence of manual useMemo, and eliminating client hydration overhead.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
@@ -78,8 +78,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/T8J0j2xJFgQ",
-      "title": "Deep Dive into React Server Components Architecture",
+      "src": "https://www.youtube-nocookie.com/embed/TQQPAU21ZUw",
+      "title": "Data Fetching and Architecture with React Server Components",
       "caption": "Authoritative engineering breakdown on component serialization, stream boundaries, and client hydration elimination."
     },
     {

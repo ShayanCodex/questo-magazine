@@ -1,6 +1,6 @@
 {
   "slug": "the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr",
-  "title": "[fr] The Mechanics of Enterprise SaaS Retention: Net Dollar Retention, Cohort LTV & Negative Churn",
+  "title": "[fr] The Mechanics of SaaS Retention",
   "excerpt": "[fr] A rigorous mathematical analysis of subscription revenue durability, cohort decay curves, expansion revenue vectors, and capital allocation efficiency.",
   "date": "2026-11-15",
   "author": "Claire Dupont",
@@ -70,8 +70,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/1R_E_b-eMhQ",
-      "title": "[fr] Mastering SaaS Metrics: CAC Payback, LTV, and Retention Economics",
+      "src": "https://www.youtube-nocookie.com/embed/1hHMwLxN6EM",
+      "title": "[fr] Foundations of Product Iteration, Retention, and Cohort Metrics",
       "caption": "[fr] In-depth corporate finance masterclass on building cohort retention matrices and optimizing customer acquisition unit economics."
     },
     {
@@ -105,5 +105,5 @@
       ]
     }
   ],
-  "sourceHash": "d400ccf04075a2d67472f5ca476ffb11d7796ce3"
+  "sourceHash": "80c8fff8c8455c3137f00afca548bb4a040bb986"
 }

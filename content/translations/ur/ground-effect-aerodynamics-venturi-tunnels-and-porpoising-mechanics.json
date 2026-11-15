@@ -1,6 +1,6 @@
 {
   "slug": "ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics",
-  "title": "[ur] Ground-Effect Aerodynamics: Venturi Underfloor Tunnels, Boundary Layer Suction & Porpoising Mechanics",
+  "title": "[ur] Ground-Effect Aerodynamics in Formula 1",
   "excerpt": "[ur] A mechanical engineering monograph on underbody Bernoulli suction, diffuser expansion ratios, aerodynamic center of pressure migration, and non-linear aeroelastic heave oscillations.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
@@ -71,8 +71,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/P69yZ0u7n2s",
-      "title": "[ur] How Ground Effect Aerodynamics and Venturi Tunnels Work",
+      "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ",
+      "title": "[ur] Aerodynamic Flow Fields & Formula 1 Ground-Effect Engineering",
       "caption": "[ur] Technical breakdown of underfloor airflow physics, ground proximity downforce, and aerodynamic floor edge sealing."
     },
     {
@@ -100,5 +100,5 @@
       ]
     }
   ],
-  "sourceHash": "0591f601943ea0a61d0eb82a5db91f1ea64bd0ce"
+  "sourceHash": "ce07a7942454b1a702bcd49c982b34149c9ab267"
 }

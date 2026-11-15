@@ -1,6 +1,6 @@
 {
   "slug": "gravitational-wave-interferometry-ligo-and-neutron-star-mergers",
-  "title": "[ur] Gravitational Wave Interferometry: Laser Cavity Fabry-Pérot Optics & Binary Neutron Star Coalescence",
+  "title": "[ur] Gravitational Wave Interferometry",
   "excerpt": "[ur] An exhaustive exploration of kilometer-scale laser interferometry, squeezed light vacuum states, seismic vibration isolation, and multi-messenger astrophysics.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
@@ -74,8 +74,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/4GbWfNHtHRg",
-      "title": "[ur] The Absurd Precision of LIGO: How Gravitational Waves Were Discovered",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
+      "title": "[ur] The Physics and Engineering of Detecting Gravitational Waves",
       "caption": "[ur] Comprehensive visual documentary detailing LIGO laser optical physics, seismic isolation, and the detection of black hole mergers."
     },
     {
@@ -103,5 +103,5 @@
       ]
     }
   ],
-  "sourceHash": "6c7d215f9592db1106c13d8c5a9f7f4960c89faf"
+  "sourceHash": "970c1777b61b7311881072fd7670557347dcaf31"
 }

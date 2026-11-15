@@ -5,10 +5,10 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 01:29:14 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 09:23:00 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title><![CDATA[The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches & Latency Scaling]]></title>
+      <title><![CDATA[The Architecture of Transformer Attention]]></title>
       <link>https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -17,7 +17,7 @@
       <category>technology</category>
     </item>
     <item>
-      <title><![CDATA[Cardiometabolic Biomarkers: ApoB, Endothelial Nitric Oxide & Plaque Vulnerability]]></title>
+      <title><![CDATA[Cardiometabolic Biomarkers & ApoB]]></title>
       <link>https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -26,7 +26,16 @@
       <category>health</category>
     </item>
     <item>
-      <title><![CDATA[Compiler-Driven React: React 19 Server Components, Memoization Automation & Hydration Elimination]]></title>
+      <title><![CDATA[The Chemistry of Espresso Extraction]]></title>
+      <link>https://questo-blog.netlify.app/articles/chemistry-of-espresso-extraction-and-particle-distribution</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/chemistry-of-espresso-extraction-and-particle-distribution</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A physical chemistry monograph on porous bed Darcy flow dynamics, bimodal grind particle size distribution, percolation channeling, and volatile compound solubility kinetics.]]></description>
+      <author><![CDATA[Marcus Vance]]></author>
+      <category>food</category>
+    </item>
+    <item>
+      <title><![CDATA[Compiler-Driven React & Server Components]]></title>
       <link>https://questo-blog.netlify.app/articles/compiler-driven-react-server-components-hydration-elimination</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/compiler-driven-react-server-components-hydration-elimination</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -35,7 +44,7 @@
       <category>software</category>
     </item>
     <item>
-      <title><![CDATA[Constant-Function Market Makers: Concentrated Liquidity Geometry, Tick Spacing & Impermanent Loss Dynamics]]></title>
+      <title><![CDATA[Concentrated Liquidity in Market Makers]]></title>
       <link>https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -44,7 +53,7 @@
       <category>crypto</category>
     </item>
     <item>
-      <title><![CDATA[Forex Liquidity Corridors: Central Bank Reserves, Swap Lines & Global Settlement Mechanics]]></title>
+      <title><![CDATA[Global Forex Liquidity Corridors]]></title>
       <link>https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -53,7 +62,16 @@
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[Gravitational Wave Interferometry: Laser Cavity Fabry-Pérot Optics & Binary Neutron Star Coalescence]]></title>
+      <title><![CDATA[Glymphatic Clearance in Deep Sleep]]></title>
+      <link>https://questo-blog.netlify.app/articles/glymphatic-clearance-and-slow-wave-sleep-architecture</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/glymphatic-clearance-and-slow-wave-sleep-architecture</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A neuroscience and cellular physiology review of aquaporin-4 polarized astrocytic convective flow, amyloid-beta metabolic waste drainage, and delta slow-wave sleep architecture.]]></description>
+      <author><![CDATA[Dr. Aris Thorne]]></author>
+      <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[Gravitational Wave Interferometry]]></title>
       <link>https://questo-blog.netlify.app/articles/gravitational-wave-interferometry-ligo-and-neutron-star-mergers</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/gravitational-wave-interferometry-ligo-and-neutron-star-mergers</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -62,7 +80,7 @@
       <category>science</category>
     </item>
     <item>
-      <title><![CDATA[Ground-Effect Aerodynamics: Venturi Underfloor Tunnels, Boundary Layer Suction & Porpoising Mechanics]]></title>
+      <title><![CDATA[Ground-Effect Aerodynamics in Formula 1]]></title>
       <link>https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -71,7 +89,7 @@
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[High-Voltage Direct Current (HVDC) Transmission: Voltage Source Converters & Intercontinental Supergrids]]></title>
+      <title><![CDATA[HVDC Transmission & Supergrids]]></title>
       <link>https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -80,7 +98,25 @@
       <category>technology</category>
     </item>
     <item>
-      <title><![CDATA[Microbial Ecology of Wild Sourdough: Lactic Acid Bacteria, Acidity Kinetics & Proteolysis]]></title>
+      <title><![CDATA[Impedance Control in Bipedal Robotics]]></title>
+      <link>https://questo-blog.netlify.app/articles/inverse-kinematics-and-impedance-control-in-bipedal-robotics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/inverse-kinematics-and-impedance-control-in-bipedal-robotics</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A robotics engineering treatise on joint torque space mapping, zero-moment point dynamics, compliance modulation, and whole-body locomotion stabilization.]]></description>
+      <author><![CDATA[Elena Rostova]]></author>
+      <category>technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Maritime LNG Energy Corridors]]></title>
+      <link>https://questo-blog.netlify.app/articles/lng-liquefaction-mechanics-and-maritime-energy-corridors</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/lng-liquefaction-mechanics-and-maritime-energy-corridors</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A financial commodities and thermodynamic engineering analysis of mixed-refrigerant cryogenic liquefaction cycles, maritime boil-off gas management, and global arbitrage spreads.]]></description>
+      <author><![CDATA[Julian Sterling]]></author>
+      <category>finance</category>
+    </item>
+    <item>
+      <title><![CDATA[The Microbial Ecology of Sourdough]]></title>
       <link>https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -89,7 +125,16 @@
       <category>food</category>
     </item>
     <item>
-      <title><![CDATA[Postprandial Glycemic Variability: Continuous Glucose Telemetry, Hepatic Glycogenesis & Mitochondrial Flexibility]]></title>
+      <title><![CDATA[Multilink Suspension Geometry]]></title>
+      <link>https://questo-blog.netlify.app/articles/multilink-suspension-geometry-and-camber-recovery</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/multilink-suspension-geometry-and-camber-recovery</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A vehicle dynamics monograph analyzing instant centers, roll center migration, dynamic camber compensation curves, and elastokinematic compliance steer under transient lateral loads.]]></description>
+      <author><![CDATA[Liam O'Connor]]></author>
+      <category>sports</category>
+    </item>
+    <item>
+      <title><![CDATA[Postprandial Glycemic Variability]]></title>
       <link>https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -98,7 +143,7 @@
       <category>health</category>
     </item>
     <item>
-      <title><![CDATA[Concert Hall Architectural Acoustics: Schroeder Frequency, Quadratic Residue Diffusors & Reverberation Geometry]]></title>
+      <title><![CDATA[Concert Hall Architectural Acoustics]]></title>
       <link>https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -107,7 +152,7 @@
       <category>architecture-and-space</category>
     </item>
     <item>
-      <title><![CDATA[Sovereign Debt Cycles, Yield Curve Inversions & Cross-Border Repo Settlement]]></title>
+      <title><![CDATA[Sovereign Debt Cycles & Repo Markets]]></title>
       <link>https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -116,7 +161,7 @@
       <category>finance</category>
     </item>
     <item>
-      <title><![CDATA[Spatial Pressing Geometry: Positional Play, Rest-Defense & Transition Windows in Modern Football]]></title>
+      <title><![CDATA[The Geometry of Modern Pressing]]></title>
       <link>https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -125,7 +170,7 @@
       <category>sports</category>
     </item>
     <item>
-      <title><![CDATA[The Mechanics of Enterprise SaaS Retention: Net Dollar Retention, Cohort LTV & Negative Churn]]></title>
+      <title><![CDATA[The Mechanics of SaaS Retention]]></title>
       <link>https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -134,7 +179,7 @@
       <category>business</category>
     </item>
     <item>
-      <title><![CDATA[Trans-Alpine Rail Engineering: Spiral Tunnels, High-Altitude Topography & Low-Impact Exploration]]></title>
+      <title><![CDATA[Trans-Alpine Rail Engineering]]></title>
       <link>https://questo-blog.netlify.app/articles/trans-alpine-rail-engineering-and-high-altitude-topography</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/trans-alpine-rail-engineering-and-high-altitude-topography</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -143,7 +188,7 @@
       <category>travel</category>
     </item>
     <item>
-      <title><![CDATA[Zero-Knowledge Rollups: Polynomial Commitments, zk-SNARKs & Ethereum Layer-2 State Verification]]></title>
+      <title><![CDATA[Zero-Knowledge Rollups & zk-SNARKs]]></title>
       <link>https://questo-blog.netlify.app/articles/zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -152,7 +197,7 @@
       <category>crypto</category>
     </item>
     <item>
-      <title><![CDATA[Acoustic Geometry: How Monastic and Modernist Sanctuaries Shape Sound and Contemplation]]></title>
+      <title><![CDATA[Acoustic Geometry in Sacred Spaces]]></title>
       <link>https://questo-blog.netlify.app/articles/acoustic-geometry-and-sound-in-sacred-spaces</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/acoustic-geometry-and-sound-in-sacred-spaces</guid>
       <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
@@ -161,7 +206,7 @@
       <category>architecture-and-space</category>
     </item>
     <item>
-      <title><![CDATA[The Art of the Monograph: Cotton Rag Paper, Smyth-Sewn Binding & Tactile Publishing]]></title>
+      <title><![CDATA[The Art of the Monograph]]></title>
       <link>https://questo-blog.netlify.app/articles/the-art-of-the-monograph-and-tactile-publishing</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-art-of-the-monograph-and-tactile-publishing</guid>
       <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
@@ -170,7 +215,7 @@
       <category>art-and-culture</category>
     </item>
     <item>
-      <title><![CDATA[The Renaissance of Brutalist Web Design: Raw Semantics, Stark Typography & Anti-Corporate Honesty]]></title>
+      <title><![CDATA[The Renaissance of Brutalist Web Design]]></title>
       <link>https://questo-blog.netlify.app/articles/the-renaissance-of-brutalist-web-design</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-renaissance-of-brutalist-web-design</guid>
       <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
@@ -188,7 +233,7 @@
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[Decentralized Edge Architectures: How Micro-Caches Outperform Centralized Clouds]]></title>
+      <title><![CDATA[Decentralized Edge Architectures]]></title>
       <link>https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches</guid>
       <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
@@ -242,7 +287,7 @@
       <category>design-and-typography</category>
     </item>
     <item>
-      <title><![CDATA[Building Static Multilingual Publishing: Zero-Runtime Localization & Edge Speed]]></title>
+      <title><![CDATA[Static Multilingual Publishing]]></title>
       <link>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</guid>
       <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
@@ -260,7 +305,7 @@
       <category>art-and-culture</category>
     </item>
     <item>
-      <title><![CDATA[The Tactile Resurgence of Material Culture: Hand Joinery, Natural Fiber & Physical Truth]]></title>
+      <title><![CDATA[The Resurgence of Material Culture]]></title>
       <link>https://questo-blog.netlify.app/articles/the-tactile-resurgence-of-material-culture</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-tactile-resurgence-of-material-culture</guid>
       <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
@@ -269,7 +314,7 @@
       <category>art-and-culture</category>
     </item>
     <item>
-      <title><![CDATA[Craft Over Convenience: Classical Marble, Subtractive Tectonics & Hand Persistence]]></title>
+      <title><![CDATA[Craft Over Convenience]]></title>
       <link>https://questo-blog.netlify.app/articles/craft-over-convenience</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/craft-over-convenience</guid>
       <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
@@ -287,7 +332,7 @@
       <category>architecture-and-space</category>
     </item>
     <item>
-      <title><![CDATA[The Geometry of Silence: Unadorned Stone, Acoustic Void & Spatial Therapy]]></title>
+      <title><![CDATA[The Geometry of Silence]]></title>
       <link>https://questo-blog.netlify.app/articles/the-geometry-of-silence</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-geometry-of-silence</guid>
       <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
@@ -296,7 +341,7 @@
       <category>architecture-and-space</category>
     </item>
     <item>
-      <title><![CDATA[The Grid as an Instrument: Proportional Ratios, Margins & Typographic Form]]></title>
+      <title><![CDATA[The Grid as an Instrument]]></title>
       <link>https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</guid>
       <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
@@ -305,7 +350,7 @@
       <category>design-and-typography</category>
     </item>
     <item>
-      <title><![CDATA[Pure Functional Simplicity: Immutability, Side-Effect Elimination & Architectural Grace]]></title>
+      <title><![CDATA[Pure Functional Simplicity]]></title>
       <link>https://questo-blog.netlify.app/articles/pure-functional-simplicity</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pure-functional-simplicity</guid>
       <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
@@ -314,7 +359,7 @@
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[The Death of the Card Grid: Homogenized UI, Visual Fatigue & Asymmetric Awakening]]></title>
+      <title><![CDATA[The Death of the Card Grid]]></title>
       <link>https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</guid>
       <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>

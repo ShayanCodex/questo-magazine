@@ -1,6 +1,6 @@
 {
   "slug": "zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics",
-  "title": "[ar] Zero-Knowledge Rollups: Polynomial Commitments, zk-SNARKs & Ethereum Layer-2 State Verification",
+  "title": "[ar] Zero-Knowledge Rollups & zk-SNARKs",
   "excerpt": "[ar] An advanced examination of cryptographic proof systems, arithmetic circuits over elliptic curves, KZG commitments, and recursive SNARK aggregation for blockchain scaling.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
@@ -70,8 +70,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/j_8mXzH7w_A",
-      "title": "[ar] Understanding ZK-SNARKs and Layer 2 Rollups",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "[ar] Zero-Knowledge Proofs and Layer-2 Scaling Foundations",
       "caption": "[ar] Vitalik Buterin explains the cryptographic foundation, state transition proofs, and rollup architectures scaling Ethereum."
     },
     {
@@ -104,5 +104,5 @@
       "text": "[ar] Educational Disclaimer: This technical monograph is published exclusively for academic computer science, cryptography, and distributed systems research. It does not constitute financial, investment, or legal advice."
     }
   ],
-  "sourceHash": "b5cb93323dfe59bdb2a5d6eedc53d986f3359bab"
+  "sourceHash": "523630936943ab95ea0e6983fdce3c8a20e619d1"
 }

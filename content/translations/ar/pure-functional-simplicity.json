@@ -1,6 +1,6 @@
 {
   "slug": "pure-functional-simplicity",
-  "title": "[ar] Pure Functional Simplicity: Immutability, Side-Effect Elimination & Architectural Grace",
+  "title": "[ar] Pure Functional Simplicity",
   "excerpt": "[ar] A deep engineering dive into functional programming principles, pure functions, deterministic state models, and why immutable software pipelines eliminate whole categories of production failures.",
   "date": "2026-11-02",
   "updated": "2026-11-14",
@@ -78,5 +78,5 @@
       "text": "[ar] Adopting functional simplicity does not require abandoning pragmatic delivery. Systems like Rust, TypeScript, and modern React have increasingly incorporated functional idioms: pattern matching, algebraic data types, immutable state updates, and declarative data pipelines. By organizing code around immutable data pipelines rather than sprawling object hierarchies, engineers build systems that are robust, understandable, and deeply enduring."
     }
   ],
-  "sourceHash": "6bb23e15427baaadcbdce39b7682442bab01a5b6"
+  "sourceHash": "7eacf72285d3c1ec709ff945b0464b9270600591"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "high-voltage-direct-current-transmission-and-intercontinental-supergrids",
-  "title": "[ar] High-Voltage Direct Current (HVDC) Transmission: Voltage Source Converters & Intercontinental Supergrids",
+  "title": "[ar] HVDC Transmission & Supergrids",
   "excerpt": "[ar] An electrical systems monograph on IGBT-based Modular Multilevel Converters, capacitive cable dielectric losses, skin effect elimination, and asynchronous grid coupling.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
@@ -75,8 +75,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/ZqL8hH1G-F8",
-      "title": "[ar] The Engineering of High-Voltage Direct Current (HVDC)",
+      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
+      "title": "[ar] High-Voltage Power Grids & Long-Distance Electrical Transmission",
       "caption": "[ar] Comprehensive visual technical lecture on HVDC converter stations, submarine cable engineering, and grid stabilization."
     },
     {
@@ -104,5 +104,5 @@
       ]
     }
   ],
-  "sourceHash": "57bdbe2176a8944d5f3176302af93cbd3bafc2a2"
+  "sourceHash": "ef0cc670d0ed25de57f0a528ec1bafc15350bc26"
 }

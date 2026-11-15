@@ -174,7 +174,7 @@ export function Article() {
             )}
           </div>
 
-          <h1 className="font-display font-bold text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.05] tracking-tight text-editorial-text text-start uppercase">
+          <h1 className="font-display font-bold text-[clamp(1.75rem,3.8vw,3rem)] leading-[1.12] tracking-tight text-editorial-text text-start">
             {article.title}
           </h1>
 

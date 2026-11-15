@@ -1,6 +1,6 @@
 {
   "slug": "architecture-of-transformer-attention-mathematics-and-kv-cache",
-  "title": "[de] The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches & Latency Scaling",
+  "title": "[de] The Architecture of Transformer Attention",
   "excerpt": "[de] An investigative monograph on scaled dot-product attention, quadratic memory complexity, multi-query KV cache optimizations, and how modern inference engines conquer the memory wall.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
@@ -66,8 +66,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/kCc8FmEb1nY",
-      "title": "[de] Deep Dive into Transformer Architecture and Attention Mechanisms",
+      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
+      "title": "[de] Building Transformer Attention & Language Models from Scratch",
       "caption": "[de] Authoritative breakdown of transformer attention matrices, self-attention projections, and sequence transduction by Stanford AI researchers."
     },
     {
@@ -103,5 +103,5 @@
       ]
     }
   ],
-  "sourceHash": "08a3f74d4bbd01d2ecab11fd07a8e941d2f76522"
+  "sourceHash": "f10bcf631f0b2eb030483dae5c12a196583e66ad"
 }

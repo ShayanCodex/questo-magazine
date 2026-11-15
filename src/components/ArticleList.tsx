@@ -95,7 +95,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                   )}
                 </div>
 
-                <h2 className="text-2xl sm:text-3xl font-sans font-bold tracking-tight text-editorial-text group-hover/row:text-accent transition-colors leading-[1.18]">
+                <h2 className="text-xl sm:text-2xl font-sans font-bold tracking-tight text-editorial-text group-hover/row:text-accent transition-colors leading-[1.25]">
                   <Link
                     to={articlePath}
                     className="pointer-events-auto hover:text-accent transition-colors focus-visible:outline-none"

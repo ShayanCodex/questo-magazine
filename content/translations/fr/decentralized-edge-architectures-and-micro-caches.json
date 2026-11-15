@@ -1,6 +1,6 @@
 {
   "slug": "decentralized-edge-architectures-and-micro-caches",
-  "title": "[fr] Decentralized Edge Architectures: How Micro-Caches Outperform Centralized Clouds",
+  "title": "[fr] Decentralized Edge Architectures",
   "excerpt": "[fr] A technical monograph analyzing globally distributed Anycast BGP routing, stale-while-revalidate edge workers, and why decentralized micro-caches obsolete monolithic centralized databases.",
   "date": "2026-11-13",
   "updated": "2026-11-15",
@@ -71,5 +71,5 @@
       "text": "[fr] By building Questo Magazine on top of decentralized edge architecture and immutable micro-caches, we achieve institutional-grade reliability, absolute security, and blistering sub-second delivery for every reader on Earth."
     }
   ],
-  "sourceHash": "b79145060814be7e4087fbb98ddbf350391dea69"
+  "sourceHash": "2c66ca5d93d8dc5c308d4fa5bff52a92eaf1472c"
 }

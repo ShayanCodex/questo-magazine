@@ -1,6 +1,6 @@
 {
   "slug": "building-static-multilingual-publishing",
-  "title": "[fr] Building Static Multilingual Publishing: Zero-Runtime Localization & Edge Speed",
+  "title": "[fr] Static Multilingual Publishing",
   "excerpt": "[fr] How pre-rendering six distinct languages at build time with deterministic JSON payloads eliminates runtime network waterfalls and guarantees flawless global search engine indexing.",
   "date": "2026-11-08",
   "updated": "2026-11-14",
@@ -75,5 +75,5 @@
       "text": "[fr] By uniting static site generation with multilingual build-time pipelines, Questo demonstrates that modern web engineering can deliver lightning-fast international performance while upholding the timeless editorial dignity of the printed word."
     }
   ],
-  "sourceHash": "6c8ab5c92cf072b309c904b76fb6d7be046fe467"
+  "sourceHash": "33dab6bbfa97adc2f2594c041c5f5c3e4ab5eb0b"
 }

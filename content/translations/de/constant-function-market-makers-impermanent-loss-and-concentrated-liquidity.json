@@ -1,6 +1,6 @@
 {
   "slug": "constant-function-market-makers-impermanent-loss-and-concentrated-liquidity",
-  "title": "[de] Constant-Function Market Makers: Concentrated Liquidity Geometry, Tick Spacing & Impermanent Loss Dynamics",
+  "title": "[de] Concentrated Liquidity in Market Makers",
   "excerpt": "[de] A financial cryptography monograph on Uniswap v3 virtual reserve invariants, Loss-Versus-Rebalancing (LVR) arbitrage mechanics, and liquidity density optimization.",
   "date": "2026-11-15",
   "author": "Claire Dupont",
@@ -71,8 +71,8 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube.com/embed/EHsPms_yZfA",
-      "title": "[de] Understanding Concentrated Liquidity and Uniswap v3 Math",
+      "src": "https://www.youtube-nocookie.com/embed/cizLhxSKrAc",
+      "title": "[de] Automated Market Makers & Concentrated Liquidity Mechanics",
       "caption": "[de] Rigorous visual walkthrough of virtual reserves, tick boundaries, impermanent loss curves, and capital efficiency gains."
     },
     {
@@ -105,5 +105,5 @@
       ]
     }
   ],
-  "sourceHash": "79a292c82774fe86e655946e3818357f79477305"
+  "sourceHash": "195ebfd00b0d0e7e1057d73a2bb8cdec23c6f235"
 }

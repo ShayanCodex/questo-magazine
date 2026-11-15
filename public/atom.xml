@@ -5,9 +5,9 @@
   <link href="https://questo-blog.netlify.app/" />
   <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://questo-blog.netlify.app/</id>
-  <updated>2026-11-15T01:29:14.650Z</updated>
+  <updated>2026-11-15T09:23:00.610Z</updated>
   <entry>
-    <title>The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches &amp; Latency Scaling</title>
+    <title>The Architecture of Transformer Attention</title>
     <link href="https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache" />
     <id>https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -17,7 +17,7 @@
     </author>
   </entry>
   <entry>
-    <title>Cardiometabolic Biomarkers: ApoB, Endothelial Nitric Oxide &amp; Plaque Vulnerability</title>
+    <title>Cardiometabolic Biomarkers &amp; ApoB</title>
     <link href="https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide" />
     <id>https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -27,7 +27,17 @@
     </author>
   </entry>
   <entry>
-    <title>Compiler-Driven React: React 19 Server Components, Memoization Automation &amp; Hydration Elimination</title>
+    <title>The Chemistry of Espresso Extraction</title>
+    <link href="https://questo-blog.netlify.app/articles/chemistry-of-espresso-extraction-and-particle-distribution" />
+    <id>https://questo-blog.netlify.app/articles/chemistry-of-espresso-extraction-and-particle-distribution</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A physical chemistry monograph on porous bed Darcy flow dynamics, bimodal grind particle size distribution, percolation channeling, and volatile compound solubility kinetics.</summary>
+    <author>
+      <name>Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Compiler-Driven React &amp; Server Components</title>
     <link href="https://questo-blog.netlify.app/articles/compiler-driven-react-server-components-hydration-elimination" />
     <id>https://questo-blog.netlify.app/articles/compiler-driven-react-server-components-hydration-elimination</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -37,7 +47,7 @@
     </author>
   </entry>
   <entry>
-    <title>Constant-Function Market Makers: Concentrated Liquidity Geometry, Tick Spacing &amp; Impermanent Loss Dynamics</title>
+    <title>Concentrated Liquidity in Market Makers</title>
     <link href="https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity" />
     <id>https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -47,7 +57,7 @@
     </author>
   </entry>
   <entry>
-    <title>Forex Liquidity Corridors: Central Bank Reserves, Swap Lines &amp; Global Settlement Mechanics</title>
+    <title>Global Forex Liquidity Corridors</title>
     <link href="https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves" />
     <id>https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -57,7 +67,17 @@
     </author>
   </entry>
   <entry>
-    <title>Gravitational Wave Interferometry: Laser Cavity Fabry-Pérot Optics &amp; Binary Neutron Star Coalescence</title>
+    <title>Glymphatic Clearance in Deep Sleep</title>
+    <link href="https://questo-blog.netlify.app/articles/glymphatic-clearance-and-slow-wave-sleep-architecture" />
+    <id>https://questo-blog.netlify.app/articles/glymphatic-clearance-and-slow-wave-sleep-architecture</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A neuroscience and cellular physiology review of aquaporin-4 polarized astrocytic convective flow, amyloid-beta metabolic waste drainage, and delta slow-wave sleep architecture.</summary>
+    <author>
+      <name>Dr. Aris Thorne</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Gravitational Wave Interferometry</title>
     <link href="https://questo-blog.netlify.app/articles/gravitational-wave-interferometry-ligo-and-neutron-star-mergers" />
     <id>https://questo-blog.netlify.app/articles/gravitational-wave-interferometry-ligo-and-neutron-star-mergers</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -67,7 +87,7 @@
     </author>
   </entry>
   <entry>
-    <title>Ground-Effect Aerodynamics: Venturi Underfloor Tunnels, Boundary Layer Suction &amp; Porpoising Mechanics</title>
+    <title>Ground-Effect Aerodynamics in Formula 1</title>
     <link href="https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics" />
     <id>https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -77,7 +97,7 @@
     </author>
   </entry>
   <entry>
-    <title>High-Voltage Direct Current (HVDC) Transmission: Voltage Source Converters &amp; Intercontinental Supergrids</title>
+    <title>HVDC Transmission &amp; Supergrids</title>
     <link href="https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids" />
     <id>https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -87,7 +107,27 @@
     </author>
   </entry>
   <entry>
-    <title>Microbial Ecology of Wild Sourdough: Lactic Acid Bacteria, Acidity Kinetics &amp; Proteolysis</title>
+    <title>Impedance Control in Bipedal Robotics</title>
+    <link href="https://questo-blog.netlify.app/articles/inverse-kinematics-and-impedance-control-in-bipedal-robotics" />
+    <id>https://questo-blog.netlify.app/articles/inverse-kinematics-and-impedance-control-in-bipedal-robotics</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A robotics engineering treatise on joint torque space mapping, zero-moment point dynamics, compliance modulation, and whole-body locomotion stabilization.</summary>
+    <author>
+      <name>Elena Rostova</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Maritime LNG Energy Corridors</title>
+    <link href="https://questo-blog.netlify.app/articles/lng-liquefaction-mechanics-and-maritime-energy-corridors" />
+    <id>https://questo-blog.netlify.app/articles/lng-liquefaction-mechanics-and-maritime-energy-corridors</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A financial commodities and thermodynamic engineering analysis of mixed-refrigerant cryogenic liquefaction cycles, maritime boil-off gas management, and global arbitrage spreads.</summary>
+    <author>
+      <name>Julian Sterling</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Microbial Ecology of Sourdough</title>
     <link href="https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis" />
     <id>https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -97,7 +137,17 @@
     </author>
   </entry>
   <entry>
-    <title>Postprandial Glycemic Variability: Continuous Glucose Telemetry, Hepatic Glycogenesis &amp; Mitochondrial Flexibility</title>
+    <title>Multilink Suspension Geometry</title>
+    <link href="https://questo-blog.netlify.app/articles/multilink-suspension-geometry-and-camber-recovery" />
+    <id>https://questo-blog.netlify.app/articles/multilink-suspension-geometry-and-camber-recovery</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A vehicle dynamics monograph analyzing instant centers, roll center migration, dynamic camber compensation curves, and elastokinematic compliance steer under transient lateral loads.</summary>
+    <author>
+      <name>Liam O&apos;Connor</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Postprandial Glycemic Variability</title>
     <link href="https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility" />
     <id>https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -107,7 +157,7 @@
     </author>
   </entry>
   <entry>
-    <title>Concert Hall Architectural Acoustics: Schroeder Frequency, Quadratic Residue Diffusors &amp; Reverberation Geometry</title>
+    <title>Concert Hall Architectural Acoustics</title>
     <link href="https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays" />
     <id>https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -117,7 +167,7 @@
     </author>
   </entry>
   <entry>
-    <title>Sovereign Debt Cycles, Yield Curve Inversions &amp; Cross-Border Repo Settlement</title>
+    <title>Sovereign Debt Cycles &amp; Repo Markets</title>
     <link href="https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement" />
     <id>https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -127,7 +177,7 @@
     </author>
   </entry>
   <entry>
-    <title>Spatial Pressing Geometry: Positional Play, Rest-Defense &amp; Transition Windows in Modern Football</title>
+    <title>The Geometry of Modern Pressing</title>
     <link href="https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense" />
     <id>https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -137,7 +187,7 @@
     </author>
   </entry>
   <entry>
-    <title>The Mechanics of Enterprise SaaS Retention: Net Dollar Retention, Cohort LTV &amp; Negative Churn</title>
+    <title>The Mechanics of SaaS Retention</title>
     <link href="https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr" />
     <id>https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -147,7 +197,7 @@
     </author>
   </entry>
   <entry>
-    <title>Trans-Alpine Rail Engineering: Spiral Tunnels, High-Altitude Topography &amp; Low-Impact Exploration</title>
+    <title>Trans-Alpine Rail Engineering</title>
     <link href="https://questo-blog.netlify.app/articles/trans-alpine-rail-engineering-and-high-altitude-topography" />
     <id>https://questo-blog.netlify.app/articles/trans-alpine-rail-engineering-and-high-altitude-topography</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -157,7 +207,7 @@
     </author>
   </entry>
   <entry>
-    <title>Zero-Knowledge Rollups: Polynomial Commitments, zk-SNARKs &amp; Ethereum Layer-2 State Verification</title>
+    <title>Zero-Knowledge Rollups &amp; zk-SNARKs</title>
     <link href="https://questo-blog.netlify.app/articles/zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics" />
     <id>https://questo-blog.netlify.app/articles/zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -167,7 +217,7 @@
     </author>
   </entry>
   <entry>
-    <title>Acoustic Geometry: How Monastic and Modernist Sanctuaries Shape Sound and Contemplation</title>
+    <title>Acoustic Geometry in Sacred Spaces</title>
     <link href="https://questo-blog.netlify.app/articles/acoustic-geometry-and-sound-in-sacred-spaces" />
     <id>https://questo-blog.netlify.app/articles/acoustic-geometry-and-sound-in-sacred-spaces</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -177,7 +227,7 @@
     </author>
   </entry>
   <entry>
-    <title>The Art of the Monograph: Cotton Rag Paper, Smyth-Sewn Binding &amp; Tactile Publishing</title>
+    <title>The Art of the Monograph</title>
     <link href="https://questo-blog.netlify.app/articles/the-art-of-the-monograph-and-tactile-publishing" />
     <id>https://questo-blog.netlify.app/articles/the-art-of-the-monograph-and-tactile-publishing</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -187,7 +237,7 @@
     </author>
   </entry>
   <entry>
-    <title>The Renaissance of Brutalist Web Design: Raw Semantics, Stark Typography &amp; Anti-Corporate Honesty</title>
+    <title>The Renaissance of Brutalist Web Design</title>
     <link href="https://questo-blog.netlify.app/articles/the-renaissance-of-brutalist-web-design" />
     <id>https://questo-blog.netlify.app/articles/the-renaissance-of-brutalist-web-design</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -207,7 +257,7 @@
     </author>
   </entry>
   <entry>
-    <title>Decentralized Edge Architectures: How Micro-Caches Outperform Centralized Clouds</title>
+    <title>Decentralized Edge Architectures</title>
     <link href="https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches" />
     <id>https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches</id>
     <updated>2026-11-15T00:00:00.000Z</updated>
@@ -267,7 +317,7 @@
     </author>
   </entry>
   <entry>
-    <title>Building Static Multilingual Publishing: Zero-Runtime Localization &amp; Edge Speed</title>
+    <title>Static Multilingual Publishing</title>
     <link href="https://questo-blog.netlify.app/articles/building-static-multilingual-publishing" />
     <id>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</id>
     <updated>2026-11-14T00:00:00.000Z</updated>
@@ -287,7 +337,7 @@
     </author>
   </entry>
   <entry>
-    <title>The Tactile Resurgence of Material Culture: Hand Joinery, Natural Fiber &amp; Physical Truth</title>
+    <title>The Resurgence of Material Culture</title>
     <link href="https://questo-blog.netlify.app/articles/the-tactile-resurgence-of-material-culture" />
     <id>https://questo-blog.netlify.app/articles/the-tactile-resurgence-of-material-culture</id>
     <updated>2026-11-14T00:00:00.000Z</updated>
@@ -297,7 +347,7 @@
     </author>
   </entry>
   <entry>
-    <title>Craft Over Convenience: Classical Marble, Subtractive Tectonics &amp; Hand Persistence</title>
+    <title>Craft Over Convenience</title>
     <link href="https://questo-blog.netlify.app/articles/craft-over-convenience" />
     <id>https://questo-blog.netlify.app/articles/craft-over-convenience</id>
     <updated>2026-11-14T00:00:00.000Z</updated>
@@ -317,7 +367,7 @@
     </author>
   </entry>
   <entry>
-    <title>The Geometry of Silence: Unadorned Stone, Acoustic Void &amp; Spatial Therapy</title>
+    <title>The Geometry of Silence</title>
     <link href="https://questo-blog.netlify.app/articles/the-geometry-of-silence" />
     <id>https://questo-blog.netlify.app/articles/the-geometry-of-silence</id>
     <updated>2026-11-14T00:00:00.000Z</updated>
@@ -327,7 +377,7 @@
     </author>
   </entry>
   <entry>
-    <title>The Grid as an Instrument: Proportional Ratios, Margins &amp; Typographic Form</title>
+    <title>The Grid as an Instrument</title>
     <link href="https://questo-blog.netlify.app/articles/the-grid-as-an-instrument" />
     <id>https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</id>
     <updated>2026-11-14T00:00:00.000Z</updated>
@@ -337,7 +387,7 @@
     </author>
   </entry>
   <entry>
-    <title>Pure Functional Simplicity: Immutability, Side-Effect Elimination &amp; Architectural Grace</title>
+    <title>Pure Functional Simplicity</title>
     <link href="https://questo-blog.netlify.app/articles/pure-functional-simplicity" />
     <id>https://questo-blog.netlify.app/articles/pure-functional-simplicity</id>
     <updated>2026-11-14T00:00:00.000Z</updated>
@@ -347,7 +397,7 @@
     </author>
   </entry>
   <entry>
-    <title>The Death of the Card Grid: Homogenized UI, Visual Fatigue &amp; Asymmetric Awakening</title>
+    <title>The Death of the Card Grid</title>
     <link href="https://questo-blog.netlify.app/articles/the-death-of-the-card-grid" />
     <id>https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</id>
     <updated>2026-11-14T00:00:00.000Z</updated>
