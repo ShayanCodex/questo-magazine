@@ -234,6 +234,11 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'sovereign-debt-cycles-yield-curve-inversions-repo-settlement': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
   'spatial-pressing-geometry-positional-play-rest-defense': { categoryId: 'sports', subcategoryId: 'football' },
   'microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis': { categoryId: 'food', subcategoryId: 'fermentation-and-bread' },
+  'compiler-driven-react-server-components-hydration-elimination': { categoryId: 'software', subcategoryId: 'web-frameworks' },
+  'zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics': { categoryId: 'crypto', subcategoryId: 'layer-1-and-layer-2' },
+  'gravitational-wave-interferometry-ligo-and-neutron-star-mergers': { categoryId: 'science', subcategoryId: 'astronomy-and-space' },
+  'the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr': { categoryId: 'business', subcategoryId: 'startups-and-venture' },
+  'trans-alpine-rail-engineering-and-high-altitude-topography': { categoryId: 'travel', subcategoryId: 'expeditions-and-routes' },
 };
 
 export function getCategoryById(id: string): Category | undefined {
