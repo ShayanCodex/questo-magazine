@@ -1,0 +1,67 @@
+{
+  "slug": "algorithmic-typographic-rhythm-and-fluid-reading-scales",
+  "title": "Rythme typographique algorithmique",
+  "excerpt": "Un traité de théorie de la conception numérique sur les échelles musicales modulaires, les axes de police variables, la typographie fluide relative à la fenêtre d'affichage et l'ergonomie de lecture cognitive.",
+  "date": "2026-11-15",
+  "author": "Elena Vance",
+  "tags": [
+    "design",
+    "typography",
+    "swiss-style",
+    "reading-ergonomics",
+    "editorial-systems"
+  ],
+  "image": "/images/articles/transformer-attention-ai.jpg",
+  "imageAlt": "Grille de base typographique harmonique suisse et échelles de police mathématiques sur la mise en page éditoriale",
+  "body": [
+    {
+      "type": "h2",
+      "text": "L'architecture musicale de la page imprimée"
+    },
+    {
+      "type": "p",
+      "text": "La typographie est une musique spatiale. Tout comme une composition musicale repose sur des intervalles harmoniques, une syncope et un tempo, un chef-d’œuvre de typographie éditoriale est structuré sur des relations proportionnelles : progressions d’échelles modulaires, cadences de base verticales et longueurs de lignes de caractères disciplinées (mesure). Sur le Web réactif, la typographie ne peut pas rester statique ; il doit respirer de manière dynamique avec les proportions physiques de l’appareil du lecteur."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Échelles mathématiques modulaires : le dimensionnement du type selon des intervalles proportionnels (tierce mineure 1,200, quatrième parfaite 1,333, nombre d'or 1,618) crée une harmonie visuelle subconsciente.",
+        "Formulation Fluid Clamp : l'utilisation des fonctions CSS clamp() interpole les tailles de police en douceur sur des plages de fenêtres continues sans sauts de points d'arrêt discordants.",
+        "Mesure et interlignage optimaux : le maintien de 45 à 75 caractères par ligne couplé à une hauteur de ligne de 1,4 à 1,6 préserve la vitesse de suivi rétinien lors de sessions de lecture soutenues.",
+        "Compensation optique de la taille : les polices variables ajustent dynamiquement le contraste des traits des caractères, l'ouverture de l'ouverture et le suivi à mesure que la taille des points augmente ou diminue."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Une bonne typographie est invisible lorsqu'elle guide l'esprit, et inoubliable lorsqu'elle honore la géométrie de la page.",
+      "cite": "Elena Vance, Principes de géométrie typographique"
+    },
+    {
+      "type": "h2",
+      "text": "Polices variables et ergonomie optique"
+    },
+    {
+      "type": "p",
+      "text": "L'avènement des polices variables OpenType restaure le savoir-faire des poinçonneurs historiques. En modulant l'axe « opsz » (taille optique) en tandem avec les dimensions de la fenêtre d'affichage, les faces de texte numériques conservent une élégance délicate dans des tailles d'affichage monumentales tout en augmentant les espaces de comptoir et la lisibilité sur les balances mobiles portables."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Systèmes de conception éditoriale et maîtrise typographique",
+      "caption": "Exploration du brutalisme suisse, des systèmes de mise en page modulaires et des mathématiques de la lecture de la typographie."
+    },
+    {
+      "type": "h2",
+      "text": "Le Manifeste pour une lecture numérique lente"
+    },
+    {
+      "type": "p",
+      "text": "En rejetant le bruit précipité des modèles en faveur d'un rythme typographique algorithmique, Questo Magazine offre un sanctuaire architectural pour une attention profonde : une expérience où l'artisanat typographique honore l'intelligence du lecteur."
+    }
+  ],
+  "sourceHash": "a87f18c9068b56d94aafedd846c7d806dd29c36f"
+}

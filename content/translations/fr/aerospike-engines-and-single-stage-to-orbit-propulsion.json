@@ -1,0 +1,67 @@
+{
+  "slug": "aerospike-engines-and-single-stage-to-orbit-propulsion",
+  "title": "Moteurs Aerospike et propulsion orbitale",
+  "excerpt": "Une enquête sur la physique de la propulsion sur les tuyères à compensation d'altitude, la thermodynamique de la chambre de combustion et la mécanique d'un seul étage en orbite.",
+  "date": "2026-11-15",
+  "author": "Dr. Aris Thorne",
+  "tags": [
+    "science",
+    "aerospace",
+    "propulsion",
+    "physics",
+    "orbital-mechanics"
+  ],
+  "image": "/images/articles/quantum-computing-qubit.jpg",
+  "imageAlt": "Chambre de propulsion de fusée à haute température et installation d'essai sous vide",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le problème de l'expansion atmosphérique dans les fusées traditionnelles"
+    },
+    {
+      "type": "p",
+      "text": "Les tuyères à cloche conventionnelles souffrent d'un compromis physique inévitable : le taux d'expansion de la tuyère est fixé lors de la fabrication. Au niveau de la mer, la pression atmosphérique dilate excessivement le panache d'échappement, provoquant des chocs de séparation destructeurs ; dans le vide, la buse est sous-expansée, ce qui donne une impulsion spécifique (Isp) importante. Le moteur aerospike élimine ce goulot d’étranglement physique grâce à une compensation aérodynamique dynamique de l’altitude."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Limite aérodynamique : la pression atmosphérique ambiante agit comme une paroi de buse externe invisible, permettant au panache d'échappement de se dilater naturellement du niveau de la mer jusqu'à l'orbite.",
+        "Impulsion spécifique constante : les architectures aérospike linéaires et toroïdales maintiennent une expansion presque optimale sur toute la trajectoire de vol.",
+        "Gestion thermique : La concentration des gaz de combustion le long d'un pic central nécessite un refroidissement régénératif avec du méthane liquide cryogénique ou de l'hydrogène.",
+        "Viabilité en un seul étage : en éliminant les déposes de véhicules par étapes, les engins équipés d'aérospike se rapprochent du rapport de masse théorique requis pour un étage unique en orbite (SSTO)."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La tuyère en forme de cloche était un compromis technique des débuts de la course spatiale. L’aerospike représente la dynamique des fluides de propulsion fonctionnant en pure harmonie avec la physique ambiante.",
+      "cite": "Journal of Advanced Propulsion & Hypersonic Mechanics"
+    },
+    {
+      "type": "h2",
+      "text": "Fabrication additive et refroidissement régénératif actif"
+    },
+    {
+      "type": "p",
+      "text": "Le développement historique des aérospikes au XXe siècle a échoué sur les limites métallurgiques : la pointe centrale de la pointe a connu un flux thermique dépassant les cœurs des réacteurs nucléaires. L'impression moderne d'alliages de cuivre par fusion laser sur lit de poudre (LPBF) permet des voies de refroidissement à micro-canaux qui acheminent les propulseurs cryogéniques inférieurs à zéro à quelques millimètres de la couche de cisaillement de combustion supersonique."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
+      "title": "Principes de physique de précision et de mesure quantique",
+      "caption": "Cours de physique expérimentale explorant l'interférométrie d'extrême précision, la stabilité cryogénique et le contrôle de l'état quantique."
+    },
+    {
+      "type": "h2",
+      "text": "L'avenir de l'accès à l'espace réutilisable"
+    },
+    {
+      "type": "p",
+      "text": "Alors que les lanceurs commerciaux évoluent vers une rotation rapide semblable à celle des avions, l'intégration structurelle de l'aerospike avec les avions spatiaux à corps de levage offre la voie thermodynamique la plus propre vers un accès orbital durable."
+    }
+  ],
+  "sourceHash": "6cfa15eaa7cc17ad09a2466a4d601e0f1c95fcbb"
+}

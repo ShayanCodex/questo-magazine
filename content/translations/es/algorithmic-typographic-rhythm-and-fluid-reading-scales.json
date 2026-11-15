@@ -1,0 +1,67 @@
+{
+  "slug": "algorithmic-typographic-rhythm-and-fluid-reading-scales",
+  "title": "Ritmo tipográfico algorítmico",
+  "excerpt": "Un tratado de teoría del diseño digital sobre escalas musicales modulares, ejes de fuente variables, tipografía fluida relativa a la ventana gráfica y ergonomía de lectura cognitiva.",
+  "date": "2026-11-15",
+  "author": "Elena Vance",
+  "tags": [
+    "design",
+    "typography",
+    "swiss-style",
+    "reading-ergonomics",
+    "editorial-systems"
+  ],
+  "image": "/images/articles/transformer-attention-ai.jpg",
+  "imageAlt": "Cuadrícula tipográfica suiza armónica y escalas de fuentes matemáticas en el diseño de una hoja editorial",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La arquitectura musical de la página impresa"
+    },
+    {
+      "type": "p",
+      "text": "La tipografía es música espacial. Así como una composición musical se basa en intervalos armónicos, síncopa y tempo, una obra maestra de tipografía editorial se estructura sobre relaciones proporcionales: progresiones de escala modular, cadencias de línea de base verticales y longitudes de línea de carácter disciplinadas (compás). En la web responsiva, la tipografía no puede permanecer estática; debe respirar dinámicamente con las proporciones físicas del dispositivo del lector."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Escalas modulares matemáticas: El tipo de tamaño a lo largo de intervalos proporcionales (tercio menor 1.200, cuarto perfecto 1.333, proporción áurea 1.618) crea armonía visual subconsciente.",
+        "Formulación de abrazadera fluida: la utilización de las funciones CSS Clamp() interpola los tamaños de fuente suavemente en rangos continuos de ventanas gráficas sin saltos discordantes en los puntos de interrupción.",
+        "Medición y interlineado óptimos: Mantener de 45 a 75 caracteres por línea junto con una altura de línea de 1,4 a 1,6 preserva la velocidad de seguimiento de la retina en sesiones de lectura sostenidas.",
+        "Compensación de tamaño óptico: las fuentes variables ajustan dinámicamente el contraste de los trazos de los caracteres, la apertura de la apertura y el seguimiento a medida que el tamaño en puntos aumenta o disminuye."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La buena tipografía es invisible cuando guía la mente, e inolvidable cuando honra la geometría de la página.",
+      "cite": "Elena Vance, Principios de geometría tipográfica"
+    },
+    {
+      "type": "h2",
+      "text": "Fuentes variables y ergonomía óptica"
+    },
+    {
+      "type": "p",
+      "text": "La llegada de las fuentes variables OpenType restaura el oficio de las perforadoras históricas. Al modular el eje \"opsz\" (tamaño óptico) junto con las dimensiones de la ventana gráfica de la pantalla, las caras de un texto digital mantienen una delicada elegancia en tamaños de pantalla monumentales al tiempo que aumentan los espacios del mostrador y la legibilidad en básculas móviles de mano."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Sistemas de diseño editorial y dominio tipográfico",
+      "caption": "Exploración del brutalismo suizo, los sistemas de diseño modular y las matemáticas de la lectura de la tipografía."
+    },
+    {
+      "type": "h2",
+      "text": "El Manifiesto por la Lectura Lenta Digital"
+    },
+    {
+      "type": "p",
+      "text": "Al rechazar el ruido apresurado de las plantillas en favor del ritmo tipográfico algorítmico, Questo Magazine proporciona un santuario arquitectónico para la atención profunda: una experiencia donde el arte tipográfico honra la inteligencia del lector."
+    }
+  ],
+  "sourceHash": "a87f18c9068b56d94aafedd846c7d806dd29c36f"
+}

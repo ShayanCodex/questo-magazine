@@ -1,0 +1,67 @@
+{
+  "slug": "lactate-shuttle-dynamics-and-mitochondrial-clearance",
+  "title": "Dinámica del transbordador de lactato en el atletismo",
+  "excerpt": "Una monografía de fisiología del ejercicio sobre transportadores de monocarboxilato (MCT1/4), amortiguación de lactato intracelular y aclaramiento oxidativo mitocondrial.",
+  "date": "2026-11-15",
+  "author": "Liam O’Connor",
+  "tags": [
+    "sports",
+    "physiology",
+    "athletics",
+    "endurance",
+    "bioenergetics"
+  ],
+  "image": "/images/articles/tennis-biomechanics-serve.jpg",
+  "imageAlt": "Atleta de resistencia de élite sometido a pruebas fisiológicas metabólicas y de velocidad aeróbica máxima",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Desmantelando el mito del ácido láctico como producto de desecho"
+    },
+    {
+      "type": "p",
+      "text": "Durante casi un siglo, el entrenamiento atlético popular se adhirió a un dogma obsoleto: que el ácido láctico era un producto de desecho metabólico tóxico responsable de la fatiga muscular y el dolor de aparición tardía. La bioenergética celular pionera ha derribado esta idea errónea. En realidad, el lactato no es un veneno celular, sino el combustible energético dinámico más valioso del cuerpo: un carbohidrato intermedio rápidamente transportable y una poderosa molécula de señalización (lactormona)."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Lanzadera de lactato de célula a célula: Las fibras glicolíticas de contracción rápida generan lactato, que se transporta a través de transportadores de monocarboxilato (MCT4) a la circulación sanguínea.",
+        "Oxidación mitocondrial: las fibras musculares oxidativas de contracción lenta adyacentes, el tejido cardíaco y las neuronas absorben lactato a través de MCT1, convirtiéndolo nuevamente en piruvato para la generación de ATP del ciclo de Krebs.",
+        "Amortiguación de la acidosis: la quema muscular durante los esfuerzos máximos es impulsada por la acumulación excesiva de iones de hidrógeno (H+) de la hidrólisis del ATP, no por el anión lactato en sí.",
+        "Umbral de lactato 2 (MLSS): el rendimiento de resistencia de élite se define por la velocidad máxima a la que la producción de lactato en sangre coincide con la capacidad de eliminación sistémica."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El lactato no es la causa de la fatiga muscular; es el puente metabólico que rescata la producción de energía durante el estrés celular de alta intensidad.",
+      "cite": "Liam O’Connor, Estudios sobre rendimiento atlético humano"
+    },
+    {
+      "type": "h2",
+      "text": "Entrenamiento de zona 2 y densidad mitocondrial"
+    },
+    {
+      "type": "p",
+      "text": "La capacidad de eliminar y oxidar el lactato está determinada enteramente por la densidad mitocondrial y el volumen del lecho capilar en las fibras de contracción lenta tipo I. El entrenamiento de resistencia subumbral de la Zona 2 estimula la biogénesis mitocondrial sin desencadenar estrés simpático sistémico, construyendo el motor metabólico que impulsa el rendimiento atlético sostenido de élite."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
+      "title": "Salud metabólica y biomarcadores celulares en el rendimiento",
+      "caption": "El Dr. Peter Attia y el Dr. Andrew Huberman analizan la flexibilidad metabólica, el entrenamiento en zona 2 y la eficiencia cardiovascular."
+    },
+    {
+      "type": "h2",
+      "text": "El futuro molecular de la resistencia humana"
+    },
+    {
+      "type": "p",
+      "text": "Al rastrear la telemetría continua de lactato en tiempo real y optimizar la expresión del transportador de monocarboxilato a través de modelos de entrenamiento polarizados, la ciencia deportiva moderna está redefiniendo los límites físicos de la resistencia humana."
+    }
+  ],
+  "sourceHash": "253cb9bdbade380a975f9e0c1895f9f38921fdbf"
+}

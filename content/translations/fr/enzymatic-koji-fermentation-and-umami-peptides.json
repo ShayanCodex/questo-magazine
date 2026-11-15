@@ -1,0 +1,67 @@
+{
+  "slug": "enzymatic-koji-fermentation-and-umami-peptides",
+  "title": "Koji Fermentation & Umami Peptides",
+  "excerpt": "Une monographie de biochimie culinaire sur la culture à l'état solide d'Aspergillus oryzae, la synthèse de l'amylase-protéase et la cinétique de l'acide glutamique.",
+  "date": "2026-11-15",
+  "author": "Elena Vance",
+  "tags": [
+    "food",
+    "fermentation",
+    "biochemistry",
+    "culinary-science",
+    "gastronomy"
+  ],
+  "image": "/images/articles/maillard-reaction-culinary.jpg",
+  "imageAlt": "Plateaux traditionnels de fermentation en bois de cèdre moributa cultivant des moisissures filamenteuses de koji",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La moisissure filamenteuse qui a construit la gastronomie d'Asie de l'Est"
+    },
+    {
+      "type": "p",
+      "text": "Au cœur de la fermentation traditionnelle se trouve Aspergillus oryzae, un ancien champignon filamenteux domestiqué il y a des millénaires. En culture à l'état solide sur des grains d'orge ou de riz cuits à la vapeur, cet organisme bénin transforme les amidons inertes et les protéines structurelles en un trésor biochimique d'enzymes actives : alpha-amylase, glucoamylase, protéases acides et neutres et peptidases."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cascade de sécrétion d'enzymes : À mesure que les hyphes pénètrent dans l'endosperme du grain, la moisissure excrète des enzymes extracellulaires qui brisent les macromolécules denses en substrats biodisponibles.",
+        "Clivage du peptide Umami : Les protéases acides et neutres clivent les chaînes polypeptidiques complexes en acide glutamique libre et en aspartate, produisant la sensation savoureuse de l'umami.",
+        "Cinétique de la protéolyse : un contrôle minutieux de l'humidité, de la température d'incubation (30°C à 36°C) et de l'humidité dicte le rapport entre l'activité protéolytique et saccharolytique.",
+        "Sensation synergique : le glutamate libre agit de concert biochimique avec les 5′-ribonucléotides (inosinate et guanylate) pour multiplier jusqu'à huit fois l'excitation des récepteurs sensoriels."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le Koji n'est pas simplement un ingrédient ; il s'agit d'un réacteur biocatalytique qui libère des composés aromatiques structurels enfermés profondément dans la récolte agricole.",
+      "cite": "Elena Vance, Monographies en biochimie gastronomique"
+    },
+    {
+      "type": "h2",
+      "text": "Applications culinaires modernes dans la gastronomie lente"
+    },
+    {
+      "type": "p",
+      "text": "Les laboratoires culinaires d'avant-garde ont étendu les inoculations de koji au-delà du soja et du riz traditionnels aux céréales, légumineuses et noix fourragères du patrimoine ancien. En récoltant la puissance enzymatique du koji, les chefs accélèrent le vieillissement à sec des protéines et cultivent des profils aromatiques complexes de caramel, de champignon et de fleurs sans additifs synthétiques."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
+      "title": "Masterclass en fermentation et gastronomie microbienne",
+      "caption": "Exploration scientifique détaillée des cultures microbiennes, de l'activité des levures et de la chimie de l'artisanat culinaire."
+    },
+    {
+      "type": "h2",
+      "text": "L'héritage vivant de la fermentation à l'état solide"
+    },
+    {
+      "type": "p",
+      "text": "Dans une ère industrielle dominée par l'homogénéisation ultra-transformée, la fermentation du koji se présente comme un hommage durable à l'artisanat lent microbien : une pratique artisanale où convergent patience, biologie et art culinaire."
+    }
+  ],
+  "sourceHash": "17e4c3b655c5dbd2e9ccdb93af021d4d367270b5"
+}

@@ -269,6 +269,18 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'trans-himalayan-high-altitude-mountaineering-and-hypoxia-adaptation': { categoryId: 'travel', subcategoryId: 'expeditions-and-routes' },
   'circadian-entrainment-and-melanopic-lux-in-workspace-ergonomics': { categoryId: 'lifestyle', subcategoryId: 'productivity-systems' },
   'distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines': { categoryId: 'software', subcategoryId: 'backend-and-apis' },
+  'autonomous-agent-loops-and-context-compaction': { categoryId: 'technology', subcategoryId: 'artificial-intelligence' },
+  'sovereign-wealth-funds-and-global-infrastructure-assets': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
+  'ebpf-programmable-kernels-and-sub-millisecond-observability': { categoryId: 'software', subcategoryId: 'backend-and-apis' },
+  'parametric-timber-structures-and-low-carbon-acoustics': { categoryId: 'architecture-and-space', subcategoryId: 'spatial-theory' },
+  'topological-quantum-codes-and-surface-code-error-suppression': { categoryId: 'science', subcategoryId: 'physics-and-materials' },
+  'mitochondrial-biogenesis-and-nad-metabolism-in-aging': { categoryId: 'health', subcategoryId: 'preventive-medicine' },
+  'aerospike-engines-and-single-stage-to-orbit-propulsion': { categoryId: 'science', subcategoryId: 'astronomy-and-space' },
+  'post-quantum-cryptography-and-lattice-based-signatures': { categoryId: 'crypto', subcategoryId: 'layer-1-and-layer-2' },
+  'enzymatic-koji-fermentation-and-umami-peptides': { categoryId: 'food', subcategoryId: 'fermentation-and-bread' },
+  'lactate-shuttle-dynamics-and-mitochondrial-clearance': { categoryId: 'sports', subcategoryId: 'sports-science' },
+  'algorithmic-typographic-rhythm-and-fluid-reading-scales': { categoryId: 'design-and-typography', subcategoryId: 'typography' },
+  'autonomous-container-vessels-and-panama-canal-draft-economics': { categoryId: 'news', subcategoryId: 'world-economy' },
 };
 
 export function getCategoryById(id: string): Category | undefined {

@@ -1,0 +1,67 @@
+{
+  "slug": "post-quantum-cryptography-and-lattice-based-signatures",
+  "title": "Post-Quantum-Gitter-Kryptographie",
+  "excerpt": "Eine kryptografische Analyse von LWE-Gittern (Learning-with-Errors), Kyber-Schlüsselkapselung und digitalen Dilithium-Signaturen anhand des Shors-Algorithmus.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "crypto",
+    "cryptography",
+    "quantum-computing",
+    "security",
+    "mathematics"
+  ],
+  "image": "/images/articles/transformer-attention-ai.jpg",
+  "imageAlt": "Hochdimensionale geometrische Gittervektoren zur Visualisierung der kryptografischen Post-Quantum-Härte",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der bevorstehende Zusammenbruch asymmetrischer Public-Key-Grundlagen"
+    },
+    {
+      "type": "p",
+      "text": "Die globale digitale Wirtschaft beruht auf zwei mathematischen Problemen: Ganzzahlfaktorisierung (RSA) und diskrete Logarithmen über elliptischen Kurven (ECDSA). Wenn fehlertolerante Quantencomputer Shors Algorithmus instanziieren, werden diese grundlegenden Sicherheitsprimitive in polynomieller Zeit rechnerisch trivial. Die Umstellung des Internets auf quantenresistente Mathematik ist der kritischste Infrastrukturübergang in der Computergeschichte."
+    },
+    {
+      "type": "h2",
+      "text": "Kernpunkte"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Problem des kürzesten Vektors (SVP): Hochdimensionale Gitterprobleme bleiben sowohl für klassische als auch für Quantenalgorithmen rechnerisch schwer zu lösen.",
+        "Modul Lernen mit Fehlern (M-LWE): Algorithmen wie ML-KEM (Kyber) konstruieren kryptografische Geheimnisse, indem sie diskretes Gaußsches Rauschen zu hochdimensionalen Polynommatrizen hinzufügen.",
+        "Digitale Signaturentwicklung: ML-DSA (Dilithium) ersetzt elliptische Kurvensignaturen und liefert einen mathematischen Beweis der Härte ohne versteckte algebraische Untergruppen.",
+        "Kompromisse bei der Schlüsselgröße: Post-Quantum-öffentliche Schlüssel und Chiffretexte werden in Kilobyte statt in Bytes gemessen, was Optimierungen bei der Netzwerk-MTU und der Paketfragmentierung erfordert."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Quantensicherheit lässt sich nicht nachträglich nachrüsten. Gegner führen heute aktiv Kampagnen gegen souveräne Telekommunikationsunternehmen durch, bei denen es um „Jetzt ernten, später entschlüsseln“ geht.",
+      "cite": "National Standards & Cryptographic Security Institute"
+    },
+    {
+      "type": "h2",
+      "text": "Hardwarebeschleunigung und Zero-Knowledge-Kompatibilität"
+    },
+    {
+      "type": "p",
+      "text": "Die Ausführung einer Polynommultiplikation über zyklotomische Ringe erfordert zahlentheoretische Transformationen (NTT). Moderne Silizium-Befehlssätze und RISC-V-Erweiterungen integrieren dedizierte NTT-Vektorpipelines, um Post-Quantum-Schlüsselaustausche in Cloud-Umgebungen im Submillisekundenbereich durchzuführen."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Zero Knowledge Cryptography & Post-Quantum Foundations",
+      "caption": "Strenge kryptografische Vorlesung über Beweissysteme, Algebra und postquantenmathematische Garantien."
+    },
+    {
+      "type": "h2",
+      "text": "Souveränität und finanzielle Auswirkungen"
+    },
+    {
+      "type": "p",
+      "text": "Von digitalen Abwicklungsnetzwerken der Zentralbanken bis hin zu Satellitenverbindungen militärischer Qualität garantiert der Einsatz von Gitterkryptographie, dass unsere gemeinsame digitale Zivilisation auch lange nach der Erlangung der Quantenüberlegenheit sicher bleibt."
+    }
+  ],
+  "sourceHash": "383131c7145080fe0717b49d8a57ba461dd7c0c1"
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "ebpf-programmable-kernels-and-sub-millisecond-observability",
+  "title": "eBPF y observabilidad moderna del kernel",
+  "excerpt": "Una monografía de programación de sistemas sobre sandboxing de código de bytes, filtrado de paquetes en el kernel, puntos de seguimiento no intrusivos y telemetría de cambio de contexto cero.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "software",
+    "ebpf",
+    "linux-kernel",
+    "observability",
+    "systems-programming"
+  ],
+  "image": "/images/articles/distributed-servers-datacenter.jpg",
+  "imageAlt": "Racks de servidores empresariales de alta densidad con conmutadores de enrutamiento de red de fibra óptica iluminados",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Reestructuración de los límites del kernel de Linux"
+    },
+    {
+      "type": "p",
+      "text": "Históricamente, ampliar el comportamiento del sistema operativo requería la creación de módulos de kernel complejos o soportar una sobrecarga catastrófica de cambio de contexto del espacio de usuario. La aparición del filtro de paquetes Berkeley extendido (eBPF) ha transformado el kernel de Linux en un sustrato programable controlado por eventos. Al ejecutar código de bytes verificado estáticamente directamente dentro de la ruta de ejecución del kernel, los ingenieros logran observabilidad de microsegundos y filtrado de paquetes de alto rendimiento sin tener que volver a compilar los árboles del kernel."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Verificación de seguridad: el verificador interno aplica rigurosamente la ejecución limitada, la seguridad de los límites de la memoria y las garantías de terminación del bucle antes de la carga del tiempo de ejecución.",
+        "Cero gastos generales de cambio de contexto: la agregación de telemetría se produce dentro de los buffers de memoria del kernel (buffers de anillo eBPF), lo que elimina costosas operaciones de copia.",
+        "Redes a nivel de kernel: los enlaces XDP (eXpress Data Path) permiten la caída, modificación y enrutamiento de paquetes directamente en la capa del controlador de la tarjeta de interfaz de red.",
+        "Telemetría de seguridad profunda: los puntos de seguimiento dinámicos capturan llamadas al sistema, eventos de asignación de memoria y cambios en el ciclo de vida del socket de forma invisible para el espacio del usuario."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "eBPF hace con el núcleo del sistema operativo lo que JavaScript hizo con el navegador: transforma un entorno estático y monolítico en una plataforma programable.",
+      "cite": "Kernel Systems Engineering & Network Architecture Journal"
+    },
+    {
+      "type": "h2",
+      "text": "Seguimiento distribuido sin gastos generales"
+    },
+    {
+      "type": "p",
+      "text": "En arquitecturas de nube de hiperescala, los servidores proxy tradicionales imponen impuestos insostenibles a la CPU y la memoria. Al adjuntar programas eBPF a buffers de socket sin formato, se pueden inspeccionar rastros distribuidos y protocolos de enlace TLS criptográficos sin instrumentar el código fuente de la aplicación ni introducir latencia en los flujos de solicitudes de los clientes."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Programación de sistemas y aspectos internos de redes de bajo nivel",
+      "caption": "Exploración técnica profunda del manejo de paquetes del kernel, diseño de memoria y verificación de sistemas."
+    },
+    {
+      "type": "h2",
+      "text": "El futuro de la infraestructura nativa de la nube"
+    },
+    {
+      "type": "p",
+      "text": "A medida que la infraestructura de la nube exige latencias más bajas y un aislamiento de seguridad más estricto, eBPF está reemplazando rápidamente a los iptables convencionales, los proxies de red y los demonios de creación de perfiles intrusivos. Representa el avance decisivo en la ingeniería de sistemas de las plataformas de servidores modernas."
+    }
+  ],
+  "sourceHash": "c8cb9a06b93e15c7803d881c55826e6447ca3bb5"
+}

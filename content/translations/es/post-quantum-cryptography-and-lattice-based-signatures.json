@@ -1,0 +1,67 @@
+{
+  "slug": "post-quantum-cryptography-and-lattice-based-signatures",
+  "title": "Criptografía de celosía poscuántica",
+  "excerpt": "Un análisis criptográfico de celosías de aprendizaje con errores (LWE), encapsulación de claves Kyber y firmas digitales de Dilithium frente al algoritmo de Shor.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "crypto",
+    "cryptography",
+    "quantum-computing",
+    "security",
+    "mathematics"
+  ],
+  "image": "/images/articles/transformer-attention-ai.jpg",
+  "imageAlt": "Vectores reticulares geométricos de alta dimensión que visualizan la dureza criptográfica poscuántica",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El inminente colapso de los fundamentos de la clave pública asimétrica"
+    },
+    {
+      "type": "p",
+      "text": "La economía digital global se basa en dos problemas matemáticos: factorización de enteros (RSA) y logaritmos discretos sobre curvas elípticas (ECDSA). Cuando las computadoras cuánticas tolerantes a fallas instancian el algoritmo de Shor, estas primitivas de seguridad fundamentales se volverán computacionalmente triviales en tiempo polinomial. Migrar Internet a matemáticas resistentes a los cuánticos es la transición de infraestructura más crítica en la historia de la informática."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Problema del vector más corto (SVP): Los problemas de redes de alta dimensión siguen siendo computacionalmente intratables para los algoritmos clásicos y cuánticos.",
+        "Módulo de aprendizaje con errores (M-LWE): algoritmos como ML-KEM (Kyber) construyen secretos criptográficos agregando ruido gaussiano discreto a matrices polinómicas de alta dimensión.",
+        "Evolución de la firma digital: ML-DSA (Dilithium) reemplaza las firmas de curvas elípticas y ofrece una prueba matemática de dureza sin subgrupos algebraicos ocultos.",
+        "Compensaciones sobre el tamaño de la clave: las claves públicas poscuánticas y los textos cifrados se miden en kilobytes en lugar de bytes, lo que exige optimizaciones en la MTU de la red y la fragmentación de paquetes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La seguridad cuántica no se puede modernizar a posteriori. Hoy en día, los adversarios están ejecutando activamente campañas de \"cosechar ahora, descifrar después\" contra las telecomunicaciones soberanas.",
+      "cite": "Instituto Nacional de Estándares y Seguridad Criptográfica"
+    },
+    {
+      "type": "h2",
+      "text": "Aceleración de hardware y compatibilidad con conocimiento cero"
+    },
+    {
+      "type": "p",
+      "text": "La ejecución de la multiplicación polinómica sobre anillos ciclotómicos requiere transformaciones teóricas de números (NTT). Los conjuntos de instrucciones de silicio modernos y las extensiones RISC-V están integrando canales de vectores NTT dedicados para ejecutar intercambios de claves poscuánticos en entornos de nube de menos de milisegundos."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Criptografía de conocimiento cero y fundamentos poscuánticos",
+      "caption": "Conferencia criptográfica rigurosa que explora sistemas de prueba, álgebra y garantías matemáticas poscuánticas."
+    },
+    {
+      "type": "h2",
+      "text": "Implicaciones soberanas y financieras"
+    },
+    {
+      "type": "p",
+      "text": "Desde las redes de liquidación digital de los bancos centrales hasta los enlaces satelitales de grado militar, el despliegue de la criptografía reticular garantiza que nuestra civilización digital compartida permanezca segura mucho después de que se logre la supremacía cuántica."
+    }
+  ],
+  "sourceHash": "383131c7145080fe0717b49d8a57ba461dd7c0c1"
+}

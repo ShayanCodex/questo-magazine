@@ -1,0 +1,67 @@
+{
+  "slug": "mitochondrial-biogenesis-and-nad-metabolism-in-aging",
+  "title": "Dynamique mitochondriale et métabolisme NAD+",
+  "excerpt": "Une enquête géroscientifique sur la mitohormèse, l'activation de la sirtuine, la dynamique de fission-fusion et la résilience métabolique dans la longévité humaine.",
+  "date": "2026-11-15",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "health",
+    "longevity",
+    "mitochondria",
+    "metabolism",
+    "cellular-biology"
+  ],
+  "image": "/images/articles/cellular-autophagy-biology.jpg",
+  "imageAlt": "Visualisation par microscopie confocale fluorescente haute résolution des lysosomes cellulaires et des voies de l'autophagie",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La crise bioénergétique du vieillissement cellulaire"
+    },
+    {
+      "type": "p",
+      "text": "Au cœur du vieillissement biologique humain se trouve la dégradation bioénergétique progressive : le déclin progressif de l'efficacité du transport des électrons mitochondriaux, l'accumulation de fragments d'organites endommagés et l'épuisement systémique des pools cellulaires de nicotinamide adénine dinucléotide (NAD+). Plutôt qu’un glissement dégénératif inévitable, la géroscience moléculaire moderne révèle que l’architecture mitochondriale est dynamique, sensible aux déclencheurs métaboliques ciblés et capable d’un rajeunissement profond."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mitohormèse : des facteurs de stress métaboliques transitoires déclenchent l'expression de gènes nucléaires qui renforcent les défenses antioxydantes des mitochondries et la biogenèse.",
+        "Flux limitant le débit NAD+ : Le déclin de l'enzyme de récupération NAMPT réduit la disponibilité de la coenzyme NAD+, altérant la désacétylation de la sirtuine et la réparation de l'ADN PARP.",
+        "Équilibre de fission et de fusion : la mitofusine (MFN1/2) et Drp1 coordonnent le tri des composants mitochondriaux fonctionnels à partir de fragments endommagés ciblés pour la mitophagie.",
+        "Régulation principale de la PGC-1alpha : l'activation de la PGC-1alpha induite par l'exercice stimule la réplication de l'ADN mitochondrial et la synthèse de crêtes denses dans les tissus musculaires et neuraux."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le vieillissement est fondamentalement un déficit bioénergétique. Lorsque les crêtes mitochondriales perdent leur potentiel électrochimique, les cascades de réparation cellulaire succombent inévitablement à l'entropie.",
+      "cite": "Dr Marcus Vance, Protocoles de médecine cellulaire préventive"
+    },
+    {
+      "type": "h2",
+      "text": "Restauration du métabolisme de la nicotinamide"
+    },
+    {
+      "type": "p",
+      "text": "La reconstitution ciblée des précurseurs du NAD+ combinée à l'inhibition de l'ectoenzyme CD38 rétablit les rapports rédox cellulaires (NAD+/NADH) aux niveaux de jeunesse. Cette reconstitution biochimique préserve la stabilité génomique, stimule la biogenèse mitochondriale et atténue le déclin métabolique associé à l'âge."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
+      "title": "Longévité cellulaire et biomarqueurs métaboliques",
+      "caption": "Discussion clinique détaillant le risque cardiovasculaire, la santé métabolique et la biologie cellulaire de la longévité humaine."
+    },
+    {
+      "type": "h2",
+      "text": "Traduire la résilience cellulaire en longévité clinique"
+    },
+    {
+      "type": "p",
+      "text": "En couplant le conditionnement d'endurance de zone 2, les déficits énergétiques intermittents et les cofacteurs moléculaires ciblés, la médecine préventive passe de la gestion palliative des symptômes à la maintenance cellulaire proactive."
+    }
+  ],
+  "sourceHash": "8b5384ed9c857f1dafa99320e22a67b40c7cebe8"
+}

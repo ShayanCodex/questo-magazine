@@ -1,0 +1,68 @@
+{
+  "slug": "post-quantum-cryptography-and-lattice-based-signatures",
+  "title": "Post-Quantum Lattice Cryptography",
+  "excerpt": "A cryptographic analysis of learning-with-errors (LWE) lattices, Kyber key encapsulation, and Dilithium digital signatures against Shor’s algorithm.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "category": "crypto",
+  "subcategory": "layer-1-and-layer-2",
+  "tags": [
+    "crypto",
+    "cryptography",
+    "quantum-computing",
+    "security",
+    "mathematics"
+  ],
+  "image": "/images/articles/transformer-attention-ai.jpg",
+  "imageAlt": "High-dimensional geometric lattice vectors visualizing cryptographic post-quantum hardness",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Impending Collapse of Asymmetric Public Key Foundations"
+    },
+    {
+      "type": "p",
+      "text": "The global digital economy relies on two mathematical problems: integer factorization (RSA) and discrete logarithms over elliptic curves (ECDSA). When fault-tolerant quantum computers instantiate Shor’s algorithm, these foundational security primitives will be rendered computationally trivial in polynomial time. Migrating the internet to quantum-resistant mathematics is the most critical infrastructure transition in computing history."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Shortest Vector Problem (SVP): High-dimensional lattice problems remain computationally intractable for both classical and quantum algorithms.",
+        "Module Learning with Errors (M-LWE): Algorithms like ML-KEM (Kyber) construct cryptographic secrets by adding discrete Gaussian noise to high-dimensional polynomial matrices.",
+        "Digital Signature Evolution: ML-DSA (Dilithium) replaces elliptic curve signatures, delivering mathematical proof of hardness without hidden algebraic subgroups.",
+        "Key Size Trade-Offs: Post-quantum public keys and ciphertexts are measured in kilobytes rather than bytes, demanding optimizations in network MTU and packet fragmentation."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Quantum security cannot be retrofitted post-facto. Adversaries are actively executing harvest-now, decrypt-later campaigns against sovereign telecommunications today.",
+      "cite": "National Standards & Cryptographic Security Institute"
+    },
+    {
+      "type": "h2",
+      "text": "Hardware Acceleration and Zero-Knowledge Compatibility"
+    },
+    {
+      "type": "p",
+      "text": "Executing polynomial multiplication over cyclotomic rings requires Number Theoretic Transforms (NTT). Modern silicon instruction sets and RISC-V extensions are integrating dedicated NTT vector pipelines to execute post-quantum key exchanges in sub-millisecond cloud environments."
+    },
+    {
+      "type": "video",
+      "title": "Zero Knowledge Cryptography & Post-Quantum Foundations",
+      "caption": "Rigorous cryptographic lecture exploring proof systems, algebra, and post-quantum mathematical guarantees.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
+    },
+    {
+      "type": "h2",
+      "text": "Sovereign and Financial Implications"
+    },
+    {
+      "type": "p",
+      "text": "From central bank digital settlement networks to military-grade satellite links, the deployment of lattice cryptography guarantees that our shared digital civilization remains secure long after quantum supremacy is achieved."
+    }
+  ]
+}

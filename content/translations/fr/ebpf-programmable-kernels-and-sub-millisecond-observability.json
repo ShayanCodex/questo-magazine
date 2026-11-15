@@ -1,0 +1,67 @@
+{
+  "slug": "ebpf-programmable-kernels-and-sub-millisecond-observability",
+  "title": "eBPF & Modern Kernel Observability",
+  "excerpt": "Une monographie de programmation de systèmes sur le sandboxing de bytecode, le filtrage de paquets dans le noyau, les points de trace non intrusifs et la télémétrie à changement de contexte nul.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "software",
+    "ebpf",
+    "linux-kernel",
+    "observability",
+    "systems-programming"
+  ],
+  "image": "/images/articles/distributed-servers-datacenter.jpg",
+  "imageAlt": "Racks de serveurs d'entreprise haute densité avec commutateurs de routage réseau à fibre optique éclairés",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Réarchitecture des limites du noyau Linux"
+    },
+    {
+      "type": "p",
+      "text": "Historiquement, l'extension du comportement du système d'exploitation nécessitait la création de modules de noyau complexes ou une surcharge catastrophique de changement de contexte dans l'espace utilisateur. L'émergence du Berkeley Packet Filter (eBPF) étendu a transformé le noyau Linux en un substrat programmable et piloté par les événements. En exécutant le bytecode vérifié statiquement directement dans le chemin d'exécution du noyau, les ingénieurs obtiennent une observabilité à la microseconde et un filtrage des paquets à haut débit sans recompiler les arborescences du noyau."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Vérification de la sécurité : le vérificateur intégré au noyau applique rigoureusement les garanties d'exécution limitée, de sécurité des limites de mémoire et de terminaison de boucle avant le chargement de l'exécution.",
+        "Zéro surcharge de changement de contexte : l'agrégation de télémétrie se produit dans les tampons de mémoire du noyau (tampons en anneau eBPF), éliminant ainsi les opérations de copie coûteuses.",
+        "Réseau au niveau du noyau : les hooks XDP (eXpress Data Path) permettent l'abandon, la modification et le routage de paquets directement au niveau de la couche pilote de la carte d'interface réseau.",
+        "Télémétrie de sécurité approfondie : les points de trace dynamiques capturent les appels système, les événements d'allocation de mémoire et les modifications du cycle de vie des sockets de manière invisible dans l'espace utilisateur."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "eBPF fait au noyau du système d'exploitation ce que JavaScript a fait au navigateur : il transforme un environnement statique et monolithique en une plateforme programmable.",
+      "cite": "Kernel Systems Engineering & Network Architecture Journal"
+    },
+    {
+      "type": "h2",
+      "text": "Traçage distribué sans surcharge"
+    },
+    {
+      "type": "p",
+      "text": "Dans les architectures cloud hyperscale, les proxys side-car traditionnels imposent des taxes insoutenables sur le processeur et la mémoire. En attachant les programmes eBPF aux tampons de socket bruts, les traces distribuées et les poignées de main cryptographiques TLS peuvent être inspectées sans instrumenter le code source de l'application ni introduire de latence dans les flux de demandes des clients."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Programmation des systèmes et composants internes du réseau de bas niveau",
+      "caption": "Exploration technique approfondie de la gestion des paquets du noyau, de la disposition de la mémoire et de la vérification des systèmes."
+    },
+    {
+      "type": "h2",
+      "text": "L'avenir de l'infrastructure cloud native"
+    },
+    {
+      "type": "p",
+      "text": "Alors que l'infrastructure cloud exige des latences plus faibles et une isolation de sécurité plus stricte, eBPF remplace rapidement les iptables conventionnels, les proxys réseau et les démons de profilage intrusifs. Il représente une avancée majeure en matière d'ingénierie système pour les plates-formes de serveurs modernes."
+    }
+  ],
+  "sourceHash": "c8cb9a06b93e15c7803d881c55826e6447ca3bb5"
+}

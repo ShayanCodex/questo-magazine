@@ -1,0 +1,67 @@
+{
+  "slug": "aerospike-engines-and-single-stage-to-orbit-propulsion",
+  "title": "Motores Aerospike y propulsión orbital",
+  "excerpt": "Una investigación de la física de la propulsión sobre boquillas compensadoras de altitud, termodinámica de la cámara de combustión y mecánica de etapa única a órbita.",
+  "date": "2026-11-15",
+  "author": "Dr. Aris Thorne",
+  "tags": [
+    "science",
+    "aerospace",
+    "propulsion",
+    "physics",
+    "orbital-mechanics"
+  ],
+  "image": "/images/articles/quantum-computing-qubit.jpg",
+  "imageAlt": "Cámara de propulsión de cohetes de alta temperatura e instalación de prueba de vacío",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El problema de la expansión atmosférica en los cohetes tradicionales"
+    },
+    {
+      "type": "p",
+      "text": "Las boquillas de campana convencionales sufren de un compromiso físico ineludible: la relación de expansión de la boquilla se fija durante la fabricación. Al nivel del mar, la presión atmosférica expande excesivamente la columna de escape, lo que induce choques de separación destructivos; en el vacío, la boquilla está subexpandida, cediendo un impulso específico sustancial (Isp). El motor aerospike elimina este cuello de botella físico mediante la compensación aerodinámica dinámica de la altitud."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Límite aerodinámico: La presión atmosférica ambiental actúa como una pared exterior invisible de la boquilla, permitiendo que la columna de escape se expanda naturalmente desde el nivel del mar hasta la órbita.",
+        "Impulso específico constante: las arquitecturas de aerospike lineales y toroidales mantienen una expansión casi óptima en toda la trayectoria de vuelo.",
+        "Gestión térmica: La concentración de los gases de combustión a lo largo de una punta central exige refrigeración regenerativa con metano líquido criogénico o hidrógeno.",
+        "Viabilidad de una sola etapa: al eliminar las caídas de vehículos por etapas, las naves equipadas con aerospike se acercan a la relación de masa teórica requerida para una sola etapa a órbita (SSTO)."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La boquilla de campana fue un compromiso de ingeniería de la carrera espacial temprana. El aerospike representa la dinámica de fluidos de propulsión que opera en pura armonía con la física ambiental.",
+      "cite": "Journal of Advanced Propulsion & Hypersonic Mechanics"
+    },
+    {
+      "type": "h2",
+      "text": "Fabricación aditiva y enfriamiento regenerativo activo"
+    },
+    {
+      "type": "p",
+      "text": "El desarrollo histórico de las aerospike en el siglo XX fracasó ante los límites metalúrgicos: la punta de la púa central experimentó un flujo térmico que excedía los núcleos de los reactores nucleares. La moderna impresión de aleación de cobre por fusión de lecho de polvo por láser (LPBF) permite vías de enfriamiento de microcanales que dirigen propulsores criogénicos bajo cero a milímetros de la capa de corte de combustión supersónica."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
+      "title": "Física de precisión y principios de medición cuántica",
+      "caption": "Conferencia de física experimental que explora la interferometría de extrema precisión, la estabilidad criogénica y el control del estado cuántico."
+    },
+    {
+      "type": "h2",
+      "text": "El futuro del acceso espacial reutilizable"
+    },
+    {
+      "type": "p",
+      "text": "A medida que los vehículos de lanzamiento comerciales realizan una transición rápida similar a la de los aviones, la integración estructural del aerospike con los aviones espaciales con cuerpos elevadores ofrece el camino termodinámico más limpio hacia el acceso orbital sostenible."
+    }
+  ],
+  "sourceHash": "6cfa15eaa7cc17ad09a2466a4d601e0f1c95fcbb"
+}

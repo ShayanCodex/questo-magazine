@@ -1,0 +1,67 @@
+{
+  "slug": "post-quantum-cryptography-and-lattice-based-signatures",
+  "title": "Cryptographie de réseau post-quantique",
+  "excerpt": "Une analyse cryptographique des réseaux d'apprentissage avec erreurs (LWE), de l'encapsulation de clé Kyber et des signatures numériques Dilithium par rapport à l'algorithme de Shor.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "crypto",
+    "cryptography",
+    "quantum-computing",
+    "security",
+    "mathematics"
+  ],
+  "image": "/images/articles/transformer-attention-ai.jpg",
+  "imageAlt": "Vecteurs de treillis géométriques de grande dimension visualisant la dureté post-quantique cryptographique",
+  "body": [
+    {
+      "type": "h2",
+      "text": "L'effondrement imminent des fondements asymétriques des clés publiques"
+    },
+    {
+      "type": "p",
+      "text": "L'économie numérique mondiale repose sur deux problèmes mathématiques : la factorisation entière (RSA) et les logarithmes discrets sur courbes elliptiques (ECDSA). Lorsque les ordinateurs quantiques tolérants aux pannes instancieront l’algorithme de Shor, ces primitives de sécurité fondamentales seront rendues triviales sur le plan informatique en temps polynomial. La migration d’Internet vers des mathématiques à résistance quantique constitue la transition d’infrastructure la plus critique de l’histoire de l’informatique."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Problème du vecteur le plus court (SVP) : les problèmes de réseau de grande dimension restent insolubles sur le plan informatique pour les algorithmes classiques et quantiques.",
+        "Module d'apprentissage avec erreurs (M-LWE) : des algorithmes comme ML-KEM (Kyber) construisent des secrets cryptographiques en ajoutant du bruit gaussien discret à des matrices polynomiales de haute dimension.",
+        "Évolution des signatures numériques : ML-DSA (Dilithium) remplace les signatures de courbes elliptiques, fournissant une preuve mathématique de dureté sans sous-groupes algébriques cachés.",
+        "Compromis en matière de taille de clé : les clés publiques et les textes chiffrés post-quantiques sont mesurés en kilo-octets plutôt qu'en octets, ce qui nécessite des optimisations de la MTU du réseau et de la fragmentation des paquets."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La sécurité quantique ne peut pas être installée a posteriori. Aujourd’hui, les adversaires mènent activement des campagnes « récolter maintenant, décrypter plus tard » contre les télécommunications souveraines.",
+      "cite": "National Standards & Cryptographic Security Institute"
+    },
+    {
+      "type": "h2",
+      "text": "Accélération matérielle et compatibilité sans connaissance"
+    },
+    {
+      "type": "p",
+      "text": "L'exécution d'une multiplication polynomiale sur des anneaux cyclotomiques nécessite des transformations théoriques des nombres (NTT). Modern silicon instruction sets and RISC-V extensions are integrating dedicated NTT vector pipelines to execute post-quantum key exchanges in sub-millisecond cloud environments."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Cryptographie zéro connaissance et fondements post-quantiques",
+      "caption": "Cours cryptographique rigoureux explorant les systèmes de preuve, l'algèbre et les garanties mathématiques post-quantiques."
+    },
+    {
+      "type": "h2",
+      "text": "Implications souveraines et financières"
+    },
+    {
+      "type": "p",
+      "text": "Des réseaux de règlement numérique des banques centrales aux liaisons satellite de qualité militaire, le déploiement de la cryptographie en treillis garantit que notre civilisation numérique commune reste sécurisée longtemps après que la suprématie quantique soit atteinte."
+    }
+  ],
+  "sourceHash": "383131c7145080fe0717b49d8a57ba461dd7c0c1"
+}

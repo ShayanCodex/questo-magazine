@@ -1,0 +1,68 @@
+{
+  "slug": "ebpf-programmable-kernels-and-sub-millisecond-observability",
+  "title": "eBPF & Modern Kernel Observability",
+  "excerpt": "A systems programming monograph on bytecode sandboxing, in-kernel packet filtering, non-intrusive tracepoints, and zero-context-switch telemetry.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "category": "software",
+  "subcategory": "backend-and-apis",
+  "tags": [
+    "software",
+    "ebpf",
+    "linux-kernel",
+    "observability",
+    "systems-programming"
+  ],
+  "image": "/images/articles/distributed-servers-datacenter.jpg",
+  "imageAlt": "High-density enterprise server racks with illuminated fiber optical network routing switches",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Re-Architecting the Linux Kernel Boundary"
+    },
+    {
+      "type": "p",
+      "text": "Historically, extending operating system behavior required authoring complex kernel modules or enduring catastrophic user-space context-switch overhead. The emergence of extended Berkeley Packet Filter (eBPF) has transformed the Linux kernel into an event-driven, programmable substrate. By executing statically verified bytecode directly inside the kernel execution path, engineers achieve microsecond observability and high-throughput packet filtering without recompiling kernel trees."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Safety Verification: The in-kernel verifier rigorously enforces bounded execution, memory boundary safety, and loop termination guarantees prior to runtime load.",
+        "Zero Context-Switch Overhead: Telemetry aggregation occurs within kernel memory buffers (eBPF ring buffers), eliminating expensive copy operations.",
+        "Kernel-Level Networking: XDP (eXpress Data Path) hooks enable packet drop, modification, and routing directly at the network interface card driver layer.",
+        "Deep Security Telemetry: Dynamic tracepoints capture syscalls, memory allocation events, and socket lifecycle changes invisibly to user space."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "eBPF does to the operating system kernel what JavaScript did to the browser: it transforms a static, monolithic environment into a programmable platform.",
+      "cite": "Kernel Systems Engineering & Network Architecture Journal"
+    },
+    {
+      "type": "h2",
+      "text": "Zero-Overhead Distributed Tracing"
+    },
+    {
+      "type": "p",
+      "text": "In hyperscale cloud architectures, traditional sidecar proxies impose unsustainable CPU and memory taxes. By attaching eBPF programs to raw socket buffers, distributed traces and cryptographic TLS handshakes can be inspected without instrumenting application source code or introducing latency into customer request flows."
+    },
+    {
+      "type": "video",
+      "title": "Systems Programming and Low-Level Network Internals",
+      "caption": "Deep technical exploration of kernel packet handling, memory layout, and systems verification.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
+    },
+    {
+      "type": "h2",
+      "text": "The Future of Cloud Native Infrastructure"
+    },
+    {
+      "type": "p",
+      "text": "As cloud infrastructure demands lower latencies and tighter security isolation, eBPF is rapidly replacing conventional iptables, network proxies, and intrusive profiling daemons. It represents the defining systems engineering breakthrough of modern server platforms."
+    }
+  ]
+}

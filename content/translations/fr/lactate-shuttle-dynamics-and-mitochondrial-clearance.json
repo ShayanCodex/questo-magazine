@@ -1,0 +1,67 @@
+{
+  "slug": "lactate-shuttle-dynamics-and-mitochondrial-clearance",
+  "title": "Dynamique de la navette lactate en athlétisme",
+  "excerpt": "Une monographie de physiologie de l'exercice sur les transporteurs monocarboxylates (MCT1/4), le tampon intracellulaire du lactate et la clairance oxydative mitochondriale.",
+  "date": "2026-11-15",
+  "author": "Liam O’Connor",
+  "tags": [
+    "sports",
+    "physiology",
+    "athletics",
+    "endurance",
+    "bioenergetics"
+  ],
+  "image": "/images/articles/tennis-biomechanics-serve.jpg",
+  "imageAlt": "Athlète d'endurance d'élite soumis à des tests de vitesse aérobie maximale et de physiologie métabolique",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Démanteler le mythe de l'acide lactique en tant que déchet"
+    },
+    {
+      "type": "p",
+      "text": "Pendant près d'un siècle, l'entraînement sportif populaire a adhéré à un dogme obsolète : l'acide lactique était un déchet métabolique toxique responsable de la fatigue musculaire et des douleurs à apparition retardée. La bioénergétique cellulaire pionnière a brisé cette idée fausse. En réalité, le lactate n’est pas un poison cellulaire, mais le carburant énergétique dynamique le plus précieux de l’organisme : un intermédiaire glucidique rapidement transportable et une puissante molécule de signalisation (lactormone)."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Navette de lactate de cellule à cellule : les fibres glycolytiques à contraction rapide génèrent du lactate, qui est transporté via des transporteurs de monocarboxylate (MCT4) dans la circulation sanguine.",
+        "Oxydation mitochondriale : les fibres musculaires oxydatives à contraction lente adjacentes, le tissu cardiaque et les neurones absorbent le lactate via MCT1, le reconvertissant en pyruvate pour la génération d'ATP du cycle de Krebs.",
+        "Tamponnage de l'acidose : la brûlure musculaire lors d'efforts maximaux est provoquée par l'accumulation excessive d'ions hydrogène (H+) provenant de l'hydrolyse de l'ATP, et non par l'anion lactate lui-même.",
+        "Seuil de lactate 2 (MLSS) : la performance d'endurance d'élite est définie par la vitesse maximale à laquelle la production sanguine de lactate correspond à la capacité de clairance systémique."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le lactate n'est pas la cause de la fatigue musculaire ; c'est le pont métabolique qui sauve la production d'énergie lors d'un stress cellulaire de haute intensité.",
+      "cite": "Liam O'Connor, Études sur la performance sportive humaine"
+    },
+    {
+      "type": "h2",
+      "text": "Entraînement en zone 2 et densité mitochondriale"
+    },
+    {
+      "type": "p",
+      "text": "La capacité à éliminer et à oxyder le lactate est entièrement déterminée par la densité mitochondriale et le volume du lit capillaire dans les fibres à contraction lente de type I. L’entraînement d’endurance en zone 2 sous le seuil stimule la biogenèse mitochondriale sans déclencher de stress sympathique systémique, construisant ainsi le moteur métabolique qui alimente la production sportive soutenue d’élite."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
+      "title": "Santé métabolique et biomarqueurs cellulaires dans la performance",
+      "caption": "Le Dr Peter Attia et le Dr Andrew Huberman discutent de la flexibilité métabolique, de l'entraînement en zone 2 et de l'efficacité cardiovasculaire."
+    },
+    {
+      "type": "h2",
+      "text": "L'avenir moléculaire de l'endurance humaine"
+    },
+    {
+      "type": "p",
+      "text": "En suivant la télémétrie continue du lactate en temps réel et en optimisant l'expression des transporteurs de monocarboxylates grâce à des modèles d'entraînement polarisés, la science du sport moderne redéfinit les limites physiques de l'endurance humaine."
+    }
+  ],
+  "sourceHash": "253cb9bdbade380a975f9e0c1895f9f38921fdbf"
+}

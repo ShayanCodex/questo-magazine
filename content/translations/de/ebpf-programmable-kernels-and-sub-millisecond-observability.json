@@ -1,0 +1,67 @@
+{
+  "slug": "ebpf-programmable-kernels-and-sub-millisecond-observability",
+  "title": "eBPF & Modern Kernel Observability",
+  "excerpt": "Eine Monographie zur Systemprogrammierung über Bytecode-Sandboxing, In-Kernel-Paketfilterung, nicht-intrusive Tracepoints und Zero-Context-Switch-Telemetrie.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "software",
+    "ebpf",
+    "linux-kernel",
+    "observability",
+    "systems-programming"
+  ],
+  "image": "/images/articles/distributed-servers-datacenter.jpg",
+  "imageAlt": "Unternehmens-Server-Racks mit hoher Dichte und beleuchteten Glasfaser-Netzwerk-Routing-Switches",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Neuarchitektur der Linux-Kernel-Grenze"
+    },
+    {
+      "type": "p",
+      "text": "In der Vergangenheit erforderte die Erweiterung des Betriebssystemverhaltens die Erstellung komplexer Kernel-Module oder das Ertragen eines katastrophalen Benutzerraum-Kontextwechsel-Overheads. Das Aufkommen des erweiterten Berkeley Packet Filter (eBPF) hat den Linux-Kernel in ein ereignisgesteuertes, programmierbares Substrat verwandelt. Durch die Ausführung von statisch verifiziertem Bytecode direkt im Kernel-Ausführungspfad erreichen Ingenieure eine Beobachtbarkeit im Mikrosekundenbereich und eine Paketfilterung mit hohem Durchsatz, ohne Kernelbäume neu kompilieren zu müssen."
+    },
+    {
+      "type": "h2",
+      "text": "Wichtige Punkte"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sicherheitsüberprüfung: Der In-Kernel-Verifizierer erzwingt strikt begrenzte Ausführung, Speichergrenzensicherheit und Schleifenbeendigungsgarantien vor dem Laden zur Laufzeit.",
+        "Kein Kontextwechsel-Overhead: Die Telemetrieaggregation erfolgt innerhalb der Kernel-Speicherpuffer (eBPF-Ringpuffer), wodurch teure Kopiervorgänge entfallen.",
+        "Netzwerk auf Kernel-Ebene: XDP-Hooks (eXpress Data Path) ermöglichen das Verwerfen, Ändern und Weiterleiten von Paketen direkt auf der Treiberebene der Netzwerkschnittstellenkarte.",
+        "Deep Security Telemetry: Dynamische Tracepoints erfassen Systemaufrufe, Speicherzuweisungsereignisse und Änderungen im Socket-Lebenszyklus unsichtbar im Benutzerbereich."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "eBPF macht mit dem Betriebssystemkern das, was JavaScript mit dem Browser gemacht hat: Es verwandelt eine statische, monolithische Umgebung in eine programmierbare Plattform.",
+      "cite": "Kernel Systems Engineering & Network Architecture Journal"
+    },
+    {
+      "type": "h2",
+      "text": "Zero-Overhead Distributed Tracing"
+    },
+    {
+      "type": "p",
+      "text": "In Hyperscale-Cloud-Architekturen verursachen herkömmliche Sidecar-Proxys unhaltbare CPU- und Speichersteuern. Durch das Anhängen von eBPF-Programmen an Raw-Socket-Puffer können verteilte Traces und kryptografische TLS-Handshakes überprüft werden, ohne den Quellcode der Anwendung zu instrumentieren oder Latenz in die Kundenanfrageflüsse einzuführen."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Systemprogrammierung und Low-Level-Netzwerkinterna",
+      "caption": "Tiefe technische Untersuchung der Kernel-Paketverarbeitung, des Speicherlayouts und der Systemverifizierung."
+    },
+    {
+      "type": "h2",
+      "text": "Die Zukunft der Cloud-nativen Infrastruktur"
+    },
+    {
+      "type": "p",
+      "text": "Da die Cloud-Infrastruktur geringere Latenzen und eine strengere Sicherheitsisolierung erfordert, ersetzt eBPF schnell herkömmliche iptables, Netzwerk-Proxys und aufdringliche Profiling-Daemons. Es stellt den entscheidenden systemtechnischen Durchbruch moderner Serverplattformen dar."
+    }
+  ],
+  "sourceHash": "c8cb9a06b93e15c7803d881c55826e6447ca3bb5"
+}
