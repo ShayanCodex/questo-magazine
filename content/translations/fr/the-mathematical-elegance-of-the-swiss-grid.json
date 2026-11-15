@@ -1,0 +1,52 @@
+{
+  "slug": "the-mathematical-elegance-of-the-swiss-grid",
+  "title": "[fr] The Mathematical Elegance of the Swiss Grid",
+  "excerpt": "[fr] A deep analysis of Josef Müller-Brockmann's modular layout mathematics, proportional margins, and why the grid remains the foundational grammar of visual communication.",
+  "date": "2026-11-09",
+  "updated": "2026-11-13",
+  "author": "Saskia Lindqvist",
+  "tags": [
+    "typography",
+    "swiss-design",
+    "grid-systems",
+    "graphic-design"
+  ],
+  "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "[fr] Geometric modular architectural lines and typographic proportions on stark white paper",
+  "body": [
+    {
+      "type": "p",
+      "text": "[fr] The grid is not a prison; it is a canvas of liberating discipline. When Josef Müller-Brockmann and the pioneers of the Zurich School formalized the International Typographic Style in the 1950s, they sought to purge graphic design of arbitrary subjective whimsy in favor of universal clarity, mathematical harmony, and democratic readability."
+    },
+    {
+      "type": "h2",
+      "text": "[fr] Modular Arithmetic and Harmonic Proportions"
+    },
+    {
+      "type": "p",
+      "text": "[fr] At its heart, the Swiss grid relies on proportional division. A standard 12-column layout can be subdivided into halves, thirds, quarters, and sixths without ever breaking horizontal or vertical baseline rhythm. Every headline, pullquote, and caption anchors directly to an underlying mathematical coordinate system."
+    },
+    {
+      "type": "quote",
+      "text": "[fr] The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.",
+      "cite": "[fr] Josef Müller-Brockmann, Grid Systems in Graphic Design"
+    },
+    {
+      "type": "h3",
+      "text": "[fr] Essential Axioms of the Swiss Methodology"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "[fr] Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
+        "[fr] Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
+        "[fr] Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "[fr] In our contemporary digital ecosystem, where responsive layouts must adapt instantaneously across watch screens, smartphones, and ultra-wide desktop monitors, the mathematical rigor of the Swiss grid remains our most robust visual compass."
+    }
+  ],
+  "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"
+}

@@ -5,69 +5,186 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Nov 2026 23:01:30 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:16:20 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title><![CDATA[The Poetics of Concrete]]></title>
-      <link>https://questo-blog.netlify.app/articles/the-poetics-of-concrete</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-poetics-of-concrete</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Monolithic mass, tactile brutalism, and quiet volumetric light in modern architectural monuments.]]></description>
-      <author><![CDATA[Julian Mercer]]></author>
-      <category>architecture-and-space</category>
-    </item>
-    <item>
-      <title><![CDATA[Pure functional simplicity]]></title>
-      <link>https://questo-blog.netlify.app/articles/pure-functional-simplicity</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pure-functional-simplicity</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[A meditation on keeping architectures minimal and rejecting unnecessary runtime abstractions.]]></description>
-      <author><![CDATA[Elena Vance]]></author>
-      <category>engineering-and-technology</category>
-    </item>
-    <item>
-      <title><![CDATA[The geometry of silence]]></title>
-      <link>https://questo-blog.netlify.app/articles/the-geometry-of-silence</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-geometry-of-silence</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[How raw concrete, unadorned stone, and void space create sanctuaries of contemplation in an era of hyper-connected visual noise.]]></description>
-      <author><![CDATA[Mateo Silva]]></author>
-      <category>architecture-and-space</category>
-    </item>
-    <item>
-      <title><![CDATA[The grid as an instrument]]></title>
-      <link>https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Why the mathematical rigor of mid-century editorial grids remains the most powerful antidote to chaotic digital layouts.]]></description>
-      <author><![CDATA[Saskia Lindqvist]]></author>
-      <category>design-and-typography</category>
-    </item>
-    <item>
-      <title><![CDATA[Building static multilingual publishing]]></title>
-      <link>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</guid>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[How pre-rendering six distinct languages with zero runtime client fetching maximizes search crawling and fidelity.]]></description>
+      <title><![CDATA[Forex Liquidity Corridors: Central Bank Reserves, Swap Lines & Global Settlement Mechanics]]></title>
+      <link>https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An institutional macroeconomic analysis of cross-border FX liquidity pipes, Federal Reserve swap line plumbing, petro-currency diversification, and multi-currency clearing architecture.]]></description>
       <author><![CDATA[Tariq Mahmood]]></author>
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[Don't close your eyes]]></title>
-      <link>https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</guid>
+      <title><![CDATA[Acoustic Geometry: How Monastic and Modernist Sanctuaries Shape Sound and Contemplation]]></title>
+      <link>https://questo-blog.netlify.app/articles/acoustic-geometry-and-sound-in-sacred-spaces</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/acoustic-geometry-and-sound-in-sacred-spaces</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An investigation into the sacred acoustic physics of stone vaults, whispering galleries, and modernist concrete chambers that transform human speech into sublime atmospheric resonance.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[The Art of the Monograph: Cotton Rag Paper, Smyth-Sewn Binding & Tactile Publishing]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-art-of-the-monograph-and-tactile-publishing</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-art-of-the-monograph-and-tactile-publishing</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A passionate defense of heavy print monographs, archival bookbinding craft, and why physical editorial publishing remains the definitive summit of artistic permanence.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>art-and-culture</category>
+    </item>
+    <item>
+      <title><![CDATA[The Renaissance of Brutalist Web Design: Raw Semantics, Stark Typography & Anti-Corporate Honesty]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-renaissance-of-brutalist-web-design</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-renaissance-of-brutalist-web-design</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How brutalist web aesthetics, high-contrast monospace typography, and unadorned semantic HTML are staging an overdue rebellion against sterile corporate design templates.]]></description>
+      <author><![CDATA[Saskia Lindqvist]]></author>
+      <category>design-and-typography</category>
+    </item>
+    <item>
+      <title><![CDATA[Algorithmic Market Intelligence and Open Financial Data]]></title>
+      <link>https://questo-blog.netlify.app/articles/algorithmic-market-intelligence-and-open-financial-data</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/algorithmic-market-intelligence-and-open-financial-data</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How democratized tick data, client-side vector visualization, and decentralized exchange feeds are dismantling institutional market data paywalls.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Decentralized Edge Architectures: How Micro-Caches Outperform Centralized Clouds]]></title>
+      <link>https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical monograph analyzing globally distributed Anycast BGP routing, stale-while-revalidate edge workers, and why decentralized micro-caches obsolete monolithic centralized databases.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[The Architecture of Sub-Second Web Performance]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-architecture-of-sub-second-web-performance</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-architecture-of-sub-second-web-performance</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical dissection of edge CDN routing, immutable asset caching, zero-runtime static generation, and the elimination of server latency bottlenecks.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Variable Fonts and the Future of Editorial Legibility]]></title>
+      <link>https://questo-blog.netlify.app/articles/variable-fonts-and-the-future-of-editorial-legibility</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/variable-fonts-and-the-future-of-editorial-legibility</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How OpenType variation axes, dynamic optical sizing, and responsive weight modulation are revolutionizing digital magazine typography and reading comfort.]]></description>
+      <author><![CDATA[Saskia Lindqvist]]></author>
+      <category>design-and-typography</category>
+    </item>
+    <item>
+      <title><![CDATA[Spatial Minimalism and the Psychology of the Void]]></title>
+      <link>https://questo-blog.netlify.app/articles/spatial-minimalism-and-the-psychology-of-the-void</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/spatial-minimalism-and-the-psychology-of-the-void</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Exploring the restorative cognitive power of empty space, daylight choreography, and unadorned limestone sanctuaries in an era of sensory hyper-saturation.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[Monolithic Brutalism in the Twenty-First Century]]></title>
+      <link>https://questo-blog.netlify.app/articles/monolithic-brutalism-in-the-twenty-first-century</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/monolithic-brutalism-in-the-twenty-first-century</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An investigative monograph on the enduring tectonic integrity of board-marked concrete, passive thermal mass, and why permanence matters in an age of fragile construction.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[The Mathematical Elegance of the Swiss Grid]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-mathematical-elegance-of-the-swiss-grid</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-mathematical-elegance-of-the-swiss-grid</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A deep analysis of Josef Müller-Brockmann's modular layout mathematics, proportional margins, and why the grid remains the foundational grammar of visual communication.]]></description>
+      <author><![CDATA[Saskia Lindqvist]]></author>
+      <category>design-and-typography</category>
+    </item>
+    <item>
+      <title><![CDATA[Building Static Multilingual Publishing: Zero-Runtime Localization & Edge Speed]]></title>
+      <link>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</guid>
       <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[Why editorial publications are returning to monumental typography, confident scale, and cinematic visual rhythm.]]></description>
+      <description><![CDATA[How pre-rendering six distinct languages at build time with deterministic JSON payloads eliminates runtime network waterfalls and guarantees flawless global search engine indexing.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Digital Autonomy and the Minimalist Screen]]></title>
+      <link>https://questo-blog.netlify.app/articles/digital-autonomy-and-the-minimalist-screen</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/digital-autonomy-and-the-minimalist-screen</guid>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A manifesto on reclaiming human cognitive sovereignty from predatory algorithmic feeds through intentional web design, ad-free typography, and quiet digital interfaces.]]></description>
       <author><![CDATA[Elena Vance]]></author>
       <category>art-and-culture</category>
     </item>
     <item>
-      <title><![CDATA[Hope dies last]]></title>
+      <title><![CDATA[The Tactile Resurgence of Material Culture: Hand Joinery, Natural Fiber & Physical Truth]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-tactile-resurgence-of-material-culture</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-tactile-resurgence-of-material-culture</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Why traditional hand-carved stone, interlocking timber sashimono joinery, and tactile physical artifacts are experiencing a profound Renaissance in our hyper-digital screen society.]]></description>
+      <author><![CDATA[Anne Hardy]]></author>
+      <category>art-and-culture</category>
+    </item>
+    <item>
+      <title><![CDATA[Craft Over Convenience: Classical Marble, Subtractive Tectonics & Hand Persistence]]></title>
       <link>https://questo-blog.netlify.app/articles/craft-over-convenience</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/craft-over-convenience</guid>
       <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[A visual and critical exploration of classical form, enduring craftsmanship, and contemporary relevance.]]></description>
+      <description><![CDATA[A philosophical monograph on traditional subtractive sculpture, the geology of Carrara marble, and why physical human craftsmanship retains profound spiritual authority in an automated digital landscape.]]></description>
       <author><![CDATA[Anne Hardy]]></author>
+      <category>art-and-culture</category>
+    </item>
+    <item>
+      <title><![CDATA[The Poetics of Concrete: Material Memory, Aggregate Grain & Modernist Form]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-poetics-of-concrete</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-poetics-of-concrete</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A comprehensive architectural investigation into the philosophical permanence of board-marked concrete, hydraulic curing, thermal inertia, and tectonic honesty in post-war civic sanctuaries.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[The Geometry of Silence: Unadorned Stone, Acoustic Void & Spatial Therapy]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-geometry-of-silence</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-geometry-of-silence</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How contemporary minimalist architecture orchestrates daylight angles, natural stone mass, and unadorned spatial voids to create restorative psychological retreats from digital hyper-stimulation.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[The Grid as an Instrument: Proportional Ratios, Margins & Typographic Form]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-grid-as-an-instrument</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A masterclass in editorial architecture, analyzing Jan Tschichold's Golden Canon of page division, modular baseline mathematics, and how structural grids transform chaotic content into harmonic literature.]]></description>
+      <author><![CDATA[Saskia Lindqvist]]></author>
+      <category>design-and-typography</category>
+    </item>
+    <item>
+      <title><![CDATA[Pure Functional Simplicity: Immutability, Side-Effect Elimination & Architectural Grace]]></title>
+      <link>https://questo-blog.netlify.app/articles/pure-functional-simplicity</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pure-functional-simplicity</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A deep engineering dive into functional programming principles, pure functions, deterministic state models, and why immutable software pipelines eliminate whole categories of production failures.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[The Death of the Card Grid: Homogenized UI, Visual Fatigue & Asymmetric Awakening]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-death-of-the-card-grid</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A critical critique of ubiquitous 3-column card layouts, template monoculture, and how brutalist asymmetric typography is restoring vitality to digital editorial publishing.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
       <category>art-and-culture</category>
     </item>
   </channel>

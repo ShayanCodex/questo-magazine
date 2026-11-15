@@ -64,6 +64,20 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'the-grid-as-an-instrument': { categoryId: 'design-and-typography', subcategoryId: 'editorial-systems' },
   'pure-functional-simplicity': { categoryId: 'engineering-and-technology', subcategoryId: 'system-architecture' },
   'building-static-multilingual-publishing': { categoryId: 'engineering-and-technology', subcategoryId: 'static-performance' },
+  'the-poetics-of-concrete': { categoryId: 'architecture-and-space', subcategoryId: 'monuments-and-stone' },
+  'the-architecture-of-sub-second-web-performance': { categoryId: 'engineering-and-technology', subcategoryId: 'static-performance' },
+  'algorithmic-market-intelligence-and-open-financial-data': { categoryId: 'engineering-and-technology', subcategoryId: 'system-architecture' },
+  'monolithic-brutalism-in-the-twenty-first-century': { categoryId: 'architecture-and-space', subcategoryId: 'monuments-and-stone' },
+  'spatial-minimalism-and-the-psychology-of-the-void': { categoryId: 'architecture-and-space', subcategoryId: 'minimalist-design' },
+  'the-mathematical-elegance-of-the-swiss-grid': { categoryId: 'design-and-typography', subcategoryId: 'grid-theory' },
+  'variable-fonts-and-the-future-of-editorial-legibility': { categoryId: 'design-and-typography', subcategoryId: 'typography' },
+  'the-tactile-resurgence-of-material-culture': { categoryId: 'art-and-culture', subcategoryId: 'sculpture' },
+  'digital-autonomy-and-the-minimalist-screen': { categoryId: 'art-and-culture', subcategoryId: 'visual-arts' },
+  'the-renaissance-of-brutalist-web-design': { categoryId: 'design-and-typography', subcategoryId: 'editorial-systems' },
+  'decentralized-edge-architectures-and-micro-caches': { categoryId: 'engineering-and-technology', subcategoryId: 'system-architecture' },
+  'acoustic-geometry-and-sound-in-sacred-spaces': { categoryId: 'architecture-and-space', subcategoryId: 'spatial-theory' },
+  'the-art-of-the-monograph-and-tactile-publishing': { categoryId: 'art-and-culture', subcategoryId: 'visual-arts' },
+  'forex-liquidity-corridors-and-sovereign-reserves': { categoryId: 'engineering-and-technology', subcategoryId: 'system-architecture' },
 };
 
 export function getCategoryById(id: string): Category | undefined {

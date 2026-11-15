@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useCallback, useEffect } from 'react';
+import { useState, useMemo, useRef, useCallback } from 'react';
 import { useLoaderData, useSearchParams } from 'react-router-dom';
 import {
   MagnifyingGlassIcon,
@@ -10,7 +10,6 @@ import {
   DocumentTextIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
-  ArrowPathIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -34,7 +33,7 @@ interface ArticlesLoaderData {
   pathname: string;
 }
 
-const ARTICLES_PER_PAGE = 4;
+const ARTICLES_PER_PAGE = 10;
 
 export function Articles() {
   const loaderData = (useLoaderData() as ArticlesLoaderData) || {};
@@ -61,11 +60,6 @@ export function Articles() {
   const [currentPage, setCurrentPage] = useState(
     isNaN(initialPage) || initialPage < 1 ? 1 : initialPage
   );
-
-  const [paginationMode, setPaginationMode] = useState<'infinite' | 'pages'>('infinite');
-  const [visibleCount, setVisibleCount] = useState<number>(6);
-  const [isLoadingMore, setIsLoadingMore] = useState<boolean>(false);
-  const sentinelRef = useRef<HTMLDivElement>(null);
 
   const articleSectionRef = useRef<HTMLElement>(null);
 
@@ -150,41 +144,14 @@ export function Articles() {
     });
   }, [articles, searchQuery, selectedTag, selectedCategory, selectedSubcategory, sortBy]);
 
-  // Infinite Scroll IntersectionObserver
-  useEffect(() => {
-    if (paginationMode !== 'infinite') return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (
-          entries[0].isIntersecting &&
-          visibleCount < filteredArticles.length &&
-          !isLoadingMore
-        ) {
-          setIsLoadingMore(true);
-          setTimeout(() => {
-            setVisibleCount((prev) => Math.min(prev + 4, filteredArticles.length));
-            setIsLoadingMore(false);
-          }, 250);
-        }
-      },
-      { threshold: 0.1, rootMargin: '150px' }
-    );
-
-    if (sentinelRef.current) observer.observe(sentinelRef.current);
-    return () => observer.disconnect();
-  }, [paginationMode, visibleCount, filteredArticles.length, isLoadingMore]);
-
-  // Pagination calculation
+  // Pagination calculation (10 cards per page)
   const totalPages = Math.max(1, Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE));
   const safeCurrentPage = Math.min(Math.max(1, currentPage), totalPages);
 
   const paginatedArticles = useMemo(() => {
-    if (paginationMode === 'infinite') {
-      return filteredArticles.slice(0, visibleCount);
-    }
     const start = (safeCurrentPage - 1) * ARTICLES_PER_PAGE;
     return filteredArticles.slice(start, start + ARTICLES_PER_PAGE);
-  }, [filteredArticles, safeCurrentPage, paginationMode, visibleCount]);
+  }, [filteredArticles, safeCurrentPage]);
 
   const handlePageChange = (newPage: number) => {
     if (newPage < 1 || newPage > totalPages) return;
@@ -656,110 +623,56 @@ export function Articles() {
           <>
             <ArticleList articles={paginatedArticles} />
 
-            {/* Infinite Stream Mode vs Classic Numbered Pages */}
-            {paginationMode === 'infinite' ? (
-              <div className="pt-8 border-t border-editorial-border space-y-4">
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
-                    Showing {Math.min(visibleCount, filteredArticles.length)} of{' '}
-                    {filteredArticles.length} {t.articlesFound} (Infinite Stream)
-                  </span>
+            {/* Standard Numbered Pagination Controls (10 cards per page) */}
+            {totalPages > 1 && (
+              <div className="pt-8 border-t border-editorial-border flex flex-col sm:flex-row items-center justify-between gap-4">
+                <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
+                  Showing {(safeCurrentPage - 1) * ARTICLES_PER_PAGE + 1}–
+                  {Math.min(safeCurrentPage * ARTICLES_PER_PAGE, filteredArticles.length)} of{' '}
+                  {filteredArticles.length} {t.articlesFound} (Page {safeCurrentPage} of {totalPages})
+                </span>
 
+                <div className="flex items-center gap-1.5 text-xs font-sans">
+                  {/* Previous Page Button */}
                   <button
                     type="button"
-                    onClick={() => setPaginationMode('pages')}
-                    className="text-xs font-mono text-editorial-muted hover:text-editorial-text underline cursor-pointer"
+                    onClick={() => handlePageChange(safeCurrentPage - 1)}
+                    disabled={safeCurrentPage === 1}
+                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
                   >
-                    Switch to Numbered Pages
+                    <ArrowLeftIcon className="h-3.5 w-3.5 rtl:rotate-180" />
+                    <span>{t.prevPage || (isRtl ? 'التالي' : 'Previous')}</span>
+                  </button>
+
+                  {/* Page Numbers */}
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                    <button
+                      key={pageNum}
+                      type="button"
+                      onClick={() => handlePageChange(pageNum)}
+                      className={cn(
+                        'w-8 h-8 rounded-full text-xs font-sans font-medium transition-colors cursor-pointer flex items-center justify-center',
+                        pageNum === safeCurrentPage
+                          ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
+                          : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
+                      )}
+                    >
+                      {pageNum}
+                    </button>
+                  ))}
+
+                  {/* Next Page Button */}
+                  <button
+                    type="button"
+                    onClick={() => handlePageChange(safeCurrentPage + 1)}
+                    disabled={safeCurrentPage === totalPages}
+                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
+                  >
+                    <span>{t.nextPage || (isRtl ? 'السابق' : 'Next')}</span>
+                    <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180" />
                   </button>
                 </div>
-
-                {visibleCount < filteredArticles.length && (
-                  <div className="pt-2 text-center">
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setVisibleCount((prev) => Math.min(prev + 4, filteredArticles.length))
-                      }
-                      disabled={isLoadingMore}
-                      className="px-6 py-2.5 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text font-sans text-xs uppercase tracking-wider font-semibold cursor-pointer shadow-xs inline-flex items-center gap-2 transition-all hover:bg-editorial-surface-hover"
-                    >
-                      {isLoadingMore ? (
-                        <>
-                          <ArrowPathIcon className="w-4 h-4 animate-spin text-editorial-muted" />
-                          <span>Streaming Next Dispatch...</span>
-                        </>
-                      ) : (
-                        <span>Load More Stories ({filteredArticles.length - visibleCount} remaining)</span>
-                      )}
-                    </button>
-                  </div>
-                )}
-
-                {/* IntersectionObserver Sentinel */}
-                <div ref={sentinelRef} className="h-6 w-full pointer-events-none" />
               </div>
-            ) : (
-              /* Click Next Page / Pagination Controls */
-              totalPages > 1 && (
-                <div className="pt-8 border-t border-editorial-border flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
-                      Showing {(safeCurrentPage - 1) * ARTICLES_PER_PAGE + 1}–
-                      {Math.min(safeCurrentPage * ARTICLES_PER_PAGE, filteredArticles.length)} of{' '}
-                      {filteredArticles.length} {t.articlesFound} (Page {safeCurrentPage} of {totalPages})
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => setPaginationMode('infinite')}
-                      className="text-xs font-mono text-editorial-muted hover:text-editorial-text underline cursor-pointer"
-                    >
-                      Switch to Infinite Stream
-                    </button>
-                  </div>
-
-                  <div className="flex items-center gap-1.5 text-xs font-sans">
-                    {/* Previous Page Button */}
-                    <button
-                      type="button"
-                      onClick={() => handlePageChange(safeCurrentPage - 1)}
-                      disabled={safeCurrentPage === 1}
-                      className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
-                    >
-                      <ArrowLeftIcon className="h-3.5 w-3.5 rtl:rotate-180" />
-                      <span>{t.prevPage || (isRtl ? 'التالي' : 'Previous')}</span>
-                    </button>
-
-                    {/* Page Numbers */}
-                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-                      <button
-                        key={pageNum}
-                        type="button"
-                        onClick={() => handlePageChange(pageNum)}
-                        className={cn(
-                          'w-8 h-8 rounded-full text-xs font-sans font-medium transition-colors cursor-pointer flex items-center justify-center',
-                          pageNum === safeCurrentPage
-                            ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
-                            : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
-                        )}
-                      >
-                        {pageNum}
-                      </button>
-                    ))}
-
-                    {/* Next Page Button */}
-                    <button
-                      type="button"
-                      onClick={() => handlePageChange(safeCurrentPage + 1)}
-                      disabled={safeCurrentPage === totalPages}
-                      className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
-                    >
-                      <span>{t.nextPage || (isRtl ? 'السابق' : 'Next')}</span>
-                      <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180" />
-                    </button>
-                  </div>
-                </div>
-              )
             )}
           </>
         )}

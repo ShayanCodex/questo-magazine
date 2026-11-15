@@ -5,24 +5,60 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>Curated dispatches on Engineering &amp; Static Systems</description>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Nov 2026 23:01:30 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:16:20 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feeds/engineering-and-technology.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title><![CDATA[Pure functional simplicity]]></title>
-      <link>https://questo-blog.netlify.app/articles/pure-functional-simplicity</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pure-functional-simplicity</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[A meditation on keeping architectures minimal and rejecting unnecessary runtime abstractions.]]></description>
-      <author><![CDATA[Elena Vance]]></author>
+      <title><![CDATA[Forex Liquidity Corridors: Central Bank Reserves, Swap Lines & Global Settlement Mechanics]]></title>
+      <link>https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An institutional macroeconomic analysis of cross-border FX liquidity pipes, Federal Reserve swap line plumbing, petro-currency diversification, and multi-currency clearing architecture.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[Building static multilingual publishing]]></title>
+      <title><![CDATA[Algorithmic Market Intelligence and Open Financial Data]]></title>
+      <link>https://questo-blog.netlify.app/articles/algorithmic-market-intelligence-and-open-financial-data</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/algorithmic-market-intelligence-and-open-financial-data</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How democratized tick data, client-side vector visualization, and decentralized exchange feeds are dismantling institutional market data paywalls.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Decentralized Edge Architectures: How Micro-Caches Outperform Centralized Clouds]]></title>
+      <link>https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/decentralized-edge-architectures-and-micro-caches</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical monograph analyzing globally distributed Anycast BGP routing, stale-while-revalidate edge workers, and why decentralized micro-caches obsolete monolithic centralized databases.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[The Architecture of Sub-Second Web Performance]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-architecture-of-sub-second-web-performance</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-architecture-of-sub-second-web-performance</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical dissection of edge CDN routing, immutable asset caching, zero-runtime static generation, and the elimination of server latency bottlenecks.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Building Static Multilingual Publishing: Zero-Runtime Localization & Edge Speed]]></title>
       <link>https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/building-static-multilingual-publishing</guid>
       <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[How pre-rendering six distinct languages with zero runtime client fetching maximizes search crawling and fidelity.]]></description>
+      <description><![CDATA[How pre-rendering six distinct languages at build time with deterministic JSON payloads eliminates runtime network waterfalls and guarantees flawless global search engine indexing.]]></description>
       <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Pure Functional Simplicity: Immutability, Side-Effect Elimination & Architectural Grace]]></title>
+      <link>https://questo-blog.netlify.app/articles/pure-functional-simplicity</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pure-functional-simplicity</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A deep engineering dive into functional programming principles, pure functions, deterministic state models, and why immutable software pipelines eliminate whole categories of production failures.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
       <category>engineering-and-technology</category>
     </item>
   </channel>
