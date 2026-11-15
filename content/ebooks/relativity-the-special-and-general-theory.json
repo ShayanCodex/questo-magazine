@@ -4,22 +4,22 @@
   "title": "Relativity: The Special and General Theory",
   "originalTitle": "Relativity: The Special and General Theory",
   "author": "Albert Einstein",
-  "year": "1916 (1920 Lawson Translation)",
+  "year": "1916 (1920 Lawson Trans.)",
   "category": "Science & Biology",
   "subdiscipline": "Theoretical Physics",
-  "pageCount": 350,
-  "coverUrl": "https://archive.org/services/img/relativityspecia00einsrich",
+  "pageCount": 320,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10478466-L.jpg",
   "pdfUrl": "https://archive.org/download/relativityspecia00einsrich/relativityspecia00einsrich.pdf",
   "publicDomainStatus": "Verified Public Domain (Pre-1928 / Open Heritage)",
   "license": "Public Domain Mark 1.0",
   "archiveSourceUrl": "https://archive.org/details/relativityspecia00einsrich",
-  "curatedContext": "Written by Albert Einstein for general readers seeking clear insight into physics without complex mathematical tensor calculus. Einstein elucidates the invariance of the speed of light, the relativity of simultaneity, and spacetime curvature under gravitation.",
+  "curatedContext": "Einstein’s own popular exposition explaining the revolutionary physical principles of special and general relativity, the constancy of the speed of light, spacetime curvature, and gravitational fields.",
   "keyThemes": [
-    "Constancy of Light Speed",
-    "Time Dilation & Length Contraction",
-    "Equivalence Principle",
-    "Spacetime Geodesics"
+    "Spacetime Curvature",
+    "Invariance of Light Speed",
+    "Mass-Energy Equivalence ($E=mc^2$)",
+    "Gravitational Deflection"
   ],
-  "authorBio": "Albert Einstein (1879–1955) was a German-born theoretical physicist who developed the special and general theories of relativity and was awarded the 1921 Nobel Prize in Physics.",
-  "readingTimeHours": 10
+  "authorBio": "Albert Einstein (1879–1955) was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics.",
+  "readingTimeHours": 8
 }

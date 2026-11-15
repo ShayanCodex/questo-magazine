@@ -3,11 +3,13 @@ import * as DialogPrimitive from '@radix-ui/react-dialog';
 import {
   XMarkIcon,
   ArrowDownTrayIcon,
-  ArrowTopRightOnSquareIcon,
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,
   BookOpenIcon,
   ShieldCheckIcon,
+  LinkIcon,
+  CheckIcon,
+  DocumentTextIcon,
 } from '@heroicons/react/24/outline';
 import type { EBook } from '../lib/types';
 import { cn } from '../lib/utils';
@@ -20,6 +22,8 @@ export interface PdfReaderModalProps {
 
 export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProps) {
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [activeTab, setActiveTab] = useState<'document' | 'guide'>('document');
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -31,15 +35,25 @@ export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProp
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isFullscreen]);
 
-  if (!ebook) return null;
+  // Reset tab on ebook change
+  useEffect(() => {
+    setActiveTab('document');
+  }, [ebook?.slug]);
 
-  // Use archive.org standard book reader or direct PDF URL
-  // Archive.org has an interactive book reader embed: https://archive.org/embed/{identifier}
-  // And direct PDF: {ebook.pdfUrl}
-  const readerUrl = `https://archive.org/details/${ebook.identifier}?ui=embed`;
+  if (!ebook) return null;
 
   const toggleFullscreen = () => {
     setIsFullscreen((prev) => !prev);
+  };
+
+  const handleCopyUrl = async () => {
+    try {
+      await navigator.clipboard.writeText(ebook.pdfUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // fallback
+    }
   };
 
   return (
@@ -55,7 +69,7 @@ export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProp
           )}
         >
           {/* Reader Top Command Bar */}
-          <div className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-editorial-border bg-editorial-bg/95 backdrop-blur-xs shrink-0 gap-3">
+          <div className="flex items-center justify-between px-4 sm:px-6 py-2.5 border-b border-editorial-border bg-editorial-bg/95 backdrop-blur-xs shrink-0 gap-3">
             <div className="flex items-center gap-2.5 min-w-0">
               <div className="w-8 h-8 rounded-full bg-editorial-surface-subtle border border-editorial-border flex items-center justify-center shrink-0">
                 <BookOpenIcon className="h-4 w-4 text-editorial-text" />
@@ -77,35 +91,79 @@ export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProp
               </div>
             </div>
 
+            {/* View Mode Toggle (Document vs Study Guide) */}
+            <div className="hidden md:flex items-center bg-editorial-surface-subtle p-0.5 rounded-lg border border-editorial-border text-xs font-sans">
+              <button
+                type="button"
+                onClick={() => setActiveTab('document')}
+                className={cn(
+                  'px-3 py-1 rounded-md font-medium transition-colors cursor-pointer flex items-center gap-1.5',
+                  activeTab === 'document'
+                    ? 'bg-editorial-text text-editorial-bg shadow-2xs'
+                    : 'text-editorial-muted hover:text-editorial-text'
+                )}
+              >
+                <BookOpenIcon className="h-3.5 w-3.5" />
+                <span>Document Reader</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveTab('guide')}
+                className={cn(
+                  'px-3 py-1 rounded-md font-medium transition-colors cursor-pointer flex items-center gap-1.5',
+                  activeTab === 'guide'
+                    ? 'bg-editorial-text text-editorial-bg shadow-2xs'
+                    : 'text-editorial-muted hover:text-editorial-text'
+                )}
+              >
+                <DocumentTextIcon className="h-3.5 w-3.5" />
+                <span>Historical Context</span>
+              </button>
+            </div>
+
             {/* Action Suite */}
             <div className="flex items-center gap-1.5 shrink-0">
+              {/* Copy Direct URL */}
+              <button
+                type="button"
+                onClick={handleCopyUrl}
+                className={cn(
+                  'inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border text-xs font-sans font-medium transition-colors cursor-pointer',
+                  copied
+                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-400'
+                    : 'border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface'
+                )}
+                title="Copy direct PDF URL"
+              >
+                {copied ? (
+                  <>
+                    <CheckIcon className="h-3.5 w-3.5 text-emerald-400" />
+                    <span>Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <LinkIcon className="h-3.5 w-3.5" />
+                    <span className="hidden sm:inline">Copy URL</span>
+                  </>
+                )}
+              </button>
+
+              {/* Download PDF */}
               <a
                 href={ebook.pdfUrl}
                 download
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-editorial-border hover:border-editorial-text text-xs font-sans font-medium text-editorial-text hover:bg-editorial-surface transition-colors"
-                title="Download original PDF"
+                className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-editorial-border hover:border-editorial-text text-xs font-sans font-medium text-editorial-text hover:bg-editorial-surface transition-colors"
+                title="Download original PDF document"
               >
                 <ArrowDownTrayIcon className="h-3.5 w-3.5" />
-                <span>PDF ({ebook.pageCount}p)</span>
+                <span>Download PDF</span>
               </a>
 
-              <a
-                href={ebook.archiveSourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-editorial-border hover:border-editorial-text text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface transition-colors"
-                title="View on Internet Archive source"
-              >
-                <span>Archive Source</span>
-                <ArrowTopRightOnSquareIcon className="h-3.5 w-3.5" />
-              </a>
-
+              {/* Fullscreen Toggle */}
               <button
                 type="button"
                 onClick={toggleFullscreen}
-                className="p-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface transition-colors cursor-pointer"
+                className="p-1.5 rounded-lg border border-editorial-border text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface transition-colors cursor-pointer"
                 title={isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
                 aria-label={isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
               >
@@ -116,10 +174,11 @@ export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProp
                 )}
               </button>
 
+              {/* Close */}
               <button
                 type="button"
                 onClick={() => onOpenChange(false)}
-                className="p-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface transition-colors cursor-pointer"
+                className="p-1.5 rounded-lg border border-editorial-border text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface transition-colors cursor-pointer"
                 title="Close reader"
                 aria-label="Close reader"
               >
@@ -129,14 +188,82 @@ export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProp
           </div>
 
           {/* Interactive Document Viewer Frame */}
-          <div className="flex-1 w-full h-full bg-neutral-950 relative overflow-hidden">
-            <iframe
-              src={readerUrl}
-              title={`${ebook.title} Interactive Reader`}
-              className="w-full h-full border-0"
-              allow="fullscreen"
-              loading="lazy"
-            />
+          <div className="flex-1 w-full h-full bg-neutral-950 relative overflow-hidden flex flex-col">
+            {activeTab === 'document' ? (
+              /* Direct In-Website Native Document Reader - Zero Third-Party Chrome */
+              <div className="w-full h-full flex flex-col">
+                <iframe
+                  src={`${ebook.pdfUrl}#toolbar=1&navpanes=1`}
+                  title={`${ebook.title} Original Scanned Edition`}
+                  className="w-full h-full border-0 bg-neutral-900"
+                  allow="fullscreen"
+                  loading="lazy"
+                />
+              </div>
+            ) : (
+              /* High-Trust Editorial Study Guide & Philosophical Treatise */
+              <div className="w-full h-full overflow-y-auto p-6 sm:p-10 max-w-4xl mx-auto space-y-8 bg-editorial-bg text-editorial-text">
+                <div className="space-y-3 border-b border-editorial-border pb-6">
+                  <span className="text-xs font-sans font-semibold uppercase tracking-wider text-accent">
+                    {ebook.category} • {ebook.subdiscipline}
+                  </span>
+                  <h2 className="font-display font-bold text-2xl sm:text-3xl text-editorial-text">
+                    {ebook.title}
+                  </h2>
+                  <p className="text-sm font-sans text-editorial-muted">
+                    Authored by <strong className="text-editorial-text">{ebook.author}</strong> ({ebook.year})
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="font-display font-semibold text-lg text-editorial-text">
+                    Historical Context & Significance
+                  </h3>
+                  <p className="font-serif text-base text-editorial-text/90 leading-relaxed">
+                    {ebook.curatedContext}
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="font-display font-semibold text-lg text-editorial-text">
+                    Central Pillars & Concepts
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {ebook.keyThemes.map((theme, idx) => (
+                      <div
+                        key={theme}
+                        className="p-3.5 rounded-lg border border-editorial-border bg-editorial-surface text-sm font-sans flex items-start gap-2.5"
+                      >
+                        <span className="font-mono text-xs text-editorial-muted">
+                          0{idx + 1}
+                        </span>
+                        <span className="font-medium text-editorial-text">{theme}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="p-5 rounded-xl border border-editorial-border bg-editorial-surface-subtle space-y-2">
+                  <h4 className="font-display font-bold text-sm uppercase tracking-wider text-editorial-muted">
+                    About the Original Author: {ebook.author}
+                  </h4>
+                  <p className="font-serif text-sm text-editorial-text leading-relaxed">
+                    {ebook.authorBio}
+                  </p>
+                </div>
+
+                <div className="pt-4 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab('document')}
+                    className="px-4 py-2 rounded-lg bg-editorial-text text-editorial-bg text-xs font-sans font-semibold hover:opacity-90 transition-opacity cursor-pointer flex items-center gap-2"
+                  >
+                    <BookOpenIcon className="h-4 w-4" />
+                    <span>Return to Document Reader</span>
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </DialogPrimitive.Content>
       </DialogPrimitive.Portal>

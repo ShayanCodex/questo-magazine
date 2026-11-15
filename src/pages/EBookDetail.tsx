@@ -10,6 +10,8 @@ import {
   UserIcon,
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,
+  LinkIcon,
+  CheckIcon,
 } from '@heroicons/react/24/outline';
 import type { EBook } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -27,6 +29,7 @@ export function EBookDetail() {
   const { pathname } = useLocation();
   const { t, localePath } = useLanguage();
   const [embedFullscreen, setEmbedFullscreen] = useState(false);
+  const [copiedLink, setCopiedLink] = useState(false);
 
   const ebook = useMemo(() => {
     return EBOOKS_LIST.find((b) => b.slug === slug);
@@ -47,7 +50,17 @@ export function EBookDetail() {
     { label: ebook.title },
   ];
 
-  const readerEmbedUrl = `https://archive.org/details/${ebook.identifier}?ui=embed`;
+  const readerEmbedUrl = `${ebook.pdfUrl}#toolbar=1&navpanes=1`;
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(ebook.pdfUrl);
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2000);
+    } catch {
+      // fallback
+    }
+  };
 
   // AdSense-compliant JSON-LD Book Schema
   const bookJsonLd = {
@@ -150,6 +163,29 @@ export function EBookDetail() {
                 <ArrowDownTrayIcon className="h-4 w-4" />
                 <span>Download Scanned PDF</span>
               </a>
+
+              <button
+                type="button"
+                onClick={handleCopyLink}
+                className={cn(
+                  'w-full inline-flex items-center justify-center gap-2 py-2 px-3 rounded-lg border text-xs font-sans font-medium transition-colors cursor-pointer',
+                  copiedLink
+                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-400'
+                    : 'border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
+                )}
+              >
+                {copiedLink ? (
+                  <>
+                    <CheckIcon className="h-3.5 w-3.5 text-emerald-400" />
+                    <span>Direct PDF URL Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <LinkIcon className="h-3.5 w-3.5" />
+                    <span>Copy Direct PDF Link</span>
+                  </>
+                )}
+              </button>
 
               <a
                 href={ebook.archiveSourceUrl}

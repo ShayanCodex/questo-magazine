@@ -1,25 +1,25 @@
 {
   "slug": "the-ten-books-on-architecture-de-architectura",
   "identifier": "tenbooksonarchit00vitruoft",
-  "title": "The Ten Books on Architecture (De Architectura)",
-  "originalTitle": "The Ten Books on Architecture (De Architectura)",
+  "title": "The Ten Books on Architecture",
+  "originalTitle": "The Ten Books on Architecture",
   "author": "Vitruvius Pollio",
-  "year": "15 BC (1914 Harvard Ed.)",
+  "year": "c. 15 BC (1914 Harvard Ed.)",
   "category": "Architecture & Space",
   "subdiscipline": "Classical Architectural Theory",
-  "pageCount": 350,
-  "coverUrl": "https://archive.org/services/img/tenbooksonarchit00vitruoft",
+  "pageCount": 320,
+  "coverUrl": "https://covers.openlibrary.org/b/id/345485-L.jpg",
   "pdfUrl": "https://archive.org/download/tenbooksonarchit00vitruoft/tenbooksonarchit00vitruoft.pdf",
   "publicDomainStatus": "Verified Public Domain (Pre-1928 / Open Heritage)",
   "license": "Public Domain Mark 1.0",
   "archiveSourceUrl": "https://archive.org/details/tenbooksonarchit00vitruoft",
-  "curatedContext": "The only surviving comprehensive treatise on architecture from Greco-Roman antiquity. Vitruvius defines the eternal triad of structural design—firmitas (durability), utilitas (utility), and venustas (beauty)—while codifying orders, symmetry, and acoustic space planning.",
+  "curatedContext": "The sole surviving architectural treatise from classical antiquity, Vitruvius formulated the perennial triad of building design: firmitas (durability), utilitas (utility), and venustas (beauty). His proportional canons inspired Renaissance masters from Brunelleschi to Da Vinci.",
   "keyThemes": [
     "The Vitruvian Triad",
-    "Geometric Proportion & Human Scale",
-    "Hydraulic & Materials Engineering",
+    "Anthropomorphic Proportion",
+    "Material Science of Pozzolana",
     "Acoustic Theatre Design"
   ],
-  "authorBio": "Marcus Vitruvius Pollio (c. 80–15 BC) was a Roman civil engineer, military architect under Julius Caesar, and author whose principles inspired Renaissance masters from Brunelleschi to Palladio.",
-  "readingTimeHours": 10
+  "authorBio": "Marcus Vitruvius Pollio (c. 80–15 BC) was a Roman civil engineer and military architect under Julius Caesar and Augustus Caesar.",
+  "readingTimeHours": 8
 }

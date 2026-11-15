@@ -1,25 +1,25 @@
 {
   "slug": "on-the-origin-of-species",
-  "identifier": "originofspecies00darwrich",
+  "identifier": "onoriginofspecie00darw",
   "title": "On the Origin of Species",
   "originalTitle": "On the Origin of Species",
   "author": "Charles Darwin",
-  "year": "1859 (6th Ed.)",
+  "year": "1859 (1st London Ed.)",
   "category": "Science & Biology",
   "subdiscipline": "Evolutionary Biology",
-  "pageCount": 350,
-  "coverUrl": "https://archive.org/services/img/originofspecies00darwrich",
-  "pdfUrl": "https://archive.org/download/originofspecies00darwrich/originofspecies00darwrich.pdf",
+  "pageCount": 320,
+  "coverUrl": "https://covers.openlibrary.org/b/id/7153600-L.jpg",
+  "pdfUrl": "https://archive.org/download/onoriginofspecie00darw/onoriginofspecie00darw.pdf",
   "publicDomainStatus": "Verified Public Domain (Pre-1928 / Open Heritage)",
   "license": "Public Domain Mark 1.0",
-  "archiveSourceUrl": "https://archive.org/details/originofspecies00darwrich",
-  "curatedContext": "One of the most consequential scientific works ever printed. Darwin marshals decades of empirical zoological and geological observations from HMS Beagle to demonstrate that natural selection operates as the primary mechanism driving biodiversity.",
+  "archiveSourceUrl": "https://archive.org/details/onoriginofspecie00darw",
+  "curatedContext": "Darwin’s groundbreaking scientific exposition introduced the mechanism of natural selection, demonstrating how biodiversity branches from common ancestors across geological epochs without teleological design.",
   "keyThemes": [
-    "Descent with Modification",
-    "Natural Selection & Variation",
+    "Natural Selection",
     "Struggle for Existence",
-    "Biogeographical Distribution"
+    "Variation Under Domestication",
+    "Tree of Life Phylogeny"
   ],
-  "authorBio": "Charles Darwin (1809–1882) was an English naturalist and geologist whose theory of evolution by natural selection fundamentally altered our understanding of terrestrial life.",
-  "readingTimeHours": 10
+  "authorBio": "Charles Robert Darwin (1809–1882) was an English naturalist, geologist, and biologist widely recognized for founding modern evolutionary science.",
+  "readingTimeHours": 8
 }
