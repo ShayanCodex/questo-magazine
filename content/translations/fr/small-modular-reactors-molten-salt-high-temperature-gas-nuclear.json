@@ -1,6 +1,6 @@
 {
   "slug": "small-modular-reactors-molten-salt-high-temperature-gas-nuclear",
-  "title": "Petits réacteurs nucléaires modulaires et systèmes de gaz à haute température",
+  "title": "Petits réacteurs nucléaires modulaires",
   "excerpt": "Une monographie d'investigation sur l'ingénierie énergétique sur les microsphères de combustible TRISO, la thermodynamique de sécurité passive, les boucles de liquide de refroidissement à sels fondus et la décarbonisation de la charge de base industrielle lourde.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
@@ -59,7 +59,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/Uj_i3q6K31c",
+      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
       "title": "Explication des petits réacteurs modulaires : physique, fabrication modulaire et économie des réseaux",
       "caption": "Une évaluation technique approfondie de la normalisation des usines SMR, de la sécurité du confinement passif et de l'intégration de la charge de base du coût actualisé de l'énergie (LCOE)."
     },
@@ -83,11 +83,11 @@
       "type": "ul",
       "items": [
         "Sécurité passive inhérente : la dissipation thermique par convection naturelle supprime les dépendances à l'égard de l'alimentation CA hors site ou des générateurs de secours diesel.",
-        "Permanence du carburant TRISO : la micro-encapsulation en céramique de carbure de silicium élimine les mécanismes de fusion du cœur jusqu'à des températures extrêmes.",
+        "Permanence du carburant TRISO : la micro-encapsulation céramique en carbure de silicium élimine les mécanismes de fusion du cœur jusqu'à des températures extrêmes.",
         "Chaleur de processus industriel : la production à haute température (700°C à 950°C) permet la décarbonation directe des usines chimiques, des carburants synthétiques et de la fabrication de l'acier.",
         "Économie de l'usine modulaire : le passage du génie civil sur site à des chaînes d'assemblage standardisées en usine réduit considérablement les délais de construction et les coûts de financement."
       ]
     }
   ],
-  "sourceHash": "04baaaf2d8731e9feeeb8dd670c2d0b57b33d1df"
+  "sourceHash": "1aa34d18b61eada65d1a19082df3dd5957faf87b"
 }

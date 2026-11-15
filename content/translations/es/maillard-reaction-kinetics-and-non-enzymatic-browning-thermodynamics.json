@@ -1,7 +1,7 @@
 {
   "slug": "maillard-reaction-kinetics-and-non-enzymatic-browning-thermodynamics",
-  "title": "Cinética de la reacción de Maillard y pardeamiento no enzimático",
-  "excerpt": "Un examen químico de la condensación de aminoácidos y azúcares reductores, los reordenamientos de Amadori, la degradación de Strecker y la creación de sabores culinarios.",
+  "title": "Termodinámica de la reacción de Maillard",
+  "excerpt": "Un examen químico de los aminoácidos y la condensación de azúcares reductores, los reordenamientos de Amadori, la degradación de Strecker y la creación de sabores culinarios.",
   "date": "2026-11-15",
   "author": "Chef Alexandre Dumas",
   "tags": [
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/FwFvH_ZfBcw",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
       "title": "La ciencia de la reacción de Maillard y la termodinámica de Browning",
       "caption": "Análisis químico detallado de aminoácidos, azúcares reductores, aldehídos de Strecker y compuestos de sabor heterocíclicos."
     },
@@ -63,5 +63,5 @@
       "text": "Elevar el pH de la superficie utilizando tampones alcalinos (como el bicarbonato de sodio) desprotona los grupos amina de los aminoácidos, aumentando su nucleofilicidad y acelerando drásticamente la cinética de reacción a temperaturas más bajas sin cocinar demasiado el interior."
     }
   ],
-  "sourceHash": "01a48713bb2a56cec071b82f9fd182ee2354d4cd"
+  "sourceHash": "c6c53fadf6a9f6a0d846319573d36f3d56e66b56"
 }

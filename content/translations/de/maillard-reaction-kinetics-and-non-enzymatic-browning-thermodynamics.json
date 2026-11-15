@@ -1,6 +1,6 @@
 {
   "slug": "maillard-reaction-kinetics-and-non-enzymatic-browning-thermodynamics",
-  "title": "Maillard-Reaktionskinetik und nicht-enzymatische Bräunung",
+  "title": "Thermodynamik der Maillard-Reaktion",
   "excerpt": "Eine chemische Untersuchung der Aminosäure- und reduzierenden Zuckerkondensation, Amadori-Umlagerungen, Strecker-Abbau und kulinarische Geschmacksbildung.",
   "date": "2026-11-15",
   "author": "Chef Alexandre Dumas",
@@ -37,7 +37,7 @@
     },
     {
       "type": "quote",
-      "text": "Kochen ist angewandte Thermodynamik. Die Beherrschung von Wärme, Oberflächenhydratation und Oberflächen-pH ist nichts weniger als die bewusste Beschleunigung der Maillard-Kinetik.",
+      "text": "Kochen ist angewandte Thermodynamik. Die Beherrschung von Wärme, Oberflächenfeuchtigkeit und Oberflächen-pH ist nichts weniger als die bewusste Beschleunigung der Maillard-Kinetik.",
       "cite": "Modernist Culinary Science Journal"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/FwFvH_ZfBcw",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
       "title": "Die Wissenschaft der Maillard-Reaktion und der Browning-Thermodynamik",
       "caption": "Detaillierte lebensmittelchemische Analyse von Aminosäuren, reduzierenden Zuckern, Strecker-Aldehyden und heterozyklischen Aromastoffen."
     },
@@ -63,5 +63,5 @@
       "text": "Durch die Erhöhung des pH-Werts an der Oberfläche mithilfe von alkalischen Puffern (z. B. Natriumbicarbonat) werden Aminosäure-Aminogruppen deprotoniert, was deren Nukleophilie erhöht und die Reaktionskinetik bei niedrigeren Temperaturen dramatisch beschleunigt, ohne dass das Innere zu sehr erhitzt wird."
     }
   ],
-  "sourceHash": "01a48713bb2a56cec071b82f9fd182ee2354d4cd"
+  "sourceHash": "c6c53fadf6a9f6a0d846319573d36f3d56e66b56"
 }

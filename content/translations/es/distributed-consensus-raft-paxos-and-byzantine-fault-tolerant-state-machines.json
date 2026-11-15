@@ -1,7 +1,7 @@
 {
   "slug": "distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines",
-  "title": "Consenso distribuido: Raft, Paxos y máquinas de estado bizantinas",
-  "excerpt": "Un tratado de ingeniería sobre teoría de máquinas de estados replicadas, intersecciones de quórum, protocolos de latidos de elección de líderes y seguridad del consenso BFT.",
+  "title": "Consenso distribuido: Raft & Paxos",
+  "excerpt": "Un tratado de ingeniería sobre la teoría de máquinas de estados replicadas, intersecciones de quórum, protocolos de latidos para la elección de líderes y seguridad del consenso BFT.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -46,11 +46,11 @@
     },
     {
       "type": "p",
-      "text": "Raft aplica dos invariantes críticos: si dos entradas en registros diferentes tienen el mismo índice y término, almacenan el mismo comando; Además, si dos entradas coinciden, todas las entradas anteriores en sus registros son idénticas. Cuando un líder electo establece latidos, la resolución de conflictos de los seguidores trunca continuamente las entradas divergentes no comprometidas."
+      "text": "Raft aplica dos invariantes críticos: si dos entradas en registros diferentes tienen el mismo índice y término, almacenan el mismo comando; además, si dos entradas coinciden, todas las entradas anteriores en sus registros son idénticas. Cuando un líder electo establece latidos, la resolución de conflictos de los seguidores trunca continuamente las entradas divergentes no comprometidas."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/vYp4c7o980U",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
       "title": "Sistemas distribuidos: algoritmo de consenso de Raft en 20 minutos",
       "caption": "Recorrido visual de la elección de líder, contadores de términos, cronómetros de elecciones aleatorios, replicación de registros y recuperación de particiones de red en clústeres de Raft."
     },
@@ -63,5 +63,5 @@
       "text": "Los libros de contabilidad federados modernos reemplazan las suposiciones de fallas simples con votos firmados criptográficamente y protocolos de cambio de vista (por ejemplo, PBFT, Tendermint, HotStuff), limitando la latencia de la canalización a una complejidad de comunicación $O(N)$ bajo una ejecución optimista."
     }
   ],
-  "sourceHash": "7e82f7234fb2382d2b90b72e7d6695e670bbfb18"
+  "sourceHash": "6503f89b1d9f5c613ba4508051fe52bc20a050d8"
 }

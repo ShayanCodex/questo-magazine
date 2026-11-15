@@ -1,6 +1,6 @@
 {
   "slug": "distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines",
-  "title": "Consensus distribué : Raft, Paxos et Byzantine State Machines",
+  "title": "Consensus distribué : Raft & Paxos",
   "excerpt": "Un traité d'ingénierie sur la théorie des machines à états répliquées, les intersections de quorum, les protocoles de battement de cœur pour l'élection des dirigeants et la sécurité du consensus BFT.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/vYp4c7o980U",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
       "title": "Systèmes distribués : algorithme de consensus Raft en 20 minutes",
       "caption": "Présentation visuelle de l'élection du leader, des compteurs de mandats, des minuteries d'élection aléatoires, de la réplication des journaux et de la récupération des partitions réseau dans les clusters Raft."
     },
@@ -63,5 +63,5 @@
       "text": "Les registres fédérés modernes remplacent les simples hypothèses de crash par des votes signés cryptographiquement et des protocoles de changement de vue (par exemple, PBFT, Tendermint, HotStuff), limitant la latence du pipeline à la complexité de communication $O(N)$ dans le cadre d'une exécution optimiste."
     }
   ],
-  "sourceHash": "7e82f7234fb2382d2b90b72e7d6695e670bbfb18"
+  "sourceHash": "6503f89b1d9f5c613ba4508051fe52bc20a050d8"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "crispr-cas12-base-editing-and-in-vivo-epigenetic-therapeutics",
-  "title": "CRISPR-Cas12 y edición de bases de precisión en medicina in-vivo",
+  "title": "CRISPR-Cas12 y edición de bases de precisión",
   "excerpt": "Una monografía sobre genética molecular y terapéutica celular que analiza la edición de bases de citosina y adenina de un solo nucleótido, la cinética de escisión colateral y los vectores de administración de nanopartículas lipídicas.",
   "date": "2026-11-15",
   "author": "Dr. Aris Thorne",
@@ -30,7 +30,7 @@
     },
     {
       "type": "p",
-      "text": "Los editores de bases operan a través de un complejo macromolecular multidominio. Una nickasa Cas9 catalíticamente deteriorada (D10A) crea una mella monocatenaria precisa en la cadena de ADN no editada, dirigiendo la maquinaria endógena de reparación de desajustes de la célula para copiar la cadena editada como plantilla. Atada a esta nickasa hay una enzima citidina o adenosina desaminasa evolucionada:"
+      "text": "Los editores de bases operan a través de un complejo macromolecular multidominio. Una nickasa Cas9 catalíticamente alterada (D10A) crea una mella monocatenaria precisa en la cadena de ADN no editada, dirigiendo la maquinaria endógena de reparación de desajustes de la célula para copiar la cadena editada como plantilla. Atada a esta nickasa hay una enzima citidina o adenosina desaminasa evolucionada:"
     },
     {
       "type": "p",
@@ -47,7 +47,7 @@
     },
     {
       "type": "p",
-      "text": "A diferencia de Cas9, que requiere un motivo adyacente protoespaciador (PAM) rico en G (5'-NGG-3'), las nucleasas Cas12 reconocen motivos ricos en T (5'-TTTV-3') y generan salientes pegajosos escalonados de cinco nucleótidos en lugar de cortes contundentes. Este perfil bioquímico distintivo expande los loci genómicos objetivo a través de regiones promotoras no codificantes ricas en AT y potenciadores reguladores."
+      "text": "A diferencia de Cas9, que requiere un motivo adyacente protoespaciador (PAM) rico en G (5'-NGG-3'), las nucleasas Cas12 reconocen motivos ricos en T (5'-TTTV-3') y generan salientes pegajosos escalonados de cinco nucleótidos en lugar de cortes contundentes. Este perfil bioquímico distintivo expande los loci genómicos seleccionables a través de regiones promotoras no codificantes ricas en AT y potenciadores reguladores."
     },
     {
       "type": "p",
@@ -89,5 +89,5 @@
       ]
     }
   ],
-  "sourceHash": "65f04601e99cf8c006d3d7e281ecdfce7ff530c9"
+  "sourceHash": "a9c011fdde1f0d4f9fad58fea25cf9d6b42c68b3"
 }

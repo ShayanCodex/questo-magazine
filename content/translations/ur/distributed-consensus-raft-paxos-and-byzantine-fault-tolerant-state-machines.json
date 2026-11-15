@@ -1,7 +1,7 @@
 {
   "slug": "distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines",
-  "title": "تقسیم شدہ اتفاق رائے: Raft, Paxos & Byzantine State Machines",
-  "excerpt": "نقل شدہ ریاستی مشین تھیوری، کورم انٹرسیکشنز، لیڈر الیکشن ہارٹ بیٹ پروٹوکول، اور BFT اتفاق رائے کی حفاظت پر ایک انجینئرنگ کا مقالہ۔",
+  "title": "تقسیم شدہ اتفاق رائے: Raft & Paxos",
+  "excerpt": "نقل شدہ ریاستی مشین تھیوری، کورم انٹرسیکشنز، لیڈر الیکشن ہارٹ بیٹ پروٹوکول، اور BFT اتفاق رائے کی حفاظت پر ایک انجینئرنگ مقالہ۔",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/vYp4c7o980U",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
       "title": "تقسیم شدہ نظام: 20 منٹ میں رافٹ کننسنس الگورتھم",
       "caption": "رافٹ کلسٹرز میں لیڈر الیکشن، ٹرم کاؤنٹرز، بے ترتیب الیکشن ٹائمرز، لاگ ریپلیکیشن، اور نیٹ ورک پارٹیشن ریکوری کا بصری واک تھرو۔"
     },
@@ -63,5 +63,5 @@
       "text": "جدید فیڈریٹڈ لیجرز سادہ کریش مفروضوں کو خفیہ طور پر دستخط شدہ ووٹوں اور ویو چینج پروٹوکولز (جیسے PBFT، Tendermint، HotStuff) سے بدل دیتے ہیں، امید پر مبنی عملدرآمد کے تحت پائپ لائن کی تاخیر کو $O(N)$ تک محدود کرتے ہیں۔"
     }
   ],
-  "sourceHash": "7e82f7234fb2382d2b90b72e7d6695e670bbfb18"
+  "sourceHash": "6503f89b1d9f5c613ba4508051fe52bc20a050d8"
 }

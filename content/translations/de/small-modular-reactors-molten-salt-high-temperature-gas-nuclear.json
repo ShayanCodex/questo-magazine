@@ -1,6 +1,6 @@
 {
   "slug": "small-modular-reactors-molten-salt-high-temperature-gas-nuclear",
-  "title": "Kleine modulare Kernreaktoren und Hochtemperatur-Gassysteme",
+  "title": "Kleine modulare Kernreaktoren",
   "excerpt": "Eine investigative energietechnische Monographie über TRISO-Brennstoffmikrosphären, passive Sicherheitsthermodynamik, Kühlmittelkreisläufe mit geschmolzenem Salz und die Dekarbonisierung der schweren industriellen Grundlast.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
@@ -34,7 +34,7 @@
     },
     {
       "type": "p",
-      "text": "Diese nanoskalige strukturelle Eindämmung ermöglicht es TRISO-Brennstoff, Betriebstemperaturen von über 1.600 Grad Celsius ohne strukturellen Abbau oder Freisetzung von Spaltprodukten standzuhalten. Selbst im theoretisch katastrophalen Fall eines vollständigen Kühlmittelverlusts können TRISO-Partikel nicht schmelzen, wodurch der Kraftstoff vor Umweltverschmutzung geschützt wird."
+      "text": "Diese nanoskalige strukturelle Eindämmung ermöglicht es TRISO-Brennstoff, Betriebstemperaturen von über 1.600 Grad Celsius ohne strukturellen Abbau oder Freisetzung von Spaltprodukten standzuhalten. Selbst im theoretisch katastrophalen Fall eines vollständigen Kühlmittelverlusts können TRISO-Partikel nicht schmelzen, wodurch der Kraftstoff vor Umweltverschmutzung geschützt ist."
     },
     {
       "type": "quote",
@@ -59,7 +59,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/Uj_i3q6K31c",
+      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
       "title": "Kleine modulare Reaktoren erklärt: Physik, modulare Fertigung und Netzökonomie",
       "caption": "Eine gründliche technische Bewertung der SMR-Fabrikstandardisierung, der passiven Containment-Sicherheit und der Grundlastintegration der Levelized Cost of Energy (LCOE)."
     },
@@ -89,5 +89,5 @@
       ]
     }
   ],
-  "sourceHash": "04baaaf2d8731e9feeeb8dd670c2d0b57b33d1df"
+  "sourceHash": "1aa34d18b61eada65d1a19082df3dd5957faf87b"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "hypertrophy-mechanotransduction-and-myofibrillar-protein-synthesis",
-  "title": "Mécanotransduction et synthèse des protéines myofibrillaires dans l'hypertrophie",
-  "excerpt": "Une analyse moléculaire de la physiologie de l'exercice des adhérences focales costamères, de l'activation de mTORC1, de la biogenèse des ribosomes et de la tension mécanique.",
+  "title": "Mécanotransduction et hypertrophie",
+  "excerpt": "Une analyse physiologique moléculaire de l'exercice des adhérences focales costamères, de l'activation de mTORC1, de la biogenèse des ribosomes et de la tension mécanique.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/5_s1W0M_vEU",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
       "title": "Les mécanismes cellulaires de l'hypertrophie musculaire et de la synthèse des protéines",
       "caption": "Cours détaillé de biologie moléculaire détaillant l'activation de mTORC1, le don de cellules satellites et les voies de mécanotransduction dans les fibres musculaires humaines."
     },
@@ -63,5 +63,5 @@
       "text": "À mesure que les fibres musculaires se développent au-delà de leur plafond de domaine myonucléaire, les cellules satellites Pax7+ résidentes subissent une division asymétrique et donnent de nouveaux noyaux pour maintenir la transcription à travers les myofibres hyper-expansées, empêchant ainsi l'épuisement synthétique dans les adaptations de force d'élite."
     }
   ],
-  "sourceHash": "be8b84f8438aca4478075cfe7cb4caf8ed304d14"
+  "sourceHash": "abd62238f19452b2352ffa839812681301a0bac4"
 }

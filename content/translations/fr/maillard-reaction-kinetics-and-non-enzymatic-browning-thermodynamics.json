@@ -1,6 +1,6 @@
 {
   "slug": "maillard-reaction-kinetics-and-non-enzymatic-browning-thermodynamics",
-  "title": "Cinétique de réaction de Maillard et brunissement non enzymatique",
+  "title": "Thermodynamique de la réaction de Maillard",
   "excerpt": "Un examen chimique de la condensation des acides aminés et des sucres réducteurs, des réarrangements d'Amadori, de la dégradation de Strecker et de la création de saveurs culinaires.",
   "date": "2026-11-15",
   "author": "Chef Alexandre Dumas",
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/FwFvH_ZfBcw",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
       "title": "La science de la réaction de Maillard et de la thermodynamique de brunissement",
       "caption": "Analyse détaillée de la chimie alimentaire des acides aminés, des sucres réducteurs, des aldéhydes de Strecker et des composés aromatiques hétérocycliques."
     },
@@ -63,5 +63,5 @@
       "text": "L'élévation du pH de surface à l'aide de tampons alcalins (tels que le bicarbonate de sodium) déprotonne les groupes amines d'acides aminés, augmentant leur nucléophilie et accélérant considérablement la cinétique de réaction à des températures plus basses sans trop cuire l'intérieur."
     }
   ],
-  "sourceHash": "01a48713bb2a56cec071b82f9fd182ee2354d4cd"
+  "sourceHash": "c6c53fadf6a9f6a0d846319573d36f3d56e66b56"
 }

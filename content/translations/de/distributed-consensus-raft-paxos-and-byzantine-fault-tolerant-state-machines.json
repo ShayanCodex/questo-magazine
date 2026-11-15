@@ -1,7 +1,7 @@
 {
   "slug": "distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines",
-  "title": "Verteilter Konsens: Floß, Paxos und byzantinische Staatsmaschinen",
-  "excerpt": "Eine technische Abhandlung über die Theorie der replizierten Staatsmaschinen, Quorum-Schnittpunkte, Heartbeat-Protokolle für die Wahl von Führungskräften und BFT-Konsenssicherheit.",
+  "title": "Verteilter Konsens: Raft & Paxos",
+  "excerpt": "Eine technische Abhandlung über die Theorie der replizierten Zustandsmaschine, Quorum-Schnittpunkte, Heartbeat-Protokolle für die Wahl von Führungskräften und BFT-Konsenssicherheit.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/vYp4c7o980U",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
       "title": "Verteilte Systeme: Raft-Konsensalgorithmus in 20 Minuten",
       "caption": "Visuelle Komplettlösung für die Wahl des Anführers, Termzähler, zufällige Wahltimer, Protokollreplikation und Wiederherstellung der Netzwerkpartition in Raft-Clustern."
     },
@@ -63,5 +63,5 @@
       "text": "Moderne föderierte Ledger ersetzen einfache Absturzannahmen durch kryptografisch signierte Abstimmungen und Ansichtsänderungsprotokolle (z. B. PBFT, Tendermint, HotStuff), wodurch die Pipeline-Latenz bei optimistischer Ausführung auf die Kommunikationskomplexität $O(N)$ begrenzt wird."
     }
   ],
-  "sourceHash": "7e82f7234fb2382d2b90b72e7d6695e670bbfb18"
+  "sourceHash": "6503f89b1d9f5c613ba4508051fe52bc20a050d8"
 }

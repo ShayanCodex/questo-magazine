@@ -1,7 +1,7 @@
 {
   "slug": "small-modular-reactors-molten-salt-high-temperature-gas-nuclear",
-  "title": "Pequeños reactores nucleares modulares y sistemas de gas de alta temperatura",
-  "excerpt": "Una monografía de investigación en ingeniería energética sobre las microesferas de combustible TRISO, la termodinámica de seguridad pasiva, los circuitos de refrigerante de sales fundidas y la descarbonización de la carga base industrial pesada.",
+  "title": "Pequeños reactores nucleares modulares",
+  "excerpt": "Una monografía de investigación de ingeniería energética sobre las microesferas de combustible TRISO, la termodinámica de seguridad pasiva, los circuitos de refrigerante de sales fundidas y la descarbonización de la carga base industrial pesada.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
   "tags": [
@@ -59,7 +59,7 @@
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/Uj_i3q6K31c",
+      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
       "title": "Explicación de los reactores modulares pequeños: física, fabricación modular y economía de redes",
       "caption": "Una evaluación de ingeniería exhaustiva de la estandarización de fábricas SMR, la seguridad de la contención pasiva y la integración de la carga base del costo nivelado de energía (LCOE)."
     },
@@ -89,5 +89,5 @@
       ]
     }
   ],
-  "sourceHash": "04baaaf2d8731e9feeeb8dd670c2d0b57b33d1df"
+  "sourceHash": "1aa34d18b61eada65d1a19082df3dd5957faf87b"
 }
