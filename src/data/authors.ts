@@ -88,6 +88,68 @@ export const AUTHORS: Record<string, Author> = {
       website: 'https://questo-blog.netlify.app',
     },
   },
+
+  // Expanded Specialized Fellows for 15 Global Niches
+  'dr-marcus-vance': {
+    slug: 'dr-marcus-vance',
+    name: 'Dr. Marcus Vance',
+    role: 'Cardiometabolic & Preventive Health Research Fellow',
+    location: 'Boston, United States',
+    bio: 'Clinical physician and preventive medicine epidemiologist. Dr. Vance researches metabolic biomarkers, mitochondrial health, and evidence-based longevity interventions.',
+    avatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80',
+    socials: {
+      linkedin: 'https://linkedin.com',
+      twitter: 'https://x.com',
+    },
+  },
+  'claire-dupont': {
+    slug: 'claire-dupont',
+    name: 'Claire Dupont',
+    role: 'Global Macro Strategist & Foreign Exchange Analyst',
+    location: 'Paris, France',
+    bio: 'Former central bank liquidity consultant. Claire analyzes cross-border foreign exchange plumbing, sovereign debt issuance, and algorithmic liquidity corridors.',
+    avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80',
+    socials: {
+      linkedin: 'https://linkedin.com',
+      twitter: 'https://x.com',
+    },
+  },
+  'hiroshi-tanaka': {
+    slug: 'hiroshi-tanaka',
+    name: 'Hiroshi Tanaka',
+    role: 'Robotics Engineer & Machine Learning Researcher',
+    location: 'Tokyo, Japan',
+    bio: 'Pioneer in low-latency robotics inference and autonomous physical systems. Hiroshi writes on the mathematical foundations of generative neural models and machine perception.',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+    socials: {
+      github: 'https://github.com',
+      twitter: 'https://x.com',
+    },
+  },
+  'liam-oconnor': {
+    slug: 'liam-oconnor',
+    name: 'Liam O’Connor',
+    role: 'Sports Biomechanist & Tactical Football Analyst',
+    location: 'Manchester, United Kingdom',
+    bio: 'High-performance consultant to European sports federations. Liam dissects spatial pressing patterns, telemetry in Formula 1 racing, and neuromuscular conditioning.',
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80',
+    socials: {
+      twitter: 'https://x.com',
+      linkedin: 'https://linkedin.com',
+    },
+  },
+  'sofia-rossi': {
+    slug: 'sofia-rossi',
+    name: 'Sofia Rossi',
+    role: 'Gastronomy Scholar & Fermentation Chemist',
+    location: 'Bologna, Italy',
+    bio: 'Food systems researcher dedicated to sourdough microbiology, traditional culinary chemistry, and heirloom agricultural biodiversity across the Mediterranean basin.',
+    avatar: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=400&q=80',
+    socials: {
+      website: 'https://questo-blog.netlify.app',
+      twitter: 'https://x.com',
+    },
+  },
 };
 
 export function getAuthorBySlug(slug: string): Author | undefined {
@@ -104,4 +166,3 @@ export function authorNameToSlug(name: string): string {
   if (match) return match.slug;
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
-

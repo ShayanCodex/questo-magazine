@@ -1,0 +1,139 @@
+{
+  "totalTarget": 1000,
+  "lastUpdated": "2026-11-15T05:30:00Z",
+  "niches": [
+    {
+      "id": "technology",
+      "name": "Technology and Innovation",
+      "targetAllocation": 100,
+      "priorityTopics": [
+        {
+          "topicId": "tech-001",
+          "title": "The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches & Latency Scaling",
+          "slug": "architecture-of-transformer-attention-mathematics-and-kv-cache",
+          "primaryCategory": "technology",
+          "subcategory": "artificial-intelligence",
+          "primaryKeyword": "transformer attention architecture",
+          "secondaryKeywords": ["self-attention mechanics", "kv cache optimization", "llm inference latency"],
+          "searchIntent": "Informational / Deep Technical Explainer",
+          "targetAudience": "Machine learning engineers, AI researchers, system architects",
+          "assignedAuthor": "Hiroshi Tanaka",
+          "status": "APPROVED_FOR_BATCH_1"
+        },
+        {
+          "topicId": "tech-002",
+          "title": "Neuromorphic Computing & Event-Based Silicon: Beyond von Neumann Bottlenecks",
+          "slug": "neuromorphic-computing-event-based-silicon-von-neumann",
+          "primaryCategory": "technology",
+          "subcategory": "robotics-and-iot",
+          "primaryKeyword": "neuromorphic computing",
+          "secondaryKeywords": ["spiking neural networks", "event based sensors", "low power edge ai"],
+          "searchIntent": "Informational / Architectural Review",
+          "targetAudience": "Hardware designers, robotics specialists",
+          "assignedAuthor": "Hiroshi Tanaka",
+          "status": "APPROVED_FOR_BATCH_1"
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "name": "Software and Developer Resources",
+      "targetAllocation": 90,
+      "priorityTopics": [
+        {
+          "topicId": "soft-001",
+          "title": "Compiler-Driven React: React 19 Server Components, Memoization Automation & Hydration Elimination",
+          "slug": "compiler-driven-react-server-components-hydration-elimination",
+          "primaryCategory": "software",
+          "subcategory": "web-frameworks",
+          "primaryKeyword": "react 19 server components architecture",
+          "secondaryKeywords": ["react compiler memoization", "zero bundle hydration", "partial prerendering"],
+          "searchIntent": "Educational / Engineering Guide",
+          "targetAudience": "Senior frontend engineers, web developers",
+          "assignedAuthor": "Tariq Mahmood",
+          "status": "APPROVED_FOR_BATCH_1"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance, Trading and Global Markets",
+      "targetAllocation": 100,
+      "priorityTopics": [
+        {
+          "topicId": "fin-001",
+          "title": "Sovereign Debt Cycles, Yield Curve Inversions & Cross-Border Repo Settlement",
+          "slug": "sovereign-debt-cycles-yield-curve-inversions-repo-settlement",
+          "primaryCategory": "finance",
+          "subcategory": "forex-and-liquidity",
+          "primaryKeyword": "yield curve inversion mechanics",
+          "secondaryKeywords": ["repo market liquidity", "treasury collateral shortage", "central bank balance sheet"],
+          "searchIntent": "Macroeconomic Analysis",
+          "targetAudience": "Institutional traders, macro analysts, financial economists",
+          "assignedAuthor": "Claire Dupont",
+          "status": "APPROVED_FOR_BATCH_1"
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "name": "Medical, Healthcare and Wellness",
+      "targetAllocation": 80,
+      "priorityTopics": [
+        {
+          "topicId": "hlth-001",
+          "title": "Cardiometabolic Biomarkers: ApoB, Endothelial Nitric Oxide & Plaque Vulnerability",
+          "slug": "cardiometabolic-biomarkers-apob-endothelial-nitric-oxide",
+          "primaryCategory": "health",
+          "subcategory": "preventive-medicine",
+          "primaryKeyword": "apob vs ldl cardiometabolic risk",
+          "secondaryKeywords": ["endothelial function", "preventive cardiovascular screening", "plaque progression"],
+          "searchIntent": "Evidence-Based Medical Explainer",
+          "targetAudience": "Healthcare professionals, informed patients, longevity researchers",
+          "assignedAuthor": "Dr. Marcus Vance",
+          "status": "APPROVED_FOR_BATCH_1"
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports and Athletics",
+      "targetAllocation": 90,
+      "priorityTopics": [
+        {
+          "topicId": "sprt-001",
+          "title": "Spatial Pressing Geometry: Positional Play, Rest-Defense & Transition Windows in Modern Football",
+          "slug": "spatial-pressing-geometry-positional-play-rest-defense",
+          "primaryCategory": "sports",
+          "subcategory": "football",
+          "primaryKeyword": "positional play football tactics",
+          "secondaryKeywords": ["counterpressing rest defense", "pitch zones half spaces", "high pressing triggers"],
+          "searchIntent": "Tactical Breakdown",
+          "targetAudience": "Coaches, tactical analysts, football enthusiasts",
+          "assignedAuthor": "Liam O’Connor",
+          "status": "APPROVED_FOR_BATCH_1"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food and Gastronomy",
+      "targetAllocation": 40,
+      "priorityTopics": [
+        {
+          "topicId": "food-001",
+          "title": "Microbial Ecology of Wild Sourdough: Lactic Acid Bacteria, Acidity Kinetics & Proteolysis",
+          "slug": "microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis",
+          "primaryCategory": "food",
+          "subcategory": "fermentation-and-bread",
+          "primaryKeyword": "sourdough fermentation microbiology",
+          "secondaryKeywords": ["lactic acid bacteria wild yeast", "proteolysis gluten structure", "dough acidity ph curve"],
+          "searchIntent": "Culinary Science Monograph",
+          "targetAudience": "Artisan bakers, culinary researchers, food scientists",
+          "assignedAuthor": "Sofia Rossi",
+          "status": "APPROVED_FOR_BATCH_1"
+        }
+      ]
+    }
+  ]
+}

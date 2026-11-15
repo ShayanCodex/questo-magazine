@@ -417,6 +417,11 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                     Privacy Disclosures
                   </Link>
                 </li>
+                <li>
+                  <Link to={localePath('/admin')} className="hover:text-editorial-text transition-colors text-accent">
+                    Editorial CMS
+                  </Link>
+                </li>
               </ul>
             </div>
 

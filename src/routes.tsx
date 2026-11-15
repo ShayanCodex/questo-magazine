@@ -28,6 +28,7 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Terms } from './pages/Terms';
 import { Privacy } from './pages/Privacy';
+import { AdminDashboard } from './pages/AdminDashboard';
 import { NotFound } from './pages/NotFound';
 
 const defaultLangObj =
@@ -233,6 +234,10 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
       {
         path: 'privacy',
         element: <Privacy />,
+      },
+      {
+        path: 'admin',
+        element: <AdminDashboard />,
       },
       {
         path: '*',

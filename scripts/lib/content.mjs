@@ -112,13 +112,32 @@ export const ALL_AUTHOR_SLUGS = [
   'tariq-mahmood',
   'elena-vance',
   'anne-hardy',
+  'dr-marcus-vance',
+  'claire-dupont',
+  'hiroshi-tanaka',
+  'liam-oconnor',
+  'sofia-rossi',
 ];
 
 export const ALL_CATEGORY_IDS = [
-  'architecture-and-space',
   'art-and-culture',
+  'architecture-and-space',
   'design-and-typography',
   'engineering-and-technology',
+  'technology',
+  'software',
+  'finance',
+  'business',
+  'crypto',
+  'sports',
+  'health',
+  'science',
+  'entertainment',
+  'lifestyle',
+  'fitness',
+  'food',
+  'travel',
+  'news',
 ];
 
 export const ALL_TOOL_SLUGS = [
