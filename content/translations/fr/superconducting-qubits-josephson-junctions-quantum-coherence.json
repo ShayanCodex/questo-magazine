@@ -1,7 +1,7 @@
 {
   "slug": "superconducting-qubits-josephson-junctions-quantum-coherence",
-  "title": "[fr] Superconducting Qubits & Coherence",
-  "excerpt": "[fr] A quantum physics and cryogenic engineering monograph on transmon qubit anharmonicity, non-linear Josephson junction inductance, 15-millikelvin dilution refrigeration, and surface code quantum error correction.",
+  "title": "Qubits supraconducteurs et cohérence",
+  "excerpt": "Une monographie de physique quantique et d'ingénierie cryogénique sur l'anharmonicité des qubits transmon, l'inductance de jonction Josephson non linéaire, la réfrigération par dilution de 15 millikelvin et la correction d'erreur quantique du code de surface.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -13,23 +13,23 @@
     "optics"
   ],
   "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "[fr] Ultra-clean quantum physics research laboratory with cryogenic dilution refrigeration apparatus",
+  "imageAlt": "Laboratoire de recherche en physique quantique ultra-propre doté d'un appareil de réfrigération à dilution cryogénique.",
   "body": [
     {
       "type": "p",
-      "text": "[fr] Quantum computational advantage represents the theoretical promise of solving mathematically intractable problems—molecular simulation, post-quantum cryptanalysis, and complex optimization—that would require millions of years on classical CMOS supercomputers. Among competing physical implementations, superconducting circuits are the leading modality, scaling artificial atoms onto planar silicon and sapphire microchips using standard semiconductor lithography."
+      "text": "L'avantage informatique quantique représente la promesse théorique de résoudre des problèmes mathématiquement insolubles (simulation moléculaire, cryptanalyse post-quantique et optimisation complexe) qui nécessiteraient des millions d'années sur des supercalculateurs CMOS classiques. Parmi les implémentations physiques concurrentes, les circuits supraconducteurs sont la principale modalité, mettant à l'échelle des atomes artificiels sur des micropuces planaires de silicium et de saphir à l'aide d'une lithographie semi-conductrice standard."
     },
     {
       "type": "p",
-      "text": "[fr] Unlike natural trapped ions or neutral atoms, superconducting qubits are macroscopic electronic circuits fabricated from pure aluminum or niobium thin films. When cooled below their critical superconducting transition temperatures ($T_c \\approx 1.2$ K), electrical resistance vanishes entirely, enabling billions of paired electrons—Cooper pairs—to condense into a single macroscopic quantum wave function."
+      "text": "Contrairement aux ions naturels piégés ou aux atomes neutres, les qubits supraconducteurs sont des circuits électroniques macroscopiques fabriqués à partir de films minces d'aluminium pur ou de niobium. Lorsqu'elle est refroidie en dessous de leurs températures critiques de transition supraconductrice ($T_c \\environ 1,2$ K), la résistance électrique disparaît entièrement, permettant à des milliards d'électrons appariés - les paires de Cooper - de se condenser en une seule fonction d'onde quantique macroscopique."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. The Transmon Architecture and Non-Linear Josephson Inductance"
+      "text": "1. L'architecture Transmon et l'inductance Josephson non linéaire"
     },
     {
       "type": "p",
-      "text": "[fr] A standard LC harmonic oscillator cannot serve as a qubit because its energy levels are equidistant ($\\hbar\\omega$). Any resonant microwave pulse intended to excite the ground state $|0\\rangle$ into $|1\\rangle$ simultaneously drives unwanted transitions into $|2\\rangle$ and higher manifold states. To isolate an addressable two-level quantum system, engineers introduce an anharmonic non-linear inductor: the Josephson Junction."
+      "text": "Un oscillateur harmonique LC standard ne peut pas servir de qubit car ses niveaux d'énergie sont équidistants ($\\hbar\\omega$). Toute impulsion micro-onde résonante destinée à exciter l'état fondamental $|0\\rangle$ en $|1\\rangle$ entraîne simultanément des transitions indésirables vers $|2\\rangle$ et des états multiples supérieurs. Pour isoler un système quantique adressable à deux niveaux, les ingénieurs introduisent un inducteur anharmonique non linéaire : la jonction Josephson."
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[fr] By adding an oversized shunt capacitor, the transmon operates in the high $E_J / E_C$ regime, exponentially suppressing charge noise sensitivity by several orders of magnitude while preserving sufficient anharmonicity ($\\alpha \\approx -200$ to $-300$ MHz) to manipulate the qubit with nanosecond microwave pulses."
+      "text": "En ajoutant un condensateur shunt surdimensionné, le transmon fonctionne dans le régime $E_J / E_C$ élevé, supprimant de manière exponentielle la sensibilité au bruit de charge de plusieurs ordres de grandeur tout en préservant une anharmonicité suffisante ($\\alpha \\environ -200$ à $-300$ MHz) pour manipuler le qubit avec des impulsions micro-ondes nanosecondes."
     },
     {
       "type": "quote",
-      "text": "[fr] Superconducting qubits allow us to engineer artificial atoms with custom energy levels, printed with sub-micron lithography on sapphire wafers.",
-      "cite": "[fr] Dr. Marcus Vance, Quantum Information Science & Condensed Matter Fellow"
+      "text": "Les qubits supraconducteurs nous permettent de créer des atomes artificiels avec des niveaux d'énergie personnalisés, imprimés par lithographie submicronique sur des plaquettes de saphir.",
+      "cite": "Dr Marcus Vance, chercheur en science de l'information quantique et matière condensée"
     },
     {
       "type": "h2",
-      "text": "[fr] 2. Cryogenic Dilution Refrigeration: Operating at 15 Millikelvin"
+      "text": "2. Réfrigération par dilution cryogénique : fonctionnant à 15 millikelvins"
     },
     {
       "type": "p",
-      "text": "[fr] To prevent ambient thermal phonons ($k_B T$) from randomly perturbing the qubit state, superconducting processors must be cooled to 15 millikelvin (-273.135°C), colder than deep interstellar space. This thermodynamic feat is executed by closed-loop Helium-3/Helium-4 dilution refrigerators."
+      "text": "Pour empêcher les phonons thermiques ambiants ($k_B T$) de perturber de manière aléatoire l'état des qubits, les processeurs supraconducteurs doivent être refroidis à 15 millikelvins (-273,135°C), plus froid que l'espace interstellaire profond. Cette prouesse thermodynamique est réalisée par des réfrigérateurs à dilution Hélium-3/Hélium-4 en boucle fermée."
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Phase Separation Boundary: Below 870 mK, liquid ³He and ⁴He mixtures separate into a concentrated phase and a dilute phase.",
-        "[fr] Endothermic Quantum Evaporation: Pumping ³He atoms across this phase boundary absorbs latent heat, continuously extracting thermal energy from the mixing chamber stage.",
-        "[fr] Cryogenic Attenuation Lines: Microwave coaxial control lines are fitted with 20dB and 30dB attenuators at each thermal stage to strip room-temperature blackbody thermal noise before it reaches the chip."
+        "Limite de séparation des phases : en dessous de 870 mK, les mélanges liquides ³He et ⁴He se séparent en une phase concentrée et une phase diluée.",
+        "Évaporation quantique endothermique : pompage « Les atomes à travers cette limite de phase absorbent la chaleur latente, extrayant continuellement l'énergie thermique de l'étage de la chambre de mélange.",
+        "Lignes d'atténuation cryogénique : les lignes de contrôle coaxiales micro-ondes sont équipées d'atténuateurs de 20 dB et 30 dB à chaque étage thermique pour éliminer le bruit thermique du corps noir à température ambiante avant qu'il n'atteigne la puce."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Video Masterclass: Resonance, Acoustic Physics & Quantum Coherence"
+      "text": "3. Masterclass vidéo : Résonance, physique acoustique et cohérence quantique"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "[fr] Acoustic Wave Physics, Resonance & Superconducting Oscillators",
-      "caption": "[fr] Experimental lecture exploring resonance harmonics, non-linear phase oscillators, and acoustic-electromagnetic coupling."
+      "title": "Physique des ondes acoustiques, résonance et oscillateurs supraconducteurs",
+      "caption": "Conférence expérimentale explorant les harmoniques de résonance, les oscillateurs de phase non linéaires et le couplage acoustique-électromagnétique."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. Decoherence Mechanisms: T1 Relaxation and T2 Dephasing"
+      "text": "4. Mécanismes de décohérence : relaxation T1 et déphasage T2"
     },
     {
       "type": "p",
-      "text": "[fr] A qubit's computational lifetime is constrained by two physical decoherence metrics: energy relaxation time ($T_1$) and phase coherence time ($T_2$). Dielectric losses at substrate-metal interfaces and parasitic two-level system (TLS) defects in amorphous oxide layers dissipate stored electromagnetic energy, limiting typical coherence windows to 100–300 microseconds."
+      "text": "La durée de vie de calcul d'un qubit est contrainte par deux métriques de décohérence physique : le temps de relaxation énergétique ($T_1$) et le temps de cohérence de phase ($T_2$). Les pertes diélectriques aux interfaces substrat-métal et les défauts parasites du système à deux niveaux (TLS) dans les couches d'oxyde amorphe dissipent l'énergie électromagnétique stockée, limitant les fenêtres de cohérence typiques à 100-300 microsecondes."
     },
     {
       "type": "p",
-      "text": "[fr] Bridging the chasm between noisy intermediate-scale quantum (NISQ) systems and fault-tolerant quantum computing requires quantum error correction. The surface code topology encodes one protected logical qubit across dozens of physical data and ancilla qubits arranged in a 2D square lattice, detecting bit-flip and phase-flip syndromes via repeated multi-qubit stabilizer measurements."
+      "text": "Combler le fossé entre les systèmes quantiques bruyants à échelle intermédiaire (NISQ) et l’informatique quantique tolérante aux pannes nécessite une correction des erreurs quantiques. La topologie du code de surface code un qubit logique protégé sur des dizaines de données physiques et de qubits auxiliaires disposés dans un réseau carré 2D, détectant les syndromes d'inversion de bits et d'inversion de phase via des mesures répétées de stabilisateur multi-qubits."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Quantum Engineering Takeaways"
+      "text": "5. Points à retenir de l'ingénierie quantique"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Surface Preparation: Substrate chemical polishing and atomic trenching under Josephson junctions reduce two-level system dielectric dissipation by over 50%.",
-        "[fr] Magnetic Shielding: Enclose the cryostat in multilayer high-permeability Mu-metal and superconducting lead canisters to reject stray Earth magnetic flux lines.",
-        "[fr] Parametric Amplification: Utilize Traveling Wave Parametric Amplifiers (TWPAs) at the 4K stage to achieve quantum-limited readout signal amplification without backaction noise."
+        "Préparation de la surface : le polissage chimique du substrat et le creusement atomique sous les jonctions Josephson réduisent la dissipation diélectrique du système à deux niveaux de plus de 50 %.",
+        "Blindage magnétique : Enfermez le cryostat dans des cartouches multicouches en Mu-métal et en plomb supraconducteur à haute perméabilité pour rejeter les lignes de flux magnétique terrestre parasites.",
+        "Amplification paramétrique : utilisez des amplificateurs paramétriques à ondes progressives (TWPA) à l'étape 4K pour obtenir une amplification du signal de lecture limitée quantiquement sans bruit de retour d'action."
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "constant-function-market-makers-impermanent-loss-and-concentrated-liquidity",
-  "title": "[ar] Concentrated Liquidity in Market Makers",
-  "excerpt": "[ar] A financial cryptography monograph on Uniswap v3 virtual reserve invariants, Loss-Versus-Rebalancing (LVR) arbitrage mechanics, and liquidity density optimization.",
+  "title": "السيولة المركزة في صناع السوق",
+  "excerpt": "دراسة التشفير المالي حول ثوابت الاحتياطي الافتراضي Uniswap v3، وآليات المراجحة بين الخسارة وإعادة التوازن (LVR)، وتحسين كثافة السيولة.",
   "date": "2026-11-15",
   "author": "Claire Dupont",
   "tags": [
@@ -13,23 +13,23 @@
     "arbitrage"
   ],
   "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Algorithmic financial telemetry displaying automated market maker liquidity curves and trade execution",
+  "imageAlt": "القياس المالي الخوارزمي عن بعد الذي يعرض منحنيات السيولة لصانع السوق الآلي وتنفيذ التجارة",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The invention of the Automated Market Maker (AMM) represents one of the most radical structural innovations in financial market microstructures. In traditional centralized finance, market making relies on centralized limit order books (CLOBs) managed by high-frequency market-making firms who continuously post bids and asks. In peer-to-peer decentralized blockchains where block latency and gas costs render high-frequency order cancellation prohibitively expensive, deterministic mathematical formulas—Constant Function Market Makers (CFMMs)—replace order books with passive, algorithmic liquidity pools."
+      "text": "يمثل اختراع صانع السوق الآلي (AMM) أحد الابتكارات الهيكلية الأكثر جذرية في الهياكل الدقيقة للسوق المالية. في التمويل المركزي التقليدي، يعتمد صنع السوق على دفاتر الأوامر المركزية المحددة (CLOBs) التي تديرها شركات صنع السوق عالية التردد التي تنشر العطاءات والطلبات بشكل مستمر. في سلاسل الكتل اللامركزية من نظير إلى نظير، حيث يؤدي زمن الاستجابة وتكاليف الغاز إلى جعل إلغاء الأوامر عالية التردد باهظ التكلفة، تستبدل الصيغ الرياضية الحتمية - صناع سوق الوظائف الثابتة (CFMMs) - دفاتر الطلبات بمجموعات سيولة خوارزمية سلبية."
     },
     {
       "type": "p",
-      "text": "[ar] While the foundational constant-product model popularized by Uniswap v2 ($x \\cdot y = k$) delivered bulletproof robustness, it suffered from catastrophic capital inefficiency: capital was distributed uniformly across the entire price spectrum from zero to infinity, meaning less than 1% of pooled capital was active at current market prices. The transition to concentrated liquidity in Uniswap v3 resolved this constraint, transforming liquidity provision from passive holding into active geometric portfolio management."
+      "text": "وفي حين قدم نموذج المنتج الثابت التأسيسي الذي شاع بواسطة Uniswap v2 ($x \\cdot y = k$) قوة مضادة للرصاص، فإنه عانى من عدم كفاءة رأس المال الكارثية: حيث تم توزيع رأس المال بشكل موحد عبر طيف الأسعار بالكامل من الصفر إلى ما لا نهاية، وهذا يعني أن أقل من 1٪ من رأس المال المجمع كان نشطا بأسعار السوق الحالية. أدى الانتقال إلى السيولة المركزة في Uniswap v3 إلى حل هذا القيد، وتحويل توفير السيولة من الاحتفاظ السلبي إلى إدارة المحافظ الهندسية النشطة."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Concentrated Liquidity Geometry & Virtual Reserves"
+      "text": "1. هندسة السيولة المركزة والاحتياطيات الافتراضية"
     },
     {
       "type": "p",
-      "text": "[ar] In concentrated liquidity AMMs, liquidity providers (LPs) do not allocate capital across all prices. Instead, they concentrate their tokens within a bounded price interval $[p_a, p_b]$. Inside this range, the pool simulates a constant product curve with magnified \"virtual reserves\":"
+      "text": "في AMMs للسيولة المركزة، لا يقوم مزودو السيولة (LPs) بتخصيص رأس المال عبر جميع الأسعار. وبدلاً من ذلك، يقومون بتركيز عملاتهم المميزة ضمن فترة سعرية محددة $[p_a, p_b]$. داخل هذا النطاق، يحاكي المجمع منحنى منتج ثابت مع \"احتياطيات افتراضية\" مكبرة:"
     },
     {
       "type": "code",
@@ -38,50 +38,50 @@
     },
     {
       "type": "p",
-      "text": "[ar] By confining capital to a narrow price band around the spot price, an LP can achieve up to 4,000 times the capital efficiency of an unconstrained v2 pool. The identical trading volume produces exponentially greater fee generation per dollar deposited, drastically narrowing bid-ask spreads for institutional traders."
+      "text": "من خلال حصر رأس المال في نطاق سعري ضيق حول السعر الفوري، يمكن لـ LP تحقيق ما يصل إلى 4000 مرة من كفاءة رأس المال لمجمع v2 غير المقيد. وينتج حجم التداول المماثل توليد رسوم أكبر بشكل كبير لكل دولار يتم إيداعه، مما يؤدي إلى تضييق فروق أسعار العرض والطلب بشكل كبير للمتداولين المؤسسيين."
     },
     {
       "type": "quote",
-      "text": "[ar] Concentrated liquidity converts static liquidity pools into synthetic option payoffs: an in-range LP position behaves identically to a short straddle harvesting fee volatility.",
-      "cite": "[ar] Claire Dupont, Macro & Private Equity Fellow"
+      "text": "تعمل السيولة المركزة على تحويل مجمعات السيولة الثابتة إلى مكافآت خيارات اصطناعية: يتصرف مركز LP داخل النطاق بشكل مماثل لتقلب رسوم الحصاد القصيرة.",
+      "cite": "كلير دوبونت، زميلة في مجال الأسهم الكلية والخاصة"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Deconstructing Impermanent Loss & The LVR Framework"
+      "text": "2. تفكيك الخسارة غير الدائمة وإطار LVR"
     },
     {
       "type": "p",
-      "text": "[ar] The central economic risk assumed by liquidity providers is Impermanent Loss (IL)—more accurately designated as divergence loss. Whenever the external market price moves away from the initial deposit ratio, the AMM deterministic pricing curve forces the LP to sell the appreciating asset and buy the depreciating asset."
+      "text": "المخاطر الاقتصادية المركزية التي يتحملها مزودو السيولة هي الخسارة غير الدائمة (IL) - والتي يتم تصنيفها بشكل أكثر دقة على أنها خسارة التباعد. عندما يتحرك سعر السوق الخارجي بعيدًا عن نسبة الودائع الأولية، فإن منحنى التسعير الحتمي AMM يجبر LP على بيع الأصول المرتفعة وشراء الأصول المنخفضة القيمة."
     },
     {
       "type": "p",
-      "text": "[ar] Recent academic market microstructure research (Milionis, Moallemi, Roughgarden) formalizes this cost as Loss-Versus-Rebalancing (LVR). Unlike traditional impermanent loss, which theoretically zeroes out if price returns to its starting point, LVR captures the persistent, non-negative economic rent extracted by latency arbitrageurs who trade against stale AMM quotes across external centralized exchanges:"
+      "text": "تُضفي الأبحاث الأكاديمية الحديثة حول البنية الدقيقة للسوق (Milionis، Moallemi، Roughgarden) طابعًا رسميًا على هذه التكلفة على أنها خسارة مقابل إعادة التوازن (LVR). على عكس الخسارة التقليدية غير الدائمة، والتي تصفر نظريًا إذا عاد السعر إلى نقطة بدايته، فإن LVR يلتقط الإيجار الاقتصادي المستمر وغير السلبي الذي يستخرجه مراجحون الكمون الذين يتداولون مقابل أسعار AMM التي لا معنى لها عبر البورصات المركزية الخارجية:"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs can rebalance.",
-        "[ar] Range Out-of-Bounds Risk: When spot price breaks outside $[p_a, p_b]$, the LP is 100% converted into the losing asset, terminating all fee accrual until rebalanced.",
-        "[ar] Fee-to-Volatility Break-Even: For an LP position to remain net-profitable, fee yields must exceed the variance drag dictated by asset return volatility ($\\frac{1}{8}\\sigma^2$)."
+        "تدفق المراجحة غير المتماثل: تسمح تحركات أسعار السوق الخارجية لتدفق أوامر المراجحة السامة بانتقاء القراد التي لا معنى لها على السلسلة قبل أن تتمكن LPs السلبية من إعادة التوازن.",
+        "مخاطر النطاق خارج الحدود: عندما ينكسر السعر الفوري خارج $[p_a, p_b]$، يتم تحويل LP بنسبة 100% إلى الأصل الخاسر، مما يؤدي إلى إنهاء جميع الرسوم المتراكمة حتى تتم إعادة التوازن.",
+        "التعادل بين الرسوم والتقلبات: لكي يظل مركز LP مربحًا بشكل صافي، يجب أن تتجاوز عائدات الرسوم سحب التباين الذي يمليه تقلب عوائد الأصول ($\\frac{1}{8}\\sigma^2$)."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Technical Masterclass: Concentrated Liquidity Mathematics"
+      "text": "3. دورة تقنية متقدمة: رياضيات السيولة المركزة"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/cizLhxSKrAc",
-      "title": "[ar] Automated Market Makers & Concentrated Liquidity Mechanics",
-      "caption": "[ar] Rigorous visual walkthrough of virtual reserves, tick boundaries, impermanent loss curves, and capital efficiency gains."
+      "title": "صانعي السوق الآليين وميكانيكا السيولة المركزة",
+      "caption": "إرشادات مرئية صارمة للاحتياطيات الافتراضية، وحدود التجزئة، ومنحنيات الخسارة غير الدائمة، ومكاسب كفاءة رأس المال."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Tick Discretization & Dynamic Fee Tiers"
+      "text": "4. تمييز القراد ومستويات الرسوم الديناميكية"
     },
     {
       "type": "p",
-      "text": "[ar] To avoid floating-point imprecision in on-chain virtual machines, prices are discretized into logarithmic ticks indexed by integers $i$:"
+      "text": "لتجنب عدم دقة الفاصلة العائمة في الأجهزة الافتراضية على السلسلة، يتم فصل الأسعار إلى علامات لوغاريتمية مفهرسة بأعداد صحيحة $i$:"
     },
     {
       "type": "code",
@@ -90,18 +90,18 @@
     },
     {
       "type": "p",
-      "text": "[ar] When a large market order consumes all available liquidity inside a tick, the protocol updates the global price, crosses the tick boundary, and activates the next discrete liquidity vector with minimal gas overhead."
+      "text": "عندما يستهلك أمر سوق كبير كل السيولة المتاحة داخل علامة، يقوم البروتوكول بتحديث السعر العالمي، ويعبر حدود العلامة، وينشط ناقل السيولة المنفصل التالي مع الحد الأدنى من النفقات العامة للغاز."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Strategic Takeaways for Quantitative Liquidity Providers"
+      "text": "5. الوجبات السريعة الإستراتيجية لمزودي السيولة الكمية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) can safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
-        "[ar] Dynamic Hedging Eliminates Delta: Sophisticated market makers offset directional gamma risk by shorting underlying perpetual futures on centralized venues while capturing LP fees on-chain.",
-        "[ar] Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers can rapidly erode accumulated LP fees; deploy automated liquidity management vaults."
+        "الأصول المترابطة تتفوق في نطاقات ضيقة: يمكن لأزواج العملات المستقرة (على سبيل المثال، USDT/USDC) تركيز السيولة بأمان ضمن نطاقات ±0.1%، مما ينتج APYs فلكية مع الحد الأدنى من مخاطر الاتجاه.",
+        "التحوط الديناميكي يزيل دلتا: يعوض صناع السوق المتطورون مخاطر جاما الاتجاهية عن طريق بيع العقود الآجلة الدائمة الأساسية في الأماكن المركزية مع الحصول على رسوم LP على السلسلة.",
+        "إدارة استهلاك الغاز: يمكن أن تؤدي إعادة موازنة القراد المتكررة على طبقات التسوية ذات الرسوم المرتفعة إلى تآكل رسوم LP المتراكمة بسرعة؛ نشر خزائن إدارة السيولة الآلية."
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "lng-liquefaction-mechanics-and-maritime-energy-corridors",
-  "title": "[es] Maritime LNG Energy Corridors",
-  "excerpt": "[es] A financial commodities and thermodynamic engineering analysis of mixed-refrigerant cryogenic liquefaction cycles, maritime boil-off gas management, and global arbitrage spreads.",
+  "title": "Corredores energéticos marítimos de GNL",
+  "excerpt": "Un análisis de ingeniería termodinámica y de productos financieros de los ciclos de licuefacción criogénica de refrigerantes mixtos, la gestión del gas de ebullición marítimo y los diferenciales de arbitraje global.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
   "tags": [
@@ -13,23 +13,23 @@
     "thermodynamics"
   ],
   "image": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Massive cryogenic liquefied natural gas carrier ship navigating deep open ocean shipping lanes at sunset",
+  "imageAlt": "Enorme buque criogénico de transporte de gas natural licuado navegando por rutas marítimas en alta mar al atardecer",
   "body": [
     {
       "type": "p",
-      "text": "[es] The geopolitical and economic architecture of the twenty-first century is inexorably tethered to the physical movement of energy across maritime corridors. While oil pipelines and electrical grids are structurally constrained by fixed overland geography, Liquefied Natural Gas (LNG) provides fluid, fungible energy transport across intercontinental sea lanes. By condensing natural gas 600 times into a liquid state at cryogenic temperatures of -162°C (-260°F), a single modern Q-Max vessel can transport up to 266,000 cubic meters of LNG—enough energy to power a major metropolitan city for weeks."
+      "text": "La arquitectura geopolítica y económica del siglo XXI está inexorablemente ligada al movimiento físico de la energía a través de corredores marítimos. Mientras que los oleoductos y las redes eléctricas están estructuralmente limitados por una geografía terrestre fija, el gas natural licuado (GNL) proporciona un transporte de energía fluido y fungible a través de rutas marítimas intercontinentales. Al condensar gas natural 600 veces en estado líquido a temperaturas criogénicas de -162°C (-260°F), un solo buque Q-Max moderno puede transportar hasta 266.000 metros cúbicos de GNL, energía suficiente para alimentar una importante ciudad metropolitana durante semanas."
     },
     {
       "type": "p",
-      "text": "[es] The financial profitability of the global LNG trade is governed by complex spatial arbitrage spreads: the margin between North American Henry Hub extraction costs, European Title Transfer Facility (TTF) import prices, and Asian Japan Korea Marker (JKM) spot benchmarks. Navigating these volatile markets requires mastering both multi-stage cryogenic thermodynamics and marine logistics economics."
+      "text": "La rentabilidad financiera del comercio mundial de GNL se rige por complejos diferenciales de arbitraje espacial: el margen entre los costos de extracción del Henry Hub norteamericano, los precios de importación del Fondo Europeo de Transferencia de Títulos (TTF) y los puntos de referencia al contado del Marcador Asiático Japón Corea (JKM). Navegar por estos mercados volátiles requiere dominar tanto la termodinámica criogénica de múltiples etapas como la economía de la logística marina."
     },
     {
       "type": "h2",
-      "text": "[es] 1. Cryogenic Thermodynamic Cycles: Mixed Refrigerant (C3MR) Mechanics"
+      "text": "1. Ciclos termodinámicos criogénicos: Mecánica de refrigerante mixto (C3MR)"
     },
     {
       "type": "p",
-      "text": "[es] Liquefying methane ($CH_4$) requires removing immense sensible and latent heat across a 180-degree thermal gradient. The dominant commercial liquefaction standard is the Propane Pre-cooled Mixed Refrigerant (C3MR) cycle:"
+      "text": "Licuar metano ($CH_4$) requiere eliminar un inmenso calor sensible y latente a través de un gradiente térmico de 180 grados. El estándar de licuefacción comercial dominante es el ciclo de refrigerante mixto preenfriado con propano (C3MR):"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[es] The natural gas stream is first pre-cooled to -35°C via a closed-loop propane chiller. It then enters a massive Spiral-Wound Heat Exchanger (SWHE) where an evaporating mixed refrigerant absorbs heat across thousands of kilometers of pressurized aluminum tubing, collapsing the methane gas into sub-cooled liquid state with thermodynamic Carnot efficiency."
+      "text": "La corriente de gas natural se preenfría primero a -35 °C mediante un enfriador de propano de circuito cerrado. Luego ingresa a un enorme intercambiador de calor en espiral (SWHE), donde un refrigerante mixto que se evapora absorbe calor a través de miles de kilómetros de tubos de aluminio presurizados, colapsando el gas metano en un estado líquido subenfriado con eficiencia termodinámica de Carnot."
     },
     {
       "type": "quote",
-      "text": "[es] LNG is thermodynamic wizardry transformed into an asset class. You are freezing an invisible hydrocarbon into an ice-cold river, sailing it halfway across the globe, and vaporizing it on demand into electricity.",
-      "cite": "[es] Julian Sterling, Managing Director of Energy Derivatives"
+      "text": "El GNL es una magia termodinámica transformada en una clase de activo. Estás congelando un hidrocarburo invisible en un río helado, haciéndolo navegar por medio mundo y vaporizándolo según sea necesario para convertirlo en electricidad.",
+      "cite": "Julian Sterling, Director General de Derivados de Energía"
     },
     {
       "type": "h2",
-      "text": "[es] 2. Maritime Boil-Off Gas (BOG) and Cargo Containment"
+      "text": "2. Gas de ebullición marítimo (BOG) y contención de carga"
     },
     {
       "type": "p",
-      "text": "[es] Even within state-of-the-art membrane containment systems utilizing 0.7mm corrugated Invar membranes and reinforced polyurethane insulation, cryogenic LNG absorbs ambient heat through the hull. This heat causes a fraction of the liquid cargo to continuously vaporize, generating Boil-Off Gas (BOG) at rates between 0.08% and 0.15% of total volume per day."
+      "text": "Incluso dentro de los sistemas de contención de membranas de última generación que utilizan membranas corrugadas de Invar de 0,7 mm y aislamiento de poliuretano reforzado, el GNL criogénico absorbe el calor ambiental a través del casco. Este calor hace que una fracción de la carga líquida se vaporice continuamente, generando gas de ebullición (BOG) a tasas entre 0,08% y 0,15% del volumen total por día."
     },
     {
       "type": "ul",
       "items": [
-        "[es] Dual-Fuel Diesel-Electric (DFDE) Propulsion: Instead of venting or flaring BOG, modern carriers inject compressed boil-off gas directly into dual-fuel high-pressure engines, utilizing cargo evaporation as maritime bunker fuel.",
-        "[es] Onboard Sub-Cooler Reliquefaction: High-efficiency Brayton cycle reliquefaction plants capture flash gas, re-compress and sub-cool it, returning 100% of vapor back into the cargo tanks as liquid during market contango.",
-        "[es] Sloshing Dynamics: Partially filled membrane tanks risk violent kinetic sloshing during rough sea states, demanding specialized reinforced chamfer bulkheads to absorb hydrodynamic slamming pressures."
+        "Propulsión diésel-eléctrica de combustible dual (DFDE): en lugar de ventilar o quemar BOG, los transportistas modernos inyectan gas de ebullición comprimido directamente en motores de alta presión de combustible dual, utilizando la evaporación de la carga como combustible marítimo.",
+        "Relicuefacción del subenfriador a bordo: Las plantas de relicuefacción de ciclo Brayton de alta eficiencia capturan el gas flash, lo recomprimen y lo subenfrían, devolviendo el 100 % del vapor a los tanques de carga como líquido durante el contango del mercado.",
+        "Dinámica de chapoteo: Los tanques de membrana parcialmente llenos corren el riesgo de chapoteo cinético violento durante condiciones de mar agitado, lo que exige mamparos biselados reforzados especializados para absorber las presiones hidrodinámicas de golpe."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] 3. Video Masterclass: LNG Liquefaction Processes & Supply Chains"
+      "text": "3. Video Masterclass: Procesos de licuefacción de GNL y cadenas de suministro"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/XjXN5r5xdAg",
-      "title": "[es] Cryogenic Liquefied Natural Gas Processing & Global Infrastructure",
-      "caption": "[es] Comprehensive industrial documentary detailing the cryogenic liquefaction process, storage tank metallurgy, and maritime transport corridors."
+      "title": "Procesamiento criogénico de gas natural licuado e infraestructura global",
+      "caption": "Documental industrial completo que detalla el proceso de licuefacción criogénica, la metalurgia de los tanques de almacenamiento y los corredores de transporte marítimo."
     },
     {
       "type": "h2",
-      "text": "[es] 4. Arbitrage Economics: Henry Hub, TTF, and JKM Corridors"
+      "text": "4. Economía del arbitraje: corredores Henry Hub, TTF y JKM"
     },
     {
       "type": "p",
-      "text": "[es] Global LNG trading desks continuously calculate the netback parity between liquefaction tolling fees, Panama / Suez Canal transit tariffs, and regional regasification hub prices. The netback formula dictates destination cargo flexibility:"
+      "text": "Las mesas de negociación globales de GNL calculan continuamente la paridad netback entre las tarifas de peaje de licuefacción, las tarifas de tránsito del Canal de Panamá/Suez y los precios de los centros de regasificación regionales. La fórmula netback dicta la flexibilidad de la carga en destino:"
     },
     {
       "type": "p",
-      "text": "[es] When the spread between European TTF and Asian JKM exceeds the freight rate of re-routing a vessel around the Cape of Good Hope, algorithmic trading desks divert underway cargoes in mid-voyage. This dynamic shipping optionality creates unprecedented cross-basin liquidity, tightly coupling European power prices to Asian monsoon energy demand."
+      "text": "Cuando la diferencia entre el TTF europeo y el JKM asiático excede la tarifa de flete de desviar un barco alrededor del Cabo de Buena Esperanza, las mesas de negociación algorítmicas desvían las cargas en curso a mitad del viaje. Esta opcionalidad dinámica del envío crea una liquidez entre cuencas sin precedentes, acoplando estrechamente los precios de la energía europea con la demanda de energía del monzón asiático."
     },
     {
       "type": "h2",
-      "text": "[es] 5. Commodities Trading & Macro Takeaways"
+      "text": "5. Comercio de materias primas y conclusiones macroeconómicas"
     },
     {
       "type": "ul",
       "items": [
-        "[es] FOB vs. DES Contract Flexibility: Prefer Free On Board (FOB) terms with destination-free clauses to maximize maritime diversion arbitrage during unexpected regional price spikes.",
-        "[es] Seasonal Spread Hedging: Utilize time-spread swap collars to hedge seasonal storage injections against winter peak drawdowns in the Northern Hemisphere.",
-        "[es] Floating Regasification Units (FSRU): Fast-track terminal import capacity by deploying offshore FSRU vessels, bypassing multi-year onshore concrete terminal permitting delays."
+        "Flexibilidad del contrato FOB frente a DES: prefiera términos libres a bordo (FOB) con cláusulas de destino libre para maximizar el arbitraje de desvío marítimo durante picos inesperados de precios regionales.",
+        "Cobertura de diferencial estacional: utilizar collares de swap de diferencial temporal para cubrir las inyecciones de almacenamiento estacionales contra las caídas máximas de invierno en el hemisferio norte.",
+        "Unidades flotantes de regasificación (FSRU): Acelerar la capacidad de importación de la terminal mediante el despliegue de embarcaciones FSRU en alta mar, evitando terminales de concreto en tierra de varios años que permiten demoras."
       ]
     }
   ],

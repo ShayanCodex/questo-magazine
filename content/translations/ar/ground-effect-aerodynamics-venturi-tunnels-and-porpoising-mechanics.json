@@ -1,7 +1,7 @@
 {
   "slug": "ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics",
-  "title": "[ar] Ground-Effect Aerodynamics in Formula 1",
-  "excerpt": "[ar] A mechanical engineering monograph on underbody Bernoulli suction, diffuser expansion ratios, aerodynamic center of pressure migration, and non-linear aeroelastic heave oscillations.",
+  "title": "الديناميكا الهوائية ذات التأثير الأرضي في الفورمولا 1",
+  "excerpt": "دراسة هندسية ميكانيكية عن شفط برنولي السفلي، ونسب تمدد الناشر، والمركز الديناميكي الهوائي لهجرة الضغط، وتذبذبات التذبذبات الهوائية غير الخطية.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -13,23 +13,23 @@
     "engineering"
   ],
   "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] High-speed aerodynamic racecar cornering on asphalt track displaying extreme underfloor downforce",
+  "imageAlt": "انعطاف سيارة سباق ديناميكية هوائية عالية السرعة على مسار أسفلت يظهر قوة سفلية شديدة تحت الأرضية",
   "body": [
     {
       "type": "p",
-      "text": "[ar] In high-performance automotive and motorsport engineering, downforce is the sovereign metric dictating cornering grip, braking deceleration, and directional stability. For decades, vehicles generated downforce predominantly through upper-body lifting surfaces—inverted multi-element wings and dive planes. However, wing-generated downforce imposes a severe parasitic penalty: induced drag, which scales quadratically with angle of attack and degrades straight-line velocity. Ground-effect aerodynamics circumvents this trade-off by transforming the entire vehicle floor into an integrated Bernoulli suction pump."
+      "text": "في هندسة السيارات ورياضة السيارات عالية الأداء، القوة الضاغطة هي المقياس السيادي الذي يملي قبضة المنعطفات، وتباطؤ الكبح، واستقرار الاتجاه. لعقود من الزمن، كانت المركبات تولد القوة الضاغطة في الغالب من خلال أسطح رفع الجزء العلوي من الجسم - الأجنحة المقلوبة متعددة العناصر وطائرات الغوص. ومع ذلك، فإن القوة الضاغطة الناتجة عن الجناح تفرض عقوبة طفيلية شديدة: السحب المستحث، الذي يتسع بشكل تربيعي مع زاوية الهجوم ويقلل من سرعة الخط المستقيم. تتغلب الديناميكيات الهوائية ذات التأثير الأرضي على هذه المقايضة عن طريق تحويل أرضية السيارة بالكامل إلى مضخة شفط بيرنولي متكاملة."
     },
     {
       "type": "p",
-      "text": "[ar] By channeling incoming airflow through convergent-divergent Venturi tunnels positioned along the underbody, pressure is dramatically reduced beneath the chassis while creating minimal frontal wake turbulence. When executed at peak efficiency, ground-effect floors generate over 60% of total vehicle downforce with a lift-to-drag efficiency ratio ($L/D$) exceeding 4.5:1, double the aerodynamic efficiency of conventional overhead wings."
+      "text": "من خلال توجيه تدفق الهواء الوارد من خلال أنفاق فنتوري المتقاربة والمتباعدة الموجودة على طول الجزء السفلي من الهيكل، يتم تقليل الضغط بشكل كبير أسفل الهيكل مع خلق الحد الأدنى من الاضطرابات الأمامية. عند تنفيذها بأعلى كفاءة، تولد الأرضيات ذات التأثير الأرضي أكثر من 60% من إجمالي القوة الضاغطة للمركبة مع نسبة كفاءة الرفع إلى السحب (L/D$) تتجاوز 4.5:1، أي ضعف الكفاءة الديناميكية الهوائية للأجنحة العلوية التقليدية."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. The Venturi Principle: Underbody Pressure Differentials"
+      "text": "1. مبدأ فنتوري: فروق الضغط تحت الجسم"
     },
     {
       "type": "p",
-      "text": "[ar] The fundamental physics of ground effect rests on the incompressible Bernoulli principle and mass continuity in fluid dynamics:"
+      "text": "تعتمد الفيزياء الأساسية للتأثير الأرضي على مبدأ برنولي غير القابل للضغط واستمرارية الكتلة في ديناميكيات الموائع:"
     },
     {
       "type": "code",
@@ -38,65 +38,65 @@
     },
     {
       "type": "p",
-      "text": "[ar] As ambient air enters the floor, the throat section constricts tunnel cross-sectional area ($A_2 < A_1$). By conservation of mass, flow velocity accelerates sharply ($v_2 > v_1$), precipitating a localized drop in static air pressure ($P_2 \\ll P_1$). The higher atmospheric pressure bearing down on the vehicle's upper body creates a massive downward suction force across the flat reference plane."
+      "text": "عندما يدخل الهواء المحيط إلى الأرض، فإن قسم الحلق يضيق مساحة المقطع العرضي للنفق ($A_2 < A_1$). من خلال الحفاظ على الكتلة، تتسارع سرعة التدفق بشكل حاد ($v_2 > v_1$)، مما يؤدي إلى انخفاض موضعي في ضغط الهواء الثابت ($P_2 \\ll P_1$). يؤدي الضغط الجوي المرتفع المؤثر على الجزء العلوي من جسم السيارة إلى خلق قوة شفط هائلة للأسفل عبر المستوى المرجعي المسطح."
     },
     {
       "type": "quote",
-      "text": "[ar] Ground effect does not push the car into the asphalt; the atmosphere pushes the car down into the low-pressure void created by its own underfloor velocity.",
-      "cite": "[ar] Hiroshi Tanaka, Robotics & Applied Physics Fellow"
+      "text": "التأثير الأرضي لا يدفع السيارة إلى الأسفلت؛ يدفع الغلاف الجوي السيارة إلى الأسفل في فراغ الضغط المنخفض الناتج عن سرعتها تحت الأرضية.",
+      "cite": "هيروشي تاناكا، زميل الروبوتات والفيزياء التطبيقية"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Diffuser Expansion and Boundary Layer Separation"
+      "text": "2. توسيع الناشر وفصل الطبقة الحدودية"
     },
     {
       "type": "p",
-      "text": "[ar] Downstream of the throat, the tunnel cross-section expands at a controlled angle through the rear diffuser. The function of the diffuser is not merely to create downforce locally, but to act as an aerodynamic expansion pump that gradually restores underfloor air velocity to ambient freestream speed with minimal kinetic loss."
+      "text": "أسفل الحلق، يتوسع المقطع العرضي للنفق بزاوية يمكن التحكم فيها من خلال الناشر الخلفي. لا تقتصر وظيفة الناشر على إنشاء قوة سفلية محليًا فحسب، بل تعمل كمضخة تمدد هوائية تعمل تدريجيًا على استعادة سرعة الهواء تحت الأرضية إلى سرعة التيار الحر المحيط بأقل قدر من الخسارة الحركية."
     },
     {
       "type": "p",
-      "text": "[ar] The critical engineering challenge is preventing adverse pressure gradient separation. If the diffuser expansion angle exceeds 7 to 10 degrees, the low-energy boundary layer along the tunnel ceiling separates, causing a catastrophic aerodynamic stall that collapses underfloor suction instantly."
+      "text": "التحدي الهندسي الحاسم هو منع فصل الضغط التدرج السلبي. إذا تجاوزت زاوية تمدد الناشر 7 إلى 10 درجات، تنفصل الطبقة الحدودية منخفضة الطاقة على طول سقف النفق، مما يتسبب في توقف ديناميكي هوائي كارثي يؤدي إلى انهيار الشفط تحت الأرضية على الفور."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Floor Edge Sealing: Deploying aerodynamic vortex generators and strakes along the floor perimeter prevents high-pressure lateral air from bleeding into the low-pressure underbody cavity.",
-        "[ar] Ride Height Sensitivity: Downforce scales exponentially as ground clearance decreases until boundary layer friction chokes mass airflow.",
-        "[ar] Center of Pressure Stability: Ensuring the aerodynamic balance remains stable across changing pitch, roll, and yaw angles during high-speed cornering transitions."
+        "إحكام إغلاق حافة الأرضية: يؤدي نشر مولدات الدوامات الديناميكية الهوائية والشرائط على طول محيط الأرضية إلى منع تدفق الهواء الجانبي عالي الضغط إلى التجويف السفلي منخفض الضغط.",
+        "حساسية ارتفاع الركوب: تتزايد القوة الضاغطة بشكل كبير مع انخفاض الخلوص الأرضي حتى يؤدي احتكاك الطبقة الحدودية إلى اختناق تدفق الهواء الشامل.",
+        "مركز استقرار الضغط: ضمان بقاء التوازن الديناميكي الهوائي مستقرًا عبر زوايا الميل والالتفاف والانعراج المتغيرة أثناء التحولات في المنعطفات عالية السرعة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Ground Effect Aerodynamics & Venturi Tunnels"
+      "text": "3. درس فيديو رئيسي: الديناميكا الهوائية ذات التأثير الأرضي وأنفاق الفنتوري"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ",
-      "title": "[ar] Aerodynamic Flow Fields & Formula 1 Ground-Effect Engineering",
-      "caption": "[ar] Technical breakdown of underfloor airflow physics, ground proximity downforce, and aerodynamic floor edge sealing."
+      "title": "مجالات التدفق الديناميكي الهوائي وهندسة التأثير الأرضي للفورمولا 1",
+      "caption": "الانهيار الفني لفيزياء تدفق الهواء تحت الأرضية، والقوة السفلية القريبة من الأرض، وختم حافة الأرضية الديناميكية الهوائية."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. The Mechanics of Porpoising: Non-Linear Aeroelastic Resonance"
+      "text": "4. ميكانيكا خنازير البحر: الرنين الهوائي غير الخطي"
     },
     {
       "type": "p",
-      "text": "[ar] When ground-effect underbodies operate at sub-millimeter ride heights at speeds exceeding 300 km/h, they risk entering a severe self-sustaining oscillation known as porpoising. As velocity increases, underfloor suction increases, pulling the vehicle suspension closer to the asphalt."
+      "text": "عندما تعمل الهياكل السفلية ذات التأثير الأرضي على ارتفاعات ركوب أقل من ملليمتر بسرعات تتجاوز 300 كم/ساعة، فإنها تخاطر بالدخول في تذبذب شديد مكتفي ذاتيًا يُعرف باسم خنازير البحر. ومع زيادة السرعة، يزداد الشفط تحت الأرضية، مما يؤدي إلى تقريب نظام تعليق السيارة من الأسفلت."
     },
     {
       "type": "p",
-      "text": "[ar] At a critical proximity threshold, the physical gap between the floor throat and the track surface chokes airflow or triggers sudden boundary layer detachment. Underbody downforce instantly collapses, and the compressed mechanical suspension rebounds violently upward. As ride height increases, airflow re-attaches, suction re-engages, and the destructive vertical cycle repeats at frequencies between 5 and 8 Hz, subjecting drivers to violent longitudinal and vertical g-forces."
+      "text": "عند عتبة القرب الحرجة، تؤدي الفجوة المادية بين الحلق الأرضي وسطح المسار إلى اختناق تدفق الهواء أو تؤدي إلى انفصال مفاجئ للطبقة الحدودية. تنهار القوة الضاغطة أسفل الجسم على الفور، ويرتد نظام التعليق الميكانيكي المضغوط بعنف إلى الأعلى. مع زيادة ارتفاع الركوب، يعاد تدفق الهواء، ويعاد تشغيل الشفط، وتتكرر الدورة الرأسية المدمرة بترددات تتراوح بين 5 و8 هرتز، مما يعرض السائقين لقوى تسارع طولية وعمودية عنيفة."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Mechanical Engineering Takeaways"
+      "text": "5. الوجبات السريعة في الهندسة الميكانيكية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Aero-Mechanical Coupling: High downforce ground-effect designs require hyper-stiff suspension heave springs to decouple aerodynamic suction from mechanical wheel travel.",
-        "[ar] Diffuser Gradient Management: Implement boundary layer suction slots or vortex generators to prevent stall separation during high-rake pitch attitudes.",
-        "[ar] Safety & Ride Clearance: Establish minimum ride height enforcement and floor skid-block wear telemetry to prevent catastrophic downforce loss on track undulations."
+        "الاقتران الميكانيكي الهوائي: تتطلب تصميمات التأثير الأرضي ذات القوة السفلية العالية نوابض تعليق شديدة الصلابة لفصل الشفط الديناميكي الهوائي عن حركة العجلات الميكانيكية.",
+        "إدارة تدرج الناشر: قم بتنفيذ فتحات شفط الطبقة الحدودية أو مولدات الدوامة لمنع فصل المماطلة أثناء مواقف الملعب العالية.",
+        "السلامة وتخليص الركوب: وضع حد أدنى لفرض ارتفاع الركوب وقياس تآكل حاجز الانزلاق على الأرض لمنع فقدان القوة الضاغطة الكارثية على تموجات المسار."
       ]
     }
   ],

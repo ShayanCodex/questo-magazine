@@ -1,7 +1,7 @@
 {
   "slug": "the-grid-as-an-instrument",
-  "title": "[fr] The Grid as an Instrument",
-  "excerpt": "[fr] A masterclass in editorial architecture, analyzing Jan Tschichold's Golden Canon of page division, modular baseline mathematics, and how structural grids transform chaotic content into harmonic literature.",
+  "title": "La grille comme instrument",
+  "excerpt": "Une masterclass en architecture éditoriale, analysant le canon d'or de Jan Tschichold sur la division des pages, les mathématiques de base modulaires et la manière dont les grilles structurelles transforment le contenu chaotique en littérature harmonique.",
   "date": "2026-11-03",
   "updated": "2026-11-14",
   "author": "Saskia Lindqvist",
@@ -12,44 +12,44 @@
     "swiss-style"
   ],
   "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Swiss International Style typographic specimen book displaying strict modular baseline grids",
+  "imageAlt": "Livre d'échantillons typographiques de style international suisse affichant des grilles de base modulaires strictes.",
   "body": [
     {
       "type": "p",
-      "text": "[fr] To the untrained eye, a finely designed book or editorial magazine appears effortless. The words flow across the page with an innate naturalness that invites immediate immersion. Yet this apparent ease is an optical illusion. Beneath every masterpiece of publication design lies a hidden, rigorous armature of geometric lines, proportional ratios, and baseline rhythms: the typographic grid."
+      "text": "Pour un œil non averti, un livre ou un magazine éditorial finement conçu apparaît sans effort. Les mots coulent sur la page avec un naturel inné qui invite à une immersion immédiate. Pourtant cette apparente facilité n’est qu’une illusion d’optique. Sous chaque chef-d’œuvre de la conception de publications se cache une armature cachée et rigoureuse de lignes géométriques, de rapports proportionnels et de rythmes de base : la grille typographique."
     },
     {
       "type": "p",
-      "text": "[fr] The grid is not an aesthetic constraint; it is a musical instrument. Just as a violin relies on precise mathematical string lengths to produce pure acoustic pitch, a page layout relies on harmonious spatial ratios to convert arbitrary alphabetic characters into resonant visual literature."
+      "text": "La grille n'est pas une contrainte esthétique ; c'est un instrument de musique. Tout comme un violon s'appuie sur des longueurs de cordes mathématiques précises pour produire une tonalité acoustique pure, une mise en page s'appuie sur des rapports spatiaux harmonieux pour convertir des caractères alphabétiques arbitraires en littérature visuelle résonante."
     },
     {
       "type": "h2",
-      "text": "[fr] The Secret Geometry of Jan Tschichold’s Golden Canon"
+      "text": "La géométrie secrète du Canon d’Or de Jan Tschichold"
     },
     {
       "type": "p",
-      "text": "[fr] In his seminal 1953 monograph 'The Form of the Book', German typographer Jan Tschichold revealed the long-forgotten medieval canon of manuscript division. By drawing diagonal construction lines across a double-page spread—connecting opposite corners and intersecting through page centers—medieval scribes divided both page width and page height into nine equal increments."
+      "text": "Dans sa monographie phare de 1953 « La forme du livre », le typographe allemand Jan Tschichold a révélé le canon médiéval oublié depuis longtemps de la division des manuscrits. En traçant des lignes de construction diagonales sur une double page, reliant les coins opposés et se croisant par le centre des pages, les scribes médiévaux divisaient la largeur et la hauteur de la page en neuf incréments égaux."
     },
     {
       "type": "p",
-      "text": "[fr] The resulting text block possessed the exact proportional ratio (2:3) of the overall page itself. Furthermore, the outer margins stood in harmonic proportion to each other: inner margin = 2 parts, top margin = 3 parts, outer margin = 4 parts, and bottom margin = 6 parts. This bottom-heavy margin allocation was not ornamental; it accounted for human ergonomics, providing comfortable resting space for the reader's thumbs without obscuring a single word of text."
+      "text": "Le bloc de texte résultant possédait le rapport proportionnel exact (2:3) de la page globale elle-même. De plus, les marges extérieures étaient en proportion harmonieuse les unes par rapport aux autres : marge intérieure = 2 parties, marge supérieure = 3 parties, marge extérieure = 4 parties et marge inférieure = 6 parties. Cette allocation de marge importante au bas de l’échelle n’était pas ornementale ; il tenait compte de l'ergonomie humaine, offrant un espace de repos confortable pour les pouces du lecteur sans obscurcir un seul mot de texte."
     },
     {
       "type": "quote",
-      "text": "[fr] The perfection of a page layout is attained when the proportions of the margins and the text area are in harmony with the natural dimensions of the page. Harmony is not a matter of taste; it is a mathematical fact.",
-      "cite": "[fr] Jan Tschichold, The Form of the Book"
+      "text": "La perfection d'une mise en page est atteinte lorsque les proportions des marges et de la zone de texte sont en harmonie avec les dimensions naturelles de la page. L'harmonie n'est pas une question de goût ; c'est un fait mathématique.",
+      "cite": "Jan Tschichold, La forme du livre"
     },
     {
       "type": "h2",
-      "text": "[fr] The Rhythm of the Baseline Grid"
+      "text": "Le rythme de la grille de base"
     },
     {
       "type": "p",
-      "text": "[fr] While vertical columns dictate horizontal content flow, the vertical baseline grid establishes the temporal tempo of the reading experience. In a disciplined editorial system, every single typographical element—from the 64-point cover headline down to the 8-point photo caption—must snap to integer multiples of the primary body copy leading."
+      "text": "Alors que les colonnes verticales dictent le flux de contenu horizontal, la grille de base verticale établit le tempo temporel de l'expérience de lecture. Dans un système éditorial discipliné, chaque élément typographique, du titre de couverture en 64 points jusqu'à la légende de la photo en 8 points, doit s'aligner sur des multiples entiers de l'interligne du corps principal du texte."
     },
     {
       "type": "p",
-      "text": "[fr] If body copy is set at 11 points on a 16-point line-height, the baseline grid unit is exactly 16 points (or 24 pixels). A secondary heading might be 24 points with a 32-point line-height (spanning exactly 2 baseline units). A pullquote might span 3 baseline units. This ensures that across multi-column spreads, lines of text in adjacent columns align horizontally with razor-like precision, creating a subconscious sense of order and structural stability."
+      "text": "Si le corps du texte est défini sur 11 points sur une hauteur de ligne de 16 points, l'unité de grille de base est exactement de 16 points (ou 24 pixels). Un cap secondaire peut comporter 24 points avec une hauteur de ligne de 32 points (couvrant exactement 2 unités de ligne de base). Un pullquote peut s’étendre sur 3 unités de base. Cela garantit que sur les pages multi-colonnes, les lignes de texte des colonnes adjacentes s'alignent horizontalement avec une précision de rasoir, créant ainsi un sentiment inconscient d'ordre et de stabilité structurelle."
     },
     {
       "type": "code",
@@ -58,27 +58,27 @@
     },
     {
       "type": "h3",
-      "text": "[fr] Anatomy of an Award-Winning 12-Column System"
+      "text": "Anatomie d'un système primé à 12 colonnes"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Column Flexibility: 12 columns can be cleanly partitioned into 1, 2, 3, 4, or 6 equal sub-modules without fractional pixel remainders.",
-        "[fr] Gutter Consistency: Maintaining a uniform 24px or 32px gutter across all viewport breakpoints ensures consistent negative space breathing room.",
-        "[fr] Asymmetric Tension: Anchoring primary narrative copy across columns 3 through 10, leaving outer columns open for editorial metadata, author bios, and large marginalia pullquotes."
+        "Flexibilité des colonnes : 12 colonnes peuvent être proprement divisées en 1, 2, 3, 4 ou 6 sous-modules égaux sans restes de pixels fractionnaires.",
+        "Cohérence des gouttières : le maintien d'une gouttière uniforme de 24 px ou 32 px sur tous les points d'arrêt de la fenêtre d'affichage garantit une marge de manœuvre constante pour les espaces négatifs.",
+        "Tension asymétrique : ancrage de la copie narrative principale dans les colonnes 3 à 10, laissant les colonnes extérieures ouvertes pour les métadonnées éditoriales, les biographies des auteurs et les grandes citations marginales."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] Translating Print Rigor to Dynamic Responsive Viewports"
+      "text": "Traduire la rigueur de l'impression en fenêtres réactives dynamiques"
     },
     {
       "type": "p",
-      "text": "[fr] A common critique of early web design was that responsive viewports made grid discipline impossible. Because screen widths vary continuously from 360px mobile viewports to 3840px 4K workstations, critics argued that fixed proportions were obsolete. However, modern CSS features like CSS Grid Layout, subgrid, and mathematical clamp() functions allow us to translate Tschichold's Golden Canon directly into responsive code."
+      "text": "Une critique courante des premières conceptions Web était que les fenêtres réactives rendaient impossible la discipline de la grille. Étant donné que les largeurs d'écran varient continuellement, depuis les fenêtres mobiles de 360 px jusqu'aux postes de travail 4K de 3 840 px, les critiques ont fait valoir que les proportions fixes étaient obsolètes. Cependant, les fonctionnalités CSS modernes telles que les fonctions CSS Grid Layout, subgrid et mathématique clamp() nous permettent de traduire le Golden Canon de Tschichold directement en code réactif."
     },
     {
       "type": "p",
-      "text": "[fr] By binding fluid typography to proportional container widths, modern editorial websites can maintain harmonious margin-to-column ratios regardless of screen size. The device changes, but the mathematical harmony remains eternal."
+      "text": "En liant une typographie fluide à des largeurs de conteneur proportionnelles, les sites Web éditoriaux modernes peuvent maintenir des ratios marge/colonne harmonieux quelle que soit la taille de l'écran. Le dispositif change, mais l’harmonie mathématique reste éternelle."
     }
   ],
   "sourceHash": "4fd98e9bd390dbbfbac91e6ac9fde2b54c874749"

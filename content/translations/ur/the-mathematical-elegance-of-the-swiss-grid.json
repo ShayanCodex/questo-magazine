@@ -1,7 +1,7 @@
 {
   "slug": "the-mathematical-elegance-of-the-swiss-grid",
-  "title": "[ur] The Mathematical Elegance of the Swiss Grid",
-  "excerpt": "[ur] A deep analysis of Josef Müller-Brockmann's modular layout mathematics, proportional margins, and why the grid remains the foundational grammar of visual communication.",
+  "title": "سوئس گرڈ کی ریاضیاتی خوبصورتی",
+  "excerpt": "Josef Müller-Brockmann کی ماڈیولر ترتیب ریاضی، متناسب مارجن، اور کیوں گرڈ بصری مواصلات کا بنیادی گرامر رہتا ہے کا گہرا تجزیہ۔",
   "date": "2026-11-09",
   "updated": "2026-11-13",
   "author": "Saskia Lindqvist",
@@ -12,40 +12,40 @@
     "graphic-design"
   ],
   "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Geometric modular architectural lines and typographic proportions on stark white paper",
+  "imageAlt": "جیومیٹرک ماڈیولر آرکیٹیکچرل لائنیں اور بالکل سفید کاغذ پر ٹائپوگرافک تناسب",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The grid is not a prison; it is a canvas of liberating discipline. When Josef Müller-Brockmann and the pioneers of the Zurich School formalized the International Typographic Style in the 1950s, they sought to purge graphic design of arbitrary subjective whimsy in favor of universal clarity, mathematical harmony, and democratic readability."
+      "text": "گرڈ جیل نہیں ہے؛ یہ نظم و ضبط کو آزاد کرنے کا کینوس ہے۔ جب جوزف مولر-بروک مین اور زیورخ اسکول کے علمبرداروں نے 1950 کی دہائی میں بین الاقوامی ٹائپوگرافک انداز کو باقاعدہ شکل دی، تو انہوں نے عالمگیر وضاحت، ریاضیاتی ہم آہنگی، اور جمہوری پڑھنے کی اہلیت کے حق میں من مانی موضوعی سنکی کے گرافک ڈیزائن کو صاف کرنے کی کوشش کی۔"
     },
     {
       "type": "h2",
-      "text": "[ur] Modular Arithmetic and Harmonic Proportions"
+      "text": "ماڈیولر ریاضی اور ہارمونک تناسب"
     },
     {
       "type": "p",
-      "text": "[ur] At its heart, the Swiss grid relies on proportional division. A standard 12-column layout can be subdivided into halves, thirds, quarters, and sixths without ever breaking horizontal or vertical baseline rhythm. Every headline, pullquote, and caption anchors directly to an underlying mathematical coordinate system."
+      "text": "اس کے دل میں، سوئس گرڈ متناسب تقسیم پر انحصار کرتا ہے۔ ایک معیاری 12 کالم لے آؤٹ کو کبھی بھی افقی یا عمودی بیس لائن تال کو توڑے بغیر نصف، تہائی، چوتھائی، اور چھٹے حصوں میں تقسیم کیا جا سکتا ہے۔ ہر سرخی، پل کوٹ، اور کیپشن براہ راست ایک بنیادی ریاضیاتی کوآرڈینیٹ سسٹم میں اینکرز کرتا ہے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.",
-      "cite": "[ur] Josef Müller-Brockmann, Grid Systems in Graphic Design"
+      "text": "گرڈ سسٹم ایک امداد ہے، ضمانت نہیں۔ یہ متعدد ممکنہ استعمال کی اجازت دیتا ہے اور ہر ڈیزائنر اپنے ذاتی انداز کے مطابق حل تلاش کر سکتا ہے۔ لیکن گرڈ کو استعمال کرنے کا طریقہ سیکھنا چاہیے۔ یہ ایک فن ہے جس میں مشق کی ضرورت ہے۔",
+      "cite": "جوزف مولر-بروک مین، گرافک ڈیزائن میں گرڈ سسٹمز"
     },
     {
       "type": "h3",
-      "text": "[ur] Essential Axioms of the Swiss Methodology"
+      "text": "سوئس طریقہ کار کے ضروری محور"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
-        "[ur] Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
-        "[ur] Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
+        "بیس لائن گرڈ پر سختی سے عمل پیرا ہونا: متن کی ہر سطر، فونٹ کے سائز سے قطع نظر، بیس لائن کی اونچائی کے عددی ضربوں پر سمٹ جاتی ہے۔",
+        "غیر متناسب متحرک توازن: ایکٹو وائٹ اسپیس تناؤ اور فلش-بائیں نوع ٹائپ کے ساتھ جامد سینٹرنگ کو تبدیل کرنا۔",
+        "درجہ بندی ٹائپوگرافک کنٹراسٹ: بڑے پیمانے پر ڈسپلے ٹائٹلز اور کمپیکٹ، واضح باڈی کاپی کے درمیان انتہائی پیمانے پر تفاوت کا استعمال۔"
       ]
     },
     {
       "type": "p",
-      "text": "[ur] In our contemporary digital ecosystem, where responsive layouts must adapt instantaneously across watch screens, smartphones, and ultra-wide desktop monitors, the mathematical rigor of the Swiss grid remains our most robust visual compass."
+      "text": "ہمارے عصری ڈیجیٹل ماحولیاتی نظام میں، جہاں ریسپانسیو لے آؤٹس کو فوری طور پر گھڑی کی اسکرینوں، اسمارٹ فونز، اور الٹرا وائیڈ ڈیسک ٹاپ مانیٹرز میں موافق ہونا چاہیے، سوئس گرڈ کی ریاضیاتی سختی ہمارا سب سے مضبوط بصری کمپاس بنی ہوئی ہے۔"
     }
   ],
   "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"

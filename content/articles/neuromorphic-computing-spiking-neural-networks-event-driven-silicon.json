@@ -1,0 +1,91 @@
+{
+  "slug": "neuromorphic-computing-spiking-neural-networks-event-driven-silicon",
+  "title": "Neuromorphic Computing & Spiking Neural Networks",
+  "excerpt": "A computational neuroscience and hardware architecture monograph on asynchronous event-driven silicon, Leaky Integrate-and-Fire neurons, and sub-milliwatt edge intelligence.",
+  "date": "2026-11-15",
+  "author": "Elena Rostova",
+  "tags": [
+    "technology",
+    "ai",
+    "hardware",
+    "neuroscience",
+    "machine-learning",
+    "algorithms"
+  ],
+  "image": "/images/articles/neuromorphic-chip.jpg",
+  "imageAlt": "Futuristic electronic printed circuit board and high performance microprocessor chip with illuminated neural connection pathways",
+  "body": [
+    {
+      "type": "p",
+      "text": "Contemporary deep neural networks are computationally voracious. Operating on synchronous von Neumann architectures, standard GPUs and TPUs execute dense matrix multiplications by constantly shuttling multi-gigabyte weight tensors between high-bandwidth memory (HBM) and arithmetic logic units (ALUs), dissipating hundreds of watts per accelerator. In stark contrast, the biological human brain executes sophisticated sensory perception, motor control, and contextual reasoning within an austere power budget of approximately twenty watts."
+    },
+    {
+      "type": "p",
+      "text": "Neuromorphic engineering abandons the clock-driven synchronous paradigm entirely. By emulating the biological architecture of cortical synapses and axons, neuromorphic processors execute computation only when information changes—transmitting sparse, asynchronous binary action potentials (spikes) across massively parallel, non-von Neumann crossbar arrays where processing and memory are co-located in the same physical substrate."
+    },
+    {
+      "type": "h2",
+      "text": "1. Leaky Integrate-and-Fire Dynamics in Silicon"
+    },
+    {
+      "type": "p",
+      "text": "At the mathematical foundation of spiking neural networks (SNNs) is the Leaky Integrate-and-Fire (LIF) neuron model. The membrane potential $V(t)$ integrates incoming synaptic currents over continuous time, decaying exponentially toward a resting potential according to the membrane time constant $\\tau_m$:"
+    },
+    {
+      "type": "p",
+      "text": "$\\tau_m \\frac{dV(t)}{dt} = -(V(t) - V_{\\text{rest}}) + R_m I(t)$. When the membrane potential breaches a predetermined voltage threshold $V_{\\text{th}}$, the neuron fires a discrete spike into the network, resets its potential, and enters a refractory period. Because neurons remain quiescent until activated by temporal spikes, neuromorphic silicon consumes zero dynamic power during periods of static input, achieving energy efficiencies three to four orders of magnitude higher than conventional digital accelerators."
+    },
+    {
+      "type": "quote",
+      "text": "In neuromorphic computing, time is not an arbitrary discrete index in a clock register; time is an intrinsic physical coordinate encoded directly in the latency of electrical spikes.",
+      "cite": "Elena Rostova, Neuromorphic Architectures & Neural Silicon"
+    },
+    {
+      "type": "h2",
+      "text": "2. Non-Von Neumann Memory-Crossbar Co-Location"
+    },
+    {
+      "type": "p",
+      "text": "In conventional hardware architectures, the physical separation of compute units and memory banks imposes the infamous 'von Neumann memory wall'—over 80% of total energy dissipation is wasted purely on copper interconnect transport. Neuromorphic platforms, such as Intel Loihi, IBM TrueNorth, and emerging memristor arrays, eliminate this bottleneck through distributed synaptic crossbars."
+    },
+    {
+      "type": "p",
+      "text": "Each artificial synapse stores its programmatic weight locally using non-volatile resistive RAM (ReRAM) or phase-change memory (PCM). When a voltage spike traverses a word-line, Ohm's law and Kirchhoff's current law naturally compute vector-matrix products at the speed of electricity: $I_j = \\sum_i V_i \\cdot G_{ij}$, where conductance $G_{ij}$ represents the synaptic efficacy. Computation occurs in-situ inside the memory fabric itself."
+    },
+    {
+      "type": "h2",
+      "text": "3. Video Masterclass: Principles of Neuromorphic Engineering"
+    },
+    {
+      "type": "video",
+      "title": "Neuromorphic Computing: Brain-Inspired Hardware and Spiking Neural Networks",
+      "caption": "A technical seminar on event-based vision sensors, asynchronous routing fabrics, and sub-milliwatt sensory edge processing.",
+      "src": "https://www.youtube-nocookie.com/embed/H4_G3Lz7m9U"
+    },
+    {
+      "type": "h2",
+      "text": "4. Event-Based Vision and Autonomous Edge Applications"
+    },
+    {
+      "type": "p",
+      "text": "Traditional cameras capture the world in discrete, redundant frames (e.g., 60 frames per second), generating huge data volumes even when viewing completely stationary scenes. Neuromorphic Dynamic Vision Sensors (DVS), by contrast, consist of autonomous pixels that emit an asynchronous spike only when local luminance changes by a threshold percentage."
+    },
+    {
+      "type": "p",
+      "text": "When paired with spiking neural processors, event-based sensors enable micro-second temporal resolution, high dynamic range (>120 dB), and motion blur elimination while operating on milliwatts of power. These characteristics make neuromorphic systems ideal for high-speed robotic stabilization, prosthetic limb controllers, satellite tracking, and edge biomedical telemetry."
+    },
+    {
+      "type": "h2",
+      "text": "5. Systems Takeaways: Biological Silicon Architecture"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sparsity as Efficiency: Computation executes exclusively upon event arrivals; quiescent neurons consume only static sub-threshold leakage power.",
+        "Analog In-Memory Acceleration: Memristive crossbars compute physical Kirchhoff summation directly in the storage domain without memory shuttling.",
+        "Temporal Coding: Information is represented through spike timing, inter-spike intervals, and phase synchrony rather than 16-bit floating-point registers.",
+        "Edge Autonomy: Sub-milliwatt power envelopes allow real-time classification on untethered sensor nodes, drones, and wearable medical monitors."
+      ]
+    }
+  ]
+}

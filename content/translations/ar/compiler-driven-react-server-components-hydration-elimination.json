@@ -1,7 +1,7 @@
 {
   "slug": "compiler-driven-react-server-components-hydration-elimination",
-  "title": "[ar] Compiler-Driven React & Server Components",
-  "excerpt": "[ar] A technical treatise on React Compiler AST static analysis, React Server Components (RSC) wire formats, the obsolescence of manual useMemo, and eliminating client hydration overhead.",
+  "title": "مكونات React & Server التي تعتمد على المترجم",
+  "excerpt": "أطروحة فنية حول التحليل الثابت لـ React Compiler AST، وتنسيقات أسلاك React Server Components (RSC)، وتقادم الاستخدام اليدوي، والتخلص من النفقات العامة لترطيب العميل.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
   "tags": [
@@ -13,27 +13,27 @@
     "performance"
   ],
   "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Monochrome IDE display showing optimized abstract syntax tree compiler transformations",
+  "imageAlt": "عرض IDE أحادي اللون يعرض تحولات مُحسَّنة لمترجم شجرة بناء الجملة المجردة",
   "body": [
     {
       "type": "p",
-      "text": "[ar] For over a decade, client-side web development has operated under a fragile mental model: developers author declarative UI components in JavaScript, which browsers download, parse, execute, and re-hydrate against server-rendered HTML. This dual-cost penalty—shipping code once to render on the server, and shipping that identical code a second time so the client runtime can attach event listeners—has bloated average mobile JavaScript bundles past three megabytes. With React 19 and the arrival of the React Compiler, the paradigm shifts definitively from runtime heuristic evaluation to build-time AST static optimization."
+      "text": "لأكثر من عقد من الزمن، عمل تطوير الويب من جانب العميل في ظل نموذج عقلي هش: يقوم المطورون بتأليف مكونات واجهة المستخدم التعريفية في JavaScript، والتي تقوم المتصفحات بتنزيلها وتحليلها وتنفيذها وإعادة ترطيبها مقابل HTML المقدم من الخادم. أدت هذه العقوبة ذات التكلفة المزدوجة - عرض رمز الشحن مرة واحدة على الخادم، وشحن هذا الرمز المطابق مرة ثانية حتى يتمكن وقت تشغيل العميل من إرفاق مستمعي الأحداث - إلى تضخم متوسط ​​حزم جافا سكريبت للجوال بما يتجاوز ثلاثة ميغا بايت. مع React 19 ووصول React Compiler، يتحول النموذج بشكل نهائي من التقييم الإرشادي لوقت التشغيل إلى التحسين الثابت لـ AST أثناء البناء."
     },
     {
       "type": "p",
-      "text": "[ar] The fundamental objective of this architectural evolution is not merely incremental benchmark improvement, but the total elimination of runtime overhead. By analyzing component source code as a directed acyclic graph of value dependencies, modern compilers can inject memoization guards at compile time, eliminating the cognitive tax of manual hooks while delivering predictable, zero-jank frame rates on memory-constrained devices."
+      "text": "إن الهدف الأساسي لهذا التطور المعماري ليس مجرد تحسين تدريجي في المعايير، بل الإزالة الكاملة للنفقات العامة في وقت التشغيل. من خلال تحليل الكود المصدري للمكون كرسم بياني غير دوري موجه لتبعيات القيمة، يمكن للمترجمين الحديثين حقن حراس الحفظ في وقت الترجمة، مما يزيل الضريبة المعرفية للخطافات اليدوية مع توفير معدلات إطارات يمكن التنبؤ بها وخالية من الأخطاء على الأجهزة ذات الذاكرة المحدودة."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. The React Compiler: Automated Fine-Grained Memoization"
+      "text": "1. مترجم React: الحفظ الآلي الدقيق"
     },
     {
       "type": "p",
-      "text": "[ar] Historically, React developers were burdened with manual memoization primitives: useMemo, useCallback, and React.memo. These primitives were inherently brittle. A solitary unstable object reference or unmemoized callback in a parent component would invalidate down-tree dependency arrays, triggering cascading re-renders across the component tree."
+      "text": "تاريخيًا، كان مطورو React مثقلين ببدائل الحفظ اليدوي: useMemo، وuseCallback، وReact.memo. كانت هذه البدائيات هشة بطبيعتها. قد يؤدي مرجع كائن منفرد غير مستقر أو رد اتصال غير محفوظ في مكون أصلي إلى إبطال مصفوفات التبعية الموجودة في الشجرة السفلية، مما يؤدي إلى عمليات إعادة العرض المتتالية عبر شجرة المكونات."
     },
     {
       "type": "p",
-      "text": "[ar] The React Compiler (formerly React Forget) functions as a Babel/Vite compile-time pass that parses JavaScript into an intermediate representation (HIR) and performs semantic analysis against the Rules of React. By analyzing variable lifetimes and mutation boundaries, the compiler automatically synthesizes cached computation slots ($[0], $[1]) directly into emitted bytecode:"
+      "text": "يعمل مترجم React (المعروف سابقًا باسم React Forget) كممر وقت الترجمة Babel/Vite الذي يوزع JavaScript إلى تمثيل وسيط (HIR) ويجري تحليلًا دلاليًا مقابل قواعد React. من خلال تحليل فترات الحياة المتغيرة وحدود الطفرات، يقوم المترجم تلقائيًا بتجميع فتحات الحساب المخزنة مؤقتًا ($[0], $[1]) مباشرة في الكود الثانوي المنبعث:"
     },
     {
       "type": "code",
@@ -42,71 +42,71 @@
     },
     {
       "type": "p",
-      "text": "[ar] Notice that the compiler does not simply memoize the return JSX element; it identifies sub-computations and caches them independently. If title updates while wordCount remains identical, the mathematical calculation for readingTime is bypassed entirely, and the existing primitive value is reused without allocation."
+      "text": "لاحظ أن المترجم لا يحفظ ببساطة عنصر JSX المرتجع؛ فهو يحدد الحسابات الفرعية ويخزنها مؤقتًا بشكل مستقل. إذا تم تحديث العنوان بينما ظل عدد الكلمات متطابقًا، فسيتم تجاوز الحساب الرياضي لوقت القراءة بالكامل، ويتم إعادة استخدام القيمة الأولية الموجودة دون تخصيص."
     },
     {
       "type": "quote",
-      "text": "[ar] The greatest compiler optimization is not making slow code run slightly faster; it is eliminating the need for human developers to manually decorate functional logic with memory guards.",
-      "cite": "[ar] Tariq Mahmood, Principal Systems Architect"
+      "text": "إن أعظم تحسين للمترجم هو عدم جعل التعليمات البرمجية البطيئة تعمل بشكل أسرع قليلاً؛ إنه يلغي حاجة المطورين البشريين إلى تزيين المنطق الوظيفي يدويًا باستخدام حراس الذاكرة.",
+      "cite": "طارق محمود، مهندس الأنظمة الرئيسي"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. The React Server Components (RSC) Wire Format & Flight Protocol"
+      "text": "2. تنسيق سلك مكونات خادم React (RSC) وبروتوكول الطيران"
     },
     {
       "type": "p",
-      "text": "[ar] React Server Components do not compile to traditional HTML strings or client JavaScript bundles. Instead, they serialize into a specialized JSON-like streaming protocol: the RSC wire format (internally codenamed Flight). This wire format preserves component boundaries, props, and Suspense placeholders across the network boundary without bundling server-side libraries (such as database ORMs, markdown parsers, or crypto modules) into client bundles."
+      "text": "لا يتم تجميع مكونات React Server إلى سلاسل HTML التقليدية أو حزم JavaScript الخاصة بالعميل. بدلاً من ذلك، يتم إجراء تسلسل لها في بروتوكول دفق متخصص يشبه JSON: تنسيق سلك RSC (يُسمى داخليًا باسم Flight). يحافظ تنسيق السلك هذا على حدود المكونات والدعائم والعناصر النائبة المعلقة عبر حدود الشبكة دون تجميع المكتبات من جانب الخادم (مثل ORMs لقاعدة البيانات أو محللي تخفيض السعر أو وحدات التشفير) في حزم العميل."
     },
     {
       "type": "p",
-      "text": "[ar] Consider a server component that imports a 150KB markdown parsing library, reads a monograph from disk, and renders it to screen. In a legacy Single Page Application, that 150KB library must be transferred over the mobile radio, parsed by the V8 JavaScript engine, and retained in heap memory. Under RSC, the server executes the markdown parser, emits raw virtual DOM chunks into the stream, and the client receives only lightweight JSON-serialized instructions describing the rendered tags."
+      "text": "خذ بعين الاعتبار مكون الخادم الذي يستورد مكتبة تحليل تخفيض السعر بسعة 150 كيلو بايت، ويقرأ دراسة من القرص، ويعرضها على الشاشة. في تطبيق الصفحة الواحدة القديم، يجب نقل مكتبة بحجم 150 كيلو بايت عبر الراديو المحمول، وتحليلها بواسطة محرك JavaScript V8، والاحتفاظ بها في ذاكرة الكومة. ضمن RSC، ينفذ الخادم محلل تخفيض السعر، ويصدر قطع DOM افتراضية أولية في الدفق، ويتلقى العميل فقط تعليمات متسلسلة JSON خفيفة الوزن تصف العلامات المقدمة."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Zero Client Bundle Cost: Libraries imported exclusively inside Server Components contribute exactly zero bytes to client browser payloads.",
-        "[ar] Direct Database & Edge Access: Server Components execute adjacent to data layers, executing async queries without REST/GraphQL boilerplate.",
-        "[ar] Refetch-Free Interactivity: Client components receive streamed server updates while preserving client-side DOM state (e.g., text inputs, scroll positions).",
-        "[ar] Streaming Suspense Integration: Fast static components are flushed immediately, while slow asynchronous data dependencies render streaming fallbacks without blocking the document head."
+        "تكلفة حزمة العميل الصفرية: المكتبات المستوردة حصريًا داخل مكونات الخادم تساهم تمامًا بصفر بايت في حمولات متصفح العميل.",
+        "الوصول المباشر إلى قاعدة البيانات والوصول إلى الحافة: يتم تنفيذ مكونات الخادم بجوار طبقات البيانات، وتنفيذ استعلامات غير متزامنة بدون نموذج REST/GraphQL.",
+        "تفاعل بدون جلب: تتلقى مكونات العميل تحديثات الخادم المتدفقة مع الحفاظ على حالة DOM من جانب العميل (على سبيل المثال، مدخلات النص، ومواضع التمرير).",
+        "التكامل المعلق للبث: يتم مسح المكونات الثابتة السريعة على الفور، بينما توفر تبعيات البيانات غير المتزامنة البطيئة عمليات احتياطية للتدفق دون عرقلة رأس المستند."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: The Mental Model of Server Components"
+      "text": "3. درس فيديو رئيسي: النموذج العقلي لمكونات الخادم"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/TQQPAU21ZUw",
-      "title": "[ar] Data Fetching and Architecture with React Server Components",
-      "caption": "[ar] Authoritative engineering breakdown on component serialization, stream boundaries, and client hydration elimination."
+      "title": "جلب البيانات وهندستها باستخدام مكونات خادم React",
+      "caption": "تفصيل هندسي موثوق بشأن تسلسل المكونات وحدود التدفق وإزالة ترطيب العميل."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Hydration Elimination and Partial Prerendering (PPR)"
+      "text": "4. إزالة الترطيب والعرض المسبق الجزئي (PPR)"
     },
     {
       "type": "p",
-      "text": "[ar] Traditional Single Page Applications (SPAs) and even standard SSR frameworks suffer from the \"Uncanny Valley\"—a window of time where UI elements are visually painted but completely unresponsive to clicks because the main thread is occupied executing millions of hydration instructions. This directly degrades Interaction to Next Paint (INP) and Total Blocking Time (TBT)."
+      "text": "تعاني تطبيقات الصفحة الواحدة التقليدية (SPAs) وحتى أطر عمل SSR القياسية من \"الوادي الخارق\" - وهي نافذة زمنية يتم فيها رسم عناصر واجهة المستخدم بشكل مرئي ولكنها لا تستجيب تمامًا للنقرات لأن الخيط الرئيسي مشغول بتنفيذ الملايين من تعليمات الترطيب. يؤدي هذا إلى تقليل التفاعل بشكل مباشر مع الطلاء التالي (INP) وإجمالي وقت الحظر (TBT)."
     },
     {
       "type": "p",
-      "text": "[ar] Under Partial Prerendering (PPR), static shells are pre-rendered at build time as raw static HTML files (exactly as Questo executes via SSG), while dynamic server holes stream asynchronously through HTTP chunking. Components that require no client interactivity (headers, typography, article bodies, footers) are never hydrated, liberating the browser's main thread to achieve consistent 100/100 Core Web Vitals."
+      "text": "ضمن العرض المسبق الجزئي (PPR)، يتم عرض الأصداف الثابتة مسبقًا في وقت الإنشاء كملفات HTML ثابتة خام (تمامًا كما يتم تنفيذ Questo عبر SSG)، بينما تتدفق ثغرات الخادم الديناميكية بشكل غير متزامن من خلال تقطيع HTTP. لا يتم ترطيب المكونات التي لا تتطلب أي تفاعل من جانب العميل (العناوين، والطباعة، ونصوص المقالات، والتذييلات) مطلقًا، مما يحرر سلسلة المحادثات الرئيسية للمتصفح لتحقيق 100/100 من مؤشرات الويب الأساسية المتسقة."
     },
     {
       "type": "p",
-      "text": "[ar] When client interactivity is strictly isolated to terminal leaf nodes—such as a bookmark toggle, audio player, or search input—the client JavaScript bundle size drops from megabytes to mere kilobytes. The main thread remains idle during initial viewport rendering, eliminating layout thrashing and delivering immediate touch responsiveness."
+      "text": "عندما يتم عزل تفاعل العميل بشكل صارم إلى العقد الطرفية - مثل تبديل الإشارة المرجعية أو مشغل الصوت أو إدخال البحث - ينخفض ​​حجم حزمة JavaScript للعميل من الميجابايت إلى مجرد كيلو بايت. يظل الخيط الرئيسي خاملاً أثناء عرض إطار العرض الأولي، مما يؤدي إلى التخلص من سحق التخطيط وتوفير استجابة فورية للمس."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Engineering Takeaways & Best Practices"
+      "text": "5. الدروس الهندسية وأفضل الممارسات"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Deprecate Manual Memoization: Rely on compiler AST static inference; focus on writing pure idiomatic JavaScript adhering to React's invariants.",
-        "[ar] Server-First Defaults: Keep all presentational monographs on the server; isolate \"use client\" strictly to leaves of the component tree requiring DOM event listeners.",
-        "[ar] Static-First Distribution: Combine SSG edge pre-rendering with streaming dynamic slots to conquer both SEO indexing and sub-second page delivery.",
-        "[ar] Enforce Pure Functions: Ensure components avoid mutating external objects or reading uncontrolled globals during the render pass, which triggers compiler bailouts."
+        "إهمال الحفظ اليدوي: اعتمد على الاستدلال الثابت للمترجم AST؛ التركيز على كتابة JavaScript اصطلاحية خالصة تلتزم بثوابت React.",
+        "الإعدادات الافتراضية للخادم أولاً: احتفظ بجميع الدراسات التقديمية على الخادم؛ قم بعزل \"استخدام العميل\" بشكل صارم على أوراق شجرة المكونات التي تتطلب مستمعي أحداث DOM.",
+        "التوزيع الثابت الأول: اجمع بين العرض المسبق لحافة SSG مع الفتحات الديناميكية المتدفقة للتغلب على كل من فهرسة تحسين محركات البحث (SEO) وتسليم الصفحة في الثانية الثانية.",
+        "فرض الوظائف النقية: تأكد من أن المكونات تتجنب تحور الكائنات الخارجية أو قراءة العموميات غير المنضبطة أثناء تمرير العرض، مما يؤدي إلى عمليات إنقاذ المترجم."
       ]
     }
   ],

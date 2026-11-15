@@ -1,7 +1,7 @@
 {
   "slug": "the-architecture-of-sub-second-web-performance",
-  "title": "[es] The Architecture of Sub-Second Web Performance",
-  "excerpt": "[es] A technical dissection of edge CDN routing, immutable asset caching, zero-runtime static generation, and the elimination of server latency bottlenecks.",
+  "title": "La arquitectura del rendimiento web en segundos",
+  "excerpt": "Una disección técnica del enrutamiento CDN perimetral, el almacenamiento en caché de activos inmutables, la generación estática de tiempo de ejecución cero y la eliminación de los cuellos de botella de latencia del servidor.",
   "date": "2026-11-12",
   "updated": "2026-11-14",
   "author": "Tariq Mahmood",
@@ -12,19 +12,19 @@
     "web-vitals"
   ],
   "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] High-density server racks emitting cyan LED telemetry inside an enterprise data facility",
+  "imageAlt": "Racks de servidores de alta densidad que emiten telemetría LED cian dentro de una instalación de datos empresariales",
   "body": [
     {
       "type": "p",
-      "text": "[es] For over a decade, web architecture has chased computational complexity at the expense of user experience. Massive single-page applications, convoluted hydration trees, and multi-tier backend database queries have bloated the modern web. Every millisecond of latency erodes user trust, depresses search visibility, and squanders device battery life."
+      "text": "Durante más de una década, la arquitectura web ha perseguido la complejidad computacional a expensas de la experiencia del usuario. Las aplicaciones masivas de una sola página, los árboles de hidratación complicados y las consultas de bases de datos de backend de varios niveles han inflado la web moderna. Cada milisegundo de latencia erosiona la confianza del usuario, deprime la visibilidad de la búsqueda y desperdicia la vida útil de la batería del dispositivo."
     },
     {
       "type": "h2",
-      "text": "[es] The Anatomy of 50ms Edge Delivery"
+      "text": "La anatomía de la entrega perimetral de 50 ms"
     },
     {
       "type": "p",
-      "text": "[es] Achieving authentic sub-second Largest Contentful Paint (LCP) and zero Cumulative Layout Shift (CLS) requires inverting traditional hosting topology. Rather than computing HTML dynamically per user request, modern high-authority publishing platforms pre-compile pages into deterministic, immutable static HTML files at build time."
+      "text": "Lograr una pintura de contenido más grande (LCP) auténtica en menos de un segundo y un cambio de diseño acumulativo (CLS) cero requiere invertir la topología de alojamiento tradicional. En lugar de calcular HTML dinámicamente según la solicitud del usuario, las plataformas de publicación modernas de alta autoridad precompilan páginas en archivos HTML estáticos deterministas e inmutables en el momento de la compilación."
     },
     {
       "type": "code",
@@ -33,29 +33,29 @@
     },
     {
       "type": "p",
-      "text": "[es] When an immutable asset is served from an edge node located within 15 kilometers of the requesting client, round-trip packet transport drops below 10 milliseconds. Server processing time effectively converges to zero."
+      "text": "Cuando un activo inmutable recibe servicio desde un nodo de borde ubicado dentro de los 15 kilómetros del cliente solicitante, el transporte de paquetes de ida y vuelta cae por debajo de los 10 milisegundos. El tiempo de procesamiento del servidor converge efectivamente a cero."
     },
     {
       "type": "quote",
-      "text": "[es] The fastest HTTP request is the one that never touches a dynamic origin database. True speed is an architectural discipline, not a compression afterthought.",
-      "cite": "[es] Questo Systems Engineering Whitepaper"
+      "text": "La solicitud HTTP más rápida es la que nunca toca una base de datos de origen dinámico. La verdadera velocidad es una disciplina arquitectónica, no una idea de último momento de compresión.",
+      "cite": "Documento técnico de ingeniería de sistemas de Questo"
     },
     {
       "type": "h3",
-      "text": "[es] Core Principles of Zero-Bloat Publishing"
+      "text": "Principios básicos de la publicación sin volumen"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Pre-rendered HTML documents containing complete crawler-readable semantic copy and JSON-LD metadata.",
-        "[es] Zero blocking third-party telemetry scripts executed prior to the primary content layout.",
-        "[es] CSS paged media and modern font subsetting using unicode-range declarations and font-display: swap.",
-        "[es] Chunked static JSON data delivery that progressive-hydrates interactive utilities without layout shifts."
+        "Documentos HTML prerenderizados que contienen una copia semántica completa legible por rastreadores y metadatos JSON-LD.",
+        "Cero scripts de telemetría de terceros ejecutados antes del diseño del contenido principal.",
+        "Medios paginados CSS y subconjuntos de fuentes modernas utilizando declaraciones de rango Unicode y visualización de fuentes: intercambio.",
+        "Entrega de datos JSON estáticos fragmentados que hidratan progresivamente las utilidades interactivas sin cambios de diseño."
       ]
     },
     {
       "type": "p",
-      "text": "[es] By adhering to these rigorous engineering standards, digital publishers guarantee instant global discoverability, satisfy Google's most stringent Core Web Vitals criteria, and provide international readers with an uninterrupted, distraction-free reading experience."
+      "text": "Al adherirse a estos rigurosos estándares de ingeniería, los editores digitales garantizan una capacidad de descubrimiento global instantánea, satisfacen los criterios más estrictos de Core Web Vitals de Google y brindan a los lectores internacionales una experiencia de lectura ininterrumpida y sin distracciones."
     }
   ],
   "sourceHash": "edfd46a296d4b24aa8cb0eeac577f4cfb2d42440"

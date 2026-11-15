@@ -1,7 +1,7 @@
 {
   "slug": "inverse-kinematics-and-impedance-control-in-bipedal-robotics",
-  "title": "[ur] Impedance Control in Bipedal Robotics",
-  "excerpt": "[ur] A robotics engineering treatise on joint torque space mapping, zero-moment point dynamics, compliance modulation, and whole-body locomotion stabilization.",
+  "title": "بائی پیڈل روبوٹکس میں رکاوٹ کا کنٹرول",
+  "excerpt": "جوائنٹ ٹارک اسپیس میپنگ، زیرو مومنٹ پوائنٹ ڈائنامکس، کمپلائنس ماڈیولیشن، اور پورے جسم کے لوکوموشن اسٹیبلائزیشن پر ایک روبوٹکس انجینئرنگ کا مقالہ۔",
   "date": "2026-11-15",
   "author": "Elena Rostova",
   "tags": [
@@ -13,23 +13,23 @@
     "control-theory"
   ],
   "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Advanced bipedal humanoid robot standing in high-precision laboratory testing environment",
+  "imageAlt": "اعلی صحت سے متعلق لیبارٹری ٹیسٹنگ ماحول میں کھڑا اعلی درجے کا بائی پیڈل ہیومنائیڈ روبوٹ",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The mechanical synthesis of human locomotion represents one of the most formidable frontiers in control theory and physical computing. Unlike wheeled autonomous rovers that benefit from static multi-point equilibrium, bipedal humanoid robots operate in continuous state space instability. To navigate unstructured terrestrial terrain—gravel, staircases, and slick surfaces—a humanoid platform cannot rely on rigid position trajectories. It requires active impedance control, modulating mechanical compliance at millisecond intervals."
+      "text": "انسانی لوکوموشن کی مکینیکل ترکیب کنٹرول تھیوری اور فزیکل کمپیوٹنگ میں سب سے مضبوط محاذوں میں سے ایک کی نمائندگی کرتی ہے۔ پہیوں والے خود مختار روورز کے برعکس جو جامد ملٹی پوائنٹ توازن سے فائدہ اٹھاتے ہیں، بائی پیڈل ہیومنائیڈ روبوٹ مسلسل ریاستی خلائی عدم استحکام میں کام کرتے ہیں۔ غیر ساختہ زمینی خطوں کو نیویگیٹ کرنے کے لیے — بجری، سیڑھیاں، اور چکنی سطحیں — ایک ہیومنائڈ پلیٹ فارم سخت پوزیشن کی رفتار پر انحصار نہیں کر سکتا۔ اسے ملی سیکنڈ کے وقفوں پر مکینیکل تعمیل کو ماڈیول کرتے ہوئے فعال مائبادی کنٹرول کی ضرورت ہوتی ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] By dynamically mapping contact forces back into joint torque space via the Jacobian transpose, impedance control transforms stiff actuator gearboxes into virtual spring-damper mechanisms. When a robot foot encounters unanticipated topography, the leg absorbs kinetic impact elastically rather than shattering harmonic drive reducers or tipping the chassis into an unrecoverable tumble."
+      "text": "جیکوبیئن ٹرانسپوز کے ذریعے جوائنٹ ٹارک اسپیس میں رابطہ قوتوں کو متحرک طور پر نقشہ بنا کر، مائبادی کنٹرول سخت ایکچیویٹر گیئر باکسز کو ورچوئل اسپرنگ ڈیمپر میکانزم میں تبدیل کرتا ہے۔ جب روبوٹ کے پاؤں کا سامنا غیر متوقع ٹپوگرافی سے ہوتا ہے، تو ٹانگ ہارمونک ڈرائیو کم کرنے والوں کو بکھرنے یا چیسس کو ناقابل بازیافت ٹمبل میں ٹپ کرنے کی بجائے متحرک اثر کو لچکدار طریقے سے جذب کرتی ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Mathematical Foundations: The Virtual Spring-Damper Model"
+      "text": "1. ریاضی کی بنیادیں: ورچوئل اسپرنگ ڈیمپر ماڈل"
     },
     {
       "type": "p",
-      "text": "[ur] Impedance control defines a target relationship between the external contact force vector ($F_{ext}$) and resulting kinematic displacement ($x - x_0$) rather than prescribing absolute coordinates:"
+      "text": "امپیڈینس کنٹرول بیرونی رابطہ قوت ویکٹر ($F_{ext}$) اور نتیجے میں کینیمیٹک نقل مکانی ($x - x_0$) کے درمیان ایک ہدف کے تعلق کی وضاحت کرتا ہے نہ کہ مطلق کوآرڈینیٹ تجویز کرنے کے:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ur] By tuning $K_d$ and $D_d$ in real time, the control loop mimics biological musculature. During the swing phase of a gait cycle, stiffness is maximized to track reference trajectories with high fidelity. At the exact instant of heel strike, stiffness is collapsed along the vertical axis, allowing compliant shock absorption without expensive hardware suspension."
+      "text": "$K_d$ اور $D_d$ کو حقیقی وقت میں ٹیون کرنے سے، کنٹرول لوپ حیاتیاتی عضلات کی نقل کرتا ہے۔ گیٹ سائیکل کے سوئنگ مرحلے کے دوران، سختی کو زیادہ سے زیادہ کیا جاتا ہے تاکہ اعلیٰ مخلصی کے ساتھ حوالہ جات کو ٹریک کیا جا سکے۔ ہیل کی ہڑتال کے عین موقع پر، سختی عمودی محور کے ساتھ منہدم ہو جاتی ہے، جس سے مہنگے ہارڈ ویئر کی معطلی کے بغیر جھٹکا جذب ہو جاتا ہے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] True stability in bipedal systems is not the resistance to perturbation, but the mathematical elegance with which disturbance energy is absorbed, channeled, and repurposed into forward momentum.",
-      "cite": "[ur] Elena Rostova, Senior Robotics & Embodied AI Fellow"
+      "text": "بائی پیڈل سسٹمز میں حقیقی استحکام ہنگامہ خیزی کے خلاف مزاحمت نہیں ہے، بلکہ ریاضیاتی خوبصورتی ہے جس کے ساتھ خلل کی توانائی کو جذب کیا جاتا ہے، منتقل کیا جاتا ہے اور آگے کی رفتار میں دوبارہ پیدا کیا جاتا ہے۔",
+      "cite": "ایلینا روسٹووا، سینئر روبوٹکس اینڈ ایمبوڈیڈ اے آئی فیلو"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Zero-Moment Point (ZMP) and Capture Point Dynamics"
+      "text": "2. زیرو مومنٹ پوائنٹ (ZMP) اور کیپچر پوائنٹ ڈائنامکس"
     },
     {
       "type": "p",
-      "text": "[ur] Locomotion equilibrium is governed by the Zero-Moment Point (ZMP)—the spatial coordinate where total horizontal inertial and gravitational moments sum to zero. So long as the ZMP resides strictly within the support polygon defined by the robot's foot contact area, the machine cannot tip."
+      "text": "لوکوموشن توازن زیرو مومنٹ پوائنٹ (ZMP) کے زیر انتظام ہے - وہ مقامی کوآرڈینیٹ جہاں کل افقی رفتار اور لمحے کی سطح کے درمیان فرق ہوتا ہے۔ جب تک ZMP روبوٹ کے پاؤں کے رابطے کے علاقے کے ذریعہ بیان کردہ سپورٹ پولیگون کے اندر سختی سے رہتا ہے، مشین ٹپ نہیں دے سکتی۔"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Support Polygon Boundary: In single-support phase, the stability boundary shrinks to the sole of one shoe, demanding sub-millisecond center-of-mass telemetry.",
-        "[ur] Capture Point Prediction: If external impulses push the ZMP outside the foot boundary, the whole-body controller calculates the instantaneous Capture Point—the precise physical coordinates where the swing leg must land to arrest falling velocity.",
-        "[ur] Model Predictive Control (MPC): Receding-horizon solvers forecast ground reaction forces across a 1.5-second trajectory window, solving quadratic optimization problems at 500 Hz."
+        "سپورٹ پولیگون باؤنڈری: سنگل سپورٹ فیز میں، استحکام کی حد ایک جوتے کے تلے تک سکڑ جاتی ہے، جو سب ملی سیکنڈ سینٹر آف ماس ٹیلی میٹری کا مطالبہ کرتی ہے۔",
+        "کیپچر پوائنٹ کی پیشن گوئی: اگر بیرونی تحریکیں ZMP کو پاؤں کی حد سے باہر دھکیلتی ہیں، تو پورے جسم کا کنٹرولر فوری طور پر کیپچر پوائنٹ کا حساب لگاتا ہے — وہ عین جسمانی نقاط جہاں جھولنے والی ٹانگ کو گرتی ہوئی رفتار کو روکنے کے لیے اترنا چاہیے۔",
+        "ماڈل پریڈیکٹیو کنٹرول (MPC): Receding-horizon solvers 1.5-سیکنڈ کی رفتار ونڈو کے پار زمینی رد عمل کی قوتوں کی پیش گوئی کرتے ہیں، 500 Hz پر چوکور اصلاحی مسائل کو حل کرتے ہیں۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: High-Dynamic Locomotion in Bipedal Systems"
+      "text": "3. ویڈیو ماسٹرکلاس: بائی پیڈل سسٹمز میں ہائی ڈائنامک لوکوموشن"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/tF4DML7FIWk",
-      "title": "[ur] Whole-Body Dynamic Impedance and Bipedal Locomotion",
-      "caption": "[ur] Demonstration of high-frequency model predictive control, dynamic balance recovery, and real-time obstacle traversal in humanoid platforms."
+      "title": "مکمل باڈی ڈائنامک امپیڈینس اور بائی پیڈل لوکوموشن",
+      "caption": "ہائی فریکوئنسی ماڈل کی پیش گوئی کرنے والے کنٹرول، متحرک توازن کی بحالی، اور ہیومنائیڈ پلیٹ فارم میں ریئل ٹائم رکاوٹ ٹراورسل کا مظاہرہ۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Actuator Architectures: Quasi-Direct Drive vs. Strain Wave Gears"
+      "text": "4. Actuator آرکیٹیکچرز: Quasi-direct Drive بمقابلہ Strain Wave Gears"
     },
     {
       "type": "p",
-      "text": "[ur] Modern robotics has witnessed a decisive architectural shift away from high-ratio strain wave gears toward Quasi-Direct Drive (QDD) actuators. High gear ratios (100:1) introduce extreme reflected inertia ($I_{reflected} \\propto N^2$) and backdrivability friction, which degrades mechanical transparency and destroys force sensing accuracy."
+      "text": "جدید روبوٹکس نے Quasi-Direct Drive (QDD) ایکچیوٹرز کی طرف ہائی ریشو سٹرین ویو گیئرز سے ہٹ کر فیصلہ کن آرکیٹیکچرل تبدیلی دیکھی ہے۔ اعلی گیئر تناسب (100:1) انتہائی عکاس جڑتا ($I_{reflected} \\propto N^2$) اور بیک ڈرائیو ایبلٹی رگڑ کو متعارف کراتے ہیں، جو مکینیکل شفافیت کو گھٹاتا ہے اور قوت کو محسوس کرنے کی درستگی کو تباہ کرتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] QDD actuators utilize low gear ratios (under 10:1) paired with large-diameter high-torque outrunner brushless motors. This delivers ultra-low mechanical impedance, allowing motor phase current measurements to serve as accurate proxies for joint contact torque without fragile six-axis load cells in the ankles."
+      "text": "QDD ایکچویٹرز کم گیئر تناسب (10:1 سے کم) استعمال کرتے ہیں جو بڑے قطر کے ہائی ٹارک آؤٹ رنر برش لیس موٹرز کے ساتھ جوڑتے ہیں۔ یہ انتہائی کم مکینیکل مائبادا فراہم کرتا ہے، جس سے موٹر فیز کی موجودہ پیمائش ٹخنوں میں چھ محور کے نازک خلیوں کے بغیر مشترکہ رابطہ ٹارک کے لیے درست پراکسی کے طور پر کام کر سکتی ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Systems Engineering Takeaways"
+      "text": "5. سسٹمز انجینئرنگ ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Backdrivability Priority: Prioritize actuators with low reflected inertia and zero cogging torque to ensure transparent force reflection in closed-loop control.",
-        "[ur] Hierarchical Control Stacks: Separate slow-rate trajectory optimization (50-100 Hz MPC) from high-speed joint impedance compliance loops (1 kHz torque servos).",
-        "[ur] Sensory Redundancy: Fuse high-rate IMU angular acceleration telemetry with optical encoder arrays to filter vibration artifacts caused by structural resonance."
+        "بیک ڈرائیو ایبلٹی ترجیح: بند لوپ کنٹرول میں شفاف قوت کی عکاسی کو یقینی بنانے کے لیے کم منعکس جڑتا اور صفر کوگنگ ٹارک والے ایکچیوٹرز کو ترجیح دیں۔",
+        "درجہ بندی کے کنٹرول کے ڈھیر: تیز رفتار جوائنٹ امپیڈینس کمپلائنس لوپس (1 کلو ہرٹز ٹارک سرووس) سے سست رفتار ٹریجیکٹری آپٹیمائزیشن (50-100 Hz MPC) کو الگ کریں۔",
+        "حسی فالتو پن: ساختی گونج کی وجہ سے کمپن آرٹفیکٹس کو فلٹر کرنے کے لیے آپٹیکل انکوڈر اریوں کے ساتھ ہائی ریٹ IMU اینگولر ایکسلریشن ٹیلی میٹری کو فیوز کریں۔"
       ]
     }
   ],

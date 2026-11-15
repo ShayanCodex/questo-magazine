@@ -1,7 +1,7 @@
 {
   "slug": "zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics",
-  "title": "[ur] Zero-Knowledge Rollups & zk-SNARKs",
-  "excerpt": "[ur] An advanced examination of cryptographic proof systems, arithmetic circuits over elliptic curves, KZG commitments, and recursive SNARK aggregation for blockchain scaling.",
+  "title": "زیرو نالج رول اپ اور zk-SNARKs",
+  "excerpt": "کرپٹوگرافک پروف سسٹمز، بیضوی منحنی خطوط پر ریاضی کے سرکٹس، KZG وعدوں، اور بلاکچین اسکیلنگ کے لیے بار بار آنے والی SNARK جمع کا ایک جدید امتحان۔",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,23 +12,23 @@
     "cryptography"
   ],
   "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Futuristic cryptographic network topology representing decentralized zero-knowledge proofs",
+  "imageAlt": "فیوچرسٹک کرپٹوگرافک نیٹ ورک ٹوپولوجی جو وکندریقرت صفر علمی ثبوتوں کی نمائندگی کرتی ہے",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The fundamental dilemma of decentralized ledger architectures is the verifiable computation bottleneck: if every validating node in a global peer-to-peer network must re-execute every transaction sequentially to verify state correctness, transaction throughput is strictly bounded by the processing speed of the slowest physical node. Zero-knowledge rollups (zk-Rollups) resolve this constraint through cryptographic proof systems, replacing redundant distributed re-execution with mathematical succinctness."
+      "text": "وکندریقرت لیجر آرکیٹیکچرز کی بنیادی مخمصہ قابل تصدیق حسابی رکاوٹ ہے: اگر عالمی پیئر ٹو پیئر نیٹ ورک میں ہر توثیق کرنے والے نوڈ کو ریاست کی درستگی کی توثیق کرنے کے لیے ہر لین دین کو ترتیب وار دوبارہ عمل میں لانا چاہیے، تو ٹرانزیکشن تھرو پٹ سختی سے اس بات کا پابند ہے کہ پروسیسنگ کی کوئی سست رفتار جسمانی نہیں۔ زیرو نالج رول اپس (zk-Rollups) اس رکاوٹ کو کرپٹوگرافک پروف سسٹمز کے ذریعے حل کرتے ہیں، فالتو تقسیم شدہ ری ایگزیکیوشن کو ریاضی کے مختصر پن سے بدل دیتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] In a zk-Rollup, an off-chain sequencer executes thousands of transactions, updates an internal Merkle state tree, and computes an arithmetic proof asserting that all state updates strictly adhered to protocol rules. This proof, typically only a few hundred bytes in size, is submitted to an on-chain smart contract on Ethereum Layer 1, where it is verified in milliseconds regardless of the complexity or quantity of underlying transactions."
+      "text": "ایک zk-Rollup میں، ایک آف چین سیکوینسر ہزاروں ٹرانزیکشنز کو انجام دیتا ہے، ایک اندرونی مرکل اسٹیٹ ٹری کو اپ ڈیٹ کرتا ہے، اور ایک ریاضی کے ثبوت کی گنتی کرتا ہے جس میں یہ دعوی کیا جاتا ہے کہ تمام ریاستی اپ ڈیٹس پروٹوکول کے اصولوں پر سختی سے عمل پیرا ہیں۔ یہ ثبوت، عام طور پر صرف چند سو بائٹس سائز میں، Ethereum Layer 1 پر ایک آن چین سمارٹ کنٹریکٹ پر جمع کرایا جاتا ہے، جہاں اس کی تصدیق ملی سیکنڈز میں کی جاتی ہے قطع نظر اس کے کہ بنیادی لین دین کی پیچیدگی یا مقدار کچھ بھی ہو۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. The Arithmetic Circuit and R1CS Representation"
+      "text": "1. ریاضی کا سرکٹ اور R1CS کی نمائندگی"
     },
     {
       "type": "p",
-      "text": "[ur] To verify complex state transitions without revealing underlying transaction parameters or executing sequential instructions on-chain, high-level computation is compiled into arithmetic circuits over large finite fields $\\mathbb{F}_p$. These circuits are flattened into Rank-1 Constraint Systems (R1CS), formalized as matrix equations of the structure:"
+      "text": "بنیادی لین دین کے پیرامیٹرز کو ظاہر کیے بغیر یا سلسلہ وار ہدایات پر عمل کیے بغیر پیچیدہ حالت کی منتقلی کی توثیق کرنے کے لیے، اعلیٰ درجے کی گنتی کو ریاضی کے سرکٹس میں بڑے محدود فیلڈز $\\mathbb{F}_p$ پر مرتب کیا جاتا ہے۔ یہ سرکٹس Rank-1 Constraint Systems (R1CS) میں چپٹے ہوئے ہیں، ساخت کی میٹرکس مساوات کے طور پر رسمی شکل دی گئی ہے:"
     },
     {
       "type": "code",
@@ -37,71 +37,71 @@
     },
     {
       "type": "p",
-      "text": "[ur] The R1CS representation is subsequently transformed into a Quadratic Arithmetic Program (QAP) through Lagrange polynomial interpolation. By converting vector dot products into polynomial divisibility checks ($P(x) = H(x) \\cdot T(x)$), the prover can evaluate polynomial relations at a secret evaluation point without exposing intermediate computation states."
+      "text": "R1CS کی نمائندگی بعد میں Lagrange polynomial interpolation کے ذریعے Quadratic Arithmetic Program (QAP) میں تبدیل ہو جاتی ہے۔ ویکٹر ڈاٹ پروڈکٹس کو کثیر الجہتی تقسیم کی جانچ پڑتال ($P(x) = H(x) \\cdot T(x)$ میں تبدیل کر کے، prover ایک خفیہ تشخیصی مقام پر متوسط ​​حسابی حالتوں کو بے نقاب کیے بغیر کثیر الجہتی تعلقات کا جائزہ لے سکتا ہے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] Zero-knowledge proofs invert the economics of computation: the prover does the heavy lifting off-chain, while the verifier executes a constant-time cryptographic check on-chain.",
-      "cite": "[ur] Tariq Mahmood, Distributed Systems Fellow"
+      "text": "صفر علمی ثبوت حساب کی معاشیات کو الٹ دیتے ہیں: پروور ہیوی لفٹنگ آف چین کرتا ہے، جب کہ تصدیق کنندہ مسلسل وقتی خفیہ جانچ پڑتال کرتا ہے۔",
+      "cite": "طارق محمود، ڈسٹری بیوٹڈ سسٹمز فیلو"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Polynomial Commitments: KZG vs. FRI Protocols"
+      "text": "2. متعدد وعدے: کے زیڈ جی بمقابلہ ایف آر آئی پروٹوکولز"
     },
     {
       "type": "p",
-      "text": "[ur] The core primitive enabling succinct verification is the polynomial commitment scheme (PCS). A PCS permits a prover to commit to a high-degree polynomial with a single small cryptographic string and subsequently open evaluations of that polynomial at chosen points with an indisputable proof of correctness."
+      "text": "بنیادی پرائمٹیو کو فعال کرنے والی مختصر تصدیق کثیر نامی کمٹمنٹ اسکیم (PCS) ہے۔ ایک پی سی ایس ایک پروور کو اجازت دیتا ہے کہ وہ ایک چھوٹی سی کرپٹوگرافک سٹرنگ کے ساتھ اعلی درجے کی کثیر الثانی کا ارتکاب کرے اور بعد ازاں درستگی کے ناقابل تردید ثبوت کے ساتھ منتخب پوائنٹس پر اس کثیر الثانی کی کھلی تشخیص کرے۔"
     },
     {
       "type": "p",
-      "text": "[ur] Two primary families dominate modern Layer 2 production systems: pairing-based Kate-Zaverucha-Goldberg (KZG) schemes and hash-based Fast Reed-Solomon Interactive Oracle Proofs of Proximity (FRI):"
+      "text": "دو بنیادی خاندان جدید پرت 2 پروڈکشن سسٹمز پر حاوی ہیں: جوڑی پر مبنی کیٹ-زاویروچا-گولڈ برگ (KZG) اسکیمیں اور ہیش پر مبنی فاسٹ ریڈ-سلومن انٹرایکٹو اوریکل پروفس آف پروکسیمٹی (FRI):"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] KZG Commitments (Used in Scroll, Taiko, Linea): Yield constant-size proofs (typically 48 bytes on BLS12-381 curves) and constant verification time. They require a Structured Reference String (SRS) generated via a cryptographic trusted setup.",
-        "[ur] FRI Commitments (Used in Starknet / STARKs): Rely strictly on collision-resistant cryptographic hash functions. They require zero trusted setups, are transparent, and provide theoretical post-quantum security at the cost of larger proof sizes (10KB–100KB).",
-        "[ur] Halo2 & IPA Schemes (Used in Zcash, Scroll): Utilize Inner Product Arguments across elliptic curve cycles, eliminating trusted setup ceremonies without incurring the bandwidth penalties of full STARK proofs."
+        "KZG کمٹمنٹس (اسکرول، تائیکو، لائن 4 میں استعمال کیا جاتا ہے): BLS12-381 منحنی خطوط) اور تصدیق کا مستقل وقت۔ ان کے لیے ایک سٹرکچرڈ ریفرنس سٹرنگ (SRS) کی ضرورت ہوتی ہے جو ایک کرپٹوگرافک قابل اعتماد سیٹ اپ کے ذریعے تیار کی گئی ہو۔",
+        "FRI وعدے (Starknet / STARKs میں استعمال کیا جاتا ہے): تصادم سے بچنے والے کرپٹوگرافک ہیش فنکشنز پر سختی سے بھروسہ کریں۔ انہیں صفر بھروسہ مند سیٹ اپ کی ضرورت ہوتی ہے، وہ شفاف ہوتے ہیں، اور بڑے پروف سائز (10KB–100KB) کی قیمت پر نظریاتی پوسٹ کوانٹم سیکیورٹی فراہم کرتے ہیں۔",
+        "Halo2 اور IPA اسکیمیں (Zcash، Scroll میں استعمال کیا جاتا ہے): مکمل STARK ثبوتوں کے بینڈوتھ جرمانے کے بغیر قابل اعتماد سیٹ اپ کی تقریبات کو ختم کرتے ہوئے، بیضوی وکر کے چکروں میں اندرونی مصنوعات کے دلائل کا استعمال کریں۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Technical Lecture: Vitalik Buterin on ZK-SNARKs and Layer-2 Scaling"
+      "text": "3. تکنیکی لیکچر: ZK-SNARKs اور Layer-2 اسکیلنگ پر Vitalik Buterin"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "[ur] Zero-Knowledge Proofs and Layer-2 Scaling Foundations",
-      "caption": "[ur] Vitalik Buterin explains the cryptographic foundation, state transition proofs, and rollup architectures scaling Ethereum."
+      "title": "صفر علمی ثبوت اور Layer-2 اسکیلنگ فاؤنڈیشنز",
+      "caption": "Vitalik Buterin کرپٹوگرافک فاؤنڈیشن، ریاستی منتقلی کے ثبوت، اور تھیرچرکچم رولنگ کی وضاحت کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Data Availability and Proto-Danksharding (EIP-4844)"
+      "text": "4. ڈیٹا کی دستیابی اور پروٹو ڈینکشارڈنگ (EIP-4844)"
     },
     {
       "type": "p",
-      "text": "[ur] While a validity proof guarantees mathematical correctness of off-chain execution, it does not inherently guarantee that the underlying transaction data is publicly accessible. Without data availability, users cannot reconstruct the state tree in the event of sequencer censorship or infrastructure failure."
+      "text": "اگرچہ درست ہونے کا ثبوت آف چین پر عمل درآمد کی ریاضیاتی درستگی کی ضمانت دیتا ہے، لیکن یہ فطری طور پر اس بات کی ضمانت نہیں دیتا کہ بنیادی لین دین کا ڈیٹا عوامی طور پر قابل رسائی ہے۔ ڈیٹا کی دستیابی کے بغیر، سیکوینسر سنسرشپ یا انفراسٹرکچر کی ناکامی کی صورت میں صارف ریاستی درخت کی تشکیل نو نہیں کر سکتے۔"
     },
     {
       "type": "p",
-      "text": "[ur] Ethereum EIP-4844 introduced \"data blobs\"—transient, cheaply priced data spaces attached to blocks that persist for roughly 18 days rather than indefinitely occupying L1 execution state. By settling state validity proofs on Layer 1 execution while publishing raw transaction deltas to transient blob storage, rollup gas fees have fallen by over 95%, transforming decentralized applications into consumer-scale utilities."
+      "text": "Ethereum EIP-4844 نے \"ڈیٹا بلابز\" متعارف کرایا — عارضی، سستی قیمت والے ڈیٹا اسپیسز جو بلاکس کے ساتھ منسلک ہیں جو L1 پر عمل درآمد کی حالت پر غیر معینہ مدت تک قبضہ کرنے کے بجائے تقریباً 18 دنوں تک برقرار رہتی ہیں۔ عارضی بلاب اسٹوریج میں خام لین دین کے ڈیلٹا کو شائع کرتے ہوئے لیئر 1 پر عمل درآمد پر ریاستی جواز کے ثبوتوں کو طے کرنے سے، رول اپ گیس کی فیسوں میں 95 فیصد سے زیادہ کی کمی واقع ہوئی ہے، جس سے وکندریقرت ایپلی کیشنز کو صارفی پیمانے پر یوٹیلیٹیز میں تبدیل کیا گیا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Cryptographic Takeaways & System Principles"
+      "text": "5. کریپٹوگرافک ٹیک ویز اور سسٹم کے اصول"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Succinctness Over Re-execution: ZK-SNARKs enable global verifiability where verification cost is $O(1)$ or $O(\\log n)$ relative to computation complexity.",
-        "[ur] Separation of Concerns: Decouple execution (off-chain sequencers) from settlement and finality (Layer 1 smart contract verifiers).",
-        "[ur] Recursive Aggregation: Modern provers aggregate thousands of sub-proofs into a single master proof, amortizing on-chain verification gas across hundreds of thousands of transactions.",
-        "[ur] Data Availability Security: Ensure Layer 2 state transitions remain reconstructible through decentralized blob dissemination networks."
+        "دوبارہ عمل میں لانے سے زیادہ درستگی: ZK-SNARKs عالمی تصدیق کو قابل بناتے ہیں جہاں توثیقی لاگت $O(1)$ یا $O(\\log n)$ ہے حساب کی پیچیدگی سے متعلق۔",
+        "تحفظات کی علیحدگی: تصفیہ اور حتمییت (پرت 1 سمارٹ کنٹریکٹ ویریفائرز) سے دو بار عمل درآمد (آف چین سیکوینسر)۔",
+        "تکراری جمع: جدید پروررز ہزاروں ذیلی ثبوتوں کو ایک واحد ماسٹر ثبوت میں جمع کرتے ہیں، سینکڑوں ہزاروں ٹرانزیکشنز میں آن چین تصدیقی گیس کو معاف کرتے ہیں۔",
+        "ڈیٹا کی دستیابی کی حفاظت: اس بات کو یقینی بنائیں کہ پرت 2 اسٹیٹ ٹرانزیشن ڈی سینٹرلائزڈ بلاب ڈسیمینیشن نیٹ ورکس کے ذریعے دوبارہ تعمیر کے قابل رہیں۔"
       ]
     },
     {
       "type": "p",
-      "text": "[ur] Educational Disclaimer: This technical monograph is published exclusively for academic computer science, cryptography, and distributed systems research. It does not constitute financial, investment, or legal advice."
+      "text": "تعلیمی ڈس کلیمر: یہ تکنیکی مونوگراف خصوصی طور پر اکیڈمک کمپیوٹر سائنس، خفیہ نگاری، اور تقسیم شدہ نظاموں کی تحقیق کے لیے شائع کیا گیا ہے۔ اس میں مالی، سرمایہ کاری، یا قانونی مشورہ شامل نہیں ہے۔"
     }
   ],
   "sourceHash": "523630936943ab95ea0e6983fdce3c8a20e619d1"

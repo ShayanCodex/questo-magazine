@@ -1,7 +1,7 @@
 {
   "slug": "the-architecture-of-sub-second-web-performance",
-  "title": "[ar] The Architecture of Sub-Second Web Performance",
-  "excerpt": "[ar] A technical dissection of edge CDN routing, immutable asset caching, zero-runtime static generation, and the elimination of server latency bottlenecks.",
+  "title": "بنية أداء الويب دون الثانية",
+  "excerpt": "تشريح تقني لتوجيه CDN للحافة، والتخزين المؤقت للأصول غير القابلة للتغيير، والتوليد الثابت في وقت التشغيل صفر، والقضاء على اختناقات زمن استجابة الخادم.",
   "date": "2026-11-12",
   "updated": "2026-11-14",
   "author": "Tariq Mahmood",
@@ -12,19 +12,19 @@
     "web-vitals"
   ],
   "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] High-density server racks emitting cyan LED telemetry inside an enterprise data facility",
+  "imageAlt": "رفوف خادم عالية الكثافة ينبعث منها قياس عن بعد LED سماوي داخل منشأة بيانات المؤسسة",
   "body": [
     {
       "type": "p",
-      "text": "[ar] For over a decade, web architecture has chased computational complexity at the expense of user experience. Massive single-page applications, convoluted hydration trees, and multi-tier backend database queries have bloated the modern web. Every millisecond of latency erodes user trust, depresses search visibility, and squanders device battery life."
+      "text": "لأكثر من عقد من الزمان، طاردت هندسة الويب التعقيد الحسابي على حساب تجربة المستخدم. أدت التطبيقات الضخمة ذات الصفحة الواحدة، وأشجار الترطيب المعقدة، واستعلامات قاعدة البيانات الخلفية متعددة المستويات إلى تضخم شبكة الويب الحديثة. يؤدي كل مللي ثانية من زمن الوصول إلى تآكل ثقة المستخدم، ويقلل من إمكانية رؤية البحث، ويبدد عمر بطارية الجهاز."
     },
     {
       "type": "h2",
-      "text": "[ar] The Anatomy of 50ms Edge Delivery"
+      "text": "تشريح تسليم الحافة بمقدار 50 مللي ثانية"
     },
     {
       "type": "p",
-      "text": "[ar] Achieving authentic sub-second Largest Contentful Paint (LCP) and zero Cumulative Layout Shift (CLS) requires inverting traditional hosting topology. Rather than computing HTML dynamically per user request, modern high-authority publishing platforms pre-compile pages into deterministic, immutable static HTML files at build time."
+      "text": "يتطلب تحقيق أكبر طلاء محتوى أصلي (LCP) وتحول تخطيط تراكمي صفري (CLS) عكس طوبولوجيا الاستضافة التقليدية. بدلاً من حساب HTML ديناميكيًا حسب طلب المستخدم، تقوم منصات النشر الحديثة ذات السلطة العالية بتجميع الصفحات مسبقًا في ملفات HTML ثابتة حتمية وغير قابلة للتغيير في وقت الإنشاء."
     },
     {
       "type": "code",
@@ -33,29 +33,29 @@
     },
     {
       "type": "p",
-      "text": "[ar] When an immutable asset is served from an edge node located within 15 kilometers of the requesting client, round-trip packet transport drops below 10 milliseconds. Server processing time effectively converges to zero."
+      "text": "عندما يتم تقديم أصل غير قابل للتغيير من عقدة طرفية تقع على بعد 15 كيلومترًا من العميل الطالب، تنخفض سرعة نقل الحزمة ذهابًا وإيابًا إلى أقل من 10 مللي ثانية. يتقارب وقت معالجة الخادم بشكل فعال مع الصفر."
     },
     {
       "type": "quote",
-      "text": "[ar] The fastest HTTP request is the one that never touches a dynamic origin database. True speed is an architectural discipline, not a compression afterthought.",
-      "cite": "[ar] Questo Systems Engineering Whitepaper"
+      "text": "أسرع طلب HTTP هو الذي لا يمس قاعدة بيانات الأصل الديناميكية أبدًا. السرعة الحقيقية هي نظام معماري، وليست فكرة لاحقة للضغط.",
+      "cite": "ورقة عمل هندسة أنظمة Questo"
     },
     {
       "type": "h3",
-      "text": "[ar] Core Principles of Zero-Bloat Publishing"
+      "text": "المبادئ الأساسية للنشر Zero-Bloat"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Pre-rendered HTML documents containing complete crawler-readable semantic copy and JSON-LD metadata.",
-        "[ar] Zero blocking third-party telemetry scripts executed prior to the primary content layout.",
-        "[ar] CSS paged media and modern font subsetting using unicode-range declarations and font-display: swap.",
-        "[ar] Chunked static JSON data delivery that progressive-hydrates interactive utilities without layout shifts."
+        "مستندات HTML معروضة مسبقًا تحتوي على نسخة دلالية كاملة قابلة للقراءة من قبل الزاحف وبيانات تعريف JSON-LD.",
+        "لا يتم تنفيذ أي نصوص برمجية للقياس عن بعد تابعة لجهات خارجية قبل تخطيط المحتوى الأساسي.",
+        "الوسائط المقسمة إلى صفحات CSS والإعداد الفرعي للخط الحديث باستخدام إعلانات نطاق unicode وعرض الخط: المبادلة.",
+        "تسليم بيانات JSON الثابتة والمقسمة التي تعمل على ترطيب الأدوات المساعدة التفاعلية بشكل تدريجي دون إجراء تغييرات في التخطيط."
       ]
     },
     {
       "type": "p",
-      "text": "[ar] By adhering to these rigorous engineering standards, digital publishers guarantee instant global discoverability, satisfy Google's most stringent Core Web Vitals criteria, and provide international readers with an uninterrupted, distraction-free reading experience."
+      "text": "من خلال الالتزام بهذه المعايير الهندسية الصارمة، يضمن الناشرون الرقميون إمكانية الاكتشاف العالمي الفوري، وتلبية معايير Google الحيوية الأساسية الأكثر صرامة، وتزويد القراء الدوليين بتجربة قراءة متواصلة وخالية من التشتيت."
     }
   ],
   "sourceHash": "edfd46a296d4b24aa8cb0eeac577f4cfb2d42440"

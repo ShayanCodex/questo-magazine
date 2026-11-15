@@ -1,7 +1,7 @@
 {
   "slug": "chemistry-of-espresso-extraction-and-particle-distribution",
-  "title": "[ar] The Chemistry of Espresso Extraction",
-  "excerpt": "[ar] A physical chemistry monograph on porous bed Darcy flow dynamics, bimodal grind particle size distribution, percolation channeling, and volatile compound solubility kinetics.",
+  "title": "كيمياء استخلاص الإسبريسو",
+  "excerpt": "دراسة كيمياء فيزيائية عن ديناميكيات تدفق دارسي المسامية، وتوزيع حجم جسيمات الطحن ثنائي النسق، وتوجيه الترشيح، وحركية ذوبان المركبات المتطايرة.",
   "date": "2026-11-15",
   "author": "Marcus Vance",
   "tags": [
@@ -13,23 +13,23 @@
     "coffee-science"
   ],
   "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Rich hazelnut crema forming in ceramic espresso cup underneath stainless steel bottomless portafilter",
+  "imageAlt": "كريمة البندق الغنية تتشكل في كوب إسبريسو من السيراميك أسفل مرشح القهوة الذي لا نهاية له من الفولاذ المقاوم للصدأ",
   "body": [
     {
       "type": "p",
-      "text": "[ar] Espresso is not merely a brewing method; it is a high-pressure solid-liquid extraction system governed by the thermodynamics of porous packed beds and chemical diffusion kinetics. In less than thirty seconds, heated pressurized water at 9 bars (0.9 MPa) penetrates a densely consolidated bed of roasted coffee fragments, solubilizing hundreds of volatile aldehydes, pyrazines, and organic acids while simultaneously emulsifying insoluble hydrophobic lipid droplets into a dense colloidal suspension known as crema."
+      "text": "الإسبريسو ليس مجرد طريقة تخمير؛ إنه نظام استخلاص صلب-سائل عالي الضغط تحكمه الديناميكا الحرارية للأسرّة المعبأة المسامية وحركية الانتشار الكيميائي. في أقل من ثلاثين ثانية، يخترق الماء الساخن المضغوط بكثافة 9 بار (0.9 ميجاباسكال) طبقة كثيفة من شظايا القهوة المحمصة، مما يؤدي إلى إذابة المئات من الألدهيدات المتطايرة، والبيرازينات، والأحماض العضوية بينما يستحلب في الوقت نفسه قطرات الدهون غير القابلة للذوبان الكارهة للماء إلى معلق غرواني كثيف يُعرف باسم الكريما."
     },
     {
       "type": "p",
-      "text": "[ar] Achieving consistent balance between sweet chlorogenic acid lactones and astringent polyphenols requires rigorous control over particle size distribution, hydraulic permeability, and solvent temperature profiles. Slight variations in grind uniformity can precipitate catastrophic microscopic channeling, where localized preferential flow paths over-extract bitter tannins while leaving adjacent bed zones completely untouched."
+      "text": "يتطلب تحقيق توازن ثابت بين لاكتونات حمض الكلوروجينيك الحلو والبوليفينول القابض تحكمًا صارمًا في توزيع حجم الجسيمات، والنفاذية الهيدروليكية، وملامح درجة حرارة المذيبات. يمكن أن تؤدي الاختلافات الطفيفة في تجانس الطحن إلى حدوث قنوات مجهرية كارثية، حيث تفرط مسارات التدفق التفضيلية الموضعية في استخلاص العفص المر بينما تترك مناطق السرير المجاورة دون مساس تمامًا."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Darcy's Law and Hydraulic Permeability in Packed Beds"
+      "text": "1. قانون دارسي والنفاذية الهيدروليكية في الأسرّة المعبأة"
     },
     {
       "type": "p",
-      "text": "[ar] Fluid flow through the compacted coffee puck conforms to Darcy's Law for laminar percolation through a porous solid medium:"
+      "text": "يتوافق تدفق السوائل عبر قرص القهوة المضغوط مع قانون دارسي للترشيح الصفحي من خلال وسط صلب مسامي:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] As extraction proceeds, $k$ does not remain static. The physical erosion of soluble solids and the migration of sub-micron fines toward the lower filter screen create dynamic compaction. If the applied pump pressure $\\Delta P$ is excessively elevated (exceeding 9.5 bars), the coffee bed undergoes compressive plastic deformation, closing interstitial voids, choking permeability, and initiating micro-fractures through which water violently channels."
+      "text": "مع استمرار عملية الاستخراج، لا يظل $k$ ثابتًا. يؤدي التآكل الجسدي للمواد الصلبة القابلة للذوبان وانتقال الدقائق دون الميكرون نحو شاشة الترشيح السفلية إلى إنشاء ضغط ديناميكي. إذا كان ضغط المضخة المطبق $\\Delta P$ مرتفعًا بشكل مفرط (يتجاوز 9.5 بار)، فإن قاع القهوة يخضع لتشوه بلاستيكي ضاغط، مما يؤدي إلى إغلاق الفراغات الخلالية، ونفاذية الاختناق، وبدء الكسور الدقيقة التي يمر من خلالها الماء بعنف."
     },
     {
       "type": "quote",
-      "text": "[ar] Extraction is a race against thermodynamic equilibrium. The goal is to capture the rapid dissolution of pleasant aromatics and fruity organic acids before the sluggish diffusion of bitter lignins contaminates the cup.",
-      "cite": "[ar] Marcus Vance, Master Roaster & Food Chemist"
+      "text": "الاستخراج هو سباق ضد التوازن الديناميكي الحراري. الهدف هو التقاط الذوبان السريع للعطريات اللطيفة والأحماض العضوية الفاكهية قبل أن يلوث الانتشار البطيء للقشور المريرة الكوب.",
+      "cite": "ماركوس فانس، كبير المحمصين وكيميائيي الأغذية"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Bimodal Grind Distribution: The Interplay of Coarse Boulders and Fines"
+      "text": "2. توزيع الطحن ثنائي الوضع: التفاعل بين الصخور الخشنة والناعمة"
     },
     {
       "type": "p",
-      "text": "[ar] Laser diffraction particle analysis reveals that burr grinding mechanisms produce an inherently bimodal volume distribution rather than a uniform monomodal spread."
+      "text": "يكشف تحليل جسيمات حيود الليزر أن آليات طحن الأزيز تنتج توزيعًا ثنائيًا للحجم بطبيعته بدلاً من انتشار أحادي موحد."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Primary Peak (250–500 μm): Coarse boulders maintain the structural hydraulic framework of the puck, preventing bed collapse and enabling stable water flow.",
-        "[ar] Secondary Peak (< 50 μm): Microscopic fines are shattered cellular wall fragments lacking internal cell matrix. They dissolve almost instantaneously upon water contact, providing early TDS (Total Dissolved Solids) and essential lipids for crema stabilization.",
-        "[ar] The Fines Migration Dilemma: Excessive fines migrate downward under hydrodynamic drag, clogging the bottom basket orifices and causing unpredictable flow resistance."
+        "الذروة الأولية (250-500 ميكرومتر): تحافظ الصخور الخشنة على الإطار الهيدروليكي الهيكلي للقرص، مما يمنع انهيار القاعدة ويتيح تدفقًا مستقرًا للمياه.",
+        "الذروة الثانوية (<50 ميكرومتر): الدقائق المجهرية عبارة عن شظايا جدار خلوي محطمة تفتقر إلى مصفوفة الخلية الداخلية. إنها تذوب على الفور تقريبًا عند ملامسة الماء، مما يوفر TDS مبكرًا (إجمالي المواد الصلبة الذائبة) والدهون الأساسية لتثبيت الكريم.",
+        "معضلة انتقال الغرامات: تهاجر الغرامات المفرطة إلى الأسفل تحت تأثير السحب الهيدروديناميكي، مما يؤدي إلى انسداد فتحات السلة السفلية والتسبب في مقاومة تدفق لا يمكن التنبؤ بها."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Fluid Dynamics & Extraction Parameter Control"
+      "text": "3. دروس الفيديو المتقدمة: ديناميكيات الموائع والتحكم في معلمات الاستخلاص"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/aTFsBqhpLes",
-      "title": "[ar] Understanding Espresso Dose, Grind Particle Geometry, and Flow",
-      "caption": "[ar] In-depth experimental breakdown of water flow resistance, extraction yield calculations, and puck preparation physics."
+      "title": "فهم جرعة الإسبريسو، وهندسة جزيئات الطحن، والتدفق",
+      "caption": "تحليل تجريبي متعمق لمقاومة تدفق المياه، وحسابات إنتاجية الاستخلاص، وفيزياء إعداد القرص."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Solvent Thermodynamics and Chemical Dissolution Sequence"
+      "text": "4. الديناميكا الحرارية للمذيبات وتسلسل الذوبان الكيميائي"
     },
     {
       "type": "p",
-      "text": "[ar] The chemical constituents of roasted coffee possess distinctly staggered dissolution kinetics governed by polarity and molecular weight. During the initial 0 to 8 seconds of extraction, highly polar malic, citric, and acetic acids surge into solution alongside caffeine. These define perceived acidity, fruit character, and initial brightness."
+      "text": "تمتلك المكونات الكيميائية للقهوة المحمصة حركية ذوبان متداخلة بشكل واضح تحكمها القطبية والوزن الجزيئي. خلال أول 0 إلى 8 ثوانٍ من الاستخلاص، تتدفق أحماض الماليك والستريك والأسيتيك عالية القطبية إلى المحلول جنبًا إلى جنب مع الكافيين. تحدد هذه الحموضة المتصورة وطبيعة الفاكهة والسطوع الأولي."
     },
     {
       "type": "p",
-      "text": "[ar] Between seconds 8 and 20, medium-polarity melanoidins and sucrose caramels dissolve, establishing mouthfeel, body, and balanced sweetness. Beyond 25 seconds, the extraction of high-molecular-weight chlorogenic acid dimers and astringent quinic acids escalates rapidly. Halting extraction at an optimal brew ratio (typically 1:2 to 1:2.5 coffee-to-yield) precisely terminates extraction before these drying, harsh polyphenols enter the cup."
+      "text": "بين الثواني 8 و20، تذوب الميلانويدات وكراميل السكروز ذات القطبية المتوسطة، مما يخلق ملمسًا بالفم والجسم وحلاوة متوازنة. بعد 25 ثانية، يتصاعد بسرعة استخلاص ثنائيات حمض الكلوروجينيك ذات الوزن الجزيئي العالي وأحماض الكينيك القابضة. يؤدي إيقاف الاستخلاص بنسبة تحضير مثالية (عادةً 1:2 إلى 1:2.5 من القهوة إلى المحصول) إلى إنهاء عملية الاستخلاص بدقة قبل دخول مادة البوليفينول القاسية الجافة إلى الكوب."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Barista & Coffee Science Takeaways"
+      "text": "5. الوجبات السريعة لباريستا وعلوم القهوة"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Pre-Infusion Priming: Apply low pressure (2-3 bars) for 4-6 seconds to hydrate the puck uniformly, mitigating dry spots and channeling before full pump pressure engages.",
-        "[ar] Flow Profiling over Pressure Profiling: Modulate pump flow to decline pressure during the second half of the shot as puck resistance erodes, preserving sweetness.",
-        "[ar] Refractometric Monitoring: Target an Extraction Yield between 19% and 22% paired with a Total Dissolved Solids (TDS) reading between 8.5% and 10.5% for optimal sensory balance."
+        "تحضير ما قبل التسريب: استخدم ضغطًا منخفضًا (2-3 بار) لمدة 4-6 ثوانٍ لترطيب القرص بشكل موحد، وتخفيف البقع الجافة والتوجيه قبل تشغيل ضغط المضخة بالكامل.",
+        "تحديد التدفق عبر تحديد الضغط: قم بتعديل تدفق المضخة لتقليل الضغط خلال النصف الثاني من اللقطة مع تآكل مقاومة القرص، مما يحافظ على الحلاوة.",
+        "مراقبة قياس الانكسار: استهدف معدل استخلاص يتراوح بين 19% و22% مقترنًا بقراءة إجمالي المواد الصلبة الذائبة (TDS) تتراوح بين 8.5% و10.5% لتحقيق التوازن الحسي الأمثل."
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes",
-  "title": "[ar] Solid-State Battery Chemistry",
-  "excerpt": "[ar] A materials science and electrochemical monograph on sulfide solid electrolytes, lithium dendrite suppression mechanics, critical current density thresholds, and high-capacity silicon-dominant composite anodes.",
+  "title": "كيمياء بطاريات الحالة الصلبة",
+  "excerpt": "دراسة في علم المواد والكهروكيميائية عن إلكتروليتات الكبريتيد الصلبة، وميكانيكا قمع تغصنات الليثيوم، وعتبات كثافة التيار الحرجة، والأنودات المركبة ذات السعة العالية التي يهيمن عليها السيليكون.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -13,23 +13,23 @@
     "engineering"
   ],
   "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "[ar] Precision engineered high energy density electrochemical battery cell laboratory test setup",
+  "imageAlt": "إعداد الاختبار المعملي لخلية البطارية الكهروكيميائية عالية الكثافة للطاقة بدقة",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The electrification of commercial aviation, heavy haul freight, and high-range passenger transit is fundamentally constrained by the energy density and thermal runaway hazards of conventional liquid-electrolyte lithium-ion cells. Commercial graphite-intercalated cells top out at approximately 280 Wh/kg and rely on volatile, flammable organic carbonates that ignite under mechanical puncture or internal short circuits."
+      "text": "إن كهربة الطيران التجاري والشحن الثقيل وعبور الركاب عالي المدى مقيدة بشكل أساسي بكثافة الطاقة والمخاطر الحرارية المنفلتة لخلايا أيون الليثيوم السائلة التقليدية. تصل الخلايا التجارية المقحمة من الجرافيت إلى حوالي 280 واط ساعة/كجم وتعتمد على الكربونات العضوية المتطايرة والقابلة للاشتعال والتي تشتعل تحت ثقب ميكانيكي أو دوائر قصيرة داخلية."
     },
     {
       "type": "p",
-      "text": "[ar] All-Solid-State Batteries (ASSBs) replace the liquid solvent with an inorganic ceramic or sulfide ion-conducting solid matrix. By pairing solid electrolytes with pure metallic lithium or silicon-dominant anodes, ASSBs promise gravimetric energy densities exceeding 500 Wh/kg, wide thermal operating envelopes (-30°C to 100°C), and non-flammable inherent safety."
+      "text": "تحل بطاريات الحالة الصلبة بالكامل (ASSBs) محل المذيب السائل بمصفوفة صلبة موصلة للأيونات من السيراميك غير العضوي أو الكبريتيد. من خلال إقران الشوارد الصلبة مع الليثيوم المعدني النقي أو الأنودات المهيمنة على السيليكون، تعد ASSBs بكثافة طاقة وزنية تتجاوز 500 واط ساعة/كجم، وأغلفة تشغيل حرارية واسعة (-30 درجة مئوية إلى 100 درجة مئوية)، وسلامة متأصلة غير قابلة للاشتعال."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Solid Electrolyte Classes: Sulfides vs. Oxides vs. Halides"
+      "text": "1. فئات الإلكتروليتات الصلبة: الكبريتيدات مقابل الأكاسيد مقابل الهاليدات"
     },
     {
       "type": "p",
-      "text": "[ar] The viability of any solid-state architecture hinges upon ionic conductivity ($\\sigma_{ion}$) at ambient temperatures:"
+      "text": "تتوقف صلاحية أي بنية حالة صلبة على التوصيل الأيوني ($\\sigma_{ion}$) في درجات الحرارة المحيطة:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] Because sulfide crystals possess softer, more polarizable sulfur anion frameworks, lithium ions encounter low migration activation barriers ($E_a < 0.25$ eV), permitting rapid transport that rivals traditional liquid electrolytes."
+      "text": "نظرًا لأن بلورات الكبريتيد تمتلك هياكل أنيونية كبريتية أكثر ليونة وأكثر استقطابًا، تواجه أيونات الليثيوم حواجز تنشيط منخفضة للهجرة (E_a <0.25$ eV)، مما يسمح بالنقل السريع الذي ينافس الشوارد السائلة التقليدية."
     },
     {
       "type": "quote",
-      "text": "[ar] Solid-state is not just a safer battery; it is the unlocking mechanism for pure lithium metal anodes, doubling gravimetric density by discarding heavy graphite hosts.",
-      "cite": "[ar] Hiroshi Tanaka, Advanced Materials & Electrochemical Systems Fellow"
+      "text": "الحالة الصلبة ليست مجرد بطارية أكثر أمانًا؛ إنها آلية فتح أنودات معدن الليثيوم النقي، مما يؤدي إلى مضاعفة الكثافة الوزنية عن طريق التخلص من مضيفات الجرافيت الثقيلة.",
+      "cite": "هيروشي تاناكا، زميل المواد المتقدمة والأنظمة الكهروكيميائية"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. The Dendrite Conundrum: Critical Current Density (CCD)"
+      "text": "2. معضلة التشعبات: كثافة التيار الحرجة (CCD)"
     },
     {
       "type": "p",
-      "text": "[ar] Early theory posited that a rigid solid ceramic electrolyte would mechanically suppress lithium dendrite formation via the Monroe-Newman criterion (shear modulus $G_{SE} > 2 \\cdot G_{Li}$). However, operando X-ray tomography revealed that lithium metal readily infiltrates intergranular grain boundaries and microcracks under fast charging conditions."
+      "text": "افترضت النظرية المبكرة أن المنحل بالكهرباء الخزفي الصلب الصلب من شأنه أن يثبط ميكانيكيًا تكوين تشعبات الليثيوم عبر معيار مونرو-نيومان (معامل القص $G_{SE} > 2 \\cdot G_{Li}$). ومع ذلك، كشف التصوير المقطعي بالأشعة السينية أن معدن الليثيوم يتسلل بسهولة إلى حدود الحبوب الحبيبية والشقوق الصغيرة في ظل ظروف الشحن السريع."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Critical Current Density (CCD): The maximum charging current rate beyond which non-uniform lithium plating initiates intergranular short circuits.",
-        "[ar] Stack Pressure Management: Maintaining constant uniaxial stack pressures of 1 to 5 MPa ensures intimate solid-solid physical contact as lithium strips and plates during discharge cycles.",
-        "[ar] Interfacial Buffer Coatings: Thin ALD (Atomic Layer Deposition) coatings of zinc, carbon, or gold alloy with incoming lithium, ensuring planar 2D growth rather than 1D filamentous spikes."
+        "كثافة التيار الحرجة (CCD): الحد الأقصى لمعدل تيار الشحن الذي بعده يبدأ طلاء الليثيوم غير الموحد في حدوث دوائر قصيرة بين الحبيبات.",
+        "إدارة ضغط المكدس: إن الحفاظ على ضغوط ثابتة أحادية المحور تتراوح من 1 إلى 5 ميجا باسكال يضمن الاتصال الجسدي الحميم بين الصلبة والصلبة مثل شرائح وألواح الليثيوم أثناء دورات التفريغ.",
+        "الطلاءات العازلة البينية: طبقات رقيقة من ALD (ترسيب الطبقة الذرية) من الزنك أو الكربون أو سبائك الذهب مع الليثيوم الوارد، مما يضمن نموًا مستويًا ثنائي الأبعاد بدلاً من المسامير الخيطية أحادية الأبعاد."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: High-Voltage Electrochemistry & Advanced Storage"
+      "text": "3. دروس فيديو متقدمة: الكيمياء الكهربائية عالية الجهد والتخزين المتقدم"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "[ar] High Voltage Electrochemical Energy Storage and Advanced Grid Batteries",
-      "caption": "[ar] Engineering analysis of advanced battery chemistry, solid-state cell architecture, and utility-scale energy storage."
+      "title": "تخزين الطاقة الكهروكيميائية عالية الجهد وبطاريات الشبكة المتقدمة",
+      "caption": "التحليل الهندسي لكيمياء البطاريات المتقدمة، وبنية خلايا الحالة الصلبة، وتخزين الطاقة على نطاق المرافق."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Silicon Composite Anodes: 300% Volumetric Expansion Mechanics"
+      "text": "4. أنودات السيليكون المركب: ميكانيكا التمدد الحجمي بنسبة 300%"
     },
     {
       "type": "p",
-      "text": "[ar] While pure lithium metal remains the ultimate goal, silicon provides an exceptional intermediate bridge. Silicon boasts a theoretical specific capacity of 3,579 mAh/g ($Li_{15}Si_4$), nearly ten times that of commercial graphite (372 mAh/g)."
+      "text": "بينما يظل معدن الليثيوم النقي هو الهدف النهائي، يوفر السيليكون جسرًا وسيطًا استثنائيًا. يتميز السيليكون بسعة نظرية محددة تبلغ 3,579 مللي أمبير/جرام ($Li_{15}Si_4$)، أي ما يقرب من عشرة أضعاف قدرة الجرافيت التجاري (372 مللي أمبير/جرام)."
     },
     {
       "type": "p",
-      "text": "[ar] However, lithiation induces severe 300% volumetric expansion, pulverizing traditional electrodes. When embedded within an elastomeric solid-state binder matrix with high interfacial elasticity, micro-silicon composite anodes accommodate cyclic breathing without losing electrical percolating pathways."
+      "text": "ومع ذلك، فإن عملية الليثيوم تؤدي إلى توسع حجمي شديد بنسبة 300%، مما يؤدي إلى سحق الأقطاب الكهربائية التقليدية. عند دمجها داخل مصفوفة رابط ذات حالة صلبة مرنة ذات مرونة عالية بينية، فإن الأنودات المركبة من السيليكون الصغير تستوعب التنفس الدوري دون فقدان مسارات الترشيح الكهربائية."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Electrochemical Systems Engineering Takeaways"
+      "text": "5. الوجبات السريعة في هندسة الأنظمة الكهروكيميائية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Stack Compression Engineering: Design cell housings with spring-loaded mechanical platens to maintain continuous interfacial contact through 20% state-of-charge thickness swings.",
-        "[ar] Dry Room Manufacturing: Sulfide solid electrolyte production requires ultra-dry atmospheres (dew point < -50°C) to prevent lethal hydrogen sulfide decomposition.",
-        "[ar] High-Nickel Cathode Coupling: Pair solid electrolytes with single-crystal NMC90 cathodes coated in lithium borate to eliminate micro-cracking at high cell voltages (> 4.3V)."
+        "هندسة ضغط المكدس: تصميم أغلفة الخلايا بألواح ميكانيكية محملة بنابض للحفاظ على الاتصال البيني المستمر من خلال تقلبات سمك حالة الشحن بنسبة 20%.",
+        "تصنيع الغرف الجافة: يتطلب إنتاج المنحل بالكهرباء الصلب من الكبريتيد أجواء شديدة الجفاف (نقطة الندى <-50 درجة مئوية) لمنع تحلل كبريتيد الهيدروجين المميت.",
+        "اقتران كاثود عالي النيكل: قم بإقران الشوارد الصلبة مع كاثودات NMC90 أحادية البلورة ومغطاة بورات الليثيوم للتخلص من التشققات الدقيقة عند الفولتية العالية للخلايا (> 4.3 فولت)."
       ]
     }
   ],

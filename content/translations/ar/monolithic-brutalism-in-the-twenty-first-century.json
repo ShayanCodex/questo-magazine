@@ -1,7 +1,7 @@
 {
   "slug": "monolithic-brutalism-in-the-twenty-first-century",
-  "title": "[ar] Monolithic Brutalism in the Twenty-First Century",
-  "excerpt": "[ar] An investigative monograph on the enduring tectonic integrity of board-marked concrete, passive thermal mass, and why permanence matters in an age of fragile construction.",
+  "title": "الوحشية المتجانسة في القرن الحادي والعشرين",
+  "excerpt": "دراسة استقصائية عن السلامة التكتونية الدائمة للخرسانة ذات العلامات الخشبية، والكتلة الحرارية السلبية، وسبب أهمية الديمومة في عصر البناء الهش.",
   "date": "2026-11-10",
   "updated": "2026-11-12",
   "author": "Julian Mercer",
@@ -12,40 +12,40 @@
     "sustainability"
   ],
   "image": "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Monolithic board-marked brutalist concrete civic complex",
+  "imageAlt": "مجمع مدني خرساني وحشي متآلف",
   "body": [
     {
       "type": "p",
-      "text": "[ar] Contemporary commercial construction is overwhelmingly defined by planned obsolescence. Lightweight steel frames wrapped in composite aluminum panels and silicone sealants are engineered for thirty-year amortization schedules rather than centuries of civil endurance. In contrast, brutalist architecture stands as an unapologetic monument to geological permanence."
+      "text": "يتم تعريف البناء التجاري المعاصر بشكل كبير من خلال التقادم المخطط له. تم تصميم الإطارات الفولاذية خفيفة الوزن المغلفة بألواح الألومنيوم المركبة ومانعات التسرب المصنوعة من السيليكون لجداول استهلاك مدتها ثلاثين عامًا بدلاً من قرون من التحمل المدني. في المقابل، تقف العمارة الوحشية بمثابة نصب تذكاري للاستمرارية الجيولوجية."
     },
     {
       "type": "h2",
-      "text": "[ar] The Thermal and Structural Honesty of Raw Concrete"
+      "text": "الصدق الحراري والإنشائي للخرسانة الخام"
     },
     {
       "type": "p",
-      "text": "[ar] The term béton brut—raw concrete—was never intended to describe grim hostility; it signified tectonic honesty. When liquid aggregate is poured into hand-milled timber formwork, the grain, knots, and imperfections of the wood are permanently petrified into stone. The structure does not mask its method of creation."
+      "text": "لم يكن القصد من مصطلح البيتون بروت – الخرسانة الخام – أبدًا وصف العداء القاتم؛ لقد كان يدل على الصدق التكتوني. عندما يتم صب الركام السائل في القوالب الخشبية المطحونة يدويًا، فإن الحبوب والعقد والعيوب الموجودة في الخشب تتحجر بشكل دائم في الحجر. الهيكل لا يخفي طريقة إنشائه."
     },
     {
       "type": "quote",
-      "text": "[ar] A building that does not age gracefully is merely an ephemeral consumer product pretending to be architecture.",
-      "cite": "[ar] Julian Mercer, Notes on Monumental Permanence"
+      "text": "إن المبنى الذي لا يتقادم بشكل أنيق هو مجرد منتج استهلاكي سريع الزوال يتظاهر بأنه هندسة معمارية.",
+      "cite": "جوليان ميرسر، ملاحظات حول الدوام الضخم"
     },
     {
       "type": "h3",
-      "text": "[ar] Sustainable Attributes of Monolithic Mass"
+      "text": "السمات المستدامة للكتلة المتجانسة"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] High thermal inertia: Massive aggregate walls absorb diurnal solar heat, naturally moderating indoor temperature extremes without mechanical HVAC cycles.",
-        "[ar] Acoustic sanctuary: Dense poured masonry attenuates urban ambient noise frequencies by up to 55 decibels.",
-        "[ar] Zero-maintenance weathering: Rather than degrading, high-density Portland cement forms a protective carbonate patina under natural precipitation cycles."
+        "القصور الذاتي الحراري العالي: تمتص الجدران المجمعة الضخمة الحرارة الشمسية النهارية، وتعدل بشكل طبيعي درجات الحرارة القصوى في الأماكن المغلقة دون دورات التدفئة والتهوية وتكييف الهواء الميكانيكية.",
+        "الملاذ الصوتي: تعمل أعمال البناء الكثيفة على تخفيف ترددات الضوضاء المحيطة بالمدينة بنسبة تصل إلى 55 ديسيبل.",
+        "التجوية التي لا تحتاج إلى صيانة: بدلاً من التحلل، يشكل الأسمنت البورتلاندي عالي الكثافة طبقة كربونية واقية في ظل دورات هطول الأمطار الطبيعية."
       ]
     },
     {
       "type": "p",
-      "text": "[ar] As our societies confront ecological instability and economic volatility, the lessons of mid-century civic brutalism are re-emerging: build once, build honestly, and build to outlast the generational cycles that conceived it."
+      "text": "بينما تواجه مجتمعاتنا عدم الاستقرار البيئي والتقلبات الاقتصادية، فإن الدروس المستفادة من الوحشية المدنية في منتصف القرن بدأت تظهر من جديد: البناء مرة واحدة، والبناء بأمانة، والبناء لكي يدوم بعد دورات الأجيال التي تصورتها."
     }
   ],
   "sourceHash": "6d1a79f0363b4a1ac00fb302d45b6d090a774b48"

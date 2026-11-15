@@ -1,7 +1,7 @@
 {
   "slug": "the-mathematical-elegance-of-the-swiss-grid",
-  "title": "[ar] The Mathematical Elegance of the Swiss Grid",
-  "excerpt": "[ar] A deep analysis of Josef Müller-Brockmann's modular layout mathematics, proportional margins, and why the grid remains the foundational grammar of visual communication.",
+  "title": "الأناقة الرياضية للشبكة السويسرية",
+  "excerpt": "تحليل عميق لرياضيات التخطيط المعياري لجوزيف مولر بروكمان، والهوامش المتناسبة، ولماذا تظل الشبكة هي القواعد الأساسية للاتصال المرئي.",
   "date": "2026-11-09",
   "updated": "2026-11-13",
   "author": "Saskia Lindqvist",
@@ -12,40 +12,40 @@
     "graphic-design"
   ],
   "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Geometric modular architectural lines and typographic proportions on stark white paper",
+  "imageAlt": "خطوط معمارية هندسية ونسب مطبعية على ورق أبيض صارخ",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The grid is not a prison; it is a canvas of liberating discipline. When Josef Müller-Brockmann and the pioneers of the Zurich School formalized the International Typographic Style in the 1950s, they sought to purge graphic design of arbitrary subjective whimsy in favor of universal clarity, mathematical harmony, and democratic readability."
+      "text": "الشبكة ليست سجنًا؛ إنها لوحة من الانضباط المتحرر. عندما قام جوزيف مولر بروكمان ورواد مدرسة زيوريخ بإضفاء الطابع الرسمي على أسلوب الطباعة الدولي في الخمسينيات من القرن الماضي، سعوا إلى تطهير التصميم الجرافيكي من النزوة الذاتية التعسفية لصالح الوضوح العالمي، والتناغم الرياضي، وسهولة القراءة الديمقراطية."
     },
     {
       "type": "h2",
-      "text": "[ar] Modular Arithmetic and Harmonic Proportions"
+      "text": "الحساب المعياري والنسب التوافقية"
     },
     {
       "type": "p",
-      "text": "[ar] At its heart, the Swiss grid relies on proportional division. A standard 12-column layout can be subdivided into halves, thirds, quarters, and sixths without ever breaking horizontal or vertical baseline rhythm. Every headline, pullquote, and caption anchors directly to an underlying mathematical coordinate system."
+      "text": "تعتمد الشبكة السويسرية في جوهرها على القسمة النسبية. يمكن تقسيم التخطيط القياسي المكون من 12 عمودًا إلى نصفين وثلثين وأرباع وسدس دون كسر إيقاع الخط الأساسي الأفقي أو العمودي. يرتبط كل عنوان رئيسي واقتباس وتسمية توضيحية مباشرة بنظام إحداثيات رياضي أساسي."
     },
     {
       "type": "quote",
-      "text": "[ar] The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.",
-      "cite": "[ar] Josef Müller-Brockmann, Grid Systems in Graphic Design"
+      "text": "نظام الشبكة هو وسيلة مساعدة وليست ضمانة. فهو يسمح بعدد من الاستخدامات الممكنة ويمكن لكل مصمم أن يبحث عن حل مناسب لأسلوبه الشخصي. ولكن يجب على المرء أن يتعلم كيفية استخدام الشبكة؛ إنه فن يتطلب الممارسة.",
+      "cite": "جوزيف مولر بروكمان، أنظمة الشبكة في التصميم الجرافيكي"
     },
     {
       "type": "h3",
-      "text": "[ar] Essential Axioms of the Swiss Methodology"
+      "text": "البديهيات الأساسية للمنهجية السويسرية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
-        "[ar] Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
-        "[ar] Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
+        "الالتزام الصارم بالشبكة الأساسية: كل سطر من النص، بغض النظر عن حجم الخط، يتناسب مع مضاعفات ارتفاع الخط الأساسي.",
+        "التوازن الديناميكي غير المتماثل: استبدال التمركز الثابت بتوتر المسافة البيضاء النشط والطباعة ذات الاتجاه الأيسر.",
+        "التباين المطبعي الهرمي: الاستفادة من التفاوتات الكبيرة في الحجم بين عناوين العرض الضخمة والنسخة الأساسية المدمجة والمقروءة."
       ]
     },
     {
       "type": "p",
-      "text": "[ar] In our contemporary digital ecosystem, where responsive layouts must adapt instantaneously across watch screens, smartphones, and ultra-wide desktop monitors, the mathematical rigor of the Swiss grid remains our most robust visual compass."
+      "text": "في نظامنا البيئي الرقمي المعاصر، حيث يجب أن تتكيف التخطيطات سريعة الاستجابة بشكل فوري عبر شاشات الساعات والهواتف الذكية وشاشات سطح المكتب فائقة الاتساع، تظل الدقة الرياضية للشبكة السويسرية أقوى بوصلة بصرية لدينا."
     }
   ],
   "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"

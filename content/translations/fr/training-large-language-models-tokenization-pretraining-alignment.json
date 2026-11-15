@@ -1,7 +1,7 @@
 {
   "slug": "training-large-language-models-tokenization-pretraining-alignment",
-  "title": "[fr] Training LLMs from Scratch",
-  "excerpt": "[fr] A foundational machine learning engineering monograph detailing byte-pair encoding tokenization, autoregressive cross-entropy loss trajectories, 3D tensor parallelism, and RLHF alignment dynamics.",
+  "title": "Formation des LLM à partir de zéro",
+  "excerpt": "Une monographie fondamentale d'ingénierie d'apprentissage automatique détaillant la tokenisation de l'encodage par paires d'octets, les trajectoires de perte d'entropie croisée autorégressive, le parallélisme tenseur 3D et la dynamique d'alignement RLHF.",
   "date": "2026-11-15",
   "author": "Elena Rostova",
   "tags": [
@@ -13,23 +13,23 @@
     "engineering"
   ],
   "image": "/images/articles/llm-training-code.jpg",
-  "imageAlt": "[fr] High performance Python deep learning training loop code on dark IDE display",
+  "imageAlt": "Code de boucle de formation d'apprentissage profond Python hautes performances sur écran IDE sombre",
   "body": [
     {
       "type": "p",
-      "text": "[fr] Building a frontier generative foundation model from first principles is an exercise in applied numerical optimization, distributed systems engineering, and statistical language modeling. At its core, a generative pretrained transformer does not understand semantics in a human sense; it estimates a high-dimensional joint probability distribution over discrete vocabulary tokens by minimizing autoregressive cross-entropy loss across trillions of training bytes."
+      "text": "Construire un modèle de base génératif de frontière à partir des premiers principes est un exercice d'optimisation numérique appliquée, d'ingénierie de systèmes distribués et de modélisation de langage statistique. À la base, un transformateur génératif pré-entraîné ne comprend pas la sémantique au sens humain ; il estime une distribution de probabilité conjointe de grande dimension sur des jetons de vocabulaire discrets en minimisant la perte d'entropie croisée autorégressive sur des milliards d'octets d'entraînement."
     },
     {
       "type": "p",
-      "text": "[fr] The lifecycle of an LLM divides cleanly into four sequential regimes: corpus curation and byte-pair encoding tokenization, self-supervised pretraining at petabyte scale, supervised fine-tuning (SFT) for instruction compliance, and reinforcement learning from human feedback (RLHF) to align model outputs with human intent."
+      "text": "Le cycle de vie d'un LLM se divise clairement en quatre régimes séquentiels : conservation du corpus et tokenisation de l'encodage par paires d'octets, pré-entraînement auto-supervisé à l'échelle du pétaoctet, réglage fin supervisé (SFT) pour la conformité des instructions et apprentissage par renforcement à partir de la rétroaction humaine (RLHF) pour aligner les sorties du modèle avec l'intention humaine."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. Tokenization: Byte-Pair Encoding and Vocabulary Compression"
+      "text": "1. Tokenisation : codage par paires d'octets et compression de vocabulaire"
     },
     {
       "type": "p",
-      "text": "[fr] Raw natural language cannot be processed directly by linear matrix operations. It must first be discretized into integer token identifiers via Byte-Pair Encoding (BPE):"
+      "text": "Le langage naturel brut ne peut pas être traité directement par des opérations matricielles linéaires. Il doit d'abord être discrétisé en identifiants de jetons entiers via Byte-Pair Encoding (BPE) :"
     },
     {
       "type": "code",
@@ -38,62 +38,62 @@
     },
     {
       "type": "p",
-      "text": "[fr] Targeting an optimal vocabulary size requires navigating an engineering trade-off: larger vocabularies compress sequence length and lower inference latency, but expand the memory footprint of the input embedding matrix and final output unembedding projection layer."
+      "text": "Cibler une taille de vocabulaire optimale nécessite de faire un compromis technique : des vocabulaires plus grands compressent la longueur de la séquence et réduisent la latence d'inférence, mais augmentent l'empreinte mémoire de la matrice d'intégration d'entrée et de la couche de projection de désintégration de sortie finale."
     },
     {
       "type": "quote",
-      "text": "[fr] Pretraining is the thermodynamic forge of foundation models. Over 99% of all compute, memory bandwidth, and electrical energy is consumed during the self-supervised pretraining phase.",
-      "cite": "[fr] Elena Rostova, Senior Fellow in Embodied AI & Neural Architectures"
+      "text": "Le pré-entraînement est la forge thermodynamique des modèles de fondation. Plus de 99 % de l'ensemble des calculs, de la bande passante mémoire et de l'énergie électrique sont consommés pendant la phase de pré-entraînement auto-supervisée.",
+      "cite": "Elena Rostova, chercheuse principale en IA incorporée et architectures neuronales"
     },
     {
       "type": "h2",
-      "text": "[fr] 2. Pretraining Dynamics and Distributed 3D Parallelism"
+      "text": "2. Dynamique de pré-entraînement et parallélisme 3D distribué"
     },
     {
       "type": "p",
-      "text": "[fr] Training a 70B parameter model across hundreds of gigabytes of GPU VRAM exceeds the capacity of any single accelerator chip. Modern clusters orchestrate 3D parallelism:"
+      "text": "La formation d'un modèle de paramètres 70B sur des centaines de gigaoctets de VRAM GPU dépasse la capacité de n'importe quelle puce d'accélérateur unique. Les clusters modernes orchestrent le parallélisme 3D :"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Tensor Parallelism (Megatron-LM): Partitions individual weight matrices (such as query, key, and feed-forward projections) across GPUs within the same NVLink domain.",
-        "[fr] Pipeline Parallelism: Slices transformer layers sequentially across distinct server nodes, passing hidden activation states forward and backward.",
-        "[fr] Data Parallelism with ZeRO-3: Shards optimizer states, gradients, and model parameters across the distributed cluster, eliminating redundant memory duplication.",
-        "[fr] FlashAttention-3 Integration: Eliminates materialization of quadratic N×N attention matrices in HBM by fusing softmax scaling and matrix multiplication directly into SRAM registers."
+        "Parallélisme tensoriel (Megatron-LM) : partitionne les matrices de poids individuelles (telles que les projections de requêtes, de clés et de rétroaction) entre les GPU au sein du même domaine NVLink.",
+        "Parallélisme du pipeline : découpe les couches de transformateur de manière séquentielle sur des nœuds de serveur distincts, en transmettant les états d'activation cachés en avant et en arrière.",
+        "Parallélisme des données avec ZeRO-3 : partage les états, les gradients et les paramètres du modèle de l'optimiseur de fragments sur le cluster distribué, éliminant ainsi la duplication de mémoire redondante.",
+        "Intégration FlashAttention-3 : élimine la matérialisation des matrices d'attention quadratiques N×N dans HBM en fusionnant la mise à l'échelle softmax et la multiplication matricielle directement dans les registres SRAM."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Video Masterclass: Building GPT and Transformer Models from Scratch"
+      "text": "3. Masterclass vidéo : Création de modèles GPT et de transformateurs à partir de zéro"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "[fr] Building and Training Generative Pretrained Transformers from Scratch",
-      "caption": "[fr] Andrej Karpathy's masterclass on the mathematical mechanics of building, compiling, and training autoregressive transformer language models from code."
+      "title": "Création et formation de transformateurs pré-entraînés génératifs à partir de zéro",
+      "caption": "Masterclass d'Andrej Karpathy sur la mécanique mathématique de la construction, de la compilation et de la formation de modèles de langage de transformateur autorégressifs à partir du code."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. Alignment: Supervised Fine-Tuning and Direct Preference Optimization (DPO)"
+      "text": "4. Alignement : réglage fin supervisé et optimisation directe des préférences (DPO)"
     },
     {
       "type": "p",
-      "text": "[fr] A raw pretrained base model is merely an uninhibited document completer. To convert it into an effective assistant, engineers fine-tune the model on curated multi-turn conversational transcripts using cross-entropy loss with masked input prompts."
+      "text": "Un modèle de base brut pré-entraîné est simplement un compléteur de document sans entrave. Pour le convertir en un assistant efficace, les ingénieurs affinent le modèle sur des transcriptions conversationnelles multi-tours organisées en utilisant la perte d'entropie croisée avec des invites de saisie masquées."
     },
     {
       "type": "p",
-      "text": "[fr] Following SFT, preference alignment steers the model toward helpful, truthful, and harmless completions. While legacy pipelines relied on training separate reward models using PPO reinforcement learning, modern systems increasingly deploy Direct Preference Optimization (DPO), which derives an exact closed-form objective to optimize the policy model directly on paired human preference rankings."
+      "text": "Après SFT, l'alignement des préférences oriente le modèle vers des complétions utiles, véridiques et inoffensives. Alors que les pipelines existants reposaient sur la formation de modèles de récompense distincts à l'aide de l'apprentissage par renforcement PPO, les systèmes modernes déploient de plus en plus l'optimisation des préférences directes (DPO), qui dérive un objectif exact de forme fermée pour optimiser le modèle politique directement sur la base de classements de préférences humaines appariés."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Machine Learning Systems Takeaways"
+      "text": "5. Points à retenir des systèmes d'apprentissage automatique"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Data Quality Dominance: High-quality deduplicated synthetic reasoning datasets outperform raw scraped web text by an order of magnitude in token efficiency.",
-        "[fr] Precision Formats: Utilize FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
-        "[fr] Learning Rate Annealing: Employ cosine decay schedules with warm-up periods to prevent gradient divergence during initial optimization epochs."
+        "Dominance de la qualité des données : les ensembles de données de raisonnement synthétique dédupliqués de haute qualité surpassent d'un ordre de grandeur le texte Web brut récupéré en termes d'efficacité des jetons.",
+        "Formats de précision : utilisez les routines d'entraînement à précision mixte FP8 et BF16 avec mise à l'échelle dynamique des pertes pour doubler le débit du tenseur tout en empêchant le sous-débit.",
+        "Recuit du taux d'apprentissage : utilisez des programmes de désintégration du cosinus avec des périodes d'échauffement pour éviter la divergence du gradient pendant les époques d'optimisation initiales."
       ]
     }
   ],

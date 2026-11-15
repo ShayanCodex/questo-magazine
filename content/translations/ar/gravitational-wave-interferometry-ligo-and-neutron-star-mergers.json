@@ -1,7 +1,7 @@
 {
   "slug": "gravitational-wave-interferometry-ligo-and-neutron-star-mergers",
-  "title": "[ar] Gravitational Wave Interferometry",
-  "excerpt": "[ar] An exhaustive exploration of kilometer-scale laser interferometry, squeezed light vacuum states, seismic vibration isolation, and multi-messenger astrophysics.",
+  "title": "قياس تداخل موجات الجاذبية",
+  "excerpt": "استكشاف شامل لقياس التداخل بالليزر على نطاق كيلومتر، وحالات فراغ الضوء المضغوط، وعزل الاهتزازات الزلزالية، والفيزياء الفلكية متعددة الرسل.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -12,27 +12,27 @@
     "optics"
   ],
   "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Deep space cosmic nebula representing gravitational wave ripples across spacetime curvature",
+  "imageAlt": "سديم كوني في الفضاء السحيق يمثل تموجات موجة الجاذبية عبر انحناء الزمكان",
   "body": [
     {
       "type": "p",
-      "text": "[ar] In 1916, Albert Einstein derived from the equations of General Relativity that accelerating mass quadrupoles must radiate perturbations through the metric tensor of spacetime: gravitational waves. For nearly a century, these ripples remained purely theoretical constructs, predicted to cause spatial distortions so infinitesimal—on the order of $10^{-21}$ strain—that Einstein himself doubted humanity could ever manufacture instruments sensitive enough to detect them."
+      "text": "في عام 1916، استنتج ألبرت أينشتاين من معادلات النسبية العامة أن تسارع رباعيات الكتلة يجب أن تشع اضطرابات من خلال الموتر المتري للزمكان: موجات الجاذبية. لما يقرب من قرن من الزمان، ظلت هذه التموجات عبارة عن بنيات نظرية بحتة، من المتوقع أن تسبب تشوهات مكانية متناهية الصغر - في حدود 10^{-21}$ دولار - لدرجة أن أينشتاين نفسه شكك في قدرة البشرية على تصنيع أدوات حساسة بما يكفي للكشف عنها."
     },
     {
       "type": "p",
-      "text": "[ar] On September 14, 2015, the Advanced Laser Interferometer Gravitational-Wave Observatory (LIGO) recorded GW150914: the catastrophic inspiral and collision of two stellar-mass black holes 1.3 billion light-years distant. The achievement marked the transition of human astronomy from electromagnetic observation to direct metric spacetime interferometry."
+      "text": "في 14 سبتمبر 2015، سجل مرصد قياس التداخل الليزري المتقدم لموجات الجاذبية (LIGO) GW150914: اصطدامًا حلزونيًا كارثيًا لثقبين أسودين كتلتهما نجمية على بعد 1.3 مليار سنة ضوئية. يمثل هذا الإنجاز انتقال علم الفلك البشري من المراقبة الكهرومغناطيسية إلى قياس التداخل الزمكاني المتري المباشر."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Optical Architecture: Fabry-Pérot Cavities & Power Recycling"
+      "text": "1. العمارة البصرية: تجاويف فابري بيرو وإعادة تدوير الطاقة"
     },
     {
       "type": "p",
-      "text": "[ar] LIGO operates dual perpendicular four-kilometer vacuum arms located in Hanford, Washington, and Livingston, Louisiana. At the intersection sits a high-purity Nd:YAG laser (operating at 1064 nm wavelength) split into two orthogonal beams by a 50:50 beamsplitter."
+      "text": "يقوم مرصد LIGO بتشغيل أذرع فراغية عمودية مزدوجة يبلغ طولها أربعة كيلومترات وتقع في هانفورد، واشنطن، وليفينغستون، لويزيانا. عند التقاطع يوجد ليزر Nd:YAG عالي النقاء (يعمل عند طول موجة 1064 نانومتر) مقسم إلى شعاعين متعامدين بواسطة مقسم أشعة بنسبة 50:50."
     },
     {
       "type": "p",
-      "text": "[ar] If a simple Michelson interferometer were deployed, a four-kilometer baseline would be insufficient to accumulate detectable phase shifts. To solve this, LIGO introduces Fabry-Pérot optical resonant cavities inside both arms, bouncing photons approximately 300 times before allowing interference at the photodetector. This increases the effective optical path length from 4 kilometers to over 1,100 kilometers:"
+      "text": "إذا تم نشر مقياس تداخل ميكلسون بسيط، فإن خط الأساس البالغ أربعة كيلومترات لن يكون كافيًا لتجميع تحولات الطور القابلة للاكتشاف. لحل هذه المشكلة، يقدم مرصد LIGO تجاويف الرنين البصري Fabry-Pérot داخل كلا الذراعين، حيث ترتد الفوتونات حوالي 300 مرة قبل السماح بالتداخل مع الكاشف الضوئي. يؤدي هذا إلى زيادة طول المسار البصري الفعال من 4 كيلومترات إلى أكثر من 1100 كيلومتر:"
     },
     {
       "type": "code",
@@ -41,65 +41,65 @@
     },
     {
       "type": "p",
-      "text": "[ar] When spacetime is warped by an incoming transverse-traceless gravitational wave, one arm is physically compressed while the perpendicular arm is stretched. The resulting phase discrepancy shifts the dark fringe condition at the photodiode, producing a measurable fluctuating photodiode current directly proportional to the strain metric $h(t)$."
+      "text": "عندما يتم تشويه الزمكان بواسطة موجة جاذبية مستعرضة لا أثر لها، يتم ضغط إحدى الذراعين فيزيائيًا بينما يتم تمديد الذراع المتعامدة. يؤدي تناقض الطور الناتج إلى تغيير حالة الهامش الداكن في الثنائي الضوئي، مما ينتج عنه تيار ثنائي ضوئي متقلب قابل للقياس يتناسب بشكل مباشر مع مقياس السلالة $h(t)$."
     },
     {
       "type": "quote",
-      "text": "[ar] To measure a gravitational wave, humanity had to build a ruler that can measure the distance to the nearest star with the precision of a human hair.",
-      "cite": "[ar] Hiroshi Tanaka, Robotics & Applied Physics Fellow"
+      "text": "لقياس موجة الجاذبية، كان على البشرية بناء مسطرة يمكنها قياس المسافة إلى أقرب نجم بدقة شعرة الإنسان.",
+      "cite": "هيروشي تاناكا، زميل الروبوتات والفيزياء التطبيقية"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Squeezed Light and the Standard Quantum Limit"
+      "text": "2. الضوء المعصور والحد الكمي القياسي"
     },
     {
       "type": "p",
-      "text": "[ar] At ultimate sensitivity thresholds, LIGO encounters the Standard Quantum Limit governed by the Heisenberg uncertainty principle between photon phase uncertainty and radiation pressure uncertainty. If laser power is increased to minimize shot noise (phase uncertainty), the physical momentum transferred by photons reflecting off the 40-kilogram fused-silica test masses creates quantum radiation pressure noise."
+      "text": "عند عتبات الحساسية القصوى، يواجه مرصد LIGO حد الكم القياسي الذي يحكمه مبدأ عدم اليقين لهايزنبرغ بين عدم اليقين في مرحلة الفوتون وعدم اليقين في الضغط الإشعاعي. إذا تمت زيادة قوة الليزر لتقليل ضوضاء الطلقة (عدم اليقين في الطور)، فإن الزخم الفيزيائي الذي تنقله الفوتونات المنعكسة عن كتل اختبار السيليكا المنصهرة البالغة 40 كيلوغرامًا يخلق ضوضاء ضغط الإشعاع الكمي."
     },
     {
       "type": "p",
-      "text": "[ar] Advanced LIGO circumvents this boundary by injecting frequency-dependent squeezed vacuum states into the dark port of the interferometer. Using non-linear optical parametric oscillators, quantum uncertainty is deliberately \"squeezed\" along the phase quadrature at high audio frequencies (where shot noise dominates) and along the amplitude quadrature at low frequencies, boosting event detection volume by nearly 50%."
+      "text": "يتحايل مرصد LIGO المتقدم على هذه الحدود عن طريق حقن حالات فراغ مضغوطة تعتمد على التردد في المنفذ المظلم لمقياس التداخل. باستخدام المذبذبات البارامترية الضوئية غير الخطية، يتم \"ضغط\" عدم اليقين الكمي عمدًا على طول تربيع الطور عند الترددات الصوتية العالية (حيث تهيمن ضوضاء الطلقة) وعلى طول تربيع السعة عند الترددات المنخفضة، مما يعزز حجم اكتشاف الحدث بنسبة 50٪ تقريبًا."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Quadruple Pendulum Suspension: Test mirrors hang from four-stage fused silica pendulums, isolating optics from terrestrial micro-seismic noise by a factor of $10^{9}$.",
-        "[ar] Ultra-High Vacuum: The 4-kilometer tubes operate at $10^{-9}$ torr ($10^{-12}$ atmospheres), representing one of the largest sustained vacuum chambers on Earth.",
-        "[ar] Active Ground Sensing: Hundreds of seismometers and geophones detect highway traffic, ocean surf, and micro-earthquakes, driving voice-coil actuators that cancel vibrations before they reach mirror test masses."
+        "تعليق البندول الرباعي: مرايا الاختبار تتدلى من بندولات السيليكا المنصهرة ذات الأربع مراحل، مما يؤدي إلى عزل البصريات عن الضوضاء الزلزالية الدقيقة الأرضية بمعامل قدره 10^{9}$.",
+        "فراغ فائق الارتفاع: تعمل الأنابيب التي يبلغ طولها 4 كيلومترات بسعر 10^{-9}$ تور ($10^{-12}$ للأجواء الجوية)، مما يمثل واحدة من أكبر غرف الفراغ المستدامة على الأرض.",
+        "الاستشعار النشط للأرض: تكتشف المئات من أجهزة قياس الزلازل والهواتف الأرضية حركة المرور على الطرق السريعة، وأمواج المحيطات، والزلازل الصغيرة، مما يؤدي إلى تشغيل مشغلات الملف الصوتي التي تلغي الاهتزازات قبل أن تصل إلى كتل اختبار المرآة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Documentary Masterclass: The Physics of Gravitational Wave Detection"
+      "text": "3. دروس وثائقية متقدمة: فيزياء الكشف عن موجات الجاذبية"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "[ar] The Physics and Engineering of Detecting Gravitational Waves",
-      "caption": "[ar] Comprehensive visual documentary detailing LIGO laser optical physics, seismic isolation, and the detection of black hole mergers."
+      "title": "فيزياء وهندسة الكشف عن موجات الجاذبية",
+      "caption": "فيلم وثائقي مرئي شامل يعرض تفاصيل فيزياء LIGO الضوئية بالليزر، والعزلة الزلزالية، واكتشاف اندماج الثقوب السوداء."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Binary Neutron Star Mergers and Kilonova Nucleosynthesis"
+      "text": "4. اندماج النجوم النيوترونية الثنائية وتخليق كيلونوفا النووي"
     },
     {
       "type": "p",
-      "text": "[ar] While binary black hole coalescences emit purely metric gravitational ripples without electromagnetic emissions, binary neutron star mergers (such as GW170817) inaugurate multi-messenger astrophysics. When two hyper-dense neutron stars orbit in tight relativistic trajectories, intense gravitational radiation drains orbital angular momentum until the stars collide."
+      "text": "في حين أن اندماجات الثقوب السوداء الثنائية تنبعث منها تموجات جاذبية مترية بحتة دون انبعاثات كهرومغناطيسية، فإن اندماجات النجوم النيوترونية الثنائية (مثل GW170817) تفتتح فيزياء فلكية متعددة الرسل. عندما يدور نجمان نيوترونيان عاليا الكثافة في مسارات نسبية ضيقة، يستنزف إشعاع الجاذبية المكثف الزخم الزاوي المداري حتى يصطدم النجمان."
     },
     {
       "type": "p",
-      "text": "[ar] Subsequent optical, gamma-ray, and infrared spectroscopy confirmed that neutron star collisions drive the astrophysical r-process (rapid neutron capture). Millions of tons of radioactive heavy lanthanides, platinum, and gold are forged and ejected into the interstellar medium, solving the longstanding cosmic mystery of where the universe manufactures the heaviest elements on the periodic table."
+      "text": "أكد التحليل الطيفي اللاحق لأشعة جاما والأشعة تحت الحمراء أن اصطدامات النجوم النيوترونية تقود عملية R الفيزيائية الفلكية (الالتقاط السريع للنيوترونات). يتم تشكيل ملايين الأطنان من اللانثانيدات الثقيلة المشعة والبلاتين والذهب وإخراجها إلى الوسط بين النجوم، مما يحل اللغز الكوني الطويل الأمد حول المكان الذي يصنع فيه الكون أثقل العناصر في الجدول الدوري."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Fundamental Physics Takeaways"
+      "text": "5. الوجبات السريعة في الفيزياء الأساسية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Speed of Gravity Verification: Multi-messenger observations confirmed that gravitational waves travel at the speed of light to within 1 part in $10^{15}$.",
-        "[ar] Equation of State Constraints: Tidal deformability signatures observed during neutron star inspirals constrain dense nuclear matter models impossible to replicate in terrestrial particle colliders.",
-        "[ar] Cosmological Standard Sirens: Gravitational wave chirps provide direct distance measurements independent of cosmic distance ladders, offering a clean independent method to measure the Hubble constant ($H_0$)."
+        "التحقق من سرعة الجاذبية: أكدت ملاحظات الرسل المتعددين أن موجات الجاذبية تنتقل بسرعة الضوء إلى جزء واحد في 10^{15}$.",
+        "معادلة قيود الحالة: إن بصمات تشوه المد والجزر التي لوحظت أثناء دوران النجوم النيوترونية تقيد نماذج المادة النووية الكثيفة التي يستحيل تكرارها في مصادمات الجسيمات الأرضية.",
+        "صفارات الإنذار الكونية القياسية: توفر زقزقات موجات الجاذبية قياسات مباشرة للمسافة مستقلة عن سلالم المسافة الكونية، مما يوفر طريقة مستقلة ونظيفة لقياس ثابت هابل ($H_0$)."
       ]
     }
   ],

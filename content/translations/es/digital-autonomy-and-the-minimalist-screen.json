@@ -1,7 +1,7 @@
 {
   "slug": "digital-autonomy-and-the-minimalist-screen",
-  "title": "[es] Digital Autonomy and the Minimalist Screen",
-  "excerpt": "[es] A manifesto on reclaiming human cognitive sovereignty from predatory algorithmic feeds through intentional web design, ad-free typography, and quiet digital interfaces.",
+  "title": "Autonomía digital y pantalla minimalista",
+  "excerpt": "Un manifiesto sobre cómo recuperar la soberanía cognitiva humana de fuentes algorítmicas depredadoras a través del diseño web intencional, tipografía sin publicidad e interfaces digitales silenciosas.",
   "date": "2026-11-08",
   "updated": "2026-11-12",
   "author": "Elena Vance",
@@ -12,40 +12,40 @@
     "culture"
   ],
   "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Minimal wooden desk with notebook, fountain pen, and calm morning shadow",
+  "imageAlt": "Escritorio minimalista de madera con libreta, pluma estilográfica y una tranquila sombra matutina",
   "body": [
     {
       "type": "p",
-      "text": "[es] The contemporary commercial internet is an engineered attention casino. Every blinking red notification badge, infinitely scrolling feed, and autoplaying video is mathematically optimized by behavioral psychologists to hijack the human dopamine loop. We have transformed the most powerful library in human history into an anxiety-generating distraction machine."
+      "text": "El Internet comercial contemporáneo es un casino de atención diseñado. Cada insignia de notificación roja parpadeante, cada feed que se desplaza infinitamente y video de reproducción automática está optimizado matemáticamente por psicólogos del comportamiento para secuestrar el ciclo de dopamina humana. Hemos transformado la biblioteca más poderosa de la historia de la humanidad en una máquina de distracción que genera ansiedad."
     },
     {
       "type": "h2",
-      "text": "[es] The Architecture of Calm Interfaces"
+      "text": "La arquitectura de interfaces tranquilas"
     },
     {
       "type": "p",
-      "text": "[es] Digital autonomy begins with interface ethics. An editorial journal should treat the reader's attention with sacred reverence. When a website eliminates intrusive pop-ups, flashing banner ads, and algorithmic recommendations, reading ceases to be an anxious ordeal and returns to being a contemplative pleasure."
+      "text": "La autonomía digital comienza con la ética de la interfaz. Una revista editorial debe tratar la atención del lector con sagrada reverencia. Cuando un sitio web elimina las ventanas emergentes intrusivas, los anuncios publicitarios parpadeantes y las recomendaciones algorítmicas, la lectura deja de ser una prueba de ansiedad y vuelve a ser un placer contemplativo."
     },
     {
       "type": "quote",
-      "text": "[es] Your attention is your life. What you pay attention to becomes your consciousness. Guard it with uncompromising ferocity.",
-      "cite": "[es] Elena Vance, The Unhurried Mind"
+      "text": "Tu atención es tu vida. A lo que le prestas atención se convierte en tu conciencia. Guárdalo con ferocidad intransigente.",
+      "cite": "Elena Vance, The Unhurried Mind"
     },
     {
       "type": "h3",
-      "text": "[es] Pillars of Autonomous Digital Design"
+      "text": "Pilares del diseño digital autónomo"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Finite reading experiences: Replacing bottomless feeds with curated, bounded monograph issues that possess a definitive beginning and end.",
-        "[es] Zero behavioral surveillance: Eliminating third-party tracking pixels that monitor mouse trajectories and dwell times to build psychological dossiers.",
-        "[es] Typographic serenity: Formatting long-form prose with generous leading, generous margins, and distraction-free dark and light color palettes."
+        "Experiencias de lectura finitas: Reemplazo de feeds sin fondo con ediciones monográficas seleccionadas y limitadas que poseen un comienzo y un final definitivos.",
+        "Vigilancia de comportamiento cero: eliminación de píxeles de seguimiento de terceros que monitorean las trayectorias del ratón y los tiempos de permanencia para crear expedientes psicológicos.",
+        "Serenidad tipográfica: formato de prosa larga con interlineados generosos, márgenes generosos y paletas de colores claros y oscuros sin distracciones."
       ]
     },
     {
       "type": "p",
-      "text": "[es] By designing digital spaces that respect human agency, we reclaim the true promise of the internet: an egalitarian platform for deep intellectual exploration, critical contemplation, and enduring enlightenment."
+      "text": "Al diseñar espacios digitales que respeten la agencia humana, recuperamos la verdadera promesa de Internet: una plataforma igualitaria para la exploración intelectual profunda, la contemplación crítica y la iluminación duradera."
     }
   ],
   "sourceHash": "f45a70fc0dec403d722d249fc0f40fef4561ce6b"

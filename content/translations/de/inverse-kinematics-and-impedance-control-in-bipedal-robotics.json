@@ -1,7 +1,7 @@
 {
   "slug": "inverse-kinematics-and-impedance-control-in-bipedal-robotics",
-  "title": "[de] Impedance Control in Bipedal Robotics",
-  "excerpt": "[de] A robotics engineering treatise on joint torque space mapping, zero-moment point dynamics, compliance modulation, and whole-body locomotion stabilization.",
+  "title": "Impedanzkontrolle in der bipedalen Robotik",
+  "excerpt": "Eine Abhandlung über Robotertechnik über die Kartierung des Gelenkdrehmomentraums, Nullmomentpunktdynamik, Compliance-Modulation und Ganzkörper-Fortbewegungsstabilisierung.",
   "date": "2026-11-15",
   "author": "Elena Rostova",
   "tags": [
@@ -13,23 +13,23 @@
     "control-theory"
   ],
   "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[de] Advanced bipedal humanoid robot standing in high-precision laboratory testing environment",
+  "imageAlt": "Fortschrittlicher zweibeiniger humanoider Roboter steht in einer hochpräzisen Labortestumgebung",
   "body": [
     {
       "type": "p",
-      "text": "[de] The mechanical synthesis of human locomotion represents one of the most formidable frontiers in control theory and physical computing. Unlike wheeled autonomous rovers that benefit from static multi-point equilibrium, bipedal humanoid robots operate in continuous state space instability. To navigate unstructured terrestrial terrain—gravel, staircases, and slick surfaces—a humanoid platform cannot rely on rigid position trajectories. It requires active impedance control, modulating mechanical compliance at millisecond intervals."
+      "text": "Die mechanische Synthese der menschlichen Fortbewegung stellt eine der gewaltigsten Grenzen in der Steuerungstheorie und dem physikalischen Rechnen dar. Im Gegensatz zu autonomen Rovern mit Rädern, die von einem statischen Mehrpunktgleichgewicht profitieren, operieren zweibeinige humanoide Roboter in einer kontinuierlichen Zustandsrauminstabilität. Um durch unstrukturiertes terrestrisches Gelände – Kies, Treppen und rutschige Oberflächen – zu navigieren, kann sich eine humanoide Plattform nicht auf starre Positionsflugbahnen verlassen. Es erfordert eine aktive Impedanzkontrolle, die die mechanische Nachgiebigkeit in Millisekundenintervallen moduliert."
     },
     {
       "type": "p",
-      "text": "[de] By dynamically mapping contact forces back into joint torque space via the Jacobian transpose, impedance control transforms stiff actuator gearboxes into virtual spring-damper mechanisms. When a robot foot encounters unanticipated topography, the leg absorbs kinetic impact elastically rather than shattering harmonic drive reducers or tipping the chassis into an unrecoverable tumble."
+      "text": "Durch die dynamische Abbildung der Kontaktkräfte zurück in den Gelenkdrehmomentraum über die Jacobi-Transponierung wandelt die Impedanzsteuerung steife Aktuatorgetriebe in virtuelle Feder-Dämpfer-Mechanismen um. Wenn ein Roboterfuß auf eine unerwartete Topographie trifft, absorbiert das Bein den kinetischen Aufprall elastisch, anstatt harmonische Antriebsreduzierer zu zerstören oder das Chassis in einen unwiederbringlichen Sturz zu stürzen."
     },
     {
       "type": "h2",
-      "text": "[de] 1. Mathematical Foundations: The Virtual Spring-Damper Model"
+      "text": "1. Mathematische Grundlagen: Das virtuelle Feder-Dämpfer-Modell"
     },
     {
       "type": "p",
-      "text": "[de] Impedance control defines a target relationship between the external contact force vector ($F_{ext}$) and resulting kinematic displacement ($x - x_0$) rather than prescribing absolute coordinates:"
+      "text": "Die Impedanzsteuerung definiert eine Zielbeziehung zwischen dem externen Kontaktkraftvektor ($F_{ext}$) und der resultierenden kinematischen Verschiebung ($x - x_0$), anstatt absolute Koordinaten vorzuschreiben:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[de] By tuning $K_d$ and $D_d$ in real time, the control loop mimics biological musculature. During the swing phase of a gait cycle, stiffness is maximized to track reference trajectories with high fidelity. At the exact instant of heel strike, stiffness is collapsed along the vertical axis, allowing compliant shock absorption without expensive hardware suspension."
+      "text": "Durch die Abstimmung von $K_d$ und $D_d$ in Echtzeit ahmt der Regelkreis die biologische Muskulatur nach. Während der Schwungphase eines Gangzyklus wird die Steifigkeit maximiert, um Referenztrajektorien mit hoher Genauigkeit zu verfolgen. Genau im Moment des Fersenauftritts wird die Steifigkeit entlang der vertikalen Achse reduziert, was eine nachgiebige Stoßdämpfung ohne teure Hardware-Aufhängung ermöglicht."
     },
     {
       "type": "quote",
-      "text": "[de] True stability in bipedal systems is not the resistance to perturbation, but the mathematical elegance with which disturbance energy is absorbed, channeled, and repurposed into forward momentum.",
-      "cite": "[de] Elena Rostova, Senior Robotics & Embodied AI Fellow"
+      "text": "Wahre Stabilität in zweibeinigen Systemen ist nicht der Widerstand gegen Störungen, sondern die mathematische Eleganz, mit der Störungsenergie absorbiert, kanalisiert und in Vorwärtsimpuls umgewandelt wird.",
+      "cite": "Elena Rostova, Senior Robotics & Embodied AI Fellow"
     },
     {
       "type": "h2",
-      "text": "[de] 2. Zero-Moment Point (ZMP) and Capture Point Dynamics"
+      "text": "2. Zero-Moment Point (ZMP) und Capture Point Dynamics"
     },
     {
       "type": "p",
-      "text": "[de] Locomotion equilibrium is governed by the Zero-Moment Point (ZMP)—the spatial coordinate where total horizontal inertial and gravitational moments sum to zero. So long as the ZMP resides strictly within the support polygon defined by the robot's foot contact area, the machine cannot tip."
+      "text": "Das Fortbewegungsgleichgewicht wird durch den Zero-Moment Point (ZMP) bestimmt – die räumliche Koordinate, an der sich die gesamten horizontalen Trägheits- und Gravitationsmomente zu Null summieren. Solange sich der ZMP genau innerhalb des Stützpolygons befindet, das durch die Fußkontaktfläche des Roboters definiert wird, kann die Maschine nicht kippen."
     },
     {
       "type": "ul",
       "items": [
-        "[de] Support Polygon Boundary: In single-support phase, the stability boundary shrinks to the sole of one shoe, demanding sub-millisecond center-of-mass telemetry.",
-        "[de] Capture Point Prediction: If external impulses push the ZMP outside the foot boundary, the whole-body controller calculates the instantaneous Capture Point—the precise physical coordinates where the swing leg must land to arrest falling velocity.",
-        "[de] Model Predictive Control (MPC): Receding-horizon solvers forecast ground reaction forces across a 1.5-second trajectory window, solving quadratic optimization problems at 500 Hz."
+        "Stützpolygongrenze: In der Einzelstützphase schrumpft die Stabilitätsgrenze auf die Sohle eines Schuhs, was eine Schwerpunkttelemetrie im Submillisekundenbereich erfordert.",
+        "Vorhersage des Fangpunkts: Wenn externe Impulse den ZMP über die Fußgrenze hinaus schieben, berechnet der Ganzkörper-Controller den momentanen Fangpunkt – die genauen physischen Koordinaten, an denen das Schwungbein landen muss, um die Fallgeschwindigkeit aufzuhalten.",
+        "Model Predictive Control (MPC): Receding-Horizon-Löser prognostizieren Bodenreaktionskräfte über ein 1,5-Sekunden-Flugbahnfenster und lösen quadratische Optimierungsprobleme bei 500 Hz."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 3. Video Masterclass: High-Dynamic Locomotion in Bipedal Systems"
+      "text": "3. Video-Meisterklasse: Hochdynamische Fortbewegung in bipedalen Systemen"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/tF4DML7FIWk",
-      "title": "[de] Whole-Body Dynamic Impedance and Bipedal Locomotion",
-      "caption": "[de] Demonstration of high-frequency model predictive control, dynamic balance recovery, and real-time obstacle traversal in humanoid platforms."
+      "title": "Dynamische Ganzkörperimpedanz und bipedale Fortbewegung",
+      "caption": "Demonstration der prädiktiven Hochfrequenzmodellsteuerung, der Wiederherstellung des dynamischen Gleichgewichts und der Hindernisüberwindung in Echtzeit auf humanoiden Plattformen."
     },
     {
       "type": "h2",
-      "text": "[de] 4. Actuator Architectures: Quasi-Direct Drive vs. Strain Wave Gears"
+      "text": "4. Aktuatorarchitekturen: Quasi-Direktantrieb vs. Spannungswellengetriebe"
     },
     {
       "type": "p",
-      "text": "[de] Modern robotics has witnessed a decisive architectural shift away from high-ratio strain wave gears toward Quasi-Direct Drive (QDD) actuators. High gear ratios (100:1) introduce extreme reflected inertia ($I_{reflected} \\propto N^2$) and backdrivability friction, which degrades mechanical transparency and destroys force sensing accuracy."
+      "text": "Die moderne Robotik hat einen entscheidenden architektonischen Wandel weg von Spannungswellengetrieben mit hohem Übersetzungsverhältnis hin zu Aktuatoren mit Quasi-Direktantrieb (QDD) erlebt. Hohe Übersetzungsverhältnisse (100:1) führen zu extremer reflektierter Trägheit ($I_{reflected} \\propto N^2$) und Rückfahrreibung, was die mechanische Transparenz beeinträchtigt und die Genauigkeit der Krafterfassung zerstört."
     },
     {
       "type": "p",
-      "text": "[de] QDD actuators utilize low gear ratios (under 10:1) paired with large-diameter high-torque outrunner brushless motors. This delivers ultra-low mechanical impedance, allowing motor phase current measurements to serve as accurate proxies for joint contact torque without fragile six-axis load cells in the ankles."
+      "text": "QDD-Aktuatoren nutzen niedrige Übersetzungsverhältnisse (unter 10:1) gepaart mit bürstenlosen Außenläufermotoren mit großem Durchmesser und hohem Drehmoment. Dies sorgt für eine extrem niedrige mechanische Impedanz, sodass Messungen des Motorphasenstroms als genaue Stellvertreter für das Gelenkkontaktdrehmoment dienen können, ohne dass empfindliche sechsachsige Kraftmesszellen in den Knöcheln vorhanden sind."
     },
     {
       "type": "h2",
-      "text": "[de] 5. Systems Engineering Takeaways"
+      "text": "5. Erkenntnisse aus der Systemtechnik"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Backdrivability Priority: Prioritize actuators with low reflected inertia and zero cogging torque to ensure transparent force reflection in closed-loop control.",
-        "[de] Hierarchical Control Stacks: Separate slow-rate trajectory optimization (50-100 Hz MPC) from high-speed joint impedance compliance loops (1 kHz torque servos).",
-        "[de] Sensory Redundancy: Fuse high-rate IMU angular acceleration telemetry with optical encoder arrays to filter vibration artifacts caused by structural resonance."
+        "Priorität der Backdrivability: Priorisieren Sie Aktoren mit geringer reflektierter Trägheit und keinem Rastmoment, um eine transparente Kraftreflexion in der Regelung sicherzustellen.",
+        "Hierarchische Steuerstapel: Getrennte langsame Flugbahnoptimierung (50–100 Hz MPC) von Hochgeschwindigkeits-Gelenkimpedanz-Compliance-Schleifen (1-kHz-Drehmomentservos).",
+        "Sensorische Redundanz: Kombinieren Sie hochfrequente IMU-Winkelbeschleunigungstelemetrie mit optischen Encoder-Arrays, um Vibrationsartefakte zu filtern, die durch strukturelle Resonanz verursacht werden."
       ]
     }
   ],

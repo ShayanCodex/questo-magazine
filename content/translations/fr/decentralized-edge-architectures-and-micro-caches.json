@@ -1,7 +1,7 @@
 {
   "slug": "decentralized-edge-architectures-and-micro-caches",
-  "title": "[fr] Decentralized Edge Architectures",
-  "excerpt": "[fr] A technical monograph analyzing globally distributed Anycast BGP routing, stale-while-revalidate edge workers, and why decentralized micro-caches obsolete monolithic centralized databases.",
+  "title": "Architectures Edge décentralisées",
+  "excerpt": "Une monographie technique analysant le routage Anycast BGP distribué à l'échelle mondiale, les travailleurs Edge obsolètes lors de la revalidation et pourquoi les micro-caches décentralisés rendent les bases de données centralisées monolithiques obsolètes.",
   "date": "2026-11-13",
   "updated": "2026-11-15",
   "author": "Tariq Mahmood",
@@ -13,27 +13,27 @@
     "system-architecture"
   ],
   "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Global satellite network map depicting decentralized edge nodes and fiber routing",
+  "imageAlt": "Carte du réseau satellite mondial illustrant les nœuds périphériques décentralisés et le routage des fibres.",
   "body": [
     {
       "type": "p",
-      "text": "[fr] For the past two decades, cloud computing dogma instructed software architects to centralize application logic and persistent state into massive regional data facilities: us-east-1 in Virginia, eu-west-1 in Dublin, or ap-southeast-1 in Singapore. While centralized data centers simplified database locking and ACID consistency models, they introduced a physical, immutable constraint that no amount of CPU optimization could solve: the speed of light in fiber optic cables."
+      "text": "Au cours des deux dernières décennies, le dogme du cloud computing a demandé aux architectes logiciels de centraliser la logique des applications et l'état persistant dans d'énormes installations de données régionales : us-east-1 en Virginie, eu-west-1 à Dublin ou ap-southeast-1 à Singapour. Alors que les centres de données centralisés simplifiaient le verrouillage des bases de données et les modèles de cohérence ACID, ils introduisaient une contrainte physique et immuable qu'aucune optimisation du processeur ne pouvait résoudre : la vitesse de la lumière dans les câbles à fibres optiques."
     },
     {
       "type": "p",
-      "text": "[fr] When a reader in Tokyo or Buenos Aires attempts to load an article hosted on a server in Northern Virginia, the light packets must traverse thousands of kilometers of terrestrial fiber, submarine repeaters, and transit routers. Even under ideal conditions, the minimum physical round-trip time (RTT) exceeds 180 milliseconds. When DNS lookup, TLS 1.3 handshakes, and multiple TCP round-trips are compounded, the user waits nearly a full second before a single byte of HTML is received."
+      "text": "Lorsqu'un lecteur de Tokyo ou de Buenos Aires tente de charger un article hébergé sur un serveur du nord de la Virginie, les paquets légers doivent traverser des milliers de kilomètres de fibre terrestre, de répéteurs sous-marins et de routeurs de transit. Même dans des conditions idéales, le temps d'aller-retour physique (RTT) minimum dépasse 180 millisecondes. Lorsque la recherche DNS, les négociations TLS 1.3 et plusieurs allers-retours TCP sont combinés, l'utilisateur attend près d'une seconde complète avant de recevoir un seul octet de code HTML."
     },
     {
       "type": "h2",
-      "text": "[fr] The Anycast Revolution and Edge V8 Isolates"
+      "text": "La révolution Anycast et les isolats Edge V8"
     },
     {
       "type": "p",
-      "text": "[fr] Decentralized edge architecture dissolves the origin bottleneck by moving computational execution directly to the network perimeter. Using Border Gateway Protocol (BGP) Anycast routing, a single public IP address is announced simultaneously from over 300 data centers across six continents. When a client makes an HTTP request, transit routers automatically deliver the packets to the geographically closest edge node."
+      "text": "L'architecture de périphérie décentralisée résout le goulot d'étranglement d'origine en déplaçant l'exécution informatique directement vers le périmètre du réseau. Grâce au routage Anycast du Border Gateway Protocol (BGP), une seule adresse IP publique est annoncée simultanément depuis plus de 300 centres de données répartis sur six continents. Lorsqu'un client effectue une requête HTTP, les routeurs de transit transmettent automatiquement les paquets au nœud périphérique géographiquement le plus proche."
     },
     {
       "type": "p",
-      "text": "[fr] Rather than booting heavy Node.js or Docker container runtimes with hundreds of megabytes of memory overhead, modern edge networks execute lightweight V8 JavaScript Isolates. An isolate boots in less than 5 milliseconds, consumes under 5MB of RAM, and executes pure functional routing logic immediately upon packet arrival."
+      "text": "Plutôt que de démarrer des environnements d'exécution de conteneurs Node.js ou Docker lourds avec des centaines de mégaoctets de surcharge de mémoire, les réseaux périphériques modernes exécutent des isolats JavaScript V8 légers. Un isolat démarre en moins de 5 millisecondes, consomme moins de 5 Mo de RAM et exécute une logique de routage fonctionnelle pure immédiatement après l'arrivée du paquet."
     },
     {
       "type": "code",
@@ -42,33 +42,33 @@
     },
     {
       "type": "quote",
-      "text": "[fr] Physics cannot be cheated by software frameworks. If you want instantaneous global delivery, your data must reside physically next to the user's device.",
-      "cite": "[fr] Tariq Mahmood, Distributed Systems & Edge Topologies"
+      "text": "La physique ne peut pas être trompée par les frameworks logiciels. Si vous souhaitez une livraison mondiale instantanée, vos données doivent résider physiquement à côté de l'appareil de l'utilisateur.",
+      "cite": "Tariq Mahmood, Systèmes distribués et topologies de périphérie"
     },
     {
       "type": "h3",
-      "text": "[fr] Core Advantages of Micro-Cached Architecture"
+      "text": "Principaux avantages de l'architecture en micro-cache"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Near-zero TTFB: Time to First Byte drops from 400–600ms on dynamic origins to 15–25ms globally.",
-        "[fr] Infinite DDoS resilience: Volumetric denial-of-service traffic is naturally distributed across hundreds of global PoPs, neutralizing attacks without stressing origin servers.",
-        "[fr] Origin shielding: Centralized build runners compile HTML once; edge caches absorb 99.8% of all read traffic.",
-        "[fr] Zero cold starts: V8 isolates eliminate the dreaded 3-second cold start delays common in legacy serverless architectures."
+        "TTFB proche de zéro : le délai d'obtention du premier octet passe de 400 à 600 ms sur les origines dynamiques à 15 à 25 ms à l'échelle mondiale.",
+        "Résilience DDoS infinie : le trafic volumétrique par déni de service est naturellement réparti sur des centaines de PoP mondiaux, neutralisant les attaques sans stresser les serveurs d'origine.",
+        "Protection de l'origine : les exécuteurs de build centralisés compilent le HTML une fois ; les caches périphériques absorbent 99,8 % de tout le trafic de lecture.",
+        "Zéro démarrage à froid : les isolats V8 éliminent les redoutables délais de démarrage à froid de 3 secondes, courants dans les architectures sans serveur existantes."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] The Death of Origin Database Dependencies"
+      "text": "La mort des dépendances de la base de données Origin"
     },
     {
       "type": "p",
-      "text": "[fr] When editorial publishing is decoupled from real-time database lookups, the entire system becomes indestructible. There are no database connections to exhaust during viral traffic spikes, no locking contention, and zero maintenance downtime. Every published dispatch exists as an immutable static artifact replicated across the globe."
+      "text": "Lorsque la publication éditoriale est découplée des recherches en temps réel dans la base de données, le système tout entier devient indestructible. Il n’y a aucune connexion à la base de données à épuiser lors des pics de trafic viral, aucun conflit de verrouillage et aucun temps d’arrêt pour maintenance. Chaque dépêche publiée existe comme un artefact statique immuable répliqué à travers le monde."
     },
     {
       "type": "p",
-      "text": "[fr] By building Questo Magazine on top of decentralized edge architecture and immutable micro-caches, we achieve institutional-grade reliability, absolute security, and blistering sub-second delivery for every reader on Earth."
+      "text": "En construisant Questo Magazine sur une architecture de périphérie décentralisée et des micro-caches immuables, nous obtenons une fiabilité de niveau institutionnel, une sécurité absolue et une livraison fulgurante en moins d'une seconde pour chaque lecteur sur Terre."
     }
   ],
   "sourceHash": "2c66ca5d93d8dc5c308d4fa5bff52a92eaf1472c"

@@ -1,7 +1,7 @@
 {
   "slug": "postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility",
-  "title": "[ar] Postprandial Glycemic Variability",
-  "excerpt": "[ar] A clinical and biochemical analysis of glucose area-under-the-curve metrics, endothelial oxidative stress, insulin kinetics, and cellular substrate switching.",
+  "title": "تقلب نسبة السكر في الدم بعد الأكل",
+  "excerpt": "تحليل سريري وكيميائي حيوي لمقاييس منطقة الجلوكوز تحت المنحنى، والإجهاد التأكسدي البطاني، وحركية الأنسولين، وتبديل الركيزة الخلوية.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -13,27 +13,27 @@
     "cardiology"
   ],
   "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Clinical health science laboratory telemetry showing cellular biomarkers and metabolic tracking",
+  "imageAlt": "قياس عن بعد لمختبر علوم الصحة السريرية يوضح المؤشرات الحيوية الخلوية وتتبع التمثيل الغذائي",
   "body": [
     {
       "type": "p",
-      "text": "[ar] In conventional clinical medicine, metabolic health has historically been evaluated using static, fasting biomarkers: fasting plasma glucose (FPG) and glycated hemoglobin (HbA1c). While valuable for diagnosing overt Type 2 diabetes mellitus, these coarse metrics completely obscure acute glycemic flux: the dynamic, postprandial glucose excursions that occur following meals. Emerging clinical data demonstrates that glycemic variability (GV)—the amplitude, frequency, and duration of glucose oscillations—is an independent and potent driver of endothelial dysfunction, systemic inflammation, and subclinical atherosclerosis."
+      "text": "في الطب السريري التقليدي، تم تقييم الصحة الأيضية تاريخيًا باستخدام مؤشرات حيوية ثابتة وصيامية: جلوكوز البلازما الصائم (FPG) والهيموجلوبين السكري (HbA1c). على الرغم من أهميتها في تشخيص داء السكري من النوع الثاني، إلا أن هذه المقاييس الخشنة تحجب تمامًا التدفق الجلايسيمي الحاد: رحلات الجلوكوز الديناميكية بعد الأكل التي تحدث بعد الوجبات. توضح البيانات السريرية الناشئة أن تقلب نسبة السكر في الدم (GV) - سعة وتكرار ومدة تذبذبات الجلوكوز - هو محرك مستقل وقوي لخلل وظيفة بطانة الأوعية الدموية، والالتهابات الجهازية، وتصلب الشرايين تحت الإكلينيكي."
     },
     {
       "type": "p",
-      "text": "[ar] The widespread adoption of continuous glucose monitoring (CGM) biosensors in non-diabetic and pre-diabetic populations has illuminated the profound biological difference between a flat glucose response and high-amplitude postprandial spikes. Even individuals with an ostensibly \"normal\" HbA1c of 5.2% can spend several hours daily in transient glycemic spikes exceeding 140 mg/dL, triggering cascades of oxidative stress."
+      "text": "إن الاعتماد الواسع النطاق لأجهزة الاستشعار الحيوية لمراقبة الجلوكوز المستمرة (CGM) لدى السكان غير المصابين بالسكري وما قبل الإصابة به قد سلط الضوء على الفرق البيولوجي العميق بين استجابة الجلوكوز المسطحة والارتفاعات عالية السعة بعد الأكل. حتى الأفراد الذين لديهم نسبة HbA1c \"طبيعية\" ظاهريًا بنسبة 5.2%، يمكنهم قضاء عدة ساعات يوميًا في ارتفاعات عابرة في نسبة السكر في الدم تتجاوز 140 ملجم/ديسيلتر، مما يؤدي إلى سلسلة من الإجهاد التأكسدي."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Biochemical Mechanism: Superoxide Overproduction & Endothelial Damage"
+      "text": "1. الآلية البيوكيميائية: الإفراط في إنتاج الأكسيد الفائق وتلف بطانة الأوعية الدموية"
     },
     {
       "type": "p",
-      "text": "[ar] Why are postprandial spikes biologically damaging even when fasting levels return to baseline within two hours? The primary cellular mechanism occurs within the mitochondrial electron transport chain of vascular endothelial cells."
+      "text": "لماذا تكون الزيادات بعد الأكل ضارة بيولوجيًا حتى عندما تعود مستويات الصيام إلى خط الأساس خلال ساعتين؟ تحدث الآلية الخلوية الأولية ضمن سلسلة نقل الإلكترون الميتوكوندريا للخلايا البطانية الوعائية."
     },
     {
       "type": "p",
-      "text": "[ar] When an acute influx of glucose floods endothelial cells, excess pyruvate generates an overwhelming concentration of electron donors (NADH and FADH₂) into Complex I and Complex III. This over-saturates the mitochondrial proton gradient, halting the forward passage of electrons and transferring solitary electrons directly to molecular oxygen to synthesize superoxide anions ($O_2^{\\bullet-}$):"
+      "text": "عندما يتدفق التدفق الحاد للجلوكوز إلى الخلايا البطانية، فإن البيروفات الزائدة تولد تركيزًا هائلاً من الجهات المانحة للإلكترون (NADH وFADH₂) في المركب I والمركب III. يؤدي هذا إلى الإفراط في تشبع تدرج بروتون الميتوكوندريا، مما يوقف المرور الأمامي للإلكترونات وينقل الإلكترونات المنفردة مباشرة إلى الأكسجين الجزيئي لتصنيع أنيونات الأكسيد الفائق ($O_2^{\\bullet-}$):"
     },
     {
       "type": "code",
@@ -42,58 +42,58 @@
     },
     {
       "type": "quote",
-      "text": "[ar] A fluctuating glucose profile produces far greater vascular oxidative stress and endothelial apoptosis than a steady, sustained level of moderate hyperglycemia.",
-      "cite": "[ar] Dr. Marcus Vance, Preventive Cardiology & Longevity Medicine"
+      "text": "ينتج عن تقلب مستوى الجلوكوز إجهاد تأكسدي وعائي أكبر بكثير وموت الخلايا المبرمج البطانية من المستوى الثابت والمستدام من ارتفاع السكر في الدم المعتدل.",
+      "cite": "د. ماركوس فانس، طب القلب الوقائي وطب طول العمر"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Quantifying Glycemic Variability: Key Telemetry Metrics"
+      "text": "2. قياس التقلبات في نسبة السكر في الدم: مقاييس القياس عن بعد الرئيسية"
     },
     {
       "type": "p",
-      "text": "[ar] Modern clinical endocrinology utilizes standardized CGM telemetry parameters to assess glycemic regulation beyond simple average glucose:"
+      "text": "يستخدم علم الغدد الصماء السريري الحديث معلمات القياس عن بعد القياسية لـ CGM لتقييم تنظيم نسبة السكر في الدم بما يتجاوز متوسط الجلوكوز البسيط:"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Mean Amplitude of Glycemic Excursions (MAGE): Measures the average height of glucose peaks that exceed one standard deviation of the 24-hour mean, serving as the gold standard marker of glycemic volatility.",
-        "[ar] Time in Range (TIR): The percentage of time glucose remains between 70 and 140 mg/dL (optimally >95% for preventive metabolic health).",
-        "[ar] Continuous Overall Net Glycemic Action (CONGA): Evaluates intra-day variation by calculating glycemic differences across specified hourly intervals.",
-        "[ar] Incremental Area Under the Curve (iAUC): Quantifies the total magnitude of postprandial glucose exposure above pre-meal baseline concentrations."
+        "متوسط ​​سعة الرحلات نسبة السكر في الدم (MAGE): يقيس متوسط ارتفاع قمم الجلوكوز التي تتجاوز انحرافًا معياريًا واحدًا لل متوسط 24 ساعة، بمثابة العلامة القياسية الذهبية لتقلب نسبة السكر في الدم.",
+        "الوقت في النطاق (TIR): النسبة المئوية للوقت الذي يبقى فيه الجلوكوز بين 70 و140 ملجم/ديسيلتر (المثالي > 95% للصحة الأيضية الوقائية).",
+        "العمل الصافي المستمر لنسبة السكر في الدم (CONGA): يقيم التباين خلال اليوم عن طريق حساب الاختلافات في نسبة السكر في الدم عبر فترات زمنية محددة في كل ساعة.",
+        "المساحة الإضافية تحت المنحنى (iAUC): تحدد الحجم الإجمالي لتعرض الجلوكوز بعد الأكل أعلى من التركيزات الأساسية قبل الوجبة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Continuous Glucose Monitoring & Metabolic Flexibility"
+      "text": "3. دروس فيديو متقدمة: المراقبة المستمرة للجلوكوز والمرونة الأيضية"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VAEzZeaV5zM",
-      "title": "[ar] Glucose Telemetry, Insulin Kinetics & Metabolic Flexibility",
-      "caption": "[ar] Clinical deep dive into continuous glucose telemetry, postprandial insulin surges, and mitochondrial substrate switching."
+      "title": "قياس الجلوكوز عن بعد، وحركية الأنسولين والمرونة الأيضية",
+      "caption": "الغوص العميق السريري في القياس المستمر للجلوكوز عن بعد، وارتفاع الأنسولين بعد الأكل، وتبديل ركيزة الميتوكوندريا."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Metabolic Flexibility: The Randle Cycle and Substrate Switching"
+      "text": "4. المرونة الأيضية: دورة راندل وتبديل الركيزة"
     },
     {
       "type": "p",
-      "text": "[ar] Metabolic flexibility is the physiological capacity of cellular mitochondria to alternate seamlessly between carbohydrate (glucose) and lipid (free fatty acid) oxidation depending on nutritional status and energy demand. This process is governed by the glucose-fatty acid cycle, classically known as the Randle Cycle."
+      "text": "المرونة الأيضية هي القدرة الفسيولوجية للميتوكوندريا الخلوية على التناوب بسلاسة بين أكسدة الكربوهيدرات (الجلوكوز) والدهون (الأحماض الدهنية الحرة) اعتمادًا على الحالة الغذائية والطلب على الطاقة. وتخضع هذه العملية لدورة الأحماض الدهنية الجلوكوز، والمعروفة كلاسيكيا باسم دورة راندل."
     },
     {
       "type": "p",
-      "text": "[ar] In metabolically healthy individuals, insulin surges following carbohydrate intake rapidly activate muscle glucose uptake through GLUT4 translocation and suppress intracellular lipolysis. Conversely, in insulin-resistant phenotypes, high baseline insulin levels lock mitochondria into continuous glucose oxidation while failing to clear excess intramyocellular lipids, resulting in toxic diacylglycerol accumulation and chronic cellular fatigue."
+      "text": "في الأفراد الأصحاء من الناحية الأيضية، تعمل زيادات الأنسولين بعد تناول الكربوهيدرات على تنشيط امتصاص الجلوكوز في العضلات بسرعة من خلال إزفاء GLUT4 وقمع تحلل الدهون داخل الخلايا. على العكس من ذلك، في الأنماط الظاهرية المقاومة للأنسولين، تعمل مستويات الأنسولين الأساسية المرتفعة على قفل الميتوكوندريا في أكسدة الجلوكوز المستمرة بينما تفشل في إزالة الدهون الزائدة داخل الخلايا، مما يؤدي إلى تراكم ثنائي الجلسرين السام والتعب الخلوي المزمن."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Clinical Takeaways for Preventive Health"
+      "text": "5. الوجبات السريعة السريرية للصحة الوقائية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Prioritize Meal Sequencing: Ingesting dietary fiber, lean protein, and healthy fats prior to fast-digesting carbohydrates slows gastric emptying and dampens postprandial glucose spikes by up to 40%.",
-        "[ar] Postprandial Muscular Contraction: Engaging in a modest 15-minute walk immediately following meals stimulates non-insulin-dependent GLUT4 translocation via AMPK activation, clearing systemic glucose into skeletal muscle.",
-        "[ar] Target Low MAGE Over Low Average: Focus clinical strategy on reducing glycemic peak amplitude and volatility rather than obsessing over minimal fasting numbers."
+        "إعطاء الأولوية لتسلسل الوجبات: تناول الألياف الغذائية والبروتينات الخالية من الدهون والدهون الصحية قبل الكربوهيدرات سريعة الهضم يؤدي إلى إبطاء إفراغ المعدة ويخفف من ارتفاع الجلوكوز بعد الأكل بنسبة تصل إلى 40٪.",
+        "التقلص العضلي بعد الأكل: يؤدي الانخراط في مشي متواضع لمدة 15 دقيقة مباشرة بعد الوجبات إلى تحفيز انتقال GLUT4 غير المعتمد على الأنسولين عبر تنشيط AMPK، مما يؤدي إلى إزالة الجلوكوز الجهازي من العضلات الهيكلية.",
+        "استهدف MAGE منخفضًا على متوسط ​​منخفض: ركز الإستراتيجية السريرية على تقليل سعة ذروة نسبة السكر في الدم وتقلبها بدلاً من الاستحواذ على الحد الأدنى من أرقام الصيام."
       ]
     }
   ],

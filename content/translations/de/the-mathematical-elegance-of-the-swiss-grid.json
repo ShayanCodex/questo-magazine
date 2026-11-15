@@ -1,7 +1,7 @@
 {
   "slug": "the-mathematical-elegance-of-the-swiss-grid",
-  "title": "[de] The Mathematical Elegance of the Swiss Grid",
-  "excerpt": "[de] A deep analysis of Josef Müller-Brockmann's modular layout mathematics, proportional margins, and why the grid remains the foundational grammar of visual communication.",
+  "title": "Die mathematische Eleganz des Schweizer Gitters",
+  "excerpt": "Eine eingehende Analyse von Josef Müller-Brockmanns modularer Layout-Mathematik, proportionalen Rändern und warum das Gitter die grundlegende Grammatik der visuellen Kommunikation bleibt.",
   "date": "2026-11-09",
   "updated": "2026-11-13",
   "author": "Saskia Lindqvist",
@@ -12,40 +12,40 @@
     "graphic-design"
   ],
   "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[de] Geometric modular architectural lines and typographic proportions on stark white paper",
+  "imageAlt": "Geometrische modulare Architekturlinien und typografische Proportionen auf weißem Papier",
   "body": [
     {
       "type": "p",
-      "text": "[de] The grid is not a prison; it is a canvas of liberating discipline. When Josef Müller-Brockmann and the pioneers of the Zurich School formalized the International Typographic Style in the 1950s, they sought to purge graphic design of arbitrary subjective whimsy in favor of universal clarity, mathematical harmony, and democratic readability."
+      "text": "Das Raster ist kein Gefängnis; es ist eine Leinwand befreiender Disziplin. Als Josef Müller-Brockmann und die Pioniere der Zürcher Schule in den 1950er Jahren den Internationalen Typografischen Stil formalisierten, versuchten sie, das Grafikdesign von willkürlichen subjektiven Launen zu befreien und stattdessen universelle Klarheit, mathematische Harmonie und demokratische Lesbarkeit zu erreichen."
     },
     {
       "type": "h2",
-      "text": "[de] Modular Arithmetic and Harmonic Proportions"
+      "text": "Modulare Arithmetik und harmonische Proportionen"
     },
     {
       "type": "p",
-      "text": "[de] At its heart, the Swiss grid relies on proportional division. A standard 12-column layout can be subdivided into halves, thirds, quarters, and sixths without ever breaking horizontal or vertical baseline rhythm. Every headline, pullquote, and caption anchors directly to an underlying mathematical coordinate system."
+      "text": "Im Kern basiert das Schweizer Raster auf der proportionalen Division. Ein standardmäßiges 12-Spalten-Layout kann in Hälften, Drittel, Viertel und Sexten unterteilt werden, ohne jemals den horizontalen oder vertikalen Grundlinienrhythmus zu unterbrechen. Jede Überschrift, jedes Zitat und jede Bildunterschrift ist direkt in einem zugrunde liegenden mathematischen Koordinatensystem verankert."
     },
     {
       "type": "quote",
-      "text": "[de] The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.",
-      "cite": "[de] Josef Müller-Brockmann, Grid Systems in Graphic Design"
+      "text": "Das Rastersystem ist ein Hilfsmittel, keine Garantie. Es ermöglicht vielfältige Einsatzmöglichkeiten und jeder Designer kann nach einer Lösung suchen, die zu seinem persönlichen Stil passt. Aber man muss lernen, das Raster zu nutzen; Es ist eine Kunst, die Übung erfordert.",
+      "cite": "Josef Müller-Brockmann, Rastersysteme im Grafikdesign"
     },
     {
       "type": "h3",
-      "text": "[de] Essential Axioms of the Swiss Methodology"
+      "text": "Wesentliche Axiome der Schweizer Methodik"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
-        "[de] Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
-        "[de] Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
+        "Strikte Einhaltung eines Grundlinienrasters: Jede Textzeile wird unabhängig von der Schriftgröße auf ganzzahlige Vielfache der Grundlinienhöhe ausgerichtet.",
+        "Asymmetrisches dynamisches Gleichgewicht: Ersetzen der statischen Zentrierung durch aktive Leerraumspannung und linksbündige Typografie.",
+        "Hierarchischer typografischer Kontrast: Nutzung extremer Skalenunterschiede zwischen massiven Anzeigetiteln und kompakten, lesbaren Fließtexten."
       ]
     },
     {
       "type": "p",
-      "text": "[de] In our contemporary digital ecosystem, where responsive layouts must adapt instantaneously across watch screens, smartphones, and ultra-wide desktop monitors, the mathematical rigor of the Swiss grid remains our most robust visual compass."
+      "text": "In unserem modernen digitalen Ökosystem, in dem sich reaktionsfähige Layouts sofort an Uhrenbildschirme, Smartphones und ultrabreite Desktop-Monitore anpassen müssen, bleibt die mathematische Genauigkeit des Schweizer Rasters unser robustester visueller Kompass."
     }
   ],
   "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"

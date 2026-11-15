@@ -1,7 +1,7 @@
 {
   "slug": "pure-functional-simplicity",
-  "title": "[ar] Pure Functional Simplicity",
-  "excerpt": "[ar] A deep engineering dive into functional programming principles, pure functions, deterministic state models, and why immutable software pipelines eliminate whole categories of production failures.",
+  "title": "البساطة الوظيفية الخالصة",
+  "excerpt": "غوص هندسي عميق في مبادئ البرمجة الوظيفية، والوظائف النقية، ونماذج الحالة الحتمية، ولماذا تقضي خطوط أنابيب البرامج غير القابلة للتغيير على فئات كاملة من فشل الإنتاج.",
   "date": "2026-11-02",
   "updated": "2026-11-14",
   "author": "Elena Vance",
@@ -12,27 +12,27 @@
     "clean-code"
   ],
   "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Clean functional source code highlighted on a developer workstation in low ambient light",
+  "imageAlt": "تم إبراز كود المصدر الوظيفي النظيف على محطة عمل المطور في الإضاءة المحيطة المنخفضة",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The greatest source of fragility in modern software engineering is not algorithmic complexity, but uncontrolled state mutation. When variables can be modified from arbitrary threads, asynchronous callbacks, and nested object hierarchies, software ceases to be a predictable mathematical system and degenerates into an untestable web of temporal side effects."
+      "text": "إن أكبر مصدر للهشاشة في هندسة البرمجيات الحديثة ليس التعقيد الخوارزمي، بل طفرة الحالة غير المنضبطة. عندما يمكن تعديل المتغيرات من سلاسل عشوائية، وعمليات رد اتصال غير متزامنة، وتسلسلات هرمية للكائنات المتداخلة، يتوقف البرنامج عن كونه نظامًا رياضيًا يمكن التنبؤ به ويتحول إلى شبكة غير قابلة للاختبار من الآثار الجانبية المؤقتة."
     },
     {
       "type": "p",
-      "text": "[ar] Functional programming is not an esoteric academic indulgence; it is the ultimate practical discipline for building resilient, self-healing digital systems. By restricting computation to pure mathematical functions and treating all data structures as strictly immutable, developers eliminate entire classes of concurrency race conditions, memory leaks, and mysterious production regressions."
+      "text": "البرمجة الوظيفية ليست تساهلاً أكاديميًا مقصورًا على فئة معينة؛ إنه الانضباط العملي النهائي لبناء أنظمة رقمية مرنة وقابلة للشفاء ذاتيًا. من خلال تقييد العمليات الحسابية على وظائف رياضية بحتة والتعامل مع جميع هياكل البيانات باعتبارها غير قابلة للتغيير تمامًا، يزيل المطورون فئات كاملة من حالات سباق التزامن، وتسرب الذاكرة، وتراجعات الإنتاج الغامضة."
     },
     {
       "type": "h2",
-      "text": "[ar] The Mathematical Foundation of Pure Functions"
+      "text": "الأساس الرياضي للدوال البحتة"
     },
     {
       "type": "p",
-      "text": "[ar] A function is considered mathematically 'pure' if and only if it satisfies two rigorous conditions: deterministic referential transparency and complete freedom from observable side effects. Given the exact same inputs (arguments), a pure function must return the exact same output every single time, without exception."
+      "text": "تعتبر الوظيفة \"نقية\" رياضيا إذا وفقط إذا كانت تستوفي شرطين صارمين: الشفافية المرجعية الحتمية والتحرر الكامل من الآثار الجانبية التي يمكن ملاحظتها. بالنظر إلى نفس المدخلات (الوسائط)، يجب أن تقوم الدالة الخالصة بإرجاع نفس المخرجات بالضبط في كل مرة، دون استثناء."
     },
     {
       "type": "p",
-      "text": "[ar] A pure function does not read or write to global memory, does not modify input arguments by reference, does not trigger HTTP network calls, and does not alter DOM nodes. It takes data in, performs an immutable transformation, and emits new data out."
+      "text": "الدالة النقية لا تقرأ أو تكتب إلى الذاكرة العامة، ولا تعدل وسائط الإدخال حسب المرجع، ولا تقوم بتشغيل مكالمات شبكة HTTP، ولا تغير عقد DOM. فهو يأخذ البيانات وينفذ تحويلاً غير قابل للتغيير ويصدر بيانات جديدة."
     },
     {
       "type": "code",
@@ -41,41 +41,41 @@
     },
     {
       "type": "quote",
-      "text": "[ar] Simplicity does not precede complexity, but follows it. True architectural mastery is achieved not when there is nothing left to add, but when there is nothing left that can mutate unpredictably.",
-      "cite": "[ar] Elena Vance, The Immutable Mind"
+      "text": "البساطة لا تسبق التعقيد بل تتبعه. لا يتم تحقيق الإتقان المعماري الحقيقي عندما لا يتبقى شيء يمكن إضافته، ولكن عندما لا يتبقى شيء يمكن أن يتغير بشكل غير متوقع.",
+      "cite": "إيلينا فانس، العقل الثابت"
     },
     {
       "type": "h2",
-      "text": "[ar] The Power of Referential Transparency in Distributed Systems"
+      "text": "قوة الشفافية المرجعية في الأنظمة الموزعة"
     },
     {
       "type": "p",
-      "text": "[ar] When code is referentially transparent, any function call can be safely replaced by its computed return value without altering program behavior. This property unlocks extraordinary architectural optimizations: deterministic memoization, automatic parallel execution across multi-core processors, and zero-risk caching at the edge CDN tier."
+      "text": "عندما تكون التعليمات البرمجية شفافة مرجعيًا، يمكن استبدال أي استدعاء دالة بأمان بقيمة الإرجاع المحسوبة دون تغيير سلوك البرنامج. تفتح هذه الخاصية تحسينات معمارية استثنائية: الحفظ الحتمي، والتنفيذ المتوازي التلقائي عبر المعالجات متعددة النواة، والتخزين المؤقت بدون مخاطر على مستوى CDN للحافة."
     },
     {
       "type": "p",
-      "text": "[ar] In the context of modern static publishing, referential transparency means that rendering an article given its JSON payload produces an identical HTML string whether compiled on a developer's laptop, on a continuous integration runner, or inside an edge worker. The build becomes a deterministic mathematical pipeline."
+      "text": "في سياق النشر الثابت الحديث، تعني الشفافية المرجعية أن عرض مقالة في ضوء حمولة JSON الخاصة بها ينتج سلسلة HTML متطابقة سواء تم تجميعها على كمبيوتر محمول للمطور، أو على مشغل تكامل مستمر، أو داخل عامل حافة. يصبح البناء خط أنابيب رياضي حتمي."
     },
     {
       "type": "h3",
-      "text": "[ar] Architectural Benefits of Immutability"
+      "text": "الفوائد المعمارية للثبات"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Time-travel debugging: Because historical states are preserved rather than overwritten, application state transitions can be serialized, replayed, and inspected with zero ambiguity.",
-        "[ar] Fearless refactoring: Pure functions can be moved, renamed, and recombined without fear of breaking distant, hidden global dependencies.",
-        "[ar] Trivial unit testability: Zero need for complex mock libraries, database fixtures, or state reset teardown hooks. You pass input data and assert the output value.",
-        "[ar] Effortless concurrency: Since immutable data structures cannot be altered by competing execution threads, locks, mutexes, and deadlocks are entirely avoided."
+        "تصحيح أخطاء السفر عبر الزمن: نظرًا لأنه يتم الحفاظ على الحالات التاريخية بدلاً من الكتابة فوقها، يمكن إجراء تسلسل لانتقالات حالة التطبيق، وإعادة تشغيلها، وفحصها بدون أي غموض.",
+        "إعادة البناء بلا خوف: يمكن نقل الوظائف الخالصة وإعادة تسميتها وإعادة تجميعها دون خوف من كسر التبعيات العالمية البعيدة والمخفية.",
+        "قابلية اختبار الوحدة البسيطة: لا حاجة إلى مكتبات صورية معقدة أو تركيبات قاعدة بيانات أو خطافات تفكيك لإعادة ضبط الحالة. يمكنك تمرير بيانات الإدخال وتأكيد قيمة الإخراج.",
+        "التزامن السهل: نظرًا لأنه لا يمكن تغيير هياكل البيانات غير القابلة للتغيير عن طريق سلاسل التنفيذ المتنافسة، يتم تجنب الأقفال وكائنات المزامنة والجمود تمامًا."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] Functional Architecture in the Real World"
+      "text": "العمارة الوظيفية في العالم الحقيقي"
     },
     {
       "type": "p",
-      "text": "[ar] Adopting functional simplicity does not require abandoning pragmatic delivery. Systems like Rust, TypeScript, and modern React have increasingly incorporated functional idioms: pattern matching, algebraic data types, immutable state updates, and declarative data pipelines. By organizing code around immutable data pipelines rather than sprawling object hierarchies, engineers build systems that are robust, understandable, and deeply enduring."
+      "text": "إن اعتماد البساطة الوظيفية لا يتطلب التخلي عن التسليم العملي. قامت أنظمة مثل Rust وTypeScript وReact الحديثة بدمج المصطلحات الوظيفية بشكل متزايد: مطابقة الأنماط، وأنواع البيانات الجبرية، وتحديثات الحالة غير القابلة للتغيير، وخطوط أنابيب البيانات التعريفية. من خلال تنظيم التعليمات البرمجية حول خطوط أنابيب البيانات غير القابلة للتغيير بدلاً من التسلسلات الهرمية المترامية الأطراف للكائنات، يقوم المهندسون ببناء أنظمة قوية ومفهومة ودائمة للغاية."
     }
   ],
   "sourceHash": "7eacf72285d3c1ec709ff945b0464b9270600591"

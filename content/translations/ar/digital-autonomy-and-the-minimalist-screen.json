@@ -1,7 +1,7 @@
 {
   "slug": "digital-autonomy-and-the-minimalist-screen",
-  "title": "[ar] Digital Autonomy and the Minimalist Screen",
-  "excerpt": "[ar] A manifesto on reclaiming human cognitive sovereignty from predatory algorithmic feeds through intentional web design, ad-free typography, and quiet digital interfaces.",
+  "title": "الاستقلالية الرقمية والشاشة البسيطة",
+  "excerpt": "بيان حول استعادة السيادة المعرفية البشرية من الخلاصات الخوارزمية المفترسة من خلال تصميم الويب المتعمد والطباعة الخالية من الإعلانات والواجهات الرقمية الهادئة.",
   "date": "2026-11-08",
   "updated": "2026-11-12",
   "author": "Elena Vance",
@@ -12,40 +12,40 @@
     "culture"
   ],
   "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Minimal wooden desk with notebook, fountain pen, and calm morning shadow",
+  "imageAlt": "مكتب خشبي بسيط مع دفتر ملاحظات وقلم حبر وظل صباحي هادئ",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The contemporary commercial internet is an engineered attention casino. Every blinking red notification badge, infinitely scrolling feed, and autoplaying video is mathematically optimized by behavioral psychologists to hijack the human dopamine loop. We have transformed the most powerful library in human history into an anxiety-generating distraction machine."
+      "text": "الإنترنت التجاري المعاصر هو كازينو اهتمام مصمم هندسيًا. يتم تحسين كل شارة إشعار حمراء وامضة، وموجز تمرير لا نهائي، وتشغيل الفيديو تلقائيًا من قبل علماء النفس السلوكي لاختطاف حلقة الدوبامين البشرية. لقد حولنا أقوى مكتبة في تاريخ البشرية إلى آلة إلهاء تولد القلق."
     },
     {
       "type": "h2",
-      "text": "[ar] The Architecture of Calm Interfaces"
+      "text": "هندسة الواجهات الهادئة"
     },
     {
       "type": "p",
-      "text": "[ar] Digital autonomy begins with interface ethics. An editorial journal should treat the reader's attention with sacred reverence. When a website eliminates intrusive pop-ups, flashing banner ads, and algorithmic recommendations, reading ceases to be an anxious ordeal and returns to being a contemplative pleasure."
+      "text": "يبدأ الاستقلال الرقمي بأخلاقيات الواجهة. يجب على المجلة التحريرية أن تتعامل مع انتباه القارئ باحترام مقدس. عندما يزيل موقع ويب النوافذ المنبثقة المتطفلة، واللافتات الإعلانية الوامضة، والتوصيات الخوارزمية، تتوقف القراءة عن كونها محنة مثيرة للقلق وتعود إلى كونها متعة تأملية."
     },
     {
       "type": "quote",
-      "text": "[ar] Your attention is your life. What you pay attention to becomes your consciousness. Guard it with uncompromising ferocity.",
-      "cite": "[ar] Elena Vance, The Unhurried Mind"
+      "text": "اهتمامك هو حياتك. ما تنتبه إليه يصبح وعيك. احرسها بشراسة لا هوادة فيها.",
+      "cite": "إيلينا فانس، العقل غير المستعجل"
     },
     {
       "type": "h3",
-      "text": "[ar] Pillars of Autonomous Digital Design"
+      "text": "ركائز التصميم الرقمي المستقل"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Finite reading experiences: Replacing bottomless feeds with curated, bounded monograph issues that possess a definitive beginning and end.",
-        "[ar] Zero behavioral surveillance: Eliminating third-party tracking pixels that monitor mouse trajectories and dwell times to build psychological dossiers.",
-        "[ar] Typographic serenity: Formatting long-form prose with generous leading, generous margins, and distraction-free dark and light color palettes."
+        "تجارب القراءة المحدودة: استبدال الخلاصات التي لا نهاية لها بقضايا دراسة منسقة ومحدودة تمتلك بداية ونهاية محددة.",
+        "مراقبة سلوكية صفرية: التخلص من وحدات بكسل التتبع التابعة لجهات خارجية والتي تراقب مسارات الماوس وأوقات السكون لإنشاء ملفات نفسية.",
+        "الصفاء المطبعي: تنسيق النثر الطويل مع بداية سخية، وهوامش سخية، ولوحات ألوان داكنة وفاتحة خالية من التشتيت."
       ]
     },
     {
       "type": "p",
-      "text": "[ar] By designing digital spaces that respect human agency, we reclaim the true promise of the internet: an egalitarian platform for deep intellectual exploration, critical contemplation, and enduring enlightenment."
+      "text": "من خلال تصميم المساحات الرقمية التي تحترم الفاعلية البشرية، فإننا نستعيد الوعد الحقيقي للإنترنت: منصة مساواة للاستكشاف الفكري العميق، والتأمل النقدي، والتنوير الدائم."
     }
   ],
   "sourceHash": "f45a70fc0dec403d722d249fc0f40fef4561ce6b"

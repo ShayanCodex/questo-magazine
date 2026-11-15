@@ -1,7 +1,7 @@
 {
   "slug": "multilink-suspension-geometry-and-camber-recovery",
-  "title": "[fr] Multilink Suspension Geometry",
-  "excerpt": "[fr] A vehicle dynamics monograph analyzing instant centers, roll center migration, dynamic camber compensation curves, and elastokinematic compliance steer under transient lateral loads.",
+  "title": "Géométrie de suspension multibras",
+  "excerpt": "Une monographie sur la dynamique du véhicule analysant les centres instantanés, la migration du centre de roulis, les courbes de compensation de carrossage dynamique et la direction de conformité élastocinématique sous charges latérales transitoires.",
   "date": "2026-11-15",
   "author": "Liam O'Connor",
   "tags": [
@@ -13,23 +13,23 @@
     "physics"
   ],
   "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] High-performance sports car chassis showing precision machined aluminum suspension control arms and coilover dampening assembly",
+  "imageAlt": "Châssis de voiture de sport haute performance montrant des bras de commande de suspension en aluminium usinés avec précision et un ensemble d'amortissement coilover",
   "body": [
     {
       "type": "p",
-      "text": "[fr] In competitive motorsport and high-performance automotive engineering, tire grip is the supreme physical constraint limiting cornering velocity. A pneumatic racing tire delivers peak lateral adhesion only when its tread contact patch remains oriented perfectly perpendicular to the road plane under extreme cornering forces. However, as centrifugal acceleration forces the chassis to roll outward, conventional suspension systems lose negative camber, rolling the tire onto its outer shoulder and causing catastrophic loss of adhesion."
+      "text": "Dans le sport automobile de compétition et l'ingénierie automobile de haute performance, l'adhérence des pneus est la contrainte physique suprême limitant la vitesse dans les virages. Un pneu pneumatique de course offre une adhérence latérale maximale uniquement lorsque sa zone de contact avec la bande de roulement reste orientée parfaitement perpendiculairement au plan de la route sous des forces de virage extrêmes. Cependant, à mesure que l'accélération centrifuge force le châssis à rouler vers l'extérieur, les systèmes de suspension conventionnels perdent leur carrossage négatif, faisant rouler le pneu sur son épaule extérieure et provoquant une perte d'adhérence catastrophique."
     },
     {
       "type": "p",
-      "text": "[fr] Multilink suspension geometry decouples kinematic parameters that were historically compromised in MacPherson strut and rigid axle configurations. By distributing wheel hub location across five distinct spatial control links, engineers can independently program instant center migration, roll center height, dynamic camber recovery, and toe compliance steer with mathematical precision."
+      "text": "La géométrie de la suspension multibras découple les paramètres cinématiques qui étaient historiquement compromis dans les configurations à jambes de force MacPherson et à essieu rigide. En répartissant l'emplacement du moyeu de roue sur cinq liens de contrôle spatial distincts, les ingénieurs peuvent programmer indépendamment la migration instantanée du centre, la hauteur du centre de roulis, la récupération dynamique du carrossage et la conformité du pincement avec une précision mathématique."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. Kinematic Instant Centers and Camber Recovery Ratios"
+      "text": "1. Centres cinématiques instantanés et taux de récupération de cambrure"
     },
     {
       "type": "p",
-      "text": "[fr] The spatial trajectory of the wheel carrier in bump and rebound is governed by the projected virtual instant center ($IC$) formed by the intersection of the upper and lower control links in the front and rear planes:"
+      "text": "La trajectoire spatiale du porte-roue en cas de choc et de rebond est régie par le centre instantané virtuel projeté ($IC$) formé par l'intersection des liaisons de commande supérieure et inférieure dans les plans avant et arrière :"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[fr] By shortening the upper control link relative to the lower link and angling its inner pivot downward, the suspension gains progressive negative camber as it compresses into bump travel ($d\\gamma / dz < 0$). This camber gain perfectly cancels out the angular roll of the sprung chassis, maintaining a flat tire contact patch throughout apex cornering."
+      "text": "En raccourcissant la liaison de commande supérieure par rapport à la liaison inférieure et en inclinant son pivot intérieur vers le bas, la suspension gagne un carrossage négatif progressif à mesure qu'elle se comprime en course en bosse ($d\\gamma / dz < 0$). Ce gain de carrossage annule parfaitement le roulis angulaire du châssis à ressorts, maintenant une zone de contact du pneu crevé tout au long des virages au sommet."
     },
     {
       "type": "quote",
-      "text": "[fr] A great chassis does not resist roll with brick-stiff anti-roll bars; it embraces roll through kinematic geometry that extracts maximum grip from the outside tire.",
-      "cite": "[fr] Liam O'Connor, Vehicle Dynamics Specialist"
+      "text": "Un bon châssis ne résiste pas au roulis avec des barres anti-roulis rigides en brique ; il adopte une géométrie cinématique qui extrait une adhérence maximale du pneu extérieur.",
+      "cite": "Liam O'Connor, spécialiste de la dynamique du véhicule"
     },
     {
       "type": "h2",
-      "text": "[fr] 2. Roll Center Height Migration and Jacking Forces"
+      "text": "2. Migration de la hauteur du centre de roulis et forces de levage"
     },
     {
       "type": "p",
-      "text": "[fr] The vehicle roll center ($RC$) is the theoretical point about which the sprung body rolls under lateral acceleration. Its elevation relative to the ground plane dictates how lateral forces are partitioned between kinematic linkages and mechanical springs."
+      "text": "Le centre de roulis du véhicule ($RC$) est le point théorique autour duquel la carrosserie suspendue roule sous l'accélération latérale. Son élévation par rapport au plan du sol dicte la manière dont les forces latérales sont réparties entre les liaisons cinématiques et les ressorts mécaniques."
     },
     {
       "type": "ul",
       "items": [
-        "[fr] High Roll Center: Transmits cornering forces instantaneously through suspension linkages with minimal body roll, but induces severe vertical jacking forces that narrow the track width.",
-        "[fr] Low or Sub-Ground Roll Center: Eliminates jacking forces, but creates an enormous roll moment arm ($h_{roll} = CG - RC$), demanding excessively stiff anti-roll bars that degrade tire compliance over kerbs.",
-        "[fr] Dynamic Migration Envelope: A properly tuned five-link design restricts the roll center from migrating laterally by more than 20mm across ±3 degrees of chassis roll."
+        "Centre de roulis élevé : transmet instantanément les forces de virage via les liaisons de suspension avec un roulis minimal de la carrosserie, mais induit des forces de levage verticales importantes qui réduisent la largeur de la voie.",
+        "Centre de roulis bas ou souterrain : élimine les forces de levage, mais crée un énorme bras de moment de roulis ($h_{roll} = CG - RC$), exigeant des barres anti-roulis excessivement rigides qui dégradent la conformité des pneus sur les bordures.",
+        "Enveloppe de migration dynamique : une conception à cinq maillons correctement réglée empêche le centre de roulis de migrer latéralement de plus de 20 mm sur ± 3 degrés de roulis du châssis."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Video Masterclass: Suspension Geometry, Scrub Radius & Kinematics"
+      "text": "3. Masterclass vidéo : Géométrie de suspension, rayon de brossage et cinématique"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/SUDMEd1bMZI",
-      "title": "[fr] Scrub Radius, Suspension Geometry & Kinematic Contact Patch Control",
-      "caption": "[fr] Engineering breakdown of suspension geometry, scrub radius, kingpin inclination, and dynamic steering feel."
+      "title": "Rayon de brossage, géométrie de suspension et contrôle des zones de contact cinématique",
+      "caption": "Analyse technique de la géométrie de la suspension, du rayon de brossage, de l'inclinaison du pivot d'attelage et de la sensation de direction dynamique."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. Elastokinematic Compliance Steer Under Lateral Load"
+      "text": "4. Conformité élastocinématique direction sous charge latérale"
     },
     {
       "type": "p",
-      "text": "[fr] In physical vehicles, suspension arms do not articulate about infinitely rigid spherical joints; they rely on elastomeric bushings or composite bearings with non-zero compliance under load. When a vehicle undergoes heavy lateral acceleration ($1.5g+$ in racing applications), the intense cornering force acts through the tire contact patch, exerting a massive yaw torque on the hub assembly."
+      "text": "Dans les véhicules physiques, les bras de suspension ne s'articulent pas autour d'articulations sphériques infiniment rigides ; ils s'appuient sur des bagues en élastomère ou des roulements composites à conformité non nulle sous charge. Lorsqu'un véhicule subit une forte accélération latérale (1,5 g + $ dans les applications de course), la force de virage intense agit à travers la zone de contact du pneu, exerçant un couple de lacet massif sur l'ensemble moyeu."
     },
     {
       "type": "p",
-      "text": "[fr] Multilink architectures exploit this deformation through deliberate elastokinematics. By positioning bushing stiffness vectors asymmetrically, the outer wheel automatically toes in under lateral load. This passive toe-in stabilizes the rear axle against snap oversteer during aggressive high-speed directional transitions without requiring complex electronic rear-wheel steering systems."
+      "text": "Les architectures multilink exploitent cette déformation grâce à une élastocinématique délibérée. En positionnant les vecteurs de rigidité des bagues de manière asymétrique, la roue extérieure se penche automatiquement sous la charge latérale. Ce pincement passif stabilise l'essieu arrière contre le survirage brusque lors de transitions directionnelles agressives à grande vitesse sans nécessiter de systèmes de direction électroniques complexes des roues arrière."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Chassis Setup & Motorsport Takeaways"
+      "text": "5. Configuration du châssis et points à retenir en sport automobile"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Scrub Radius Calibration: Maintain a slightly negative or near-zero scrub radius (0 to -5mm) to ensure directional stability under asymmetric braking without kickback through the steering rack.",
-        "[fr] Anti-Squat / Anti-Dive Tuning: Angle the longitudinal link axes to achieve 40-60% mechanical anti-pitch, keeping aerodynamic downforce floors parallel to the track during heavy braking zones.",
-        "[fr] Bump Steer Minimization: Align the steering tie rod length and angle precisely with the virtual swing arm of the front upright to eliminate unwanted steering angle changes over surface undulations."
+        "Calibrage du rayon de brossage : Maintenez un rayon de brossage légèrement négatif ou proche de zéro (0 à -5 mm) pour assurer la stabilité directionnelle en cas de freinage asymétrique sans rebond à travers la crémaillère de direction.",
+        "Réglage anti-squat / anti-plongée : inclinez les axes de liaison longitudinaux pour obtenir un anti-tangage mécanique de 40 à 60 %, en gardant les planchers d'appui aérodynamique parallèles à la piste pendant les zones de freinage intense.",
+        "Minimisation de la direction des bosses : alignez précisément la longueur et l'angle de la biellette de direction avec le bras oscillant virtuel du montant avant pour éliminer les changements indésirables d'angle de braquage sur les ondulations de la surface."
       ]
     }
   ],

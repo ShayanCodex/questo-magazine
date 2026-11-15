@@ -1,7 +1,7 @@
 {
   "slug": "the-grid-as-an-instrument",
-  "title": "[ar] The Grid as an Instrument",
-  "excerpt": "[ar] A masterclass in editorial architecture, analyzing Jan Tschichold's Golden Canon of page division, modular baseline mathematics, and how structural grids transform chaotic content into harmonic literature.",
+  "title": "الشبكة كأداة",
+  "excerpt": "دورة متقدمة في الهندسة التحريرية، وتحليل القانون الذهبي لتقسيم الصفحات لجان تشيتشولد، والرياضيات الأساسية المعيارية، وكيف تحول الشبكات الهيكلية المحتوى الفوضوي إلى أدب متناغم.",
   "date": "2026-11-03",
   "updated": "2026-11-14",
   "author": "Saskia Lindqvist",
@@ -12,44 +12,44 @@
     "swiss-style"
   ],
   "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Swiss International Style typographic specimen book displaying strict modular baseline grids",
+  "imageAlt": "نموذج كتاب مطبعي على الطراز السويسري الدولي يعرض شبكات أساسية معيارية صارمة",
   "body": [
     {
       "type": "p",
-      "text": "[ar] To the untrained eye, a finely designed book or editorial magazine appears effortless. The words flow across the page with an innate naturalness that invites immediate immersion. Yet this apparent ease is an optical illusion. Beneath every masterpiece of publication design lies a hidden, rigorous armature of geometric lines, proportional ratios, and baseline rhythms: the typographic grid."
+      "text": "بالنسبة للعين غير المدربة، يبدو الكتاب أو المجلة التحريرية المصممة بدقة بلا جهد. تتدفق الكلمات عبر الصفحة بشكل طبيعي فطري يدعو إلى الانغماس الفوري. ومع ذلك فإن هذه السهولة الظاهرة ما هي إلا وهم بصري. تحت كل تحفة من تصميم المنشورات يكمن محرك مخفي وصارم من الخطوط الهندسية والنسب المتناسبة والإيقاعات الأساسية: الشبكة المطبعية."
     },
     {
       "type": "p",
-      "text": "[ar] The grid is not an aesthetic constraint; it is a musical instrument. Just as a violin relies on precise mathematical string lengths to produce pure acoustic pitch, a page layout relies on harmonious spatial ratios to convert arbitrary alphabetic characters into resonant visual literature."
+      "text": "الشبكة ليست عائقاً جمالياً؛ إنها آلة موسيقية. تمامًا كما يعتمد الكمان على أطوال أوتار رياضية دقيقة لإنتاج طبقة صوتية نقية، يعتمد تخطيط الصفحة على نسب مكانية متناغمة لتحويل الحروف الأبجدية العشوائية إلى أدب بصري رنين."
     },
     {
       "type": "h2",
-      "text": "[ar] The Secret Geometry of Jan Tschichold’s Golden Canon"
+      "text": "الهندسة السرية للكانون الذهبي لجان تشيكهولد"
     },
     {
       "type": "p",
-      "text": "[ar] In his seminal 1953 monograph 'The Form of the Book', German typographer Jan Tschichold revealed the long-forgotten medieval canon of manuscript division. By drawing diagonal construction lines across a double-page spread—connecting opposite corners and intersecting through page centers—medieval scribes divided both page width and page height into nine equal increments."
+      "text": "في دراسته المبدعة التي صدرت عام 1953 تحت عنوان \"شكل الكتاب\"، كشف عالم الطباعة الألماني جان تشيكهولد عن قانون العصور الوسطى المنسي منذ فترة طويلة لتقسيم المخطوطات. من خلال رسم خطوط بناء قطرية عبر حيز مزدوج للصفحة - توصيل الزوايا المتقابلة والتقاطع عبر مراكز الصفحات - قام الكتبة في العصور الوسطى بتقسيم عرض الصفحة وارتفاعها إلى تسع زيادات متساوية."
     },
     {
       "type": "p",
-      "text": "[ar] The resulting text block possessed the exact proportional ratio (2:3) of the overall page itself. Furthermore, the outer margins stood in harmonic proportion to each other: inner margin = 2 parts, top margin = 3 parts, outer margin = 4 parts, and bottom margin = 6 parts. This bottom-heavy margin allocation was not ornamental; it accounted for human ergonomics, providing comfortable resting space for the reader's thumbs without obscuring a single word of text."
+      "text": "تمتلك كتلة النص الناتجة نسبة التناسب الدقيقة (2:3) للصفحة الإجمالية نفسها. علاوة على ذلك، كانت الهوامش الخارجية متناسبة توافقيًا مع بعضها البعض: الهامش الداخلي = جزأين، والهامش العلوي = 3 أجزاء، والهامش الخارجي = 4 أجزاء، والهامش السفلي = 6 أجزاء. لم يكن تخصيص الهامش الثقيل هذا زخرفيًا؛ لقد استحوذ على بيئة العمل البشرية، مما يوفر مساحة مريحة لإبهام القارئ دون حجب كلمة واحدة من النص."
     },
     {
       "type": "quote",
-      "text": "[ar] The perfection of a page layout is attained when the proportions of the margins and the text area are in harmony with the natural dimensions of the page. Harmony is not a matter of taste; it is a mathematical fact.",
-      "cite": "[ar] Jan Tschichold, The Form of the Book"
+      "text": "يتم تحقيق الكمال في تخطيط الصفحة عندما تكون نسب الهوامش ومنطقة النص متناغمة مع الأبعاد الطبيعية للصفحة. الانسجام ليس مسألة ذوق. إنها حقيقة رياضية.",
+      "cite": "جان تشيتشولد، شكل الكتاب"
     },
     {
       "type": "h2",
-      "text": "[ar] The Rhythm of the Baseline Grid"
+      "text": "إيقاع الشبكة الأساسية"
     },
     {
       "type": "p",
-      "text": "[ar] While vertical columns dictate horizontal content flow, the vertical baseline grid establishes the temporal tempo of the reading experience. In a disciplined editorial system, every single typographical element—from the 64-point cover headline down to the 8-point photo caption—must snap to integer multiples of the primary body copy leading."
+      "text": "في حين أن الأعمدة الرأسية تملي تدفق المحتوى الأفقي، فإن الشبكة الأساسية العمودية تحدد الإيقاع الزمني لتجربة القراءة. في نظام تحريري منضبط، يجب أن يتناسب كل عنصر مطبعي - بدءًا من عنوان الغلاف المكون من 64 نقطة وحتى تعليق الصورة المكون من 8 نقاط - مع مضاعفات صحيحة لنسخة النص الأساسي."
     },
     {
       "type": "p",
-      "text": "[ar] If body copy is set at 11 points on a 16-point line-height, the baseline grid unit is exactly 16 points (or 24 pixels). A secondary heading might be 24 points with a 32-point line-height (spanning exactly 2 baseline units). A pullquote might span 3 baseline units. This ensures that across multi-column spreads, lines of text in adjacent columns align horizontally with razor-like precision, creating a subconscious sense of order and structural stability."
+      "text": "إذا تم ضبط نسخة النص على 11 نقطة على ارتفاع خط مكون من 16 نقطة، فإن وحدة الشبكة الأساسية تكون بالضبط 16 نقطة (أو 24 بكسل). قد يكون العنوان الثانوي 24 نقطة مع ارتفاع خط يبلغ 32 نقطة (يمتد بالضبط إلى وحدتين أساسيتين). قد يمتد عرض الاقتباس إلى 3 وحدات أساسية. وهذا يضمن أنه عبر الحيزات متعددة الأعمدة، تتم محاذاة أسطر النص في الأعمدة المجاورة أفقيًا بدقة تشبه الشفرة، مما يخلق إحساسًا لا شعوريًا بالنظام والاستقرار الهيكلي."
     },
     {
       "type": "code",
@@ -58,27 +58,27 @@
     },
     {
       "type": "h3",
-      "text": "[ar] Anatomy of an Award-Winning 12-Column System"
+      "text": "تشريح نظام مكون من 12 عمودًا حائزًا على جوائز"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Column Flexibility: 12 columns can be cleanly partitioned into 1, 2, 3, 4, or 6 equal sub-modules without fractional pixel remainders.",
-        "[ar] Gutter Consistency: Maintaining a uniform 24px or 32px gutter across all viewport breakpoints ensures consistent negative space breathing room.",
-        "[ar] Asymmetric Tension: Anchoring primary narrative copy across columns 3 through 10, leaving outer columns open for editorial metadata, author bios, and large marginalia pullquotes."
+        "مرونة العمود: يمكن تقسيم 12 عمودًا بشكل نظيف إلى 1 أو 2 أو 3 أو 4 أو 6 وحدات فرعية متساوية بدون بقايا بكسل كسرية.",
+        "تناسق الميزاب: الحفاظ على ميزاب موحد بحجم 24 بكسل أو 32 بكسل عبر جميع نقاط توقف منفذ العرض يضمن اتساق المساحة السلبية للتنفس.",
+        "التوتر غير المتماثل: تثبيت النسخة السردية الأولية عبر الأعمدة من 3 إلى 10، وترك الأعمدة الخارجية مفتوحة للبيانات التعريفية التحريرية، وسير المؤلف، واقتباسات الهوامش الكبيرة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] Translating Print Rigor to Dynamic Responsive Viewports"
+      "text": "ترجمة دقة الطباعة إلى إطارات عرض ديناميكية سريعة الاستجابة"
     },
     {
       "type": "p",
-      "text": "[ar] A common critique of early web design was that responsive viewports made grid discipline impossible. Because screen widths vary continuously from 360px mobile viewports to 3840px 4K workstations, critics argued that fixed proportions were obsolete. However, modern CSS features like CSS Grid Layout, subgrid, and mathematical clamp() functions allow us to translate Tschichold's Golden Canon directly into responsive code."
+      "text": "كان النقد الشائع لتصميم الويب المبكر هو أن إطارات العرض المستجيبة جعلت انضباط الشبكة مستحيلاً. نظرًا لأن عروض الشاشة تختلف بشكل مستمر من 360 بكسل لمنافذ العرض المحمولة إلى 3840 بكسل لمحطات العمل بدقة 4K، فقد جادل النقاد بأن النسب الثابتة عفا عليها الزمن. ومع ذلك، فإن ميزات CSS الحديثة مثل CSS Grid Layout والشبكة الفرعية ووظائف المشبك الرياضي () تسمح لنا بترجمة Golden Canon الخاص بـ Tschichold مباشرة إلى كود سريع الاستجابة."
     },
     {
       "type": "p",
-      "text": "[ar] By binding fluid typography to proportional container widths, modern editorial websites can maintain harmonious margin-to-column ratios regardless of screen size. The device changes, but the mathematical harmony remains eternal."
+      "text": "من خلال ربط الطباعة المرنة بعرض الحاوية المتناسب، يمكن لمواقع التحرير الحديثة الحفاظ على نسب متناغمة بين الهامش والعمود بغض النظر عن حجم الشاشة. يتغير الجهاز، لكن الانسجام الرياضي يبقى أبديا."
     }
   ],
   "sourceHash": "4fd98e9bd390dbbfbac91e6ac9fde2b54c874749"

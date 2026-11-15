@@ -1,7 +1,7 @@
 {
   "slug": "architecture-of-transformer-attention-mathematics-and-kv-cache",
-  "title": "[de] The Architecture of Transformer Attention",
-  "excerpt": "[de] An investigative monograph on scaled dot-product attention, quadratic memory complexity, multi-query KV cache optimizations, and how modern inference engines conquer the memory wall.",
+  "title": "Die Architektur der Transformer-Aufmerksamkeit",
+  "excerpt": "Eine investigative Monographie über skalierte Skalarprodukt-Aufmerksamkeit, quadratische Speicherkomplexität, KV-Cache-Optimierungen für mehrere Abfragen und wie moderne Inferenz-Engines die Speichermauer erobern.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -12,19 +12,19 @@
     "software-architecture"
   ],
   "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "[de] OpenAI and ChatGPT large language model neural architecture on smartphone display over keyboard",
+  "imageAlt": "OpenAI und ChatGPT große Sprachmodell-Neuronale Architektur auf Smartphone-Display über Tastatur",
   "body": [
     {
       "type": "p",
-      "text": "[de] The transformer architecture introduced in 2017 fundamentally redefined automated language modeling and sequence transduction. By discarding recurrent hidden state loops in favor of monolithic parallel attention mechanisms, transformers permitted unprecedented training throughput across distributed GPU clusters. Yet beneath the high-level taxonomy of foundation models lies an austere mathematical core: the scaled dot-product attention function. As context windows expand from four thousand to hundreds of thousands of tokens, the operational bottleneck of transformer inference shifts decisively from arithmetic computation (FLOPs) to memory bandwidth saturation."
+      "text": "Die 2017 eingeführte Transformer-Architektur hat die automatisierte Sprachmodellierung und Sequenztransduktion grundlegend neu definiert. Durch den Verzicht auf wiederkehrende versteckte Zustandsschleifen zugunsten monolithischer paralleler Aufmerksamkeitsmechanismen ermöglichten Transformatoren einen beispiellosen Trainingsdurchsatz über verteilte GPU-Cluster. Doch unter der hochrangigen Taxonomie der Basismodelle verbirgt sich ein strenger mathematischer Kern: die skalierte Skalarprodukt-Aufmerksamkeitsfunktion. Da sich die Kontextfenster von viertausend auf Hunderttausende Token erweitern, verschiebt sich der betriebliche Engpass der Transformatorinferenz entscheidend von der arithmetischen Berechnung (FLOPs) zur Speicherbandbreitensättigung."
     },
     {
       "type": "h2",
-      "text": "[de] 1. The Formal Mechanics of Scaled Dot-Product Attention"
+      "text": "1. Die formale Mechanik der skalierten Skalarproduktaufmerksamkeit"
     },
     {
       "type": "p",
-      "text": "[de] At its theoretical foundation, self-attention maps an input query sequence and key-value memory pairs to an output representation. Given an input sequence matrix X projected into query, key, and value manifolds through learned weight matrices W_Q, W_K, and W_V, the attention score matrix is computed via the canonical equation:"
+      "text": "Auf seiner theoretischen Grundlage ordnet Selbstaufmerksamkeit eine Eingabeabfragesequenz und Schlüssel-Wert-Speicherpaare einer Ausgabedarstellung zu. Bei einer gegebenen Eingabesequenzmatrix"
     },
     {
       "type": "code",
@@ -33,73 +33,73 @@
     },
     {
       "type": "p",
-      "text": "[de] The scaling factor, inverse square root of the projection dimension d_k, is not an arbitrary hyperparameter. For large values of d_k, the dot products grow substantially in magnitude, pushing the subsequent softmax function into regions with vanishingly small gradients. Scaling stabilizes variance to unity, ensuring numerical stability during backward backpropagation passes and avoiding catastrophic representation collapse."
+      "text": "Der Skalierungsfaktor, die Umkehrquadratwurzel der Projektionsdimension d_k, ist kein willkürlicher Hyperparameter. Bei großen Werten von d_k nimmt die Größe der Skalarprodukte erheblich zu, wodurch die nachfolgende Softmax-Funktion in Bereiche mit verschwindend kleinen Gradienten verschoben wird. Die Skalierung stabilisiert die Varianz auf Eins, sorgt für numerische Stabilität bei Rückwärtsausbreitungsdurchläufen und vermeidet einen katastrophalen Zusammenbruch der Darstellung."
     },
     {
       "type": "quote",
-      "text": "[de] In deep sequence models, attention is not merely a routing mechanism; it is a dynamic, input-conditioned associative memory matrix whose computational complexity scales quadratically with sequence length.",
-      "cite": "[de] Hiroshi Tanaka, Robotics & ML Research Monograph"
+      "text": "In Deep-Sequence-Modellen ist Aufmerksamkeit nicht nur ein Routing-Mechanismus; Es handelt sich um eine dynamische, eingabebedingte assoziative Speichermatrix, deren Rechenkomplexität quadratisch mit der Sequenzlänge skaliert.",
+      "cite": "Hiroshi Tanaka, Robotics & ML Research Monograph"
     },
     {
       "type": "h2",
-      "text": "[de] 2. The Memory Wall and the Key-Value (KV) Cache"
+      "text": "2. Die Memory Wall und der Key-Value (KV) Cache"
     },
     {
       "type": "p",
-      "text": "[de] During training, sequences are processed in monolithic batches where full causal masking permits simultaneous backpropagation. In autoregressive token generation during inference, however, each new token depends strictly upon all previously emitted tokens. Recalculating the projection matrices for every antecedent token at step t+1 yields an intolerable cubic time complexity O(t^3)."
+      "text": "Während des Trainings werden Sequenzen in monolithischen Stapeln verarbeitet, wobei eine vollständige kausale Maskierung eine gleichzeitige Rückausbreitung ermöglicht. Bei der autoregressiven Token-Generierung während der Inferenz hängt jedoch jedes neue Token streng von allen zuvor ausgegebenen Token ab. Die Neuberechnung der Projektionsmatrizen für jedes Vorgänger-Token in Schritt t+1 ergibt eine nicht tolerierbare kubische Zeitkomplexität O(t^3)."
     },
     {
       "type": "p",
-      "text": "[de] To achieve latency scaling that remains linear with respect to generation length, production inference runtimes retain the Key and Value projection vectors of historical tokens in High Bandwidth Memory (HBM). This persistent retention structure is the Key-Value (KV) Cache. While mathematically preserving O(1) projection overhead per step, the memory footprint of the KV cache scales with batch size, context length, number of layers, and projection heads:"
+      "text": "Um eine Latenzskalierung zu erreichen, die in Bezug auf die Generationslänge linear bleibt, behalten Produktionsinferenzlaufzeiten die Schlüssel- und Wertprojektionsvektoren historischer Token im High Bandwidth Memory (HBM) bei. Diese dauerhafte Aufbewahrungsstruktur ist der Key-Value (KV)-Cache. Während der O(1)-Projektionsaufwand pro Schritt mathematisch erhalten bleibt, skaliert der Speicherbedarf des KV-Cache mit der Stapelgröße, der Kontextlänge, der Anzahl der Schichten und den Projektionsköpfen:"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Memory Footprint = 2 * n_layers * n_heads * d_head * context_len * batch_size * precision_bytes",
-        "[de] For a 70B parameter model at 32k context length in FP16 precision, the KV cache alone demands upwards of 40GB of VRAM per concurrent request.",
-        "[de] Under sustained multi-tenant concurrency, memory capacity exhausts long before tensor cores reach compute saturation."
+        "Speicherbedarf = 2 * n_layers * n_heads * d_head * context_len * batch_size * precision_bytes",
+        "Für ein 70B-Parametermodell bei 32k Kontextlänge in FP16-Präzision benötigt der KV-Cache allein mehr als 40 GB VRAM pro gleichzeitiger Anfrage.",
+        "Bei anhaltender Multi-Tenant-Parallelität erschöpft sich die Speicherkapazität, lange bevor die Tensorkerne ihre Rechensättigung erreichen."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 3. Video Masterclass: Transformer Attention & Autoregressive Mechanics"
+      "text": "3. Video-Meisterklasse: Transformer-Aufmerksamkeit und autoregressive Mechanik"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "[de] Building Transformer Attention & Language Models from Scratch",
-      "caption": "[de] Authoritative breakdown of transformer attention matrices, self-attention projections, and sequence transduction by Stanford AI researchers."
+      "title": "Erstellen von Transformer-Aufmerksamkeits- und Sprachmodellen von Grund auf",
+      "caption": "Maßgebliche Aufschlüsselung von Transformer-Aufmerksamkeitsmatrizen, Selbstaufmerksamkeitsprojektionen und Sequenztransduktion durch Stanford-KI-Forscher."
     },
     {
       "type": "h2",
-      "text": "[de] 4. Architectural Evolutions: Multi-Query, Grouped-Query & Paged Attention"
+      "text": "4. Architekturentwicklungen: Multi-Query, Grouped-Query und Paged Attention"
     },
     {
       "type": "p",
-      "text": "[de] To bypass the severe memory saturation enforced by standard Multi-Head Attention (MHA), modern foundation architectures deploy structural alterations:"
+      "text": "Um die starke Speichersättigung zu umgehen, die durch Standard-Multi-Head Attention (MHA) erzwungen wird, setzen moderne Basisarchitekturen strukturelle Änderungen ein:"
     },
     {
       "type": "ol",
       "items": [
-        "[de] Multi-Query Attention (MQA): All attention query heads share a solitary key-value projection head, reducing KV cache memory bandwidth demands by a factor equivalent to the number of query heads (typically 32x to 64x).",
-        "[de] Grouped-Query Attention (GQA): Query heads are grouped into clusters sharing a key-value head (e.g., 8 query heads per KV pair), achieving a harmonious equilibrium between representation capacity and cache compression.",
-        "[de] PagedAttention & Virtual Memory Management: Modeled after classical OS page tables, dynamically allocating non-contiguous memory chunks prevents memory fragmentation and slashes GPU waste by over 80%."
+        "Multi-Query Attention (MQA): Alle Aufmerksamkeitsabfrageköpfe teilen sich einen einzigen Schlüsselwert-Projektionskopf, wodurch der Bandbreitenbedarf des KV-Cache-Speichers um einen Faktor reduziert wird, der der Anzahl der Abfrageköpfe entspricht (normalerweise 32x bis 64x).",
+        "Grouped-Query Attention (GQA): Abfrageköpfe werden in Clustern gruppiert, die sich einen Schlüsselwertkopf teilen (z. B. 8 Abfrageköpfe pro KV-Paar), wodurch ein harmonisches Gleichgewicht zwischen Darstellungskapazität und Cache-Komprimierung erreicht wird.",
+        "PagedAttention & Virtual Memory Management: Nach dem Vorbild klassischer Betriebssystemseitentabellen verhindert die dynamische Zuweisung nicht zusammenhängender Speicherblöcke eine Speicherfragmentierung und reduziert die GPU-Verschwendung um über 80 %."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 5. Synthesis and Empirical Takeaways"
+      "text": "5. Synthese und empirische Erkenntnisse"
     },
     {
       "type": "p",
-      "text": "[de] The engineering discipline governing modern neural inference has permanently shifted. The decisive competitive advantage in foundation model deployment is no longer raw parameter volume, but cache compression efficiency, sparse attention routing, and sub-millisecond kernel execution."
+      "text": "Die technische Disziplin, die die moderne neuronale Inferenz regelt, hat sich permanent verändert. Der entscheidende Wettbewerbsvorteil bei der Bereitstellung des Foundation-Modells ist nicht mehr das Rohparametervolumen, sondern die Effizienz der Cache-Komprimierung, das Sparse-Attention-Routing und die Kernel-Ausführung in weniger als einer Millisekunde."
     },
     {
       "type": "ul",
       "items": [
-        "[de] Softmax Scaling: The 1/sqrt(d_k) factor prevents gradient saturation across expansive projection dimensions.",
-        "[de] KV Cache Bottleneck: Autoregressive token generation is memory-bound; bandwidth saturation governs time-to-first-token and inter-token latency.",
-        "[de] Structural Efficiency: Grouped-Query Attention (GQA) combined with virtual memory paging (vLLM) represents the state-of-the-art production standard for sub-second serving."
+        "Softmax-Skalierung: Der Faktor 1/sqrt(d_k) verhindert eine Gradientensättigung über expansive Projektionsdimensionen.",
+        "KV-Cache-Engpass: Die autoregressive Token-Generierung ist speichergebunden; Die Bandbreitensättigung bestimmt die Zeit bis zum ersten Token und die Latenz zwischen Token.",
+        "Strukturelle Effizienz: Grouped-Query Attention (GQA) in Kombination mit Virtual Memory Paging (vLLM) stellt den hochmodernen Produktionsstandard für die Bereitstellung in Sekundenschnelle dar."
       ]
     }
   ],

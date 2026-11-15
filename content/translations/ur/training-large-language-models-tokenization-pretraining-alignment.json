@@ -1,7 +1,7 @@
 {
   "slug": "training-large-language-models-tokenization-pretraining-alignment",
-  "title": "[ur] Training LLMs from Scratch",
-  "excerpt": "[ur] A foundational machine learning engineering monograph detailing byte-pair encoding tokenization, autoregressive cross-entropy loss trajectories, 3D tensor parallelism, and RLHF alignment dynamics.",
+  "title": "سکریچ سے ایل ایل ایم کی تربیت",
+  "excerpt": "ایک بنیادی مشین لرننگ انجینئرنگ مونوگراف جس میں بائٹ پیئر انکوڈنگ ٹوکنائزیشن، آٹوریگریسو کراس اینٹروپی نقصان کی رفتار، 3D ٹینسر متوازی، اور RLHF الائنمنٹ ڈائنامکس کی تفصیل ہے۔",
   "date": "2026-11-15",
   "author": "Elena Rostova",
   "tags": [
@@ -13,23 +13,23 @@
     "engineering"
   ],
   "image": "/images/articles/llm-training-code.jpg",
-  "imageAlt": "[ur] High performance Python deep learning training loop code on dark IDE display",
+  "imageAlt": "ڈارک IDE ڈسپلے پر ہائی پرفارمنس پائتھن ڈیپ لرننگ ٹریننگ لوپ کوڈ",
   "body": [
     {
       "type": "p",
-      "text": "[ur] Building a frontier generative foundation model from first principles is an exercise in applied numerical optimization, distributed systems engineering, and statistical language modeling. At its core, a generative pretrained transformer does not understand semantics in a human sense; it estimates a high-dimensional joint probability distribution over discrete vocabulary tokens by minimizing autoregressive cross-entropy loss across trillions of training bytes."
+      "text": "پہلے اصولوں سے فرنٹیئر جنریٹو فاؤنڈیشن ماڈل بنانا لاگو عددی اصلاح، تقسیم شدہ نظام انجینئرنگ، اور شماریاتی زبان کی ماڈلنگ میں ایک مشق ہے۔ اس کے بنیادی طور پر، ایک تخلیقی پہلے سے تربیت یافتہ ٹرانسفارمر انسانی معنوں میں الفاظ کو نہیں سمجھتا ہے۔ یہ کھربوں ٹریننگ بائٹس میں آٹوریگریسو کراس اینٹروپی نقصان کو کم سے کم کرکے مجرد الفاظ کے ٹوکنز پر ایک اعلی جہتی مشترکہ امکانی تقسیم کا تخمینہ لگاتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] The lifecycle of an LLM divides cleanly into four sequential regimes: corpus curation and byte-pair encoding tokenization, self-supervised pretraining at petabyte scale, supervised fine-tuning (SFT) for instruction compliance, and reinforcement learning from human feedback (RLHF) to align model outputs with human intent."
+      "text": "ایک LLM کا لائف سائیکل صاف طور پر چار ترتیب وار نظاموں میں تقسیم ہوتا ہے: کارپس کیوریشن اور بائٹ پیئر انکوڈنگ ٹوکنائزیشن، پیٹا بائٹ اسکیل پر خود زیر نگرانی پہلے سے تربیت، ہدایات کی تعمیل کے لیے نگرانی شدہ فائن ٹیوننگ (SFT)، اور انسانی آراء کے ساتھ انسانی آراء کے ساتھ آر ایل ایف سے کمک سیکھنا۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Tokenization: Byte-Pair Encoding and Vocabulary Compression"
+      "text": "1. ٹوکنائزیشن: بائٹ پیئر انکوڈنگ اور ووکیبلری کمپریشن"
     },
     {
       "type": "p",
-      "text": "[ur] Raw natural language cannot be processed directly by linear matrix operations. It must first be discretized into integer token identifiers via Byte-Pair Encoding (BPE):"
+      "text": "خام قدرتی زبان پر براہ راست لکیری میٹرکس آپریشنز کے ذریعے کارروائی نہیں کی جا سکتی ہے۔ اسے سب سے پہلے بائٹ پیئر انکوڈنگ (BPE) کے ذریعے انٹیجر ٹوکن شناخت کنندگان میں الگ کیا جانا چاہیے:"
     },
     {
       "type": "code",
@@ -38,62 +38,62 @@
     },
     {
       "type": "p",
-      "text": "[ur] Targeting an optimal vocabulary size requires navigating an engineering trade-off: larger vocabularies compress sequence length and lower inference latency, but expand the memory footprint of the input embedding matrix and final output unembedding projection layer."
+      "text": "زیادہ سے زیادہ الفاظ کے سائز کو نشانہ بنانے کے لیے انجینئرنگ ٹریڈ آف نیویگیٹ کرنے کی ضرورت ہوتی ہے: بڑی ذخیرہ الفاظ ترتیب کی لمبائی اور کم قیاس میں تاخیر کو سکیڑتی ہیں، لیکن ان پٹ ایمبیڈنگ میٹرکس اور فائنل آؤٹ پٹ ان ایمبیڈنگ پروجیکشن لیئر کے میموری فوٹ پرنٹ کو بڑھاتی ہیں۔"
     },
     {
       "type": "quote",
-      "text": "[ur] Pretraining is the thermodynamic forge of foundation models. Over 99% of all compute, memory bandwidth, and electrical energy is consumed during the self-supervised pretraining phase.",
-      "cite": "[ur] Elena Rostova, Senior Fellow in Embodied AI & Neural Architectures"
+      "text": "پری ٹریننگ فاؤنڈیشن ماڈلز کا تھرموڈینامک فورج ہے۔ تمام کمپیوٹ، میموری بینڈوڈتھ، اور برقی توانائی کا 99% سے زیادہ خود زیر نگرانی پہلے سے تربیتی مرحلے کے دوران استعمال ہوتا ہے۔",
+      "cite": "ایلینا روسٹووا، ایمبوڈیڈ AI اور نیورل آرکیٹیکچرز میں سینئر فیلو"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Pretraining Dynamics and Distributed 3D Parallelism"
+      "text": "2. پری ٹریننگ ڈائنامکس اور ڈسٹری بیوٹڈ 3D متوازی"
     },
     {
       "type": "p",
-      "text": "[ur] Training a 70B parameter model across hundreds of gigabytes of GPU VRAM exceeds the capacity of any single accelerator chip. Modern clusters orchestrate 3D parallelism:"
+      "text": "سیکڑوں گیگا بائٹس کے GPU VRAM میں 70B پیرامیٹر ماڈل کی تربیت کسی بھی سنگل ایکسلر کی صلاحیت سے زیادہ ہے۔ جدید کلسٹرز 3D متوازی آرکیسٹریٹ کرتے ہیں:"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Tensor Parallelism (Megatron-LM): Partitions individual weight matrices (such as query, key, and feed-forward projections) across GPUs within the same NVLink domain.",
-        "[ur] Pipeline Parallelism: Slices transformer layers sequentially across distinct server nodes, passing hidden activation states forward and backward.",
-        "[ur] Data Parallelism with ZeRO-3: Shards optimizer states, gradients, and model parameters across the distributed cluster, eliminating redundant memory duplication.",
-        "[ur] FlashAttention-3 Integration: Eliminates materialization of quadratic N×N attention matrices in HBM by fusing softmax scaling and matrix multiplication directly into SRAM registers."
+        "Tensor Parallelism (Megatron-LM): ایک ہی NVLink ڈومین کے اندر اندر GPUs میں انفرادی وزن کے میٹرکس (جیسے سوال، کلید، اور فیڈ فارورڈ پروجیکشن) کو تقسیم کرتا ہے۔",
+        "پائپ لائن کی ہم آہنگی: ٹرانسفارمر کی تہوں کو الگ الگ سرور نوڈس میں ترتیب سے کاٹتا ہے، پوشیدہ ایکٹیویشن ریاستوں کو آگے اور پیچھے سے گزرتا ہے۔",
+        "ZeRO-3 کے ساتھ ڈیٹا کی ہم آہنگی: تقسیم شدہ کلسٹر میں شارڈز آپٹیمائزر اسٹیٹس، گریڈیئنٹس، اور ماڈل پیرامیٹرز، بے کار میموری ڈپلیکیشن کو ختم کرتے ہوئے۔",
+        "FlashAttention-3 انٹیگریشن: سافٹ میکس اسکیلنگ اور میٹرکس ضرب کو براہ راست SRAM رجسٹروں میں فیوز کرکے HBM میں چوکور N×N توجہ کے میٹرکس کو ختم کرتا ہے۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: Building GPT and Transformer Models from Scratch"
+      "text": "3. ویڈیو ماسٹر کلاس: شروع سے جی پی ٹی اور ٹرانسفارمر ماڈلز بنانا"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "[ur] Building and Training Generative Pretrained Transformers from Scratch",
-      "caption": "[ur] Andrej Karpathy's masterclass on the mathematical mechanics of building, compiling, and training autoregressive transformer language models from code."
+      "title": "شروع سے تعمیر اور تربیت جنریٹو پری ٹرینڈ ٹرانسفارمرز",
+      "caption": "کوڈ سے آٹوریگریسو ٹرانسفارمر لینگویج ماڈلز کی تعمیر، تالیف اور تربیت کے ریاضیاتی میکانکس پر اندریج کارپاتھی کی ماسٹر کلاس۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Alignment: Supervised Fine-Tuning and Direct Preference Optimization (DPO)"
+      "text": "4. الائنمنٹ: زیر نگرانی فائن ٹیوننگ اور براہ راست ترجیحی اصلاح (DPO)"
     },
     {
       "type": "p",
-      "text": "[ur] A raw pretrained base model is merely an uninhibited document completer. To convert it into an effective assistant, engineers fine-tune the model on curated multi-turn conversational transcripts using cross-entropy loss with masked input prompts."
+      "text": "ایک خام پہلے سے تربیت یافتہ بیس ماڈل محض ایک غیر روکا ہوا دستاویز مکمل کرنے والا ہے۔ اسے ایک موثر اسسٹنٹ میں تبدیل کرنے کے لیے، انجینئرز ماسکڈ ان پٹ پرامپٹس کے ساتھ کراس اینٹروپی نقصان کا استعمال کرتے ہوئے کیوریٹڈ ملٹی ٹرن بات چیت کی نقلوں پر ماڈل کو ٹھیک بناتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] Following SFT, preference alignment steers the model toward helpful, truthful, and harmless completions. While legacy pipelines relied on training separate reward models using PPO reinforcement learning, modern systems increasingly deploy Direct Preference Optimization (DPO), which derives an exact closed-form objective to optimize the policy model directly on paired human preference rankings."
+      "text": "SFT کے بعد، ترجیحی صف بندی ماڈل کو مددگار، سچائی اور بے ضرر تکمیلات کی طرف لے جاتی ہے۔ جبکہ میراثی پائپ لائنز PPO کمک سیکھنے کا استعمال کرتے ہوئے علیحدہ انعامی ماڈلز کی تربیت پر انحصار کرتی ہیں، جدید نظام تیزی سے براہ راست ترجیحی اصلاح (DPO) کو متعین کرتے ہیں، جو پالیسی ماڈل کو براہ راست جوڑی کی انسانی ترجیحی درجہ بندی پر بہتر بنانے کے لیے ایک بالکل بند شکل کا مقصد حاصل کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Machine Learning Systems Takeaways"
+      "text": "5. مشین لرننگ سسٹمز ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Data Quality Dominance: High-quality deduplicated synthetic reasoning datasets outperform raw scraped web text by an order of magnitude in token efficiency.",
-        "[ur] Precision Formats: Utilize FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
-        "[ur] Learning Rate Annealing: Employ cosine decay schedules with warm-up periods to prevent gradient divergence during initial optimization epochs."
+        "ڈیٹا کوالٹی ڈومیننس: اعلیٰ معیار کے ڈپلیکیٹڈ مصنوعی استدلال والے ڈیٹاسیٹس خام سکریپڈ ویب ٹیکسٹ کو ٹوکن کی کارکردگی میں وسعت کے حکم سے بہتر کارکردگی کا مظاہرہ کرتے ہیں۔",
+        "صحت سے متعلق فارمیٹس: FP8 اور BF16 مخلوط صحت سے متعلق تربیتی معمولات کو متحرک نقصان کی پیمائش کے ساتھ استعمال کریں تاکہ انڈر فلو کو روکتے ہوئے ٹینسر تھرو پٹ کو ڈبل کریں۔",
+        "سیکھنے کی شرح اینیلنگ: ابتدائی اصلاحی دور کے دوران تدریجی انحراف کو روکنے کے لیے وارم اپ پیریڈز کے ساتھ کوزائن ڈیکی شیڈولز کا استعمال کریں۔"
       ]
     }
   ],

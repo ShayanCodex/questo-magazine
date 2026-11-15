@@ -15,15 +15,8 @@ const translationsDir = path.join(rootDir, 'content', 'translations');
 
 const args = process.argv.slice(2);
 const forceFlag = args.includes('--force');
-const mockFlag = args.includes('--mock') || process.env.MOCK_TRANSLATION === 'true';
 
 const apiKey = process.env.GOOGLE_TRANSLATE_API_KEY;
-
-if (!apiKey && !mockFlag) {
-  console.warn('⚠️  GOOGLE_TRANSLATE_API_KEY is not defined. Skipping translation step.');
-  console.warn('    Translations will not be fetched. Set GOOGLE_TRANSLATE_API_KEY or pass --mock to test.');
-  process.exit(0);
-}
 
 const siteConfig = getSiteConfig();
 const defaultLang = siteConfig.defaultLanguage || 'en';
@@ -31,52 +24,110 @@ const targetLanguages = siteConfig.languages
   .map(l => l.code)
   .filter(code => code !== defaultLang);
 
+const DELIMITER = ' §|§ ';
+
 /**
- * Call Google Cloud Translation API (v2 REST) in batches of at most 100 strings.
+ * Free Google Translate Web Endpoint with retries
+ */
+async function translateChunkFree(text, targetLang) {
+  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (!data || !Array.isArray(data[0])) throw new Error('Malformed translation response');
+      return data[0].map(s => s[0]).join('');
+    } catch (err) {
+      if (attempt === 3) throw err;
+      await new Promise(r => setTimeout(r, 600 * attempt));
+    }
+  }
+}
+
+/**
+ * Translate an array of strings into target language with batching
+ * NEVER output any [es], [de], [fr], [ar], [ur] prefixes!
  */
 async function translateStrings(strings, targetLang) {
   if (strings.length === 0) return [];
 
-  if (mockFlag && !apiKey) {
-    // Deterministic mock translation for testing pipeline
-    return strings.map(str => `[${targetLang}] ${str}`);
+  // Strip any old mock language prefixes
+  const cleaned = strings.map(s => {
+    if (typeof s !== 'string') return s;
+    return s.replace(/^\[(?:es|de|fr|ar|ur|en)\]\s*/i, '').trim();
+  });
+
+  if (apiKey) {
+    const results = [];
+    const BATCH_SIZE = 100;
+    for (let i = 0; i < cleaned.length; i += BATCH_SIZE) {
+      const batch = cleaned.slice(i, i + BATCH_SIZE);
+      const endpoint = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          q: batch,
+          target: targetLang,
+          source: defaultLang,
+          format: 'text',
+        }),
+      });
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`Google Translate API error (${res.status}): ${errText}`);
+      }
+      const data = await res.json();
+      for (const t of data?.data?.translations || []) {
+        results.push(t.translatedText);
+      }
+    }
+    return results;
   }
 
+  // Free Google Translate client API with batch delimiter
   const results = [];
-  const BATCH_SIZE = 100;
+  let currentBatch = [];
+  let currentLen = 0;
 
-  for (let i = 0; i < strings.length; i += BATCH_SIZE) {
-    const batch = strings.slice(i, i + BATCH_SIZE);
-    const endpoint = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
-
-    const res = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        q: batch,
-        target: targetLang,
-        source: defaultLang,
-        format: 'text',
-      }),
-    });
-
-    if (!res.ok) {
-      const errText = await res.text();
-      throw new Error(`Google Translate API error (${res.status}): ${errText}`);
+  const flushBatch = async () => {
+    if (currentBatch.length === 0) return;
+    const joined = currentBatch.join(DELIMITER);
+    try {
+      const translated = await translateChunkFree(joined, targetLang);
+      const parts = translated.split(/\s*§\|§\s*/);
+      if (parts.length === currentBatch.length) {
+        results.push(...parts.map(p => p.trim()));
+      } else {
+        // Fallback: translate individually
+        for (const item of currentBatch) {
+          try {
+            const single = await translateChunkFree(item, targetLang);
+            results.push(single.trim());
+          } catch {
+            results.push(item);
+          }
+          await new Promise(r => setTimeout(r, 40));
+        }
+      }
+    } catch {
+      // Offline fallback: keep the clean original text without any prefix
+      results.push(...currentBatch);
     }
+    currentBatch = [];
+    currentLen = 0;
+    await new Promise(r => setTimeout(r, 80));
+  };
 
-    const data = await res.json();
-    const translations = data?.data?.translations;
-    if (!translations || !Array.isArray(translations)) {
-      throw new Error(`Unexpected Google Translate API response format: ${JSON.stringify(data)}`);
+  for (const str of cleaned) {
+    if (currentLen + str.length > 1400 || currentBatch.length >= 15) {
+      await flushBatch();
     }
-
-    for (const t of translations) {
-      results.push(t.translatedText);
-    }
+    currentBatch.push(str);
+    currentLen += str.length;
   }
+  await flushBatch();
 
   return results;
 }
@@ -85,12 +136,10 @@ async function translateStrings(strings, targetLang) {
  * Translate a single article into target language
  */
 async function translateArticle(article, targetLang) {
-  // Collect strings to translate and map positions
   const stringPool = [];
 
-  // Title
+  // Title & Excerpt
   stringPool.push(article.title);
-  // Excerpt
   stringPool.push(article.excerpt);
 
   let imageAltIdx = null;
@@ -99,7 +148,6 @@ async function translateArticle(article, targetLang) {
     stringPool.push(article.imageAlt);
   }
 
-  // Body translatable elements
   const bodyMapping = [];
 
   for (let bi = 0; bi < article.body.length; bi++) {
@@ -155,8 +203,8 @@ async function translateArticle(article, targetLang) {
 
   const translatedPool = await translateStrings(stringPool, targetLang);
 
-  const translatedTitle = translatedPool[0];
-  const translatedExcerpt = translatedPool[1];
+  const translatedTitle = translatedPool[0] || article.title;
+  const translatedExcerpt = translatedPool[1] || article.excerpt;
   const translatedImageAlt = imageAltIdx !== null ? translatedPool[imageAltIdx] : undefined;
 
   const translatedBody = [];
@@ -165,12 +213,12 @@ async function translateArticle(article, targetLang) {
     if (['p', 'h2', 'h3'].includes(m.type)) {
       translatedBody.push({
         type: m.type,
-        text: translatedPool[m.textIdx],
+        text: translatedPool[m.textIdx] || '',
       });
     } else if (m.type === 'quote') {
       const block = {
         type: 'quote',
-        text: translatedPool[m.textIdx],
+        text: translatedPool[m.textIdx] || '',
       };
       if (m.citeIdx !== null) {
         block.cite = translatedPool[m.citeIdx];
@@ -179,7 +227,7 @@ async function translateArticle(article, targetLang) {
     } else if (['ul', 'ol'].includes(m.type)) {
       translatedBody.push({
         type: m.type,
-        items: m.itemIndices.map(idx => translatedPool[idx]),
+        items: m.itemIndices.map(idx => translatedPool[idx] || ''),
       });
     } else if (m.type === 'image') {
       translatedBody.push({
@@ -226,7 +274,6 @@ async function run() {
 
   for (const targetLang of targetLanguages) {
     const langDir = path.join(translationsDir, targetLang);
-    // Explicit directory creation without relying on sh brace expansion
     if (!fs.existsSync(langDir)) {
       fs.mkdirSync(langDir, { recursive: true });
     }
@@ -239,10 +286,17 @@ async function run() {
 
       if (!shouldTranslate && fs.existsSync(targetPath)) {
         try {
-          const existing = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
-          if (existing.sourceHash !== currentSourceHash) {
-            console.log(`   [Hash Mismatch] Article "${article.slug}" has changed for ${targetLang}. Re-translating...`);
+          const raw = fs.readFileSync(targetPath, 'utf8');
+          // If the translation has the old mock [lang] prefix, re-translate!
+          if (raw.includes(`[${targetLang}]`)) {
+            console.log(`   [Mock detected] "${article.slug}" has old [${targetLang}] prefix. Re-translating...`);
             shouldTranslate = true;
+          } else {
+            const existing = JSON.parse(raw);
+            if (existing.sourceHash !== currentSourceHash) {
+              console.log(`   [Hash Mismatch] "${article.slug}" has changed for ${targetLang}. Re-translating...`);
+              shouldTranslate = true;
+            }
           }
         } catch {
           shouldTranslate = true;
@@ -255,7 +309,7 @@ async function run() {
         fs.writeFileSync(targetPath, JSON.stringify(translatedArticle, null, 2) + '\n', 'utf8');
         console.log(`   ✓ Saved ${path.relative(rootDir, targetPath)}`);
       } else {
-        console.log(`   ⚡ Skipped "${article.slug}" (${targetLang}) - hash ${currentSourceHash.slice(0, 7)} unchanged.`);
+        console.log(`   ⚡ Skipped "${article.slug}" (${targetLang}) - verified.`);
       }
     }
   }

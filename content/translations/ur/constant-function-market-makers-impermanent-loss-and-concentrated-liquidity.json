@@ -1,7 +1,7 @@
 {
   "slug": "constant-function-market-makers-impermanent-loss-and-concentrated-liquidity",
-  "title": "[ur] Concentrated Liquidity in Market Makers",
-  "excerpt": "[ur] A financial cryptography monograph on Uniswap v3 virtual reserve invariants, Loss-Versus-Rebalancing (LVR) arbitrage mechanics, and liquidity density optimization.",
+  "title": "مارکیٹ بنانے والوں میں مرتکز لیکویڈیٹی",
+  "excerpt": "Uniswap v3 ورچوئل ریزرو انویریئنٹس، Loss-Versus-Rebalance (LVR) ثالثی میکانکس، اور لیکویڈیٹی ڈینسٹی آپٹیمائزیشن پر ایک فنانشل کرپٹوگرافی مونوگراف۔",
   "date": "2026-11-15",
   "author": "Claire Dupont",
   "tags": [
@@ -13,23 +13,23 @@
     "arbitrage"
   ],
   "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Algorithmic financial telemetry displaying automated market maker liquidity curves and trade execution",
+  "imageAlt": "الگورتھمک مالیاتی ٹیلی میٹری خودکار مارکیٹ میکر لیکویڈیٹی منحنی خطوط اور تجارتی عمل کو ظاہر کرتی ہے",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The invention of the Automated Market Maker (AMM) represents one of the most radical structural innovations in financial market microstructures. In traditional centralized finance, market making relies on centralized limit order books (CLOBs) managed by high-frequency market-making firms who continuously post bids and asks. In peer-to-peer decentralized blockchains where block latency and gas costs render high-frequency order cancellation prohibitively expensive, deterministic mathematical formulas—Constant Function Market Makers (CFMMs)—replace order books with passive, algorithmic liquidity pools."
+      "text": "آٹومیٹڈ مارکیٹ میکر (اے ایم ایم) کی ایجاد مالیاتی مارکیٹ کے مائیکرو اسٹرکچرز میں سب سے بنیادی ساختی اختراعات میں سے ایک کی نمائندگی کرتی ہے۔ روایتی سنٹرلائزڈ فنانس میں، مارکیٹ سازی سنٹرلائزڈ لمیٹ آرڈر بک (CLOBs) پر انحصار کرتی ہے جو اعلی تعدد مارکیٹ بنانے والی فرموں کے زیر انتظام ہیں جو مسلسل بولیاں پوسٹ کرتی ہیں اور پوچھتی ہیں۔ پیئر ٹو پیئر وکندریقرت والے بلاک چینز میں جہاں بلاک لیٹینسی اور گیس کی قیمتیں اعلی تعدد آرڈر کی منسوخی کو ممنوعہ طور پر مہنگی بناتی ہیں، ڈیٹرمنسٹک ریاضیاتی فارمولے — کانسٹنٹ فنکشن مارکیٹ میکرز (CFMMs) — آرڈر بک کو غیر فعال، الگورتھمک لیکویڈیٹی پولز سے بدل دیتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] While the foundational constant-product model popularized by Uniswap v2 ($x \\cdot y = k$) delivered bulletproof robustness, it suffered from catastrophic capital inefficiency: capital was distributed uniformly across the entire price spectrum from zero to infinity, meaning less than 1% of pooled capital was active at current market prices. The transition to concentrated liquidity in Uniswap v3 resolved this constraint, transforming liquidity provision from passive holding into active geometric portfolio management."
+      "text": "جب کہ Uniswap v2 ($x \\cdot y = k$) کے ذریعے مقبول بنیادی مستقل پروڈکٹ ماڈل نے بلٹ پروف مضبوطی فراہم کی، یہ تباہ کن سرمائے کی نا اہلی سے دوچار ہوا: سرمائے کو پورے پرائس سپیکٹرم میں صفر سے لامحدود تک یکساں طور پر تقسیم کیا گیا، یعنی موجودہ مارکیٹ کی قیمت پر جمع شدہ سرمایہ کا 1% سے بھی کم فعال تھا۔ Uniswap v3 میں مرتکز لیکویڈیٹی میں منتقلی نے اس رکاوٹ کو حل کیا، لیکویڈیٹی کی فراہمی کو غیر فعال ہولڈنگ سے فعال جیومیٹرک پورٹ فولیو مینجمنٹ میں تبدیل کردیا۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Concentrated Liquidity Geometry & Virtual Reserves"
+      "text": "1. مرتکز لیکویڈیٹی جیومیٹری اور ورچوئل ریزرو"
     },
     {
       "type": "p",
-      "text": "[ur] In concentrated liquidity AMMs, liquidity providers (LPs) do not allocate capital across all prices. Instead, they concentrate their tokens within a bounded price interval $[p_a, p_b]$. Inside this range, the pool simulates a constant product curve with magnified \"virtual reserves\":"
+      "text": "مرتکز لیکویڈیٹی AMMs میں، لیکویڈیٹی فراہم کرنے والے (LPs) تمام قیمتوں میں سرمایہ مختص نہیں کرتے ہیں۔ اس کے بجائے، وہ اپنے ٹوکنز کو ایک پابند قیمت وقفہ $[p_a, p_b]$ کے اندر مرکوز کرتے ہیں۔ اس رینج کے اندر، پول بڑھے ہوئے \"ورچوئل ریزرو\" کے ساتھ ایک مستقل پروڈکٹ وکر کی تقلید کرتا ہے:"
     },
     {
       "type": "code",
@@ -38,50 +38,50 @@
     },
     {
       "type": "p",
-      "text": "[ur] By confining capital to a narrow price band around the spot price, an LP can achieve up to 4,000 times the capital efficiency of an unconstrained v2 pool. The identical trading volume produces exponentially greater fee generation per dollar deposited, drastically narrowing bid-ask spreads for institutional traders."
+      "text": "سرمائے کو اسپاٹ پرائس کے ارد گرد ایک تنگ قیمت بینڈ تک محدود کرکے، ایک LP غیر محدود v2 پول کی سرمایہ کاری کی کارکردگی سے 4,000 گنا تک حاصل کر سکتا ہے۔ یکساں تجارتی حجم فی ڈالر جمع کرائے جانے والے فیسوں میں تیزی سے زیادہ اضافہ کرتا ہے، جس سے ادارہ جاتی تاجروں کے لیے بولی مانگنے کے اسپریڈ کو کافی حد تک کم کیا جاتا ہے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] Concentrated liquidity converts static liquidity pools into synthetic option payoffs: an in-range LP position behaves identically to a short straddle harvesting fee volatility.",
-      "cite": "[ur] Claire Dupont, Macro & Private Equity Fellow"
+      "text": "مرتکز لیکویڈیٹی جامد لیکویڈیٹی پولز کو مصنوعی آپشن کی ادائیگیوں میں تبدیل کرتی ہے: ایک اندرون رینج ایل پی پوزیشن مختصر اسٹریڈل ہارویسٹنگ فیس کے اتار چڑھاؤ کی طرح برتاؤ کرتی ہے۔",
+      "cite": "کلیئر ڈوپونٹ، میکرو اور پرائیویٹ ایکویٹی فیلو"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Deconstructing Impermanent Loss & The LVR Framework"
+      "text": "2. غیر مستقل نقصان اور LVR فریم ورک کو ختم کرنا"
     },
     {
       "type": "p",
-      "text": "[ur] The central economic risk assumed by liquidity providers is Impermanent Loss (IL)—more accurately designated as divergence loss. Whenever the external market price moves away from the initial deposit ratio, the AMM deterministic pricing curve forces the LP to sell the appreciating asset and buy the depreciating asset."
+      "text": "لیکویڈیٹی فراہم کنندگان کے ذریعہ فرض کیا جانے والا مرکزی اقتصادی خطرہ غیر مستقل نقصان (IL) ہے — زیادہ درست طریقے سے ڈائیورجنس نقصان کے طور پر نامزد کیا گیا ہے۔ جب بھی بیرونی مارکیٹ کی قیمت ابتدائی ڈپازٹ ریشو سے ہٹ جاتی ہے، AMM ڈیٹرمنسٹک پرائسنگ وکر ایل پی کو قابل قدر اثاثہ فروخت کرنے اور گراوٹ والا اثاثہ خریدنے پر مجبور کرتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] Recent academic market microstructure research (Milionis, Moallemi, Roughgarden) formalizes this cost as Loss-Versus-Rebalancing (LVR). Unlike traditional impermanent loss, which theoretically zeroes out if price returns to its starting point, LVR captures the persistent, non-negative economic rent extracted by latency arbitrageurs who trade against stale AMM quotes across external centralized exchanges:"
+      "text": "حالیہ تعلیمی مارکیٹ مائیکرو اسٹرکچر ریسرچ (Milionis, Moallemi, Roughgarden) اس لاگت کو نقصان کے مقابلے میں دوبارہ توازن (LVR) کے طور پر باقاعدہ بناتی ہے۔ روایتی غیر مستقل نقصان کے برعکس، جو کہ نظریاتی طور پر صفر ہو جاتا ہے اگر قیمت اپنے نقطہ آغاز پر واپس آجاتی ہے، LVR لیٹنسی ثالثوں کے ذریعے نکالے جانے والے مستقل، غیر منفی اقتصادی کرایے کو حاصل کرتا ہے جو بیرونی سنٹرلائزڈ ایکسچینجز میں باسی AMM کوٹس کے خلاف تجارت کرتے ہیں:"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs can rebalance.",
-        "[ur] Range Out-of-Bounds Risk: When spot price breaks outside $[p_a, p_b]$, the LP is 100% converted into the losing asset, terminating all fee accrual until rebalanced.",
-        "[ur] Fee-to-Volatility Break-Even: For an LP position to remain net-profitable, fee yields must exceed the variance drag dictated by asset return volatility ($\\frac{1}{8}\\sigma^2$)."
+        "غیر متناسب ثالثی مارکیٹ کے بہاؤ کو پکچر آف آربٹ آرڈر کی اجازت دیتا ہے۔ اس سے پہلے کہ غیر فعال LPs دوبارہ توازن پیدا کر سکیں۔",
+        "حد سے باہر کا خطرہ: جب اسپاٹ پرائس $[p_a, p_b]$ سے باہر ٹوٹ جاتی ہے، تو LP 100% کھوئے ہوئے اثاثے میں تبدیل ہو جاتا ہے، جب تک کہ توازن قائم نہ ہو جائے تمام فیس جمع ختم کر دیتا ہے۔",
+        "فیس سے اتار چڑھاؤ کا وقفہ: LP پوزیشن کے خالص منافع بخش رہنے کے لیے، فیس کی پیداوار اثاثوں کی واپسی کے اتار چڑھاؤ ($\\frac{1}{8}\\sigma^2$) کے ذریعے متغیر ڈریگ سے زیادہ ہونی چاہیے۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Technical Masterclass: Concentrated Liquidity Mathematics"
+      "text": "3. تکنیکی ماسٹر کلاس: مرتکز لیکویڈیٹی میتھمیٹکس"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/cizLhxSKrAc",
-      "title": "[ur] Automated Market Makers & Concentrated Liquidity Mechanics",
-      "caption": "[ur] Rigorous visual walkthrough of virtual reserves, tick boundaries, impermanent loss curves, and capital efficiency gains."
+      "title": "خودکار مارکیٹ بنانے والے اور مرتکز لیکویڈیٹی میکانکس",
+      "caption": "ورچوئل ریزرو، ٹک باؤنڈریز، غیر مستقل نقصان کے منحنی خطوط، اور سرمائے کی کارکردگی کے فوائد کا سخت بصری واک تھرو۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Tick Discretization & Dynamic Fee Tiers"
+      "text": "4. ٹک ڈسکریٹائزیشن اور ڈائنامک فیس ٹائرز"
     },
     {
       "type": "p",
-      "text": "[ur] To avoid floating-point imprecision in on-chain virtual machines, prices are discretized into logarithmic ticks indexed by integers $i$:"
+      "text": "آن-چین ورچوئل مشینوں میں فلوٹنگ پوائنٹ کی خرابی سے بچنے کے لیے، قیمتوں کو انٹیجرز $i$ کے ذریعے انڈیکس کردہ لاگریتھمک ٹک میں الگ کیا جاتا ہے:"
     },
     {
       "type": "code",
@@ -90,18 +90,18 @@
     },
     {
       "type": "p",
-      "text": "[ur] When a large market order consumes all available liquidity inside a tick, the protocol updates the global price, crosses the tick boundary, and activates the next discrete liquidity vector with minimal gas overhead."
+      "text": "جب ایک بڑا مارکیٹ آرڈر ٹک کے اندر تمام دستیاب لیکویڈیٹی کو استعمال کرتا ہے، تو قیمتوں کو کراس کراس کرنے کے لیے عالمی قیمت کو اپ ڈیٹ کیا جاتا ہے۔ کم سے کم گیس اوور ہیڈ کے ساتھ اگلے مجرد لیکویڈیٹی ویکٹر کو چالو کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Strategic Takeaways for Quantitative Liquidity Providers"
+      "text": "5. مقداری لیکویڈیٹی فراہم کرنے والوں کے لیے اسٹریٹجک ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) can safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
-        "[ur] Dynamic Hedging Eliminates Delta: Sophisticated market makers offset directional gamma risk by shorting underlying perpetual futures on centralized venues while capturing LP fees on-chain.",
-        "[ur] Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers can rapidly erode accumulated LP fees; deploy automated liquidity management vaults."
+        "تنگ بینڈز میں متعلقہ اثاثہ جات ایکسل: Stablecoin جوڑے (مثال کے طور پر USDT/USDC) ±0.1% بینڈ کے اندر لیکویڈیٹی کو محفوظ طریقے سے مرتکز کر سکتے ہیں، جس سے فلکیاتی APYs پیدا ہوتے ہیں۔",
+        "ڈائنامک ہیجنگ ڈیلٹا کو ختم کرتی ہے: نفیس مارکیٹ بنانے والے LP فیس آن چین کیپچر کرتے ہوئے مرکزی جگہوں پر بنیادی دائمی مستقبل کو مختصر کرکے دشاتمک گاما کے خطرے کو پورا کرتے ہیں۔",
+        "گیس ایمورٹائزیشن کا انتظام کریں: زیادہ فیس والے سیٹلمنٹ لیئرز پر بار بار ٹک ری بیلنسنگ جمع شدہ ایل پی فیس کو تیزی سے ختم کر سکتی ہے۔ خودکار لیکویڈیٹی مینجمنٹ والٹس تعینات کریں۔"
       ]
     }
   ],

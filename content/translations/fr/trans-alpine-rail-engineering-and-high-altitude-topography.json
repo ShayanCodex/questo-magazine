@@ -1,7 +1,7 @@
 {
   "slug": "trans-alpine-rail-engineering-and-high-altitude-topography",
-  "title": "[fr] Trans-Alpine Rail Engineering",
-  "excerpt": "[fr] A geographical and structural monograph on Swiss helical mountain railways, masonry viaduct durability, Gotthard base tunnel hydraulics, and ecological transit corridors.",
+  "title": "Ingénierie ferroviaire transalpine",
+  "excerpt": "Une monographie géographique et structurelle sur les chemins de fer de montagne suisses, la durabilité des viaducs en maçonnerie, l'hydraulique du tunnel de base du Saint-Gothard et les couloirs de transit écologiques.",
   "date": "2026-11-15",
   "author": "Mateo Silva",
   "tags": [
@@ -13,90 +13,90 @@
     "sustainability"
   ],
   "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Alpine mountain pass with pristine glacial peaks and winding high-altitude infrastructure",
+  "imageAlt": "Col alpin avec des sommets glaciaires immaculés et des infrastructures sinueuses de haute altitude",
   "body": [
     {
       "type": "p",
-      "text": "[fr] For millennia, the European Alps formed an impenetrable geographical barrier dividing northern commercial hubs from Mediterranean maritime ports. While pack-mule tracks over the Saint Gotthard, Simplon, and Bernina passes enabled seasonal transit, winter snowdrifts and catastrophic avalanches isolated entire cantons for months. The industrial conquest of the Alps required an unprecedented synthesis of civil engineering, rock mechanics, and topographic railway design."
+      "text": "Pendant des millénaires, les Alpes européennes ont formé une barrière géographique impénétrable séparant les pôles commerciaux du nord des ports maritimes de la Méditerranée. Alors que les sentiers muletiers sur les cols du Saint-Gothard, du Simplon et de la Bernina permettaient le transit saisonnier, des congères hivernales et des avalanches catastrophiques isolaient des cantons entiers pendant des mois. La conquête industrielle des Alpes a nécessité une synthèse sans précédent de génie civil, de mécanique des roches et de conception topographique des chemins de fer."
     },
     {
       "type": "p",
-      "text": "[fr] Unlike automotive highways that carve wide, ecologically destructive corridors through fragile sub-alpine ecosystems, 19th and early 20th-century Swiss rail engineers pioneered a symbiotic philosophy: constructing railways that conformed strictly to the geological contours of the mountains, utilizing local stone masonry, helical loop tunnels, and electric locomotive regeneration."
+      "text": "Contrairement aux autoroutes automobiles qui tracent de larges couloirs écologiquement destructeurs à travers des écosystèmes subalpins fragiles, les ingénieurs ferroviaires suisses du XIXe et du début du XXe siècle ont été les pionniers d'une philosophie symbiotique : construire des voies ferrées strictement conformes aux contours géologiques des montagnes, en utilisant la maçonnerie en pierre locale, les tunnels à boucles hélicoïdales et la régénération des locomotives électriques."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. The Geometry of the Helical Spiral Tunnel"
+      "text": "1. La géométrie du tunnel hélicoïdal en spirale"
     },
     {
       "type": "p",
-      "text": "[fr] Standard standard-gauge locomotives operating on steel rails rely strictly on adhesion friction between wheel and rail. On non-rack railways, maximum permissible continuous gradients cannot exceed 2.7% to 4.0% without wheels slipping or catastrophic brake failure during descents."
+      "text": "Les locomotives standard à voie standard fonctionnant sur des rails en acier dépendent strictement de la friction d'adhérence entre la roue et le rail. Sur les chemins de fer sans crémaillère, les pentes continues maximales autorisées ne peuvent pas dépasser 2,7 % à 4,0 % sans patinage des roues ou défaillance catastrophique des freins pendant les descentes."
     },
     {
       "type": "p",
-      "text": "[fr] To ascend steep glacial valleys like the Albula or Gotthard where mountainsides rise hundreds of vertical meters over short linear distances, 19th-century engineers invented the helical spiral tunnel. The track enters the mountain, executes a 360-degree ascending loop within the solid granite interior, and emerges directly above the original entrance portal, gaining vertical altitude while preserving a manageable grade:"
+      "text": "Pour gravir des vallées glaciaires abruptes comme l'Albula ou le Saint-Gothard, où les flancs des montagnes s'élèvent sur des centaines de mètres de dénivelé sur de courtes distances linéaires, les ingénieurs du XIXe siècle ont inventé le tunnel en spirale hélicoïdale. La piste pénètre dans la montagne, exécute une boucle ascendante de 360 ​​degrés dans l'intérieur en granit solide et émerge directement au-dessus du portail d'entrée d'origine, gagnant de l'altitude verticale tout en préservant une pente gérable :"
     },
     {
       "type": "quote",
-      "text": "[fr] A helical tunnel does not conquer the mountain by sheer force; it dances with the mountain's internal geology to gain altitude within the rock itself.",
-      "cite": "[fr] Mateo Silva, Expedition Fellow & Architecture Critic"
+      "text": "Un tunnel hélicoïdal ne conquiert pas la montagne par la force ; il danse avec la géologie interne de la montagne pour gagner de l'altitude au sein même de la roche.",
+      "cite": "Mateo Silva, chercheur en expédition et critique en architecture"
     },
     {
       "type": "p",
-      "text": "[fr] At the Albula railway, trains navigate three helical loops and two curved tunnels within an eleven-kilometer valley segment, transforming an insurmountable cliff face into a smooth, electrified climbing path without requiring rack teeth or cable funiculars."
+      "text": "Au chemin de fer de l'Albula, les trains parcourent trois boucles hélicoïdales et deux tunnels courbes dans un segment de vallée de onze kilomètres, transformant une falaise insurmontable en un chemin d'escalade lisse et électrifié sans nécessiter de dents à crémaillère ou de funiculaires à câble."
     },
     {
       "type": "h2",
-      "text": "[fr] 2. Masonry Viaducts: Landwasser and Brusio Spirals"
+      "text": "2. Viaducs en maçonnerie : Spirales de Landwasser et Brusio"
     },
     {
       "type": "p",
-      "text": "[fr] Unlike modern highway overpasses constructed from reinforced concrete that degrade under aggressive freeze-thaw cycles and salt exposure, historic alpine railways relied on dry-cut limestone and dolomite masonry."
+      "text": "Contrairement aux viaducs routiers modernes construits en béton armé qui se dégradent sous l'effet des cycles agressifs de gel-dégel et de l'exposition au sel, les chemins de fer alpins historiques reposaient sur une maçonnerie en calcaire et en dolomite taillée à sec."
     },
     {
       "type": "p",
-      "text": "[fr] The iconic Landwasser Viaduct spans 136 meters across a steep gorge at a height of 65 meters on six soaring masonry pillars. Curving on a 100-meter radius, the tracks lead directly into the sheer vertical cliff of the Landwasser Tunnel without requiring bridge abutment platforms. Over a century after its completion in 1902, the structure remains in daily high-frequency operational service, demonstrating the enduring durability of natural stone engineering."
+      "text": "L'emblématique viaduc de Landwasser s'étend sur 136 mètres à travers une gorge abrupte à une hauteur de 65 mètres sur six piliers en maçonnerie vertigineux. Courbées sur un rayon de 100 mètres, les voies mènent directement à la falaise verticale du tunnel de Landwasser sans nécessiter de plates-formes de culées de pont. Plus d'un siècle après son achèvement en 1902, la structure reste en service opérationnel quotidien à haute fréquence, démontrant la durabilité durable de l'ingénierie en pierre naturelle."
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Brusio Open-Air Spiral Viaduct: A nine-arch stone viaduct that loops 360 degrees on the open valley floor, regulating the steep 7% gradient of the Bernina Railway without subterranean blasting.",
-        "[fr] Albula and Bernina UNESCO Heritage: Recognized as one of only three railway lines worldwide designated as World Heritage sites for outstanding technological integration into natural landscapes.",
-        "[fr] Regenerative Braking Grids: Descending alpine trains convert gravitational kinetic energy into electrical power via dynamic motors, feeding electricity back into the overhead catenary to power ascending trains."
+        "Viaduc en spirale à ciel ouvert de Brusio : un viaduc en pierre à neuf arches qui fait une boucle à 360 degrés au fond de la vallée, régulant la forte pente de 7 % du chemin de fer de la Bernina sans dynamitage souterrain.",
+        "Albula et Bernina Patrimoine de l'UNESCO : Reconnue comme l'une des trois seules lignes ferroviaires au monde désignées comme sites du patrimoine mondial pour leur intégration technologique exceptionnelle dans les paysages naturels.",
+        "Réseaux de freinage régénératifs : les trains alpins descendants convertissent l'énergie cinétique gravitationnelle en énergie électrique via des moteurs dynamiques, réinjectant de l'électricité dans la caténaire aérienne pour alimenter les trains ascendants."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Documentary Journey: Engineering the Swiss Alpine Railway"
+      "text": "3. Parcours documentaire : Ingénierie du Chemin de fer alpin suisse"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY",
-      "title": "[fr] Engineering High-Altitude Alpine Rail Corridors",
-      "caption": "[fr] Visual documentary traversing the Albula and Bernina lines, examining masonry construction, spiral tunnels, and winter snow clearing."
+      "title": "Ingénierie des corridors ferroviaires alpins en haute altitude",
+      "caption": "Documentaire visuel traversant les lignes de l'Albula et de la Bernina, examinant la construction en maçonnerie, les tunnels en spirale et le déneigement hivernal."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. The Gotthard Base Tunnel & Low-Impact Exploration"
+      "text": "4. Tunnel de base du Saint-Gothard et exploration à faible impact"
     },
     {
       "type": "p",
-      "text": "[fr] In 2016, Switzerland completed the Gotthard Base Tunnel: at 57.1 kilometers, the longest and deepest railway tunnel on the planet. By drilling through the base of the Alps at just 500 meters above sea level—below the treacherous winter snow line—heavy freight trains can cross between Northern and Southern Europe without traversing mountain grades."
+      "text": "En 2016, la Suisse a achevé le tunnel de base du Saint-Gothard : avec ses 57,1 kilomètres, il s'agit du tunnel ferroviaire le plus long et le plus profond de la planète. En forant à travers la base des Alpes à seulement 500 mètres au-dessus du niveau de la mer, sous la dangereuse limite des neiges hivernales, de lourds trains de marchandises peuvent traverser l'Europe du Nord et du Sud sans traverser les pentes des montagnes."
     },
     {
       "type": "p",
-      "text": "[fr] Yet for the intentional explorer, the historic high-mountain lines remain the gold standard of ecological travel. Moving at modest speeds through panoramic observation cars, passengers witness vertical ecological zonation—from chestnut groves in Italian-speaking Ticino, through subalpine pine forests, to windswept permafrost summits—with an environmental carbon footprint a fraction of air or automotive transit."
+      "text": "Pourtant, pour l'explorateur intentionnel, les lignes historiques de haute montagne restent la référence en matière de voyage écologique. Se déplaçant à des vitesses modestes à travers des voitures d'observation panoramiques, les passagers sont témoins d'un zonage écologique vertical - depuis les châtaigneraies du Tessin italophone, en passant par les forêts de pins subalpines, jusqu'aux sommets du pergélisol balayés par les vents - avec une empreinte carbone environnementale équivalente à une fraction du transport aérien ou automobile."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Geographic Takeaways & Monograph Insights"
+      "text": "5. Points à retenir géographiques et informations sur les monographies"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Adhesion Limits in Transport Design: Strict adherence to physical laws (gradient and friction) drives architectural ingenuity, resulting in spiral loops rather than destructive scarring.",
-        "[fr] Centuries of Material Longevity: Well-crafted natural stone masonry outlasts modern steel-reinforced concrete in sub-zero alpine conditions by hundreds of years.",
-        "[fr] Modal Freight Shift: Moving cross-continental freight off Alpine highway passes onto electrified base rail corridors preserves fragile glacial ecosystems from particulate soot and carbon emissions.",
-        "[fr] Slow Travel as Cultural Preservation: The high alpine railway preserves a living historical connection between remote mountain villages and global travelers."
+        "Limites d'adhésion dans la conception des transports : le strict respect des lois physiques (pente et friction) stimule l'ingéniosité architecturale, entraînant des boucles en spirale plutôt que des cicatrices destructrices.",
+        "Des siècles de longévité des matériaux : une maçonnerie en pierre naturelle bien conçue dure des centaines d'années plus longtemps que le béton armé d'acier moderne dans des conditions alpines inférieures à zéro.",
+        "Transfert modal de fret : le déplacement du fret transcontinental depuis les autoroutes alpines vers des corridors ferroviaires de base électrifiés préserve les écosystèmes glaciaires fragiles des particules de suie et des émissions de carbone.",
+        "Le voyage lent comme préservation culturelle : le chemin de fer de haute montagne préserve un lien historique vivant entre les villages de montagne isolés et les voyageurs du monde entier."
       ]
     }
   ],

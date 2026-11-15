@@ -1,7 +1,7 @@
 {
   "slug": "spatial-pressing-geometry-positional-play-rest-defense",
-  "title": "[ar] The Geometry of Modern Pressing",
-  "excerpt": "[ar] A tactical monograph examining the spatial coordinates of Juego de Posición, five-lane pitch discretization, rest-defense structures (3-2 and 2-3), and the biomechanics of counterpressing triggers.",
+  "title": "هندسة الضغط الحديث",
+  "excerpt": "دراسة تكتيكية تدرس الإحداثيات المكانية للعبة Juego de Posición، وتمييز الملعب بخمسة حارات، وهياكل الدفاع عن الراحة (3-2 و2-3)، والميكانيكا الحيوية لمشغلات الضغط المضاد.",
   "date": "2026-11-15",
   "author": "Liam O’Connor",
   "tags": [
@@ -12,77 +12,77 @@
     "biomechanics"
   ],
   "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Aerial perspective of architectural football pitch grid lines and structural playing zones",
+  "imageAlt": "منظور جوي لخطوط شبكة ملعب كرة القدم المعمارية ومناطق اللعب الهيكلية",
   "body": [
     {
       "type": "p",
-      "text": "[ar] Over the past two decades, elite European association football has undergone a rigorous mathematical and structural rationalization. The historical reliance upon intuitive individual brilliance has been subordinated to systemic spatial geometry. Conceptualized through Dutch Total Football and refined into contemporary Positional Play (Juego de Posición), elite tactical managers treat the pitch not as a fluid canvas of improvisation, but as an austere coordinate grid where spatial positioning directly dictates numerical, positional, and qualitative superiorities."
+      "text": "على مدى العقدين الماضيين، خضع اتحاد كرة القدم الأوروبي النخبة لترشيد رياضي وهيكلي صارم. إن الاعتماد التاريخي على العبقرية الفردية البديهية قد خضع للهندسة المكانية النظامية. تم تصورها من خلال كرة القدم الهولندية الشاملة وتم صقلها في اللعب التمركزي المعاصر (Juego de Posición)، يتعامل المديرون التكتيكيون النخبة مع الملعب ليس كقماش مرن من الارتجال، ولكن كشبكة إحداثيات صارمة حيث يملي التموضع المكاني بشكل مباشر التفوق العددي والموضعي والنوعي."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Discretization of the Pitch: The Five Vertical Corridors"
+      "text": "1. تقسيم الملعب: الممرات الرأسية الخمسة"
     },
     {
       "type": "p",
-      "text": "[ar] The structural grammar of Positional Play relies upon dividing the standard 105-by-68-meter pitch into five vertical corridors: the left wing, the left half-space, the central zone, the right half-space, and the right wing. Horizontal discretization further bisects the playing area into defensive, middle, and attacking thirds, generating eighteen designated spatial zones."
+      "text": "تعتمد القواعد الهيكلية للعب التمركزي على تقسيم الملعب القياسي الذي تبلغ مساحته 105 × 68 مترًا إلى خمسة ممرات رأسية: الجناح الأيسر، ونصف المساحة الأيسر، والمنطقة المركزية، ونصف المساحة الأيمن، والجناح الأيمن. يؤدي التمييز الأفقي إلى تقسيم منطقة اللعب إلى الثلثين الدفاعي والوسطى والهجومي، مما يؤدي إلى إنشاء ثمانية عشر منطقة مكانية محددة."
     },
     {
       "type": "p",
-      "text": "[ar] The fundamental axiom of Positional Play dictates that no more than two players may occupy the same vertical line simultaneously, and no more than three players may occupy the same horizontal band. This strict structural discipline creates natural triangular and diamond passing angles, guaranteeing continuous diagonal ball progression while maintaining balanced pitch dispersion."
+      "text": "تنص البديهية الأساسية للعب التمركزي على أنه لا يجوز لأكثر من لاعبين أن يشغلوا نفس الخط الرأسي في وقت واحد، ولا يجوز لأكثر من ثلاثة لاعبين أن يشغلوا نفس النطاق الأفقي. يخلق هذا الانضباط الهيكلي الصارم زوايا تمرير مثلثة وماسية طبيعية، مما يضمن استمرار تقدم الكرة بشكل قطري مع الحفاظ على تشتت الملعب المتوازن."
     },
     {
       "type": "quote",
-      "text": "[ar] The half-space is the most dangerous sector of the pitch because an attacking player faces the entire opponent goal while possessing 360-degree passing angles into both flanks and the central penalty area.",
-      "cite": "[ar] Liam O’Connor, High-Performance Sports Biomechanist"
+      "text": "تعتبر الـ Half-space أخطر قطاع في الملعب لأن اللاعب المهاجم يواجه مرمى الخصم بالكامل بينما يمتلك زوايا تمرير 360 درجة في كلا الجانبين ومنطقة الجزاء المركزية.",
+      "cite": "ليام أوكونور، عالم الميكانيكا الحيوية الرياضية عالية الأداء"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. The Anatomy of Rest-Defense: 3-2 and 2-3 Formations"
+      "text": "2. تشريح دفاع الراحة: تشكيلات 3-2 و2-3"
     },
     {
       "type": "p",
-      "text": "[ar] The primary indicator of an elite team's sustained defensive solidity is not how they defend inside their own eighteen-yard box, but how they organize their non-possessing players during active attacking phases—a discipline designated as rest-defense (Restabsicherung)."
+      "text": "المؤشر الأساسي للصلابة الدفاعية المستدامة لفريق النخبة ليس كيفية الدفاع داخل منطقة الجزاء الخاصة بهم التي تبلغ مساحتها ثمانية عشر ياردة، ولكن كيفية تنظيم لاعبيهم غير الحائزين على الكرة خلال مراحل الهجوم النشط - وهو نظام يسمى دفاع الراحة (استعادة)."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] The 3-2 Base: Three central defenders (or two center-backs flanked by a tucked-in full-back) form a protective base, shielded by a double pivot. This configuration locks down both half-space counter-attacking channels while maintaining central compactness.",
-        "[ar] The 2-3 Inversion: Two physical center-backs operate behind an inverted midfield trio, designed to intercept loose second balls and execute immediate counterpressing upon turnover.",
-        "[ar] Proximity Constraint: Rest-defense players must position themselves within eight to twelve meters of the ball carrier to compress transition space the microsecond possession is conceded."
+        "قاعدة 3-2: ثلاثة مدافعين مركزيين (أو اثنين من لاعبي قلب الدفاع يحيط بهم ظهير مدسوس) يشكلون قاعدة واقية، محمية بمحور مزدوج. يقوم هذا التكوين بتأمين قنوات الهجوم المضاد في نصف المساحة مع الحفاظ على الضغط المركزي.",
+        "الانقلاب 2-3: يعمل قلبا دفاع بدنيان خلف ثلاثي خط وسط مقلوب، مصممين لاعتراض الكرات الثانية السائبة وتنفيذ الضغط المضاد الفوري عند الدوران.",
+        "قيود القرب: يجب على لاعبي الدفاع عن الراحة أن يتموضعوا على مسافة ثمانية إلى اثني عشر مترًا من حامل الكرة لضغط مساحة الانتقال التي يتم التنازل عن الاستحواذ عليها بالميكروثانية."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Tactical Analysis: Positional Play & Pressing Triggers"
+      "text": "3. التحليل التكتيكي للفيديو: اللعب التموضعي ومحفزات الضغط"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dNtRo9LGiUU",
-      "title": "[ar] Tactical Analysis of Modern Pressing and Positional Play",
-      "caption": "[ar] In-depth video analysis analyzing pressing angles, body shape orientation, and counter-transition phases."
+      "title": "التحليل التكتيكي للضغط الحديث واللعب التموضعي",
+      "caption": "تحليل فيديو متعمق يحلل زوايا الضغط واتجاه شكل الجسم ومراحل الانتقال المضاد."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Counterpressing Triggers and the Five-Second Rule"
+      "text": "4. محفزات الضغط المضاد وقاعدة الخمس ثواني"
     },
     {
       "type": "p",
-      "text": "[ar] When possession is lost in the final third, an elite pressing collective does not retreat into a passive medium block. Instead, they exploit the transitional vulnerability of the opponent. The player who has just intercepted or recovered the ball is physically unbalanced, with vision narrowed down towards their feet, lacking spatial orientation."
+      "text": "عند فقدان الحيازة في الثلث الأخير، لا يتراجع فريق الضغط الجماعي إلى كتلة متوسطة سلبية. وبدلاً من ذلك، فهم يستغلون الضعف الانتقالي للخصم. اللاعب الذي اعترض الكرة أو استعادها للتو يكون غير متوازن بدنيًا، مع تضييق الرؤية تجاه قدميه، ويفتقر إلى التوجه المكاني."
     },
     {
       "type": "p",
-      "text": "[ar] Modern pressing systems deploy immediate aggressive compression within a strict three-to-five-second temporal window. The closest two defenders execute a parabolic closing angle that cuts off passing lanes to the ball-carrier's dominant foot, while third-man runners lock onto adjacent passing outlets. If possession cannot be cleanly reclaimed within five seconds, the defensive block resets into a synchronized 4-4-2 or 5-3-2 containment shape."
+      "text": "تنشر أنظمة الضغط الحديثة ضغطًا عدوانيًا فوريًا ضمن نافذة زمنية صارمة مدتها ثلاث إلى خمس ثوانٍ. ينفذ أقرب مدافعين زاوية إغلاق مكافئة تقطع ممرات التمرير إلى القدم المهيمنة لحامل الكرة، بينما يقفل المتسابقون الثالثون منافذ التمرير المجاورة. إذا لم يكن من الممكن استعادة الحيازة بشكل نظيف خلال خمس ثوان، تتم إعادة ضبط الكتلة الدفاعية إلى شكل احتواء متزامن 4-4-2 أو 5-3-2."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Tactical Takeaways & Key Insights"
+      "text": "5. الوجبات السريعة التكتيكية والرؤى الرئيسية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Pitch Zoning: Utilizing the five-corridor grid eliminates cluster ball-watching and preserves dynamic passing diamonds.",
-        "[ar] Proactive Rest-Defense: Matches are frequently decided by the structural positioning of the five outfield players not directly touching the ball.",
-        "[ar] Transition Acceleration: Counterpressing serves as both a defensive counter-measure and the most potent playmaking instrument in modern football."
+        "تقسيم مناطق الملعب: يؤدي استخدام الشبكة ذات الممرات الخمسة إلى إلغاء مراقبة الكرة العنقودية ويحافظ على تمريرات الماس الديناميكية.",
+        "الدفاع الاستباقي أثناء الراحة: يتم تحديد المباريات في كثير من الأحيان من خلال التمركز الهيكلي للاعبين الخمسة في الملعب الذين لا يلمسون الكرة مباشرة.",
+        "تسريع التحول: يعتبر الضغط المضاد بمثابة إجراء دفاعي مضاد وأقوى أداة لصنع اللعب في كرة القدم الحديثة."
       ]
     }
   ],

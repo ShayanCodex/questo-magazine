@@ -1,7 +1,7 @@
 {
   "slug": "microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis",
-  "title": "[ar] The Microbial Ecology of Sourdough",
-  "excerpt": "[ar] A culinary science monograph exploring symbiotic wild fermentation, Fructilactobacillus sanfranciscensis metabolic pathways, enzymatic gluten degradation, and the physics of crumb aeration.",
+  "title": "البيئة الميكروبية للعجين المخمر",
+  "excerpt": "دراسة في علوم الطهي تستكشف التخمير البري التكافلي، والمسارات الأيضية لـ Fructilactobacillus sanfranciscensis، وتحلل الغلوتين الأنزيمي، وفيزياء تهوية الفتات.",
   "date": "2026-11-15",
   "author": "Sofia Rossi",
   "tags": [
@@ -12,77 +12,77 @@
     "sustainability"
   ],
   "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Artisan stone-milled sourdough bread loaf displaying caramelized crust blisters and alveolar crumb structure",
+  "imageAlt": "رغيف خبز من العجين المخمر المطحون على الحجر يظهر عليه بثور قشرة الكراميل وبنية الفتات السنخية.",
   "body": [
     {
       "type": "p",
-      "text": "[ar] For over ten thousand years, the transformation of milled cereal grain into leavened bread stood as humanity's foundational biochemical mastery. While commercial baking throughout the twentieth century simplified this ancient alchemy into industrialized monotypic Saccharomyces cerevisiae inoculation, traditional wild sourdough represents a complex, biodiverse microbial ecosystem. The intricate symbiosis between hetero-fermentative lactic acid bacteria (LAB) and acid-tolerant wild yeasts governs not merely gas retention, but enzymatic proteolysis, phytate dephosphorylation, and glycemic modulation."
+      "text": "لأكثر من عشرة آلاف سنة، كان تحويل الحبوب المطحونة إلى خبز مخمر بمثابة الإتقان الكيميائي الحيوي الأساسي للبشرية. في حين أن الخبز التجاري طوال القرن العشرين قد أدى إلى تبسيط هذه الكيمياء القديمة وتحويلها إلى تلقيح صناعي أحادي النمط من فطريات الخميرة، فإن العجين المخمر البري التقليدي يمثل نظامًا بيئيًا ميكروبيًا معقدًا ومتنوعًا بيولوجيًا. إن التعايش المعقد بين بكتيريا حمض اللاكتيك المتخمرة (LAB) والخمائر البرية المتحملة للحمض لا يحكم احتباس الغاز فحسب، بل يحكم أيضًا تحلل البروتينات الأنزيمية، وإزالة فسفور الفيتات، وتعديل نسبة السكر في الدم."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Symbiotic Microbial Taxonomy: The LAB-to-Yeast Ratio"
+      "text": "1. التصنيف الميكروبي التكافلي: نسبة المختبر إلى الخميرة"
     },
     {
       "type": "p",
-      "text": "[ar] In a mature, stable spontaneous sourdough starter, the ecological equilibrium typically settles at a strict ratio: approximately 100 lactic acid bacteria cells for every single wild yeast cell (100:1 ratio). The archetypal bacterial species dominating traditional European starters is Fructilactobacillus sanfranciscensis (formerly Lactobacillus sanfranciscensis), which operates in precise metabolic synergy with the yeast Kazachstania exigua (or Candida humilis)."
+      "text": "في العجين المخمر الناضج والمستقر، يستقر التوازن البيئي عادة عند نسبة صارمة: حوالي 100 خلية من بكتيريا حمض اللاكتيك لكل خلية خميرة برية (نسبة 100:1). الأنواع البكتيرية النموذجية التي تهيمن على المقبلات الأوروبية التقليدية هي Fructilactobacillus sanfranciscensis (المعروفة سابقًا باسم Lactobacillus sanfranciscensis)، والتي تعمل في تآزر استقلابي دقيق مع خميرة Kazachstania exigua (أو Candida humilis)."
     },
     {
       "type": "p",
-      "text": "[ar] This symbiosis is anchored upon non-competing carbon substrate utilization. F. sanfranciscensis is maltose-positive and sucrose-negative, metabolizing maltose released by cereal amylase enzymes into glucose and maltose-6-phosphate. Conversely, Kazachstania exigua is maltose-negative, consuming the glucose released by the bacteria without competing for the primary maltose substrate. This mutualistic metabolic pact prevents either species from out-competing the other."
+      "text": "يرتكز هذا التعايش على استخدام الركيزة الكربونية غير التنافسية. F. sanfranciscensis هو إيجابي المالتوز وسالب السكروز، حيث يستقلب المالتوز الصادر عن إنزيمات الأميليز الحبوب إلى الجلوكوز والمالتوز 6 فوسفات. على العكس من ذلك، فإن Kazachstania exigua سلبي المالتوز، حيث يستهلك الجلوكوز الذي تطلقه البكتيريا دون التنافس على ركيزة المالتوز الأولية. يمنع هذا الاتفاق الأيضي المتبادل أيًا من النوعين من التنافس مع الآخر."
     },
     {
       "type": "quote",
-      "text": "[ar] Sourdough fermentation is not leavening; it is a bio-preservation and pre-digestive technology where bacterial acid production unlocks micronutrients locked within raw grain bran.",
-      "cite": "[ar] Sofia Rossi, Gastronomy & Food Chemistry Fellow"
+      "text": "تخمير العجين المخمر ليس تخميراً؛ إنها تقنية للحفظ الحيوي وما قبل الهضم حيث يقوم إنتاج الأحماض البكتيرية بفتح المغذيات الدقيقة الموجودة داخل نخالة الحبوب الخام.",
+      "cite": "صوفيا روسي، زميلة في علم الطهي وكيمياء الأغذية"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Acidity Kinetics: Lactic vs. Acetic Acid Balance"
+      "text": "2. حركية الحموضة: توازن حمض اللاكتيك مقابل حمض الأسيتيك"
     },
     {
       "type": "p",
-      "text": "[ar] The flavor profile and gluten architecture of sourdough are directly shaped by the organic acids produced during extended fermentation. Heterofermentative LAB utilize the 6-phosphogluconate pathway to synthesize two primary acids:"
+      "text": "يتم تشكيل ملف تعريف النكهة وبنية الغلوتين للعجين المخمر مباشرة بواسطة الأحماض العضوية المنتجة أثناء التخمير الممتد. يستخدم LAB المتغاير مسار 6 فوسفوغلوكونات لتصنيع حمضين أساسيين:"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Lactic Acid (C3H6O3): Imparts a smooth, mild, creamy yogurt-like acidity. Synthesized preferentially at warmer hydration temperatures (26°C to 30°C) with liquid starter hydrations.",
-        "[ar] Acetic Acid (C2H4O2): Imparts a sharp, pungent, vinegar-like bite. Synthesized preferentially under cooler retardation temperatures (10°C to 18°C) with stiffer starter hydrations (50% to 65% water).",
-        "[ar] The Fermentation Quotient (FQ): The molar ratio of lactic to acetic acid ideally ranges between 3:1 and 4:1 for harmonized artisan loaves."
+        "حمض اللاكتيك (C3H6O3): يضفي حموضة ناعمة وخفيفة وكريمية تشبه الزبادي. يتم تصنيعه بشكل تفضيلي عند درجات حرارة ترطيب أكثر دفئًا (26 درجة مئوية إلى 30 درجة مئوية) مع ترطيب بداية سائلة.",
+        "حمض الخليك (C2H4O2): يضفي لدغة حادة لاذعة تشبه الخل. يتم تصنيعه بشكل تفضيلي تحت درجات حرارة تثبيط أكثر برودة (10 درجة مئوية إلى 18 درجة مئوية) مع ترطيبات بادئة أكثر صلابة (50٪ إلى 65٪ ماء).",
+        "حاصل التخمير (FQ): تتراوح النسبة المولية لحمض اللاكتيك إلى حمض الأسيتيك بشكل مثالي بين 3:1 و4:1 للأرغفة الحرفية المتجانسة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Science Masterclass: Sourdough Fermentation Microbiology"
+      "text": "3. دروس متقدمة في علوم الفيديو: علم الأحياء الدقيقة لتخمير العجين المخمر"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "[ar] Wild Sourdough Fermentation Science & Lactic Kinetics",
-      "caption": "[ar] Microbiological examination of starter cultivation, gluten proteolysis, and thermal oven spring thermodynamics."
+      "title": "علم تخمير العجين المخمر البري وحركية اللاكتيك",
+      "caption": "الفحص الميكروبيولوجي للزراعة البادئة، وتحلل بروتينات الغلوتين، والديناميكا الحرارية الربيعية للفرن الحراري."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Enzymatic Gluten Proteolysis and Alveolar Crumb Structure"
+      "text": "4. التحلل الإنزيمي لبروتينات الغلوتين وبنية الفتات السنخية"
     },
     {
       "type": "p",
-      "text": "[ar] As bacterial acid accumulation drives the dough pH downward from 5.8 to between 3.8 and 4.2, endogenous cereal enzymes—specifically aspartic proteases—become activated. These enzymes selectively cleave disulfide bonds within high-molecular-weight glutenin and gliadin peptide chains."
+      "text": "نظرًا لأن تراكم حمض البكتيريا يدفع درجة حموضة العجين إلى الأسفل من 5.8 إلى ما بين 3.8 و4.2، فإن إنزيمات الحبوب الداخلية - وخاصة البروتياز الأسبارتيك - تصبح نشطة. تقوم هذه الإنزيمات بقص روابط ثاني كبريتيد بشكل انتقائي داخل سلاسل الغلوتينين والببتيد الجليادين ذات الوزن الجزيئي العالي."
     },
     {
       "type": "p",
-      "text": "[ar] Controlled proteolysis relaxes the elastic dough matrix, increasing extensibility while softening the final crumb. However, excessive acidification causes structural collapse: over-proteolysis liquidates the gluten netting, preventing retention of carbon dioxide bubbles during baking and yielding a dense, gummy brick. Achieving a wild open alveolar crumb demands arresting fermentation at the optimal peak of structural elasticity and gas expansion."
+      "text": "يعمل التحلل البروتيني المتحكم فيه على إرخاء مصفوفة العجين المرنة، مما يزيد من قابلية التمدد مع تليين الفتات النهائية. ومع ذلك، فإن التحمض المفرط يسبب انهيارًا هيكليًا: يؤدي التحلل الزائد للبروتين إلى تصفية شبكة الغلوتين، مما يمنع الاحتفاظ بفقاعات ثاني أكسيد الكربون أثناء الخبز وينتج لبنة لزجة كثيفة. إن تحقيق فتات سنخية مفتوحة برية يتطلب وقف التخمر عند الذروة المثلى للمرونة الهيكلية وتوسع الغاز."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Scientific Takeaways for Artisan Bread Craft"
+      "text": "5. الوجبات السريعة العلمية لصناعة الخبز الحرفي"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Temperature Dictates Flavor: Controlling bulk fermentation temperature enables bakers to steer the lactic-to-acetic acid quotient.",
-        "[ar] Phytase Activation: Low pH triggers cereal phytase, breaking down anti-nutritional phytic acid and increasing bioavailability of zinc, iron, and magnesium.",
-        "[ar] Fermentation Window: Peak dough extensibility occurs prior to complete enzymatic gluten breakdown, defining the true art of the artisan monograph."
+        "درجة الحرارة تملي النكهة: التحكم في درجة حرارة التخمير السائبة يمكّن الخبازين من توجيه حاصل حمض اللاكتيك إلى حمض الأسيتيك.",
+        "تنشيط إنزيم الفايتيز: يؤدي انخفاض الرقم الهيدروجيني إلى تحفيز إنزيم فيتاز الحبوب، مما يؤدي إلى تكسير حمض الفايتك المضاد للتغذية وزيادة التوافر البيولوجي للزنك والحديد والمغنيسيوم.",
+        "نافذة التخمير: تحدث ذروة تمدد العجين قبل الانهيار الأنزيمي الكامل للجلوتين، مما يحدد الفن الحقيقي للدراسة الحرفية."
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "constant-function-market-makers-impermanent-loss-and-concentrated-liquidity",
-  "title": "[es] Concentrated Liquidity in Market Makers",
-  "excerpt": "[es] A financial cryptography monograph on Uniswap v3 virtual reserve invariants, Loss-Versus-Rebalancing (LVR) arbitrage mechanics, and liquidity density optimization.",
+  "title": "Liquidez concentrada en creadores de mercado",
+  "excerpt": "Una monografía de criptografía financiera sobre los invariantes de reserva virtual de Uniswap v3, la mecánica de arbitraje de pérdida versus reequilibrio (LVR) y la optimización de la densidad de liquidez.",
   "date": "2026-11-15",
   "author": "Claire Dupont",
   "tags": [
@@ -13,23 +13,23 @@
     "arbitrage"
   ],
   "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Algorithmic financial telemetry displaying automated market maker liquidity curves and trade execution",
+  "imageAlt": "Telemetría financiera algorítmica que muestra las curvas de liquidez y la ejecución de operaciones de los creadores de mercado automatizados",
   "body": [
     {
       "type": "p",
-      "text": "[es] The invention of the Automated Market Maker (AMM) represents one of the most radical structural innovations in financial market microstructures. In traditional centralized finance, market making relies on centralized limit order books (CLOBs) managed by high-frequency market-making firms who continuously post bids and asks. In peer-to-peer decentralized blockchains where block latency and gas costs render high-frequency order cancellation prohibitively expensive, deterministic mathematical formulas—Constant Function Market Makers (CFMMs)—replace order books with passive, algorithmic liquidity pools."
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "p",
-      "text": "[es] While the foundational constant-product model popularized by Uniswap v2 ($x \\cdot y = k$) delivered bulletproof robustness, it suffered from catastrophic capital inefficiency: capital was distributed uniformly across the entire price spectrum from zero to infinity, meaning less than 1% of pooled capital was active at current market prices. The transition to concentrated liquidity in Uniswap v3 resolved this constraint, transforming liquidity provision from passive holding into active geometric portfolio management."
+      "text": "Si bien el modelo fundamental de producto constante popularizado por Uniswap v2 ($x \\cdot y = k$) ofrecía una solidez a prueba de balas, padecía una ineficiencia de capital catastrófica: el capital se distribuía uniformemente en todo el espectro de precios, desde cero hasta infinito, lo que significaba que menos del 1% del capital mancomunado estaba activo a los precios actuales del mercado. La transición a liquidez concentrada en Uniswap v3 resolvió esta limitación, transformando la provisión de liquidez de una tenencia pasiva a una gestión geométrica activa de la cartera."
     },
     {
       "type": "h2",
-      "text": "[es] 1. Concentrated Liquidity Geometry & Virtual Reserves"
+      "text": "1. Geometría de liquidez concentrada y reservas virtuales"
     },
     {
       "type": "p",
-      "text": "[es] In concentrated liquidity AMMs, liquidity providers (LPs) do not allocate capital across all prices. Instead, they concentrate their tokens within a bounded price interval $[p_a, p_b]$. Inside this range, the pool simulates a constant product curve with magnified \"virtual reserves\":"
+      "text": "En los AMM de liquidez concentrada, los proveedores de liquidez (LP) no asignan capital a todos los precios. En cambio, concentran sus tokens dentro de un intervalo de precios acotado $[p_a, p_b]$. Dentro de este rango, el pool simula una curva de producto constante con \"reservas virtuales\" ampliadas:"
     },
     {
       "type": "code",
@@ -38,50 +38,50 @@
     },
     {
       "type": "p",
-      "text": "[es] By confining capital to a narrow price band around the spot price, an LP can achieve up to 4,000 times the capital efficiency of an unconstrained v2 pool. The identical trading volume produces exponentially greater fee generation per dollar deposited, drastically narrowing bid-ask spreads for institutional traders."
+      "text": "Al limitar el capital a una banda de precios estrecha alrededor del precio spot, un LP puede alcanzar hasta 4.000 veces la eficiencia del capital de un pool v2 sin restricciones. El mismo volumen de operaciones produce una generación de comisiones exponencialmente mayor por dólar depositado, lo que reduce drásticamente los diferenciales entre oferta y demanda para los operadores institucionales."
     },
     {
       "type": "quote",
-      "text": "[es] Concentrated liquidity converts static liquidity pools into synthetic option payoffs: an in-range LP position behaves identically to a short straddle harvesting fee volatility.",
-      "cite": "[es] Claire Dupont, Macro & Private Equity Fellow"
+      "text": "La liquidez concentrada convierte los fondos de liquidez estáticos en pagos de opciones sintéticas: una posición LP dentro del rango se comporta de manera idéntica a una volatilidad corta de las tarifas de recolección mixta.",
+      "cite": "Claire Dupont, becaria de macro y capital privado"
     },
     {
       "type": "h2",
-      "text": "[es] 2. Deconstructing Impermanent Loss & The LVR Framework"
+      "text": "2. Deconstrucción de la pérdida impermanente y el marco LVR"
     },
     {
       "type": "p",
-      "text": "[es] The central economic risk assumed by liquidity providers is Impermanent Loss (IL)—more accurately designated as divergence loss. Whenever the external market price moves away from the initial deposit ratio, the AMM deterministic pricing curve forces the LP to sell the appreciating asset and buy the depreciating asset."
+      "text": "El riesgo económico central asumido por los proveedores de liquidez es la pérdida impermanente (IL), designada más exactamente como pérdida por divergencia. Siempre que el precio del mercado externo se aleja del índice de depósitos inicial, la curva de precios determinista AMM obliga al LP a vender el activo que se aprecia y comprar el activo que se deprecia."
     },
     {
       "type": "p",
-      "text": "[es] Recent academic market microstructure research (Milionis, Moallemi, Roughgarden) formalizes this cost as Loss-Versus-Rebalancing (LVR). Unlike traditional impermanent loss, which theoretically zeroes out if price returns to its starting point, LVR captures the persistent, non-negative economic rent extracted by latency arbitrageurs who trade against stale AMM quotes across external centralized exchanges:"
+      "text": "Una investigación académica reciente sobre la microestructura del mercado (Milionis, Moallemi, Roughgarden) formaliza este costo como pérdida versus reequilibrio (LVR). A diferencia de la pérdida impermanente tradicional, que teóricamente se reduce a cero si el precio regresa a su punto de partida, LVR captura la renta económica persistente y no negativa extraída por los arbitrajistas de latencia que negocian contra cotizaciones obsoletas de AMM en intercambios centralizados externos:"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs can rebalance.",
-        "[es] Range Out-of-Bounds Risk: When spot price breaks outside $[p_a, p_b]$, the LP is 100% converted into the losing asset, terminating all fee accrual until rebalanced.",
-        "[es] Fee-to-Volatility Break-Even: For an LP position to remain net-profitable, fee yields must exceed the variance drag dictated by asset return volatility ($\\frac{1}{8}\\sigma^2$)."
+        "Flujo de arbitraje asimétrico: los movimientos de precios del mercado externo permiten que el flujo de órdenes de arbitraje tóxico elimine los ticks obsoletos en la cadena antes de que los LP pasivos puedan reequilibrarse.",
+        "Riesgo de rango fuera de límites: cuando el precio al contado supera $[p_a, p_b]$, el LP se convierte al 100% en el activo perdedor, finalizando toda acumulación de tarifas hasta que se reequilibre.",
+        "Punto de equilibrio entre tarifa y volatilidad: para que una posición LP siga siendo rentable netamente, los rendimientos de las tarifas deben exceder el arrastre de la varianza dictado por la volatilidad del rendimiento de los activos ($\\frac{1}{8}\\sigma^2$)."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] 3. Technical Masterclass: Concentrated Liquidity Mathematics"
+      "text": "3. Clase magistral técnica: Matemáticas de liquidez concentrada"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/cizLhxSKrAc",
-      "title": "[es] Automated Market Makers & Concentrated Liquidity Mechanics",
-      "caption": "[es] Rigorous visual walkthrough of virtual reserves, tick boundaries, impermanent loss curves, and capital efficiency gains."
+      "title": "Creadores de mercado automatizados y mecánica de liquidez concentrada",
+      "caption": "Riguroso recorrido visual de las reservas virtuales, los límites de los ticks, las curvas de pérdidas no permanentes y las ganancias de eficiencia del capital."
     },
     {
       "type": "h2",
-      "text": "[es] 4. Tick Discretization & Dynamic Fee Tiers"
+      "text": "4. Discretización de ticks y niveles de tarifas dinámicas"
     },
     {
       "type": "p",
-      "text": "[es] To avoid floating-point imprecision in on-chain virtual machines, prices are discretized into logarithmic ticks indexed by integers $i$:"
+      "text": "Para evitar la imprecisión del punto flotante en las máquinas virtuales en cadena, los precios se discretizan en ticks logarítmicos indexados por números enteros $i$:"
     },
     {
       "type": "code",
@@ -90,18 +90,18 @@
     },
     {
       "type": "p",
-      "text": "[es] When a large market order consumes all available liquidity inside a tick, the protocol updates the global price, crosses the tick boundary, and activates the next discrete liquidity vector with minimal gas overhead."
+      "text": "Cuando una orden de mercado grande consume toda la liquidez disponible dentro de un tick, el protocolo actualiza el precio global, cruza el límite del tick y activa el siguiente vector de liquidez discreto con una sobrecarga de gas mínima."
     },
     {
       "type": "h2",
-      "text": "[es] 5. Strategic Takeaways for Quantitative Liquidity Providers"
+      "text": "5. Conclusiones estratégicas para proveedores de liquidez cuantitativa"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) can safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
-        "[es] Dynamic Hedging Eliminates Delta: Sophisticated market makers offset directional gamma risk by shorting underlying perpetual futures on centralized venues while capturing LP fees on-chain.",
-        "[es] Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers can rapidly erode accumulated LP fees; deploy automated liquidity management vaults."
+        "Los activos correlacionados sobresalen en bandas estrechas: los pares de monedas estables (por ejemplo, USDT/USDC) pueden concentrar liquidez de forma segura dentro de bandas de ±0,1%, lo que produce APY astronómicos con un riesgo direccional mínimo.",
+        "La cobertura dinámica elimina Delta: los creadores de mercado sofisticados compensan el riesgo gamma direccional poniendo en corto los futuros perpetuos subyacentes en lugares centralizados mientras capturan las tarifas LP en la cadena.",
+        "Gestionar la amortización del gas: el reequilibrio frecuente de ticks en niveles de liquidación de tarifas altas puede erosionar rápidamente las tarifas LP acumuladas; implementar bóvedas automatizadas de gestión de liquidez."
       ]
     }
   ],

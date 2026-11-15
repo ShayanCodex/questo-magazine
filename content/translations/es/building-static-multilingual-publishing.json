@@ -1,7 +1,7 @@
 {
   "slug": "building-static-multilingual-publishing",
-  "title": "[es] Static Multilingual Publishing",
-  "excerpt": "[es] How pre-rendering six distinct languages at build time with deterministic JSON payloads eliminates runtime network waterfalls and guarantees flawless global search engine indexing.",
+  "title": "Publicación multilingüe estática",
+  "excerpt": "Cómo la renderización previa de seis idiomas distintos en el momento de la compilación con cargas útiles JSON deterministas elimina las cascadas de la red en tiempo de ejecución y garantiza una indexación impecable en los motores de búsqueda globales.",
   "date": "2026-11-08",
   "updated": "2026-11-14",
   "author": "Tariq Mahmood",
@@ -13,23 +13,23 @@
     "seo"
   ],
   "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Abstract geometric digital typography and binary terminal buffer in high contrast",
+  "imageAlt": "Tipografía digital geométrica abstracta y buffer terminal binario en alto contraste",
   "body": [
     {
       "type": "p",
-      "text": "[es] The fundamental premise of the World Wide Web was simple: every uniform resource locator (URL) points to an accessible HTML document containing real, crawlable human language. However, the rise of client-side single-page applications (SPAs) broke this foundation. In modern runtime web architectures, visiting an article often returns an empty HTML shell that initiates a cascade of JavaScript bundles, authentication checks, and asynchronous JSON translation API fetches."
+      "text": "La premisa fundamental de la World Wide Web era simple: cada localizador uniforme de recursos (URL) apunta a un documento HTML accesible que contiene lenguaje humano real y rastreable. Sin embargo, el auge de las aplicaciones de una sola página (SPA) del lado del cliente rompió esta base. En las arquitecturas web modernas en tiempo de ejecución, visitar un artículo a menudo devuelve un shell HTML vacío que inicia una cascada de paquetes de JavaScript, comprobaciones de autenticación y búsquedas de API de traducción JSON asincrónicas."
     },
     {
       "type": "p",
-      "text": "[es] For international readers—particularly those in regions with volatile mobile networks or high latency—this architecture is disastrous. Readers suffer from Flash of Untranslated Content (FOUT), cumulative layout shifts as translated strings change word lengths, and sluggish initial render times. For global search engines like Google and Bing, executing complex JavaScript runtime pipelines across millions of URLs introduces indexing delays and frequent crawling failures."
+      "text": "Para los lectores internacionales, particularmente aquellos en regiones con redes móviles volátiles o alta latencia, esta arquitectura es desastrosa. Los lectores sufren de Flash of Untranslated Content (FOUT), cambios de diseño acumulativos a medida que las cadenas traducidas cambian la longitud de las palabras y tiempos de procesamiento iniciales lentos. Para los motores de búsqueda globales como Google y Bing, la ejecución de complejos procesos de ejecución de JavaScript en millones de URL introduce retrasos en la indexación y frecuentes errores de rastreo."
     },
     {
       "type": "h2",
-      "text": "[es] Inverting the Topology: Build-Time Multilingual Compilation"
+      "text": "Inversión de la topología: compilación multilingüe en tiempo de compilación"
     },
     {
       "type": "p",
-      "text": "[es] Questo Magazine inverts this fragile runtime model completely. Instead of dynamically translating or hydrating strings inside the visitor's browser, our publishing engine treats internationalization as a build-time compilation step. Every article is stored as a structured JSON payload in version control. At deploy time, a Vite React SSG pipeline processes the content graph, generating distinct, fully-rendered static HTML files for all target languages: English, Spanish, French, German, Arabic, and Urdu."
+      "text": "Questo Magazine invierte completamente este frágil modelo de tiempo de ejecución. En lugar de traducir o hidratar dinámicamente cadenas dentro del navegador del visitante, nuestro motor de publicación trata la internacionalización como un paso de compilación en el momento de la compilación. Cada artículo se almacena como una carga útil JSON estructurada en el control de versiones. En el momento de la implementación, una canalización de Vite React SSG procesa el gráfico de contenido y genera archivos HTML estáticos distintos y completamente renderizados para todos los idiomas de destino: inglés, español, francés, alemán, árabe y urdu."
     },
     {
       "type": "code",
@@ -38,41 +38,41 @@
     },
     {
       "type": "quote",
-      "text": "[es] If a search bot or human reader cannot read an article with JavaScript completely disabled, it is not published on the open web; it is merely trapped inside a browser script.",
-      "cite": "[es] Tariq Mahmood, Principles of Resilient Publishing"
+      "text": "Si un robot de búsqueda o un lector humano no puede leer un artículo con JavaScript completamente deshabilitado, no se publica en la web abierta; simplemente está atrapado dentro de un script del navegador.",
+      "cite": "Tariq Mahmood, Principios de una publicación resiliente"
     },
     {
       "type": "h2",
-      "text": "[es] Bidirectional Typography and Script-Aware Layouts"
+      "text": "Tipografía bidireccional y diseños compatibles con scripts"
     },
     {
       "type": "p",
-      "text": "[es] Building a truly global publishing platform requires respecting typographical culture. Languages such as Arabic and Urdu do not simply reverse text alignment; they require entirely different font-face metrics, line-height proportions, and layout orientations. By injecting the html dir='rtl' attribute at build time, CSS logical properties (such as margin-inline-start and padding-inline-end) snap into place natively without JavaScript layout re-calculations."
+      "text": "Construir una plataforma de publicación verdaderamente global requiere respetar la cultura tipográfica. Idiomas como el árabe y el urdu no simplemente invierten la alineación del texto; requieren métricas de fuente, proporciones de altura de línea y orientaciones de diseño completamente diferentes. Al inyectar el atributo html dir='rtl' en el momento de la compilación, las propiedades lógicas de CSS (como margin-inline-start y padding-inline-end) se ajustan a su lugar de forma nativa sin volver a calcular el diseño de JavaScript."
     },
     {
       "type": "h3",
-      "text": "[es] Architectural Pillars of Build-Time Publishing"
+      "text": "Pilares arquitectónicos de la publicación Build-Time"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Zero runtime database dependencies: Eliminating database connection pools, cold-start serverless pauses, and SQL injection attack surfaces.",
-        "[es] Deterministic JSON-LD schema: Prerendering Article, BreadcrumbList, and Organization structured microdata directly inside the head tags of the static HTML.",
-        "[es] Partitioned XML Sitemaps: Automatically dividing sitemaps by content type (articles, categories, authors, markets) with bidirectional hreflang cross-links for search bots.",
-        "[es] Global edge replication: Serving static HTML assets from 300+ worldwide Cloudflare Points of Presence (PoPs) with 100% cache hit ratios."
+        "Cero dependencias de bases de datos en tiempo de ejecución: eliminación de grupos de conexiones de bases de datos, pausas sin servidor de arranque en frío y superficies de ataque de inyección SQL.",
+        "Esquema JSON-LD determinista: microdatos estructurados de artículo, lista de ruta de navegación y organización directamente dentro de las etiquetas principales del HTML estático.",
+        "Mapas de sitio XML particionados: división automática de mapas de sitio por tipo de contenido (artículos, categorías, autores, mercados) con enlaces cruzados hreflang bidireccionales para robots de búsqueda.",
+        "Replicación de borde global: ofrece activos HTML estáticos desde más de 300 puntos de presencia (PoP) de Cloudflare en todo el mundo con índices de aciertos de caché del 100 %."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] Empirical Performance Metrics"
+      "text": "Métricas de rendimiento empíricas"
     },
     {
       "type": "p",
-      "text": "[es] The quantitative benefits of this architecture are undeniable. Average Time to First Byte (TTFB) drops from 450ms on traditional CMS backends to under 25ms at the edge. First Contentful Paint (FCP) clocks in at 0.3s globally, and Cumulative Layout Shift (CLS) is mathematically locked at zero."
+      "text": "Los beneficios cuantitativos de esta arquitectura son innegables. El tiempo promedio hasta el primer byte (TTFB) cae de 450 ms en backends de CMS tradicionales a menos de 25 ms en el borde. First Contentful Paint (FCP) registra 0,3 s a nivel mundial, y Cumulative Layout Shift (CLS) está matemáticamente bloqueado en cero."
     },
     {
       "type": "p",
-      "text": "[es] By uniting static site generation with multilingual build-time pipelines, Questo demonstrates that modern web engineering can deliver lightning-fast international performance while upholding the timeless editorial dignity of the printed word."
+      "text": "Al unir la generación de sitios estáticos con canales de tiempo de construcción multilingües, Questo demuestra que la ingeniería web moderna puede ofrecer un rendimiento internacional ultrarrápido y al mismo tiempo mantener la dignidad editorial atemporal de la palabra impresa."
     }
   ],
   "sourceHash": "33dab6bbfa97adc2f2594c041c5f5c3e4ab5eb0b"

@@ -1,7 +1,7 @@
 {
   "slug": "architecture-of-transformer-attention-mathematics-and-kv-cache",
-  "title": "[ar] The Architecture of Transformer Attention",
-  "excerpt": "[ar] An investigative monograph on scaled dot-product attention, quadratic memory complexity, multi-query KV cache optimizations, and how modern inference engines conquer the memory wall.",
+  "title": "بنية انتباه المحولات",
+  "excerpt": "دراسة استقصائية عن الاهتمام بمنتجات النقاط، وتعقيد الذاكرة التربيعية، وتحسينات ذاكرة التخزين المؤقت KV متعددة الاستعلامات، وكيف تتغلب محركات الاستدلال الحديثة على جدار الذاكرة.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -12,19 +12,19 @@
     "software-architecture"
   ],
   "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "[ar] OpenAI and ChatGPT large language model neural architecture on smartphone display over keyboard",
+  "imageAlt": "البنية العصبية لنموذج اللغة الكبيرة OpenAI وChatGPT على شاشة الهاتف الذكي عبر لوحة المفاتيح",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The transformer architecture introduced in 2017 fundamentally redefined automated language modeling and sequence transduction. By discarding recurrent hidden state loops in favor of monolithic parallel attention mechanisms, transformers permitted unprecedented training throughput across distributed GPU clusters. Yet beneath the high-level taxonomy of foundation models lies an austere mathematical core: the scaled dot-product attention function. As context windows expand from four thousand to hundreds of thousands of tokens, the operational bottleneck of transformer inference shifts decisively from arithmetic computation (FLOPs) to memory bandwidth saturation."
+      "text": "أعادت بنية المحولات التي تم تقديمها في عام 2017 تعريف نمذجة اللغة الآلية ونقل التسلسل بشكل أساسي. من خلال التخلص من حلقات الحالة المخفية المتكررة لصالح آليات الانتباه المتوازية المتجانسة، سمحت المحولات بإنتاجية تدريب غير مسبوقة عبر مجموعات GPU الموزعة. ومع ذلك، يوجد تحت التصنيف العالي المستوى للنماذج الأساسية جوهر رياضي صارم: دالة الانتباه المتدرجة للمنتج النقطي. مع توسع نوافذ السياق من أربعة آلاف إلى مئات الآلاف من الرموز المميزة، يتحول عنق الزجاجة التشغيلي لاستدلال المحول بشكل حاسم من الحساب الحسابي (FLOPs) إلى تشبع عرض النطاق الترددي للذاكرة."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. The Formal Mechanics of Scaled Dot-Product Attention"
+      "text": "1. الآليات الرسمية للانتباه المقياس للمنتج النقطي"
     },
     {
       "type": "p",
-      "text": "[ar] At its theoretical foundation, self-attention maps an input query sequence and key-value memory pairs to an output representation. Given an input sequence matrix X projected into query, key, and value manifolds through learned weight matrices W_Q, W_K, and W_V, the attention score matrix is computed via the canonical equation:"
+      "text": "في أساسه النظري، يقوم الانتباه الذاتي بتعيين تسلسل استعلام الإدخال وأزواج ذاكرة القيمة الرئيسية لتمثيل الإخراج. بالنظر إلى مصفوفة تسلسل الإدخال X المسقطة في الاستعلام والمفتاح ومشعبات القيمة من خلال مصفوفات الوزن المستفادة W_Q وW_K وW_V، يتم حساب مصفوفة درجة الاهتمام عبر المعادلة الأساسية:"
     },
     {
       "type": "code",
@@ -33,73 +33,73 @@
     },
     {
       "type": "p",
-      "text": "[ar] The scaling factor, inverse square root of the projection dimension d_k, is not an arbitrary hyperparameter. For large values of d_k, the dot products grow substantially in magnitude, pushing the subsequent softmax function into regions with vanishingly small gradients. Scaling stabilizes variance to unity, ensuring numerical stability during backward backpropagation passes and avoiding catastrophic representation collapse."
+      "text": "عامل القياس، الجذر التربيعي العكسي لبعد الإسقاط d_k، ليس معلمة مفرطة عشوائية. بالنسبة للقيم الكبيرة لـ d_k، يزداد حجم المنتجات النقطية بشكل كبير، مما يدفع وظيفة softmax اللاحقة إلى مناطق ذات تدرجات صغيرة متلاشية. يؤدي القياس إلى تثبيت التباين في الوحدة، مما يضمن الاستقرار العددي أثناء تمريرات الانتشار العكسي وتجنب انهيار التمثيل الكارثي."
     },
     {
       "type": "quote",
-      "text": "[ar] In deep sequence models, attention is not merely a routing mechanism; it is a dynamic, input-conditioned associative memory matrix whose computational complexity scales quadratically with sequence length.",
-      "cite": "[ar] Hiroshi Tanaka, Robotics & ML Research Monograph"
+      "text": "في نماذج التسلسل العميق، الانتباه ليس مجرد آلية توجيه؛ إنها مصفوفة ذاكرة ترابطية ديناميكية ومكيفة الإدخال، ويتراوح تعقيدها الحسابي بشكل تربيعي مع طول التسلسل.",
+      "cite": "هيروشي تاناكا، دراسة أبحاث الروبوتات وتعلم الآلة"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. The Memory Wall and the Key-Value (KV) Cache"
+      "text": "2. جدار الذاكرة وذاكرة التخزين المؤقت لقيمة المفتاح (KV)"
     },
     {
       "type": "p",
-      "text": "[ar] During training, sequences are processed in monolithic batches where full causal masking permits simultaneous backpropagation. In autoregressive token generation during inference, however, each new token depends strictly upon all previously emitted tokens. Recalculating the projection matrices for every antecedent token at step t+1 yields an intolerable cubic time complexity O(t^3)."
+      "text": "أثناء التدريب، تتم معالجة التسلسلات على دفعات متجانسة حيث يسمح الإخفاء السببي الكامل بالانتشار العكسي المتزامن. ومع ذلك، في توليد الرموز المميزة ذات الانحدار الذاتي أثناء الاستدلال، يعتمد كل رمز مميز جديد بشكل صارم على جميع الرموز المميزة المنبعثة مسبقًا. تؤدي إعادة حساب مصفوفات الإسقاط لكل رمز سابق في الخطوة t+1 إلى تعقيد زمني مكعب لا يطاق O(t^3)."
     },
     {
       "type": "p",
-      "text": "[ar] To achieve latency scaling that remains linear with respect to generation length, production inference runtimes retain the Key and Value projection vectors of historical tokens in High Bandwidth Memory (HBM). This persistent retention structure is the Key-Value (KV) Cache. While mathematically preserving O(1) projection overhead per step, the memory footprint of the KV cache scales with batch size, context length, number of layers, and projection heads:"
+      "text": "لتحقيق مقياس زمن الوصول الذي يظل خطيًا فيما يتعلق بطول الجيل، تحتفظ أوقات تشغيل استدلال الإنتاج بمتجهات إسقاط المفتاح والقيمة للرموز المميزة التاريخية في ذاكرة النطاق الترددي العالي (HBM). بنية الاحتفاظ المستمرة هذه هي ذاكرة التخزين المؤقت ذات القيمة الرئيسية (KV). مع الحفاظ رياضيًا على حمل إسقاط O(1) لكل خطوة، فإن حجم الذاكرة لذاكرة التخزين المؤقت KV يتدرج مع حجم الدفعة وطول السياق وعدد الطبقات ورؤوس الإسقاط:"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Memory Footprint = 2 * n_layers * n_heads * d_head * context_len * batch_size * precision_bytes",
-        "[ar] For a 70B parameter model at 32k context length in FP16 precision, the KV cache alone demands upwards of 40GB of VRAM per concurrent request.",
-        "[ar] Under sustained multi-tenant concurrency, memory capacity exhausts long before tensor cores reach compute saturation."
+        "Memory Footprint = 2 * n_layers * n_heads * d_head * context_len * Batch_size * Precision_bytes",
+        "بالنسبة لنموذج معلمة 70B بطول سياق 32 كيلو بدقة FP16، تتطلب ذاكرة التخزين المؤقت KV وحدها ما يزيد عن 40 جيجابايت من VRAM لكل طلب متزامن.",
+        "في ظل التزامن المستمر متعدد المستأجرين، تستنزف سعة الذاكرة قبل فترة طويلة من وصول نوى الموترة إلى تشبع الحساب."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Transformer Attention & Autoregressive Mechanics"
+      "text": "3. درس فيديو رئيسي: انتباه المحولات وميكانيكا الانحدار الذاتي"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "[ar] Building Transformer Attention & Language Models from Scratch",
-      "caption": "[ar] Authoritative breakdown of transformer attention matrices, self-attention projections, and sequence transduction by Stanford AI researchers."
+      "title": "بناء انتباه المحولات ونماذج اللغة من الصفر",
+      "caption": "الانهيار الرسمي لمصفوفات انتباه المحولات، وإسقاطات الاهتمام الذاتي، ونقل التسلسل بواسطة باحثي الذكاء الاصطناعي في جامعة ستانفورد."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Architectural Evolutions: Multi-Query, Grouped-Query & Paged Attention"
+      "text": "4. التطورات المعمارية: الاستعلام المتعدد، والاستعلام المجمّع، والانتباه المصفح"
     },
     {
       "type": "p",
-      "text": "[ar] To bypass the severe memory saturation enforced by standard Multi-Head Attention (MHA), modern foundation architectures deploy structural alterations:"
+      "text": "لتجاوز تشبع الذاكرة الشديد الذي يفرضه الانتباه القياسي متعدد الرؤوس (MHA)، تنشر البنى الأساسية الحديثة تعديلات هيكلية:"
     },
     {
       "type": "ol",
       "items": [
-        "[ar] Multi-Query Attention (MQA): All attention query heads share a solitary key-value projection head, reducing KV cache memory bandwidth demands by a factor equivalent to the number of query heads (typically 32x to 64x).",
-        "[ar] Grouped-Query Attention (GQA): Query heads are grouped into clusters sharing a key-value head (e.g., 8 query heads per KV pair), achieving a harmonious equilibrium between representation capacity and cache compression.",
-        "[ar] PagedAttention & Virtual Memory Management: Modeled after classical OS page tables, dynamically allocating non-contiguous memory chunks prevents memory fragmentation and slashes GPU waste by over 80%."
+        "تنبيه الاستعلامات المتعددة (MQA): تشترك جميع رؤوس استعلامات الانتباه في رأس عرض واحد لقيمة المفتاح، مما يقلل من متطلبات النطاق الترددي لذاكرة التخزين المؤقت KV بعامل مكافئ لعدد رؤوس الاستعلام (عادةً من 32x إلى 64x).",
+        "انتباه الاستعلام المجمع (GQA): يتم تجميع رؤوس الاستعلام في مجموعات تتقاسم رأس قيمة المفتاح (على سبيل المثال، 8 رؤوس استعلام لكل زوج KV)، مما يحقق توازنًا متناغمًا بين سعة التمثيل وضغط ذاكرة التخزين المؤقت.",
+        "PagedAttention & Virtual Memory Management: تم تصميمه على غرار جداول صفحات نظام التشغيل الكلاسيكية، ويمنع التخصيص الديناميكي لأجزاء الذاكرة غير المتجاورة تجزئة الذاكرة ويقلل هدر وحدة معالجة الرسومات بنسبة تزيد عن 80%."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Synthesis and Empirical Takeaways"
+      "text": "5. التوليف والوجبات التجريبية"
     },
     {
       "type": "p",
-      "text": "[ar] The engineering discipline governing modern neural inference has permanently shifted. The decisive competitive advantage in foundation model deployment is no longer raw parameter volume, but cache compression efficiency, sparse attention routing, and sub-millisecond kernel execution."
+      "text": "لقد تحول الانضباط الهندسي الذي يحكم الاستدلال العصبي الحديث بشكل دائم. لم تعد الميزة التنافسية الحاسمة في نشر النموذج الأساسي تتمثل في حجم المعلمة الأولية، بل في كفاءة ضغط ذاكرة التخزين المؤقت، وتوجيه الاهتمام المتناثر، وتنفيذ النواة دون مللي ثانية."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Softmax Scaling: The 1/sqrt(d_k) factor prevents gradient saturation across expansive projection dimensions.",
-        "[ar] KV Cache Bottleneck: Autoregressive token generation is memory-bound; bandwidth saturation governs time-to-first-token and inter-token latency.",
-        "[ar] Structural Efficiency: Grouped-Query Attention (GQA) combined with virtual memory paging (vLLM) represents the state-of-the-art production standard for sub-second serving."
+        "تحجيم Softmax: يمنع العامل 1/sqrt(d_k) تشبع التدرج عبر أبعاد الإسقاط الموسعة.",
+        "عنق الزجاجة لذاكرة التخزين المؤقت KV: إنشاء رمز الانحدار التلقائي مرتبط بالذاكرة؛ يتحكم تشبع النطاق الترددي في وقت الاستجابة للرمز الأول والكمون بين الرموز المميزة.",
+        "الكفاءة الهيكلية: يمثل الاهتمام بالاستعلام المجمع (GQA) جنبًا إلى جنب مع ترحيل صفحات الذاكرة الظاهرية (vLLM) معيار الإنتاج الحديث للخدمة دون الثانية."
       ]
     }
   ],

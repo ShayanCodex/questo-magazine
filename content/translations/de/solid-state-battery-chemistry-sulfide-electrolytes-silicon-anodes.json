@@ -1,7 +1,7 @@
 {
   "slug": "solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes",
-  "title": "[de] Solid-State Battery Chemistry",
-  "excerpt": "[de] A materials science and electrochemical monograph on sulfide solid electrolytes, lithium dendrite suppression mechanics, critical current density thresholds, and high-capacity silicon-dominant composite anodes.",
+  "title": "Chemie von Festkörperbatterien",
+  "excerpt": "Eine materialwissenschaftliche und elektrochemische Monographie über Sulfid-Festelektrolyte, Mechanismen zur Unterdrückung von Lithiumdendriten, kritische Stromdichteschwellen und siliziumdominierte Verbundanoden mit hoher Kapazität.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -13,23 +13,23 @@
     "engineering"
   ],
   "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "[de] Precision engineered high energy density electrochemical battery cell laboratory test setup",
+  "imageAlt": "Präzisionsgefertigter Labortestaufbau für elektrochemische Batteriezellen mit hoher Energiedichte.",
   "body": [
     {
       "type": "p",
-      "text": "[de] The electrification of commercial aviation, heavy haul freight, and high-range passenger transit is fundamentally constrained by the energy density and thermal runaway hazards of conventional liquid-electrolyte lithium-ion cells. Commercial graphite-intercalated cells top out at approximately 280 Wh/kg and rely on volatile, flammable organic carbonates that ignite under mechanical puncture or internal short circuits."
+      "text": "Die Elektrifizierung der kommerziellen Luftfahrt, des Schwerlastgüterverkehrs und des Passagiertransports mit großer Reichweite wird grundsätzlich durch die Energiedichte und die Gefahr des thermischen Durchgehens herkömmlicher Lithium-Ionen-Zellen mit flüssigem Elektrolyten eingeschränkt. Kommerzielle Graphit-Interkalationszellen haben eine Höchstleistung von etwa 280 Wh/kg und basieren auf flüchtigen, brennbaren organischen Karbonaten, die sich bei mechanischer Beschädigung oder internen Kurzschlüssen entzünden."
     },
     {
       "type": "p",
-      "text": "[de] All-Solid-State Batteries (ASSBs) replace the liquid solvent with an inorganic ceramic or sulfide ion-conducting solid matrix. By pairing solid electrolytes with pure metallic lithium or silicon-dominant anodes, ASSBs promise gravimetric energy densities exceeding 500 Wh/kg, wide thermal operating envelopes (-30°C to 100°C), and non-flammable inherent safety."
+      "text": "All-Solid-State-Batterien (ASSBs) ersetzen das flüssige Lösungsmittel durch eine anorganische keramische oder sulfidionenleitende feste Matrix. Durch die Kombination von Festelektrolyten mit rein metallischen Lithium- oder Silizium-dominanten Anoden versprechen ASSBs gravimetrische Energiedichten von mehr als 500 Wh/kg, große thermische Betriebsbereiche (-30 °C bis 100 °C) und nicht brennbare inhärente Sicherheit."
     },
     {
       "type": "h2",
-      "text": "[de] 1. Solid Electrolyte Classes: Sulfides vs. Oxides vs. Halides"
+      "text": "1. Festelektrolytklassen: Sulfide vs. Oxide vs. Halogenide"
     },
     {
       "type": "p",
-      "text": "[de] The viability of any solid-state architecture hinges upon ionic conductivity ($\\sigma_{ion}$) at ambient temperatures:"
+      "text": "Die Lebensfähigkeit jeder Festkörperarchitektur hängt von der Ionenleitfähigkeit ($\\sigma_{ion}$) bei Umgebungstemperaturen ab:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[de] Because sulfide crystals possess softer, more polarizable sulfur anion frameworks, lithium ions encounter low migration activation barriers ($E_a < 0.25$ eV), permitting rapid transport that rivals traditional liquid electrolytes."
+      "text": "Da Sulfidkristalle über weichere, polarisierbarere Schwefelanionengerüste verfügen, stoßen Lithiumionen auf niedrige Migrationsaktivierungsbarrieren ($E_a < 0,25 $ eV), was einen schnellen Transport ermöglicht, der mit herkömmlichen flüssigen Elektrolyten mithalten kann."
     },
     {
       "type": "quote",
-      "text": "[de] Solid-state is not just a safer battery; it is the unlocking mechanism for pure lithium metal anodes, doubling gravimetric density by discarding heavy graphite hosts.",
-      "cite": "[de] Hiroshi Tanaka, Advanced Materials & Electrochemical Systems Fellow"
+      "text": "Festkörperbatterien sind nicht nur eine sicherere Batterie; Es ist der Entriegelungsmechanismus für Anoden aus reinem Lithiummetall, der die gravimetrische Dichte verdoppelt, indem er schwere Graphitwirte verwirft.",
+      "cite": "Hiroshi Tanaka, Advanced Materials & Electrochemical Systems Fellow"
     },
     {
       "type": "h2",
-      "text": "[de] 2. The Dendrite Conundrum: Critical Current Density (CCD)"
+      "text": "2. Das Dendriten-Rätsel: Kritische Stromdichte (CCD)"
     },
     {
       "type": "p",
-      "text": "[de] Early theory posited that a rigid solid ceramic electrolyte would mechanically suppress lithium dendrite formation via the Monroe-Newman criterion (shear modulus $G_{SE} > 2 \\cdot G_{Li}$). However, operando X-ray tomography revealed that lithium metal readily infiltrates intergranular grain boundaries and microcracks under fast charging conditions."
+      "text": "Frühe Theorien gingen davon aus, dass ein starrer fester Keramikelektrolyt die Bildung von Lithiumdendriten über das Monroe-Newman-Kriterium (Schermodul $G_{SE} > 2 \\cdot G_{Li}$) mechanisch unterdrücken würde. Die operando-Röntgentomographie ergab jedoch, dass Lithiummetall unter Schnellladebedingungen leicht in intergranulare Korngrenzen und Mikrorisse eindringt."
     },
     {
       "type": "ul",
       "items": [
-        "[de] Critical Current Density (CCD): The maximum charging current rate beyond which non-uniform lithium plating initiates intergranular short circuits.",
-        "[de] Stack Pressure Management: Maintaining constant uniaxial stack pressures of 1 to 5 MPa ensures intimate solid-solid physical contact as lithium strips and plates during discharge cycles.",
-        "[de] Interfacial Buffer Coatings: Thin ALD (Atomic Layer Deposition) coatings of zinc, carbon, or gold alloy with incoming lithium, ensuring planar 2D growth rather than 1D filamentous spikes."
+        "Kritische Stromdichte (CCD): Die maximale Ladestromrate, ab der eine ungleichmäßige Lithiumbeschichtung intergranulare Kurzschlüsse auslöst.",
+        "Stapeldruckmanagement: Die Aufrechterhaltung eines konstanten uniaxialen Stapeldrucks von 1 bis 5 MPa gewährleistet einen engen physikalischen Feststoff-Festkontakt als Lithiumstreifen und -platten während der Entladezyklen.",
+        "Grenzflächenpufferbeschichtungen: Dünne ALD-Beschichtungen (Atomic Layer Deposition) aus Zink, Kohlenstoff oder Goldlegierung mit einströmendem Lithium, die ein planares 2D-Wachstum anstelle von 1D-Filamentspitzen gewährleisten."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 3. Video Masterclass: High-Voltage Electrochemistry & Advanced Storage"
+      "text": "3. Video-Meisterklasse: Hochspannungselektrochemie und fortschrittliche Speicherung"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "[de] High Voltage Electrochemical Energy Storage and Advanced Grid Batteries",
-      "caption": "[de] Engineering analysis of advanced battery chemistry, solid-state cell architecture, and utility-scale energy storage."
+      "title": "Elektrochemische Hochspannungsenergiespeicherung und fortschrittliche Netzbatterien",
+      "caption": "Technische Analyse der fortschrittlichen Batteriechemie, der Festkörperzellenarchitektur und der Energiespeicherung im Versorgungsmaßstab."
     },
     {
       "type": "h2",
-      "text": "[de] 4. Silicon Composite Anodes: 300% Volumetric Expansion Mechanics"
+      "text": "4. Silizium-Verbundanoden: 300 % volumetrische Expansionsmechanik"
     },
     {
       "type": "p",
-      "text": "[de] While pure lithium metal remains the ultimate goal, silicon provides an exceptional intermediate bridge. Silicon boasts a theoretical specific capacity of 3,579 mAh/g ($Li_{15}Si_4$), nearly ten times that of commercial graphite (372 mAh/g)."
+      "text": "Während reines Lithiummetall das ultimative Ziel bleibt, bietet Silizium eine außergewöhnliche Zwischenbrücke. Silizium verfügt über eine theoretische spezifische Kapazität von 3.579 mAh/g ($Li_{15}Si_4$), fast zehnmal so viel wie kommerzieller Graphit (372 mAh/g)."
     },
     {
       "type": "p",
-      "text": "[de] However, lithiation induces severe 300% volumetric expansion, pulverizing traditional electrodes. When embedded within an elastomeric solid-state binder matrix with high interfacial elasticity, micro-silicon composite anodes accommodate cyclic breathing without losing electrical percolating pathways."
+      "text": "Die Lithiierung führt jedoch zu einer starken Volumenausdehnung von 300 %, wodurch herkömmliche Elektroden pulverisiert werden. Wenn sie in eine Elastomer-Festkörper-Bindemittelmatrix mit hoher Grenzflächenelastizität eingebettet sind, ermöglichen Mikro-Silizium-Verbundanoden die zyklische Atmung, ohne dass elektrische Perkolationswege verloren gehen."
     },
     {
       "type": "h2",
-      "text": "[de] 5. Electrochemical Systems Engineering Takeaways"
+      "text": "5. Erkenntnisse aus der elektrochemischen Systemtechnik"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Stack Compression Engineering: Design cell housings with spring-loaded mechanical platens to maintain continuous interfacial contact through 20% state-of-charge thickness swings.",
-        "[de] Dry Room Manufacturing: Sulfide solid electrolyte production requires ultra-dry atmospheres (dew point < -50°C) to prevent lethal hydrogen sulfide decomposition.",
-        "[de] High-Nickel Cathode Coupling: Pair solid electrolytes with single-crystal NMC90 cathodes coated in lithium borate to eliminate micro-cracking at high cell voltages (> 4.3V)."
+        "Stapelkompressionstechnik: Entwerfen Sie Zellgehäuse mit federbelasteten mechanischen Platten, um einen kontinuierlichen Grenzflächenkontakt über Schwankungen der Ladezustandsdicke von 20 % aufrechtzuerhalten.",
+        "Herstellung in Trockenräumen: Die Herstellung von Sulfid-Festelektrolyten erfordert extrem trockene Atmosphären (Taupunkt < -50 °C), um eine tödliche Schwefelwasserstoffzersetzung zu verhindern.",
+        "Kathodenkopplung mit hohem Nickelgehalt: Kombinieren Sie Festelektrolyte mit einkristallinen NMC90-Kathoden, die mit Lithiumborat beschichtet sind, um Mikrorisse bei hohen Zellspannungen (> 4,3 V) zu vermeiden."
       ]
     }
   ],

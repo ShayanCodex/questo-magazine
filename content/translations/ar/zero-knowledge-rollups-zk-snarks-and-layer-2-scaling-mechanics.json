@@ -1,7 +1,7 @@
 {
   "slug": "zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics",
-  "title": "[ar] Zero-Knowledge Rollups & zk-SNARKs",
-  "excerpt": "[ar] An advanced examination of cryptographic proof systems, arithmetic circuits over elliptic curves, KZG commitments, and recursive SNARK aggregation for blockchain scaling.",
+  "title": "مجموعات المعرفة الصفرية وzk-SNARKs",
+  "excerpt": "فحص متقدم لأنظمة إثبات التشفير، والدوائر الحسابية على المنحنيات الإهليلجية، والتزامات KZG، وتجميع SNARK العودي لتوسيع نطاق blockchain.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,23 +12,23 @@
     "cryptography"
   ],
   "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Futuristic cryptographic network topology representing decentralized zero-knowledge proofs",
+  "imageAlt": "طوبولوجيا شبكة التشفير المستقبلية التي تمثل إثباتات المعرفة الصفرية اللامركزية",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The fundamental dilemma of decentralized ledger architectures is the verifiable computation bottleneck: if every validating node in a global peer-to-peer network must re-execute every transaction sequentially to verify state correctness, transaction throughput is strictly bounded by the processing speed of the slowest physical node. Zero-knowledge rollups (zk-Rollups) resolve this constraint through cryptographic proof systems, replacing redundant distributed re-execution with mathematical succinctness."
+      "text": "المعضلة الأساسية لبنيات دفتر الأستاذ اللامركزي هي عنق الزجاجة الحسابي الذي يمكن التحقق منه: إذا كان يجب على كل عقدة تحقق في شبكة نظير إلى نظير عالمية أن تعيد تنفيذ كل معاملة بشكل تسلسلي للتحقق من صحة الحالة، فإن إنتاجية المعاملة تكون مقيدة بشكل صارم بسرعة معالجة أبطأ عقدة مادية. تعمل مجموعات المعرفة الصفرية (zk-Rollups) على حل هذا القيد من خلال أنظمة إثبات التشفير، واستبدال إعادة التنفيذ الموزعة الزائدة عن الحاجة بالإيجاز الرياضي."
     },
     {
       "type": "p",
-      "text": "[ar] In a zk-Rollup, an off-chain sequencer executes thousands of transactions, updates an internal Merkle state tree, and computes an arithmetic proof asserting that all state updates strictly adhered to protocol rules. This proof, typically only a few hundred bytes in size, is submitted to an on-chain smart contract on Ethereum Layer 1, where it is verified in milliseconds regardless of the complexity or quantity of underlying transactions."
+      "text": "في zk-Rollup، يقوم جهاز التسلسل خارج السلسلة بتنفيذ آلاف المعاملات، وتحديث شجرة حالة Merkle الداخلية، وحساب دليل حسابي يؤكد أن جميع تحديثات الحالة تلتزم بشكل صارم بقواعد البروتوكول. يتم تقديم هذا الدليل، الذي يبلغ حجمه عادةً بضع مئات من البايتات فقط، إلى عقد ذكي على السلسلة على طبقة إيثريوم 1، حيث يتم التحقق منه بالمللي ثانية بغض النظر عن مدى تعقيد المعاملات الأساسية أو كميتها."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. The Arithmetic Circuit and R1CS Representation"
+      "text": "1. الدائرة الحسابية وتمثيل R1CS"
     },
     {
       "type": "p",
-      "text": "[ar] To verify complex state transitions without revealing underlying transaction parameters or executing sequential instructions on-chain, high-level computation is compiled into arithmetic circuits over large finite fields $\\mathbb{F}_p$. These circuits are flattened into Rank-1 Constraint Systems (R1CS), formalized as matrix equations of the structure:"
+      "text": "للتحقق من انتقالات الحالة المعقدة دون الكشف عن معلمات المعاملة الأساسية أو تنفيذ تعليمات تسلسلية على السلسلة، يتم تجميع الحسابات عالية المستوى في دوائر حسابية عبر حقول محدودة كبيرة $\\mathbb{F}_p$. تم تسطيح هذه الدوائر إلى أنظمة قيد من الرتبة 1 (R1CS)، وتم صياغتها كمعادلات مصفوفية للهيكل:"
     },
     {
       "type": "code",
@@ -37,71 +37,71 @@
     },
     {
       "type": "p",
-      "text": "[ar] The R1CS representation is subsequently transformed into a Quadratic Arithmetic Program (QAP) through Lagrange polynomial interpolation. By converting vector dot products into polynomial divisibility checks ($P(x) = H(x) \\cdot T(x)$), the prover can evaluate polynomial relations at a secret evaluation point without exposing intermediate computation states."
+      "text": "يتم تحويل تمثيل R1CS لاحقًا إلى برنامج حسابي تربيعي (QAP) من خلال استيفاء لاغرانج متعدد الحدود. من خلال تحويل منتجات النقاط المتجهة إلى اختبارات قابلية القسمة متعددة الحدود ($P(x) = H(x) \\cdot T(x)$)، يمكن للمثبت تقييم العلاقات متعددة الحدود عند نقطة تقييم سرية دون الكشف عن حالات الحساب المتوسطة."
     },
     {
       "type": "quote",
-      "text": "[ar] Zero-knowledge proofs invert the economics of computation: the prover does the heavy lifting off-chain, while the verifier executes a constant-time cryptographic check on-chain.",
-      "cite": "[ar] Tariq Mahmood, Distributed Systems Fellow"
+      "text": "تعمل براهين المعرفة الصفرية على عكس اقتصاديات الحساب: يقوم المُثبِّت برفع الأحمال الثقيلة خارج السلسلة، في حين يقوم المُحقق بتنفيذ فحص تشفير في وقت ثابت على السلسلة.",
+      "cite": "طارق محمود، زميل الأنظمة الموزعة"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Polynomial Commitments: KZG vs. FRI Protocols"
+      "text": "2. الالتزامات متعددة الحدود: بروتوكولات KZG مقابل بروتوكولات FRI"
     },
     {
       "type": "p",
-      "text": "[ar] The core primitive enabling succinct verification is the polynomial commitment scheme (PCS). A PCS permits a prover to commit to a high-degree polynomial with a single small cryptographic string and subsequently open evaluations of that polynomial at chosen points with an indisputable proof of correctness."
+      "text": "إن التمكين البدائي الأساسي للتحقق المقتضب هو مخطط الالتزام متعدد الحدود (PCS). يسمح نظام PCS للمثبت بالالتزام بكثيرة حدود عالية الدرجة باستخدام سلسلة تشفير صغيرة واحدة ومن ثم فتح تقييمات لذلك كثير الحدود في نقاط مختارة مع دليل لا جدال فيه على الصحة."
     },
     {
       "type": "p",
-      "text": "[ar] Two primary families dominate modern Layer 2 production systems: pairing-based Kate-Zaverucha-Goldberg (KZG) schemes and hash-based Fast Reed-Solomon Interactive Oracle Proofs of Proximity (FRI):"
+      "text": "تهيمن عائلتين أساسيتين على أنظمة إنتاج الطبقة الثانية الحديثة: مخططات Kate-Zaverucha-Goldberg (KZG) القائمة على الاقتران وبرهان القرب التفاعلي Fast Reed-Solomon القائم على التجزئة (FRI):"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] KZG Commitments (Used in Scroll, Taiko, Linea): Yield constant-size proofs (typically 48 bytes on BLS12-381 curves) and constant verification time. They require a Structured Reference String (SRS) generated via a cryptographic trusted setup.",
-        "[ar] FRI Commitments (Used in Starknet / STARKs): Rely strictly on collision-resistant cryptographic hash functions. They require zero trusted setups, are transparent, and provide theoretical post-quantum security at the cost of larger proof sizes (10KB–100KB).",
-        "[ar] Halo2 & IPA Schemes (Used in Zcash, Scroll): Utilize Inner Product Arguments across elliptic curve cycles, eliminating trusted setup ceremonies without incurring the bandwidth penalties of full STARK proofs."
+        "التزامات KZG (المستخدمة في Scroll وTaiko وLinea): إنتاج أدلة ذات حجم ثابت (عادةً 48 بايت على منحنيات BLS12-381) والتحقق المستمر الوقت. وهي تتطلب سلسلة مرجعية منظمة (SRS) تم إنشاؤها عبر إعداد موثوق للتشفير.",
+        "التزامات FRI (المستخدمة في Starknet / STARKs): الاعتماد بشكل صارم على وظائف التجزئة المشفرة المقاومة للتصادم. فهي لا تتطلب أي إعدادات موثوقة، كما أنها شفافة وتوفر أمانًا نظريًا بعد الكم على حساب أحجام إثبات أكبر (10 كيلو بايت - 100 كيلو بايت).",
+        "مخططات Halo2 وIPA (المستخدمة في Zcash وScroll): استخدم وسيطات المنتج الداخلية عبر دورات المنحنى الإهليلجي، مما يؤدي إلى التخلص من احتفالات الإعداد الموثوق بها دون تكبد عقوبات عرض النطاق الترددي لإثباتات STARK الكاملة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Technical Lecture: Vitalik Buterin on ZK-SNARKs and Layer-2 Scaling"
+      "text": "3. محاضرة فنية: Vitalik Buterin حول ZK-SNARKs وقياس الطبقة الثانية"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "[ar] Zero-Knowledge Proofs and Layer-2 Scaling Foundations",
-      "caption": "[ar] Vitalik Buterin explains the cryptographic foundation, state transition proofs, and rollup architectures scaling Ethereum."
+      "title": "إثباتات المعرفة الصفرية وأساسات قياس الطبقة الثانية",
+      "caption": "يشرح Vitalik Buterin أساس التشفير، وإثباتات انتقال الحالة، والبنيات المجمعة لتوسيع نطاق Ethereum."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Data Availability and Proto-Danksharding (EIP-4844)"
+      "text": "4. توفر البيانات وProto-Danksharding (EIP-4844)"
     },
     {
       "type": "p",
-      "text": "[ar] While a validity proof guarantees mathematical correctness of off-chain execution, it does not inherently guarantee that the underlying transaction data is publicly accessible. Without data availability, users cannot reconstruct the state tree in the event of sequencer censorship or infrastructure failure."
+      "text": "في حين أن إثبات الصلاحية يضمن الصحة الرياضية للتنفيذ خارج السلسلة، فإنه لا يضمن بطبيعته أن بيانات المعاملة الأساسية يمكن الوصول إليها بشكل عام. بدون توفر البيانات، لا يمكن للمستخدمين إعادة بناء شجرة الحالة في حالة الرقابة على جهاز التسلسل أو فشل البنية التحتية."
     },
     {
       "type": "p",
-      "text": "[ar] Ethereum EIP-4844 introduced \"data blobs\"—transient, cheaply priced data spaces attached to blocks that persist for roughly 18 days rather than indefinitely occupying L1 execution state. By settling state validity proofs on Layer 1 execution while publishing raw transaction deltas to transient blob storage, rollup gas fees have fallen by over 95%, transforming decentralized applications into consumer-scale utilities."
+      "text": "قدم Ethereum EIP-4844 \"نقاط البيانات\" - مساحات بيانات عابرة ورخيصة الثمن متصلة بالكتل التي تستمر لمدة 18 يومًا تقريبًا بدلاً من احتلال حالة تنفيذ L1 إلى أجل غير مسمى. من خلال تسوية إثباتات صحة الحالة على تنفيذ الطبقة الأولى أثناء نشر دلتا المعاملات الأولية لتخزين البيانات الثنائية الثنائية الكبيرة العابرة، انخفضت رسوم الغاز المجمع بأكثر من 95%، مما أدى إلى تحويل التطبيقات اللامركزية إلى مرافق على نطاق المستهلك."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Cryptographic Takeaways & System Principles"
+      "text": "5. مبادئ التشفير ومبادئ النظام"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Succinctness Over Re-execution: ZK-SNARKs enable global verifiability where verification cost is $O(1)$ or $O(\\log n)$ relative to computation complexity.",
-        "[ar] Separation of Concerns: Decouple execution (off-chain sequencers) from settlement and finality (Layer 1 smart contract verifiers).",
-        "[ar] Recursive Aggregation: Modern provers aggregate thousands of sub-proofs into a single master proof, amortizing on-chain verification gas across hundreds of thousands of transactions.",
-        "[ar] Data Availability Security: Ensure Layer 2 state transitions remain reconstructible through decentralized blob dissemination networks."
+        "الإيجاز في إعادة التنفيذ: تتيح ZK-SNARK إمكانية التحقق العالمي حيث تكون تكلفة التحقق $O(1)$ أو $O(\\log n)$ نسبة إلى تعقيد الحساب.",
+        "فصل الاهتمامات: فصل التنفيذ (أجهزة التسلسل خارج السلسلة) عن التسوية والنهائية (أجهزة التحقق من العقود الذكية من الطبقة الأولى).",
+        "التجميع العودي: تقوم أدوات إثبات إثبات العصر الحديث بتجميع آلاف الأدلة الفرعية في دليل رئيسي واحد، مما يؤدي إلى إطفاء غاز التحقق على السلسلة عبر مئات الآلاف من المعاملات.",
+        "أمان توفر البيانات: ضمان بقاء انتقالات حالة الطبقة الثانية قابلة لإعادة البناء من خلال شبكات نشر البيانات الثنائية الكبيرة اللامركزية."
       ]
     },
     {
       "type": "p",
-      "text": "[ar] Educational Disclaimer: This technical monograph is published exclusively for academic computer science, cryptography, and distributed systems research. It does not constitute financial, investment, or legal advice."
+      "text": "إخلاء المسؤولية التعليمية: يتم نشر هذه الدراسة الفنية حصريًا لأبحاث علوم الكمبيوتر الأكاديمية والتشفير وأبحاث الأنظمة الموزعة. ولا تشكل مشورة مالية أو استثمارية أو قانونية."
     }
   ],
   "sourceHash": "523630936943ab95ea0e6983fdce3c8a20e619d1"

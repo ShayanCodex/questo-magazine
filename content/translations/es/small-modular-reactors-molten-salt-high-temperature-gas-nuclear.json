@@ -1,0 +1,93 @@
+{
+  "slug": "small-modular-reactors-molten-salt-high-temperature-gas-nuclear",
+  "title": "Pequeños reactores nucleares modulares y sistemas de gas de alta temperatura",
+  "excerpt": "Una monografía de investigación en ingeniería energética sobre las microesferas de combustible TRISO, la termodinámica de seguridad pasiva, los circuitos de refrigerante de sales fundidas y la descarbonización de la carga base industrial pesada.",
+  "date": "2026-11-15",
+  "author": "Julian Sterling",
+  "tags": [
+    "science",
+    "energy",
+    "nuclear",
+    "physics",
+    "thermodynamics",
+    "infrastructure",
+    "news"
+  ],
+  "image": "/images/articles/nuclear-smr-reactor.jpg",
+  "imageAlt": "Turbina de vapor de instalación de energía nuclear industrial avanzada de alta precisión e infraestructura de enfriamiento de contención",
+  "body": [
+    {
+      "type": "p",
+      "text": "La electrificación de la economía global enfrenta un obstáculo termodinámico insuperable: las fuentes renovables variables (solar y eólica) no pueden mantener de forma independiente la estabilidad de la red, la inercia sintética y el calor de proceso continuo a alta temperatura para industrias pesadas con uso intensivo de carbono, como la fabricación de acero, la producción de cemento y la síntesis química. Los pequeños reactores modulares (SMR) representan un cambio de paradigma fundamental que se aleja de los proyectos de construcción civil personalizados a escala de gigavatios hacia módulos de fisión nuclear estandarizados y fabricados en fábrica."
+    },
+    {
+      "type": "p",
+      "text": "Al limitar la producción térmica entre 50 y 300 megavatios eléctricos (MWe) por unidad, las arquitecturas SMR aprovechan los sistemas pasivos de eliminación de calor por descomposición gobernados por la circulación natural, la convección y la gravedad. Estos parámetros de seguridad basados ​​en la física eliminan la vulnerabilidad de las dependencias activas de energía de respaldo que caracterizaron los accidentes de los reactores de agua ligera de Generación II heredados."
+    },
+    {
+      "type": "h2",
+      "text": "1. Combustibles TRISO: El pellet nuclear indestructible"
+    },
+    {
+      "type": "p",
+      "text": "En el centro de los diseños SMR avanzados de alta temperatura se encuentra el combustible de partículas TRIestructural-ISOtrópico (TRISO). Cada pastilla TRISO consta de un núcleo de combustible de óxido o carburo de uranio encapsulado dentro de tres capas concéntricas especializadas: una capa amortiguadora de carbono porosa, una capa interna de carbono pirolítico, un límite de contención cerámico de carburo de silicio (SiC) y una capa exterior de carbono pirolítico."
+    },
+    {
+      "type": "p",
+      "text": "Esta contención estructural a nanoescala permite que el combustible TRISO resista temperaturas de funcionamiento superiores a 1.600 grados Celsius sin degradación estructural ni liberación de productos de fisión. Incluso en el caso teóricamente catastrófico de una pérdida total del refrigerante, las partículas TRISO no pueden fundirse, lo que hace que el combustible sea autónomo contra la contaminación ambiental."
+    },
+    {
+      "type": "quote",
+      "text": "La ingeniería nuclear avanzada reemplaza los complejos sistemas de seguridad activos operados por humanos con leyes físicas inmutables: coeficientes de reactividad de temperatura negativos y circuitos de convección pasivos que apagan las reacciones descontroladas automáticamente.",
+      "cite": "Julian Sterling, Carga base limpia y sistemas de energía avanzados"
+    },
+    {
+      "type": "h2",
+      "text": "2. Circuitos de refrigerante de metal líquido y sal fundida"
+    },
+    {
+      "type": "p",
+      "text": "Mientras que los diseños SMR de agua ligera miniaturizan circuitos de agua presurizados (que funcionan a 150 atmósferas), los reactores modulares avanzados de cuarta generación emplean sales líquidas (FLiBe) o metales líquidos (sodio, plomo-bismuto) como refrigerantes de alta conductividad térmica. Los reactores de sales fundidas, que funcionan cerca de la presión atmosférica, eliminan el riesgo catastrófico de expansión explosiva del vapor a alta presión en caso de rotura de una tubería."
+    },
+    {
+      "type": "p",
+      "text": "Además, los sistemas de sales fundidas funcionan a temperaturas de salida del núcleo entre 700 y 950 grados Celsius. Este elevado régimen termodinámico produce eficiencias de generación eléctrica superiores al 48% (en comparación con el 33% de los reactores de agua tradicionales) y permite el acoplamiento térmico directo a celdas de electrólisis de óxido sólido de alta temperatura para la producción de hidrógeno verde."
+    },
+    {
+      "type": "h2",
+      "text": "3. Clase magistral en vídeo: Física y economía de fábrica de reactores SMR"
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Uj_i3q6K31c",
+      "title": "Explicación de los reactores modulares pequeños: física, fabricación modular y economía de redes",
+      "caption": "Una evaluación de ingeniería exhaustiva de la estandarización de fábricas SMR, la seguridad de la contención pasiva y la integración de la carga base del costo nivelado de energía (LCOE)."
+    },
+    {
+      "type": "h2",
+      "text": "4. Arquitectura de implementación: reutilización de la infraestructura del carbón"
+    },
+    {
+      "type": "p",
+      "text": "Una de las mayores ventajas económicas del despliegue estandarizado de SMR es la modernización de zonas abandonadas. Cientos de centrales eléctricas de carbón retiradas o en proceso de retirada en todo el mundo poseen interconexiones de redes de alto voltaje preexistentes, derechos de agua de refrigeración de condensadores, corredores de transporte ferroviario y personal operativo experimentado."
+    },
+    {
+      "type": "p",
+      "text": "Al reemplazar las calderas de carbón heredadas con módulos de generación de calor nuclear SMR ensamblados en fábrica y al mismo tiempo preservar las turbinas, los patios de distribución y la infraestructura de transmisión, las empresas de servicios públicos pueden reducir los gastos de capital hasta en un 35% en comparación con las instalaciones nucleares totalmente nuevas, acelerando la transición global hacia una electricidad continua sin emisiones de carbono."
+    },
+    {
+      "type": "h2",
+      "text": "5. Conclusiones de ingeniería: el futuro de la carga base modular"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Seguridad pasiva inherente: la disipación de calor por desintegración convectiva natural elimina la dependencia de la energía de CA externa o de los generadores de respaldo diésel.",
+        "Permanencia del combustible TRISO: La microencapsulación cerámica de carburo de silicio elimina los mecanismos de fusión del núcleo hasta temperaturas extremas.",
+        "Calor de procesos industriales: La producción de alta temperatura (700°C–950°C) permite la descarbonización directa de plantas químicas, combustibles sintéticos y fabricación de acero.",
+        "Economía de fábrica modular: el cambio de la ingeniería civil in situ a líneas de montaje estandarizadas en fábrica comprime significativamente los tiempos de construcción y los costos de financiamiento."
+      ]
+    }
+  ],
+  "sourceHash": "04baaaf2d8731e9feeeb8dd670c2d0b57b33d1df"
+}

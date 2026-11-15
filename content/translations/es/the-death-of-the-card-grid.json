@@ -1,7 +1,7 @@
 {
   "slug": "the-death-of-the-card-grid",
-  "title": "[es] The Death of the Card Grid",
-  "excerpt": "[es] A critical critique of ubiquitous 3-column card layouts, template monoculture, and how brutalist asymmetric typography is restoring vitality to digital editorial publishing.",
+  "title": "La muerte de Card Grid",
+  "excerpt": "Una crítica crítica de los omnipresentes diseños de tarjetas de 3 columnas, el monocultivo de plantillas y cómo la tipografía asimétrica brutalista está devolviendo la vitalidad a la publicación editorial digital.",
   "date": "2026-11-01",
   "updated": "2026-11-14",
   "author": "Elena Vance",
@@ -12,65 +12,65 @@
     "brutalism"
   ],
   "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Minimalist editorial magazine spreads with asymmetric layout and brutalist white space",
+  "imageAlt": "Revista editorial minimalista con diseño asimétrico y espacios en blanco brutalistas",
   "body": [
     {
       "type": "p",
-      "text": "[es] Every corporate website looks identical. Whether you visit a healthcare startup, an enterprise cloud provider, or a contemporary lifestyle blog, you are almost guaranteed to encounter the exact same visual formula: a centered headline in Inter or Roboto, a pill-shaped primary action button, and three identical rounded-corner cards floating across a light gray background with subtle drop shadows."
+      "text": "Todos los sitios web corporativos parecen idénticos. Ya sea que visite una startup de atención médica, un proveedor de nube empresarial o un blog de estilo de vida contemporáneo, es casi seguro que encontrará exactamente la misma fórmula visual: un título centrado en Inter o Roboto, un botón de acción principal en forma de píldora y tres tarjetas idénticas con esquinas redondeadas flotando sobre un fondo gris claro con sombras sutiles."
     },
     {
       "type": "p",
-      "text": "[es] This visual homogenization is not an accident; it is the inevitable byproduct of component library monoculture. Frameworks like Bootstrap, Material Design, and Tailwind UI have commoditized interface design. By prioritizing ease of implementation and component reusability above artistic expression, the digital design industry has successfully eradicated personality, typographic hierarchy, and genuine editorial rhythm from the web."
+      "text": "Esta homogeneización visual no es un accidente; es el subproducto inevitable del monocultivo de bibliotecas de componentes. Marcos como Bootstrap, Material Design y Tailwind UI han convertido el diseño de interfaz en productos básicos. Al priorizar la facilidad de implementación y la reutilización de los componentes por encima de la expresión artística, la industria del diseño digital ha erradicado con éxito la personalidad, la jerarquía tipográfica y el ritmo editorial genuino de la web."
     },
     {
       "type": "h2",
-      "text": "[es] The Cognitive Stagnation of Repetitive Cards"
+      "text": "El estancamiento cognitivo de las tarjetas repetitivas"
     },
     {
       "type": "p",
-      "text": "[es] The card component was originally popularized by Pinterest and Twitter as a clean metaphor for discrete, bite-sized social media snippets. However, when applied indiscriminately to long-form journalism, critical cultural essays, and luxury digital magazines, the card metaphor collapses into cognitive monotony."
+      "text": "El componente de la tarjeta fue popularizado originalmente por Pinterest y Twitter como una metáfora clara de fragmentos de redes sociales discretos y del tamaño de un bocado. Sin embargo, cuando se aplica indiscriminadamente al periodismo extenso, a los ensayos culturales críticos y a las revistas digitales de lujo, la metáfora de la tarjeta colapsa en la monotonía cognitiva."
     },
     {
       "type": "p",
-      "text": "[es] When twenty articles are presented in identical 3x3 grids of identical white rectangles, the reader's eye glazed over. There is no visual entry point, no typographic scale contrast to signal editorial hierarchy, and no narrative pacing. Everything looks equally important, which means nothing is important."
+      "text": "Cuando veinte artículos se presentan en cuadrículas idénticas de 3x3 de rectángulos blancos idénticos, los ojos del lector se ponen vidriosos. No hay un punto de entrada visual, ni un contraste de escala tipográfica que señale la jerarquía editorial, ni un ritmo narrativo. Todo parece igualmente importante, lo que significa que nada es importante."
     },
     {
       "type": "quote",
-      "text": "[es] Templates are the enemy of memory. If a layout does not surprise the eye, the mind will discard its contents before the second scroll.",
-      "cite": "[es] Elena Vance, Dispatches on Digital Homogeneity"
+      "text": "Las plantillas son enemigas de la memoria. Si un diseño no sorprende a la vista, la mente descartará su contenido antes del segundo rollo.",
+      "cite": "Elena Vance, Dispatches on Digital Homogeneity"
     },
     {
       "type": "h2",
-      "text": "[es] The Principles of Asymmetric Editorial Awakening"
+      "text": "Los principios del despertar editorial asimétrico"
     },
     {
       "type": "p",
-      "text": "[es] To reclaim the vitality of digital publishing, designers must study the masterworks of print art direction—from Alexey Brodovitch’s Harper's Bazaar to Willy Fleckhaus’s Twen. These legendary art directors understood that visual pacing is musical: a whisper must be followed by a shout; a tight, dense typographic column must be juxtaposed against an expansive, silent white field."
+      "text": "Para recuperar la vitalidad de la publicación digital, los diseñadores deben estudiar las obras maestras de la dirección de arte impreso, desde Harper's Bazaar de Alexey Brodovitch hasta Twen de Willy Fleckhaus. Estos legendarios directores de arte entendieron que el ritmo visual es musical: un susurro debe ser seguido por un grito; una columna tipográfica densa y apretada debe yuxtaponerse a un campo blanco expansivo y silencioso."
     },
     {
       "type": "h3",
-      "text": "[es] Techniques for Breaking the Component Monoculture"
+      "text": "Técnicas para romper el monocultivo componente"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Dramatic typographic scale disparity: Juxtaposing an 80-point display title with a compact 10-point metadata strip without enclosing them in artificial card borders.",
-        "[es] Asymmetric horizontal flow: Breaking rigid columns to allow full-bleed photography to push against off-center text blocks, creating dynamic compositional tension.",
-        "[es] Editorial marquee strips: Introducing continuous typographic ticker ribbons that provide kinetic rhythm and contextual movement.",
-        "[es] Generous, unbordered negative space: Allowing the natural white space between elements to define groupings rather than boxing everything inside 1px bordered containers."
+        "Dramática disparidad de escala tipográfica: yuxtaponer un título de visualización de 80 puntos con una tira de metadatos compacta de 10 puntos sin encerrarlos en bordes de tarjetas artificiales.",
+        "Flujo horizontal asimétrico: romper columnas rígidas para permitir que la fotografía a sangre completa empuje los bloques de texto descentrados, creando una tensión compositiva dinámica.",
+        "Tiras de marquesina editorial: Presentamos cintas tipográficas continuas que proporcionan ritmo cinético y movimiento contextual.",
+        "Espacio negativo generoso y sin límites: permitir que el espacio en blanco natural entre elementos defina agrupaciones en lugar de encajonar todo dentro de contenedores con bordes de 1 px."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] Designing for the Attentive Reader"
+      "text": "Diseño para el lector atento"
     },
     {
       "type": "p",
-      "text": "[es] When we reject the ubiquitous card grid, we demonstrate respect for the reader's intelligence. We acknowledge that serious journalism and cultural commentary deserve bespoke spatial choreography, not a cookie-cutter container inherited from an e-commerce catalog."
+      "text": "Cuando rechazamos la omnipresente cuadrícula de tarjetas, demostramos respeto por la inteligencia del lector. Reconocemos que el periodismo serio y los comentarios culturales merecen una coreografía espacial personalizada, no un contenedor prefabricado heredado de un catálogo de comercio electrónico."
     },
     {
       "type": "p",
-      "text": "[es] Questo Magazine stands as a living manifesto for this visual revolution: an international publication where brutalist minimalism, Swiss typographic rigor, and expressive asymmetric layouts converge to create an unforgettable reading experience."
+      "text": "Questo Magazine es un manifiesto viviente de esta revolución visual: una publicación internacional donde el minimalismo brutalista, el rigor tipográfico suizo y los expresivos diseños asimétricos convergen para crear una experiencia de lectura inolvidable."
     }
   ],
   "sourceHash": "3a82b29b0ef0298fe3d9eaedee20ac4aa20724c7"

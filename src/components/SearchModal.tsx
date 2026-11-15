@@ -6,9 +6,13 @@ import {
   XMarkIcon,
   ArrowRightIcon,
   ClockIcon,
-  SparklesIcon,
-  TagIcon,
+  DocumentTextIcon,
+  ChartBarIcon,
+  WrenchScrewdriverIcon,
   FolderIcon,
+  UserIcon,
+  GlobeAltIcon,
+  SparklesIcon,
 } from '@heroicons/react/24/outline';
 import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -17,19 +21,154 @@ import {
   CATEGORIES,
   getArticleCategory,
   getCategoryShortName,
-  formatTopicName,
-  getStructuredSearchSuggestions,
-  type SearchSuggestion,
 } from '../lib/categories';
+import { AUTHORS } from '../data/authors';
+import {
+  INITIAL_GLOBAL_INDICES,
+  INITIAL_COMMODITIES,
+  INITIAL_CRYPTO_ASSETS,
+  INITIAL_FOREX_PAIRS,
+} from '../lib/markets';
 
 const RECENT_SEARCHES_KEY = 'questo-recent-searches';
 
-const CLIENT_TOOLS_SEARCH = [
-  { name: 'Image Converter & Compressor', path: '/tools/image-converter', category: 'Zero-Upload Media', keywords: ['image', 'photo', 'webp', 'png', 'jpg', 'compress', 'convert', 'resize'] },
-  { name: 'Browser Video-to-Audio Extractor', path: '/tools/audio-extractor', category: 'Web Audio API', keywords: ['audio', 'video', 'extract', 'sound', 'mp3', 'wav', 'mp4', 'speech'] },
-  { name: 'Client-Side PDF Document Suite', path: '/tools/pdf-tools', category: 'Document Architecture', keywords: ['pdf', 'document', 'print', 'inspect', 'page'] },
-  { name: 'Financial Intelligence Calculator', path: '/tools/financial-calculator', category: 'Wealth Modeling', keywords: ['finance', 'compound', 'interest', 'money', 'loan', 'mortgage', 'inflation', 'calculator'] },
-  { name: 'Metabolic & Health Calculator', path: '/tools/health-calculator', category: 'Clinical Physiology', keywords: ['health', 'bmi', 'bmr', 'tdee', 'calorie', 'calories', 'weight', 'macro', 'nutrition', 'calculator'] },
+export type UniversalResultType = 'article' | 'market' | 'tool' | 'category' | 'author' | 'page';
+
+export interface UniversalSearchResult {
+  id: string;
+  type: UniversalResultType;
+  title: string;
+  subtitle: string;
+  badge: string;
+  url: string;
+  meta?: string;
+  keywords: string[];
+}
+
+const CLIENT_TOOLS: UniversalSearchResult[] = [
+  {
+    id: 'tool-image-converter',
+    type: 'tool',
+    title: 'Image Converter & Compressor',
+    subtitle: 'Zero-upload client-side WebP, PNG, and JPEG compression suite',
+    badge: 'UTILITY',
+    url: '/tools/image-converter',
+    meta: 'Media Suite',
+    keywords: ['image', 'photo', 'webp', 'png', 'jpg', 'compress', 'convert', 'resize', 'tools', 'tool'],
+  },
+  {
+    id: 'tool-audio-extractor',
+    type: 'tool',
+    title: 'Browser Video-to-Audio Extractor',
+    subtitle: 'Extract high-fidelity MP3/WAV audio directly inside the client browser',
+    badge: 'UTILITY',
+    url: '/tools/audio-extractor',
+    meta: 'Web Audio API',
+    keywords: ['audio', 'video', 'extract', 'sound', 'mp3', 'wav', 'mp4', 'speech', 'tools', 'tool'],
+  },
+  {
+    id: 'tool-pdf-tools',
+    type: 'tool',
+    title: 'Client-Side PDF Document Suite',
+    subtitle: 'Inspect, merge, and optimize PDF documents with zero server uploads',
+    badge: 'UTILITY',
+    url: '/tools/pdf-tools',
+    meta: 'Document Architecture',
+    keywords: ['pdf', 'document', 'print', 'inspect', 'page', 'tools', 'tool'],
+  },
+  {
+    id: 'tool-financial-calculator',
+    type: 'tool',
+    title: 'Financial Intelligence Calculator',
+    subtitle: 'Compound interest, inflation discounting, and wealth modeling engine',
+    badge: 'UTILITY',
+    url: '/tools/financial-calculator',
+    meta: 'Wealth Modeling',
+    keywords: ['finance', 'compound', 'interest', 'money', 'loan', 'mortgage', 'inflation', 'calculator', 'tools'],
+  },
+  {
+    id: 'tool-health-calculator',
+    type: 'tool',
+    title: 'Metabolic & Health Calculator',
+    subtitle: 'TDEE, BMR, glycemic energy expenditure, and macronutrient calculator',
+    badge: 'UTILITY',
+    url: '/tools/health-calculator',
+    meta: 'Clinical Physiology',
+    keywords: ['health', 'bmi', 'bmr', 'tdee', 'calorie', 'calories', 'weight', 'macro', 'nutrition', 'calculator', 'tools'],
+  },
+];
+
+const CORE_PAGES: UniversalSearchResult[] = [
+  {
+    id: 'page-articles',
+    type: 'page',
+    title: 'Articles Directory',
+    subtitle: 'Full editorial archive of research monographs, critical essays, and journals',
+    badge: 'DIRECTORY',
+    url: '/articles',
+    meta: 'Catalog',
+    keywords: ['articles', 'essays', 'blog', 'read', 'library', 'all', 'monographs'],
+  },
+  {
+    id: 'page-markets',
+    type: 'page',
+    title: 'Global Market Intelligence',
+    subtitle: 'Real-time indices, foreign exchange rates, crypto telemetry, and commodities',
+    badge: 'FINANCE',
+    url: '/markets',
+    meta: 'Intelligence Desk',
+    keywords: ['markets', 'stocks', 'forex', 'crypto', 'commodities', 'trading', 'finance', 'investing'],
+  },
+  {
+    id: 'page-categories',
+    type: 'page',
+    title: 'Taxonomy of Disciplines',
+    subtitle: 'Explore all 14 editorial categories and specialized academic fields',
+    badge: 'TAXONOMY',
+    url: '/categories',
+    meta: 'Disciplines',
+    keywords: ['categories', 'disciplines', 'topics', 'sections', 'taxonomy'],
+  },
+  {
+    id: 'page-tools',
+    type: 'page',
+    title: 'Interactive Utilities Suite',
+    subtitle: 'Browser-native, privacy-preserving multimedia and computing tools',
+    badge: 'UTILITIES',
+    url: '/tools',
+    meta: 'Suite',
+    keywords: ['tools', 'utilities', 'calculator', 'converter', 'pdf', 'audio'],
+  },
+  {
+    id: 'page-about',
+    type: 'page',
+    title: 'About & Editorial Manifesto',
+    subtitle: 'Questo architectural philosophy, Swiss typography, and slow journalism principles',
+    badge: 'MANIFESTO',
+    url: '/about',
+    meta: 'Philosophy',
+    keywords: ['about', 'manifesto', 'mission', 'principles', 'questo', 'editorial'],
+  },
+  {
+    id: 'page-contact',
+    type: 'page',
+    title: 'Editorial Submissions & Contact',
+    subtitle: 'Submit research monographs, pitch critical commentaries, or contact editors',
+    badge: 'CONTACT',
+    url: '/contact',
+    meta: 'Communication',
+    keywords: ['contact', 'email', 'touch', 'support', 'pitch', 'submit'],
+  },
+  {
+    id: 'page-admin',
+    type: 'page',
+    title: 'Editorial CMS Dashboard',
+    subtitle: 'Publishing workflow, multilingual status, and database controls',
+    badge: 'ADMIN',
+    url: '/admin',
+    meta: 'Management',
+    keywords: ['admin', 'dashboard', 'cms', 'editor', 'publish'],
+  },
 ];
 
 export interface SearchModalProps {
@@ -39,10 +178,6 @@ export interface SearchModalProps {
   tags?: string[];
 }
 
-/**
- * Pure client-side search keyword highlighter.
- * Highlights matching substrings in titles or excerpts with zero external dependencies.
- */
 function highlightMatch(text: string, query: string) {
   if (!query.trim()) return text;
   const escaped = query.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -64,16 +199,48 @@ function highlightMatch(text: string, query: string) {
   );
 }
 
+function getResultIcon(type: UniversalResultType) {
+  switch (type) {
+    case 'article':
+      return DocumentTextIcon;
+    case 'market':
+      return ChartBarIcon;
+    case 'tool':
+      return WrenchScrewdriverIcon;
+    case 'category':
+      return FolderIcon;
+    case 'author':
+      return UserIcon;
+    case 'page':
+    default:
+      return GlobeAltIcon;
+  }
+}
+
+function getBadgeColor(type: UniversalResultType) {
+  switch (type) {
+    case 'article':
+      return 'bg-blue-500/10 text-blue-400 border-blue-500/20';
+    case 'market':
+      return 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20';
+    case 'tool':
+      return 'bg-purple-500/10 text-purple-400 border-purple-500/20';
+    case 'category':
+      return 'bg-amber-500/10 text-amber-400 border-amber-500/20';
+    case 'author':
+      return 'bg-rose-500/10 text-rose-400 border-rose-500/20';
+    case 'page':
+    default:
+      return 'bg-zinc-500/10 text-zinc-400 border-zinc-500/20';
+  }
+}
+
 export function SearchModal({
   open,
   onOpenChange,
   items,
-  tags = [],
 }: SearchModalProps) {
   const [query, setQuery] = useState('');
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -82,24 +249,131 @@ export function SearchModal({
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
 
-  // Smart live structured suggestions (Categories, Subcategories, Topics, Queries)
-  const liveStructured = useMemo(() => {
-    return getStructuredSearchSuggestions(query, items);
-  }, [query, items]);
+  // Build Comprehensive Universal Search Index
+  const universalIndex = useMemo<UniversalSearchResult[]>(() => {
+    const list: UniversalSearchResult[] = [];
 
-  // Client-side tools matching query
-  const matchingTools = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return [];
-    return CLIENT_TOOLS_SEARCH.filter(
-      (tool) =>
-        tool.name.toLowerCase().includes(q) ||
-        tool.category.toLowerCase().includes(q) ||
-        tool.keywords.some((k) => k.includes(q))
-    );
-  }, [query]);
+    // 1. Articles
+    items.forEach((item) => {
+      const { category, subcategory } = getArticleCategory(item);
+      list.push({
+        id: `article-${item.slug}`,
+        type: 'article',
+        title: item.title,
+        subtitle: item.excerpt,
+        badge: getCategoryShortName(category.id).toUpperCase(),
+        url: `/articles/${item.slug}`,
+        meta: `${item.author} • ${item.date}${subcategory ? ` • ${subcategory.name}` : ''}`,
+        keywords: [
+          item.title,
+          item.excerpt,
+          item.author,
+          category.name,
+          getCategoryShortName(category.id),
+          ...(item.tags || []),
+          subcategory?.name || '',
+        ],
+      });
+    });
 
-  // Load recent searches from localStorage on mount & open
+    // 2. Categories
+    CATEGORIES.forEach((cat) => {
+      const shortName = getCategoryShortName(cat.id);
+      list.push({
+        id: `cat-${cat.id}`,
+        type: 'category',
+        title: cat.name,
+        subtitle: cat.description,
+        badge: 'CATEGORY',
+        url: `/categories/${cat.id}`,
+        meta: `${cat.subcategories.length} Specialized Subfields`,
+        keywords: [
+          cat.name,
+          shortName,
+          cat.id,
+          cat.description,
+          ...cat.subcategories.map((s) => s.name),
+        ],
+      });
+    });
+
+    // 3. Markets (Indices, Crypto, Commodities, Forex)
+    INITIAL_GLOBAL_INDICES.forEach((idx) => {
+      list.push({
+        id: `mkt-index-${idx.id}`,
+        type: 'market',
+        title: `${idx.name} (${idx.symbol})`,
+        subtitle: `${idx.exchange} • ${idx.country} benchmark index`,
+        badge: 'MARKET',
+        url: '/markets',
+        meta: `Price: ${idx.price} ${idx.currency}`,
+        keywords: [idx.name, idx.symbol, idx.country, idx.exchange, 'index', 'stocks', 'market', 'finance'],
+      });
+    });
+
+    INITIAL_CRYPTO_ASSETS.forEach((crypto) => {
+      list.push({
+        id: `mkt-crypto-${crypto.id}`,
+        type: 'market',
+        title: `${crypto.name} (${crypto.symbol})`,
+        subtitle: `Decentralized digital asset benchmark • Rank #${crypto.rank || 1}`,
+        badge: 'CRYPTO',
+        url: `/markets/${crypto.id}`,
+        meta: `Price: $${crypto.priceUsd.toLocaleString()} • 24h: ${crypto.change24h >= 0 ? '+' : ''}${crypto.change24h}%`,
+        keywords: [crypto.name, crypto.symbol, 'crypto', 'cryptocurrency', 'bitcoin', 'blockchain', 'market'],
+      });
+    });
+
+    INITIAL_COMMODITIES.forEach((comm) => {
+      list.push({
+        id: `mkt-comm-${comm.id}`,
+        type: 'market',
+        title: `${comm.name} (${comm.symbol})`,
+        subtitle: `${comm.category} commodity contract • ${comm.contract}`,
+        badge: 'COMMODITY',
+        url: `/markets/${comm.id}`,
+        meta: `Unit: ${comm.unit} • Price: $${comm.price}`,
+        keywords: [comm.name, comm.symbol, comm.category, comm.contract, 'commodity', 'gold', 'oil', 'gas', 'silver'],
+      });
+    });
+
+    INITIAL_FOREX_PAIRS.forEach((fx) => {
+      list.push({
+        id: `mkt-fx-${fx.id}`,
+        type: 'market',
+        title: `${fx.pair} Foreign Exchange`,
+        subtitle: `Global currency liquidity corridor (${fx.base} to ${fx.quote})`,
+        badge: 'FOREX',
+        url: `/markets/${fx.id}`,
+        meta: `Rate: ${fx.rate} • 24h: ${fx.changePercent24h >= 0 ? '+' : ''}${fx.changePercent24h.toFixed(2)}%`,
+        keywords: [fx.pair, fx.base, fx.quote, 'forex', 'currency', 'exchange', 'usd', 'eur', 'gbp'],
+      });
+    });
+
+    // 4. Client Tools
+    list.push(...CLIENT_TOOLS);
+
+    // 5. Authors
+    Object.values(AUTHORS).forEach((author) => {
+      list.push({
+        id: `author-${author.slug}`,
+        type: 'author',
+        title: author.name,
+        subtitle: author.bio,
+        badge: 'AUTHOR',
+        url: `/authors/${author.slug}`,
+        meta: `${author.role} • ${author.location}`,
+        keywords: [author.name, author.role, author.location, author.bio, author.slug],
+      });
+    });
+
+    // 6. Core Pages
+    list.push(...CORE_PAGES);
+
+    return list;
+  }, [items]);
+
+  // Load recent searches from localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
       try {
@@ -108,7 +382,7 @@ export function SearchModal({
           setRecentSearches(JSON.parse(stored).slice(0, 5));
         }
       } catch {
-        // Storage unavailable in private browsing
+        // Storage unavailable
       }
     }
   }, [open]);
@@ -127,7 +401,7 @@ export function SearchModal({
       localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(updated));
       setRecentSearches(updated);
     } catch {
-      // Ignore storage errors
+      // Ignore
     }
   }, []);
 
@@ -136,59 +410,50 @@ export function SearchModal({
       localStorage.removeItem(RECENT_SEARCHES_KEY);
       setRecentSearches([]);
     } catch {
-      // Ignore storage errors
+      // Ignore
     }
   };
 
-  // Fast client-side multi-field matching with category & subcategory support
-  const filtered = useMemo(() => {
-    const cleanQuery = query.trim().toLowerCase();
-    return items.filter((item) => {
-      const { category, subcategory } = getArticleCategory(item);
-      if (selectedCategory && category.id !== selectedCategory) return false;
-      if (selectedSubcategory && subcategory?.id !== selectedSubcategory) return false;
-      const matchesTag = selectedTag ? item.tags?.includes(selectedTag) : true;
-      if (!matchesTag) return false;
-      if (!cleanQuery) return true;
-
-      const titleMatch = item.title.toLowerCase().includes(cleanQuery);
-      const excerptMatch = item.excerpt.toLowerCase().includes(cleanQuery);
-      const authorMatch = item.author.toLowerCase().includes(cleanQuery);
-      const tagsMatch = item.tags?.some((tg) => tg.toLowerCase().includes(cleanQuery));
-      const categoryMatch = category.name.toLowerCase().includes(cleanQuery);
-      const subcategoryMatch = subcategory?.name.toLowerCase().includes(cleanQuery);
-
-      return titleMatch || excerptMatch || authorMatch || tagsMatch || categoryMatch || subcategoryMatch;
-    });
-  }, [items, query, selectedTag, selectedCategory, selectedSubcategory]);
-
-  const handleApplySuggestion = (suggestion: SearchSuggestion) => {
-    if (suggestion.type === 'category' && suggestion.categoryId) {
-      setSelectedCategory(suggestion.categoryId);
-      setSelectedSubcategory(null);
-      setQuery('');
-    } else if (
-      suggestion.type === 'subcategory' &&
-      suggestion.categoryId &&
-      suggestion.subcategoryId
-    ) {
-      setSelectedCategory(suggestion.categoryId);
-      setSelectedSubcategory(suggestion.subcategoryId);
-      setQuery('');
-    } else if (suggestion.type === 'topic') {
-      setSelectedTag(suggestion.value);
-      setQuery('');
-    } else {
-      setQuery(suggestion.value);
+  // Universal multi-type search ranking
+  const filteredResults = useMemo<UniversalSearchResult[]>(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      // Return curated cross-section when search box is empty
+      const topArticles = universalIndex.filter((it) => it.type === 'article').slice(0, 4);
+      const topMarkets = universalIndex.filter((it) => it.type === 'market').slice(0, 2);
+      const topTools = universalIndex.filter((it) => it.type === 'tool').slice(0, 2);
+      const topCats = universalIndex.filter((it) => it.type === 'category').slice(0, 2);
+      return [...topArticles, ...topMarkets, ...topTools, ...topCats];
     }
-  };
 
-  // Reset selected index when results change
+    const scored = universalIndex
+      .map((item) => {
+        let score = 0;
+        const titleLower = item.title.toLowerCase();
+        const subtitleLower = item.subtitle.toLowerCase();
+
+        if (titleLower === q) score += 100;
+        else if (titleLower.startsWith(q)) score += 60;
+        else if (titleLower.includes(q)) score += 40;
+
+        if (subtitleLower.includes(q)) score += 20;
+
+        const kwMatch = item.keywords.some((k) => k.toLowerCase().includes(q));
+        if (kwMatch) score += 15;
+
+        return { item, score };
+      })
+      .filter((entry) => entry.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map((entry) => entry.item);
+
+    return scored.slice(0, 25);
+  }, [universalIndex, query]);
+
   useEffect(() => {
     setSelectedIndex(0);
-  }, [filtered]);
+  }, [filteredResults]);
 
-  // Focus input when dialog opens
   useEffect(() => {
     if (open) {
       setTimeout(() => {
@@ -196,62 +461,56 @@ export function SearchModal({
       }, 50);
     } else {
       setQuery('');
-      setSelectedTag(null);
     }
   }, [open]);
 
-  // Keyboard navigation
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      setSelectedIndex((prev) => (filtered.length > 0 ? (prev + 1) % filtered.length : 0));
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      setSelectedIndex((prev) => (filtered.length > 0 ? (prev - 1 + filtered.length) % filtered.length : 0));
-    } else if (e.key === 'Enter') {
-      e.preventDefault();
-      if (filtered[selectedIndex]) {
-        if (query.trim()) {
-          saveRecentSearch(query);
-        }
-        handleSelect(filtered[selectedIndex].slug);
-      }
-    }
-  };
-
-  const handleSelect = (slug: string) => {
+  const handleSelect = (result: UniversalSearchResult) => {
     if (query.trim()) {
       saveRecentSearch(query);
     }
     onOpenChange(false);
-    navigate(localePath(`/articles/${slug}`));
+    navigate(localePath(result.url));
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setSelectedIndex((prev) => (filteredResults.length > 0 ? (prev + 1) % filteredResults.length : 0));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setSelectedIndex((prev) => (filteredResults.length > 0 ? (prev - 1 + filteredResults.length) % filteredResults.length : 0));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (filteredResults[selectedIndex]) {
+        handleSelect(filteredResults[selectedIndex]);
+      }
+    }
   };
 
   return (
     <DialogPrimitive.Root open={open} onOpenChange={onOpenChange}>
       <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs transition-opacity duration-200 data-[state=open]:opacity-100 data-[state=closed]:opacity-0" />
+        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs transition-opacity duration-200 data-[state=open]:opacity-100 data-[state=closed]:opacity-0" />
         <DialogPrimitive.Content
           onKeyDown={handleKeyDown}
-          className="fixed start-1/2 top-1/2 z-50 w-[calc(100vw-1.5rem)] max-w-xl -translate-x-1/2 -translate-y-1/2 bg-editorial-surface border border-editorial-border shadow-2xl rounded-sm overflow-hidden text-editorial-text focus:outline-none"
+          className="fixed start-1/2 top-1/2 z-50 w-[calc(100vw-1.5rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 bg-editorial-surface border border-editorial-border shadow-2xl rounded-sm overflow-hidden text-editorial-text focus:outline-none"
         >
-          {/* Accessible Dialog Title & Description */}
           <DialogPrimitive.Title className="sr-only">
             {t.search}
           </DialogPrimitive.Title>
           <DialogPrimitive.Description className="sr-only">
-            {t.searchPlaceholder}
+            Universal search across articles, market tickers, tools, categories, and authors
           </DialogPrimitive.Description>
 
-          {/* Compact, Focused Search Input Bar */}
-          <div className="group relative flex items-center border-b border-editorial-border bg-editorial-surface px-4 py-3 sm:px-5 focus-within:bg-editorial-surface-subtle transition-colors">
-            <MagnifyingGlassIcon className="h-4.5 w-4.5 text-editorial-text group-focus-within:text-editorial-text shrink-0 me-3 transition-colors" />
+          {/* Focused Universal Search Bar */}
+          <div className="group relative flex items-center border-b border-editorial-border bg-editorial-surface px-4 py-3.5 sm:px-5 focus-within:bg-editorial-surface-subtle transition-colors">
+            <MagnifyingGlassIcon className="h-5 w-5 text-editorial-text group-focus-within:text-editorial-text shrink-0 me-3 transition-colors" />
             <input
               ref={inputRef}
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder={t.searchPlaceholder}
+              placeholder="Search articles, markets, tools, categories, authors..."
               className="w-full bg-transparent font-sans text-sm sm:text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
               aria-label={t.search}
             />
@@ -270,130 +529,9 @@ export function SearchModal({
             </kbd>
           </div>
 
-          {/* Smart Live Suggestions Strip with Sections: Only shows when typing (never beforehand) */}
-          {query.trim().length >= 1 && liveStructured.total > 0 && (
-            <div className="px-3.5 py-2 border-b border-editorial-border/60 bg-editorial-surface-subtle flex flex-col gap-1.5 text-xs font-sans">
-              {/* Category Suggestions */}
-              {liveStructured.categories.length > 0 && (
-                <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-                  <span className="font-sans text-[10px] font-semibold uppercase tracking-wider text-editorial-muted flex items-center gap-1 shrink-0">
-                    <FolderIcon className="h-3 w-3 text-editorial-text" />
-                    <span>Categories:</span>
-                  </span>
-                  {liveStructured.categories.map((sug, i) => (
-                    <button
-                      key={i}
-                      type="button"
-                      onClick={() => handleApplySuggestion(sug)}
-                      className={cn(
-                        'font-sans text-xs font-medium px-3 py-1 rounded-full border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
-                        selectedCategory === sug.categoryId
-                          ? 'bg-editorial-text text-editorial-bg font-semibold'
-                          : 'bg-editorial-surface border-editorial-border hover:border-editorial-text text-editorial-text'
-                      )}
-                    >
-                      <FolderIcon className="h-3 w-3 text-editorial-muted" />
-                      <span>{sug.label}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {/* Topics Suggestions */}
-              {liveStructured.topics.length > 0 && (
-                <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-                  <span className="font-sans text-xs font-medium text-editorial-muted flex items-center gap-1 shrink-0">
-                    <TagIcon className="h-3 w-3 text-editorial-text" />
-                    <span>Topics:</span>
-                  </span>
-                  {liveStructured.topics.map((sug, i) => (
-                    <button
-                      key={i}
-                      type="button"
-                      onClick={() => handleApplySuggestion(sug)}
-                      className={cn(
-                        'font-sans text-xs font-medium px-3 py-1 rounded-full border transition-colors cursor-pointer shrink-0 flex items-center gap-1',
-                        selectedTag === sug.value
-                          ? 'bg-editorial-text text-editorial-bg font-semibold'
-                          : 'bg-editorial-surface border-editorial-border hover:border-editorial-text text-editorial-text'
-                      )}
-                    >
-                      <span>{sug.label}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* Sleek Single-Line Unified Filter Bar (Styled in Poppins font) */}
-          <div className="px-3.5 py-2 border-b border-editorial-border/60 bg-editorial-surface flex items-center gap-1.5 overflow-x-auto no-scrollbar font-sans text-xs">
-            <button
-              type="button"
-              onClick={() => {
-                setSelectedCategory(null);
-                setSelectedSubcategory(null);
-                setSelectedTag(null);
-              }}
-              className={cn(
-                'px-2.5 py-1 text-xs rounded-full font-medium transition-all cursor-pointer shrink-0',
-                selectedCategory === null && selectedSubcategory === null && selectedTag === null
-                  ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                  : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
-              )}
-            >
-              All
-            </button>
-
-            {CATEGORIES.map((cat) => (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => {
-                  setSelectedCategory(selectedCategory === cat.id ? null : cat.id);
-                  setSelectedSubcategory(null);
-                  setSelectedTag(null);
-                }}
-                className={cn(
-                  'px-2.5 py-1 text-xs rounded-full font-medium transition-all cursor-pointer shrink-0',
-                  selectedCategory === cat.id
-                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                    : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
-                )}
-              >
-                {getCategoryShortName(cat.id)}
-              </button>
-            ))}
-
-            {tags.length > 0 && (
-              <>
-                <span className="text-editorial-border select-none shrink-0 px-0.5 font-sans opacity-60">|</span>
-                {tags.slice(0, 5).map((tag) => (
-                  <button
-                    key={tag}
-                    type="button"
-                    onClick={() => {
-                      setSelectedTag(selectedTag === tag ? null : tag);
-                      setSelectedCategory(null);
-                      setSelectedSubcategory(null);
-                    }}
-                    className={cn(
-                      'px-2.5 py-1 text-xs rounded-full font-medium transition-all cursor-pointer shrink-0',
-                      selectedTag === tag
-                        ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                        : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
-                    )}
-                  >
-                    {formatTopicName(tag)}
-                  </button>
-                ))}
-              </>
-            )}
-          </div>
-
-          {/* Professional Blogger Feature: Recent Searches Bar (Zero Backend / Pure Client-Side) */}
+          {/* Recent Searches Bar (Pure Client-Side) */}
           {!query && recentSearches.length > 0 && (
-            <div className="px-4 py-2 border-b border-editorial-border/60 bg-editorial-surface flex items-center justify-between text-xs">
+            <div className="px-4 py-2 border-b border-editorial-border/60 bg-editorial-surface-subtle flex items-center justify-between text-xs">
               <div className="flex items-center gap-2 overflow-x-auto no-scrollbar flex-1 pe-2">
                 <span className="font-sans text-xs font-medium text-editorial-muted flex items-center gap-1 shrink-0">
                   <ClockIcon className="h-3.5 w-3.5 text-editorial-muted" />
@@ -404,7 +542,7 @@ export function SearchModal({
                     key={term}
                     type="button"
                     onClick={() => setQuery(term)}
-                    className="font-sans text-xs font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border hover:border-editorial-text text-editorial-text transition-colors cursor-pointer shrink-0"
+                    className="font-sans text-xs font-medium px-3 py-1 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text transition-colors cursor-pointer shrink-0"
                   >
                     {term}
                   </button>
@@ -420,140 +558,92 @@ export function SearchModal({
             </div>
           )}
 
-          {/* Results List: Balanced, Normal-Sized, Clean Cards with Match Highlighting & ZERO Hover Borders */}
+          {/* Empty Query Header */}
+          {!query && (
+            <div className="px-4 py-2 bg-editorial-surface/50 border-b border-editorial-border/40 flex items-center gap-1.5 text-[11px] font-sans font-semibold uppercase tracking-wider text-editorial-muted">
+              <SparklesIcon className="h-3.5 w-3.5 text-editorial-text" />
+              <span>Recommended Across Questo</span>
+            </div>
+          )}
+
+          {/* Universal Results List */}
           <div
             ref={resultsContainerRef}
-            className="max-h-72 sm:max-h-84 overflow-y-auto custom-scrollbar p-3 pb-6 space-y-2"
+            className="max-h-80 sm:max-h-96 overflow-y-auto custom-scrollbar p-3 space-y-1.5"
           >
-            {matchingTools.length > 0 && (
-              <div className="mb-3 space-y-1.5 border-b border-editorial-border pb-3">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-500 font-semibold px-2 block">
-                  Interactive Client-Side Utilities
-                </span>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
-                  {matchingTools.map((tool) => (
-                    <button
-                      key={tool.path}
-                      type="button"
-                      onClick={() => {
-                        onOpenChange(false);
-                        navigate(localePath(tool.path));
-                      }}
-                      className="p-2.5 rounded-lg bg-editorial-surface border border-editorial-border hover:border-editorial-text text-start transition-colors flex items-center justify-between cursor-pointer"
-                    >
-                      <div className="min-w-0">
-                        <span className="text-xs font-semibold font-sans text-editorial-text block truncate">
-                          {tool.name}
-                        </span>
-                        <span className="text-[10px] font-mono text-editorial-muted">
-                          {tool.category}
-                        </span>
-                      </div>
-                      <ArrowRightIcon className="w-3.5 h-3.5 text-editorial-muted shrink-0 ms-2 rtl:rotate-180" />
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-            {filtered.length === 0 ? (
-              <div className="py-10 px-4 text-center space-y-3">
+            {filteredResults.length === 0 ? (
+              <div className="py-12 px-4 text-center space-y-2">
                 <p className="font-serif text-sm text-editorial-muted">
-                  {t.noSearchResults}
+                  No matching results found for &ldquo;{query}&rdquo;
                 </p>
-                {/* Helpful Suggestions */}
-                <div className="pt-2 flex flex-col items-center gap-2">
-                  <span className="font-sans text-xs font-medium text-editorial-muted flex items-center gap-1.5">
-                    <SparklesIcon className="h-3.5 w-3.5" />
-                    <span>Popular editorial topics:</span>
-                  </span>
-                  <div className="flex flex-wrap justify-center gap-1.5 max-w-sm">
-                    {tags.slice(0, 5).map((tg) => (
-                      <button
-                        key={tg}
-                        type="button"
-                        onClick={() => {
-                          setSelectedTag(tg);
-                          setQuery('');
-                        }}
-                        className="px-3 py-1 font-sans text-xs font-medium rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text transition-colors cursor-pointer"
-                      >
-                        {formatTopicName(tg)}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {(query || selectedTag) && (
-                  <div className="pt-2">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setQuery('');
-                        setSelectedTag(null);
-                      }}
-                      className="inline-block text-xs uppercase font-sans font-medium tracking-wider text-editorial-text hover:underline cursor-pointer"
-                    >
-                      {t.resetFilters}
-                    </button>
-                  </div>
-                )}
+                <p className="text-xs text-editorial-muted/70">
+                  Try searching for keywords like &ldquo;AI&rdquo;, &ldquo;Bitcoin&rdquo;, &ldquo;Architecture&rdquo;, or &ldquo;Calculator&rdquo;.
+                </p>
               </div>
             ) : (
-              filtered.map((item, index) => {
+              filteredResults.map((result, index) => {
                 const isSelected = index === selectedIndex;
+                const IconComponent = getResultIcon(result.type);
+                const badgeColor = getBadgeColor(result.type);
+
                 return (
                   <div
-                    key={item.slug}
+                    key={result.id}
                     role="button"
                     tabIndex={0}
-                    onClick={() => handleSelect(item.slug)}
+                    onClick={() => handleSelect(result)}
                     onMouseEnter={() => setSelectedIndex(index)}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter' || e.key === ' ') {
                         e.preventDefault();
-                        handleSelect(item.slug);
+                        handleSelect(result);
                       }
                     }}
                     className={cn(
-                      'group px-3.5 py-2.5 rounded-sm transition-colors cursor-pointer flex items-center justify-between gap-3 text-start border-0 outline-none focus:outline-none ring-0 focus:ring-0',
+                      'group px-3 py-2.5 rounded-sm transition-colors cursor-pointer flex items-center justify-between gap-3 text-start border-0 outline-none',
                       isSelected
                         ? 'bg-editorial-surface-hover'
-                        : 'hover:bg-editorial-surface-hover/80'
+                        : 'hover:bg-editorial-surface-hover/70'
                     )}
                   >
-                    <div className="space-y-1 min-w-0 flex-1">
-                      {/* Compact Meta & Category Taxonomy Row */}
-                      {(() => {
-                        const { category, subcategory } = getArticleCategory(item);
-                        return (
-                          <div className="flex items-center gap-1.5 text-[11px] font-sans uppercase tracking-wider text-editorial-muted font-medium">
-                            <span className="text-editorial-text font-bold">{getCategoryShortName(category.id)}</span>
-                            {subcategory && (
-                              <>
-                                <span className="opacity-40">/</span>
-                                <span className="opacity-80">{subcategory.name}</span>
-                              </>
+                    <div className="flex items-start gap-3 min-w-0 flex-1">
+                      {/* Type Icon */}
+                      <div className="p-1.5 rounded-xs bg-editorial-surface-subtle text-editorial-muted group-hover:text-editorial-text shrink-0 mt-0.5 border border-editorial-border/40">
+                        <IconComponent className="h-4 w-4" />
+                      </div>
+
+                      <div className="min-w-0 flex-1 space-y-0.5">
+                        {/* Type Badge & Meta Row */}
+                        <div className="flex items-center gap-1.5 text-[10px] font-sans font-medium uppercase tracking-wider">
+                          <span
+                            className={cn(
+                              'px-1.5 py-0.5 rounded-2xs border font-semibold text-[9px]',
+                              badgeColor
                             )}
-                            <span className="opacity-40">•</span>
-                            <span>{item.date}</span>
-                            <span className="opacity-40">•</span>
-                            <span>{highlightMatch(item.author, query)}</span>
-                          </div>
-                        );
-                      })()}
+                          >
+                            {result.badge}
+                          </span>
+                          {result.meta && (
+                            <>
+                              <span className="opacity-40 text-editorial-muted">•</span>
+                              <span className="text-editorial-muted truncate max-w-xs">{result.meta}</span>
+                            </>
+                          )}
+                        </div>
 
-                      {/* Clean Single-Line Title with Match Highlighting */}
-                      <h4 className="font-display font-bold text-sm sm:text-[15px] text-editorial-text leading-tight line-clamp-1">
-                        {highlightMatch(item.title, query)}
-                      </h4>
+                        {/* Title with Match Highlighting */}
+                        <h4 className="font-display font-semibold text-sm sm:text-[15px] text-editorial-text leading-tight truncate">
+                          {highlightMatch(result.title, query)}
+                        </h4>
 
-                      {/* Single-Line Excerpt with Match Highlighting */}
-                      <p className="font-serif text-xs text-editorial-muted line-clamp-1 leading-normal">
-                        {highlightMatch(item.excerpt, query)}
-                      </p>
+                        {/* Subtitle with Match Highlighting */}
+                        <p className="font-serif text-xs text-editorial-muted line-clamp-1 leading-normal">
+                          {highlightMatch(result.subtitle, query)}
+                        </p>
+                      </div>
                     </div>
 
-                    {/* Smooth Arrow Indicator */}
+                    {/* Arrow Indicator */}
                     <ArrowRightIcon
                       className={cn(
                         'h-3.5 w-3.5 shrink-0 transition-transform duration-150',
@@ -572,14 +662,14 @@ export function SearchModal({
           </div>
 
           {/* Compact Accessible Footer */}
-          <div className="border-t border-editorial-border px-3.5 py-2 bg-editorial-surface-subtle flex items-center justify-between text-[10px] font-sans font-medium text-editorial-muted uppercase tracking-wider">
+          <div className="border-t border-editorial-border px-4 py-2 bg-editorial-surface-subtle flex items-center justify-between text-[10px] font-sans font-medium text-editorial-muted uppercase tracking-wider">
             <span>
-              {filtered.length} {t.articlesFound}
+              {filteredResults.length} {filteredResults.length === 1 ? 'result' : 'results'} across Questo
             </span>
             <div className="hidden sm:flex items-center gap-3">
               <span>↑↓ {isRtl ? 'للتنقل' : 'navigate'}</span>
-              <span>↵ {isRtl ? 'للاختيار' : 'select'}</span>
-              <span>ESC {isRtl ? 'للإغلاق' : 'close'}</span>
+              <span>↵ {isRtl ? 'اختيار' : 'select'}</span>
+              <span>ESC {isRtl ? 'إغلاق' : 'close'}</span>
             </div>
           </div>
         </DialogPrimitive.Content>

@@ -1,7 +1,7 @@
 {
   "slug": "postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility",
-  "title": "[ur] Postprandial Glycemic Variability",
-  "excerpt": "[ur] A clinical and biochemical analysis of glucose area-under-the-curve metrics, endothelial oxidative stress, insulin kinetics, and cellular substrate switching.",
+  "title": "پوسٹ پرانڈیل گلیسیمک تغیرات",
+  "excerpt": "گلوکوز کے علاقے کے نیچے وکر میٹرکس، اینڈوتھیلیل آکسیڈیٹیو تناؤ، انسولین کینیٹکس، اور سیلولر سبسٹریٹ سوئچنگ کا کلینیکل اور بائیو کیمیکل تجزیہ۔",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -13,27 +13,27 @@
     "cardiology"
   ],
   "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Clinical health science laboratory telemetry showing cellular biomarkers and metabolic tracking",
+  "imageAlt": "کلینیکل ہیلتھ سائنس لیبارٹری ٹیلی میٹری جو سیلولر بائیو مارکر اور میٹابولک ٹریکنگ دکھاتی ہے",
   "body": [
     {
       "type": "p",
-      "text": "[ur] In conventional clinical medicine, metabolic health has historically been evaluated using static, fasting biomarkers: fasting plasma glucose (FPG) and glycated hemoglobin (HbA1c). While valuable for diagnosing overt Type 2 diabetes mellitus, these coarse metrics completely obscure acute glycemic flux: the dynamic, postprandial glucose excursions that occur following meals. Emerging clinical data demonstrates that glycemic variability (GV)—the amplitude, frequency, and duration of glucose oscillations—is an independent and potent driver of endothelial dysfunction, systemic inflammation, and subclinical atherosclerosis."
+      "text": "روایتی طبی ادویات میں، میٹابولک صحت کا تاریخی طور پر جامد، فاسٹنگ بائیو مارکر کے استعمال سے جائزہ لیا گیا ہے: فاسٹنگ پلازما گلوکوز (FPG) اور گلائیکیٹڈ ہیموگلوبن (HbA1c)۔ اگرچہ اوورٹ ٹائپ 2 ذیابیطس کی تشخیص کے لیے قیمتی ہے، لیکن یہ موٹے میٹرکس شدید گلیسیمک فلوکس کو مکمل طور پر غیر واضح کر دیتے ہیں: ڈائنامک، پوسٹ پرانڈیل گلوکوز سیر جو کھانے کے بعد ہوتی ہے۔ ابھرتے ہوئے طبی اعداد و شمار سے پتہ چلتا ہے کہ گلیسیمک تغیر (GV) — گلوکوز کے دوغلوں کا طول و عرض، تعدد اور دورانیہ — اینڈوتھیلیل dysfunction، نظامی سوزش، اور ذیلی کلینیکل ایتھروسکلروسیس کا ایک آزاد اور طاقتور ڈرائیور ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] The widespread adoption of continuous glucose monitoring (CGM) biosensors in non-diabetic and pre-diabetic populations has illuminated the profound biological difference between a flat glucose response and high-amplitude postprandial spikes. Even individuals with an ostensibly \"normal\" HbA1c of 5.2% can spend several hours daily in transient glycemic spikes exceeding 140 mg/dL, triggering cascades of oxidative stress."
+      "text": "غیر ذیابیطس اور ذیابیطس سے پہلے کی آبادیوں میں مسلسل گلوکوز مانیٹرنگ (CGM) بائیو سینسرز کے وسیع پیمانے پر اپنانے نے فلیٹ گلوکوز ردعمل اور اعلی طول و عرض کے بعد کے اسپائکس کے درمیان گہرے حیاتیاتی فرق کو روشن کیا ہے۔ یہاں تک کہ ظاہری طور پر \"نارمل\" HbA1c 5.2% والے افراد بھی 140 mg/dL سے زیادہ عارضی گلیسیمک اسپائکس میں روزانہ کئی گھنٹے گزار سکتے ہیں، جس سے آکسیڈیٹیو تناؤ کی جھڑپیں شروع ہوتی ہیں۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Biochemical Mechanism: Superoxide Overproduction & Endothelial Damage"
+      "text": "1. بائیو کیمیکل میکانزم: سپر آکسائیڈ زیادہ پیداوار اور اینڈوتھیلیل نقصان"
     },
     {
       "type": "p",
-      "text": "[ur] Why are postprandial spikes biologically damaging even when fasting levels return to baseline within two hours? The primary cellular mechanism occurs within the mitochondrial electron transport chain of vascular endothelial cells."
+      "text": "دو گھنٹے کے اندر روزے کی سطح پر واپس آنے کے بعد بھی مابعد کے اسپائکس حیاتیاتی طور پر کیوں نقصان دہ ہیں؟ بنیادی سیلولر میکانزم عروقی انڈوتھیلیل خلیوں کے مائٹوکونڈریل الیکٹران ٹرانسپورٹ چین کے اندر ہوتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] When an acute influx of glucose floods endothelial cells, excess pyruvate generates an overwhelming concentration of electron donors (NADH and FADH₂) into Complex I and Complex III. This over-saturates the mitochondrial proton gradient, halting the forward passage of electrons and transferring solitary electrons directly to molecular oxygen to synthesize superoxide anions ($O_2^{\\bullet-}$):"
+      "text": "جب گلوکوز کی شدید آمد اینڈوتھیلیل سیلز کو بہا دیتی ہے، تو اضافی پائروویٹ الیکٹران ڈونرز (NADH اور FADH₂) کا کمپلیکس I اور Complex III میں بہت زیادہ ارتکاز پیدا کرتا ہے۔ یہ مائٹوکونڈریل پروٹون گریڈینٹ کو زیادہ سیر کرتا ہے، الیکٹرانوں کے آگے گزرنے کو روکتا ہے اور سوپر آکسائیڈ اینونز ($O_2^{\\bullet-}$) کی ترکیب کے لیے سولیٹری الیکٹران کو براہ راست مالیکیولر آکسیجن میں منتقل کرتا ہے۔"
     },
     {
       "type": "code",
@@ -42,58 +42,58 @@
     },
     {
       "type": "quote",
-      "text": "[ur] A fluctuating glucose profile produces far greater vascular oxidative stress and endothelial apoptosis than a steady, sustained level of moderate hyperglycemia.",
-      "cite": "[ur] Dr. Marcus Vance, Preventive Cardiology & Longevity Medicine"
+      "text": "ایک اتار چڑھاؤ والا گلوکوز پروفائل اعتدال پسند ہائپرگلیسیمیا کی مستحکم، پائیدار سطح سے کہیں زیادہ عروقی آکسیڈیٹیو تناؤ اور اینڈوتھیلیل اپوپٹوس پیدا کرتا ہے۔",
+      "cite": "ڈاکٹر مارکس وینس، پریوینٹیو کارڈیالوجی اور لمبی عمر کی دوا"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Quantifying Glycemic Variability: Key Telemetry Metrics"
+      "text": "2. گلیسیمک تغیرات کی مقدار درست کرنا: کلیدی ٹیلی میٹری میٹرکس"
     },
     {
       "type": "p",
-      "text": "[ur] Modern clinical endocrinology utilizes standardized CGM telemetry parameters to assess glycemic regulation beyond simple average glucose:"
+      "text": "جدید طبی اینڈو کرائنولوجی سادہ اوسط گلوکوز سے آگے گلیسیمک ریگولیشن کا اندازہ لگانے کے لیے معیاری CGM ٹیلی میٹری پیرامیٹرز کا استعمال کرتی ہے:"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Mean Amplitude of Glycemic Excursions (MAGE): Measures the average height of glucose peaks that exceed one standard deviation of the 24-hour mean, serving as the gold standard marker of glycemic volatility.",
-        "[ur] Time in Range (TIR): The percentage of time glucose remains between 70 and 140 mg/dL (optimally >95% for preventive metabolic health).",
-        "[ur] Continuous Overall Net Glycemic Action (CONGA): Evaluates intra-day variation by calculating glycemic differences across specified hourly intervals.",
-        "[ur] Incremental Area Under the Curve (iAUC): Quantifies the total magnitude of postprandial glucose exposure above pre-meal baseline concentrations."
+        "Glycemic Excursions کا اوسط طول و عرض (MAGE): گلوکوز کی چوٹیوں کی اوسط اونچائی کی پیمائش کرتا ہے جو 24 گھنٹے کے اوسط کے ایک معیاری انحراف سے زیادہ ہے، جو گلیسیمک اتار چڑھاؤ کے سونے کے معیار کے نشان کے طور پر کام کرتا ہے۔",
+        "رینج میں وقت (TIR): وقت میں گلوکوز کا فیصد 70 اور 140 mg/dL کے درمیان رہتا ہے (احتیاطی میٹابولک صحت کے لیے بہتر طور پر>95%)۔",
+        "مسلسل مجموعی طور پر نیٹ گلائسیمک ایکشن (CONGA): مخصوص گھنٹہ کے وقفوں میں گلیسیمک فرق کا حساب لگا کر انٹرا ڈے تغیر کا اندازہ کرتا ہے۔",
+        "انکریمنٹل ایریا انڈر دی کرو (iAUC): کھانے سے پہلے کی بنیاد پر ارتکاز کے اوپر پوسٹ پرانڈیل گلوکوز کی کل مقدار کا اندازہ لگاتا ہے۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: Continuous Glucose Monitoring & Metabolic Flexibility"
+      "text": "3. ویڈیو ماسٹر کلاس: گلوکوز کی مسلسل نگرانی اور میٹابولک لچک"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VAEzZeaV5zM",
-      "title": "[ur] Glucose Telemetry, Insulin Kinetics & Metabolic Flexibility",
-      "caption": "[ur] Clinical deep dive into continuous glucose telemetry, postprandial insulin surges, and mitochondrial substrate switching."
+      "title": "گلوکوز ٹیلی میٹری، انسولین کینیٹکس اور میٹابولک لچک",
+      "caption": "مسلسل گلوکوز ٹیلی میٹری، پوسٹ پرانڈیل انسولین سرجز، اور مائٹوکونڈریل سبسٹریٹ سوئچنگ میں کلینیکل گہرا غوطہ۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Metabolic Flexibility: The Randle Cycle and Substrate Switching"
+      "text": "4. میٹابولک لچک: رینڈل سائیکل اور سبسٹریٹ سوئچنگ"
     },
     {
       "type": "p",
-      "text": "[ur] Metabolic flexibility is the physiological capacity of cellular mitochondria to alternate seamlessly between carbohydrate (glucose) and lipid (free fatty acid) oxidation depending on nutritional status and energy demand. This process is governed by the glucose-fatty acid cycle, classically known as the Randle Cycle."
+      "text": "میٹابولک لچک سیلولر مائٹوکونڈریا کی جسمانی صلاحیت ہے جو کاربوہائیڈریٹ (گلوکوز) اور لپڈ (فری فیٹی ایسڈ) آکسیڈیشن کے درمیان غذائیت کی حیثیت اور توانائی کی طلب پر منحصر ہے۔ یہ عمل گلوکوز فیٹی ایسڈ سائیکل سے چلتا ہے، جسے کلاسیکی طور پر رینڈل سائیکل کہا جاتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] In metabolically healthy individuals, insulin surges following carbohydrate intake rapidly activate muscle glucose uptake through GLUT4 translocation and suppress intracellular lipolysis. Conversely, in insulin-resistant phenotypes, high baseline insulin levels lock mitochondria into continuous glucose oxidation while failing to clear excess intramyocellular lipids, resulting in toxic diacylglycerol accumulation and chronic cellular fatigue."
+      "text": "میٹابولک طور پر صحت مند افراد میں، کاربوہائیڈریٹ کی مقدار کے بعد انسولین تیزی سے بڑھ جاتی ہے GLUT4 ٹرانسلوکیشن کے ذریعے پٹھوں میں گلوکوز کی مقدار کو تیزی سے چالو کرتی ہے اور انٹرا سیلولر لائپولائسز کو دباتی ہے۔ اس کے برعکس، انسولین مزاحم فینوٹائپس میں، ہائی بیس لائن انسولین کی سطح مائٹوکونڈریا کو مسلسل گلوکوز آکسیڈیشن میں بند کر دیتی ہے جبکہ اضافی انٹرامائیو سیلولر لپڈس کو صاف کرنے میں ناکام رہتی ہے، جس کے نتیجے میں زہریلا ڈائیسیلگلیسرول جمع ہو جاتا ہے اور دائمی سیلولر تھکاوٹ۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Clinical Takeaways for Preventive Health"
+      "text": "5. احتیاطی صحت کے لیے کلینیکل ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Prioritize Meal Sequencing: Ingesting dietary fiber, lean protein, and healthy fats prior to fast-digesting carbohydrates slows gastric emptying and dampens postprandial glucose spikes by up to 40%.",
-        "[ur] Postprandial Muscular Contraction: Engaging in a modest 15-minute walk immediately following meals stimulates non-insulin-dependent GLUT4 translocation via AMPK activation, clearing systemic glucose into skeletal muscle.",
-        "[ur] Target Low MAGE Over Low Average: Focus clinical strategy on reducing glycemic peak amplitude and volatility rather than obsessing over minimal fasting numbers."
+        "کھانے کی ترتیب کو ترجیح دیں: تیزی سے ہضم ہونے والے کاربوہائیڈریٹس سے پہلے غذائی ریشہ، دبلی پتلی پروٹین، اور صحت مند چکنائی کا استعمال معدے کے خالی ہونے کو کم کرتا ہے اور بعد میں گلوکوز کی بڑھتی ہوئی مقدار کو 40 فیصد تک کم کرتا ہے۔",
+        "پوسٹ پرانڈیل پٹھوں کا سنکچن: کھانے کے فوراً بعد 15 منٹ کی معمولی چہل قدمی میں شامل ہونا AMPK ایکٹیویشن کے ذریعے غیر انسولین پر منحصر GLUT4 ٹرانسلوکیشن کو متحرک کرتا ہے، جس سے کنکال کے پٹھوں میں سیسٹیمیٹک گلوکوز صاف ہوتا ہے۔",
+        "کم اوسط کے مقابلے میں کم MAGE کا ہدف: کم سے کم روزے کی تعداد میں مبتلا ہونے کے بجائے گلیسیمک چوٹی کے طول و عرض اور اتار چڑھاؤ کو کم کرنے پر طبی حکمت عملی پر توجہ دیں۔"
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "cellular-senescence-autophagy-signaling-and-mtor-pathways",
-  "title": "[ar] Cellular Senescence & Autophagy",
-  "excerpt": "[ar] A molecular biology and geroscience monograph on senescent secretome SASP pathology, macroautophagy lysosomal flux, AMPK activation, and rapamycin-mediated mTORC1 longevity signaling.",
+  "title": "الشيخوخة الخلوية والبلعمة الذاتية",
+  "excerpt": "دراسة في علم الأحياء الجزيئي وعلم الشيخوخة عن أمراض SASP السيكومية الهرمة، وتدفق الليزوزومات الليسوسومية الكبيرة، وتنشيط AMPK، وإشارات طول العمر mTORC1 بوساطة الرابامايسين.",
   "date": "2026-11-15",
   "author": "Dr. Aris Thorne",
   "tags": [
@@ -13,23 +13,23 @@
     "neuroscience"
   ],
   "image": "/images/articles/cellular-autophagy-biology.jpg",
-  "imageAlt": "[ar] High resolution fluorescent confocal microscopy visualization of cellular lysosomes and autophagy pathways",
+  "imageAlt": "تصوير مجهري فلوري متحد البؤر عالي الدقة للجسيمات الحالة الخلوية ومسارات الالتهام الذاتي.",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The biological aging of human somatic tissues is not an amorphous decay of physical structure, but an orchestrated breakdown across twelve conserved molecular hallmarks of aging. At the center of this pathophysiological axis lies the antagonism between nutrient-sensing growth signaling (the mechanistic target of rapamycin, mTOR) and internal cellular recycling (macroautophagy), coupled with the progressive accumulation of irreversible cellular senescence."
+      "text": "الشيخوخة البيولوجية للأنسجة الجسدية البشرية ليست انحلالًا غير متبلور للبنية الفيزيائية، ولكنها انهيار منسق عبر اثنتي عشرة سمة جزيئية محفوظة للشيخوخة. في قلب هذا المحور الفيزيولوجي المرضي يكمن العداء بين إشارات نمو استشعار المغذيات (الهدف الميكانيكي للرابامايسين، mTOR) وإعادة التدوير الخلوي الداخلي (البلعمة الذاتية الكبيرة)، إلى جانب التراكم التدريجي للشيخوخة الخلوية التي لا رجعة فيها."
     },
     {
       "type": "p",
-      "text": "[ar] When somatic cells experience critical telomeric shortening, unresolved double-strand DNA breaks, or oncogenic stress, they activate the p53-p21CIP1 and p16INK4a tumor suppressor cascades. Rather than undergoing apoptosis, these cells enter permanent cell-cycle arrest, transforming into metabolically active senescent zombie cells that continuously poison adjacent tissue architecture."
+      "text": "عندما تواجه الخلايا الجسدية تقصيرًا خطيرًا في التيلومير، أو انقطاع الحمض النووي المزدوج الذي لم يتم حله، أو الإجهاد الجيني، فإنها تقوم بتنشيط الشلالات الكابتة للورم p53-p21CIP1 وp16INK4a. وبدلاً من الخضوع لموت الخلايا المبرمج، تدخل هذه الخلايا في توقف الدورة الخلوية الدائم، وتتحول إلى خلايا زومبي هرمة نشطة أيضيًا تعمل باستمرار على تسميم بنية الأنسجة المجاورة."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. The Senescence-Associated Secretory Phenotype (SASP)"
+      "text": "1. النمط الظاهري للإفراز المرتبط بالشيخوخة (SASP)"
     },
     {
       "type": "p",
-      "text": "[ar] Senescent cells do not remain biologically silent. Through the activation of the cyclic GMP-AMP synthase (cGAS)-STING pathway and NF-κB nuclear translocation, they secrete a potent cocktail of pro-inflammatory cytokines, chemokines, and extracellular matrix-degrading proteases:"
+      "text": "الخلايا الهرمة لا تبقى صامتة بيولوجيا. من خلال تنشيط مسار GMP-AMP سينسيز (cGAS) -STING والانتقال النووي NF-κB، فإنها تفرز مزيجًا قويًا من السيتوكينات المؤيدة للالتهابات، والكيموكينات، والبروتياز خارج الخلية المهينة للمصفوفة:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] Even a minor burden of senescent cells (comprising less than 1% of total tissue volume in adipose or arterial walls) produces sufficient paracrine SASP transmission to induce endothelial dysfunction, hepatic fibrosis, and widespread tissue frailty."
+      "text": "حتى العبء البسيط للخلايا الهرمة (التي تضم أقل من 1٪ من إجمالي حجم الأنسجة في الجدران الدهنية أو الشرايين) ينتج ما يكفي من انتقال SASP نظير الصماوي للحث على ضعف بطانة الأوعية الدموية، وتليف الكبد، وضعف الأنسجة على نطاق واسع."
     },
     {
       "type": "quote",
-      "text": "[ar] Aging is not the exhaustion of life, but the failure to clear dead machinery while screaming growth signals drown out cellular renewal.",
-      "cite": "[ar] Dr. Aris Thorne, Fellow in Molecular Geroscience & Preventive Medicine"
+      "text": "الشيخوخة ليست استنفاد الحياة، بل هي الفشل في إزالة الآلات الميتة بينما تطغى إشارات النمو الصارخة على التجديد الخلوي.",
+      "cite": "دكتور آريس ثورن، زميل في علم الشيخوخة الجزيئي والطب الوقائي"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Macroautophagy: Lysosomal Clearance and ULK1 Induction"
+      "text": "2. البلعمة الذاتية الكبيرة: إزالة الليزوزومات وتحريض ULK1"
     },
     {
       "type": "p",
-      "text": "[ar] Autophagy is the primary catabolic degradation pathway responsible for clearing damaged organelles (mitophagy) and aggregated toxic proteins. Under nutrient-rich conditions, active mTOR Complex 1 (mTORC1) directly phosphorylates the ULK1-ATG13-FIP200 complex at Ser757, completely suppressing autophagy initiation."
+      "text": "الالتهام الذاتي هو مسار التحلل التقويضي الأساسي المسؤول عن إزالة العضيات التالفة (البلعمة) والبروتينات السامة المجمعة. في ظل ظروف غنية بالمغذيات، يقوم مركب mTOR 1 (mTORC1) النشط بفسفرة مركب ULK1-ATG13-FIP200 مباشرة في Ser757، مما يثبط تمامًا بدء الالتهام الذاتي."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] AMPK Activation: Cellular energy depletion (elevated AMP/ATP ratios) activates AMP-activated protein kinase (AMPK), which directly phosphorylates ULK1 at Ser317 and Ser777, triggering phagophore nucleation.",
-        "[ar] Phagophore Elongation: The ATG12-ATG5-ATG16L1 conjugate system coordinates the lipidation of cytosolic LC3-I into phosphatidylethanolamine-conjugated LC3-II, assembling the double-membrane autophagosome.",
-        "[ar] Lysosomal Fusion & Proteolysis: Autophagosomes fuse with acidic lysosomes (pH ~4.5) to form autolysosomes, degrading encapsulated cargo into free amino acids and fatty acids for metabolic recycling."
+        "تنشيط AMPK: يؤدي استنزاف الطاقة الخلوية (نسب AMP/ATP المرتفعة) إلى تنشيط البروتين كيناز المنشط بـ AMP (AMPK)، والذي يفسفر مباشرة ULK1 في Ser317 وSer777، مما يؤدي إلى نواة حامل البلعمة.",
+        "استطالة البلعمة: يقوم النظام المترافق ATG12-ATG5-ATG16L1 بتنسيق دهون LC3-I العصاري الخلوي إلى LC3-II المترافق مع الفوسفاتيديل إيثانولامين، مما يؤدي إلى تجميع جسيم البلعمة الذاتي مزدوج الغشاء.",
+        "اندماج الليزوزومات وتحليل البروتينات: تندمج الجسيمات البلعمية الذاتية مع الليزوزومات الحمضية (درجة الحموضة ~ 4.5) لتكوين الجسيمات الحالة الذاتية، مما يؤدي إلى تحلل البضائع المغلفة إلى أحماض أمينية حرة وأحماض دهنية لإعادة التدوير الأيضي."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Cellular Metabolism, Nutrient Sensing & Autophagy"
+      "text": "3. دروس فيديو متقدمة: الأيض الخلوي، واستشعار المغذيات والالتهام الذاتي"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VAEzZeaV5zM",
-      "title": "[ar] Cellular Metabolism, Nutrient Sensing, and Autophagy Dynamics",
-      "caption": "[ar] Dr. Andrew Huberman's deep dive into metabolic pathways, insulin kinetics, nutrient sensing, and the cellular biology of autophagy."
+      "title": "الأيض الخلوي، واستشعار المغذيات، وديناميكيات الالتهام الذاتي",
+      "caption": "الغوص العميق للدكتور أندرو هوبرمان في مسارات التمثيل الغذائي، وحركية الأنسولين، واستشعار المغذيات، والبيولوجيا الخلوية للالتهام الذاتي."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Senolytic Therapeutics and mTORC1 Inhibition"
+      "text": "4. علاجات الشيخوخة وتثبيط mTORC1"
     },
     {
       "type": "p",
-      "text": "[ar] Pharmacological interventions targeting these pathways have demonstrated profound lifespan and healthspan extension in mammalian trials. Senolytic compounds—such as the tyrosine kinase inhibitor dasatinib paired with the flavonoid quercetin (D+Q), or the BCL-2/BCL-xL antagonist navitoclax—transiently disable senescent cell anti-apoptotic pathways (SCAPs), selectively triggering apoptosis in senescent cells while leaving healthy somatic cells untouched."
+      "text": "أظهرت التدخلات الدوائية التي تستهدف هذه المسارات عمرًا عميقًا وإطالة عمر الصحة في تجارب الثدييات. تعمل المركبات الحالة للشيخوخة - مثل مثبط التيروزين كيناز dasatinib المقترن مع كيرسيتين الفلافونويد (D+Q)، أو نافيتوكلاكس المضاد BCL-2/BCL-xL - على تعطيل عابر للمسارات المضادة لموت الخلايا المبرمج (SCAPs)، مما يؤدي بشكل انتقائي إلى موت الخلايا المبرمج في الخلايا الهرمة مع ترك الخلايا الجسدية السليمة دون مساس."
     },
     {
       "type": "p",
-      "text": "[ar] Simultaneously, pulsed low-dose rapamycin or its analogs (rapalogs) achieve allosteric inhibition of mTORC1 without destabilizing mTORC2, restoring basal autophagy flux and preserving stem cell regenerative capacity."
+      "text": "في الوقت نفسه، تحقق جرعة منخفضة من الرابامايسين النابض أو نظائره (رابالوغ) تثبيطًا خيفيًا لـ mTORC1 دون زعزعة استقرار mTORC2، واستعادة تدفق الالتهام الذاتي القاعدي والحفاظ على قدرة تجديد الخلايا الجذعية."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Preventive Clinical & Longevity Takeaways"
+      "text": "5. الوجبات السريعة الوقائية السريرية وطول العمر"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Pulsed Caloric Restriction: Periodic fasting (16-24 hours) suppresses systemic insulin-IGF-1 signaling, activating AMPK and initiating deep lysosomal autophagic flux.",
-        "[ar] Thermal Stress Induction: Regular sauna exposure (80-90°C) upregulates Heat Shock Proteins (HSP70, HSP90), preventing misfolded protein aggregation and chaperone-mediated autophagy breakdown.",
-        "[ar] High-Intensity Resistance Loading: Progressive mechanical muscular overload promotes satellite cell expansion, counteracting age-associated sarcopenia and reducing circulating systemic SASP markers."
+        "تقييد السعرات الحرارية النبضية: الصيام الدوري (16-24 ساعة) يمنع إشارات الأنسولين النظامية IGF-1، وينشط AMPK ويبدأ تدفق الالتهام الذاتي العميق.",
+        "تحريض الإجهاد الحراري: التعرض المنتظم للساونا (80-90 درجة مئوية) ينظم بروتينات الصدمة الحرارية (HSP70، HSP90)، ويمنع تراكم البروتين الخاطئ وانهيار الالتهام الذاتي بوساطة مرافق.",
+        "تحميل المقاومة عالي الكثافة: الحمل الزائد العضلي الميكانيكي التقدمي يعزز توسع الخلايا الساتلة، ويقاوم الساركوبينيا المرتبطة بالعمر ويقلل من علامات SASP الجهازية المنتشرة."
       ]
     }
   ],

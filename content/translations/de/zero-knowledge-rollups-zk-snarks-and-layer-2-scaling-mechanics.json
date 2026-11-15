@@ -1,7 +1,7 @@
 {
   "slug": "zero-knowledge-rollups-zk-snarks-and-layer-2-scaling-mechanics",
-  "title": "[de] Zero-Knowledge Rollups & zk-SNARKs",
-  "excerpt": "[de] An advanced examination of cryptographic proof systems, arithmetic circuits over elliptic curves, KZG commitments, and recursive SNARK aggregation for blockchain scaling.",
+  "title": "Zero-Knowledge-Rollups und zk-SNARKs",
+  "excerpt": "Eine erweiterte Untersuchung kryptografischer Beweissysteme, arithmetischer Schaltkreise über elliptische Kurven, KZG-Verpflichtungen und rekursiver SNARK-Aggregation für die Blockchain-Skalierung.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,23 +12,23 @@
     "cryptography"
   ],
   "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[de] Futuristic cryptographic network topology representing decentralized zero-knowledge proofs",
+  "imageAlt": "Futuristische kryptografische Netzwerktopologie, die dezentrale Zero-Knowledge-Beweise darstellt",
   "body": [
     {
       "type": "p",
-      "text": "[de] The fundamental dilemma of decentralized ledger architectures is the verifiable computation bottleneck: if every validating node in a global peer-to-peer network must re-execute every transaction sequentially to verify state correctness, transaction throughput is strictly bounded by the processing speed of the slowest physical node. Zero-knowledge rollups (zk-Rollups) resolve this constraint through cryptographic proof systems, replacing redundant distributed re-execution with mathematical succinctness."
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "p",
-      "text": "[de] In a zk-Rollup, an off-chain sequencer executes thousands of transactions, updates an internal Merkle state tree, and computes an arithmetic proof asserting that all state updates strictly adhered to protocol rules. This proof, typically only a few hundred bytes in size, is submitted to an on-chain smart contract on Ethereum Layer 1, where it is verified in milliseconds regardless of the complexity or quantity of underlying transactions."
+      "text": "In einem zk-Rollup führt ein Off-Chain-Sequenzer Tausende von Transaktionen aus, aktualisiert einen internen Merkle-Zustandsbaum und berechnet einen arithmetischen Beweis, der bestätigt, dass alle Zustandsaktualisierungen strikt den Protokollregeln entsprechen. Dieser Nachweis, der normalerweise nur wenige hundert Bytes groß ist, wird an einen On-Chain-Smart-Contract auf Ethereum Layer 1 übermittelt, wo er unabhängig von der Komplexität oder Menge der zugrunde liegenden Transaktionen in Millisekunden überprüft wird."
     },
     {
       "type": "h2",
-      "text": "[de] 1. The Arithmetic Circuit and R1CS Representation"
+      "text": "1. Die arithmetische Schaltung und die R1CS-Darstellung"
     },
     {
       "type": "p",
-      "text": "[de] To verify complex state transitions without revealing underlying transaction parameters or executing sequential instructions on-chain, high-level computation is compiled into arithmetic circuits over large finite fields $\\mathbb{F}_p$. These circuits are flattened into Rank-1 Constraint Systems (R1CS), formalized as matrix equations of the structure:"
+      "text": "Um komplexe Zustandsübergänge zu verifizieren, ohne zugrunde liegende Transaktionsparameter preiszugeben oder sequentielle Anweisungen in der Kette auszuführen, werden High-Level-Berechnungen in arithmetische Schaltkreise über große endliche Felder $\\mathbb{F}_p$ kompiliert. Diese Schaltkreise werden in Rank-1-Constraint-Systeme (R1CS) abgeflacht und als Matrixgleichungen der Struktur formalisiert:"
     },
     {
       "type": "code",
@@ -37,71 +37,71 @@
     },
     {
       "type": "p",
-      "text": "[de] The R1CS representation is subsequently transformed into a Quadratic Arithmetic Program (QAP) through Lagrange polynomial interpolation. By converting vector dot products into polynomial divisibility checks ($P(x) = H(x) \\cdot T(x)$), the prover can evaluate polynomial relations at a secret evaluation point without exposing intermediate computation states."
+      "text": "Die R1CS-Darstellung wird anschließend durch Lagrange-Polynominterpolation in ein quadratisches Arithmetikprogramm (QAP) umgewandelt. Durch die Umwandlung von Vektorskalaprodukten in Polynomteilbarkeitsprüfungen ($P(x) = H(x) \\cdot T(x)$) kann der Beweiser Polynombeziehungen an einem geheimen Bewertungspunkt auswerten, ohne Zwischenberechnungszustände offenzulegen."
     },
     {
       "type": "quote",
-      "text": "[de] Zero-knowledge proofs invert the economics of computation: the prover does the heavy lifting off-chain, while the verifier executes a constant-time cryptographic check on-chain.",
-      "cite": "[de] Tariq Mahmood, Distributed Systems Fellow"
+      "text": "Wissensfreie Beweise kehren die Ökonomie der Berechnung um: Der Prüfer erledigt die schwere Arbeit außerhalb der Kette, während der Verifizierer eine kryptografische Prüfung mit konstanter Zeit in der Kette ausführt.",
+      "cite": "Tariq Mahmood, Distributed Systems Fellow"
     },
     {
       "type": "h2",
-      "text": "[de] 2. Polynomial Commitments: KZG vs. FRI Protocols"
+      "text": "2. Polynomial Commitments: KZG vs. FRI-Protokolle"
     },
     {
       "type": "p",
-      "text": "[de] The core primitive enabling succinct verification is the polynomial commitment scheme (PCS). A PCS permits a prover to commit to a high-degree polynomial with a single small cryptographic string and subsequently open evaluations of that polynomial at chosen points with an indisputable proof of correctness."
+      "text": "Das Kernprimitiv, das eine prägnante Verifizierung ermöglicht, ist das Polynomial Commitment Scheme (PCS). Ein PCS ermöglicht es einem Prüfer, sich mit einer einzigen kleinen kryptografischen Zeichenfolge auf ein Polynom höheren Grades festzulegen und anschließend Auswertungen dieses Polynoms an ausgewählten Punkten mit einem unbestreitbaren Beweis der Korrektheit zu öffnen."
     },
     {
       "type": "p",
-      "text": "[de] Two primary families dominate modern Layer 2 production systems: pairing-based Kate-Zaverucha-Goldberg (KZG) schemes and hash-based Fast Reed-Solomon Interactive Oracle Proofs of Proximity (FRI):"
+      "text": "Zwei Hauptfamilien dominieren moderne Layer-2-Produktionssysteme: Paarungsbasierte Kate-Zaverucha-Goldberg-Schemata (KZG) und Hash-basierte Fast Reed-Solomon Interactive Oracle Proofs of Proximity (FRI):"
     },
     {
       "type": "ul",
       "items": [
-        "[de] KZG Commitments (Used in Scroll, Taiko, Linea): Yield constant-size proofs (typically 48 bytes on BLS12-381 curves) and constant verification time. They require a Structured Reference String (SRS) generated via a cryptographic trusted setup.",
-        "[de] FRI Commitments (Used in Starknet / STARKs): Rely strictly on collision-resistant cryptographic hash functions. They require zero trusted setups, are transparent, and provide theoretical post-quantum security at the cost of larger proof sizes (10KB–100KB).",
-        "[de] Halo2 & IPA Schemes (Used in Zcash, Scroll): Utilize Inner Product Arguments across elliptic curve cycles, eliminating trusted setup ceremonies without incurring the bandwidth penalties of full STARK proofs."
+        "KZG-Verpflichtungen (verwendet in Scroll, Taiko, Linea): Erzielen Sie Proofs mit konstanter Größe (typischerweise 48 Bytes auf BLS12-381-Kurven) und eine konstante Überprüfungszeit. Sie erfordern einen strukturierten Referenzstring (SRS), der über ein kryptografisches, vertrauenswürdiges Setup generiert wird.",
+        "FRI-Verpflichtungen (verwendet in Starknet/STARKs): Verlassen Sie sich strikt auf kollisionsresistente kryptografische Hash-Funktionen. Sie erfordern Zero-Trust-Setups, sind transparent und bieten theoretische Post-Quantum-Sicherheit auf Kosten größerer Proof-Größen (10 KB–100 KB).",
+        "Halo2- und IPA-Schemata (verwendet in Zcash, Scroll): Nutzen Sie innere Produktargumente über elliptische Kurvenzyklen hinweg und eliminieren Sie vertrauenswürdige Setup-Zeremonien, ohne die Bandbreiteneinbußen vollständiger STARK-Beweise zu erleiden."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 3. Technical Lecture: Vitalik Buterin on ZK-SNARKs and Layer-2 Scaling"
+      "text": "3. Technischer Vortrag: Vitalik Buterin über ZK-SNARKs und Layer-2-Skalierung"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "[de] Zero-Knowledge Proofs and Layer-2 Scaling Foundations",
-      "caption": "[de] Vitalik Buterin explains the cryptographic foundation, state transition proofs, and rollup architectures scaling Ethereum."
+      "title": "Zero-Knowledge Proofs und Layer-2-Skalierungsgrundlagen",
+      "caption": "Vitalik Buterin erklärt die kryptografischen Grundlagen, Zustandsübergangsnachweise und Rollup-Architekturen zur Skalierung von Ethereum."
     },
     {
       "type": "h2",
-      "text": "[de] 4. Data Availability and Proto-Danksharding (EIP-4844)"
+      "text": "4. Datenverfügbarkeit und Proto-Danksharding (EIP-4844)"
     },
     {
       "type": "p",
-      "text": "[de] While a validity proof guarantees mathematical correctness of off-chain execution, it does not inherently guarantee that the underlying transaction data is publicly accessible. Without data availability, users cannot reconstruct the state tree in the event of sequencer censorship or infrastructure failure."
+      "text": "Während ein Gültigkeitsnachweis die mathematische Korrektheit der Off-Chain-Ausführung garantiert, garantiert er nicht grundsätzlich, dass die zugrunde liegenden Transaktionsdaten öffentlich zugänglich sind. Ohne Datenverfügbarkeit können Benutzer den Zustandsbaum im Falle einer Sequencer-Zensur oder eines Infrastrukturausfalls nicht rekonstruieren."
     },
     {
       "type": "p",
-      "text": "[de] Ethereum EIP-4844 introduced \"data blobs\"—transient, cheaply priced data spaces attached to blocks that persist for roughly 18 days rather than indefinitely occupying L1 execution state. By settling state validity proofs on Layer 1 execution while publishing raw transaction deltas to transient blob storage, rollup gas fees have fallen by over 95%, transforming decentralized applications into consumer-scale utilities."
+      "text": "Ethereum EIP-4844 führte „Datenblobs“ ein – vorübergehende, kostengünstige Datenräume, die an Blöcke gebunden sind und etwa 18 Tage lang bestehen bleiben, anstatt den L1-Ausführungsstatus auf unbestimmte Zeit zu belegen. Durch die Abwicklung von Zustandsgültigkeitsnachweisen bei der Layer-1-Ausführung bei gleichzeitiger Veröffentlichung von Rohtransaktionsdeltas im transienten Blob-Speicher sind die Rollup-Gasgebühren um über 95 % gesunken und dezentrale Anwendungen in Versorgungsunternehmen im Verbrauchermaßstab umgewandelt worden."
     },
     {
       "type": "h2",
-      "text": "[de] 5. Cryptographic Takeaways & System Principles"
+      "text": "5. Kryptografische Erkenntnisse und Systemprinzipien"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Succinctness Over Re-execution: ZK-SNARKs enable global verifiability where verification cost is $O(1)$ or $O(\\log n)$ relative to computation complexity.",
-        "[de] Separation of Concerns: Decouple execution (off-chain sequencers) from settlement and finality (Layer 1 smart contract verifiers).",
-        "[de] Recursive Aggregation: Modern provers aggregate thousands of sub-proofs into a single master proof, amortizing on-chain verification gas across hundreds of thousands of transactions.",
-        "[de] Data Availability Security: Ensure Layer 2 state transitions remain reconstructible through decentralized blob dissemination networks."
+        "Prägnanz statt Neuausführung: ZK-SNARKs ermöglichen eine globale Verifizierbarkeit, bei der die Verifizierungskosten $O(1)$ oder $O(\\log n)$ im Verhältnis zur Berechnungskomplexität betragen.",
+        "Trennung von Belangen: Entkoppeln Sie die Ausführung (Off-Chain-Sequenzer) von der Abwicklung und Endgültigkeit (Verifizierer intelligenter Verträge der Schicht 1).",
+        "Rekursive Aggregation: Moderne Prüfer fassen Tausende von Unterbeweisen zu einem einzigen Hauptbeweis zusammen und amortisieren so den On-Chain-Verifizierungsaufwand über Hunderttausende von Transaktionen.",
+        "Datenverfügbarkeitssicherheit: Stellen Sie sicher, dass Schicht-2-Zustandsübergänge durch dezentrale Blob-Verbreitungsnetzwerke rekonstruierbar bleiben."
       ]
     },
     {
       "type": "p",
-      "text": "[de] Educational Disclaimer: This technical monograph is published exclusively for academic computer science, cryptography, and distributed systems research. It does not constitute financial, investment, or legal advice."
+      "text": "Haftungsausschluss für Bildungseinrichtungen: Diese technische Monographie wird ausschließlich für akademische Zwecke in den Bereichen Informatik, Kryptographie und verteilte Systemforschung veröffentlicht. Es handelt sich nicht um eine Finanz-, Anlage- oder Rechtsberatung."
     }
   ],
   "sourceHash": "523630936943ab95ea0e6983fdce3c8a20e619d1"

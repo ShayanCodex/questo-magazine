@@ -1,7 +1,7 @@
 {
   "slug": "glymphatic-clearance-and-slow-wave-sleep-architecture",
-  "title": "[de] Glymphatic Clearance in Deep Sleep",
-  "excerpt": "[de] A neuroscience and cellular physiology review of aquaporin-4 polarized astrocytic convective flow, amyloid-beta metabolic waste drainage, and delta slow-wave sleep architecture.",
+  "title": "Glymphatische Clearance im Tiefschlaf",
+  "excerpt": "Eine neurowissenschaftliche und zellphysiologische Übersicht über den mit Aquaporin-4 polarisierten astrozytären Konvektionsfluss, die Drainage von Amyloid-Beta-Stoffwechselabfällen und die Delta-Slow-Wave-Schlafarchitektur.",
   "date": "2026-11-15",
   "author": "Dr. Aris Thorne",
   "tags": [
@@ -13,23 +13,23 @@
     "biology"
   ],
   "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[de] Calm bedroom setting illuminated by soft warm ambient light symbolizing deep restorative neurological sleep",
+  "imageAlt": "Ruhige Schlafzimmerumgebung, beleuchtet durch sanftes, warmes Umgebungslicht, das einen tiefen, erholsamen neurologischen Schlaf symbolisiert.",
   "body": [
     {
       "type": "p",
-      "text": "[de] For over a century, neurobiology struggled with an evolutionary paradox: while all peripheral somatic tissues utilize an extensive lymphatic vessel network to evacuate cellular debris and metabolic toxins, the vertebrate brain lacks traditional lymphatic drainage despite consuming 20% of the body's total metabolic energy. Only recently has two-photon laser scanning microscopy unveiled the brain's macroscopic waste clearance mechanism: the glymphatic system."
+      "text": "Über ein Jahrhundert lang kämpfte die Neurobiologie mit einem evolutionären Paradoxon: Während alle peripheren Körpergewebe ein ausgedehntes Netzwerk von Lymphgefäßen nutzen, um Zelltrümmer und Stoffwechselgifte abzutransportieren, fehlt dem Gehirn der Wirbeltiere die traditionelle Lymphdrainage, obwohl es 20 % der gesamten Stoffwechselenergie des Körpers verbraucht. Erst kürzlich hat die Zwei-Photonen-Laser-Scanning-Mikroskopie den makroskopischen Abfallbeseitigungsmechanismus des Gehirns enthüllt: das glymphatische System."
     },
     {
       "type": "p",
-      "text": "[de] The glymphatic system is an astroglia-mediated waste evacuation pathway that operates almost exclusively during deep, non-rapid eye movement (NREM) slow-wave sleep. Driven by arterial wall pulsatility and synchronized delta oscillations (0.5 to 4 Hz), cerebrospinal fluid (CSF) penetrates deep into brain parenchyma along periarterial channels, washing away soluble amyloid-beta ($A\\beta$), hyperphosphorylated tau, and neurotoxic metabolic byproducts into dural venous sinuses."
+      "text": "Das glymphatische System ist ein durch Astroglia vermittelter Weg zur Abfallentsorgung, der fast ausschließlich während des Tiefschlafs mit langsamen, nicht schnellen Augenbewegungen (NREM) funktioniert. Angetrieben durch die Pulsatilität der Arterienwand und synchronisierte Delta-Oszillationen (0,5 bis 4 Hz) dringt die Zerebrospinalflüssigkeit (CSF) entlang periarterieller Kanäle tief in das Gehirnparenchym ein und wäscht lösliches Beta-Amyloid ($A\\beta$), hyperphosphoryliertes Tau und neurotoxische Stoffwechselnebenprodukte in die Duralvenensinus."
     },
     {
       "type": "h2",
-      "text": "[de] 1. Convective Bulk Flow and Astrocytic Aquaporin-4 (AQP4) Channels"
+      "text": "1. Konvektiver Massenfluss und astrozytische Aquaporin-4 (AQP4)-Kanäle"
     },
     {
       "type": "p",
-      "text": "[de] Unlike simple diffusive transport, which is far too sluggish to clear macromolecules across dense neural tissue, the glymphatic system utilizes high-velocity convective bulk fluid flow facilitated by specialized water channels:"
+      "text": "Im Gegensatz zum einfachen diffusiven Transport, der viel zu langsam ist, um Makromoleküle durch dichtes Nervengewebe zu transportieren, nutzt das glymphatische System einen konvektiven Hochgeschwindigkeits-Flüssigkeitsfluss, der durch spezielle Wasserkanäle erleichtert wird:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[de] The astrocytic endfeet that sheath cerebral microvessels express dense polar clusters of Aquaporin-4 (AQP4) water channels. In experimental models, genetic ablation or loss of AQP4 polarization reduces parenchymal CSF influx by more than 65%, precipitating rapid neurodegenerative accumulation of misfolded peptide aggregates."
+      "text": "Die astrozytischen Endfüße, die zerebrale Mikrogefäße umhüllen, exprimieren dichte polare Cluster von Aquaporin-4 (AQP4)-Wasserkanälen. In experimentellen Modellen reduziert die genetische Ablation oder der Verlust der AQP4-Polarisation den parenchymalen Liquor-Einstrom um mehr als 65 %, was eine schnelle neurodegenerative Ansammlung fehlgefalteter Peptidaggregate auslöst."
     },
     {
       "type": "quote",
-      "text": "[de] Sleep is not an idle biological pause, but an active, energy-intensive neurochemical housekeeping protocol without which toxic metabolic refuse inexorably poisons the human mind.",
-      "cite": "[de] Dr. Aris Thorne, Neurobiology & Preventive Medicine Fellow"
+      "text": "Schlaf ist keine müßige biologische Pause, sondern ein aktives, energieintensives neurochemisches Haushaltsprotokoll, ohne das giftige Stoffwechselabfälle den menschlichen Geist unaufhaltsam vergiften.",
+      "cite": "Dr. Aris Thorne, Fellow für Neurobiologie und Präventivmedizin"
     },
     {
       "type": "h2",
-      "text": "[de] 2. Interstitial Space Expansion During Delta Slow-Wave Sleep"
+      "text": "2. Erweiterung des interstitiellen Raums während des Delta-Slow-Wave-Schlafs"
     },
     {
       "type": "p",
-      "text": "[de] During conscious waking hours, high concentrations of locus coeruleus noradrenaline suppress glymphatic flow. Astrocytes and neurons remain swollen, restricting the extracellular interstitial space fraction ($\\alpha$) to approximately 14% of total brain volume, creating extreme hydraulic resistance."
+      "text": "Während der wachen Stunden unterdrücken hohe Konzentrationen des Locus coeruleus Noradrenalin den glymphatischen Fluss. Astrozyten und Neuronen bleiben geschwollen, was den extrazellulären interstitiellen Raumanteil ($\\alpha$) auf etwa 14 % des gesamten Gehirnvolumens einschränkt, was zu einem extremen hydraulischen Widerstand führt."
     },
     {
       "type": "ul",
       "items": [
-        "[de] Extracellular Space Expansion: Upon entry into Stage N3 slow-wave sleep, noradrenergic tone collapses, causing parenchymal cells to shrink and expanding interstitial volume by 60%.",
-        "[de] Hydraulic Resistance Drop: This volumetric expansion causes an immediate collapse in hydrodynamic resistance, allowing CSF to surge through brain parenchyma with unimpeded laminar flow.",
-        "[de] Metabolic Waste Flushes: Real-time radiolabeled tracer telemetry shows amyloid-beta clearance increases two-fold during NREM sleep compared to wakefulness."
+        "Erweiterung des extrazellulären Raums: Beim Eintritt in den Langsamschlaf im Stadium N3 bricht der noradrenerge Tonus zusammen, wodurch die Parenchymzellen schrumpfen und das interstitielle Volumen um 60 % vergrößert wird.",
+        "Abfall des hydraulischen Widerstands: Diese volumetrische Ausdehnung führt zu einem sofortigen Zusammenbruch des hydrodynamischen Widerstands, wodurch der Liquor mit ungehinderter laminarer Strömung durch das Gehirnparenchym strömen kann.",
+        "Stoffwechselabfälle: Echtzeit-Telemetrie mit radioaktiv markierten Tracern zeigt, dass die Amyloid-Beta-Clearance im NREM-Schlaf im Vergleich zum Wachzustand um das Zweifache ansteigt."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 3. Video Masterclass: Sleep Architecture, Neuroprotection & Brain Health"
+      "text": "3. Video-Meisterklasse: Schlafarchitektur, Neuroprotektion und Gehirngesundheit"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM",
-      "title": "[de] Sleep Architecture, Memory Consolidation & Neurological Restoration",
-      "caption": "[de] In-depth scientific lecture on sleep cycles, slow-wave delta synchronization, and the profound neuroprotective functions of deep sleep."
+      "title": "Schlafarchitektur, Gedächtniskonsolidierung und neurologische Wiederherstellung",
+      "caption": "Ausführlicher wissenschaftlicher Vortrag über Schlafzyklen, Slow-Wave-Delta-Synchronisation und die tiefgreifenden neuroprotektiven Funktionen des Tiefschlafs."
     },
     {
       "type": "h2",
-      "text": "[de] 4. Vascular Pulsatility and Cardiac-Respiratory Pumping"
+      "text": "4. Gefäßpulsatilität und Herz-Atem-Pumpen"
     },
     {
       "type": "p",
-      "text": "[de] What drives the physical pumping mechanism of CSF through the rigid intracranial cranium? Glymphatic transport relies on three distinct mechanical pressure waves: cardiac systolic arterial wall expansion, respiratory thoracic pressure fluctuations, and ultra-slow vasomotion cycles (0.1 Hz) driven by smooth muscle contraction."
+      "text": "Was treibt den physikalischen Pumpmechanismus des Liquor durch den starren intrakraniellen Schädel an? Der glymphatische Transport beruht auf drei unterschiedlichen mechanischen Druckwellen: kardialer systolischer Arterienwandausdehnung, respiratorischen Brustdruckschwankungen und ultralangsamen Vasomotionszyklen (0,1 Hz), die durch die Kontraktion der glatten Muskulatur angetrieben werden."
     },
     {
       "type": "p",
-      "text": "[de] As systemic arteries expand with each systolic pulse, they transmit a perivascular displacement wave along the Virchow-Robin space, propelling CSF downstream through one-way hydrodynamic valves created by overlapping pial sheaths. Arterial stiffening caused by chronic hypertension diminishes these pulse waves, directly impairing nocturnal glymphatic cleansing."
+      "text": "Da sich die systemischen Arterien mit jedem systolischen Puls ausdehnen, übertragen sie eine perivaskuläre Verschiebungswelle entlang des Virchow-Robin-Raums und treiben den Liquor stromabwärts durch hydrodynamische Einwegventile, die durch überlappende Piahüllen erzeugt werden. Die durch chronischen Bluthochdruck verursachte Arterienversteifung verringert diese Pulswellen und beeinträchtigt direkt die nächtliche Reinigung der Lymphknoten."
     },
     {
       "type": "h2",
-      "text": "[de] 5. Clinical & Preventive Sleep Optimization Takeaways"
+      "text": "5. Erkenntnisse zur klinischen und präventiven Schlafoptimierung"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Protect Stage N3 Architecture: Avoid alcohol, late-night high-glycemic meals, and sedative hypnotics which suppress natural delta wave power despite inducing unconsciousness.",
-        "[de] Sleep Ergonomics & Posture: Lateral sleep positioning (side-sleeping) has been shown in MRI telemetry studies to facilitate superior glymphatic clearance compared to supine or prone postures.",
-        "[de] Vascular Elasticity Maintenance: Aerobic exercise (Zone 2 endurance training) preserves carotid and cerebral arterial compliance, sustaining the mechanical pulse pressures essential for glymphatic driving force."
+        "Architektur der Stufe N3 schützen: Vermeiden Sie Alkohol, spätabendliche Mahlzeiten mit hohem glykämischen Index und sedierende Hypnotika, die die natürliche Deltawellenkraft unterdrücken, obwohl sie Bewusstlosigkeit hervorrufen.",
+        "Schlafergonomie und -haltung: In MRT-Telemetriestudien wurde gezeigt, dass die seitliche Schlafpositionierung (Seitenschlafen) im Vergleich zur Rücken- oder Bauchhaltung eine bessere glymphatische Clearance ermöglicht.",
+        "Aufrechterhaltung der Gefäßelastizität: Aerobes Training (Ausdauertraining der Zone 2) bewahrt die Compliance der Halsschlagader und der Hirnarterien und hält den mechanischen Pulsdruck aufrecht, der für die glymphatische Antriebskraft unerlässlich ist."
       ]
     }
   ],

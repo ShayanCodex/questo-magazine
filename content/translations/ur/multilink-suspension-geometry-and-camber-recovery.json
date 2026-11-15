@@ -1,7 +1,7 @@
 {
   "slug": "multilink-suspension-geometry-and-camber-recovery",
-  "title": "[ur] Multilink Suspension Geometry",
-  "excerpt": "[ur] A vehicle dynamics monograph analyzing instant centers, roll center migration, dynamic camber compensation curves, and elastokinematic compliance steer under transient lateral loads.",
+  "title": "ملٹی لنک معطلی جیومیٹری",
+  "excerpt": "ایک گاڑی کی ڈائنامکس مونوگراف جو فوری مراکز کا تجزیہ کرتا ہے، رول سینٹر کی منتقلی، متحرک کیمبر کے معاوضے کے منحنی خطوط، اور عارضی پس منظر کے بوجھ کے تحت ایلسٹوکینیمیٹک تعمیل کا راستہ۔",
   "date": "2026-11-15",
   "author": "Liam O'Connor",
   "tags": [
@@ -13,23 +13,23 @@
     "physics"
   ],
   "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] High-performance sports car chassis showing precision machined aluminum suspension control arms and coilover dampening assembly",
+  "imageAlt": "اعلی کارکردگی والی اسپورٹس کار چیسس جس میں درست مشینی ایلومینیم سسپنشن کنٹرول آرمز اور کوائل اوور ڈیمپننگ اسمبلی کو دکھایا گیا ہے",
   "body": [
     {
       "type": "p",
-      "text": "[ur] In competitive motorsport and high-performance automotive engineering, tire grip is the supreme physical constraint limiting cornering velocity. A pneumatic racing tire delivers peak lateral adhesion only when its tread contact patch remains oriented perfectly perpendicular to the road plane under extreme cornering forces. However, as centrifugal acceleration forces the chassis to roll outward, conventional suspension systems lose negative camber, rolling the tire onto its outer shoulder and causing catastrophic loss of adhesion."
+      "text": "مسابقتی موٹرسپورٹ اور اعلیٰ کارکردگی والی آٹوموٹیو انجینئرنگ میں، ٹائر گرفت ایک اعلیٰ جسمانی رکاوٹ ہے جو کارنرنگ کی رفتار کو محدود کرتی ہے۔ ایک نیومیٹک ریسنگ ٹائر چوٹی کے لیٹرل آسنجن کو صرف اسی وقت فراہم کرتا ہے جب اس کا ٹریڈ کانٹیکٹ پیچ انتہائی کارنرنگ فورسز کے تحت سڑک کے ہوائی جہاز پر بالکل کھڑا رہتا ہے۔ تاہم، چونکہ سینٹری فیوگل ایکسلریشن چیسس کو باہر کی طرف گھومنے پر مجبور کرتی ہے، روایتی سسپنشن سسٹم منفی کیمبر سے محروم ہو جاتے ہیں، ٹائر کو اس کے بیرونی کندھے پر گھماتے ہیں اور آسنجن کے تباہ کن نقصان کا باعث بنتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] Multilink suspension geometry decouples kinematic parameters that were historically compromised in MacPherson strut and rigid axle configurations. By distributing wheel hub location across five distinct spatial control links, engineers can independently program instant center migration, roll center height, dynamic camber recovery, and toe compliance steer with mathematical precision."
+      "text": "ملٹی لنک سسپنشن جیومیٹری کائیمیٹک پیرامیٹرز کو جوڑتی ہے جو تاریخی طور پر میک فیرسن سٹرٹ اور سخت ایکسل کنفیگریشنز میں سمجھوتہ کیے گئے تھے۔ وہیل ہب کے مقام کو پانچ الگ الگ مقامی کنٹرول لنکس میں تقسیم کر کے، انجینئرز آزادانہ طور پر فوری مرکز کی منتقلی، رول سینٹر کی اونچائی، متحرک کیمبر ریکوری، اور پیر کی تعمیل کو ریاضی کی درستگی کے ساتھ پروگرام کر سکتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Kinematic Instant Centers and Camber Recovery Ratios"
+      "text": "1. کائینیمیٹک فوری مراکز اور کیمبر ریکوری ریشوز"
     },
     {
       "type": "p",
-      "text": "[ur] The spatial trajectory of the wheel carrier in bump and rebound is governed by the projected virtual instant center ($IC$) formed by the intersection of the upper and lower control links in the front and rear planes:"
+      "text": "ٹکرانے اور ریباؤنڈ میں وہیل کیریئر کی مقامی رفتار کو آگے اور پیچھے والے طیاروں میں اوپری اور زیریں کنٹرول لنکس کے چوراہے سے بننے والے متوقع ورچوئل انسٹنٹ سنٹر ($IC$) کے ذریعے کنٹرول کیا جاتا ہے:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ur] By shortening the upper control link relative to the lower link and angling its inner pivot downward, the suspension gains progressive negative camber as it compresses into bump travel ($d\\gamma / dz < 0$). This camber gain perfectly cancels out the angular roll of the sprung chassis, maintaining a flat tire contact patch throughout apex cornering."
+      "text": "اوپری کنٹرول لنک کو نچلے لنک کے نسبت چھوٹا کرکے اور اس کے اندرونی محور کو نیچے کی طرف بڑھاتا ہے، اس کے اندرونی محور کو نیچے کی طرف بڑھاتا ہے۔ ٹکرانے کے سفر میں ($d\\gamma / dz <0$)۔ یہ کیمبر گین اسپرنگ چیسس کے کونیی رول کو مکمل طور پر منسوخ کر دیتا ہے، جس سے اوپری کارنرنگ کے دوران ایک فلیٹ ٹائر کانٹیکٹ پیچ برقرار رہتا ہے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] A great chassis does not resist roll with brick-stiff anti-roll bars; it embraces roll through kinematic geometry that extracts maximum grip from the outside tire.",
-      "cite": "[ur] Liam O'Connor, Vehicle Dynamics Specialist"
+      "text": "ایک زبردست چیسس اینٹوں سے سخت اینٹی رول سلاخوں کے ساتھ رول کے خلاف مزاحمت نہیں کرتا ہے۔ یہ کینیمیٹک جیومیٹری کے ذریعے رول کو اپناتا ہے جو باہر کے ٹائر سے زیادہ سے زیادہ گرفت نکالتا ہے۔",
+      "cite": "لیام او کونر، وہیکل ڈائنامکس اسپیشلسٹ"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Roll Center Height Migration and Jacking Forces"
+      "text": "2. رول سینٹر ہائٹ مائیگریشن اینڈ جیکنگ فورسز"
     },
     {
       "type": "p",
-      "text": "[ur] The vehicle roll center ($RC$) is the theoretical point about which the sprung body rolls under lateral acceleration. Its elevation relative to the ground plane dictates how lateral forces are partitioned between kinematic linkages and mechanical springs."
+      "text": "وہیکل رول سینٹر ($RC$) وہ نظریاتی نقطہ ہے جس کے بارے میں اسپرنگ باڈی لیٹرل ایکسلریشن کے تحت گھومتی ہے۔ زمینی ہوائی جہاز کے نسبت اس کی بلندی یہ بتاتی ہے کہ پس منظر کی قوتیں کس طرح کائیمیٹک ربط اور مکینیکل اسپرنگس کے درمیان تقسیم ہوتی ہیں۔"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] High Roll Center: Transmits cornering forces instantaneously through suspension linkages with minimal body roll, but induces severe vertical jacking forces that narrow the track width.",
-        "[ur] Low or Sub-Ground Roll Center: Eliminates jacking forces, but creates an enormous roll moment arm ($h_{roll} = CG - RC$), demanding excessively stiff anti-roll bars that degrade tire compliance over kerbs.",
-        "[ur] Dynamic Migration Envelope: A properly tuned five-link design restricts the roll center from migrating laterally by more than 20mm across ±3 degrees of chassis roll."
+        "ہائی رول سینٹر: کم سے کم باڈی رول کے ساتھ سسپنشن لنکیجز کے ذریعے کارنرنگ فورسز کو فوری طور پر منتقل کرتا ہے، لیکن شدید عمودی جیکنگ فورسز کو آمادہ کرتا ہے جو ٹریک کی چوڑائی کو تنگ کرتی ہے۔",
+        "کم یا ذیلی گراؤنڈ رول سینٹر: جیکنگ فورسز کو ختم کرتا ہے، لیکن ایک بہت بڑا رول مومنٹ آرم ($h_{roll} = CG - RC$) بناتا ہے، جو ضرورت سے زیادہ سخت اینٹی رول بارز کا مطالبہ کرتا ہے جو کربس پر ٹائر کی تعمیل کو کم کر دیتے ہیں۔",
+        "ڈائنامک مائیگریشن لفافہ: ایک مناسب طریقے سے ٹیون شدہ پانچ لنک ڈیزائن رول سینٹر کو چیسس رول کے ±3 ڈگری پر 20 ملی میٹر سے زیادہ پیچھے منتقل ہونے سے روکتا ہے۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: Suspension Geometry, Scrub Radius & Kinematics"
+      "text": "3. ویڈیو ماسٹرکلاس: معطلی جیومیٹری، اسکرب ریڈیئس اور کینیمیٹکس"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/SUDMEd1bMZI",
-      "title": "[ur] Scrub Radius, Suspension Geometry & Kinematic Contact Patch Control",
-      "caption": "[ur] Engineering breakdown of suspension geometry, scrub radius, kingpin inclination, and dynamic steering feel."
+      "title": "اسکرب ریڈیئس، سسپنشن جیومیٹری اور کینیمیٹک کانٹیکٹ پیچ کنٹرول",
+      "caption": "معطلی جیومیٹری، اسکرب ریڈیئس، کنگ پن جھکاؤ، اور متحرک اسٹیئرنگ کا احساس کا انجینئرنگ بریک ڈاؤن۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Elastokinematic Compliance Steer Under Lateral Load"
+      "text": "4. Elastokinematic Compliance Steer Under Lateral Load"
     },
     {
       "type": "p",
-      "text": "[ur] In physical vehicles, suspension arms do not articulate about infinitely rigid spherical joints; they rely on elastomeric bushings or composite bearings with non-zero compliance under load. When a vehicle undergoes heavy lateral acceleration ($1.5g+$ in racing applications), the intense cornering force acts through the tire contact patch, exerting a massive yaw torque on the hub assembly."
+      "text": "جسمانی گاڑیوں میں، معطلی والے بازو لامحدود سخت کروی جوڑوں کے بارے میں بیان نہیں کرتے ہیں۔ وہ الاسٹومیرک بشنگ یا کمپوزٹ بیرنگ پر انحصار کرتے ہیں جس میں بوجھ کے تحت غیر صفر تعمیل ہوتی ہے۔ جب گاڑی بھاری لیٹرل ایکسلریشن سے گزرتی ہے ($1.5g+$ ریسنگ ایپلی کیشنز میں)، شدید کارنرنگ فورس ٹائر کانٹیکٹ پیچ کے ذریعے کام کرتی ہے، حب اسمبلی پر بڑے پیمانے پر یاؤ ٹارک کا استعمال کرتی ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] Multilink architectures exploit this deformation through deliberate elastokinematics. By positioning bushing stiffness vectors asymmetrically, the outer wheel automatically toes in under lateral load. This passive toe-in stabilizes the rear axle against snap oversteer during aggressive high-speed directional transitions without requiring complex electronic rear-wheel steering systems."
+      "text": "ملٹی لنک آرکیٹیکچرز جان بوجھ کر elastokinematics کے ذریعے اس اخترتی کا استحصال کرتے ہیں۔ بشنگ سختی ویکٹر کو غیر متناسب طور پر پوزیشن دینے سے، بیرونی پہیہ خود بخود لیٹرل بوجھ کے نیچے آ جاتا ہے۔ یہ غیر فعال ٹو ان پیچیدہ الیکٹرانک ریئر وہیل اسٹیئرنگ سسٹم کی ضرورت کے بغیر جارحانہ تیز رفتار دشاتمک ٹرانزیشن کے دوران اسنیپ اوورسٹیر کے خلاف پچھلے ایکسل کو مستحکم کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Chassis Setup & Motorsport Takeaways"
+      "text": "5. چیسس سیٹ اپ اور موٹرسپورٹ ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Scrub Radius Calibration: Maintain a slightly negative or near-zero scrub radius (0 to -5mm) to ensure directional stability under asymmetric braking without kickback through the steering rack.",
-        "[ur] Anti-Squat / Anti-Dive Tuning: Angle the longitudinal link axes to achieve 40-60% mechanical anti-pitch, keeping aerodynamic downforce floors parallel to the track during heavy braking zones.",
-        "[ur] Bump Steer Minimization: Align the steering tie rod length and angle precisely with the virtual swing arm of the front upright to eliminate unwanted steering angle changes over surface undulations."
+        "اسکرب ریڈیئس کیلیبریشن: اسٹیئرنگ ریک کے ذریعے کک بیک کے بغیر غیر متناسب بریک کے تحت دشاتمک استحکام کو یقینی بنانے کے لیے تھوڑا سا منفی یا قریب صفر اسکرب رداس (0 سے -5 ملی میٹر) کو برقرار رکھیں۔",
+        "اینٹی اسکواٹ/اینٹی ڈائیو ٹیوننگ: ہیوی بریکنگ زونز کے دوران ایروڈینامک ڈاون فورس فرش کو ٹریک کے متوازی رکھتے ہوئے 40-60% میکانیکل اینٹی پچ حاصل کرنے کے لیے طول بلد کے محور کو زاویہ دیں۔",
+        "ٹکرانا اسٹیئر مائنسائزیشن: اسٹیئرنگ ٹائی راڈ کی لمبائی اور زاویہ کو بالکل سیدھا کریں سامنے کے ورچوئل سوئنگ بازو کے ساتھ سیدھے سیدھے اسٹیئرنگ زاویہ کی سطح کی غیر مطلوبہ تبدیلیوں کو ختم کرنے کے لیے۔"
       ]
     }
   ],

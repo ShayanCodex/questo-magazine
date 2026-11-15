@@ -1,7 +1,7 @@
 {
   "slug": "solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes",
-  "title": "[ur] Solid-State Battery Chemistry",
-  "excerpt": "[ur] A materials science and electrochemical monograph on sulfide solid electrolytes, lithium dendrite suppression mechanics, critical current density thresholds, and high-capacity silicon-dominant composite anodes.",
+  "title": "سالڈ سٹیٹ بیٹری کیمسٹری",
+  "excerpt": "سلفائیڈ ٹھوس الیکٹرولائٹس، لیتھیم ڈینڈرائٹ سوپریشن میکانکس، کرنٹ کرنٹ ڈینسٹی تھریشولڈز، اور اعلی صلاحیت والے سلکان ڈومیننٹ کمپوزٹ انوڈس پر ایک میٹریل سائنس اور الیکٹرو کیمیکل مونوگراف۔",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -13,23 +13,23 @@
     "engineering"
   ],
   "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "[ur] Precision engineered high energy density electrochemical battery cell laboratory test setup",
+  "imageAlt": "پریسجن انجینئرڈ ہائی انرجی ڈینسٹی الیکٹرو کیمیکل بیٹری سیل لیبارٹری ٹیسٹ سیٹ اپ",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The electrification of commercial aviation, heavy haul freight, and high-range passenger transit is fundamentally constrained by the energy density and thermal runaway hazards of conventional liquid-electrolyte lithium-ion cells. Commercial graphite-intercalated cells top out at approximately 280 Wh/kg and rely on volatile, flammable organic carbonates that ignite under mechanical puncture or internal short circuits."
+      "text": "کمرشل ایوی ایشن کی برقی کاری، ہیوی ہول فریٹ، اور ہائی رینج مسافر ٹرانزٹ بنیادی طور پر توانائی کی کثافت اور تھرمل رن وے خطرات کی وجہ سے روایتی مائع لیوتھیئم الیکٹروٹیئن سیلز کی وجہ سے محدود ہے۔ کمرشل گریفائٹ سے جڑے ہوئے خلیے تقریباً 280 Wh/kg پر سب سے اوپر ہوتے ہیں اور غیر مستحکم، آتش گیر نامیاتی کاربونیٹ پر انحصار کرتے ہیں جو مکینیکل پنکچر یا اندرونی شارٹ سرکٹس کے تحت جلتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] All-Solid-State Batteries (ASSBs) replace the liquid solvent with an inorganic ceramic or sulfide ion-conducting solid matrix. By pairing solid electrolytes with pure metallic lithium or silicon-dominant anodes, ASSBs promise gravimetric energy densities exceeding 500 Wh/kg, wide thermal operating envelopes (-30°C to 100°C), and non-flammable inherent safety."
+      "text": "آل-سالڈ سٹیٹ بیٹریاں (ASSBs) مائع سالوینٹ کو غیر نامیاتی سیرامک ​​یا سلفائیڈ آئن کنڈکٹنگ ٹھوس میٹرکس سے بدل دیتی ہیں۔ ٹھوس الیکٹرولائٹس کو خالص دھاتی لیتھیم یا سلکان ڈومیننٹ اینوڈس کے ساتھ جوڑ کر، ASSBs 500 Wh/kg سے زیادہ کشش ثقل توانائی کی کثافت، وسیع تھرمل آپریٹنگ لفافے (-30°C سے 100°C)، اور غیر آتش گیر موروثی حفاظت کا وعدہ کرتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Solid Electrolyte Classes: Sulfides vs. Oxides vs. Halides"
+      "text": "1. ٹھوس الیکٹرولائٹ کلاسز: سلفائڈز بمقابلہ آکسائڈز بمقابلہ ہیلائڈز"
     },
     {
       "type": "p",
-      "text": "[ur] The viability of any solid-state architecture hinges upon ionic conductivity ($\\sigma_{ion}$) at ambient temperatures:"
+      "text": "کسی بھی ٹھوس ریاست کے فن تعمیر کی عملداری محیطی درجہ حرارت پر آئنک چالکتا ($\\sigma_{ion}$) پر منحصر ہے:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ur] Because sulfide crystals possess softer, more polarizable sulfur anion frameworks, lithium ions encounter low migration activation barriers ($E_a < 0.25$ eV), permitting rapid transport that rivals traditional liquid electrolytes."
+      "text": "چونکہ سلفائیڈ کرسٹل نرم، زیادہ پولرائزیبل سلفر ایون فریم ورک کے مالک ہوتے ہیں، لیتھیم آئنوں کو نقل مکانی کی سرگرمی کی کم رکاوٹوں ($E_a <0.25$ eV) کا سامنا کرنا پڑتا ہے، جو تیز رفتار نقل و حمل کی اجازت دیتا ہے جو روایتی مائع الیکٹرولائٹس کا مقابلہ کرتا ہے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] Solid-state is not just a safer battery; it is the unlocking mechanism for pure lithium metal anodes, doubling gravimetric density by discarding heavy graphite hosts.",
-      "cite": "[ur] Hiroshi Tanaka, Advanced Materials & Electrochemical Systems Fellow"
+      "text": "ٹھوس حالت صرف ایک محفوظ بیٹری نہیں ہے۔ یہ خالص لتیم دھاتی انوڈس کے لیے غیر مقفل کرنے کا طریقہ کار ہے، جو بھاری گریفائٹ میزبانوں کو ضائع کر کے کشش ثقل کی کثافت کو دوگنا کرتا ہے۔",
+      "cite": "ہیروشی تاناکا، ایڈوانسڈ میٹریلز اینڈ الیکٹرو کیمیکل سسٹمز فیلو"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. The Dendrite Conundrum: Critical Current Density (CCD)"
+      "text": "2. ڈینڈرائٹ کننڈرم: کریٹیکل کرنٹ ڈینسٹی (CCD)"
     },
     {
       "type": "p",
-      "text": "[ur] Early theory posited that a rigid solid ceramic electrolyte would mechanically suppress lithium dendrite formation via the Monroe-Newman criterion (shear modulus $G_{SE} > 2 \\cdot G_{Li}$). However, operando X-ray tomography revealed that lithium metal readily infiltrates intergranular grain boundaries and microcracks under fast charging conditions."
+      "text": "ابتدائی تھیوری نے کہا تھا کہ ایک سخت ٹھوس سیرامک الیکٹرولائٹ میکانکی طور پر لیتھیم کو دبا دے گا۔ ماڈیولس $G_{SE} > 2 \\cdot G_{Li}$)۔ تاہم، اوپرینڈو ایکس رے ٹوموگرافی نے انکشاف کیا کہ لتیم دھات تیزی سے چارج ہونے والی حالتوں میں انٹر گرانولر گرین باؤنڈریز اور مائیکرو کریکس میں آسانی سے گھس جاتی ہے۔"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Critical Current Density (CCD): The maximum charging current rate beyond which non-uniform lithium plating initiates intergranular short circuits.",
-        "[ur] Stack Pressure Management: Maintaining constant uniaxial stack pressures of 1 to 5 MPa ensures intimate solid-solid physical contact as lithium strips and plates during discharge cycles.",
-        "[ur] Interfacial Buffer Coatings: Thin ALD (Atomic Layer Deposition) coatings of zinc, carbon, or gold alloy with incoming lithium, ensuring planar 2D growth rather than 1D filamentous spikes."
+        "کریٹیکل کرنٹ ڈینسٹی (CCD): زیادہ سے زیادہ چارجنگ کرنٹ ریٹ جس سے آگے غیر یکساں لیتھیم پلیٹنگ انٹرگرانولر شارٹ سرکٹس شروع کرتی ہے۔",
+        "اسٹیک پریشر مینجمنٹ: 1 سے 5 MPa کے مستقل غیر محوری اسٹیک دباؤ کو برقرار رکھنا ڈسچارج سائیکل کے دوران لیتھیم سٹرپس اور پلیٹوں کے طور پر مباشرت ٹھوس جسمانی رابطے کو یقینی بناتا ہے۔",
+        "انٹرفیشل بفر کوٹنگز: آنے والے لیتھیم کے ساتھ زنک، کاربن، یا سونے کے مرکب کی پتلی ALD (ایٹمک لیئر ڈیپوزیشن) کوٹنگز، 1D فلیمینٹس اسپائکس کے بجائے پلانر 2D گروتھ کو یقینی بناتی ہیں۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: High-Voltage Electrochemistry & Advanced Storage"
+      "text": "3. ویڈیو ماسٹر کلاس: ہائی وولٹیج الیکٹرو کیمسٹری اور ایڈوانسڈ سٹوریج"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "[ur] High Voltage Electrochemical Energy Storage and Advanced Grid Batteries",
-      "caption": "[ur] Engineering analysis of advanced battery chemistry, solid-state cell architecture, and utility-scale energy storage."
+      "title": "ہائی وولٹیج الیکٹرو کیمیکل انرجی سٹوریج اور ایڈوانسڈ گرڈ بیٹریز",
+      "caption": "جدید بیٹری کیمسٹری، سالڈ سٹیٹ سیل آرکیٹیکچر، اور یوٹیلٹی انرجی سٹوریج کا انجینئرنگ تجزیہ۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Silicon Composite Anodes: 300% Volumetric Expansion Mechanics"
+      "text": "4. سلیکون کمپوزٹ انوڈس: 300% والیومیٹرک ایکسپینشن میکانکس"
     },
     {
       "type": "p",
-      "text": "[ur] While pure lithium metal remains the ultimate goal, silicon provides an exceptional intermediate bridge. Silicon boasts a theoretical specific capacity of 3,579 mAh/g ($Li_{15}Si_4$), nearly ten times that of commercial graphite (372 mAh/g)."
+      "text": "جبکہ خالص لتیم دھات حتمی مقصد بنی ہوئی ہے، سلکان ایک غیر معمولی درمیانی پل فراہم کرتا ہے۔ سلکان 3,579 mAh/g ($Li_{15}Si_4$) کی نظریاتی مخصوص صلاحیت کا حامل ہے، جو تجارتی گریفائٹ (372 mAh/g) سے تقریباً دس گنا زیادہ ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] However, lithiation induces severe 300% volumetric expansion, pulverizing traditional electrodes. When embedded within an elastomeric solid-state binder matrix with high interfacial elasticity, micro-silicon composite anodes accommodate cyclic breathing without losing electrical percolating pathways."
+      "text": "تاہم، لتھیاشن روایتی الیکٹروڈز کو پلورائز کرتے ہوئے، شدید 300% والیومیٹرک توسیع کا باعث بنتا ہے۔ جب اعلی انٹرفیشل لچک کے ساتھ ایلسٹومیرک سالڈ سٹیٹ بائنڈر میٹرکس کے اندر ایمبیڈ کیا جاتا ہے، تو مائیکرو سیلیکون کمپوزٹ انوڈس برقی ٹکرانے والے راستوں کو کھوئے بغیر سائیکلک سانس لینے کو ایڈجسٹ کرتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Electrochemical Systems Engineering Takeaways"
+      "text": "5. الیکٹرو کیمیکل سسٹمز انجینئرنگ ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Stack Compression Engineering: Design cell housings with spring-loaded mechanical platens to maintain continuous interfacial contact through 20% state-of-charge thickness swings.",
-        "[ur] Dry Room Manufacturing: Sulfide solid electrolyte production requires ultra-dry atmospheres (dew point < -50°C) to prevent lethal hydrogen sulfide decomposition.",
-        "[ur] High-Nickel Cathode Coupling: Pair solid electrolytes with single-crystal NMC90 cathodes coated in lithium borate to eliminate micro-cracking at high cell voltages (> 4.3V)."
+        "اسٹیک کمپریشن انجینئرنگ: 20% اسٹیٹ آف چارج موٹائی کے جھولوں کے ذریعے مسلسل انٹرفیشل رابطے کو برقرار رکھنے کے لیے اسپرنگ سے بھری مکینیکل پلیٹین کے ساتھ سیل ہاؤسنگ ڈیزائن کریں۔",
+        "ڈرائی روم مینوفیکچرنگ: سلفائیڈ ٹھوس الیکٹرولائٹ پروڈکشن کو مہلک ہائیڈروجن سلفائیڈ کی سڑن کو روکنے کے لیے انتہائی خشک ماحول (او پوائنٹ <-50°C) کی ضرورت ہوتی ہے۔",
+        "ہائی نکل کیتھوڈ کپلنگ: ہائی سیل وولٹیجز (> 4.3V) پر مائیکرو کریکنگ کو ختم کرنے کے لیے ٹھوس الیکٹرولائٹس کو سنگل کرسٹل NMC90 کیتھوڈس کے ساتھ جوڑیں۔"
       ]
     }
   ],

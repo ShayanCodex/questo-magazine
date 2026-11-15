@@ -1,7 +1,7 @@
 {
   "slug": "the-renaissance-of-brutalist-web-design",
-  "title": "[ar] The Renaissance of Brutalist Web Design",
-  "excerpt": "[ar] How brutalist web aesthetics, high-contrast monospace typography, and unadorned semantic HTML are staging an overdue rebellion against sterile corporate design templates.",
+  "title": "نهضة تصميم الويب الوحشي",
+  "excerpt": "كيف تقوم جماليات الويب الوحشية، والطباعة أحادية الفضاء عالية التباين، وHTML الدلالي غير المزخرف بتمرد طال انتظاره ضد قوالب تصميم الشركات العقيمة.",
   "date": "2026-11-14",
   "updated": "2026-11-15",
   "author": "Saskia Lindqvist",
@@ -13,40 +13,40 @@
     "typography"
   ],
   "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Stark black and white geometric architecture representing brutalist digital aesthetics",
+  "imageAlt": "هندسة هندسية صارخة بالأبيض والأسود تمثل جماليات رقمية وحشية",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The contemporary commercial internet is drowning in pastel gradients, rounded corners, and sterile micro-interactions. Every startup website appears to have been generated from the same corporate design system, sanitizing the web of edge, tension, and artistic voice. In response to this suffocating blandness, a powerful counter-movement has emerged: digital brutalism."
+      "text": "يغرق الإنترنت التجاري المعاصر في تدرجات الباستيل، والزوايا المستديرة، والتفاعلات الدقيقة العقيمة. يبدو أن كل موقع ويب خاص بالشركات الناشئة قد تم إنشاؤه من نفس نظام التصميم الخاص بالشركة، مما يؤدي إلى تطهير شبكة الحافة والتوتر والصوت الفني. وردا على هذه الفظاظة الخانقة، ظهرت حركة مضادة قوية: الوحشية الرقمية."
     },
     {
       "type": "p",
-      "text": "[ar] Named in honor of the mid-century architectural philosophy that celebrated exposed aggregate concrete and raw structural honesty, brutalist web design strips away superficial decorative veneer. It treats the browser not as a simulated glossy print brochure, but as an unapologetic digital terminal composed of raw HTML semantics, stark typography, and uncompromising spatial tension."
+      "text": "تم تسميته على شرف الفلسفة المعمارية في منتصف القرن التي احتفلت بالخرسانة المكشوفة والصدق الهيكلي الخام، حيث يقوم تصميم الويب الوحشي بإزالة القشرة الزخرفية السطحية. فهو لا يتعامل مع المتصفح باعتباره كتيبًا مطبوعًا لامعًا، ولكن كمحطة رقمية صريحة تتكون من دلالات HTML الخام، والطباعة الصارخة، والتوتر المكاني الذي لا هوادة فيه."
     },
     {
       "type": "h2",
-      "text": "[ar] The Ethics of Architectural Honesty on the Web"
+      "text": "أخلاقيات الصدق المعماري على الويب"
     },
     {
       "type": "p",
-      "text": "[ar] In physical brutalist architecture, formwork lines and tie-holes are left intentionally visible to expose how the building was poured. In digital brutalism, the underlying mechanics of web markup—links, borders, default monospace letterforms, and system color contrasts—are celebrated rather than concealed under megabytes of CSS blur filters and heavy JavaScript canvas shaders."
+      "text": "في الهندسة المعمارية الوحشية المادية، تُترك خطوط صب الخرسانة وفتحات الربط مرئية عمدًا لكشف كيفية صب المبنى. في الوحشية الرقمية، يتم الاحتفاء بالآليات الأساسية لترميز الويب - الروابط، والحدود، وأشكال الحروف الافتراضية أحادية المسافة، وتباين ألوان النظام - بدلاً من إخفائها تحت ميغا بايت من مرشحات تمويه CSS وتظليل قماش جافا سكريبت الثقيل."
     },
     {
       "type": "p",
-      "text": "[ar] This aesthetic is deeply political. By rejecting the visual language of venture-capital surveillance capitalism, brutalist websites announce that their content is not designed to trick you into a marketing funnel. The text is presented with unyielding clarity: read it, contemplate it, or leave."
+      "text": "هذه الجمالية سياسية بعمق. من خلال رفض اللغة المرئية لرأسمالية مراقبة رأس المال الاستثماري، تعلن المواقع الوحشية أن محتواها ليس مصممًا لخداعك ودفعك إلى مسار التسويق. يتم تقديم النص بوضوح لا ينضب: اقرأه، أو تأمله، أو غادر."
     },
     {
       "type": "quote",
-      "text": "[ar] A brutalist website does not apologize for being digital. It does not mimic paper, plastic, or glass. It lives proudly in the raw mathematics of the browser engine.",
-      "cite": "[ar] Saskia Lindqvist, The Digital Monolith"
+      "text": "موقع وحشي لا يعتذر عن كونه رقمي. لا يحاكي الورق أو البلاستيك أو الزجاج. إنه يعيش بفخر في الرياضيات الأولية لمحرك المتصفح.",
+      "cite": "ساسكيا ليندكفيست، The Digital Monolith"
     },
     {
       "type": "h2",
-      "text": "[ar] Typographic Hierarchy and High-Contrast Tension"
+      "text": "التسلسل الهرمي المطبعي والتوتر عالي التباين"
     },
     {
       "type": "p",
-      "text": "[ar] Rather than relying on gentle gray-on-white pastel tones that fail WCAG accessibility standards, brutalist typography embraces absolute chromatic contrast: deep carbon black (#000000) against stark bone white (#FFFFFF). Headlines are set with massive, tightly-tracked display sans-serifs that demand immediate visual reckoning."
+      "text": "بدلاً من الاعتماد على درجات ألوان الباستيل ذات اللون الرمادي والأبيض اللطيفة التي تفشل في معايير إمكانية الوصول إلى WCAG، تحتضن الطباعة الوحشية التباين اللوني المطلق: أسود الكربون العميق (#000000) مقابل الأبيض العظمي الصارخ (#FFFFFF). يتم تعيين العناوين الرئيسية من خلال شاشات عرض ضخمة ومتتبعة بإحكام والتي تتطلب حسابًا مرئيًا فوريًا."
     },
     {
       "type": "code",
@@ -55,28 +55,28 @@
     },
     {
       "type": "h3",
-      "text": "[ar] Core Axioms of Digital Brutalist Design"
+      "text": "البديهيات الأساسية للتصميم الوحشي الرقمي"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Unapologetic black-and-white palettes: Prioritizing 100% contrast ratios that maximize legibility under bright sunlight and across budget mobile screens.",
-        "[ar] Monolithic border architecture: Using stark 1px or 2px solid black rules to delineate sections instead of fuzzy box-shadows.",
-        "[ar] Zero superfluous animation: Eliminating scroll-jacking, parallax drifts, and delayed fade-ins that waste CPU cycles and trigger motion sickness.",
-        "[ar] Sub-100 millisecond page loads: Because styles are lightweight and dependencies are nonexistent, brutalist pages render almost instantaneously."
+        "لوحات بالأبيض والأسود غير اعتيادية: إعطاء الأولوية لنسب تباين بنسبة 100% تعمل على زيادة الوضوح تحت ضوء الشمس الساطع وعبر شاشات الهواتف المحمولة ذات الميزانية المحدودة.",
+        "بنية الحدود المتجانسة: استخدام قواعد سوداء صلبة بحجم 1 بكسل أو 2 بكسل لتحديد المقاطع بدلاً من ظلال المربعات الغامضة.",
+        "عدم وجود رسوم متحركة زائدة عن الحاجة: القضاء على تشويش التمرير، وانجرافات المنظر، والتلاشي المتأخر الذي يهدر دورات وحدة المعالجة المركزية ويؤدي إلى دوار الحركة.",
+        "تحميل صفحة أقل من 100 مللي ثانية: نظرًا لأن الأنماط خفيفة الوزن والتبعيات غير موجودة، يتم عرض الصفحات الوحشية بشكل فوري تقريبًا."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] The Longevity of Tectonic Digital Media"
+      "text": "طول عمر الوسائط الرقمية التكتونية"
     },
     {
       "type": "p",
-      "text": "[ar] Trends in web design come and go with seasonal fickleness: neumorphism, skeuomorphism, glassmorphism, and flat design have all enjoyed brief moments in the sun before aging into embarrassing relics. Yet clean, honest, brutalist typography anchored to semantic HTML never expires. It remains as legible and compelling today as it was in the earliest days of Tim Berners-Lee’s CERN servers."
+      "text": "الاتجاهات في تصميم الويب تأتي وتذهب مع التقلبات الموسمية: تمتعت كل من النيومورفيسم، والسكيومورفيسم، والزجاج، والتصميم المسطح بلحظات قصيرة في الشمس قبل أن تتحول إلى آثار محرجة. ومع ذلك، فإن الطباعة النظيفة والصادقة والوحشية المرتكزة على HTML الدلالي لا تنتهي صلاحيتها أبدًا. ويظل واضحًا ومقنعًا حتى اليوم كما كان في الأيام الأولى لخوادم CERN التي أنشأها تيم بيرنرز لي."
     },
     {
       "type": "p",
-      "text": "[ar] By embracing brutalist aesthetics, Questo Magazine rejects the fleeting ephemera of Silicon Valley design trends and re-establishes a permanent, uncompromising standard for international digital publishing."
+      "text": "من خلال احتضان الجماليات الوحشية، ترفض مجلة Questo الأشياء الزائلة لاتجاهات التصميم في وادي السيليكون وتعيد تأسيس معيار دائم لا هوادة فيه للنشر الرقمي الدولي."
     }
   ],
   "sourceHash": "8ff67d50b1f1c4907665fbcc6f69ef3d07b09fde"

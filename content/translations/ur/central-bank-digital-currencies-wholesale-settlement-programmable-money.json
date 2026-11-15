@@ -1,7 +1,7 @@
 {
   "slug": "central-bank-digital-currencies-wholesale-settlement-programmable-money",
-  "title": "[ur] Central Bank Digital Currencies",
-  "excerpt": "[ur] A central banking and financial monetary architecture monograph on wholesale vs retail CBDCs, Project mBridge cross-border atomic settlement, two-tier commercial reserve distribution, and zero-knowledge privacy protocols.",
+  "title": "سنٹرل بینک ڈیجیٹل کرنسیاں",
+  "excerpt": "تھوک بمقابلہ خوردہ CBDCs، پروجیکٹ ایم برج کراس بارڈر ایٹمک سیٹلمنٹ، دو درجے کمرشل ریزرو ڈسٹری بیوشن، اور صفر نالج پرائیویسی پروٹوکولز پر ایک مرکزی بینکنگ اور مالیاتی مالیاتی فن تعمیر کا مونوگراف۔",
   "date": "2026-11-15",
   "author": "Julian Sterling",
   "tags": [
@@ -13,23 +13,23 @@
     "cryptography"
   ],
   "image": "/images/articles/cbdc-central-banking.jpg",
-  "imageAlt": "[ur] Digital financial liquidity terminal displaying real time central bank settlement vectors and foreign exchange pairs",
+  "imageAlt": "ڈیجیٹل مالیاتی لیکویڈیٹی ٹرمینل جو حقیقی وقت میں مرکزی بینک کے تصفیے کے ویکٹرز اور غیر ملکی کرنسی کے جوڑوں کو ظاہر کرتا ہے",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The international monetary architecture is undergoing its most profound structural realignment since the 1944 Bretton Woods conference. For decades, cross-border payment settlement has relied on the legacy correspondent banking network: an inefficient web of fragmented SWIFT messaging, disparate time zones, and bilateral Nostro/Vostro accounts that introduce multi-day counterparty settlement risk and high transaction friction."
+      "text": "بین الاقوامی مالیاتی فن تعمیر 1944 بریٹن ووڈس کانفرنس کے بعد سے اپنے سب سے گہرے ڈھانچے کی تشکیل سے گزر رہا ہے۔ کئی دہائیوں سے، سرحد پار ادائیگیوں کا تصفیہ میراثی نامہ نگار بینکنگ نیٹ ورک پر انحصار کرتا رہا ہے: بکھرے ہوئے SWIFT پیغام رسانی کا ایک غیر موثر ویب، مختلف ٹائم زونز، اور دو طرفہ نوسٹرو/ووسٹرو اکاؤنٹس جو کثیر روزہ ہم منصبی تصفیہ کے خطرے اور زیادہ لین دین کے رگڑ کو متعارف کراتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] Central Bank Digital Currencies (CBDCs) represent a digital manifestation of sovereign fiat currency, constituting a direct legal liability of the issuing monetary authority. By pairing central bank reserves with distributed ledger technology (DLT) or high-concurrency centralized relational ledgers, CBDCs enable atomic Payment-versus-Payment (PvP) settlement in real time."
+      "text": "سنٹرل بینک ڈیجیٹل کرنسیاں (CBDCs) خودمختار فیاٹ کرنسی کے ڈیجیٹل مظہر کی نمائندگی کرتی ہیں، جو جاری کرنے والے مانیٹری اتھارٹی کی براہ راست قانونی ذمہ داری بنتی ہے۔ مرکزی بینک کے ذخائر کو ڈسٹری بیوٹڈ لیجر ٹیکنالوجی (DLT) یا ہائی کنکرنسی سنٹرلائزڈ ریلیشنل لیجرز کے ساتھ جوڑ کر، CBDCs جوہری ادائیگی بمقابلہ ادائیگی (PvP) تصفیہ کو حقیقی وقت میں قابل بناتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Architectural Taxonomies: Wholesale vs. Retail CBDCs"
+      "text": "1. آرکیٹیکچرل ٹیکسونومیز: تھوک بمقابلہ ریٹیل CBDCs"
     },
     {
       "type": "p",
-      "text": "[ur] Central bank digital currencies divide fundamentally across access tiers and settlement scopes:"
+      "text": "مرکزی بینک کی ڈیجیٹل کرنسیاں بنیادی طور پر رسائی کے درجات اور تصفیہ کے دائرہ کار میں تقسیم ہوتی ہیں:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ur] The two-tier intermediated structure is paramount to maintaining economic stability. Direct retail accounts at the central bank would disintermediate the commercial banking system, triggering deposit flight during financial crises and crippling credit creation across the private sector."
+      "text": "اقتصادی استحکام کو برقرار رکھنے کے لیے دو سطحی درمیانی ڈھانچہ اہم ہے۔ مرکزی بینک میں براہ راست خوردہ اکاؤنٹس تجارتی بینکنگ کے نظام کو ختم کر دیں گے، مالیاتی بحرانوں کے دوران ڈپازٹ کی پرواز کو متحرک کر دیں گے اور نجی شعبے میں کریڈٹ تخلیق کو کمزور کر دیں گے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] A central bank digital currency is not cryptocurrency; it is sovereign base money equipped with programmability, eliminating counterparty friction while preserving monetary sovereignty.",
-      "cite": "[ur] Julian Sterling, Managing Director of Sovereign Liquidity Strategy"
+      "text": "مرکزی بینک کی ڈیجیٹل کرنسی کریپٹو کرنسی نہیں ہے۔ یہ خودمختار بنیادی رقم ہے جو پروگرام کی اہلیت سے لیس ہے، مالی خودمختاری کو برقرار رکھتے ہوئے ہم منصبی رگڑ کو ختم کرتی ہے۔",
+      "cite": "جولین سٹرلنگ، منیجنگ ڈائریکٹر آف Sovereign Liquidity Strategy"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Cross-Border Settlement Mechanics: Project mBridge"
+      "text": "2. کراس بارڈر سیٹلمنٹ میکانکس: پروجیکٹ mBridge"
     },
     {
       "type": "p",
-      "text": "[ur] The most mature multilateral wholesale platform is Project mBridge, developed collaboratively by the Bank for International Settlements (BIS) Innovation Hub and the central banks of Hong Kong, China, Thailand, and the UAE."
+      "text": "سب سے زیادہ پختہ کثیر جہتی ہول سیل پلیٹ فارم پروجیکٹ mBridge ہے، جسے بینک فار انٹرنیشنل سیٹلمنٹس (BIS) انوویشن ہب، HongAiland اور مرکزی بینک، HUNGAN بینک کے تعاون سے تیار کیا گیا ہے۔"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Single-Platform Atomic Settlement: Replaces correspondent banking chains with a unified DLT ledger where transactions clear atomically in seconds rather than days.",
-        "[ur] Local Currency Direct Pairs: Facilitates direct foreign exchange settlement between non-dollar currency pairs, mitigating reliance on intermediate vehicle currencies.",
-        "[ur] Regulatory Compliance by Design: Embeds automated jurisdictional sanctions screening and AML transaction monitoring directly within smart contracts at the protocol level."
+        "سنگل پلیٹ فارم اٹامک سیٹلمنٹ: متعلقہ بینکنگ چینز کو متحد DLT لیجر سے بدل دیتا ہے جہاں لین دین دنوں کے بجائے سیکنڈوں میں ایٹمی طور پر صاف ہو جاتا ہے۔",
+        "مقامی کرنسی کے براہ راست جوڑے: غیر ڈالر کے کرنسی کے جوڑوں کے درمیان براہ راست غیر ملکی زرمبادلہ کے تصفیے کی سہولت فراہم کرتا ہے، درمیانی گاڑیوں کی کرنسیوں پر انحصار کو کم کرتا ہے۔",
+        "ڈیزائن کے لحاظ سے ریگولیٹری تعمیل: پروٹوکول کی سطح پر سمارٹ معاہدوں کے اندر خودکار دائرہ اختیاری پابندیوں کی اسکریننگ اور AML ٹرانزیکشن کی نگرانی کو سرایت کرتا ہے۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: Central Bank Money, Liquidity & Economic Cycles"
+      "text": "3. ویڈیو ماسٹر کلاس: سنٹرل بینک منی، لیکویڈیٹی اور اکنامک سائیکل"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "[ur] How Economic Machines Work, Central Bank Liquidity & Credit Cycles",
-      "caption": "[ur] Ray Dalio's masterclass on central banking, sovereign debt creation, money velocity, and economic credit cycles."
+      "title": "اقتصادی مشینیں کیسے کام کرتی ہیں، سنٹرل بینک کی لیکویڈیٹی اور کریڈٹ سائیکلز",
+      "caption": "مرکزی بینکنگ، خودمختار قرضوں کی تخلیق، رقم کی رفتار، اور اقتصادی کریڈٹ سائیکل پر رے ڈالیو کا ماسٹر کلاس۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Privacy Engineering: Zero-Knowledge Proofs and Tiered Anonymity"
+      "text": "4. پرائیویسی انجینئرنگ: زیرو نالج پروف اور ٹائرڈ گمنامی"
     },
     {
       "type": "p",
-      "text": "[ur] The primary public concern surrounding retail CBDCs is the erosion of financial privacy. Unlike physical bank notes, digital transactions can theoretically leave an indelible surveillance footprint."
+      "text": "خوردہ CBDCs کے ارد گرد بنیادی عوامی تشویش مالی رازداری کا کٹاؤ ہے۔ فزیکل بینک نوٹوں کے برعکس، ڈیجیٹل لین دین نظریاتی طور پر انمٹ نگرانی کا نشان چھوڑ سکتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] Modern architectural standards address this through cryptographic zero-knowledge proofs (zk-SNARKs) and tiered anonymity protocols. Low-value domestic transactions (under €500 or $1,000) are fully anonymized, validating token validity and balance sufficiency mathematically without revealing user identity to central bank ledgers or commercial intermediaries."
+      "text": "جدید تعمیراتی معیار اس کو کرپٹوگرافک زیرو نالج پروف (zk-SNARKs) اور ٹائرڈ گمنامی پروٹوکول کے ذریعے حل کرتے ہیں۔ کم قیمت والے گھریلو لین دین (€500 یا $1,000 سے کم) مکمل طور پر گمنام ہوتے ہیں، ٹوکن کی درستگی کی توثیق کرتے ہیں اور مرکزی بینک لیجرز یا تجارتی بیچوانوں کو صارف کی شناخت ظاہر کیے بغیر حسابی طور پر توازن کی کفایت کرتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Macroeconomic & Central Banking Takeaways"
+      "text": "5. میکرو اکنامک اور سنٹرل بینکنگ ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Holding Caps & Zero-Interest Tiers: Impose maximum individual holding limits on retail wallets to prevent sudden systemic deposit drains from commercial banks during bank runs.",
-        "[ur] Dual Offline Functionality: Embed hardware secure elements (eSE) in smartphones and smartcards to enable offline peer-to-peer payments during power grid or network outages.",
-        "[ur] Interoperability Gateways: Ensure sovereign CBDC ledgers expose standardized ISO 20022 APIs to bridge legacy RTGS systems with next-generation tokenized financial infrastructure."
+        "ہولڈنگ کیپس اور زیرو-انٹرسٹ ٹائر: ریٹیل بٹوے پر زیادہ سے زیادہ انفرادی ہولڈنگ کی حدیں لگائیں تاکہ بینک رن کے دوران کمرشل بینکوں سے اچانک نظامی ڈپازٹ کو روکا جا سکے۔",
+        "دوہری آف لائن فعالیت: اسمارٹ فونز اور سمارٹ کارڈز میں ہارڈویئر محفوظ عناصر (eSE) کو ایمبیڈ کریں تاکہ پاور گرڈ یا نیٹ ورک کی بندش کے دوران آف لائن پیئر ٹو پیئر ادائیگیوں کو قابل بنایا جاسکے۔",
+        "انٹرآپریبلٹی گیٹ ویز: اس بات کو یقینی بنائیں کہ خودمختار CBDC لیجرز معیاری ISO 20022 APIs کو اگلی نسل کے ٹوکنائزڈ مالیاتی انفراسٹرکچر کے ساتھ میراثی RTGS سسٹمز کو بروئے کار لاتے ہیں۔"
       ]
     }
   ],

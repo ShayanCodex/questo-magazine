@@ -1,7 +1,7 @@
 {
   "slug": "high-voltage-direct-current-transmission-and-intercontinental-supergrids",
-  "title": "[fr] HVDC Transmission & Supergrids",
-  "excerpt": "[fr] An electrical systems monograph on IGBT-based Modular Multilevel Converters, capacitive cable dielectric losses, skin effect elimination, and asynchronous grid coupling.",
+  "title": "Transmission HVDC et super-réseaux",
+  "excerpt": "Une monographie des systèmes électriques sur les convertisseurs modulaires multiniveaux basés sur IGBT, les pertes diélectriques capacitives des câbles, l'élimination de l'effet cutané et le couplage de réseau asynchrone.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
   "tags": [
@@ -13,27 +13,27 @@
     "power-grids"
   ],
   "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] High-voltage electric transmission pylons against sky representing continental power distribution",
+  "imageAlt": "Pylônes de transmission électrique à haute tension contre le ciel représentant la distribution d'énergie continentale",
   "body": [
     {
       "type": "p",
-      "text": "[fr] The foundational triumph of the War of Currents in the late 19th century was Thomas Edison's defeat by Nikola Tesla and George Westinghouse: alternating current (AC) triumphed because transformers allowed voltage to be stepped up for transmission and stepped down for municipal consumption. For over a century, three-phase synchronous AC grids formed the backbone of global industrial electrification. In the 21st century, however, the massive geographical decoupling of renewable energy generation (offshore wind farms, remote desert solar arrays) from urban load centers has exposed the fundamental physical limitations of AC transmission."
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
     },
     {
       "type": "p",
-      "text": "[fr] High-Voltage Direct Current (HVDC) transmission has emerged as the definitive electrical engineering paradigm for bulk power transfer over distances exceeding 600 kilometers overhead or 50 kilometers submarine. By eliminating reactive power generation and capacitive charging currents, HVDC provides the missing structural link for intercontinental supergrids."
+      "text": "La transmission de courant continu haute tension (HVDC) est devenue le paradigme définitif de l'ingénierie électrique pour le transfert d'énergie en masse sur des distances supérieures à 600 kilomètres en hauteur ou 50 kilomètres sous-marins. En éliminant la production d’énergie réactive et les courants de charge capacitifs, le HVDC fournit le lien structurel manquant pour les super-réseaux intercontinentaux."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. The Physical Limitations of Alternating Current at Scale"
+      "text": "1. Les limites physiques du courant alternatif à grande échelle"
     },
     {
       "type": "p",
-      "text": "[fr] In high-voltage AC cables, continuous sinusoidal current alternations (50 or 60 Hz) generate two severe physical loss mechanisms: the skin effect and capacitive dielectric displacement."
+      "text": "Dans les câbles alternatifs haute tension, les alternances continues de courant sinusoïdal (50 ou 60 Hz) génèrent deux mécanismes de perte physique sévères : l'effet peau et le déplacement diélectrique capacitif."
     },
     {
       "type": "p",
-      "text": "[fr] The skin effect forces AC electrons toward the outer perimeter of a conductor, reducing the effective cross-sectional area and multiplying electrical resistance. In subsea or underground cables, the insulating dielectric surrounding the conductor forms a massive cylindrical capacitor with the surrounding seawater or soil:"
+      "text": "L'effet de peau force les électrons AC vers le périmètre extérieur d'un conducteur, réduisant ainsi la surface de section efficace et multipliant la résistance électrique. Dans les câbles sous-marins ou souterrains, le diélectrique isolant entourant le conducteur forme un condensateur cylindrique massif avec l'eau de mer ou le sol environnant :"
     },
     {
       "type": "code",
@@ -42,65 +42,65 @@
     },
     {
       "type": "p",
-      "text": "[fr] Direct Current operates at zero frequency ($f = 0$). Consequently, capacitive charging currents vanish, the entire conductor cross-section carries uniform current density, and dielectric losses drop to near zero."
+      "text": "Le courant continu fonctionne à fréquence nulle ($f = 0$). Par conséquent, les courants de charge capacitifs disparaissent, toute la section du conducteur porte une densité de courant uniforme et les pertes diélectriques chutent à près de zéro."
     },
     {
       "type": "quote",
-      "text": "[fr] HVDC frees power transmission from the tyranny of grid synchronization: two continental power grids operating at completely different frequencies can trade gigawatts across a single DC cable.",
-      "cite": "[fr] Tariq Mahmood, Distributed Systems Fellow"
+      "text": "Le HVDC libère le transport d'électricité de la tyrannie de la synchronisation du réseau : deux réseaux électriques continentaux fonctionnant à des fréquences complètement différentes peuvent échanger des gigawatts via un seul câble CC.",
+      "cite": "Tariq Mahmood, chercheur en systèmes distribués"
     },
     {
       "type": "h2",
-      "text": "[fr] 2. Modular Multilevel Converters (MMC) and IGBT Power Electronics"
+      "text": "2. Convertisseurs modulaires multiniveaux (MMC) et électronique de puissance IGBT"
     },
     {
       "type": "p",
-      "text": "[fr] Historical HVDC lines deployed Line-Commutated Converters (LCC) based on heavy mercury-arc or thyristor valves, which suffered from reactive power consumption and vulnerability to AC commutation failures. Contemporary systems utilize Voltage Source Converters (VSC) built upon Modular Multilevel Converter (MMC) topologies."
+      "text": "Les lignes HVDC historiques ont déployé des convertisseurs à commutation de ligne (LCC) basés sur des vannes à arc au mercure lourd ou à thyristor, qui souffraient d'une consommation de puissance réactive et d'une vulnérabilité aux pannes de commutation CA. Les systèmes contemporains utilisent des convertisseurs de source de tension (VSC) construits sur des topologies de convertisseurs modulaires multiniveaux (MMC)."
     },
     {
       "type": "p",
-      "text": "[fr] An MMC converter synthesizes near-perfect sinusoidal AC waveforms by cascading hundreds of small submodules—each containing an insulated-gate bipolar transistor (IGBT) and a storage capacitor. By switching individual submodules in microsecond increments, the converter constructs smooth stepped voltage staircases, eliminating the need for massive harmonic AC filter banks."
+      "text": "Un convertisseur MMC synthétise des formes d'onde sinusoïdales CA presque parfaites en mettant en cascade des centaines de petits sous-modules, chacun contenant un transistor bipolaire à grille isolée (IGBT) et un condensateur de stockage. En commutant des sous-modules individuels par incréments de microsecondes, le convertisseur construit des escaliers de tension étagés et lisses, éliminant ainsi le besoin de bancs de filtres CA harmoniques massifs."
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Black-Start Capability: VSC-HVDC can energize a completely collapsed local AC grid without requiring external generator support.",
-        "[fr] Independent P-Q Control: Active power ($P$) and reactive power ($Q$) can be modulated instantaneously and independently in four quadrants.",
-        "[fr] Asynchronous Grid Interconnection: Connects non-synchronized national grids (such as the UK and continental Europe, or ERCOT and the Eastern Interconnection) without cascading blackout risks."
+        "Capacité de démarrage au noir : VSC-HVDC peut alimenter un réseau CA local complètement effondré sans nécessiter l'assistance d'un générateur externe.",
+        "Contrôle P-Q indépendant : la puissance active ($P$) et la puissance réactive ($Q$) peuvent être modulées instantanément et indépendamment dans quatre quadrants.",
+        "Interconnexion de réseau asynchrone : connecte les réseaux nationaux non synchronisés (tels que le Royaume-Uni et l'Europe continentale, ou ERCOT et l'interconnexion orientale) sans risques de panne d'électricité en cascade."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Video Masterclass: High-Voltage DC Transmission Technology"
+      "text": "3. Masterclass vidéo : Technologie de transmission CC haute tension"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "[fr] High-Voltage Power Grids & Long-Distance Electrical Transmission",
-      "caption": "[fr] Comprehensive visual technical lecture on HVDC converter stations, submarine cable engineering, and grid stabilization."
+      "title": "Réseaux électriques haute tension et transmission électrique longue distance",
+      "caption": "Conférence technique visuelle complète sur les stations de conversion HVDC, l'ingénierie des câbles sous-marins et la stabilisation du réseau."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. Intercontinental Supergrids & Ultra-High Voltage (UHVDC)"
+      "text": "4. Super-réseaux intercontinentaux et ultra-haute tension (UHVDC)"
     },
     {
       "type": "p",
-      "text": "[fr] In nations with vast geographic spans such as China, Brazil, and India, Ultra-High Voltage Direct Current (UHVDC) systems operating at ±800 kV and ±1100 kV transmit up to 12 gigawatts of hydro and solar power over distances exceeding 3,000 kilometers with line losses below 1.5% per 1,000 km."
+      "text": "Dans des pays dotés de vastes étendues géographiques, comme la Chine, le Brésil et l'Inde, les systèmes à courant continu à ultra haute tension (UHVDC) fonctionnant à ±800 kV et ±1 100 kV transmettent jusqu'à 12 gigawatts d'énergie hydroélectrique et solaire sur des distances supérieures à 3 000 kilomètres avec des pertes de ligne inférieures à 1,5 % par 1 000 km."
     },
     {
       "type": "p",
-      "text": "[fr] The emerging vision of the Global Intercontinental Supergrid links solar power generated across daylight time zones to meet night-time peak demands continents away. Undersea HVDC links such as the 720-km North Sea Link (Norway to UK) and proposed multi-thousand-kilometer trans-Mediterranean corridors establish a continuous trans-continental energy balancing mechanism."
+      "text": "La vision émergente du super-réseau intercontinental mondial relie l'énergie solaire produite dans les fuseaux horaires de jour pour répondre aux demandes de pointe nocturnes sur des continents éloignés. Les liaisons HVDC sous-marines telles que la liaison de la mer du Nord de 720 km (de la Norvège au Royaume-Uni) et les corridors transméditerranéens proposés de plusieurs milliers de kilomètres établissent un mécanisme d'équilibrage énergétique transcontinental continu."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Electrical Engineering Takeaways"
+      "text": "5. Points à retenir en matière d'ingénierie électrique"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km; for submarine cables, HVDC is mandatory beyond 50 km.",
-        "[fr] DC Circuit Breaker Innovation: The historical obstacle of interrupting DC current without natural zero-crossings is solved by hybrid solid-state DC breakers operating in sub-millisecond windows.",
-        "[fr] Renewable Integration: Multi-terminal DC (MTDC) offshore grids aggregate dozens of dispersed offshore wind turbines into unified high-capacity mainland export cables."
+        "Économie de la distance d'équilibre : le HVDC aérien devient économiquement supérieur au CVC à environ 600-800 km ; pour les câbles sous-marins, le HVDC est obligatoire au-delà de 50 km.",
+        "Innovation en matière de disjoncteurs CC : L'obstacle historique de l'interruption du courant continu sans passages à zéro naturels est résolu par les disjoncteurs CC hybrides à semi-conducteurs fonctionnant dans des fenêtres inférieures à la milliseconde.",
+        "Intégration des énergies renouvelables : les réseaux offshore multi-terminaux DC (MTDC) regroupent des dizaines d'éoliennes offshore dispersées dans des câbles d'exportation continentaux unifiés de grande capacité."
       ]
     }
   ],

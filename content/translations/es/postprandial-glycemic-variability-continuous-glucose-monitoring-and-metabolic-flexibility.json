@@ -1,7 +1,7 @@
 {
   "slug": "postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility",
-  "title": "[es] Postprandial Glycemic Variability",
-  "excerpt": "[es] A clinical and biochemical analysis of glucose area-under-the-curve metrics, endothelial oxidative stress, insulin kinetics, and cellular substrate switching.",
+  "title": "Variabilidad glucémica posprandial",
+  "excerpt": "Un análisis clínico y bioquímico de las métricas del área bajo la curva de la glucosa, el estrés oxidativo endotelial, la cinética de la insulina y el cambio de sustrato celular.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -13,27 +13,27 @@
     "cardiology"
   ],
   "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Clinical health science laboratory telemetry showing cellular biomarkers and metabolic tracking",
+  "imageAlt": "Telemetría de laboratorio de ciencias de la salud clínica que muestra biomarcadores celulares y seguimiento metabólico",
   "body": [
     {
       "type": "p",
-      "text": "[es] In conventional clinical medicine, metabolic health has historically been evaluated using static, fasting biomarkers: fasting plasma glucose (FPG) and glycated hemoglobin (HbA1c). While valuable for diagnosing overt Type 2 diabetes mellitus, these coarse metrics completely obscure acute glycemic flux: the dynamic, postprandial glucose excursions that occur following meals. Emerging clinical data demonstrates that glycemic variability (GV)—the amplitude, frequency, and duration of glucose oscillations—is an independent and potent driver of endothelial dysfunction, systemic inflammation, and subclinical atherosclerosis."
+      "text": "En la medicina clínica convencional, la salud metabólica históricamente se ha evaluado utilizando biomarcadores estáticos en ayunas: glucosa plasmática en ayunas (FPG) y hemoglobina glucosilada (HbA1c). Si bien son valiosas para diagnosticar diabetes mellitus tipo 2 manifiesta, estas métricas aproximadas oscurecen por completo el flujo glucémico agudo: las excursiones dinámicas y posprandiales de glucosa que ocurren después de las comidas. Los datos clínicos emergentes demuestran que la variabilidad glucémica (VG) (la amplitud, frecuencia y duración de las oscilaciones de la glucosa) es un factor potente e independiente de la disfunción endotelial, la inflamación sistémica y la aterosclerosis subclínica."
     },
     {
       "type": "p",
-      "text": "[es] The widespread adoption of continuous glucose monitoring (CGM) biosensors in non-diabetic and pre-diabetic populations has illuminated the profound biological difference between a flat glucose response and high-amplitude postprandial spikes. Even individuals with an ostensibly \"normal\" HbA1c of 5.2% can spend several hours daily in transient glycemic spikes exceeding 140 mg/dL, triggering cascades of oxidative stress."
+      "text": "La adopción generalizada de biosensores de monitorización continua de glucosa (CGM) en poblaciones no diabéticas y prediabéticas ha iluminado la profunda diferencia biológica entre una respuesta plana de glucosa y picos posprandiales de alta amplitud. Incluso las personas con una HbA1c aparentemente \"normal\" de 5,2% pueden pasar varias horas al día en picos glucémicos transitorios que superan los 140 mg/dL, lo que desencadena cascadas de estrés oxidativo."
     },
     {
       "type": "h2",
-      "text": "[es] 1. Biochemical Mechanism: Superoxide Overproduction & Endothelial Damage"
+      "text": "1. Mecanismo bioquímico: sobreproducción de superóxido y daño endotelial"
     },
     {
       "type": "p",
-      "text": "[es] Why are postprandial spikes biologically damaging even when fasting levels return to baseline within two hours? The primary cellular mechanism occurs within the mitochondrial electron transport chain of vascular endothelial cells."
+      "text": "¿Por qué los picos posprandiales son biológicamente dañinos incluso cuando los niveles en ayunas regresan al valor inicial en dos horas? El mecanismo celular primario ocurre dentro de la cadena de transporte de electrones mitocondrial de las células endoteliales vasculares."
     },
     {
       "type": "p",
-      "text": "[es] When an acute influx of glucose floods endothelial cells, excess pyruvate generates an overwhelming concentration of electron donors (NADH and FADH₂) into Complex I and Complex III. This over-saturates the mitochondrial proton gradient, halting the forward passage of electrons and transferring solitary electrons directly to molecular oxygen to synthesize superoxide anions ($O_2^{\\bullet-}$):"
+      "text": "Cuando una afluencia aguda de glucosa inunda las células endoteliales, el exceso de piruvato genera una concentración abrumadora de donantes de electrones (NADH y FADH₂) en el Complejo I y el Complejo III. Esto sobresatura el gradiente de protones mitocondrial, deteniendo el paso directo de electrones y transfiriendo electrones solitarios directamente al oxígeno molecular para sintetizar aniones superóxido ($O_2^{\\bullet-}$):"
     },
     {
       "type": "code",
@@ -42,58 +42,58 @@
     },
     {
       "type": "quote",
-      "text": "[es] A fluctuating glucose profile produces far greater vascular oxidative stress and endothelial apoptosis than a steady, sustained level of moderate hyperglycemia.",
-      "cite": "[es] Dr. Marcus Vance, Preventive Cardiology & Longevity Medicine"
+      "text": "Un perfil de glucosa fluctuante produce un estrés oxidativo vascular y una apoptosis endotelial mucho mayores que un nivel constante y sostenido de hiperglucemia moderada.",
+      "cite": "Dr. Marcus Vance, Cardiología Preventiva y Medicina de la Longevidad"
     },
     {
       "type": "h2",
-      "text": "[es] 2. Quantifying Glycemic Variability: Key Telemetry Metrics"
+      "text": "2. Cuantificación de la variabilidad glucémica: métricas de telemetría clave"
     },
     {
       "type": "p",
-      "text": "[es] Modern clinical endocrinology utilizes standardized CGM telemetry parameters to assess glycemic regulation beyond simple average glucose:"
+      "text": "La endocrinología clínica moderna utiliza parámetros de telemetría MCG estandarizados para evaluar la regulación glucémica más allá de la simple glucosa promedio:"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Mean Amplitude of Glycemic Excursions (MAGE): Measures the average height of glucose peaks that exceed one standard deviation of the 24-hour mean, serving as the gold standard marker of glycemic volatility.",
-        "[es] Time in Range (TIR): The percentage of time glucose remains between 70 and 140 mg/dL (optimally >95% for preventive metabolic health).",
-        "[es] Continuous Overall Net Glycemic Action (CONGA): Evaluates intra-day variation by calculating glycemic differences across specified hourly intervals.",
-        "[es] Incremental Area Under the Curve (iAUC): Quantifies the total magnitude of postprandial glucose exposure above pre-meal baseline concentrations."
+        "Amplitud media de excursiones glucémicas (MAGE): Mide la altura promedio de los picos de glucosa que exceden una desviación estándar de las 24 horas es decir, que sirve como marcador de referencia de la volatilidad glucémica.",
+        "Tiempo en rango (TIR): el porcentaje de tiempo que la glucosa permanece entre 70 y 140 mg/dL (óptimamente >95 % para la salud metabólica preventiva).",
+        "Acción glucémica neta general continua (CONGA): Evalúa la variación intradía calculando las diferencias glucémicas en intervalos horarios específicos.",
+        "Área incremental bajo la curva (iAUC): cuantifica la magnitud total de la exposición posprandial a la glucosa por encima de las concentraciones iniciales antes de las comidas."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] 3. Video Masterclass: Continuous Glucose Monitoring & Metabolic Flexibility"
+      "text": "3. Clase magistral en vídeo: Monitoreo continuo de glucosa y flexibilidad metabólica"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VAEzZeaV5zM",
-      "title": "[es] Glucose Telemetry, Insulin Kinetics & Metabolic Flexibility",
-      "caption": "[es] Clinical deep dive into continuous glucose telemetry, postprandial insulin surges, and mitochondrial substrate switching."
+      "title": "Telemetría de glucosa, cinética de insulina y flexibilidad metabólica",
+      "caption": "Profundización clínica en telemetría continua de glucosa, picos de insulina posprandial y cambio de sustrato mitocondrial."
     },
     {
       "type": "h2",
-      "text": "[es] 4. Metabolic Flexibility: The Randle Cycle and Substrate Switching"
+      "text": "4. Flexibilidad metabólica: el ciclo de Randle y el cambio de sustrato"
     },
     {
       "type": "p",
-      "text": "[es] Metabolic flexibility is the physiological capacity of cellular mitochondria to alternate seamlessly between carbohydrate (glucose) and lipid (free fatty acid) oxidation depending on nutritional status and energy demand. This process is governed by the glucose-fatty acid cycle, classically known as the Randle Cycle."
+      "text": "La flexibilidad metabólica es la capacidad fisiológica de las mitocondrias celulares para alternar sin problemas entre la oxidación de carbohidratos (glucosa) y lípidos (ácidos grasos libres) dependiendo del estado nutricional y la demanda de energía. Este proceso se rige por el ciclo glucosa-ácidos grasos, conocido clásicamente como ciclo de Randle."
     },
     {
       "type": "p",
-      "text": "[es] In metabolically healthy individuals, insulin surges following carbohydrate intake rapidly activate muscle glucose uptake through GLUT4 translocation and suppress intracellular lipolysis. Conversely, in insulin-resistant phenotypes, high baseline insulin levels lock mitochondria into continuous glucose oxidation while failing to clear excess intramyocellular lipids, resulting in toxic diacylglycerol accumulation and chronic cellular fatigue."
+      "text": "En individuos metabólicamente sanos, los aumentos repentinos de insulina después de la ingesta de carbohidratos activan rápidamente la absorción de glucosa muscular a través de la translocación de GLUT4 y suprimen la lipólisis intracelular. Por el contrario, en los fenotipos resistentes a la insulina, los niveles basales altos de insulina bloquean las mitocondrias en una oxidación continua de la glucosa y no eliminan el exceso de lípidos intramiocelulares, lo que resulta en una acumulación tóxica de diacilglicerol y fatiga celular crónica."
     },
     {
       "type": "h2",
-      "text": "[es] 5. Clinical Takeaways for Preventive Health"
+      "text": "5. Conclusiones clínicas para la salud preventiva"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Prioritize Meal Sequencing: Ingesting dietary fiber, lean protein, and healthy fats prior to fast-digesting carbohydrates slows gastric emptying and dampens postprandial glucose spikes by up to 40%.",
-        "[es] Postprandial Muscular Contraction: Engaging in a modest 15-minute walk immediately following meals stimulates non-insulin-dependent GLUT4 translocation via AMPK activation, clearing systemic glucose into skeletal muscle.",
-        "[es] Target Low MAGE Over Low Average: Focus clinical strategy on reducing glycemic peak amplitude and volatility rather than obsessing over minimal fasting numbers."
+        "Priorizar la secuencia de comidas: la ingestión de fibra dietética, proteínas magras y grasas saludables antes de los carbohidratos de rápida digestión retarda el vaciamiento gástrico y amortigua los picos de glucosa posprandial hasta en un 40 %.",
+        "Contracción muscular posprandial: realizar una caminata modesta de 15 minutos inmediatamente después de las comidas estimula la translocación de GLUT4 no dependiente de insulina a través de la activación de AMPK, eliminando la glucosa sistémica hacia el músculo esquelético.",
+        "Objetivo MAGE bajo por encima del promedio bajo: centrar la estrategia clínica en reducir la amplitud y la volatilidad del pico glucémico en lugar de obsesionarse con cifras mínimas en ayunas."
       ]
     }
   ],

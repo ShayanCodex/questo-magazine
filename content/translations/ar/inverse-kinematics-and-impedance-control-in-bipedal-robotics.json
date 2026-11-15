@@ -1,7 +1,7 @@
 {
   "slug": "inverse-kinematics-and-impedance-control-in-bipedal-robotics",
-  "title": "[ar] Impedance Control in Bipedal Robotics",
-  "excerpt": "[ar] A robotics engineering treatise on joint torque space mapping, zero-moment point dynamics, compliance modulation, and whole-body locomotion stabilization.",
+  "title": "التحكم في المعاوقة في الروبوتات ذات القدمين",
+  "excerpt": "أطروحة في هندسة الروبوتات حول رسم خرائط مساحة عزم الدوران المشترك، وديناميكيات نقطة اللحظة الصفرية، وتعديل الامتثال، وتثبيت حركة الجسم بالكامل.",
   "date": "2026-11-15",
   "author": "Elena Rostova",
   "tags": [
@@ -13,23 +13,23 @@
     "control-theory"
   ],
   "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Advanced bipedal humanoid robot standing in high-precision laboratory testing environment",
+  "imageAlt": "روبوت بشري متقدم ذو قدمين يقف في بيئة اختبار معملية عالية الدقة.",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The mechanical synthesis of human locomotion represents one of the most formidable frontiers in control theory and physical computing. Unlike wheeled autonomous rovers that benefit from static multi-point equilibrium, bipedal humanoid robots operate in continuous state space instability. To navigate unstructured terrestrial terrain—gravel, staircases, and slick surfaces—a humanoid platform cannot rely on rigid position trajectories. It requires active impedance control, modulating mechanical compliance at millisecond intervals."
+      "text": "يمثل التوليف الميكانيكي للحركة البشرية أحد أكثر الحدود الهائلة في نظرية التحكم والحوسبة الفيزيائية. على عكس المركبات الجوالة المستقلة ذات العجلات التي تستفيد من التوازن الثابت متعدد النقاط، تعمل الروبوتات ذات القدمين في حالة عدم استقرار فضاء مستمر. للتنقل في التضاريس الأرضية غير المنظمة - مثل الحصى والسلالم والأسطح الملساء - لا يمكن للمنصة البشرية الاعتماد على مسارات المواقع الصلبة. فهو يتطلب تحكمًا نشطًا في المعاوقة، وتعديل الامتثال الميكانيكي على فترات زمنية بالمللي ثانية."
     },
     {
       "type": "p",
-      "text": "[ar] By dynamically mapping contact forces back into joint torque space via the Jacobian transpose, impedance control transforms stiff actuator gearboxes into virtual spring-damper mechanisms. When a robot foot encounters unanticipated topography, the leg absorbs kinetic impact elastically rather than shattering harmonic drive reducers or tipping the chassis into an unrecoverable tumble."
+      "text": "من خلال تعيين قوى الاتصال ديناميكيًا مرة أخرى في مساحة عزم الدوران المشتركة عبر النقل اليعقوبي، يقوم التحكم في المعاوقة بتحويل علب تروس المحرك الصلبة إلى آليات مخمد زنبركي افتراضية. عندما تواجه قدم الروبوت تضاريس غير متوقعة، تمتص الساق التأثير الحركي بشكل مرن بدلاً من تحطيم مخفضات الحركة التوافقية أو قلب الهيكل إلى تعثر غير قابل للاسترداد."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Mathematical Foundations: The Virtual Spring-Damper Model"
+      "text": "1. الأسس الرياضية: نموذج المثبط الربيعي الافتراضي"
     },
     {
       "type": "p",
-      "text": "[ar] Impedance control defines a target relationship between the external contact force vector ($F_{ext}$) and resulting kinematic displacement ($x - x_0$) rather than prescribing absolute coordinates:"
+      "text": "يحدد التحكم في المعاوقة العلاقة المستهدفة بين ناقل قوة الاتصال الخارجية ($F_{ext}$) والإزاحة الحركية الناتجة ($x - x_0$) بدلاً من وصف الإحداثيات المطلقة:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] By tuning $K_d$ and $D_d$ in real time, the control loop mimics biological musculature. During the swing phase of a gait cycle, stiffness is maximized to track reference trajectories with high fidelity. At the exact instant of heel strike, stiffness is collapsed along the vertical axis, allowing compliant shock absorption without expensive hardware suspension."
+      "text": "عن طريق ضبط $K_d$ و$D_d$ في الوقت الفعلي، تحاكي حلقة التحكم العضلات البيولوجية. أثناء مرحلة التأرجح في دورة المشي، يتم تعظيم الصلابة لتتبع المسارات المرجعية بدقة عالية. في اللحظة المحددة لضربة الكعب، يتم طي الصلابة على طول المحور الرأسي، مما يسمح بامتصاص الصدمات بشكل متوافق دون تعليق الأجهزة باهظة الثمن."
     },
     {
       "type": "quote",
-      "text": "[ar] True stability in bipedal systems is not the resistance to perturbation, but the mathematical elegance with which disturbance energy is absorbed, channeled, and repurposed into forward momentum.",
-      "cite": "[ar] Elena Rostova, Senior Robotics & Embodied AI Fellow"
+      "text": "الاستقرار الحقيقي في الأنظمة ذات القدمين ليس مقاومة الاضطراب، بل الأناقة الرياضية التي يتم من خلالها امتصاص طاقة الاضطراب وتوجيهها وإعادة توجيهها إلى زخم للأمام.",
+      "cite": "إيلينا روستوفا، زميلة أولى في مجال الروبوتات والذكاء الاصطناعي المتجسد"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Zero-Moment Point (ZMP) and Capture Point Dynamics"
+      "text": "2. نقطة لحظة الصفر (ZMP) وديناميكيات نقطة الالتقاط"
     },
     {
       "type": "p",
-      "text": "[ar] Locomotion equilibrium is governed by the Zero-Moment Point (ZMP)—the spatial coordinate where total horizontal inertial and gravitational moments sum to zero. So long as the ZMP resides strictly within the support polygon defined by the robot's foot contact area, the machine cannot tip."
+      "text": "يخضع توازن الحركة لنقطة لحظة الصفر (ZMP) - الإحداثيات المكانية حيث يكون مجموع لحظات القصور الذاتي والجاذبية الأفقية يساوي الصفر. وطالما أن ZMP موجود بشكل صارم داخل مضلع الدعم المحدد بواسطة منطقة ملامسة قدم الروبوت، فلا يمكن للآلة أن تنقلب."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Support Polygon Boundary: In single-support phase, the stability boundary shrinks to the sole of one shoe, demanding sub-millisecond center-of-mass telemetry.",
-        "[ar] Capture Point Prediction: If external impulses push the ZMP outside the foot boundary, the whole-body controller calculates the instantaneous Capture Point—the precise physical coordinates where the swing leg must land to arrest falling velocity.",
-        "[ar] Model Predictive Control (MPC): Receding-horizon solvers forecast ground reaction forces across a 1.5-second trajectory window, solving quadratic optimization problems at 500 Hz."
+        "دعم حدود المضلع: في مرحلة الدعم الفردي، تتقلص حدود الاستقرار إلى نعل حذاء واحد، مما يتطلب قياسًا عن بعد لمركز الكتلة أقل من مللي ثانية.",
+        "التنبؤ بنقطة الالتقاط: إذا دفعت نبضات خارجية ZMP خارج حدود القدم، فإن وحدة التحكم في الجسم بالكامل تحسب نقطة الالتقاط اللحظية - وهي الإحداثيات الفيزيائية الدقيقة حيث يجب أن تهبط ساق التأرجح لوقف سرعة السقوط.",
+        "نموذج التحكم التنبؤي (MPC): يتنبأ محللو تراجع الأفق بقوى رد الفعل الأرضي عبر نافذة مسار مدتها 1.5 ثانية، مما يحل مشكلات التحسين التربيعية عند 500 هرتز."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: High-Dynamic Locomotion in Bipedal Systems"
+      "text": "3. درس فيديو رئيسي: الحركة الديناميكية العالية في الأنظمة ذات القدمين"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/tF4DML7FIWk",
-      "title": "[ar] Whole-Body Dynamic Impedance and Bipedal Locomotion",
-      "caption": "[ar] Demonstration of high-frequency model predictive control, dynamic balance recovery, and real-time obstacle traversal in humanoid platforms."
+      "title": "المعاوقة الديناميكية لكامل الجسم والحركة ذات القدمين",
+      "caption": "عرض للتحكم التنبئي للنموذج عالي التردد، واستعادة التوازن الديناميكي، واجتياز العوائق في الوقت الفعلي في منصات تشبه البشر."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Actuator Architectures: Quasi-Direct Drive vs. Strain Wave Gears"
+      "text": "4. معماريات المحرك: الدفع شبه المباشر مقابل التروس الموجية للضغط"
     },
     {
       "type": "p",
-      "text": "[ar] Modern robotics has witnessed a decisive architectural shift away from high-ratio strain wave gears toward Quasi-Direct Drive (QDD) actuators. High gear ratios (100:1) introduce extreme reflected inertia ($I_{reflected} \\propto N^2$) and backdrivability friction, which degrades mechanical transparency and destroys force sensing accuracy."
+      "text": "شهدت الروبوتات الحديثة تحولًا معماريًا حاسمًا بعيدًا عن تروس موجة الضغط ذات النسبة العالية نحو مشغلات الدفع شبه المباشر (QDD). تقدم نسب التروس العالية (100:1) قصورًا منعكسًا شديدًا ($I_{reflected} \\propto N^2$) واحتكاك قابلية القيادة الخلفية، مما يؤدي إلى تدهور الشفافية الميكانيكية وتدمير دقة استشعار القوة."
     },
     {
       "type": "p",
-      "text": "[ar] QDD actuators utilize low gear ratios (under 10:1) paired with large-diameter high-torque outrunner brushless motors. This delivers ultra-low mechanical impedance, allowing motor phase current measurements to serve as accurate proxies for joint contact torque without fragile six-axis load cells in the ankles."
+      "text": "تستخدم مشغلات QDD نسب تروس منخفضة (أقل من 10:1) مقترنة بمحركات خارجية بدون فرش ذات قطر كبير وعزم دوران عالي. يوفر هذا مقاومة ميكانيكية منخفضة للغاية، مما يسمح لقياسات تيار الطور الحركي أن تكون بمثابة وكلاء دقيقين لعزم دوران التلامس المشترك دون وجود خلايا تحميل هشة سداسية المحاور في الكاحلين."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Systems Engineering Takeaways"
+      "text": "5. الوجبات السريعة لهندسة الأنظمة"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Backdrivability Priority: Prioritize actuators with low reflected inertia and zero cogging torque to ensure transparent force reflection in closed-loop control.",
-        "[ar] Hierarchical Control Stacks: Separate slow-rate trajectory optimization (50-100 Hz MPC) from high-speed joint impedance compliance loops (1 kHz torque servos).",
-        "[ar] Sensory Redundancy: Fuse high-rate IMU angular acceleration telemetry with optical encoder arrays to filter vibration artifacts caused by structural resonance."
+        "أولوية إمكانية القيادة الخلفية: إعطاء الأولوية للمحركات ذات القصور الذاتي المنعكس المنخفض وعزم الدوران المسنن لضمان انعكاس القوة الشفاف في التحكم في الحلقة المغلقة.",
+        "مكدسات التحكم الهرمية: تحسين المسار البطيء المنفصل (50-100 هرتز MPC) من حلقات الامتثال لمقاومة المفاصل عالية السرعة (1 كيلو هرتز ماكينات عزم الدوران).",
+        "التكرار الحسي: دمج القياس عن بعد للتسارع الزاوي IMU عالي السرعة مع صفائف التشفير البصري لتصفية آثار الاهتزاز الناتجة عن الرنين الهيكلي."
       ]
     }
   ],

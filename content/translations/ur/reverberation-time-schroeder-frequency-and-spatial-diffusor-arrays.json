@@ -1,7 +1,7 @@
 {
   "slug": "reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays",
-  "title": "[ur] Concert Hall Architectural Acoustics",
-  "excerpt": "[ur] A structural acoustics monograph on Sabine decay formulas, room mode eigenfrequencies, lateral energy fraction, and number-theoretic acoustic diffusion surfaces.",
+  "title": "کنسرٹ ہال آرکیٹیکچرل ایکوسٹکس",
+  "excerpt": "سبائن ڈے فارمولوں، روم موڈ ایگن فریکوئنسی، پس منظر کی توانائی کے حصے، اور نمبر نظریاتی صوتی پھیلاؤ کی سطحوں پر ایک ساختی صوتی مونوگراف۔",
   "date": "2026-11-15",
   "author": "Mateo Silva",
   "tags": [
@@ -13,23 +13,23 @@
     "concert-halls"
   ],
   "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Monumental symphonic concert hall interior with sculpted acoustic wood wall diffusors and balconies",
+  "imageAlt": "یادگار سمفونک کنسرٹ ہال کا اندرونی حصہ جس میں مجسمہ ساز صوتی لکڑی کی دیواروں اور بالکونیوں کے ساتھ",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The architecture of a great concert hall is not merely a visual monument; it is a monumental acoustic instrument. When an orchestra performs, the physical enclosure of the hall reflects, diffuses, and absorbs sound waves, transforming mechanical instrument vibrations into an immersive spatial field. Historically, hall design was dominated by empirical trial and error—resulting in triumphs like Vienna's Musikverein and catastrophes where halls produced dead acoustic shadows or muddy flutter echoes. The modern science of architectural acoustics synthesizes wave mechanics, room eigenmodes, and number-theoretic diffusion surfaces."
+      "text": "ایک عظیم کنسرٹ ہال کا فن تعمیر محض ایک بصری یادگار نہیں ہے۔ یہ ایک یادگار صوتی آلہ ہے۔ جب ایک آرکسٹرا پرفارم کرتا ہے، تو ہال کا فزیکل انکلوژر صوتی لہروں کی عکاسی کرتا ہے، پھیلاتا ہے اور جذب کرتا ہے، جس سے مکینیکل آلے کی کمپن ایک عمیق مقامی فیلڈ میں تبدیل ہوتی ہے۔ تاریخی طور پر، ہال کے ڈیزائن پر تجرباتی آزمائش اور غلطی کا غلبہ تھا - جس کے نتیجے میں ویانا کے میوزیکورین جیسی فتح اور تباہی ہوئی جہاں ہالوں نے مردہ صوتی سائے یا کیچڑ کی لہروں کی بازگشت پیدا کی۔ آرکیٹیکچرل صوتی سائنس کی جدید سائنس لہر میکانکس، روم ایگن موڈس، اور نمبر تھیوریٹک ڈفیوژن سطحوں کی ترکیب کرتی ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] Achieving acoustic excellence requires balancing two contradictory objectives: clarity (the ability to distinguish individual instrumental timbres) and reverberance (the sense of being enveloped in a warm, blooming acoustic void). A hall that favors clarity feels clinical and dry; a hall that favors reverberance degrades speech intelligibility and rapid musical articulation."
+      "text": "صوتی فضیلت کو حاصل کرنے کے لیے دو متضاد مقاصد میں توازن کی ضرورت ہوتی ہے: وضاحت (انفرادی آلہ کار ٹمبروں میں فرق کرنے کی صلاحیت) اور ریبربرنس (ایک گرم، کھلتے ہوئے صوتی صفر میں لپٹے ہونے کا احساس)۔ ایک ہال جو وضاحت کی حمایت کرتا ہے طبی اور خشک محسوس ہوتا ہے؛ ایک ہال جو ریبررنس کی حمایت کرتا ہے تقریر کی سمجھ بوجھ اور تیز موسیقی کے اظہار کو کم کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Reverberation Time ($RT_{60}$) and the Sabine Formulation"
+      "text": "1. ریوربریشن ٹائم ($RT_{60}$) اور سبائن فارمولیشن"
     },
     {
       "type": "p",
-      "text": "[ur] The fundamental benchmark of architectural acoustics is Reverberation Time ($RT_{60}$): the time required for sound energy density to decay by 60 decibels after the sound source has ceased. In 1898, Wallace Clement Sabine formulated the foundational relationship governing enclosed acoustic spaces:"
+      "text": "آرکیٹیکچرل صوتی کا بنیادی معیار Reverberation Time ($RT_{60}$): آواز کے منبع کے ختم ہونے کے بعد صوتی توانائی کی کثافت کے 60 ڈیسیبل کے زوال کے لیے درکار وقت ہے۔ 1898 میں، والیس کلیمنٹ سبین نے منسلک صوتی جگہوں کو کنٹرول کرنے والے بنیادی تعلقات کو وضع کیا:"
     },
     {
       "type": "code",
@@ -38,24 +38,24 @@
     },
     {
       "type": "p",
-      "text": "[ur] For symphonic orchestral repertoire, the optimal $RT_{60}$ target is precisely 1.8 to 2.2 seconds. If $RT_{60}$ drops below 1.5 seconds, the acoustic space feels lifeless and dry; if it exceeds 2.5 seconds, rapid staccato passages blend into an unintelligible acoustic blur."
+      "text": "سمفونک آرکیسٹرا کے ذخیرے کے لیے، بہترین $RT_{60}$ ہدف 1.8 سے 2.2 سیکنڈ تک ہے۔ اگر $RT_{60}$ 1.5 سیکنڈ سے نیچے گر جاتا ہے، تو صوتی جگہ بے جان اور خشک محسوس ہوتی ہے۔ اگر یہ 2.5 سیکنڈ سے زیادہ ہے، تو تیز رفتار سٹاکاٹو راستے ایک ناقابل فہم صوتی دھندلے میں گھل مل جاتے ہیں۔"
     },
     {
       "type": "quote",
-      "text": "[ur] A concert hall does not create music; it creates the spatial void in which silence can slowly decay into resonance.",
-      "cite": "[ur] Mateo Silva, Expedition Fellow & Architecture Critic"
+      "text": "ایک کنسرٹ ہال موسیقی نہیں بناتا؛ یہ مقامی خلا پیدا کرتا ہے جس میں خاموشی آہستہ آہستہ گونج میں بدل سکتی ہے۔",
+      "cite": "Mateo Silva، Expedition Fellow & Architecture Critic"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. The Schroeder Frequency: Discrete Modes vs. Statistical Fields"
+      "text": "2. Schroeder Frequency: Discrete Modes بمقابلہ Statistical Fields"
     },
     {
       "type": "p",
-      "text": "[ur] A critical physical boundary in room acoustics is the Schroeder Cutoff Frequency ($f_s$). Below $f_s$, sound behaves according to wave optics, forming discrete standing waves (room modes) where specific resonant bass frequencies cancel out or boom violently depending on listener position."
+      "text": "کمرے کی صوتیات میں ایک اہم جسمانی حد شروڈر کٹ آف فریکوئینسی ($f_s$) ہے۔ $f_s$ کے نیچے، آواز لہر آپٹکس کے مطابق برتاؤ کرتی ہے، مجرد کھڑے لہروں (کمرے کے طریقوں) کی تشکیل کرتی ہے جہاں سننے والے کی پوزیشن کے لحاظ سے مخصوص ریزوننٹ باس فریکوئنسییں منسوخ یا پرتشدد تیزی سے بڑھ جاتی ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] Above the Schroeder frequency, mode density becomes so densely packed that sound can be modeled statistically as a diffuse geometrical sound field:"
+      "text": "شروڈر فریکوئنسی کے اوپر، موڈ کی کثافت اتنی گنجان بن جاتی ہے کہ آواز کو اعداد و شمار کے لحاظ سے ایک پھیلا ہوا جیومیٹریکل ساؤنڈ فیلڈ کے طور پر بنایا جا سکتا ہے:"
     },
     {
       "type": "code",
@@ -64,29 +64,29 @@
     },
     {
       "type": "p",
-      "text": "[ur] In large symphonic halls, the Schroeder frequency drops into the sub-audible range, ensuring that the entire audible orchestral spectrum operates in the diffuse statistical regime."
+      "text": "بڑے سمفونک ہالز میں، شروڈر فریکوئنسی ذیلی قابل سماعت رینج میں گرتی ہے، اس بات کو یقینی بناتی ہے کہ پورا سننے والا آرکیسٹرل سپیکٹرم پھیلے ہوئے شماریاتی نظام میں کام کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: Concert Hall Acoustics & Sound Physics"
+      "text": "3. ویڈیو ماسٹر کلاس: کنسرٹ ہال ایکوسٹک اور ساؤنڈ فزکس"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "[ur] Acoustic Wave Physics, Resonance & Architectural Spaces",
-      "caption": "[ur] Architectural acoustics documentary examining sound reflections, vineyard vs shoebox halls, and Schroeder diffusors."
+      "title": "ایکوسٹک ویو فزکس، ریزوننس اور آرکیٹیکچرل اسپیسز",
+      "caption": "آرکیٹیکچرل ایکوسٹک دستاویزی فلم جس میں صوتی عکاسی، وائن یارڈ بمقابلہ شو باکس ہالز، اور شروڈر ڈفیوزرز کی جانچ ہوتی ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Number-Theoretic Diffusion: Quadratic Residue Diffusors (QRD)"
+      "text": "4. نمبر تھیوریٹک ڈفیوژن: کواڈریٹک ریزیڈیو ڈفیوژرز (QRD)"
     },
     {
       "type": "p",
-      "text": "[ur] Flat parallel surfaces create specular reflections (like a mirror), generating harsh flutter echoes. Simple curved surfaces disperse sound but can create localized acoustic hotspots. In the 1970s, physicist Manfred Schroeder revolutionized acoustic architecture by applying number theory—specifically quadratic residues from modular arithmetic—to surface diffusion."
+      "text": "فلیٹ متوازی سطحیں مخصوص عکاسی (آئینے کی طرح) پیدا کرتی ہیں، سخت پھڑپھڑاہٹ کی بازگشت پیدا کرتی ہیں۔ سادہ خمیدہ سطحیں آواز کو منتشر کرتی ہیں لیکن مقامی صوتی ہاٹ سپاٹ بنا سکتی ہیں۔ 1970 کی دہائی میں، ماہر طبیعیات مینفریڈ شروڈر نے نمبر تھیوری کو لاگو کر کے صوتی فن تعمیر میں انقلاب برپا کیا — خاص طور پر ماڈیولر ریاضی سے لے کر چوکور باقیات — سطح کے پھیلاؤ تک۔"
     },
     {
       "type": "p",
-      "text": "[ur] A Quadratic Residue Diffusor (QRD) consists of a series of wells of uniform width but varying depths calculated using prime numbers:"
+      "text": "A Quadratic Residue Diffusor (QRD) یکساں چوڑائی کے کنوؤں کی ایک سیریز پر مشتمل ہوتا ہے لیکن پرائم نمبرز کا استعمال کرتے ہوئے مختلف گہرائیوں کا حساب لگایا جاتا ہے:"
     },
     {
       "type": "code",
@@ -95,18 +95,18 @@
     },
     {
       "type": "p",
-      "text": "[ur] Sound waves entering the wells reflect off bottom boundaries with varying phase delays dictated by number theory. When re-emerging, destructive interference eliminates specular reflection, scattering sound energy uniformly across a hemispherical 180-degree field."
+      "text": "کنوؤں میں داخل ہونے والی صوتی لہریں نمبر تھیوری کے مطابق مختلف مرحلے کی تاخیر کے ساتھ نیچے کی حدود کو ظاہر کرتی ہیں۔ دوبارہ ابھرنے پر، تباہ کن مداخلت مخصوص عکاسی کو ختم کر دیتی ہے، صوتی توانائی کو یکساں طور پر ایک ہیمیسفیریکل 180-ڈگری فیلڈ میں بکھیر دیتی ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Architectural Geometry: Shoebox vs. Vineyard Typology"
+      "text": "5. آرکیٹیکچرل جیومیٹری: شو باکس بمقابلہ وائن یارڈ ٹائپولوجی"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Shoebox Typology (Musikverein, Boston Symphony Hall): High narrow rectangular halls that produce intense early lateral reflections from side walls, maximizing binaural cross-correlation (IACF) and envelopment.",
-        "[ur] Vineyard Typology (Berlin Philharmonie, Elbphilharmonie): Surrounds the orchestra with terraced seating pods, bringing listeners closer to the stage while utilizing sloping terrace parapets as early reflection surfaces.",
-        "[ur] Lateral Energy Fraction (LEF): Acoustic parameter measuring the proportion of sound arriving at listeners from side directions; high LEF creates the sensation of being surrounded by the acoustic source rather than viewing it through a distant window."
+        "شو باکس ٹائپولوجی (Musikverein، Boston Symphony Hall): اونچے تنگ مستطیل ہالز جو اطراف کی دیواروں سے شدید ابتدائی پس منظر کی عکاسی پیدا کرتے ہیں، زیادہ سے زیادہ بائنورل کراس کوریلیشن (IACF) اور انوولپمنٹ۔",
+        "وائن یارڈ ٹائپولوجی (برلن فلہارمونی، ایلبفیل ہارمونی): آرکسٹرا کے چاروں طرف چھت والے بیٹھنے والے پوڈز کے ساتھ، سامعین کو اسٹیج کے قریب لاتا ہے جبکہ ڈھلوان ٹیرس پیراپیٹس کو ابتدائی عکاسی سطحوں کے طور پر استعمال کرتا ہے۔",
+        "لیٹرل انرجی فریکشن (LEF): صوتی پیرامیٹر سائیڈ ڈائریکشنز سے سامعین تک پہنچنے والی آواز کے تناسب کی پیمائش کرتا ہے۔ ہائی LEF اسے دور کی کھڑکی سے دیکھنے کے بجائے صوتی ذریعہ سے گھرے ہونے کا احساس پیدا کرتا ہے۔"
       ]
     }
   ],

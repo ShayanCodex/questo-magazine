@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useCallback } from 'react';
+import { useState, useMemo, useRef, useCallback, useEffect } from 'react';
 import { useLoaderData, useSearchParams } from 'react-router-dom';
 import {
   MagnifyingGlassIcon,
@@ -10,6 +10,8 @@ import {
   DocumentTextIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -217,6 +219,60 @@ export function Articles() {
     }
     setShowSuggestions(false);
   };
+
+  // Horizontal Category and Subcategory Slide Controllers with Left/Right Arrows
+  const categoryScrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollCatLeft, setCanScrollCatLeft] = useState(false);
+  const [canScrollCatRight, setCanScrollCatRight] = useState(true);
+
+  const subcategoryScrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollSubLeft, setCanScrollSubLeft] = useState(false);
+  const [canScrollSubRight, setCanScrollSubRight] = useState(false);
+
+  const checkCategoryScroll = useCallback(() => {
+    const el = categoryScrollRef.current;
+    if (!el) return;
+    setCanScrollCatLeft(el.scrollLeft > 4);
+    setCanScrollCatRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+  }, []);
+
+  const checkSubcategoryScroll = useCallback(() => {
+    const el = subcategoryScrollRef.current;
+    if (!el) return;
+    setCanScrollSubLeft(el.scrollLeft > 4);
+    setCanScrollSubRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+  }, []);
+
+  const scrollCategories = (direction: 'left' | 'right') => {
+    const el = categoryScrollRef.current;
+    if (!el) return;
+    const distance = 280;
+    el.scrollBy({
+      left: direction === 'left' ? -distance : distance,
+      behavior: 'smooth',
+    });
+  };
+
+  const scrollSubcategories = (direction: 'left' | 'right') => {
+    const el = subcategoryScrollRef.current;
+    if (!el) return;
+    const distance = 200;
+    el.scrollBy({
+      left: direction === 'left' ? -distance : distance,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    checkCategoryScroll();
+    checkSubcategoryScroll();
+    const handleResize = () => {
+      checkCategoryScroll();
+      checkSubcategoryScroll();
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [checkCategoryScroll, checkSubcategoryScroll, activeCategoryDef]);
 
   return (
     <div className="space-y-12">
@@ -444,84 +500,157 @@ export function Articles() {
           </div>
         </div>
 
-        {/* Clean Single-Line Horizontal Category Filter Bar in Poppins */}
-        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar py-2.5 border-y border-editorial-border font-sans">
+        {/* Horizontal Category Slider with Left/Right Navigation Arrows & Click-to-Slide */}
+        <div className="relative group/cat-bar border-y border-editorial-border py-1">
+          {/* Left Arrow Button */}
           <button
             type="button"
-            onClick={() => handleSelectCategory(null)}
+            onClick={() => scrollCategories('left')}
+            disabled={!canScrollCatLeft}
+            aria-label="Scroll categories left"
             className={cn(
-              'px-3.5 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
-              selectedCategory === null
-                ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border/60'
+              'absolute left-0 top-1/2 -translate-y-1/2 z-10 h-7 w-7 rounded-full border border-editorial-border bg-editorial-surface/95 text-editorial-text shadow-sm flex items-center justify-center transition-all cursor-pointer hover:bg-editorial-text hover:text-editorial-bg',
+              !canScrollCatLeft ? 'opacity-0 pointer-events-none' : 'opacity-100'
             )}
           >
-            <span>{t.allCategories || 'All Categories'}</span>
-            <span className="opacity-70 text-[10px]">({articles.length})</span>
+            <ChevronLeftIcon className="h-4 w-4" />
           </button>
+          <div
+            className={cn(
+              'pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-editorial-bg to-transparent z-[5] transition-opacity',
+              !canScrollCatLeft && 'opacity-0'
+            )}
+          />
 
-          {CATEGORIES.map((cat) => {
-            const count = categoryCounts.catMap.get(cat.id) || 0;
-            const isSelected = selectedCategory === cat.id;
-
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => handleSelectCategory(isSelected ? null : cat.id)}
-                className={cn(
-                  'px-3.5 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
-                  isSelected
-                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                    : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border/60'
-                )}
-              >
-                <span>{getCategoryShortName(cat.id)}</span>
-                {count > 0 && <span className="opacity-70 text-[10px]">({count})</span>}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Dynamic Subcategories (Revealed ONLY when a category is selected) */}
-        {activeCategoryDef && (
-          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar py-1 font-sans">
-            <span className="text-xs font-semibold text-editorial-text shrink-0 flex items-center gap-1">
-              <span>{getCategoryShortName(activeCategoryDef.id)}:</span>
-            </span>
+          {/* Scrollable Container with Smooth Sliding */}
+          <div
+            ref={categoryScrollRef}
+            onScroll={checkCategoryScroll}
+            className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1.5 px-3 font-sans"
+          >
             <button
               type="button"
-              onClick={() => handleSelectSubcategory(null)}
+              onClick={() => handleSelectCategory(null)}
               className={cn(
-                'px-3 py-1 text-xs rounded-full transition-all cursor-pointer shrink-0 font-medium',
-                selectedSubcategory === null
-                  ? 'bg-editorial-text text-editorial-bg font-semibold'
-                  : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
+                'px-3.5 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
+                selectedCategory === null
+                  ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
+                  : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border/60'
               )}
             >
-              All
+              <span>{t.allCategories || 'All Categories'}</span>
+              <span className="opacity-70 text-[10px]">({articles.length})</span>
             </button>
-            {activeCategoryDef.subcategories.map((sub) => {
-              const count = categoryCounts.subMap.get(`${activeCategoryDef.id}:${sub.id}`) || 0;
-              const isSelected = selectedSubcategory === sub.id;
+
+            {CATEGORIES.map((cat) => {
+              const count = categoryCounts.catMap.get(cat.id) || 0;
+              const isSelected = selectedCategory === cat.id;
 
               return (
                 <button
-                  key={sub.id}
+                  key={cat.id}
                   type="button"
-                  onClick={() => handleSelectSubcategory(sub.id)}
+                  onClick={() => handleSelectCategory(isSelected ? null : cat.id)}
                   className={cn(
-                    'px-3 py-1 text-xs rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1 font-medium',
+                    'px-3.5 py-1.5 text-xs font-medium rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1.5',
                     isSelected
-                      ? 'bg-editorial-text text-editorial-bg font-semibold'
-                      : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
+                      ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
+                      : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border/60'
                   )}
                 >
-                  <span>{sub.name}</span>
-                  {count > 0 && <span className="opacity-60 text-[10px]">({count})</span>}
+                  <span>{getCategoryShortName(cat.id)}</span>
+                  {count > 0 && <span className="opacity-70 text-[10px]">({count})</span>}
                 </button>
               );
             })}
+          </div>
+
+          {/* Right Arrow Button */}
+          <div
+            className={cn(
+              'pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-editorial-bg to-transparent z-[5] transition-opacity',
+              !canScrollCatRight && 'opacity-0'
+            )}
+          />
+          <button
+            type="button"
+            onClick={() => scrollCategories('right')}
+            disabled={!canScrollCatRight}
+            aria-label="Scroll categories right"
+            className={cn(
+              'absolute right-0 top-1/2 -translate-y-1/2 z-10 h-7 w-7 rounded-full border border-editorial-border bg-editorial-surface/95 text-editorial-text shadow-sm flex items-center justify-center transition-all cursor-pointer hover:bg-editorial-text hover:text-editorial-bg',
+              !canScrollCatRight ? 'opacity-0 pointer-events-none' : 'opacity-100'
+            )}
+          >
+            <ChevronRightIcon className="h-4 w-4" />
+          </button>
+        </div>
+
+        {/* Dynamic Subcategories with Horizontal Slider Controls */}
+        {activeCategoryDef && (
+          <div className="relative group/sub-bar py-1 font-sans">
+            {canScrollSubLeft && (
+              <button
+                type="button"
+                onClick={() => scrollSubcategories('left')}
+                aria-label="Scroll subcategories left"
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-6 w-6 rounded-full border border-editorial-border bg-editorial-surface text-editorial-text shadow-xs flex items-center justify-center cursor-pointer hover:bg-editorial-text hover:text-editorial-bg"
+              >
+                <ChevronLeftIcon className="h-3 w-3" />
+              </button>
+            )}
+            <div
+              ref={subcategoryScrollRef}
+              onScroll={checkSubcategoryScroll}
+              className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1 px-2 font-sans"
+            >
+              <span className="text-xs font-semibold text-editorial-text shrink-0 flex items-center gap-1">
+                <span>{getCategoryShortName(activeCategoryDef.id)}:</span>
+              </span>
+              <button
+                type="button"
+                onClick={() => handleSelectSubcategory(null)}
+                className={cn(
+                  'px-3 py-1 text-xs rounded-full transition-all cursor-pointer shrink-0 font-medium',
+                  selectedSubcategory === null
+                    ? 'bg-editorial-text text-editorial-bg font-semibold'
+                    : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
+                )}
+              >
+                All
+              </button>
+              {activeCategoryDef.subcategories.map((sub) => {
+                const count = categoryCounts.subMap.get(`${activeCategoryDef.id}:${sub.id}`) || 0;
+                const isSelected = selectedSubcategory === sub.id;
+
+                return (
+                  <button
+                    key={sub.id}
+                    type="button"
+                    onClick={() => handleSelectSubcategory(sub.id)}
+                    className={cn(
+                      'px-3 py-1 text-xs rounded-full transition-all cursor-pointer shrink-0 flex items-center gap-1 font-medium',
+                      isSelected
+                        ? 'bg-editorial-text text-editorial-bg font-semibold'
+                        : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
+                    )}
+                  >
+                    <span>{sub.name}</span>
+                    {count > 0 && <span className="opacity-60 text-[10px]">({count})</span>}
+                  </button>
+                );
+              })}
+            </div>
+            {canScrollSubRight && (
+              <button
+                type="button"
+                onClick={() => scrollSubcategories('right')}
+                aria-label="Scroll subcategories right"
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-6 w-6 rounded-full border border-editorial-border bg-editorial-surface text-editorial-text shadow-xs flex items-center justify-center cursor-pointer hover:bg-editorial-text hover:text-editorial-bg"
+              >
+                <ChevronRightIcon className="h-3 w-3" />
+              </button>
+            )}
           </div>
         )}
 

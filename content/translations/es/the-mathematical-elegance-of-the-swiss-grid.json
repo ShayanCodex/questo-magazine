@@ -1,7 +1,7 @@
 {
   "slug": "the-mathematical-elegance-of-the-swiss-grid",
-  "title": "[es] The Mathematical Elegance of the Swiss Grid",
-  "excerpt": "[es] A deep analysis of Josef Müller-Brockmann's modular layout mathematics, proportional margins, and why the grid remains the foundational grammar of visual communication.",
+  "title": "La elegancia matemática de la cuadrícula suiza",
+  "excerpt": "Un análisis profundo de las matemáticas de diseño modular de Josef Müller-Brockmann, los márgenes proporcionales y por qué la cuadrícula sigue siendo la gramática fundamental de la comunicación visual.",
   "date": "2026-11-09",
   "updated": "2026-11-13",
   "author": "Saskia Lindqvist",
@@ -12,40 +12,40 @@
     "graphic-design"
   ],
   "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Geometric modular architectural lines and typographic proportions on stark white paper",
+  "imageAlt": "Líneas arquitectónicas modulares geométricas y proporciones tipográficas sobre papel blanco",
   "body": [
     {
       "type": "p",
-      "text": "[es] The grid is not a prison; it is a canvas of liberating discipline. When Josef Müller-Brockmann and the pioneers of the Zurich School formalized the International Typographic Style in the 1950s, they sought to purge graphic design of arbitrary subjective whimsy in favor of universal clarity, mathematical harmony, and democratic readability."
+      "text": "La cuadrícula no es una prisión; es un lienzo de disciplina liberadora. Cuando Josef Müller-Brockmann y los pioneros de la Escuela de Zurich formalizaron el Estilo Tipográfico Internacional en la década de 1950, buscaron purgar el diseño gráfico de fantasía subjetiva arbitraria en favor de la claridad universal, la armonía matemática y la legibilidad democrática."
     },
     {
       "type": "h2",
-      "text": "[es] Modular Arithmetic and Harmonic Proportions"
+      "text": "Aritmética modular y proporciones armónicas"
     },
     {
       "type": "p",
-      "text": "[es] At its heart, the Swiss grid relies on proportional division. A standard 12-column layout can be subdivided into halves, thirds, quarters, and sixths without ever breaking horizontal or vertical baseline rhythm. Every headline, pullquote, and caption anchors directly to an underlying mathematical coordinate system."
+      "text": "En esencia, la cuadrícula suiza se basa en la división proporcional. Un diseño estándar de 12 columnas se puede subdividir en mitades, tercios, cuartos y sextos sin romper nunca el ritmo base horizontal o vertical. Cada título, cita y título se ancla directamente a un sistema de coordenadas matemático subyacente."
     },
     {
       "type": "quote",
-      "text": "[es] The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.",
-      "cite": "[es] Josef Müller-Brockmann, Grid Systems in Graphic Design"
+      "text": "El sistema de red es una ayuda, no una garantía. Permite múltiples usos posibles y cada diseñador puede buscar una solución adecuada a su estilo personal. Pero hay que aprender a utilizar la red; es un arte que requiere práctica.",
+      "cite": "Josef Müller-Brockmann, Sistemas de cuadrícula en diseño gráfico"
     },
     {
       "type": "h3",
-      "text": "[es] Essential Axioms of the Swiss Methodology"
+      "text": "Axiomas esenciales de la metodología suiza"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
-        "[es] Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
-        "[es] Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
+        "Cumplimiento estricto de una cuadrícula de línea base: cada línea de texto, independientemente del tamaño de fuente, se ajusta a múltiplos enteros de la altura de la línea base.",
+        "Equilibrio dinámico asimétrico: Reemplazo del centrado estático con tensión activa de espacios en blanco y tipografía alineada a la izquierda.",
+        "Contraste tipográfico jerárquico: utilización de disparidades de escala extremas entre títulos de visualización masiva y un cuerpo de texto compacto y legible."
       ]
     },
     {
       "type": "p",
-      "text": "[es] In our contemporary digital ecosystem, where responsive layouts must adapt instantaneously across watch screens, smartphones, and ultra-wide desktop monitors, the mathematical rigor of the Swiss grid remains our most robust visual compass."
+      "text": "En nuestro ecosistema digital contemporáneo, donde los diseños responsivos deben adaptarse instantáneamente a través de pantallas de relojes, teléfonos inteligentes y monitores de escritorio ultra anchos, el rigor matemático de la cuadrícula suiza sigue siendo nuestra brújula visual más sólida."
     }
   ],
   "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"

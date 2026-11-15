@@ -1,7 +1,7 @@
 {
   "slug": "ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics",
-  "title": "[es] Ground-Effect Aerodynamics in Formula 1",
-  "excerpt": "[es] A mechanical engineering monograph on underbody Bernoulli suction, diffuser expansion ratios, aerodynamic center of pressure migration, and non-linear aeroelastic heave oscillations.",
+  "title": "Aerodinámica del efecto suelo en la Fórmula 1",
+  "excerpt": "Una monografía de ingeniería mecánica sobre la succión de Bernoulli debajo de la carrocería, las relaciones de expansión del difusor, el centro aerodinámico de migración de presión y las oscilaciones aeroelásticas no lineales.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -13,23 +13,23 @@
     "engineering"
   ],
   "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] High-speed aerodynamic racecar cornering on asphalt track displaying extreme underfloor downforce",
+  "imageAlt": "Un auto de carreras aerodinámico de alta velocidad en curvas en una pista de asfalto que muestra una carga aerodinámica extrema debajo del piso",
   "body": [
     {
       "type": "p",
-      "text": "[es] In high-performance automotive and motorsport engineering, downforce is the sovereign metric dictating cornering grip, braking deceleration, and directional stability. For decades, vehicles generated downforce predominantly through upper-body lifting surfaces—inverted multi-element wings and dive planes. However, wing-generated downforce imposes a severe parasitic penalty: induced drag, which scales quadratically with angle of attack and degrades straight-line velocity. Ground-effect aerodynamics circumvents this trade-off by transforming the entire vehicle floor into an integrated Bernoulli suction pump."
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "p",
-      "text": "[es] By channeling incoming airflow through convergent-divergent Venturi tunnels positioned along the underbody, pressure is dramatically reduced beneath the chassis while creating minimal frontal wake turbulence. When executed at peak efficiency, ground-effect floors generate over 60% of total vehicle downforce with a lift-to-drag efficiency ratio ($L/D$) exceeding 4.5:1, double the aerodynamic efficiency of conventional overhead wings."
+      "text": "Al canalizar el flujo de aire entrante a través de túneles Venturi convergentes-divergentes ubicados a lo largo de los bajos de la carrocería, la presión se reduce drásticamente debajo del chasis y al mismo tiempo se crea una estela de turbulencia frontal mínima. Cuando se ejecutan con la máxima eficiencia, los pisos con efecto suelo generan más del 60% de la carga aerodinámica total del vehículo con una relación de eficiencia de elevación-arrastre ($L/D$) superior a 4,5:1, el doble de la eficiencia aerodinámica de las alas aéreas convencionales."
     },
     {
       "type": "h2",
-      "text": "[es] 1. The Venturi Principle: Underbody Pressure Differentials"
+      "text": "1. El principio de Venturi: diferenciales de presión debajo de la carrocería"
     },
     {
       "type": "p",
-      "text": "[es] The fundamental physics of ground effect rests on the incompressible Bernoulli principle and mass continuity in fluid dynamics:"
+      "text": "La física fundamental del efecto suelo se basa en el principio de Bernoulli incompresible y la continuidad de masa en la dinámica de fluidos:"
     },
     {
       "type": "code",
@@ -38,65 +38,65 @@
     },
     {
       "type": "p",
-      "text": "[es] As ambient air enters the floor, the throat section constricts tunnel cross-sectional area ($A_2 < A_1$). By conservation of mass, flow velocity accelerates sharply ($v_2 > v_1$), precipitating a localized drop in static air pressure ($P_2 \\ll P_1$). The higher atmospheric pressure bearing down on the vehicle's upper body creates a massive downward suction force across the flat reference plane."
+      "text": "A medida que el aire ambiente ingresa al piso, la sección de la garganta contrae el área de la sección transversal del túnel ($A_2 < A_1$). Por conservación de la masa, la velocidad del flujo se acelera bruscamente ($v_2 > v_1$), precipitando una caída localizada en la presión estática del aire ($P_2 \\ll P_1$). La presión atmosférica más alta que presiona la parte superior de la carrocería del vehículo crea una fuerza de succión masiva hacia abajo a través del plano de referencia plano."
     },
     {
       "type": "quote",
-      "text": "[es] Ground effect does not push the car into the asphalt; the atmosphere pushes the car down into the low-pressure void created by its own underfloor velocity.",
-      "cite": "[es] Hiroshi Tanaka, Robotics & Applied Physics Fellow"
+      "text": "El efecto suelo no empuja el coche hacia el asfalto; la atmósfera empuja el coche hacia el vacío de baja presión creado por su propia velocidad bajo el suelo.",
+      "cite": "Hiroshi Tanaka, miembro de Robótica y Física Aplicada"
     },
     {
       "type": "h2",
-      "text": "[es] 2. Diffuser Expansion and Boundary Layer Separation"
+      "text": "2. Expansión del difusor y separación de la capa límite"
     },
     {
       "type": "p",
-      "text": "[es] Downstream of the throat, the tunnel cross-section expands at a controlled angle through the rear diffuser. The function of the diffuser is not merely to create downforce locally, but to act as an aerodynamic expansion pump that gradually restores underfloor air velocity to ambient freestream speed with minimal kinetic loss."
+      "text": "Aguas abajo de la garganta, la sección transversal del túnel se expande en un ángulo controlado a través del difusor trasero. La función del difusor no es simplemente crear fuerza aerodinámica localmente, sino actuar como una bomba de expansión aerodinámica que restablece gradualmente la velocidad del aire bajo el piso a la velocidad ambiental de corriente libre con una pérdida cinética mínima."
     },
     {
       "type": "p",
-      "text": "[es] The critical engineering challenge is preventing adverse pressure gradient separation. If the diffuser expansion angle exceeds 7 to 10 degrees, the low-energy boundary layer along the tunnel ceiling separates, causing a catastrophic aerodynamic stall that collapses underfloor suction instantly."
+      "text": "El desafío crítico de ingeniería es evitar la separación por gradiente de presión adverso. Si el ángulo de expansión del difusor excede los 7 a 10 grados, la capa límite de baja energía a lo largo del techo del túnel se separa, provocando una pérdida aerodinámica catastrófica que colapsa instantáneamente la succión debajo del piso."
     },
     {
       "type": "ul",
       "items": [
-        "[es] Floor Edge Sealing: Deploying aerodynamic vortex generators and strakes along the floor perimeter prevents high-pressure lateral air from bleeding into the low-pressure underbody cavity.",
-        "[es] Ride Height Sensitivity: Downforce scales exponentially as ground clearance decreases until boundary layer friction chokes mass airflow.",
-        "[es] Center of Pressure Stability: Ensuring the aerodynamic balance remains stable across changing pitch, roll, and yaw angles during high-speed cornering transitions."
+        "Sellado del borde del piso: La implementación de generadores de vórtice aerodinámicos y tracas a lo largo del perímetro del piso evita que el aire lateral de alta presión se filtre hacia la cavidad de baja presión debajo de la carrocería.",
+        "Sensibilidad a la altura de manejo: La carga aerodinámica aumenta exponencialmente a medida que la distancia al suelo disminuye hasta que la fricción de la capa límite ahoga el flujo de aire masivo.",
+        "Centro de estabilidad de presión: garantizar que el equilibrio aerodinámico permanezca estable en los ángulos cambiantes de cabeceo, balanceo y guiñada durante las transiciones en las curvas de alta velocidad."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] 3. Video Masterclass: Ground Effect Aerodynamics & Venturi Tunnels"
+      "text": "3. Clase magistral en video: Aerodinámica del efecto suelo y túneles Venturi"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ",
-      "title": "[es] Aerodynamic Flow Fields & Formula 1 Ground-Effect Engineering",
-      "caption": "[es] Technical breakdown of underfloor airflow physics, ground proximity downforce, and aerodynamic floor edge sealing."
+      "title": "Campos de flujo aerodinámico e ingeniería de efecto suelo de Fórmula 1",
+      "caption": "Desglose técnico de la física del flujo de aire bajo el piso, carga aerodinámica por proximidad al suelo y sellado aerodinámico de los bordes del piso."
     },
     {
       "type": "h2",
-      "text": "[es] 4. The Mechanics of Porpoising: Non-Linear Aeroelastic Resonance"
+      "text": "4. La mecánica de la marsopa: resonancia aeroelástica no lineal"
     },
     {
       "type": "p",
-      "text": "[es] When ground-effect underbodies operate at sub-millimeter ride heights at speeds exceeding 300 km/h, they risk entering a severe self-sustaining oscillation known as porpoising. As velocity increases, underfloor suction increases, pulling the vehicle suspension closer to the asphalt."
+      "text": "Cuando los bajos con efecto suelo operan a alturas submilimétricas a velocidades superiores a 300 km/h, corren el riesgo de entrar en una oscilación autosostenida severa conocida como marsopa. A medida que aumenta la velocidad, aumenta la succión debajo del piso, lo que acerca la suspensión del vehículo al asfalto."
     },
     {
       "type": "p",
-      "text": "[es] At a critical proximity threshold, the physical gap between the floor throat and the track surface chokes airflow or triggers sudden boundary layer detachment. Underbody downforce instantly collapses, and the compressed mechanical suspension rebounds violently upward. As ride height increases, airflow re-attaches, suction re-engages, and the destructive vertical cycle repeats at frequencies between 5 and 8 Hz, subjecting drivers to violent longitudinal and vertical g-forces."
+      "text": "En un umbral de proximidad crítico, la brecha física entre la garganta del piso y la superficie de la pista obstruye el flujo de aire o provoca un desprendimiento repentino de la capa límite. La carga aerodinámica debajo de la carrocería colapsa instantáneamente y la suspensión mecánica comprimida rebota violentamente hacia arriba. A medida que aumenta la altura de manejo, el flujo de aire se vuelve a conectar, la succión se vuelve a activar y el destructivo ciclo vertical se repite en frecuencias entre 5 y 8 Hz, sometiendo a los conductores a violentas fuerzas G longitudinales y verticales."
     },
     {
       "type": "h2",
-      "text": "[es] 5. Mechanical Engineering Takeaways"
+      "text": "5. Conclusiones de ingeniería mecánica"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Aero-Mechanical Coupling: High downforce ground-effect designs require hyper-stiff suspension heave springs to decouple aerodynamic suction from mechanical wheel travel.",
-        "[es] Diffuser Gradient Management: Implement boundary layer suction slots or vortex generators to prevent stall separation during high-rake pitch attitudes.",
-        "[es] Safety & Ride Clearance: Establish minimum ride height enforcement and floor skid-block wear telemetry to prevent catastrophic downforce loss on track undulations."
+        "Acoplamiento aeromecánico: Los diseños de efecto suelo de alta carga aerodinámica requieren resortes de suspensión hiperrígidos para desacoplar la succión aerodinámica del recorrido mecánico de la rueda.",
+        "Gestión del gradiente del difusor: Implemente ranuras de succión en la capa límite o generadores de vórtices para evitar la separación de la pérdida durante actitudes de inclinación alta.",
+        "Seguridad y espacio libre de manejo: Establecer cumplimiento de la altura mínima de manejo y telemetría del desgaste de los bloques deslizantes del piso para evitar una pérdida catastrófica de carga aerodinámica en las ondulaciones de la pista."
       ]
     }
   ],

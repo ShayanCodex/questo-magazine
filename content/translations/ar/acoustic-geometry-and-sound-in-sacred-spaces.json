@@ -1,7 +1,7 @@
 {
   "slug": "acoustic-geometry-and-sound-in-sacred-spaces",
-  "title": "[ar] Acoustic Geometry in Sacred Spaces",
-  "excerpt": "[ar] An investigation into the sacred acoustic physics of stone vaults, whispering galleries, and modernist concrete chambers that transform human speech into sublime atmospheric resonance.",
+  "title": "الهندسة الصوتية في الأماكن المقدسة",
+  "excerpt": "تحقيق في الفيزياء الصوتية المقدسة للأقبية الحجرية، والمعارض الهامسة، والغرف الخرسانية الحديثة التي تحول الكلام البشري إلى صدى جوي سامي.",
   "date": "2026-11-14",
   "updated": "2026-11-15",
   "author": "Julian Mercer",
@@ -12,65 +12,65 @@
     "stone"
   ],
   "image": "https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Sweeping stone vaulting and soaring arches designed for sublime acoustic resonance",
+  "imageAlt": "قباب حجرية كاسحة وأقواس شاهقة مصممة لإصدار رنين صوتي رفيع.",
   "body": [
     {
       "type": "p",
-      "text": "[ar] Before architecture was codified in blueprints and mathematical engineering drawings, it was experienced primarily through the ear. Ancient Egyptian hypostyle halls, Roman rotundas, and medieval Cistercian abbeys were not merely designed to shelter bodies from the elements; they were monumental acoustic resonators sculpted from living stone to elevate vocal chant into an overwhelming somatic encounter with the transcendent."
+      "text": "قبل أن يتم تدوين الهندسة المعمارية في المخططات والرسومات الهندسية الرياضية، كان يتم تجربتها في المقام الأول من خلال الأذن. لم تكن قاعات الأعمدة المصرية القديمة، والمستديرات الرومانية، والأديرة السيسترسية في العصور الوسطى مصممة فقط لحماية الجثث من العناصر؛ لقد كانت عبارة عن رنانات صوتية ضخمة منحوتة من الحجر الحي لرفع الترنيمة الصوتية إلى مواجهة جسدية ساحقة مع المتعالي."
     },
     {
       "type": "p",
-      "text": "[ar] When you step into the Abbey of Thoronet in Provence or Le Corbusier’s Chapel of Notre-Dame du Haut in Ronchamp, the air itself feels dense with acoustic presence. A single whispered syllable does not simply dissipate; it clings to the curves of the limestone vaults, rolling in cascading harmonic reflections that dissolve the boundary between sound and architecture."
+      "text": "عندما تدخل إلى دير ثورونت في بروفانس أو كنيسة نوتردام دو هوت في لو كوربوزييه في رونشامب، فإن الهواء نفسه يبدو كثيفًا مع وجود صوتي. مقطع لفظي واحد هامس لا يتبدد ببساطة؛ فهو يتشبث بمنحنيات أقبية الحجر الجيري، ويتدحرج في انعكاسات متناغمة متتالية تذيب الحدود بين الصوت والهندسة المعمارية."
     },
     {
       "type": "h2",
-      "text": "[ar] The Physics of Monastic Reverberation"
+      "text": "فيزياء الصدى الرهباني"
     },
     {
       "type": "p",
-      "text": "[ar] In sacred acoustics, the primary metric is Reverberation Time (RT60)—the duration required for sound pressure levels to drop by 60 decibels after the acoustic source has ceased. In an ordinary residential living room, RT60 measures between 0.4 and 0.6 seconds, optimized for crisp conversational speech intelligibility."
+      "text": "في الصوتيات المقدسة، المقياس الأساسي هو وقت الصدى (RT60) - المدة المطلوبة لانخفاض مستويات ضغط الصوت بمقدار 60 ديسيبل بعد توقف المصدر الصوتي. في غرفة المعيشة السكنية العادية، يبلغ قياس RT60 ما بين 0.4 و0.6 ثانية، وهو مُحسّن لتحقيق وضوح واضح في المحادثة."
     },
     {
       "type": "p",
-      "text": "[ar] In Cistercian basilicas, however, RT60 regularly spans 5.5 to 8.2 seconds. Because dense limestone blocks possess an acoustic absorption coefficient of nearly zero at vocal frequencies, sound reflections undergo thousands of bounces across parabolic barrel vaults before attenuating. This prolonged decay transforms modal Gregorian chant into a continuous, self-accompanying sonic drone. The architecture literally sings with the choir."
+      "text": "في البازيليكا السسترسية، يمتد RT60 بانتظام من 5.5 إلى 8.2 ثانية. نظرًا لأن كتل الحجر الجيري الكثيفة تمتلك معامل امتصاص صوتي يقارب الصفر عند الترددات الصوتية، فإن الانعكاسات الصوتية تخضع لآلاف من الارتدادات عبر أقبية أسطوانية مكافئة قبل أن تضعف. يحول هذا الاضمحلال المطول الترنيمة الغريغورية المشروطة إلى طائرة بدون طيار صوتية مستمرة ومصاحبة ذاتيًا. الهندسة المعمارية تغني حرفيا مع الجوقة."
     },
     {
       "type": "quote",
-      "text": "[ar] Stone is not mute. When shaped into a vault, it becomes an instrument that catches human breath and returns it as timeless harmony.",
-      "cite": "[ar] Julian Mercer, Sacred Resonances"
+      "text": "الحجر ليس أخرس. وعندما يتم تشكيلها على شكل قبو، تصبح أداة تلتقط أنفاس الإنسان وتعيدها كتناغم خالد.",
+      "cite": "جوليان ميرسر، الرنين المقدس"
     },
     {
       "type": "h2",
-      "text": "[ar] Acoustic Brutalism: Modernist Chambers of Reflection"
+      "text": "الوحشية الصوتية: غرف التأمل الحداثية"
     },
     {
       "type": "p",
-      "text": "[ar] In the twentieth century, modernist masters revived sacred acoustic physics using exposed concrete. At the Convent of La Tourette, Le Corbusier engineered the crypt with non-parallel sloped ceiling planes and deep concrete light cannons. By avoiding parallel surfaces, the space eliminates flutter echoes while maintaining rich modal density."
+      "text": "في القرن العشرين، أعاد أساتذة الحداثة إحياء الفيزياء الصوتية المقدسة باستخدام الخرسانة المكشوفة. في دير لا توريت، صمم لو كوربوزييه القبو بمستويات سقف مائلة غير متوازية ومدافع ضوئية خرسانية عميقة. من خلال تجنب الأسطح المتوازية، يزيل الفضاء أصداء الرفرفة مع الحفاظ على كثافة الوسائط الغنية."
     },
     {
       "type": "p",
-      "text": "[ar] Similarly, in Sigurd Lewerentz’s Church of St. Peter in Klippan, raw brick vaults and deeply recessed mortar joints act as natural acoustic diffusers. Instead of harsh specular reflections, sound scatters evenly in all directions, creating an acoustic envelope of profound, warm intimacy."
+      "text": "وبالمثل، في كنيسة القديس بطرس التي صممها سيجورد ليورنتز في كليبان، تعمل الأقبية المصنوعة من الطوب الخام ومفاصل الملاط الغائرة بعمق كموزعات صوتية طبيعية. بدلاً من الانعكاسات المرآوية القاسية، ينتشر الصوت بالتساوي في جميع الاتجاهات، مما يخلق غلافًا صوتيًا من الحميمية العميقة والدافئة."
     },
     {
       "type": "h3",
-      "text": "[ar] Acoustic Tectonics in Monumental Design"
+      "text": "التكتونية الصوتية في التصميم الضخم"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Curvature and focusing: Parabolic apses and domed ceilings that gather acoustic energy and project it toward focal listener coordinates without electronic amplification.",
-        "[ar] Diffusive masonry relief: Irregular stone chiseling and stepped brick courses that break up high-frequency flutter echoes into pleasing diffuse fields.",
-        "[ar] Cavity resonance: Subterranean ceramic jars embedded into masonry niches (as recorded by Vitruvius) tuned to absorb discordant vocal harmonics.",
-        "[ar] Threshold compression: Low, heavily damped entry narthexes that acoustically shock the ear with sudden silence before introducing the vast acoustic space of the nave."
+        "الانحناء والتركيز: أبراج مكافئة وأسقف مقببة تجمع الطاقة الصوتية وتوجهها نحو إحداثيات المستمع البؤري دون تضخيم إلكتروني.",
+        "نقش حجري منتشر: نحت الحجر غير المنتظم ومسارات الطوب المتدرجة التي تفكك أصداء الرفرفة عالية التردد إلى حقول منتشرة مبهجة.",
+        "رنين التجويف: أوعية خزفية تحت الأرض مدمجة في منافذ حجرية (كما سجلها فيتروفيوس) تم ضبطها لامتصاص التوافقيات الصوتية المتنافرة.",
+        "ضغط العتبة: رواق دخول منخفض ومبلل بشدة يصدم الأذن صوتيًا بصمت مفاجئ قبل إدخال المساحة الصوتية الواسعة للصحن."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] Designing for the Attentive Ear"
+      "text": "تصميم للأذن اليقظه"
     },
     {
       "type": "p",
-      "text": "[ar] In our contemporary world, where personal headphones create artificial, isolated acoustic bubbles, sacred acoustic architecture reminds us of the communal power of physical sound. When a gathering of people shares an acoustic space that breathes and resonates in unison, space ceases to be a passive container and becomes a transformative spiritual instrument."
+      "text": "في عالمنا المعاصر، حيث تخلق سماعات الرأس الشخصية فقاعات صوتية اصطناعية ومعزولة، تذكرنا الهندسة الصوتية المقدسة بالقوة الجماعية للصوت المادي. عندما يتشارك تجمع من الناس في مساحة صوتية تتنفس ويتردد صداها في انسجام تام، يتوقف الفضاء عن كونه حاوية سلبية ويصبح أداة روحية تحويلية."
     }
   ],
   "sourceHash": "f72c05b9fdbdaa6b61ea146c4606fef13dccadca"

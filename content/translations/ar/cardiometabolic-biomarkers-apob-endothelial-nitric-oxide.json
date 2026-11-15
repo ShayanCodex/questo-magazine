@@ -1,7 +1,7 @@
 {
   "slug": "cardiometabolic-biomarkers-apob-endothelial-nitric-oxide",
-  "title": "[ar] Cardiometabolic Biomarkers & ApoB",
-  "excerpt": "[ar] A clinical examination of apolipoprotein B particle concentration, endothelial shear stress, nitric oxide synthase bioavailability, and the pathophysiology of sub-endothelial atherogenesis.",
+  "title": "المؤشرات الحيوية الاستقلابية للقلب وApoB",
+  "excerpt": "فحص سريري لتركيز جسيمات البروتين الشحمي B، وإجهاد القص البطاني، والتوافر الحيوي لسينثاز أكسيد النيتريك، والفيزيولوجيا المرضية لتصلب الشرايين تحت البطانية.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -12,86 +12,86 @@
     "biomarkers"
   ],
   "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Advanced scientific clinical laboratory testing vascular biomarkers and cellular pathology",
+  "imageAlt": "الاختبارات المعملية السريرية العلمية المتقدمة للمؤشرات الحيوية الوعائية وعلم الأمراض الخلوية",
   "body": [
     {
       "type": "p",
-      "text": "[ar] Cardiovascular disease remains the principal cause of global mortality, yet clinical screening paradigms frequently rely on surrogate lipid metrics that obscure primary underlying mechanisms. Conventional total cholesterol and low-density lipoprotein cholesterol (LDL-C) quantifications quantify the aggregate cholesterol mass within circulating particles, failing to capture the absolute atherogenic particle number. Recent advances in molecular lipidology demonstrate that apolipoprotein B-100 (ApoB) particle concentration, coupled with endothelial nitric oxide synthase (eNOS) uncoupling, provides an exponentially more accurate predictive model of atheromatous plaque nucleation."
+      "text": "لا تزال أمراض القلب والأوعية الدموية هي السبب الرئيسي للوفيات العالمية، ومع ذلك تعتمد نماذج الفحص السريري في كثير من الأحيان على مقاييس الدهون البديلة التي تحجب الآليات الأساسية الأساسية. التقليدية الكولسترول الكلي والكوليسترول البروتين الدهني منخفض الكثافة (LDL-C) الكميات قياس كتلة الكولسترول الكلي داخل الجزيئات المتداولة، والفشل في التقاط عدد الجسيمات تصلب الشرايين المطلقة. تُظهر التطورات الحديثة في علم الدهون الجزيئي أن تركيز جسيمات البروتين الشحمي B-100 (ApoB)، إلى جانب فك ارتباط سينسيز أكسيد النيتريك البطاني (eNOS)، يوفر نموذجًا تنبؤيًا أكثر دقة بشكل كبير لنواة البلاك العصيدي."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Pathophysiology of Apolipoprotein B and Arterial Ingress"
+      "text": "1. الفيزيولوجيا المرضية للبروتين الدهني B ودخول الشرايين"
     },
     {
       "type": "p",
-      "text": "[ar] Every atherogenic lipoprotein particle—encompassing low-density lipoproteins (LDL), very-low-density lipoproteins (VLDL), intermediate-density lipoproteins (IDL), and lipoprotein(a)—carries precisely one molecule of apolipoprotein B-100 on its surface. When quantifying ApoB via immunoturbidimetric assay, clinicians measure the exact molar concentration of circulating atherogenic entities capable of crossing the arterial intima."
+      "text": "كل جسيم من البروتين الدهني العصيدي - يشمل البروتينات الدهنية منخفضة الكثافة (LDL)، والبروتينات الدهنية منخفضة الكثافة جدًا (VLDL)، والبروتينات الدهنية متوسطة الكثافة (IDL)، والبروتين الدهني (أ) - يحمل على وجه التحديد جزيءًا واحدًا من البروتين الدهني B-100 على سطحه. عند قياس ApoB عبر مقايسة قياس الاضطراب المناعي، يقوم الأطباء بقياس التركيز المولي الدقيق للكيانات العصيدية المنتشرة القادرة على عبور الطبقة الداخلية الشريانية."
     },
     {
       "type": "p",
-      "text": "[ar] Atherosclerosis does not initiate on the luminal surface of the vessel wall; it occurs strictly within the sub-endothelial space. The rate of lipoprotein particle flux across the endothelial barrier is directly proportional to circulating particle concentration. Once sequestered within the extracellular matrix of the intima, proteoglycans bind to ApoB via electrostatic interactions, immobilizing the particle and predisposing it to oxidative modification by reactive oxygen species (ROS)."
+      "text": "لا يبدأ تصلب الشرايين على السطح اللمعي لجدار الوعاء الدموي؛ يحدث بشكل صارم داخل الفضاء تحت البطانية. يتناسب معدل تدفق جسيمات البروتين الدهني عبر الحاجز البطاني بشكل مباشر مع تركيز الجسيمات المنتشرة. بمجرد عزلها داخل المصفوفة خارج الخلية للبطانة الداخلية، ترتبط البروتيوغليكان بـ ApoB عبر التفاعلات الكهروستاتيكية، مما يؤدي إلى شل حركة الجسيم وتهيئته للتعديل التأكسدي بواسطة أنواع الأكسجين التفاعلية (ROS)."
     },
     {
       "type": "quote",
-      "text": "[ar] ApoB particle count represents the absolute structural payload of atherogenesis. Two individuals with identical LDL-C can exhibit radically disparate particle burdens, directly dictating sub-endothelial penetration rates.",
-      "cite": "[ar] Dr. Marcus Vance, Preventive Health Fellow"
+      "text": "يمثل عدد جسيمات ApoB الحمولة الهيكلية المطلقة لتصلب الشرايين. يمكن لشخصين لديهما LDL-C متطابقان أن يظهرا أعباء جسيمية متباينة بشكل جذري، مما يحدد بشكل مباشر معدلات اختراق الطبقة الفرعية البطانية.",
+      "cite": "د. ماركوس فانس، زميل الصحة الوقائية"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Endothelial Shear Stress and Nitric Oxide Bioavailability"
+      "text": "2. إجهاد القص البطاني والتوافر الحيوي لأكسيد النيتريك"
     },
     {
       "type": "p",
-      "text": "[ar] The vascular endothelium is an active endocrine organ that synthesizes nitric oxide (NO) via endothelial nitric oxide synthase (eNOS) using L-arginine and oxygen. Nitric oxide serves several foundational vascular defense functions:"
+      "text": "البطانة الوعائية هي عضو نشط في الغدد الصماء يقوم بتصنيع أكسيد النيتريك (NO) عبر سينسيز أكسيد النيتريك البطاني (eNOS) باستخدام إل-أرجينين والأكسجين. يخدم أكسيد النيتريك العديد من وظائف الدفاع الوعائية الأساسية:"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Vascular Tone Regulation: Diffuses into underlying vascular smooth muscle cells, activating soluble guanylyl cyclase (sGC) to induce cyclic GMP-mediated vasodilation.",
-        "[ar] Anti-Thrombotic Quiescence: Suppresses platelet adhesion, aggregation, and cellular adherence to the intimal lumen.",
-        "[ar] Inhibition of Leukocyte Chemotaxis: Downregulates vascular cell adhesion molecule-1 (VCAM-1) and monocyte chemoattractant protein-1 (MCP-1), preventing inflammatory monocyte recruitment."
+        "تنظيم نغمة الأوعية الدموية: ينتشر في خلايا العضلات الملساء الوعائية الكامنة، وينشط إنزيم جوانيليل الحلقي القابل للذوبان (sGC) للحث على توسع الأوعية الدوري بوساطة GMP.",
+        "السكون المضاد للتخثر: يمنع التصاق الصفائح الدموية وتجمعها والتصاق الخلايا بالتجويف الباطن.",
+        "تثبيط الانجذاب الكيميائي للكريات البيض: ينظم جزيء التصاق الخلايا الوعائية 1 (VCAM-1) والبروتين الجاذب الكيميائي الوحيد للكريات البيضاء 1 (MCP-1)، مما يمنع تجنيد الخلايا الوحيدة الالتهابية."
       ]
     },
     {
       "type": "p",
-      "text": "[ar] Under chronic metabolic stress—characterized by insulin resistance, systemic hypertension, or elevated asymmetrical dimethylarginine (ADMA)—eNOS becomes uncoupled from its essential cofactor, tetrahydrobiopterin (BH4). Uncoupled eNOS produces superoxide radicals rather than protective nitric oxide, precipitating a state of profound endothelial vulnerability."
+      "text": "في ظل الإجهاد الأيضي المزمن - الذي يتميز بمقاومة الأنسولين، أو ارتفاع ضغط الدم النظامي، أو ارتفاع ثنائي ميثيل أرجينين غير المتماثل (ADMA) - يصبح eNOS غير منفصل عن العامل المساعد الأساسي، رباعي هيدروبيوبترين (BH4). تنتج eNOS غير المنفصلة جذور الأكسيد الفائق بدلاً من أكسيد النيتريك الواقي، مما يعجل بحالة من الضعف البطاني العميق."
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Clinical Lecture: Vascular Physiology & Plaque Vulnerability"
+      "text": "3. محاضرة سريرية: فسيولوجيا الأوعية الدموية وقابلية تأثر البلاك"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "[ar] ApoB Biomarkers, Lipid Metrics, and Cardiovascular Risk",
-      "caption": "[ar] Authoritative clinical lecture on sub-endothelial particle retention, macrophage foam cell formation, and intimal plaque stability."
+      "title": "المؤشرات الحيوية لـ ApoB، ومقاييس الدهون، ومخاطر القلب والأوعية الدموية",
+      "caption": "محاضرة سريرية موثوقة حول احتباس الجسيمات تحت البطانية، وتكوين خلايا الرغوة البلعمية، واستقرار البلاك الداخلي."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. The Transition from Fatty Streak to Unstable Fibroatheroma"
+      "text": "4. الانتقال من الخط الدهني إلى الورم الليفي غير المستقر"
     },
     {
       "type": "p",
-      "text": "[ar] Once oxidized ApoB particles are engulfed by recruited macrophages via scavenger receptors (SR-A and CD36), the intracellular accumulation of esterified cholesterol transforms macrophages into foam cells. Over decades, persistent cellular apoptosis and defective efferocytosis generate a necrotic lipid core covered by a thin fibrous cap composed of type I collagen and vascular smooth muscle cells."
+      "text": "بمجرد ابتلاع جزيئات ApoB المؤكسدة بواسطة البلاعم المعينة عبر مستقبلات الزبال (SR-A وCD36)، يؤدي تراكم الكوليسترول الأسترة داخل الخلايا إلى تحويل البلاعم إلى خلايا رغوية. على مدى عقود من الزمن، يؤدي موت الخلايا المبرمج المستمر والفعالية المعيبة إلى توليد نواة دهنية نخرية مغطاة بغطاء ليفي رقيق يتكون من الكولاجين من النوع الأول وخلايا العضلات الملساء الوعائية."
     },
     {
       "type": "p",
-      "text": "[ar] Plaque rupture—the proximal trigger for acute coronary syndromes—is governed not by luminal occlusion percentage, but by biological vulnerability. Thin-cap fibroatheromas (TCFA) characterized by high macrophage infiltration, matrix metalloproteinase (MMP) secretion, and diminished extracellular collagen matrix exhibit extreme propensity for tectonic mechanical failure under hemodynamic stress."
+      "text": "تمزق اللويحة – وهو المسبب القريب لمتلازمات الشريان التاجي الحادة – لا يخضع لنسبة الانسداد اللمعية، ولكن عن طريق الضعف البيولوجي. الأورام الليفية الرقيقة (TCFA) التي تتميز بتسلل البلاعم العالي، وإفراز المصفوفة ميتالوبروتيناز (MMP)، ومصفوفة الكولاجين خارج الخلية المتضائلة تظهر ميلًا شديدًا للفشل الميكانيكي التكتوني تحت ضغط الدورة الدموية."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Preventive Clinical Implications & Takeaways"
+      "text": "5. الآثار السريرية الوقائية والوجبات السريعة"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] ApoB Superiority: ApoB measurement captures discordant risk missed by conventional LDL-C, establishing the true atherogenic particle trajectory.",
-        "[ar] Endothelial Preservation: Aerobic exercise and dietary nitrate substrates support physiological eNOS coupling, maintaining essential microvascular perfusion.",
-        "[ar] Plaque Stabilization: Early lipid-lowering and anti-inflammatory therapies reduce necrotic core volume and promote thick, stable collagen caps."
+        "تفوق ApoB: يلتقط قياس ApoB المخاطر المتنافرة التي يفتقدها LDL-C التقليدي، مما يحدد مسار الجسيمات العصيدية الحقيقية.",
+        "الحفاظ على بطانة الأوعية الدموية: تدعم التمارين الهوائية وركائز النترات الغذائية اقتران eNOS الفسيولوجي، مما يحافظ على تروية الأوعية الدموية الدقيقة الأساسية.",
+        "تثبيت البلاك: تعمل العلاجات المبكرة لخفض الدهون والمضادة للالتهابات على تقليل حجم النواة النخرية وتعزيز أغطية الكولاجين السميكة والمستقرة."
       ]
     },
     {
       "type": "p",
-      "text": "[ar] Medical Disclaimer: This article is published for educational and scientific research purposes only. It does not constitute individual medical diagnosis, clinical evaluation, or treatment advice. Consult a licensed medical physician or cardiologist for individualized cardiovascular risk evaluation."
+      "text": "إخلاء المسؤولية الطبية: يتم نشر هذه المقالة لأغراض التعليم والبحث العلمي فقط. ولا يشكل تشخيصًا طبيًا فرديًا أو تقييمًا سريريًا أو نصيحة علاجية. استشر طبيبًا مرخصًا أو طبيب قلب لإجراء تقييم فردي لمخاطر القلب والأوعية الدموية."
     }
   ],
   "sourceHash": "e9f3dafcd052725ba59fa593ccf9efaa1b31de97"

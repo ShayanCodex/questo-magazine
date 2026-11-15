@@ -1,7 +1,7 @@
 {
   "slug": "decentralized-edge-architectures-and-micro-caches",
-  "title": "[ar] Decentralized Edge Architectures",
-  "excerpt": "[ar] A technical monograph analyzing globally distributed Anycast BGP routing, stale-while-revalidate edge workers, and why decentralized micro-caches obsolete monolithic centralized databases.",
+  "title": "معماريات الحافة اللامركزية",
+  "excerpt": "دراسة فنية تحلل توجيه Anycast BGP الموزع عالميًا، وعمال الحافة الذين لا معنى لهم أثناء إعادة التحقق من صحتهم، ولماذا أصبحت ذاكرة التخزين المؤقت الصغيرة اللامركزية قواعد بيانات مركزية متجانسة قديمة.",
   "date": "2026-11-13",
   "updated": "2026-11-15",
   "author": "Tariq Mahmood",
@@ -13,27 +13,27 @@
     "system-architecture"
   ],
   "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Global satellite network map depicting decentralized edge nodes and fiber routing",
+  "imageAlt": "خريطة شبكة الأقمار الصناعية العالمية التي تصور العقد الطرفية اللامركزية وتوجيه الألياف",
   "body": [
     {
       "type": "p",
-      "text": "[ar] For the past two decades, cloud computing dogma instructed software architects to centralize application logic and persistent state into massive regional data facilities: us-east-1 in Virginia, eu-west-1 in Dublin, or ap-southeast-1 in Singapore. While centralized data centers simplified database locking and ACID consistency models, they introduced a physical, immutable constraint that no amount of CPU optimization could solve: the speed of light in fiber optic cables."
+      "text": "على مدى العقدين الماضيين، أصدرت عقيدة الحوسبة السحابية تعليمات لمهندسي البرمجيات بمركزية منطق التطبيق والحالة المستمرة في مرافق بيانات إقليمية ضخمة: us-east-1 في فيرجينيا، أو eu-west-1 في دبلن، أو ap-south-1 في سنغافورة. بينما قامت مراكز البيانات المركزية بتبسيط قفل قاعدة البيانات ونماذج اتساق ACID، فقد قدمت قيدًا ماديًا غير قابل للتغيير لا يمكن لأي قدر من تحسين وحدة المعالجة المركزية حله: سرعة الضوء في كابلات الألياف الضوئية."
     },
     {
       "type": "p",
-      "text": "[ar] When a reader in Tokyo or Buenos Aires attempts to load an article hosted on a server in Northern Virginia, the light packets must traverse thousands of kilometers of terrestrial fiber, submarine repeaters, and transit routers. Even under ideal conditions, the minimum physical round-trip time (RTT) exceeds 180 milliseconds. When DNS lookup, TLS 1.3 handshakes, and multiple TCP round-trips are compounded, the user waits nearly a full second before a single byte of HTML is received."
+      "text": "عندما يحاول قارئ في طوكيو أو بوينس آيرس تحميل مقال مستضاف على خادم في شمال فيرجينيا، يجب أن تجتاز الحزم الضوئية آلاف الكيلومترات من الألياف الأرضية، وأجهزة إعادة الإرسال البحرية، وأجهزة توجيه العبور. وحتى في ظل الظروف المثالية، يتجاوز الحد الأدنى للوقت الفعلي لرحلة الذهاب والإياب (RTT) 180 مللي ثانية. عند إجراء بحث DNS ومصافحة TLS 1.3 ورحلات TCP ذهابًا وإيابًا متعددة، ينتظر المستخدم ما يقرب من ثانية كاملة قبل تلقي بايت واحد من HTML."
     },
     {
       "type": "h2",
-      "text": "[ar] The Anycast Revolution and Edge V8 Isolates"
+      "text": "ثورة Anycast ومعزولة Edge V8"
     },
     {
       "type": "p",
-      "text": "[ar] Decentralized edge architecture dissolves the origin bottleneck by moving computational execution directly to the network perimeter. Using Border Gateway Protocol (BGP) Anycast routing, a single public IP address is announced simultaneously from over 300 data centers across six continents. When a client makes an HTTP request, transit routers automatically deliver the packets to the geographically closest edge node."
+      "text": "تعمل بنية الحافة اللامركزية على حل عنق الزجاجة الأصلي عن طريق نقل التنفيذ الحسابي مباشرة إلى محيط الشبكة. باستخدام بروتوكول بوابة الحدود (BGP) Anycast، يتم الإعلان عن عنوان IP عام واحد في وقت واحد من أكثر من 300 مركز بيانات عبر ست قارات. عندما يقوم العميل بتقديم طلب HTTP، تقوم أجهزة توجيه النقل تلقائيًا بتسليم الحزم إلى أقرب عقدة حافة جغرافيًا."
     },
     {
       "type": "p",
-      "text": "[ar] Rather than booting heavy Node.js or Docker container runtimes with hundreds of megabytes of memory overhead, modern edge networks execute lightweight V8 JavaScript Isolates. An isolate boots in less than 5 milliseconds, consumes under 5MB of RAM, and executes pure functional routing logic immediately upon packet arrival."
+      "text": "بدلاً من تشغيل أوقات تشغيل حاوية Node.js أو Docker الثقيلة بمئات الميجابايت من الذاكرة الزائدة، تقوم شبكات الحافة الحديثة بتنفيذ عمليات عزل JavaScript خفيفة الوزن V8. يتم التمهيد المعزول في أقل من 5 مللي ثانية، ويستهلك أقل من 5 ميجابايت من ذاكرة الوصول العشوائي، وينفذ منطق التوجيه الوظيفي النقي فور وصول الحزمة."
     },
     {
       "type": "code",
@@ -42,33 +42,33 @@
     },
     {
       "type": "quote",
-      "text": "[ar] Physics cannot be cheated by software frameworks. If you want instantaneous global delivery, your data must reside physically next to the user's device.",
-      "cite": "[ar] Tariq Mahmood, Distributed Systems & Edge Topologies"
+      "text": "الفيزياء لا يمكن غشها بالأطر البرمجية. إذا كنت تريد التسليم العالمي الفوري، فيجب أن تكون بياناتك موجودة فعليًا بجوار جهاز المستخدم.",
+      "cite": "طارق محمود، الأنظمة الموزعة وطوبولوجيات الحافة"
     },
     {
       "type": "h3",
-      "text": "[ar] Core Advantages of Micro-Cached Architecture"
+      "text": "المزايا الأساسية لبنية التخزين المؤقت الصغير"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Near-zero TTFB: Time to First Byte drops from 400–600ms on dynamic origins to 15–25ms globally.",
-        "[ar] Infinite DDoS resilience: Volumetric denial-of-service traffic is naturally distributed across hundreds of global PoPs, neutralizing attacks without stressing origin servers.",
-        "[ar] Origin shielding: Centralized build runners compile HTML once; edge caches absorb 99.8% of all read traffic.",
-        "[ar] Zero cold starts: V8 isolates eliminate the dreaded 3-second cold start delays common in legacy serverless architectures."
+        "TTFB بالقرب من الصفر: ينخفض ​​وقت البايت الأول من 400 إلى 600 مللي ثانية على الأصول الديناميكية إلى 15 إلى 25 مللي ثانية على مستوى العالم.",
+        "مرونة لا نهائية لهجمات DDoS: يتم توزيع حركة مرور رفض الخدمة بشكل طبيعي عبر مئات من نقاط التواجد العالمية، مما يؤدي إلى تحييد الهجمات دون الضغط على الخوادم الأصلية.",
+        "حماية الأصل: يقوم مشغلو البناء المركزيون بتجميع HTML مرة واحدة؛ تمتص ذاكرة التخزين المؤقت على الحافة 99.8% من إجمالي حركة مرور القراءة.",
+        "عدم بدء التشغيل على البارد: تعمل وحدات V8 المعزولة على التخلص من تأخيرات البدء على البارد المخيفة لمدة 3 ثوانٍ الشائعة في البنى القديمة التي لا تحتوي على خادم."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] The Death of Origin Database Dependencies"
+      "text": "موت تبعيات قاعدة البيانات الأصلية"
     },
     {
       "type": "p",
-      "text": "[ar] When editorial publishing is decoupled from real-time database lookups, the entire system becomes indestructible. There are no database connections to exhaust during viral traffic spikes, no locking contention, and zero maintenance downtime. Every published dispatch exists as an immutable static artifact replicated across the globe."
+      "text": "عندما يتم فصل النشر التحريري عن عمليات البحث في قاعدة البيانات في الوقت الفعلي، يصبح النظام بأكمله غير قابل للتدمير. لا توجد اتصالات قاعدة بيانات لاستنفادها أثناء طفرات حركة المرور الفيروسية، ولا يوجد تنافس على القفل، ولا يوجد وقت توقف للصيانة. كل إرسالية منشورة موجودة كقطعة أثرية ثابتة غير قابلة للتغيير يتم تكرارها في جميع أنحاء العالم."
     },
     {
       "type": "p",
-      "text": "[ar] By building Questo Magazine on top of decentralized edge architecture and immutable micro-caches, we achieve institutional-grade reliability, absolute security, and blistering sub-second delivery for every reader on Earth."
+      "text": "من خلال بناء مجلة Questo على رأس بنية الحافة اللامركزية وذاكرة التخزين المؤقت الصغيرة غير القابلة للتغيير، فإننا نحقق موثوقية على المستوى المؤسسي، وأمانًا مطلقًا، وتسليمًا مذهلاً في أقل من ثانية لكل قارئ على وجه الأرض."
     }
   ],
   "sourceHash": "2c66ca5d93d8dc5c308d4fa5bff52a92eaf1472c"

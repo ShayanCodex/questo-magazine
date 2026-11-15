@@ -1,0 +1,92 @@
+{
+  "slug": "neuromorphic-computing-spiking-neural-networks-event-driven-silicon",
+  "title": "Computación neuromórfica y redes neuronales con picos",
+  "excerpt": "Una monografía de neurociencia computacional y arquitectura de hardware sobre silicio asíncrono impulsado por eventos, neuronas Leaky Integrate-and-Fire e inteligencia de borde de submilivatios.",
+  "date": "2026-11-15",
+  "author": "Elena Rostova",
+  "tags": [
+    "technology",
+    "ai",
+    "hardware",
+    "neuroscience",
+    "machine-learning",
+    "algorithms"
+  ],
+  "image": "/images/articles/neuromorphic-chip.jpg",
+  "imageAlt": "Placa de circuito impreso electrónica futurista y chip de microprocesador de alto rendimiento con vías de conexión neuronal iluminadas",
+  "body": [
+    {
+      "type": "p",
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
+    },
+    {
+      "type": "p",
+      "text": "La ingeniería neuromórfica abandona por completo el paradigma sincrónico impulsado por reloj. Al emular la arquitectura biológica de las sinapsis y los axones corticales, los procesadores neuromórficos ejecutan cálculos solo cuando la información cambia, transmitiendo potenciales de acción binarios (picos) asincrónicos y dispersos a través de matrices de barras transversales masivamente paralelas, que no son de von Neumann, donde el procesamiento y la memoria se ubican en el mismo sustrato físico."
+    },
+    {
+      "type": "h2",
+      "text": "1. Dinámica de integración y disparo con fugas en silicio"
+    },
+    {
+      "type": "p",
+      "text": "En la base matemática de las redes neuronales de picos (SNN) se encuentra el modelo neuronal Leaky Integrate-and-Fire (LIF). El potencial de membrana $V(t)$ integra las corrientes sinápticas entrantes a lo largo de un tiempo continuo, decayendo exponencialmente hacia un potencial de reposo de acuerdo con la constante de tiempo de membrana $\\tau_m$:"
+    },
+    {
+      "type": "p",
+      "text": "$\\tau_m \\frac{dV(t)}{dt} = -(V(t) - V_{\\text{rest}}) + R_m I(t)$. Cuando el potencial de membrana supera un umbral de voltaje predeterminado $V_{\\text{th}}$, la neurona dispara un pico discreto a la red, restablece su potencial y entra en un período refractario. Debido a que las neuronas permanecen inactivas hasta que son activadas por picos temporales, el silicio neuromórfico consume cero energía dinámica durante los períodos de entrada estática, logrando eficiencias energéticas de tres a cuatro órdenes de magnitud mayores que los aceleradores digitales convencionales."
+    },
+    {
+      "type": "quote",
+      "text": "En la computación neuromórfica, el tiempo no es un índice discreto arbitrario en un registro de reloj; el tiempo es una coordenada física intrínseca codificada directamente en la latencia de los picos eléctricos.",
+      "cite": "Elena Rostova, Arquitecturas neuromórficas y silicio neuronal"
+    },
+    {
+      "type": "h2",
+      "text": "2. Co-ubicación de barra transversal de memoria no Von Neumann"
+    },
+    {
+      "type": "p",
+      "text": "En las arquitecturas de hardware convencionales, la separación física de las unidades de cómputo y los bancos de memoria impone el infame \"muro de memoria de von Neumann\": más del 80% de la disipación total de energía se desperdicia únicamente en el transporte de interconexión de cobre. Las plataformas neuromórficas, como Intel Loihi, IBM TrueNorth y las matrices de memristores emergentes, eliminan este cuello de botella mediante barras transversales sinápticas distribuidas."
+    },
+    {
+      "type": "p",
+      "text": "Cada sinapsis artificial almacena su peso programático localmente utilizando RAM resistiva no volátil (ReRAM) o memoria de cambio de fase (PCM). Cuando un pico de voltaje atraviesa una línea de palabras, la ley de Ohm y la ley de corriente de Kirchhoff calculan naturalmente productos de matriz vectorial a la velocidad de la electricidad: $I_j = \\sum_i V_i \\cdot G_{ij}$, donde la conductancia $G_{ij}$ representa la eficacia sináptica. La computación ocurre in situ dentro de la propia estructura de la memoria."
+    },
+    {
+      "type": "h2",
+      "text": "3. Clase magistral en vídeo: Principios de ingeniería neuromórfica"
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/H4_G3Lz7m9U",
+      "title": "Computación neuromórfica: hardware inspirado en el cerebro y redes neuronales con picos",
+      "caption": "Un seminario técnico sobre sensores de visión basados ​​en eventos, tejidos de enrutamiento asíncronos y procesamiento de bordes sensoriales de submilivatios."
+    },
+    {
+      "type": "h2",
+      "text": "4. Visión basada en eventos y aplicaciones perimetrales autónomas"
+    },
+    {
+      "type": "p",
+      "text": "Las cámaras tradicionales capturan el mundo en fotogramas discretos y redundantes (por ejemplo, 60 fotogramas por segundo), generando enormes volúmenes de datos incluso cuando se visualizan escenas completamente estacionarias. Los sensores de visión dinámica neuromórfica (DVS), por el contrario, consisten en píxeles autónomos que emiten un pico asíncrono sólo cuando la luminancia local cambia en un porcentaje umbral."
+    },
+    {
+      "type": "p",
+      "text": "Cuando se combinan con procesadores neuronales de picos, los sensores basados ​​en eventos permiten una resolución temporal de microsegundos, un alto rango dinámico (>120 dB) y la eliminación del desenfoque de movimiento mientras funcionan con milivatios de potencia. Estas características hacen que los sistemas neuromórficos sean ideales para la estabilización robótica de alta velocidad, controladores de prótesis de extremidades, seguimiento por satélite y telemetría biomédica de borde."
+    },
+    {
+      "type": "h2",
+      "text": "5. Conclusiones de los sistemas: arquitectura del silicio biológico"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Escasez como eficiencia: la computación se ejecuta exclusivamente cuando llega el evento; las neuronas inactivas consumen sólo energía de fuga estática por debajo del umbral.",
+        "Aceleración analógica en memoria: las barras transversales memristivas calculan la suma física de Kirchhoff directamente en el dominio de almacenamiento sin necesidad de trasladar la memoria.",
+        "Codificación temporal: la información se representa mediante sincronización de picos, intervalos entre picos y sincronía de fase en lugar de registros de punto flotante de 16 bits.",
+        "Autonomía de borde: las envolventes de potencia de submilivatios permiten la clasificación en tiempo real en nodos de sensores, drones y monitores médicos portátiles sin conexión."
+      ]
+    }
+  ],
+  "sourceHash": "1e21cb68a7f095bc877b1ad45ae9638a00c370bf"
+}

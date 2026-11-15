@@ -1,7 +1,7 @@
 {
   "slug": "cardiometabolic-biomarkers-apob-endothelial-nitric-oxide",
-  "title": "[de] Cardiometabolic Biomarkers & ApoB",
-  "excerpt": "[de] A clinical examination of apolipoprotein B particle concentration, endothelial shear stress, nitric oxide synthase bioavailability, and the pathophysiology of sub-endothelial atherogenesis.",
+  "title": "Kardiometabolische Biomarker und ApoB",
+  "excerpt": "Eine klinische Untersuchung der Apolipoprotein B-Partikelkonzentration, der endothelialen Scherspannung, der Stickoxidsynthase-Bioverfügbarkeit und der Pathophysiologie der subendothelialen Atherogenese.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -12,86 +12,86 @@
     "biomarkers"
   ],
   "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[de] Advanced scientific clinical laboratory testing vascular biomarkers and cellular pathology",
+  "imageAlt": "Fortgeschrittene wissenschaftliche klinische Labortests von vaskulären Biomarkern und zellulärer Pathologie",
   "body": [
     {
       "type": "p",
-      "text": "[de] Cardiovascular disease remains the principal cause of global mortality, yet clinical screening paradigms frequently rely on surrogate lipid metrics that obscure primary underlying mechanisms. Conventional total cholesterol and low-density lipoprotein cholesterol (LDL-C) quantifications quantify the aggregate cholesterol mass within circulating particles, failing to capture the absolute atherogenic particle number. Recent advances in molecular lipidology demonstrate that apolipoprotein B-100 (ApoB) particle concentration, coupled with endothelial nitric oxide synthase (eNOS) uncoupling, provides an exponentially more accurate predictive model of atheromatous plaque nucleation."
+      "text": "Herz-Kreislauf-Erkrankungen sind nach wie vor die Hauptursache für die weltweite Sterblichkeit, doch klinische Screening-Paradigmen stützen sich häufig auf Ersatzlipidmetriken, die die primären zugrunde liegenden Mechanismen verschleiern. Herkömmliche Quantifizierungen von Gesamtcholesterin und Low-Density-Lipoprotein-Cholesterin (LDL-C) quantifizieren die aggregierte Cholesterinmasse innerhalb zirkulierender Partikel, können jedoch nicht die absolute Anzahl atherogener Partikel erfassen. Jüngste Fortschritte in der molekularen Lipidologie zeigen, dass die Partikelkonzentration von Apolipoprotein B-100 (ApoB) in Verbindung mit der Entkopplung der endothelialen Stickoxidsynthase (eNOS) ein exponentiell genaueres Vorhersagemodell für die Keimbildung atheromatöser Plaques liefert."
     },
     {
       "type": "h2",
-      "text": "[de] 1. Pathophysiology of Apolipoprotein B and Arterial Ingress"
+      "text": "1. Pathophysiologie von Apolipoprotein B und arteriellem Eindringen"
     },
     {
       "type": "p",
-      "text": "[de] Every atherogenic lipoprotein particle—encompassing low-density lipoproteins (LDL), very-low-density lipoproteins (VLDL), intermediate-density lipoproteins (IDL), and lipoprotein(a)—carries precisely one molecule of apolipoprotein B-100 on its surface. When quantifying ApoB via immunoturbidimetric assay, clinicians measure the exact molar concentration of circulating atherogenic entities capable of crossing the arterial intima."
+      "text": "Jedes atherogene Lipoproteinpartikel – darunter Lipoproteine ​​niedriger Dichte (LDL), Lipoproteine ​​sehr niedriger Dichte (VLDL), Lipoproteine ​​mittlerer Dichte (IDL) und Lipoprotein(a) – trägt genau ein Molekül Apolipoprotein B-100 auf seiner Oberfläche. Bei der Quantifizierung von ApoB mittels immunturbidimetrischem Assay messen Ärzte die genaue molare Konzentration zirkulierender atherogener Einheiten, die die arterielle Intima passieren können."
     },
     {
       "type": "p",
-      "text": "[de] Atherosclerosis does not initiate on the luminal surface of the vessel wall; it occurs strictly within the sub-endothelial space. The rate of lipoprotein particle flux across the endothelial barrier is directly proportional to circulating particle concentration. Once sequestered within the extracellular matrix of the intima, proteoglycans bind to ApoB via electrostatic interactions, immobilizing the particle and predisposing it to oxidative modification by reactive oxygen species (ROS)."
+      "text": "Atherosklerose beginnt nicht an der luminalen Oberfläche der Gefäßwand; es kommt ausschließlich im subendothelialen Raum vor. Die Geschwindigkeit des Lipoproteinpartikelflusses über die Endothelbarriere ist direkt proportional zur zirkulierenden Partikelkonzentration. Sobald Proteoglykane in der extrazellulären Matrix der Intima gebunden sind, binden sie über elektrostatische Wechselwirkungen an ApoB, wodurch das Partikel immobilisiert und für die oxidative Modifikation durch reaktive Sauerstoffspezies (ROS) prädisponiert wird."
     },
     {
       "type": "quote",
-      "text": "[de] ApoB particle count represents the absolute structural payload of atherogenesis. Two individuals with identical LDL-C can exhibit radically disparate particle burdens, directly dictating sub-endothelial penetration rates.",
-      "cite": "[de] Dr. Marcus Vance, Preventive Health Fellow"
+      "text": "Die ApoB-Partikelzahl stellt die absolute strukturelle Nutzlast der Atherogenese dar. Zwei Personen mit identischem LDL-C können völlig unterschiedliche Partikelbelastungen aufweisen, die direkt die subendothelialen Penetrationsraten beeinflussen.",
+      "cite": "Dr. Marcus Vance, Preventive Health Fellow"
     },
     {
       "type": "h2",
-      "text": "[de] 2. Endothelial Shear Stress and Nitric Oxide Bioavailability"
+      "text": "2. Endotheliale Scherspannung und Stickoxid-Bioverfügbarkeit"
     },
     {
       "type": "p",
-      "text": "[de] The vascular endothelium is an active endocrine organ that synthesizes nitric oxide (NO) via endothelial nitric oxide synthase (eNOS) using L-arginine and oxygen. Nitric oxide serves several foundational vascular defense functions:"
+      "text": "Das Gefäßendothel ist ein aktives endokrines Organ, das Stickstoffmonoxid (NO) über die endotheliale Stickstoffmonoxidsynthase (eNOS) unter Verwendung von L-Arginin und Sauerstoff synthetisiert. Stickstoffmonoxid erfüllt mehrere grundlegende Funktionen der Gefäßabwehr:"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Vascular Tone Regulation: Diffuses into underlying vascular smooth muscle cells, activating soluble guanylyl cyclase (sGC) to induce cyclic GMP-mediated vasodilation.",
-        "[de] Anti-Thrombotic Quiescence: Suppresses platelet adhesion, aggregation, and cellular adherence to the intimal lumen.",
-        "[de] Inhibition of Leukocyte Chemotaxis: Downregulates vascular cell adhesion molecule-1 (VCAM-1) and monocyte chemoattractant protein-1 (MCP-1), preventing inflammatory monocyte recruitment."
+        "Regulierung des Gefäßtonus: Diffundiert in die darunter liegenden glatten Gefäßmuskelzellen und aktiviert die lösliche Guanylylcyclase (sGC), um eine zyklische GMP-vermittelte Gefäßerweiterung zu induzieren.",
+        "Antithrombotische Ruhe: Unterdrückt die Adhäsion, Aggregation und Zellanhaftung von Blutplättchen am Intimalumen.",
+        "Hemmung der Leukozyten-Chemotaxis: Reguliert das vaskuläre Zelladhäsionsmolekül-1 (VCAM-1) und das Monozyten-Chemoattraktiv-Protein-1 (MCP-1) herunter und verhindert so die Rekrutierung entzündlicher Monozyten."
       ]
     },
     {
       "type": "p",
-      "text": "[de] Under chronic metabolic stress—characterized by insulin resistance, systemic hypertension, or elevated asymmetrical dimethylarginine (ADMA)—eNOS becomes uncoupled from its essential cofactor, tetrahydrobiopterin (BH4). Uncoupled eNOS produces superoxide radicals rather than protective nitric oxide, precipitating a state of profound endothelial vulnerability."
+      "text": "Unter chronischem Stoffwechselstress – gekennzeichnet durch Insulinresistenz, systemische Hypertonie oder erhöhtes asymmetrisches Dimethylarginin (ADMA) – wird eNOS von seinem essentiellen Cofaktor Tetrahydrobiopterin (BH4) abgekoppelt. Entkoppeltes eNOS erzeugt Superoxidradikale anstelle von schützendem Stickstoffmonoxid, was einen Zustand tiefgreifender Endothelverletzlichkeit auslöst."
     },
     {
       "type": "h2",
-      "text": "[de] 3. Clinical Lecture: Vascular Physiology & Plaque Vulnerability"
+      "text": "3. Klinischer Vortrag: Gefäßphysiologie und Plaque-Vulnerabilität"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "[de] ApoB Biomarkers, Lipid Metrics, and Cardiovascular Risk",
-      "caption": "[de] Authoritative clinical lecture on sub-endothelial particle retention, macrophage foam cell formation, and intimal plaque stability."
+      "title": "ApoB-Biomarker, Lipidmetriken und kardiovaskuläres Risiko",
+      "caption": "Maßgeblicher klinischer Vortrag über subendotheliale Partikelretention, Makrophagenschaumzellbildung und intimale Plaquestabilität."
     },
     {
       "type": "h2",
-      "text": "[de] 4. The Transition from Fatty Streak to Unstable Fibroatheroma"
+      "text": "4. Der Übergang vom Fatty Streak zum instabilen Fibroatherom"
     },
     {
       "type": "p",
-      "text": "[de] Once oxidized ApoB particles are engulfed by recruited macrophages via scavenger receptors (SR-A and CD36), the intracellular accumulation of esterified cholesterol transforms macrophages into foam cells. Over decades, persistent cellular apoptosis and defective efferocytosis generate a necrotic lipid core covered by a thin fibrous cap composed of type I collagen and vascular smooth muscle cells."
+      "text": "Sobald oxidierte ApoB-Partikel von rekrutierten Makrophagen über Scavenger-Rezeptoren (SR-A und CD36) verschlungen werden, wandelt die intrazelluläre Ansammlung von verestertem Cholesterin Makrophagen in Schaumzellen um. Über Jahrzehnte hinweg erzeugen anhaltende zelluläre Apoptose und fehlerhafte Efferozytose einen nekrotischen Lipidkern, der von einer dünnen Faserkappe aus Typ-I-Kollagen und glatten Gefäßmuskelzellen bedeckt ist."
     },
     {
       "type": "p",
-      "text": "[de] Plaque rupture—the proximal trigger for acute coronary syndromes—is governed not by luminal occlusion percentage, but by biological vulnerability. Thin-cap fibroatheromas (TCFA) characterized by high macrophage infiltration, matrix metalloproteinase (MMP) secretion, and diminished extracellular collagen matrix exhibit extreme propensity for tectonic mechanical failure under hemodynamic stress."
+      "text": "Plaque-Ruptur – der proximale Auslöser für akute Koronarsyndrome – wird nicht durch den Prozentsatz der luminalen Okklusion bestimmt, sondern durch die biologische Anfälligkeit. Dünnkappen-Fibroatherome (TCFA), die durch eine hohe Makrophageninfiltration, Matrix-Metalloproteinase (MMP)-Sekretion und eine verminderte extrazelluläre Kollagenmatrix gekennzeichnet sind, weisen eine extreme Neigung zu tektonisch-mechanischem Versagen unter hämodynamischem Stress auf."
     },
     {
       "type": "h2",
-      "text": "[de] 5. Preventive Clinical Implications & Takeaways"
+      "text": "5. Präventive klinische Implikationen und Erkenntnisse"
     },
     {
       "type": "ul",
       "items": [
-        "[de] ApoB Superiority: ApoB measurement captures discordant risk missed by conventional LDL-C, establishing the true atherogenic particle trajectory.",
-        "[de] Endothelial Preservation: Aerobic exercise and dietary nitrate substrates support physiological eNOS coupling, maintaining essential microvascular perfusion.",
-        "[de] Plaque Stabilization: Early lipid-lowering and anti-inflammatory therapies reduce necrotic core volume and promote thick, stable collagen caps."
+        "ApoB-Überlegenheit: Die ApoB-Messung erfasst diskordante Risiken, die bei herkömmlichem LDL-C übersehen werden, und ermittelt die tatsächliche Flugbahn der atherogenen Partikel.",
+        "Endotheliale Erhaltung: Aerobes Training und diätetische Nitratsubstrate unterstützen die physiologische eNOS-Kopplung und sorgen für die Aufrechterhaltung der essentiellen mikrovaskulären Perfusion.",
+        "Plaque-Stabilisierung: Frühe lipidsenkende und entzündungshemmende Therapien reduzieren das nekrotische Kernvolumen und fördern dicke, stabile Kollagenkappen."
       ]
     },
     {
       "type": "p",
-      "text": "[de] Medical Disclaimer: This article is published for educational and scientific research purposes only. It does not constitute individual medical diagnosis, clinical evaluation, or treatment advice. Consult a licensed medical physician or cardiologist for individualized cardiovascular risk evaluation."
+      "text": "Medizinischer Haftungsausschluss: Dieser Artikel wird nur zu Bildungs- und wissenschaftlichen Forschungszwecken veröffentlicht. Es handelt sich nicht um eine individuelle medizinische Diagnose, klinische Bewertung oder Behandlungsempfehlung. Wenden Sie sich für eine individuelle Beurteilung des kardiovaskulären Risikos an einen zugelassenen Arzt oder Kardiologen."
     }
   ],
   "sourceHash": "e9f3dafcd052725ba59fa593ccf9efaa1b31de97"

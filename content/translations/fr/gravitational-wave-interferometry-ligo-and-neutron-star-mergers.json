@@ -1,7 +1,7 @@
 {
   "slug": "gravitational-wave-interferometry-ligo-and-neutron-star-mergers",
-  "title": "[fr] Gravitational Wave Interferometry",
-  "excerpt": "[fr] An exhaustive exploration of kilometer-scale laser interferometry, squeezed light vacuum states, seismic vibration isolation, and multi-messenger astrophysics.",
+  "title": "Interférométrie des ondes gravitationnelles",
+  "excerpt": "Une exploration exhaustive de l'interférométrie laser à l'échelle kilométrique, des états de vide léger comprimé, de l'isolation des vibrations sismiques et de l'astrophysique multi-messagers.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -12,27 +12,27 @@
     "optics"
   ],
   "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Deep space cosmic nebula representing gravitational wave ripples across spacetime curvature",
+  "imageAlt": "Nébuleuse cosmique de l'espace profond représentant les ondulations des ondes gravitationnelles à travers la courbure de l'espace-temps.",
   "body": [
     {
       "type": "p",
-      "text": "[fr] In 1916, Albert Einstein derived from the equations of General Relativity that accelerating mass quadrupoles must radiate perturbations through the metric tensor of spacetime: gravitational waves. For nearly a century, these ripples remained purely theoretical constructs, predicted to cause spatial distortions so infinitesimal—on the order of $10^{-21}$ strain—that Einstein himself doubted humanity could ever manufacture instruments sensitive enough to detect them."
+      "text": "En 1916, Albert Einstein a dérivé des équations de la relativité générale que les quadripôles de masse accélérés doivent émettre des perturbations à travers le tenseur métrique de l'espace-temps : les ondes gravitationnelles. Pendant près d’un siècle, ces ondulations sont restées des constructions purement théoriques, censées provoquer des distorsions spatiales si infinitésimales – de l’ordre de 10 $ ^ {-21} $ de contrainte – qu’Einstein lui-même doutait que l’humanité puisse un jour fabriquer des instruments suffisamment sensibles pour les détecter."
     },
     {
       "type": "p",
-      "text": "[fr] On September 14, 2015, the Advanced Laser Interferometer Gravitational-Wave Observatory (LIGO) recorded GW150914: the catastrophic inspiral and collision of two stellar-mass black holes 1.3 billion light-years distant. The achievement marked the transition of human astronomy from electromagnetic observation to direct metric spacetime interferometry."
+      "text": "Le 14 septembre 2015, l'Observatoire avancé des ondes gravitationnelles à interféromètre laser (LIGO) a enregistré GW150914 : l'inspiration et la collision catastrophiques de deux trous noirs de masse stellaire distants de 1,3 milliard d'années-lumière. Cette réalisation a marqué la transition de l’astronomie humaine de l’observation électromagnétique à l’interférométrie spatio-temporelle métrique directe."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. Optical Architecture: Fabry-Pérot Cavities & Power Recycling"
+      "text": "1. Architecture Optique : Cavités Fabry-Pérot & Recyclage d'Énergie"
     },
     {
       "type": "p",
-      "text": "[fr] LIGO operates dual perpendicular four-kilometer vacuum arms located in Hanford, Washington, and Livingston, Louisiana. At the intersection sits a high-purity Nd:YAG laser (operating at 1064 nm wavelength) split into two orthogonal beams by a 50:50 beamsplitter."
+      "text": "LIGO exploite deux bras à vide perpendiculaires de quatre kilomètres situés à Hanford, Washington, et à Livingston, en Louisiane. À l’intersection se trouve un laser Nd:YAG de haute pureté (fonctionnant à une longueur d’onde de 1 064 nm) divisé en deux faisceaux orthogonaux par un séparateur de faisceau 50:50."
     },
     {
       "type": "p",
-      "text": "[fr] If a simple Michelson interferometer were deployed, a four-kilometer baseline would be insufficient to accumulate detectable phase shifts. To solve this, LIGO introduces Fabry-Pérot optical resonant cavities inside both arms, bouncing photons approximately 300 times before allowing interference at the photodetector. This increases the effective optical path length from 4 kilometers to over 1,100 kilometers:"
+      "text": "Si un simple interféromètre de Michelson était déployé, une ligne de base de quatre kilomètres serait insuffisante pour accumuler des déphasages détectables. Pour résoudre ce problème, LIGO introduit des cavités résonantes optiques Fabry-Pérot à l'intérieur des deux bras, faisant rebondir les photons environ 300 fois avant de permettre des interférences au niveau du photodétecteur. Cela augmente la longueur effective du trajet optique de 4 kilomètres à plus de 1 100 kilomètres :"
     },
     {
       "type": "code",
@@ -41,65 +41,65 @@
     },
     {
       "type": "p",
-      "text": "[fr] When spacetime is warped by an incoming transverse-traceless gravitational wave, one arm is physically compressed while the perpendicular arm is stretched. The resulting phase discrepancy shifts the dark fringe condition at the photodiode, producing a measurable fluctuating photodiode current directly proportional to the strain metric $h(t)$."
+      "text": "Lorsque l'espace-temps est déformé par une onde gravitationnelle transversale sans trace entrante, un bras est physiquement comprimé tandis que le bras perpendiculaire est étiré. Le déphasage qui en résulte modifie l'état de la frange sombre au niveau de la photodiode, produisant un courant de photodiode fluctuant mesurable directement proportionnel à la métrique de déformation $h(t)$."
     },
     {
       "type": "quote",
-      "text": "[fr] To measure a gravitational wave, humanity had to build a ruler that can measure the distance to the nearest star with the precision of a human hair.",
-      "cite": "[fr] Hiroshi Tanaka, Robotics & Applied Physics Fellow"
+      "text": "Pour mesurer une onde gravitationnelle, l'humanité a dû construire une règle capable de mesurer la distance jusqu'à l'étoile la plus proche avec la précision d'un cheveu humain.",
+      "cite": "Hiroshi Tanaka, chercheur en robotique et physique appliquée"
     },
     {
       "type": "h2",
-      "text": "[fr] 2. Squeezed Light and the Standard Quantum Limit"
+      "text": "2. La lumière comprimée et la limite quantique standard"
     },
     {
       "type": "p",
-      "text": "[fr] At ultimate sensitivity thresholds, LIGO encounters the Standard Quantum Limit governed by the Heisenberg uncertainty principle between photon phase uncertainty and radiation pressure uncertainty. If laser power is increased to minimize shot noise (phase uncertainty), the physical momentum transferred by photons reflecting off the 40-kilogram fused-silica test masses creates quantum radiation pressure noise."
+      "text": "Aux seuils de sensibilité ultimes, LIGO rencontre la limite quantique standard régie par le principe d'incertitude de Heisenberg entre l'incertitude de la phase photonique et l'incertitude de la pression de rayonnement. Si la puissance du laser est augmentée pour minimiser le bruit de tir (incertitude de phase), l'impulsion physique transférée par les photons réfléchis par les masses d'essai de 40 kilogrammes de silice fondue crée un bruit de pression de rayonnement quantique."
     },
     {
       "type": "p",
-      "text": "[fr] Advanced LIGO circumvents this boundary by injecting frequency-dependent squeezed vacuum states into the dark port of the interferometer. Using non-linear optical parametric oscillators, quantum uncertainty is deliberately \"squeezed\" along the phase quadrature at high audio frequencies (where shot noise dominates) and along the amplitude quadrature at low frequencies, boosting event detection volume by nearly 50%."
+      "text": "Advanced LIGO contourne cette frontière en injectant des états de vide comprimé dépendant de la fréquence dans le port sombre de l'interféromètre. À l'aide d'oscillateurs paramétriques optiques non linéaires, l'incertitude quantique est délibérément « comprimée » le long de la quadrature de phase aux hautes fréquences audio (où le bruit de tir domine) et le long de la quadrature d'amplitude aux basses fréquences, augmentant ainsi le volume de détection des événements de près de 50 %."
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Quadruple Pendulum Suspension: Test mirrors hang from four-stage fused silica pendulums, isolating optics from terrestrial micro-seismic noise by a factor of $10^{9}$.",
-        "[fr] Ultra-High Vacuum: The 4-kilometer tubes operate at $10^{-9}$ torr ($10^{-12}$ atmospheres), representing one of the largest sustained vacuum chambers on Earth.",
-        "[fr] Active Ground Sensing: Hundreds of seismometers and geophones detect highway traffic, ocean surf, and micro-earthquakes, driving voice-coil actuators that cancel vibrations before they reach mirror test masses."
+        "Suspension à pendule quadruple : les miroirs de test sont suspendus à des pendules en silice fondue à quatre étages, isolant les optiques du bruit micro-sismique terrestre d'un facteur de 10 $^{9}$.",
+        "Ultra-vide : les tubes de 4 kilomètres fonctionnent à 10 ^{-9}$ torr (10 ^{-12}$ atmosphères), ce qui représente l'une des plus grandes chambres à vide soutenu sur Terre.",
+        "Détection active du sol : des centaines de sismomètres et de géophones détectent le trafic routier, les vagues océaniques et les micro-séismes, pilotant des actionneurs de bobine mobile qui annulent les vibrations avant qu'elles n'atteignent les masses de test du miroir."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Documentary Masterclass: The Physics of Gravitational Wave Detection"
+      "text": "3. Masterclass documentaire : La physique de la détection des ondes gravitationnelles"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "[fr] The Physics and Engineering of Detecting Gravitational Waves",
-      "caption": "[fr] Comprehensive visual documentary detailing LIGO laser optical physics, seismic isolation, and the detection of black hole mergers."
+      "title": "La physique et l'ingénierie de la détection des ondes gravitationnelles",
+      "caption": "Documentaire visuel complet détaillant la physique optique du laser LIGO, l'isolation sismique et la détection des fusions de trous noirs."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. Binary Neutron Star Mergers and Kilonova Nucleosynthesis"
+      "text": "4. Fusions d'étoiles à neutrons binaires et nucléosynthèse de Kilonova"
     },
     {
       "type": "p",
-      "text": "[fr] While binary black hole coalescences emit purely metric gravitational ripples without electromagnetic emissions, binary neutron star mergers (such as GW170817) inaugurate multi-messenger astrophysics. When two hyper-dense neutron stars orbit in tight relativistic trajectories, intense gravitational radiation drains orbital angular momentum until the stars collide."
+      "text": "Alors que les coalescences binaires de trous noirs émettent des ondulations gravitationnelles purement métriques sans émissions électromagnétiques, les fusions d'étoiles à neutrons binaires (telles que GW170817) inaugurent l'astrophysique multi-messagers. Lorsque deux étoiles à neutrons hyperdenses orbitent selon des trajectoires relativistes serrées, un rayonnement gravitationnel intense draine le moment cinétique orbital jusqu'à ce que les étoiles entrent en collision."
     },
     {
       "type": "p",
-      "text": "[fr] Subsequent optical, gamma-ray, and infrared spectroscopy confirmed that neutron star collisions drive the astrophysical r-process (rapid neutron capture). Millions of tons of radioactive heavy lanthanides, platinum, and gold are forged and ejected into the interstellar medium, solving the longstanding cosmic mystery of where the universe manufactures the heaviest elements on the periodic table."
+      "text": "Des spectroscopies optiques, gamma et infrarouges ultérieures ont confirmé que les collisions d'étoiles à neutrons sont à l'origine du processus r astrophysique (capture rapide des neutrons). Des millions de tonnes de lanthanides lourds radioactifs, de platine et d'or sont forgées et éjectées dans le milieu interstellaire, résolvant ainsi le mystère cosmique de longue date de l'endroit où l'univers fabrique les éléments les plus lourds du tableau périodique."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Fundamental Physics Takeaways"
+      "text": "5. Points à retenir sur la physique fondamentale"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Speed of Gravity Verification: Multi-messenger observations confirmed that gravitational waves travel at the speed of light to within 1 part in $10^{15}$.",
-        "[fr] Equation of State Constraints: Tidal deformability signatures observed during neutron star inspirals constrain dense nuclear matter models impossible to replicate in terrestrial particle colliders.",
-        "[fr] Cosmological Standard Sirens: Gravitational wave chirps provide direct distance measurements independent of cosmic distance ladders, offering a clean independent method to measure the Hubble constant ($H_0$)."
+        "Vérification de la vitesse de gravité : les observations multi-messagers ont confirmé que les ondes gravitationnelles se déplacent à la vitesse de la lumière à 1 partie près en 10 $^{15}$.",
+        "Contraintes de l'équation d'état : les signatures de déformabilité des marées observées lors des inspirations d'étoiles à neutrons contraignent les modèles de matière nucléaire dense impossibles à reproduire dans les collisionneurs de particules terrestres.",
+        "Sirènes standards cosmologiques : les gazouillis d'ondes gravitationnelles fournissent des mesures de distance directes indépendantes des échelles de distance cosmiques, offrant une méthode propre et indépendante pour mesurer la constante de Hubble ($H_0$)."
       ]
     }
   ],

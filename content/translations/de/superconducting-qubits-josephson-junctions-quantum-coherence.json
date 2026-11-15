@@ -1,7 +1,7 @@
 {
   "slug": "superconducting-qubits-josephson-junctions-quantum-coherence",
-  "title": "[de] Superconducting Qubits & Coherence",
-  "excerpt": "[de] A quantum physics and cryogenic engineering monograph on transmon qubit anharmonicity, non-linear Josephson junction inductance, 15-millikelvin dilution refrigeration, and surface code quantum error correction.",
+  "title": "Supraleitende Qubits und Kohärenz",
+  "excerpt": "Eine Monographie über Quantenphysik und Kryotechnik über die Anharmonizität von Transmon-Qubits, nichtlineare Josephson-Kontaktinduktivität, 15-Millikelvin-Verdünnungskühlung und Oberflächencode-Quantenfehlerkorrektur.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -13,23 +13,23 @@
     "optics"
   ],
   "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "[de] Ultra-clean quantum physics research laboratory with cryogenic dilution refrigeration apparatus",
+  "imageAlt": "Hochreines Quantenphysik-Forschungslabor mit kryogener Verdünnungskälteanlage",
   "body": [
     {
       "type": "p",
-      "text": "[de] Quantum computational advantage represents the theoretical promise of solving mathematically intractable problems—molecular simulation, post-quantum cryptanalysis, and complex optimization—that would require millions of years on classical CMOS supercomputers. Among competing physical implementations, superconducting circuits are the leading modality, scaling artificial atoms onto planar silicon and sapphire microchips using standard semiconductor lithography."
+      "text": "Quantenberechnungsvorteile stellen das theoretische Versprechen dar, mathematisch schwierige Probleme zu lösen – molekulare Simulation, Post-Quanten-Kryptanalyse und komplexe Optimierung –, die auf klassischen CMOS-Supercomputern Millionen von Jahren erfordern würden. Unter den konkurrierenden physikalischen Implementierungen sind supraleitende Schaltkreise die führende Modalität, bei der künstliche Atome mithilfe standardmäßiger Halbleiterlithographie auf planare Silizium- und Saphir-Mikrochips skaliert werden."
     },
     {
       "type": "p",
-      "text": "[de] Unlike natural trapped ions or neutral atoms, superconducting qubits are macroscopic electronic circuits fabricated from pure aluminum or niobium thin films. When cooled below their critical superconducting transition temperatures ($T_c \\approx 1.2$ K), electrical resistance vanishes entirely, enabling billions of paired electrons—Cooper pairs—to condense into a single macroscopic quantum wave function."
+      "text": "Im Gegensatz zu natürlichen gefangenen Ionen oder neutralen Atomen sind supraleitende Qubits makroskopische elektronische Schaltkreise, die aus dünnen Schichten aus reinem Aluminium oder Niob hergestellt werden. Beim Abkühlen unter ihre kritischen supraleitenden Übergangstemperaturen ($T_c \\ca. 1,2$ K) verschwindet der elektrische Widerstand vollständig und ermöglicht die Verdichtung von Milliarden gepaarter Elektronen – Cooper-Paare – zu einer einzigen makroskopischen Quantenwellenfunktion."
     },
     {
       "type": "h2",
-      "text": "[de] 1. The Transmon Architecture and Non-Linear Josephson Inductance"
+      "text": "1. Die Transmon-Architektur und die nichtlineare Josephson-Induktivität"
     },
     {
       "type": "p",
-      "text": "[de] A standard LC harmonic oscillator cannot serve as a qubit because its energy levels are equidistant ($\\hbar\\omega$). Any resonant microwave pulse intended to excite the ground state $|0\\rangle$ into $|1\\rangle$ simultaneously drives unwanted transitions into $|2\\rangle$ and higher manifold states. To isolate an addressable two-level quantum system, engineers introduce an anharmonic non-linear inductor: the Josephson Junction."
+      "text": "Ein normaler harmonischer LC-Oszillator kann nicht als Qubit dienen, da seine Energieniveaus äquidistant sind ($\\hbar\\omega$). Jeder resonante Mikrowellenimpuls, der den Grundzustand $|0\\rangle$ in $|1\\rangle$ anregen soll, führt gleichzeitig zu unerwünschten Übergängen in $|2\\rangle$ und höhere Mannigfaltigkeitszustände. Um ein adressierbares Zwei-Ebenen-Quantensystem zu isolieren, führen Ingenieure einen anharmonischen nichtlinearen Induktor ein: den Josephson-Kontakt."
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[de] By adding an oversized shunt capacitor, the transmon operates in the high $E_J / E_C$ regime, exponentially suppressing charge noise sensitivity by several orders of magnitude while preserving sufficient anharmonicity ($\\alpha \\approx -200$ to $-300$ MHz) to manipulate the qubit with nanosecond microwave pulses."
+      "text": "Durch das Hinzufügen eines übergroßen Shunt-Kondensators arbeitet das Transmon im hohen $E_J / E_C$-Bereich und unterdrückt die Ladungsrauschempfindlichkeit exponentiell um mehrere Größenordnungen, während gleichzeitig eine ausreichende Anharmonizität ($\\alpha \\ca. -200$ bis $-300$ MHz) erhalten bleibt, um das Qubit mit Nanosekunden-Mikrowellenimpulsen zu manipulieren."
     },
     {
       "type": "quote",
-      "text": "[de] Superconducting qubits allow us to engineer artificial atoms with custom energy levels, printed with sub-micron lithography on sapphire wafers.",
-      "cite": "[de] Dr. Marcus Vance, Quantum Information Science & Condensed Matter Fellow"
+      "text": "Supraleitende Qubits ermöglichen es uns, künstliche Atome mit benutzerdefinierten Energieniveaus zu konstruieren, die mit Submikron-Lithographie auf Saphirwafern gedruckt werden.",
+      "cite": "Dr. Marcus Vance, Quantum Information Science & Condensed Matter Fellow"
     },
     {
       "type": "h2",
-      "text": "[de] 2. Cryogenic Dilution Refrigeration: Operating at 15 Millikelvin"
+      "text": "2. Kryogene Verdünnungskühlung: Betrieb bei 15 Millikelvin"
     },
     {
       "type": "p",
-      "text": "[de] To prevent ambient thermal phonons ($k_B T$) from randomly perturbing the qubit state, superconducting processors must be cooled to 15 millikelvin (-273.135°C), colder than deep interstellar space. This thermodynamic feat is executed by closed-loop Helium-3/Helium-4 dilution refrigerators."
+      "text": "Um zu verhindern, dass thermische Umgebungsphononen ($k_B T$) den Qubit-Zustand zufällig stören, müssen supraleitende Prozessoren auf 15 Millikelvin (-273,135 °C) gekühlt werden, kälter als der tiefe interstellare Raum. Diese thermodynamische Leistung wird durch Helium-3/Helium-4-Verdünnungskühlschränke mit geschlossenem Kreislauf ausgeführt."
     },
     {
       "type": "ul",
       "items": [
-        "[de] Phase Separation Boundary: Below 870 mK, liquid ³He and ⁴He mixtures separate into a concentrated phase and a dilute phase.",
-        "[de] Endothermic Quantum Evaporation: Pumping ³He atoms across this phase boundary absorbs latent heat, continuously extracting thermal energy from the mixing chamber stage.",
-        "[de] Cryogenic Attenuation Lines: Microwave coaxial control lines are fitted with 20dB and 30dB attenuators at each thermal stage to strip room-temperature blackbody thermal noise before it reaches the chip."
+        "Phasentrennungsgrenze: Unterhalb von 870 mK trennen sich flüssige ³He- und ⁴He-Gemische in eine konzentrierte Phase und eine verdünnte Phase.",
+        "Endotherme Quantenverdampfung: Das Pumpen von ³He-Atomen über diese Phasengrenze absorbiert latente Wärme und entzieht der Mischkammerstufe kontinuierlich Wärmeenergie.",
+        "Kryo-Dämpfungsleitungen: Mikrowellen-Koaxial-Steuerleitungen sind in jeder thermischen Stufe mit 20-dB- und 30-dB-Dämpfungsgliedern ausgestattet, um das thermische Schwarzkörperrauschen bei Raumtemperatur zu entfernen, bevor es den Chip erreicht."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 3. Video Masterclass: Resonance, Acoustic Physics & Quantum Coherence"
+      "text": "3. Video-Meisterkurs: Resonanz, Akustikphysik und Quantenkohärenz"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "[de] Acoustic Wave Physics, Resonance & Superconducting Oscillators",
-      "caption": "[de] Experimental lecture exploring resonance harmonics, non-linear phase oscillators, and acoustic-electromagnetic coupling."
+      "title": "Akustische Wellenphysik, Resonanz und supraleitende Oszillatoren",
+      "caption": "Experimenteller Vortrag über Resonanzharmonische, nichtlineare Phasenoszillatoren und akustisch-elektromagnetische Kopplung."
     },
     {
       "type": "h2",
-      "text": "[de] 4. Decoherence Mechanisms: T1 Relaxation and T2 Dephasing"
+      "text": "4. Dekohärenzmechanismen: T1-Relaxation und T2-Dephasierung"
     },
     {
       "type": "p",
-      "text": "[de] A qubit's computational lifetime is constrained by two physical decoherence metrics: energy relaxation time ($T_1$) and phase coherence time ($T_2$). Dielectric losses at substrate-metal interfaces and parasitic two-level system (TLS) defects in amorphous oxide layers dissipate stored electromagnetic energy, limiting typical coherence windows to 100–300 microseconds."
+      "text": "Die Rechenlebensdauer eines Qubits wird durch zwei physikalische Dekohärenzmetriken eingeschränkt: Energierelaxationszeit ($T_1$) und Phasenkohärenzzeit ($T_2$). Dielektrische Verluste an Substrat-Metall-Grenzflächen und parasitäre Defekte des Zwei-Ebenen-Systems (TLS) in amorphen Oxidschichten zerstreuen gespeicherte elektromagnetische Energie und begrenzen typische Kohärenzfenster auf 100–300 Mikrosekunden."
     },
     {
       "type": "p",
-      "text": "[de] Bridging the chasm between noisy intermediate-scale quantum (NISQ) systems and fault-tolerant quantum computing requires quantum error correction. The surface code topology encodes one protected logical qubit across dozens of physical data and ancilla qubits arranged in a 2D square lattice, detecting bit-flip and phase-flip syndromes via repeated multi-qubit stabilizer measurements."
+      "text": "Um die Kluft zwischen NISQ-Systemen (Noisy Intermediate Scale Quantum) und fehlertolerantem Quantencomputing zu überbrücken, ist eine Quantenfehlerkorrektur erforderlich. Die Oberflächencode-Topologie kodiert ein geschütztes logisches Qubit über Dutzende von physikalischen Daten und Ancilla-Qubits, die in einem zweidimensionalen quadratischen Gitter angeordnet sind, und erkennt Bit-Flip- und Phasen-Flip-Syndrome über wiederholte Multi-Qubit-Stabilisatormessungen."
     },
     {
       "type": "h2",
-      "text": "[de] 5. Quantum Engineering Takeaways"
+      "text": "5. Erkenntnisse aus der Quantentechnik"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Surface Preparation: Substrate chemical polishing and atomic trenching under Josephson junctions reduce two-level system dielectric dissipation by over 50%.",
-        "[de] Magnetic Shielding: Enclose the cryostat in multilayer high-permeability Mu-metal and superconducting lead canisters to reject stray Earth magnetic flux lines.",
-        "[de] Parametric Amplification: Utilize Traveling Wave Parametric Amplifiers (TWPAs) at the 4K stage to achieve quantum-limited readout signal amplification without backaction noise."
+        "Oberflächenvorbereitung: Das chemische Polieren des Substrats und die atomare Grabenbildung unter Josephson-Übergängen reduzieren die dielektrische Verlustleistung des Zweiebenensystems um über 50 %.",
+        "Magnetische Abschirmung: Umschließen Sie den Kryostaten in mehrschichtigen hochpermeablen Mu-Metall- und supraleitenden Bleibehältern, um Streumagnetflusslinien der Erde abzuwehren.",
+        "Parametrische Verstärkung: Nutzen Sie parametrische Wanderwellenverstärker (TWPAs) im 4K-Stadium, um eine quantenbegrenzte Auslesesignalverstärkung ohne Rückwirkungsrauschen zu erreichen."
       ]
     }
   ],

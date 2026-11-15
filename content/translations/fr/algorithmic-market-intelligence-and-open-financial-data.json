@@ -1,7 +1,7 @@
 {
   "slug": "algorithmic-market-intelligence-and-open-financial-data",
-  "title": "[fr] Algorithmic Market Intelligence and Open Financial Data",
-  "excerpt": "[fr] How democratized tick data, client-side vector visualization, and decentralized exchange feeds are dismantling institutional market data paywalls.",
+  "title": "Intelligence de marché algorithmique et données financières ouvertes",
+  "excerpt": "Comment les données de ticks démocratisées, la visualisation vectorielle côté client et les flux d'échange décentralisés démantelent les paywalls de données de marché institutionnels.",
   "date": "2026-11-13",
   "updated": "2026-11-14",
   "author": "Tariq Mahmood",
@@ -12,19 +12,19 @@
     "algorithms"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Candlestick financial chart displaying upward technical momentum against a dark interface",
+  "imageAlt": "Graphique financier en chandelier affichant une dynamique technique ascendante par rapport à une interface sombre.",
   "body": [
     {
       "type": "p",
-      "text": "[fr] For decades, Wall Street institutions maintained an asymmetric advantage over global retail participants through proprietary hardware terminals and exorbitant market data syndication fees. Access to real-time price discovery, depth of book order flow, and cross-asset correlation models was fiercely guarded behind five-figure monthly subscription paywalls."
+      "text": "Pendant des décennies, les institutions de Wall Street ont maintenu un avantage asymétrique sur les acteurs de détail mondiaux grâce à des terminaux matériels propriétaires et à des frais de syndication de données de marché exorbitants. L’accès à la découverte des prix en temps réel, à la profondeur du flux des commandes de livres et aux modèles de corrélation entre actifs était farouchement protégé derrière des murs payants d’abonnement mensuels à cinq chiffres."
     },
     {
       "type": "h2",
-      "text": "[fr] The Convergence of WebAssembly and Financial Feeds"
+      "text": "La convergence du WebAssembly et des flux financiers"
     },
     {
       "type": "p",
-      "text": "[fr] Today, a quiet technological revolution is dismantling this barrier. High-throughput WebSocket protocols, WebAssembly vector rendering pipelines, and open institutional exchange dispatches make it possible to evaluate multi-timeframe charts directly within standard browser runtimes without expensive third-party software."
+      "text": "Aujourd'hui, une révolution technologique discrète est en train de démanteler cette barrière. Les protocoles WebSocket à haut débit, les pipelines de rendu vectoriel WebAssembly et les répartitions d'échange institutionnelles ouvertes permettent d'évaluer des graphiques multi-périodes directement dans les environnements d'exécution de navigateur standard sans logiciel tiers coûteux."
     },
     {
       "type": "code",
@@ -33,24 +33,24 @@
     },
     {
       "type": "quote",
-      "text": "[fr] Market transparency is the ultimate democratizing force. When institutional charting tools run directly on the client's GPU, analytical rigor belongs to everyone.",
-      "cite": "[fr] Questo Financial Technologies Dispatch"
+      "text": "La transparence du marché est la force démocratique ultime. Lorsque les outils de cartographie institutionnelle s'exécutent directement sur le GPU du client, la rigueur analytique appartient à tous.",
+      "cite": "Questo Financial Technologies Dispatch"
     },
     {
       "type": "h3",
-      "text": "[fr] Critical Metrics of Modern Open Intelligence"
+      "text": "Métriques critiques de l'intelligence ouverte moderne"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Sub-millisecond mathematical oscillators (RSI, MACD, Bollinger Bands) computed locally on historical arrays.",
-        "[fr] Zero-compromise data integrity through verified public exchange regulatory disclosures and delayed tapes.",
-        "[fr] Cross-asset multi-market correlation matrices tracking sovereign bonds, commodities, and currency liquidity."
+        "Oscillateurs mathématiques inférieurs à la milliseconde (RSI, MACD, bandes de Bollinger) calculés localement sur des tableaux historiques.",
+        "Intégrité des données sans compromis grâce à des divulgations réglementaires vérifiées des bourses publiques et des bandes retardées.",
+        "Matrices de corrélation multi-actifs multi-actifs suivant les obligations souveraines, les matières premières et la liquidité des devises."
       ]
     },
     {
       "type": "p",
-      "text": "[fr] As open financial architectures mature, digital publishing platforms that integrate live macroeconomic indicators directly alongside journalistic investigations create unparalleled contextual value for curious global analysts."
+      "text": "À mesure que les architectures financières ouvertes mûrissent, les plateformes de publication numérique qui intègrent des indicateurs macroéconomiques en direct directement aux côtés des enquêtes journalistiques créent une valeur contextuelle sans précédent pour les analystes mondiaux curieux."
     }
   ],
   "sourceHash": "6430a948ddf7d0cd90e6d8f81c30482d30577640"

@@ -1,7 +1,7 @@
 {
   "slug": "the-renaissance-of-brutalist-web-design",
-  "title": "[ur] The Renaissance of Brutalist Web Design",
-  "excerpt": "[ur] How brutalist web aesthetics, high-contrast monospace typography, and unadorned semantic HTML are staging an overdue rebellion against sterile corporate design templates.",
+  "title": "سفاکانہ ویب ڈیزائن کی نشاۃ ثانیہ",
+  "excerpt": "کس طرح سفاکانہ ویب جمالیات، ہائی کنٹراسٹ مونو اسپیس ٹائپوگرافی، اور غیر آراستہ سیمنٹک ایچ ٹی ایم ایل جراثیم سے پاک کارپوریٹ ڈیزائن ٹیمپلیٹس کے خلاف ایک وقتی بغاوت کر رہے ہیں۔",
   "date": "2026-11-14",
   "updated": "2026-11-15",
   "author": "Saskia Lindqvist",
@@ -13,40 +13,40 @@
     "typography"
   ],
   "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Stark black and white geometric architecture representing brutalist digital aesthetics",
+  "imageAlt": "سخت سیاہ اور سفید ہندسی فن تعمیر جو سفاکانہ ڈیجیٹل جمالیات کی نمائندگی کرتا ہے",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The contemporary commercial internet is drowning in pastel gradients, rounded corners, and sterile micro-interactions. Every startup website appears to have been generated from the same corporate design system, sanitizing the web of edge, tension, and artistic voice. In response to this suffocating blandness, a powerful counter-movement has emerged: digital brutalism."
+      "text": "عصری تجارتی انٹرنیٹ پیسٹل گریڈینٹ، گول کونوں اور جراثیم سے پاک مائیکرو تعاملات میں ڈوب رہا ہے۔ ایسا لگتا ہے کہ ہر اسٹارٹ اپ ویب سائٹ ایک ہی کارپوریٹ ڈیزائن سسٹم سے تیار کی گئی ہے، جو کنارے، تناؤ اور فنکارانہ آواز کے ویب کو صاف کرتی ہے۔ اس دم گھٹنے والی نرمی کے جواب میں، ایک طاقتور انسداد تحریک ابھری ہے: ڈیجیٹل بربریت۔"
     },
     {
       "type": "p",
-      "text": "[ur] Named in honor of the mid-century architectural philosophy that celebrated exposed aggregate concrete and raw structural honesty, brutalist web design strips away superficial decorative veneer. It treats the browser not as a simulated glossy print brochure, but as an unapologetic digital terminal composed of raw HTML semantics, stark typography, and uncompromising spatial tension."
+      "text": "وسط صدی کے آرکیٹیکچرل فلسفے کے اعزاز میں نامزد کیا گیا جس نے بے نقاب مجموعی کنکریٹ اور خام ساختی ایمانداری کا جشن منایا، سفاکانہ ویب ڈیزائن سطحی آرائشی پوشاک کو ہٹا دیتا ہے۔ یہ براؤزر کو نقلی چمکدار پرنٹ بروشر کے طور پر نہیں، بلکہ خام HTML سیمنٹکس، سخت نوع ٹائپ، اور غیر سمجھوتہ کرنے والے مقامی تناؤ پر مشتمل ایک ناقابل معافی ڈیجیٹل ٹرمینل کے طور پر پیش کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] The Ethics of Architectural Honesty on the Web"
+      "text": "ویب پر تعمیراتی ایمانداری کی اخلاقیات"
     },
     {
       "type": "p",
-      "text": "[ur] In physical brutalist architecture, formwork lines and tie-holes are left intentionally visible to expose how the building was poured. In digital brutalism, the underlying mechanics of web markup—links, borders, default monospace letterforms, and system color contrasts—are celebrated rather than concealed under megabytes of CSS blur filters and heavy JavaScript canvas shaders."
+      "text": "جسمانی سفاکانہ فن تعمیر میں، فارم ورک لائنوں اور ٹائی ہولز کو جان بوجھ کر دکھایا جاتا ہے تاکہ عمارت کو کیسے ڈالا گیا ہو۔ ڈیجیٹل سفاکیت میں، ویب مارک اپ کے بنیادی میکانکس — لنکس، بارڈرز، ڈیفالٹ مونو اسپیس لیٹرفارمز، اور سسٹم کلر کنٹراسٹ — کو CSS بلر فلٹرز اور بھاری JavaScript کینوس شیڈرز کے میگا بائٹس کے نیچے چھپانے کے بجائے منایا جاتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] This aesthetic is deeply political. By rejecting the visual language of venture-capital surveillance capitalism, brutalist websites announce that their content is not designed to trick you into a marketing funnel. The text is presented with unyielding clarity: read it, contemplate it, or leave."
+      "text": "یہ جمالیاتی گہرا سیاسی ہے۔ وینچر کیپٹل سرویلنس کیپٹلزم کی بصری زبان کو مسترد کرتے ہوئے، سفاک ویب سائٹس اعلان کرتی ہیں کہ ان کا مواد آپ کو مارکیٹنگ کے فنل میں پھنسانے کے لیے ڈیزائن نہیں کیا گیا ہے۔ متن کو غیر متزلزل وضاحت کے ساتھ پیش کیا گیا ہے: اسے پڑھیں، اس پر غور کریں، یا چھوڑ دیں۔"
     },
     {
       "type": "quote",
-      "text": "[ur] A brutalist website does not apologize for being digital. It does not mimic paper, plastic, or glass. It lives proudly in the raw mathematics of the browser engine.",
-      "cite": "[ur] Saskia Lindqvist, The Digital Monolith"
+      "text": "ایک سفاک ویب سائٹ ڈیجیٹل ہونے پر معذرت نہیں کرتی۔ یہ کاغذ، پلاسٹک یا شیشے کی نقل نہیں کرتا ہے۔ یہ براؤزر انجن کی خام ریاضی میں فخر سے رہتا ہے۔",
+      "cite": "Saskia Lindqvist, The Digital Monolith"
     },
     {
       "type": "h2",
-      "text": "[ur] Typographic Hierarchy and High-Contrast Tension"
+      "text": "Typographic Hierarchy and High-contrast Tension"
     },
     {
       "type": "p",
-      "text": "[ur] Rather than relying on gentle gray-on-white pastel tones that fail WCAG accessibility standards, brutalist typography embraces absolute chromatic contrast: deep carbon black (#000000) against stark bone white (#FFFFFF). Headlines are set with massive, tightly-tracked display sans-serifs that demand immediate visual reckoning."
+      "text": "نرم گرے آن وائٹ پیسٹل ٹونز پر بھروسہ کرنے کے بجائے جو WCAG کے قابل رسائی معیارات کو ناکام بناتے ہیں، سفاکانہ نوع ٹائپ مطلق رنگین کاربن کے خلاف (#0kb00st) ہڈی سفید (#FFFFFF)۔ شہ سرخیاں بڑے پیمانے پر، مضبوطی سے ٹریک شدہ ڈسپلے sans-serifs کے ساتھ سیٹ کی گئی ہیں جو فوری طور پر بصری حساب کا مطالبہ کرتی ہیں۔"
     },
     {
       "type": "code",
@@ -55,28 +55,28 @@
     },
     {
       "type": "h3",
-      "text": "[ur] Core Axioms of Digital Brutalist Design"
+      "text": "ڈیجیٹل سفاکانہ ڈیزائن کے بنیادی محور"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Unapologetic black-and-white palettes: Prioritizing 100% contrast ratios that maximize legibility under bright sunlight and across budget mobile screens.",
-        "[ur] Monolithic border architecture: Using stark 1px or 2px solid black rules to delineate sections instead of fuzzy box-shadows.",
-        "[ur] Zero superfluous animation: Eliminating scroll-jacking, parallax drifts, and delayed fade-ins that waste CPU cycles and trigger motion sickness.",
-        "[ur] Sub-100 millisecond page loads: Because styles are lightweight and dependencies are nonexistent, brutalist pages render almost instantaneously."
+        "غیرمعمولی بلیک اینڈ وائٹ پیلیٹس: 100% کنٹراسٹ تناسب کو ترجیح دینا جو روشن سورج کی روشنی میں اور بجٹ موبائل اسکرینوں پر زیادہ سے زیادہ قابل بیان ہے۔",
+        "یک سنگی بارڈر آرکیٹیکچر: فزی باکس شیڈو کے بجائے حصوں کی وضاحت کرنے کے لیے سٹارک 1px یا 2px ​​ٹھوس سیاہ اصولوں کا استعمال۔",
+        "صفر ضرورت سے زیادہ حرکت پذیری: اسکرول جیکنگ، پیرالیکس ڈرفٹس، اور تاخیر سے دھندلا پن کو ختم کرنا جو CPU سائیکلوں کو ضائع کرتے ہیں اور حرکت کی بیماری کو متحرک کرتے ہیں۔",
+        "ذیلی 100 ملی سیکنڈ کا صفحہ لوڈ: چونکہ طرزیں ہلکی ہیں اور انحصار کا کوئی وجود نہیں ہے، سفاکانہ صفحات تقریباً فوری طور پر پیش ہو جاتے ہیں۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] The Longevity of Tectonic Digital Media"
+      "text": "ٹیکٹونک ڈیجیٹل میڈیا کی لمبی عمر"
     },
     {
       "type": "p",
-      "text": "[ur] Trends in web design come and go with seasonal fickleness: neumorphism, skeuomorphism, glassmorphism, and flat design have all enjoyed brief moments in the sun before aging into embarrassing relics. Yet clean, honest, brutalist typography anchored to semantic HTML never expires. It remains as legible and compelling today as it was in the earliest days of Tim Berners-Lee’s CERN servers."
+      "text": "ویب ڈیزائن میں رجحانات موسمی بے چینی کے ساتھ آتے اور جاتے ہیں: نیومورفزم، سکیومورفزم، گلاسمورفزم، اور فلیٹ ڈیزائن سبھی نے شرمناک آثار میں عمر بڑھنے سے پہلے دھوپ میں مختصر لمحات کا لطف اٹھایا ہے۔ پھر بھی سیمنٹک ایچ ٹی ایم ایل پر لنگر انداز صاف، ایماندار، سفاکانہ نوع ٹائپ کبھی ختم نہیں ہوتی۔ یہ آج بھی اتنا ہی قابل فہم اور مجبور ہے جتنا کہ ٹم برنرز لی کے CERN سرورز کے ابتدائی دنوں میں تھا۔"
     },
     {
       "type": "p",
-      "text": "[ur] By embracing brutalist aesthetics, Questo Magazine rejects the fleeting ephemera of Silicon Valley design trends and re-establishes a permanent, uncompromising standard for international digital publishing."
+      "text": "سفاکانہ جمالیات کو اپناتے ہوئے، Questo Magazine نے سلیکون ویلی کے ڈیزائن کے رجحانات کے عارضی دور کو مسترد کر دیا اور بین الاقوامی ڈیجیٹل اشاعت کے لیے ایک مستقل، غیر سمجھوتہ کرنے والا معیار دوبارہ قائم کیا۔"
     }
   ],
   "sourceHash": "8ff67d50b1f1c4907665fbcc6f69ef3d07b09fde"

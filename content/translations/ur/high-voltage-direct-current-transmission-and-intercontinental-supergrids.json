@@ -1,7 +1,7 @@
 {
   "slug": "high-voltage-direct-current-transmission-and-intercontinental-supergrids",
-  "title": "[ur] HVDC Transmission & Supergrids",
-  "excerpt": "[ur] An electrical systems monograph on IGBT-based Modular Multilevel Converters, capacitive cable dielectric losses, skin effect elimination, and asynchronous grid coupling.",
+  "title": "HVDC ٹرانسمیشن اور سپر گرڈز",
+  "excerpt": "IGBT پر مبنی ماڈیولر ملٹی لیول کنورٹرز، کیپسیٹیو کیبل ڈائی الیکٹرک نقصانات، جلد کے اثر کے خاتمے، اور غیر مطابقت پذیر گرڈ کپلنگ پر ایک برقی نظام کا مونوگراف۔",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
   "tags": [
@@ -13,27 +13,27 @@
     "power-grids"
   ],
   "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] High-voltage electric transmission pylons against sky representing continental power distribution",
+  "imageAlt": "براعظمی بجلی کی تقسیم کی نمائندگی کرنے والے آسمان کے خلاف ہائی وولٹیج الیکٹرک ٹرانسمیشن پائلنز",
   "body": [
     {
       "type": "p",
-      "text": "[ur] The foundational triumph of the War of Currents in the late 19th century was Thomas Edison's defeat by Nikola Tesla and George Westinghouse: alternating current (AC) triumphed because transformers allowed voltage to be stepped up for transmission and stepped down for municipal consumption. For over a century, three-phase synchronous AC grids formed the backbone of global industrial electrification. In the 21st century, however, the massive geographical decoupling of renewable energy generation (offshore wind farms, remote desert solar arrays) from urban load centers has exposed the fundamental physical limitations of AC transmission."
+      "text": "19ویں صدی کے اواخر میں کرنٹ کی جنگ کی بنیادی فتح نکولا ٹیسلا اور جارج ویسٹنگ ہاؤس کے ہاتھوں تھامس ایڈیسن کی شکست تھی: متبادل کرنٹ (AC) کی فتح اس لیے ہوئی کہ ٹرانسفارمرز نے وولٹیج کو ٹرانسمیشن کے لیے بڑھایا اور میونسپل استعمال کے لیے نیچے چھوڑ دیا۔ ایک صدی سے زائد عرصے تک، تین فیز ہم وقت ساز AC گرڈز نے عالمی صنعتی برقی کاری کی ریڑھ کی ہڈی بنائی۔ تاہم، 21ویں صدی میں، شہری بوجھ کے مراکز سے قابل تجدید توانائی کی پیداوار (آف شور ونڈ فارمز، دور دراز صحرائی شمسی صفوں) کے بڑے پیمانے پر جغرافیائی ڈیکپلنگ نے AC ٹرانسمیشن کی بنیادی جسمانی حدود کو بے نقاب کر دیا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] High-Voltage Direct Current (HVDC) transmission has emerged as the definitive electrical engineering paradigm for bulk power transfer over distances exceeding 600 kilometers overhead or 50 kilometers submarine. By eliminating reactive power generation and capacitive charging currents, HVDC provides the missing structural link for intercontinental supergrids."
+      "text": "ہائی وولٹیج ڈائریکٹ کرنٹ (HVDC) ٹرانسمیشن 600 کلومیٹر اوور ہیڈ یا 50 کلومیٹر آبدوز سے زیادہ فاصلے پر بلک پاور ٹرانسفر کے لیے ایک حتمی الیکٹریکل انجینئرنگ نمونے کے طور پر ابھری ہے۔ ری ایکٹیو پاور جنریشن اور کیپسیٹو چارجنگ کرنٹ کو ختم کرکے، HVDC بین البراعظمی سپر گرڈز کے لیے غائب ساختی لنک فراہم کرتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. The Physical Limitations of Alternating Current at Scale"
+      "text": "1. پیمانے پر متبادل کرنٹ کی جسمانی حدود"
     },
     {
       "type": "p",
-      "text": "[ur] In high-voltage AC cables, continuous sinusoidal current alternations (50 or 60 Hz) generate two severe physical loss mechanisms: the skin effect and capacitive dielectric displacement."
+      "text": "ہائی وولٹیج AC کیبلز میں، مسلسل سائنوسائیڈل کرنٹ الٹرنیشنز (50 یا 60 Hz) دو شدید جسمانی نقصان کے میکانزم پیدا کرتے ہیں: جلد کا اثر اور capacitive dielectric displacement۔"
     },
     {
       "type": "p",
-      "text": "[ur] The skin effect forces AC electrons toward the outer perimeter of a conductor, reducing the effective cross-sectional area and multiplying electrical resistance. In subsea or underground cables, the insulating dielectric surrounding the conductor forms a massive cylindrical capacitor with the surrounding seawater or soil:"
+      "text": "جلد کا اثر AC الیکٹرانوں کو کنڈکٹر کے بیرونی دائرہ کی طرف مجبور کرتا ہے، مؤثر کراس سیکشنل ایریا کو کم کرتا ہے اور برقی مزاحمت کو ضرب دیتا ہے۔ زیر سمندر یا زیر زمین کیبلز میں، موصل کے ارد گرد موصل ڈائی الیکٹرک ارد گرد کے سمندری پانی یا مٹی کے ساتھ ایک بڑے بیلناکار کیپیسیٹر بناتا ہے:"
     },
     {
       "type": "code",
@@ -42,65 +42,65 @@
     },
     {
       "type": "p",
-      "text": "[ur] Direct Current operates at zero frequency ($f = 0$). Consequently, capacitive charging currents vanish, the entire conductor cross-section carries uniform current density, and dielectric losses drop to near zero."
+      "text": "ڈائریکٹ کرنٹ صفر فریکوئنسی ($f = 0$) پر چلتا ہے۔ نتیجتاً، کیپسیٹو چارجنگ کرنٹ ختم ہو جاتے ہیں، پورا کنڈکٹر کراس سیکشن یکساں کرنٹ کثافت رکھتا ہے، اور ڈائی الیکٹرک نقصانات صفر کے قریب گر جاتے ہیں۔"
     },
     {
       "type": "quote",
-      "text": "[ur] HVDC frees power transmission from the tyranny of grid synchronization: two continental power grids operating at completely different frequencies can trade gigawatts across a single DC cable.",
-      "cite": "[ur] Tariq Mahmood, Distributed Systems Fellow"
+      "text": "HVDC بجلی کی ترسیل کو گرڈ سنکرونائزیشن کے ظلم سے آزاد کرتا ہے: مکمل طور پر مختلف فریکوئنسیوں پر کام کرنے والے دو کانٹی نینٹل پاور گرڈ ایک ہی DC کیبل پر گیگا واٹ کی تجارت کر سکتے ہیں۔",
+      "cite": "طارق محمود، ڈسٹری بیوٹڈ سسٹمز فیلو"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Modular Multilevel Converters (MMC) and IGBT Power Electronics"
+      "text": "2. ماڈیولر ملٹی لیول کنورٹرز (MMC) اور IGBT پاور الیکٹرانکس"
     },
     {
       "type": "p",
-      "text": "[ur] Historical HVDC lines deployed Line-Commutated Converters (LCC) based on heavy mercury-arc or thyristor valves, which suffered from reactive power consumption and vulnerability to AC commutation failures. Contemporary systems utilize Voltage Source Converters (VSC) built upon Modular Multilevel Converter (MMC) topologies."
+      "text": "تاریخی HVDC لائنوں نے بھاری مرکری آرک یا thyristor والوز کی بنیاد پر لائن-کممیوٹیٹڈ کنورٹرز (LCC) کو تعینات کیا ہے، جو کہ وی پی این اے سی کو دوبارہ فعال کرنے کی صلاحیت کا شکار ہیں۔ تبدیلی کی ناکامیاں عصری نظام ماڈیولر ملٹی لیول کنورٹر (MMC) ٹوپولاجیز پر بنائے گئے وولٹیج سورس کنورٹرز (VSC) کا استعمال کرتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] An MMC converter synthesizes near-perfect sinusoidal AC waveforms by cascading hundreds of small submodules—each containing an insulated-gate bipolar transistor (IGBT) and a storage capacitor. By switching individual submodules in microsecond increments, the converter constructs smooth stepped voltage staircases, eliminating the need for massive harmonic AC filter banks."
+      "text": "ایک MMC کنورٹر سیکڑوں چھوٹے سب ماڈیولز کاسکیڈنگ کر کے قریب قریب پرفیکٹ سائنوسائیڈل AC ویوفارمز کی ترکیب کرتا ہے—ہر ایک میں انسولیٹڈ گیٹ بائپولر ٹرانزسٹر (IGBT) اور اسٹوریج کیپسیٹر ہوتا ہے۔ مائیکرو سیکنڈ انکریمنٹ میں انفرادی ذیلی ماڈلز کو تبدیل کرکے، کنورٹر ہموار قدموں والی وولٹیج سیڑھیاں بناتا ہے، جس سے بڑے ہارمونک AC فلٹر بینکوں کی ضرورت ختم ہوجاتی ہے۔"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Black-Start Capability: VSC-HVDC can energize a completely collapsed local AC grid without requiring external generator support.",
-        "[ur] Independent P-Q Control: Active power ($P$) and reactive power ($Q$) can be modulated instantaneously and independently in four quadrants.",
-        "[ur] Asynchronous Grid Interconnection: Connects non-synchronized national grids (such as the UK and continental Europe, or ERCOT and the Eastern Interconnection) without cascading blackout risks."
+        "بلیک سٹارٹ کی صلاحیت: VSC-HVDC بیرونی جنریٹر سپورٹ کی ضرورت کے بغیر مکمل طور پر گرے ہوئے مقامی AC گرڈ کو متحرک کر سکتا ہے۔",
+        "آزاد P-Q کنٹرول: ایکٹو پاور ($P$) اور ری ایکٹیو پاور ($Q$) کو فوری طور پر اور آزادانہ طور پر چار کواڈرینٹ میں ماڈیول کیا جا سکتا ہے۔",
+        "غیر مطابقت پذیر گرڈ انٹر کنکشن: غیر مطابقت پذیر قومی گرڈز (جیسے کہ یو کے اور براعظم یورپ، یا ERCOT اور مشرقی انٹرکنکشن) کو بلیک آؤٹ خطرات کے بغیر جوڑتا ہے۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: High-Voltage DC Transmission Technology"
+      "text": "3. ویڈیو ماسٹر کلاس: ہائی وولٹیج ڈی سی ٹرانسمیشن ٹیکنالوجی"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "[ur] High-Voltage Power Grids & Long-Distance Electrical Transmission",
-      "caption": "[ur] Comprehensive visual technical lecture on HVDC converter stations, submarine cable engineering, and grid stabilization."
+      "title": "ہائی وولٹیج پاور گرڈز اور لمبی دوری کی الیکٹریکل ٹرانسمیشن",
+      "caption": "HVDC کنورٹر اسٹیشنز، سب میرین کیبل انجینئرنگ، اور گرڈ اسٹیبلائزیشن پر جامع بصری تکنیکی لیکچر۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Intercontinental Supergrids & Ultra-High Voltage (UHVDC)"
+      "text": "4. انٹرکانٹینینٹل سپر گرڈز اور الٹرا ہائی وولٹیج (UHVDC)"
     },
     {
       "type": "p",
-      "text": "[ur] In nations with vast geographic spans such as China, Brazil, and India, Ultra-High Voltage Direct Current (UHVDC) systems operating at ±800 kV and ±1100 kV transmit up to 12 gigawatts of hydro and solar power over distances exceeding 3,000 kilometers with line losses below 1.5% per 1,000 km."
+      "text": "چین، برازیل اور بھارت جیسے وسیع جغرافیائی پھیلاؤ والی قوموں میں، الٹرا ہائی وولٹیج ڈائریکٹ کرنٹ (UHVDC) سسٹم ±800 kV اور ±1100 kV پر کام کرتے ہیں، 12 گیگا واٹ تک ہائیڈرو اور سولر پاور منتقل کرتے ہیں، فی لائن 300000 کلومیٹر سے کم فاصلے پر۔ 1,000 کلومیٹر"
     },
     {
       "type": "p",
-      "text": "[ur] The emerging vision of the Global Intercontinental Supergrid links solar power generated across daylight time zones to meet night-time peak demands continents away. Undersea HVDC links such as the 720-km North Sea Link (Norway to UK) and proposed multi-thousand-kilometer trans-Mediterranean corridors establish a continuous trans-continental energy balancing mechanism."
+      "text": "عالمی انٹرکانٹینینٹل سپر گرڈ کا ابھرتا ہوا نقطہ نظر براعظموں سے دور رات کے وقت کی چوٹی کے مطالبات کو پورا کرنے کے لیے دن کی روشنی کے ٹائم زونز میں پیدا ہونے والی شمسی توانائی کو جوڑتا ہے۔ زیر سمندر HVDC لنکس جیسے کہ 720-km نارتھ سی لنک (ناروے سے UK) اور مجوزہ کثیر ہزار کلومیٹر طویل ٹرانس میڈیٹرینین کوریڈور ایک مسلسل ٹرانس براعظمی توانائی کے توازن کا طریقہ کار قائم کرتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Electrical Engineering Takeaways"
+      "text": "5. الیکٹریکل انجینئرنگ ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km; for submarine cables, HVDC is mandatory beyond 50 km.",
-        "[ur] DC Circuit Breaker Innovation: The historical obstacle of interrupting DC current without natural zero-crossings is solved by hybrid solid-state DC breakers operating in sub-millisecond windows.",
-        "[ur] Renewable Integration: Multi-terminal DC (MTDC) offshore grids aggregate dozens of dispersed offshore wind turbines into unified high-capacity mainland export cables."
+        "بریک-ایون ڈسٹنس اکنامکس: اوور ہیڈ HVDC تقریباً 600–800 کلومیٹر پر HVAC سے اقتصادی طور پر بہتر ہو جاتا ہے۔ سب میرین کیبلز کے لیے، HVDC 50 کلومیٹر سے آگے لازمی ہے۔",
+        "DC سرکٹ بریکر انوویشن: قدرتی صفر کراسنگ کے بغیر DC کرنٹ میں خلل ڈالنے کی تاریخی رکاوٹ کو ذیلی ملی سیکنڈ ونڈوز میں کام کرنے والے ہائبرڈ سالڈ اسٹیٹ ڈی سی بریکرز کے ذریعے حل کیا جاتا ہے۔",
+        "قابل تجدید انضمام: ملٹی ٹرمینل DC (MTDC) آف شور گرڈ درجنوں منتشر آف شور ونڈ ٹربائنز کو متحد اعلی صلاحیت والے مین لینڈ ایکسپورٹ کیبلز میں جمع کرتے ہیں۔"
       ]
     }
   ],

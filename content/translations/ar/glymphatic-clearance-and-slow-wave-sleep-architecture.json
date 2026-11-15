@@ -1,7 +1,7 @@
 {
   "slug": "glymphatic-clearance-and-slow-wave-sleep-architecture",
-  "title": "[ar] Glymphatic Clearance in Deep Sleep",
-  "excerpt": "[ar] A neuroscience and cellular physiology review of aquaporin-4 polarized astrocytic convective flow, amyloid-beta metabolic waste drainage, and delta slow-wave sleep architecture.",
+  "title": "التخليص الجليمفاوي في النوم العميق",
+  "excerpt": "مراجعة في علم الأعصاب وعلم وظائف الأعضاء الخلوية لتدفق الحمل الحراري النجمي المستقطب aquaporin-4، وتصريف النفايات الأيضية للأميلويد بيتا، وبنية نوم الموجة البطيئة دلتا.",
   "date": "2026-11-15",
   "author": "Dr. Aris Thorne",
   "tags": [
@@ -13,23 +13,23 @@
     "biology"
   ],
   "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] Calm bedroom setting illuminated by soft warm ambient light symbolizing deep restorative neurological sleep",
+  "imageAlt": "غرفة نوم هادئة مضاءة بضوء محيطي دافئ ناعم يرمز إلى النوم العصبي التصالحي العميق",
   "body": [
     {
       "type": "p",
-      "text": "[ar] For over a century, neurobiology struggled with an evolutionary paradox: while all peripheral somatic tissues utilize an extensive lymphatic vessel network to evacuate cellular debris and metabolic toxins, the vertebrate brain lacks traditional lymphatic drainage despite consuming 20% of the body's total metabolic energy. Only recently has two-photon laser scanning microscopy unveiled the brain's macroscopic waste clearance mechanism: the glymphatic system."
+      "text": "لأكثر من قرن من الزمان، عانت البيولوجيا العصبية من مفارقة تطورية: في حين تستخدم جميع الأنسجة الجسدية المحيطية شبكة واسعة من الأوعية اللمفاوية لإخلاء الحطام الخلوي والسموم الأيضية، يفتقر دماغ الفقاريات إلى التصريف اللمفاوي التقليدي على الرغم من استهلاك 20٪ من إجمالي الطاقة الأيضية للجسم. في الآونة الأخيرة فقط، كشف الفحص المجهري للمسح بالليزر ثنائي الفوتون عن آلية إزالة النفايات العيانية في الدماغ: الجهاز الجليمفاوي."
     },
     {
       "type": "p",
-      "text": "[ar] The glymphatic system is an astroglia-mediated waste evacuation pathway that operates almost exclusively during deep, non-rapid eye movement (NREM) slow-wave sleep. Driven by arterial wall pulsatility and synchronized delta oscillations (0.5 to 4 Hz), cerebrospinal fluid (CSF) penetrates deep into brain parenchyma along periarterial channels, washing away soluble amyloid-beta ($A\\beta$), hyperphosphorylated tau, and neurotoxic metabolic byproducts into dural venous sinuses."
+      "text": "النظام الجليمفاوي عبارة عن مسار لإخلاء النفايات يتوسطه النجم النجمي ويعمل بشكل حصري تقريبًا أثناء نوم الموجة البطيئة العميقة وغير السريعة (NREM). مدفوعًا بنبض جدار الشرايين وتذبذبات دلتا المتزامنة (0.5 إلى 4 هرتز)، يخترق السائل النخاعي (CSF) عمق حمة الدماغ على طول القنوات المحيطة بالشريان، ويغسل أميلويد بيتا القابل للذوبان ($A\\beta$)، وتاو مفرط الفسفرة، والمنتجات الثانوية الأيضية السمية العصبية في الجيوب الوريدية الجافية."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Convective Bulk Flow and Astrocytic Aquaporin-4 (AQP4) Channels"
+      "text": "1. قنوات التدفق السائب للحمل الحراري وقنوات الأكوابورين-4 النجمية (AQP4)"
     },
     {
       "type": "p",
-      "text": "[ar] Unlike simple diffusive transport, which is far too sluggish to clear macromolecules across dense neural tissue, the glymphatic system utilizes high-velocity convective bulk fluid flow facilitated by specialized water channels:"
+      "text": "على عكس النقل المنتشر البسيط، الذي يكون بطيئًا جدًا بحيث لا يمكنه إزالة الجزيئات الكبيرة عبر الأنسجة العصبية الكثيفة، يستخدم الجهاز الجليمفاوي تدفقًا عالي السرعة للسوائل السائبة الحملية التي تسهلها قنوات مائية متخصصة:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] The astrocytic endfeet that sheath cerebral microvessels express dense polar clusters of Aquaporin-4 (AQP4) water channels. In experimental models, genetic ablation or loss of AQP4 polarization reduces parenchymal CSF influx by more than 65%, precipitating rapid neurodegenerative accumulation of misfolded peptide aggregates."
+      "text": "الأقدام الطرفية النجمية التي تغلف الأوعية الدماغية الدقيقة تعبر عن مجموعات قطبية كثيفة من قنوات مائية Aquaporin-4 (AQP4). في النماذج التجريبية، يؤدي الاجتثاث الوراثي أو فقدان استقطاب AQP4 إلى تقليل تدفق السائل الدماغي الشوكي المتني بأكثر من 65%، مما يعجل بالتراكم التنكس العصبي السريع لمجموعات الببتيد غير المطوية."
     },
     {
       "type": "quote",
-      "text": "[ar] Sleep is not an idle biological pause, but an active, energy-intensive neurochemical housekeeping protocol without which toxic metabolic refuse inexorably poisons the human mind.",
-      "cite": "[ar] Dr. Aris Thorne, Neurobiology & Preventive Medicine Fellow"
+      "text": "النوم ليس توقفًا بيولوجيًا خاملاً، بل هو بروتوكول تدبير منزلي كيميائي عصبي نشط ومستهلك للطاقة، والذي بدونه تسمم النفايات الأيضية السامة العقل البشري بلا هوادة.",
+      "cite": "د. آريس ثورن، زميل علم الأحياء العصبية والطب الوقائي"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Interstitial Space Expansion During Delta Slow-Wave Sleep"
+      "text": "2. توسع الفضاء الخلالي أثناء نوم موجة الدلتا البطيئة"
     },
     {
       "type": "p",
-      "text": "[ar] During conscious waking hours, high concentrations of locus coeruleus noradrenaline suppress glymphatic flow. Astrocytes and neurons remain swollen, restricting the extracellular interstitial space fraction ($\\alpha$) to approximately 14% of total brain volume, creating extreme hydraulic resistance."
+      "text": "خلال ساعات الاستيقاظ الواعي، تعمل التركيزات العالية من الموضع الأزرق النورادرينالين على قمع التدفق الجليمفاوي. تظل الخلايا النجمية والخلايا العصبية منتفخة، مما يقيد جزء الفضاء الخلالي خارج الخلية ($\\alpha$) إلى ما يقرب من 14٪ من إجمالي حجم الدماغ، مما يخلق مقاومة هيدروليكية شديدة."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Extracellular Space Expansion: Upon entry into Stage N3 slow-wave sleep, noradrenergic tone collapses, causing parenchymal cells to shrink and expanding interstitial volume by 60%.",
-        "[ar] Hydraulic Resistance Drop: This volumetric expansion causes an immediate collapse in hydrodynamic resistance, allowing CSF to surge through brain parenchyma with unimpeded laminar flow.",
-        "[ar] Metabolic Waste Flushes: Real-time radiolabeled tracer telemetry shows amyloid-beta clearance increases two-fold during NREM sleep compared to wakefulness."
+        "توسع الفضاء خارج الخلية: عند الدخول في المرحلة N3 من نوم الموجة البطيئة، تنهار النغمة النورأدرينالية، مما يتسبب في تقلص الخلايا المتني وتوسيع حجم الخلالي بنسبة 60٪.",
+        "انخفاض المقاومة الهيدروليكية: يؤدي هذا التمدد الحجمي إلى انهيار فوري في المقاومة الهيدروديناميكية، مما يسمح للسائل الدماغي الشوكي بالارتفاع عبر حمة الدماغ مع تدفق صفحي دون عوائق.",
+        "تدفق النفايات الأيضية: يُظهر قياس التتبع عن بعد المسمى إشعاعيًا في الوقت الحقيقي أن إزالة الأميلويد بيتا تزيد بمقدار الضعف أثناء نوم حركة العين غير السريعة مقارنة باليقظة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Sleep Architecture, Neuroprotection & Brain Health"
+      "text": "3. دروس فيديو متقدمة: هندسة النوم، وحماية الأعصاب وصحة الدماغ"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM",
-      "title": "[ar] Sleep Architecture, Memory Consolidation & Neurological Restoration",
-      "caption": "[ar] In-depth scientific lecture on sleep cycles, slow-wave delta synchronization, and the profound neuroprotective functions of deep sleep."
+      "title": "هندسة النوم، وتوحيد الذاكرة واستعادة الأعصاب",
+      "caption": "محاضرة علمية متعمقة حول دورات النوم، ومزامنة دلتا الموجة البطيئة، ووظائف الحماية العصبية العميقة للنوم العميق."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Vascular Pulsatility and Cardiac-Respiratory Pumping"
+      "text": "4. نبض الأوعية الدموية والضخ القلبي التنفسي"
     },
     {
       "type": "p",
-      "text": "[ar] What drives the physical pumping mechanism of CSF through the rigid intracranial cranium? Glymphatic transport relies on three distinct mechanical pressure waves: cardiac systolic arterial wall expansion, respiratory thoracic pressure fluctuations, and ultra-slow vasomotion cycles (0.1 Hz) driven by smooth muscle contraction."
+      "text": "ما الذي يحرك آلية الضخ الفيزيائية للسائل الدماغي الشوكي عبر الجمجمة الصلبة داخل الجمجمة؟ يعتمد النقل الجليمفاوي على ثلاث موجات ضغط ميكانيكية متميزة: تمدد جدار الشرايين الانقباضي القلبي، وتقلبات الضغط الصدري التنفسي، ودورات حركة الأوعية الدموية البطيئة للغاية (0.1 هرتز) مدفوعة بتقلص العضلات الملساء."
     },
     {
       "type": "p",
-      "text": "[ar] As systemic arteries expand with each systolic pulse, they transmit a perivascular displacement wave along the Virchow-Robin space, propelling CSF downstream through one-way hydrodynamic valves created by overlapping pial sheaths. Arterial stiffening caused by chronic hypertension diminishes these pulse waves, directly impairing nocturnal glymphatic cleansing."
+      "text": "عندما تتوسع الشرايين الجهازية مع كل نبضة انقباضية، فإنها تنقل موجة إزاحة حول الأوعية الدموية على طول مساحة فيرشو-روبن، مما يدفع السائل الدماغي الشوكي باتجاه مجرى النهر من خلال صمامات هيدروديناميكية أحادية الاتجاه تم إنشاؤها بواسطة أغلفة بيال متداخلة. يؤدي تصلب الشرايين الناجم عن ارتفاع ضغط الدم المزمن إلى تقليل موجات النبض هذه، مما يضعف بشكل مباشر التطهير الجليمفاوي الليلي."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Clinical & Preventive Sleep Optimization Takeaways"
+      "text": "5. الوجبات السريعة السريرية والوقائية لتحسين النوم"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Protect Stage N3 Architecture: Avoid alcohol, late-night high-glycemic meals, and sedative hypnotics which suppress natural delta wave power despite inducing unconsciousness.",
-        "[ar] Sleep Ergonomics & Posture: Lateral sleep positioning (side-sleeping) has been shown in MRI telemetry studies to facilitate superior glymphatic clearance compared to supine or prone postures.",
-        "[ar] Vascular Elasticity Maintenance: Aerobic exercise (Zone 2 endurance training) preserves carotid and cerebral arterial compliance, sustaining the mechanical pulse pressures essential for glymphatic driving force."
+        "حماية بنية المرحلة N3: تجنب الكحول والوجبات التي تحتوي على نسبة عالية من السكر في الدم في وقت متأخر من الليل والمنومات المهدئة التي تثبط قوة موجة الدلتا الطبيعية على الرغم من إحداث فقدان الوعي.",
+        "بيئة العمل ووضعية النوم: تبين أن وضعية النوم الجانبية (النوم الجانبي) في دراسات القياس عن بعد بواسطة التصوير بالرنين المغناطيسي تسهل التخليص الجليمفاوي الفائق مقارنة بوضعيات الاستلقاء أو الانبطاح.",
+        "صيانة مرونة الأوعية الدموية: التمارين الهوائية (تدريب التحمل للمنطقة 2) تحافظ على امتثال الشرايين السباتية والدماغية، مما يحافظ على ضغوط النبض الميكانيكية الضرورية للقوة الدافعة الجليمفاوية."
       ]
     }
   ],

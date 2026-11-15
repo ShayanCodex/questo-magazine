@@ -1,7 +1,7 @@
 {
   "slug": "superconducting-qubits-josephson-junctions-quantum-coherence",
-  "title": "[ar] Superconducting Qubits & Coherence",
-  "excerpt": "[ar] A quantum physics and cryogenic engineering monograph on transmon qubit anharmonicity, non-linear Josephson junction inductance, 15-millikelvin dilution refrigeration, and surface code quantum error correction.",
+  "title": "البتات الكمومية فائقة التوصيل والتماسك",
+  "excerpt": "دراسة فيزياء الكم والهندسة المبردة حول عدم تناغم البتات الكمومية المرسلة، وتحريض تقاطع جوزيفسون غير الخطي، والتبريد بالتخفيف بمقدار 15 ميليكلفن، وتصحيح الخطأ الكمي للرمز السطحي.",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -13,23 +13,23 @@
     "optics"
   ],
   "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "[ar] Ultra-clean quantum physics research laboratory with cryogenic dilution refrigeration apparatus",
+  "imageAlt": "مختبر أبحاث فيزياء الكم فائق النظافة مزود بجهاز تبريد بالتخفيف المبرد",
   "body": [
     {
       "type": "p",
-      "text": "[ar] Quantum computational advantage represents the theoretical promise of solving mathematically intractable problems—molecular simulation, post-quantum cryptanalysis, and complex optimization—that would require millions of years on classical CMOS supercomputers. Among competing physical implementations, superconducting circuits are the leading modality, scaling artificial atoms onto planar silicon and sapphire microchips using standard semiconductor lithography."
+      "text": "تمثل الميزة الحسابية الكمومية الوعد النظري بحل المشكلات المستعصية رياضيًا - المحاكاة الجزيئية، وتحليل الشفرات بعد الكم، والتحسين المعقد - والتي قد تتطلب ملايين السنين على أجهزة الكمبيوتر العملاقة الكلاسيكية CMOS. من بين التطبيقات الفيزيائية المتنافسة، تعد الدوائر فائقة التوصيل هي الطريقة الرائدة، حيث تقوم بقياس الذرات الاصطناعية على السيليكون المستوي والرقائق الدقيقة من الياقوت باستخدام الطباعة الحجرية القياسية لأشباه الموصلات."
     },
     {
       "type": "p",
-      "text": "[ar] Unlike natural trapped ions or neutral atoms, superconducting qubits are macroscopic electronic circuits fabricated from pure aluminum or niobium thin films. When cooled below their critical superconducting transition temperatures ($T_c \\approx 1.2$ K), electrical resistance vanishes entirely, enabling billions of paired electrons—Cooper pairs—to condense into a single macroscopic quantum wave function."
+      "text": "على عكس الأيونات المحتجزة الطبيعية أو الذرات المحايدة، فإن الكيوبتات فائقة التوصيل عبارة عن دوائر إلكترونية مجهرية مصنوعة من الألومنيوم النقي أو أغشية النيوبيوم الرقيقة. عند تبريدها إلى ما دون درجات الحرارة الانتقالية فائقة التوصيل الحرجة (T_c \\حوالي 1.2$ كلفن)، تختفي المقاومة الكهربائية تمامًا، مما يتيح لمليارات الإلكترونات المقترنة -أزواج كوبر- أن تتكثف في دالة موجة كمومية عيانية واحدة."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. The Transmon Architecture and Non-Linear Josephson Inductance"
+      "text": "1. معمارية الترانسموون ومحاثة جوزيفسون غير الخطية"
     },
     {
       "type": "p",
-      "text": "[ar] A standard LC harmonic oscillator cannot serve as a qubit because its energy levels are equidistant ($\\hbar\\omega$). Any resonant microwave pulse intended to excite the ground state $|0\\rangle$ into $|1\\rangle$ simultaneously drives unwanted transitions into $|2\\rangle$ and higher manifold states. To isolate an addressable two-level quantum system, engineers introduce an anharmonic non-linear inductor: the Josephson Junction."
+      "text": "لا يمكن للمذبذب التوافقي LC القياسي أن يكون بمثابة كيوبت لأن مستويات الطاقة الخاصة به متساوية البعد ($\\hbar\\omega$). أي نبضة ميكروويف رنانة تهدف إلى إثارة الحالة الأرضية $|0\\rangle$ إلى $|1\\rangle$ تؤدي في نفس الوقت إلى انتقالات غير مرغوب فيها إلى $|2\\rangle$ وحالات متشعبة أعلى. لعزل نظام كمي ذو مستويين قابل للعنونة، يقدم المهندسون محرِّضًا غير خطي غير متناغم: تقاطع جوزيفسون."
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] By adding an oversized shunt capacitor, the transmon operates in the high $E_J / E_C$ regime, exponentially suppressing charge noise sensitivity by several orders of magnitude while preserving sufficient anharmonicity ($\\alpha \\approx -200$ to $-300$ MHz) to manipulate the qubit with nanosecond microwave pulses."
+      "text": "من خلال إضافة مكثف تحويل كبير الحجم، يعمل الإرسال في نظام $E_J / E_C$ العالي، مما يؤدي إلى قمع حساسية ضوضاء الشحن بشكل كبير بعدة أوامر من الحجم مع الحفاظ على عدم الانسجام الكافي ($\\alpha \\approx -200$ إلى $-300$ MHz) لمعالجة الكيوبت بنبضات الموجات الدقيقة النانو ثانية."
     },
     {
       "type": "quote",
-      "text": "[ar] Superconducting qubits allow us to engineer artificial atoms with custom energy levels, printed with sub-micron lithography on sapphire wafers.",
-      "cite": "[ar] Dr. Marcus Vance, Quantum Information Science & Condensed Matter Fellow"
+      "text": "تسمح لنا الكيوبتات فائقة التوصيل بهندسة ذرات اصطناعية بمستويات طاقة مخصصة، مطبوعة باستخدام الطباعة الحجرية دون الميكرون على رقائق الياقوت.",
+      "cite": "دكتور ماركوس فانس، زميل علوم المعلومات الكمومية والمادة المكثفة"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Cryogenic Dilution Refrigeration: Operating at 15 Millikelvin"
+      "text": "2. التبريد بالتخفيف المبرد: التشغيل عند 15 ميليكلفن"
     },
     {
       "type": "p",
-      "text": "[ar] To prevent ambient thermal phonons ($k_B T$) from randomly perturbing the qubit state, superconducting processors must be cooled to 15 millikelvin (-273.135°C), colder than deep interstellar space. This thermodynamic feat is executed by closed-loop Helium-3/Helium-4 dilution refrigerators."
+      "text": "لمنع الفونونات الحرارية المحيطة ($k_B T$) من اضطراب حالة الكيوبت بشكل عشوائي، يجب تبريد المعالجات فائقة التوصيل إلى 15 ميلي كلفن (-273.135 درجة مئوية)، أبرد من الفضاء العميق بين النجوم. يتم تنفيذ هذا العمل الفذ الديناميكي الحراري بواسطة ثلاجات هيليوم-3/هيليوم-4 ذات الحلقة المغلقة."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Phase Separation Boundary: Below 870 mK, liquid ³He and ⁴He mixtures separate into a concentrated phase and a dilute phase.",
-        "[ar] Endothermic Quantum Evaporation: Pumping ³He atoms across this phase boundary absorbs latent heat, continuously extracting thermal energy from the mixing chamber stage.",
-        "[ar] Cryogenic Attenuation Lines: Microwave coaxial control lines are fitted with 20dB and 30dB attenuators at each thermal stage to strip room-temperature blackbody thermal noise before it reaches the chip."
+        "حد فصل الطور: أقل من 870 مللي كلفن، ينفصل خليط السائل ³He و⁴He إلى طور مركز وطور مخفف.",
+        "التبخر الكمي الماص للحرارة: الضخ ³تمتص الذرات عبر حدود الطور هذه الحرارة الكامنة، وتستخرج الطاقة الحرارية بشكل مستمر من مرحلة غرفة الخلط.",
+        "خطوط التوهين المبردة: تم تجهيز خطوط التحكم المحورية للميكروويف بمخففات 20 ديسيبل و30 ديسيبل في كل مرحلة حرارية لإزالة الضوضاء الحرارية للجسم الأسود في درجة حرارة الغرفة قبل أن تصل إلى الشريحة."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Resonance, Acoustic Physics & Quantum Coherence"
+      "text": "3. دروس فيديو متقدمة: الرنين والفيزياء الصوتية والتماسك الكمي"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "[ar] Acoustic Wave Physics, Resonance & Superconducting Oscillators",
-      "caption": "[ar] Experimental lecture exploring resonance harmonics, non-linear phase oscillators, and acoustic-electromagnetic coupling."
+      "title": "فيزياء الموجات الصوتية والرنين والمذبذبات فائقة التوصيل",
+      "caption": "محاضرة تجريبية تستكشف توافقيات الرنين ومذبذبات الطور غير الخطية والاقتران الصوتي الكهرومغناطيسي."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Decoherence Mechanisms: T1 Relaxation and T2 Dephasing"
+      "text": "4. آليات فك الترابط: استرخاء T1 وإزالة الطور T2"
     },
     {
       "type": "p",
-      "text": "[ar] A qubit's computational lifetime is constrained by two physical decoherence metrics: energy relaxation time ($T_1$) and phase coherence time ($T_2$). Dielectric losses at substrate-metal interfaces and parasitic two-level system (TLS) defects in amorphous oxide layers dissipate stored electromagnetic energy, limiting typical coherence windows to 100–300 microseconds."
+      "text": "العمر الحسابي للبت الكمي مقيد بمقياسين فيزيائيين لفك الترابط: وقت استرخاء الطاقة ($T_1$) ووقت تماسك الطور ($T_2$). يؤدي فقدان العزل الكهربائي في الواجهات البينية المعدنية والعيوب الطفيلية في النظام ثنائي المستوى (TLS) في طبقات الأكسيد غير المتبلور إلى تبديد الطاقة الكهرومغناطيسية المخزنة، مما يحد من نوافذ التماسك النموذجية إلى 100-300 ميكروثانية."
     },
     {
       "type": "p",
-      "text": "[ar] Bridging the chasm between noisy intermediate-scale quantum (NISQ) systems and fault-tolerant quantum computing requires quantum error correction. The surface code topology encodes one protected logical qubit across dozens of physical data and ancilla qubits arranged in a 2D square lattice, detecting bit-flip and phase-flip syndromes via repeated multi-qubit stabilizer measurements."
+      "text": "يتطلب سد الفجوة بين الأنظمة الكمومية المتوسطة الحجم (NISQ) الصاخبة والحوسبة الكمومية المتسامحة تصحيح الخطأ الكمي. تقوم طوبولوجيا الكود السطحي بتشفير كيوبت منطقي واحد محمي عبر العشرات من البيانات المادية والكيوبتات الملحقة المرتبة في شبكة مربعة ثنائية الأبعاد، مما يكشف عن متلازمات تقلب البتات وتقلب الطور عبر قياسات مثبتة متعددة البتات المتكررة."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Quantum Engineering Takeaways"
+      "text": "5. الوجبات السريعة في هندسة الكم"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Surface Preparation: Substrate chemical polishing and atomic trenching under Josephson junctions reduce two-level system dielectric dissipation by over 50%.",
-        "[ar] Magnetic Shielding: Enclose the cryostat in multilayer high-permeability Mu-metal and superconducting lead canisters to reject stray Earth magnetic flux lines.",
-        "[ar] Parametric Amplification: Utilize Traveling Wave Parametric Amplifiers (TWPAs) at the 4K stage to achieve quantum-limited readout signal amplification without backaction noise."
+        "إعداد السطح: التلميع الكيميائي للركيزة والخنادق الذرية تحت تقاطعات جوزيفسون يقلل من تبديد عازل النظام ذي المستويين بنسبة تزيد عن 50%.",
+        "التدريع المغناطيسي: قم بإحاطة ناظم البرد في طبقات متعددة من معدن Mu عالي النفاذية وعبوات رصاص فائقة التوصيل لرفض خطوط التدفق المغناطيسي الأرضي الضالة.",
+        "التضخيم البارامترى: استخدم مكبرات الصوت البارامترية للموجة المتنقلة (TWPAs) في مرحلة 4K لتحقيق تضخيم إشارة القراءة المحدودة الكم دون ضوضاء رد الفعل."
       ]
     }
   ],

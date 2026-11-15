@@ -1,7 +1,7 @@
 {
   "slug": "acoustic-geometry-and-sound-in-sacred-spaces",
-  "title": "[es] Acoustic Geometry in Sacred Spaces",
-  "excerpt": "[es] An investigation into the sacred acoustic physics of stone vaults, whispering galleries, and modernist concrete chambers that transform human speech into sublime atmospheric resonance.",
+  "title": "Geometría acústica en espacios sagrados",
+  "excerpt": "Una investigación sobre la física acústica sagrada de bóvedas de piedra, galerías susurrantes y cámaras de hormigón modernistas que transforman el habla humana en una resonancia atmosférica sublime.",
   "date": "2026-11-14",
   "updated": "2026-11-15",
   "author": "Julian Mercer",
@@ -12,65 +12,65 @@
     "stone"
   ],
   "image": "https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Sweeping stone vaulting and soaring arches designed for sublime acoustic resonance",
+  "imageAlt": "Amplias bóvedas de piedra y arcos altísimos diseñados para una resonancia acústica sublime",
   "body": [
     {
       "type": "p",
-      "text": "[es] Before architecture was codified in blueprints and mathematical engineering drawings, it was experienced primarily through the ear. Ancient Egyptian hypostyle halls, Roman rotundas, and medieval Cistercian abbeys were not merely designed to shelter bodies from the elements; they were monumental acoustic resonators sculpted from living stone to elevate vocal chant into an overwhelming somatic encounter with the transcendent."
+      "text": "Antes de que la arquitectura fuera codificada en planos y dibujos matemáticos de ingeniería, se experimentaba principalmente a través del oído. Las salas hipóstilas del antiguo Egipto, las rotondas romanas y las abadías cistercienses medievales no fueron diseñadas simplemente para proteger los cuerpos de los elementos; eran resonadores acústicos monumentales esculpidos en piedra viva para elevar el canto vocal a un encuentro somático abrumador con lo trascendente."
     },
     {
       "type": "p",
-      "text": "[es] When you step into the Abbey of Thoronet in Provence or Le Corbusier’s Chapel of Notre-Dame du Haut in Ronchamp, the air itself feels dense with acoustic presence. A single whispered syllable does not simply dissipate; it clings to the curves of the limestone vaults, rolling in cascading harmonic reflections that dissolve the boundary between sound and architecture."
+      "text": "Cuando entras en la Abadía de Thoronet en Provenza o en la Capilla de Notre-Dame du Haut de Le Corbusier en Ronchamp, el aire mismo se siente denso con presencia acústica. Una sola sílaba susurrada no se disipa simplemente; se aferra a las curvas de las bóvedas de piedra caliza, rodando en cascadas de reflejos armónicos que disuelven el límite entre sonido y arquitectura."
     },
     {
       "type": "h2",
-      "text": "[es] The Physics of Monastic Reverberation"
+      "text": "La física de la reverberación monástica"
     },
     {
       "type": "p",
-      "text": "[es] In sacred acoustics, the primary metric is Reverberation Time (RT60)—the duration required for sound pressure levels to drop by 60 decibels after the acoustic source has ceased. In an ordinary residential living room, RT60 measures between 0.4 and 0.6 seconds, optimized for crisp conversational speech intelligibility."
+      "text": "En acústica sagrada, la métrica principal es el tiempo de reverberación (RT60), la duración necesaria para que los niveles de presión sonora caigan 60 decibeles después de que la fuente acústica ha cesado. En una sala de estar residencial normal, RT60 mide entre 0,4 y 0,6 segundos, optimizado para una inteligibilidad nítida del habla conversacional."
     },
     {
       "type": "p",
-      "text": "[es] In Cistercian basilicas, however, RT60 regularly spans 5.5 to 8.2 seconds. Because dense limestone blocks possess an acoustic absorption coefficient of nearly zero at vocal frequencies, sound reflections undergo thousands of bounces across parabolic barrel vaults before attenuating. This prolonged decay transforms modal Gregorian chant into a continuous, self-accompanying sonic drone. The architecture literally sings with the choir."
+      "text": "En las basílicas cistercienses, sin embargo, el RT60 dura normalmente entre 5,5 y 8,2 segundos. Debido a que los densos bloques de piedra caliza poseen un coeficiente de absorción acústica cercano a cero en las frecuencias vocales, los reflejos del sonido sufren miles de rebotes a través de bóvedas de cañón parabólicas antes de atenuarse. Esta decadencia prolongada transforma el canto gregoriano modal en un zumbido sónico continuo y autoacompañado. La arquitectura canta literalmente con el coro."
     },
     {
       "type": "quote",
-      "text": "[es] Stone is not mute. When shaped into a vault, it becomes an instrument that catches human breath and returns it as timeless harmony.",
-      "cite": "[es] Julian Mercer, Sacred Resonances"
+      "text": "La piedra no es muda. Cuando se le da forma de bóveda, se convierte en un instrumento que atrapa el aliento humano y lo devuelve como una armonía eterna.",
+      "cite": "Julian Mercer, Resonancias sagradas"
     },
     {
       "type": "h2",
-      "text": "[es] Acoustic Brutalism: Modernist Chambers of Reflection"
+      "text": "Brutalismo acústico: cámaras de reflexión modernistas"
     },
     {
       "type": "p",
-      "text": "[es] In the twentieth century, modernist masters revived sacred acoustic physics using exposed concrete. At the Convent of La Tourette, Le Corbusier engineered the crypt with non-parallel sloped ceiling planes and deep concrete light cannons. By avoiding parallel surfaces, the space eliminates flutter echoes while maintaining rich modal density."
+      "text": "En el siglo XX, los maestros modernistas revivieron la física acústica sagrada utilizando hormigón visto. En el Convento de La Tourette, Le Corbusier diseñó la cripta con planos de techo inclinados no paralelos y profundos cañones de luz de hormigón. Al evitar superficies paralelas, el espacio elimina los ecos de aleteo mientras mantiene una rica densidad modal."
     },
     {
       "type": "p",
-      "text": "[es] Similarly, in Sigurd Lewerentz’s Church of St. Peter in Klippan, raw brick vaults and deeply recessed mortar joints act as natural acoustic diffusers. Instead of harsh specular reflections, sound scatters evenly in all directions, creating an acoustic envelope of profound, warm intimacy."
+      "text": "De manera similar, en la Iglesia de San Pedro en Klippan de Sigurd Lewerentz, las bóvedas de ladrillo en bruto y las juntas de mortero profundamente empotradas actúan como difusores acústicos naturales. En lugar de fuertes reflejos especulares, el sonido se dispersa uniformemente en todas direcciones, creando una envoltura acústica de profunda y cálida intimidad."
     },
     {
       "type": "h3",
-      "text": "[es] Acoustic Tectonics in Monumental Design"
+      "text": "Tectónica acústica en diseño monumental"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Curvature and focusing: Parabolic apses and domed ceilings that gather acoustic energy and project it toward focal listener coordinates without electronic amplification.",
-        "[es] Diffusive masonry relief: Irregular stone chiseling and stepped brick courses that break up high-frequency flutter echoes into pleasing diffuse fields.",
-        "[es] Cavity resonance: Subterranean ceramic jars embedded into masonry niches (as recorded by Vitruvius) tuned to absorb discordant vocal harmonics.",
-        "[es] Threshold compression: Low, heavily damped entry narthexes that acoustically shock the ear with sudden silence before introducing the vast acoustic space of the nave."
+        "Curvatura y enfoque: ábsides parabólicos y techos abovedados que recogen energía acústica y la proyectan hacia las coordenadas focales del oyente sin amplificación electrónica.",
+        "Relieve difuso de mampostería: cincelado de piedra irregular y hileras de ladrillos escalonados que rompen los ecos de aleteo de alta frecuencia en agradables campos difusos.",
+        "Resonancia de cavidad: vasijas de cerámica subterráneas incrustadas en nichos de mampostería (según lo registrado por Vitruvio) sintonizadas para absorber armónicos vocales discordantes.",
+        "Compresión de umbral: Nártex de entrada bajos y muy amortiguados que impactan acústicamente el oído con un silencio repentino antes de introducir el vasto espacio acústico de la nave."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] Designing for the Attentive Ear"
+      "text": "Diseño para el oído atento"
     },
     {
       "type": "p",
-      "text": "[es] In our contemporary world, where personal headphones create artificial, isolated acoustic bubbles, sacred acoustic architecture reminds us of the communal power of physical sound. When a gathering of people shares an acoustic space that breathes and resonates in unison, space ceases to be a passive container and becomes a transformative spiritual instrument."
+      "text": "En nuestro mundo contemporáneo, donde los auriculares personales crean burbujas acústicas artificiales y aisladas, la arquitectura acústica sagrada nos recuerda el poder comunitario del sonido físico. Cuando una reunión de personas comparte un espacio acústico que respira y resuena al unísono, el espacio deja de ser un contenedor pasivo y se convierte en un instrumento espiritual transformador."
     }
   ],
   "sourceHash": "f72c05b9fdbdaa6b61ea146c4606fef13dccadca"

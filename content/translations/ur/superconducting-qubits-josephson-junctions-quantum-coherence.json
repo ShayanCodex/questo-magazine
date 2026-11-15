@@ -1,7 +1,7 @@
 {
   "slug": "superconducting-qubits-josephson-junctions-quantum-coherence",
-  "title": "[ur] Superconducting Qubits & Coherence",
-  "excerpt": "[ur] A quantum physics and cryogenic engineering monograph on transmon qubit anharmonicity, non-linear Josephson junction inductance, 15-millikelvin dilution refrigeration, and surface code quantum error correction.",
+  "title": "سپر کنڈکٹنگ کیوبٹس اینڈ کوہرنس",
+  "excerpt": "ٹرانسمون کوئبٹ اینہارمونیسیٹی پر ایک کوانٹم فزکس اور کرائیوجینک انجینئرنگ مونوگراف، نان لکیری جوزفسن جنکشن انڈکٹنس، 15-ملی کیلون ڈائلیشن ریفریجریشن، اور سطحی کوڈ کوانٹم ایرر کی اصلاح۔",
   "date": "2026-11-15",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -13,23 +13,23 @@
     "optics"
   ],
   "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "[ur] Ultra-clean quantum physics research laboratory with cryogenic dilution refrigeration apparatus",
+  "imageAlt": "الٹرا کلین کوانٹم فزکس ریسرچ لیبارٹری جس میں کرائیوجینک ڈیلیوشن ریفریجریشن اپریٹس ہے",
   "body": [
     {
       "type": "p",
-      "text": "[ur] Quantum computational advantage represents the theoretical promise of solving mathematically intractable problems—molecular simulation, post-quantum cryptanalysis, and complex optimization—that would require millions of years on classical CMOS supercomputers. Among competing physical implementations, superconducting circuits are the leading modality, scaling artificial atoms onto planar silicon and sapphire microchips using standard semiconductor lithography."
+      "text": "کوانٹم کمپیوٹیشنل فائدہ ریاضیاتی طور پر پیچیدہ مسائل کو حل کرنے کے نظریاتی وعدے کی نمائندگی کرتا ہے — مالیکیولر سمولیشن، پوسٹ کوانٹم کرپٹ اینالیسس، اور پیچیدہ اصلاح — جس کے لیے سوپر سی ایم او ایس پر ملین سال کی ضرورت ہوگی۔ مسابقتی جسمانی نفاذ میں، سپر کنڈکٹنگ سرکٹس سرفہرست ہیں، مصنوعی ایٹموں کو پلانر سلیکون اور سیفائر مائیکرو چپس پر معیاری سیمی کنڈکٹر لیتھوگرافی کا استعمال کرتے ہوئے پیمانہ کرنا۔"
     },
     {
       "type": "p",
-      "text": "[ur] Unlike natural trapped ions or neutral atoms, superconducting qubits are macroscopic electronic circuits fabricated from pure aluminum or niobium thin films. When cooled below their critical superconducting transition temperatures ($T_c \\approx 1.2$ K), electrical resistance vanishes entirely, enabling billions of paired electrons—Cooper pairs—to condense into a single macroscopic quantum wave function."
+      "text": "قدرتی پھنسے ہوئے آئنوں یا غیر جانبدار ایٹموں کے برعکس، سپر کنڈکٹنگ کوئبٹس میکروسکوپک الیکٹرانک سرکٹس ہیں جو خالص ایلومینیم یا نیبیم پتلی فلموں سے بنے ہیں۔ جب ان کے اہم سپر کنڈکٹنگ ٹرانزیشن درجہ حرارت ($T_c \\تقریباً 1.2$ K) سے نیچے ٹھنڈا ہو جاتا ہے، تو برقی مزاحمت مکمل طور پر ختم ہو جاتی ہے، جس سے اربوں جوڑے والے الیکٹران—کوپر جوڑے— کو ایک میکروسکوپک کوانٹم ویو فنکشن میں گاڑھا کرنے کے قابل بناتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. The Transmon Architecture and Non-Linear Josephson Inductance"
+      "text": "1. دی ٹرانسمون آرکیٹیکچر اور غیر لکیری جوزفسن انڈکٹنس"
     },
     {
       "type": "p",
-      "text": "[ur] A standard LC harmonic oscillator cannot serve as a qubit because its energy levels are equidistant ($\\hbar\\omega$). Any resonant microwave pulse intended to excite the ground state $|0\\rangle$ into $|1\\rangle$ simultaneously drives unwanted transitions into $|2\\rangle$ and higher manifold states. To isolate an addressable two-level quantum system, engineers introduce an anharmonic non-linear inductor: the Josephson Junction."
+      "text": "ایک معیاری LC ہارمونک آسکیلیٹر کوئبٹ کے طور پر کام نہیں کر سکتا کیونکہ اس کی توانائی کی سطح مساوی ہے ($\\hbar\\omega$)۔ کوئی بھی گونجنے والی مائیکرو ویو پلس جس کا مقصد زمینی حالت $|0\\rangle$ کو $|1\\rangle$ میں اکٹھا کرنا ہے بیک وقت $|2\\rangle$ اور اعلی درجے کی حالتوں میں ناپسندیدہ منتقلی چلاتا ہے۔ ایک قابل شناخت دو سطحی کوانٹم سسٹم کو الگ کرنے کے لیے، انجینئرز ایک اینہارمونک نان لکیری انڈکٹر متعارف کراتے ہیں: جوزفسن جنکشن۔"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ur] By adding an oversized shunt capacitor, the transmon operates in the high $E_J / E_C$ regime, exponentially suppressing charge noise sensitivity by several orders of magnitude while preserving sufficient anharmonicity ($\\alpha \\approx -200$ to $-300$ MHz) to manipulate the qubit with nanosecond microwave pulses."
+      "text": "ایک بڑے شنٹ کیپیسیٹر کو شامل کرنے سے، ٹرانسمون اعلی $E_J / E_C$ نظام میں کام کرتا ہے، کافی حد تک غیر ہارمونیسیٹی ($\\alpha \\ approx -200$$ سے $-Hquate کے ساتھ $-30) کو محفوظ رکھتے ہوئے شدت کے کئی آرڈرز کے ذریعے چارج شور کی حساسیت کو تیزی سے دباتا ہے۔ نینو سیکنڈ مائکروویو دالیں"
     },
     {
       "type": "quote",
-      "text": "[ur] Superconducting qubits allow us to engineer artificial atoms with custom energy levels, printed with sub-micron lithography on sapphire wafers.",
-      "cite": "[ur] Dr. Marcus Vance, Quantum Information Science & Condensed Matter Fellow"
+      "text": "سپر کنڈکٹنگ کوئبٹس ہمیں مصنوعی ایٹموں کو اپنی مرضی کے مطابق توانائی کی سطح کے ساتھ انجینئر کرنے کی اجازت دیتے ہیں، جو نیلم ویفرز پر ذیلی مائکرون لیتھوگرافی کے ساتھ پرنٹ کیے جاتے ہیں۔",
+      "cite": "ڈاکٹر مارکس وانس، کوانٹم انفارمیشن سائنس اور کنڈینسڈ میٹر فیلو"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Cryogenic Dilution Refrigeration: Operating at 15 Millikelvin"
+      "text": "2. کریوجینک ڈائلیشن ریفریجریشن: 15 ملی کیلون پر کام کرنا"
     },
     {
       "type": "p",
-      "text": "[ur] To prevent ambient thermal phonons ($k_B T$) from randomly perturbing the qubit state, superconducting processors must be cooled to 15 millikelvin (-273.135°C), colder than deep interstellar space. This thermodynamic feat is executed by closed-loop Helium-3/Helium-4 dilution refrigerators."
+      "text": "محیطی تھرمل فونون ($k_B T$) کو تصادفی طور پر کوئبٹ حالت کو پریشان کرنے سے روکنے کے لیے، سپر کنڈکٹرز کو ٹھنڈا کرنے کے عمل کو 51 ملی کیلون پر عمل کرنا چاہیے۔ (-273.135°C)، گہرے انٹرسٹیلر اسپیس سے زیادہ سرد۔ اس تھرموڈینامک کارنامے کو بند لوپ Helium-3/Helium-4 dilution ریفریجریٹرز کے ذریعے انجام دیا جاتا ہے۔"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Phase Separation Boundary: Below 870 mK, liquid ³He and ⁴He mixtures separate into a concentrated phase and a dilute phase.",
-        "[ur] Endothermic Quantum Evaporation: Pumping ³He atoms across this phase boundary absorbs latent heat, continuously extracting thermal energy from the mixing chamber stage.",
-        "[ur] Cryogenic Attenuation Lines: Microwave coaxial control lines are fitted with 20dB and 30dB attenuators at each thermal stage to strip room-temperature blackbody thermal noise before it reaches the chip."
+        "مرحلے کی علیحدگی کی حد: 870 mK سے نیچے، مائع ³He اور ⁴He کے مرکب ایک مرتکز مرحلے اور ایک کمزور مرحلے میں الگ ہوجاتے ہیں۔",
+        "اینڈوتھرمک کوانٹم ایواپوریشن: پمپنگ ³وہ ایٹم اس مرحلے کی حدود میں اویکت حرارت جذب کرتا ہے، مکسنگ چیمبر کے مرحلے سے مسلسل تھرمل توانائی نکالتا ہے۔",
+        "کریوجینک اٹینیویشن لائنز: مائیکرو ویو کواکسیئل کنٹرول لائنیں ہر تھرمل سٹیج پر 20dB اور 30dB اٹنیوایٹرز کے ساتھ لگائی جاتی ہیں تاکہ کمرے کے درجہ حرارت کے بلیک باڈی تھرمل شور کو چپ تک پہنچنے سے پہلے ہی ختم کیا جا سکے۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: Resonance, Acoustic Physics & Quantum Coherence"
+      "text": "3. ویڈیو ماسٹر کلاس: گونج، صوتی طبیعیات اور کوانٹم ہم آہنگی"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "[ur] Acoustic Wave Physics, Resonance & Superconducting Oscillators",
-      "caption": "[ur] Experimental lecture exploring resonance harmonics, non-linear phase oscillators, and acoustic-electromagnetic coupling."
+      "title": "صوتی لہر طبیعیات، گونج اور سپر کنڈکٹنگ آسیلیٹرز",
+      "caption": "تجرباتی لیکچر جس میں گونج ہارمونکس، نان لکیری فیز آسکیلیٹرس، اور صوتی-الیکٹرو میگنی کی کھوج کی جاتی ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Decoherence Mechanisms: T1 Relaxation and T2 Dephasing"
+      "text": "4. Decoherence میکانزم: T1 Relaxation اور T2 Dephasing"
     },
     {
       "type": "p",
-      "text": "[ur] A qubit's computational lifetime is constrained by two physical decoherence metrics: energy relaxation time ($T_1$) and phase coherence time ($T_2$). Dielectric losses at substrate-metal interfaces and parasitic two-level system (TLS) defects in amorphous oxide layers dissipate stored electromagnetic energy, limiting typical coherence windows to 100–300 microseconds."
+      "text": "ایک کیوبٹ کی کمپیوٹیشنل لائف ٹائم دو فزیکل ڈیکوہرنس میٹرکس سے محدود ہے: انرجی ریلیکسیشن ٹائم ($T_1$) اور فیز کوہرنس ٹائم ($T_2$)۔ سبسٹریٹ میٹل انٹرفیس میں ڈائی الیکٹرک نقصانات اور پرجیوی دو سطحی نظام (ٹی ایل ایس) کے نقائص بے ترتیب آکسائڈ تہوں میں ذخیرہ شدہ برقی مقناطیسی توانائی کو ختم کرتے ہیں، عام ہم آہنگی والی ونڈوز کو 100-300 مائیکرو سیکنڈ تک محدود کرتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] Bridging the chasm between noisy intermediate-scale quantum (NISQ) systems and fault-tolerant quantum computing requires quantum error correction. The surface code topology encodes one protected logical qubit across dozens of physical data and ancilla qubits arranged in a 2D square lattice, detecting bit-flip and phase-flip syndromes via repeated multi-qubit stabilizer measurements."
+      "text": "شور والے انٹرمیڈیٹ اسکیل کوانٹم (NISQ) سسٹمز اور فالٹ ٹولرنٹ کوانٹم کمپیوٹنگ کے درمیان کھائی کو ختم کرنے کے لیے کوانٹم ایرر درست کرنے کی ضرورت ہے۔ سطحی کوڈ ٹوپولوجی ایک محفوظ منطقی کوبٹ کو درجنوں فزیکل ڈیٹا اور 2D مربع جالی میں ترتیب دیئے گئے اینکیلا کوئبٹس کو انکوڈ کرتا ہے، بار بار ملٹی کوبٹ سٹیبلائزر پیمائش کے ذریعے بٹ فلپ اور فیز فلپ سنڈروم کا پتہ لگاتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Quantum Engineering Takeaways"
+      "text": "5. کوانٹم انجینئرنگ ٹیک ویز"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Surface Preparation: Substrate chemical polishing and atomic trenching under Josephson junctions reduce two-level system dielectric dissipation by over 50%.",
-        "[ur] Magnetic Shielding: Enclose the cryostat in multilayer high-permeability Mu-metal and superconducting lead canisters to reject stray Earth magnetic flux lines.",
-        "[ur] Parametric Amplification: Utilize Traveling Wave Parametric Amplifiers (TWPAs) at the 4K stage to achieve quantum-limited readout signal amplification without backaction noise."
+        "سطح کی تیاری: جوزفسن جنکشن کے نیچے سبسٹریٹ کیمیکل پالش اور ایٹم ٹرینچنگ دو سطحی نظام کے ڈائی الیکٹرک ڈسپیشن کو 50 فیصد سے زیادہ کم کرتی ہے۔",
+        "مقناطیسی شیلڈنگ: زمین کی آوارہ مقناطیسی بہاؤ لائنوں کو مسترد کرنے کے لیے کرائیوسٹیٹ کو ملٹی لیئر ہائی پارگمیبلٹی Mu-میٹل اور سپر کنڈکٹنگ لیڈ کینسٹر میں بند کریں۔",
+        "پیرامیٹرک ایمپلیفیکیشن: 4K مرحلے پر ٹریولنگ ویو پیرامیٹرک ایمپلیفائرز (TWPAs) کا استعمال کریں تاکہ بیک ایکشن شور کے بغیر کوانٹم محدود ریڈ آؤٹ سگنل ایمپلیفیکیشن حاصل کریں۔"
       ]
     }
   ],

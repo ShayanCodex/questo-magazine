@@ -1,7 +1,7 @@
 {
   "slug": "the-renaissance-of-brutalist-web-design",
-  "title": "[fr] The Renaissance of Brutalist Web Design",
-  "excerpt": "[fr] How brutalist web aesthetics, high-contrast monospace typography, and unadorned semantic HTML are staging an overdue rebellion against sterile corporate design templates.",
+  "title": "La renaissance du design Web brutaliste",
+  "excerpt": "Comment l'esthétique Web brutaliste, la typographie monospace à contraste élevé et le code HTML sémantique sans fioritures mettent en scène une rébellion attendue depuis longtemps contre les modèles de conception d'entreprise stériles.",
   "date": "2026-11-14",
   "updated": "2026-11-15",
   "author": "Saskia Lindqvist",
@@ -13,40 +13,40 @@
     "typography"
   ],
   "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Stark black and white geometric architecture representing brutalist digital aesthetics",
+  "imageAlt": "Architecture géométrique austère en noir et blanc représentant l'esthétique numérique brutaliste",
   "body": [
     {
       "type": "p",
-      "text": "[fr] The contemporary commercial internet is drowning in pastel gradients, rounded corners, and sterile micro-interactions. Every startup website appears to have been generated from the same corporate design system, sanitizing the web of edge, tension, and artistic voice. In response to this suffocating blandness, a powerful counter-movement has emerged: digital brutalism."
+      "text": "L'Internet commercial contemporain se noie dans les dégradés pastel, les coins arrondis et les micro-interactions stériles. Chaque site Web de startup semble avoir été généré à partir du même système de conception d'entreprise, assainissant le réseau de pointe, de tension et de voix artistique. En réponse à cette fadeur étouffante, un puissant contre-mouvement a émergé : le brutalisme numérique."
     },
     {
       "type": "p",
-      "text": "[fr] Named in honor of the mid-century architectural philosophy that celebrated exposed aggregate concrete and raw structural honesty, brutalist web design strips away superficial decorative veneer. It treats the browser not as a simulated glossy print brochure, but as an unapologetic digital terminal composed of raw HTML semantics, stark typography, and uncompromising spatial tension."
+      "text": "Nommé en l'honneur de la philosophie architecturale du milieu du siècle qui célébrait le béton à granulats apparents et l'honnêteté structurelle brute, la conception Web brutaliste supprime le placage décoratif superficiel. Il traite le navigateur non pas comme une fausse brochure imprimée sur papier glacé, mais comme un terminal numérique sans vergogne composé d'une sémantique HTML brute, d'une typographie austère et d'une tension spatiale sans compromis."
     },
     {
       "type": "h2",
-      "text": "[fr] The Ethics of Architectural Honesty on the Web"
+      "text": "L'éthique de l'honnêteté architecturale sur le Web"
     },
     {
       "type": "p",
-      "text": "[fr] In physical brutalist architecture, formwork lines and tie-holes are left intentionally visible to expose how the building was poured. In digital brutalism, the underlying mechanics of web markup—links, borders, default monospace letterforms, and system color contrasts—are celebrated rather than concealed under megabytes of CSS blur filters and heavy JavaScript canvas shaders."
+      "text": "Dans l’architecture physique brutaliste, les lignes de coffrage et les trous d’attache sont intentionnellement visibles pour exposer la manière dont le bâtiment a été coulé. Dans le brutalisme numérique, les mécanismes sous-jacents du balisage Web (liens, bordures, formes de lettres monospaces par défaut et contrastes de couleurs du système) sont célébrés plutôt que dissimulés sous des mégaoctets de filtres de flou CSS et de lourds shaders de toile JavaScript."
     },
     {
       "type": "p",
-      "text": "[fr] This aesthetic is deeply political. By rejecting the visual language of venture-capital surveillance capitalism, brutalist websites announce that their content is not designed to trick you into a marketing funnel. The text is presented with unyielding clarity: read it, contemplate it, or leave."
+      "text": "Cette esthétique est profondément politique. En rejetant le langage visuel du capitalisme de surveillance du capital-risque, les sites Web brutalistes annoncent que leur contenu n’est pas conçu pour vous piéger dans un entonnoir marketing. Le texte est présenté avec une clarté inébranlable : lisez-le, contemplez-le ou partez."
     },
     {
       "type": "quote",
-      "text": "[fr] A brutalist website does not apologize for being digital. It does not mimic paper, plastic, or glass. It lives proudly in the raw mathematics of the browser engine.",
-      "cite": "[fr] Saskia Lindqvist, The Digital Monolith"
+      "text": "Un site Web brutaliste ne s'excuse pas d'être numérique. Il n'imite pas le papier, le plastique ou le verre. Il vit fièrement dans les mathématiques brutes du moteur du navigateur.",
+      "cite": "Saskia Lindqvist, The Digital Monolith"
     },
     {
       "type": "h2",
-      "text": "[fr] Typographic Hierarchy and High-Contrast Tension"
+      "text": "Hiérarchie typographique et tension à contraste élevé"
     },
     {
       "type": "p",
-      "text": "[fr] Rather than relying on gentle gray-on-white pastel tones that fail WCAG accessibility standards, brutalist typography embraces absolute chromatic contrast: deep carbon black (#000000) against stark bone white (#FFFFFF). Headlines are set with massive, tightly-tracked display sans-serifs that demand immediate visual reckoning."
+      "text": "Plutôt que de s'appuyer sur de doux tons pastel gris sur blanc qui ne respectent pas les normes d'accessibilité WCAG, la typographie brutaliste adopte un contraste chromatique absolu : noir de carbone profond (#000000) contre blanc osseux (#FFFFFF). Les titres sont dotés d'un affichage sans empattement massif et étroitement suivi qui exige un calcul visuel immédiat."
     },
     {
       "type": "code",
@@ -55,28 +55,28 @@
     },
     {
       "type": "h3",
-      "text": "[fr] Core Axioms of Digital Brutalist Design"
+      "text": "Axiomes fondamentaux de la conception brutaliste numérique"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Unapologetic black-and-white palettes: Prioritizing 100% contrast ratios that maximize legibility under bright sunlight and across budget mobile screens.",
-        "[fr] Monolithic border architecture: Using stark 1px or 2px solid black rules to delineate sections instead of fuzzy box-shadows.",
-        "[fr] Zero superfluous animation: Eliminating scroll-jacking, parallax drifts, and delayed fade-ins that waste CPU cycles and trigger motion sickness.",
-        "[fr] Sub-100 millisecond page loads: Because styles are lightweight and dependencies are nonexistent, brutalist pages render almost instantaneously."
+        "Palettes noir et blanc sans vergogne : donner la priorité à des taux de contraste de 100 % qui maximisent la lisibilité en plein soleil et sur les écrans mobiles économiques.",
+        "Architecture de bordure monolithique : utilisation de règles noires unies de 1 px ou 2 px pour délimiter des sections au lieu d'ombres de boîte floues.",
+        "Zéro animation superflue : élimination du scroll-jacking, des dérives de parallaxe et des fondus enchaînés retardés qui gaspillent les cycles du processeur et déclenchent le mal des transports.",
+        "Chargement des pages en moins de 100 millisecondes : étant donné que les styles sont légers et que les dépendances sont inexistantes, les pages brutalistes s'affichent presque instantanément."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] The Longevity of Tectonic Digital Media"
+      "text": "La longévité des médias numériques tectoniques"
     },
     {
       "type": "p",
-      "text": "[fr] Trends in web design come and go with seasonal fickleness: neumorphism, skeuomorphism, glassmorphism, and flat design have all enjoyed brief moments in the sun before aging into embarrassing relics. Yet clean, honest, brutalist typography anchored to semantic HTML never expires. It remains as legible and compelling today as it was in the earliest days of Tim Berners-Lee’s CERN servers."
+      "text": "Les tendances en matière de conception Web vont et viennent avec l'inconstance saisonnière : le neumorphisme, le skeuomorphisme, le glassmorphisme et le flat design ont tous profité de brefs moments au soleil avant de devenir des reliques embarrassantes. Pourtant, une typographie propre, honnête et brutaliste ancrée au HTML sémantique n’expire jamais. Il reste aussi lisible et convaincant aujourd’hui qu’il l’était aux premiers jours des serveurs du CERN de Tim Berners-Lee."
     },
     {
       "type": "p",
-      "text": "[fr] By embracing brutalist aesthetics, Questo Magazine rejects the fleeting ephemera of Silicon Valley design trends and re-establishes a permanent, uncompromising standard for international digital publishing."
+      "text": "En adoptant une esthétique brutaliste, Questo Magazine rejette les éphémères éphémères des tendances du design de la Silicon Valley et rétablit une norme permanente et sans compromis pour l'édition numérique internationale."
     }
   ],
   "sourceHash": "8ff67d50b1f1c4907665fbcc6f69ef3d07b09fde"

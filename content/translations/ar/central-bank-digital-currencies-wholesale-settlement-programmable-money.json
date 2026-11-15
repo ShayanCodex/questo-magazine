@@ -1,7 +1,7 @@
 {
   "slug": "central-bank-digital-currencies-wholesale-settlement-programmable-money",
-  "title": "[ar] Central Bank Digital Currencies",
-  "excerpt": "[ar] A central banking and financial monetary architecture monograph on wholesale vs retail CBDCs, Project mBridge cross-border atomic settlement, two-tier commercial reserve distribution, and zero-knowledge privacy protocols.",
+  "title": "العملات الرقمية للبنك المركزي",
+  "excerpt": "دراسة عن البنوك المركزية والبنية النقدية المالية حول العملات الرقمية للبنوك المركزية بالجملة مقابل التجزئة، والتسوية الذرية عبر الحدود لمشروع mBridge، وتوزيع الاحتياطي التجاري على مستويين، وبروتوكولات خصوصية المعرفة الصفرية.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
   "tags": [
@@ -13,23 +13,23 @@
     "cryptography"
   ],
   "image": "/images/articles/cbdc-central-banking.jpg",
-  "imageAlt": "[ar] Digital financial liquidity terminal displaying real time central bank settlement vectors and foreign exchange pairs",
+  "imageAlt": "محطة سيولة مالية رقمية تعرض متجهات تسوية البنك المركزي في الوقت الحقيقي وأزواج العملات الأجنبية.",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The international monetary architecture is undergoing its most profound structural realignment since the 1944 Bretton Woods conference. For decades, cross-border payment settlement has relied on the legacy correspondent banking network: an inefficient web of fragmented SWIFT messaging, disparate time zones, and bilateral Nostro/Vostro accounts that introduce multi-day counterparty settlement risk and high transaction friction."
+      "text": "يخضع الهيكل النقدي الدولي لأعمق عملية إعادة تنظيم هيكلية منذ مؤتمر بريتون وودز عام 1944. لعقود من الزمن، اعتمدت تسوية المدفوعات عبر الحدود على شبكة البنوك المراسلة القديمة: شبكة غير فعالة من رسائل سويفت المجزأة، ومناطق زمنية متباينة، وحسابات نوسترو/فوسترو الثنائية التي تفرض مخاطر تسوية الأطراف المقابلة لعدة أيام واحتكاكًا كبيرًا في المعاملات."
     },
     {
       "type": "p",
-      "text": "[ar] Central Bank Digital Currencies (CBDCs) represent a digital manifestation of sovereign fiat currency, constituting a direct legal liability of the issuing monetary authority. By pairing central bank reserves with distributed ledger technology (DLT) or high-concurrency centralized relational ledgers, CBDCs enable atomic Payment-versus-Payment (PvP) settlement in real time."
+      "text": "تمثل العملات الرقمية للبنك المركزي (CBDCs) مظهرًا رقميًا للعملة الورقية السيادية، مما يشكل مسؤولية قانونية مباشرة على السلطة النقدية المصدرة. من خلال إقران احتياطيات البنك المركزي مع تقنية دفتر الأستاذ الموزع (DLT) أو دفاتر الأستاذ العلائقية المركزية عالية التزامن، تتيح العملات الرقمية للبنوك المركزية تسوية الدفع مقابل الدفع (PvP) في الوقت الفعلي."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Architectural Taxonomies: Wholesale vs. Retail CBDCs"
+      "text": "1. التصنيفات المعمارية: العملات الرقمية للبنوك المركزية بالجملة مقابل التجزئة"
     },
     {
       "type": "p",
-      "text": "[ar] Central bank digital currencies divide fundamentally across access tiers and settlement scopes:"
+      "text": "تنقسم العملات الرقمية للبنك المركزي بشكل أساسي عبر مستويات الوصول ونطاقات التسوية:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] The two-tier intermediated structure is paramount to maintaining economic stability. Direct retail accounts at the central bank would disintermediate the commercial banking system, triggering deposit flight during financial crises and crippling credit creation across the private sector."
+      "text": "إن الهيكل الوسيط ذو المستويين أمر بالغ الأهمية للحفاظ على الاستقرار الاقتصادي. ومن شأن حسابات التجزئة المباشرة في البنك المركزي أن تؤدي إلى إلغاء الوساطة في النظام المصرفي التجاري، مما يؤدي إلى هروب الودائع أثناء الأزمات المالية وإعاقة عملية خلق الائتمان عبر القطاع الخاص."
     },
     {
       "type": "quote",
-      "text": "[ar] A central bank digital currency is not cryptocurrency; it is sovereign base money equipped with programmability, eliminating counterparty friction while preserving monetary sovereignty.",
-      "cite": "[ar] Julian Sterling, Managing Director of Sovereign Liquidity Strategy"
+      "text": "العملة الرقمية للبنك المركزي ليست عملة مشفرة؛ إنها قاعدة نقدية سيادية مجهزة بقابلية البرمجة، مما يزيل الاحتكاك بين الأطراف المقابلة مع الحفاظ على السيادة النقدية.",
+      "cite": "جوليان ستيرلنج، المدير العام لاستراتيجية السيولة السيادية"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Cross-Border Settlement Mechanics: Project mBridge"
+      "text": "2. آليات التسوية عبر الحدود: مشروع mBridge"
     },
     {
       "type": "p",
-      "text": "[ar] The most mature multilateral wholesale platform is Project mBridge, developed collaboratively by the Bank for International Settlements (BIS) Innovation Hub and the central banks of Hong Kong, China, Thailand, and the UAE."
+      "text": "منصة البيع بالجملة المتعددة الأطراف الأكثر نضجًا هي Project mBridge، والتي تم تطويرها بالتعاون بين مركز الابتكار التابع لبنك التسويات الدولية (BIS) والبنوك المركزية في هونج كونج والصين وتايلاند والإمارات العربية المتحدة."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Single-Platform Atomic Settlement: Replaces correspondent banking chains with a unified DLT ledger where transactions clear atomically in seconds rather than days.",
-        "[ar] Local Currency Direct Pairs: Facilitates direct foreign exchange settlement between non-dollar currency pairs, mitigating reliance on intermediate vehicle currencies.",
-        "[ar] Regulatory Compliance by Design: Embeds automated jurisdictional sanctions screening and AML transaction monitoring directly within smart contracts at the protocol level."
+        "التسوية الذرية لمنصة واحدة: تستبدل سلاسل الخدمات المصرفية المراسلة بدفتر حسابات دفتري موحد حيث يتم مسح المعاملات ذريًا في ثوانٍ بدلاً من أيام.",
+        "أزواج العملات المحلية المباشرة: تسهل التسوية المباشرة لصرف العملات الأجنبية بين أزواج العملات غير الدولار، مما يخفف الاعتماد على عملات المركبات الوسيطة.",
+        "الامتثال التنظيمي حسب التصميم: يدمج الفحص الآلي للعقوبات القضائية ومراقبة معاملات مكافحة غسل الأموال مباشرة ضمن العقود الذكية على مستوى البروتوكول."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Central Bank Money, Liquidity & Economic Cycles"
+      "text": "3. دروس فيديو متقدمة: أموال البنك المركزي والسيولة والدورات الاقتصادية"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "[ar] How Economic Machines Work, Central Bank Liquidity & Credit Cycles",
-      "caption": "[ar] Ray Dalio's masterclass on central banking, sovereign debt creation, money velocity, and economic credit cycles."
+      "title": "كيف تعمل الآلات الاقتصادية وسيولة البنك المركزي ودورات الائتمان",
+      "caption": "دروس راي داليو الرئيسية حول البنوك المركزية وإنشاء الديون السيادية وسرعة الأموال ودورات الائتمان الاقتصادية."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Privacy Engineering: Zero-Knowledge Proofs and Tiered Anonymity"
+      "text": "4. هندسة الخصوصية: إثباتات المعرفة الصفرية وإخفاء الهوية المتدرج"
     },
     {
       "type": "p",
-      "text": "[ar] The primary public concern surrounding retail CBDCs is the erosion of financial privacy. Unlike physical bank notes, digital transactions can theoretically leave an indelible surveillance footprint."
+      "text": "إن القلق العام الرئيسي المحيط بالعملات الرقمية للبنوك المركزية بالتجزئة هو تآكل الخصوصية المالية. على عكس الأوراق النقدية المادية، يمكن للمعاملات الرقمية من الناحية النظرية أن تترك بصمة مراقبة لا تمحى."
     },
     {
       "type": "p",
-      "text": "[ar] Modern architectural standards address this through cryptographic zero-knowledge proofs (zk-SNARKs) and tiered anonymity protocols. Low-value domestic transactions (under €500 or $1,000) are fully anonymized, validating token validity and balance sufficiency mathematically without revealing user identity to central bank ledgers or commercial intermediaries."
+      "text": "تعالج المعايير المعمارية الحديثة هذا الأمر من خلال إثباتات المعرفة الصفرية المشفرة (zk-SNARKs) وبروتوكولات إخفاء الهوية المتدرجة. يتم إخفاء هوية المعاملات المحلية منخفضة القيمة (أقل من 500 يورو أو 1000 دولار أمريكي) بشكل كامل، والتحقق من صحة الرمز وكفاية الرصيد رياضيًا دون الكشف عن هوية المستخدم لدفاتر البنك المركزي أو الوسطاء التجاريين."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Macroeconomic & Central Banking Takeaways"
+      "text": "5. الوجبات السريعة المتعلقة بالاقتصاد الكلي والخدمات المصرفية المركزية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Holding Caps & Zero-Interest Tiers: Impose maximum individual holding limits on retail wallets to prevent sudden systemic deposit drains from commercial banks during bank runs.",
-        "[ar] Dual Offline Functionality: Embed hardware secure elements (eSE) in smartphones and smartcards to enable offline peer-to-peer payments during power grid or network outages.",
-        "[ar] Interoperability Gateways: Ensure sovereign CBDC ledgers expose standardized ISO 20022 APIs to bridge legacy RTGS systems with next-generation tokenized financial infrastructure."
+        "الحدود القصوى للاحتفاظ ومستويات الفائدة الصفرية: فرض حدود قصوى للاحتفاظ الفردي على محافظ التجزئة لمنع استنزاف الودائع النظامية المفاجئ من البنوك التجارية أثناء تشغيل البنوك.",
+        "وظيفة مزدوجة دون اتصال بالإنترنت: قم بتضمين عناصر آمنة للأجهزة (eSE) في الهواتف الذكية والبطاقات الذكية لتمكين الدفع من نظير إلى نظير دون اتصال بالإنترنت أثناء انقطاع شبكة الطاقة أو الشبكة.",
+        "بوابات التشغيل البيني: التأكد من أن دفاتر البنوك المركزية السيادية تعرض واجهات برمجة التطبيقات القياسية ISO 20022 لربط أنظمة RTGS القديمة مع البنية التحتية المالية الرمزية من الجيل التالي."
       ]
     }
   ],

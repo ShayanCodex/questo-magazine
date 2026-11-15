@@ -1,7 +1,7 @@
 {
   "slug": "central-bank-digital-currencies-wholesale-settlement-programmable-money",
-  "title": "[de] Central Bank Digital Currencies",
-  "excerpt": "[de] A central banking and financial monetary architecture monograph on wholesale vs retail CBDCs, Project mBridge cross-border atomic settlement, two-tier commercial reserve distribution, and zero-knowledge privacy protocols.",
+  "title": "Digitale Währungen der Zentralbank",
+  "excerpt": "Eine Monographie der Zentralbank- und Finanz- und Währungsarchitektur über CBDCs im Groß- und Einzelhandel, die grenzüberschreitende atomare Abwicklung des Projekts mBridge, die zweistufige Verteilung kommerzieller Reserven und wissensfreie Datenschutzprotokolle.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
   "tags": [
@@ -13,23 +13,23 @@
     "cryptography"
   ],
   "image": "/images/articles/cbdc-central-banking.jpg",
-  "imageAlt": "[de] Digital financial liquidity terminal displaying real time central bank settlement vectors and foreign exchange pairs",
+  "imageAlt": "Digitales Finanzliquiditätsterminal, das in Echtzeit Zentralbankabrechnungsvektoren und Devisenpaare anzeigt.",
   "body": [
     {
       "type": "p",
-      "text": "[de] The international monetary architecture is undergoing its most profound structural realignment since the 1944 Bretton Woods conference. For decades, cross-border payment settlement has relied on the legacy correspondent banking network: an inefficient web of fragmented SWIFT messaging, disparate time zones, and bilateral Nostro/Vostro accounts that introduce multi-day counterparty settlement risk and high transaction friction."
+      "text": "Die internationale Währungsarchitektur durchläuft derzeit die tiefgreifendste strukturelle Neuausrichtung seit der Bretton-Woods-Konferenz von 1944. Jahrzehntelang war die grenzüberschreitende Zahlungsabwicklung auf das alte Korrespondenzbanknetzwerk angewiesen: ein ineffizientes Netz fragmentierter SWIFT-Nachrichten, unterschiedlicher Zeitzonen und bilateraler Nostro/Vostro-Konten, die ein mehrtägiges Abwicklungsrisiko der Gegenpartei und hohe Reibungsverluste bei Transaktionen mit sich bringen."
     },
     {
       "type": "p",
-      "text": "[de] Central Bank Digital Currencies (CBDCs) represent a digital manifestation of sovereign fiat currency, constituting a direct legal liability of the issuing monetary authority. By pairing central bank reserves with distributed ledger technology (DLT) or high-concurrency centralized relational ledgers, CBDCs enable atomic Payment-versus-Payment (PvP) settlement in real time."
+      "text": "Digitale Zentralbankwährungen (CBDCs) stellen eine digitale Manifestation der staatlichen Fiat-Währung dar und stellen eine direkte rechtliche Verpflichtung der ausstellenden Währungsbehörde dar. Durch die Kombination von Zentralbankreserven mit Distributed-Ledger-Technologie (DLT) oder zentralisierten relationalen Hauptbüchern mit hoher Parallelität ermöglichen CBDCs eine atomare Zahlung-gegen-Zahlung (PvP)-Abwicklung in Echtzeit."
     },
     {
       "type": "h2",
-      "text": "[de] 1. Architectural Taxonomies: Wholesale vs. Retail CBDCs"
+      "text": "1. Architekturtaxonomien: Großhandel vs. Einzelhandels-CBDCs"
     },
     {
       "type": "p",
-      "text": "[de] Central bank digital currencies divide fundamentally across access tiers and settlement scopes:"
+      "text": "Die digitalen Währungen der Zentralbanken unterscheiden sich grundsätzlich zwischen Zugangsebenen und Abwicklungsbereichen:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[de] The two-tier intermediated structure is paramount to maintaining economic stability. Direct retail accounts at the central bank would disintermediate the commercial banking system, triggering deposit flight during financial crises and crippling credit creation across the private sector."
+      "text": "Die zweistufige Intermediärstruktur ist für die Wahrung der wirtschaftlichen Stabilität von größter Bedeutung. Direkte Privatkundenkonten bei der Zentralbank würden die Intermediation des Geschäftsbankensystems unterbrechen, was bei Finanzkrisen zu einer Einlagenflucht führen und die Kreditschöpfung im gesamten Privatsektor lahmlegen würde."
     },
     {
       "type": "quote",
-      "text": "[de] A central bank digital currency is not cryptocurrency; it is sovereign base money equipped with programmability, eliminating counterparty friction while preserving monetary sovereignty.",
-      "cite": "[de] Julian Sterling, Managing Director of Sovereign Liquidity Strategy"
+      "text": "Eine digitale Zentralbankwährung ist keine Kryptowährung; Es handelt sich um souveränes Basisgeld, das mit Programmierbarkeit ausgestattet ist und Reibungen zwischen den Gegenparteien beseitigt und gleichzeitig die Währungssouveränität wahrt.",
+      "cite": "Julian Sterling, Geschäftsführer von Sovereign Liquidity Strategy"
     },
     {
       "type": "h2",
-      "text": "[de] 2. Cross-Border Settlement Mechanics: Project mBridge"
+      "text": "2. Grenzüberschreitende Abwicklungsmechanismen: Project mBridge"
     },
     {
       "type": "p",
-      "text": "[de] The most mature multilateral wholesale platform is Project mBridge, developed collaboratively by the Bank for International Settlements (BIS) Innovation Hub and the central banks of Hong Kong, China, Thailand, and the UAE."
+      "text": "Die ausgereifteste multilaterale Großhandelsplattform ist Project mBridge, das gemeinsam vom Innovation Hub der Bank für Internationalen Zahlungsausgleich (BIZ) und den Zentralbanken von Hongkong, China, Thailand und den Vereinigten Arabischen Emiraten entwickelt wurde."
     },
     {
       "type": "ul",
       "items": [
-        "[de] Single-Platform Atomic Settlement: Replaces correspondent banking chains with a unified DLT ledger where transactions clear atomically in seconds rather than days.",
-        "[de] Local Currency Direct Pairs: Facilitates direct foreign exchange settlement between non-dollar currency pairs, mitigating reliance on intermediate vehicle currencies.",
-        "[de] Regulatory Compliance by Design: Embeds automated jurisdictional sanctions screening and AML transaction monitoring directly within smart contracts at the protocol level."
+        "Single-Platform Atomic Settlement: Ersetzt Korrespondenzbankketten durch ein einheitliches DLT-Ledger, bei dem Transaktionen atomar in Sekunden statt in Tagen abgewickelt werden.",
+        "Direkte lokale Währungspaare: Erleichtert die direkte Devisenabwicklung zwischen Nicht-Dollar-Währungspaaren und verringert so die Abhängigkeit von Zwischenwährungen.",
+        "Regulatory Compliance by Design: Integriert die automatisierte Prüfung von Gerichtssanktionen und die Überwachung von AML-Transaktionen direkt in Smart Contracts auf Protokollebene."
       ]
     },
     {
       "type": "h2",
-      "text": "[de] 3. Video Masterclass: Central Bank Money, Liquidity & Economic Cycles"
+      "text": "3. Video-Meisterkurs: Zentralbankgeld, Liquidität und Konjunkturzyklen"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "[de] How Economic Machines Work, Central Bank Liquidity & Credit Cycles",
-      "caption": "[de] Ray Dalio's masterclass on central banking, sovereign debt creation, money velocity, and economic credit cycles."
+      "title": "Wie Wirtschaftsmaschinen funktionieren, Zentralbankliquidität und Kreditzyklen",
+      "caption": "Ray Dalios Meisterkurs über Zentralbanken, Staatsverschuldung, Geldumlaufgeschwindigkeit und wirtschaftliche Kreditzyklen."
     },
     {
       "type": "h2",
-      "text": "[de] 4. Privacy Engineering: Zero-Knowledge Proofs and Tiered Anonymity"
+      "text": "4. Privacy Engineering: Zero-Knowledge-Beweise und abgestufte Anonymität"
     },
     {
       "type": "p",
-      "text": "[de] The primary public concern surrounding retail CBDCs is the erosion of financial privacy. Unlike physical bank notes, digital transactions can theoretically leave an indelible surveillance footprint."
+      "text": "Die größte öffentliche Sorge im Zusammenhang mit CBDCs für den Einzelhandel ist die Erosion der finanziellen Privatsphäre. Im Gegensatz zu physischen Banknoten können digitale Transaktionen theoretisch einen unauslöschlichen Überwachungs-Fußabdruck hinterlassen."
     },
     {
       "type": "p",
-      "text": "[de] Modern architectural standards address this through cryptographic zero-knowledge proofs (zk-SNARKs) and tiered anonymity protocols. Low-value domestic transactions (under €500 or $1,000) are fully anonymized, validating token validity and balance sufficiency mathematically without revealing user identity to central bank ledgers or commercial intermediaries."
+      "text": "Moderne Architekturstandards begegnen diesem Problem durch kryptografische Zero-Knowledge-Proofs (zk-SNARKs) und abgestufte Anonymitätsprotokolle. Inländische Transaktionen mit geringem Betrag (unter 500 € oder 1.000 $) werden vollständig anonymisiert, wodurch die Gültigkeit des Tokens und die Angemessenheit des Guthabens mathematisch validiert werden, ohne dass die Identität des Benutzers den Hauptbüchern der Zentralbanken oder kommerziellen Vermittlern preisgegeben wird."
     },
     {
       "type": "h2",
-      "text": "[de] 5. Macroeconomic & Central Banking Takeaways"
+      "text": "5. Makroökonomische und zentralbankische Erkenntnisse"
     },
     {
       "type": "ul",
       "items": [
-        "[de] Holding Caps & Zero-Interest Tiers: Impose maximum individual holding limits on retail wallets to prevent sudden systemic deposit drains from commercial banks during bank runs.",
-        "[de] Dual Offline Functionality: Embed hardware secure elements (eSE) in smartphones and smartcards to enable offline peer-to-peer payments during power grid or network outages.",
-        "[de] Interoperability Gateways: Ensure sovereign CBDC ledgers expose standardized ISO 20022 APIs to bridge legacy RTGS systems with next-generation tokenized financial infrastructure."
+        "Halteobergrenzen und Nullzinsstufen: Legen Sie maximale individuelle Haltegrenzen für Privatgeldbörsen fest, um plötzliche systemische Einlagenabflüsse von Geschäftsbanken während Bankstürmen zu verhindern.",
+        "Duale Offline-Funktionalität: Integrieren Sie Hardware Secure Elements (eSE) in Smartphones und Smartcards, um Offline-Peer-to-Peer-Zahlungen bei Stromnetz- oder Netzwerkausfällen zu ermöglichen.",
+        "Interoperabilitäts-Gateways: Stellen Sie sicher, dass souveräne CBDC-Ledger standardisierte ISO 20022-APIs offenlegen, um alte RTGS-Systeme mit der tokenisierten Finanzinfrastruktur der nächsten Generation zu verbinden."
       ]
     }
   ],

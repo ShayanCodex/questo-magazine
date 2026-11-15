@@ -1,7 +1,7 @@
 {
   "slug": "multilink-suspension-geometry-and-camber-recovery",
-  "title": "[ar] Multilink Suspension Geometry",
-  "excerpt": "[ar] A vehicle dynamics monograph analyzing instant centers, roll center migration, dynamic camber compensation curves, and elastokinematic compliance steer under transient lateral loads.",
+  "title": "هندسة التعليق متعدد الوصلات",
+  "excerpt": "دراسة ديناميكيات السيارة تحلل المراكز الفورية، وترحيل مركز التدحرج، ومنحنيات تعويض الحدبة الديناميكية، وتوجيه الامتثال الحركي المرن تحت الأحمال الجانبية العابرة.",
   "date": "2026-11-15",
   "author": "Liam O'Connor",
   "tags": [
@@ -13,23 +13,23 @@
     "physics"
   ],
   "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] High-performance sports car chassis showing precision machined aluminum suspension control arms and coilover dampening assembly",
+  "imageAlt": "هيكل السيارة الرياضية عالي الأداء يُظهر أذرع التحكم في التعليق المصنوعة من الألومنيوم بدقة ومجموعة تخميد اللفائف",
   "body": [
     {
       "type": "p",
-      "text": "[ar] In competitive motorsport and high-performance automotive engineering, tire grip is the supreme physical constraint limiting cornering velocity. A pneumatic racing tire delivers peak lateral adhesion only when its tread contact patch remains oriented perfectly perpendicular to the road plane under extreme cornering forces. However, as centrifugal acceleration forces the chassis to roll outward, conventional suspension systems lose negative camber, rolling the tire onto its outer shoulder and causing catastrophic loss of adhesion."
+      "text": "في رياضة السيارات التنافسية وهندسة السيارات عالية الأداء، تعد قبضة الإطارات القيد المادي الأعلى الذي يحد من سرعة الانعطاف. يوفر إطار السباق الهوائي أقصى قدر من الالتصاق الجانبي فقط عندما تظل رقعة ملامسة المداس موجهة بشكل عمودي تمامًا على مستوى الطريق تحت قوى الانعطاف الشديدة. ومع ذلك، نظرًا لأن تسارع الطرد المركزي يجبر الهيكل على التدحرج للخارج، فإن أنظمة التعليق التقليدية تفقد الحدبة السلبية، مما يؤدي إلى دحرجة الإطار على كتفه الخارجي والتسبب في فقدان الالتصاق بشكل كارثي."
     },
     {
       "type": "p",
-      "text": "[ar] Multilink suspension geometry decouples kinematic parameters that were historically compromised in MacPherson strut and rigid axle configurations. By distributing wheel hub location across five distinct spatial control links, engineers can independently program instant center migration, roll center height, dynamic camber recovery, and toe compliance steer with mathematical precision."
+      "text": "تعمل هندسة التعليق متعدد الوصلات على فصل المعلمات الحركية التي تم اختراقها تاريخيًا في دعامة ماكفرسون وتكوينات المحور الصلب. من خلال توزيع موقع محور العجلة عبر خمس وصلات تحكم مكانية متميزة، يمكن للمهندسين برمجة الانتقال الفوري للمركز، وارتفاع مركز التدحرج، واستعادة الحدبة الديناميكية، والتوجيه المتوافق مع أصابع القدم بدقة رياضية."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. Kinematic Instant Centers and Camber Recovery Ratios"
+      "text": "1. المراكز الفورية الحركية ونسب استرجاع الحدبة"
     },
     {
       "type": "p",
-      "text": "[ar] The spatial trajectory of the wheel carrier in bump and rebound is governed by the projected virtual instant center ($IC$) formed by the intersection of the upper and lower control links in the front and rear planes:"
+      "text": "يتم التحكم في المسار المكاني لحامل العجلة في حالة الارتطام والارتداد من خلال المركز الفوري الافتراضي المتوقع ($IC$) الذي يتكون من تقاطع وصلات التحكم العلوية والسفلية في المستويين الأمامي والخلفي:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ar] By shortening the upper control link relative to the lower link and angling its inner pivot downward, the suspension gains progressive negative camber as it compresses into bump travel ($d\\gamma / dz < 0$). This camber gain perfectly cancels out the angular roll of the sprung chassis, maintaining a flat tire contact patch throughout apex cornering."
+      "text": "عن طريق تقصير رابط التحكم العلوي بالنسبة للوصلة السفلية وزاوية محوره الداخلي لأسفل، يكتسب التعليق حدبة سلبية تقدمية أثناء ضغطه في حركة الارتطام ($d\\gamma / dz < 0$). يؤدي كسب الحدبة هذا إلى إلغاء التدحرج الزاوي للهيكل النابض بشكل مثالي، مما يحافظ على رقعة تلامس الإطار المسطح طوال المنعطفات العليا."
     },
     {
       "type": "quote",
-      "text": "[ar] A great chassis does not resist roll with brick-stiff anti-roll bars; it embraces roll through kinematic geometry that extracts maximum grip from the outside tire.",
-      "cite": "[ar] Liam O'Connor, Vehicle Dynamics Specialist"
+      "text": "الهيكل الرائع لا يقاوم التدحرج بقضبان مقاومة للتدحرج صلبة من الطوب؛ فهو يحتضن الهندسة الحركية التي تستخرج أقصى قدر من الثبات من الإطار الخارجي.",
+      "cite": "ليام أوكونور، أخصائي ديناميكيات المركبات"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Roll Center Height Migration and Jacking Forces"
+      "text": "2. قوى الهجرة وقوى الرفع لارتفاع مركز التدحرج"
     },
     {
       "type": "p",
-      "text": "[ar] The vehicle roll center ($RC$) is the theoretical point about which the sprung body rolls under lateral acceleration. Its elevation relative to the ground plane dictates how lateral forces are partitioned between kinematic linkages and mechanical springs."
+      "text": "مركز التفاف المركبة ($RC$) هو النقطة النظرية التي يتدحرج حولها الجسم النابض تحت التسارع الجانبي. يحدد ارتفاعه بالنسبة للمستوى الأرضي كيفية تقسيم القوى الجانبية بين الروابط الحركية والينابيع الميكانيكية."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] High Roll Center: Transmits cornering forces instantaneously through suspension linkages with minimal body roll, but induces severe vertical jacking forces that narrow the track width.",
-        "[ar] Low or Sub-Ground Roll Center: Eliminates jacking forces, but creates an enormous roll moment arm ($h_{roll} = CG - RC$), demanding excessively stiff anti-roll bars that degrade tire compliance over kerbs.",
-        "[ar] Dynamic Migration Envelope: A properly tuned five-link design restricts the roll center from migrating laterally by more than 20mm across ±3 degrees of chassis roll."
+        "مركز الدوران العالي: ينقل قوى الانعطاف بشكل فوري من خلال روابط التعليق مع الحد الأدنى من التفاف الجسم، ولكنه يحفز قوى الرفع العمودية الشديدة التي تؤدي إلى تضييق عرض المسار.",
+        "مركز التدحرج المنخفض أو تحت الأرض: يزيل قوى الرفع، ولكنه يخلق ذراعًا هائلاً لعزم الدوران ($h_{roll} = CG - RC$)، مما يتطلب قضبانًا شديدة الصلابة مضادة للدحرجة مما يؤدي إلى انخفاض توافق الإطار مع الأرصفة.",
+        "مظروف الترحيل الديناميكي: يعمل التصميم ذو الوصلات الخمسة الذي تم ضبطه بشكل صحيح على منع مركز التدحرج من الانتقال أفقيًا بأكثر من 20 مم عبر ±3 درجات من لفة الهيكل."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: Suspension Geometry, Scrub Radius & Kinematics"
+      "text": "3. درس فيديو رئيسي: هندسة التعليق ونصف القطر والحركية"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/SUDMEd1bMZI",
-      "title": "[ar] Scrub Radius, Suspension Geometry & Kinematic Contact Patch Control",
-      "caption": "[ar] Engineering breakdown of suspension geometry, scrub radius, kingpin inclination, and dynamic steering feel."
+      "title": "نصف القطر للفرك وهندسة التعليق والتحكم في تصحيح الاتصال الحركي",
+      "caption": "الانهيار الهندسي لهندسة التعليق ونصف القطر والميل الرئيسي والإحساس الديناميكي بالتوجيه."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Elastokinematic Compliance Steer Under Lateral Load"
+      "text": "4. الامتثال الحركي المرن للتوجيه تحت الحمل الجانبي"
     },
     {
       "type": "p",
-      "text": "[ar] In physical vehicles, suspension arms do not articulate about infinitely rigid spherical joints; they rely on elastomeric bushings or composite bearings with non-zero compliance under load. When a vehicle undergoes heavy lateral acceleration ($1.5g+$ in racing applications), the intense cornering force acts through the tire contact patch, exerting a massive yaw torque on the hub assembly."
+      "text": "في المركبات المادية، لا تتحدث أذرع التعليق عن مفاصل كروية صلبة بشكل لا نهائي؛ إنهم يعتمدون على البطانات المرنة أو المحامل المركبة ذات الامتثال غير الصفري تحت الحمل. عندما تخضع السيارة لتسارع جانبي كبير (1.5 جم + دولار في تطبيقات السباق)، تعمل قوة الانعطاف المكثفة من خلال رقعة ملامسة الإطار، مما يؤدي إلى عزم دوران هائل على مجموعة المحور."
     },
     {
       "type": "p",
-      "text": "[ar] Multilink architectures exploit this deformation through deliberate elastokinematics. By positioning bushing stiffness vectors asymmetrically, the outer wheel automatically toes in under lateral load. This passive toe-in stabilizes the rear axle against snap oversteer during aggressive high-speed directional transitions without requiring complex electronic rear-wheel steering systems."
+      "text": "تستغل بنيات الارتباطات المتعددة هذا التشوه من خلال الحركات المرنة المتعمدة. ومن خلال وضع نواقل صلابة الجلبة بشكل غير متماثل، تدخل العجلة الخارجية تلقائيًا تحت الحمل الجانبي. يعمل هذا المدخل السلبي على تثبيت المحور الخلفي ضد الانعطاف المفاجئ أثناء التحولات الاتجاهية عالية السرعة دون الحاجة إلى أنظمة توجيه إلكترونية معقدة للعجلات الخلفية."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Chassis Setup & Motorsport Takeaways"
+      "text": "5. إعداد الهيكل والوجبات السريعة لرياضة السيارات"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Scrub Radius Calibration: Maintain a slightly negative or near-zero scrub radius (0 to -5mm) to ensure directional stability under asymmetric braking without kickback through the steering rack.",
-        "[ar] Anti-Squat / Anti-Dive Tuning: Angle the longitudinal link axes to achieve 40-60% mechanical anti-pitch, keeping aerodynamic downforce floors parallel to the track during heavy braking zones.",
-        "[ar] Bump Steer Minimization: Align the steering tie rod length and angle precisely with the virtual swing arm of the front upright to eliminate unwanted steering angle changes over surface undulations."
+        "معايرة نصف قطر الفرك: حافظ على نصف قطر فرك سلبي قليلاً أو قريب من الصفر (0 إلى -5 مم) لضمان استقرار الاتجاه في ظل الكبح غير المتماثل دون ارتداد من خلال رف التوجيه.",
+        "ضبط مقاومة القرفصاء / مقاومة الغوص: قم بضبط زاوية محاور الوصلة الطولية لتحقيق مقاومة ميكانيكية للميل بنسبة 40-60%، مع الحفاظ على أرضيات القوة الضاغطة الديناميكية الهوائية موازية للمسار أثناء مناطق الكبح الشديدة.",
+        "تقليل توجيه الصدمات: قم بمحاذاة طول قضيب ربط التوجيه وزاويته بدقة مع ذراع التأرجح الافتراضي للعمود الأمامي للتخلص من التغييرات غير المرغوب فيها في زاوية التوجيه على التموجات السطحية."
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays",
-  "title": "[fr] Concert Hall Architectural Acoustics",
-  "excerpt": "[fr] A structural acoustics monograph on Sabine decay formulas, room mode eigenfrequencies, lateral energy fraction, and number-theoretic acoustic diffusion surfaces.",
+  "title": "Acoustique architecturale des salles de concert",
+  "excerpt": "Une monographie d'acoustique structurelle sur les formules de désintégration de Sabine, les fréquences propres du mode salle, la fraction d'énergie latérale et les surfaces de diffusion acoustique de la théorie des nombres.",
   "date": "2026-11-15",
   "author": "Mateo Silva",
   "tags": [
@@ -13,23 +13,23 @@
     "concert-halls"
   ],
   "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Monumental symphonic concert hall interior with sculpted acoustic wood wall diffusors and balconies",
+  "imageAlt": "Intérieur monumental de salle de concert symphonique avec diffuseurs muraux et balcons en bois acoustique sculpté",
   "body": [
     {
       "type": "p",
-      "text": "[fr] The architecture of a great concert hall is not merely a visual monument; it is a monumental acoustic instrument. When an orchestra performs, the physical enclosure of the hall reflects, diffuses, and absorbs sound waves, transforming mechanical instrument vibrations into an immersive spatial field. Historically, hall design was dominated by empirical trial and error—resulting in triumphs like Vienna's Musikverein and catastrophes where halls produced dead acoustic shadows or muddy flutter echoes. The modern science of architectural acoustics synthesizes wave mechanics, room eigenmodes, and number-theoretic diffusion surfaces."
+      "text": "L'architecture d'une grande salle de concert n'est pas simplement un monument visuel ; c'est un instrument acoustique monumental. Lorsqu'un orchestre se produit, l'enceinte physique de la salle reflète, diffuse et absorbe les ondes sonores, transformant les vibrations mécaniques des instruments en un champ spatial immersif. Historiquement, la conception des salles a été dominée par des essais et des erreurs empiriques, entraînant des triomphes comme le Musikverein de Vienne et des catastrophes où les salles produisaient des ombres acoustiques mortes ou des échos boueux. La science moderne de l'acoustique architecturale synthétise la mécanique des ondes, les modes propres des salles et les surfaces de diffusion de la théorie des nombres."
     },
     {
       "type": "p",
-      "text": "[fr] Achieving acoustic excellence requires balancing two contradictory objectives: clarity (the ability to distinguish individual instrumental timbres) and reverberance (the sense of being enveloped in a warm, blooming acoustic void). A hall that favors clarity feels clinical and dry; a hall that favors reverberance degrades speech intelligibility and rapid musical articulation."
+      "text": "Atteindre l'excellence acoustique nécessite d'équilibrer deux objectifs contradictoires : la clarté (la capacité de distinguer les timbres instrumentaux individuels) et la réverbération (le sentiment d'être enveloppé dans un vide acoustique chaleureux et épanoui). Une salle qui privilégie la clarté semble clinique et sèche ; une salle qui favorise la réverbération dégrade l'intelligibilité de la parole et l'articulation musicale rapide."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. Reverberation Time ($RT_{60}$) and the Sabine Formulation"
+      "text": "1. Temps de réverbération ($RT_{60}$) et formulation Sabine"
     },
     {
       "type": "p",
-      "text": "[fr] The fundamental benchmark of architectural acoustics is Reverberation Time ($RT_{60}$): the time required for sound energy density to decay by 60 decibels after the sound source has ceased. In 1898, Wallace Clement Sabine formulated the foundational relationship governing enclosed acoustic spaces:"
+      "text": "La référence fondamentale de l'acoustique architecturale est le temps de réverbération ($RT_{60}$) : le temps nécessaire pour que la densité d'énergie sonore diminue de 60 décibels après l'arrêt de la source sonore. En 1898, Wallace Clement Sabine a formulé la relation fondamentale régissant les espaces acoustiques clos :"
     },
     {
       "type": "code",
@@ -38,24 +38,24 @@
     },
     {
       "type": "p",
-      "text": "[fr] For symphonic orchestral repertoire, the optimal $RT_{60}$ target is precisely 1.8 to 2.2 seconds. If $RT_{60}$ drops below 1.5 seconds, the acoustic space feels lifeless and dry; if it exceeds 2.5 seconds, rapid staccato passages blend into an unintelligible acoustic blur."
+      "text": "Pour le répertoire orchestral symphonique, l'objectif $RT_{60}$ optimal est précisément de 1,8 à 2,2 secondes. Si $RT_{60}$ tombe en dessous de 1,5 seconde, l'espace acoustique semble sans vie et sec ; si elle dépasse 2,5 secondes, des passages saccadés rapides se fondent dans un flou acoustique inintelligible."
     },
     {
       "type": "quote",
-      "text": "[fr] A concert hall does not create music; it creates the spatial void in which silence can slowly decay into resonance.",
-      "cite": "[fr] Mateo Silva, Expedition Fellow & Architecture Critic"
+      "text": "Une salle de concert ne crée pas de musique ; cela crée le vide spatial dans lequel le silence peut lentement se transformer en résonance.",
+      "cite": "Mateo Silva, chercheur en expédition et critique en architecture"
     },
     {
       "type": "h2",
-      "text": "[fr] 2. The Schroeder Frequency: Discrete Modes vs. Statistical Fields"
+      "text": "2. La fréquence de Schroeder : modes discrets et champs statistiques"
     },
     {
       "type": "p",
-      "text": "[fr] A critical physical boundary in room acoustics is the Schroeder Cutoff Frequency ($f_s$). Below $f_s$, sound behaves according to wave optics, forming discrete standing waves (room modes) where specific resonant bass frequencies cancel out or boom violently depending on listener position."
+      "text": "Une limite physique critique dans l'acoustique des pièces est la fréquence de coupure de Schroeder ($f_s$). En dessous de $f_s$, le son se comporte selon l'optique des ondes, formant des ondes stationnaires discrètes (modes pièce) où des fréquences graves de résonance spécifiques s'annulent ou explosent violemment en fonction de la position de l'auditeur."
     },
     {
       "type": "p",
-      "text": "[fr] Above the Schroeder frequency, mode density becomes so densely packed that sound can be modeled statistically as a diffuse geometrical sound field:"
+      "text": "Au-dessus de la fréquence de Schroeder, la densité de modes devient si dense que le son peut être modélisé statistiquement comme un champ sonore géométrique diffus :"
     },
     {
       "type": "code",
@@ -64,29 +64,29 @@
     },
     {
       "type": "p",
-      "text": "[fr] In large symphonic halls, the Schroeder frequency drops into the sub-audible range, ensuring that the entire audible orchestral spectrum operates in the diffuse statistical regime."
+      "text": "Dans les grandes salles symphoniques, la fréquence de Schroeder descend dans la plage infra-audible, garantissant que l'ensemble du spectre orchestral audible fonctionne dans le régime statistique diffus."
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Video Masterclass: Concert Hall Acoustics & Sound Physics"
+      "text": "3. Masterclass vidéo : Acoustique des salles de concert et physique du son"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "[fr] Acoustic Wave Physics, Resonance & Architectural Spaces",
-      "caption": "[fr] Architectural acoustics documentary examining sound reflections, vineyard vs shoebox halls, and Schroeder diffusors."
+      "title": "Physique des ondes acoustiques, résonance et espaces architecturaux",
+      "caption": "Documentaire sur l'acoustique architecturale examinant les réflexions sonores, les salles de vignes ou de boîtes à chaussures et les diffuseurs Schroeder."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. Number-Theoretic Diffusion: Quadratic Residue Diffusors (QRD)"
+      "text": "4. Diffusion théorique des nombres : diffuseurs de résidus quadratiques (QRD)"
     },
     {
       "type": "p",
-      "text": "[fr] Flat parallel surfaces create specular reflections (like a mirror), generating harsh flutter echoes. Simple curved surfaces disperse sound but can create localized acoustic hotspots. In the 1970s, physicist Manfred Schroeder revolutionized acoustic architecture by applying number theory—specifically quadratic residues from modular arithmetic—to surface diffusion."
+      "text": "Les surfaces planes et parallèles créent des réflexions spéculaires (comme un miroir), générant de durs échos de flottement. De simples surfaces incurvées dispersent le son mais peuvent créer des points chauds acoustiques localisés. Dans les années 1970, le physicien Manfred Schroeder a révolutionné l'architecture acoustique en appliquant la théorie des nombres, en particulier les résidus quadratiques de l'arithmétique modulaire, à la diffusion en surface."
     },
     {
       "type": "p",
-      "text": "[fr] A Quadratic Residue Diffusor (QRD) consists of a series of wells of uniform width but varying depths calculated using prime numbers:"
+      "text": "Un diffuseur de résidus quadratique (QRD) se compose d'une série de puits de largeur uniforme mais de profondeurs variables calculées à l'aide de nombres premiers :"
     },
     {
       "type": "code",
@@ -95,18 +95,18 @@
     },
     {
       "type": "p",
-      "text": "[fr] Sound waves entering the wells reflect off bottom boundaries with varying phase delays dictated by number theory. When re-emerging, destructive interference eliminates specular reflection, scattering sound energy uniformly across a hemispherical 180-degree field."
+      "text": "Les ondes sonores entrant dans les puits se reflètent sur les limites du fond avec des retards de phase variables dictés par la théorie des nombres. Lorsqu'elles réapparaissent, les interférences destructrices éliminent la réflexion spéculaire, dispersant l'énergie sonore uniformément sur un champ hémisphérique de 180 degrés."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Architectural Geometry: Shoebox vs. Vineyard Typology"
+      "text": "5. Géométrie architecturale : typologie de boîte à chaussures ou de vignoble"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Shoebox Typology (Musikverein, Boston Symphony Hall): High narrow rectangular halls that produce intense early lateral reflections from side walls, maximizing binaural cross-correlation (IACF) and envelopment.",
-        "[fr] Vineyard Typology (Berlin Philharmonie, Elbphilharmonie): Surrounds the orchestra with terraced seating pods, bringing listeners closer to the stage while utilizing sloping terrace parapets as early reflection surfaces.",
-        "[fr] Lateral Energy Fraction (LEF): Acoustic parameter measuring the proportion of sound arriving at listeners from side directions; high LEF creates the sensation of being surrounded by the acoustic source rather than viewing it through a distant window."
+        "Typologie des boîtes à chaussures (Musikverein, Boston Symphony Hall) : salles rectangulaires hautes et étroites qui produisent des réflexions latérales précoces intenses sur les parois latérales, maximisant la corrélation croisée binaurale (IACF) et l'enveloppement.",
+        "Typologie des vignobles (Philharmonie de Berlin, Elbphilharmonie) : entoure l'orchestre de sièges en terrasse, rapprochant les auditeurs de la scène tout en utilisant des parapets de terrasse en pente comme premières surfaces de réflexion.",
+        "Fraction d'énergie latérale (LEF) : paramètre acoustique mesurant la proportion de son arrivant aux auditeurs depuis des directions latérales ; un LEF élevé crée la sensation d'être entouré par la source acoustique plutôt que de la regarder à travers une fenêtre distante."
       ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "slug": "chemistry-of-espresso-extraction-and-particle-distribution",
-  "title": "[es] The Chemistry of Espresso Extraction",
-  "excerpt": "[es] A physical chemistry monograph on porous bed Darcy flow dynamics, bimodal grind particle size distribution, percolation channeling, and volatile compound solubility kinetics.",
+  "title": "La química de la extracción de espresso",
+  "excerpt": "Una monografía de química física sobre la dinámica del flujo de Darcy en lecho poroso, la distribución del tamaño de las partículas de molienda bimodal, la canalización de la percolación y la cinética de la solubilidad de los compuestos volátiles.",
   "date": "2026-11-15",
   "author": "Marcus Vance",
   "tags": [
@@ -13,23 +13,23 @@
     "coffee-science"
   ],
   "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[es] Rich hazelnut crema forming in ceramic espresso cup underneath stainless steel bottomless portafilter",
+  "imageAlt": "Rica crema de avellanas que se forma en una taza de espresso de cerámica debajo del portafiltro sin fondo de acero inoxidable",
   "body": [
     {
       "type": "p",
-      "text": "[es] Espresso is not merely a brewing method; it is a high-pressure solid-liquid extraction system governed by the thermodynamics of porous packed beds and chemical diffusion kinetics. In less than thirty seconds, heated pressurized water at 9 bars (0.9 MPa) penetrates a densely consolidated bed of roasted coffee fragments, solubilizing hundreds of volatile aldehydes, pyrazines, and organic acids while simultaneously emulsifying insoluble hydrophobic lipid droplets into a dense colloidal suspension known as crema."
+      "text": "El espresso no es simplemente un método de preparación; Se trata de un sistema de extracción sólido-líquido a alta presión regido por la termodinámica de lechos porosos empaquetados y la cinética de difusión química. En menos de treinta segundos, agua presurizada calentada a 9 bares (0,9 MPa) penetra en un lecho densamente consolidado de fragmentos de café tostado, solubilizando cientos de aldehídos volátiles, pirazinas y ácidos orgánicos mientras simultáneamente emulsiona gotas de lípidos hidrofóbicos insolubles en una suspensión coloidal densa conocida como crema."
     },
     {
       "type": "p",
-      "text": "[es] Achieving consistent balance between sweet chlorogenic acid lactones and astringent polyphenols requires rigorous control over particle size distribution, hydraulic permeability, and solvent temperature profiles. Slight variations in grind uniformity can precipitate catastrophic microscopic channeling, where localized preferential flow paths over-extract bitter tannins while leaving adjacent bed zones completely untouched."
+      "text": "Lograr un equilibrio constante entre las lactonas dulces del ácido clorogénico y los polifenoles astringentes requiere un control riguroso sobre la distribución del tamaño de las partículas, la permeabilidad hidráulica y los perfiles de temperatura del disolvente. Ligeras variaciones en la uniformidad de la molienda pueden precipitar canalizaciones microscópicas catastróficas, donde las rutas de flujo preferenciales localizadas extraen en exceso los taninos amargos mientras dejan las zonas del lecho adyacentes completamente intactas."
     },
     {
       "type": "h2",
-      "text": "[es] 1. Darcy's Law and Hydraulic Permeability in Packed Beds"
+      "text": "1. Ley de Darcy y permeabilidad hidráulica en lechos compactos"
     },
     {
       "type": "p",
-      "text": "[es] Fluid flow through the compacted coffee puck conforms to Darcy's Law for laminar percolation through a porous solid medium:"
+      "text": "El flujo de fluido a través del disco de café compactado se ajusta a la Ley de Darcy para la percolación laminar a través de un medio sólido poroso:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[es] As extraction proceeds, $k$ does not remain static. The physical erosion of soluble solids and the migration of sub-micron fines toward the lower filter screen create dynamic compaction. If the applied pump pressure $\\Delta P$ is excessively elevated (exceeding 9.5 bars), the coffee bed undergoes compressive plastic deformation, closing interstitial voids, choking permeability, and initiating micro-fractures through which water violently channels."
+      "text": "A medida que avanza la extracción, $k$ no permanece estático. La erosión física de los sólidos solubles y la migración de finos submicrónicos hacia el filtro inferior crean una compactación dinámica. Si la presión de la bomba aplicada $\\Delta P$ es excesivamente elevada (superando los 9,5 bares), el lecho de café sufre una deformación plástica por compresión, cerrando los huecos intersticiales, asfixiando la permeabilidad e iniciando microfracturas a través de las cuales se canaliza violentamente el agua."
     },
     {
       "type": "quote",
-      "text": "[es] Extraction is a race against thermodynamic equilibrium. The goal is to capture the rapid dissolution of pleasant aromatics and fruity organic acids before the sluggish diffusion of bitter lignins contaminates the cup.",
-      "cite": "[es] Marcus Vance, Master Roaster & Food Chemist"
+      "text": "La extracción es una carrera contra el equilibrio termodinámico. El objetivo es capturar la rápida disolución de los agradables aromáticos y los ácidos orgánicos frutales antes de que la lenta difusión de las ligninas amargas contamine la taza.",
+      "cite": "Marcus Vance, maestro tostador y químico de alimentos"
     },
     {
       "type": "h2",
-      "text": "[es] 2. Bimodal Grind Distribution: The Interplay of Coarse Boulders and Fines"
+      "text": "2. Distribución de molienda bimodal: la interacción de rocas gruesas y finas"
     },
     {
       "type": "p",
-      "text": "[es] Laser diffraction particle analysis reveals that burr grinding mechanisms produce an inherently bimodal volume distribution rather than a uniform monomodal spread."
+      "text": "El análisis de partículas por difracción láser revela que los mecanismos de molienda de rebabas producen una distribución de volumen inherentemente bimodal en lugar de una distribución monomodal uniforme."
     },
     {
       "type": "ul",
       "items": [
-        "[es] Primary Peak (250–500 μm): Coarse boulders maintain the structural hydraulic framework of the puck, preventing bed collapse and enabling stable water flow.",
-        "[es] Secondary Peak (< 50 μm): Microscopic fines are shattered cellular wall fragments lacking internal cell matrix. They dissolve almost instantaneously upon water contact, providing early TDS (Total Dissolved Solids) and essential lipids for crema stabilization.",
-        "[es] The Fines Migration Dilemma: Excessive fines migrate downward under hydrodynamic drag, clogging the bottom basket orifices and causing unpredictable flow resistance."
+        "Pico primario (250–500 μm): los cantos rodados gruesos mantienen la estructura hidráulica estructural del disco, evitando el colapso del lecho y permitiendo un flujo de agua estable.",
+        "Pico secundario (< 50 μm): finos microscópicos son fragmentos de pared celular rotos que carecen de matriz celular interna. Se disuelven casi instantáneamente al entrar en contacto con el agua, proporcionando TDS (sólidos disueltos totales) tempranos y lípidos esenciales para la estabilización de la crema.",
+        "El dilema de la migración de finos: Los finos excesivos migran hacia abajo bajo arrastre hidrodinámico, obstruyendo los orificios inferiores de la canasta y causando una resistencia al flujo impredecible."
       ]
     },
     {
       "type": "h2",
-      "text": "[es] 3. Video Masterclass: Fluid Dynamics & Extraction Parameter Control"
+      "text": "3. Clase magistral en vídeo: Dinámica de fluidos y control de parámetros de extracción"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/aTFsBqhpLes",
-      "title": "[es] Understanding Espresso Dose, Grind Particle Geometry, and Flow",
-      "caption": "[es] In-depth experimental breakdown of water flow resistance, extraction yield calculations, and puck preparation physics."
+      "title": "Comprensión de la dosis de espresso, la geometría de las partículas de molienda y el flujo",
+      "caption": "Desglose experimental en profundidad de la resistencia al flujo de agua, cálculos de rendimiento de extracción y física de preparación de discos."
     },
     {
       "type": "h2",
-      "text": "[es] 4. Solvent Thermodynamics and Chemical Dissolution Sequence"
+      "text": "4. Termodinámica de disolventes y secuencia de disolución química"
     },
     {
       "type": "p",
-      "text": "[es] The chemical constituents of roasted coffee possess distinctly staggered dissolution kinetics governed by polarity and molecular weight. During the initial 0 to 8 seconds of extraction, highly polar malic, citric, and acetic acids surge into solution alongside caffeine. These define perceived acidity, fruit character, and initial brightness."
+      "text": "Los componentes químicos del café tostado poseen una cinética de disolución claramente escalonada regida por la polaridad y el peso molecular. Durante los primeros 0 a 8 segundos de extracción, los ácidos málico, cítrico y acético altamente polares surgen en la solución junto con la cafeína. Estos definen la acidez percibida, el carácter frutal y el brillo inicial."
     },
     {
       "type": "p",
-      "text": "[es] Between seconds 8 and 20, medium-polarity melanoidins and sucrose caramels dissolve, establishing mouthfeel, body, and balanced sweetness. Beyond 25 seconds, the extraction of high-molecular-weight chlorogenic acid dimers and astringent quinic acids escalates rapidly. Halting extraction at an optimal brew ratio (typically 1:2 to 1:2.5 coffee-to-yield) precisely terminates extraction before these drying, harsh polyphenols enter the cup."
+      "text": "Entre los segundos 8 y 20, las melanoidinas de polaridad media y los caramelos de sacarosa se disuelven, estableciendo una sensación en boca, cuerpo y un dulzor equilibrado. Más allá de los 25 segundos, la extracción de dímeros de ácido clorogénico de alto peso molecular y ácidos quínicos astringentes aumenta rápidamente. Detener la extracción en una proporción de preparación óptima (normalmente 1:2 a 1:2,5 café-rendimiento) finaliza con precisión la extracción antes de que estos polifenoles ásperos y secos entren en la taza."
     },
     {
       "type": "h2",
-      "text": "[es] 5. Barista & Coffee Science Takeaways"
+      "text": "5. Conclusiones de baristas y ciencia del café"
     },
     {
       "type": "ul",
       "items": [
-        "[es] Pre-Infusion Priming: Apply low pressure (2-3 bars) for 4-6 seconds to hydrate the puck uniformly, mitigating dry spots and channeling before full pump pressure engages.",
-        "[es] Flow Profiling over Pressure Profiling: Modulate pump flow to decline pressure during the second half of the shot as puck resistance erodes, preserving sweetness.",
-        "[es] Refractometric Monitoring: Target an Extraction Yield between 19% and 22% paired with a Total Dissolved Solids (TDS) reading between 8.5% and 10.5% for optimal sensory balance."
+        "Preparación previa a la infusión: aplique baja presión (2-3 bares) durante 4-6 segundos para hidratar el disco de manera uniforme, mitigando los puntos secos y canalizando antes de que se active la presión total de la bomba.",
+        "Perfilado de flujo sobre perfilado de presión: Module el flujo de la bomba para disminuir la presión durante la segunda mitad del tiro a medida que la resistencia del disco se erosiona, preservando la dulzura.",
+        "Monitoreo refractométrico: apunte a un rendimiento de extracción entre 19 % y 22 % junto con una lectura de sólidos disueltos totales (TDS) entre 8,5 % y 10,5 % para un equilibrio sensorial óptimo."
       ]
     }
   ],

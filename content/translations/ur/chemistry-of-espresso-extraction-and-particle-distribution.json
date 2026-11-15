@@ -1,7 +1,7 @@
 {
   "slug": "chemistry-of-espresso-extraction-and-particle-distribution",
-  "title": "[ur] The Chemistry of Espresso Extraction",
-  "excerpt": "[ur] A physical chemistry monograph on porous bed Darcy flow dynamics, bimodal grind particle size distribution, percolation channeling, and volatile compound solubility kinetics.",
+  "title": "دی کیمسٹری آف ایسپریسو ایکسٹریکشن",
+  "excerpt": "غیر محفوظ بستر پر ایک فزیکل کیمسٹری مونوگراف ڈارسی فلو ڈائنامکس، بائی موڈل گرائنڈ پارٹیکل سائز ڈسٹری بیوشن، پرکولیشن چینلنگ، اور وولاٹائل کمپاؤنڈ سولیوبلٹی کینیٹکس۔",
   "date": "2026-11-15",
   "author": "Marcus Vance",
   "tags": [
@@ -13,23 +13,23 @@
     "coffee-science"
   ],
   "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ur] Rich hazelnut crema forming in ceramic espresso cup underneath stainless steel bottomless portafilter",
+  "imageAlt": "سٹینلیس سٹیل کے باٹم لیس پورٹافلٹر کے نیچے سیرامک ​​ایسپریسو کپ میں بننے والا امیر ہیزلنٹ کریما",
   "body": [
     {
       "type": "p",
-      "text": "[ur] Espresso is not merely a brewing method; it is a high-pressure solid-liquid extraction system governed by the thermodynamics of porous packed beds and chemical diffusion kinetics. In less than thirty seconds, heated pressurized water at 9 bars (0.9 MPa) penetrates a densely consolidated bed of roasted coffee fragments, solubilizing hundreds of volatile aldehydes, pyrazines, and organic acids while simultaneously emulsifying insoluble hydrophobic lipid droplets into a dense colloidal suspension known as crema."
+      "text": "ایسپریسو محض پینے کا طریقہ نہیں ہے۔ یہ ایک ہائی پریشر ٹھوس مائع نکالنے کا نظام ہے جو غیر محفوظ پیکڈ بیڈز اور کیمیکل ڈفیوژن کینیٹکس کے تھرموڈینامکس کے زیر انتظام ہے۔ تیس سیکنڈ سے بھی کم وقت میں، 9 سلاخوں (0.9 MPa) پر گرم دباؤ والا پانی بھنی ہوئی کافی کے ٹکڑوں کے گھنے مضبوط بستر میں داخل ہوتا ہے، سینکڑوں غیر مستحکم الڈیہائیڈز، پائرازینز، اور نامیاتی تیزابوں کو گھلنشیل کرتا ہے جبکہ بیک وقت ہائیڈرو ایسڈ میں ایملسی لیپلیٹس کو خارج کرتا ہے۔ کولائیڈل معطلی جسے کریما کہا جاتا ہے۔"
     },
     {
       "type": "p",
-      "text": "[ur] Achieving consistent balance between sweet chlorogenic acid lactones and astringent polyphenols requires rigorous control over particle size distribution, hydraulic permeability, and solvent temperature profiles. Slight variations in grind uniformity can precipitate catastrophic microscopic channeling, where localized preferential flow paths over-extract bitter tannins while leaving adjacent bed zones completely untouched."
+      "text": "میٹھے کلوروجینک ایسڈ لیکٹونز اور کسیلی پولی فینول کے درمیان مستقل توازن کو حاصل کرنے کے لیے ذرات کے سائز کی تقسیم، ہائیڈرولک پارگمیتا، اور سالوینٹ درجہ حرارت پروفائلز پر سخت کنٹرول کی ضرورت ہوتی ہے۔ پیسنے کی یکسانیت میں معمولی تغیرات تباہ کن مائکروسکوپک چینلنگ کو تیز کر سکتے ہیں، جہاں مقامی ترجیحی بہاؤ کے راستے کڑوے ٹیننز کو زیادہ نکالتے ہیں جبکہ ملحقہ بیڈ زون کو مکمل طور پر اچھوت چھوڑ دیتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 1. Darcy's Law and Hydraulic Permeability in Packed Beds"
+      "text": "1. ڈارسی کا قانون اور پیکڈ بیڈز میں ہائیڈرولک پارگمیتا"
     },
     {
       "type": "p",
-      "text": "[ur] Fluid flow through the compacted coffee puck conforms to Darcy's Law for laminar percolation through a porous solid medium:"
+      "text": "کمپیکٹ شدہ کافی پک کے ذریعے سیال کا بہاؤ ایک غیر محفوظ ٹھوس میڈیم کے ذریعے لیمینر ٹکرانے کے لیے ڈارسی کے قانون کے مطابق ہے:"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[ur] As extraction proceeds, $k$ does not remain static. The physical erosion of soluble solids and the migration of sub-micron fines toward the lower filter screen create dynamic compaction. If the applied pump pressure $\\Delta P$ is excessively elevated (exceeding 9.5 bars), the coffee bed undergoes compressive plastic deformation, closing interstitial voids, choking permeability, and initiating micro-fractures through which water violently channels."
+      "text": "جیسے جیسے نکالنا آگے بڑھتا ہے، $k$ جامد نہیں رہتا ہے۔ گھلنشیل ٹھوس کا جسمانی کٹاؤ اور ذیلی مائکرون فائنز کی نچلی فلٹر اسکرین کی طرف منتقلی متحرک کمپیکشن پیدا کرتی ہے۔ اگر لاگو کردہ پمپ پریشر $\\Delta P$ بہت زیادہ بلند ہو جاتا ہے (9.5 سلاخوں سے زیادہ)، کافی بیڈ کمپریسیو پلاسٹک کی خرابی سے گزرتا ہے، بیچوالا خلا کو بند کرتا ہے، پارگمیتا کا دم گھٹتا ہے، اور مائکرو فریکچر شروع کرتا ہے جس کے ذریعے پانی پرتشدد طریقے سے گزرتا ہے۔"
     },
     {
       "type": "quote",
-      "text": "[ur] Extraction is a race against thermodynamic equilibrium. The goal is to capture the rapid dissolution of pleasant aromatics and fruity organic acids before the sluggish diffusion of bitter lignins contaminates the cup.",
-      "cite": "[ur] Marcus Vance, Master Roaster & Food Chemist"
+      "text": "نکالنا تھرموڈینامک توازن کے خلاف ایک دوڑ ہے۔ اس کا مقصد خوشگوار خوشبو اور پھل والے نامیاتی تیزاب کی تیزی سے تحلیل کو پکڑنا ہے اس سے پہلے کہ کڑوے لگننز کا سست پھیلاؤ کپ کو آلودہ کرے۔",
+      "cite": "مارکس وانس، ماسٹر روسٹر اور فوڈ کیمسٹ"
     },
     {
       "type": "h2",
-      "text": "[ur] 2. Bimodal Grind Distribution: The Interplay of Coarse Boulders and Fines"
+      "text": "2. Bimodal Grind Distribution: The Interplay of Coarse Boulders and Fines"
     },
     {
       "type": "p",
-      "text": "[ur] Laser diffraction particle analysis reveals that burr grinding mechanisms produce an inherently bimodal volume distribution rather than a uniform monomodal spread."
+      "text": "لیزر ڈفریکشن پارٹیکل تجزیہ سے پتہ چلتا ہے کہ burr grinding mechanisms ایک موروثی طور پر bimodal حجم کی تقسیم پیدا کرتا ہے نہ کہ ایک موڈل یکساں پھیلاؤ۔"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Primary Peak (250–500 μm): Coarse boulders maintain the structural hydraulic framework of the puck, preventing bed collapse and enabling stable water flow.",
-        "[ur] Secondary Peak (< 50 μm): Microscopic fines are shattered cellular wall fragments lacking internal cell matrix. They dissolve almost instantaneously upon water contact, providing early TDS (Total Dissolved Solids) and essential lipids for crema stabilization.",
-        "[ur] The Fines Migration Dilemma: Excessive fines migrate downward under hydrodynamic drag, clogging the bottom basket orifices and causing unpredictable flow resistance."
+        "بنیادی چوٹی (250–500 μm): موٹے پتھر پک کے ساختی ہائیڈرولک فریم ورک کو برقرار رکھتے ہیں، بستر کو گرنے سے روکتے ہیں اور پانی کے مستحکم بہاؤ کو فعال کرتے ہیں۔",
+        "ثانوی چوٹی (<50 μm): مائکروسکوپک فائنز بکھرے ہوئے سیلولر دیوار کے ٹکڑے ہوتے ہیں جن میں اندرونی سیل میٹرکس کی کمی ہوتی ہے۔ یہ پانی کے رابطے پر تقریباً فوری طور پر تحلیل ہو جاتے ہیں، ابتدائی TDS (کل تحلیل شدہ سالڈ) اور کریما کے استحکام کے لیے ضروری لپڈ فراہم کرتے ہیں۔",
+        "جرمانے کی منتقلی کا مخمصہ: ضرورت سے زیادہ جرمانے ہائیڈرو ڈائنامک ڈریگ کے تحت نیچے کی طرف منتقل ہوتے ہیں، نیچے کی ٹوکری کے سوراخوں کو بند کر دیتے ہیں اور غیر متوقع بہاؤ مزاحمت کا باعث بنتے ہیں۔"
       ]
     },
     {
       "type": "h2",
-      "text": "[ur] 3. Video Masterclass: Fluid Dynamics & Extraction Parameter Control"
+      "text": "3. ویڈیو ماسٹر کلاس: فلوئڈ ڈائنامکس اور ایکسٹریکشن پیرامیٹر کنٹرول"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/aTFsBqhpLes",
-      "title": "[ur] Understanding Espresso Dose, Grind Particle Geometry, and Flow",
-      "caption": "[ur] In-depth experimental breakdown of water flow resistance, extraction yield calculations, and puck preparation physics."
+      "title": "ایسپریسو ڈوز کو سمجھنا، گرائنڈ پارٹیکل جیومیٹری، اور فلو",
+      "caption": "پانی کے بہاؤ کی مزاحمت، نکالنے کی پیداوار کے حسابات، اور پک تیاری کی طبیعیات کی گہرائی سے تجرباتی خرابی۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 4. Solvent Thermodynamics and Chemical Dissolution Sequence"
+      "text": "4. سالوینٹ تھرموڈینامکس اور کیمیائی تحلیل کی ترتیب"
     },
     {
       "type": "p",
-      "text": "[ur] The chemical constituents of roasted coffee possess distinctly staggered dissolution kinetics governed by polarity and molecular weight. During the initial 0 to 8 seconds of extraction, highly polar malic, citric, and acetic acids surge into solution alongside caffeine. These define perceived acidity, fruit character, and initial brightness."
+      "text": "بھنی ہوئی کافی کے کیمیائی اجزا واضح طور پر متزلزل تحلیل حرکیات رکھتے ہیں جو قطبیت اور مالیکیولر وزن کے زیر انتظام ہیں۔ نکالنے کے ابتدائی 0 سے 8 سیکنڈ کے دوران، انتہائی پولر مالیک، سائٹرک، اور ایسٹک ایسڈز کیفین کے ساتھ محلول میں بڑھ جاتے ہیں۔ یہ سمجھی تیزابیت، پھلوں کے کردار اور ابتدائی چمک کی وضاحت کرتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "[ur] Between seconds 8 and 20, medium-polarity melanoidins and sucrose caramels dissolve, establishing mouthfeel, body, and balanced sweetness. Beyond 25 seconds, the extraction of high-molecular-weight chlorogenic acid dimers and astringent quinic acids escalates rapidly. Halting extraction at an optimal brew ratio (typically 1:2 to 1:2.5 coffee-to-yield) precisely terminates extraction before these drying, harsh polyphenols enter the cup."
+      "text": "8 اور 20 سیکنڈ کے درمیان، درمیانی قطبی میلانائیڈنز اور سوکروز کیریملز گھل جاتے ہیں، جس سے منہ کا احساس، جسم اور متوازن مٹھاس قائم ہوتی ہے۔ 25 سیکنڈ کے بعد، اعلی مالیکیولر-وزن کلوروجینک ایسڈ ڈائمرز اور اسٹرینجنٹ کوئینک ایسڈز کا اخراج تیزی سے بڑھتا ہے۔ ایک بہترین مرکب کے تناسب پر نکالنے کو روکنا (عام طور پر 1:2 سے 1:2.5 کافی سے پیداوار) ان خشک، سخت پولی فینول کپ میں داخل ہونے سے پہلے ہی نکالنے کو بالکل ختم کر دیتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "[ur] 5. Barista & Coffee Science Takeaways"
+      "text": "5. Barista & Coffee Science Takeaways"
     },
     {
       "type": "ul",
       "items": [
-        "[ur] Pre-Infusion Priming: Apply low pressure (2-3 bars) for 4-6 seconds to hydrate the puck uniformly, mitigating dry spots and channeling before full pump pressure engages.",
-        "[ur] Flow Profiling over Pressure Profiling: Modulate pump flow to decline pressure during the second half of the shot as puck resistance erodes, preserving sweetness.",
-        "[ur] Refractometric Monitoring: Target an Extraction Yield between 19% and 22% paired with a Total Dissolved Solids (TDS) reading between 8.5% and 10.5% for optimal sensory balance."
+        "پری انفیوژن پرائمنگ: پک کو یکساں طور پر ہائیڈریٹ کرنے کے لیے 4-6 سیکنڈ کے لیے کم پریشر (2-3 بارز) لگائیں، سوکھے دھبوں کو کم کریں اور پمپ کے مکمل دباؤ میں شامل ہونے سے پہلے چینلنگ کریں۔",
+        "پریشر پروفائلنگ پر فلو پروفائلنگ: شاٹ کے دوسرے نصف حصے کے دوران دباؤ کو کم کرنے کے لیے پمپ کے بہاؤ کو ماڈیول کریں کیونکہ پک مزاحمت ختم ہو جاتی ہے، مٹھاس کو محفوظ رکھتا ہے۔",
+        "ریفریکٹومیٹرک مانیٹرنگ: بہترین حسی توازن کے لیے 8.5% اور 10.5% کے درمیان ٹوٹل تحلیل شدہ سالڈز (TDS) کے ساتھ جوڑ بنا کر 19% اور 22% کے درمیان نکالنے والی پیداوار کو ہدف بنائیں۔"
       ]
     }
   ],

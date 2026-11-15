@@ -254,6 +254,11 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'superconducting-qubits-josephson-junctions-quantum-coherence': { categoryId: 'science', subcategoryId: 'physics-and-materials' },
   'cellular-senescence-autophagy-signaling-and-mtor-pathways': { categoryId: 'health', subcategoryId: 'preventive-medicine' },
   'central-bank-digital-currencies-wholesale-settlement-programmable-money': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
+  'global-semiconductor-supply-chains-euv-lithography-geopolitics': { categoryId: 'engineering-and-technology', subcategoryId: 'system-architecture' },
+  'small-modular-reactors-molten-salt-high-temperature-gas-nuclear': { categoryId: 'engineering-and-technology', subcategoryId: 'mechanical-systems' },
+  'neuromorphic-computing-spiking-neural-networks-event-driven-silicon': { categoryId: 'technology', subcategoryId: 'artificial-intelligence' },
+  'de-dollarization-sovereign-reserve-diversification-and-bilateral-trade': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
+  'crispr-cas12-base-editing-and-in-vivo-epigenetic-therapeutics': { categoryId: 'health', subcategoryId: 'preventive-medicine' },
 };
 
 export function getCategoryById(id: string): Category | undefined {

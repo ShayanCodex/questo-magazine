@@ -1,7 +1,7 @@
 {
   "slug": "high-voltage-direct-current-transmission-and-intercontinental-supergrids",
-  "title": "[ar] HVDC Transmission & Supergrids",
-  "excerpt": "[ar] An electrical systems monograph on IGBT-based Modular Multilevel Converters, capacitive cable dielectric losses, skin effect elimination, and asynchronous grid coupling.",
+  "title": "نقل HVDC والشبكات الفائقة",
+  "excerpt": "دراسة للأنظمة الكهربائية حول المحولات المعيارية متعددة المستويات المستندة إلى IGBT، وفقدان عازل الكابلات السعوية، وإزالة تأثير الجلد، والاقتران غير المتزامن للشبكة.",
   "date": "2026-11-15",
   "author": "Tariq Mahmood",
   "tags": [
@@ -13,27 +13,27 @@
     "power-grids"
   ],
   "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[ar] High-voltage electric transmission pylons against sky representing continental power distribution",
+  "imageAlt": "أبراج نقل الكهرباء عالية الجهد ضد السماء التي تمثل توزيع الطاقة القارية",
   "body": [
     {
       "type": "p",
-      "text": "[ar] The foundational triumph of the War of Currents in the late 19th century was Thomas Edison's defeat by Nikola Tesla and George Westinghouse: alternating current (AC) triumphed because transformers allowed voltage to be stepped up for transmission and stepped down for municipal consumption. For over a century, three-phase synchronous AC grids formed the backbone of global industrial electrification. In the 21st century, however, the massive geographical decoupling of renewable energy generation (offshore wind farms, remote desert solar arrays) from urban load centers has exposed the fundamental physical limitations of AC transmission."
+      "text": "كان الانتصار الأساسي لحرب التيارات في أواخر القرن التاسع عشر هو هزيمة توماس إديسون أمام نيكولا تيسلا وجورج وستنجهاوس: انتصر التيار المتردد (AC) لأن المحولات سمحت بزيادة الجهد من أجل النقل وتنحيه للاستهلاك البلدي. لأكثر من قرن من الزمان، شكلت شبكات التيار المتردد المتزامنة ثلاثية الطور العمود الفقري للكهربة الصناعية العالمية. ومع ذلك، في القرن الحادي والعشرين، كشف الانفصال الجغرافي الهائل لتوليد الطاقة المتجددة (مزارع الرياح البحرية، ومصفوفات الطاقة الشمسية الصحراوية النائية) عن مراكز الأحمال الحضرية عن القيود المادية الأساسية لنقل التيار المتردد."
     },
     {
       "type": "p",
-      "text": "[ar] High-Voltage Direct Current (HVDC) transmission has emerged as the definitive electrical engineering paradigm for bulk power transfer over distances exceeding 600 kilometers overhead or 50 kilometers submarine. By eliminating reactive power generation and capacitive charging currents, HVDC provides the missing structural link for intercontinental supergrids."
+      "text": "برز نقل التيار المباشر عالي الجهد (HVDC) باعتباره نموذج الهندسة الكهربائية النهائي لنقل الطاقة بالجملة عبر مسافات تتجاوز 600 كيلومترًا فوق الغواصة أو 50 كيلومترًا تحت الماء. من خلال القضاء على توليد الطاقة التفاعلية وتيارات الشحن السعوية، يوفر HVDC الرابط الهيكلي المفقود للشبكات الفائقة العابرة للقارات."
     },
     {
       "type": "h2",
-      "text": "[ar] 1. The Physical Limitations of Alternating Current at Scale"
+      "text": "1. القيود المادية للتيار المتردد على نطاق واسع"
     },
     {
       "type": "p",
-      "text": "[ar] In high-voltage AC cables, continuous sinusoidal current alternations (50 or 60 Hz) generate two severe physical loss mechanisms: the skin effect and capacitive dielectric displacement."
+      "text": "في كابلات التيار المتردد ذات الجهد العالي، تولد تناوبات التيار الجيبية المستمرة (50 أو 60 هرتز) آليتين شديدتين للخسارة الفيزيائية: تأثير الجلد والإزاحة العازلة السعوية."
     },
     {
       "type": "p",
-      "text": "[ar] The skin effect forces AC electrons toward the outer perimeter of a conductor, reducing the effective cross-sectional area and multiplying electrical resistance. In subsea or underground cables, the insulating dielectric surrounding the conductor forms a massive cylindrical capacitor with the surrounding seawater or soil:"
+      "text": "يفرض تأثير الجلد إلكترونات التيار المتردد نحو المحيط الخارجي للموصل، مما يقلل من مساحة المقطع العرضي الفعال ويضاعف المقاومة الكهربائية. في الكابلات تحت سطح البحر أو تحت الأرض، يشكل العازل الكهربائي المحيط بالموصل مكثفًا أسطوانيًا ضخمًا مع مياه البحر أو التربة المحيطة:"
     },
     {
       "type": "code",
@@ -42,65 +42,65 @@
     },
     {
       "type": "p",
-      "text": "[ar] Direct Current operates at zero frequency ($f = 0$). Consequently, capacitive charging currents vanish, the entire conductor cross-section carries uniform current density, and dielectric losses drop to near zero."
+      "text": "يعمل التيار المباشر بتردد صفر ($f = 0$). ونتيجة لذلك، تختفي تيارات الشحن السعوية، ويحمل المقطع العرضي للموصل بأكمله كثافة تيار موحدة، وتنخفض خسائر العزل الكهربائي إلى ما يقرب من الصفر."
     },
     {
       "type": "quote",
-      "text": "[ar] HVDC frees power transmission from the tyranny of grid synchronization: two continental power grids operating at completely different frequencies can trade gigawatts across a single DC cable.",
-      "cite": "[ar] Tariq Mahmood, Distributed Systems Fellow"
+      "text": "يحرر HVDC نقل الطاقة من طغيان مزامنة الشبكة: يمكن لشبكتي طاقة قاريتين تعملان بترددات مختلفة تمامًا تبادل الجيغاوات عبر كابل تيار مباشر واحد.",
+      "cite": "طارق محمود، زميل الأنظمة الموزعة"
     },
     {
       "type": "h2",
-      "text": "[ar] 2. Modular Multilevel Converters (MMC) and IGBT Power Electronics"
+      "text": "2. المحولات المعيارية متعددة المستويات (MMC) وإلكترونيات الطاقة IGBT"
     },
     {
       "type": "p",
-      "text": "[ar] Historical HVDC lines deployed Line-Commutated Converters (LCC) based on heavy mercury-arc or thyristor valves, which suffered from reactive power consumption and vulnerability to AC commutation failures. Contemporary systems utilize Voltage Source Converters (VSC) built upon Modular Multilevel Converter (MMC) topologies."
+      "text": "نشرت خطوط HVDC التاريخية محولات مخففة الخط (LCC) تعتمد على قوس زئبقي ثقيل أو صمامات الثايرستور، والتي عانت من استهلاك الطاقة التفاعلية والتعرض لفشل تبديل التيار المتردد. تستخدم الأنظمة المعاصرة محولات مصدر الجهد (VSC) المبنية على طبولوجيا المحول المعياري متعدد المستويات (MMC)."
     },
     {
       "type": "p",
-      "text": "[ar] An MMC converter synthesizes near-perfect sinusoidal AC waveforms by cascading hundreds of small submodules—each containing an insulated-gate bipolar transistor (IGBT) and a storage capacitor. By switching individual submodules in microsecond increments, the converter constructs smooth stepped voltage staircases, eliminating the need for massive harmonic AC filter banks."
+      "text": "يقوم محول MMC بتوليف أشكال موجية متناوبة جيبية شبه مثالية عن طريق سلسلة من مئات الوحدات الفرعية الصغيرة - تحتوي كل منها على ترانزستور ثنائي القطب ذو بوابة معزولة (IGBT) ومكثف تخزين. من خلال تبديل الوحدات الفرعية الفردية بزيادات ميكروثانية، يقوم المحول ببناء سلالم جهد متدرجة سلسة، مما يلغي الحاجة إلى بنوك مرشحات التيار المتردد التوافقية الضخمة."
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Black-Start Capability: VSC-HVDC can energize a completely collapsed local AC grid without requiring external generator support.",
-        "[ar] Independent P-Q Control: Active power ($P$) and reactive power ($Q$) can be modulated instantaneously and independently in four quadrants.",
-        "[ar] Asynchronous Grid Interconnection: Connects non-synchronized national grids (such as the UK and continental Europe, or ERCOT and the Eastern Interconnection) without cascading blackout risks."
+        "إمكانية البدء الأسود: يمكن لـ VSC-HVDC تنشيط شبكة تيار متردد محلية منهارة بالكامل دون الحاجة إلى دعم مولد خارجي.",
+        "التحكم المستقل P-Q: يمكن تعديل الطاقة النشطة ($P$) والطاقة التفاعلية ($Q$) بشكل فوري ومستقل في أربعة أرباع.",
+        "التوصيل البيني للشبكة غير المتزامنة: يربط الشبكات الوطنية غير المتزامنة (مثل المملكة المتحدة وأوروبا القارية، أو ERCOT والربط البيني الشرقي) دون مخاطر انقطاع التيار الكهربائي المتتالية."
       ]
     },
     {
       "type": "h2",
-      "text": "[ar] 3. Video Masterclass: High-Voltage DC Transmission Technology"
+      "text": "3. دروس الفيديو المتقدمة: تقنية نقل التيار المستمر عالي الجهد"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "[ar] High-Voltage Power Grids & Long-Distance Electrical Transmission",
-      "caption": "[ar] Comprehensive visual technical lecture on HVDC converter stations, submarine cable engineering, and grid stabilization."
+      "title": "شبكات الطاقة عالية الجهد ونقل الكهرباء لمسافات طويلة",
+      "caption": "محاضرة فنية مرئية شاملة عن محطات تحويل HVDC، وهندسة الكابلات البحرية، وتثبيت الشبكة."
     },
     {
       "type": "h2",
-      "text": "[ar] 4. Intercontinental Supergrids & Ultra-High Voltage (UHVDC)"
+      "text": "4. الشبكات الفائقة العابرة للقارات والجهد العالي للغاية (UHVDC)"
     },
     {
       "type": "p",
-      "text": "[ar] In nations with vast geographic spans such as China, Brazil, and India, Ultra-High Voltage Direct Current (UHVDC) systems operating at ±800 kV and ±1100 kV transmit up to 12 gigawatts of hydro and solar power over distances exceeding 3,000 kilometers with line losses below 1.5% per 1,000 km."
+      "text": "في الدول ذات المساحات الجغرافية الشاسعة مثل الصين والبرازيل والهند، تنقل أنظمة التيار المباشر عالي الجهد (UHVDC) التي تعمل عند ± 800 كيلو فولت و± 1100 كيلو فولت ما يصل إلى 12 جيجاوات من الطاقة المائية والشمسية عبر مسافات تتجاوز 3000 كيلومتر مع فقد خطوط أقل من 1.5% لكل 1000 كيلومتر."
     },
     {
       "type": "p",
-      "text": "[ar] The emerging vision of the Global Intercontinental Supergrid links solar power generated across daylight time zones to meet night-time peak demands continents away. Undersea HVDC links such as the 720-km North Sea Link (Norway to UK) and proposed multi-thousand-kilometer trans-Mediterranean corridors establish a continuous trans-continental energy balancing mechanism."
+      "text": "تعمل الرؤية الناشئة للشبكة العالمية الفائقة القارات على ربط الطاقة الشمسية المولدة عبر المناطق الزمنية النهارية لتلبية احتياجات الذروة الليلية في القارات البعيدة. إن روابط HVDC تحت سطح البحر، مثل رابط بحر الشمال الذي يبلغ طوله 720 كيلومترًا (من النرويج إلى المملكة المتحدة)، والممرات المقترحة عبر البحر الأبيض المتوسط ​​التي يبلغ طولها عدة آلاف كيلومتر، تنشئ آلية مستمرة لموازنة الطاقة عبر القارات."
     },
     {
       "type": "h2",
-      "text": "[ar] 5. Electrical Engineering Takeaways"
+      "text": "5. الوجبات السريعة في الهندسة الكهربائية"
     },
     {
       "type": "ul",
       "items": [
-        "[ar] Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km; for submarine cables, HVDC is mandatory beyond 50 km.",
-        "[ar] DC Circuit Breaker Innovation: The historical obstacle of interrupting DC current without natural zero-crossings is solved by hybrid solid-state DC breakers operating in sub-millisecond windows.",
-        "[ar] Renewable Integration: Multi-terminal DC (MTDC) offshore grids aggregate dozens of dispersed offshore wind turbines into unified high-capacity mainland export cables."
+        "اقتصاديات مسافة التعادل: يصبح نظام HVDC العلوي متفوقًا اقتصاديًا على HVAC عند حوالي 600-800 كم؛ بالنسبة للكابلات البحرية، يكون HVDC إلزاميًا لمسافة تزيد عن 50 كم.",
+        "ابتكار قواطع دوائر التيار المستمر: تم حل العقبة التاريخية المتمثلة في مقاطعة تيار التيار المستمر دون حدوث تقاطعات صفرية طبيعية عن طريق قواطع التيار المستمر ذات الحالة الصلبة الهجينة التي تعمل في نوافذ أقل من مللي ثانية.",
+        "التكامل المتجدد: تقوم الشبكات البحرية متعددة المحطات DC (MTDC) بتجميع العشرات من توربينات الرياح البحرية المتفرقة في كابلات تصدير موحدة عالية السعة إلى البر الرئيسي."
       ]
     }
   ],

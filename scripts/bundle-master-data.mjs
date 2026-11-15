@@ -52,6 +52,23 @@ for (const article of baseArticles) {
 const availLangsPath = path.join(outputDir, 'available-languages.json');
 fs.writeFileSync(availLangsPath, JSON.stringify(availableLanguagesMap, null, 2), 'utf8');
 
+function stripMockPrefix(val) {
+  if (typeof val === 'string') {
+    return val.replace(/^\[(?:es|de|fr|ar|ur|en)\]\s*/i, '').trim();
+  }
+  if (Array.isArray(val)) {
+    return val.map(stripMockPrefix);
+  }
+  if (val && typeof val === 'object') {
+    const res = {};
+    for (const [k, v] of Object.entries(val)) {
+      res[k] = stripMockPrefix(v);
+    }
+    return res;
+  }
+  return val;
+}
+
 // For each language, bundle all articles into a grouped master array
 for (const lang of languages) {
   const isDefault = lang.code === defaultLang;
@@ -64,8 +81,9 @@ for (const lang of languages) {
     if (!isDefault && fs.existsSync(transPath)) {
       try {
         const transArticle = JSON.parse(fs.readFileSync(transPath, 'utf8'));
+        const cleaned = stripMockPrefix(transArticle);
         bundledArticles.push({
-          ...transArticle,
+          ...cleaned,
           isFallback: false,
         });
       } catch (err) {

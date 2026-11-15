@@ -1,7 +1,7 @@
 {
   "slug": "pure-functional-simplicity",
-  "title": "[fr] Pure Functional Simplicity",
-  "excerpt": "[fr] A deep engineering dive into functional programming principles, pure functions, deterministic state models, and why immutable software pipelines eliminate whole categories of production failures.",
+  "title": "Simplicité fonctionnelle pure",
+  "excerpt": "Une plongée d'ingénierie approfondie dans les principes de programmation fonctionnelle, les fonctions pures, les modèles d'état déterministes et pourquoi les pipelines logiciels immuables éliminent des catégories entières d'échecs de production.",
   "date": "2026-11-02",
   "updated": "2026-11-14",
   "author": "Elena Vance",
@@ -12,27 +12,27 @@
     "clean-code"
   ],
   "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Clean functional source code highlighted on a developer workstation in low ambient light",
+  "imageAlt": "Code source fonctionnel propre mis en évidence sur un poste de travail de développeur dans une faible lumière ambiante",
   "body": [
     {
       "type": "p",
-      "text": "[fr] The greatest source of fragility in modern software engineering is not algorithmic complexity, but uncontrolled state mutation. When variables can be modified from arbitrary threads, asynchronous callbacks, and nested object hierarchies, software ceases to be a predictable mathematical system and degenerates into an untestable web of temporal side effects."
+      "text": "La plus grande source de fragilité dans l'ingénierie logicielle moderne n'est pas la complexité algorithmique, mais la mutation d'état incontrôlée. Lorsque les variables peuvent être modifiées à partir de threads arbitraires, de rappels asynchrones et de hiérarchies d'objets imbriquées, le logiciel cesse d'être un système mathématique prévisible et dégénère en un réseau intestable d'effets secondaires temporels."
     },
     {
       "type": "p",
-      "text": "[fr] Functional programming is not an esoteric academic indulgence; it is the ultimate practical discipline for building resilient, self-healing digital systems. By restricting computation to pure mathematical functions and treating all data structures as strictly immutable, developers eliminate entire classes of concurrency race conditions, memory leaks, and mysterious production regressions."
+      "text": "La programmation fonctionnelle n'est pas une indulgence académique ésotérique ; c’est la discipline pratique ultime pour construire des systèmes numériques résilients et auto-réparateurs. En limitant le calcul à des fonctions mathématiques pures et en traitant toutes les structures de données comme strictement immuables, les développeurs éliminent des classes entières de conditions de concurrence concurrente, de fuites de mémoire et de mystérieuses régressions de production."
     },
     {
       "type": "h2",
-      "text": "[fr] The Mathematical Foundation of Pure Functions"
+      "text": "Le fondement mathématique des fonctions pures"
     },
     {
       "type": "p",
-      "text": "[fr] A function is considered mathematically 'pure' if and only if it satisfies two rigorous conditions: deterministic referential transparency and complete freedom from observable side effects. Given the exact same inputs (arguments), a pure function must return the exact same output every single time, without exception."
+      "text": "Une fonction est considérée comme mathématiquement « pure » si et seulement si elle satisfait à deux conditions rigoureuses : la transparence référentielle déterministe et l'absence totale d'effets secondaires observables. Étant donné exactement les mêmes entrées (arguments), une fonction pure doit renvoyer exactement la même sortie à chaque fois, sans exception."
     },
     {
       "type": "p",
-      "text": "[fr] A pure function does not read or write to global memory, does not modify input arguments by reference, does not trigger HTTP network calls, and does not alter DOM nodes. It takes data in, performs an immutable transformation, and emits new data out."
+      "text": "Une fonction pure ne lit ni n'écrit dans la mémoire globale, ne modifie pas les arguments d'entrée par référence, ne déclenche pas d'appels réseau HTTP et ne modifie pas les nœuds DOM. Il récupère des données, effectue une transformation immuable et émet de nouvelles données."
     },
     {
       "type": "code",
@@ -41,41 +41,41 @@
     },
     {
       "type": "quote",
-      "text": "[fr] Simplicity does not precede complexity, but follows it. True architectural mastery is achieved not when there is nothing left to add, but when there is nothing left that can mutate unpredictably.",
-      "cite": "[fr] Elena Vance, The Immutable Mind"
+      "text": "La simplicité ne précède pas la complexité, mais la suit. La véritable maîtrise architecturale s’obtient non pas lorsqu’il n’y a plus rien à ajouter, mais lorsqu’il ne reste plus rien qui puisse muter de manière imprévisible.",
+      "cite": "Elena Vance, The Immutable Mind"
     },
     {
       "type": "h2",
-      "text": "[fr] The Power of Referential Transparency in Distributed Systems"
+      "text": "Le pouvoir de la transparence référentielle dans les systèmes distribués"
     },
     {
       "type": "p",
-      "text": "[fr] When code is referentially transparent, any function call can be safely replaced by its computed return value without altering program behavior. This property unlocks extraordinary architectural optimizations: deterministic memoization, automatic parallel execution across multi-core processors, and zero-risk caching at the edge CDN tier."
+      "text": "Lorsque le code est référentiellement transparent, tout appel de fonction peut être remplacé en toute sécurité par sa valeur de retour calculée sans altérer le comportement du programme. Cette propriété débloque des optimisations architecturales extraordinaires : mémorisation déterministe, exécution parallèle automatique sur des processeurs multicœurs et mise en cache sans risque au niveau CDN périphérique."
     },
     {
       "type": "p",
-      "text": "[fr] In the context of modern static publishing, referential transparency means that rendering an article given its JSON payload produces an identical HTML string whether compiled on a developer's laptop, on a continuous integration runner, or inside an edge worker. The build becomes a deterministic mathematical pipeline."
+      "text": "Dans le contexte de la publication statique moderne, la transparence référentielle signifie que le rendu d'un article compte tenu de sa charge utile JSON produit une chaîne HTML identique, qu'elle soit compilée sur l'ordinateur portable d'un développeur, sur un programme d'intégration continue ou dans un Edge Worker. La construction devient un pipeline mathématique déterministe."
     },
     {
       "type": "h3",
-      "text": "[fr] Architectural Benefits of Immutability"
+      "text": "Avantages architecturaux de l'immuabilité"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Time-travel debugging: Because historical states are preserved rather than overwritten, application state transitions can be serialized, replayed, and inspected with zero ambiguity.",
-        "[fr] Fearless refactoring: Pure functions can be moved, renamed, and recombined without fear of breaking distant, hidden global dependencies.",
-        "[fr] Trivial unit testability: Zero need for complex mock libraries, database fixtures, or state reset teardown hooks. You pass input data and assert the output value.",
-        "[fr] Effortless concurrency: Since immutable data structures cannot be altered by competing execution threads, locks, mutexes, and deadlocks are entirely avoided."
+        "Débogage du voyage dans le temps : étant donné que les états historiques sont préservés plutôt que écrasés, les transitions d'état des applications peuvent être sérialisées, rejouées et inspectées sans aucune ambiguïté.",
+        "Refactoring sans peur : les fonctions pures peuvent être déplacées, renommées et recombinées sans crainte de rompre des dépendances globales lointaines et cachées.",
+        "Testabilité unitaire triviale : aucun besoin de bibliothèques fictives complexes, d'accessoires de base de données ou de hooks de démontage de réinitialisation d'état. Vous transmettez les données d’entrée et affirmez la valeur de sortie.",
+        "Concurrence sans effort : étant donné que les structures de données immuables ne peuvent pas être modifiées par des threads d'exécution concurrents, les verrous, les mutex et les blocages sont entièrement évités."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] Functional Architecture in the Real World"
+      "text": "Architecture fonctionnelle dans le monde réel"
     },
     {
       "type": "p",
-      "text": "[fr] Adopting functional simplicity does not require abandoning pragmatic delivery. Systems like Rust, TypeScript, and modern React have increasingly incorporated functional idioms: pattern matching, algebraic data types, immutable state updates, and declarative data pipelines. By organizing code around immutable data pipelines rather than sprawling object hierarchies, engineers build systems that are robust, understandable, and deeply enduring."
+      "text": "Adopter la simplicité fonctionnelle ne nécessite pas d’abandonner une prestation pragmatique. Des systèmes comme Rust, TypeScript et React moderne intègrent de plus en plus d'idiomes fonctionnels : correspondance de modèles, types de données algébriques, mises à jour d'état immuables et pipelines de données déclaratifs. En organisant le code autour de pipelines de données immuables plutôt que de hiérarchies d'objets tentaculaires, les ingénieurs créent des systèmes robustes, compréhensibles et profondément durables."
     }
   ],
   "sourceHash": "7eacf72285d3c1ec709ff945b0464b9270600591"

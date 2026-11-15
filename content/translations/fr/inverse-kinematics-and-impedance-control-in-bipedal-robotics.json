@@ -1,7 +1,7 @@
 {
   "slug": "inverse-kinematics-and-impedance-control-in-bipedal-robotics",
-  "title": "[fr] Impedance Control in Bipedal Robotics",
-  "excerpt": "[fr] A robotics engineering treatise on joint torque space mapping, zero-moment point dynamics, compliance modulation, and whole-body locomotion stabilization.",
+  "title": "Contrôle d'impédance dans la robotique bipède",
+  "excerpt": "Un traité d'ingénierie robotique sur la cartographie de l'espace de couple articulaire, la dynamique du point zéro, la modulation de conformité et la stabilisation de la locomotion du corps entier.",
   "date": "2026-11-15",
   "author": "Elena Rostova",
   "tags": [
@@ -13,23 +13,23 @@
     "control-theory"
   ],
   "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "[fr] Advanced bipedal humanoid robot standing in high-precision laboratory testing environment",
+  "imageAlt": "Robot humanoïde bipède avancé se trouvant dans un environnement de test de laboratoire de haute précision",
   "body": [
     {
       "type": "p",
-      "text": "[fr] The mechanical synthesis of human locomotion represents one of the most formidable frontiers in control theory and physical computing. Unlike wheeled autonomous rovers that benefit from static multi-point equilibrium, bipedal humanoid robots operate in continuous state space instability. To navigate unstructured terrestrial terrain—gravel, staircases, and slick surfaces—a humanoid platform cannot rely on rigid position trajectories. It requires active impedance control, modulating mechanical compliance at millisecond intervals."
+      "text": "La synthèse mécanique de la locomotion humaine représente l'une des frontières les plus formidables de la théorie du contrôle et de l'informatique physique. Contrairement aux rovers autonomes à roues qui bénéficient d’un équilibre multipoint statique, les robots humanoïdes bipèdes fonctionnent dans une instabilité spatiale continue. Pour naviguer sur un terrain terrestre non structuré (gravier, escaliers et surfaces glissantes), une plate-forme humanoïde ne peut pas s'appuyer sur des trajectoires de position rigides. Cela nécessite un contrôle actif de l’impédance, modulant la conformité mécanique à intervalles de millisecondes."
     },
     {
       "type": "p",
-      "text": "[fr] By dynamically mapping contact forces back into joint torque space via the Jacobian transpose, impedance control transforms stiff actuator gearboxes into virtual spring-damper mechanisms. When a robot foot encounters unanticipated topography, the leg absorbs kinetic impact elastically rather than shattering harmonic drive reducers or tipping the chassis into an unrecoverable tumble."
+      "text": "En cartographiant dynamiquement les forces de contact dans l'espace de couple articulaire via la transposition jacobienne, le contrôle d'impédance transforme les boîtes de vitesses d'actionneurs rigides en mécanismes d'amortisseurs à ressort virtuels. Lorsqu'un pied de robot rencontre une topographie imprévue, la jambe absorbe l'impact cinétique de manière élastique plutôt que de briser les réducteurs d'entraînement harmonique ou de faire basculer le châssis dans une chute irrécupérable."
     },
     {
       "type": "h2",
-      "text": "[fr] 1. Mathematical Foundations: The Virtual Spring-Damper Model"
+      "text": "1. Fondements mathématiques : le modèle virtuel Spring-Damper"
     },
     {
       "type": "p",
-      "text": "[fr] Impedance control defines a target relationship between the external contact force vector ($F_{ext}$) and resulting kinematic displacement ($x - x_0$) rather than prescribing absolute coordinates:"
+      "text": "Le contrôle d'impédance définit une relation cible entre le vecteur de force de contact externe ($F_{ext}$) et le déplacement cinématique résultant ($x - x_0$) plutôt que de prescrire des coordonnées absolues :"
     },
     {
       "type": "code",
@@ -38,61 +38,61 @@
     },
     {
       "type": "p",
-      "text": "[fr] By tuning $K_d$ and $D_d$ in real time, the control loop mimics biological musculature. During the swing phase of a gait cycle, stiffness is maximized to track reference trajectories with high fidelity. At the exact instant of heel strike, stiffness is collapsed along the vertical axis, allowing compliant shock absorption without expensive hardware suspension."
+      "text": "En réglant $K_d$ et $D_d$ en temps réel, la boucle de contrôle imite la musculature biologique. Pendant la phase oscillante d'un cycle de marche, la rigidité est maximisée pour suivre les trajectoires de référence avec une haute fidélité. Au moment précis de l'impact du talon, la rigidité s'effondre le long de l'axe vertical, permettant une absorption des chocs conforme sans suspension matérielle coûteuse."
     },
     {
       "type": "quote",
-      "text": "[fr] True stability in bipedal systems is not the resistance to perturbation, but the mathematical elegance with which disturbance energy is absorbed, channeled, and repurposed into forward momentum.",
-      "cite": "[fr] Elena Rostova, Senior Robotics & Embodied AI Fellow"
+      "text": "La véritable stabilité des systèmes bipèdes n'est pas la résistance aux perturbations, mais l'élégance mathématique avec laquelle l'énergie des perturbations est absorbée, canalisée et réutilisée en élan vers l'avant.",
+      "cite": "Elena Rostova, boursière senior en robotique et IA incorporée"
     },
     {
       "type": "h2",
-      "text": "[fr] 2. Zero-Moment Point (ZMP) and Capture Point Dynamics"
+      "text": "2. Point de moment zéro (ZMP) et dynamique des points de capture"
     },
     {
       "type": "p",
-      "text": "[fr] Locomotion equilibrium is governed by the Zero-Moment Point (ZMP)—the spatial coordinate where total horizontal inertial and gravitational moments sum to zero. So long as the ZMP resides strictly within the support polygon defined by the robot's foot contact area, the machine cannot tip."
+      "text": "L'équilibre de la locomotion est régi par le point de moment zéro (ZMP) - la coordonnée spatiale où les moments d'inertie et de gravité horizontaux totaux totalisent zéro. Tant que le ZMP réside strictement dans le polygone de support défini par la zone de contact du pied du robot, la machine ne peut pas basculer."
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Support Polygon Boundary: In single-support phase, the stability boundary shrinks to the sole of one shoe, demanding sub-millisecond center-of-mass telemetry.",
-        "[fr] Capture Point Prediction: If external impulses push the ZMP outside the foot boundary, the whole-body controller calculates the instantaneous Capture Point—the precise physical coordinates where the swing leg must land to arrest falling velocity.",
-        "[fr] Model Predictive Control (MPC): Receding-horizon solvers forecast ground reaction forces across a 1.5-second trajectory window, solving quadratic optimization problems at 500 Hz."
+        "Limite du polygone de support : en phase de support unique, la limite de stabilité se réduit à la semelle d'une chaussure, exigeant une télémétrie du centre de masse inférieure à la milliseconde.",
+        "Prédiction du point de capture : si des impulsions externes poussent le ZMP en dehors de la limite du pied, le contrôleur du corps entier calcule le point de capture instantané : les coordonnées physiques précises où la jambe oscillante doit atterrir pour arrêter la vitesse de chute.",
+        "Contrôle prédictif du modèle (MPC) : les solveurs à horizon fuyant prévoient les forces de réaction du sol sur une fenêtre de trajectoire de 1,5 seconde, résolvant ainsi les problèmes d'optimisation quadratique à 500 Hz."
       ]
     },
     {
       "type": "h2",
-      "text": "[fr] 3. Video Masterclass: High-Dynamic Locomotion in Bipedal Systems"
+      "text": "3. Masterclass vidéo : Locomotion hautement dynamique dans les systèmes bipèdes"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/tF4DML7FIWk",
-      "title": "[fr] Whole-Body Dynamic Impedance and Bipedal Locomotion",
-      "caption": "[fr] Demonstration of high-frequency model predictive control, dynamic balance recovery, and real-time obstacle traversal in humanoid platforms."
+      "title": "Impédance dynamique du corps entier et locomotion bipède",
+      "caption": "Démonstration du contrôle prédictif de modèle haute fréquence, de la récupération dynamique de l'équilibre et de la traversée d'obstacles en temps réel dans les plates-formes humanoïdes."
     },
     {
       "type": "h2",
-      "text": "[fr] 4. Actuator Architectures: Quasi-Direct Drive vs. Strain Wave Gears"
+      "text": "4. Architectures d'actionneurs : entraînement quasi-direct et engrenages à ondes de contrainte"
     },
     {
       "type": "p",
-      "text": "[fr] Modern robotics has witnessed a decisive architectural shift away from high-ratio strain wave gears toward Quasi-Direct Drive (QDD) actuators. High gear ratios (100:1) introduce extreme reflected inertia ($I_{reflected} \\propto N^2$) and backdrivability friction, which degrades mechanical transparency and destroys force sensing accuracy."
+      "text": "La robotique moderne a été témoin d'un changement architectural décisif, passant des engrenages à ondes de déformation à rapport élevé aux actionneurs à entraînement quasi-direct (QDD). Des rapports de transmission élevés (100:1) introduisent une inertie réfléchie extrême ($I_{reflected} \\propto N^2$) et une friction de rétroconduite, qui dégradent la transparence mécanique et détruisent la précision de la détection de force."
     },
     {
       "type": "p",
-      "text": "[fr] QDD actuators utilize low gear ratios (under 10:1) paired with large-diameter high-torque outrunner brushless motors. This delivers ultra-low mechanical impedance, allowing motor phase current measurements to serve as accurate proxies for joint contact torque without fragile six-axis load cells in the ankles."
+      "text": "Les actionneurs QDD utilisent des rapports de démultiplication faibles (inférieurs à 10:1) associés à des moteurs sans balais de grand diamètre et à couple élevé. Cela offre une impédance mécanique ultra-faible, permettant aux mesures du courant de phase du moteur de servir d'indicateurs précis du couple de contact articulaire sans cellules de charge fragiles à six axes dans les chevilles."
     },
     {
       "type": "h2",
-      "text": "[fr] 5. Systems Engineering Takeaways"
+      "text": "5. Points à retenir sur l'ingénierie des systèmes"
     },
     {
       "type": "ul",
       "items": [
-        "[fr] Backdrivability Priority: Prioritize actuators with low reflected inertia and zero cogging torque to ensure transparent force reflection in closed-loop control.",
-        "[fr] Hierarchical Control Stacks: Separate slow-rate trajectory optimization (50-100 Hz MPC) from high-speed joint impedance compliance loops (1 kHz torque servos).",
-        "[fr] Sensory Redundancy: Fuse high-rate IMU angular acceleration telemetry with optical encoder arrays to filter vibration artifacts caused by structural resonance."
+        "Priorité à la rétroconduite : donner la priorité aux actionneurs à faible inertie réfléchie et à couple d'encoche nul pour garantir une réflexion transparente de la force dans le contrôle en boucle fermée.",
+        "Piles de contrôle hiérarchique : optimisation de trajectoire à vitesse lente séparée (MPC 50-100 Hz) des boucles de conformité d'impédance conjointe à grande vitesse (servos de couple de 1 kHz).",
+        "Redondance sensorielle : fusionnez la télémétrie d'accélération angulaire IMU à haut débit avec des réseaux d'encodeurs optiques pour filtrer les artefacts de vibration causés par la résonance structurelle."
       ]
     }
   ],
