@@ -5,8 +5,26 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 00:32:57 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:45:01 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches & Latency Scaling]]></title>
+      <link>https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An investigative monograph on scaled dot-product attention, quadratic memory complexity, multi-query KV cache optimizations, and how modern inference engines conquer the memory wall.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Cardiometabolic Biomarkers: ApoB, Endothelial Nitric Oxide & Plaque Vulnerability]]></title>
+      <link>https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A clinical examination of apolipoprotein B particle concentration, endothelial shear stress, nitric oxide synthase bioavailability, and the pathophysiology of sub-endothelial atherogenesis.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>health</category>
+    </item>
     <item>
       <title><![CDATA[Forex Liquidity Corridors: Central Bank Reserves, Swap Lines & Global Settlement Mechanics]]></title>
       <link>https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</link>
@@ -15,6 +33,33 @@
       <description><![CDATA[An institutional macroeconomic analysis of cross-border FX liquidity pipes, Federal Reserve swap line plumbing, petro-currency diversification, and multi-currency clearing architecture.]]></description>
       <author><![CDATA[Tariq Mahmood]]></author>
       <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Microbial Ecology of Wild Sourdough: Lactic Acid Bacteria, Acidity Kinetics & Proteolysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A culinary science monograph exploring symbiotic wild fermentation, Fructilactobacillus sanfranciscensis metabolic pathways, enzymatic gluten degradation, and the physics of crumb aeration.]]></description>
+      <author><![CDATA[Sofia Rossi]]></author>
+      <category>food</category>
+    </item>
+    <item>
+      <title><![CDATA[Sovereign Debt Cycles, Yield Curve Inversions & Cross-Border Repo Settlement]]></title>
+      <link>https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A macroeconomic investigation into term premia dynamics, Treasury collateral velocity, secured overnight financing rates (SOFR), and the mechanical anatomy of liquidity contagion in global shadow banking.]]></description>
+      <author><![CDATA[Claire Dupont]]></author>
+      <category>finance</category>
+    </item>
+    <item>
+      <title><![CDATA[Spatial Pressing Geometry: Positional Play, Rest-Defense & Transition Windows in Modern Football]]></title>
+      <link>https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A tactical monograph examining the spatial coordinates of Juego de Posición, five-lane pitch discretization, rest-defense structures (3-2 and 2-3), and the biomechanics of counterpressing triggers.]]></description>
+      <author><![CDATA[Liam O’Connor]]></author>
+      <category>sports</category>
     </item>
     <item>
       <title><![CDATA[Acoustic Geometry: How Monastic and Modernist Sanctuaries Shape Sound and Contemplation]]></title>

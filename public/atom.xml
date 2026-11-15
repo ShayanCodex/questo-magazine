@@ -5,7 +5,27 @@
   <link href="https://questo-blog.netlify.app/" />
   <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://questo-blog.netlify.app/</id>
-  <updated>2026-11-15T00:32:57.355Z</updated>
+  <updated>2026-11-15T00:45:01.863Z</updated>
+  <entry>
+    <title>The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches &amp; Latency Scaling</title>
+    <link href="https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache" />
+    <id>https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>An investigative monograph on scaled dot-product attention, quadratic memory complexity, multi-query KV cache optimizations, and how modern inference engines conquer the memory wall.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Cardiometabolic Biomarkers: ApoB, Endothelial Nitric Oxide &amp; Plaque Vulnerability</title>
+    <link href="https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide" />
+    <id>https://questo-blog.netlify.app/articles/cardiometabolic-biomarkers-apob-endothelial-nitric-oxide</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A clinical examination of apolipoprotein B particle concentration, endothelial shear stress, nitric oxide synthase bioavailability, and the pathophysiology of sub-endothelial atherogenesis.</summary>
+    <author>
+      <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
   <entry>
     <title>Forex Liquidity Corridors: Central Bank Reserves, Swap Lines &amp; Global Settlement Mechanics</title>
     <link href="https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves" />
@@ -14,6 +34,36 @@
     <summary>An institutional macroeconomic analysis of cross-border FX liquidity pipes, Federal Reserve swap line plumbing, petro-currency diversification, and multi-currency clearing architecture.</summary>
     <author>
       <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Microbial Ecology of Wild Sourdough: Lactic Acid Bacteria, Acidity Kinetics &amp; Proteolysis</title>
+    <link href="https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis" />
+    <id>https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A culinary science monograph exploring symbiotic wild fermentation, Fructilactobacillus sanfranciscensis metabolic pathways, enzymatic gluten degradation, and the physics of crumb aeration.</summary>
+    <author>
+      <name>Sofia Rossi</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Sovereign Debt Cycles, Yield Curve Inversions &amp; Cross-Border Repo Settlement</title>
+    <link href="https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement" />
+    <id>https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A macroeconomic investigation into term premia dynamics, Treasury collateral velocity, secured overnight financing rates (SOFR), and the mechanical anatomy of liquidity contagion in global shadow banking.</summary>
+    <author>
+      <name>Claire Dupont</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Spatial Pressing Geometry: Positional Play, Rest-Defense &amp; Transition Windows in Modern Football</title>
+    <link href="https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense" />
+    <id>https://questo-blog.netlify.app/articles/spatial-pressing-geometry-positional-play-rest-defense</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A tactical monograph examining the spatial coordinates of Juego de Posición, five-lane pitch discretization, rest-defense structures (3-2 and 2-3), and the biomechanics of counterpressing triggers.</summary>
+    <author>
+      <name>Liam O’Connor</name>
     </author>
   </entry>
   <entry>

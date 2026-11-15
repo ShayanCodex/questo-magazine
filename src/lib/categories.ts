@@ -229,6 +229,11 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'acoustic-geometry-and-sound-in-sacred-spaces': { categoryId: 'architecture-and-space', subcategoryId: 'spatial-theory' },
   'the-art-of-the-monograph-and-tactile-publishing': { categoryId: 'art-and-culture', subcategoryId: 'visual-arts' },
   'forex-liquidity-corridors-and-sovereign-reserves': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
+  'architecture-of-transformer-attention-mathematics-and-kv-cache': { categoryId: 'technology', subcategoryId: 'artificial-intelligence' },
+  'cardiometabolic-biomarkers-apob-endothelial-nitric-oxide': { categoryId: 'health', subcategoryId: 'preventive-medicine' },
+  'sovereign-debt-cycles-yield-curve-inversions-repo-settlement': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
+  'spatial-pressing-geometry-positional-play-rest-defense': { categoryId: 'sports', subcategoryId: 'football' },
+  'microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis': { categoryId: 'food', subcategoryId: 'fermentation-and-bread' },
 };
 
 export function getCategoryById(id: string): Category | undefined {
