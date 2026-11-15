@@ -1,77 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
 import { ArrowUpRightIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
+import { DISCIPLINES_LOCALIZED } from '../lib/page-translations';
 
 export function EditorialDisciplines() {
   const { t, localePath, language } = useLanguage();
-  const isRtl = language.dir === 'rtl';
 
-  const disciplines = [
-    {
-      number: '01',
-      categoryId: 'architecture-and-space',
-      categoryShort: isRtl ? 'عمارة' : 'Architecture',
-      title: isRtl ? 'العمارة الأحادية والمكان' : 'Architecture & Spatial Design',
-      desc: isRtl
-        ? 'دراسات بصرية ومقالات نقدية تستكشف الهياكل الخرسانية والفراغات الصامتة.'
-        : 'In-depth photographic essays exploring brutalist structures, tactile materials, and spatial silence.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
-      tag: 'architecture',
-      tagLabel: '#architecture',
-      subcategories: [
-        { id: 'minimalist-design', name: isRtl ? 'تصميم تبسيطي' : 'Minimalist Design' },
-        { id: 'monuments-and-stone', name: isRtl ? 'نصب وحجارة' : 'Monuments & Stone' },
-      ],
-    },
-    {
-      number: '02',
-      categoryId: 'design-and-typography',
-      categoryShort: isRtl ? 'تصميم' : 'Design',
-      title: isRtl ? 'الحرفية الطباعية ونظم الشبكات' : 'Design & Typographic Systems',
-      desc: isRtl
-        ? 'بحث معمق في المدرسة السويسرية والخطوط والتقسيمات المعيارية الحديثة.'
-        : 'Rigorous investigations into Swiss International typography, modular layout staves, and kinetic letterforms.',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
-      tag: 'design-systems',
-      tagLabel: '#design-systems',
-      subcategories: [
-        { id: 'editorial-systems', name: isRtl ? 'نظم تحريرية' : 'Editorial Systems' },
-        { id: 'grid-theory', name: isRtl ? 'نظرية الشبكة' : 'Grid Theory' },
-      ],
-    },
-    {
-      number: '03',
-      categoryId: 'art-and-culture',
-      categoryShort: isRtl ? 'فن وثقافة' : 'Art & Culture',
-      title: isRtl ? 'الفنون البصرية والنحت الكلاسيكي' : 'Art, Culture & Sculpture',
-      desc: isRtl
-        ? 'استكشاف بصري وفلسفي للأشكال الكلاسيكية والمنحوتات الصامدة والفن الحضري.'
-        : 'Classical marble endurance, museum heritage studies, and monumental public street murals.',
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
-      tag: 'art',
-      tagLabel: '#art',
-      subcategories: [
-        { id: 'visual-arts', name: isRtl ? 'فنون بصرية' : 'Visual Arts' },
-        { id: 'sculpture', name: isRtl ? 'نحت' : 'Sculpture' },
-      ],
-    },
-    {
-      number: '04',
-      categoryId: 'engineering-and-technology',
-      categoryShort: isRtl ? 'هندسة' : 'Tech',
-      title: isRtl ? 'العمارة الرقمية وهندسة النظم' : 'Engineering & Static Systems',
-      desc: isRtl
-        ? 'بناء مواقع عديمة الخوادم وسريعة الاستجابة بأعلى معايير الأرشفة دون مكتبات ثقيلة.'
-        : 'Architectural software essays, headless CMS philosophy, and zero-runtime static pre-rendering.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-      tag: 'engineering',
-      tagLabel: '#engineering',
-      subcategories: [
-        { id: 'system-architecture', name: isRtl ? 'هندسة النظم' : 'System Architecture' },
-        { id: 'static-performance', name: isRtl ? 'أداء ثابت' : 'Static Performance' },
-      ],
-    },
-  ];
+  const disciplines = DISCIPLINES_LOCALIZED[language.code] || DISCIPLINES_LOCALIZED.en;
 
   return (
     <section id="disciplines" className="pt-12 sm:pt-16 border-t border-editorial-border space-y-8">
@@ -169,7 +104,7 @@ export function EditorialDisciplines() {
                     to={localePath(`/articles?category=${item.categoryId}`)}
                     className="font-medium text-editorial-text hover:text-accent transition-colors flex items-center gap-1 group/link"
                   >
-                    <span>Browse</span>
+                    <span>{t.browse || 'Browse'}</span>
                     <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover/link:translate-x-0.5" />
                   </Link>
                   <Link

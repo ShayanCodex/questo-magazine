@@ -30,7 +30,7 @@ export function ReadingListDrawer({
   searchIndex = [],
 }: ReadingListDrawerProps) {
   const { list, count, removeBookmark, clearReadingList } = useReadingList();
-  const { localePath, t } = useLanguage();
+  const { localePath, t, language } = useLanguage();
 
   // Map slugs to full article search items
   const savedArticles = list
@@ -142,8 +142,8 @@ export function ReadingListDrawer({
                       type="button"
                       onClick={() => removeBookmark(article.slug)}
                       className="p-1.5 text-editorial-muted hover:text-red-500 rounded-full hover:bg-editorial-surface-subtle transition-colors shrink-0 cursor-pointer"
-                      title="Remove from Reading List"
-                      aria-label={`Remove ${article.title} from reading list`}
+                      title={t.delete || (language.dir === 'rtl' ? 'حذف' : 'Remove')}
+                      aria-label={`${t.delete || 'Remove'} ${article.title}`}
                     >
                       <XMarkIcon className="h-4 w-4" />
                     </button>

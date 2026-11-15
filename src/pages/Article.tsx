@@ -148,7 +148,9 @@ export function Article() {
               role="status"
               className="p-4 rounded-sm border border-editorial-border bg-editorial-surface-subtle text-editorial-text text-sm font-sans"
             >
-              <p className="font-semibold text-editorial-text mb-0.5">Translation Notice</p>
+              <p className="font-semibold text-editorial-text mb-0.5">
+                {language.code === 'ur' ? 'ترجمے کا نوٹ' : language.code === 'ar' ? 'إشعار الترجمة' : 'Translation Notice'}
+              </p>
               <p className="text-editorial-muted">{t.fallbackNotice}</p>
             </div>
           )}
@@ -197,7 +199,7 @@ export function Article() {
             <time dateTime={article.date}>{formattedDate}</time>
             {formattedUpdated && (
               <span className="opacity-80">
-                (updated {formattedUpdated})
+                {language.code === 'ur' ? `(تجدید شدہ ${formattedUpdated})` : language.code === 'ar' ? `(تم التحديث ${formattedUpdated})` : `(updated ${formattedUpdated})`}
               </span>
             )}
             <span>•</span>

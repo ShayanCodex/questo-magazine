@@ -2,83 +2,13 @@ import { useState } from 'react';
 import { useLanguage } from '../lib/lang-context';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { cn } from '../lib/utils';
-
-interface FaqItem {
-  id: string;
-  question: string;
-  answer: string;
-}
+import { FAQ_LOCALIZED } from '../lib/page-translations';
 
 export function EditorialFaq() {
   const { t, language } = useLanguage();
   const [openId, setOpenId] = useState<string | null>('faq-1');
-  const isRtl = language.dir === 'rtl';
 
-  const faqItems: FaqItem[] = isRtl
-    ? [
-        {
-          id: 'faq-1',
-          question: 'ما هي الفلسفة التحريرية لمجلة Questo؟',
-          answer:
-            'مجلة Questo هي منصة نشر بطيئة ومتأنية، تركز على العمارة والخطوط البصرية النقية والبرمجيات المصنوعة بحرفية عالية. نرفض ثقافة التغذية الخوارزمية الفوضوية والبرمجيات المتضخمة لصالح الوضوح والهدوء والجماليات الدائمة.',
-        },
-        {
-          id: 'faq-2',
-          question: 'كيف يمكن للكتاب والمعماريين تقديم مقالاتهم وأعمالهم؟',
-          answer:
-            'نرحب بالمقالات المعمارية والدراسات البصرية والنقدية المستقلة. يمكنك تقديم مقترحاتك عبر آلية Pull Request التحريرية في مستودع GitHub الخاص بنا أو التواصل مع هيئة التحرير عبر البريد.',
-        },
-        {
-          id: 'faq-3',
-          question: 'كيف تحقق المجلة سرعة فائقة عبر ست لغات عالمية؟',
-          answer:
-            'تُكتب مقالاتنا بملفات JSON وتُجمع مسبقاً في ملفات HTML ثابتة عند كل بناء، دون أي قواعد بيانات في وقت التشغيل أو طلبات عميل تؤخر التحميل، مما يضمن أرشفة محركات البحث الفورية وسرعة تصفح فائقة.',
-        },
-        {
-          id: 'faq-4',
-          question: 'أين يمكن شراء النسخة الورقية المطبوعة (العدد 03)؟',
-          answer:
-            'العدد 03 متاح في إصدار محدود من 1500 نسخة مرقمة يدوياً ومطبوعة على ورق إيطالي غير مصقول. تتوفر النسخ في مكتبات العمارة المختارة في برلين ولندن وطوكيو وموزعة للمشتركين.',
-        },
-        {
-          id: 'faq-5',
-          question: 'كيف تراعي المجلة خصوصية الخطوط العربية والأردية واتجاه اليمين لليسار؟',
-          answer:
-            'اللغتان العربية والأردية تحظيان باهتمام تحريري كامل وليستا مجرد ترجمة آلية. تعتمد المنصة خطوط Noto Naskh و Noto Nastaliq مع قلب كامل لتخطيط الصفحات والقوائم والأيقونات بما يناسب ثقافة القارئ.',
-        },
-      ]
-    : [
-        {
-          id: 'faq-1',
-          question: 'What is the editorial philosophy of Questo Magazine?',
-          answer:
-            'Questo is an intentional slow-publishing platform dedicated to spatial silence, rigorous typography, and handcrafted software. We deliberately reject infinite algorithmic feeds and bloated client-side code in favor of permanence, clarity, and deep reading.',
-        },
-        {
-          id: 'faq-2',
-          question: 'How can independent writers, architects, and photographers submit work?',
-          answer:
-            'We welcome unsolicited architectural monographs, visual culture essays, and critical studies. Submissions must adhere to our zero-filler editorial standard. You may submit proposals directly via our GitHub CMS pull-request workflow or through our editorial desk.',
-        },
-        {
-          id: 'faq-3',
-          question: 'How does Questo achieve zero-runtime latency across 6 languages?',
-          answer:
-            'Articles are authored in clean JSON and pre-rendered into static standalone HTML at build time using vite-react-ssg. There are zero runtime database queries, no client-side fetching waterfalls, and no hydration delays. Clean URLs are distributed globally via Cloudflare edge caches.',
-        },
-        {
-          id: 'faq-4',
-          question: 'Where can I purchase the physical print edition (Issue 03 / 2026)?',
-          answer:
-            'Issue 03 ("Art & Life") is produced in a limited edition of 1,500 hand-numbered copies on 120gsm Fedrigoni Tintoretto uncoated paper. Available in selected design bookshops across Berlin, London, Tokyo, and via our direct subscriber quarterly dispatch.',
-        },
-        {
-          id: 'faq-5',
-          question: 'How do the Arabic and Urdu editions maintain bidirectional typographic integrity?',
-          answer:
-            'Arabic and Urdu are first-class publications with dedicated typographic hierarchy. The platform dynamically renders native right-to-left layout (dir="rtl"), mirrored typographic staves, flipped navigation drawers, and custom webfonts (Noto Naskh Arabic & Noto Nastaliq Urdu).',
-        },
-      ];
+  const faqItems = FAQ_LOCALIZED[language.code] || FAQ_LOCALIZED.en;
 
   const toggleItem = (id: string) => {
     setOpenId((prev) => (prev === id ? null : id));

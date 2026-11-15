@@ -234,4 +234,9 @@ export interface I18nStrings {
   clickToFilter?: string;
   noMatchingResults?: string;
   trySearchingKeywords?: string;
+  browse?: string;
+  authorBy?: string;
+  newsletterBullet1?: string;
+  newsletterBullet2?: string;
+  newsletterBullet3?: string;
 }

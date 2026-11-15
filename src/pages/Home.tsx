@@ -76,13 +76,17 @@ export function Home() {
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-editorial-text font-semibold">Issue 03 / 2026</span>
             <span className="hidden sm:inline opacity-30">•</span>
-            <span className="hidden sm:inline">Autumn Print Monograph</span>
+            <span className="hidden sm:inline">
+              {language.code === 'ur' ? 'موسمِ خزاں پرنٹ مونوگراف' : language.code === 'ar' ? 'مونوغراف الخريف المطبوع' : language.code === 'es' ? 'Monografía Impresa de Otoño' : language.code === 'fr' ? 'Monographie Imprimée d’Automne' : language.code === 'de' ? 'Gedruckte Herbstmonographie' : 'Autumn Print Monograph'}
+            </span>
           </div>
           <div className="hidden lg:block text-editorial-muted/80 tracking-widest text-[10px]">
-            International Journal of Architecture, Art &amp; Functional Design
+            {language.code === 'ur' ? 'فنِ تعمیر، بصری فن اور فنکشنل ڈیزائن کا بین الاقوامی جریدہ' : language.code === 'ar' ? 'المجلة الدولية للعمارة والفنون والتصميم الوظيفي' : language.code === 'es' ? 'Revista Internacional de Arquitectura, Arte y Diseño Funcional' : language.code === 'fr' ? 'Revue Internationale d’Architecture, d’Art & de Design Fonctionnel' : language.code === 'de' ? 'Internationales Journal für Architektur, Kunst & Funktionales Design' : 'International Journal of Architecture, Art & Functional Design'}
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-editorial-text font-semibold">Global Edition</span>
+            <span className="text-editorial-text font-semibold">
+              {language.code === 'ur' ? 'عالمی ایڈیشن' : language.code === 'ar' ? 'الإصدار الدولي' : language.code === 'es' ? 'Edición Global' : language.code === 'fr' ? 'Édition Mondiale' : language.code === 'de' ? 'Globale Ausgabe' : 'Global Edition'}
+            </span>
             <span className="opacity-30">•</span>
             <span>Est. 2024</span>
           </div>
@@ -120,7 +124,7 @@ export function Home() {
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-2 border-b border-editorial-border text-xs font-sans">
           <div className="flex items-center gap-1.5 text-editorial-text font-bold text-xs shrink-0 me-1">
             <span className="w-1.5 h-1.5 rounded-full bg-editorial-text" />
-            <span>Browse:</span>
+            <span>{t.browse || 'Browse'}:</span>
           </div>
           {CATEGORIES.map((cat) => {
             const count = categoryCounts.get(cat.id) || 0;
@@ -130,7 +134,7 @@ export function Home() {
                 to={localePath(`/articles?category=${cat.id}`)}
                 className="px-3.5 py-1 rounded-full border border-editorial-border bg-editorial-surface hover:border-editorial-text hover:bg-editorial-text hover:text-editorial-bg text-editorial-text font-medium text-xs transition-all shrink-0 flex items-center gap-1.5 shadow-2xs group/pill"
               >
-                <span>{getCategoryShortName(cat.id)}</span>
+                <span>{getCategoryShortName(cat.id, language.code)}</span>
                 {count > 0 && (
                   <span className="text-[10px] opacity-60 group-hover/pill:opacity-90 font-sans font-medium">
                     ({count})
@@ -144,7 +148,7 @@ export function Home() {
             to={localePath('/categories')}
             className="px-3.5 py-1 rounded-full text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border hover:border-editorial-text ms-auto shrink-0 text-xs font-medium transition-all flex items-center gap-1.5 whitespace-nowrap group"
           >
-            <span>All Categories (A–Z)</span>
+            <span>{t.allCategoriesAtoZ || (language.code === 'ur' ? 'تمام زمرہ جات (الف تا ے)' : language.code === 'ar' ? 'جميع التصنيفات (أ - ي)' : 'All Categories (A–Z)')}</span>
             <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
           </Link>
         </div>
@@ -181,7 +185,7 @@ export function Home() {
                       />
                       {/* Floating Category Tag */}
                       <span className="absolute top-2 start-2 z-10 px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/80 backdrop-blur-md text-white rounded-full border border-white/20 shadow-xs">
-                        {getCategoryShortName(category.id)}
+                        {getCategoryShortName(category.id, language.code)}
                       </span>
                     </Link>
                   )}
@@ -267,24 +271,24 @@ export function Home() {
 
               <div className="relative z-10 flex justify-between items-start">
                 <span className="font-sans font-medium text-xs bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-white shadow-xs">
-                  Issue 03
+                  {language.code === 'ur' ? 'شمارہ 03' : language.code === 'ar' ? 'العدد 03' : 'Issue 03'}
                 </span>
                 <span className="font-sans font-medium text-xs text-white/90 bg-black/50 px-2.5 py-1 rounded-full backdrop-blur-md border border-white/10 shadow-xs flex items-center gap-1 group-hover:bg-white group-hover:text-neutral-950 transition-all">
-                  <span>Autumn 2026</span>
+                  <span>{language.code === 'ur' ? 'خزاں 2026' : language.code === 'ar' ? 'خريف 2026' : language.code === 'es' ? 'Otoño 2026' : language.code === 'fr' ? 'Automne 2026' : language.code === 'de' ? 'Herbst 2026' : 'Autumn 2026'}</span>
                   <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
                 </span>
               </div>
 
               <div className="relative z-10 space-y-1 sm:space-y-1.5">
                 <h4 className="font-display font-bold text-3xl sm:text-5xl uppercase tracking-tight leading-none text-white drop-shadow-md group-hover:text-white/95 transition-colors">
-                  Questo
+                  {siteConfig.name}
                 </h4>
                 <div className="flex items-center justify-between">
                   <p className="text-xs font-sans text-white/90 uppercase tracking-widest font-medium drop-shadow-sm">
-                    Magazin • Art &amp; Life
+                    {language.code === 'ur' ? 'جریدہ • فن اور زندگی' : language.code === 'ar' ? 'مجلة • الفن والحياة' : 'Magazine • Art & Life'}
                   </p>
                   <span className="text-[11px] font-sans font-semibold text-white/80 group-hover:text-white group-hover:underline flex items-center gap-1">
-                    <span>Read Issue</span>
+                    <span>{language.code === 'ur' ? 'شمارہ پڑھیں' : language.code === 'ar' ? 'اقرأ العدد' : language.code === 'es' ? 'Leer Número' : language.code === 'fr' ? 'Lire le Numéro' : language.code === 'de' ? 'Ausgabe lesen' : 'Read Issue'}</span>
                     <ArrowRightIcon className="h-3 w-3 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
                   </span>
                 </div>
@@ -301,7 +305,7 @@ export function Home() {
                   </span>
                 </div>
                 <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-sans font-medium bg-editorial-text/10 text-editorial-text border border-editorial-border/60">
-                  Limited Run
+                  {language.code === 'ur' ? 'محدود اشاعت' : language.code === 'ar' ? 'نسخ محدودة' : language.code === 'es' ? 'Tirada Limitada' : language.code === 'fr' ? 'Tirage Limité' : language.code === 'de' ? 'Limitierte Auflage' : 'Limited Run'}
                 </span>
               </div>
 
@@ -329,7 +333,7 @@ export function Home() {
                   to={localePath('/articles?category=art-and-culture')}
                   className="flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-full bg-editorial-surface hover:bg-editorial-text hover:text-editorial-bg text-editorial-text border border-editorial-border font-sans text-xs font-semibold transition-all shadow-xs text-center group"
                 >
-                  <span>Explore Art &amp; Life Articles</span>
+                  <span>{language.code === 'ur' ? 'فن اور زندگی کے مقالات دیکھیں' : language.code === 'ar' ? 'استكشف مقالات الفن والحياة' : language.code === 'es' ? 'Explorar Artículos de Arte y Vida' : language.code === 'fr' ? 'Explorer les Articles Art & Vie' : language.code === 'de' ? 'Artikel zu Kunst & Leben entdecken' : 'Explore Art & Life Articles'}</span>
                   <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
                 </Link>
               </div>
@@ -337,7 +341,7 @@ export function Home() {
 
             <div className="pt-2 text-xs font-sans text-editorial-muted leading-relaxed flex items-start gap-2">
               <span className="text-editorial-text font-medium leading-none">•</span>
-              <span>Available globally in selected bookshops and galleries. Hand-printed on 120gsm recycled newsprint paper.</span>
+              <span>{language.code === 'ur' ? 'دنیا بھر کے منتخب کتب خانوں میں دستیاب۔ معیاری پیپر پر طبع شدہ۔' : language.code === 'ar' ? 'متوفر عالمياً في مكتبات معمارية مختارة. مطبوع يدوياً على ورق فاخر.' : language.code === 'es' ? 'Disponible globalmente en librerías selectas. Impreso a mano en papel de 120 g/m².' : language.code === 'fr' ? 'Disponible dans des librairies sélectionnées. Tiré sur papier d’art 120 g/m².' : language.code === 'de' ? 'Weltweit in ausgewählten Buchhandlungen erhältlich. Gedruckt auf 120g/m² Kunstdruckpapier.' : 'Available globally in selected bookshops and galleries. Hand-printed on 120gsm recycled newsprint paper.'}</span>
             </div>
           </aside>
         </div>

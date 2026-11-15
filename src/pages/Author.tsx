@@ -118,17 +118,17 @@ export function Author() {
         <div className="border-b border-editorial-border pb-4 flex items-center justify-between">
           <div>
             <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted block">
-              Curated Portfolio
+              {language.code === 'ur' ? 'منتخب مجموعہ' : language.code === 'ar' ? 'أعمال مختارة' : 'Curated Portfolio'}
             </span>
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
-              Essays by {author.name}
+              {language.code === 'ur' ? `تحریری مقالے از ${author.name}` : language.code === 'ar' ? `مقالات بقلم ${author.name}` : `${t.moreBy || 'Essays by'} ${author.name}`}
             </h2>
           </div>
           <Link
             to={localePath('/articles')}
             className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1"
           >
-            <span>All Articles</span>
+            <span>{t.allArticles || 'All Articles'}</span>
             <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
           </Link>
         </div>
@@ -155,7 +155,7 @@ export function Author() {
                       />
                       <div className="absolute top-3 start-3">
                         <span className="px-2.5 py-0.5 text-[11px] font-sans font-medium bg-black/75 backdrop-blur-xs text-white rounded-full border border-white/15">
-                          {getCategoryShortName(category.id)}
+                          {getCategoryShortName(category.id, language.code)}
                         </span>
                       </div>
                     </Link>
@@ -183,7 +183,7 @@ export function Author() {
                     to={artUrl}
                     className="inline-flex items-center gap-1.5 text-xs font-sans font-semibold uppercase tracking-wider text-editorial-text group-hover:text-accent transition-colors"
                   >
-                    <span>Read Monograph</span>
+                    <span>{t.readMore || 'Read Monograph'}</span>
                     <ArrowRightIcon className="h-3.5 w-3.5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
                   </Link>
                 </div>

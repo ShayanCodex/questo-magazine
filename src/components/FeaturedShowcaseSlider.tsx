@@ -11,6 +11,7 @@ import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory } from '../lib/categories';
 import { BookmarkButton } from './BookmarkButton';
 import { cn } from '../lib/utils';
+import { SLIDER_TAGS } from '../lib/page-translations';
 
 export interface FeaturedShowcaseSliderProps {
   articles: ArticleData[];
@@ -210,7 +211,7 @@ export function FeaturedShowcaseSlider({
         <div className="absolute bottom-8 sm:bottom-12 start-5 sm:start-12 end-28 sm:end-44 z-20 space-y-2.5 sm:space-y-3.5 max-w-2xl">
           {/* Refined Category & Discipline Eyebrow */}
           <div className="flex items-center gap-2 font-mono text-[9px] sm:text-xs font-semibold tracking-[0.24em] text-accent uppercase drop-shadow-sm">
-            <span>{curatedMeta.issueTag}</span>
+            <span>{(SLIDER_TAGS[language.code] && SLIDER_TAGS[language.code][currentArticle.slug]) || curatedMeta.issueTag}</span>
           </div>
 
           {/* Majestic Editorial Headline: Bold, Elegant Leading, Human Scale */}

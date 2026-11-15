@@ -25,6 +25,7 @@ import {
   getArticleCategory,
   getCategoryById,
   getCategoryName,
+  getSubcategoryName,
   type Category,
   type Subcategory,
 } from '../lib/categories';
@@ -377,7 +378,7 @@ export function Categories() {
                               : 'bg-editorial-surface-subtle border border-editorial-border/80 hover:border-editorial-text text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
                           )}
                         >
-                          {sub.name}
+                          {getSubcategoryName(sub.id, language.code)}
                         </span>
                       );
                     })}
@@ -388,7 +389,9 @@ export function Categories() {
               {/* Action row at bottom of card */}
               <div className="pt-4 border-t border-editorial-border/60 flex items-center justify-between text-xs font-sans font-medium">
                 <span className="text-editorial-muted group-hover:text-editorial-text transition-colors">
-                  {isSelected ? 'Click to deselect category' : 'Click to show subcategories & articles'}
+                  {isSelected
+                    ? (language.code === 'ur' ? 'زمرے کا انتخاب منسوخ کریں' : language.code === 'ar' ? 'إلغاء تحديد التصنيف' : 'Click to deselect category')
+                    : (language.code === 'ur' ? 'ذیلی زمرہ جات اور مضامین دیکھیں' : language.code === 'ar' ? 'عرض التصنيفات الفرعية والمقالات' : 'Click to show subcategories & articles')}
                 </span>
                 <ArrowRightIcon
                   className={cn(
@@ -409,12 +412,12 @@ export function Categories() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="space-y-1">
               <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted block">
-                Category Drilldown
+                {language.code === 'ur' ? 'تفصیلی زمرہ بندی' : language.code === 'ar' ? 'تفاصيل التصنيف' : 'Category Drilldown'}
               </span>
               <h3 className="font-sans font-bold text-2xl sm:text-3xl tracking-tight text-editorial-text flex items-center gap-2">
-                <span>{activeCategory.name}</span>
+                <span>{getCategoryName(activeCategory.id, language.code)}</span>
                 <span className="text-editorial-muted font-normal text-lg">
-                  ({activeCategory.subcategories.length} Subcategories)
+                  ({activeCategory.subcategories.length} {language.code === 'ur' ? 'ذیلی زمرہ جات' : language.code === 'ar' ? 'تصنيفات فرعية' : 'Subcategories'})
                 </span>
               </h3>
             </div>
@@ -425,7 +428,7 @@ export function Categories() {
                 onClick={() => handleSelectSubcategory(selectedSubcategory)}
                 className="text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text underline cursor-pointer self-start sm:self-auto"
               >
-                Show All {activeCategory.name} Subcategories
+                {language.code === 'ur' ? `تمام ${getCategoryName(activeCategory.id, language.code)} ذیلی زمرے دکھائیں` : language.code === 'ar' ? `عرض كافة التصنيفات الفرعية لـ ${getCategoryName(activeCategory.id, language.code)}` : `Show All ${activeCategory.name} Subcategories`}
               </button>
             )}
           </div>
@@ -459,7 +462,7 @@ export function Categories() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-between gap-2">
                       <span className="text-xs font-sans text-editorial-muted font-medium">
-                        Subcategory
+                        {language.code === 'ur' ? 'ذیلی زمرہ' : language.code === 'ar' ? 'تصنيف فرعي' : 'Subcategory'}
                       </span>
                       <span
                         className={cn(
@@ -469,12 +472,12 @@ export function Categories() {
                             : 'bg-editorial-surface-subtle text-editorial-muted'
                         )}
                       >
-                        {count} {count === 1 ? 'article' : 'articles'}
+                        {count} {language.code === 'ur' ? 'مضامین' : language.code === 'ar' ? 'مقالات' : count === 1 ? 'article' : 'articles'}
                       </span>
                     </div>
 
                     <h4 className="font-sans font-bold text-lg tracking-tight text-editorial-text">
-                      {sub.name}
+                      {getSubcategoryName(sub.id, language.code)}
                     </h4>
 
                     <p className="font-serif text-xs sm:text-sm text-editorial-muted leading-relaxed">
@@ -484,7 +487,9 @@ export function Categories() {
 
                   <div className="pt-3.5 border-t border-editorial-border/60 flex items-center justify-between text-xs font-sans font-medium">
                     <span className={isSubSelected ? 'text-editorial-text font-semibold' : 'text-editorial-muted'}>
-                      {isSubSelected ? 'Selected' : 'View Articles'}
+                      {isSubSelected
+                        ? (language.code === 'ur' ? 'منتخب شدہ' : language.code === 'ar' ? 'محدد' : 'Selected')
+                        : (language.code === 'ur' ? 'مضامین دیکھیں' : language.code === 'ar' ? 'عرض المقالات' : 'View Articles')}
                     </span>
                     <ArrowRightIcon
                       className={cn(
@@ -509,7 +514,7 @@ export function Categories() {
               <SparklesIcon className="h-5 w-5 text-editorial-text" />
               <span>
                 {selectedCategory
-                  ? `${activeCategory?.name} ${selectedSubcategory ? `› ${activeCategory?.subcategories.find((s) => s.id === selectedSubcategory)?.name}` : ''}`
+                  ? `${getCategoryName(selectedCategory, language.code)} ${selectedSubcategory ? `› ${getSubcategoryName(selectedSubcategory, language.code)}` : ''}`
                   : (t.allArticles || 'All Editorial Articles')}
               </span>
             </h3>
@@ -527,7 +532,7 @@ export function Categories() {
               )}
               className="text-xs font-sans uppercase tracking-wider text-accent hover:underline flex items-center gap-1.5 font-semibold group"
             >
-              <span>View in Full Archive</span>
+              <span>{language.code === 'ur' ? 'مکمل آرکائیو میں دیکھیں' : language.code === 'ar' ? 'عرض في الأرشيف الكامل' : language.code === 'es' ? 'Ver en Archivo Completo' : language.code === 'fr' ? 'Voir dans l’Archive Complète' : language.code === 'de' ? 'Im vollständigen Archiv ansehen' : 'View in Full Archive'}</span>
               <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
             </Link>
           </div>
@@ -536,7 +541,7 @@ export function Categories() {
         {/* Article Cards with Right-Side Images, Reading Time, and Real-Time View Count */}
         <ArticleList
           articles={filteredArticles}
-          emptyMessage="No monographs or articles found for this category selection."
+          emptyMessage={t.noArticlesFound || (language.code === 'ur' ? 'اس زمرے میں فی الحال کوئی مقالہ موجود نہیں ہے۔' : language.code === 'ar' ? 'لم يتم العثور على مقالات في هذا التصنيف.' : 'No articles found in this collection.')}
         />
       </section>
     </div>

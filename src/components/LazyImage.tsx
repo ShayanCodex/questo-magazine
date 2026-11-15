@@ -53,12 +53,16 @@ export function LazyImage({
       <div
         ref={wrapperRef}
         className={cn(
-          'w-full h-full bg-editorial-surface-subtle flex items-center justify-center text-editorial-muted text-[10px] font-sans font-medium',
+          'w-full h-full bg-editorial-surface-subtle flex flex-col items-center justify-center text-editorial-muted p-4 relative overflow-hidden select-none',
           wrapperClassName
         )}
         style={aspectRatio ? { aspectRatio } : undefined}
       >
-        <span>Image unavailable</span>
+        <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
+        <svg className="w-8 h-8 opacity-40 mb-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+        </svg>
+        <span className="text-[10px] font-sans font-semibold tracking-widest uppercase opacity-50">Questo Monograph</span>
       </div>
     );
   }

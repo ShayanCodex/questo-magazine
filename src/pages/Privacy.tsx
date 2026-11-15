@@ -1,17 +1,19 @@
 import { Link } from 'react-router-dom';
-import { ShieldCheckIcon, LockClosedIcon, DocumentCheckIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
+import { ShieldCheckIcon, LockClosedIcon, ArrowLeftIcon, CircleStackIcon } from '@heroicons/react/24/outline';
 import { useLanguage } from '../lib/lang-context';
 import { Seo } from '../components/Seo';
 import { siteConfig } from '../lib/site';
+import { PRIVACY_PAGE } from '../lib/page-translations';
 
 export function Privacy() {
-  const { localePath } = useLanguage();
+  const { localePath, language } = useLanguage();
+  const content = PRIVACY_PAGE[language.code] || PRIVACY_PAGE.en;
 
   return (
-    <div className="max-w-4xl mx-auto space-y-12 pb-16">
+    <div className="max-w-4xl mx-auto space-y-12 pb-16 font-sans">
       <Seo
-        title="Privacy Policy & Regulatory Disclosures"
-        description="Comprehensive privacy disclosures, zero-cookie architecture declaration, and GDPR/CCPA storage policies."
+        title={content.title}
+        description={content.subtitle}
         pathname="/privacy"
       />
 
@@ -22,7 +24,7 @@ export function Privacy() {
           className="inline-flex items-center gap-1.5 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted hover:text-editorial-text transition-colors"
         >
           <ArrowLeftIcon className="h-3.5 w-3.5 rtl:rotate-180" />
-          <span>Back to Publication</span>
+          <span>{content.backToPub}</span>
         </Link>
 
         <div className="flex items-center gap-2 pt-2">
@@ -30,15 +32,15 @@ export function Privacy() {
             <ShieldCheckIcon className="h-4 w-4" />
           </span>
           <span className="text-xs font-sans font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
-            Compliance &amp; Data Ethics
+            {content.badge}
           </span>
         </div>
 
         <h1 className="font-display font-bold text-3xl sm:text-5xl uppercase tracking-tight text-editorial-text">
-          Privacy Policy &amp; Data Architecture
+          {content.h1}
         </h1>
         <p className="font-serif text-base sm:text-lg text-editorial-muted max-w-2xl leading-relaxed">
-          Questo is architected on the premise of radical privacy, zero third-party tracking, and static data sovereignty.
+          {content.subtitle}
         </p>
       </header>
 
@@ -48,79 +50,55 @@ export function Privacy() {
         <section className="space-y-3 bg-editorial-surface border border-editorial-border p-6 rounded-xl shadow-xs">
           <div className="flex items-center gap-2 text-editorial-text font-bold">
             <LockClosedIcon className="h-4 w-4" />
-            <h2 className="text-base sm:text-lg uppercase tracking-wider">1. Zero-Cookie Architecture Guarantee</h2>
+            <h2 className="text-base sm:text-lg uppercase tracking-wider">{content.cookieTitle}</h2>
           </div>
-          <p className="text-editorial-muted">
-            Questo does not deploy, read, or monetize advertising cookies, behavioral trackers, or third-party fingerprinting scripts. We do not partner with data brokers or behavioral marketing networks.
+          <p className="text-editorial-muted leading-relaxed">
+            {content.cookieDesc}
           </p>
         </section>
 
         {/* Section 2: LocalStorage Usage */}
         <section className="space-y-4">
-          <h2 className="font-display font-bold text-xl uppercase tracking-wide text-editorial-text">
-            2. Client-Side Storage Disclosures (EU GDPR &amp; ePrivacy Art. 5(3))
-          </h2>
-          <p className="text-editorial-muted">
-            To provide an uninterrupted, high-performance reading experience without a server-side account, Questo strictly uses the browser&rsquo;s isolated <code className="font-mono text-xs px-1.5 py-0.5 rounded bg-editorial-surface-subtle border border-editorial-border">localStorage</code> API for purely functional preferences:
+          <div className="flex items-center gap-2 text-editorial-text font-bold">
+            <CircleStackIcon className="h-5 w-5" />
+            <h2 className="font-display font-bold text-xl uppercase tracking-wide text-editorial-text">
+              {content.storageTitle}
+            </h2>
+          </div>
+          <p className="text-editorial-muted leading-relaxed">
+            {content.storageDesc}
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <div className="p-4 rounded-lg border border-editorial-border bg-editorial-surface space-y-1">
-              <span className="font-mono text-xs font-bold text-editorial-text block">questo-theme</span>
-              <p className="text-xs text-editorial-muted">Remembers your dark or light visual interface selection across sessions.</p>
-            </div>
-            <div className="p-4 rounded-lg border border-editorial-border bg-editorial-surface space-y-1">
-              <span className="font-mono text-xs font-bold text-editorial-text block">questo-reading-list</span>
-              <p className="text-xs text-editorial-muted">Saves your offline bookmarks locally on your device without transmitting data.</p>
-            </div>
-            <div className="p-4 rounded-lg border border-editorial-border bg-editorial-surface space-y-1">
-              <span className="font-mono text-xs font-bold text-editorial-text block">questo-recent-searches</span>
-              <p className="text-xs text-editorial-muted">Retains your recent search terms locally for instant autocomplete recall.</p>
-            </div>
-            <div className="p-4 rounded-lg border border-editorial-border bg-editorial-surface space-y-1">
-              <span className="font-mono text-xs font-bold text-editorial-text block">questo-edge-views-cache</span>
-              <p className="text-xs text-editorial-muted">Caches view counts for 60 seconds to eliminate redundant network roundtrips.</p>
-            </div>
+            {content.storageItems.map((item, idx) => (
+              <div key={idx} className="p-4 rounded-lg border border-editorial-border bg-editorial-surface space-y-1">
+                <span className="font-mono text-xs font-bold text-editorial-text block">{item.key}</span>
+                <p className="text-xs text-editorial-muted">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* Section 3: View Counts & Analytics */}
-        <section className="space-y-3">
-          <h2 className="font-display font-bold text-xl uppercase tracking-wide text-editorial-text">
-            3. Privacy-Preserving View Metrics
-          </h2>
-          <p className="text-editorial-muted">
-            Article views are computed via privacy-preserving anonymous edge counters and local storage synchronization. No personal data, IP addresses, device identifiers, or tracking cookies are collected or stored. Metrics are strictly anonymous and aggregate.
-          </p>
-        </section>
-
-        {/* Section 4: Community Comments */}
-        <section className="space-y-3">
-          <h2 className="font-display font-bold text-xl uppercase tracking-wide text-editorial-text">
-            4. Community Discourse &amp; Guest Comments
-          </h2>
-          <p className="text-editorial-muted">
-            Reader comments are powered by Questo&rsquo;s zero-tracking, login-free community discourse system. No registration, third-party account, password, or cookies are required. Your comments are published immediately under your chosen name (or as an anonymous Guest) with zero tracking cookies.
-          </p>
-        </section>
-
-        {/* Section 5: CCPA Disclosures */}
+        {/* Section 3: Reader Rights */}
         <section className="space-y-3 bg-editorial-surface border border-editorial-border p-6 rounded-xl shadow-xs">
           <div className="flex items-center gap-2 text-editorial-text font-bold">
-            <DocumentCheckIcon className="h-4 w-4" />
-            <h2 className="text-base sm:text-lg uppercase tracking-wider">5. California Consumer Privacy Act (CCPA)</h2>
+            <ShieldCheckIcon className="h-4 w-4" />
+            <h2 className="text-base sm:text-lg uppercase tracking-wider">{content.rightsTitle}</h2>
           </div>
-          <p className="text-editorial-muted">
-            <strong>Do Not Sell or Share My Personal Information:</strong> We do not sell, rent, or share personal data with any commercial third parties. You have the right to browse Questo with absolute data anonymity.
+          <p className="text-editorial-muted leading-relaxed">
+            {content.rightsDesc}
           </p>
         </section>
       </div>
 
       <footer className="pt-8 border-t border-editorial-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-sans text-editorial-muted">
-        <span>Published by {siteConfig.name} Editorial Board</span>
-        <span>Last Updated: November 12, 2026</span>
+        <span>
+          {language.code === 'ur' ? `ناشر: ${siteConfig.name} ادارتی بورڈ` : language.code === 'ar' ? `نُشر بواسطة هيئة تحرير ${siteConfig.name}` : `Published by ${siteConfig.name} Editorial Board`}
+        </span>
+        <span>
+          {language.code === 'ur' ? 'آخری تجدید: نومبر 2026' : language.code === 'ar' ? 'آخر تحديث: نوفمبر 2026' : 'Last Updated: November 2026'}
+        </span>
       </footer>
     </div>
   );
 }
-

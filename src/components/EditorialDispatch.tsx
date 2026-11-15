@@ -85,9 +85,9 @@ export function EditorialDispatch() {
           )}
 
           <div className="flex flex-wrap items-center gap-4 text-[11px] font-sans font-medium uppercase tracking-wider text-white/80 pt-2 drop-shadow-sm">
-            <span>• Delivered every Sunday</span>
-            <span>• Unsubscribe anytime</span>
-            <span>• 1,500+ Curated Readers</span>
+            <span>{t.newsletterBullet1 || '• Delivered every Sunday'}</span>
+            <span>{t.newsletterBullet2 || '• Unsubscribe anytime'}</span>
+            <span>{t.newsletterBullet3 || '• 1,500+ Curated Readers'}</span>
           </div>
         </div>
       </div>

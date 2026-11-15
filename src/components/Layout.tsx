@@ -451,7 +451,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
               <div className="space-y-1.5 pt-1">
                 <span className="text-[11px] uppercase tracking-wider text-editorial-muted font-medium block">
-                  {t.languages} (6 editions):
+                  {language.code === 'ur' ? `${t.languages} (6 ایڈیشنز):` : language.code === 'ar' ? `${t.languages} (6 إصدارات):` : `${t.languages} (6 editions):`}
                 </span>
                 <nav
                   aria-label="Footer language navigation"
@@ -584,7 +584,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               >
                 <span>{t.markets || 'Markets'}</span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 uppercase tracking-widest font-bold">
-                  Live Feed
+                  {language.code === 'ur' ? 'لائیو فیڈ' : language.code === 'ar' ? 'بث حي' : 'Live Feed'}
                 </span>
               </Link>
               <Link
@@ -608,7 +608,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               >
                 <span>{t.tools || 'Tools'}</span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-editorial-text/10 text-editorial-text border border-editorial-border uppercase tracking-widest font-bold">
-                  Zero Cost
+                  {language.code === 'ur' ? 'مفت' : language.code === 'ar' ? 'مجاني' : 'Zero Cost'}
                 </span>
               </Link>
               <button

@@ -145,13 +145,13 @@ export function CategoryDetail() {
       <section className="space-y-6">
         <div className="flex items-center justify-between border-b border-editorial-border pb-3">
           <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted">
-            Published Monographs ({filteredArticles.length})
+            {language.code === 'ur' ? `شائع شدہ مضامین (${filteredArticles.length})` : language.code === 'ar' ? `المقالات المنشورة (${filteredArticles.length})` : `Published Monographs (${filteredArticles.length})`}
           </span>
           <Link
             to={localePath('/categories')}
             className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1"
           >
-            <span>All Categories</span>
+            <span>{t.allCategories || 'All Categories'}</span>
             <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
           </Link>
         </div>

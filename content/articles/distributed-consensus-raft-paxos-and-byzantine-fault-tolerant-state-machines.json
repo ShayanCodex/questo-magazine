@@ -1,6 +1,6 @@
 {
   "slug": "distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines",
-  "title": "Distributed Consensus: Raft, Paxos & Byzantine State Machines",
+  "title": "Distributed Consensus: Raft & Paxos",
   "excerpt": "An engineering treatise on replicated state machine theory, quorum intersections, leader election heartbeat protocols, and BFT consensus safety.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
@@ -52,7 +52,7 @@
       "type": "video",
       "title": "Distributed Systems: Raft Consensus Algorithm in 20 Minutes",
       "caption": "Visual walkthrough of leader election, term counters, randomized election timers, log replication, and network partition recovery in Raft clusters.",
-      "src": "https://www.youtube-nocookie.com/embed/vYp4c7o980U"
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",

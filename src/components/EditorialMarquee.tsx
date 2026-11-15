@@ -3,6 +3,7 @@ import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { getArticleCategory, getCategoryShortName } from '../lib/categories';
 import { cn } from '../lib/utils';
+import { MARQUEE_DISPATCHES } from '../lib/page-translations';
 
 interface EditorialMarqueeProps {
   articles: ArticleData[];
@@ -20,15 +21,11 @@ export function EditorialMarquee({ articles, className }: EditorialMarqueeProps)
       slug: article.slug,
       title: article.title,
       author: article.author,
-      categoryShort: getCategoryShortName(category.id),
+      categoryShort: getCategoryShortName(category.id, language.code),
     };
   });
 
-  const editorialDispatches = [
-    { text: 'ISSUE 03 NOW AVAILABLE IN PRINT WORLDWIDE', highlight: true },
-    { text: 'LIMITED RUN OF 1,500 HAND-NUMBERED COPIES', highlight: false },
-    { text: 'WEEKLY EDITORIAL MONOGRAPHS ON VISUAL CULTURE', highlight: false },
-  ];
+  const editorialDispatches = MARQUEE_DISPATCHES[language.code] || MARQUEE_DISPATCHES.en;
 
   // Helper to render one full marquee sequence
   const renderSequence = (keyPrefix: string) => (
@@ -46,7 +43,7 @@ export function EditorialMarquee({ articles, className }: EditorialMarqueeProps)
             {item.title}
           </Link>
           <span className="text-editorial-muted text-[11px] font-serif ms-1.5 italic">
-            by {item.author}
+            {language.code === 'ur' ? `تحریر ${item.author}` : language.code === 'ar' ? `بقلم ${item.author}` : `${t.authorBy || 'by'} ${item.author}`}
           </span>
         </span>
       ))}
