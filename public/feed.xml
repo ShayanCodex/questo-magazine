@@ -5,8 +5,44 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 10:53:07 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 17:48:15 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Acoustic Diffusors & Schroeder Sequences in Architecture]]></title>
+      <link>https://questo-blog.netlify.app/articles/acoustic-diffusors-and-schroeder-number-sequences-in-architecture</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/acoustic-diffusors-and-schroeder-number-sequences-in-architecture</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Mathematical principles of quadratic residue and primitive root diffusors, phase grating scattering, and acoustic space optimization in concert halls.]]></description>
+      <author><![CDATA[Elena Rostova]]></author>
+      
+    </item>
+    <item>
+      <title><![CDATA[Aerospike Engines & Orbital Propulsion]]></title>
+      <link>https://questo-blog.netlify.app/articles/aerospike-engines-and-single-stage-to-orbit-propulsion</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/aerospike-engines-and-single-stage-to-orbit-propulsion</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A propulsion physics investigation into altitude-compensating nozzles, combustion chamber thermodynamics, and single-stage-to-orbit mechanics.]]></description>
+      <author><![CDATA[Dr. Aris Thorne]]></author>
+      <category>science</category>
+    </item>
+    <item>
+      <title><![CDATA[Algorithmic Typographic Rhythm]]></title>
+      <link>https://questo-blog.netlify.app/articles/algorithmic-typographic-rhythm-and-fluid-reading-scales</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/algorithmic-typographic-rhythm-and-fluid-reading-scales</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A digital design theory treatise on modular musical scales, variable font axes, viewport-relative fluid typography, and cognitive reading ergonomics.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>design-and-typography</category>
+    </item>
+    <item>
+      <title><![CDATA[Anatomy of Venture Capital Liquidity & Secondary Markets]]></title>
+      <link>https://questo-blog.netlify.app/articles/anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A financial investigation into delayed public offerings, continuation funds, LP liquidity pressures, and the emergence of private secondary exchanges.]]></description>
+      <author><![CDATA[Julian Sterling]]></author>
+      
+    </item>
     <item>
       <title><![CDATA[The Architecture of Transformer Attention]]></title>
       <link>https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache</link>
@@ -15,6 +51,33 @@
       <description><![CDATA[An investigative monograph on scaled dot-product attention, quadratic memory complexity, multi-query KV cache optimizations, and how modern inference engines conquer the memory wall.]]></description>
       <author><![CDATA[Hiroshi Tanaka]]></author>
       <category>technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Autonomous AI Agents & Context Compaction]]></title>
+      <link>https://questo-blog.netlify.app/articles/autonomous-agent-loops-and-context-compaction</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/autonomous-agent-loops-and-context-compaction</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An engineering analysis of agentic tool-use loops, dynamic memory pruning, multi-turn state compaction, and recursive reflection engines.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Maritime Logistics & Trade Corridors]]></title>
+      <link>https://questo-blog.netlify.app/articles/autonomous-container-vessels-and-panama-canal-draft-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/autonomous-container-vessels-and-panama-canal-draft-economics</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A geopolitical economics analysis of neo-panamax container shipping, drought-induced canal draft restrictions, and Arctic transpolar routing.]]></description>
+      <author><![CDATA[Julian Sterling]]></author>
+      <category>news</category>
+    </item>
+    <item>
+      <title><![CDATA[Biomechanical Force Vectors in Elite Tennis Serves]]></title>
+      <link>https://questo-blog.netlify.app/articles/biomechanical-force-vectors-in-tennis-serves-kinetic-chain-sequencing</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/biomechanical-force-vectors-in-tennis-serves-kinetic-chain-sequencing</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A high-speed kinematic study of ground reaction forces, pelvic rotation, internal shoulder rotation, and kinetic energy summation in professional tennis.]]></description>
+      <author><![CDATA[Liam O'Connor]]></author>
+      
     </item>
     <item>
       <title><![CDATA[Cardiometabolic Biomarkers & ApoB]]></title>
@@ -53,6 +116,15 @@
       <category>food</category>
     </item>
     <item>
+      <title><![CDATA[Circadian Lighting in Workspace Ergonomics]]></title>
+      <link>https://questo-blog.netlify.app/articles/circadian-entrainment-and-melanopic-lux-in-workspace-ergonomics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/circadian-entrainment-and-melanopic-lux-in-workspace-ergonomics</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An environmental lifestyle inquiry into ipRGC photoreception, suprachiasmatic nucleus synchronization, and human-centric circadian workspace lighting.]]></description>
+      <author><![CDATA[Siddharth Nair]]></author>
+      
+    </item>
+    <item>
       <title><![CDATA[Compiler-Driven React & Server Components]]></title>
       <link>https://questo-blog.netlify.app/articles/compiler-driven-react-server-components-hydration-elimination</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/compiler-driven-react-server-components-hydration-elimination</guid>
@@ -71,7 +143,7 @@
       <category>crypto</category>
     </item>
     <item>
-      <title><![CDATA[CRISPR-Cas12 & Precision Base Editing in In-Vivo Medicine]]></title>
+      <title><![CDATA[CRISPR-Cas12 & Precision Base Editing]]></title>
       <link>https://questo-blog.netlify.app/articles/crispr-cas12-base-editing-and-in-vivo-epigenetic-therapeutics</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/crispr-cas12-base-editing-and-in-vivo-epigenetic-therapeutics</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -80,13 +152,49 @@
       
     </item>
     <item>
-      <title><![CDATA[The De-Dollarization Debate & Sovereign Reserve Architecture]]></title>
+      <title><![CDATA[The De-Dollarization Architecture]]></title>
       <link>https://questo-blog.netlify.app/articles/de-dollarization-sovereign-reserve-diversification-and-bilateral-trade</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/de-dollarization-sovereign-reserve-diversification-and-bilateral-trade</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[A macroeconomic and central banking monograph analyzing sovereign treasury reallocation, central bank gold reserves, bilateral currency clearing, and the multipolar monetary order.]]></description>
       <author><![CDATA[Julian Sterling]]></author>
       
+    </item>
+    <item>
+      <title><![CDATA[Deep-Sea Hydrothermal Vents]]></title>
+      <link>https://questo-blog.netlify.app/articles/deep-sea-hydrothermal-vents-chemosynthesis-and-extremophile-biology</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/deep-sea-hydrothermal-vents-chemosynthesis-and-extremophile-biology</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An oceanographic monograph exploring abyssal black smokers, chemoautotrophic sulfide oxidation, and the limits of extraterrestrial habitability.]]></description>
+      <author><![CDATA[Dr. Aris Thorne]]></author>
+      
+    </item>
+    <item>
+      <title><![CDATA[Distributed Consensus: Raft & Paxos]]></title>
+      <link>https://questo-blog.netlify.app/articles/distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An engineering treatise on replicated state machine theory, quorum intersections, leader election heartbeat protocols, and BFT consensus safety.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      
+    </item>
+    <item>
+      <title><![CDATA[eBPF & Modern Kernel Observability]]></title>
+      <link>https://questo-blog.netlify.app/articles/ebpf-programmable-kernels-and-sub-millisecond-observability</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/ebpf-programmable-kernels-and-sub-millisecond-observability</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A systems programming monograph on bytecode sandboxing, in-kernel packet filtering, non-intrusive tracepoints, and zero-context-switch telemetry.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Koji Fermentation & Umami Peptides]]></title>
+      <link>https://questo-blog.netlify.app/articles/enzymatic-koji-fermentation-and-umami-peptides</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/enzymatic-koji-fermentation-and-umami-peptides</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A culinary biochemistry monograph on Aspergillus oryzae solid-state culture, amylase-protease synthesis, and glutamic acid kinetics.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>food</category>
     </item>
     <item>
       <title><![CDATA[Global Forex Liquidity Corridors]]></title>
@@ -96,6 +204,15 @@
       <description><![CDATA[An institutional macroeconomic analysis of cross-border FX liquidity pipes, Federal Reserve swap line plumbing, petro-currency diversification, and multi-currency clearing architecture.]]></description>
       <author><![CDATA[Tariq Mahmood]]></author>
       <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Geopolitics of Critical Minerals]]></title>
+      <link>https://questo-blog.netlify.app/articles/geopolitics-of-critical-minerals-lithium-rare-earths-supply-chains</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/geopolitics-of-critical-minerals-lithium-rare-earths-supply-chains</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An investigative analysis of sovereign mining choke points, metallurgical refining concentration, and strategic reserves powering global energy transition.]]></description>
+      <author><![CDATA[Helena Vance]]></author>
+      
     </item>
     <item>
       <title><![CDATA[Global Semiconductor Supply Chains & EUV Lithography]]></title>
@@ -143,6 +260,15 @@
       <category>technology</category>
     </item>
     <item>
+      <title><![CDATA[Mechanotransduction & Hypertrophy]]></title>
+      <link>https://questo-blog.netlify.app/articles/hypertrophy-mechanotransduction-and-myofibrillar-protein-synthesis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/hypertrophy-mechanotransduction-and-myofibrillar-protein-synthesis</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A molecular exercise physiology analysis of costameric focal adhesions, mTORC1 activation, ribosome biogenesis, and mechanical tension.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      
+    </item>
+    <item>
       <title><![CDATA[Impedance Control in Bipedal Robotics]]></title>
       <link>https://questo-blog.netlify.app/articles/inverse-kinematics-and-impedance-control-in-bipedal-robotics</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/inverse-kinematics-and-impedance-control-in-bipedal-robotics</guid>
@@ -150,6 +276,15 @@
       <description><![CDATA[A robotics engineering treatise on joint torque space mapping, zero-moment point dynamics, compliance modulation, and whole-body locomotion stabilization.]]></description>
       <author><![CDATA[Elena Rostova]]></author>
       <category>technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Lactate Shuttle Dynamics in Athletics]]></title>
+      <link>https://questo-blog.netlify.app/articles/lactate-shuttle-dynamics-and-mitochondrial-clearance</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/lactate-shuttle-dynamics-and-mitochondrial-clearance</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An exercise physiology monograph on monocarboxylate transporters (MCT1/4), intracellular lactate buffering, and mitochondrial oxidative clearance.]]></description>
+      <author><![CDATA[Liam O’Connor]]></author>
+      <category>sports</category>
     </item>
     <item>
       <title><![CDATA[Maritime LNG Energy Corridors]]></title>
@@ -161,6 +296,15 @@
       <category>finance</category>
     </item>
     <item>
+      <title><![CDATA[Thermodynamics of the Maillard Reaction]]></title>
+      <link>https://questo-blog.netlify.app/articles/maillard-reaction-kinetics-and-non-enzymatic-browning-thermodynamics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/maillard-reaction-kinetics-and-non-enzymatic-browning-thermodynamics</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A chemical examination of amino acid and reducing sugar condensation, Amadori rearrangements, Strecker degradation, and culinary flavor creation.]]></description>
+      <author><![CDATA[Chef Alexandre Dumas]]></author>
+      
+    </item>
+    <item>
       <title><![CDATA[The Microbial Ecology of Sourdough]]></title>
       <link>https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</guid>
@@ -168,6 +312,24 @@
       <description><![CDATA[A culinary science monograph exploring symbiotic wild fermentation, Fructilactobacillus sanfranciscensis metabolic pathways, enzymatic gluten degradation, and the physics of crumb aeration.]]></description>
       <author><![CDATA[Sofia Rossi]]></author>
       <category>food</category>
+    </item>
+    <item>
+      <title><![CDATA[Mitochondrial Dynamics & NAD+ Metabolism]]></title>
+      <link>https://questo-blog.netlify.app/articles/mitochondrial-biogenesis-and-nad-metabolism-in-aging</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/mitochondrial-biogenesis-and-nad-metabolism-in-aging</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A geroscience investigation into mitohormesis, sirtuin activation, fission-fusion dynamics, and metabolic resilience in human longevity.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[Modern Architectural Brutalism]]></title>
+      <link>https://questo-blog.netlify.app/articles/modern-architectural-brutalism</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/modern-architectural-brutalism</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An editorial critique and investigation into Modern Architectural Brutalism.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>architecture-and-space</category>
     </item>
     <item>
       <title><![CDATA[Multilink Suspension Geometry]]></title>
@@ -188,6 +350,24 @@
       
     </item>
     <item>
+      <title><![CDATA[Parametric Timber & Architectural Acoustics]]></title>
+      <link>https://questo-blog.netlify.app/articles/parametric-timber-structures-and-low-carbon-acoustics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/parametric-timber-structures-and-low-carbon-acoustics</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An architectural monograph on cross-laminated timber joinery, robotic milling, curved acoustic baffles, and carbon-negative civic spaces.]]></description>
+      <author><![CDATA[Elena Rostova]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[Post-Quantum Lattice Cryptography]]></title>
+      <link>https://questo-blog.netlify.app/articles/post-quantum-cryptography-and-lattice-based-signatures</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/post-quantum-cryptography-and-lattice-based-signatures</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A cryptographic analysis of learning-with-errors (LWE) lattices, Kyber key encapsulation, and Dilithium digital signatures against Shor’s algorithm.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>crypto</category>
+    </item>
+    <item>
       <title><![CDATA[Postprandial Glycemic Variability]]></title>
       <link>https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</guid>
@@ -206,7 +386,7 @@
       <category>architecture-and-space</category>
     </item>
     <item>
-      <title><![CDATA[Small Modular Nuclear Reactors & High-Temperature Gas Systems]]></title>
+      <title><![CDATA[Small Modular Nuclear Reactors]]></title>
       <link>https://questo-blog.netlify.app/articles/small-modular-reactors-molten-salt-high-temperature-gas-nuclear</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/small-modular-reactors-molten-salt-high-temperature-gas-nuclear</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
@@ -230,6 +410,15 @@
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[A macroeconomic investigation into term premia dynamics, Treasury collateral velocity, secured overnight financing rates (SOFR), and the mechanical anatomy of liquidity contagion in global shadow banking.]]></description>
       <author><![CDATA[Claire Dupont]]></author>
+      <category>finance</category>
+    </item>
+    <item>
+      <title><![CDATA[Sovereign Wealth Funds & Infrastructure]]></title>
+      <link>https://questo-blog.netlify.app/articles/sovereign-wealth-funds-and-global-infrastructure-assets</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/sovereign-wealth-funds-and-global-infrastructure-assets</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A macro analysis of institutional allocations toward critical energy grids, subsea telecommunications cables, and sovereign balance sheet stability.]]></description>
+      <author><![CDATA[Julian Sterling]]></author>
       <category>finance</category>
     </item>
     <item>
@@ -260,6 +449,15 @@
       <category>business</category>
     </item>
     <item>
+      <title><![CDATA[Quantum Surface Codes & Error Suppression]]></title>
+      <link>https://questo-blog.netlify.app/articles/topological-quantum-codes-and-surface-code-error-suppression</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/topological-quantum-codes-and-surface-code-error-suppression</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A physical computing study on topological syndrome extraction, stabilizer measurements, braided anyons, and logical qubit fault tolerance.]]></description>
+      <author><![CDATA[Dr. Aris Thorne]]></author>
+      <category>science</category>
+    </item>
+    <item>
       <title><![CDATA[Training LLMs from Scratch]]></title>
       <link>https://questo-blog.netlify.app/articles/training-large-language-models-tokenization-pretraining-alignment</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/training-large-language-models-tokenization-pretraining-alignment</guid>
@@ -276,6 +474,15 @@
       <description><![CDATA[A geographical and structural monograph on Swiss helical mountain railways, masonry viaduct durability, Gotthard base tunnel hydraulics, and ecological transit corridors.]]></description>
       <author><![CDATA[Mateo Silva]]></author>
       <category>travel</category>
+    </item>
+    <item>
+      <title><![CDATA[High-Altitude Himalayan Expeditions]]></title>
+      <link>https://questo-blog.netlify.app/articles/trans-himalayan-high-altitude-mountaineering-and-hypoxia-adaptation</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/trans-himalayan-high-altitude-mountaineering-and-hypoxia-adaptation</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A high-altitude expedition analysis of hypobaric hypoxia, acclimatization kinetics, pulmonary arterial pressure, and trans-Himalayan route navigation.]]></description>
+      <author><![CDATA[Kaelen Ross]]></author>
+      
     </item>
     <item>
       <title><![CDATA[Zero-Knowledge Rollups & zk-SNARKs]]></title>
@@ -413,7 +620,7 @@
       <category>art-and-culture</category>
     </item>
     <item>
-      <title><![CDATA[The Poetics of Concrete: Material Memory, Aggregate Grain & Modernist Form]]></title>
+      <title><![CDATA[The Poetics of Concrete]]></title>
       <link>https://questo-blog.netlify.app/articles/the-poetics-of-concrete</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-poetics-of-concrete</guid>
       <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>

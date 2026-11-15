@@ -8,8 +8,6 @@ import {
   ClockIcon,
   CalendarIcon,
   UserIcon,
-  ArrowsPointingOutIcon,
-  ArrowsPointingInIcon,
   LinkIcon,
   CheckIcon,
 } from '@heroicons/react/24/outline';
@@ -19,6 +17,7 @@ import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { LazyImage } from '../components/LazyImage';
 import { NotFound } from './NotFound';
+import { OriginalPdfReader } from '../components/OriginalPdfReader';
 import { cn } from '../lib/utils';
 import ebooksMasterData from '../data/ebooks.json';
 
@@ -30,9 +29,6 @@ export function EBookDetail() {
   const { t, localePath } = useLanguage();
   const [embedFullscreen, setEmbedFullscreen] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
-  const [activeChapter, setActiveChapter] = useState(0);
-  const [readerFontSize, setReaderFontSize] = useState<'sm' | 'base' | 'lg'>('base');
-  const [readerTheme, setReaderTheme] = useState<'dark' | 'sepia' | 'light'>('dark');
 
   const ebook = useMemo(() => {
     return EBOOKS_LIST.find((b) => b.slug === slug);
@@ -41,36 +37,6 @@ export function EBookDetail() {
   const relatedEbooks = useMemo(() => {
     if (!ebook) return [];
     return EBOOKS_LIST.filter((b) => b.slug !== ebook.slug && b.category === ebook.category).slice(0, 3);
-  }, [ebook]);
-
-  const chapters = useMemo(() => {
-    if (!ebook) return [];
-    return [
-      {
-        title: 'I. Foundations & Historical Context',
-        subtitle: `Original composition in ${ebook.year} by ${ebook.author}`,
-        content: ebook.curatedContext,
-        keyInsight: `Published in ${ebook.year}, this volume inaugurated modern discourse within ${ebook.subdiscipline}. The treatise addresses foundational inquiries into civic order, ethical volition, and analytical clarity.`,
-      },
-      {
-        title: 'II. Core Treatises & Axiomatic Principles',
-        subtitle: `Systematic analysis of ${ebook.subdiscipline}`,
-        content: `Across its principal sections, "${ebook.title}" develops four foundational pillars: ${ebook.keyThemes.join(', ')}. Each conceptual domain operates in harmonic concert, challenging prevailing dogmas while constructing an enduring intellectual grammar that continues to guide contemporary inquiry.`,
-        keyInsight: `The central theorem posits that enduring truth is established through rigorous empirical observation and rational deduction, independent of theological or state coercion.`,
-      },
-      {
-        title: 'III. Dialectical Inquiries & Thematic Pillars',
-        subtitle: 'Critical discourse and intellectual framework',
-        content: `In the dialectical development of "${ebook.title}", ${ebook.author} examines the dynamic tensions between individual volition and collective obligation. The discourse demonstrates how structural constraints shape human endeavor, offering a lucid framework for navigating ethical dilemmas and societal transformations.`,
-        keyInsight: `Key thematic focus: ${ebook.keyThemes.slice(0, 2).join(' & ')} form the primary operational axis of the monograph.`,
-      },
-      {
-        title: 'IV. Archival Provenance & Historical Legacy',
-        subtitle: 'Public domain heritage and archival preservation',
-        content: `Certified under ${ebook.license}, "${ebook.title}" belongs to the common heritage of humanity. The work is preserved in open digital repositories worldwide for unfettered study, translation, and academic research with zero paywalls.`,
-        keyInsight: `Preserved via open cultural access for global scholarship and public inquiry.`,
-      },
-    ];
   }, [ebook]);
 
   if (!ebook) {
@@ -274,208 +240,13 @@ export function EBookDetail() {
           </div>
         </div>
 
-        {/* Full Native In-Browser Reading Suite - Zero Third-Party Iframes */}
+        {/* Full Interactive PDF & Complete Unabridged Reader Suite */}
         <section className="space-y-4 pt-8 border-t border-editorial-border">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-              <span className="text-xs font-sans uppercase tracking-widest text-emerald-500 font-semibold block">
-                Questo Native Reader • Complete Unabridged Monograph
-              </span>
-              <h2 className="font-display font-bold text-2xl uppercase tracking-tight text-editorial-text">
-                Interactive Reading Suite
-              </h2>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <a
-                href={ebook.pdfUrl}
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-editorial-text text-editorial-bg text-xs font-sans font-semibold hover:opacity-90 transition-opacity"
-              >
-                <ArrowDownTrayIcon className="h-3.5 w-3.5" />
-                <span>Download Scanned PDF</span>
-              </a>
-
-              <button
-                type="button"
-                onClick={() => setEmbedFullscreen((prev) => !prev)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-editorial-border hover:border-editorial-text text-xs font-sans font-medium text-editorial-text hover:bg-editorial-surface transition-colors cursor-pointer"
-              >
-                {embedFullscreen ? (
-                  <>
-                    <ArrowsPointingInIcon className="h-3.5 w-3.5" />
-                    <span>Exit Fullscreen</span>
-                  </>
-                ) : (
-                  <>
-                    <ArrowsPointingOutIcon className="h-3.5 w-3.5" />
-                    <span>Expand Reader</span>
-                  </>
-                )}
-              </button>
-            </div>
-          </div>
-
-          {/* Reading Suite Canvas */}
-          <div
-            className={cn(
-              'w-full rounded-2xl overflow-hidden border border-editorial-border shadow-md flex flex-col transition-all duration-300',
-              embedFullscreen
-                ? 'fixed inset-0 z-50 rounded-none h-screen border-0'
-                : 'min-h-[580px] relative',
-              readerTheme === 'dark' && 'bg-editorial-bg text-editorial-text',
-              readerTheme === 'sepia' && 'bg-[#f4ecd8] text-[#3c2f1f] border-[#d8c8a8]',
-              readerTheme === 'light' && 'bg-white text-neutral-900 border-neutral-200'
-            )}
-          >
-            {/* Top Toolbar */}
-            <div className="px-4 sm:px-6 py-3 border-b border-editorial-border/60 bg-editorial-surface/80 backdrop-blur-xs flex flex-wrap items-center justify-between gap-3 shrink-0">
-              {/* Chapter Tabs */}
-              <div className="flex items-center gap-1.5 overflow-x-auto py-1 max-w-full">
-                {chapters.map((ch, idx) => (
-                  <button
-                    key={ch.title}
-                    type="button"
-                    onClick={() => setActiveChapter(idx)}
-                    className={cn(
-                      'px-3 py-1 rounded-lg text-xs font-sans font-medium transition-colors cursor-pointer shrink-0',
-                      activeChapter === idx
-                        ? 'bg-editorial-text text-editorial-bg shadow-2xs font-semibold'
-                        : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-subtle'
-                    )}
-                  >
-                    <span>Part {idx + 1}</span>
-                  </button>
-                ))}
-              </div>
-
-              {/* Typography & Theme Controls */}
-              <div className="flex items-center gap-4 text-xs font-sans shrink-0">
-                <div className="flex items-center gap-1">
-                  <span className="text-editorial-muted text-[10px] font-semibold uppercase tracking-wider hidden sm:inline">Size:</span>
-                  <button
-                    type="button"
-                    onClick={() => setReaderFontSize('sm')}
-                    className={cn('px-2 py-0.5 rounded cursor-pointer font-medium', readerFontSize === 'sm' ? 'bg-editorial-text text-editorial-bg' : 'text-editorial-muted')}
-                  >
-                    A-
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setReaderFontSize('base')}
-                    className={cn('px-2 py-0.5 rounded cursor-pointer font-medium', readerFontSize === 'base' ? 'bg-editorial-text text-editorial-bg' : 'text-editorial-muted')}
-                  >
-                    A
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setReaderFontSize('lg')}
-                    className={cn('px-2 py-0.5 rounded cursor-pointer font-medium', readerFontSize === 'lg' ? 'bg-editorial-text text-editorial-bg' : 'text-editorial-muted')}
-                  >
-                    A+
-                  </button>
-                </div>
-
-                <div className="flex items-center gap-1.5">
-                  <span className="text-editorial-muted text-[10px] font-semibold uppercase tracking-wider hidden sm:inline">Theme:</span>
-                  <button
-                    type="button"
-                    onClick={() => setReaderTheme('dark')}
-                    className={cn('w-4 h-4 rounded-full bg-neutral-900 border border-neutral-700 cursor-pointer', readerTheme === 'dark' && 'ring-2 ring-accent')}
-                    title="Dark Obsidian"
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setReaderTheme('sepia')}
-                    className={cn('w-4 h-4 rounded-full bg-[#f4ecd8] border border-[#d8c8a8] cursor-pointer', readerTheme === 'sepia' && 'ring-2 ring-amber-700')}
-                    title="Sepia Parchment"
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setReaderTheme('light')}
-                    className={cn('w-4 h-4 rounded-full bg-white border border-neutral-300 cursor-pointer', readerTheme === 'light' && 'ring-2 ring-neutral-900')}
-                    title="Clean Light"
-                  />
-                </div>
-
-                {embedFullscreen && (
-                  <button
-                    type="button"
-                    onClick={() => setEmbedFullscreen(false)}
-                    className="px-3 py-1 rounded-lg bg-editorial-text text-editorial-bg text-xs font-bold cursor-pointer hover:opacity-90"
-                  >
-                    Close ✕
-                  </button>
-                )}
-              </div>
-            </div>
-
-            {/* Reading Content Canvas */}
-            <div className="flex-1 p-6 sm:p-12 overflow-y-auto max-w-4xl mx-auto space-y-8 w-full">
-              <div className="space-y-2 border-b border-editorial-border/50 pb-6 text-center">
-                <span className="text-xs font-sans uppercase tracking-widest text-accent font-semibold block">
-                  {chapters[activeChapter]?.subtitle}
-                </span>
-                <h3 className="font-display font-bold text-xl sm:text-3xl">
-                  {chapters[activeChapter]?.title}
-                </h3>
-              </div>
-
-              {/* Main Reading Paragraphs */}
-              <div className="space-y-6">
-                <p
-                  className={cn(
-                    'font-serif leading-relaxed',
-                    readerFontSize === 'sm' && 'text-sm sm:text-base',
-                    readerFontSize === 'base' && 'text-base sm:text-lg',
-                    readerFontSize === 'lg' && 'text-lg sm:text-xl'
-                  )}
-                >
-                  <span className="float-start text-4xl sm:text-5xl font-display font-bold leading-none pe-3 pt-1 text-accent">
-                    {chapters[activeChapter]?.content.charAt(0)}
-                  </span>
-                  {chapters[activeChapter]?.content.slice(1)}
-                </p>
-
-                {/* Key Insight Pull Quote */}
-                <div className="p-6 rounded-xl border border-editorial-border/60 bg-editorial-surface/40 my-6">
-                  <div className="text-xs font-sans font-bold uppercase tracking-wider text-accent mb-2">
-                    Core Philosophical Axiom
-                  </div>
-                  <p className="font-serif italic text-base sm:text-lg leading-relaxed text-editorial-text">
-                    "{chapters[activeChapter]?.keyInsight}"
-                  </p>
-                </div>
-              </div>
-
-              {/* Navigation Between Chapters */}
-              <div className="pt-8 border-t border-editorial-border/50 flex items-center justify-between gap-4">
-                <button
-                  type="button"
-                  onClick={() => setActiveChapter((c) => Math.max(0, c - 1))}
-                  disabled={activeChapter === 0}
-                  className="px-4 py-2 rounded-lg border border-editorial-border text-xs font-sans font-semibold disabled:opacity-30 disabled:pointer-events-none hover:bg-editorial-surface transition-colors cursor-pointer"
-                >
-                  ← Previous Part
-                </button>
-
-                <div className="text-xs font-sans text-editorial-muted">
-                  Part <strong className="text-editorial-text">{activeChapter + 1}</strong> of <strong className="text-editorial-text">{chapters.length}</strong>
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => setActiveChapter((c) => Math.min(chapters.length - 1, c + 1))}
-                  disabled={activeChapter === chapters.length - 1}
-                  className="px-4 py-2 rounded-lg border border-editorial-border text-xs font-sans font-semibold disabled:opacity-30 disabled:pointer-events-none hover:bg-editorial-surface transition-colors cursor-pointer"
-                >
-                  Next Part →
-                </button>
-              </div>
-            </div>
-          </div>
+          <OriginalPdfReader
+            ebook={ebook}
+            isFullscreen={embedFullscreen}
+            onToggleFullscreen={() => setEmbedFullscreen((prev) => !prev)}
+          />
         </section>
 
         {/* Public Domain & Licensing Integrity Statement */}
