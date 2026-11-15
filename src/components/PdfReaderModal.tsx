@@ -58,9 +58,6 @@ export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProp
     }
   };
 
-  // Google Docs viewer acts as a reliable CDN proxy avoiding Archive.org 503 CORS errors
-  const proxyViewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(ebook.pdfUrl)}&embedded=true`;
-
   return (
     <DialogPrimitive.Root open={open} onOpenChange={onOpenChange}>
       <DialogPrimitive.Portal>
@@ -353,15 +350,58 @@ export function PdfReaderModal({ ebook, open, onOpenChange }: PdfReaderModalProp
                 </div>
               </div>
             ) : (
-              /* Embedded Document Viewer via Secure Google Proxy (No Archive 503) */
-              <div className="w-full h-full flex flex-col bg-neutral-900">
-                <iframe
-                  src={proxyViewerUrl}
-                  title={`${ebook.title} Scanned Edition`}
-                  className="w-full h-full border-0"
-                  allow="fullscreen"
-                  loading="lazy"
-                />
+              /* Direct Document Streaming Access Hub */
+              <div className="w-full h-full flex flex-col items-center justify-center p-8 bg-neutral-950 text-center space-y-6">
+                <div className="max-w-md mx-auto space-y-4">
+                  <div className="w-16 h-16 rounded-2xl bg-editorial-surface border border-editorial-border flex items-center justify-center mx-auto shadow-md">
+                    <DocumentTextIcon className="h-8 w-8 text-emerald-400" />
+                  </div>
+
+                  <div className="space-y-2">
+                    <h3 className="font-display font-bold text-xl text-neutral-100">
+                      {ebook.title}
+                    </h3>
+                    <p className="font-sans text-xs text-neutral-400">
+                      Original Scanned Edition ({ebook.pageCount} pages • Public Domain)
+                    </p>
+                  </div>
+
+                  <p className="font-serif text-xs text-neutral-400 leading-relaxed">
+                    To ensure pristine rendering without third-party iframe compression or latency, you can stream or download the original high-resolution preservation scan directly.
+                  </p>
+
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                    <a
+                      href={ebook.pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-sans text-xs font-semibold shadow-md transition-colors flex items-center justify-center gap-2"
+                    >
+                      <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+                      <span>Open Full PDF in New Tab</span>
+                    </a>
+
+                    <a
+                      href={ebook.pdfUrl}
+                      download
+                      className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-editorial-surface border border-editorial-border hover:border-editorial-text text-neutral-200 font-sans text-xs font-semibold transition-colors flex items-center justify-center gap-2"
+                    >
+                      <ArrowDownTrayIcon className="h-4 w-4" />
+                      <span>Download File</span>
+                    </a>
+                  </div>
+
+                  <div className="pt-4 border-t border-neutral-800">
+                    <button
+                      type="button"
+                      onClick={() => setReaderMode('text')}
+                      className="text-xs font-sans text-accent hover:underline cursor-pointer inline-flex items-center gap-1.5"
+                    >
+                      <BookOpenIcon className="h-3.5 w-3.5" />
+                      <span>Switch back to Questo In-Browser Reader</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             )}
           </div>
