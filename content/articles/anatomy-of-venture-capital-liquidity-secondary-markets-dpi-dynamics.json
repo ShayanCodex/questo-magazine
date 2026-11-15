@@ -1,0 +1,66 @@
+{
+  "slug": "anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics",
+  "title": "Anatomy of Venture Capital Liquidity & Secondary Markets",
+  "excerpt": "A financial investigation into delayed public offerings, continuation funds, LP liquidity pressures, and the emergence of private secondary exchanges.",
+  "date": "2026-11-15",
+  "author": "Julian Sterling",
+  "tags": [
+    "venture-capital",
+    "liquidity",
+    "private-equity",
+    "secondary-markets",
+    "finance"
+  ],
+  "image": "/images/articles/venture-capital-finance.jpg",
+  "imageAlt": "Modern financial district architectural atrium symbolizing private capital markets and investment banking",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Structural Liquidity Deficit"
+    },
+    {
+      "type": "p",
+      "text": "For over a decade, venture capital operated on a predictable flywheel: raise fund, deploy capital into high-growth software enterprises, and return proceeds via initial public offerings (IPOs) or strategic acquisitions within a 7-to-10-year fund lifecycle. Today, that conventional liquidity pipeline has experienced systemic gridlock as private companies remain unlisted for 14 or more years."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "DPI vs. TVPI Divergence: Institutional limited partners (LPs) increasingly demand Distributed to Paid-In capital (DPI) rather than theoretical mark-ups (TVPI).",
+        "Continuation Vehicles: General partners (GPs) are creating structured secondary continuation funds to roll prized assets while offering liquidity windows.",
+        "Discount Pressures: Private secondary market transactions frequently clear at 20% to 40% discounts to previous sovereign venture funding valuations.",
+        "Institutional Secondary Platforms: The rise of algorithmic matching engines and standardized transfer documentation has turned private shares into a distinct asset class."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Unrealized internal rates of return cannot fund institutional pension payouts. In a mature venture ecosystem, DPI is the only metric that preserves capital allocator confidence.",
+      "cite": "Institutional Private Markets Quarterly Review"
+    },
+    {
+      "type": "h2",
+      "text": "GP-Led Secondaries and Fund Architecture"
+    },
+    {
+      "type": "p",
+      "text": "To avoid fire-selling high-conviction portfolio companies into tepid IPO environments, investment managers are turning to GP-led single-asset secondary vehicles. These transactions allow external secondary investors to inject fresh growth capital, while existing limited partners can elect to cash out or roll their ownership interest."
+    },
+    {
+      "type": "video",
+      "title": "Private Equity and Venture Capital Secondary Markets Explained",
+      "caption": "Financial analysis breaking down how continuation funds, LP-led portfolio sales, and secondary transaction pricing operate in institutional finance.",
+      "src": "https://www.youtube-nocookie.com/embed/5T8vV8dFmGQ"
+    },
+    {
+      "type": "h2",
+      "text": "The Future of Venture Capital Maturation"
+    },
+    {
+      "type": "p",
+      "text": "As secondary exchanges automate capitalization table reconciliations and compliance hurdles, private equity and venture capital will resemble a continuous secondary market rather than an episodic liquidity event, permanently restructuring Silicon Valley capitalization dynamics."
+    }
+  ]
+}

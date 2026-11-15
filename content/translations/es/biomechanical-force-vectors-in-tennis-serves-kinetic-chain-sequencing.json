@@ -1,0 +1,67 @@
+{
+  "slug": "biomechanical-force-vectors-in-tennis-serves-kinetic-chain-sequencing",
+  "title": "Vectores de fuerza biomecánica en servicios de tenis de élite",
+  "excerpt": "Un estudio cinemático de alta velocidad de las fuerzas de reacción del suelo, rotación pélvica, rotación interna del hombro y suma de energía cinética en el tenis profesional.",
+  "date": "2026-11-15",
+  "author": "Liam O'Connor",
+  "tags": [
+    "tennis",
+    "biomechanics",
+    "sports-science",
+    "kinematics",
+    "athletic-performance"
+  ],
+  "image": "/images/articles/tennis-biomechanics-serve.jpg",
+  "imageAlt": "Tenista profesional en pose dinámica de trofeo preparándose para un primer servicio explosivo en la cancha",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La física de la velocidad balística de la raqueta"
+    },
+    {
+      "type": "p",
+      "text": "El servicio de tenis profesional es una de las acciones cinemáticas de circuito cerrado de múltiples articulaciones más explosivas en el atletismo competitivo. Lograr velocidades de lanzamiento superiores a 220 km/h requiere mucho más que la fuerza de las extremidades superiores; exige la transferencia secuencial y desinhibida de energía mecánica a lo largo de una cadena cinética ininterrumpida desde la superficie de la cancha hasta el punto de impacto de la raqueta."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Fuerza de reacción del suelo (GRF): la flexión explosiva de la rodilla y el empuje vertical del suelo generan el impulso lineal inicial que impulsa toda la secuencia cinética.",
+        "Separación pélvica y torácica: la rotación de la cadera conduce a la rotación del hombro, creando un ciclo elástico de estiramiento y acortamiento a través de la musculatura oblicua central.",
+        "Rotación interna del hombro: Las velocidades angulares que exceden los 2400 grados por segundo en la rotación interna del hombro contribuyen hasta el 50% de la velocidad final de la cabeza de la raqueta.",
+        "Ventana de elevación del impacto: Golpear la pelota en el vértice del vector de impulso vertical optimiza el despeje parabólico y los ángulos de trayectoria descendente de la cancha."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La energía no se crea en el brazo. La cabeza de la raqueta simplemente actúa como el látigo terminal que descarga la fuerza del suelo canalizada a través de las caderas, la columna y la cintura escapular.",
+      "cite": "Sociedad Internacional de Biomecánica Deportiva"
+    },
+    {
+      "type": "h2",
+      "text": "Secuenciación cinemática segmentaria"
+    },
+    {
+      "type": "p",
+      "text": "La captura de movimiento óptico 3D de alta velocidad revela que la velocidad angular máxima sigue una progresión estricta de proximal a distal: la desaceleración de la pelvis inicia la aceleración del tronco, la desaceleración del tronco inicia la rotación del hombro, seguida en intervalos de microsegundos por la extensión del codo, la pronación del antebrazo y la flexión de la muñeca."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/5D_1E4kGZ_A",
+      "title": "Biomecánica de la cadena cinética en el servicio de tenis moderno",
+      "caption": "Cámara de alta velocidad y análisis de seguimiento de movimiento 3D que detalla las fuerzas de reacción del suelo, la inclinación torácica y la mecánica de rotación interna del hombro."
+    },
+    {
+      "type": "h2",
+      "text": "Prevención de lesiones y desaceleración escapular"
+    },
+    {
+      "type": "p",
+      "text": "La fase de desaceleración excéntrica después del impacto de la pelota somete el manguito rotador posterior y el labrum a fuerzas de distracción extremas. El acondicionamiento moderno se centra en gran medida en el entrenamiento de desaceleración excéntrica de la cadena posterior para salvaguardar la longevidad de las articulaciones durante más de 200 cargas de servicio en partidos."
+    }
+  ],
+  "sourceHash": "e108c63a629d8092b338d28c4d66b231001d4240"
+}

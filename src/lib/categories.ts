@@ -259,6 +259,16 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'neuromorphic-computing-spiking-neural-networks-event-driven-silicon': { categoryId: 'technology', subcategoryId: 'artificial-intelligence' },
   'de-dollarization-sovereign-reserve-diversification-and-bilateral-trade': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
   'crispr-cas12-base-editing-and-in-vivo-epigenetic-therapeutics': { categoryId: 'health', subcategoryId: 'preventive-medicine' },
+  'geopolitics-of-critical-minerals-lithium-rare-earths-supply-chains': { categoryId: 'news', subcategoryId: 'geopolitics' },
+  'anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics': { categoryId: 'business', subcategoryId: 'startups-and-venture' },
+  'biomechanical-force-vectors-in-tennis-serves-kinetic-chain-sequencing': { categoryId: 'sports', subcategoryId: 'sports-science' },
+  'acoustic-diffusors-and-schroeder-number-sequences-in-architecture': { categoryId: 'architecture-and-space', subcategoryId: 'spatial-theory' },
+  'maillard-reaction-kinetics-and-non-enzymatic-browning-thermodynamics': { categoryId: 'food', subcategoryId: 'culinary-techniques' },
+  'hypertrophy-mechanotransduction-and-myofibrillar-protein-synthesis': { categoryId: 'fitness', subcategoryId: 'strength-training' },
+  'deep-sea-hydrothermal-vents-chemosynthesis-and-extremophile-biology': { categoryId: 'science', subcategoryId: 'environmental-science' },
+  'trans-himalayan-high-altitude-mountaineering-and-hypoxia-adaptation': { categoryId: 'travel', subcategoryId: 'expeditions-and-routes' },
+  'circadian-entrainment-and-melanopic-lux-in-workspace-ergonomics': { categoryId: 'lifestyle', subcategoryId: 'productivity-systems' },
+  'distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines': { categoryId: 'software', subcategoryId: 'backend-and-apis' },
 };
 
 export function getCategoryById(id: string): Category | undefined {

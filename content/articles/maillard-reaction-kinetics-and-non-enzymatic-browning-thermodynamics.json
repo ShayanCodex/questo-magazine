@@ -1,0 +1,66 @@
+{
+  "slug": "maillard-reaction-kinetics-and-non-enzymatic-browning-thermodynamics",
+  "title": "Maillard Reaction Kinetics & Non-Enzymatic Browning",
+  "excerpt": "A chemical examination of amino acid and reducing sugar condensation, Amadori rearrangements, Strecker degradation, and culinary flavor creation.",
+  "date": "2026-11-15",
+  "author": "Chef Alexandre Dumas",
+  "tags": [
+    "food-science",
+    "gastronomy",
+    "culinary-techniques",
+    "chemistry",
+    "thermodynamics"
+  ],
+  "image": "/images/articles/maillard-reaction-culinary.jpg",
+  "imageAlt": "High-temperature searing of a culinary creation with rich golden-brown caramelization in a professional kitchen",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Chemical Architecture of Roasted Flavor"
+    },
+    {
+      "type": "p",
+      "text": "Every golden crust on a sourdough loaf, roasted coffee bean, and seared steak owes its aromatic depth to one of the most intricate cascades in food chemistry: the Maillard reaction. Named after French chemist Louis-Camille Maillard, this non-enzymatic browning pathway transforms simple reducing sugars and amino acid nucleophiles into hundreds of volatile flavor molecules."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Initial Condensation: Nucleophilic attack of an unprotonated amine on a reducing sugar carbonyl carbon yields an unstable glycosylamine.",
+        "Amadori Rearrangement: Acid-catalyzed isomerization converts aldosylamines into stable 1-amino-1-deoxy-2-ketoses, the pivotal intermediate phase.",
+        "Strecker Degradation: Dicarbonyl intermediates react with amino acids to generate aldehydes and aminoketones that condense into aromatic pyrazines.",
+        "Water Activity Balance: Reaction velocity peaks at intermediate water activity ($a_w \\approx 0.65$ to $0.75$), while free surface water suppresses browning."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Cooking is applied thermodynamics. The mastery of heat, surface hydration, and surface pH is nothing less than the conscious acceleration of Maillard kinetics.",
+      "cite": "Modernist Culinary Science Journal"
+    },
+    {
+      "type": "h2",
+      "text": "Thermal Thresholds and Surface Hydration"
+    },
+    {
+      "type": "p",
+      "text": "The Maillard cascade accelerates exponentially above 140°C (284°F). Because liquid water evaporates at 100°C at atmospheric pressure, wet food surfaces cannot achieve the thermodynamic activation energy required for rapid browning until surface moisture has completely vaporized. This explains why surface desiccation is essential for high-heat roasting."
+    },
+    {
+      "type": "video",
+      "title": "The Science of the Maillard Reaction & Browning Thermodynamics",
+      "caption": "Detailed food chemistry analysis of amino acids, reducing sugars, Strecker aldehydes, and heterocyclic flavor compounds.",
+      "src": "https://www.youtube-nocookie.com/embed/FwFvH_ZfBcw"
+    },
+    {
+      "type": "h2",
+      "text": "pH Manipulation and Modern Gastronomy"
+    },
+    {
+      "type": "p",
+      "text": "Elevating surface pH using alkaline buffers (such as sodium bicarbonate) deprotonates amino acid amine groups, increasing their nucleophilicity and dramatically accelerating reaction kinetics at lower temperatures without overcooking the interior."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "trans-himalayan-high-altitude-mountaineering-and-hypoxia-adaptation",
+  "title": "Expéditions alpines trans-himalayennes et hypoxie à haute altitude",
+  "excerpt": "Une analyse d'expédition à haute altitude de l'hypoxie hypobare, de la cinétique d'acclimatation, de la pression artérielle pulmonaire et de la navigation sur la route trans-himalayenne.",
+  "date": "2026-11-15",
+  "author": "Kaelen Ross",
+  "tags": [
+    "travel",
+    "mountaineering",
+    "high-altitude",
+    "expeditions",
+    "hypoxia"
+  ],
+  "image": "/images/articles/himalayan-mountaineering-glacier.jpg",
+  "imageAlt": "Sommets alpins enneigés et lignes de crête glaciaires du haut Himalaya sous un ciel azur clair.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La physiologie de la zone de la mort"
+    },
+    {
+      "type": "p",
+      "text": "L'ascension au-dessus de 8 000 mètres plonge l'organisme humain dans la « zone de la mort », un environnement où la pression barométrique chute à environ un tiers de la valeur du niveau de la mer (environ 250 mmHg). Bien que la fraction d'oxygène ambiant reste constante à 20,9 %, la chute brutale de la pression partielle inspirée ($P_iO_2$) prive l'oxygénation des tissus, exigeant une acclimatation compensatoire systémique."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Dynamique de la pression hypobare : à 8 000 m, la saturation artérielle en oxygène ($SaO_2$) tombe en dessous de 60 %, ce qui met à rude épreuve le calcul cognitif et le contrôle moteur.",
+        "Activation de HIF-1alpha : l'hypoxie cellulaire stabilise le facteur 1-alpha inductible par l'hypoxie, entraînant la sécrétion rénale d'érythropoïétine (EPO) et la prolifération de l'hématocrite érythrocytaire.",
+        "Hyperventilation et alcalose respiratoire : les chimiorécepteurs du corps carotidien provoquent une tachypnée persistante, évacuant le CO2 et induisant l'excrétion rénale de bicarbonate pour tamponner le pH artériel.",
+        "Œdème cérébral et pulmonaire : une ascension soudaine sans acclimatation progressive risque une extravasation de liquide capillaire, déclenchant un HACE ou un HAPE potentiellement mortel."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "À huit mille mètres, la survie n’est pas une question de volonté ; il s'agit d'un titrage délicat de la pression barométrique, des équations des gaz alvéolaires et d'un lent tampon physiologique systémique.",
+      "cite": "Himalayan High-Altitude Medicine & Expedition Society"
+    },
+    {
+      "type": "h2",
+      "text": "Logistique de rotation de montée en hauteur et de sommeil faible"
+    },
+    {
+      "type": "p",
+      "text": "Le style alpin moderne et les expéditions de siège par étapes utilisent des rotations par étapes strictes. Les grimpeurs montent à travers des camps élevés progressifs (C1, C2, C3) pour déclencher l'adaptation cellulaire avant de descendre au camp de base pour un sommeil réparateur, atténuant la fatigue chronique d'altitude tout en augmentant la concentration d'hémoglobine."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/8rWjEwG5V-0",
+      "title": "Physiologie de haute altitude : comment le corps humain survit au froid extrême et à l'hypoxie",
+      "caption": "Documentaire d'expédition médicale examinant l'adaptation hématologique, les courbes de transport de l'oxygène et les échanges gazeux pulmonaires au-dessus de 7 000 mètres."
+    },
+    {
+      "type": "h2",
+      "text": "Intendance souveraine de la route himalayenne"
+    },
+    {
+      "type": "p",
+      "text": "Alors que les terrains glaciaires fragiles reculent sous l'effet des changements climatiques, les alliances régionales de conservation et les guildes de guides Sherpas mettent en œuvre des cadres rigoureux d'expédition sans trace de déchets et des manifestes d'équipement suivis par GPS pour protéger les bassins versants alpins."
+    }
+  ],
+  "sourceHash": "1514c94856ccb10c829ecd16d311ec59283d9fe5"
+}

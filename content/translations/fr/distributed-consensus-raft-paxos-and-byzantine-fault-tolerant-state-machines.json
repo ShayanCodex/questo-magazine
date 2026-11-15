@@ -1,0 +1,67 @@
+{
+  "slug": "distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines",
+  "title": "Consensus distribué : Raft, Paxos et Byzantine State Machines",
+  "excerpt": "Un traité d'ingénierie sur la théorie des machines à états répliquées, les intersections de quorum, les protocoles de battement de cœur pour l'élection des dirigeants et la sécurité du consensus BFT.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "software",
+    "distributed-systems",
+    "consensus",
+    "backend-and-apis",
+    "system-architecture"
+  ],
+  "image": "/images/articles/distributed-servers-datacenter.jpg",
+  "imageAlt": "Racks de serveurs haute densité avec câblage en fibre optique dans un centre de données cloud distribué à grande échelle",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le problème fondamental de l'accord distribué"
+    },
+    {
+      "type": "p",
+      "text": "Au cœur des architectures cloud modernes, des banques de données distribuées comme CockroachDB et etcd aux registres de règlement blockchain, se trouve le défi de la réplication de machines à états distribuées. Comment un cluster de nœuds de serveur indépendants peut-il se mettre d’accord sur une séquence ordonnée de transitions d’état sur un réseau asynchrone sujet aux pertes de paquets, aux pics de latence et aux pannes de machine ?"
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Modèle de machine à états répliqués (RSM) : si plusieurs machines à états déterministes traitent exactement la même séquence d'entrées de journal à partir du même état initial, elles arrivent à des états finaux identiques.",
+        "Décomposition Paxos vs Raft : alors que Multi-Paxos combine des phases de consensus, Raft divise le problème en sous-problèmes distincts : élection du leader, réplication des journaux et sécurité des validations.",
+        "Théorème de chevauchement de quorum : deux quorums de taille $Q = \\lfloor N/2 \\rfloor + 1$ dans un cluster de nœuds $N$ doivent partager au moins un nœud, garantissant que les validations de journaux historiques ne peuvent pas être écrasées.",
+        "Tolérance aux pannes byzantines (BFT) : les protocoles tolérants aux pannes tolèrent les pannes $f$ sur les nœuds $2f+1$ ; Les protocoles BFT tolèrent $f$ des fautes malveillantes ou arbitraires sur les nœuds $3f+1$."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le consensus ne concerne pas la vitesse de communication ; c'est la garantie mathématique que la vérité reste singulière et non répudiable au-delà des frontières physiques asynchrones.",
+      "cite": "Symposium ACM sur les principes de l'informatique distribuée"
+    },
+    {
+      "type": "h2",
+      "text": "Propriété de correspondance des journaux Raft et invariants de terme"
+    },
+    {
+      "type": "p",
+      "text": "Raft applique deux invariants critiques : si deux entrées dans des journaux différents ont le même index et le même terme, elles stockent la même commande ; de plus, si deux entrées correspondent, alors toutes les entrées précédentes dans leurs journaux sont identiques. Lorsqu'un leader élu établit des battements de cœur, la résolution des conflits entre partisans tronque continuellement les entrées divergentes non validées."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/vYp4c7o980U",
+      "title": "Systèmes distribués : algorithme de consensus Raft en 20 minutes",
+      "caption": "Présentation visuelle de l'élection du leader, des compteurs de mandats, des minuteries d'élection aléatoires, de la réplication des journaux et de la récupération des partitions réseau dans les clusters Raft."
+    },
+    {
+      "type": "h2",
+      "text": "Des défauts de crash aux réseaux BFT décentralisés"
+    },
+    {
+      "type": "p",
+      "text": "Les registres fédérés modernes remplacent les simples hypothèses de crash par des votes signés cryptographiquement et des protocoles de changement de vue (par exemple, PBFT, Tendermint, HotStuff), limitant la latence du pipeline à la complexité de communication $O(N)$ dans le cadre d'une exécution optimiste."
+    }
+  ],
+  "sourceHash": "7e82f7234fb2382d2b90b72e7d6695e670bbfb18"
+}

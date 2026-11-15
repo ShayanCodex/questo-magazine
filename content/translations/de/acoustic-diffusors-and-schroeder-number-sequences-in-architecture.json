@@ -1,0 +1,67 @@
+{
+  "slug": "acoustic-diffusors-and-schroeder-number-sequences-in-architecture",
+  "title": "Akustische Diffusoren und Schroeder-Sequenzen in der Architektur",
+  "excerpt": "Mathematische Prinzipien quadratischer Rest- und Primitivwurzeldiffusoren, Phasengitterstreuung und akustische Raumoptimierung in Konzertsälen.",
+  "date": "2026-11-15",
+  "author": "Elena Rostova",
+  "tags": [
+    "architecture",
+    "acoustics",
+    "structural-design",
+    "mathematics",
+    "concert-halls"
+  ],
+  "image": "/images/articles/acoustic-wood-architecture.jpg",
+  "imageAlt": "Skulpturale Akustikholzwandpaneele und architektonische Schallwände in einem modernen Philharmoniesaal",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Jenseits von Spiegelreflexion und Absorption"
+    },
+    {
+      "type": "p",
+      "text": "Die Architekturakustik hat sich über die binäre Spannung von Spiegelreflexion und poröser Absorption hinaus entwickelt. Während harte, ebene Oberflächen Schall wie Spiegel reflektieren und dichte Stoffe die Schallenergie dämpfen, streuen Diffusoren einfallende Wellenenergie gleichmäßig über Zeit und Raumkoordinaten, ohne die akustische Vitalität der Umgebung zu beeinträchtigen."
+    },
+    {
+      "type": "h2",
+      "text": "Wichtige Punkte"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Quadratische Rückstandsdiffusoren (QRD): Entworfen unter Verwendung der mathematischen modularen Arithmetik $s_n = n^2 \\pmod{N}$, wodurch Bohrlochtiefen erzeugt werden, die die Phase gleichmäßig verschieben.",
+        "Primitive Root Diffusors (PRD): Nutzen Sie die Primzahltheorie, um Spiegelreflexionen nullter Ordnung über breite akustische Mittelfrequenzbänder zu eliminieren.",
+        "Erhaltung der Nachhallenergie: Im Gegensatz zu Glasfaserabsorbern bewahren Diffusoren die Raumenergie und eliminieren gleichzeitig Flatterechos und Kammfilterung.",
+        "Räumliche Einhüllende: Verteilte Phasengitter-Arrays verstärken den subjektiven Eindruck der Zuhörereinhüllenden (LEV) in Symphoniehallen."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Ein großer Konzertsaal bringt den Klang nicht zum Schweigen; Es streut akustische Energie mit mathematischer Präzision, sodass jeder Sitzplatz eine immersive, kohärente Klangbühne wahrnimmt.",
+      "cite": "Acoustical Society of Architectural Engineers"
+    },
+    {
+      "type": "h2",
+      "text": "Phasengitter-Mathematik"
+    },
+    {
+      "type": "p",
+      "text": "Mathematische Phasengitter wurden Ende der 1970er Jahre vom Physiker Manfred Schroeder entwickelt und nutzen unterschiedliche Vertiefungstiefen, die durch dünne akustische Teiler getrennt sind. Wenn eine einfallende Welle auf diese Vertiefungen trifft, treten die reflektierten Wellen mit deutlichen Phasenverzögerungen aus, was zu destruktiver Interferenz entlang der Spiegelachse und einer breiten Streuung an anderer Stelle führt."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/n3W-n_dF83U",
+      "title": "Architekturakustik und Schroeder-Diffusorphysik",
+      "caption": "Ein technischer Überblick über quadratische Rückstandsdiffusoren, Tiefenberechnungen und Schalldiffusionsmuster in Hörsälen."
+    },
+    {
+      "type": "h2",
+      "text": "Computergestützte Optimierung im zeitgenössischen Design"
+    },
+    {
+      "type": "p",
+      "text": "Zeitgenössische Architekturpraktiken nutzen parametrische Finite-Elemente-Wellenmodellierung, um wellenförmige 3D-Holzpaneele direkt in die Innengeometrie von Auditorien zu schnitzen und so akustische Physik mit skulpturaler Ästhetik zu verbinden."
+    }
+  ],
+  "sourceHash": "968a630affc67b96338554bbe3f0f26e551bb1fa"
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "distributed-consensus-raft-paxos-and-byzantine-fault-tolerant-state-machines",
+  "title": "Consenso distribuido: Raft, Paxos y máquinas de estado bizantinas",
+  "excerpt": "Un tratado de ingeniería sobre teoría de máquinas de estados replicadas, intersecciones de quórum, protocolos de latidos de elección de líderes y seguridad del consenso BFT.",
+  "date": "2026-11-15",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "software",
+    "distributed-systems",
+    "consensus",
+    "backend-and-apis",
+    "system-architecture"
+  ],
+  "image": "/images/articles/distributed-servers-datacenter.jpg",
+  "imageAlt": "Racks de servidores de alta densidad con cableado de fibra óptica en un centro de datos en nube distribuido a hiperescala",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El problema fundamental del acuerdo distribuido"
+    },
+    {
+      "type": "p",
+      "text": "En el corazón de las arquitecturas de nube modernas, desde almacenes de datos distribuidos como CockroachDB y etcd hasta libros de liquidación de blockchain, se encuentra el desafío de la replicación de máquinas de estado distribuidas. ¿Cómo puede un grupo de nodos de servidores independientes acordar una secuencia ordenada de transiciones de estado a través de una red asíncrona sujeta a caídas de paquetes, picos de latencia y fallas de las máquinas?"
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Modelo de máquina de estados replicada (RSM): si varias máquinas de estado deterministas procesan exactamente la misma secuencia de entradas de registro desde el mismo estado inicial, llegan a estados finales idénticos.",
+        "Descomposición de Paxos frente a Raft: mientras que Multi-Paxos combina fases de consenso, Raft divide el problema en distintos subproblemas: elección de líder, replicación de registros y seguridad de compromiso.",
+        "Teorema de superposición de quórum: Dos quórumes cualesquiera de tamaño $Q = \\lfloor N/2 \\rfloor + 1$ en un grupo de $N$ nodos deben compartir al menos un nodo, lo que garantiza que las confirmaciones de registros históricos no se puedan sobrescribir.",
+        "Tolerancia a fallos bizantinos (BFT): los protocolos tolerantes a fallos toleran fallos $f$ en nodos $2f+1$; Los protocolos BFT toleran $f$ fallas maliciosas o arbitrarias en $3f+1$ nodos."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El consenso no se trata de velocidad de comunicación; es la garantía matemática de que la verdad sigue siendo singular y no repudiable a través de fronteras físicas asincrónicas.",
+      "cite": "Simposio ACM sobre principios de informática distribuida"
+    },
+    {
+      "type": "h2",
+      "text": "Invariantes de términos y propiedades de coincidencia de registros de Raft"
+    },
+    {
+      "type": "p",
+      "text": "Raft aplica dos invariantes críticos: si dos entradas en registros diferentes tienen el mismo índice y término, almacenan el mismo comando; Además, si dos entradas coinciden, todas las entradas anteriores en sus registros son idénticas. Cuando un líder electo establece latidos, la resolución de conflictos de los seguidores trunca continuamente las entradas divergentes no comprometidas."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/vYp4c7o980U",
+      "title": "Sistemas distribuidos: algoritmo de consenso de Raft en 20 minutos",
+      "caption": "Recorrido visual de la elección de líder, contadores de términos, cronómetros de elecciones aleatorios, replicación de registros y recuperación de particiones de red en clústeres de Raft."
+    },
+    {
+      "type": "h2",
+      "text": "De fallas de fallas a redes BFT descentralizadas"
+    },
+    {
+      "type": "p",
+      "text": "Los libros de contabilidad federados modernos reemplazan las suposiciones de fallas simples con votos firmados criptográficamente y protocolos de cambio de vista (por ejemplo, PBFT, Tendermint, HotStuff), limitando la latencia de la canalización a una complejidad de comunicación $O(N)$ bajo una ejecución optimista."
+    }
+  ],
+  "sourceHash": "7e82f7234fb2382d2b90b72e7d6695e670bbfb18"
+}

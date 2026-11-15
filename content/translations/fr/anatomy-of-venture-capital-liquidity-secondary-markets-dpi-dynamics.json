@@ -1,0 +1,67 @@
+{
+  "slug": "anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics",
+  "title": "Anatomie de la liquidité du capital-risque et des marchés secondaires",
+  "excerpt": "Une enquête financière sur les offres publiques retardées, les fonds de continuation, les pressions sur la liquidité des LP et l'émergence d'échanges secondaires privés.",
+  "date": "2026-11-15",
+  "author": "Julian Sterling",
+  "tags": [
+    "venture-capital",
+    "liquidity",
+    "private-equity",
+    "secondary-markets",
+    "finance"
+  ],
+  "image": "/images/articles/venture-capital-finance.jpg",
+  "imageAlt": "Un atrium architectural de quartier financier moderne symbolisant les marchés de capitaux privés et la banque d'investissement",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le déficit structurel de liquidité"
+    },
+    {
+      "type": "p",
+      "text": "Pendant plus d'une décennie, le capital-risque a fonctionné selon un volant d'inertie prévisible : lever des fonds, déployer des capitaux dans des entreprises de logiciels à forte croissance et restituer les bénéfices via des offres publiques initiales (IPO) ou des acquisitions stratégiques au cours d'un cycle de vie du fonds de 7 à 10 ans. Aujourd’hui, ce pipeline de liquidités conventionnel est confronté à une impasse systémique, les entreprises privées restant non cotées pendant 14 ans ou plus."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Divergence DPI vs TVPI : les commanditaires institutionnels (LP) demandent de plus en plus de distribution en capital versé (DPI) plutôt que de majorations théoriques (TVPI).",
+        "Véhicules de continuation : les commandités (GP) créent des fonds de continuation secondaires structurés pour lancer des actifs précieux tout en offrant des fenêtres de liquidité.",
+        "Pressions en matière d'escompte : les transactions sur le marché secondaire privé sont fréquemment compensées avec une décote de 20 à 40 % par rapport aux valorisations précédentes des financements souverains à risque.",
+        "Plateformes secondaires institutionnelles : La montée en puissance des moteurs de correspondance algorithmique et de la documentation de transfert standardisée a transformé les actions privées en une classe d'actifs distincte."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Les taux de rendement internes non réalisés ne peuvent pas financer les versements de pensions institutionnelles. Dans un écosystème de capital-risque mature, le DPI est la seule mesure qui préserve la confiance des répartiteurs de capital.",
+      "cite": "Revue trimestrielle des marchés privés institutionnels"
+    },
+    {
+      "type": "h2",
+      "text": "Secondaires dirigés par des GP et architecture de fonds"
+    },
+    {
+      "type": "p",
+      "text": "Pour éviter de vendre des sociétés de portefeuille à forte conviction dans des environnements d'introduction en bourse tièdes, les gestionnaires d'investissement se tournent vers des véhicules secondaires à actif unique dirigés par des GP. Ces transactions permettent aux investisseurs secondaires externes d'injecter du nouveau capital de croissance, tandis que les commanditaires existants peuvent choisir d'encaisser ou de transférer leur participation."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/5T8vV8dFmGQ",
+      "title": "Explication des marchés secondaires du capital-investissement et du capital-risque",
+      "caption": "Analyse financière décrivant le fonctionnement des fonds de continuation, des ventes de portefeuille dirigées par LP et de la tarification des transactions secondaires dans la finance institutionnelle."
+    },
+    {
+      "type": "h2",
+      "text": "L'avenir de la maturation du capital-risque"
+    },
+    {
+      "type": "p",
+      "text": "Alors que les bourses secondaires automatisent les rapprochements des tables de capitalisation et les obstacles à la conformité, le capital-investissement et le capital-risque ressembleront à un marché secondaire continu plutôt qu'à un événement de liquidité épisodique, restructurant de manière permanente la dynamique de capitalisation de la Silicon Valley."
+    }
+  ],
+  "sourceHash": "af19a8ae0aee6c86034021f546583ea9c63ee352"
+}

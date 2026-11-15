@@ -1,0 +1,67 @@
+{
+  "slug": "hypertrophy-mechanotransduction-and-myofibrillar-protein-synthesis",
+  "title": "Mécanotransduction et synthèse des protéines myofibrillaires dans l'hypertrophie",
+  "excerpt": "Une analyse moléculaire de la physiologie de l'exercice des adhérences focales costamères, de l'activation de mTORC1, de la biogenèse des ribosomes et de la tension mécanique.",
+  "date": "2026-11-15",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "fitness",
+    "hypertrophy",
+    "strength-training",
+    "molecular-biology",
+    "sports-science"
+  ],
+  "image": "/images/articles/fitness-hypertrophy-gym.jpg",
+  "imageAlt": "Entraînement en résistance de haute intensité avec des poids d'haltères dans un centre de conditionnement sportif moderne",
+  "body": [
+    {
+      "type": "h2",
+      "text": "L'amorçage moléculaire de la croissance musculaire squelettique"
+    },
+    {
+      "type": "p",
+      "text": "L'hypertrophie musculaire squelettique est fondamentalement une réponse adaptative régie par la mécanotransduction, la cascade physiologique par laquelle les mécanocapteurs de la surface cellulaire convertissent la tension physique externe en signalisation biochimique intracellulaire. Alors que le stress métabolique et les lésions musculaires localisées contribuent au stimulus, les tensions mécaniques passives et actives restent les principaux moteurs en amont de la synthèse des protéines myofibrillaires."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Complexes costamères : Les complexes d'adhésion focale intégrine-vinculine-taline transmettent la force longitudinale et latérale des sarcomères à la matrice extracellulaire.",
+        "Translocation mTORC1 : la charge mécanique stimule la synthèse de l'acide phosphatidique et initie l'activation médiée par Rheb de la cible mécaniste du complexe de rapamycine 1 (mTORC1).",
+        "Biogenèse des ribosomes : l'hypertrophie chronique est finalement limitée non seulement par l'initiation de la traduction, mais aussi par le taux de transcription de la synthèse de l'ARN ribosomal (ADNr).",
+        "Taux de synthèse fractionnaire (FSR) : la synthèse des protéines myofibrillaires après l'exercice s'élève en 2 à 4 heures, atteignant un pic près de 24 heures avant de revenir à la valeur de base chez les individus entraînés."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Les fibres musculaires ne mesurent pas les répétitions ou la charge en kilogrammes ; leurs capteurs intracellulaires détectent l'ampleur, la durée et le vecteur de tension mécanique appliquée sur le disque Z et le costamère.",
+      "cite": "Journal of Applied Physiology & Molecular Kinesiology"
+    },
+    {
+      "type": "h2",
+      "text": "Addition de sarcomères en série versus parallèle"
+    },
+    {
+      "type": "p",
+      "text": "Les contractions excentriques chargées sur de longues longueurs musculaires induisent des contraintes mécaniques uniques dans les domaines de la titine kinase. Cet étirement mécanique déclenche à la fois une expansion myofibrillaire parallèle (croissance du diamètre transversal) et une sarcomérogenèse en série (ajout d'unités contractiles le long de l'axe longitudinal), améliorant à la fois la production de force et la stabilité de la portée articulaire."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/5_s1W0M_vEU",
+      "title": "Les mécanismes cellulaires de l'hypertrophie musculaire et de la synthèse des protéines",
+      "caption": "Cours détaillé de biologie moléculaire détaillant l'activation de mTORC1, le don de cellules satellites et les voies de mécanotransduction dans les fibres musculaires humaines."
+    },
+    {
+      "type": "h2",
+      "text": "Limites de translation et fusion de cellules satellites"
+    },
+    {
+      "type": "p",
+      "text": "À mesure que les fibres musculaires se développent au-delà de leur plafond de domaine myonucléaire, les cellules satellites Pax7+ résidentes subissent une division asymétrique et donnent de nouveaux noyaux pour maintenir la transcription à travers les myofibres hyper-expansées, empêchant ainsi l'épuisement synthétique dans les adaptations de force d'élite."
+    }
+  ],
+  "sourceHash": "be8b84f8438aca4478075cfe7cb4caf8ed304d14"
+}

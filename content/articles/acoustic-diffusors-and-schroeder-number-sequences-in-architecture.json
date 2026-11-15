@@ -1,0 +1,66 @@
+{
+  "slug": "acoustic-diffusors-and-schroeder-number-sequences-in-architecture",
+  "title": "Acoustic Diffusors & Schroeder Sequences in Architecture",
+  "excerpt": "Mathematical principles of quadratic residue and primitive root diffusors, phase grating scattering, and acoustic space optimization in concert halls.",
+  "date": "2026-11-15",
+  "author": "Elena Rostova",
+  "tags": [
+    "architecture",
+    "acoustics",
+    "structural-design",
+    "mathematics",
+    "concert-halls"
+  ],
+  "image": "/images/articles/acoustic-wood-architecture.jpg",
+  "imageAlt": "Sculptural acoustic timber wall panels and architectural baffles in a modern philharmonic auditorium",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Beyond Specular Reflection and Absorption"
+    },
+    {
+      "type": "p",
+      "text": "Architectural acoustics has evolved beyond the binary tension of specular reflection and porous absorption. While hard planar surfaces reflect sound like mirrors and dense fabrics attenuate sound energy, diffusors scatter incident wave energy uniformly across time and spatial coordinates without draining ambient acoustic vitality."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths that shift phase evenly.",
+        "Primitive Root Diffusors (PRD): Utilize prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
+        "Preservation of Reverberant Energy: Unlike fiberglass absorbers, diffusors maintain room energy while eliminating flutter echoes and comb filtering.",
+        "Spatial Envelopment: Distributed phase grating arrays enhance the subjective impression of listener envelopment (LEV) in symphonic halls."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "A great concert hall does not silence sound; it scatters acoustic energy with mathematical precision so that every seat perceives an immersive, coherent soundstage.",
+      "cite": "Acoustical Society of Architectural Engineers"
+    },
+    {
+      "type": "h2",
+      "text": "Phase Grating Mathematics"
+    },
+    {
+      "type": "p",
+      "text": "Pioneered by physicist Manfred Schroeder in the late 1970s, mathematical phase gratings utilize varying well depths separated by thin acoustic dividers. When an incident wave encounters these wells, the reflected wavelets exit with distinct phase delays, resulting in destructive interference along the specular axis and broad dispersion elsewhere."
+    },
+    {
+      "type": "video",
+      "title": "Architectural Acoustics & Schroeder Diffusor Physics",
+      "caption": "An engineering overview of quadratic residue diffusors, well-depth calculations, and sound diffusion patterns in auditoriums.",
+      "src": "https://www.youtube-nocookie.com/embed/n3W-n_dF83U"
+    },
+    {
+      "type": "h2",
+      "text": "Computational Optimization in Contemporary Design"
+    },
+    {
+      "type": "p",
+      "text": "Contemporary architectural practices utilize parametric finite-element wave modeling to carve 3D undulating timber panels directly into the interior geometry of auditoriums, blending acoustic physics with sculptural aesthetics."
+    }
+  ]
+}

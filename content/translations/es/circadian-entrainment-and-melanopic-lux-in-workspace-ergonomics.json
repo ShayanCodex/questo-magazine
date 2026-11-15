@@ -1,0 +1,67 @@
+{
+  "slug": "circadian-entrainment-and-melanopic-lux-in-workspace-ergonomics",
+  "title": "Arrastre circadiano y lux melanópico en espacios de trabajo modernos",
+  "excerpt": "Una investigación del estilo de vida ambiental sobre la fotorrecepción ipRGC, la sincronización del núcleo supraquiasmático y la iluminación circadiana del espacio de trabajo centrada en el ser humano.",
+  "date": "2026-11-15",
+  "author": "Siddharth Nair",
+  "tags": [
+    "lifestyle",
+    "circadian-rhythm",
+    "productivity-systems",
+    "ergonomics",
+    "wellness"
+  ],
+  "image": "/images/articles/circadian-lighting-workspace.jpg",
+  "imageAlt": "Amplio espacio de trabajo arquitectónico iluminado por luz natural del piso al techo e iluminación adaptativa para tareas",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El costo biológico de la luz interior estancada"
+    },
+    {
+      "type": "p",
+      "text": "Los trabajadores del conocimiento profesional moderno pasan hasta el 90% de sus horas de vigilia dentro de estructuras con clima controlado bajo lámparas fluorescentes estáticas o LED mal sintonizadas. Mientras que las pautas arquitectónicas estándar especifican la iluminancia en lux fotópico (optimizado estrictamente para la claridad de la tarea visual), el ojo humano alberga un tercer sistema de fotorreceptores dedicado enteramente a la biología circadiana."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Melanopsina e ipRGC: las células ganglionares de la retina intrínsecamente fotosensibles contienen el fotopigmento melanopsina, máximamente sensible a longitudes de onda estrechas de cian cercanas a 480 nm.",
+        "Núcleo supraquiasmático (SCN): las proyecciones axonales de ipRGC inervan directamente el reloj maestro hipotalámico, sincronizando los relojes periféricos en el hígado, el corazón y el páncreas.",
+        "Lux melanópico equivalente (EML): los ambientes interiores diurnos requieren al menos 250 EML entre las 09:00 y las 13:00 para mantener el cortisol, la vigilancia y la resistencia cognitiva durante el día.",
+        "Prevención del retraso de la fase vespertina: cambiar la iluminación por debajo de 50 EML y agotar las emisiones de longitud de onda corta de 480 nm después del atardecer protege la secreción nocturna de melatonina pineal."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La iluminación en arquitectura no se trata simplemente de ver el escritorio; se trata de decirle al reloj maestro neuronal si es mediodía en la sabana o medianoche bajo las estrellas.",
+      "cite": "Instituto Internacional de Construcción de Pozos e Investigación en Cronobiología"
+    },
+    {
+      "type": "h2",
+      "text": "Arquitectura dinámica de color blanco sintonizable"
+    },
+    {
+      "type": "p",
+      "text": "Las instalaciones de iluminación centrada en el ser humano (HCL, por sus siglas en inglés) emplean LED blancos sintonizables de doble canal que barren dinámicamente desde temperaturas de color frías de alta melanópica de 5500 K durante las horas pico de productividad de la mañana hasta tonos cálidos de baja melanópica de 2700 K al final de la tarde, imitando la evolución espectral solar."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/9BqM3XfU5Yk",
+      "title": "Iluminación circadiana, lux melanópico y rendimiento del espacio de trabajo",
+      "caption": "Investigación cronobiológica sobre la fotorrecepción de melanopsina, la supresión de la luz azul y los diseños de iluminación arquitectónica centrados en el ser humano."
+    },
+    {
+      "type": "h2",
+      "text": "Latencia del sueño y salud metabólica"
+    },
+    {
+      "type": "p",
+      "text": "Los empleados en espacios de trabajo con estímulo circadiano diurno optimizado informan una latencia de inicio del sueño más corta, despertares nocturnos reducidos y una tolerancia estabilizada a la glucosa matutina, lo que destaca la iluminación como un pilar fundamental de la salud."
+    }
+  ],
+  "sourceHash": "73d0b4ceb4a5d480f9ab0dc745776892ad3c2ad3"
+}

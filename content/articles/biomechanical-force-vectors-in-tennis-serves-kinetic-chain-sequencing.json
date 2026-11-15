@@ -1,0 +1,66 @@
+{
+  "slug": "biomechanical-force-vectors-in-tennis-serves-kinetic-chain-sequencing",
+  "title": "Biomechanical Force Vectors in Elite Tennis Serves",
+  "excerpt": "A high-speed kinematic study of ground reaction forces, pelvic rotation, internal shoulder rotation, and kinetic energy summation in professional tennis.",
+  "date": "2026-11-15",
+  "author": "Liam O'Connor",
+  "tags": [
+    "tennis",
+    "biomechanics",
+    "sports-science",
+    "kinematics",
+    "athletic-performance"
+  ],
+  "image": "/images/articles/tennis-biomechanics-serve.jpg",
+  "imageAlt": "Professional tennis player in dynamic trophy pose preparing for an explosive first serve on court",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Physics of Ballistic Racquet Velocity"
+    },
+    {
+      "type": "p",
+      "text": "The professional tennis serve is one of the most explosive, multi-joint closed-loop kinematic actions in competitive athletics. Achieving launch velocities exceeding 220 km/h requires far more than upper-extremity strength; it demands the sequential, uninhibited transfer of mechanical energy along an unbroken kinetic chain from the court surface to the racquet impact point."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Ground Reaction Force (GRF): Explosive knee flexion and vertical ground push generate the initial linear momentum that drives the entire kinetic sequence.",
+        "Pelvic and Thoracic Separation: Hip rotation leads shoulder rotation, creating an elastic stretch-shortening cycle across core oblique musculature.",
+        "Internal Shoulder Rotation: Angular velocities exceeding 2,400 degrees per second in internal shoulder rotation contribute up to 50% of final racquet head velocity.",
+        "Impact Elevation Window: Striking the ball at the apex of the vertical impulse vector optimizes parabolic clearance and downward court trajectory angles."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Energy is not created in the arm. The racquet head simply acts as the terminal whip that discharges ground force channeled through the hips, spine, and shoulder girdle.",
+      "cite": "International Society of Sports Biomechanics"
+    },
+    {
+      "type": "h2",
+      "text": "Segmental Kinematic Sequencing"
+    },
+    {
+      "type": "p",
+      "text": "High-speed 3D optical motion capture reveals that peak angular velocity follows a strict proximal-to-distal progression: pelvis deceleration initiates trunk acceleration, trunk deceleration initiates shoulder rotation, followed in microsecond intervals by elbow extension, forearm pronation, and wrist flexion."
+    },
+    {
+      "type": "video",
+      "title": "Kinetic Chain Biomechanics in the Modern Tennis Serve",
+      "caption": "High-speed camera and 3D motion tracking analysis detailing ground reaction forces, thoracic tilt, and internal shoulder rotation mechanics.",
+      "src": "https://www.youtube-nocookie.com/embed/5D_1E4kGZ_A"
+    },
+    {
+      "type": "h2",
+      "text": "Injury Prevention and Scapular Deceleration"
+    },
+    {
+      "type": "p",
+      "text": "The eccentric deceleration phase following ball impact subjects the posterior rotator cuff and labrum to extreme distraction forces. Modern conditioning focuses heavily on posterior chain eccentric deceleration training to safeguard joint longevity during 200+ serve match loads."
+    }
+  ]
+}
