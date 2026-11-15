@@ -115,7 +115,7 @@ export function EBooks() {
     name: `${t.ebooks || 'Public Domain E-Books'} — Questo Open Heritage Library`,
     description: 'Verified public-domain foundation monographs with direct in-browser reading.',
     url: `https://questo-magazine.org${pathname}`,
-    hasPart: filteredEbooks.map((b) => ({
+    hasPart: paginatedEbooks.map((b) => ({
       '@type': 'Book',
       name: b.title,
       author: {
