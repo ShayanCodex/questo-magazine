@@ -1,14 +1,26 @@
-import { SparklesIcon } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
 import { cn } from '../lib/utils';
+import { useLanguage } from '../lib/lang-context';
 
 export interface ArticleTakeawaysProps {
   article: ArticleData;
   className?: string;
 }
 
+const keyPointsTitles: Record<string, string> = {
+  en: 'Key Points',
+  es: 'Puntos Clave',
+  fr: 'Points Clés',
+  de: 'Wichtige Punkte',
+  ar: 'نقاط رئيسية',
+  ur: 'اہم نکات',
+};
+
 export function ArticleTakeaways({ article, className }: ArticleTakeawaysProps) {
-  // Extract or synthesize 3 key insights from article content
+  const { language } = useLanguage();
+  const headingText = keyPointsTitles[language?.code || 'en'] || 'Key Points';
+
+  // Extract or synthesize key insights from article content
   const extractInsights = (): string[] => {
     const insights: string[] = [];
 
@@ -24,7 +36,7 @@ export function ArticleTakeaways({ article, className }: ArticleTakeawaysProps) 
         insights.push(`"${quoteBlock.text}"${quoteBlock.cite ? ` — ${quoteBlock.cite}` : ''}`);
       }
 
-      // Add other distinct paragraphs
+      // 3. Add other distinct paragraphs
       const pBlocks = article.body.filter((b) => b.type === 'p' && b.text);
       for (const p of pBlocks) {
         if (insights.length >= 3) break;
@@ -41,41 +53,31 @@ export function ArticleTakeaways({ article, className }: ArticleTakeawaysProps) 
   if (insights.length === 0) return null;
 
   return (
-    <aside
+    <section
       className={cn(
-        'rounded-xl border border-editorial-border bg-editorial-surface-subtle/60 p-6 sm:p-7 my-8 font-sans transition-colors',
+        'rounded-xl border border-editorial-border bg-editorial-surface-subtle/50 p-6 sm:p-7 my-8 transition-colors',
         className
       )}
-      aria-label="Key Takeaways"
+      aria-label={headingText}
     >
-      {/* Clean Minimalist Header */}
-      <div className="flex items-center gap-2 pb-4 border-b border-editorial-border/60">
-        <SparklesIcon className="h-4 w-4 text-editorial-muted" />
-        <h3 className="font-sans font-bold text-xs uppercase tracking-wider text-editorial-text">
-          Key Takeaways
-        </h3>
+      {/* Normal Heading of Key Points */}
+      <div className="mb-4 sm:mb-5 pb-3 border-b border-editorial-border/60">
+        <h2 className="text-xl sm:text-2xl font-display font-bold text-editorial-text tracking-tight">
+          {headingText}
+        </h2>
       </div>
 
-      {/* Clean 3-Column Insights (Simple, modern, no nested boxes or clutter) */}
-      <div
-        className={cn(
-          'grid gap-6 sm:gap-8 pt-5',
-          insights.length === 1 && 'grid-cols-1',
-          insights.length === 2 && 'grid-cols-1 md:grid-cols-2',
-          insights.length >= 3 && 'grid-cols-1 md:grid-cols-3'
-        )}
-      >
+      {/* Bullet Points List for Paragraphs */}
+      <ul className="list-disc list-outside ltr:pl-5 rtl:pr-5 space-y-3.5 sm:space-y-4 text-editorial-text marker:text-editorial-text/70">
         {insights.map((insight, idx) => (
-          <div key={idx} className="space-y-2">
-            <span className="font-mono text-xs font-bold text-editorial-muted tracking-wider block">
-              0{idx + 1}
-            </span>
-            <p className="font-sans text-xs sm:text-sm text-editorial-text leading-relaxed">
-              {insight}
-            </p>
-          </div>
+          <li
+            key={idx}
+            className="font-serif text-sm sm:text-base text-editorial-text/90 leading-relaxed pl-1"
+          >
+            {insight}
+          </li>
         ))}
-      </div>
-    </aside>
+      </ul>
+    </section>
   );
 }
