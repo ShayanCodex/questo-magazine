@@ -5,7 +5,7 @@
   <link href="https://questo-blog.netlify.app/" />
   <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://questo-blog.netlify.app/</id>
-  <updated>2026-11-15T01:04:17.082Z</updated>
+  <updated>2026-11-15T01:29:14.650Z</updated>
   <entry>
     <title>The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches &amp; Latency Scaling</title>
     <link href="https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache" />
@@ -37,6 +37,16 @@
     </author>
   </entry>
   <entry>
+    <title>Constant-Function Market Makers: Concentrated Liquidity Geometry, Tick Spacing &amp; Impermanent Loss Dynamics</title>
+    <link href="https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity" />
+    <id>https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A financial cryptography monograph on Uniswap v3 virtual reserve invariants, Loss-Versus-Rebalancing (LVR) arbitrage mechanics, and liquidity density optimization.</summary>
+    <author>
+      <name>Claire Dupont</name>
+    </author>
+  </entry>
+  <entry>
     <title>Forex Liquidity Corridors: Central Bank Reserves, Swap Lines &amp; Global Settlement Mechanics</title>
     <link href="https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves" />
     <id>https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</id>
@@ -57,6 +67,26 @@
     </author>
   </entry>
   <entry>
+    <title>Ground-Effect Aerodynamics: Venturi Underfloor Tunnels, Boundary Layer Suction &amp; Porpoising Mechanics</title>
+    <link href="https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics" />
+    <id>https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A mechanical engineering monograph on underbody Bernoulli suction, diffuser expansion ratios, aerodynamic center of pressure migration, and non-linear aeroelastic heave oscillations.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
+    </author>
+  </entry>
+  <entry>
+    <title>High-Voltage Direct Current (HVDC) Transmission: Voltage Source Converters &amp; Intercontinental Supergrids</title>
+    <link href="https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids" />
+    <id>https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>An electrical systems monograph on IGBT-based Modular Multilevel Converters, capacitive cable dielectric losses, skin effect elimination, and asynchronous grid coupling.</summary>
+    <author>
+      <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
     <title>Microbial Ecology of Wild Sourdough: Lactic Acid Bacteria, Acidity Kinetics &amp; Proteolysis</title>
     <link href="https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis" />
     <id>https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</id>
@@ -64,6 +94,26 @@
     <summary>A culinary science monograph exploring symbiotic wild fermentation, Fructilactobacillus sanfranciscensis metabolic pathways, enzymatic gluten degradation, and the physics of crumb aeration.</summary>
     <author>
       <name>Sofia Rossi</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Postprandial Glycemic Variability: Continuous Glucose Telemetry, Hepatic Glycogenesis &amp; Mitochondrial Flexibility</title>
+    <link href="https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility" />
+    <id>https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A clinical and biochemical analysis of glucose area-under-the-curve metrics, endothelial oxidative stress, insulin kinetics, and cellular substrate switching.</summary>
+    <author>
+      <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Concert Hall Architectural Acoustics: Schroeder Frequency, Quadratic Residue Diffusors &amp; Reverberation Geometry</title>
+    <link href="https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays" />
+    <id>https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A structural acoustics monograph on Sabine decay formulas, room mode eigenfrequencies, lateral energy fraction, and number-theoretic acoustic diffusion surfaces.</summary>
+    <author>
+      <name>Mateo Silva</name>
     </author>
   </entry>
   <entry>

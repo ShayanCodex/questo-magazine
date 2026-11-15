@@ -1,0 +1,109 @@
+{
+  "slug": "constant-function-market-makers-impermanent-loss-and-concentrated-liquidity",
+  "title": "[es] Constant-Function Market Makers: Concentrated Liquidity Geometry, Tick Spacing & Impermanent Loss Dynamics",
+  "excerpt": "[es] A financial cryptography monograph on Uniswap v3 virtual reserve invariants, Loss-Versus-Rebalancing (LVR) arbitrage mechanics, and liquidity density optimization.",
+  "date": "2026-11-15",
+  "author": "Claire Dupont",
+  "tags": [
+    "crypto",
+    "defi-and-protocols",
+    "amm",
+    "financial-mathematics",
+    "liquidity",
+    "arbitrage"
+  ],
+  "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "[es] Algorithmic financial telemetry displaying automated market maker liquidity curves and trade execution",
+  "body": [
+    {
+      "type": "p",
+      "text": "[es] The invention of the Automated Market Maker (AMM) represents one of the most radical structural innovations in financial market microstructures. In traditional centralized finance, market making relies on centralized limit order books (CLOBs) managed by high-frequency market-making firms who continuously post bids and asks. In peer-to-peer decentralized blockchains where block latency and gas costs render high-frequency order cancellation prohibitively expensive, deterministic mathematical formulas—Constant Function Market Makers (CFMMs)—replace order books with passive, algorithmic liquidity pools."
+    },
+    {
+      "type": "p",
+      "text": "[es] While the foundational constant-product model popularized by Uniswap v2 ($x \\cdot y = k$) delivered bulletproof robustness, it suffered from catastrophic capital inefficiency: capital was distributed uniformly across the entire price spectrum from zero to infinity, meaning less than 1% of pooled capital was active at current market prices. The transition to concentrated liquidity in Uniswap v3 resolved this constraint, transforming liquidity provision from passive holding into active geometric portfolio management."
+    },
+    {
+      "type": "h2",
+      "text": "[es] 1. Concentrated Liquidity Geometry & Virtual Reserves"
+    },
+    {
+      "type": "p",
+      "text": "[es] In concentrated liquidity AMMs, liquidity providers (LPs) do not allocate capital across all prices. Instead, they concentrate their tokens within a bounded price interval $[p_a, p_b]$. Inside this range, the pool simulates a constant product curve with magnified \"virtual reserves\":"
+    },
+    {
+      "type": "code",
+      "lang": "text",
+      "code": "Virtual Invariant: (x + L / √p_b) · (y + L · √p_a) = L²\n\nWhere:\n- L is the liquidity parameter (geometric mean of reserves)\n- p_a is the lower price boundary\n- p_b is the upper price boundary\n- x, y are actual deposited token quantities"
+    },
+    {
+      "type": "p",
+      "text": "[es] By confining capital to a narrow price band around the spot price, an LP can achieve up to 4,000 times the capital efficiency of an unconstrained v2 pool. The identical trading volume produces exponentially greater fee generation per dollar deposited, drastically narrowing bid-ask spreads for institutional traders."
+    },
+    {
+      "type": "quote",
+      "text": "[es] Concentrated liquidity converts static liquidity pools into synthetic option payoffs: an in-range LP position behaves identically to a short straddle harvesting fee volatility.",
+      "cite": "[es] Claire Dupont, Macro & Private Equity Fellow"
+    },
+    {
+      "type": "h2",
+      "text": "[es] 2. Deconstructing Impermanent Loss & The LVR Framework"
+    },
+    {
+      "type": "p",
+      "text": "[es] The central economic risk assumed by liquidity providers is Impermanent Loss (IL)—more accurately designated as divergence loss. Whenever the external market price moves away from the initial deposit ratio, the AMM deterministic pricing curve forces the LP to sell the appreciating asset and buy the depreciating asset."
+    },
+    {
+      "type": "p",
+      "text": "[es] Recent academic market microstructure research (Milionis, Moallemi, Roughgarden) formalizes this cost as Loss-Versus-Rebalancing (LVR). Unlike traditional impermanent loss, which theoretically zeroes out if price returns to its starting point, LVR captures the persistent, non-negative economic rent extracted by latency arbitrageurs who trade against stale AMM quotes across external centralized exchanges:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "[es] Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs can rebalance.",
+        "[es] Range Out-of-Bounds Risk: When spot price breaks outside $[p_a, p_b]$, the LP is 100% converted into the losing asset, terminating all fee accrual until rebalanced.",
+        "[es] Fee-to-Volatility Break-Even: For an LP position to remain net-profitable, fee yields must exceed the variance drag dictated by asset return volatility ($\\frac{1}{8}\\sigma^2$)."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "[es] 3. Technical Masterclass: Concentrated Liquidity Mathematics"
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube.com/embed/EHsPms_yZfA",
+      "title": "[es] Understanding Concentrated Liquidity and Uniswap v3 Math",
+      "caption": "[es] Rigorous visual walkthrough of virtual reserves, tick boundaries, impermanent loss curves, and capital efficiency gains."
+    },
+    {
+      "type": "h2",
+      "text": "[es] 4. Tick Discretization & Dynamic Fee Tiers"
+    },
+    {
+      "type": "p",
+      "text": "[es] To avoid floating-point imprecision in on-chain virtual machines, prices are discretized into logarithmic ticks indexed by integers $i$:"
+    },
+    {
+      "type": "code",
+      "lang": "text",
+      "code": "Price at Tick i: p(i) = 1.0001ⁱ\n\nTick Spacing:\n- 0.01% Fee Tier: 1 tick spacing (Ultra-stable pairs: USDC/USDT)\n- 0.05% Fee Tier: 10 tick spacing (Correlated pairs: ETH/stETH)\n- 0.30% Fee Tier: 60 tick spacing (Standard volatile pairs: ETH/USDC)\n- 1.00% Fee Tier: 200 tick spacing (Exotic volatile assets)"
+    },
+    {
+      "type": "p",
+      "text": "[es] When a large market order consumes all available liquidity inside a tick, the protocol updates the global price, crosses the tick boundary, and activates the next discrete liquidity vector with minimal gas overhead."
+    },
+    {
+      "type": "h2",
+      "text": "[es] 5. Strategic Takeaways for Quantitative Liquidity Providers"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "[es] Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) can safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
+        "[es] Dynamic Hedging Eliminates Delta: Sophisticated market makers offset directional gamma risk by shorting underlying perpetual futures on centralized venues while capturing LP fees on-chain.",
+        "[es] Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers can rapidly erode accumulated LP fees; deploy automated liquidity management vaults."
+      ]
+    }
+  ],
+  "sourceHash": "79a292c82774fe86e655946e3818357f79477305"
+}

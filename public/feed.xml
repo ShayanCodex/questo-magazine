@@ -5,7 +5,7 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 01:04:17 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 01:29:14 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[The Architecture of Transformer Attention: Self-Attention Mathematics, Key-Value Caches & Latency Scaling]]></title>
@@ -35,6 +35,15 @@
       <category>software</category>
     </item>
     <item>
+      <title><![CDATA[Constant-Function Market Makers: Concentrated Liquidity Geometry, Tick Spacing & Impermanent Loss Dynamics]]></title>
+      <link>https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/constant-function-market-makers-impermanent-loss-and-concentrated-liquidity</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A financial cryptography monograph on Uniswap v3 virtual reserve invariants, Loss-Versus-Rebalancing (LVR) arbitrage mechanics, and liquidity density optimization.]]></description>
+      <author><![CDATA[Claire Dupont]]></author>
+      <category>crypto</category>
+    </item>
+    <item>
       <title><![CDATA[Forex Liquidity Corridors: Central Bank Reserves, Swap Lines & Global Settlement Mechanics]]></title>
       <link>https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/forex-liquidity-corridors-and-sovereign-reserves</guid>
@@ -53,6 +62,24 @@
       <category>science</category>
     </item>
     <item>
+      <title><![CDATA[Ground-Effect Aerodynamics: Venturi Underfloor Tunnels, Boundary Layer Suction & Porpoising Mechanics]]></title>
+      <link>https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A mechanical engineering monograph on underbody Bernoulli suction, diffuser expansion ratios, aerodynamic center of pressure migration, and non-linear aeroelastic heave oscillations.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[High-Voltage Direct Current (HVDC) Transmission: Voltage Source Converters & Intercontinental Supergrids]]></title>
+      <link>https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/high-voltage-direct-current-transmission-and-intercontinental-supergrids</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An electrical systems monograph on IGBT-based Modular Multilevel Converters, capacitive cable dielectric losses, skin effect elimination, and asynchronous grid coupling.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>technology</category>
+    </item>
+    <item>
       <title><![CDATA[Microbial Ecology of Wild Sourdough: Lactic Acid Bacteria, Acidity Kinetics & Proteolysis]]></title>
       <link>https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/microbial-ecology-wild-sourdough-lactic-acid-bacteria-proteolysis</guid>
@@ -60,6 +87,24 @@
       <description><![CDATA[A culinary science monograph exploring symbiotic wild fermentation, Fructilactobacillus sanfranciscensis metabolic pathways, enzymatic gluten degradation, and the physics of crumb aeration.]]></description>
       <author><![CDATA[Sofia Rossi]]></author>
       <category>food</category>
+    </item>
+    <item>
+      <title><![CDATA[Postprandial Glycemic Variability: Continuous Glucose Telemetry, Hepatic Glycogenesis & Mitochondrial Flexibility]]></title>
+      <link>https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A clinical and biochemical analysis of glucose area-under-the-curve metrics, endothelial oxidative stress, insulin kinetics, and cellular substrate switching.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[Concert Hall Architectural Acoustics: Schroeder Frequency, Quadratic Residue Diffusors & Reverberation Geometry]]></title>
+      <link>https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A structural acoustics monograph on Sabine decay formulas, room mode eigenfrequencies, lateral energy fraction, and number-theoretic acoustic diffusion surfaces.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>architecture-and-space</category>
     </item>
     <item>
       <title><![CDATA[Sovereign Debt Cycles, Yield Curve Inversions & Cross-Border Repo Settlement]]></title>

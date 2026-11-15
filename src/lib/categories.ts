@@ -239,6 +239,11 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'gravitational-wave-interferometry-ligo-and-neutron-star-mergers': { categoryId: 'science', subcategoryId: 'astronomy-and-space' },
   'the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr': { categoryId: 'business', subcategoryId: 'startups-and-venture' },
   'trans-alpine-rail-engineering-and-high-altitude-topography': { categoryId: 'travel', subcategoryId: 'expeditions-and-routes' },
+  'ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics': { categoryId: 'engineering-and-technology', subcategoryId: 'mechanical-systems' },
+  'postprandial-glycemic-variability-continuous-glucose-monitoring-and-metabolic-flexibility': { categoryId: 'health', subcategoryId: 'preventive-medicine' },
+  'high-voltage-direct-current-transmission-and-intercontinental-supergrids': { categoryId: 'technology', subcategoryId: 'energy-and-infrastructure' },
+  'constant-function-market-makers-impermanent-loss-and-concentrated-liquidity': { categoryId: 'crypto', subcategoryId: 'defi-and-protocols' },
+  'reverberation-time-schroeder-frequency-and-spatial-diffusor-arrays': { categoryId: 'architecture-and-space', subcategoryId: 'structural-design' },
 };
 
 export function getCategoryById(id: string): Category | undefined {
