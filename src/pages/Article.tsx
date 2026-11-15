@@ -10,7 +10,7 @@ import {
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
-import { getArticleCategory, getCategoryShortName, formatTopicName } from '../lib/categories';
+import { getArticleCategory, getCategoryShortName, getCategoryName, getSubcategoryName, formatTopicName } from '../lib/categories';
 import { getAuthorByName, authorNameToSlug } from '../data/authors';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Seo } from '../components/Seo';
@@ -94,7 +94,7 @@ export function Article() {
 
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
-    { label: category.name, href: localePath(`/categories/${category.id}`) },
+    { label: getCategoryName(category.id, language.code), href: localePath(`/categories/${category.id}`) },
     { label: article.title },
   ];
 
@@ -159,7 +159,7 @@ export function Article() {
               to={localePath(`/categories/${category.id}`)}
               className="text-editorial-text font-bold hover:text-accent transition-colors"
             >
-              {getCategoryShortName(category.id)}
+              {getCategoryShortName(category.id, language.code)}
             </Link>
             {subcategory && (
               <>
@@ -168,7 +168,7 @@ export function Article() {
                   to={localePath(`/categories/${category.id}?subcategory=${subcategory.id}`)}
                   className="text-editorial-muted hover:text-editorial-text transition-colors"
                 >
-                  {subcategory.name}
+                  {getSubcategoryName(subcategory.id, language.code)}
                 </Link>
               </>
             )}
@@ -209,7 +209,7 @@ export function Article() {
               href="#comments"
               className="text-editorial-muted hover:text-editorial-text underline underline-offset-2 transition-colors"
             >
-              Discussion
+              {t.discussion || 'Discussion'}
             </a>
           </div>
 
@@ -221,7 +221,7 @@ export function Article() {
 
               {/* Text Size Controls */}
               <div className="flex items-center gap-1.5">
-                <span className="text-xs font-sans text-editorial-muted font-medium">Text size:</span>
+                <span className="text-xs font-sans text-editorial-muted font-medium">{t.textSize || 'Text size'}:</span>
                 <div className="inline-flex rounded-full border border-editorial-border overflow-hidden p-0.5 bg-editorial-surface-subtle">
                   <button
                     type="button"
@@ -310,7 +310,7 @@ export function Article() {
                   ) : (
                     <ShareIcon className="h-3.5 w-3.5 text-editorial-muted" />
                   )}
-                  <span>{copied ? 'Copied' : 'Copy'}</span>
+                  <span>{copied ? (t.copied || 'Copied') : (t.copy || 'Copy')}</span>
                 </button>
               </div>
             </div>
@@ -331,7 +331,7 @@ export function Article() {
               loading="eager"
             />
             <div className="absolute bottom-3 end-3 opacity-0 group-hover/img:opacity-100 transition-opacity bg-black/75 backdrop-blur-md text-white text-[11px] font-sans font-medium px-3 py-1 rounded-full border border-white/20 shadow-md flex items-center gap-1.5 pointer-events-none">
-              <span>Zoom Artwork</span>
+              <span>{t.zoomArtwork || 'Zoom Artwork'}</span>
               <span>⤢</span>
             </div>
           </div>
@@ -413,7 +413,7 @@ export function Article() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
                     <span className="text-[11px] font-sans font-medium uppercase tracking-wider text-accent block">
-                      Written by Contributing Editor
+                      {t.writtenByEditor || 'Written by Contributing Editor'}
                     </span>
                     <Link
                       to={localePath(`/authors/${authorProfile.slug}`)}
@@ -426,7 +426,7 @@ export function Article() {
                     to={localePath(`/authors/${authorProfile.slug}`)}
                     className="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full border border-editorial-border hover:border-editorial-text text-editorial-text font-sans text-xs font-semibold uppercase tracking-wider transition-colors shrink-0"
                   >
-                    <span>More by {authorProfile.name.split(' ')[0]}</span>
+                    <span>{t.moreBy || 'More by'} {authorProfile.name.split(' ')[0]}</span>
                     <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
                   </Link>
                 </div>
@@ -450,17 +450,17 @@ export function Article() {
             <div className="flex items-center justify-between">
               <div>
                 <span className="text-xs font-sans font-semibold uppercase tracking-widest text-editorial-muted block">
-                  Recommended Reading
+                  {t.recommendedReading || 'Recommended Reading'}
                 </span>
                 <h3 className="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight text-editorial-text">
-                  Related Monographs &amp; Essays
+                  {t.relatedMonographs || 'Related Monographs & Essays'}
                 </h3>
               </div>
               <Link
                 to={localePath('/articles')}
                 className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1"
               >
-                <span>All Articles</span>
+                <span>{t.allArticles || 'All Articles'}</span>
                 <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
               </Link>
             </div>
@@ -492,7 +492,7 @@ export function Article() {
                           />
                           <div className="absolute top-2.5 start-2.5">
                             <span className="px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/75 backdrop-blur-xs text-white rounded-full border border-white/15 shadow-xs">
-                              {getCategoryShortName(relCat.id)}
+                              {getCategoryShortName(relCat.id, language.code)}
                             </span>
                           </div>
                         </Link>
@@ -518,7 +518,7 @@ export function Article() {
                         to={relUrl}
                         className="text-accent hover:underline flex items-center gap-1 font-semibold text-[11px] uppercase tracking-wider"
                       >
-                        <span>Read</span>
+                        <span>{t.readArticle || 'Read'}</span>
                         <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
                       </Link>
                       <ArticleViewCount path={`/articles/${rel.slug}`} slug={rel.slug} compact />

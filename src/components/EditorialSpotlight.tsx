@@ -3,7 +3,7 @@ import { useLanguage } from '../lib/lang-context';
 import { ArrowRightIcon, SparklesIcon } from '@heroicons/react/24/outline';
 
 export function EditorialSpotlight() {
-  const { localePath } = useLanguage();
+  const { localePath, t } = useLanguage();
 
   return (
     <section
@@ -23,7 +23,7 @@ export function EditorialSpotlight() {
           <div className="absolute top-4 start-4">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-sans font-semibold uppercase tracking-wider bg-black/75 backdrop-blur-md text-white border border-white/20 shadow-md">
               <SparklesIcon className="h-3.5 w-3.5 text-amber-400" />
-              <span>Editorial Spotlight</span>
+              <span>{t.editorialSpotlight || 'Editorial Spotlight'}</span>
             </span>
           </div>
 
@@ -62,7 +62,7 @@ export function EditorialSpotlight() {
           <div className="pt-4 border-t border-editorial-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <span className="text-[11px] font-sans font-medium uppercase tracking-wider text-editorial-muted block">
-                Essay by
+                {t.textBy || 'Essay by'}
               </span>
               <Link
                 to={localePath('/authors/mateo-silva')}

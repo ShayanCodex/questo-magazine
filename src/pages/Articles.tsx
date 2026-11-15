@@ -25,6 +25,7 @@ import {
   getArticleCategory,
   getCategoryById,
   getCategoryShortName,
+  getSubcategoryName,
   formatTopicName,
   getStructuredSearchSuggestions,
   type SearchSuggestion,
@@ -361,9 +362,9 @@ export function Articles() {
                 <div className="flex items-center justify-between pb-1.5 border-b border-editorial-border text-xs text-editorial-muted font-medium">
                   <span className="flex items-center gap-1.5">
                     <SparklesIcon className="h-3.5 w-3.5 text-editorial-text" />
-                    <span>Suggestions</span>
+                    <span>{t.searchSuggestions || 'Suggestions'}</span>
                   </span>
-                  <span className="text-[11px] opacity-75">Click to filter</span>
+                  <span className="text-[11px] opacity-75">{t.clickToFilter || 'Click to filter'}</span>
                 </div>
 
                 {/* Section A: Categories Suggestions */}
@@ -438,7 +439,7 @@ export function Articles() {
                   <div className="space-y-1.5 pt-2 border-t border-editorial-border/50">
                     <div className="flex items-center gap-1 text-xs text-editorial-muted font-semibold">
                       <DocumentTextIcon className="h-3.5 w-3.5 text-editorial-text" />
-                      <span>Articles</span>
+                      <span>{t.articles || 'Articles'}</span>
                     </div>
                     <div className="flex flex-col gap-1">
                       {structuredSuggestions.queries.map((sug, i) => (
@@ -558,7 +559,7 @@ export function Articles() {
                       : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover border border-editorial-border/60'
                   )}
                 >
-                  <span>{getCategoryShortName(cat.id)}</span>
+                  <span>{getCategoryShortName(cat.id, language.code)}</span>
                   {count > 0 && <span className="opacity-70 text-[10px]">({count})</span>}
                 </button>
               );
@@ -605,7 +606,7 @@ export function Articles() {
               className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1 px-2 font-sans"
             >
               <span className="text-xs font-semibold text-editorial-text shrink-0 flex items-center gap-1">
-                <span>{getCategoryShortName(activeCategoryDef.id)}:</span>
+                <span>{getCategoryShortName(activeCategoryDef.id, language.code)}:</span>
               </span>
               <button
                 type="button"
@@ -617,7 +618,7 @@ export function Articles() {
                     : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
                 )}
               >
-                All
+                {t.allSubcategories || t.allTopics || 'All'}
               </button>
               {activeCategoryDef.subcategories.map((sub) => {
                 const count = categoryCounts.subMap.get(`${activeCategoryDef.id}:${sub.id}`) || 0;
@@ -635,7 +636,7 @@ export function Articles() {
                         : 'text-editorial-muted hover:text-editorial-text border border-editorial-border/60'
                     )}
                   >
-                    <span>{sub.name}</span>
+                    <span>{getSubcategoryName(sub.id, language.code)}</span>
                     {count > 0 && <span className="opacity-60 text-[10px]">({count})</span>}
                   </button>
                 );
@@ -662,7 +663,7 @@ export function Articles() {
             </span>
             {selectedCategory && (
               <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-text font-medium">
-                <span>Category: {getCategoryShortName(selectedCategory)}</span>
+                <span>{t.categories || 'Category'}: {getCategoryShortName(selectedCategory, language.code)}</span>
                 <button
                   type="button"
                   onClick={() => handleSelectCategory(null)}
@@ -676,8 +677,8 @@ export function Articles() {
             {selectedSubcategory && selectedCategory && (
               <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-text font-medium">
                 <span>
-                  Subcategory:{' '}
-                  {activeCategoryDef?.subcategories.find((s) => s.id === selectedSubcategory)?.name}
+                  {t.subcategories || 'Subcategory'}:{' '}
+                  {getSubcategoryName(selectedSubcategory, language.code)}
                 </span>
                 <button
                   type="button"
@@ -691,7 +692,7 @@ export function Articles() {
             )}
             {selectedTag && (
               <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-editorial-surface-subtle border border-editorial-border text-editorial-text font-medium">
-                <span>Topic: {formatTopicName(selectedTag)}</span>
+                <span>{t.topics || 'Topic'}: {formatTopicName(selectedTag)}</span>
                 <button
                   type="button"
                   onClick={() => handleSelectTag(null)}

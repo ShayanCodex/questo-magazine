@@ -6,6 +6,7 @@ import {
   SpeakerWaveIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
+import { useLanguage } from '../lib/lang-context';
 import { cn } from '../lib/utils';
 
 export interface ArticleAudioPlayerProps {
@@ -21,6 +22,7 @@ export function ArticleAudioPlayer({
   langCode = 'en',
   className,
 }: ArticleAudioPlayerProps) {
+  const { t } = useLanguage();
   const [supported, setSupported] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -156,8 +158,8 @@ export function ArticleAudioPlayer({
         type="button"
         onClick={isPlaying ? handlePause : handlePlay}
         className="w-8 h-8 rounded-full bg-editorial-text text-editorial-bg flex items-center justify-center hover:opacity-90 transition-all cursor-pointer shadow-xs shrink-0"
-        title={isPlaying ? 'Pause audio narration' : 'Listen to this article'}
-        aria-label={isPlaying ? 'Pause narration' : 'Listen to this article'}
+        title={isPlaying ? (t.paused || 'Pause') : (t.listen || 'Listen to this article')}
+        aria-label={isPlaying ? (t.paused || 'Pause') : (t.listen || 'Listen to this article')}
       >
         {isPlaying ? (
           <PauseIcon className="h-4 w-4" />
@@ -170,7 +172,7 @@ export function ArticleAudioPlayer({
       <div className="flex items-center gap-2 text-xs font-sans font-medium">
         <span className="flex items-center gap-1.5 text-editorial-text">
           <SpeakerWaveIcon className={cn('h-3.5 w-3.5', isPlaying && 'text-accent animate-pulse')} />
-          <span>{isPlaying ? 'Listening...' : isPaused ? 'Paused' : 'Listen'}</span>
+          <span>{isPlaying ? (t.listening || 'Listening...') : isPaused ? (t.paused || 'Paused') : (t.listen || 'Listen')}</span>
         </span>
 
         {/* Animated Soundwave Bars when playing */}
@@ -200,8 +202,8 @@ export function ArticleAudioPlayer({
           type="button"
           onClick={handleStop}
           className="p-1 rounded-full text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer shrink-0"
-          title="Stop narration"
-          aria-label="Stop narration"
+          title={t.stop || 'Stop narration'}
+          aria-label={t.stop || 'Stop narration'}
         >
           <StopIcon className="h-3.5 w-3.5" />
         </button>

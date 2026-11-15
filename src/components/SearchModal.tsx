@@ -261,7 +261,7 @@ export function SearchModal({
         type: 'article',
         title: item.title,
         subtitle: item.excerpt,
-        badge: getCategoryShortName(category.id).toUpperCase(),
+        badge: getCategoryShortName(category.id, language.code).toUpperCase(),
         url: `/articles/${item.slug}`,
         meta: `${item.author} • ${item.date}${subcategory ? ` • ${subcategory.name}` : ''}`,
         keywords: [
@@ -269,7 +269,7 @@ export function SearchModal({
           item.excerpt,
           item.author,
           category.name,
-          getCategoryShortName(category.id),
+          getCategoryShortName(category.id, language.code),
           ...(item.tags || []),
           subcategory?.name || '',
         ],
@@ -278,13 +278,13 @@ export function SearchModal({
 
     // 2. Categories
     CATEGORIES.forEach((cat) => {
-      const shortName = getCategoryShortName(cat.id);
+      const shortName = getCategoryShortName(cat.id, language.code);
       list.push({
         id: `cat-${cat.id}`,
         type: 'category',
         title: cat.name,
         subtitle: cat.description,
-        badge: 'CATEGORY',
+        badge: (t.categories || 'CATEGORY').toUpperCase(),
         url: `/categories/${cat.id}`,
         meta: `${cat.subcategories.length} Specialized Subfields`,
         keywords: [
@@ -360,7 +360,7 @@ export function SearchModal({
         type: 'author',
         title: author.name,
         subtitle: author.bio,
-        badge: 'AUTHOR',
+        badge: (t.authors || 'AUTHOR').toUpperCase(),
         url: `/authors/${author.slug}`,
         meta: `${author.role} • ${author.location}`,
         keywords: [author.name, author.role, author.location, author.bio, author.slug],
@@ -510,7 +510,7 @@ export function SearchModal({
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search articles, markets, tools, categories, authors..."
+              placeholder={t.searchPlaceholder || 'Search articles, markets, tools, categories, authors...'}
               className="w-full bg-transparent font-sans text-sm sm:text-base text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none"
               aria-label={t.search}
             />
@@ -535,7 +535,7 @@ export function SearchModal({
               <div className="flex items-center gap-2 overflow-x-auto no-scrollbar flex-1 pe-2">
                 <span className="font-sans text-xs font-medium text-editorial-muted flex items-center gap-1 shrink-0">
                   <ClockIcon className="h-3.5 w-3.5 text-editorial-muted" />
-                  <span>Recent:</span>
+                  <span>{t.recent || 'Recent'}:</span>
                 </span>
                 {recentSearches.map((term) => (
                   <button
@@ -553,7 +553,7 @@ export function SearchModal({
                 onClick={clearRecentSearches}
                 className="font-sans text-xs font-medium text-editorial-muted hover:text-editorial-text cursor-pointer shrink-0"
               >
-                Clear
+                {t.clear || 'Clear'}
               </button>
             </div>
           )}
@@ -562,7 +562,7 @@ export function SearchModal({
           {!query && (
             <div className="px-4 py-2 bg-editorial-surface/50 border-b border-editorial-border/40 flex items-center gap-1.5 text-[11px] font-sans font-semibold uppercase tracking-wider text-editorial-muted">
               <SparklesIcon className="h-3.5 w-3.5 text-editorial-text" />
-              <span>Recommended Across Questo</span>
+              <span>{t.recommendedAcrossQuesto || 'Recommended Across Questo'}</span>
             </div>
           )}
 
@@ -574,10 +574,10 @@ export function SearchModal({
             {filteredResults.length === 0 ? (
               <div className="py-12 px-4 text-center space-y-2">
                 <p className="font-serif text-sm text-editorial-muted">
-                  No matching results found for &ldquo;{query}&rdquo;
+                  {t.noMatchingResults || 'No matching results found for'} &ldquo;{query}&rdquo;
                 </p>
                 <p className="text-xs text-editorial-muted/70">
-                  Try searching for keywords like &ldquo;AI&rdquo;, &ldquo;Bitcoin&rdquo;, &ldquo;Architecture&rdquo;, or &ldquo;Calculator&rdquo;.
+                  {t.trySearchingKeywords || 'Try searching for keywords like "AI", "Bitcoin", "Architecture", or "Calculator".'}
                 </p>
               </div>
             ) : (
@@ -664,12 +664,12 @@ export function SearchModal({
           {/* Compact Accessible Footer */}
           <div className="border-t border-editorial-border px-4 py-2 bg-editorial-surface-subtle flex items-center justify-between text-[10px] font-sans font-medium text-editorial-muted uppercase tracking-wider">
             <span>
-              {filteredResults.length} {filteredResults.length === 1 ? 'result' : 'results'} across Questo
+              {filteredResults.length} {t.resultsAcrossQuesto || 'results across Questo'}
             </span>
             <div className="hidden sm:flex items-center gap-3">
-              <span>↑↓ {isRtl ? 'للتنقل' : 'navigate'}</span>
-              <span>↵ {isRtl ? 'اختيار' : 'select'}</span>
-              <span>ESC {isRtl ? 'إغلاق' : 'close'}</span>
+              <span>↑↓ {t.navigateKey || (isRtl ? 'للتنقل' : 'navigate')}</span>
+              <span>↵ {t.selectKey || (isRtl ? 'اختيار' : 'select')}</span>
+              <span>ESC {t.closeKey || (isRtl ? 'إغلاق' : 'close')}</span>
             </div>
           </div>
         </DialogPrimitive.Content>

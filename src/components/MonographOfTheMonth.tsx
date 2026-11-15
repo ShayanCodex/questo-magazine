@@ -3,7 +3,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
-import { getArticleCategory, getCategoryShortName } from '../lib/categories';
+import { getArticleCategory, getCategoryShortName, getSubcategoryName } from '../lib/categories';
 import { ArticleViewCount } from './ArticleViewCount';
 import { BookmarkButton } from './BookmarkButton';
 
@@ -73,7 +73,7 @@ export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
           {/* Eyebrow Folio Marker */}
           <div className="flex items-center gap-2 text-xs font-mono font-medium uppercase tracking-[0.25em] text-accent">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            <span>Monograph of the Month</span>
+            <span>{t.monographOfTheMonth || 'Monograph of the Month'}</span>
             <span className="opacity-40">•</span>
             <span className="text-editorial-muted">Vol. 03</span>
           </div>
@@ -96,11 +96,11 @@ export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
               to={localePath(`/articles?category=${category.id}`)}
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-editorial-surface-subtle border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text transition-all"
             >
-              <span>{getCategoryShortName(category.id)}</span>
+              <span>{getCategoryShortName(category.id, language.code)}</span>
               {subcategory && (
                 <>
                   <span className="opacity-40">/</span>
-                  <span>{subcategory.name}</span>
+                  <span>{getSubcategoryName(subcategory.id, language.code)}</span>
                 </>
               )}
             </Link>
@@ -119,7 +119,7 @@ export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
             {article.author && (
               <>
                 <span className="text-editorial-text font-semibold">
-                  Text by {article.author}
+                  {t.textBy}: {article.author}
                 </span>
                 <span className="opacity-40">•</span>
               </>

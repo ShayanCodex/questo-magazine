@@ -21,6 +21,16 @@ const MASTER_BUNDLES: Record<string, ArticleData[]> = {
 
 const AVAILABLE_LANGS: Record<string, string[]> = availableLangsData as Record<string, string[]>;
 
+export function slugifyHeading(text?: string, index = 0): string {
+  if (!text || typeof text !== 'string') return `heading-${index}`;
+  const cleaned = text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\p{L}\p{N}\s-]/gu, '')
+    .replace(/\s+/gu, '-');
+  return cleaned.length > 0 ? cleaned : `heading-${index}`;
+}
+
 /**
  * Format a YYYY-MM-DD date string with fixed UTC timezone to prevent hydration mismatches.
  */

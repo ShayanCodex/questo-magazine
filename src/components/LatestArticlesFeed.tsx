@@ -24,17 +24,17 @@ export function LatestArticlesFeed({ articles, limit = 4 }: LatestArticlesFeedPr
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
           <span className="text-xs font-semibold uppercase tracking-widest text-accent block mb-1">
-            Chronological Publishing
+            {t.chronologicalPublishing || 'Chronological Publishing'}
           </span>
           <h2 className="font-display font-bold text-2xl sm:text-4xl text-editorial-text uppercase tracking-tight">
-            Latest Monographs &amp; Dispatches
+            {t.latestDispatches || 'Latest Monographs & Dispatches'}
           </h2>
         </div>
         <Link
           to={localePath('/articles')}
           className="text-xs font-semibold uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1.5"
         >
-          <span>Explore All Articles</span>
+          <span>{t.exploreAllArticles || 'Explore All Articles'}</span>
           <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180" />
         </Link>
       </div>
@@ -66,7 +66,7 @@ export function LatestArticlesFeed({ articles, limit = 4 }: LatestArticlesFeedPr
                         to={localePath(`/categories/${category.id}`)}
                         className="px-2.5 py-0.5 text-[10px] font-sans font-semibold uppercase tracking-wider bg-black/80 backdrop-blur-xs text-white rounded-full border border-white/20 hover:bg-black transition-colors"
                       >
-                        {getCategoryShortName(category.id)}
+                        {getCategoryShortName(category.id, language.code)}
                       </Link>
                     </div>
                   </Link>

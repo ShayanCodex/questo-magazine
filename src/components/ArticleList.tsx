@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
-import { getArticleCategory, getCategoryShortName, formatTopicName } from '../lib/categories';
+import { getArticleCategory, getCategoryShortName, getCategoryName, getSubcategoryName, formatTopicName } from '../lib/categories';
 import { ArticleViewCount } from './ArticleViewCount';
 import { BookmarkButton } from './BookmarkButton';
 import { LazyImage } from './LazyImage';
@@ -80,7 +80,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                     to={localePath(`/articles?category=${category.id}`)}
                     className="text-editorial-text font-bold hover:text-accent transition-colors"
                   >
-                    {getCategoryShortName(category.id)}
+                    {getCategoryShortName(category.id, language.code)}
                   </Link>
                   {subcategory && (
                     <>
@@ -89,7 +89,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                         to={localePath(`/articles?category=${category.id}&subcategory=${subcategory.id}`)}
                         className="text-editorial-muted hover:text-editorial-text transition-colors"
                       >
-                        {subcategory.name}
+                        {getSubcategoryName(subcategory.id, language.code)}
                       </Link>
                     </>
                   )}
@@ -144,7 +144,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
                     {/* Floating Category Badge over Artwork (Rounded Full + Poppins) */}
                     <div className="absolute top-2.5 start-2.5 z-10">
                       <span className="px-2.5 py-0.5 text-[10px] font-sans font-medium bg-black/75 backdrop-blur-xs text-white rounded-full border border-white/15 shadow-xs">
-                        {category.name}
+                        {getCategoryName(category.id, language.code)}
                       </span>
                     </div>
 

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { ListBulletIcon } from '@heroicons/react/24/outline';
 import type { ContentBlock } from '../lib/types';
+import { useLanguage } from '../lib/lang-context';
+import { slugifyHeading } from '../lib/content';
 import { cn } from '../lib/utils';
 
 export interface TocItem {
@@ -16,18 +18,15 @@ export interface ArticleTocProps {
 
 export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
   const [activeId, setActiveId] = useState<string>('');
+  const { t } = useLanguage();
 
-  // Extract TOC items from blocks
+  // Extract TOC items from blocks using the exact same slugifyHeading helper as Body.tsx
   const items: TocItem[] = [];
   if (Array.isArray(blocks)) {
     blocks.forEach((block, index) => {
       if ((block.type === 'h2' || block.type === 'h3') && block.text) {
-        const id = block.text
-          .toLowerCase()
-          .replace(/[^\w\s-]/g, '')
-          .replace(/\s+/g, '-');
         items.push({
-          id: id || `heading-${index}`,
+          id: slugifyHeading(block.text, index),
           text: block.text,
           level: block.type === 'h2' ? 2 : 3,
         });
@@ -35,7 +34,7 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
     });
   }
 
-  // Track active heading with IntersectionObserver
+  // Track active heading with IntersectionObserver and robust scroll fallback
   useEffect(() => {
     if (typeof window === 'undefined' || items.length === 0) return;
 
@@ -44,32 +43,59 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
       window.history.replaceState(null, '', window.location.pathname + window.location.search);
     }
 
+    const headingElements = items
+      .map((item) => document.getElementById(item.id))
+      .filter((el): el is HTMLElement => el !== null);
+
+    if (headingElements.length === 0) return;
+
+    // Clean single-element intersection observer
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id);
+        const intersecting = entries.filter((e) => e.isIntersecting);
+        if (intersecting.length > 0) {
+          // Sort by proximity to ideal reading top margin (~120px)
+          const best = intersecting.sort((a, b) => {
+            return Math.abs(a.boundingClientRect.top - 120) - Math.abs(b.boundingClientRect.top - 120);
+          })[0];
+          if (best?.target?.id) {
+            setActiveId(best.target.id);
           }
-        });
+        }
       },
       {
-        rootMargin: '-100px 0px -65% 0px',
-        threshold: 0.1,
+        rootMargin: '-80px 0px -65% 0px',
+        threshold: [0, 0.25, 0.5, 1],
       }
     );
 
-    items.forEach((item) => {
-      const el = document.getElementById(item.id);
-      if (el) observer.observe(el);
-    });
+    headingElements.forEach((el) => observer.observe(el));
 
+    // Fallback scroll listener so scrolling past fast or up resets correctly
     const handleScroll = () => {
-      // If user scrolls back up near the top of the article (before headings)
-      if (window.scrollY < 300) {
+      const scrollY = window.scrollY;
+      if (scrollY < 260) {
         setActiveId('');
+        return;
+      }
+
+      // Linear check: the active heading is the latest heading whose top is <= 200px
+      let currentId = '';
+      for (const el of headingElements) {
+        const top = el.getBoundingClientRect().top;
+        if (top <= 200) {
+          currentId = el.id;
+        } else {
+          break;
+        }
+      }
+      if (currentId) {
+        setActiveId(currentId);
       }
     };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
 
     return () => {
       observer.disconnect();
@@ -89,20 +115,18 @@ export function ArticleToc({ blocks = [], className }: ArticleTocProps) {
 
   return (
     <nav
-      aria-label="Table of contents"
-      className={cn(
-        'w-full space-y-3 font-sans text-xs',
-        className
-      )}
+      aria-label={t.tableOfContents || 'Table of Contents'}
+      className={cn('w-full space-y-3 font-sans text-xs', className)}
     >
       <div className="flex items-center gap-1.5 text-editorial-muted font-bold uppercase tracking-wider text-[11px] border-b border-editorial-border pb-2.5">
         <ListBulletIcon className="h-3.5 w-3.5 text-editorial-text" />
-        <span>Table of Contents</span>
+        <span>{t.tableOfContents || 'Table of Contents'}</span>
       </div>
 
       <ul className="space-y-1 pt-1">
         {items.map((item) => {
-          const isActive = activeId === item.id;
+          // Strictly require non-empty activeId and equality to avoid highlighting everything simultaneously
+          const isActive = Boolean(activeId) && activeId === item.id;
           return (
             <li
               key={item.id}

@@ -4,24 +4,24 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { AUTHORS } from '../data/authors';
 
 export function EditorialMastheadStrip() {
-  const { localePath } = useLanguage();
+  const { localePath, t } = useLanguage();
 
   return (
     <section className="pt-12 sm:pt-16 border-t border-editorial-border space-y-8 font-sans">
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
           <span className="text-xs font-semibold uppercase tracking-widest text-accent block mb-1">
-            Global Perspectives
+            {t.globalPerspectives || 'Global Perspectives'}
           </span>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-editorial-text uppercase tracking-tight">
-            Contributing Critics &amp; Essayists
+            {t.contributingCritics || 'Contributing Critics & Essayists'}
           </h2>
         </div>
         <Link
           to={localePath('/about#masthead')}
           className="text-xs font-semibold uppercase tracking-wider text-editorial-muted hover:text-editorial-text underline flex items-center gap-1.5"
         >
-          <span>View Full Masthead</span>
+          <span>{t.viewFullMasthead || 'View Full Masthead'}</span>
           <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180" />
         </Link>
       </div>

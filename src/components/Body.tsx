@@ -1,4 +1,5 @@
 import type { ContentBlock } from '../lib/types';
+import { slugifyHeading } from '../lib/content';
 
 export interface BodyProps {
   blocks: ContentBlock[];
@@ -21,9 +22,7 @@ export function Body({ blocks }: BodyProps) {
             );
 
           case 'h2': {
-            const headingId = block.text
-              ? block.text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')
-              : `heading-${index}`;
+            const headingId = slugifyHeading(block.text, index);
             return (
               <h2
                 key={index}
@@ -36,9 +35,7 @@ export function Body({ blocks }: BodyProps) {
           }
 
           case 'h3': {
-            const headingId = block.text
-              ? block.text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')
-              : `heading-${index}`;
+            const headingId = slugifyHeading(block.text, index);
             return (
               <h3
                 key={index}

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useLanguage } from '../lib/lang-context';
 import {
   ChatBubbleLeftRightIcon,
   ShieldCheckIcon,
@@ -33,7 +34,8 @@ export interface ArticleCommentsProps {
   title: string;
 }
 
-export function ArticleComments({ slug, title }: ArticleCommentsProps) {
+export function ArticleComments({ slug, title: _title }: ArticleCommentsProps) {
+  const { t } = useLanguage();
   const [comments, setComments] = useState<CommentItem[]>([]);
   const [author, setAuthor] = useState('');
   const [content, setContent] = useState('');
@@ -188,27 +190,27 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
           <div className="flex items-center gap-2">
             <ChatBubbleLeftRightIcon className="h-5 w-5 text-editorial-text" />
             <h3 className="font-display font-bold text-xl sm:text-2xl text-editorial-text tracking-tight uppercase">
-              Community Discourse
+              {t.communityDiscourse || 'Community Discourse'}
             </h3>
             <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-editorial-text text-editorial-bg shadow-2xs">
               {comments.length}
             </span>
           </div>
           <p className="text-xs text-editorial-muted">
-            Open editorial discussion for &ldquo;{title}&rdquo; &bull;{' '}
-            <strong className="text-editorial-text font-semibold">No login required</strong>
+            {t.discussion || 'Discussion'} &bull;{' '}
+            <strong className="text-editorial-text font-semibold">{t.joinDiscussion || 'Open Discussion'}</strong>
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-2.5">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium bg-editorial-surface-subtle border border-editorial-border text-editorial-muted shadow-2xs">
             <GlobeAmericasIcon className="h-3.5 w-3.5 text-sky-500" />
-            <span>Worldwide Cloud Sync</span>
+            <span>{t.globalEdition || 'Worldwide Sync'}</span>
           </span>
 
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium bg-editorial-surface-subtle border border-editorial-border text-editorial-muted shadow-2xs">
             <ShieldCheckIcon className="h-3.5 w-3.5 text-emerald-500" />
-            <span>Instant Guest Posting</span>
+            <span>{t.zeroTracker || 'Instant Posting'}</span>
           </span>
 
           {repo && (
@@ -231,11 +233,11 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
         <div className="flex items-center justify-between border-b border-editorial-border/50 pb-3">
           <div className="flex items-center gap-2 text-xs font-semibold text-editorial-text uppercase tracking-wider">
             <SparklesIcon className="h-4 w-4 text-accent" />
-            <span>Join the Discussion</span>
+            <span>{t.joinDiscussion || 'Join the Discussion'}</span>
           </div>
 
           <span className="text-[11px] text-editorial-muted">
-            Visible to readers worldwide &bull; Instant publication
+            {t.discussion || 'Discussion'} &bull; Questo Cloud
           </span>
         </div>
 
@@ -245,14 +247,14 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
             <div className="flex items-center gap-1.5 text-editorial-text truncate">
               <ArrowUturnLeftIcon className="h-3.5 w-3.5 text-editorial-muted shrink-0" />
               <span>
-                Replying to <strong className="font-semibold">@{replyTo.author}</strong>
+                {t.replyingTo || 'Replying to'} <strong className="font-semibold">@{replyTo.author}</strong>
               </span>
             </div>
             <button
               type="button"
               onClick={() => setReplyTo(null)}
               className="p-1 text-editorial-muted hover:text-editorial-text cursor-pointer"
-              title="Cancel reply"
+              title={t.cancelReply || 'Cancel reply'}
             >
               <XMarkIcon className="h-3.5 w-3.5" />
             </button>
@@ -271,13 +273,10 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                 value={author}
                 onChange={(e) => setAuthor(e.target.value)}
                 maxLength={40}
-                placeholder="Your Name (or leave blank to post as Guest)"
+                placeholder={t.namePlaceholder || 'Your Name (or leave blank to post as Guest)'}
                 className="w-full ps-9 pe-3 py-2 text-xs rounded-lg border border-editorial-border bg-editorial-surface-subtle text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none focus:ring-2 focus:ring-editorial-text/20 focus:border-editorial-text transition-all"
               />
             </div>
-            <span className="hidden sm:inline text-[11px] text-editorial-muted">
-              (Publicly visible on your comment)
-            </span>
           </div>
 
           {/* Comment Textarea */}
@@ -291,14 +290,14 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
               maxLength={1000}
               placeholder={
                 replyTo
-                  ? `Write your response to @${replyTo.author}...`
-                  : 'Share your thoughts, architectural perspectives, or questions on this monograph...'
+                  ? `${t.reply || 'Response'} @${replyTo.author}...`
+                  : (t.commentPlaceholder || 'Share your thoughts, architectural perspectives, or questions on this monograph...')
               }
               className="w-full p-3 sm:p-3.5 text-xs sm:text-[13px] rounded-xl border border-editorial-border bg-editorial-surface-subtle text-editorial-text placeholder:text-editorial-muted/70 focus:outline-none focus:ring-2 focus:ring-editorial-text/20 focus:border-editorial-text transition-all resize-y leading-relaxed"
             />
 
             <div className="flex items-center justify-between text-[11px] text-editorial-muted px-1">
-              <span>Public discussion &bull; Synced globally to Questo Cloud</span>
+              <span>{t.discussion || 'Discussion'} &bull; Questo Cloud</span>
               <span>{content.length} / 1000</span>
             </div>
           </div>
@@ -309,7 +308,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
               {justSubmitted && (
                 <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 animate-fade-in">
                   <CheckCircleIcon className="h-4 w-4" />
-                  <span>Comment posted &amp; synced worldwide!</span>
+                  <span>{t.copied || 'Posted!'}</span>
                 </div>
               )}
             </div>
@@ -325,7 +324,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
               )}
             >
               <PaperAirplaneIcon className="h-3.5 w-3.5 rtl:rotate-180" />
-              <span>{isSubmitting ? 'Posting...' : 'Post Comment'}</span>
+              <span>{isSubmitting ? (t.posting || 'Posting...') : (t.postComment || 'Post Comment')}</span>
             </button>
           </div>
         </form>
@@ -335,11 +334,11 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
       <div className="flex items-center justify-between pt-2">
         <div className="flex items-center gap-2">
           <span className="text-xs font-medium text-editorial-muted">
-            Showing {sortedComments.length} {sortedComments.length === 1 ? 'comment' : 'comments'}
+            {t.showing || 'Showing'} {sortedComments.length} {t.discussion || 'comments'}
           </span>
           {isLoadingCloud && (
             <span className="text-[10px] text-editorial-muted/60 animate-pulse">
-              (syncing...)
+              ...
             </span>
           )}
         </div>
@@ -355,7 +354,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                 : 'text-editorial-muted hover:text-editorial-text'
             )}
           >
-            Newest
+            {t.newest || 'Newest'}
           </button>
           <button
             type="button"
@@ -367,7 +366,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                 : 'text-editorial-muted hover:text-editorial-text'
             )}
           >
-            Most Appreciated
+            {t.mostAppreciated || 'Most Appreciated'}
           </button>
         </div>
       </div>
@@ -378,10 +377,10 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
           <div className="py-12 px-4 rounded-xl border border-dashed border-editorial-border text-center space-y-2">
             <ChatBubbleLeftRightIcon className="h-8 w-8 mx-auto text-editorial-muted/50" />
             <p className="text-sm font-semibold text-editorial-text">
-              No comments yet on this monograph.
+              {t.noCommentsYet || 'No comments yet on this monograph.'}
             </p>
             <p className="text-xs text-editorial-muted max-w-sm mx-auto">
-              Be the first to start the conversation! No login or account required.
+              {t.beFirstToComment || 'Be the first to start the conversation! No login or account required.'}
             </p>
           </div>
         ) : (
@@ -447,8 +446,8 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                       type="button"
                       onClick={() => handleDelete(comment.id)}
                       className="p-1.5 rounded-full text-editorial-muted hover:text-red-500 hover:bg-red-500/10 transition-colors cursor-pointer"
-                      title="Delete your comment"
-                      aria-label="Delete comment"
+                      title={t.delete || 'Delete'}
+                      aria-label={t.delete || 'Delete'}
                     >
                       <TrashIcon className="h-4 w-4" />
                     </button>
@@ -459,7 +458,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                 {comment.replyTo && (
                   <div className="inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded bg-editorial-surface-subtle text-editorial-muted">
                     <ArrowUturnLeftIcon className="h-3 w-3" />
-                    <span>In reply to @{comment.replyTo}</span>
+                    <span>{t.replyingTo || 'In reply to'} @{comment.replyTo}</span>
                   </div>
                 )}
 
@@ -481,7 +480,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                           ? 'bg-rose-500/10 text-rose-600 dark:text-rose-400 font-semibold'
                           : 'text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-subtle'
                       )}
-                      title={hasLiked ? 'Unlike' : 'Appreciate this comment'}
+                      title={hasLiked ? (t.unlike || 'Unlike') : (t.like || 'Like')}
                     >
                       {hasLiked ? (
                         <HeartIconSolid className="h-3.5 w-3.5 text-rose-500" />
@@ -498,7 +497,7 @@ export function ArticleComments({ slug, title }: ArticleCommentsProps) {
                       className="inline-flex items-center gap-1 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer px-2 py-1 rounded-full hover:bg-editorial-surface-subtle"
                     >
                       <ArrowUturnLeftIcon className="h-3.5 w-3.5" />
-                      <span>Reply</span>
+                      <span>{t.reply || 'Reply'}</span>
                     </button>
                   </div>
                 </div>

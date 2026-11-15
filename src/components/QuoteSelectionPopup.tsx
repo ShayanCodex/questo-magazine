@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useLanguage } from '../lib/lang-context';
 import {
   ClipboardDocumentCheckIcon,
   DocumentDuplicateIcon,
@@ -14,6 +15,7 @@ export function QuoteSelectionPopup({
   author = 'Questo Magazine',
   articleTitle = '',
 }: QuoteSelectionPopupProps) {
+  const { t } = useLanguage();
   const [position, setPosition] = useState<{ top: number; left: number } | null>(null);
   const [selectedText, setSelectedText] = useState('');
   const [copied, setCopied] = useState(false);
@@ -113,14 +115,14 @@ export function QuoteSelectionPopup({
         type="button"
         onClick={handleCopyQuote}
         className="flex items-center gap-1.5 px-3 py-1 rounded-full hover:bg-white/20 transition-colors cursor-pointer"
-        title="Copy Quote with Citation"
+        title={t.copyQuote || 'Copy Quote with Citation'}
       >
         {copied ? (
           <ClipboardDocumentCheckIcon className="h-3.5 w-3.5 text-emerald-400" />
         ) : (
           <DocumentDuplicateIcon className="h-3.5 w-3.5 text-white/80" />
         )}
-        <span>{copied ? 'Copied Quote!' : 'Copy Quote'}</span>
+        <span>{copied ? (t.copiedQuote || 'Copied Quote!') : (t.copyQuote || 'Copy Quote')}</span>
       </button>
 
       <div className="w-px h-3 bg-white/20" />
@@ -129,11 +131,11 @@ export function QuoteSelectionPopup({
         type="button"
         onClick={handleShareTwitter}
         className="flex items-center gap-1 px-2.5 py-1 rounded-full hover:bg-white/20 transition-colors cursor-pointer text-white/90 hover:text-white"
-        title="Share quote to X"
-        aria-label="Share quote on X"
+        title={t.share || 'Share'}
+        aria-label={t.share || 'Share quote'}
       >
         <span className="font-bold text-xs">𝕏</span>
-        <span>Share</span>
+        <span>{t.share || 'Share'}</span>
       </button>
     </div>
   );

@@ -237,7 +237,7 @@ export function FeaturedShowcaseSlider({
               {currentArticle.author && (
                 <>
                   <span className="opacity-40 hidden sm:inline">•</span>
-                  <span className="text-white/90 font-medium hidden sm:inline">By {currentArticle.author}</span>
+                  <span className="text-white/90 font-medium hidden sm:inline">{t.textBy}: {currentArticle.author}</span>
                 </>
               )}
             </div>

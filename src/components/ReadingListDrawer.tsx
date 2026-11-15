@@ -50,10 +50,10 @@ export function ReadingListDrawer({
             </span>
             <div>
               <SheetTitle className="font-display font-bold text-xl uppercase tracking-tight text-editorial-text">
-                Reading List
+                {t.savedReadingList || 'Reading List'}
               </SheetTitle>
               <SheetDescription className="text-xs font-sans text-editorial-muted">
-                {count} {count === 1 ? 'saved monograph' : 'saved monographs'} stored locally
+                {count} {t.savedMonographs || 'saved monographs'}
               </SheetDescription>
             </div>
           </div>
@@ -63,10 +63,10 @@ export function ReadingListDrawer({
               type="button"
               onClick={clearReadingList}
               className="text-xs font-sans text-editorial-muted hover:text-red-500 transition-colors flex items-center gap-1 cursor-pointer"
-              title="Clear all saved articles"
+              title={t.clear || 'Clear'}
             >
               <TrashIcon className="h-3.5 w-3.5" />
-              <span>Clear</span>
+              <span>{t.clear || 'Clear'}</span>
             </button>
           )}
         </SheetHeader>
@@ -80,10 +80,10 @@ export function ReadingListDrawer({
               </div>
               <div className="space-y-1">
                 <p className="font-display font-bold text-base text-editorial-text">
-                  Your reading list is empty
+                  {t.emptyReadingList || 'Your reading list is empty'}
                 </p>
                 <p className="font-serif text-xs text-editorial-muted max-w-xs mx-auto leading-relaxed">
-                  Click the bookmark icon on any article or monograph to save it here for offline reading.
+                  {t.emptyReadingListDesc || 'Click the bookmark icon on any article or monograph to save it here for offline reading.'}
                 </p>
               </div>
               <Link
@@ -91,7 +91,7 @@ export function ReadingListDrawer({
                 onClick={() => onOpenChange(false)}
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-editorial-text text-editorial-bg font-sans text-xs font-semibold shadow-xs hover:opacity-90 transition-all cursor-pointer"
               >
-                <span>Browse Articles</span>
+                <span>{t.browseArticles || 'Browse Articles'}</span>
                 <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
               </Link>
             </div>

@@ -89,7 +89,7 @@ export function EditorialFaq() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <span className="text-xs font-sans font-semibold uppercase tracking-widest text-accent block mb-2">
-            Inquiries &amp; Standards
+            {t.inquiriesAndStandards || 'Inquiries & Standards'}
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-editorial-text uppercase tracking-tight">
             {t.faqTitle}

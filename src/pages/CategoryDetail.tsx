@@ -14,6 +14,8 @@ import { cn } from '../lib/utils';
 import {
   type Category,
   getArticleCategory,
+  getCategoryName,
+  getSubcategoryName,
 } from '../lib/categories';
 
 interface CategoryDetailLoaderData {
@@ -24,7 +26,7 @@ interface CategoryDetailLoaderData {
 
 export function CategoryDetail() {
   const { category, articles, pathname } = useLoaderData() as CategoryDetailLoaderData;
-  const { t, localePath } = useLanguage();
+  const { t, localePath, language } = useLanguage();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const activeSubcategory = searchParams.get('subcategory');
@@ -37,10 +39,12 @@ export function CategoryDetail() {
     });
   }, [articles, activeSubcategory]);
 
+  const localizedCategoryName = getCategoryName(category.id, language.code);
+
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
     { label: t.categories || 'Categories', href: localePath('/categories') },
-    { label: category.name },
+    { label: localizedCategoryName },
   ];
 
   const handleSubcategoryClick = (subId: string | null) => {
@@ -56,7 +60,7 @@ export function CategoryDetail() {
   return (
     <div className="space-y-10 max-w-6xl mx-auto">
       <Seo
-        title={`${category.name} — Editorial Monographs & Essays`}
+        title={`${localizedCategoryName} — Editorial Monographs & Essays`}
         description={category.description}
         pathname={pathname}
         type="website"
@@ -69,10 +73,10 @@ export function CategoryDetail() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3 max-w-2xl">
             <span className="text-xs font-sans font-semibold uppercase tracking-widest text-accent block">
-              Editorial Discipline
+              {t.disciplines || 'Editorial Discipline'}
             </span>
             <h1 className="font-display font-bold text-3xl sm:text-5xl text-editorial-text uppercase tracking-tight">
-              {category.name}
+              {localizedCategoryName}
             </h1>
             <p className="font-serif text-base sm:text-lg text-editorial-muted leading-relaxed">
               {category.description}
@@ -85,10 +89,10 @@ export function CategoryDetail() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface-subtle text-editorial-text font-sans text-xs font-semibold uppercase tracking-wider transition-colors shrink-0 shadow-2xs"
-            title={`Subscribe to ${category.name} RSS feed`}
+            title={`Subscribe to ${localizedCategoryName} RSS feed`}
           >
             <RssIcon className="h-4 w-4 text-amber-500" />
-            <span>Category RSS Feed</span>
+            <span>{t.categoryRss || 'Category RSS Feed'}</span>
           </a>
         </div>
 
@@ -96,7 +100,7 @@ export function CategoryDetail() {
         <div className="pt-6 border-t border-editorial-border/60 flex flex-wrap items-center gap-2">
           <span className="text-xs font-sans font-medium text-editorial-muted flex items-center gap-1.5 me-2">
             <AdjustmentsHorizontalIcon className="h-4 w-4 text-editorial-text" />
-            <span>Filter Niche:</span>
+            <span>{t.filterNiche || 'Filter Niche'}:</span>
           </span>
 
           <button
@@ -109,7 +113,7 @@ export function CategoryDetail() {
                 : 'bg-editorial-surface border-editorial-border text-editorial-muted hover:text-editorial-text'
             )}
           >
-            All Niches ({articles.length})
+            {t.allNiches || 'All Niches'} ({articles.length})
           </button>
 
           {category.subcategories.map((sub) => {
@@ -130,7 +134,7 @@ export function CategoryDetail() {
                     : 'bg-editorial-surface border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text'
                 )}
               >
-                {sub.name} ({subCount})
+                {getSubcategoryName(sub.id, language.code)} ({subCount})
               </button>
             );
           })}

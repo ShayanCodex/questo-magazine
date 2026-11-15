@@ -28,7 +28,7 @@ import { ThemeToggle } from './ThemeToggle';
 import { ReadingListDrawer } from './ReadingListDrawer';
 import { AnalyticsTracker } from './AnalyticsTracker';
 import { QuestoLogo } from './QuestoLogo';
-import { CATEGORIES, getCategoryShortName, formatTopicName } from '../lib/categories';
+import { CATEGORIES, getCategoryShortName, getCategoryName, getSubcategoryName, formatTopicName } from '../lib/categories';
 import { cn } from '../lib/utils';
 
 export interface LayoutProps {
@@ -171,8 +171,8 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
           {/* Top navigation links & icons */}
           <div className="flex items-center gap-1.5 sm:gap-2.5 md:gap-3 shrink-0">
-            {/* Desktop Navigation Links - hidden on < xl to avoid overflowing screen */}
-            <nav className="hidden xl:flex items-center gap-6 text-xs uppercase font-sans font-medium tracking-wider text-editorial-muted me-3">
+            {/* Desktop Navigation Links - visible on large screens */}
+            <nav className="hidden lg:flex items-center gap-4 xl:gap-6 text-xs uppercase font-sans font-medium tracking-wider text-editorial-muted me-2 xl:me-3">
               <Link to={localePath('/')} className="hover:text-editorial-text transition-colors">
                 {t.home}
               </Link>
@@ -190,7 +190,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 {t.categories || 'Categories'}
               </Link>
               <Link to={localePath('/tools')} className="hover:text-editorial-text transition-colors">
-                Tools
+                {t.tools || 'Tools'}
               </Link>
             </nav>
 
@@ -221,11 +221,11 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               type="button"
               onClick={() => setReadingListOpen(true)}
               className="inline-flex items-center justify-center gap-1.5 px-3 h-10 min-h-[44px] min-w-[44px] rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0 font-sans text-xs font-medium"
-              title="Saved Reading List"
-              aria-label="Open reading list"
+              title={t.savedReadingList || 'Saved Reading List'}
+              aria-label={t.openReadingList || 'Open reading list'}
             >
               <BookmarkIcon className="h-4 w-4 text-editorial-muted group-hover:text-editorial-text" />
-              <span className="hidden lg:inline">Saved</span>
+              <span className="hidden lg:inline">{t.saved || 'Saved'}</span>
               {readingListCount > 0 && (
                 <span className="w-4 h-4 rounded-full bg-editorial-text text-editorial-bg text-[10px] font-bold flex items-center justify-center">
                   {readingListCount}
@@ -298,12 +298,12 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
               )}
             </div>
 
-            {/* Menu Trigger */}
+            {/* Menu Trigger - strictly mobile/tablet only (hidden on lg and above) */}
             <Button
               variant="outline"
               size="sm"
               onClick={() => setDrawerOpen(true)}
-              className="text-xs font-sans font-medium gap-1.5 sm:gap-2 h-10 min-h-[44px] min-w-[44px] px-3.5 rounded-full border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
+              className="lg:hidden text-xs font-sans font-medium gap-1.5 sm:gap-2 h-10 min-h-[44px] min-w-[44px] px-3.5 rounded-full border-editorial-border hover:border-editorial-text cursor-pointer shrink-0"
               aria-label={t.menu}
             >
               <Bars3Icon className="h-4 w-4" />
@@ -332,49 +332,49 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 <QuestoLogo textClassName="text-xl font-bold tracking-tight" showSubtitle />
               </Link>
               <p className="font-serif text-sm text-editorial-muted leading-relaxed max-w-sm">
-                An international journal investigating brutalist permanence, Swiss typographic systems, tactile material craft, and zero-runtime digital architectures.
+                {t.footerMission || 'An international journal investigating brutalist permanence, Swiss typographic systems, tactile material craft, and zero-runtime digital architectures.'}
               </p>
               <div className="pt-2 flex items-center gap-2 text-xs text-editorial-muted">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="font-medium text-editorial-text">Global Edition • ISSN 2974-8831</span>
+                <span className="font-medium text-editorial-text">{t.globalEdition || 'Global Edition • ISSN 2974-8831'}</span>
               </div>
             </div>
 
             {/* Col 2: Editorial Disciplines */}
             <div className="lg:col-span-3 space-y-3">
               <span className="text-xs font-semibold uppercase tracking-widest text-editorial-text block">
-                Disciplines
+                {t.disciplines || 'Disciplines'}
               </span>
               <ul className="space-y-2 text-xs font-medium text-editorial-muted">
                 <li>
                   <Link to={localePath('/categories/architecture-and-space')} className="hover:text-editorial-text transition-colors">
-                    Architecture &amp; Spatial Design
+                    {getCategoryName('architecture-and-space', language.code)}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/categories/design-and-typography')} className="hover:text-editorial-text transition-colors">
-                    Design &amp; Typographic Systems
+                    {getCategoryName('design-and-typography', language.code)}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/categories/art-and-culture')} className="hover:text-editorial-text transition-colors">
-                    Art, Culture &amp; Sculpture
+                    {getCategoryName('art-and-culture', language.code)}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/categories/engineering-and-technology')} className="hover:text-editorial-text transition-colors">
-                    Engineering &amp; Static Systems
+                    {getCategoryName('engineering-and-technology', language.code)}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/markets')} className="hover:text-editorial-text transition-colors flex items-center gap-1.5 text-editorial-text font-semibold">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    <span>Global Market Intelligence</span>
+                    <span>{t.globalMarketIntelligence || 'Global Market Intelligence'}</span>
                   </Link>
                 </li>
                 <li className="pt-1">
                   <Link to={localePath('/categories')} className="text-accent hover:underline flex items-center gap-1 font-semibold">
-                    <span>All Categories (A–Z)</span>
+                    <span>{t.allCategoriesAtoZ || 'All Categories (A–Z)'}</span>
                     <ArrowRightIcon className="h-3 w-3 rtl:rotate-180" />
                   </Link>
                 </li>
@@ -384,42 +384,42 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             {/* Col 3: The Magazine */}
             <div className="lg:col-span-2 space-y-3">
               <span className="text-xs font-semibold uppercase tracking-widest text-editorial-text block">
-                The Journal
+                {t.theJournal || 'The Journal'}
               </span>
               <ul className="space-y-2 text-xs font-medium text-editorial-muted">
                 <li>
                   <Link to={localePath('/tools')} className="hover:text-editorial-text transition-colors">
-                    Interactive Utilities Suite
+                    {t.interactiveUtilities || 'Interactive Utilities Suite'}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/about')} className="hover:text-editorial-text transition-colors">
-                    About &amp; Manifesto
+                    {t.aboutManifesto || 'About & Manifesto'}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/about#masthead')} className="hover:text-editorial-text transition-colors">
-                    The Masthead
+                    {t.theMasthead || 'The Masthead'}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/contact')} className="hover:text-editorial-text transition-colors">
-                    Pitch a Monograph
+                    {t.pitchMonograph || 'Pitch a Monograph'}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/terms')} className="hover:text-editorial-text transition-colors">
-                    Terms of Service
+                    {t.termsOfService || 'Terms of Service'}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/privacy')} className="hover:text-editorial-text transition-colors">
-                    Privacy Disclosures
+                    {t.privacyDisclosures || 'Privacy Disclosures'}
                   </Link>
                 </li>
                 <li>
                   <Link to={localePath('/admin')} className="hover:text-editorial-text transition-colors text-accent">
-                    Editorial CMS
+                    {t.editorialCms || 'Editorial CMS'}
                   </Link>
                 </li>
               </ul>
@@ -428,7 +428,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             {/* Col 4: Syndication & Languages */}
             <div className="lg:col-span-4 space-y-3">
               <span className="text-xs font-semibold uppercase tracking-widest text-editorial-text block">
-                Syndication &amp; Locales
+                {t.syndicationAndLocales || 'Syndication & Locales'}
               </span>
               <div className="flex flex-wrap gap-2 text-xs font-medium pb-2">
                 <a
@@ -485,28 +485,28 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
           {/* Bottom Legal & Regulatory Compliance Row */}
           <div className="pt-8 border-t border-editorial-border/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-editorial-muted">
             <div className="flex flex-wrap items-center gap-4">
-              <span>&copy; 2026 {siteConfig.name} Publishing Group. All rights reserved.</span>
+              <span>&copy; 2026 {siteConfig.name} Publishing Group. {t.allRightsReserved || 'All rights reserved.'}</span>
               <span>•</span>
-              <span>Zero-Tracker Architecture</span>
+              <span>{t.zeroTracker || 'Zero-Tracker Architecture'}</span>
               <span>•</span>
               <Link
                 to={localePath('/terms')}
                 className="hover:text-editorial-text underline underline-offset-2 transition-colors"
               >
-                Terms
+                {t.termsOfService || 'Terms'}
               </Link>
               <span>•</span>
               <Link
                 to={localePath('/privacy')}
                 className="hover:text-editorial-text underline underline-offset-2 transition-colors"
               >
-                Privacy
+                {t.privacyDisclosures || 'Privacy'}
               </Link>
             </div>
 
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Edge Verified • Cloudflare Pages</span>
+              <span>{t.edgeVerified || 'Edge Verified • Cloudflare Pages'}</span>
             </div>
           </div>
         </div>
@@ -606,7 +606,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 onClick={() => setDrawerOpen(false)}
                 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors flex items-center justify-between"
               >
-                <span>Tools</span>
+                <span>{t.tools || 'Tools'}</span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-editorial-text/10 text-editorial-text border border-editorial-border uppercase tracking-widest font-bold">
                   Zero Cost
                 </span>
@@ -619,7 +619,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 }}
                 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight hover:text-accent transition-colors text-start flex items-center justify-between cursor-pointer"
               >
-                <span>Reading List</span>
+                <span>{t.savedReadingList || 'Reading List'}</span>
                 {readingListCount > 0 && (
                   <span className="text-xs font-sans px-2 py-0.5 rounded-full bg-editorial-text text-editorial-bg font-bold">
                     {readingListCount}
@@ -635,7 +635,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 onClick={() => setDrawerOpen(false)}
                 className="text-sm font-semibold uppercase tracking-wider text-editorial-text hover:text-accent transition-colors py-1 flex items-center justify-between"
               >
-                <span>About &amp; Masthead</span>
+                <span>{t.aboutManifesto || 'About & Masthead'}</span>
                 <ArrowRightIcon className="h-3.5 w-3.5 text-editorial-muted rtl:rotate-180" />
               </Link>
               <Link
@@ -643,7 +643,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                 onClick={() => setDrawerOpen(false)}
                 className="text-sm font-semibold uppercase tracking-wider text-editorial-text hover:text-accent transition-colors py-1 flex items-center justify-between"
               >
-                <span>Pitch a Monograph</span>
+                <span>{t.pitchMonograph || 'Pitch a Monograph'}</span>
                 <ArrowRightIcon className="h-3.5 w-3.5 text-editorial-muted rtl:rotate-180" />
               </Link>
               <div className="flex items-center gap-4 text-xs font-medium text-editorial-muted pt-1">
@@ -652,7 +652,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                   onClick={() => setDrawerOpen(false)}
                   className="hover:text-editorial-text underline"
                 >
-                  Terms of Service
+                  {t.termsOfService || 'Terms of Service'}
                 </Link>
                 <span>•</span>
                 <Link
@@ -660,7 +660,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                   onClick={() => setDrawerOpen(false)}
                   className="hover:text-editorial-text underline"
                 >
-                  Privacy Disclosures
+                  {t.privacyDisclosures || 'Privacy Disclosures'}
                 </Link>
               </div>
             </div>
@@ -694,7 +694,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                       className="group flex items-center justify-between transition-colors"
                     >
                       <span className="font-sans font-bold text-sm text-editorial-text group-hover:text-accent transition-colors">
-                        {getCategoryShortName(cat.id)}
+                        {getCategoryShortName(cat.id, language.code)}
                       </span>
                       <ArrowRightIcon className="h-3.5 w-3.5 text-editorial-muted group-hover:text-editorial-text group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180 transition-transform" />
                     </Link>
@@ -708,7 +708,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                           onClick={() => setDrawerOpen(false)}
                           className="px-2.5 py-0.5 text-[11px] rounded-full bg-editorial-surface border border-editorial-border/60 text-editorial-muted hover:text-editorial-text hover:border-editorial-text transition-colors font-medium"
                         >
-                          {sub.name}
+                          {getSubcategoryName(sub.id, language.code)}
                         </Link>
                       ))}
                     </div>

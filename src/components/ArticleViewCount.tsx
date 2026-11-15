@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { EyeIcon } from '@heroicons/react/24/outline';
+import { useLanguage } from '../lib/lang-context';
 import {
   fetchGoatCounterViews,
   getSynchronousViewCount,
@@ -178,8 +179,9 @@ export function ArticleViewCount({
     animateOnMount: true,
   });
 
+  const { t } = useLanguage();
   const formattedCount = formatViewCount(displayValue, compact);
-  const label = displayValue === 1 ? 'view' : 'views';
+  const label = displayValue === 1 ? (t.view || 'view') : (t.views || 'views');
 
   if (compact) {
     return (

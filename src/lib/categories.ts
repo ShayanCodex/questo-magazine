@@ -275,7 +275,230 @@ export function getCategoryById(id: string): Category | undefined {
   return CATEGORIES.find((cat) => cat.id === id);
 }
 
-export function getCategoryShortName(categoryId: string): string {
+export const CATEGORY_LOCALIZATIONS: Record<string, Record<string, { name: string; short: string }>> = {
+  'art-and-culture': {
+    en: { name: 'Art & Culture', short: 'Art & Life' },
+    es: { name: 'Arte y Cultura', short: 'Arte y Vida' },
+    fr: { name: 'Art et Culture', short: 'Art & Vie' },
+    de: { name: 'Kunst und Kultur', short: 'Kunst & Leben' },
+    ar: { name: 'الفن والثقافة', short: 'فن وثقافة' },
+    ur: { name: 'فن اور ثقافت', short: 'فن و ثقافت' },
+  },
+  'architecture-and-space': {
+    en: { name: 'Architecture & Space', short: 'Architecture' },
+    es: { name: 'Arquitectura y Espacio', short: 'Arquitectura' },
+    fr: { name: 'Architecture et Espace', short: 'Architecture' },
+    de: { name: 'Architektur und Raum', short: 'Architektur' },
+    ar: { name: 'العمارة والتصميم المكاني', short: 'عمارة' },
+    ur: { name: 'فن تعمیر اور کشادہ ڈیزائن', short: 'طرزِ تعمیر' },
+  },
+  'design-and-typography': {
+    en: { name: 'Design & Typography', short: 'Design' },
+    es: { name: 'Diseño y Tipografía', short: 'Diseño' },
+    fr: { name: 'Design et Typographie', short: 'Design' },
+    de: { name: 'Design und Typografie', short: 'Design' },
+    ar: { name: 'التصميم والأنظمة الطباعية', short: 'تصميم' },
+    ur: { name: 'ڈیزائن اور خطاطی', short: 'ڈیزائن' },
+  },
+  'engineering-and-technology': {
+    en: { name: 'Engineering & Technology', short: 'Tech' },
+    es: { name: 'Ingeniería y Tecnología', short: 'Tecnología' },
+    fr: { name: 'Ingénierie et Technologie', short: 'Technologie' },
+    de: { name: 'Ingenieurwesen & Technologie', short: 'Technik' },
+    ar: { name: 'الهندسة والأنظمة الثابتة', short: 'هندسة' },
+    ur: { name: 'انجینئرنگ اور ٹیکنالوجی', short: 'انجینئرنگ' },
+  },
+  'technology': {
+    en: { name: 'Technology & AI', short: 'Innovation' },
+    es: { name: 'Tecnología e IA', short: 'Innovación' },
+    fr: { name: 'Technologie et IA', short: 'Innovation' },
+    de: { name: 'Technologie & KI', short: 'Innovation' },
+    ar: { name: 'التكنولوجيا والذكاء الاصطناعي', short: 'ابتكار' },
+    ur: { name: 'ٹیکنالوجی اور مصنوعی ذہانت', short: 'جدت' },
+  },
+  'software': {
+    en: { name: 'Software & Code', short: 'Software' },
+    es: { name: 'Software y Código', short: 'Software' },
+    fr: { name: 'Logiciel et Code', short: 'Logiciel' },
+    de: { name: 'Software und Code', short: 'Software' },
+    ar: { name: 'البرمجيات وتطوير الأنظمة', short: 'برمجيات' },
+    ur: { name: 'سافٹ ویئر اور کوڈنگ', short: 'سافٹ ویئر' },
+  },
+  'finance': {
+    en: { name: 'Finance & Markets', short: 'Finance' },
+    es: { name: 'Finanzas y Mercados', short: 'Finanzas' },
+    fr: { name: 'Finance et Marchés', short: 'Finance' },
+    de: { name: 'Finanzen und Märkte', short: 'Finanzen' },
+    ar: { name: 'المالية والأسواق العالمية', short: 'مالية' },
+    ur: { name: 'فنانس اور عالمی مارکیٹیں', short: 'فنانس' },
+  },
+  'business': {
+    en: { name: 'Business & Industry', short: 'Business' },
+    es: { name: 'Negocios e Industria', short: 'Negocios' },
+    fr: { name: 'Affaires et Industrie', short: 'Affaires' },
+    de: { name: 'Wirtschaft und Industrie', short: 'Wirtschaft' },
+    ar: { name: 'الأعمال والصناعة', short: 'أعمال' },
+    ur: { name: 'کاروبار اور صنعت', short: 'کاروبار' },
+  },
+  'crypto': {
+    en: { name: 'Crypto & Web3', short: 'Crypto' },
+    es: { name: 'Cripto y Web3', short: 'Cripto' },
+    fr: { name: 'Crypto et Web3', short: 'Crypto' },
+    de: { name: 'Krypto und Web3', short: 'Krypto' },
+    ar: { name: 'العملات الرقمية والبلوكشين', short: 'كريبتو' },
+    ur: { name: 'کرپٹو اور بلاک چین', short: 'کرپٹو' },
+  },
+  'sports': {
+    en: { name: 'Sports & Athletics', short: 'Sports' },
+    es: { name: 'Deportes y Atletismo', short: 'Deportes' },
+    fr: { name: 'Sports et Athlétisme', short: 'Sports' },
+    de: { name: 'Sport und Leichtathletik', short: 'Sport' },
+    ar: { name: 'الرياضة والعلوم الحركية', short: 'رياضة' },
+    ur: { name: 'کھیل اور اسپورٹس سائنس', short: 'کھیل' },
+  },
+  'health': {
+    en: { name: 'Health & Medicine', short: 'Health' },
+    es: { name: 'Salud y Medicina', short: 'Salud' },
+    fr: { name: 'Santé et Médecine', short: 'Santé' },
+    de: { name: 'Gesundheit und Medizin', short: 'Gesundheit' },
+    ar: { name: 'الصحة والطب الوقائي', short: 'صحة' },
+    ur: { name: 'صحت اور احتیاطی طب', short: 'صحت' },
+  },
+  'science': {
+    en: { name: 'Science & Discovery', short: 'Science' },
+    es: { name: 'Ciencia y Descubrimiento', short: 'Ciencia' },
+    fr: { name: 'Science et Découverte', short: 'Science' },
+    de: { name: 'Wissenschaft & Forschung', short: 'Wissenschaft' },
+    ar: { name: 'العلوم واستكشاف الفضاء', short: 'علوم' },
+    ur: { name: 'سائنس اور تحقیق', short: 'سائنس' },
+  },
+  'entertainment': {
+    en: { name: 'Entertainment & Arts', short: 'Media' },
+    es: { name: 'Entretenimiento y Artes', short: 'Medios' },
+    fr: { name: 'Divertissement et Arts', short: 'Médias' },
+    de: { name: 'Unterhaltung und Kunst', short: 'Medien' },
+    ar: { name: 'الترفيه والثقافة البصرية', short: 'إعلام' },
+    ur: { name: 'تفریح اور فنون', short: 'میڈیا' },
+  },
+  'lifestyle': {
+    en: { name: 'Lifestyle & Wellness', short: 'Lifestyle' },
+    es: { name: 'Estilo de Vida y Bienestar', short: 'Estilo de Vida' },
+    fr: { name: 'Mode de Vie et Bien-être', short: 'Mode de Vie' },
+    de: { name: 'Lebensstil und Wellness', short: 'Lebensstil' },
+    ar: { name: 'أسلوب الحياة والإنتاجية', short: 'نمط حياة' },
+    ur: { name: 'طرز زندگی اور فلاح', short: 'طرزِ زندگی' },
+  },
+  'fitness': {
+    en: { name: 'Fitness & Physiology', short: 'Fitness' },
+    es: { name: 'Fitness y Fisiología', short: 'Fitness' },
+    fr: { name: 'Fitness et Physiologie', short: 'Fitness' },
+    de: { name: 'Fitness und Physiologie', short: 'Fitness' },
+    ar: { name: 'اللياقة والتدريب البدني', short: 'لياقة' },
+    ur: { name: 'فٹنس اور طاقت کی تربیت', short: 'فٹنس' },
+  },
+  'food': {
+    en: { name: 'Food & Gastronomy', short: 'Gastronomy' },
+    es: { name: 'Gastronomía y Cocina', short: 'Gastronomía' },
+    fr: { name: 'Gastronomie et Cuisine', short: 'Gastronomie' },
+    de: { name: 'Gastronomie & Kulinarik', short: 'Gastronomie' },
+    ar: { name: 'فن الطهي وعلم الغذاء', short: 'فن الطهي' },
+    ur: { name: 'کھانے اور غذائی سائنس', short: 'کھانے کے علوم' },
+  },
+  'travel': {
+    en: { name: 'Travel & Global Exploration', short: 'Travel' },
+    es: { name: 'Viajes y Exploración', short: 'Viajes' },
+    fr: { name: 'Voyages et Exploration', short: 'Voyages' },
+    de: { name: 'Reisen und Expeditionen', short: 'Reisen' },
+    ar: { name: 'السفر والرحلات الاستكشافية', short: 'سفر' },
+    ur: { name: 'سفر اور مہم جوئی', short: 'سفر' },
+  },
+  'news': {
+    en: { name: 'Breaking News & World Affairs', short: 'World News' },
+    es: { name: 'Noticias y Asuntos Mundiales', short: 'Noticias' },
+    fr: { name: 'Actualités et Affaires Mondiales', short: 'Actualités' },
+    de: { name: 'Nachrichten & Weltgeschehen', short: 'Nachrichten' },
+    ar: { name: 'الأخبار والشؤون الدولية', short: 'أخبار العالم' },
+    ur: { name: 'خبریں اور عالمی امور', short: 'عالمی خبریں' },
+  },
+};
+
+export const SUBCATEGORY_LOCALIZATIONS: Record<string, Record<string, string>> = {
+  'visual-arts': { en: 'Visual Arts', es: 'Artes Visuales', fr: 'Arts Visuels', de: 'Bildende Kunst', ar: 'الفنون البصرية', ur: 'بصری فنون' },
+  'sculpture': { en: 'Sculpture', es: 'Escultura', fr: 'Sculpture', de: 'Skulptur', ar: 'النحت والمجسمات', ur: 'مجسمہ سازی' },
+  'street-art': { en: 'Street Art', es: 'Arte Urbano', fr: 'Art Urbain', de: 'Street Art', ar: 'فن الشارع', ur: 'سٹریٹ آرٹ' },
+  'minimalist-design': { en: 'Minimalist Design', es: 'Diseño Minimalista', fr: 'Design Minimaliste', de: 'Minimalistisches Design', ar: 'التصميم البسيط', ur: 'سادہ ڈیزائن' },
+  'monuments-and-stone': { en: 'Monuments & Stone', es: 'Monumentos y Piedra', fr: 'Monuments et Pierre', de: 'Monumente & Stein', ar: 'المعالم والأحجار', ur: 'یادگاریں اور پتھر' },
+  'spatial-theory': { en: 'Spatial Theory', es: 'Teoría Espacial', fr: 'Théorie Spatiale', de: 'Raumtheorie', ar: 'النظرية المكانية والصوتيات', ur: 'مکانی نظریہ' },
+  'editorial-systems': { en: 'Editorial Systems', es: 'Sistemas Editoriales', fr: 'Systèmes Éditoriaux', de: 'Editorielle Systeme', ar: 'الأنظمة التحريرية', ur: 'ادارتی نظام' },
+  'grid-theory': { en: 'Grid Theory', es: 'Teoría de la Cuadrícula', fr: 'Théorie de la Grille', de: 'Rastertheorie', ar: 'نظرية الشبكة المطبعية', ur: 'گرڈ تھیوری' },
+  'typography': { en: 'Typography', es: 'Tipografía', fr: 'Typographie', de: 'Typografie', ar: 'فنون الخط والطباعة', ur: 'خطاطی' },
+  'system-architecture': { en: 'System Architecture', es: 'Arquitectura de Sistemas', fr: 'Architecture de Systèmes', de: 'Systemarchitektur', ar: 'معمارية الأنظمة', ur: 'سسٹم آرکیٹیکچر' },
+  'static-performance': { en: 'Static Performance', es: 'Rendimiento Estático', fr: 'Performance Statique', de: 'Statische Leistung', ar: 'الأداء الثابت الفائق', ur: 'ساکت کارکردگی' },
+  'functional-craft': { en: 'Functional Craft', es: 'Artesanía Funcional', fr: 'Artisanat Fonctionnel', de: 'Funktionales Handwerk', ar: 'الحرفية الوظيفية', ur: 'عملی دستکاری' },
+  'artificial-intelligence': { en: 'Artificial Intelligence', es: 'Inteligencia Artificial', fr: 'Intelligence Artificielle', de: 'Künstliche Intelligenz', ar: 'الذكاء الاصطناعي', ur: 'مصنوعی ذہانت' },
+  'machine-learning': { en: 'Machine Learning', es: 'Aprendizaje Automático', fr: 'Apprentissage Automatique', de: 'Maschinelles Lernen', ar: 'تعلم الآلة', ur: 'مشین لرننگ' },
+  'cybersecurity': { en: 'Cybersecurity', es: 'Ciberseguridad', fr: 'Cybersécurité', de: 'Cybersicherheit', ar: 'الأمن السيبراني', ur: 'سائبر سیکیورٹی' },
+  'robotics-and-iot': { en: 'Robotics & IoT', es: 'Robótica e IoT', fr: 'Robotique et IdO', de: 'Robotik & IoT', ar: 'الروبوتات وإنترنت الأشياء', ur: 'روبوٹکس اور آئی او ٹی' },
+  'web-frameworks': { en: 'Web Frameworks', es: 'Frameworks Web', fr: 'Frameworks Web', de: 'Web-Frameworks', ar: 'أطر عمل الويب', ur: 'ویب فریم ورکس' },
+  'backend-and-apis': { en: 'Backend & APIs', es: 'Backend y APIs', fr: 'Backend et API', de: 'Backend & APIs', ar: 'الأنظمة الخلفية والواجهات البرمجية', ur: 'بیک اینڈ اور اے پی آئی' },
+  'devops-and-cloud': { en: 'DevOps & Cloud', es: 'DevOps y Nube', fr: 'DevOps et Cloud', de: 'DevOps & Cloud', ar: 'عمليات التطوير والسحابة', ur: 'ڈیواپس اور کلاؤڈ' },
+  'languages-and-compilers': { en: 'Languages & Compilers', es: 'Lenguajes y Compiladores', fr: 'Langages et Compilateurs', de: 'Sprachen & Compiler', ar: 'لغات البرمجة والمترجمات', ur: 'پروگرامنگ زبانیں اور کمپائلرز' },
+  'global-markets': { en: 'Global Markets', es: 'Mercados Globales', fr: 'Marchés Mondiaux', de: 'Globale Märkte', ar: 'الأسواق العالمية', ur: 'عالمی مارکیٹیں' },
+  'forex-and-liquidity': { en: 'Forex & Liquidity', es: 'Forex y Liquidez', fr: 'Forex et Liquidité', de: 'Forex & Liquidität', ar: 'الفوركس والسيولة السيادية', ur: 'فاریکس اور لیکویڈیٹی' },
+  'commodities': { en: 'Commodities', es: 'Materias Primas', fr: 'Matières Premières', de: 'Rohstoffe', ar: 'السلع والمعادن', ur: 'اجناس اور خام مال' },
+  'risk-management': { en: 'Risk Management', es: 'Gestión de Riesgos', fr: 'Gestion des Risques', de: 'Risikomanagement', ar: 'إدارة المخاطر المالية', ur: 'رسک مینجمنٹ' },
+  'startups-and-venture': { en: 'Startups & Venture', es: 'Startups y Capital Riesgo', fr: 'Startups et Capital-Risque', de: 'Startups & Wagniskapital', ar: 'الشركات الناشئة والاستثمار الجريء', ur: 'سٹارٹ اپس اور وینچر کیپیٹل' },
+  'corporate-strategy': { en: 'Corporate Strategy', es: 'Estrategia Corporativa', fr: 'Stratégie d\'Entreprise', de: 'Unternehmensstrategie', ar: 'استراتيجيات الشركات', ur: 'کارپوریٹ حکمت عملی' },
+  'supply-chain': { en: 'Supply Chain', es: 'Cadena de Suministro', fr: 'Chaîne d\'Approvisionnement', de: 'Lieferkette', ar: 'سلاسل التوريد واللوجستيات', ur: 'سپلائی چین' },
+  'leadership': { en: 'Leadership', es: 'Liderazgo', fr: 'Leadership', de: 'Führung', ar: 'القيادة التنفيذية', ur: 'قیادت' },
+  'layer-1-and-layer-2': { en: 'Layer 1 & Layer 2', es: 'Capa 1 y Capa 2', fr: 'Couche 1 et Couche 2', de: 'Layer 1 & Layer 2', ar: 'شبكات الطبقة الأولى والثانية', ur: 'لیئر 1 اور لیئر 2' },
+  'defi': { en: 'DeFi & Protocols', es: 'DeFi y Protocolos', fr: 'DeFi et Protocoles', de: 'DeFi & Protokolle', ar: 'التمويل اللامركزي والبروتوكولات', ur: 'ڈی فائی اور پروٹوکولز' },
+  'smart-contracts': { en: 'Smart Contracts', es: 'Contratos Inteligentes', fr: 'Contrats Intelligents', de: 'Smart Contracts', ar: 'العقود الذكية', ur: 'اسمارٹ معاہدے' },
+  'tokenomics': { en: 'Tokenomics', es: 'Tokenomía', fr: 'Tokenomique', de: 'Tokenomics', ar: 'اقتصاد الرموز الرقمية', ur: 'ٹوکنامکس' },
+  'football': { en: 'Football (Soccer)', es: 'Fútbol', fr: 'Football', de: 'Fußball', ar: 'كرة القدم والتكتيك', ur: 'فٹ بال' },
+  'motorsport': { en: 'Motorsport', es: 'Automovilismo', fr: 'Sport Automobile', de: 'Motorsport', ar: 'سباقات السيارات', ur: 'موٹر اسپورٹس' },
+  'basketball': { en: 'Basketball', es: 'Baloncesto', fr: 'Basket-ball', de: 'Basketball', ar: 'كرة السلة', ur: 'باسکٹ بال' },
+  'sports-science': { en: 'Sports Science & Biomechanics', es: 'Ciencia Deportiva y Biomecánica', fr: 'Science du Sport et Biomécanique', de: 'Sportwissenschaft & Biomechanik', ar: 'العلوم الرياضية والميكانيكا الحيوية', ur: 'اسپورٹس سائنس اور بایو میکینکس' },
+  'preventive-medicine': { en: 'Preventive Medicine', es: 'Medicina Preventiva', fr: 'Médecine Préventive', de: 'Präventivmedizin', ar: 'الطب الوقائي والخلوي', ur: 'احتیاطی طب' },
+  'medical-research': { en: 'Medical Research', es: 'Investigación Médica', fr: 'Recherche Médicale', de: 'Medizinische Forschung', ar: 'الأبحاث الطبية', ur: 'طبی تحقیق' },
+  'nutrition-science': { en: 'Nutrition Science', es: 'Ciencia de la Nutrición', fr: 'Science de la Nutrition', de: 'Ernährungswissenschaft', ar: 'علوم التغذية والأيض', ur: 'غذائی سائنس' },
+  'mental-wellness': { en: 'Mental Wellness & Sleep', es: 'Bienestar Mental y Sueño', fr: 'Bien-être Mental et Sommeil', de: 'Mentale Gesundheit & Schlaf', ar: 'الصحة النفسية ونوم الموجات البطيئة', ur: 'ذہنی صحت اور نیند' },
+  'astronomy-and-space': { en: 'Astronomy & Space', es: 'Astronomía y Espacio', fr: 'Astronomie et Espace', de: 'Astronomie & Raumfahrt', ar: 'علم الفلك وأبحاث الفضاء', ur: 'فلکیات اور خلائی تحقیق' },
+  'physics-and-materials': { en: 'Physics & Materials', es: 'Física y Materiales', fr: 'Physique et Matériaux', de: 'Physik & Materialien', ar: 'الفيزياء وعلم المواد', ur: 'طبیعیات اور مادے' },
+  'environmental-science': { en: 'Environmental Science', es: 'Ciencias Ambientales', fr: 'Sciences de l\'Environnement', de: 'Umweltwissenschaft', ar: 'العلوم البيئية والمحيطات', ur: 'ماحولیاتی سائنس' },
+  'educational-methods': { en: 'Educational Methods', es: 'Métodos Educativos', fr: 'Méthodes Éducatives', de: 'Pädagogische Methoden', ar: 'المناهج التعليمية', ur: 'تعلیمی طریقہ کار' },
+  'cinema-and-film': { en: 'Cinema & Film', es: 'Cine y Películas', fr: 'Cinéma et Film', de: 'Kino & Film', ar: 'السينما وصناعة الأفلام', ur: 'سنیما اور فلم' },
+  'music-industry': { en: 'Music Industry', es: 'Industria Musical', fr: 'Industrie Musicale', de: 'Musikindustrie', ar: 'صناعة الموسيقى والصوتيات', ur: 'میوزک انڈسٹری' },
+  'gaming-and-interactive': { en: 'Gaming & Interactive Media', es: 'Videojuegos y Medios Interactivos', fr: 'Jeux Vidéo et Médias Interactifs', de: 'Gaming & Interaktive Medien', ar: 'ألعاب الفيديو والوسائط التفاعلية', ur: 'گیمنگ اور انٹرایکٹو میڈیا' },
+  'productivity-systems': { en: 'Productivity Systems', es: 'Sistemas de Productividad', fr: 'Systèmes de Productivité', de: 'Produktivitätssysteme', ar: 'أنظمة الإنتاجية والإيقاع الحيوي', ur: 'پیداواری نظام' },
+  'sustainable-living': { en: 'Sustainable Living', es: 'Vida Sostenible', fr: 'Vie Durable', de: 'Nachhaltiges Leben', ar: 'الحياة المستدامة', ur: 'پائیدار طرز زندگی' },
+  'career-growth': { en: 'Career Growth', es: 'Crecimiento Profesional', fr: 'Évolution Professionnelle', de: 'Karriereentwicklung', ar: 'التطوير المهني والقيادي', ur: 'پیشہ ورانہ ترقی' },
+  'strength-training': { en: 'Strength & Hypertrophy', es: 'Fuerza e Hipertrofia', fr: 'Force et Hypertrophie', de: 'Kraft & Hypertrophie', ar: 'تدريب القوة وتضخم العضلات', ur: 'طاقت اور مسل بلڈنگ' },
+  'aerobic-endurance': { en: 'Aerobic Endurance', es: 'Resistencia Aeróbica', fr: 'Endurance Aérobie', de: 'Ausdauertraining', ar: 'التحمل القلبي والتنفسي', ur: 'ایروبک صلاحیت' },
+  'mobility-and-recovery': { en: 'Mobility & Recovery', es: 'Movilidad y Recuperación', fr: 'Mobilité et Récupération', de: 'Mobilität & Regeneration', ar: 'المرونة والاستشفاء العضلي', ur: 'لچک اور بحالی' },
+  'culinary-techniques': { en: 'Culinary Techniques', es: 'Técnicas Culinarias', fr: 'Techniques Culinaires', de: 'Kulinarische Techniken', ar: 'تقنيات فن الطهي والكيمياء الحرارية', ur: 'باورچی خانے کی مہارتیں' },
+  'fermentation-and-bread': { en: 'Fermentation & Bread', es: 'Fermentación y Pan', fr: 'Fermentation et Pain', de: 'Fermentation & Brot', ar: 'التخمير والمخبوزات', ur: 'خمیر اور روٹی' },
+  'sustainable-gastronomy': { en: 'Sustainable Gastronomy', es: 'Gastronomía Sostenible', fr: 'Gastronomie Durable', de: 'Nachhaltige Gastronomie', ar: 'الطهي المستدام والزراعة العضوية', ur: 'پائیدار خوراک' },
+  'expeditions-and-routes': { en: 'Expeditions & Alpine Routes', es: 'Expediciones y Rutas Alpinas', fr: 'Expéditions et Voies Alpines', de: 'Expeditionen & Routen', ar: 'الرحلات الاستكشافية والقمم الجبلية', ur: 'پہاڑی مہمات اور راستے' },
+  'cultural-destinations': { en: 'Cultural Destinations', es: 'Destinos Culturales', fr: 'Destinations Culturelles', de: 'Kulturelle Reiseziele', ar: 'الوجهات الثقافية والتراثية', ur: 'ثقافتی مقامات' },
+  'sustainable-travel': { en: 'Sustainable Travel', es: 'Viajes Sostenibles', fr: 'Voyage Durable', de: 'Nachhaltiges Reisen', ar: 'السفر المستدام والسياحة البيئية', ur: 'پائیدار سفر' },
+  'geopolitics': { en: 'Geopolitics & Treaties', es: 'Geopolítica y Tratados', fr: 'Géopolitique et Traités', de: 'Geopolitik & Verträge', ar: 'الجغرافيا السياسية والمعاهدات الدولية', ur: 'جیو پولیٹکس اور معاہدے' },
+  'world-economy': { en: 'World Economy & Trade', es: 'Economía Mundial y Comercio', fr: 'Économie Mondiale et Commerce', de: 'Weltwirtschaft & Handel', ar: 'الاقتصاد العالمي والتجارة الدولية', ur: 'عالمی معیشت اور تجارت' },
+  'climate-policy': { en: 'Climate & Environment Policy', es: 'Política Climática y Ambiental', fr: 'Politique Climatique et Environnementale', de: 'Klima- & Umweltpolitik', ar: 'سياسات المناخ والاستدامة البيئية', ur: 'ماحولیاتی پالیسی' },
+};
+
+export function getCategoryName(categoryId: string, langCode = 'en'): string {
+  const loc = CATEGORY_LOCALIZATIONS[categoryId];
+  if (loc && loc[langCode]?.name) return loc[langCode].name;
+  if (loc && loc.en?.name) return loc.en.name;
+  const cat = getCategoryById(categoryId);
+  return cat ? cat.name : formatTopicName(categoryId);
+}
+
+export function getCategoryShortName(categoryId: string, langCode = 'en'): string {
+  const loc = CATEGORY_LOCALIZATIONS[categoryId];
+  if (loc && loc[langCode]?.short) return loc[langCode].short;
+  if (loc && loc.en?.short) return loc.en.short;
   switch (categoryId) {
     case 'art-and-culture':
       return 'Art & Life';
@@ -316,6 +539,13 @@ export function getCategoryShortName(categoryId: string): string {
     default:
       return 'Editorial';
   }
+}
+
+export function getSubcategoryName(subcategoryId: string, langCode = 'en'): string {
+  const loc = SUBCATEGORY_LOCALIZATIONS[subcategoryId];
+  if (loc && loc[langCode]) return loc[langCode];
+  if (loc && loc.en) return loc.en;
+  return formatTopicName(subcategoryId);
 }
 
 /**

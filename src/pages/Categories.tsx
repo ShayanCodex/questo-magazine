@@ -24,6 +24,7 @@ import {
   CATEGORIES,
   getArticleCategory,
   getCategoryById,
+  getCategoryName,
   type Category,
   type Subcategory,
 } from '../lib/categories';
@@ -215,13 +216,13 @@ export function Categories() {
           {/* Editorial Meta Stats Badge Capsule in Poppins */}
           <div className="flex flex-wrap items-center gap-2 text-xs font-sans text-editorial-muted font-medium">
             <div className="px-3.5 py-1 rounded-full bg-editorial-surface border border-editorial-border shadow-2xs">
-              <span className="font-bold text-editorial-text">{CATEGORIES.length}</span> Categories
+              <span className="font-bold text-editorial-text">{CATEGORIES.length}</span> {t.categories || 'Categories'}
             </div>
             <div className="px-3.5 py-1 rounded-full bg-editorial-surface border border-editorial-border shadow-2xs">
-              <span className="font-bold text-editorial-text">{totalSubcategories}</span> Subcategories
+              <span className="font-bold text-editorial-text">{totalSubcategories}</span> {t.subcategories || 'Subcategories'}
             </div>
             <div className="px-3.5 py-1 rounded-full bg-editorial-surface border border-editorial-border shadow-2xs">
-              <span className="font-bold text-editorial-text">{articles.length}</span> Articles
+              <span className="font-bold text-editorial-text">{articles.length}</span> {t.articles || 'Articles'}
             </div>
           </div>
         </div>
@@ -260,7 +261,7 @@ export function Categories() {
               )}
             >
               <BarsArrowDownIcon className="h-3.5 w-3.5" />
-              <span>A–Z Alphabetical</span>
+              <span>{t.alphabetical || 'A–Z Alphabetical'}</span>
             </button>
             <button
               type="button"
@@ -273,7 +274,7 @@ export function Categories() {
               )}
             >
               <BarsArrowUpIcon className="h-3.5 w-3.5" />
-              <span>By Article Count</span>
+              <span>{t.byArticleCount || 'By Article Count'}</span>
             </button>
           </div>
         </div>
@@ -321,7 +322,7 @@ export function Categories() {
 
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-sans text-editorial-muted font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border/80 shadow-2xs">
-                      {articleCount} {articleCount === 1 ? 'article' : 'articles'}
+                      {articleCount} {t.articles || 'articles'}
                     </span>
                     <span
                       className={cn(
@@ -331,7 +332,7 @@ export function Categories() {
                           : 'border border-editorial-border text-editorial-muted group-hover:border-editorial-text group-hover:text-editorial-text group-hover:bg-editorial-surface-hover'
                       )}
                     >
-                      <span>{isSelected ? 'Active' : 'Explore'}</span>
+                      <span>{isSelected ? (t.active || 'Active') : (t.explore || 'Explore')}</span>
                       <ArrowRightIcon
                         className={cn(
                           'h-3.5 w-3.5 transition-transform duration-200',
@@ -346,7 +347,7 @@ export function Categories() {
                 {/* Category Title & Description - Full Width */}
                 <div className="space-y-2">
                   <h3 className="font-sans font-bold text-2xl sm:text-[1.65rem] tracking-tight text-editorial-text group-hover:text-accent transition-colors leading-tight">
-                    {cat.name}
+                    {getCategoryName(cat.id, language.code)}
                   </h3>
                   <p className="font-serif text-editorial-muted text-sm sm:text-base leading-relaxed">
                     {cat.description}

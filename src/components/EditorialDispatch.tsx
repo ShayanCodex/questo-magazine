@@ -42,10 +42,10 @@ export function EditorialDispatch() {
               <span className="p-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30">
                 <EnvelopeIcon className="h-3.5 w-3.5 text-white" />
               </span>
-              <span>Weekly Editorial Journal</span>
+              <span>{t.weeklyJournal || 'Weekly Editorial Journal'}</span>
               <span className="inline-flex items-center gap-1 text-[10px] bg-white/20 px-2.5 py-0.5 rounded-full border border-white/30 text-white font-medium">
                 <SparklesIcon className="h-3 w-3" />
-                <span>Zero Spam</span>
+                <span>{t.zeroSpam || 'Zero Spam'}</span>
               </span>
             </span>
 

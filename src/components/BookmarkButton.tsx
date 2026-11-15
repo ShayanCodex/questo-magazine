@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BookmarkIcon as BookmarkOutline } from '@heroicons/react/24/outline';
 import { BookmarkIcon as BookmarkSolid } from '@heroicons/react/24/solid';
 import { useReadingList } from '../lib/reading-list';
+import { useLanguage } from '../lib/lang-context';
 import { cn } from '../lib/utils';
 
 export interface BookmarkButtonProps {
@@ -18,6 +19,7 @@ export function BookmarkButton({
   onToggle,
 }: BookmarkButtonProps) {
   const { isBookmarked, toggleBookmark } = useReadingList();
+  const { t } = useLanguage();
   const bookmarked = isBookmarked(slug);
   const [animating, setAnimating] = useState(false);
 
@@ -29,6 +31,11 @@ export function BookmarkButton({
     setTimeout(() => setAnimating(false), 300);
     if (onToggle) onToggle(result);
   };
+
+  const savedText = t.saved || 'Saved';
+  const saveText = t.save || 'Save';
+  const savedTooltip = t.savedReadingList || 'Saved to Reading List';
+  const saveTooltip = t.save || 'Save to Reading List';
 
   if (variant === 'pill') {
     return (
@@ -43,15 +50,15 @@ export function BookmarkButton({
           animating && 'scale-105',
           className
         )}
-        title={bookmarked ? 'Saved to Reading List' : 'Save to Reading List'}
-        aria-label={bookmarked ? 'Remove from Reading List' : 'Save to Reading List'}
+        title={bookmarked ? savedTooltip : saveTooltip}
+        aria-label={bookmarked ? savedTooltip : saveTooltip}
       >
         {bookmarked ? (
           <BookmarkSolid className="h-3.5 w-3.5 text-editorial-bg" />
         ) : (
           <BookmarkOutline className="h-3.5 w-3.5 text-editorial-muted group-hover:text-editorial-text" />
         )}
-        <span>{bookmarked ? 'Saved' : 'Save'}</span>
+        <span>{bookmarked ? savedText : saveText}</span>
       </button>
     );
   }
@@ -69,8 +76,8 @@ export function BookmarkButton({
         animating && 'scale-110',
         className
       )}
-      title={bookmarked ? 'Saved to Reading List' : 'Save to Reading List'}
-      aria-label={bookmarked ? 'Remove from Reading List' : 'Save to Reading List'}
+      title={bookmarked ? savedTooltip : saveTooltip}
+      aria-label={bookmarked ? savedTooltip : saveTooltip}
     >
       {bookmarked ? (
         <BookmarkSolid className="h-3.5 w-3.5 text-editorial-bg" />

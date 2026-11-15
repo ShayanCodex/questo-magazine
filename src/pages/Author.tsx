@@ -25,7 +25,7 @@ export function Author() {
 
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
-    { label: 'Authors', href: localePath('/about#masthead') },
+    { label: t.authors || 'Authors', href: localePath('/about#masthead') },
     { label: author.name },
   ];
 
@@ -51,7 +51,7 @@ export function Author() {
           />
           <div className="space-y-2 flex-1 min-w-0">
             <div className="flex items-center gap-2 text-xs font-sans font-medium uppercase tracking-wider text-accent">
-              <span>Questo Editorial Contributor</span>
+              <span>{t.writtenByEditor || 'Questo Editorial Contributor'}</span>
               <span>•</span>
               <span className="flex items-center gap-1">
                 <MapPinIcon className="h-3.5 w-3.5" />
@@ -75,7 +75,7 @@ export function Author() {
           <div className="flex items-center gap-2 text-editorial-muted">
             <DocumentTextIcon className="h-4 w-4 text-editorial-text" />
             <span className="font-semibold text-editorial-text">{articles.length}</span>
-            <span>published monographs & essays</span>
+            <span>{t.articles || 'articles'}</span>
           </div>
 
           <div className="flex items-center gap-3">
