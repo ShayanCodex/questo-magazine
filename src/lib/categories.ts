@@ -249,6 +249,11 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'multilink-suspension-geometry-and-camber-recovery': { categoryId: 'sports', subcategoryId: 'motorsport' },
   'glymphatic-clearance-and-slow-wave-sleep-architecture': { categoryId: 'health', subcategoryId: 'mental-wellness' },
   'lng-liquefaction-mechanics-and-maritime-energy-corridors': { categoryId: 'finance', subcategoryId: 'commodities' },
+  'training-large-language-models-tokenization-pretraining-alignment': { categoryId: 'technology', subcategoryId: 'artificial-intelligence' },
+  'solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes': { categoryId: 'engineering-and-technology', subcategoryId: 'mechanical-systems' },
+  'superconducting-qubits-josephson-junctions-quantum-coherence': { categoryId: 'science', subcategoryId: 'physics-and-materials' },
+  'cellular-senescence-autophagy-signaling-and-mtor-pathways': { categoryId: 'health', subcategoryId: 'preventive-medicine' },
+  'central-bank-digital-currencies-wholesale-settlement-programmable-money': { categoryId: 'finance', subcategoryId: 'forex-and-liquidity' },
 };
 
 export function getCategoryById(id: string): Category | undefined {

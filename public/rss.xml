@@ -5,7 +5,7 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 09:39:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 10:05:10 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[The Architecture of Transformer Attention]]></title>
@@ -24,6 +24,24 @@
       <description><![CDATA[A clinical examination of apolipoprotein B particle concentration, endothelial shear stress, nitric oxide synthase bioavailability, and the pathophysiology of sub-endothelial atherogenesis.]]></description>
       <author><![CDATA[Dr. Marcus Vance]]></author>
       <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[Cellular Senescence & Autophagy]]></title>
+      <link>https://questo-blog.netlify.app/articles/cellular-senescence-autophagy-signaling-and-mtor-pathways</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cellular-senescence-autophagy-signaling-and-mtor-pathways</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A molecular biology and geroscience monograph on senescent secretome SASP pathology, macroautophagy lysosomal flux, AMPK activation, and rapamycin-mediated mTORC1 longevity signaling.]]></description>
+      <author><![CDATA[Dr. Aris Thorne]]></author>
+      <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[Central Bank Digital Currencies]]></title>
+      <link>https://questo-blog.netlify.app/articles/central-bank-digital-currencies-wholesale-settlement-programmable-money</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/central-bank-digital-currencies-wholesale-settlement-programmable-money</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A central banking and financial monetary architecture monograph on wholesale vs retail CBDCs, Project mBridge cross-border atomic settlement, two-tier commercial reserve distribution, and zero-knowledge privacy protocols.]]></description>
+      <author><![CDATA[Julian Sterling]]></author>
+      <category>finance</category>
     </item>
     <item>
       <title><![CDATA[The Chemistry of Espresso Extraction]]></title>
@@ -152,6 +170,15 @@
       <category>architecture-and-space</category>
     </item>
     <item>
+      <title><![CDATA[Solid-State Battery Chemistry]]></title>
+      <link>https://questo-blog.netlify.app/articles/solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A materials science and electrochemical monograph on sulfide solid electrolytes, lithium dendrite suppression mechanics, critical current density thresholds, and high-capacity silicon-dominant composite anodes.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
       <title><![CDATA[Sovereign Debt Cycles & Repo Markets]]></title>
       <link>https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</guid>
@@ -170,6 +197,15 @@
       <category>sports</category>
     </item>
     <item>
+      <title><![CDATA[Superconducting Qubits & Coherence]]></title>
+      <link>https://questo-blog.netlify.app/articles/superconducting-qubits-josephson-junctions-quantum-coherence</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/superconducting-qubits-josephson-junctions-quantum-coherence</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A quantum physics and cryogenic engineering monograph on transmon qubit anharmonicity, non-linear Josephson junction inductance, 15-millikelvin dilution refrigeration, and surface code quantum error correction.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>science</category>
+    </item>
+    <item>
       <title><![CDATA[The Mechanics of SaaS Retention]]></title>
       <link>https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr</guid>
@@ -177,6 +213,15 @@
       <description><![CDATA[A rigorous mathematical analysis of subscription revenue durability, cohort decay curves, expansion revenue vectors, and capital allocation efficiency.]]></description>
       <author><![CDATA[Claire Dupont]]></author>
       <category>business</category>
+    </item>
+    <item>
+      <title><![CDATA[Training LLMs from Scratch]]></title>
+      <link>https://questo-blog.netlify.app/articles/training-large-language-models-tokenization-pretraining-alignment</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/training-large-language-models-tokenization-pretraining-alignment</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A foundational machine learning engineering monograph detailing byte-pair encoding tokenization, autoregressive cross-entropy loss trajectories, 3D tensor parallelism, and RLHF alignment dynamics.]]></description>
+      <author><![CDATA[Elena Rostova]]></author>
+      <category>technology</category>
     </item>
     <item>
       <title><![CDATA[Trans-Alpine Rail Engineering]]></title>

@@ -5,7 +5,7 @@
   <link href="https://questo-blog.netlify.app/" />
   <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://questo-blog.netlify.app/</id>
-  <updated>2026-11-15T09:39:26.958Z</updated>
+  <updated>2026-11-15T10:05:10.491Z</updated>
   <entry>
     <title>The Architecture of Transformer Attention</title>
     <link href="https://questo-blog.netlify.app/articles/architecture-of-transformer-attention-mathematics-and-kv-cache" />
@@ -24,6 +24,26 @@
     <summary>A clinical examination of apolipoprotein B particle concentration, endothelial shear stress, nitric oxide synthase bioavailability, and the pathophysiology of sub-endothelial atherogenesis.</summary>
     <author>
       <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Cellular Senescence &amp; Autophagy</title>
+    <link href="https://questo-blog.netlify.app/articles/cellular-senescence-autophagy-signaling-and-mtor-pathways" />
+    <id>https://questo-blog.netlify.app/articles/cellular-senescence-autophagy-signaling-and-mtor-pathways</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A molecular biology and geroscience monograph on senescent secretome SASP pathology, macroautophagy lysosomal flux, AMPK activation, and rapamycin-mediated mTORC1 longevity signaling.</summary>
+    <author>
+      <name>Dr. Aris Thorne</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Central Bank Digital Currencies</title>
+    <link href="https://questo-blog.netlify.app/articles/central-bank-digital-currencies-wholesale-settlement-programmable-money" />
+    <id>https://questo-blog.netlify.app/articles/central-bank-digital-currencies-wholesale-settlement-programmable-money</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A central banking and financial monetary architecture monograph on wholesale vs retail CBDCs, Project mBridge cross-border atomic settlement, two-tier commercial reserve distribution, and zero-knowledge privacy protocols.</summary>
+    <author>
+      <name>Julian Sterling</name>
     </author>
   </entry>
   <entry>
@@ -167,6 +187,16 @@
     </author>
   </entry>
   <entry>
+    <title>Solid-State Battery Chemistry</title>
+    <link href="https://questo-blog.netlify.app/articles/solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes" />
+    <id>https://questo-blog.netlify.app/articles/solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A materials science and electrochemical monograph on sulfide solid electrolytes, lithium dendrite suppression mechanics, critical current density thresholds, and high-capacity silicon-dominant composite anodes.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
+    </author>
+  </entry>
+  <entry>
     <title>Sovereign Debt Cycles &amp; Repo Markets</title>
     <link href="https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement" />
     <id>https://questo-blog.netlify.app/articles/sovereign-debt-cycles-yield-curve-inversions-repo-settlement</id>
@@ -187,6 +217,16 @@
     </author>
   </entry>
   <entry>
+    <title>Superconducting Qubits &amp; Coherence</title>
+    <link href="https://questo-blog.netlify.app/articles/superconducting-qubits-josephson-junctions-quantum-coherence" />
+    <id>https://questo-blog.netlify.app/articles/superconducting-qubits-josephson-junctions-quantum-coherence</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A quantum physics and cryogenic engineering monograph on transmon qubit anharmonicity, non-linear Josephson junction inductance, 15-millikelvin dilution refrigeration, and surface code quantum error correction.</summary>
+    <author>
+      <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
     <title>The Mechanics of SaaS Retention</title>
     <link href="https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr" />
     <id>https://questo-blog.netlify.app/articles/the-mechanics-of-enterprise-saas-retention-cohort-dynamics-and-ndr</id>
@@ -194,6 +234,16 @@
     <summary>A rigorous mathematical analysis of subscription revenue durability, cohort decay curves, expansion revenue vectors, and capital allocation efficiency.</summary>
     <author>
       <name>Claire Dupont</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Training LLMs from Scratch</title>
+    <link href="https://questo-blog.netlify.app/articles/training-large-language-models-tokenization-pretraining-alignment" />
+    <id>https://questo-blog.netlify.app/articles/training-large-language-models-tokenization-pretraining-alignment</id>
+    <updated>2026-11-15T00:00:00.000Z</updated>
+    <summary>A foundational machine learning engineering monograph detailing byte-pair encoding tokenization, autoregressive cross-entropy loss trajectories, 3D tensor parallelism, and RLHF alignment dynamics.</summary>
+    <author>
+      <name>Elena Rostova</name>
     </author>
   </entry>
   <entry>

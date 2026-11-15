@@ -54,14 +54,11 @@ export function ArticleTakeaways({ article, className }: ArticleTakeawaysProps) 
 
   return (
     <section
-      className={cn(
-        'rounded-xl border border-editorial-border bg-editorial-surface-subtle/50 p-6 sm:p-7 my-8 transition-colors',
-        className
-      )}
+      className={cn('my-8 sm:my-10 space-y-4', className)}
       aria-label={headingText}
     >
       {/* Normal Heading of Key Points */}
-      <div className="mb-4 sm:mb-5 pb-3 border-b border-editorial-border/60">
+      <div className="pb-3 border-b border-editorial-border/60">
         <h2 className="text-xl sm:text-2xl font-display font-bold text-editorial-text tracking-tight">
           {headingText}
         </h2>

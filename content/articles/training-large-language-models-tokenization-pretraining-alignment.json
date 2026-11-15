@@ -1,0 +1,102 @@
+{
+  "slug": "training-large-language-models-tokenization-pretraining-alignment",
+  "title": "Training LLMs from Scratch",
+  "excerpt": "A foundational machine learning engineering monograph detailing byte-pair encoding tokenization, autoregressive cross-entropy loss trajectories, 3D tensor parallelism, and RLHF alignment dynamics.",
+  "date": "2026-11-15",
+  "author": "Elena Rostova",
+  "category": "technology",
+  "subcategory": "artificial-intelligence",
+  "tags": [
+    "technology",
+    "artificial-intelligence",
+    "machine-learning",
+    "llm",
+    "deep-learning",
+    "engineering"
+  ],
+  "image": "/images/articles/llm-training-code.jpg",
+  "imageAlt": "High performance Python deep learning training loop code on dark IDE display",
+  "body": [
+    {
+      "type": "p",
+      "text": "Building a frontier generative foundation model from first principles is an exercise in applied numerical optimization, distributed systems engineering, and statistical language modeling. At its core, a generative pretrained transformer does not understand semantics in a human sense; it estimates a high-dimensional joint probability distribution over discrete vocabulary tokens by minimizing autoregressive cross-entropy loss across trillions of training bytes."
+    },
+    {
+      "type": "p",
+      "text": "The lifecycle of an LLM divides cleanly into four sequential regimes: corpus curation and byte-pair encoding tokenization, self-supervised pretraining at petabyte scale, supervised fine-tuning (SFT) for instruction compliance, and reinforcement learning from human feedback (RLHF) to align model outputs with human intent."
+    },
+    {
+      "type": "h2",
+      "text": "1. Tokenization: Byte-Pair Encoding and Vocabulary Compression"
+    },
+    {
+      "type": "p",
+      "text": "Raw natural language cannot be processed directly by linear matrix operations. It must first be discretized into integer token identifiers via Byte-Pair Encoding (BPE):"
+    },
+    {
+      "type": "code",
+      "lang": "text",
+      "code": "BPE Iterative Pair Merge Formulation:\nVocabulary V = Initial byte symbols (0..255)\nIterative rule: Find pair (c_i, c_j) with argmax frequency(c_i, c_j) in corpus\nMerge: New symbol c_new = c_i ⊕ c_j\nUpdate: V ← V ∪ {c_new}\nRepeat until |V| = target_vocab_size (typically 32,000 to 128,000)"
+    },
+    {
+      "type": "p",
+      "text": "Targeting an optimal vocabulary size requires navigating an engineering trade-off: larger vocabularies compress sequence length and lower inference latency, but expand the memory footprint of the input embedding matrix and final output unembedding projection layer."
+    },
+    {
+      "type": "quote",
+      "text": "Pretraining is the thermodynamic forge of foundation models. Over 99% of all compute, memory bandwidth, and electrical energy is consumed during the self-supervised pretraining phase.",
+      "cite": "Elena Rostova, Senior Fellow in Embodied AI & Neural Architectures"
+    },
+    {
+      "type": "h2",
+      "text": "2. Pretraining Dynamics and Distributed 3D Parallelism"
+    },
+    {
+      "type": "p",
+      "text": "Training a 70B parameter model across hundreds of gigabytes of GPU VRAM exceeds the capacity of any single accelerator chip. Modern clusters orchestrate 3D parallelism:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Tensor Parallelism (Megatron-LM): Partitions individual weight matrices (such as query, key, and feed-forward projections) across GPUs within the same NVLink domain.",
+        "Pipeline Parallelism: Slices transformer layers sequentially across distinct server nodes, passing hidden activation states forward and backward.",
+        "Data Parallelism with ZeRO-3: Shards optimizer states, gradients, and model parameters across the distributed cluster, eliminating redundant memory duplication.",
+        "FlashAttention-3 Integration: Eliminates materialization of quadratic N×N attention matrices in HBM by fusing softmax scaling and matrix multiplication directly into SRAM registers."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "3. Video Masterclass: Building GPT and Transformer Models from Scratch"
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
+      "title": "Building and Training Generative Pretrained Transformers from Scratch",
+      "caption": "Andrej Karpathy's masterclass on the mathematical mechanics of building, compiling, and training autoregressive transformer language models from code."
+    },
+    {
+      "type": "h2",
+      "text": "4. Alignment: Supervised Fine-Tuning and Direct Preference Optimization (DPO)"
+    },
+    {
+      "type": "p",
+      "text": "A raw pretrained base model is merely an uninhibited document completer. To convert it into an effective assistant, engineers fine-tune the model on curated multi-turn conversational transcripts using cross-entropy loss with masked input prompts."
+    },
+    {
+      "type": "p",
+      "text": "Following SFT, preference alignment steers the model toward helpful, truthful, and harmless completions. While legacy pipelines relied on training separate reward models using PPO reinforcement learning, modern systems increasingly deploy Direct Preference Optimization (DPO), which derives an exact closed-form objective to optimize the policy model directly on paired human preference rankings."
+    },
+    {
+      "type": "h2",
+      "text": "5. Machine Learning Systems Takeaways"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Data Quality Dominance: High-quality deduplicated synthetic reasoning datasets outperform raw scraped web text by an order of magnitude in token efficiency.",
+        "Precision Formats: Utilize FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
+        "Learning Rate Annealing: Employ cosine decay schedules with warm-up periods to prevent gradient divergence during initial optimization epochs."
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>Curated dispatches on Engineering &amp; Static Systems</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 09:39:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 10:05:10 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feeds/engineering-and-technology.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[Global Forex Liquidity Corridors]]></title>
@@ -22,6 +22,15 @@
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/ground-effect-aerodynamics-venturi-tunnels-and-porpoising-mechanics</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[A mechanical engineering monograph on underbody Bernoulli suction, diffuser expansion ratios, aerodynamic center of pressure migration, and non-linear aeroelastic heave oscillations.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Solid-State Battery Chemistry]]></title>
+      <link>https://questo-blog.netlify.app/articles/solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/solid-state-battery-chemistry-sulfide-electrolytes-silicon-anodes</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A materials science and electrochemical monograph on sulfide solid electrolytes, lithium dendrite suppression mechanics, critical current density thresholds, and high-capacity silicon-dominant composite anodes.]]></description>
       <author><![CDATA[Hiroshi Tanaka]]></author>
       <category>engineering-and-technology</category>
     </item>
