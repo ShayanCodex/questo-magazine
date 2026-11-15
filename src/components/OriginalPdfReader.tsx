@@ -40,7 +40,7 @@ export function OriginalPdfReader({
   const [currentPage, setCurrentPage] = useState(1);
   const [zoomLevel, setZoomLevel] = useState(100);
   const [copiedLink, setCopiedLink] = useState(false);
-  const [isTheaterOpen, setIsTheaterOpen] = useState(true);
+  const [isTheaterOpen, setIsTheaterOpen] = useState(false);
   const [pageImageError, setPageImageError] = useState(false);
   const [isPageLoading, setIsPageLoading] = useState(false);
 

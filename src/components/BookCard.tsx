@@ -7,7 +7,7 @@ import {
   CheckIcon,
 } from '@heroicons/react/24/outline';
 import type { EBook } from '../lib/types';
-import { LazyImage } from './LazyImage';
+import { BookCover } from './BookCover';
 import { cn } from '../lib/utils';
 
 export interface BookCardProps {
@@ -16,25 +16,8 @@ export interface BookCardProps {
   onReadOnline: (book: EBook) => void;
 }
 
-// Curated palette of luxury cloth binding gradients for instant fallback
-const BINDING_PALETTES = [
-  'from-slate-900 via-neutral-900 to-zinc-900',
-  'from-blue-950 via-slate-900 to-indigo-950',
-  'from-emerald-950 via-neutral-900 to-teal-950',
-  'from-rose-950 via-neutral-900 to-stone-900',
-  'from-amber-950 via-neutral-900 to-yellow-950',
-  'from-violet-950 via-slate-900 to-purple-950',
-];
-
 export function BookCard({ book, detailUrl, onReadOnline }: BookCardProps) {
   const [copied, setCopied] = useState(false);
-  const [imgFailed, setImgFailed] = useState(false);
-
-  // Hash-based deterministic palette for consistent book spine styling
-  const paletteIndex = Math.abs(
-    book.slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
-  ) % BINDING_PALETTES.length;
-  const gradientClass = BINDING_PALETTES[paletteIndex];
 
   const handleCopyLink = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -55,35 +38,19 @@ export function BookCard({ book, detailUrl, onReadOnline }: BookCardProps) {
         to={detailUrl}
         className="w-22 sm:w-26 shrink-0 aspect-[2/3] bg-neutral-950 rounded-lg overflow-hidden relative border border-editorial-border group/cover shadow-xs self-start"
       >
-        {!imgFailed ? (
-          <LazyImage
-            src={book.coverUrl}
-            alt={`${book.title} cover`}
-            className="w-full h-full object-cover group-hover/cover:scale-105 transition-transform duration-500 ease-out"
-            onError={() => setImgFailed(true)}
-          />
-        ) : (
-          /* Bespoke Hardcover Typographic Binding Fallback */
-          <div className={cn('w-full h-full p-2.5 flex flex-col justify-between text-center bg-gradient-to-b border border-amber-500/20', gradientClass)}>
-            <div>
-              <span className="text-[7px] uppercase tracking-widest text-amber-400/80 font-sans font-semibold">Questo</span>
-            </div>
-            <div className="my-auto px-0.5 space-y-1">
-              <h4 className="font-display font-bold text-[11px] text-neutral-100 leading-tight line-clamp-2">
-                {book.title}
-              </h4>
-              <div className="w-5 h-px bg-amber-500/40 mx-auto" />
-              <p className="text-[8px] font-sans font-medium text-neutral-300 uppercase tracking-wider truncate">
-                {book.author}
-              </p>
-            </div>
-            <div className="text-[6px] uppercase tracking-widest text-neutral-400">
-              Classic
-            </div>
-          </div>
-        )}
+        <BookCover
+          coverUrl={book.coverUrl}
+          title={book.title}
+          author={book.author}
+          year={book.year}
+          category={book.category}
+          subdiscipline={book.subdiscipline}
+          slug={book.slug}
+          size="sm"
+          className="w-full h-full group-hover/cover:scale-105 transition-transform duration-500 ease-out"
+        />
 
-        <div className="absolute bottom-1 end-1 pointer-events-none">
+        <div className="absolute bottom-1 end-1 pointer-events-none z-10">
           <span className="px-1.5 py-0.5 text-[8px] font-sans font-bold bg-black/80 backdrop-blur-xs text-white rounded">
             PDF
           </span>

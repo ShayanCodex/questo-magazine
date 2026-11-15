@@ -15,7 +15,7 @@ import type { EBook } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
-import { LazyImage } from '../components/LazyImage';
+import { BookCover } from '../components/BookCover';
 import { NotFound } from './NotFound';
 import { OriginalPdfReader } from '../components/OriginalPdfReader';
 import { cn } from '../lib/utils';
@@ -143,10 +143,17 @@ export function EBookDetail() {
           {/* Book Cover Container */}
           <div className="md:col-span-4 rounded-xl overflow-hidden border border-editorial-border bg-neutral-950 shadow-md">
             <div className="aspect-[3/4] relative">
-              <LazyImage
-                src={ebook.coverUrl}
-                alt={`${ebook.title} cover`}
-                className="w-full h-full object-cover"
+              <BookCover
+                coverUrl={ebook.coverUrl}
+                title={ebook.title}
+                author={ebook.author}
+                year={ebook.year}
+                category={ebook.category}
+                subdiscipline={ebook.subdiscipline}
+                slug={ebook.slug}
+                size="lg"
+                priority
+                className="w-full h-full"
               />
             </div>
             <div className="p-4 bg-editorial-surface border-t border-editorial-border space-y-2">
@@ -283,10 +290,16 @@ export function EBookDetail() {
                   className="group block p-4 rounded-xl border border-editorial-border bg-editorial-surface hover:border-editorial-text transition-all shadow-2xs"
                 >
                   <div className="aspect-[3/4] bg-neutral-900 rounded-lg overflow-hidden mb-3">
-                    <LazyImage
-                      src={rel.coverUrl}
-                      alt={rel.title}
-                      className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
+                    <BookCover
+                      coverUrl={rel.coverUrl}
+                      title={rel.title}
+                      author={rel.author}
+                      year={rel.year}
+                      category={rel.category}
+                      subdiscipline={rel.subdiscipline}
+                      slug={rel.slug}
+                      size="md"
+                      className="w-full h-full group-hover:scale-103 transition-transform duration-500"
                     />
                   </div>
                   <span className="text-[10px] font-sans font-semibold uppercase tracking-wider text-editorial-muted block">

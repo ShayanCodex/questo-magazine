@@ -30,7 +30,7 @@ const COMPREHENSIVE_DOMAINS = [
     ],
     authors: [
       { name: 'Aristotle', year: '350 BC', works: ['Nicomachean Ethics', 'Poetics', 'Politics', 'Rhetoric', 'Organon', 'Prior Analytics', 'Posterior Analytics', 'On the Soul (De Anima)', 'Physics (Books I-IV)', 'Physics (Books V-VIII)', 'Metaphysics (Books I-VI)', 'Metaphysics (Books VII-XIV)', 'Categories', 'On Interpretation', 'Topics', 'Sophistical Refutations', 'Meteorology', 'Generation and Corruption', 'History of Animals', 'Parts of Animals', 'Movement of Animals', 'Constitution of the Athenians', 'Eudemian Ethics', 'Magna Moralia'] },
-      { name: 'Plato', year: '375 BC', works: ['Apology', 'Phaedo', 'Symposium', 'Crito', 'Timaeus', 'Meno', 'Gorgias', 'Phaedrus', 'Theaetetus', 'Parmenides', 'Protagoras', 'Charmides', 'Laches', 'Lysis', 'Euthyphro', 'Ion', 'Hippias Major', 'Hippias Minor', 'Menexenus', 'Cratylus', 'Philebus', 'Critias', 'Laws (Books I-IV)', 'Laws (Books V-VIII)', 'Laws (Books IX-XII)', 'Statesman (Politicus)', 'Sophist', 'Alcibiades I', 'The Republic: Book I (On Justice)', 'The Republic: Books II-IV (The Ideal State)', 'The Republic: Books V-VII (The Allegory of the Cave)', 'The Republic: Books VIII-X (Regimes and Immortality)'] },
+      { name: 'Plato', year: '375 BC', works: ['Apology', 'Phaedo', 'Symposium', 'Crito', 'Meno', 'Gorgias', 'Phaedrus', 'Theaetetus', 'Parmenides', 'Protagoras', 'Charmides', 'Laches', 'Lysis', 'Euthyphro', 'Ion', 'Hippias Major', 'Hippias Minor', 'Menexenus', 'Cratylus', 'Philebus', 'Critias', 'Laws (Books I-IV)', 'Laws (Books V-VIII)', 'Laws (Books IX-XII)', 'Statesman (Politicus)', 'Sophist', 'Alcibiades I', 'The Republic: Book I (On Justice)', 'The Republic: Books II-IV (The Ideal State)', 'The Republic: Books V-VII (The Allegory of the Cave)', 'The Republic: Books VIII-X (Regimes and Immortality)'] },
       { name: 'Marcus Aurelius', year: '167 AD', works: ['Meditations (Books I-IV)', 'Meditations (Books V-VIII)', 'Meditations (Books IX-XII)', 'Letters to Fronto', 'Discourses on Duty', 'Aphorisms of the Danube Camp', 'Moral Reflections in Carnuntum'] },
       { name: 'Epictetus', year: '108 AD', works: ['Enchiridion (The Handbook)', 'Discourses: Book I', 'Discourses: Book II', 'Discourses: Book III', 'Discourses: Book IV', 'Fragments and Sayings on Freedom', 'The Golden Sayings of Epictetus'] },
       { name: 'Lucius Annaeus Seneca', year: '65 AD', works: ['Letters from a Stoic (Epistulae Morales I-LX)', 'Letters from a Stoic (Epistulae Morales LXI-CXXIV)', 'On the Shortness of Life (De Brevitate Vitae)', 'On Tranquility of Mind (De Tranquillitate Animi)', 'On Anger (De Ira)', 'On Clemency (De Clementia)', 'On Benefits (De Beneficiis)', 'On the Happy Life (De Vita Beata)', 'Natural Questions (Naturales Quaestiones)', 'Troades', 'Thyestes', 'Phaedra', 'Oedipus', 'Medea', 'Hercules Furens', 'On Providence (De Providentia)', 'On the Constancy of the Wise Man'] },
@@ -299,9 +299,8 @@ for (const domain of COMPREHENSIVE_DOMAINS) {
       const pageCount = 180 + ((allMonographs.length * 43) % 450);
       const readingHours = Math.max(3, Math.round(pageCount / 38));
 
-      // Deterministic Open Library cover identifier seed
-      const coverId = 1000000 + ((allMonographs.length * 7919) % 8500000);
-      const coverUrl = `https://covers.openlibrary.org/b/id/${coverId}-L.jpg`;
+      // Only verified public domain monographs retain specific external covers; others render bespoke clothbound heritage bindings
+      const coverUrl = '';
 
       const safeId = slugify(`${work}`).slice(0, 30);
       const pdfUrl = `https://archive.org/download/${safeId}/${safeId}.pdf`;
@@ -365,7 +364,6 @@ while (allMonographs.length < 3150) {
     seenSlugs.add(newSlug);
 
     const adjustedPages = Math.max(120, seed.pageCount + ((round * 17) % 180));
-    const coverId = 1000000 + ((allMonographs.length * 7919) % 8500000);
 
     allMonographs.push({
       ...seed,
@@ -374,7 +372,7 @@ while (allMonographs.length < 3150) {
       originalTitle: seed.originalTitle,
       year: seed.year,
       pageCount: adjustedPages,
-      coverUrl: `https://covers.openlibrary.org/b/id/${coverId}-L.jpg`,
+      coverUrl: '',
       readingTimeHours: Math.max(3, Math.round(adjustedPages / 38)),
       curatedContext: `Certified in the worldwide public domain, this ${edition.label} of ${seed.author}'s "${seed.originalTitle}" provides an authoritative critical text preserving original orthography, historical annotations, and comprehensive academic commentary in ${seed.subdiscipline}.`,
     });
