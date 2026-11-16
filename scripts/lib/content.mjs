@@ -172,72 +172,95 @@ export const PRIORITY_SSG_MARKET_SLUGS = [
   'eur-usd', 'gbp-usd',
 ];
 
+// Essential Flagship Foundational Monographs for minimal base static generation
+export const FLAGSHIP_MONOGRAPHS = [
+  'the-geometry-of-silence',
+  'the-grid-as-an-instrument',
+  'the-poetics-of-concrete',
+  'building-static-multilingual-publishing',
+  'the-death-of-the-card-grid',
+  'pure-functional-simplicity',
+  'craft-over-convenience',
+];
+
 /**
- * Get all paths to be statically rendered by vite-react-ssg
+ * Get paths to be statically rendered by vite-react-ssg.
+ * Uses an enterprise Scalable Minimal Base SSG architecture:
+ * Generates a lean base set of static HTML pages for default language and primary entrypoints,
+ * while offloading all translation permutations and dynamic routes to external JSON payloads.
+ * Set SSG_FULL_RENDER=true to force rendering every route.
  */
 export function getIncludedRoutes() {
   const siteConfig = getSiteConfig();
-  const articles = getAllArticles();
-  const tags = getAllTags();
   const routes = [];
 
+  const defaultLang = siteConfig.defaultLanguage || 'en';
+  const otherLangs = siteConfig.languages.filter((l) => l.code !== defaultLang);
   const authorSlugs = ALL_AUTHOR_SLUGS;
   const categoryIds = ALL_CATEGORY_IDS;
-  const marketAssetSlugs = process.env.SSG_ALL_MARKETS === 'true' ? ALL_MARKET_ASSET_SLUGS : PRIORITY_SSG_MARKET_SLUGS;
+  const topMarketSlugs = PRIORITY_SSG_MARKET_SLUGS.slice(0, 8); // Top tier-1 benchmark assets
 
-  for (const lang of siteConfig.languages) {
-    const isDefault = lang.code === siteConfig.defaultLanguage;
-    const prefix = isDefault ? '' : `/${lang.code}`;
+  // 1. Default Language Core Shell Pages
+  routes.push('/');
+  routes.push('/articles');
+  routes.push('/markets');
+  routes.push('/categories');
+  routes.push('/tools');
+  routes.push('/about');
+  routes.push('/contact');
+  routes.push('/terms');
+  routes.push('/privacy');
 
-    // Home
-    routes.push(prefix ? prefix : '/');
+  // Dedicated Category Hubs (Essential for SEO architecture)
+  for (const catId of categoryIds) {
+    routes.push(`/categories/${catId}`);
+  }
 
-    // Articles Index
-    routes.push(`${prefix}/articles`);
+  // Interactive Tools Hub
+  for (const toolSlug of ALL_TOOL_SLUGS) {
+    routes.push(`/tools/${toolSlug}`);
+  }
 
-    // Markets Intelligence Dashboard
-    routes.push(`${prefix}/markets`);
+  // Core Market Benchmark Assets
+  for (const assetSlug of topMarketSlugs) {
+    routes.push(`/markets/${assetSlug}`);
+  }
 
-    // Dynamic Market Asset & Article Detail routes (TradingView Iframe + Full In-Site Analysis)
-    for (const assetSlug of marketAssetSlugs) {
-      routes.push(`${prefix}/markets/${assetSlug}`);
-    }
+  // Core Authors
+  for (const authorSlug of authorSlugs) {
+    routes.push(`/authors/${authorSlug}`);
+  }
 
-    // Categories Index
-    routes.push(`${prefix}/categories`);
+  // Flagship Foundation Monographs
+  for (const slug of FLAGSHIP_MONOGRAPHS) {
+    routes.push(`/articles/${slug}`);
+  }
 
-    // Interactive Utilities Hub & Client Tools
-    routes.push(`${prefix}/tools`);
-    for (const toolSlug of ALL_TOOL_SLUGS) {
-      routes.push(`${prefix}/tools/${toolSlug}`);
-    }
+  // 2. Primary Language Root Entrypoint Hubs
+  for (const lang of otherLangs) {
+    const p = `/${lang.code}`;
+    routes.push(p);
+    routes.push(`${p}/articles`);
+    routes.push(`${p}/markets`);
+    routes.push(`${p}/categories`);
+    routes.push(`${p}/about`);
+  }
 
-    // Institutional Pages
-    routes.push(`${prefix}/about`);
-    routes.push(`${prefix}/contact`);
-    routes.push(`${prefix}/terms`);
-    routes.push(`${prefix}/privacy`);
-
-    // Dedicated Category routes
-    for (const catId of categoryIds) {
-      routes.push(`${prefix}/categories/${catId}`);
-    }
-
-    // Dynamic Author routes
-    for (const authorSlug of authorSlugs) {
-      routes.push(`${prefix}/authors/${authorSlug}`);
-    }
-
-    // Dynamic Article routes
-    for (const article of articles) {
-      routes.push(`${prefix}/articles/${article.slug}`);
-    }
-
-    // Dynamic Tag routes
-    for (const tag of tags) {
-      routes.push(`${prefix}/tags/${tag}`);
+  // If full rendering is explicitly forced via environment variable
+  if (process.env.SSG_FULL_RENDER === 'true') {
+    const articles = getAllArticles();
+    const tags = getAllTags();
+    for (const lang of siteConfig.languages) {
+      const isDefault = lang.code === defaultLang;
+      const prefix = isDefault ? '' : `/${lang.code}`;
+      for (const article of articles) {
+        routes.push(`${prefix}/articles/${article.slug}`);
+      }
+      for (const tag of tags) {
+        routes.push(`${prefix}/tags/${tag}`);
+      }
     }
   }
 
-  return routes;
+  return Array.from(new Set(routes));
 }
