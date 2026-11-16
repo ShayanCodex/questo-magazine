@@ -1,0 +1,75 @@
+{
+  "slug": "bio-regenerative-life-support-celss-and-closed-loop-mars-habitats",
+  "title": "Closed-Loop Bio-Regenerative Life Support: Algal Photobioreactors, Hydroponics, and Sabatier Methanation on Mars",
+  "excerpt": "An aerospace systems engineering analysis of Controlled Ecological Life Support Systems (CELSS): photobioreactive oxygen recycling, graywater vacuum distillation, and carbon-negative food synthesis for planetary outposts.",
+  "date": "2026-11-17",
+  "author": "Mateo Silva",
+  "category": "architecture-and-space",
+  "subcategory": "space-architecture",
+  "tags": [
+    "space-architecture",
+    "life-support",
+    "mars-mission",
+    "bio-engineering",
+    "sustainability",
+    "habitats"
+  ],
+  "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Futuristic illuminated bio-dome habitat on extraterrestrial planetary surface under glowing starlight and aurora",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Physics of Mass Closure in Deep Space Exploration"
+    },
+    {
+      "type": "p",
+      "text": "On the International Space Station in low Earth orbit, life support consumables—oxygen tanks, nitrogen canisters, water bladders, and food pouches—are regularly replenished via cargo rockets. On a 1,000-day crewed mission to Mars, however, resupply is physically impossible. Mission survival dictates reaching near-100% mass loop closure through Controlled Ecological Life Support Systems (CELSS), where human metabolic waste outputs directly fuel agricultural and biological inputs."
+    },
+    {
+      "type": "h2",
+      "text": "Engineered Closed-Loop Biological Subsystems"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Algal Photobioreactor Modules: Spirulina (Arthrospira platensis) and Chlorella cultures consuming astronaut exhaled CO2 to synthesize edible protein while generating pressurized medical-grade oxygen via photosynthesis.",
+        "Sabatier CO2 Reduction & Methane Catalysis: Reacting metabolic CO2 with byproduct hydrogen at 400°C over a ruthenium catalyst to generate clean water and methane fuel.",
+        "Vapor-Compression Distillation (VCD) Water Reclamation: Recovering 98% of crew urine and sweat through multi-stage mechanical vapor compression and catalytic oxidation reactors.",
+        "Aeroponic LED Vertical Farming: Cultivating dwarf wheat, tubers, and legumes under tuned photosynthetic active radiation (PAR) spectra without soil, recycling nutrient salts from composted solid organic matter."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "A permanent Martian habitat cannot be a submarine relying on canned air; it must be an engineered miniature biosphere that balances thermodynamics and biology inside a pressurized pressure hull.",
+      "cite": "Questo Deep Space Habitats & Planetary Architecture Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-tech agricultural hydroponic grow beds glowing under deep pink and violet LED grow lamps in a controlled facility",
+      "caption": "Controlled environmental agriculture: Nutrient-film hydroponic benches cycling water and oxygen within an isolated atmospheric envelope."
+    },
+    {
+      "type": "h2",
+      "text": "Psychological and Microbiome Stability in Confined Habitation"
+    },
+    {
+      "type": "p",
+      "text": "Beyond chemical stoichiometry, living plants and fresh greens provide critical psychological countermeasures against sensory deprivation and isolation in dark Martian lava tubes. Furthermore, maintaining a diverse, non-pathogenic environmental microbiome in the habitat air and soil protects crew immune systems against opportunistic bacterial monocultures."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/MB68LeUOvZI",
+      "title": "NASA Science: Environmental Control & Life Support Systems (ECLSS)",
+      "caption": "Official NASA documentary exploring closed-loop water reclamation, Sabatier oxygen synthesis, and bio-regenerative life support for deep space outposts."
+    },
+    {
+      "type": "h2",
+      "text": "Terrestrial Spin-Offs: Hyper-Efficient Closed-Loop Cities"
+    },
+    {
+      "type": "p",
+      "text": "The severe resource constraints of extraterrestrial life support yield direct benefits for Earth. Technologies engineered for Martian closed-loop recycling are already revolutionizing drought-stricken arid agriculture, off-grid water purification, and circular carbon-neutral urban architecture across the globe."
+    }
+  ]
+}
