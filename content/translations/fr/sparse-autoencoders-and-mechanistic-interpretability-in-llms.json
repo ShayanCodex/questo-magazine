@@ -1,0 +1,73 @@
+{
+  "slug": "sparse-autoencoders-and-mechanistic-interpretability-in-llms",
+  "title": "Auto-encodeurs clairsemés et interprétabilité mécaniste dans les modèles de base",
+  "excerpt": "Une enquête d'interprétabilité mécaniste sur la superposition de réseaux neuronaux, les dictionnaires de fonctionnalités monosémantiques et le pilotage d'activation dans les modèles de langage frontière.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "technology",
+    "artificial-intelligence",
+    "machine-learning",
+    "deep-learning",
+    "mechanistic-interpretability"
+  ],
+  "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Tenseurs d'activation neuronale de grande dimension et variétés de représentations latentes rendues dans le code",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le problème de superposition polysémantique dans les réseaux profonds"
+    },
+    {
+      "type": "p",
+      "text": "Les architectures de transformateur standard compressent beaucoup plus de concepts du monde réel dans leurs représentations cachées qu'elles ne possèdent de dimensions géométriques. Ce phénomène, connu sous le nom de superposition, force les neurones individuels du flux résiduel à agir de manière polysémantique : ils déclenchent simultanément la physique quantique, les herbes culinaires et les clauses juridiques. Pour décoder les représentations internes de l’intelligence artificielle de pointe, les chercheurs en interprétabilité mécaniste forment des auto-encodeurs clairsemés (SAE) surcomplets qui décomposent ces activations enchevêtrées en fonctionnalités isolées et monosémantiques."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Hypothèse de représentation linéaire : les concepts sont représentés sous forme de directions linéaires au sein de variétés d'activation neuronale plutôt que de neurones individuels isolés.",
+        "Apprentissage excessif du dictionnaire : les auto-encodeurs clairsemés projettent des flux résiduels de faible dimension dans des espaces latents de haute dimension avec des contraintes de parcimonie.",
+        "Monosémantique : les caractéristiques extraites avec succès correspondent à des concepts uniques et interprétables par l'homme, tels que les emplacements géographiques, les structures syntaxiques ou les modèles de refus critiques pour la sécurité.",
+        "Pilotage d'activation : l'identification de vecteurs conceptuels spécifiques permet un pilotage mathématique direct du comportement du modèle sans affiner les poids."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La superposition a longtemps été considérée comme une boîte noire informatique impénétrable. Les auto-encodeurs clairsemés démontrent que les représentations neuronales obéissent à des lois géométriques rigoureuses se prêtant à un démontage précis.",
+      "cite": "Collaboratif de recherche anthropique et d'alignement"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Équipe de recherche en apprentissage automatique analysant les fonctionnalités de dictionnaire de haute dimension sur des écrans interactifs",
+      "caption": "Extraction de fonctionnalités : projeter les activations de flux résiduels à travers des dictionnaires d'encodeurs automatiques clairsemés de haute dimension."
+    },
+    {
+      "type": "h2",
+      "text": "Formation de dictionnaires clairsemés surcomplets avec les activations TopK"
+    },
+    {
+      "type": "p",
+      "text": "Des percées récentes remplacent les pénalités de régularisation L1 traditionnelles par des fonctions d'activation TopK. Dans les SAE TopK, seules les K latentes de plus grande magnitude sont autorisées à s'activer par passage direct, éliminant ainsi le biais de retrait et améliorant considérablement la fidélité de la reconstruction tout en préservant une parcimonie extrême des concepts dans des dictionnaires de centaines de millions de paramètres."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
+      "title": "Interprétabilité mécaniste et géométrie du réseau neuronal",
+      "caption": "Cours de base examinant la géométrie de la représentation linéaire, les dictionnaires clairsemés et la découverte de circuits dans les transformateurs."
+    },
+    {
+      "type": "h2",
+      "text": "Interventions causales et pilotage de la sécurité"
+    },
+    {
+      "type": "p",
+      "text": "Le véritable test d'interprétabilité réside dans la vérification causale : le blocage ou l'atténuation d'un seul vecteur de caractéristiques identifié lors de l'inférence modifie systématiquement la trajectoire de raisonnement du modèle. Cela fournit une base mathématiquement vérifiable pour la sécurité, l’audit et la suppression des hallucinations de l’IA."
+    }
+  ],
+  "sourceHash": "183ef7795abb6a6fc8d1fdfedd389e6b1e923c34"
+}

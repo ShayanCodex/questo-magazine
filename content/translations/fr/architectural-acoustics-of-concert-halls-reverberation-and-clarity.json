@@ -1,0 +1,73 @@
+{
+  "slug": "architectural-acoustics-of-concert-halls-reverberation-and-clarity",
+  "title": "L'acoustique architecturale des salles de concert : indice de réverbération et de clarté",
+  "excerpt": "Une monographie acoustique spatiale examinant les géométries des vignobles et des boîtes à chaussures, les fractions d'énergie sonore latérales et les réseaux de diffuseurs de résidus quadratiques dans les salles symphoniques.",
+  "date": "2026-11-16",
+  "author": "Mateo Silva",
+  "tags": [
+    "architecture-and-space",
+    "spatial-theory",
+    "acoustics",
+    "minimalist-design",
+    "architecture"
+  ],
+  "image": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Intérieur d'une salle de concert symphonique monumentale avec terrasses acoustiques en bois et déflecteurs de plafond réfléchissants",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La dichotomie psychoacoustique : enveloppe contre articulation"
+    },
+    {
+      "type": "p",
+      "text": "Dans l'architecture civique monumentale, les salles de concert représentent la convergence ultime de l'ingénierie structurelle et de la physique sensorielle. L'acousticien doit concilier deux exigences psychoacoustiques diamétralement opposées : la clarté acoustique (C80), qui nécessite des réflexions sonores directes précoces en moins de quatre-vingts millisecondes pour l'articulation mélodique, et le temps de réverbération (RT60), qui nécessite une décroissance diffuse prolongée pour envelopper l'auditeur dans une chaleur sonore et un enveloppement spatial."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Le paradigme de la boîte à chaussures : des salles rectangulaires étroites comme le Musikverein de Vienne produisent de fortes réflexions latérales précoces qui améliorent la corrélation croisée binaurale.",
+        "La révolution des vignobles : Initiée par Hans Scharoun à Berlin, l'aménagement de vignobles en terrasses rapproche les auditeurs de la scène tout en utilisant des murs de balustrade pour les réflexions latérales.",
+        "Diffuseurs de résidus quadratiques : les surfaces mathématiques de la théorie des nombres diffusent les ondes sonores uniformément sans absorber l'énergie vibratoire.",
+        "Mise à l'échelle du volume acoustique : une réverbération symphonique optimale nécessite environ dix mètres cubes de volume d'air par client."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Une salle de concert n'est pas simplement une enceinte qui abrite le son ; c'est un instrument de musique géant fabriqué à partir de bois, de béton et d'air que les musiciens activent.",
+      "cite": "Acoustique spatiale et monographie sur l'architecture symphonique"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1499955085172-a104c9463ece?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Béton marqué par des panneaux et surfaces en bois sculpté dans un pavillon architectural moderniste",
+      "caption": "Résonance matérielle : panneaux en bois et béton minéral dense façonnant une chaleur acoustique basse fréquence."
+    },
+    {
+      "type": "h2",
+      "text": "Géométries géométriques : la pureté de la boîte à chaussures contre la démocratie du vignoble"
+    },
+    {
+      "type": "p",
+      "text": "Alors que la géométrie classique de la boîte à chaussures crée une intimité acoustique inégalée grâce à des réflexions latérales parallèles, ses contraintes de ligne de vue limitent la capacité. L'architecture viticole démocratise les lignes de vue du public en divisant l'auditorium en balcons décalés, en utilisant chaque cloison comme réflecteur acoustique pour générer des fractions sonores latérales comparables aux salles rectangulaires."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Acoustique et géométrie spatiale dans la conception monumentale",
+      "caption": "Analyse architecturale explorant les matériaux structurels, la diffraction des ondes sonores et les espaces monumentaux contemplatifs."
+    },
+    {
+      "type": "h2",
+      "text": "Textures de surface, diffuseurs de résidus quadratiques et résonance de la pièce"
+    },
+    {
+      "type": "p",
+      "text": "Pour éviter les échos spéculaires et les réflexions flottantes, les salles modernes intègrent des panneaux diffuseurs Schroeder fraisés par ordinateur et calculés à partir de séquences modulo de nombres premiers. Ces micro-textures diffusent les ondes sonores de manière isotrope sur le spectre audible, créant une transparence acoustique époustouflante."
+    }
+  ],
+  "sourceHash": "30629aabd8eeccea71454bd33a8a9a4619973707"
+}

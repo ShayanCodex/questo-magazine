@@ -1,0 +1,73 @@
+{
+  "slug": "perovskite-silicon-tandem-solar-cells-and-photovoltaic-efficiency",
+  "title": "Perowskit-Silizium-Tandemsolarzellen: Überschreiten der Shockley-Queisser-Grenze",
+  "excerpt": "Eine materialtechnische Untersuchung zur Integration von Metallhalogenid-Perowskiten mit großer Bandlücke, Tunnelverbindungen und industrieller Rolle-zu-Rolle-Photovoltaikfertigung.",
+  "date": "2026-11-16",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "engineering-and-technology",
+    "energy",
+    "materials-science",
+    "solar",
+    "clean-energy"
+  ],
+  "image": "https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Hocheffiziente Photovoltaik-Solaranlage, die Sonnenlicht über Tandemschichten mit breitem Spektrum umwandelt",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Spektrale Fehlanpassung und die thermodynamische Grenze mit einem Übergang"
+    },
+    {
+      "type": "p",
+      "text": "Sechs Jahrzehnte lang war die kommerzielle Photovoltaik durch die Shockley-Queisser-Grenze von etwa 33 % für Siliziumzellen mit einem Übergang eingeschränkt. Da Silizium eine feste Bandlücke von 1,1 Elektronenvolt hat, verlieren hochenergetische blaue Photonen überschüssige Energie als thermische Wärme, während infrarote Photonen unterhalb der Bandlücke völlig unabsorbiert passieren. Die Tandem-Solararchitektur überwindet diese thermodynamische Grenze, indem eine Metallhalogenid-Perowskit-Zelle mit großer Bandlücke auf einem unteren Siliziumabsorber gestapelt wird."
+    },
+    {
+      "type": "h2",
+      "text": "Wichtige Punkte"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Bandlückenabstimmung: Metallhalogenid-Perowskite können auf 1,5 bis 1,8 eV eingestellt werden, um energiereiches blaugrünes Sonnenlicht mit minimalen Thermalisierungsverlusten zu absorbieren.",
+        "Effizienzrekorde: Zweiterminale Perowskit-Silizium-Tandems haben eine Laborumwandlungseffizienz von über 34 % erreicht und übertreffen damit monolithisches Silizium.",
+        "Rekombinationsverbindungen: Ultradünne transparente leitende Oxide (ITO/IZO) verbinden Unterzellen mit nahezu null optischer Absorption und elektrischem Widerstand.",
+        "Industrielle Nachrüstung: Tandemschichten können aus Lösung auf bestehenden TOPCon- und Heterojunction (HJT)-Siliziumwafer-Produktionslinien abgeschieden werden."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Tandem-Photovoltaik ersetzt kein Silizium; sie erhöhen es. Indem wir das hochenergetische Sonnenspektrum in einer mikroskopisch kleinen Perowskit-Überschicht erfassen, erschließen wir das nächste halbe Jahrhundert sauberer Energie.",
+      "cite": "Rückblick auf Materialwissenschaften und erneuerbare Energien"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Makro-Nahaufnahme von Mehrfachübergangs-Photovoltaik-Siliziumoberflächentexturen",
+      "caption": "Mikrotexturierte Waferoberfläche: Optimierung der Photonenpfadlängen und antireflektierendes optisches Einfangen."
+    },
+    {
+      "type": "h2",
+      "text": "Perowskit-Zusammensetzungstechnik und Halogenid-Phasensegregation"
+    },
+    {
+      "type": "p",
+      "text": "Historische Perowskit-Formulierungen litten unter lichtinduzierter Halogenid-Segregation, bei der sich gemischte Iodid-Bromid-Gitter unter Beleuchtung in Cluster mit geringer Bandlücke aufspalteten. Moderne Formulierungen stabilisieren das Kristallgitter durch Mischung von Cäsium-Formamidinium-Kationen und Spuren von Pseudohalogenidzusätzen und sorgen so für eine langfristige strukturelle Symmetrie."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Fortschrittliche Werkstofftechnik und saubere Energiesysteme",
+      "caption": "Erforschung der kristallinen Halbleiterphysik, des Ladungsträgertransports und der Skalierung erneuerbarer Energien."
+    },
+    {
+      "type": "h2",
+      "text": "Kommerzielle Verkapselung und thermischer Abbau in tausend Stunden"
+    },
+    {
+      "type": "p",
+      "text": "Um die strengen Feuchte-Hitze-Testnormen IEC 61215 zu bestehen, sind fortschrittliche Verkapselungen aus vernetzten Polyolefinelastomeren (POE) und Atomlagenabscheidungs-Aluminiumoxid-Barrierefolien (ALD) erforderlich, die das Eindringen von Feuchtigkeit über eine Betriebslebensdauer von 25 Jahren verhindern."
+    }
+  ],
+  "sourceHash": "54e2f9907a7a45745a268220a546e7160cade704"
+}

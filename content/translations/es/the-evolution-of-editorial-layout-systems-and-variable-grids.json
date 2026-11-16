@@ -1,0 +1,73 @@
+{
+  "slug": "the-evolution-of-editorial-layout-systems-and-variable-grids",
+  "title": "La evolución de los sistemas de diseño editorial: de Tschichold a las cuadrículas variables",
+  "excerpt": "Un tratado tipográfico que rastrea el canon dorado de la división de libros, los sistemas asimétricos suizos de mediados de siglo y la moderna arquitectura editorial fluida de subcuadrículas CSS.",
+  "date": "2026-11-16",
+  "author": "Saskia Lindqvist",
+  "tags": [
+    "design-and-typography",
+    "grid-theory",
+    "editorial-systems",
+    "typography",
+    "swiss-design"
+  ],
+  "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Páginas abiertas de monografías arquitectónicas y tipográficas en una biblioteca de archivos de diseño modernista",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Los fundamentos geométricos de la armonía de las páginas clásicas"
+    },
+    {
+      "type": "p",
+      "text": "La disciplina del diseño editorial nunca fue un ejercicio arbitrario en decoración. Desde los scriptoria medievales hasta el redescubrimiento de Jan Tschichold del canon dorado de la división de libros, los diseños clásicos obedecieron proporciones armónicas inquebrantables: proporciones de página de 2:3, escalas de márgenes interior a exterior de 2:3:4:6 y bloques de texto cuyas dimensiones reflejaban el rectángulo dorado. Estas relaciones geométricas guiaron la mirada del lector sin esfuerzo a través del plano impreso."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "El Canon Tschichold: Reconstrucción de la armonía de las páginas medievales mediante división diagonal geométrica sin reglas numéricas.",
+        "La revolución suiza de las cuadrículas: Josef Müller-Brockmann y Emil Ruder sistematizaron cuadrículas tipográficas modulares que introdujeron un orden matemático en los diseños asimétricos.",
+        "Disciplina de cuadrícula de línea base: Alinear líneas de texto, dimensiones iniciales y marcos de imágenes a un ritmo vertical estricto crea serenidad de lectura subliminal.",
+        "Subcuadrícula CSS y tipografía fluida: las capacidades modernas de diseño web finalmente logran la precisión de los sistemas editoriales suizos de mediados de siglo en infinitos anchos de ventana gráfica."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El sistema de red es una ayuda, no una garantía. Permite múltiples usos posibles y cada diseñador puede buscar una solución adecuada a su estilo personal. Pero hay que aprender a utilizar la red; es un arte que requiere práctica.",
+      "cite": "Josef Müller-Brockmann, Sistemas de cuadrícula en diseño gráfico (1961)"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Póster tipográfico limpio y minimalista que muestra una estricta alineación de cuadrícula modular",
+      "caption": "Estructura de cuadrícula modular: equilibrio matemático entre espacios en blanco negativos, márgenes y límites de columnas."
+    },
+    {
+      "type": "h2",
+      "text": "Rigor asimétrico: la revolución racionalista suiza"
+    },
+    {
+      "type": "p",
+      "text": "En Zurich y Basilea de la posguerra, el estilo tipográfico internacional rechazó la simetría victoriana centrada en favor de la tensión asimétrica dinámica. Al anclar titulares, cuerpos de texto y fotografías de arquitectura a lo largo de ejes de alineación vertical comunes, los maestros suizos lograron una jerarquía visual con claridad quirúrgica."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Los principios del diseño tipográfico suizo y las cuadrículas modulares",
+      "caption": "Seminario de diseño gráfico que explora sistemas de diseño asimétrico, ritmo básico y jerarquía visual."
+    },
+    {
+      "type": "h2",
+      "text": "Arquitectura editorial fluida: subcuadrícula CSS y ritmo tipográfico proporcional"
+    },
+    {
+      "type": "p",
+      "text": "En la web digital, el arte editorial sufrió durante mucho tiempo debido a marcos de tarjetas responsivos rígidos e inconexos. Con la adopción universal del navegador de CSS Subgrid y el escalado de tipo fluido CSS `clamp()`, los diseñadores web ahora pueden construir composiciones editoriales continuas que preserven la armonía proporcional desde pantallas de bolsillo hasta monitores de escritorio ultra anchos."
+    }
+  ],
+  "sourceHash": "2ad5251f03966d71bae35e8ac963c1e1bc885d9e"
+}

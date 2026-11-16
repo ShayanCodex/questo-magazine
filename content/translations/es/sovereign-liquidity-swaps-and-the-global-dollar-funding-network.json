@@ -1,0 +1,73 @@
+{
+  "slug": "sovereign-liquidity-swaps-and-the-global-dollar-funding-network",
+  "title": "Swaps de liquidez soberana, base cambiaria y la red global de financiación en dólares",
+  "excerpt": "Un análisis macrofinanciero de los diferenciales de base entre divisas, las líneas de swap bilaterales de los bancos centrales y las vulnerabilidades estructurales de la liquidación en eurodólares.",
+  "date": "2026-11-16",
+  "author": "Claire Dupont",
+  "tags": [
+    "finance",
+    "forex-and-liquidity",
+    "global-markets",
+    "macroeconomics",
+    "central-banks"
+  ],
+  "image": "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Rascacielos de los centros de capital financiero y sedes bancarias internacionales en el crepúsculo",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El desglose de la paridad de intereses cubiertos en la banca global"
+    },
+    {
+      "type": "p",
+      "text": "La teoría macroeconómica clásica dicta que la paridad de intereses cubiertos (CIP) debe mantenerse: la diferencia entre las tasas de interés nacionales y extranjeras debe ser igual a la prima del tipo de cambio a plazo. Sin embargo, desde la crisis financiera de 2008, la base entre monedas se ha alejado persistentemente de cero. Esta desviación estructural refleja el costo en el mundo real del financiamiento extraterritorial en dólares, las restricciones de apalancamiento regulatorio posteriores a la crisis y la escasez estructural de balances entre los operadores primarios globales."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Diferenciales de base entre divisas: Una base negativa para los bancos no estadounidenses significa una prima estructural pagada para pedir prestado dólares estadounidenses a través de swaps sintéticos de divisas.",
+        "Hegemonía de facturación en eurodólares: Más del ochenta por ciento de la financiación del comercio mundial está denominada en dólares estadounidenses, lo que crea inmensos descalces cambiarios en el extranjero.",
+        "Red de swap de bancos centrales: las líneas de swap bilaterales permanentes de la Reserva Federal con el BCE, el Banco de Japón y el Banco de Inglaterra sirven como último respaldo de liquidez extraterritorial.",
+        "Ratios de apalancamiento regulatorio: Los requisitos del ratio de apalancamiento suplementario (SLR) impiden a los bancos globales arbitrar libremente las anomalías de las bases entre monedas."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El dólar no es sólo la moneda de los Estados Unidos; es el sistema operativo fundamental del comercio internacional, los acuerdos de recompra garantizados y el crédito bancario transfronterizo.",
+      "cite": "Documentos de trabajo del Banco de Pagos Internacionales (BPI)"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Escritorio de análisis financiero que muestra gráficos macro globales y métricas de flujo de divisas",
+      "caption": "Flujos de liquidez: seguimiento de los diferenciales de base de swaps entre divisas en los principales corredores de divisas soberanas."
+    },
+    {
+      "type": "h2",
+      "text": "Líneas de swap del banco central como prestamista soberano de último recurso"
+    },
+    {
+      "type": "p",
+      "text": "Durante crisis de liquidez, los bancos comerciales extranjeros enfrentan una aguda escasez de dólares a medida que se reducen los fondos del mercado monetario a corto plazo. Al suministrar liquidez ilimitada en dólares a los bancos centrales aliados a cambio de garantías en moneda local, las líneas de swap de los bancos centrales anclan la estabilidad financiera global e impiden las ventas autocumplidas de títulos del Tesoro estadounidense."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
+      "title": "Macroeconomía, fontanería de capital y ciclos de reservas globales",
+      "caption": "Ray Dalio analiza la mecánica del dinero, los ciclos de deuda y las monedas de reserva internacionales."
+    },
+    {
+      "type": "h2",
+      "text": "Escasez de garantías estructurales y fontanería de eurodólares en el extranjero"
+    },
+    {
+      "type": "p",
+      "text": "A medida que la banca global avanza hacia repos tripartitos y vías transfronterizas digitales, la calidad de las garantías de la deuda soberana y los marcos de liquidación claros determinarán qué instituciones sobrevivirán a las contracciones sistémicas de liquidez."
+    }
+  ],
+  "sourceHash": "e8dae70f4b6f3107435d1ea6eee2814a7d3f95d9"
+}

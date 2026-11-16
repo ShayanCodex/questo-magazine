@@ -1,0 +1,73 @@
+{
+  "slug": "nuclear-thermal-propulsion-and-deep-space-trajectory-mechanics",
+  "title": "Propulsión térmica nuclear y mecánica de trayectoria en el espacio profundo",
+  "excerpt": "Un análisis de astrofísica orbital de reactores de fisión de uranio poco enriquecido de alto ensayo, turbobombas criogénicas de hidrógeno y ventanas de transferencia interplanetaria rápida.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "science",
+    "astronomy-and-space",
+    "physics",
+    "aerospace",
+    "orbital-mechanics"
+  ],
+  "image": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Campo cósmico profundo estrellado con nebulosa interestelar luminosa y vectores de trayectoria orbital",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Más allá de los Isp químicos: el caso termodinámico de la fisión"
+    },
+    {
+      "type": "p",
+      "text": "Los cohetes químicos están limitados por las energías de enlace fundamentales de los propulsores moleculares, alcanzando un techo de impulso específico asintótico de aproximadamente 450 segundos. La propulsión térmica nuclear (NTP) rompe esta barrera mediante el uso de un núcleo de reactor de fisión compacto para sobrecalentar el propulsor de hidrógeno líquido directamente a más de 2.700 Kelvin. Debido a que la velocidad de escape aumenta inversamente con la raíz cuadrada de la masa molecular, el hidrógeno puro produce impulsos específicos que superan los 900 segundos."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Alto impulso específico: los sistemas NTP ofrecen el doble de eficiencia de propulsor que los motores de cohetes hidrolox criogénicos modernos.",
+        "Ventanas de tránsito acortadas: duplicar la velocidad de escape reduce la duración del tránsito Tierra-Marte de nueve meses a menos de cien días.",
+        "Núcleos de combustible HALEU: uranio poco enriquecido de alto ensayo (menos del 20 % de enriquecimiento) recubierto con carburo de circonio refractario garantiza la estabilidad estructural bajo flujo térmico extremo.",
+        "Flexibilidad para abortar: Los presupuestos delta-v enormemente aumentados permiten trayectorias de clase de oposición con capacidades de retorno inmediato."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Motores químicos llevaron a la humanidad a la Luna; La propulsión térmica nuclear es el prerrequisito termodinámico ineludible para convertirse en una verdadera civilización interplanetaria.",
+      "cite": "Anales de propulsión interplanetaria y exploración del espacio profundo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Campo estelar del espacio profundo que destaca los corredores de trayectoria orbital interplanetaria de larga duración",
+      "caption": "Tránsito interplanetario: reducción de los tiempos de tránsito hacia el sistema solar exterior mediante propulsión de fisión de alto impulso específico."
+    },
+    {
+      "type": "h2",
+      "text": "Neutrónica del núcleo del reactor y expansión de hidrógeno líquido criogénico"
+    },
+    {
+      "type": "p",
+      "text": "Los diseños modernos de NTP aprovechan los reflectores de neutrones de óxido de berilio y los tambores de control giratorios con segmentos de veneno de carburo de boro para controlar la reactividad. El hidrógeno líquido almacenado a 20 Kelvin actúa como refrigerante regenerativo y masa de reacción, absorbiendo gigavatios de energía térmica a través de canales de propulsor de escala milimétrica sin combustión química."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
+      "title": "Fundamentos de Astrofísica de Precisión y Mecánica Orbital",
+      "caption": "Análisis integral de mecánica orbital, asistencias de gravedad y sistemas de propulsión termodinámicos."
+    },
+    {
+      "type": "h2",
+      "text": "Ventanas de transferencia de órbita interplanetaria y protección contra la radiación"
+    },
+    {
+      "type": "p",
+      "text": "El blindaje de sombras que utiliza capas de tungsteno, hidruro de litio y tanques de propulsor agotados atenúa los rayos gamma y los neutrones del núcleo a niveles más bajos que el fondo de rayos cósmicos naturales absorbidos durante las fases de crucero interplanetario de larga duración."
+    }
+  ],
+  "sourceHash": "a15479b6870ab465e6cfee720e68ee55f7f7d586"
+}

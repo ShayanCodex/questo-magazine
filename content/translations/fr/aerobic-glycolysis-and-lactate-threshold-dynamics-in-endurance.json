@@ -1,0 +1,73 @@
+{
+  "slug": "aerobic-glycolysis-and-lactate-threshold-dynamics-in-endurance",
+  "title": "Glycolyse aérobie, seuil de lactate 2 et physiologie des marathons sub-2",
+  "excerpt": "Une enquête biomécanique sportive sur l'état d'équilibre maximal du lactate (MLSS), la capacité respiratoire mitochondriale et l'économie de course au carbone.",
+  "date": "2026-11-16",
+  "author": "Liam O’Connor",
+  "tags": [
+    "sports",
+    "sports-science",
+    "endurance",
+    "physiology",
+    "athletics"
+  ],
+  "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Des marathoniens d'élite parcourent en rythme une route asphaltée lors d'une course d'endurance de championnat.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Navettes métaboliques et rôle incompris du lactate sanguin."
+    },
+    {
+      "type": "p",
+      "text": "Pendant des décennies, la tradition sportive populaire a vilipendé le lactate comme un déchet métabolique responsable de la fatigue et des douleurs musculaires. La physiologie de l’exercice a complètement démantelé ce mythe. En vérité, le lactate est un substrat énergétique indispensable qui circule entre les fibres glycolytiques à contraction rapide et les fibres oxydatives à contraction lente adjacentes pour alimenter la resynthèse de l'ATP. La fatigue n'est pas due au lactate, mais à l'accumulation d'ions hydrogène et à l'acidose intracellulaire qui inhibent la liaison contractile troponine-calcium."
+    },
+    {
+      "type": "h2",
+      "text": "Points clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Seuil de lactate 1 vs 2 : LT1 marque la transition par rapport au métabolisme purement initial ; LT2 (état d’équilibre maximal du lactate) représente la limite au-delà de laquelle l’accumulation dépasse la clairance.",
+        "Densité des transporteurs MCT : l'entraînement en endurance régule à la hausse les transporteurs monocarboxylates (MCT1 et MCT4) qui accélèrent la navette du lactate à travers les membranes cellulaires.",
+        "Utilisation fractionnée : les marathoniens d'élite peuvent maintenir 85 % à 88 % de leur VO2 max pendant plus de deux heures sans déclencher une acidose métabolique incontrôlable.",
+        "Coût énergétique de la course : les chaussures avancées à plaques en fibre de carbone réduisent le coût énergétique mécanique d'environ quatre pour cent grâce au renforcement longitudinal."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le champion de course de fond n'est pas celui qui produit le moins de lactate ; c'est celui dont les mitochondries éliminent et brûlent le lactate comme carburant principal à des vitesses proches du sprint.",
+      "cite": "Journal of Applied Physiology & Sports Science"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Chaussures de course haute performance frappant le trottoir avec un alignement optimal de la chaîne cinétique de l'avant-pied",
+      "caption": "Économie de course : retour d'énergie et rigidité en flexion longitudinale optimisant le transfert de force musculo-squelettique."
+    },
+    {
+      "type": "h2",
+      "text": "Utilisation fractionnée du VO2 Max et de la cinétique d'épargne du glycogène"
+    },
+    {
+      "type": "p",
+      "text": "Un VO2 max massif de 80 ml/kg/min n'est qu'un ticket d'entrée dans la course de fond de classe mondiale. Le facteur physiologique décisif est l’utilisation fractionnée : le pourcentage de plafond aérobie durable au rythme du marathon, qui dépend directement de la densité volumique mitochondriale, de la capillarisation et de l’oxydation intramusculaire des lipides."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
+      "title": "Physiologie de l'exercice et biomécanique d'endurance de haute performance",
+      "caption": "Exploration scientifique de la fatigue neuromusculaire, de la cinétique de l'oxygène et des stratégies de stimulation du marathon d'élite."
+    },
+    {
+      "type": "h2",
+      "text": "Réglage mécanique des chaussures : rigidité à la flexion longitudinale et retour d'énergie"
+    },
+    {
+      "type": "p",
+      "text": "La synthèse de mousses polyéther bloc amide (PEBA) ultra-résistantes et de plaques de bascule incurvées en composite de carbone réduit les moments de flexion des articulations métatarsophalangiennes, économisant ainsi de précieuses kilocalories et révolutionnant les records humains de course sur route."
+    }
+  ],
+  "sourceHash": "06515868a8544e055d20fa540eb33f846dab420d"
+}

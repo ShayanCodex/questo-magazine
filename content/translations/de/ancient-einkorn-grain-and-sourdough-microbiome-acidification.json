@@ -1,0 +1,73 @@
+{
+  "slug": "ancient-einkorn-grain-and-sourdough-microbiome-acidification",
+  "title": "Mikrobiom-Kolonisierung, Urgetreide-Einkorn und Sauerteig-Säuerung",
+  "excerpt": "Eine gastronomisch-chemische Studie zur Proteinarchitektur von Triticum monococcum, zur heterofermentativen Milchsäurebakterien-Symbiose und zum enzymatischen Phytatabbau.",
+  "date": "2026-11-16",
+  "author": "Sofia Rossi",
+  "tags": [
+    "food",
+    "fermentation-and-bread",
+    "culinary-science",
+    "microbiology",
+    "baking-science"
+  ],
+  "image": "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Goldene Felder mit altem Getreideweizen, der sich in der mediterranen Agrarbrise wiegt",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der diploide Genetik- und Glutenkomplex von Triticum monococcum"
+    },
+    {
+      "type": "p",
+      "text": "Im Gegensatz zum modernen industriellen Brotweizen (Triticum aestivum), der hexaploid ist und zweiundvierzig Chromosomen enthält, ist Einkorn (Triticum monococcum) das ursprünglich kultivierte Getreide der Menschheit: ein diploides Getreide mit nur vierzehn Chromosomen. Dieses ausgeprägte genetische Erbe führt zu einer völlig anderen Glutenarchitektur: hohe Gliadin-zu-Glutenin-Verhältnisse, die keine starren, elastischen Teigmatrizen bilden, gepaart mit höheren Konzentrationen an Lutein, Zink und Carotinoiden."
+    },
+    {
+      "type": "h2",
+      "text": "Wichtige Punkte"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Einfachheit des diploiden Getreides: Die einfachere Proteinstruktur von Einkorn wird während der langen Fermentation durch endogene Proteasen des Sauerteigs vollständiger abgebaut.",
+        "Symbiotic Microbial Consortium: Wilde Sauerteigkulturen paaren heterofermentative Milchsäurebakterien (wie Fructilactobacillus sanfranciscensis) mit Maltose-negativen Hefen.",
+        "Phytinsäure-Dephosphorylierung: Durch die verlängerte Milchsäuerung sinkt der pH-Wert des Teigs auf 4,0, wodurch einheimische Getreidephytasen aktiviert werden, die Phytate hydrolysieren und gebundene Mineralien freisetzen.",
+        "Dehnbarkeit geht über Elastizität: Einkorn-Teige erfordern eine schonende Handhabung, niedrige Hydratationsverhältnisse und eine Kaltverzögerung anstelle eines kräftigen mechanischen Knetens."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Industrielle, schnell wirkende Bäckerhefe hat Tausende von Jahren mikrobieller Koevolution zunichte gemacht. Durch die Rückgewinnung des alten Einkorns durch Fermentation von wildem Sauerteig erhält Brot wieder seinen rechtmäßigen Status als leicht verdauliches Nahrungsmittel.",
+      "cite": "Journal für mediterrane Agronomie und Lebensmittelchemie"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Aufgeschnittene, handwerklich hergestellte Sauerteigboule zeigt eine offene, glänzende, gelatinierte Krumenstruktur.",
+      "caption": "Krumenstruktur: verlängerte mikrobielle Fermentation, die eine komplexe Säure und verdauliche Proteinnetzwerke entwickelt."
+    },
+    {
+      "type": "h2",
+      "text": "Milchsäurebakterien-Ökologie: Maltosephosphorylase und Ansäuerung"
+    },
+    {
+      "type": "p",
+      "text": "In echten Sauerteigstartern sind Milchsäurebakterien hundert zu eins zahlreicher als Hefen. Durch den Verzehr von Maltose, die durch Getreideamylasen aus beschädigter Stärke abgespalten wird, produzieren diese Mikroben Milch- und Essigsäure in einem feinen Verhältnis von 3:1, das eine subtile Fruchtigkeit verleiht und gleichzeitig die Teigrheologie bewahrt."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Mikrobielle Ökologie und Fermentationsbiochemie",
+      "caption": "Kulinarisch-wissenschaftliche Präsentation über wilde Hefen, den Stoffwechsel von Milchsäurebakterien und traditionelles Brothandwerk."
+    },
+    {
+      "type": "h2",
+      "text": "Enzymatische Proteolyse, Mineralbioverfügbarkeit und Darmtoleranz"
+    },
+    {
+      "type": "p",
+      "text": "Durch die verlängerte Sauerteiggärung mit traditionellen Getreidesorten werden immunogene Glutenpeptide systematisch in harmlose Aminosäuren gespalten, sodass viele Personen mit nicht an Zöliakie leidenden Weizenunverträglichkeiten authentisches, handwerklich hergestelltes Brot ohne Magen-Darm-Beschwerden verzehren können."
+    }
+  ],
+  "sourceHash": "0f92799f037f4170bb75db7832a0b0d679899829"
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "aerobic-glycolysis-and-lactate-threshold-dynamics-in-endurance",
+  "title": "Aerobic Glycolysis, Lactate Threshold 2 & The Physiology of Sub-2 Marathons",
+  "excerpt": "A sports biomechanics investigation into maximal lactate steady state (MLSS), mitochondrial respiratory capacity, and carbon-plated running economy.",
+  "date": "2026-11-16",
+  "author": "Liam O’Connor",
+  "category": "sports",
+  "subcategory": "sports-science",
+  "tags": [
+    "sports",
+    "sports-science",
+    "endurance",
+    "physiology",
+    "athletics"
+  ],
+  "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Elite marathon runners pacing rhythmically across asphalt roadway in championship endurance race",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Metabolic Shuttling and the Misunderstood Role of Blood Lactate"
+    },
+    {
+      "type": "p",
+      "text": "For decades, popular sports lore vilified lactate as a metabolic waste product responsible for muscle fatigue and soreness. Exercise physiology has thoroughly dismantled this myth. In truth, lactate is an indispensable energy substrate shuttled between fast-twitch glycolytic fibers and adjacent slow-twitch oxidative fibers to fuel ATP resynthesis. Fatigue is driven not by lactate, but by hydrogen ion accumulation and intracellular acidosis that inhibit contractile troponin-calcium binding."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Lactate Threshold 1 vs 2: LT1 marks the transition from purely baseline metabolism; LT2 (maximal lactate steady state) represents the boundary beyond which accumulation outpaces clearance.",
+        "MCT Transporter Density: Endurance training upregulates Monocarboxylate Transporters (MCT1 and MCT4) that accelerate lactate shuttling across cell membranes.",
+        "Fractional Utilization: Elite marathoners can sustain 85% to 88% of their VO2 max for over two hours without triggering runaway metabolic acidosis.",
+        "Energy Cost of Running: Advanced carbon-fiber plate footwear reduces mechanical energetic cost by approximately four percent through longitudinal stiffening."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The champion distance runner is not the one who produces the least lactate; it is the one whose mitochondria clear and combust lactate as primary fuel at near-sprint velocities.",
+      "cite": "Journal of Applied Physiology & Sports Science"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-performance running shoes striking road pavement with optimal forefoot kinetic chain alignment",
+      "caption": "Running economy: energy return and longitudinal bending stiffness optimizing musculoskeletal force transfer."
+    },
+    {
+      "type": "h2",
+      "text": "Fractional Utilization of VO2 Max and Glycogen Sparing Kinetics"
+    },
+    {
+      "type": "p",
+      "text": "A massive VO2 max of 80 ml/kg/min is merely a ticket of entry into world-class distance running. The deciding physiological factor is fractional utilization: the percentage of aerobic ceiling sustainable at marathon pace, which relies directly on mitochondrial volume density, capillarization, and intramuscular lipid oxidation."
+    },
+    {
+      "type": "video",
+      "title": "Exercise Physiology and High-Performance Endurance Biomechanics",
+      "caption": "Scientific exploration of neuromuscular fatigue, oxygen kinetics, and elite marathon pacing strategies.",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10"
+    },
+    {
+      "type": "h2",
+      "text": "Footwear Mechanical Tuning: Longitudinal Bending Stiffness and Energy Return"
+    },
+    {
+      "type": "p",
+      "text": "The synthesis of ultra-resilient polyether block amide (PEBA) foams and curved carbon-composite rocker plates reduces metatarsophalangeal joint flexion moments, saving precious kilocalories and revolutionizing human road racing records."
+    }
+  ]
+}
