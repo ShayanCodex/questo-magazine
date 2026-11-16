@@ -136,23 +136,39 @@ export function BookCover({
         ref={containerRef}
         className={cn('relative w-full h-full overflow-hidden bg-neutral-950 select-none', className)}
       >
-        {/* Skeleton Shimmer while downloading/decoding */}
+        {/* Active Spinning Loader while downloading/decoding so the user clearly sees the image is loading */}
         {!isLoaded && (
-          <div className="absolute inset-0 bg-neutral-900/90 animate-pulse z-0 flex flex-col items-center justify-center p-2 text-neutral-600">
+          <div className="absolute inset-0 bg-neutral-950/90 z-20 flex flex-col items-center justify-center p-2 select-none">
+            {/* Spinning Loader Ring */}
             <svg
-              className="w-5 h-5 opacity-40 mb-1"
+              className={cn(
+                'animate-spin text-neutral-300',
+                size === 'sm' ? 'w-5 h-5' : 'w-7 h-7'
+              )}
+              xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="1.5"
+              aria-label="Loading cover image"
             >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="3"
+              />
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                className="opacity-90"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
               />
             </svg>
-            <div className="w-10 h-1 rounded-full bg-neutral-800" />
+            {size !== 'sm' && (
+              <span className="text-[10px] font-sans font-medium text-neutral-400 mt-2 tracking-wider uppercase animate-pulse">
+                Loading Cover...
+              </span>
+            )}
           </div>
         )}
 
