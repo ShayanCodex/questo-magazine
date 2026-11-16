@@ -5,7 +5,187 @@
   <link href="https://questo-blog.netlify.app/" />
   <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://questo-blog.netlify.app/</id>
-  <updated>2026-11-15T23:14:32.487Z</updated>
+  <updated>2026-11-16T00:21:41.943Z</updated>
+  <entry>
+    <title>F1 Aerodynamics: Outwash Generation, Sidepod Undercuts &amp; Ground Effect Sealing</title>
+    <link href="https://questo-blog.netlify.app/articles/aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators" />
+    <id>https://questo-blog.netlify.app/articles/aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>High-resolution telemetry analysis of downforce distribution, vortex shedding along trailing edge floor skirts, and thermal brake cooling trade-offs in modern motorsport.</summary>
+    <author>
+      <name>Liam O’Connor</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Cognitive Ergonomics: Attentional Residue, Context Switching &amp; Spatial Focus</title>
+    <link href="https://questo-blog.netlify.app/articles/cognitive-ergonomics-and-the-architecture-of-deep-work" />
+    <id>https://questo-blog.netlify.app/articles/cognitive-ergonomics-and-the-architecture-of-deep-work</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A behavioral and architectural blueprint for deep intellectual output: eliminating synchronous notification interrupts, batch processing, and physical sanctuary design.</summary>
+    <author>
+      <name>Elena Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Heirloom Grain Genomics: Landrace Wheats, Gluten Network Rheology &amp; Soil Microbiomes</title>
+    <link href="https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology" />
+    <id>https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Analyzing the molecular genetics of Einkorn, Emmer, and Khorasan: dough elasticity metrics, enzymatic amylase activity, and regenerative dry-farming resilience.</summary>
+    <author>
+      <name>Sofia Rossi</name>
+    </author>
+  </entry>
+  <entry>
+    <title>3D Gaussian Splatting in Robotics: Sub-Millisecond Spatial Mapping &amp; SLAM Systems</title>
+    <link href="https://questo-blog.netlify.app/articles/neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics" />
+    <id>https://questo-blog.netlify.app/articles/neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Replacing discrete occupancy grids with differentiable 3D ellipsoids: real-time camera pose estimation, volumetric radiance rendering, and autonomous navigation in cluttered spaces.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Sleep Architecture: Acetylcholine, Noradrenaline &amp; Cortical Synaptic Homeostasis</title>
+    <link href="https://questo-blog.netlify.app/articles/neurochemical-oscillations-in-slow-wave-and-rem-sleep" />
+    <id>https://questo-blog.netlify.app/articles/neurochemical-oscillations-in-slow-wave-and-rem-sleep</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>The neurochemical choreography of restorative sleep: thalamocortical spindle generation, glymphatic metabolic clearance, and synaptic down-selection during deep slow-wave cycles.</summary>
+    <author>
+      <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Black Hole Information Paradox: Holographic Duality, Page Curves &amp; Quantum Firewalls</title>
+    <link href="https://questo-blog.netlify.app/articles/quantum-entanglement-and-the-black-hole-information-paradox" />
+    <id>https://questo-blog.netlify.app/articles/quantum-entanglement-and-the-black-hole-information-paradox</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Tracing the thirty-year debate between quantum unitarity and Hawking radiation: AdS/CFT correspondence, entanglement islands, and quantum error correction in curved spacetime.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Recursive STARKs &amp; Halo2: The Mathematics of Succinct Cryptographic Verification</title>
+    <link href="https://questo-blog.netlify.app/articles/recursive-starks-and-verifiable-computation-at-scale" />
+    <id>https://questo-blog.netlify.app/articles/recursive-starks-and-verifiable-computation-at-scale</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A mathematical journey through polynomial commitment schemes, Reed-Solomon proximity testing, fast Reed-Solomon IOP, and recursive proof composition.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Formal Memory Safety in Rust: Affine Types, Borrow Checkers &amp; RAII Semantics</title>
+    <link href="https://questo-blog.netlify.app/articles/rust-memory-safety-without-garbage-collection" />
+    <id>https://questo-blog.netlify.app/articles/rust-memory-safety-without-garbage-collection</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A technical monograph dissecting compile-time ownership invariants, aliasing rules, non-lexical lifetimes, and zero-cost abstraction guarantees in systems programming.</summary>
+    <author>
+      <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Advanced Semiconductor Packaging: 2.5D Interposers, HBM4 &amp; CoWoS Architectures</title>
+    <link href="https://questo-blog.netlify.app/articles/semiconductor-packaging-and-advanced-chiplet-interconnects" />
+    <id>https://questo-blog.netlify.app/articles/semiconductor-packaging-and-advanced-chiplet-interconnects</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>An engineering deep-dive into wafer-level packaging, through-silicon vias, high-bandwidth memory thermal dissipation, and the geopolitical choke points of advanced foundry capacity.</summary>
+    <author>
+      <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Tectonic Permanence of Pozzolanic Concrete: Vitruvian Durability in Modern Civil Engineering</title>
+    <link href="https://questo-blog.netlify.app/articles/tectonic-permanence-and-the-weathering-of-pozzolanic-concrete" />
+    <id>https://questo-blog.netlify.app/articles/tectonic-permanence-and-the-weathering-of-pozzolanic-concrete</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Investigating volcanic ash hydration, self-healing lime clasts in marine environments, and how ancient Roman concrete chemistry informs 21st-century low-carbon infrastructure.</summary>
+    <author>
+      <name>Julian Mercer</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Epigenetic Clocks &amp; DNA Methylation: Measuring Biological Age Beyond Chronology</title>
+    <link href="https://questo-blog.netlify.app/articles/telomere-biology-and-dna-methylation-clocks-in-human-aging" />
+    <id>https://questo-blog.netlify.app/articles/telomere-biology-and-dna-methylation-clocks-in-human-aging</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A clinical review of Horvath methylation algorithms, cell-free DNA biomarkers, telomere attrition rates, and evidence-based interventions for healthspan preservation.</summary>
+    <author>
+      <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Biochemistry of Traditional Aceto Balsamico: Microbial Succession &amp; Wood Barrel Aging</title>
+    <link href="https://questo-blog.netlify.app/articles/the-biochemistry-of-ancient-vinegars-and-acetification" />
+    <id>https://questo-blog.netlify.app/articles/the-biochemistry-of-ancient-vinegars-and-acetification</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A microbiological investigation into Gluconobacter oxidation, poly-wood barrel solera maturation, evaporative concentration, and complex esterification over decades.</summary>
+    <author>
+      <name>Sofia Rossi</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Permafrost Engineering on the Roof of the World: The Qinghai-Tibet Railway</title>
+    <link href="https://questo-blog.netlify.app/articles/the-engineering-of-the-qinghai-tibet-permafrost-railway" />
+    <id>https://questo-blog.netlify.app/articles/the-engineering-of-the-qinghai-tibet-permafrost-railway</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A technical study of thermosyphon cooling pipes, crushed-rock embankments, and high-altitude passenger pressurization across 5,000 meters of alpine plateau.</summary>
+    <author>
+      <name>Mateo Silva</name>
+    </author>
+  </entry>
+  <entry>
+    <title>WebAssembly Beyond the Browser: WASI Preview 2, Component Models &amp; Edge Micro-VMs</title>
+    <link href="https://questo-blog.netlify.app/articles/the-evolution-of-webassembly-and-wasi-preview-2" />
+    <id>https://questo-blog.netlify.app/articles/the-evolution-of-webassembly-and-wasi-preview-2</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Evaluating bytecode compilation on serverless edge runtimes, component model interface types, sub-millisecond cold starts, and polyglot container isolation.</summary>
+    <author>
+      <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Mechanics of Founder Equity: Cap Tables, Liquidation Preferences &amp; Dilution Cascades</title>
+    <link href="https://questo-blog.netlify.app/articles/the-mechanics-of-founder-equity-and-dilution-cascades" />
+    <id>https://questo-blog.netlify.app/articles/the-mechanics-of-founder-equity-and-dilution-cascades</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A rigorous mathematical examination of convertible instruments, option pool shuffles, liquidation watermarks, and down-round antidilution mechanics.</summary>
+    <author>
+      <name>Elena Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Geopolitics of Critical Raw Materials: Rare Earths, Refining Monopolies &amp; Industrial Policy</title>
+    <link href="https://questo-blog.netlify.app/articles/trans-atlantic-critical-raw-materials-and-clean-energy-supply" />
+    <id>https://questo-blog.netlify.app/articles/trans-atlantic-critical-raw-materials-and-clean-energy-supply</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>An investigative analysis of sovereign refining quotas, bilateral mineral security pacts, and the industrial decoupling of neodymium, dysprosium, and battery-grade lithium.</summary>
+    <author>
+      <name>Claire Dupont</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Treasury Basis Trade: Hedge Fund Leverage, Cash-Futures Discrepancies &amp; Repo Fragility</title>
+    <link href="https://questo-blog.netlify.app/articles/treasury-basis-trade-and-shadow-banking-leverage" />
+    <id>https://questo-blog.netlify.app/articles/treasury-basis-trade-and-shadow-banking-leverage</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Deconstructing the multi-trillion-dollar cash-futures arbitrage trade: collateral transformation, central counterparty clearing limits, and systemic liquidity drawdowns.</summary>
+    <author>
+      <name>Claire Dupont</name>
+    </author>
+  </entry>
+  <entry>
+    <title>VO2 Max Kinetics: Capillary Density, Cardiac Output &amp; Lactate Clearance Dynamics</title>
+    <link href="https://questo-blog.netlify.app/articles/vo2-max-kinetics-and-mitochondrial-density-in-elite-endurance" />
+    <id>https://questo-blog.netlify.app/articles/vo2-max-kinetics-and-mitochondrial-density-in-elite-endurance</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Investigating the physiological governors of human endurance: stroke volume adaptations, peripheral oxygen extraction ratios, and polarized training distribution.</summary>
+    <author>
+      <name>Liam O’Connor</name>
+    </author>
+  </entry>
   <entry>
     <title>Acoustic Diffusors &amp; Schroeder Sequences in Architecture</title>
     <link href="https://questo-blog.netlify.app/articles/acoustic-diffusors-and-schroeder-number-sequences-in-architecture" />

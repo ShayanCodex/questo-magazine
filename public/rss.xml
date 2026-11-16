@@ -5,8 +5,170 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 23:14:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:21:41 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[F1 Aerodynamics: Outwash Generation, Sidepod Undercuts & Ground Effect Sealing]]></title>
+      <link>https://questo-blog.netlify.app/articles/aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[High-resolution telemetry analysis of downforce distribution, vortex shedding along trailing edge floor skirts, and thermal brake cooling trade-offs in modern motorsport.]]></description>
+      <author><![CDATA[Liam O’Connor]]></author>
+      <category>sports</category>
+    </item>
+    <item>
+      <title><![CDATA[Cognitive Ergonomics: Attentional Residue, Context Switching & Spatial Focus]]></title>
+      <link>https://questo-blog.netlify.app/articles/cognitive-ergonomics-and-the-architecture-of-deep-work</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cognitive-ergonomics-and-the-architecture-of-deep-work</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A behavioral and architectural blueprint for deep intellectual output: eliminating synchronous notification interrupts, batch processing, and physical sanctuary design.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>lifestyle</category>
+    </item>
+    <item>
+      <title><![CDATA[Heirloom Grain Genomics: Landrace Wheats, Gluten Network Rheology & Soil Microbiomes]]></title>
+      <link>https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Analyzing the molecular genetics of Einkorn, Emmer, and Khorasan: dough elasticity metrics, enzymatic amylase activity, and regenerative dry-farming resilience.]]></description>
+      <author><![CDATA[Sofia Rossi]]></author>
+      <category>food</category>
+    </item>
+    <item>
+      <title><![CDATA[3D Gaussian Splatting in Robotics: Sub-Millisecond Spatial Mapping & SLAM Systems]]></title>
+      <link>https://questo-blog.netlify.app/articles/neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Replacing discrete occupancy grids with differentiable 3D ellipsoids: real-time camera pose estimation, volumetric radiance rendering, and autonomous navigation in cluttered spaces.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Sleep Architecture: Acetylcholine, Noradrenaline & Cortical Synaptic Homeostasis]]></title>
+      <link>https://questo-blog.netlify.app/articles/neurochemical-oscillations-in-slow-wave-and-rem-sleep</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/neurochemical-oscillations-in-slow-wave-and-rem-sleep</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[The neurochemical choreography of restorative sleep: thalamocortical spindle generation, glymphatic metabolic clearance, and synaptic down-selection during deep slow-wave cycles.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[The Black Hole Information Paradox: Holographic Duality, Page Curves & Quantum Firewalls]]></title>
+      <link>https://questo-blog.netlify.app/articles/quantum-entanglement-and-the-black-hole-information-paradox</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/quantum-entanglement-and-the-black-hole-information-paradox</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Tracing the thirty-year debate between quantum unitarity and Hawking radiation: AdS/CFT correspondence, entanglement islands, and quantum error correction in curved spacetime.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>science</category>
+    </item>
+    <item>
+      <title><![CDATA[Recursive STARKs & Halo2: The Mathematics of Succinct Cryptographic Verification]]></title>
+      <link>https://questo-blog.netlify.app/articles/recursive-starks-and-verifiable-computation-at-scale</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/recursive-starks-and-verifiable-computation-at-scale</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A mathematical journey through polynomial commitment schemes, Reed-Solomon proximity testing, fast Reed-Solomon IOP, and recursive proof composition.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>crypto</category>
+    </item>
+    <item>
+      <title><![CDATA[Formal Memory Safety in Rust: Affine Types, Borrow Checkers & RAII Semantics]]></title>
+      <link>https://questo-blog.netlify.app/articles/rust-memory-safety-without-garbage-collection</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/rust-memory-safety-without-garbage-collection</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical monograph dissecting compile-time ownership invariants, aliasing rules, non-lexical lifetimes, and zero-cost abstraction guarantees in systems programming.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Advanced Semiconductor Packaging: 2.5D Interposers, HBM4 & CoWoS Architectures]]></title>
+      <link>https://questo-blog.netlify.app/articles/semiconductor-packaging-and-advanced-chiplet-interconnects</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/semiconductor-packaging-and-advanced-chiplet-interconnects</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An engineering deep-dive into wafer-level packaging, through-silicon vias, high-bandwidth memory thermal dissipation, and the geopolitical choke points of advanced foundry capacity.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>business</category>
+    </item>
+    <item>
+      <title><![CDATA[The Tectonic Permanence of Pozzolanic Concrete: Vitruvian Durability in Modern Civil Engineering]]></title>
+      <link>https://questo-blog.netlify.app/articles/tectonic-permanence-and-the-weathering-of-pozzolanic-concrete</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/tectonic-permanence-and-the-weathering-of-pozzolanic-concrete</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Investigating volcanic ash hydration, self-healing lime clasts in marine environments, and how ancient Roman concrete chemistry informs 21st-century low-carbon infrastructure.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[Epigenetic Clocks & DNA Methylation: Measuring Biological Age Beyond Chronology]]></title>
+      <link>https://questo-blog.netlify.app/articles/telomere-biology-and-dna-methylation-clocks-in-human-aging</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/telomere-biology-and-dna-methylation-clocks-in-human-aging</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A clinical review of Horvath methylation algorithms, cell-free DNA biomarkers, telomere attrition rates, and evidence-based interventions for healthspan preservation.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[The Biochemistry of Traditional Aceto Balsamico: Microbial Succession & Wood Barrel Aging]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-biochemistry-of-ancient-vinegars-and-acetification</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-biochemistry-of-ancient-vinegars-and-acetification</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A microbiological investigation into Gluconobacter oxidation, poly-wood barrel solera maturation, evaporative concentration, and complex esterification over decades.]]></description>
+      <author><![CDATA[Sofia Rossi]]></author>
+      <category>food</category>
+    </item>
+    <item>
+      <title><![CDATA[Permafrost Engineering on the Roof of the World: The Qinghai-Tibet Railway]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-engineering-of-the-qinghai-tibet-permafrost-railway</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-engineering-of-the-qinghai-tibet-permafrost-railway</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical study of thermosyphon cooling pipes, crushed-rock embankments, and high-altitude passenger pressurization across 5,000 meters of alpine plateau.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>travel</category>
+    </item>
+    <item>
+      <title><![CDATA[WebAssembly Beyond the Browser: WASI Preview 2, Component Models & Edge Micro-VMs]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-evolution-of-webassembly-and-wasi-preview-2</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-evolution-of-webassembly-and-wasi-preview-2</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Evaluating bytecode compilation on serverless edge runtimes, component model interface types, sub-millisecond cold starts, and polyglot container isolation.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[The Mechanics of Founder Equity: Cap Tables, Liquidation Preferences & Dilution Cascades]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-mechanics-of-founder-equity-and-dilution-cascades</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-mechanics-of-founder-equity-and-dilution-cascades</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A rigorous mathematical examination of convertible instruments, option pool shuffles, liquidation watermarks, and down-round antidilution mechanics.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>business</category>
+    </item>
+    <item>
+      <title><![CDATA[The Geopolitics of Critical Raw Materials: Rare Earths, Refining Monopolies & Industrial Policy]]></title>
+      <link>https://questo-blog.netlify.app/articles/trans-atlantic-critical-raw-materials-and-clean-energy-supply</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/trans-atlantic-critical-raw-materials-and-clean-energy-supply</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An investigative analysis of sovereign refining quotas, bilateral mineral security pacts, and the industrial decoupling of neodymium, dysprosium, and battery-grade lithium.]]></description>
+      <author><![CDATA[Claire Dupont]]></author>
+      <category>news</category>
+    </item>
+    <item>
+      <title><![CDATA[The Treasury Basis Trade: Hedge Fund Leverage, Cash-Futures Discrepancies & Repo Fragility]]></title>
+      <link>https://questo-blog.netlify.app/articles/treasury-basis-trade-and-shadow-banking-leverage</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/treasury-basis-trade-and-shadow-banking-leverage</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Deconstructing the multi-trillion-dollar cash-futures arbitrage trade: collateral transformation, central counterparty clearing limits, and systemic liquidity drawdowns.]]></description>
+      <author><![CDATA[Claire Dupont]]></author>
+      <category>finance</category>
+    </item>
+    <item>
+      <title><![CDATA[VO2 Max Kinetics: Capillary Density, Cardiac Output & Lactate Clearance Dynamics]]></title>
+      <link>https://questo-blog.netlify.app/articles/vo2-max-kinetics-and-mitochondrial-density-in-elite-endurance</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/vo2-max-kinetics-and-mitochondrial-density-in-elite-endurance</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Investigating the physiological governors of human endurance: stroke volume adaptations, peripheral oxygen extraction ratios, and polarized training distribution.]]></description>
+      <author><![CDATA[Liam O’Connor]]></author>
+      <category>sports</category>
+    </item>
     <item>
       <title><![CDATA[Acoustic Diffusors & Schroeder Sequences in Architecture]]></title>
       <link>https://questo-blog.netlify.app/articles/acoustic-diffusors-and-schroeder-number-sequences-in-architecture</link>
