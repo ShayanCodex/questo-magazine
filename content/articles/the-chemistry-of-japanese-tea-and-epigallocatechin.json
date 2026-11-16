@@ -1,0 +1,75 @@
+{
+  "slug": "the-chemistry-of-japanese-tea-and-epigallocatechin",
+  "title": "The Chemistry of Japanese Tea",
+  "excerpt": "A botanical food science study of Camellia sinensis: shade-cultivation theanine synthesis, epigallocatechin gallate (EGCG) polyphenols, and the physics of stone-ground matcha.",
+  "date": "2026-11-17",
+  "author": "Sofia Rossi",
+  "category": "food",
+  "subcategory": "food-chemistry",
+  "tags": [
+    "tea-science",
+    "food-chemistry",
+    "antioxidants",
+    "matcha",
+    "botany",
+    "culinary-science"
+  ],
+  "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Vibrant green stone-ground matcha tea in ceramic chawan bowl with traditional bamboo whisk on wooden tea table",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Shading Technique and Theanine Bioaccumulation"
+    },
+    {
+      "type": "p",
+      "text": "Unlike black or oolong teas which undergo deliberate enzymatic oxidation (fermentation), premium Japanese green teas—such as Gyokuro and ceremonial-grade Matcha—are defined by the complete prevention of oxidation through rapid high-temperature steam fixation (chaho). Even more profound is the agricultural practice of tana shading: covering the tea fields with black woven tarps for three to four weeks before spring harvest."
+    },
+    {
+      "type": "h2",
+      "text": "Biochemical and Polyphenolic Cornerstones"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Shading-Induced Theanine Preservation: Depriving leaves of sunlight blocks the photosynthetic enzyme-catalyzed conversion of sweet, calming L-theanine amino acids into astringent catechins.",
+        "Epigallocatechin Gallate (EGCG) Bioactivity: The most abundant catechin in green tea, possessing an eight-hydroxyl ring structure that makes it one of the most potent natural free-radical scavengers.",
+        "L-Theanine and Caffeine Synergistic Neurochemistry: L-theanine crosses the blood-brain barrier to promote alpha brain wave oscillations, smoothing out caffeine vasoconstriction and preventing jitters.",
+        "Granite Stone-Milling Physics: Grinding tencha flakes between grooved granite stones at low rotational speeds (sub-60 rpm) to avoid thermal friction and achieve sub-10-micron particle fineness."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Matcha is unique among beverages: because you consume the entire stone-ground leaf suspended in water, you ingest the full cellular matrix of polyphenols and amino acids.",
+      "cite": "Questo Botanical Biochemistry & Japanese Gastronomy Review"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Steaming cup of green tea showing bright emerald jade liquor in an artisan ceramic vessel",
+      "caption": "Steam fixation and chlorophyll preservation: Rapid steaming inactivates polyphenol oxidases, preserving natural emerald green pigmentation."
+    },
+    {
+      "type": "h2",
+      "text": "Water Temperature and Extraction Kinetics"
+    },
+    {
+      "type": "p",
+      "text": "Extracting Japanese green tea requires strict water thermodynamics. Brewing at 100°C aggressively extracts bitter tannins and caffeine within seconds, overwhelming delicate sweet flavors. In contrast, steeping at 60°C to 70°C preferentially dissolves L-theanine and umami amino acids, producing a rich, brothy, savory cup."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/nk0pnq0uPeg",
+      "title": "Food Science: Introduction to EGCG and Japanese Green Tea Chemistry",
+      "caption": "Scientific exploration into Camellia sinensis polyphenols, catechin chemical structures, and the health benefits of matcha."
+    },
+    {
+      "type": "h2",
+      "text": "Antioxidant and Cellular Autophagy Dividends"
+    },
+    {
+      "type": "p",
+      "text": "Extensive cellular assays show that EGCG modulates key longevity pathways, including AMP-activated protein kinase (AMPK) and nuclear factor erythroid 2-related factor 2 (Nrf2), reinforcing the position of green tea as a premier longevity superfood."
+    }
+  ]
+}
