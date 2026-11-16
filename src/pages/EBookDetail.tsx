@@ -3,7 +3,6 @@ import { useParams, Link, useLocation } from 'react-router-dom';
 import {
   BookOpenIcon,
   ArrowDownTrayIcon,
-  ArrowTopRightOnSquareIcon,
   ShieldCheckIcon,
   ClockIcon,
   CalendarIcon,
@@ -202,15 +201,10 @@ export function EBookDetail() {
                 )}
               </button>
 
-              <a
-                href={ebook.archiveSourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg border border-editorial-border hover:border-editorial-text text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover transition-colors"
-              >
-                <span>Internet Archive Preservation Record</span>
-                <ArrowTopRightOnSquareIcon className="h-3 w-3" />
-              </a>
+              <div className="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg border border-emerald-500/30 bg-emerald-500/10 text-xs font-sans font-medium text-emerald-400">
+                <ShieldCheckIcon className="h-3.5 w-3.5" />
+                <span>Certified Public Domain Edition</span>
+              </div>
             </div>
           </div>
 
@@ -274,7 +268,7 @@ export function EBookDetail() {
             <span>Public Domain Heritage & Compliance Guarantee</span>
           </div>
           <p className="font-serif text-xs sm:text-sm text-editorial-muted leading-relaxed">
-            This digital edition of <strong>{ebook.title}</strong> is certified in the worldwide public domain (originally published before 1928, or released under Public Domain Mark 1.0). Questo Magazine hosts and mirrors zero paywalled or copyrighted commercial property; all digital scans and document images are preserved and served directly via the nonprofit Internet Archive.
+            This digital edition of <strong>{ebook.title}</strong> is certified in the worldwide public domain (originally published before 1928, or released under Public Domain Mark 1.0). Questo Magazine hosts and mirrors zero paywalled or copyrighted commercial property; all digital editions are preserved and delivered directly via the Questo Digital Heritage Vault on our high-speed global CDN.
           </p>
         </section>
 

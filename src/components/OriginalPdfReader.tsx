@@ -5,7 +5,6 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   ArrowDownTrayIcon,
-  ArrowTopRightOnSquareIcon,
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,
   BookOpenIcon,
@@ -13,7 +12,7 @@ import {
   ShieldCheckIcon,
   CheckIcon,
   LinkIcon,
-  SparklesIcon,
+  Squares2X2Icon,
 } from '@heroicons/react/24/outline';
 import type { EBook } from '../lib/types';
 import {
@@ -45,7 +44,9 @@ export function OriginalPdfReader({
   const [currentPage, setCurrentPage] = useState(1);
   const [zoomLevel, setZoomLevel] = useState(100);
   const [copiedLink, setCopiedLink] = useState(false);
-  const [isTheaterOpen, setIsTheaterOpen] = useState(false);
+  const [viewLayout, setViewLayout] = useState<'single' | 'spread'>('single');
+  const [isFlipping, setIsFlipping] = useState(false);
+  const [flipDirection, setFlipDirection] = useState<'next' | 'prev' | null>(null);
   const [pageImageError, setPageImageError] = useState(false);
   const [isPageLoading, setIsPageLoading] = useState(false);
 
@@ -67,6 +68,16 @@ export function OriginalPdfReader({
   const isLocal = useMemo(() => isLocalCorePdf(ebook.slug), [ebook.slug]);
   const [pdfBlobUrl, setPdfBlobUrl] = useState<string | null>(null);
   const [isPdfBlobLoading, setIsPdfBlobLoading] = useState(false);
+
+  // 2-Page Spread page calculation (even left, odd right)
+  const spreadLeftPage = useMemo(() => {
+    return currentPage % 2 === 0 ? currentPage : Math.max(1, currentPage - 1);
+  }, [currentPage]);
+
+  const spreadRightPage = useMemo(() => {
+    const candidate = spreadLeftPage + 1;
+    return candidate <= totalPages ? candidate : null;
+  }, [spreadLeftPage, totalPages]);
 
   // Fetch verified Fast Vault PDF into an in-memory blob to bypass attachment headers for 0ms inline rendering
   useEffect(() => {
@@ -120,105 +131,236 @@ export function OriginalPdfReader({
   // Double-buffering state: The currently displayed page stays visible on screen until the new page is ready
   const [displayedPage, setDisplayedPage] = useState(currentPage);
   const [displayedUrl, setDisplayedUrl] = useState(() => getPageUrl(currentPage));
+  const [displayedLeftPage, setDisplayedLeftPage] = useState(spreadLeftPage);
+  const [displayedLeftUrl, setDisplayedLeftUrl] = useState(() => getPageUrl(spreadLeftPage));
+  const [displayedRightPage, setDisplayedRightPage] = useState<number | null>(spreadRightPage);
+  const [displayedRightUrl, setDisplayedRightUrl] = useState<string | null>(() =>
+    spreadRightPage ? getPageUrl(spreadRightPage) : null
+  );
   const [targetLoading, setTargetLoading] = useState(false);
 
-  const archiveTheaterUrl = useMemo(() => {
-    return `https://archive.org/details/${safeIdentifier}?view=theater&ui=embed&wrapper=false`;
-  }, [safeIdentifier]);
+  // Tactile 3D page curl animation trigger
+  const triggerFlipAnimation = useCallback((direction: 'next' | 'prev') => {
+    setIsFlipping(true);
+    setFlipDirection(direction);
+    setTimeout(() => {
+      setIsFlipping(false);
+      setFlipDirection(null);
+    }, 280);
+  }, []);
 
   // Aggressive Ahead-Of-Time (AOT) Predictive Preloader & Double-Buffering Engine
   useEffect(() => {
     if (activeMode !== 'facsimile') return;
 
-    const targetUrl = getPageUrl(currentPage, zoomLevel > 125);
+    if (viewLayout === 'spread') {
+      const leftTargetUrl = getPageUrl(spreadLeftPage, zoomLevel > 125);
+      const rightTargetUrl = spreadRightPage ? getPageUrl(spreadRightPage, zoomLevel > 125) : null;
 
-    // If target page is already in our loaded cache, swap immediately!
-    if (loadedPagesRef.current.has(currentPage)) {
-      setDisplayedPage(currentPage);
-      setDisplayedUrl(targetUrl);
-      setIsPageLoading(false);
-      setTargetLoading(false);
-      setPageImageError(false);
+      // Handle left page
+      if (loadedPagesRef.current.has(spreadLeftPage)) {
+        setDisplayedLeftPage(spreadLeftPage);
+        setDisplayedLeftUrl(leftTargetUrl);
+      } else {
+        const imgL = new Image();
+        imgL.src = leftTargetUrl;
+        imgL.onload = () => {
+          loadedPagesRef.current.add(spreadLeftPage);
+          setDisplayedLeftPage(spreadLeftPage);
+          setDisplayedLeftUrl(leftTargetUrl);
+        };
+        imgL.onerror = () => {
+          const fallbackUrl = getPageUrl(spreadLeftPage, true);
+          const fbImg = new Image();
+          fbImg.src = fallbackUrl;
+          fbImg.onload = () => {
+            loadedPagesRef.current.add(spreadLeftPage);
+            setDisplayedLeftPage(spreadLeftPage);
+            setDisplayedLeftUrl(fallbackUrl);
+          };
+        };
+      }
+
+      // Handle right page
+      if (spreadRightPage) {
+        if (loadedPagesRef.current.has(spreadRightPage)) {
+          setDisplayedRightPage(spreadRightPage);
+          setDisplayedRightUrl(rightTargetUrl);
+        } else {
+          const imgR = new Image();
+          imgR.src = rightTargetUrl!;
+          imgR.onload = () => {
+            loadedPagesRef.current.add(spreadRightPage);
+            setDisplayedRightPage(spreadRightPage);
+            setDisplayedRightUrl(rightTargetUrl);
+          };
+          imgR.onerror = () => {
+            const fallbackUrl = getPageUrl(spreadRightPage, true);
+            const fbImg = new Image();
+            fbImg.src = fallbackUrl;
+            fbImg.onload = () => {
+              loadedPagesRef.current.add(spreadRightPage);
+              setDisplayedRightPage(spreadRightPage);
+              setDisplayedRightUrl(fallbackUrl);
+            };
+          };
+        }
+      } else {
+        setDisplayedRightPage(null);
+        setDisplayedRightUrl(null);
+      }
+
+      // Prefetch upcoming and previous spreads
+      const spreadPagesToPrefetch = [
+        spreadLeftPage + 2,
+        spreadLeftPage + 3,
+        spreadLeftPage + 4,
+        spreadLeftPage - 2,
+        spreadLeftPage - 1,
+      ];
+      spreadPagesToPrefetch.forEach((pg) => {
+        if (
+          pg >= 1 &&
+          pg <= totalPages &&
+          !loadedPagesRef.current.has(pg) &&
+          !preloadingRef.current.has(pg)
+        ) {
+          preloadingRef.current.add(pg);
+          const pImg = new Image();
+          pImg.src = getPageUrl(pg);
+          pImg.onload = () => {
+            loadedPagesRef.current.add(pg);
+            preloadingRef.current.delete(pg);
+          };
+          pImg.onerror = () => preloadingRef.current.delete(pg);
+        }
+      });
     } else {
-      // Keep displayedPage and displayedUrl VISIBLE! Never show black void!
-      setIsPageLoading(true);
-      setTargetLoading(true);
-      setPageImageError(false);
+      // Single Page mode
+      const targetUrl = getPageUrl(currentPage, zoomLevel > 125);
 
-      // Load new page off-screen
-      const img = new Image();
-      img.src = targetUrl;
-      img.onload = () => {
-        loadedPagesRef.current.add(currentPage);
+      if (loadedPagesRef.current.has(currentPage)) {
         setDisplayedPage(currentPage);
         setDisplayedUrl(targetUrl);
         setIsPageLoading(false);
         setTargetLoading(false);
-      };
-      img.onerror = () => {
-        // Fallback to raw .jpg if _w800 is not generated by archive.org
-        const fallbackRawUrl = getPageUrl(currentPage, true);
-        const fallbackImg = new Image();
-        fallbackImg.src = fallbackRawUrl;
-        fallbackImg.onload = () => {
+        setPageImageError(false);
+      } else {
+        setIsPageLoading(true);
+        setTargetLoading(true);
+        setPageImageError(false);
+
+        const img = new Image();
+        img.src = targetUrl;
+        img.onload = () => {
           loadedPagesRef.current.add(currentPage);
           setDisplayedPage(currentPage);
-          setDisplayedUrl(fallbackRawUrl);
+          setDisplayedUrl(targetUrl);
           setIsPageLoading(false);
           setTargetLoading(false);
         };
-        fallbackImg.onerror = () => {
-          setIsPageLoading(false);
-          setTargetLoading(false);
-          setPageImageError(true);
-        };
-      };
-    }
-
-    // Predictive window: Preload the next 4 pages ahead + 1 page behind
-    const pagesToPrefetch = [
-      currentPage + 1,
-      currentPage + 2,
-      currentPage + 3,
-      currentPage + 4,
-      currentPage - 1,
-    ];
-
-    pagesToPrefetch.forEach((pg) => {
-      if (
-        pg >= 1 &&
-        pg <= totalPages &&
-        !loadedPagesRef.current.has(pg) &&
-        !preloadingRef.current.has(pg)
-      ) {
-        preloadingRef.current.add(pg);
-        const pImg = new Image();
-        pImg.src = getPageUrl(pg);
-        pImg.onload = () => {
-          loadedPagesRef.current.add(pg);
-          preloadingRef.current.delete(pg);
-        };
-        pImg.onerror = () => {
-          preloadingRef.current.delete(pg);
+        img.onerror = () => {
+          const fallbackRawUrl = getPageUrl(currentPage, true);
+          const fallbackImg = new Image();
+          fallbackImg.src = fallbackRawUrl;
+          fallbackImg.onload = () => {
+            loadedPagesRef.current.add(currentPage);
+            setDisplayedPage(currentPage);
+            setDisplayedUrl(fallbackRawUrl);
+            setIsPageLoading(false);
+            setTargetLoading(false);
+          };
+          fallbackImg.onerror = () => {
+            setIsPageLoading(false);
+            setTargetLoading(false);
+            setPageImageError(true);
+          };
         };
       }
-    });
-  }, [currentPage, safeIdentifier, totalPages, getPageUrl, activeMode, zoomLevel]);
+
+      // Prefetch next 4 pages ahead + 1 page behind
+      const pagesToPrefetch = [
+        currentPage + 1,
+        currentPage + 2,
+        currentPage + 3,
+        currentPage + 4,
+        currentPage - 1,
+      ];
+
+      pagesToPrefetch.forEach((pg) => {
+        if (
+          pg >= 1 &&
+          pg <= totalPages &&
+          !loadedPagesRef.current.has(pg) &&
+          !preloadingRef.current.has(pg)
+        ) {
+          preloadingRef.current.add(pg);
+          const pImg = new Image();
+          pImg.src = getPageUrl(pg);
+          pImg.onload = () => {
+            loadedPagesRef.current.add(pg);
+            preloadingRef.current.delete(pg);
+          };
+          pImg.onerror = () => {
+            preloadingRef.current.delete(pg);
+          };
+        }
+      });
+    }
+  }, [
+    currentPage,
+    spreadLeftPage,
+    spreadRightPage,
+    viewLayout,
+    safeIdentifier,
+    totalPages,
+    getPageUrl,
+    activeMode,
+    zoomLevel,
+  ]);
+
+  // Page Turn Actions with 3D Page Flip Animation
+  const handlePrevPage = useCallback(() => {
+    if (viewLayout === 'spread') {
+      if (spreadLeftPage > 1) {
+        triggerFlipAnimation('prev');
+        setCurrentPage((prev) => Math.max(1, prev - 2));
+      }
+    } else {
+      if (currentPage > 1) {
+        triggerFlipAnimation('prev');
+        setCurrentPage((prev) => Math.max(1, prev - 1));
+      }
+    }
+  }, [viewLayout, spreadLeftPage, currentPage, triggerFlipAnimation]);
+
+  const handleNextPage = useCallback(() => {
+    if (viewLayout === 'spread') {
+      if (spreadLeftPage + 2 <= totalPages) {
+        triggerFlipAnimation('next');
+        setCurrentPage((prev) => Math.min(totalPages, prev + 2));
+      }
+    } else {
+      if (currentPage < totalPages) {
+        triggerFlipAnimation('next');
+        setCurrentPage((prev) => Math.min(totalPages, prev + 1));
+      }
+    }
+  }, [viewLayout, spreadLeftPage, totalPages, currentPage, triggerFlipAnimation]);
 
   // Keyboard navigation for page turns
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Don't trigger if user is typing in an input
       if (['INPUT', 'TEXTAREA', 'SELECT'].includes((e.target as HTMLElement)?.tagName)) {
         return;
       }
       if (activeMode === 'facsimile') {
         if (e.key === 'ArrowRight' || e.key === 'PageDown') {
           e.preventDefault();
-          setCurrentPage((p) => Math.min(totalPages, p + 1));
+          handleNextPage();
         } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
           e.preventDefault();
-          setCurrentPage((p) => Math.max(1, p - 1));
+          handlePrevPage();
         } else if (e.key === '+' || e.key === '=') {
           e.preventDefault();
           setZoomLevel((z) => Math.min(200, z + 25));
@@ -231,7 +373,7 @@ export function OriginalPdfReader({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeMode, totalPages]);
+  }, [activeMode, handleNextPage, handlePrevPage]);
 
   const handleZoomIn = () => {
     setZoomLevel((prev) => Math.min(200, prev + 25));
@@ -243,14 +385,6 @@ export function OriginalPdfReader({
 
   const handleZoomReset = () => {
     setZoomLevel(100);
-  };
-
-  const handlePrevPage = () => {
-    setCurrentPage((prev) => Math.max(1, prev - 1));
-  };
-
-  const handleNextPage = () => {
-    setCurrentPage((prev) => Math.min(totalPages, prev + 1));
   };
 
   const handlePageInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -304,7 +438,7 @@ export function OriginalPdfReader({
               <span>•</span>
               <span className="text-emerald-400 font-medium inline-flex items-center gap-1">
                 <ShieldCheckIcon className="h-3 w-3" />
-                <span>Original Public Domain PDF</span>
+                <span>Original Public Domain Edition</span>
               </span>
             </div>
           </div>
@@ -390,7 +524,7 @@ export function OriginalPdfReader({
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-sans font-semibold transition-colors shadow-sm"
-            title={isLocal ? "Download Full Original PDF (Fast CDN)" : "Download Full Original PDF Document"}
+            title={isLocal ? 'Download Full Original PDF (Fast CDN)' : 'Download Full Original PDF Document'}
           >
             <ArrowDownTrayIcon className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">{isLocal ? 'Download Fast PDF' : 'Download PDF'}</span>
@@ -441,10 +575,10 @@ export function OriginalPdfReader({
               <button
                 type="button"
                 onClick={handlePrevPage}
-                disabled={currentPage <= 1}
+                disabled={viewLayout === 'spread' ? spreadLeftPage <= 1 : currentPage <= 1}
                 className={cn(
                   'inline-flex items-center gap-1 px-2.5 py-1 rounded-md border font-medium transition-colors cursor-pointer',
-                  currentPage <= 1
+                  (viewLayout === 'spread' ? spreadLeftPage <= 1 : currentPage <= 1)
                     ? 'border-neutral-800 text-neutral-600 cursor-not-allowed'
                     : 'border-neutral-700 text-neutral-200 hover:text-white hover:bg-neutral-800 hover:border-neutral-500'
                 )}
@@ -472,10 +606,10 @@ export function OriginalPdfReader({
               <button
                 type="button"
                 onClick={handleNextPage}
-                disabled={currentPage >= totalPages}
+                disabled={viewLayout === 'spread' ? spreadLeftPage + 2 > totalPages : currentPage >= totalPages}
                 className={cn(
                   'inline-flex items-center gap-1 px-2.5 py-1 rounded-md border font-medium transition-colors cursor-pointer',
-                  currentPage >= totalPages
+                  (viewLayout === 'spread' ? spreadLeftPage + 2 > totalPages : currentPage >= totalPages)
                     ? 'border-neutral-800 text-neutral-600 cursor-not-allowed'
                     : 'border-neutral-700 text-neutral-200 hover:text-white hover:bg-neutral-800 hover:border-neutral-500'
                 )}
@@ -535,20 +669,20 @@ export function OriginalPdfReader({
                 </button>
               </div>
 
-              {/* Theater View Toggle */}
+              {/* Native 2-Page Spread vs Single Page Focus Toggle */}
               <button
                 type="button"
-                onClick={() => setIsTheaterOpen((prev) => !prev)}
+                onClick={() => setViewLayout((prev) => (prev === 'single' ? 'spread' : 'single'))}
                 className={cn(
                   'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border transition-colors cursor-pointer',
-                  isTheaterOpen
-                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-300'
+                  viewLayout === 'spread'
+                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-300 font-semibold'
                     : 'border-neutral-700 text-neutral-300 hover:text-white hover:bg-neutral-800'
                 )}
-                title="Toggle Archive 2-Page Spread Interactive Theater"
+                title={viewLayout === 'spread' ? 'Switch to Single Page Focus' : 'Switch to 2-Page Book Spread'}
               >
-                <SparklesIcon className="h-3.5 w-3.5 text-emerald-400" />
-                <span>{isTheaterOpen ? 'Show Facsimile Page' : 'Interactive Theater'}</span>
+                <Squares2X2Icon className="h-3.5 w-3.5 text-emerald-400" />
+                <span>{viewLayout === 'spread' ? 'Single Page' : '2-Page Book Spread'}</span>
               </button>
             </div>
           </>
@@ -731,25 +865,160 @@ export function OriginalPdfReader({
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-300 to-emerald-500 animate-pulse z-30" />
             )}
 
-            {isTheaterOpen ? (
-              /* Internet Archive BookReader 2.0 Theater Embed */
-              <div className="w-full h-full min-h-[650px] sm:min-h-[750px] flex-1 rounded-xl overflow-hidden border border-neutral-800 bg-black">
-                <iframe
-                  src={archiveTheaterUrl}
-                  title={`${ebook.title} Scanned Book Reader`}
-                  className="w-full h-full min-h-[650px] sm:min-h-[750px] border-0"
-                  allow="fullscreen"
-                  loading="lazy"
-                />
+            {viewLayout === 'spread' ? (
+              /* Native Questo 2-Page Hardcover Book Spread (Zero external borrow walls or third-party branding) */
+              <div className="w-full max-w-5xl mx-auto flex flex-col items-center select-none py-2">
+                <div className="relative w-full rounded-2xl bg-[#141210] p-3 sm:p-5 border-2 border-[#2b241e] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)]">
+                  {/* Subtle Book Spine Bookmark Ribbon */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-5 sm:w-6 h-7 bg-amber-700/60 rounded-b shadow-md z-30 pointer-events-none" />
+
+                  {/* Two Open Hardcover Book Leaves */}
+                  <div className="w-full flex items-stretch justify-center rounded-xl overflow-hidden bg-[#1c1917] border border-neutral-800/80">
+                    {/* Left Leaf */}
+                    <div
+                      className={cn(
+                        'w-1/2 min-h-[480px] sm:min-h-[660px] bg-[#161412] flex items-center justify-center p-2 relative transition-all duration-300 origin-right',
+                        isFlipping && flipDirection === 'prev' && 'scale-[0.985] -rotate-y-6 shadow-[-16px_10px_30px_rgba(0,0,0,0.8)]'
+                      )}
+                      style={{
+                        perspective: '1400px',
+                        transform:
+                          isFlipping && flipDirection === 'prev'
+                            ? 'rotateY(8deg) scale(0.985)'
+                            : 'rotateY(0deg) scale(1)',
+                        transition: 'transform 280ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 280ms ease',
+                      }}
+                    >
+                      <img
+                        src={displayedLeftUrl}
+                        alt={`${ebook.title} - Page ${displayedLeftPage}`}
+                        className="max-h-[72vh] w-auto max-w-full object-contain rounded shadow-lg"
+                      />
+                      <div className="absolute bottom-2 left-4 text-[10px] font-mono text-neutral-500 bg-neutral-900/60 px-2 py-0.5 rounded">
+                        Page {displayedLeftPage}
+                      </div>
+                    </div>
+
+                    {/* Central Spine Gutter & Stitching Depth Shadow */}
+                    <div className="relative w-4 sm:w-8 shrink-0 bg-gradient-to-r from-neutral-950 via-black to-neutral-950 flex flex-col items-center justify-between py-4 shadow-inner z-20">
+                      <div className="w-px h-full bg-neutral-800/60" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/80 pointer-events-none" />
+                    </div>
+
+                    {/* Right Leaf */}
+                    <div
+                      className={cn(
+                        'w-1/2 min-h-[480px] sm:min-h-[660px] bg-[#161412] flex items-center justify-center p-2 relative transition-all duration-300 origin-left',
+                        isFlipping && flipDirection === 'next' && 'scale-[0.985] rotate-y-6 shadow-[16px_10px_30px_rgba(0,0,0,0.8)]'
+                      )}
+                      style={{
+                        perspective: '1400px',
+                        transform:
+                          isFlipping && flipDirection === 'next'
+                            ? 'rotateY(-8deg) scale(0.985)'
+                            : 'rotateY(0deg) scale(1)',
+                        transition: 'transform 280ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 280ms ease',
+                      }}
+                    >
+                      {displayedRightUrl ? (
+                        <>
+                          <img
+                            src={displayedRightUrl}
+                            alt={`${ebook.title} - Page ${displayedRightPage}`}
+                            className="max-h-[72vh] w-auto max-w-full object-contain rounded shadow-lg"
+                          />
+                          <div className="absolute bottom-2 right-4 text-[10px] font-mono text-neutral-500 bg-neutral-900/60 px-2 py-0.5 rounded">
+                            Page {displayedRightPage}
+                          </div>
+                        </>
+                      ) : (
+                        <div className="text-center text-neutral-600 text-xs font-serif italic p-6">
+                          Concluded Volume
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating Bottom Page Navigator Pill for 2-Page Spread */}
+                <div className="mt-4 flex items-center gap-3 px-4 py-2 rounded-full bg-neutral-900/90 border border-neutral-700/80 backdrop-blur-md shadow-xl text-xs font-sans">
+                  <button
+                    type="button"
+                    onClick={handlePrevPage}
+                    disabled={spreadLeftPage <= 1}
+                    className="p-1 rounded text-neutral-300 hover:text-white disabled:opacity-30 cursor-pointer"
+                    title="Previous 2 Pages"
+                  >
+                    <ChevronLeftIcon className="h-4 w-4" />
+                  </button>
+
+                  <span className="font-mono text-neutral-300">
+                    Pages <strong className="text-white">{spreadLeftPage}</strong> -{' '}
+                    <strong className="text-white">{spreadRightPage || spreadLeftPage}</strong> of{' '}
+                    {totalPages}
+                  </span>
+
+                  <button
+                    type="button"
+                    onClick={handleNextPage}
+                    disabled={spreadLeftPage + 2 > totalPages}
+                    className="p-1 rounded text-neutral-300 hover:text-white disabled:opacity-30 cursor-pointer"
+                    title="Next 2 Pages"
+                  >
+                    <ChevronRightIcon className="h-4 w-4" />
+                  </button>
+
+                  <div className="h-3 w-px bg-neutral-700 mx-1" />
+
+                  {isLocal && (
+                    <>
+                      <button
+                        type="button"
+                        onClick={() => setActiveMode('pdf')}
+                        className="text-emerald-400 hover:text-emerald-300 font-semibold cursor-pointer inline-flex items-center gap-1"
+                        title="Switch to 0ms Vector PDF Mode (Fast CDN Edge)"
+                      >
+                        <ShieldCheckIcon className="h-3.5 w-3.5" />
+                        <span>Fast CDN PDF</span>
+                      </button>
+                      <div className="h-3 w-px bg-neutral-700 mx-1" />
+                    </>
+                  )}
+
+                  <a
+                    href={safePdfUrl}
+                    download
+                    className="text-neutral-300 hover:text-white inline-flex items-center gap-1.5 transition-colors font-medium"
+                    title="Download Verified Original PDF"
+                  >
+                    <ArrowDownTrayIcon className="h-3.5 w-3.5 text-emerald-400" />
+                    <span>Download PDF</span>
+                  </a>
+                </div>
               </div>
             ) : (
-              /* High-Res Original Scanned Page Facsimile with Smooth Zoom & Controls */
+              /* High-Res Original Scanned Page Facsimile with Tactile 3D Flip & Zero Collapse */
               <div
                 className="transition-transform duration-200 ease-out origin-top flex flex-col items-center max-w-full"
                 style={{ transform: `scale(${zoomLevel / 100})` }}
               >
                 {!pageImageError ? (
-                  <div className="relative group rounded-xl overflow-hidden shadow-2xl border border-neutral-800 bg-[#161412] min-h-[560px] sm:min-h-[700px] w-[540px] max-w-full aspect-[2/3] flex items-center justify-center transition-all duration-150">
+                  <div
+                    className={cn(
+                      'relative group rounded-xl overflow-hidden shadow-2xl border border-neutral-800 bg-[#161412] min-h-[560px] sm:min-h-[700px] w-[540px] max-w-full aspect-[2/3] flex items-center justify-center transition-all duration-300 ease-out',
+                      isFlipping && flipDirection === 'next' && 'scale-[0.98] -rotate-y-6 shadow-[-20px_10px_40px_rgba(0,0,0,0.8)]',
+                      isFlipping && flipDirection === 'prev' && 'scale-[0.98] rotate-y-6 shadow-[20px_10px_40px_rgba(0,0,0,0.8)]'
+                    )}
+                    style={{
+                      perspective: '1200px',
+                      transform: isFlipping
+                        ? flipDirection === 'next'
+                          ? 'perspective(1200px) rotateY(-10deg) scale(0.98)'
+                          : 'perspective(1200px) rotateY(10deg) scale(0.98)'
+                        : 'perspective(1200px) rotateY(0deg) scale(1)',
+                      transition: 'transform 280ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 280ms ease',
+                    }}
+                  >
                     {/* Non-intrusive Corner Buffering Pill */}
                     {targetLoading && (
                       <div className="absolute top-3 right-3 z-30 flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-950/85 backdrop-blur-md border border-neutral-700/80 text-[11px] font-mono text-emerald-400 shadow-xl pointer-events-none">
@@ -764,7 +1033,7 @@ export function OriginalPdfReader({
                     />
                   </div>
                 ) : (
-                  /* Fallback when remote page image is not yet cached: High-Fidelity Archival Plate */
+                  /* Fallback when remote page image is not yet cached: High-Fidelity Archival Plate (Zero Third-Party Links) */
                   <div className="w-[520px] max-w-full aspect-[2/3] p-8 sm:p-12 rounded-xl border border-amber-900/40 bg-[#1c1815] text-[#d6c7b2] flex flex-col justify-between shadow-2xl relative">
                     <div className="border-b border-amber-900/40 pb-4 text-center">
                       <span className="text-[10px] font-sans uppercase tracking-widest text-amber-500 font-semibold block mb-1">
@@ -794,14 +1063,16 @@ export function OriginalPdfReader({
                           <BookOpenIcon className="h-4 w-4" />
                           <span>Read Complete 12 Chapters (Instant)</span>
                         </button>
-                        <button
-                          type="button"
-                          onClick={() => setIsTheaterOpen(true)}
-                          className="px-3.5 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-neutral-200 border border-neutral-700 font-sans text-xs font-semibold cursor-pointer transition-colors shadow-sm inline-flex items-center gap-1.5"
-                        >
-                          <SparklesIcon className="h-4 w-4 text-amber-400" />
-                          <span>Archive Theater</span>
-                        </button>
+                        {isLocal && (
+                          <button
+                            type="button"
+                            onClick={() => setActiveMode('pdf')}
+                            className="px-3.5 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-neutral-200 border border-neutral-700 font-sans text-xs font-semibold cursor-pointer transition-colors shadow-sm inline-flex items-center gap-1.5"
+                          >
+                            <ShieldCheckIcon className="h-4 w-4 text-emerald-400" />
+                            <span>Switch to Fast CDN PDF</span>
+                          </button>
+                        )}
                       </div>
                     </div>
 
@@ -856,13 +1127,13 @@ export function OriginalPdfReader({
                   )}
 
                   <a
-                    href={ebook.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-neutral-400 hover:text-white inline-flex items-center gap-1"
+                    href={safePdfUrl}
+                    download
+                    className="text-neutral-300 hover:text-white inline-flex items-center gap-1.5 transition-colors font-medium"
+                    title="Download Verified Original PDF"
                   >
-                    <span>Raw PDF</span>
-                    <ArrowTopRightOnSquareIcon className="h-3 w-3" />
+                    <ArrowDownTrayIcon className="h-3.5 w-3.5 text-emerald-400" />
+                    <span>Download PDF</span>
                   </a>
                 </div>
               </div>
