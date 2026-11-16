@@ -1,0 +1,71 @@
+{
+  "slug": "optical-metamaterials-and-negative-index-refraction",
+  "title": "Optical Metamaterials & Cloaking",
+  "excerpt": "Engineering sub-wavelength split-ring resonators and photonic crystals to bend electromagnetic waves backwards, enabling super-resolution lenses and cloaking devices.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "category": "science",
+  "subcategory": "optics",
+  "tags": [
+    "optics",
+    "metamaterials",
+    "physics",
+    "photonics",
+    "nanotechnology",
+    "materials-science"
+  ],
+  "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Laser beams refracting through precision optical prisms and glowing crystalline micro-structures",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Overriding Snell's Law with Artificial Atoms"
+    },
+    {
+      "type": "p",
+      "text": "Every natural material possesses a positive refractive index: light passing from air into water or glass bends towards the surface normal. Optical metamaterials, engineered from sub-wavelength metallic and dielectric architectures, simultaneously achieve negative electrical permittivity and negative magnetic permeability, causing light to bend backwards upon interface entry."
+    },
+    {
+      "type": "h2",
+      "text": "Structural Foundations of Negative-Index Media"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sub-Wavelength Split-Ring Resonators (SRRs): Micron-scale conductive loops functioning as LC circuits that manipulate the magnetic component of electromagnetic radiation.",
+        "Veselago Superlenses: Flat metamaterial slabs capable of amplifying evanescent waves, shattering the classical Abbe diffraction limit to resolve sub-diffraction features.",
+        "Transformation Optics: Formulating spatial coordinate transformations that guide light smoothly around an enclosed obstacle like water around a smooth pebble.",
+        "Plasmonic Hyperbolic Metamaterials: Layered metal-dielectric stacks that support indefinite dispersion relations for extreme light confinement."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "In metamaterials, material properties do not come from the constituent chemical elements, but from the deliberate geometric shape of their sub-wavelength structure.",
+      "cite": "Questo Photonic Nanomaterials & Electrodynamics Institute"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Nanoscale semiconductor lithography patterning under electron microscope inspection",
+      "caption": "Electron-beam lithography etching nanoscale gold resonant antennas for optical frequency metamaterial cloaks."
+    },
+    {
+      "type": "h2",
+      "text": "From Invisibility Cloaks to Optical Computing"
+    },
+    {
+      "type": "p",
+      "text": "While full-spectrum macroscopic invisibility remains an engineering challenge, optical metamaterials are already revolutionizing flat planar metalenses in smartphone cameras, LiDAR steering without moving mirrors, and ultrafast photonic switches for optical computing."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/5NS3m1CSYJ0",
+      "title": "Metamaterials and Negative Refraction: Engineering Artificial Materials",
+      "caption": "Academic physics lecture analyzing negative index of refraction, wave vector momentum, and transformation optics."
+    },
+    {
+      "type": "p",
+      "text": "Sub-wavelength optical meta-surfaces replace bulky glass lens elements with nanostructured flat silicon wafers."
+    }
+  ]
+}

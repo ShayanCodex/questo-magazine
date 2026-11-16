@@ -1,0 +1,71 @@
+{
+  "slug": "the-thermodynamics-of-specialty-coffee-roasting",
+  "title": "Specialty Coffee Thermodynamics",
+  "excerpt": "The chemical physics of coffee roasting: conductive vs convective heat transfer, the Maillard cascade, Strecker degradation, and managing Rate of Rise curves.",
+  "date": "2026-11-17",
+  "author": "Chef Mateo Silva",
+  "category": "culinary",
+  "subcategory": "coffee-science",
+  "tags": [
+    "coffee-science",
+    "culinary",
+    "thermodynamics",
+    "roasting",
+    "chemistry",
+    "gastronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Golden roasted specialty coffee beans pouring into a cooling tray of an industrial roaster",
+  "body": [
+    {
+      "type": "h2",
+      "text": "From Green Seed to Aromatic Complexity"
+    },
+    {
+      "type": "p",
+      "text": "Raw green coffee seeds are dense, astringent, and odorless pellets containing roughly 11% moisture, polysaccharides, and chlorogenic acids. Roasting coffee is a precise thermodynamic choreography: applying controlled conductive, convective, and radiant heat to unlock more than 800 volatile aromatic compounds through cascading thermochemical reactions."
+    },
+    {
+      "type": "h2",
+      "text": "Thermal Phases and Reaction Kinetics"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Drying Phase: Driving off endothermic bound water until seeds reach the yellowing point at approximately 160°C.",
+        "Maillard Reaction Cascade: Reducing sugars reacting with amino acids to generate melanoidins (body, mouthfeel) and complex nutty, caramel aromas.",
+        "Strecker Degradation: Amino acids decarboxylating and deaminating into potent aroma aldehydes and pyrazines.",
+        "First Crack & Exothermic Shift: Water vapor and carbon dioxide rupturing cellular cellulose walls at ~196°C, shifting the bean from endothermic to exothermic heat release."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Roasting coffee is the art of navigating thermodynamic momentum. Once first crack begins, the roaster must anticipate the bean's internal exothermic energy.",
+      "cite": "Questo Sensory Science & Specialty Coffee Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Artisan coffee roaster inspecting bean color and sampling aroma with a trier tool",
+      "caption": "Real-time telemetry: Monitoring exhaust temperature and drum bean probes to maintain an ever-decreasing Rate of Rise."
+    },
+    {
+      "type": "h2",
+      "text": "Mastering the Rate of Rise (RoR)"
+    },
+    {
+      "type": "p",
+      "text": "Specialty coffee roasting champions judge roast curves by the Rate of Rise (RoR)—the speed in degrees per minute at which the bean temperature climbs. A smoothly declining RoR curve prevents baked or scorched defects, preserving the delicate floral terpenes and malic fruit acids prized in high-altitude Geisha varietals."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/S5YPPj3MpA0",
+      "title": "How to Craft the Perfect Roast Profile for Specialty Coffee",
+      "caption": "Coffee roasting masterclass analyzing drum airflow, bean probes, charge temperatures, and declining Rate of Rise curves."
+    },
+    {
+      "type": "p",
+      "text": "Controlling airflow and burner heat allows roast masters to sculpt delicate acidity and lingering sweetness from heirloom Arabica lots."
+    }
+  ]
+}

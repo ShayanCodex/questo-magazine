@@ -1,0 +1,71 @@
+{
+  "slug": "automated-market-makers-and-impermanent-loss-dynamics",
+  "title": "Automated Market Makers & DEXs",
+  "excerpt": "An algorithmic breakdown of constant product formulas, liquidity pool mathematics, slippage curves, and impermanent loss risk mitigation.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "category": "finance",
+  "subcategory": "defi",
+  "tags": [
+    "defi",
+    "amm",
+    "cryptocurrency",
+    "liquidity-pools",
+    "fintech",
+    "algorithms"
+  ],
+  "image": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Digital financial data trading charts and algorithmic liquidity pool analytics graphs",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Replacing Centralized Limit Order Books"
+    },
+    {
+      "type": "p",
+      "text": "Traditional stock exchanges require centralized market makers to maintain bid and ask queues. Decentralized finance (DeFi) introduced Automated Market Makers (AMMs), autonomous smart contract liquidity pools that determine asset prices algorithmically using mathematical invariant curves without intermediaries."
+    },
+    {
+      "type": "h2",
+      "text": "Mathematical Mechanics of the Constant Product Invariant"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The x * y = k Equation: Uniswap-style invariant where x represents the reserve of Asset A, y represents Asset B, and k remains constant throughout a swap.",
+        "Algorithmic Price Discovery: As traders buy token A, x decreases and y increases, moving the marginal price along the hyperbolic bonding curve.",
+        "Impermanent Loss (IL): The opportunity cost suffered by liquidity providers when relative token prices diverge compared to simply holding the underlying assets.",
+        "Concentrated Liquidity: V3-style algorithms enabling providers to allocate capital within discrete price ticks, dramatically boosting capital efficiency."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "An automated market maker turns liquidity into a programmable commodity, governed by deterministic deterministic mathematical laws rather than institutional balance sheets.",
+      "cite": "Questo Institute of Decentralized Finance & Algorithmic Markets"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Financial candlestick charts and cryptographic algorithmic trading interfaces",
+      "caption": "Liquidity distribution analysis: Measuring price slippage and fee yields across decentralized exchange pools."
+    },
+    {
+      "type": "h2",
+      "text": "Arbitrageurs as Invariant Balancers"
+    },
+    {
+      "type": "p",
+      "text": "When external market prices shift, AMM pools do not automatically update prices. Instead, external arbitrage bots spot discrepancies, trading against the pool until internal token ratios match global market consensus, capturing profit while aligning the pool."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/1PbZMudPP5E",
+      "title": "What is an Automated Market Maker? Liquidity Pool Algorithm Explained",
+      "caption": "Whiteboard Crypto breakdown explaining constant product mathematics, liquidity provisioning, and impermanent loss."
+    },
+    {
+      "type": "p",
+      "text": "Dynamic fee tiers and concentrated liquidity ranges enable modern AMMs to achieve trading depth rivaling Wall Street order books."
+    }
+  ]
+}

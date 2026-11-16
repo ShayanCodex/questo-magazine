@@ -1,0 +1,71 @@
+{
+  "slug": "quantum-radar-and-entangled-microwave-detection",
+  "title": "The Physics of Quantum Radar",
+  "excerpt": "How quantum illumination utilizes entangled microwave-optical photon pairs to detect stealth aircraft through heavy background electromagnetic jamming.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "category": "science",
+  "subcategory": "quantum-physics",
+  "tags": [
+    "quantum-physics",
+    "quantum-radar",
+    "photonics",
+    "electromagnetism",
+    "radar",
+    "defense-tech"
+  ],
+  "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Abstract glowing mathematical quantum lattice representing entangled microwave photon states",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Beyond Classical Radar Limits"
+    },
+    {
+      "type": "p",
+      "text": "Classical radar systems rely on broadcasting high-power microwave pulses and detecting coherent reflected echoes. Stealth aircraft defeat this mechanism through faceted radar-absorbent materials (RAM) and shape geometry that deflects reflections away from the receiver. Quantum radar supersedes this limitation using quantum illumination: generating entangled photon pairs where one photon serves as an internal idler and the second is beamed into the atmosphere as a signal probe."
+    },
+    {
+      "type": "h2",
+      "text": "Core Mechanisms of Quantum Illumination"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Josephson Parametric Amplifiers: Superconducting circuits operating at millikelvin temperatures that split microwave pump photons into entangled signal-idler pairs.",
+        "Electro-Optomechanical Converters: Converting optical laser entanglement into microwave frequencies suitable for atmospheric propagation.",
+        "Quantum Correlated Reception: Measuring quantum discord and quantum state correlations between the stored idler and returning signal photons.",
+        "Jamming Immunity: Thermal electromagnetic noise and artificial jamming cannot spoof quantum entanglement signatures, isolating authentic target returns."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Even when background thermal noise destroys macroscopic entanglement, the quantum correlations that survive remain detectable with statistical significance.",
+      "cite": "Questo Quantum Electrodynamics & Radar Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Superconducting quantum microwave measurement instrumentation in a cryogenic laboratory",
+      "caption": "Cryogenic Josephson parametric amplifier setup: Preserving sub-kelvin quantum microwave coherence prior to atmospheric transmission."
+    },
+    {
+      "type": "h2",
+      "text": "Surviving Atmospheric Decoherence"
+    },
+    {
+      "type": "p",
+      "text": "The fundamental challenge of quantum radar is atmospheric loss: rain, fog, and thermal photons rapidly degrade delicate quantum states. However, quantum illumination does not require the entanglement itself to survive the round trip. The initial entanglement grants a provable 3-to-6 dB signal-to-noise ratio advantage over classical illumination, sufficient to expose radar-invisible targets."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/wgJ3VQU7tc8",
+      "title": "Quantum Radar Explained: The Future of Detection Technology",
+      "caption": "A concise technical overview of quantum illumination, microwave entanglement, and the tactical advantages over traditional phased arrays."
+    },
+    {
+      "type": "p",
+      "text": "By detecting quantum discord rather than wave amplitude alone, quantum radar redefines electronic reconnaissance in high-noise environments."
+    }
+  ]
+}
