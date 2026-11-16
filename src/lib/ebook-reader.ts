@@ -59,6 +59,9 @@ const VERIFIED_ARCHIVE_IDS: Record<string, string> = {
 export const GITHUB_VAULT_RELEASE_BASE =
   'https://github.com/ShayanCodex/questo-books-vault/releases/download/v1.0-books';
 
+export const JSDELIVR_VAULT_BASE =
+  'https://cdn.jsdelivr.net/gh/ShayanCodex/questo-books-vault@v1.1-assets';
+
 // Verified fast-download masterworks hosted on high-bandwidth GitHub Release CDN
 export const FAST_VAULT_PDFS: Record<string, string> = {
   meditations: `${GITHUB_VAULT_RELEASE_BASE}/meditations.pdf`,
@@ -77,6 +80,69 @@ export const FAST_VAULT_PDFS: Record<string, string> = {
   'the-odyssey': `${GITHUB_VAULT_RELEASE_BASE}/the-odyssey-of-homer.pdf`,
   'pride-and-prejudice': `${GITHUB_VAULT_RELEASE_BASE}/pride-and-prejudice.pdf`,
 };
+
+// Verified high-speed covers hosted on global jsDelivr Multi-CDN (Fastly + Cloudflare edge)
+export const VAULT_COVERS: Record<string, string> = {
+  meditations: `${JSDELIVR_VAULT_BASE}/covers/meditations.jpg`,
+  'the-wealth-of-nations': `${JSDELIVR_VAULT_BASE}/covers/the-wealth-of-nations.jpg`,
+  'the-ten-books-on-architecture-de-architectura': `${JSDELIVR_VAULT_BASE}/covers/the-ten-books-on-architecture-de-architectura.jpg`,
+  'on-the-origin-of-species': `${JSDELIVR_VAULT_BASE}/covers/on-the-origin-of-species.jpg`,
+  'frankenstein-or-the-modern-prometheus': `${JSDELIVR_VAULT_BASE}/covers/frankenstein-or-the-modern-prometheus.jpg`,
+  frankenstein: `${JSDELIVR_VAULT_BASE}/covers/frankenstein-or-the-modern-prometheus.jpg`,
+  'the-republic-of-plato': `${JSDELIVR_VAULT_BASE}/covers/the-republic-of-plato.jpg`,
+  'the-republic': `${JSDELIVR_VAULT_BASE}/covers/the-republic-of-plato.jpg`,
+  'the-art-of-war': `${JSDELIVR_VAULT_BASE}/covers/the-art-of-war.jpg`,
+  'beyond-good-and-evil': `${JSDELIVR_VAULT_BASE}/covers/beyond-good-and-evil.jpg`,
+  'pride-and-prejudice': `${JSDELIVR_VAULT_BASE}/covers/pride-and-prejudice.jpg`,
+  'the-prince-il-principe': `${JSDELIVR_VAULT_BASE}/covers/the-prince-il-principe.jpg`,
+  'the-prince': `${JSDELIVR_VAULT_BASE}/covers/the-prince-il-principe.jpg`,
+  'the-divine-comedy-inferno': `${JSDELIVR_VAULT_BASE}/covers/the-divine-comedy-inferno.jpg`,
+  'the-odyssey-of-homer': `${JSDELIVR_VAULT_BASE}/covers/the-odyssey-of-homer.jpg`,
+  'the-odyssey': `${JSDELIVR_VAULT_BASE}/covers/the-odyssey-of-homer.jpg`,
+  'discourse-on-the-method': `${JSDELIVR_VAULT_BASE}/covers/discourse-on-the-method.jpg`,
+  'relativity-the-special-and-general-theory': `${JSDELIVR_VAULT_BASE}/covers/relativity-the-special-and-general-theory.jpg`,
+  'two-treatises-of-government': `${JSDELIVR_VAULT_BASE}/covers/two-treatises-of-government.jpg`,
+  'walden-or-life-in-the-woods': `${JSDELIVR_VAULT_BASE}/covers/walden-or-life-in-the-woods.jpg`,
+  'the-communist-manifesto': `${JSDELIVR_VAULT_BASE}/covers/the-communist-manifesto.jpg`,
+  'war-and-peace': `${JSDELIVR_VAULT_BASE}/covers/war-and-peace.jpg`,
+  'critique-of-pure-reason': `${JSDELIVR_VAULT_BASE}/covers/critique-of-pure-reason.jpg`,
+  'moby-dick-or-the-whale': `${JSDELIVR_VAULT_BASE}/covers/moby-dick-or-the-whale.jpg`,
+  'the-picture-of-dorian-gray': `${JSDELIVR_VAULT_BASE}/covers/the-picture-of-dorian-gray.jpg`,
+  'a-christmas-carol': `${JSDELIVR_VAULT_BASE}/covers/a-christmas-carol.jpg`,
+  'the-time-machine': `${JSDELIVR_VAULT_BASE}/covers/the-time-machine.jpg`,
+  'the-metamorphosis': `${JSDELIVR_VAULT_BASE}/covers/the-metamorphosis.jpg`,
+  dracula: `${JSDELIVR_VAULT_BASE}/covers/dracula.jpg`,
+  'the-interpretation-of-dreams': `${JSDELIVR_VAULT_BASE}/covers/the-interpretation-of-dreams.jpg`,
+  'the-prophet': `${JSDELIVR_VAULT_BASE}/covers/the-prophet.jpg`,
+  'crime-and-punishment': `${JSDELIVR_VAULT_BASE}/covers/crime-and-punishment.jpg`,
+  'the-metaphysics-of-aristotle': `${JSDELIVR_VAULT_BASE}/covers/the-metaphysics-of-aristotle.jpg`,
+  'ethics-demonstrated-in-geometrical-order': `${JSDELIVR_VAULT_BASE}/covers/ethics-demonstrated-in-geometrical-order.jpg`,
+  'the-jungle': `${JSDELIVR_VAULT_BASE}/covers/the-jungle.jpg`,
+  'the-souls-of-black-folk': `${JSDELIVR_VAULT_BASE}/covers/the-souls-of-black-folk.jpg`,
+  'flatland-a-romance-of-many-dimensions': `${JSDELIVR_VAULT_BASE}/covers/flatland-a-romance-of-many-dimensions.jpg`,
+  'the-yellow-wallpaper': `${JSDELIVR_VAULT_BASE}/covers/the-yellow-wallpaper.jpg`,
+  'the-autobiography-of-benjamin-franklin': `${JSDELIVR_VAULT_BASE}/covers/the-autobiography-of-benjamin-franklin.jpg`,
+  'heart-of-darkness': `${JSDELIVR_VAULT_BASE}/covers/heart-of-darkness.jpg`,
+  'the-principles-of-psychology': `${JSDELIVR_VAULT_BASE}/covers/the-principles-of-psychology.jpg`,
+  'a-princess-of-mars': `${JSDELIVR_VAULT_BASE}/covers/a-princess-of-mars.jpg`,
+  'leaves-of-grass': `${JSDELIVR_VAULT_BASE}/covers/leaves-of-grass.jpg`,
+  'gullivers-travels': `${JSDELIVR_VAULT_BASE}/covers/gullivers-travels.jpg`,
+};
+
+export function getFastVaultCoverUrl(slug?: string, fallbackCoverUrl?: string): string {
+  if (!slug) return fallbackCoverUrl || '';
+  const cleanSlug = slug.toLowerCase().replace(/-edition-\d+$/, '');
+
+  if (VAULT_COVERS[cleanSlug]) {
+    return VAULT_COVERS[cleanSlug];
+  }
+  for (const [key, cdnUrl] of Object.entries(VAULT_COVERS)) {
+    if (cleanSlug.startsWith(key) || cleanSlug.includes(key) || key.includes(cleanSlug)) {
+      return cdnUrl;
+    }
+  }
+  return fallbackCoverUrl || '';
+}
 
 export const LOCAL_CORE_PDFS: Record<string, string> = {
   meditations: '/books/meditations.pdf',

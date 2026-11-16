@@ -1,5 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { cn } from '../lib/utils';
+import { getFastVaultCoverUrl } from '../lib/ebook-reader';
 
 export interface BookCoverProps {
   coverUrl?: string;
@@ -117,15 +118,20 @@ export function BookCover({
     return LUXURY_PALETTES[Math.abs(hash) % LUXURY_PALETTES.length];
   }, [slug, title]);
 
-  // Optimize OpenLibrary covers: for small/medium cards, convert -L.jpg to -M.jpg (~180px, ~15KB vs 400KB+)
-  // This delivers 10x-20x faster download speed and elimination of UI network lag
+  // Optimize cover URL: Prioritize high-bandwidth jsDelivr CDN from dedicated vault repo,
+  // then fallback to OpenLibrary optimized medium/large assets
   const optimizedCoverUrl = useMemo(() => {
+    // 1. High-speed jsDelivr Multi-CDN from questo-books-vault
+    const vaultUrl = getFastVaultCoverUrl(slug);
+    if (vaultUrl) return vaultUrl;
+
+    // 2. OpenLibrary fallback
     if (!coverUrl) return '';
     if ((size === 'sm' || size === 'md') && coverUrl.includes('covers.openlibrary.org') && coverUrl.endsWith('-L.jpg')) {
       return coverUrl.replace(/-L\.jpg$/, '-M.jpg');
     }
     return coverUrl;
-  }, [coverUrl, size]);
+  }, [slug, coverUrl, size]);
 
   const hasValidCover = Boolean(optimizedCoverUrl && optimizedCoverUrl.trim().length > 0 && !hasError);
   const disciplineTag = subdiscipline || category;
