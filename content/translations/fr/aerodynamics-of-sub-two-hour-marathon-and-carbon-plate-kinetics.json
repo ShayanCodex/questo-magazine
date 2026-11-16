@@ -1,0 +1,75 @@
+{
+  "slug": "aerodynamics-of-sub-two-hour-marathon-and-carbon-plate-kinetics",
+  "title": "La biomécanique du marathon de moins de 2 heures : mousses PEBA viscoélastiques, bascules métatarsiennes en carbone et dessin aérodynamique en formation de V",
+  "excerpt": "Déconstruire les limites physiologiques et techniques humaines de la course d'endurance : résilience amide de bloc polyéther, levier de plaque incurvée en fibre de carbone, cinétique de dégagement du lactate et rythme aérodynamique optimisé en soufflerie.",
+  "date": "2026-11-17",
+  "author": "Liam O’Connor",
+  "tags": [
+    "sports",
+    "sports-science",
+    "athletics",
+    "biomechanics",
+    "aerodynamics",
+    "endurance-physiology",
+    "vo2-max"
+  ],
+  "image": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Coureurs de marathon d'élite marchant avec une précision biomécanique sur une route asphaltée dans la brume matinale",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Franchir la barrière des 2h50 par kilomètre"
+    },
+    {
+      "type": "p",
+      "text": "Pour maintenir un marathon de moins de 2 heures, il faut parcourir 42,195 kilomètres à un rythme de 2 minutes et 50,6 secondes par kilomètre (ou 21,18 kilomètres par heure) pendant 120 minutes consécutives. Pendant des décennies, les physiologistes de l’exercice ont considéré cette barrière physiologique comme inaccessible, sur la base de modèles d’absorption maximale d’oxygène (VO2 max) et d’économie de course à pied. La percée a nécessité la synthèse d’une biomécanique d’élite avec la chimie des polymères et l’ingénierie aérodynamique du vent."
+    },
+    {
+      "type": "h2",
+      "text": "Mécanismes biomécaniques et physiologiques"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mousses viscoélastiques supercritiques : les chaussures de course modernes utilisent du polyéther bloc amide (PEBA) expansé en autoclave, offrant plus de 85 % de retour d'énergie mécanique par coup de pied par rapport aux mousses EVA traditionnelles (qui se dégradent à 60 %).",
+        "Plaques à bascule incurvées en fibre de carbone : la cuillère interne incurvée en carbone agit comme un bras de levier rigide, raidissant les articulations métatarsophalangiennes et réduisant le travail de moment de l'articulation de la cheville, économisant ainsi l'énergie métabolique sans augmenter la fatigue musculaire.",
+        "Stimulation aérodynamique en forme de V : Courir derrière un bouclier de stimulation aérodynamique synchronisé en forme de flèche réduit les coefficients de traînée jusqu'à 57 %, économisant environ quatre minutes sur la distance standard du marathon.",
+        "Saturation de la navette de lactate mitochondrial : les coureurs d'élite possèdent des ratios capillaires/fibres exceptionnellement élevés, permettant une oxydation continue du lactate circulant comme carburant musculaire sans déclencher d'acidose cellulaire."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "L'économie de course n'est pas uniquement déterminée par la génétique cardio-pulmonaire ; c'est une équation d'impédance mécanique, de recul cinétique et de traînée de la couche limite fluide.",
+      "cite": "Division de la performance humaine et de la physiologie de l'exercice de Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Chaussures de course sur piste à grande vitesse affichant des pointes légères en maille supérieure et une semelle extérieure en composite de fibre de carbone",
+      "caption": "Biomécanique de la frappe du pied : vecteurs de force de réaction au sol mesurés sur des plaques de pression intégrées pendant une vitesse de course marathon inférieure à 3 h."
+    },
+    {
+      "type": "h2",
+      "text": "Dynamique du temps de contact avec le sol et de la fréquence de foulée"
+    },
+    {
+      "type": "p",
+      "text": "La capture de mouvement biomécanique révèle que les marathoniens d'élite maintiennent un temps de contact au sol étonnamment constant de 160 à 180 millisecondes par pas à 180 foulées par minute. Plutôt que de pousser vers l'arrière contre la route, l'athlète utilise le tendon d'Achille et le fascia plantaire comme ressorts biologiques, stockant l'énergie élastique pendant la phase de freinage et la relâchant instantanément lors de l'impulsion propulsive."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Xq30_2R_n_s",
+      "title": "La science du marathon de moins de 2 heures : aérodynamique, chaussures et physiologie",
+      "caption": "Documentaire sur la science du sport déconstruisant la physique biomécanique, les formations de dessin aérodynamique et le ravitaillement métabolique de l'histoire du marathon."
+    },
+    {
+      "type": "h2",
+      "text": "L'horizon extérieur de la vitesse humaine"
+    },
+    {
+      "type": "p",
+      "text": "À mesure que la surveillance continue de la glycémie (CGM), le ravitaillement personnalisé en hydrogels en glucides et l'optimisation informatique de la topographie du parcours arrivent à maturité, le record du monde officiel franchira le seuil inférieur à 2 heures dans une compétition civique ouverte. La barrière n’a jamais été une limitation biologique ; c'était un casse-tête technique attendant sa convergence scientifique."
+    }
+  ],
+  "sourceHash": "7dea78b3b016f5cb1548ce7e8d6c3b6351b66548"
+}
