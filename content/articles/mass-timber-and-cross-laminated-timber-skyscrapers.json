@@ -1,0 +1,75 @@
+{
+  "slug": "mass-timber-and-cross-laminated-timber-skyscrapers",
+  "title": "The Rise of Timber Skyscrapers",
+  "excerpt": "An architectural engineering investigation into mass timber: Cross-Laminated Timber (CLT), biophilic structural acoustics, carbon sequestration metrics, and the charring physics of fire safety in ply-scrapers.",
+  "date": "2026-11-17",
+  "author": "Mateo Silva",
+  "category": "architecture-and-space",
+  "subcategory": "structural-architecture",
+  "tags": [
+    "architecture",
+    "mass-timber",
+    "clt",
+    "sustainability",
+    "civil-engineering",
+    "urban-design"
+  ],
+  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Modern architectural interior featuring soaring curved mass timber wooden beams and expansive glass windows",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Structural Engineering of Cross-Laminated Timber (CLT)"
+    },
+    {
+      "type": "p",
+      "text": "For over a century, high-rise urban skylines have been defined exclusively by reinforced concrete and structural steel—materials responsible for nearly 15% of all global greenhouse gas emissions. Mass timber fundamentally disrupts this paradigm. By gluing dimensioned lumber in alternating orthogonal cross-grain layers under hydraulic presses, Cross-Laminated Timber (CLT) achieves compressive and tensile strengths competitive with concrete while weighing a fraction as much."
+    },
+    {
+      "type": "h2",
+      "text": "Key Architectural & Structural Attributes"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Orthogonal Load Distribution: Alternating 90-degree lamella orientations provide two-way structural span capabilities, allowing CLT slabs to function as rigid diaphragms and shear walls.",
+        "Predictable Charring Pyrolysis: Mass timber burns from the outside in at a predictable rate of approximately 0.65 mm/minute, forming an insulating outer charcoal crust that protects the structural core.",
+        "Carbon-Negative Building Mass: While concrete releases half a ton of CO2 per ton produced, sustainably harvested mass timber locks up one ton of atmospheric CO2 in each cubic meter of timber.",
+        "Precision Off-Site Prefabrication: CNC-milled panels arrive on-site with millimeter tolerances, cutting skyscraper construction schedules and site noise by up to 50%."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Concrete and steel are extracted from the earth through fire and heat; timber is grown by the sun and rain. A timber skyscraper is not merely a building; it is a vertical carbon sink.",
+      "cite": "Questo Sustainable Structural Architecture Review"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-rise modern architectural skyscraper facade blending warm organic natural timber louvers with structural glass",
+      "caption": "Hybrid timber-concrete cores: Combining mass timber floors with slender concrete elevator shafts for high-rise seismic resilience."
+    },
+    {
+      "type": "h2",
+      "text": "Acoustic Decoupling and Biophilic Psychology"
+    },
+    {
+      "type": "p",
+      "text": "Because lightweight timber floors transfer impact vibration more readily than heavy cast concrete, engineers deploy acoustic elastomer pads and sand-ballast topping layers to achieve superior sound isolation. Furthermore, leaving exposed wood grain on ceilings and columns lowers occupant salivary cortisol levels and heart rates through innate biophilic design."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/v3JqSsc8ZKk",
+      "title": "Documentary: The World's Tallest Timber Buildings",
+      "caption": "The B1M architectural documentary exploring modern mass timber engineering, fire tests, and 20+ story wooden towers reshaping global skylines."
+    },
+    {
+      "type": "h2",
+      "text": "The Future of Regenerative Urban Skylines"
+    },
+    {
+      "type": "p",
+      "text": "As building codes in Europe and North America expand permissible timber construction up to 24 stories, mass timber represents the single most viable path toward building high-density, carbon-neutral cities that sequester atmospheric carbon for centuries."
+    }
+  ]
+}
