@@ -127,79 +127,40 @@ export const VAULT_COVERS: Record<string, string> = {
   'a-princess-of-mars': `${JSDELIVR_VAULT_BASE}/covers/a-princess-of-mars.jpg`,
   'leaves-of-grass': `${JSDELIVR_VAULT_BASE}/covers/leaves-of-grass.jpg`,
   'gullivers-travels': `${JSDELIVR_VAULT_BASE}/covers/gullivers-travels.jpg`,
+  timaeus: 'https://archive.org/download/timaeusofplato00platiala/page/n0_w800.jpg',
+  'timaeus-plato': 'https://archive.org/download/timaeusofplato00platiala/page/n0_w800.jpg',
 };
 
-const AUTHOR_VAULT_MAP: Record<string, string> = {
-  plato: 'the-republic-of-plato',
-  aristotle: 'the-metaphysics-of-aristotle',
-  aurelius: 'meditations',
-  marcus: 'meditations',
-  smith: 'the-wealth-of-nations',
-  'sun tzu': 'the-art-of-war',
-  nietzsche: 'beyond-good-and-evil',
-  austen: 'pride-and-prejudice',
-  machiavelli: 'the-prince-il-principe',
-  homer: 'the-odyssey-of-homer',
-  shelley: 'frankenstein-or-the-modern-prometheus',
-  darwin: 'on-the-origin-of-species',
-  marx: 'the-communist-manifesto',
-  engels: 'the-communist-manifesto',
-  descartes: 'discourse-on-the-method',
-  locke: 'two-treatises-of-government',
-  thoreau: 'walden-or-life-in-the-woods',
-  tolstoy: 'war-and-peace',
-  kant: 'critique-of-pure-reason',
-  melville: 'moby-dick-or-the-whale',
-  wilde: 'the-picture-of-dorian-gray',
-  dickens: 'a-christmas-carol',
-  wells: 'the-time-machine',
-  kafka: 'the-metamorphosis',
-  stoker: 'dracula',
-  freud: 'the-interpretation-of-dreams',
-  gibran: 'the-prophet',
-  dostoevsky: 'crime-and-punishment',
-  spinoza: 'ethics-demonstrated-in-geometrical-order',
-  sinclair: 'the-jungle',
-  'du bois': 'the-souls-of-black-folk',
-  abbott: 'flatland-a-romance-of-many-dimensions',
-  gilman: 'the-yellow-wallpaper',
-  franklin: 'the-autobiography-of-benjamin-franklin',
-  conrad: 'heart-of-darkness',
-  james: 'the-principles-of-psychology',
-  burroughs: 'a-princess-of-mars',
-  whitman: 'leaves-of-grass',
-  swift: 'gullivers-travels',
-  vitruvius: 'the-ten-books-on-architecture-de-architectura',
-  dante: 'the-divine-comedy-inferno',
-  einstein: 'relativity-the-special-and-general-theory',
-  epictetus: 'meditations',
-  seneca: 'meditations',
-  cicero: 'the-republic-of-plato',
-};
-
-export function getFastVaultCoverUrl(slug?: string, author?: string, fallbackCoverUrl?: string): string {
-  const cleanSlug = (slug || '').toLowerCase().replace(/-edition-\d+$/, '');
+export function getFastVaultCoverUrl(slug?: string, _author?: string, fallbackCoverUrl?: string): string {
+  if (!slug) return fallbackCoverUrl || '';
+  const cleanSlug = slug.toLowerCase().replace(/-edition-\d+$/, '').trim();
 
   // 1. Direct slug match in VAULT_COVERS
-  if (cleanSlug && VAULT_COVERS[cleanSlug]) {
+  if (VAULT_COVERS[cleanSlug]) {
     return VAULT_COVERS[cleanSlug];
   }
-  if (cleanSlug) {
-    for (const [key, cdnUrl] of Object.entries(VAULT_COVERS)) {
-      if (cleanSlug.startsWith(key) || cleanSlug.includes(key) || key.includes(cleanSlug)) {
-        return cdnUrl;
-      }
-    }
+
+  // 2. Strict canonical work aliases (never match across different books)
+  if (cleanSlug === 'the-republic' || cleanSlug === 'the-republic-of-plato') {
+    return VAULT_COVERS['the-republic-of-plato'];
+  }
+  if (cleanSlug === 'the-prince' || cleanSlug === 'the-prince-il-principe') {
+    return VAULT_COVERS['the-prince-il-principe'];
+  }
+  if (cleanSlug === 'the-odyssey' || cleanSlug === 'the-odyssey-of-homer') {
+    return VAULT_COVERS['the-odyssey-of-homer'];
+  }
+  if (cleanSlug === 'frankenstein' || cleanSlug === 'frankenstein-or-the-modern-prometheus') {
+    return VAULT_COVERS['frankenstein-or-the-modern-prometheus'];
+  }
+  if (cleanSlug === 'timaeus' || cleanSlug === 'timaeus-plato') {
+    return 'https://archive.org/download/timaeusofplato00platiala/page/n0_w800.jpg';
   }
 
-  // 2. Author-based match to canonical work
-  if (author) {
-    const authorLower = author.toLowerCase();
-    for (const [authorKey, workSlug] of Object.entries(AUTHOR_VAULT_MAP)) {
-      if (authorLower.includes(authorKey)) {
-        return VAULT_COVERS[workSlug] || '';
-      }
-    }
+  // 3. If this work has its own verified archive scan, use its own title page scan
+  const archiveId = VERIFIED_ARCHIVE_IDS[cleanSlug];
+  if (archiveId) {
+    return `https://archive.org/download/${archiveId}/page/n0_w800.jpg`;
   }
 
   return fallbackCoverUrl || '';

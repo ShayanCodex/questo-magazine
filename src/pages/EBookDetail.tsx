@@ -42,7 +42,51 @@ export function EBookDetail() {
 
   const relatedEbooks = useMemo(() => {
     if (!ebook) return [];
-    return EBOOKS_LIST.filter((b) => b.slug !== ebook.slug && b.category === ebook.category).slice(0, 3);
+    // Normalize current title and slug to prevent recommending alternate editions of the same work
+    const currentBaseTitle = ebook.title.toLowerCase().replace(/\s*\(.*?\)\s*/g, '').trim();
+    const currentBaseSlug = ebook.slug.replace(/-edition-\d+$/, '').replace(/-london-.*$/, '').trim();
+    const currentAuthorKey = (ebook.author || '').toLowerCase().trim();
+
+    const seenTitles = new Set<string>([currentBaseTitle]);
+    const seenAuthors = new Set<string>([currentAuthorKey]);
+    const results: typeof EBOOKS_LIST = [];
+
+    // Filter candidate books in the same category
+    const candidates = EBOOKS_LIST.filter((b) => {
+      if (b.slug === ebook.slug) return false;
+      if (b.category !== ebook.category) return false;
+      const bBaseSlug = b.slug.replace(/-edition-\d+$/, '').replace(/-london-.*$/, '').trim();
+      if (bBaseSlug === currentBaseSlug) return false;
+      const bBaseTitle = b.title.toLowerCase().replace(/\s*\(.*?\)\s*/g, '').trim();
+      if (bBaseTitle === currentBaseTitle) return false;
+      return true;
+    });
+
+    // Pass 1: Select distinct authors and distinct titles
+    for (const b of candidates) {
+      const bBaseTitle = b.title.toLowerCase().replace(/\s*\(.*?\)\s*/g, '').trim();
+      const authorKey = (b.author || '').toLowerCase().trim();
+      if (!seenTitles.has(bBaseTitle) && !seenAuthors.has(authorKey)) {
+        seenTitles.add(bBaseTitle);
+        seenAuthors.add(authorKey);
+        results.push(b);
+        if (results.length >= 3) break;
+      }
+    }
+
+    // Pass 2: If we still need more to reach 3, fill with remaining distinct titles
+    if (results.length < 3) {
+      for (const b of candidates) {
+        const bBaseTitle = b.title.toLowerCase().replace(/\s*\(.*?\)\s*/g, '').trim();
+        if (!seenTitles.has(bBaseTitle)) {
+          seenTitles.add(bBaseTitle);
+          results.push(b);
+          if (results.length >= 3) break;
+        }
+      }
+    }
+
+    return results;
   }, [ebook]);
 
   if (!ebook) {
