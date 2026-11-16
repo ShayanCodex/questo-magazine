@@ -1,0 +1,71 @@
+{
+  "slug": "crispr-cas9-and-precision-base-editing-genetics",
+  "title": "Precision CRISPR Gene Editing",
+  "excerpt": "Beyond double-strand DNA breaks: the biochemistry of cytidine and adenine base editors, prime editing reverse transcriptases, and in vivo curative therapies.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "category": "science",
+  "subcategory": "genetics",
+  "tags": [
+    "genetics",
+    "crispr",
+    "biotechnology",
+    "medicine",
+    "gene-editing",
+    "molecular-biology"
+  ],
+  "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Glowing digital double helix DNA visualization representing targeted nucleotide base editing",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Moving Past Double-Strand DNA Breaks"
+    },
+    {
+      "type": "p",
+      "text": "First-generation CRISPR-Cas9 revolutionized molecular biology by functioning as molecular scissors: a guide RNA navigates the Cas9 endonuclease to cut both strands of genomic DNA. However, double-strand breaks trigger error-prone non-homologous end joining (NHEJ), risking uncontrolled indels and chromosomal rearrangements. Precision base editing rewrites individual genetic letters without cutting the DNA backbone."
+    },
+    {
+      "type": "h2",
+      "text": "Architectures of Advanced Precision Editors"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Catalytically Impaired Cas9 Nickase (dCas9/nCas9): Navigating to target genetic loci without cleaving the double-stranded phosphodiester skeleton.",
+        "Cytidine Deaminases (CBEs): Catalyzing the deamination of cytidine to uridine, directing DNA polymerases to convert C-G base pairs into T-A pairs.",
+        "Adenine Base Editors (ABEs): Deaminating adenine into inosine, programmatically converting pathogenic A-T mutations into wild-type G-C pairs.",
+        "Prime Editing Search-and-Replace: Fusing a Cas9 nickase with an engineered reverse transcriptase guided by a pegRNA to write new sequences directly into DNA."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "If classical CRISPR is molecular scissors, base editing is a pencil and eraser, correcting single typographical errors in the three-billion-letter human genome.",
+      "cite": "Questo Center for Precision Genome Editing & Therapeutics"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Robotic genetic pipetting workstation performing automated oligonucleotide sequencing",
+      "caption": "High-throughput next-generation sequencing: Quantifying on-target base conversion efficiency and zero off-target genomic edits."
+    },
+    {
+      "type": "h2",
+      "text": "Clinical Cures for Sickle Cell and Hypercholesterolemia"
+    },
+    {
+      "type": "p",
+      "text": "Base editors delivered via lipid nanoparticles (LNPs) directly to hepatocytes have successfully deactivated the PCSK9 gene in human clinical trials, offering single-dose, permanent reductions in cardiovascular risk factors."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Vq8erNeq_NY",
+      "title": "How Does CRISPR-Cas9 Edit DNA? Gene Editing Explained",
+      "caption": "Educational science animation detailing guide RNA matching, Cas9 catalytic domains, and precision genetic modifications."
+    },
+    {
+      "type": "p",
+      "text": "Precision base editing is transforming medicine from chronic symptomatic management into definitive genetic correction."
+    }
+  ]
+}

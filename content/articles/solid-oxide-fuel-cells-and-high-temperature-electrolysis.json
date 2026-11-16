@@ -1,0 +1,71 @@
+{
+  "slug": "solid-oxide-fuel-cells-and-high-temperature-electrolysis",
+  "title": "Solid Oxide Fuel Cells",
+  "excerpt": "The solid-state electrochemical physics of yttria-stabilized zirconia electrolytes, converting green hydrogen and biogas directly into clean electricity at 800°C.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "category": "technology",
+  "subcategory": "clean-energy",
+  "tags": [
+    "clean-energy",
+    "fuel-cells",
+    "electrochemistry",
+    "hydrogen",
+    "materials-science",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1517976487504-59a1a0812917?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Advanced industrial clean energy generation facility with gleaming fuel cell modules and conduits",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Direct Electrochemical Power Generation"
+    },
+    {
+      "type": "p",
+      "text": "Combustion engines and gas turbines are fundamentally constrained by Carnot efficiency limits, losing over half of fuel energy as heat. Solid Oxide Fuel Cells (SOFCs) bypass combustion entirely, using solid ceramic electrolytes to electrochemically oxidize hydrogen, natural gas, or biogas directly into electricity with electrical efficiencies exceeding 60% (and over 85% in combined heat and power systems)."
+    },
+    {
+      "type": "h2",
+      "text": "Solid-State Ceramic Architecture"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Yttria-Stabilized Zirconia (YSZ): A specialized ceramic electrolyte that conducts oxygen anions (O2-) at elevated temperatures (650°C-800°C) while insulating electrons.",
+        "Nickel-YSZ Cermet Anodes: Providing high catalytic activity for fuel oxidation and internal steam reforming of hydrocarbons.",
+        "Strontium-Doped Lanthanum Manganite (LSM) Cathodes: Splitting atmospheric molecular oxygen (O2) into oxygen ions through porous perovskite structures.",
+        "Reversible High-Temperature Electrolysis (SOEC): Operating in reverse mode to split steam and CO2 into green hydrogen and syngas with record thermodynamic efficiency."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Solid oxide technology turns fuel into electricity at the atomic level, delivering steady baseload power without combustion chimneys or rotating turbines.",
+      "cite": "Questo Electrochemical Energy & Solid-State Physics Lab"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-temperature industrial sintering furnace synthesizing advanced ceramic membranes",
+      "caption": "Ceramic tape-casting and sintering: Fabricating planar YSZ electrolyte membranes with sub-micron thickness tolerances."
+    },
+    {
+      "type": "h2",
+      "text": "Decarbonizing Mission-Critical AI Data Centers"
+    },
+    {
+      "type": "p",
+      "text": "With AI hyperscale data centers demanding gigawatts of uninterrupted electricity, SOFC microgrids provide on-site, modular baseload power that operates independently from overtaxed municipal transmission grids."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/mdXWVi1u_yw",
+      "title": "How Bloom Energy Turns Fuel Into Reliable Power for AI",
+      "caption": "Industrial clean tech documentary examining solid oxide fuel cell stacks, modular microgrids, and data center baseload power."
+    },
+    {
+      "type": "p",
+      "text": "The transition to solid-state electrochemical conversion represents a quantum leap in clean, reliable power generation."
+    }
+  ]
+}

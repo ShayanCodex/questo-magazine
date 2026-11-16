@@ -1,0 +1,71 @@
+{
+  "slug": "central-bank-balance-sheets-and-quantitative-tightening",
+  "title": "Central Bank Balance Sheets",
+  "excerpt": "An institutional breakdown of quantitative easing vs tightening: overnight reverse repos, bank reserves, treasury roll-offs, and global dollar liquidity drains.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "category": "finance",
+  "subcategory": "monetary-policy",
+  "tags": [
+    "finance",
+    "central-banks",
+    "macroeconomics",
+    "quantitative-tightening",
+    "liquidity",
+    "banking"
+  ],
+  "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Neoclassical central bank treasury building facade illuminated at dusk with financial data projections",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The True Driver of Global Asset Valuations"
+    },
+    {
+      "type": "p",
+      "text": "While retail investors obsess over central bank benchmark interest rates, institutional macro investors track an even more potent hydraulic force: the size and velocity of central bank balance sheets. When the Federal Reserve, ECB, or Bank of Japan conducts Quantitative Easing (QE) or Quantitative Tightening (QT), they directly expand or contract the world’s net fiat liquidity."
+    },
+    {
+      "type": "h2",
+      "text": "Accounting Mechanics of the Central Bank Balance Sheet"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Assets: Domestic government debt securities (Treasuries) and mortgage-backed securities (MBS) purchased from primary dealers.",
+        "Liabilities: Currency in circulation, commercial bank reserves held at the central bank, and the Treasury General Account (TGA).",
+        "Overnight Reverse Repo Facility (ON RRP): A liquidity drain sponge absorbing excess cash from money market funds to maintain policy rate floors.",
+        "Passive QT Roll-Off: Allowing maturing government bonds to expire without reinvesting principal, draining corresponding commercial reserves."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Liquidity is the oxygen of financial markets. Central banks do not merely adjust borrowing costs; they expand and contract the total volume of air in the room.",
+      "cite": "Questo Institute of Monetary Economics & Central Banking"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Real-time financial charts tracking interbank lending rates and central bank liquidity indicators",
+      "caption": "Global liquidity index modeling: Correlating central bank asset contraction with sovereign debt market volatility."
+    },
+    {
+      "type": "h2",
+      "text": "The Ample Reserves Regime and Repo Spikes"
+    },
+    {
+      "type": "p",
+      "text": "If QT continues too long and bank reserves dip below the 'Lowest Comfortable Level of Reserves' (LCLoR), short-term overnight lending markets seize up—as occurred during the infamous September 2019 repo spike."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7HEfvgynbsU",
+      "title": "Federal Reserve Financial Stability & Liquidity Dynamics: CNBC",
+      "caption": "CNBC macro breakdown examining central bank balance sheets, banking liquidity buffers, and financial market vulnerabilities."
+    },
+    {
+      "type": "p",
+      "text": "Mastering central bank balance sheet mechanics reveals the macroeconomic tide that lifts or sinks all asset classes."
+    }
+  ]
+}

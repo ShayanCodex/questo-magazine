@@ -1,0 +1,71 @@
+{
+  "slug": "neuromorphic-computing-and-spiking-neural-networks",
+  "title": "Neuromorphic Computing Chips",
+  "excerpt": "How brain-inspired event-based architectures, asynchronous spiking neural networks, and memristive crossbars slash deep learning power consumption by 99%.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "category": "technology",
+  "subcategory": "semiconductors",
+  "tags": [
+    "semiconductors",
+    "neuromorphic",
+    "artificial-intelligence",
+    "hardware-engineering",
+    "spiking-neural-networks",
+    "computing"
+  ],
+  "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Microprocessor silicon wafer glowing under cleanroom inspection illumination",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Von Neumann Bottleneck in Modern AI"
+    },
+    {
+      "type": "p",
+      "text": "Conventional computing architectures separate computational processing cores from memory blocks. Moving billions of weights across memory buses consumes over 80% of energy during neural network inference. Neuromorphic computing solves this crisis by mirroring biological brain topology, co-locating processing and memory within artificial spiking neurons."
+    },
+    {
+      "type": "h2",
+      "text": "Key Architectural Innovations"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Asynchronous Spiking Neurons: Chips compute exclusively when an event spike occurs, consuming near-zero static standby power.",
+        "Analog Memristor Synapses: Solid-state resistive RAM devices functioning as variable synaptic weights with non-volatile analog retention.",
+        "In-Memory Vector Multiplication: Executing Ohm-Kirchhoff physics operations directly across crossbar arrays in a single clock cycle.",
+        "Biological Energy Efficiency: Operating at milliwatt power budgets suitable for autonomous robotics, edge sensors, and neural prosthetics."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The human brain performs quadrillions of synaptic operations on twenty watts of power. Neuromorphic architectures emulate this evolutionary masterwork.",
+      "cite": "Questo Neuromorphic Systems & Cognitive Hardware Group"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-density microelectronic integrated circuit board with interconnected signal buses",
+      "caption": "Neuromorphic substrate routing: Event-driven asynchronous communication channels connecting artificial cortical columns."
+    },
+    {
+      "type": "h2",
+      "text": "Spiking Neural Networks vs Deep Learning"
+    },
+    {
+      "type": "p",
+      "text": "Unlike standard backpropagation networks that compute dense continuous floating-point activations, Spiking Neural Networks (SNNs) convey temporal information through discrete microsecond-timed pulses, unlocking biological temporal pattern recognition."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/FUmXDJphpQM",
+      "title": "What is Neuromorphic Computing? Brain-Inspired Chips Explained",
+      "caption": "Engineering documentary analyzing neuromorphic architectures, event-based cameras, and biological chip comparisons."
+    },
+    {
+      "type": "p",
+      "text": "By coupling event-based sensory processing with low-leakage neuromorphic silicon, autonomous edge devices can navigate complex environments on microwatt budgets."
+    }
+  ]
+}

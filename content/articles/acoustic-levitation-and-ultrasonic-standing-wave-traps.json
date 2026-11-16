@@ -1,0 +1,71 @@
+{
+  "slug": "acoustic-levitation-and-ultrasonic-standing-wave-traps",
+  "title": "Ultrasonic Acoustic Levitation",
+  "excerpt": "The wave physics of acoustic radiation pressure: phased ultrasonic transducers, pressure nodes, Bernoulli forces, and contactless manipulation of matter in air.",
+  "date": "2026-11-17",
+  "author": "Orion Kaelen",
+  "category": "sound",
+  "subcategory": "acoustics",
+  "tags": [
+    "sound",
+    "acoustics",
+    "physics",
+    "ultrasound",
+    "levitation",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "High-tech acoustic wave transducer array illuminating invisible acoustic standing wave field",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Suspending Matter Purely on Sound Waves"
+    },
+    {
+      "type": "p",
+      "text": "Sound is typically conceived as a phenomenon we hear, but it is physically an oscillation of pressure and kinetic particle displacement. When high-intensity ultrasound waves (40 kHz, beyond human hearing) are focused and reflected back upon themselves, they interfere to produce a standing wave with stationary high-pressure antinodes and zero-velocity nodes capable of trapping and levitating physical matter against gravity."
+    },
+    {
+      "type": "h2",
+      "text": "The Physics of Acoustic Radiation Pressure"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Gor'kov Acoustic Potential: The mathematical framework describing how small particles experience net acoustic radiation forces driving them toward acoustic pressure nodes.",
+        "Phased Array Transducers: Arrays of dozens of piezoelectric ultrasonic emitters adjusting individual wave phases to form dynamic, reconfigurable 3D acoustic traps.",
+        "Containerless Chemical Synthesis: Levitating liquid droplets to study crystal nucleations and pharmaceutical reactions without vessel surface contamination.",
+        "Non-Magnetic Universality: Unlike magnetic levitation which requires ferromagnetic or superconducting materials, acoustic levitation levitates any solid or liquid regardless of magnetic charge."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Acoustic levitation reveals the physical momentum carried by wave packets: sound ceases to be a ghost and becomes a pair of invisible mechanical tweezers.",
+      "cite": "Questo Acoustic Physics & Non-Linear Wave Dynamics Group"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Precision laboratory optical bench focusing lasers through acoustic levitation chamber",
+      "caption": "Holographic acoustic tractor beam: Steering levitated polystyrene spheres along arbitrary 3D trajectories."
+    },
+    {
+      "type": "h2",
+      "text": "From Microfluidics to Biomedical Acoustic Tweezers"
+    },
+    {
+      "type": "p",
+      "text": "Miniaturized surface acoustic wave (SAW) chips are now deployed in lab-on-a-chip microfluidics to sort circulating tumor cells and guide living embryos during IVF without mechanical shear damage."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/icd0boNG8fM",
+      "title": "Sound Can Make Objects Float: Acoustic Levitation Physics",
+      "caption": "High-speed acoustic physics demonstration showing ultrasound standing wave traps and contactless droplet manipulation."
+    },
+    {
+      "type": "p",
+      "text": "Ultrasonic radiation pressure opens radical frontiers for contactless manufacturing, medicine, and containerless material physics."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "arctic-permafrost-thaw-and-methane-feedback-loops",
+  "title": "Arctic Permafrost Thaw & Methane",
+  "excerpt": "The biogeochemistry of yedoma permafrost collapse: thermokarst cratering, methanogenic archaea, carbon feedbacks, and planetary tipping point dynamics.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "category": "science",
+  "subcategory": "climatology",
+  "tags": [
+    "science",
+    "climatology",
+    "permafrost",
+    "methane",
+    "arctic",
+    "geophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Dramatic Arctic landscape showcasing fractured tundra permafrost and glacial thaw meltwater lakes",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Sleeping Carbon Giant of the High North"
+    },
+    {
+      "type": "p",
+      "text": "Circumpolar Arctic permafrost soils lock away an estimated 1,500 billion metric tons of organic carbon—nearly double the amount of carbon currently residing in Earth’s entire atmosphere. Accumulating over tens of thousands of years during the Pleistocene, this frozen mammoth fauna and ancient plant biomass has remained inert in deep cold storage. As the Arctic warms at four times the global average, this organic reservoir is awakening."
+    },
+    {
+      "type": "h2",
+      "text": "Biogeochemical Feedback Mechanisms"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Thermokarst Collapse & Slumps: Ice wedge melting causing catastrophic ground subsidence, forming cratering landscapes and expanding thaw lakes.",
+        "Anoxic Methanogenesis: Saturated, oxygen-starved thaw lake bottoms providing optimal ecological niches for methanogenic archaea to produce potent methane gas (CH4).",
+        "Yedoma Vulnerability: Deep, organic-rich Pleistocene permafrost deposits in Siberia and Alaska that decompose rapidly upon initial thaw.",
+        "Self-Reinforcing Microbial Heating: Heat produced by exothermic microbial metabolic activity accelerating surrounding permafrost melt even through Arctic winter freezes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Permafrost thaw is not a gradual dial; it is a non-linear planetary tipping cascade where the Arctic transitions from a global carbon sink into an active carbon source.",
+      "cite": "Questo Arctic Cryosphere & Planetary Geochemistry Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Satellite view of circumpolar Arctic sea ice and thawing Siberian coastline",
+      "caption": "Satellite InSAR radar interferometry: Tracking surface subsidence across Siberian permafrost basins with millimeter accuracy."
+    },
+    {
+      "type": "h2",
+      "text": "Global Radiative Forcing Implications"
+    },
+    {
+      "type": "p",
+      "text": "Because methane traps over 80 times more heat than carbon dioxide over a 20-year timescale, abrupt thaw pulses threaten to consume significant fractions of the world's remaining carbon budget independent of human industrial emissions."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/ukAQ7L8_Bqw",
+      "title": "What Happens When Arctic Permafrost Thaws? Science Explained",
+      "caption": "Climatological science breakdown examining methane flare seeps, microbial decomposition, and high-latitude tipping cascades."
+    },
+    {
+      "type": "p",
+      "text": "Understanding permafrost carbon release dynamics is imperative for modeling Earth's climate trajectory in the coming century."
+    }
+  ]
+}
