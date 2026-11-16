@@ -214,6 +214,9 @@ export default defineConfig(({ mode }) => {
             if (id.includes('src/data/ebooks.json')) {
               return 'data-ebooks';
             }
+            if (id.includes('src/data/ebooks-cards.json')) {
+              return 'data-ebooks-cards';
+            }
           },
         },
       },

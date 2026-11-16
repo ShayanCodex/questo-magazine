@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import {
   MagnifyingGlassPlusIcon,
   MagnifyingGlassMinusIcon,
@@ -26,7 +26,7 @@ import { cn } from '../lib/utils';
 
 export interface OriginalPdfReaderProps {
   ebook: EBook;
-  initialMode?: 'facsimile' | 'unabridged';
+  initialMode?: 'facsimile' | 'unabridged' | 'pdf';
   className?: string;
   isFullscreen?: boolean;
   onToggleFullscreen?: () => void;
@@ -41,7 +41,7 @@ export function OriginalPdfReader({
   onToggleFullscreen,
   onClose,
 }: OriginalPdfReaderProps) {
-  const [activeMode, setActiveMode] = useState<'facsimile' | 'unabridged'>(initialMode);
+  const [activeMode, setActiveMode] = useState<'facsimile' | 'unabridged' | 'pdf'>(initialMode);
   const [currentPage, setCurrentPage] = useState(1);
   const [zoomLevel, setZoomLevel] = useState(100);
   const [copiedLink, setCopiedLink] = useState(false);
@@ -70,21 +70,81 @@ export function OriginalPdfReader({
 
   const readerContainerRef = useRef<HTMLDivElement>(null);
 
+  // In-memory cache & prefetching registry for 0ms instant page turns
+  const loadedPagesRef = useRef<Set<number>>(new Set());
+  const preloadingRef = useRef<Set<number>>(new Set());
+
+  // Current scanned page URL generator
+  const getPageUrl = useCallback(
+    (pageNumber: number) => {
+      const pageIndex = Math.max(0, pageNumber - 1);
+      return `https://archive.org/download/${safeIdentifier}/page/n${pageIndex}.jpg`;
+    },
+    [safeIdentifier]
+  );
+
   // Current scanned page URL from verified Internet Archive scan repository
   const scannedPageUrl = useMemo(() => {
-    const pageIndex = Math.max(0, currentPage - 1);
-    return `https://archive.org/download/${safeIdentifier}/page/n${pageIndex}.jpg`;
-  }, [safeIdentifier, currentPage]);
+    return getPageUrl(currentPage);
+  }, [getPageUrl, currentPage]);
 
   const archiveTheaterUrl = useMemo(() => {
     return `https://archive.org/details/${safeIdentifier}?view=theater&ui=embed&wrapper=false`;
   }, [safeIdentifier]);
 
-  // Reset page image state when page changes
+  // Aggressive Ahead-Of-Time (AOT) Predictive Preloader & Cache Engine
   useEffect(() => {
+    if (activeMode !== 'facsimile') return;
+
+    // Check if the current page has already been loaded in memory
+    if (loadedPagesRef.current.has(currentPage)) {
+      setIsPageLoading(false);
+      setPageImageError(false);
+    } else {
+      setIsPageLoading(true);
+      setPageImageError(false);
+    }
+
+    // Predictive window: Preload the next 4 pages ahead + 1 page behind
+    const pagesToPrefetch = [
+      currentPage + 1,
+      currentPage + 2,
+      currentPage + 3,
+      currentPage + 4,
+      currentPage - 1,
+    ];
+
+    pagesToPrefetch.forEach((pg) => {
+      if (
+        pg >= 1 &&
+        pg <= totalPages &&
+        !loadedPagesRef.current.has(pg) &&
+        !preloadingRef.current.has(pg)
+      ) {
+        preloadingRef.current.add(pg);
+        const img = new Image();
+        img.src = getPageUrl(pg);
+        img.onload = () => {
+          loadedPagesRef.current.add(pg);
+          preloadingRef.current.delete(pg);
+        };
+        img.onerror = () => {
+          preloadingRef.current.delete(pg);
+        };
+      }
+    });
+  }, [currentPage, safeIdentifier, totalPages, getPageUrl, activeMode]);
+
+  const handlePageImageLoad = useCallback(() => {
+    loadedPagesRef.current.add(currentPage);
+    setIsPageLoading(false);
     setPageImageError(false);
-    setIsPageLoading(true);
-  }, [currentPage, safeIdentifier]);
+  }, [currentPage]);
+
+  const handlePageImageError = useCallback(() => {
+    setIsPageLoading(false);
+    setPageImageError(true);
+  }, []);
 
   // Keyboard navigation for page turns
   useEffect(() => {
@@ -205,8 +265,24 @@ export function OriginalPdfReader({
             title="Read Original Scanned Document"
           >
             <DocumentTextIcon className="h-3.5 w-3.5" />
-            <span>Original PDF Facsimile</span>
+            <span>Original Facsimile</span>
           </button>
+          {isLocal && (
+            <button
+              type="button"
+              onClick={() => setActiveMode('pdf')}
+              className={cn(
+                'px-3 py-1.5 rounded-md font-medium transition-all cursor-pointer flex items-center gap-1.5',
+                activeMode === 'pdf'
+                  ? 'bg-emerald-600 text-white shadow-sm font-semibold'
+                  : 'text-neutral-300 hover:text-white hover:bg-neutral-700/50'
+              )}
+              title="Read Full High-Speed Vector PDF (Fastly CDN Edge)"
+            >
+              <ShieldCheckIcon className="h-3.5 w-3.5 text-emerald-400" />
+              <span>Fast CDN PDF</span>
+            </button>
+          )}
           <button
             type="button"
             onClick={() => setActiveMode('unabridged')}
@@ -417,6 +493,29 @@ export function OriginalPdfReader({
               </button>
             </div>
           </>
+        ) : activeMode === 'pdf' ? (
+          /* Fast CDN PDF Mode Toolbar */
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs font-semibold">
+                <ShieldCheckIcon className="h-3.5 w-3.5" />
+                <span>Fastly CDN Edge Delivery Active</span>
+              </span>
+              <span className="text-neutral-400 hidden sm:inline text-xs">
+                Direct High-Definition Vector PDF • 0ms Native Browser Rendering
+              </span>
+            </div>
+            <a
+              href={safePdfUrl}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs transition-colors"
+            >
+              <ArrowDownTrayIcon className="h-3.5 w-3.5" />
+              <span>Download Fast PDF</span>
+            </a>
+          </div>
         ) : (
           /* Unabridged Complete Chapters Navigation Toolbar */
           <>
@@ -519,9 +618,45 @@ export function OriginalPdfReader({
 
       {/* Main Viewport Body */}
       <main className="flex-1 w-full relative overflow-hidden flex flex-col bg-neutral-950">
-        {activeMode === 'facsimile' ? (
+        {activeMode === 'pdf' ? (
+          /* High-Speed Direct Vector PDF Reader from Questo Vault Release CDN */
+          <div className="w-full h-full flex-1 p-2 sm:p-4 bg-neutral-950 flex flex-col select-none">
+            <div className="w-full h-full min-h-[680px] sm:min-h-[780px] flex-1 rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl relative">
+              <object
+                data={`${safePdfUrl}#page=${currentPage}&toolbar=1&navpanes=0`}
+                type="application/pdf"
+                className="w-full h-full min-h-[680px] sm:min-h-[780px] border-0"
+              >
+                <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center text-neutral-300">
+                  <ShieldCheckIcon className="h-12 w-12 text-emerald-400 mb-3" />
+                  <h4 className="font-display font-bold text-lg text-white mb-2">
+                    Fast CDN PDF Ready
+                  </h4>
+                  <p className="text-xs text-neutral-400 max-w-md mb-6 leading-relaxed">
+                    This public domain masterwork is delivered through our high-speed global Fastly edge network. You can download or view it directly in your PDF app.
+                  </p>
+                  <a
+                    href={safePdfUrl}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs inline-flex items-center gap-2 transition-colors shadow-lg"
+                  >
+                    <ArrowDownTrayIcon className="h-4 w-4" />
+                    <span>Download Fast PDF ({ebook.title})</span>
+                  </a>
+                </div>
+              </object>
+            </div>
+          </div>
+        ) : activeMode === 'facsimile' ? (
           /* Scanned Document Canvas */
           <div className="w-full h-full flex-1 overflow-auto p-4 sm:p-8 flex items-center justify-center relative bg-neutral-950/90 select-none">
+            {/* Top Loading Progress Line for Seamless Non-Blocking Page Turns */}
+            {isPageLoading && (
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-300 to-emerald-500 animate-pulse z-30" />
+            )}
+
             {isTheaterOpen ? (
               /* Internet Archive BookReader 2.0 Theater Embed */
               <div className="w-full h-full min-h-[650px] sm:min-h-[750px] flex-1 rounded-xl overflow-hidden border border-neutral-800 bg-black">
@@ -540,21 +675,24 @@ export function OriginalPdfReader({
                 style={{ transform: `scale(${zoomLevel / 100})` }}
               >
                 {!pageImageError ? (
-                  <div className="relative group rounded-xl overflow-hidden shadow-2xl border border-neutral-800 bg-neutral-900">
+                  <div className="relative group rounded-xl overflow-hidden shadow-2xl border border-neutral-800 bg-neutral-900 transition-all duration-150">
+                    {/* Non-intrusive Corner Buffering Pill */}
                     {isPageLoading && (
-                      <div className="absolute inset-0 flex items-center justify-center bg-neutral-950/60 backdrop-blur-xs z-10">
-                        <div className="animate-spin rounded-full h-10 w-10 border-2 border-emerald-500 border-t-transparent" />
+                      <div className="absolute top-3 right-3 z-20 flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-950/85 backdrop-blur-md border border-neutral-700/80 text-[11px] font-mono text-emerald-400 shadow-xl pointer-events-none">
+                        <div className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                        <span>Buffering p.{currentPage}...</span>
                       </div>
                     )}
                     <img
+                      key={scannedPageUrl}
                       src={scannedPageUrl}
                       alt={`${ebook.title} - Scanned Page ${currentPage}`}
-                      className="max-h-[82vh] w-auto object-contain rounded-lg shadow-xl"
-                      onLoad={() => setIsPageLoading(false)}
-                      onError={() => {
-                        setIsPageLoading(false);
-                        setPageImageError(true);
-                      }}
+                      className={cn(
+                        'max-h-[82vh] w-auto object-contain rounded-lg shadow-xl transition-opacity duration-200',
+                        isPageLoading ? 'opacity-80' : 'opacity-100'
+                      )}
+                      onLoad={handlePageImageLoad}
+                      onError={handlePageImageError}
                     />
                   </div>
                 ) : (
@@ -579,14 +717,22 @@ export function OriginalPdfReader({
                       <p className="font-serif italic text-sm leading-relaxed text-amber-200/90 max-w-md mx-auto">
                         "Document page {currentPage} of {totalPages}. Original certified scan preserved in the worldwide public domain."
                       </p>
-                      <div className="pt-2">
+                      <div className="pt-2 flex flex-wrap items-center justify-center gap-2">
+                        <button
+                          type="button"
+                          onClick={() => setActiveMode('unabridged')}
+                          className="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-sans text-xs font-semibold cursor-pointer transition-colors shadow-sm inline-flex items-center gap-1.5"
+                        >
+                          <BookOpenIcon className="h-4 w-4" />
+                          <span>Read Complete 12 Chapters (Instant)</span>
+                        </button>
                         <button
                           type="button"
                           onClick={() => setIsTheaterOpen(true)}
-                          className="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-sans text-xs font-semibold cursor-pointer transition-colors shadow-sm inline-flex items-center gap-1.5"
+                          className="px-3.5 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-neutral-200 border border-neutral-700 font-sans text-xs font-semibold cursor-pointer transition-colors shadow-sm inline-flex items-center gap-1.5"
                         >
-                          <SparklesIcon className="h-4 w-4" />
-                          <span>Switch to Interactive Archive Theater</span>
+                          <SparklesIcon className="h-4 w-4 text-amber-400" />
+                          <span>Archive Theater</span>
                         </button>
                       </div>
                     </div>
