@@ -52,6 +52,8 @@ const VERIFIED_ARCHIVE_IDS: Record<string, string> = {
   'sidhartha': 'siddharthaeinind00hessuoft',
   'les-miserables': 'lesmiserables01hugo',
   'the-count-of-monte-cristo': 'countofmontecris01duma',
+  'timaeus': 'timaeusofplato00platiala',
+  'timaeus-plato': 'timaeusofplato00platiala',
 };
 
 export function getVerifiedArchiveIdentifier(slug: string, rawIdentifier?: string): string {

@@ -1,7 +1,7 @@
 {
   "slug": "recursive-starks-and-verifiable-computation-at-scale",
-  "title": "تکراری STARKs اور Halo2: Succinct Cryptographic Verification کی ریاضی",
-  "excerpt": "کثیر الثانی کمٹمنٹ اسکیموں کے ذریعے ایک ریاضیاتی سفر، Reed-Solomon proximity testing، fast Reed-Solomon IOP، اور ریکسریو پروف کمپوزیشن۔",
+  "title": "Recursive STARKs & Halo2: The Mathematics of Succinct Cryptographic Verification",
+  "excerpt": "ایک ریاضیاتی سفر بذریعہ کثیر الجہتی کمٹمنٹ اسکیم، Reed-Solomon proximity testing، fast Reed-Solomon IOP، اور recursive پروف کمپوزیشن۔",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -11,69 +11,69 @@
     "blockchain-scaling",
     "mathematics"
   ],
-  "image": "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Abstract geometric lattice network representing succinct zero-knowledge cryptographic proofs",
+  "image": "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "3D جیومیٹرک کرپٹوگرافک جالی اور وکندریقرت بلاکچین تصدیقی نیٹ ورک",
   "body": [
     {
       "type": "h2",
-      "text": "مختصر تصدیق کے لیے ریاضی کی تلاش"
+      "text": "درست تصدیق کے لئے ریاضی کی جستجو"
     },
     {
       "type": "p",
-      "text": "قابل تصدیق حساب کتاب بنیادی پیش رفت کی نمائندگی کرتا ہے جو عوامی وکندریقرت ریاستی مشینوں کو افقی طور پر پیمانے کے قابل بناتا ہے۔ بے ہودہ عملدرآمد کے نیٹ ورکس میں، ہر توثیق کرنے والے نوڈ کو ریاست کی درستگی کی تصدیق کے لیے ہر لین دین کو ترتیب وار دوبارہ انجام دینا چاہیے۔ اسکیل ایبل ٹرانسپیرنٹ آرگیومینٹس آف نالج (اسٹارکس) اس رکاوٹ کو الٹ دیتے ہیں: ایک واحد ناقابل اعتماد کہاوت لاکھوں ریاستی ٹرانزیشنز کی کمپیوٹیشنل درستگی کی تصدیق کرنے والا ایک مختصر کرپٹوگرافک ثبوت تیار کرتا ہے، جسے کوئی بھی تصدیق کنندہ لوگاریتھمک وقت میں چیک کرسکتا ہے۔"
+      "text": "قابل تصدیق حساب کتاب عوامی وکندریقرت ریاستی مشینوں کو افقی طور پر پیمانے کے قابل بنانے والی بنیادی پیش رفت کی نمائندگی کرتا ہے۔ بے ہودہ عملدرآمد کے نیٹ ورکس میں، ہر توثیق کرنے والے نوڈ کو ریاست کی درستگی کی تصدیق کے لیے ہر لین دین کو ترتیب وار دوبارہ انجام دینا چاہیے۔ اسکیل ایبل ٹرانسپیرنٹ آرگیومینٹس آف نالج (اسٹارکس) اس رکاوٹ کو الٹ دیتے ہیں: ایک واحد ناقابل اعتماد کہاوت لاکھوں ریاستی ٹرانزیشنز کی کمپیوٹیشنل درستگی کی تصدیق کرنے والا ایک مختصر کرپٹوگرافک ثبوت تیار کرتا ہے، جسے کوئی بھی تصدیق کنندہ لوگاریتھمک وقت میں چیک کرسکتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "مختصر تصدیق کے لیے ریاضی کی تلاش"
+      "text": "ZK-STARKs کے بنیادی آرکیٹیکچرل میکینکس"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Algebraic intermediate representation and execution trace polynomial matrix",
-      "caption": "AIR arithmetization: translating state machine execution steps into algebraic constraint polynomials."
+      "alt": "Recursive STARKs & Halo2: The Mathematics of Succinct Cryptographic Verification - Operational Figure 4",
+      "caption": "تجرباتی مشاہدہ: آپریشنل میکانکس اور فاؤنڈیشنل ٹیلی میٹری سپورٹنگ کرپٹوگرافک تصدیق۔"
     },
     {
       "type": "ul",
       "items": [
-        "Arithmetization: Transforming computational execution traces into systems of algebraic intermediate representations (AIR) or polynomial constraint systems.",
-        "Reed-Solomon Proximity Testing: Encoding constraint evaluations over large evaluation domains such that computational invalidity manifests as maximal distance from valid Reed-Solomon codewords.",
-        "FRI Protocol (Fast Reed-Solomon IOP of Proximity): An interactive oracle proof that recursively halves polynomial degrees, proving proximity to low-degree spaces with polylogarithmic communication complexity.",
-        "Transparent Trustless Setup: Utilizing publicly verifiable collision-resistant hash functions rather than elliptic curve toxic waste parameters, guaranteeing quantum resistance and zero setup vulnerability."
+        "ریاضی: حسابی عمل درآمد کے نشانات کو الجبری انٹرمیڈیٹ نمائندگی (AIR) یا کثیر الجہتی رکاوٹ کے نظاموں میں تبدیل کرنا۔",
+        "Reed-Solomon Proximity Testing: بڑے ایویلیویشن ڈومینز پر رکاوٹوں کی تشخیص کو انکوڈنگ کرنا جیسے کہ کمپیوٹیشنل ناقص درست Reed-Solomon کوڈ ورڈز سے زیادہ سے زیادہ فاصلے کے طور پر ظاہر ہوتا ہے۔",
+        "FRI پروٹوکول (قربت کا فاسٹ ریڈ-سلومن IOP): ایک انٹرایکٹو اوریکل ثبوت جو کثیر الثانی ڈگریوں کو بار بار آدھا کر دیتا ہے، پولی لوگیرتھمک کمیونیکیشن پیچیدگی کے ساتھ کم ڈگری والی جگہوں کی قربت ثابت کرتا ہے۔",
+        "شفاف ٹرسٹ لیس سیٹ اپ: بیضوی وکر کے زہریلے فضلے کے پیرامیٹرز کے بجائے عوامی طور پر قابل تصدیق تصادم مزاحم ہیش فنکشنز کا استعمال، کوانٹم مزاحمت اور صفر سیٹ اپ کے خطرے کی ضمانت دیتا ہے۔"
       ]
     },
     {
       "type": "quote",
       "text": "تکراری صفر علمی ثبوت کمپیوٹیشنل وقت کو جیومیٹرک اسپیس میں تبدیل کرتے ہیں، جس سے کسی ایک توثیقی قدم کو بے حد تاریخی عمل کی سالمیت کی توثیق ہوتی ہے۔",
-      "cite": "Cryptographic Foundations & Verifiable Systems Monograph"
+      "cite": "کریپٹوگرافک فاؤنڈیشنز اور قابل تصدیق سسٹمز مونوگراف"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Recursive STARK proof tree folding millions of transactions into single succinct proof",
-      "caption": "Recursive proof aggregation: Merkle tree verification folding thousands of execution batches into one master proof."
+      "alt": "ریکسریو اسٹارکس اینڈ ہیلو 2: دی میتھمیٹکس آف سکسینکٹ کریپٹوگرافک تصدیق - آپریشنل فگر 7",
+      "caption": "تجرباتی مشاہدہ: آپریشنل میکانکس اور فاؤنڈیشنل ٹیلی میٹری سپورٹنگ کرپٹوگرافک تصدیق۔"
     },
     {
       "type": "h2",
-      "text": "مختصر تصدیق کے لیے ریاضی کی تلاش"
+      "text": "پیمانے پر بار بار ہونے والا ثبوت جمع"
     },
     {
       "type": "p",
-      "text": "قابل تصدیق حساب کتاب بنیادی پیش رفت کی نمائندگی کرتا ہے جو عوامی وکندریقرت ریاستی مشینوں کو افقی طور پر پیمانے کے قابل بناتا ہے۔ بے ہودہ عملدرآمد کے نیٹ ورکس میں، ہر توثیق کرنے والے نوڈ کو ریاست کی درستگی کی تصدیق کے لیے ہر لین دین کو ترتیب وار دوبارہ انجام دینا چاہیے۔ اسکیل ایبل ٹرانسپیرنٹ آرگیومینٹس آف نالج (اسٹارکس) اس رکاوٹ کو الٹ دیتے ہیں: ایک واحد ناقابل اعتماد کہاوت لاکھوں ریاستی ٹرانزیشنز کی کمپیوٹیشنل درستگی کی تصدیق کرنے والا ایک مختصر کرپٹوگرافک ثبوت تیار کرتا ہے، جسے کوئی بھی تصدیق کنندہ لوگاریتھمک وقت میں چیک کرسکتا ہے۔"
+      "text": "جدید پروف سسٹمز میں تبدیلی کی پیش رفت ریکسریو پروف کمپوزیشن ہے: STARK تصدیق کنندہ کی منطق کو دوسرے STARK کے اندر ایک ریاضی والے رکاوٹ کے نظام کے طور پر لکھنا۔ متوازن مرکل درختوں میں ثبوتوں کو جمع کرنے سے، ہزاروں انفرادی پھانسی کے بیچوں کو ایک فیصد کے ایک مقررہ حصے کے لیے ایک ہی ماسٹر پروف کی تصدیق کے قابل آن چین میں بار بار فولڈ کیا جا سکتا ہے۔"
     },
     {
       "type": "video",
-      "title": "Recursive STARKs and Polynomial Commitments Deep Dive",
-      "caption": "Mathematical exploration of FRI proximity testing, execution trace arithmetization, and recursive proof verification.",
-      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "تکراری ستارے اور کثیر الثانی کمٹمنٹس گہری غوطہ",
+      "caption": "FRI قربت کی جانچ، ایگزیکیوشن ٹریس آرتھمیٹائزیشن، اور تکراری ثبوت کی توثیق کی ریاضی کی تلاش۔"
     },
     {
       "type": "h2",
-      "text": "مختصر تصدیق کے لیے ریاضی کی تلاش"
+      "text": "وکندریقرت تہذیبوں کو بااختیار بنانا"
     },
     {
       "type": "p",
-      "text": "قابل تصدیق حساب کتاب بنیادی پیش رفت کی نمائندگی کرتا ہے جو عوامی وکندریقرت ریاستی مشینوں کو افقی طور پر پیمانے کے قابل بناتا ہے۔ بے ہودہ عملدرآمد کے نیٹ ورکس میں، ہر توثیق کرنے والے نوڈ کو ریاست کی درستگی کی تصدیق کے لیے ہر لین دین کو ترتیب وار دوبارہ انجام دینا چاہیے۔ اسکیل ایبل ٹرانسپیرنٹ آرگیومینٹس آف نالج (اسٹارکس) اس رکاوٹ کو الٹ دیتے ہیں: ایک واحد ناقابل اعتماد کہاوت لاکھوں ریاستی ٹرانزیشنز کی کمپیوٹیشنل درستگی کی تصدیق کرنے والا ایک مختصر کرپٹوگرافک ثبوت تیار کرتا ہے، جسے کوئی بھی تصدیق کنندہ لوگاریتھمک وقت میں چیک کرسکتا ہے۔"
+      "text": "مالیاتی لیجرز سے آگے، مختصر خفیہ دلائل قابل تصدیق مصنوعی ذہانت، رازداری کو محفوظ رکھنے والے شناختی نظام، اور بے اعتماد کراس انسٹیٹیوشنل آڈٹ کے لیے بنیادی ریاضی کی ابتدائی معلومات فراہم کرتے ہیں۔ حساب کو توثیق سے الگ کر کے، صفر علمی فن تعمیر وکندریقرت کرپٹوگرافک اعتماد کے لیے ساختی بنیاد فراہم کرتے ہیں۔"
     }
   ],
-  "sourceHash": "c5cdc7eeeaeebe7ae1b57b5a686e1ed3f30a8730"
+  "sourceHash": "33404de307add18b4cf6527db88512b60aaceb9a"
 }

@@ -5,7 +5,7 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 00:42:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 01:12:06 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[Aerobic Glycolysis, Lactate Threshold 2 & The Physiology of Sub-2 Marathons]]></title>
@@ -26,6 +26,15 @@
       <category>sports</category>
     </item>
     <item>
+      <title><![CDATA[Anamorphic Optics & The Geometry of Widescreen Cinematography]]></title>
+      <link>https://questo-blog.netlify.app/articles/anamorphic-optics-and-the-geometry-of-widescreen-cinematography</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/anamorphic-optics-and-the-geometry-of-widescreen-cinematography</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A cinematographic optics monograph on cylindrical lens distortion, horizontal bokeh ovality, blue streak flare physics, and photochemical widescreen aesthetics.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>entertainment</category>
+    </item>
+    <item>
       <title><![CDATA[Microbiome Colonization, Ancient Grain Einkorn & Sourdough Acidification]]></title>
       <link>https://questo-blog.netlify.app/articles/ancient-einkorn-grain-and-sourdough-microbiome-acidification</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/ancient-einkorn-grain-and-sourdough-microbiome-acidification</guid>
@@ -42,6 +51,15 @@
       <description><![CDATA[A spatial acoustical monograph examining vineyard versus shoebox geometries, lateral sound energy fractions, and quadratic-residue diffuser arrays in symphonic halls.]]></description>
       <author><![CDATA[Mateo Silva]]></author>
       <category>architecture-and-space</category>
+    </item>
+    <item>
+      <title><![CDATA[Attentional Biorhythms & Ultradian Deep Work Cycles]]></title>
+      <link>https://questo-blog.netlify.app/articles/attentional-biorhythms-and-ultradian-performance-cycles</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/attentional-biorhythms-and-ultradian-performance-cycles</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A cognitive neuroscience analysis of basic rest-activity cycles (BRAC), prefrontal cortex metabolic fatigue, and circadian light entrainment for sustained creative focus.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>lifestyle</category>
     </item>
     <item>
       <title><![CDATA[Cognitive Ergonomics: Attentional Residue, Context Switching & Spatial Focus]]></title>
@@ -71,6 +89,15 @@
       <category>crypto</category>
     </item>
     <item>
+      <title><![CDATA[Fascial Tensegrity & Connective Tissue Viscoelasticity in Athletics]]></title>
+      <link>https://questo-blog.netlify.app/articles/fascial-tensegrity-and-connective-tissue-viscoelasticity</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/fascial-tensegrity-and-connective-tissue-viscoelasticity</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A biomechanical tissue mechanics investigation into myofascial meridians, collagen cross-linking, fluid shear stress, and injury prevention in elite sprinters.]]></description>
+      <author><![CDATA[Liam O’Connor]]></author>
+      <category>fitness</category>
+    </item>
+    <item>
       <title><![CDATA[Heirloom Grain Genomics: Landrace Wheats, Gluten Network Rheology & Soil Microbiomes]]></title>
       <link>https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology</guid>
@@ -78,6 +105,24 @@
       <description><![CDATA[Analyzing the molecular genetics of Einkorn, Emmer, and Khorasan: dough elasticity metrics, enzymatic amylase activity, and regenerative dry-farming resilience.]]></description>
       <author><![CDATA[Sofia Rossi]]></author>
       <category>food</category>
+    </item>
+    <item>
+      <title><![CDATA[Linear Types & Affine Type Systems in Systems Programming]]></title>
+      <link>https://questo-blog.netlify.app/articles/linear-types-and-affine-type-systems-in-compiler-design</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/linear-types-and-affine-type-systems-in-compiler-design</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A programming language theory exploration into linear logic, affine resource tracking, memory consumption guarantees, and safe zero-cost abstractions in compile-time systems.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Monumental Direct Carving & The Textural Permanence of Granite]]></title>
+      <link>https://questo-blog.netlify.app/articles/monumental-direct-carving-and-the-textural-permanence-of-granite</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/monumental-direct-carving-and-the-textural-permanence-of-granite</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A material sculpture analysis of direct carving (taille directe), crystalline igneous rock petrology, pneumatic chisel craft, and twentieth-century modernist form.]]></description>
+      <author><![CDATA[Anne Hardy]]></author>
+      <category>art-and-culture</category>
     </item>
     <item>
       <title><![CDATA[3D Gaussian Splatting in Robotics: Sub-Millisecond Spatial Mapping & SLAM Systems]]></title>
@@ -104,6 +149,15 @@
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[An orbital astrophysics analysis of high-assay low-enriched uranium fission reactors, hydrogen cryogenic turbopumps, and rapid interplanetary transfer windows.]]></description>
       <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>science</category>
+    </item>
+    <item>
+      <title><![CDATA[Oceanic Biological Carbon Pumps & Mesopelagic Carbon Sequestration]]></title>
+      <link>https://questo-blog.netlify.app/articles/oceanic-biological-carbon-pumps-and-mesopelagic-flux</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/oceanic-biological-carbon-pumps-and-mesopelagic-flux</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A marine biogeochemistry analysis of phytoplankton bloom dynamics, marine snow gravitational settling, and long-term carbon sequestration in the abyssal zone.]]></description>
+      <author><![CDATA[Anne Hardy]]></author>
       <category>science</category>
     </item>
     <item>
@@ -170,6 +224,15 @@
       <category>technology</category>
     </item>
     <item>
+      <title><![CDATA[Submarine Fiber-Optic Cables & The Physical Chokepoints of Global Data]]></title>
+      <link>https://questo-blog.netlify.app/articles/submarine-fiber-optic-cables-and-geopolitical-chokepoints</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/submarine-fiber-optic-cables-and-geopolitical-chokepoints</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A physical infrastructure investigation into trans-oceanic subsea telecommunication cable landings, shallow-water seabed sabotage vulnerabilities, and sovereign cloud routing.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>news</category>
+    </item>
+    <item>
       <title><![CDATA[The Tectonic Permanence of Pozzolanic Concrete: Vitruvian Durability in Modern Civil Engineering]]></title>
       <link>https://questo-blog.netlify.app/articles/tectonic-permanence-and-the-weathering-of-pozzolanic-concrete</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/tectonic-permanence-and-the-weathering-of-pozzolanic-concrete</guid>
@@ -224,6 +287,15 @@
       <category>software</category>
     </item>
     <item>
+      <title><![CDATA[The Mechanics of Deep-Tech Commercialization & Capex Financing]]></title>
+      <link>https://questo-blog.netlify.app/articles/the-mechanics-of-deep-tech-commercialization-and-capital-expenditure</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-mechanics-of-deep-tech-commercialization-and-capital-expenditure</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A venture economics study of pilot manufacturing scaling, non-dilutive sovereign grant financing, hardware technology readiness levels (TRL), and industrial valley-of-death transitions.]]></description>
+      <author><![CDATA[Claire Dupont]]></author>
+      <category>business</category>
+    </item>
+    <item>
       <title><![CDATA[The Mechanics of Founder Equity: Cap Tables, Liquidation Preferences & Dilution Cascades]]></title>
       <link>https://questo-blog.netlify.app/articles/the-mechanics-of-founder-equity-and-dilution-cascades</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/the-mechanics-of-founder-equity-and-dilution-cascades</guid>
@@ -242,6 +314,15 @@
       <category>news</category>
     </item>
     <item>
+      <title><![CDATA[Trans-Oceanic Great Circle Navigation & Polar Aviation Corridors]]></title>
+      <link>https://questo-blog.netlify.app/articles/trans-oceanic-great-circle-navigation-and-polar-corridors</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/trans-oceanic-great-circle-navigation-and-polar-corridors</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An aeronautical geography study of spherical trigonometry, jet stream thermodynamics, space weather radiation shielding, and transpolar flight economics.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>travel</category>
+    </item>
+    <item>
       <title><![CDATA[The Treasury Basis Trade: Hedge Fund Leverage, Cash-Futures Discrepancies & Repo Fragility]]></title>
       <link>https://questo-blog.netlify.app/articles/treasury-basis-trade-and-shadow-banking-leverage</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/treasury-basis-trade-and-shadow-banking-leverage</guid>
@@ -249,6 +330,15 @@
       <description><![CDATA[Deconstructing the multi-trillion-dollar cash-futures arbitrage trade: collateral transformation, central counterparty clearing limits, and systemic liquidity drawdowns.]]></description>
       <author><![CDATA[Claire Dupont]]></author>
       <category>finance</category>
+    </item>
+    <item>
+      <title><![CDATA[Vagus Nerve Stimulation & Heart Rate Variability Autonomic Dynamics]]></title>
+      <link>https://questo-blog.netlify.app/articles/vagus-nerve-stimulation-and-heart-rate-variability-autonomics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/vagus-nerve-stimulation-and-heart-rate-variability-autonomics</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A neurocardiology investigation into parasympathetic vagal tone, respiratory sinus arrhythmia, baroreceptor sensitivity, and stress adaptation biomarkers.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>health</category>
     </item>
     <item>
       <title><![CDATA[VO2 Max Kinetics: Capillary Density, Cardiac Output & Lactate Clearance Dynamics]]></title>

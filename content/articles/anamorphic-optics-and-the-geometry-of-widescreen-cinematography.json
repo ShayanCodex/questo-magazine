@@ -1,0 +1,74 @@
+{
+  "slug": "anamorphic-optics-and-the-geometry-of-widescreen-cinematography",
+  "title": "Anamorphic Optics & The Geometry of Widescreen Cinematography",
+  "excerpt": "A cinematographic optics monograph on cylindrical lens distortion, horizontal bokeh ovality, blue streak flare physics, and photochemical widescreen aesthetics.",
+  "date": "2026-11-16",
+  "author": "Mateo Silva",
+  "category": "entertainment",
+  "subcategory": "cinema-and-film",
+  "tags": [
+    "entertainment",
+    "cinema-and-film",
+    "optics",
+    "visual-arts",
+    "cinematography"
+  ],
+  "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Professional 35mm motion picture cinema camera fitted with heavy optical cylindrical glass elements",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Optical Squeeze: Cylindrical Elements and Aspect Ratio Engineering"
+    },
+    {
+      "type": "p",
+      "text": "Standard spherical lenses project circular image fields with uniform magnification along both Cartesian axes. Anamorphic cinematography, invented during the First World War by Henri Chrétien for military tank periscopes and later adapted by CinemaScope, introduces cylindrical optical elements that compress the horizontal field of view by a factor of 2.0 while leaving the vertical dimension untouched. When de-squeezed during projection, this optical compression yields a monumental 2.39:1 widescreen canvas without sacrificing vertical sensor resolution."
+    },
+    {
+      "type": "h2",
+      "text": "Key Points"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Differential Focal Length: An anamorphic lens possesses two distinct focal lengths: a wider horizontal field coupled with the vertical perspective and depth of field of a longer telephoto optic.",
+        "Oval Bokeh Characteristics: Out-of-focus background highlights are stretched vertically into signature elliptical disks rather than circular geometries.",
+        "Horizontal Flare Streaks: Internal reflections across cylindrical element coatings scatter specular light horizontally, creating iconic colored flares.",
+        "Anamorphic Mumps Correction: Modern Panavision and Cooke designs incorporate counter-rotating cylindrical groups to eliminate facial distortion at minimum focus distances."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Spherical lenses reproduce reality with clinical precision; anamorphic glass interprets the world through the romantic poetry of optical aberration, depth dimensionality, and visual majesty.",
+      "cite": "American Cinematographer & Optical Engineering Monograph"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Expansive historic cinema auditorium with rows of velvet seats facing the massive theatrical screen",
+      "caption": "Theatrical scale: projecting panoramic 2.39:1 aspect ratio compositions across monumental communal auditoriums."
+    },
+    {
+      "type": "h2",
+      "text": "Field Curvature and Chromatic Aberration as Aesthetic Texture"
+    },
+    {
+      "type": "p",
+      "text": "In our contemporary era of sterile digital sensors, the organic optical imperfections of vintage anamorphic glass—subtle barrel distortion along edges, gentle center-weighted sharpness, and chromatic fringing—reintroduce a tactile, handcrafted dimension to cinema imagery."
+    },
+    {
+      "type": "video",
+      "title": "Cinematography Craft, Visual Geometry, and Lens Aesthetics",
+      "caption": "Masterclass on optical physics, lighting ratios, and the visual geometry of widescreen motion picture storytelling.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
+    },
+    {
+      "type": "h2",
+      "text": "The Enduring Appeal of Large-Format Anamorphic Storytelling"
+    },
+    {
+      "type": "p",
+      "text": "As filmmakers pair large-format 65mm digital sensors with modern bespoke anamorphic glass, the medium transcends pure entertainment, offering an immersive visual poetry that honors human spatial vision."
+    }
+  ]
+}

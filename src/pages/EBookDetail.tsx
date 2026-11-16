@@ -31,7 +31,13 @@ export function EBookDetail() {
   const [copiedLink, setCopiedLink] = useState(false);
 
   const ebook = useMemo(() => {
-    return EBOOKS_LIST.find((b) => b.slug === slug);
+    if (!slug) return undefined;
+    return (
+      EBOOKS_LIST.find((b) => b.slug === slug) ||
+      EBOOKS_LIST.find((b) => b.slug === `${slug}-plato`) ||
+      EBOOKS_LIST.find((b) => b.slug.startsWith(`${slug}-`)) ||
+      EBOOKS_LIST.find((b) => b.identifier === slug)
+    );
   }, [slug]);
 
   const relatedEbooks = useMemo(() => {

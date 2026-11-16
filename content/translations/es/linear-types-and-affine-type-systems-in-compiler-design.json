@@ -1,0 +1,73 @@
+{
+  "slug": "linear-types-and-affine-type-systems-in-compiler-design",
+  "title": "Tipos lineales y sistemas de tipos afines en la programación de sistemas",
+  "excerpt": "Una exploración de la teoría del lenguaje de programación en lógica lineal, seguimiento de recursos afines, garantías de consumo de memoria y abstracciones seguras de costo cero en sistemas en tiempo de compilación.",
+  "date": "2026-11-16",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "software",
+    "languages-and-compilers",
+    "compilers",
+    "systems-programming",
+    "type-systems"
+  ],
+  "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Sintaxis de código de sistemas de bajo nivel resaltada en terminales compiladores de alta resolución",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El dilema de la fuga de recursos en entornos de recolección de basura"
+    },
+    {
+      "type": "p",
+      "text": "Los lenguajes administrados tradicionales delegan los ciclos de vida de los recursos a recolectores de basura no deterministas. Si bien el seguimiento de la recolección de basura resuelve la seguridad de la memoria arbitraria, no logra administrar identificadores finitos del sistema operativo, como descriptores de archivos, conexiones de bases de datos, claves criptográficas y búferes de GPU. La lógica lineal, introducida por Jean-Yves Girard, modela la verdad como un recurso consumible: un valor lineal debe consumirse exactamente una vez, eliminando tanto las fugas de recursos como las vulnerabilidades de uso después de la liberación en el momento de la compilación."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Restricciones lineales frente a afines: los tipos lineales imponen el consumo exactamente una vez; Los tipos afines permiten el consumo como máximo una vez, lo que forma la base matemática de la semántica de propiedad de Rust.",
+        "Sistemas de tipo subestructural: Descartar las reglas estructurales de debilitamiento (descartar valores) y contracción (duplicar valores) produce seguridad de recursos matemáticamente demostrable.",
+        "Seguridad de capacidad estática: la aplicación de tokens lineales permite la verificación de protocolos en tiempo de compilación, lo que garantiza que no se pueda escribir en los sockets de red después del cierre.",
+        "Tiempo de ejecución de costo cero: debido a que las comprobaciones de consumo se resuelven por completo durante la elaboración del tipo, los archivos binarios se ejecutan sin sobrecarga de recuento de referencias."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Los tipos lineales transforman la corrección de la máquina de estados de una aspiración en tiempo de ejecución a una ley matemática inmutable aplicada por el compilador antes de que se emita un solo byte de código de máquina.",
+      "cite": "Transacciones ACM en lenguajes y sistemas de programación"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Componentes de arquitectura física y mainframe de computadora antigua que simbolizan el hardware informático temprano",
+      "caption": "Límites de recursos: mapeo de restricciones lógicas lineales abstractas en registros de hardware físico."
+    },
+    {
+      "type": "h2",
+      "text": "Propiedad afín y semántica de movimiento en lenguajes fronterizos"
+    },
+    {
+      "type": "p",
+      "text": "Al implementar una semántica de movimiento afín en lugar de una linealidad estricta, los lenguajes modernos permiten que los valores salgan del alcance de manera determinista. RAII (La adquisición de recursos es inicialización) se combina con el seguimiento afín para invocar destructores automáticamente sin necesidad de limpieza manual."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
+      "title": "Arquitectura del compilador, sistemas de tipos y verificación formal",
+      "caption": "Conferencia de informática que examina sistemas de tipos subestructurales, pasos de optimización del compilador y modelos de memoria."
+    },
+    {
+      "type": "h2",
+      "text": "Protocolos en tiempo de compilación y concurrencia concurrente segura"
+    },
+    {
+      "type": "p",
+      "text": "Los canales lineales imponen tipos de sesión: secuencias de protocolos donde las primitivas de envío y recepción se alternan de forma determinista. Esto garantiza la ausencia de puntos muertos y condiciones de carrera en los microservicios distribuidos."
+    }
+  ],
+  "sourceHash": "0eff32dad713ba2cba4f1f46e2081b3713575034"
+}

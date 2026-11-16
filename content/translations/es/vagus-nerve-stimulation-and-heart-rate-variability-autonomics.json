@@ -1,0 +1,73 @@
+{
+  "slug": "vagus-nerve-stimulation-and-heart-rate-variability-autonomics",
+  "title": "Estimulación del nervio vago y variabilidad de la frecuencia cardíaca Dinámica autónoma",
+  "excerpt": "Una investigación neurocardiológica sobre el tono vagal parasimpático, la arritmia de los senos respiratorios, la sensibilidad de los barorreceptores y los biomarcadores de adaptación al estrés.",
+  "date": "2026-11-16",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "health",
+    "mental-wellness",
+    "neuroscience",
+    "cardiology",
+    "preventive-medicine"
+  ],
+  "image": "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Ondas oceánicas suaves e hipnóticas que ilustran el equilibrio y la armonía fisiológica parasimpática",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El eje neurocardíaco: frenado vagal y equilibrio autónomo"
+    },
+    {
+      "type": "p",
+      "text": "Contrariamente a la percepción común generalizada, un corazón humano sano no late con la precisión mecánica de un metrónomo. En un sistema nervioso autónomo resistente, los intervalos entre latidos sucesivos (intervalos R-R) exhiben una variabilidad fractal compleja conocida como variabilidad de la frecuencia cardíaca (VFC). Esta fluctuación latido a latido está orquestada principalmente por el décimo par craneal: el nervio vago errante, cuyas fibras eferentes parasimpáticas actúan como un freno fisiológico sobre el nódulo sinoauricular."
+    },
+    {
+      "type": "h2",
+      "text": "Puntos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Media cuadrática de diferencias sucesivas (RMSSD): una métrica validada en el dominio del tiempo que refleja la modulación vagal latido a latido independiente del tono simpático.",
+        "Arritmia sinusal respiratoria (RSA): la frecuencia cardíaca se acelera naturalmente durante la inhalación (retirada vagal) y se desacelera durante la exhalación lenta (activación vagal).",
+        "La vía antiinflamatoria colinérgica: la estimulación vagal eferente libera acetilcolina que se une a los receptores nicotínicos alfa-7 en los macrófagos, deteniendo la producción de citoquinas inflamatorias.",
+        "Estimulación vago auricular transcutánea (taVNS): la estimulación eléctrica no invasiva de la rama auricular vago modula la liberación de norepinefrina del locus coeruleus del tronco encefálico."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La alta variabilidad de la frecuencia cardíaca es la firma fisiológica de la adaptabilidad neuronal. Un latido cardíaco rígido indica un sistema nervioso autónomo atrapado en una angustia simpática crónica.",
+      "cite": "Journal of Neurocardiology & Autonomic Neuroscience"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Majestuosa tortuga marina deslizándose pacíficamente a través de tranquilas corrientes oceánicas profundas en estado de homeostasis natural",
+      "caption": "Tranquilidad autónoma: equilibrando la activación simpática con la dominancia vagal parasimpática restauradora."
+    },
+    {
+      "type": "h2",
+      "text": "Respiración resonante de ritmo lento y arrastre barorreflejo"
+    },
+    {
+      "type": "p",
+      "text": "La respiración de ritmo a aproximadamente seis respiraciones por minuto (0,1 Hz) sincroniza la ventilación pulmonar con las ondas de Mayer vasculares, maximizando la sensibilidad de los barorreceptores y generando aumentos masivos en el tono vagal parasimpático."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
+      "title": "Neurocardiología, biomarcadores de la VFC y regulación del sistema nervioso autónomo",
+      "caption": "Conferencia de ciencias médicas sobre anatomía del sistema nervioso autónomo, electrofisiología e intervenciones no farmacológicas contra el estrés."
+    },
+    {
+      "type": "h2",
+      "text": "Biomarcadores clínicos de longevidad y equilibrio mental"
+    },
+    {
+      "type": "p",
+      "text": "El seguimiento de la VFC matutina y nocturna proporciona a los médicos y atletas un biomarcador objetivo imposible de piratear de recuperación fisiológica, inflamación sistémica y adaptación al estrés neuronal."
+    }
+  ],
+  "sourceHash": "dd4051b4c0db41f985a3e197eea31caed985cf20"
+}

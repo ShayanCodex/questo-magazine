@@ -1,0 +1,73 @@
+{
+  "slug": "anamorphic-optics-and-the-geometry-of-widescreen-cinematography",
+  "title": "Anamorphe Optik und die Geometrie der Breitbild-Kinematographie",
+  "excerpt": "Eine Monographie über kinematografische Optik über zylindrische Linsenverzerrung, horizontale Bokeh-Ovalität, Blue-Streak-Flare-Physik und fotochemische Breitbild-Ästhetik.",
+  "date": "2026-11-16",
+  "author": "Mateo Silva",
+  "tags": [
+    "entertainment",
+    "cinema-and-film",
+    "optics",
+    "visual-arts",
+    "cinematography"
+  ],
+  "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Professionelle 35-mm-Kinokamera mit schweren optischen zylindrischen Glaselementen.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der optische Druck: Zylindrische Elemente und Seitenverhältnistechnik."
+    },
+    {
+      "type": "p",
+      "text": "Standardmäßige sphärische Objektive projizieren kreisförmige Bildfelder mit gleichmäßiger Vergrößerung entlang beider kartesischer Achsen. Die anamorphotische Kinematographie, die während des Ersten Weltkriegs von Henri Chrétien für militärische Panzerperiskope erfunden und später von CinemaScope adaptiert wurde, führt zylindrische optische Elemente ein, die das horizontale Sichtfeld um den Faktor 2,0 komprimieren, während die vertikale Dimension unberührt bleibt. Bei Entkomprimierung während der Projektion ergibt diese optische Komprimierung eine monumentale 2,39:1-Breitbildleinwand ohne Einbußen bei der vertikalen Sensorauflösung."
+    },
+    {
+      "type": "h2",
+      "text": "Wichtige Punkte"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Differentialbrennweite: Ein anamorphotisches Objektiv verfügt über zwei unterschiedliche Brennweiten: ein breiteres horizontales Feld gepaart mit der vertikalen Perspektive und Schärfentiefe einer längeren Teleobjektivoptik.",
+        "Ovale Bokeh-Eigenschaften: Unscharfe Hintergrundlichter werden vertikal zu charakteristischen elliptischen Scheiben und nicht zu kreisförmigen Geometrien gestreckt.",
+        "Horizontale Flare-Streifen: Interne Reflexionen über zylindrische Elementbeschichtungen streuen spiegelndes Licht horizontal und erzeugen ikonische farbige Flares.",
+        "Anamorphe Mumps-Korrektur: Moderne Panavision- und Cooke-Designs umfassen gegenläufig rotierende zylindrische Gruppen, um Gesichtsverzerrungen bei minimalen Fokusentfernungen zu beseitigen."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Sphärische Linsen reproduzieren die Realität mit klinischer Präzision; Anamorphes Glas interpretiert die Welt durch die romantische Poesie optischer Aberration, Tiefendimensionalität und visueller Majestät.",
+      "cite": "American Cinematographer & Optical Engineering Monograph"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Weitläufiger historischer Kinosaal mit Reihen von Samtsitzen gegenüber der riesigen Kinoleinwand",
+      "caption": "Theatermaßstab: Projektion von Panoramakompositionen im Seitenverhältnis 2,39:1 über monumentale Gemeinschaftssäle."
+    },
+    {
+      "type": "h2",
+      "text": "Bildfeldkrümmung und chromatische Aberration als ästhetische Textur"
+    },
+    {
+      "type": "p",
+      "text": "In unserer heutigen Ära steriler digitaler Sensoren führen die organischen optischen Unvollkommenheiten von anamorphotischem Vintage-Glas – subtile tonnenförmige Verzerrung entlang der Kanten, sanfte mittenbetonte Schärfe und chromatische Ränder – wieder eine taktile, handgefertigte Dimension in die Kinobilder ein."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
+      "title": "Kinematographiehandwerk, visuelle Geometrie und Linsenästhetik",
+      "caption": "Meisterkurs über optische Physik, Beleuchtungsverhältnisse und die visuelle Geometrie des Geschichtenerzählens im Breitbildfilm."
+    },
+    {
+      "type": "h2",
+      "text": "Die anhaltende Anziehungskraft großformatigen anamorphotischen Geschichtenerzählens"
+    },
+    {
+      "type": "p",
+      "text": "Indem Filmemacher großformatige 65-mm-Digitalsensoren mit modernem, maßgeschneidertem anamorphotischem Glas kombinieren, geht das Medium über reine Unterhaltung hinaus und bietet eine immersive visuelle Poesie, die das menschliche räumliche Sehen würdigt."
+    }
+  ],
+  "sourceHash": "fb125b01617cce9cf90339a675e1fa7a87ad267f"
+}

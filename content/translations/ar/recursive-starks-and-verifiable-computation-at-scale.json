@@ -11,8 +11,8 @@
     "blockchain-scaling",
     "mathematics"
   ],
-  "image": "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Abstract geometric lattice network representing succinct zero-knowledge cryptographic proofs",
+  "image": "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "شبكة تشفير هندسية ثلاثية الأبعاد وشبكة التحقق اللامركزية من سلسلة الكتل",
   "body": [
     {
       "type": "h2",
@@ -20,60 +20,60 @@
     },
     {
       "type": "p",
-      "text": "يمثل الحساب الذي يمكن التحقق منه الاختراق التأسيسي الذي يمكّن أجهزة الدولة اللامركزية العامة من التوسع أفقيًا. في شبكات التنفيذ الساذجة، يجب على كل عقدة التحقق من الصحة إعادة تنفيذ كل معاملة بالتسلسل للتحقق من صحة الحالة. تعمل حجج المعرفة الشفافة القابلة للتطوير (STARKs) على عكس عنق الزجاجة هذا: يقوم مُبرِّح واحد غير موثوق به بإنشاء دليل تشفير مقتضب يشهد على الصحة الحسابية لملايين انتقالات الحالة، والتي يمكن لأي متحقق التحقق منها في الوقت اللوغاريتمي."
+      "text": "يمثل الحساب الذي يمكن التحقق منه اختراقًا أساسيًا يمكّن أجهزة الدولة اللامركزية العامة من التوسع أفقيًا. في شبكات التنفيذ الساذجة، يجب على كل عقدة التحقق من الصحة إعادة تنفيذ كل معاملة بالتسلسل للتحقق من صحة الحالة. تعمل حجج المعرفة الشفافة القابلة للتطوير (STARKs) على عكس عنق الزجاجة هذا: يقوم مُبرِّح واحد غير موثوق به بإنشاء دليل تشفير مقتضب يشهد على الصحة الحسابية لملايين انتقالات الحالة، والتي يمكن لأي متحقق التحقق منها في الوقت اللوغاريتمي."
     },
     {
       "type": "h2",
-      "text": "السعي الرياضي من أجل التحقق المقتضب"
+      "text": "الميكانيكا المعمارية الأساسية لـ ZK-STARKs"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Algebraic intermediate representation and execution trace polynomial matrix",
-      "caption": "AIR arithmetization: translating state machine execution steps into algebraic constraint polynomials."
+      "alt": "التكرارية STARKs وHalo2: رياضيات التحقق من التشفير المقتضب - الشكل التشغيلي 4",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم التكرارية STARKs وHalo2: رياضيات التحقق من التشفير المقتضب."
     },
     {
       "type": "ul",
       "items": [
-        "Arithmetization: Transforming computational execution traces into systems of algebraic intermediate representations (AIR) or polynomial constraint systems.",
-        "Reed-Solomon Proximity Testing: Encoding constraint evaluations over large evaluation domains such that computational invalidity manifests as maximal distance from valid Reed-Solomon codewords.",
-        "FRI Protocol (Fast Reed-Solomon IOP of Proximity): An interactive oracle proof that recursively halves polynomial degrees, proving proximity to low-degree spaces with polylogarithmic communication complexity.",
-        "Transparent Trustless Setup: Utilizing publicly verifiable collision-resistant hash functions rather than elliptic curve toxic waste parameters, guaranteeing quantum resistance and zero setup vulnerability."
+        "الحساب: تحويل آثار التنفيذ الحسابي إلى أنظمة التمثيلات الجبرية الوسيطة (AIR) أو أنظمة القيود متعددة الحدود.",
+        "اختبار القرب من Reed-Solomon: تشفير تقييمات القيود عبر مجالات تقييم كبيرة بحيث يظهر البطلان الحسابي كمسافة قصوى من كلمات Reed-Solomon الصالحة.",
+        "بروتوكول FRI (Fast Reed-Solomon IOP of Proximity): دليل أوراكل تفاعلي يخفض بشكل متكرر درجات متعددة الحدود إلى النصف، مما يثبت القرب من المساحات ذات الدرجة المنخفضة مع تعقيد الاتصال متعدد اللوغاريتمي.",
+        "إعداد شفاف غير موثوق به: استخدام وظائف التجزئة المقاومة للاصطدام والتي يمكن التحقق منها علنًا بدلاً من معلمات النفايات السامة ذات المنحنى الإهليلجي، مما يضمن المقاومة الكمية وعدم وجود أي ثغرة في الإعداد."
       ]
     },
     {
       "type": "quote",
       "text": "تعمل براهين المعرفة الصفرية المتكررة على تحويل الوقت الحسابي إلى مساحة هندسية، مما يسمح بخطوة تحقق واحدة للتحقق من سلامة التنفيذ التاريخي غير المحدود.",
-      "cite": "دراسة أسس التشفير وأنظمة التحقق"
+      "cite": "دراسة أسس التشفير والأنظمة القابلة للتحقق"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Recursive STARK proof tree folding millions of transactions into single succinct proof",
-      "caption": "Recursive proof aggregation: Merkle tree verification folding thousands of execution batches into one master proof."
+      "alt": "التكراري STARKs وHalo2: رياضيات التحقق من التشفير المقتضب - الشكل التشغيلي 7",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم التكرار STARKs وHalo2: رياضيات التحقق من التشفير المقتضب."
     },
     {
       "type": "h2",
-      "text": "السعي الرياضي من أجل التحقق المقتضب"
+      "text": "تجميع الأدلة العودية على نطاق واسع"
     },
     {
       "type": "p",
-      "text": "يمثل الحساب الذي يمكن التحقق منه الاختراق التأسيسي الذي يمكّن أجهزة الدولة اللامركزية العامة من التوسع أفقيًا. في شبكات التنفيذ الساذجة، يجب على كل عقدة التحقق من الصحة إعادة تنفيذ كل معاملة بالتسلسل للتحقق من صحة الحالة. تعمل حجج المعرفة الشفافة القابلة للتطوير (STARKs) على عكس عنق الزجاجة هذا: يقوم مُبرِّح واحد غير موثوق به بإنشاء دليل تشفير مقتضب يشهد على الصحة الحسابية لملايين انتقالات الحالة، والتي يمكن لأي متحقق التحقق منها في الوقت اللوغاريتمي."
+      "text": "إن الإنجاز التحويلي في أنظمة الإثبات الحديثة هو تكوين إثبات متكرر: كتابة منطق أداة التحقق STARK كنظام قيد حسابي داخل STARK آخر. من خلال تجميع البراهين في أشجار Merkle المتوازنة، يمكن طي الآلاف من دفعات التنفيذ الفردية بشكل متكرر في دليل رئيسي واحد يمكن التحقق منه على السلسلة مقابل جزء ثابت من السنت."
     },
     {
       "type": "video",
-      "title": "Recursive STARKs and Polynomial Commitments Deep Dive",
-      "caption": "Mathematical exploration of FRI proximity testing, execution trace arithmetization, and recursive proof verification.",
-      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "STARKs العودية والتزامات كثيرات الحدود الغوص العميق",
+      "caption": "الاستكشاف الرياضي لاختبار القرب FRI، وحساب تتبع التنفيذ، والتحقق من الأدلة العودية."
     },
     {
       "type": "h2",
-      "text": "السعي الرياضي من أجل التحقق المقتضب"
+      "text": "تمكين الحضارات اللامركزية"
     },
     {
       "type": "p",
-      "text": "يمثل الحساب الذي يمكن التحقق منه الاختراق التأسيسي الذي يمكّن أجهزة الدولة اللامركزية العامة من التوسع أفقيًا. في شبكات التنفيذ الساذجة، يجب على كل عقدة التحقق من الصحة إعادة تنفيذ كل معاملة بالتسلسل للتحقق من صحة الحالة. تعمل حجج المعرفة الشفافة القابلة للتطوير (STARKs) على عكس عنق الزجاجة هذا: يقوم مُبرِّح واحد غير موثوق به بإنشاء دليل تشفير مقتضب يشهد على الصحة الحسابية لملايين انتقالات الحالة، والتي يمكن لأي متحقق التحقق منها في الوقت اللوغاريتمي."
+      "text": "إلى جانب الدفاتر المالية، توفر حجج التشفير الموجزة البدائيات الرياضية الأساسية للذكاء الاصطناعي الذي يمكن التحقق منه، وأنظمة الهوية التي تحافظ على الخصوصية، وعمليات التدقيق غير الموثوق بها عبر المؤسسات. من خلال فصل الحساب عن التحقق، توفر بنيات المعرفة الصفرية الأساس الهيكلي لثقة التشفير اللامركزية."
     }
   ],
-  "sourceHash": "c5cdc7eeeaeebe7ae1b57b5a686e1ed3f30a8730"
+  "sourceHash": "33404de307add18b4cf6527db88512b60aaceb9a"
 }
