@@ -24,7 +24,7 @@ import {
   getCategoryShortName,
 } from '../lib/categories';
 import { AUTHORS } from '../data/authors';
-import ebooksMasterData from '../data/ebooks.json';
+import ebooksCardsData from '../data/ebooks-cards.json';
 import {
   INITIAL_GLOBAL_INDICES,
   INITIAL_COMMODITIES,
@@ -255,8 +255,9 @@ export function SearchModal({
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
 
-  // Build Comprehensive Universal Search Index
+  // Build Comprehensive Universal Search Index (Only computed when modal is open)
   const universalIndex = useMemo<UniversalSearchResult[]>(() => {
+    if (!open) return [];
     const list: UniversalSearchResult[] = [];
 
     // 1. Articles
@@ -377,7 +378,7 @@ export function SearchModal({
     list.push(...CORE_PAGES);
 
     // 7. Public Domain E-Books
-    (ebooksMasterData as EBook[]).forEach((book) => {
+    (ebooksCardsData as unknown as EBook[]).forEach((book) => {
       list.push({
         id: `ebook-${book.slug}`,
         type: 'ebook',
@@ -391,7 +392,6 @@ export function SearchModal({
           book.author,
           book.category,
           book.subdiscipline,
-          ...book.keyThemes,
           'pdf',
           'book',
           'ebook',
@@ -402,7 +402,7 @@ export function SearchModal({
     });
 
     return list;
-  }, [items]);
+  }, [open, items, language.code, t.categories]);
 
   // Load recent searches from localStorage
   useEffect(() => {

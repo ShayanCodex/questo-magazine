@@ -14,9 +14,10 @@ export interface BookCardProps {
   book: EBook;
   detailUrl: string;
   onReadOnline: (book: EBook) => void;
+  priority?: boolean;
 }
 
-export function BookCard({ book, detailUrl, onReadOnline }: BookCardProps) {
+export function BookCard({ book, detailUrl, onReadOnline, priority = false }: BookCardProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopyLink = async (e: React.MouseEvent) => {
@@ -47,6 +48,7 @@ export function BookCard({ book, detailUrl, onReadOnline }: BookCardProps) {
           subdiscipline={book.subdiscipline}
           slug={book.slug}
           size="sm"
+          priority={priority}
           className="w-full h-full group-hover/cover:scale-105 transition-transform duration-500 ease-out"
         />
 

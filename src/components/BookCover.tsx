@@ -83,6 +83,7 @@ export function BookCover({
   const [isLoaded, setIsLoaded] = useState(false);
   const [inView, setInView] = useState(priority);
   const containerRef = useRef<HTMLDivElement>(null);
+  const imgRef = useRef<HTMLImageElement>(null);
 
   // Progressive Lazy Loading: IntersectionObserver triggers loading 300px before scroll into viewport
   useEffect(() => {
@@ -122,7 +123,7 @@ export function BookCover({
   // then fallback to OpenLibrary optimized medium/large assets
   const optimizedCoverUrl = useMemo(() => {
     // 1. High-speed jsDelivr Multi-CDN from questo-books-vault
-    const vaultUrl = getFastVaultCoverUrl(slug);
+    const vaultUrl = getFastVaultCoverUrl(slug, author);
     if (vaultUrl) return vaultUrl;
 
     // 2. OpenLibrary fallback
@@ -131,7 +132,14 @@ export function BookCover({
       return coverUrl.replace(/-L\.jpg$/, '-M.jpg');
     }
     return coverUrl;
-  }, [slug, coverUrl, size]);
+  }, [slug, author, coverUrl, size]);
+
+  // Check if image is already cached by browser
+  useEffect(() => {
+    if (imgRef.current?.complete && imgRef.current?.naturalWidth > 0) {
+      setIsLoaded(true);
+    }
+  }, [optimizedCoverUrl, inView]);
 
   const hasValidCover = Boolean(optimizedCoverUrl && optimizedCoverUrl.trim().length > 0 && !hasError);
   const disciplineTag = subdiscipline || category;
@@ -143,7 +151,7 @@ export function BookCover({
         className={cn('relative w-full h-full overflow-hidden bg-neutral-950 select-none', className)}
       >
         {/* Active Spinning Loader while downloading/decoding so the user clearly sees the image is loading */}
-        {!isLoaded && (
+        {!isLoaded && inView && (
           <div className="absolute inset-0 bg-neutral-950/90 z-20 flex flex-col items-center justify-center p-2 select-none">
             {/* Spinning Loader Ring */}
             <svg
@@ -180,6 +188,7 @@ export function BookCover({
 
         {inView && (
           <img
+            ref={imgRef}
             src={optimizedCoverUrl}
             alt={`${title} by ${author}`}
             loading={priority ? 'eager' : 'lazy'}

@@ -131,5 +131,27 @@ for (const lang of languages) {
   console.log(`  ✓ [${lang.code}] ${bundledArticles.length} articles bundled -> master-articles.${lang.code}.json (${sizeKb} KB)`);
 }
 
+// Automatically sync ultra-lightweight ebooks card index for high-speed catalog browsing
+const fullEbooksPath = path.join(outputDir, 'ebooks.json');
+const cardsEbooksPath = path.join(outputDir, 'ebooks-cards.json');
+if (fs.existsSync(fullEbooksPath)) {
+  const rawEbooks = JSON.parse(fs.readFileSync(fullEbooksPath, 'utf8'));
+  const cards = rawEbooks.map((b) => ({
+    slug: b.slug,
+    title: b.title,
+    author: b.author,
+    year: b.year,
+    category: b.category,
+    subdiscipline: b.subdiscipline || b.category,
+    coverUrl: b.coverUrl || '',
+    pdfUrl: b.pdfUrl || '',
+    curatedContext: (b.curatedContext || '').slice(0, 120),
+    pageCount: b.pageCount || 200,
+    readingTimeHours: b.readingTimeHours || 4,
+  }));
+  fs.writeFileSync(cardsEbooksPath, JSON.stringify(cards));
+  console.log(`  ✓ E-Books card index synced -> ebooks-cards.json (${(fs.statSync(cardsEbooksPath).size / 1024).toFixed(1)} KB)`);
+}
+
 console.log('✅ Master JSON bundling complete.\n');
 

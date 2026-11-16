@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useDeferredValue } from 'react';
 import { useLocation } from 'react-router-dom';
 import {
   MagnifyingGlassIcon,
@@ -18,7 +18,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { PdfReaderModal } from '../components/PdfReaderModal';
 import { BookCard } from '../components/BookCard';
 import { cn } from '../lib/utils';
-import ebooksMasterData from '../data/ebooks.json';
+import ebooksCardsData from '../data/ebooks-cards.json';
 import {
   fetchCulinaryRecipe,
   fetchClinicalDrugInfo,
@@ -30,7 +30,7 @@ import {
   type CulturalMediaItem,
 } from '../services/externalApis';
 
-const EBOOKS_LIST = ebooksMasterData as EBook[];
+const EBOOKS_LIST = ebooksCardsData as unknown as EBook[];
 
 const CATEGORIES = [
   'All',
@@ -51,14 +51,16 @@ export function EBooks() {
   const [activePdfBook, setActivePdfBook] = useState<EBook | null>(null);
   const [readerOpen, setReaderOpen] = useState(false);
 
-  // Live Knowledge Hubs State
+  // Live Knowledge Hubs State (Lazy loaded only upon user interaction)
   const [hubTab, setHubTab] = useState<'gastronomy' | 'clinical' | 'encyclopedic' | 'cinema'>('gastronomy');
+  const [hubInteracted, setHubInteracted] = useState(false);
   const [recipes, setRecipes] = useState<CulinaryRecipe[]>([]);
   const [clinicalInfo, setClinicalInfo] = useState<ClinicalDrugInfo | null>(null);
   const [academicSummary, setAcademicSummary] = useState<AcademicSummary | null>(null);
   const [mediaItems, setMediaItems] = useState<CulturalMediaItem[]>([]);
 
   useEffect(() => {
+    if (!hubInteracted) return; // Prevent blocking external API network calls on initial page load
     if (hubTab === 'gastronomy' && recipes.length === 0) {
       fetchCulinaryRecipe('bread').then(setRecipes).catch(() => {});
     } else if (hubTab === 'clinical' && !clinicalInfo) {
@@ -68,7 +70,10 @@ export function EBooks() {
     } else if (hubTab === 'cinema' && mediaItems.length === 0) {
       fetchCulturalMedia('cyberpunk').then(setMediaItems).catch(() => {});
     }
-  }, [hubTab, recipes.length, clinicalInfo, academicSummary, mediaItems.length]);
+  }, [hubTab, hubInteracted, recipes.length, clinicalInfo, academicSummary, mediaItems.length]);
+
+  // Deferred search value guarantees zero typing lag or stutter on 3000+ items
+  const deferredQuery = useDeferredValue(searchQuery);
 
   const filteredEbooks = useMemo(() => {
     let list = EBOOKS_LIST;
@@ -77,19 +82,18 @@ export function EBooks() {
       list = list.filter((b) => b.category === selectedCategory);
     }
 
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
+    if (deferredQuery.trim()) {
+      const q = deferredQuery.toLowerCase().trim();
       list = list.filter(
         (b) =>
           b.title.toLowerCase().includes(q) ||
           b.author.toLowerCase().includes(q) ||
-          b.subdiscipline.toLowerCase().includes(q) ||
-          b.keyThemes.some((th) => th.toLowerCase().includes(q))
+          (b.subdiscipline && b.subdiscipline.toLowerCase().includes(q))
       );
     }
 
     return list;
-  }, [selectedCategory, searchQuery]);
+  }, [selectedCategory, deferredQuery]);
 
   const [currentPage, setCurrentPage] = useState(1);
   const PAGE_SIZE = 24;
@@ -231,7 +235,7 @@ export function EBooks() {
             <div className="space-y-8">
               {/* Wide & Compact Horizontal Cards Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-                {paginatedEbooks.map((book) => {
+                {paginatedEbooks.map((book, idx) => {
                   const detailUrl = localePath(`/ebooks/${book.slug}`);
 
                   return (
@@ -240,6 +244,7 @@ export function EBooks() {
                       book={book}
                       detailUrl={detailUrl}
                       onReadOnline={handleOpenReader}
+                      priority={idx < 8}
                     />
                   );
                 })}
@@ -302,7 +307,7 @@ export function EBooks() {
           <div className="inline-flex rounded-full border border-editorial-border bg-editorial-surface p-1 shadow-2xs text-xs font-sans">
             <button
               type="button"
-              onClick={() => setHubTab('gastronomy')}
+              onClick={() => { setHubInteracted(true); setHubTab('gastronomy'); }}
               className={cn(
                 'px-4 py-1.5 rounded-full transition-all cursor-pointer font-medium flex items-center gap-1.5',
                 hubTab === 'gastronomy'
@@ -315,7 +320,7 @@ export function EBooks() {
             </button>
             <button
               type="button"
-              onClick={() => setHubTab('clinical')}
+              onClick={() => { setHubInteracted(true); setHubTab('clinical'); }}
               className={cn(
                 'px-4 py-1.5 rounded-full transition-all cursor-pointer font-medium flex items-center gap-1.5',
                 hubTab === 'clinical'
@@ -328,7 +333,7 @@ export function EBooks() {
             </button>
             <button
               type="button"
-              onClick={() => setHubTab('encyclopedic')}
+              onClick={() => { setHubInteracted(true); setHubTab('encyclopedic'); }}
               className={cn(
                 'px-4 py-1.5 rounded-full transition-all cursor-pointer font-medium flex items-center gap-1.5',
                 hubTab === 'encyclopedic'
@@ -341,7 +346,7 @@ export function EBooks() {
             </button>
             <button
               type="button"
-              onClick={() => setHubTab('cinema')}
+              onClick={() => { setHubInteracted(true); setHubTab('cinema'); }}
               className={cn(
                 'px-4 py-1.5 rounded-full transition-all cursor-pointer font-medium flex items-center gap-1.5',
                 hubTab === 'cinema'
