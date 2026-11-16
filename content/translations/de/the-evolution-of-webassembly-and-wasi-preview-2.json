@@ -1,0 +1,79 @@
+{
+  "slug": "the-evolution-of-webassembly-and-wasi-preview-2",
+  "title": "WebAssembly jenseits des Browsers: WASI-Vorschau 2, Komponentenmodelle und Edge-Mikro-VMs",
+  "excerpt": "Bewertung der Bytecode-Kompilierung auf serverlosen Edge-Laufzeiten, Komponentenmodell-Schnittstellentypen, Kaltstarts unter einer Millisekunde und polyglotter Containerisolation.",
+  "date": "2026-11-16",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "webassembly",
+    "wasi",
+    "edge-computing",
+    "cloud-infrastructure",
+    "microservices"
+  ],
+  "image": "https://images.unsplash.com/photo-1624969862303-3ff5d31fb0a0?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-density edge computing server nodes executing WebAssembly bytecode containers",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der Übergang von Browser-Sandboxen zu serverlosen Laufzeiten"
+    },
+    {
+      "type": "p",
+      "text": "WebAssembly (Wasm) wurde ursprünglich als leistungsstarke Ausführungsebene für browserbasiertes 3D-Rendering und Computerphysik konzipiert und hat sich zum überzeugendsten universellen Kompilierungsziel für verteilte Backend-Architekturen entwickelt. Durch die Abstraktion der Ausführung in eine hardwareunabhängige virtuelle Maschine mit linearen Speichergrenzen und funktionsbasierter Sicherheit ermöglicht Wasm eine nahezu native Ausführung von C++-, Rust-, Go- und Python-Workloads auf verteilten Edge-Knoten."
+    },
+    {
+      "type": "h2",
+      "text": "Der Übergang von Browser-Sandboxen zu serverlosen Laufzeiten"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Binary WebAssembly bytecode structure and linear memory safety sandbox execution model",
+      "caption": "Linear memory isolation: Wasm modules executing within strict address space bounds enforced by runtime guard pages."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The WebAssembly System Interface (WASI): Standardizes modular POSIX-like system calls for filesystem access, network sockets, clocks, and cryptographic random number generators across diverse operating systems.",
+        "Wasm Component Model: Replaces raw memory pointer exchanges with rich high-level Interface Definition Language (WIT) types, enabling language-agnostic function composition without serialization overhead.",
+        "Micro-Millisecond Cold Starts: Unlike Docker containers that require spinning up guest Linux kernels or complex namespace cgroups, Wasm instances instantiate in microseconds with negligible memory footprints.",
+        "Capability-Based Security: Wasm modules cannot invoke filesystem read or network bind operations unless explicit handles are granted by the host runtime, neutralizing entire classes of supply-chain attacks."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Wenn es WASM und WASI im Jahr 2008 gegeben hätte, hätten wir Docker nicht erstellen müssen. So grundlegend transformativ ist WebAssembly auf dem Server.",
+      "cite": "Solomon Hykes, Mitbegründer von Docker"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Microservice orchestration platform scaling thousands of sub-millisecond edge Wasm instances",
+      "caption": "WASI Preview 2: standardized capability-based interfaces allowing polyglot component composition at microsecond cold-start speeds."
+    },
+    {
+      "type": "h2",
+      "text": "Der Übergang von Browser-Sandboxen zu serverlosen Laufzeiten"
+    },
+    {
+      "type": "p",
+      "text": "WebAssembly (Wasm) wurde ursprünglich als leistungsstarke Ausführungsebene für browserbasiertes 3D-Rendering und Computerphysik konzipiert und hat sich zum überzeugendsten universellen Kompilierungsziel für verteilte Backend-Architekturen entwickelt. Durch die Abstraktion der Ausführung in eine hardwareunabhängige virtuelle Maschine mit linearen Speichergrenzen und funktionsbasierter Sicherheit ermöglicht Wasm eine nahezu native Ausführung von C++-, Rust-, Go- und Python-Workloads auf verteilten Edge-Knoten."
+    },
+    {
+      "type": "video",
+      "title": "WASI Preview 2 and the WebAssembly Component Model Explained",
+      "caption": "Architectural overview of WASI interfaces, component composition, and secure polyglot serverless deployment.",
+      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE"
+    },
+    {
+      "type": "h2",
+      "text": "Der Übergang von Browser-Sandboxen zu serverlosen Laufzeiten"
+    },
+    {
+      "type": "p",
+      "text": "WebAssembly (Wasm) wurde ursprünglich als leistungsstarke Ausführungsebene für browserbasiertes 3D-Rendering und Computerphysik konzipiert und hat sich zum überzeugendsten universellen Kompilierungsziel für verteilte Backend-Architekturen entwickelt. Durch die Abstraktion der Ausführung in eine hardwareunabhängige virtuelle Maschine mit linearen Speichergrenzen und funktionsbasierter Sicherheit ermöglicht Wasm eine nahezu native Ausführung von C++-, Rust-, Go- und Python-Workloads auf verteilten Edge-Knoten."
+    }
+  ],
+  "sourceHash": "c7f2c7c0a5c730d414ebf9b404e3f7d83d7ea8ec"
+}

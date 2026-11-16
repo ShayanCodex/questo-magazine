@@ -10,7 +10,7 @@
     "theory"
   ],
   "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Brutalismo arquitectónico moderno",
+  "imageAlt": "Modern Architectural Brutalism",
   "body": [
     {
       "type": "p",
@@ -22,7 +22,13 @@
     },
     {
       "type": "p",
-      "text": "La verdadera moderación arquitectónica no tiene que ver con el vacío, sino con la precisión. Cada plano y elevación se mide en función de la proporción humana y la iluminación natural."
+      "text": "La interacción entre la luz, la masa geométrica y la materialidad silenciosa forma el lenguaje fundamental de la arquitectura minimalista moderna."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Modern Architectural Brutalism."
     },
     {
       "type": "quote",
@@ -32,15 +38,21 @@
     {
       "type": "ol",
       "items": [
-        "Subordinar los impulsos decorativos a la integridad estructural",
-        "Maximizar la luz natural a través de aberturas espaciales calculadas",
-        "Preservar las texturas táctiles de la piedra caliza en bruto y la madera expuesta"
+        "Subordinating decorative impulses to structural integrity",
+        "Maximizing daylight through calculated spatial apertures",
+        "Preserving tactile tactile textures of raw limestone and exposed timber"
       ]
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Modern Architectural Brutalism."
+    },
+    {
       "type": "p",
-      "text": "Cuando eliminamos lo superfluo, lo que queda no es la ausencia, sino la claridad."
+      "text": "La interacción entre la luz, la masa geométrica y la materialidad silenciosa forma el lenguaje fundamental de la arquitectura minimalista moderna."
     }
   ],
-  "sourceHash": "8e920df698a9b242cb729b7174045072b791300f"
+  "sourceHash": "d797f7bd03e572e52478b5d00930a0554888afe7"
 }

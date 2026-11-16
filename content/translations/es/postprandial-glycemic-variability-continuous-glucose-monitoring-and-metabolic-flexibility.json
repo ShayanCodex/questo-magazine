@@ -12,8 +12,8 @@
     "endocrinology",
     "cardiology"
   ],
-  "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Telemetría de laboratorio de ciencias de la salud clínica que muestra biomarcadores celulares y seguimiento metabólico",
+  "image": "https://images.unsplash.com/photo-1516549655663-e380e2279b5c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Clinical health science laboratory telemetry showing cellular biomarkers and metabolic tracking",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "La adopción generalizada de biosensores de monitorización continua de glucosa (CGM) en poblaciones no diabéticas y prediabéticas ha iluminado la profunda diferencia biológica entre una respuesta plana de glucosa y picos posprandiales de alta amplitud. Incluso las personas con una HbA1c aparentemente \"normal\" de 5,2% pueden pasar varias horas al día en picos glucémicos transitorios que superan los 140 mg/dL, lo que desencadena cascadas de estrés oxidativo."
+      "text": "En la medicina clínica convencional, la salud metabólica históricamente se ha evaluado utilizando biomarcadores estáticos en ayunas: glucosa plasmática en ayunas (FPG) y hemoglobina glucosilada (HbA1c). Si bien son valiosas para diagnosticar diabetes mellitus tipo 2 manifiesta, estas métricas aproximadas oscurecen por completo el flujo glucémico agudo: las excursiones dinámicas y posprandiales de glucosa que ocurren después de las comidas. Los datos clínicos emergentes demuestran que la variabilidad glucémica (VG) (la amplitud, frecuencia y duración de las oscilaciones de la glucosa) es un factor potente e independiente de la disfunción endotelial, la inflamación sistémica y la aterosclerosis subclínica."
     },
     {
       "type": "h2",
       "text": "1. Mecanismo bioquímico: sobreproducción de superóxido y daño endotelial"
     },
     {
-      "type": "p",
-      "text": "¿Por qué los picos posprandiales son biológicamente dañinos incluso cuando los niveles en ayunas regresan al valor inicial en dos horas? El mecanismo celular primario ocurre dentro de la cadena de transporte de electrones mitocondrial de las células endoteliales vasculares."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Postprandial Glycemic Variability - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Postprandial Glycemic Variability."
     },
     {
       "type": "p",
-      "text": "Cuando una afluencia aguda de glucosa inunda las células endoteliales, el exceso de piruvato genera una concentración abrumadora de donantes de electrones (NADH y FADH₂) en el Complejo I y el Complejo III. Esto sobresatura el gradiente de protones mitocondrial, deteniendo el paso directo de electrones y transfiriendo electrones solitarios directamente al oxígeno molecular para sintetizar aniones superóxido ($O_2^{\\bullet-}$):"
+      "text": "En la medicina clínica convencional, la salud metabólica históricamente se ha evaluado utilizando biomarcadores estáticos en ayunas: glucosa plasmática en ayunas (FPG) y hemoglobina glucosilada (HbA1c). Si bien son valiosas para diagnosticar diabetes mellitus tipo 2 manifiesta, estas métricas aproximadas oscurecen por completo el flujo glucémico agudo: las excursiones dinámicas y posprandiales de glucosa que ocurren después de las comidas. Los datos clínicos emergentes demuestran que la variabilidad glucémica (VG) (la amplitud, frecuencia y duración de las oscilaciones de la glucosa) es un factor potente e independiente de la disfunción endotelial, la inflamación sistémica y la aterosclerosis subclínica."
+    },
+    {
+      "type": "p",
+      "text": "En la medicina clínica convencional, la salud metabólica históricamente se ha evaluado utilizando biomarcadores estáticos en ayunas: glucosa plasmática en ayunas (FPG) y hemoglobina glucosilada (HbA1c). Si bien son valiosas para diagnosticar diabetes mellitus tipo 2 manifiesta, estas métricas aproximadas oscurecen por completo el flujo glucémico agudo: las excursiones dinámicas y posprandiales de glucosa que ocurren después de las comidas. Los datos clínicos emergentes demuestran que la variabilidad glucémica (VG) (la amplitud, frecuencia y duración de las oscilaciones de la glucosa) es un factor potente e independiente de la disfunción endotelial, la inflamación sistémica y la aterosclerosis subclínica."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1538100556848-44d489cf60ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Postprandial Glycemic Variability - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Postprandial Glycemic Variability."
     },
     {
       "type": "code",
@@ -47,55 +59,55 @@
     },
     {
       "type": "h2",
-      "text": "2. Cuantificación de la variabilidad glucémica: métricas de telemetría clave"
+      "text": "1. Mecanismo bioquímico: sobreproducción de superóxido y daño endotelial"
     },
     {
       "type": "p",
-      "text": "La endocrinología clínica moderna utiliza parámetros de telemetría MCG estandarizados para evaluar la regulación glucémica más allá de la simple glucosa promedio:"
+      "text": "En la medicina clínica convencional, la salud metabólica históricamente se ha evaluado utilizando biomarcadores estáticos en ayunas: glucosa plasmática en ayunas (FPG) y hemoglobina glucosilada (HbA1c). Si bien son valiosas para diagnosticar diabetes mellitus tipo 2 manifiesta, estas métricas aproximadas oscurecen por completo el flujo glucémico agudo: las excursiones dinámicas y posprandiales de glucosa que ocurren después de las comidas. Los datos clínicos emergentes demuestran que la variabilidad glucémica (VG) (la amplitud, frecuencia y duración de las oscilaciones de la glucosa) es un factor potente e independiente de la disfunción endotelial, la inflamación sistémica y la aterosclerosis subclínica."
     },
     {
       "type": "ul",
       "items": [
-        "Amplitud media de excursiones glucémicas (MAGE): Mide la altura promedio de los picos de glucosa que exceden una desviación estándar de las 24 horas es decir, que sirve como marcador de referencia de la volatilidad glucémica.",
-        "Tiempo en rango (TIR): el porcentaje de tiempo que la glucosa permanece entre 70 y 140 mg/dL (óptimamente >95 % para la salud metabólica preventiva).",
-        "Acción glucémica neta general continua (CONGA): Evalúa la variación intradía calculando las diferencias glucémicas en intervalos horarios específicos.",
-        "Área incremental bajo la curva (iAUC): cuantifica la magnitud total de la exposición posprandial a la glucosa por encima de las concentraciones iniciales antes de las comidas."
+        "Mean Amplitude of Glycemic Excursions (MAGE): Measures the average height of glucose peaks that exceed one standard deviation of the 24-hour mean, serving as the gold standard marker of glycemic volatility.",
+        "Time in Range (TIR): The percentage of time glucose remains between 70 and 140 mg/dL (optimally >95% for preventive metabolic health).",
+        "Continuous Overall Net Glycemic Action (CONGA): Evaluates intra-day variation by calculating glycemic differences across specified hourly intervals.",
+        "Incremental Area Under the Curve (iAUC): Quantifies the total magnitude of postprandial glucose exposure above pre-meal baseline concentrations."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Monitoreo continuo de glucosa y flexibilidad metabólica"
+      "text": "1. Mecanismo bioquímico: sobreproducción de superóxido y daño endotelial"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VAEzZeaV5zM",
-      "title": "Telemetría de glucosa, cinética de insulina y flexibilidad metabólica",
-      "caption": "Profundización clínica en telemetría continua de glucosa, picos de insulina posprandial y cambio de sustrato mitocondrial."
+      "title": "Glucose Telemetry, Insulin Kinetics & Metabolic Flexibility",
+      "caption": "Clinical deep dive into continuous glucose telemetry, postprandial insulin surges, and mitochondrial substrate switching."
     },
     {
       "type": "h2",
-      "text": "4. Flexibilidad metabólica: el ciclo de Randle y el cambio de sustrato"
+      "text": "1. Mecanismo bioquímico: sobreproducción de superóxido y daño endotelial"
     },
     {
       "type": "p",
-      "text": "La flexibilidad metabólica es la capacidad fisiológica de las mitocondrias celulares para alternar sin problemas entre la oxidación de carbohidratos (glucosa) y lípidos (ácidos grasos libres) dependiendo del estado nutricional y la demanda de energía. Este proceso se rige por el ciclo glucosa-ácidos grasos, conocido clásicamente como ciclo de Randle."
+      "text": "En la medicina clínica convencional, la salud metabólica históricamente se ha evaluado utilizando biomarcadores estáticos en ayunas: glucosa plasmática en ayunas (FPG) y hemoglobina glucosilada (HbA1c). Si bien son valiosas para diagnosticar diabetes mellitus tipo 2 manifiesta, estas métricas aproximadas oscurecen por completo el flujo glucémico agudo: las excursiones dinámicas y posprandiales de glucosa que ocurren después de las comidas. Los datos clínicos emergentes demuestran que la variabilidad glucémica (VG) (la amplitud, frecuencia y duración de las oscilaciones de la glucosa) es un factor potente e independiente de la disfunción endotelial, la inflamación sistémica y la aterosclerosis subclínica."
     },
     {
       "type": "p",
-      "text": "En individuos metabólicamente sanos, los aumentos repentinos de insulina después de la ingesta de carbohidratos activan rápidamente la absorción de glucosa muscular a través de la translocación de GLUT4 y suprimen la lipólisis intracelular. Por el contrario, en los fenotipos resistentes a la insulina, los niveles basales altos de insulina bloquean las mitocondrias en una oxidación continua de la glucosa y no eliminan el exceso de lípidos intramiocelulares, lo que resulta en una acumulación tóxica de diacilglicerol y fatiga celular crónica."
+      "text": "En la medicina clínica convencional, la salud metabólica históricamente se ha evaluado utilizando biomarcadores estáticos en ayunas: glucosa plasmática en ayunas (FPG) y hemoglobina glucosilada (HbA1c). Si bien son valiosas para diagnosticar diabetes mellitus tipo 2 manifiesta, estas métricas aproximadas oscurecen por completo el flujo glucémico agudo: las excursiones dinámicas y posprandiales de glucosa que ocurren después de las comidas. Los datos clínicos emergentes demuestran que la variabilidad glucémica (VG) (la amplitud, frecuencia y duración de las oscilaciones de la glucosa) es un factor potente e independiente de la disfunción endotelial, la inflamación sistémica y la aterosclerosis subclínica."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones clínicas para la salud preventiva"
+      "text": "1. Mecanismo bioquímico: sobreproducción de superóxido y daño endotelial"
     },
     {
       "type": "ul",
       "items": [
-        "Priorizar la secuencia de comidas: la ingestión de fibra dietética, proteínas magras y grasas saludables antes de los carbohidratos de rápida digestión retarda el vaciamiento gástrico y amortigua los picos de glucosa posprandial hasta en un 40 %.",
-        "Contracción muscular posprandial: realizar una caminata modesta de 15 minutos inmediatamente después de las comidas estimula la translocación de GLUT4 no dependiente de insulina a través de la activación de AMPK, eliminando la glucosa sistémica hacia el músculo esquelético.",
-        "Objetivo MAGE bajo por encima del promedio bajo: centrar la estrategia clínica en reducir la amplitud y la volatilidad del pico glucémico en lugar de obsesionarse con cifras mínimas en ayunas."
+        "Prioritize Meal Sequencing: Ingesting dietary fiber, lean protein, and healthy fats prior to fast-digesting carbohydrates slows gastric emptying and dampens postprandial glucose spikes by up to 40%.",
+        "Postprandial Muscular Contraction: Engaging in a modest 15-minute walk immediately following meals stimulates non-insulin-dependent GLUT4 translocation via AMPK activation, clearing systemic glucose into skeletal muscle.",
+        "Target Low MAGE Over Low Average: Focus clinical strategy on reducing glycemic peak amplitude and volatility rather than obsessing over minimal fasting numbers."
       ]
     }
   ],
-  "sourceHash": "9b6e1f38f10eb515d99ed374a5a606fc8a9da285"
+  "sourceHash": "a4a8103292662999e1b09b4a2d1735bd09730822"
 }

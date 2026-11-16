@@ -12,7 +12,7 @@
     "biomarkers"
   ],
   "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Tests en laboratoire clinique scientifique avancé de biomarqueurs vasculaires et de pathologies cellulaires",
+  "imageAlt": "Advanced scientific clinical laboratory testing vascular biomarkers and cellular pathology",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "Chaque particule de lipoprotéine athérogène – comprenant les lipoprotéines de basse densité (LDL), les lipoprotéines de très basse densité (VLDL), les lipoprotéines de densité intermédiaire (IDL) et la lipoprotéine (a) – porte précisément une molécule d'apolipoprotéine B-100 à sa surface. Lors de la quantification de l'ApoB via un test immunoturbidimétrique, les cliniciens mesurent la concentration molaire exacte d'entités athérogènes circulantes capables de traverser l'intima artérielle."
+      "text": "Les maladies cardiovasculaires restent la principale cause de mortalité mondiale, mais les paradigmes de dépistage clinique reposent fréquemment sur des mesures lipidiques de substitution qui obscurcissent les principaux mécanismes sous-jacents. Les quantifications conventionnelles du cholestérol total et du cholestérol des lipoprotéines de basse densité (LDL-C) quantifient la masse globale de cholestérol dans les particules en circulation, sans parvenir à capturer le nombre absolu de particules athérogènes. Les progrès récents en lipidologie moléculaire démontrent que la concentration de particules d’apolipoprotéine B-100 (ApoB), couplée au découplage de l’oxyde nitrique synthase endothélial (eNOS), fournit un modèle prédictif exponentiellement plus précis de la nucléation des plaques d’athérome."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cardiometabolic Biomarkers & ApoB - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Cardiometabolic Biomarkers & ApoB."
     },
     {
       "type": "p",
-      "text": "L'athérosclérose ne s'initie pas à la surface luminale de la paroi vasculaire ; elle se produit strictement dans l'espace sous-endothélial. Le taux de flux de particules lipoprotéiques à travers la barrière endothéliale est directement proportionnel à la concentration de particules en circulation. Une fois séquestrés dans la matrice extracellulaire de l'intima, les protéoglycanes se lient à l'ApoB via des interactions électrostatiques, immobilisant la particule et la prédisposant à une modification oxydative par des espèces réactives de l'oxygène (ROS)."
+      "text": "Les maladies cardiovasculaires restent la principale cause de mortalité mondiale, mais les paradigmes de dépistage clinique reposent fréquemment sur des mesures lipidiques de substitution qui obscurcissent les principaux mécanismes sous-jacents. Les quantifications conventionnelles du cholestérol total et du cholestérol des lipoprotéines de basse densité (LDL-C) quantifient la masse globale de cholestérol dans les particules en circulation, sans parvenir à capturer le nombre absolu de particules athérogènes. Les progrès récents en lipidologie moléculaire démontrent que la concentration de particules d’apolipoprotéine B-100 (ApoB), couplée au découplage de l’oxyde nitrique synthase endothélial (eNOS), fournit un modèle prédictif exponentiellement plus précis de la nucléation des plaques d’athérome."
     },
     {
       "type": "quote",
@@ -36,63 +42,69 @@
       "cite": "Dr Marcus Vance, chercheur en santé préventive"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cardiometabolic Biomarkers & ApoB - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Cardiometabolic Biomarkers & ApoB."
+    },
+    {
       "type": "h2",
-      "text": "2. Stress de cisaillement endothélial et biodisponibilité de l'oxyde nitrique"
+      "text": "1. Physiopathologie de l'apolipoprotéine B et pénétration artérielle"
     },
     {
       "type": "p",
-      "text": "L'endothélium vasculaire est un organe endocrinien actif qui synthétise l'oxyde nitrique (NO) via l'oxyde nitrique synthase endothélial (eNOS) en utilisant la L-arginine et l'oxygène. L'oxyde nitrique remplit plusieurs fonctions fondamentales de défense vasculaire :"
+      "text": "Les maladies cardiovasculaires restent la principale cause de mortalité mondiale, mais les paradigmes de dépistage clinique reposent fréquemment sur des mesures lipidiques de substitution qui obscurcissent les principaux mécanismes sous-jacents. Les quantifications conventionnelles du cholestérol total et du cholestérol des lipoprotéines de basse densité (LDL-C) quantifient la masse globale de cholestérol dans les particules en circulation, sans parvenir à capturer le nombre absolu de particules athérogènes. Les progrès récents en lipidologie moléculaire démontrent que la concentration de particules d’apolipoprotéine B-100 (ApoB), couplée au découplage de l’oxyde nitrique synthase endothélial (eNOS), fournit un modèle prédictif exponentiellement plus précis de la nucléation des plaques d’athérome."
     },
     {
       "type": "ul",
       "items": [
-        "Régulation du tonus vasculaire : se diffuse dans les cellules musculaires lisses vasculaires sous-jacentes, activant la guanylyl cyclase soluble (sGC) pour induire une vasodilatation cyclique médiée par le GMP.",
-        "Quiescence antithrombotique : supprime l'adhésion, l'agrégation et l'adhérence cellulaire à la lumière intimale des plaquettes.",
-        "Inhibition de la chimiotaxie des leucocytes : régule à la baisse la molécule d'adhésion des cellules vasculaires 1 (VCAM-1) et la protéine chimioattractante des monocytes 1 (MCP-1), empêchant ainsi le recrutement inflammatoire des monocytes."
+        "Vascular Tone Regulation: Diffuses into underlying vascular smooth muscle cells, activating soluble guanylyl cyclase (sGC) to induce cyclic GMP-mediated vasodilation.",
+        "Anti-Thrombotic Quiescence: Suppresses platelet adhesion, aggregation, and cellular adherence to the intimal lumen.",
+        "Inhibition of Leukocyte Chemotaxis: Downregulates vascular cell adhesion molecule-1 (VCAM-1) and monocyte chemoattractant protein-1 (MCP-1), preventing inflammatory monocyte recruitment."
       ]
     },
     {
       "type": "p",
-      "text": "Sous un stress métabolique chronique – caractérisé par une résistance à l'insuline, une hypertension systémique ou une diméthylarginine asymétrique élevée (ADMA) – l'eNOS se dissocie de son cofacteur essentiel, la tétrahydrobioptérine (BH4). L'eNOS non couplé produit des radicaux superoxydes plutôt que de l'oxyde nitrique protecteur, précipitant un état de profonde vulnérabilité endothéliale."
+      "text": "Les maladies cardiovasculaires restent la principale cause de mortalité mondiale, mais les paradigmes de dépistage clinique reposent fréquemment sur des mesures lipidiques de substitution qui obscurcissent les principaux mécanismes sous-jacents. Les quantifications conventionnelles du cholestérol total et du cholestérol des lipoprotéines de basse densité (LDL-C) quantifient la masse globale de cholestérol dans les particules en circulation, sans parvenir à capturer le nombre absolu de particules athérogènes. Les progrès récents en lipidologie moléculaire démontrent que la concentration de particules d’apolipoprotéine B-100 (ApoB), couplée au découplage de l’oxyde nitrique synthase endothélial (eNOS), fournit un modèle prédictif exponentiellement plus précis de la nucléation des plaques d’athérome."
     },
     {
       "type": "h2",
-      "text": "3. Conférence clinique : physiologie vasculaire et vulnérabilité de la plaque"
+      "text": "1. Physiopathologie de l'apolipoprotéine B et pénétration artérielle"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "Biomarqueurs ApoB, mesures lipidiques et risque cardiovasculaire",
-      "caption": "Conférence clinique faisant autorité sur la rétention de particules sous-endothéliales, la formation de cellules spumeuses de macrophages et la stabilité de la plaque intimale."
+      "title": "ApoB Biomarkers, Lipid Metrics, and Cardiovascular Risk",
+      "caption": "Authoritative clinical lecture on sub-endothelial particle retention, macrophage foam cell formation, and intimal plaque stability."
     },
     {
       "type": "h2",
-      "text": "4. La transition de la séquence grasse au fibroatérome instable"
+      "text": "1. Physiopathologie de l'apolipoprotéine B et pénétration artérielle"
     },
     {
       "type": "p",
-      "text": "Une fois que les particules d'ApoB oxydées sont englouties par les macrophages recrutés via les récepteurs scavenger (SR-A et CD36), l'accumulation intracellulaire de cholestérol estérifié transforme les macrophages en cellules spumeuses. Au fil des décennies, l'apoptose cellulaire persistante et l'efférocytose défectueuse génèrent un noyau lipidique nécrotique recouvert d'une fine coiffe fibreuse composée de collagène de type I et de cellules musculaires lisses vasculaires."
+      "text": "Les maladies cardiovasculaires restent la principale cause de mortalité mondiale, mais les paradigmes de dépistage clinique reposent fréquemment sur des mesures lipidiques de substitution qui obscurcissent les principaux mécanismes sous-jacents. Les quantifications conventionnelles du cholestérol total et du cholestérol des lipoprotéines de basse densité (LDL-C) quantifient la masse globale de cholestérol dans les particules en circulation, sans parvenir à capturer le nombre absolu de particules athérogènes. Les progrès récents en lipidologie moléculaire démontrent que la concentration de particules d’apolipoprotéine B-100 (ApoB), couplée au découplage de l’oxyde nitrique synthase endothélial (eNOS), fournit un modèle prédictif exponentiellement plus précis de la nucléation des plaques d’athérome."
     },
     {
       "type": "p",
-      "text": "La rupture de plaque, déclencheur proximal des syndromes coronariens aigus, n'est pas régie par le pourcentage d'occlusion luminale, mais par la vulnérabilité biologique. Les fibroathéromes à calotte fine (TCFA) caractérisés par une infiltration élevée de macrophages, une sécrétion de métalloprotéinase matricielle (MMP) et une matrice de collagène extracellulaire diminuée présentent une extrême propension à une défaillance mécanique tectonique sous stress hémodynamique."
+      "text": "Les maladies cardiovasculaires restent la principale cause de mortalité mondiale, mais les paradigmes de dépistage clinique reposent fréquemment sur des mesures lipidiques de substitution qui obscurcissent les principaux mécanismes sous-jacents. Les quantifications conventionnelles du cholestérol total et du cholestérol des lipoprotéines de basse densité (LDL-C) quantifient la masse globale de cholestérol dans les particules en circulation, sans parvenir à capturer le nombre absolu de particules athérogènes. Les progrès récents en lipidologie moléculaire démontrent que la concentration de particules d’apolipoprotéine B-100 (ApoB), couplée au découplage de l’oxyde nitrique synthase endothélial (eNOS), fournit un modèle prédictif exponentiellement plus précis de la nucléation des plaques d’athérome."
     },
     {
       "type": "h2",
-      "text": "5. Implications cliniques préventives et points à retenir"
+      "text": "1. Physiopathologie de l'apolipoprotéine B et pénétration artérielle"
     },
     {
       "type": "ul",
       "items": [
-        "Supériorité de l'ApoB : la mesure de l'ApoB capture les risques discordants manqués par le LDL-C conventionnel, établissant la véritable trajectoire des particules athérogènes.",
-        "Préservation endothéliale : l'exercice aérobie et les substrats alimentaires à base de nitrate soutiennent le couplage physiologique eNOS, maintenant ainsi la perfusion microvasculaire essentielle.",
-        "Stabilisation de la plaque : les thérapies hypolipidémiantes et anti-inflammatoires précoces réduisent le volume central nécrotique et favorisent des coiffes de collagène épaisses et stables."
+        "ApoB Superiority: ApoB measurement captures discordant risk missed by conventional LDL-C, establishing the true atherogenic particle trajectory.",
+        "Endothelial Preservation: Aerobic exercise and dietary nitrate substrates support physiological eNOS coupling, maintaining essential microvascular perfusion.",
+        "Plaque Stabilization: Early lipid-lowering and anti-inflammatory therapies reduce necrotic core volume and promote thick, stable collagen caps."
       ]
     },
     {
       "type": "p",
-      "text": "Avis de non-responsabilité médicale : cet article est publié uniquement à des fins éducatives et de recherche scientifique. Il ne constitue pas un diagnostic médical individuel, une évaluation clinique ou un conseil de traitement. Consultez un médecin agréé ou un cardiologue pour une évaluation individualisée du risque cardiovasculaire."
+      "text": "Les maladies cardiovasculaires restent la principale cause de mortalité mondiale, mais les paradigmes de dépistage clinique reposent fréquemment sur des mesures lipidiques de substitution qui obscurcissent les principaux mécanismes sous-jacents. Les quantifications conventionnelles du cholestérol total et du cholestérol des lipoprotéines de basse densité (LDL-C) quantifient la masse globale de cholestérol dans les particules en circulation, sans parvenir à capturer le nombre absolu de particules athérogènes. Les progrès récents en lipidologie moléculaire démontrent que la concentration de particules d’apolipoprotéine B-100 (ApoB), couplée au découplage de l’oxyde nitrique synthase endothélial (eNOS), fournit un modèle prédictif exponentiellement plus précis de la nucléation des plaques d’athérome."
     }
   ],
-  "sourceHash": "e9f3dafcd052725ba59fa593ccf9efaa1b31de97"
+  "sourceHash": "ee8f56ed44c5718f9c01664babe798a91ee2143d"
 }

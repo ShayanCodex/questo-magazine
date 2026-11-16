@@ -11,8 +11,8 @@
     "reading-ergonomics",
     "editorial-systems"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "الشبكة الأساسية المطبعية السويسرية التوافقية ومقاييس الخطوط الرياضية على تخطيط الصحيفة العريضة التحريرية",
+  "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Classic typographic book layout showing precise grid margins, proportional leading, and serif letterforms",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "العمارة الموسيقية للصفحة المطبوعة"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Vintage lead metal type sorts arranged in an artisanal letterpress composing stick",
+      "caption": "Typographic heritage: translating movable metal type proportional rules into modern responsive viewport scales."
     },
     {
       "type": "ul",
       "items": [
-        "المقاييس المعيارية الرياضية: تغيير الحجم على فترات متناسبة (الثالث الأصغر 1.200، الرابع التام 1.333، النسبة الذهبية 1.618) يخلق تناغمًا بصريًا لا واعيًا.",
-        "صياغة Fluid Clamp: يؤدي استخدام وظائف CSSlamp() إلى استيفاء أحجام الخطوط بسلاسة عبر نطاقات إطار العرض المستمرة دون حدوث قفزات متناقضة في نقاط التوقف.",
-        "القياس الأمثل والقيادة: الحفاظ على 45 إلى 75 حرفًا لكل سطر إلى جانب ارتفاع السطر من 1.4 إلى 1.6 يحافظ على سرعة تتبع شبكية العين عبر جلسات القراءة المستمرة.",
-        "تعويض الحجم البصري: تقوم الخطوط المتغيرة بضبط تباين حدود الأحرف ديناميكيًا، وفتحة العدسة، والتتبع مع زيادة حجم النقطة لأعلى أو لأسفل."
+        "Mathematical Modular Scales: Sizing type along proportional intervals (Minor Third 1.200, Perfect Fourth 1.333, Golden Ratio 1.618) creates subconscious visual harmony.",
+        "Fluid Clamp Formulation: Utilizing CSS clamp() functions interpolates font sizes smoothly across continuous viewport ranges without jarring breakpoint jumps.",
+        "Optimal Measure & Leading: Maintaining 45 to 75 characters per line coupled with 1.4 to 1.6 line-height preserves retinal tracking velocity across sustained reading sessions.",
+        "Optical Size Compensation: Variable fonts dynamically adjust character stroke contrast, aperture openness, and tracking as point size scales up or down."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "إيلينا فانس، مبادئ الهندسة المطبعية"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital variable font design workspace showing weight, width, and optical size variation axes",
+      "caption": "Fluid typography: CSS clamp() functions and variable font axes harmonizing reading cadence across device dimensions."
+    },
+    {
       "type": "h2",
-      "text": "الخطوط المتغيرة وبيئة العمل البصرية"
+      "text": "العمارة الموسيقية للصفحة المطبوعة"
     },
     {
       "type": "p",
-      "text": "ظهور الخطوط المتغيرة OpenType يعيد حرفة أدوات القطع التاريخية. من خلال تعديل محور \"opsz\" (الحجم البصري) جنبًا إلى جنب مع أبعاد إطار عرض العرض، تحافظ وجوه النص الرقمية على أناقة الخطوط الدقيقة في أحجام العرض الضخمة مع زيادة مساحات العداد ووضوح القراءة على المقاييس المحمولة المحمولة."
+      "text": "الطباعة هي موسيقى مكانية. تمامًا كما يعتمد التأليف الموسيقي على الفواصل التوافقية، والتزامن، والإيقاع، فإن العمل الفني للطباعة التحريرية مبني على علاقات متناسبة: تعاقب المقياس المعياري، والإيقاعات الأساسية العمودية، وأطوال خطوط الأحرف المنضبطة (القياس). على الويب سريع الاستجابة، لا يمكن أن تظل الطباعة ثابتة؛ يجب أن يتنفس بشكل ديناميكي مع النسب المادية لجهاز القارئ."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "أنظمة التصميم التحريري وإتقان الطباعة",
-      "caption": "استكشاف الوحشية السويسرية، وأنظمة التخطيط المعيارية، ورياضيات قراءة الطباعة."
+      "title": "Editorial Design Systems and Typographic Mastery",
+      "caption": "Exploration of Swiss brutalism, modular layout systems, and the mathematics of reading typography.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "بيان القراءة الرقمية البطيئة"
+      "text": "العمارة الموسيقية للصفحة المطبوعة"
     },
     {
       "type": "p",
-      "text": "من خلال رفض ضجيج القالب المتعجل لصالح إيقاع الطباعة الخوارزمي، توفر مجلة Questo ملاذًا معماريًا للاهتمام العميق: تجربة حيث تكرم حرفة الطباعة ذكاء القارئ."
+      "text": "الطباعة هي موسيقى مكانية. تمامًا كما يعتمد التأليف الموسيقي على الفواصل التوافقية، والتزامن، والإيقاع، فإن العمل الفني للطباعة التحريرية مبني على علاقات متناسبة: تعاقب المقياس المعياري، والإيقاعات الأساسية العمودية، وأطوال خطوط الأحرف المنضبطة (القياس). على الويب سريع الاستجابة، لا يمكن أن تظل الطباعة ثابتة؛ يجب أن يتنفس بشكل ديناميكي مع النسب المادية لجهاز القارئ."
     }
   ],
-  "sourceHash": "a87f18c9068b56d94aafedd846c7d806dd29c36f"
+  "sourceHash": "3e75f0d5b94a96f8a122370f079714d6c92dc2e5"
 }

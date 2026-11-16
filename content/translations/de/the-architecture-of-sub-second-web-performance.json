@@ -11,8 +11,8 @@
     "edge-computing",
     "web-vitals"
   ],
-  "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Server-Racks mit hoher Dichte, die cyanfarbene LED-Telemetriedaten in einer Unternehmensdatenanlage aussenden",
+  "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-density server racks emitting cyan LED telemetry inside an enterprise data facility",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Um einen authentischen Sub-Second Largest Contentful Paint (LCP) und null Cumulative Layout Shift (CLS) zu erreichen, ist eine Umkehrung der herkömmlichen Hosting-Topologie erforderlich. Anstatt HTML dynamisch pro Benutzeranforderung zu berechnen, kompilieren moderne Veröffentlichungsplattformen mit hoher Autorität Seiten zur Erstellungszeit in deterministische, unveränderliche statische HTML-Dateien vor."
+      "text": "Seit über einem Jahrzehnt ist die Webarchitektur der Rechenkomplexität auf Kosten der Benutzererfahrung nachgejagt. Riesige Single-Page-Anwendungen, komplizierte Hydratationsbäume und mehrstufige Backend-Datenbankabfragen haben das moderne Web aufgebläht. Jede Millisekunde Latenz untergräbt das Vertrauen der Benutzer, beeinträchtigt die Sichtbarkeit in der Suche und verschwendet die Akkulaufzeit des Geräts."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "code",
@@ -33,7 +39,13 @@
     },
     {
       "type": "p",
-      "text": "Wenn ein unveränderliches Asset von einem Edge-Knoten bereitgestellt wird, der sich im Umkreis von 15 Kilometern um den anfordernden Client befindet, sinkt die Hin- und Rückübertragung der Pakete auf unter 10 Millisekunden. Die Serververarbeitungszeit konvergiert effektiv gegen Null."
+      "text": "Seit über einem Jahrzehnt ist die Webarchitektur der Rechenkomplexität auf Kosten der Benutzererfahrung nachgejagt. Riesige Single-Page-Anwendungen, komplizierte Hydratationsbäume und mehrstufige Backend-Datenbankabfragen haben das moderne Web aufgebläht. Jede Millisekunde Latenz untergräbt das Vertrauen der Benutzer, beeinträchtigt die Sichtbarkeit in der Suche und verschwendet die Akkulaufzeit des Geräts."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "quote",
@@ -47,16 +59,16 @@
     {
       "type": "ul",
       "items": [
-        "Vorgerenderte HTML-Dokumente mit vollständiger, für Crawler lesbarer semantischer Kopie und JSON-LD-Metadaten.",
-        "Keine Blockierung von Telemetrieskripten von Drittanbietern, die vor dem primären Inhaltslayout ausgeführt werden.",
-        "CSS-Page-Medien und moderne Schriftart-Untergruppen mithilfe von Unicode-Range-Deklarationen und Font-Display: Swap.",
-        "Geblockte statische JSON-Datenbereitstellung, die interaktive Dienstprogramme ohne Layoutverschiebungen schrittweise hydriert."
+        "Pre-rendered HTML documents containing complete crawler-readable semantic copy and JSON-LD metadata.",
+        "Zero blocking third-party telemetry scripts executed prior to the primary content layout.",
+        "CSS paged media and modern font subsetting using unicode-range declarations and font-display: swap.",
+        "Chunked static JSON data delivery that progressive-hydrates interactive utilities without layout shifts."
       ]
     },
     {
       "type": "p",
-      "text": "Durch die Einhaltung dieser strengen technischen Standards garantieren digitale Verlage eine sofortige globale Auffindbarkeit, erfüllen die strengsten Core Web Vitals-Kriterien von Google und bieten internationalen Lesern ein ununterbrochenes, ablenkungsfreies Leseerlebnis."
+      "text": "Seit über einem Jahrzehnt ist die Webarchitektur der Rechenkomplexität auf Kosten der Benutzererfahrung nachgejagt. Riesige Single-Page-Anwendungen, komplizierte Hydratationsbäume und mehrstufige Backend-Datenbankabfragen haben das moderne Web aufgebläht. Jede Millisekunde Latenz untergräbt das Vertrauen der Benutzer, beeinträchtigt die Sichtbarkeit in der Suche und verschwendet die Akkulaufzeit des Geräts."
     }
   ],
-  "sourceHash": "edfd46a296d4b24aa8cb0eeac577f4cfb2d42440"
+  "sourceHash": "991c4f46537e3fec6a7c705a3813b91ad888c52f"
 }

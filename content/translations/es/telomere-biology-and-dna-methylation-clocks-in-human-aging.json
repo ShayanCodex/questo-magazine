@@ -1,0 +1,79 @@
+{
+  "slug": "telomere-biology-and-dna-methylation-clocks-in-human-aging",
+  "title": "Relojes epigenéticos y metilación del ADN: medición de la edad biológica más allá de la cronología",
+  "excerpt": "Una revisión clínica de los algoritmos de metilación de Horvath, los biomarcadores de ADN libre de células, las tasas de desgaste de los telómeros y las intervenciones basadas en evidencia para la preservación de la salud.",
+  "date": "2026-11-16",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "longevity",
+    "epigenetics",
+    "dna-methylation",
+    "preventive-medicine",
+    "biomarkers"
+  ],
+  "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Clinical researcher examining epigenetic DNA methylation microarrays and biological age sequencing",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La divergencia de la edad cronológica y biológica"
+    },
+    {
+      "type": "p",
+      "text": "La edad cronológica (el tiempo calendario transcurrido desde el nacimiento) es un predictor extraordinariamente crudo de la morbilidad individual, la resiliencia cognitiva y el deterioro funcional de órganos específicos. El surgimiento de la epigenética molecular ha revelado que nuestro genoma actúa como hardware, mientras que los patrones dinámicos de los grupos metilo (-CH3) unidos a los dinucleótidos citosina-guanina (CpG) constituyen un software que modula la transcripción genética en respuesta al estilo de vida, el estrés metabólico y las exposiciones ambientales."
+    },
+    {
+      "type": "h2",
+      "text": "La divergencia de la edad cronológica y biológica"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Fluorescent microscopic imaging of chromosome telomeres and chromatin methylation loci",
+      "caption": "Epigenetic clocks: algorithmic quantification of CpG dinucleotide methylation patterns across multi-tissue biological samples."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Horvath Multi-Tissue Epigenetic Clock: Statistical algorithms analyzing specific CpG sites that measure biological age across diverse tissue types with a median error margin below three years.",
+        "DunedinPACE Speedometer: Second-generation longitudinal biomarker tracking the instantaneous rate of biological aging from a single blood draw, predicting premature mortality risk.",
+        "Telomeric Repeat Attrition: TTAGGG nucleotide sequence erosion at chromosome terminal caps, triggering p53-mediated cellular senescence when critical Hayflick limits are reached.",
+        "Cell-Free DNA Methylation Profiling: Liquid biopsy technology detecting tissue-specific circulating DNA fragments released by dying apoptotic cells to identify subclinical organ injury."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El envejecimiento ya no es una ley inmutable de decadencia termodinámica; es una pérdida de información epigenética mensurable y biológicamente coordinada que puede rastrearse y modularse sistemáticamente.",
+      "cite": "Preventive Medicine & Cellular Longevity Journal"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Biomedical laboratory pipetting reagents for high-throughput cell-free DNA aging biomarker assays",
+      "caption": "Telomeric repeat attrition: measuring terminal chromosome TTAGGG repeats as cellular senescence biomarkers."
+    },
+    {
+      "type": "h2",
+      "text": "La divergencia de la edad cronológica y biológica"
+    },
+    {
+      "type": "p",
+      "text": "La edad cronológica (el tiempo calendario transcurrido desde el nacimiento) es un predictor extraordinariamente crudo de la morbilidad individual, la resiliencia cognitiva y el deterioro funcional de órganos específicos. El surgimiento de la epigenética molecular ha revelado que nuestro genoma actúa como hardware, mientras que los patrones dinámicos de los grupos metilo (-CH3) unidos a los dinucleótidos citosina-guanina (CpG) constituyen un software que modula la transcripción genética en respuesta al estilo de vida, el estrés metabólico y las exposiciones ambientales."
+    },
+    {
+      "type": "video",
+      "title": "DNA Methylation Clocks and the Science of Epigenetic Reprogramming",
+      "caption": "Clinical deep-dive into epigenetic aging biomarkers, CpG island methylation drift, and Yamanaka factor cellular rejuvenation.",
+      "src": "https://www.youtube-nocookie.com/embed/0T2Xb8q9JzQ"
+    },
+    {
+      "type": "h2",
+      "text": "La divergencia de la edad cronológica y biológica"
+    },
+    {
+      "type": "p",
+      "text": "La edad cronológica (el tiempo calendario transcurrido desde el nacimiento) es un predictor extraordinariamente crudo de la morbilidad individual, la resiliencia cognitiva y el deterioro funcional de órganos específicos. El surgimiento de la epigenética molecular ha revelado que nuestro genoma actúa como hardware, mientras que los patrones dinámicos de los grupos metilo (-CH3) unidos a los dinucleótidos citosina-guanina (CpG) constituyen un software que modula la transcripción genética en respuesta al estilo de vida, el estrés metabólico y las exposiciones ambientales."
+    }
+  ],
+  "sourceHash": "ed434eaae713190d715f3b5e336ad7b0d21cb1e1"
+}

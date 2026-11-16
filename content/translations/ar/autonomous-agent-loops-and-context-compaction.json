@@ -11,8 +11,8 @@
     "system-architecture",
     "context-compaction"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "أوزان الانتباه العصبي لنموذج الذكاء الاصطناعي عالي الأداء وأداة الوكيل التي تستدعي وقت تشغيل التنفيذ",
+  "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Abstract glowing neural network connections representing autonomous agentic reasoning loops",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "بنية حلقات الوكيل طويلة الأمد"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sandboxed code execution environment displaying structured JSON tool call outputs and reflection checks",
+      "caption": "Tool execution boundaries: deterministic validation gates ensuring agent tool errors do not pollute long-term context."
     },
     {
       "type": "ul",
       "items": [
-        "ضغط الحالة: يقوم التلخيص المنظم بتمرير مخرجات أداة التقطير الخام إلى دفاتر الحالة عالية الكثافة قبل انتهاك حدود السياق.",
-        "حدود تنفيذ الأداة: تضمن أوقات تشغيل العملية الفرعية المعزولة أن تؤدي حالات فشل أداة الوكيل إلى إرجاع تشخيصات يمكن قراءتها بواسطة الآلة دون تلويث حالة المحادثة.",
-        "الذاكرة العرضية مقابل الذاكرة الدلالية: يقوم الوكلاء بتقسيم آثار لوحة المسودة المحلية من اصطلاحات المشروع طويلة المدى المخزنة في تسلسلات هرمية متجهة مفهرسة.",
-        "سلاسل التصحيح الذاتي: تقوم أجهزة مراقبة الانعكاس ذات الحلقة المزدوجة بتقييم إكمال المهمة مقابل الثوابت الأصلية، مما يؤدي إلى إيقاف حلقات التنفيذ الجامحة."
+        "State Compression: Structured summarization passes distill raw tool outputs into high-density state ledgers before context bounds are breached.",
+        "Tool Execution Boundary: Sandboxed subprocess runtimes ensure that agent tool failures return machine-readable diagnostics without polluting conversational state.",
+        "Episodic vs Semantic Memory: Agents bifurcate local scratchpad traces from long-term project conventions stored in indexed vector hierarchies.",
+        "Self-Correction Cascades: Dual-loop reflection monitors evaluate task completion against original invariants, arresting runaway execution loops."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "هندسة الأنظمة ودراسة الذكاء المستقل"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Vector database memory indexing and semantic state compaction across multi-turn sessions",
+      "caption": "Dynamic context compaction: recursive summarization passes compressing conversational state by 80% without losing task invariants."
+    },
+    {
       "type": "h2",
-      "text": "التقليم الديناميكي وضغط الحالة التقدمي"
+      "text": "بنية حلقات الوكيل طويلة الأمد"
     },
     {
       "type": "p",
-      "text": "تنفذ أطر عمل الوكيل الحديثة الضغط التدريجي: نظرًا لأن عمق المحادثة يتجاوز عتبات الرمز المميز المحددة مسبقًا، فإن استجابات الأداة الوسيطة (مثل قراءات الملفات وسجلات التجميع) تنهار بشكل متكرر في اختلافات منظمة وأشجار قرارات. ويحافظ هذا على مسار تفكير الوكيل مع تقليل استهلاك الرمز المميز بنسبة تصل إلى ثمانين بالمائة."
+      "text": "يواجه الوكلاء المستقلون الذين يعملون عبر هندسة برمجيات متعددة الساعات أو مهام تحليلية حتمًا الحد المادي الأساسي لنماذج الأساس: تشبع نافذة السياق وقياس الذاكرة التربيعية. في حين أن الجيل المعزز للاسترجاع الثابت (RAG) يساعد في الإجابة على الأسئلة السلبية، فإن الوكيل النشط الذي يقوم باستدعاءات الأدوات، وفحص المخرجات الطرفية، وتحرير كود المصدر يتطلب ذاكرة عمل مستمرة تتخلص ديناميكيًا من الضوضاء العابرة مع الحفاظ على الثوابت المعمارية المهمة."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "بناء معماريات ووكلاء LLM مستقلين",
-      "caption": "تفصيل الأنظمة التفصيلية لاستدلال المحولات وإدارة لوحة المسودة واستدعاء الأداة الوكيلة."
+      "title": "Building Autonomous LLM Architectures and Agents",
+      "caption": "Detailed systems breakdown of transformer reasoning, scratchpad management, and agentic tool invocation.",
+      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY"
     },
     {
       "type": "h2",
-      "text": "التحقق التجريبي والحفظ الثابت"
+      "text": "بنية حلقات الوكيل طويلة الأمد"
     },
     {
       "type": "p",
-      "text": "من خلال اقتران ضغط السياق بمجموعات الاختبار الحتمية، تحقق أوقات التشغيل المستقلة الحديثة موثوقية مستدامة عبر مئات الإجراءات المتسلسلة. لا يكمن مستقبل هندسة البرمجيات في المطالبات الحوارية، بل في حلقات وكيل منضبطة ذاتية الإصلاح تحكمها بوابات تحقق صارمة."
+      "text": "يواجه الوكلاء المستقلون الذين يعملون عبر هندسة برمجيات متعددة الساعات أو مهام تحليلية حتمًا الحد المادي الأساسي لنماذج الأساس: تشبع نافذة السياق وقياس الذاكرة التربيعية. في حين أن الجيل المعزز للاسترجاع الثابت (RAG) يساعد في الإجابة على الأسئلة السلبية، فإن الوكيل النشط الذي يقوم باستدعاءات الأدوات، وفحص المخرجات الطرفية، وتحرير كود المصدر يتطلب ذاكرة عمل مستمرة تتخلص ديناميكيًا من الضوضاء العابرة مع الحفاظ على الثوابت المعمارية المهمة."
     }
   ],
-  "sourceHash": "8c4ee9a01b91327d6b414722664459af6707fe3b"
+  "sourceHash": "b6bfa05ab8dda869359d99132bc59365f9012c36"
 }

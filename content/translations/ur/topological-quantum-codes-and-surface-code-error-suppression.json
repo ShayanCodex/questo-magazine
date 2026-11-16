@@ -11,8 +11,8 @@
     "error-correction",
     "surface-codes"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "گولڈن کرائیوجینک ڈائلیشن ریفریجریٹر ہاؤسنگ سپر کنڈکٹنگ کوانٹم پروسیسر کوبٹس",
+  "image": "https://images.unsplash.com/photo-1583912267670-6575ad4736f8?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Geometric topological lattice displaying quantum entanglement braiding and surface codes",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "شور انٹرمیڈیٹ اسکیل سے فالٹ ٹولرنٹ کوانٹم میں منتقلی"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1bb1a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Two-dimensional planar surface code architecture with data and syndrome measurement qubits",
+      "caption": "Surface code grid: interleaving X-type and Z-type stabilizer measurements to identify localized bit and phase flips."
     },
     {
       "type": "ul",
       "items": [
-        "اسٹیبلائزر پیمائش: تختیوں اور عمودی حصوں میں برابری کی جانچ سپرپوزیشن حالت کو گرائے بغیر بٹ فلپ (X) اور فیز فلپ (Z) کی خرابیوں کی تشخیص کرتی ہے۔",
-        "تھریشولڈ تھیوریم: جب فزیکل گیٹ کی خرابی کی شرح تقریباً ایک فیصد سے نیچے آجاتی ہے، تو جالی کوڈ کے فاصلے کو پیمانہ کرنے سے منطقی غلطیوں کو تیزی سے دبایا جاتا ہے۔",
-        "غیر مقامی معلومات کا ذخیرہ: منطقی کوانٹم معلومات کو کسی بھی انفرادی کمزور جسمانی کوبٹ کے بجائے عالمی ٹاپولوجیکل الجھنوں میں انکوڈ کیا جاتا ہے۔",
-        "ریئل ٹائم ڈیکوڈنگ گرافس: کم از کم وزن پرفیکٹ میچنگ (MWPM) الگورتھم کرائیوجینک ذیلی مائیکرو سیکنڈ کی رفتار سے سنڈروم اسٹریمز پر کارروائی کرتے ہیں۔"
+        "Stabilizer Measurements: Parity checks across plaquettes and vertices diagnose bit-flip (X) and phase-flip (Z) errors without collapsing superposition state.",
+        "Threshold Theorem: When physical gate error rates fall below approximately one percent, scaling the lattice code distance exponentially suppresses logical errors.",
+        "Non-Local Information Storage: Logical quantum information is encoded across global topological entanglements rather than any individual vulnerable physical qubit.",
+        "Real-Time Decoding Graphs: Minimum-weight perfect matching (MWPM) algorithms process syndrome streams at cryogenic sub-microsecond speeds."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "تھیوریٹیکل فزکس اور کوانٹم انفارمیشن ریویو"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561584-897c11f7c5f8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Laser interferometry setup for quantum syndrome readout with low-noise amplification",
+      "caption": "Quantum error suppression: syndrome decoding algorithms arresting error propagation below fault-tolerant thresholds."
+    },
+    {
       "type": "h2",
-      "text": "سپر کنڈکٹنگ آرکیٹیکچرز اور کریوجینک انٹر کنیکٹس"
+      "text": "شور انٹرمیڈیٹ اسکیل سے فالٹ ٹولرنٹ کوانٹم میں منتقلی"
     },
     {
       "type": "p",
-      "text": "انجینئرنگ سطحی کوڈز کے لیے گھنے دو جہتی گرڈ ٹوپولاجیز کی ضرورت ہوتی ہے۔ ٹیون ایبل مائیکرو ویو ریزونیٹرز کے ذریعے آپس میں جڑے ہوئے ٹرانسمون کوبٹس کو پندرہ ملی کیلون درجہ حرارت پر ہم آہنگی برقرار رکھنی چاہیے جبکہ اعلی کثافت کواکسیئل کیبلنگ کمرے کے درجہ حرارت FPGA ڈیکوڈرز کے لیے ہزاروں ریڈ آؤٹ لائنوں کو نکالتی ہے۔"
+      "text": "جب کہ شور والے انٹرمیڈیٹ اسکیل کوانٹم (NISQ) پروسیسرز نے الگورتھمک میں خصوصی طور پر اسپیشلائزڈ سیمپل مارکس کا مظاہرہ کیا ہے۔ کوانٹم کمپیوٹیشن دس سے منفی بارہویں کے نیچے منطقی غلطی کی شرح کا مطالبہ کرتی ہے۔ اس مقصد کو حاصل کرنے کے لیے ٹاپولوجیکل کوانٹم ایرر کریکشن (QEC) کی ضرورت ہوتی ہے، جس میں نازک فزیکل qubits کو دو جہتی سطح کی جالیوں میں الجھا دیا جاتا ہے تاکہ ٹوپولوجی کے ذریعے محفوظ لازوال منطقی کوئبٹس تشکیل پا سکیں۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "پریسجن فزکس اور کوانٹم پیمائش کے اصول",
-      "caption": "تجرباتی فزکس لیکچر جس میں انتہائی درستگی انٹرفیومیٹری، کرائیوجینک استحکام، اور کوانٹم سٹیٹ کنٹرول کو دریافت کیا گیا ہے۔"
+      "title": "Precision Physics and Quantum Measurement Principles",
+      "caption": "Experimental physics lecture exploring extreme precision interferometry, cryogenic stability, and quantum state control.",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10"
     },
     {
       "type": "h2",
-      "text": "توسیع پذیر کوانٹم کیمسٹری کا افق"
+      "text": "شور انٹرمیڈیٹ اسکیل سے فالٹ ٹولرنٹ کوانٹم میں منتقلی"
     },
     {
       "type": "p",
-      "text": "غلطی برداشت کرنے والے منطقی کیوبٹس کی آمد سے محیطی کھاد کی ترکیب، سالڈ سٹیٹ بیٹری الیکٹرولائٹس، اور پیچیدہ میکرو مالیکیولر کیٹالسٹس جو کبھی بھی سپر کام نہیں کریں گے۔"
+      "text": "جب کہ شور والے انٹرمیڈیٹ اسکیل کوانٹم (NISQ) پروسیسرز نے الگورتھمک میں خصوصی طور پر اسپیشلائزڈ سیمپل مارکس کا مظاہرہ کیا ہے۔ کوانٹم کمپیوٹیشن دس سے منفی بارہویں کے نیچے منطقی غلطی کی شرح کا مطالبہ کرتی ہے۔ اس مقصد کو حاصل کرنے کے لیے ٹاپولوجیکل کوانٹم ایرر کریکشن (QEC) کی ضرورت ہوتی ہے، جس میں نازک فزیکل qubits کو دو جہتی سطح کی جالیوں میں الجھا دیا جاتا ہے تاکہ ٹوپولوجی کے ذریعے محفوظ لازوال منطقی کوئبٹس تشکیل پا سکیں۔"
     }
   ],
-  "sourceHash": "72618758c4d63268a64e2cad605fa285e4eedae3"
+  "sourceHash": "55f0c412780294dd2f32fca59f7dcab355e1429b"
 }

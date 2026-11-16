@@ -12,7 +12,7 @@
     "athletic-performance"
   ],
   "image": "/images/articles/tennis-biomechanics-serve.jpg",
-  "imageAlt": "Professioneller Tennisspieler in dynamischer Trophäenpose, der sich auf einen explosiven ersten Aufschlag auf dem Platz vorbereitet",
+  "imageAlt": "Professional tennis player in dynamic trophy pose preparing for an explosive first serve on court",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Die Physik der ballistischen Schlägergeschwindigkeit"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Biomechanical Force Vectors in Elite Tennis Serves - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Biomechanical Force Vectors in Elite Tennis Serves."
     },
     {
       "type": "ul",
       "items": [
-        "Bodenreaktionskraft (GRF): Explosive Kniebeugung und vertikaler Bodenstoß erzeugen den anfänglichen linearen Impuls, der die gesamte kinetische Sequenz antreibt.",
-        "Becken- und Thoraxtrennung: Die Hüftrotation führt zur Schulterrotation und erzeugt einen elastischen Dehnungs-Verkürzungs-Zyklus über die schräge Rumpfmuskulatur.",
-        "Interne Schulterrotation: Winkelgeschwindigkeiten von mehr als 2.400 Grad pro Sekunde bei der internen Schulterrotation tragen bis zu 50 % zur endgültigen Schlägerkopfgeschwindigkeit bei.",
-        "Impact Elevation Window: Das Auftreffen des Balls am Scheitelpunkt des vertikalen Impulsvektors optimiert den parabolischen Spielraum und die Flugbahnwinkel nach unten."
+        "Ground Reaction Force (GRF): Explosive knee flexion and vertical ground push generate the initial linear momentum that drives the entire kinetic sequence.",
+        "Pelvic and Thoracic Separation: Hip rotation leads shoulder rotation, creating an elastic stretch-shortening cycle across core oblique musculature.",
+        "Internal Shoulder Rotation: Angular velocities exceeding 2,400 degrees per second in internal shoulder rotation contribute up to 50% of final racquet head velocity.",
+        "Impact Elevation Window: Striking the ball at the apex of the vertical impulse vector optimizes parabolic clearance and downward court trajectory angles."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "International Society of Sports Biomechanics"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Biomechanical Force Vectors in Elite Tennis Serves - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Biomechanical Force Vectors in Elite Tennis Serves."
+    },
+    {
       "type": "h2",
-      "text": "Segmentale kinematische Sequenzierung"
+      "text": "Die Physik der ballistischen Schlägergeschwindigkeit"
     },
     {
       "type": "p",
-      "text": "Die optische Hochgeschwindigkeits-3D-Bewegungserfassung zeigt, dass die maximale Winkelgeschwindigkeit einem strikten Verlauf von proximal nach distal folgt: Die Verzögerung des Beckens leitet die Beschleunigung des Rumpfes ein, die Verzögerung des Rumpfes löst die Schulterrotation aus, gefolgt von Ellenbogenstreckung, Pronation des Unterarms und Beugung des Handgelenks in Mikrosekundenintervallen."
+      "text": "Der professionelle Tennisaufschlag ist eine der explosivsten, mehrgelenkigen kinematischen Aktionen im Leistungssport. Das Erreichen von Startgeschwindigkeiten über 220 km/h erfordert weit mehr als nur die Kraft der oberen Extremitäten; Es erfordert die sequentielle, ungehemmte Übertragung mechanischer Energie entlang einer ununterbrochenen kinetischen Kette von der Spielfeldoberfläche bis zum Aufprallpunkt des Schlägers."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/5D_1E4kGZ_A",
-      "title": "Kinetische Kettenbiomechanik im modernen Tennisaufschlag",
-      "caption": "Hochgeschwindigkeitskamera- und 3D-Bewegungsverfolgungsanalyse mit detaillierten Angaben zu Bodenreaktionskräften, Brustneigung und internen Schulterrotationsmechanismen."
+      "title": "Kinetic Chain Biomechanics in the Modern Tennis Serve",
+      "caption": "High-speed camera and 3D motion tracking analysis detailing ground reaction forces, thoracic tilt, and internal shoulder rotation mechanics.",
+      "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ"
     },
     {
       "type": "h2",
-      "text": "Verletzungsprävention und Skapulaverzögerung"
+      "text": "Die Physik der ballistischen Schlägergeschwindigkeit"
     },
     {
       "type": "p",
-      "text": "Die exzentrische Verzögerungsphase nach dem Ballaufprall setzt die hintere Rotatorenmanschette und das Labrum extremen Distraktionskräften aus. Die moderne Konditionierung konzentriert sich stark auf das Training der exzentrischen Verzögerung der hinteren Kette, um die Gelenklebensdauer bei mehr als 200 Aufschlagbelastungen zu gewährleisten."
+      "text": "Der professionelle Tennisaufschlag ist eine der explosivsten, mehrgelenkigen kinematischen Aktionen im Leistungssport. Das Erreichen von Startgeschwindigkeiten über 220 km/h erfordert weit mehr als nur die Kraft der oberen Extremitäten; Es erfordert die sequentielle, ungehemmte Übertragung mechanischer Energie entlang einer ununterbrochenen kinetischen Kette von der Spielfeldoberfläche bis zum Aufprallpunkt des Schlägers."
     }
   ],
-  "sourceHash": "e108c63a629d8092b338d28c4d66b231001d4240"
+  "sourceHash": "eafb965e9ad454c902604d79da02611cb550f42a"
 }

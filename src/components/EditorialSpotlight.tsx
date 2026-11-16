@@ -16,7 +16,7 @@ export function EditorialSpotlight() {
         {/* Visual Architectural Imagery */}
         <div className="lg:col-span-7 relative min-h-[340px] sm:min-h-[440px] overflow-hidden bg-neutral-900 group">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+            src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&w=1600&q=85"
             alt={spotlight.title}
             className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700 ease-out"
           />

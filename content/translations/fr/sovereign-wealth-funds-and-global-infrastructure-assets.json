@@ -11,8 +11,8 @@
     "macroeconomics",
     "energy-grid"
   ],
-  "image": "/images/articles/gold-reserves-central-bank.jpg",
-  "imageAlt": "Grand livre de réserves de capitaux des coffres souverains et des institutions financières internationales",
+  "image": "https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Financial capital city skyline reflecting sovereign investment assets and long-term asset allocation",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "Le changement de paradigme de la dette liquide aux actifs stratégiques réels"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542744095-2963158e6d95?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Commercial container port and intermodal global logistics terminal owned by sovereign wealth fund",
+      "caption": "Real asset allocation: sovereign capital underwriting multi-decade transportation hubs and critical logistical corridors."
     },
     {
       "type": "ul",
       "items": [
-        "Couverture contre l'inflation : les services publics physiques réglementés comportent des indexations de prix contractuelles directement liées aux indices nationaux des prix à la consommation et à la production.",
-        "Accords bilatéraux souverains : les accords bilatéraux entre États offrent des protections juridiques et réglementaires contre l'expropriation arbitraire et la volatilité des tarifs.",
-        "Prime pour les infrastructures critiques : les actifs qui ancrent le calcul numérique et la transmission d'énergie fournissent des flux de trésorerie perpétuels, insensibles aux cycles de consommation.",
-        "Capitalisation à long horizon : les accords de concession de cinquante ans correspondent aux engagements multigénérationnels des réserves de retraite et de stabilisation de l'État."
+        "Inflation Hedging: Regulated physical utilities feature contractual price escalators linked directly to national consumer and producer price indices.",
+        "Sovereign Bilateral Deals: Bilateral state compacts provide legal and regulatory protections against arbitrary expropriation and tariff volatility.",
+        "Critical Infrastructure Premium: Assets that anchor digital computation and energy transmission deliver perpetual cash flows immune to consumer cycles.",
+        "Long-Horizon Compounding: Fifty-year concession agreements match the multi-generational liabilities of state pension and stabilization reserves."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Revue trimestrielle du capital souverain et revue des actifs internationaux"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542744172-8e7e35474ac5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Utility-scale wind energy turbine installation funded by sovereign green transition mandates",
+      "caption": "Energy transition portfolios: sovereign wealth allocating capital to inflation-hedged infrastructure and grid decarbonization."
+    },
+    {
       "type": "h2",
-      "text": "Financement de l'architecture mondiale de transport d'énergie"
+      "text": "Le changement de paradigme de la dette liquide aux actifs stratégiques réels"
     },
     {
       "type": "p",
-      "text": "L'expansion des centres de données d'intelligence artificielle et l'électrification industrialisée nécessitent une intensité capitalistique sans précédent. Les syndicats de richesse souverains servent désormais de principaux financiers pour les interconnexions à courant continu de plusieurs gigawatts, fournissant des capitaux propres au bilan que les marchés conventionnels de la dette privée ne peuvent pas rassembler."
+      "text": "Dans une époque définie par l'expansion budgétaire, le réalignement géopolitique et les pressions sur les rendements réels, les fonds souverains mondiaux (SWF) gérant plus de douze mille milliards de dollars orchestrent une réallocation de portefeuille historique. Au-delà des dettes souveraines à rendement négatif et des actions publiques volatiles, les répartiteurs étatiques dirigent les capitaux vers des monopoles physiques à haute barrière : câbles sous-marins intercontinentaux, super-réseaux d’énergie propre et ports commerciaux en eau profonde."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "Comment fonctionne la machine économique",
-      "caption": "Ray Dalio explique les cycles structurels de la dette, les flux de capitaux institutionnels et le désendettement macroéconomique."
+      "title": "How The Economic Machine Works",
+      "caption": "Ray Dalio explains structural debt cycles, institutional capital flows, and macroeconomic deleveraging.",
+      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0"
     },
     {
       "type": "h2",
-      "text": "Ramifications géopolitiques de la propriété de l'État"
+      "text": "Le changement de paradigme de la dette liquide aux actifs stratégiques réels"
     },
     {
       "type": "p",
-      "text": "Alors que les entités étatiques acquièrent des participations majoritaires dans des corridors de télécommunications et des nœuds logistiques vitaux, les mécanismes d'examen de la sécurité nationale se sont resserrés dans le monde entier. L’interaction entre l’accumulation d’actifs souverains et le contrôle réglementaire définira l’architecture financière du prochain demi-siècle."
+      "text": "Dans une époque définie par l'expansion budgétaire, le réalignement géopolitique et les pressions sur les rendements réels, les fonds souverains mondiaux (SWF) gérant plus de douze mille milliards de dollars orchestrent une réallocation de portefeuille historique. Au-delà des dettes souveraines à rendement négatif et des actions publiques volatiles, les répartiteurs étatiques dirigent les capitaux vers des monopoles physiques à haute barrière : câbles sous-marins intercontinentaux, super-réseaux d’énergie propre et ports commerciaux en eau profonde."
     }
   ],
-  "sourceHash": "5e60971085a850fc9d65b87f0abea6a0f4e9e9f0"
+  "sourceHash": "dd4275db6f2b50ad152abf80d5215d2ea4682a80"
 }

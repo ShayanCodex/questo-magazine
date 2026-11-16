@@ -12,8 +12,8 @@
     "infrastructure",
     "power-grids"
   ],
-  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Torres de transmisión eléctrica de alto voltaje contra el cielo que representan la distribución de energía continental",
+  "image": "https://images.unsplash.com/photo-1510519138111-55099f3e5330?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-voltage electric transmission pylons against sky representing continental power distribution",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "La transmisión de corriente continua de alto voltaje (HVDC) se ha convertido en el paradigma definitivo de ingeniería eléctrica para la transferencia masiva de energía a distancias que superan los 600 kilómetros sobre la superficie o los 50 kilómetros bajo el agua. Al eliminar la generación de energía reactiva y las corrientes de carga capacitivas, HVDC proporciona el eslabón estructural que falta para las superredes intercontinentales."
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
     },
     {
       "type": "h2",
       "text": "1. Las limitaciones físicas de la corriente alterna a escala"
     },
     {
-      "type": "p",
-      "text": "En cables de CA de alta tensión, las alternancias continuas de corriente sinusoidal (50 o 60 Hz) generan dos mecanismos de pérdida física severos: el efecto piel y el desplazamiento dieléctrico capacitivo."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for HVDC Transmission & Supergrids."
     },
     {
       "type": "p",
-      "text": "El efecto piel fuerza a los electrones de CA hacia el perímetro exterior de un conductor, reduciendo el área de la sección transversal efectiva y multiplicando la resistencia eléctrica. En cables submarinos o subterráneos, el dieléctrico aislante que rodea al conductor forma un condensador cilíndrico masivo con el agua de mar o el suelo circundante:"
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
+    },
+    {
+      "type": "p",
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting HVDC Transmission & Supergrids."
     },
     {
       "type": "code",
@@ -42,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "La corriente directa opera a frecuencia cero ($f = 0$). En consecuencia, las corrientes de carga capacitivas desaparecen, toda la sección transversal del conductor tiene una densidad de corriente uniforme y las pérdidas dieléctricas caen casi a cero."
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
     },
     {
       "type": "quote",
@@ -51,58 +63,58 @@
     },
     {
       "type": "h2",
-      "text": "2. Convertidores modulares multinivel (MMC) y electrónica de potencia IGBT"
+      "text": "1. Las limitaciones físicas de la corriente alterna a escala"
     },
     {
       "type": "p",
-      "text": "Las líneas HVDC históricas implementaron convertidores conmutados en línea (LCC) basados ​​en válvulas de tiristores o de arco de mercurio pesado, que padecían consumo de energía reactiva y vulnerabilidad a fallas de conmutación de CA. Los sistemas contemporáneos utilizan convertidores de fuente de voltaje (VSC) construidos sobre topologías de convertidor modular multinivel (MMC)."
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
     },
     {
       "type": "p",
-      "text": "Un convertidor MMC sintetiza formas de onda de CA sinusoidales casi perfectas conectando en cascada cientos de pequeños submódulos, cada uno de los cuales contiene un transistor bipolar de puerta aislada (IGBT) y un condensador de almacenamiento. Al conmutar submódulos individuales en incrementos de microsegundos, el convertidor construye escaleras de voltaje escalonadas suaves, eliminando la necesidad de bancos masivos de filtros de CA de armónicos."
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
     },
     {
       "type": "ul",
       "items": [
-        "Capacidad de arranque en negro: VSC-HVDC puede energizar una red de CA local completamente colapsada sin requerir soporte de generador externo.",
-        "Control P-Q Independiente: La potencia activa ($P$) y la potencia reactiva ($Q$) se pueden modular de forma instantánea e independiente en cuatro cuadrantes.",
-        "Interconexión de red asíncrona: conecta redes nacionales no sincronizadas (como las del Reino Unido y Europa continental, o ERCOT y la Interconexión del Este) sin riesgos de apagones en cascada."
+        "Black-Start Capability: VSC-HVDC can energize a completely collapsed local AC grid without requiring external generator support.",
+        "Independent P-Q Control: Active power ($P$) and reactive power ($Q$) can be modulated instantaneously and independently in four quadrants.",
+        "Asynchronous Grid Interconnection: Connects non-synchronized national grids (such as the UK and continental Europe, or ERCOT and the Eastern Interconnection) without cascading blackout risks."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Tecnología de transmisión de CC de alto voltaje"
+      "text": "1. Las limitaciones físicas de la corriente alterna a escala"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "Redes eléctricas de alto voltaje y transmisión eléctrica de larga distancia",
-      "caption": "Conferencia técnica visual completa sobre estaciones convertidoras de HVDC, ingeniería de cables submarinos y estabilización de redes."
+      "title": "High-Voltage Power Grids & Long-Distance Electrical Transmission",
+      "caption": "Comprehensive visual technical lecture on HVDC converter stations, submarine cable engineering, and grid stabilization."
     },
     {
       "type": "h2",
-      "text": "4. Superredes intercontinentales y tensión ultraalta (UHVDC)"
+      "text": "1. Las limitaciones físicas de la corriente alterna a escala"
     },
     {
       "type": "p",
-      "text": "En países con vastas extensiones geográficas como China, Brasil e India, los sistemas de corriente continua de voltaje ultraalto (UHVDC) que funcionan a ±800 kV y ±1100 kV transmiten hasta 12 gigavatios de energía hidroeléctrica y solar en distancias que superan los 3000 kilómetros con pérdidas de línea inferiores al 1,5% cada 1000 km."
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
     },
     {
       "type": "p",
-      "text": "La visión emergente de la Superred Intercontinental Global vincula la energía solar generada en zonas horarias diurnas para satisfacer las demandas máximas nocturnas en continentes lejanos. Los enlaces submarinos HVDC, como el enlace del Mar del Norte de 720 kilómetros (de Noruega al Reino Unido) y los corredores transmediterráneos propuestos de varios miles de kilómetros, establecen un mecanismo continuo de equilibrio energético transcontinental."
+      "text": "El triunfo fundacional de la Guerra de las Corrientes a finales del siglo XIX fue la derrota de Thomas Edison ante Nikola Tesla y George Westinghouse: la corriente alterna (CA) triunfó porque los transformadores permitieron aumentar el voltaje para la transmisión y reducirlo para el consumo municipal. Durante más de un siglo, las redes de CA síncronas trifásicas constituyeron la columna vertebral de la electrificación industrial mundial. Sin embargo, en el siglo XXI, el desacoplamiento geográfico masivo de la generación de energía renovable (parques eólicos marinos, paneles solares en desiertos remotos) de los centros de carga urbanos ha expuesto las limitaciones físicas fundamentales de la transmisión de CA."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones de la ingeniería eléctrica"
+      "text": "1. Las limitaciones físicas de la corriente alterna a escala"
     },
     {
       "type": "ul",
       "items": [
-        "Economía de la distancia de equilibrio: el HVDC aéreo se vuelve económicamente superior al HVAC a aproximadamente 600–800 km; para cables submarinos, HVDC es obligatorio más allá de 50 km.",
-        "Innovación en disyuntores de CC: El obstáculo histórico de interrumpir la corriente CC sin cruces por cero naturales se resuelve mediante disyuntores de CC híbridos de estado sólido que funcionan en ventanas de submilisegundos.",
-        "Integración de energías renovables: Las redes marinas de CC de múltiples terminales (MTDC) agregan docenas de turbinas eólicas marinas dispersas en cables unificados de exportación continental de alta capacidad."
+        "Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km; for submarine cables, HVDC is mandatory beyond 50 km.",
+        "DC Circuit Breaker Innovation: The historical obstacle of interrupting DC current without natural zero-crossings is solved by hybrid solid-state DC breakers operating in sub-millisecond windows.",
+        "Renewable Integration: Multi-terminal DC (MTDC) offshore grids aggregate dozens of dispersed offshore wind turbines into unified high-capacity mainland export cables."
       ]
     }
   ],
-  "sourceHash": "ef0cc670d0ed25de57f0a528ec1bafc15350bc26"
+  "sourceHash": "f69c6a9831c47d902ff26f0bd612279b2eeb9719"
 }

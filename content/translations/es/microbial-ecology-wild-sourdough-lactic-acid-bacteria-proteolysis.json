@@ -11,8 +11,8 @@
     "craftsmanship",
     "sustainability"
   ],
-  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Pan artesanal de masa madre molido en piedra que muestra ampollas de corteza caramelizada y estructura de miga alveolar",
+  "image": "https://images.unsplash.com/photo-1514944298352-bf6d4821a37c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Artisan stone-milled sourdough bread loaf displaying caramelized crust blisters and alveolar crumb structure",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "En una masa madre espontánea, madura y estable, el equilibrio ecológico normalmente se establece en una proporción estricta: aproximadamente 100 células de bacterias del ácido láctico por cada célula de levadura silvestre (proporción de 100:1). La especie bacteriana arquetípica que domina los iniciadores tradicionales europeos es Fructilactobacillus sanfranciscensis (anteriormente Lactobacillus sanfranciscensis), que opera en sinergia metabólica precisa con la levadura Kazachstania exigua (o Candida humilis)."
+      "text": "Durante más de diez mil años, la transformación del grano de cereal molido en pan con levadura fue la maestría bioquímica fundamental de la humanidad. Mientras que la panadería comercial a lo largo del siglo XX simplificó esta antigua alquimia en la inoculación monotípica industrializada de Saccharomyces cerevisiae, la masa madre silvestre tradicional representa un ecosistema microbiano complejo y biodiverso. La intrincada simbiosis entre las bacterias heterofermentativas del ácido láctico (BAL) y las levaduras silvestres tolerantes a los ácidos gobierna no sólo la retención de gases, sino también la proteólisis enzimática, la desfosforilación de fitatos y la modulación glucémica."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Microbial Ecology of Sourdough."
     },
     {
       "type": "p",
-      "text": "Esta simbiosis se basa en la utilización de sustratos de carbono no competitivos. F. sanfranciscensis es maltosa positiva y sacarosa negativa, y metaboliza la maltosa liberada por las enzimas amilasas de los cereales en glucosa y maltosa-6-fosfato. Por el contrario, Kazachstania exigua es maltosa negativa y consume la glucosa liberada por las bacterias sin competir por el sustrato primario de maltosa. Este pacto metabólico mutualista impide que cualquiera de las especies compita con la otra."
+      "text": "Durante más de diez mil años, la transformación del grano de cereal molido en pan con levadura fue la maestría bioquímica fundamental de la humanidad. Mientras que la panadería comercial a lo largo del siglo XX simplificó esta antigua alquimia en la inoculación monotípica industrializada de Saccharomyces cerevisiae, la masa madre silvestre tradicional representa un ecosistema microbiano complejo y biodiverso. La intrincada simbiosis entre las bacterias heterofermentativas del ácido láctico (BAL) y las levaduras silvestres tolerantes a los ácidos gobierna no sólo la retención de gases, sino también la proteólisis enzimática, la desfosforilación de fitatos y la modulación glucémica."
     },
     {
       "type": "quote",
@@ -36,55 +42,61 @@
       "cite": "Sofia Rossi, Becaria de Gastronomía y Química de los Alimentos"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Microbial Ecology of Sourdough."
+    },
+    {
       "type": "h2",
-      "text": "2. Cinética de la acidez: equilibrio entre ácido láctico y acético"
+      "text": "1. Taxonomía microbiana simbiótica: la relación LAB-levadura"
     },
     {
       "type": "p",
-      "text": "El perfil de sabor y la arquitectura del gluten de la masa madre están determinados directamente por los ácidos orgánicos producidos durante la fermentación prolongada. Las BAL heterofermentativas utilizan la vía del 6-fosfogluconato para sintetizar dos ácidos primarios:"
+      "text": "Durante más de diez mil años, la transformación del grano de cereal molido en pan con levadura fue la maestría bioquímica fundamental de la humanidad. Mientras que la panadería comercial a lo largo del siglo XX simplificó esta antigua alquimia en la inoculación monotípica industrializada de Saccharomyces cerevisiae, la masa madre silvestre tradicional representa un ecosistema microbiano complejo y biodiverso. La intrincada simbiosis entre las bacterias heterofermentativas del ácido láctico (BAL) y las levaduras silvestres tolerantes a los ácidos gobierna no sólo la retención de gases, sino también la proteólisis enzimática, la desfosforilación de fitatos y la modulación glucémica."
     },
     {
       "type": "ul",
       "items": [
-        "Ácido láctico (C3H6O3): imparte una acidez suave, suave y cremosa similar al yogur. Sintetizado preferentemente a temperaturas de hidratación más cálidas (26 °C a 30 °C) con hidrataciones iniciales líquidas.",
-        "Ácido acético (C2H4O2): Imparte un mordisco agudo, picante, parecido al vinagre. Sintetizado preferentemente bajo temperaturas de retardo más frías (10°C a 18°C) con hidrataciones iniciales más duras (50% a 65% de agua).",
-        "El cociente de fermentación (FQ): La relación molar de ácido láctico a ácido acético idealmente oscila entre 3:1 y 4:1 para panes artesanales armonizados."
+        "Lactic Acid (C3H6O3): Imparts a smooth, mild, creamy yogurt-like acidity. Synthesized preferentially at warmer hydration temperatures (26°C to 30°C) with liquid starter hydrations.",
+        "Acetic Acid (C2H4O2): Imparts a sharp, pungent, vinegar-like bite. Synthesized preferentially under cooler retardation temperatures (10°C to 18°C) with stiffer starter hydrations (50% to 65% water).",
+        "The Fermentation Quotient (FQ): The molar ratio of lactic to acetic acid ideally ranges between 3:1 and 4:1 for harmonized artisan loaves."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral de ciencia en vídeo: Microbiología de la fermentación de la masa madre"
+      "text": "1. Taxonomía microbiana simbiótica: la relación LAB-levadura"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "Ciencia de la fermentación de la masa madre silvestre y cinética láctica",
-      "caption": "Examen microbiológico del cultivo iniciador, proteólisis del gluten y termodinámica del resorte del horno térmico."
+      "title": "Wild Sourdough Fermentation Science & Lactic Kinetics",
+      "caption": "Microbiological examination of starter cultivation, gluten proteolysis, and thermal oven spring thermodynamics."
     },
     {
       "type": "h2",
-      "text": "4. Proteólisis enzimática del gluten y estructura alveolar de la miga"
+      "text": "1. Taxonomía microbiana simbiótica: la relación LAB-levadura"
     },
     {
       "type": "p",
-      "text": "A medida que la acumulación de ácido bacteriano hace que el pH de la masa baje de 5,8 a entre 3,8 y 4,2, las enzimas endógenas de los cereales, específicamente las proteasas aspárticas, se activan. Estas enzimas escinden selectivamente enlaces disulfuro dentro de cadenas peptídicas de glutenina y gliadina de alto peso molecular."
+      "text": "Durante más de diez mil años, la transformación del grano de cereal molido en pan con levadura fue la maestría bioquímica fundamental de la humanidad. Mientras que la panadería comercial a lo largo del siglo XX simplificó esta antigua alquimia en la inoculación monotípica industrializada de Saccharomyces cerevisiae, la masa madre silvestre tradicional representa un ecosistema microbiano complejo y biodiverso. La intrincada simbiosis entre las bacterias heterofermentativas del ácido láctico (BAL) y las levaduras silvestres tolerantes a los ácidos gobierna no sólo la retención de gases, sino también la proteólisis enzimática, la desfosforilación de fitatos y la modulación glucémica."
     },
     {
       "type": "p",
-      "text": "La proteólisis controlada relaja la matriz elástica de la masa, aumentando la extensibilidad y suavizando la miga final. Sin embargo, la acidificación excesiva provoca un colapso estructural: la sobreproteólisis liquida la red de gluten, evitando la retención de burbujas de dióxido de carbono durante la cocción y produciendo un ladrillo denso y gomoso. Lograr una miga alveolar abierta y salvaje exige detener la fermentación en el pico óptimo de elasticidad estructural y expansión del gas."
+      "text": "Durante más de diez mil años, la transformación del grano de cereal molido en pan con levadura fue la maestría bioquímica fundamental de la humanidad. Mientras que la panadería comercial a lo largo del siglo XX simplificó esta antigua alquimia en la inoculación monotípica industrializada de Saccharomyces cerevisiae, la masa madre silvestre tradicional representa un ecosistema microbiano complejo y biodiverso. La intrincada simbiosis entre las bacterias heterofermentativas del ácido láctico (BAL) y las levaduras silvestres tolerantes a los ácidos gobierna no sólo la retención de gases, sino también la proteólisis enzimática, la desfosforilación de fitatos y la modulación glucémica."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones científicas para la elaboración de pan artesanal"
+      "text": "1. Taxonomía microbiana simbiótica: la relación LAB-levadura"
     },
     {
       "type": "ul",
       "items": [
-        "La temperatura dicta el sabor: controlar la temperatura de fermentación a granel permite a los panaderos controlar el cociente de ácido láctico a acético.",
-        "Activación de fitasa: El pH bajo activa la fitasa de los cereales, descomponiendo el ácido fítico antinutricional y aumentando la biodisponibilidad de zinc, hierro y magnesio.",
-        "Ventana de fermentación: La extensibilidad máxima de la masa se produce antes de la descomposición enzimática completa del gluten, lo que define el verdadero arte de la monografía artesanal."
+        "Temperature Dictates Flavor: Controlling bulk fermentation temperature enables bakers to steer the lactic-to-acetic acid quotient.",
+        "Phytase Activation: Low pH triggers cereal phytase, breaking down anti-nutritional phytic acid and increasing bioavailability of zinc, iron, and magnesium.",
+        "Fermentation Window: Peak dough extensibility occurs prior to complete enzymatic gluten breakdown, defining the true art of the artisan monograph."
       ]
     }
   ],
-  "sourceHash": "8dd1dc54c2eee4c2eac3a9817d02b7e25d02a7d3"
+  "sourceHash": "3f1b660e5de37d1f6312a18924ce51bdf8f75a4f"
 }

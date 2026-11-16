@@ -30,12 +30,24 @@
       "text": "1. The React Compiler: Automated Fine-Grained Memoization"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Compiler-Driven React & Server Components - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Compiler-Driven React & Server Components."
+    },
+    {
       "type": "p",
       "text": "Historically, React developers were burdened with manual memoization primitives: useMemo, useCallback, and React.memo. These primitives were inherently brittle. A solitary unstable object reference or unmemoized callback in a parent component would invalidate down-tree dependency arrays, triggering cascading re-renders across the component tree."
     },
     {
       "type": "p",
       "text": "The React Compiler (formerly React Forget) functions as a Babel/Vite compile-time pass that parses JavaScript into an intermediate representation (HIR) and performs semantic analysis against the Rules of React. By analyzing variable lifetimes and mutation boundaries, the compiler automatically synthesizes cached computation slots ($[0], $[1]) directly into emitted bytecode:"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Compiler-Driven React & Server Components - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Compiler-Driven React & Server Components."
     },
     {
       "type": "code",

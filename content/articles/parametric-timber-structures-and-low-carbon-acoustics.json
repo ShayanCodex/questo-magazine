@@ -13,8 +13,8 @@
     "parametric-design",
     "sustainability"
   ],
-  "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "Sculptural acoustic timber wall panels and architectural baffles in a modern philharmonic auditorium",
+  "image": "https://images.unsplash.com/photo-1541888946425-d0fbb186f5f7?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Curving parametric glued-laminated timber beams forming an undulating acoustic ceiling pavilion",
   "body": [
     {
       "type": "h2",
@@ -29,6 +29,12 @@
       "text": "Key Points"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Parametric Timber & Architectural Acoustics - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Parametric Timber & Architectural Acoustics."
+    },
+    {
       "type": "ul",
       "items": [
         "Biophilic Carbon Sequestration: Sustainably harvested cross-laminated timber (CLT) traps atmospheric carbon within permanent civic structural envelopes.",
@@ -41,6 +47,12 @@
       "type": "quote",
       "text": "Wood is not a primitive antecedent to concrete; it is nature’s most advanced structural composite, possessing directional elasticity and acoustic damping that synthetic materials cannot match.",
       "cite": "Elena Rostova, Monographs in Structural Elegance"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Parametric Timber & Architectural Acoustics - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Parametric Timber & Architectural Acoustics."
     },
     {
       "type": "h2",

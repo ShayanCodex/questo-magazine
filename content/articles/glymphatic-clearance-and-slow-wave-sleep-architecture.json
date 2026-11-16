@@ -30,6 +30,12 @@
       "text": "1. Convective Bulk Flow and Astrocytic Aquaporin-4 (AQP4) Channels"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Glymphatic Clearance in Deep Sleep - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Glymphatic Clearance in Deep Sleep."
+    },
+    {
       "type": "p",
       "text": "Unlike simple diffusive transport, which is far too sluggish to clear macromolecules across dense neural tissue, the glymphatic system utilizes high-velocity convective bulk fluid flow facilitated by specialized water channels:"
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "Glymphatic Convective Hydrodynamic Flux:\nJ_v = L_p · S · [ (P_peri - P_int) - σ · (π_peri - π_int) ]\n\nWhere:\n- J_v: Transvascular volumetric flux of cerebrospinal fluid\n- L_p: Hydraulic conductivity governed by AQP4 channel polarization\n- S: Surface area of periarterial astrocytic endfeet\n- P_peri - P_int: Hydrostatic pressure differential driven by vascular pulsations\n- σ: Reflection coefficient for plasma and interstitial solutes\n- π: Local oncotic osmotic pressures"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Glymphatic Clearance in Deep Sleep - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Glymphatic Clearance in Deep Sleep."
     },
     {
       "type": "p",

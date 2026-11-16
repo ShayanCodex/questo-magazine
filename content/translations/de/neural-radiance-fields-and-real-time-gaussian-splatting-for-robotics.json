@@ -1,0 +1,79 @@
+{
+  "slug": "neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics",
+  "title": "3D-Gaußsches Splatting in der Robotik: räumliche Kartierung im Submillisekundenbereich und SLAM-Systeme",
+  "excerpt": "Ersetzen diskreter Belegungsgitter durch differenzierbare 3D-Ellipsoide: Echtzeit-Kamerapositionsschätzung, volumetrische Strahlungswiedergabe und autonome Navigation in überfüllten Räumen.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "robotics",
+    "computer-vision",
+    "gaussian-splatting",
+    "slam",
+    "autonomous-systems"
+  ],
+  "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Autonomous robotic perception system scanning complex spatial environment with stereo cameras",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Die Grenzen der traditionellen räumlichen Darstellung"
+    },
+    {
+      "type": "p",
+      "text": "Jahrzehntelang stützte sich die mobile Robotik auf diskrete 2D- und 3D-Belegungsgitterkarten, Punktwolken und Polygonnetze für Simultaneous Localization and Mapping (SLAM). Diese Darstellungen eignen sich zwar für die einfache Vermeidung von Hindernissen, verzichten jedoch auf fotorealistische Oberflächentexturen, blickabhängige Spiegelreflexionen und feine Strukturnuancen, die für agile Robotermanipulation, chirurgische Robotik und dynamische humanoide Navigation erforderlich sind."
+    },
+    {
+      "type": "h2",
+      "text": "Die Grenzen der traditionellen räumlichen Darstellung"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Differentiable 3D Gaussian ellipsoids visualizing continuous scene geometry and radiance fields",
+      "caption": "3D Gaussian Splatting: modeling physical spaces as millions of differentiable ellipsoids for real-time robotic SLAM."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Differentiable Ellipsoids: 3D Gaussian Splatting represents physical scenes as millions of anisotropic 3D Gaussians, each characterized by position, covariance matrix (shape/scale), opacity, and spherical harmonic colors.",
+        "Tile-Based Rasterization: Unlike Neural Radiance Fields (NeRFs) requiring intensive volumetric ray-marching per pixel, Gaussians are projected to 2D screen space and sorted in hardware, rendering at over 120 FPS.",
+        "Gradient-Based Optimization: Camera pose estimates and scene geometry are jointly refined in real time through backpropagation against incoming camera frames.",
+        "Continuous Physics Integration: Continuous Gaussian density fields provide closed-form signed distance approximations, enabling physical collision checking without converting to complex meshes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "3D-Gaußsches Splatting überbrückt die Kluft zwischen fotorealistischem Computergrafik-Rendering und hochfrequenter robotergestützter Zustandsschätzung in Echtzeit.",
+      "cite": "Robotics & Computer Vision Laboratory Monograph"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Robotic trajectory planning through indoor obstacle field using real-time volumetric scene reconstruction",
+      "caption": "Tile-based rasterization: GPU acceleration delivering sub-millisecond pose updates and continuous collision avoidance."
+    },
+    {
+      "type": "h2",
+      "text": "Die Grenzen der traditionellen räumlichen Darstellung"
+    },
+    {
+      "type": "p",
+      "text": "Jahrzehntelang stützte sich die mobile Robotik auf diskrete 2D- und 3D-Belegungsgitterkarten, Punktwolken und Polygonnetze für Simultaneous Localization and Mapping (SLAM). Diese Darstellungen eignen sich zwar für die einfache Vermeidung von Hindernissen, verzichten jedoch auf fotorealistische Oberflächentexturen, blickabhängige Spiegelreflexionen und feine Strukturnuancen, die für agile Robotermanipulation, chirurgische Robotik und dynamische humanoide Navigation erforderlich sind."
+    },
+    {
+      "type": "video",
+      "title": "3D Gaussian Splatting in Robotics: Real-Time SLAM and Mapping Breakdown",
+      "caption": "Engineering demonstration of real-time camera tracking, anisotropic Gaussian optimization, and collision avoidance.",
+      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88"
+    },
+    {
+      "type": "h2",
+      "text": "Die Grenzen der traditionellen räumlichen Darstellung"
+    },
+    {
+      "type": "p",
+      "text": "Jahrzehntelang stützte sich die mobile Robotik auf diskrete 2D- und 3D-Belegungsgitterkarten, Punktwolken und Polygonnetze für Simultaneous Localization and Mapping (SLAM). Diese Darstellungen eignen sich zwar für die einfache Vermeidung von Hindernissen, verzichten jedoch auf fotorealistische Oberflächentexturen, blickabhängige Spiegelreflexionen und feine Strukturnuancen, die für agile Robotermanipulation, chirurgische Robotik und dynamische humanoide Navigation erforderlich sind."
+    }
+  ],
+  "sourceHash": "43081c936b0147175e178f8716666471c30c8b11"
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators",
+  "title": "Aerodinámica de F1: generación Outwash, socavados de los pontones y sellado por efecto suelo",
+  "excerpt": "Análisis de telemetría de alta resolución de la distribución de la carga aerodinámica, desprendimiento de vórtices a lo largo de los faldones del piso del borde de fuga y compensaciones por el enfriamiento térmico de los frenos en los deportes de motor modernos.",
+  "date": "2026-11-16",
+  "author": "Liam O’Connor",
+  "tags": [
+    "formula-1",
+    "aerodynamics",
+    "motorsport-engineering",
+    "ground-effect",
+    "telemetry"
+  ],
+  "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-speed Formula 1 car apex cornering through chicane with ground effect underfloor suction",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La mecánica de los túneles Venturi modernos con efecto suelo"
+    },
+    {
+      "type": "p",
+      "text": "En los deportes de motor de monoplazas de élite, el desarrollo aerodinámico es una batalla implacable para extraer carga aerodinámica y al mismo tiempo minimizar la resistencia parásita y la sensibilidad aerodinámica al cabeceo y balanceo del vehículo. Tras la reintroducción de túneles Venturi completamente bajo el piso en las regulaciones técnicas contemporáneas de la Fórmula 1, el punto focal del rendimiento pasó de los complejos alerones sobre la carrocería a la gestión del flujo de aire masivo a través de canales convergentes y divergentes debajo de la carrocería."
+    },
+    {
+      "type": "h2",
+      "text": "La mecánica de los túneles Venturi modernos con efecto suelo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Carbon-fiber sidepod undercut sculpting and rear diffuser expansion tunnel",
+      "caption": "Underfloor Venturi throat: accelerated mass airflow generating massive negative pressure beneath the chassis."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Venturi Suction & Bernoulli Principle: Restricting underfloor cross-sectional area forces incoming air to accelerate rapidly, generating immense negative pressure that suctions the chassis toward the asphalt.",
+        "Sidepod Undercut Channeling: Deep volumetric carving beneath sidepod radiators directs clean, unseparated airflow over the top of the rear diffuser, boosting mass expansion ratios.",
+        "Vortex Edge Sealing: Engineered floor edges utilize vortex generators to shed high-energy rotational air streams along floor perimeters, acting as an invisible aerodynamic skirt to prevent ambient air ingress.",
+        "Porpoising & Aerodynamic Stall: When extreme downforce compresses suspension past critical ride-height thresholds, the underfloor stalls abruptly, triggering catastrophic cyclical vehicle bouncing."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La carga aerodinámica no se trata simplemente de producir la máxima succión bruta en un túnel de viento estático; se trata de ofrecer una plataforma aerodinámica estable y predecible que brinde al conductor el máximo cumplimiento al entrar en las curvas.",
+      "cite": "Revisión de aerodinámica y dinámica de vehículos de carreras"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Pitlane aerodynamics telemetry monitors showing real-time ride-height sensors and downforce distribution",
+      "caption": "Vortex edge sealing: floor perimeter strakes shedding high-energy vortices to isolate underfloor negative pressure."
+    },
+    {
+      "type": "h2",
+      "text": "La mecánica de los túneles Venturi modernos con efecto suelo"
+    },
+    {
+      "type": "p",
+      "text": "En los deportes de motor de monoplazas de élite, el desarrollo aerodinámico es una batalla implacable para extraer carga aerodinámica y al mismo tiempo minimizar la resistencia parásita y la sensibilidad aerodinámica al cabeceo y balanceo del vehículo. Tras la reintroducción de túneles Venturi completamente bajo el piso en las regulaciones técnicas contemporáneas de la Fórmula 1, el punto focal del rendimiento pasó de los complejos alerones sobre la carrocería a la gestión del flujo de aire masivo a través de canales convergentes y divergentes debajo de la carrocería."
+    },
+    {
+      "type": "video",
+      "title": "Formula 1 Aerodynamics Explained: Venturi Tunnels, Vortices, and Floor Sealing",
+      "caption": "Detailed fluid dynamics walkthrough of ground effect downforce generation and sidepod airflow conditioning.",
+      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w"
+    },
+    {
+      "type": "h2",
+      "text": "La mecánica de los túneles Venturi modernos con efecto suelo"
+    },
+    {
+      "type": "p",
+      "text": "En los deportes de motor de monoplazas de élite, el desarrollo aerodinámico es una batalla implacable para extraer carga aerodinámica y al mismo tiempo minimizar la resistencia parásita y la sensibilidad aerodinámica al cabeceo y balanceo del vehículo. Tras la reintroducción de túneles Venturi completamente bajo el piso en las regulaciones técnicas contemporáneas de la Fórmula 1, el punto focal del rendimiento pasó de los complejos alerones sobre la carrocería a la gestión del flujo de aire masivo a través de canales convergentes y divergentes debajo de la carrocería."
+    }
+  ],
+  "sourceHash": "69041648c357f2adf487a524662232a5d79362fb"
+}

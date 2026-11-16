@@ -29,12 +29,24 @@
       "text": "1. Enzymatic Architecture: Cytosine & Adenine Base Editors"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "CRISPR-Cas12 & Precision Base Editing - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for CRISPR-Cas12 & Precision Base Editing."
+    },
+    {
       "type": "p",
       "text": "Base editors operate through a multi-domain macromolecular complex. A catalytically impaired Cas9 nickase (D10A) creates a precise single-stranded nick on the non-edited DNA strand, directing the cell's endogenous mismatch repair machinery to copy the edited strand as a template. Tethered to this nickase is an evolved cytidine or adenosine deaminase enzyme:"
     },
     {
       "type": "p",
       "text": "In Adenine Base Editors (ABEs), laboratory-evolved TadA deaminases convert target adenines into inosines ($A \\to I$). During subsequent cellular DNA replication, DNA polymerases read inosine as guanine ($G$), completing an $A\\cdot T \\to G\\cdot C$ transition without cutting the DNA backbone. Because over half of all known human pathogenic point mutations stem from transition mutations, base editors provide direct corrective capabilities for thousands of previously incurable genetic disorders."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80",
+      "alt": "CRISPR-Cas12 & Precision Base Editing - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting CRISPR-Cas12 & Precision Base Editing."
     },
     {
       "type": "quote",

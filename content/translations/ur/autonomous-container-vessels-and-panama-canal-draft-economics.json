@@ -11,8 +11,8 @@
     "supply-chains",
     "geopolitics"
   ],
-  "image": "/images/articles/critical-minerals-mining.jpg",
-  "imageAlt": "انتہائی بڑے نو پینامیکس کنٹینر جہاز جو بین سمندری تالے اور گہرے پانی کے سمندری راستوں پر تشریف لے جاتے ہیں",
+  "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Neo-Panamax container ship navigating through narrow lock canal infrastructure",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "عالمگیر تجارت کی جسمانی رکاوٹیں"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Automated deepwater port container cranes transferring maritime cargo containers",
+      "caption": "Draft depth restrictions: freshwater canal drought conditions forcing container offloading to meet keel clearance margins."
     },
     {
       "type": "ul",
       "items": [
-        "Panamax ڈرافٹ پابندیاں: Gatun جھیل میں خشک سالی کے حالات کارگو کی گنجائش کو چالیس فیصد تک کم کرنے پر مجبور کرتے ہیں تاکہ ٹرانزٹ ڈرافٹ کی حدود کو صاف کیا جا سکے۔",
-        "کیپ آف گڈ ہوپ ڈائیورشنز: افریقہ کے گرد گھومنے سے دس سے چودہ دن کا اضافہ ہوتا ہے، اضافی کنٹینر برتن کی گنجائش اور بنکر کے ایندھن کے اخراجات میں اضافہ ہوتا ہے۔",
-        "خودمختار فلیٹ آرکیٹیکچرز: سینسر فیوژن، سیٹلائٹ ٹیلی آپریشن، اور خودکار مورنگ سسٹم ٹرانس سمندری راستوں پر عملے کے قدموں کے نشانات کو کم کر رہے ہیں۔",
-        "آرکٹک ٹرانسپولر روٹس: موسم گرما میں برف کی پگھلتی ہوئی چادریں شمالی سمندری راستوں کو کھول رہی ہیں جو مشرقی ایشیا اور شمالی یورپ کے درمیان بحری آمد و رفت کے اوقات کو ایک تہائی کم کر دیتی ہیں۔"
+        "Panamax Draft Restrictions: Drought conditions in Lake Gatun force carriers to reduce cargo capacity by up to forty percent to clear transit draft limits.",
+        "Cape of Good Hope Diversions: Rerouting around Africa adds ten to fourteen sailing days, absorbing surplus container vessel capacity and spiking bunker fuel costs.",
+        "Autonomous Fleet Architectures: Sensor fusion, satellite tele-operation, and automated mooring systems are reducing crew footprints on trans-oceanic routes.",
+        "Arctic Transpolar Routes: Melting summer ice sheets are opening Northern Sea Routes that cut maritime transit times between East Asia and Northern Europe by a third."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "میری ٹائم لاجسٹکس اور خودمختار تجارتی جائزہ"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Satellite automatic identification system AIS display tracking global maritime container ship choke points",
+      "caption": "Autonomous maritime logistics: algorithmic voyage speed adjustments and slot auctions optimizing global freight schedules."
+    },
+    {
       "type": "h2",
-      "text": "متبادل ایندھن کا بنیادی ڈھانچہ اور گرین کوریڈورز"
+      "text": "عالمگیر تجارت کی جسمانی رکاوٹیں"
     },
     {
       "type": "p",
-      "text": "بین الاقوامی میری ٹائم آرگنائزیشن کے خالص صفر مینڈیٹ دوہری ایندھن کے سبز میتھانول، امونیا، اور ہوا سے چلنے والے روٹر سیلز کی طرف بیڑے کی منتقلی کو تیز کر رہے ہیں۔ سنگاپور، روٹرڈیم اور شنگھائی کی بندرگاہیں گرین شپنگ لین کو اینکر کرنے کے لیے کرائیوجینک بنکرنگ انفراسٹرکچر میں دسیوں اربوں کی سرمایہ کاری کر رہی ہیں۔"
+      "text": "عالمی تجارتی سامان کی اسی فیصد سے زیادہ تجارت بلند سمندروں سے گزرتی ہے، تنگ قدرتی آبنائے سے گزرتی ہے اور انجنیئر کر سکتے ہیں۔ آج، اس سمندری گردش کو بیک وقت ساختی دباؤ کا سامنا ہے: آب و ہوا کے میٹھے پانی کے خسارے پاناما کینال کے ذریعے جہاز کے مسودے کو محدود کر رہے ہیں، باب المندب اور بحیرہ احمر میں حفاظتی خطرات، اور خود مختار صفر اخراج والے بلک کیریئرز کی تیزی سے تعیناتی۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "عالمی تجارتی چکر اور میکرو اکنامک کیپٹل فلوز",
-      "caption": "رے ڈیلیو عالمی اقتصادی تبادلے، اجناس کی تقسیم، اور ادائیگیوں کے خودمختار توازن کے جسمانی میکانزم کو تلاش کرتا ہے۔"
+      "title": "Global Trade Cycles and Macroeconomic Capital Flows",
+      "caption": "Ray Dalio explores the physical mechanisms of global economic exchange, commodity distribution, and sovereign balance of payments.",
+      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0"
     },
     {
       "type": "h2",
-      "text": "بین البراعظمی مال برداری کا مستقبل"
+      "text": "عالمگیر تجارت کی جسمانی رکاوٹیں"
     },
     {
       "type": "p",
-      "text": "آنے والی دہائی میں، میری ٹائم لاجسٹکس جیتنے والوں کو صرف جہاز کے سائز سے نہیں، بلکہ متحرک روٹنگ الگورتھم، خودکار ڈرافٹ آپٹیمائزیشن، اور فزیکل سپلائی چین میں رکاوٹوں کے خلاف خودمختار لچک کے ذریعے ہارنے والوں سے الگ کرے گی۔"
+      "text": "عالمی تجارتی سامان کی اسی فیصد سے زیادہ تجارت بلند سمندروں سے گزرتی ہے، تنگ قدرتی آبنائے سے گزرتی ہے اور انجنیئر کر سکتے ہیں۔ آج، اس سمندری گردش کو بیک وقت ساختی دباؤ کا سامنا ہے: آب و ہوا کے میٹھے پانی کے خسارے پاناما کینال کے ذریعے جہاز کے مسودے کو محدود کر رہے ہیں، باب المندب اور بحیرہ احمر میں حفاظتی خطرات، اور خود مختار صفر اخراج والے بلک کیریئرز کی تیزی سے تعیناتی۔"
     }
   ],
-  "sourceHash": "e1eb182f5b434234527202fdaa14ce0ebc51dbac"
+  "sourceHash": "310e3e8a07718e313da90f334cbf7b2c6f29def0"
 }

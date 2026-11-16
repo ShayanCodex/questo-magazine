@@ -14,7 +14,7 @@
     "news"
   ],
   "image": "/images/articles/nuclear-smr-reactor.jpg",
-  "imageAlt": "Turbine à vapeur et infrastructure de refroidissement de confinement d'installations nucléaires industrielles avancées de haute précision",
+  "imageAlt": "High precision advanced industrial nuclear power facility steam turbine and containment cooling infrastructure",
   "body": [
     {
       "type": "p",
@@ -22,19 +22,31 @@
     },
     {
       "type": "p",
-      "text": "En limitant la production thermique entre 50 et 300 mégawatts électriques (MWe) par unité, les architectures SMR exploitent des systèmes passifs d'évacuation de la chaleur résiduelle régis par la circulation naturelle, la convection et la gravité. Ces paramètres de sécurité basés sur la physique éliminent la vulnérabilité des dépendances actives en matière d’alimentation de secours qui caractérisaient les anciens accidents de réacteurs à eau légère de génération II."
+      "text": "L'électrification de l'économie mondiale se heurte à un obstacle thermodynamique insurmontable : les sources renouvelables variables - solaire et éolienne - ne peuvent pas maintenir indépendamment la stabilité du réseau, l'inertie synthétique et la chaleur de processus continue à haute température pour les industries lourdes à forte intensité de carbone comme la sidérurgie, la production de ciment et la synthèse chimique. Les petits réacteurs modulaires (SMR) représentent un changement de paradigme fondamental, passant des projets de construction civile sur mesure à l'échelle du gigawatt à des modules de fission nucléaire standardisés, fabriqués en usine."
     },
     {
       "type": "h2",
       "text": "1. Carburants TRISO : La pastille nucléaire indestructible"
     },
     {
-      "type": "p",
-      "text": "Au cœur des conceptions avancées de SMR à haute température se trouve le combustible à particules TRIstructural-ISOtropic (TRISO). Chaque pastille TRISO se compose d'un noyau de combustible en carbure d'uranium ou en oxyde d'uranium encapsulé dans trois coques concentriques spécialisées : une couche tampon de carbone poreux, une couche interne de carbone pyrolytique, une limite de confinement en carbure de silicium céramique (SiC) et une coque externe en carbone pyrolytique."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Small Modular Nuclear Reactors - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Small Modular Nuclear Reactors."
     },
     {
       "type": "p",
-      "text": "Ce confinement structurel à l'échelle nanométrique permet au combustible TRISO de résister à des températures de fonctionnement supérieures à 1 600 degrés Celsius sans dégradation structurelle ni dégagement de produits de fission. Même dans le cas théorique catastrophique d’une perte totale du liquide de refroidissement, les particules TRISO ne peuvent pas fondre, ce qui rend le carburant autonome contre la contamination environnementale."
+      "text": "L'électrification de l'économie mondiale se heurte à un obstacle thermodynamique insurmontable : les sources renouvelables variables - solaire et éolienne - ne peuvent pas maintenir indépendamment la stabilité du réseau, l'inertie synthétique et la chaleur de processus continue à haute température pour les industries lourdes à forte intensité de carbone comme la sidérurgie, la production de ciment et la synthèse chimique. Les petits réacteurs modulaires (SMR) représentent un changement de paradigme fondamental, passant des projets de construction civile sur mesure à l'échelle du gigawatt à des modules de fission nucléaire standardisés, fabriqués en usine."
+    },
+    {
+      "type": "p",
+      "text": "L'électrification de l'économie mondiale se heurte à un obstacle thermodynamique insurmontable : les sources renouvelables variables - solaire et éolienne - ne peuvent pas maintenir indépendamment la stabilité du réseau, l'inertie synthétique et la chaleur de processus continue à haute température pour les industries lourdes à forte intensité de carbone comme la sidérurgie, la production de ciment et la synthèse chimique. Les petits réacteurs modulaires (SMR) représentent un changement de paradigme fondamental, passant des projets de construction civile sur mesure à l'échelle du gigawatt à des modules de fission nucléaire standardisés, fabriqués en usine."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Small Modular Nuclear Reactors - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Small Modular Nuclear Reactors."
     },
     {
       "type": "quote",
@@ -43,51 +55,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Boucles de liquide de refroidissement à sel fondu et métal liquide"
+      "text": "1. Carburants TRISO : La pastille nucléaire indestructible"
     },
     {
       "type": "p",
-      "text": "Alors que les conceptions SMR à eau légère miniaturisent les boucles d'eau sous pression (fonctionnant à 150 atmosphères), les réacteurs modulaires avancés de génération IV utilisent des sels liquides (FLiBe) ou des métaux liquides (sodium, plomb-bismuth) comme caloporteurs à haute conductivité thermique. Fonctionnant à une pression proche de la pression atmosphérique, les réacteurs à sels fondus éliminent le risque catastrophique de dilatation explosive de vapeur à haute pression en cas de rupture de canalisation."
+      "text": "L'électrification de l'économie mondiale se heurte à un obstacle thermodynamique insurmontable : les sources renouvelables variables - solaire et éolienne - ne peuvent pas maintenir indépendamment la stabilité du réseau, l'inertie synthétique et la chaleur de processus continue à haute température pour les industries lourdes à forte intensité de carbone comme la sidérurgie, la production de ciment et la synthèse chimique. Les petits réacteurs modulaires (SMR) représentent un changement de paradigme fondamental, passant des projets de construction civile sur mesure à l'échelle du gigawatt à des modules de fission nucléaire standardisés, fabriqués en usine."
     },
     {
       "type": "p",
-      "text": "De plus, les systèmes à sels fondus fonctionnent à des températures de sortie du cœur comprises entre 700 et 950 degrés Celsius. Ce régime thermodynamique élevé permet d'obtenir des rendements de production d'électricité supérieurs à 48 % (contre 33 % pour les réacteurs à eau traditionnels) et permet un couplage thermique direct avec des cellules d'électrolyse d'oxyde solide à haute température pour la production d'hydrogène vert."
+      "text": "L'électrification de l'économie mondiale se heurte à un obstacle thermodynamique insurmontable : les sources renouvelables variables - solaire et éolienne - ne peuvent pas maintenir indépendamment la stabilité du réseau, l'inertie synthétique et la chaleur de processus continue à haute température pour les industries lourdes à forte intensité de carbone comme la sidérurgie, la production de ciment et la synthèse chimique. Les petits réacteurs modulaires (SMR) représentent un changement de paradigme fondamental, passant des projets de construction civile sur mesure à l'échelle du gigawatt à des modules de fission nucléaire standardisés, fabriqués en usine."
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : physique des réacteurs SMR et économie des usines"
+      "text": "1. Carburants TRISO : La pastille nucléaire indestructible"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "Explication des petits réacteurs modulaires : physique, fabrication modulaire et économie des réseaux",
-      "caption": "Une évaluation technique approfondie de la normalisation des usines SMR, de la sécurité du confinement passif et de l'intégration de la charge de base du coût actualisé de l'énergie (LCOE)."
+      "title": "Small Modular Reactors Explained: Physics, Modular Manufacturing, and Grid Economics",
+      "caption": "A thorough engineering assessment of SMR factory standardization, passive containment safety, and levelized cost of energy (LCOE) baseload integration.",
+      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM"
     },
     {
       "type": "h2",
-      "text": "4. Architecture de déploiement : réaffectation des infrastructures charbonnières"
+      "text": "1. Carburants TRISO : La pastille nucléaire indestructible"
     },
     {
       "type": "p",
-      "text": "L’un des plus grands avantages économiques du déploiement standardisé des SMR est la modernisation des friches industrielles. Des centaines de centrales électriques au charbon en service ou en retrait dans le monde possèdent des interconnexions préexistantes au réseau à haute tension, des droits sur l'eau de refroidissement des condenseurs, des corridors de transport ferroviaire et un personnel d'exploitation expérimenté."
+      "text": "L'électrification de l'économie mondiale se heurte à un obstacle thermodynamique insurmontable : les sources renouvelables variables - solaire et éolienne - ne peuvent pas maintenir indépendamment la stabilité du réseau, l'inertie synthétique et la chaleur de processus continue à haute température pour les industries lourdes à forte intensité de carbone comme la sidérurgie, la production de ciment et la synthèse chimique. Les petits réacteurs modulaires (SMR) représentent un changement de paradigme fondamental, passant des projets de construction civile sur mesure à l'échelle du gigawatt à des modules de fission nucléaire standardisés, fabriqués en usine."
     },
     {
       "type": "p",
-      "text": "En remplaçant les anciennes chaudières à charbon par des modules de production de chaleur nucléaire SMR assemblés en usine tout en préservant les turbines, les postes de commutation et l'infrastructure de transport, les services publics peuvent réduire leurs dépenses d'investissement jusqu'à 35 % par rapport aux nouvelles installations nucléaires, accélérant ainsi la transition mondiale vers une électricité continue sans carbone."
+      "text": "L'électrification de l'économie mondiale se heurte à un obstacle thermodynamique insurmontable : les sources renouvelables variables - solaire et éolienne - ne peuvent pas maintenir indépendamment la stabilité du réseau, l'inertie synthétique et la chaleur de processus continue à haute température pour les industries lourdes à forte intensité de carbone comme la sidérurgie, la production de ciment et la synthèse chimique. Les petits réacteurs modulaires (SMR) représentent un changement de paradigme fondamental, passant des projets de construction civile sur mesure à l'échelle du gigawatt à des modules de fission nucléaire standardisés, fabriqués en usine."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir en matière d'ingénierie : l'avenir de la charge de base modulaire"
+      "text": "1. Carburants TRISO : La pastille nucléaire indestructible"
     },
     {
       "type": "ul",
       "items": [
-        "Sécurité passive inhérente : la dissipation thermique par convection naturelle supprime les dépendances à l'égard de l'alimentation CA hors site ou des générateurs de secours diesel.",
-        "Permanence du carburant TRISO : la micro-encapsulation céramique en carbure de silicium élimine les mécanismes de fusion du cœur jusqu'à des températures extrêmes.",
-        "Chaleur de processus industriel : la production à haute température (700°C à 950°C) permet la décarbonation directe des usines chimiques, des carburants synthétiques et de la fabrication de l'acier.",
-        "Économie de l'usine modulaire : le passage du génie civil sur site à des chaînes d'assemblage standardisées en usine réduit considérablement les délais de construction et les coûts de financement."
+        "Inherent Passive Safety: Natural convective decay heat dissipation removes dependencies on off-site AC power or diesel backup generators.",
+        "TRISO Fuel Permanence: Ceramic silicon carbide micro-encapsulation eliminates core meltdown mechanisms up to extreme temperatures.",
+        "Industrial Process Heat: High-temperature output (700°C–950°C) enables direct decarbonization of chemical plants, synthetic fuels, and steel manufacturing.",
+        "Modular Factory Economics: Shifting from on-site civil engineering to factory-standardized assembly lines significantly compresses build times and financing costs."
       ]
     }
   ],
-  "sourceHash": "1aa34d18b61eada65d1a19082df3dd5957faf87b"
+  "sourceHash": "2839fd28f3881f13ddadb5dbe46036f082ca1dd9"
 }

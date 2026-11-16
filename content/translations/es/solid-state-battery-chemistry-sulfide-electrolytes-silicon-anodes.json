@@ -13,7 +13,7 @@
     "engineering"
   ],
   "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "Configuración de prueba de laboratorio de celdas de batería electroquímica de alta densidad de energía diseñada con precisión",
+  "imageAlt": "Precision engineered high energy density electrochemical battery cell laboratory test setup",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Las baterías totalmente de estado sólido (ASSB) reemplazan el solvente líquido con una cerámica inorgánica o una matriz sólida conductora de iones de sulfuro. Al combinar electrolitos sólidos con ánodos predominantemente de litio o silicio metálico puro, los ASSB prometen densidades de energía gravimétrica superiores a 500 Wh/kg, amplias envolventes de funcionamiento térmico (-30 °C a 100 °C) y seguridad inherente no inflamable."
+      "text": "La electrificación de la aviación comercial, el transporte de carga pesada y el tránsito de pasajeros de alto rango está fundamentalmente limitada por la densidad de energía y los riesgos de fuga térmica de las celdas convencionales de iones de litio con electrolito líquido. Las celdas comerciales intercaladas de grafito alcanzan un máximo de aproximadamente 280 Wh/kg y dependen de carbonatos orgánicos volátiles e inflamables que se encienden mediante perforación mecánica o cortocircuitos internos."
     },
     {
       "type": "h2",
       "text": "1. Clases de electrolitos sólidos: sulfuros, óxidos y haluros"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "La viabilidad de cualquier arquitectura de estado sólido depende de la conductividad iónica ($\\sigma_{ion}$) a temperatura ambiente:"
+      "text": "La electrificación de la aviación comercial, el transporte de carga pesada y el tránsito de pasajeros de alto rango está fundamentalmente limitada por la densidad de energía y los riesgos de fuga térmica de las celdas convencionales de iones de litio con electrolito líquido. Las celdas comerciales intercaladas de grafito alcanzan un máximo de aproximadamente 280 Wh/kg y dependen de carbonatos orgánicos volátiles e inflamables que se encienden mediante perforación mecánica o cortocircuitos internos."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Nernst-Einstein Ionic Conductivity Relation:\nσ_ion = (n · q² · D_Li) / (k_B · T)\n\nComparison of Solid Electrolyte Families:\n- Sulfides (LGPS, Argyrodites): σ_ion ≈ 10 to 25 mS/cm (exceeds liquid electrolyte speed), highly ductile, but releases toxic H₂S gas upon ambient moisture exposure.\n- Oxides (Garnet LLZO, NASICON): σ_ion ≈ 1 mS/cm, chemically stable against high-voltage cathodes, but extremely brittle with high interfacial contact resistance.\n- Halides (Li₃InCl₆): σ_ion ≈ 1 to 5 mS/cm, highly oxidative stability (> 4.5 V), excellent compatibility with high-nickel cathodes."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696331111-ac95829f2a42?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "Debido a que los cristales de sulfuro poseen estructuras de aniones de azufre más suaves y polarizables, los iones de litio encuentran barreras de activación de baja migración ($E_a <0,25$ eV), lo que permite un transporte rápido que rivaliza con los electrolitos líquidos tradicionales."
+      "text": "La electrificación de la aviación comercial, el transporte de carga pesada y el tránsito de pasajeros de alto rango está fundamentalmente limitada por la densidad de energía y los riesgos de fuga térmica de las celdas convencionales de iones de litio con electrolito líquido. Las celdas comerciales intercaladas de grafito alcanzan un máximo de aproximadamente 280 Wh/kg y dependen de carbonatos orgánicos volátiles e inflamables que se encienden mediante perforación mecánica o cortocircuitos internos."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. El enigma de las dendritas: densidad de corriente crítica (CCD)"
+      "text": "1. Clases de electrolitos sólidos: sulfuros, óxidos y haluros"
     },
     {
       "type": "p",
-      "text": "La teoría inicial postulaba que un electrolito cerámico sólido rígido suprimiría mecánicamente la formación de dendritas de litio mediante el criterio de Monroe-Newman (módulo de corte $G_{SE} > 2 \\cdot G_{Li}$). Sin embargo, la tomografía de rayos X operativa reveló que el metal de litio se infiltra fácilmente en los límites de los granos intergranulares y se agrieta en condiciones de carga rápida."
+      "text": "La electrificación de la aviación comercial, el transporte de carga pesada y el tránsito de pasajeros de alto rango está fundamentalmente limitada por la densidad de energía y los riesgos de fuga térmica de las celdas convencionales de iones de litio con electrolito líquido. Las celdas comerciales intercaladas de grafito alcanzan un máximo de aproximadamente 280 Wh/kg y dependen de carbonatos orgánicos volátiles e inflamables que se encienden mediante perforación mecánica o cortocircuitos internos."
     },
     {
       "type": "ul",
       "items": [
-        "Densidad de corriente crítica (CCD): La tasa de corriente de carga máxima más allá de la cual el revestimiento de litio no uniforme inicia cortocircuitos intergranulares.",
-        "Gestión de la presión de la chimenea: Mantener presiones uniaxiales constantes de la chimenea de 1 a 5 MPa garantiza un contacto físico íntimo sólido-sólido como tiras y placas de litio durante los ciclos de descarga.",
-        "Recubrimientos de amortiguación interfacial: recubrimientos finos ALD (deposición de capa atómica) de aleación de zinc, carbono u oro con litio entrante, lo que garantiza un crecimiento plano 2D en lugar de picos filamentosos 1D."
+        "Critical Current Density (CCD): The maximum charging current rate beyond which non-uniform lithium plating initiates intergranular short circuits.",
+        "Stack Pressure Management: Maintaining constant uniaxial stack pressures of 1 to 5 MPa ensures intimate solid-solid physical contact as lithium strips and plates during discharge cycles.",
+        "Interfacial Buffer Coatings: Thin ALD (Atomic Layer Deposition) coatings of zinc, carbon, or gold alloy with incoming lithium, ensuring planar 2D growth rather than 1D filamentous spikes."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en video: Electroquímica de alto voltaje y almacenamiento avanzado"
+      "text": "1. Clases de electrolitos sólidos: sulfuros, óxidos y haluros"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "Almacenamiento de energía electroquímica de alto voltaje y baterías de red avanzadas",
-      "caption": "Análisis de ingeniería de química avanzada de baterías, arquitectura de celdas de estado sólido y almacenamiento de energía a escala de servicios públicos."
+      "title": "High Voltage Electrochemical Energy Storage and Advanced Grid Batteries",
+      "caption": "Engineering analysis of advanced battery chemistry, solid-state cell architecture, and utility-scale energy storage."
     },
     {
       "type": "h2",
-      "text": "4. Ánodos compuestos de silicio: Mecánica de expansión volumétrica del 300%"
+      "text": "1. Clases de electrolitos sólidos: sulfuros, óxidos y haluros"
     },
     {
       "type": "p",
-      "text": "Si bien el metal de litio puro sigue siendo el objetivo final, el silicio proporciona un puente intermedio excepcional. El silicio cuenta con una capacidad específica teórica de 3.579 mAh/g ($Li_{15}Si_4$), casi diez veces la del grafito comercial (372 mAh/g)."
+      "text": "La electrificación de la aviación comercial, el transporte de carga pesada y el tránsito de pasajeros de alto rango está fundamentalmente limitada por la densidad de energía y los riesgos de fuga térmica de las celdas convencionales de iones de litio con electrolito líquido. Las celdas comerciales intercaladas de grafito alcanzan un máximo de aproximadamente 280 Wh/kg y dependen de carbonatos orgánicos volátiles e inflamables que se encienden mediante perforación mecánica o cortocircuitos internos."
     },
     {
       "type": "p",
-      "text": "Sin embargo, la litiación induce una severa expansión volumétrica del 300%, pulverizando los electrodos tradicionales. Cuando se incrustan dentro de una matriz aglutinante elastomérica de estado sólido con alta elasticidad interfacial, los ánodos compuestos de microsilicio se adaptan a la respiración cíclica sin perder las vías de percolación eléctrica."
+      "text": "La electrificación de la aviación comercial, el transporte de carga pesada y el tránsito de pasajeros de alto rango está fundamentalmente limitada por la densidad de energía y los riesgos de fuga térmica de las celdas convencionales de iones de litio con electrolito líquido. Las celdas comerciales intercaladas de grafito alcanzan un máximo de aproximadamente 280 Wh/kg y dependen de carbonatos orgánicos volátiles e inflamables que se encienden mediante perforación mecánica o cortocircuitos internos."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones de ingeniería de sistemas electroquímicos"
+      "text": "1. Clases de electrolitos sólidos: sulfuros, óxidos y haluros"
     },
     {
       "type": "ul",
       "items": [
-        "Ingeniería de compresión de pilas: Diseñe carcasas de celdas con placas mecánicas accionadas por resorte para mantener un contacto interfacial continuo a través de oscilaciones de espesor del 20% del estado de carga.",
-        "Fabricación en sala seca: La producción de electrolitos sólidos de sulfuro requiere atmósferas ultrasecas (punto de rocío < -50 °C) para evitar la descomposición letal del sulfuro de hidrógeno.",
-        "Acoplamiento de cátodo con alto contenido de níquel: combine electrolitos sólidos con cátodos NMC90 monocristalinos recubiertos con borato de litio para eliminar las microfisuras en voltajes de celda altos (> 4,3 V)."
+        "Stack Compression Engineering: Design cell housings with spring-loaded mechanical platens to maintain continuous interfacial contact through 20% state-of-charge thickness swings.",
+        "Dry Room Manufacturing: Sulfide solid electrolyte production requires ultra-dry atmospheres (dew point < -50°C) to prevent lethal hydrogen sulfide decomposition.",
+        "High-Nickel Cathode Coupling: Pair solid electrolytes with single-crystal NMC90 cathodes coated in lithium borate to eliminate micro-cracking at high cell voltages (> 4.3V)."
       ]
     }
   ],
-  "sourceHash": "6c79fa7b436a966eb31011d7e669ab575677147b"
+  "sourceHash": "e0806f8db83836b836c0cab1afb220067ff2ed18"
 }

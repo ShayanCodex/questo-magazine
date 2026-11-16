@@ -5,7 +5,7 @@
   "date": "2026-11-12",
   "updated": "2026-11-14",
   "author": "Tariq Mahmood",
-  "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "High-density server racks emitting cyan LED telemetry inside an enterprise data facility",
   "tags": [
     "performance",
@@ -29,6 +29,12 @@
       "text": "Achieving authentic sub-second Largest Contentful Paint (LCP) and zero Cumulative Layout Shift (CLS) requires inverting traditional hosting topology. Rather than computing HTML dynamically per user request, modern high-authority publishing platforms pre-compile pages into deterministic, immutable static HTML files at build time."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Architecture of Sub-Second Web Performance."
+    },
+    {
       "type": "code",
       "lang": "http",
       "code": "HTTP/2 200 OK\ncache-control: public, max-age=31536000, immutable\ncontent-encoding: br\nx-content-type-options: nosniff\nx-edge-location: IAD-Washington"
@@ -36,6 +42,12 @@
     {
       "type": "p",
       "text": "When an immutable asset is served from an edge node located within 15 kilometers of the requesting client, round-trip packet transport drops below 10 milliseconds. Server processing time effectively converges to zero."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "quote",

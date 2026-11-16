@@ -12,8 +12,8 @@
     "infrastructure",
     "power-grids"
   ],
-  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Pylônes de transmission électrique à haute tension contre le ciel représentant la distribution d'énergie continentale",
+  "image": "https://images.unsplash.com/photo-1510519138111-55099f3e5330?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-voltage electric transmission pylons against sky representing continental power distribution",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "La transmission de courant continu haute tension (HVDC) est devenue le paradigme définitif de l'ingénierie électrique pour le transfert d'énergie en masse sur des distances supérieures à 600 kilomètres en hauteur ou 50 kilomètres sous-marins. En éliminant la production d’énergie réactive et les courants de charge capacitifs, le HVDC fournit le lien structurel manquant pour les super-réseaux intercontinentaux."
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
     },
     {
       "type": "h2",
       "text": "1. Les limites physiques du courant alternatif à grande échelle"
     },
     {
-      "type": "p",
-      "text": "Dans les câbles alternatifs haute tension, les alternances continues de courant sinusoïdal (50 ou 60 Hz) génèrent deux mécanismes de perte physique sévères : l'effet peau et le déplacement diélectrique capacitif."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for HVDC Transmission & Supergrids."
     },
     {
       "type": "p",
-      "text": "L'effet de peau force les électrons AC vers le périmètre extérieur d'un conducteur, réduisant ainsi la surface de section efficace et multipliant la résistance électrique. Dans les câbles sous-marins ou souterrains, le diélectrique isolant entourant le conducteur forme un condensateur cylindrique massif avec l'eau de mer ou le sol environnant :"
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
+    },
+    {
+      "type": "p",
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting HVDC Transmission & Supergrids."
     },
     {
       "type": "code",
@@ -42,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "Le courant continu fonctionne à fréquence nulle ($f = 0$). Par conséquent, les courants de charge capacitifs disparaissent, toute la section du conducteur porte une densité de courant uniforme et les pertes diélectriques chutent à près de zéro."
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
     },
     {
       "type": "quote",
@@ -51,58 +63,58 @@
     },
     {
       "type": "h2",
-      "text": "2. Convertisseurs modulaires multiniveaux (MMC) et électronique de puissance IGBT"
+      "text": "1. Les limites physiques du courant alternatif à grande échelle"
     },
     {
       "type": "p",
-      "text": "Les lignes HVDC historiques ont déployé des convertisseurs à commutation de ligne (LCC) basés sur des vannes à arc au mercure lourd ou à thyristor, qui souffraient d'une consommation de puissance réactive et d'une vulnérabilité aux pannes de commutation CA. Les systèmes contemporains utilisent des convertisseurs de source de tension (VSC) construits sur des topologies de convertisseurs modulaires multiniveaux (MMC)."
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
     },
     {
       "type": "p",
-      "text": "Un convertisseur MMC synthétise des formes d'onde sinusoïdales CA presque parfaites en mettant en cascade des centaines de petits sous-modules, chacun contenant un transistor bipolaire à grille isolée (IGBT) et un condensateur de stockage. En commutant des sous-modules individuels par incréments de microsecondes, le convertisseur construit des escaliers de tension étagés et lisses, éliminant ainsi le besoin de bancs de filtres CA harmoniques massifs."
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
     },
     {
       "type": "ul",
       "items": [
-        "Capacité de démarrage au noir : VSC-HVDC peut alimenter un réseau CA local complètement effondré sans nécessiter l'assistance d'un générateur externe.",
-        "Contrôle P-Q indépendant : la puissance active ($P$) et la puissance réactive ($Q$) peuvent être modulées instantanément et indépendamment dans quatre quadrants.",
-        "Interconnexion de réseau asynchrone : connecte les réseaux nationaux non synchronisés (tels que le Royaume-Uni et l'Europe continentale, ou ERCOT et l'interconnexion orientale) sans risques de panne d'électricité en cascade."
+        "Black-Start Capability: VSC-HVDC can energize a completely collapsed local AC grid without requiring external generator support.",
+        "Independent P-Q Control: Active power ($P$) and reactive power ($Q$) can be modulated instantaneously and independently in four quadrants.",
+        "Asynchronous Grid Interconnection: Connects non-synchronized national grids (such as the UK and continental Europe, or ERCOT and the Eastern Interconnection) without cascading blackout risks."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : Technologie de transmission CC haute tension"
+      "text": "1. Les limites physiques du courant alternatif à grande échelle"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "Réseaux électriques haute tension et transmission électrique longue distance",
-      "caption": "Conférence technique visuelle complète sur les stations de conversion HVDC, l'ingénierie des câbles sous-marins et la stabilisation du réseau."
+      "title": "High-Voltage Power Grids & Long-Distance Electrical Transmission",
+      "caption": "Comprehensive visual technical lecture on HVDC converter stations, submarine cable engineering, and grid stabilization."
     },
     {
       "type": "h2",
-      "text": "4. Super-réseaux intercontinentaux et ultra-haute tension (UHVDC)"
+      "text": "1. Les limites physiques du courant alternatif à grande échelle"
     },
     {
       "type": "p",
-      "text": "Dans des pays dotés de vastes étendues géographiques, comme la Chine, le Brésil et l'Inde, les systèmes à courant continu à ultra haute tension (UHVDC) fonctionnant à ±800 kV et ±1 100 kV transmettent jusqu'à 12 gigawatts d'énergie hydroélectrique et solaire sur des distances supérieures à 3 000 kilomètres avec des pertes de ligne inférieures à 1,5 % par 1 000 km."
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
     },
     {
       "type": "p",
-      "text": "La vision émergente du super-réseau intercontinental mondial relie l'énergie solaire produite dans les fuseaux horaires de jour pour répondre aux demandes de pointe nocturnes sur des continents éloignés. Les liaisons HVDC sous-marines telles que la liaison de la mer du Nord de 720 km (de la Norvège au Royaume-Uni) et les corridors transméditerranéens proposés de plusieurs milliers de kilomètres établissent un mécanisme d'équilibrage énergétique transcontinental continu."
+      "text": "Le triomphe fondateur de la guerre des courants à la fin du 19e siècle fut la défaite de Thomas Edison face à Nikola Tesla et George Westinghouse : le courant alternatif (AC) a triomphé parce que les transformateurs permettaient d'augmenter la tension pour le transport et de l'abaisser pour la consommation municipale. Pendant plus d’un siècle, les réseaux CA synchrones triphasés ont constitué l’épine dorsale de l’électrification industrielle mondiale. Au 21ème siècle, cependant, le découplage géographique massif de la production d’énergie renouvelable (parcs éoliens offshore, panneaux solaires isolés dans les déserts) des centres de distribution urbains a mis en évidence les limites physiques fondamentales du transport de courant alternatif."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir en matière d'ingénierie électrique"
+      "text": "1. Les limites physiques du courant alternatif à grande échelle"
     },
     {
       "type": "ul",
       "items": [
-        "Économie de la distance d'équilibre : le HVDC aérien devient économiquement supérieur au CVC à environ 600-800 km ; pour les câbles sous-marins, le HVDC est obligatoire au-delà de 50 km.",
-        "Innovation en matière de disjoncteurs CC : L'obstacle historique de l'interruption du courant continu sans passages à zéro naturels est résolu par les disjoncteurs CC hybrides à semi-conducteurs fonctionnant dans des fenêtres inférieures à la milliseconde.",
-        "Intégration des énergies renouvelables : les réseaux offshore multi-terminaux DC (MTDC) regroupent des dizaines d'éoliennes offshore dispersées dans des câbles d'exportation continentaux unifiés de grande capacité."
+        "Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km; for submarine cables, HVDC is mandatory beyond 50 km.",
+        "DC Circuit Breaker Innovation: The historical obstacle of interrupting DC current without natural zero-crossings is solved by hybrid solid-state DC breakers operating in sub-millisecond windows.",
+        "Renewable Integration: Multi-terminal DC (MTDC) offshore grids aggregate dozens of dispersed offshore wind turbines into unified high-capacity mainland export cables."
       ]
     }
   ],
-  "sourceHash": "ef0cc670d0ed25de57f0a528ec1bafc15350bc26"
+  "sourceHash": "f69c6a9831c47d902ff26f0bd612279b2eeb9719"
 }

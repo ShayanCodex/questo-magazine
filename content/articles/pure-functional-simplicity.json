@@ -5,7 +5,7 @@
   "date": "2026-11-02",
   "updated": "2026-11-14",
   "author": "Elena Vance",
-  "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Clean functional source code highlighted on a developer workstation in low ambient light",
   "tags": [
     "engineering",
@@ -29,12 +29,24 @@
       "text": "The Mathematical Foundation of Pure Functions"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Pure Functional Simplicity - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Pure Functional Simplicity."
+    },
+    {
       "type": "p",
       "text": "A function is considered mathematically 'pure' if and only if it satisfies two rigorous conditions: deterministic referential transparency and complete freedom from observable side effects. Given the exact same inputs (arguments), a pure function must return the exact same output every single time, without exception."
     },
     {
       "type": "p",
       "text": "A pure function does not read or write to global memory, does not modify input arguments by reference, does not trigger HTTP network calls, and does not alter DOM nodes. It takes data in, performs an immutable transformation, and emits new data out."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Pure Functional Simplicity - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Pure Functional Simplicity."
     },
     {
       "type": "code",

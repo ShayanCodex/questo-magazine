@@ -12,7 +12,7 @@
     "algorithms"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "مخطط مالي شمعدان يُظهر زخمًا تقنيًا تصاعديًا مقابل واجهة مظلمة",
+  "imageAlt": "Candlestick financial chart displaying upward technical momentum against a dark interface",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "اليوم، تعمل ثورة تكنولوجية هادئة على تفكيك هذا الحاجز. تتيح بروتوكولات WebSocket عالية الإنتاجية وخطوط عرض ناقل WebAssembly وعمليات إرسال التبادل المؤسسي المفتوحة تقييم المخططات متعددة الأطر الزمنية مباشرة ضمن أوقات تشغيل المتصفح القياسية دون الحاجة إلى برامج خارجية باهظة الثمن."
+      "text": "لعقود من الزمن، حافظت مؤسسات وول ستريت على ميزة غير متماثلة على المشاركين العالميين في مجال التجزئة من خلال محطات الأجهزة المملوكة ورسوم مشاركة بيانات السوق الباهظة. كان الوصول إلى اكتشاف الأسعار في الوقت الفعلي، وعمق تدفق طلبات الكتب، ونماذج الارتباط بين الأصول، خاضعًا لحراسة مشددة خلف اشتراكات شهرية مكونة من خمسة أرقام."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Algorithmic Market Intelligence and Open Financial Data."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "Questo Financial Technologies Dispatch"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Algorithmic Market Intelligence and Open Financial Data."
+    },
+    {
       "type": "h3",
       "text": "المقاييس الحاسمة للذكاء المفتوح الحديث"
     },
     {
       "type": "ul",
       "items": [
-        "مذبذبات رياضية أقل من مللي ثانية (RSI، MACD، Bollinger Bands) محسوبة محليًا على المصفوفات التاريخية.",
-        "سلامة البيانات بدون أي اختراق من خلال الإفصاحات التنظيمية للتبادل العام التي تم التحقق منها والأشرطة المؤجلة.",
-        "مصفوفات الارتباط متعددة الأسواق عبر الأصول التي تتبع السندات السيادية والسلع وسيولة العملات."
+        "Sub-millisecond mathematical oscillators (RSI, MACD, Bollinger Bands) computed locally on historical arrays.",
+        "Zero-compromise data integrity through verified public exchange regulatory disclosures and delayed tapes.",
+        "Cross-asset multi-market correlation matrices tracking sovereign bonds, commodities, and currency liquidity."
       ]
     },
     {
       "type": "p",
-      "text": "مع نضوج البنى المالية المفتوحة، تخلق منصات النشر الرقمية التي تدمج مؤشرات الاقتصاد الكلي الحية بشكل مباشر جنبًا إلى جنب مع التحقيقات الصحفية قيمة سياقية لا مثيل لها للمحللين العالميين الفضوليين."
+      "text": "لعقود من الزمن، حافظت مؤسسات وول ستريت على ميزة غير متماثلة على المشاركين العالميين في مجال التجزئة من خلال محطات الأجهزة المملوكة ورسوم مشاركة بيانات السوق الباهظة. كان الوصول إلى اكتشاف الأسعار في الوقت الفعلي، وعمق تدفق طلبات الكتب، ونماذج الارتباط بين الأصول، خاضعًا لحراسة مشددة خلف اشتراكات شهرية مكونة من خمسة أرقام."
     }
   ],
-  "sourceHash": "6430a948ddf7d0cd90e6d8f81c30482d30577640"
+  "sourceHash": "e354fb121c1df4ece3a0fa71cc8f4e48be1bc568"
 }

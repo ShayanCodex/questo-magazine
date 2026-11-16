@@ -1,0 +1,79 @@
+{
+  "slug": "semiconductor-packaging-and-advanced-chiplet-interconnects",
+  "title": "ایڈوانسڈ سیمی کنڈکٹر پیکیجنگ: 2.5D انٹرپوزرز، HBM4 اور CoWoS آرکیٹیکچرز",
+  "excerpt": "ایک انجینئرنگ گہرائی میں ویفر لیول پیکیجنگ، تھرو-سلیکون ویاس، ہائی بینڈوتھ میموری تھرمل ڈسپیشن، اور جیو پولیٹیکل چوک پوائنٹس کی ایڈوانسڈ گنجائش۔",
+  "date": "2026-11-16",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "semiconductors",
+    "chiplets",
+    "hardware-engineering",
+    "supply-chain",
+    "foundry-technology"
+  ],
+  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Advanced silicon interposer with microscopic solder micro-bumps connecting heterogeneous compute chiplets",
+  "body": [
+    {
+      "type": "h2",
+      "text": "مونولیتھک ڈیز سے چپلیٹ تک پیراڈائم شفٹ"
+    },
+    {
+      "type": "p",
+      "text": "جیسے جیسے فوٹو لیتھوگرافک اسکیلنگ جوہری جسمانی حدود کے قریب پہنچتی ہے اور ریٹیکل سائز کی چھتوں کو محدود کر دیتا ہے۔ 858 مربع ملی میٹر، عالمی سیمی کنڈکٹر انڈسٹری نے متضاد ملٹی ڈائی انضمام کی طرف توجہ دی ہے۔ کمپیوٹیشنل لاجک، ہائی بینڈوڈتھ میموری، اور اینالاگ ان پٹ آؤٹ پٹ کنٹرولرز کو ایک ہی ممنوعہ طور پر کم پیداوار والے یک سنگی ویفر پر مجبور کرنے کے بجائے، جدید فن تعمیرات اعلی کثافت والے سلکان انٹرپوزر پر جمع خصوصی چپلیٹس میں فنکشنل بلاکس کو الگ کر دیتے ہیں۔"
+    },
+    {
+      "type": "h2",
+      "text": "مونولیتھک ڈیز سے چپلیٹ تک پیراڈائم شفٹ"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1512358958014-b651a7ee1773?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cross-section electron micrograph of through-silicon vias (TSVs) traversing silicon interposer substrate",
+      "caption": "Through-silicon vias: vertical micro-interconnects providing high-density, low-latency signaling between 2.5D stacked dies."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Through-Silicon Vias (TSVs): Microscopic vertical electrical connections etched completely through silicon wafers, enabling ultra-low latency die-to-die signaling across three-dimensional stacks.",
+        "CoWoS (Chip-on-Wafer-on-Substrate): High-density 2.5D packaging methodology utilizing passive silicon interposers to interconnect high-performance compute dies directly with High Bandwidth Memory (HBM).",
+        "Thermal Dissipation Ceilings: Stacking compute and memory dies exponentially increases heat flux density, demanding microchannel liquid cooling and diamond-composite heat spreaders.",
+        "Foundry Capacity Concentration: Global packaging bottlenecks are overwhelmingly concentrated in specialized packaging facilities, creating acute single-point dependencies in the AI hardware supply chain."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "کٹنگ ایج کمپیوٹ میں بنیادی رکاوٹ اب ٹرانزسٹر کی گنتی یا گھڑی کی فریکوئنسی نہیں ہے، بلکہ پیکیجنگ سبسٹریٹ کی انٹرکنیکٹ بینڈوڈتھ کثافت اور تھرمل ڈسپیشن کی کارکردگی ہے۔",
+      "cite": "انٹرنیشنل انسٹی ٹیوٹ آف سیمی کنڈکٹر آرکیٹیکٹس"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-bandwidth memory HBM4 stack integrated alongside central compute processor",
+      "caption": "CoWoS substrate: passive silicon interposer integrating multi-gigabyte HBM stacks directly beside logic chiplets."
+    },
+    {
+      "type": "h2",
+      "text": "مونولیتھک ڈیز سے چپلیٹ تک پیراڈائم شفٹ"
+    },
+    {
+      "type": "p",
+      "text": "جیسے جیسے فوٹو لیتھوگرافک اسکیلنگ جوہری جسمانی حدود کے قریب پہنچتی ہے اور ریٹیکل سائز کی چھتوں کو محدود کر دیتا ہے۔ 858 مربع ملی میٹر، عالمی سیمی کنڈکٹر انڈسٹری نے متضاد ملٹی ڈائی انضمام کی طرف توجہ دی ہے۔ کمپیوٹیشنل لاجک، ہائی بینڈوڈتھ میموری، اور اینالاگ ان پٹ آؤٹ پٹ کنٹرولرز کو ایک ہی ممنوعہ طور پر کم پیداوار والے یک سنگی ویفر پر مجبور کرنے کے بجائے، جدید فن تعمیرات اعلی کثافت والے سلکان انٹرپوزر پر جمع خصوصی چپلیٹس میں فنکشنل بلاکس کو الگ کر دیتے ہیں۔"
+    },
+    {
+      "type": "video",
+      "title": "Advanced Chip Packaging: How CoWoS and TSVs Power Modern Compute",
+      "caption": "Technical breakdown of silicon interposer manufacturing, die attachment, and thermal interface material engineering.",
+      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88"
+    },
+    {
+      "type": "h2",
+      "text": "مونولیتھک ڈیز سے چپلیٹ تک پیراڈائم شفٹ"
+    },
+    {
+      "type": "p",
+      "text": "جیسے جیسے فوٹو لیتھوگرافک اسکیلنگ جوہری جسمانی حدود کے قریب پہنچتی ہے اور ریٹیکل سائز کی چھتوں کو محدود کر دیتا ہے۔ 858 مربع ملی میٹر، عالمی سیمی کنڈکٹر انڈسٹری نے متضاد ملٹی ڈائی انضمام کی طرف توجہ دی ہے۔ کمپیوٹیشنل لاجک، ہائی بینڈوڈتھ میموری، اور اینالاگ ان پٹ آؤٹ پٹ کنٹرولرز کو ایک ہی ممنوعہ طور پر کم پیداوار والے یک سنگی ویفر پر مجبور کرنے کے بجائے، جدید فن تعمیرات اعلی کثافت والے سلکان انٹرپوزر پر جمع خصوصی چپلیٹس میں فنکشنل بلاکس کو الگ کر دیتے ہیں۔"
+    }
+  ],
+  "sourceHash": "b5c30079810cc52a2947cabb93b9ac033c6601b2"
+}

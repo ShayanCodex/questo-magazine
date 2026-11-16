@@ -12,7 +12,7 @@
     "thermodynamics"
   ],
   "image": "/images/articles/maillard-reaction-culinary.jpg",
-  "imageAlt": "Hochtemperatur-Anbraten einer kulinarischen Kreation mit reichhaltiger goldbrauner Karamellisierung in einer professionellen Küche",
+  "imageAlt": "High-temperature searing of a culinary creation with rich golden-brown caramelization in a professional kitchen",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Die chemische Architektur des Röstaromas"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1470813740244-df3752178108?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Thermodynamics of the Maillard Reaction."
     },
     {
       "type": "ul",
       "items": [
-        "Anfängliche Kondensation: Der nukleophile Angriff eines nicht protonierten Amins auf den Carbonylkohlenstoff eines reduzierenden Zuckers führt zu einem instabilen Glykosylamin.",
-        "Amadori-Umlagerung: Säurekatalysierte Isomerisierung wandelt Aldosylamine in stabile 1-Amino-1-desoxy-2-ketosen um, die entscheidende Zwischenphase.",
-        "Strecker-Abbau: Dicarbonyl-Zwischenprodukte reagieren mit Aminosäuren unter Bildung von Aldehyden und Aminoketonen, die zu aromatischen Pyrazinen kondensieren.",
-        "Wasseraktivitätsbilanz: Die Reaktionsgeschwindigkeit erreicht ihren Höhepunkt bei mittlerer Wasseraktivität ($a_w \\ca. 0,65$ bis $0,75$), während freies Oberflächenwasser die Bräunung unterdrückt."
+        "Initial Condensation: Nucleophilic attack of an unprotonated amine on a reducing sugar carbonyl carbon yields an unstable glycosylamine.",
+        "Amadori Rearrangement: Acid-catalyzed isomerization converts aldosylamines into stable 1-amino-1-deoxy-2-ketoses, the pivotal intermediate phase.",
+        "Strecker Degradation: Dicarbonyl intermediates react with amino acids to generate aldehydes and aminoketones that condense into aromatic pyrazines.",
+        "Water Activity Balance: Reaction velocity peaks at intermediate water activity ($a_w \\approx 0.65$ to $0.75$), while free surface water suppresses browning."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Modernist Culinary Science Journal"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1484589065579-247adc070a15?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Thermodynamics of the Maillard Reaction."
+    },
+    {
       "type": "h2",
-      "text": "Thermische Schwellenwerte und Oberflächenhydratation"
+      "text": "Die chemische Architektur des Röstaromas"
     },
     {
       "type": "p",
-      "text": "Die Maillard-Kaskade beschleunigt sich exponentiell über 140 °C (284 °F). Da flüssiges Wasser bei Atmosphärendruck bei 100 °C verdampft, können nasse Lebensmitteloberflächen die für eine schnelle Bräunung erforderliche thermodynamische Aktivierungsenergie erst dann erreichen, wenn die Oberflächenfeuchtigkeit vollständig verdampft ist. Dies erklärt, warum die Oberflächentrocknung beim Rösten bei hoher Hitze unerlässlich ist."
+      "text": "Jede goldene Kruste auf einem Sauerteigbrot, einer gerösteten Kaffeebohne und einem gebratenen Steak verdankt ihre aromatische Tiefe einem der kompliziertesten Kaskaden der Lebensmittelchemie: der Maillard-Reaktion. Benannt nach dem französischen Chemiker Louis-Camille Maillard, wandelt dieser nicht-enzymatische Bräunungsweg einfache reduzierende Zucker und Aminosäure-Nukleophile in Hunderte flüchtige Geschmacksmoleküle um."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "Die Wissenschaft der Maillard-Reaktion und der Browning-Thermodynamik",
-      "caption": "Detaillierte lebensmittelchemische Analyse von Aminosäuren, reduzierenden Zuckern, Strecker-Aldehyden und heterozyklischen Aromastoffen."
+      "title": "The Science of the Maillard Reaction & Browning Thermodynamics",
+      "caption": "Detailed food chemistry analysis of amino acids, reducing sugars, Strecker aldehydes, and heterocyclic flavor compounds.",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU"
     },
     {
       "type": "h2",
-      "text": "pH-Manipulation und moderne Gastronomie"
+      "text": "Die chemische Architektur des Röstaromas"
     },
     {
       "type": "p",
-      "text": "Durch die Erhöhung des pH-Werts an der Oberfläche mithilfe von alkalischen Puffern (z. B. Natriumbicarbonat) werden Aminosäure-Aminogruppen deprotoniert, was deren Nukleophilie erhöht und die Reaktionskinetik bei niedrigeren Temperaturen dramatisch beschleunigt, ohne dass das Innere zu sehr erhitzt wird."
+      "text": "Jede goldene Kruste auf einem Sauerteigbrot, einer gerösteten Kaffeebohne und einem gebratenen Steak verdankt ihre aromatische Tiefe einem der kompliziertesten Kaskaden der Lebensmittelchemie: der Maillard-Reaktion. Benannt nach dem französischen Chemiker Louis-Camille Maillard, wandelt dieser nicht-enzymatische Bräunungsweg einfache reduzierende Zucker und Aminosäure-Nukleophile in Hunderte flüchtige Geschmacksmoleküle um."
     }
   ],
-  "sourceHash": "c6c53fadf6a9f6a0d846319573d36f3d56e66b56"
+  "sourceHash": "a879380da9b4634b8ea45020161b445339659c48"
 }

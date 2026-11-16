@@ -11,8 +11,8 @@
     "physics",
     "orbital-mechanics"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "Hochtemperatur-Raketenantriebskammer und Vakuumtestanlage",
+  "image": "https://images.unsplash.com/photo-1517976487582-8409e6c6e737?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Supersonic aerospike rocket engine exhaust plume shock diamonds during static test stand firing",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Das Problem der atmosphärischen Ausdehnung in der traditionellen Raketentechnik"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Orbital launch vehicle ascending through upper atmosphere with altitude-compensating nozzle plume",
+      "caption": "Altitude compensation: ambient atmospheric pressure self-adjusting exhaust expansion across the aerospike ramp."
     },
     {
       "type": "ul",
       "items": [
-        "Aerodynamische Grenze: Der atmosphärische Umgebungsdruck fungiert als unsichtbare äußere Düsenwand und ermöglicht es der Abgasfahne, sich auf natürliche Weise vom Meeresspiegel bis zur Umlaufbahn auszudehnen.",
-        "Konstanter spezifischer Impuls: Lineare und toroidale Aerospike-Architekturen sorgen für eine nahezu optimale Ausdehnung über die gesamte Flugbahn.",
-        "Wärmemanagement: Die Konzentration von Verbrennungsgasen entlang einer zentralen Spitze erfordert eine regenerative Kühlung mit kryogenem flüssigem Methan oder Wasserstoff.",
-        "Einstufige Lebensfähigkeit: Durch die Eliminierung stufenweiser Fahrzeugabwürfe nähern sich mit Aerospikes ausgerüstete Fahrzeuge dem theoretischen Massenverhältnis an, das für Single-Stage-to-Orbit (SSTO) erforderlich ist."
+        "Aerodynamic Boundary: Ambient atmospheric pressure acts as an invisible outer nozzle wall, allowing the exhaust plume to expand naturally from sea level to orbit.",
+        "Constant Specific Impulse: Linear and toroidal aerospike architectures maintain near-optimal expansion across the entire flight trajectory.",
+        "Thermal Management: Concentrating combustion gases along a central spike demands regenerative cooling with cryogenic liquid methane or hydrogen.",
+        "Single-Stage Viability: By eliminating staged vehicle drop-offs, aerospike-equipped craft approach the theoretical mass ratio required for single-stage-to-orbit (SSTO)."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Journal of Advanced Propulsion & Hypersonic Mechanics"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Additive manufactured copper-alloy combustion chamber with regenerative cooling channels",
+      "caption": "Regenerative cooling: cryogenic liquid methane flowing through 3D-printed micro-channels along the nozzle spike."
+    },
+    {
       "type": "h2",
-      "text": "Additive Fertigung und aktive regenerative Kühlung"
+      "text": "Das Problem der atmosphärischen Ausdehnung in der traditionellen Raketentechnik"
     },
     {
       "type": "p",
-      "text": "Die historische Entwicklung von Aerospikes im 20. Jahrhundert scheiterte an metallurgischen Grenzen: Die zentrale Spike-Spitze erfuhr einen Wärmefluss, der den der Kernreaktorkerne übertraf. Der moderne Druck von Kupferlegierungen mittels Laser-Pulverbett-Fusion (LPBF) ermöglicht Mikrokanal-Kühlwege, die kryogene Treibstoffe bei Minusgraden innerhalb von Millimetern an die Scherschicht der Überschallverbrennung heranführen."
+      "text": "Herkömmliche Glockendüsen unterliegen einem unausweichlichen physikalischen Kompromiss: Das Düsenausdehnungsverhältnis wird während der Herstellung festgelegt. Auf Meereshöhe weitet der atmosphärische Druck die Abgasfahne übermäßig aus, was zu zerstörerischen Ablösungsschocks führt; Im Vakuum ist die Düse nicht ausreichend ausgedehnt und gibt einen erheblichen spezifischen Impuls (Isp) ab. Der Aerospike-Motor beseitigt diesen physischen Engpass durch dynamischen aerodynamischen Höhenausgleich."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "Präzisionsphysik und Quantenmessprinzipien",
-      "caption": "Vorlesung über experimentelle Physik, die sich mit extremer Präzisionsinterferometrie, kryogener Stabilität und Quantenzustandskontrolle befasst."
+      "title": "Precision Physics and Quantum Measurement Principles",
+      "caption": "Experimental physics lecture exploring extreme precision interferometry, cryogenic stability, and quantum state control.",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10"
     },
     {
       "type": "h2",
-      "text": "Die Zukunft des wiederverwendbaren Weltraumzugangs"
+      "text": "Das Problem der atmosphärischen Ausdehnung in der traditionellen Raketentechnik"
     },
     {
       "type": "p",
-      "text": "Während sich kommerzielle Trägerraketen zu einem schnellen, flugzeugähnlichen Turnaround entwickeln, bietet die strukturelle Integration des Aerospikes mit Hubkörper-Raumflugzeugen den saubersten thermodynamischen Weg für einen nachhaltigen Orbitalzugang."
+      "text": "Herkömmliche Glockendüsen unterliegen einem unausweichlichen physikalischen Kompromiss: Das Düsenausdehnungsverhältnis wird während der Herstellung festgelegt. Auf Meereshöhe weitet der atmosphärische Druck die Abgasfahne übermäßig aus, was zu zerstörerischen Ablösungsschocks führt; Im Vakuum ist die Düse nicht ausreichend ausgedehnt und gibt einen erheblichen spezifischen Impuls (Isp) ab. Der Aerospike-Motor beseitigt diesen physischen Engpass durch dynamischen aerodynamischen Höhenausgleich."
     }
   ],
-  "sourceHash": "6cfa15eaa7cc17ad09a2466a4d601e0f1c95fcbb"
+  "sourceHash": "4974b1698b25443fec8ac3977b4fe149ad22781f"
 }

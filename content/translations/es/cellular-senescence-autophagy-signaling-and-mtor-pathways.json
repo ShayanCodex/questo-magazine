@@ -13,7 +13,7 @@
     "neuroscience"
   ],
   "image": "/images/articles/cellular-autophagy-biology.jpg",
-  "imageAlt": "Visualización mediante microscopía confocal fluorescente de alta resolución de lisosomas celulares y vías de autofagia",
+  "imageAlt": "High resolution fluorescent confocal microscopy visualization of cellular lysosomes and autophagy pathways",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Cuando las células somáticas experimentan un acortamiento telomérico crítico, roturas de ADN de doble hebra no resueltas o estrés oncogénico, activan las cascadas supresoras de tumores p53-p21CIP1 y p16INK4a. En lugar de sufrir apoptosis, estas células entran en una detención permanente del ciclo celular, transformándose en células zombis senescentes metabólicamente activas que envenenan continuamente la arquitectura del tejido adyacente."
+      "text": "El envejecimiento biológico de los tejidos somáticos humanos no es una decadencia amorfa de la estructura física, sino una ruptura orquestada a través de doce características moleculares conservadas del envejecimiento. En el centro de este eje fisiopatológico se encuentra el antagonismo entre la señalización del crecimiento mediante detección de nutrientes (el objetivo mecanicista de la rapamicina, mTOR) y el reciclaje celular interno (macroautofagia), junto con la acumulación progresiva de senescencia celular irreversible."
     },
     {
       "type": "h2",
       "text": "1. El fenotipo secretor asociado a la senescencia (SASP)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular Senescence & Autophagy - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Cellular Senescence & Autophagy."
+    },
+    {
       "type": "p",
-      "text": "Las células senescentes no permanecen biológicamente silenciosas. Mediante la activación de la vía GMP-AMP sintasa cíclica (cGAS)-STING y la translocación nuclear NF-κB, secretan un potente cóctel de citocinas proinflamatorias, quimiocinas y proteasas que degradan la matriz extracelular:"
+      "text": "El envejecimiento biológico de los tejidos somáticos humanos no es una decadencia amorfa de la estructura física, sino una ruptura orquestada a través de doce características moleculares conservadas del envejecimiento. En el centro de este eje fisiopatológico se encuentra el antagonismo entre la señalización del crecimiento mediante detección de nutrientes (el objetivo mecanicista de la rapamicina, mTOR) y el reciclaje celular interno (macroautofagia), junto con la acumulación progresiva de senescencia celular irreversible."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Major Molecular SASP Factors:\n- Interleukins: IL-6, IL-1α, IL-1β (drive systemic sterile chronic inflammation)\n- Chemokines: CCL2 (MCP-1), CXCL8 (recruit destructive macrophage cascades)\n- Matrix Metalloproteinases: MMP-1, MMP-3, MMP-9 (degrade structural collagen networks)\n- Growth Factors: TGF-β (paracrine transmission spreading senescence to healthy neighbor cells)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular Senescence & Autophagy - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Cellular Senescence & Autophagy."
+    },
+    {
       "type": "p",
-      "text": "Incluso una carga menor de células senescentes (que comprenden menos del 1% del volumen total del tejido en las paredes adiposas o arteriales) produce suficiente transmisión paracrina de SASP para inducir disfunción endotelial. fibrosis hepática y fragilidad tisular generalizada."
+      "text": "El envejecimiento biológico de los tejidos somáticos humanos no es una decadencia amorfa de la estructura física, sino una ruptura orquestada a través de doce características moleculares conservadas del envejecimiento. En el centro de este eje fisiopatológico se encuentra el antagonismo entre la señalización del crecimiento mediante detección de nutrientes (el objetivo mecanicista de la rapamicina, mTOR) y el reciclaje celular interno (macroautofagia), junto con la acumulación progresiva de senescencia celular irreversible."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Macroautofagia: eliminación lisosomal e inducción de ULK1"
+      "text": "1. El fenotipo secretor asociado a la senescencia (SASP)"
     },
     {
       "type": "p",
-      "text": "La autofagia es la principal vía de degradación catabólica responsable de eliminar los orgánulos dañados (mitofagia) y las proteínas tóxicas agregadas. En condiciones ricas en nutrientes, el complejo mTOR activo 1 (mTORC1) fosforila directamente el complejo ULK1-ATG13-FIP200 en Ser757, suprimiendo por completo el inicio de la autofagia."
+      "text": "El envejecimiento biológico de los tejidos somáticos humanos no es una decadencia amorfa de la estructura física, sino una ruptura orquestada a través de doce características moleculares conservadas del envejecimiento. En el centro de este eje fisiopatológico se encuentra el antagonismo entre la señalización del crecimiento mediante detección de nutrientes (el objetivo mecanicista de la rapamicina, mTOR) y el reciclaje celular interno (macroautofagia), junto con la acumulación progresiva de senescencia celular irreversible."
     },
     {
       "type": "ul",
       "items": [
-        "Activación de AMPK: el agotamiento de la energía celular (proporciones elevadas de AMP/ATP) activa la proteína quinasa activada por AMP (AMPK), que fosforila directamente ULK1 en Ser317 y Ser777, lo que desencadena la nucleación del fagóforo.",
-        "Elongación del fagóforo: el sistema conjugado ATG12-ATG5-ATG16L1 coordina la lipidación de LC3-I citosólico en LC3-II conjugado con fosfatidiletanolamina, ensamblando el autofagosoma de doble membrana.",
-        "Fusión lisosomal y proteólisis: los autofagosomas se fusionan con lisosomas ácidos (pH ~4,5) para formar autolisosomas, degradando la carga encapsulada en aminoácidos libres y ácidos grasos para el reciclaje metabólico."
+        "AMPK Activation: Cellular energy depletion (elevated AMP/ATP ratios) activates AMP-activated protein kinase (AMPK), which directly phosphorylates ULK1 at Ser317 and Ser777, triggering phagophore nucleation.",
+        "Phagophore Elongation: The ATG12-ATG5-ATG16L1 conjugate system coordinates the lipidation of cytosolic LC3-I into phosphatidylethanolamine-conjugated LC3-II, assembling the double-membrane autophagosome.",
+        "Lysosomal Fusion & Proteolysis: Autophagosomes fuse with acidic lysosomes (pH ~4.5) to form autolysosomes, degrading encapsulated cargo into free amino acids and fatty acids for metabolic recycling."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Metabolismo celular, detección de nutrientes y autofagia"
+      "text": "1. El fenotipo secretor asociado a la senescencia (SASP)"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VAEzZeaV5zM",
-      "title": "Metabolismo celular, detección de nutrientes y dinámica de la autofagia",
-      "caption": "La inmersión profunda del Dr. Andrew Huberman en las vías metabólicas, la cinética de la insulina, la detección de nutrientes y la biología celular de la autofagia."
+      "title": "Cellular Metabolism, Nutrient Sensing, and Autophagy Dynamics",
+      "caption": "Dr. Andrew Huberman's deep dive into metabolic pathways, insulin kinetics, nutrient sensing, and the cellular biology of autophagy."
     },
     {
       "type": "h2",
-      "text": "4. Terapéutica senolítica e inhibición de mTORC1"
+      "text": "1. El fenotipo secretor asociado a la senescencia (SASP)"
     },
     {
       "type": "p",
-      "text": "Las intervenciones farmacológicas dirigidas a estas vías han demostrado una profunda extensión de la vida y la salud en ensayos con mamíferos. Los compuestos senolíticos, como el inhibidor de la tirosina quinasa dasatinib combinado con el flavonoide quercetina (D+Q) o el antagonista BCL-2/BCL-xL navitoclax, desactivan transitoriamente las vías antiapoptóticas de las células senescentes (SCAP), lo que desencadena selectivamente la apoptosis en las células senescentes y deja intactas las células somáticas sanas."
+      "text": "El envejecimiento biológico de los tejidos somáticos humanos no es una decadencia amorfa de la estructura física, sino una ruptura orquestada a través de doce características moleculares conservadas del envejecimiento. En el centro de este eje fisiopatológico se encuentra el antagonismo entre la señalización del crecimiento mediante detección de nutrientes (el objetivo mecanicista de la rapamicina, mTOR) y el reciclaje celular interno (macroautofagia), junto con la acumulación progresiva de senescencia celular irreversible."
     },
     {
       "type": "p",
-      "text": "Simultáneamente, la rapamicina en dosis bajas pulsadas o sus análogos (rapalogs) logran la inhibición alostérica de mTORC1 sin desestabilizar mTORC2, restaurando el flujo de autofagia basal y preservando la capacidad regenerativa de las células madre."
+      "text": "El envejecimiento biológico de los tejidos somáticos humanos no es una decadencia amorfa de la estructura física, sino una ruptura orquestada a través de doce características moleculares conservadas del envejecimiento. En el centro de este eje fisiopatológico se encuentra el antagonismo entre la señalización del crecimiento mediante detección de nutrientes (el objetivo mecanicista de la rapamicina, mTOR) y el reciclaje celular interno (macroautofagia), junto con la acumulación progresiva de senescencia celular irreversible."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones clínicas preventivas y de longevidad"
+      "text": "1. El fenotipo secretor asociado a la senescencia (SASP)"
     },
     {
       "type": "ul",
       "items": [
-        "Restricción calórica pulsada: el ayuno periódico (16-24 horas) suprime la señalización sistémica de insulina-IGF-1, activando AMPK e iniciando un flujo autofágico lisosomal profundo.",
-        "Inducción de estrés térmico: la exposición regular a la sauna (80-90°C) regula positivamente las proteínas de choque térmico (HSP70, HSP90), previniendo la agregación de proteínas mal plegadas y la descomposición de la autofagia mediada por chaperonas.",
-        "Carga de resistencia de alta intensidad: la sobrecarga muscular mecánica progresiva promueve la expansión de las células satélite, contrarrestando la sarcopenia asociada a la edad y reduciendo los marcadores SASP sistémicos circulantes."
+        "Pulsed Caloric Restriction: Periodic fasting (16-24 hours) suppresses systemic insulin-IGF-1 signaling, activating AMPK and initiating deep lysosomal autophagic flux.",
+        "Thermal Stress Induction: Regular sauna exposure (80-90°C) upregulates Heat Shock Proteins (HSP70, HSP90), preventing misfolded protein aggregation and chaperone-mediated autophagy breakdown.",
+        "High-Intensity Resistance Loading: Progressive mechanical muscular overload promotes satellite cell expansion, counteracting age-associated sarcopenia and reducing circulating systemic SASP markers."
       ]
     }
   ],
-  "sourceHash": "b8b876440ee6e7c3ddad4ee88d607a8aed04d686"
+  "sourceHash": "530fa517c826e1ca01b78810992580100ccd06b1"
 }

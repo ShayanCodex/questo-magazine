@@ -13,7 +13,7 @@
     "cryptography"
   ],
   "image": "/images/articles/cbdc-central-banking.jpg",
-  "imageAlt": "محطة سيولة مالية رقمية تعرض متجهات تسوية البنك المركزي في الوقت الحقيقي وأزواج العملات الأجنبية.",
+  "imageAlt": "Digital financial liquidity terminal displaying real time central bank settlement vectors and foreign exchange pairs",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "تمثل العملات الرقمية للبنك المركزي (CBDCs) مظهرًا رقميًا للعملة الورقية السيادية، مما يشكل مسؤولية قانونية مباشرة على السلطة النقدية المصدرة. من خلال إقران احتياطيات البنك المركزي مع تقنية دفتر الأستاذ الموزع (DLT) أو دفاتر الأستاذ العلائقية المركزية عالية التزامن، تتيح العملات الرقمية للبنوك المركزية تسوية الدفع مقابل الدفع (PvP) في الوقت الفعلي."
+      "text": "يخضع الهيكل النقدي الدولي لأعمق عملية إعادة تنظيم هيكلية منذ مؤتمر بريتون وودز عام 1944. لعقود من الزمن، اعتمدت تسوية المدفوعات عبر الحدود على شبكة البنوك المراسلة القديمة: شبكة غير فعالة من رسائل سويفت المجزأة، ومناطق زمنية متباينة، وحسابات نوسترو/فوسترو الثنائية التي تفرض مخاطر تسوية الأطراف المقابلة لعدة أيام واحتكاكًا كبيرًا في المعاملات."
     },
     {
       "type": "h2",
       "text": "1. التصنيفات المعمارية: العملات الرقمية للبنوك المركزية بالجملة مقابل التجزئة"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Central Bank Digital Currencies."
+    },
+    {
       "type": "p",
-      "text": "تنقسم العملات الرقمية للبنك المركزي بشكل أساسي عبر مستويات الوصول ونطاقات التسوية:"
+      "text": "يخضع الهيكل النقدي الدولي لأعمق عملية إعادة تنظيم هيكلية منذ مؤتمر بريتون وودز عام 1944. لعقود من الزمن، اعتمدت تسوية المدفوعات عبر الحدود على شبكة البنوك المراسلة القديمة: شبكة غير فعالة من رسائل سويفت المجزأة، ومناطق زمنية متباينة، وحسابات نوسترو/فوسترو الثنائية التي تفرض مخاطر تسوية الأطراف المقابلة لعدة أيام واحتكاكًا كبيرًا في المعاملات."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "CBDC Functional Taxonomies:\n1. Wholesale CBDC (wCBDC):\n   - Participants: Restricted strictly to licensed financial institutions and central clearing counterparties.\n   - Purpose: Interbank clearing, cross-border gross settlement, and tokenized securities DvP (Delivery-versus-Payment).\n   - Technology: Permissioned distributed ledgers (Corda, Hyperledger Fabric, bespoke DLT stacks).\n\n2. Retail CBDC (rCBDC):\n   - Participants: General public, retail merchants, and non-bank consumers.\n   - Purpose: Digital cash replacement, offline transactions, and financial inclusion.\n   - Architecture: Two-tier intermediated model (central bank issues; private commercial banks distribute)."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Central Bank Digital Currencies."
+    },
+    {
       "type": "p",
-      "text": "إن الهيكل الوسيط ذو المستويين أمر بالغ الأهمية للحفاظ على الاستقرار الاقتصادي. ومن شأن حسابات التجزئة المباشرة في البنك المركزي أن تؤدي إلى إلغاء الوساطة في النظام المصرفي التجاري، مما يؤدي إلى هروب الودائع أثناء الأزمات المالية وإعاقة عملية خلق الائتمان عبر القطاع الخاص."
+      "text": "يخضع الهيكل النقدي الدولي لأعمق عملية إعادة تنظيم هيكلية منذ مؤتمر بريتون وودز عام 1944. لعقود من الزمن، اعتمدت تسوية المدفوعات عبر الحدود على شبكة البنوك المراسلة القديمة: شبكة غير فعالة من رسائل سويفت المجزأة، ومناطق زمنية متباينة، وحسابات نوسترو/فوسترو الثنائية التي تفرض مخاطر تسوية الأطراف المقابلة لعدة أيام واحتكاكًا كبيرًا في المعاملات."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. آليات التسوية عبر الحدود: مشروع mBridge"
+      "text": "1. التصنيفات المعمارية: العملات الرقمية للبنوك المركزية بالجملة مقابل التجزئة"
     },
     {
       "type": "p",
-      "text": "منصة البيع بالجملة المتعددة الأطراف الأكثر نضجًا هي Project mBridge، والتي تم تطويرها بالتعاون بين مركز الابتكار التابع لبنك التسويات الدولية (BIS) والبنوك المركزية في هونج كونج والصين وتايلاند والإمارات العربية المتحدة."
+      "text": "يخضع الهيكل النقدي الدولي لأعمق عملية إعادة تنظيم هيكلية منذ مؤتمر بريتون وودز عام 1944. لعقود من الزمن، اعتمدت تسوية المدفوعات عبر الحدود على شبكة البنوك المراسلة القديمة: شبكة غير فعالة من رسائل سويفت المجزأة، ومناطق زمنية متباينة، وحسابات نوسترو/فوسترو الثنائية التي تفرض مخاطر تسوية الأطراف المقابلة لعدة أيام واحتكاكًا كبيرًا في المعاملات."
     },
     {
       "type": "ul",
       "items": [
-        "التسوية الذرية لمنصة واحدة: تستبدل سلاسل الخدمات المصرفية المراسلة بدفتر حسابات دفتري موحد حيث يتم مسح المعاملات ذريًا في ثوانٍ بدلاً من أيام.",
-        "أزواج العملات المحلية المباشرة: تسهل التسوية المباشرة لصرف العملات الأجنبية بين أزواج العملات غير الدولار، مما يخفف الاعتماد على عملات المركبات الوسيطة.",
-        "الامتثال التنظيمي حسب التصميم: يدمج الفحص الآلي للعقوبات القضائية ومراقبة معاملات مكافحة غسل الأموال مباشرة ضمن العقود الذكية على مستوى البروتوكول."
+        "Single-Platform Atomic Settlement: Replaces correspondent banking chains with a unified DLT ledger where transactions clear atomically in seconds rather than days.",
+        "Local Currency Direct Pairs: Facilitates direct foreign exchange settlement between non-dollar currency pairs, mitigating reliance on intermediate vehicle currencies.",
+        "Regulatory Compliance by Design: Embeds automated jurisdictional sanctions screening and AML transaction monitoring directly within smart contracts at the protocol level."
       ]
     },
     {
       "type": "h2",
-      "text": "3. دروس فيديو متقدمة: أموال البنك المركزي والسيولة والدورات الاقتصادية"
+      "text": "1. التصنيفات المعمارية: العملات الرقمية للبنوك المركزية بالجملة مقابل التجزئة"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "كيف تعمل الآلات الاقتصادية وسيولة البنك المركزي ودورات الائتمان",
-      "caption": "دروس راي داليو الرئيسية حول البنوك المركزية وإنشاء الديون السيادية وسرعة الأموال ودورات الائتمان الاقتصادية."
+      "title": "How Economic Machines Work, Central Bank Liquidity & Credit Cycles",
+      "caption": "Ray Dalio's masterclass on central banking, sovereign debt creation, money velocity, and economic credit cycles."
     },
     {
       "type": "h2",
-      "text": "4. هندسة الخصوصية: إثباتات المعرفة الصفرية وإخفاء الهوية المتدرج"
+      "text": "1. التصنيفات المعمارية: العملات الرقمية للبنوك المركزية بالجملة مقابل التجزئة"
     },
     {
       "type": "p",
-      "text": "إن القلق العام الرئيسي المحيط بالعملات الرقمية للبنوك المركزية بالتجزئة هو تآكل الخصوصية المالية. على عكس الأوراق النقدية المادية، يمكن للمعاملات الرقمية من الناحية النظرية أن تترك بصمة مراقبة لا تمحى."
+      "text": "يخضع الهيكل النقدي الدولي لأعمق عملية إعادة تنظيم هيكلية منذ مؤتمر بريتون وودز عام 1944. لعقود من الزمن، اعتمدت تسوية المدفوعات عبر الحدود على شبكة البنوك المراسلة القديمة: شبكة غير فعالة من رسائل سويفت المجزأة، ومناطق زمنية متباينة، وحسابات نوسترو/فوسترو الثنائية التي تفرض مخاطر تسوية الأطراف المقابلة لعدة أيام واحتكاكًا كبيرًا في المعاملات."
     },
     {
       "type": "p",
-      "text": "تعالج المعايير المعمارية الحديثة هذا الأمر من خلال إثباتات المعرفة الصفرية المشفرة (zk-SNARKs) وبروتوكولات إخفاء الهوية المتدرجة. يتم إخفاء هوية المعاملات المحلية منخفضة القيمة (أقل من 500 يورو أو 1000 دولار أمريكي) بشكل كامل، والتحقق من صحة الرمز وكفاية الرصيد رياضيًا دون الكشف عن هوية المستخدم لدفاتر البنك المركزي أو الوسطاء التجاريين."
+      "text": "يخضع الهيكل النقدي الدولي لأعمق عملية إعادة تنظيم هيكلية منذ مؤتمر بريتون وودز عام 1944. لعقود من الزمن، اعتمدت تسوية المدفوعات عبر الحدود على شبكة البنوك المراسلة القديمة: شبكة غير فعالة من رسائل سويفت المجزأة، ومناطق زمنية متباينة، وحسابات نوسترو/فوسترو الثنائية التي تفرض مخاطر تسوية الأطراف المقابلة لعدة أيام واحتكاكًا كبيرًا في المعاملات."
     },
     {
       "type": "h2",
-      "text": "5. الوجبات السريعة المتعلقة بالاقتصاد الكلي والخدمات المصرفية المركزية"
+      "text": "1. التصنيفات المعمارية: العملات الرقمية للبنوك المركزية بالجملة مقابل التجزئة"
     },
     {
       "type": "ul",
       "items": [
-        "الحدود القصوى للاحتفاظ ومستويات الفائدة الصفرية: فرض حدود قصوى للاحتفاظ الفردي على محافظ التجزئة لمنع استنزاف الودائع النظامية المفاجئ من البنوك التجارية أثناء تشغيل البنوك.",
-        "وظيفة مزدوجة دون اتصال بالإنترنت: قم بتضمين عناصر آمنة للأجهزة (eSE) في الهواتف الذكية والبطاقات الذكية لتمكين الدفع من نظير إلى نظير دون اتصال بالإنترنت أثناء انقطاع شبكة الطاقة أو الشبكة.",
-        "بوابات التشغيل البيني: التأكد من أن دفاتر البنوك المركزية السيادية تعرض واجهات برمجة التطبيقات القياسية ISO 20022 لربط أنظمة RTGS القديمة مع البنية التحتية المالية الرمزية من الجيل التالي."
+        "Holding Caps & Zero-Interest Tiers: Impose maximum individual holding limits on retail wallets to prevent sudden systemic deposit drains from commercial banks during bank runs.",
+        "Dual Offline Functionality: Embed hardware secure elements (eSE) in smartphones and smartcards to enable offline peer-to-peer payments during power grid or network outages.",
+        "Interoperability Gateways: Ensure sovereign CBDC ledgers expose standardized ISO 20022 APIs to bridge legacy RTGS systems with next-generation tokenized financial infrastructure."
       ]
     }
   ],
-  "sourceHash": "b00bf0fc370f2680894bb4b9c53540eff0dcdbdc"
+  "sourceHash": "090854e2bfe104a37b9e6801f28f10536641ba09"
 }

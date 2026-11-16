@@ -11,8 +11,8 @@
     "parametric-design",
     "sustainability"
   ],
-  "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "Skulpturale Akustikholzwandpaneele und architektonische Schallwände in einem modernen Philharmonie-Auditorium",
+  "image": "https://images.unsplash.com/photo-1541888946425-d0fbb186f5f7?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Curving parametric glued-laminated timber beams forming an undulating acoustic ceiling pavilion",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Kernpunkte"
+      "text": "Rückgewinnung von taktilem Holz in monumentaler Architektur"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Architectural mass timber building frame showcasing interlocking cross-laminated timber joints",
+      "caption": "Cross-laminated timber (CLT): carbon-sequestering structural floor plates engineered to replace structural concrete."
     },
     {
       "type": "ul",
       "items": [
-        "Biophile Kohlenstoffbindung: Nachhaltig geerntetes Brettsperrholz (CLT) bindet atmosphärischen Kohlenstoff in dauerhaften städtischen Strukturhüllen.",
-        "Algorithmische Tischlerei: CNC-gefräste, ineinandergreifende Zapfen- und Zapfenverbindungen aus Holz machen giftige Klebstoffe und kohlenstoffintensive Stahlhalterungen überflüssig.",
-        "Resonanzoberflächengeometrie: Parametrisch gewellte Holzwandfacetten zerstreuen spiegelnde Schallreflexionen und erzeugen eine warme, symphonische Akustik.",
-        "Thermische Massenleistung: Schwere Massivholzplatten bieten außergewöhnliche Dämmeigenschaften und dämpfen niederfrequenten Stadtlärm von außen."
+        "Biophilic Carbon Sequestration: Sustainably harvested cross-laminated timber (CLT) traps atmospheric carbon within permanent civic structural envelopes.",
+        "Algorithmic Joinery: CNC-milled interlocking timber mortise-and-tenon joints eliminate toxic adhesives and carbon-intensive steel brackets.",
+        "Resonant Surface Geometry: Parametrically undulating wooden wall facets disperse specular sonic reflections, cultivating warm symphonic acoustics.",
+        "Thermal Mass Performance: Heavy mass timber panels deliver exceptional insulation properties, damping exterior low-frequency urban noise."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Elena Rostova, Monographien in Structural Elegance"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Computer-controlled robotic timber joinery cutting complex mathematical double-curved beams",
+      "caption": "Parametric optimization: algorithmically aligning timber grain fiber geometry to maximize load-bearing and acoustic diffusion."
+    },
+    {
       "type": "h2",
-      "text": "Computational Acoustic Diffusion in Performance Spaces"
+      "text": "Rückgewinnung von taktilem Holz in monumentaler Architektur"
     },
     {
       "type": "p",
-      "text": "In zeitgenössischen Konzertsälen werden Holzoberflächen mit mathematischen quadratischen Restmustern berechnet. Durch gestaffelte Tiefenprofile über mikroskopische und makroskopische Skalen verteilt die Holzschale hohe und mittlere Schallwellen gleichmäßig über die Zuschauerränge und eliminiert Flatterechos, ohne die nachhallende Präsenz zu dämpfen."
+      "text": "Über ein Jahrhundert lang stützte sich modernistisches Monumentaldesign fast ausschließlich auf Stahlbewehrung und gegossenen Stahlbeton. Heute leitet die Konvergenz von rechnergestützter parametrischer Modellierung, mehrachsigem Roboterfräsen und massiver Holzbautechnik eine neue architektonische Epoche ein: kohlenstoffnegative öffentliche Zufluchtsorte, in denen materielle Wärme und akustische Präzision zusammenlaufen."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "Architekturakustik und Resonanzphysik",
-      "caption": "Untersuchung der Schallresonanz, Wellenausbreitung und der Physik von Konzertsaalgeometrien."
+      "title": "Architectural Acoustics and Resonance Physics",
+      "caption": "Investigation into sonic resonance, wave propagation, and the physics of concert hall geometries.",
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
     },
     {
       "type": "h2",
-      "text": "Das lebendige Erbe von Massivholz"
+      "text": "Rückgewinnung von taktilem Holz in monumentaler Architektur"
     },
     {
       "type": "p",
-      "text": "Der Gang durch ein parametrisches Atrium aus Holz regt alle menschlichen Sinne an: der taktile Duft von Zedernholz, die subtile Maserung von Fichtenholz und die tiefe akustische Ruhe eines Raums, der so gestaltet ist, dass er den menschlichen Maßstab und die Grenzen des Planeten respektiert."
+      "text": "Über ein Jahrhundert lang stützte sich modernistisches Monumentaldesign fast ausschließlich auf Stahlbewehrung und gegossenen Stahlbeton. Heute leitet die Konvergenz von rechnergestützter parametrischer Modellierung, mehrachsigem Roboterfräsen und massiver Holzbautechnik eine neue architektonische Epoche ein: kohlenstoffnegative öffentliche Zufluchtsorte, in denen materielle Wärme und akustische Präzision zusammenlaufen."
     }
   ],
-  "sourceHash": "32ece7d48f363c4823201c41e9c7b9cf30b6223e"
+  "sourceHash": "a0660de616111cdfb991d9905ad42805ce0317b1"
 }

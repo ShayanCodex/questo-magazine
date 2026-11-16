@@ -13,7 +13,7 @@
     "engineering"
   ],
   "image": "/images/articles/llm-training-code.jpg",
-  "imageAlt": "ڈارک IDE ڈسپلے پر ہائی پرفارمنس پائتھن ڈیپ لرننگ ٹریننگ لوپ کوڈ",
+  "imageAlt": "High performance Python deep learning training loop code on dark IDE display",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "ایک LLM کا لائف سائیکل صاف طور پر چار ترتیب وار نظاموں میں تقسیم ہوتا ہے: کارپس کیوریشن اور بائٹ پیئر انکوڈنگ ٹوکنائزیشن، پیٹا بائٹ اسکیل پر خود زیر نگرانی پہلے سے تربیت، ہدایات کی تعمیل کے لیے نگرانی شدہ فائن ٹیوننگ (SFT)، اور انسانی آراء کے ساتھ انسانی آراء کے ساتھ آر ایل ایف سے کمک سیکھنا۔"
+      "text": "پہلے اصولوں سے فرنٹیئر جنریٹو فاؤنڈیشن ماڈل بنانا لاگو عددی اصلاح، تقسیم شدہ نظام انجینئرنگ، اور شماریاتی زبان کی ماڈلنگ میں ایک مشق ہے۔ اس کے بنیادی طور پر، ایک تخلیقی پہلے سے تربیت یافتہ ٹرانسفارمر انسانی معنوں میں الفاظ کو نہیں سمجھتا ہے۔ یہ کھربوں ٹریننگ بائٹس میں آٹوریگریسو کراس اینٹروپی نقصان کو کم سے کم کرکے مجرد الفاظ کے ٹوکنز پر ایک اعلی جہتی مشترکہ امکانی تقسیم کا تخمینہ لگاتا ہے۔"
     },
     {
       "type": "h2",
       "text": "1. ٹوکنائزیشن: بائٹ پیئر انکوڈنگ اور ووکیبلری کمپریشن"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1633356122102-b61ac6cbca0d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Training LLMs from Scratch."
+    },
+    {
       "type": "p",
-      "text": "خام قدرتی زبان پر براہ راست لکیری میٹرکس آپریشنز کے ذریعے کارروائی نہیں کی جا سکتی ہے۔ اسے سب سے پہلے بائٹ پیئر انکوڈنگ (BPE) کے ذریعے انٹیجر ٹوکن شناخت کنندگان میں الگ کیا جانا چاہیے:"
+      "text": "پہلے اصولوں سے فرنٹیئر جنریٹو فاؤنڈیشن ماڈل بنانا لاگو عددی اصلاح، تقسیم شدہ نظام انجینئرنگ، اور شماریاتی زبان کی ماڈلنگ میں ایک مشق ہے۔ اس کے بنیادی طور پر، ایک تخلیقی پہلے سے تربیت یافتہ ٹرانسفارمر انسانی معنوں میں الفاظ کو نہیں سمجھتا ہے۔ یہ کھربوں ٹریننگ بائٹس میں آٹوریگریسو کراس اینٹروپی نقصان کو کم سے کم کرکے مجرد الفاظ کے ٹوکنز پر ایک اعلی جہتی مشترکہ امکانی تقسیم کا تخمینہ لگاتا ہے۔"
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "BPE Iterative Pair Merge Formulation:\nVocabulary V = Initial byte symbols (0..255)\nIterative rule: Find pair (c_i, c_j) with argmax frequency(c_i, c_j) in corpus\nMerge: New symbol c_new = c_i ⊕ c_j\nUpdate: V ← V ∪ {c_new}\nRepeat until |V| = target_vocab_size (typically 32,000 to 128,000)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Training LLMs from Scratch."
+    },
+    {
       "type": "p",
-      "text": "زیادہ سے زیادہ الفاظ کے سائز کو نشانہ بنانے کے لیے انجینئرنگ ٹریڈ آف نیویگیٹ کرنے کی ضرورت ہوتی ہے: بڑی ذخیرہ الفاظ ترتیب کی لمبائی اور کم قیاس میں تاخیر کو سکیڑتی ہیں، لیکن ان پٹ ایمبیڈنگ میٹرکس اور فائنل آؤٹ پٹ ان ایمبیڈنگ پروجیکشن لیئر کے میموری فوٹ پرنٹ کو بڑھاتی ہیں۔"
+      "text": "پہلے اصولوں سے فرنٹیئر جنریٹو فاؤنڈیشن ماڈل بنانا لاگو عددی اصلاح، تقسیم شدہ نظام انجینئرنگ، اور شماریاتی زبان کی ماڈلنگ میں ایک مشق ہے۔ اس کے بنیادی طور پر، ایک تخلیقی پہلے سے تربیت یافتہ ٹرانسفارمر انسانی معنوں میں الفاظ کو نہیں سمجھتا ہے۔ یہ کھربوں ٹریننگ بائٹس میں آٹوریگریسو کراس اینٹروپی نقصان کو کم سے کم کرکے مجرد الفاظ کے ٹوکنز پر ایک اعلی جہتی مشترکہ امکانی تقسیم کا تخمینہ لگاتا ہے۔"
     },
     {
       "type": "quote",
@@ -47,55 +59,55 @@
     },
     {
       "type": "h2",
-      "text": "2. پری ٹریننگ ڈائنامکس اور ڈسٹری بیوٹڈ 3D متوازی"
+      "text": "1. ٹوکنائزیشن: بائٹ پیئر انکوڈنگ اور ووکیبلری کمپریشن"
     },
     {
       "type": "p",
-      "text": "سیکڑوں گیگا بائٹس کے GPU VRAM میں 70B پیرامیٹر ماڈل کی تربیت کسی بھی سنگل ایکسلر کی صلاحیت سے زیادہ ہے۔ جدید کلسٹرز 3D متوازی آرکیسٹریٹ کرتے ہیں:"
+      "text": "پہلے اصولوں سے فرنٹیئر جنریٹو فاؤنڈیشن ماڈل بنانا لاگو عددی اصلاح، تقسیم شدہ نظام انجینئرنگ، اور شماریاتی زبان کی ماڈلنگ میں ایک مشق ہے۔ اس کے بنیادی طور پر، ایک تخلیقی پہلے سے تربیت یافتہ ٹرانسفارمر انسانی معنوں میں الفاظ کو نہیں سمجھتا ہے۔ یہ کھربوں ٹریننگ بائٹس میں آٹوریگریسو کراس اینٹروپی نقصان کو کم سے کم کرکے مجرد الفاظ کے ٹوکنز پر ایک اعلی جہتی مشترکہ امکانی تقسیم کا تخمینہ لگاتا ہے۔"
     },
     {
       "type": "ul",
       "items": [
-        "Tensor Parallelism (Megatron-LM): ایک ہی NVLink ڈومین کے اندر اندر GPUs میں انفرادی وزن کے میٹرکس (جیسے سوال، کلید، اور فیڈ فارورڈ پروجیکشن) کو تقسیم کرتا ہے۔",
-        "پائپ لائن کی ہم آہنگی: ٹرانسفارمر کی تہوں کو الگ الگ سرور نوڈس میں ترتیب سے کاٹتا ہے، پوشیدہ ایکٹیویشن ریاستوں کو آگے اور پیچھے سے گزرتا ہے۔",
-        "ZeRO-3 کے ساتھ ڈیٹا کی ہم آہنگی: تقسیم شدہ کلسٹر میں شارڈز آپٹیمائزر اسٹیٹس، گریڈیئنٹس، اور ماڈل پیرامیٹرز، بے کار میموری ڈپلیکیشن کو ختم کرتے ہوئے۔",
-        "FlashAttention-3 انٹیگریشن: سافٹ میکس اسکیلنگ اور میٹرکس ضرب کو براہ راست SRAM رجسٹروں میں فیوز کرکے HBM میں چوکور N×N توجہ کے میٹرکس کو ختم کرتا ہے۔"
+        "Tensor Parallelism (Megatron-LM): Partitions individual weight matrices (such as query, key, and feed-forward projections) across GPUs within the same NVLink domain.",
+        "Pipeline Parallelism: Slices transformer layers sequentially across distinct server nodes, passing hidden activation states forward and backward.",
+        "Data Parallelism with ZeRO-3: Shards optimizer states, gradients, and model parameters across the distributed cluster, eliminating redundant memory duplication.",
+        "FlashAttention-3 Integration: Eliminates materialization of quadratic N×N attention matrices in HBM by fusing softmax scaling and matrix multiplication directly into SRAM registers."
       ]
     },
     {
       "type": "h2",
-      "text": "3. ویڈیو ماسٹر کلاس: شروع سے جی پی ٹی اور ٹرانسفارمر ماڈلز بنانا"
+      "text": "1. ٹوکنائزیشن: بائٹ پیئر انکوڈنگ اور ووکیبلری کمپریشن"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "شروع سے تعمیر اور تربیت جنریٹو پری ٹرینڈ ٹرانسفارمرز",
-      "caption": "کوڈ سے آٹوریگریسو ٹرانسفارمر لینگویج ماڈلز کی تعمیر، تالیف اور تربیت کے ریاضیاتی میکانکس پر اندریج کارپاتھی کی ماسٹر کلاس۔"
+      "title": "Building and Training Generative Pretrained Transformers from Scratch",
+      "caption": "Andrej Karpathy's masterclass on the mathematical mechanics of building, compiling, and training autoregressive transformer language models from code."
     },
     {
       "type": "h2",
-      "text": "4. الائنمنٹ: زیر نگرانی فائن ٹیوننگ اور براہ راست ترجیحی اصلاح (DPO)"
+      "text": "1. ٹوکنائزیشن: بائٹ پیئر انکوڈنگ اور ووکیبلری کمپریشن"
     },
     {
       "type": "p",
-      "text": "ایک خام پہلے سے تربیت یافتہ بیس ماڈل محض ایک غیر روکا ہوا دستاویز مکمل کرنے والا ہے۔ اسے ایک موثر اسسٹنٹ میں تبدیل کرنے کے لیے، انجینئرز ماسکڈ ان پٹ پرامپٹس کے ساتھ کراس اینٹروپی نقصان کا استعمال کرتے ہوئے کیوریٹڈ ملٹی ٹرن بات چیت کی نقلوں پر ماڈل کو ٹھیک بناتے ہیں۔"
+      "text": "پہلے اصولوں سے فرنٹیئر جنریٹو فاؤنڈیشن ماڈل بنانا لاگو عددی اصلاح، تقسیم شدہ نظام انجینئرنگ، اور شماریاتی زبان کی ماڈلنگ میں ایک مشق ہے۔ اس کے بنیادی طور پر، ایک تخلیقی پہلے سے تربیت یافتہ ٹرانسفارمر انسانی معنوں میں الفاظ کو نہیں سمجھتا ہے۔ یہ کھربوں ٹریننگ بائٹس میں آٹوریگریسو کراس اینٹروپی نقصان کو کم سے کم کرکے مجرد الفاظ کے ٹوکنز پر ایک اعلی جہتی مشترکہ امکانی تقسیم کا تخمینہ لگاتا ہے۔"
     },
     {
       "type": "p",
-      "text": "SFT کے بعد، ترجیحی صف بندی ماڈل کو مددگار، سچائی اور بے ضرر تکمیلات کی طرف لے جاتی ہے۔ جبکہ میراثی پائپ لائنز PPO کمک سیکھنے کا استعمال کرتے ہوئے علیحدہ انعامی ماڈلز کی تربیت پر انحصار کرتی ہیں، جدید نظام تیزی سے براہ راست ترجیحی اصلاح (DPO) کو متعین کرتے ہیں، جو پالیسی ماڈل کو براہ راست جوڑی کی انسانی ترجیحی درجہ بندی پر بہتر بنانے کے لیے ایک بالکل بند شکل کا مقصد حاصل کرتا ہے۔"
+      "text": "پہلے اصولوں سے فرنٹیئر جنریٹو فاؤنڈیشن ماڈل بنانا لاگو عددی اصلاح، تقسیم شدہ نظام انجینئرنگ، اور شماریاتی زبان کی ماڈلنگ میں ایک مشق ہے۔ اس کے بنیادی طور پر، ایک تخلیقی پہلے سے تربیت یافتہ ٹرانسفارمر انسانی معنوں میں الفاظ کو نہیں سمجھتا ہے۔ یہ کھربوں ٹریننگ بائٹس میں آٹوریگریسو کراس اینٹروپی نقصان کو کم سے کم کرکے مجرد الفاظ کے ٹوکنز پر ایک اعلی جہتی مشترکہ امکانی تقسیم کا تخمینہ لگاتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "5. مشین لرننگ سسٹمز ٹیک ویز"
+      "text": "1. ٹوکنائزیشن: بائٹ پیئر انکوڈنگ اور ووکیبلری کمپریشن"
     },
     {
       "type": "ul",
       "items": [
-        "ڈیٹا کوالٹی ڈومیننس: اعلیٰ معیار کے ڈپلیکیٹڈ مصنوعی استدلال والے ڈیٹاسیٹس خام سکریپڈ ویب ٹیکسٹ کو ٹوکن کی کارکردگی میں وسعت کے حکم سے بہتر کارکردگی کا مظاہرہ کرتے ہیں۔",
-        "صحت سے متعلق فارمیٹس: FP8 اور BF16 مخلوط صحت سے متعلق تربیتی معمولات کو متحرک نقصان کی پیمائش کے ساتھ استعمال کریں تاکہ انڈر فلو کو روکتے ہوئے ٹینسر تھرو پٹ کو ڈبل کریں۔",
-        "سیکھنے کی شرح اینیلنگ: ابتدائی اصلاحی دور کے دوران تدریجی انحراف کو روکنے کے لیے وارم اپ پیریڈز کے ساتھ کوزائن ڈیکی شیڈولز کا استعمال کریں۔"
+        "Data Quality Dominance: High-quality deduplicated synthetic reasoning datasets outperform raw scraped web text by an order of magnitude in token efficiency.",
+        "Precision Formats: Utilize FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
+        "Learning Rate Annealing: Employ cosine decay schedules with warm-up periods to prevent gradient divergence during initial optimization epochs."
       ]
     }
   ],
-  "sourceHash": "fbab468d8d6535407877a07d02b1af60859f970d"
+  "sourceHash": "3ec3e1c0f5c4ed8abb6adbe171224876d9e70ab2"
 }

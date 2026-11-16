@@ -29,6 +29,12 @@
       "text": "Today, a quiet technological revolution is dismantling this barrier. High-throughput WebSocket protocols, WebAssembly vector rendering pipelines, and open institutional exchange dispatches make it possible to evaluate multi-timeframe charts directly within standard browser runtimes without expensive third-party software."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Algorithmic Market Intelligence and Open Financial Data."
+    },
+    {
       "type": "code",
       "lang": "ts",
       "code": "interface MarketTickPayload {\n  symbol: string;\n  timestamp: number;\n  price: number;\n  volume: number;\n  bidAskSpread: [number, number];\n}"
@@ -37,6 +43,12 @@
       "type": "quote",
       "text": "Market transparency is the ultimate democratizing force. When institutional charting tools run directly on the client's GPU, analytical rigor belongs to everyone.",
       "cite": "Questo Financial Technologies Dispatch"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Algorithmic Market Intelligence and Open Financial Data."
     },
     {
       "type": "h3",

@@ -13,7 +13,7 @@
     "arbitrage"
   ],
   "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Télémétrie financière algorithmique affichant les courbes de liquidité des teneurs de marché automatisés et l'exécution des transactions",
+  "imageAlt": "Algorithmic financial telemetry displaying automated market maker liquidity curves and trade execution",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Alors que le modèle fondamental à produit constant popularisé par Uniswap v2 ($x \\cdot y = k$) offrait une robustesse à toute épreuve, il souffrait d'une inefficacité catastrophique du capital : le capital était réparti uniformément sur l'ensemble de la gamme de prix de zéro à l'infini, ce qui signifie que moins de 1 % du capital mis en commun était actif aux prix actuels du marché. La transition vers une liquidité concentrée dans Uniswap v3 a résolu cette contrainte, transformant la fourniture de liquidité d'une détention passive en une gestion de portefeuille géométrique active."
+      "text": "L'invention du teneur de marché automatisé (AMM) représente l'une des innovations structurelles les plus radicales dans les microstructures des marchés financiers. Dans la finance centralisée traditionnelle, la tenue de marché repose sur des carnets d'ordres limités centralisés (CLOB) gérés par des sociétés de tenue de marché à haute fréquence qui publient en permanence des offres et des demandes. Dans les blockchains décentralisées peer-to-peer où la latence des blocs et les coûts du gaz rendent l'annulation des ordres à haute fréquence d'un coût prohibitif, des formules mathématiques déterministes – les teneurs de marché à fonction constante (CFMM) – remplacent les carnets d'ordres par des pools de liquidités passifs et algorithmiques."
     },
     {
       "type": "h2",
       "text": "1. Géométrie de liquidité concentrée et réserves virtuelles"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concentrated Liquidity in Market Makers - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Concentrated Liquidity in Market Makers."
+    },
+    {
       "type": "p",
-      "text": "Dans les AMM à liquidité concentrée, les fournisseurs de liquidité (LP) n'attribuent pas de capital sur tous les prix. Au lieu de cela, ils concentrent leurs jetons dans un intervalle de prix délimité $[p_a, p_b]$. À l'intérieur de cette plage, le pool simule une courbe de produit constante avec des « réserves virtuelles » agrandies :"
+      "text": "L'invention du teneur de marché automatisé (AMM) représente l'une des innovations structurelles les plus radicales dans les microstructures des marchés financiers. Dans la finance centralisée traditionnelle, la tenue de marché repose sur des carnets d'ordres limités centralisés (CLOB) gérés par des sociétés de tenue de marché à haute fréquence qui publient en permanence des offres et des demandes. Dans les blockchains décentralisées peer-to-peer où la latence des blocs et les coûts du gaz rendent l'annulation des ordres à haute fréquence d'un coût prohibitif, des formules mathématiques déterministes – les teneurs de marché à fonction constante (CFMM) – remplacent les carnets d'ordres par des pools de liquidités passifs et algorithmiques."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Virtual Invariant: (x + L / √p_b) · (y + L · √p_a) = L²\n\nWhere:\n- L is the liquidity parameter (geometric mean of reserves)\n- p_a is the lower price boundary\n- p_b is the upper price boundary\n- x, y are actual deposited token quantities"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concentrated Liquidity in Market Makers - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Concentrated Liquidity in Market Makers."
+    },
+    {
       "type": "p",
-      "text": "En limitant le capital dans une bande de prix étroite autour du prix au comptant, un LP peut atteindre jusqu'à 4 000 fois l'efficacité du capital d'un pool v2 sans contrainte. Un volume de transactions identique génère des frais exponentiellement plus élevés par dollar déposé, réduisant considérablement les écarts acheteur-vendeur pour les traders institutionnels."
+      "text": "L'invention du teneur de marché automatisé (AMM) représente l'une des innovations structurelles les plus radicales dans les microstructures des marchés financiers. Dans la finance centralisée traditionnelle, la tenue de marché repose sur des carnets d'ordres limités centralisés (CLOB) gérés par des sociétés de tenue de marché à haute fréquence qui publient en permanence des offres et des demandes. Dans les blockchains décentralisées peer-to-peer où la latence des blocs et les coûts du gaz rendent l'annulation des ordres à haute fréquence d'un coût prohibitif, des formules mathématiques déterministes – les teneurs de marché à fonction constante (CFMM) – remplacent les carnets d'ordres par des pools de liquidités passifs et algorithmiques."
     },
     {
       "type": "quote",
@@ -47,41 +59,41 @@
     },
     {
       "type": "h2",
-      "text": "2. Déconstruire la perte impermanente et le cadre LVR"
+      "text": "1. Géométrie de liquidité concentrée et réserves virtuelles"
     },
     {
       "type": "p",
-      "text": "Le risque économique central assumé par les fournisseurs de liquidité est la perte impermanente (IL), plus précisément désignée sous le nom de perte de divergence. Chaque fois que le prix du marché externe s'éloigne du ratio de dépôt initial, la courbe de prix déterministe AMM oblige le LP à vendre l'actif qui s'apprécie et à acheter l'actif qui se déprécie."
+      "text": "L'invention du teneur de marché automatisé (AMM) représente l'une des innovations structurelles les plus radicales dans les microstructures des marchés financiers. Dans la finance centralisée traditionnelle, la tenue de marché repose sur des carnets d'ordres limités centralisés (CLOB) gérés par des sociétés de tenue de marché à haute fréquence qui publient en permanence des offres et des demandes. Dans les blockchains décentralisées peer-to-peer où la latence des blocs et les coûts du gaz rendent l'annulation des ordres à haute fréquence d'un coût prohibitif, des formules mathématiques déterministes – les teneurs de marché à fonction constante (CFMM) – remplacent les carnets d'ordres par des pools de liquidités passifs et algorithmiques."
     },
     {
       "type": "p",
-      "text": "Des recherches universitaires récentes sur la microstructure du marché (Milionis, Moallemi, Roughgarden) formalisent ce coût sous le nom de Loss-Versus-Rebalancing (LVR). Contrairement aux pertes éphémères traditionnelles, qui s'annulent théoriquement si le prix revient à son point de départ, LVR capture la rente économique persistante et non négative extraite par les arbitragistes de latence qui négocient contre des cotations AMM périmées sur des échanges centralisés externes :"
+      "text": "L'invention du teneur de marché automatisé (AMM) représente l'une des innovations structurelles les plus radicales dans les microstructures des marchés financiers. Dans la finance centralisée traditionnelle, la tenue de marché repose sur des carnets d'ordres limités centralisés (CLOB) gérés par des sociétés de tenue de marché à haute fréquence qui publient en permanence des offres et des demandes. Dans les blockchains décentralisées peer-to-peer où la latence des blocs et les coûts du gaz rendent l'annulation des ordres à haute fréquence d'un coût prohibitif, des formules mathématiques déterministes – les teneurs de marché à fonction constante (CFMM) – remplacent les carnets d'ordres par des pools de liquidités passifs et algorithmiques."
     },
     {
       "type": "ul",
       "items": [
-        "Flux d'arbitrage asymétrique : les mouvements de prix du marché externe permettent au flux d'ordres d'arbitrage toxiques d'éliminer les ticks obsolètes de la chaîne avant que les LP passifs puissent se rééquilibrer.",
-        "Risque hors limites : lorsque le prix au comptant dépasse $[p_a, p_b]$, le LP est converti à 100 % en actif perdant, mettant fin à toute accumulation de frais jusqu'à son rééquilibrage.",
-        "Seuil de rentabilité frais/volatilité : pour qu'une position LP reste nettement rentable, les rendements des frais doivent dépasser l'écart de variance dicté par la volatilité du rendement des actifs ($\\frac{1}{8}\\sigma^2$)."
+        "Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs can rebalance.",
+        "Range Out-of-Bounds Risk: When spot price breaks outside $[p_a, p_b]$, the LP is 100% converted into the losing asset, terminating all fee accrual until rebalanced.",
+        "Fee-to-Volatility Break-Even: For an LP position to remain net-profitable, fee yields must exceed the variance drag dictated by asset return volatility ($\\frac{1}{8}\\sigma^2$)."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Masterclass technique : Mathématiques de la liquidité concentrée"
+      "text": "1. Géométrie de liquidité concentrée et réserves virtuelles"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/cizLhxSKrAc",
-      "title": "Teneurs de marché automatisés et mécanique de la liquidité concentrée",
-      "caption": "Examen visuel rigoureux des réserves virtuelles, des limites de ticks, des courbes de pertes éphémères et des gains d'efficacité du capital."
+      "title": "Automated Market Makers & Concentrated Liquidity Mechanics",
+      "caption": "Rigorous visual walkthrough of virtual reserves, tick boundaries, impermanent loss curves, and capital efficiency gains."
     },
     {
       "type": "h2",
-      "text": "4. Discrétisation des ticks et niveaux de frais dynamiques"
+      "text": "1. Géométrie de liquidité concentrée et réserves virtuelles"
     },
     {
       "type": "p",
-      "text": "Pour éviter l'imprécision des virgules flottantes dans les machines virtuelles en chaîne, les prix sont discrétisés en ticks logarithmiques indexés par des entiers $i$ :"
+      "text": "L'invention du teneur de marché automatisé (AMM) représente l'une des innovations structurelles les plus radicales dans les microstructures des marchés financiers. Dans la finance centralisée traditionnelle, la tenue de marché repose sur des carnets d'ordres limités centralisés (CLOB) gérés par des sociétés de tenue de marché à haute fréquence qui publient en permanence des offres et des demandes. Dans les blockchains décentralisées peer-to-peer où la latence des blocs et les coûts du gaz rendent l'annulation des ordres à haute fréquence d'un coût prohibitif, des formules mathématiques déterministes – les teneurs de marché à fonction constante (CFMM) – remplacent les carnets d'ordres par des pools de liquidités passifs et algorithmiques."
     },
     {
       "type": "code",
@@ -90,20 +102,20 @@
     },
     {
       "type": "p",
-      "text": "Lorsqu'un ordre de marché important consomme toute la liquidité disponible à l'intérieur d'un tick, le protocole met à jour le prix global, franchit la limite du tick et active le prochain vecteur de liquidité discret avec un minimum de gaz."
+      "text": "L'invention du teneur de marché automatisé (AMM) représente l'une des innovations structurelles les plus radicales dans les microstructures des marchés financiers. Dans la finance centralisée traditionnelle, la tenue de marché repose sur des carnets d'ordres limités centralisés (CLOB) gérés par des sociétés de tenue de marché à haute fréquence qui publient en permanence des offres et des demandes. Dans les blockchains décentralisées peer-to-peer où la latence des blocs et les coûts du gaz rendent l'annulation des ordres à haute fréquence d'un coût prohibitif, des formules mathématiques déterministes – les teneurs de marché à fonction constante (CFMM) – remplacent les carnets d'ordres par des pools de liquidités passifs et algorithmiques."
     },
     {
       "type": "h2",
-      "text": "5. Points stratégiques à retenir pour les fournisseurs de liquidité quantitative"
+      "text": "1. Géométrie de liquidité concentrée et réserves virtuelles"
     },
     {
       "type": "ul",
       "items": [
-        "Les actifs corrélés excellent dans des bandes étroites : les paires de pièces stables (par exemple, USDT/USDC) peuvent concentrer en toute sécurité la liquidité dans des bandes de ± 0,1 %, produisant des APY astronomiques avec un risque directionnel minimal.",
-        "La couverture dynamique élimine le delta : les teneurs de marché sophistiqués compensent le risque gamma directionnel en vendant à découvert les contrats à terme perpétuels sous-jacents sur des sites centralisés tout en capturant les frais LP sur la chaîne.",
-        "Gérer l'amortissement du gaz : un rééquilibrage fréquent des ticks sur les couches de règlement à frais élevés peut rapidement éroder les frais LP accumulés ; déployer des coffres-forts automatisés de gestion des liquidités."
+        "Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) can safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
+        "Dynamic Hedging Eliminates Delta: Sophisticated market makers offset directional gamma risk by shorting underlying perpetual futures on centralized venues while capturing LP fees on-chain.",
+        "Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers can rapidly erode accumulated LP fees; deploy automated liquidity management vaults."
       ]
     }
   ],
-  "sourceHash": "195ebfd00b0d0e7e1057d73a2bb8cdec23c6f235"
+  "sourceHash": "403e07c0446eb222b4c64a3ef64185919b743949"
 }

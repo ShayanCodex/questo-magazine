@@ -13,7 +13,7 @@
     "physics"
   ],
   "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Hochleistungs-Sportwagen-Chassis mit präzisionsgefertigten Aluminium-Querlenkern und Gewindefahrwerk-Dämpfungsbaugruppe.",
+  "imageAlt": "High-performance sports car chassis showing precision machined aluminum suspension control arms and coilover dampening assembly",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Die Multilink-Aufhängungsgeometrie entkoppelt kinematische Parameter, die in der Vergangenheit bei MacPherson-Federbein- und Starrachskonfigurationen beeinträchtigt waren. Durch die Verteilung der Radnabenposition auf fünf verschiedene räumliche Steuerverbindungen können Ingenieure unabhängig voneinander die sofortige Zentrumsverschiebung, die Rollzentrumshöhe, die dynamische Sturzwiederherstellung und die Spurnachgiebigkeitslenkung mit mathematischer Präzision programmieren."
+      "text": "Im Wettbewerbsmotorsport und im Hochleistungs-Automobilbau ist die Reifenhaftung die höchste physikalische Beschränkung, die die Kurvengeschwindigkeit begrenzt. Ein pneumatischer Rennreifen bietet nur dann eine maximale seitliche Haftung, wenn seine Profilaufstandsfläche auch bei extremen Kurvenkräften perfekt senkrecht zur Straßenebene ausgerichtet bleibt. Da jedoch die Zentrifugalbeschleunigung das Fahrgestell dazu zwingt, nach außen zu rollen, verlieren herkömmliche Aufhängungssysteme ihren negativen Sturz, wodurch der Reifen auf seine Außenschulter rollt und einen katastrophalen Haftungsverlust verursacht."
     },
     {
       "type": "h2",
       "text": "1. Kinematische Sofortzentren und Sturzwiederherstellungsverhältnisse"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Multilink Suspension Geometry - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Multilink Suspension Geometry."
+    },
+    {
       "type": "p",
-      "text": "Die räumliche Flugbahn des Radträgers beim Stoßen und Ausfedern wird durch das projizierte virtuelle Momentzentrum ($IC$) bestimmt, das durch den Schnittpunkt der oberen und unteren Steuerlenker in der vorderen und hinteren Ebene gebildet wird:"
+      "text": "Im Wettbewerbsmotorsport und im Hochleistungs-Automobilbau ist die Reifenhaftung die höchste physikalische Beschränkung, die die Kurvengeschwindigkeit begrenzt. Ein pneumatischer Rennreifen bietet nur dann eine maximale seitliche Haftung, wenn seine Profilaufstandsfläche auch bei extremen Kurvenkräften perfekt senkrecht zur Straßenebene ausgerichtet bleibt. Da jedoch die Zentrifugalbeschleunigung das Fahrgestell dazu zwingt, nach außen zu rollen, verlieren herkömmliche Aufhängungssysteme ihren negativen Sturz, wodurch der Reifen auf seine Außenschulter rollt und einen katastrophalen Haftungsverlust verursacht."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Dynamic Camber Angle Relative to Road:\nγ_road = γ_static + (dγ / dz · Δz) - θ_roll\n\nWhere:\n- γ_static: Static camber angle set at rest\n- dγ / dz: Camber recovery gradient per millimeter of vertical bump travel\n- Δz: Vertical wheel displacement in cornering bump\n- θ_roll: Chassis body roll angle in degrees\n\nCondition for Zero Dynamic Contact Patch Deflection:\n(dγ / dz · Δz) ≥ θ_roll"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1508215885891-dfb8a47597ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Multilink Suspension Geometry - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Multilink Suspension Geometry."
+    },
+    {
       "type": "p",
-      "text": "Durch Verkürzen des oberen Steuerlenkers relativ zum unteren Lenker und Abwinkeln seines inneren Drehpunkts nach unten erhält die Aufhängung einen progressiven negativen Sturz, wenn sie in den Stoßhub eingefedert wird ($d\\gamma / dz < 0$). Dieser Sturzgewinn gleicht das Wanken des gefederten Fahrwerks perfekt aus und sorgt so für eine flache Reifenaufstandsfläche während der gesamten Kurvenfahrt am Scheitelpunkt."
+      "text": "Im Wettbewerbsmotorsport und im Hochleistungs-Automobilbau ist die Reifenhaftung die höchste physikalische Beschränkung, die die Kurvengeschwindigkeit begrenzt. Ein pneumatischer Rennreifen bietet nur dann eine maximale seitliche Haftung, wenn seine Profilaufstandsfläche auch bei extremen Kurvenkräften perfekt senkrecht zur Straßenebene ausgerichtet bleibt. Da jedoch die Zentrifugalbeschleunigung das Fahrgestell dazu zwingt, nach außen zu rollen, verlieren herkömmliche Aufhängungssysteme ihren negativen Sturz, wodurch der Reifen auf seine Außenschulter rollt und einen katastrophalen Haftungsverlust verursacht."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Rollzentrumshöhenverschiebung und Auftriebskräfte"
+      "text": "1. Kinematische Sofortzentren und Sturzwiederherstellungsverhältnisse"
     },
     {
       "type": "p",
-      "text": "Das Fahrzeugrollzentrum ($RC$) ist der theoretische Punkt, um den der gefederte Körper bei Querbeschleunigung rollt. Seine Höhe relativ zur Grundebene bestimmt, wie seitliche Kräfte zwischen kinematischen Verbindungen und mechanischen Federn aufgeteilt werden."
+      "text": "Im Wettbewerbsmotorsport und im Hochleistungs-Automobilbau ist die Reifenhaftung die höchste physikalische Beschränkung, die die Kurvengeschwindigkeit begrenzt. Ein pneumatischer Rennreifen bietet nur dann eine maximale seitliche Haftung, wenn seine Profilaufstandsfläche auch bei extremen Kurvenkräften perfekt senkrecht zur Straßenebene ausgerichtet bleibt. Da jedoch die Zentrifugalbeschleunigung das Fahrgestell dazu zwingt, nach außen zu rollen, verlieren herkömmliche Aufhängungssysteme ihren negativen Sturz, wodurch der Reifen auf seine Außenschulter rollt und einen katastrophalen Haftungsverlust verursacht."
     },
     {
       "type": "ul",
       "items": [
-        "High Roll Center: Überträgt Kurvenkräfte sofort über Aufhängungsgestänge mit minimalem Wanken der Karosserie, erzeugt jedoch starke vertikale Vortriebskräfte, die die Spurbreite verringern.",
-        "Niedriges oder unter dem Boden liegendes Rollzentrum: Eliminiert Auftriebskräfte, erzeugt aber einen enormen Rollmomentarm ($h_{roll} = CG - RC$), der übermäßig steife Stabilisatoren erfordert, die die Reifennachgiebigkeit über Bordsteinkanten beeinträchtigen.",
-        "Dynamischer Migrationsbereich: Ein richtig abgestimmtes Fünf-Link-Design verhindert, dass das Rollzentrum seitlich um mehr als 20 mm über ±3 Grad der Chassis-Rolle wandert."
+        "High Roll Center: Transmits cornering forces instantaneously through suspension linkages with minimal body roll, but induces severe vertical jacking forces that narrow the track width.",
+        "Low or Sub-Ground Roll Center: Eliminates jacking forces, but creates an enormous roll moment arm ($h_{roll} = CG - RC$), demanding excessively stiff anti-roll bars that degrade tire compliance over kerbs.",
+        "Dynamic Migration Envelope: A properly tuned five-link design restricts the roll center from migrating laterally by more than 20mm across ±3 degrees of chassis roll."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video-Meisterkurs: Aufhängungsgeometrie, Lenkrollenradius und Kinematik"
+      "text": "1. Kinematische Sofortzentren und Sturzwiederherstellungsverhältnisse"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/SUDMEd1bMZI",
-      "title": "Lenkrollenradius, Aufhängungsgeometrie und kinematische Kontaktflächensteuerung",
-      "caption": "Technische Aufschlüsselung der Aufhängungsgeometrie, des Lenkrollenradius, der Achsschenkelbolzenneigung und des dynamischen Lenkgefühls."
+      "title": "Scrub Radius, Suspension Geometry & Kinematic Contact Patch Control",
+      "caption": "Engineering breakdown of suspension geometry, scrub radius, kingpin inclination, and dynamic steering feel."
     },
     {
       "type": "h2",
-      "text": "4. Elastokinematische Nachgiebigkeit beim Lenken unter seitlicher Last"
+      "text": "1. Kinematische Sofortzentren und Sturzwiederherstellungsverhältnisse"
     },
     {
       "type": "p",
-      "text": "In physischen Fahrzeugen bewegen sich Aufhängungsarme nicht über unendlich starre Kugelgelenke; Sie basieren auf Elastomerbuchsen oder Verbundlagern mit einer Nachgiebigkeit ungleich Null unter Last. Wenn ein Fahrzeug einer starken Querbeschleunigung ausgesetzt ist (1,5 g+$ bei Rennanwendungen), wirkt die starke Kurvenkraft über die Reifenaufstandsfläche und übt ein enormes Gierdrehmoment auf die Nabenbaugruppe aus."
+      "text": "Im Wettbewerbsmotorsport und im Hochleistungs-Automobilbau ist die Reifenhaftung die höchste physikalische Beschränkung, die die Kurvengeschwindigkeit begrenzt. Ein pneumatischer Rennreifen bietet nur dann eine maximale seitliche Haftung, wenn seine Profilaufstandsfläche auch bei extremen Kurvenkräften perfekt senkrecht zur Straßenebene ausgerichtet bleibt. Da jedoch die Zentrifugalbeschleunigung das Fahrgestell dazu zwingt, nach außen zu rollen, verlieren herkömmliche Aufhängungssysteme ihren negativen Sturz, wodurch der Reifen auf seine Außenschulter rollt und einen katastrophalen Haftungsverlust verursacht."
     },
     {
       "type": "p",
-      "text": "Multilink-Architekturen nutzen diese Verformung durch gezielte Elastokinematik aus. Durch die asymmetrische Positionierung der Buchsensteifigkeitsvektoren greift das äußere Rad bei seitlicher Belastung automatisch nach. Diese passive Vorspur stabilisiert die Hinterachse gegen plötzliches Übersteuern bei aggressiven Richtungswechseln mit hoher Geschwindigkeit, ohne dass komplexe elektronische Hinterradlenkungssysteme erforderlich sind."
+      "text": "Im Wettbewerbsmotorsport und im Hochleistungs-Automobilbau ist die Reifenhaftung die höchste physikalische Beschränkung, die die Kurvengeschwindigkeit begrenzt. Ein pneumatischer Rennreifen bietet nur dann eine maximale seitliche Haftung, wenn seine Profilaufstandsfläche auch bei extremen Kurvenkräften perfekt senkrecht zur Straßenebene ausgerichtet bleibt. Da jedoch die Zentrifugalbeschleunigung das Fahrgestell dazu zwingt, nach außen zu rollen, verlieren herkömmliche Aufhängungssysteme ihren negativen Sturz, wodurch der Reifen auf seine Außenschulter rollt und einen katastrophalen Haftungsverlust verursacht."
     },
     {
       "type": "h2",
-      "text": "5. Chassis-Setup und Erkenntnisse aus dem Motorsport"
+      "text": "1. Kinematische Sofortzentren und Sturzwiederherstellungsverhältnisse"
     },
     {
       "type": "ul",
       "items": [
-        "Kalibrierung des Lenkrollradius: Halten Sie einen leicht negativen Lenkradius oder nahezu Null (0 bis -5 mm) ein, um die Richtungsstabilität bei asymmetrischem Bremsen ohne Rückschlag durch die Zahnstange sicherzustellen.",
-        "Anti-Squat-/Anti-Dive-Tuning: Winkeln Sie die Längslenkerachsen an, um 40–60 % mechanischen Anti-Pitch zu erreichen, wodurch der aerodynamische Abtriebsboden während starker Bremszonen parallel zur Strecke bleibt.",
-        "Bump Steer Minimierung: Richten Sie die Länge und den Winkel der Spurstange genau auf den virtuellen Schwingarm des vorderen Achsschenkels aus, um unerwünschte Änderungen des Lenkwinkels bei Bodenunebenheiten zu verhindern."
+        "Scrub Radius Calibration: Maintain a slightly negative or near-zero scrub radius (0 to -5mm) to ensure directional stability under asymmetric braking without kickback through the steering rack.",
+        "Anti-Squat / Anti-Dive Tuning: Angle the longitudinal link axes to achieve 40-60% mechanical anti-pitch, keeping aerodynamic downforce floors parallel to the track during heavy braking zones.",
+        "Bump Steer Minimization: Align the steering tie rod length and angle precisely with the virtual swing arm of the front upright to eliminate unwanted steering angle changes over surface undulations."
       ]
     }
   ],
-  "sourceHash": "671ea979d8cc4b1ab6240952b92c17079e4fac80"
+  "sourceHash": "bd21f89c8d87860323d4ba7f6bcd8ba6110a123c"
 }

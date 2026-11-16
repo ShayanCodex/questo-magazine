@@ -1,0 +1,79 @@
+{
+  "slug": "the-mechanics-of-founder-equity-and-dilution-cascades",
+  "title": "دی میکینکس آف فاؤنڈر ایکویٹی: کیپ ٹیبلز، لیکویڈیشن کی ترجیحات اور ڈیلیوشن کیسکیڈز",
+  "excerpt": "کنورٹیبل آلات، آپشن پول شفلز، لیکویڈیشن واٹر مارکس، اور ڈاون راؤنڈ اینٹی ڈیلیشن میکینکس کا ایک سخت ریاضیاتی امتحان۔",
+  "date": "2026-11-16",
+  "author": "Elena Vance",
+  "tags": [
+    "venture-capital",
+    "cap-tables",
+    "founder-equity",
+    "corporate-governance",
+    "startups"
+  ],
+  "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Modern glass skyscraper headquarters representing venture finance and corporate equity governance",
+  "body": [
+    {
+      "type": "h2",
+      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+    },
+    {
+      "type": "p",
+      "text": "ٹیکنالوجی وینچرز کے ابتدائی لائف سائیکل میں، کیپٹلائزیشن ٹیبلز کو اکثر ڈینامیک کلیمز کے متحرک نظام کے بجائے جامد اکاؤنٹنگ لیجر کے طور پر سمجھا جاتا ہے۔ جیسے جیسے کمپنیاں پری سیڈ کنورٹیبل نوٹوں سے یکے بعد دیگرے قیمتوں کے ترجیحی راؤنڈز کے ذریعے ترقی کرتی ہیں، غیر مختص شدہ آپشن پول کی توسیع، حصہ لینے والے ترجیحی ملٹی پلائرز، اور سینئر لیکویڈیشن ترجیحات کے مرکب اثرات حتمی ایکویٹی وصولیوں میں گہرا غیر خطوط پیدا کرتے ہیں۔"
+    },
+    {
+      "type": "h2",
+      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1556742049-0a67e557224d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Executive venture financing agreement and capitalization table term sheet modeling",
+      "caption": "Option pool shuffle: pre-money ESOP allocation concentrating dilution risk entirely upon founding common equity."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The Option Pool Shuffle: Expanding employee stock ownership plans (ESOP) immediately prior to rather than following a financing round systematically shifts dilution entirely onto existing common stockholders.",
+        "Convertible Valuation Caps vs Discounts: Early SAFEs that convert into subsequent priced equity without pre-money consensus can inadvertently trigger massive ownership compression for founders.",
+        "Liquidation Preference Watermarks: 1x non-participating preferred shares establish a floor of downside protection, whereas participating preferred structures grant investors double-dipping rights into residual common value.",
+        "Broad-Based Weighted Average Antidilution: Mathematical adjustment formulas protect preferred series in down-rounds while mitigating the destructive wipeout risk of full-ratchet provisions."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "ایک کیپٹلائزیشن ٹیبل محض ملکیت کا ریکارڈ نہیں ہے۔ یہ ایک ساختی معاہدہ ہے جو خطرے کی تقسیم، کنٹرول کے حقوق، اور انتہائی اقتصادی غیر یقینی صورتحال کے تحت نیچے کی طرف ترغیباتی ترتیب کو کنٹرول کرتا ہے۔",
+      "cite": "کارپوریٹ فنانس اینڈ وینچر گورننس کا جائزہ"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1560472324-a2a11b619d08?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Corporate governance board meeting evaluating liquidation waterfall payouts and dilution curves",
+      "caption": "Liquidation waterfalls: modeling payout thresholds across non-participating preferred seniority tranches."
+    },
+    {
+      "type": "h2",
+      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+    },
+    {
+      "type": "p",
+      "text": "ٹیکنالوجی وینچرز کے ابتدائی لائف سائیکل میں، کیپٹلائزیشن ٹیبلز کو اکثر ڈینامیک کلیمز کے متحرک نظام کے بجائے جامد اکاؤنٹنگ لیجر کے طور پر سمجھا جاتا ہے۔ جیسے جیسے کمپنیاں پری سیڈ کنورٹیبل نوٹوں سے یکے بعد دیگرے قیمتوں کے ترجیحی راؤنڈز کے ذریعے ترقی کرتی ہیں، غیر مختص شدہ آپشن پول کی توسیع، حصہ لینے والے ترجیحی ملٹی پلائرز، اور سینئر لیکویڈیشن ترجیحات کے مرکب اثرات حتمی ایکویٹی وصولیوں میں گہرا غیر خطوط پیدا کرتے ہیں۔"
+    },
+    {
+      "type": "video",
+      "title": "Venture Capital Cap Table Mechanics and Liquidation Preference Analysis",
+      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution.",
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+    },
+    {
+      "type": "h2",
+      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+    },
+    {
+      "type": "p",
+      "text": "ٹیکنالوجی وینچرز کے ابتدائی لائف سائیکل میں، کیپٹلائزیشن ٹیبلز کو اکثر ڈینامیک کلیمز کے متحرک نظام کے بجائے جامد اکاؤنٹنگ لیجر کے طور پر سمجھا جاتا ہے۔ جیسے جیسے کمپنیاں پری سیڈ کنورٹیبل نوٹوں سے یکے بعد دیگرے قیمتوں کے ترجیحی راؤنڈز کے ذریعے ترقی کرتی ہیں، غیر مختص شدہ آپشن پول کی توسیع، حصہ لینے والے ترجیحی ملٹی پلائرز، اور سینئر لیکویڈیشن ترجیحات کے مرکب اثرات حتمی ایکویٹی وصولیوں میں گہرا غیر خطوط پیدا کرتے ہیں۔"
+    }
+  ],
+  "sourceHash": "e62f37573d49b9a50ddc0354e6511265a37bc9f3"
+}

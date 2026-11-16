@@ -13,7 +13,7 @@
     "algorithms"
   ],
   "image": "/images/articles/neuromorphic-chip.jpg",
-  "imageAlt": "Carte de circuit imprimé électronique futuriste et puce de microprocesseur haute performance avec voies de connexion neuronale éclairées",
+  "imageAlt": "Futuristic electronic printed circuit board and high performance microprocessor chip with illuminated neural connection pathways",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "L'ingénierie neuromorphique abandonne complètement le paradigme synchrone piloté par l'horloge. En émulant l'architecture biologique des synapses et des axones corticaux, les processeurs neuromorphiques exécutent le calcul uniquement lorsque les informations changent, transmettant des potentiels d'action binaires clairsemés et asynchrones (pointes) à travers des réseaux de barres croisées massivement parallèles et non de von Neumann où le traitement et la mémoire sont colocalisés dans le même substrat physique."
+      "text": "Les réseaux neuronaux profonds contemporains sont voraces en termes de calcul. Fonctionnant sur des architectures synchrones de von Neumann, les GPU et TPU standards exécutent des multiplications matricielles denses en faisant constamment la navette entre des tenseurs de poids de plusieurs gigaoctets entre la mémoire à large bande passante (HBM) et les unités logiques arithmétiques (ALU), dissipant ainsi des centaines de watts par accélérateur. À l’opposé, le cerveau humain biologique exécute une perception sensorielle, un contrôle moteur et un raisonnement contextuel sophistiqués avec un budget de puissance austère d’environ vingt watts."
     },
     {
       "type": "h2",
       "text": "1. Dynamique d'intégration et d'incendie avec fuite dans le silicium"
     },
     {
-      "type": "p",
-      "text": "Le modèle neuronal Leaky Integrate-and-Fire (LIF) est à la base mathématique des réseaux neuronaux à pointe (SNN). Le potentiel membranaire $V(t)$ intègre les courants synaptiques entrants sur un temps continu, décroissant de façon exponentielle vers un potentiel de repos en fonction de la constante de temps membranaire $\\tau_m$ :"
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Neuromorphic Computing & Spiking Neural Networks - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Neuromorphic Computing & Spiking Neural Networks."
     },
     {
       "type": "p",
-      "text": "$\\tau_m \\frac{dV(t)}{dt} = -(V(t) - V_{\\text{rest}}) + R_m I(t)$. Lorsque le potentiel membranaire dépasse un seuil de tension prédéterminé $V_{\\text{th}}$, le neurone déclenche une pointe discrète dans le réseau, réinitialise son potentiel et entre dans une période réfractaire. Étant donné que les neurones restent au repos jusqu'à ce qu'ils soient activés par des pointes temporelles, le silicium neuromorphique ne consomme aucune énergie dynamique pendant les périodes d'entrée statique, atteignant ainsi une efficacité énergétique de trois à quatre ordres de grandeur supérieure à celle des accélérateurs numériques conventionnels."
+      "text": "Les réseaux neuronaux profonds contemporains sont voraces en termes de calcul. Fonctionnant sur des architectures synchrones de von Neumann, les GPU et TPU standards exécutent des multiplications matricielles denses en faisant constamment la navette entre des tenseurs de poids de plusieurs gigaoctets entre la mémoire à large bande passante (HBM) et les unités logiques arithmétiques (ALU), dissipant ainsi des centaines de watts par accélérateur. À l’opposé, le cerveau humain biologique exécute une perception sensorielle, un contrôle moteur et un raisonnement contextuel sophistiqués avec un budget de puissance austère d’environ vingt watts."
+    },
+    {
+      "type": "p",
+      "text": "Les réseaux neuronaux profonds contemporains sont voraces en termes de calcul. Fonctionnant sur des architectures synchrones de von Neumann, les GPU et TPU standards exécutent des multiplications matricielles denses en faisant constamment la navette entre des tenseurs de poids de plusieurs gigaoctets entre la mémoire à large bande passante (HBM) et les unités logiques arithmétiques (ALU), dissipant ainsi des centaines de watts par accélérateur. À l’opposé, le cerveau humain biologique exécute une perception sensorielle, un contrôle moteur et un raisonnement contextuel sophistiqués avec un budget de puissance austère d’environ vingt watts."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Neuromorphic Computing & Spiking Neural Networks - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Neuromorphic Computing & Spiking Neural Networks."
     },
     {
       "type": "quote",
@@ -42,51 +54,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Colocalisation mémoire-crossbar non-Von Neumann"
+      "text": "1. Dynamique d'intégration et d'incendie avec fuite dans le silicium"
     },
     {
       "type": "p",
-      "text": "Dans les architectures matérielles conventionnelles, la séparation physique des unités de calcul et des banques de mémoire impose le fameux « mur de mémoire de von Neumann » : plus de 80 % de la dissipation totale d'énergie est gaspillée uniquement dans le transport d'interconnexions en cuivre. Les plates-formes neuromorphiques, telles qu'Intel Loihi, IBM TrueNorth et les réseaux de memristors émergents, éliminent ce goulot d'étranglement grâce à des barres transversales synaptiques distribuées."
+      "text": "Les réseaux neuronaux profonds contemporains sont voraces en termes de calcul. Fonctionnant sur des architectures synchrones de von Neumann, les GPU et TPU standards exécutent des multiplications matricielles denses en faisant constamment la navette entre des tenseurs de poids de plusieurs gigaoctets entre la mémoire à large bande passante (HBM) et les unités logiques arithmétiques (ALU), dissipant ainsi des centaines de watts par accélérateur. À l’opposé, le cerveau humain biologique exécute une perception sensorielle, un contrôle moteur et un raisonnement contextuel sophistiqués avec un budget de puissance austère d’environ vingt watts."
     },
     {
       "type": "p",
-      "text": "Chaque synapse artificielle stocke localement son poids programmatique à l'aide de RAM résistive non volatile (ReRAM) ou de mémoire à changement de phase (PCM). Lorsqu'un pic de tension traverse une ligne de mot, la loi d'Ohm et la loi actuelle de Kirchhoff calculent naturellement les produits vectoriels-matrices à la vitesse de l'électricité : $I_j = \\sum_i V_i \\cdot G_{ij}$, où la conductance $G_{ij}$ représente l'efficacité synaptique. Le calcul s’effectue in situ à l’intérieur même de la structure mémoire."
+      "text": "Les réseaux neuronaux profonds contemporains sont voraces en termes de calcul. Fonctionnant sur des architectures synchrones de von Neumann, les GPU et TPU standards exécutent des multiplications matricielles denses en faisant constamment la navette entre des tenseurs de poids de plusieurs gigaoctets entre la mémoire à large bande passante (HBM) et les unités logiques arithmétiques (ALU), dissipant ainsi des centaines de watts par accélérateur. À l’opposé, le cerveau humain biologique exécute une perception sensorielle, un contrôle moteur et un raisonnement contextuel sophistiqués avec un budget de puissance austère d’environ vingt watts."
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : principes de l'ingénierie neuromorphique"
+      "text": "1. Dynamique d'intégration et d'incendie avec fuite dans le silicium"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/H4_G3Lz7m9U",
-      "title": "Informatique neuromorphique : matériel inspiré du cerveau et réseaux neuronaux à pointe",
-      "caption": "Un séminaire technique sur les capteurs de vision basés sur les événements, les structures de routage asynchrone et le traitement des bords sensoriels inférieurs au milliwatt."
+      "title": "Neuromorphic Computing: Brain-Inspired Hardware and Spiking Neural Networks",
+      "caption": "A technical seminar on event-based vision sensors, asynchronous routing fabrics, and sub-milliwatt sensory edge processing.",
+      "src": "https://www.youtube-nocookie.com/embed/aircAruvnKk"
     },
     {
       "type": "h2",
-      "text": "4. Vision basée sur les événements et applications Edge autonomes"
+      "text": "1. Dynamique d'intégration et d'incendie avec fuite dans le silicium"
     },
     {
       "type": "p",
-      "text": "Les caméras traditionnelles capturent le monde dans des images discrètes et redondantes (par exemple 60 images par seconde), générant d'énormes volumes de données même lors de la visualisation de scènes complètement stationnaires. Les capteurs de vision dynamique neuromorphiques (DVS), en revanche, sont constitués de pixels autonomes qui émettent un pic asynchrone uniquement lorsque la luminance locale change d'un pourcentage seuil."
+      "text": "Les réseaux neuronaux profonds contemporains sont voraces en termes de calcul. Fonctionnant sur des architectures synchrones de von Neumann, les GPU et TPU standards exécutent des multiplications matricielles denses en faisant constamment la navette entre des tenseurs de poids de plusieurs gigaoctets entre la mémoire à large bande passante (HBM) et les unités logiques arithmétiques (ALU), dissipant ainsi des centaines de watts par accélérateur. À l’opposé, le cerveau humain biologique exécute une perception sensorielle, un contrôle moteur et un raisonnement contextuel sophistiqués avec un budget de puissance austère d’environ vingt watts."
     },
     {
       "type": "p",
-      "text": "Lorsqu'ils sont associés à des processeurs neuronaux à pointe, les capteurs basés sur les événements permettent une résolution temporelle de la microseconde, une plage dynamique élevée (> 120 dB) et l'élimination du flou de mouvement tout en fonctionnant avec des milliwatts de puissance. Ces caractéristiques rendent les systèmes neuromorphiques idéaux pour la stabilisation robotique à grande vitesse, les contrôleurs de membres prothétiques, le suivi par satellite et la télémétrie biomédicale de pointe."
+      "text": "Les réseaux neuronaux profonds contemporains sont voraces en termes de calcul. Fonctionnant sur des architectures synchrones de von Neumann, les GPU et TPU standards exécutent des multiplications matricielles denses en faisant constamment la navette entre des tenseurs de poids de plusieurs gigaoctets entre la mémoire à large bande passante (HBM) et les unités logiques arithmétiques (ALU), dissipant ainsi des centaines de watts par accélérateur. À l’opposé, le cerveau humain biologique exécute une perception sensorielle, un contrôle moteur et un raisonnement contextuel sophistiqués avec un budget de puissance austère d’environ vingt watts."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir des systèmes : architecture du silicium biologique"
+      "text": "1. Dynamique d'intégration et d'incendie avec fuite dans le silicium"
     },
     {
       "type": "ul",
       "items": [
-        "La parcimonie comme efficacité : le calcul s'exécute exclusivement à l'arrivée des événements ; les neurones au repos consomment uniquement une puissance de fuite statique inférieure au seuil.",
-        "Accélération analogique en mémoire : les barres croisées Memristive calculent la sommation physique de Kirchhoff directement dans le domaine de stockage sans navette de mémoire.",
-        "Codage temporel : les informations sont représentées par la synchronisation des pointes, les intervalles entre les pointes et la synchronisation de phase plutôt que par des registres à virgule flottante de 16 bits.",
-        "Autonomie Edge : les enveloppes de puissance inférieures au milliwatt permettent une classification en temps réel sur les nœuds de capteurs non connectés, les drones et les moniteurs médicaux portables."
+        "Sparsity as Efficiency: Computation executes exclusively upon event arrivals; quiescent neurons consume only static sub-threshold leakage power.",
+        "Analog In-Memory Acceleration: Memristive crossbars compute physical Kirchhoff summation directly in the storage domain without memory shuttling.",
+        "Temporal Coding: Information is represented through spike timing, inter-spike intervals, and phase synchrony rather than 16-bit floating-point registers.",
+        "Edge Autonomy: Sub-milliwatt power envelopes allow real-time classification on untethered sensor nodes, drones, and wearable medical monitors."
       ]
     }
   ],
-  "sourceHash": "1e21cb68a7f095bc877b1ad45ae9638a00c370bf"
+  "sourceHash": "3bb956e1704e7649469dfb80daf7e5efdcd72047"
 }

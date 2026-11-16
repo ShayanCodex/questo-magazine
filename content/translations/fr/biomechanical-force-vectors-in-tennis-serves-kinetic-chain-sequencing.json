@@ -12,7 +12,7 @@
     "athletic-performance"
   ],
   "image": "/images/articles/tennis-biomechanics-serve.jpg",
-  "imageAlt": "Joueur de tennis professionnel dans une pose de trophée dynamique se préparant à un premier service explosif sur le terrain",
+  "imageAlt": "Professional tennis player in dynamic trophy pose preparing for an explosive first serve on court",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "La physique de la vitesse de la raquette balistique"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Biomechanical Force Vectors in Elite Tennis Serves - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Biomechanical Force Vectors in Elite Tennis Serves."
     },
     {
       "type": "ul",
       "items": [
-        "Force de réaction au sol (GRF) : la flexion explosive du genou et la poussée verticale au sol génèrent l'élan linéaire initial qui entraîne toute la séquence cinétique.",
-        "Séparation pelvienne et thoracique : la rotation de la hanche entraîne la rotation de l'épaule, créant un cycle élastique d'étirement et de raccourcissement à travers la musculature oblique centrale.",
-        "Rotation interne de l'épaule : les vitesses angulaires supérieures à 2 400 degrés par seconde lors de la rotation interne de l'épaule contribuent jusqu'à 50 % de la vitesse finale de la tête de raquette.",
-        "Fenêtre d'élévation d'impact : frapper la balle au sommet du vecteur d'impulsion vertical optimise le dégagement parabolique et les angles de trajectoire du terrain vers le bas."
+        "Ground Reaction Force (GRF): Explosive knee flexion and vertical ground push generate the initial linear momentum that drives the entire kinetic sequence.",
+        "Pelvic and Thoracic Separation: Hip rotation leads shoulder rotation, creating an elastic stretch-shortening cycle across core oblique musculature.",
+        "Internal Shoulder Rotation: Angular velocities exceeding 2,400 degrees per second in internal shoulder rotation contribute up to 50% of final racquet head velocity.",
+        "Impact Elevation Window: Striking the ball at the apex of the vertical impulse vector optimizes parabolic clearance and downward court trajectory angles."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Société internationale de biomécanique du sport"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Biomechanical Force Vectors in Elite Tennis Serves - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Biomechanical Force Vectors in Elite Tennis Serves."
+    },
+    {
       "type": "h2",
-      "text": "Séquençage cinématique segmentaire"
+      "text": "La physique de la vitesse de la raquette balistique"
     },
     {
       "type": "p",
-      "text": "La capture de mouvement optique 3D à grande vitesse révèle que la vitesse angulaire maximale suit une progression proximale à distale stricte : la décélération du bassin initie l'accélération du tronc, la décélération du tronc initie la rotation de l'épaule, suivie à intervalles de microsecondes par l'extension du coude, la pronation de l'avant-bras et la flexion du poignet."
+      "text": "Le service de tennis professionnel est l'une des actions cinématiques en boucle fermée multi-articulaires les plus explosives de l'athlétisme de compétition. Atteindre des vitesses de lancement supérieures à 220 km/h nécessite bien plus que la force des membres supérieurs ; cela nécessite le transfert séquentiel et sans entrave d’énergie mécanique le long d’une chaîne cinétique ininterrompue depuis la surface du terrain jusqu’au point d’impact de la raquette."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/5D_1E4kGZ_A",
-      "title": "Biomécanique de la chaîne cinétique dans le service du tennis moderne",
-      "caption": "Caméra haute vitesse et analyse de suivi de mouvement 3D détaillant les forces de réaction au sol, l'inclinaison thoracique et la mécanique de rotation interne de l'épaule."
+      "title": "Kinetic Chain Biomechanics in the Modern Tennis Serve",
+      "caption": "High-speed camera and 3D motion tracking analysis detailing ground reaction forces, thoracic tilt, and internal shoulder rotation mechanics.",
+      "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ"
     },
     {
       "type": "h2",
-      "text": "Prévention des blessures et décélération scapulaire"
+      "text": "La physique de la vitesse de la raquette balistique"
     },
     {
       "type": "p",
-      "text": "La phase de décélération excentrique qui suit l'impact de la balle soumet la coiffe des rotateurs postérieurs et le labrum à des forces de distraction extrêmes. Le conditionnement moderne se concentre fortement sur l'entraînement à la décélération excentrique de la chaîne postérieure pour préserver la longévité des articulations pendant plus de 200 charges de match."
+      "text": "Le service de tennis professionnel est l'une des actions cinématiques en boucle fermée multi-articulaires les plus explosives de l'athlétisme de compétition. Atteindre des vitesses de lancement supérieures à 220 km/h nécessite bien plus que la force des membres supérieurs ; cela nécessite le transfert séquentiel et sans entrave d’énergie mécanique le long d’une chaîne cinétique ininterrompue depuis la surface du terrain jusqu’au point d’impact de la raquette."
     }
   ],
-  "sourceHash": "e108c63a629d8092b338d28c4d66b231001d4240"
+  "sourceHash": "eafb965e9ad454c902604d79da02611cb550f42a"
 }

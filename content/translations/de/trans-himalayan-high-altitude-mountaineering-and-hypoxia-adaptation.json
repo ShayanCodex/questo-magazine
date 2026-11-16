@@ -12,7 +12,7 @@
     "hypoxia"
   ],
   "image": "/images/articles/himalayan-mountaineering-glacier.jpg",
-  "imageAlt": "Schneebedeckte Alpengipfel und vergletscherte Gebirgskämme des hohen Himalaya unter klarem, azurblauem Gebirgshimmel",
+  "imageAlt": "Snowcapped alpine peaks and glaciated ridgelines of the high Himalaya under clear azure mountain skies",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Die Physiologie der Todeszone"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for High-Altitude Himalayan Expeditions."
     },
     {
       "type": "ul",
       "items": [
-        "Hypobare Druckdynamik: Auf 8.000 m fällt die arterielle Sauerstoffsättigung ($SaO_2$) unter 60 %, was das kognitive Rechnen und die motorische Kontrolle stark beansprucht.",
-        "HIF-1alpha-Aktivierung: Zelluläre Hypoxie stabilisiert den Hypoxie-induzierbaren Faktor 1-alpha und treibt die renale Erythropoietin (EPO)-Sekretion und die Erythrozyten-Hämatokrit-Proliferation voran.",
-        "Hyperventilation und respiratorische Alkalose: Chemorezeptoren des Glomus caroticum erzwingen anhaltende Tachypnoe, blasen CO2 ab und induzieren die renale Bikarbonatausscheidung, um den arteriellen pH-Wert zu puffern.",
-        "Hirn- und Lungenödem: Plötzlicher Aufstieg ohne schrittweise Akklimatisierung birgt das Risiko einer Extravasation von Kapillarflüssigkeit, die lebensbedrohliches HACE oder HAPE auslöst."
+        "Hypobaric Pressure Dynamics: At 8,000m, arterial oxygen saturation ($SaO_2$) drops below 60%, severely taxing cognitive calculation and motor control.",
+        "HIF-1alpha Activation: Cellular hypoxia stabilizes Hypoxia-Inducible Factor 1-alpha, driving renal erythropoietin (EPO) secretion and erythrocyte hematocrit proliferation.",
+        "Hyperventilation & Respiratory Alkalosis: Carotid body chemoreceptors force persistent tachypnea, blowing off CO2 and inducing renal bicarbonate excretion to buffer arterial pH.",
+        "Cerebral and Pulmonary Edema: Sudden ascent without phased acclimatization risks capillary fluid extravasation, triggering life-threatening HACE or HAPE."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Himalayan High-Altitude Medicine & Expedition Society"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting High-Altitude Himalayan Expeditions."
+    },
+    {
       "type": "h2",
-      "text": "Rotationslogistik für Klettern, Hochschlafen und Tiefschlafen"
+      "text": "Die Physiologie der Todeszone"
     },
     {
       "type": "p",
-      "text": "Moderne Expeditionen im alpinen Stil und phasenweise Belagerungsexpeditionen nutzen streng abgestufte Rotationen. Kletterer steigen durch progressive Hochlager (C1, C2, C3) auf, um die zelluläre Anpassung auszulösen, bevor sie zum Basislager absteigen, um erholsamen Schlaf zu genießen, chronische Höhenmüdigkeit zu lindern und gleichzeitig die Hämoglobinkonzentration zu steigern."
+      "text": "Der Aufstieg über 8.000 Meter stürzt den menschlichen Organismus in die „Todeszone“ – eine Umgebung, in der der Luftdruck auf etwa ein Drittel des Meeresspiegelwerts (ca. 250 mmHg) sinkt. Obwohl der Anteil des Umgebungssauerstoffs konstant bei 20,9 % bleibt, führt der steile Abfall des eingeatmeten Partialdrucks ($P_iO_2$) zu einer Unterversorgung des Gewebes mit Sauerstoff, was eine systemische kompensatorische Akklimatisierung erfordert."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY",
-      "title": "Höhenphysiologie: Wie der menschliche Körper extreme Kälte und Hypoxie überlebt",
-      "caption": "Dokumentation einer medizinischen Expedition zur Untersuchung der hämatologischen Anpassung, der Sauerstofftransportkurven und des Lungengasaustauschs über 7.000 Metern."
+      "title": "High Altitude Physiology: How the Human Body Survives Extreme Cold & Hypoxia",
+      "caption": "Medical expedition documentary examining hematological adaptation, oxygen transport curves, and pulmonary gas exchange above 7,000 meters.",
+      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY"
     },
     {
       "type": "h2",
-      "text": "Souveräne Verwaltung der Himalaya-Route"
+      "text": "Die Physiologie der Todeszone"
     },
     {
       "type": "p",
-      "text": "Da fragiles, vergletschertes Gelände aufgrund von Klimaveränderungen zurückgeht, implementieren regionale Naturschutzallianzen und Sherpa-Führungsgilden strenge Rahmenwerke für spurenlose Expeditionsabfälle und GPS-verfolgte Ausrüstungslisten, um alpine Wassereinzugsgebiete zu schützen."
+      "text": "Der Aufstieg über 8.000 Meter stürzt den menschlichen Organismus in die „Todeszone“ – eine Umgebung, in der der Luftdruck auf etwa ein Drittel des Meeresspiegelwerts (ca. 250 mmHg) sinkt. Obwohl der Anteil des Umgebungssauerstoffs konstant bei 20,9 % bleibt, führt der steile Abfall des eingeatmeten Partialdrucks ($P_iO_2$) zu einer Unterversorgung des Gewebes mit Sauerstoff, was eine systemische kompensatorische Akklimatisierung erfordert."
     }
   ],
-  "sourceHash": "c599f276bf69326cacf6f5e979acec61df69bc59"
+  "sourceHash": "4775f0a6be80b1cd9cff50ad35a36372d3eef476"
 }

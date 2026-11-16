@@ -11,8 +11,8 @@
     "culinary-science",
     "gastronomy"
   ],
-  "image": "/images/articles/maillard-reaction-culinary.jpg",
-  "imageAlt": "Traditionelle hölzerne Fermentationsschalen aus Zedernholz-Moributa zur Kultivierung von fadenförmigem Koji-Schimmel.",
+  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Steamed barley grains blossoming with Aspergillus oryzae koji mold mycelium for traditional fermentation",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Der fadenförmige Schimmelpilz, der die ostasiatische Gastronomie begründete."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cedar koji incubation trays (moributa) arranged in a humid fermentation chamber",
+      "caption": "Solid-state koji culture: controlling temperature and humidity as fungal mycelium produces protease and amylase enzymes."
     },
     {
       "type": "ul",
       "items": [
-        "Enzymsekretionskaskade: Wenn Hyphen in das Getreideendosperm eindringen, scheidet der Schimmel extrazelluläre Enzyme aus, die dichte Makromoleküle in bioverfügbare Substrate aufspalten.",
-        "Umami-Peptidspaltung: Saure und neutrale Proteasen spalten komplexe Polypeptidketten in freie Glutaminsäure und Aspartat und erzeugen so das herzhafte Gefühl von Umami.",
-        "Kinetik der Proteolyse: Eine sorgfältige Kontrolle der Feuchtigkeit, der Inkubationstemperatur (30 °C bis 36 °C) und der Luftfeuchtigkeit bestimmt das Verhältnis der proteolytischen zur saccharolytischen Aktivität.",
-        "Synergistische Empfindung: Freies Glutamat wirkt im biochemischen Zusammenspiel mit 5′-Ribonukleotiden (Inosinat und Guanylat), um die Erregung sensorischer Rezeptoren um das bis zu Achtfache zu vervielfachen."
+        "Enzyme Secretion Cascade: As hyphae penetrate the grain endosperm, the mold excretes extracellular enzymes that break dense macromolecules into bioavailable substrates.",
+        "Umami Peptide Cleavage: Acid and neutral proteases cleave complex polypeptide chains into free glutamic acid and aspartate, producing the savory sensation of umami.",
+        "Proteolysis Kinetics: Careful control of moisture, incubation temperature (30°C to 36°C), and humidity dictates the ratio of proteolytic to saccharolytic activity.",
+        "Synergistic Sensation: Free glutamate acts in biochemical concert with 5′-ribonucleotides (inosinate and guanylate) to multiply sensory receptor excitation by up to eightfold."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Elena Vance, Monographien in Gastronomic Biochemistry"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Fermented aged miso paste in wooden vat exhibiting deep savory umami peptide concentration",
+      "caption": "Proteolysis and umami: Aspergillus enzymes cleaving soy and grain proteins into savory glutamic acid and flavor peptides."
+    },
+    {
       "type": "h2",
-      "text": "Moderne kulinarische Anwendungen in der langsamen Gastronomie"
+      "text": "Der fadenförmige Schimmelpilz, der die ostasiatische Gastronomie begründete."
     },
     {
       "type": "p",
-      "text": "Avantgardistische kulinarische Labore haben Koji-Impfungen über traditionelle Sojabohnen und Reis hinaus auf alte Getreidearten, Hülsenfrüchte und geerntete Nüsse ausgeweitet. Durch die Nutzung der enzymatischen Wirksamkeit von Koji beschleunigen Köche die Trockenreifung von Proteinen und kultivieren komplexe Karamell-, Pilz- und Blumenaromaprofile ohne synthetische Zusatzstoffe."
+      "text": "Das Herzstück der traditionellen Fermentation ist Aspergillus oryzae, ein uralter fadenförmiger Pilz, der vor Jahrtausenden domestiziert wurde. In einer Festkörperkultur auf gedämpften Gersten- oder Reiskörnern wandelt dieser gutartige Organismus inerte Stärken und Strukturproteine ​​in eine biochemische Schatzkammer aktiver Enzyme um: Alpha-Amylase, Glucoamylase, saure und neutrale Proteasen und Peptidasen."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "Meisterkurs in Fermentation und mikrobieller Gastronomie",
-      "caption": "Detaillierte wissenschaftliche Untersuchung mikrobieller Kulturen, Hefeaktivität und der Chemie handwerklicher Kochkunst."
+      "title": "Masterclass in Fermentation and Microbial Gastronomy",
+      "caption": "Detailed scientific exploration of microbial cultures, yeast activity, and the chemistry of artisan culinary craft.",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU"
     },
     {
       "type": "h2",
-      "text": "Das lebendige Erbe der Festkörper-Fermentation"
+      "text": "Der fadenförmige Schimmelpilz, der die ostasiatische Gastronomie begründete."
     },
     {
       "type": "p",
-      "text": "In einem Industriezeitalter, das von hochverarbeiteter Homogenisierung dominiert wird, ist die Koji-Fermentation eine dauerhafte Hommage an das mikrobielle Slow Craft: eine handwerkliche Praxis, bei der Geduld, Biologie und Kochkunst zusammenkommen."
+      "text": "Das Herzstück der traditionellen Fermentation ist Aspergillus oryzae, ein uralter fadenförmiger Pilz, der vor Jahrtausenden domestiziert wurde. In einer Festkörperkultur auf gedämpften Gersten- oder Reiskörnern wandelt dieser gutartige Organismus inerte Stärken und Strukturproteine ​​in eine biochemische Schatzkammer aktiver Enzyme um: Alpha-Amylase, Glucoamylase, saure und neutrale Proteasen und Peptidasen."
     }
   ],
-  "sourceHash": "17e4c3b655c5dbd2e9ccdb93af021d4d367270b5"
+  "sourceHash": "a0d8557bd30ce468df1ae99fc8bc25ae5b5e36b3"
 }

@@ -1,0 +1,79 @@
+{
+  "slug": "rust-memory-safety-without-garbage-collection",
+  "title": "Formale Speichersicherheit in Rust: Affine Types, Borrow Checkers & RAII Semantics",
+  "excerpt": "Eine technische Monographie, die Eigentumsinvarianten zur Kompilierungszeit, Aliasing-Regeln, nicht-lexikalische Lebensdauern und Nullkosten-Abstraktionsgarantien in der Systemprogrammierung analysiert.",
+  "date": "2026-11-16",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "rust",
+    "systems-programming",
+    "memory-safety",
+    "compilers",
+    "computer-science"
+  ],
+  "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Modern dark-themed code editor displaying Rust ownership lifetimes, references, and type invariants",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Die historische Spannung zwischen Sicherheit und Leistung"
+    },
+    {
+      "type": "p",
+      "text": "Fünf Jahrzehnte lang war die Systemtechnik durch eine hartnäckige Dichotomie eingeschränkt: Akzeptieren Sie die manuelle Speicherverwaltung mit den inhärenten Risiken von Use-After-Free-, Double-Free- und Pufferüberlauf-Schwachstellen in C und C++ oder übernehmen Sie Garbage-Collection-Laufzeiten wie Java, Go und C#, die Laufzeitlatenz verursachen Jitter, aufgeblähter Speicherbedarf und Stopp-the-World-Pausen. Rust brach diesen Kompromiss, indem es die affine Typtheorie und die Eigentumsverfolgung zur Kompilierungszeit implementierte, um mathematische Speichersicherheit ohne Laufzeitaufwand zu bieten."
+    },
+    {
+      "type": "h2",
+      "text": "Die historische Spannung zwischen Sicherheit und Leistung"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Diagram of stack frame memory layout, heap pointers, and exclusive mutable references",
+      "caption": "Aliasing XOR Mutability: compile-time borrow checking mathematically eliminating data races and dangling pointers."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Linear and Affine Type Semantics: Every resource in memory has exactly one binding owner; transferring a binding constitutes a destructive move that invalidates the originating identifier at compile time.",
+        "Exclusive Mutability Invariant: The borrow checker enforces the aliasing XOR mutability theorem: code may possess either any number of immutable references (&T) or exactly one mutable reference (&mut T), never both concurrently.",
+        "Non-Lexical Lifetimes (NLL): The compiler constructs control flow graphs (CFGs) to track the precise liveness of references, allowing borrows to end as soon as their last operational use occurs rather than at lexical scope boundaries.",
+        "Deterministic Resource Acquisition Is Initialization (RAII): Destructors are synthesized at compile time and inserted precisely where owner bindings go out of scope, eliminating memory leaks without a background collector."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Speichersicherheitsfehler sind kein moralisches Versagen einzelner Programmierer; Sie sind die mathematische Konsequenz von Programmiersprachen, die einen gemeinsamen veränderlichen Zustand ermöglichen.",
+      "cite": "Theoretische Informatik und Spracharchitektur"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
+      "alt": "LLVM intermediate representation optimizing monomorphized zero-cost Rust abstractions into machine code",
+      "caption": "Monomorphization: compiler generating specialized machine instructions for generic traits without dynamic vtable cost."
+    },
+    {
+      "type": "h2",
+      "text": "Die historische Spannung zwischen Sicherheit und Leistung"
+    },
+    {
+      "type": "p",
+      "text": "Fünf Jahrzehnte lang war die Systemtechnik durch eine hartnäckige Dichotomie eingeschränkt: Akzeptieren Sie die manuelle Speicherverwaltung mit den inhärenten Risiken von Use-After-Free-, Double-Free- und Pufferüberlauf-Schwachstellen in C und C++ oder übernehmen Sie Garbage-Collection-Laufzeiten wie Java, Go und C#, die Laufzeitlatenz verursachen Jitter, aufgeblähter Speicherbedarf und Stopp-the-World-Pausen. Rust brach diesen Kompromiss, indem es die affine Typtheorie und die Eigentumsverfolgung zur Kompilierungszeit implementierte, um mathematische Speichersicherheit ohne Laufzeitaufwand zu bieten."
+    },
+    {
+      "type": "video",
+      "title": "How the Rust Borrow Checker Works: Lifetimes, Ownership, and Memory Layout",
+      "caption": "Deep-dive compiler analysis into mid-level intermediate representation (MIR) borrow checking and ownership graph evaluation.",
+      "src": "https://www.youtube-nocookie.com/embed/JlybK6Wp9f4"
+    },
+    {
+      "type": "h2",
+      "text": "Die historische Spannung zwischen Sicherheit und Leistung"
+    },
+    {
+      "type": "p",
+      "text": "Fünf Jahrzehnte lang war die Systemtechnik durch eine hartnäckige Dichotomie eingeschränkt: Akzeptieren Sie die manuelle Speicherverwaltung mit den inhärenten Risiken von Use-After-Free-, Double-Free- und Pufferüberlauf-Schwachstellen in C und C++ oder übernehmen Sie Garbage-Collection-Laufzeiten wie Java, Go und C#, die Laufzeitlatenz verursachen Jitter, aufgeblähter Speicherbedarf und Stopp-the-World-Pausen. Rust brach diesen Kompromiss, indem es die affine Typtheorie und die Eigentumsverfolgung zur Kompilierungszeit implementierte, um mathematische Speichersicherheit ohne Laufzeitaufwand zu bieten."
+    }
+  ],
+  "sourceHash": "980fa0d6b5ed8c89826c4d46df22bbfbac7467b9"
+}

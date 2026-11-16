@@ -5,7 +5,7 @@
   "date": "2026-11-12",
   "updated": "2026-11-14",
   "author": "Saskia Lindqvist",
-  "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Macro photograph of finely carved metallic movable type sorts and typographic ink",
   "tags": [
     "typography",
@@ -29,6 +29,12 @@
       "text": "The OpenType Font Variations specification dissolved these historical boundaries. A single variable font file contains continuous multi-dimensional axes—weight (wght), width (wdth), slant (slnt), and crucially, optical size (opsz). Instead of jumping discretely from 400 to 700, designers can interpolate weight dynamically at 523 or 648 based on ambient lighting sensors or screen DPI."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
+    },
+    {
       "type": "code",
       "lang": "css",
       "code": "@font-face {\n  font-family: 'Questo Sans';\n  src: url('/fonts/QuestoSans-Variable.woff2') format('woff2-variations');\n  font-weight: 100 900;\n  font-display: swap;\n}\n\nh1 {\n  font-variation-settings: 'wght' 780, 'opsz' 36;\n}"
@@ -37,6 +43,12 @@
       "type": "quote",
       "text": "Typography does not exist in a vacuum; it breathes with the viewport. Optical sizing restores the delicate micro-proportions that high-end punchcutters perfected centuries ago.",
       "cite": "Saskia Lindqvist, The Living Letterform"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
     },
     {
       "type": "h3",

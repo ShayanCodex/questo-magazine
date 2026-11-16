@@ -1,0 +1,79 @@
+{
+  "slug": "quantum-entanglement-and-the-black-hole-information-paradox",
+  "title": "La paradoja de la información del agujero negro: dualidad holográfica, curvas de página y cortafuegos cuánticos",
+  "excerpt": "Seguimiento del debate de treinta años entre la unitaridad cuántica y la radiación de Hawking: correspondencia AdS/CFT, islas de entrelazamiento y corrección de errores cuánticos en el espacio-tiempo curvo.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "theoretical-physics",
+    "quantum-mechanics",
+    "black-holes",
+    "general-relativity",
+    "astrophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1564325726053-d1f50a80e14c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Cosmic deep-space nebula and gravitational lensing surrounding an astronomical black hole event horizon",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El choque irreconciliable de la física moderna"
+    },
+    {
+      "type": "p",
+      "text": "En el corazón de la física fundamental se encuentra una profunda contradicción entre nuestras dos teorías más exitosas: la Relatividad General y la Mecánica Cuántica. En 1974, Stephen Hawking demostró que las fluctuaciones cuánticas cerca del horizonte de sucesos provocan que los agujeros negros emitan radiación térmica y se evaporen lentamente. Sin embargo, si esta radiación es puramente térmica, toda la información relativa a la materia que originalmente formó el agujero negro se borra permanentemente cuando desaparece, violando el inviolable principio cuántico de unitaridad."
+    },
+    {
+      "type": "h2",
+      "text": "El choque irreconciliable de la física moderna"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hawking radiation particle-antiparticle creation near the event horizon threshold",
+      "caption": "Hawking radiation mechanics: quantum vacuum fluctuations yielding entangled particle emissions at the Schwarzchild radius."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Quantum Unitarity: The fundamental theorem stating that the sum of probabilities for all possible outcomes must always equal one, ensuring that information is never destroyed in quantum mechanics.",
+        "The Page Curve: Don Page’s mathematical proof that if black hole evaporation preserves information, the entanglement entropy of radiation must initially rise before declining to zero as the hole evaporates.",
+        "Holographic Duality (AdS/CFT): The principle that quantum gravity in anti-de Sitter space is mathematically equivalent to a conformal field theory living on its boundary, guaranteeing unitarity.",
+        "Entanglement Islands: Recent semiclassical Euclidean gravity calculations revealing that interior quantum states become encoded in exterior radiation via quantum extremal surfaces."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La paradoja de la información del agujero negro es el crisol teórico en el que se reconciliarán o reescribirán las leyes fundamentales del espacio-tiempo y la mecánica cuántica.",
+      "cite": "Revisión de física teórica y gravedad cuántica"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Quantum entanglement laser interferometry and holographic boundary duality mapping",
+      "caption": "AdS/CFT correspondence: boundary conformal field theory mapping higher-dimensional gravitational bulk geometry."
+    },
+    {
+      "type": "h2",
+      "text": "El choque irreconciliable de la física moderna"
+    },
+    {
+      "type": "p",
+      "text": "En el corazón de la física fundamental se encuentra una profunda contradicción entre nuestras dos teorías más exitosas: la Relatividad General y la Mecánica Cuántica. En 1974, Stephen Hawking demostró que las fluctuaciones cuánticas cerca del horizonte de sucesos provocan que los agujeros negros emitan radiación térmica y se evaporen lentamente. Sin embargo, si esta radiación es puramente térmica, toda la información relativa a la materia que originalmente formó el agujero negro se borra permanentemente cuando desaparece, violando el inviolable principio cuántico de unitaridad."
+    },
+    {
+      "type": "video",
+      "title": "The Black Hole Information Paradox: How Physics Solved Its Greatest Puzzle",
+      "caption": "Detailed theoretical physics lecture on Hawking radiation, the Page Curve, and holographic quantum extremal islands.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "El choque irreconciliable de la física moderna"
+    },
+    {
+      "type": "p",
+      "text": "En el corazón de la física fundamental se encuentra una profunda contradicción entre nuestras dos teorías más exitosas: la Relatividad General y la Mecánica Cuántica. En 1974, Stephen Hawking demostró que las fluctuaciones cuánticas cerca del horizonte de sucesos provocan que los agujeros negros emitan radiación térmica y se evaporen lentamente. Sin embargo, si esta radiación es puramente térmica, toda la información relativa a la materia que originalmente formó el agujero negro se borra permanentemente cuando desaparece, violando el inviolable principio cuántico de unitaridad."
+    }
+  ],
+  "sourceHash": "f7c700cabbd5603a07bcc27e461bc37b8c987137"
+}

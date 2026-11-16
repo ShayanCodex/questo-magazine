@@ -14,7 +14,7 @@
     "news"
   ],
   "image": "/images/articles/crispr-dna-editing.jpg",
-  "imageAlt": "Brin d'ADN moléculaire à double hélice éclairé au microscope électronique biotechnologique à fort grossissement",
+  "imageAlt": "Double helix molecular DNA strand illuminated under high magnification biotechnology electron microscope",
   "body": [
     {
       "type": "p",
@@ -22,19 +22,31 @@
     },
     {
       "type": "p",
-      "text": "L'avènement de l'édition de base de précision et des orthologues Cas12 conçus a inauguré la deuxième révolution génomique. En reliant les cas nickases catalytiquement altérées à des désaminases modifiées, les biologistes moléculaires peuvent désormais réécrire des appariements de nucléotides simples, en passant de C•G en T•A ou de A•T en G•C, avec une précision chirurgicale, aucune cassure double brin et des empreintes d'insertion-délétion (indel) minimales."
+      "text": "La promesse initiale de la médecine génomique, démontrée pour la première fois par les systèmes d'endonucléases programmables CRISPR-Cas9 classiques, était limitée par une dangereuse vulnérabilité moléculaire : la création de cassures d'ADN double brin (DSB). Bien qu'efficaces pour l'inactivation du gène via une jonction d'extrémités non homologues (NHEJ), les DSB émoussés déclenchent des translocations chromosomiques incontrôlées, de grandes délétions dépendantes de p53 et des insertions hors cible imprévisibles qui limitent les applications thérapeutiques systémiques directes in vivo."
     },
     {
       "type": "h2",
       "text": "1. Architecture enzymatique : éditeurs de bases de cytosine et d'adénine"
     },
     {
-      "type": "p",
-      "text": "Les éditeurs de base fonctionnent à travers un complexe macromoléculaire multi-domaines. Une nickase Cas9 (D10A) catalytiquement altérée crée une coupure simple brin précise sur le brin d'ADN non modifié, dirigeant la machinerie de réparation des mésappariements endogènes de la cellule pour copier le brin modifié comme modèle. Attachée à cette nickase se trouve une enzyme cytidine ou adénosine désaminase évoluée :"
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "CRISPR-Cas12 & Precision Base Editing - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for CRISPR-Cas12 & Precision Base Editing."
     },
     {
       "type": "p",
-      "text": "Dans les éditeurs de base d'adénine (ABE), les désaminases TadA évoluées en laboratoire convertissent les adénines cibles en inosines ($A \\to I$). Au cours de la réplication ultérieure de l'ADN cellulaire, les ADN polymérases lisent l'inosine comme de la guanine ($G$), complétant une transition $A\\cdot T \\to G\\cdot C$ sans couper le squelette de l'ADN. Étant donné que plus de la moitié de toutes les mutations ponctuelles pathogènes humaines connues proviennent de mutations de transition, les éditeurs de base offrent des capacités correctives directes pour des milliers de troubles génétiques auparavant incurables."
+      "text": "La promesse initiale de la médecine génomique, démontrée pour la première fois par les systèmes d'endonucléases programmables CRISPR-Cas9 classiques, était limitée par une dangereuse vulnérabilité moléculaire : la création de cassures d'ADN double brin (DSB). Bien qu'efficaces pour l'inactivation du gène via une jonction d'extrémités non homologues (NHEJ), les DSB émoussés déclenchent des translocations chromosomiques incontrôlées, de grandes délétions dépendantes de p53 et des insertions hors cible imprévisibles qui limitent les applications thérapeutiques systémiques directes in vivo."
+    },
+    {
+      "type": "p",
+      "text": "La promesse initiale de la médecine génomique, démontrée pour la première fois par les systèmes d'endonucléases programmables CRISPR-Cas9 classiques, était limitée par une dangereuse vulnérabilité moléculaire : la création de cassures d'ADN double brin (DSB). Bien qu'efficaces pour l'inactivation du gène via une jonction d'extrémités non homologues (NHEJ), les DSB émoussés déclenchent des translocations chromosomiques incontrôlées, de grandes délétions dépendantes de p53 et des insertions hors cible imprévisibles qui limitent les applications thérapeutiques systémiques directes in vivo."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80",
+      "alt": "CRISPR-Cas12 & Precision Base Editing - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting CRISPR-Cas12 & Precision Base Editing."
     },
     {
       "type": "quote",
@@ -43,51 +55,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Orthologues Cas12 et cinétique de clivage collatéral"
+      "text": "1. Architecture enzymatique : éditeurs de bases de cytosine et d'adénine"
     },
     {
       "type": "p",
-      "text": "Contrairement à Cas9, qui nécessite un motif adjacent protospacer (PAM) riche en G (5'-NGG-3'), les nucléases Cas12 reconnaissent les motifs riches en T (5'-TTTV-3') et génèrent des surplombs collants décalés de cinq nucléotides plutôt que des coupes émoussées. Ce profil biochimique distinct étend les loci génomiques ciblables à travers les régions promotrices non codantes riches en AT et les amplificateurs de régulation."
+      "text": "La promesse initiale de la médecine génomique, démontrée pour la première fois par les systèmes d'endonucléases programmables CRISPR-Cas9 classiques, était limitée par une dangereuse vulnérabilité moléculaire : la création de cassures d'ADN double brin (DSB). Bien qu'efficaces pour l'inactivation du gène via une jonction d'extrémités non homologues (NHEJ), les DSB émoussés déclenchent des translocations chromosomiques incontrôlées, de grandes délétions dépendantes de p53 et des insertions hors cible imprévisibles qui limitent les applications thérapeutiques systémiques directes in vivo."
     },
     {
       "type": "p",
-      "text": "De plus, Cas12 présente une activité de trans-clivage collatérale d'ADN simple brin non spécifique unique lors de la liaison à la cible. Bien qu'elle soit exploitée pour des biocapteurs de diagnostic ultrasensibles au point d'intervention (tels que les tests DETECTR), l'ingénierie thérapeutique utilise des variantes Cas12 haute fidélité dans lesquelles le trans-clivage est supprimé, garantissant ainsi une modification de cible strictement localisée dans les tissus humains vivants."
+      "text": "La promesse initiale de la médecine génomique, démontrée pour la première fois par les systèmes d'endonucléases programmables CRISPR-Cas9 classiques, était limitée par une dangereuse vulnérabilité moléculaire : la création de cassures d'ADN double brin (DSB). Bien qu'efficaces pour l'inactivation du gène via une jonction d'extrémités non homologues (NHEJ), les DSB émoussés déclenchent des translocations chromosomiques incontrôlées, de grandes délétions dépendantes de p53 et des insertions hors cible imprévisibles qui limitent les applications thérapeutiques systémiques directes in vivo."
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : CRISPR et édition de base de nouvelle génération"
+      "text": "1. Architecture enzymatique : éditeurs de bases de cytosine et d'adénine"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/jAhjPd4uNFY",
-      "title": "Édition de base et édition principale : réécriture du code de la vie avec une précision moléculaire",
-      "caption": "Une conférence de Harvard et du Broad Institute explorant les transitions à base unique, les architectures d'édition principale de pegRNA et l'administration thérapeutique systémique in vivo."
+      "title": "Base Editing and Prime Editing: Rewriting the Code of Life with Molecular Precision",
+      "caption": "A Harvard and Broad Institute lecture exploring single-base transitions, prime editing pegRNA architectures, and systemic in-vivo therapeutic delivery.",
+      "src": "https://www.youtube-nocookie.com/embed/jAhjPd4uNFY"
     },
     {
       "type": "h2",
-      "text": "4. Vecteurs de délivrance : nanoparticules lipidiques (LNP) et tropisme tissulaire"
+      "text": "1. Architecture enzymatique : éditeurs de bases de cytosine et d'adénine"
     },
     {
       "type": "p",
-      "text": "Le principal obstacle à la traduction clinique n’est pas l’efficacité de l’édition in vitro, mais la prestation systémique in vivo. Les vecteurs viraux (tels que les virus adéno-associés, AAV) souffrent de limites limitées d'emballage des marchandises (~ 4,7 kb), d'une immunité humaine neutralisante préexistante et d'une expression intracellulaire prolongée de Cas qui élève les risques hors cible à long terme."
+      "text": "La promesse initiale de la médecine génomique, démontrée pour la première fois par les systèmes d'endonucléases programmables CRISPR-Cas9 classiques, était limitée par une dangereuse vulnérabilité moléculaire : la création de cassures d'ADN double brin (DSB). Bien qu'efficaces pour l'inactivation du gène via une jonction d'extrémités non homologues (NHEJ), les DSB émoussés déclenchent des translocations chromosomiques incontrôlées, de grandes délétions dépendantes de p53 et des insertions hors cible imprévisibles qui limitent les applications thérapeutiques systémiques directes in vivo."
     },
     {
       "type": "p",
-      "text": "Les nanoparticules lipidiques synthétiques (LNP) regroupant l'ARNm transitoire et l'ARN guide offrent la meilleure solution. Les lipides cationiques ionisables encapsulent la cargaison génétique à faible pH, protégeant les acides nucléiques en circulation et facilitant l'endocytose médiée par les récepteurs. En modulant la chimie des lipides – en incorporant des ligands de ciblage spécifiques aux tissus (tels que GalNAc pour les récepteurs des asialoglycoprotéines hépatocytaires) – les LNP délivrent des impulsions transitoires d’éditeurs de bases directement aux organes affectés, permettant ainsi une inactivation thérapeutique durable des gènes sans intégration génomique."
+      "text": "La promesse initiale de la médecine génomique, démontrée pour la première fois par les systèmes d'endonucléases programmables CRISPR-Cas9 classiques, était limitée par une dangereuse vulnérabilité moléculaire : la création de cassures d'ADN double brin (DSB). Bien qu'efficaces pour l'inactivation du gène via une jonction d'extrémités non homologues (NHEJ), les DSB émoussés déclenchent des translocations chromosomiques incontrôlées, de grandes délétions dépendantes de p53 et des insertions hors cible imprévisibles qui limitent les applications thérapeutiques systémiques directes in vivo."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir cliniques : l'avenir des thérapies in vivo"
+      "text": "1. Architecture enzymatique : éditeurs de bases de cytosine et d'adénine"
     },
     {
       "type": "ul",
       "items": [
-        "Élimination des cassures double brin : l'édition de bases permet d'obtenir des transitions mononucléotidiques sans coupures chromosomiques double brin brutales, atténuant ainsi les translocations oncogènes.",
-        "Inversion des mutations de transition : les cytidine et adénine désaminases modifiées ciblent la grande majorité des mutations monogéniques connues causant des maladies.",
-        "Administration de LNP synthétique : les formulations transitoires d'ARNm-LNP minimisent le temps d'exposition au Cas in vivo, réduisant ainsi les taux d'édition hors cible en dessous des niveaux de mutation de fond de base.",
-        "Modulation épigénétique permanente : les éditeurs d'épigénome CRISPR émergents permettent de faire taire ou d'activer l'expression des gènes par méthylation de l'ADN sans altérer la séquence d'ADN sous-jacente."
+        "Double-Strand Break Elimination: Base editing achieves single-nucleotide transitions without blunt double-stranded chromosome cuts, mitigating oncogenic translocations.",
+        "Transition Mutation Reversal: Engineered cytidine and adenine deaminases target the vast majority of known monogenic disease-causing mutations.",
+        "Synthetic LNP Delivery: Transient mRNA-LNP formulations minimize in-vivo Cas exposure time, reducing off-target editing rates below baseline background mutation levels.",
+        "Permanent Epigenetic Modulation: Emerging CRISPR-epigenome editors allow silencing or activating gene expression through DNA methylation without altering the underlying DNA sequence."
       ]
     }
   ],
-  "sourceHash": "a9c011fdde1f0d4f9fad58fea25cf9d6b42c68b3"
+  "sourceHash": "b36c794de05f6cbaec20ddd0693f3d05cd05d72e"
 }

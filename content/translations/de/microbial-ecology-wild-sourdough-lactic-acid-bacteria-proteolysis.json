@@ -11,8 +11,8 @@
     "craftsmanship",
     "sustainability"
   ],
-  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Handwerklich hergestelltes, in Stein gemahlenes Sauerteigbrot mit karamellisierten Krustenbläschen und alveolärer Krumenstruktur.",
+  "image": "https://images.unsplash.com/photo-1514944298352-bf6d4821a37c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Artisan stone-milled sourdough bread loaf displaying caramelized crust blisters and alveolar crumb structure",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "In einem reifen, stabilen Spontansauerteig stellt sich das ökologische Gleichgewicht typischerweise in einem strengen Verhältnis ein: etwa 100 Milchsäurebakterienzellen für jede einzelne Wildhefezelle (Verhältnis 100:1). Die archetypische Bakterienart, die traditionelle europäische Vorspeisen dominiert, ist Fructilactobacillus sanfranciscensis (früher Lactobacillus sanfranciscensis), die in präziser Stoffwechselsynergie mit der Hefe Kazachstania exigua (oder Candida humilis) arbeitet."
+      "text": "Über zehntausend Jahre lang galt die Umwandlung von gemahlenem Getreidekorn in Sauerteigbrot als grundlegende biochemische Meisterschaft der Menschheit. Während das kommerzielle Backen im Laufe des 20. Jahrhunderts diese alte Alchemie in eine industrialisierte monotypische Saccharomyces cerevisiae-Impfung vereinfachte, stellt traditioneller Wildsauerteig ein komplexes, artenreiches mikrobielles Ökosystem dar. Die komplizierte Symbiose zwischen heterofermentativen Milchsäurebakterien (LAB) und säuretoleranten Wildhefen regelt nicht nur die Gasretention, sondern auch die enzymatische Proteolyse, die Phytat-Dephosphorylierung und die glykämische Modulation."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Microbial Ecology of Sourdough."
     },
     {
       "type": "p",
-      "text": "Diese Symbiose basiert auf der nicht konkurrierenden Kohlenstoffsubstratnutzung. F. sanfranciscensis ist Maltose-positiv und Saccharose-negativ und wandelt Maltose, die durch Getreide-Amylase-Enzyme freigesetzt wird, in Glucose und Maltose-6-phosphat um. Umgekehrt ist Kazachstania exigua maltose-negativ und verbraucht die von den Bakterien freigesetzte Glukose, ohne um das primäre Maltosesubstrat zu konkurrieren. Dieser gegenseitige Stoffwechselpakt verhindert, dass eine der beiden Arten die andere verdrängt."
+      "text": "Über zehntausend Jahre lang galt die Umwandlung von gemahlenem Getreidekorn in Sauerteigbrot als grundlegende biochemische Meisterschaft der Menschheit. Während das kommerzielle Backen im Laufe des 20. Jahrhunderts diese alte Alchemie in eine industrialisierte monotypische Saccharomyces cerevisiae-Impfung vereinfachte, stellt traditioneller Wildsauerteig ein komplexes, artenreiches mikrobielles Ökosystem dar. Die komplizierte Symbiose zwischen heterofermentativen Milchsäurebakterien (LAB) und säuretoleranten Wildhefen regelt nicht nur die Gasretention, sondern auch die enzymatische Proteolyse, die Phytat-Dephosphorylierung und die glykämische Modulation."
     },
     {
       "type": "quote",
@@ -36,55 +42,61 @@
       "cite": "Sofia Rossi, Gastronomy & Food Chemistry Fellow"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Microbial Ecology of Sourdough."
+    },
+    {
       "type": "h2",
-      "text": "2. Säurekinetik: Milch- und Essigsäure-Gleichgewicht"
+      "text": "1. Symbiotische mikrobielle Taxonomie: Das Verhältnis von LAB zu Hefe"
     },
     {
       "type": "p",
-      "text": "Das Geschmacksprofil und die Glutenarchitektur von Sauerteig werden direkt durch die organischen Säuren geformt, die während der längeren Fermentation entstehen. Heterofermentatives LAB nutzt den 6-Phosphogluconat-Weg, um zwei primäre Säuren zu synthetisieren:"
+      "text": "Über zehntausend Jahre lang galt die Umwandlung von gemahlenem Getreidekorn in Sauerteigbrot als grundlegende biochemische Meisterschaft der Menschheit. Während das kommerzielle Backen im Laufe des 20. Jahrhunderts diese alte Alchemie in eine industrialisierte monotypische Saccharomyces cerevisiae-Impfung vereinfachte, stellt traditioneller Wildsauerteig ein komplexes, artenreiches mikrobielles Ökosystem dar. Die komplizierte Symbiose zwischen heterofermentativen Milchsäurebakterien (LAB) und säuretoleranten Wildhefen regelt nicht nur die Gasretention, sondern auch die enzymatische Proteolyse, die Phytat-Dephosphorylierung und die glykämische Modulation."
     },
     {
       "type": "ul",
       "items": [
-        "Milchsäure (C3H6O3): Verleiht eine glatte, milde, cremige, joghurtartige Säure. Wird vorzugsweise bei wärmeren Hydratationstemperaturen (26 °C bis 30 °C) mit flüssigen Starterhydratationen synthetisiert.",
-        "Essigsäure (C2H4O2): Verleiht einen scharfen, scharfen, essigartigen Biss. Wird vorzugsweise bei kühleren Verzögerungstemperaturen (10 °C bis 18 °C) mit härteren Starterhydratationen (50 % bis 65 % Wasser) synthetisiert.",
-        "Der Fermentationsquotient (FQ): Das Molverhältnis von Milchsäure zu Essigsäure liegt idealerweise zwischen 3:1 und 4:1 für harmonisierte handwerklich hergestellte Brote."
+        "Lactic Acid (C3H6O3): Imparts a smooth, mild, creamy yogurt-like acidity. Synthesized preferentially at warmer hydration temperatures (26°C to 30°C) with liquid starter hydrations.",
+        "Acetic Acid (C2H4O2): Imparts a sharp, pungent, vinegar-like bite. Synthesized preferentially under cooler retardation temperatures (10°C to 18°C) with stiffer starter hydrations (50% to 65% water).",
+        "The Fermentation Quotient (FQ): The molar ratio of lactic to acetic acid ideally ranges between 3:1 and 4:1 for harmonized artisan loaves."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video Science Masterclass: Sauerteig-Fermentationsmikrobiologie"
+      "text": "1. Symbiotische mikrobielle Taxonomie: Das Verhältnis von LAB zu Hefe"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "Wilde Sauerteig-Fermentationswissenschaft und Milchsäurekinetik",
-      "caption": "Mikrobiologische Untersuchung der Starterkultivierung, der Glutenproteolyse und der Thermodynamik der thermischen Ofenfeder."
+      "title": "Wild Sourdough Fermentation Science & Lactic Kinetics",
+      "caption": "Microbiological examination of starter cultivation, gluten proteolysis, and thermal oven spring thermodynamics."
     },
     {
       "type": "h2",
-      "text": "4. Enzymatische Glutenproteolyse und alveoläre Krümelstruktur"
+      "text": "1. Symbiotische mikrobielle Taxonomie: Das Verhältnis von LAB zu Hefe"
     },
     {
       "type": "p",
-      "text": "Da die bakterielle Säureansammlung den pH-Wert des Teigs von 5,8 auf 3,8 bis 4,2 senkt, werden endogene Getreideenzyme – insbesondere Asparaginproteasen – aktiviert. Diese Enzyme spalten selektiv Disulfidbindungen in hochmolekularen Glutenin- und Gliadin-Peptidketten."
+      "text": "Über zehntausend Jahre lang galt die Umwandlung von gemahlenem Getreidekorn in Sauerteigbrot als grundlegende biochemische Meisterschaft der Menschheit. Während das kommerzielle Backen im Laufe des 20. Jahrhunderts diese alte Alchemie in eine industrialisierte monotypische Saccharomyces cerevisiae-Impfung vereinfachte, stellt traditioneller Wildsauerteig ein komplexes, artenreiches mikrobielles Ökosystem dar. Die komplizierte Symbiose zwischen heterofermentativen Milchsäurebakterien (LAB) und säuretoleranten Wildhefen regelt nicht nur die Gasretention, sondern auch die enzymatische Proteolyse, die Phytat-Dephosphorylierung und die glykämische Modulation."
     },
     {
       "type": "p",
-      "text": "Die kontrollierte Proteolyse entspannt die elastische Teigmatrix, erhöht die Dehnbarkeit und macht die fertige Krume weicher. Eine übermäßige Ansäuerung führt jedoch zum Zusammenbruch der Struktur: Durch übermäßige Proteolyse wird das Glutennetz aufgelöst, wodurch das Zurückhalten von Kohlendioxidblasen beim Backen verhindert wird und ein dichter, gummiartiger Ziegel entsteht. Um eine wilde, offene alveoläre Krume zu erreichen, muss die Fermentation auf dem optimalen Höhepunkt der Strukturelastizität und Gasexpansion gestoppt werden."
+      "text": "Über zehntausend Jahre lang galt die Umwandlung von gemahlenem Getreidekorn in Sauerteigbrot als grundlegende biochemische Meisterschaft der Menschheit. Während das kommerzielle Backen im Laufe des 20. Jahrhunderts diese alte Alchemie in eine industrialisierte monotypische Saccharomyces cerevisiae-Impfung vereinfachte, stellt traditioneller Wildsauerteig ein komplexes, artenreiches mikrobielles Ökosystem dar. Die komplizierte Symbiose zwischen heterofermentativen Milchsäurebakterien (LAB) und säuretoleranten Wildhefen regelt nicht nur die Gasretention, sondern auch die enzymatische Proteolyse, die Phytat-Dephosphorylierung und die glykämische Modulation."
     },
     {
       "type": "h2",
-      "text": "5. Wissenschaftliche Erkenntnisse für handwerkliches Brothandwerk"
+      "text": "1. Symbiotische mikrobielle Taxonomie: Das Verhältnis von LAB zu Hefe"
     },
     {
       "type": "ul",
       "items": [
-        "Die Temperatur bestimmt den Geschmack: Durch die Kontrolle der Fermentationstemperatur in großen Mengen können Bäcker den Milch-zu-Essigsäure-Quotienten steuern.",
-        "Phytase-Aktivierung: Ein niedriger pH-Wert löst Getreide-Phytase aus, baut nährstofffeindliche Phytinsäure ab und erhöht die Bioverfügbarkeit von Zink, Eisen und Magnesium.",
-        "Fermentationsfenster: Die maximale Dehnbarkeit des Teigs erfolgt vor dem vollständigen enzymatischen Glutenabbau, was die wahre Kunst der handwerklichen Monographie ausmacht."
+        "Temperature Dictates Flavor: Controlling bulk fermentation temperature enables bakers to steer the lactic-to-acetic acid quotient.",
+        "Phytase Activation: Low pH triggers cereal phytase, breaking down anti-nutritional phytic acid and increasing bioavailability of zinc, iron, and magnesium.",
+        "Fermentation Window: Peak dough extensibility occurs prior to complete enzymatic gluten breakdown, defining the true art of the artisan monograph."
       ]
     }
   ],
-  "sourceHash": "8dd1dc54c2eee4c2eac3a9817d02b7e25d02a7d3"
+  "sourceHash": "3f1b660e5de37d1f6312a18924ce51bdf8f75a4f"
 }

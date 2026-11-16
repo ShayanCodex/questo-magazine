@@ -11,8 +11,8 @@
     "reading-ergonomics",
     "editorial-systems"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "Harmonisches Schweizer typografisches Grundlinienraster und mathematische Schriftskalen im redaktionellen Broadsheet-Layout",
+  "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Classic typographic book layout showing precise grid margins, proportional leading, and serif letterforms",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Die musikalische Architektur der gedruckten Seite"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Vintage lead metal type sorts arranged in an artisanal letterpress composing stick",
+      "caption": "Typographic heritage: translating movable metal type proportional rules into modern responsive viewport scales."
     },
     {
       "type": "ul",
       "items": [
-        "Mathematische Modulskalen: Die Größenbestimmung entlang proportionaler Intervalle (Kleine Terz 1,200, Perfekte Quarte 1,333, Goldener Schnitt 1,618) schafft unterbewusste visuelle Harmonie.",
-        "Fluid-Clamp-Formulierung: Die Verwendung von CSS-Clamp()-Funktionen interpoliert Schriftgrößen reibungslos über kontinuierliche Ansichtsfensterbereiche hinweg, ohne störende Haltepunktsprünge.",
-        "Optimales Maß und Zeilenabstand: Durch die Beibehaltung von 45 bis 75 Zeichen pro Zeile in Verbindung mit einer Zeilenhöhe von 1,4 bis 1,6 bleibt die Tracking-Geschwindigkeit der Netzhaut über längere Lesesitzungen hinweg erhalten.",
-        "Optische Größenkompensation: Variable Schriftarten passen den Strichkontrast, die Blendenöffnung und die Nachführung dynamisch an, wenn die Punktgröße vergrößert oder verkleinert wird."
+        "Mathematical Modular Scales: Sizing type along proportional intervals (Minor Third 1.200, Perfect Fourth 1.333, Golden Ratio 1.618) creates subconscious visual harmony.",
+        "Fluid Clamp Formulation: Utilizing CSS clamp() functions interpolates font sizes smoothly across continuous viewport ranges without jarring breakpoint jumps.",
+        "Optimal Measure & Leading: Maintaining 45 to 75 characters per line coupled with 1.4 to 1.6 line-height preserves retinal tracking velocity across sustained reading sessions.",
+        "Optical Size Compensation: Variable fonts dynamically adjust character stroke contrast, aperture openness, and tracking as point size scales up or down."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Elena Vance, Prinzipien der typografischen Geometrie"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital variable font design workspace showing weight, width, and optical size variation axes",
+      "caption": "Fluid typography: CSS clamp() functions and variable font axes harmonizing reading cadence across device dimensions."
+    },
+    {
       "type": "h2",
-      "text": "Variable Schriftarten und optische Ergonomie"
+      "text": "Die musikalische Architektur der gedruckten Seite"
     },
     {
       "type": "p",
-      "text": "Das Aufkommen der variablen OpenType-Schriftarten stellt das Handwerk historischer Stanzer wieder her. Durch die Modulation der „opsz“-Achse (optische Größe) in Verbindung mit den Abmessungen des Anzeigefensters behalten digitale Textflächen ihre zarte Haarlinien-Eleganz in monumentalen Anzeigegrößen bei und erhöhen gleichzeitig die Ablageflächen und die Lesbarkeit auf mobilen Handwaagen."
+      "text": "Typografie ist räumliche Musik. So wie eine Musikkomposition auf harmonischen Intervallen, Synkopen und Tempo beruht, ist ein Meisterwerk der redaktionellen Typografie auf proportionalen Beziehungen aufgebaut: modulare Tonleiterfolgen, vertikale Grundlinienkadenzen und disziplinierte Zeichenlinienlängen (Takt). Im responsiven Web kann die Typografie nicht statisch bleiben; Es muss dynamisch mit den physischen Proportionen des Geräts des Lesers atmen."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "Redaktionelle Designsysteme und typografische Beherrschung",
-      "caption": "Erforschung des Schweizer Brutalismus, modularer Layoutsysteme und der Mathematik des Lesens von Typografie."
+      "title": "Editorial Design Systems and Typographic Mastery",
+      "caption": "Exploration of Swiss brutalism, modular layout systems, and the mathematics of reading typography.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "Das Manifest für digitales langsames Lesen"
+      "text": "Die musikalische Architektur der gedruckten Seite"
     },
     {
       "type": "p",
-      "text": "Durch die Ablehnung von hastigem Vorlagenlärm zugunsten algorithmischer typografischer Rhythmen bietet das Questo Magazine einen architektonischen Zufluchtsort für tiefe Aufmerksamkeit: ein Erlebnis, bei dem typografisches Handwerk die Intelligenz des Lesers würdigt."
+      "text": "Typografie ist räumliche Musik. So wie eine Musikkomposition auf harmonischen Intervallen, Synkopen und Tempo beruht, ist ein Meisterwerk der redaktionellen Typografie auf proportionalen Beziehungen aufgebaut: modulare Tonleiterfolgen, vertikale Grundlinienkadenzen und disziplinierte Zeichenlinienlängen (Takt). Im responsiven Web kann die Typografie nicht statisch bleiben; Es muss dynamisch mit den physischen Proportionen des Geräts des Lesers atmen."
     }
   ],
-  "sourceHash": "a87f18c9068b56d94aafedd846c7d806dd29c36f"
+  "sourceHash": "3e75f0d5b94a96f8a122370f079714d6c92dc2e5"
 }

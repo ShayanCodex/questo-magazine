@@ -18,44 +18,6 @@ export interface FeaturedShowcaseSliderProps {
   autoplayIntervalMs?: number;
 }
 
-// Curated high-resolution museum & luxury editorial photography catalog
-// Selected to communicate contemporary art, spatial architecture, avant-garde design & craftsmanship
-const CURATED_EDITORIAL_HERO_IMAGES: Record<
-  string,
-  { image: string; alt: string; issueTag: string }
-> = {
-  'the-geometry-of-silence': {
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Contemplative architectural monolith with quiet light study',
-    issueTag: 'CONTEMPORARY ARCHITECTURE & SPATIAL DESIGN',
-  },
-  'the-death-of-the-card-grid': {
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Contemporary avant-garde museum gallery installation',
-    issueTag: 'VISUAL CULTURE & DIGITAL EXPERIMENTS',
-  },
-  'craft-over-convenience': {
-    image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Tactile artisanal sculpture and sculptural materiality in soft gallery light',
-    issueTag: 'MATERIAL CULTURE & ARTISANAL CRAFT',
-  },
-  'pure-functional-simplicity': {
-    image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Industrial minimalist form and modern acoustic design',
-    issueTag: 'INDUSTRIAL DESIGN & RATIONAL SYSTEMS',
-  },
-  'the-poetics-of-concrete': {
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Brutalist concrete architectural abstraction against sky',
-    issueTag: 'MONOGRAPH // STRUCTURAL FORM',
-  },
-  'the-grid-as-an-instrument': {
-    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Swiss graphic design system and modern typographic composition',
-    issueTag: 'EDITORIAL TYPOGRAPHY & SYSTEMS',
-  },
-};
-
 export function FeaturedShowcaseSlider({
   articles,
   autoplayIntervalMs = 6500,
@@ -130,7 +92,7 @@ export function FeaturedShowcaseSlider({
   const articleUrl = localePath(`/articles/${currentArticle.slug}`);
 
   // Fetch curated photography or fallback
-  const curatedMeta = CURATED_EDITORIAL_HERO_IMAGES[currentArticle.slug] || {
+  const curatedMeta = {
     image: currentArticle.image,
     alt: currentArticle.imageAlt || currentArticle.title,
     issueTag: `${category.name.toUpperCase()} // EDITORIAL`,
@@ -170,11 +132,8 @@ export function FeaturedShowcaseSlider({
       <div className="relative h-[480px] sm:h-[520px] lg:h-[560px] w-full overflow-hidden">
         {showcaseArticles.map((article, idx) => {
           const isActive = idx === currentIndex;
-          const articleCurated = CURATED_EDITORIAL_HERO_IMAGES[article.slug] || {
-            image: article.image,
-            alt: article.imageAlt || article.title,
-            issueTag: '',
-          };
+          const articleImage = article.image;
+          const articleAlt = article.imageAlt || article.title;
 
           return (
             <div
@@ -185,8 +144,8 @@ export function FeaturedShowcaseSlider({
               )}
             >
               <img
-                src={articleCurated.image}
-                alt={articleCurated.alt}
+                src={articleImage}
+                alt={articleAlt}
                 className={cn(
                   'w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-out',
                   isActive ? 'scale-[1.035]' : 'scale-100'

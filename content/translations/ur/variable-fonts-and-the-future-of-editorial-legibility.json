@@ -11,8 +11,8 @@
     "fonts",
     "accessibility"
   ],
-  "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "باریک کھدی ہوئی دھاتی حرکت پذیر قسموں اور ٹائپوگرافک سیاہی کی میکرو تصویر",
+  "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Macro photograph of finely carved metallic movable type sorts and typographic ink",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "OpenType فونٹ تغیرات کی تفصیلات نے ان تاریخی حدود کو تحلیل کر دیا۔ ایک واحد متغیر فونٹ فائل میں مسلسل کثیر جہتی محور ہوتے ہیں — وزن (wght)، چوڑائی (wdth)، ترچھا (slnt)، اور اہم طور پر، آپٹیکل سائز (opsz)۔ 400 سے 700 تک چھلانگ لگانے کے بجائے، ڈیزائنرز محیطی روشنی کے سینسر یا اسکرین DPI کی بنیاد پر 523 یا 648 پر وزن کو متحرک طور پر انٹرپولیٹ کر سکتے ہیں۔"
+      "text": "جوہانس گٹن برگ کی حرکت پذیر قسم کی ایجاد کے بعد پانچ صدیوں تک، ایک فونٹ ایک جسمانی، لچکدار نمونہ تھا۔ اگر کسی پرنٹر کو 8 نکاتی اٹالک اور 24 نکاتی بولڈ ڈسپلے کٹ کی ضرورت ہوتی ہے، تو لیڈ پنچ کے دو مکمل طور پر الگ سیٹ کاسٹ کرنے پڑتے ہیں۔ ویب نے اپنی پہلی تین دہائیاں ہر ایک وزن کے لیے علیحدہ ویب فونٹ فائل ڈاؤن لوڈ کے ساتھ اس سخت تمثیل کو نقل کرنے میں صرف کیں۔"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Variable Fonts and the Future of Editorial Legibility."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "ساسکیا لنڈکوسٹ، دی لونگ لیٹرفارم"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
+    },
+    {
       "type": "h3",
       "text": "کلیدی ایرگونومک اور کارکردگی کے فوائد"
     },
     {
       "type": "ul",
       "items": [
-        "نیٹ ورک کی کارکردگی: 12 علیحدہ فونٹ فائلوں کو تبدیل کرنا (مجموعی طور پر 400KB+) ایک واحد، انتہائی بہتر 42KB WOFF2 متغیر پے لوڈ کے ساتھ۔",
-        "خودکار آپٹیکل اصلاح: چھوٹے جسم کے سائز (12-14px) پر، سیاہی پھنسنے اور آنکھوں میں دباؤ کو روکنے کے لیے لیٹر کاؤنٹر چوڑے اور x-ہائیٹس خود بخود بڑھ جاتے ہیں۔",
-        "ریسپانسیو ڈارک موڈ موافقت: سیاہ پس منظر کے خلاف روشن ٹیکسٹ ہیلیشن کا مقابلہ کرنے کے لیے ڈارک موڈ میں ٹیکسٹ فونٹ کے وزن کو خود بخود 15-20 یونٹ کم کرنا۔"
+        "Network efficiency: Replacing 12 separate font files (totaling 400KB+) with a single, highly-optimized 42KB WOFF2 variable payload.",
+        "Automatic optical correction: At small body sizes (12-14px), letter counters widen and x-heights increase automatically to prevent ink trapping and eye strain.",
+        "Responsive dark mode adaptation: Automatically decreasing text font-weight by 15-20 units in dark mode to counteract bright text halation against black backgrounds."
       ]
     },
     {
       "type": "p",
-      "text": "متغیر نوع ٹائپ کے ذریعے، ڈیجیٹل پبلشنگ آخرکار پرتعیش پرنٹ مونوگرافس کی تاریخی کاریگری کو جدید ویب انجینئرنگ کی روانی ردعمل کے ساتھ جوڑتی ہے۔"
+      "text": "جوہانس گٹن برگ کی حرکت پذیر قسم کی ایجاد کے بعد پانچ صدیوں تک، ایک فونٹ ایک جسمانی، لچکدار نمونہ تھا۔ اگر کسی پرنٹر کو 8 نکاتی اٹالک اور 24 نکاتی بولڈ ڈسپلے کٹ کی ضرورت ہوتی ہے، تو لیڈ پنچ کے دو مکمل طور پر الگ سیٹ کاسٹ کرنے پڑتے ہیں۔ ویب نے اپنی پہلی تین دہائیاں ہر ایک وزن کے لیے علیحدہ ویب فونٹ فائل ڈاؤن لوڈ کے ساتھ اس سخت تمثیل کو نقل کرنے میں صرف کیں۔"
     }
   ],
-  "sourceHash": "2acab3db8f9fd9b3b0b63cf6d590a250b1863740"
+  "sourceHash": "693d8e0abd96891755d7864ea0e0fe3017dd364a"
 }

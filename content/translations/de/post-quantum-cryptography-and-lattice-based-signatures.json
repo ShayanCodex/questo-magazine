@@ -11,8 +11,8 @@
     "security",
     "mathematics"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "Hochdimensionale geometrische Gittervektoren zur Visualisierung der kryptografischen Post-Quantum-Härte",
+  "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-dimensional geometric lattice structure illustrating post-quantum cryptographic hardness assumptions",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Kernpunkte"
+      "text": "Der bevorstehende Zusammenbruch asymmetrischer Public-Key-Grundlagen"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Learning With Errors (LWE) algebraic matrix calculations and lattice point distribution",
+      "caption": "Lattice problem hardness: Shortest Vector Problem (SVP) in high-dimensional lattices resisting Shor’s quantum algorithm."
     },
     {
       "type": "ul",
       "items": [
-        "Problem des kürzesten Vektors (SVP): Hochdimensionale Gitterprobleme bleiben sowohl für klassische als auch für Quantenalgorithmen rechnerisch schwer zu lösen.",
-        "Modul Lernen mit Fehlern (M-LWE): Algorithmen wie ML-KEM (Kyber) konstruieren kryptografische Geheimnisse, indem sie diskretes Gaußsches Rauschen zu hochdimensionalen Polynommatrizen hinzufügen.",
-        "Digitale Signaturentwicklung: ML-DSA (Dilithium) ersetzt elliptische Kurvensignaturen und liefert einen mathematischen Beweis der Härte ohne versteckte algebraische Untergruppen.",
-        "Kompromisse bei der Schlüsselgröße: Post-Quantum-öffentliche Schlüssel und Chiffretexte werden in Kilobyte statt in Bytes gemessen, was Optimierungen bei der Netzwerk-MTU und der Paketfragmentierung erfordert."
+        "Shortest Vector Problem (SVP): High-dimensional lattice problems remain computationally intractable for both classical and quantum algorithms.",
+        "Module Learning with Errors (M-LWE): Algorithms like ML-KEM (Kyber) construct cryptographic secrets by adding discrete Gaussian noise to high-dimensional polynomial matrices.",
+        "Digital Signature Evolution: ML-DSA (Dilithium) replaces elliptic curve signatures, delivering mathematical proof of hardness without hidden algebraic subgroups.",
+        "Key Size Trade-Offs: Post-quantum public keys and ciphertexts are measured in kilobytes rather than bytes, demanding optimizations in network MTU and packet fragmentation."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "National Standards & Cryptographic Security Institute"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Encrypted server cluster verifying post-quantum cryptographic signatures during TLS handshakes",
+      "caption": "NIST standardization: deploying ML-KEM and ML-DSA algorithms to safeguard global internet infrastructure against quantum threats."
+    },
+    {
       "type": "h2",
-      "text": "Hardwarebeschleunigung und Zero-Knowledge-Kompatibilität"
+      "text": "Der bevorstehende Zusammenbruch asymmetrischer Public-Key-Grundlagen"
     },
     {
       "type": "p",
-      "text": "Die Ausführung einer Polynommultiplikation über zyklotomische Ringe erfordert zahlentheoretische Transformationen (NTT). Moderne Silizium-Befehlssätze und RISC-V-Erweiterungen integrieren dedizierte NTT-Vektorpipelines, um Post-Quantum-Schlüsselaustausche in Cloud-Umgebungen im Submillisekundenbereich durchzuführen."
+      "text": "Die globale digitale Wirtschaft beruht auf zwei mathematischen Problemen: Ganzzahlfaktorisierung (RSA) und diskrete Logarithmen über elliptischen Kurven (ECDSA). Wenn fehlertolerante Quantencomputer Shors Algorithmus instanziieren, werden diese grundlegenden Sicherheitsprimitive in polynomieller Zeit rechnerisch trivial. Die Umstellung des Internets auf quantenresistente Mathematik ist der kritischste Infrastrukturübergang in der Computergeschichte."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
       "title": "Zero Knowledge Cryptography & Post-Quantum Foundations",
-      "caption": "Strenge kryptografische Vorlesung über Beweissysteme, Algebra und postquantenmathematische Garantien."
+      "caption": "Rigorous cryptographic lecture exploring proof systems, algebra, and post-quantum mathematical guarantees.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "Souveränität und finanzielle Auswirkungen"
+      "text": "Der bevorstehende Zusammenbruch asymmetrischer Public-Key-Grundlagen"
     },
     {
       "type": "p",
-      "text": "Von digitalen Abwicklungsnetzwerken der Zentralbanken bis hin zu Satellitenverbindungen militärischer Qualität garantiert der Einsatz von Gitterkryptographie, dass unsere gemeinsame digitale Zivilisation auch lange nach der Erlangung der Quantenüberlegenheit sicher bleibt."
+      "text": "Die globale digitale Wirtschaft beruht auf zwei mathematischen Problemen: Ganzzahlfaktorisierung (RSA) und diskrete Logarithmen über elliptischen Kurven (ECDSA). Wenn fehlertolerante Quantencomputer Shors Algorithmus instanziieren, werden diese grundlegenden Sicherheitsprimitive in polynomieller Zeit rechnerisch trivial. Die Umstellung des Internets auf quantenresistente Mathematik ist der kritischste Infrastrukturübergang in der Computergeschichte."
     }
   ],
-  "sourceHash": "383131c7145080fe0717b49d8a57ba461dd7c0c1"
+  "sourceHash": "5d70fdc31b050523401e66b3930827534da2888c"
 }

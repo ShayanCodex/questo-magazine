@@ -13,7 +13,7 @@
     "biology"
   ],
   "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Dormitorio tranquilo iluminado por una luz ambiental suave y cálida que simboliza un sueño neurológico profundo y reparador",
+  "imageAlt": "Calm bedroom setting illuminated by soft warm ambient light symbolizing deep restorative neurological sleep",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "El sistema glifático es una vía de evacuación de desechos mediada por astroglia que opera casi exclusivamente durante el sueño profundo de ondas lentas con movimientos oculares no rápidos (NREM). Impulsado por la pulsatilidad de la pared arterial y las oscilaciones delta sincronizadas (0,5 a 4 Hz), el líquido cefalorraquídeo (LCR) penetra profundamente en el parénquima cerebral a lo largo de los canales periarteriales, eliminando el beta amiloide soluble ($A\\beta$), la tau hiperfosforilada y los subproductos metabólicos neurotóxicos hacia los senos venosos durales."
+      "text": "Durante más de un siglo, la neurobiología luchó con una paradoja evolutiva: mientras que todos los tejidos somáticos periféricos utilizan una extensa red de vasos linfáticos para evacuar los desechos celulares y las toxinas metabólicas, el cerebro de los vertebrados carece de drenaje linfático tradicional a pesar de consumir el 20% de la energía metabólica total del cuerpo. Sólo recientemente la microscopía de barrido láser de dos fotones ha revelado el mecanismo macroscópico de eliminación de desechos del cerebro: el sistema glifático."
     },
     {
       "type": "h2",
       "text": "1. Canales de flujo masivo convectivo y acuaporina-4 astrocítica (AQP4)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Glymphatic Clearance in Deep Sleep - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Glymphatic Clearance in Deep Sleep."
+    },
+    {
       "type": "p",
-      "text": "A diferencia del transporte difusivo simple, que es demasiado lento para eliminar macromoléculas a través del tejido neural denso, el sistema glifático utiliza un flujo de fluido convectivo de alta velocidad facilitado por canales de agua especializados:"
+      "text": "Durante más de un siglo, la neurobiología luchó con una paradoja evolutiva: mientras que todos los tejidos somáticos periféricos utilizan una extensa red de vasos linfáticos para evacuar los desechos celulares y las toxinas metabólicas, el cerebro de los vertebrados carece de drenaje linfático tradicional a pesar de consumir el 20% de la energía metabólica total del cuerpo. Sólo recientemente la microscopía de barrido láser de dos fotones ha revelado el mecanismo macroscópico de eliminación de desechos del cerebro: el sistema glifático."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Glymphatic Convective Hydrodynamic Flux:\nJ_v = L_p · S · [ (P_peri - P_int) - σ · (π_peri - π_int) ]\n\nWhere:\n- J_v: Transvascular volumetric flux of cerebrospinal fluid\n- L_p: Hydraulic conductivity governed by AQP4 channel polarization\n- S: Surface area of periarterial astrocytic endfeet\n- P_peri - P_int: Hydrostatic pressure differential driven by vascular pulsations\n- σ: Reflection coefficient for plasma and interstitial solutes\n- π: Local oncotic osmotic pressures"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Glymphatic Clearance in Deep Sleep - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Glymphatic Clearance in Deep Sleep."
+    },
+    {
       "type": "p",
-      "text": "Los pies terminales de los astrocitos que envuelven los microvasos cerebrales expresan densos grupos polares de canales de agua de acuaporina-4 (AQP4). En modelos experimentales, la ablación genética o la pérdida de la polarización de AQP4 reduce la entrada de LCR al parénquima en más de un 65%, lo que precipita una rápida acumulación neurodegenerativa de agregados de péptidos mal plegados."
+      "text": "Durante más de un siglo, la neurobiología luchó con una paradoja evolutiva: mientras que todos los tejidos somáticos periféricos utilizan una extensa red de vasos linfáticos para evacuar los desechos celulares y las toxinas metabólicas, el cerebro de los vertebrados carece de drenaje linfático tradicional a pesar de consumir el 20% de la energía metabólica total del cuerpo. Sólo recientemente la microscopía de barrido láser de dos fotones ha revelado el mecanismo macroscópico de eliminación de desechos del cerebro: el sistema glifático."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Expansión del espacio intersticial durante el sueño de onda lenta Delta"
+      "text": "1. Canales de flujo masivo convectivo y acuaporina-4 astrocítica (AQP4)"
     },
     {
       "type": "p",
-      "text": "Durante las horas de vigilia consciente, las altas concentraciones de noradrenalina del locus coeruleus suprimen el flujo linfático. Los astrocitos y las neuronas permanecen inflamados, lo que restringe la fracción del espacio intersticial extracelular ($\\alpha$) a aproximadamente el 14% del volumen total del cerebro, lo que crea una resistencia hidráulica extrema."
+      "text": "Durante más de un siglo, la neurobiología luchó con una paradoja evolutiva: mientras que todos los tejidos somáticos periféricos utilizan una extensa red de vasos linfáticos para evacuar los desechos celulares y las toxinas metabólicas, el cerebro de los vertebrados carece de drenaje linfático tradicional a pesar de consumir el 20% de la energía metabólica total del cuerpo. Sólo recientemente la microscopía de barrido láser de dos fotones ha revelado el mecanismo macroscópico de eliminación de desechos del cerebro: el sistema glifático."
     },
     {
       "type": "ul",
       "items": [
-        "Expansión del espacio extracelular: al entrar en la etapa N3 del sueño de ondas lentas, el tono noradrenérgico colapsa, lo que hace que las células parenquimatosas se encojan y expandan el volumen intersticial en un 60%.",
-        "Caída de la resistencia hidráulica: esta expansión volumétrica provoca un colapso inmediato de la resistencia hidrodinámica, lo que permite que el LCR fluya a través del parénquima cerebral con un flujo laminar sin obstáculos.",
-        "Eliminación de desechos metabólicos: la telemetría de trazador radiomarcado en tiempo real muestra que la eliminación de beta amiloide aumenta dos veces durante el sueño NREM en comparación con la vigilia."
+        "Extracellular Space Expansion: Upon entry into Stage N3 slow-wave sleep, noradrenergic tone collapses, causing parenchymal cells to shrink and expanding interstitial volume by 60%.",
+        "Hydraulic Resistance Drop: This volumetric expansion causes an immediate collapse in hydrodynamic resistance, allowing CSF to surge through brain parenchyma with unimpeded laminar flow.",
+        "Metabolic Waste Flushes: Real-time radiolabeled tracer telemetry shows amyloid-beta clearance increases two-fold during NREM sleep compared to wakefulness."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video Masterclass: Arquitectura del sueño, neuroprotección y salud cerebral"
+      "text": "1. Canales de flujo masivo convectivo y acuaporina-4 astrocítica (AQP4)"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM",
-      "title": "Arquitectura del sueño, consolidación de la memoria y restauración neurológica",
-      "caption": "Conferencia científica en profundidad sobre los ciclos del sueño, la sincronización delta de ondas lentas y las profundas funciones neuroprotectoras del sueño profundo."
+      "title": "Sleep Architecture, Memory Consolidation & Neurological Restoration",
+      "caption": "In-depth scientific lecture on sleep cycles, slow-wave delta synchronization, and the profound neuroprotective functions of deep sleep."
     },
     {
       "type": "h2",
-      "text": "4. Pulsatilidad vascular y bombeo cardíaco-respiratorio"
+      "text": "1. Canales de flujo masivo convectivo y acuaporina-4 astrocítica (AQP4)"
     },
     {
       "type": "p",
-      "text": "¿Qué impulsa el mecanismo físico de bombeo del LCR a través del cráneo intracraneal rígido? El transporte linfático se basa en tres ondas de presión mecánica distintas: expansión de la pared arterial sistólica cardíaca, fluctuaciones de la presión torácica respiratoria y ciclos de vasomoción ultralentos (0,1 Hz) impulsados ​​por la contracción del músculo liso."
+      "text": "Durante más de un siglo, la neurobiología luchó con una paradoja evolutiva: mientras que todos los tejidos somáticos periféricos utilizan una extensa red de vasos linfáticos para evacuar los desechos celulares y las toxinas metabólicas, el cerebro de los vertebrados carece de drenaje linfático tradicional a pesar de consumir el 20% de la energía metabólica total del cuerpo. Sólo recientemente la microscopía de barrido láser de dos fotones ha revelado el mecanismo macroscópico de eliminación de desechos del cerebro: el sistema glifático."
     },
     {
       "type": "p",
-      "text": "A medida que las arterias sistémicas se expanden con cada pulso sistólico, transmiten una onda de desplazamiento perivascular a lo largo del espacio de Virchow-Robin, impulsando el LCR aguas abajo a través de válvulas hidrodinámicas unidireccionales creadas por la superposición de las vainas piales. La rigidez arterial causada por la hipertensión crónica disminuye estas ondas de pulso, perjudicando directamente la limpieza linfática nocturna."
+      "text": "Durante más de un siglo, la neurobiología luchó con una paradoja evolutiva: mientras que todos los tejidos somáticos periféricos utilizan una extensa red de vasos linfáticos para evacuar los desechos celulares y las toxinas metabólicas, el cerebro de los vertebrados carece de drenaje linfático tradicional a pesar de consumir el 20% de la energía metabólica total del cuerpo. Sólo recientemente la microscopía de barrido láser de dos fotones ha revelado el mecanismo macroscópico de eliminación de desechos del cerebro: el sistema glifático."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones clínicas y preventivas sobre la optimización del sueño"
+      "text": "1. Canales de flujo masivo convectivo y acuaporina-4 astrocítica (AQP4)"
     },
     {
       "type": "ul",
       "items": [
-        "Proteger la arquitectura de la etapa N3: Evite el alcohol, las comidas nocturnas con alto índice glucémico y los sedantes hipnóticos que suprimen la potencia natural de la onda delta a pesar de inducir la pérdida del conocimiento.",
-        "Ergonomía y postura del sueño: Se ha demostrado en estudios de telemetría por resonancia magnética que la posición lateral para dormir (dormir de lado) facilita una eliminación linfática superior en comparación con las posturas supinas o pronas.",
-        "Mantenimiento de la elasticidad vascular: El ejercicio aeróbico (entrenamiento de resistencia de la Zona 2) preserva la distensibilidad de las arterias carótida y cerebral, manteniendo las presiones del pulso mecánico esenciales para la fuerza impulsora glifática."
+        "Protect Stage N3 Architecture: Avoid alcohol, late-night high-glycemic meals, and sedative hypnotics which suppress natural delta wave power despite inducing unconsciousness.",
+        "Sleep Ergonomics & Posture: Lateral sleep positioning (side-sleeping) has been shown in MRI telemetry studies to facilitate superior glymphatic clearance compared to supine or prone postures.",
+        "Vascular Elasticity Maintenance: Aerobic exercise (Zone 2 endurance training) preserves carotid and cerebral arterial compliance, sustaining the mechanical pulse pressures essential for glymphatic driving force."
       ]
     }
   ],
-  "sourceHash": "ec938c36d6e4bd41b6c191c5e4b3d0f2365fdef6"
+  "sourceHash": "99d9119a4753da14476348945687bfde84d63762"
 }

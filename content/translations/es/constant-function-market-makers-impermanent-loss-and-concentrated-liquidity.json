@@ -13,7 +13,7 @@
     "arbitrage"
   ],
   "image": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Telemetría financiera algorítmica que muestra las curvas de liquidez y la ejecución de operaciones de los creadores de mercado automatizados",
+  "imageAlt": "Algorithmic financial telemetry displaying automated market maker liquidity curves and trade execution",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Si bien el modelo fundamental de producto constante popularizado por Uniswap v2 ($x \\cdot y = k$) ofrecía una solidez a prueba de balas, padecía una ineficiencia de capital catastrófica: el capital se distribuía uniformemente en todo el espectro de precios, desde cero hasta infinito, lo que significaba que menos del 1% del capital mancomunado estaba activo a los precios actuales del mercado. La transición a liquidez concentrada en Uniswap v3 resolvió esta limitación, transformando la provisión de liquidez de una tenencia pasiva a una gestión geométrica activa de la cartera."
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "h2",
       "text": "1. Geometría de liquidez concentrada y reservas virtuales"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concentrated Liquidity in Market Makers - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Concentrated Liquidity in Market Makers."
+    },
+    {
       "type": "p",
-      "text": "En los AMM de liquidez concentrada, los proveedores de liquidez (LP) no asignan capital a todos los precios. En cambio, concentran sus tokens dentro de un intervalo de precios acotado $[p_a, p_b]$. Dentro de este rango, el pool simula una curva de producto constante con \"reservas virtuales\" ampliadas:"
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Virtual Invariant: (x + L / √p_b) · (y + L · √p_a) = L²\n\nWhere:\n- L is the liquidity parameter (geometric mean of reserves)\n- p_a is the lower price boundary\n- p_b is the upper price boundary\n- x, y are actual deposited token quantities"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concentrated Liquidity in Market Makers - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Concentrated Liquidity in Market Makers."
+    },
+    {
       "type": "p",
-      "text": "Al limitar el capital a una banda de precios estrecha alrededor del precio spot, un LP puede alcanzar hasta 4.000 veces la eficiencia del capital de un pool v2 sin restricciones. El mismo volumen de operaciones produce una generación de comisiones exponencialmente mayor por dólar depositado, lo que reduce drásticamente los diferenciales entre oferta y demanda para los operadores institucionales."
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "quote",
@@ -47,41 +59,41 @@
     },
     {
       "type": "h2",
-      "text": "2. Deconstrucción de la pérdida impermanente y el marco LVR"
+      "text": "1. Geometría de liquidez concentrada y reservas virtuales"
     },
     {
       "type": "p",
-      "text": "El riesgo económico central asumido por los proveedores de liquidez es la pérdida impermanente (IL), designada más exactamente como pérdida por divergencia. Siempre que el precio del mercado externo se aleja del índice de depósitos inicial, la curva de precios determinista AMM obliga al LP a vender el activo que se aprecia y comprar el activo que se deprecia."
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "p",
-      "text": "Una investigación académica reciente sobre la microestructura del mercado (Milionis, Moallemi, Roughgarden) formaliza este costo como pérdida versus reequilibrio (LVR). A diferencia de la pérdida impermanente tradicional, que teóricamente se reduce a cero si el precio regresa a su punto de partida, LVR captura la renta económica persistente y no negativa extraída por los arbitrajistas de latencia que negocian contra cotizaciones obsoletas de AMM en intercambios centralizados externos:"
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "ul",
       "items": [
-        "Flujo de arbitraje asimétrico: los movimientos de precios del mercado externo permiten que el flujo de órdenes de arbitraje tóxico elimine los ticks obsoletos en la cadena antes de que los LP pasivos puedan reequilibrarse.",
-        "Riesgo de rango fuera de límites: cuando el precio al contado supera $[p_a, p_b]$, el LP se convierte al 100% en el activo perdedor, finalizando toda acumulación de tarifas hasta que se reequilibre.",
-        "Punto de equilibrio entre tarifa y volatilidad: para que una posición LP siga siendo rentable netamente, los rendimientos de las tarifas deben exceder el arrastre de la varianza dictado por la volatilidad del rendimiento de los activos ($\\frac{1}{8}\\sigma^2$)."
+        "Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs can rebalance.",
+        "Range Out-of-Bounds Risk: When spot price breaks outside $[p_a, p_b]$, the LP is 100% converted into the losing asset, terminating all fee accrual until rebalanced.",
+        "Fee-to-Volatility Break-Even: For an LP position to remain net-profitable, fee yields must exceed the variance drag dictated by asset return volatility ($\\frac{1}{8}\\sigma^2$)."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral técnica: Matemáticas de liquidez concentrada"
+      "text": "1. Geometría de liquidez concentrada y reservas virtuales"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/cizLhxSKrAc",
-      "title": "Creadores de mercado automatizados y mecánica de liquidez concentrada",
-      "caption": "Riguroso recorrido visual de las reservas virtuales, los límites de los ticks, las curvas de pérdidas no permanentes y las ganancias de eficiencia del capital."
+      "title": "Automated Market Makers & Concentrated Liquidity Mechanics",
+      "caption": "Rigorous visual walkthrough of virtual reserves, tick boundaries, impermanent loss curves, and capital efficiency gains."
     },
     {
       "type": "h2",
-      "text": "4. Discretización de ticks y niveles de tarifas dinámicas"
+      "text": "1. Geometría de liquidez concentrada y reservas virtuales"
     },
     {
       "type": "p",
-      "text": "Para evitar la imprecisión del punto flotante en las máquinas virtuales en cadena, los precios se discretizan en ticks logarítmicos indexados por números enteros $i$:"
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "code",
@@ -90,20 +102,20 @@
     },
     {
       "type": "p",
-      "text": "Cuando una orden de mercado grande consume toda la liquidez disponible dentro de un tick, el protocolo actualiza el precio global, cruza el límite del tick y activa el siguiente vector de liquidez discreto con una sobrecarga de gas mínima."
+      "text": "La invención del Creador de Mercado Automatizado (AMM) representa una de las innovaciones estructurales más radicales en las microestructuras de los mercados financieros. En las finanzas centralizadas tradicionales, la creación de mercado se basa en libros de órdenes límite centralizados (CLOB) administrados por empresas creadoras de mercado de alta frecuencia que publican continuamente ofertas y solicitudes. En las cadenas de bloques descentralizadas peer-to-peer, donde la latencia de los bloques y los costos del gas hacen que la cancelación de órdenes de alta frecuencia sea prohibitivamente costosa, las fórmulas matemáticas deterministas (Constant Function Market Makers (CFMM)) reemplazan los libros de órdenes con fondos de liquidez algorítmicos y pasivos."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones estratégicas para proveedores de liquidez cuantitativa"
+      "text": "1. Geometría de liquidez concentrada y reservas virtuales"
     },
     {
       "type": "ul",
       "items": [
-        "Los activos correlacionados sobresalen en bandas estrechas: los pares de monedas estables (por ejemplo, USDT/USDC) pueden concentrar liquidez de forma segura dentro de bandas de ±0,1%, lo que produce APY astronómicos con un riesgo direccional mínimo.",
-        "La cobertura dinámica elimina Delta: los creadores de mercado sofisticados compensan el riesgo gamma direccional poniendo en corto los futuros perpetuos subyacentes en lugares centralizados mientras capturan las tarifas LP en la cadena.",
-        "Gestionar la amortización del gas: el reequilibrio frecuente de ticks en niveles de liquidación de tarifas altas puede erosionar rápidamente las tarifas LP acumuladas; implementar bóvedas automatizadas de gestión de liquidez."
+        "Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) can safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
+        "Dynamic Hedging Eliminates Delta: Sophisticated market makers offset directional gamma risk by shorting underlying perpetual futures on centralized venues while capturing LP fees on-chain.",
+        "Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers can rapidly erode accumulated LP fees; deploy automated liquidity management vaults."
       ]
     }
   ],
-  "sourceHash": "195ebfd00b0d0e7e1057d73a2bb8cdec23c6f235"
+  "sourceHash": "403e07c0446eb222b4c64a3ef64185919b743949"
 }

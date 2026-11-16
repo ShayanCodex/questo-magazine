@@ -13,7 +13,7 @@
     "cryptography"
   ],
   "image": "/images/articles/cbdc-central-banking.jpg",
-  "imageAlt": "Terminal digital de liquidez financiera que muestra vectores de liquidación del banco central y pares de divisas en tiempo real",
+  "imageAlt": "Digital financial liquidity terminal displaying real time central bank settlement vectors and foreign exchange pairs",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Las monedas digitales del banco central (CBDC) representan una manifestación digital de la moneda fiduciaria soberana y constituyen una responsabilidad legal directa de la autoridad monetaria emisora. Al combinar las reservas del banco central con tecnología de contabilidad distribuida (DLT) o libros de contabilidad relacionales centralizados de alta concurrencia, las CBDC permiten la liquidación atómica de Pago contra Pago (PvP) en tiempo real."
+      "text": "La arquitectura monetaria internacional está atravesando su realineamiento estructural más profundo desde la conferencia de Bretton Woods de 1944. Durante décadas, la liquidación de pagos transfronterizos se ha basado en la antigua red bancaria corresponsal: una red ineficiente de mensajes SWIFT fragmentados, zonas horarias dispares y cuentas bilaterales Nostro/Vostro que introducen riesgos de liquidación de contrapartes de varios días y una alta fricción en las transacciones."
     },
     {
       "type": "h2",
       "text": "1. Taxonomías arquitectónicas: CBDC mayoristas versus minoristas"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Central Bank Digital Currencies."
+    },
+    {
       "type": "p",
-      "text": "Las monedas digitales de los bancos centrales se dividen fundamentalmente entre niveles de acceso y alcances de liquidación:"
+      "text": "La arquitectura monetaria internacional está atravesando su realineamiento estructural más profundo desde la conferencia de Bretton Woods de 1944. Durante décadas, la liquidación de pagos transfronterizos se ha basado en la antigua red bancaria corresponsal: una red ineficiente de mensajes SWIFT fragmentados, zonas horarias dispares y cuentas bilaterales Nostro/Vostro que introducen riesgos de liquidación de contrapartes de varios días y una alta fricción en las transacciones."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "CBDC Functional Taxonomies:\n1. Wholesale CBDC (wCBDC):\n   - Participants: Restricted strictly to licensed financial institutions and central clearing counterparties.\n   - Purpose: Interbank clearing, cross-border gross settlement, and tokenized securities DvP (Delivery-versus-Payment).\n   - Technology: Permissioned distributed ledgers (Corda, Hyperledger Fabric, bespoke DLT stacks).\n\n2. Retail CBDC (rCBDC):\n   - Participants: General public, retail merchants, and non-bank consumers.\n   - Purpose: Digital cash replacement, offline transactions, and financial inclusion.\n   - Architecture: Two-tier intermediated model (central bank issues; private commercial banks distribute)."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Central Bank Digital Currencies."
+    },
+    {
       "type": "p",
-      "text": "La estructura intermedia de dos niveles es fundamental para mantener la estabilidad económica. Las cuentas minoristas directas en el banco central eliminarían la intermediación del sistema bancario comercial, desencadenando una fuga de depósitos durante las crisis financieras y paralizando la creación de crédito en todo el sector privado."
+      "text": "La arquitectura monetaria internacional está atravesando su realineamiento estructural más profundo desde la conferencia de Bretton Woods de 1944. Durante décadas, la liquidación de pagos transfronterizos se ha basado en la antigua red bancaria corresponsal: una red ineficiente de mensajes SWIFT fragmentados, zonas horarias dispares y cuentas bilaterales Nostro/Vostro que introducen riesgos de liquidación de contrapartes de varios días y una alta fricción en las transacciones."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Mecanismos de liquidación transfronteriza: Proyecto mBridge"
+      "text": "1. Taxonomías arquitectónicas: CBDC mayoristas versus minoristas"
     },
     {
       "type": "p",
-      "text": "La plataforma mayorista multilateral más madura es el Proyecto mBridge, desarrollado en colaboración por el Centro de Innovación del Banco de Pagos Internacionales (BPI) y los bancos centrales de Hong Kong, China, Tailandia y los Emiratos Árabes Unidos."
+      "text": "La arquitectura monetaria internacional está atravesando su realineamiento estructural más profundo desde la conferencia de Bretton Woods de 1944. Durante décadas, la liquidación de pagos transfronterizos se ha basado en la antigua red bancaria corresponsal: una red ineficiente de mensajes SWIFT fragmentados, zonas horarias dispares y cuentas bilaterales Nostro/Vostro que introducen riesgos de liquidación de contrapartes de varios días y una alta fricción en las transacciones."
     },
     {
       "type": "ul",
       "items": [
-        "Liquidación atómica de plataforma única: reemplaza las cadenas bancarias corresponsales con un libro de contabilidad DLT unificado donde las transacciones se liquidan de forma atómica en segundos en lugar de días.",
-        "Pares directos de moneda local: Facilita la liquidación directa de divisas entre pares de divisas distintos del dólar, mitigando la dependencia de monedas vehículo intermedias.",
-        "Cumplimiento normativo por diseño: incorpora la detección automatizada de sanciones jurisdiccionales y el monitoreo de transacciones ALD directamente dentro de contratos inteligentes a nivel de protocolo."
+        "Single-Platform Atomic Settlement: Replaces correspondent banking chains with a unified DLT ledger where transactions clear atomically in seconds rather than days.",
+        "Local Currency Direct Pairs: Facilitates direct foreign exchange settlement between non-dollar currency pairs, mitigating reliance on intermediate vehicle currencies.",
+        "Regulatory Compliance by Design: Embeds automated jurisdictional sanctions screening and AML transaction monitoring directly within smart contracts at the protocol level."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Dinero, liquidez y ciclos económicos del banco central"
+      "text": "1. Taxonomías arquitectónicas: CBDC mayoristas versus minoristas"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "Cómo funcionan las máquinas económicas, liquidez del banco central y ciclos crediticios",
-      "caption": "Clase magistral de Ray Dalio sobre banca central, creación de deuda soberana, velocidad del dinero y ciclos crediticios económicos."
+      "title": "How Economic Machines Work, Central Bank Liquidity & Credit Cycles",
+      "caption": "Ray Dalio's masterclass on central banking, sovereign debt creation, money velocity, and economic credit cycles."
     },
     {
       "type": "h2",
-      "text": "4. Ingeniería de privacidad: pruebas de conocimiento cero y anonimato escalonado"
+      "text": "1. Taxonomías arquitectónicas: CBDC mayoristas versus minoristas"
     },
     {
       "type": "p",
-      "text": "La principal preocupación pública en torno a las CBDC minoristas es la erosión de la privacidad financiera. A diferencia de los billetes físicos, las transacciones digitales pueden, en teoría, dejar una huella de vigilancia indeleble."
+      "text": "La arquitectura monetaria internacional está atravesando su realineamiento estructural más profundo desde la conferencia de Bretton Woods de 1944. Durante décadas, la liquidación de pagos transfronterizos se ha basado en la antigua red bancaria corresponsal: una red ineficiente de mensajes SWIFT fragmentados, zonas horarias dispares y cuentas bilaterales Nostro/Vostro que introducen riesgos de liquidación de contrapartes de varios días y una alta fricción en las transacciones."
     },
     {
       "type": "p",
-      "text": "Los estándares arquitectónicos modernos abordan esto a través de pruebas criptográficas de conocimiento cero (zk-SNARK) y protocolos de anonimato escalonados. Las transacciones nacionales de bajo valor (menos de 500 euros o 1000 dólares) son completamente anónimas, lo que valida matemáticamente la validez del token y la suficiencia del saldo sin revelar la identidad del usuario a los libros de contabilidad del banco central o a los intermediarios comerciales."
+      "text": "La arquitectura monetaria internacional está atravesando su realineamiento estructural más profundo desde la conferencia de Bretton Woods de 1944. Durante décadas, la liquidación de pagos transfronterizos se ha basado en la antigua red bancaria corresponsal: una red ineficiente de mensajes SWIFT fragmentados, zonas horarias dispares y cuentas bilaterales Nostro/Vostro que introducen riesgos de liquidación de contrapartes de varios días y una alta fricción en las transacciones."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones macroeconómicas y de la banca central"
+      "text": "1. Taxonomías arquitectónicas: CBDC mayoristas versus minoristas"
     },
     {
       "type": "ul",
       "items": [
-        "Límites de tenencia y niveles de interés cero: Imponer límites máximos de tenencia individual en las carteras minoristas para evitar pérdidas sistémicas repentinas de depósitos de los bancos comerciales durante las corridas bancarias.",
-        "Funcionalidad dual sin conexión: incorpore elementos seguros de hardware (eSE) en teléfonos inteligentes y tarjetas inteligentes para permitir pagos entre pares sin conexión durante cortes de red o de la red eléctrica.",
-        "Pasarelas de interoperabilidad: garantizar que los libros de contabilidad soberanos de CBDC expongan las API ISO 20022 estandarizadas para unir los sistemas RTGS heredados con la infraestructura financiera tokenizada de próxima generación."
+        "Holding Caps & Zero-Interest Tiers: Impose maximum individual holding limits on retail wallets to prevent sudden systemic deposit drains from commercial banks during bank runs.",
+        "Dual Offline Functionality: Embed hardware secure elements (eSE) in smartphones and smartcards to enable offline peer-to-peer payments during power grid or network outages.",
+        "Interoperability Gateways: Ensure sovereign CBDC ledgers expose standardized ISO 20022 APIs to bridge legacy RTGS systems with next-generation tokenized financial infrastructure."
       ]
     }
   ],
-  "sourceHash": "b00bf0fc370f2680894bb4b9c53540eff0dcdbdc"
+  "sourceHash": "090854e2bfe104a37b9e6801f28f10536641ba09"
 }

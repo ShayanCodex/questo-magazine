@@ -11,8 +11,8 @@
     "ux",
     "brutalism"
   ],
-  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Revista editorial minimalista con diseño asimétrico y espacios en blanco brutalistas",
+  "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Minimalist editorial magazine spreads with asymmetric layout and brutalist white space",
   "body": [
     {
       "type": "p",
@@ -20,19 +20,31 @@
     },
     {
       "type": "p",
-      "text": "Esta homogeneización visual no es un accidente; es el subproducto inevitable del monocultivo de bibliotecas de componentes. Marcos como Bootstrap, Material Design y Tailwind UI han convertido el diseño de interfaz en productos básicos. Al priorizar la facilidad de implementación y la reutilización de los componentes por encima de la expresión artística, la industria del diseño digital ha erradicado con éxito la personalidad, la jerarquía tipográfica y el ritmo editorial genuino de la web."
+      "text": "Todos los sitios web corporativos parecen idénticos. Ya sea que visite una startup de atención médica, un proveedor de nube empresarial o un blog de estilo de vida contemporáneo, es casi seguro que encontrará exactamente la misma fórmula visual: un título centrado en Inter o Roboto, un botón de acción principal en forma de píldora y tres tarjetas idénticas con esquinas redondeadas flotando sobre un fondo gris claro con sombras sutiles."
     },
     {
       "type": "h2",
       "text": "El estancamiento cognitivo de las tarjetas repetitivas"
     },
     {
-      "type": "p",
-      "text": "El componente de la tarjeta fue popularizado originalmente por Pinterest y Twitter como una metáfora clara de fragmentos de redes sociales discretos y del tamaño de un bocado. Sin embargo, cuando se aplica indiscriminadamente al periodismo extenso, a los ensayos culturales críticos y a las revistas digitales de lujo, la metáfora de la tarjeta colapsa en la monotonía cognitiva."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Death of the Card Grid - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Death of the Card Grid."
     },
     {
       "type": "p",
-      "text": "Cuando veinte artículos se presentan en cuadrículas idénticas de 3x3 de rectángulos blancos idénticos, los ojos del lector se ponen vidriosos. No hay un punto de entrada visual, ni un contraste de escala tipográfica que señale la jerarquía editorial, ni un ritmo narrativo. Todo parece igualmente importante, lo que significa que nada es importante."
+      "text": "Todos los sitios web corporativos parecen idénticos. Ya sea que visite una startup de atención médica, un proveedor de nube empresarial o un blog de estilo de vida contemporáneo, es casi seguro que encontrará exactamente la misma fórmula visual: un título centrado en Inter o Roboto, un botón de acción principal en forma de píldora y tres tarjetas idénticas con esquinas redondeadas flotando sobre un fondo gris claro con sombras sutiles."
+    },
+    {
+      "type": "p",
+      "text": "Todos los sitios web corporativos parecen idénticos. Ya sea que visite una startup de atención médica, un proveedor de nube empresarial o un blog de estilo de vida contemporáneo, es casi seguro que encontrará exactamente la misma fórmula visual: un título centrado en Inter o Roboto, un botón de acción principal en forma de píldora y tres tarjetas idénticas con esquinas redondeadas flotando sobre un fondo gris claro con sombras sutiles."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Death of the Card Grid - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Death of the Card Grid."
     },
     {
       "type": "quote",
@@ -41,11 +53,11 @@
     },
     {
       "type": "h2",
-      "text": "Los principios del despertar editorial asimétrico"
+      "text": "El estancamiento cognitivo de las tarjetas repetitivas"
     },
     {
       "type": "p",
-      "text": "Para recuperar la vitalidad de la publicación digital, los diseñadores deben estudiar las obras maestras de la dirección de arte impreso, desde Harper's Bazaar de Alexey Brodovitch hasta Twen de Willy Fleckhaus. Estos legendarios directores de arte entendieron que el ritmo visual es musical: un susurro debe ser seguido por un grito; una columna tipográfica densa y apretada debe yuxtaponerse a un campo blanco expansivo y silencioso."
+      "text": "Todos los sitios web corporativos parecen idénticos. Ya sea que visite una startup de atención médica, un proveedor de nube empresarial o un blog de estilo de vida contemporáneo, es casi seguro que encontrará exactamente la misma fórmula visual: un título centrado en Inter o Roboto, un botón de acción principal en forma de píldora y tres tarjetas idénticas con esquinas redondeadas flotando sobre un fondo gris claro con sombras sutiles."
     },
     {
       "type": "h3",
@@ -54,24 +66,24 @@
     {
       "type": "ul",
       "items": [
-        "Dramática disparidad de escala tipográfica: yuxtaponer un título de visualización de 80 puntos con una tira de metadatos compacta de 10 puntos sin encerrarlos en bordes de tarjetas artificiales.",
-        "Flujo horizontal asimétrico: romper columnas rígidas para permitir que la fotografía a sangre completa empuje los bloques de texto descentrados, creando una tensión compositiva dinámica.",
-        "Tiras de marquesina editorial: Presentamos cintas tipográficas continuas que proporcionan ritmo cinético y movimiento contextual.",
-        "Espacio negativo generoso y sin límites: permitir que el espacio en blanco natural entre elementos defina agrupaciones en lugar de encajonar todo dentro de contenedores con bordes de 1 px."
+        "Dramatic typographic scale disparity: Juxtaposing an 80-point display title with a compact 10-point metadata strip without enclosing them in artificial card borders.",
+        "Asymmetric horizontal flow: Breaking rigid columns to allow full-bleed photography to push against off-center text blocks, creating dynamic compositional tension.",
+        "Editorial marquee strips: Introducing continuous typographic ticker ribbons that provide kinetic rhythm and contextual movement.",
+        "Generous, unbordered negative space: Allowing the natural white space between elements to define groupings rather than boxing everything inside 1px bordered containers."
       ]
     },
     {
       "type": "h2",
-      "text": "Diseño para el lector atento"
+      "text": "El estancamiento cognitivo de las tarjetas repetitivas"
     },
     {
       "type": "p",
-      "text": "Cuando rechazamos la omnipresente cuadrícula de tarjetas, demostramos respeto por la inteligencia del lector. Reconocemos que el periodismo serio y los comentarios culturales merecen una coreografía espacial personalizada, no un contenedor prefabricado heredado de un catálogo de comercio electrónico."
+      "text": "Todos los sitios web corporativos parecen idénticos. Ya sea que visite una startup de atención médica, un proveedor de nube empresarial o un blog de estilo de vida contemporáneo, es casi seguro que encontrará exactamente la misma fórmula visual: un título centrado en Inter o Roboto, un botón de acción principal en forma de píldora y tres tarjetas idénticas con esquinas redondeadas flotando sobre un fondo gris claro con sombras sutiles."
     },
     {
       "type": "p",
-      "text": "Questo Magazine es un manifiesto viviente de esta revolución visual: una publicación internacional donde el minimalismo brutalista, el rigor tipográfico suizo y los expresivos diseños asimétricos convergen para crear una experiencia de lectura inolvidable."
+      "text": "Todos los sitios web corporativos parecen idénticos. Ya sea que visite una startup de atención médica, un proveedor de nube empresarial o un blog de estilo de vida contemporáneo, es casi seguro que encontrará exactamente la misma fórmula visual: un título centrado en Inter o Roboto, un botón de acción principal en forma de píldora y tres tarjetas idénticas con esquinas redondeadas flotando sobre un fondo gris claro con sombras sutiles."
     }
   ],
-  "sourceHash": "3a82b29b0ef0298fe3d9eaedee20ac4aa20724c7"
+  "sourceHash": "319e57741591ea70a0c83988f6fd788b2ac0d172"
 }

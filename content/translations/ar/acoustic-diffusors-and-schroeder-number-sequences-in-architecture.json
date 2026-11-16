@@ -12,7 +12,7 @@
     "concert-halls"
   ],
   "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "ألواح الجدران الخشبية الصوتية المنحوتة والحواجز المعمارية في قاعة أوركسترا حديثة",
+  "imageAlt": "Sculptural acoustic timber wall panels and architectural baffles in a modern philharmonic auditorium",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "ما وراء الانعكاس والامتصاص المرآوي"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Acoustic Diffusors & Schroeder Sequences in Architecture."
     },
     {
       "type": "ul",
       "items": [
-        "ناشرات البقايا التربيعية (QRD): تم تصميمها باستخدام الحساب المعياري الرياضي $s_n = n^2 \\pmod{N}$، مما يؤدي إلى إنشاء أعماق جيدة تحول الطور بالتساوي.",
-        "الناشرون الجذريون البدائيون (PRD): استخدم نظرية الأعداد الأولية للتخلص من الانعكاسات المرآوية ذات الترتيب الصفري عبر النطاقات الصوتية العريضة متوسطة التردد.",
-        "الحفاظ على الطاقة العكسية: على عكس ماصات الألياف الزجاجية، تحافظ أجهزة التوزيع على طاقة الغرفة مع القضاء على أصداء الرفرفة وترشيح المشط.",
-        "الغلاف المكاني: تعمل مصفوفات شبكات الطور الموزعة على تعزيز الانطباع الشخصي عن غلاف المستمع (LEV) في القاعات السمفونية."
+        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths that shift phase evenly.",
+        "Primitive Root Diffusors (PRD): Utilize prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
+        "Preservation of Reverberant Energy: Unlike fiberglass absorbers, diffusors maintain room energy while eliminating flutter echoes and comb filtering.",
+        "Spatial Envelopment: Distributed phase grating arrays enhance the subjective impression of listener envelopment (LEV) in symphonic halls."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "الجمعية الصوتية للمهندسين المعماريين"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Acoustic Diffusors & Schroeder Sequences in Architecture."
+    },
+    {
       "type": "h2",
-      "text": "رياضيات شبكات الطور"
+      "text": "ما وراء الانعكاس والامتصاص المرآوي"
     },
     {
       "type": "p",
-      "text": "رائدة من قبل الفيزيائي مانفريد شرودر في أواخر السبعينيات، تستخدم شبكات الطور الرياضي أعماقًا متفاوتة مفصولة بفواصل صوتية رفيعة. عندما تواجه موجة عارضه هذه الآبار، تخرج المويجات المنعكسة بتأخيرات طورية متميزة، مما يؤدي إلى تداخل مدمر على طول المحور المرآوي وتشتت واسع في مكان آخر."
+      "text": "تطورت الصوتيات المعمارية إلى ما هو أبعد من التوتر الثنائي للانعكاس المرآوي والامتصاص المسامي. في حين أن الأسطح المستوية الصلبة تعكس الصوت مثل المرايا والأقمشة الكثيفة تخفف من طاقة الصوت، فإن الناشرات تشتت طاقة الموجة الساقطة بشكل موحد عبر الزمن والإحداثيات المكانية دون استنزاف الحيوية الصوتية المحيطة."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/n3W-n_dF83U",
-      "title": "الصوتيات المعمارية وفيزياء شرودر الناشرة",
-      "caption": "نظرة عامة هندسية على ناشرات البقايا التربيعية والحسابات المتعمقة وأنماط انتشار الصوت في القاعات."
+      "title": "Architectural Acoustics & Schroeder Diffusor Physics",
+      "caption": "An engineering overview of quadratic residue diffusors, well-depth calculations, and sound diffusion patterns in auditoriums.",
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
     },
     {
       "type": "h2",
-      "text": "التحسين الحسابي في التصميم المعاصر"
+      "text": "ما وراء الانعكاس والامتصاص المرآوي"
     },
     {
       "type": "p",
-      "text": "تستخدم الممارسات المعمارية المعاصرة النمذجة الموجية ذات العناصر المحدودة لنحت الألواح الخشبية المتموجة ثلاثية الأبعاد مباشرة في الهندسة الداخلية للقاعات، ومزج الفيزياء الصوتية مع الجماليات النحتية."
+      "text": "تطورت الصوتيات المعمارية إلى ما هو أبعد من التوتر الثنائي للانعكاس المرآوي والامتصاص المسامي. في حين أن الأسطح المستوية الصلبة تعكس الصوت مثل المرايا والأقمشة الكثيفة تخفف من طاقة الصوت، فإن الناشرات تشتت طاقة الموجة الساقطة بشكل موحد عبر الزمن والإحداثيات المكانية دون استنزاف الحيوية الصوتية المحيطة."
     }
   ],
-  "sourceHash": "968a630affc67b96338554bbe3f0f26e551bb1fa"
+  "sourceHash": "a694b4a265a24dd1874e8c29c785c9ef5dd9ef57"
 }

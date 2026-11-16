@@ -13,7 +13,7 @@
     "engineering"
   ],
   "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "Präzisionsgefertigter Labortestaufbau für elektrochemische Batteriezellen mit hoher Energiedichte.",
+  "imageAlt": "Precision engineered high energy density electrochemical battery cell laboratory test setup",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "All-Solid-State-Batterien (ASSBs) ersetzen das flüssige Lösungsmittel durch eine anorganische keramische oder sulfidionenleitende feste Matrix. Durch die Kombination von Festelektrolyten mit rein metallischen Lithium- oder Silizium-dominanten Anoden versprechen ASSBs gravimetrische Energiedichten von mehr als 500 Wh/kg, große thermische Betriebsbereiche (-30 °C bis 100 °C) und nicht brennbare inhärente Sicherheit."
+      "text": "Die Elektrifizierung der kommerziellen Luftfahrt, des Schwerlastgüterverkehrs und des Passagiertransports mit großer Reichweite wird grundsätzlich durch die Energiedichte und die Gefahr des thermischen Durchgehens herkömmlicher Lithium-Ionen-Zellen mit flüssigem Elektrolyten eingeschränkt. Kommerzielle Graphit-Interkalationszellen haben eine Höchstleistung von etwa 280 Wh/kg und basieren auf flüchtigen, brennbaren organischen Karbonaten, die sich bei mechanischer Beschädigung oder internen Kurzschlüssen entzünden."
     },
     {
       "type": "h2",
       "text": "1. Festelektrolytklassen: Sulfide vs. Oxide vs. Halogenide"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "Die Lebensfähigkeit jeder Festkörperarchitektur hängt von der Ionenleitfähigkeit ($\\sigma_{ion}$) bei Umgebungstemperaturen ab:"
+      "text": "Die Elektrifizierung der kommerziellen Luftfahrt, des Schwerlastgüterverkehrs und des Passagiertransports mit großer Reichweite wird grundsätzlich durch die Energiedichte und die Gefahr des thermischen Durchgehens herkömmlicher Lithium-Ionen-Zellen mit flüssigem Elektrolyten eingeschränkt. Kommerzielle Graphit-Interkalationszellen haben eine Höchstleistung von etwa 280 Wh/kg und basieren auf flüchtigen, brennbaren organischen Karbonaten, die sich bei mechanischer Beschädigung oder internen Kurzschlüssen entzünden."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Nernst-Einstein Ionic Conductivity Relation:\nσ_ion = (n · q² · D_Li) / (k_B · T)\n\nComparison of Solid Electrolyte Families:\n- Sulfides (LGPS, Argyrodites): σ_ion ≈ 10 to 25 mS/cm (exceeds liquid electrolyte speed), highly ductile, but releases toxic H₂S gas upon ambient moisture exposure.\n- Oxides (Garnet LLZO, NASICON): σ_ion ≈ 1 mS/cm, chemically stable against high-voltage cathodes, but extremely brittle with high interfacial contact resistance.\n- Halides (Li₃InCl₆): σ_ion ≈ 1 to 5 mS/cm, highly oxidative stability (> 4.5 V), excellent compatibility with high-nickel cathodes."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696331111-ac95829f2a42?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "Da Sulfidkristalle über weichere, polarisierbarere Schwefelanionengerüste verfügen, stoßen Lithiumionen auf niedrige Migrationsaktivierungsbarrieren ($E_a < 0,25 $ eV), was einen schnellen Transport ermöglicht, der mit herkömmlichen flüssigen Elektrolyten mithalten kann."
+      "text": "Die Elektrifizierung der kommerziellen Luftfahrt, des Schwerlastgüterverkehrs und des Passagiertransports mit großer Reichweite wird grundsätzlich durch die Energiedichte und die Gefahr des thermischen Durchgehens herkömmlicher Lithium-Ionen-Zellen mit flüssigem Elektrolyten eingeschränkt. Kommerzielle Graphit-Interkalationszellen haben eine Höchstleistung von etwa 280 Wh/kg und basieren auf flüchtigen, brennbaren organischen Karbonaten, die sich bei mechanischer Beschädigung oder internen Kurzschlüssen entzünden."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Das Dendriten-Rätsel: Kritische Stromdichte (CCD)"
+      "text": "1. Festelektrolytklassen: Sulfide vs. Oxide vs. Halogenide"
     },
     {
       "type": "p",
-      "text": "Frühe Theorien gingen davon aus, dass ein starrer fester Keramikelektrolyt die Bildung von Lithiumdendriten über das Monroe-Newman-Kriterium (Schermodul $G_{SE} > 2 \\cdot G_{Li}$) mechanisch unterdrücken würde. Die operando-Röntgentomographie ergab jedoch, dass Lithiummetall unter Schnellladebedingungen leicht in intergranulare Korngrenzen und Mikrorisse eindringt."
+      "text": "Die Elektrifizierung der kommerziellen Luftfahrt, des Schwerlastgüterverkehrs und des Passagiertransports mit großer Reichweite wird grundsätzlich durch die Energiedichte und die Gefahr des thermischen Durchgehens herkömmlicher Lithium-Ionen-Zellen mit flüssigem Elektrolyten eingeschränkt. Kommerzielle Graphit-Interkalationszellen haben eine Höchstleistung von etwa 280 Wh/kg und basieren auf flüchtigen, brennbaren organischen Karbonaten, die sich bei mechanischer Beschädigung oder internen Kurzschlüssen entzünden."
     },
     {
       "type": "ul",
       "items": [
-        "Kritische Stromdichte (CCD): Die maximale Ladestromrate, ab der eine ungleichmäßige Lithiumbeschichtung intergranulare Kurzschlüsse auslöst.",
-        "Stapeldruckmanagement: Die Aufrechterhaltung eines konstanten uniaxialen Stapeldrucks von 1 bis 5 MPa gewährleistet einen engen physikalischen Feststoff-Festkontakt als Lithiumstreifen und -platten während der Entladezyklen.",
-        "Grenzflächenpufferbeschichtungen: Dünne ALD-Beschichtungen (Atomic Layer Deposition) aus Zink, Kohlenstoff oder Goldlegierung mit einströmendem Lithium, die ein planares 2D-Wachstum anstelle von 1D-Filamentspitzen gewährleisten."
+        "Critical Current Density (CCD): The maximum charging current rate beyond which non-uniform lithium plating initiates intergranular short circuits.",
+        "Stack Pressure Management: Maintaining constant uniaxial stack pressures of 1 to 5 MPa ensures intimate solid-solid physical contact as lithium strips and plates during discharge cycles.",
+        "Interfacial Buffer Coatings: Thin ALD (Atomic Layer Deposition) coatings of zinc, carbon, or gold alloy with incoming lithium, ensuring planar 2D growth rather than 1D filamentous spikes."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video-Meisterklasse: Hochspannungselektrochemie und fortschrittliche Speicherung"
+      "text": "1. Festelektrolytklassen: Sulfide vs. Oxide vs. Halogenide"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "Elektrochemische Hochspannungsenergiespeicherung und fortschrittliche Netzbatterien",
-      "caption": "Technische Analyse der fortschrittlichen Batteriechemie, der Festkörperzellenarchitektur und der Energiespeicherung im Versorgungsmaßstab."
+      "title": "High Voltage Electrochemical Energy Storage and Advanced Grid Batteries",
+      "caption": "Engineering analysis of advanced battery chemistry, solid-state cell architecture, and utility-scale energy storage."
     },
     {
       "type": "h2",
-      "text": "4. Silizium-Verbundanoden: 300 % volumetrische Expansionsmechanik"
+      "text": "1. Festelektrolytklassen: Sulfide vs. Oxide vs. Halogenide"
     },
     {
       "type": "p",
-      "text": "Während reines Lithiummetall das ultimative Ziel bleibt, bietet Silizium eine außergewöhnliche Zwischenbrücke. Silizium verfügt über eine theoretische spezifische Kapazität von 3.579 mAh/g ($Li_{15}Si_4$), fast zehnmal so viel wie kommerzieller Graphit (372 mAh/g)."
+      "text": "Die Elektrifizierung der kommerziellen Luftfahrt, des Schwerlastgüterverkehrs und des Passagiertransports mit großer Reichweite wird grundsätzlich durch die Energiedichte und die Gefahr des thermischen Durchgehens herkömmlicher Lithium-Ionen-Zellen mit flüssigem Elektrolyten eingeschränkt. Kommerzielle Graphit-Interkalationszellen haben eine Höchstleistung von etwa 280 Wh/kg und basieren auf flüchtigen, brennbaren organischen Karbonaten, die sich bei mechanischer Beschädigung oder internen Kurzschlüssen entzünden."
     },
     {
       "type": "p",
-      "text": "Die Lithiierung führt jedoch zu einer starken Volumenausdehnung von 300 %, wodurch herkömmliche Elektroden pulverisiert werden. Wenn sie in eine Elastomer-Festkörper-Bindemittelmatrix mit hoher Grenzflächenelastizität eingebettet sind, ermöglichen Mikro-Silizium-Verbundanoden die zyklische Atmung, ohne dass elektrische Perkolationswege verloren gehen."
+      "text": "Die Elektrifizierung der kommerziellen Luftfahrt, des Schwerlastgüterverkehrs und des Passagiertransports mit großer Reichweite wird grundsätzlich durch die Energiedichte und die Gefahr des thermischen Durchgehens herkömmlicher Lithium-Ionen-Zellen mit flüssigem Elektrolyten eingeschränkt. Kommerzielle Graphit-Interkalationszellen haben eine Höchstleistung von etwa 280 Wh/kg und basieren auf flüchtigen, brennbaren organischen Karbonaten, die sich bei mechanischer Beschädigung oder internen Kurzschlüssen entzünden."
     },
     {
       "type": "h2",
-      "text": "5. Erkenntnisse aus der elektrochemischen Systemtechnik"
+      "text": "1. Festelektrolytklassen: Sulfide vs. Oxide vs. Halogenide"
     },
     {
       "type": "ul",
       "items": [
-        "Stapelkompressionstechnik: Entwerfen Sie Zellgehäuse mit federbelasteten mechanischen Platten, um einen kontinuierlichen Grenzflächenkontakt über Schwankungen der Ladezustandsdicke von 20 % aufrechtzuerhalten.",
-        "Herstellung in Trockenräumen: Die Herstellung von Sulfid-Festelektrolyten erfordert extrem trockene Atmosphären (Taupunkt < -50 °C), um eine tödliche Schwefelwasserstoffzersetzung zu verhindern.",
-        "Kathodenkopplung mit hohem Nickelgehalt: Kombinieren Sie Festelektrolyte mit einkristallinen NMC90-Kathoden, die mit Lithiumborat beschichtet sind, um Mikrorisse bei hohen Zellspannungen (> 4,3 V) zu vermeiden."
+        "Stack Compression Engineering: Design cell housings with spring-loaded mechanical platens to maintain continuous interfacial contact through 20% state-of-charge thickness swings.",
+        "Dry Room Manufacturing: Sulfide solid electrolyte production requires ultra-dry atmospheres (dew point < -50°C) to prevent lethal hydrogen sulfide decomposition.",
+        "High-Nickel Cathode Coupling: Pair solid electrolytes with single-crystal NMC90 cathodes coated in lithium borate to eliminate micro-cracking at high cell voltages (> 4.3V)."
       ]
     }
   ],
-  "sourceHash": "6c79fa7b436a966eb31011d7e669ab575677147b"
+  "sourceHash": "e0806f8db83836b836c0cab1afb220067ff2ed18"
 }

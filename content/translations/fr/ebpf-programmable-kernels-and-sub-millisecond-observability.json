@@ -11,8 +11,8 @@
     "observability",
     "systems-programming"
   ],
-  "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "Racks de serveurs d'entreprise haute densité avec commutateurs de routage réseau à fibre optique éclairés",
+  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Operating system kernel packet trace data stream and low-level bytecode monitoring",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "Réarchitecture des limites du noyau Linux"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "eBPF in-kernel verifier bytecode safety checks and JIT compilation terminal",
+      "caption": "In-kernel bytecode verifier: mathematically proving termination and memory safety before eBPF bytecode execution."
     },
     {
       "type": "ul",
       "items": [
-        "Vérification de la sécurité : le vérificateur intégré au noyau applique rigoureusement les garanties d'exécution limitée, de sécurité des limites de mémoire et de terminaison de boucle avant le chargement de l'exécution.",
-        "Zéro surcharge de changement de contexte : l'agrégation de télémétrie se produit dans les tampons de mémoire du noyau (tampons en anneau eBPF), éliminant ainsi les opérations de copie coûteuses.",
-        "Réseau au niveau du noyau : les hooks XDP (eXpress Data Path) permettent l'abandon, la modification et le routage de paquets directement au niveau de la couche pilote de la carte d'interface réseau.",
-        "Télémétrie de sécurité approfondie : les points de trace dynamiques capturent les appels système, les événements d'allocation de mémoire et les modifications du cycle de vie des sockets de manière invisible dans l'espace utilisateur."
+        "Safety Verification: The in-kernel verifier rigorously enforces bounded execution, memory boundary safety, and loop termination guarantees prior to runtime load.",
+        "Zero Context-Switch Overhead: Telemetry aggregation occurs within kernel memory buffers (eBPF ring buffers), eliminating expensive copy operations.",
+        "Kernel-Level Networking: XDP (eXpress Data Path) hooks enable packet drop, modification, and routing directly at the network interface card driver layer.",
+        "Deep Security Telemetry: Dynamic tracepoints capture syscalls, memory allocation events, and socket lifecycle changes invisibly to user space."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Kernel Systems Engineering & Network Architecture Journal"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sub-millisecond packet latency telemetry graph tracking high-concurrency microservices",
+      "caption": "Zero-overhead observability: hooking kernel tracepoints directly without kernel module recompilation or context switch penalties."
+    },
+    {
       "type": "h2",
-      "text": "Traçage distribué sans surcharge"
+      "text": "Réarchitecture des limites du noyau Linux"
     },
     {
       "type": "p",
-      "text": "Dans les architectures cloud hyperscale, les proxys side-car traditionnels imposent des taxes insoutenables sur le processeur et la mémoire. En attachant les programmes eBPF aux tampons de socket bruts, les traces distribuées et les poignées de main cryptographiques TLS peuvent être inspectées sans instrumenter le code source de l'application ni introduire de latence dans les flux de demandes des clients."
+      "text": "Historiquement, l'extension du comportement du système d'exploitation nécessitait la création de modules de noyau complexes ou une surcharge catastrophique de changement de contexte dans l'espace utilisateur. L'émergence du Berkeley Packet Filter (eBPF) étendu a transformé le noyau Linux en un substrat programmable et piloté par les événements. En exécutant le bytecode vérifié statiquement directement dans le chemin d'exécution du noyau, les ingénieurs obtiennent une observabilité à la microseconde et un filtrage des paquets à haut débit sans recompiler les arborescences du noyau."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "Programmation des systèmes et composants internes du réseau de bas niveau",
-      "caption": "Exploration technique approfondie de la gestion des paquets du noyau, de la disposition de la mémoire et de la vérification des systèmes."
+      "title": "Systems Programming and Low-Level Network Internals",
+      "caption": "Deep technical exploration of kernel packet handling, memory layout, and systems verification.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "L'avenir de l'infrastructure cloud native"
+      "text": "Réarchitecture des limites du noyau Linux"
     },
     {
       "type": "p",
-      "text": "Alors que l'infrastructure cloud exige des latences plus faibles et une isolation de sécurité plus stricte, eBPF remplace rapidement les iptables conventionnels, les proxys réseau et les démons de profilage intrusifs. Il représente une avancée majeure en matière d'ingénierie système pour les plates-formes de serveurs modernes."
+      "text": "Historiquement, l'extension du comportement du système d'exploitation nécessitait la création de modules de noyau complexes ou une surcharge catastrophique de changement de contexte dans l'espace utilisateur. L'émergence du Berkeley Packet Filter (eBPF) étendu a transformé le noyau Linux en un substrat programmable et piloté par les événements. En exécutant le bytecode vérifié statiquement directement dans le chemin d'exécution du noyau, les ingénieurs obtiennent une observabilité à la microseconde et un filtrage des paquets à haut débit sans recompiler les arborescences du noyau."
     }
   ],
-  "sourceHash": "c8cb9a06b93e15c7803d881c55826e6447ca3bb5"
+  "sourceHash": "94b0ce963b959c528805e8037307c848e8cbebf4"
 }

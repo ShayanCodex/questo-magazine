@@ -11,8 +11,8 @@
     "parametric-design",
     "sustainability"
   ],
-  "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "Paneles de pared acústicos escultóricos de madera y deflectores arquitectónicos en un moderno auditorio filarmónico",
+  "image": "https://images.unsplash.com/photo-1541888946425-d0fbb186f5f7?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Curving parametric glued-laminated timber beams forming an undulating acoustic ceiling pavilion",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "Recuperación de la madera táctil en la arquitectura monumental"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Architectural mass timber building frame showcasing interlocking cross-laminated timber joints",
+      "caption": "Cross-laminated timber (CLT): carbon-sequestering structural floor plates engineered to replace structural concrete."
     },
     {
       "type": "ul",
       "items": [
-        "Secuestro de carbono biofílico: La madera contralaminada (CLT) recolectada de manera sostenible atrapa el carbono atmosférico dentro de envolturas estructurales cívicas permanentes.",
-        "Carpintería algorítmica: las juntas de mortaja y espiga de madera entrelazadas fresadas mediante CNC eliminan los adhesivos tóxicos y los soportes de acero con alto contenido de carbono.",
-        "Geometría de superficie resonante: Las facetas de las paredes de madera onduladas paramétricamente dispersan reflejos sónicos especulares, cultivando una cálida acústica sinfónica.",
-        "Rendimiento de masa térmica: Los paneles de madera de gran masa ofrecen propiedades de aislamiento excepcionales y amortiguan el ruido urbano exterior de baja frecuencia."
+        "Biophilic Carbon Sequestration: Sustainably harvested cross-laminated timber (CLT) traps atmospheric carbon within permanent civic structural envelopes.",
+        "Algorithmic Joinery: CNC-milled interlocking timber mortise-and-tenon joints eliminate toxic adhesives and carbon-intensive steel brackets.",
+        "Resonant Surface Geometry: Parametrically undulating wooden wall facets disperse specular sonic reflections, cultivating warm symphonic acoustics.",
+        "Thermal Mass Performance: Heavy mass timber panels deliver exceptional insulation properties, damping exterior low-frequency urban noise."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Elena Rostova, Monografías sobre elegancia estructural"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Computer-controlled robotic timber joinery cutting complex mathematical double-curved beams",
+      "caption": "Parametric optimization: algorithmically aligning timber grain fiber geometry to maximize load-bearing and acoustic diffusion."
+    },
+    {
       "type": "h2",
-      "text": "Difusión acústica computacional en espacios de actuación"
+      "text": "Recuperación de la madera táctil en la arquitectura monumental"
     },
     {
       "type": "p",
-      "text": "En las salas de conciertos contemporáneas, las superficies de madera se calculan con patrones matemáticos de residuos cuadráticos. Al escalonar los perfiles de profundidad a través de escalas microscópicas y macroscópicas, la carcasa de madera dispersa ondas sonoras de frecuencia alta y media de manera uniforme entre los niveles de audiencia, eliminando los ecos de aleteo sin una presencia reverberante amortiguada."
+      "text": "Durante más de un siglo, el diseño monumental modernista se basó casi exclusivamente en refuerzos de acero y hormigón armado vertido. Hoy en día, la convergencia del modelado paramétrico computacional, el fresado robótico multieje y la ingeniería de madera en masa está inaugurando una nueva época arquitectónica: santuarios cívicos con emisiones de carbono negativas donde convergen la calidez material y la precisión acústica."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "Acústica Arquitectónica y Física de la Resonancia",
-      "caption": "Investigación de la resonancia sonora, la propagación de ondas y la física de la geometría de las salas de conciertos."
+      "title": "Architectural Acoustics and Resonance Physics",
+      "caption": "Investigation into sonic resonance, wave propagation, and the physics of concert hall geometries.",
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
     },
     {
       "type": "h2",
-      "text": "El legado vivo de la madera maciza"
+      "text": "Recuperación de la madera táctil en la arquitectura monumental"
     },
     {
       "type": "p",
-      "text": "Caminar a través de un atrio de madera paramétrico involucra todas las facultades sensoriales humanas: el aroma táctil del cedro, la sutil veta del abeto y la profunda tranquilidad acústica de un espacio diseñado para honrar la escala humana y los límites planetarios."
+      "text": "Durante más de un siglo, el diseño monumental modernista se basó casi exclusivamente en refuerzos de acero y hormigón armado vertido. Hoy en día, la convergencia del modelado paramétrico computacional, el fresado robótico multieje y la ingeniería de madera en masa está inaugurando una nueva época arquitectónica: santuarios cívicos con emisiones de carbono negativas donde convergen la calidez material y la precisión acústica."
     }
   ],
-  "sourceHash": "32ece7d48f363c4823201c41e9c7b9cf30b6223e"
+  "sourceHash": "a0660de616111cdfb991d9905ad42805ce0317b1"
 }

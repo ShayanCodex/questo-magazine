@@ -1,0 +1,79 @@
+{
+  "slug": "quantum-entanglement-and-the-black-hole-information-paradox",
+  "title": "مفارقة معلومات الثقب الأسود: الازدواجية الثلاثية الأبعاد ومنحنيات الصفحة وجدران الحماية الكمومية",
+  "excerpt": "تتبع الجدل الذي دام ثلاثين عامًا بين الوحدة الكمومية وإشعاع هوكينج: مراسلات AdS/CFT، وجزر التشابك، وتصحيح الخطأ الكمي في الزمكان المنحني.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "theoretical-physics",
+    "quantum-mechanics",
+    "black-holes",
+    "general-relativity",
+    "astrophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1564325726053-d1f50a80e14c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Cosmic deep-space nebula and gravitational lensing surrounding an astronomical black hole event horizon",
+  "body": [
+    {
+      "type": "h2",
+      "text": "الصدام غير القابل للتوفيق بين الفيزياء الحديثة"
+    },
+    {
+      "type": "p",
+      "text": "في قلب الفيزياء الأساسية يكمن تناقض عميق بين نظريتينا الأكثر نجاحًا: النسبية العامة وميكانيكا الكم. في عام 1974، أثبت ستيفن هوكينج أن التقلبات الكمومية بالقرب من أفق الحدث تتسبب في انبعاث إشعاع حراري من الثقوب السوداء وتتبخر ببطء. ومع ذلك، إذا كان هذا الإشعاع حراريًا بحتًا، فإن جميع المعلومات المتعلقة بالمادة التي شكلت الثقب الأسود في الأصل سيتم طمسها نهائيًا عندما تختفي، مما ينتهك مبدأ الوحدة الكمي الذي لا يمكن انتهاكه."
+    },
+    {
+      "type": "h2",
+      "text": "الصدام غير القابل للتوفيق بين الفيزياء الحديثة"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hawking radiation particle-antiparticle creation near the event horizon threshold",
+      "caption": "Hawking radiation mechanics: quantum vacuum fluctuations yielding entangled particle emissions at the Schwarzchild radius."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Quantum Unitarity: The fundamental theorem stating that the sum of probabilities for all possible outcomes must always equal one, ensuring that information is never destroyed in quantum mechanics.",
+        "The Page Curve: Don Page’s mathematical proof that if black hole evaporation preserves information, the entanglement entropy of radiation must initially rise before declining to zero as the hole evaporates.",
+        "Holographic Duality (AdS/CFT): The principle that quantum gravity in anti-de Sitter space is mathematically equivalent to a conformal field theory living on its boundary, guaranteeing unitarity.",
+        "Entanglement Islands: Recent semiclassical Euclidean gravity calculations revealing that interior quantum states become encoded in exterior radiation via quantum extremal surfaces."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "مفارقة معلومات الثقب الأسود هي البوتقة النظرية التي سيتم فيها التوفيق بين القوانين الأساسية للزمكان وميكانيكا الكم أو إعادة كتابتها.",
+      "cite": "الفيزياء النظرية ومراجعة الجاذبية الكمومية"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Quantum entanglement laser interferometry and holographic boundary duality mapping",
+      "caption": "AdS/CFT correspondence: boundary conformal field theory mapping higher-dimensional gravitational bulk geometry."
+    },
+    {
+      "type": "h2",
+      "text": "الصدام غير القابل للتوفيق بين الفيزياء الحديثة"
+    },
+    {
+      "type": "p",
+      "text": "في قلب الفيزياء الأساسية يكمن تناقض عميق بين نظريتينا الأكثر نجاحًا: النسبية العامة وميكانيكا الكم. في عام 1974، أثبت ستيفن هوكينج أن التقلبات الكمومية بالقرب من أفق الحدث تتسبب في انبعاث إشعاع حراري من الثقوب السوداء وتتبخر ببطء. ومع ذلك، إذا كان هذا الإشعاع حراريًا بحتًا، فإن جميع المعلومات المتعلقة بالمادة التي شكلت الثقب الأسود في الأصل سيتم طمسها نهائيًا عندما تختفي، مما ينتهك مبدأ الوحدة الكمي الذي لا يمكن انتهاكه."
+    },
+    {
+      "type": "video",
+      "title": "The Black Hole Information Paradox: How Physics Solved Its Greatest Puzzle",
+      "caption": "Detailed theoretical physics lecture on Hawking radiation, the Page Curve, and holographic quantum extremal islands.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "الصدام غير القابل للتوفيق بين الفيزياء الحديثة"
+    },
+    {
+      "type": "p",
+      "text": "في قلب الفيزياء الأساسية يكمن تناقض عميق بين نظريتينا الأكثر نجاحًا: النسبية العامة وميكانيكا الكم. في عام 1974، أثبت ستيفن هوكينج أن التقلبات الكمومية بالقرب من أفق الحدث تتسبب في انبعاث إشعاع حراري من الثقوب السوداء وتتبخر ببطء. ومع ذلك، إذا كان هذا الإشعاع حراريًا بحتًا، فإن جميع المعلومات المتعلقة بالمادة التي شكلت الثقب الأسود في الأصل سيتم طمسها نهائيًا عندما تختفي، مما ينتهك مبدأ الوحدة الكمي الذي لا يمكن انتهاكه."
+    }
+  ],
+  "sourceHash": "f7c700cabbd5603a07bcc27e461bc37b8c987137"
+}

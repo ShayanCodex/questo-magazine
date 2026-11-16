@@ -13,7 +13,7 @@
     "physics"
   ],
   "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Châssis de voiture de sport haute performance montrant des bras de commande de suspension en aluminium usinés avec précision et un ensemble d'amortissement coilover",
+  "imageAlt": "High-performance sports car chassis showing precision machined aluminum suspension control arms and coilover dampening assembly",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "La géométrie de la suspension multibras découple les paramètres cinématiques qui étaient historiquement compromis dans les configurations à jambes de force MacPherson et à essieu rigide. En répartissant l'emplacement du moyeu de roue sur cinq liens de contrôle spatial distincts, les ingénieurs peuvent programmer indépendamment la migration instantanée du centre, la hauteur du centre de roulis, la récupération dynamique du carrossage et la conformité du pincement avec une précision mathématique."
+      "text": "Dans le sport automobile de compétition et l'ingénierie automobile de haute performance, l'adhérence des pneus est la contrainte physique suprême limitant la vitesse dans les virages. Un pneu pneumatique de course offre une adhérence latérale maximale uniquement lorsque sa zone de contact avec la bande de roulement reste orientée parfaitement perpendiculairement au plan de la route sous des forces de virage extrêmes. Cependant, à mesure que l'accélération centrifuge force le châssis à rouler vers l'extérieur, les systèmes de suspension conventionnels perdent leur carrossage négatif, faisant rouler le pneu sur son épaule extérieure et provoquant une perte d'adhérence catastrophique."
     },
     {
       "type": "h2",
       "text": "1. Centres cinématiques instantanés et taux de récupération de cambrure"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Multilink Suspension Geometry - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Multilink Suspension Geometry."
+    },
+    {
       "type": "p",
-      "text": "La trajectoire spatiale du porte-roue en cas de choc et de rebond est régie par le centre instantané virtuel projeté ($IC$) formé par l'intersection des liaisons de commande supérieure et inférieure dans les plans avant et arrière :"
+      "text": "Dans le sport automobile de compétition et l'ingénierie automobile de haute performance, l'adhérence des pneus est la contrainte physique suprême limitant la vitesse dans les virages. Un pneu pneumatique de course offre une adhérence latérale maximale uniquement lorsque sa zone de contact avec la bande de roulement reste orientée parfaitement perpendiculairement au plan de la route sous des forces de virage extrêmes. Cependant, à mesure que l'accélération centrifuge force le châssis à rouler vers l'extérieur, les systèmes de suspension conventionnels perdent leur carrossage négatif, faisant rouler le pneu sur son épaule extérieure et provoquant une perte d'adhérence catastrophique."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Dynamic Camber Angle Relative to Road:\nγ_road = γ_static + (dγ / dz · Δz) - θ_roll\n\nWhere:\n- γ_static: Static camber angle set at rest\n- dγ / dz: Camber recovery gradient per millimeter of vertical bump travel\n- Δz: Vertical wheel displacement in cornering bump\n- θ_roll: Chassis body roll angle in degrees\n\nCondition for Zero Dynamic Contact Patch Deflection:\n(dγ / dz · Δz) ≥ θ_roll"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1508215885891-dfb8a47597ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Multilink Suspension Geometry - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Multilink Suspension Geometry."
+    },
+    {
       "type": "p",
-      "text": "En raccourcissant la liaison de commande supérieure par rapport à la liaison inférieure et en inclinant son pivot intérieur vers le bas, la suspension gagne un carrossage négatif progressif à mesure qu'elle se comprime en course en bosse ($d\\gamma / dz < 0$). Ce gain de carrossage annule parfaitement le roulis angulaire du châssis à ressorts, maintenant une zone de contact du pneu crevé tout au long des virages au sommet."
+      "text": "Dans le sport automobile de compétition et l'ingénierie automobile de haute performance, l'adhérence des pneus est la contrainte physique suprême limitant la vitesse dans les virages. Un pneu pneumatique de course offre une adhérence latérale maximale uniquement lorsque sa zone de contact avec la bande de roulement reste orientée parfaitement perpendiculairement au plan de la route sous des forces de virage extrêmes. Cependant, à mesure que l'accélération centrifuge force le châssis à rouler vers l'extérieur, les systèmes de suspension conventionnels perdent leur carrossage négatif, faisant rouler le pneu sur son épaule extérieure et provoquant une perte d'adhérence catastrophique."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Migration de la hauteur du centre de roulis et forces de levage"
+      "text": "1. Centres cinématiques instantanés et taux de récupération de cambrure"
     },
     {
       "type": "p",
-      "text": "Le centre de roulis du véhicule ($RC$) est le point théorique autour duquel la carrosserie suspendue roule sous l'accélération latérale. Son élévation par rapport au plan du sol dicte la manière dont les forces latérales sont réparties entre les liaisons cinématiques et les ressorts mécaniques."
+      "text": "Dans le sport automobile de compétition et l'ingénierie automobile de haute performance, l'adhérence des pneus est la contrainte physique suprême limitant la vitesse dans les virages. Un pneu pneumatique de course offre une adhérence latérale maximale uniquement lorsque sa zone de contact avec la bande de roulement reste orientée parfaitement perpendiculairement au plan de la route sous des forces de virage extrêmes. Cependant, à mesure que l'accélération centrifuge force le châssis à rouler vers l'extérieur, les systèmes de suspension conventionnels perdent leur carrossage négatif, faisant rouler le pneu sur son épaule extérieure et provoquant une perte d'adhérence catastrophique."
     },
     {
       "type": "ul",
       "items": [
-        "Centre de roulis élevé : transmet instantanément les forces de virage via les liaisons de suspension avec un roulis minimal de la carrosserie, mais induit des forces de levage verticales importantes qui réduisent la largeur de la voie.",
-        "Centre de roulis bas ou souterrain : élimine les forces de levage, mais crée un énorme bras de moment de roulis ($h_{roll} = CG - RC$), exigeant des barres anti-roulis excessivement rigides qui dégradent la conformité des pneus sur les bordures.",
-        "Enveloppe de migration dynamique : une conception à cinq maillons correctement réglée empêche le centre de roulis de migrer latéralement de plus de 20 mm sur ± 3 degrés de roulis du châssis."
+        "High Roll Center: Transmits cornering forces instantaneously through suspension linkages with minimal body roll, but induces severe vertical jacking forces that narrow the track width.",
+        "Low or Sub-Ground Roll Center: Eliminates jacking forces, but creates an enormous roll moment arm ($h_{roll} = CG - RC$), demanding excessively stiff anti-roll bars that degrade tire compliance over kerbs.",
+        "Dynamic Migration Envelope: A properly tuned five-link design restricts the roll center from migrating laterally by more than 20mm across ±3 degrees of chassis roll."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : Géométrie de suspension, rayon de brossage et cinématique"
+      "text": "1. Centres cinématiques instantanés et taux de récupération de cambrure"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/SUDMEd1bMZI",
-      "title": "Rayon de brossage, géométrie de suspension et contrôle des zones de contact cinématique",
-      "caption": "Analyse technique de la géométrie de la suspension, du rayon de brossage, de l'inclinaison du pivot d'attelage et de la sensation de direction dynamique."
+      "title": "Scrub Radius, Suspension Geometry & Kinematic Contact Patch Control",
+      "caption": "Engineering breakdown of suspension geometry, scrub radius, kingpin inclination, and dynamic steering feel."
     },
     {
       "type": "h2",
-      "text": "4. Conformité élastocinématique direction sous charge latérale"
+      "text": "1. Centres cinématiques instantanés et taux de récupération de cambrure"
     },
     {
       "type": "p",
-      "text": "Dans les véhicules physiques, les bras de suspension ne s'articulent pas autour d'articulations sphériques infiniment rigides ; ils s'appuient sur des bagues en élastomère ou des roulements composites à conformité non nulle sous charge. Lorsqu'un véhicule subit une forte accélération latérale (1,5 g + $ dans les applications de course), la force de virage intense agit à travers la zone de contact du pneu, exerçant un couple de lacet massif sur l'ensemble moyeu."
+      "text": "Dans le sport automobile de compétition et l'ingénierie automobile de haute performance, l'adhérence des pneus est la contrainte physique suprême limitant la vitesse dans les virages. Un pneu pneumatique de course offre une adhérence latérale maximale uniquement lorsque sa zone de contact avec la bande de roulement reste orientée parfaitement perpendiculairement au plan de la route sous des forces de virage extrêmes. Cependant, à mesure que l'accélération centrifuge force le châssis à rouler vers l'extérieur, les systèmes de suspension conventionnels perdent leur carrossage négatif, faisant rouler le pneu sur son épaule extérieure et provoquant une perte d'adhérence catastrophique."
     },
     {
       "type": "p",
-      "text": "Les architectures multilink exploitent cette déformation grâce à une élastocinématique délibérée. En positionnant les vecteurs de rigidité des bagues de manière asymétrique, la roue extérieure se penche automatiquement sous la charge latérale. Ce pincement passif stabilise l'essieu arrière contre le survirage brusque lors de transitions directionnelles agressives à grande vitesse sans nécessiter de systèmes de direction électroniques complexes des roues arrière."
+      "text": "Dans le sport automobile de compétition et l'ingénierie automobile de haute performance, l'adhérence des pneus est la contrainte physique suprême limitant la vitesse dans les virages. Un pneu pneumatique de course offre une adhérence latérale maximale uniquement lorsque sa zone de contact avec la bande de roulement reste orientée parfaitement perpendiculairement au plan de la route sous des forces de virage extrêmes. Cependant, à mesure que l'accélération centrifuge force le châssis à rouler vers l'extérieur, les systèmes de suspension conventionnels perdent leur carrossage négatif, faisant rouler le pneu sur son épaule extérieure et provoquant une perte d'adhérence catastrophique."
     },
     {
       "type": "h2",
-      "text": "5. Configuration du châssis et points à retenir en sport automobile"
+      "text": "1. Centres cinématiques instantanés et taux de récupération de cambrure"
     },
     {
       "type": "ul",
       "items": [
-        "Calibrage du rayon de brossage : Maintenez un rayon de brossage légèrement négatif ou proche de zéro (0 à -5 mm) pour assurer la stabilité directionnelle en cas de freinage asymétrique sans rebond à travers la crémaillère de direction.",
-        "Réglage anti-squat / anti-plongée : inclinez les axes de liaison longitudinaux pour obtenir un anti-tangage mécanique de 40 à 60 %, en gardant les planchers d'appui aérodynamique parallèles à la piste pendant les zones de freinage intense.",
-        "Minimisation de la direction des bosses : alignez précisément la longueur et l'angle de la biellette de direction avec le bras oscillant virtuel du montant avant pour éliminer les changements indésirables d'angle de braquage sur les ondulations de la surface."
+        "Scrub Radius Calibration: Maintain a slightly negative or near-zero scrub radius (0 to -5mm) to ensure directional stability under asymmetric braking without kickback through the steering rack.",
+        "Anti-Squat / Anti-Dive Tuning: Angle the longitudinal link axes to achieve 40-60% mechanical anti-pitch, keeping aerodynamic downforce floors parallel to the track during heavy braking zones.",
+        "Bump Steer Minimization: Align the steering tie rod length and angle precisely with the virtual swing arm of the front upright to eliminate unwanted steering angle changes over surface undulations."
       ]
     }
   ],
-  "sourceHash": "671ea979d8cc4b1ab6240952b92c17079e4fac80"
+  "sourceHash": "bd21f89c8d87860323d4ba7f6bcd8ba6110a123c"
 }

@@ -13,8 +13,8 @@
     "metabolism",
     "cellular-biology"
   ],
-  "image": "/images/articles/cellular-autophagy-biology.jpg",
-  "imageAlt": "High resolution fluorescent confocal microscopy visualization of cellular lysosomes and autophagy pathways",
+  "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Biomedical laboratory pipetting cellular culture samples for NAD+ coenzyme quantification assays",
   "body": [
     {
       "type": "h2",
@@ -29,6 +29,12 @@
       "text": "Key Points"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mitochondrial Dynamics & NAD+ Metabolism - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Mitochondrial Dynamics & NAD+ Metabolism."
+    },
+    {
       "type": "ul",
       "items": [
         "Mitohormesis: Transient metabolic stressors trigger nuclear gene expression that reinforces mitochondrial antioxidant defenses and biogenesis.",
@@ -41,6 +47,12 @@
       "type": "quote",
       "text": "Aging is fundamentally a bioenergetic deficit. When mitochondrial cristae lose electrochemical potential, cellular repair cascades inevitably succumb to entropy.",
       "cite": "Dr. Marcus Vance, Protocols in Preventive Cellular Medicine"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mitochondrial Dynamics & NAD+ Metabolism - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Mitochondrial Dynamics & NAD+ Metabolism."
     },
     {
       "type": "h2",

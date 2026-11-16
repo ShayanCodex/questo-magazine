@@ -1,0 +1,79 @@
+{
+  "slug": "quantum-entanglement-and-the-black-hole-information-paradox",
+  "title": "Das Informationsparadoxon des Schwarzen Lochs: Holographische Dualität, Seitenkurven und Quanten-Firewalls",
+  "excerpt": "Verfolgung der dreißigjährigen Debatte zwischen Quanteneinheitlichkeit und Hawking-Strahlung: AdS/CFT-Korrespondenz, Verschränkungsinseln und Quantenfehlerkorrektur in gekrümmter Raumzeit.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "theoretical-physics",
+    "quantum-mechanics",
+    "black-holes",
+    "general-relativity",
+    "astrophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1564325726053-d1f50a80e14c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Cosmic deep-space nebula and gravitational lensing surrounding an astronomical black hole event horizon",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der unversöhnliche Konflikt der modernen Physik"
+    },
+    {
+      "type": "p",
+      "text": "Im Herzen der Grundlagenphysik liegt ein tiefgreifender Widerspruch zwischen unseren beiden erfolgreichsten Theorien: der Allgemeinen Relativitätstheorie und der Quantenmechanik. Im Jahr 1974 zeigte Stephen Hawking, dass Quantenfluktuationen in der Nähe des Ereignishorizonts dazu führen, dass Schwarze Löcher Wärmestrahlung aussenden und langsam verdampfen. Wenn diese Strahlung jedoch rein thermischer Natur ist, werden alle Informationen über die Materie, die ursprünglich das Schwarze Loch gebildet hat, mit ihrem Verschwinden dauerhaft ausgelöscht – ein Verstoß gegen das unantastbare Quantenprinzip der Einheitlichkeit."
+    },
+    {
+      "type": "h2",
+      "text": "Der unversöhnliche Konflikt der modernen Physik"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hawking radiation particle-antiparticle creation near the event horizon threshold",
+      "caption": "Hawking radiation mechanics: quantum vacuum fluctuations yielding entangled particle emissions at the Schwarzchild radius."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Quantum Unitarity: The fundamental theorem stating that the sum of probabilities for all possible outcomes must always equal one, ensuring that information is never destroyed in quantum mechanics.",
+        "The Page Curve: Don Page’s mathematical proof that if black hole evaporation preserves information, the entanglement entropy of radiation must initially rise before declining to zero as the hole evaporates.",
+        "Holographic Duality (AdS/CFT): The principle that quantum gravity in anti-de Sitter space is mathematically equivalent to a conformal field theory living on its boundary, guaranteeing unitarity.",
+        "Entanglement Islands: Recent semiclassical Euclidean gravity calculations revealing that interior quantum states become encoded in exterior radiation via quantum extremal surfaces."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Das Informationsparadoxon des Schwarzen Lochs ist der theoretische Schmelztiegel, in dem die Grundgesetze der Raumzeit und der Quantenmechanik entweder in Einklang gebracht oder neu geschrieben werden.",
+      "cite": "Übersicht über Theoretische Physik und Quantengravitation"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Quantum entanglement laser interferometry and holographic boundary duality mapping",
+      "caption": "AdS/CFT correspondence: boundary conformal field theory mapping higher-dimensional gravitational bulk geometry."
+    },
+    {
+      "type": "h2",
+      "text": "Der unversöhnliche Konflikt der modernen Physik"
+    },
+    {
+      "type": "p",
+      "text": "Im Herzen der Grundlagenphysik liegt ein tiefgreifender Widerspruch zwischen unseren beiden erfolgreichsten Theorien: der Allgemeinen Relativitätstheorie und der Quantenmechanik. Im Jahr 1974 zeigte Stephen Hawking, dass Quantenfluktuationen in der Nähe des Ereignishorizonts dazu führen, dass Schwarze Löcher Wärmestrahlung aussenden und langsam verdampfen. Wenn diese Strahlung jedoch rein thermischer Natur ist, werden alle Informationen über die Materie, die ursprünglich das Schwarze Loch gebildet hat, mit ihrem Verschwinden dauerhaft ausgelöscht – ein Verstoß gegen das unantastbare Quantenprinzip der Einheitlichkeit."
+    },
+    {
+      "type": "video",
+      "title": "The Black Hole Information Paradox: How Physics Solved Its Greatest Puzzle",
+      "caption": "Detailed theoretical physics lecture on Hawking radiation, the Page Curve, and holographic quantum extremal islands.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "Der unversöhnliche Konflikt der modernen Physik"
+    },
+    {
+      "type": "p",
+      "text": "Im Herzen der Grundlagenphysik liegt ein tiefgreifender Widerspruch zwischen unseren beiden erfolgreichsten Theorien: der Allgemeinen Relativitätstheorie und der Quantenmechanik. Im Jahr 1974 zeigte Stephen Hawking, dass Quantenfluktuationen in der Nähe des Ereignishorizonts dazu führen, dass Schwarze Löcher Wärmestrahlung aussenden und langsam verdampfen. Wenn diese Strahlung jedoch rein thermischer Natur ist, werden alle Informationen über die Materie, die ursprünglich das Schwarze Loch gebildet hat, mit ihrem Verschwinden dauerhaft ausgelöscht – ein Verstoß gegen das unantastbare Quantenprinzip der Einheitlichkeit."
+    }
+  ],
+  "sourceHash": "f7c700cabbd5603a07bcc27e461bc37b8c987137"
+}

@@ -11,8 +11,8 @@
     "blockchain",
     "cryptography"
   ],
-  "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Topología de red criptográfica futurista que representa pruebas descentralizadas de conocimiento cero",
+  "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Futuristic cryptographic network topology representing decentralized zero-knowledge proofs",
   "body": [
     {
       "type": "p",
@@ -20,15 +20,21 @@
     },
     {
       "type": "p",
-      "text": "En un zk-Rollup, un secuenciador fuera de la cadena ejecuta miles de transacciones, actualiza un árbol de estado interno de Merkle y calcula una prueba aritmética que afirma que todas las actualizaciones de estado cumplen estrictamente con las reglas del protocolo. Esta prueba, que normalmente tiene un tamaño de solo unos pocos cientos de bytes, se envía a un contrato inteligente en cadena en Ethereum Layer 1, donde se verifica en milisegundos, independientemente de la complejidad o cantidad de las transacciones subyacentes."
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     },
     {
       "type": "h2",
       "text": "1. El circuito aritmético y la representación de R1CS"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Zero-Knowledge Rollups & zk-SNARKs."
+    },
+    {
       "type": "p",
-      "text": "Para verificar transiciones de estado complejas sin revelar parámetros de transacción subyacentes o ejecutar instrucciones secuenciales en cadena, se compila computación de alto nivel en circuitos aritméticos sobre grandes campos finitos $\\mathbb{F}_p$. Estos circuitos se aplanan en sistemas de restricciones de rango 1 (R1CS), formalizados como ecuaciones matriciales de la estructura:"
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     },
     {
       "type": "code",
@@ -36,8 +42,14 @@
       "code": "(A · s) ∘ (B · s) = (C · s)\n\nWhere:\n- A, B, C are sparse coefficient matrices defining the program logic\n- s is the witness vector containing private inputs, public inputs, and intermediate wires\n- ∘ represents the Hadamard (element-wise) vector product"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Zero-Knowledge Rollups & zk-SNARKs."
+    },
+    {
       "type": "p",
-      "text": "La representación R1CS se transforma posteriormente en un programa aritmético cuadrático (QAP) mediante interpolación polinomial de Lagrange. Al convertir productos escalares vectoriales en comprobaciones de divisibilidad polinomial ($P(x) = H(x) \\cdot T(x)$), el probador puede evaluar relaciones polinómicas en un punto de evaluación secreto sin exponer estados de cálculo intermedios."
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     },
     {
       "type": "quote",
@@ -46,63 +58,63 @@
     },
     {
       "type": "h2",
-      "text": "2. Compromisos polinomiales: protocolos KZG frente a FRI"
+      "text": "1. El circuito aritmético y la representación de R1CS"
     },
     {
       "type": "p",
-      "text": "La primitiva central que permite una verificación sucinta es el esquema de compromiso polinómico (PCS). Un PCS permite a un probador comprometerse con un polinomio de alto grado con una única cadena criptográfica pequeña y posteriormente abrir evaluaciones de ese polinomio en puntos seleccionados con una prueba indiscutible de corrección."
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     },
     {
       "type": "p",
-      "text": "Dos familias principales dominan los sistemas de producción modernos de Capa 2: esquemas Kate-Zaverucha-Goldberg (KZG) basados ​​en emparejamiento y pruebas de proximidad interactivas Oracle Fast Reed-Solomon (FRI) basadas en hash:"
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     },
     {
       "type": "ul",
       "items": [
-        "Compromisos KZG (utilizados en Scroll, Taiko, Linea): rendimiento de pruebas de tamaño constante (normalmente 48 bytes en curvas BLS12-381) y tiempo de verificación constante. Requieren una cadena de referencia estructurada (SRS) generada mediante una configuración criptográfica confiable.",
-        "Compromisos FRI (utilizados en Starknet / STARK): confiar estrictamente en funciones hash criptográficas resistentes a colisiones. Requieren configuraciones de confianza cero, son transparentes y brindan seguridad poscuántica teórica a costa de tamaños de prueba más grandes (10 KB-100 KB).",
-        "Esquemas Halo2 e IPA (usados ​​en Zcash, Scroll): utilice argumentos de producto internos en ciclos de curvas elípticas, eliminando ceremonias de configuración confiables sin incurrir en las penalizaciones de ancho de banda de las pruebas STARK completas."
+        "KZG Commitments (Used in Scroll, Taiko, Linea): Yield constant-size proofs (typically 48 bytes on BLS12-381 curves) and constant verification time. They require a Structured Reference String (SRS) generated via a cryptographic trusted setup.",
+        "FRI Commitments (Used in Starknet / STARKs): Rely strictly on collision-resistant cryptographic hash functions. They require zero trusted setups, are transparent, and provide theoretical post-quantum security at the cost of larger proof sizes (10KB–100KB).",
+        "Halo2 & IPA Schemes (Used in Zcash, Scroll): Utilize Inner Product Arguments across elliptic curve cycles, eliminating trusted setup ceremonies without incurring the bandwidth penalties of full STARK proofs."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Conferencia técnica: Vitalik Buterin sobre ZK-SNARK y escalamiento de capa 2"
+      "text": "1. El circuito aritmético y la representación de R1CS"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "Pruebas de conocimiento cero y fundamentos de escalamiento de capa 2",
-      "caption": "Vitalik Buterin explica la base criptográfica, las pruebas de transición de estado y las arquitecturas acumuladas que escalan Ethereum."
+      "title": "Zero-Knowledge Proofs and Layer-2 Scaling Foundations",
+      "caption": "Vitalik Buterin explains the cryptographic foundation, state transition proofs, and rollup architectures scaling Ethereum."
     },
     {
       "type": "h2",
-      "text": "4. Disponibilidad de datos y Proto-Danksharding (EIP-4844)"
+      "text": "1. El circuito aritmético y la representación de R1CS"
     },
     {
       "type": "p",
-      "text": "Si bien una prueba de validez garantiza la corrección matemática de la ejecución fuera de la cadena, no garantiza inherentemente que los datos de la transacción subyacente sean accesibles públicamente. Sin disponibilidad de datos, los usuarios no pueden reconstruir el árbol de estado en caso de censura del secuenciador o falla de la infraestructura."
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     },
     {
       "type": "p",
-      "text": "Ethereum EIP-4844 introdujo \"blobs de datos\": espacios de datos transitorios y de precio económico adjuntos a bloques que persisten durante aproximadamente 18 días en lugar de ocupar indefinidamente el estado de ejecución L1. Al establecer pruebas de validez estatal en la ejecución de la Capa 1 y al mismo tiempo publicar deltas de transacciones sin procesar en el almacenamiento de blobs transitorios, las tarifas acumuladas de gas han caído en más del 95 %, transformando las aplicaciones descentralizadas en utilidades a escala de consumidor."
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones criptográficas y principios del sistema"
+      "text": "1. El circuito aritmético y la representación de R1CS"
     },
     {
       "type": "ul",
       "items": [
-        "Concisión sobre la reejecución: los ZK-SNARK permiten la verificabilidad global donde el costo de verificación es $O(1)$ o $O(\\log n)$ en relación con la complejidad del cálculo.",
-        "Separación de preocupaciones: desacoplar la ejecución (secuenciadores fuera de la cadena) de la liquidación y la finalidad (verificadores de contratos inteligentes de capa 1).",
-        "Agregación recursiva: los probadores modernos agregan miles de subpruebas en una única prueba maestra, amortizando el gas de verificación en cadena en cientos de miles de transacciones.",
-        "Seguridad de disponibilidad de datos: Garantizar que las transiciones de estado de Capa 2 sigan siendo reconstruibles a través de redes descentralizadas de difusión de blobs."
+        "Succinctness Over Re-execution: ZK-SNARKs enable global verifiability where verification cost is $O(1)$ or $O(\\log n)$ relative to computation complexity.",
+        "Separation of Concerns: Decouple execution (off-chain sequencers) from settlement and finality (Layer 1 smart contract verifiers).",
+        "Recursive Aggregation: Modern provers aggregate thousands of sub-proofs into a single master proof, amortizing on-chain verification gas across hundreds of thousands of transactions.",
+        "Data Availability Security: Ensure Layer 2 state transitions remain reconstructible through decentralized blob dissemination networks."
       ]
     },
     {
       "type": "p",
-      "text": "Descargo de responsabilidad educativo: esta monografía técnica se publica exclusivamente para la investigación académica en informática, criptografía y sistemas distribuidos. No constituye asesoramiento financiero, de inversión o legal."
+      "text": "El dilema fundamental de las arquitecturas de contabilidad descentralizadas es el cuello de botella de cálculo verificable: si cada nodo de validación en una red global peer-to-peer debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado, el rendimiento de la transacción está estrictamente limitado por la velocidad de procesamiento del nodo físico más lento. Los rollups de conocimiento cero (zk-Rollups) resuelven esta restricción mediante sistemas de prueba criptográfica, reemplazando la reejecución distribuida redundante con concisión matemática."
     }
   ],
-  "sourceHash": "523630936943ab95ea0e6983fdce3c8a20e619d1"
+  "sourceHash": "cd0c2f1cad9c8e207447722c4c2ad15c685431e2"
 }

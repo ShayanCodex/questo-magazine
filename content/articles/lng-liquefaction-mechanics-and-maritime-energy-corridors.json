@@ -14,7 +14,7 @@
     "logistics",
     "thermodynamics"
   ],
-  "image": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Massive cryogenic liquefied natural gas carrier ship navigating deep open ocean shipping lanes at sunset",
   "body": [
     {
@@ -30,6 +30,12 @@
       "text": "1. Cryogenic Thermodynamic Cycles: Mixed Refrigerant (C3MR) Mechanics"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Maritime LNG Energy Corridors - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Maritime LNG Energy Corridors."
+    },
+    {
       "type": "p",
       "text": "Liquefying methane ($CH_4$) requires removing immense sensible and latent heat across a 180-degree thermal gradient. The dominant commercial liquefaction standard is the Propane Pre-cooled Mixed Refrigerant (C3MR) cycle:"
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "C3MR Multi-Stage Energy Balance:\nW_comp = m_gas · Δh_gas + Σ [ m_ref · (h_out - h_in) ]\n\nCryogenic Liquefaction Parameters:\n- Phase Transition Temperature: -162°C at 1.013 bar (atmospheric pressure)\n- Density Multiplication: 0.7 kg/m³ (vapor) → 450 kg/m³ (liquid)\n- Volumetric Contraction Ratio: 1:600\n- Primary Refrigerant Composition: Nitrogen (N₂), Methane (CH₄), Ethane (C₂H₆), Propane (C₃H₈)"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Maritime LNG Energy Corridors - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Maritime LNG Energy Corridors."
     },
     {
       "type": "p",

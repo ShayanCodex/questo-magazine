@@ -11,8 +11,8 @@
     "fonts",
     "accessibility"
   ],
-  "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Macrophotographie de caractères mobiles métalliques finement sculptés et d'encre typographique",
+  "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Macro photograph of finely carved metallic movable type sorts and typographic ink",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "La spécification OpenType Font Variations a dissous ces frontières historiques. Un fichier de police à variable unique contient des axes multidimensionnels continus : poids (wght), largeur (wdth), inclinaison (slnt) et, surtout, taille optique (opsz). Au lieu de passer discrètement de 400 à 700, les concepteurs peuvent interpoler le poids de manière dynamique à 523 ou 648 en fonction des capteurs d'éclairage ambiant ou du DPI de l'écran."
+      "text": "Pendant cinq siècles après l'invention des caractères mobiles par Johannes Gutenberg, une police était un artefact physique et inflexible. Si une imprimante exigeait une coupe en italique de 8 points et une coupe en gras de 24 points, deux jeux de poinçons en plomb entièrement distincts devaient être coulés. Le Web a passé ses trois premières décennies à reproduire ce paradigme rigide avec des téléchargements de fichiers de polices Web distincts pour chaque poids."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Variable Fonts and the Future of Editorial Legibility."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "Saskia Lindqvist, The Living Letterform"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
+    },
+    {
       "type": "h3",
       "text": "Principaux avantages en termes d'ergonomie et de performances"
     },
     {
       "type": "ul",
       "items": [
-        "Efficacité du réseau : remplacement de 12 fichiers de polices distincts (totalisant plus de 400 Ko) par une seule charge utile variable WOFF2 de 42 Ko hautement optimisée.",
-        "Correction optique automatique : pour les petites tailles de corps (12-14px), les compteurs de lettres s'élargissent et les hauteurs d'x augmentent automatiquement pour éviter le piégeage d'encre et la fatigue oculaire.",
-        "Adaptation réactive du mode sombre : diminution automatique du poids de la police du texte de 15 à 20 unités en mode sombre pour contrecarrer le halo du texte clair sur fond noir."
+        "Network efficiency: Replacing 12 separate font files (totaling 400KB+) with a single, highly-optimized 42KB WOFF2 variable payload.",
+        "Automatic optical correction: At small body sizes (12-14px), letter counters widen and x-heights increase automatically to prevent ink trapping and eye strain.",
+        "Responsive dark mode adaptation: Automatically decreasing text font-weight by 15-20 units in dark mode to counteract bright text halation against black backgrounds."
       ]
     },
     {
       "type": "p",
-      "text": "Grâce à une typographie variable, l'édition numérique relie enfin le savoir-faire historique des monographies imprimées de luxe avec la réactivité fluide de l'ingénierie Web moderne."
+      "text": "Pendant cinq siècles après l'invention des caractères mobiles par Johannes Gutenberg, une police était un artefact physique et inflexible. Si une imprimante exigeait une coupe en italique de 8 points et une coupe en gras de 24 points, deux jeux de poinçons en plomb entièrement distincts devaient être coulés. Le Web a passé ses trois premières décennies à reproduire ce paradigme rigide avec des téléchargements de fichiers de polices Web distincts pour chaque poids."
     }
   ],
-  "sourceHash": "2acab3db8f9fd9b3b0b63cf6d590a250b1863740"
+  "sourceHash": "693d8e0abd96891755d7864ea0e0fe3017dd364a"
 }

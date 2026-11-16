@@ -5,7 +5,7 @@
   "date": "2026-11-13",
   "updated": "2026-11-15",
   "author": "Tariq Mahmood",
-  "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Global satellite network map depicting decentralized edge nodes and fiber routing",
   "tags": [
     "engineering",
@@ -30,12 +30,24 @@
       "text": "The Anycast Revolution and Edge V8 Isolates"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Decentralized Edge Architectures - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Decentralized Edge Architectures."
+    },
+    {
       "type": "p",
       "text": "Decentralized edge architecture dissolves the origin bottleneck by moving computational execution directly to the network perimeter. Using Border Gateway Protocol (BGP) Anycast routing, a single public IP address is announced simultaneously from over 300 data centers across six continents. When a client makes an HTTP request, transit routers automatically deliver the packets to the geographically closest edge node."
     },
     {
       "type": "p",
       "text": "Rather than booting heavy Node.js or Docker container runtimes with hundreds of megabytes of memory overhead, modern edge networks execute lightweight V8 JavaScript Isolates. An isolate boots in less than 5 milliseconds, consumes under 5MB of RAM, and executes pure functional routing logic immediately upon packet arrival."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Decentralized Edge Architectures - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Decentralized Edge Architectures."
     },
     {
       "type": "code",

@@ -13,7 +13,7 @@
     "engineering"
   ],
   "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "إعداد الاختبار المعملي لخلية البطارية الكهروكيميائية عالية الكثافة للطاقة بدقة",
+  "imageAlt": "Precision engineered high energy density electrochemical battery cell laboratory test setup",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "تحل بطاريات الحالة الصلبة بالكامل (ASSBs) محل المذيب السائل بمصفوفة صلبة موصلة للأيونات من السيراميك غير العضوي أو الكبريتيد. من خلال إقران الشوارد الصلبة مع الليثيوم المعدني النقي أو الأنودات المهيمنة على السيليكون، تعد ASSBs بكثافة طاقة وزنية تتجاوز 500 واط ساعة/كجم، وأغلفة تشغيل حرارية واسعة (-30 درجة مئوية إلى 100 درجة مئوية)، وسلامة متأصلة غير قابلة للاشتعال."
+      "text": "إن كهربة الطيران التجاري والشحن الثقيل وعبور الركاب عالي المدى مقيدة بشكل أساسي بكثافة الطاقة والمخاطر الحرارية المنفلتة لخلايا أيون الليثيوم السائلة التقليدية. تصل الخلايا التجارية المقحمة من الجرافيت إلى حوالي 280 واط ساعة/كجم وتعتمد على الكربونات العضوية المتطايرة والقابلة للاشتعال والتي تشتعل تحت ثقب ميكانيكي أو دوائر قصيرة داخلية."
     },
     {
       "type": "h2",
       "text": "1. فئات الإلكتروليتات الصلبة: الكبريتيدات مقابل الأكاسيد مقابل الهاليدات"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "تتوقف صلاحية أي بنية حالة صلبة على التوصيل الأيوني ($\\sigma_{ion}$) في درجات الحرارة المحيطة:"
+      "text": "إن كهربة الطيران التجاري والشحن الثقيل وعبور الركاب عالي المدى مقيدة بشكل أساسي بكثافة الطاقة والمخاطر الحرارية المنفلتة لخلايا أيون الليثيوم السائلة التقليدية. تصل الخلايا التجارية المقحمة من الجرافيت إلى حوالي 280 واط ساعة/كجم وتعتمد على الكربونات العضوية المتطايرة والقابلة للاشتعال والتي تشتعل تحت ثقب ميكانيكي أو دوائر قصيرة داخلية."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Nernst-Einstein Ionic Conductivity Relation:\nσ_ion = (n · q² · D_Li) / (k_B · T)\n\nComparison of Solid Electrolyte Families:\n- Sulfides (LGPS, Argyrodites): σ_ion ≈ 10 to 25 mS/cm (exceeds liquid electrolyte speed), highly ductile, but releases toxic H₂S gas upon ambient moisture exposure.\n- Oxides (Garnet LLZO, NASICON): σ_ion ≈ 1 mS/cm, chemically stable against high-voltage cathodes, but extremely brittle with high interfacial contact resistance.\n- Halides (Li₃InCl₆): σ_ion ≈ 1 to 5 mS/cm, highly oxidative stability (> 4.5 V), excellent compatibility with high-nickel cathodes."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696331111-ac95829f2a42?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "نظرًا لأن بلورات الكبريتيد تمتلك هياكل أنيونية كبريتية أكثر ليونة وأكثر استقطابًا، تواجه أيونات الليثيوم حواجز تنشيط منخفضة للهجرة (E_a <0.25$ eV)، مما يسمح بالنقل السريع الذي ينافس الشوارد السائلة التقليدية."
+      "text": "إن كهربة الطيران التجاري والشحن الثقيل وعبور الركاب عالي المدى مقيدة بشكل أساسي بكثافة الطاقة والمخاطر الحرارية المنفلتة لخلايا أيون الليثيوم السائلة التقليدية. تصل الخلايا التجارية المقحمة من الجرافيت إلى حوالي 280 واط ساعة/كجم وتعتمد على الكربونات العضوية المتطايرة والقابلة للاشتعال والتي تشتعل تحت ثقب ميكانيكي أو دوائر قصيرة داخلية."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. معضلة التشعبات: كثافة التيار الحرجة (CCD)"
+      "text": "1. فئات الإلكتروليتات الصلبة: الكبريتيدات مقابل الأكاسيد مقابل الهاليدات"
     },
     {
       "type": "p",
-      "text": "افترضت النظرية المبكرة أن المنحل بالكهرباء الخزفي الصلب الصلب من شأنه أن يثبط ميكانيكيًا تكوين تشعبات الليثيوم عبر معيار مونرو-نيومان (معامل القص $G_{SE} > 2 \\cdot G_{Li}$). ومع ذلك، كشف التصوير المقطعي بالأشعة السينية أن معدن الليثيوم يتسلل بسهولة إلى حدود الحبوب الحبيبية والشقوق الصغيرة في ظل ظروف الشحن السريع."
+      "text": "إن كهربة الطيران التجاري والشحن الثقيل وعبور الركاب عالي المدى مقيدة بشكل أساسي بكثافة الطاقة والمخاطر الحرارية المنفلتة لخلايا أيون الليثيوم السائلة التقليدية. تصل الخلايا التجارية المقحمة من الجرافيت إلى حوالي 280 واط ساعة/كجم وتعتمد على الكربونات العضوية المتطايرة والقابلة للاشتعال والتي تشتعل تحت ثقب ميكانيكي أو دوائر قصيرة داخلية."
     },
     {
       "type": "ul",
       "items": [
-        "كثافة التيار الحرجة (CCD): الحد الأقصى لمعدل تيار الشحن الذي بعده يبدأ طلاء الليثيوم غير الموحد في حدوث دوائر قصيرة بين الحبيبات.",
-        "إدارة ضغط المكدس: إن الحفاظ على ضغوط ثابتة أحادية المحور تتراوح من 1 إلى 5 ميجا باسكال يضمن الاتصال الجسدي الحميم بين الصلبة والصلبة مثل شرائح وألواح الليثيوم أثناء دورات التفريغ.",
-        "الطلاءات العازلة البينية: طبقات رقيقة من ALD (ترسيب الطبقة الذرية) من الزنك أو الكربون أو سبائك الذهب مع الليثيوم الوارد، مما يضمن نموًا مستويًا ثنائي الأبعاد بدلاً من المسامير الخيطية أحادية الأبعاد."
+        "Critical Current Density (CCD): The maximum charging current rate beyond which non-uniform lithium plating initiates intergranular short circuits.",
+        "Stack Pressure Management: Maintaining constant uniaxial stack pressures of 1 to 5 MPa ensures intimate solid-solid physical contact as lithium strips and plates during discharge cycles.",
+        "Interfacial Buffer Coatings: Thin ALD (Atomic Layer Deposition) coatings of zinc, carbon, or gold alloy with incoming lithium, ensuring planar 2D growth rather than 1D filamentous spikes."
       ]
     },
     {
       "type": "h2",
-      "text": "3. دروس فيديو متقدمة: الكيمياء الكهربائية عالية الجهد والتخزين المتقدم"
+      "text": "1. فئات الإلكتروليتات الصلبة: الكبريتيدات مقابل الأكاسيد مقابل الهاليدات"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "تخزين الطاقة الكهروكيميائية عالية الجهد وبطاريات الشبكة المتقدمة",
-      "caption": "التحليل الهندسي لكيمياء البطاريات المتقدمة، وبنية خلايا الحالة الصلبة، وتخزين الطاقة على نطاق المرافق."
+      "title": "High Voltage Electrochemical Energy Storage and Advanced Grid Batteries",
+      "caption": "Engineering analysis of advanced battery chemistry, solid-state cell architecture, and utility-scale energy storage."
     },
     {
       "type": "h2",
-      "text": "4. أنودات السيليكون المركب: ميكانيكا التمدد الحجمي بنسبة 300%"
+      "text": "1. فئات الإلكتروليتات الصلبة: الكبريتيدات مقابل الأكاسيد مقابل الهاليدات"
     },
     {
       "type": "p",
-      "text": "بينما يظل معدن الليثيوم النقي هو الهدف النهائي، يوفر السيليكون جسرًا وسيطًا استثنائيًا. يتميز السيليكون بسعة نظرية محددة تبلغ 3,579 مللي أمبير/جرام ($Li_{15}Si_4$)، أي ما يقرب من عشرة أضعاف قدرة الجرافيت التجاري (372 مللي أمبير/جرام)."
+      "text": "إن كهربة الطيران التجاري والشحن الثقيل وعبور الركاب عالي المدى مقيدة بشكل أساسي بكثافة الطاقة والمخاطر الحرارية المنفلتة لخلايا أيون الليثيوم السائلة التقليدية. تصل الخلايا التجارية المقحمة من الجرافيت إلى حوالي 280 واط ساعة/كجم وتعتمد على الكربونات العضوية المتطايرة والقابلة للاشتعال والتي تشتعل تحت ثقب ميكانيكي أو دوائر قصيرة داخلية."
     },
     {
       "type": "p",
-      "text": "ومع ذلك، فإن عملية الليثيوم تؤدي إلى توسع حجمي شديد بنسبة 300%، مما يؤدي إلى سحق الأقطاب الكهربائية التقليدية. عند دمجها داخل مصفوفة رابط ذات حالة صلبة مرنة ذات مرونة عالية بينية، فإن الأنودات المركبة من السيليكون الصغير تستوعب التنفس الدوري دون فقدان مسارات الترشيح الكهربائية."
+      "text": "إن كهربة الطيران التجاري والشحن الثقيل وعبور الركاب عالي المدى مقيدة بشكل أساسي بكثافة الطاقة والمخاطر الحرارية المنفلتة لخلايا أيون الليثيوم السائلة التقليدية. تصل الخلايا التجارية المقحمة من الجرافيت إلى حوالي 280 واط ساعة/كجم وتعتمد على الكربونات العضوية المتطايرة والقابلة للاشتعال والتي تشتعل تحت ثقب ميكانيكي أو دوائر قصيرة داخلية."
     },
     {
       "type": "h2",
-      "text": "5. الوجبات السريعة في هندسة الأنظمة الكهروكيميائية"
+      "text": "1. فئات الإلكتروليتات الصلبة: الكبريتيدات مقابل الأكاسيد مقابل الهاليدات"
     },
     {
       "type": "ul",
       "items": [
-        "هندسة ضغط المكدس: تصميم أغلفة الخلايا بألواح ميكانيكية محملة بنابض للحفاظ على الاتصال البيني المستمر من خلال تقلبات سمك حالة الشحن بنسبة 20%.",
-        "تصنيع الغرف الجافة: يتطلب إنتاج المنحل بالكهرباء الصلب من الكبريتيد أجواء شديدة الجفاف (نقطة الندى <-50 درجة مئوية) لمنع تحلل كبريتيد الهيدروجين المميت.",
-        "اقتران كاثود عالي النيكل: قم بإقران الشوارد الصلبة مع كاثودات NMC90 أحادية البلورة ومغطاة بورات الليثيوم للتخلص من التشققات الدقيقة عند الفولتية العالية للخلايا (> 4.3 فولت)."
+        "Stack Compression Engineering: Design cell housings with spring-loaded mechanical platens to maintain continuous interfacial contact through 20% state-of-charge thickness swings.",
+        "Dry Room Manufacturing: Sulfide solid electrolyte production requires ultra-dry atmospheres (dew point < -50°C) to prevent lethal hydrogen sulfide decomposition.",
+        "High-Nickel Cathode Coupling: Pair solid electrolytes with single-crystal NMC90 cathodes coated in lithium borate to eliminate micro-cracking at high cell voltages (> 4.3V)."
       ]
     }
   ],
-  "sourceHash": "6c79fa7b436a966eb31011d7e669ab575677147b"
+  "sourceHash": "e0806f8db83836b836c0cab1afb220067ff2ed18"
 }

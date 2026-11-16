@@ -11,8 +11,8 @@
     "parametric-design",
     "sustainability"
   ],
-  "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "ایک جدید فلہارمونک آڈیٹوریم میں مجسمہ سازی کے صوتی لکڑی کے دیوار کے پینل اور تعمیراتی چکرا",
+  "image": "https://images.unsplash.com/photo-1541888946425-d0fbb186f5f7?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Curving parametric glued-laminated timber beams forming an undulating acoustic ceiling pavilion",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "یادگار فن تعمیر میں ٹیکٹائل ووڈ کا دوبارہ دعویٰ کرنا"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Architectural mass timber building frame showcasing interlocking cross-laminated timber joints",
+      "caption": "Cross-laminated timber (CLT): carbon-sequestering structural floor plates engineered to replace structural concrete."
     },
     {
       "type": "ul",
       "items": [
-        "بایوفیلک کاربن سیکوسٹریشن: پائیدار طریقے سے کٹائی گئی کراس لیمینیٹڈ لکڑی (CLT) ماحولیاتی کاربن کو مستقل شہری ساختی لفافوں کے اندر پھنساتی ہے۔",
-        "الگوریتھمک جوائنری: CNC کی چکی سے جڑی ہوئی لکڑی کے مورٹیز اور ٹینن جوڑ زہریلے چپکنے والے اور کاربن سے زیادہ اسٹیل بریکٹ کو ختم کرتے ہیں۔",
-        "گونجنے والی سطح کی جیومیٹری: پیرامیٹرک طور پر غیر منقطع لکڑی کی دیوار کے پہلو مخصوص آواز کی عکاسی کو پھیلاتے ہیں، گرم سمفونک صوتی کو فروغ دیتے ہیں۔",
-        "تھرمل ماس پرفارمنس: بھاری بڑے پیمانے پر لکڑی کے پینل غیر معمولی موصلیت کی خصوصیات فراہم کرتے ہیں، بیرونی کم تعدد شہری شور کو گیلا کرتے ہیں۔"
+        "Biophilic Carbon Sequestration: Sustainably harvested cross-laminated timber (CLT) traps atmospheric carbon within permanent civic structural envelopes.",
+        "Algorithmic Joinery: CNC-milled interlocking timber mortise-and-tenon joints eliminate toxic adhesives and carbon-intensive steel brackets.",
+        "Resonant Surface Geometry: Parametrically undulating wooden wall facets disperse specular sonic reflections, cultivating warm symphonic acoustics.",
+        "Thermal Mass Performance: Heavy mass timber panels deliver exceptional insulation properties, damping exterior low-frequency urban noise."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "ایلینا روسٹووا، ساختی خوبصورتی میں مونوگراف"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Computer-controlled robotic timber joinery cutting complex mathematical double-curved beams",
+      "caption": "Parametric optimization: algorithmically aligning timber grain fiber geometry to maximize load-bearing and acoustic diffusion."
+    },
+    {
       "type": "h2",
-      "text": "کارکردگی کی جگہوں میں کمپیوٹیشنل ایکوسٹک ڈفیوژن"
+      "text": "یادگار فن تعمیر میں ٹیکٹائل ووڈ کا دوبارہ دعویٰ کرنا"
     },
     {
       "type": "p",
-      "text": "عصری کنسرٹ ہالوں میں، لکڑی کی سطحوں کو ریاضیاتی چوکور باقیات کے نمونوں کے ساتھ شمار کیا جاتا ہے۔ مائیکروسکوپک اور میکروسکوپک پیمانوں میں حیرت انگیز گہرائی کے پروفائلز کے ذریعے، لکڑی کا خول اونچی اور درمیانی تعدد والی آواز کی لہروں کو سامعین کے درجات پر یکساں طور پر بکھیرتا ہے، جس سے پھڑپھڑاہٹ کی بازگشت کو ختم کیا جاتا ہے اور اس کی موجودگی کو ختم کیے بغیر۔"
+      "text": "ایک صدی سے زیادہ عرصے تک، جدیدیت پسند یادگار ڈیزائن تقریباً خصوصی طور پر اسٹیل کی مضبوطی اور مضبوطی پر انحصار کرتا رہا۔ آج، کمپیوٹیشنل پیرامیٹرک ماڈلنگ، ملٹی ایکسس روبوٹک ملنگ، اور ماس ٹمبر انجینئرنگ کا کنورژن ایک نئے آرکیٹیکچرل دور کا افتتاح کر رہا ہے: کاربن-منفی شہری پناہ گاہیں جہاں مادی گرمجوشی اور صوتی درستگی آپس میں ملتی ہے۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "آرکیٹیکچرل صوتی اور گونج طبیعیات",
-      "caption": "آواز کی گونج، لہر کے پھیلاؤ، اور کانسرٹ ہال جیومیٹریز کی طبیعیات کی تحقیقات۔"
+      "title": "Architectural Acoustics and Resonance Physics",
+      "caption": "Investigation into sonic resonance, wave propagation, and the physics of concert hall geometries.",
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
     },
     {
       "type": "h2",
-      "text": "ماس ٹمبر کی زندہ وراثت"
+      "text": "یادگار فن تعمیر میں ٹیکٹائل ووڈ کا دوبارہ دعویٰ کرنا"
     },
     {
       "type": "p",
-      "text": "پیرامیٹرک ٹمبر ایٹریئم کے ذریعے چلنا ہر انسانی حسی فیکلٹی کو شامل کرتا ہے: دیودار کی سپرش مہک، سپروس کے لطیف اناج، اور انسانی پیمانے اور سیاروں کی حدود کا احترام کرنے کے لئے انجنیئر کردہ خلائی کی گہری صوتی سکون۔"
+      "text": "ایک صدی سے زیادہ عرصے تک، جدیدیت پسند یادگار ڈیزائن تقریباً خصوصی طور پر اسٹیل کی مضبوطی اور مضبوطی پر انحصار کرتا رہا۔ آج، کمپیوٹیشنل پیرامیٹرک ماڈلنگ، ملٹی ایکسس روبوٹک ملنگ، اور ماس ٹمبر انجینئرنگ کا کنورژن ایک نئے آرکیٹیکچرل دور کا افتتاح کر رہا ہے: کاربن-منفی شہری پناہ گاہیں جہاں مادی گرمجوشی اور صوتی درستگی آپس میں ملتی ہے۔"
     }
   ],
-  "sourceHash": "32ece7d48f363c4823201c41e9c7b9cf30b6223e"
+  "sourceHash": "a0660de616111cdfb991d9905ad42805ce0317b1"
 }

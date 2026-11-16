@@ -11,8 +11,8 @@
     "error-correction",
     "surface-codes"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "Refrigerador dorado de dilución criogénica que alberga qubits de procesador cuántico superconductor",
+  "image": "https://images.unsplash.com/photo-1583912267670-6575ad4736f8?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Geometric topological lattice displaying quantum entanglement braiding and surface codes",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "La transición de una escala intermedia ruidosa a una cuántica tolerante a fallas"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1bb1a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Two-dimensional planar surface code architecture with data and syndrome measurement qubits",
+      "caption": "Surface code grid: interleaving X-type and Z-type stabilizer measurements to identify localized bit and phase flips."
     },
     {
       "type": "ul",
       "items": [
-        "Mediciones del estabilizador: Las comprobaciones de paridad entre plaquetas y vértices diagnostican errores de inversión de bits (X) y de fase (Z) sin colapsar el estado de superposición.",
-        "Teorema del umbral: cuando las tasas de error de la puerta física caen por debajo de aproximadamente el uno por ciento, escalar la distancia del código reticular suprime exponencialmente los errores lógicos.",
-        "Almacenamiento de información no local: la información cuántica lógica se codifica a través de entrelazamientos topológicos globales en lugar de cualquier qubit físico vulnerable individual.",
-        "Gráficos de decodificación en tiempo real: los algoritmos de coincidencia perfecta de peso mínimo (MWPM) procesan flujos de síndrome a velocidades criogénicas inferiores a microsegundos."
+        "Stabilizer Measurements: Parity checks across plaquettes and vertices diagnose bit-flip (X) and phase-flip (Z) errors without collapsing superposition state.",
+        "Threshold Theorem: When physical gate error rates fall below approximately one percent, scaling the lattice code distance exponentially suppresses logical errors.",
+        "Non-Local Information Storage: Logical quantum information is encoded across global topological entanglements rather than any individual vulnerable physical qubit.",
+        "Real-Time Decoding Graphs: Minimum-weight perfect matching (MWPM) algorithms process syndrome streams at cryogenic sub-microsecond speeds."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Física teórica y revisión de información cuántica"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561584-897c11f7c5f8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Laser interferometry setup for quantum syndrome readout with low-noise amplification",
+      "caption": "Quantum error suppression: syndrome decoding algorithms arresting error propagation below fault-tolerant thresholds."
+    },
+    {
       "type": "h2",
-      "text": "Arquitecturas superconductoras e interconexiones criogénicas"
+      "text": "La transición de una escala intermedia ruidosa a una cuántica tolerante a fallas"
     },
     {
       "type": "p",
-      "text": "La ingeniería de códigos de superficie requiere topologías de cuadrícula bidimensional densa. Los qubits Transmon interconectados por resonadores de microondas sintonizables deben mantener la coherencia a temperaturas de quince mikelvin, mientras que el cableado coaxial de alta densidad extrae miles de líneas de lectura a decodificadores FPGA a temperatura ambiente."
+      "text": "Si bien los procesadores cuánticos ruidosos de escala intermedia (NISQ) han demostrado supremacía algorítmica en puntos de referencia de muestreo especializados, la computación cuántica práctica exige tasas de error lógico por debajo de diez al duodécimo negativo. Lograr este objetivo requiere corrección de errores cuánticos topológicos (QEC), en la que frágiles qubits físicos se entrelazan en redes de superficie bidimensionales para formar qubits lógicos inmortales protegidos por la topología."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "Física de precisión y principios de medición cuántica",
-      "caption": "Conferencia de física experimental que explora la interferometría de extrema precisión, la estabilidad criogénica y el control del estado cuántico."
+      "title": "Precision Physics and Quantum Measurement Principles",
+      "caption": "Experimental physics lecture exploring extreme precision interferometry, cryogenic stability, and quantum state control.",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10"
     },
     {
       "type": "h2",
-      "text": "El horizonte de la química cuántica escalable"
+      "text": "La transición de una escala intermedia ruidosa a una cuántica tolerante a fallas"
     },
     {
       "type": "p",
-      "text": "La llegada de qubits lógicos tolerantes a fallas desbloqueará la simulación precisa de enzimas nitrogenasas para la síntesis de fertilizantes ambientales, electrolitos de baterías de estado sólido y catalizadores macromoleculares complejos que las supercomputadoras nunca podrán calcular."
+      "text": "Si bien los procesadores cuánticos ruidosos de escala intermedia (NISQ) han demostrado supremacía algorítmica en puntos de referencia de muestreo especializados, la computación cuántica práctica exige tasas de error lógico por debajo de diez al duodécimo negativo. Lograr este objetivo requiere corrección de errores cuánticos topológicos (QEC), en la que frágiles qubits físicos se entrelazan en redes de superficie bidimensionales para formar qubits lógicos inmortales protegidos por la topología."
     }
   ],
-  "sourceHash": "72618758c4d63268a64e2cad605fa285e4eedae3"
+  "sourceHash": "55f0c412780294dd2f32fca59f7dcab355e1429b"
 }

@@ -11,8 +11,8 @@
     "edge-computing",
     "web-vitals"
   ],
-  "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Racks de servidores de alta densidad que emiten telemetría LED cian dentro de una instalación de datos empresariales",
+  "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-density server racks emitting cyan LED telemetry inside an enterprise data facility",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Lograr una pintura de contenido más grande (LCP) auténtica en menos de un segundo y un cambio de diseño acumulativo (CLS) cero requiere invertir la topología de alojamiento tradicional. En lugar de calcular HTML dinámicamente según la solicitud del usuario, las plataformas de publicación modernas de alta autoridad precompilan páginas en archivos HTML estáticos deterministas e inmutables en el momento de la compilación."
+      "text": "Durante más de una década, la arquitectura web ha perseguido la complejidad computacional a expensas de la experiencia del usuario. Las aplicaciones masivas de una sola página, los árboles de hidratación complicados y las consultas de bases de datos de backend de varios niveles han inflado la web moderna. Cada milisegundo de latencia erosiona la confianza del usuario, deprime la visibilidad de la búsqueda y desperdicia la vida útil de la batería del dispositivo."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "code",
@@ -33,7 +39,13 @@
     },
     {
       "type": "p",
-      "text": "Cuando un activo inmutable recibe servicio desde un nodo de borde ubicado dentro de los 15 kilómetros del cliente solicitante, el transporte de paquetes de ida y vuelta cae por debajo de los 10 milisegundos. El tiempo de procesamiento del servidor converge efectivamente a cero."
+      "text": "Durante más de una década, la arquitectura web ha perseguido la complejidad computacional a expensas de la experiencia del usuario. Las aplicaciones masivas de una sola página, los árboles de hidratación complicados y las consultas de bases de datos de backend de varios niveles han inflado la web moderna. Cada milisegundo de latencia erosiona la confianza del usuario, deprime la visibilidad de la búsqueda y desperdicia la vida útil de la batería del dispositivo."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "quote",
@@ -47,16 +59,16 @@
     {
       "type": "ul",
       "items": [
-        "Documentos HTML prerenderizados que contienen una copia semántica completa legible por rastreadores y metadatos JSON-LD.",
-        "Cero scripts de telemetría de terceros ejecutados antes del diseño del contenido principal.",
-        "Medios paginados CSS y subconjuntos de fuentes modernas utilizando declaraciones de rango Unicode y visualización de fuentes: intercambio.",
-        "Entrega de datos JSON estáticos fragmentados que hidratan progresivamente las utilidades interactivas sin cambios de diseño."
+        "Pre-rendered HTML documents containing complete crawler-readable semantic copy and JSON-LD metadata.",
+        "Zero blocking third-party telemetry scripts executed prior to the primary content layout.",
+        "CSS paged media and modern font subsetting using unicode-range declarations and font-display: swap.",
+        "Chunked static JSON data delivery that progressive-hydrates interactive utilities without layout shifts."
       ]
     },
     {
       "type": "p",
-      "text": "Al adherirse a estos rigurosos estándares de ingeniería, los editores digitales garantizan una capacidad de descubrimiento global instantánea, satisfacen los criterios más estrictos de Core Web Vitals de Google y brindan a los lectores internacionales una experiencia de lectura ininterrumpida y sin distracciones."
+      "text": "Durante más de una década, la arquitectura web ha perseguido la complejidad computacional a expensas de la experiencia del usuario. Las aplicaciones masivas de una sola página, los árboles de hidratación complicados y las consultas de bases de datos de backend de varios niveles han inflado la web moderna. Cada milisegundo de latencia erosiona la confianza del usuario, deprime la visibilidad de la búsqueda y desperdicia la vida útil de la batería del dispositivo."
     }
   ],
-  "sourceHash": "edfd46a296d4b24aa8cb0eeac577f4cfb2d42440"
+  "sourceHash": "991c4f46537e3fec6a7c705a3813b91ad888c52f"
 }

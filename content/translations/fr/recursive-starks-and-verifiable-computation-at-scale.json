@@ -1,0 +1,79 @@
+{
+  "slug": "recursive-starks-and-verifiable-computation-at-scale",
+  "title": "STARKs récursifs et Halo2 : Les mathématiques de la vérification cryptographique succincte",
+  "excerpt": "Un voyage mathématique à travers les schémas d'engagement polynomial, les tests de proximité Reed-Solomon, l'IOP Reed-Solomon rapide et la composition de preuves récursives.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "cryptography",
+    "zero-knowledge",
+    "zk-starks",
+    "blockchain-scaling",
+    "mathematics"
+  ],
+  "image": "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Abstract geometric lattice network representing succinct zero-knowledge cryptographic proofs",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La quête mathématique d'une vérifiabilité succincte"
+    },
+    {
+      "type": "p",
+      "text": "Le calcul vérifiable représente la percée fondamentale permettant aux machines à états publiques décentralisées d'évoluer horizontalement. Dans les réseaux d'exécution naïfs, chaque nœud de validation doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état. Les arguments de connaissance transparents et évolutifs (STARK) inversent ce goulot d'étranglement : un seul prouveur non fiable génère une preuve cryptographique succincte attestant de l'exactitude informatique de millions de transitions d'état, que tout vérificateur peut vérifier en temps logarithmique."
+    },
+    {
+      "type": "h2",
+      "text": "La quête mathématique d'une vérifiabilité succincte"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algebraic intermediate representation and execution trace polynomial matrix",
+      "caption": "AIR arithmetization: translating state machine execution steps into algebraic constraint polynomials."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Arithmetization: Transforming computational execution traces into systems of algebraic intermediate representations (AIR) or polynomial constraint systems.",
+        "Reed-Solomon Proximity Testing: Encoding constraint evaluations over large evaluation domains such that computational invalidity manifests as maximal distance from valid Reed-Solomon codewords.",
+        "FRI Protocol (Fast Reed-Solomon IOP of Proximity): An interactive oracle proof that recursively halves polynomial degrees, proving proximity to low-degree spaces with polylogarithmic communication complexity.",
+        "Transparent Trustless Setup: Utilizing publicly verifiable collision-resistant hash functions rather than elliptic curve toxic waste parameters, guaranteeing quantum resistance and zero setup vulnerability."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Les preuves récursives sans connaissance convertissent le temps de calcul en espace géométrique, permettant une seule étape de vérification pour valider l'intégrité de l'exécution historique illimitée.",
+      "cite": "Monographie des fondements cryptographiques et des systèmes vérifiables"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524813686514-a57563d77d61?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Recursive STARK proof tree folding millions of transactions into single succinct proof",
+      "caption": "Recursive proof aggregation: Merkle tree verification folding thousands of execution batches into one master proof."
+    },
+    {
+      "type": "h2",
+      "text": "La quête mathématique d'une vérifiabilité succincte"
+    },
+    {
+      "type": "p",
+      "text": "Le calcul vérifiable représente la percée fondamentale permettant aux machines à états publiques décentralisées d'évoluer horizontalement. Dans les réseaux d'exécution naïfs, chaque nœud de validation doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état. Les arguments de connaissance transparents et évolutifs (STARK) inversent ce goulot d'étranglement : un seul prouveur non fiable génère une preuve cryptographique succincte attestant de l'exactitude informatique de millions de transitions d'état, que tout vérificateur peut vérifier en temps logarithmique."
+    },
+    {
+      "type": "video",
+      "title": "Recursive STARKs and Polynomial Commitments Deep Dive",
+      "caption": "Mathematical exploration of FRI proximity testing, execution trace arithmetization, and recursive proof verification.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "La quête mathématique d'une vérifiabilité succincte"
+    },
+    {
+      "type": "p",
+      "text": "Le calcul vérifiable représente la percée fondamentale permettant aux machines à états publiques décentralisées d'évoluer horizontalement. Dans les réseaux d'exécution naïfs, chaque nœud de validation doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état. Les arguments de connaissance transparents et évolutifs (STARK) inversent ce goulot d'étranglement : un seul prouveur non fiable génère une preuve cryptographique succincte attestant de l'exactitude informatique de millions de transitions d'état, que tout vérificateur peut vérifier en temps logarithmique."
+    }
+  ],
+  "sourceHash": "c5cdc7eeeaeebe7ae1b57b5a686e1ed3f30a8730"
+}

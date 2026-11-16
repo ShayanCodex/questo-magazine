@@ -11,8 +11,8 @@
     "endurance",
     "bioenergetics"
   ],
-  "image": "/images/articles/tennis-biomechanics-serve.jpg",
-  "imageAlt": "رياضي النخبة الذي يتمتع بقدرة التحمل ويخضع لأقصى سرعة هوائية واختبارات فسيولوجية استقلابية",
+  "image": "https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Track and field athletics sprinter accelerating out of starting blocks with explosive force",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "تفكيك أسطورة حمض اللاكتيك كمنتج نفايات"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Metabolic testing laboratory analyzing blood lactate concentrations and ventilatory thresholds",
+      "caption": "Lactate shuttling: Monocarboxylate transporters (MCT1/MCT4) translocating lactate into oxidative fibers for oxidation."
     },
     {
       "type": "ul",
       "items": [
-        "مكوك اللاكتات من خلية إلى أخرى: تعمل الألياف المحللة للجلوكوز سريعة الارتعاش على توليد اللاكتات، الذي يتم نقله عبر ناقلات أحادية الكربوكسيل (MCT4) إلى الدورة الدموية.",
-        "أكسدة الميتوكوندريا: تمتص ألياف العضلات المؤكسدة بطيئة الارتعاش والأنسجة القلبية والخلايا العصبية اللاكتات عبر MCT1، وتحولها مرة أخرى إلى البيروفات لتوليد ATP لدورة كريبس.",
-        "تخفيف الحماض: حرق العضلات أثناء الجهود القصوى يكون مدفوعًا بتراكم أيونات الهيدروجين الزائدة (H+) من التحلل المائي ATP، وليس أنيون اللاكتات نفسه.",
-        "عتبة اللاكتات 2 (MLSS): يتم تحديد أداء التحمل المتميز من خلال السرعة القصوى التي يتطابق بها إنتاج اللاكتات في الدم مع قدرة التصفية النظامية."
+        "Cell-to-Cell Lactate Shuttle: Fast-twitch glycolytic fibers generate lactate, which is transported via Monocarboxylate Transporters (MCT4) into blood circulation.",
+        "Mitochondrial Oxidation: Adjacent slow-twitch oxidative muscle fibers, cardiac tissue, and neurons take up lactate via MCT1, converting it back to pyruvate for Krebs cycle ATP generation.",
+        "Acidosis Buffering: Muscle burning during maximal efforts is driven by excess hydrogen ion (H+) accumulation from ATP hydrolysis, not the lactate anion itself.",
+        "Lactate Threshold 2 (MLSS): Elite endurance performance is defined by the maximum speed at which blood lactate production matches systemic clearance capacity."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "ليام أوكونور، دراسات في الأداء الرياضي البشري"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486282528489-4e3221e2e75c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Endurance runner monitoring biometric pacing, heart rate variability, and metabolic steady state",
+      "caption": "Mitochondrial clearance: endurance conditioning shifting maximum lactate steady state toward higher absolute power."
+    },
+    {
       "type": "h2",
-      "text": "تدريب المنطقة 2 وكثافة الميتوكوندريا"
+      "text": "تفكيك أسطورة حمض اللاكتيك كمنتج نفايات"
     },
     {
       "type": "p",
-      "text": "يتم تحديد القدرة على إزالة اللاكتات وأكسدةها بالكامل من خلال كثافة الميتوكوندريا وحجم السرير الشعري في الألياف البطيئة الارتعاش من النوع الأول. يحفز التدريب على التحمل في منطقة العتبة الفرعية 2 التولد الحيوي للميتوكوندريا دون التسبب في إجهاد ودي جهازي، مما يؤدي إلى بناء المحرك الأيضي الذي يزود النخبة بالإنتاج الرياضي المستدام."
+      "text": "منذ ما يقرب من قرن من الزمان، التزم التدريب الرياضي الشعبي بعقيدة عفا عليها الزمن: أن حمض اللاكتيك كان منتج نفايات أيضي سام مسؤول عن إرهاق العضلات وتأخر ظهور الألم. وقد حطمت الطاقة الحيوية الخلوية الرائدة هذا المفهوم الخاطئ. في الواقع، اللاكتات ليس سمًا خلويًا، ولكنه وقود الطاقة الديناميكي الأكثر قيمة في الجسم: وهو عبارة عن جزيء إشارات قوي وسيط للكربوهيدرات قابل للنقل بسرعة (لاكترمون)."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "الصحة الأيضية والمؤشرات الحيوية الخلوية في الأداء",
-      "caption": "يناقش الدكتور بيتر عطية والدكتور أندرو هوبرمان المرونة الأيضية، وتدريب المنطقة 2، وكفاءة القلب والأوعية الدموية."
+      "title": "Metabolic Health and Cellular Biomarkers in Performance",
+      "caption": "Dr. Peter Attia and Dr. Andrew Huberman discuss metabolic flexibility, zone-2 training, and cardiovascular efficiency.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "المستقبل الجزيئي للقدرة البشرية على التحمل"
+      "text": "تفكيك أسطورة حمض اللاكتيك كمنتج نفايات"
     },
     {
       "type": "p",
-      "text": "من خلال تتبع قياس اللاكتات المستمر في الوقت الفعلي وتحسين التعبير عن ناقل أحادي الكربوكسيل من خلال نماذج التدريب المستقطبة، يعيد علم الرياضة الحديث تعريف الحدود الجسدية للقدرة على التحمل البشري."
+      "text": "منذ ما يقرب من قرن من الزمان، التزم التدريب الرياضي الشعبي بعقيدة عفا عليها الزمن: أن حمض اللاكتيك كان منتج نفايات أيضي سام مسؤول عن إرهاق العضلات وتأخر ظهور الألم. وقد حطمت الطاقة الحيوية الخلوية الرائدة هذا المفهوم الخاطئ. في الواقع، اللاكتات ليس سمًا خلويًا، ولكنه وقود الطاقة الديناميكي الأكثر قيمة في الجسم: وهو عبارة عن جزيء إشارات قوي وسيط للكربوهيدرات قابل للنقل بسرعة (لاكترمون)."
     }
   ],
-  "sourceHash": "253cb9bdbade380a975f9e0c1895f9f38921fdbf"
+  "sourceHash": "70e7fd22708c30f5975f75a395561e8720bc2b49"
 }

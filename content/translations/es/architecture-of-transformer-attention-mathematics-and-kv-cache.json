@@ -12,7 +12,7 @@
     "software-architecture"
   ],
   "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "Arquitectura neuronal del modelo de lenguaje grande OpenAI y ChatGPT en la pantalla de un teléfono inteligente a través del teclado",
+  "imageAlt": "OpenAI and ChatGPT large language model neural architecture on smartphone display over keyboard",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "En su base teórica, la autoatención asigna una secuencia de consulta de entrada y pares de memoria clave-valor a una representación de salida. Dada una matriz de secuencia de entrada X proyectada en variedades de consulta, clave y valor a través de las matrices de peso aprendidas W_Q, W_K y W_V, la matriz de puntuación de atención se calcula mediante la ecuación canónica:"
+      "text": "La arquitectura transformadora introducida en 2017 redefinió fundamentalmente el modelado automatizado del lenguaje y la transducción de secuencias. Al descartar bucles de estado ocultos recurrentes en favor de mecanismos monolíticos de atención paralela, los transformadores permitieron un rendimiento de entrenamiento sin precedentes en clústeres de GPU distribuidos. Sin embargo, detrás de la taxonomía de alto nivel de los modelos básicos se esconde un núcleo matemático austero: la función de atención del producto escalado. A medida que las ventanas de contexto se expanden de cuatro mil a cientos de miles de tokens, el cuello de botella operativo de la inferencia del transformador cambia decisivamente del cálculo aritmético (FLOP) a la saturación del ancho de banda de la memoria."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Transformer Attention - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Architecture of Transformer Attention."
     },
     {
       "type": "code",
@@ -33,7 +39,13 @@
     },
     {
       "type": "p",
-      "text": "El factor de escala, raíz cuadrada inversa de la dimensión de proyección d_k, no es un hiperparámetro arbitrario. Para valores grandes de d_k, los productos escalares crecen sustancialmente en magnitud, empujando la función softmax posterior a regiones con gradientes cada vez más pequeños. El escalado estabiliza la varianza a la unidad, asegurando la estabilidad numérica durante los pases de retropropagación hacia atrás y evitando un colapso catastrófico de la representación."
+      "text": "La arquitectura transformadora introducida en 2017 redefinió fundamentalmente el modelado automatizado del lenguaje y la transducción de secuencias. Al descartar bucles de estado ocultos recurrentes en favor de mecanismos monolíticos de atención paralela, los transformadores permitieron un rendimiento de entrenamiento sin precedentes en clústeres de GPU distribuidos. Sin embargo, detrás de la taxonomía de alto nivel de los modelos básicos se esconde un núcleo matemático austero: la función de atención del producto escalado. A medida que las ventanas de contexto se expanden de cuatro mil a cientos de miles de tokens, el cuello de botella operativo de la inferencia del transformador cambia decisivamente del cálculo aritmético (FLOP) a la saturación del ancho de banda de la memoria."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Transformer Attention - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Architecture of Transformer Attention."
     },
     {
       "type": "quote",
@@ -42,66 +54,66 @@
     },
     {
       "type": "h2",
-      "text": "2. El muro de la memoria y la caché de valores clave (KV)"
+      "text": "1. La mecánica formal de la atención del producto escalado"
     },
     {
       "type": "p",
-      "text": "Durante el entrenamiento, las secuencias se procesan en lotes monolíticos donde el enmascaramiento causal completo permite la retropropagación simultánea. Sin embargo, en la generación de tokens autorregresivos durante la inferencia, cada nuevo token depende estrictamente de todos los tokens emitidos anteriormente. Recalcular las matrices de proyección para cada token antecedente en el paso t+1 produce una complejidad de tiempo cúbica intolerable O(t^3)."
+      "text": "La arquitectura transformadora introducida en 2017 redefinió fundamentalmente el modelado automatizado del lenguaje y la transducción de secuencias. Al descartar bucles de estado ocultos recurrentes en favor de mecanismos monolíticos de atención paralela, los transformadores permitieron un rendimiento de entrenamiento sin precedentes en clústeres de GPU distribuidos. Sin embargo, detrás de la taxonomía de alto nivel de los modelos básicos se esconde un núcleo matemático austero: la función de atención del producto escalado. A medida que las ventanas de contexto se expanden de cuatro mil a cientos de miles de tokens, el cuello de botella operativo de la inferencia del transformador cambia decisivamente del cálculo aritmético (FLOP) a la saturación del ancho de banda de la memoria."
     },
     {
       "type": "p",
-      "text": "Para lograr un escalado de latencia que permanezca lineal con respecto a la duración de la generación, los tiempos de ejecución de inferencia de producción conservan los vectores de proyección de clave y valor de los tokens históricos en la memoria de alto ancho de banda (HBM). Esta estructura de retención persistente es la caché de valores clave (KV). Si bien se preserva matemáticamente la sobrecarga de proyección O(1) por paso, la huella de memoria de la caché KV aumenta con el tamaño del lote, la longitud del contexto, el número de capas y los cabezales de proyección:"
+      "text": "La arquitectura transformadora introducida en 2017 redefinió fundamentalmente el modelado automatizado del lenguaje y la transducción de secuencias. Al descartar bucles de estado ocultos recurrentes en favor de mecanismos monolíticos de atención paralela, los transformadores permitieron un rendimiento de entrenamiento sin precedentes en clústeres de GPU distribuidos. Sin embargo, detrás de la taxonomía de alto nivel de los modelos básicos se esconde un núcleo matemático austero: la función de atención del producto escalado. A medida que las ventanas de contexto se expanden de cuatro mil a cientos de miles de tokens, el cuello de botella operativo de la inferencia del transformador cambia decisivamente del cálculo aritmético (FLOP) a la saturación del ancho de banda de la memoria."
     },
     {
       "type": "ul",
       "items": [
-        "Huella de memoria = 2 * n_layers * n_heads * d_head * context_len * tamaño_lote * precision_bytes",
-        "Para un modelo de parámetros de 70 B con una longitud de contexto de 32 k con precisión FP16, la caché KV por sí sola exige más de 40 GB de VRAM por solicitud simultánea.",
-        "En condiciones de concurrencia multiinquilino sostenida, la capacidad de memoria se agota mucho antes de que los núcleos tensoriales alcancen la saturación informática."
+        "Memory Footprint = 2 * n_layers * n_heads * d_head * context_len * batch_size * precision_bytes",
+        "For a 70B parameter model at 32k context length in FP16 precision, the KV cache alone demands upwards of 40GB of VRAM per concurrent request.",
+        "Under sustained multi-tenant concurrency, memory capacity exhausts long before tensor cores reach compute saturation."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Atención de transformadores y mecánica autorregresiva"
+      "text": "1. La mecánica formal de la atención del producto escalado"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "Construcción de modelos de lenguaje y atención de transformadores desde cero",
-      "caption": "Desglose autorizado de matrices de atención de transformadores, proyecciones de autoatención y transducción de secuencias por investigadores de inteligencia artificial de Stanford."
+      "title": "Building Transformer Attention & Language Models from Scratch",
+      "caption": "Authoritative breakdown of transformer attention matrices, self-attention projections, and sequence transduction by Stanford AI researchers."
     },
     {
       "type": "h2",
-      "text": "4. Evoluciones arquitectónicas: consultas múltiples, consultas agrupadas y atención paginada"
+      "text": "1. La mecánica formal de la atención del producto escalado"
     },
     {
       "type": "p",
-      "text": "Para evitar la grave saturación de memoria impuesta por la atención multicabezal (MHA) estándar, las arquitecturas de cimientos modernas implementan alteraciones estructurales:"
+      "text": "La arquitectura transformadora introducida en 2017 redefinió fundamentalmente el modelado automatizado del lenguaje y la transducción de secuencias. Al descartar bucles de estado ocultos recurrentes en favor de mecanismos monolíticos de atención paralela, los transformadores permitieron un rendimiento de entrenamiento sin precedentes en clústeres de GPU distribuidos. Sin embargo, detrás de la taxonomía de alto nivel de los modelos básicos se esconde un núcleo matemático austero: la función de atención del producto escalado. A medida que las ventanas de contexto se expanden de cuatro mil a cientos de miles de tokens, el cuello de botella operativo de la inferencia del transformador cambia decisivamente del cálculo aritmético (FLOP) a la saturación del ancho de banda de la memoria."
     },
     {
       "type": "ol",
       "items": [
-        "Atención de consultas múltiples (MQA): todos los cabezales de consulta de atención comparten un único cabezal de proyección de valor clave, lo que reduce las demandas de ancho de banda de la memoria caché KV en un factor equivalente al número de cabezales de consulta (normalmente de 32 a 64 veces).",
-        "Atención de consultas agrupadas (GQA): los encabezados de consulta se agrupan en grupos que comparten un encabezado clave-valor (por ejemplo, 8 encabezados de consulta por par KV), logrando un equilibrio armonioso entre la capacidad de representación y la compresión de la caché.",
-        "PagedAttention y administración de memoria virtual: modelado a partir de tablas de páginas del sistema operativo clásico, la asignación dinámica de fragmentos de memoria no contiguos evita la fragmentación de la memoria y reduce el desperdicio de GPU en más de un 80 %."
+        "Multi-Query Attention (MQA): All attention query heads share a solitary key-value projection head, reducing KV cache memory bandwidth demands by a factor equivalent to the number of query heads (typically 32x to 64x).",
+        "Grouped-Query Attention (GQA): Query heads are grouped into clusters sharing a key-value head (e.g., 8 query heads per KV pair), achieving a harmonious equilibrium between representation capacity and cache compression.",
+        "PagedAttention & Virtual Memory Management: Modeled after classical OS page tables, dynamically allocating non-contiguous memory chunks prevents memory fragmentation and slashes GPU waste by over 80%."
       ]
     },
     {
       "type": "h2",
-      "text": "5. Síntesis y conclusiones empíricas"
+      "text": "1. La mecánica formal de la atención del producto escalado"
     },
     {
       "type": "p",
-      "text": "La disciplina de ingeniería que rige la inferencia neuronal moderna ha cambiado permanentemente. La ventaja competitiva decisiva en la implementación del modelo básico ya no es el volumen de parámetros sin procesar, sino la eficiencia de la compresión de la caché, el enrutamiento de atención escasa y la ejecución del kernel en menos de milisegundos."
+      "text": "La arquitectura transformadora introducida en 2017 redefinió fundamentalmente el modelado automatizado del lenguaje y la transducción de secuencias. Al descartar bucles de estado ocultos recurrentes en favor de mecanismos monolíticos de atención paralela, los transformadores permitieron un rendimiento de entrenamiento sin precedentes en clústeres de GPU distribuidos. Sin embargo, detrás de la taxonomía de alto nivel de los modelos básicos se esconde un núcleo matemático austero: la función de atención del producto escalado. A medida que las ventanas de contexto se expanden de cuatro mil a cientos de miles de tokens, el cuello de botella operativo de la inferencia del transformador cambia decisivamente del cálculo aritmético (FLOP) a la saturación del ancho de banda de la memoria."
     },
     {
       "type": "ul",
       "items": [
-        "Escalado Softmax: El factor 1/sqrt(d_k) evita la saturación de gradiente en dimensiones de proyección expansivas.",
-        "Cuello de botella de la caché KV: la generación de tokens autorregresivos está limitada a la memoria; la saturación del ancho de banda gobierna el tiempo hasta el primer token y la latencia entre tokens.",
-        "Eficiencia estructural: Atención de consultas agrupadas (GQA) combinada con paginación de memoria virtual (vLLM) representa el estándar de producción de última generación para entregas en menos de un segundo."
+        "Softmax Scaling: The 1/sqrt(d_k) factor prevents gradient saturation across expansive projection dimensions.",
+        "KV Cache Bottleneck: Autoregressive token generation is memory-bound; bandwidth saturation governs time-to-first-token and inter-token latency.",
+        "Structural Efficiency: Grouped-Query Attention (GQA) combined with virtual memory paging (vLLM) represents the state-of-the-art production standard for sub-second serving."
       ]
     }
   ],
-  "sourceHash": "1b676a91eb9b1b8d4cdbf3abdeaa21c888cf2cff"
+  "sourceHash": "c4a5e811ffbbb9c39eaacdd60a75373677eb4b51"
 }

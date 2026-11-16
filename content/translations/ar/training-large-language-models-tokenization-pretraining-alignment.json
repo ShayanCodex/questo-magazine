@@ -13,7 +13,7 @@
     "engineering"
   ],
   "image": "/images/articles/llm-training-code.jpg",
-  "imageAlt": "رمز حلقة تدريب التعلم العميق لبايثون عالي الأداء على شاشة IDE المظلمة",
+  "imageAlt": "High performance Python deep learning training loop code on dark IDE display",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "تنقسم دورة حياة LLM بشكل واضح إلى أربعة أنظمة متسلسلة: ترميز مجموعة البيانات وترميز زوج البايت، والتدريب المسبق الخاضع للإشراف الذاتي على نطاق البيتابايت، والضبط الدقيق الخاضع للإشراف (SFT) للامتثال للتعليمات، والتعلم المعزز من ردود الفعل البشرية (RLHF) لمواءمة مخرجات النموذج مع النية البشرية."
+      "text": "يعد بناء نموذج أساس توليدي حدودي من المبادئ الأولى بمثابة تمرين في التحسين العددي التطبيقي، وهندسة الأنظمة الموزعة، ونمذجة اللغة الإحصائية. في جوهره، لا يفهم المحول التوليدي المدرب مسبقًا الدلالات بالمعنى الإنساني؛ يقوم بتقدير توزيع احتمالي مشترك عالي الأبعاد على رموز المفردات المنفصلة عن طريق تقليل فقدان الإنتروبيا الانحداري عبر تريليونات من بايتات التدريب."
     },
     {
       "type": "h2",
       "text": "1. الترميز: تشفير زوج البايت وضغط المفردات"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1633356122102-b61ac6cbca0d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Training LLMs from Scratch."
+    },
+    {
       "type": "p",
-      "text": "لا يمكن معالجة اللغة الطبيعية الخام مباشرة عن طريق عمليات المصفوفة الخطية. يجب أولاً أن يتم تقسيمها إلى معرفات رمزية عددية صحيحة عبر تشفير زوج البايت (BPE):"
+      "text": "يعد بناء نموذج أساس توليدي حدودي من المبادئ الأولى بمثابة تمرين في التحسين العددي التطبيقي، وهندسة الأنظمة الموزعة، ونمذجة اللغة الإحصائية. في جوهره، لا يفهم المحول التوليدي المدرب مسبقًا الدلالات بالمعنى الإنساني؛ يقوم بتقدير توزيع احتمالي مشترك عالي الأبعاد على رموز المفردات المنفصلة عن طريق تقليل فقدان الإنتروبيا الانحداري عبر تريليونات من بايتات التدريب."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "BPE Iterative Pair Merge Formulation:\nVocabulary V = Initial byte symbols (0..255)\nIterative rule: Find pair (c_i, c_j) with argmax frequency(c_i, c_j) in corpus\nMerge: New symbol c_new = c_i ⊕ c_j\nUpdate: V ← V ∪ {c_new}\nRepeat until |V| = target_vocab_size (typically 32,000 to 128,000)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Training LLMs from Scratch."
+    },
+    {
       "type": "p",
-      "text": "يتطلب استهداف حجم المفردات الأمثل التنقل في مقايضة هندسية: المفردات الأكبر حجمًا تضغط طول التسلسل وتخفض زمن الوصول للاستدلال، ولكنها تعمل على توسيع بصمة الذاكرة لمصفوفة تضمين المدخلات وطبقة الإسقاط غير المضمنة للمخرجات النهائية."
+      "text": "يعد بناء نموذج أساس توليدي حدودي من المبادئ الأولى بمثابة تمرين في التحسين العددي التطبيقي، وهندسة الأنظمة الموزعة، ونمذجة اللغة الإحصائية. في جوهره، لا يفهم المحول التوليدي المدرب مسبقًا الدلالات بالمعنى الإنساني؛ يقوم بتقدير توزيع احتمالي مشترك عالي الأبعاد على رموز المفردات المنفصلة عن طريق تقليل فقدان الإنتروبيا الانحداري عبر تريليونات من بايتات التدريب."
     },
     {
       "type": "quote",
@@ -47,55 +59,55 @@
     },
     {
       "type": "h2",
-      "text": "2. ديناميكيات التدريب المسبق والتوازي ثلاثي الأبعاد الموزع"
+      "text": "1. الترميز: تشفير زوج البايت وضغط المفردات"
     },
     {
       "type": "p",
-      "text": "تدريب نموذج معلمة 70B عبر مئات الجيجابايت من GPU VRAM يتجاوز سعة أي شريحة تسريع واحدة. تقوم المجموعات الحديثة بتنسيق التوازي ثلاثي الأبعاد:"
+      "text": "يعد بناء نموذج أساس توليدي حدودي من المبادئ الأولى بمثابة تمرين في التحسين العددي التطبيقي، وهندسة الأنظمة الموزعة، ونمذجة اللغة الإحصائية. في جوهره، لا يفهم المحول التوليدي المدرب مسبقًا الدلالات بالمعنى الإنساني؛ يقوم بتقدير توزيع احتمالي مشترك عالي الأبعاد على رموز المفردات المنفصلة عن طريق تقليل فقدان الإنتروبيا الانحداري عبر تريليونات من بايتات التدريب."
     },
     {
       "type": "ul",
       "items": [
-        "Tensor Parallelism (Megatron-LM): تقسيم مصفوفات الوزن الفردية (مثل الاستعلام والمفتاح وإسقاطات التغذية الأمامية) عبر وحدات معالجة الرسومات داخل نفس مجال NVLink.",
-        "توازي خطوط الأنابيب: شرائح طبقات المحولات بشكل تسلسلي عبر عقد خادم مميزة، وتمرير حالات التنشيط المخفية للأمام والخلف.",
-        "توازي البيانات مع ZeRO-3: حالات مُحسِّن Shards والتدرجات ومعلمات النموذج عبر المجموعة الموزعة، مما يؤدي إلى القضاء على تكرار الذاكرة الزائدة عن الحاجة.",
-        "تكامل FlashAttention-3: يلغي تجسيد مصفوفات الاهتمام التربيعية N×N في HBM عن طريق دمج مقياس softmax وضرب المصفوفة مباشرة في سجلات SRAM."
+        "Tensor Parallelism (Megatron-LM): Partitions individual weight matrices (such as query, key, and feed-forward projections) across GPUs within the same NVLink domain.",
+        "Pipeline Parallelism: Slices transformer layers sequentially across distinct server nodes, passing hidden activation states forward and backward.",
+        "Data Parallelism with ZeRO-3: Shards optimizer states, gradients, and model parameters across the distributed cluster, eliminating redundant memory duplication.",
+        "FlashAttention-3 Integration: Eliminates materialization of quadratic N×N attention matrices in HBM by fusing softmax scaling and matrix multiplication directly into SRAM registers."
       ]
     },
     {
       "type": "h2",
-      "text": "3. درس فيديو رئيسي: بناء نماذج GPT والمحولات من الصفر"
+      "text": "1. الترميز: تشفير زوج البايت وضغط المفردات"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "بناء وتدريب المحولات التوليدية المدربة مسبقًا من الصفر",
-      "caption": "درس أندريه كارباثي الرئيسي حول الميكانيكا الرياضية لبناء وتجميع وتدريب نماذج لغة المحولات ذاتية الانحدار من التعليمات البرمجية."
+      "title": "Building and Training Generative Pretrained Transformers from Scratch",
+      "caption": "Andrej Karpathy's masterclass on the mathematical mechanics of building, compiling, and training autoregressive transformer language models from code."
     },
     {
       "type": "h2",
-      "text": "4. المحاذاة: الضبط الدقيق وتحسين التفضيلات المباشرة (DPO) الخاضع للإشراف"
+      "text": "1. الترميز: تشفير زوج البايت وضغط المفردات"
     },
     {
       "type": "p",
-      "text": "النموذج الأساسي الأولي الذي تم تدريبه مسبقًا هو مجرد أداة إكمال مستند غير مقيدة. لتحويله إلى مساعد فعال، يقوم المهندسون بضبط النموذج على نصوص محادثة منسقة متعددة المنعطفات باستخدام فقدان الإنتروبيا المتقاطعة مع مطالبات الإدخال المقنَّعة."
+      "text": "يعد بناء نموذج أساس توليدي حدودي من المبادئ الأولى بمثابة تمرين في التحسين العددي التطبيقي، وهندسة الأنظمة الموزعة، ونمذجة اللغة الإحصائية. في جوهره، لا يفهم المحول التوليدي المدرب مسبقًا الدلالات بالمعنى الإنساني؛ يقوم بتقدير توزيع احتمالي مشترك عالي الأبعاد على رموز المفردات المنفصلة عن طريق تقليل فقدان الإنتروبيا الانحداري عبر تريليونات من بايتات التدريب."
     },
     {
       "type": "p",
-      "text": "بعد SFT، تقوم محاذاة التفضيلات بتوجيه النموذج نحو عمليات إكمال مفيدة وصادقة وغير ضارة. في حين اعتمدت خطوط الأنابيب القديمة على تدريب نماذج مكافآت منفصلة باستخدام التعلم المعزز لـ PPO، فإن الأنظمة الحديثة تنشر بشكل متزايد تحسين التفضيلات المباشرة (DPO)، والتي تستمد هدفًا مغلقًا دقيقًا لتحسين نموذج السياسة مباشرة على تصنيفات التفضيلات البشرية المقترنة."
+      "text": "يعد بناء نموذج أساس توليدي حدودي من المبادئ الأولى بمثابة تمرين في التحسين العددي التطبيقي، وهندسة الأنظمة الموزعة، ونمذجة اللغة الإحصائية. في جوهره، لا يفهم المحول التوليدي المدرب مسبقًا الدلالات بالمعنى الإنساني؛ يقوم بتقدير توزيع احتمالي مشترك عالي الأبعاد على رموز المفردات المنفصلة عن طريق تقليل فقدان الإنتروبيا الانحداري عبر تريليونات من بايتات التدريب."
     },
     {
       "type": "h2",
-      "text": "5. الوجبات السريعة لأنظمة التعلم الآلي"
+      "text": "1. الترميز: تشفير زوج البايت وضغط المفردات"
     },
     {
       "type": "ul",
       "items": [
-        "هيمنة جودة البيانات: تتفوق مجموعات بيانات الاستدلال الاصطناعي المكررة عالية الجودة على نص الويب المسروق الخام بترتيب من حيث الكفاءة الرمزية.",
-        "التنسيقات الدقيقة: استخدم إجراءات التدريب المختلطة الدقة FP8 وBF16 مع مقياس الخسارة الديناميكي لمضاعفة إنتاجية الموتر مع منع التدفق السفلي.",
-        "تلدين معدل التعلم: استخدم جداول اضمحلال جيب التمام مع فترات إحماء لمنع اختلاف التدرج أثناء فترات التحسين الأولية."
+        "Data Quality Dominance: High-quality deduplicated synthetic reasoning datasets outperform raw scraped web text by an order of magnitude in token efficiency.",
+        "Precision Formats: Utilize FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
+        "Learning Rate Annealing: Employ cosine decay schedules with warm-up periods to prevent gradient divergence during initial optimization epochs."
       ]
     }
   ],
-  "sourceHash": "fbab468d8d6535407877a07d02b1af60859f970d"
+  "sourceHash": "3ec3e1c0f5c4ed8abb6adbe171224876d9e70ab2"
 }

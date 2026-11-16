@@ -13,7 +13,7 @@
     "markets"
   ],
   "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Billets de réserve en devises mondiales et instruments du marché des changes",
+  "imageAlt": "Global currency reserve banknotes and foreign exchange market instruments",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "Au cours des huit dernières décennies, le dollar américain a fonctionné comme monnaie de réserve mondiale de facto et comme principal moyen de règlement dans le cadre de l'architecture de Bretton Woods. Cependant, des changements géopolitiques tectoniques, l’accumulation d’or par les banques centrales et l’émergence de corridors de compensation bilatéraux hors dollar transforment l’architecture des flux de capitaux internationaux."
+      "text": "Le marché des changes (FX) est la plus grande plate-forme financière au monde, traitant plus de 7,5 billions de dollars de chiffre d'affaires nominal toutes les vingt-quatre heures. Pourtant, malgré son ampleur colossale, les véritables mécanismes par lesquels les États souverains règlent leurs balances commerciales transfrontalières, gèrent les facilités d’échange de devises et maintiennent leurs réserves de change restent l’un des domaines les plus opaques de la finance internationale."
     },
     {
       "type": "h2",
       "text": "La plomberie des lignes d'échange de liquidités de la banque centrale"
     },
     {
-      "type": "p",
-      "text": "Lors de crises financières systémiques, les marchés mondiaux de financement en dollars connaissent de graves contractions de liquidité. Les banques commerciales étrangères qui détiennent des engagements libellés en dollars ne peuvent pas accéder aux mécanismes d’escompte d’urgence fournis par la Réserve fédérale. Pour éviter des liquidations catastrophiques de dettes, les grandes banques centrales s’appuient sur des accords monétaires réciproques connus sous le nom de lignes d’échange de liquidités de la banque centrale."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542144582-1ba00456b5e3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Global Forex Liquidity Corridors - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Global Forex Liquidity Corridors."
     },
     {
       "type": "p",
-      "text": "Dans le cadre d'un accord de swap, la Réserve fédérale fournit des dollars américains à une banque centrale étrangère (telle que la Banque du Japon, la Banque centrale européenne ou la Banque d'Angleterre) en échange de devises étrangères équivalentes aux taux au comptant en vigueur. La banque centrale étrangère vend ensuite ces dollars aux enchères à des institutions commerciales locales pour répondre à des obligations de compensation urgentes, s'engageant à racheter leur monnaie à un taux à terme prédéterminé."
+      "text": "Le marché des changes (FX) est la plus grande plate-forme financière au monde, traitant plus de 7,5 billions de dollars de chiffre d'affaires nominal toutes les vingt-quatre heures. Pourtant, malgré son ampleur colossale, les véritables mécanismes par lesquels les États souverains règlent leurs balances commerciales transfrontalières, gèrent les facilités d’échange de devises et maintiennent leurs réserves de change restent l’un des domaines les plus opaques de la finance internationale."
+    },
+    {
+      "type": "p",
+      "text": "Le marché des changes (FX) est la plus grande plate-forme financière au monde, traitant plus de 7,5 billions de dollars de chiffre d'affaires nominal toutes les vingt-quatre heures. Pourtant, malgré son ampleur colossale, les véritables mécanismes par lesquels les États souverains règlent leurs balances commerciales transfrontalières, gèrent les facilités d’échange de devises et maintiennent leurs réserves de change restent l’un des domaines les plus opaques de la finance internationale."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Global Forex Liquidity Corridors - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Global Forex Liquidity Corridors."
     },
     {
       "type": "quote",
@@ -42,11 +54,11 @@
     },
     {
       "type": "h2",
-      "text": "La diversification des réserves souveraines"
+      "text": "La plomberie des lignes d'échange de liquidités de la banque centrale"
     },
     {
       "type": "p",
-      "text": "Au cours des cinq dernières années, les banques centrales souveraines – en particulier en Asie, au Moyen-Orient et en Amérique latine – se sont lancées dans le rééquilibrage des réserves le plus agressif depuis un demi-siècle. Les inquiétudes concernant les sanctions unilatérales, le gel des actifs souverains et l’érosion du pouvoir d’achat due à l’inflation occidentale ont entraîné une demande institutionnelle sans précédent pour l’or monétaire physique."
+      "text": "Le marché des changes (FX) est la plus grande plate-forme financière au monde, traitant plus de 7,5 billions de dollars de chiffre d'affaires nominal toutes les vingt-quatre heures. Pourtant, malgré son ampleur colossale, les véritables mécanismes par lesquels les États souverains règlent leurs balances commerciales transfrontalières, gèrent les facilités d’échange de devises et maintiennent leurs réserves de change restent l’un des domaines les plus opaques de la finance internationale."
     },
     {
       "type": "h3",
@@ -55,24 +67,24 @@
     {
       "type": "ul",
       "items": [
-        "Remonitisation de l'or : les achats nets d'or par la banque centrale ont dépassé 1 000 tonnes métriques par an pendant des années consécutives, atteignant les niveaux les plus élevés depuis 1967.",
-        "Compensation bilatérale non-dollar : Expansion rapide des corridors de règlement en monnaie locale (CNY, INR, SAR, AED, RUB) en utilisant des réseaux modernes de règlement brut en temps réel (RTGS).",
-        "Accumulation de liquidités offshore : les fonds souverains transfèrent les allocations de capital des obligations du Trésor américain vers des infrastructures tangibles de l'économie réelle, des terminaux énergétiques et des chaînes d'approvisionnement en terres rares.",
-        "Monnaies numériques de la banque centrale (mBridge) : plates-formes multi-CBDC permettant un règlement de change transfrontalier instantané peer-to-peer sans routage via les réseaux bancaires correspondants traditionnels."
+        "Gold Remonitization: Central bank net gold purchases have exceeded 1,000 metric tons annually for consecutive years, reaching highest levels since 1967.",
+        "Bilateral Non-Dollar Clearing: Rapid expansion of local-currency settlement corridors (CNY, INR, SAR, AED, RUB) utilizing modern real-time gross settlement (RTGS) networks.",
+        "Offshore Liquidity Accumulation: Sovereign wealth funds shifting capital allocations from US Treasury bonds into tangible real-economy infrastructure, energy terminals, and rare-earth supply chains.",
+        "Central Bank Digital Currencies (mBridge): Multi-CBDC platforms enabling instantaneous cross-border peer-to-peer foreign exchange settlement without routing through traditional correspondent banking networks."
       ]
     },
     {
       "type": "h2",
-      "text": "Implications pour les acteurs du marché mondial"
+      "text": "La plomberie des lignes d'échange de liquidités de la banque centrale"
     },
     {
       "type": "p",
-      "text": "Alors que le système financier mondial se fragmente en corridors monétaires multipolaires, les acteurs institutionnels du marché ne peuvent plus considérer les changes à travers le simple prisme des différentiels de taux d’intérêt. Les primes de risque souverain, les alliances de compensation géopolitique et le soutien aux matières premières physiques occupent à nouveau le devant de la scène."
+      "text": "Le marché des changes (FX) est la plus grande plate-forme financière au monde, traitant plus de 7,5 billions de dollars de chiffre d'affaires nominal toutes les vingt-quatre heures. Pourtant, malgré son ampleur colossale, les véritables mécanismes par lesquels les États souverains règlent leurs balances commerciales transfrontalières, gèrent les facilités d’échange de devises et maintiennent leurs réserves de change restent l’un des domaines les plus opaques de la finance internationale."
     },
     {
       "type": "p",
-      "text": "En fournissant un suivi macroéconomique transparent et en temps réel du marché ainsi qu'un journalisme architectural approfondi, Questo Magazine fournit aux analystes les informations critiques nécessaires pour naviguer dans cette nouvelle ère de réalignement monétaire mondial."
+      "text": "Le marché des changes (FX) est la plus grande plate-forme financière au monde, traitant plus de 7,5 billions de dollars de chiffre d'affaires nominal toutes les vingt-quatre heures. Pourtant, malgré son ampleur colossale, les véritables mécanismes par lesquels les États souverains règlent leurs balances commerciales transfrontalières, gèrent les facilités d’échange de devises et maintiennent leurs réserves de change restent l’un des domaines les plus opaques de la finance internationale."
     }
   ],
-  "sourceHash": "b476a090545d9342b71aeb9418e1837e7095b6d6"
+  "sourceHash": "e81bd269c9a9176db65df46225c3748dcffbcb73"
 }

@@ -28,12 +28,24 @@
       "text": "1. High-NA Optics and the Economics of Sub-2nm Foundries"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Global Semiconductor Supply Chains & EUV Lithography - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Global Semiconductor Supply Chains & EUV Lithography."
+    },
+    {
       "type": "p",
       "text": "The transition from conventional 0.33 NA to 0.55 High-NA optics represents a colossal capital expenditure inflection for merchant foundries. A single High-NA Twinscan EXE machine commands a unit cost exceeding $380 million, requiring cleanrooms with vibration dampening down to nanometer amplitudes. In traditional Rayleigh lithography resolution criteria ($CD = k_1 \\frac{\\lambda}{NA}$), increasing the numerical aperture from 0.33 to 0.55 allows printing 8nm critical features in a single exposure without the catastrophic defect density and overlay penalties of multi-patterning."
     },
     {
       "type": "p",
       "text": "Foundry economics at sub-2nm nodes dictate that initial wafer processing costs surpass $25,000 per wafer. To amortize tooling costs across hundreds of millions of dies, semiconductor giants must sustain cleanroom yields exceeding 85% within eighteen months of volume ramp—a feat demanding real-time optical metrology, machine learning defect classification, and atomic layer deposition (ALD) chambers capable of controlling oxide films one atom at a time."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Global Semiconductor Supply Chains & EUV Lithography - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Global Semiconductor Supply Chains & EUV Lithography."
     },
     {
       "type": "quote",

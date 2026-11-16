@@ -11,8 +11,8 @@
     "blockchain",
     "cryptography"
   ],
-  "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Futuristische kryptografische Netzwerktopologie, die dezentrale Zero-Knowledge-Beweise darstellt",
+  "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Futuristic cryptographic network topology representing decentralized zero-knowledge proofs",
   "body": [
     {
       "type": "p",
@@ -20,15 +20,21 @@
     },
     {
       "type": "p",
-      "text": "In einem zk-Rollup führt ein Off-Chain-Sequenzer Tausende von Transaktionen aus, aktualisiert einen internen Merkle-Zustandsbaum und berechnet einen arithmetischen Beweis, der bestätigt, dass alle Zustandsaktualisierungen strikt den Protokollregeln entsprechen. Dieser Nachweis, der normalerweise nur wenige hundert Bytes groß ist, wird an einen On-Chain-Smart-Contract auf Ethereum Layer 1 übermittelt, wo er unabhängig von der Komplexität oder Menge der zugrunde liegenden Transaktionen in Millisekunden überprüft wird."
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "h2",
       "text": "1. Die arithmetische Schaltung und die R1CS-Darstellung"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Zero-Knowledge Rollups & zk-SNARKs."
+    },
+    {
       "type": "p",
-      "text": "Um komplexe Zustandsübergänge zu verifizieren, ohne zugrunde liegende Transaktionsparameter preiszugeben oder sequentielle Anweisungen in der Kette auszuführen, werden High-Level-Berechnungen in arithmetische Schaltkreise über große endliche Felder $\\mathbb{F}_p$ kompiliert. Diese Schaltkreise werden in Rank-1-Constraint-Systeme (R1CS) abgeflacht und als Matrixgleichungen der Struktur formalisiert:"
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "code",
@@ -36,8 +42,14 @@
       "code": "(A · s) ∘ (B · s) = (C · s)\n\nWhere:\n- A, B, C are sparse coefficient matrices defining the program logic\n- s is the witness vector containing private inputs, public inputs, and intermediate wires\n- ∘ represents the Hadamard (element-wise) vector product"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Zero-Knowledge Rollups & zk-SNARKs."
+    },
+    {
       "type": "p",
-      "text": "Die R1CS-Darstellung wird anschließend durch Lagrange-Polynominterpolation in ein quadratisches Arithmetikprogramm (QAP) umgewandelt. Durch die Umwandlung von Vektorskalaprodukten in Polynomteilbarkeitsprüfungen ($P(x) = H(x) \\cdot T(x)$) kann der Beweiser Polynombeziehungen an einem geheimen Bewertungspunkt auswerten, ohne Zwischenberechnungszustände offenzulegen."
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "quote",
@@ -46,63 +58,63 @@
     },
     {
       "type": "h2",
-      "text": "2. Polynomial Commitments: KZG vs. FRI-Protokolle"
+      "text": "1. Die arithmetische Schaltung und die R1CS-Darstellung"
     },
     {
       "type": "p",
-      "text": "Das Kernprimitiv, das eine prägnante Verifizierung ermöglicht, ist das Polynomial Commitment Scheme (PCS). Ein PCS ermöglicht es einem Prüfer, sich mit einer einzigen kleinen kryptografischen Zeichenfolge auf ein Polynom höheren Grades festzulegen und anschließend Auswertungen dieses Polynoms an ausgewählten Punkten mit einem unbestreitbaren Beweis der Korrektheit zu öffnen."
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "p",
-      "text": "Zwei Hauptfamilien dominieren moderne Layer-2-Produktionssysteme: Paarungsbasierte Kate-Zaverucha-Goldberg-Schemata (KZG) und Hash-basierte Fast Reed-Solomon Interactive Oracle Proofs of Proximity (FRI):"
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "ul",
       "items": [
-        "KZG-Verpflichtungen (verwendet in Scroll, Taiko, Linea): Erzielen Sie Proofs mit konstanter Größe (typischerweise 48 Bytes auf BLS12-381-Kurven) und eine konstante Überprüfungszeit. Sie erfordern einen strukturierten Referenzstring (SRS), der über ein kryptografisches, vertrauenswürdiges Setup generiert wird.",
-        "FRI-Verpflichtungen (verwendet in Starknet/STARKs): Verlassen Sie sich strikt auf kollisionsresistente kryptografische Hash-Funktionen. Sie erfordern Zero-Trust-Setups, sind transparent und bieten theoretische Post-Quantum-Sicherheit auf Kosten größerer Proof-Größen (10 KB–100 KB).",
-        "Halo2- und IPA-Schemata (verwendet in Zcash, Scroll): Nutzen Sie innere Produktargumente über elliptische Kurvenzyklen hinweg und eliminieren Sie vertrauenswürdige Setup-Zeremonien, ohne die Bandbreiteneinbußen vollständiger STARK-Beweise zu erleiden."
+        "KZG Commitments (Used in Scroll, Taiko, Linea): Yield constant-size proofs (typically 48 bytes on BLS12-381 curves) and constant verification time. They require a Structured Reference String (SRS) generated via a cryptographic trusted setup.",
+        "FRI Commitments (Used in Starknet / STARKs): Rely strictly on collision-resistant cryptographic hash functions. They require zero trusted setups, are transparent, and provide theoretical post-quantum security at the cost of larger proof sizes (10KB–100KB).",
+        "Halo2 & IPA Schemes (Used in Zcash, Scroll): Utilize Inner Product Arguments across elliptic curve cycles, eliminating trusted setup ceremonies without incurring the bandwidth penalties of full STARK proofs."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Technischer Vortrag: Vitalik Buterin über ZK-SNARKs und Layer-2-Skalierung"
+      "text": "1. Die arithmetische Schaltung und die R1CS-Darstellung"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "Zero-Knowledge Proofs und Layer-2-Skalierungsgrundlagen",
-      "caption": "Vitalik Buterin erklärt die kryptografischen Grundlagen, Zustandsübergangsnachweise und Rollup-Architekturen zur Skalierung von Ethereum."
+      "title": "Zero-Knowledge Proofs and Layer-2 Scaling Foundations",
+      "caption": "Vitalik Buterin explains the cryptographic foundation, state transition proofs, and rollup architectures scaling Ethereum."
     },
     {
       "type": "h2",
-      "text": "4. Datenverfügbarkeit und Proto-Danksharding (EIP-4844)"
+      "text": "1. Die arithmetische Schaltung und die R1CS-Darstellung"
     },
     {
       "type": "p",
-      "text": "Während ein Gültigkeitsnachweis die mathematische Korrektheit der Off-Chain-Ausführung garantiert, garantiert er nicht grundsätzlich, dass die zugrunde liegenden Transaktionsdaten öffentlich zugänglich sind. Ohne Datenverfügbarkeit können Benutzer den Zustandsbaum im Falle einer Sequencer-Zensur oder eines Infrastrukturausfalls nicht rekonstruieren."
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "p",
-      "text": "Ethereum EIP-4844 führte „Datenblobs“ ein – vorübergehende, kostengünstige Datenräume, die an Blöcke gebunden sind und etwa 18 Tage lang bestehen bleiben, anstatt den L1-Ausführungsstatus auf unbestimmte Zeit zu belegen. Durch die Abwicklung von Zustandsgültigkeitsnachweisen bei der Layer-1-Ausführung bei gleichzeitiger Veröffentlichung von Rohtransaktionsdeltas im transienten Blob-Speicher sind die Rollup-Gasgebühren um über 95 % gesunken und dezentrale Anwendungen in Versorgungsunternehmen im Verbrauchermaßstab umgewandelt worden."
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     },
     {
       "type": "h2",
-      "text": "5. Kryptografische Erkenntnisse und Systemprinzipien"
+      "text": "1. Die arithmetische Schaltung und die R1CS-Darstellung"
     },
     {
       "type": "ul",
       "items": [
-        "Prägnanz statt Neuausführung: ZK-SNARKs ermöglichen eine globale Verifizierbarkeit, bei der die Verifizierungskosten $O(1)$ oder $O(\\log n)$ im Verhältnis zur Berechnungskomplexität betragen.",
-        "Trennung von Belangen: Entkoppeln Sie die Ausführung (Off-Chain-Sequenzer) von der Abwicklung und Endgültigkeit (Verifizierer intelligenter Verträge der Schicht 1).",
-        "Rekursive Aggregation: Moderne Prüfer fassen Tausende von Unterbeweisen zu einem einzigen Hauptbeweis zusammen und amortisieren so den On-Chain-Verifizierungsaufwand über Hunderttausende von Transaktionen.",
-        "Datenverfügbarkeitssicherheit: Stellen Sie sicher, dass Schicht-2-Zustandsübergänge durch dezentrale Blob-Verbreitungsnetzwerke rekonstruierbar bleiben."
+        "Succinctness Over Re-execution: ZK-SNARKs enable global verifiability where verification cost is $O(1)$ or $O(\\log n)$ relative to computation complexity.",
+        "Separation of Concerns: Decouple execution (off-chain sequencers) from settlement and finality (Layer 1 smart contract verifiers).",
+        "Recursive Aggregation: Modern provers aggregate thousands of sub-proofs into a single master proof, amortizing on-chain verification gas across hundreds of thousands of transactions.",
+        "Data Availability Security: Ensure Layer 2 state transitions remain reconstructible through decentralized blob dissemination networks."
       ]
     },
     {
       "type": "p",
-      "text": "Haftungsausschluss für Bildungseinrichtungen: Diese technische Monographie wird ausschließlich für akademische Zwecke in den Bereichen Informatik, Kryptographie und verteilte Systemforschung veröffentlicht. Es handelt sich nicht um eine Finanz-, Anlage- oder Rechtsberatung."
+      "text": "Das grundlegende Dilemma dezentraler Ledger-Architekturen ist der überprüfbare Berechnungsengpass: Wenn jeder validierende Knoten in einem globalen Peer-to-Peer-Netzwerk jede Transaktion nacheinander erneut ausführen muss, um die Zustandskorrektheit zu überprüfen, ist der Transaktionsdurchsatz streng durch die Verarbeitungsgeschwindigkeit des langsamsten physischen Knotens begrenzt. Zero-Knowledge-Rollups (zk-Rollups) lösen diese Einschränkung durch kryptografische Beweissysteme und ersetzen redundante verteilte Neuausführung durch mathematische Prägnanz."
     }
   ],
-  "sourceHash": "523630936943ab95ea0e6983fdce3c8a20e619d1"
+  "sourceHash": "cd0c2f1cad9c8e207447722c4c2ad15c685431e2"
 }

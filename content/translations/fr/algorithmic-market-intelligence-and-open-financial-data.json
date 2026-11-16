@@ -12,7 +12,7 @@
     "algorithms"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Graphique financier en chandelier affichant une dynamique technique ascendante par rapport à une interface sombre.",
+  "imageAlt": "Candlestick financial chart displaying upward technical momentum against a dark interface",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Aujourd'hui, une révolution technologique discrète est en train de démanteler cette barrière. Les protocoles WebSocket à haut débit, les pipelines de rendu vectoriel WebAssembly et les répartitions d'échange institutionnelles ouvertes permettent d'évaluer des graphiques multi-périodes directement dans les environnements d'exécution de navigateur standard sans logiciel tiers coûteux."
+      "text": "Pendant des décennies, les institutions de Wall Street ont maintenu un avantage asymétrique sur les acteurs de détail mondiaux grâce à des terminaux matériels propriétaires et à des frais de syndication de données de marché exorbitants. L’accès à la découverte des prix en temps réel, à la profondeur du flux des commandes de livres et aux modèles de corrélation entre actifs était farouchement protégé derrière des murs payants d’abonnement mensuels à cinq chiffres."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Algorithmic Market Intelligence and Open Financial Data."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "Questo Financial Technologies Dispatch"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Algorithmic Market Intelligence and Open Financial Data."
+    },
+    {
       "type": "h3",
       "text": "Métriques critiques de l'intelligence ouverte moderne"
     },
     {
       "type": "ul",
       "items": [
-        "Oscillateurs mathématiques inférieurs à la milliseconde (RSI, MACD, bandes de Bollinger) calculés localement sur des tableaux historiques.",
-        "Intégrité des données sans compromis grâce à des divulgations réglementaires vérifiées des bourses publiques et des bandes retardées.",
-        "Matrices de corrélation multi-actifs multi-actifs suivant les obligations souveraines, les matières premières et la liquidité des devises."
+        "Sub-millisecond mathematical oscillators (RSI, MACD, Bollinger Bands) computed locally on historical arrays.",
+        "Zero-compromise data integrity through verified public exchange regulatory disclosures and delayed tapes.",
+        "Cross-asset multi-market correlation matrices tracking sovereign bonds, commodities, and currency liquidity."
       ]
     },
     {
       "type": "p",
-      "text": "À mesure que les architectures financières ouvertes mûrissent, les plateformes de publication numérique qui intègrent des indicateurs macroéconomiques en direct directement aux côtés des enquêtes journalistiques créent une valeur contextuelle sans précédent pour les analystes mondiaux curieux."
+      "text": "Pendant des décennies, les institutions de Wall Street ont maintenu un avantage asymétrique sur les acteurs de détail mondiaux grâce à des terminaux matériels propriétaires et à des frais de syndication de données de marché exorbitants. L’accès à la découverte des prix en temps réel, à la profondeur du flux des commandes de livres et aux modèles de corrélation entre actifs était farouchement protégé derrière des murs payants d’abonnement mensuels à cinq chiffres."
     }
   ],
-  "sourceHash": "6430a948ddf7d0cd90e6d8f81c30482d30577640"
+  "sourceHash": "e354fb121c1df4ece3a0fa71cc8f4e48be1bc568"
 }

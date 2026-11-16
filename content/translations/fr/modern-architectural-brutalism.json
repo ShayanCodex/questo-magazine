@@ -10,7 +10,7 @@
     "theory"
   ],
   "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Brutalisme architectural moderne",
+  "imageAlt": "Modern Architectural Brutalism",
   "body": [
     {
       "type": "p",
@@ -22,7 +22,13 @@
     },
     {
       "type": "p",
-      "text": "La véritable retenue architecturale n'est pas une question de vide, mais de précision. Chaque plan et élévation est mesuré par rapport aux proportions humaines et à l’éclairage naturel."
+      "text": "L'interaction entre la lumière, la masse géométrique et la matérialité silencieuse constitue le langage fondateur de l'architecture minimaliste moderne."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Modern Architectural Brutalism."
     },
     {
       "type": "quote",
@@ -32,15 +38,21 @@
     {
       "type": "ol",
       "items": [
-        "Subordonner les impulsions décoratives à l'intégrité structurelle",
-        "Maximiser la lumière du jour grâce à des ouvertures spatiales calculées",
-        "Préserver les textures tactiles du calcaire brut et du bois apparent"
+        "Subordinating decorative impulses to structural integrity",
+        "Maximizing daylight through calculated spatial apertures",
+        "Preserving tactile tactile textures of raw limestone and exposed timber"
       ]
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Modern Architectural Brutalism."
+    },
+    {
       "type": "p",
-      "text": "Lorsque nous éliminons le superflu, ce qui reste n'est pas l'absence, mais la clarté."
+      "text": "L'interaction entre la lumière, la masse géométrique et la matérialité silencieuse constitue le langage fondateur de l'architecture minimaliste moderne."
     }
   ],
-  "sourceHash": "8e920df698a9b242cb729b7174045072b791300f"
+  "sourceHash": "d797f7bd03e572e52478b5d00930a0554888afe7"
 }

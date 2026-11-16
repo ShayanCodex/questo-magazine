@@ -13,8 +13,8 @@
     "supply-chains",
     "geopolitics"
   ],
-  "image": "/images/articles/critical-minerals-mining.jpg",
-  "imageAlt": "Ultra-large neo-panamax container vessel navigating interoceanic locks and deepwater maritime channels",
+  "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Neo-Panamax container ship navigating through narrow lock canal infrastructure",
   "body": [
     {
       "type": "h2",
@@ -29,6 +29,12 @@
       "text": "Key Points"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Automated deepwater port container cranes transferring maritime cargo containers",
+      "caption": "Draft depth restrictions: freshwater canal drought conditions forcing container offloading to meet keel clearance margins."
+    },
+    {
       "type": "ul",
       "items": [
         "Panamax Draft Restrictions: Drought conditions in Lake Gatun force carriers to reduce cargo capacity by up to forty percent to clear transit draft limits.",
@@ -41,6 +47,12 @@
       "type": "quote",
       "text": "Global trade is not an ethereal cloud abstraction; it is a physical choreography of massive steel vessels navigating narrow physical choke points vulnerable to geology, climate, and war.",
       "cite": "Maritime Logistics & Sovereign Trade Review"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Satellite automatic identification system AIS display tracking global maritime container ship choke points",
+      "caption": "Autonomous maritime logistics: algorithmic voyage speed adjustments and slot auctions optimizing global freight schedules."
     },
     {
       "type": "h2",

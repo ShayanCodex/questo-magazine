@@ -12,7 +12,7 @@
     "concert-halls"
   ],
   "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "Paneles de pared acústicos escultóricos de madera y deflectores arquitectónicos en un auditorio filarmónico moderno",
+  "imageAlt": "Sculptural acoustic timber wall panels and architectural baffles in a modern philharmonic auditorium",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "Más allá de la reflexión y la absorción especulares"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Acoustic Diffusors & Schroeder Sequences in Architecture."
     },
     {
       "type": "ul",
       "items": [
-        "Difusores de residuos cuadráticos (QRD): diseñados utilizando aritmética modular matemática $s_n = n^2 \\pmod{N}$, creando profundidades de pozo que cambian de fase de manera uniforme.",
-        "Difusores de raíces primitivas (PRD): utilice la teoría de números primos para eliminar reflexiones especulares de orden cero en bandas acústicas amplias de frecuencia media.",
-        "Preservación de la energía reverberante: a diferencia de los absorbentes de fibra de vidrio, los difusores mantienen la energía de la habitación al tiempo que eliminan los ecos de aleteo y el filtrado de peine.",
-        "Envoltura espacial: los conjuntos de rejillas de fase distribuidas mejoran la impresión subjetiva de envoltura del oyente (LEV) en salas sinfónicas."
+        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths that shift phase evenly.",
+        "Primitive Root Diffusors (PRD): Utilize prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
+        "Preservation of Reverberant Energy: Unlike fiberglass absorbers, diffusors maintain room energy while eliminating flutter echoes and comb filtering.",
+        "Spatial Envelopment: Distributed phase grating arrays enhance the subjective impression of listener envelopment (LEV) in symphonic halls."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Sociedad Acústica de Ingenieros Arquitectónicos"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Acoustic Diffusors & Schroeder Sequences in Architecture."
+    },
+    {
       "type": "h2",
-      "text": "Matemáticas de rejillas de fase"
+      "text": "Más allá de la reflexión y la absorción especulares"
     },
     {
       "type": "p",
-      "text": "Iniciadas por el físico Manfred Schroeder a fines de la década de 1970, las rejillas de fase matemáticas utilizan pozos de diferentes profundidades separados por delgados divisores acústicos. Cuando una onda incidente encuentra estos pozos, las ondas reflejadas salen con distintos retrasos de fase, lo que resulta en una interferencia destructiva a lo largo del eje especular y una amplia dispersión en otros lugares."
+      "text": "La acústica arquitectónica ha evolucionado más allá de la tensión binaria de la reflexión especular y la absorción porosa. Mientras que las superficies duras y planas reflejan el sonido como espejos y las telas densas atenúan la energía del sonido, los difusores dispersan la energía de las ondas incidentes de manera uniforme a lo largo del tiempo y las coordenadas espaciales sin agotar la vitalidad acústica ambiental."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/n3W-n_dF83U",
-      "title": "Acústica arquitectónica y física de difusores Schroeder",
-      "caption": "Una descripción general de ingeniería de difusores de residuos cuadráticos, cálculos de profundidad de pozo y patrones de difusión de sonido en auditorios."
+      "title": "Architectural Acoustics & Schroeder Diffusor Physics",
+      "caption": "An engineering overview of quadratic residue diffusors, well-depth calculations, and sound diffusion patterns in auditoriums.",
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
     },
     {
       "type": "h2",
-      "text": "Optimización computacional en el diseño contemporáneo"
+      "text": "Más allá de la reflexión y la absorción especulares"
     },
     {
       "type": "p",
-      "text": "Las prácticas arquitectónicas contemporáneas utilizan modelado de ondas paramétricas de elementos finitos para tallar paneles de madera ondulados en 3D directamente en la geometría interior de los auditorios, combinando la física acústica con la estética escultórica."
+      "text": "La acústica arquitectónica ha evolucionado más allá de la tensión binaria de la reflexión especular y la absorción porosa. Mientras que las superficies duras y planas reflejan el sonido como espejos y las telas densas atenúan la energía del sonido, los difusores dispersan la energía de las ondas incidentes de manera uniforme a lo largo del tiempo y las coordenadas espaciales sin agotar la vitalidad acústica ambiental."
     }
   ],
-  "sourceHash": "968a630affc67b96338554bbe3f0f26e551bb1fa"
+  "sourceHash": "a694b4a265a24dd1874e8c29c785c9ef5dd9ef57"
 }

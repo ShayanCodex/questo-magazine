@@ -11,8 +11,8 @@
     "astrophysics",
     "optics"
   ],
-  "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Nebulosa cósmica del espacio profundo que representa ondas gravitacionales a través de la curvatura del espacio-tiempo",
+  "image": "https://images.unsplash.com/photo-1516339901601-2e15629c1800?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Deep space cosmic nebula representing gravitational wave ripples across spacetime curvature",
   "body": [
     {
       "type": "p",
@@ -20,19 +20,31 @@
     },
     {
       "type": "p",
-      "text": "El 14 de septiembre de 2015, el Observatorio de Ondas Gravitacionales con Interferómetro Láser Avanzado (LIGO) registró GW150914: la catastrófica espiral y colisión de dos agujeros negros de masa estelar a 1.300 millones de años luz de distancia. El logro marcó la transición de la astronomía humana de la observación electromagnética a la interferometría espacio-temporal métrica directa."
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
     },
     {
       "type": "h2",
       "text": "1. Arquitectura óptica: cavidades Fabry-Pérot y reciclaje de energía"
     },
     {
-      "type": "p",
-      "text": "LIGO opera dos brazos de vacío perpendiculares de cuatro kilómetros ubicados en Hanford, Washington y Livingston, Luisiana. En la intersección se encuentra un láser Nd:YAG de alta pureza (que funciona a una longitud de onda de 1064 nm) dividido en dos haces ortogonales mediante un divisor de haz 50:50."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518331647614-7a1f04cd34cf?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Gravitational Wave Interferometry - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Gravitational Wave Interferometry."
     },
     {
       "type": "p",
-      "text": "Si se implementara un simple interferómetro de Michelson, una línea de base de cuatro kilómetros sería insuficiente para acumular cambios de fase detectables. Para resolver esto, LIGO introduce cavidades resonantes ópticas de Fabry-Pérot dentro de ambos brazos, haciendo rebotar los fotones aproximadamente 300 veces antes de permitir la interferencia en el fotodetector. Esto aumenta la longitud efectiva de la trayectoria óptica de 4 kilómetros a más de 1.100 kilómetros:"
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
+    },
+    {
+      "type": "p",
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Gravitational Wave Interferometry - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Gravitational Wave Interferometry."
     },
     {
       "type": "code",
@@ -41,7 +53,7 @@
     },
     {
       "type": "p",
-      "text": "Cuando el espacio-tiempo es deformado por una onda gravitacional entrante transversal sin dejar rastro, un brazo se comprime físicamente mientras que el brazo perpendicular se estira. La discrepancia de fase resultante cambia la condición de la franja oscura en el fotodiodo, produciendo una corriente fluctuante medible del fotodiodo directamente proporcional a la métrica de deformación h(t)$."
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
     },
     {
       "type": "quote",
@@ -50,58 +62,58 @@
     },
     {
       "type": "h2",
-      "text": "2. La luz exprimida y el límite cuántico estándar"
+      "text": "1. Arquitectura óptica: cavidades Fabry-Pérot y reciclaje de energía"
     },
     {
       "type": "p",
-      "text": "En los umbrales de sensibilidad últimos, LIGO encuentra el límite cuántico estándar regido por el principio de incertidumbre de Heisenberg entre la incertidumbre de la fase del fotón y la incertidumbre de la presión de la radiación. Si se aumenta la potencia del láser para minimizar el ruido del disparo (incertidumbre de fase), el impulso físico transferido por los fotones que se reflejan en las masas de prueba de sílice fundida de 40 kilogramos crea ruido de presión de radiación cuántica."
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
     },
     {
       "type": "p",
-      "text": "LIGO avanzado elude este límite inyectando estados de vacío comprimidos dependientes de la frecuencia en el puerto oscuro del interferómetro. Utilizando osciladores paramétricos ópticos no lineales, la incertidumbre cuántica se \"comprime\" deliberadamente a lo largo de la cuadratura de fase en frecuencias de audio altas (donde domina el ruido de disparo) y a lo largo de la cuadratura de amplitud en frecuencias bajas, aumentando el volumen de detección de eventos en casi un 50%."
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
     },
     {
       "type": "ul",
       "items": [
-        "Suspensión de péndulo cuádruple: espejos de prueba cuelgan de péndulos de sílice fundida de cuatro etapas, aislando la óptica del ruido microsísmico terrestre en un factor de $10^{9}$.",
-        "Vacío ultraalto: Los tubos de 4 kilómetros operan a $10^{-9}$ torr ($10^{-12}$ atmósferas), lo que representa una de las cámaras de vacío sostenido más grandes de la Tierra.",
-        "Detección activa del suelo: Cientos de sismómetros y geófonos detectan el tráfico en las carreteras, el oleaje del océano y microterremotos, accionando actuadores de bobina móvil que cancelan las vibraciones antes de que alcancen las masas de prueba del espejo."
+        "Quadruple Pendulum Suspension: Test mirrors hang from four-stage fused silica pendulums, isolating optics from terrestrial micro-seismic noise by a factor of $10^{9}$.",
+        "Ultra-High Vacuum: The 4-kilometer tubes operate at $10^{-9}$ torr ($10^{-12}$ atmospheres), representing one of the largest sustained vacuum chambers on Earth.",
+        "Active Ground Sensing: Hundreds of seismometers and geophones detect highway traffic, ocean surf, and micro-earthquakes, driving voice-coil actuators that cancel vibrations before they reach mirror test masses."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral documental: La física de la detección de ondas gravitacionales"
+      "text": "1. Arquitectura óptica: cavidades Fabry-Pérot y reciclaje de energía"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "La física y la ingeniería de la detección de ondas gravitacionales",
-      "caption": "Documental visual completo que detalla la física óptica del láser LIGO, el aislamiento sísmico y la detección de fusiones de agujeros negros."
+      "title": "The Physics and Engineering of Detecting Gravitational Waves",
+      "caption": "Comprehensive visual documentary detailing LIGO laser optical physics, seismic isolation, and the detection of black hole mergers."
     },
     {
       "type": "h2",
-      "text": "4. Fusiones de estrellas de neutrones binarias y nucleosíntesis de Kilonova"
+      "text": "1. Arquitectura óptica: cavidades Fabry-Pérot y reciclaje de energía"
     },
     {
       "type": "p",
-      "text": "Mientras que las fusiones de agujeros negros binarios emiten ondas gravitacionales puramente métricas sin emisiones electromagnéticas, las fusiones de estrellas de neutrones binarias (como GW170817) inauguran la astrofísica de múltiples mensajeros. Cuando dos estrellas de neutrones hiperdensas orbitan en estrechas trayectorias relativistas, la intensa radiación gravitacional drena el momento angular orbital hasta que las estrellas chocan."
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
     },
     {
       "type": "p",
-      "text": "La espectroscopia óptica, de rayos gamma e infrarroja posterior confirmó que las colisiones de estrellas de neutrones impulsan el proceso r astrofísico (captura rápida de neutrones). Millones de toneladas de lantánidos pesados ​​radiactivos, platino y oro se forjan y se expulsan al medio interestelar, resolviendo el antiguo misterio cósmico de dónde fabrica el universo los elementos más pesados ​​de la tabla periódica."
+      "text": "En 1916, Albert Einstein derivó de las ecuaciones de la Relatividad General que los cuadrupolos de masa en aceleración deben irradiar perturbaciones a través del tensor métrico del espacio-tiempo: las ondas gravitacionales. Durante casi un siglo, estas ondas siguieron siendo construcciones puramente teóricas, que se predijo que causarían distorsiones espaciales tan infinitesimales (del orden de $10^{-21}$ de tensión) que el propio Einstein dudaba que la humanidad pudiera alguna vez fabricar instrumentos lo suficientemente sensibles para detectarlas."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones fundamentales de la física"
+      "text": "1. Arquitectura óptica: cavidades Fabry-Pérot y reciclaje de energía"
     },
     {
       "type": "ul",
       "items": [
-        "Verificación de la velocidad de la gravedad: Las observaciones de múltiples mensajeros confirmaron que las ondas gravitacionales viajan a la velocidad de la luz con una precisión de 1 parte en $10^{15}$.",
-        "Ecuación de restricciones de estado: Las firmas de deformabilidad de las mareas observadas durante las inspiraciones de estrellas de neutrones limitan los modelos de materia nuclear densa imposibles de replicar en colisionadores de partículas terrestres.",
-        "Sirenas cosmológicas estándar: los chirridos de ondas gravitacionales proporcionan mediciones de distancia directas independientes de las escaleras de distancia cósmicas, ofreciendo un método limpio e independiente para medir la constante de Hubble ($H_0$)."
+        "Speed of Gravity Verification: Multi-messenger observations confirmed that gravitational waves travel at the speed of light to within 1 part in $10^{15}$.",
+        "Equation of State Constraints: Tidal deformability signatures observed during neutron star inspirals constrain dense nuclear matter models impossible to replicate in terrestrial particle colliders.",
+        "Cosmological Standard Sirens: Gravitational wave chirps provide direct distance measurements independent of cosmic distance ladders, offering a clean independent method to measure the Hubble constant ($H_0$)."
       ]
     }
   ],
-  "sourceHash": "970c1777b61b7311881072fd7670557347dcaf31"
+  "sourceHash": "8b1fe0b6f373b00b2ff5d58d4eb8e100a66deadf"
 }

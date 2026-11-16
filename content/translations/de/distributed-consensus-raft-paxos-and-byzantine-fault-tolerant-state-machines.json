@@ -12,7 +12,7 @@
     "system-architecture"
   ],
   "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "Server-Racks mit hoher Dichte und Glasfaserverkabelung in einem hyperskalierten verteilten Cloud-Rechenzentrum",
+  "imageAlt": "High-density server racks with optical fiber cabling in a hyperscale distributed cloud datacenter",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Das grundlegende Problem verteilter Vereinbarungen"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Distributed Consensus: Raft & Paxos - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Distributed Consensus: Raft & Paxos."
     },
     {
       "type": "ul",
       "items": [
-        "Replicated State Machine (RSM)-Modell: Wenn mehrere deterministische Zustandsmaschinen die exakt gleiche Folge von Protokolleinträgen aus demselben Anfangszustand verarbeiten, gelangen sie zu identischen Endzuständen.",
-        "Paxos vs. Raft-Zerlegung: Während Multi-Paxos Konsensphasen kombiniert, unterteilt Raft das Problem in verschiedene Teilprobleme: Leader-Wahl, Protokollreplikation und Commit-Sicherheit.",
-        "Quorum-Overlap-Theorem: Zwei beliebige Quoren der Größe $Q = \\lfloor N/2 \\rfloor + 1$ in einem Cluster von $N$-Knoten müssen sich mindestens einen Knoten teilen, um sicherzustellen, dass historische Protokoll-Commits nicht überschrieben werden können.",
-        "Byzantinische Fehlertoleranz (BFT): Crash-fehlertolerante Protokolle tolerieren $f$-Crashfehler von $2f+1$-Knoten; BFT-Protokolle tolerieren $f$ böswillige oder willkürliche Fehler von $3f+1$-Knoten."
+        "Replicated State Machine (RSM) Model: If multiple deterministic state machines process the exact same sequence of log entries from the same initial state, they arrive at identical end states.",
+        "Paxos vs. Raft Decomposition: While Multi-Paxos combines consensus phases, Raft breaks the problem into distinct subproblems: leader election, log replication, and commit safety.",
+        "Quorum Overlap Theorem: Any two quorums of size $Q = \\lfloor N/2 \\rfloor + 1$ in a cluster of $N$ nodes must share at least one node, guaranteeing that historical log commits cannot be overwritten.",
+        "Byzantine Fault Tolerance (BFT): Crash fault-tolerant protocols tolerate $f$ crash failures out of $2f+1$ nodes; BFT protocols tolerate $f$ malicious or arbitrary faults out of $3f+1$ nodes."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "ACM-Symposium zu Prinzipien des verteilten Rechnens"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507499739999-097706ad8914?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Distributed Consensus: Raft & Paxos - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Distributed Consensus: Raft & Paxos."
+    },
+    {
       "type": "h2",
-      "text": "Raft-Log-Matching-Eigenschafts- und Term-Invarianten"
+      "text": "Das grundlegende Problem verteilter Vereinbarungen"
     },
     {
       "type": "p",
-      "text": "Raft erzwingt zwei kritische Invarianten: Wenn zwei Einträge in verschiedenen Protokollen denselben Index und Term haben, speichern sie denselben Befehl; Wenn außerdem zwei Einträge übereinstimmen, sind alle vorherigen Einträge in ihren Protokollen identisch. Wenn ein gewählter Anführer Heartbeats festlegt, schneidet die Follower-Konfliktlösung kontinuierlich nicht festgeschriebene divergierende Einträge ab."
+      "text": "Im Zentrum moderner Cloud-Architekturen – von verteilten Datenspeichern wie CockroachDB und etcd bis hin zu Blockchain-Abrechnungsbüchern – liegt die Herausforderung der verteilten Zustandsmaschinenreplikation. Wie kann sich ein Cluster unabhängiger Serverknoten auf eine geordnete Abfolge von Zustandsübergängen in einem asynchronen Netzwerk einigen, das Paketverlusten, Latenzspitzen und Maschinenabstürzen ausgesetzt ist?"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "Verteilte Systeme: Raft-Konsensalgorithmus in 20 Minuten",
-      "caption": "Visuelle Komplettlösung für die Wahl des Anführers, Termzähler, zufällige Wahltimer, Protokollreplikation und Wiederherstellung der Netzwerkpartition in Raft-Clustern."
+      "title": "Distributed Systems: Raft Consensus Algorithm in 20 Minutes",
+      "caption": "Visual walkthrough of leader election, term counters, randomized election timers, log replication, and network partition recovery in Raft clusters.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "Von Absturzfehlern zu dezentralen BFT-Netzwerken"
+      "text": "Das grundlegende Problem verteilter Vereinbarungen"
     },
     {
       "type": "p",
-      "text": "Moderne föderierte Ledger ersetzen einfache Absturzannahmen durch kryptografisch signierte Abstimmungen und Ansichtsänderungsprotokolle (z. B. PBFT, Tendermint, HotStuff), wodurch die Pipeline-Latenz bei optimistischer Ausführung auf die Kommunikationskomplexität $O(N)$ begrenzt wird."
+      "text": "Im Zentrum moderner Cloud-Architekturen – von verteilten Datenspeichern wie CockroachDB und etcd bis hin zu Blockchain-Abrechnungsbüchern – liegt die Herausforderung der verteilten Zustandsmaschinenreplikation. Wie kann sich ein Cluster unabhängiger Serverknoten auf eine geordnete Abfolge von Zustandsübergängen in einem asynchronen Netzwerk einigen, das Paketverlusten, Latenzspitzen und Maschinenabstürzen ausgesetzt ist?"
     }
   ],
-  "sourceHash": "6503f89b1d9f5c613ba4508051fe52bc20a050d8"
+  "sourceHash": "a275c70b24e2902b2558ec1e0b4ebb0d0c1724f2"
 }

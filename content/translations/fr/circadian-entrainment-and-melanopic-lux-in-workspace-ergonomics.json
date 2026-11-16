@@ -12,7 +12,7 @@
     "wellness"
   ],
   "image": "/images/articles/circadian-lighting-workspace.jpg",
-  "imageAlt": "Espace de travail architectural spacieux éclairé par la lumière naturelle du sol au plafond et un éclairage de travail adaptatif",
+  "imageAlt": "Spacious architectural workspace illuminated by natural floor-to-ceiling daylight and adaptive task illumination",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "Le coût biologique de la lumière intérieure stagnante"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Circadian Lighting in Workspace Ergonomics - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Circadian Lighting in Workspace Ergonomics."
     },
     {
       "type": "ul",
       "items": [
-        "Mélanopsine et ipRGC : les cellules ganglionnaires rétiniennes intrinsèquement photosensibles contiennent le photopigment mélanopsine, sensible au maximum aux longueurs d'onde cyan étroites proches de 480 nm.",
-        "Noyau suprachiasmatique (SCN) : les projections axonales ipRGC innervent directement l'horloge principale hypothalamique, synchronisant les horloges périphériques du foie, du cœur et du pancréas.",
-        "Equivalent Melanopic Lux (EML) : les environnements intérieurs diurnes nécessitent au moins 250 EML entre 09h00 et 13h00 pour maintenir le cortisol, la vigilance et l'endurance cognitive pendant la journée.",
-        "Prévention du retard de phase du soir : le déplacement de l'éclairage en dessous de 50 EML et l'épuisement des émissions de longueur d'onde courte de 480 nm après le coucher du soleil protègent la sécrétion pinéale nocturne de mélatonine."
+        "Melanopsin and ipRGCs: Intrinsically photosensitive retinal ganglion cells contain the photopigment melanopsin, maximally sensitive to narrow cyan wavelengths near 480nm.",
+        "Suprachiasmatic Nucleus (SCN): ipRGC axonal projections directly innervate the hypothalamic master clock, synchronizing peripheral clocks across the liver, heart, and pancreas.",
+        "Equivalent Melanopic Lux (EML): Daytime indoor environments require at least 250 EML between 09:00 and 13:00 to sustain daytime cortisol, vigilance, and cognitive stamina.",
+        "Evening Phase Delay Prevention: Shifting illumination below 50 EML and depleting short-wavelength 480nm emissions after sunset protects nocturnal pineal melatonin secretion."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Institut international de construction de puits et recherche en chronobiologie"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Circadian Lighting in Workspace Ergonomics - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Circadian Lighting in Workspace Ergonomics."
+    },
+    {
       "type": "h2",
-      "text": "Architecture blanche accordable dynamique"
+      "text": "Le coût biologique de la lumière intérieure stagnante"
     },
     {
       "type": "p",
-      "text": "Les installations d'éclairage centrées sur l'humain (HCL) utilisent des LED blanches accordables à double canal qui balayent dynamiquement des températures de couleur fraîches et mélanopiques élevées de 5 500 K pendant les heures de productivité maximale du matin jusqu'aux tons chauds de 2 700 K faiblement mélanopiques en fin d'après-midi, imitant l'évolution spectrale solaire."
+      "text": "Les travailleurs du savoir professionnels modernes passent jusqu'à 90 % de leurs heures d'éveil à l'intérieur de structures climatisées sous des luminaires fluorescents statiques ou des luminaires LED mal réglés. Alors que les directives architecturales standard spécifient l'éclairement en lux photopiques (optimisé strictement pour la clarté des tâches visuelles), l'œil humain abrite un troisième système photorécepteur entièrement dédié à la biologie circadienne."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM",
-      "title": "Éclairage circadien, Melanopic Lux et performances de l'espace de travail",
-      "caption": "Enquête chronobiologique sur la photoréception de la mélanopsine, la suppression de la lumière bleue et les conceptions d'éclairage architecturales centrées sur l'humain."
+      "title": "Circadian Lighting, Melanopic Lux, and Workspace Performance",
+      "caption": "Chronobiology investigation into melanopsin photoreception, blue light suppression, and architectural human-centric lighting designs.",
+      "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM"
     },
     {
       "type": "h2",
-      "text": "Latence du sommeil et santé métabolique"
+      "text": "Le coût biologique de la lumière intérieure stagnante"
     },
     {
       "type": "p",
-      "text": "Les employés travaillant dans des espaces de travail dotés d'un stimulus circadien diurne optimisé signalent une latence d'endormissement plus courte, des réveils nocturnes réduits et une tolérance au glucose matinale stabilisée, soulignant l'éclairage comme pilier fondamental de la santé."
+      "text": "Les travailleurs du savoir professionnels modernes passent jusqu'à 90 % de leurs heures d'éveil à l'intérieur de structures climatisées sous des luminaires fluorescents statiques ou des luminaires LED mal réglés. Alors que les directives architecturales standard spécifient l'éclairement en lux photopiques (optimisé strictement pour la clarté des tâches visuelles), l'œil humain abrite un troisième système photorécepteur entièrement dédié à la biologie circadienne."
     }
   ],
-  "sourceHash": "3edf6d60ff91688e8de9b30a6658201cace82871"
+  "sourceHash": "a113966670ad68b1239a1e2e5f8dd75456f1580e"
 }

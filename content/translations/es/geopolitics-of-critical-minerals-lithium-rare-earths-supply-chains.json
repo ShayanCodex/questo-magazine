@@ -12,7 +12,7 @@
     "lithium"
   ],
   "image": "/images/articles/critical-minerals-mining.jpg",
-  "imageAlt": "Terrazas de extracción de minerales a cielo abierto y maquinaria pesada de procesamiento en una cuenca minera estratégica",
+  "imageAlt": "Open-pit mineral extraction terracing and heavy processing machinery in a strategic mining basin",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "El cuello de botella geopolítico moderno"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Geopolitics of Critical Minerals - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Geopolitics of Critical Minerals."
     },
     {
       "type": "ul",
       "items": [
-        "Asimetría de procesamiento: La extracción de mineral crudo upstream está geográficamente dispersa, pero más del 70% de la capacidad de refinación química permanece concentrada en jurisdicciones únicas.",
-        "Dependencias electroquímicas: Las sustancias químicas de fosfato de hierro y litio (LFP) y de níquel-manganeso-cobalto (NMC) requieren carbonato e hidróxido de litio de alta pureza aptos para baterías.",
-        "Magnético de tierras raras: Los imanes permanentes de neodimio-hierro-boro (NdFeB) son componentes insustituibles en motores de tracción eléctrica y turbinas eólicas de accionamiento directo.",
-        "Pactos bilaterales estratégicos: Las principales economías están implementando asociaciones bilaterales de materias primas críticas y pactos de apuntalamiento de amigos para mitigar las vulnerabilidades de los shocks de oferta."
+        "Processing Asymmetry: Upstream raw ore extraction is geographically dispersed, but over 70% of chemical refining capacity remains concentrated in single jurisdictions.",
+        "Electrochemical Dependencies: Lithium-iron-phosphate (LFP) and nickel-manganese-cobalt (NMC) chemistries require high-purity battery-grade lithium carbonate and hydroxide.",
+        "Rare Earth Magnetics: Neodymium-iron-boron (NdFeB) permanent magnets are irreplaceable components in electric traction motors and direct-drive wind turbines.",
+        "Strategic Bilateral Pacts: Major economies are deploying bilateral critical raw material partnerships and friend-shoring compacts to mitigate supply shock vulnerabilities."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Consejo Global de Transición Energética y Recursos Estratégicos"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Geopolitics of Critical Minerals - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Geopolitics of Critical Minerals."
+    },
+    {
       "type": "h2",
-      "text": "Extracción versus Refinación Metalúrgica"
+      "text": "El cuello de botella geopolítico moderno"
     },
     {
       "type": "p",
-      "text": "Un error analítico común es equiparar las reservas minerales con la independencia del suministro. Australia extrae una importante cantidad de roca de espodumena y el Triángulo del Litio de América del Sur (Chile, Argentina, Bolivia) contiene enormes salmueras. Sin embargo, convertir el concentrado de espodumeno de roca dura en hidróxido de litio apto para baterías exige una calcinación hidrometalúrgica especializada y una infraestructura de lixiviación ácida."
+      "text": "La transición global hacia el transporte descarbonizado y la electrificación industrial ha invertido fundamentalmente los paradigmas tradicionales de seguridad energética. Mientras que la diplomacia del siglo XX estuvo ligada a los estrechos de petróleo crudo y a los oleoductos de hidrocarburos, la resiliencia soberana del siglo XXI depende de la química de minerales críticos: litio, neodimio, disprosio, cobalto y grafito refinado."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/f0gMdGrVteI",
-      "title": "La carrera de los minerales críticos y las realidades de la cadena de suministro global",
-      "caption": "Una investigación exhaustiva sobre la minería, la refinación química y la seguridad del suministro soberano de elementos de tierras raras y metales para baterías."
+      "title": "The Critical Minerals Race & Global Supply Chain Realities",
+      "caption": "A comprehensive investigation into the mining, chemical refining, and sovereign supply security of rare earth elements and battery metals.",
+      "src": "https://www.youtube-nocookie.com/embed/f0gMdGrVteI"
     },
     {
       "type": "h2",
-      "text": "Acopio estratégico y reciclaje de circuito cerrado"
+      "text": "El cuello de botella geopolítico moderno"
     },
     {
       "type": "p",
-      "text": "Para eliminar el riesgo de los oleoductos de fabricación soberanos, los principales bloques económicos están instituyendo salvaguardias de varios niveles: cuotas mínimas de procesamiento nacional, reservas físicas estratégicas y seguimiento obligatorio de pasaportes de baterías para estimular el reciclaje hidrometalúrgico de circuito cerrado."
+      "text": "La transición global hacia el transporte descarbonizado y la electrificación industrial ha invertido fundamentalmente los paradigmas tradicionales de seguridad energética. Mientras que la diplomacia del siglo XX estuvo ligada a los estrechos de petróleo crudo y a los oleoductos de hidrocarburos, la resiliencia soberana del siglo XXI depende de la química de minerales críticos: litio, neodimio, disprosio, cobalto y grafito refinado."
     }
   ],
-  "sourceHash": "b262d1baa0da315420b1528f5dccaed099e5f425"
+  "sourceHash": "2fa1dd1458f94a4b5392a4d03ba3cccf8a1d1fa7"
 }

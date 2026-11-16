@@ -201,16 +201,26 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           }
           const allArticles = await loadAllArticles(lang.code);
           const articleCatId = getArticleCategory(article).category.id;
-          const relatedArticles = allArticles
-            .filter((a) => a.slug !== slug)
+          const sortedCandidates = allArticles
+            .filter((a) => a.slug !== slug && a.image !== article.image)
             .sort((a, b) => {
               const aSameCat = getArticleCategory(a).category.id === articleCatId;
               const bSameCat = getArticleCategory(b).category.id === articleCatId;
               if (aSameCat && !bSameCat) return -1;
               if (!aSameCat && bSameCat) return 1;
               return new Date(b.date).getTime() - new Date(a.date).getTime();
-            })
-            .slice(0, 3);
+            });
+
+          // Defensively ensure 100% unique images across all related article cards
+          const seenImages = new Set<string>();
+          if (article.image) seenImages.add(article.image);
+          const relatedArticles: typeof allArticles = [];
+          for (const cand of sortedCandidates) {
+            if (relatedArticles.length >= 3) break;
+            if (cand.image && seenImages.has(cand.image)) continue;
+            if (cand.image) seenImages.add(cand.image);
+            relatedArticles.push(cand);
+          }
 
           const url = new URL(request.url);
           return {

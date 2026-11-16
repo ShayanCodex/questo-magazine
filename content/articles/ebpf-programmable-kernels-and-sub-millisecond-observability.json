@@ -13,8 +13,8 @@
     "observability",
     "systems-programming"
   ],
-  "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "High-density enterprise server racks with illuminated fiber optical network routing switches",
+  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Operating system kernel packet trace data stream and low-level bytecode monitoring",
   "body": [
     {
       "type": "h2",
@@ -29,6 +29,12 @@
       "text": "Key Points"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "eBPF & Modern Kernel Observability - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting eBPF & Modern Kernel Observability."
+    },
+    {
       "type": "ul",
       "items": [
         "Safety Verification: The in-kernel verifier rigorously enforces bounded execution, memory boundary safety, and loop termination guarantees prior to runtime load.",
@@ -41,6 +47,12 @@
       "type": "quote",
       "text": "eBPF does to the operating system kernel what JavaScript did to the browser: it transforms a static, monolithic environment into a programmable platform.",
       "cite": "Kernel Systems Engineering & Network Architecture Journal"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sub-millisecond packet latency telemetry graph tracking high-concurrency microservices",
+      "caption": "Zero-overhead observability: hooking kernel tracepoints directly without kernel module recompilation or context switch penalties."
     },
     {
       "type": "h2",

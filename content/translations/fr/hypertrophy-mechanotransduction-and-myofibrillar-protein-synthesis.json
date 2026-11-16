@@ -12,7 +12,7 @@
     "sports-science"
   ],
   "image": "/images/articles/fitness-hypertrophy-gym.jpg",
-  "imageAlt": "Entraînement en résistance de haute intensité avec des poids d'haltères dans un centre de conditionnement sportif moderne",
+  "imageAlt": "High-intensity resistance training with barbell weights in a modern athletic conditioning facility",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "L'amorçage moléculaire de la croissance musculaire squelettique"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mechanotransduction & Hypertrophy - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Mechanotransduction & Hypertrophy."
     },
     {
       "type": "ul",
       "items": [
-        "Complexes costamères : Les complexes d'adhésion focale intégrine-vinculine-taline transmettent la force longitudinale et latérale des sarcomères à la matrice extracellulaire.",
-        "Translocation mTORC1 : la charge mécanique stimule la synthèse de l'acide phosphatidique et initie l'activation médiée par Rheb de la cible mécaniste du complexe de rapamycine 1 (mTORC1).",
-        "Biogenèse des ribosomes : l'hypertrophie chronique est finalement limitée non seulement par l'initiation de la traduction, mais aussi par le taux de transcription de la synthèse de l'ARN ribosomal (ADNr).",
-        "Taux de synthèse fractionnaire (FSR) : la synthèse des protéines myofibrillaires après l'exercice s'élève en 2 à 4 heures, atteignant un pic près de 24 heures avant de revenir à la valeur de base chez les individus entraînés."
+        "Costameric Complexes: Integrin-vinculin-talin focal adhesion complexes transmit longitudinal and lateral force from sarcomeres to the extracellular matrix.",
+        "mTORC1 Translocation: Mechanical loading stimulates phosphatidic acid synthesis and initiates Rheb-mediated activation of the mechanistic target of rapamycin complex 1 (mTORC1).",
+        "Ribosome Biogenesis: Chronic hypertrophy is ultimately bounded not just by translation initiation, but by the transcriptional rate of ribosomal RNA (rDNA) synthesis.",
+        "Fractional Synthetic Rate (FSR): Post-exercise myofibrillar protein synthesis elevates within 2 to 4 hours, peaking near 24 hours before returning to baseline in trained individuals."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Journal of Applied Physiology & Molecular Kinesiology"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1457364884844-389f71424fe1?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mechanotransduction & Hypertrophy - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Mechanotransduction & Hypertrophy."
+    },
+    {
       "type": "h2",
-      "text": "Addition de sarcomères en série versus parallèle"
+      "text": "L'amorçage moléculaire de la croissance musculaire squelettique"
     },
     {
       "type": "p",
-      "text": "Les contractions excentriques chargées sur de longues longueurs musculaires induisent des contraintes mécaniques uniques dans les domaines de la titine kinase. Cet étirement mécanique déclenche à la fois une expansion myofibrillaire parallèle (croissance du diamètre transversal) et une sarcomérogenèse en série (ajout d'unités contractiles le long de l'axe longitudinal), améliorant à la fois la production de force et la stabilité de la portée articulaire."
+      "text": "L'hypertrophie musculaire squelettique est fondamentalement une réponse adaptative régie par la mécanotransduction, la cascade physiologique par laquelle les mécanocapteurs de la surface cellulaire convertissent la tension physique externe en signalisation biochimique intracellulaire. Alors que le stress métabolique et les lésions musculaires localisées contribuent au stimulus, les tensions mécaniques passives et actives restent les principaux moteurs en amont de la synthèse des protéines myofibrillaires."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "Les mécanismes cellulaires de l'hypertrophie musculaire et de la synthèse des protéines",
-      "caption": "Cours détaillé de biologie moléculaire détaillant l'activation de mTORC1, le don de cellules satellites et les voies de mécanotransduction dans les fibres musculaires humaines."
+      "title": "The Cellular Mechanisms of Muscle Hypertrophy & Protein Synthesis",
+      "caption": "Detailed molecular biology lecture detailing mTORC1 activation, satellite cell donation, and mechanotransduction pathways in human muscle fibers.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "Limites de translation et fusion de cellules satellites"
+      "text": "L'amorçage moléculaire de la croissance musculaire squelettique"
     },
     {
       "type": "p",
-      "text": "À mesure que les fibres musculaires se développent au-delà de leur plafond de domaine myonucléaire, les cellules satellites Pax7+ résidentes subissent une division asymétrique et donnent de nouveaux noyaux pour maintenir la transcription à travers les myofibres hyper-expansées, empêchant ainsi l'épuisement synthétique dans les adaptations de force d'élite."
+      "text": "L'hypertrophie musculaire squelettique est fondamentalement une réponse adaptative régie par la mécanotransduction, la cascade physiologique par laquelle les mécanocapteurs de la surface cellulaire convertissent la tension physique externe en signalisation biochimique intracellulaire. Alors que le stress métabolique et les lésions musculaires localisées contribuent au stimulus, les tensions mécaniques passives et actives restent les principaux moteurs en amont de la synthèse des protéines myofibrillaires."
     }
   ],
-  "sourceHash": "abd62238f19452b2352ffa839812681301a0bac4"
+  "sourceHash": "5cf0b3e255d17e29be22cd3c8abc974408c8dd4a"
 }

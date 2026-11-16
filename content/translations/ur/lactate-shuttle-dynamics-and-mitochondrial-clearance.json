@@ -11,8 +11,8 @@
     "endurance",
     "bioenergetics"
   ],
-  "image": "/images/articles/tennis-biomechanics-serve.jpg",
-  "imageAlt": "اشرافیہ برداشت کرنے والا کھلاڑی زیادہ سے زیادہ ایروبک رفتار اور میٹابولک جسمانی جانچ سے گزر رہا ہے",
+  "image": "https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Track and field athletics sprinter accelerating out of starting blocks with explosive force",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "لییکٹک ایسڈ کے افسانے کو ایک فضلہ کی مصنوعات کے طور پر ختم کرنا"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Metabolic testing laboratory analyzing blood lactate concentrations and ventilatory thresholds",
+      "caption": "Lactate shuttling: Monocarboxylate transporters (MCT1/MCT4) translocating lactate into oxidative fibers for oxidation."
     },
     {
       "type": "ul",
       "items": [
-        "سیل ٹو سیل لییکٹیٹ شٹل: فاسٹ ٹویچ گلائکولیٹک ریشے لیکٹیٹ پیدا کرتے ہیں، جسے مونوکاربوکسیلیٹ ٹرانسپورٹرز (MCT4) کے ذریعے خون کی گردش میں منتقل کیا جاتا ہے۔",
-        "مائٹوکونڈریل آکسیڈیشن: ملحقہ سست مروڑ آکسیڈیٹیو پٹھوں کے ریشے، کارڈیک ٹشو، اور نیوران MCT1 کے ذریعے لییکٹیٹ لیتے ہیں، اسے کربس سائیکل ATP نسل کے لیے واپس پائروویٹ میں تبدیل کرتے ہیں۔",
-        "ایسڈوسس بفرنگ: زیادہ سے زیادہ کوششوں کے دوران پٹھوں میں جلنا ATP ہائیڈرولیسس سے زیادہ ہائیڈروجن آئن (H+) کے جمع ہونے سے ہوتا ہے، خود لییکٹیٹ اینون نہیں۔",
-        "لییکٹیٹ تھریشولڈ 2 (MLSS): ایلیٹ برداشت کی کارکردگی کو زیادہ سے زیادہ رفتار سے بیان کیا جاتا ہے جس پر بلڈ لییکٹیٹ کی پیداوار سیسٹیمیٹک کلیئرنس کی صلاحیت سے ملتی ہے۔"
+        "Cell-to-Cell Lactate Shuttle: Fast-twitch glycolytic fibers generate lactate, which is transported via Monocarboxylate Transporters (MCT4) into blood circulation.",
+        "Mitochondrial Oxidation: Adjacent slow-twitch oxidative muscle fibers, cardiac tissue, and neurons take up lactate via MCT1, converting it back to pyruvate for Krebs cycle ATP generation.",
+        "Acidosis Buffering: Muscle burning during maximal efforts is driven by excess hydrogen ion (H+) accumulation from ATP hydrolysis, not the lactate anion itself.",
+        "Lactate Threshold 2 (MLSS): Elite endurance performance is defined by the maximum speed at which blood lactate production matches systemic clearance capacity."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "لیام او کونر، انسانی ایتھلیٹک پرفارمنس میں مطالعہ"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486282528489-4e3221e2e75c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Endurance runner monitoring biometric pacing, heart rate variability, and metabolic steady state",
+      "caption": "Mitochondrial clearance: endurance conditioning shifting maximum lactate steady state toward higher absolute power."
+    },
+    {
       "type": "h2",
-      "text": "زون-2 ٹریننگ اور مائٹوکونڈریل کثافت"
+      "text": "لییکٹک ایسڈ کے افسانے کو ایک فضلہ کی مصنوعات کے طور پر ختم کرنا"
     },
     {
       "type": "p",
-      "text": "لییکٹیٹ کو صاف کرنے اور آکسائڈائز کرنے کی صلاحیت کا تعین مکمل طور پر قسم-I کے سست ٹوئچ ریشوں میں مائٹوکونڈریل کثافت اور کیپلیری بیڈ والیوم سے ہوتا ہے۔ سب تھریشولڈ زون-2 برداشت کی تربیت نظامی ہمدرد تناؤ کو متحرک کیے بغیر مائٹوکونڈریل بائیو جینیسس کو متحرک کرتی ہے، میٹابولک انجن کی تعمیر کرتی ہے جو اشرافیہ کو مسلسل ایتھلیٹک آؤٹ پٹ کو طاقت دیتا ہے۔"
+      "text": "تقریباً ایک صدی تک، مشہور ایتھلیٹک تربیت ایک فرسودہ نظریے پر قائم رہی: وہ لییکٹک ایسڈ ایک زہریلا پروڈکٹ تھا اور اس وجہ سے پٹھوں میں میٹابولک کی کمی کے لیے ذمہ دار تھا۔ سیلولر بائیو انرجیٹکس کے علمبردار نے اس غلط فہمی کو ختم کر دیا ہے۔ حقیقت میں، لییکٹیٹ سیلولر زہر نہیں ہے، بلکہ جسم کا سب سے قیمتی متحرک توانائی کا ایندھن ہے: ایک تیزی سے نقل و حمل کے قابل کاربوہائیڈریٹ انٹرمیڈیٹ اور طاقتور سگنلنگ مالیکیول (لیکٹرمون)۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "کارکردگی میں میٹابولک ہیلتھ اور سیلولر بائیو مارکرز",
-      "caption": "ڈاکٹر پیٹر اٹیا اور ڈاکٹر اینڈریو ہبرمین میٹابولک لچک، زون-2 کی تربیت، اور قلبی کارکردگی پر تبادلہ خیال کرتے ہیں۔"
+      "title": "Metabolic Health and Cellular Biomarkers in Performance",
+      "caption": "Dr. Peter Attia and Dr. Andrew Huberman discuss metabolic flexibility, zone-2 training, and cardiovascular efficiency.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "انسانی برداشت کا سالماتی مستقبل"
+      "text": "لییکٹک ایسڈ کے افسانے کو ایک فضلہ کی مصنوعات کے طور پر ختم کرنا"
     },
     {
       "type": "p",
-      "text": "ریئل ٹائم لگاتار لییکٹیٹ ٹیلی میٹری کا سراغ لگا کر اور پولرائزڈ ٹریننگ ماڈلز کے ذریعے مونو کاربو آکسیلیٹ ٹرانسپورٹر اظہار کو بہتر بنا کر، جدید اسپورٹس سائنس انسانی قوت برداشت کی جسمانی حدود کا از سر نو تعین کر رہی ہے۔"
+      "text": "تقریباً ایک صدی تک، مشہور ایتھلیٹک تربیت ایک فرسودہ نظریے پر قائم رہی: وہ لییکٹک ایسڈ ایک زہریلا پروڈکٹ تھا اور اس وجہ سے پٹھوں میں میٹابولک کی کمی کے لیے ذمہ دار تھا۔ سیلولر بائیو انرجیٹکس کے علمبردار نے اس غلط فہمی کو ختم کر دیا ہے۔ حقیقت میں، لییکٹیٹ سیلولر زہر نہیں ہے، بلکہ جسم کا سب سے قیمتی متحرک توانائی کا ایندھن ہے: ایک تیزی سے نقل و حمل کے قابل کاربوہائیڈریٹ انٹرمیڈیٹ اور طاقتور سگنلنگ مالیکیول (لیکٹرمون)۔"
     }
   ],
-  "sourceHash": "253cb9bdbade380a975f9e0c1895f9f38921fdbf"
+  "sourceHash": "70e7fd22708c30f5975f75a395561e8720bc2b49"
 }

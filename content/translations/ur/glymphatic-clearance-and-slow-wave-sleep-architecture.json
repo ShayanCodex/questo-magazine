@@ -13,7 +13,7 @@
     "biology"
   ],
   "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "پرسکون بیڈروم کی ترتیب نرم گرم محیطی روشنی سے روشن گہری بحالی اعصابی نیند کی علامت ہے",
+  "imageAlt": "Calm bedroom setting illuminated by soft warm ambient light symbolizing deep restorative neurological sleep",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "گلیمفیٹک نظام ایک ایسٹروگلیا ثالثی فضلہ نکالنے کا راستہ ہے جو تقریبا خصوصی طور پر گہری، غیر تیز آنکھوں کی نقل و حرکت (NREM) سست لہر والی نیند کے دوران کام کرتا ہے۔ شریانوں کی دیوار کی دھڑکن اور مطابقت پذیر ڈیلٹا دوسلن (0.5 سے 4 ہرٹز) کے ذریعے کارفرما، دماغی اسپائنل فلوئیڈ (CSF) پیریٹریریل چینلز کے ساتھ ساتھ دماغی پیرینچیما میں گہرائی تک گھس جاتا ہے، گھلنشیل امائلائیڈ-بیٹا ($A\\beta$) کو دھوتا ہے، ہائپر فاسفوریل، اور ڈیلٹا کے ذریعے نیوروڈکٹ میں داخل ہوتا ہے۔ venous sinuses."
+      "text": "ایک صدی سے زیادہ عرصے تک، نیورو بائیولوجی ایک ارتقائی تضاد کے ساتھ جدوجہد کرتی رہی: جب کہ تمام پیریفرل سومیٹک ٹشوز ایک وسیع لمفیٹک ویسل نیٹ ورک کا استعمال کرتے ہیں تاکہ دماغی خلیات کی کمی اور دماغی خلیات کی کمی کو ختم کیا جا سکے۔ جسم کی کل میٹابولک توانائی کا 20٪ استعمال کرنے کے باوجود لمفاتی نکاسی آب۔ ابھی حال ہی میں دو فوٹون لیزر اسکیننگ مائیکروسکوپی نے دماغ کے میکروسکوپک ویسٹ کلیئرنس میکانزم کی نقاب کشائی کی ہے: گلیمفیٹک نظام۔"
     },
     {
       "type": "h2",
       "text": "1. convective بلک فلو اور Astrocytic Aquaporin-4 (AQP4) چینلز"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Glymphatic Clearance in Deep Sleep - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Glymphatic Clearance in Deep Sleep."
+    },
+    {
       "type": "p",
-      "text": "سادہ وسعت پذیر نقل و حمل کے برعکس، جو کہ گھنے عصبی بافتوں کے میکرو مالیکیولز کو صاف کرنے میں بہت سست ہے، گلیمفیٹک نظام خصوصی واٹر چینلز کے ذریعے سہولت فراہم کرنے والے تیز رفتار کنویکٹیو بلک فلو فلو کا استعمال کرتا ہے:"
+      "text": "ایک صدی سے زیادہ عرصے تک، نیورو بائیولوجی ایک ارتقائی تضاد کے ساتھ جدوجہد کرتی رہی: جب کہ تمام پیریفرل سومیٹک ٹشوز ایک وسیع لمفیٹک ویسل نیٹ ورک کا استعمال کرتے ہیں تاکہ دماغی خلیات کی کمی اور دماغی خلیات کی کمی کو ختم کیا جا سکے۔ جسم کی کل میٹابولک توانائی کا 20٪ استعمال کرنے کے باوجود لمفاتی نکاسی آب۔ ابھی حال ہی میں دو فوٹون لیزر اسکیننگ مائیکروسکوپی نے دماغ کے میکروسکوپک ویسٹ کلیئرنس میکانزم کی نقاب کشائی کی ہے: گلیمفیٹک نظام۔"
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Glymphatic Convective Hydrodynamic Flux:\nJ_v = L_p · S · [ (P_peri - P_int) - σ · (π_peri - π_int) ]\n\nWhere:\n- J_v: Transvascular volumetric flux of cerebrospinal fluid\n- L_p: Hydraulic conductivity governed by AQP4 channel polarization\n- S: Surface area of periarterial astrocytic endfeet\n- P_peri - P_int: Hydrostatic pressure differential driven by vascular pulsations\n- σ: Reflection coefficient for plasma and interstitial solutes\n- π: Local oncotic osmotic pressures"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Glymphatic Clearance in Deep Sleep - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Glymphatic Clearance in Deep Sleep."
+    },
+    {
       "type": "p",
-      "text": "Astrocytic endfeet جو کہ دماغی عصبی اعضاء کے مائیکرو مالیکیولز کا اظہار کرتا ہے۔ (AQP4) واٹر چینلز۔ تجرباتی ماڈلز میں، AQP4 پولرائزیشن کا جینیاتی خاتمہ یا نقصان پیرنچیمل CSF کی آمد کو 65% سے زیادہ کم کر دیتا ہے، جس سے غلط فولڈ پیپٹائڈ ایگریگیٹس کے تیزی سے نیوروڈیجینریٹیو جمع ہونے میں تیزی آتی ہے۔"
+      "text": "ایک صدی سے زیادہ عرصے تک، نیورو بائیولوجی ایک ارتقائی تضاد کے ساتھ جدوجہد کرتی رہی: جب کہ تمام پیریفرل سومیٹک ٹشوز ایک وسیع لمفیٹک ویسل نیٹ ورک کا استعمال کرتے ہیں تاکہ دماغی خلیات کی کمی اور دماغی خلیات کی کمی کو ختم کیا جا سکے۔ جسم کی کل میٹابولک توانائی کا 20٪ استعمال کرنے کے باوجود لمفاتی نکاسی آب۔ ابھی حال ہی میں دو فوٹون لیزر اسکیننگ مائیکروسکوپی نے دماغ کے میکروسکوپک ویسٹ کلیئرنس میکانزم کی نقاب کشائی کی ہے: گلیمفیٹک نظام۔"
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. ڈیلٹا سلو-ویو سلیپ کے دوران انٹرسٹیشل اسپیس ایکسپینشن"
+      "text": "1. convective بلک فلو اور Astrocytic Aquaporin-4 (AQP4) چینلز"
     },
     {
       "type": "p",
-      "text": "ہوش میں جاگنے کے اوقات کے دوران، لوکس کوریلیئس نوراڈرینالین کی زیادہ تعداد گلیمفیٹک بہاؤ کو دبا دیتی ہے۔ Astrocytes اور نیوران سوجے ہوئے رہتے ہیں، ایکسٹرا سیلولر انٹرسٹیشل اسپیس فریکشن ($\\alpha$) کو دماغ کے کل حجم کے تقریباً 14% تک محدود کرتے ہیں، انتہائی ہائیڈرولک مزاحمت پیدا کرتے ہیں۔"
+      "text": "ایک صدی سے زیادہ عرصے تک، نیورو بائیولوجی ایک ارتقائی تضاد کے ساتھ جدوجہد کرتی رہی: جب کہ تمام پیریفرل سومیٹک ٹشوز ایک وسیع لمفیٹک ویسل نیٹ ورک کا استعمال کرتے ہیں تاکہ دماغی خلیات کی کمی اور دماغی خلیات کی کمی کو ختم کیا جا سکے۔ جسم کی کل میٹابولک توانائی کا 20٪ استعمال کرنے کے باوجود لمفاتی نکاسی آب۔ ابھی حال ہی میں دو فوٹون لیزر اسکیننگ مائیکروسکوپی نے دماغ کے میکروسکوپک ویسٹ کلیئرنس میکانزم کی نقاب کشائی کی ہے: گلیمفیٹک نظام۔"
     },
     {
       "type": "ul",
       "items": [
-        "ایکسٹرا سیلولر اسپیس ایکسپینشن: اسٹیج N3 میں داخل ہونے پر سست لہر والی نیند، نوراڈرینرجک ٹون گر جاتا ہے، جس کی وجہ سے پیرنچیمل خلیات سکڑ جاتے ہیں اور بیچوالا حجم میں 60 فیصد اضافہ ہوتا ہے۔",
-        "ہائیڈرولک ریزسٹنس ڈراپ: یہ حجمی توسیع ہائیڈروڈینامک مزاحمت میں فوری طور پر گرنے کا سبب بنتی ہے، جس سے CSF کو بغیر کسی رکاوٹ کے لیمینر بہاؤ کے ساتھ دماغی پیرینچیما میں اضافہ ہوتا ہے۔",
-        "میٹابولک ویسٹ فلشز: ریئل ٹائم ریڈیو لیبلڈ ٹریسر ٹیلی میٹری سے پتہ چلتا ہے کہ بیداری کے مقابلے NREM نیند کے دوران امائلائیڈ-بیٹا کلیئرنس دو گنا بڑھ جاتی ہے۔"
+        "Extracellular Space Expansion: Upon entry into Stage N3 slow-wave sleep, noradrenergic tone collapses, causing parenchymal cells to shrink and expanding interstitial volume by 60%.",
+        "Hydraulic Resistance Drop: This volumetric expansion causes an immediate collapse in hydrodynamic resistance, allowing CSF to surge through brain parenchyma with unimpeded laminar flow.",
+        "Metabolic Waste Flushes: Real-time radiolabeled tracer telemetry shows amyloid-beta clearance increases two-fold during NREM sleep compared to wakefulness."
       ]
     },
     {
       "type": "h2",
-      "text": "3. ویڈیو ماسٹرکلاس: سلیپ آرکیٹیکچر، نیورو پروٹیکشن اور دماغی صحت"
+      "text": "1. convective بلک فلو اور Astrocytic Aquaporin-4 (AQP4) چینلز"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM",
-      "title": "نیند کا فن تعمیر، یادداشت کا استحکام اور اعصابی بحالی",
-      "caption": "نیند کے چکروں، سست لہر کے ڈیلٹا سنکرونائزیشن، اور گہری نیند کے گہرے فنکشن پر گہرائی سے سائنسی لیکچر۔"
+      "title": "Sleep Architecture, Memory Consolidation & Neurological Restoration",
+      "caption": "In-depth scientific lecture on sleep cycles, slow-wave delta synchronization, and the profound neuroprotective functions of deep sleep."
     },
     {
       "type": "h2",
-      "text": "4. ویسکولر پلسیٹیلیٹی اور کارڈیک-ریسپیریٹری پمپنگ"
+      "text": "1. convective بلک فلو اور Astrocytic Aquaporin-4 (AQP4) چینلز"
     },
     {
       "type": "p",
-      "text": "سخت انٹراکرینیل کرینیم کے ذریعے CSF کے جسمانی پمپنگ میکانزم کو کیا چلاتا ہے؟ گلیمفیٹک نقل و حمل تین مختلف مکینیکل دباؤ کی لہروں پر انحصار کرتی ہے: کارڈیک سیسٹولک شریان کی دیوار کی توسیع، سانس کی چھاتی کے دباؤ کے اتار چڑھاؤ، اور انتہائی سست واسو موشن سائیکل (0.1 ہرٹز) جو ہموار پٹھوں کے سنکچن سے چلتے ہیں۔"
+      "text": "ایک صدی سے زیادہ عرصے تک، نیورو بائیولوجی ایک ارتقائی تضاد کے ساتھ جدوجہد کرتی رہی: جب کہ تمام پیریفرل سومیٹک ٹشوز ایک وسیع لمفیٹک ویسل نیٹ ورک کا استعمال کرتے ہیں تاکہ دماغی خلیات کی کمی اور دماغی خلیات کی کمی کو ختم کیا جا سکے۔ جسم کی کل میٹابولک توانائی کا 20٪ استعمال کرنے کے باوجود لمفاتی نکاسی آب۔ ابھی حال ہی میں دو فوٹون لیزر اسکیننگ مائیکروسکوپی نے دماغ کے میکروسکوپک ویسٹ کلیئرنس میکانزم کی نقاب کشائی کی ہے: گلیمفیٹک نظام۔"
     },
     {
       "type": "p",
-      "text": "جیسا کہ نظامی شریانیں ہر سسٹولک نبض کے ساتھ پھیلتی ہیں، وہ Virchow-Robin اسپیس کے ساتھ ساتھ ایک perivascular displacement wave کو منتقل کرتی ہیں، CSF کو ایک طرفہ ہائیڈروڈینامک والوز کے ذریعے آگے بڑھاتی ہیں جو اوور لیپنگ pial sheaths سے تخلیق ہوتی ہیں۔ دائمی ہائی بلڈ پریشر کی وجہ سے شریانوں کی سختی ان نبض کی لہروں کو کم کرتی ہے، جو رات کی گلیمفیٹک صفائی کو براہ راست متاثر کرتی ہے۔"
+      "text": "ایک صدی سے زیادہ عرصے تک، نیورو بائیولوجی ایک ارتقائی تضاد کے ساتھ جدوجہد کرتی رہی: جب کہ تمام پیریفرل سومیٹک ٹشوز ایک وسیع لمفیٹک ویسل نیٹ ورک کا استعمال کرتے ہیں تاکہ دماغی خلیات کی کمی اور دماغی خلیات کی کمی کو ختم کیا جا سکے۔ جسم کی کل میٹابولک توانائی کا 20٪ استعمال کرنے کے باوجود لمفاتی نکاسی آب۔ ابھی حال ہی میں دو فوٹون لیزر اسکیننگ مائیکروسکوپی نے دماغ کے میکروسکوپک ویسٹ کلیئرنس میکانزم کی نقاب کشائی کی ہے: گلیمفیٹک نظام۔"
     },
     {
       "type": "h2",
-      "text": "5. کلینیکل اور پریوینٹیو سلیپ آپٹیمائزیشن ٹیک ویز"
+      "text": "1. convective بلک فلو اور Astrocytic Aquaporin-4 (AQP4) چینلز"
     },
     {
       "type": "ul",
       "items": [
-        "اسٹیج N3 کی حفاظت کریں: الکحل سے پرہیز کریں، رات گئے ہائی گلیسیمک کھانے، اور سکون آور ہپنوٹکس جو بے ہوشی پیدا کرنے کے باوجود قدرتی ڈیلٹا لہر کی طاقت کو دباتے ہیں۔",
-        "سلیپ ایرگونومکس اور کرنسی: لیٹرل نیند کی پوزیشننگ (سائیڈ سلیپنگ) کو MRI ٹیلی میٹری اسٹڈیز میں دکھایا گیا ہے تاکہ سوپائن یا پرون کرنسیوں کے مقابلے میں اعلیٰ گلیمفیٹک کلیئرنس کو آسان بنایا جا سکے۔",
-        "عروقی لچک کی بحالی: ایروبک ورزش (زون 2 برداشت کی تربیت) کیروٹیڈ اور دماغی شریانوں کی تعمیل کو محفوظ رکھتی ہے، جس سے گلیمفیٹک ڈرائیونگ فورس کے لیے ضروری مکینیکل نبض کے دباؤ کو برقرار رکھا جاتا ہے۔"
+        "Protect Stage N3 Architecture: Avoid alcohol, late-night high-glycemic meals, and sedative hypnotics which suppress natural delta wave power despite inducing unconsciousness.",
+        "Sleep Ergonomics & Posture: Lateral sleep positioning (side-sleeping) has been shown in MRI telemetry studies to facilitate superior glymphatic clearance compared to supine or prone postures.",
+        "Vascular Elasticity Maintenance: Aerobic exercise (Zone 2 endurance training) preserves carotid and cerebral arterial compliance, sustaining the mechanical pulse pressures essential for glymphatic driving force."
       ]
     }
   ],
-  "sourceHash": "ec938c36d6e4bd41b6c191c5e4b3d0f2365fdef6"
+  "sourceHash": "99d9119a4753da14476348945687bfde84d63762"
 }

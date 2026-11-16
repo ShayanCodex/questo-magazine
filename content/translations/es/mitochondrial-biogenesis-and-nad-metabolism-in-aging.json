@@ -11,8 +11,8 @@
     "metabolism",
     "cellular-biology"
   ],
-  "image": "/images/articles/cellular-autophagy-biology.jpg",
-  "imageAlt": "Visualización mediante microscopía confocal fluorescente de alta resolución de lisosomas celulares y vías de autofagia",
+  "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Biomedical laboratory pipetting cellular culture samples for NAD+ coenzyme quantification assays",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "La crisis bioenergética del envejecimiento celular"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Electron micrograph showing dense inner mitochondrial cristae folding and ATP synthase enzymes",
+      "caption": "Mitochondrial cristae architecture: surface area density directly governing oxidative phosphorylation efficiency."
     },
     {
       "type": "ul",
       "items": [
-        "Mitohormesis: Los factores estresantes metabólicos transitorios desencadenan la expresión de genes nucleares que refuerzan las defensas antioxidantes mitocondriales y la biogénesis.",
-        "Flujo limitante de la velocidad de NAD+: la disminución de la enzima de rescate NAMPT reduce la disponibilidad de la coenzima NAD+, lo que perjudica la desacetilación de sirtuina y la reparación del ADN de PARP.",
-        "Equilibrio de fisión y fusión: mitofusina (MFN1/2) y Drp1 coordinan la clasificación de componentes mitocondriales funcionales de fragmentos dañados destinados a la mitofagia.",
-        "Regulación maestra de PGC-1alfa: la activación de PGC-1alfa inducida por el ejercicio estimula la replicación del ADN mitocondrial y la síntesis de crestas densas en el tejido muscular y neural."
+        "Mitohormesis: Transient metabolic stressors trigger nuclear gene expression that reinforces mitochondrial antioxidant defenses and biogenesis.",
+        "NAD+ Rate-Limiting Flux: The decline of salvage enzyme NAMPT reduces NAD+ coenzyme availability, impairing sirtuin deacetylation and PARP DNA repair.",
+        "Fission and Fusion Equilibrium: Mitofusin (MFN1/2) and Drp1 coordinate the sorting of functional mitochondrial components from damaged fragments targeted for mitophagy.",
+        "PGC-1alpha Master Regulation: Exercise-induced activation of PGC-1alpha stimulates mitochondrial DNA replication and dense cristae synthesis in muscle and neural tissue."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Dr. Marcus Vance, Protocolos en medicina celular preventiva"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular metabolism assay measuring sirtuin enzyme activation and NAD+ salvage pathway flux",
+      "caption": "NAD+ decline: age-related loss of cellular coenzyme pools suppressing sirtuin activation and DNA repair pathways."
+    },
+    {
       "type": "h2",
-      "text": "Restauración del metaboloma de la nicotinamida"
+      "text": "La crisis bioenergética del envejecimiento celular"
     },
     {
       "type": "p",
-      "text": "La reposición dirigida de precursores de NAD+ combinada con la inhibición de la ectoenzima CD38 restaura las proporciones redox celulares (NAD+/NADH) a niveles juveniles. Esta reposición bioquímica preserva la estabilidad genómica, estimula la biogénesis mitocondrial y mitiga el deterioro metabólico asociado a la edad."
+      "text": "En el nexo del envejecimiento biológico humano se encuentra la decadencia bioenergética progresiva: la disminución gradual de la eficiencia del transporte de electrones mitocondriales, la acumulación de fragmentos de orgánulos dañados y el agotamiento sistémico de las reservas celulares de nicotinamida adenina dinucleótido (NAD+). En lugar de un deslizamiento degenerativo inevitable, la gerociencia molecular moderna revela que la arquitectura mitocondrial es dinámica, responde a desencadenantes metabólicos específicos y es capaz de un rejuvenecimiento profundo."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "Longevidad celular y biomarcadores metabólicos",
-      "caption": "Discusión clínica que detalla el riesgo cardiovascular, la salud metabólica y la biología celular de la longevidad humana."
+      "title": "Cellular Longevity and Metabolic Biomarkers",
+      "caption": "Clinical discussion detailing cardiovascular risk, metabolic health, and the cellular biology of human longevity.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "Traducir la resiliencia celular en longevidad clínica"
+      "text": "La crisis bioenergética del envejecimiento celular"
     },
     {
       "type": "p",
-      "text": "Al combinar el acondicionamiento de resistencia de la zona 2, los déficits energéticos intermitentes y los cofactores moleculares específicos, la medicina preventiva se está transformando del manejo paliativo de los síntomas al mantenimiento celular proactivo."
+      "text": "En el nexo del envejecimiento biológico humano se encuentra la decadencia bioenergética progresiva: la disminución gradual de la eficiencia del transporte de electrones mitocondriales, la acumulación de fragmentos de orgánulos dañados y el agotamiento sistémico de las reservas celulares de nicotinamida adenina dinucleótido (NAD+). En lugar de un deslizamiento degenerativo inevitable, la gerociencia molecular moderna revela que la arquitectura mitocondrial es dinámica, responde a desencadenantes metabólicos específicos y es capaz de un rejuvenecimiento profundo."
     }
   ],
-  "sourceHash": "8b5384ed9c857f1dafa99320e22a67b40c7cebe8"
+  "sourceHash": "48db63f07c55a9093e5f6f1094579f21c8e4c7e1"
 }

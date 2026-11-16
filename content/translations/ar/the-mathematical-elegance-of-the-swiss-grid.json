@@ -11,8 +11,8 @@
     "grid-systems",
     "graphic-design"
   ],
-  "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "خطوط معمارية هندسية ونسب مطبعية على ورق أبيض صارخ",
+  "image": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Geometric modular architectural lines and typographic proportions on stark white paper",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "تعتمد الشبكة السويسرية في جوهرها على القسمة النسبية. يمكن تقسيم التخطيط القياسي المكون من 12 عمودًا إلى نصفين وثلثين وأرباع وسدس دون كسر إيقاع الخط الأساسي الأفقي أو العمودي. يرتبط كل عنوان رئيسي واقتباس وتسمية توضيحية مباشرة بنظام إحداثيات رياضي أساسي."
+      "text": "الشبكة ليست سجنًا؛ إنها لوحة من الانضباط المتحرر. عندما قام جوزيف مولر بروكمان ورواد مدرسة زيوريخ بإضفاء الطابع الرسمي على أسلوب الطباعة الدولي في الخمسينيات من القرن الماضي، سعوا إلى تطهير التصميم الجرافيكي من النزوة الذاتية التعسفية لصالح الوضوح العالمي، والتناغم الرياضي، وسهولة القراءة الديمقراطية."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mathematical Elegance of the Swiss Grid - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Mathematical Elegance of the Swiss Grid."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "البديهيات الأساسية للمنهجية السويسرية"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mathematical Elegance of the Swiss Grid - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Mathematical Elegance of the Swiss Grid."
+    },
+    {
       "type": "ul",
       "items": [
-        "الالتزام الصارم بالشبكة الأساسية: كل سطر من النص، بغض النظر عن حجم الخط، يتناسب مع مضاعفات ارتفاع الخط الأساسي.",
-        "التوازن الديناميكي غير المتماثل: استبدال التمركز الثابت بتوتر المسافة البيضاء النشط والطباعة ذات الاتجاه الأيسر.",
-        "التباين المطبعي الهرمي: الاستفادة من التفاوتات الكبيرة في الحجم بين عناوين العرض الضخمة والنسخة الأساسية المدمجة والمقروءة."
+        "Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
+        "Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
+        "Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
       ]
     },
     {
       "type": "p",
-      "text": "في نظامنا البيئي الرقمي المعاصر، حيث يجب أن تتكيف التخطيطات سريعة الاستجابة بشكل فوري عبر شاشات الساعات والهواتف الذكية وشاشات سطح المكتب فائقة الاتساع، تظل الدقة الرياضية للشبكة السويسرية أقوى بوصلة بصرية لدينا."
+      "text": "الشبكة ليست سجنًا؛ إنها لوحة من الانضباط المتحرر. عندما قام جوزيف مولر بروكمان ورواد مدرسة زيوريخ بإضفاء الطابع الرسمي على أسلوب الطباعة الدولي في الخمسينيات من القرن الماضي، سعوا إلى تطهير التصميم الجرافيكي من النزوة الذاتية التعسفية لصالح الوضوح العالمي، والتناغم الرياضي، وسهولة القراءة الديمقراطية."
     }
   ],
-  "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"
+  "sourceHash": "3d3fbc47dbede9fa58427d2d3b405a05a51164d4"
 }

@@ -11,8 +11,8 @@
     "parametric-design",
     "sustainability"
   ],
-  "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "ألواح الجدران الخشبية الصوتية المنحوتة والحواجز المعمارية في قاعة أوركسترا حديثة",
+  "image": "https://images.unsplash.com/photo-1541888946425-d0fbb186f5f7?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Curving parametric glued-laminated timber beams forming an undulating acoustic ceiling pavilion",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "استعادة الخشب الملموس في الهندسة المعمارية الضخمة"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Architectural mass timber building frame showcasing interlocking cross-laminated timber joints",
+      "caption": "Cross-laminated timber (CLT): carbon-sequestering structural floor plates engineered to replace structural concrete."
     },
     {
       "type": "ul",
       "items": [
-        "احتجاز الكربون المحب للحياة: تعمل الأخشاب الرقائقية المحصودة بشكل مستدام (CLT) على احتجاز الكربون الجوي داخل أغلفة هيكلية مدنية دائمة.",
-        "النجارة الخوارزمية: تعمل وصلات نقر ولسان الخشب المتشابكة المطحونة باستخدام الحاسب الآلي على التخلص من المواد اللاصقة السامة والأقواس الفولاذية كثيفة الكربون.",
-        "هندسة سطح الرنين: تعمل جوانب الجدران الخشبية المتموجة بشكل بارامتري على تشتيت الانعكاسات الصوتية المرآوية، مما يؤدي إلى تعزيز الصوتيات السمفونية الدافئة.",
-        "أداء الكتلة الحرارية: توفر الألواح الخشبية ذات الكتلة الثقيلة خصائص عزل استثنائية، وتخميد الضوضاء الحضرية الخارجية منخفضة التردد."
+        "Biophilic Carbon Sequestration: Sustainably harvested cross-laminated timber (CLT) traps atmospheric carbon within permanent civic structural envelopes.",
+        "Algorithmic Joinery: CNC-milled interlocking timber mortise-and-tenon joints eliminate toxic adhesives and carbon-intensive steel brackets.",
+        "Resonant Surface Geometry: Parametrically undulating wooden wall facets disperse specular sonic reflections, cultivating warm symphonic acoustics.",
+        "Thermal Mass Performance: Heavy mass timber panels deliver exceptional insulation properties, damping exterior low-frequency urban noise."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "إيلينا روستوفا، دراسات في الأناقة الهيكلية"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Computer-controlled robotic timber joinery cutting complex mathematical double-curved beams",
+      "caption": "Parametric optimization: algorithmically aligning timber grain fiber geometry to maximize load-bearing and acoustic diffusion."
+    },
+    {
       "type": "h2",
-      "text": "الانتشار الصوتي الحسابي في مساحات الأداء"
+      "text": "استعادة الخشب الملموس في الهندسة المعمارية الضخمة"
     },
     {
       "type": "p",
-      "text": "في قاعات الحفلات الموسيقية المعاصرة، يتم حساب الأسطح الخشبية باستخدام أنماط البقايا التربيعية الرياضية. من خلال ملفات تعريف العمق المذهلة عبر المقاييس المجهرية والعيانية، ينثر الغلاف الخشبي موجات صوتية عالية ومتوسطة التردد بالتساوي عبر طبقات الجمهور، مما يزيل أصداء الرفرفة دون إخماد وجود الصدى."
+      "text": "لأكثر من قرن من الزمان، اعتمد التصميم الضخم الحديث بشكل حصري تقريبًا على حديد التسليح وصب الخرسانة المسلحة. واليوم، فإن التقارب بين النمذجة البارامترية الحسابية، والطحن الآلي متعدد المحاور، وهندسة الأخشاب الجماعية يفتتح حقبة معمارية جديدة: ملاذات مدنية سلبية الكربون حيث يتلاقى الدفء المادي والدقة الصوتية."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "الصوتيات المعمارية وفيزياء الرنين",
-      "caption": "التحقيق في الرنين الصوتي، وانتشار الموجات، وفيزياء هندسة قاعة الحفلات الموسيقية."
+      "title": "Architectural Acoustics and Resonance Physics",
+      "caption": "Investigation into sonic resonance, wave propagation, and the physics of concert hall geometries.",
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
     },
     {
       "type": "h2",
-      "text": "الإرث الحي للأخشاب الجماعية"
+      "text": "استعادة الخشب الملموس في الهندسة المعمارية الضخمة"
     },
     {
       "type": "p",
-      "text": "إن المشي عبر ردهة خشبية حدودية يشرك كل القدرات الحسية البشرية: رائحة الأرز الملموسة، وحبوب شجرة التنوب الرقيقة، والهدوء الصوتي العميق لمساحة مصممة لتكريم النطاق البشري وحدود الكواكب."
+      "text": "لأكثر من قرن من الزمان، اعتمد التصميم الضخم الحديث بشكل حصري تقريبًا على حديد التسليح وصب الخرسانة المسلحة. واليوم، فإن التقارب بين النمذجة البارامترية الحسابية، والطحن الآلي متعدد المحاور، وهندسة الأخشاب الجماعية يفتتح حقبة معمارية جديدة: ملاذات مدنية سلبية الكربون حيث يتلاقى الدفء المادي والدقة الصوتية."
     }
   ],
-  "sourceHash": "32ece7d48f363c4823201c41e9c7b9cf30b6223e"
+  "sourceHash": "a0660de616111cdfb991d9905ad42805ce0317b1"
 }

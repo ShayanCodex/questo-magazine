@@ -30,6 +30,12 @@
       "text": "1. The Senescence-Associated Secretory Phenotype (SASP)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular Senescence & Autophagy - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Cellular Senescence & Autophagy."
+    },
+    {
       "type": "p",
       "text": "Senescent cells do not remain biologically silent. Through the activation of the cyclic GMP-AMP synthase (cGAS)-STING pathway and NF-κB nuclear translocation, they secrete a potent cocktail of pro-inflammatory cytokines, chemokines, and extracellular matrix-degrading proteases:"
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "Major Molecular SASP Factors:\n- Interleukins: IL-6, IL-1α, IL-1β (drive systemic sterile chronic inflammation)\n- Chemokines: CCL2 (MCP-1), CXCL8 (recruit destructive macrophage cascades)\n- Matrix Metalloproteinases: MMP-1, MMP-3, MMP-9 (degrade structural collagen networks)\n- Growth Factors: TGF-β (paracrine transmission spreading senescence to healthy neighbor cells)"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular Senescence & Autophagy - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Cellular Senescence & Autophagy."
     },
     {
       "type": "p",

@@ -13,8 +13,8 @@
     "reading-ergonomics",
     "editorial-systems"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "Harmonic Swiss typographic baseline grid and mathematical font scales on editorial broadsheet layout",
+  "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Classic typographic book layout showing precise grid margins, proportional leading, and serif letterforms",
   "body": [
     {
       "type": "h2",
@@ -29,6 +29,12 @@
       "text": "Key Points"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Vintage lead metal type sorts arranged in an artisanal letterpress composing stick",
+      "caption": "Typographic heritage: translating movable metal type proportional rules into modern responsive viewport scales."
+    },
+    {
       "type": "ul",
       "items": [
         "Mathematical Modular Scales: Sizing type along proportional intervals (Minor Third 1.200, Perfect Fourth 1.333, Golden Ratio 1.618) creates subconscious visual harmony.",
@@ -41,6 +47,12 @@
       "type": "quote",
       "text": "Good typography is invisible when it guides the mind, and unforgettable when it honors the geometry of the page.",
       "cite": "Elena Vance, Principles of Typographic Geometry"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital variable font design workspace showing weight, width, and optical size variation axes",
+      "caption": "Fluid typography: CSS clamp() functions and variable font axes harmonizing reading cadence across device dimensions."
     },
     {
       "type": "h2",

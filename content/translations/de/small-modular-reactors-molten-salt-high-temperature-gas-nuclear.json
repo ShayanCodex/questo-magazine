@@ -14,7 +14,7 @@
     "news"
   ],
   "image": "/images/articles/nuclear-smr-reactor.jpg",
-  "imageAlt": "Hochpräzise, ​​fortschrittliche industrielle Kernkraftwerksanlage, Dampfturbine und Containment-Kühlinfrastruktur",
+  "imageAlt": "High precision advanced industrial nuclear power facility steam turbine and containment cooling infrastructure",
   "body": [
     {
       "type": "p",
@@ -22,19 +22,31 @@
     },
     {
       "type": "p",
-      "text": "Durch die Begrenzung der thermischen Leistung zwischen 50 und 300 Megawatt elektrisch (MWe) pro Einheit nutzen SMR-Architekturen passive Zerfallswärmeabfuhrsysteme, die durch natürliche Zirkulation, Konvektion und Schwerkraft gesteuert werden. Diese physikbasierten Sicherheitsparameter beseitigen die Anfälligkeit der Abhängigkeiten von der aktiven Notstromversorgung, die frühere Unfälle mit Leichtwasserreaktoren der Generation II kennzeichneten."
+      "text": "Die Elektrifizierung der Weltwirtschaft steht vor einem unüberwindbaren thermodynamischen Hindernis: Variable erneuerbare Quellen – Sonne und Wind – können Netzstabilität, synthetische Trägheit und kontinuierliche Hochtemperatur-Prozesswärme für kohlenstoffintensive Schwerindustrien wie Stahlherstellung, Zementproduktion und chemische Synthese nicht unabhängig aufrechterhalten. Kleine modulare Reaktoren (SMRs) stellen einen grundlegenden Paradigmenwechsel weg von maßgeschneiderten zivilen Bauprojekten im Gigawatt-Maßstab hin zu standardisierten, fabrikgefertigten Kernspaltungsmodulen dar."
     },
     {
       "type": "h2",
       "text": "1. TRISO-Brennstoffe: Das unzerstörbare Atompellet"
     },
     {
-      "type": "p",
-      "text": "Das Herzstück fortschrittlicher Hochtemperatur-SMR-Designs ist der TRIstructural-ISOtropic (TRISO)-Partikelbrennstoff. Jedes TRISO-Pellet besteht aus einem Brennstoffkern aus Urankarbid oder -oxid, der in drei speziellen konzentrischen Schalen eingekapselt ist: einer porösen Kohlenstoffpufferschicht, einer inneren Schicht aus pyrolytischem Kohlenstoff, einer Eindämmungsgrenze aus keramischem Siliziumkarbid (SiC) und einer äußeren Schale aus pyrolytischem Kohlenstoff."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Small Modular Nuclear Reactors - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Small Modular Nuclear Reactors."
     },
     {
       "type": "p",
-      "text": "Diese nanoskalige strukturelle Eindämmung ermöglicht es TRISO-Brennstoff, Betriebstemperaturen von über 1.600 Grad Celsius ohne strukturellen Abbau oder Freisetzung von Spaltprodukten standzuhalten. Selbst im theoretisch katastrophalen Fall eines vollständigen Kühlmittelverlusts können TRISO-Partikel nicht schmelzen, wodurch der Kraftstoff vor Umweltverschmutzung geschützt ist."
+      "text": "Die Elektrifizierung der Weltwirtschaft steht vor einem unüberwindbaren thermodynamischen Hindernis: Variable erneuerbare Quellen – Sonne und Wind – können Netzstabilität, synthetische Trägheit und kontinuierliche Hochtemperatur-Prozesswärme für kohlenstoffintensive Schwerindustrien wie Stahlherstellung, Zementproduktion und chemische Synthese nicht unabhängig aufrechterhalten. Kleine modulare Reaktoren (SMRs) stellen einen grundlegenden Paradigmenwechsel weg von maßgeschneiderten zivilen Bauprojekten im Gigawatt-Maßstab hin zu standardisierten, fabrikgefertigten Kernspaltungsmodulen dar."
+    },
+    {
+      "type": "p",
+      "text": "Die Elektrifizierung der Weltwirtschaft steht vor einem unüberwindbaren thermodynamischen Hindernis: Variable erneuerbare Quellen – Sonne und Wind – können Netzstabilität, synthetische Trägheit und kontinuierliche Hochtemperatur-Prozesswärme für kohlenstoffintensive Schwerindustrien wie Stahlherstellung, Zementproduktion und chemische Synthese nicht unabhängig aufrechterhalten. Kleine modulare Reaktoren (SMRs) stellen einen grundlegenden Paradigmenwechsel weg von maßgeschneiderten zivilen Bauprojekten im Gigawatt-Maßstab hin zu standardisierten, fabrikgefertigten Kernspaltungsmodulen dar."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Small Modular Nuclear Reactors - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Small Modular Nuclear Reactors."
     },
     {
       "type": "quote",
@@ -43,51 +55,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Kühlmittelkreisläufe für geschmolzenes Salz und flüssiges Metall"
+      "text": "1. TRISO-Brennstoffe: Das unzerstörbare Atompellet"
     },
     {
       "type": "p",
-      "text": "Während Leichtwasser-SMR-Designs Druckwasserkreisläufe miniaturisieren (Betrieb bei 150 Atmosphären), nutzen fortschrittliche modulare Reaktoren der Generation IV flüssige Salze (FLiBe) oder flüssige Metalle (Natrium, Blei-Wismut) als Kühlmittel mit hoher Wärmeleitfähigkeit. Schmelzsalzreaktoren, die nahezu atmosphärischen Druck betreiben, eliminieren das katastrophale Risiko einer explosionsartigen Dampfexpansion unter hohem Druck im Falle eines Rohrbruchs."
+      "text": "Die Elektrifizierung der Weltwirtschaft steht vor einem unüberwindbaren thermodynamischen Hindernis: Variable erneuerbare Quellen – Sonne und Wind – können Netzstabilität, synthetische Trägheit und kontinuierliche Hochtemperatur-Prozesswärme für kohlenstoffintensive Schwerindustrien wie Stahlherstellung, Zementproduktion und chemische Synthese nicht unabhängig aufrechterhalten. Kleine modulare Reaktoren (SMRs) stellen einen grundlegenden Paradigmenwechsel weg von maßgeschneiderten zivilen Bauprojekten im Gigawatt-Maßstab hin zu standardisierten, fabrikgefertigten Kernspaltungsmodulen dar."
     },
     {
       "type": "p",
-      "text": "Darüber hinaus arbeiten Salzschmelzensysteme bei Kernaustrittstemperaturen zwischen 700 und 950 Grad Celsius. Dieses erhöhte thermodynamische Regime führt zu Wirkungsgraden der Stromerzeugung von über 48 % (im Vergleich zu 33 % bei herkömmlichen Wasserreaktoren) und ermöglicht die direkte thermische Kopplung an Hochtemperatur-Festoxid-Elektrolysezellen für die Produktion von grünem Wasserstoff."
+      "text": "Die Elektrifizierung der Weltwirtschaft steht vor einem unüberwindbaren thermodynamischen Hindernis: Variable erneuerbare Quellen – Sonne und Wind – können Netzstabilität, synthetische Trägheit und kontinuierliche Hochtemperatur-Prozesswärme für kohlenstoffintensive Schwerindustrien wie Stahlherstellung, Zementproduktion und chemische Synthese nicht unabhängig aufrechterhalten. Kleine modulare Reaktoren (SMRs) stellen einen grundlegenden Paradigmenwechsel weg von maßgeschneiderten zivilen Bauprojekten im Gigawatt-Maßstab hin zu standardisierten, fabrikgefertigten Kernspaltungsmodulen dar."
     },
     {
       "type": "h2",
-      "text": "3. Video-Masterclass: SMR-Reaktorphysik und Fabrikökonomie"
+      "text": "1. TRISO-Brennstoffe: Das unzerstörbare Atompellet"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "Kleine modulare Reaktoren erklärt: Physik, modulare Fertigung und Netzökonomie",
-      "caption": "Eine gründliche technische Bewertung der SMR-Fabrikstandardisierung, der passiven Containment-Sicherheit und der Grundlastintegration der Levelized Cost of Energy (LCOE)."
+      "title": "Small Modular Reactors Explained: Physics, Modular Manufacturing, and Grid Economics",
+      "caption": "A thorough engineering assessment of SMR factory standardization, passive containment safety, and levelized cost of energy (LCOE) baseload integration.",
+      "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM"
     },
     {
       "type": "h2",
-      "text": "4. Bereitstellungsarchitektur: Umnutzung der Kohleinfrastruktur"
+      "text": "1. TRISO-Brennstoffe: Das unzerstörbare Atompellet"
     },
     {
       "type": "p",
-      "text": "Einer der größten wirtschaftlichen Vorteile des standardisierten SMR-Einsatzes ist die Nachrüstung von Brownfields. Hunderte von stillgelegten oder stillgelegten Kohlekraftwerken weltweit verfügen über bereits bestehende Hochspannungsnetzverbindungen, Kühlwasserrechte für Kondensatoren, Schienentransportkorridore und erfahrenes Betriebspersonal."
+      "text": "Die Elektrifizierung der Weltwirtschaft steht vor einem unüberwindbaren thermodynamischen Hindernis: Variable erneuerbare Quellen – Sonne und Wind – können Netzstabilität, synthetische Trägheit und kontinuierliche Hochtemperatur-Prozesswärme für kohlenstoffintensive Schwerindustrien wie Stahlherstellung, Zementproduktion und chemische Synthese nicht unabhängig aufrechterhalten. Kleine modulare Reaktoren (SMRs) stellen einen grundlegenden Paradigmenwechsel weg von maßgeschneiderten zivilen Bauprojekten im Gigawatt-Maßstab hin zu standardisierten, fabrikgefertigten Kernspaltungsmodulen dar."
     },
     {
       "type": "p",
-      "text": "Durch den Ersatz alter Kohlekessel durch werkseitig montierte SMR-Kernwärmeerzeugungsmodule unter Beibehaltung von Turbinen, Schaltanlagen und Übertragungsinfrastruktur können Energieversorger ihre Investitionsausgaben im Vergleich zu Kernkraftwerken auf der grünen Wiese um bis zu 35 % senken und so den globalen Übergang zu kontinuierlicher CO2-neutraler Elektrizität beschleunigen."
+      "text": "Die Elektrifizierung der Weltwirtschaft steht vor einem unüberwindbaren thermodynamischen Hindernis: Variable erneuerbare Quellen – Sonne und Wind – können Netzstabilität, synthetische Trägheit und kontinuierliche Hochtemperatur-Prozesswärme für kohlenstoffintensive Schwerindustrien wie Stahlherstellung, Zementproduktion und chemische Synthese nicht unabhängig aufrechterhalten. Kleine modulare Reaktoren (SMRs) stellen einen grundlegenden Paradigmenwechsel weg von maßgeschneiderten zivilen Bauprojekten im Gigawatt-Maßstab hin zu standardisierten, fabrikgefertigten Kernspaltungsmodulen dar."
     },
     {
       "type": "h2",
-      "text": "5. Technische Erkenntnisse: Die Zukunft der modularen Grundlast"
+      "text": "1. TRISO-Brennstoffe: Das unzerstörbare Atompellet"
     },
     {
       "type": "ul",
       "items": [
-        "Inhärente passive Sicherheit: Die Wärmeableitung durch natürlichen Konvektionszerfall beseitigt die Abhängigkeit von externer Wechselstromversorgung oder Diesel-Notstromgeneratoren.",
-        "TRISO-Kraftstoffpermanenz: Die Mikroverkapselung aus keramischem Siliziumkarbid eliminiert Kernschmelzmechanismen bis hin zu extremen Temperaturen.",
-        "Industrielle Prozesswärme: Die Hochtemperaturleistung (700 °C–950 °C) ermöglicht die direkte Dekarbonisierung von Chemieanlagen, synthetischen Kraftstoffen und der Stahlherstellung.",
-        "Modulare Fabrikökonomie: Der Übergang vom Bauingenieurwesen vor Ort zu fabrikstandardisierten Montagelinien verkürzt die Bauzeiten und Finanzierungskosten erheblich."
+        "Inherent Passive Safety: Natural convective decay heat dissipation removes dependencies on off-site AC power or diesel backup generators.",
+        "TRISO Fuel Permanence: Ceramic silicon carbide micro-encapsulation eliminates core meltdown mechanisms up to extreme temperatures.",
+        "Industrial Process Heat: High-temperature output (700°C–950°C) enables direct decarbonization of chemical plants, synthetic fuels, and steel manufacturing.",
+        "Modular Factory Economics: Shifting from on-site civil engineering to factory-standardized assembly lines significantly compresses build times and financing costs."
       ]
     }
   ],
-  "sourceHash": "1aa34d18b61eada65d1a19082df3dd5957faf87b"
+  "sourceHash": "2839fd28f3881f13ddadb5dbe46036f082ca1dd9"
 }

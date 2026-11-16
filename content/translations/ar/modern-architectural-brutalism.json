@@ -10,7 +10,7 @@
     "theory"
   ],
   "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "الوحشية المعمارية الحديثة",
+  "imageAlt": "Modern Architectural Brutalism",
   "body": [
     {
       "type": "p",
@@ -22,7 +22,13 @@
     },
     {
       "type": "p",
-      "text": "إن التقييد المعماري الحقيقي لا يتعلق بالفراغ، بل بالدقة. يتم قياس كل مستوى وارتفاع مقابل النسبة البشرية والإضاءة الطبيعية."
+      "text": "يشكل التفاعل بين الضوء والكتلة الهندسية والمادية الصامتة اللغة الأساسية للهندسة المعمارية البسيطة الحديثة."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Modern Architectural Brutalism."
     },
     {
       "type": "quote",
@@ -32,15 +38,21 @@
     {
       "type": "ol",
       "items": [
-        "إخضاع الدوافع الزخرفية للسلامة الهيكلية",
-        "تعظيم ضوء النهار من خلال الفتحات المكانية المحسوبة",
-        "الحفاظ على القوام اللمسي الملموس للحجر الجيري الخام والأخشاب المكشوفة"
+        "Subordinating decorative impulses to structural integrity",
+        "Maximizing daylight through calculated spatial apertures",
+        "Preserving tactile tactile textures of raw limestone and exposed timber"
       ]
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Modern Architectural Brutalism."
+    },
+    {
       "type": "p",
-      "text": "عندما نجرد ما لا لزوم له، فإن ما يتبقى ليس الغياب، بل الوضوح."
+      "text": "يشكل التفاعل بين الضوء والكتلة الهندسية والمادية الصامتة اللغة الأساسية للهندسة المعمارية البسيطة الحديثة."
     }
   ],
-  "sourceHash": "8e920df698a9b242cb729b7174045072b791300f"
+  "sourceHash": "d797f7bd03e572e52478b5d00930a0554888afe7"
 }

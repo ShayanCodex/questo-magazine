@@ -11,8 +11,8 @@
     "endurance",
     "bioenergetics"
   ],
-  "image": "/images/articles/tennis-biomechanics-serve.jpg",
-  "imageAlt": "Athlète d'endurance d'élite soumis à des tests de vitesse aérobie maximale et de physiologie métabolique",
+  "image": "https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Track and field athletics sprinter accelerating out of starting blocks with explosive force",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "Démanteler le mythe de l'acide lactique en tant que déchet"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Metabolic testing laboratory analyzing blood lactate concentrations and ventilatory thresholds",
+      "caption": "Lactate shuttling: Monocarboxylate transporters (MCT1/MCT4) translocating lactate into oxidative fibers for oxidation."
     },
     {
       "type": "ul",
       "items": [
-        "Navette de lactate de cellule à cellule : les fibres glycolytiques à contraction rapide génèrent du lactate, qui est transporté via des transporteurs de monocarboxylate (MCT4) dans la circulation sanguine.",
-        "Oxydation mitochondriale : les fibres musculaires oxydatives à contraction lente adjacentes, le tissu cardiaque et les neurones absorbent le lactate via MCT1, le reconvertissant en pyruvate pour la génération d'ATP du cycle de Krebs.",
-        "Tamponnage de l'acidose : la brûlure musculaire lors d'efforts maximaux est provoquée par l'accumulation excessive d'ions hydrogène (H+) provenant de l'hydrolyse de l'ATP, et non par l'anion lactate lui-même.",
-        "Seuil de lactate 2 (MLSS) : la performance d'endurance d'élite est définie par la vitesse maximale à laquelle la production sanguine de lactate correspond à la capacité de clairance systémique."
+        "Cell-to-Cell Lactate Shuttle: Fast-twitch glycolytic fibers generate lactate, which is transported via Monocarboxylate Transporters (MCT4) into blood circulation.",
+        "Mitochondrial Oxidation: Adjacent slow-twitch oxidative muscle fibers, cardiac tissue, and neurons take up lactate via MCT1, converting it back to pyruvate for Krebs cycle ATP generation.",
+        "Acidosis Buffering: Muscle burning during maximal efforts is driven by excess hydrogen ion (H+) accumulation from ATP hydrolysis, not the lactate anion itself.",
+        "Lactate Threshold 2 (MLSS): Elite endurance performance is defined by the maximum speed at which blood lactate production matches systemic clearance capacity."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Liam O'Connor, Études sur la performance sportive humaine"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486282528489-4e3221e2e75c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Endurance runner monitoring biometric pacing, heart rate variability, and metabolic steady state",
+      "caption": "Mitochondrial clearance: endurance conditioning shifting maximum lactate steady state toward higher absolute power."
+    },
+    {
       "type": "h2",
-      "text": "Entraînement en zone 2 et densité mitochondriale"
+      "text": "Démanteler le mythe de l'acide lactique en tant que déchet"
     },
     {
       "type": "p",
-      "text": "La capacité à éliminer et à oxyder le lactate est entièrement déterminée par la densité mitochondriale et le volume du lit capillaire dans les fibres à contraction lente de type I. L’entraînement d’endurance en zone 2 sous le seuil stimule la biogenèse mitochondriale sans déclencher de stress sympathique systémique, construisant ainsi le moteur métabolique qui alimente la production sportive soutenue d’élite."
+      "text": "Pendant près d'un siècle, l'entraînement sportif populaire a adhéré à un dogme obsolète : l'acide lactique était un déchet métabolique toxique responsable de la fatigue musculaire et des douleurs à apparition retardée. La bioénergétique cellulaire pionnière a brisé cette idée fausse. En réalité, le lactate n’est pas un poison cellulaire, mais le carburant énergétique dynamique le plus précieux de l’organisme : un intermédiaire glucidique rapidement transportable et une puissante molécule de signalisation (lactormone)."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "Santé métabolique et biomarqueurs cellulaires dans la performance",
-      "caption": "Le Dr Peter Attia et le Dr Andrew Huberman discutent de la flexibilité métabolique, de l'entraînement en zone 2 et de l'efficacité cardiovasculaire."
+      "title": "Metabolic Health and Cellular Biomarkers in Performance",
+      "caption": "Dr. Peter Attia and Dr. Andrew Huberman discuss metabolic flexibility, zone-2 training, and cardiovascular efficiency.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "L'avenir moléculaire de l'endurance humaine"
+      "text": "Démanteler le mythe de l'acide lactique en tant que déchet"
     },
     {
       "type": "p",
-      "text": "En suivant la télémétrie continue du lactate en temps réel et en optimisant l'expression des transporteurs de monocarboxylates grâce à des modèles d'entraînement polarisés, la science du sport moderne redéfinit les limites physiques de l'endurance humaine."
+      "text": "Pendant près d'un siècle, l'entraînement sportif populaire a adhéré à un dogme obsolète : l'acide lactique était un déchet métabolique toxique responsable de la fatigue musculaire et des douleurs à apparition retardée. La bioénergétique cellulaire pionnière a brisé cette idée fausse. En réalité, le lactate n’est pas un poison cellulaire, mais le carburant énergétique dynamique le plus précieux de l’organisme : un intermédiaire glucidique rapidement transportable et une puissante molécule de signalisation (lactormone)."
     }
   ],
-  "sourceHash": "253cb9bdbade380a975f9e0c1895f9f38921fdbf"
+  "sourceHash": "70e7fd22708c30f5975f75a395561e8720bc2b49"
 }

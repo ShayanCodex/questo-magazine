@@ -1,0 +1,79 @@
+{
+  "slug": "recursive-starks-and-verifiable-computation-at-scale",
+  "title": "STARK recursivos y Halo2: las matemáticas de la verificación criptográfica sucinta",
+  "excerpt": "Un viaje matemático a través de esquemas de compromiso polinomial, pruebas de proximidad Reed-Solomon, IOP rápida de Reed-Solomon y composición de prueba recursiva.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "cryptography",
+    "zero-knowledge",
+    "zk-starks",
+    "blockchain-scaling",
+    "mathematics"
+  ],
+  "image": "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Abstract geometric lattice network representing succinct zero-knowledge cryptographic proofs",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La búsqueda matemática de una verificabilidad sucinta"
+    },
+    {
+      "type": "p",
+      "text": "La computación verificable representa el avance fundamental que permite que las máquinas estatales descentralizadas públicas escale horizontalmente. En redes de ejecución ingenuas, cada nodo de validación debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado. Los argumentos de conocimiento transparentes escalables (STARK) invierten este cuello de botella: un único probador no confiable genera una prueba criptográfica sucinta que da fe de la corrección computacional de millones de transiciones de estado, que cualquier verificador puede verificar en tiempo logarítmico."
+    },
+    {
+      "type": "h2",
+      "text": "La búsqueda matemática de una verificabilidad sucinta"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algebraic intermediate representation and execution trace polynomial matrix",
+      "caption": "AIR arithmetization: translating state machine execution steps into algebraic constraint polynomials."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Arithmetization: Transforming computational execution traces into systems of algebraic intermediate representations (AIR) or polynomial constraint systems.",
+        "Reed-Solomon Proximity Testing: Encoding constraint evaluations over large evaluation domains such that computational invalidity manifests as maximal distance from valid Reed-Solomon codewords.",
+        "FRI Protocol (Fast Reed-Solomon IOP of Proximity): An interactive oracle proof that recursively halves polynomial degrees, proving proximity to low-degree spaces with polylogarithmic communication complexity.",
+        "Transparent Trustless Setup: Utilizing publicly verifiable collision-resistant hash functions rather than elliptic curve toxic waste parameters, guaranteeing quantum resistance and zero setup vulnerability."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Las pruebas recursivas de conocimiento cero convierten el tiempo computacional en espacio geométrico, lo que permite un único paso de verificación para validar la integridad de la ejecución histórica ilimitada.",
+      "cite": "Monografía de fundamentos criptográficos y sistemas verificables"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524813686514-a57563d77d61?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Recursive STARK proof tree folding millions of transactions into single succinct proof",
+      "caption": "Recursive proof aggregation: Merkle tree verification folding thousands of execution batches into one master proof."
+    },
+    {
+      "type": "h2",
+      "text": "La búsqueda matemática de una verificabilidad sucinta"
+    },
+    {
+      "type": "p",
+      "text": "La computación verificable representa el avance fundamental que permite que las máquinas estatales descentralizadas públicas escale horizontalmente. En redes de ejecución ingenuas, cada nodo de validación debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado. Los argumentos de conocimiento transparentes escalables (STARK) invierten este cuello de botella: un único probador no confiable genera una prueba criptográfica sucinta que da fe de la corrección computacional de millones de transiciones de estado, que cualquier verificador puede verificar en tiempo logarítmico."
+    },
+    {
+      "type": "video",
+      "title": "Recursive STARKs and Polynomial Commitments Deep Dive",
+      "caption": "Mathematical exploration of FRI proximity testing, execution trace arithmetization, and recursive proof verification.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "La búsqueda matemática de una verificabilidad sucinta"
+    },
+    {
+      "type": "p",
+      "text": "La computación verificable representa el avance fundamental que permite que las máquinas estatales descentralizadas públicas escale horizontalmente. En redes de ejecución ingenuas, cada nodo de validación debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado. Los argumentos de conocimiento transparentes escalables (STARK) invierten este cuello de botella: un único probador no confiable genera una prueba criptográfica sucinta que da fe de la corrección computacional de millones de transiciones de estado, que cualquier verificador puede verificar en tiempo logarítmico."
+    }
+  ],
+  "sourceHash": "c5cdc7eeeaeebe7ae1b57b5a686e1ed3f30a8730"
+}

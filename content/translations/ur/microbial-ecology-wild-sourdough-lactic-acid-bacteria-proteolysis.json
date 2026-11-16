@@ -11,8 +11,8 @@
     "craftsmanship",
     "sustainability"
   ],
-  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "کاریگر پتھر کی چکی والی کھٹی روٹی کی روٹی جو کیریملائز کرسٹ کے چھالوں اور الیوولر کرمب کی ساخت کو ظاہر کرتی ہے",
+  "image": "https://images.unsplash.com/photo-1514944298352-bf6d4821a37c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Artisan stone-milled sourdough bread loaf displaying caramelized crust blisters and alveolar crumb structure",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "ایک پختہ، مستحکم خود بخود کھٹیا سٹارٹر میں، ماحولیاتی توازن عام طور پر ایک سخت تناسب پر طے پاتا ہے: ہر ایک جنگلی خمیری خلیے کے لیے تقریباً 100 لیکٹک ایسڈ بیکٹیریا خلیے (100:1 تناسب)۔ روایتی یورپی اسٹارٹرز پر حاوی آرکیٹائپل بیکٹیریل انواع Fructilactobacillus sanfranciscensis (سابقہ ​​Lactobacillus sanfranciscensis) ہے، جو خمیر Kazachstania exigua (یا Candida humilis) کے ساتھ عین میٹابولک ہم آہنگی میں کام کرتی ہے۔"
+      "text": "دس ہزار سال سے زائد عرصے سے، خمیر شدہ روٹی میں دانے کے اناج کی تبدیلی انسانیت کی بنیادی حیاتیاتی کیمیائی مہارت کے طور پر کھڑی ہے۔ جبکہ بیسویں صدی میں تجارتی بیکنگ نے اس قدیم کیمیا کو صنعتی monotypic Saccharomyces cerevisiae inoculation میں آسان بنا دیا، روایتی جنگلی کھٹا ایک پیچیدہ، حیاتیاتی متنوع مائکروبیل ماحولیاتی نظام کی نمائندگی کرتا ہے۔ hetero-fermentative lactic acid bacteria (LAB) اور تیزاب برداشت کرنے والے جنگلی خمیر کے درمیان پیچیدہ سمبیوسس نہ صرف گیس کی برقراری پر حکومت کرتا ہے بلکہ enzymatic proteolysis، phytate dephosphorylation، اور glycemic modulation."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Microbial Ecology of Sourdough."
     },
     {
       "type": "p",
-      "text": "یہ سمبیوسس غیر مسابقتی کاربن سبسٹریٹ کے استعمال پر لنگر انداز ہوتا ہے۔ F. sanfranciscensis مالٹوز-مثبت اور سوکروز-منفی ہے، میٹابولائزنگ مالٹوز جو سیریل امائلیز انزائمز کے ذریعے گلوکوز اور مالٹوز-6-فاسفیٹ میں جاری ہوتا ہے۔ اس کے برعکس، Kazachstania exigua مالٹوز منفی ہے، بنیادی مالٹوز سبسٹریٹ کا مقابلہ کیے بغیر بیکٹیریا کے ذریعہ جاری ہونے والے گلوکوز کو کھاتا ہے۔ یہ باہمی میٹابولک معاہدہ دونوں نسلوں کو دوسرے سے مقابلہ کرنے سے روکتا ہے۔"
+      "text": "دس ہزار سال سے زائد عرصے سے، خمیر شدہ روٹی میں دانے کے اناج کی تبدیلی انسانیت کی بنیادی حیاتیاتی کیمیائی مہارت کے طور پر کھڑی ہے۔ جبکہ بیسویں صدی میں تجارتی بیکنگ نے اس قدیم کیمیا کو صنعتی monotypic Saccharomyces cerevisiae inoculation میں آسان بنا دیا، روایتی جنگلی کھٹا ایک پیچیدہ، حیاتیاتی متنوع مائکروبیل ماحولیاتی نظام کی نمائندگی کرتا ہے۔ hetero-fermentative lactic acid bacteria (LAB) اور تیزاب برداشت کرنے والے جنگلی خمیر کے درمیان پیچیدہ سمبیوسس نہ صرف گیس کی برقراری پر حکومت کرتا ہے بلکہ enzymatic proteolysis، phytate dephosphorylation، اور glycemic modulation."
     },
     {
       "type": "quote",
@@ -36,55 +42,61 @@
       "cite": "صوفیہ روسی، گیسٹرونومی اور فوڈ کیمسٹری فیلو"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Microbial Ecology of Sourdough."
+    },
+    {
       "type": "h2",
-      "text": "2. تیزابیت کائینیٹکس: لیکٹک بمقابلہ ایسیٹک ایسڈ بیلنس"
+      "text": "1. Symbiotic microbial Taxonomy: The LAB-to-yeast Ratio"
     },
     {
       "type": "p",
-      "text": "کھٹی کا ذائقہ پروفائل اور گلوٹین فن تعمیر توسیع شدہ ابال کے دوران پیدا ہونے والے نامیاتی تیزاب سے براہ راست شکل اختیار کرتا ہے۔ Heterofermentative LAB دو بنیادی تیزابوں کی ترکیب کے لیے 6-phosphogluconate راستے کا استعمال کرتا ہے:"
+      "text": "دس ہزار سال سے زائد عرصے سے، خمیر شدہ روٹی میں دانے کے اناج کی تبدیلی انسانیت کی بنیادی حیاتیاتی کیمیائی مہارت کے طور پر کھڑی ہے۔ جبکہ بیسویں صدی میں تجارتی بیکنگ نے اس قدیم کیمیا کو صنعتی monotypic Saccharomyces cerevisiae inoculation میں آسان بنا دیا، روایتی جنگلی کھٹا ایک پیچیدہ، حیاتیاتی متنوع مائکروبیل ماحولیاتی نظام کی نمائندگی کرتا ہے۔ hetero-fermentative lactic acid bacteria (LAB) اور تیزاب برداشت کرنے والے جنگلی خمیر کے درمیان پیچیدہ سمبیوسس نہ صرف گیس کی برقراری پر حکومت کرتا ہے بلکہ enzymatic proteolysis، phytate dephosphorylation، اور glycemic modulation."
     },
     {
       "type": "ul",
       "items": [
-        "Lactic Acid (C3H6O3): ایک ہموار، ہلکے، کریمی دہی جیسی تیزابیت فراہم کرتا ہے۔ مائع اسٹارٹر ہائیڈریشن کے ساتھ گرم ہائیڈریشن درجہ حرارت (26 ° C سے 30 ° C) پر ترجیحی طور پر ترکیب کیا جاتا ہے۔",
-        "ایسیٹک ایسڈ (C2H4O2): تیز، تیز، سرکہ کی طرح کاٹتا ہے۔ ٹھنڈے درجہ حرارت (10 ° C سے 18 ° C) کے تحت سخت اسٹارٹر ہائیڈریشن (50% سے 65% پانی) کے ساتھ ترجیحی طور پر ترکیب کیا جاتا ہے۔",
-        "فرمینٹیشن کوٹینٹ (FQ): ہم آہنگ کاریگر روٹیوں کے لیے لییکٹک سے ایسٹک ایسڈ کا داڑھ کا تناسب مثالی طور پر 3:1 اور 4:1 کے درمیان ہوتا ہے۔"
+        "Lactic Acid (C3H6O3): Imparts a smooth, mild, creamy yogurt-like acidity. Synthesized preferentially at warmer hydration temperatures (26°C to 30°C) with liquid starter hydrations.",
+        "Acetic Acid (C2H4O2): Imparts a sharp, pungent, vinegar-like bite. Synthesized preferentially under cooler retardation temperatures (10°C to 18°C) with stiffer starter hydrations (50% to 65% water).",
+        "The Fermentation Quotient (FQ): The molar ratio of lactic to acetic acid ideally ranges between 3:1 and 4:1 for harmonized artisan loaves."
       ]
     },
     {
       "type": "h2",
-      "text": "3. ویڈیو سائنس ماسٹرکلاس: Sourdough Fermentation Microbiology"
+      "text": "1. Symbiotic microbial Taxonomy: The LAB-to-yeast Ratio"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
       "title": "Wild Sourdough Fermentation Science & Lactic Kinetics",
-      "caption": "سٹارٹر کی کاشت، گلوٹین پروٹولیسس، اور تھرمل اوون اسپرنگ تھرموڈینامکس کا مائکرو بائیولوجیکل امتحان۔"
+      "caption": "Microbiological examination of starter cultivation, gluten proteolysis, and thermal oven spring thermodynamics."
     },
     {
       "type": "h2",
-      "text": "4. انزیمیٹک گلوٹین پروٹیولیسس اور الیوولر کرمب کا ڈھانچہ"
+      "text": "1. Symbiotic microbial Taxonomy: The LAB-to-yeast Ratio"
     },
     {
       "type": "p",
-      "text": "چونکہ بیکٹیریل ایسڈ کا جمع آٹا پی ایچ کو 5.8 سے نیچے کی طرف 3.8 اور 4.2 کے درمیان لے جاتا ہے، اینڈوجینس سیریل انزائمز - خاص طور پر اسپارٹک پروٹیزز - بن جاتے ہیں۔ یہ انزائمز اعلی مالیکیولر ویٹ گلوٹینن اور گلیڈین پیپٹائڈ چینز کے اندر ڈسلفائیڈ بانڈز کو منتخب طور پر توڑ دیتے ہیں۔"
+      "text": "دس ہزار سال سے زائد عرصے سے، خمیر شدہ روٹی میں دانے کے اناج کی تبدیلی انسانیت کی بنیادی حیاتیاتی کیمیائی مہارت کے طور پر کھڑی ہے۔ جبکہ بیسویں صدی میں تجارتی بیکنگ نے اس قدیم کیمیا کو صنعتی monotypic Saccharomyces cerevisiae inoculation میں آسان بنا دیا، روایتی جنگلی کھٹا ایک پیچیدہ، حیاتیاتی متنوع مائکروبیل ماحولیاتی نظام کی نمائندگی کرتا ہے۔ hetero-fermentative lactic acid bacteria (LAB) اور تیزاب برداشت کرنے والے جنگلی خمیر کے درمیان پیچیدہ سمبیوسس نہ صرف گیس کی برقراری پر حکومت کرتا ہے بلکہ enzymatic proteolysis، phytate dephosphorylation، اور glycemic modulation."
     },
     {
       "type": "p",
-      "text": "کنٹرول شدہ پروٹولیسس لچکدار آٹے کے میٹرکس کو آرام دیتا ہے، جس سے حتمی کرمب کو نرم کرتے ہوئے توسیع پذیری میں اضافہ ہوتا ہے۔ تاہم، ضرورت سے زیادہ تیزابیت ساختی تباہی کا سبب بنتی ہے: زیادہ پروٹیولیسس گلوٹین کے جال کو ختم کرتا ہے، بیکنگ کے دوران کاربن ڈائی آکسائیڈ کے بلبلوں کو برقرار رکھنے سے روکتا ہے اور ایک گھنی، چپچپا اینٹ پیدا کرتا ہے۔ جنگلی کھلے الیوولر کرمب کا حصول ساختی لچک اور گیس کی توسیع کی بہترین چوٹی پر ابال کو روکنے کا مطالبہ کرتا ہے۔"
+      "text": "دس ہزار سال سے زائد عرصے سے، خمیر شدہ روٹی میں دانے کے اناج کی تبدیلی انسانیت کی بنیادی حیاتیاتی کیمیائی مہارت کے طور پر کھڑی ہے۔ جبکہ بیسویں صدی میں تجارتی بیکنگ نے اس قدیم کیمیا کو صنعتی monotypic Saccharomyces cerevisiae inoculation میں آسان بنا دیا، روایتی جنگلی کھٹا ایک پیچیدہ، حیاتیاتی متنوع مائکروبیل ماحولیاتی نظام کی نمائندگی کرتا ہے۔ hetero-fermentative lactic acid bacteria (LAB) اور تیزاب برداشت کرنے والے جنگلی خمیر کے درمیان پیچیدہ سمبیوسس نہ صرف گیس کی برقراری پر حکومت کرتا ہے بلکہ enzymatic proteolysis، phytate dephosphorylation، اور glycemic modulation."
     },
     {
       "type": "h2",
-      "text": "5. آرٹیسن بریڈ کرافٹ کے لیے سائنسی ٹیک وے"
+      "text": "1. Symbiotic microbial Taxonomy: The LAB-to-yeast Ratio"
     },
     {
       "type": "ul",
       "items": [
-        "درجہ حرارت ذائقہ کا تعین کرتا ہے: بڑے پیمانے پر ابال کے درجہ حرارت کو کنٹرول کرنا نانبائیوں کو اس قابل بناتا ہے کہ وہ لیکٹک سے ایسٹک ایسڈ کی مقدار کو آگے بڑھا سکیں۔",
-        "فائیٹیز ایکٹیویشن: کم پی ایچ سیریل فائٹیز کو متحرک کرتا ہے، اینٹی نیوٹریشن فائیٹک ایسڈ کو توڑتا ہے اور زنک، آئرن اور میگنیشیم کی حیاتیاتی دستیابی میں اضافہ کرتا ہے۔",
-        "ابال کی کھڑکی: آٹے کی چوٹی کی توسیع مکمل انزیمیٹک گلوٹین کی خرابی سے پہلے ہوتی ہے، جو کاریگر مونوگراف کے حقیقی فن کی وضاحت کرتی ہے۔"
+        "Temperature Dictates Flavor: Controlling bulk fermentation temperature enables bakers to steer the lactic-to-acetic acid quotient.",
+        "Phytase Activation: Low pH triggers cereal phytase, breaking down anti-nutritional phytic acid and increasing bioavailability of zinc, iron, and magnesium.",
+        "Fermentation Window: Peak dough extensibility occurs prior to complete enzymatic gluten breakdown, defining the true art of the artisan monograph."
       ]
     }
   ],
-  "sourceHash": "8dd1dc54c2eee4c2eac3a9817d02b7e25d02a7d3"
+  "sourceHash": "3f1b660e5de37d1f6312a18924ce51bdf8f75a4f"
 }

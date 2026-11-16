@@ -30,6 +30,12 @@
       "text": "1. Architectural Taxonomies: Wholesale vs. Retail CBDCs"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Central Bank Digital Currencies."
+    },
+    {
       "type": "p",
       "text": "Central bank digital currencies divide fundamentally across access tiers and settlement scopes:"
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "CBDC Functional Taxonomies:\n1. Wholesale CBDC (wCBDC):\n   - Participants: Restricted strictly to licensed financial institutions and central clearing counterparties.\n   - Purpose: Interbank clearing, cross-border gross settlement, and tokenized securities DvP (Delivery-versus-Payment).\n   - Technology: Permissioned distributed ledgers (Corda, Hyperledger Fabric, bespoke DLT stacks).\n\n2. Retail CBDC (rCBDC):\n   - Participants: General public, retail merchants, and non-bank consumers.\n   - Purpose: Digital cash replacement, offline transactions, and financial inclusion.\n   - Architecture: Two-tier intermediated model (central bank issues; private commercial banks distribute)."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Central Bank Digital Currencies."
     },
     {
       "type": "p",

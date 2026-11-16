@@ -11,8 +11,8 @@
     "grid-systems",
     "swiss-style"
   ],
-  "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Libro de muestras tipográfico de estilo internacional suizo que muestra estrictas cuadrículas de base modulares",
+  "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Swiss International Style typographic specimen book displaying strict modular baseline grids",
   "body": [
     {
       "type": "p",
@@ -20,19 +20,31 @@
     },
     {
       "type": "p",
-      "text": "La cuadrícula no es una limitación estética; es un instrumento musical. Así como un violín depende de longitudes matemáticas precisas de cuerdas para producir un tono acústico puro, un diseño de página depende de proporciones espaciales armoniosas para convertir caracteres alfabéticos arbitrarios en literatura visual resonante."
+      "text": "Para el ojo inexperto, un libro o una revista editorial finamente diseñado parece sencillo. Las palabras fluyen a lo largo de la página con una naturalidad innata que invita a la inmersión inmediata. Sin embargo, esta aparente facilidad es una ilusión óptica. Debajo de cada obra maestra del diseño de publicaciones se encuentra una armadura rigurosa y oculta de líneas geométricas, proporciones y ritmos básicos: la cuadrícula tipográfica."
     },
     {
       "type": "h2",
       "text": "La geometría secreta del canon dorado de Jan Tschichold"
     },
     {
-      "type": "p",
-      "text": "En su fundamental monografía de 1953, 'La forma del libro', el tipógrafo alemán Jan Tschichold reveló el canon medieval largamente olvidado de la división de manuscritos. Al dibujar líneas de construcción diagonales a lo largo de una doble página, conectando esquinas opuestas y cruzando los centros de las páginas, los escribas medievales dividieron tanto el ancho como el alto de la página en nueve incrementos iguales."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Grid as an Instrument - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Grid as an Instrument."
     },
     {
       "type": "p",
-      "text": "El bloque de texto resultante poseía la proporción proporcional exacta (2:3) de la página en general. Además, los márgenes exteriores estaban en proporción armónica entre sí: margen interior = 2 partes, margen superior = 3 partes, margen exterior = 4 partes y margen inferior = 6 partes. Esta asignación de márgenes de alto nivel no fue ornamental; tenía en cuenta la ergonomía humana y proporcionaba un cómodo espacio de descanso para los pulgares del lector sin oscurecer ni una sola palabra del texto."
+      "text": "Para el ojo inexperto, un libro o una revista editorial finamente diseñado parece sencillo. Las palabras fluyen a lo largo de la página con una naturalidad innata que invita a la inmersión inmediata. Sin embargo, esta aparente facilidad es una ilusión óptica. Debajo de cada obra maestra del diseño de publicaciones se encuentra una armadura rigurosa y oculta de líneas geométricas, proporciones y ritmos básicos: la cuadrícula tipográfica."
+    },
+    {
+      "type": "p",
+      "text": "Para el ojo inexperto, un libro o una revista editorial finamente diseñado parece sencillo. Las palabras fluyen a lo largo de la página con una naturalidad innata que invita a la inmersión inmediata. Sin embargo, esta aparente facilidad es una ilusión óptica. Debajo de cada obra maestra del diseño de publicaciones se encuentra una armadura rigurosa y oculta de líneas geométricas, proporciones y ritmos básicos: la cuadrícula tipográfica."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Grid as an Instrument - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Grid as an Instrument."
     },
     {
       "type": "quote",
@@ -41,15 +53,15 @@
     },
     {
       "type": "h2",
-      "text": "El ritmo de la cuadrícula de base"
+      "text": "La geometría secreta del canon dorado de Jan Tschichold"
     },
     {
       "type": "p",
-      "text": "Mientras que las columnas verticales dictan el flujo de contenido horizontal, la cuadrícula de base vertical establece el ritmo temporal de la experiencia de lectura. En un sistema editorial disciplinado, cada elemento tipográfico, desde el titular de la portada de 64 puntos hasta el pie de foto de 8 puntos, debe ajustarse a múltiplos enteros del encabezado del cuerpo principal."
+      "text": "Para el ojo inexperto, un libro o una revista editorial finamente diseñado parece sencillo. Las palabras fluyen a lo largo de la página con una naturalidad innata que invita a la inmersión inmediata. Sin embargo, esta aparente facilidad es una ilusión óptica. Debajo de cada obra maestra del diseño de publicaciones se encuentra una armadura rigurosa y oculta de líneas geométricas, proporciones y ritmos básicos: la cuadrícula tipográfica."
     },
     {
       "type": "p",
-      "text": "Si el cuerpo del texto se establece en 11 puntos en una altura de línea de 16 puntos, la unidad de cuadrícula de referencia es exactamente 16 puntos (o 24 píxeles). Un encabezado secundario podría tener 24 puntos con una altura de línea de 32 puntos (que abarca exactamente 2 unidades de referencia). Una cita pullquote puede abarcar 3 unidades de referencia. Esto garantiza que, en los pliegos de varias columnas, las líneas de texto de las columnas adyacentes se alineen horizontalmente con una precisión de navaja, creando una sensación subconsciente de orden y estabilidad estructural."
+      "text": "Para el ojo inexperto, un libro o una revista editorial finamente diseñado parece sencillo. Las palabras fluyen a lo largo de la página con una naturalidad innata que invita a la inmersión inmediata. Sin embargo, esta aparente facilidad es una ilusión óptica. Debajo de cada obra maestra del diseño de publicaciones se encuentra una armadura rigurosa y oculta de líneas geométricas, proporciones y ritmos básicos: la cuadrícula tipográfica."
     },
     {
       "type": "code",
@@ -63,23 +75,23 @@
     {
       "type": "ul",
       "items": [
-        "Flexibilidad de columnas: 12 columnas se pueden dividir limpiamente en 1, 2, 3, 4 o 6 submódulos iguales sin restos de píxeles fraccionarios.",
-        "Consistencia del canal: mantener un canal uniforme de 24 px o 32 px en todos los puntos de interrupción de la ventana gráfica garantiza un espacio para respirar consistente en el espacio negativo.",
-        "Tensión asimétrica: anclaje de la copia narrativa principal en las columnas 3 a 10, dejando las columnas exteriores abiertas para metadatos editoriales, biografías de los autores y citas marginales grandes."
+        "Column Flexibility: 12 columns can be cleanly partitioned into 1, 2, 3, 4, or 6 equal sub-modules without fractional pixel remainders.",
+        "Gutter Consistency: Maintaining a uniform 24px or 32px gutter across all viewport breakpoints ensures consistent negative space breathing room.",
+        "Asymmetric Tension: Anchoring primary narrative copy across columns 3 through 10, leaving outer columns open for editorial metadata, author bios, and large marginalia pullquotes."
       ]
     },
     {
       "type": "h2",
-      "text": "Traducir el rigor de impresión a ventanas gráficas dinámicas responsivas"
+      "text": "La geometría secreta del canon dorado de Jan Tschichold"
     },
     {
       "type": "p",
-      "text": "Una crítica común al diseño web inicial fue que las ventanas gráficas receptivas hacían imposible la disciplina de la cuadrícula. Debido a que los anchos de pantalla varían continuamente desde ventanas gráficas móviles de 360 ​​px hasta estaciones de trabajo 4K de 3840 px, los críticos argumentaron que las proporciones fijas estaban obsoletas. Sin embargo, las funciones CSS modernas como CSS Grid Layout, subgrid y las funciones matemáticas de abrazadera() nos permiten traducir el Golden Canon de Tschichold directamente a código responsivo."
+      "text": "Para el ojo inexperto, un libro o una revista editorial finamente diseñado parece sencillo. Las palabras fluyen a lo largo de la página con una naturalidad innata que invita a la inmersión inmediata. Sin embargo, esta aparente facilidad es una ilusión óptica. Debajo de cada obra maestra del diseño de publicaciones se encuentra una armadura rigurosa y oculta de líneas geométricas, proporciones y ritmos básicos: la cuadrícula tipográfica."
     },
     {
       "type": "p",
-      "text": "Al vincular la tipografía fluida a anchos de contenedores proporcionales, los sitios web editoriales modernos pueden mantener proporciones armoniosas entre margen y columna independientemente del tamaño de la pantalla. El dispositivo cambia, pero la armonía matemática sigue siendo eterna."
+      "text": "Para el ojo inexperto, un libro o una revista editorial finamente diseñado parece sencillo. Las palabras fluyen a lo largo de la página con una naturalidad innata que invita a la inmersión inmediata. Sin embargo, esta aparente facilidad es una ilusión óptica. Debajo de cada obra maestra del diseño de publicaciones se encuentra una armadura rigurosa y oculta de líneas geométricas, proporciones y ritmos básicos: la cuadrícula tipográfica."
     }
   ],
-  "sourceHash": "4fd98e9bd390dbbfbac91e6ac9fde2b54c874749"
+  "sourceHash": "c443e9b26f67d74a44cf2b479db117b130cde9a7"
 }

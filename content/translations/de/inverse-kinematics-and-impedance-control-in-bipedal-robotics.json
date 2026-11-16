@@ -12,8 +12,8 @@
     "engineering",
     "control-theory"
   ],
-  "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Fortschrittlicher zweibeiniger humanoider Roboter steht in einer hochpräzisen Labortestumgebung",
+  "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Advanced bipedal humanoid robot standing in high-precision laboratory testing environment",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Durch die dynamische Abbildung der Kontaktkräfte zurück in den Gelenkdrehmomentraum über die Jacobi-Transponierung wandelt die Impedanzsteuerung steife Aktuatorgetriebe in virtuelle Feder-Dämpfer-Mechanismen um. Wenn ein Roboterfuß auf eine unerwartete Topographie trifft, absorbiert das Bein den kinetischen Aufprall elastisch, anstatt harmonische Antriebsreduzierer zu zerstören oder das Chassis in einen unwiederbringlichen Sturz zu stürzen."
+      "text": "Die mechanische Synthese der menschlichen Fortbewegung stellt eine der gewaltigsten Grenzen in der Steuerungstheorie und dem physikalischen Rechnen dar. Im Gegensatz zu autonomen Rovern mit Rädern, die von einem statischen Mehrpunktgleichgewicht profitieren, operieren zweibeinige humanoide Roboter in einer kontinuierlichen Zustandsrauminstabilität. Um durch unstrukturiertes terrestrisches Gelände – Kies, Treppen und rutschige Oberflächen – zu navigieren, kann sich eine humanoide Plattform nicht auf starre Positionsflugbahnen verlassen. Es erfordert eine aktive Impedanzkontrolle, die die mechanische Nachgiebigkeit in Millisekundenintervallen moduliert."
     },
     {
       "type": "h2",
       "text": "1. Mathematische Grundlagen: Das virtuelle Feder-Dämpfer-Modell"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Impedance Control in Bipedal Robotics - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Impedance Control in Bipedal Robotics."
+    },
+    {
       "type": "p",
-      "text": "Die Impedanzsteuerung definiert eine Zielbeziehung zwischen dem externen Kontaktkraftvektor ($F_{ext}$) und der resultierenden kinematischen Verschiebung ($x - x_0$), anstatt absolute Koordinaten vorzuschreiben:"
+      "text": "Die mechanische Synthese der menschlichen Fortbewegung stellt eine der gewaltigsten Grenzen in der Steuerungstheorie und dem physikalischen Rechnen dar. Im Gegensatz zu autonomen Rovern mit Rädern, die von einem statischen Mehrpunktgleichgewicht profitieren, operieren zweibeinige humanoide Roboter in einer kontinuierlichen Zustandsrauminstabilität. Um durch unstrukturiertes terrestrisches Gelände – Kies, Treppen und rutschige Oberflächen – zu navigieren, kann sich eine humanoide Plattform nicht auf starre Positionsflugbahnen verlassen. Es erfordert eine aktive Impedanzkontrolle, die die mechanische Nachgiebigkeit in Millisekundenintervallen moduliert."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Target Mechanical Impedance:\nF_ext = M_d · (ẍ - ẍ_0) + D_d · (ẋ - ẋ_0) + K_d · (x - x_0)\n\nJoint Torque Mapping via Manipulator Jacobian:\nτ_cmd = J^T(q) · F_ext + G(q) + C(q, q̇)q̇\n\nWhere:\n- M_d: Desired virtual inertia matrix\n- D_d: Virtual damping matrix\n- K_d: Virtual stiffness matrix\n- J^T(q): Jacobian transpose mapping task space to joint torque space\n- G(q): Gravity compensation vector\n- C(q, q̇): Coriolis and centrifugal force matrix"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1526374870839-e155464bb9b2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Impedance Control in Bipedal Robotics - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Impedance Control in Bipedal Robotics."
+    },
+    {
       "type": "p",
-      "text": "Durch die Abstimmung von $K_d$ und $D_d$ in Echtzeit ahmt der Regelkreis die biologische Muskulatur nach. Während der Schwungphase eines Gangzyklus wird die Steifigkeit maximiert, um Referenztrajektorien mit hoher Genauigkeit zu verfolgen. Genau im Moment des Fersenauftritts wird die Steifigkeit entlang der vertikalen Achse reduziert, was eine nachgiebige Stoßdämpfung ohne teure Hardware-Aufhängung ermöglicht."
+      "text": "Die mechanische Synthese der menschlichen Fortbewegung stellt eine der gewaltigsten Grenzen in der Steuerungstheorie und dem physikalischen Rechnen dar. Im Gegensatz zu autonomen Rovern mit Rädern, die von einem statischen Mehrpunktgleichgewicht profitieren, operieren zweibeinige humanoide Roboter in einer kontinuierlichen Zustandsrauminstabilität. Um durch unstrukturiertes terrestrisches Gelände – Kies, Treppen und rutschige Oberflächen – zu navigieren, kann sich eine humanoide Plattform nicht auf starre Positionsflugbahnen verlassen. Es erfordert eine aktive Impedanzkontrolle, die die mechanische Nachgiebigkeit in Millisekundenintervallen moduliert."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Zero-Moment Point (ZMP) und Capture Point Dynamics"
+      "text": "1. Mathematische Grundlagen: Das virtuelle Feder-Dämpfer-Modell"
     },
     {
       "type": "p",
-      "text": "Das Fortbewegungsgleichgewicht wird durch den Zero-Moment Point (ZMP) bestimmt – die räumliche Koordinate, an der sich die gesamten horizontalen Trägheits- und Gravitationsmomente zu Null summieren. Solange sich der ZMP genau innerhalb des Stützpolygons befindet, das durch die Fußkontaktfläche des Roboters definiert wird, kann die Maschine nicht kippen."
+      "text": "Die mechanische Synthese der menschlichen Fortbewegung stellt eine der gewaltigsten Grenzen in der Steuerungstheorie und dem physikalischen Rechnen dar. Im Gegensatz zu autonomen Rovern mit Rädern, die von einem statischen Mehrpunktgleichgewicht profitieren, operieren zweibeinige humanoide Roboter in einer kontinuierlichen Zustandsrauminstabilität. Um durch unstrukturiertes terrestrisches Gelände – Kies, Treppen und rutschige Oberflächen – zu navigieren, kann sich eine humanoide Plattform nicht auf starre Positionsflugbahnen verlassen. Es erfordert eine aktive Impedanzkontrolle, die die mechanische Nachgiebigkeit in Millisekundenintervallen moduliert."
     },
     {
       "type": "ul",
       "items": [
-        "Stützpolygongrenze: In der Einzelstützphase schrumpft die Stabilitätsgrenze auf die Sohle eines Schuhs, was eine Schwerpunkttelemetrie im Submillisekundenbereich erfordert.",
-        "Vorhersage des Fangpunkts: Wenn externe Impulse den ZMP über die Fußgrenze hinaus schieben, berechnet der Ganzkörper-Controller den momentanen Fangpunkt – die genauen physischen Koordinaten, an denen das Schwungbein landen muss, um die Fallgeschwindigkeit aufzuhalten.",
-        "Model Predictive Control (MPC): Receding-Horizon-Löser prognostizieren Bodenreaktionskräfte über ein 1,5-Sekunden-Flugbahnfenster und lösen quadratische Optimierungsprobleme bei 500 Hz."
+        "Support Polygon Boundary: In single-support phase, the stability boundary shrinks to the sole of one shoe, demanding sub-millisecond center-of-mass telemetry.",
+        "Capture Point Prediction: If external impulses push the ZMP outside the foot boundary, the whole-body controller calculates the instantaneous Capture Point—the precise physical coordinates where the swing leg must land to arrest falling velocity.",
+        "Model Predictive Control (MPC): Receding-horizon solvers forecast ground reaction forces across a 1.5-second trajectory window, solving quadratic optimization problems at 500 Hz."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video-Meisterklasse: Hochdynamische Fortbewegung in bipedalen Systemen"
+      "text": "1. Mathematische Grundlagen: Das virtuelle Feder-Dämpfer-Modell"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/tF4DML7FIWk",
-      "title": "Dynamische Ganzkörperimpedanz und bipedale Fortbewegung",
-      "caption": "Demonstration der prädiktiven Hochfrequenzmodellsteuerung, der Wiederherstellung des dynamischen Gleichgewichts und der Hindernisüberwindung in Echtzeit auf humanoiden Plattformen."
+      "title": "Whole-Body Dynamic Impedance and Bipedal Locomotion",
+      "caption": "Demonstration of high-frequency model predictive control, dynamic balance recovery, and real-time obstacle traversal in humanoid platforms."
     },
     {
       "type": "h2",
-      "text": "4. Aktuatorarchitekturen: Quasi-Direktantrieb vs. Spannungswellengetriebe"
+      "text": "1. Mathematische Grundlagen: Das virtuelle Feder-Dämpfer-Modell"
     },
     {
       "type": "p",
-      "text": "Die moderne Robotik hat einen entscheidenden architektonischen Wandel weg von Spannungswellengetrieben mit hohem Übersetzungsverhältnis hin zu Aktuatoren mit Quasi-Direktantrieb (QDD) erlebt. Hohe Übersetzungsverhältnisse (100:1) führen zu extremer reflektierter Trägheit ($I_{reflected} \\propto N^2$) und Rückfahrreibung, was die mechanische Transparenz beeinträchtigt und die Genauigkeit der Krafterfassung zerstört."
+      "text": "Die mechanische Synthese der menschlichen Fortbewegung stellt eine der gewaltigsten Grenzen in der Steuerungstheorie und dem physikalischen Rechnen dar. Im Gegensatz zu autonomen Rovern mit Rädern, die von einem statischen Mehrpunktgleichgewicht profitieren, operieren zweibeinige humanoide Roboter in einer kontinuierlichen Zustandsrauminstabilität. Um durch unstrukturiertes terrestrisches Gelände – Kies, Treppen und rutschige Oberflächen – zu navigieren, kann sich eine humanoide Plattform nicht auf starre Positionsflugbahnen verlassen. Es erfordert eine aktive Impedanzkontrolle, die die mechanische Nachgiebigkeit in Millisekundenintervallen moduliert."
     },
     {
       "type": "p",
-      "text": "QDD-Aktuatoren nutzen niedrige Übersetzungsverhältnisse (unter 10:1) gepaart mit bürstenlosen Außenläufermotoren mit großem Durchmesser und hohem Drehmoment. Dies sorgt für eine extrem niedrige mechanische Impedanz, sodass Messungen des Motorphasenstroms als genaue Stellvertreter für das Gelenkkontaktdrehmoment dienen können, ohne dass empfindliche sechsachsige Kraftmesszellen in den Knöcheln vorhanden sind."
+      "text": "Die mechanische Synthese der menschlichen Fortbewegung stellt eine der gewaltigsten Grenzen in der Steuerungstheorie und dem physikalischen Rechnen dar. Im Gegensatz zu autonomen Rovern mit Rädern, die von einem statischen Mehrpunktgleichgewicht profitieren, operieren zweibeinige humanoide Roboter in einer kontinuierlichen Zustandsrauminstabilität. Um durch unstrukturiertes terrestrisches Gelände – Kies, Treppen und rutschige Oberflächen – zu navigieren, kann sich eine humanoide Plattform nicht auf starre Positionsflugbahnen verlassen. Es erfordert eine aktive Impedanzkontrolle, die die mechanische Nachgiebigkeit in Millisekundenintervallen moduliert."
     },
     {
       "type": "h2",
-      "text": "5. Erkenntnisse aus der Systemtechnik"
+      "text": "1. Mathematische Grundlagen: Das virtuelle Feder-Dämpfer-Modell"
     },
     {
       "type": "ul",
       "items": [
-        "Priorität der Backdrivability: Priorisieren Sie Aktoren mit geringer reflektierter Trägheit und keinem Rastmoment, um eine transparente Kraftreflexion in der Regelung sicherzustellen.",
-        "Hierarchische Steuerstapel: Getrennte langsame Flugbahnoptimierung (50–100 Hz MPC) von Hochgeschwindigkeits-Gelenkimpedanz-Compliance-Schleifen (1-kHz-Drehmomentservos).",
-        "Sensorische Redundanz: Kombinieren Sie hochfrequente IMU-Winkelbeschleunigungstelemetrie mit optischen Encoder-Arrays, um Vibrationsartefakte zu filtern, die durch strukturelle Resonanz verursacht werden."
+        "Backdrivability Priority: Prioritize actuators with low reflected inertia and zero cogging torque to ensure transparent force reflection in closed-loop control.",
+        "Hierarchical Control Stacks: Separate slow-rate trajectory optimization (50-100 Hz MPC) from high-speed joint impedance compliance loops (1 kHz torque servos).",
+        "Sensory Redundancy: Fuse high-rate IMU angular acceleration telemetry with optical encoder arrays to filter vibration artifacts caused by structural resonance."
       ]
     }
   ],
-  "sourceHash": "943137c927c4e31685bbce80894af700866feef1"
+  "sourceHash": "8ef2fffb704852f863759199db294f5ec1b008e6"
 }

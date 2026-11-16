@@ -13,7 +13,7 @@
     "astrophysics",
     "optics"
   ],
-  "image": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1516339901601-2e15629c1800?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Deep space cosmic nebula representing gravitational wave ripples across spacetime curvature",
   "body": [
     {
@@ -29,12 +29,24 @@
       "text": "1. Optical Architecture: Fabry-Pérot Cavities & Power Recycling"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518331647614-7a1f04cd34cf?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Gravitational Wave Interferometry - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Gravitational Wave Interferometry."
+    },
+    {
       "type": "p",
       "text": "LIGO operates dual perpendicular four-kilometer vacuum arms located in Hanford, Washington, and Livingston, Louisiana. At the intersection sits a high-purity Nd:YAG laser (operating at 1064 nm wavelength) split into two orthogonal beams by a 50:50 beamsplitter."
     },
     {
       "type": "p",
       "text": "If a simple Michelson interferometer were deployed, a four-kilometer baseline would be insufficient to accumulate detectable phase shifts. To solve this, LIGO introduces Fabry-Pérot optical resonant cavities inside both arms, bouncing photons approximately 300 times before allowing interference at the photodetector. This increases the effective optical path length from 4 kilometers to over 1,100 kilometers:"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Gravitational Wave Interferometry - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Gravitational Wave Interferometry."
     },
     {
       "type": "code",

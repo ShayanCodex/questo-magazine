@@ -11,8 +11,8 @@
     "culinary-science",
     "gastronomy"
   ],
-  "image": "/images/articles/maillard-reaction-culinary.jpg",
-  "imageAlt": "Plateaux traditionnels de fermentation en bois de cèdre moributa cultivant des moisissures filamenteuses de koji",
+  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Steamed barley grains blossoming with Aspergillus oryzae koji mold mycelium for traditional fermentation",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "La moisissure filamenteuse qui a construit la gastronomie d'Asie de l'Est"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cedar koji incubation trays (moributa) arranged in a humid fermentation chamber",
+      "caption": "Solid-state koji culture: controlling temperature and humidity as fungal mycelium produces protease and amylase enzymes."
     },
     {
       "type": "ul",
       "items": [
-        "Cascade de sécrétion d'enzymes : À mesure que les hyphes pénètrent dans l'endosperme du grain, la moisissure excrète des enzymes extracellulaires qui brisent les macromolécules denses en substrats biodisponibles.",
-        "Clivage du peptide Umami : Les protéases acides et neutres clivent les chaînes polypeptidiques complexes en acide glutamique libre et en aspartate, produisant la sensation savoureuse de l'umami.",
-        "Cinétique de la protéolyse : un contrôle minutieux de l'humidité, de la température d'incubation (30°C à 36°C) et de l'humidité dicte le rapport entre l'activité protéolytique et saccharolytique.",
-        "Sensation synergique : le glutamate libre agit de concert biochimique avec les 5′-ribonucléotides (inosinate et guanylate) pour multiplier jusqu'à huit fois l'excitation des récepteurs sensoriels."
+        "Enzyme Secretion Cascade: As hyphae penetrate the grain endosperm, the mold excretes extracellular enzymes that break dense macromolecules into bioavailable substrates.",
+        "Umami Peptide Cleavage: Acid and neutral proteases cleave complex polypeptide chains into free glutamic acid and aspartate, producing the savory sensation of umami.",
+        "Proteolysis Kinetics: Careful control of moisture, incubation temperature (30°C to 36°C), and humidity dictates the ratio of proteolytic to saccharolytic activity.",
+        "Synergistic Sensation: Free glutamate acts in biochemical concert with 5′-ribonucleotides (inosinate and guanylate) to multiply sensory receptor excitation by up to eightfold."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Elena Vance, Monographies en biochimie gastronomique"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Fermented aged miso paste in wooden vat exhibiting deep savory umami peptide concentration",
+      "caption": "Proteolysis and umami: Aspergillus enzymes cleaving soy and grain proteins into savory glutamic acid and flavor peptides."
+    },
+    {
       "type": "h2",
-      "text": "Applications culinaires modernes dans la gastronomie lente"
+      "text": "La moisissure filamenteuse qui a construit la gastronomie d'Asie de l'Est"
     },
     {
       "type": "p",
-      "text": "Les laboratoires culinaires d'avant-garde ont étendu les inoculations de koji au-delà du soja et du riz traditionnels aux céréales, légumineuses et noix fourragères du patrimoine ancien. En récoltant la puissance enzymatique du koji, les chefs accélèrent le vieillissement à sec des protéines et cultivent des profils aromatiques complexes de caramel, de champignon et de fleurs sans additifs synthétiques."
+      "text": "Au cœur de la fermentation traditionnelle se trouve Aspergillus oryzae, un ancien champignon filamenteux domestiqué il y a des millénaires. En culture à l'état solide sur des grains d'orge ou de riz cuits à la vapeur, cet organisme bénin transforme les amidons inertes et les protéines structurelles en un trésor biochimique d'enzymes actives : alpha-amylase, glucoamylase, protéases acides et neutres et peptidases."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "Masterclass en fermentation et gastronomie microbienne",
-      "caption": "Exploration scientifique détaillée des cultures microbiennes, de l'activité des levures et de la chimie de l'artisanat culinaire."
+      "title": "Masterclass in Fermentation and Microbial Gastronomy",
+      "caption": "Detailed scientific exploration of microbial cultures, yeast activity, and the chemistry of artisan culinary craft.",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU"
     },
     {
       "type": "h2",
-      "text": "L'héritage vivant de la fermentation à l'état solide"
+      "text": "La moisissure filamenteuse qui a construit la gastronomie d'Asie de l'Est"
     },
     {
       "type": "p",
-      "text": "Dans une ère industrielle dominée par l'homogénéisation ultra-transformée, la fermentation du koji se présente comme un hommage durable à l'artisanat lent microbien : une pratique artisanale où convergent patience, biologie et art culinaire."
+      "text": "Au cœur de la fermentation traditionnelle se trouve Aspergillus oryzae, un ancien champignon filamenteux domestiqué il y a des millénaires. En culture à l'état solide sur des grains d'orge ou de riz cuits à la vapeur, cet organisme bénin transforme les amidons inertes et les protéines structurelles en un trésor biochimique d'enzymes actives : alpha-amylase, glucoamylase, protéases acides et neutres et peptidases."
     }
   ],
-  "sourceHash": "17e4c3b655c5dbd2e9ccdb93af021d4d367270b5"
+  "sourceHash": "a0d8557bd30ce468df1ae99fc8bc25ae5b5e36b3"
 }

@@ -5,7 +5,7 @@
   "date": "2026-11-14",
   "updated": "2026-11-15",
   "author": "Saskia Lindqvist",
-  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Stark black and white geometric architecture representing brutalist digital aesthetics",
   "tags": [
     "design",
@@ -30,12 +30,24 @@
       "text": "The Ethics of Architectural Honesty on the Web"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Renaissance of Brutalist Web Design - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Renaissance of Brutalist Web Design."
+    },
+    {
       "type": "p",
       "text": "In physical brutalist architecture, formwork lines and tie-holes are left intentionally visible to expose how the building was poured. In digital brutalism, the underlying mechanics of web markup—links, borders, default monospace letterforms, and system color contrasts—are celebrated rather than concealed under megabytes of CSS blur filters and heavy JavaScript canvas shaders."
     },
     {
       "type": "p",
       "text": "This aesthetic is deeply political. By rejecting the visual language of venture-capital surveillance capitalism, brutalist websites announce that their content is not designed to trick you into a marketing funnel. The text is presented with unyielding clarity: read it, contemplate it, or leave."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Renaissance of Brutalist Web Design - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Renaissance of Brutalist Web Design."
     },
     {
       "type": "quote",

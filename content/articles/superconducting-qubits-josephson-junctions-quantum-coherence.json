@@ -30,6 +30,12 @@
       "text": "1. The Transmon Architecture and Non-Linear Josephson Inductance"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Superconducting Qubits & Coherence - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Superconducting Qubits & Coherence."
+    },
+    {
       "type": "p",
       "text": "A standard LC harmonic oscillator cannot serve as a qubit because its energy levels are equidistant ($\\hbar\\omega$). Any resonant microwave pulse intended to excite the ground state $|0\\rangle$ into $|1\\rangle$ simultaneously drives unwanted transitions into $|2\\rangle$ and higher manifold states. To isolate an addressable two-level quantum system, engineers introduce an anharmonic non-linear inductor: the Josephson Junction."
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "Transmon Hamiltonian Formulation:\nĤ = 4E_C · (n̂ - n_g)² - E_J · cos(φ̂)\n\nAnharmonic Energy Level Separation:\nω_01 = √(8 · E_J · E_C) / ℏ - E_C\nω_12 = ω_01 - E_C\nAnharmonicity α = ω_12 - ω_01 = -E_C\n\nWhere:\n- E_C: Charging energy of the shunt capacitor (e² / 2C)\n- E_J: Josephson tunneling energy (I_c · Φ₀ / 2π)\n- Transmon Regime Condition: E_J / E_C ≫ 50 (typically 50-100)"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Superconducting Qubits & Coherence - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Superconducting Qubits & Coherence."
     },
     {
       "type": "p",

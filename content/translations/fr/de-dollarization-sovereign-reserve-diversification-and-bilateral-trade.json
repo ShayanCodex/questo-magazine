@@ -14,7 +14,7 @@
     "news"
   ],
   "image": "/images/articles/gold-reserves-central-bank.jpg",
-  "imageAlt": "Des rangées de lingots d'or physiques raffinés empilés en toute sécurité dans le coffre-fort souverain moderne de la banque centrale",
+  "imageAlt": "Rows of refined physical gold bullion bars stacked securely inside modern central bank sovereign depository vault",
   "body": [
     {
       "type": "p",
@@ -22,19 +22,31 @@
     },
     {
       "type": "p",
-      "text": "La militarisation des infrastructures financières, notamment le gel unilatéral des avoirs souverains en devises via les réseaux de compensation en 2022, a catalysé une profonde réévaluation du risque de contrepartie parmi les banques centrales non alignées. Ce qui était autrefois traité comme un calcul purement économique de liquidité et de rendement s’est transformé en une doctrine stratégique de sécurité des actifs souverains et de résistance aux sanctions."
+      "text": "Pendant huit décennies après la conférence de Bretton Woods de 1944, le dollar américain a fonctionné comme le point d'ancrage incontesté du commerce international, des réserves de change souveraines et de la compensation des capitaux transfrontaliers. Le « privilège exorbitant » du dollar – permettant aux États-Unis de financer leurs doubles déficits chroniques grâce à la demande mondiale de dette du Trésor profonde et liquide – est de plus en plus contesté par des changements institutionnels en faveur de la diversification des réserves, de la facturation bilatérale hors dollar et de l’accumulation historique d’or physique par les banques centrales mondiales."
     },
     {
       "type": "h2",
       "text": "1. La composition changeante des réserves des banques centrales mondiales"
     },
     {
-      "type": "p",
-      "text": "Les données compilées par la composition monétaire des réserves officielles de change (COFER) du Fonds monétaire international mettent en évidence une trajectoire structurelle sur plusieurs décennies : alors que le dollar américain représentait plus de 71 % des réserves mondiales allouées en 1999, sa part a régulièrement diminué en dessous de 58 % aujourd'hui. Cette réduction n’a pas donné naissance à un seul hégémon rival comme l’euro ; les réserves se sont plutôt réparties entre des monnaies de réserve non traditionnelles, notamment le dollar australien, le dollar canadien, le franc suisse et le renminbi chinois."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The De-Dollarization Architecture - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The De-Dollarization Architecture."
     },
     {
       "type": "p",
-      "text": "Parallèlement, les achats nets d'or des banques centrales ont battu des records historiques, dépassant les 1 000 tonnes par an pendant des années consécutives. L’or représente la réserve souveraine ultime, sans contrepartie et à l’abri des sanctions : un actif qui ne peut pas être dévalué par une expansion monétaire étrangère, gelé dans des comptes bancaires correspondants extraterritoriaux, ou saisi par la révocation du grand livre de compensation."
+      "text": "Pendant huit décennies après la conférence de Bretton Woods de 1944, le dollar américain a fonctionné comme le point d'ancrage incontesté du commerce international, des réserves de change souveraines et de la compensation des capitaux transfrontaliers. Le « privilège exorbitant » du dollar – permettant aux États-Unis de financer leurs doubles déficits chroniques grâce à la demande mondiale de dette du Trésor profonde et liquide – est de plus en plus contesté par des changements institutionnels en faveur de la diversification des réserves, de la facturation bilatérale hors dollar et de l’accumulation historique d’or physique par les banques centrales mondiales."
+    },
+    {
+      "type": "p",
+      "text": "Pendant huit décennies après la conférence de Bretton Woods de 1944, le dollar américain a fonctionné comme le point d'ancrage incontesté du commerce international, des réserves de change souveraines et de la compensation des capitaux transfrontaliers. Le « privilège exorbitant » du dollar – permettant aux États-Unis de financer leurs doubles déficits chroniques grâce à la demande mondiale de dette du Trésor profonde et liquide – est de plus en plus contesté par des changements institutionnels en faveur de la diversification des réserves, de la facturation bilatérale hors dollar et de l’accumulation historique d’or physique par les banques centrales mondiales."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The De-Dollarization Architecture - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The De-Dollarization Architecture."
     },
     {
       "type": "quote",
@@ -43,51 +55,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Règlements commerciaux bilatéraux et corridors transfrontaliers"
+      "text": "1. La composition changeante des réserves des banques centrales mondiales"
     },
     {
       "type": "p",
-      "text": "Au-delà des réserves officielles de la banque centrale, les mécanismes de facturation commerciale quotidienne se fracturent selon des axes régionaux. Les blocs économiques émergents règlent de plus en plus les transactions énergétiques transfrontalières et les flux manufacturiers bilatéraux en monnaies nationales, contournant le réseau de messagerie SWIFT et la compensation en dollars CHIPS de New York."
+      "text": "Pendant huit décennies après la conférence de Bretton Woods de 1944, le dollar américain a fonctionné comme le point d'ancrage incontesté du commerce international, des réserves de change souveraines et de la compensation des capitaux transfrontaliers. Le « privilège exorbitant » du dollar – permettant aux États-Unis de financer leurs doubles déficits chroniques grâce à la demande mondiale de dette du Trésor profonde et liquide – est de plus en plus contesté par des changements institutionnels en faveur de la diversification des réserves, de la facturation bilatérale hors dollar et de l’accumulation historique d’or physique par les banques centrales mondiales."
     },
     {
       "type": "p",
-      "text": "Depuis les transactions sur le pétrole brut réglées en dirhams des Émirats arabes unis et en yuan chinois jusqu'aux accords de règlement en monnaie locale (LCS) intra-asiatiques, les partenaires commerciaux réduisent leur exposition aux coûts de conversion des devises et aux restrictions de liquidité en dollars. Les banques centrales formalisent ces liens via le projet mBridge, une plate-forme de monnaie numérique multi-banques centrales connectant les banques commerciales directement à travers des registres distribués pour un règlement atomique PvP (paiement contre paiement)."
+      "text": "Pendant huit décennies après la conférence de Bretton Woods de 1944, le dollar américain a fonctionné comme le point d'ancrage incontesté du commerce international, des réserves de change souveraines et de la compensation des capitaux transfrontaliers. Le « privilège exorbitant » du dollar – permettant aux États-Unis de financer leurs doubles déficits chroniques grâce à la demande mondiale de dette du Trésor profonde et liquide – est de plus en plus contesté par des changements institutionnels en faveur de la diversification des réserves, de la facturation bilatérale hors dollar et de l’accumulation historique d’or physique par les banques centrales mondiales."
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : réalités de la dédollarisation et rhétorique"
+      "text": "1. La composition changeante des réserves des banques centrales mondiales"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "Le dollar américain perd-il vraiment sa domination ? La réalité de la dédollarisation",
-      "caption": "Une exploration analytique de la liquidité mondiale des capitaux, de la profondeur du marché du Trésor, des transitions pétrodollars et des limites réalistes d'un système monétaire multipolaire."
+      "title": "Is the US Dollar Really Losing Its Dominance? The Reality of De-Dollarization",
+      "caption": "An analytical exploration of global capital liquidity, Treasury market depth, petrodollar transitions, and the realistic bounds of a multipolar currency system.",
+      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0"
     },
     {
       "type": "h2",
-      "text": "4. Obstacles structurels à un remplacement en dollars uniques"
+      "text": "1. La composition changeante des réserves des banques centrales mondiales"
     },
     {
       "type": "p",
-      "text": "Malgré des obstacles structurels, les prévisions d’un effondrement imminent de l’hégémonie du dollar sous-estiment les profonds effets de réseau qui sous-tendent la liquidité mondiale du dollar. Le marché du Trésor américain reste le seul marché de la dette souveraine capable d’absorber des milliers de milliards de dollars d’excédents du commerce extérieur sans souffrir de pénuries soudaines de liquidités ou de contrôles des capitaux."
+      "text": "Pendant huit décennies après la conférence de Bretton Woods de 1944, le dollar américain a fonctionné comme le point d'ancrage incontesté du commerce international, des réserves de change souveraines et de la compensation des capitaux transfrontaliers. Le « privilège exorbitant » du dollar – permettant aux États-Unis de financer leurs doubles déficits chroniques grâce à la demande mondiale de dette du Trésor profonde et liquide – est de plus en plus contesté par des changements institutionnels en faveur de la diversification des réserves, de la facturation bilatérale hors dollar et de l’accumulation historique d’or physique par les banques centrales mondiales."
     },
     {
       "type": "p",
-      "text": "Une véritable monnaie de réserve mondiale nécessite trois fondements institutionnels interdépendants : un compte de capital ouvert, des marchés obligataires secondaires profonds et transparents et un État de droit applicable avec des droits de propriété prévisibles. Jusqu’à ce que d’autres blocs économiques soient disposés à enregistrer des déficits courants perpétuels et à démanteler les restrictions transfrontalières en matière de capitaux, le dollar conservera son rôle de moyen d’échange dominant, même si sa part dans les soldes de réserves souveraines poursuit son déclin relatif progressif."
+      "text": "Pendant huit décennies après la conférence de Bretton Woods de 1944, le dollar américain a fonctionné comme le point d'ancrage incontesté du commerce international, des réserves de change souveraines et de la compensation des capitaux transfrontaliers. Le « privilège exorbitant » du dollar – permettant aux États-Unis de financer leurs doubles déficits chroniques grâce à la demande mondiale de dette du Trésor profonde et liquide – est de plus en plus contesté par des changements institutionnels en faveur de la diversification des réserves, de la facturation bilatérale hors dollar et de l’accumulation historique d’or physique par les banques centrales mondiales."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir sur le plan macroéconomique : l'ordre monétaire multipolaire"
+      "text": "1. La composition changeante des réserves des banques centrales mondiales"
     },
     {
       "type": "ul",
       "items": [
-        "Réallocation des réserves : les trésors souverains se rééquilibrent en or physique, en paniers de matières premières et en réserves multidevises pour atténuer les risques juridictionnels unilatéraux.",
-        "Corridors monétaires régionaux : les mécanismes commerciaux bilatéraux (tels que mBridge et les pactes monétaires locaux) dissocient le commerce régional de la compensation traditionnelle en dollars correspondants.",
-        "Persistance de la liquidité : La taille, la prévisibilité juridique et la liquidité du marché secondaire des bons du Trésor américain garantissent que le dollar reste le premier actif de liquidité mondial.",
-        "Fragmentation monétaire : L’économie mondiale entre dans une ère de régionalisme monétaire fracturé plutôt que de simple remplacement d’un hégémon de réserve par un autre."
+        "Reserve Reallocation: Sovereign treasuries are rebalancing into physical gold, commodity baskets, and multi-currency reserves to mitigate unilateral jurisdictional risks.",
+        "Regional Currency Corridors: Bilateral trade mechanisms (such as mBridge and local currency pacts) decouple regional commerce from traditional correspondent dollar clearing.",
+        "Liquidity Persistence: The sheer size, legal predictability, and secondary market liquidity of US Treasuries ensure the dollar remains the premier global liquidity asset.",
+        "Monetary Fragmentation: The global economy is entering an era of fractured monetary regionalism rather than a simple replacement of one reserve hegemon by another."
       ]
     }
   ],
-  "sourceHash": "14a117b1a35d1f1584ccc053ed11696b806af7ec"
+  "sourceHash": "d3702ce554b41ef4257e1aa926108921769c7584"
 }

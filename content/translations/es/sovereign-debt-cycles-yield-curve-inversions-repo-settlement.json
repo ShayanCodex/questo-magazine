@@ -11,8 +11,8 @@
     "forex",
     "markets"
   ],
-  "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Pantallas de negociación institucional que muestran los rendimientos globales de la renta fija y los diferenciales de liquidez",
+  "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Institutional trading screens displaying global fixed-income yields and liquidity spreads",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "Según la hipótesis de las expectativas de la estructura temporal, los rendimientos nominales de los bonos a largo plazo reflejan el promedio geométrico de las tasas de interés futuras esperadas a corto plazo más una prima por plazo: la compensación exigida por los participantes del mercado por asumir el riesgo de duración durante horizontes prolongados. Cuando un banco central se embarca en un ajuste monetario agresivo para suprimir la inflación impulsada por la demanda, las tasas oficiales de corto plazo aumentan rápidamente."
+      "text": "La arquitectura monetaria internacional está anclada en el mercado global de bonos soberanos y funciona no simplemente como un mecanismo para el financiamiento del déficit público, sino como la garantía prístina fundamental que sustenta el moderno sistema de repo (acuerdos de recompra). Cuando las curvas de rendimiento soberanos se invierten (donde los rendimientos de corto plazo, sensibles a las políticas, superan los de mayor duración), los observadores financieros anticipan instintivamente una recesión cíclica. Sin embargo, el mecanismo de transmisión estructural que vincula las curvas invertidas con la contracción económica sistémica se rige por la mecánica esotérica de la velocidad de las garantías, los márgenes de interés neto de los bancos y los corredores transfronterizos de financiación en dólares."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sovereign Debt Cycles & Repo Markets - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Sovereign Debt Cycles & Repo Markets."
     },
     {
       "type": "p",
-      "text": "Si los mercados de renta fija proyectan que una política monetaria restrictiva inducirá una compresión de la demanda agregada, los rendimientos nominales a mediano y largo plazo se comprimen a medida que dominan las expectativas de futuros recortes de tasas. Al mismo tiempo, la prima por plazo se contrae o se vuelve negativa, lo que produce la característica inversión de pendiente entre el índice de referencia del Tesoro a 2 y 10 años (spread de 2s10s)."
+      "text": "La arquitectura monetaria internacional está anclada en el mercado global de bonos soberanos y funciona no simplemente como un mecanismo para el financiamiento del déficit público, sino como la garantía prístina fundamental que sustenta el moderno sistema de repo (acuerdos de recompra). Cuando las curvas de rendimiento soberanos se invierten (donde los rendimientos de corto plazo, sensibles a las políticas, superan los de mayor duración), los observadores financieros anticipan instintivamente una recesión cíclica. Sin embargo, el mecanismo de transmisión estructural que vincula las curvas invertidas con la contracción económica sistémica se rige por la mecánica esotérica de la velocidad de las garantías, los márgenes de interés neto de los bancos y los corredores transfronterizos de financiación en dólares."
     },
     {
       "type": "quote",
@@ -36,59 +42,65 @@
       "cite": "Claire Dupont, macroestratega global"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1538356111053-748a48e1acb8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sovereign Debt Cycles & Repo Markets - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Sovereign Debt Cycles & Repo Markets."
+    },
+    {
       "type": "h2",
-      "text": "2. El mercado de repos como sistema nervioso de la financiación global en dólares"
+      "text": "1. Anatomía de la curva de rendimiento: primas a plazo versus expectativas de tasas"
     },
     {
       "type": "p",
-      "text": "El apalancamiento financiero moderno opera en la esfera bancaria en la sombra a través del mercado de acuerdos de recompra (repo) bilaterales y tripartitos. En una transacción de repo estándar, una institución que busca efectivo (fondo de cobertura, intermediario primario o entidad soberana extranjera) promete activos líquidos de alta calidad (HQLA), predominantemente letras, pagarés o bonos del Tesoro de EE. UU., a un prestamista de efectivo (fondo del mercado monetario o tesorería corporativa) contra una tasa de financiamiento a un día acordada, puntos de referencia como SOFR (tasa de financiamiento a un día asegurada)."
+      "text": "La arquitectura monetaria internacional está anclada en el mercado global de bonos soberanos y funciona no simplemente como un mecanismo para el financiamiento del déficit público, sino como la garantía prístina fundamental que sustenta el moderno sistema de repo (acuerdos de recompra). Cuando las curvas de rendimiento soberanos se invierten (donde los rendimientos de corto plazo, sensibles a las políticas, superan los de mayor duración), los observadores financieros anticipan instintivamente una recesión cíclica. Sin embargo, el mecanismo de transmisión estructural que vincula las curvas invertidas con la contracción económica sistémica se rige por la mecánica esotérica de la velocidad de las garantías, los márgenes de interés neto de los bancos y los corredores transfronterizos de financiación en dólares."
     },
     {
       "type": "ul",
       "items": [
-        "Velocidad de la garantía: un único bono soberano puede rehipotecarse entre múltiples contrapartes financieras para liquidar contratos de derivados competitivos.",
-        "Mecánica de los recortes: en episodios de elevada volatilidad del mercado, las cámaras de compensación primarias aplican recortes de garantía más pronunciados, lo que requiere recargas repentinas de efectivo.",
-        "Diferenciales de swaps de divisas: Las instituciones extraterritoriales que financian activos en dólares sin acceso directo a las ventanillas de descuento de la Reserva Federal deben ejecutar swaps de divisas, lo que introduce graves riesgos de base entre divisas."
+        "Collateral Velocity: A single sovereign bond can be rehypothecated across multiple financial counterparties to settle competing derivatives contracts.",
+        "Haircut Mechanics: Under bouts of elevated market volatility, primary clearinghouses enforce steeper collateral haircuts, necessitating sudden cash top-ups.",
+        "Foreign Exchange Swap Spreads: Offshore institutions that finance dollar assets without direct access to Federal Reserve discount windows must execute FX swaps, introducing severe cross-currency basis risks."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Análisis documental: fontanería de la banca central y corredores de liquidez"
+      "text": "1. Anatomía de la curva de rendimiento: primas a plazo versus expectativas de tasas"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "Cómo funcionan las máquinas económicas y los ciclos de la deuda soberana",
-      "caption": "Disección documental autorizada de las congelaciones del mercado de repos, las facilidades de repo permanentes y los mecanismos de respaldo de liquidez del banco central."
+      "title": "How Economic Machines Work and Sovereign Debt Cycles",
+      "caption": "Authoritative documentary dissection of repo market freezes, standing repo facilities, and central bank liquidity backstops."
     },
     {
       "type": "h2",
-      "text": "4. La emisión de deuda soberana y la paradoja del desplazamiento"
+      "text": "1. Anatomía de la curva de rendimiento: primas a plazo versus expectativas de tasas"
     },
     {
       "type": "p",
-      "text": "Cuando las naciones soberanas desarrolladas tienen déficits fiscales sostenidos que exceden el 6% del producto interno bruto durante las expansiones económicas en tiempos de paz, los departamentos del tesoro soberano deben emitir billones en nueva deuda con cupones y letras a corto plazo. En ausencia de una flexibilización cuantitativa (monetización) del banco central, los balances de los operadores primarios se saturan de títulos soberanos."
+      "text": "La arquitectura monetaria internacional está anclada en el mercado global de bonos soberanos y funciona no simplemente como un mecanismo para el financiamiento del déficit público, sino como la garantía prístina fundamental que sustenta el moderno sistema de repo (acuerdos de recompra). Cuando las curvas de rendimiento soberanos se invierten (donde los rendimientos de corto plazo, sensibles a las políticas, superan los de mayor duración), los observadores financieros anticipan instintivamente una recesión cíclica. Sin embargo, el mecanismo de transmisión estructural que vincula las curvas invertidas con la contracción económica sistémica se rige por la mecánica esotérica de la velocidad de las garantías, los márgenes de interés neto de los bancos y los corredores transfronterizos de financiación en dólares."
     },
     {
       "type": "p",
-      "text": "Esta saturación absorbe capital financiero privado, elevando las tasas de financiación a un día y ampliando el diferencial entre los rendimientos gubernamentales y las tasas de préstamos privados. La fricción estructural resultante perjudica la creación de crédito en los canales comerciales, industriales y de consumo, estableciendo la transmisión en el mundo real de la abundancia de deuda soberana a la desaceleración del sector privado."
+      "text": "La arquitectura monetaria internacional está anclada en el mercado global de bonos soberanos y funciona no simplemente como un mecanismo para el financiamiento del déficit público, sino como la garantía prístina fundamental que sustenta el moderno sistema de repo (acuerdos de recompra). Cuando las curvas de rendimiento soberanos se invierten (donde los rendimientos de corto plazo, sensibles a las políticas, superan los de mayor duración), los observadores financieros anticipan instintivamente una recesión cíclica. Sin embargo, el mecanismo de transmisión estructural que vincula las curvas invertidas con la contracción económica sistémica se rige por la mecánica esotérica de la velocidad de las garantías, los márgenes de interés neto de los bancos y los corredores transfronterizos de financiación en dólares."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones macroeconómicas y marco analítico"
+      "text": "1. Anatomía de la curva de rendimiento: primas a plazo versus expectativas de tasas"
     },
     {
       "type": "ul",
       "items": [
-        "Disciplina de riesgo de duración: Las pendientes de la curva de rendimiento rigen directamente la rentabilidad bancaria y la capacidad del balance mayorista.",
-        "Superioridad de la garantía: En eventos de estrés soberano, los participantes del mercado no exigen efectivo; atesoran garantías del Tesoro no gravadas.",
-        "Contagio transfronterizo: La escasez de dólares en el extranjero en Tokio, Londres o Frankfurt se transmite instantáneamente a la volatilidad de los bonos internos a través de canales de swaps de divisas."
+        "Duration Risk Discipline: Yield curve slopes directly govern bank profitability and wholesale balance-sheet capacity.",
+        "Collateral Superiority: In sovereign stress events, market participants do not demand cash; they hoard unencumbered Treasury collateral.",
+        "Cross-Border Contagion: Offshore dollar shortages in Tokyo, London, or Frankfurt transmit instantaneously into domestic bond volatility via FX swap pipelines."
       ]
     },
     {
       "type": "p",
-      "text": "Divulgación financiera: este análisis macroeconómico es estrictamente para fines educativos y de investigación institucional. No constituye asesoramiento de inversión, recomendaciones comerciales ni solicitud de transacciones de valores."
+      "text": "La arquitectura monetaria internacional está anclada en el mercado global de bonos soberanos y funciona no simplemente como un mecanismo para el financiamiento del déficit público, sino como la garantía prístina fundamental que sustenta el moderno sistema de repo (acuerdos de recompra). Cuando las curvas de rendimiento soberanos se invierten (donde los rendimientos de corto plazo, sensibles a las políticas, superan los de mayor duración), los observadores financieros anticipan instintivamente una recesión cíclica. Sin embargo, el mecanismo de transmisión estructural que vincula las curvas invertidas con la contracción económica sistémica se rige por la mecánica esotérica de la velocidad de las garantías, los márgenes de interés neto de los bancos y los corredores transfronterizos de financiación en dólares."
     }
   ],
-  "sourceHash": "770288a07f4aaf75fa283eb136a0f7d2b9e766ae"
+  "sourceHash": "80f2615339214e266530aa24e6eb7a3e0638b834"
 }

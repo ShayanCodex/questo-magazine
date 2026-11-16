@@ -13,7 +13,7 @@
     "optics"
   ],
   "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "Laboratorio de investigación de física cuántica ultralimpio con aparato de refrigeración por dilución criogénica",
+  "imageAlt": "Ultra-clean quantum physics research laboratory with cryogenic dilution refrigeration apparatus",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "A diferencia de los iones naturales atrapados o los átomos neutros, los qubits superconductores son circuitos electrónicos macroscópicos fabricados a partir de películas delgadas de aluminio puro o niobio. Cuando se enfría por debajo de sus temperaturas críticas de transición superconductora ($T_c \\aproximadamente 1,2$ K), la resistencia eléctrica desaparece por completo, lo que permite que miles de millones de electrones emparejados (pares de Cooper) se condensen en una única función de onda cuántica macroscópica."
+      "text": "La ventaja computacional cuántica representa la promesa teórica de resolver problemas matemáticamente intratables (simulación molecular, criptoanálisis poscuántico y optimización compleja) que requerirían millones de años en las supercomputadoras CMOS clásicas. Entre las implementaciones físicas en competencia, los circuitos superconductores son la modalidad líder, que escalan átomos artificiales en microchips planos de silicio y zafiro utilizando litografía semiconductora estándar."
     },
     {
       "type": "h2",
       "text": "1. La arquitectura Transmon y la inductancia Josephson no lineal"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Superconducting Qubits & Coherence - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Superconducting Qubits & Coherence."
+    },
+    {
       "type": "p",
-      "text": "Un oscilador armónico LC estándar no puede servir como qubit porque sus niveles de energía son equidistantes ($\\hbar\\omega$). Cualquier pulso de microondas resonante destinado a excitar el estado fundamental $|0\\rangle$ en $|1\\rangle$ genera simultáneamente transiciones no deseadas a $|2\\rangle$ y estados múltiples superiores. Para aislar un sistema cuántico de dos niveles direccionable, los ingenieros introducen un inductor anarmónico no lineal: la unión Josephson."
+      "text": "La ventaja computacional cuántica representa la promesa teórica de resolver problemas matemáticamente intratables (simulación molecular, criptoanálisis poscuántico y optimización compleja) que requerirían millones de años en las supercomputadoras CMOS clásicas. Entre las implementaciones físicas en competencia, los circuitos superconductores son la modalidad líder, que escalan átomos artificiales en microchips planos de silicio y zafiro utilizando litografía semiconductora estándar."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Transmon Hamiltonian Formulation:\nĤ = 4E_C · (n̂ - n_g)² - E_J · cos(φ̂)\n\nAnharmonic Energy Level Separation:\nω_01 = √(8 · E_J · E_C) / ℏ - E_C\nω_12 = ω_01 - E_C\nAnharmonicity α = ω_12 - ω_01 = -E_C\n\nWhere:\n- E_C: Charging energy of the shunt capacitor (e² / 2C)\n- E_J: Josephson tunneling energy (I_c · Φ₀ / 2π)\n- Transmon Regime Condition: E_J / E_C ≫ 50 (typically 50-100)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Superconducting Qubits & Coherence - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Superconducting Qubits & Coherence."
+    },
+    {
       "type": "p",
-      "text": "Al agregar un capacitor de derivación de gran tamaño, el transmon opera en el régimen alto $E_J / E_C$, suprimiendo exponencialmente la sensibilidad al ruido de carga en varios órdenes de magnitud mientras preserva suficiente anarmonicidad ($\\alpha \\approx -200$ a $-300$ MHz) para manipular el qubit con pulsos de microondas de nanosegundos."
+      "text": "La ventaja computacional cuántica representa la promesa teórica de resolver problemas matemáticamente intratables (simulación molecular, criptoanálisis poscuántico y optimización compleja) que requerirían millones de años en las supercomputadoras CMOS clásicas. Entre las implementaciones físicas en competencia, los circuitos superconductores son la modalidad líder, que escalan átomos artificiales en microchips planos de silicio y zafiro utilizando litografía semiconductora estándar."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Refrigeración por dilución criogénica: funcionamiento a 15 milikelvin"
+      "text": "1. La arquitectura Transmon y la inductancia Josephson no lineal"
     },
     {
       "type": "p",
-      "text": "Para evitar que los fonones térmicos ambientales ($k_B T$) perturben aleatoriamente el estado del qubit, los procesadores superconductores deben enfriarse a 15 milikelvin (-273,135°C), más frío que el espacio interestelar profundo. Esta hazaña termodinámica se ejecuta mediante refrigeradores de dilución de helio-3/helio-4 de circuito cerrado."
+      "text": "La ventaja computacional cuántica representa la promesa teórica de resolver problemas matemáticamente intratables (simulación molecular, criptoanálisis poscuántico y optimización compleja) que requerirían millones de años en las supercomputadoras CMOS clásicas. Entre las implementaciones físicas en competencia, los circuitos superconductores son la modalidad líder, que escalan átomos artificiales en microchips planos de silicio y zafiro utilizando litografía semiconductora estándar."
     },
     {
       "type": "ul",
       "items": [
-        "Límite de separación de fases: por debajo de 870 mK, las mezclas líquidas de ³He y ⁴He se separan en una fase concentrada y una fase diluida.",
-        "Evaporación cuántica endotérmica: bombeo de átomos de He a través de este límite de fase absorbe calor latente, extrayendo continuamente energía térmica de la etapa de la cámara de mezcla.",
-        "Líneas de atenuación criogénica: Las líneas de control coaxiales de microondas están equipadas con atenuadores de 20 dB y 30 dB en cada etapa térmica para eliminar el ruido térmico del cuerpo negro a temperatura ambiente antes de que llegue al chip."
+        "Phase Separation Boundary: Below 870 mK, liquid ³He and ⁴He mixtures separate into a concentrated phase and a dilute phase.",
+        "Endothermic Quantum Evaporation: Pumping ³He atoms across this phase boundary absorbs latent heat, continuously extracting thermal energy from the mixing chamber stage.",
+        "Cryogenic Attenuation Lines: Microwave coaxial control lines are fitted with 20dB and 30dB attenuators at each thermal stage to strip room-temperature blackbody thermal noise before it reaches the chip."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video Masterclass: Resonancia, Física Acústica y Coherencia Cuántica"
+      "text": "1. La arquitectura Transmon y la inductancia Josephson no lineal"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "Física de Ondas Acústicas, Resonancia y Osciladores Superconductores",
-      "caption": "Conferencia experimental que explora armónicos de resonancia, osciladores de fase no lineales y acoplamiento acústico-electromagnético."
+      "title": "Acoustic Wave Physics, Resonance & Superconducting Oscillators",
+      "caption": "Experimental lecture exploring resonance harmonics, non-linear phase oscillators, and acoustic-electromagnetic coupling."
     },
     {
       "type": "h2",
-      "text": "4. Mecanismos de decoherencia: relajación T1 y desfase T2"
+      "text": "1. La arquitectura Transmon y la inductancia Josephson no lineal"
     },
     {
       "type": "p",
-      "text": "La vida computacional de un qubit está limitada por dos métricas de decoherencia física: tiempo de relajación de energía ($T_1$) y tiempo de coherencia de fase ($T_2$). Las pérdidas dieléctricas en las interfaces sustrato-metal y los defectos parásitos del sistema de dos niveles (TLS) en las capas de óxido amorfo disipan la energía electromagnética almacenada, lo que limita las ventanas de coherencia típicas a 100-300 microsegundos."
+      "text": "La ventaja computacional cuántica representa la promesa teórica de resolver problemas matemáticamente intratables (simulación molecular, criptoanálisis poscuántico y optimización compleja) que requerirían millones de años en las supercomputadoras CMOS clásicas. Entre las implementaciones físicas en competencia, los circuitos superconductores son la modalidad líder, que escalan átomos artificiales en microchips planos de silicio y zafiro utilizando litografía semiconductora estándar."
     },
     {
       "type": "p",
-      "text": "Salvar el abismo entre los ruidosos sistemas cuánticos de escala intermedia (NISQ) y la computación cuántica tolerante a fallas requiere una corrección de errores cuánticos. La topología del código de superficie codifica un qubit lógico protegido a través de docenas de datos físicos y qubits auxiliares dispuestos en una red cuadrada 2D, detectando síndromes de inversión de bits y de fase mediante mediciones repetidas del estabilizador de múltiples qubits."
+      "text": "La ventaja computacional cuántica representa la promesa teórica de resolver problemas matemáticamente intratables (simulación molecular, criptoanálisis poscuántico y optimización compleja) que requerirían millones de años en las supercomputadoras CMOS clásicas. Entre las implementaciones físicas en competencia, los circuitos superconductores son la modalidad líder, que escalan átomos artificiales en microchips planos de silicio y zafiro utilizando litografía semiconductora estándar."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones de la ingeniería cuántica"
+      "text": "1. La arquitectura Transmon y la inductancia Josephson no lineal"
     },
     {
       "type": "ul",
       "items": [
-        "Preparación de la superficie: el pulido químico del sustrato y la excavación de zanjas atómicas debajo de las uniones Josephson reducen la disipación dieléctrica del sistema de dos niveles en más del 50 %.",
-        "Blindaje magnético: Encierre el criostato en recipientes multicapa de metal Mu de alta permeabilidad y de plomo superconductor para rechazar las líneas de flujo magnético terrestre perdidas.",
-        "Amplificación paramétrica: utilice amplificadores paramétricos de onda viajera (TWPA) en la etapa 4K para lograr una amplificación de señal de lectura cuánticamente limitada sin ruido de reacción inversa."
+        "Surface Preparation: Substrate chemical polishing and atomic trenching under Josephson junctions reduce two-level system dielectric dissipation by over 50%.",
+        "Magnetic Shielding: Enclose the cryostat in multilayer high-permeability Mu-metal and superconducting lead canisters to reject stray Earth magnetic flux lines.",
+        "Parametric Amplification: Utilize Traveling Wave Parametric Amplifiers (TWPAs) at the 4K stage to achieve quantum-limited readout signal amplification without backaction noise."
       ]
     }
   ],
-  "sourceHash": "fb1d6fcc5e53acb3c254dc60b5f106c56d83f79a"
+  "sourceHash": "615eef5421f18d7b3090ffa5b42b8a64327fed07"
 }

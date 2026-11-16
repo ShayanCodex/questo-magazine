@@ -11,8 +11,8 @@
     "metabolism",
     "cellular-biology"
   ],
-  "image": "/images/articles/cellular-autophagy-biology.jpg",
-  "imageAlt": "تصوير مجهري فلوري متحد البؤر عالي الدقة للجسيمات الحالة الخلوية ومسارات الالتهام الذاتي",
+  "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Biomedical laboratory pipetting cellular culture samples for NAD+ coenzyme quantification assays",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "أزمة الطاقة الحيوية للشيخوخة الخلوية"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Electron micrograph showing dense inner mitochondrial cristae folding and ATP synthase enzymes",
+      "caption": "Mitochondrial cristae architecture: surface area density directly governing oxidative phosphorylation efficiency."
     },
     {
       "type": "ul",
       "items": [
-        "اختلال الميتوكوندريا: الضغوطات الأيضية العابرة تؤدي إلى التعبير الجيني النووي الذي يعزز دفاعات الميتوكوندريا المضادة للأكسدة والتكوين الحيوي.",
-        "NAD+ معدل التدفق المحدود: انخفاض إنزيم الإنقاذ NAMPT يقلل من توافر الإنزيم المساعد NAD+، مما يضعف عملية نزع أسيتيل السيرتوين وإصلاح PARP DNA.",
-        "توازن الانشطار والاندماج: ينسق ميتوفوسين (MFN1/2) وDrp1 فرز مكونات الميتوكوندريا الوظيفية من الأجزاء التالفة المستهدفة للميتوفاجي.",
-        "اللائحة الرئيسية لـ PGC-1alpha: يحفز التنشيط الناتج عن التمرين لـ PGC-1alpha تكرار الحمض النووي للميتوكوندريا وتوليف الأعراف الكثيفة في الأنسجة العضلية والعصبية."
+        "Mitohormesis: Transient metabolic stressors trigger nuclear gene expression that reinforces mitochondrial antioxidant defenses and biogenesis.",
+        "NAD+ Rate-Limiting Flux: The decline of salvage enzyme NAMPT reduces NAD+ coenzyme availability, impairing sirtuin deacetylation and PARP DNA repair.",
+        "Fission and Fusion Equilibrium: Mitofusin (MFN1/2) and Drp1 coordinate the sorting of functional mitochondrial components from damaged fragments targeted for mitophagy.",
+        "PGC-1alpha Master Regulation: Exercise-induced activation of PGC-1alpha stimulates mitochondrial DNA replication and dense cristae synthesis in muscle and neural tissue."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "د. ماركوس فانس، بروتوكولات الطب الخلوي الوقائي"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular metabolism assay measuring sirtuin enzyme activation and NAD+ salvage pathway flux",
+      "caption": "NAD+ decline: age-related loss of cellular coenzyme pools suppressing sirtuin activation and DNA repair pathways."
+    },
+    {
       "type": "h2",
-      "text": "استعادة مستقلب النيكوتيناميد"
+      "text": "أزمة الطاقة الحيوية للشيخوخة الخلوية"
     },
     {
       "type": "p",
-      "text": "التجديد المستهدف لسلائف NAD+ جنبًا إلى جنب مع تثبيط الإنزيم الخارجي CD38 يعيد نسب الأكسدة الخلوية (NAD+/NADH) إلى مستويات الشباب. يحافظ هذا التجديد الكيميائي الحيوي على الاستقرار الجيني، ويحفز التكاثر الحيوي للميتوكوندريا، ويخفف من التدهور الأيضي المرتبط بالعمر."
+      "text": "عند رابطة الشيخوخة البيولوجية البشرية يكمن اضمحلال الطاقة الحيوية التدريجي: الانخفاض التدريجي في كفاءة نقل إلكترون الميتوكوندريا، وتراكم شظايا العضية التالفة، والإرهاق المنهجي للنيكوتيناميد الأدينين ثنائي النوكليوتيد الخلوي حمامات سباحة (NAD+). وبدلاً من الانزلاق التنكسي الحتمي، يكشف علم الشيخوخة الجزيئي الحديث أن بنية الميتوكوندريا ديناميكية، وتستجيب للمحفزات الأيضية المستهدفة، وقادرة على التجديد العميق."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "طول العمر الخلوي والمؤشرات الحيوية الأيضية",
-      "caption": "مناقشة سريرية توضح بالتفصيل مخاطر القلب والأوعية الدموية، والصحة الأيضية، والبيولوجيا الخلوية لطول عمر الإنسان."
+      "title": "Cellular Longevity and Metabolic Biomarkers",
+      "caption": "Clinical discussion detailing cardiovascular risk, metabolic health, and the cellular biology of human longevity.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "ترجمة المرونة الخلوية إلى طول العمر السريري"
+      "text": "أزمة الطاقة الحيوية للشيخوخة الخلوية"
     },
     {
       "type": "p",
-      "text": "من خلال اقتران تكييف التحمل في المنطقة 2، وعجز الطاقة المتقطع، والعوامل المساعدة الجزيئية المستهدفة، يتحول الطب الوقائي من إدارة الأعراض الملطفة إلى صيانة خلوية استباقية."
+      "text": "عند رابطة الشيخوخة البيولوجية البشرية يكمن اضمحلال الطاقة الحيوية التدريجي: الانخفاض التدريجي في كفاءة نقل إلكترون الميتوكوندريا، وتراكم شظايا العضية التالفة، والإرهاق المنهجي للنيكوتيناميد الأدينين ثنائي النوكليوتيد الخلوي حمامات سباحة (NAD+). وبدلاً من الانزلاق التنكسي الحتمي، يكشف علم الشيخوخة الجزيئي الحديث أن بنية الميتوكوندريا ديناميكية، وتستجيب للمحفزات الأيضية المستهدفة، وقادرة على التجديد العميق."
     }
   ],
-  "sourceHash": "8b5384ed9c857f1dafa99320e22a67b40c7cebe8"
+  "sourceHash": "48db63f07c55a9093e5f6f1094579f21c8e4c7e1"
 }

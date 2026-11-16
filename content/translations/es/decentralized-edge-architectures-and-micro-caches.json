@@ -12,8 +12,8 @@
     "cloud",
     "system-architecture"
   ],
-  "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Mapa de la red satelital global que representa nodos de borde descentralizados y enrutamiento de fibra",
+  "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Global satellite network map depicting decentralized edge nodes and fiber routing",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "Cuando un lector en Tokio o Buenos Aires intenta cargar un artículo alojado en un servidor en el norte de Virginia, los paquetes de luz deben atravesar miles de kilómetros de fibra terrestre, repetidores submarinos y enrutadores de tránsito. Incluso en condiciones ideales, el tiempo físico mínimo de ida y vuelta (RTT) supera los 180 milisegundos. Cuando se combinan la búsqueda de DNS, los protocolos de enlace TLS 1.3 y múltiples viajes de ida y vuelta de TCP, el usuario espera casi un segundo antes de recibir un solo byte de HTML."
+      "text": "Durante las últimas dos décadas, el dogma de la computación en la nube instruyó a los arquitectos de software a centralizar la lógica de las aplicaciones y el estado persistente en instalaciones de datos regionales masivas: us-east-1 en Virginia, eu-west-1 en Dublín o ap-sureste-1 en Singapur. Si bien los centros de datos centralizados simplificaron el bloqueo de bases de datos y los modelos de consistencia ACID, introdujeron una restricción física e inmutable que ninguna optimización de la CPU pudo resolver: la velocidad de la luz en los cables de fibra óptica."
     },
     {
       "type": "h2",
       "text": "La revolución Anycast y los aislamientos Edge V8"
     },
     {
-      "type": "p",
-      "text": "La arquitectura de borde descentralizada disuelve el cuello de botella de origen al trasladar la ejecución computacional directamente al perímetro de la red. Utilizando el enrutamiento Anycast del protocolo Border Gateway (BGP), se anuncia simultáneamente una única dirección IP pública desde más de 300 centros de datos en seis continentes. Cuando un cliente realiza una solicitud HTTP, los enrutadores de tránsito entregan automáticamente los paquetes al nodo perimetral geográficamente más cercano."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Decentralized Edge Architectures - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Decentralized Edge Architectures."
     },
     {
       "type": "p",
-      "text": "En lugar de iniciar pesados ​​tiempos de ejecución de contenedores Node.js o Docker con cientos de megabytes de memoria adicional, las redes perimetrales modernas ejecutan aislados de JavaScript V8 livianos. Un aislado arranca en menos de 5 milisegundos, consume menos de 5 MB de RAM y ejecuta una lógica de enrutamiento puramente funcional inmediatamente después de la llegada del paquete."
+      "text": "Durante las últimas dos décadas, el dogma de la computación en la nube instruyó a los arquitectos de software a centralizar la lógica de las aplicaciones y el estado persistente en instalaciones de datos regionales masivas: us-east-1 en Virginia, eu-west-1 en Dublín o ap-sureste-1 en Singapur. Si bien los centros de datos centralizados simplificaron el bloqueo de bases de datos y los modelos de consistencia ACID, introdujeron una restricción física e inmutable que ninguna optimización de la CPU pudo resolver: la velocidad de la luz en los cables de fibra óptica."
+    },
+    {
+      "type": "p",
+      "text": "Durante las últimas dos décadas, el dogma de la computación en la nube instruyó a los arquitectos de software a centralizar la lógica de las aplicaciones y el estado persistente en instalaciones de datos regionales masivas: us-east-1 en Virginia, eu-west-1 en Dublín o ap-sureste-1 en Singapur. Si bien los centros de datos centralizados simplificaron el bloqueo de bases de datos y los modelos de consistencia ACID, introdujeron una restricción física e inmutable que ninguna optimización de la CPU pudo resolver: la velocidad de la luz en los cables de fibra óptica."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Decentralized Edge Architectures - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Decentralized Edge Architectures."
     },
     {
       "type": "code",
@@ -52,24 +64,24 @@
     {
       "type": "ul",
       "items": [
-        "TTFB casi nulo: el tiempo hasta el primer byte cae de 400 a 600 ms en orígenes dinámicos a 15 a 25 ms a nivel mundial.",
-        "Resistencia infinita a DDoS: el tráfico volumétrico de denegación de servicio se distribuye de forma natural entre cientos de PoP globales, lo que neutraliza los ataques sin estresar a los servidores de origen.",
-        "Protección de origen: los ejecutores de compilación centralizados compilan HTML una vez; Las cachés perimetrales absorben el 99,8 % de todo el tráfico de lectura.",
-        "Cero arranques en frío: los aislamientos V8 eliminan los temidos retrasos de arranque en frío de 3 segundos, comunes en las arquitecturas sin servidor heredadas."
+        "Near-zero TTFB: Time to First Byte drops from 400–600ms on dynamic origins to 15–25ms globally.",
+        "Infinite DDoS resilience: Volumetric denial-of-service traffic is naturally distributed across hundreds of global PoPs, neutralizing attacks without stressing origin servers.",
+        "Origin shielding: Centralized build runners compile HTML once; edge caches absorb 99.8% of all read traffic.",
+        "Zero cold starts: V8 isolates eliminate the dreaded 3-second cold start delays common in legacy serverless architectures."
       ]
     },
     {
       "type": "h2",
-      "text": "La muerte de las dependencias de las bases de datos de origen"
+      "text": "La revolución Anycast y los aislamientos Edge V8"
     },
     {
       "type": "p",
-      "text": "Cuando la publicación editorial se desacopla de las búsquedas en bases de datos en tiempo real, todo el sistema se vuelve indestructible. No hay conexiones de bases de datos que se agoten durante picos de tráfico viral, no hay contención de bloqueo y no hay tiempo de inactividad por mantenimiento. Cada despacho publicado existe como un artefacto estático inmutable replicado en todo el mundo."
+      "text": "Durante las últimas dos décadas, el dogma de la computación en la nube instruyó a los arquitectos de software a centralizar la lógica de las aplicaciones y el estado persistente en instalaciones de datos regionales masivas: us-east-1 en Virginia, eu-west-1 en Dublín o ap-sureste-1 en Singapur. Si bien los centros de datos centralizados simplificaron el bloqueo de bases de datos y los modelos de consistencia ACID, introdujeron una restricción física e inmutable que ninguna optimización de la CPU pudo resolver: la velocidad de la luz en los cables de fibra óptica."
     },
     {
       "type": "p",
-      "text": "Al crear Questo Magazine sobre una arquitectura de borde descentralizada y microcachés inmutables, logramos confiabilidad de nivel institucional, seguridad absoluta y una entrega increíble en menos de un segundo para todos los lectores de la Tierra."
+      "text": "Durante las últimas dos décadas, el dogma de la computación en la nube instruyó a los arquitectos de software a centralizar la lógica de las aplicaciones y el estado persistente en instalaciones de datos regionales masivas: us-east-1 en Virginia, eu-west-1 en Dublín o ap-sureste-1 en Singapur. Si bien los centros de datos centralizados simplificaron el bloqueo de bases de datos y los modelos de consistencia ACID, introdujeron una restricción física e inmutable que ninguna optimización de la CPU pudo resolver: la velocidad de la luz en los cables de fibra óptica."
     }
   ],
-  "sourceHash": "2c66ca5d93d8dc5c308d4fa5bff52a92eaf1472c"
+  "sourceHash": "d6e27bd4f5157766080fd7613372cf5d6fe49c38"
 }

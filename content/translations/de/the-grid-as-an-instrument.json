@@ -11,8 +11,8 @@
     "grid-systems",
     "swiss-style"
   ],
-  "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Typografisches Musterbuch im Swiss International Style mit streng modularen Grundlinienrastern",
+  "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Swiss International Style typographic specimen book displaying strict modular baseline grids",
   "body": [
     {
       "type": "p",
@@ -20,19 +20,31 @@
     },
     {
       "type": "p",
-      "text": "Das Raster ist kein ästhetischer Zwang; es ist ein Musikinstrument. So wie eine Geige auf präzise mathematische Saitenlängen angewiesen ist, um eine reine akustische Tonhöhe zu erzeugen, ist ein Seitenlayout auf harmonische räumliche Verhältnisse angewiesen, um beliebige alphabetische Zeichen in klangvolle visuelle Literatur umzuwandeln."
+      "text": "Für das ungeübte Auge erscheint ein fein gestaltetes Buch oder eine redaktionelle Zeitschrift mühelos. Die Worte fließen mit einer angeborenen Natürlichkeit über die Seite, die zum sofortigen Eintauchen einlädt. Doch diese scheinbare Leichtigkeit ist eine optische Täuschung. Hinter jedem Meisterwerk des Publikationsdesigns verbirgt sich ein strenges Gerüst aus geometrischen Linien, Proportionsverhältnissen und Grundrhythmen: das typografische Raster."
     },
     {
       "type": "h2",
       "text": "Die geheime Geometrie von Jan Tschicholds Goldenem Kanon"
     },
     {
-      "type": "p",
-      "text": "In seiner bahnbrechenden Monographie „Die Form des Buches“ von 1953 enthüllte der deutsche Typograf Jan Tschichold den längst vergessenen mittelalterlichen Kanon der Manuskripteinteilung. Indem mittelalterliche Schreiber diagonale Konstruktionslinien über eine Doppelseite zeichneten, die gegenüberliegende Ecken verbanden und sich durch die Seitenmitte kreuzten, teilten sie sowohl die Seitenbreite als auch die Seitenhöhe in neun gleiche Abschnitte ein."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Grid as an Instrument - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Grid as an Instrument."
     },
     {
       "type": "p",
-      "text": "Der resultierende Textblock hatte das exakte Proportionalverhältnis (2:3) der gesamten Seite selbst. Darüber hinaus standen die Außenränder in einem harmonischen Verhältnis zueinander: Innenrand = 2 Teile, Oberrand = 3 Teile, Außenrand = 4 Teile und Unterrand = 6 Teile. Diese bodenlastige Margenallokation war nicht dekorativ; Es berücksichtigte die menschliche Ergonomie und bot den Daumen des Lesers eine bequeme Ablagefläche, ohne ein einziges Wort des Textes zu verdecken."
+      "text": "Für das ungeübte Auge erscheint ein fein gestaltetes Buch oder eine redaktionelle Zeitschrift mühelos. Die Worte fließen mit einer angeborenen Natürlichkeit über die Seite, die zum sofortigen Eintauchen einlädt. Doch diese scheinbare Leichtigkeit ist eine optische Täuschung. Hinter jedem Meisterwerk des Publikationsdesigns verbirgt sich ein strenges Gerüst aus geometrischen Linien, Proportionsverhältnissen und Grundrhythmen: das typografische Raster."
+    },
+    {
+      "type": "p",
+      "text": "Für das ungeübte Auge erscheint ein fein gestaltetes Buch oder eine redaktionelle Zeitschrift mühelos. Die Worte fließen mit einer angeborenen Natürlichkeit über die Seite, die zum sofortigen Eintauchen einlädt. Doch diese scheinbare Leichtigkeit ist eine optische Täuschung. Hinter jedem Meisterwerk des Publikationsdesigns verbirgt sich ein strenges Gerüst aus geometrischen Linien, Proportionsverhältnissen und Grundrhythmen: das typografische Raster."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Grid as an Instrument - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Grid as an Instrument."
     },
     {
       "type": "quote",
@@ -41,15 +53,15 @@
     },
     {
       "type": "h2",
-      "text": "Der Rhythmus des Grundliniengitters"
+      "text": "Die geheime Geometrie von Jan Tschicholds Goldenem Kanon"
     },
     {
       "type": "p",
-      "text": "Während vertikale Spalten den horizontalen Inhaltsfluss vorgeben, legt das vertikale Grundlinienraster das zeitliche Tempo des Leseerlebnisses fest. In einem disziplinierten Redaktionssystem muss jedes einzelne typografische Element – ​​von der 64-Punkt-Überschrift auf dem Cover bis zur 8-Punkt-Bildunterschrift – an ganzzahligen Vielfachen des Anfangs des Haupttextes ausgerichtet sein."
+      "text": "Für das ungeübte Auge erscheint ein fein gestaltetes Buch oder eine redaktionelle Zeitschrift mühelos. Die Worte fließen mit einer angeborenen Natürlichkeit über die Seite, die zum sofortigen Eintauchen einlädt. Doch diese scheinbare Leichtigkeit ist eine optische Täuschung. Hinter jedem Meisterwerk des Publikationsdesigns verbirgt sich ein strenges Gerüst aus geometrischen Linien, Proportionsverhältnissen und Grundrhythmen: das typografische Raster."
     },
     {
       "type": "p",
-      "text": "Wenn der Fließtext auf 11 Punkte auf einer Linienhöhe von 16 Punkten eingestellt ist, beträgt die Grundlinienrastereinheit genau 16 Punkte (oder 24 Pixel). Eine sekundäre Überschrift könnte 24 Punkte lang sein und eine Zeilenhöhe von 32 Punkten haben (die sich über genau 2 Basislinieneinheiten erstreckt). Ein Pullquote kann sich über drei Basiseinheiten erstrecken. Dadurch wird sichergestellt, dass die Textzeilen in benachbarten Spalten über mehrere Spalten hinweg mit messerscharfer Präzision horizontal ausgerichtet werden, wodurch ein unbewusstes Gefühl von Ordnung und struktureller Stabilität entsteht."
+      "text": "Für das ungeübte Auge erscheint ein fein gestaltetes Buch oder eine redaktionelle Zeitschrift mühelos. Die Worte fließen mit einer angeborenen Natürlichkeit über die Seite, die zum sofortigen Eintauchen einlädt. Doch diese scheinbare Leichtigkeit ist eine optische Täuschung. Hinter jedem Meisterwerk des Publikationsdesigns verbirgt sich ein strenges Gerüst aus geometrischen Linien, Proportionsverhältnissen und Grundrhythmen: das typografische Raster."
     },
     {
       "type": "code",
@@ -63,23 +75,23 @@
     {
       "type": "ul",
       "items": [
-        "Spaltenflexibilität: 12 Spalten können sauber in 1, 2, 3, 4 oder 6 gleiche Untermodule ohne gebrochene Pixelreste aufgeteilt werden.",
-        "Gutter-Konsistenz: Die Beibehaltung eines einheitlichen 24- oder 32-Pixel-Gitters über alle Haltepunkte des Ansichtsfensters hinweg gewährleistet einen konsistenten negativen Raum zum Atmen.",
-        "Asymmetrische Spannung: Verankerung des primären narrativen Texts in den Spalten 3 bis 10, wobei die äußeren Spalten für redaktionelle Metadaten, Autorenbiografien und große Marginalien-Zitate offen bleiben."
+        "Column Flexibility: 12 columns can be cleanly partitioned into 1, 2, 3, 4, or 6 equal sub-modules without fractional pixel remainders.",
+        "Gutter Consistency: Maintaining a uniform 24px or 32px gutter across all viewport breakpoints ensures consistent negative space breathing room.",
+        "Asymmetric Tension: Anchoring primary narrative copy across columns 3 through 10, leaving outer columns open for editorial metadata, author bios, and large marginalia pullquotes."
       ]
     },
     {
       "type": "h2",
-      "text": "Druckstrenge in dynamisch reagierende Ansichtsfenster übersetzen"
+      "text": "Die geheime Geometrie von Jan Tschicholds Goldenem Kanon"
     },
     {
       "type": "p",
-      "text": "Eine häufige Kritik am frühen Webdesign war, dass reaktionsfähige Ansichtsfenster eine Rasterdisziplin unmöglich machten. Da die Bildschirmbreiten von mobilen Viewports mit 360 Pixeln bis hin zu 4K-Workstations mit 3840 Pixeln kontinuierlich variieren, argumentierten Kritiker, dass feste Proportionen obsolet seien. Moderne CSS-Funktionen wie CSS-Grid-Layout, Subgrid und mathematische Klemm()-Funktionen ermöglichen es uns jedoch, Tschicholds Goldenen Kanon direkt in responsiven Code zu übersetzen."
+      "text": "Für das ungeübte Auge erscheint ein fein gestaltetes Buch oder eine redaktionelle Zeitschrift mühelos. Die Worte fließen mit einer angeborenen Natürlichkeit über die Seite, die zum sofortigen Eintauchen einlädt. Doch diese scheinbare Leichtigkeit ist eine optische Täuschung. Hinter jedem Meisterwerk des Publikationsdesigns verbirgt sich ein strenges Gerüst aus geometrischen Linien, Proportionsverhältnissen und Grundrhythmen: das typografische Raster."
     },
     {
       "type": "p",
-      "text": "Durch die Bindung flüssiger Typografie an proportionale Containerbreiten können moderne redaktionelle Websites unabhängig von der Bildschirmgröße harmonische Rand-Spalten-Verhältnisse beibehalten. Das Gerät ändert sich, aber die mathematische Harmonie bleibt ewig."
+      "text": "Für das ungeübte Auge erscheint ein fein gestaltetes Buch oder eine redaktionelle Zeitschrift mühelos. Die Worte fließen mit einer angeborenen Natürlichkeit über die Seite, die zum sofortigen Eintauchen einlädt. Doch diese scheinbare Leichtigkeit ist eine optische Täuschung. Hinter jedem Meisterwerk des Publikationsdesigns verbirgt sich ein strenges Gerüst aus geometrischen Linien, Proportionsverhältnissen und Grundrhythmen: das typografische Raster."
     }
   ],
-  "sourceHash": "4fd98e9bd390dbbfbac91e6ac9fde2b54c874749"
+  "sourceHash": "c443e9b26f67d74a44cf2b479db117b130cde9a7"
 }

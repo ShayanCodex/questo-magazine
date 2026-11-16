@@ -12,8 +12,8 @@
     "cloud",
     "system-architecture"
   ],
-  "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Carte du réseau satellite mondial illustrant les nœuds périphériques décentralisés et le routage des fibres.",
+  "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Global satellite network map depicting decentralized edge nodes and fiber routing",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "Lorsqu'un lecteur de Tokyo ou de Buenos Aires tente de charger un article hébergé sur un serveur du nord de la Virginie, les paquets légers doivent traverser des milliers de kilomètres de fibre terrestre, de répéteurs sous-marins et de routeurs de transit. Même dans des conditions idéales, le temps d'aller-retour physique (RTT) minimum dépasse 180 millisecondes. Lorsque la recherche DNS, les négociations TLS 1.3 et plusieurs allers-retours TCP sont combinés, l'utilisateur attend près d'une seconde complète avant de recevoir un seul octet de code HTML."
+      "text": "Au cours des deux dernières décennies, le dogme du cloud computing a demandé aux architectes logiciels de centraliser la logique des applications et l'état persistant dans d'énormes installations de données régionales : us-east-1 en Virginie, eu-west-1 à Dublin ou ap-southeast-1 à Singapour. Alors que les centres de données centralisés simplifiaient le verrouillage des bases de données et les modèles de cohérence ACID, ils introduisaient une contrainte physique et immuable qu'aucune optimisation du processeur ne pouvait résoudre : la vitesse de la lumière dans les câbles à fibres optiques."
     },
     {
       "type": "h2",
       "text": "La révolution Anycast et les isolats Edge V8"
     },
     {
-      "type": "p",
-      "text": "L'architecture de périphérie décentralisée résout le goulot d'étranglement d'origine en déplaçant l'exécution informatique directement vers le périmètre du réseau. Grâce au routage Anycast du Border Gateway Protocol (BGP), une seule adresse IP publique est annoncée simultanément depuis plus de 300 centres de données répartis sur six continents. Lorsqu'un client effectue une requête HTTP, les routeurs de transit transmettent automatiquement les paquets au nœud périphérique géographiquement le plus proche."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Decentralized Edge Architectures - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Decentralized Edge Architectures."
     },
     {
       "type": "p",
-      "text": "Plutôt que de démarrer des environnements d'exécution de conteneurs Node.js ou Docker lourds avec des centaines de mégaoctets de surcharge de mémoire, les réseaux périphériques modernes exécutent des isolats JavaScript V8 légers. Un isolat démarre en moins de 5 millisecondes, consomme moins de 5 Mo de RAM et exécute une logique de routage fonctionnelle pure immédiatement après l'arrivée du paquet."
+      "text": "Au cours des deux dernières décennies, le dogme du cloud computing a demandé aux architectes logiciels de centraliser la logique des applications et l'état persistant dans d'énormes installations de données régionales : us-east-1 en Virginie, eu-west-1 à Dublin ou ap-southeast-1 à Singapour. Alors que les centres de données centralisés simplifiaient le verrouillage des bases de données et les modèles de cohérence ACID, ils introduisaient une contrainte physique et immuable qu'aucune optimisation du processeur ne pouvait résoudre : la vitesse de la lumière dans les câbles à fibres optiques."
+    },
+    {
+      "type": "p",
+      "text": "Au cours des deux dernières décennies, le dogme du cloud computing a demandé aux architectes logiciels de centraliser la logique des applications et l'état persistant dans d'énormes installations de données régionales : us-east-1 en Virginie, eu-west-1 à Dublin ou ap-southeast-1 à Singapour. Alors que les centres de données centralisés simplifiaient le verrouillage des bases de données et les modèles de cohérence ACID, ils introduisaient une contrainte physique et immuable qu'aucune optimisation du processeur ne pouvait résoudre : la vitesse de la lumière dans les câbles à fibres optiques."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Decentralized Edge Architectures - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Decentralized Edge Architectures."
     },
     {
       "type": "code",
@@ -52,24 +64,24 @@
     {
       "type": "ul",
       "items": [
-        "TTFB proche de zéro : le délai d'obtention du premier octet passe de 400 à 600 ms sur les origines dynamiques à 15 à 25 ms à l'échelle mondiale.",
-        "Résilience DDoS infinie : le trafic volumétrique par déni de service est naturellement réparti sur des centaines de PoP mondiaux, neutralisant les attaques sans stresser les serveurs d'origine.",
-        "Protection de l'origine : les exécuteurs de build centralisés compilent le HTML une fois ; les caches périphériques absorbent 99,8 % de tout le trafic de lecture.",
-        "Zéro démarrage à froid : les isolats V8 éliminent les redoutables délais de démarrage à froid de 3 secondes, courants dans les architectures sans serveur existantes."
+        "Near-zero TTFB: Time to First Byte drops from 400–600ms on dynamic origins to 15–25ms globally.",
+        "Infinite DDoS resilience: Volumetric denial-of-service traffic is naturally distributed across hundreds of global PoPs, neutralizing attacks without stressing origin servers.",
+        "Origin shielding: Centralized build runners compile HTML once; edge caches absorb 99.8% of all read traffic.",
+        "Zero cold starts: V8 isolates eliminate the dreaded 3-second cold start delays common in legacy serverless architectures."
       ]
     },
     {
       "type": "h2",
-      "text": "La mort des dépendances de la base de données Origin"
+      "text": "La révolution Anycast et les isolats Edge V8"
     },
     {
       "type": "p",
-      "text": "Lorsque la publication éditoriale est découplée des recherches en temps réel dans la base de données, le système tout entier devient indestructible. Il n’y a aucune connexion à la base de données à épuiser lors des pics de trafic viral, aucun conflit de verrouillage et aucun temps d’arrêt pour maintenance. Chaque dépêche publiée existe comme un artefact statique immuable répliqué à travers le monde."
+      "text": "Au cours des deux dernières décennies, le dogme du cloud computing a demandé aux architectes logiciels de centraliser la logique des applications et l'état persistant dans d'énormes installations de données régionales : us-east-1 en Virginie, eu-west-1 à Dublin ou ap-southeast-1 à Singapour. Alors que les centres de données centralisés simplifiaient le verrouillage des bases de données et les modèles de cohérence ACID, ils introduisaient une contrainte physique et immuable qu'aucune optimisation du processeur ne pouvait résoudre : la vitesse de la lumière dans les câbles à fibres optiques."
     },
     {
       "type": "p",
-      "text": "En construisant Questo Magazine sur une architecture de périphérie décentralisée et des micro-caches immuables, nous obtenons une fiabilité de niveau institutionnel, une sécurité absolue et une livraison fulgurante en moins d'une seconde pour chaque lecteur sur Terre."
+      "text": "Au cours des deux dernières décennies, le dogme du cloud computing a demandé aux architectes logiciels de centraliser la logique des applications et l'état persistant dans d'énormes installations de données régionales : us-east-1 en Virginie, eu-west-1 à Dublin ou ap-southeast-1 à Singapour. Alors que les centres de données centralisés simplifiaient le verrouillage des bases de données et les modèles de cohérence ACID, ils introduisaient une contrainte physique et immuable qu'aucune optimisation du processeur ne pouvait résoudre : la vitesse de la lumière dans les câbles à fibres optiques."
     }
   ],
-  "sourceHash": "2c66ca5d93d8dc5c308d4fa5bff52a92eaf1472c"
+  "sourceHash": "d6e27bd4f5157766080fd7613372cf5d6fe49c38"
 }

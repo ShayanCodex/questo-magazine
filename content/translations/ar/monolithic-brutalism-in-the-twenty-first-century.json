@@ -12,7 +12,7 @@
     "sustainability"
   ],
   "image": "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "مجمع مدني خرساني وحشي متآلف",
+  "imageAlt": "Monolithic board-marked brutalist concrete civic complex",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "لم يكن القصد من مصطلح البيتون بروت – الخرسانة الخام – أبدًا وصف العداء القاتم؛ لقد كان يدل على الصدق التكتوني. عندما يتم صب الركام السائل في القوالب الخشبية المطحونة يدويًا، فإن الحبوب والعقد والعيوب الموجودة في الخشب تتحجر بشكل دائم في الحجر. الهيكل لا يخفي طريقة إنشائه."
+      "text": "يتم تعريف البناء التجاري المعاصر بشكل كبير من خلال التقادم المخطط له. تم تصميم الإطارات الفولاذية خفيفة الوزن المغلفة بألواح الألومنيوم المركبة ومانعات التسرب المصنوعة من السيليكون لجداول استهلاك مدتها ثلاثين عامًا بدلاً من قرون من التحمل المدني. في المقابل، تقف العمارة الوحشية بمثابة نصب تذكاري للاستمرارية الجيولوجية."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1490971594705-6c345b304e92?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Monolithic Brutalism in the Twenty-First Century - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Monolithic Brutalism in the Twenty-First Century."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "السمات المستدامة للكتلة المتجانسة"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1470723710355-95304d8aece4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Monolithic Brutalism in the Twenty-First Century - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Monolithic Brutalism in the Twenty-First Century."
+    },
+    {
       "type": "ul",
       "items": [
-        "القصور الذاتي الحراري العالي: تمتص الجدران المجمعة الضخمة الحرارة الشمسية النهارية، وتعدل بشكل طبيعي درجات الحرارة القصوى في الأماكن المغلقة دون دورات التدفئة والتهوية وتكييف الهواء الميكانيكية.",
-        "الملاذ الصوتي: تعمل أعمال البناء الكثيفة على تخفيف ترددات الضوضاء المحيطة بالمدينة بنسبة تصل إلى 55 ديسيبل.",
-        "التجوية التي لا تحتاج إلى صيانة: بدلاً من التحلل، يشكل الأسمنت البورتلاندي عالي الكثافة طبقة كربونية واقية في ظل دورات هطول الأمطار الطبيعية."
+        "High thermal inertia: Massive aggregate walls absorb diurnal solar heat, naturally moderating indoor temperature extremes without mechanical HVAC cycles.",
+        "Acoustic sanctuary: Dense poured masonry attenuates urban ambient noise frequencies by up to 55 decibels.",
+        "Zero-maintenance weathering: Rather than degrading, high-density Portland cement forms a protective carbonate patina under natural precipitation cycles."
       ]
     },
     {
       "type": "p",
-      "text": "بينما تواجه مجتمعاتنا عدم الاستقرار البيئي والتقلبات الاقتصادية، فإن الدروس المستفادة من الوحشية المدنية في منتصف القرن بدأت تظهر من جديد: البناء مرة واحدة، والبناء بأمانة، والبناء لكي يدوم بعد دورات الأجيال التي تصورتها."
+      "text": "يتم تعريف البناء التجاري المعاصر بشكل كبير من خلال التقادم المخطط له. تم تصميم الإطارات الفولاذية خفيفة الوزن المغلفة بألواح الألومنيوم المركبة ومانعات التسرب المصنوعة من السيليكون لجداول استهلاك مدتها ثلاثين عامًا بدلاً من قرون من التحمل المدني. في المقابل، تقف العمارة الوحشية بمثابة نصب تذكاري للاستمرارية الجيولوجية."
     }
   ],
-  "sourceHash": "6d1a79f0363b4a1ac00fb302d45b6d090a774b48"
+  "sourceHash": "4fd44a27e701bc25ec08be07ecdfef9eb6ce5ee8"
 }

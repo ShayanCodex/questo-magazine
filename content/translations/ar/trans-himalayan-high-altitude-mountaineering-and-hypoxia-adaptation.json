@@ -12,7 +12,7 @@
     "hypoxia"
   ],
   "image": "/images/articles/himalayan-mountaineering-glacier.jpg",
-  "imageAlt": "قمم جبال الألب المغطاة بالثلوج وخطوط التلال الجليدية في جبال الهيمالايا العالية تحت سماء الجبال الزرقاء الصافية",
+  "imageAlt": "Snowcapped alpine peaks and glaciated ridgelines of the high Himalaya under clear azure mountain skies",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "فسيولوجيا منطقة الموت"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for High-Altitude Himalayan Expeditions."
     },
     {
       "type": "ul",
       "items": [
-        "ديناميكيات الضغط الخافض للضغط: على ارتفاع 8000 متر، ينخفض ​​تشبع الأكسجين الشرياني (SaO_2$) إلى أقل من 60%، مما يفرض ضرائب شديدة على الحسابات المعرفية والتحكم الحركي.",
-        "تنشيط HIF-1alpha: يعمل نقص الأكسجة الخلوي على تثبيت العامل المحفز لنقص الأكسجة 1-alpha، مما يؤدي إلى إفراز الإريثروبويتين الكلوي (EPO) وتكاثر كريات الدم الحمراء.",
-        "فرط التنفس وقلاء الجهاز التنفسي: تجبر المستقبلات الكيميائية في الجسم السباتي على تسرع النفس المستمر، وتطلق ثاني أكسيد الكربون وتحفز إفراز البيكربونات الكلوية لعزل درجة الحموضة الشريانية.",
-        "الوذمة الدماغية والرئوية: يؤدي الصعود المفاجئ دون التأقلم المرحلي إلى خطر تسرب السائل الشعري، مما يؤدي إلى تهديد الحياة بالوذمة الدماغية (HACE) أو الوذمة الرئوية (HAPE)."
+        "Hypobaric Pressure Dynamics: At 8,000m, arterial oxygen saturation ($SaO_2$) drops below 60%, severely taxing cognitive calculation and motor control.",
+        "HIF-1alpha Activation: Cellular hypoxia stabilizes Hypoxia-Inducible Factor 1-alpha, driving renal erythropoietin (EPO) secretion and erythrocyte hematocrit proliferation.",
+        "Hyperventilation & Respiratory Alkalosis: Carotid body chemoreceptors force persistent tachypnea, blowing off CO2 and inducing renal bicarbonate excretion to buffer arterial pH.",
+        "Cerebral and Pulmonary Edema: Sudden ascent without phased acclimatization risks capillary fluid extravasation, triggering life-threatening HACE or HAPE."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "جمعية الهيمالايا للطب والرحلات الاستكشافية على ارتفاعات عالية"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting High-Altitude Himalayan Expeditions."
+    },
+    {
       "type": "h2",
-      "text": "لوجستيات التسلق المرتفعة والنوم المنخفض"
+      "text": "فسيولوجيا منطقة الموت"
     },
     {
       "type": "p",
-      "text": "أسلوب جبال الألب الحديث وبعثات الحصار المرحلية تستخدم دورات صارمة على مراحل. يصعد المتسلقون من خلال المعسكرات المرتفعة التقدمية (C1، C2، C3) لتحفيز التكيف الخلوي قبل النزول إلى المعسكر الأساسي للنوم التصالحي، وتخفيف إرهاق الارتفاع المزمن أثناء بناء تركيز الهيموجلوبين."
+      "text": "الصعود فوق 8000 متر يغرق الكائن البشري في \"منطقة الموت\" - وهي بيئة ينخفض ​​فيها الضغط الجوي إلى ما يقرب من ثلث قيمة مستوى سطح البحر (حوالي 250 ملم زئبق). على الرغم من بقاء جزء الأكسجين المحيط ثابتًا عند 20.9%، فإن الانخفاض الحاد في الضغط الجزئي الملهم ($P_iO_2$) يؤدي إلى تجويع أكسجة الأنسجة، مما يتطلب التأقلم التعويضي النظامي."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY",
-      "title": "فسيولوجيا الارتفاعات العالية: كيف ينجو جسم الإنسان من البرد الشديد ونقص الأكسجة",
-      "caption": "فيلم وثائقي لبعثة طبية يفحص التكيف الدموي، ومنحنيات نقل الأكسجين، وتبادل الغازات الرئوية فوق 7000 متر."
+      "title": "High Altitude Physiology: How the Human Body Survives Extreme Cold & Hypoxia",
+      "caption": "Medical expedition documentary examining hematological adaptation, oxygen transport curves, and pulmonary gas exchange above 7,000 meters.",
+      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY"
     },
     {
       "type": "h2",
-      "text": "الإشراف على طريق الهيمالايا السيادي"
+      "text": "فسيولوجيا منطقة الموت"
     },
     {
       "type": "p",
-      "text": "مع تراجع التضاريس الجليدية الهشة في ظل التغيرات المناخية، تنفذ تحالفات الحفاظ على البيئة الإقليمية ونقابات توجيه شيربا أطرًا صارمة لنفايات الرحلات الاستكشافية بدون أثر وبيانات معدات تتبع نظام تحديد المواقع العالمي (GPS) لحماية مستجمعات المياه في جبال الألب."
+      "text": "الصعود فوق 8000 متر يغرق الكائن البشري في \"منطقة الموت\" - وهي بيئة ينخفض ​​فيها الضغط الجوي إلى ما يقرب من ثلث قيمة مستوى سطح البحر (حوالي 250 ملم زئبق). على الرغم من بقاء جزء الأكسجين المحيط ثابتًا عند 20.9%، فإن الانخفاض الحاد في الضغط الجزئي الملهم ($P_iO_2$) يؤدي إلى تجويع أكسجة الأنسجة، مما يتطلب التأقلم التعويضي النظامي."
     }
   ],
-  "sourceHash": "c599f276bf69326cacf6f5e979acec61df69bc59"
+  "sourceHash": "4775f0a6be80b1cd9cff50ad35a36372d3eef476"
 }

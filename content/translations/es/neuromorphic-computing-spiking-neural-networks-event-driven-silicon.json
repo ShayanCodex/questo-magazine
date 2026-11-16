@@ -13,7 +13,7 @@
     "algorithms"
   ],
   "image": "/images/articles/neuromorphic-chip.jpg",
-  "imageAlt": "Placa de circuito impreso electrónica futurista y chip de microprocesador de alto rendimiento con vías de conexión neuronal iluminadas",
+  "imageAlt": "Futuristic electronic printed circuit board and high performance microprocessor chip with illuminated neural connection pathways",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "La ingeniería neuromórfica abandona por completo el paradigma sincrónico impulsado por reloj. Al emular la arquitectura biológica de las sinapsis y los axones corticales, los procesadores neuromórficos ejecutan cálculos solo cuando la información cambia, transmitiendo potenciales de acción binarios (picos) asincrónicos y dispersos a través de matrices de barras transversales masivamente paralelas, que no son de von Neumann, donde el procesamiento y la memoria se ubican en el mismo sustrato físico."
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
     },
     {
       "type": "h2",
       "text": "1. Dinámica de integración y disparo con fugas en silicio"
     },
     {
-      "type": "p",
-      "text": "En la base matemática de las redes neuronales de picos (SNN) se encuentra el modelo neuronal Leaky Integrate-and-Fire (LIF). El potencial de membrana $V(t)$ integra las corrientes sinápticas entrantes a lo largo de un tiempo continuo, decayendo exponencialmente hacia un potencial de reposo de acuerdo con la constante de tiempo de membrana $\\tau_m$:"
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Neuromorphic Computing & Spiking Neural Networks - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Neuromorphic Computing & Spiking Neural Networks."
     },
     {
       "type": "p",
-      "text": "$\\tau_m \\frac{dV(t)}{dt} = -(V(t) - V_{\\text{rest}}) + R_m I(t)$. Cuando el potencial de membrana supera un umbral de voltaje predeterminado $V_{\\text{th}}$, la neurona dispara un pico discreto a la red, restablece su potencial y entra en un período refractario. Debido a que las neuronas permanecen inactivas hasta que son activadas por picos temporales, el silicio neuromórfico consume cero energía dinámica durante los períodos de entrada estática, logrando eficiencias energéticas de tres a cuatro órdenes de magnitud mayores que los aceleradores digitales convencionales."
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
+    },
+    {
+      "type": "p",
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Neuromorphic Computing & Spiking Neural Networks - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Neuromorphic Computing & Spiking Neural Networks."
     },
     {
       "type": "quote",
@@ -42,51 +54,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Co-ubicación de barra transversal de memoria no Von Neumann"
+      "text": "1. Dinámica de integración y disparo con fugas en silicio"
     },
     {
       "type": "p",
-      "text": "En las arquitecturas de hardware convencionales, la separación física de las unidades de cómputo y los bancos de memoria impone el infame \"muro de memoria de von Neumann\": más del 80% de la disipación total de energía se desperdicia únicamente en el transporte de interconexión de cobre. Las plataformas neuromórficas, como Intel Loihi, IBM TrueNorth y las matrices de memristores emergentes, eliminan este cuello de botella mediante barras transversales sinápticas distribuidas."
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
     },
     {
       "type": "p",
-      "text": "Cada sinapsis artificial almacena su peso programático localmente utilizando RAM resistiva no volátil (ReRAM) o memoria de cambio de fase (PCM). Cuando un pico de voltaje atraviesa una línea de palabras, la ley de Ohm y la ley de corriente de Kirchhoff calculan naturalmente productos de matriz vectorial a la velocidad de la electricidad: $I_j = \\sum_i V_i \\cdot G_{ij}$, donde la conductancia $G_{ij}$ representa la eficacia sináptica. La computación ocurre in situ dentro de la propia estructura de la memoria."
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Principios de ingeniería neuromórfica"
+      "text": "1. Dinámica de integración y disparo con fugas en silicio"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/H4_G3Lz7m9U",
-      "title": "Computación neuromórfica: hardware inspirado en el cerebro y redes neuronales con picos",
-      "caption": "Un seminario técnico sobre sensores de visión basados ​​en eventos, tejidos de enrutamiento asíncronos y procesamiento de bordes sensoriales de submilivatios."
+      "title": "Neuromorphic Computing: Brain-Inspired Hardware and Spiking Neural Networks",
+      "caption": "A technical seminar on event-based vision sensors, asynchronous routing fabrics, and sub-milliwatt sensory edge processing.",
+      "src": "https://www.youtube-nocookie.com/embed/aircAruvnKk"
     },
     {
       "type": "h2",
-      "text": "4. Visión basada en eventos y aplicaciones perimetrales autónomas"
+      "text": "1. Dinámica de integración y disparo con fugas en silicio"
     },
     {
       "type": "p",
-      "text": "Las cámaras tradicionales capturan el mundo en fotogramas discretos y redundantes (por ejemplo, 60 fotogramas por segundo), generando enormes volúmenes de datos incluso cuando se visualizan escenas completamente estacionarias. Los sensores de visión dinámica neuromórfica (DVS), por el contrario, consisten en píxeles autónomos que emiten un pico asíncrono sólo cuando la luminancia local cambia en un porcentaje umbral."
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
     },
     {
       "type": "p",
-      "text": "Cuando se combinan con procesadores neuronales de picos, los sensores basados ​​en eventos permiten una resolución temporal de microsegundos, un alto rango dinámico (>120 dB) y la eliminación del desenfoque de movimiento mientras funcionan con milivatios de potencia. Estas características hacen que los sistemas neuromórficos sean ideales para la estabilización robótica de alta velocidad, controladores de prótesis de extremidades, seguimiento por satélite y telemetría biomédica de borde."
+      "text": "Las redes neuronales profundas contemporáneas son voraces computacionalmente. Al operar en arquitecturas síncronas de von Neumann, las GPU y TPU estándar ejecutan densas multiplicaciones de matrices al trasladar constantemente tensores de peso de varios gigabytes entre la memoria de alto ancho de banda (HBM) y las unidades lógicas aritméticas (ALU), disipando cientos de vatios por acelerador. En marcado contraste, el cerebro humano biológico ejecuta una percepción sensorial sofisticada, un control motor y un razonamiento contextual dentro de un austero presupuesto de energía de aproximadamente veinte vatios."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones de los sistemas: arquitectura del silicio biológico"
+      "text": "1. Dinámica de integración y disparo con fugas en silicio"
     },
     {
       "type": "ul",
       "items": [
-        "Escasez como eficiencia: la computación se ejecuta exclusivamente cuando llega el evento; las neuronas inactivas consumen sólo energía de fuga estática por debajo del umbral.",
-        "Aceleración analógica en memoria: las barras transversales memristivas calculan la suma física de Kirchhoff directamente en el dominio de almacenamiento sin necesidad de trasladar la memoria.",
-        "Codificación temporal: la información se representa mediante sincronización de picos, intervalos entre picos y sincronía de fase en lugar de registros de punto flotante de 16 bits.",
-        "Autonomía de borde: las envolventes de potencia de submilivatios permiten la clasificación en tiempo real en nodos de sensores, drones y monitores médicos portátiles sin conexión."
+        "Sparsity as Efficiency: Computation executes exclusively upon event arrivals; quiescent neurons consume only static sub-threshold leakage power.",
+        "Analog In-Memory Acceleration: Memristive crossbars compute physical Kirchhoff summation directly in the storage domain without memory shuttling.",
+        "Temporal Coding: Information is represented through spike timing, inter-spike intervals, and phase synchrony rather than 16-bit floating-point registers.",
+        "Edge Autonomy: Sub-milliwatt power envelopes allow real-time classification on untethered sensor nodes, drones, and wearable medical monitors."
       ]
     }
   ],
-  "sourceHash": "1e21cb68a7f095bc877b1ad45ae9638a00c370bf"
+  "sourceHash": "3bb956e1704e7649469dfb80daf7e5efdcd72047"
 }

@@ -30,6 +30,12 @@
       "text": "1. Tokenization: Byte-Pair Encoding and Vocabulary Compression"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1633356122102-b61ac6cbca0d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Training LLMs from Scratch."
+    },
+    {
       "type": "p",
       "text": "Raw natural language cannot be processed directly by linear matrix operations. It must first be discretized into integer token identifiers via Byte-Pair Encoding (BPE):"
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "BPE Iterative Pair Merge Formulation:\nVocabulary V = Initial byte symbols (0..255)\nIterative rule: Find pair (c_i, c_j) with argmax frequency(c_i, c_j) in corpus\nMerge: New symbol c_new = c_i ⊕ c_j\nUpdate: V ← V ∪ {c_new}\nRepeat until |V| = target_vocab_size (typically 32,000 to 128,000)"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Training LLMs from Scratch."
     },
     {
       "type": "p",

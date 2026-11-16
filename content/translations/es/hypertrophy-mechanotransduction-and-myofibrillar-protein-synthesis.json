@@ -12,7 +12,7 @@
     "sports-science"
   ],
   "image": "/images/articles/fitness-hypertrophy-gym.jpg",
-  "imageAlt": "Entrenamiento de resistencia de alta intensidad con pesas en una moderna instalación de acondicionamiento atlético",
+  "imageAlt": "High-intensity resistance training with barbell weights in a modern athletic conditioning facility",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "El cebado molecular del crecimiento del músculo esquelético"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mechanotransduction & Hypertrophy - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Mechanotransduction & Hypertrophy."
     },
     {
       "type": "ul",
       "items": [
-        "Complejos costaméricos: Los complejos de adhesión focal integrina-vinculina-talina transmiten fuerza longitudinal y lateral desde los sarcómeros a la matriz extracelular.",
-        "Translocación de mTORC1: la carga mecánica estimula la síntesis de ácido fosfatídico e inicia la activación mediada por Rheb del objetivo mecanicista del complejo de rapamicina 1 (mTORC1).",
-        "Biogénesis del ribosoma: la hipertrofia crónica está limitada en última instancia no solo por el inicio de la traducción, sino también por la tasa transcripcional de la síntesis del ARN ribosómico (ADNr).",
-        "Tasa sintética fraccionada (FSR): la síntesis de proteínas miofibrilares post-ejercicio se eleva dentro de 2 a 4 horas, alcanzando un máximo cerca de 24 horas antes de regresar al valor inicial en individuos entrenados."
+        "Costameric Complexes: Integrin-vinculin-talin focal adhesion complexes transmit longitudinal and lateral force from sarcomeres to the extracellular matrix.",
+        "mTORC1 Translocation: Mechanical loading stimulates phosphatidic acid synthesis and initiates Rheb-mediated activation of the mechanistic target of rapamycin complex 1 (mTORC1).",
+        "Ribosome Biogenesis: Chronic hypertrophy is ultimately bounded not just by translation initiation, but by the transcriptional rate of ribosomal RNA (rDNA) synthesis.",
+        "Fractional Synthetic Rate (FSR): Post-exercise myofibrillar protein synthesis elevates within 2 to 4 hours, peaking near 24 hours before returning to baseline in trained individuals."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Journal of Applied Physiology & Molecular Kinesiology"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1457364884844-389f71424fe1?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mechanotransduction & Hypertrophy - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Mechanotransduction & Hypertrophy."
+    },
+    {
       "type": "h2",
-      "text": "Adición de sarcómeros en serie versus paralelo"
+      "text": "El cebado molecular del crecimiento del músculo esquelético"
     },
     {
       "type": "p",
-      "text": "Las contracciones excéntricas cargadas en longitudes musculares largas inducen tensiones mecánicas únicas en los dominios de titina quinasa. Este estiramiento mecánico desencadena tanto la expansión miofibrilar paralela (crecimiento del diámetro transversal) como la sarcomerogénesis en serie (adición de unidades contráctiles a lo largo del eje longitudinal), mejorando tanto la producción de fuerza como la estabilidad del rango articular."
+      "text": "La hipertrofia del músculo esquelético es fundamentalmente una respuesta adaptativa gobernada por la mecanotransducción, la cascada fisiológica mediante la cual los mecanosensores de la superficie celular convierten la tensión física externa en señales bioquímicas intracelulares. Si bien el estrés metabólico y el daño muscular localizado contribuyen al estímulo, la tensión mecánica pasiva y activa siguen siendo los principales impulsores de la síntesis de proteínas miofibrilares."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "Los mecanismos celulares de la hipertrofia muscular y la síntesis de proteínas",
-      "caption": "Conferencia detallada sobre biología molecular que detalla la activación de mTORC1, la donación de células satélite y las vías de mecanotransducción en las fibras musculares humanas."
+      "title": "The Cellular Mechanisms of Muscle Hypertrophy & Protein Synthesis",
+      "caption": "Detailed molecular biology lecture detailing mTORC1 activation, satellite cell donation, and mechanotransduction pathways in human muscle fibers.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "Límites traslacionales y fusión de células satélite"
+      "text": "El cebado molecular del crecimiento del músculo esquelético"
     },
     {
       "type": "p",
-      "text": "A medida que las fibras musculares se expanden más allá de su techo de dominio mionuclear, las células satélite Pax7+ residentes se someten a una división asimétrica y donan nuevos núcleos para sostener la transcripción a través de miofibras hiperexpandidas, evitando el agotamiento sintético en las adaptaciones de fuerza de élite."
+      "text": "La hipertrofia del músculo esquelético es fundamentalmente una respuesta adaptativa gobernada por la mecanotransducción, la cascada fisiológica mediante la cual los mecanosensores de la superficie celular convierten la tensión física externa en señales bioquímicas intracelulares. Si bien el estrés metabólico y el daño muscular localizado contribuyen al estímulo, la tensión mecánica pasiva y activa siguen siendo los principales impulsores de la síntesis de proteínas miofibrilares."
     }
   ],
-  "sourceHash": "abd62238f19452b2352ffa839812681301a0bac4"
+  "sourceHash": "5cf0b3e255d17e29be22cd3c8abc974408c8dd4a"
 }

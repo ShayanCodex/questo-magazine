@@ -13,7 +13,7 @@
     "seo"
   ],
   "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Tipografía digital geométrica abstracta y buffer terminal binario en alto contraste",
+  "imageAlt": "Abstract geometric digital typography and binary terminal buffer in high contrast",
   "body": [
     {
       "type": "p",
@@ -21,20 +21,32 @@
     },
     {
       "type": "p",
-      "text": "Para los lectores internacionales, particularmente aquellos en regiones con redes móviles volátiles o alta latencia, esta arquitectura es desastrosa. Los lectores sufren de Flash of Untranslated Content (FOUT), cambios de diseño acumulativos a medida que las cadenas traducidas cambian la longitud de las palabras y tiempos de procesamiento iniciales lentos. Para los motores de búsqueda globales como Google y Bing, la ejecución de complejos procesos de ejecución de JavaScript en millones de URL introduce retrasos en la indexación y frecuentes errores de rastreo."
+      "text": "La premisa fundamental de la World Wide Web era simple: cada localizador uniforme de recursos (URL) apunta a un documento HTML accesible que contiene lenguaje humano real y rastreable. Sin embargo, el auge de las aplicaciones de una sola página (SPA) del lado del cliente rompió esta base. En las arquitecturas web modernas en tiempo de ejecución, visitar un artículo a menudo devuelve un shell HTML vacío que inicia una cascada de paquetes de JavaScript, comprobaciones de autenticación y búsquedas de API de traducción JSON asincrónicas."
     },
     {
       "type": "h2",
       "text": "Inversión de la topología: compilación multilingüe en tiempo de compilación"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Static Multilingual Publishing - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Static Multilingual Publishing."
+    },
+    {
       "type": "p",
-      "text": "Questo Magazine invierte completamente este frágil modelo de tiempo de ejecución. En lugar de traducir o hidratar dinámicamente cadenas dentro del navegador del visitante, nuestro motor de publicación trata la internacionalización como un paso de compilación en el momento de la compilación. Cada artículo se almacena como una carga útil JSON estructurada en el control de versiones. En el momento de la implementación, una canalización de Vite React SSG procesa el gráfico de contenido y genera archivos HTML estáticos distintos y completamente renderizados para todos los idiomas de destino: inglés, español, francés, alemán, árabe y urdu."
+      "text": "La premisa fundamental de la World Wide Web era simple: cada localizador uniforme de recursos (URL) apunta a un documento HTML accesible que contiene lenguaje humano real y rastreable. Sin embargo, el auge de las aplicaciones de una sola página (SPA) del lado del cliente rompió esta base. En las arquitecturas web modernas en tiempo de ejecución, visitar un artículo a menudo devuelve un shell HTML vacío que inicia una cascada de paquetes de JavaScript, comprobaciones de autenticación y búsquedas de API de traducción JSON asincrónicas."
     },
     {
       "type": "code",
       "lang": "ts",
       "code": "export function generateHreflangTags(baseUrl: string, slug: string, languages: Language[]) {\n  return languages.map(lang => ({\n    rel: 'alternate',\n    hreflang: lang.code,\n    href: `${baseUrl}${lang.isDefault ? '' : '/' + lang.code}/articles/${slug}`\n  }));\n}"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Static Multilingual Publishing - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Static Multilingual Publishing."
     },
     {
       "type": "quote",
@@ -43,11 +55,11 @@
     },
     {
       "type": "h2",
-      "text": "Tipografía bidireccional y diseños compatibles con scripts"
+      "text": "Inversión de la topología: compilación multilingüe en tiempo de compilación"
     },
     {
       "type": "p",
-      "text": "Construir una plataforma de publicación verdaderamente global requiere respetar la cultura tipográfica. Idiomas como el árabe y el urdu no simplemente invierten la alineación del texto; requieren métricas de fuente, proporciones de altura de línea y orientaciones de diseño completamente diferentes. Al inyectar el atributo html dir='rtl' en el momento de la compilación, las propiedades lógicas de CSS (como margin-inline-start y padding-inline-end) se ajustan a su lugar de forma nativa sin volver a calcular el diseño de JavaScript."
+      "text": "La premisa fundamental de la World Wide Web era simple: cada localizador uniforme de recursos (URL) apunta a un documento HTML accesible que contiene lenguaje humano real y rastreable. Sin embargo, el auge de las aplicaciones de una sola página (SPA) del lado del cliente rompió esta base. En las arquitecturas web modernas en tiempo de ejecución, visitar un artículo a menudo devuelve un shell HTML vacío que inicia una cascada de paquetes de JavaScript, comprobaciones de autenticación y búsquedas de API de traducción JSON asincrónicas."
     },
     {
       "type": "h3",
@@ -56,24 +68,24 @@
     {
       "type": "ul",
       "items": [
-        "Cero dependencias de bases de datos en tiempo de ejecución: eliminación de grupos de conexiones de bases de datos, pausas sin servidor de arranque en frío y superficies de ataque de inyección SQL.",
-        "Esquema JSON-LD determinista: microdatos estructurados de artículo, lista de ruta de navegación y organización directamente dentro de las etiquetas principales del HTML estático.",
-        "Mapas de sitio XML particionados: división automática de mapas de sitio por tipo de contenido (artículos, categorías, autores, mercados) con enlaces cruzados hreflang bidireccionales para robots de búsqueda.",
-        "Replicación de borde global: ofrece activos HTML estáticos desde más de 300 puntos de presencia (PoP) de Cloudflare en todo el mundo con índices de aciertos de caché del 100 %."
+        "Zero runtime database dependencies: Eliminating database connection pools, cold-start serverless pauses, and SQL injection attack surfaces.",
+        "Deterministic JSON-LD schema: Prerendering Article, BreadcrumbList, and Organization structured microdata directly inside the head tags of the static HTML.",
+        "Partitioned XML Sitemaps: Automatically dividing sitemaps by content type (articles, categories, authors, markets) with bidirectional hreflang cross-links for search bots.",
+        "Global edge replication: Serving static HTML assets from 300+ worldwide Cloudflare Points of Presence (PoPs) with 100% cache hit ratios."
       ]
     },
     {
       "type": "h2",
-      "text": "Métricas de rendimiento empíricas"
+      "text": "Inversión de la topología: compilación multilingüe en tiempo de compilación"
     },
     {
       "type": "p",
-      "text": "Los beneficios cuantitativos de esta arquitectura son innegables. El tiempo promedio hasta el primer byte (TTFB) cae de 450 ms en backends de CMS tradicionales a menos de 25 ms en el borde. First Contentful Paint (FCP) registra 0,3 s a nivel mundial, y Cumulative Layout Shift (CLS) está matemáticamente bloqueado en cero."
+      "text": "La premisa fundamental de la World Wide Web era simple: cada localizador uniforme de recursos (URL) apunta a un documento HTML accesible que contiene lenguaje humano real y rastreable. Sin embargo, el auge de las aplicaciones de una sola página (SPA) del lado del cliente rompió esta base. En las arquitecturas web modernas en tiempo de ejecución, visitar un artículo a menudo devuelve un shell HTML vacío que inicia una cascada de paquetes de JavaScript, comprobaciones de autenticación y búsquedas de API de traducción JSON asincrónicas."
     },
     {
       "type": "p",
-      "text": "Al unir la generación de sitios estáticos con canales de tiempo de construcción multilingües, Questo demuestra que la ingeniería web moderna puede ofrecer un rendimiento internacional ultrarrápido y al mismo tiempo mantener la dignidad editorial atemporal de la palabra impresa."
+      "text": "La premisa fundamental de la World Wide Web era simple: cada localizador uniforme de recursos (URL) apunta a un documento HTML accesible que contiene lenguaje humano real y rastreable. Sin embargo, el auge de las aplicaciones de una sola página (SPA) del lado del cliente rompió esta base. En las arquitecturas web modernas en tiempo de ejecución, visitar un artículo a menudo devuelve un shell HTML vacío que inicia una cascada de paquetes de JavaScript, comprobaciones de autenticación y búsquedas de API de traducción JSON asincrónicas."
     }
   ],
-  "sourceHash": "33dab6bbfa97adc2f2594c041c5f5c3e4ab5eb0b"
+  "sourceHash": "9e560b1d41bbc69f611a7866d8311bd7b80a5d26"
 }

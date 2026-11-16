@@ -11,8 +11,8 @@
     "craftsmanship",
     "sustainability"
   ],
-  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Pain artisanal au levain moulu sur pierre présentant des cloques de croûte caramélisée et une structure de mie alvéolaire",
+  "image": "https://images.unsplash.com/photo-1514944298352-bf6d4821a37c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Artisan stone-milled sourdough bread loaf displaying caramelized crust blisters and alveolar crumb structure",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "Dans un levain spontané mature et stable, l'équilibre écologique s'établit généralement selon un rapport strict : environ 100 cellules de bactéries lactiques pour chaque cellule de levure sauvage (rapport 100 : 1). L'espèce bactérienne archétypale dominant les levains traditionnels européens est Fructilactobacillus sanfranciscensis (anciennement Lactobacillus sanfranciscensis), qui opère en synergie métabolique précise avec la levure Kazachstania exigua (ou Candida humilis)."
+      "text": "Pendant plus de dix mille ans, la transformation des céréales moulues en pain au levain a constitué la maîtrise biochimique fondamentale de l'humanité. Alors que la boulangerie commerciale tout au long du XXe siècle a simplifié cette ancienne alchimie en une inoculation monotypique industrialisée de Saccharomyces cerevisiae, le levain sauvage traditionnel représente un écosystème microbien complexe et riche en biodiversité. La symbiose complexe entre les bactéries lactiques hétérofermentaires (LAB) et les levures sauvages tolérantes aux acides régit non seulement la rétention de gaz, mais aussi la protéolyse enzymatique, la déphosphorylation des phytates et la modulation glycémique."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Microbial Ecology of Sourdough."
     },
     {
       "type": "p",
-      "text": "Cette symbiose repose sur une utilisation non concurrente de substrats carbonés. F. sanfranciscensis est positif au maltose et négatif au saccharose, métabolisant le maltose libéré par les enzymes amylases des céréales en glucose et maltose-6-phosphate. À l’inverse, Kazachstania exigua est maltose-négatif, consommant le glucose libéré par la bactérie sans entrer en compétition pour le substrat primaire du maltose. Ce pacte métabolique mutualiste empêche l’une ou l’autre espèce de supplanter l’autre."
+      "text": "Pendant plus de dix mille ans, la transformation des céréales moulues en pain au levain a constitué la maîtrise biochimique fondamentale de l'humanité. Alors que la boulangerie commerciale tout au long du XXe siècle a simplifié cette ancienne alchimie en une inoculation monotypique industrialisée de Saccharomyces cerevisiae, le levain sauvage traditionnel représente un écosystème microbien complexe et riche en biodiversité. La symbiose complexe entre les bactéries lactiques hétérofermentaires (LAB) et les levures sauvages tolérantes aux acides régit non seulement la rétention de gaz, mais aussi la protéolyse enzymatique, la déphosphorylation des phytates et la modulation glycémique."
     },
     {
       "type": "quote",
@@ -36,55 +42,61 @@
       "cite": "Sofia Rossi, boursière en gastronomie et chimie alimentaire"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Microbial Ecology of Sourdough."
+    },
+    {
       "type": "h2",
-      "text": "2. Cinétique de l'acidité : équilibre entre l'acide lactique et l'acide acétique"
+      "text": "1. Taxonomie microbienne symbiotique : le rapport LAB/levure"
     },
     {
       "type": "p",
-      "text": "Le profil aromatique et l’architecture du gluten du levain sont directement façonnés par les acides organiques produits lors d’une fermentation prolongée. Le LAB hétérofermentaire utilise la voie du 6-phosphogluconate pour synthétiser deux acides primaires :"
+      "text": "Pendant plus de dix mille ans, la transformation des céréales moulues en pain au levain a constitué la maîtrise biochimique fondamentale de l'humanité. Alors que la boulangerie commerciale tout au long du XXe siècle a simplifié cette ancienne alchimie en une inoculation monotypique industrialisée de Saccharomyces cerevisiae, le levain sauvage traditionnel représente un écosystème microbien complexe et riche en biodiversité. La symbiose complexe entre les bactéries lactiques hétérofermentaires (LAB) et les levures sauvages tolérantes aux acides régit non seulement la rétention de gaz, mais aussi la protéolyse enzymatique, la déphosphorylation des phytates et la modulation glycémique."
     },
     {
       "type": "ul",
       "items": [
-        "Acide lactique (C3H6O3) : confère une acidité douce, douce et crémeuse semblable à celle d'un yaourt. Synthétisé de préférence à des températures d'hydratation plus chaudes (26°C à 30°C) avec des hydratations liquides de démarrage.",
-        "Acide acétique (C2H4O2) : confère une morsure piquante et piquante semblable à celle du vinaigre. Synthétisé de préférence à des températures de retard plus fraîches (10 °C à 18 °C) avec des hydratations de départ plus rigides (50 % à 65 % d'eau).",
-        "Le Quotient Fermentaire (FQ) : Le rapport molaire acide lactique/acide acétique se situe idéalement entre 3 :1 et 4 :1 pour des pains artisanaux harmonisés."
+        "Lactic Acid (C3H6O3): Imparts a smooth, mild, creamy yogurt-like acidity. Synthesized preferentially at warmer hydration temperatures (26°C to 30°C) with liquid starter hydrations.",
+        "Acetic Acid (C2H4O2): Imparts a sharp, pungent, vinegar-like bite. Synthesized preferentially under cooler retardation temperatures (10°C to 18°C) with stiffer starter hydrations (50% to 65% water).",
+        "The Fermentation Quotient (FQ): The molar ratio of lactic to acetic acid ideally ranges between 3:1 and 4:1 for harmonized artisan loaves."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo en sciences : microbiologie de la fermentation du levain"
+      "text": "1. Taxonomie microbienne symbiotique : le rapport LAB/levure"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "Science de la fermentation du levain sauvage et cinétique lactique",
-      "caption": "Examen microbiologique de la culture des levains, de la protéolyse du gluten et de la thermodynamique des ressorts du four thermique."
+      "title": "Wild Sourdough Fermentation Science & Lactic Kinetics",
+      "caption": "Microbiological examination of starter cultivation, gluten proteolysis, and thermal oven spring thermodynamics."
     },
     {
       "type": "h2",
-      "text": "4. Protéolyse enzymatique du gluten et structure des miettes alvéolaires"
+      "text": "1. Taxonomie microbienne symbiotique : le rapport LAB/levure"
     },
     {
       "type": "p",
-      "text": "À mesure que l'accumulation d'acide bactérien fait baisser le pH de la pâte de 5,8 à entre 3,8 et 4,2, les enzymes endogènes des céréales, en particulier les protéases aspartiques, sont activées. Ces enzymes coupent sélectivement les liaisons disulfure au sein des chaînes peptidiques de gluténine et de gliadine de poids moléculaire élevé."
+      "text": "Pendant plus de dix mille ans, la transformation des céréales moulues en pain au levain a constitué la maîtrise biochimique fondamentale de l'humanité. Alors que la boulangerie commerciale tout au long du XXe siècle a simplifié cette ancienne alchimie en une inoculation monotypique industrialisée de Saccharomyces cerevisiae, le levain sauvage traditionnel représente un écosystème microbien complexe et riche en biodiversité. La symbiose complexe entre les bactéries lactiques hétérofermentaires (LAB) et les levures sauvages tolérantes aux acides régit non seulement la rétention de gaz, mais aussi la protéolyse enzymatique, la déphosphorylation des phytates et la modulation glycémique."
     },
     {
       "type": "p",
-      "text": "La protéolyse contrôlée détend la matrice élastique de la pâte, augmentant l'extensibilité tout en ramollissant la mie finale. Cependant, une acidification excessive provoque un effondrement structurel : une protéolyse excessive liquide le filet de gluten, empêchant la rétention de bulles de dioxyde de carbone pendant la cuisson et donnant une brique dense et gommeuse. Pour obtenir une mie alvéolaire ouverte et sauvage, il faut arrêter la fermentation au pic optimal d’élasticité structurelle et d’expansion des gaz."
+      "text": "Pendant plus de dix mille ans, la transformation des céréales moulues en pain au levain a constitué la maîtrise biochimique fondamentale de l'humanité. Alors que la boulangerie commerciale tout au long du XXe siècle a simplifié cette ancienne alchimie en une inoculation monotypique industrialisée de Saccharomyces cerevisiae, le levain sauvage traditionnel représente un écosystème microbien complexe et riche en biodiversité. La symbiose complexe entre les bactéries lactiques hétérofermentaires (LAB) et les levures sauvages tolérantes aux acides régit non seulement la rétention de gaz, mais aussi la protéolyse enzymatique, la déphosphorylation des phytates et la modulation glycémique."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir scientifiques pour la fabrication du pain artisanal"
+      "text": "1. Taxonomie microbienne symbiotique : le rapport LAB/levure"
     },
     {
       "type": "ul",
       "items": [
-        "La température dicte la saveur : le contrôle de la température de fermentation en vrac permet aux boulangers de contrôler le quotient acide lactique-acétique.",
-        "Activation de la phytase : un pH faible déclenche la phytase des céréales, dégradant l'acide phytique anti-nutritionnel et augmentant la biodisponibilité du zinc, du fer et du magnésium.",
-        "Fenêtre de fermentation : l'extensibilité maximale de la pâte se produit avant la dégradation enzymatique complète du gluten, définissant le véritable art de la monographie artisanale."
+        "Temperature Dictates Flavor: Controlling bulk fermentation temperature enables bakers to steer the lactic-to-acetic acid quotient.",
+        "Phytase Activation: Low pH triggers cereal phytase, breaking down anti-nutritional phytic acid and increasing bioavailability of zinc, iron, and magnesium.",
+        "Fermentation Window: Peak dough extensibility occurs prior to complete enzymatic gluten breakdown, defining the true art of the artisan monograph."
       ]
     }
   ],
-  "sourceHash": "8dd1dc54c2eee4c2eac3a9817d02b7e25d02a7d3"
+  "sourceHash": "3f1b660e5de37d1f6312a18924ce51bdf8f75a4f"
 }

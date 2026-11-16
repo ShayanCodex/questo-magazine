@@ -13,7 +13,7 @@
     "algorithms"
   ],
   "image": "/images/articles/neuromorphic-chip.jpg",
-  "imageAlt": "Futuristische elektronische Leiterplatte und Hochleistungs-Mikroprozessorchip mit beleuchteten neuronalen Verbindungswegen",
+  "imageAlt": "Futuristic electronic printed circuit board and high performance microprocessor chip with illuminated neural connection pathways",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "Neuromorphic Engineering gibt das uhrgesteuerte Synchronparadigma vollständig auf. Durch die Nachahmung der biologischen Architektur kortikaler Synapsen und Axone führen neuromorphe Prozessoren Berechnungen nur dann aus, wenn sich Informationen ändern. Dabei übertragen sie spärliche, asynchrone binäre Aktionspotentiale (Spitzen) über massiv parallele, nicht von Neumann-Kreuzschienen-Arrays, in denen Verarbeitung und Speicher im selben physischen Substrat untergebracht sind."
+      "text": "Zeitgenössische tiefe neuronale Netze sind rechenintensiv. Auf synchronen Von-Neumann-Architekturen arbeiten Standard-GPUs und TPUs und führen dichte Matrixmultiplikationen aus, indem sie Multi-Gigabyte-Gewichtungstensoren ständig zwischen High-Bandwidth-Speicher (HBM) und Arithmetik-Logik-Einheiten (ALUs) hin- und herpendeln und dabei Hunderte Watt pro Beschleuniger verbrauchen. Im krassen Gegensatz dazu führt das biologische menschliche Gehirn anspruchsvolle Sinneswahrnehmungen, motorische Kontrolle und kontextbezogenes Denken mit einem knappen Leistungsbudget von etwa zwanzig Watt aus."
     },
     {
       "type": "h2",
       "text": "1. Leaky Integrate-and-Fire-Dynamik in Silizium"
     },
     {
-      "type": "p",
-      "text": "Die mathematische Grundlage von Spiking Neural Networks (SNNs) ist das Leaky Integrate-and-Fire (LIF)-Neuronenmodell. Das Membranpotential $V(t)$ integriert eingehende synaptische Ströme über einen kontinuierlichen Zeitraum und fällt exponentiell in Richtung eines Ruhepotentials entsprechend der Membranzeitkonstante $\\tau_m$ ab:"
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Neuromorphic Computing & Spiking Neural Networks - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Neuromorphic Computing & Spiking Neural Networks."
     },
     {
       "type": "p",
-      "text": "$\\tau_m \\frac{dV(t)}{dt} = -(V(t) - V_{\\text{rest}}) + R_m I(t)$. Wenn das Membranpotential einen vorgegebenen Spannungsschwellenwert $V_{\\text{th}}$ überschreitet, feuert das Neuron eine diskrete Spitze in das Netzwerk, setzt sein Potential zurück und tritt in eine Refraktärphase ein. Da Neuronen in Ruhe bleiben, bis sie durch zeitliche Spitzen aktiviert werden, verbraucht neuromorphes Silizium in Zeiten statischer Eingaben keine dynamische Energie und erreicht so eine um drei bis vier Größenordnungen höhere Energieeffizienz als herkömmliche digitale Beschleuniger."
+      "text": "Zeitgenössische tiefe neuronale Netze sind rechenintensiv. Auf synchronen Von-Neumann-Architekturen arbeiten Standard-GPUs und TPUs und führen dichte Matrixmultiplikationen aus, indem sie Multi-Gigabyte-Gewichtungstensoren ständig zwischen High-Bandwidth-Speicher (HBM) und Arithmetik-Logik-Einheiten (ALUs) hin- und herpendeln und dabei Hunderte Watt pro Beschleuniger verbrauchen. Im krassen Gegensatz dazu führt das biologische menschliche Gehirn anspruchsvolle Sinneswahrnehmungen, motorische Kontrolle und kontextbezogenes Denken mit einem knappen Leistungsbudget von etwa zwanzig Watt aus."
+    },
+    {
+      "type": "p",
+      "text": "Zeitgenössische tiefe neuronale Netze sind rechenintensiv. Auf synchronen Von-Neumann-Architekturen arbeiten Standard-GPUs und TPUs und führen dichte Matrixmultiplikationen aus, indem sie Multi-Gigabyte-Gewichtungstensoren ständig zwischen High-Bandwidth-Speicher (HBM) und Arithmetik-Logik-Einheiten (ALUs) hin- und herpendeln und dabei Hunderte Watt pro Beschleuniger verbrauchen. Im krassen Gegensatz dazu führt das biologische menschliche Gehirn anspruchsvolle Sinneswahrnehmungen, motorische Kontrolle und kontextbezogenes Denken mit einem knappen Leistungsbudget von etwa zwanzig Watt aus."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1564325724739-bae0bd08762c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Neuromorphic Computing & Spiking Neural Networks - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Neuromorphic Computing & Spiking Neural Networks."
     },
     {
       "type": "quote",
@@ -42,51 +54,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Nicht-Von Neumann Memory-Crossbar Co-Location"
+      "text": "1. Leaky Integrate-and-Fire-Dynamik in Silizium"
     },
     {
       "type": "p",
-      "text": "In herkömmlichen Hardware-Architekturen führt die physische Trennung von Recheneinheiten und Speicherbänken zu der berüchtigten „von Neumann-Speicherwand“ – über 80 % der gesamten Energieverluste werden ausschließlich für den Kupferverbindungstransport verschwendet. Neuromorphe Plattformen wie Intel Loihi, IBM TrueNorth und neue Memristor-Arrays beseitigen diesen Engpass durch verteilte synaptische Crossbars."
+      "text": "Zeitgenössische tiefe neuronale Netze sind rechenintensiv. Auf synchronen Von-Neumann-Architekturen arbeiten Standard-GPUs und TPUs und führen dichte Matrixmultiplikationen aus, indem sie Multi-Gigabyte-Gewichtungstensoren ständig zwischen High-Bandwidth-Speicher (HBM) und Arithmetik-Logik-Einheiten (ALUs) hin- und herpendeln und dabei Hunderte Watt pro Beschleuniger verbrauchen. Im krassen Gegensatz dazu führt das biologische menschliche Gehirn anspruchsvolle Sinneswahrnehmungen, motorische Kontrolle und kontextbezogenes Denken mit einem knappen Leistungsbudget von etwa zwanzig Watt aus."
     },
     {
       "type": "p",
-      "text": "Jede künstliche Synapse speichert ihr programmatisches Gewicht lokal mithilfe von nichtflüchtigem Widerstands-RAM (ReRAM) oder Phasenwechselspeicher (PCM). Wenn eine Spannungsspitze eine Wortleitung durchquert, berechnen das Ohmsche Gesetz und das aktuelle Kirchhoffsche Gesetz auf natürliche Weise Vektor-Matrix-Produkte mit der Geschwindigkeit der Elektrizität: $I_j = \\sum_i V_i \\cdot G_{ij}$, wobei die Leitfähigkeit $G_{ij}$ die synaptische Wirksamkeit darstellt. Die Berechnung erfolgt vor Ort innerhalb der Speicherstruktur selbst."
+      "text": "Zeitgenössische tiefe neuronale Netze sind rechenintensiv. Auf synchronen Von-Neumann-Architekturen arbeiten Standard-GPUs und TPUs und führen dichte Matrixmultiplikationen aus, indem sie Multi-Gigabyte-Gewichtungstensoren ständig zwischen High-Bandwidth-Speicher (HBM) und Arithmetik-Logik-Einheiten (ALUs) hin- und herpendeln und dabei Hunderte Watt pro Beschleuniger verbrauchen. Im krassen Gegensatz dazu führt das biologische menschliche Gehirn anspruchsvolle Sinneswahrnehmungen, motorische Kontrolle und kontextbezogenes Denken mit einem knappen Leistungsbudget von etwa zwanzig Watt aus."
     },
     {
       "type": "h2",
-      "text": "3. Video-Masterclass: Prinzipien des Neuromorphic Engineering"
+      "text": "1. Leaky Integrate-and-Fire-Dynamik in Silizium"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/H4_G3Lz7m9U",
-      "title": "Neuromorphic Computing: Gehirninspirierte Hardware und Spiking Neural Networks",
-      "caption": "Ein technisches Seminar über ereignisbasierte Vision-Sensoren, asynchrone Routing-Fabrics und sensorische Kantenverarbeitung im Submilliwattbereich."
+      "title": "Neuromorphic Computing: Brain-Inspired Hardware and Spiking Neural Networks",
+      "caption": "A technical seminar on event-based vision sensors, asynchronous routing fabrics, and sub-milliwatt sensory edge processing.",
+      "src": "https://www.youtube-nocookie.com/embed/aircAruvnKk"
     },
     {
       "type": "h2",
-      "text": "4. Ereignisbasierte Vision und autonome Edge-Anwendungen"
+      "text": "1. Leaky Integrate-and-Fire-Dynamik in Silizium"
     },
     {
       "type": "p",
-      "text": "Herkömmliche Kameras erfassen die Welt in diskreten, redundanten Bildern (z. B. 60 Bilder pro Sekunde) und erzeugen selbst bei der Betrachtung völlig stationärer Szenen riesige Datenmengen. Im Gegensatz dazu bestehen neuromorphe dynamische Vision-Sensoren (DVS) aus autonomen Pixeln, die nur dann eine asynchrone Spitze aussenden, wenn sich die lokale Luminanz um einen Schwellenprozentsatz ändert."
+      "text": "Zeitgenössische tiefe neuronale Netze sind rechenintensiv. Auf synchronen Von-Neumann-Architekturen arbeiten Standard-GPUs und TPUs und führen dichte Matrixmultiplikationen aus, indem sie Multi-Gigabyte-Gewichtungstensoren ständig zwischen High-Bandwidth-Speicher (HBM) und Arithmetik-Logik-Einheiten (ALUs) hin- und herpendeln und dabei Hunderte Watt pro Beschleuniger verbrauchen. Im krassen Gegensatz dazu führt das biologische menschliche Gehirn anspruchsvolle Sinneswahrnehmungen, motorische Kontrolle und kontextbezogenes Denken mit einem knappen Leistungsbudget von etwa zwanzig Watt aus."
     },
     {
       "type": "p",
-      "text": "In Verbindung mit neuralen Spitzenprozessoren ermöglichen ereignisbasierte Sensoren eine zeitliche Auflösung im Mikrosekundenbereich, einen hohen Dynamikbereich (>120 dB) und die Eliminierung von Bewegungsunschärfe bei Betrieb mit Milliwatt Leistung. Diese Eigenschaften machen neuromorphe Systeme ideal für die Hochgeschwindigkeitsstabilisierung von Robotern, die Steuerung von Gliedmaßenprothesen, die Satellitenverfolgung und die biomedizinische Edge-Telemetrie."
+      "text": "Zeitgenössische tiefe neuronale Netze sind rechenintensiv. Auf synchronen Von-Neumann-Architekturen arbeiten Standard-GPUs und TPUs und führen dichte Matrixmultiplikationen aus, indem sie Multi-Gigabyte-Gewichtungstensoren ständig zwischen High-Bandwidth-Speicher (HBM) und Arithmetik-Logik-Einheiten (ALUs) hin- und herpendeln und dabei Hunderte Watt pro Beschleuniger verbrauchen. Im krassen Gegensatz dazu führt das biologische menschliche Gehirn anspruchsvolle Sinneswahrnehmungen, motorische Kontrolle und kontextbezogenes Denken mit einem knappen Leistungsbudget von etwa zwanzig Watt aus."
     },
     {
       "type": "h2",
-      "text": "5. Erkenntnisse aus dem System: Biologische Siliziumarchitektur"
+      "text": "1. Leaky Integrate-and-Fire-Dynamik in Silizium"
     },
     {
       "type": "ul",
       "items": [
-        "Sparsity als Effizienz: Die Berechnung wird ausschließlich beim Eintreffen von Ereignissen ausgeführt; Ruhende Neuronen verbrauchen nur statische Leckleistung unterhalb des Schwellenwerts.",
-        "Analoge In-Memory-Beschleunigung: Memristive Crossbars berechnen die physikalische Kirchhoff-Summierung direkt in der Speicherdomäne ohne Speicher-Shuttle.",
-        "Zeitliche Codierung: Informationen werden durch Spike-Timing, Inter-Spike-Intervalle und Phasensynchronität statt durch 16-Bit-Gleitkommaregister dargestellt.",
-        "Edge-Autonomie: Leistungshüllkurven im Sub-Milliwatt-Bereich ermöglichen die Echtzeitklassifizierung auf ungebundenen Sensorknoten, Drohnen und tragbaren medizinischen Monitoren."
+        "Sparsity as Efficiency: Computation executes exclusively upon event arrivals; quiescent neurons consume only static sub-threshold leakage power.",
+        "Analog In-Memory Acceleration: Memristive crossbars compute physical Kirchhoff summation directly in the storage domain without memory shuttling.",
+        "Temporal Coding: Information is represented through spike timing, inter-spike intervals, and phase synchrony rather than 16-bit floating-point registers.",
+        "Edge Autonomy: Sub-milliwatt power envelopes allow real-time classification on untethered sensor nodes, drones, and wearable medical monitors."
       ]
     }
   ],
-  "sourceHash": "1e21cb68a7f095bc877b1ad45ae9638a00c370bf"
+  "sourceHash": "3bb956e1704e7649469dfb80daf7e5efdcd72047"
 }

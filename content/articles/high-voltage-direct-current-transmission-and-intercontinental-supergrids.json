@@ -14,7 +14,7 @@
     "infrastructure",
     "power-grids"
   ],
-  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1510519138111-55099f3e5330?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "High-voltage electric transmission pylons against sky representing continental power distribution",
   "body": [
     {
@@ -30,12 +30,24 @@
       "text": "1. The Physical Limitations of Alternating Current at Scale"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting HVDC Transmission & Supergrids."
+    },
+    {
       "type": "p",
       "text": "In high-voltage AC cables, continuous sinusoidal current alternations (50 or 60 Hz) generate two severe physical loss mechanisms: the skin effect and capacitive dielectric displacement."
     },
     {
       "type": "p",
       "text": "The skin effect forces AC electrons toward the outer perimeter of a conductor, reducing the effective cross-sectional area and multiplying electrical resistance. In subsea or underground cables, the insulating dielectric surrounding the conductor forms a massive cylindrical capacitor with the surrounding seawater or soil:"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting HVDC Transmission & Supergrids."
     },
     {
       "type": "code",

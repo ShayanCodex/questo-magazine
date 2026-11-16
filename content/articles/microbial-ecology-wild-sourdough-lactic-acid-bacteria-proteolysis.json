@@ -13,7 +13,7 @@
     "craftsmanship",
     "sustainability"
   ],
-  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1514944298352-bf6d4821a37c?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Artisan stone-milled sourdough bread loaf displaying caramelized crust blisters and alveolar crumb structure",
   "body": [
     {
@@ -29,6 +29,12 @@
       "text": "In a mature, stable spontaneous sourdough starter, the ecological equilibrium typically settles at a strict ratio: approximately 100 lactic acid bacteria cells for every single wild yeast cell (100:1 ratio). The archetypal bacterial species dominating traditional European starters is Fructilactobacillus sanfranciscensis (formerly Lactobacillus sanfranciscensis), which operates in precise metabolic synergy with the yeast Kazachstania exigua (or Candida humilis)."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Microbial Ecology of Sourdough."
+    },
+    {
       "type": "p",
       "text": "This symbiosis is anchored upon non-competing carbon substrate utilization. F. sanfranciscensis is maltose-positive and sucrose-negative, metabolizing maltose released by cereal amylase enzymes into glucose and maltose-6-phosphate. Conversely, Kazachstania exigua is maltose-negative, consuming the glucose released by the bacteria without competing for the primary maltose substrate. This mutualistic metabolic pact prevents either species from out-competing the other."
     },
@@ -36,6 +42,12 @@
       "type": "quote",
       "text": "Sourdough fermentation is not leavening; it is a bio-preservation and pre-digestive technology where bacterial acid production unlocks micronutrients locked within raw grain bran.",
       "cite": "Sofia Rossi, Gastronomy & Food Chemistry Fellow"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Microbial Ecology of Sourdough - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Microbial Ecology of Sourdough."
     },
     {
       "type": "h2",

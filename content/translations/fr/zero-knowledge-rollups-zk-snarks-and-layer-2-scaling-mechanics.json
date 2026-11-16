@@ -11,8 +11,8 @@
     "blockchain",
     "cryptography"
   ],
-  "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Topologie de réseau cryptographique futuriste représentant des preuves décentralisées à connaissance nulle",
+  "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Futuristic cryptographic network topology representing decentralized zero-knowledge proofs",
   "body": [
     {
       "type": "p",
@@ -20,15 +20,21 @@
     },
     {
       "type": "p",
-      "text": "Dans un zk-Rollup, un séquenceur hors chaîne exécute des milliers de transactions, met à jour un arbre d'état interne de Merkle et calcule une preuve arithmétique affirmant que toutes les mises à jour d'état respectent strictement les règles du protocole. Cette preuve, d'une taille généralement de quelques centaines d'octets seulement, est soumise à un contrat intelligent en chaîne sur Ethereum Layer 1, où elle est vérifiée en millisecondes, quelle que soit la complexité ou la quantité des transactions sous-jacentes."
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     },
     {
       "type": "h2",
       "text": "1. Le circuit arithmétique et la représentation R1CS"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Zero-Knowledge Rollups & zk-SNARKs."
+    },
+    {
       "type": "p",
-      "text": "Pour vérifier des transitions d'état complexes sans révéler les paramètres de transaction sous-jacents ni exécuter d'instructions séquentielles en chaîne, le calcul de haut niveau est compilé en circuits arithmétiques sur de grands champs finis $\\mathbb{F}_p$. Ces circuits sont aplatis en systèmes de contraintes de rang 1 (R1CS), formalisés sous forme d'équations matricielles de la structure :"
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     },
     {
       "type": "code",
@@ -36,8 +42,14 @@
       "code": "(A · s) ∘ (B · s) = (C · s)\n\nWhere:\n- A, B, C are sparse coefficient matrices defining the program logic\n- s is the witness vector containing private inputs, public inputs, and intermediate wires\n- ∘ represents the Hadamard (element-wise) vector product"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Zero-Knowledge Rollups & zk-SNARKs."
+    },
+    {
       "type": "p",
-      "text": "La représentation R1CS est ensuite transformée en un programme arithmétique quadratique (QAP) par interpolation polynomiale de Lagrange. En convertissant les produits scalaires vectoriels en contrôles de divisibilité polynomiale ($P(x) = H(x) \\cdot T(x)$), le prouveur peut évaluer les relations polynomiales à un point d'évaluation secret sans exposer les états de calcul intermédiaires."
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     },
     {
       "type": "quote",
@@ -46,63 +58,63 @@
     },
     {
       "type": "h2",
-      "text": "2. Engagements polynomiaux : protocoles KZG vs. FRI"
+      "text": "1. Le circuit arithmétique et la représentation R1CS"
     },
     {
       "type": "p",
-      "text": "La primitive de base permettant une vérification succincte est le schéma d'engagement polynomial (PCS). Un PCS permet à un prouveur de s'engager sur un polynôme de haut degré avec une seule petite chaîne cryptographique et d'ouvrir ensuite les évaluations de ce polynôme à des points choisis avec une preuve incontestable d'exactitude."
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     },
     {
       "type": "p",
-      "text": "Deux familles principales dominent les systèmes de production modernes de couche 2 : les schémas Kate-Zaverucha-Goldberg (KZG) basés sur le couplage et les preuves de proximité Oracle interactives Fast Reed-Solomon (FRI) basées sur le hachage :"
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     },
     {
       "type": "ul",
       "items": [
-        "Engagements KZG (utilisés dans Scroll, Taiko, Linea) : produisent des preuves de taille constante (généralement 48 octets sur les courbes BLS12-381) et un temps de vérification constant. Ils nécessitent une chaîne de référence structurée (SRS) générée via une configuration cryptographique fiable.",
-        "Engagements FRI (utilisés dans Starknet / STARKs) : comptez strictement sur des fonctions de hachage cryptographique résistantes aux collisions. Ils ne nécessitent aucune configuration fiable, sont transparents et offrent une sécurité post-quantique théorique au prix de tailles de preuves plus grandes (10 Ko à 100 Ko).",
-        "Schémas Halo2 et IPA (utilisés dans Zcash, Scroll) : utilisez les arguments de produit internes à travers les cycles de courbe elliptique, éliminant les cérémonies de configuration fiables sans encourir les pénalités de bande passante des preuves STARK complètes."
+        "KZG Commitments (Used in Scroll, Taiko, Linea): Yield constant-size proofs (typically 48 bytes on BLS12-381 curves) and constant verification time. They require a Structured Reference String (SRS) generated via a cryptographic trusted setup.",
+        "FRI Commitments (Used in Starknet / STARKs): Rely strictly on collision-resistant cryptographic hash functions. They require zero trusted setups, are transparent, and provide theoretical post-quantum security at the cost of larger proof sizes (10KB–100KB).",
+        "Halo2 & IPA Schemes (Used in Zcash, Scroll): Utilize Inner Product Arguments across elliptic curve cycles, eliminating trusted setup ceremonies without incurring the bandwidth penalties of full STARK proofs."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Conférence technique : Vitalik Buterin sur les ZK-SNARK et la mise à l'échelle de la couche 2"
+      "text": "1. Le circuit arithmétique et la représentation R1CS"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "Preuves de connaissance nulle et fondements de la mise à l'échelle de la couche 2",
-      "caption": "Vitalik Buterin explique les fondements cryptographiques, les preuves de transition d'état et les architectures de cumul mettant à l'échelle Ethereum."
+      "title": "Zero-Knowledge Proofs and Layer-2 Scaling Foundations",
+      "caption": "Vitalik Buterin explains the cryptographic foundation, state transition proofs, and rollup architectures scaling Ethereum."
     },
     {
       "type": "h2",
-      "text": "4. Disponibilité des données et proto-Danksharding (EIP-4844)"
+      "text": "1. Le circuit arithmétique et la représentation R1CS"
     },
     {
       "type": "p",
-      "text": "Bien qu'une preuve de validité garantisse l'exactitude mathématique de l'exécution hors chaîne, elle ne garantit pas en soi que les données de transaction sous-jacentes sont accessibles au public. Sans disponibilité des données, les utilisateurs ne peuvent pas reconstruire l’arborescence des états en cas de censure du séquenceur ou de panne de l’infrastructure."
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     },
     {
       "type": "p",
-      "text": "Ethereum EIP-4844 a introduit des « blobs de données » : des espaces de données transitoires et bon marché attachés à des blocs qui persistent pendant environ 18 jours plutôt que d'occuper indéfiniment l'état d'exécution L1. En établissant des preuves de validité d'état sur l'exécution de couche 1 tout en publiant les deltas de transactions brutes sur le stockage de blob transitoire, les frais de cumul de gaz ont diminué de plus de 95 %, transformant les applications décentralisées en services publics à l'échelle du consommateur."
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir cryptographiques et principes du système"
+      "text": "1. Le circuit arithmétique et la représentation R1CS"
     },
     {
       "type": "ul",
       "items": [
-        "Caractère succinct de la réexécution : les ZK-SNARK permettent une vérifiabilité globale où le coût de vérification est de $O(1)$ ou $O(\\log n)$ par rapport à la complexité du calcul.",
-        "Séparation des préoccupations : découpler l'exécution (séquenceurs hors chaîne) du règlement et de la finalité (vérificateurs de contrats intelligents de couche 1).",
-        "Agrégation récursive : les prouveurs modernes regroupent des milliers de sous-preuves en une seule preuve principale, amortissant le gaz de vérification en chaîne sur des centaines de milliers de transactions.",
-        "Sécurité de la disponibilité des données : garantir que les transitions d'état de couche 2 restent reconstructibles via des réseaux de diffusion de blob décentralisés."
+        "Succinctness Over Re-execution: ZK-SNARKs enable global verifiability where verification cost is $O(1)$ or $O(\\log n)$ relative to computation complexity.",
+        "Separation of Concerns: Decouple execution (off-chain sequencers) from settlement and finality (Layer 1 smart contract verifiers).",
+        "Recursive Aggregation: Modern provers aggregate thousands of sub-proofs into a single master proof, amortizing on-chain verification gas across hundreds of thousands of transactions.",
+        "Data Availability Security: Ensure Layer 2 state transitions remain reconstructible through decentralized blob dissemination networks."
       ]
     },
     {
       "type": "p",
-      "text": "Avis de non-responsabilité pédagogique : cette monographie technique est publiée exclusivement pour la recherche universitaire en informatique, en cryptographie et en systèmes distribués. Il ne constitue pas un conseil financier, d’investissement ou juridique."
+      "text": "Le dilemme fondamental des architectures de registre décentralisées est le goulot d'étranglement de calcul vérifiable : si chaque nœud de validation d'un réseau peer-to-peer mondial doit réexécuter chaque transaction séquentiellement pour vérifier l'exactitude de l'état, le débit des transactions est strictement limité par la vitesse de traitement du nœud physique le plus lent. Les cumuls sans connaissance (zk-Rollups) résolvent cette contrainte grâce à des systèmes de preuve cryptographiques, remplaçant la réexécution distribuée redondante par une concision mathématique."
     }
   ],
-  "sourceHash": "523630936943ab95ea0e6983fdce3c8a20e619d1"
+  "sourceHash": "cd0c2f1cad9c8e207447722c4c2ad15c685431e2"
 }

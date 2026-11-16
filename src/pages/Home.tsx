@@ -261,7 +261,7 @@ export function Home() {
             >
               <div className="absolute inset-0">
                 <img
-                  src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=900&q=85"
+                  src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?auto=format&fit=crop&w=900&q=85"
                   alt="Questo Magazine Issue 03 Cover Art"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"

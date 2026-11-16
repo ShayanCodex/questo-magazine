@@ -11,8 +11,8 @@
     "reading-ergonomics",
     "editorial-systems"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "Cuadrícula tipográfica suiza armónica y escalas de fuentes matemáticas en el diseño de una hoja editorial",
+  "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Classic typographic book layout showing precise grid margins, proportional leading, and serif letterforms",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "La arquitectura musical de la página impresa"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Vintage lead metal type sorts arranged in an artisanal letterpress composing stick",
+      "caption": "Typographic heritage: translating movable metal type proportional rules into modern responsive viewport scales."
     },
     {
       "type": "ul",
       "items": [
-        "Escalas modulares matemáticas: El tipo de tamaño a lo largo de intervalos proporcionales (tercio menor 1.200, cuarto perfecto 1.333, proporción áurea 1.618) crea armonía visual subconsciente.",
-        "Formulación de abrazadera fluida: la utilización de las funciones CSS Clamp() interpola los tamaños de fuente suavemente en rangos continuos de ventanas gráficas sin saltos discordantes en los puntos de interrupción.",
-        "Medición y interlineado óptimos: Mantener de 45 a 75 caracteres por línea junto con una altura de línea de 1,4 a 1,6 preserva la velocidad de seguimiento de la retina en sesiones de lectura sostenidas.",
-        "Compensación de tamaño óptico: las fuentes variables ajustan dinámicamente el contraste de los trazos de los caracteres, la apertura de la apertura y el seguimiento a medida que el tamaño en puntos aumenta o disminuye."
+        "Mathematical Modular Scales: Sizing type along proportional intervals (Minor Third 1.200, Perfect Fourth 1.333, Golden Ratio 1.618) creates subconscious visual harmony.",
+        "Fluid Clamp Formulation: Utilizing CSS clamp() functions interpolates font sizes smoothly across continuous viewport ranges without jarring breakpoint jumps.",
+        "Optimal Measure & Leading: Maintaining 45 to 75 characters per line coupled with 1.4 to 1.6 line-height preserves retinal tracking velocity across sustained reading sessions.",
+        "Optical Size Compensation: Variable fonts dynamically adjust character stroke contrast, aperture openness, and tracking as point size scales up or down."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Elena Vance, Principios de geometría tipográfica"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital variable font design workspace showing weight, width, and optical size variation axes",
+      "caption": "Fluid typography: CSS clamp() functions and variable font axes harmonizing reading cadence across device dimensions."
+    },
+    {
       "type": "h2",
-      "text": "Fuentes variables y ergonomía óptica"
+      "text": "La arquitectura musical de la página impresa"
     },
     {
       "type": "p",
-      "text": "La llegada de las fuentes variables OpenType restaura el oficio de las perforadoras históricas. Al modular el eje \"opsz\" (tamaño óptico) junto con las dimensiones de la ventana gráfica de la pantalla, las caras de un texto digital mantienen una delicada elegancia en tamaños de pantalla monumentales al tiempo que aumentan los espacios del mostrador y la legibilidad en básculas móviles de mano."
+      "text": "La tipografía es música espacial. Así como una composición musical se basa en intervalos armónicos, síncopa y tempo, una obra maestra de tipografía editorial se estructura sobre relaciones proporcionales: progresiones de escala modular, cadencias de línea de base verticales y longitudes de línea de carácter disciplinadas (compás). En la web responsiva, la tipografía no puede permanecer estática; debe respirar dinámicamente con las proporciones físicas del dispositivo del lector."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "Sistemas de diseño editorial y dominio tipográfico",
-      "caption": "Exploración del brutalismo suizo, los sistemas de diseño modular y las matemáticas de la lectura de la tipografía."
+      "title": "Editorial Design Systems and Typographic Mastery",
+      "caption": "Exploration of Swiss brutalism, modular layout systems, and the mathematics of reading typography.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "El Manifiesto por la Lectura Lenta Digital"
+      "text": "La arquitectura musical de la página impresa"
     },
     {
       "type": "p",
-      "text": "Al rechazar el ruido apresurado de las plantillas en favor del ritmo tipográfico algorítmico, Questo Magazine proporciona un santuario arquitectónico para la atención profunda: una experiencia donde el arte tipográfico honra la inteligencia del lector."
+      "text": "La tipografía es música espacial. Así como una composición musical se basa en intervalos armónicos, síncopa y tempo, una obra maestra de tipografía editorial se estructura sobre relaciones proporcionales: progresiones de escala modular, cadencias de línea de base verticales y longitudes de línea de carácter disciplinadas (compás). En la web responsiva, la tipografía no puede permanecer estática; debe respirar dinámicamente con las proporciones físicas del dispositivo del lector."
     }
   ],
-  "sourceHash": "a87f18c9068b56d94aafedd846c7d806dd29c36f"
+  "sourceHash": "3e75f0d5b94a96f8a122370f079714d6c92dc2e5"
 }

@@ -12,7 +12,7 @@
     "algorithms"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Gráfico financiero de velas japonesas que muestra un impulso técnico alcista frente a una interfaz oscura",
+  "imageAlt": "Candlestick financial chart displaying upward technical momentum against a dark interface",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Hoy en día, una silenciosa revolución tecnológica está desmantelando esta barrera. Los protocolos WebSocket de alto rendimiento, los canales de representación vectorial de WebAssembly y los despachos de intercambio institucional abiertos hacen posible evaluar gráficos de múltiples períodos de tiempo directamente dentro de tiempos de ejecución de navegador estándar sin costoso software de terceros."
+      "text": "Durante décadas, las instituciones de Wall Street mantuvieron una ventaja asimétrica sobre los participantes minoristas globales a través de terminales de hardware patentados y tarifas exorbitantes de sindicación de datos de mercado. El acceso al descubrimiento de precios en tiempo real, la profundidad del flujo de pedidos de libros y los modelos de correlación entre activos estaba ferozmente protegido detrás de muros de pago de suscripción mensual de cinco cifras."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Algorithmic Market Intelligence and Open Financial Data."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "Questo Financial Technologies Dispatch"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Algorithmic Market Intelligence and Open Financial Data."
+    },
+    {
       "type": "h3",
       "text": "Métricas críticas de la inteligencia abierta moderna"
     },
     {
       "type": "ul",
       "items": [
-        "Osciladores matemáticos de submilisegundos (RSI, MACD, bandas de Bollinger) calculados localmente en matrices históricas.",
-        "Integridad de datos sin compromisos a través de divulgaciones regulatorias de intercambio público verificadas y cintas retrasadas.",
-        "Matrices de correlación entre activos y mercados múltiples que rastrean la liquidez de bonos soberanos, materias primas y divisas."
+        "Sub-millisecond mathematical oscillators (RSI, MACD, Bollinger Bands) computed locally on historical arrays.",
+        "Zero-compromise data integrity through verified public exchange regulatory disclosures and delayed tapes.",
+        "Cross-asset multi-market correlation matrices tracking sovereign bonds, commodities, and currency liquidity."
       ]
     },
     {
       "type": "p",
-      "text": "A medida que maduran las arquitecturas financieras abiertas, las plataformas de publicación digital que integran indicadores macroeconómicos en vivo directamente junto con investigaciones periodísticas crean un valor contextual incomparable para los analistas globales curiosos."
+      "text": "Durante décadas, las instituciones de Wall Street mantuvieron una ventaja asimétrica sobre los participantes minoristas globales a través de terminales de hardware patentados y tarifas exorbitantes de sindicación de datos de mercado. El acceso al descubrimiento de precios en tiempo real, la profundidad del flujo de pedidos de libros y los modelos de correlación entre activos estaba ferozmente protegido detrás de muros de pago de suscripción mensual de cinco cifras."
     }
   ],
-  "sourceHash": "6430a948ddf7d0cd90e6d8f81c30482d30577640"
+  "sourceHash": "e354fb121c1df4ece3a0fa71cc8f4e48be1bc568"
 }

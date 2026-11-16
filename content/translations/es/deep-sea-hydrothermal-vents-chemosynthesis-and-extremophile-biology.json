@@ -12,7 +12,7 @@
     "microbiology"
   ],
   "image": "/images/articles/deep-sea-hydrothermal-vent.jpg",
-  "imageAlt": "Chimenea humeante negra mineralizada que descarga fluidos hidrotermales sobrecalentados en la zona del océano abisal",
+  "imageAlt": "Mineralized black smoker chimney discharging superheated hydrothermal fluids in the abyssal ocean zone",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "Vida en la oscuridad perpetua"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Deep-Sea Hydrothermal Vents - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Deep-Sea Hydrothermal Vents."
     },
     {
       "type": "ul",
       "items": [
-        "Ventilación geotérmica sobrecalentada: Los depósitos de calor magmáticos calientan el agua de mar hasta 400 °C, eliminando el oxígeno disuelto y saturando los fluidos con sulfuro de hidrógeno, metano e iones metálicos disueltos.",
-        "Oxidación de sulfuro de hidrógeno: Las bacterias quimiolitoautótrofas utilizan la vía enzimática Sox para extraer electrones metabólicos del H2S, fijando el CO2 inorgánico en carbono orgánico.",
-        "Endosimbiosis en Riftia pachyptila: los gusanos tubulares de ventilación gigantes no poseen boca ni intestino y sobreviven enteramente gracias a la nutrición sintetizada por miles de millones de endosimbiontes sulfídicos en su trofosoma.",
-        "Análogos de astrobiología: La mineralogía de chimeneas hidrotermales proporciona el análogo terrestre preeminente para posibles zonas habitables dentro de los océanos de hielo subterráneos de Europa y Encelado."
+        "Superheated Geothermal Venting: Magmatic heat reservoirs warm seawater up to 400°C, stripping dissolved oxygen and saturating fluids with dissolved hydrogen sulfide, methane, and metal ions.",
+        "Hydrogen Sulfide Oxidation: Chemolithoautotrophic bacteria utilize the enzymatic Sox pathway to extract metabolic electrons from H2S, fixing inorganic CO2 into organic carbon.",
+        "Endosymbiosis in Riftia pachyptila: Giant vent tube worms possess neither mouth nor gut, surviving entirely on nutrition synthesized by billions of sulfidic endosymbionts in their trophosome.",
+        "Astrobiology Analogs: Hydrothermal chimney mineralogy provides the preeminent terrestrial analog for prospective habitable zones within the subsurface ice oceans of Europa and Enceladus."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Instituto Oceanográfico y Astrobiológico de las Profundidades"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Deep-Sea Hydrothermal Vents - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Deep-Sea Hydrothermal Vents."
+    },
+    {
       "type": "h2",
-      "text": "Fumadores negros y arquitectura de chimeneas minerales"
+      "text": "Vida en la oscuridad perpetua"
     },
     {
       "type": "p",
-      "text": "Cuando los fluidos de ventilación ácidos sobrecalentados se encuentran con agua de mar abisal alcalina y helada, se produce una precipitación rápida. Los sulfuros de hierro, cobre y zinc forman chimeneas tubulares porosas que actúan como células electroquímicas naturales con gradientes de protones a microescala que se asemejan a la compartimentación celular prebiótica temprana."
+      "text": "Miles de metros bajo la superficie oceánica, donde la luz del sol se extingue por completo y la presión hidrostática supera los cientos de atmósferas, los respiraderos hidrotermales de las profundidades marinas albergan algunas de las comunidades biológicas más extraordinarias de la Tierra. En lugar de depender de la fotosíntesis impulsada por la clorofila, estos ecosistemas prosperan gracias a la oxidación de sustancias químicas reducidas geotérmicas, un proceso denominado quimioautotrofia."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/D69hGvCsWgA",
-      "title": "Respiraderos hidrotermales de las profundidades oceánicas y ecosistemas quimiosintéticos",
-      "caption": "Imágenes sumergibles y estudios geológicos que exploran respiraderos oceánicos profundos, formación de chimeneas minerales y redes tróficas quimioautótrofas extremas."
+      "title": "Deep Ocean Hydrothermal Vents and Chemosynthetic Ecosystems",
+      "caption": "Submersible footage and geological survey exploring deep ocean vents, mineral chimney formation, and extreme chemoautotrophic trophic webs.",
+      "src": "https://www.youtube-nocookie.com/embed/D69hGvCsWgA"
     },
     {
       "type": "h2",
-      "text": "La cuna de la bioquímica terrestre"
+      "text": "Vida en la oscuridad perpetua"
     },
     {
       "type": "p",
-      "text": "La presencia de superficies catalíticas de hierro y azufre dentro de minerales hidrotermales microporosos proporciona evidencia empírica convincente para la hipótesis del mundo de hierro y azufre, señalando a los respiraderos submarinos como el posible lugar de nacimiento de las primeras redes metabólicas autorreplicantes."
+      "text": "Miles de metros bajo la superficie oceánica, donde la luz del sol se extingue por completo y la presión hidrostática supera los cientos de atmósferas, los respiraderos hidrotermales de las profundidades marinas albergan algunas de las comunidades biológicas más extraordinarias de la Tierra. En lugar de depender de la fotosíntesis impulsada por la clorofila, estos ecosistemas prosperan gracias a la oxidación de sustancias químicas reducidas geotérmicas, un proceso denominado quimioautotrofia."
     }
   ],
-  "sourceHash": "5aae5e6ac0f575bf51c5d00ac007e1c14006d670"
+  "sourceHash": "a2ff759e9f07f7e155ed364284a745309a97c896"
 }

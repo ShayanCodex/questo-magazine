@@ -12,7 +12,7 @@
     "concert-halls"
   ],
   "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "Skulpturale Akustikholzwandpaneele und architektonische Schallwände in einem modernen Philharmoniesaal",
+  "imageAlt": "Sculptural acoustic timber wall panels and architectural baffles in a modern philharmonic auditorium",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Jenseits von Spiegelreflexion und Absorption"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Acoustic Diffusors & Schroeder Sequences in Architecture."
     },
     {
       "type": "ul",
       "items": [
-        "Quadratische Rückstandsdiffusoren (QRD): Entworfen unter Verwendung der mathematischen modularen Arithmetik $s_n = n^2 \\pmod{N}$, wodurch Bohrlochtiefen erzeugt werden, die die Phase gleichmäßig verschieben.",
-        "Primitive Root Diffusors (PRD): Nutzen Sie die Primzahltheorie, um Spiegelreflexionen nullter Ordnung über breite akustische Mittelfrequenzbänder zu eliminieren.",
-        "Erhaltung der Nachhallenergie: Im Gegensatz zu Glasfaserabsorbern bewahren Diffusoren die Raumenergie und eliminieren gleichzeitig Flatterechos und Kammfilterung.",
-        "Räumliche Einhüllende: Verteilte Phasengitter-Arrays verstärken den subjektiven Eindruck der Zuhörereinhüllenden (LEV) in Symphoniehallen."
+        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths that shift phase evenly.",
+        "Primitive Root Diffusors (PRD): Utilize prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
+        "Preservation of Reverberant Energy: Unlike fiberglass absorbers, diffusors maintain room energy while eliminating flutter echoes and comb filtering.",
+        "Spatial Envelopment: Distributed phase grating arrays enhance the subjective impression of listener envelopment (LEV) in symphonic halls."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Acoustical Society of Architectural Engineers"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Acoustic Diffusors & Schroeder Sequences in Architecture."
+    },
+    {
       "type": "h2",
-      "text": "Phasengitter-Mathematik"
+      "text": "Jenseits von Spiegelreflexion und Absorption"
     },
     {
       "type": "p",
-      "text": "Mathematische Phasengitter wurden Ende der 1970er Jahre vom Physiker Manfred Schroeder entwickelt und nutzen unterschiedliche Vertiefungstiefen, die durch dünne akustische Teiler getrennt sind. Wenn eine einfallende Welle auf diese Vertiefungen trifft, treten die reflektierten Wellen mit deutlichen Phasenverzögerungen aus, was zu destruktiver Interferenz entlang der Spiegelachse und einer breiten Streuung an anderer Stelle führt."
+      "text": "Die Architekturakustik hat sich über die binäre Spannung von Spiegelreflexion und poröser Absorption hinaus entwickelt. Während harte, ebene Oberflächen Schall wie Spiegel reflektieren und dichte Stoffe die Schallenergie dämpfen, streuen Diffusoren einfallende Wellenenergie gleichmäßig über Zeit und Raumkoordinaten, ohne die akustische Vitalität der Umgebung zu beeinträchtigen."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/n3W-n_dF83U",
-      "title": "Architekturakustik und Schroeder-Diffusorphysik",
-      "caption": "Ein technischer Überblick über quadratische Rückstandsdiffusoren, Tiefenberechnungen und Schalldiffusionsmuster in Hörsälen."
+      "title": "Architectural Acoustics & Schroeder Diffusor Physics",
+      "caption": "An engineering overview of quadratic residue diffusors, well-depth calculations, and sound diffusion patterns in auditoriums.",
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
     },
     {
       "type": "h2",
-      "text": "Computergestützte Optimierung im zeitgenössischen Design"
+      "text": "Jenseits von Spiegelreflexion und Absorption"
     },
     {
       "type": "p",
-      "text": "Zeitgenössische Architekturpraktiken nutzen parametrische Finite-Elemente-Wellenmodellierung, um wellenförmige 3D-Holzpaneele direkt in die Innengeometrie von Auditorien zu schnitzen und so akustische Physik mit skulpturaler Ästhetik zu verbinden."
+      "text": "Die Architekturakustik hat sich über die binäre Spannung von Spiegelreflexion und poröser Absorption hinaus entwickelt. Während harte, ebene Oberflächen Schall wie Spiegel reflektieren und dichte Stoffe die Schallenergie dämpfen, streuen Diffusoren einfallende Wellenenergie gleichmäßig über Zeit und Raumkoordinaten, ohne die akustische Vitalität der Umgebung zu beeinträchtigen."
     }
   ],
-  "sourceHash": "968a630affc67b96338554bbe3f0f26e551bb1fa"
+  "sourceHash": "a694b4a265a24dd1874e8c29c785c9ef5dd9ef57"
 }

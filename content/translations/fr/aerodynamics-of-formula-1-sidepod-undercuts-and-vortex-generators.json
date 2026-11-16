@@ -1,0 +1,79 @@
+{
+  "slug": "aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators",
+  "title": "Aérodynamique F1 : génération d'épandage, contre-dépouilles des sidepods et scellement par effet de sol",
+  "excerpt": "Analyse télémétrique haute résolution de la répartition de la force d'appui, perte de vortex le long des jupes de plancher du bord de fuite et compromis en matière de refroidissement des freins thermiques dans le sport automobile moderne.",
+  "date": "2026-11-16",
+  "author": "Liam O’Connor",
+  "tags": [
+    "formula-1",
+    "aerodynamics",
+    "motorsport-engineering",
+    "ground-effect",
+    "telemetry"
+  ],
+  "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-speed Formula 1 car apex cornering through chicane with ground effect underfloor suction",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+    },
+    {
+      "type": "p",
+      "text": "Dans le sport automobile monoplace d'élite, le développement aérodynamique est une bataille incessante pour extraire l'appui tout en minimisant la traînée parasite et la sensibilité aérodynamique au tangage et au roulis du véhicule. Suite à la réintroduction de tunnels Venturi entièrement souterrains dans les règlements techniques contemporains de la Formule 1, le point central de la performance est passé des ailettes complexes au-dessus de la carrosserie à la gestion du flux d'air massique à travers des canaux convergents-divergents sous la carrosserie."
+    },
+    {
+      "type": "h2",
+      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Carbon-fiber sidepod undercut sculpting and rear diffuser expansion tunnel",
+      "caption": "Underfloor Venturi throat: accelerated mass airflow generating massive negative pressure beneath the chassis."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Venturi Suction & Bernoulli Principle: Restricting underfloor cross-sectional area forces incoming air to accelerate rapidly, generating immense negative pressure that suctions the chassis toward the asphalt.",
+        "Sidepod Undercut Channeling: Deep volumetric carving beneath sidepod radiators directs clean, unseparated airflow over the top of the rear diffuser, boosting mass expansion ratios.",
+        "Vortex Edge Sealing: Engineered floor edges utilize vortex generators to shed high-energy rotational air streams along floor perimeters, acting as an invisible aerodynamic skirt to prevent ambient air ingress.",
+        "Porpoising & Aerodynamic Stall: When extreme downforce compresses suspension past critical ride-height thresholds, the underfloor stalls abruptly, triggering catastrophic cyclical vehicle bouncing."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Downforce ne consiste pas simplement à produire une aspiration brute maximale dans une soufflerie statique ; il s'agit de fournir une plate-forme aérodynamique prévisible et stable qui offre au conducteur une conformité ultime à l'entrée dans les virages.",
+      "cite": "Examen de l'aérodynamique et de la dynamique des véhicules de course"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Pitlane aerodynamics telemetry monitors showing real-time ride-height sensors and downforce distribution",
+      "caption": "Vortex edge sealing: floor perimeter strakes shedding high-energy vortices to isolate underfloor negative pressure."
+    },
+    {
+      "type": "h2",
+      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+    },
+    {
+      "type": "p",
+      "text": "Dans le sport automobile monoplace d'élite, le développement aérodynamique est une bataille incessante pour extraire l'appui tout en minimisant la traînée parasite et la sensibilité aérodynamique au tangage et au roulis du véhicule. Suite à la réintroduction de tunnels Venturi entièrement souterrains dans les règlements techniques contemporains de la Formule 1, le point central de la performance est passé des ailettes complexes au-dessus de la carrosserie à la gestion du flux d'air massique à travers des canaux convergents-divergents sous la carrosserie."
+    },
+    {
+      "type": "video",
+      "title": "Formula 1 Aerodynamics Explained: Venturi Tunnels, Vortices, and Floor Sealing",
+      "caption": "Detailed fluid dynamics walkthrough of ground effect downforce generation and sidepod airflow conditioning.",
+      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w"
+    },
+    {
+      "type": "h2",
+      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+    },
+    {
+      "type": "p",
+      "text": "Dans le sport automobile monoplace d'élite, le développement aérodynamique est une bataille incessante pour extraire l'appui tout en minimisant la traînée parasite et la sensibilité aérodynamique au tangage et au roulis du véhicule. Suite à la réintroduction de tunnels Venturi entièrement souterrains dans les règlements techniques contemporains de la Formule 1, le point central de la performance est passé des ailettes complexes au-dessus de la carrosserie à la gestion du flux d'air massique à travers des canaux convergents-divergents sous la carrosserie."
+    }
+  ],
+  "sourceHash": "69041648c357f2adf487a524662232a5d79362fb"
+}

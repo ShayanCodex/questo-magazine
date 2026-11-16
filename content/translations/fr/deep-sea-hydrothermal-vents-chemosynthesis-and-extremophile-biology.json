@@ -12,7 +12,7 @@
     "microbiology"
   ],
   "image": "/images/articles/deep-sea-hydrothermal-vent.jpg",
-  "imageAlt": "Cheminée de fumée noire minéralisée déversant des fluides hydrothermaux surchauffés dans la zone océanique abyssale",
+  "imageAlt": "Mineralized black smoker chimney discharging superheated hydrothermal fluids in the abyssal ocean zone",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "La vie dans l'obscurité perpétuelle"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Deep-Sea Hydrothermal Vents - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Deep-Sea Hydrothermal Vents."
     },
     {
       "type": "ul",
       "items": [
-        "Ventilation géothermique surchauffée : les réservoirs de chaleur magmatiques réchauffent l'eau de mer jusqu'à 400 °C, éliminant l'oxygène dissous et saturant les fluides avec du sulfure d'hydrogène dissous, du méthane et des ions métalliques.",
-        "Oxydation du sulfure d'hydrogène : les bactéries chimolithoautotrophes utilisent la voie enzymatique Sox pour extraire les électrons métaboliques du H2S, fixant le CO2 inorganique en carbone organique.",
-        "Endosymbiose chez Riftia pachyptila : les vers géants à tube de ventilation ne possèdent ni bouche ni intestin, survivant entièrement grâce à la nutrition synthétisée par des milliards d'endosymbiontes sulfurés dans leur trophosome.",
-        "Analogues d'astrobiologie : La minéralogie des cheminées hydrothermales fournit l'analogue terrestre prééminent pour les zones habitables potentielles dans les océans de glace souterrains d'Europe et d'Encelade."
+        "Superheated Geothermal Venting: Magmatic heat reservoirs warm seawater up to 400°C, stripping dissolved oxygen and saturating fluids with dissolved hydrogen sulfide, methane, and metal ions.",
+        "Hydrogen Sulfide Oxidation: Chemolithoautotrophic bacteria utilize the enzymatic Sox pathway to extract metabolic electrons from H2S, fixing inorganic CO2 into organic carbon.",
+        "Endosymbiosis in Riftia pachyptila: Giant vent tube worms possess neither mouth nor gut, surviving entirely on nutrition synthesized by billions of sulfidic endosymbionts in their trophosome.",
+        "Astrobiology Analogs: Hydrothermal chimney mineralogy provides the preeminent terrestrial analog for prospective habitable zones within the subsurface ice oceans of Europa and Enceladus."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Institut océanographique et astrobiologique des profondeurs"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Deep-Sea Hydrothermal Vents - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Deep-Sea Hydrothermal Vents."
+    },
+    {
       "type": "h2",
-      "text": "Fumeurs noirs et architecture de cheminées minérales"
+      "text": "La vie dans l'obscurité perpétuelle"
     },
     {
       "type": "p",
-      "text": "Lorsque des fluides de ventilation acides surchauffés rencontrent le gel (2°C), l'eau de mer abyssale alcaline, des précipitations rapides se produisent. Les sulfures de fer, de cuivre et de zinc forment des cheminées tubulaires poreuses qui agissent comme des cellules électrochimiques naturelles avec des gradients de protons à l'échelle microscopique ressemblant à une compartimentation cellulaire prébiotique précoce."
+      "text": "À des milliers de mètres sous la surface océanique, là où la lumière du soleil est complètement éteinte et où la pression hydrostatique dépasse des centaines d'atmosphères, les cheminées hydrothermales des grands fonds abritent certaines des communautés biologiques les plus extraordinaires de la Terre. Plutôt que de compter sur la photosynthèse pilotée par la chlorophylle, ces écosystèmes prospèrent grâce à l'oxydation de produits chimiques réduits géothermiques, un processus appelé chimioautotrophie."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/D69hGvCsWgA",
-      "title": "Évents hydrothermaux en haute mer et écosystèmes chimiosynthétiques",
-      "caption": "Images submersibles et études géologiques explorant les évents océaniques profonds, la formation de cheminées minérales et les toiles trophiques chimioautotrophes extrêmes."
+      "title": "Deep Ocean Hydrothermal Vents and Chemosynthetic Ecosystems",
+      "caption": "Submersible footage and geological survey exploring deep ocean vents, mineral chimney formation, and extreme chemoautotrophic trophic webs.",
+      "src": "https://www.youtube-nocookie.com/embed/D69hGvCsWgA"
     },
     {
       "type": "h2",
-      "text": "Le berceau de la biochimie terrestre"
+      "text": "La vie dans l'obscurité perpétuelle"
     },
     {
       "type": "p",
-      "text": "La présence de surfaces catalytiques fer-soufre à l'intérieur de minéraux hydrothermaux microporeux fournit des preuves empiriques convaincantes pour l'hypothèse du monde fer-soufre, désignant les évents sous-marins comme le lieu de naissance plausible des premiers réseaux métaboliques auto-réplicatifs."
+      "text": "À des milliers de mètres sous la surface océanique, là où la lumière du soleil est complètement éteinte et où la pression hydrostatique dépasse des centaines d'atmosphères, les cheminées hydrothermales des grands fonds abritent certaines des communautés biologiques les plus extraordinaires de la Terre. Plutôt que de compter sur la photosynthèse pilotée par la chlorophylle, ces écosystèmes prospèrent grâce à l'oxydation de produits chimiques réduits géothermiques, un processus appelé chimioautotrophie."
     }
   ],
-  "sourceHash": "5aae5e6ac0f575bf51c5d00ac007e1c14006d670"
+  "sourceHash": "a2ff759e9f07f7e155ed364284a745309a97c896"
 }

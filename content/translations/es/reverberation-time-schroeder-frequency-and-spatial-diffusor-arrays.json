@@ -13,7 +13,7 @@
     "concert-halls"
   ],
   "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Interior monumental de una sala de conciertos sinfónicos con balcones y difusores acústicos de madera esculpidos en las paredes",
+  "imageAlt": "Monumental symphonic concert hall interior with sculpted acoustic wood wall diffusors and balconies",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Lograr la excelencia acústica requiere equilibrar dos objetivos contradictorios: claridad (la capacidad de distinguir timbres instrumentales individuales) y reverberancia (la sensación de estar envuelto en un vacío acústico cálido y floreciente). Una sala que favorece la claridad se siente clínica y seca; una sala que favorece la reverberación degrada la inteligibilidad del habla y la rápida articulación musical."
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "h2",
       "text": "1. Tiempo de Reverberación ($RT_{60}$) y la Formulación Sabina"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1531835551805-16d4437c67b0?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concert Hall Architectural Acoustics - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Concert Hall Architectural Acoustics."
+    },
+    {
       "type": "p",
-      "text": "El punto de referencia fundamental de la acústica arquitectónica es el tiempo de reverberación ($RT_{60}$): el tiempo necesario para que la densidad de energía del sonido disminuya en 60 decibeles después de que la fuente de sonido haya cesado. En 1898, Wallace Clement Sabine formuló la relación fundamental que rige los espacios acústicos cerrados:"
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Sabine Formula: RT₆₀ = (0.161 · V) / A\n\nWhere:\n- V is hall volume in cubic meters\n- A is total absorption (A = ∑ Sᵢ · αᵢ)\n- S is surface area in square meters\n- α is sound absorption coefficient (0.0 = total reflection, 1.0 = total absorption)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1534237710431-e2fc698436d0?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concert Hall Architectural Acoustics - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Concert Hall Architectural Acoustics."
+    },
+    {
       "type": "p",
-      "text": "Para el repertorio orquestal sinfónico, el objetivo óptimo $RT_{60}$ es precisamente de 1,8 a 2,2 segundos. Si $RT_{60}$ cae por debajo de 1,5 segundos, el espacio acústico se siente seco y sin vida; si supera los 2,5 segundos, los rápidos pasajes entrecortados se mezclan en una mancha acústica ininteligible."
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "quote",
@@ -47,15 +59,15 @@
     },
     {
       "type": "h2",
-      "text": "2. La frecuencia de Schroeder: modos discretos versus campos estadísticos"
+      "text": "1. Tiempo de Reverberación ($RT_{60}$) y la Formulación Sabina"
     },
     {
       "type": "p",
-      "text": "Un límite físico crítico en la acústica de una sala es la frecuencia de corte de Schroeder ($f_s$). Por debajo de $f_s$, el sonido se comporta según la óptica de las ondas, formando ondas estacionarias discretas (modos de sala) donde las frecuencias de graves resonantes específicas se cancelan o explotan violentamente dependiendo de la posición del oyente."
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "p",
-      "text": "Por encima de la frecuencia de Schroeder, la densidad de modo se vuelve tan densa que el sonido puede modelarse estadísticamente como un campo sonoro geométrico difuso:"
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "code",
@@ -64,29 +76,29 @@
     },
     {
       "type": "p",
-      "text": "En las grandes salas sinfónicas, la frecuencia de Schroeder cae al rango subaudible, asegurando que todo el espectro orquestal audible opere en el régimen estadístico difuso."
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Acústica de salas de conciertos y física del sonido"
+      "text": "1. Tiempo de Reverberación ($RT_{60}$) y la Formulación Sabina"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "Física de ondas acústicas, resonancia y espacios arquitectónicos",
-      "caption": "Documental sobre acústica arquitectónica que examina los reflejos del sonido, las salas de viñedos frente a cajas de zapatos y los difusores Schroeder."
+      "title": "Acoustic Wave Physics, Resonance & Architectural Spaces",
+      "caption": "Architectural acoustics documentary examining sound reflections, vineyard vs shoebox halls, and Schroeder diffusors."
     },
     {
       "type": "h2",
-      "text": "4. Difusión teórica de números: Difusores de residuos cuadráticos (QRD)"
+      "text": "1. Tiempo de Reverberación ($RT_{60}$) y la Formulación Sabina"
     },
     {
       "type": "p",
-      "text": "Las superficies planas paralelas crean reflejos especulares (como un espejo), generando fuertes ecos de aleteo. Las superficies curvas simples dispersan el sonido pero pueden crear puntos acústicos localizados. En la década de 1970, el físico Manfred Schroeder revolucionó la arquitectura acústica al aplicar la teoría de números (específicamente residuos cuadráticos de la aritmética modular) a la difusión superficial."
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "p",
-      "text": "Un Difusor de Residuos Cuadrático (QRD) consta de una serie de pozos de ancho uniforme pero profundidades variables calculadas utilizando números primos:"
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "code",
@@ -95,20 +107,20 @@
     },
     {
       "type": "p",
-      "text": "Las ondas sonoras que ingresan a los pozos se reflejan en los límites del fondo con retrasos de fase variables dictados por la teoría de números. Cuando reaparece, la interferencia destructiva elimina la reflexión especular, dispersando la energía del sonido de manera uniforme a través de un campo hemisférico de 180 grados."
+      "text": "La arquitectura de una gran sala de conciertos no es simplemente un monumento visual; Es un instrumento acústico monumental. Cuando actúa una orquesta, el recinto físico de la sala refleja, difunde y absorbe ondas sonoras, transformando las vibraciones mecánicas de los instrumentos en un campo espacial inmersivo. Históricamente, el diseño de salas estuvo dominado por prueba y error empírico, lo que resultó en triunfos como el Musikverein de Viena y catástrofes en las que las salas producían sombras acústicas muertas o ecos de aleteo fangoso. La ciencia moderna de la acústica arquitectónica sintetiza la mecánica ondulatoria, los modos propios de las habitaciones y las superficies de difusión de la teoría de números."
     },
     {
       "type": "h2",
-      "text": "5. Geometría arquitectónica: caja de zapatos versus tipología de viñedo"
+      "text": "1. Tiempo de Reverberación ($RT_{60}$) y la Formulación Sabina"
     },
     {
       "type": "ul",
       "items": [
-        "Tipología de caja de zapatos (Musikverein, Boston Symphony Hall): salas rectangulares altas y estrechas que producen intensas reflexiones laterales tempranas desde las paredes laterales, maximizando la correlación cruzada binaural (IACF) y la envoltura.",
-        "Tipología de viñedos (Filarmonía de Berlín, Filarmónica del Elba): rodea a la orquesta con asientos en terrazas, acercando a los oyentes al escenario mientras utiliza parapetos de terraza inclinados como superficies de reflexión temprana.",
-        "Fracción de energía lateral (LEF): Parámetro acústico que mide la proporción de sonido que llega a los oyentes desde direcciones laterales; El alto LEF crea la sensación de estar rodeado por la fuente acústica en lugar de verla a través de una ventana distante."
+        "Shoebox Typology (Musikverein, Boston Symphony Hall): High narrow rectangular halls that produce intense early lateral reflections from side walls, maximizing binaural cross-correlation (IACF) and envelopment.",
+        "Vineyard Typology (Berlin Philharmonie, Elbphilharmonie): Surrounds the orchestra with terraced seating pods, bringing listeners closer to the stage while utilizing sloping terrace parapets as early reflection surfaces.",
+        "Lateral Energy Fraction (LEF): Acoustic parameter measuring the proportion of sound arriving at listeners from side directions; high LEF creates the sensation of being surrounded by the acoustic source rather than viewing it through a distant window."
       ]
     }
   ],
-  "sourceHash": "33995b204d454a1f14d7d229f60c0a982e173e50"
+  "sourceHash": "4d716f38de405adb2ce09d4e6e292ff986570904"
 }

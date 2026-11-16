@@ -14,7 +14,7 @@
     "motorsport",
     "engineering"
   ],
-  "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1508873696983-2df57036476b?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "High-speed aerodynamic racecar cornering on asphalt track displaying extreme underfloor downforce",
   "body": [
     {
@@ -30,6 +30,12 @@
       "text": "1. The Venturi Principle: Underbody Pressure Differentials"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Ground-Effect Aerodynamics in Formula 1 - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Ground-Effect Aerodynamics in Formula 1."
+    },
+    {
       "type": "p",
       "text": "The fundamental physics of ground effect rests on the incompressible Bernoulli principle and mass continuity in fluid dynamics:"
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "Mass Flow Continuity: A₁ · v₁ = A₂ · v₂ = Constant\nBernoulli Equation: P₁ + ½ρ(v₁)² = P₂ + ½ρ(v₂)²\n\nWhere:\n- A is tunnel cross-sectional area\n- v is local flow velocity\n- P is static fluid pressure\n- ρ is ambient air density"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Ground-Effect Aerodynamics in Formula 1 - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Ground-Effect Aerodynamics in Formula 1."
     },
     {
       "type": "p",

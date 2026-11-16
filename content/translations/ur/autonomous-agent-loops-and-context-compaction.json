@@ -11,8 +11,8 @@
     "system-architecture",
     "context-compaction"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "اعلی کارکردگی والے AI ماڈل نیورل توجہ وزن اور ایجنٹ ٹول کال ایگزیکیوشن رن ٹائم",
+  "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Abstract glowing neural network connections representing autonomous agentic reasoning loops",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "طویل عرصے سے چلنے والے ایجنٹی لوپس کا فن تعمیر"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sandboxed code execution environment displaying structured JSON tool call outputs and reflection checks",
+      "caption": "Tool execution boundaries: deterministic validation gates ensuring agent tool errors do not pollute long-term context."
     },
     {
       "type": "ul",
       "items": [
-        "اسٹیٹ کمپریشن: سیاق و سباق کی حدود کی خلاف ورزی کرنے سے پہلے سٹرکچرڈ سمریائزیشن خام ٹول آؤٹ پٹ کو ہائی ڈینسٹی اسٹیٹ لیجرز میں منتقل کرتی ہے۔",
-        "ٹول ایگزیکیوشن باؤنڈری: سینڈ باکسڈ سب پروسیس رن ٹائمز اس بات کو یقینی بناتے ہیں کہ ایجنٹ ٹول کی ناکامی مشین کے پڑھنے کے قابل تشخیصی بات چیت کی حالت کو آلودہ کیے بغیر واپس کرتی ہے۔",
-        "ایپیسوڈک بمقابلہ سیمنٹک میموری: ایجنٹ انڈیکسڈ ویکٹر کے درجہ بندی میں ذخیرہ شدہ طویل مدتی پروجیکٹ کنونشنز سے مقامی سکریچ پیڈ نشانات کو تقسیم کرتے ہیں۔",
-        "سیلف کریکشن کاسکیڈز: ڈوئل لوپ ریفلیکشن مانیٹر اصل انویریئنٹس کے خلاف ٹاسک کی تکمیل کا اندازہ لگاتے ہیں، بھگوڑے ایگزیکیوشن لوپس کو گرفتار کرتے ہیں۔"
+        "State Compression: Structured summarization passes distill raw tool outputs into high-density state ledgers before context bounds are breached.",
+        "Tool Execution Boundary: Sandboxed subprocess runtimes ensure that agent tool failures return machine-readable diagnostics without polluting conversational state.",
+        "Episodic vs Semantic Memory: Agents bifurcate local scratchpad traces from long-term project conventions stored in indexed vector hierarchies.",
+        "Self-Correction Cascades: Dual-loop reflection monitors evaluate task completion against original invariants, arresting runaway execution loops."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "سسٹمز آرکیٹیکچر اور خودمختار انٹیلی جنس مونوگراف"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Vector database memory indexing and semantic state compaction across multi-turn sessions",
+      "caption": "Dynamic context compaction: recursive summarization passes compressing conversational state by 80% without losing task invariants."
+    },
+    {
       "type": "h2",
-      "text": "متحرک کٹائی اور پروگریسو اسٹیٹ کمپیکشن"
+      "text": "طویل عرصے سے چلنے والے ایجنٹی لوپس کا فن تعمیر"
     },
     {
       "type": "p",
-      "text": "جدید ایجنٹ فریم ورک پروگریسو کمپیکشن کو لاگو کرتے ہیں: جیسا کہ بات چیت کی گہرائی پہلے سے طے شدہ ٹوکن کی حد سے زیادہ ہوتی ہے، انٹرمیڈیٹ ٹول کے جوابات (جیسے فائل کو پڑھا جاتا ہے) اختلافات اور فیصلے کے درخت۔ یہ ایجنٹ کے استدلال کی رفتار کو محفوظ رکھتا ہے جبکہ ٹوکن کی کھپت کو اسی فیصد تک کم کرتا ہے۔"
+      "text": "کثیر گھنٹے سافٹ ویئر انجینئرنگ یا تجزیاتی کاموں میں کام کرنے والے خود مختار ایجنٹ لامحالہ بنیادی طور پر سامنا کرتے ہیں۔ جب کہ سٹیٹک ریٹریول-آگمینٹڈ جنریشن (RAG) غیر فعال سوالوں کے جواب دینے میں مدد کرتا ہے، ایک فعال ایجنٹ پیدا کرنے والا ٹول کالز، ٹرمینل آؤٹ پٹس کا معائنہ کرنے، اور سورس کوڈ میں ترمیم کرنے کے لیے مستقل ورکنگ میموری کی ضرورت ہوتی ہے جو کہ اہم آرکیٹیکچرل انویریئنٹس کو محفوظ رکھتے ہوئے عارضی شور کو متحرک طور پر رد کر دیتی ہے۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "خود مختار LLM آرکیٹیکچرز اور ایجنٹوں کی تعمیر",
-      "caption": "ٹرانسفارمر استدلال، سکریچ پیڈ مینجمنٹ، اور ایجنٹی ٹول کی درخواست کی تفصیلی نظام کی خرابی۔"
+      "title": "Building Autonomous LLM Architectures and Agents",
+      "caption": "Detailed systems breakdown of transformer reasoning, scratchpad management, and agentic tool invocation.",
+      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY"
     },
     {
       "type": "h2",
-      "text": "تجرباتی توثیق اور غیر متزلزل تحفظ"
+      "text": "طویل عرصے سے چلنے والے ایجنٹی لوپس کا فن تعمیر"
     },
     {
       "type": "p",
-      "text": "سیاق و سباق کے امتزاج کو ڈیٹرمینسٹک ٹیسٹ سویٹس کے ساتھ جوڑنے سے، جدید خود مختار رن ٹائم سینکڑوں ترتیب وار کارروائیوں میں پائیدار قابل اعتمادی حاصل کرتے ہیں۔ سافٹ ویئر انجینئرنگ کا مستقبل بات چیت کے اشارے میں نہیں ہے، بلکہ سخت توثیق کے دروازوں کے زیر انتظام نظم و ضبط، خود شفا بخش ایجنٹ لوپس میں ہے۔"
+      "text": "کثیر گھنٹے سافٹ ویئر انجینئرنگ یا تجزیاتی کاموں میں کام کرنے والے خود مختار ایجنٹ لامحالہ بنیادی طور پر سامنا کرتے ہیں۔ جب کہ سٹیٹک ریٹریول-آگمینٹڈ جنریشن (RAG) غیر فعال سوالوں کے جواب دینے میں مدد کرتا ہے، ایک فعال ایجنٹ پیدا کرنے والا ٹول کالز، ٹرمینل آؤٹ پٹس کا معائنہ کرنے، اور سورس کوڈ میں ترمیم کرنے کے لیے مستقل ورکنگ میموری کی ضرورت ہوتی ہے جو کہ اہم آرکیٹیکچرل انویریئنٹس کو محفوظ رکھتے ہوئے عارضی شور کو متحرک طور پر رد کر دیتی ہے۔"
     }
   ],
-  "sourceHash": "8c4ee9a01b91327d6b414722664459af6707fe3b"
+  "sourceHash": "b6bfa05ab8dda869359d99132bc59365f9012c36"
 }

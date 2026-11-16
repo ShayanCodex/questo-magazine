@@ -12,8 +12,8 @@
     "infrastructure",
     "power-grids"
   ],
-  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Hochspannungs-Stromübertragungsmasten vor dem Himmel, die die kontinentale Stromverteilung darstellen",
+  "image": "https://images.unsplash.com/photo-1510519138111-55099f3e5330?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-voltage electric transmission pylons against sky representing continental power distribution",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "Die Hochspannungs-Gleichstrom-Übertragung (HGÜ) hat sich zum maßgeblichen Paradigma der Elektrotechnik für die Übertragung großer Energiemengen über Entfernungen von mehr als 600 Kilometern über dem Kopf oder 50 Kilometern unter Wasser entwickelt. Durch den Wegfall der Blindleistungserzeugung und der kapazitiven Ladeströme stellt die HGÜ die fehlende strukturelle Verbindung für interkontinentale Supernetze dar."
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
     },
     {
       "type": "h2",
       "text": "1. Die physikalischen Grenzen des Wechselstroms im großen Maßstab"
     },
     {
-      "type": "p",
-      "text": "In Hochspannungs-Wechselstromkabeln erzeugen kontinuierliche sinusförmige Stromwechsel (50 oder 60 Hz) zwei schwerwiegende physikalische Verlustmechanismen: den Skin-Effekt und die kapazitive dielektrische Verschiebung."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for HVDC Transmission & Supergrids."
     },
     {
       "type": "p",
-      "text": "Der Skin-Effekt zwingt Wechselstromelektronen zum Außenumfang eines Leiters, wodurch die effektive Querschnittsfläche verringert und der elektrische Widerstand vervielfacht wird. Bei Unterwasser- oder Erdkabeln bildet das isolierende Dielektrikum, das den Leiter umgibt, mit dem umgebenden Meerwasser oder Boden einen massiven zylindrischen Kondensator:"
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
+    },
+    {
+      "type": "p",
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "HVDC Transmission & Supergrids - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting HVDC Transmission & Supergrids."
     },
     {
       "type": "code",
@@ -42,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "Gleichstrom arbeitet bei der Frequenz Null ($f = 0$). Dadurch verschwinden kapazitive Ladeströme, der gesamte Leiterquerschnitt führt eine gleichmäßige Stromdichte und die dielektrischen Verluste sinken auf nahezu Null."
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
     },
     {
       "type": "quote",
@@ -51,58 +63,58 @@
     },
     {
       "type": "h2",
-      "text": "2. Modulare Multilevel-Konverter (MMC) und IGBT-Leistungselektronik"
+      "text": "1. Die physikalischen Grenzen des Wechselstroms im großen Maßstab"
     },
     {
       "type": "p",
-      "text": "In historischen HGÜ-Leitungen wurden leitungsgeführte Konverter (Line-Commutated Converters, LCC) auf Basis schwerer Quecksilberdampf- oder Thyristorventile eingesetzt, die unter Blindleistungsverbrauch und einer Anfälligkeit für AC-Kommutierungsfehler litten. Moderne Systeme nutzen Spannungsquellenwandler (VSC), die auf MMC-Topologien (Modular Multilevel Converter) basieren."
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
     },
     {
       "type": "p",
-      "text": "Ein MMC-Wandler synthetisiert nahezu perfekte sinusförmige Wechselstromwellenformen, indem er Hunderte kleiner Submodule kaskadiert – jedes enthält einen Bipolartransistor mit isoliertem Gate (IGBT) und einen Speicherkondensator. Durch das Schalten einzelner Submodule in Mikrosekundenschritten baut der Wandler sanft abgestufte Spannungstreppen auf, sodass keine massiven harmonischen AC-Filterbänke erforderlich sind."
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
     },
     {
       "type": "ul",
       "items": [
-        "Schwarzstartfähigkeit: VSC-HVDC kann ein vollständig zusammengebrochenes lokales Wechselstromnetz mit Strom versorgen, ohne dass eine externe Generatorunterstützung erforderlich ist.",
-        "Unabhängige P-Q-Steuerung: Wirkleistung ($P$) und Blindleistung ($Q$) können sofort und unabhängig in vier Quadranten moduliert werden.",
-        "Asynchrone Netzverbindung: Verbindet nicht synchronisierte nationale Netze (wie das Vereinigte Königreich und Kontinentaleuropa oder ERCOT und die Eastern Interconnection) ohne kaskadierende Stromausfallrisiken."
+        "Black-Start Capability: VSC-HVDC can energize a completely collapsed local AC grid without requiring external generator support.",
+        "Independent P-Q Control: Active power ($P$) and reactive power ($Q$) can be modulated instantaneously and independently in four quadrants.",
+        "Asynchronous Grid Interconnection: Connects non-synchronized national grids (such as the UK and continental Europe, or ERCOT and the Eastern Interconnection) without cascading blackout risks."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video-Masterclass: Hochspannungs-Gleichstromübertragungstechnik"
+      "text": "1. Die physikalischen Grenzen des Wechselstroms im großen Maßstab"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "Hochspannungsnetze und elektrische Fernübertragung",
-      "caption": "Umfassender visueller technischer Vortrag über HGÜ-Konverterstationen, Seekabeltechnik und Netzstabilisierung."
+      "title": "High-Voltage Power Grids & Long-Distance Electrical Transmission",
+      "caption": "Comprehensive visual technical lecture on HVDC converter stations, submarine cable engineering, and grid stabilization."
     },
     {
       "type": "h2",
-      "text": "4. Interkontinentale Supernetze und Ultrahochspannung (UHGÜ)"
+      "text": "1. Die physikalischen Grenzen des Wechselstroms im großen Maßstab"
     },
     {
       "type": "p",
-      "text": "In Ländern mit großen geografischen Ausdehnungen wie China, Brasilien und Indien übertragen Ultrahochspannungs-Gleichstromsysteme (UHGÜ) mit ±800 kV und ±1100 kV bis zu 12 Gigawatt Wasser- und Solarenergie über Entfernungen von mehr als 3.000 Kilometern mit Leitungsverlusten von weniger als 1,5 % pro 1.000 km."
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
     },
     {
       "type": "p",
-      "text": "Die entstehende Vision des globalen interkontinentalen Supernetzes verknüpft Solarstrom, der über Tageszeitzonen hinweg erzeugt wird, um den nächtlichen Spitzenbedarf auf anderen Kontinenten zu decken. Unterseeische HGÜ-Verbindungen wie die 720 km lange Nordseeverbindung (Norwegen nach Großbritannien) und geplante transmediterrane Korridore mit mehreren tausend Kilometern Länge schaffen einen kontinuierlichen transkontinentalen Energieausgleichsmechanismus."
+      "text": "Der grundlegende Triumph des Stromkrieges im späten 19. Jahrhundert war die Niederlage von Thomas Edison gegen Nikola Tesla und George Westinghouse: Wechselstrom (AC) triumphierte, weil Transformatoren es ermöglichten, die Spannung für die Übertragung zu erhöhen und für den kommunalen Verbrauch herabzusetzen. Über ein Jahrhundert lang bildeten dreiphasige synchrone Wechselstromnetze das Rückgrat der weltweiten industriellen Elektrifizierung. Im 21. Jahrhundert hat jedoch die massive geografische Entkopplung der Erzeugung erneuerbarer Energien (Offshore-Windparks, abgelegene Solaranlagen in der Wüste) von städtischen Lastzentren die grundlegenden physikalischen Grenzen der Wechselstromübertragung offengelegt."
     },
     {
       "type": "h2",
-      "text": "5. Erkenntnisse aus der Elektrotechnik"
+      "text": "1. Die physikalischen Grenzen des Wechselstroms im großen Maßstab"
     },
     {
       "type": "ul",
       "items": [
-        "Break-Even-Entfernungsökonomie: Oberleitungs-HGÜ wird der HVAC bei etwa 600–800 km wirtschaftlich überlegen; Für Seekabel ist die HGÜ über 50 km hinaus verpflichtend.",
-        "Innovation bei DC-Leistungsschaltern: Das historische Hindernis, den Gleichstrom ohne natürliche Nulldurchgänge zu unterbrechen, wird durch hybride Halbleiter-DC-Leistungsschalter gelöst, die in Zeitfenstern unter einer Millisekunde arbeiten.",
-        "Erneuerbare Integration: Multi-Terminal-DC-Offshore-Netze (MTDC) fassen Dutzende verteilter Offshore-Windkraftanlagen zu einheitlichen Festland-Exportkabeln mit hoher Kapazität zusammen."
+        "Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km; for submarine cables, HVDC is mandatory beyond 50 km.",
+        "DC Circuit Breaker Innovation: The historical obstacle of interrupting DC current without natural zero-crossings is solved by hybrid solid-state DC breakers operating in sub-millisecond windows.",
+        "Renewable Integration: Multi-terminal DC (MTDC) offshore grids aggregate dozens of dispersed offshore wind turbines into unified high-capacity mainland export cables."
       ]
     }
   ],
-  "sourceHash": "ef0cc670d0ed25de57f0a528ec1bafc15350bc26"
+  "sourceHash": "f69c6a9831c47d902ff26f0bd612279b2eeb9719"
 }

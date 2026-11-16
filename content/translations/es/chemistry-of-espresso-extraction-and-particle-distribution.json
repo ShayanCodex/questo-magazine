@@ -13,7 +13,7 @@
     "coffee-science"
   ],
   "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Rica crema de avellanas que se forma en una taza de espresso de cerámica debajo del portafiltro sin fondo de acero inoxidable",
+  "imageAlt": "Rich hazelnut crema forming in ceramic espresso cup underneath stainless steel bottomless portafilter",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Lograr un equilibrio constante entre las lactonas dulces del ácido clorogénico y los polifenoles astringentes requiere un control riguroso sobre la distribución del tamaño de las partículas, la permeabilidad hidráulica y los perfiles de temperatura del disolvente. Ligeras variaciones en la uniformidad de la molienda pueden precipitar canalizaciones microscópicas catastróficas, donde las rutas de flujo preferenciales localizadas extraen en exceso los taninos amargos mientras dejan las zonas del lecho adyacentes completamente intactas."
+      "text": "El espresso no es simplemente un método de preparación; Se trata de un sistema de extracción sólido-líquido a alta presión regido por la termodinámica de lechos porosos empaquetados y la cinética de difusión química. En menos de treinta segundos, agua presurizada calentada a 9 bares (0,9 MPa) penetra en un lecho densamente consolidado de fragmentos de café tostado, solubilizando cientos de aldehídos volátiles, pirazinas y ácidos orgánicos mientras simultáneamente emulsiona gotas de lípidos hidrofóbicos insolubles en una suspensión coloidal densa conocida como crema."
     },
     {
       "type": "h2",
       "text": "1. Ley de Darcy y permeabilidad hidráulica en lechos compactos"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Chemistry of Espresso Extraction - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Chemistry of Espresso Extraction."
+    },
+    {
       "type": "p",
-      "text": "El flujo de fluido a través del disco de café compactado se ajusta a la Ley de Darcy para la percolación laminar a través de un medio sólido poroso:"
+      "text": "El espresso no es simplemente un método de preparación; Se trata de un sistema de extracción sólido-líquido a alta presión regido por la termodinámica de lechos porosos empaquetados y la cinética de difusión química. En menos de treinta segundos, agua presurizada calentada a 9 bares (0,9 MPa) penetra en un lecho densamente consolidado de fragmentos de café tostado, solubilizando cientos de aldehídos volátiles, pirazinas y ácidos orgánicos mientras simultáneamente emulsiona gotas de lípidos hidrofóbicos insolubles en una suspensión coloidal densa conocida como crema."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Darcy's Percolation Equation:\nQ = (-k · A / μ) · (ΔP / L)\n\nWhere:\n- Q: Volumetric flow rate (mL/s)\n- k: Intrinsic permeability tensor of the compacted puck (m²)\n- A: Cross-sectional area of the filter basket (m²)\n- μ: Dynamic viscosity of water at extraction temperature (Pa·s)\n- ΔP: Gauge pressure differential applied by the pump (typically 6-9 bar)\n- L: Compacted bed depth / puck thickness (m)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Chemistry of Espresso Extraction - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Chemistry of Espresso Extraction."
+    },
+    {
       "type": "p",
-      "text": "A medida que avanza la extracción, $k$ no permanece estático. La erosión física de los sólidos solubles y la migración de finos submicrónicos hacia el filtro inferior crean una compactación dinámica. Si la presión de la bomba aplicada $\\Delta P$ es excesivamente elevada (superando los 9,5 bares), el lecho de café sufre una deformación plástica por compresión, cerrando los huecos intersticiales, asfixiando la permeabilidad e iniciando microfracturas a través de las cuales se canaliza violentamente el agua."
+      "text": "El espresso no es simplemente un método de preparación; Se trata de un sistema de extracción sólido-líquido a alta presión regido por la termodinámica de lechos porosos empaquetados y la cinética de difusión química. En menos de treinta segundos, agua presurizada calentada a 9 bares (0,9 MPa) penetra en un lecho densamente consolidado de fragmentos de café tostado, solubilizando cientos de aldehídos volátiles, pirazinas y ácidos orgánicos mientras simultáneamente emulsiona gotas de lípidos hidrofóbicos insolubles en una suspensión coloidal densa conocida como crema."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Distribución de molienda bimodal: la interacción de rocas gruesas y finas"
+      "text": "1. Ley de Darcy y permeabilidad hidráulica en lechos compactos"
     },
     {
       "type": "p",
-      "text": "El análisis de partículas por difracción láser revela que los mecanismos de molienda de rebabas producen una distribución de volumen inherentemente bimodal en lugar de una distribución monomodal uniforme."
+      "text": "El espresso no es simplemente un método de preparación; Se trata de un sistema de extracción sólido-líquido a alta presión regido por la termodinámica de lechos porosos empaquetados y la cinética de difusión química. En menos de treinta segundos, agua presurizada calentada a 9 bares (0,9 MPa) penetra en un lecho densamente consolidado de fragmentos de café tostado, solubilizando cientos de aldehídos volátiles, pirazinas y ácidos orgánicos mientras simultáneamente emulsiona gotas de lípidos hidrofóbicos insolubles en una suspensión coloidal densa conocida como crema."
     },
     {
       "type": "ul",
       "items": [
-        "Pico primario (250–500 μm): los cantos rodados gruesos mantienen la estructura hidráulica estructural del disco, evitando el colapso del lecho y permitiendo un flujo de agua estable.",
-        "Pico secundario (< 50 μm): finos microscópicos son fragmentos de pared celular rotos que carecen de matriz celular interna. Se disuelven casi instantáneamente al entrar en contacto con el agua, proporcionando TDS (sólidos disueltos totales) tempranos y lípidos esenciales para la estabilización de la crema.",
-        "El dilema de la migración de finos: Los finos excesivos migran hacia abajo bajo arrastre hidrodinámico, obstruyendo los orificios inferiores de la canasta y causando una resistencia al flujo impredecible."
+        "Primary Peak (250–500 μm): Coarse boulders maintain the structural hydraulic framework of the puck, preventing bed collapse and enabling stable water flow.",
+        "Secondary Peak (< 50 μm): Microscopic fines are shattered cellular wall fragments lacking internal cell matrix. They dissolve almost instantaneously upon water contact, providing early TDS (Total Dissolved Solids) and essential lipids for crema stabilization.",
+        "The Fines Migration Dilemma: Excessive fines migrate downward under hydrodynamic drag, clogging the bottom basket orifices and causing unpredictable flow resistance."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: Dinámica de fluidos y control de parámetros de extracción"
+      "text": "1. Ley de Darcy y permeabilidad hidráulica en lechos compactos"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/aTFsBqhpLes",
-      "title": "Comprensión de la dosis de espresso, la geometría de las partículas de molienda y el flujo",
-      "caption": "Desglose experimental en profundidad de la resistencia al flujo de agua, cálculos de rendimiento de extracción y física de preparación de discos."
+      "title": "Understanding Espresso Dose, Grind Particle Geometry, and Flow",
+      "caption": "In-depth experimental breakdown of water flow resistance, extraction yield calculations, and puck preparation physics."
     },
     {
       "type": "h2",
-      "text": "4. Termodinámica de disolventes y secuencia de disolución química"
+      "text": "1. Ley de Darcy y permeabilidad hidráulica en lechos compactos"
     },
     {
       "type": "p",
-      "text": "Los componentes químicos del café tostado poseen una cinética de disolución claramente escalonada regida por la polaridad y el peso molecular. Durante los primeros 0 a 8 segundos de extracción, los ácidos málico, cítrico y acético altamente polares surgen en la solución junto con la cafeína. Estos definen la acidez percibida, el carácter frutal y el brillo inicial."
+      "text": "El espresso no es simplemente un método de preparación; Se trata de un sistema de extracción sólido-líquido a alta presión regido por la termodinámica de lechos porosos empaquetados y la cinética de difusión química. En menos de treinta segundos, agua presurizada calentada a 9 bares (0,9 MPa) penetra en un lecho densamente consolidado de fragmentos de café tostado, solubilizando cientos de aldehídos volátiles, pirazinas y ácidos orgánicos mientras simultáneamente emulsiona gotas de lípidos hidrofóbicos insolubles en una suspensión coloidal densa conocida como crema."
     },
     {
       "type": "p",
-      "text": "Entre los segundos 8 y 20, las melanoidinas de polaridad media y los caramelos de sacarosa se disuelven, estableciendo una sensación en boca, cuerpo y un dulzor equilibrado. Más allá de los 25 segundos, la extracción de dímeros de ácido clorogénico de alto peso molecular y ácidos quínicos astringentes aumenta rápidamente. Detener la extracción en una proporción de preparación óptima (normalmente 1:2 a 1:2,5 café-rendimiento) finaliza con precisión la extracción antes de que estos polifenoles ásperos y secos entren en la taza."
+      "text": "El espresso no es simplemente un método de preparación; Se trata de un sistema de extracción sólido-líquido a alta presión regido por la termodinámica de lechos porosos empaquetados y la cinética de difusión química. En menos de treinta segundos, agua presurizada calentada a 9 bares (0,9 MPa) penetra en un lecho densamente consolidado de fragmentos de café tostado, solubilizando cientos de aldehídos volátiles, pirazinas y ácidos orgánicos mientras simultáneamente emulsiona gotas de lípidos hidrofóbicos insolubles en una suspensión coloidal densa conocida como crema."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones de baristas y ciencia del café"
+      "text": "1. Ley de Darcy y permeabilidad hidráulica en lechos compactos"
     },
     {
       "type": "ul",
       "items": [
-        "Preparación previa a la infusión: aplique baja presión (2-3 bares) durante 4-6 segundos para hidratar el disco de manera uniforme, mitigando los puntos secos y canalizando antes de que se active la presión total de la bomba.",
-        "Perfilado de flujo sobre perfilado de presión: Module el flujo de la bomba para disminuir la presión durante la segunda mitad del tiro a medida que la resistencia del disco se erosiona, preservando la dulzura.",
-        "Monitoreo refractométrico: apunte a un rendimiento de extracción entre 19 % y 22 % junto con una lectura de sólidos disueltos totales (TDS) entre 8,5 % y 10,5 % para un equilibrio sensorial óptimo."
+        "Pre-Infusion Priming: Apply low pressure (2-3 bars) for 4-6 seconds to hydrate the puck uniformly, mitigating dry spots and channeling before full pump pressure engages.",
+        "Flow Profiling over Pressure Profiling: Modulate pump flow to decline pressure during the second half of the shot as puck resistance erodes, preserving sweetness.",
+        "Refractometric Monitoring: Target an Extraction Yield between 19% and 22% paired with a Total Dissolved Solids (TDS) reading between 8.5% and 10.5% for optimal sensory balance."
       ]
     }
   ],
-  "sourceHash": "062278372619aaee1eb4146769e4221669743df6"
+  "sourceHash": "dcfc0dc38600712c0c58c1efda8304f27e308ca9"
 }

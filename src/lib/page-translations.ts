@@ -785,7 +785,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Architecture',
       title: 'Architecture & Spatial Design',
       desc: 'In-depth photographic essays exploring brutalist structures, tactile materials, and spatial silence.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80',
       tag: 'architecture',
       tagLabel: '#architecture',
       subcategories: [
@@ -799,7 +799,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Design',
       title: 'Design & Typographic Systems',
       desc: 'Rigorous investigations into Swiss International typography, modular layout staves, and kinetic letterforms.',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
       tag: 'design-systems',
       tagLabel: '#design-systems',
       subcategories: [
@@ -813,7 +813,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Art & Culture',
       title: 'Art, Culture & Sculpture',
       desc: 'Classical marble endurance, museum heritage studies, and monumental public street murals.',
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80',
       tag: 'art',
       tagLabel: '#art',
       subcategories: [
@@ -827,7 +827,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Tech',
       title: 'Engineering & Static Systems',
       desc: 'Architectural software essays, headless CMS philosophy, and zero-runtime static pre-rendering.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80',
       tag: 'engineering',
       tagLabel: '#engineering',
       subcategories: [
@@ -843,7 +843,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'فنِ تعمیر',
       title: 'فنِ تعمیر اور مکانی ڈیزائن',
       desc: 'ٹھوس کنکریٹ، پائیدار پتھر اور خاموش مادی تعمیرات پر مبنی تصویری و تحقیقی مقالات۔',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80',
       tag: 'architecture',
       tagLabel: 'فنِ تعمیر',
       subcategories: [
@@ -857,7 +857,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'ڈیزائن',
       title: 'ڈیزائن اور طباعتی نظام',
       desc: 'سوئس انٹرنیشنل ٹائپوگرافی، گرڈ لے آؤٹس اور جدید خطاطی کی گہری تفتیش۔',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
       tag: 'design-systems',
       tagLabel: 'ڈیزائن سسٹمز',
       subcategories: [
@@ -871,7 +871,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'فن و ثقافت',
       title: 'بصری فنون، مجسمہ سازی و ثقافت',
       desc: 'سنگِ مرمر کی پائیداری، عجائب گھروں کے نایاب فن پارے اور عوامی میورلز کا جائزہ۔',
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80',
       tag: 'art',
       tagLabel: 'فنون',
       subcategories: [
@@ -885,7 +885,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'ٹیکنالوجی',
       title: 'انجینئرنگ اور جامد سسٹمز',
       desc: 'سافٹ ویئر کا فنِ تعمیر، زیرو رن ٹائم جامد ٹیکنالوجی اور اعلیٰ کارکردگی والے ماڈلز۔',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80',
       tag: 'engineering',
       tagLabel: 'انجینئرنگ',
       subcategories: [
@@ -901,7 +901,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'عمارة',
       title: 'العمارة الأحادية والمكان',
       desc: 'دراسات بصرية ومقالات نقدية تستكشف الهياكل الخرسانية والفراغات الصامتة.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80',
       tag: 'architecture',
       tagLabel: '#عمارة',
       subcategories: [
@@ -915,7 +915,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'تصميم',
       title: 'الحرفية الطباعية ونظم الشبكات',
       desc: 'بحث معمق في المدرسة السويسرية والخطوط والتقسيمات المعيارية الحديثة.',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
       tag: 'design-systems',
       tagLabel: '#نظم_التصميم',
       subcategories: [
@@ -929,7 +929,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'فن وثقافة',
       title: 'الفنون البصرية والنحت الكلاسيكي',
       desc: 'استكشاف بصري وفلسفي للأشكال الكلاسيكية والمنحوتات الصامدة والفن الحضري.',
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80',
       tag: 'art',
       tagLabel: '#فن',
       subcategories: [
@@ -943,7 +943,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'هندسة',
       title: 'العمارة الرقمية وهندسة النظم',
       desc: 'بناء مواقع عديمة الخوادم وسريعة الاستجابة بأعلى معايير الأرشفة دون مكتبات ثقيلة.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80',
       tag: 'engineering',
       tagLabel: '#هندسة',
       subcategories: [
@@ -959,7 +959,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Arquitectura',
       title: 'Arquitectura y Diseño Espacial',
       desc: 'Ensayos fotográficos que exploran estructuras brutalistas, materiales táctiles y silencio espacial.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80',
       tag: 'architecture',
       tagLabel: '#arquitectura',
       subcategories: [
@@ -973,7 +973,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Diseño',
       title: 'Diseño y Sistemas Tipográficos',
       desc: 'Investigaciones sobre la tipografía suiza, cuadrículas modulares y formas de letras cinéticas.',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
       tag: 'design-systems',
       tagLabel: '#sistemas-diseño',
       subcategories: [
@@ -987,7 +987,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Arte y Cultura',
       title: 'Arte, Cultura y Escultura',
       desc: 'Durabilidad del mármol clásico, patrimonio museístico y murales urbanos monumentales.',
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80',
       tag: 'art',
       tagLabel: '#arte',
       subcategories: [
@@ -1001,7 +1001,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Tecnología',
       title: 'Ingeniería y Sistemas Estáticos',
       desc: 'Arquitectura de software, filosofía headless CMS y renderizado estático de alto rendimiento.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80',
       tag: 'engineering',
       tagLabel: '#ingeniería',
       subcategories: [
@@ -1017,7 +1017,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Architecture',
       title: 'Architecture & Espace',
       desc: 'Essais photographiques explorant les structures brutalistes et le silence spatial.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80',
       tag: 'architecture',
       tagLabel: '#architecture',
       subcategories: [
@@ -1031,7 +1031,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Design',
       title: 'Design & Systèmes Typographiques',
       desc: 'Recherches sur le style typographique suisse international et la théorie des grilles.',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
       tag: 'design-systems',
       tagLabel: '#systèmes-design',
       subcategories: [
@@ -1045,7 +1045,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Art & Culture',
       title: 'Art, Culture & Sculpture',
       desc: 'Études du marbre antique, préservation muséale et fresques publiques grandioses.',
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80',
       tag: 'art',
       tagLabel: '#art',
       subcategories: [
@@ -1059,7 +1059,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Technologie',
       title: 'Ingénierie & Systèmes Statiques',
       desc: 'Philosophie des architectures numériques statiques et prérendues sans dépendances lourdes.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80',
       tag: 'engineering',
       tagLabel: '#ingénierie',
       subcategories: [
@@ -1075,7 +1075,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Architektur',
       title: 'Architektur & Raumgestaltung',
       desc: 'Fotografische Essays über brutalistische Bauwerke, Haptik und räumliche Ruhe.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80',
       tag: 'architecture',
       tagLabel: '#architektur',
       subcategories: [
@@ -1089,7 +1089,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Design',
       title: 'Design & Typografische Systeme',
       desc: 'Studien über Schweizer Typografie, modulare Rastersysteme und kinetische Schrift.',
-      image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
       tag: 'design-systems',
       tagLabel: '#design-systeme',
       subcategories: [
@@ -1103,7 +1103,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Kunst & Kultur',
       title: 'Kunst, Kultur & Skulptur',
       desc: 'Klassische Marmorplastik, museale Denkmalpflege und monumentale Wandmalerei.',
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80',
       tag: 'art',
       tagLabel: '#kunst',
       subcategories: [
@@ -1117,7 +1117,7 @@ export const DISCIPLINES_LOCALIZED: Record<string, LocalizedDiscipline[]> = {
       categoryShort: 'Technologie',
       title: 'Ingenieurwesen & Statische Systeme',
       desc: 'Architektur moderner Softwaresysteme, Headless-Publishing und statische Hochleistung.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80',
       tag: 'engineering',
       tagLabel: '#ingenieurwesen',
       subcategories: [

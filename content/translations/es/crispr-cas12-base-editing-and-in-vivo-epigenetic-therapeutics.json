@@ -14,7 +14,7 @@
     "news"
   ],
   "image": "/images/articles/crispr-dna-editing.jpg",
-  "imageAlt": "Hebra de ADN molecular de doble hélice iluminada bajo un microscopio electrónico biotecnológico de gran aumento",
+  "imageAlt": "Double helix molecular DNA strand illuminated under high magnification biotechnology electron microscope",
   "body": [
     {
       "type": "p",
@@ -22,19 +22,31 @@
     },
     {
       "type": "p",
-      "text": "La llegada de la edición de bases de precisión y los ortólogos Cas12 diseñados ha inaugurado la segunda revolución genómica. Al unir Cas nickasas catalíticamente deterioradas a desaminasas diseñadas, los biólogos moleculares ahora pueden reescribir pares de nucleótidos individuales (transición de C•G a T•A o A•T a G•C) con precisión quirúrgica, cero roturas de doble cadena y huellas mínimas de inserción-deleción (indel)."
+      "text": "La promesa inicial de la medicina genómica, demostrada por primera vez por los sistemas de endonucleasa programables CRISPR-Cas9 clásicos, se vio limitada por una peligrosa vulnerabilidad molecular: la creación de roturas de ADN bicatenario (DSB). Si bien son eficaces en la eliminación de genes mediante la unión de extremos no homólogos (NHEJ), los DSB contundentes desencadenan translocaciones cromosómicas incontroladas, grandes deleciones dependientes de p53 e inserciones impredecibles fuera del objetivo que limitan las aplicaciones terapéuticas sistémicas directas in vivo."
     },
     {
       "type": "h2",
       "text": "1. Arquitectura enzimática: editores de bases de citosina y adenina"
     },
     {
-      "type": "p",
-      "text": "Los editores de bases operan a través de un complejo macromolecular multidominio. Una nickasa Cas9 catalíticamente alterada (D10A) crea una mella monocatenaria precisa en la cadena de ADN no editada, dirigiendo la maquinaria endógena de reparación de desajustes de la célula para copiar la cadena editada como plantilla. Atada a esta nickasa hay una enzima citidina o adenosina desaminasa evolucionada:"
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "CRISPR-Cas12 & Precision Base Editing - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for CRISPR-Cas12 & Precision Base Editing."
     },
     {
       "type": "p",
-      "text": "En Adenine Base Editors (ABE), las desaminasas TadA desarrolladas en laboratorio convierten las adeninas objetivo en inosinas ($A \\to I$). Durante la replicación posterior del ADN celular, las ADN polimerasas leen la inosina como guanina ($G$), completando una transición de $A\\cdot T \\a G\\cdot C$ sin cortar la columna vertebral del ADN. Debido a que más de la mitad de todas las mutaciones puntuales patógenas humanas conocidas provienen de mutaciones de transición, los editores básicos brindan capacidades correctivas directas para miles de trastornos genéticos previamente incurables."
+      "text": "La promesa inicial de la medicina genómica, demostrada por primera vez por los sistemas de endonucleasa programables CRISPR-Cas9 clásicos, se vio limitada por una peligrosa vulnerabilidad molecular: la creación de roturas de ADN bicatenario (DSB). Si bien son eficaces en la eliminación de genes mediante la unión de extremos no homólogos (NHEJ), los DSB contundentes desencadenan translocaciones cromosómicas incontroladas, grandes deleciones dependientes de p53 e inserciones impredecibles fuera del objetivo que limitan las aplicaciones terapéuticas sistémicas directas in vivo."
+    },
+    {
+      "type": "p",
+      "text": "La promesa inicial de la medicina genómica, demostrada por primera vez por los sistemas de endonucleasa programables CRISPR-Cas9 clásicos, se vio limitada por una peligrosa vulnerabilidad molecular: la creación de roturas de ADN bicatenario (DSB). Si bien son eficaces en la eliminación de genes mediante la unión de extremos no homólogos (NHEJ), los DSB contundentes desencadenan translocaciones cromosómicas incontroladas, grandes deleciones dependientes de p53 e inserciones impredecibles fuera del objetivo que limitan las aplicaciones terapéuticas sistémicas directas in vivo."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80",
+      "alt": "CRISPR-Cas12 & Precision Base Editing - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting CRISPR-Cas12 & Precision Base Editing."
     },
     {
       "type": "quote",
@@ -43,51 +55,51 @@
     },
     {
       "type": "h2",
-      "text": "2. Ortólogos de Cas12 y cinética de escisión colateral"
+      "text": "1. Arquitectura enzimática: editores de bases de citosina y adenina"
     },
     {
       "type": "p",
-      "text": "A diferencia de Cas9, que requiere un motivo adyacente protoespaciador (PAM) rico en G (5'-NGG-3'), las nucleasas Cas12 reconocen motivos ricos en T (5'-TTTV-3') y generan salientes pegajosos escalonados de cinco nucleótidos en lugar de cortes contundentes. Este perfil bioquímico distintivo expande los loci genómicos seleccionables a través de regiones promotoras no codificantes ricas en AT y potenciadores reguladores."
+      "text": "La promesa inicial de la medicina genómica, demostrada por primera vez por los sistemas de endonucleasa programables CRISPR-Cas9 clásicos, se vio limitada por una peligrosa vulnerabilidad molecular: la creación de roturas de ADN bicatenario (DSB). Si bien son eficaces en la eliminación de genes mediante la unión de extremos no homólogos (NHEJ), los DSB contundentes desencadenan translocaciones cromosómicas incontroladas, grandes deleciones dependientes de p53 e inserciones impredecibles fuera del objetivo que limitan las aplicaciones terapéuticas sistémicas directas in vivo."
     },
     {
       "type": "p",
-      "text": "Además, Cas12 exhibe una actividad de transescisión colateral de ADN monocatenario no específica única tras la unión al objetivo. Si bien se utiliza para biosensores de diagnóstico ultrasensibles en el lugar de atención (como los ensayos DETECTR), la ingeniería terapéutica utiliza variantes de Cas12 de alta fidelidad diseñadas donde se suprime la transescisión, lo que garantiza una modificación del objetivo estrictamente localizada dentro de los tejidos humanos vivos."
+      "text": "La promesa inicial de la medicina genómica, demostrada por primera vez por los sistemas de endonucleasa programables CRISPR-Cas9 clásicos, se vio limitada por una peligrosa vulnerabilidad molecular: la creación de roturas de ADN bicatenario (DSB). Si bien son eficaces en la eliminación de genes mediante la unión de extremos no homólogos (NHEJ), los DSB contundentes desencadenan translocaciones cromosómicas incontroladas, grandes deleciones dependientes de p53 e inserciones impredecibles fuera del objetivo que limitan las aplicaciones terapéuticas sistémicas directas in vivo."
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en vídeo: CRISPR de próxima generación y edición de bases"
+      "text": "1. Arquitectura enzimática: editores de bases de citosina y adenina"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/jAhjPd4uNFY",
-      "title": "Edición de bases y edición principal: reescritura del código de la vida con precisión molecular",
-      "caption": "Una conferencia de Harvard y Broad Institute que explora transiciones de base única, arquitecturas de pegRNA de edición principal y administración terapéutica sistémica in vivo."
+      "title": "Base Editing and Prime Editing: Rewriting the Code of Life with Molecular Precision",
+      "caption": "A Harvard and Broad Institute lecture exploring single-base transitions, prime editing pegRNA architectures, and systemic in-vivo therapeutic delivery.",
+      "src": "https://www.youtube-nocookie.com/embed/jAhjPd4uNFY"
     },
     {
       "type": "h2",
-      "text": "4. Vectores de liberación: nanopartículas lipídicas (LNP) y tropismo tisular"
+      "text": "1. Arquitectura enzimática: editores de bases de citosina y adenina"
     },
     {
       "type": "p",
-      "text": "El principal obstáculo en la traducción clínica no es la eficiencia de la edición in vitro, sino la entrega sistémica in vivo. Los vectores virales (como los virus adenoasociados, AAV) sufren de límites limitados de embalaje de carga (~4,7 kb), inmunidad humana neutralizante preexistente y expresión intracelular prolongada de Cas que eleva los riesgos fuera del objetivo a largo plazo."
+      "text": "La promesa inicial de la medicina genómica, demostrada por primera vez por los sistemas de endonucleasa programables CRISPR-Cas9 clásicos, se vio limitada por una peligrosa vulnerabilidad molecular: la creación de roturas de ADN bicatenario (DSB). Si bien son eficaces en la eliminación de genes mediante la unión de extremos no homólogos (NHEJ), los DSB contundentes desencadenan translocaciones cromosómicas incontroladas, grandes deleciones dependientes de p53 e inserciones impredecibles fuera del objetivo que limitan las aplicaciones terapéuticas sistémicas directas in vivo."
     },
     {
       "type": "p",
-      "text": "Las nanopartículas lipídicas sintéticas (LNP) que empaquetan ARNm transitorio y ARN guía ofrecen la mejor solución. Los lípidos catiónicos ionizables encapsulan carga genética a pH bajo, protegiendo los ácidos nucleicos en circulación y facilitando la endocitosis mediada por receptores. Al modular la química de los lípidos, incorporando ligandos dirigidos específicos de tejido (como GalNAc para los receptores de asialoglicoproteína de los hepatocitos), los LNP administran pulsos transitorios de editores de bases directamente a los órganos afectados, logrando un silenciamiento genético terapéutico duradero sin integración genómica."
+      "text": "La promesa inicial de la medicina genómica, demostrada por primera vez por los sistemas de endonucleasa programables CRISPR-Cas9 clásicos, se vio limitada por una peligrosa vulnerabilidad molecular: la creación de roturas de ADN bicatenario (DSB). Si bien son eficaces en la eliminación de genes mediante la unión de extremos no homólogos (NHEJ), los DSB contundentes desencadenan translocaciones cromosómicas incontroladas, grandes deleciones dependientes de p53 e inserciones impredecibles fuera del objetivo que limitan las aplicaciones terapéuticas sistémicas directas in vivo."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones clínicas: el futuro de la terapéutica in vivo"
+      "text": "1. Arquitectura enzimática: editores de bases de citosina y adenina"
     },
     {
       "type": "ul",
       "items": [
-        "Eliminación de roturas de doble cadena: la edición de bases logra transiciones de un solo nucleótido sin cortes romos de cromosomas de doble cadena, lo que mitiga las translocaciones oncogénicas.",
-        "Reversión de mutaciones de transición: las citidina y adenina desaminasas diseñadas se dirigen a la gran mayoría de las mutaciones monogénicas conocidas que causan enfermedades.",
-        "Entrega de LNP sintético: las formulaciones transitorias de ARNm-LNP minimizan el tiempo de exposición a Cas in vivo, lo que reduce las tasas de edición fuera del objetivo por debajo de los niveles de mutación de fondo basales.",
-        "Modulación epigenética permanente: Los editores de epigenomas CRISPR emergentes permiten silenciar o activar la expresión genética a través de la metilación del ADN sin alterar la secuencia de ADN subyacente."
+        "Double-Strand Break Elimination: Base editing achieves single-nucleotide transitions without blunt double-stranded chromosome cuts, mitigating oncogenic translocations.",
+        "Transition Mutation Reversal: Engineered cytidine and adenine deaminases target the vast majority of known monogenic disease-causing mutations.",
+        "Synthetic LNP Delivery: Transient mRNA-LNP formulations minimize in-vivo Cas exposure time, reducing off-target editing rates below baseline background mutation levels.",
+        "Permanent Epigenetic Modulation: Emerging CRISPR-epigenome editors allow silencing or activating gene expression through DNA methylation without altering the underlying DNA sequence."
       ]
     }
   ],
-  "sourceHash": "a9c011fdde1f0d4f9fad58fea25cf9d6b42c68b3"
+  "sourceHash": "b36c794de05f6cbaec20ddd0693f3d05cd05d72e"
 }

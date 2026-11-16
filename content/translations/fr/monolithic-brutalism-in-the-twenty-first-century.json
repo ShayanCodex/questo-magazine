@@ -12,7 +12,7 @@
     "sustainability"
   ],
   "image": "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Complexe civique en béton brutaliste monolithique marqué par des panneaux",
+  "imageAlt": "Monolithic board-marked brutalist concrete civic complex",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Le terme béton brut n'a jamais été destiné à décrire une sombre hostilité ; cela signifiait une honnêteté tectonique. Lorsque des granulats liquides sont versés dans un coffrage en bois fraisé à la main, le grain, les nœuds et les imperfections du bois sont pétrifiés de manière permanente en pierre. La structure ne masque pas sa méthode de création."
+      "text": "La construction commerciale contemporaine est majoritairement définie par l'obsolescence programmée. Les cadres en acier léger enveloppés de panneaux composites d'aluminium et de mastics silicone sont conçus pour des programmes d'amortissement sur trente ans plutôt que pour des siècles d'endurance civile. En revanche, l’architecture brutaliste se présente comme un monument sans vergogne de la permanence géologique."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1490971594705-6c345b304e92?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Monolithic Brutalism in the Twenty-First Century - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Monolithic Brutalism in the Twenty-First Century."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "Attributs durables de la masse monolithique"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1470723710355-95304d8aece4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Monolithic Brutalism in the Twenty-First Century - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Monolithic Brutalism in the Twenty-First Century."
+    },
+    {
       "type": "ul",
       "items": [
-        "Inertie thermique élevée : les murs en granulats massifs absorbent la chaleur solaire diurne, modérant naturellement les températures intérieures extrêmes sans cycles mécaniques de CVC.",
-        "Sanctuaire acoustique : la maçonnerie coulée dense atténue les fréquences du bruit ambiant urbain jusqu'à 55 décibels.",
-        "Altération sans entretien : Plutôt que de se dégrader, le ciment Portland haute densité forme une patine carbonatée protectrice sous les cycles de précipitations naturels."
+        "High thermal inertia: Massive aggregate walls absorb diurnal solar heat, naturally moderating indoor temperature extremes without mechanical HVAC cycles.",
+        "Acoustic sanctuary: Dense poured masonry attenuates urban ambient noise frequencies by up to 55 decibels.",
+        "Zero-maintenance weathering: Rather than degrading, high-density Portland cement forms a protective carbonate patina under natural precipitation cycles."
       ]
     },
     {
       "type": "p",
-      "text": "Alors que nos sociétés sont confrontées à l’instabilité écologique et à la volatilité économique, les leçons du brutalisme civique du milieu du siècle réapparaissent : construire une fois, construire honnêtement et construire pour survivre aux cycles générationnels qui l’ont conçu."
+      "text": "La construction commerciale contemporaine est majoritairement définie par l'obsolescence programmée. Les cadres en acier léger enveloppés de panneaux composites d'aluminium et de mastics silicone sont conçus pour des programmes d'amortissement sur trente ans plutôt que pour des siècles d'endurance civile. En revanche, l’architecture brutaliste se présente comme un monument sans vergogne de la permanence géologique."
     }
   ],
-  "sourceHash": "6d1a79f0363b4a1ac00fb302d45b6d090a774b48"
+  "sourceHash": "4fd44a27e701bc25ec08be07ecdfef9eb6ce5ee8"
 }

@@ -12,7 +12,7 @@
     "algorithms"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "ایک تاریک انٹرفیس کے خلاف اوپر کی طرف تکنیکی رفتار کو ظاہر کرنے والا کینڈل سٹک مالیاتی چارٹ",
+  "imageAlt": "Candlestick financial chart displaying upward technical momentum against a dark interface",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "آج، ایک پرسکون تکنیکی انقلاب اس رکاوٹ کو ختم کر رہا ہے۔ ہائی تھرو پٹ WebSocket پروٹوکول، WebAssembly ویکٹر رینڈرنگ پائپ لائنز، اور کھلے ادارہ جاتی تبادلے کی ترسیل مہنگے تھرڈ پارٹی سافٹ ویئر کے بغیر معیاری براؤزر رن ٹائم کے اندر براہ راست ملٹی ٹائم فریم چارٹس کا جائزہ لینا ممکن بناتے ہیں۔"
+      "text": "کئی دہائیوں تک، وال اسٹریٹ کے اداروں نے ملکیتی ہارڈویئر ٹرمینلز اور حد سے زیادہ مارکیٹ ڈیٹا سنڈیکیشن فیس کے ذریعے عالمی ریٹیل شرکاء پر غیر متناسب فائدہ برقرار رکھا۔ ریئل ٹائم قیمت کی دریافت تک رسائی، بک آرڈر کے بہاؤ کی گہرائی، اور کراس اثاثہ کے ارتباط کے ماڈلز کو پانچ اعداد کے ماہانہ سبسکرپشن پے والز کے پیچھے سختی سے محفوظ کیا گیا تھا۔"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Algorithmic Market Intelligence and Open Financial Data."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "Questo Financial Technologies Dispatch"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Algorithmic Market Intelligence and Open Financial Data."
+    },
+    {
       "type": "h3",
       "text": "Critical Metrics of Modern Open Intelligence"
     },
     {
       "type": "ul",
       "items": [
-        "ذیلی ملی سیکنڈ کے ریاضیاتی آسکی لیٹرز (RSI, MACD, Bollinger Bands) تاریخی صفوں پر مقامی طور پر شمار کیے جاتے ہیں۔",
-        "تصدیق شدہ عوامی تبادلے کے ریگولیٹری انکشافات اور تاخیری ٹیپس کے ذریعے ڈیٹا کی سالمیت پر کوئی سمجھوتہ نہ کریں۔",
-        "خودمختار بانڈز، اشیاء اور کرنسی کی لیکویڈیٹی سے باخبر رہنے والے کراس اثاثہ ملٹی مارکیٹ کوریلیشن میٹرکس۔"
+        "Sub-millisecond mathematical oscillators (RSI, MACD, Bollinger Bands) computed locally on historical arrays.",
+        "Zero-compromise data integrity through verified public exchange regulatory disclosures and delayed tapes.",
+        "Cross-asset multi-market correlation matrices tracking sovereign bonds, commodities, and currency liquidity."
       ]
     },
     {
       "type": "p",
-      "text": "جیسے جیسے کھلے مالیاتی ڈھانچے میں پختگی آتی ہے، ڈیجیٹل پبلشنگ پلیٹ فارمز جو براہ راست صحافتی تحقیقات کے ساتھ براہ راست میکرو اکنامک اشاریوں کو مربوط کرتے ہیں، متجسس عالمی تجزیہ کاروں کے لیے بے مثال سیاق و سباق کی قدر پیدا کرتے ہیں۔"
+      "text": "کئی دہائیوں تک، وال اسٹریٹ کے اداروں نے ملکیتی ہارڈویئر ٹرمینلز اور حد سے زیادہ مارکیٹ ڈیٹا سنڈیکیشن فیس کے ذریعے عالمی ریٹیل شرکاء پر غیر متناسب فائدہ برقرار رکھا۔ ریئل ٹائم قیمت کی دریافت تک رسائی، بک آرڈر کے بہاؤ کی گہرائی، اور کراس اثاثہ کے ارتباط کے ماڈلز کو پانچ اعداد کے ماہانہ سبسکرپشن پے والز کے پیچھے سختی سے محفوظ کیا گیا تھا۔"
     }
   ],
-  "sourceHash": "6430a948ddf7d0cd90e6d8f81c30482d30577640"
+  "sourceHash": "e354fb121c1df4ece3a0fa71cc8f4e48be1bc568"
 }

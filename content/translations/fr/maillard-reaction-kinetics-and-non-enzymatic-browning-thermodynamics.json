@@ -12,7 +12,7 @@
     "thermodynamics"
   ],
   "image": "/images/articles/maillard-reaction-culinary.jpg",
-  "imageAlt": "Saisir à haute température une création culinaire avec une riche caramélisation brun doré dans une cuisine professionnelle",
+  "imageAlt": "High-temperature searing of a culinary creation with rich golden-brown caramelization in a professional kitchen",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "L'architecture chimique de la saveur torréfiée"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1470813740244-df3752178108?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Thermodynamics of the Maillard Reaction."
     },
     {
       "type": "ul",
       "items": [
-        "Condensation initiale : L'attaque nucléophile d'une amine non protonée sur un carbone carbonyle de sucre réducteur donne une glycosylamine instable.",
-        "Réarrangement d'Amadori : l'isomérisation catalysée par l'acide convertit les aldosylamines en 1-amino-1-désoxy-2-cétoses stables, la phase intermédiaire essentielle.",
-        "Dégradation de Strecker : les intermédiaires dicarbonyle réagissent avec les acides aminés pour générer des aldéhydes et des aminocétones qui se condensent en pyrazines aromatiques.",
-        "Équilibre de l'activité de l'eau : la vitesse de réaction culmine à une activité de l'eau intermédiaire ($a_w \\environ 0,65$ à 0,75$), tandis que l'eau de surface libre supprime le brunissement."
+        "Initial Condensation: Nucleophilic attack of an unprotonated amine on a reducing sugar carbonyl carbon yields an unstable glycosylamine.",
+        "Amadori Rearrangement: Acid-catalyzed isomerization converts aldosylamines into stable 1-amino-1-deoxy-2-ketoses, the pivotal intermediate phase.",
+        "Strecker Degradation: Dicarbonyl intermediates react with amino acids to generate aldehydes and aminoketones that condense into aromatic pyrazines.",
+        "Water Activity Balance: Reaction velocity peaks at intermediate water activity ($a_w \\approx 0.65$ to $0.75$), while free surface water suppresses browning."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Modernist Culinary Science Journal"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1484589065579-247adc070a15?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Thermodynamics of the Maillard Reaction."
+    },
+    {
       "type": "h2",
-      "text": "Seuils thermiques et hydratation de surface"
+      "text": "L'architecture chimique de la saveur torréfiée"
     },
     {
       "type": "p",
-      "text": "La cascade Maillard accélère de façon exponentielle au-dessus de 140°C (284°F). Étant donné que l'eau liquide s'évapore à 100 °C à la pression atmosphérique, les surfaces humides des aliments ne peuvent pas atteindre l'énergie d'activation thermodynamique requise pour un brunissement rapide tant que l'humidité de la surface n'est pas complètement vaporisée. Cela explique pourquoi la dessiccation de surface est essentielle pour la torréfaction à haute température."
+      "text": "Chaque croûte dorée sur un pain au levain, un grain de café torréfié et un steak poêlé doit sa profondeur aromatique à l'une des cascades les plus complexes de la chimie alimentaire : la réaction de Maillard. Nommée d'après le chimiste français Louis-Camille Maillard, cette voie de brunissement non enzymatique transforme les sucres réducteurs simples et les nucléophiles d'acides aminés en centaines de molécules aromatiques volatiles."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "La science de la réaction de Maillard et de la thermodynamique de brunissement",
-      "caption": "Analyse détaillée de la chimie alimentaire des acides aminés, des sucres réducteurs, des aldéhydes de Strecker et des composés aromatiques hétérocycliques."
+      "title": "The Science of the Maillard Reaction & Browning Thermodynamics",
+      "caption": "Detailed food chemistry analysis of amino acids, reducing sugars, Strecker aldehydes, and heterocyclic flavor compounds.",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU"
     },
     {
       "type": "h2",
-      "text": "Manipulation du pH et gastronomie moderne"
+      "text": "L'architecture chimique de la saveur torréfiée"
     },
     {
       "type": "p",
-      "text": "L'élévation du pH de surface à l'aide de tampons alcalins (tels que le bicarbonate de sodium) déprotonne les groupes amines d'acides aminés, augmentant leur nucléophilie et accélérant considérablement la cinétique de réaction à des températures plus basses sans trop cuire l'intérieur."
+      "text": "Chaque croûte dorée sur un pain au levain, un grain de café torréfié et un steak poêlé doit sa profondeur aromatique à l'une des cascades les plus complexes de la chimie alimentaire : la réaction de Maillard. Nommée d'après le chimiste français Louis-Camille Maillard, cette voie de brunissement non enzymatique transforme les sucres réducteurs simples et les nucléophiles d'acides aminés en centaines de molécules aromatiques volatiles."
     }
   ],
-  "sourceHash": "c6c53fadf6a9f6a0d846319573d36f3d56e66b56"
+  "sourceHash": "a879380da9b4634b8ea45020161b445339659c48"
 }

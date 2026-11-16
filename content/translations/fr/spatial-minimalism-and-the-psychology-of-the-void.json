@@ -11,8 +11,8 @@
     "spatial-theory",
     "architecture"
   ],
-  "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Couloir architectural minimaliste éclairé par une seule fente verticale de soleil matinal sur des surfaces calcaires.",
+  "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Minimalist concrete courtyard framing open sky and contemplative negative architectural space",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "L'esthétique japonaise traditionnelle définit « Ma » non pas comme un simple néant, mais comme un intervalle expérientiel riche de potentiel. En architecture physique, l’espace vide n’est pas une absence de décoration ; c'est la présence délibérée du calme atmosphérique. Lorsque le désordre est éliminé, la lumière et l’ombre deviennent les principaux matériaux sculpturaux."
+      "text": "Chaque minute éveillée de la vie contemporaine est bombardée de notifications, de publicités micro-ciblées et de flux algorithmiques rivalisant pour une attention fragmentée. En réponse à ces frictions psychologiques incessantes, l’architecture spatiale a assumé un nouveau mandat urgent : la création d’une tranquillité absolue à travers le vide intentionnel."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Monolithic raw concrete hallway illuminated by a single vertical slit of natural sunlight",
+      "caption": "The architectural void: designing pauses, unadorned surfaces, and intentional silence into physical environments."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "Avantages neurologiques de la réduction architecturale"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Contemplative zen-inspired sanctuary room with clean geometry and soft ambient shadows",
+      "caption": "Psychological restoration: eliminating sensory clutter to lower autonomic nervous arousal and invite reflection."
+    },
+    {
       "type": "ul",
       "items": [
-        "Désencombrement cognitif : des plans continus sans fioritures de pierre naturelle et de plâtre atténué réduisent considérablement les niveaux de cortisol et la fatigue du balayage visuel.",
-        "Conscience de la lumière du jour : les lignes de visibilité ininterrompues permettent aux occupants de calibrer inconsciemment les rythmes circadiens grâce au mouvement naturel du soleil.",
-        "Ancrage sensoriel et tactile : le granit poli, le chêne non scellé et les lavis à la chaux texturés stimulent des réponses proprioceptives apaisantes."
+        "Cognitive decluttering: Unadorned continuous planes of natural stone and muted plaster significantly lower cortisol levels and visual scanning fatigue.",
+        "Daylight awareness: Uninterrupted sightlines allow occupants to subconsciously calibrate circadian rhythms through natural sun movement.",
+        "Sensory tactile grounding: Honed granite, unsealed oak, and textured lime washes stimulate calming proprioceptive responses."
       ]
     },
     {
       "type": "p",
-      "text": "Loin de l'austérité froide, le véritable minimalisme spatial est un acte de profonde hospitalité envers l'esprit humain, offrant un sanctuaire physique où la pensée peut s'étendre sans frontières."
+      "text": "Chaque minute éveillée de la vie contemporaine est bombardée de notifications, de publicités micro-ciblées et de flux algorithmiques rivalisant pour une attention fragmentée. En réponse à ces frictions psychologiques incessantes, l’architecture spatiale a assumé un nouveau mandat urgent : la création d’une tranquillité absolue à travers le vide intentionnel."
     }
   ],
-  "sourceHash": "b6011a2ade74f73608ba2334a98e205d2a3d8d6f"
+  "sourceHash": "1a34b05804e9f7a767a17f3bbaf46f0ddafb8574"
 }

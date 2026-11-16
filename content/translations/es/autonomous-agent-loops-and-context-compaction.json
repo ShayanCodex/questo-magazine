@@ -11,8 +11,8 @@
     "system-architecture",
     "context-compaction"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "Pesos de atención neuronal del modelo de IA de alto rendimiento y tiempo de ejecución de llamadas de herramientas de agentes",
+  "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Abstract glowing neural network connections representing autonomous agentic reasoning loops",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "La arquitectura de los bucles agentes de larga duración"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sandboxed code execution environment displaying structured JSON tool call outputs and reflection checks",
+      "caption": "Tool execution boundaries: deterministic validation gates ensuring agent tool errors do not pollute long-term context."
     },
     {
       "type": "ul",
       "items": [
-        "Compresión de estado: los pases de resumen estructurados destilan los resultados sin procesar de las herramientas en libros de estado de alta densidad antes de que se violen los límites del contexto.",
-        "Límite de ejecución de la herramienta: Los tiempos de ejecución de subprocesos en zona protegida garantizan que las fallas de la herramienta del agente devuelvan diagnósticos legibles por máquina sin contaminar el estado de conversación.",
-        "Memoria episódica versus semántica: los agentes bifurcan los rastros del bloc de notas local de las convenciones de proyectos a largo plazo almacenadas en jerarquías de vectores indexados.",
-        "Cascadas de autocorrección: los monitores de reflexión de doble bucle evalúan la finalización de la tarea frente a los invariantes originales, deteniendo los bucles de ejecución fuera de control."
+        "State Compression: Structured summarization passes distill raw tool outputs into high-density state ledgers before context bounds are breached.",
+        "Tool Execution Boundary: Sandboxed subprocess runtimes ensure that agent tool failures return machine-readable diagnostics without polluting conversational state.",
+        "Episodic vs Semantic Memory: Agents bifurcate local scratchpad traces from long-term project conventions stored in indexed vector hierarchies.",
+        "Self-Correction Cascades: Dual-loop reflection monitors evaluate task completion against original invariants, arresting runaway execution loops."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Monografía de arquitectura de sistemas e inteligencia autónoma"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Vector database memory indexing and semantic state compaction across multi-turn sessions",
+      "caption": "Dynamic context compaction: recursive summarization passes compressing conversational state by 80% without losing task invariants."
+    },
+    {
       "type": "h2",
-      "text": "Poda dinámica y compactación de estado progresiva"
+      "text": "La arquitectura de los bucles agentes de larga duración"
     },
     {
       "type": "p",
-      "text": "Los marcos de agentes modernos implementan la compactación progresiva: a medida que la profundidad de la conversación excede los umbrales de token predefinidos, las respuestas de las herramientas intermedias (como lecturas de archivos y registros de compilación) se colapsan recursivamente en diferencias estructuradas y árboles de decisión. Esto preserva la trayectoria de razonamiento del agente y al mismo tiempo reduce el consumo de tokens hasta en un ochenta por ciento."
+      "text": "Los agentes autónomos que operan en tareas analíticas o de ingeniería de software de varias horas inevitablemente enfrentan el límite físico fundamental de los modelos básicos: la saturación de la ventana de contexto y el escalado de memoria cuadrático. Mientras que la generación aumentada de recuperación estática (RAG) ayuda a responder preguntas de forma pasiva, un agente activo que genera llamadas a herramientas, inspecciona las salidas de los terminales y edita el código fuente requiere una memoria de trabajo persistente que descarte dinámicamente el ruido transitorio y al mismo tiempo preserve las invariantes arquitectónicas críticas."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "Creación de arquitecturas y agentes LLM autónomos",
-      "caption": "Desglose detallado de sistemas de razonamiento de transformadores, gestión de scratchpad e invocación de herramientas agentes."
+      "title": "Building Autonomous LLM Architectures and Agents",
+      "caption": "Detailed systems breakdown of transformer reasoning, scratchpad management, and agentic tool invocation.",
+      "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY"
     },
     {
       "type": "h2",
-      "text": "Verificación empírica y preservación invariante"
+      "text": "La arquitectura de los bucles agentes de larga duración"
     },
     {
       "type": "p",
-      "text": "Al combinar la compactación del contexto con conjuntos de pruebas deterministas, los tiempos de ejecución autónomos modernos logran una confiabilidad sostenida en cientos de acciones secuenciales. El futuro de la ingeniería de software no reside en las indicaciones conversacionales, sino en bucles de agentes disciplinados y autorreparables gobernados por rigurosas puertas de validación."
+      "text": "Los agentes autónomos que operan en tareas analíticas o de ingeniería de software de varias horas inevitablemente enfrentan el límite físico fundamental de los modelos básicos: la saturación de la ventana de contexto y el escalado de memoria cuadrático. Mientras que la generación aumentada de recuperación estática (RAG) ayuda a responder preguntas de forma pasiva, un agente activo que genera llamadas a herramientas, inspecciona las salidas de los terminales y edita el código fuente requiere una memoria de trabajo persistente que descarte dinámicamente el ruido transitorio y al mismo tiempo preserve las invariantes arquitectónicas críticas."
     }
   ],
-  "sourceHash": "8c4ee9a01b91327d6b414722664459af6707fe3b"
+  "sourceHash": "b6bfa05ab8dda869359d99132bc59365f9012c36"
 }

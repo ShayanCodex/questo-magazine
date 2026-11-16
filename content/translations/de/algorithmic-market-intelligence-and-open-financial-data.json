@@ -12,7 +12,7 @@
     "algorithms"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Candlestick-Finanzdiagramm zeigt technisches Aufwärtsmomentum vor einer dunklen Schnittstelle",
+  "imageAlt": "Candlestick financial chart displaying upward technical momentum against a dark interface",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Heute beseitigt eine stille technologische Revolution diese Barriere. WebSocket-Protokolle mit hohem Durchsatz, WebAssembly-Vektor-Rendering-Pipelines und offene institutionelle Exchange-Dispatches ermöglichen die direkte Auswertung von Multi-Timeframe-Diagrammen in Standard-Browserlaufzeiten ohne teure Software von Drittanbietern."
+      "text": "Jahrzehntelang behielten Wall-Street-Institute durch proprietäre Hardware-Terminals und exorbitante Marktdaten-Syndication-Gebühren einen asymmetrischen Vorteil gegenüber globalen Einzelhandelsteilnehmern bei. Der Zugriff auf die Preisfindung in Echtzeit, die Tiefe des Buchauftragsflusses und die Cross-Asset-Korrelationsmodelle wurde hinter fünfstelligen monatlichen Abonnement-Paywalls streng gehütet."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Algorithmic Market Intelligence and Open Financial Data."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "Dieser Beitrag von Financial Technologies"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algorithmic Market Intelligence and Open Financial Data - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Algorithmic Market Intelligence and Open Financial Data."
+    },
+    {
       "type": "h3",
       "text": "Kritische Metriken moderner offener Intelligenz"
     },
     {
       "type": "ul",
       "items": [
-        "Mathematische Oszillatoren im Submillisekundenbereich (RSI, MACD, Bollinger-Bänder), lokal auf historischen Arrays berechnet.",
-        "Kompromisslose Datenintegrität durch verifizierte aufsichtsrechtliche Offenlegungen öffentlicher Börsen und verzögerte Aufzeichnungen.",
-        "Asset-übergreifende Korrelationsmatrizen für mehrere Märkte, die Staatsanleihen, Rohstoffe und Währungsliquidität verfolgen."
+        "Sub-millisecond mathematical oscillators (RSI, MACD, Bollinger Bands) computed locally on historical arrays.",
+        "Zero-compromise data integrity through verified public exchange regulatory disclosures and delayed tapes.",
+        "Cross-asset multi-market correlation matrices tracking sovereign bonds, commodities, and currency liquidity."
       ]
     },
     {
       "type": "p",
-      "text": "Mit zunehmender Reife offener Finanzarchitekturen schaffen digitale Veröffentlichungsplattformen, die makroökonomische Live-Indikatoren direkt in journalistische Untersuchungen integrieren, einen beispiellosen kontextuellen Wert für neugierige globale Analysten."
+      "text": "Jahrzehntelang behielten Wall-Street-Institute durch proprietäre Hardware-Terminals und exorbitante Marktdaten-Syndication-Gebühren einen asymmetrischen Vorteil gegenüber globalen Einzelhandelsteilnehmern bei. Der Zugriff auf die Preisfindung in Echtzeit, die Tiefe des Buchauftragsflusses und die Cross-Asset-Korrelationsmodelle wurde hinter fünfstelligen monatlichen Abonnement-Paywalls streng gehütet."
     }
   ],
-  "sourceHash": "6430a948ddf7d0cd90e6d8f81c30482d30577640"
+  "sourceHash": "e354fb121c1df4ece3a0fa71cc8f4e48be1bc568"
 }

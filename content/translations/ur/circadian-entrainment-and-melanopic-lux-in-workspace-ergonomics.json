@@ -12,7 +12,7 @@
     "wellness"
   ],
   "image": "/images/articles/circadian-lighting-workspace.jpg",
-  "imageAlt": "قدرتی فرش تا چھت دن کی روشنی اور انکولی ٹاسک الیومینیشن سے روشن وسیع آرکیٹیکچرل ورک اسپیس",
+  "imageAlt": "Spacious architectural workspace illuminated by natural floor-to-ceiling daylight and adaptive task illumination",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "جمود والی انڈور لائٹ کی حیاتیاتی لاگت"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Circadian Lighting in Workspace Ergonomics - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Circadian Lighting in Workspace Ergonomics."
     },
     {
       "type": "ul",
       "items": [
-        "میلانوپسن اور ipRGCs: اندرونی طور پر فوٹو حساس ریٹینل گینگلیون سیلز فوٹو پیگمنٹ میلانوپسن پر مشتمل ہوتے ہیں، جو 480nm کے قریب تنگ سیان طول موج کے لیے زیادہ سے زیادہ حساس ہوتے ہیں۔",
-        "Suprachiasmatic Nucleus (SCN): ipRGC محوری تخمینہ ہائپوتھلامک ماسٹر کلاک کو براہ راست متاثر کرتا ہے، جگر، دل اور لبلبہ میں پردیی گھڑیوں کو ہم آہنگ کرتا ہے۔",
-        "مساوی میلانوپک لکس (EML): دن کے وقت کے اندرونی ماحول کو دن کے وقت کورٹیسول، چوکسی، اور علمی صلاحیت کو برقرار رکھنے کے لیے 09:00 اور 13:00 کے درمیان کم از کم 250 EML کی ضرورت ہوتی ہے۔",
-        "شام کے مرحلے میں تاخیر کی روک تھام: 50 EML سے نیچے روشنی کو منتقل کرنا اور غروب آفتاب کے بعد مختصر طول موج 480nm کے اخراج کو ختم کرنا رات کے پائنل میلاٹونن کے سراو کی حفاظت کرتا ہے۔"
+        "Melanopsin and ipRGCs: Intrinsically photosensitive retinal ganglion cells contain the photopigment melanopsin, maximally sensitive to narrow cyan wavelengths near 480nm.",
+        "Suprachiasmatic Nucleus (SCN): ipRGC axonal projections directly innervate the hypothalamic master clock, synchronizing peripheral clocks across the liver, heart, and pancreas.",
+        "Equivalent Melanopic Lux (EML): Daytime indoor environments require at least 250 EML between 09:00 and 13:00 to sustain daytime cortisol, vigilance, and cognitive stamina.",
+        "Evening Phase Delay Prevention: Shifting illumination below 50 EML and depleting short-wavelength 480nm emissions after sunset protects nocturnal pineal melatonin secretion."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "انٹرنیشنل ویل بلڈنگ انسٹی ٹیوٹ اینڈ کرونوبیولوجی ریسرچ"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Circadian Lighting in Workspace Ergonomics - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Circadian Lighting in Workspace Ergonomics."
+    },
+    {
       "type": "h2",
-      "text": "ڈائنامک ٹیون ایبل وائٹ آرکیٹیکچر"
+      "text": "جمود والی انڈور لائٹ کی حیاتیاتی لاگت"
     },
     {
       "type": "p",
-      "text": "ہیومن سینٹرک لائٹنگ (HCL) تنصیبات میں ڈوئل چینل ٹیون ایبل وائٹ ایل ای ڈی لگائی جاتی ہے جو متحرک طور پر ٹھنڈی ہائی میلانوپک 5500K رنگین درجہ حرارت سے لے کر صبح کی چوٹی کی پیداواری صلاحیت سے لے کر دوپہر تک کم پیداواری اوقات کے دوران۔ شمسی سپیکٹرل ارتقاء کی نقل کرنا۔"
+      "text": "جدید پیشہ ورانہ علمی کارکن اپنے جاگنے کے اوقات کا 90% تک موسمیاتی کنٹرول والے ڈھانچے کے اندر گزارتے ہیں۔ اگرچہ معیاری تعمیراتی رہنما خطوط فوٹوپک لکس میں روشنی کی وضاحت کرتے ہیں (بصری کام کی وضاحت کے لیے سختی سے بہتر بنایا گیا ہے)، انسانی آنکھ میں تیسرا فوٹو ریسیپٹر سسٹم ہوتا ہے جو مکمل طور پر سرکیڈین حیاتیات کے لیے وقف ہوتا ہے۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM",
-      "title": "سرکیڈین لائٹنگ، میلانوپک لکس، اور ورک اسپیس پرفارمنس",
-      "caption": "میلانوپسن فوٹو ریسپشن، بلیو لائٹ سپریشن، اور آرکیٹیکچرل ہیومن سینٹرک لائٹنگ ڈیزائنز میں کرونوبیولوجی تحقیقات۔"
+      "title": "Circadian Lighting, Melanopic Lux, and Workspace Performance",
+      "caption": "Chronobiology investigation into melanopsin photoreception, blue light suppression, and architectural human-centric lighting designs.",
+      "src": "https://www.youtube-nocookie.com/embed/5MuIMqhT8DM"
     },
     {
       "type": "h2",
-      "text": "نیند میں تاخیر اور میٹابولک ہیلتھ"
+      "text": "جمود والی انڈور لائٹ کی حیاتیاتی لاگت"
     },
     {
       "type": "p",
-      "text": "کام کی جگہوں پر کام کرنے والے ملازمین دن کے وقت سرکیڈین محرک کے ساتھ کم نیند کے آغاز میں تاخیر کی اطلاع دیتے ہیں، رات کی بیداری میں کمی، اور صبح میں گلوکوز رواداری کو مستحکم کرتے ہیں، روشنی کو صحت کے بنیادی ستون کے طور پر اجاگر کرتے ہیں۔"
+      "text": "جدید پیشہ ورانہ علمی کارکن اپنے جاگنے کے اوقات کا 90% تک موسمیاتی کنٹرول والے ڈھانچے کے اندر گزارتے ہیں۔ اگرچہ معیاری تعمیراتی رہنما خطوط فوٹوپک لکس میں روشنی کی وضاحت کرتے ہیں (بصری کام کی وضاحت کے لیے سختی سے بہتر بنایا گیا ہے)، انسانی آنکھ میں تیسرا فوٹو ریسیپٹر سسٹم ہوتا ہے جو مکمل طور پر سرکیڈین حیاتیات کے لیے وقف ہوتا ہے۔"
     }
   ],
-  "sourceHash": "3edf6d60ff91688e8de9b30a6658201cace82871"
+  "sourceHash": "a113966670ad68b1239a1e2e5f8dd75456f1580e"
 }

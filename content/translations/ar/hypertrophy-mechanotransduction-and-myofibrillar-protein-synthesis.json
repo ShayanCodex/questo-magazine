@@ -12,7 +12,7 @@
     "sports-science"
   ],
   "image": "/images/articles/fitness-hypertrophy-gym.jpg",
-  "imageAlt": "تدريب عالي الكثافة على المقاومة باستخدام أوزان الحديد في منشأة تكييف رياضية حديثة",
+  "imageAlt": "High-intensity resistance training with barbell weights in a modern athletic conditioning facility",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "التحضير الجزيئي لنمو العضلات الهيكلية"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mechanotransduction & Hypertrophy - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Mechanotransduction & Hypertrophy."
     },
     {
       "type": "ul",
       "items": [
-        "المجمعات الكوستاميرية: تنقل مجمعات الالتصاق البؤري Integrin-vinculin-talin القوة الطولية والجانبية من القسيمات العضلية إلى المصفوفة خارج الخلية.",
-        "إزفاء mTORC1: يحفز التحميل الميكانيكي تخليق حمض الفوسفاتيديك ويبدأ التنشيط بوساطة الريب للهدف الميكانيكي لمجمع الرابامايسين 1 (mTORC1).",
-        "التولد الحيوي للريبوسوم: لا يقتصر التضخم المزمن في النهاية على بدء الترجمة فحسب، بل أيضًا على معدل النسخ لتخليق الحمض النووي الريبوزي (rDNA).",
-        "المعدل الاصطناعي الجزئي (FSR): يرتفع معدل تخليق البروتين الليفي العضلي بعد التمرين خلال 2 إلى 4 ساعات، ويبلغ ذروته حوالي 24 ساعة قبل العودة إلى خط الأساس لدى الأفراد المدربين."
+        "Costameric Complexes: Integrin-vinculin-talin focal adhesion complexes transmit longitudinal and lateral force from sarcomeres to the extracellular matrix.",
+        "mTORC1 Translocation: Mechanical loading stimulates phosphatidic acid synthesis and initiates Rheb-mediated activation of the mechanistic target of rapamycin complex 1 (mTORC1).",
+        "Ribosome Biogenesis: Chronic hypertrophy is ultimately bounded not just by translation initiation, but by the transcriptional rate of ribosomal RNA (rDNA) synthesis.",
+        "Fractional Synthetic Rate (FSR): Post-exercise myofibrillar protein synthesis elevates within 2 to 4 hours, peaking near 24 hours before returning to baseline in trained individuals."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "مجلة علم وظائف الأعضاء التطبيقي وعلم الحركة الجزيئي"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1457364884844-389f71424fe1?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mechanotransduction & Hypertrophy - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Mechanotransduction & Hypertrophy."
+    },
+    {
       "type": "h2",
-      "text": "إضافة الساركومير في السلسلة مقابل التوازي"
+      "text": "التحضير الجزيئي لنمو العضلات الهيكلية"
     },
     {
       "type": "p",
-      "text": "تؤدي الانقباضات اللامركزية المحملة بأطوال عضلية طويلة إلى تحفيز سلالات ميكانيكية فريدة عبر مجالات كيناز التيتين. يؤدي هذا التمدد الميكانيكي إلى توسع الليفي العضلي المتوازي (نمو قطر المقطع العرضي) وتولد الأورام اللحمية في السلسلة (إضافة وحدات مقلصة على طول المحور الطولي)، مما يعزز إنتاج القوة واستقرار نطاق المفاصل."
+      "text": "تضخم العضلات الهيكلية هو في الأساس استجابة تكيفية يحكمها النقل الميكانيكي - السلسلة الفسيولوجية التي من خلالها تقوم أجهزة الاستشعار الميكانيكية على سطح الخلية بتحويل الإجهاد الجسدي الخارجي إلى إشارات كيميائية حيوية داخل الخلايا. في حين يساهم الإجهاد الأيضي وتلف العضلات الموضعي في التحفيز، يظل التوتر الميكانيكي السلبي والنشط هو المحرك الرئيسي لتخليق البروتين الليفي العضلي."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "الآليات الخلوية لتضخم العضلات وتخليق البروتين",
-      "caption": "محاضرة مفصلة في علم الأحياء الجزيئي توضح بالتفصيل تنشيط mTORC1، والتبرع بالخلايا الفضائية، ومسارات النقل الميكانيكي في ألياف العضلات البشرية."
+      "title": "The Cellular Mechanisms of Muscle Hypertrophy & Protein Synthesis",
+      "caption": "Detailed molecular biology lecture detailing mTORC1 activation, satellite cell donation, and mechanotransduction pathways in human muscle fibers.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "الحدود الانتقالية واندماج الخلايا الساتلة"
+      "text": "التحضير الجزيئي لنمو العضلات الهيكلية"
     },
     {
       "type": "p",
-      "text": "مع توسع الألياف العضلية إلى ما هو أبعد من سقف المجال النووي العضلي، تخضع الخلايا الساتلية Pax7+ المقيمة لتقسيم غير متماثل وتتبرع بنوى جديدة للحفاظ على النسخ عبر الألياف العضلية شديدة التوسع، مما يمنع الإرهاق الاصطناعي في تكيفات قوة النخبة."
+      "text": "تضخم العضلات الهيكلية هو في الأساس استجابة تكيفية يحكمها النقل الميكانيكي - السلسلة الفسيولوجية التي من خلالها تقوم أجهزة الاستشعار الميكانيكية على سطح الخلية بتحويل الإجهاد الجسدي الخارجي إلى إشارات كيميائية حيوية داخل الخلايا. في حين يساهم الإجهاد الأيضي وتلف العضلات الموضعي في التحفيز، يظل التوتر الميكانيكي السلبي والنشط هو المحرك الرئيسي لتخليق البروتين الليفي العضلي."
     }
   ],
-  "sourceHash": "abd62238f19452b2352ffa839812681301a0bac4"
+  "sourceHash": "5cf0b3e255d17e29be22cd3c8abc974408c8dd4a"
 }

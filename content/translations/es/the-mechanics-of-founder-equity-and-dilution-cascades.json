@@ -1,0 +1,79 @@
+{
+  "slug": "the-mechanics-of-founder-equity-and-dilution-cascades",
+  "title": "La mecánica del capital fundador: tablas de límites máximos, preferencias de liquidación y cascadas de dilución",
+  "excerpt": "Un examen matemático riguroso de instrumentos convertibles, combinaciones de grupos de opciones, marcas de agua de liquidación y mecanismos antidilución descendentes.",
+  "date": "2026-11-16",
+  "author": "Elena Vance",
+  "tags": [
+    "venture-capital",
+    "cap-tables",
+    "founder-equity",
+    "corporate-governance",
+    "startups"
+  ],
+  "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Modern glass skyscraper headquarters representing venture finance and corporate equity governance",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Las matemáticas de las tablas de capitalización"
+    },
+    {
+      "type": "p",
+      "text": "En el ciclo de vida inicial de las empresas tecnológicas, las tablas de capitalización a menudo se tratan como libros contables estáticos en lugar de sistemas dinámicos de derechos diferenciales. A medida que las empresas avanzan desde las notas convertibles pre-seed a través de sucesivas rondas preferentes con precio, los efectos compuestos de las expansiones del conjunto de opciones no asignadas, los multiplicadores preferentes participantes y las preferencias de liquidación senior crean profundas no linealidades en las realizaciones finales de capital."
+    },
+    {
+      "type": "h2",
+      "text": "Las matemáticas de las tablas de capitalización"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1556742049-0a67e557224d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Executive venture financing agreement and capitalization table term sheet modeling",
+      "caption": "Option pool shuffle: pre-money ESOP allocation concentrating dilution risk entirely upon founding common equity."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The Option Pool Shuffle: Expanding employee stock ownership plans (ESOP) immediately prior to rather than following a financing round systematically shifts dilution entirely onto existing common stockholders.",
+        "Convertible Valuation Caps vs Discounts: Early SAFEs that convert into subsequent priced equity without pre-money consensus can inadvertently trigger massive ownership compression for founders.",
+        "Liquidation Preference Watermarks: 1x non-participating preferred shares establish a floor of downside protection, whereas participating preferred structures grant investors double-dipping rights into residual common value.",
+        "Broad-Based Weighted Average Antidilution: Mathematical adjustment formulas protect preferred series in down-rounds while mitigating the destructive wipeout risk of full-ratchet provisions."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Una tabla de capitalización no es simplemente un registro de propiedad; es un contrato estructural que rige la distribución de riesgos, los derechos de control y la alineación de incentivos posteriores en condiciones de extrema incertidumbre económica.",
+      "cite": "Revisión de gobernanza de empresas y finanzas corporativas"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1560472324-a2a11b619d08?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Corporate governance board meeting evaluating liquidation waterfall payouts and dilution curves",
+      "caption": "Liquidation waterfalls: modeling payout thresholds across non-participating preferred seniority tranches."
+    },
+    {
+      "type": "h2",
+      "text": "Las matemáticas de las tablas de capitalización"
+    },
+    {
+      "type": "p",
+      "text": "En el ciclo de vida inicial de las empresas tecnológicas, las tablas de capitalización a menudo se tratan como libros contables estáticos en lugar de sistemas dinámicos de derechos diferenciales. A medida que las empresas avanzan desde las notas convertibles pre-seed a través de sucesivas rondas preferentes con precio, los efectos compuestos de las expansiones del conjunto de opciones no asignadas, los multiplicadores preferentes participantes y las preferencias de liquidación senior crean profundas no linealidades en las realizaciones finales de capital."
+    },
+    {
+      "type": "video",
+      "title": "Venture Capital Cap Table Mechanics and Liquidation Preference Analysis",
+      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution.",
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+    },
+    {
+      "type": "h2",
+      "text": "Las matemáticas de las tablas de capitalización"
+    },
+    {
+      "type": "p",
+      "text": "En el ciclo de vida inicial de las empresas tecnológicas, las tablas de capitalización a menudo se tratan como libros contables estáticos en lugar de sistemas dinámicos de derechos diferenciales. A medida que las empresas avanzan desde las notas convertibles pre-seed a través de sucesivas rondas preferentes con precio, los efectos compuestos de las expansiones del conjunto de opciones no asignadas, los multiplicadores preferentes participantes y las preferencias de liquidación senior crean profundas no linealidades en las realizaciones finales de capital."
+    }
+  ],
+  "sourceHash": "e62f37573d49b9a50ddc0354e6511265a37bc9f3"
+}

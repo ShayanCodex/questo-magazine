@@ -11,8 +11,8 @@
     "edge-computing",
     "web-vitals"
   ],
-  "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Racks de serveurs haute densité émettant des télémétries à LED cyan à l'intérieur d'une installation de données d'entreprise",
+  "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-density server racks emitting cyan LED telemetry inside an enterprise data facility",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Pour obtenir une authentique peinture de contenu (LCP) authentique en moins d'une seconde et un décalage de mise en page cumulatif (CLS) nul, il faut inverser la topologie d'hébergement traditionnelle. Plutôt que de calculer le HTML de manière dynamique à la demande de l'utilisateur, les plates-formes de publication modernes de haute autorité précompilent les pages en fichiers HTML statiques déterministes et immuables au moment de la construction."
+      "text": "Depuis plus d'une décennie, l'architecture Web a chassé la complexité informatique au détriment de l'expérience utilisateur. Les applications massives d'une seule page, les arbres d'hydratation alambiqués et les requêtes de bases de données back-end à plusieurs niveaux ont surchargé le Web moderne. Chaque milliseconde de latence érode la confiance des utilisateurs, diminue la visibilité de la recherche et gaspille la durée de vie de la batterie de l'appareil."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "code",
@@ -33,7 +39,13 @@
     },
     {
       "type": "p",
-      "text": "Lorsqu'un actif immuable est servi à partir d'un nœud périphérique situé à moins de 15 kilomètres du client demandeur, le transport aller-retour des paquets tombe en dessous de 10 millisecondes. Le temps de traitement du serveur converge effectivement vers zéro."
+      "text": "Depuis plus d'une décennie, l'architecture Web a chassé la complexité informatique au détriment de l'expérience utilisateur. Les applications massives d'une seule page, les arbres d'hydratation alambiqués et les requêtes de bases de données back-end à plusieurs niveaux ont surchargé le Web moderne. Chaque milliseconde de latence érode la confiance des utilisateurs, diminue la visibilité de la recherche et gaspille la durée de vie de la batterie de l'appareil."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "quote",
@@ -47,16 +59,16 @@
     {
       "type": "ul",
       "items": [
-        "Documents HTML pré-rendus contenant une copie sémantique complète lisible par le robot et des métadonnées JSON-LD.",
-        "Zéro blocage des scripts de télémétrie tiers exécutés avant la mise en page du contenu principal.",
-        "Médias paginés CSS et sous-ensembles de polices modernes utilisant des déclarations de plage Unicode et font-display: swap.",
-        "Livraison de données JSON statiques fragmentées qui hydratent progressivement les utilitaires interactifs sans changement de disposition."
+        "Pre-rendered HTML documents containing complete crawler-readable semantic copy and JSON-LD metadata.",
+        "Zero blocking third-party telemetry scripts executed prior to the primary content layout.",
+        "CSS paged media and modern font subsetting using unicode-range declarations and font-display: swap.",
+        "Chunked static JSON data delivery that progressive-hydrates interactive utilities without layout shifts."
       ]
     },
     {
       "type": "p",
-      "text": "En adhérant à ces normes d'ingénierie rigoureuses, les éditeurs numériques garantissent une visibilité mondiale instantanée, satisfont aux critères Core Web Vitals les plus stricts de Google et offrent aux lecteurs internationaux une expérience de lecture ininterrompue et sans distraction."
+      "text": "Depuis plus d'une décennie, l'architecture Web a chassé la complexité informatique au détriment de l'expérience utilisateur. Les applications massives d'une seule page, les arbres d'hydratation alambiqués et les requêtes de bases de données back-end à plusieurs niveaux ont surchargé le Web moderne. Chaque milliseconde de latence érode la confiance des utilisateurs, diminue la visibilité de la recherche et gaspille la durée de vie de la batterie de l'appareil."
     }
   ],
-  "sourceHash": "edfd46a296d4b24aa8cb0eeac577f4cfb2d42440"
+  "sourceHash": "991c4f46537e3fec6a7c705a3813b91ad888c52f"
 }

@@ -11,8 +11,8 @@
     "grid-systems",
     "graphic-design"
   ],
-  "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "جیومیٹرک ماڈیولر آرکیٹیکچرل لائنیں اور بالکل سفید کاغذ پر ٹائپوگرافک تناسب",
+  "image": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Geometric modular architectural lines and typographic proportions on stark white paper",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "اس کے دل میں، سوئس گرڈ متناسب تقسیم پر انحصار کرتا ہے۔ ایک معیاری 12 کالم لے آؤٹ کو کبھی بھی افقی یا عمودی بیس لائن تال کو توڑے بغیر نصف، تہائی، چوتھائی، اور چھٹے حصوں میں تقسیم کیا جا سکتا ہے۔ ہر سرخی، پل کوٹ، اور کیپشن براہ راست ایک بنیادی ریاضیاتی کوآرڈینیٹ سسٹم میں اینکرز کرتا ہے۔"
+      "text": "گرڈ جیل نہیں ہے؛ یہ نظم و ضبط کو آزاد کرنے کا کینوس ہے۔ جب جوزف مولر-بروک مین اور زیورخ اسکول کے علمبرداروں نے 1950 کی دہائی میں بین الاقوامی ٹائپوگرافک انداز کو باقاعدہ شکل دی، تو انہوں نے عالمگیر وضاحت، ریاضیاتی ہم آہنگی، اور جمہوری پڑھنے کی اہلیت کے حق میں من مانی موضوعی سنکی کے گرافک ڈیزائن کو صاف کرنے کی کوشش کی۔"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mathematical Elegance of the Swiss Grid - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Mathematical Elegance of the Swiss Grid."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "سوئس طریقہ کار کے ضروری محور"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mathematical Elegance of the Swiss Grid - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Mathematical Elegance of the Swiss Grid."
+    },
+    {
       "type": "ul",
       "items": [
-        "بیس لائن گرڈ پر سختی سے عمل پیرا ہونا: متن کی ہر سطر، فونٹ کے سائز سے قطع نظر، بیس لائن کی اونچائی کے عددی ضربوں پر سمٹ جاتی ہے۔",
-        "غیر متناسب متحرک توازن: ایکٹو وائٹ اسپیس تناؤ اور فلش-بائیں نوع ٹائپ کے ساتھ جامد سینٹرنگ کو تبدیل کرنا۔",
-        "درجہ بندی ٹائپوگرافک کنٹراسٹ: بڑے پیمانے پر ڈسپلے ٹائٹلز اور کمپیکٹ، واضح باڈی کاپی کے درمیان انتہائی پیمانے پر تفاوت کا استعمال۔"
+        "Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
+        "Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
+        "Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
       ]
     },
     {
       "type": "p",
-      "text": "ہمارے عصری ڈیجیٹل ماحولیاتی نظام میں، جہاں ریسپانسیو لے آؤٹس کو فوری طور پر گھڑی کی اسکرینوں، اسمارٹ فونز، اور الٹرا وائیڈ ڈیسک ٹاپ مانیٹرز میں موافق ہونا چاہیے، سوئس گرڈ کی ریاضیاتی سختی ہمارا سب سے مضبوط بصری کمپاس بنی ہوئی ہے۔"
+      "text": "گرڈ جیل نہیں ہے؛ یہ نظم و ضبط کو آزاد کرنے کا کینوس ہے۔ جب جوزف مولر-بروک مین اور زیورخ اسکول کے علمبرداروں نے 1950 کی دہائی میں بین الاقوامی ٹائپوگرافک انداز کو باقاعدہ شکل دی، تو انہوں نے عالمگیر وضاحت، ریاضیاتی ہم آہنگی، اور جمہوری پڑھنے کی اہلیت کے حق میں من مانی موضوعی سنکی کے گرافک ڈیزائن کو صاف کرنے کی کوشش کی۔"
     }
   ],
-  "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"
+  "sourceHash": "3d3fbc47dbede9fa58427d2d3b405a05a51164d4"
 }

@@ -12,7 +12,7 @@
     "thermodynamics"
   ],
   "image": "/images/articles/maillard-reaction-culinary.jpg",
-  "imageAlt": "پیشہ ورانہ باورچی خانے میں سنہری بھوری رنگ کی کیریملائزیشن کے ساتھ اعلی درجے کی ایک پاک تخلیق کا درجہ حرارت",
+  "imageAlt": "High-temperature searing of a culinary creation with rich golden-brown caramelization in a professional kitchen",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "بھنے ہوئے ذائقے کا کیمیکل فن تعمیر"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1470813740244-df3752178108?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Thermodynamics of the Maillard Reaction."
     },
     {
       "type": "ul",
       "items": [
-        "ابتدائی گاڑھا ہونا: شوگر کاربونیل کاربن کو کم کرنے والے غیر پروٹونیٹڈ امائن کا نیوکلیو فیلک حملہ ایک غیر مستحکم گلائکوسیلامائن پیدا کرتا ہے۔",
-        "امادوری دوبارہ ترتیب: تیزابی کیٹلیائزڈ آئیسومرائزیشن الڈوسیلامائنز کو مستحکم 1-امائنو-1-ڈیوکسی-2-کیٹوز میں تبدیل کرتی ہے، جو اہم درمیانی مرحلہ ہے۔",
-        "اسٹریکر انحطاط: ڈیکاربونیل انٹرمیڈیٹس امینو ایسڈ کے ساتھ رد عمل کا اظہار کرتے ہوئے الڈیہائڈز اور امینوکیٹونز پیدا کرتے ہیں جو خوشبودار پائرازینز میں گاڑھ جاتے ہیں۔",
-        "پانی کی سرگرمی کا توازن: درمیانی پانی کی سرگرمی ($a_w \\تقریباً 0.65$ سے $0.75$) پر رد عمل کی رفتار عروج پر ہے، جبکہ مفت سطح کا پانی بھوری رنگت کو دباتا ہے۔"
+        "Initial Condensation: Nucleophilic attack of an unprotonated amine on a reducing sugar carbonyl carbon yields an unstable glycosylamine.",
+        "Amadori Rearrangement: Acid-catalyzed isomerization converts aldosylamines into stable 1-amino-1-deoxy-2-ketoses, the pivotal intermediate phase.",
+        "Strecker Degradation: Dicarbonyl intermediates react with amino acids to generate aldehydes and aminoketones that condense into aromatic pyrazines.",
+        "Water Activity Balance: Reaction velocity peaks at intermediate water activity ($a_w \\approx 0.65$ to $0.75$), while free surface water suppresses browning."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "ماڈرنسٹ کلینری سائنس جرنل"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1484589065579-247adc070a15?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Thermodynamics of the Maillard Reaction."
+    },
+    {
       "type": "h2",
-      "text": "تھرمل تھریشولڈز اور سرفیس ہائیڈریشن"
+      "text": "بھنے ہوئے ذائقے کا کیمیکل فن تعمیر"
     },
     {
       "type": "p",
-      "text": "میلارڈ جھرن 140°C (284°F) سے اوپر تیزی سے تیز ہوتی ہے۔ چونکہ مائع پانی ماحولیاتی دباؤ پر 100 ° C پر بخارات بن جاتا ہے، اس لیے گیلے کھانے کی سطحیں اس وقت تک تھرموڈینامک ایکٹیویشن توانائی حاصل نہیں کر سکتیں جو تیزی سے بھوری ہونے کے لیے درکار ہوتی ہیں جب تک کہ سطح کی نمی مکمل طور پر بخارات نہ بن جائے۔ یہ بتاتا ہے کہ اعلی گرمی سے بھوننے کے لیے سطح کو صاف کرنا کیوں ضروری ہے۔"
+      "text": "کھٹی روٹی، بھنی ہوئی کافی بین، اور سیر شدہ اسٹیک پر ہر سنہری کرسٹ اس کی خوشبودار گہرائی کا مرہون منت ہے۔ ردعمل فرانسیسی کیمیا دان لوئس-کیملی میلارڈ کے نام سے منسوب، یہ غیر انزیمیٹک براؤننگ پاتھ وے سادہ کم کرنے والی شکر اور امینو ایسڈ نیوکلیوفائلز کو سیکڑوں غیر مستحکم ذائقے کے مالیکیولز میں تبدیل کرتا ہے۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "میلارڈ ری ایکشن اور براؤننگ تھرموڈینامکس کی سائنس",
-      "caption": "امینو ایسڈز، شوگر کو کم کرنے، اسٹریکر ایلڈیہائیڈز، اور ہیٹروسائکلک ذائقہ کے مرکبات کا تفصیلی فوڈ کیمسٹری تجزیہ۔"
+      "title": "The Science of the Maillard Reaction & Browning Thermodynamics",
+      "caption": "Detailed food chemistry analysis of amino acids, reducing sugars, Strecker aldehydes, and heterocyclic flavor compounds.",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU"
     },
     {
       "type": "h2",
-      "text": "pH ہیرا پھیری اور جدید گیسٹرونومی"
+      "text": "بھنے ہوئے ذائقے کا کیمیکل فن تعمیر"
     },
     {
       "type": "p",
-      "text": "الکلائن بفرز (جیسے سوڈیم بائک کاربونیٹ) کا استعمال کرتے ہوئے سطح کے پی ایچ کو بلند کرنا امینو ایسڈ امائن گروپس کو ڈیپروٹونیٹ کرتا ہے، ان کی نیوکلیوفیلیٹی کو بڑھاتا ہے اور اندرونی حصے کو زیادہ پکائے بغیر کم درجہ حرارت پر رد عمل کینیٹکس کو ڈرامائی طور پر تیز کرتا ہے۔"
+      "text": "کھٹی روٹی، بھنی ہوئی کافی بین، اور سیر شدہ اسٹیک پر ہر سنہری کرسٹ اس کی خوشبودار گہرائی کا مرہون منت ہے۔ ردعمل فرانسیسی کیمیا دان لوئس-کیملی میلارڈ کے نام سے منسوب، یہ غیر انزیمیٹک براؤننگ پاتھ وے سادہ کم کرنے والی شکر اور امینو ایسڈ نیوکلیوفائلز کو سیکڑوں غیر مستحکم ذائقے کے مالیکیولز میں تبدیل کرتا ہے۔"
     }
   ],
-  "sourceHash": "c6c53fadf6a9f6a0d846319573d36f3d56e66b56"
+  "sourceHash": "a879380da9b4634b8ea45020161b445339659c48"
 }

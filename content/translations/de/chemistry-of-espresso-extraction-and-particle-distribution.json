@@ -13,7 +13,7 @@
     "coffee-science"
   ],
   "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Reichhaltige Haselnuss-Crema, die sich in der Espressotasse aus Keramik unter dem bodenlosen Siebträger aus Edelstahl bildet.",
+  "imageAlt": "Rich hazelnut crema forming in ceramic espresso cup underneath stainless steel bottomless portafilter",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Um ein konsistentes Gleichgewicht zwischen süßen Chlorogensäurelactonen und adstringierenden Polyphenolen zu erreichen, ist eine strenge Kontrolle der Partikelgrößenverteilung, der hydraulischen Permeabilität und der Lösungsmitteltemperaturprofile erforderlich. Leichte Schwankungen in der Gleichmäßigkeit des Mahlgrads können katastrophale mikroskopische Kanalbildung auslösen, bei der lokalisierte bevorzugte Fließwege bittere Tannine übermäßig extrahieren, während angrenzende Bodenzonen völlig unberührt bleiben."
+      "text": "Espresso ist nicht nur eine Brühmethode; Es handelt sich um ein Hochdruck-Fest-Flüssigkeits-Extraktionssystem, das durch die Thermodynamik poröser Festbetten und die chemische Diffusionskinetik gesteuert wird. In weniger als 30 Sekunden dringt erhitztes Druckwasser mit 9 bar (0,9 MPa) in ein dicht verfestigtes Bett aus gerösteten Kaffeefragmenten ein, löst Hunderte flüchtiger Aldehyde, Pyrazine und organische Säuren auf und emulgiert gleichzeitig unlösliche hydrophobe Lipidtröpfchen zu einer dichten kolloidalen Suspension, die als Crema bekannt ist."
     },
     {
       "type": "h2",
       "text": "1. Darcys Gesetz und hydraulische Permeabilität in gepackten Schichten"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Chemistry of Espresso Extraction - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Chemistry of Espresso Extraction."
+    },
+    {
       "type": "p",
-      "text": "Der Flüssigkeitsfluss durch den verdichteten Kaffeepuck entspricht dem Darcy-Gesetz für laminare Perkolation durch ein poröses festes Medium:"
+      "text": "Espresso ist nicht nur eine Brühmethode; Es handelt sich um ein Hochdruck-Fest-Flüssigkeits-Extraktionssystem, das durch die Thermodynamik poröser Festbetten und die chemische Diffusionskinetik gesteuert wird. In weniger als 30 Sekunden dringt erhitztes Druckwasser mit 9 bar (0,9 MPa) in ein dicht verfestigtes Bett aus gerösteten Kaffeefragmenten ein, löst Hunderte flüchtiger Aldehyde, Pyrazine und organische Säuren auf und emulgiert gleichzeitig unlösliche hydrophobe Lipidtröpfchen zu einer dichten kolloidalen Suspension, die als Crema bekannt ist."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Darcy's Percolation Equation:\nQ = (-k · A / μ) · (ΔP / L)\n\nWhere:\n- Q: Volumetric flow rate (mL/s)\n- k: Intrinsic permeability tensor of the compacted puck (m²)\n- A: Cross-sectional area of the filter basket (m²)\n- μ: Dynamic viscosity of water at extraction temperature (Pa·s)\n- ΔP: Gauge pressure differential applied by the pump (typically 6-9 bar)\n- L: Compacted bed depth / puck thickness (m)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Chemistry of Espresso Extraction - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Chemistry of Espresso Extraction."
+    },
+    {
       "type": "p",
-      "text": "Während die Extraktion fortschreitet, bleibt $k$ nicht statisch. Die physikalische Erosion löslicher Feststoffe und die Wanderung von Feinpartikeln im Submikronbereich zum unteren Filtersieb führen zu einer dynamischen Verdichtung. Wenn der angelegte Pumpendruck übermäßig hoch ist (über 9,5 bar), erfährt das Kaffeebett eine plastische Kompressionsverformung, wodurch sich Zwischenräume schließen, die Durchlässigkeit erstickt und Mikrorisse entstehen, durch die das Wasser heftig rinnt."
+      "text": "Espresso ist nicht nur eine Brühmethode; Es handelt sich um ein Hochdruck-Fest-Flüssigkeits-Extraktionssystem, das durch die Thermodynamik poröser Festbetten und die chemische Diffusionskinetik gesteuert wird. In weniger als 30 Sekunden dringt erhitztes Druckwasser mit 9 bar (0,9 MPa) in ein dicht verfestigtes Bett aus gerösteten Kaffeefragmenten ein, löst Hunderte flüchtiger Aldehyde, Pyrazine und organische Säuren auf und emulgiert gleichzeitig unlösliche hydrophobe Lipidtröpfchen zu einer dichten kolloidalen Suspension, die als Crema bekannt ist."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Bimodale Mahlverteilung: Das Zusammenspiel von groben Felsbrocken und Feinanteilen"
+      "text": "1. Darcys Gesetz und hydraulische Permeabilität in gepackten Schichten"
     },
     {
       "type": "p",
-      "text": "Die Laserbeugungspartikelanalyse zeigt, dass Gratmahlmechanismen eine inhärent bimodale Volumenverteilung statt einer gleichmäßigen monomodalen Verteilung erzeugen."
+      "text": "Espresso ist nicht nur eine Brühmethode; Es handelt sich um ein Hochdruck-Fest-Flüssigkeits-Extraktionssystem, das durch die Thermodynamik poröser Festbetten und die chemische Diffusionskinetik gesteuert wird. In weniger als 30 Sekunden dringt erhitztes Druckwasser mit 9 bar (0,9 MPa) in ein dicht verfestigtes Bett aus gerösteten Kaffeefragmenten ein, löst Hunderte flüchtiger Aldehyde, Pyrazine und organische Säuren auf und emulgiert gleichzeitig unlösliche hydrophobe Lipidtröpfchen zu einer dichten kolloidalen Suspension, die als Crema bekannt ist."
     },
     {
       "type": "ul",
       "items": [
-        "Primärgipfel (250–500 μm): Grobe Felsbrocken erhalten das strukturelle hydraulische Gerüst des Pucks aufrecht, verhindern einen Zusammenbruch des Bettes und ermöglichen einen stabilen Wasserfluss.",
-        "Sekundärer Peak (< 50 μm): Mikroskopisch kleine Feinpartikel sind zerbrochene Zellwandfragmente ohne innere Zellmatrix. Sie lösen sich bei Wasserkontakt fast augenblicklich auf und liefern einen frühen TDS (Total Dissolved Solids) und essentielle Lipide zur Stabilisierung der Crema.",
-        "Das Dilemma der Feinteilchenmigration: Übermäßige Feinteilchen wandern unter dem hydrodynamischen Widerstand nach unten, verstopfen die Öffnungen im unteren Korb und verursachen einen unvorhersehbaren Strömungswiderstand."
+        "Primary Peak (250–500 μm): Coarse boulders maintain the structural hydraulic framework of the puck, preventing bed collapse and enabling stable water flow.",
+        "Secondary Peak (< 50 μm): Microscopic fines are shattered cellular wall fragments lacking internal cell matrix. They dissolve almost instantaneously upon water contact, providing early TDS (Total Dissolved Solids) and essential lipids for crema stabilization.",
+        "The Fines Migration Dilemma: Excessive fines migrate downward under hydrodynamic drag, clogging the bottom basket orifices and causing unpredictable flow resistance."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video-Meisterklasse: Fluiddynamik und Extraktionsparametersteuerung"
+      "text": "1. Darcys Gesetz und hydraulische Permeabilität in gepackten Schichten"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/aTFsBqhpLes",
-      "title": "Verständnis der Espressodosis, der Mahlpartikelgeometrie und des Flusses",
-      "caption": "Detaillierte experimentelle Aufschlüsselung des Wasserströmungswiderstands, Berechnungen der Extraktionsausbeute und Physik der Puckvorbereitung."
+      "title": "Understanding Espresso Dose, Grind Particle Geometry, and Flow",
+      "caption": "In-depth experimental breakdown of water flow resistance, extraction yield calculations, and puck preparation physics."
     },
     {
       "type": "h2",
-      "text": "4. Lösungsmittelthermodynamik und chemische Auflösungssequenz"
+      "text": "1. Darcys Gesetz und hydraulische Permeabilität in gepackten Schichten"
     },
     {
       "type": "p",
-      "text": "Die chemischen Bestandteile von geröstetem Kaffee weisen eine deutlich gestaffelte Auflösungskinetik auf, die durch Polarität und Molekulargewicht bestimmt wird. Während der ersten 0 bis 8 Sekunden der Extraktion gehen neben Koffein hochpolare Äpfel-, Zitronen- und Essigsäure in Lösung. Diese definieren die wahrgenommene Säure, den Fruchtcharakter und die anfängliche Helligkeit."
+      "text": "Espresso ist nicht nur eine Brühmethode; Es handelt sich um ein Hochdruck-Fest-Flüssigkeits-Extraktionssystem, das durch die Thermodynamik poröser Festbetten und die chemische Diffusionskinetik gesteuert wird. In weniger als 30 Sekunden dringt erhitztes Druckwasser mit 9 bar (0,9 MPa) in ein dicht verfestigtes Bett aus gerösteten Kaffeefragmenten ein, löst Hunderte flüchtiger Aldehyde, Pyrazine und organische Säuren auf und emulgiert gleichzeitig unlösliche hydrophobe Lipidtröpfchen zu einer dichten kolloidalen Suspension, die als Crema bekannt ist."
     },
     {
       "type": "p",
-      "text": "Zwischen den Sekunden 8 und 20 lösen sich Melanoidine mittlerer Polarität und Saccharosekaramellen auf und sorgen für ein Mundgefühl, Körper und eine ausgewogene Süße. Nach 25 Sekunden steigt die Extraktion hochmolekularer Chlorogensäuredimere und adstringierender Chinasäuren schnell an. Durch das Anhalten der Extraktion bei einem optimalen Brühverhältnis (normalerweise 1:2 bis 1:2,5 Kaffeeausbeute) wird die Extraktion genau beendet, bevor diese trocknenden, aggressiven Polyphenole in die Tasse gelangen."
+      "text": "Espresso ist nicht nur eine Brühmethode; Es handelt sich um ein Hochdruck-Fest-Flüssigkeits-Extraktionssystem, das durch die Thermodynamik poröser Festbetten und die chemische Diffusionskinetik gesteuert wird. In weniger als 30 Sekunden dringt erhitztes Druckwasser mit 9 bar (0,9 MPa) in ein dicht verfestigtes Bett aus gerösteten Kaffeefragmenten ein, löst Hunderte flüchtiger Aldehyde, Pyrazine und organische Säuren auf und emulgiert gleichzeitig unlösliche hydrophobe Lipidtröpfchen zu einer dichten kolloidalen Suspension, die als Crema bekannt ist."
     },
     {
       "type": "h2",
-      "text": "5. Barista & Coffee Science Takeaways"
+      "text": "1. Darcys Gesetz und hydraulische Permeabilität in gepackten Schichten"
     },
     {
       "type": "ul",
       "items": [
-        "Vorbereiten vor dem Aufguss: 4–6 Sekunden lang niedrigen Druck (2–3 bar) anwenden, um den Puck gleichmäßig zu hydratisieren, trockene Stellen zu mildern und Kanalbildung zu erzeugen, bevor der volle Pumpendruck einsetzt.",
-        "Flussprofilierung über Druckprofilierung: Modulieren Sie den Pumpenfluss, um den Druck in der zweiten Hälfte des Schlags zu verringern, während der Puckwiderstand nachlässt, und die Süße zu bewahren.",
-        "Refraktometrische Überwachung: Zielen Sie für ein optimales sensorisches Gleichgewicht auf eine Extraktionsausbeute zwischen 19 % und 22 % gepaart mit einem Gesamtgehalt an gelösten Feststoffen (TDS) zwischen 8,5 % und 10,5 %."
+        "Pre-Infusion Priming: Apply low pressure (2-3 bars) for 4-6 seconds to hydrate the puck uniformly, mitigating dry spots and channeling before full pump pressure engages.",
+        "Flow Profiling over Pressure Profiling: Modulate pump flow to decline pressure during the second half of the shot as puck resistance erodes, preserving sweetness.",
+        "Refractometric Monitoring: Target an Extraction Yield between 19% and 22% paired with a Total Dissolved Solids (TDS) reading between 8.5% and 10.5% for optimal sensory balance."
       ]
     }
   ],
-  "sourceHash": "062278372619aaee1eb4146769e4221669743df6"
+  "sourceHash": "dcfc0dc38600712c0c58c1efda8304f27e308ca9"
 }

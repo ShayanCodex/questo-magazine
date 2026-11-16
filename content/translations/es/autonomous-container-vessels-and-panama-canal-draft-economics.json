@@ -11,8 +11,8 @@
     "supply-chains",
     "geopolitics"
   ],
-  "image": "/images/articles/critical-minerals-mining.jpg",
-  "imageAlt": "Buque portacontenedores neopanamax ultragrande que navega por esclusas interoceánicas y canales marítimos de aguas profundas",
+  "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Neo-Panamax container ship navigating through narrow lock canal infrastructure",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "Los cuellos de botella físicos del comercio globalizado"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Automated deepwater port container cranes transferring maritime cargo containers",
+      "caption": "Draft depth restrictions: freshwater canal drought conditions forcing container offloading to meet keel clearance margins."
     },
     {
       "type": "ul",
       "items": [
-        "Restricciones de calado Panamax: Las condiciones de sequía en el lago Gatún obligan a los transportistas a reducir la capacidad de carga hasta en un cuarenta por ciento para eliminar los límites de calado de tránsito.",
-        "Desvíos del Cabo de Buena Esperanza: el desvío alrededor de África añade de diez a catorce días de navegación, absorbiendo el excedente de capacidad de los buques portacontenedores y aumentando los costos del combustible.",
-        "Arquitecturas de flotas autónomas: la fusión de sensores, la teleoperación por satélite y los sistemas de amarre automatizados están reduciendo la huella de la tripulación en las rutas transoceánicas.",
-        "Rutas transpolares del Ártico: El derretimiento de las capas de hielo del verano está abriendo rutas del Mar del Norte que reducen en un tercio los tiempos de tránsito marítimo entre el este de Asia y el norte de Europa."
+        "Panamax Draft Restrictions: Drought conditions in Lake Gatun force carriers to reduce cargo capacity by up to forty percent to clear transit draft limits.",
+        "Cape of Good Hope Diversions: Rerouting around Africa adds ten to fourteen sailing days, absorbing surplus container vessel capacity and spiking bunker fuel costs.",
+        "Autonomous Fleet Architectures: Sensor fusion, satellite tele-operation, and automated mooring systems are reducing crew footprints on trans-oceanic routes.",
+        "Arctic Transpolar Routes: Melting summer ice sheets are opening Northern Sea Routes that cut maritime transit times between East Asia and Northern Europe by a third."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Revisión de la logística marítima y el comercio soberano"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Satellite automatic identification system AIS display tracking global maritime container ship choke points",
+      "caption": "Autonomous maritime logistics: algorithmic voyage speed adjustments and slot auctions optimizing global freight schedules."
+    },
+    {
       "type": "h2",
-      "text": "Infraestructura de combustibles alternativos y corredores verdes"
+      "text": "Los cuellos de botella físicos del comercio globalizado"
     },
     {
       "type": "p",
-      "text": "Los mandatos de cero emisiones netas de la Organización Marítima Internacional están acelerando la transición de las flotas hacia el metanol verde, el amoníaco y las velas de rotor asistidas por el viento con doble combustible. Los puertos de Singapur, Rotterdam y Shanghai están invirtiendo decenas de miles de millones en infraestructura de abastecimiento de combustible criogénico para anclar rutas marítimas ecológicas."
+      "text": "Más del ochenta por ciento del comercio mundial de mercancías viaja a través de alta mar, canalizado a través de estrechos naturales angostos y canales diseñados. Hoy en día, esta circulación marítima enfrenta estrés estructural simultáneo: déficits climáticos de agua dulce que restringen el calado de los buques a través del Canal de Panamá, vulnerabilidades de seguridad en Bab-el-Mandeb y el Mar Rojo, y el rápido despliegue de graneleros autónomos de cero emisiones."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "Ciclos comerciales globales y flujos de capital macroeconómicos",
-      "caption": "Ray Dalio explora los mecanismos físicos del intercambio económico global, la distribución de productos básicos y la balanza de pagos soberana."
+      "title": "Global Trade Cycles and Macroeconomic Capital Flows",
+      "caption": "Ray Dalio explores the physical mechanisms of global economic exchange, commodity distribution, and sovereign balance of payments.",
+      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0"
     },
     {
       "type": "h2",
-      "text": "El futuro del transporte de carga intercontinental"
+      "text": "Los cuellos de botella físicos del comercio globalizado"
     },
     {
       "type": "p",
-      "text": "En la próxima década, la logística marítima separará a los ganadores de los perdedores no solo por el tamaño del buque, sino también por algoritmos de enrutamiento dinámicos, optimización automatizada del calado y resiliencia soberana contra las interrupciones físicas de la cadena de suministro."
+      "text": "Más del ochenta por ciento del comercio mundial de mercancías viaja a través de alta mar, canalizado a través de estrechos naturales angostos y canales diseñados. Hoy en día, esta circulación marítima enfrenta estrés estructural simultáneo: déficits climáticos de agua dulce que restringen el calado de los buques a través del Canal de Panamá, vulnerabilidades de seguridad en Bab-el-Mandeb y el Mar Rojo, y el rápido despliegue de graneleros autónomos de cero emisiones."
     }
   ],
-  "sourceHash": "e1eb182f5b434234527202fdaa14ce0ebc51dbac"
+  "sourceHash": "310e3e8a07718e313da90f334cbf7b2c6f29def0"
 }

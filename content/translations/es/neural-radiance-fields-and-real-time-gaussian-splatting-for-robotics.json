@@ -1,0 +1,79 @@
+{
+  "slug": "neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics",
+  "title": "Salpicadura gaussiana 3D en robótica: mapeo espacial de submilisegundos y sistemas SLAM",
+  "excerpt": "Reemplazo de cuadrículas de ocupación discretas con elipsoides 3D diferenciables: estimación de la pose de la cámara en tiempo real, representación de radiancia volumétrica y navegación autónoma en espacios desordenados.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "robotics",
+    "computer-vision",
+    "gaussian-splatting",
+    "slam",
+    "autonomous-systems"
+  ],
+  "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Autonomous robotic perception system scanning complex spatial environment with stereo cameras",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Las limitaciones de la representación espacial tradicional"
+    },
+    {
+      "type": "p",
+      "text": "Durante décadas, la robótica móvil se basó en mapas de cuadrícula de ocupación discretos 2D y 3D, nubes de puntos y mallas poligonales para localización y mapeo simultáneos (SLAM). Si bien son efectivas para evitar obstáculos básicos, estas representaciones descartan texturas de superficie fotorrealistas, reflejos especulares dependientes de la vista y finos matices estructurales necesarios para la manipulación robótica ágil, la robótica quirúrgica y la navegación humanoide dinámica."
+    },
+    {
+      "type": "h2",
+      "text": "Las limitaciones de la representación espacial tradicional"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Differentiable 3D Gaussian ellipsoids visualizing continuous scene geometry and radiance fields",
+      "caption": "3D Gaussian Splatting: modeling physical spaces as millions of differentiable ellipsoids for real-time robotic SLAM."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Differentiable Ellipsoids: 3D Gaussian Splatting represents physical scenes as millions of anisotropic 3D Gaussians, each characterized by position, covariance matrix (shape/scale), opacity, and spherical harmonic colors.",
+        "Tile-Based Rasterization: Unlike Neural Radiance Fields (NeRFs) requiring intensive volumetric ray-marching per pixel, Gaussians are projected to 2D screen space and sorted in hardware, rendering at over 120 FPS.",
+        "Gradient-Based Optimization: Camera pose estimates and scene geometry are jointly refined in real time through backpropagation against incoming camera frames.",
+        "Continuous Physics Integration: Continuous Gaussian density fields provide closed-form signed distance approximations, enabling physical collision checking without converting to complex meshes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "3D Gaussian Splatting cierra el abismo entre la representación de gráficos por computadora fotorrealistas y la estimación del estado robótico en tiempo real de alta frecuencia.",
+      "cite": "Monografía del laboratorio de robótica y visión por computadora"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Robotic trajectory planning through indoor obstacle field using real-time volumetric scene reconstruction",
+      "caption": "Tile-based rasterization: GPU acceleration delivering sub-millisecond pose updates and continuous collision avoidance."
+    },
+    {
+      "type": "h2",
+      "text": "Las limitaciones de la representación espacial tradicional"
+    },
+    {
+      "type": "p",
+      "text": "Durante décadas, la robótica móvil se basó en mapas de cuadrícula de ocupación discretos 2D y 3D, nubes de puntos y mallas poligonales para localización y mapeo simultáneos (SLAM). Si bien son efectivas para evitar obstáculos básicos, estas representaciones descartan texturas de superficie fotorrealistas, reflejos especulares dependientes de la vista y finos matices estructurales necesarios para la manipulación robótica ágil, la robótica quirúrgica y la navegación humanoide dinámica."
+    },
+    {
+      "type": "video",
+      "title": "3D Gaussian Splatting in Robotics: Real-Time SLAM and Mapping Breakdown",
+      "caption": "Engineering demonstration of real-time camera tracking, anisotropic Gaussian optimization, and collision avoidance.",
+      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88"
+    },
+    {
+      "type": "h2",
+      "text": "Las limitaciones de la representación espacial tradicional"
+    },
+    {
+      "type": "p",
+      "text": "Durante décadas, la robótica móvil se basó en mapas de cuadrícula de ocupación discretos 2D y 3D, nubes de puntos y mallas poligonales para localización y mapeo simultáneos (SLAM). Si bien son efectivas para evitar obstáculos básicos, estas representaciones descartan texturas de superficie fotorrealistas, reflejos especulares dependientes de la vista y finos matices estructurales necesarios para la manipulación robótica ágil, la robótica quirúrgica y la navegación humanoide dinámica."
+    }
+  ],
+  "sourceHash": "43081c936b0147175e178f8716666471c30c8b11"
+}

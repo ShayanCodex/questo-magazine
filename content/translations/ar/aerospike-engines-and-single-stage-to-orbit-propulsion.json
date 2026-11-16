@@ -11,8 +11,8 @@
     "physics",
     "orbital-mechanics"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "غرفة دفع الصواريخ ذات درجة الحرارة العالية ومنشأة اختبار الفراغ",
+  "image": "https://images.unsplash.com/photo-1517976487582-8409e6c6e737?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Supersonic aerospike rocket engine exhaust plume shock diamonds during static test stand firing",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "مشكلة التمدد الجوي في الصواريخ التقليدية"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Orbital launch vehicle ascending through upper atmosphere with altitude-compensating nozzle plume",
+      "caption": "Altitude compensation: ambient atmospheric pressure self-adjusting exhaust expansion across the aerospike ramp."
     },
     {
       "type": "ul",
       "items": [
-        "الحدود الديناميكية الهوائية: يعمل الضغط الجوي المحيط كجدار فوهة خارجي غير مرئي، مما يسمح لعمود العادم بالتوسع بشكل طبيعي من مستوى سطح البحر إلى المدار.",
-        "الدفع النوعي الثابت: تحافظ هياكل الطيران الخطية والحلقية على توسع شبه مثالي عبر مسار الرحلة بأكمله.",
-        "الإدارة الحرارية: تركيز غازات الاحتراق على طول ارتفاع مركزي يتطلب تبريدًا متجددًا باستخدام الميثان السائل المبرد أو الهيدروجين.",
-        "القدرة على البقاء على مرحلة واحدة: من خلال القضاء على عمليات الإنزال المرحلي للمركبات، تقترب المركبات المجهزة بالطائرات من نسبة الكتلة النظرية المطلوبة للمرحلة الواحدة إلى المدار (SSTO)."
+        "Aerodynamic Boundary: Ambient atmospheric pressure acts as an invisible outer nozzle wall, allowing the exhaust plume to expand naturally from sea level to orbit.",
+        "Constant Specific Impulse: Linear and toroidal aerospike architectures maintain near-optimal expansion across the entire flight trajectory.",
+        "Thermal Management: Concentrating combustion gases along a central spike demands regenerative cooling with cryogenic liquid methane or hydrogen.",
+        "Single-Stage Viability: By eliminating staged vehicle drop-offs, aerospike-equipped craft approach the theoretical mass ratio required for single-stage-to-orbit (SSTO)."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "مجلة الدفع المتقدم وميكانيكا تفوق سرعتها سرعة الصوت"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Additive manufactured copper-alloy combustion chamber with regenerative cooling channels",
+      "caption": "Regenerative cooling: cryogenic liquid methane flowing through 3D-printed micro-channels along the nozzle spike."
+    },
+    {
       "type": "h2",
-      "text": "التصنيع الإضافي والتبريد المتجدد النشط"
+      "text": "مشكلة التمدد الجوي في الصواريخ التقليدية"
     },
     {
       "type": "p",
-      "text": "تعثر تطور الطيران الهوائي التاريخي في القرن العشرين على الحدود المعدنية: شهد الطرف المركزي المركزي تدفقًا حراريًا يتجاوز نوى المفاعل النووي. تعمل الطباعة الحديثة لسبائك النحاس باستخدام مسحوق الليزر (LPBF) على تمكين مسارات تبريد القنوات الصغيرة التي توجه الوقود الدفعي المبرد تحت الصفر في حدود ملليمترات من طبقة قص الاحتراق الأسرع من الصوت."
+      "text": "تعاني فوهات الجرس التقليدية من تسوية مادية لا مفر منها: يتم تثبيت نسبة تمدد الفوهة أثناء التصنيع. عند مستوى سطح البحر، يؤدي الضغط الجوي إلى الإفراط في توسيع عمود العادم، مما يؤدي إلى صدمات فصل مدمرة؛ في الفراغ، تكون الفوهة غير ممتدة بشكل كافٍ، مما يؤدي إلى استسلام دفعة نوعية كبيرة (Isp). يزيل المحرك الهوائي هذا الاختناق الجسدي من خلال تعويض الارتفاع الديناميكي الهوائي."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "مبادئ الفيزياء الدقيقة والقياس الكمي",
-      "caption": "محاضرة فيزياء تجريبية تستكشف قياس التداخل الدقيق للغاية، والاستقرار المبرد، والتحكم في الحالة الكمومية."
+      "title": "Precision Physics and Quantum Measurement Principles",
+      "caption": "Experimental physics lecture exploring extreme precision interferometry, cryogenic stability, and quantum state control.",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10"
     },
     {
       "type": "h2",
-      "text": "مستقبل الوصول إلى الفضاء القابل لإعادة الاستخدام"
+      "text": "مشكلة التمدد الجوي في الصواريخ التقليدية"
     },
     {
       "type": "p",
-      "text": "مع انتقال مركبات الإطلاق التجارية نحو تحول سريع يشبه الطائرات، فإن التكامل الهيكلي للطائرة مع الطائرات الفضائية ذات الجسم الرافعة يوفر أنظف مسار ديناميكي حراري للوصول المداري المستدام."
+      "text": "تعاني فوهات الجرس التقليدية من تسوية مادية لا مفر منها: يتم تثبيت نسبة تمدد الفوهة أثناء التصنيع. عند مستوى سطح البحر، يؤدي الضغط الجوي إلى الإفراط في توسيع عمود العادم، مما يؤدي إلى صدمات فصل مدمرة؛ في الفراغ، تكون الفوهة غير ممتدة بشكل كافٍ، مما يؤدي إلى استسلام دفعة نوعية كبيرة (Isp). يزيل المحرك الهوائي هذا الاختناق الجسدي من خلال تعويض الارتفاع الديناميكي الهوائي."
     }
   ],
-  "sourceHash": "6cfa15eaa7cc17ad09a2466a4d601e0f1c95fcbb"
+  "sourceHash": "4974b1698b25443fec8ac3977b4fe149ad22781f"
 }

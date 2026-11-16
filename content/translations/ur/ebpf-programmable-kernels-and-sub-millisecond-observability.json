@@ -11,8 +11,8 @@
     "observability",
     "systems-programming"
   ],
-  "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "روشن فائبر آپٹیکل نیٹ ورک روٹنگ سوئچز کے ساتھ اعلی کثافت انٹرپرائز سرور ریک",
+  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Operating system kernel packet trace data stream and low-level bytecode monitoring",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "لینکس کرنل باؤنڈری کو دوبارہ تعمیر کرنا"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "eBPF in-kernel verifier bytecode safety checks and JIT compilation terminal",
+      "caption": "In-kernel bytecode verifier: mathematically proving termination and memory safety before eBPF bytecode execution."
     },
     {
       "type": "ul",
       "items": [
-        "حفاظتی توثیق: ان-کرنل تصدیق کنندہ رن ٹائم لوڈ سے پہلے باؤنڈڈ ایگزیکیوشن، میموری باؤنڈری سیفٹی، اور لوپ ختم کرنے کی ضمانتوں کو سختی سے نافذ کرتا ہے۔",
-        "زیرو سیاق و سباق سوئچ اوور ہیڈ: ٹیلی میٹری جمع کرنل میموری بفرز (ای بی پی ایف رِنگ بفرز) کے اندر ہوتی ہے، مہنگے کاپی آپریشنز کو ختم کرتے ہوئے۔",
-        "کرنل لیول نیٹ ورکنگ: XDP (ایکسپریس ڈیٹا پاتھ) ہکس نیٹ ورک انٹرفیس کارڈ ڈرائیور لیئر پر براہ راست پیکٹ ڈراپ، ترمیم، اور روٹنگ کو قابل بناتے ہیں۔",
-        "ڈیپ سیکیورٹی ٹیلی میٹری: ڈائنامک ٹریس پوائنٹس سیسکالز، میموری ایلوکیشن ایونٹس، اور ساکٹ لائف سائیکل تبدیلیاں صارف کی جگہ پر پوشیدہ طور پر کیپچر کرتے ہیں۔"
+        "Safety Verification: The in-kernel verifier rigorously enforces bounded execution, memory boundary safety, and loop termination guarantees prior to runtime load.",
+        "Zero Context-Switch Overhead: Telemetry aggregation occurs within kernel memory buffers (eBPF ring buffers), eliminating expensive copy operations.",
+        "Kernel-Level Networking: XDP (eXpress Data Path) hooks enable packet drop, modification, and routing directly at the network interface card driver layer.",
+        "Deep Security Telemetry: Dynamic tracepoints capture syscalls, memory allocation events, and socket lifecycle changes invisibly to user space."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "کرنل سسٹمز انجینئرنگ اور نیٹ ورک آرکیٹیکچر جرنل"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sub-millisecond packet latency telemetry graph tracking high-concurrency microservices",
+      "caption": "Zero-overhead observability: hooking kernel tracepoints directly without kernel module recompilation or context switch penalties."
+    },
+    {
       "type": "h2",
-      "text": "زیرو اوور ہیڈ ڈسٹری بیوٹڈ ٹریسنگ"
+      "text": "لینکس کرنل باؤنڈری کو دوبارہ تعمیر کرنا"
     },
     {
       "type": "p",
-      "text": "ہائپر اسکیل کلاؤڈ آرکیٹیکچرز میں، روایتی سائڈ کار پراکسیز غیر پائیدار CPU اور میموری ٹیکس عائد کرتی ہیں۔ eBPF پروگراموں کو خام ساکٹ بفرز کے ساتھ منسلک کر کے، تقسیم شدہ نشانات اور خفیہ TLS ہینڈ شیکس کا معائنہ ایپلیکیشن سورس کوڈ یا گاہک کی درخواست کے بہاؤ میں تاخیر کو متعارف کرائے بغیر کیا جا سکتا ہے۔"
+      "text": "تاریخی طور پر، آپریٹنگ سسٹم کے رویے میں توسیع کے لیے پیچیدہ کرنل ماڈیولز کی تصنیف کی ضرورت ہوتی ہے یا تباہ کن یوزر اسپیس اوور ہیڈ سیاق و سباق کو برداشت کرنا پڑتا ہے۔ توسیع شدہ برکلے پیکٹ فلٹر (eBPF) کے ظہور نے لینکس کے کرنل کو ایونٹ سے چلنے والے، قابل پروگرام سبسٹریٹ میں تبدیل کر دیا ہے۔ کرنل ایگزیکیوشن پاتھ کے اندر سٹیٹک طور پر تصدیق شدہ بائیک کوڈ کو عمل میں لا کر، انجینئرز کرنل ٹریز کو دوبارہ کمپائل کیے بغیر مائیکرو سیکنڈ آبزرویبلٹی اور ہائی تھرو پٹ پیکٹ فلٹرنگ حاصل کرتے ہیں۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "سسٹمز پروگرامنگ اور لو لیول نیٹ ورک اندرونی",
-      "caption": "کرنل پیکٹ ہینڈلنگ، میموری لے آؤٹ، اور سسٹم کی تصدیق کی گہری تکنیکی تحقیق۔"
+      "title": "Systems Programming and Low-Level Network Internals",
+      "caption": "Deep technical exploration of kernel packet handling, memory layout, and systems verification.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "کلاؤڈ مقامی انفراسٹرکچر کا مستقبل"
+      "text": "لینکس کرنل باؤنڈری کو دوبارہ تعمیر کرنا"
     },
     {
       "type": "p",
-      "text": "چونکہ کلاؤڈ انفراسٹرکچر کم تاخیر اور سخت حفاظتی تنہائی کا مطالبہ کرتا ہے، eBPF تیزی سے روایتی iptables، نیٹ ورک پراکسیز، اور دخل اندازی کرنے والے پروفائلنگ ڈیمنز کو تبدیل کر رہا ہے۔ یہ جدید سرور پلیٹ فارمز کے ڈیفائننگ سسٹمز انجینئرنگ پیش رفت کی نمائندگی کرتا ہے۔"
+      "text": "تاریخی طور پر، آپریٹنگ سسٹم کے رویے میں توسیع کے لیے پیچیدہ کرنل ماڈیولز کی تصنیف کی ضرورت ہوتی ہے یا تباہ کن یوزر اسپیس اوور ہیڈ سیاق و سباق کو برداشت کرنا پڑتا ہے۔ توسیع شدہ برکلے پیکٹ فلٹر (eBPF) کے ظہور نے لینکس کے کرنل کو ایونٹ سے چلنے والے، قابل پروگرام سبسٹریٹ میں تبدیل کر دیا ہے۔ کرنل ایگزیکیوشن پاتھ کے اندر سٹیٹک طور پر تصدیق شدہ بائیک کوڈ کو عمل میں لا کر، انجینئرز کرنل ٹریز کو دوبارہ کمپائل کیے بغیر مائیکرو سیکنڈ آبزرویبلٹی اور ہائی تھرو پٹ پیکٹ فلٹرنگ حاصل کرتے ہیں۔"
     }
   ],
-  "sourceHash": "c8cb9a06b93e15c7803d881c55826e6447ca3bb5"
+  "sourceHash": "94b0ce963b959c528805e8037307c848e8cbebf4"
 }

@@ -11,8 +11,8 @@
     "philosophy",
     "culture"
   ],
-  "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "مكتب خشبي بسيط مع دفتر ملاحظات وقلم حبر وظل صباحي هادئ",
+  "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Minimal wooden desk with notebook, fountain pen, and calm morning shadow",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "يبدأ الاستقلال الرقمي بأخلاقيات الواجهة. يجب على المجلة التحريرية أن تتعامل مع انتباه القارئ باحترام مقدس. عندما يزيل موقع ويب النوافذ المنبثقة المتطفلة، واللافتات الإعلانية الوامضة، والتوصيات الخوارزمية، تتوقف القراءة عن كونها محنة مثيرة للقلق وتعود إلى كونها متعة تأملية."
+      "text": "الإنترنت التجاري المعاصر هو كازينو اهتمام مصمم هندسيًا. يتم تحسين كل شارة إشعار حمراء وامضة، وموجز تمرير لا نهائي، وتشغيل الفيديو تلقائيًا من قبل علماء النفس السلوكي لاختطاف حلقة الدوبامين البشرية. لقد حولنا أقوى مكتبة في تاريخ البشرية إلى آلة إلهاء تولد القلق."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital Autonomy and the Minimalist Screen - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Digital Autonomy and the Minimalist Screen."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "ركائز التصميم الرقمي المستقل"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital Autonomy and the Minimalist Screen - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Digital Autonomy and the Minimalist Screen."
+    },
+    {
       "type": "ul",
       "items": [
-        "تجارب القراءة المحدودة: استبدال الخلاصات التي لا نهاية لها بقضايا دراسة منسقة ومحدودة تمتلك بداية ونهاية محددة.",
-        "مراقبة سلوكية صفرية: التخلص من وحدات بكسل التتبع التابعة لجهات خارجية والتي تراقب مسارات الماوس وأوقات السكون لإنشاء ملفات نفسية.",
-        "الصفاء المطبعي: تنسيق النثر الطويل مع بداية سخية، وهوامش سخية، ولوحات ألوان داكنة وفاتحة خالية من التشتيت."
+        "Finite reading experiences: Replacing bottomless feeds with curated, bounded monograph issues that possess a definitive beginning and end.",
+        "Zero behavioral surveillance: Eliminating third-party tracking pixels that monitor mouse trajectories and dwell times to build psychological dossiers.",
+        "Typographic serenity: Formatting long-form prose with generous leading, generous margins, and distraction-free dark and light color palettes."
       ]
     },
     {
       "type": "p",
-      "text": "من خلال تصميم المساحات الرقمية التي تحترم الفاعلية البشرية، فإننا نستعيد الوعد الحقيقي للإنترنت: منصة مساواة للاستكشاف الفكري العميق، والتأمل النقدي، والتنوير الدائم."
+      "text": "الإنترنت التجاري المعاصر هو كازينو اهتمام مصمم هندسيًا. يتم تحسين كل شارة إشعار حمراء وامضة، وموجز تمرير لا نهائي، وتشغيل الفيديو تلقائيًا من قبل علماء النفس السلوكي لاختطاف حلقة الدوبامين البشرية. لقد حولنا أقوى مكتبة في تاريخ البشرية إلى آلة إلهاء تولد القلق."
     }
   ],
-  "sourceHash": "f45a70fc0dec403d722d249fc0f40fef4561ce6b"
+  "sourceHash": "92a96fb033e2e6543d272f5654411e7a7af3db43"
 }

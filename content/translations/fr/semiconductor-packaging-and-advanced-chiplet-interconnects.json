@@ -1,0 +1,79 @@
+{
+  "slug": "semiconductor-packaging-and-advanced-chiplet-interconnects",
+  "title": "Emballage de semi-conducteurs avancé : interposeurs 2,5D, architectures HBM4 et CoWoS",
+  "excerpt": "Une plongée technique approfondie dans l'emballage au niveau des tranches, les vias à travers le silicium, la dissipation thermique de la mémoire à large bande passante et les points d'étranglement géopolitiques de la capacité de fonderie avancée.",
+  "date": "2026-11-16",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "semiconductors",
+    "chiplets",
+    "hardware-engineering",
+    "supply-chain",
+    "foundry-technology"
+  ],
+  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Advanced silicon interposer with microscopic solder micro-bumps connecting heterogeneous compute chiplets",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le changement de paradigme des puces monolithiques aux chipsets"
+    },
+    {
+      "type": "p",
+      "text": "Alors que la mise à l'échelle photolithographique se rapproche des limites physiques atomiques et que les plafonds de taille des réticules limitent les dimensions des puces monolithiques à environ 858 millimètres carrés, l'industrie mondiale des semi-conducteurs a pivoté vers une intégration multi-puces hétérogène. Plutôt que de forcer la logique informatique, la mémoire à large bande passante et les contrôleurs d'entrée-sortie analogiques sur une seule plaquette monolithique à faible rendement prohibitif, les architectures modernes désagrégent les blocs fonctionnels en chipsets spécialisés assemblés sur des interposeurs de silicium haute densité."
+    },
+    {
+      "type": "h2",
+      "text": "Le changement de paradigme des puces monolithiques aux chipsets"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1512358958014-b651a7ee1773?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cross-section electron micrograph of through-silicon vias (TSVs) traversing silicon interposer substrate",
+      "caption": "Through-silicon vias: vertical micro-interconnects providing high-density, low-latency signaling between 2.5D stacked dies."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Through-Silicon Vias (TSVs): Microscopic vertical electrical connections etched completely through silicon wafers, enabling ultra-low latency die-to-die signaling across three-dimensional stacks.",
+        "CoWoS (Chip-on-Wafer-on-Substrate): High-density 2.5D packaging methodology utilizing passive silicon interposers to interconnect high-performance compute dies directly with High Bandwidth Memory (HBM).",
+        "Thermal Dissipation Ceilings: Stacking compute and memory dies exponentially increases heat flux density, demanding microchannel liquid cooling and diamond-composite heat spreaders.",
+        "Foundry Capacity Concentration: Global packaging bottlenecks are overwhelmingly concentrated in specialized packaging facilities, creating acute single-point dependencies in the AI hardware supply chain."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le principal goulot d'étranglement dans le calcul de pointe n'est plus le nombre de transistors ou la fréquence d'horloge, mais la densité de bande passante d'interconnexion et l'efficacité de dissipation thermique du substrat de boîtier.",
+      "cite": "Institut international des architectes de semi-conducteurs"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-bandwidth memory HBM4 stack integrated alongside central compute processor",
+      "caption": "CoWoS substrate: passive silicon interposer integrating multi-gigabyte HBM stacks directly beside logic chiplets."
+    },
+    {
+      "type": "h2",
+      "text": "Le changement de paradigme des puces monolithiques aux chipsets"
+    },
+    {
+      "type": "p",
+      "text": "Alors que la mise à l'échelle photolithographique se rapproche des limites physiques atomiques et que les plafonds de taille des réticules limitent les dimensions des puces monolithiques à environ 858 millimètres carrés, l'industrie mondiale des semi-conducteurs a pivoté vers une intégration multi-puces hétérogène. Plutôt que de forcer la logique informatique, la mémoire à large bande passante et les contrôleurs d'entrée-sortie analogiques sur une seule plaquette monolithique à faible rendement prohibitif, les architectures modernes désagrégent les blocs fonctionnels en chipsets spécialisés assemblés sur des interposeurs de silicium haute densité."
+    },
+    {
+      "type": "video",
+      "title": "Advanced Chip Packaging: How CoWoS and TSVs Power Modern Compute",
+      "caption": "Technical breakdown of silicon interposer manufacturing, die attachment, and thermal interface material engineering.",
+      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88"
+    },
+    {
+      "type": "h2",
+      "text": "Le changement de paradigme des puces monolithiques aux chipsets"
+    },
+    {
+      "type": "p",
+      "text": "Alors que la mise à l'échelle photolithographique se rapproche des limites physiques atomiques et que les plafonds de taille des réticules limitent les dimensions des puces monolithiques à environ 858 millimètres carrés, l'industrie mondiale des semi-conducteurs a pivoté vers une intégration multi-puces hétérogène. Plutôt que de forcer la logique informatique, la mémoire à large bande passante et les contrôleurs d'entrée-sortie analogiques sur une seule plaquette monolithique à faible rendement prohibitif, les architectures modernes désagrégent les blocs fonctionnels en chipsets spécialisés assemblés sur des interposeurs de silicium haute densité."
+    }
+  ],
+  "sourceHash": "b5c30079810cc52a2947cabb93b9ac033c6601b2"
+}

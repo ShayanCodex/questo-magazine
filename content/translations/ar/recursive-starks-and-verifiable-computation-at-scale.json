@@ -1,0 +1,79 @@
+{
+  "slug": "recursive-starks-and-verifiable-computation-at-scale",
+  "title": "العودية STARKs وHalo2: رياضيات التحقق من التشفير المقتضب",
+  "excerpt": "رحلة رياضية من خلال مخططات الالتزام متعدد الحدود، واختبار القرب من Reed-Solomon، وIOP السريع من Reed-Solomon، وتكوين الدليل العودي.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "cryptography",
+    "zero-knowledge",
+    "zk-starks",
+    "blockchain-scaling",
+    "mathematics"
+  ],
+  "image": "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Abstract geometric lattice network representing succinct zero-knowledge cryptographic proofs",
+  "body": [
+    {
+      "type": "h2",
+      "text": "السعي الرياضي من أجل التحقق المقتضب"
+    },
+    {
+      "type": "p",
+      "text": "يمثل الحساب الذي يمكن التحقق منه الاختراق التأسيسي الذي يمكّن أجهزة الدولة اللامركزية العامة من التوسع أفقيًا. في شبكات التنفيذ الساذجة، يجب على كل عقدة التحقق من الصحة إعادة تنفيذ كل معاملة بالتسلسل للتحقق من صحة الحالة. تعمل حجج المعرفة الشفافة القابلة للتطوير (STARKs) على عكس عنق الزجاجة هذا: يقوم مُبرِّح واحد غير موثوق به بإنشاء دليل تشفير مقتضب يشهد على الصحة الحسابية لملايين انتقالات الحالة، والتي يمكن لأي متحقق التحقق منها في الوقت اللوغاريتمي."
+    },
+    {
+      "type": "h2",
+      "text": "السعي الرياضي من أجل التحقق المقتضب"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Algebraic intermediate representation and execution trace polynomial matrix",
+      "caption": "AIR arithmetization: translating state machine execution steps into algebraic constraint polynomials."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Arithmetization: Transforming computational execution traces into systems of algebraic intermediate representations (AIR) or polynomial constraint systems.",
+        "Reed-Solomon Proximity Testing: Encoding constraint evaluations over large evaluation domains such that computational invalidity manifests as maximal distance from valid Reed-Solomon codewords.",
+        "FRI Protocol (Fast Reed-Solomon IOP of Proximity): An interactive oracle proof that recursively halves polynomial degrees, proving proximity to low-degree spaces with polylogarithmic communication complexity.",
+        "Transparent Trustless Setup: Utilizing publicly verifiable collision-resistant hash functions rather than elliptic curve toxic waste parameters, guaranteeing quantum resistance and zero setup vulnerability."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "تعمل براهين المعرفة الصفرية المتكررة على تحويل الوقت الحسابي إلى مساحة هندسية، مما يسمح بخطوة تحقق واحدة للتحقق من سلامة التنفيذ التاريخي غير المحدود.",
+      "cite": "دراسة أسس التشفير وأنظمة التحقق"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524813686514-a57563d77d61?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Recursive STARK proof tree folding millions of transactions into single succinct proof",
+      "caption": "Recursive proof aggregation: Merkle tree verification folding thousands of execution batches into one master proof."
+    },
+    {
+      "type": "h2",
+      "text": "السعي الرياضي من أجل التحقق المقتضب"
+    },
+    {
+      "type": "p",
+      "text": "يمثل الحساب الذي يمكن التحقق منه الاختراق التأسيسي الذي يمكّن أجهزة الدولة اللامركزية العامة من التوسع أفقيًا. في شبكات التنفيذ الساذجة، يجب على كل عقدة التحقق من الصحة إعادة تنفيذ كل معاملة بالتسلسل للتحقق من صحة الحالة. تعمل حجج المعرفة الشفافة القابلة للتطوير (STARKs) على عكس عنق الزجاجة هذا: يقوم مُبرِّح واحد غير موثوق به بإنشاء دليل تشفير مقتضب يشهد على الصحة الحسابية لملايين انتقالات الحالة، والتي يمكن لأي متحقق التحقق منها في الوقت اللوغاريتمي."
+    },
+    {
+      "type": "video",
+      "title": "Recursive STARKs and Polynomial Commitments Deep Dive",
+      "caption": "Mathematical exploration of FRI proximity testing, execution trace arithmetization, and recursive proof verification.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "السعي الرياضي من أجل التحقق المقتضب"
+    },
+    {
+      "type": "p",
+      "text": "يمثل الحساب الذي يمكن التحقق منه الاختراق التأسيسي الذي يمكّن أجهزة الدولة اللامركزية العامة من التوسع أفقيًا. في شبكات التنفيذ الساذجة، يجب على كل عقدة التحقق من الصحة إعادة تنفيذ كل معاملة بالتسلسل للتحقق من صحة الحالة. تعمل حجج المعرفة الشفافة القابلة للتطوير (STARKs) على عكس عنق الزجاجة هذا: يقوم مُبرِّح واحد غير موثوق به بإنشاء دليل تشفير مقتضب يشهد على الصحة الحسابية لملايين انتقالات الحالة، والتي يمكن لأي متحقق التحقق منها في الوقت اللوغاريتمي."
+    }
+  ],
+  "sourceHash": "c5cdc7eeeaeebe7ae1b57b5a686e1ed3f30a8730"
+}

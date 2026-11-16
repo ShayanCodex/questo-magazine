@@ -11,8 +11,8 @@
     "grid-systems",
     "graphic-design"
   ],
-  "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Geometrische modulare Architekturlinien und typografische Proportionen auf weißem Papier",
+  "image": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Geometric modular architectural lines and typographic proportions on stark white paper",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Im Kern basiert das Schweizer Raster auf der proportionalen Division. Ein standardmäßiges 12-Spalten-Layout kann in Hälften, Drittel, Viertel und Sexten unterteilt werden, ohne jemals den horizontalen oder vertikalen Grundlinienrhythmus zu unterbrechen. Jede Überschrift, jedes Zitat und jede Bildunterschrift ist direkt in einem zugrunde liegenden mathematischen Koordinatensystem verankert."
+      "text": "Das Raster ist kein Gefängnis; es ist eine Leinwand befreiender Disziplin. Als Josef Müller-Brockmann und die Pioniere der Zürcher Schule in den 1950er Jahren den Internationalen Typografischen Stil formalisierten, versuchten sie, das Grafikdesign von willkürlichen subjektiven Launen zu befreien und stattdessen universelle Klarheit, mathematische Harmonie und demokratische Lesbarkeit zu erreichen."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mathematical Elegance of the Swiss Grid - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Mathematical Elegance of the Swiss Grid."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "Wesentliche Axiome der Schweizer Methodik"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mathematical Elegance of the Swiss Grid - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Mathematical Elegance of the Swiss Grid."
+    },
+    {
       "type": "ul",
       "items": [
-        "Strikte Einhaltung eines Grundlinienrasters: Jede Textzeile wird unabhängig von der Schriftgröße auf ganzzahlige Vielfache der Grundlinienhöhe ausgerichtet.",
-        "Asymmetrisches dynamisches Gleichgewicht: Ersetzen der statischen Zentrierung durch aktive Leerraumspannung und linksbündige Typografie.",
-        "Hierarchischer typografischer Kontrast: Nutzung extremer Skalenunterschiede zwischen massiven Anzeigetiteln und kompakten, lesbaren Fließtexten."
+        "Strict adherence to a baseline grid: Every line of text, regardless of font size, snaps to integer multiples of the base line-height.",
+        "Asymmetric dynamic balance: Replacing static centering with active white space tension and flush-left typography.",
+        "Hierarchical typographic contrast: Utilizing extreme scale disparities between massive display titles and compact, legible body copy."
       ]
     },
     {
       "type": "p",
-      "text": "In unserem modernen digitalen Ökosystem, in dem sich reaktionsfähige Layouts sofort an Uhrenbildschirme, Smartphones und ultrabreite Desktop-Monitore anpassen müssen, bleibt die mathematische Genauigkeit des Schweizer Rasters unser robustester visueller Kompass."
+      "text": "Das Raster ist kein Gefängnis; es ist eine Leinwand befreiender Disziplin. Als Josef Müller-Brockmann und die Pioniere der Zürcher Schule in den 1950er Jahren den Internationalen Typografischen Stil formalisierten, versuchten sie, das Grafikdesign von willkürlichen subjektiven Launen zu befreien und stattdessen universelle Klarheit, mathematische Harmonie und demokratische Lesbarkeit zu erreichen."
     }
   ],
-  "sourceHash": "c45287d9c8255c8a353319af5e93ffe633817c28"
+  "sourceHash": "3d3fbc47dbede9fa58427d2d3b405a05a51164d4"
 }

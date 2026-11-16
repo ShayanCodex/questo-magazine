@@ -14,7 +14,7 @@
     "endocrinology",
     "cardiology"
   ],
-  "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1516549655663-e380e2279b5c?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Clinical health science laboratory telemetry showing cellular biomarkers and metabolic tracking",
   "body": [
     {
@@ -30,12 +30,24 @@
       "text": "1. Biochemical Mechanism: Superoxide Overproduction & Endothelial Damage"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Postprandial Glycemic Variability - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Postprandial Glycemic Variability."
+    },
+    {
       "type": "p",
       "text": "Why are postprandial spikes biologically damaging even when fasting levels return to baseline within two hours? The primary cellular mechanism occurs within the mitochondrial electron transport chain of vascular endothelial cells."
     },
     {
       "type": "p",
       "text": "When an acute influx of glucose floods endothelial cells, excess pyruvate generates an overwhelming concentration of electron donors (NADH and FADH₂) into Complex I and Complex III. This over-saturates the mitochondrial proton gradient, halting the forward passage of electrons and transferring solitary electrons directly to molecular oxygen to synthesize superoxide anions ($O_2^{\\bullet-}$):"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1538100556848-44d489cf60ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Postprandial Glycemic Variability - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Postprandial Glycemic Variability."
     },
     {
       "type": "code",

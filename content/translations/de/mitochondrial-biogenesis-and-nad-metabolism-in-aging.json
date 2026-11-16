@@ -11,8 +11,8 @@
     "metabolism",
     "cellular-biology"
   ],
-  "image": "/images/articles/cellular-autophagy-biology.jpg",
-  "imageAlt": "Hochauflösende konfokale Fluoreszenzmikroskopie-Visualisierung zellulärer Lysosomen und Autophagiewege",
+  "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Biomedical laboratory pipetting cellular culture samples for NAD+ coenzyme quantification assays",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Kernpunkte"
+      "text": "Die bioenergetische Krise des zellulären Alterns"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Electron micrograph showing dense inner mitochondrial cristae folding and ATP synthase enzymes",
+      "caption": "Mitochondrial cristae architecture: surface area density directly governing oxidative phosphorylation efficiency."
     },
     {
       "type": "ul",
       "items": [
-        "Mitohormese: Vorübergehende metabolische Stressoren lösen eine nukleare Genexpression aus, die die antioxidative Abwehr und Biogenese der Mitochondrien stärkt.",
-        "NAD+ Rate-Limiting Flux: Der Rückgang des Salvage-Enzyms NAMPT verringert die Verfügbarkeit von NAD+-Coenzym und beeinträchtigt die Sirtuin-Deacetylierung und die PARP-DNA-Reparatur.",
-        "Spaltungs- und Fusionsgleichgewicht: Mitofusin (MFN1/2) und Drp1 koordinieren die Sortierung funktioneller mitochondrialer Komponenten aus beschädigten Fragmenten, die für die Mitophagie bestimmt sind.",
-        "PGC-1alpha-Masterregulation: Die belastungsinduzierte Aktivierung von PGC-1alpha stimuliert die mitochondriale DNA-Replikation und die Synthese dichter Cristae im Muskel- und Nervengewebe."
+        "Mitohormesis: Transient metabolic stressors trigger nuclear gene expression that reinforces mitochondrial antioxidant defenses and biogenesis.",
+        "NAD+ Rate-Limiting Flux: The decline of salvage enzyme NAMPT reduces NAD+ coenzyme availability, impairing sirtuin deacetylation and PARP DNA repair.",
+        "Fission and Fusion Equilibrium: Mitofusin (MFN1/2) and Drp1 coordinate the sorting of functional mitochondrial components from damaged fragments targeted for mitophagy.",
+        "PGC-1alpha Master Regulation: Exercise-induced activation of PGC-1alpha stimulates mitochondrial DNA replication and dense cristae synthesis in muscle and neural tissue."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Dr. Marcus Vance, Protokolle in der präventiven Zellularmedizin"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular metabolism assay measuring sirtuin enzyme activation and NAD+ salvage pathway flux",
+      "caption": "NAD+ decline: age-related loss of cellular coenzyme pools suppressing sirtuin activation and DNA repair pathways."
+    },
+    {
       "type": "h2",
-      "text": "Wiederherstellung des Nikotinamid-Metaboloms"
+      "text": "Die bioenergetische Krise des zellulären Alterns"
     },
     {
       "type": "p",
-      "text": "Durch die gezielte Wiederauffüllung von NAD+-Vorläufern in Kombination mit der Hemmung des CD38-Ektoenzyms werden die zellulären Redoxverhältnisse (NAD+/NADH) auf ein jugendliches Niveau zurückgeführt. Diese biochemische Wiederauffüllung bewahrt die genomische Stabilität, stimuliert die mitochondriale Biogenese und mildert den altersbedingten Stoffwechselabfall."
+      "text": "Im Zusammenhang mit dem biologischen Altern des Menschen steht der fortschreitende bioenergetische Zerfall: der allmähliche Rückgang der Effizienz des mitochondrialen Elektronentransports, die Ansammlung beschädigter Organellenfragmente und die systemische Erschöpfung der zellulären Nikotinamidadenindinukleotid (NAD+)-Pools. Die moderne molekulare Gerowissenschaft zeigt, dass die mitochondriale Architektur dynamisch ist, auf gezielte Stoffwechselauslöser reagiert und zu einer tiefgreifenden Verjüngung fähig ist."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "Zelluläre Langlebigkeit und metabolische Biomarker",
-      "caption": "Klinische Diskussion über kardiovaskuläres Risiko, Stoffwechselgesundheit und die Zellbiologie der menschlichen Langlebigkeit."
+      "title": "Cellular Longevity and Metabolic Biomarkers",
+      "caption": "Clinical discussion detailing cardiovascular risk, metabolic health, and the cellular biology of human longevity.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "Zelluläre Widerstandsfähigkeit in klinische Langlebigkeit umsetzen"
+      "text": "Die bioenergetische Krise des zellulären Alterns"
     },
     {
       "type": "p",
-      "text": "Durch die Kopplung von Zone-2-Ausdauerkonditionierung, intermittierenden Energiedefiziten und gezielten molekularen Cofaktoren wandelt sich die Präventivmedizin von palliativer Symptombehandlung zu proaktiver Zellerhaltung."
+      "text": "Im Zusammenhang mit dem biologischen Altern des Menschen steht der fortschreitende bioenergetische Zerfall: der allmähliche Rückgang der Effizienz des mitochondrialen Elektronentransports, die Ansammlung beschädigter Organellenfragmente und die systemische Erschöpfung der zellulären Nikotinamidadenindinukleotid (NAD+)-Pools. Die moderne molekulare Gerowissenschaft zeigt, dass die mitochondriale Architektur dynamisch ist, auf gezielte Stoffwechselauslöser reagiert und zu einer tiefgreifenden Verjüngung fähig ist."
     }
   ],
-  "sourceHash": "8b5384ed9c857f1dafa99320e22a67b40c7cebe8"
+  "sourceHash": "48db63f07c55a9093e5f6f1094579f21c8e4c7e1"
 }

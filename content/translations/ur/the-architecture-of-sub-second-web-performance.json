@@ -11,8 +11,8 @@
     "edge-computing",
     "web-vitals"
   ],
-  "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "ایک انٹرپرائز ڈیٹا کی سہولت کے اندر سیان ایل ای ڈی ٹیلی میٹری خارج کرنے والے اعلی کثافت والے سرور ریک",
+  "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-density server racks emitting cyan LED telemetry inside an enterprise data facility",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "مستند سب سیکنڈ لارجسٹ کنٹینٹفول پینٹ (LCP) اور صفر مجموعی لے آؤٹ شفٹ (CLS) کو حاصل کرنے کے لیے روایتی ہوسٹنگ ٹوپولوجی کو تبدیل کرنے کی ضرورت ہے۔ فی صارف کی درخواست پر متحرک طور پر ایچ ٹی ایم ایل کو کمپیوٹنگ کرنے کے بجائے، جدید اعلیٰ اتھارٹی پبلشنگ پلیٹ فارم صفحات کو مقررہ، غیر تبدیل شدہ جامد HTML فائلوں میں تعمیر کے وقت پہلے سے مرتب کرتے ہیں۔"
+      "text": "ایک دہائی سے زیادہ عرصے سے، ویب فن تعمیر نے صارف کے تجربے کی قیمت پر کمپیوٹیشنل پیچیدگی کا پیچھا کیا ہے۔ بڑے پیمانے پر سنگل پیج ایپلی کیشنز، پیچیدہ ہائیڈریشن ٹریز، اور کثیر درجے کے بیک اینڈ ڈیٹا بیس کے سوالات نے جدید ویب کو پروان چڑھایا ہے۔ تاخیر کا ہر ملی سیکنڈ صارف کے اعتماد کو ختم کرتا ہے، تلاش کی مرئیت کو کم کرتا ہے، اور ڈیوائس کی بیٹری کی زندگی کو ضائع کرتا ہے۔"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "code",
@@ -33,7 +39,13 @@
     },
     {
       "type": "p",
-      "text": "جب درخواست کرنے والے کلائنٹ کے 15 کلو میٹر کے اندر واقع ایک کنارے نوڈ سے ایک ناقابل تغیر اثاثہ پیش کیا جاتا ہے، تو راؤنڈ ٹرپ پیکٹ ٹرانسپورٹ 10 ملی سیکنڈ سے نیچے گر جاتا ہے۔ سرور پروسیسنگ کا وقت مؤثر طریقے سے صفر پر بدل جاتا ہے۔"
+      "text": "ایک دہائی سے زیادہ عرصے سے، ویب فن تعمیر نے صارف کے تجربے کی قیمت پر کمپیوٹیشنل پیچیدگی کا پیچھا کیا ہے۔ بڑے پیمانے پر سنگل پیج ایپلی کیشنز، پیچیدہ ہائیڈریشن ٹریز، اور کثیر درجے کے بیک اینڈ ڈیٹا بیس کے سوالات نے جدید ویب کو پروان چڑھایا ہے۔ تاخیر کا ہر ملی سیکنڈ صارف کے اعتماد کو ختم کرتا ہے، تلاش کی مرئیت کو کم کرتا ہے، اور ڈیوائس کی بیٹری کی زندگی کو ضائع کرتا ہے۔"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Architecture of Sub-Second Web Performance - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Architecture of Sub-Second Web Performance."
     },
     {
       "type": "quote",
@@ -47,16 +59,16 @@
     {
       "type": "ul",
       "items": [
-        "پہلے سے پیش کردہ HTML دستاویزات جن میں مکمل کرالر پڑھنے کے قابل سیمنٹک کاپی اور JSON-LD میٹا ڈیٹا شامل ہیں۔",
-        "زیرو بلاکنگ تھرڈ پارٹی ٹیلی میٹری اسکرپٹس کو بنیادی مواد کے لے آؤٹ سے پہلے عمل میں لایا گیا۔",
-        "یونیکوڈ رینج ڈیکلریشنز اور فونٹ ڈسپلے کا استعمال کرتے ہوئے سی ایس ایس پیجڈ میڈیا اور جدید فونٹ سب سیٹنگ: سویپ۔",
-        "ٹکڑا جامد JSON ڈیٹا ڈیلیوری جو پروگریسو ہائیڈریٹ انٹرایکٹو یوٹیلٹیز کو بغیر لے آؤٹ شفٹ کے۔"
+        "Pre-rendered HTML documents containing complete crawler-readable semantic copy and JSON-LD metadata.",
+        "Zero blocking third-party telemetry scripts executed prior to the primary content layout.",
+        "CSS paged media and modern font subsetting using unicode-range declarations and font-display: swap.",
+        "Chunked static JSON data delivery that progressive-hydrates interactive utilities without layout shifts."
       ]
     },
     {
       "type": "p",
-      "text": "انجینئرنگ کے ان سخت معیارات پر عمل کرتے ہوئے، ڈیجیٹل پبلشرز فوری طور پر عالمی دریافت کی ضمانت دیتے ہیں، گوگل کے انتہائی سخت کور ویب وائٹلز کے معیار کو پورا کرتے ہیں، اور بین الاقوامی قارئین کو بغیر کسی رکاوٹ کے، بغیر خلفشار سے پاک پڑھنے کا تجربہ فراہم کرتے ہیں۔"
+      "text": "ایک دہائی سے زیادہ عرصے سے، ویب فن تعمیر نے صارف کے تجربے کی قیمت پر کمپیوٹیشنل پیچیدگی کا پیچھا کیا ہے۔ بڑے پیمانے پر سنگل پیج ایپلی کیشنز، پیچیدہ ہائیڈریشن ٹریز، اور کثیر درجے کے بیک اینڈ ڈیٹا بیس کے سوالات نے جدید ویب کو پروان چڑھایا ہے۔ تاخیر کا ہر ملی سیکنڈ صارف کے اعتماد کو ختم کرتا ہے، تلاش کی مرئیت کو کم کرتا ہے، اور ڈیوائس کی بیٹری کی زندگی کو ضائع کرتا ہے۔"
     }
   ],
-  "sourceHash": "edfd46a296d4b24aa8cb0eeac577f4cfb2d42440"
+  "sourceHash": "991c4f46537e3fec6a7c705a3813b91ad888c52f"
 }

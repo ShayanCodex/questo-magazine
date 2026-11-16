@@ -12,7 +12,7 @@
     "hypoxia"
   ],
   "image": "/images/articles/himalayan-mountaineering-glacier.jpg",
-  "imageAlt": "Picos alpinos nevados y crestas glaciares del alto Himalaya bajo un claro cielo azul de montaña",
+  "imageAlt": "Snowcapped alpine peaks and glaciated ridgelines of the high Himalaya under clear azure mountain skies",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "La fisiología de la zona de la muerte"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for High-Altitude Himalayan Expeditions."
     },
     {
       "type": "ul",
       "items": [
-        "Dinámica de la presión hipobárica: a 8.000 m, la saturación de oxígeno arterial ($SaO_2$) cae por debajo del 60%, lo que exige gravemente el cálculo cognitivo y el control motor.",
-        "Activación de HIF-1alfa: la hipoxia celular estabiliza el factor 1-alfa inducible por hipoxia, impulsando la secreción de eritropoyetina renal (EPO) y la proliferación del hematocrito de eritrocitos.",
-        "Hiperventilación y alcalosis respiratoria: los quimiorreceptores del cuerpo carotídeo fuerzan una taquipnea persistente, expulsando CO2 e induciendo la excreción renal de bicarbonato para amortiguar el pH arterial.",
-        "Edema cerebral y pulmonar: el ascenso repentino sin una aclimatación gradual corre el riesgo de extravasación de líquido capilar, lo que desencadena HACE o HAPE potencialmente mortal."
+        "Hypobaric Pressure Dynamics: At 8,000m, arterial oxygen saturation ($SaO_2$) drops below 60%, severely taxing cognitive calculation and motor control.",
+        "HIF-1alpha Activation: Cellular hypoxia stabilizes Hypoxia-Inducible Factor 1-alpha, driving renal erythropoietin (EPO) secretion and erythrocyte hematocrit proliferation.",
+        "Hyperventilation & Respiratory Alkalosis: Carotid body chemoreceptors force persistent tachypnea, blowing off CO2 and inducing renal bicarbonate excretion to buffer arterial pH.",
+        "Cerebral and Pulmonary Edema: Sudden ascent without phased acclimatization risks capillary fluid extravasation, triggering life-threatening HACE or HAPE."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Sociedad de Expediciones y Medicina de Gran Altitud del Himalaya"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting High-Altitude Himalayan Expeditions."
+    },
+    {
       "type": "h2",
-      "text": "Logística de rotación de ascenso, sueño alto y bajo"
+      "text": "La fisiología de la zona de la muerte"
     },
     {
       "type": "p",
-      "text": "El estilo alpino moderno y las expediciones de asedio por fases utilizan rotaciones estrictas por etapas. Los escaladores ascienden a través de campamentos altos progresivos (C1, C2, C3) para desencadenar la adaptación celular antes de descender al campamento base para un sueño reparador, mitigando la fatiga crónica por la altitud mientras aumentan la concentración de hemoglobina."
+      "text": "Ascender por encima de los 8.000 metros sumerge al organismo humano en la \"zona de la muerte\", un entorno donde la presión barométrica cae a aproximadamente un tercio del valor del nivel del mar (aprox. 250 mmHg). A pesar de que la fracción de oxígeno ambiental permanece constante en 20,9%, la caída precipitada de la presión parcial inspirada ($P_iO_2$) priva de oxigenación de los tejidos, lo que exige una aclimatación compensatoria sistémica."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY",
-      "title": "Fisiología de las grandes altitudes: cómo sobrevive el cuerpo humano al frío extremo y la hipoxia",
-      "caption": "Documental de expedición médica que examina la adaptación hematológica, las curvas de transporte de oxígeno y el intercambio de gases pulmonares por encima de los 7.000 metros."
+      "title": "High Altitude Physiology: How the Human Body Survives Extreme Cold & Hypoxia",
+      "caption": "Medical expedition documentary examining hematological adaptation, oxygen transport curves, and pulmonary gas exchange above 7,000 meters.",
+      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY"
     },
     {
       "type": "h2",
-      "text": "Administración soberana de la ruta del Himalaya"
+      "text": "La fisiología de la zona de la muerte"
     },
     {
       "type": "p",
-      "text": "Con el frágil terreno glaciar retrocediendo debido a los cambios climáticos, las alianzas regionales de conservación y los gremios de guías sherpa están implementando estrictos marcos de residuos de expedición de rastro cero y manifiestos de equipos rastreados por GPS para proteger las cuencas alpinas."
+      "text": "Ascender por encima de los 8.000 metros sumerge al organismo humano en la \"zona de la muerte\", un entorno donde la presión barométrica cae a aproximadamente un tercio del valor del nivel del mar (aprox. 250 mmHg). A pesar de que la fracción de oxígeno ambiental permanece constante en 20,9%, la caída precipitada de la presión parcial inspirada ($P_iO_2$) priva de oxigenación de los tejidos, lo que exige una aclimatación compensatoria sistémica."
     }
   ],
-  "sourceHash": "c599f276bf69326cacf6f5e979acec61df69bc59"
+  "sourceHash": "4775f0a6be80b1cd9cff50ad35a36372d3eef476"
 }

@@ -12,7 +12,7 @@
     "biomarkers"
   ],
   "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Pruebas científicas avanzadas de laboratorio clínico de biomarcadores vasculares y patología celular",
+  "imageAlt": "Advanced scientific clinical laboratory testing vascular biomarkers and cellular pathology",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "Cada partícula de lipoproteína aterogénica, que incluye lipoproteínas de baja densidad (LDL), lipoproteínas de muy baja densidad (VLDL), lipoproteínas de densidad intermedia (IDL) y lipoproteína (a), lleva precisamente una molécula de apolipoproteína B-100 en su superficie. Al cuantificar ApoB mediante un ensayo inmunoturbidimétrico, los médicos miden la concentración molar exacta de entidades aterogénicas circulantes capaces de cruzar la íntima arterial."
+      "text": "Las enfermedades cardiovasculares siguen siendo la principal causa de mortalidad global, sin embargo, los paradigmas de detección clínica con frecuencia se basan en métricas sustitutas de lípidos que oscurecen los mecanismos subyacentes primarios. Las cuantificaciones convencionales de colesterol total y colesterol de lipoproteínas de baja densidad (LDL-C) cuantifican la masa agregada de colesterol dentro de las partículas circulantes, sin capturar el número absoluto de partículas aterogénicas. Los avances recientes en lipidología molecular demuestran que la concentración de partículas de apolipoproteína B-100 (ApoB), junto con el desacoplamiento de la óxido nítrico sintasa endotelial (eNOS), proporciona un modelo predictivo exponencialmente más preciso de la nucleación de placas de ateroma."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cardiometabolic Biomarkers & ApoB - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Cardiometabolic Biomarkers & ApoB."
     },
     {
       "type": "p",
-      "text": "La aterosclerosis no se inicia en la superficie luminal de la pared del vaso; Ocurre estrictamente dentro del espacio subendotelial. La velocidad del flujo de partículas de lipoproteínas a través de la barrera endotelial es directamente proporcional a la concentración de partículas circulantes. Una vez secuestrados dentro de la matriz extracelular de la íntima, los proteoglicanos se unen a ApoB mediante interacciones electrostáticas, inmovilizando la partícula y predisponiéndola a la modificación oxidativa por especies reactivas de oxígeno (ROS)."
+      "text": "Las enfermedades cardiovasculares siguen siendo la principal causa de mortalidad global, sin embargo, los paradigmas de detección clínica con frecuencia se basan en métricas sustitutas de lípidos que oscurecen los mecanismos subyacentes primarios. Las cuantificaciones convencionales de colesterol total y colesterol de lipoproteínas de baja densidad (LDL-C) cuantifican la masa agregada de colesterol dentro de las partículas circulantes, sin capturar el número absoluto de partículas aterogénicas. Los avances recientes en lipidología molecular demuestran que la concentración de partículas de apolipoproteína B-100 (ApoB), junto con el desacoplamiento de la óxido nítrico sintasa endotelial (eNOS), proporciona un modelo predictivo exponencialmente más preciso de la nucleación de placas de ateroma."
     },
     {
       "type": "quote",
@@ -36,63 +42,69 @@
       "cite": "Dr. Marcus Vance, becario de salud preventiva"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cardiometabolic Biomarkers & ApoB - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Cardiometabolic Biomarkers & ApoB."
+    },
+    {
       "type": "h2",
-      "text": "2. Estrés de cizallamiento endotelial y biodisponibilidad del óxido nítrico"
+      "text": "1. Fisiopatología de la apolipoproteína B y el ingreso arterial"
     },
     {
       "type": "p",
-      "text": "El endotelio vascular es un órgano endocrino activo que sintetiza óxido nítrico (NO) a través de la óxido nítrico sintasa endotelial (eNOS) utilizando L-arginina y oxígeno. El óxido nítrico cumple varias funciones fundamentales de defensa vascular:"
+      "text": "Las enfermedades cardiovasculares siguen siendo la principal causa de mortalidad global, sin embargo, los paradigmas de detección clínica con frecuencia se basan en métricas sustitutas de lípidos que oscurecen los mecanismos subyacentes primarios. Las cuantificaciones convencionales de colesterol total y colesterol de lipoproteínas de baja densidad (LDL-C) cuantifican la masa agregada de colesterol dentro de las partículas circulantes, sin capturar el número absoluto de partículas aterogénicas. Los avances recientes en lipidología molecular demuestran que la concentración de partículas de apolipoproteína B-100 (ApoB), junto con el desacoplamiento de la óxido nítrico sintasa endotelial (eNOS), proporciona un modelo predictivo exponencialmente más preciso de la nucleación de placas de ateroma."
     },
     {
       "type": "ul",
       "items": [
-        "Regulación del tono vascular: se difunde en las células del músculo liso vascular subyacente, activando la guanilil ciclasa soluble (sGC) para inducir la vasodilatación cíclica mediada por GMP.",
-        "Quiescencia antitrombótica: suprime la adhesión, agregación y adherencia celular de las plaquetas a la luz íntima.",
-        "Inhibición de la quimiotaxis de los leucocitos: regula a la baja la molécula de adhesión de células vasculares-1 (VCAM-1) y la proteína quimioatrayente de monocitos-1 (MCP-1), previniendo el reclutamiento inflamatorio de monocitos."
+        "Vascular Tone Regulation: Diffuses into underlying vascular smooth muscle cells, activating soluble guanylyl cyclase (sGC) to induce cyclic GMP-mediated vasodilation.",
+        "Anti-Thrombotic Quiescence: Suppresses platelet adhesion, aggregation, and cellular adherence to the intimal lumen.",
+        "Inhibition of Leukocyte Chemotaxis: Downregulates vascular cell adhesion molecule-1 (VCAM-1) and monocyte chemoattractant protein-1 (MCP-1), preventing inflammatory monocyte recruitment."
       ]
     },
     {
       "type": "p",
-      "text": "Bajo estrés metabólico crónico, caracterizado por resistencia a la insulina, hipertensión sistémica o dimetilarginina asimétrica elevada (ADMA), la eNOS se desacopla de su cofactor esencial, la tetrahidrobiopterina (BH4). La eNOS desacoplada produce radicales superóxido en lugar de óxido nítrico protector, precipitando un estado de profunda vulnerabilidad endotelial."
+      "text": "Las enfermedades cardiovasculares siguen siendo la principal causa de mortalidad global, sin embargo, los paradigmas de detección clínica con frecuencia se basan en métricas sustitutas de lípidos que oscurecen los mecanismos subyacentes primarios. Las cuantificaciones convencionales de colesterol total y colesterol de lipoproteínas de baja densidad (LDL-C) cuantifican la masa agregada de colesterol dentro de las partículas circulantes, sin capturar el número absoluto de partículas aterogénicas. Los avances recientes en lipidología molecular demuestran que la concentración de partículas de apolipoproteína B-100 (ApoB), junto con el desacoplamiento de la óxido nítrico sintasa endotelial (eNOS), proporciona un modelo predictivo exponencialmente más preciso de la nucleación de placas de ateroma."
     },
     {
       "type": "h2",
-      "text": "3. Conferencia clínica: Fisiología vascular y vulnerabilidad de la placa"
+      "text": "1. Fisiopatología de la apolipoproteína B y el ingreso arterial"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "Biomarcadores ApoB, métricas de lípidos y riesgo cardiovascular",
-      "caption": "Conferencia clínica autorizada sobre retención de partículas subendoteliales, formación de células espumosas de macrófagos y estabilidad de la placa de la íntima."
+      "title": "ApoB Biomarkers, Lipid Metrics, and Cardiovascular Risk",
+      "caption": "Authoritative clinical lecture on sub-endothelial particle retention, macrophage foam cell formation, and intimal plaque stability."
     },
     {
       "type": "h2",
-      "text": "4. La transición de la racha grasa al fibroateroma inestable"
+      "text": "1. Fisiopatología de la apolipoproteína B y el ingreso arterial"
     },
     {
       "type": "p",
-      "text": "Una vez que las partículas de ApoB oxidadas son fagocitadas por macrófagos reclutados a través de receptores carroñeros (SR-A y CD36), la acumulación intracelular de colesterol esterificado transforma los macrófagos en células espumosas. Durante décadas, la apoptosis celular persistente y la eferocitosis defectuosa generan un núcleo lipídico necrótico cubierto por una fina capa fibrosa compuesta de colágeno tipo I y células de músculo liso vascular."
+      "text": "Las enfermedades cardiovasculares siguen siendo la principal causa de mortalidad global, sin embargo, los paradigmas de detección clínica con frecuencia se basan en métricas sustitutas de lípidos que oscurecen los mecanismos subyacentes primarios. Las cuantificaciones convencionales de colesterol total y colesterol de lipoproteínas de baja densidad (LDL-C) cuantifican la masa agregada de colesterol dentro de las partículas circulantes, sin capturar el número absoluto de partículas aterogénicas. Los avances recientes en lipidología molecular demuestran que la concentración de partículas de apolipoproteína B-100 (ApoB), junto con el desacoplamiento de la óxido nítrico sintasa endotelial (eNOS), proporciona un modelo predictivo exponencialmente más preciso de la nucleación de placas de ateroma."
     },
     {
       "type": "p",
-      "text": "La rotura de la placa, el desencadenante proximal de los síndromes coronarios agudos, no se rige por el porcentaje de oclusión luminal, sino por la vulnerabilidad biológica. Los fibroateromas de capa delgada (TCFA), caracterizados por una alta infiltración de macrófagos, secreción de metaloproteinasa de matriz (MMP) y una matriz de colágeno extracelular disminuida, exhiben una propensión extrema a fallas mecánicas tectónicas bajo estrés hemodinámico."
+      "text": "Las enfermedades cardiovasculares siguen siendo la principal causa de mortalidad global, sin embargo, los paradigmas de detección clínica con frecuencia se basan en métricas sustitutas de lípidos que oscurecen los mecanismos subyacentes primarios. Las cuantificaciones convencionales de colesterol total y colesterol de lipoproteínas de baja densidad (LDL-C) cuantifican la masa agregada de colesterol dentro de las partículas circulantes, sin capturar el número absoluto de partículas aterogénicas. Los avances recientes en lipidología molecular demuestran que la concentración de partículas de apolipoproteína B-100 (ApoB), junto con el desacoplamiento de la óxido nítrico sintasa endotelial (eNOS), proporciona un modelo predictivo exponencialmente más preciso de la nucleación de placas de ateroma."
     },
     {
       "type": "h2",
-      "text": "5. Implicaciones clínicas preventivas y conclusiones"
+      "text": "1. Fisiopatología de la apolipoproteína B y el ingreso arterial"
     },
     {
       "type": "ul",
       "items": [
-        "Superioridad de ApoB: la medición de ApoB captura el riesgo discordante que el LDL-C convencional pasa por alto, estableciendo la verdadera trayectoria de las partículas aterogénicas.",
-        "Preservación endotelial: el ejercicio aeróbico y los sustratos de nitrato en la dieta apoyan el acoplamiento fisiológico de eNOS, manteniendo la perfusión microvascular esencial.",
-        "Estabilización de la placa: Las terapias antiinflamatorias y hipolipemiantes tempranas reducen el volumen del núcleo necrótico y promueven capas de colágeno gruesas y estables."
+        "ApoB Superiority: ApoB measurement captures discordant risk missed by conventional LDL-C, establishing the true atherogenic particle trajectory.",
+        "Endothelial Preservation: Aerobic exercise and dietary nitrate substrates support physiological eNOS coupling, maintaining essential microvascular perfusion.",
+        "Plaque Stabilization: Early lipid-lowering and anti-inflammatory therapies reduce necrotic core volume and promote thick, stable collagen caps."
       ]
     },
     {
       "type": "p",
-      "text": "Descargo de responsabilidad médica: este artículo se publica únicamente con fines educativos y de investigación científica. No constituye un diagnóstico médico individual, una evaluación clínica o un consejo de tratamiento. Consulte a un médico o cardiólogo autorizado para una evaluación individualizada del riesgo cardiovascular."
+      "text": "Las enfermedades cardiovasculares siguen siendo la principal causa de mortalidad global, sin embargo, los paradigmas de detección clínica con frecuencia se basan en métricas sustitutas de lípidos que oscurecen los mecanismos subyacentes primarios. Las cuantificaciones convencionales de colesterol total y colesterol de lipoproteínas de baja densidad (LDL-C) cuantifican la masa agregada de colesterol dentro de las partículas circulantes, sin capturar el número absoluto de partículas aterogénicas. Los avances recientes en lipidología molecular demuestran que la concentración de partículas de apolipoproteína B-100 (ApoB), junto con el desacoplamiento de la óxido nítrico sintasa endotelial (eNOS), proporciona un modelo predictivo exponencialmente más preciso de la nucleación de placas de ateroma."
     }
   ],
-  "sourceHash": "e9f3dafcd052725ba59fa593ccf9efaa1b31de97"
+  "sourceHash": "ee8f56ed44c5718f9c01664babe798a91ee2143d"
 }

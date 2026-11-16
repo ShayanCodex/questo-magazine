@@ -13,7 +13,7 @@
     "blockchain",
     "cryptography"
   ],
-  "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Futuristic cryptographic network topology representing decentralized zero-knowledge proofs",
   "body": [
     {
@@ -29,6 +29,12 @@
       "text": "1. The Arithmetic Circuit and R1CS Representation"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Zero-Knowledge Rollups & zk-SNARKs."
+    },
+    {
       "type": "p",
       "text": "To verify complex state transitions without revealing underlying transaction parameters or executing sequential instructions on-chain, high-level computation is compiled into arithmetic circuits over large finite fields $\\mathbb{F}_p$. These circuits are flattened into Rank-1 Constraint Systems (R1CS), formalized as matrix equations of the structure:"
     },
@@ -36,6 +42,12 @@
       "type": "code",
       "lang": "text",
       "code": "(A · s) ∘ (B · s) = (C · s)\n\nWhere:\n- A, B, C are sparse coefficient matrices defining the program logic\n- s is the witness vector containing private inputs, public inputs, and intermediate wires\n- ∘ represents the Hadamard (element-wise) vector product"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Zero-Knowledge Rollups & zk-SNARKs - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Zero-Knowledge Rollups & zk-SNARKs."
     },
     {
       "type": "p",

@@ -11,44 +11,6 @@ export interface MonographOfTheMonthProps {
   article: ArticleData;
 }
 
-// Curated high-resolution museum & contemporary fine-art photography catalog
-// Selected to communicate authentic editorial storytelling, fine art, and contemporary culture
-const CURATED_MONOGRAPH_IMAGES: Record<
-  string,
-  { image: string; alt: string; caption: string }
-> = {
-  'the-death-of-the-card-grid': {
-    image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Contemporary fine art museum gallery exhibition with monumental abstract canvas',
-    caption: 'Figure 01 // Monumental fine art canvas in contemporary gallery space',
-  },
-  'the-geometry-of-silence': {
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Contemplative architectural monolith with quiet natural light study',
-    caption: 'Figure 01 // Sculptural brutalist void and quiet contemplation',
-  },
-  'craft-over-convenience': {
-    image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Tactile artisanal sculpture and sculptural materiality in soft gallery light',
-    caption: 'Figure 01 // Artisanal sculptural form and tactile material study',
-  },
-  'pure-functional-simplicity': {
-    image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Industrial minimalist form and modern acoustic design',
-    caption: 'Figure 01 // Minimalist industrial form and rational systems architecture',
-  },
-  'the-poetics-of-concrete': {
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Brutalist concrete architectural abstraction against sky',
-    caption: 'Figure 01 // Monolithic concrete geometry rising into overcast sky',
-  },
-  'the-grid-as-an-instrument': {
-    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=2000&q=85',
-    alt: 'Swiss graphic design system and modern typographic composition',
-    caption: 'Figure 01 // Swiss typographic grid as structural architecture',
-  },
-};
-
 export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
   const { t, localePath, language } = useLanguage();
 
@@ -57,8 +19,7 @@ export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
   const readingTime = calculateReadingTime(article, t.minRead);
   const articleUrl = localePath(`/articles/${article.slug}`);
 
-  // Curated imagery with storytelling connection
-  const curated = CURATED_MONOGRAPH_IMAGES[article.slug] || {
+  const curated = {
     image: article.image || 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=2000&q=85',
     alt: article.imageAlt || article.title,
     caption: `Figure 01 // ${article.title} — Curated Essay`,

@@ -30,6 +30,12 @@
       "text": "Inverting the Topology: Build-Time Multilingual Compilation"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Static Multilingual Publishing - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Static Multilingual Publishing."
+    },
+    {
       "type": "p",
       "text": "Questo Magazine inverts this fragile runtime model completely. Instead of dynamically translating or hydrating strings inside the visitor's browser, our publishing engine treats internationalization as a build-time compilation step. Every article is stored as a structured JSON payload in version control. At deploy time, a Vite React SSG pipeline processes the content graph, generating distinct, fully-rendered static HTML files for all target languages: English, Spanish, French, German, Arabic, and Urdu."
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "ts",
       "code": "export function generateHreflangTags(baseUrl: string, slug: string, languages: Language[]) {\n  return languages.map(lang => ({\n    rel: 'alternate',\n    hreflang: lang.code,\n    href: `${baseUrl}${lang.isDefault ? '' : '/' + lang.code}/articles/${slug}`\n  }));\n}"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Static Multilingual Publishing - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Static Multilingual Publishing."
     },
     {
       "type": "quote",

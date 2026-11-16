@@ -1,0 +1,79 @@
+{
+  "slug": "quantum-entanglement-and-the-black-hole-information-paradox",
+  "title": "Le paradoxe de l'information sur les trous noirs : dualité holographique, courbes de page et pare-feu quantiques",
+  "excerpt": "Retrace le débat de trente ans entre l'unité quantique et le rayonnement de Hawking : correspondance AdS/CFT, îlots d'intrication et correction d'erreur quantique dans l'espace-temps courbe.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "theoretical-physics",
+    "quantum-mechanics",
+    "black-holes",
+    "general-relativity",
+    "astrophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1564325726053-d1f50a80e14c?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Cosmic deep-space nebula and gravitational lensing surrounding an astronomical black hole event horizon",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le choc irréconciliable de la physique moderne"
+    },
+    {
+      "type": "p",
+      "text": "Au cœur de la physique fondamentale se trouve une profonde contradiction entre nos deux théories les plus réussies : la relativité générale et la mécanique quantique. En 1974, Stephen Hawking a démontré que les fluctuations quantiques à proximité de l’horizon des événements font que les trous noirs émettent un rayonnement thermique et s’évaporent lentement. Cependant, si ce rayonnement est purement thermique, toutes les informations concernant la matière qui a initialement formé le trou noir sont définitivement effacées lorsqu’il disparaît, violant ainsi le principe quantique inviolable de l’unité."
+    },
+    {
+      "type": "h2",
+      "text": "Le choc irréconciliable de la physique moderne"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hawking radiation particle-antiparticle creation near the event horizon threshold",
+      "caption": "Hawking radiation mechanics: quantum vacuum fluctuations yielding entangled particle emissions at the Schwarzchild radius."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Quantum Unitarity: The fundamental theorem stating that the sum of probabilities for all possible outcomes must always equal one, ensuring that information is never destroyed in quantum mechanics.",
+        "The Page Curve: Don Page’s mathematical proof that if black hole evaporation preserves information, the entanglement entropy of radiation must initially rise before declining to zero as the hole evaporates.",
+        "Holographic Duality (AdS/CFT): The principle that quantum gravity in anti-de Sitter space is mathematically equivalent to a conformal field theory living on its boundary, guaranteeing unitarity.",
+        "Entanglement Islands: Recent semiclassical Euclidean gravity calculations revealing that interior quantum states become encoded in exterior radiation via quantum extremal surfaces."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le paradoxe informationnel du trou noir est le creuset théorique dans lequel les lois fondamentales de l'espace-temps et de la mécanique quantique seront soit réconciliées, soit réécrites.",
+      "cite": "Examen de la physique théorique et de la gravité quantique"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Quantum entanglement laser interferometry and holographic boundary duality mapping",
+      "caption": "AdS/CFT correspondence: boundary conformal field theory mapping higher-dimensional gravitational bulk geometry."
+    },
+    {
+      "type": "h2",
+      "text": "Le choc irréconciliable de la physique moderne"
+    },
+    {
+      "type": "p",
+      "text": "Au cœur de la physique fondamentale se trouve une profonde contradiction entre nos deux théories les plus réussies : la relativité générale et la mécanique quantique. En 1974, Stephen Hawking a démontré que les fluctuations quantiques à proximité de l’horizon des événements font que les trous noirs émettent un rayonnement thermique et s’évaporent lentement. Cependant, si ce rayonnement est purement thermique, toutes les informations concernant la matière qui a initialement formé le trou noir sont définitivement effacées lorsqu’il disparaît, violant ainsi le principe quantique inviolable de l’unité."
+    },
+    {
+      "type": "video",
+      "title": "The Black Hole Information Paradox: How Physics Solved Its Greatest Puzzle",
+      "caption": "Detailed theoretical physics lecture on Hawking radiation, the Page Curve, and holographic quantum extremal islands.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "Le choc irréconciliable de la physique moderne"
+    },
+    {
+      "type": "p",
+      "text": "Au cœur de la physique fondamentale se trouve une profonde contradiction entre nos deux théories les plus réussies : la relativité générale et la mécanique quantique. En 1974, Stephen Hawking a démontré que les fluctuations quantiques à proximité de l’horizon des événements font que les trous noirs émettent un rayonnement thermique et s’évaporent lentement. Cependant, si ce rayonnement est purement thermique, toutes les informations concernant la matière qui a initialement formé le trou noir sont définitivement effacées lorsqu’il disparaît, violant ainsi le principe quantique inviolable de l’unité."
+    }
+  ],
+  "sourceHash": "f7c700cabbd5603a07bcc27e461bc37b8c987137"
+}

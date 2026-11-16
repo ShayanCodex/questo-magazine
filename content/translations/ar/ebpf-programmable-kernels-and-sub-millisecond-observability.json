@@ -11,8 +11,8 @@
     "observability",
     "systems-programming"
   ],
-  "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "أرفف خوادم المؤسسات عالية الكثافة مع مفاتيح توجيه شبكة الألياف الضوئية المضيئة",
+  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Operating system kernel packet trace data stream and low-level bytecode monitoring",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "إعادة تصميم حدود Linux Kernel"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "eBPF in-kernel verifier bytecode safety checks and JIT compilation terminal",
+      "caption": "In-kernel bytecode verifier: mathematically proving termination and memory safety before eBPF bytecode execution."
     },
     {
       "type": "ul",
       "items": [
-        "التحقق من السلامة: يفرض أداة التحقق داخل النواة بصرامة التنفيذ المحدود، وسلامة حدود الذاكرة، وضمانات إنهاء الحلقة قبل تحميل وقت التشغيل.",
-        "صفر حمل إضافي لتبديل السياق: يحدث تجميع القياس عن بعد داخل المخازن المؤقتة لذاكرة kernel (المخازن المؤقتة لحلقات eBPF)، مما يؤدي إلى التخلص من عمليات النسخ باهظة الثمن.",
-        "الشبكات على مستوى Kernel: تعمل خطافات XDP (eXpress Data Path) على تمكين إسقاط الحزم وتعديلها وتوجيهها مباشرة في طبقة برنامج تشغيل بطاقة واجهة الشبكة.",
-        "قياس الأمان العميق عن بعد: تلتقط نقاط التتبع الديناميكية مكالمات النظام وأحداث تخصيص الذاكرة وتغييرات دورة حياة المقبس بشكل غير مرئي في مساحة المستخدم."
+        "Safety Verification: The in-kernel verifier rigorously enforces bounded execution, memory boundary safety, and loop termination guarantees prior to runtime load.",
+        "Zero Context-Switch Overhead: Telemetry aggregation occurs within kernel memory buffers (eBPF ring buffers), eliminating expensive copy operations.",
+        "Kernel-Level Networking: XDP (eXpress Data Path) hooks enable packet drop, modification, and routing directly at the network interface card driver layer.",
+        "Deep Security Telemetry: Dynamic tracepoints capture syscalls, memory allocation events, and socket lifecycle changes invisibly to user space."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "مجلة هندسة أنظمة Kernel وهندسة الشبكات"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sub-millisecond packet latency telemetry graph tracking high-concurrency microservices",
+      "caption": "Zero-overhead observability: hooking kernel tracepoints directly without kernel module recompilation or context switch penalties."
+    },
+    {
       "type": "h2",
-      "text": "التتبع الموزع بدون حمل"
+      "text": "إعادة تصميم حدود Linux Kernel"
     },
     {
       "type": "p",
-      "text": "في البنى السحابية ذات الحجم الكبير، يفرض الوكلاء الجانبيون التقليديون ضرائب غير مستدامة على وحدة المعالجة المركزية والذاكرة. من خلال ربط برامج eBPF بالمخازن المؤقتة للمقبس الخام، يمكن فحص الآثار الموزعة ومصافحات TLS المشفرة دون استخدام التعليمات البرمجية المصدرية للتطبيق أو إدخال زمن الاستجابة في تدفقات طلبات العملاء."
+      "text": "تاريخيًا، يتطلب توسيع سلوك نظام التشغيل تأليف وحدات kernel معقدة أو تحمل عبء تبديل سياق مساحة المستخدم الكارثي. أدى ظهور مرشح Berkeley Packet Filter (eBPF) الممتد إلى تحويل نواة Linux إلى ركيزة قابلة للبرمجة تعتمد على الأحداث. من خلال تنفيذ كود ثانوي تم التحقق منه بشكل ثابت مباشرة داخل مسار تنفيذ kernel، يحقق المهندسون إمكانية ملاحظة ميكروثانية وتصفية حزم عالية الإنتاجية دون إعادة ترجمة أشجار kernel."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "برمجة الأنظمة والأجزاء الداخلية للشبكة منخفضة المستوى",
-      "caption": "الاستكشاف الفني العميق للتعامل مع حزم kernel، وتخطيط الذاكرة، والتحقق من الأنظمة."
+      "title": "Systems Programming and Low-Level Network Internals",
+      "caption": "Deep technical exploration of kernel packet handling, memory layout, and systems verification.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "مستقبل البنية التحتية السحابية الأصلية"
+      "text": "إعادة تصميم حدود Linux Kernel"
     },
     {
       "type": "p",
-      "text": "نظرًا لأن البنية التحتية السحابية تتطلب فترات استجابة أقل وعزلًا أمنيًا أكثر صرامة، فإن eBPF يحل بسرعة محل iptables التقليدية ووكلاء الشبكة وبرامج التوصيف المتطفلة. إنه يمثل اختراقًا هندسيًا مميزًا لمنصات الخوادم الحديثة."
+      "text": "تاريخيًا، يتطلب توسيع سلوك نظام التشغيل تأليف وحدات kernel معقدة أو تحمل عبء تبديل سياق مساحة المستخدم الكارثي. أدى ظهور مرشح Berkeley Packet Filter (eBPF) الممتد إلى تحويل نواة Linux إلى ركيزة قابلة للبرمجة تعتمد على الأحداث. من خلال تنفيذ كود ثانوي تم التحقق منه بشكل ثابت مباشرة داخل مسار تنفيذ kernel، يحقق المهندسون إمكانية ملاحظة ميكروثانية وتصفية حزم عالية الإنتاجية دون إعادة ترجمة أشجار kernel."
     }
   ],
-  "sourceHash": "c8cb9a06b93e15c7803d881c55826e6447ca3bb5"
+  "sourceHash": "94b0ce963b959c528805e8037307c848e8cbebf4"
 }

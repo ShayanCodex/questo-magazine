@@ -13,7 +13,7 @@
     "cryptography"
   ],
   "image": "/images/articles/cbdc-central-banking.jpg",
-  "imageAlt": "ڈیجیٹل مالیاتی لیکویڈیٹی ٹرمینل جو حقیقی وقت میں مرکزی بینک کے تصفیے کے ویکٹرز اور غیر ملکی کرنسی کے جوڑوں کو ظاہر کرتا ہے",
+  "imageAlt": "Digital financial liquidity terminal displaying real time central bank settlement vectors and foreign exchange pairs",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "سنٹرل بینک ڈیجیٹل کرنسیاں (CBDCs) خودمختار فیاٹ کرنسی کے ڈیجیٹل مظہر کی نمائندگی کرتی ہیں، جو جاری کرنے والے مانیٹری اتھارٹی کی براہ راست قانونی ذمہ داری بنتی ہے۔ مرکزی بینک کے ذخائر کو ڈسٹری بیوٹڈ لیجر ٹیکنالوجی (DLT) یا ہائی کنکرنسی سنٹرلائزڈ ریلیشنل لیجرز کے ساتھ جوڑ کر، CBDCs جوہری ادائیگی بمقابلہ ادائیگی (PvP) تصفیہ کو حقیقی وقت میں قابل بناتا ہے۔"
+      "text": "بین الاقوامی مالیاتی فن تعمیر 1944 بریٹن ووڈس کانفرنس کے بعد سے اپنے سب سے گہرے ڈھانچے کی تشکیل سے گزر رہا ہے۔ کئی دہائیوں سے، سرحد پار ادائیگیوں کا تصفیہ میراثی نامہ نگار بینکنگ نیٹ ورک پر انحصار کرتا رہا ہے: بکھرے ہوئے SWIFT پیغام رسانی کا ایک غیر موثر ویب، مختلف ٹائم زونز، اور دو طرفہ نوسٹرو/ووسٹرو اکاؤنٹس جو کثیر روزہ ہم منصبی تصفیہ کے خطرے اور زیادہ لین دین کے رگڑ کو متعارف کراتے ہیں۔"
     },
     {
       "type": "h2",
       "text": "1. آرکیٹیکچرل ٹیکسونومیز: تھوک بمقابلہ ریٹیل CBDCs"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Central Bank Digital Currencies."
+    },
+    {
       "type": "p",
-      "text": "مرکزی بینک کی ڈیجیٹل کرنسیاں بنیادی طور پر رسائی کے درجات اور تصفیہ کے دائرہ کار میں تقسیم ہوتی ہیں:"
+      "text": "بین الاقوامی مالیاتی فن تعمیر 1944 بریٹن ووڈس کانفرنس کے بعد سے اپنے سب سے گہرے ڈھانچے کی تشکیل سے گزر رہا ہے۔ کئی دہائیوں سے، سرحد پار ادائیگیوں کا تصفیہ میراثی نامہ نگار بینکنگ نیٹ ورک پر انحصار کرتا رہا ہے: بکھرے ہوئے SWIFT پیغام رسانی کا ایک غیر موثر ویب، مختلف ٹائم زونز، اور دو طرفہ نوسٹرو/ووسٹرو اکاؤنٹس جو کثیر روزہ ہم منصبی تصفیہ کے خطرے اور زیادہ لین دین کے رگڑ کو متعارف کراتے ہیں۔"
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "CBDC Functional Taxonomies:\n1. Wholesale CBDC (wCBDC):\n   - Participants: Restricted strictly to licensed financial institutions and central clearing counterparties.\n   - Purpose: Interbank clearing, cross-border gross settlement, and tokenized securities DvP (Delivery-versus-Payment).\n   - Technology: Permissioned distributed ledgers (Corda, Hyperledger Fabric, bespoke DLT stacks).\n\n2. Retail CBDC (rCBDC):\n   - Participants: General public, retail merchants, and non-bank consumers.\n   - Purpose: Digital cash replacement, offline transactions, and financial inclusion.\n   - Architecture: Two-tier intermediated model (central bank issues; private commercial banks distribute)."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Central Bank Digital Currencies - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Central Bank Digital Currencies."
+    },
+    {
       "type": "p",
-      "text": "اقتصادی استحکام کو برقرار رکھنے کے لیے دو سطحی درمیانی ڈھانچہ اہم ہے۔ مرکزی بینک میں براہ راست خوردہ اکاؤنٹس تجارتی بینکنگ کے نظام کو ختم کر دیں گے، مالیاتی بحرانوں کے دوران ڈپازٹ کی پرواز کو متحرک کر دیں گے اور نجی شعبے میں کریڈٹ تخلیق کو کمزور کر دیں گے۔"
+      "text": "بین الاقوامی مالیاتی فن تعمیر 1944 بریٹن ووڈس کانفرنس کے بعد سے اپنے سب سے گہرے ڈھانچے کی تشکیل سے گزر رہا ہے۔ کئی دہائیوں سے، سرحد پار ادائیگیوں کا تصفیہ میراثی نامہ نگار بینکنگ نیٹ ورک پر انحصار کرتا رہا ہے: بکھرے ہوئے SWIFT پیغام رسانی کا ایک غیر موثر ویب، مختلف ٹائم زونز، اور دو طرفہ نوسٹرو/ووسٹرو اکاؤنٹس جو کثیر روزہ ہم منصبی تصفیہ کے خطرے اور زیادہ لین دین کے رگڑ کو متعارف کراتے ہیں۔"
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. کراس بارڈر سیٹلمنٹ میکانکس: پروجیکٹ mBridge"
+      "text": "1. آرکیٹیکچرل ٹیکسونومیز: تھوک بمقابلہ ریٹیل CBDCs"
     },
     {
       "type": "p",
-      "text": "سب سے زیادہ پختہ کثیر جہتی ہول سیل پلیٹ فارم پروجیکٹ mBridge ہے، جسے بینک فار انٹرنیشنل سیٹلمنٹس (BIS) انوویشن ہب، HongAiland اور مرکزی بینک، HUNGAN بینک کے تعاون سے تیار کیا گیا ہے۔"
+      "text": "بین الاقوامی مالیاتی فن تعمیر 1944 بریٹن ووڈس کانفرنس کے بعد سے اپنے سب سے گہرے ڈھانچے کی تشکیل سے گزر رہا ہے۔ کئی دہائیوں سے، سرحد پار ادائیگیوں کا تصفیہ میراثی نامہ نگار بینکنگ نیٹ ورک پر انحصار کرتا رہا ہے: بکھرے ہوئے SWIFT پیغام رسانی کا ایک غیر موثر ویب، مختلف ٹائم زونز، اور دو طرفہ نوسٹرو/ووسٹرو اکاؤنٹس جو کثیر روزہ ہم منصبی تصفیہ کے خطرے اور زیادہ لین دین کے رگڑ کو متعارف کراتے ہیں۔"
     },
     {
       "type": "ul",
       "items": [
-        "سنگل پلیٹ فارم اٹامک سیٹلمنٹ: متعلقہ بینکنگ چینز کو متحد DLT لیجر سے بدل دیتا ہے جہاں لین دین دنوں کے بجائے سیکنڈوں میں ایٹمی طور پر صاف ہو جاتا ہے۔",
-        "مقامی کرنسی کے براہ راست جوڑے: غیر ڈالر کے کرنسی کے جوڑوں کے درمیان براہ راست غیر ملکی زرمبادلہ کے تصفیے کی سہولت فراہم کرتا ہے، درمیانی گاڑیوں کی کرنسیوں پر انحصار کو کم کرتا ہے۔",
-        "ڈیزائن کے لحاظ سے ریگولیٹری تعمیل: پروٹوکول کی سطح پر سمارٹ معاہدوں کے اندر خودکار دائرہ اختیاری پابندیوں کی اسکریننگ اور AML ٹرانزیکشن کی نگرانی کو سرایت کرتا ہے۔"
+        "Single-Platform Atomic Settlement: Replaces correspondent banking chains with a unified DLT ledger where transactions clear atomically in seconds rather than days.",
+        "Local Currency Direct Pairs: Facilitates direct foreign exchange settlement between non-dollar currency pairs, mitigating reliance on intermediate vehicle currencies.",
+        "Regulatory Compliance by Design: Embeds automated jurisdictional sanctions screening and AML transaction monitoring directly within smart contracts at the protocol level."
       ]
     },
     {
       "type": "h2",
-      "text": "3. ویڈیو ماسٹر کلاس: سنٹرل بینک منی، لیکویڈیٹی اور اکنامک سائیکل"
+      "text": "1. آرکیٹیکچرل ٹیکسونومیز: تھوک بمقابلہ ریٹیل CBDCs"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "اقتصادی مشینیں کیسے کام کرتی ہیں، سنٹرل بینک کی لیکویڈیٹی اور کریڈٹ سائیکلز",
-      "caption": "مرکزی بینکنگ، خودمختار قرضوں کی تخلیق، رقم کی رفتار، اور اقتصادی کریڈٹ سائیکل پر رے ڈالیو کا ماسٹر کلاس۔"
+      "title": "How Economic Machines Work, Central Bank Liquidity & Credit Cycles",
+      "caption": "Ray Dalio's masterclass on central banking, sovereign debt creation, money velocity, and economic credit cycles."
     },
     {
       "type": "h2",
-      "text": "4. پرائیویسی انجینئرنگ: زیرو نالج پروف اور ٹائرڈ گمنامی"
+      "text": "1. آرکیٹیکچرل ٹیکسونومیز: تھوک بمقابلہ ریٹیل CBDCs"
     },
     {
       "type": "p",
-      "text": "خوردہ CBDCs کے ارد گرد بنیادی عوامی تشویش مالی رازداری کا کٹاؤ ہے۔ فزیکل بینک نوٹوں کے برعکس، ڈیجیٹل لین دین نظریاتی طور پر انمٹ نگرانی کا نشان چھوڑ سکتا ہے۔"
+      "text": "بین الاقوامی مالیاتی فن تعمیر 1944 بریٹن ووڈس کانفرنس کے بعد سے اپنے سب سے گہرے ڈھانچے کی تشکیل سے گزر رہا ہے۔ کئی دہائیوں سے، سرحد پار ادائیگیوں کا تصفیہ میراثی نامہ نگار بینکنگ نیٹ ورک پر انحصار کرتا رہا ہے: بکھرے ہوئے SWIFT پیغام رسانی کا ایک غیر موثر ویب، مختلف ٹائم زونز، اور دو طرفہ نوسٹرو/ووسٹرو اکاؤنٹس جو کثیر روزہ ہم منصبی تصفیہ کے خطرے اور زیادہ لین دین کے رگڑ کو متعارف کراتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "جدید تعمیراتی معیار اس کو کرپٹوگرافک زیرو نالج پروف (zk-SNARKs) اور ٹائرڈ گمنامی پروٹوکول کے ذریعے حل کرتے ہیں۔ کم قیمت والے گھریلو لین دین (€500 یا $1,000 سے کم) مکمل طور پر گمنام ہوتے ہیں، ٹوکن کی درستگی کی توثیق کرتے ہیں اور مرکزی بینک لیجرز یا تجارتی بیچوانوں کو صارف کی شناخت ظاہر کیے بغیر حسابی طور پر توازن کی کفایت کرتے ہیں۔"
+      "text": "بین الاقوامی مالیاتی فن تعمیر 1944 بریٹن ووڈس کانفرنس کے بعد سے اپنے سب سے گہرے ڈھانچے کی تشکیل سے گزر رہا ہے۔ کئی دہائیوں سے، سرحد پار ادائیگیوں کا تصفیہ میراثی نامہ نگار بینکنگ نیٹ ورک پر انحصار کرتا رہا ہے: بکھرے ہوئے SWIFT پیغام رسانی کا ایک غیر موثر ویب، مختلف ٹائم زونز، اور دو طرفہ نوسٹرو/ووسٹرو اکاؤنٹس جو کثیر روزہ ہم منصبی تصفیہ کے خطرے اور زیادہ لین دین کے رگڑ کو متعارف کراتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "5. میکرو اکنامک اور سنٹرل بینکنگ ٹیک ویز"
+      "text": "1. آرکیٹیکچرل ٹیکسونومیز: تھوک بمقابلہ ریٹیل CBDCs"
     },
     {
       "type": "ul",
       "items": [
-        "ہولڈنگ کیپس اور زیرو-انٹرسٹ ٹائر: ریٹیل بٹوے پر زیادہ سے زیادہ انفرادی ہولڈنگ کی حدیں لگائیں تاکہ بینک رن کے دوران کمرشل بینکوں سے اچانک نظامی ڈپازٹ کو روکا جا سکے۔",
-        "دوہری آف لائن فعالیت: اسمارٹ فونز اور سمارٹ کارڈز میں ہارڈویئر محفوظ عناصر (eSE) کو ایمبیڈ کریں تاکہ پاور گرڈ یا نیٹ ورک کی بندش کے دوران آف لائن پیئر ٹو پیئر ادائیگیوں کو قابل بنایا جاسکے۔",
-        "انٹرآپریبلٹی گیٹ ویز: اس بات کو یقینی بنائیں کہ خودمختار CBDC لیجرز معیاری ISO 20022 APIs کو اگلی نسل کے ٹوکنائزڈ مالیاتی انفراسٹرکچر کے ساتھ میراثی RTGS سسٹمز کو بروئے کار لاتے ہیں۔"
+        "Holding Caps & Zero-Interest Tiers: Impose maximum individual holding limits on retail wallets to prevent sudden systemic deposit drains from commercial banks during bank runs.",
+        "Dual Offline Functionality: Embed hardware secure elements (eSE) in smartphones and smartcards to enable offline peer-to-peer payments during power grid or network outages.",
+        "Interoperability Gateways: Ensure sovereign CBDC ledgers expose standardized ISO 20022 APIs to bridge legacy RTGS systems with next-generation tokenized financial infrastructure."
       ]
     }
   ],
-  "sourceHash": "b00bf0fc370f2680894bb4b9c53540eff0dcdbdc"
+  "sourceHash": "090854e2bfe104a37b9e6801f28f10536641ba09"
 }

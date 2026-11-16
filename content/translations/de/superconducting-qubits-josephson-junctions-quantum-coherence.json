@@ -13,7 +13,7 @@
     "optics"
   ],
   "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "Hochreines Quantenphysik-Forschungslabor mit kryogener Verdünnungskälteanlage",
+  "imageAlt": "Ultra-clean quantum physics research laboratory with cryogenic dilution refrigeration apparatus",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Im Gegensatz zu natürlichen gefangenen Ionen oder neutralen Atomen sind supraleitende Qubits makroskopische elektronische Schaltkreise, die aus dünnen Schichten aus reinem Aluminium oder Niob hergestellt werden. Beim Abkühlen unter ihre kritischen supraleitenden Übergangstemperaturen ($T_c \\ca. 1,2$ K) verschwindet der elektrische Widerstand vollständig und ermöglicht die Verdichtung von Milliarden gepaarter Elektronen – Cooper-Paare – zu einer einzigen makroskopischen Quantenwellenfunktion."
+      "text": "Quantenberechnungsvorteile stellen das theoretische Versprechen dar, mathematisch schwierige Probleme zu lösen – molekulare Simulation, Post-Quanten-Kryptanalyse und komplexe Optimierung –, die auf klassischen CMOS-Supercomputern Millionen von Jahren erfordern würden. Unter den konkurrierenden physikalischen Implementierungen sind supraleitende Schaltkreise die führende Modalität, bei der künstliche Atome mithilfe standardmäßiger Halbleiterlithographie auf planare Silizium- und Saphir-Mikrochips skaliert werden."
     },
     {
       "type": "h2",
       "text": "1. Die Transmon-Architektur und die nichtlineare Josephson-Induktivität"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Superconducting Qubits & Coherence - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Superconducting Qubits & Coherence."
+    },
+    {
       "type": "p",
-      "text": "Ein normaler harmonischer LC-Oszillator kann nicht als Qubit dienen, da seine Energieniveaus äquidistant sind ($\\hbar\\omega$). Jeder resonante Mikrowellenimpuls, der den Grundzustand $|0\\rangle$ in $|1\\rangle$ anregen soll, führt gleichzeitig zu unerwünschten Übergängen in $|2\\rangle$ und höhere Mannigfaltigkeitszustände. Um ein adressierbares Zwei-Ebenen-Quantensystem zu isolieren, führen Ingenieure einen anharmonischen nichtlinearen Induktor ein: den Josephson-Kontakt."
+      "text": "Quantenberechnungsvorteile stellen das theoretische Versprechen dar, mathematisch schwierige Probleme zu lösen – molekulare Simulation, Post-Quanten-Kryptanalyse und komplexe Optimierung –, die auf klassischen CMOS-Supercomputern Millionen von Jahren erfordern würden. Unter den konkurrierenden physikalischen Implementierungen sind supraleitende Schaltkreise die führende Modalität, bei der künstliche Atome mithilfe standardmäßiger Halbleiterlithographie auf planare Silizium- und Saphir-Mikrochips skaliert werden."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Transmon Hamiltonian Formulation:\nĤ = 4E_C · (n̂ - n_g)² - E_J · cos(φ̂)\n\nAnharmonic Energy Level Separation:\nω_01 = √(8 · E_J · E_C) / ℏ - E_C\nω_12 = ω_01 - E_C\nAnharmonicity α = ω_12 - ω_01 = -E_C\n\nWhere:\n- E_C: Charging energy of the shunt capacitor (e² / 2C)\n- E_J: Josephson tunneling energy (I_c · Φ₀ / 2π)\n- Transmon Regime Condition: E_J / E_C ≫ 50 (typically 50-100)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Superconducting Qubits & Coherence - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Superconducting Qubits & Coherence."
+    },
+    {
       "type": "p",
-      "text": "Durch das Hinzufügen eines übergroßen Shunt-Kondensators arbeitet das Transmon im hohen $E_J / E_C$-Bereich und unterdrückt die Ladungsrauschempfindlichkeit exponentiell um mehrere Größenordnungen, während gleichzeitig eine ausreichende Anharmonizität ($\\alpha \\ca. -200$ bis $-300$ MHz) erhalten bleibt, um das Qubit mit Nanosekunden-Mikrowellenimpulsen zu manipulieren."
+      "text": "Quantenberechnungsvorteile stellen das theoretische Versprechen dar, mathematisch schwierige Probleme zu lösen – molekulare Simulation, Post-Quanten-Kryptanalyse und komplexe Optimierung –, die auf klassischen CMOS-Supercomputern Millionen von Jahren erfordern würden. Unter den konkurrierenden physikalischen Implementierungen sind supraleitende Schaltkreise die führende Modalität, bei der künstliche Atome mithilfe standardmäßiger Halbleiterlithographie auf planare Silizium- und Saphir-Mikrochips skaliert werden."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Kryogene Verdünnungskühlung: Betrieb bei 15 Millikelvin"
+      "text": "1. Die Transmon-Architektur und die nichtlineare Josephson-Induktivität"
     },
     {
       "type": "p",
-      "text": "Um zu verhindern, dass thermische Umgebungsphononen ($k_B T$) den Qubit-Zustand zufällig stören, müssen supraleitende Prozessoren auf 15 Millikelvin (-273,135 °C) gekühlt werden, kälter als der tiefe interstellare Raum. Diese thermodynamische Leistung wird durch Helium-3/Helium-4-Verdünnungskühlschränke mit geschlossenem Kreislauf ausgeführt."
+      "text": "Quantenberechnungsvorteile stellen das theoretische Versprechen dar, mathematisch schwierige Probleme zu lösen – molekulare Simulation, Post-Quanten-Kryptanalyse und komplexe Optimierung –, die auf klassischen CMOS-Supercomputern Millionen von Jahren erfordern würden. Unter den konkurrierenden physikalischen Implementierungen sind supraleitende Schaltkreise die führende Modalität, bei der künstliche Atome mithilfe standardmäßiger Halbleiterlithographie auf planare Silizium- und Saphir-Mikrochips skaliert werden."
     },
     {
       "type": "ul",
       "items": [
-        "Phasentrennungsgrenze: Unterhalb von 870 mK trennen sich flüssige ³He- und ⁴He-Gemische in eine konzentrierte Phase und eine verdünnte Phase.",
-        "Endotherme Quantenverdampfung: Das Pumpen von ³He-Atomen über diese Phasengrenze absorbiert latente Wärme und entzieht der Mischkammerstufe kontinuierlich Wärmeenergie.",
-        "Kryo-Dämpfungsleitungen: Mikrowellen-Koaxial-Steuerleitungen sind in jeder thermischen Stufe mit 20-dB- und 30-dB-Dämpfungsgliedern ausgestattet, um das thermische Schwarzkörperrauschen bei Raumtemperatur zu entfernen, bevor es den Chip erreicht."
+        "Phase Separation Boundary: Below 870 mK, liquid ³He and ⁴He mixtures separate into a concentrated phase and a dilute phase.",
+        "Endothermic Quantum Evaporation: Pumping ³He atoms across this phase boundary absorbs latent heat, continuously extracting thermal energy from the mixing chamber stage.",
+        "Cryogenic Attenuation Lines: Microwave coaxial control lines are fitted with 20dB and 30dB attenuators at each thermal stage to strip room-temperature blackbody thermal noise before it reaches the chip."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video-Meisterkurs: Resonanz, Akustikphysik und Quantenkohärenz"
+      "text": "1. Die Transmon-Architektur und die nichtlineare Josephson-Induktivität"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "Akustische Wellenphysik, Resonanz und supraleitende Oszillatoren",
-      "caption": "Experimenteller Vortrag über Resonanzharmonische, nichtlineare Phasenoszillatoren und akustisch-elektromagnetische Kopplung."
+      "title": "Acoustic Wave Physics, Resonance & Superconducting Oscillators",
+      "caption": "Experimental lecture exploring resonance harmonics, non-linear phase oscillators, and acoustic-electromagnetic coupling."
     },
     {
       "type": "h2",
-      "text": "4. Dekohärenzmechanismen: T1-Relaxation und T2-Dephasierung"
+      "text": "1. Die Transmon-Architektur und die nichtlineare Josephson-Induktivität"
     },
     {
       "type": "p",
-      "text": "Die Rechenlebensdauer eines Qubits wird durch zwei physikalische Dekohärenzmetriken eingeschränkt: Energierelaxationszeit ($T_1$) und Phasenkohärenzzeit ($T_2$). Dielektrische Verluste an Substrat-Metall-Grenzflächen und parasitäre Defekte des Zwei-Ebenen-Systems (TLS) in amorphen Oxidschichten zerstreuen gespeicherte elektromagnetische Energie und begrenzen typische Kohärenzfenster auf 100–300 Mikrosekunden."
+      "text": "Quantenberechnungsvorteile stellen das theoretische Versprechen dar, mathematisch schwierige Probleme zu lösen – molekulare Simulation, Post-Quanten-Kryptanalyse und komplexe Optimierung –, die auf klassischen CMOS-Supercomputern Millionen von Jahren erfordern würden. Unter den konkurrierenden physikalischen Implementierungen sind supraleitende Schaltkreise die führende Modalität, bei der künstliche Atome mithilfe standardmäßiger Halbleiterlithographie auf planare Silizium- und Saphir-Mikrochips skaliert werden."
     },
     {
       "type": "p",
-      "text": "Um die Kluft zwischen NISQ-Systemen (Noisy Intermediate Scale Quantum) und fehlertolerantem Quantencomputing zu überbrücken, ist eine Quantenfehlerkorrektur erforderlich. Die Oberflächencode-Topologie kodiert ein geschütztes logisches Qubit über Dutzende von physikalischen Daten und Ancilla-Qubits, die in einem zweidimensionalen quadratischen Gitter angeordnet sind, und erkennt Bit-Flip- und Phasen-Flip-Syndrome über wiederholte Multi-Qubit-Stabilisatormessungen."
+      "text": "Quantenberechnungsvorteile stellen das theoretische Versprechen dar, mathematisch schwierige Probleme zu lösen – molekulare Simulation, Post-Quanten-Kryptanalyse und komplexe Optimierung –, die auf klassischen CMOS-Supercomputern Millionen von Jahren erfordern würden. Unter den konkurrierenden physikalischen Implementierungen sind supraleitende Schaltkreise die führende Modalität, bei der künstliche Atome mithilfe standardmäßiger Halbleiterlithographie auf planare Silizium- und Saphir-Mikrochips skaliert werden."
     },
     {
       "type": "h2",
-      "text": "5. Erkenntnisse aus der Quantentechnik"
+      "text": "1. Die Transmon-Architektur und die nichtlineare Josephson-Induktivität"
     },
     {
       "type": "ul",
       "items": [
-        "Oberflächenvorbereitung: Das chemische Polieren des Substrats und die atomare Grabenbildung unter Josephson-Übergängen reduzieren die dielektrische Verlustleistung des Zweiebenensystems um über 50 %.",
-        "Magnetische Abschirmung: Umschließen Sie den Kryostaten in mehrschichtigen hochpermeablen Mu-Metall- und supraleitenden Bleibehältern, um Streumagnetflusslinien der Erde abzuwehren.",
-        "Parametrische Verstärkung: Nutzen Sie parametrische Wanderwellenverstärker (TWPAs) im 4K-Stadium, um eine quantenbegrenzte Auslesesignalverstärkung ohne Rückwirkungsrauschen zu erreichen."
+        "Surface Preparation: Substrate chemical polishing and atomic trenching under Josephson junctions reduce two-level system dielectric dissipation by over 50%.",
+        "Magnetic Shielding: Enclose the cryostat in multilayer high-permeability Mu-metal and superconducting lead canisters to reject stray Earth magnetic flux lines.",
+        "Parametric Amplification: Utilize Traveling Wave Parametric Amplifiers (TWPAs) at the 4K stage to achieve quantum-limited readout signal amplification without backaction noise."
       ]
     }
   ],
-  "sourceHash": "fb1d6fcc5e53acb3c254dc60b5f106c56d83f79a"
+  "sourceHash": "615eef5421f18d7b3090ffa5b42b8a64327fed07"
 }

@@ -12,8 +12,8 @@
     "minimalism",
     "typography"
   ],
-  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Architecture géométrique austère en noir et blanc représentant l'esthétique numérique brutaliste",
+  "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Stark black and white geometric architecture representing brutalist digital aesthetics",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "Nommé en l'honneur de la philosophie architecturale du milieu du siècle qui célébrait le béton à granulats apparents et l'honnêteté structurelle brute, la conception Web brutaliste supprime le placage décoratif superficiel. Il traite le navigateur non pas comme une fausse brochure imprimée sur papier glacé, mais comme un terminal numérique sans vergogne composé d'une sémantique HTML brute, d'une typographie austère et d'une tension spatiale sans compromis."
+      "text": "L'Internet commercial contemporain se noie dans les dégradés pastel, les coins arrondis et les micro-interactions stériles. Chaque site Web de startup semble avoir été généré à partir du même système de conception d'entreprise, assainissant le réseau de pointe, de tension et de voix artistique. En réponse à cette fadeur étouffante, un puissant contre-mouvement a émergé : le brutalisme numérique."
     },
     {
       "type": "h2",
       "text": "L'éthique de l'honnêteté architecturale sur le Web"
     },
     {
-      "type": "p",
-      "text": "Dans l’architecture physique brutaliste, les lignes de coffrage et les trous d’attache sont intentionnellement visibles pour exposer la manière dont le bâtiment a été coulé. Dans le brutalisme numérique, les mécanismes sous-jacents du balisage Web (liens, bordures, formes de lettres monospaces par défaut et contrastes de couleurs du système) sont célébrés plutôt que dissimulés sous des mégaoctets de filtres de flou CSS et de lourds shaders de toile JavaScript."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Renaissance of Brutalist Web Design - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Renaissance of Brutalist Web Design."
     },
     {
       "type": "p",
-      "text": "Cette esthétique est profondément politique. En rejetant le langage visuel du capitalisme de surveillance du capital-risque, les sites Web brutalistes annoncent que leur contenu n’est pas conçu pour vous piéger dans un entonnoir marketing. Le texte est présenté avec une clarté inébranlable : lisez-le, contemplez-le ou partez."
+      "text": "L'Internet commercial contemporain se noie dans les dégradés pastel, les coins arrondis et les micro-interactions stériles. Chaque site Web de startup semble avoir été généré à partir du même système de conception d'entreprise, assainissant le réseau de pointe, de tension et de voix artistique. En réponse à cette fadeur étouffante, un puissant contre-mouvement a émergé : le brutalisme numérique."
+    },
+    {
+      "type": "p",
+      "text": "L'Internet commercial contemporain se noie dans les dégradés pastel, les coins arrondis et les micro-interactions stériles. Chaque site Web de startup semble avoir été généré à partir du même système de conception d'entreprise, assainissant le réseau de pointe, de tension et de voix artistique. En réponse à cette fadeur étouffante, un puissant contre-mouvement a émergé : le brutalisme numérique."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Renaissance of Brutalist Web Design - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Renaissance of Brutalist Web Design."
     },
     {
       "type": "quote",
@@ -42,11 +54,11 @@
     },
     {
       "type": "h2",
-      "text": "Hiérarchie typographique et tension à contraste élevé"
+      "text": "L'éthique de l'honnêteté architecturale sur le Web"
     },
     {
       "type": "p",
-      "text": "Plutôt que de s'appuyer sur de doux tons pastel gris sur blanc qui ne respectent pas les normes d'accessibilité WCAG, la typographie brutaliste adopte un contraste chromatique absolu : noir de carbone profond (#000000) contre blanc osseux (#FFFFFF). Les titres sont dotés d'un affichage sans empattement massif et étroitement suivi qui exige un calcul visuel immédiat."
+      "text": "L'Internet commercial contemporain se noie dans les dégradés pastel, les coins arrondis et les micro-interactions stériles. Chaque site Web de startup semble avoir été généré à partir du même système de conception d'entreprise, assainissant le réseau de pointe, de tension et de voix artistique. En réponse à cette fadeur étouffante, un puissant contre-mouvement a émergé : le brutalisme numérique."
     },
     {
       "type": "code",
@@ -60,24 +72,24 @@
     {
       "type": "ul",
       "items": [
-        "Palettes noir et blanc sans vergogne : donner la priorité à des taux de contraste de 100 % qui maximisent la lisibilité en plein soleil et sur les écrans mobiles économiques.",
-        "Architecture de bordure monolithique : utilisation de règles noires unies de 1 px ou 2 px pour délimiter des sections au lieu d'ombres de boîte floues.",
-        "Zéro animation superflue : élimination du scroll-jacking, des dérives de parallaxe et des fondus enchaînés retardés qui gaspillent les cycles du processeur et déclenchent le mal des transports.",
-        "Chargement des pages en moins de 100 millisecondes : étant donné que les styles sont légers et que les dépendances sont inexistantes, les pages brutalistes s'affichent presque instantanément."
+        "Unapologetic black-and-white palettes: Prioritizing 100% contrast ratios that maximize legibility under bright sunlight and across budget mobile screens.",
+        "Monolithic border architecture: Using stark 1px or 2px solid black rules to delineate sections instead of fuzzy box-shadows.",
+        "Zero superfluous animation: Eliminating scroll-jacking, parallax drifts, and delayed fade-ins that waste CPU cycles and trigger motion sickness.",
+        "Sub-100 millisecond page loads: Because styles are lightweight and dependencies are nonexistent, brutalist pages render almost instantaneously."
       ]
     },
     {
       "type": "h2",
-      "text": "La longévité des médias numériques tectoniques"
+      "text": "L'éthique de l'honnêteté architecturale sur le Web"
     },
     {
       "type": "p",
-      "text": "Les tendances en matière de conception Web vont et viennent avec l'inconstance saisonnière : le neumorphisme, le skeuomorphisme, le glassmorphisme et le flat design ont tous profité de brefs moments au soleil avant de devenir des reliques embarrassantes. Pourtant, une typographie propre, honnête et brutaliste ancrée au HTML sémantique n’expire jamais. Il reste aussi lisible et convaincant aujourd’hui qu’il l’était aux premiers jours des serveurs du CERN de Tim Berners-Lee."
+      "text": "L'Internet commercial contemporain se noie dans les dégradés pastel, les coins arrondis et les micro-interactions stériles. Chaque site Web de startup semble avoir été généré à partir du même système de conception d'entreprise, assainissant le réseau de pointe, de tension et de voix artistique. En réponse à cette fadeur étouffante, un puissant contre-mouvement a émergé : le brutalisme numérique."
     },
     {
       "type": "p",
-      "text": "En adoptant une esthétique brutaliste, Questo Magazine rejette les éphémères éphémères des tendances du design de la Silicon Valley et rétablit une norme permanente et sans compromis pour l'édition numérique internationale."
+      "text": "L'Internet commercial contemporain se noie dans les dégradés pastel, les coins arrondis et les micro-interactions stériles. Chaque site Web de startup semble avoir été généré à partir du même système de conception d'entreprise, assainissant le réseau de pointe, de tension et de voix artistique. En réponse à cette fadeur étouffante, un puissant contre-mouvement a émergé : le brutalisme numérique."
     }
   ],
-  "sourceHash": "8ff67d50b1f1c4907665fbcc6f69ef3d07b09fde"
+  "sourceHash": "aa852fc6cf4096a5a2271b87c3b81a23bf1a0f35"
 }

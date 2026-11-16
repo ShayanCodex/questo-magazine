@@ -11,8 +11,8 @@
     "sports-science",
     "biomechanics"
   ],
-  "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Luftperspektive architektonischer Fußballfeldgitterlinien und struktureller Spielzonen",
+  "image": "/images/articles/football-pressing-geometry.jpg",
+  "imageAlt": "Aerial perspective of architectural football pitch grid lines and structural playing zones",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "Die strukturelle Grammatik des Positionsspiels basiert auf der Unterteilung des Standardspielfelds von 105 x 68 Metern in fünf vertikale Korridore: den linken Flügel, den linken Halbraum, die Mittelzone, den rechten Halbraum und den rechten Flügel. Durch die horizontale Diskretisierung wird der Spielbereich weiter in defensive, mittlere und angreifende Drittel halbiert, wodurch achtzehn ausgewiesene räumliche Zonen entstehen."
+      "text": "In den letzten zwei Jahrzehnten wurde der Elitefußball europäischer Verbände einer strengen mathematischen und strukturellen Rationalisierung unterzogen. Das historische Vertrauen auf intuitive individuelle Brillanz wurde der systemischen räumlichen Geometrie untergeordnet. Elite-Taktikmanager, die durch Dutch Total Football konzipiert und in zeitgenössisches Positionsspiel (Juego de Posición) verfeinert wurden, betrachten das Spielfeld nicht als fließende Leinwand der Improvisation, sondern als strenges Koordinatengitter, in dem die räumliche Positionierung direkt numerische, positionelle und qualitative Überlegenheiten vorgibt."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Geometry of Modern Pressing - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Geometry of Modern Pressing."
     },
     {
       "type": "p",
-      "text": "Das grundlegende Axiom des Positionsspiels schreibt vor, dass nicht mehr als zwei Spieler gleichzeitig dieselbe vertikale Linie und nicht mehr als drei Spieler gleichzeitig dasselbe horizontale Band besetzen dürfen. Diese strenge Strukturdisziplin erzeugt natürliche dreieckige und rautenförmige Passwinkel und garantiert so eine kontinuierliche diagonale Ballbewegung bei gleichzeitiger Beibehaltung einer ausgewogenen Tonhöhenverteilung."
+      "text": "In den letzten zwei Jahrzehnten wurde der Elitefußball europäischer Verbände einer strengen mathematischen und strukturellen Rationalisierung unterzogen. Das historische Vertrauen auf intuitive individuelle Brillanz wurde der systemischen räumlichen Geometrie untergeordnet. Elite-Taktikmanager, die durch Dutch Total Football konzipiert und in zeitgenössisches Positionsspiel (Juego de Posición) verfeinert wurden, betrachten das Spielfeld nicht als fließende Leinwand der Improvisation, sondern als strenges Koordinatengitter, in dem die räumliche Positionierung direkt numerische, positionelle und qualitative Überlegenheiten vorgibt."
     },
     {
       "type": "quote",
@@ -36,55 +42,61 @@
       "cite": "Liam O’Connor, Hochleistungssport-Biomechaniker"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Geometry of Modern Pressing - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Geometry of Modern Pressing."
+    },
+    {
       "type": "h2",
-      "text": "2. Die Anatomie der Ruheverteidigung: 3-2- und 2-3-Formationen"
+      "text": "1. Diskretisierung des Spielfelds: Die fünf vertikalen Korridore"
     },
     {
       "type": "p",
-      "text": "Der primäre Indikator für die anhaltende Verteidigungsstärke eines Eliteteams ist nicht, wie es innerhalb seines eigenen Strafraums verteidigt, sondern wie es seine besitzlosen Spieler während aktiver Angriffsphasen organisiert – eine Disziplin, die als Restverteidigung bezeichnet wird."
+      "text": "In den letzten zwei Jahrzehnten wurde der Elitefußball europäischer Verbände einer strengen mathematischen und strukturellen Rationalisierung unterzogen. Das historische Vertrauen auf intuitive individuelle Brillanz wurde der systemischen räumlichen Geometrie untergeordnet. Elite-Taktikmanager, die durch Dutch Total Football konzipiert und in zeitgenössisches Positionsspiel (Juego de Posición) verfeinert wurden, betrachten das Spielfeld nicht als fließende Leinwand der Improvisation, sondern als strenges Koordinatengitter, in dem die räumliche Positionierung direkt numerische, positionelle und qualitative Überlegenheiten vorgibt."
     },
     {
       "type": "ul",
       "items": [
-        "Die 3-2-Basis: Drei Innenverteidiger (oder zwei Innenverteidiger, flankiert von einem eingezogenen Außenverteidiger) bilden eine schützende Basis, die durch einen doppelten Drehpunkt geschützt ist. Diese Konfiguration sperrt beide Halbraum-Gegenangriffskanäle und behält gleichzeitig die zentrale Kompaktheit bei.",
-        "Die 2-3-Inversion: Zwei physische Innenverteidiger agieren hinter einem umgekehrten Mittelfeldtrio, das darauf ausgelegt ist, lose zweite Bälle abzufangen und bei Ballverlusten sofortiges Gegenpressing auszuführen.",
-        "Annäherungsbeschränkung: Rest-Verteidigungsspieler müssen sich innerhalb von acht bis zwölf Metern Entfernung zum Ballträger positionieren, um den Übergangsraum zu verkleinern, sobald der Ballbesitz im Mikrosekundenbereich kassiert wird."
+        "The 3-2 Base: Three central defenders (or two center-backs flanked by a tucked-in full-back) form a protective base, shielded by a double pivot. This configuration locks down both half-space counter-attacking channels while maintaining central compactness.",
+        "The 2-3 Inversion: Two physical center-backs operate behind an inverted midfield trio, designed to intercept loose second balls and execute immediate counterpressing upon turnover.",
+        "Proximity Constraint: Rest-defense players must position themselves within eight to twelve meters of the ball carrier to compress transition space the microsecond possession is conceded."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Taktische Videoanalyse: Positionsspiel und Pressing-Auslöser"
+      "text": "1. Diskretisierung des Spielfelds: Die fünf vertikalen Korridore"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dNtRo9LGiUU",
-      "title": "Taktische Analyse des modernen Pressings und Positionsspiels",
-      "caption": "Detaillierte Videoanalyse zur Analyse von Pressingwinkeln, Körperformorientierung und Konterübergangsphasen."
+      "title": "Tactical Analysis of Modern Pressing and Positional Play",
+      "caption": "In-depth video analysis analyzing pressing angles, body shape orientation, and counter-transition phases."
     },
     {
       "type": "h2",
-      "text": "4. Gegenpressing-Auslöser und die Fünf-Sekunden-Regel"
+      "text": "1. Diskretisierung des Spielfelds: Die fünf vertikalen Korridore"
     },
     {
       "type": "p",
-      "text": "Wenn der Ball im letzten Drittel verloren geht, zieht sich ein Elite-Pressing-Kollektiv nicht in einen passiven Mittelblock zurück. Stattdessen nutzen sie die Übergangsverletzlichkeit des Gegners aus. Der Spieler, der gerade den Ball abgefangen oder zurückerobert hat, ist körperlich unausgeglichen, seine Sicht ist zu den Füßen hin eingeschränkt und es fehlt ihm an räumlicher Orientierung."
+      "text": "In den letzten zwei Jahrzehnten wurde der Elitefußball europäischer Verbände einer strengen mathematischen und strukturellen Rationalisierung unterzogen. Das historische Vertrauen auf intuitive individuelle Brillanz wurde der systemischen räumlichen Geometrie untergeordnet. Elite-Taktikmanager, die durch Dutch Total Football konzipiert und in zeitgenössisches Positionsspiel (Juego de Posición) verfeinert wurden, betrachten das Spielfeld nicht als fließende Leinwand der Improvisation, sondern als strenges Koordinatengitter, in dem die räumliche Positionierung direkt numerische, positionelle und qualitative Überlegenheiten vorgibt."
     },
     {
       "type": "p",
-      "text": "Moderne Presssysteme setzen eine sofortige aggressive Kompression innerhalb eines strikten Zeitfensters von drei bis fünf Sekunden ein. Die beiden Verteidiger, die am nächsten sind, führen einen parabolischen Schließwinkel aus, der die Passwege zum dominanten Fuß des Ballträgers abschneidet, während die Läufer des dritten Mannes sich auf benachbarte Passwege konzentrieren. Wenn der Ball nicht innerhalb von fünf Sekunden sauber zurückerobert werden kann, kehrt der Verteidigungsblock in eine synchronisierte 4-4-2- oder 5-3-2-Eindämmungsform zurück."
+      "text": "In den letzten zwei Jahrzehnten wurde der Elitefußball europäischer Verbände einer strengen mathematischen und strukturellen Rationalisierung unterzogen. Das historische Vertrauen auf intuitive individuelle Brillanz wurde der systemischen räumlichen Geometrie untergeordnet. Elite-Taktikmanager, die durch Dutch Total Football konzipiert und in zeitgenössisches Positionsspiel (Juego de Posición) verfeinert wurden, betrachten das Spielfeld nicht als fließende Leinwand der Improvisation, sondern als strenges Koordinatengitter, in dem die räumliche Positionierung direkt numerische, positionelle und qualitative Überlegenheiten vorgibt."
     },
     {
       "type": "h2",
-      "text": "5. Taktische Erkenntnisse und wichtige Erkenntnisse"
+      "text": "1. Diskretisierung des Spielfelds: Die fünf vertikalen Korridore"
     },
     {
       "type": "ul",
       "items": [
-        "Pitch-Zoneneinteilung: Durch die Verwendung des Fünf-Korridor-Rasters wird das Beobachten von Cluster-Bällen eliminiert und dynamische Pass-Diamanten bleiben erhalten.",
-        "Proaktive Ruheverteidigung: Spiele werden häufig durch die strukturelle Positionierung der fünf Feldspieler entschieden, die den Ball nicht direkt berühren.",
-        "Übergangsbeschleunigung: Gegenpressing dient sowohl als defensive Gegenmaßnahme als auch als stärkstes Spielinstrument im modernen Fußball."
+        "Pitch Zoning: Utilizing the five-corridor grid eliminates cluster ball-watching and preserves dynamic passing diamonds.",
+        "Proactive Rest-Defense: Matches are frequently decided by the structural positioning of the five outfield players not directly touching the ball.",
+        "Transition Acceleration: Counterpressing serves as both a defensive counter-measure and the most potent playmaking instrument in modern football."
       ]
     }
   ],
-  "sourceHash": "9349966a04cdc4391fcabd4aef43618dd6ed5087"
+  "sourceHash": "9dbec62008d8952b5f910cdc5b7438df204c1a70"
 }

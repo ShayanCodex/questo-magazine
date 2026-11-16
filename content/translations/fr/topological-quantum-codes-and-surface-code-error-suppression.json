@@ -11,8 +11,8 @@
     "error-correction",
     "surface-codes"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "Réfrigérateur à dilution cryogénique doré abritant des qubits de processeur quantique supraconducteurs",
+  "image": "https://images.unsplash.com/photo-1583912267670-6575ad4736f8?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Geometric topological lattice displaying quantum entanglement braiding and surface codes",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Points clés"
+      "text": "La transition d'un quantique bruyant à échelle intermédiaire à un quantique tolérant aux pannes"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1bb1a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Two-dimensional planar surface code architecture with data and syndrome measurement qubits",
+      "caption": "Surface code grid: interleaving X-type and Z-type stabilizer measurements to identify localized bit and phase flips."
     },
     {
       "type": "ul",
       "items": [
-        "Mesures du stabilisateur : les contrôles de parité entre les plaquettes et les sommets diagnostiquent les erreurs de retournement de bit (X) et de retournement de phase (Z) sans effondrer l'état de superposition.",
-        "Théorème du seuil : lorsque les taux d'erreur de porte physique tombent en dessous d'environ un pour cent, la mise à l'échelle de la distance du code de réseau supprime de manière exponentielle les erreurs logiques.",
-        "Stockage d'informations non locales : les informations quantiques logiques sont codées à travers des enchevêtrements topologiques globaux plutôt que dans n'importe quel qubit physique vulnérable individuel.",
-        "Graphiques de décodage en temps réel : les algorithmes de correspondance parfaite de poids minimum (MWPM) traitent les flux de syndrome à des vitesses cryogéniques inférieures à la microseconde."
+        "Stabilizer Measurements: Parity checks across plaquettes and vertices diagnose bit-flip (X) and phase-flip (Z) errors without collapsing superposition state.",
+        "Threshold Theorem: When physical gate error rates fall below approximately one percent, scaling the lattice code distance exponentially suppresses logical errors.",
+        "Non-Local Information Storage: Logical quantum information is encoded across global topological entanglements rather than any individual vulnerable physical qubit.",
+        "Real-Time Decoding Graphs: Minimum-weight perfect matching (MWPM) algorithms process syndrome streams at cryogenic sub-microsecond speeds."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Physique théorique et examen des informations quantiques"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561584-897c11f7c5f8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Laser interferometry setup for quantum syndrome readout with low-noise amplification",
+      "caption": "Quantum error suppression: syndrome decoding algorithms arresting error propagation below fault-tolerant thresholds."
+    },
+    {
       "type": "h2",
-      "text": "Architectures supraconductrices et interconnexions cryogéniques"
+      "text": "La transition d'un quantique bruyant à échelle intermédiaire à un quantique tolérant aux pannes"
     },
     {
       "type": "p",
-      "text": "L'ingénierie des codes de surface nécessite des topologies de grille bidimensionnelles denses. Les qubits Transmon interconnectés par des résonateurs micro-ondes accordables doivent maintenir une cohérence à quinze températures millikelvin tandis que le câblage coaxial haute densité extrait des milliers de lignes de lecture vers des décodeurs FPGA à température ambiante."
+      "text": "Alors que les processeurs quantiques bruyants à échelle intermédiaire (NISQ) ont démontré une suprématie algorithmique dans des tests d'échantillonnage spécialisés, le calcul quantique pratique exige des taux d'erreur logiques inférieurs à dix au douzième négatif. Atteindre cet objectif nécessite une correction d'erreur quantique topologique (QEC), dans laquelle des qubits physiques fragiles sont enchevêtrés sur des réseaux de surface bidimensionnels pour former des qubits logiques immortels protégés par la topologie."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "Principes de physique de précision et de mesure quantique",
-      "caption": "Cours de physique expérimentale explorant l'interférométrie d'extrême précision, la stabilité cryogénique et le contrôle de l'état quantique."
+      "title": "Precision Physics and Quantum Measurement Principles",
+      "caption": "Experimental physics lecture exploring extreme precision interferometry, cryogenic stability, and quantum state control.",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10"
     },
     {
       "type": "h2",
-      "text": "L'horizon de la chimie quantique évolutive"
+      "text": "La transition d'un quantique bruyant à échelle intermédiaire à un quantique tolérant aux pannes"
     },
     {
       "type": "p",
-      "text": "L'arrivée de qubits logiques tolérants aux pannes débloquera une simulation précise des enzymes nitrogénases pour la synthèse des engrais ambiants, des électrolytes de batteries à semi-conducteurs et des catalyseurs macromoléculaires complexes que les superordinateurs ne pourront jamais calculer."
+      "text": "Alors que les processeurs quantiques bruyants à échelle intermédiaire (NISQ) ont démontré une suprématie algorithmique dans des tests d'échantillonnage spécialisés, le calcul quantique pratique exige des taux d'erreur logiques inférieurs à dix au douzième négatif. Atteindre cet objectif nécessite une correction d'erreur quantique topologique (QEC), dans laquelle des qubits physiques fragiles sont enchevêtrés sur des réseaux de surface bidimensionnels pour former des qubits logiques immortels protégés par la topologie."
     }
   ],
-  "sourceHash": "72618758c4d63268a64e2cad605fa285e4eedae3"
+  "sourceHash": "55f0c412780294dd2f32fca59f7dcab355e1429b"
 }

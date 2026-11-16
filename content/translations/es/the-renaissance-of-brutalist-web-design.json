@@ -12,8 +12,8 @@
     "minimalism",
     "typography"
   ],
-  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Arquitectura geométrica en blanco y negro que representa una estética digital brutalista",
+  "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Stark black and white geometric architecture representing brutalist digital aesthetics",
   "body": [
     {
       "type": "p",
@@ -21,19 +21,31 @@
     },
     {
       "type": "p",
-      "text": "Nombrado en honor a la filosofía arquitectónica de mediados de siglo que celebraba el hormigón agregado expuesto y la honestidad estructural en bruto, el diseño web brutalista elimina el revestimiento decorativo superficial. Trata al navegador no como un folleto impreso brillante simulado, sino como una terminal digital sin complejos compuesta de semántica HTML en bruto, tipografía austera y tensión espacial sin concesiones."
+      "text": "El Internet comercial contemporáneo se está ahogando en degradados pastel, esquinas redondeadas y microinteracciones estériles. Cada sitio web de startup parece haber sido generado a partir del mismo sistema de diseño corporativo, limpiando la red de límites, tensión y voz artística. En respuesta a esta sofocante insipidez, ha surgido un poderoso contramovimiento: el brutalismo digital."
     },
     {
       "type": "h2",
       "text": "La ética de la honestidad arquitectónica en la Web"
     },
     {
-      "type": "p",
-      "text": "En la arquitectura física brutalista, las líneas de encofrado y los orificios para amarres se dejan intencionalmente visibles para exponer cómo se vertió el edificio. En el brutalismo digital, los mecanismos subyacentes del marcado web (enlaces, bordes, formas de letras monoespaciadas predeterminadas y contrastes de color del sistema) se celebran en lugar de ocultarse bajo megabytes de filtros de desenfoque CSS y pesados ​​sombreadores de lienzo JavaScript."
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Renaissance of Brutalist Web Design - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Renaissance of Brutalist Web Design."
     },
     {
       "type": "p",
-      "text": "Esta estética es profundamente política. Al rechazar el lenguaje visual del capitalismo de vigilancia del capital de riesgo, los sitios web brutalistas anuncian que su contenido no está diseñado para engañarlo y llevarlo a un embudo de marketing. El texto se presenta con una claridad inquebrantable: léelo, contémplelo o vete."
+      "text": "El Internet comercial contemporáneo se está ahogando en degradados pastel, esquinas redondeadas y microinteracciones estériles. Cada sitio web de startup parece haber sido generado a partir del mismo sistema de diseño corporativo, limpiando la red de límites, tensión y voz artística. En respuesta a esta sofocante insipidez, ha surgido un poderoso contramovimiento: el brutalismo digital."
+    },
+    {
+      "type": "p",
+      "text": "El Internet comercial contemporáneo se está ahogando en degradados pastel, esquinas redondeadas y microinteracciones estériles. Cada sitio web de startup parece haber sido generado a partir del mismo sistema de diseño corporativo, limpiando la red de límites, tensión y voz artística. En respuesta a esta sofocante insipidez, ha surgido un poderoso contramovimiento: el brutalismo digital."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Renaissance of Brutalist Web Design - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Renaissance of Brutalist Web Design."
     },
     {
       "type": "quote",
@@ -42,11 +54,11 @@
     },
     {
       "type": "h2",
-      "text": "Jerarquía tipográfica y tensión de alto contraste"
+      "text": "La ética de la honestidad arquitectónica en la Web"
     },
     {
       "type": "p",
-      "text": "En lugar de depender de suaves tonos pastel gris sobre blanco que no cumplen con los estándares de accesibilidad WCAG, la tipografía brutalista adopta un contraste cromático absoluto: negro carbón profundo (#000000) contra blanco hueso puro (#FFFFFF). Los titulares se crean con enormes y muy seguidos textos sans-serif que exigen un reconocimiento visual inmediato."
+      "text": "El Internet comercial contemporáneo se está ahogando en degradados pastel, esquinas redondeadas y microinteracciones estériles. Cada sitio web de startup parece haber sido generado a partir del mismo sistema de diseño corporativo, limpiando la red de límites, tensión y voz artística. En respuesta a esta sofocante insipidez, ha surgido un poderoso contramovimiento: el brutalismo digital."
     },
     {
       "type": "code",
@@ -60,24 +72,24 @@
     {
       "type": "ul",
       "items": [
-        "Paletas en blanco y negro sin complejos: priorizando relaciones de contraste del 100% que maximizan la legibilidad bajo la luz del sol y en pantallas móviles económicas.",
-        "Arquitectura de borde monolítica: uso de reglas negras sólidas de 1 px o 2 px para delinear secciones en lugar de sombras de cuadros difusas.",
-        "Cero animaciones superfluas: eliminación del desplazamiento de desplazamiento, desviaciones de paralaje y desvanecimientos retardados que desperdician ciclos de CPU y provocan mareos.",
-        "Cargas de página inferiores a 100 milisegundos: debido a que los estilos son livianos y las dependencias son inexistentes, las páginas brutalistas se procesan casi instantáneamente."
+        "Unapologetic black-and-white palettes: Prioritizing 100% contrast ratios that maximize legibility under bright sunlight and across budget mobile screens.",
+        "Monolithic border architecture: Using stark 1px or 2px solid black rules to delineate sections instead of fuzzy box-shadows.",
+        "Zero superfluous animation: Eliminating scroll-jacking, parallax drifts, and delayed fade-ins that waste CPU cycles and trigger motion sickness.",
+        "Sub-100 millisecond page loads: Because styles are lightweight and dependencies are nonexistent, brutalist pages render almost instantaneously."
       ]
     },
     {
       "type": "h2",
-      "text": "La longevidad de los medios digitales tectónicos"
+      "text": "La ética de la honestidad arquitectónica en la Web"
     },
     {
       "type": "p",
-      "text": "Las tendencias en diseño web van y vienen con la inconstancia estacional: el neumorfismo, el eskeuomorfismo, el morfismo de vidrio y el diseño plano han disfrutado de breves momentos bajo el sol antes de envejecer hasta convertirse en reliquias vergonzosas. Sin embargo, la tipografía limpia, honesta y brutalista anclada al HTML semántico nunca caduca. Sigue siendo tan legible y convincente hoy como lo era en los primeros días de los servidores del CERN de Tim Berners-Lee."
+      "text": "El Internet comercial contemporáneo se está ahogando en degradados pastel, esquinas redondeadas y microinteracciones estériles. Cada sitio web de startup parece haber sido generado a partir del mismo sistema de diseño corporativo, limpiando la red de límites, tensión y voz artística. En respuesta a esta sofocante insipidez, ha surgido un poderoso contramovimiento: el brutalismo digital."
     },
     {
       "type": "p",
-      "text": "Al adoptar una estética brutalista, Questo Magazine rechaza lo efímero efímero de las tendencias de diseño de Silicon Valley y restablece un estándar permanente e intransigente para la publicación digital internacional."
+      "text": "El Internet comercial contemporáneo se está ahogando en degradados pastel, esquinas redondeadas y microinteracciones estériles. Cada sitio web de startup parece haber sido generado a partir del mismo sistema de diseño corporativo, limpiando la red de límites, tensión y voz artística. En respuesta a esta sofocante insipidez, ha surgido un poderoso contramovimiento: el brutalismo digital."
     }
   ],
-  "sourceHash": "8ff67d50b1f1c4907665fbcc6f69ef3d07b09fde"
+  "sourceHash": "aa852fc6cf4096a5a2271b87c3b81a23bf1a0f35"
 }

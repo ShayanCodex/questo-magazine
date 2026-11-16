@@ -12,8 +12,8 @@
     "motorsport",
     "engineering"
   ],
-  "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Voiture de course aérodynamique à grande vitesse dans les virages sur piste asphaltée affichant une force d'appui extrême sous le plancher.",
+  "image": "https://images.unsplash.com/photo-1508873696983-2df57036476b?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-speed aerodynamic racecar cornering on asphalt track displaying extreme underfloor downforce",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "En canalisant le flux d'air entrant à travers des tunnels Venturi convergents-divergents positionnés le long du soubassement, la pression est considérablement réduite sous le châssis tout en créant une turbulence de sillage frontale minimale. Lorsqu'ils sont exécutés avec une efficacité maximale, les planchers à effet de sol génèrent plus de 60 % de la force d'appui totale du véhicule avec un rapport d'efficacité portance/traînée ($L/D$) supérieur à 4,5 : 1, soit le double de l'efficacité aérodynamique des ailes aériennes conventionnelles."
+      "text": "Dans l'ingénierie automobile et de sport automobile de haute performance, la force d'appui est la mesure souveraine qui dicte l'adhérence dans les virages, la décélération au freinage et la stabilité directionnelle. Pendant des décennies, les véhicules généraient une force d’appui principalement via les surfaces de levage du haut du corps : ailes multi-éléments inversées et avions en plongée. Cependant, l'appui généré par l'aile impose une pénalité parasite sévère : la traînée induite, qui évolue quadratiquement avec l'angle d'attaque et dégrade la vitesse en ligne droite. L'aérodynamique à effet de sol contourne ce compromis en transformant l'ensemble du plancher du véhicule en une pompe d'aspiration Bernoulli intégrée."
     },
     {
       "type": "h2",
       "text": "1. Le principe Venturi : différentiels de pression sous le corps"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Ground-Effect Aerodynamics in Formula 1 - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Ground-Effect Aerodynamics in Formula 1."
+    },
+    {
       "type": "p",
-      "text": "La physique fondamentale de l'effet de sol repose sur le principe de Bernoulli incompressible et la continuité de masse dans la dynamique des fluides :"
+      "text": "Dans l'ingénierie automobile et de sport automobile de haute performance, la force d'appui est la mesure souveraine qui dicte l'adhérence dans les virages, la décélération au freinage et la stabilité directionnelle. Pendant des décennies, les véhicules généraient une force d’appui principalement via les surfaces de levage du haut du corps : ailes multi-éléments inversées et avions en plongée. Cependant, l'appui généré par l'aile impose une pénalité parasite sévère : la traînée induite, qui évolue quadratiquement avec l'angle d'attaque et dégrade la vitesse en ligne droite. L'aérodynamique à effet de sol contourne ce compromis en transformant l'ensemble du plancher du véhicule en une pompe d'aspiration Bernoulli intégrée."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Mass Flow Continuity: A₁ · v₁ = A₂ · v₂ = Constant\nBernoulli Equation: P₁ + ½ρ(v₁)² = P₂ + ½ρ(v₂)²\n\nWhere:\n- A is tunnel cross-sectional area\n- v is local flow velocity\n- P is static fluid pressure\n- ρ is ambient air density"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Ground-Effect Aerodynamics in Formula 1 - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Ground-Effect Aerodynamics in Formula 1."
+    },
+    {
       "type": "p",
-      "text": "Lorsque l'air ambiant pénètre dans le plancher, la section de gorge rétrécit la section transversale du tunnel ($A_2 < A_1$). Par conservation de la masse, la vitesse d'écoulement s'accélère fortement ($v_2 > v_1$), précipitant une baisse localisée de la pression statique de l'air ($P_2 \\ll P_1$). La pression atmosphérique plus élevée qui s'exerce sur le haut du véhicule crée une force d'aspiration massive vers le bas à travers le plan de référence plat."
+      "text": "Dans l'ingénierie automobile et de sport automobile de haute performance, la force d'appui est la mesure souveraine qui dicte l'adhérence dans les virages, la décélération au freinage et la stabilité directionnelle. Pendant des décennies, les véhicules généraient une force d’appui principalement via les surfaces de levage du haut du corps : ailes multi-éléments inversées et avions en plongée. Cependant, l'appui généré par l'aile impose une pénalité parasite sévère : la traînée induite, qui évolue quadratiquement avec l'angle d'attaque et dégrade la vitesse en ligne droite. L'aérodynamique à effet de sol contourne ce compromis en transformant l'ensemble du plancher du véhicule en une pompe d'aspiration Bernoulli intégrée."
     },
     {
       "type": "quote",
@@ -47,58 +59,58 @@
     },
     {
       "type": "h2",
-      "text": "2. Expansion du diffuseur et séparation de la couche limite"
+      "text": "1. Le principe Venturi : différentiels de pression sous le corps"
     },
     {
       "type": "p",
-      "text": "En aval de la gorge, la section transversale du tunnel s'étend selon un angle contrôlé à travers le diffuseur arrière. La fonction du diffuseur n'est pas simplement de créer une force d'appui localement, mais d'agir comme une pompe d'expansion aérodynamique qui rétablit progressivement la vitesse de l'air sous le plancher à la vitesse ambiante avec une perte cinétique minimale."
+      "text": "Dans l'ingénierie automobile et de sport automobile de haute performance, la force d'appui est la mesure souveraine qui dicte l'adhérence dans les virages, la décélération au freinage et la stabilité directionnelle. Pendant des décennies, les véhicules généraient une force d’appui principalement via les surfaces de levage du haut du corps : ailes multi-éléments inversées et avions en plongée. Cependant, l'appui généré par l'aile impose une pénalité parasite sévère : la traînée induite, qui évolue quadratiquement avec l'angle d'attaque et dégrade la vitesse en ligne droite. L'aérodynamique à effet de sol contourne ce compromis en transformant l'ensemble du plancher du véhicule en une pompe d'aspiration Bernoulli intégrée."
     },
     {
       "type": "p",
-      "text": "Le défi technique crucial consiste à empêcher une séparation par gradient de pression défavorable. Si l'angle d'expansion du diffuseur dépasse 7 à 10 degrés, la couche limite à faible énergie le long du plafond du tunnel se sépare, provoquant un décrochage aérodynamique catastrophique qui effondre instantanément l'aspiration souterraine."
+      "text": "Dans l'ingénierie automobile et de sport automobile de haute performance, la force d'appui est la mesure souveraine qui dicte l'adhérence dans les virages, la décélération au freinage et la stabilité directionnelle. Pendant des décennies, les véhicules généraient une force d’appui principalement via les surfaces de levage du haut du corps : ailes multi-éléments inversées et avions en plongée. Cependant, l'appui généré par l'aile impose une pénalité parasite sévère : la traînée induite, qui évolue quadratiquement avec l'angle d'attaque et dégrade la vitesse en ligne droite. L'aérodynamique à effet de sol contourne ce compromis en transformant l'ensemble du plancher du véhicule en une pompe d'aspiration Bernoulli intégrée."
     },
     {
       "type": "ul",
       "items": [
-        "Scellement des bords du plancher : le déploiement de générateurs de vortex aérodynamiques et de virures le long du périmètre du plancher empêche l'air latéral à haute pression de s'infiltrer dans la cavité du soubassement à basse pression.",
-        "Sensibilité à la hauteur de caisse : la force d'appui évolue de façon exponentielle à mesure que la garde au sol diminue jusqu'à ce que la friction de la couche limite étouffe le flux d'air massique.",
-        "Centre de stabilité de la pression : garantir que l'équilibre aérodynamique reste stable malgré les changements d'angles de tangage, de roulis et de lacet lors des transitions dans les virages à grande vitesse."
+        "Floor Edge Sealing: Deploying aerodynamic vortex generators and strakes along the floor perimeter prevents high-pressure lateral air from bleeding into the low-pressure underbody cavity.",
+        "Ride Height Sensitivity: Downforce scales exponentially as ground clearance decreases until boundary layer friction chokes mass airflow.",
+        "Center of Pressure Stability: Ensuring the aerodynamic balance remains stable across changing pitch, roll, and yaw angles during high-speed cornering transitions."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : Aérodynamique à effet de sol et tunnels Venturi"
+      "text": "1. Le principe Venturi : différentiels de pression sous le corps"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ",
-      "title": "Champs d'écoulement aérodynamiques et ingénierie à effet de sol de Formule 1",
-      "caption": "Analyse technique de la physique du flux d'air sous le plancher, de la force d'appui de proximité du sol et de l'étanchéité aérodynamique des bords du sol."
+      "title": "Aerodynamic Flow Fields & Formula 1 Ground-Effect Engineering",
+      "caption": "Technical breakdown of underfloor airflow physics, ground proximity downforce, and aerodynamic floor edge sealing."
     },
     {
       "type": "h2",
-      "text": "4. Les mécanismes du marsouinage : résonance aéroélastique non linéaire"
+      "text": "1. Le principe Venturi : différentiels de pression sous le corps"
     },
     {
       "type": "p",
-      "text": "Lorsque les soubassements à effet de sol fonctionnent à des hauteurs de caisse inférieures au millimètre à des vitesses supérieures à 300 km/h, ils risquent d'entrer dans une grave oscillation auto-entretenue connue sous le nom de marsouinage. À mesure que la vitesse augmente, l'aspiration sous le plancher augmente, rapprochant la suspension du véhicule de l'asphalte."
+      "text": "Dans l'ingénierie automobile et de sport automobile de haute performance, la force d'appui est la mesure souveraine qui dicte l'adhérence dans les virages, la décélération au freinage et la stabilité directionnelle. Pendant des décennies, les véhicules généraient une force d’appui principalement via les surfaces de levage du haut du corps : ailes multi-éléments inversées et avions en plongée. Cependant, l'appui généré par l'aile impose une pénalité parasite sévère : la traînée induite, qui évolue quadratiquement avec l'angle d'attaque et dégrade la vitesse en ligne droite. L'aérodynamique à effet de sol contourne ce compromis en transformant l'ensemble du plancher du véhicule en une pompe d'aspiration Bernoulli intégrée."
     },
     {
       "type": "p",
-      "text": "À un seuil de proximité critique, l'espace physique entre la gorge du plancher et la surface de la voie étouffe le flux d'air ou déclenche un détachement soudain de la couche limite. La force d’appui du soubassement s’effondre instantanément et la suspension mécanique comprimée rebondit violemment vers le haut. À mesure que la hauteur de caisse augmente, le flux d'air se rétablit, l'aspiration se réengage et le cycle vertical destructeur se répète à des fréquences comprises entre 5 et 8 Hz, soumettant les conducteurs à de violentes forces g longitudinales et verticales."
+      "text": "Dans l'ingénierie automobile et de sport automobile de haute performance, la force d'appui est la mesure souveraine qui dicte l'adhérence dans les virages, la décélération au freinage et la stabilité directionnelle. Pendant des décennies, les véhicules généraient une force d’appui principalement via les surfaces de levage du haut du corps : ailes multi-éléments inversées et avions en plongée. Cependant, l'appui généré par l'aile impose une pénalité parasite sévère : la traînée induite, qui évolue quadratiquement avec l'angle d'attaque et dégrade la vitesse en ligne droite. L'aérodynamique à effet de sol contourne ce compromis en transformant l'ensemble du plancher du véhicule en une pompe d'aspiration Bernoulli intégrée."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir en matière d'ingénierie mécanique"
+      "text": "1. Le principe Venturi : différentiels de pression sous le corps"
     },
     {
       "type": "ul",
       "items": [
-        "Couplage aéro-mécanique : les conceptions à effet de sol à force d'appui élevée nécessitent des ressorts de soulèvement de suspension hyper rigides pour découpler l'aspiration aérodynamique du débattement mécanique des roues.",
-        "Gestion du gradient du diffuseur : mettez en œuvre des fentes d'aspiration de couche limite ou des générateurs de vortex pour empêcher la séparation du décrochage lors d'attitudes à inclinaison élevée.",
-        "Sécurité et garde au sol : établir une surveillance minimale de la hauteur de caisse et une télémétrie de l'usure des patins de plancher pour éviter une perte d'appui catastrophique sur les ondulations de la voie."
+        "Aero-Mechanical Coupling: High downforce ground-effect designs require hyper-stiff suspension heave springs to decouple aerodynamic suction from mechanical wheel travel.",
+        "Diffuser Gradient Management: Implement boundary layer suction slots or vortex generators to prevent stall separation during high-rake pitch attitudes.",
+        "Safety & Ride Clearance: Establish minimum ride height enforcement and floor skid-block wear telemetry to prevent catastrophic downforce loss on track undulations."
       ]
     }
   ],
-  "sourceHash": "ce07a7942454b1a702bcd49c982b34149c9ab267"
+  "sourceHash": "7d34f65d5a12a01f1ea7fc0ba1cedd2c84d8789b"
 }

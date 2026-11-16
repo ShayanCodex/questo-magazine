@@ -11,8 +11,8 @@
     "macroeconomics",
     "energy-grid"
   ],
-  "image": "/images/articles/gold-reserves-central-bank.jpg",
-  "imageAlt": "Tresor-Goldbarren und Kapitalreservebuch internationaler Finanzinstitute",
+  "image": "https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Financial capital city skyline reflecting sovereign investment assets and long-term asset allocation",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Kernpunkte"
+      "text": "Der Paradigmenwechsel von liquiden Schulden zu realen strategischen Vermögenswerten"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542744095-2963158e6d95?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Commercial container port and intermodal global logistics terminal owned by sovereign wealth fund",
+      "caption": "Real asset allocation: sovereign capital underwriting multi-decade transportation hubs and critical logistical corridors."
     },
     {
       "type": "ul",
       "items": [
-        "Inflationsabsicherung: Regulierte physische Versorgungsunternehmen verfügen über vertragliche Preissteigerungen, die direkt an nationale Verbraucher- und Erzeugerpreisindizes gekoppelt sind.",
-        "Souveräne bilaterale Abkommen: Bilaterale Staatsverträge bieten rechtlichen und regulatorischen Schutz vor willkürlicher Enteignung und Zollvolatilität.",
-        "Kritische Infrastrukturprämie: Vermögenswerte, die digitale Berechnungen und Energieübertragung verankern, liefern kontinuierliche Cashflows, die von Verbraucherzyklen unabhängig sind.",
-        "Long-Horizon Compounding: Fünfzigjährige Konzessionsverträge decken die generationenübergreifenden Verbindlichkeiten der staatlichen Renten- und Stabilisierungsrücklagen ab."
+        "Inflation Hedging: Regulated physical utilities feature contractual price escalators linked directly to national consumer and producer price indices.",
+        "Sovereign Bilateral Deals: Bilateral state compacts provide legal and regulatory protections against arbitrary expropriation and tariff volatility.",
+        "Critical Infrastructure Premium: Assets that anchor digital computation and energy transmission deliver perpetual cash flows immune to consumer cycles.",
+        "Long-Horizon Compounding: Fifty-year concession agreements match the multi-generational liabilities of state pension and stabilization reserves."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Sovereign Capital Quarterly & International Asset Review"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542744172-8e7e35474ac5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Utility-scale wind energy turbine installation funded by sovereign green transition mandates",
+      "caption": "Energy transition portfolios: sovereign wealth allocating capital to inflation-hedged infrastructure and grid decarbonization."
+    },
+    {
       "type": "h2",
-      "text": "Finanzierung der globalen Energieübertragungsarchitektur"
+      "text": "Der Paradigmenwechsel von liquiden Schulden zu realen strategischen Vermögenswerten"
     },
     {
       "type": "p",
-      "text": "Der Ausbau von Rechenzentren mit künstlicher Intelligenz und die industrialisierte Elektrifizierung erfordern eine beispiellose Kapitalintensität. Staatliche Vermögenssyndikate fungieren heute als Hauptfinanzierer für Multi-Gigawatt-Gleichstrom-Verbindungsleitungen und stellen geduldiges Bilanzkapital bereit, das herkömmliche private Schuldenmärkte nicht aufbringen können."
+      "text": "In einer Zeit, die von fiskalischer Expansion, geopolitischer Neuausrichtung und realem Renditedruck geprägt ist, orchestrieren globale Staatsfonds (SWFs), die über zwölf Billionen Dollar verwalten, eine historische Portfolioumverteilung. Über Staatsanleihen mit negativer Rendite und volatile öffentliche Aktien hinaus leiten staatliche Allokatoren Kapital in physische Monopole mit hohen Barrieren: interkontinentale Unterseekabel, Supernetze für saubere Energie und kommerzielle Tiefwasserhäfen."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "Wie die Wirtschaftsmaschine funktioniert",
-      "caption": "Ray Dalio erklärt strukturelle Schuldenzyklen, institutionelle Kapitalflüsse und makroökonomischen Schuldenabbau."
+      "title": "How The Economic Machine Works",
+      "caption": "Ray Dalio explains structural debt cycles, institutional capital flows, and macroeconomic deleveraging.",
+      "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0"
     },
     {
       "type": "h2",
-      "text": "Geopolitische Auswirkungen von Staatseigentum"
+      "text": "Der Paradigmenwechsel von liquiden Schulden zu realen strategischen Vermögenswerten"
     },
     {
       "type": "p",
-      "text": "Da staatliche Stellen Mehrheitsbeteiligungen an wichtigen Telekommunikationskorridoren und Logistikknoten erwerben, werden die nationalen Sicherheitsüberprüfungsmechanismen weltweit verschärft. Das Zusammenspiel zwischen der Anhäufung staatlicher Vermögenswerte und der regulatorischen Kontrolle wird die Finanzarchitektur des nächsten halben Jahrhunderts bestimmen."
+      "text": "In einer Zeit, die von fiskalischer Expansion, geopolitischer Neuausrichtung und realem Renditedruck geprägt ist, orchestrieren globale Staatsfonds (SWFs), die über zwölf Billionen Dollar verwalten, eine historische Portfolioumverteilung. Über Staatsanleihen mit negativer Rendite und volatile öffentliche Aktien hinaus leiten staatliche Allokatoren Kapital in physische Monopole mit hohen Barrieren: interkontinentale Unterseekabel, Supernetze für saubere Energie und kommerzielle Tiefwasserhäfen."
     }
   ],
-  "sourceHash": "5e60971085a850fc9d65b87f0abea6a0f4e9e9f0"
+  "sourceHash": "dd4275db6f2b50ad152abf80d5215d2ea4682a80"
 }

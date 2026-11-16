@@ -13,7 +13,7 @@
     "coffee-science"
   ],
   "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Crème riche aux noisettes se formant dans une tasse à expresso en céramique sous un porte-filtre sans fond en acier inoxydable",
+  "imageAlt": "Rich hazelnut crema forming in ceramic espresso cup underneath stainless steel bottomless portafilter",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Atteindre un équilibre constant entre les lactones d'acide chlorogénique doux et les polyphénols astringents nécessite un contrôle rigoureux de la distribution granulométrique, de la perméabilité hydraulique et des profils de température des solvants. De légères variations dans l'uniformité de la mouture peuvent précipiter une canalisation microscopique catastrophique, où des chemins d'écoulement préférentiels localisés sur-extraient les tanins amers tout en laissant les zones de lit adjacentes complètement intactes."
+      "text": "L'espresso n'est pas simplement une méthode de préparation ; il s'agit d'un système d'extraction solide-liquide à haute pression régi par la thermodynamique des lits garnis poreux et la cinétique de diffusion chimique. En moins de trente secondes, de l'eau sous pression chauffée à 9 bars (0,9 MPa) pénètre dans un lit densément consolidé de fragments de café torréfié, solubilisant des centaines d'aldéhydes volatils, de pyrazines et d'acides organiques tout en émulsionnant simultanément des gouttelettes de lipides hydrophobes insolubles dans une suspension colloïdale dense connue sous le nom de crème."
     },
     {
       "type": "h2",
       "text": "1. Loi de Darcy et perméabilité hydraulique dans les lits compactés"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Chemistry of Espresso Extraction - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Chemistry of Espresso Extraction."
+    },
+    {
       "type": "p",
-      "text": "L'écoulement du fluide à travers la rondelle de café compactée est conforme à la loi de Darcy pour la percolation laminaire à travers un milieu solide poreux :"
+      "text": "L'espresso n'est pas simplement une méthode de préparation ; il s'agit d'un système d'extraction solide-liquide à haute pression régi par la thermodynamique des lits garnis poreux et la cinétique de diffusion chimique. En moins de trente secondes, de l'eau sous pression chauffée à 9 bars (0,9 MPa) pénètre dans un lit densément consolidé de fragments de café torréfié, solubilisant des centaines d'aldéhydes volatils, de pyrazines et d'acides organiques tout en émulsionnant simultanément des gouttelettes de lipides hydrophobes insolubles dans une suspension colloïdale dense connue sous le nom de crème."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Darcy's Percolation Equation:\nQ = (-k · A / μ) · (ΔP / L)\n\nWhere:\n- Q: Volumetric flow rate (mL/s)\n- k: Intrinsic permeability tensor of the compacted puck (m²)\n- A: Cross-sectional area of the filter basket (m²)\n- μ: Dynamic viscosity of water at extraction temperature (Pa·s)\n- ΔP: Gauge pressure differential applied by the pump (typically 6-9 bar)\n- L: Compacted bed depth / puck thickness (m)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Chemistry of Espresso Extraction - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Chemistry of Espresso Extraction."
+    },
+    {
       "type": "p",
-      "text": "Au fur et à mesure de l'extraction, $k$ ne reste pas statique. L'érosion physique des solides solubles et la migration des fines submicroniques vers le tamis inférieur du filtre créent un compactage dynamique. Si la pression de pompe appliquée $\\Delta P$ est excessivement élevée (supérieure à 9,5 bars), le lit de café subit une déformation plastique par compression, fermant les vides interstitiels, étouffant la perméabilité et initiant des micro-fractures à travers lesquelles l'eau s'écoule violemment."
+      "text": "L'espresso n'est pas simplement une méthode de préparation ; il s'agit d'un système d'extraction solide-liquide à haute pression régi par la thermodynamique des lits garnis poreux et la cinétique de diffusion chimique. En moins de trente secondes, de l'eau sous pression chauffée à 9 bars (0,9 MPa) pénètre dans un lit densément consolidé de fragments de café torréfié, solubilisant des centaines d'aldéhydes volatils, de pyrazines et d'acides organiques tout en émulsionnant simultanément des gouttelettes de lipides hydrophobes insolubles dans une suspension colloïdale dense connue sous le nom de crème."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Distribution bimodale de mouture : l'interaction des gros blocs et des fines"
+      "text": "1. Loi de Darcy et perméabilité hydraulique dans les lits compactés"
     },
     {
       "type": "p",
-      "text": "L'analyse des particules par diffraction laser révèle que les mécanismes de broyage des bavures produisent une distribution de volume intrinsèquement bimodale plutôt qu'une répartition monomodale uniforme."
+      "text": "L'espresso n'est pas simplement une méthode de préparation ; il s'agit d'un système d'extraction solide-liquide à haute pression régi par la thermodynamique des lits garnis poreux et la cinétique de diffusion chimique. En moins de trente secondes, de l'eau sous pression chauffée à 9 bars (0,9 MPa) pénètre dans un lit densément consolidé de fragments de café torréfié, solubilisant des centaines d'aldéhydes volatils, de pyrazines et d'acides organiques tout en émulsionnant simultanément des gouttelettes de lipides hydrophobes insolubles dans une suspension colloïdale dense connue sous le nom de crème."
     },
     {
       "type": "ul",
       "items": [
-        "Pic primaire (250–500 μm) : des rochers grossiers maintiennent le cadre hydraulique structurel de la rondelle, empêchant l'effondrement du lit et permettant un écoulement d'eau stable.",
-        "Pic secondaire (< 50 μm) : les fines microscopiques sont des fragments de paroi cellulaire brisés dépourvus de matrice cellulaire interne. Ils se dissolvent presque instantanément au contact de l'eau, fournissant des TDS (Total Dissolved Solids) précoces et des lipides essentiels à la stabilisation de la crème.",
-        "Le dilemme de la migration des fines : des fines excessives migrent vers le bas sous l'effet de la traînée hydrodynamique, obstruant les orifices du panier inférieur et provoquant une résistance à l'écoulement imprévisible."
+        "Primary Peak (250–500 μm): Coarse boulders maintain the structural hydraulic framework of the puck, preventing bed collapse and enabling stable water flow.",
+        "Secondary Peak (< 50 μm): Microscopic fines are shattered cellular wall fragments lacking internal cell matrix. They dissolve almost instantaneously upon water contact, providing early TDS (Total Dissolved Solids) and essential lipids for crema stabilization.",
+        "The Fines Migration Dilemma: Excessive fines migrate downward under hydrodynamic drag, clogging the bottom basket orifices and causing unpredictable flow resistance."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : dynamique des fluides et contrôle des paramètres d'extraction"
+      "text": "1. Loi de Darcy et perméabilité hydraulique dans les lits compactés"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/aTFsBqhpLes",
-      "title": "Comprendre la dose d'espresso, la géométrie des particules de mouture et le débit",
-      "caption": "Analyse expérimentale approfondie de la résistance à l'écoulement de l'eau, des calculs de rendement d'extraction et de la physique de la préparation des rondelles."
+      "title": "Understanding Espresso Dose, Grind Particle Geometry, and Flow",
+      "caption": "In-depth experimental breakdown of water flow resistance, extraction yield calculations, and puck preparation physics."
     },
     {
       "type": "h2",
-      "text": "4. Thermodynamique des solvants et séquence de dissolution chimique"
+      "text": "1. Loi de Darcy et perméabilité hydraulique dans les lits compactés"
     },
     {
       "type": "p",
-      "text": "Les constituants chimiques du café torréfié possèdent une cinétique de dissolution nettement échelonnée, régie par la polarité et le poids moléculaire. Au cours des 0 à 8 premières secondes d’extraction, les acides malique, citrique et acétique hautement polaires pénètrent dans la solution aux côtés de la caféine. Ceux-ci définissent l'acidité perçue, le caractère fruité et l'éclat initial."
+      "text": "L'espresso n'est pas simplement une méthode de préparation ; il s'agit d'un système d'extraction solide-liquide à haute pression régi par la thermodynamique des lits garnis poreux et la cinétique de diffusion chimique. En moins de trente secondes, de l'eau sous pression chauffée à 9 bars (0,9 MPa) pénètre dans un lit densément consolidé de fragments de café torréfié, solubilisant des centaines d'aldéhydes volatils, de pyrazines et d'acides organiques tout en émulsionnant simultanément des gouttelettes de lipides hydrophobes insolubles dans une suspension colloïdale dense connue sous le nom de crème."
     },
     {
       "type": "p",
-      "text": "Entre les secondes 8 et 20, les mélanoïdines de polarité moyenne et les caramels au saccharose se dissolvent, établissant une sensation en bouche, du corps et une douceur équilibrée. Au-delà de 25 secondes, l’extraction des dimères d’acide chlorogénique de haut poids moléculaire et des acides quiniques astringents s’intensifie rapidement. L'arrêt de l'extraction à un rapport d'infusion optimal (généralement 1:2 à 1:2,5 café/rendement) met fin précisément à l'extraction avant que ces polyphénols agressifs et desséchants n'entrent dans la tasse."
+      "text": "L'espresso n'est pas simplement une méthode de préparation ; il s'agit d'un système d'extraction solide-liquide à haute pression régi par la thermodynamique des lits garnis poreux et la cinétique de diffusion chimique. En moins de trente secondes, de l'eau sous pression chauffée à 9 bars (0,9 MPa) pénètre dans un lit densément consolidé de fragments de café torréfié, solubilisant des centaines d'aldéhydes volatils, de pyrazines et d'acides organiques tout en émulsionnant simultanément des gouttelettes de lipides hydrophobes insolubles dans une suspension colloïdale dense connue sous le nom de crème."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir de Barista & Coffee Science"
+      "text": "1. Loi de Darcy et perméabilité hydraulique dans les lits compactés"
     },
     {
       "type": "ul",
       "items": [
-        "Amorçage pré-infusion : appliquez une basse pression (2 à 3 bars) pendant 4 à 6 secondes pour hydrater uniformément le palet, en atténuant les taches sèches et en canalisant avant que la pleine pression de la pompe ne s'enclenche.",
-        "Profilage de débit plutôt que profilage de pression : modulez le débit de la pompe pour diminuer la pression pendant la seconde moitié du tir à mesure que la résistance de la rondelle s'érode, préservant ainsi la douceur.",
-        "Surveillance réfractométrique : ciblez un rendement d'extraction compris entre 19 % et 22 % associé à une lecture de solides totaux dissous (TDS) comprise entre 8,5 % et 10,5 % pour un équilibre sensoriel optimal."
+        "Pre-Infusion Priming: Apply low pressure (2-3 bars) for 4-6 seconds to hydrate the puck uniformly, mitigating dry spots and channeling before full pump pressure engages.",
+        "Flow Profiling over Pressure Profiling: Modulate pump flow to decline pressure during the second half of the shot as puck resistance erodes, preserving sweetness.",
+        "Refractometric Monitoring: Target an Extraction Yield between 19% and 22% paired with a Total Dissolved Solids (TDS) reading between 8.5% and 10.5% for optimal sensory balance."
       ]
     }
   ],
-  "sourceHash": "062278372619aaee1eb4146769e4221669743df6"
+  "sourceHash": "dcfc0dc38600712c0c58c1efda8304f27e308ca9"
 }

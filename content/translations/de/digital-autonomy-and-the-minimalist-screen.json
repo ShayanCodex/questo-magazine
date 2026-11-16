@@ -11,8 +11,8 @@
     "philosophy",
     "culture"
   ],
-  "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Minimaler Holzschreibtisch mit Notizbuch, Füllfederhalter und ruhigem Morgenschatten",
+  "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Minimal wooden desk with notebook, fountain pen, and calm morning shadow",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Digitale Autonomie beginnt mit der Schnittstellenethik. Eine redaktionelle Zeitschrift sollte die Aufmerksamkeit des Lesers mit heiliger Ehrfurcht behandeln. Wenn eine Website aufdringliche Pop-ups, blinkende Werbebanner und algorithmische Empfehlungen eliminiert, ist das Lesen keine ängstliche Tortur mehr, sondern wird wieder zu einem kontemplativen Vergnügen."
+      "text": "Das moderne kommerzielle Internet ist ein technisches Aufmerksamkeitscasino. Jedes blinkende rote Benachrichtigungsabzeichen, jeder endlos scrollende Feed und jedes automatisch abspielende Video wird von Verhaltenspsychologen mathematisch optimiert, um den menschlichen Dopaminkreislauf zu kapern. Wir haben die mächtigste Bibliothek der Menschheitsgeschichte in eine angstauslösende Ablenkungsmaschine verwandelt."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital Autonomy and the Minimalist Screen - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Digital Autonomy and the Minimalist Screen."
     },
     {
       "type": "quote",
@@ -36,17 +42,23 @@
       "text": "Säulen des autonomen digitalen Designs"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Digital Autonomy and the Minimalist Screen - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Digital Autonomy and the Minimalist Screen."
+    },
+    {
       "type": "ul",
       "items": [
-        "Endliche Leseerlebnisse: Ersetzen bodenloser Feeds durch kuratierte, begrenzte Monografieausgaben, die einen definitiven Anfang und ein eindeutiges Ende haben.",
-        "Keine Verhaltensüberwachung: Eliminierung von Tracking-Pixeln von Drittanbietern, die Mausbewegungen und Verweilzeiten überwachen, um psychologische Dossiers zu erstellen.",
-        "Typografische Gelassenheit: Formatierung langer Prosa mit großzügigem Zeilenabstand, großzügigen Rändern und ablenkungsfreien dunklen und hellen Farbpaletten."
+        "Finite reading experiences: Replacing bottomless feeds with curated, bounded monograph issues that possess a definitive beginning and end.",
+        "Zero behavioral surveillance: Eliminating third-party tracking pixels that monitor mouse trajectories and dwell times to build psychological dossiers.",
+        "Typographic serenity: Formatting long-form prose with generous leading, generous margins, and distraction-free dark and light color palettes."
       ]
     },
     {
       "type": "p",
-      "text": "Durch die Gestaltung digitaler Räume, die die menschliche Handlungsfähigkeit respektieren, fordern wir das wahre Versprechen des Internets zurück: eine egalitäre Plattform für tiefe intellektuelle Erkundung, kritische Betrachtung und dauerhafte Erleuchtung."
+      "text": "Das moderne kommerzielle Internet ist ein technisches Aufmerksamkeitscasino. Jedes blinkende rote Benachrichtigungsabzeichen, jeder endlos scrollende Feed und jedes automatisch abspielende Video wird von Verhaltenspsychologen mathematisch optimiert, um den menschlichen Dopaminkreislauf zu kapern. Wir haben die mächtigste Bibliothek der Menschheitsgeschichte in eine angstauslösende Ablenkungsmaschine verwandelt."
     }
   ],
-  "sourceHash": "f45a70fc0dec403d722d249fc0f40fef4561ce6b"
+  "sourceHash": "92a96fb033e2e6543d272f5654411e7a7af3db43"
 }

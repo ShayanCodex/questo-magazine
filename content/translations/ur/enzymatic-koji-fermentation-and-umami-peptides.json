@@ -11,8 +11,8 @@
     "culinary-science",
     "gastronomy"
   ],
-  "image": "/images/articles/maillard-reaction-culinary.jpg",
-  "imageAlt": "روایتی لکڑی کے خمیر دیودار موریبوٹا ٹرے فلیمینٹس کوجی مولڈ کاشت کرتی ہیں",
+  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Steamed barley grains blossoming with Aspergillus oryzae koji mold mycelium for traditional fermentation",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "فلیمینٹس مولڈ جس نے ایسٹ ایشین گیسٹرونومی کو بنایا"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cedar koji incubation trays (moributa) arranged in a humid fermentation chamber",
+      "caption": "Solid-state koji culture: controlling temperature and humidity as fungal mycelium produces protease and amylase enzymes."
     },
     {
       "type": "ul",
       "items": [
-        "انزائم سیکریشن کاسکیڈ: جیسے ہی ہائفے اناج کے اینڈوسپرم میں داخل ہوتا ہے، مولڈ ایکسٹرا سیلولر انزائمز کو خارج کرتا ہے جو گھنے میکرو مالیکیولز کو بایو دستیاب سبسٹریٹس میں توڑ دیتے ہیں۔",
-        "امامی پیپٹائڈ کلیویج: تیزابی اور غیر جانبدار پروٹیز پیچیدہ پولی پیپٹائڈ زنجیروں کو مفت گلوٹامک ایسڈ اور ایسپارٹیٹ میں تقسیم کرتے ہیں، جس سے امامی کی لذیذ احساس پیدا ہوتی ہے۔",
-        "پروٹولیسس کینیٹکس: نمی، انکیوبیشن درجہ حرارت (30 ° C سے 36 ° C) کا احتیاط سے کنٹرول، اور نمی پروٹولیٹک اور ساکرولیٹک سرگرمی کے تناسب کا حکم دیتی ہے۔",
-        "Synergistic Sensation: مفت گلوٹامیٹ 5′-ribonucleotides (inosinate اور guanylate) کے ساتھ بائیو کیمیکل کنسرٹ میں حسی ریسیپٹر کی حوصلہ افزائی کو آٹھ گنا تک بڑھاتا ہے۔"
+        "Enzyme Secretion Cascade: As hyphae penetrate the grain endosperm, the mold excretes extracellular enzymes that break dense macromolecules into bioavailable substrates.",
+        "Umami Peptide Cleavage: Acid and neutral proteases cleave complex polypeptide chains into free glutamic acid and aspartate, producing the savory sensation of umami.",
+        "Proteolysis Kinetics: Careful control of moisture, incubation temperature (30°C to 36°C), and humidity dictates the ratio of proteolytic to saccharolytic activity.",
+        "Synergistic Sensation: Free glutamate acts in biochemical concert with 5′-ribonucleotides (inosinate and guanylate) to multiply sensory receptor excitation by up to eightfold."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "ایلینا وانس، معدے کی بایو کیمسٹری میں مونوگرافس"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Fermented aged miso paste in wooden vat exhibiting deep savory umami peptide concentration",
+      "caption": "Proteolysis and umami: Aspergillus enzymes cleaving soy and grain proteins into savory glutamic acid and flavor peptides."
+    },
+    {
       "type": "h2",
-      "text": "سست معدے میں جدید کھانا استعمال کرنے والے استعمالات"
+      "text": "فلیمینٹس مولڈ جس نے ایسٹ ایشین گیسٹرونومی کو بنایا"
     },
     {
       "type": "p",
-      "text": "Avant-garde پکوان کی تجربہ گاہوں نے کوجی ٹیکہ کو روایتی سویابین اور چاول سے ہٹ کر قدیم ورثے کے اناج، پھلیاں اور پھلوں تک بڑھا دیا ہے۔ کوجی کی انزیمیٹک طاقت کو حاصل کرکے، شیف پروٹین کی خشکی کو تیز کرتے ہیں اور مصنوعی اضافی اشیاء کے بغیر پیچیدہ کیریمل، مشروم اور پھولوں کی خوشبو والے پروفائلز کاشت کرتے ہیں۔"
+      "text": "روایتی ابال کے مرکز میں Aspergillus oryzae ہے، ایک قدیم فلیمینٹس فنگس جو ہزاروں سال پہلے پالی گئی تھی۔ جو یا چاول کے ابلے ہوئے دانوں پر ٹھوس ریاست کی ثقافت میں، یہ بے نظیر جاندار غیر فعال نشاستے اور ساختی پروٹین کو فعال انزائمز کے بائیو کیمیکل خزانے میں تبدیل کر دیتا ہے: الفا-امیلیس، گلوکوامیلیس، تیزاب اور غیر جانبدار پروٹیز، اور پیپٹائڈیز۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "فرمینٹیشن اور مائکروبیل گیسٹرونومی میں ماسٹرکلاس",
-      "caption": "مائکروبیل ثقافتوں، خمیر کی سرگرمی، اور کاریگر پاک دستکاری کی کیمسٹری کی تفصیلی سائنسی تحقیق۔"
+      "title": "Masterclass in Fermentation and Microbial Gastronomy",
+      "caption": "Detailed scientific exploration of microbial cultures, yeast activity, and the chemistry of artisan culinary craft.",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU"
     },
     {
       "type": "h2",
-      "text": "ٹھوس ریاست کے ابال کی زندہ وراثت"
+      "text": "فلیمینٹس مولڈ جس نے ایسٹ ایشین گیسٹرونومی کو بنایا"
     },
     {
       "type": "p",
-      "text": "ایک صنعتی دور میں جس میں الٹرا پروسیسڈ ہوموجنائزیشن کا غلبہ ہے، کوجی ابال مائکروبیل سست دستکاری کے لیے ایک پائیدار خراج کے طور پر کھڑا ہے: ایک فنی مشق جہاں صبر، حیاتیات، اور پاک فن ایک دوسرے سے ملتے ہیں۔"
+      "text": "روایتی ابال کے مرکز میں Aspergillus oryzae ہے، ایک قدیم فلیمینٹس فنگس جو ہزاروں سال پہلے پالی گئی تھی۔ جو یا چاول کے ابلے ہوئے دانوں پر ٹھوس ریاست کی ثقافت میں، یہ بے نظیر جاندار غیر فعال نشاستے اور ساختی پروٹین کو فعال انزائمز کے بائیو کیمیکل خزانے میں تبدیل کر دیتا ہے: الفا-امیلیس، گلوکوامیلیس، تیزاب اور غیر جانبدار پروٹیز، اور پیپٹائڈیز۔"
     }
   ],
-  "sourceHash": "17e4c3b655c5dbd2e9ccdb93af021d4d367270b5"
+  "sourceHash": "a0d8557bd30ce468df1ae99fc8bc25ae5b5e36b3"
 }

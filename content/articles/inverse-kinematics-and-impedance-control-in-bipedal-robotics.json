@@ -14,7 +14,7 @@
     "engineering",
     "control-theory"
   ],
-  "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Advanced bipedal humanoid robot standing in high-precision laboratory testing environment",
   "body": [
     {
@@ -30,6 +30,12 @@
       "text": "1. Mathematical Foundations: The Virtual Spring-Damper Model"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Impedance Control in Bipedal Robotics - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Impedance Control in Bipedal Robotics."
+    },
+    {
       "type": "p",
       "text": "Impedance control defines a target relationship between the external contact force vector ($F_{ext}$) and resulting kinematic displacement ($x - x_0$) rather than prescribing absolute coordinates:"
     },
@@ -37,6 +43,12 @@
       "type": "code",
       "lang": "text",
       "code": "Target Mechanical Impedance:\nF_ext = M_d · (ẍ - ẍ_0) + D_d · (ẋ - ẋ_0) + K_d · (x - x_0)\n\nJoint Torque Mapping via Manipulator Jacobian:\nτ_cmd = J^T(q) · F_ext + G(q) + C(q, q̇)q̇\n\nWhere:\n- M_d: Desired virtual inertia matrix\n- D_d: Virtual damping matrix\n- K_d: Virtual stiffness matrix\n- J^T(q): Jacobian transpose mapping task space to joint torque space\n- G(q): Gravity compensation vector\n- C(q, q̇): Coriolis and centrifugal force matrix"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1526374870839-e155464bb9b2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Impedance Control in Bipedal Robotics - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Impedance Control in Bipedal Robotics."
     },
     {
       "type": "p",

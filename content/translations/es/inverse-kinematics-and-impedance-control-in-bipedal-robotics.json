@@ -12,8 +12,8 @@
     "engineering",
     "control-theory"
   ],
-  "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Robot humanoide bípedo avanzado en un entorno de pruebas de laboratorio de alta precisión",
+  "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Advanced bipedal humanoid robot standing in high-precision laboratory testing environment",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Al mapear dinámicamente las fuerzas de contacto en el espacio de torsión de la articulación a través de la transposición jacobiana, el control de impedancia transforma las rígidas cajas de engranajes de los actuadores en mecanismos virtuales de amortiguador de resorte. Cuando el pie de un robot encuentra una topografía imprevista, la pierna absorbe el impacto cinético de forma elástica en lugar de romper los reductores armónicos o inclinar el chasis en una caída irrecuperable."
+      "text": "La síntesis mecánica de la locomoción humana representa una de las fronteras más formidables en la teoría del control y la computación física. A diferencia de los vehículos autónomos con ruedas que se benefician del equilibrio estático de múltiples puntos, los robots humanoides bípedos operan en una inestabilidad espacial de estado continuo. Para navegar por terrenos terrestres no estructurados (grava, escaleras y superficies resbaladizas), una plataforma humanoide no puede depender de trayectorias de posición rígidas. Requiere control activo de impedancia, modulando la conformidad mecánica a intervalos de milisegundos."
     },
     {
       "type": "h2",
       "text": "1. Fundamentos matemáticos: el modelo virtual de amortiguador de resorte"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Impedance Control in Bipedal Robotics - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Impedance Control in Bipedal Robotics."
+    },
+    {
       "type": "p",
-      "text": "El control de impedancia define una relación objetivo entre el vector de fuerza de contacto externo ($F_{ext}$) y el desplazamiento cinemático resultante ($x - x_0$) en lugar de prescribir coordenadas absolutas:"
+      "text": "La síntesis mecánica de la locomoción humana representa una de las fronteras más formidables en la teoría del control y la computación física. A diferencia de los vehículos autónomos con ruedas que se benefician del equilibrio estático de múltiples puntos, los robots humanoides bípedos operan en una inestabilidad espacial de estado continuo. Para navegar por terrenos terrestres no estructurados (grava, escaleras y superficies resbaladizas), una plataforma humanoide no puede depender de trayectorias de posición rígidas. Requiere control activo de impedancia, modulando la conformidad mecánica a intervalos de milisegundos."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Target Mechanical Impedance:\nF_ext = M_d · (ẍ - ẍ_0) + D_d · (ẋ - ẋ_0) + K_d · (x - x_0)\n\nJoint Torque Mapping via Manipulator Jacobian:\nτ_cmd = J^T(q) · F_ext + G(q) + C(q, q̇)q̇\n\nWhere:\n- M_d: Desired virtual inertia matrix\n- D_d: Virtual damping matrix\n- K_d: Virtual stiffness matrix\n- J^T(q): Jacobian transpose mapping task space to joint torque space\n- G(q): Gravity compensation vector\n- C(q, q̇): Coriolis and centrifugal force matrix"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1526374870839-e155464bb9b2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Impedance Control in Bipedal Robotics - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Impedance Control in Bipedal Robotics."
+    },
+    {
       "type": "p",
-      "text": "Al ajustar $K_d$ y $D_d$ en tiempo real, el bucle de control imita la musculatura biológica. Durante la fase de balanceo de un ciclo de marcha, se maximiza la rigidez para seguir las trayectorias de referencia con alta fidelidad. En el instante exacto en que golpea el talón, la rigidez colapsa a lo largo del eje vertical, lo que permite una absorción de impactos dócil sin una costosa suspensión de hardware."
+      "text": "La síntesis mecánica de la locomoción humana representa una de las fronteras más formidables en la teoría del control y la computación física. A diferencia de los vehículos autónomos con ruedas que se benefician del equilibrio estático de múltiples puntos, los robots humanoides bípedos operan en una inestabilidad espacial de estado continuo. Para navegar por terrenos terrestres no estructurados (grava, escaleras y superficies resbaladizas), una plataforma humanoide no puede depender de trayectorias de posición rígidas. Requiere control activo de impedancia, modulando la conformidad mecánica a intervalos de milisegundos."
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. Punto de momento cero (ZMP) y dinámica del punto de captura"
+      "text": "1. Fundamentos matemáticos: el modelo virtual de amortiguador de resorte"
     },
     {
       "type": "p",
-      "text": "El equilibrio de locomoción se rige por el punto de momento cero (ZMP), la coordenada espacial donde los momentos inerciales y gravitacionales horizontales totales suman cero. Mientras el ZMP resida estrictamente dentro del polígono de soporte definido por el área de contacto del pie del robot, la máquina no puede volcar."
+      "text": "La síntesis mecánica de la locomoción humana representa una de las fronteras más formidables en la teoría del control y la computación física. A diferencia de los vehículos autónomos con ruedas que se benefician del equilibrio estático de múltiples puntos, los robots humanoides bípedos operan en una inestabilidad espacial de estado continuo. Para navegar por terrenos terrestres no estructurados (grava, escaleras y superficies resbaladizas), una plataforma humanoide no puede depender de trayectorias de posición rígidas. Requiere control activo de impedancia, modulando la conformidad mecánica a intervalos de milisegundos."
     },
     {
       "type": "ul",
       "items": [
-        "Límite del polígono de soporte: en la fase de soporte único, el límite de estabilidad se reduce a la suela de un zapato, lo que exige una telemetría del centro de masa de submilisegundos.",
-        "Predicción del punto de captura: si los impulsos externos empujan el ZMP fuera del límite del pie, el controlador de cuerpo entero calcula el punto de captura instantáneo: las coordenadas físicas precisas donde la pierna oscilante debe aterrizar para detener la velocidad de caída.",
-        "Control predictivo de modelo (MPC): los solucionadores de horizonte en retroceso pronostican las fuerzas de reacción del suelo a lo largo de una ventana de trayectoria de 1,5 segundos, resolviendo problemas de optimización cuadrática a 500 Hz."
+        "Support Polygon Boundary: In single-support phase, the stability boundary shrinks to the sole of one shoe, demanding sub-millisecond center-of-mass telemetry.",
+        "Capture Point Prediction: If external impulses push the ZMP outside the foot boundary, the whole-body controller calculates the instantaneous Capture Point—the precise physical coordinates where the swing leg must land to arrest falling velocity.",
+        "Model Predictive Control (MPC): Receding-horizon solvers forecast ground reaction forces across a 1.5-second trajectory window, solving quadratic optimization problems at 500 Hz."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Video Masterclass: Locomoción altamente dinámica en sistemas bípedos"
+      "text": "1. Fundamentos matemáticos: el modelo virtual de amortiguador de resorte"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/tF4DML7FIWk",
-      "title": "Impedancia dinámica de cuerpo entero y locomoción bípeda",
-      "caption": "Demostración de control predictivo de modelos de alta frecuencia, recuperación del equilibrio dinámico y cruce de obstáculos en tiempo real en plataformas humanoides."
+      "title": "Whole-Body Dynamic Impedance and Bipedal Locomotion",
+      "caption": "Demonstration of high-frequency model predictive control, dynamic balance recovery, and real-time obstacle traversal in humanoid platforms."
     },
     {
       "type": "h2",
-      "text": "4. Arquitecturas de actuadores: accionamiento cuasi directo versus engranajes de onda de deformación"
+      "text": "1. Fundamentos matemáticos: el modelo virtual de amortiguador de resorte"
     },
     {
       "type": "p",
-      "text": "La robótica moderna ha sido testigo de un cambio arquitectónico decisivo, alejándose de los engranajes de onda de deformación de alta relación hacia actuadores de accionamiento cuasi directo (QDD). Las relaciones de transmisión altas (100:1) introducen una inercia reflejada extrema ($I_{reflected} \\propto N^2$) y una fricción de retroconducción, lo que degrada la transparencia mecánica y destruye la precisión de la detección de fuerza."
+      "text": "La síntesis mecánica de la locomoción humana representa una de las fronteras más formidables en la teoría del control y la computación física. A diferencia de los vehículos autónomos con ruedas que se benefician del equilibrio estático de múltiples puntos, los robots humanoides bípedos operan en una inestabilidad espacial de estado continuo. Para navegar por terrenos terrestres no estructurados (grava, escaleras y superficies resbaladizas), una plataforma humanoide no puede depender de trayectorias de posición rígidas. Requiere control activo de impedancia, modulando la conformidad mecánica a intervalos de milisegundos."
     },
     {
       "type": "p",
-      "text": "Los actuadores QDD utilizan relaciones de transmisión bajas (menos de 10:1) combinadas con motores outrunner sin escobillas de gran diámetro y alto torque. Esto ofrece una impedancia mecánica ultrabaja, lo que permite que las mediciones de la corriente de fase del motor sirvan como indicadores precisos del par de contacto de las articulaciones sin frágiles células de carga de seis ejes en los tobillos."
+      "text": "La síntesis mecánica de la locomoción humana representa una de las fronteras más formidables en la teoría del control y la computación física. A diferencia de los vehículos autónomos con ruedas que se benefician del equilibrio estático de múltiples puntos, los robots humanoides bípedos operan en una inestabilidad espacial de estado continuo. Para navegar por terrenos terrestres no estructurados (grava, escaleras y superficies resbaladizas), una plataforma humanoide no puede depender de trayectorias de posición rígidas. Requiere control activo de impedancia, modulando la conformidad mecánica a intervalos de milisegundos."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones de la ingeniería de sistemas"
+      "text": "1. Fundamentos matemáticos: el modelo virtual de amortiguador de resorte"
     },
     {
       "type": "ul",
       "items": [
-        "Prioridad de retroconducción: Priorice los actuadores con baja inercia reflejada y cero par de engranaje para garantizar una reflexión transparente de la fuerza en el control de circuito cerrado.",
-        "Pilas de control jerárquico: Separe la optimización de la trayectoria de velocidad lenta (MPC de 50-100 Hz) de los bucles de cumplimiento de impedancia conjunta de alta velocidad (servos de torsión de 1 kHz).",
-        "Redundancia sensorial: fusione la telemetría de aceleración angular IMU de alta velocidad con matrices de codificadores ópticos para filtrar los artefactos de vibración causados ​​por la resonancia estructural."
+        "Backdrivability Priority: Prioritize actuators with low reflected inertia and zero cogging torque to ensure transparent force reflection in closed-loop control.",
+        "Hierarchical Control Stacks: Separate slow-rate trajectory optimization (50-100 Hz MPC) from high-speed joint impedance compliance loops (1 kHz torque servos).",
+        "Sensory Redundancy: Fuse high-rate IMU angular acceleration telemetry with optical encoder arrays to filter vibration artifacts caused by structural resonance."
       ]
     }
   ],
-  "sourceHash": "943137c927c4e31685bbce80894af700866feef1"
+  "sourceHash": "8ef2fffb704852f863759199db294f5ec1b008e6"
 }

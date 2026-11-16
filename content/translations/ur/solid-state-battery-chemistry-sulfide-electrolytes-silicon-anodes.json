@@ -13,7 +13,7 @@
     "engineering"
   ],
   "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "پریسجن انجینئرڈ ہائی انرجی ڈینسٹی الیکٹرو کیمیکل بیٹری سیل لیبارٹری ٹیسٹ سیٹ اپ",
+  "imageAlt": "Precision engineered high energy density electrochemical battery cell laboratory test setup",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "آل-سالڈ سٹیٹ بیٹریاں (ASSBs) مائع سالوینٹ کو غیر نامیاتی سیرامک ​​یا سلفائیڈ آئن کنڈکٹنگ ٹھوس میٹرکس سے بدل دیتی ہیں۔ ٹھوس الیکٹرولائٹس کو خالص دھاتی لیتھیم یا سلکان ڈومیننٹ اینوڈس کے ساتھ جوڑ کر، ASSBs 500 Wh/kg سے زیادہ کشش ثقل توانائی کی کثافت، وسیع تھرمل آپریٹنگ لفافے (-30°C سے 100°C)، اور غیر آتش گیر موروثی حفاظت کا وعدہ کرتے ہیں۔"
+      "text": "کمرشل ایوی ایشن کی برقی کاری، ہیوی ہول فریٹ، اور ہائی رینج مسافر ٹرانزٹ بنیادی طور پر توانائی کی کثافت اور تھرمل رن وے خطرات کی وجہ سے روایتی مائع لیوتھیئم الیکٹروٹیئن سیلز کی وجہ سے محدود ہے۔ کمرشل گریفائٹ سے جڑے ہوئے خلیے تقریباً 280 Wh/kg پر سب سے اوپر ہوتے ہیں اور غیر مستحکم، آتش گیر نامیاتی کاربونیٹ پر انحصار کرتے ہیں جو مکینیکل پنکچر یا اندرونی شارٹ سرکٹس کے تحت جلتے ہیں۔"
     },
     {
       "type": "h2",
       "text": "1. ٹھوس الیکٹرولائٹ کلاسز: سلفائڈز بمقابلہ آکسائڈز بمقابلہ ہیلائڈز"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "کسی بھی ٹھوس ریاست کے فن تعمیر کی عملداری محیطی درجہ حرارت پر آئنک چالکتا ($\\sigma_{ion}$) پر منحصر ہے:"
+      "text": "کمرشل ایوی ایشن کی برقی کاری، ہیوی ہول فریٹ، اور ہائی رینج مسافر ٹرانزٹ بنیادی طور پر توانائی کی کثافت اور تھرمل رن وے خطرات کی وجہ سے روایتی مائع لیوتھیئم الیکٹروٹیئن سیلز کی وجہ سے محدود ہے۔ کمرشل گریفائٹ سے جڑے ہوئے خلیے تقریباً 280 Wh/kg پر سب سے اوپر ہوتے ہیں اور غیر مستحکم، آتش گیر نامیاتی کاربونیٹ پر انحصار کرتے ہیں جو مکینیکل پنکچر یا اندرونی شارٹ سرکٹس کے تحت جلتے ہیں۔"
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Nernst-Einstein Ionic Conductivity Relation:\nσ_ion = (n · q² · D_Li) / (k_B · T)\n\nComparison of Solid Electrolyte Families:\n- Sulfides (LGPS, Argyrodites): σ_ion ≈ 10 to 25 mS/cm (exceeds liquid electrolyte speed), highly ductile, but releases toxic H₂S gas upon ambient moisture exposure.\n- Oxides (Garnet LLZO, NASICON): σ_ion ≈ 1 mS/cm, chemically stable against high-voltage cathodes, but extremely brittle with high interfacial contact resistance.\n- Halides (Li₃InCl₆): σ_ion ≈ 1 to 5 mS/cm, highly oxidative stability (> 4.5 V), excellent compatibility with high-nickel cathodes."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1591696331111-ac95829f2a42?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Solid-State Battery Chemistry - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Solid-State Battery Chemistry."
+    },
+    {
       "type": "p",
-      "text": "چونکہ سلفائیڈ کرسٹل نرم، زیادہ پولرائزیبل سلفر ایون فریم ورک کے مالک ہوتے ہیں، لیتھیم آئنوں کو نقل مکانی کی سرگرمی کی کم رکاوٹوں ($E_a <0.25$ eV) کا سامنا کرنا پڑتا ہے، جو تیز رفتار نقل و حمل کی اجازت دیتا ہے جو روایتی مائع الیکٹرولائٹس کا مقابلہ کرتا ہے۔"
+      "text": "کمرشل ایوی ایشن کی برقی کاری، ہیوی ہول فریٹ، اور ہائی رینج مسافر ٹرانزٹ بنیادی طور پر توانائی کی کثافت اور تھرمل رن وے خطرات کی وجہ سے روایتی مائع لیوتھیئم الیکٹروٹیئن سیلز کی وجہ سے محدود ہے۔ کمرشل گریفائٹ سے جڑے ہوئے خلیے تقریباً 280 Wh/kg پر سب سے اوپر ہوتے ہیں اور غیر مستحکم، آتش گیر نامیاتی کاربونیٹ پر انحصار کرتے ہیں جو مکینیکل پنکچر یا اندرونی شارٹ سرکٹس کے تحت جلتے ہیں۔"
     },
     {
       "type": "quote",
@@ -47,54 +59,54 @@
     },
     {
       "type": "h2",
-      "text": "2. ڈینڈرائٹ کننڈرم: کریٹیکل کرنٹ ڈینسٹی (CCD)"
+      "text": "1. ٹھوس الیکٹرولائٹ کلاسز: سلفائڈز بمقابلہ آکسائڈز بمقابلہ ہیلائڈز"
     },
     {
       "type": "p",
-      "text": "ابتدائی تھیوری نے کہا تھا کہ ایک سخت ٹھوس سیرامک الیکٹرولائٹ میکانکی طور پر لیتھیم کو دبا دے گا۔ ماڈیولس $G_{SE} > 2 \\cdot G_{Li}$)۔ تاہم، اوپرینڈو ایکس رے ٹوموگرافی نے انکشاف کیا کہ لتیم دھات تیزی سے چارج ہونے والی حالتوں میں انٹر گرانولر گرین باؤنڈریز اور مائیکرو کریکس میں آسانی سے گھس جاتی ہے۔"
+      "text": "کمرشل ایوی ایشن کی برقی کاری، ہیوی ہول فریٹ، اور ہائی رینج مسافر ٹرانزٹ بنیادی طور پر توانائی کی کثافت اور تھرمل رن وے خطرات کی وجہ سے روایتی مائع لیوتھیئم الیکٹروٹیئن سیلز کی وجہ سے محدود ہے۔ کمرشل گریفائٹ سے جڑے ہوئے خلیے تقریباً 280 Wh/kg پر سب سے اوپر ہوتے ہیں اور غیر مستحکم، آتش گیر نامیاتی کاربونیٹ پر انحصار کرتے ہیں جو مکینیکل پنکچر یا اندرونی شارٹ سرکٹس کے تحت جلتے ہیں۔"
     },
     {
       "type": "ul",
       "items": [
-        "کریٹیکل کرنٹ ڈینسٹی (CCD): زیادہ سے زیادہ چارجنگ کرنٹ ریٹ جس سے آگے غیر یکساں لیتھیم پلیٹنگ انٹرگرانولر شارٹ سرکٹس شروع کرتی ہے۔",
-        "اسٹیک پریشر مینجمنٹ: 1 سے 5 MPa کے مستقل غیر محوری اسٹیک دباؤ کو برقرار رکھنا ڈسچارج سائیکل کے دوران لیتھیم سٹرپس اور پلیٹوں کے طور پر مباشرت ٹھوس جسمانی رابطے کو یقینی بناتا ہے۔",
-        "انٹرفیشل بفر کوٹنگز: آنے والے لیتھیم کے ساتھ زنک، کاربن، یا سونے کے مرکب کی پتلی ALD (ایٹمک لیئر ڈیپوزیشن) کوٹنگز، 1D فلیمینٹس اسپائکس کے بجائے پلانر 2D گروتھ کو یقینی بناتی ہیں۔"
+        "Critical Current Density (CCD): The maximum charging current rate beyond which non-uniform lithium plating initiates intergranular short circuits.",
+        "Stack Pressure Management: Maintaining constant uniaxial stack pressures of 1 to 5 MPa ensures intimate solid-solid physical contact as lithium strips and plates during discharge cycles.",
+        "Interfacial Buffer Coatings: Thin ALD (Atomic Layer Deposition) coatings of zinc, carbon, or gold alloy with incoming lithium, ensuring planar 2D growth rather than 1D filamentous spikes."
       ]
     },
     {
       "type": "h2",
-      "text": "3. ویڈیو ماسٹر کلاس: ہائی وولٹیج الیکٹرو کیمسٹری اور ایڈوانسڈ سٹوریج"
+      "text": "1. ٹھوس الیکٹرولائٹ کلاسز: سلفائڈز بمقابلہ آکسائڈز بمقابلہ ہیلائڈز"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/v1BMWczn7JM",
-      "title": "ہائی وولٹیج الیکٹرو کیمیکل انرجی سٹوریج اور ایڈوانسڈ گرڈ بیٹریز",
-      "caption": "جدید بیٹری کیمسٹری، سالڈ سٹیٹ سیل آرکیٹیکچر، اور یوٹیلٹی انرجی سٹوریج کا انجینئرنگ تجزیہ۔"
+      "title": "High Voltage Electrochemical Energy Storage and Advanced Grid Batteries",
+      "caption": "Engineering analysis of advanced battery chemistry, solid-state cell architecture, and utility-scale energy storage."
     },
     {
       "type": "h2",
-      "text": "4. سلیکون کمپوزٹ انوڈس: 300% والیومیٹرک ایکسپینشن میکانکس"
+      "text": "1. ٹھوس الیکٹرولائٹ کلاسز: سلفائڈز بمقابلہ آکسائڈز بمقابلہ ہیلائڈز"
     },
     {
       "type": "p",
-      "text": "جبکہ خالص لتیم دھات حتمی مقصد بنی ہوئی ہے، سلکان ایک غیر معمولی درمیانی پل فراہم کرتا ہے۔ سلکان 3,579 mAh/g ($Li_{15}Si_4$) کی نظریاتی مخصوص صلاحیت کا حامل ہے، جو تجارتی گریفائٹ (372 mAh/g) سے تقریباً دس گنا زیادہ ہے۔"
+      "text": "کمرشل ایوی ایشن کی برقی کاری، ہیوی ہول فریٹ، اور ہائی رینج مسافر ٹرانزٹ بنیادی طور پر توانائی کی کثافت اور تھرمل رن وے خطرات کی وجہ سے روایتی مائع لیوتھیئم الیکٹروٹیئن سیلز کی وجہ سے محدود ہے۔ کمرشل گریفائٹ سے جڑے ہوئے خلیے تقریباً 280 Wh/kg پر سب سے اوپر ہوتے ہیں اور غیر مستحکم، آتش گیر نامیاتی کاربونیٹ پر انحصار کرتے ہیں جو مکینیکل پنکچر یا اندرونی شارٹ سرکٹس کے تحت جلتے ہیں۔"
     },
     {
       "type": "p",
-      "text": "تاہم، لتھیاشن روایتی الیکٹروڈز کو پلورائز کرتے ہوئے، شدید 300% والیومیٹرک توسیع کا باعث بنتا ہے۔ جب اعلی انٹرفیشل لچک کے ساتھ ایلسٹومیرک سالڈ سٹیٹ بائنڈر میٹرکس کے اندر ایمبیڈ کیا جاتا ہے، تو مائیکرو سیلیکون کمپوزٹ انوڈس برقی ٹکرانے والے راستوں کو کھوئے بغیر سائیکلک سانس لینے کو ایڈجسٹ کرتے ہیں۔"
+      "text": "کمرشل ایوی ایشن کی برقی کاری، ہیوی ہول فریٹ، اور ہائی رینج مسافر ٹرانزٹ بنیادی طور پر توانائی کی کثافت اور تھرمل رن وے خطرات کی وجہ سے روایتی مائع لیوتھیئم الیکٹروٹیئن سیلز کی وجہ سے محدود ہے۔ کمرشل گریفائٹ سے جڑے ہوئے خلیے تقریباً 280 Wh/kg پر سب سے اوپر ہوتے ہیں اور غیر مستحکم، آتش گیر نامیاتی کاربونیٹ پر انحصار کرتے ہیں جو مکینیکل پنکچر یا اندرونی شارٹ سرکٹس کے تحت جلتے ہیں۔"
     },
     {
       "type": "h2",
-      "text": "5. الیکٹرو کیمیکل سسٹمز انجینئرنگ ٹیک ویز"
+      "text": "1. ٹھوس الیکٹرولائٹ کلاسز: سلفائڈز بمقابلہ آکسائڈز بمقابلہ ہیلائڈز"
     },
     {
       "type": "ul",
       "items": [
-        "اسٹیک کمپریشن انجینئرنگ: 20% اسٹیٹ آف چارج موٹائی کے جھولوں کے ذریعے مسلسل انٹرفیشل رابطے کو برقرار رکھنے کے لیے اسپرنگ سے بھری مکینیکل پلیٹین کے ساتھ سیل ہاؤسنگ ڈیزائن کریں۔",
-        "ڈرائی روم مینوفیکچرنگ: سلفائیڈ ٹھوس الیکٹرولائٹ پروڈکشن کو مہلک ہائیڈروجن سلفائیڈ کی سڑن کو روکنے کے لیے انتہائی خشک ماحول (او پوائنٹ <-50°C) کی ضرورت ہوتی ہے۔",
-        "ہائی نکل کیتھوڈ کپلنگ: ہائی سیل وولٹیجز (> 4.3V) پر مائیکرو کریکنگ کو ختم کرنے کے لیے ٹھوس الیکٹرولائٹس کو سنگل کرسٹل NMC90 کیتھوڈس کے ساتھ جوڑیں۔"
+        "Stack Compression Engineering: Design cell housings with spring-loaded mechanical platens to maintain continuous interfacial contact through 20% state-of-charge thickness swings.",
+        "Dry Room Manufacturing: Sulfide solid electrolyte production requires ultra-dry atmospheres (dew point < -50°C) to prevent lethal hydrogen sulfide decomposition.",
+        "High-Nickel Cathode Coupling: Pair solid electrolytes with single-crystal NMC90 cathodes coated in lithium borate to eliminate micro-cracking at high cell voltages (> 4.3V)."
       ]
     }
   ],
-  "sourceHash": "6c79fa7b436a966eb31011d7e669ab575677147b"
+  "sourceHash": "e0806f8db83836b836c0cab1afb220067ff2ed18"
 }

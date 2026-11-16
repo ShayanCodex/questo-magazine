@@ -11,8 +11,8 @@
     "sports-science",
     "biomechanics"
   ],
-  "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Perspectiva aérea de las líneas arquitectónicas de los campos de fútbol y de las zonas de juego estructurales",
+  "image": "/images/articles/football-pressing-geometry.jpg",
+  "imageAlt": "Aerial perspective of architectural football pitch grid lines and structural playing zones",
   "body": [
     {
       "type": "p",
@@ -24,11 +24,17 @@
     },
     {
       "type": "p",
-      "text": "La gramática estructural del juego posicional se basa en dividir el campo estándar de 105 por 68 metros en cinco corredores verticales: el ala izquierda, el semiespacio izquierdo, la zona central, el semiespacio derecho y el ala derecha. La discretización horizontal divide aún más el área de juego en tercios defensivo, medio y atacante, generando dieciocho zonas espaciales designadas."
+      "text": "Durante las últimas dos décadas, el fútbol de élite europeo ha experimentado una rigurosa racionalización matemática y estructural. La confianza histórica en la brillantez individual intuitiva ha sido subordinada a la geometría espacial sistémica. Conceptualizado a través del fútbol total holandés y refinado en el Juego de Posición contemporáneo, los gerentes tácticos de élite tratan el campo no como un lienzo fluido de improvisación, sino como una austera cuadrícula de coordenadas donde el posicionamiento espacial dicta directamente superioridades numéricas, posicionales y cualitativas."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Geometry of Modern Pressing - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for The Geometry of Modern Pressing."
     },
     {
       "type": "p",
-      "text": "El axioma fundamental del Juego Posicional dicta que no más de dos jugadores pueden ocupar la misma línea vertical simultáneamente, y no más de tres jugadores pueden ocupar la misma banda horizontal. Esta estricta disciplina estructural crea ángulos de pase triangulares y en forma de diamante naturales, lo que garantiza una progresión diagonal continua de la pelota y al mismo tiempo mantiene una dispersión equilibrada del lanzamiento."
+      "text": "Durante las últimas dos décadas, el fútbol de élite europeo ha experimentado una rigurosa racionalización matemática y estructural. La confianza histórica en la brillantez individual intuitiva ha sido subordinada a la geometría espacial sistémica. Conceptualizado a través del fútbol total holandés y refinado en el Juego de Posición contemporáneo, los gerentes tácticos de élite tratan el campo no como un lienzo fluido de improvisación, sino como una austera cuadrícula de coordenadas donde el posicionamiento espacial dicta directamente superioridades numéricas, posicionales y cualitativas."
     },
     {
       "type": "quote",
@@ -36,55 +42,61 @@
       "cite": "Liam O’Connor, biomecánico deportivo de alto rendimiento"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Geometry of Modern Pressing - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Geometry of Modern Pressing."
+    },
+    {
       "type": "h2",
-      "text": "2. La anatomía de la defensa en reposo: formaciones 3-2 y 2-3"
+      "text": "1. Discretización del campo: los cinco corredores verticales"
     },
     {
       "type": "p",
-      "text": "El principal indicador de la solidez defensiva sostenida de un equipo de élite no es cómo defiende dentro de su propio área de dieciocho yardas, sino cómo organiza a sus jugadores no poseedores durante las fases de ataque activo, una disciplina designada como defensa en reposo (Restabsicherung)."
+      "text": "Durante las últimas dos décadas, el fútbol de élite europeo ha experimentado una rigurosa racionalización matemática y estructural. La confianza histórica en la brillantez individual intuitiva ha sido subordinada a la geometría espacial sistémica. Conceptualizado a través del fútbol total holandés y refinado en el Juego de Posición contemporáneo, los gerentes tácticos de élite tratan el campo no como un lienzo fluido de improvisación, sino como una austera cuadrícula de coordenadas donde el posicionamiento espacial dicta directamente superioridades numéricas, posicionales y cualitativas."
     },
     {
       "type": "ul",
       "items": [
-        "La base 3-2: Tres defensores centrales (o dos centrales flanqueados por un lateral escondido) forman una base protectora, protegida por un doble pivote. Esta configuración bloquea ambos canales de contraataque de medio espacio mientras mantiene la compacidad central.",
-        "La inversión 2-3: Dos centrales físicos operan detrás de un trío de mediocampo invertido, diseñado para interceptar segundos balones sueltos y ejecutar una contrapresión inmediata al perder el balón.",
-        "Restricción de proximidad: Los jugadores defensores en descanso deben posicionarse entre ocho y doce metros del portador del balón para comprimir el espacio de transición en el que se concede la posesión de microsegundos."
+        "The 3-2 Base: Three central defenders (or two center-backs flanked by a tucked-in full-back) form a protective base, shielded by a double pivot. This configuration locks down both half-space counter-attacking channels while maintaining central compactness.",
+        "The 2-3 Inversion: Two physical center-backs operate behind an inverted midfield trio, designed to intercept loose second balls and execute immediate counterpressing upon turnover.",
+        "Proximity Constraint: Rest-defense players must position themselves within eight to twelve meters of the ball carrier to compress transition space the microsecond possession is conceded."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Análisis táctico en vídeo: juego posicional y activadores de presión"
+      "text": "1. Discretización del campo: los cinco corredores verticales"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dNtRo9LGiUU",
-      "title": "Análisis táctico del juego posicional y presión moderno",
-      "caption": "Análisis de vídeo en profundidad que analiza los ángulos de presión, la orientación de la forma del cuerpo y las fases de contratransición."
+      "title": "Tactical Analysis of Modern Pressing and Positional Play",
+      "caption": "In-depth video analysis analyzing pressing angles, body shape orientation, and counter-transition phases."
     },
     {
       "type": "h2",
-      "text": "4. Disparadores de contrapresión y la regla de los cinco segundos"
+      "text": "1. Discretización del campo: los cinco corredores verticales"
     },
     {
       "type": "p",
-      "text": "Cuando se pierde la posesión en el último tercio, un colectivo de presión de élite no se retira a un bloqueo medio pasivo. En cambio, explotan la vulnerabilidad transicional del oponente. El jugador que acaba de interceptar o recuperar el balón se encuentra físicamente desequilibrado, con la visión estrechada hacia sus pies, careciendo de orientación espacial."
+      "text": "Durante las últimas dos décadas, el fútbol de élite europeo ha experimentado una rigurosa racionalización matemática y estructural. La confianza histórica en la brillantez individual intuitiva ha sido subordinada a la geometría espacial sistémica. Conceptualizado a través del fútbol total holandés y refinado en el Juego de Posición contemporáneo, los gerentes tácticos de élite tratan el campo no como un lienzo fluido de improvisación, sino como una austera cuadrícula de coordenadas donde el posicionamiento espacial dicta directamente superioridades numéricas, posicionales y cualitativas."
     },
     {
       "type": "p",
-      "text": "Los sistemas de prensado modernos implementan una compresión agresiva inmediata dentro de una ventana temporal estricta de tres a cinco segundos. Los dos defensores más cercanos ejecutan un ángulo de cierre parabólico que corta las líneas de pase hacia el pie dominante del portador del balón, mientras que los corredores del tercer hombre bloquean las salidas de pase adyacentes. Si no se puede recuperar limpiamente la posesión en cinco segundos, el bloque defensivo se reinicia en una forma de contención sincronizada de 4-4-2 o 5-3-2."
+      "text": "Durante las últimas dos décadas, el fútbol de élite europeo ha experimentado una rigurosa racionalización matemática y estructural. La confianza histórica en la brillantez individual intuitiva ha sido subordinada a la geometría espacial sistémica. Conceptualizado a través del fútbol total holandés y refinado en el Juego de Posición contemporáneo, los gerentes tácticos de élite tratan el campo no como un lienzo fluido de improvisación, sino como una austera cuadrícula de coordenadas donde el posicionamiento espacial dicta directamente superioridades numéricas, posicionales y cualitativas."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones tácticas e ideas clave"
+      "text": "1. Discretización del campo: los cinco corredores verticales"
     },
     {
       "type": "ul",
       "items": [
-        "Zonificación del campo: la utilización de la cuadrícula de cinco corredores elimina la observación de bolas en racimo y preserva los diamantes de pase dinámicos.",
-        "Defensa-descanso proactiva: Los partidos se deciden frecuentemente por la posición estructural de los cinco jugadores de campo que no tocan directamente el balón.",
-        "Aceleración de la transición: La contrapresión sirve como contramedida defensiva y como el instrumento de creación de juego más potente en el fútbol moderno."
+        "Pitch Zoning: Utilizing the five-corridor grid eliminates cluster ball-watching and preserves dynamic passing diamonds.",
+        "Proactive Rest-Defense: Matches are frequently decided by the structural positioning of the five outfield players not directly touching the ball.",
+        "Transition Acceleration: Counterpressing serves as both a defensive counter-measure and the most potent playmaking instrument in modern football."
       ]
     }
   ],
-  "sourceHash": "9349966a04cdc4391fcabd4aef43618dd6ed5087"
+  "sourceHash": "9dbec62008d8952b5f910cdc5b7438df204c1a70"
 }

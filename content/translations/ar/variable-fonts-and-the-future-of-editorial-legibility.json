@@ -11,8 +11,8 @@
     "fonts",
     "accessibility"
   ],
-  "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "صورة ماكرو لأنواع الخطوط المتحركة المعدنية المنحوتة بدقة والحبر المطبعي",
+  "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Macro photograph of finely carved metallic movable type sorts and typographic ink",
   "body": [
     {
       "type": "p",
@@ -24,7 +24,13 @@
     },
     {
       "type": "p",
-      "text": "أدت مواصفات تنوعات خطوط OpenType إلى حل هذه الحدود التاريخية. يحتوي ملف خط متغير واحد على محاور متواصلة متعددة الأبعاد - الوزن (wght)، العرض (wdth)، الميل (slnt)، والأهم من ذلك، الحجم البصري (opsz). بدلاً من القفز بشكل منفصل من 400 إلى 700، يمكن للمصممين استيفاء الوزن ديناميكيًا عند 523 أو 648 بناءً على مستشعرات الإضاءة المحيطة أو DPI للشاشة."
+      "text": "لمدة خمسة قرون بعد اختراع يوهانس جوتنبرج للكتابة المتحركة، كان الخط عبارة عن قطعة أثرية مادية غير مرنة. إذا كانت الطابعة تتطلب خطًا مائلًا مكونًا من 8 نقاط وخطًا عريضًا مكونًا من 24 نقطة، فيجب صب مجموعتين منفصلتين تمامًا من ثقوب الرصاص. أمضى الويب عقوده الثلاثة الأولى في تكرار هذا النموذج الصارم من خلال تنزيل ملفات خطوط الويب المنفصلة لكل وزن."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Variable Fonts and the Future of Editorial Legibility."
     },
     {
       "type": "code",
@@ -37,21 +43,27 @@
       "cite": "ساسكيا ليندكفيست، The Living Letterform"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
+    },
+    {
       "type": "h3",
       "text": "المزايا الرئيسية المريحة والأداء"
     },
     {
       "type": "ul",
       "items": [
-        "كفاءة الشبكة: استبدال 12 ملف خط منفصل (إجمالي 400 كيلو بايت +) بحمولة متغيرة واحدة محسنة للغاية تبلغ 42 كيلو بايت WOFF2.",
-        "التصحيح البصري التلقائي: في أحجام الجسم الصغيرة (12-14 بكسل)، تتسع عدادات الحروف وتزداد ارتفاعات x تلقائيًا لمنع احتجاز الحبر وإجهاد العين.",
-        "التكيف مع الوضع المظلم سريع الاستجابة: تقليل وزن خط النص تلقائيًا بمقدار 15-20 وحدة في الوضع المظلم لمواجهة هالة النص الساطعة على الخلفيات السوداء."
+        "Network efficiency: Replacing 12 separate font files (totaling 400KB+) with a single, highly-optimized 42KB WOFF2 variable payload.",
+        "Automatic optical correction: At small body sizes (12-14px), letter counters widen and x-heights increase automatically to prevent ink trapping and eye strain.",
+        "Responsive dark mode adaptation: Automatically decreasing text font-weight by 15-20 units in dark mode to counteract bright text halation against black backgrounds."
       ]
     },
     {
       "type": "p",
-      "text": "من خلال الطباعة المتغيرة، يعمل النشر الرقمي أخيرًا على سد الفجوة بين الحرفية التاريخية للدراسات المطبوعة الفاخرة والاستجابة المرنة لهندسة الويب الحديثة."
+      "text": "لمدة خمسة قرون بعد اختراع يوهانس جوتنبرج للكتابة المتحركة، كان الخط عبارة عن قطعة أثرية مادية غير مرنة. إذا كانت الطابعة تتطلب خطًا مائلًا مكونًا من 8 نقاط وخطًا عريضًا مكونًا من 24 نقطة، فيجب صب مجموعتين منفصلتين تمامًا من ثقوب الرصاص. أمضى الويب عقوده الثلاثة الأولى في تكرار هذا النموذج الصارم من خلال تنزيل ملفات خطوط الويب المنفصلة لكل وزن."
     }
   ],
-  "sourceHash": "2acab3db8f9fd9b3b0b63cf6d590a250b1863740"
+  "sourceHash": "693d8e0abd96891755d7864ea0e0fe3017dd364a"
 }

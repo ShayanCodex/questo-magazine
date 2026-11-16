@@ -1,0 +1,79 @@
+{
+  "slug": "the-mechanics-of-founder-equity-and-dilution-cascades",
+  "title": "آليات حقوق الملكية للمؤسس: جداول الحد الأقصى، وتفضيلات التصفية وشلالات التخفيف",
+  "excerpt": "فحص رياضي صارم للأدوات القابلة للتحويل، وخلطات مجمعة الخيارات، والعلامات المائية للتصفية، وميكانيكا مكافحة التخفيف.",
+  "date": "2026-11-16",
+  "author": "Elena Vance",
+  "tags": [
+    "venture-capital",
+    "cap-tables",
+    "founder-equity",
+    "corporate-governance",
+    "startups"
+  ],
+  "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Modern glass skyscraper headquarters representing venture finance and corporate equity governance",
+  "body": [
+    {
+      "type": "h2",
+      "text": "رياضيات جداول الرسملة"
+    },
+    {
+      "type": "p",
+      "text": "في دورة الحياة المبكرة لمشاريع التكنولوجيا، غالبًا ما يتم التعامل مع جداول الرسملة على أنها دفاتر محاسبية ثابتة بدلاً من أنظمة ديناميكية للمطالبات التفاضلية. مع تقدم الشركات من السندات القابلة للتحويل قبل التأسيس من خلال الجولات المفضلة المتعاقبة، فإن التأثيرات المركبة لتوسعات مجموعة الخيارات غير المخصصة، والمضاعفات المفضلة المشاركة، وتفضيلات التصفية العليا تخلق عدم خطية عميقة في تحقيق الأسهم النهائية."
+    },
+    {
+      "type": "h2",
+      "text": "رياضيات جداول الرسملة"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1556742049-0a67e557224d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Executive venture financing agreement and capitalization table term sheet modeling",
+      "caption": "Option pool shuffle: pre-money ESOP allocation concentrating dilution risk entirely upon founding common equity."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The Option Pool Shuffle: Expanding employee stock ownership plans (ESOP) immediately prior to rather than following a financing round systematically shifts dilution entirely onto existing common stockholders.",
+        "Convertible Valuation Caps vs Discounts: Early SAFEs that convert into subsequent priced equity without pre-money consensus can inadvertently trigger massive ownership compression for founders.",
+        "Liquidation Preference Watermarks: 1x non-participating preferred shares establish a floor of downside protection, whereas participating preferred structures grant investors double-dipping rights into residual common value.",
+        "Broad-Based Weighted Average Antidilution: Mathematical adjustment formulas protect preferred series in down-rounds while mitigating the destructive wipeout risk of full-ratchet provisions."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "جدول الكتابة بالأحرف الكبيرة ليس مجرد سجل للملكية؛ فهو عقد هيكلي يحكم توزيع المخاطر، وحقوق السيطرة، ومواءمة الحوافز النهائية في ظل حالة عدم اليقين الاقتصادي الشديدة.",
+      "cite": "مراجعة تمويل الشركات وحوكمة المشاريع"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1560472324-a2a11b619d08?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Corporate governance board meeting evaluating liquidation waterfall payouts and dilution curves",
+      "caption": "Liquidation waterfalls: modeling payout thresholds across non-participating preferred seniority tranches."
+    },
+    {
+      "type": "h2",
+      "text": "رياضيات جداول الرسملة"
+    },
+    {
+      "type": "p",
+      "text": "في دورة الحياة المبكرة لمشاريع التكنولوجيا، غالبًا ما يتم التعامل مع جداول الرسملة على أنها دفاتر محاسبية ثابتة بدلاً من أنظمة ديناميكية للمطالبات التفاضلية. مع تقدم الشركات من السندات القابلة للتحويل قبل التأسيس من خلال الجولات المفضلة المتعاقبة، فإن التأثيرات المركبة لتوسعات مجموعة الخيارات غير المخصصة، والمضاعفات المفضلة المشاركة، وتفضيلات التصفية العليا تخلق عدم خطية عميقة في تحقيق الأسهم النهائية."
+    },
+    {
+      "type": "video",
+      "title": "Venture Capital Cap Table Mechanics and Liquidation Preference Analysis",
+      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution.",
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+    },
+    {
+      "type": "h2",
+      "text": "رياضيات جداول الرسملة"
+    },
+    {
+      "type": "p",
+      "text": "في دورة الحياة المبكرة لمشاريع التكنولوجيا، غالبًا ما يتم التعامل مع جداول الرسملة على أنها دفاتر محاسبية ثابتة بدلاً من أنظمة ديناميكية للمطالبات التفاضلية. مع تقدم الشركات من السندات القابلة للتحويل قبل التأسيس من خلال الجولات المفضلة المتعاقبة، فإن التأثيرات المركبة لتوسعات مجموعة الخيارات غير المخصصة، والمضاعفات المفضلة المشاركة، وتفضيلات التصفية العليا تخلق عدم خطية عميقة في تحقيق الأسهم النهائية."
+    }
+  ],
+  "sourceHash": "e62f37573d49b9a50ddc0354e6511265a37bc9f3"
+}

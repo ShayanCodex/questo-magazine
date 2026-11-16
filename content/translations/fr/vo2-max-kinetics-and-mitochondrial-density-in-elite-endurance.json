@@ -1,0 +1,79 @@
+{
+  "slug": "vo2-max-kinetics-and-mitochondrial-density-in-elite-endurance",
+  "title": "Cinétique VO2 Max : densité capillaire, débit cardiaque et dynamique de la clairance du lactate",
+  "excerpt": "Étude des régulateurs physiologiques de l'endurance humaine : adaptations du volume systolique, taux d'extraction périphérique d'oxygène et distribution polarisée de l'entraînement.",
+  "date": "2026-11-16",
+  "author": "Liam O’Connor",
+  "tags": [
+    "endurance-physiology",
+    "vo2-max",
+    "mitochondria",
+    "sports-science",
+    "metabolism"
+  ],
+  "image": "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Endurance trail runner scaling high-altitude mountain path in early morning light",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La triade de la performance aérobie humaine"
+    },
+    {
+      "type": "p",
+      "text": "La capacité d'endurance humaine lors d'événements sportifs soutenus est régie par trois variables physiologiques interdépendantes : la consommation maximale d'oxygène (VO2 max), le pourcentage de VO2 max durable sans accumulation excessive de lactate dans le sang (utilisation fractionnée ou seuil de lactate) et l'économie mécanique (le coût en oxygène requis pour maintenir une vitesse donnée). Alors que les prédispositions génétiques établissent des plafonds théoriques, la plasticité adaptative du système cardiovasculaire et du tissu musculaire squelettique permet un remodelage profond à long terme."
+    },
+    {
+      "type": "h2",
+      "text": "La triade de la performance aérobie humaine"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Athlete wearing cardiopulmonary metabolic cart mask measuring oxygen uptake and respiratory quotient",
+      "caption": "Metabolic gas exchange: quantifying maximal oxygen consumption (VO2 max) and ventilatory thresholds on treadmill."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cardiac Stroke Volume: In healthy elite athletes, maximal cardiac output is primarily limited by left ventricular compliance and end-diastolic filling volume, which determines systemic oxygen delivery.",
+        "Capillary-to-Fiber Ratios: Angiogenesis increases the functional transit time of red blood cells through active skeletal muscle capillary beds, optimizing offloading of oxygen to myoglobin.",
+        "Mitochondrial Reticular Density: Aerobic conditioning stimulates peroxisome proliferator-activated receptor gamma coactivator 1-alpha (PGC-1α), triggering mitochondrial biogenesis and cristae surface expansion.",
+        "MCT1 & MCT4 Lactate Transporters: Cellular adaptations upregulate monocarboxylate transporters that shuttle lactate and hydrogen ions from glycolytic fibers into oxidative fibers for direct substrate oxidation."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "L'endurance n'est pas la capacité de résister à la souffrance ; c'est la capacité physiologique à régénérer l'adénosine triphosphate par phosphorylation oxydative avec une perturbation métabolique minimale.",
+      "cite": "Journal of Applied Sports Physiology & Exercise Science"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1521537634581-0dced2fed2a8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-performance biometric telemetry tracking stroke volume and neuromuscular cadence",
+      "caption": "Polarized training: 80% volume executed in low-intensity Zone 2 to stimulate capillary angiogenesis and PGC-1α biogenesis."
+    },
+    {
+      "type": "h2",
+      "text": "La triade de la performance aérobie humaine"
+    },
+    {
+      "type": "p",
+      "text": "La capacité d'endurance humaine lors d'événements sportifs soutenus est régie par trois variables physiologiques interdépendantes : la consommation maximale d'oxygène (VO2 max), le pourcentage de VO2 max durable sans accumulation excessive de lactate dans le sang (utilisation fractionnée ou seuil de lactate) et l'économie mécanique (le coût en oxygène requis pour maintenir une vitesse donnée). Alors que les prédispositions génétiques établissent des plafonds théoriques, la plasticité adaptative du système cardiovasculaire et du tissu musculaire squelettique permet un remodelage profond à long terme."
+    },
+    {
+      "type": "video",
+      "title": "Physiological Adaptations to Aerobic Exercise: VO2 Max and Mitochondrial Biogenesis",
+      "caption": "Comprehensive lecture on cardiovascular remodeling, microvascular adaptation, and energy system partitioning during endurance exercise.",
+      "src": "https://www.youtube-nocookie.com/embed/W9J_oO3kQdM"
+    },
+    {
+      "type": "h2",
+      "text": "La triade de la performance aérobie humaine"
+    },
+    {
+      "type": "p",
+      "text": "La capacité d'endurance humaine lors d'événements sportifs soutenus est régie par trois variables physiologiques interdépendantes : la consommation maximale d'oxygène (VO2 max), le pourcentage de VO2 max durable sans accumulation excessive de lactate dans le sang (utilisation fractionnée ou seuil de lactate) et l'économie mécanique (le coût en oxygène requis pour maintenir une vitesse donnée). Alors que les prédispositions génétiques établissent des plafonds théoriques, la plasticité adaptative du système cardiovasculaire et du tissu musculaire squelettique permet un remodelage profond à long terme."
+    }
+  ],
+  "sourceHash": "7315480ca257bd7c6eb88e959039cf2f21a6774f"
+}

@@ -13,7 +13,7 @@
     "engineering"
   ],
   "image": "/images/articles/llm-training-code.jpg",
-  "imageAlt": "Code de boucle de formation d'apprentissage profond Python hautes performances sur écran IDE sombre",
+  "imageAlt": "High performance Python deep learning training loop code on dark IDE display",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Le cycle de vie d'un LLM se divise clairement en quatre régimes séquentiels : conservation du corpus et tokenisation de l'encodage par paires d'octets, pré-entraînement auto-supervisé à l'échelle du pétaoctet, réglage fin supervisé (SFT) pour la conformité des instructions et apprentissage par renforcement à partir de la rétroaction humaine (RLHF) pour aligner les sorties du modèle avec l'intention humaine."
+      "text": "Construire un modèle de base génératif de frontière à partir des premiers principes est un exercice d'optimisation numérique appliquée, d'ingénierie de systèmes distribués et de modélisation de langage statistique. À la base, un transformateur génératif pré-entraîné ne comprend pas la sémantique au sens humain ; il estime une distribution de probabilité conjointe de grande dimension sur des jetons de vocabulaire discrets en minimisant la perte d'entropie croisée autorégressive sur des milliards d'octets d'entraînement."
     },
     {
       "type": "h2",
       "text": "1. Tokenisation : codage par paires d'octets et compression de vocabulaire"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1633356122102-b61ac6cbca0d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Training LLMs from Scratch."
+    },
+    {
       "type": "p",
-      "text": "Le langage naturel brut ne peut pas être traité directement par des opérations matricielles linéaires. Il doit d'abord être discrétisé en identifiants de jetons entiers via Byte-Pair Encoding (BPE) :"
+      "text": "Construire un modèle de base génératif de frontière à partir des premiers principes est un exercice d'optimisation numérique appliquée, d'ingénierie de systèmes distribués et de modélisation de langage statistique. À la base, un transformateur génératif pré-entraîné ne comprend pas la sémantique au sens humain ; il estime une distribution de probabilité conjointe de grande dimension sur des jetons de vocabulaire discrets en minimisant la perte d'entropie croisée autorégressive sur des milliards d'octets d'entraînement."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "BPE Iterative Pair Merge Formulation:\nVocabulary V = Initial byte symbols (0..255)\nIterative rule: Find pair (c_i, c_j) with argmax frequency(c_i, c_j) in corpus\nMerge: New symbol c_new = c_i ⊕ c_j\nUpdate: V ← V ∪ {c_new}\nRepeat until |V| = target_vocab_size (typically 32,000 to 128,000)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Training LLMs from Scratch - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Training LLMs from Scratch."
+    },
+    {
       "type": "p",
-      "text": "Cibler une taille de vocabulaire optimale nécessite de faire un compromis technique : des vocabulaires plus grands compressent la longueur de la séquence et réduisent la latence d'inférence, mais augmentent l'empreinte mémoire de la matrice d'intégration d'entrée et de la couche de projection de désintégration de sortie finale."
+      "text": "Construire un modèle de base génératif de frontière à partir des premiers principes est un exercice d'optimisation numérique appliquée, d'ingénierie de systèmes distribués et de modélisation de langage statistique. À la base, un transformateur génératif pré-entraîné ne comprend pas la sémantique au sens humain ; il estime une distribution de probabilité conjointe de grande dimension sur des jetons de vocabulaire discrets en minimisant la perte d'entropie croisée autorégressive sur des milliards d'octets d'entraînement."
     },
     {
       "type": "quote",
@@ -47,55 +59,55 @@
     },
     {
       "type": "h2",
-      "text": "2. Dynamique de pré-entraînement et parallélisme 3D distribué"
+      "text": "1. Tokenisation : codage par paires d'octets et compression de vocabulaire"
     },
     {
       "type": "p",
-      "text": "La formation d'un modèle de paramètres 70B sur des centaines de gigaoctets de VRAM GPU dépasse la capacité de n'importe quelle puce d'accélérateur unique. Les clusters modernes orchestrent le parallélisme 3D :"
+      "text": "Construire un modèle de base génératif de frontière à partir des premiers principes est un exercice d'optimisation numérique appliquée, d'ingénierie de systèmes distribués et de modélisation de langage statistique. À la base, un transformateur génératif pré-entraîné ne comprend pas la sémantique au sens humain ; il estime une distribution de probabilité conjointe de grande dimension sur des jetons de vocabulaire discrets en minimisant la perte d'entropie croisée autorégressive sur des milliards d'octets d'entraînement."
     },
     {
       "type": "ul",
       "items": [
-        "Parallélisme tensoriel (Megatron-LM) : partitionne les matrices de poids individuelles (telles que les projections de requêtes, de clés et de rétroaction) entre les GPU au sein du même domaine NVLink.",
-        "Parallélisme du pipeline : découpe les couches de transformateur de manière séquentielle sur des nœuds de serveur distincts, en transmettant les états d'activation cachés en avant et en arrière.",
-        "Parallélisme des données avec ZeRO-3 : partage les états, les gradients et les paramètres du modèle de l'optimiseur de fragments sur le cluster distribué, éliminant ainsi la duplication de mémoire redondante.",
-        "Intégration FlashAttention-3 : élimine la matérialisation des matrices d'attention quadratiques N×N dans HBM en fusionnant la mise à l'échelle softmax et la multiplication matricielle directement dans les registres SRAM."
+        "Tensor Parallelism (Megatron-LM): Partitions individual weight matrices (such as query, key, and feed-forward projections) across GPUs within the same NVLink domain.",
+        "Pipeline Parallelism: Slices transformer layers sequentially across distinct server nodes, passing hidden activation states forward and backward.",
+        "Data Parallelism with ZeRO-3: Shards optimizer states, gradients, and model parameters across the distributed cluster, eliminating redundant memory duplication.",
+        "FlashAttention-3 Integration: Eliminates materialization of quadratic N×N attention matrices in HBM by fusing softmax scaling and matrix multiplication directly into SRAM registers."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Masterclass vidéo : Création de modèles GPT et de transformateurs à partir de zéro"
+      "text": "1. Tokenisation : codage par paires d'octets et compression de vocabulaire"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kCc8FmEb1nY",
-      "title": "Création et formation de transformateurs pré-entraînés génératifs à partir de zéro",
-      "caption": "Masterclass d'Andrej Karpathy sur la mécanique mathématique de la construction, de la compilation et de la formation de modèles de langage de transformateur autorégressifs à partir du code."
+      "title": "Building and Training Generative Pretrained Transformers from Scratch",
+      "caption": "Andrej Karpathy's masterclass on the mathematical mechanics of building, compiling, and training autoregressive transformer language models from code."
     },
     {
       "type": "h2",
-      "text": "4. Alignement : réglage fin supervisé et optimisation directe des préférences (DPO)"
+      "text": "1. Tokenisation : codage par paires d'octets et compression de vocabulaire"
     },
     {
       "type": "p",
-      "text": "Un modèle de base brut pré-entraîné est simplement un compléteur de document sans entrave. Pour le convertir en un assistant efficace, les ingénieurs affinent le modèle sur des transcriptions conversationnelles multi-tours organisées en utilisant la perte d'entropie croisée avec des invites de saisie masquées."
+      "text": "Construire un modèle de base génératif de frontière à partir des premiers principes est un exercice d'optimisation numérique appliquée, d'ingénierie de systèmes distribués et de modélisation de langage statistique. À la base, un transformateur génératif pré-entraîné ne comprend pas la sémantique au sens humain ; il estime une distribution de probabilité conjointe de grande dimension sur des jetons de vocabulaire discrets en minimisant la perte d'entropie croisée autorégressive sur des milliards d'octets d'entraînement."
     },
     {
       "type": "p",
-      "text": "Après SFT, l'alignement des préférences oriente le modèle vers des complétions utiles, véridiques et inoffensives. Alors que les pipelines existants reposaient sur la formation de modèles de récompense distincts à l'aide de l'apprentissage par renforcement PPO, les systèmes modernes déploient de plus en plus l'optimisation des préférences directes (DPO), qui dérive un objectif exact de forme fermée pour optimiser le modèle politique directement sur la base de classements de préférences humaines appariés."
+      "text": "Construire un modèle de base génératif de frontière à partir des premiers principes est un exercice d'optimisation numérique appliquée, d'ingénierie de systèmes distribués et de modélisation de langage statistique. À la base, un transformateur génératif pré-entraîné ne comprend pas la sémantique au sens humain ; il estime une distribution de probabilité conjointe de grande dimension sur des jetons de vocabulaire discrets en minimisant la perte d'entropie croisée autorégressive sur des milliards d'octets d'entraînement."
     },
     {
       "type": "h2",
-      "text": "5. Points à retenir des systèmes d'apprentissage automatique"
+      "text": "1. Tokenisation : codage par paires d'octets et compression de vocabulaire"
     },
     {
       "type": "ul",
       "items": [
-        "Dominance de la qualité des données : les ensembles de données de raisonnement synthétique dédupliqués de haute qualité surpassent d'un ordre de grandeur le texte Web brut récupéré en termes d'efficacité des jetons.",
-        "Formats de précision : utilisez les routines d'entraînement à précision mixte FP8 et BF16 avec mise à l'échelle dynamique des pertes pour doubler le débit du tenseur tout en empêchant le sous-débit.",
-        "Recuit du taux d'apprentissage : utilisez des programmes de désintégration du cosinus avec des périodes d'échauffement pour éviter la divergence du gradient pendant les époques d'optimisation initiales."
+        "Data Quality Dominance: High-quality deduplicated synthetic reasoning datasets outperform raw scraped web text by an order of magnitude in token efficiency.",
+        "Precision Formats: Utilize FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
+        "Learning Rate Annealing: Employ cosine decay schedules with warm-up periods to prevent gradient divergence during initial optimization epochs."
       ]
     }
   ],
-  "sourceHash": "fbab468d8d6535407877a07d02b1af60859f970d"
+  "sourceHash": "3ec3e1c0f5c4ed8abb6adbe171224876d9e70ab2"
 }

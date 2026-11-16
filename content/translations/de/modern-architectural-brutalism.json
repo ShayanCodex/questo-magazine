@@ -10,7 +10,7 @@
     "theory"
   ],
   "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Moderner Architekturbrutalismus",
+  "imageAlt": "Modern Architectural Brutalism",
   "body": [
     {
       "type": "p",
@@ -22,7 +22,13 @@
     },
     {
       "type": "p",
-      "text": "Bei wahrer architektonischer Zurückhaltung geht es nicht um Leere, sondern um Präzision. Jede Ebene und Erhebung wird an den menschlichen Proportionen und der natürlichen Beleuchtung gemessen."
+      "text": "Das Zusammenspiel von Licht, geometrischer Masse und stiller Materialität bildet die Grundsprache moderner minimalistischer Architektur."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Modern Architectural Brutalism."
     },
     {
       "type": "quote",
@@ -32,15 +38,21 @@
     {
       "type": "ol",
       "items": [
-        "Dekorative Impulse der strukturellen Integrität unterordnen",
-        "Maximierung des Tageslichts durch berechnete räumliche Öffnungen",
-        "Bewahrung taktiler taktiler Texturen von rohem Kalkstein und freiliegendem Holz"
+        "Subordinating decorative impulses to structural integrity",
+        "Maximizing daylight through calculated spatial apertures",
+        "Preserving tactile tactile textures of raw limestone and exposed timber"
       ]
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Modern Architectural Brutalism - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Modern Architectural Brutalism."
+    },
+    {
       "type": "p",
-      "text": "Wenn wir das Überflüssige entfernen, bleibt nicht Abwesenheit, sondern Klarheit."
+      "text": "Das Zusammenspiel von Licht, geometrischer Masse und stiller Materialität bildet die Grundsprache moderner minimalistischer Architektur."
     }
   ],
-  "sourceHash": "8e920df698a9b242cb729b7174045072b791300f"
+  "sourceHash": "d797f7bd03e572e52478b5d00930a0554888afe7"
 }

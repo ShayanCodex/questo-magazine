@@ -12,8 +12,8 @@
     "motorsport",
     "engineering"
   ],
-  "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Un auto de carreras aerodinámico de alta velocidad en curvas en una pista de asfalto que muestra una carga aerodinámica extrema debajo del piso",
+  "image": "https://images.unsplash.com/photo-1508873696983-2df57036476b?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-speed aerodynamic racecar cornering on asphalt track displaying extreme underfloor downforce",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Al canalizar el flujo de aire entrante a través de túneles Venturi convergentes-divergentes ubicados a lo largo de los bajos de la carrocería, la presión se reduce drásticamente debajo del chasis y al mismo tiempo se crea una estela de turbulencia frontal mínima. Cuando se ejecutan con la máxima eficiencia, los pisos con efecto suelo generan más del 60% de la carga aerodinámica total del vehículo con una relación de eficiencia de elevación-arrastre ($L/D$) superior a 4,5:1, el doble de la eficiencia aerodinámica de las alas aéreas convencionales."
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "h2",
       "text": "1. El principio de Venturi: diferenciales de presión debajo de la carrocería"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Ground-Effect Aerodynamics in Formula 1 - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Ground-Effect Aerodynamics in Formula 1."
+    },
+    {
       "type": "p",
-      "text": "La física fundamental del efecto suelo se basa en el principio de Bernoulli incompresible y la continuidad de masa en la dinámica de fluidos:"
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Mass Flow Continuity: A₁ · v₁ = A₂ · v₂ = Constant\nBernoulli Equation: P₁ + ½ρ(v₁)² = P₂ + ½ρ(v₂)²\n\nWhere:\n- A is tunnel cross-sectional area\n- v is local flow velocity\n- P is static fluid pressure\n- ρ is ambient air density"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Ground-Effect Aerodynamics in Formula 1 - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Ground-Effect Aerodynamics in Formula 1."
+    },
+    {
       "type": "p",
-      "text": "A medida que el aire ambiente ingresa al piso, la sección de la garganta contrae el área de la sección transversal del túnel ($A_2 < A_1$). Por conservación de la masa, la velocidad del flujo se acelera bruscamente ($v_2 > v_1$), precipitando una caída localizada en la presión estática del aire ($P_2 \\ll P_1$). La presión atmosférica más alta que presiona la parte superior de la carrocería del vehículo crea una fuerza de succión masiva hacia abajo a través del plano de referencia plano."
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "quote",
@@ -47,58 +59,58 @@
     },
     {
       "type": "h2",
-      "text": "2. Expansión del difusor y separación de la capa límite"
+      "text": "1. El principio de Venturi: diferenciales de presión debajo de la carrocería"
     },
     {
       "type": "p",
-      "text": "Aguas abajo de la garganta, la sección transversal del túnel se expande en un ángulo controlado a través del difusor trasero. La función del difusor no es simplemente crear fuerza aerodinámica localmente, sino actuar como una bomba de expansión aerodinámica que restablece gradualmente la velocidad del aire bajo el piso a la velocidad ambiental de corriente libre con una pérdida cinética mínima."
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "p",
-      "text": "El desafío crítico de ingeniería es evitar la separación por gradiente de presión adverso. Si el ángulo de expansión del difusor excede los 7 a 10 grados, la capa límite de baja energía a lo largo del techo del túnel se separa, provocando una pérdida aerodinámica catastrófica que colapsa instantáneamente la succión debajo del piso."
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "ul",
       "items": [
-        "Sellado del borde del piso: La implementación de generadores de vórtice aerodinámicos y tracas a lo largo del perímetro del piso evita que el aire lateral de alta presión se filtre hacia la cavidad de baja presión debajo de la carrocería.",
-        "Sensibilidad a la altura de manejo: La carga aerodinámica aumenta exponencialmente a medida que la distancia al suelo disminuye hasta que la fricción de la capa límite ahoga el flujo de aire masivo.",
-        "Centro de estabilidad de presión: garantizar que el equilibrio aerodinámico permanezca estable en los ángulos cambiantes de cabeceo, balanceo y guiñada durante las transiciones en las curvas de alta velocidad."
+        "Floor Edge Sealing: Deploying aerodynamic vortex generators and strakes along the floor perimeter prevents high-pressure lateral air from bleeding into the low-pressure underbody cavity.",
+        "Ride Height Sensitivity: Downforce scales exponentially as ground clearance decreases until boundary layer friction chokes mass airflow.",
+        "Center of Pressure Stability: Ensuring the aerodynamic balance remains stable across changing pitch, roll, and yaw angles during high-speed cornering transitions."
       ]
     },
     {
       "type": "h2",
-      "text": "3. Clase magistral en video: Aerodinámica del efecto suelo y túneles Venturi"
+      "text": "1. El principio de Venturi: diferenciales de presión debajo de la carrocería"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ",
-      "title": "Campos de flujo aerodinámico e ingeniería de efecto suelo de Fórmula 1",
-      "caption": "Desglose técnico de la física del flujo de aire bajo el piso, carga aerodinámica por proximidad al suelo y sellado aerodinámico de los bordes del piso."
+      "title": "Aerodynamic Flow Fields & Formula 1 Ground-Effect Engineering",
+      "caption": "Technical breakdown of underfloor airflow physics, ground proximity downforce, and aerodynamic floor edge sealing."
     },
     {
       "type": "h2",
-      "text": "4. La mecánica de la marsopa: resonancia aeroelástica no lineal"
+      "text": "1. El principio de Venturi: diferenciales de presión debajo de la carrocería"
     },
     {
       "type": "p",
-      "text": "Cuando los bajos con efecto suelo operan a alturas submilimétricas a velocidades superiores a 300 km/h, corren el riesgo de entrar en una oscilación autosostenida severa conocida como marsopa. A medida que aumenta la velocidad, aumenta la succión debajo del piso, lo que acerca la suspensión del vehículo al asfalto."
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "p",
-      "text": "En un umbral de proximidad crítico, la brecha física entre la garganta del piso y la superficie de la pista obstruye el flujo de aire o provoca un desprendimiento repentino de la capa límite. La carga aerodinámica debajo de la carrocería colapsa instantáneamente y la suspensión mecánica comprimida rebota violentamente hacia arriba. A medida que aumenta la altura de manejo, el flujo de aire se vuelve a conectar, la succión se vuelve a activar y el destructivo ciclo vertical se repite en frecuencias entre 5 y 8 Hz, sometiendo a los conductores a violentas fuerzas G longitudinales y verticales."
+      "text": "En la ingeniería automotriz y de deportes de motor de alto rendimiento, la carga aerodinámica es la métrica soberana que dicta el agarre en las curvas, la desaceleración del frenado y la estabilidad direccional. Durante décadas, los vehículos generaban carga aerodinámica predominantemente a través de superficies de elevación en la parte superior de la carrocería: alas invertidas de múltiples elementos y aviones en picada. Sin embargo, la carga aerodinámica generada por las alas impone una severa penalización parásita: la resistencia inducida, que aumenta cuadráticamente con el ángulo de ataque y degrada la velocidad en línea recta. La aerodinámica de efecto suelo evita este compromiso transformando todo el piso del vehículo en una bomba de succión Bernoulli integrada."
     },
     {
       "type": "h2",
-      "text": "5. Conclusiones de ingeniería mecánica"
+      "text": "1. El principio de Venturi: diferenciales de presión debajo de la carrocería"
     },
     {
       "type": "ul",
       "items": [
-        "Acoplamiento aeromecánico: Los diseños de efecto suelo de alta carga aerodinámica requieren resortes de suspensión hiperrígidos para desacoplar la succión aerodinámica del recorrido mecánico de la rueda.",
-        "Gestión del gradiente del difusor: Implemente ranuras de succión en la capa límite o generadores de vórtices para evitar la separación de la pérdida durante actitudes de inclinación alta.",
-        "Seguridad y espacio libre de manejo: Establecer cumplimiento de la altura mínima de manejo y telemetría del desgaste de los bloques deslizantes del piso para evitar una pérdida catastrófica de carga aerodinámica en las ondulaciones de la pista."
+        "Aero-Mechanical Coupling: High downforce ground-effect designs require hyper-stiff suspension heave springs to decouple aerodynamic suction from mechanical wheel travel.",
+        "Diffuser Gradient Management: Implement boundary layer suction slots or vortex generators to prevent stall separation during high-rake pitch attitudes.",
+        "Safety & Ride Clearance: Establish minimum ride height enforcement and floor skid-block wear telemetry to prevent catastrophic downforce loss on track undulations."
       ]
     }
   ],
-  "sourceHash": "ce07a7942454b1a702bcd49c982b34149c9ab267"
+  "sourceHash": "7d34f65d5a12a01f1ea7fc0ba1cedd2c84d8789b"
 }

@@ -11,8 +11,8 @@
     "metabolism",
     "cellular-biology"
   ],
-  "image": "/images/articles/cellular-autophagy-biology.jpg",
-  "imageAlt": "سیلولر لائزوزوم اور آٹوفجی راستوں کی ہائی ریزولوشن فلوروسینٹ کنفوکل مائکروسکوپی ویژولائزیشن",
+  "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Biomedical laboratory pipetting cellular culture samples for NAD+ coenzyme quantification assays",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "سیلولر ایجنگ کا بائیو انرجیٹک بحران"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Electron micrograph showing dense inner mitochondrial cristae folding and ATP synthase enzymes",
+      "caption": "Mitochondrial cristae architecture: surface area density directly governing oxidative phosphorylation efficiency."
     },
     {
       "type": "ul",
       "items": [
-        "Mitohormesis: عارضی میٹابولک تناؤ جوہری جین کے اظہار کو متحرک کرتا ہے جو مائٹوکونڈریل اینٹی آکسیڈینٹ دفاع اور بائیو جینیسس کو تقویت دیتا ہے۔",
-        "NAD+ شرح کو محدود کرنے والا بہاؤ: سالویج اینزائم NAMPT کی کمی NAD+ coenzyme کی دستیابی کو کم کرتی ہے، sirtuin deacetylation اور PARP DNA کی مرمت کو خراب کرتی ہے۔",
-        "فیوژن اور فیوژن توازن: Mitofusin (MFN1/2) اور Drp1 مائٹوفیجی کے لیے نشانہ بنائے گئے خراب شدہ ٹکڑوں سے فنکشنل مائٹوکونڈریل اجزاء کی چھانٹی کو مربوط کرتے ہیں۔",
-        "PGC-1alpha ماسٹر ریگولیشن: PGC-1alpha کی ورزش سے حوصلہ افزائی ایکٹیویشن پٹھوں اور اعصابی بافتوں میں مائٹوکونڈریل ڈی این اے کی نقل اور گھنے کرسٹائی ترکیب کو متحرک کرتی ہے۔"
+        "Mitohormesis: Transient metabolic stressors trigger nuclear gene expression that reinforces mitochondrial antioxidant defenses and biogenesis.",
+        "NAD+ Rate-Limiting Flux: The decline of salvage enzyme NAMPT reduces NAD+ coenzyme availability, impairing sirtuin deacetylation and PARP DNA repair.",
+        "Fission and Fusion Equilibrium: Mitofusin (MFN1/2) and Drp1 coordinate the sorting of functional mitochondrial components from damaged fragments targeted for mitophagy.",
+        "PGC-1alpha Master Regulation: Exercise-induced activation of PGC-1alpha stimulates mitochondrial DNA replication and dense cristae synthesis in muscle and neural tissue."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "ڈاکٹر مارکس وانس، پروٹوکولز ان پریوینٹیو سیلولر میڈیسن"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cellular metabolism assay measuring sirtuin enzyme activation and NAD+ salvage pathway flux",
+      "caption": "NAD+ decline: age-related loss of cellular coenzyme pools suppressing sirtuin activation and DNA repair pathways."
+    },
+    {
       "type": "h2",
-      "text": "نیکوٹینامائڈ میٹابولوم کی بحالی"
+      "text": "سیلولر ایجنگ کا بائیو انرجیٹک بحران"
     },
     {
       "type": "p",
-      "text": "CD38 ایکٹو اینزائم انابیشن کے ساتھ مل کر NAD+ پیشگیوں کی ٹارگٹڈ ریپلیشمنٹ سیلولر ریڈوکس تناسب (NADH+) کی سطح کو بحال کرتی ہے۔ یہ بائیو کیمیکل بھرتی جینومک استحکام کو محفوظ رکھتی ہے، مائٹوکونڈریل بائیو جینیسس کو متحرک کرتی ہے، اور عمر سے وابستہ میٹابولک کمی کو کم کرتی ہے۔"
+      "text": "انسانی حیاتیاتی بڑھاپے کے گٹھ جوڑ میں ترقی پسند بائیو انرجیٹک تنزلی مضمر ہے: بتدریج کمی، الیکٹرو سیکولیشن کی نقل و حمل میں کمی۔ آرگنیل کے ٹکڑے، اور سیلولر نیکوٹینامائڈ ایڈنائن ڈینیوکلیوٹائڈ (NAD+) پولز کا نظامی تھکن۔ ایک ناگزیر انحطاط پذیر سلائیڈ کے بجائے، جدید مالیکیولر جیروسائنس سے پتہ چلتا ہے کہ مائٹوکونڈریل فن تعمیر متحرک ہے، ہدف شدہ میٹابولک ٹرگرز کے لیے جوابدہ ہے، اور گہرائی سے جوان ہونے کی صلاحیت رکھتا ہے۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c",
-      "title": "سیلولر لمبی عمر اور میٹابولک بائیو مارکرز",
-      "caption": "طبی بحث جس میں قلبی خطرہ، میٹابولک صحت، اور انسانی لمبی عمر کی سیلولر حیاتیات کی تفصیل ہوتی ہے۔"
+      "title": "Cellular Longevity and Metabolic Biomarkers",
+      "caption": "Clinical discussion detailing cardiovascular risk, metabolic health, and the cellular biology of human longevity.",
+      "src": "https://www.youtube-nocookie.com/embed/7ahOOnOXs4c"
     },
     {
       "type": "h2",
-      "text": "سیلولر لچک کو کلینیکل لمبی عمر میں ترجمہ کرنا"
+      "text": "سیلولر ایجنگ کا بائیو انرجیٹک بحران"
     },
     {
       "type": "p",
-      "text": "زون-2 برداشت کنڈیشنگ، وقفے وقفے سے توانائی بخش خسارے، اور ٹارگٹڈ مالیکیولر کوفیکٹرز کو جوڑنے سے، روک تھام کی دوا فالج علامات کے انتظام سے فعال سیلولر مینٹیننس میں تبدیل ہو رہی ہے۔"
+      "text": "انسانی حیاتیاتی بڑھاپے کے گٹھ جوڑ میں ترقی پسند بائیو انرجیٹک تنزلی مضمر ہے: بتدریج کمی، الیکٹرو سیکولیشن کی نقل و حمل میں کمی۔ آرگنیل کے ٹکڑے، اور سیلولر نیکوٹینامائڈ ایڈنائن ڈینیوکلیوٹائڈ (NAD+) پولز کا نظامی تھکن۔ ایک ناگزیر انحطاط پذیر سلائیڈ کے بجائے، جدید مالیکیولر جیروسائنس سے پتہ چلتا ہے کہ مائٹوکونڈریل فن تعمیر متحرک ہے، ہدف شدہ میٹابولک ٹرگرز کے لیے جوابدہ ہے، اور گہرائی سے جوان ہونے کی صلاحیت رکھتا ہے۔"
     }
   ],
-  "sourceHash": "8b5384ed9c857f1dafa99320e22a67b40c7cebe8"
+  "sourceHash": "48db63f07c55a9093e5f6f1094579f21c8e4c7e1"
 }

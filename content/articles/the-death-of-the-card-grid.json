@@ -5,7 +5,7 @@
   "date": "2026-11-01",
   "updated": "2026-11-14",
   "author": "Elena Vance",
-  "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Minimalist editorial magazine spreads with asymmetric layout and brutalist white space",
   "tags": [
     "design",
@@ -29,12 +29,24 @@
       "text": "The Cognitive Stagnation of Repetitive Cards"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Death of the Card Grid - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Death of the Card Grid."
+    },
+    {
       "type": "p",
       "text": "The card component was originally popularized by Pinterest and Twitter as a clean metaphor for discrete, bite-sized social media snippets. However, when applied indiscriminately to long-form journalism, critical cultural essays, and luxury digital magazines, the card metaphor collapses into cognitive monotony."
     },
     {
       "type": "p",
       "text": "When twenty articles are presented in identical 3x3 grids of identical white rectangles, the reader's eye glazed over. There is no visual entry point, no typographic scale contrast to signal editorial hierarchy, and no narrative pacing. Everything looks equally important, which means nothing is important."
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Death of the Card Grid - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Death of the Card Grid."
     },
     {
       "type": "quote",

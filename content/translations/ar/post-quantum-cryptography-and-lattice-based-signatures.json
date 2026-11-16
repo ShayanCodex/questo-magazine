@@ -11,8 +11,8 @@
     "security",
     "mathematics"
   ],
-  "image": "/images/articles/transformer-attention-ai.jpg",
-  "imageAlt": "ناقلات شبكية هندسية عالية الأبعاد تصور صلابة التشفير ما بعد الكم",
+  "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "High-dimensional geometric lattice structure illustrating post-quantum cryptographic hardness assumptions",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "النقاط الرئيسية"
+      "text": "الانهيار الوشيك لأساسات المفاتيح العامة غير المتماثلة"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Learning With Errors (LWE) algebraic matrix calculations and lattice point distribution",
+      "caption": "Lattice problem hardness: Shortest Vector Problem (SVP) in high-dimensional lattices resisting Shor’s quantum algorithm."
     },
     {
       "type": "ul",
       "items": [
-        "مشكلة المتجهات الأقصر (SVP): تظل مشكلات الشبكة عالية الأبعاد مستعصية على الحل حسابيًا لكل من الخوارزميات الكلاسيكية والكمية.",
-        "وحدة التعلم مع الأخطاء (M-LWE): تقوم خوارزميات مثل ML-KEM (Kyber) ببناء أسرار التشفير عن طريق إضافة ضوضاء غاوسية منفصلة إلى مصفوفات متعددة الحدود عالية الأبعاد.",
-        "تطور التوقيع الرقمي: يحل ML-DSA (الديليثيوم) محل توقيعات المنحنى الإهليلجي، مما يوفر دليلاً رياضيًا على الصلابة بدون مجموعات فرعية جبرية مخفية.",
-        "مقايضات حجم المفتاح: يتم قياس المفاتيح العامة والنصوص المشفرة لما بعد الكم بالكيلوبايت بدلاً من البايتات، مما يتطلب تحسينات في MTU للشبكة وتجزئة الحزمة."
+        "Shortest Vector Problem (SVP): High-dimensional lattice problems remain computationally intractable for both classical and quantum algorithms.",
+        "Module Learning with Errors (M-LWE): Algorithms like ML-KEM (Kyber) construct cryptographic secrets by adding discrete Gaussian noise to high-dimensional polynomial matrices.",
+        "Digital Signature Evolution: ML-DSA (Dilithium) replaces elliptic curve signatures, delivering mathematical proof of hardness without hidden algebraic subgroups.",
+        "Key Size Trade-Offs: Post-quantum public keys and ciphertexts are measured in kilobytes rather than bytes, demanding optimizations in network MTU and packet fragmentation."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "المعهد الوطني للمعايير وأمن التشفير"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Encrypted server cluster verifying post-quantum cryptographic signatures during TLS handshakes",
+      "caption": "NIST standardization: deploying ML-KEM and ML-DSA algorithms to safeguard global internet infrastructure against quantum threats."
+    },
+    {
       "type": "h2",
-      "text": "تسريع الأجهزة وتوافق المعرفة الصفرية"
+      "text": "الانهيار الوشيك لأساسات المفاتيح العامة غير المتماثلة"
     },
     {
       "type": "p",
-      "text": "يتطلب تنفيذ الضرب متعدد الحدود على الحلقات الحلقية تحويلات نظرية للأرقام (NTT). تعمل مجموعات تعليمات السيليكون الحديثة وامتدادات RISC-V على دمج خطوط أنابيب متجهة مخصصة لـ NTT لتنفيذ عمليات تبادل المفاتيح بعد الكم في بيئات سحابية أقل من مللي ثانية."
+      "text": "يعتمد الاقتصاد الرقمي العالمي على مشكلتين رياضيتين: تحليل الأعداد الصحيحة (RSA) واللوغاريتمات المنفصلة على المنحنيات الإهليلجية (ECDSA). عندما تقوم أجهزة الكمبيوتر الكمومية المتسامحة مع الأخطاء بإنشاء مثيل لخوارزمية شور، سيتم جعل هذه البدائيات الأمنية الأساسية تافهة من الناحية الحسابية في زمن متعدد الحدود. إن ترحيل الإنترنت إلى الرياضيات المقاومة للكم هو التحول الأكثر أهمية للبنية التحتية في تاريخ الحوسبة."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "تشفير المعرفة الصفرية وأسس ما بعد الكم",
-      "caption": "محاضرة تشفير صارمة تستكشف أنظمة الإثبات والجبر والضمانات الرياضية ما بعد الكم."
+      "title": "Zero Knowledge Cryptography & Post-Quantum Foundations",
+      "caption": "Rigorous cryptographic lecture exploring proof systems, algebra, and post-quantum mathematical guarantees.",
+      "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo"
     },
     {
       "type": "h2",
-      "text": "الآثار السيادية والمالية"
+      "text": "الانهيار الوشيك لأساسات المفاتيح العامة غير المتماثلة"
     },
     {
       "type": "p",
-      "text": "من شبكات التسوية الرقمية للبنوك المركزية إلى وصلات الأقمار الصناعية العسكرية، يضمن نشر التشفير الشبكي أن تظل حضارتنا الرقمية المشتركة آمنة لفترة طويلة بعد تحقيق التفوق الكمي."
+      "text": "يعتمد الاقتصاد الرقمي العالمي على مشكلتين رياضيتين: تحليل الأعداد الصحيحة (RSA) واللوغاريتمات المنفصلة على المنحنيات الإهليلجية (ECDSA). عندما تقوم أجهزة الكمبيوتر الكمومية المتسامحة مع الأخطاء بإنشاء مثيل لخوارزمية شور، سيتم جعل هذه البدائيات الأمنية الأساسية تافهة من الناحية الحسابية في زمن متعدد الحدود. إن ترحيل الإنترنت إلى الرياضيات المقاومة للكم هو التحول الأكثر أهمية للبنية التحتية في تاريخ الحوسبة."
     }
   ],
-  "sourceHash": "383131c7145080fe0717b49d8a57ba461dd7c0c1"
+  "sourceHash": "5d70fdc31b050523401e66b3930827534da2888c"
 }

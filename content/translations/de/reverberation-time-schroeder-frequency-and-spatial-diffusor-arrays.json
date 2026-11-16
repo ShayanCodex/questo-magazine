@@ -13,7 +13,7 @@
     "concert-halls"
   ],
   "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Monumentaler Innenraum eines symphonischen Konzertsaals mit geformten Akustikholz-Wanddiffusoren und Balkonen",
+  "imageAlt": "Monumental symphonic concert hall interior with sculpted acoustic wood wall diffusors and balconies",
   "body": [
     {
       "type": "p",
@@ -21,15 +21,21 @@
     },
     {
       "type": "p",
-      "text": "Um akustische Exzellenz zu erreichen, müssen zwei widersprüchliche Ziele in Einklang gebracht werden: Klarheit (die Fähigkeit, einzelne Instrumentenklangfarben zu unterscheiden) und Nachhall (das Gefühl, von einer warmen, blühenden akustischen Leere umgeben zu sein). Ein Saal, der Klarheit fördert, wirkt klinisch und trocken; Ein Saal, der den Nachhall begünstigt, beeinträchtigt die Sprachverständlichkeit und die schnelle musikalische Artikulation."
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "h2",
       "text": "1. Nachhallzeit ($RT_{60}$) und die Sabine-Formulierung"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1531835551805-16d4437c67b0?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concert Hall Architectural Acoustics - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Concert Hall Architectural Acoustics."
+    },
+    {
       "type": "p",
-      "text": "Der grundlegende Maßstab der Architekturakustik ist die Nachhallzeit ($RT_{60}$): die Zeit, die benötigt wird, damit die Schallenergiedichte um 60 Dezibel abnimmt, nachdem die Schallquelle aufgehört hat. Im Jahr 1898 formulierte Wallace Clement Sabine die grundlegende Beziehung, die geschlossene akustische Räume regelt:"
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "code",
@@ -37,8 +43,14 @@
       "code": "Sabine Formula: RT₆₀ = (0.161 · V) / A\n\nWhere:\n- V is hall volume in cubic meters\n- A is total absorption (A = ∑ Sᵢ · αᵢ)\n- S is surface area in square meters\n- α is sound absorption coefficient (0.0 = total reflection, 1.0 = total absorption)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1534237710431-e2fc698436d0?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Concert Hall Architectural Acoustics - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Concert Hall Architectural Acoustics."
+    },
+    {
       "type": "p",
-      "text": "Für symphonisches Orchesterrepertoire liegt das optimale $RT_{60}$-Ziel genau bei 1,8 bis 2,2 Sekunden. Wenn $RT_{60}$ unter 1,5 Sekunden fällt, fühlt sich der akustische Raum leblos und trocken an; bei mehr als 2,5 Sekunden verschmelzen schnelle Staccato-Passagen zu einem unverständlichen akustischen Unschärfe."
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "quote",
@@ -47,15 +59,15 @@
     },
     {
       "type": "h2",
-      "text": "2. Die Schroeder-Frequenz: Diskrete Moden vs. statistische Felder"
+      "text": "1. Nachhallzeit ($RT_{60}$) und die Sabine-Formulierung"
     },
     {
       "type": "p",
-      "text": "Eine kritische physikalische Grenze in der Raumakustik ist die Schroeder-Grenzfrequenz ($f_s$). Unterhalb von $f_s$ verhält sich der Klang wellenartig und bildet diskrete stehende Wellen (Raummoden), in denen sich bestimmte Resonanzbassfrequenzen je nach Hörerposition auslöschen oder heftig dröhnen."
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "p",
-      "text": "Oberhalb der Schroeder-Frequenz wird die Modendichte so dicht gepackt, dass Schall statistisch als diffuses geometrisches Schallfeld modelliert werden kann:"
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "code",
@@ -64,29 +76,29 @@
     },
     {
       "type": "p",
-      "text": "In großen Symphoniehallen sinkt die Schröder-Frequenz in den unterhörbaren Bereich und sorgt so dafür, dass das gesamte hörbare Orchesterspektrum im diffusen statistischen Bereich agiert."
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "h2",
-      "text": "3. Video-Meisterklasse: Konzertsaal-Akustik und Klangphysik"
+      "text": "1. Nachhallzeit ($RT_{60}$) und die Sabine-Formulierung"
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
-      "title": "Akustische Wellenphysik, Resonanz und architektonische Räume",
-      "caption": "Dokumentarfilm über architektonische Akustik, der Schallreflexionen, Weinberg- vs. Schuhkartonhallen und Schroeder-Diffusoren untersucht."
+      "title": "Acoustic Wave Physics, Resonance & Architectural Spaces",
+      "caption": "Architectural acoustics documentary examining sound reflections, vineyard vs shoebox halls, and Schroeder diffusors."
     },
     {
       "type": "h2",
-      "text": "4. Zahlentheoretische Diffusion: Quadratische Rückstandsdiffusoren (QRD)"
+      "text": "1. Nachhallzeit ($RT_{60}$) und die Sabine-Formulierung"
     },
     {
       "type": "p",
-      "text": "Flache parallele Oberflächen erzeugen spiegelnde Reflexionen (wie ein Spiegel) und erzeugen harte Flatterechos. Einfache gekrümmte Oberflächen zerstreuen den Schall, können jedoch lokale akustische Hotspots erzeugen. In den 1970er Jahren revolutionierte der Physiker Manfred Schroeder die akustische Architektur, indem er die Zahlentheorie – insbesondere quadratische Residuen aus der modularen Arithmetik – auf die Oberflächendiffusion anwendete."
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "p",
-      "text": "Ein quadratischer Rückstandsdiffusor (QRD) besteht aus einer Reihe von Vertiefungen mit einheitlicher Breite, aber unterschiedlicher Tiefe, die anhand von Primzahlen berechnet werden:"
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "code",
@@ -95,20 +107,20 @@
     },
     {
       "type": "p",
-      "text": "In die Vertiefungen eintretende Schallwellen werden an den Bodengrenzen mit unterschiedlichen, durch die Zahlentheorie vorgegebenen Phasenverzögerungen reflektiert. Beim Wiederauftauchen eliminiert destruktive Interferenz die Spiegelreflexion und streut die Schallenergie gleichmäßig über ein halbkugelförmiges 180-Grad-Feld."
+      "text": "Die Architektur eines großen Konzertsaals ist nicht nur ein visuelles Denkmal; Es ist ein monumentales akustisches Instrument. Wenn ein Orchester auftritt, reflektiert, streut und absorbiert die physische Hülle des Saals Schallwellen und verwandelt so die Vibrationen mechanischer Instrumente in ein immersives räumliches Feld. Historisch gesehen wurde die Hallengestaltung durch empirisches Ausprobieren dominiert – was zu Triumphen wie dem Wiener Musikverein und Katastrophen führte, bei denen Säle tote akustische Schatten oder schlammige Flatterechos erzeugten. Die moderne Wissenschaft der Architekturakustik synthetisiert Wellenmechanik, Raumeigenmoden und zahlentheoretische Diffusionsflächen."
     },
     {
       "type": "h2",
-      "text": "5. Architekturgeometrie: Schuhkarton vs. Weinbergtypologie"
+      "text": "1. Nachhallzeit ($RT_{60}$) und die Sabine-Formulierung"
     },
     {
       "type": "ul",
       "items": [
-        "Shoebox-Typologie (Musikverein, Boston Symphony Hall): Hohe schmale rechteckige Hallen, die intensive frühe seitliche Reflexionen von Seitenwänden erzeugen und so die binaurale Kreuzkorrelation (IACF) und Hüllkurve maximieren.",
-        "Weinbergtypologie (Berliner Philharmonie, Elbphilharmonie): Umgibt das Orchester mit terrassenförmig angelegten Sitzschalen, bringt die Zuhörer näher an die Bühne und nutzt gleichzeitig schräge Terrassenbrüstungen als frühe Reflexionsflächen.",
-        "Lateral Energy Fraction (LEF): Akustischer Parameter, der den Anteil des Schalls misst, der aus seitlichen Richtungen auf den Zuhörer trifft; Ein hoher LEF erzeugt das Gefühl, von der akustischen Quelle umgeben zu sein, anstatt sie durch ein entferntes Fenster zu betrachten."
+        "Shoebox Typology (Musikverein, Boston Symphony Hall): High narrow rectangular halls that produce intense early lateral reflections from side walls, maximizing binaural cross-correlation (IACF) and envelopment.",
+        "Vineyard Typology (Berlin Philharmonie, Elbphilharmonie): Surrounds the orchestra with terraced seating pods, bringing listeners closer to the stage while utilizing sloping terrace parapets as early reflection surfaces.",
+        "Lateral Energy Fraction (LEF): Acoustic parameter measuring the proportion of sound arriving at listeners from side directions; high LEF creates the sensation of being surrounded by the acoustic source rather than viewing it through a distant window."
       ]
     }
   ],
-  "sourceHash": "33995b204d454a1f14d7d229f60c0a982e173e50"
+  "sourceHash": "4d716f38de405adb2ce09d4e6e292ff986570904"
 }

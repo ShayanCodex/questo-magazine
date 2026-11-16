@@ -13,7 +13,7 @@
     "forex",
     "markets"
   ],
-  "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Institutional trading screens displaying global fixed-income yields and liquidity spreads",
   "body": [
     {
@@ -29,6 +29,12 @@
       "text": "Under the expectations hypothesis of term structure, long-term nominal bond yields reflect the geometric average of expected future short-term interest rates plus a term premium—the compensation demanded by market participants for bearing duration risk over extended horizons. When a central bank embarks upon aggressive monetary tightening to suppress demand-pull inflation, short-term policy rates rise rapidly."
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sovereign Debt Cycles & Repo Markets - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Sovereign Debt Cycles & Repo Markets."
+    },
+    {
       "type": "p",
       "text": "If fixed-income markets project that restrictive monetary policy will induce aggregate demand compression, medium-to-long term nominal yields compress as expectations of future rate cuts dominate. Simultaneously, the term premium contracts or turns negative, producing the hallmark slope inversion between the 2-year and 10-year Treasury benchmark (2s10s spread)."
     },
@@ -36,6 +42,12 @@
       "type": "quote",
       "text": "An inverted yield curve is not an astrological indicator; it is a mechanical constraint on financial intermediation. When liability funding costs exceed asset yields, fractional reserve maturity transformation freezes.",
       "cite": "Claire Dupont, Global Macro Strategist"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1538356111053-748a48e1acb8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sovereign Debt Cycles & Repo Markets - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Sovereign Debt Cycles & Repo Markets."
     },
     {
       "type": "h2",

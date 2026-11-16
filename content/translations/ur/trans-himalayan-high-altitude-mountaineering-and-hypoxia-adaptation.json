@@ -12,7 +12,7 @@
     "hypoxia"
   ],
   "image": "/images/articles/himalayan-mountaineering-glacier.jpg",
-  "imageAlt": "برف سے ڈھکی ہوئی الپائن چوٹیاں اور بلند ہمالیہ کی برفانی چوٹیاں صاف آسمانی پہاڑی آسمانوں کے نیچے",
+  "imageAlt": "Snowcapped alpine peaks and glaciated ridgelines of the high Himalaya under clear azure mountain skies",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "ڈیتھ زون کی فزیالوجی"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for High-Altitude Himalayan Expeditions."
     },
     {
       "type": "ul",
       "items": [
-        "ہائپوبارک پریشر ڈائنامکس: 8,000m پر، آرٹیریل آکسیجن سیچوریشن ($SaO_2$) 60% سے نیچے گرتا ہے، سنجیدگی سے حساب کتاب اور موٹر کنٹرول پر شدید ٹیکس لگاتا ہے۔",
-        "HIF-1alpha ایکٹیویشن: سیلولر ہائپوکسیا Hypoxia-Inducible Factor 1-alpha کو مستحکم کرتا ہے، رینل erythropoietin (EPO) کی رطوبت اور erythrocyte hematocrit کے پھیلاؤ کو چلاتا ہے۔",
-        "ہائپر وینٹیلیشن اور سانس کی الکالوسس: کیروٹیڈ باڈی کیمور سیپٹرز مستقل ٹکیپنیا پر مجبور کرتے ہیں، CO2 کو اڑا دیتے ہیں اور رینل بائی کاربونیٹ کے اخراج کو شریانوں کے پی ایچ کو بفر کرنے پر اکساتے ہیں۔",
-        "دماغی اور پلمونری ورم: مرحلہ وار موافقت کے بغیر اچانک چڑھنے سے کیپلیری سیال کے اخراج کا خطرہ ہوتا ہے، جو جان لیوا HACE یا HAPE کو متحرک کرتا ہے۔"
+        "Hypobaric Pressure Dynamics: At 8,000m, arterial oxygen saturation ($SaO_2$) drops below 60%, severely taxing cognitive calculation and motor control.",
+        "HIF-1alpha Activation: Cellular hypoxia stabilizes Hypoxia-Inducible Factor 1-alpha, driving renal erythropoietin (EPO) secretion and erythrocyte hematocrit proliferation.",
+        "Hyperventilation & Respiratory Alkalosis: Carotid body chemoreceptors force persistent tachypnea, blowing off CO2 and inducing renal bicarbonate excretion to buffer arterial pH.",
+        "Cerebral and Pulmonary Edema: Sudden ascent without phased acclimatization risks capillary fluid extravasation, triggering life-threatening HACE or HAPE."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "ہمالین ہائی-ایلٹیٹیوڈ میڈیسن اینڈ ایکسپیڈیشن سوسائٹی"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-Altitude Himalayan Expeditions - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting High-Altitude Himalayan Expeditions."
+    },
+    {
       "type": "h2",
-      "text": "چڑھنے-ہائی سلیپ-لو روٹیشنل لاجسٹکس"
+      "text": "ڈیتھ زون کی فزیالوجی"
     },
     {
       "type": "p",
-      "text": "جدید الپائن اسٹائل اور مرحلہ وار محاصرہ مہمات سخت مرحلہ وار گردشوں کو استعمال کرتی ہیں۔ کوہ پیما ترقی پسند اونچے کیمپوں (C1, C2, C3) سے گزرتے ہیں تاکہ بحالی نیند کے لیے بیس کیمپ پر اترنے سے پہلے سیلولر موافقت کو متحرک کیا جا سکے، ہیموگلوبن کے ارتکاز کی تعمیر کے دوران دائمی اونچائی کی تھکاوٹ کو کم کیا جا سکے۔"
+      "text": "8,000 میٹر سے اوپر چڑھنا انسانی جاندار کو \"ڈیتھ زون\" میں ڈوبتا ہے - ایک ایسا ماحول جہاں سمندری سطح کا دباؤ ایک درجہ حرارت سے نیچے گرتا ہے۔ 250 mmHg)۔ محیطی آکسیجن کا حصہ 20.9% پر مستقل رہنے کے باوجود، الہامی جزوی دباؤ ($P_iO_2$) میں تیزی سے گرنے سے بافتوں کی آکسیجن کی کمی واقع ہو جاتی ہے، جس سے نظامی معاوضہ کے موافقت کا مطالبہ ہوتا ہے۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY",
-      "title": "ہائی اونچائی والی فزیالوجی: انسانی جسم انتہائی سردی اور ہائپوکسیا سے کیسے بچتا ہے",
-      "caption": "طبی مہم کی دستاویزی فلم جس میں ہیماتولوجیکل موافقت، آکسیجن کی نقل و حمل کے منحنی خطوط اور 7,000 میٹر سے اوپر پلمونری گیس کے تبادلے کا جائزہ لیا گیا ہے۔"
+      "title": "High Altitude Physiology: How the Human Body Survives Extreme Cold & Hypoxia",
+      "caption": "Medical expedition documentary examining hematological adaptation, oxygen transport curves, and pulmonary gas exchange above 7,000 meters.",
+      "src": "https://www.youtube-nocookie.com/embed/r8c3_T9QfnY"
     },
     {
       "type": "h2",
-      "text": "خودمختار ہمالیائی روٹ اسٹیورڈشپ"
+      "text": "ڈیتھ زون کی فزیالوجی"
     },
     {
       "type": "p",
-      "text": "موسمیاتی تبدیلیوں کے تحت نازک برفانی خطوں کی پسپائی کے ساتھ، علاقائی تحفظ کے اتحاد اور شیرپا گائیڈنگ گلڈز سخت صفر ٹریس مہم کے فضلے کے فریم ورک اور GPS سے باخبر رہنے والے گیئر مینی فیسٹس کو پانی کی حفاظت کے لیے نافذ کر رہے ہیں۔"
+      "text": "8,000 میٹر سے اوپر چڑھنا انسانی جاندار کو \"ڈیتھ زون\" میں ڈوبتا ہے - ایک ایسا ماحول جہاں سمندری سطح کا دباؤ ایک درجہ حرارت سے نیچے گرتا ہے۔ 250 mmHg)۔ محیطی آکسیجن کا حصہ 20.9% پر مستقل رہنے کے باوجود، الہامی جزوی دباؤ ($P_iO_2$) میں تیزی سے گرنے سے بافتوں کی آکسیجن کی کمی واقع ہو جاتی ہے، جس سے نظامی معاوضہ کے موافقت کا مطالبہ ہوتا ہے۔"
     }
   ],
-  "sourceHash": "c599f276bf69326cacf6f5e979acec61df69bc59"
+  "sourceHash": "4775f0a6be80b1cd9cff50ad35a36372d3eef476"
 }

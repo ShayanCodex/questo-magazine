@@ -11,8 +11,8 @@
     "error-correction",
     "surface-codes"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "Goldener kryogener Verdünnungskühlschrank mit supraleitenden Quantenprozessor-Qubits",
+  "image": "https://images.unsplash.com/photo-1583912267670-6575ad4736f8?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Geometric topological lattice displaying quantum entanglement braiding and surface codes",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Wichtige Punkte"
+      "text": "Der Übergang von verrauschten Quantenprozessoren mittlerer Skala zu fehlertoleranten Quantenprozessoren"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1bb1a?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Two-dimensional planar surface code architecture with data and syndrome measurement qubits",
+      "caption": "Surface code grid: interleaving X-type and Z-type stabilizer measurements to identify localized bit and phase flips."
     },
     {
       "type": "ul",
       "items": [
-        "Stabilisatormessungen: Paritätsprüfungen über Plaquetten und Scheitelpunkte hinweg diagnostizieren Bit-Flip- (X) und Phasen-Flip-Fehler (Z), ohne dass der Überlagerungszustand zusammenbricht.",
-        "Schwellenwertsatz: Wenn die Fehlerraten des physischen Gates unter etwa ein Prozent fallen, werden logische Fehler durch die Skalierung des Gittercodeabstands exponentiell unterdrückt.",
-        "Nicht-lokale Informationsspeicherung: Logische Quanteninformationen werden über globale topologische Verflechtungen hinweg codiert und nicht über ein einzelnes anfälliges physisches Qubit.",
-        "Echtzeit-Dekodierungsdiagramme: MWPM-Algorithmen (Minimum Weight Perfect Matching) verarbeiten Syndromströme mit kryogenen Geschwindigkeiten im Submikrosekundenbereich."
+        "Stabilizer Measurements: Parity checks across plaquettes and vertices diagnose bit-flip (X) and phase-flip (Z) errors without collapsing superposition state.",
+        "Threshold Theorem: When physical gate error rates fall below approximately one percent, scaling the lattice code distance exponentially suppresses logical errors.",
+        "Non-Local Information Storage: Logical quantum information is encoded across global topological entanglements rather than any individual vulnerable physical qubit.",
+        "Real-Time Decoding Graphs: Minimum-weight perfect matching (MWPM) algorithms process syndrome streams at cryogenic sub-microsecond speeds."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Theoretische Physik und Quanteninformationsüberprüfung"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584036561584-897c11f7c5f8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Laser interferometry setup for quantum syndrome readout with low-noise amplification",
+      "caption": "Quantum error suppression: syndrome decoding algorithms arresting error propagation below fault-tolerant thresholds."
+    },
+    {
       "type": "h2",
-      "text": "Supraleitende Architekturen und kryogene Verbindungen"
+      "text": "Der Übergang von verrauschten Quantenprozessoren mittlerer Skala zu fehlertoleranten Quantenprozessoren"
     },
     {
       "type": "p",
-      "text": "Technische Oberflächencodes erfordern dichte zweidimensionale Gittertopologien. Transmon-Qubits, die durch abstimmbare Mikrowellenresonatoren miteinander verbunden sind, müssen die Kohärenz bei Temperaturen von fünfzehn Millikelvin aufrechterhalten, während hochdichte Koaxialkabel Tausende von Ausleseleitungen zu FPGA-Decodern mit Raumtemperatur extrahieren."
+      "text": "Während verrauschte Quantenprozessoren mittlerer Skala (NISQ) in speziellen Sampling-Benchmarks die algorithmische Überlegenheit bewiesen haben, erfordert die praktische Quantenberechnung logische Fehlerraten unter zehn bis minus zwölftel. Um dieses Ziel zu erreichen, ist eine topologische Quantenfehlerkorrektur (QEC) erforderlich, bei der fragile physikalische Qubits über zweidimensionale Oberflächengitter verschränkt werden, um unsterbliche logische Qubits zu bilden, die durch die Topologie geschützt sind."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "Präzisionsphysik und Quantenmessprinzipien",
-      "caption": "Vorlesung über experimentelle Physik, die sich mit extremer Präzisionsinterferometrie, kryogener Stabilität und Quantenzustandskontrolle befasst."
+      "title": "Precision Physics and Quantum Measurement Principles",
+      "caption": "Experimental physics lecture exploring extreme precision interferometry, cryogenic stability, and quantum state control.",
+      "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10"
     },
     {
       "type": "h2",
-      "text": "Der Horizont der skalierbaren Quantenchemie"
+      "text": "Der Übergang von verrauschten Quantenprozessoren mittlerer Skala zu fehlertoleranten Quantenprozessoren"
     },
     {
       "type": "p",
-      "text": "Die Einführung fehlertoleranter logischer Qubits wird eine genaue Simulation von Nitrogenase-Enzymen für die Synthese von Düngemitteln in der Umgebung, Festkörperbatterieelektrolyten und komplexen makromolekularen Katalysatoren ermöglichen, die Supercomputer niemals berechnen werden."
+      "text": "Während verrauschte Quantenprozessoren mittlerer Skala (NISQ) in speziellen Sampling-Benchmarks die algorithmische Überlegenheit bewiesen haben, erfordert die praktische Quantenberechnung logische Fehlerraten unter zehn bis minus zwölftel. Um dieses Ziel zu erreichen, ist eine topologische Quantenfehlerkorrektur (QEC) erforderlich, bei der fragile physikalische Qubits über zweidimensionale Oberflächengitter verschränkt werden, um unsterbliche logische Qubits zu bilden, die durch die Topologie geschützt sind."
     }
   ],
-  "sourceHash": "72618758c4d63268a64e2cad605fa285e4eedae3"
+  "sourceHash": "55f0c412780294dd2f32fca59f7dcab355e1429b"
 }

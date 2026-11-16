@@ -13,7 +13,7 @@
     "finance",
     "unit-economics"
   ],
-  "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+  "image": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80",
   "imageAlt": "Modern glass enterprise skyscraper facade representing corporate software scalability and financial stability",
   "body": [
     {
@@ -29,6 +29,12 @@
       "text": "1. Deconstructing Net Dollar Retention (NDR)"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mechanics of SaaS Retention - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Mechanics of SaaS Retention."
+    },
+    {
       "type": "p",
       "text": "Net Dollar Retention measures the percentage of recurring revenue retained from an existing cohort of customers over a specified twelve-month window, incorporating contractions, downgrades, churn, and expansions:"
     },
@@ -36,6 +42,12 @@
       "type": "code",
       "lang": "text",
       "code": "NDR = (Starting ARR + Expansion ARR - Contraction ARR - Churn ARR) / Starting ARR × 100%\n\nGRR = (Starting ARR - Contraction ARR - Churn ARR) / Starting ARR × 100%\n\nWhere:\n- GRR cannot exceed 100% and isolates product stickiness\n- NDR captures pricing power, seat expansion, and product cross-selling"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80",
+      "alt": "The Mechanics of SaaS Retention - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Mechanics of SaaS Retention."
     },
     {
       "type": "p",

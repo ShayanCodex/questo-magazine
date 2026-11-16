@@ -13,8 +13,8 @@
     "physics",
     "orbital-mechanics"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "High-temperature rocket propulsion chamber and vacuum testing facility",
+  "image": "https://images.unsplash.com/photo-1517976487582-8409e6c6e737?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Supersonic aerospike rocket engine exhaust plume shock diamonds during static test stand firing",
   "body": [
     {
       "type": "h2",
@@ -29,6 +29,12 @@
       "text": "Key Points"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Orbital launch vehicle ascending through upper atmosphere with altitude-compensating nozzle plume",
+      "caption": "Altitude compensation: ambient atmospheric pressure self-adjusting exhaust expansion across the aerospike ramp."
+    },
+    {
       "type": "ul",
       "items": [
         "Aerodynamic Boundary: Ambient atmospheric pressure acts as an invisible outer nozzle wall, allowing the exhaust plume to expand naturally from sea level to orbit.",
@@ -41,6 +47,12 @@
       "type": "quote",
       "text": "The bell nozzle was an engineering compromise of the early space race. The aerospike represents propulsion fluid dynamics operating in pure harmony with ambient physics.",
       "cite": "Journal of Advanced Propulsion & Hypersonic Mechanics"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Additive manufactured copper-alloy combustion chamber with regenerative cooling channels",
+      "caption": "Regenerative cooling: cryogenic liquid methane flowing through 3D-printed micro-channels along the nozzle spike."
     },
     {
       "type": "h2",

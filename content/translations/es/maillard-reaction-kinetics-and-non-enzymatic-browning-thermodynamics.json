@@ -12,7 +12,7 @@
     "thermodynamics"
   ],
   "image": "/images/articles/maillard-reaction-culinary.jpg",
-  "imageAlt": "Sellado a alta temperatura de una creación culinaria con una rica caramelización de color marrón dorado en una cocina profesional",
+  "imageAlt": "High-temperature searing of a culinary creation with rich golden-brown caramelization in a professional kitchen",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Puntos clave"
+      "text": "La arquitectura química del sabor tostado"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1470813740244-df3752178108?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Thermodynamics of the Maillard Reaction."
     },
     {
       "type": "ul",
       "items": [
-        "Condensación inicial: El ataque nucleofílico de una amina no protonada sobre el carbono carbonilo de un azúcar reductor produce una glicosilamina inestable.",
-        "Reordenamiento de Amadori: la isomerización catalizada por ácido convierte las aldosilaminas en 1-amino-1-desoxi-2-cetosas estables, la fase intermedia fundamental.",
-        "Degradación de Strecker: Los intermedios de dicarbonilo reaccionan con aminoácidos para generar aldehídos y aminocetonas que se condensan en pirazinas aromáticas.",
-        "Equilibrio de la actividad del agua: La velocidad de reacción alcanza su punto máximo en la actividad del agua intermedia ($a_w \\aproximadamente 0,65$ a $0,75$), mientras que el agua superficial libre suprime el oscurecimiento."
+        "Initial Condensation: Nucleophilic attack of an unprotonated amine on a reducing sugar carbonyl carbon yields an unstable glycosylamine.",
+        "Amadori Rearrangement: Acid-catalyzed isomerization converts aldosylamines into stable 1-amino-1-deoxy-2-ketoses, the pivotal intermediate phase.",
+        "Strecker Degradation: Dicarbonyl intermediates react with amino acids to generate aldehydes and aminoketones that condense into aromatic pyrazines.",
+        "Water Activity Balance: Reaction velocity peaks at intermediate water activity ($a_w \\approx 0.65$ to $0.75$), while free surface water suppresses browning."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "Revista de ciencia culinaria modernista"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1484589065579-247adc070a15?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Thermodynamics of the Maillard Reaction - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Thermodynamics of the Maillard Reaction."
+    },
+    {
       "type": "h2",
-      "text": "Umbrales térmicos e hidratación superficial"
+      "text": "La arquitectura química del sabor tostado"
     },
     {
       "type": "p",
-      "text": "La cascada de Maillard se acelera exponencialmente por encima de los 140°C (284°F). Debido a que el agua líquida se evapora a 100°C a presión atmosférica, las superficies húmedas de los alimentos no pueden alcanzar la energía de activación termodinámica necesaria para un dorado rápido hasta que la humedad de la superficie se haya vaporizado por completo. Esto explica por qué la desecación de la superficie es esencial para el tostado a altas temperaturas."
+      "text": "Cada corteza dorada de una hogaza de masa madre, de un grano de café tostado y de un bistec chamuscado debe su profundidad aromática a una de las cascadas más intrincadas de la química de los alimentos: la reacción de Maillard. Esta vía de pardeamiento no enzimática, que lleva el nombre del químico francés Louis-Camille Maillard, transforma azúcares reductores simples y nucleófilos de aminoácidos en cientos de moléculas de sabor volátiles."
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU",
-      "title": "La ciencia de la reacción de Maillard y la termodinámica de Browning",
-      "caption": "Análisis químico detallado de aminoácidos, azúcares reductores, aldehídos de Strecker y compuestos de sabor heterocíclicos."
+      "title": "The Science of the Maillard Reaction & Browning Thermodynamics",
+      "caption": "Detailed food chemistry analysis of amino acids, reducing sugars, Strecker aldehydes, and heterocyclic flavor compounds.",
+      "src": "https://www.youtube-nocookie.com/embed/2FVfJTGpXnU"
     },
     {
       "type": "h2",
-      "text": "Manipulación del pH y gastronomía moderna"
+      "text": "La arquitectura química del sabor tostado"
     },
     {
       "type": "p",
-      "text": "Elevar el pH de la superficie utilizando tampones alcalinos (como el bicarbonato de sodio) desprotona los grupos amina de los aminoácidos, aumentando su nucleofilicidad y acelerando drásticamente la cinética de reacción a temperaturas más bajas sin cocinar demasiado el interior."
+      "text": "Cada corteza dorada de una hogaza de masa madre, de un grano de café tostado y de un bistec chamuscado debe su profundidad aromática a una de las cascadas más intrincadas de la química de los alimentos: la reacción de Maillard. Esta vía de pardeamiento no enzimática, que lleva el nombre del químico francés Louis-Camille Maillard, transforma azúcares reductores simples y nucleófilos de aminoácidos en cientos de moléculas de sabor volátiles."
     }
   ],
-  "sourceHash": "c6c53fadf6a9f6a0d846319573d36f3d56e66b56"
+  "sourceHash": "a879380da9b4634b8ea45020161b445339659c48"
 }

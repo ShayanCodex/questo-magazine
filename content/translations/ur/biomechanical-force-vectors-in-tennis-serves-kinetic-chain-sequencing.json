@@ -12,7 +12,7 @@
     "athletic-performance"
   ],
   "image": "/images/articles/tennis-biomechanics-serve.jpg",
-  "imageAlt": "متحرک ٹرافی میں پروفیشنل ٹینس کھلاڑی کورٹ میں دھماکہ خیز فرسٹ سرو کی تیاری کر رہا ہے",
+  "imageAlt": "Professional tennis player in dynamic trophy pose preparing for an explosive first serve on court",
   "body": [
     {
       "type": "h2",
@@ -24,15 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "بیلسٹک ریکٹ کی رفتار کی طبیعیات"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Biomechanical Force Vectors in Elite Tennis Serves - Structural Figure 1",
+      "caption": "Visual analysis: architectural schematics and technical domain representations for Biomechanical Force Vectors in Elite Tennis Serves."
     },
     {
       "type": "ul",
       "items": [
-        "گراؤنڈ ری ایکشن فورس (GRF): دھماکہ خیز گھٹنے کا موڑ اور عمودی زمینی دھکا ابتدائی لکیری رفتار پیدا کرتا ہے جو پورے حرکی ترتیب کو چلاتا ہے۔",
-        "شرونیی اور چھاتی کی علیحدگی: کولہے کی گردش کندھے کی گردش کی طرف لے جاتی ہے، جس سے بنیادی ترچھا پٹھوں میں ایک لچکدار اسٹریچ شارٹننگ سائیکل بنتا ہے۔",
-        "اندرونی کندھے کی گردش: کندھے کی اندرونی گردش میں 2,400 ڈگری فی سیکنڈ سے زیادہ کونیی رفتار حتمی ریکٹ ہیڈ کی رفتار کا 50٪ تک حصہ ڈالتی ہے۔",
-        "امپیکٹ ایلیویشن ونڈو: عمودی امپلس ویکٹر کے اوپری حصے پر گیند کو مارنا پیرابولک کلیئرنس اور نیچے کی طرف کورٹ ٹریکٹری زاویوں کو بہتر بناتا ہے۔"
+        "Ground Reaction Force (GRF): Explosive knee flexion and vertical ground push generate the initial linear momentum that drives the entire kinetic sequence.",
+        "Pelvic and Thoracic Separation: Hip rotation leads shoulder rotation, creating an elastic stretch-shortening cycle across core oblique musculature.",
+        "Internal Shoulder Rotation: Angular velocities exceeding 2,400 degrees per second in internal shoulder rotation contribute up to 50% of final racquet head velocity.",
+        "Impact Elevation Window: Striking the ball at the apex of the vertical impulse vector optimizes parabolic clearance and downward court trajectory angles."
       ]
     },
     {
@@ -41,27 +47,33 @@
       "cite": "انٹرنیشنل سوسائٹی آف اسپورٹس بائیو مکینکس"
     },
     {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Biomechanical Force Vectors in Elite Tennis Serves - Operational Figure 2",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Biomechanical Force Vectors in Elite Tennis Serves."
+    },
+    {
       "type": "h2",
-      "text": "Segmental Kinematic Sequencing"
+      "text": "بیلسٹک ریکٹ کی رفتار کی طبیعیات"
     },
     {
       "type": "p",
-      "text": "تیز رفتار 3D آپٹیکل موشن کیپچر سے پتہ چلتا ہے کہ چوٹی کی کونیی رفتار ایک سخت قربت سے دور تک بڑھنے کی پیروی کرتی ہے: شرونی کی کمی ٹرنک کی سرعت کو شروع کرتی ہے، ٹرنک کی کمی کندھے کی گردش کو شروع کرتی ہے، اس کے بعد مائکرو سیکنڈ کے وقفوں میں کہنی کی توسیع، اور آگے کی طرف سے آگے بڑھنا شروع ہوتا ہے۔"
+      "text": "پیشہ ورانہ ٹینس سرو مسابقتی ایتھلیٹکس میں سب سے زیادہ دھماکہ خیز، ملٹی جوائنٹ کلوز لوپ کینیمیٹک ایکشن ہے۔ 220 کلومیٹر فی گھنٹہ سے زیادہ لانچ کی رفتار کو حاصل کرنے کے لیے اوپری انتہا کی طاقت سے کہیں زیادہ کی ضرورت ہوتی ہے۔ یہ عدالت کی سطح سے ریکیٹ اثر نقطہ تک ایک غیر منقطع حرکی زنجیر کے ساتھ میکانی توانائی کی ترتیب وار، غیر روکے منتقلی کا مطالبہ کرتا ہے۔"
     },
     {
       "type": "video",
-      "src": "https://www.youtube-nocookie.com/embed/5D_1E4kGZ_A",
-      "title": "جدید ٹینس سرو میں کائنےٹک چین بائیو مکینکس",
-      "caption": "تیز رفتار کیمرہ اور تھری ڈی موشن ٹریکنگ تجزیہ جس میں زمینی رد عمل کی قوتوں، چھاتی کے جھکاؤ، اور کندھے کی اندرونی گردش کے میکانکس کی تفصیل ہے۔"
+      "title": "Kinetic Chain Biomechanics in the Modern Tennis Serve",
+      "caption": "High-speed camera and 3D motion tracking analysis detailing ground reaction forces, thoracic tilt, and internal shoulder rotation mechanics.",
+      "src": "https://www.youtube-nocookie.com/embed/CeLT-DLt_HQ"
     },
     {
       "type": "h2",
-      "text": "چوٹ کی روک تھام اور اسکیپولر ڈیلیریشن"
+      "text": "بیلسٹک ریکٹ کی رفتار کی طبیعیات"
     },
     {
       "type": "p",
-      "text": "گیند کے اثر کے بعد سنکی سستی کا مرحلہ پوسٹریئر روٹیٹر کف اور لیبرم کو انتہائی خلفشار قوتوں سے مشروط کرتا ہے۔ جدید کنڈیشنگ 200+ سرو میچ لوڈ کے دوران مشترکہ لمبی عمر کی حفاظت کے لیے پوسٹرئیر چین سنکی کمی کی تربیت پر بہت زیادہ توجہ مرکوز کرتی ہے۔"
+      "text": "پیشہ ورانہ ٹینس سرو مسابقتی ایتھلیٹکس میں سب سے زیادہ دھماکہ خیز، ملٹی جوائنٹ کلوز لوپ کینیمیٹک ایکشن ہے۔ 220 کلومیٹر فی گھنٹہ سے زیادہ لانچ کی رفتار کو حاصل کرنے کے لیے اوپری انتہا کی طاقت سے کہیں زیادہ کی ضرورت ہوتی ہے۔ یہ عدالت کی سطح سے ریکیٹ اثر نقطہ تک ایک غیر منقطع حرکی زنجیر کے ساتھ میکانی توانائی کی ترتیب وار، غیر روکے منتقلی کا مطالبہ کرتا ہے۔"
     }
   ],
-  "sourceHash": "e108c63a629d8092b338d28c4d66b231001d4240"
+  "sourceHash": "eafb965e9ad454c902604d79da02611cb550f42a"
 }
