@@ -56,11 +56,33 @@ const VERIFIED_ARCHIVE_IDS: Record<string, string> = {
   'timaeus-plato': 'timaeusofplato00platiala',
 };
 
+export const GITHUB_VAULT_RELEASE_BASE =
+  'https://github.com/ShayanCodex/questo-books-vault/releases/download/v1.0-books';
+
+// Verified fast-download masterworks hosted on high-bandwidth GitHub Release CDN
+export const FAST_VAULT_PDFS: Record<string, string> = {
+  meditations: `${GITHUB_VAULT_RELEASE_BASE}/meditations.pdf`,
+  'the-art-of-war': `${GITHUB_VAULT_RELEASE_BASE}/the-art-of-war.pdf`,
+  'frankenstein-or-the-modern-prometheus': `${GITHUB_VAULT_RELEASE_BASE}/frankenstein.pdf`,
+  frankenstein: `${GITHUB_VAULT_RELEASE_BASE}/frankenstein.pdf`,
+  'the-prince-il-principe': `${GITHUB_VAULT_RELEASE_BASE}/the-prince.pdf`,
+  'the-prince': `${GITHUB_VAULT_RELEASE_BASE}/the-prince.pdf`,
+  'the-communist-manifesto': `${GITHUB_VAULT_RELEASE_BASE}/the-communist-manifesto.pdf`,
+  'the-republic-of-plato': `${GITHUB_VAULT_RELEASE_BASE}/the-republic-of-plato.pdf`,
+  'the-republic': `${GITHUB_VAULT_RELEASE_BASE}/the-republic-of-plato.pdf`,
+  'the-wealth-of-nations': `${GITHUB_VAULT_RELEASE_BASE}/the-wealth-of-nations.pdf`,
+  'on-the-origin-of-species': `${GITHUB_VAULT_RELEASE_BASE}/on-the-origin-of-species.pdf`,
+  'beyond-good-and-evil': `${GITHUB_VAULT_RELEASE_BASE}/beyond-good-and-evil.pdf`,
+  'the-odyssey-of-homer': `${GITHUB_VAULT_RELEASE_BASE}/the-odyssey-of-homer.pdf`,
+  'the-odyssey': `${GITHUB_VAULT_RELEASE_BASE}/the-odyssey-of-homer.pdf`,
+  'pride-and-prejudice': `${GITHUB_VAULT_RELEASE_BASE}/pride-and-prejudice.pdf`,
+};
+
 export const LOCAL_CORE_PDFS: Record<string, string> = {
-  'meditations': '/books/meditations.pdf',
+  meditations: '/books/meditations.pdf',
   'the-art-of-war': '/books/the-art-of-war.pdf',
   'frankenstein-or-the-modern-prometheus': '/books/frankenstein.pdf',
-  'frankenstein': '/books/frankenstein.pdf',
+  frankenstein: '/books/frankenstein.pdf',
   'the-prince-il-principe': '/books/the-prince.pdf',
   'the-prince': '/books/the-prince.pdf',
   'the-communist-manifesto': '/books/the-communist-manifesto.pdf',
@@ -68,6 +90,18 @@ export const LOCAL_CORE_PDFS: Record<string, string> = {
 
 export function getSafePdfUrl(slug: string, fallbackPdfUrl: string): string {
   const cleanSlug = slug.replace(/-edition-\d+$/, '');
+
+  // 1. Check Fast Vault GitHub Release CDN first
+  if (FAST_VAULT_PDFS[cleanSlug]) {
+    return FAST_VAULT_PDFS[cleanSlug];
+  }
+  for (const [key, cdnUrl] of Object.entries(FAST_VAULT_PDFS)) {
+    if (cleanSlug.startsWith(key) || cleanSlug.includes(key)) {
+      return cdnUrl;
+    }
+  }
+
+  // 2. Check local core PDFs bundled in /public/books/
   if (LOCAL_CORE_PDFS[cleanSlug]) {
     return LOCAL_CORE_PDFS[cleanSlug];
   }
@@ -81,7 +115,10 @@ export function getSafePdfUrl(slug: string, fallbackPdfUrl: string): string {
 
 export function isLocalCorePdf(slug: string): boolean {
   const cleanSlug = slug.replace(/-edition-\d+$/, '');
-  if (LOCAL_CORE_PDFS[cleanSlug]) return true;
+  if (FAST_VAULT_PDFS[cleanSlug] || LOCAL_CORE_PDFS[cleanSlug]) return true;
+  for (const key of Object.keys(FAST_VAULT_PDFS)) {
+    if (cleanSlug.startsWith(key) || cleanSlug.includes(key)) return true;
+  }
   for (const key of Object.keys(LOCAL_CORE_PDFS)) {
     if (cleanSlug.startsWith(key) || cleanSlug.includes(key)) return true;
   }

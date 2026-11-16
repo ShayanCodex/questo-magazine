@@ -176,7 +176,7 @@ export function EBookDetail() {
                 className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-sans font-semibold transition-colors shadow-xs"
               >
                 <ArrowDownTrayIcon className="h-4 w-4" />
-                <span>{isLocal ? 'Download Local PDF (Fast)' : 'Download Scanned PDF'}</span>
+                <span>{isLocal ? 'Download Fast PDF (Verified)' : 'Download Scanned PDF'}</span>
               </a>
 
               <button

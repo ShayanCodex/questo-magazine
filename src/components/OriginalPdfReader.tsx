@@ -255,10 +255,10 @@ export function OriginalPdfReader({
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-sans font-semibold transition-colors shadow-sm"
-            title={isLocal ? "Download Full Original PDF (Instant Local Host)" : "Download Full Original PDF Document"}
+            title={isLocal ? "Download Full Original PDF (Fast CDN)" : "Download Full Original PDF Document"}
           >
             <ArrowDownTrayIcon className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">{isLocal ? 'Download Local PDF' : 'Download PDF'}</span>
+            <span className="hidden sm:inline">{isLocal ? 'Download Fast PDF' : 'Download PDF'}</span>
             <span className="sm:hidden">PDF</span>
             {isLocal && (
               <span className="text-[10px] bg-emerald-700/80 px-1.5 py-0.2 rounded text-emerald-200">
