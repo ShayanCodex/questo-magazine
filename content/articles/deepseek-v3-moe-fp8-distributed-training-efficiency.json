@@ -1,6 +1,6 @@
 {
   "slug": "deepseek-v3-moe-fp8-distributed-training-efficiency",
-  "title": "Multi-Head Latent Attention & DualPipe: The Architecture Behind DeepSeek-V3 and 10x Efficiency in Open Weights",
+  "title": "The Architecture of DeepSeek-V3",
   "excerpt": "Deconstructing the algorithmic breakthroughs of DeepSeek-V3: Multi-head Latent Attention (MLA), DeepSeekMoE 256 routed experts, DualPipe overlapping computation, and the mathematical economics of FP8 mixed-precision training.",
   "date": "2026-11-16",
   "author": "Elena Vance",

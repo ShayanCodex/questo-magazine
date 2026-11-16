@@ -1,6 +1,6 @@
 {
   "slug": "rust-memory-safety-without-garbage-collection",
-  "title": "Formal Memory Safety in Rust: Affine Types, Borrow Checkers & RAII Semantics",
+  "title": "Formal Memory Safety in Rust",
   "excerpt": "A technical monograph dissecting compile-time ownership invariants, aliasing rules, non-lexical lifetimes, and zero-cost abstraction guarantees in systems programming.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",

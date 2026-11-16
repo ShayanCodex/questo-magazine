@@ -1,6 +1,6 @@
 {
   "slug": "post-quantum-cryptography-kyber-and-lattice-key-encapsulation",
-  "title": "Post-Quantum Cryptography in Production: Kyber, Dilithium, and the Mathematics of Module-Lattice Key Encapsulation",
+  "title": "Post-Quantum Cryptography in Production",
   "excerpt": "A software engineering breakdown of NIST-standardized quantum-resistant algorithms: Module Learning with Errors (MLWE), polynomial ring arithmetic, constant-time side-channel resistance, and TLS hybrid migration.",
   "date": "2026-11-17",
   "author": "Hiroshi Tanaka",
