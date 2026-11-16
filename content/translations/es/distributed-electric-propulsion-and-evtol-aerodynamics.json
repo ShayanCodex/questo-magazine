@@ -1,0 +1,74 @@
+{
+  "slug": "distributed-electric-propulsion-and-evtol-aerodynamics",
+  "title": "Propulsión eléctrica distribuida, aerodinámica de rotor basculante y física certificable de la movilidad aérea urbana eVTOL",
+  "excerpt": "Una investigación aeronáutica sobre la propulsión eléctrica distribuida (DEP), la mitigación del estado del anillo de vórtice, los perfiles de directividad acústica y los estándares de aeronavegabilidad de la FAA para aeronaves eVTOL de pasajeros.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "aerospace",
+    "evtol",
+    "electric-propulsion",
+    "aerodynamics",
+    "aviation",
+    "clean-energy"
+  ],
+  "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Elegantes alas aerodinámicas de avión y góndolas de propulsión que se elevan sobre las nubes contra el cielo del crepúsculo",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La mecánica aerodinámica de la propulsión eléctrica distribuida (DEP)"
+    },
+    {
+      "type": "p",
+      "text": "A diferencia de las turbinas de gas de combustión interna cuya eficiencia aumenta agresivamente con el tamaño, los motores eléctricos mantienen relaciones electromagnéticas potencia-peso casi idénticas en amplias escalas físicas. Esta divergencia termodinámica fundamental permite la propulsión eléctrica distribuida (DEP): colocar docenas de propulsores eléctricos más pequeños y de altas revoluciones en el borde de ataque de alas fijas en lugar de depender de turbofanes gemelos pesados. DEP aumenta la presión dinámica efectiva sobre la cuerda del ala durante la transición a baja velocidad, triplicando los coeficientes de sustentación sin exigir complicados mecanismos mecánicos de flaps."
+    },
+    {
+      "type": "h2",
+      "text": "Principios aeronáuticos clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Conformación de la directividad aeroacústica: al desincronizar las frecuencias de paso de las palas del rotor y optimizar la geometría de barrido de las palas, el DEP reduce las huellas de ruido percibidas en el suelo por debajo de 55 dBA a 500 pies de altitud.",
+        "Evitación del estado del anillo de vórtice (VRS): la rápida modulación digital del paso cíclico y la interacción de estela de vórtice de múltiples rotores evitan un asentamiento aerodinámico peligroso durante los corredores de descenso vertical empinados.",
+        "Arquitecturas redundantes de CC de alto voltaje multibus: los inversores de carburo de silicio (SiC) de 800 V a 1000 V brindan energía aislada de doble canal a cada motor, lo que garantiza un control de vuelo determinista incluso en escenarios de emergencia con dos motores apagados.",
+        "Física de la transición de crucero por las alas: Gestión del corredor de transición aeroelástico inestable entre la sustentación estacionaria y la sustentación aerodinámica del ala mediante computadoras de control de vuelo multieje que se ejecutan a 200 Hz."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La verdadera revolución de la movilidad aérea urbana no es la química de las baterías; es el desacoplamiento aerodinámico de la generación de empuje de la masa de propulsión permitido por arquitecturas eléctricas distribuidas.",
+      "cite": "Revisión de sistemas aeronáuticos y espaciales de Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517976487588-51829e28f28b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hélice de fibra de carbono compuesta de alta tecnología y góndola aerodinámica en un túnel de viento aeronáutico experimental",
+      "caption": "Ingestión de capa límite y aeroacústica del rotor: palas compuestas de alto aspecto diseñadas para minimizar la cavitación del vórtice de la punta."
+    },
+    {
+      "type": "h2",
+      "text": "Mitigación de la huella acústica y operaciones certificables en el espacio aéreo urbano"
+    },
+    {
+      "type": "p",
+      "text": "Para que los aviones eVTOL se integren en los horizontes metropolitanos, los perfiles de ruido psicoacústico son mucho más importantes que los niveles de decibelios por sí solos. Los oídos humanos reaccionan de forma aguda a los zumbidos tonales generados por las palas rígidas de las hélices sincronizadas. Los sistemas avanzados de control de vuelo oscilan activamente las rotaciones de los motores individuales en fracciones de hercios, dispersando la energía acústica en un amplio espectro de ruido blanco ambiental que se mezcla perfectamente con el ruido de fondo de la ciudad."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7gLBJpnmAo8",
+      "title": "Documental de CNBC: ¿Qué es un eVTOL y cómo funciona el vuelo eléctrico?",
+      "caption": "Documental de ingeniería aeronáutica que analiza la propulsión eléctrica distribuida, la aerodinámica de transición de rotor basculante y la certificación de aeronavegabilidad de la FAA."
+    },
+    {
+      "type": "h2",
+      "text": "Presupuestos de peso estructural y límites de densidad de energía gravimétrica"
+    },
+    {
+      "type": "p",
+      "text": "Las celdas de iones de litio comerciales actuales proporcionan energías específicas a nivel de paquete de aproximadamente 260 a 280 vatios-hora por kilogramo, lo que impone estrictas fracciones de peso estructural en las estructuras de aviones de bismaleimida de fibra de carbono. Con las células de ánodo de silicio y de estado cuasi sólido de próxima generación que superan los 400 Wh/kg entrando en la calificación piloto, los alcances regionales urbanos se expandirán de 80 kilómetros a más de 250 kilómetros, reorganizando fundamentalmente el tránsito regional y la economía de los viajes entre ciudades."
+    }
+  ],
+  "sourceHash": "03a0b32a514041921b166e4ed145b27df9281415"
+}

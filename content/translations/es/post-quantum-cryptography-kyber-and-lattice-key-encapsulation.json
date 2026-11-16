@@ -1,0 +1,74 @@
+{
+  "slug": "post-quantum-cryptography-kyber-and-lattice-key-encapsulation",
+  "title": "Criptografía poscuántica en producción: Kyber, dilithium y las matemáticas de la encapsulación de claves de celosía de módulo",
+  "excerpt": "Un desglose de la ingeniería de software de los algoritmos de resistencia cuántica estandarizados por el NIST: aprendizaje de módulos con errores (MLWE), aritmética de anillo polinomial, resistencia de canal lateral de tiempo constante y migración híbrida TLS.",
+  "date": "2026-11-17",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "cryptography",
+    "security",
+    "quantum-computing",
+    "software-engineering",
+    "algorithms",
+    "backend"
+  ],
+  "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Código matricial y flujos de datos iluminados y brillantes que representan claves de cifrado criptográfico y redes algorítmicas",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La inminente desaparición de los logaritmos discretos de curva elíptica"
+    },
+    {
+      "type": "p",
+      "text": "La seguridad moderna del transporte de Internet depende abrumadoramente de los intercambios de claves RSA y de curva elíptica Diffie-Hellman (ECDH). Si bien es seguro contra las supercomputadoras clásicas, el algoritmo de Shor que se ejecuta en una computadora cuántica criptoanalíticamente relevante (CRQC) puede resolver logaritmos discretos y factorizaciones de números enteros en tiempo polinomial. Para proteger el tráfico interceptado almacenado contra campañas adversarias de \"cosechar ahora, descifrar después\", la infraestructura empresarial está migrando rápidamente a la criptografía poscuántica (PQC)."
+    },
+    {
+      "type": "h2",
+      "text": "Pilares básicos matemáticos y de implementación"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Módulo de aprendizaje con errores (ML-KEM / Kyber): la seguridad se basa en la dificultad de encontrar vectores cortos en redes enteras geométricas de alta dimensión, un problema resistente a aceleraciones cuánticas conocidas.",
+        "Aritmética de anillo polinómico sobre Z_q: los cálculos aprovechan las transformaciones teóricas de números (NTT) sobre polinomios de grado 256 con módulo q = 3329, lo que permite la aceleración de hardware SIMD y AVX-512.",
+        "Ejecución de microcódigo en tiempo constante: Eliminación de canales laterales de ramificación condicional y temporización de caché para evitar fugas de clave secreta durante el muestreo de rechazo polinómico.",
+        "Apretones de manos híbridos clásicos-post-cuánticos: encapsular claves de sesión a través de X25519 y ML-KEM-768 dentro de los registros ClientHello de TLS 1.3 garantiza que una falla de día cero en las nuevas matemáticas de celosía no pueda comprometer las garantías de seguridad heredadas."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La seguridad cuántica no se puede actualizar de la noche a la mañana; La agilidad criptográfica exige que reemplacemos cada primitiva asimétrica en nuestras pilas de serialización hoy.",
+      "cite": "Questo Applied Cryptography & Distributed Systems Group"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Rack de servidores empresariales de alta densidad iluminado con LED cian en una instalación segura de centro de datos financieros",
+      "caption": "Terminación de borde Enterprise TLS 1.3: implementación de intercambios de claves de celosía híbrida a través de servidores proxy de ingreso de alto rendimiento."
+    },
+    {
+      "type": "h2",
+      "text": "Desafíos de fragmentación de MTU y sobrecarga de paquetes"
+    },
+    {
+      "type": "p",
+      "text": "Mientras que las claves públicas ECDH clásicas miden 32 bytes compactos, las claves públicas Kyber-768 requieren 1184 bytes y los textos cifrados ocupan 1088 bytes. En entornos TCP con unidades de transmisión máxima (MTU) estándar de 1500 bytes, la cadena de certificados TLS combinada y el intercambio de claves híbridas causarán fragmentación de IP si no se comprime o negocia cuidadosamente utilizando transportes QUIC y de ida y vuelta cero (0-RTT) modernos."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/ZRpcYSghGr8",
+      "title": "Tecnología IBM: Cómo la criptografía de celosía protege los datos poscuánticos",
+      "caption": "Desglose técnico que analiza el aprendizaje de módulos con errores (ML-KEM/Kyber) y las celosías matemáticas que protegen contra el descifrado cuántico."
+    },
+    {
+      "type": "h2",
+      "text": "El camino hacia el fortalecimiento de la producción soberana"
+    },
+    {
+      "type": "p",
+      "text": "La migración de proveedores de identidad globales, navegadores web y libros de contabilidad bancarios requiere un cumplimiento riguroso de FIPS 203 (ML-KEM) y FIPS 204 (ML-DSA). Las organizaciones que implementan bibliotecas poscuánticas deben verificar pruebas matemáticas formales utilizando motores de verificación automatizados como Coq para garantizar la seguridad de la memoria contra vulnerabilidades de desbordamiento del búfer."
+    }
+  ],
+  "sourceHash": "87a29ce40660b7365348efcaa041e6dcee98060a"
+}

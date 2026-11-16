@@ -1,0 +1,74 @@
+{
+  "slug": "wave-field-synthesis-and-spatial-binaural-audio-acoustics",
+  "title": "Synthèse de champ d'onde, modélisation psychoacoustique du pavillon HRTF et physique de l'holophonie audio spatiale",
+  "excerpt": "Une analyse d'ingénierie acoustique de l'holophonie acoustique : synthèse d'onde de Huygens-Fresnel, fonctions de transfert liées à la tête (HRTF), filtrage de différence de temps interaural (ITD) et champs sonores immersifs de nouvelle génération.",
+  "date": "2026-11-17",
+  "author": "Siddharth Nair",
+  "tags": [
+    "audio-engineering",
+    "acoustics",
+    "spatial-audio",
+    "physics",
+    "entertainment",
+    "dsp"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Console de mixage audio professionnelle moderne avec curseurs et faders lumineux dans un environnement de studio acoustique",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le principe Huygens-Fresnel et la synthèse du front d'onde acoustique"
+    },
+    {
+      "type": "p",
+      "text": "Les formats de son surround conventionnels (tels que 5.1 et 7.1) s'appuient sur des lois de panoramique stéréophonique qui créent un point idéal minuscule et fragile où l'alignement de phase est vrai. La synthèse de champ d'onde (WFS) s'écarte de l'imagerie fantôme en appliquant le principe acoustique de Huygens-Fresnel : n'importe quel front d'onde physique peut être synthétisé par un ensemble de sources de haut-parleurs secondaires rapprochés pilotées avec des retards de phase et des coefficients d'amplitude précis. Dans une salle d’écoute WFS, les sources sonores virtuelles conservent un positionnement géométrique absolu quel que soit le mouvement de l’auditeur."
+    },
+    {
+      "type": "h2",
+      "text": "Fondements psychoacoustiques et de traitement du signal"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Différences de temps et de niveau interauraux (ITD/ILD) : la théorie duplex dicte que la localisation horizontale repose sur des deltas de temps d'arrivée à l'oreille inférieurs à 700 microsecondes aux basses fréquences et sur une atténuation de l'amplitude de l'ombre de tête supérieure à 1,5 kHz.",
+        "Fonctions de transfert liées à la tête (HRTF) : le filtrage spectral unique introduit par les plis individuels du pavillon de l'oreille externe, la diffraction du crâne et les réflexions du torse fournit des indices d'élévation et de localisation avant-arrière.",
+        "Fréquences d'alias spatial : l'espacement des haut-parleurs détermine strictement la fréquence de coupure supérieure où les réseaux sonores discrets se dissolvent en lobes d'interférence spatiale destructeurs.",
+        "Harmoniques sphériques et ambisoniques d'ordre supérieur (HOA) : le codage des champs audio 3D directionnels en coefficients de dilatation harmoniques sphériques orthogonaux dissocie la conception sonore des dispositions physiques spécifiques des haut-parleurs."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "L'audio spatial ne consiste pas à ajouter plus de canaux ; il s’agit de synthétiser les gradients de pression physique exacts que les oreilles humaines ont évolué pour décoder dans l’espace physique.",
+      "cite": "Laboratoire d'électroacoustique et psychoacoustique Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Réseaux de haut-parleurs de monitoring de studio haut de gamme et diffuseurs acoustiques dans une chambre de test audio anéchoïque",
+      "caption": "Mise en scène sonore anéchoïque : réseaux multi-microphones calibrés capturant les réponses impulsionnelles de la pièce (RIR) pour la convolution spatiale."
+    },
+    {
+      "type": "h2",
+      "text": "Numérisation personnalisée HRTF Pinna via Computer Vision"
+    },
+    {
+      "type": "p",
+      "text": "Les profils HRTF génériques provoquent souvent une confusion avant-arrière chez les auditeurs d'écouteurs ou perçoivent les sources sonores comme s'effondrant à l'intérieur de leur crâne. Les moteurs binauraux modernes utilisent des modèles d’apprentissage automatique pour synthétiser des noyaux de filtres HRTF personnalisés directement à partir de photos de smartphone du pavillon de l’oreille d’un utilisateur, libérant ainsi une véritable clarté spatiale 3D externalisée."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/fpcDXdkJ7vU",
+      "title": "Ingénierie acoustique : fonctionnement de l'audio 3D spatial et de la physique binaurale",
+      "caption": "Enquête psychoacoustique détaillée explorant les fonctions de transfert liées à la tête (HRTF), les délais interauraux et la mise en scène sonore du champ d'ondes."
+    },
+    {
+      "type": "h2",
+      "text": "DSP spatial en temps réel dans les environnements de réalité augmentée"
+    },
+    {
+      "type": "p",
+      "text": "Étant donné que les casques de réalité augmentée intègrent le suivi de la tête à 6 DOF, les moteurs audio doivent restituer des chemins de réflexion de réverbération dynamiques avec des latences inférieures à 20 millisecondes. En exécutant des noyaux de convolution de lancer de rayons en temps réel sur des puces DSP spécialisées, les développeurs créent des objets audio virtuels qui se reflètent avec précision sur les murs, tapis et plafonds du monde réel."
+    }
+  ],
+  "sourceHash": "48a117165731e26906d86f26ccb4cff5c8fa4f4a"
+}

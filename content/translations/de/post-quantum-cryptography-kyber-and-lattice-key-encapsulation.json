@@ -1,0 +1,74 @@
+{
+  "slug": "post-quantum-cryptography-kyber-and-lattice-key-encapsulation",
+  "title": "Post-Quantum-Kryptographie in der Produktion: Kyber, Dilithium und die Mathematik der Modul-Gitter-Schlüsselkapselung",
+  "excerpt": "Eine softwaretechnische Aufschlüsselung NIST-standardisierter quantenresistenter Algorithmen: Module Learning with Errors (MLWE), polynomiale Ringarithmetik, zeitkonstanter Seitenkanalwiderstand und TLS-Hybridmigration.",
+  "date": "2026-11-17",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "cryptography",
+    "security",
+    "quantum-computing",
+    "software-engineering",
+    "algorithms",
+    "backend"
+  ],
+  "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Matrixcode und beleuchtete leuchtende Datenströme, die kryptografische Verschlüsselungsschlüssel und algorithmische Gitter darstellen",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der bevorstehende Untergang diskreter Elliptic-Curve-Logarithmen"
+    },
+    {
+      "type": "p",
+      "text": "Die moderne Internet-Transportsicherheit basiert überwiegend auf dem Schlüsselaustausch RSA und Elliptic Curve Diffie-Hellman (ECDH). Obwohl er gegenüber klassischen Supercomputern sicher ist, kann der Shor-Algorithmus, der auf einem kryptoanalytisch relevanten Quantencomputer (CRQC) läuft, diskrete Logarithmen und ganzzahlige Faktorisierungen in polynomieller Zeit lösen. Um gespeicherten abgefangenen Datenverkehr vor gegnerischen Kampagnen zu schützen, die „Jetzt ernten, später entschlüsseln“, migriert die Unternehmensinfrastruktur schnell auf Post-Quantum-Kryptographie (PQC)."
+    },
+    {
+      "type": "h2",
+      "text": "Kernsäulen der Mathematik und Implementierung"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Modul Lernen mit Fehlern (ML-KEM / Kyber): Die Sicherheit beruht auf der Schwierigkeit, kurze Vektoren in hochdimensionalen geometrischen Ganzzahlgittern zu finden, ein Problem, das gegen bekannte Quantenbeschleunigungen resistent ist.",
+        "Polynomringarithmetik über Z_q: Berechnungen nutzen zahlentheoretische Transformationen (NTT) über Polynome vom Grad 256 mit Modulus q = 3329 und ermöglichen so SIMD- und AVX-512-Hardwarebeschleunigung.",
+        "Mikrocode-Ausführung in konstanter Zeit: Eliminierung bedingter Verzweigungen und Cache-Timing-Seitenkanäle, um den Verlust geheimer Schlüssel während der Polynom-Ablehnungsabtastung zu verhindern.",
+        "Hybride klassische Post-Quantum-Handshakes: Die Kapselung von Sitzungsschlüsseln über X25519 und ML-KEM-768 in TLS 1.3 ClientHello-Datensätzen stellt sicher, dass ein Zero-Day-Fehler in der neuen Gittermathematik die alten Sicherheitsgarantien nicht gefährden kann."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Quantensicherheit lässt sich nicht von heute auf morgen nachrüsten; Die kryptografische Agilität erfordert, dass wir heute jedes asymmetrische Grundelement in unseren Serialisierungsstapeln ersetzen.",
+      "cite": "Questo Applied Cryptography & Distributed Systems Group"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hochdichtes Enterprise-Server-Rack mit cyanfarbenen LEDs beleuchtet in einer sicheren Finanzrechenzentrumsanlage",
+      "caption": "Enterprise TLS 1.3 Edge Termination: Implementierung hybrider Lattice-Key-Austausche über Ingress-Proxys mit hohem Durchsatz."
+    },
+    {
+      "type": "h2",
+      "text": "Herausforderungen bei Paket-Overhead und MTU-Fragmentierung"
+    },
+    {
+      "type": "p",
+      "text": "Während klassische öffentliche ECDH-Schlüssel kompakte 32 Bytes messen, benötigen öffentliche Kyber-768-Schlüssel 1.184 Bytes und Chiffretexte belegen 1.088 Bytes. In TCP-Umgebungen mit Standard-MTUs (Maximum Transmission Units) von 1.500 Byte führt die Kombination aus TLS-Zertifikatskette und hybridem Schlüsselaustausch zu IP-Fragmentierung, wenn sie nicht sorgfältig komprimiert oder mit modernen QUIC- und Zero-Round-Trip-Transporten (0-RTT) ausgehandelt wird."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/ZRpcYSghGr8",
+      "title": "IBM-Technologie: Wie Gitterkryptographie Post-Quantum-Daten sichert",
+      "caption": "Technische Aufschlüsselung zur Analyse des Modullernens mit Fehlern (ML-KEM/Kyber) und der mathematischen Gitter, die vor Quantenentschlüsselung schützen."
+    },
+    {
+      "type": "h2",
+      "text": "Der Weg zur souveränen Produktionshärtung"
+    },
+    {
+      "type": "p",
+      "text": "Die Migration globaler Identitätsanbieter, Webbrowser und Bankbücher erfordert die strikte Einhaltung von FIPS 203 (ML-KEM) und FIPS 204 (ML-DSA). Organisationen, die Post-Quantum-Bibliotheken einsetzen, müssen formale mathematische Beweise mithilfe automatisierter Verifizierungs-Engines wie Coq verifizieren, um die Speichersicherheit vor Pufferüberlauf-Exploits zu gewährleisten."
+    }
+  ],
+  "sourceHash": "87a29ce40660b7365348efcaa041e6dcee98060a"
+}

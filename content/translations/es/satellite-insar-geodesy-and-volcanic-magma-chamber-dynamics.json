@@ -1,0 +1,74 @@
+{
+  "slug": "satellite-insar-geodesy-and-volcanic-magma-chamber-dynamics",
+  "title": "Radar interferométrico de apertura sintética (InSAR) y dinámica de la cámara de magma: geodesia satelital de inflación supervolcánica",
+  "excerpt": "Un estudio de geofísica y teledetección satelital: desenvolvimiento de la fase de interferometría del radar, modelos de deformación de fuente puntual de Mogi, corrección del retraso atmosférico y presurización de magma preeruptiva.",
+  "date": "2026-11-17",
+  "author": "Elena Rostova",
+  "tags": [
+    "geophysics",
+    "remote-sensing",
+    "satellites",
+    "volcanology",
+    "geodesy",
+    "earth-science"
+  ],
+  "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Vasta caldera montañosa volcánica y picos glaciares capturados desde una perspectiva aérea a gran altitud bajo una espectacular luz solar",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La geodesia de precisión de la interferometría de radar satelital"
+    },
+    {
+      "type": "p",
+      "text": "Mucho antes de que un volcán expulse columnas de cenizas o desencadene enjambres de temblores armónicos, el ascenso de magma fundido infla la corteza suprayacente. Debido a que el terreno volcánico suele ser inaccesible o peligroso para el personal de tierra, los geofísicos confían en el radar interferométrico de apertura sintética (InSAR). Al comparar las diferencias de fase del radar de dos imágenes de radar tomadas con semanas o años de diferencia fuera de la órbita, los científicos pueden mapear la deformación del suelo a escala milimétrica en cientos de kilómetros cuadrados."
+    },
+    {
+      "type": "h2",
+      "text": "Principios geodésicos y geomecánicos"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Franjas de fase del interferograma: cada franja alterna del arco iris en un interferograma diferencial corresponde a la mitad de una longitud de onda de radar (típicamente 2,8 cm para los satélites Sentinel-1 de banda C) de desplazamiento de la superficie de la línea de visión.",
+        "Corrección de pantalla de fase atmosférica (APS): mitigar los retrasos del vapor de agua troposférico utilizando modelos numéricos de reanálisis meteorológico (como ECMWF GACOS) para evitar que los artefactos de las nubes se hagan pasar por un levantamiento tectónico.",
+        "Modelos de fuentes analíticas de Mogi & Yang: inversión de los perfiles de deformación de la superficie para calcular la profundidad, el cambio de volumen y la relación de aspecto de los depósitos de magma presurizados ubicados entre 5 y 15 kilómetros bajo tierra.",
+        "Interferometría de dispersión persistente (PSI): seguimiento de objetivos reflectantes estables (afloramientos rocosos, infraestructura) durante décadas para aislar la fluencia submilimétrica a través de fallas tectónicas complejas."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Los satélites que orbitan a 700 kilómetros de altitud ahora pueden detectar una cámara de magma respirable que se hincha del grosor de una uña debajo de varios kilómetros de basalto sólido.",
+      "cite": "Observatorio Satélite de Investigación de Geodesia y Vulcanología de Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Valle volcánico geotérmico con columnas de vapor de azufre ascendentes y formaciones de corteza mineral fracturadas",
+      "caption": "Desplazamiento tectónico activo del suelo: campos geotérmicos que experimentan un rápido hundimiento cíclico e inflación impulsados ​​por el flujo de fluido hidrotermal."
+    },
+    {
+      "type": "h2",
+      "text": "De la tensión superficial al pronóstico de hidrofractura magmática"
+    },
+    {
+      "type": "p",
+      "text": "Cuando la tasa de inflación de la superficie se acelera de manera no lineal, la tensión de tracción en la roca anfitriona excede la resistencia a la tracción, lo que desencadena la propagación del dique: el magma fundido escinde fracturas hacia la superficie. La combinación de mapas continuos de velocidad InSAR con redes de sismómetros de banda ancha en tiempo real permite a las agencias de protección civil emitir advertencias de evacuación semanas antes de que ocurra una erupción explosiva."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/kc_T4buG2gE",
+      "title": "Geodesia del USGS: deformación del volcán y dinámica de la cámara de magma",
+      "caption": "Interferometría de radar satelital (InSAR) y modelado geomecánico que demuestra la inflación de la corteza terrestre sobre los reservorios de magma subsuperficiales presurizados."
+    },
+    {
+      "type": "h2",
+      "text": "Restringiendo la dinámica de Caldara en cuencas supervolcánicas"
+    },
+    {
+      "type": "p",
+      "text": "Sobre las calderas de Yellowstone y Campi Flegrei, los registros InSAR a largo plazo revelan ciclos decenales continuos de elevación y deflación sin erupción, conocidos como bradisismo. InSAR permite a los geofísicos diferenciar entre la expansión benigna del gas hidrotermal y la peligrosa recarga profunda de magma, estableciendo criterios empíricos claros para la mitigación del riesgo geológico."
+    }
+  ],
+  "sourceHash": "7e81a8ba1da5cd0254de1a71416a0732f35df3b8"
+}

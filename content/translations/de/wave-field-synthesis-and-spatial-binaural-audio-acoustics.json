@@ -1,0 +1,74 @@
+{
+  "slug": "wave-field-synthesis-and-spatial-binaural-audio-acoustics",
+  "title": "Wellenfeldsynthese, psychoakustische HRTF-Pinna-Modellierung und die Physik der räumlichen Audioholophonie",
+  "excerpt": "Eine akustisch-technische Analyse der akustischen Holophonie: Huygens-Fresnel-Wellensynthese, kopfbezogene Übertragungsfunktionen (HRTFs), interaurale Zeitdifferenzfilterung (ITD) und immersive Schallfelder der nächsten Generation.",
+  "date": "2026-11-17",
+  "author": "Siddharth Nair",
+  "tags": [
+    "audio-engineering",
+    "acoustics",
+    "spatial-audio",
+    "physics",
+    "entertainment",
+    "dsp"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Modernes professionelles Audiomischpult mit leuchtenden Schiebereglern und Fadern in einer akustischen Studioumgebung",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Das Huygens-Fresnel-Prinzip und die akustische Wellenfrontsynthese"
+    },
+    {
+      "type": "p",
+      "text": "Konventionelle Surround-Sound-Formate (wie 5.1 und 7.1) basieren auf stereophonen Schwenkgesetzen, die einen winzigen, fragilen Sweet Spot erzeugen, an dem die Phasenausrichtung gilt. Die Wellenfeldsynthese (WFS) weicht von der Phantombildgebung ab, indem sie das Huygens-Fresnel-Akustikprinzip anwendet: Jede physikalische Wellenfront kann durch eine Reihe eng beieinander liegender sekundärer Lautsprecherquellen synthetisiert werden, die mit präzisen Phasenverzögerungen und Amplitudenkoeffizienten betrieben werden. In einem WFS-Hörraum behalten virtuelle Schallquellen unabhängig von der Bewegung des Hörers ihre absolute geometrische Positionierung bei."
+    },
+    {
+      "type": "h2",
+      "text": "Grundlagen der Psychoakustik und Signalverarbeitung"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Interaurale Zeit- und Pegelunterschiede (ITD/ILD): Die Duplextheorie schreibt vor, dass die horizontale Lokalisierung auf Ohrankunftszeitdeltas von unter 700 Mikrosekunden bei niedrigen Frequenzen und einer Kopfschattenamplitudendämpfung über 1,5 kHz beruht.",
+        "Head-Related Transfer Functions (HRTF): Die einzigartige spektrale Filterung, die durch einzelne Ohrmuschelfalten, Schädelbeugung und Rumpfreflexionen eingeführt wird, liefert Höhen- und Vorne-Hinten-Lokalisierungshinweise.",
+        "Räumliche Aliasing-Frequenzen: Der Abstand der Lautsprechertreiber bestimmt genau die obere Grenzfrequenz, bei der sich diskrete Klangfelder in destruktive räumliche Interferenzkeulen auflösen.",
+        "Sphärische Harmonische und Ambisonics höherer Ordnung (HOA): Die Kodierung gerichteter 3D-Audiofelder in orthogonale sphärische harmonische Expansionskoeffizienten entkoppelt das Sounddesign von spezifischen physischen Lautsprecheranordnungen."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Bei räumlichem Audio geht es nicht darum, weitere Kanäle hinzuzufügen; Es geht darum, die exakten physikalischen Druckgradienten zu synthetisieren, die das menschliche Ohr entwickelt hat, um es im physischen Raum zu entschlüsseln.",
+      "cite": "Questo Labor für Elektroakustik und Psychoakustik"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hochwertige Studiomonitor-Lautsprecher-Arrays und akustische Diffusoren in einer schalltoten Audiotestkammer",
+      "caption": "Echofreie Klanginszenierung: Kalibrierte Multi-Mikrofon-Arrays, die Raumimpulsantworten (RIR) für die räumliche Faltung erfassen."
+    },
+    {
+      "type": "h2",
+      "text": "Personalisiertes HRTF-Ohrmuschel-Scannen per Computer Vision"
+    },
+    {
+      "type": "p",
+      "text": "Generische HRTF-Profile führen häufig dazu, dass Kopfhörerhörer Verwirrung von vorne nach hinten verspüren oder den Eindruck erwecken, dass Schallquellen in ihrem Schädel zusammenbrechen. Moderne binaurale Engines verwenden Modelle des maschinellen Lernens, um benutzerdefinierte HRTF-Filterkerne direkt aus Smartphone-Fotos der Ohrmuschel eines Benutzers zu synthetisieren und so echte externalisierte räumliche 3D-Klarheit zu ermöglichen."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/fpcDXdkJ7vU",
+      "title": "Akustiktechnik: Wie räumliches 3D-Audio und binaurale Physik funktionieren",
+      "caption": "Detaillierte psychoakustische Untersuchung zur Untersuchung kopfbezogener Übertragungsfunktionen (HRTFs), interauraler Zeitverzögerungen und Wellenfeld-Klanginszenierung."
+    },
+    {
+      "type": "h2",
+      "text": "Räumlicher Echtzeit-DSP in Augmented-Reality-Umgebungen"
+    },
+    {
+      "type": "p",
+      "text": "Da Augmented-Reality-Headsets 6-DOF-Kopfverfolgung integrieren, müssen Audio-Engines dynamische Nachhallreflexionspfade mit Latenzen unter 20 Millisekunden rendern. Durch die Ausführung von Echtzeit-Raytracing-Faltungskernen auf speziellen DSP-Chips erstellen Entwickler virtuelle Audioobjekte, die von Wänden, Teppichen und Decken in der realen Welt präzise reflektiert werden."
+    }
+  ],
+  "sourceHash": "48a117165731e26906d86f26ccb4cff5c8fa4f4a"
+}
