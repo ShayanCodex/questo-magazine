@@ -5,7 +5,7 @@
   <link href="https://questo-blog.netlify.app/" />
   <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://questo-blog.netlify.app/</id>
-  <updated>2026-11-16T01:12:06.736Z</updated>
+  <updated>2026-11-16T01:31:47.201Z</updated>
   <entry>
     <title>Aerobic Glycolysis, Lactate Threshold 2 &amp; The Physiology of Sub-2 Marathons</title>
     <link href="https://questo-blog.netlify.app/articles/aerobic-glycolysis-and-lactate-threshold-dynamics-in-endurance" />
@@ -24,6 +24,16 @@
     <summary>High-resolution telemetry analysis of downforce distribution, vortex shedding along trailing edge floor skirts, and thermal brake cooling trade-offs in modern motorsport.</summary>
     <author>
       <name>Liam O’Connor</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Aerogel Nanostructures and Superinsulative Silica Matrices in Aerospace Engineering</title>
+    <link href="https://questo-blog.netlify.app/articles/aerogel-nanostructures-and-superinsulative-silica-matrices" />
+    <id>https://questo-blog.netlify.app/articles/aerogel-nanostructures-and-superinsulative-silica-matrices</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>An investigation into supercritical drying, Knudsen diffusion suppression, and mesoporous aerogels designed to withstand hypersonic atmospheric reentry heating.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
     </author>
   </entry>
   <entry>
@@ -67,6 +77,26 @@
     </author>
   </entry>
   <entry>
+    <title>Bathymetric Mapping of the Mariana Trench: Hadal Zone Geomorphology and Subduction Trenches</title>
+    <link href="https://questo-blog.netlify.app/articles/bathymetric-mapping-of-the-mariana-trench-and-hadal-geomorphology" />
+    <id>https://questo-blog.netlify.app/articles/bathymetric-mapping-of-the-mariana-trench-and-hadal-geomorphology</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Exploring the abyss: multi-beam echo sounders, tectonic plate subduction mechanics, and hydrostatic pressures exceeding 1,100 atmospheres at the Challenger Deep.</summary>
+    <author>
+      <name>Julian Mercer</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Chiaroscuro Woodcut Printing and Intaglio Copperplate Etching in the Northern Renaissance</title>
+    <link href="https://questo-blog.netlify.app/articles/chiaroscuro-woodcut-printing-and-intaglio-copperplate-etching" />
+    <id>https://questo-blog.netlify.app/articles/chiaroscuro-woodcut-printing-and-intaglio-copperplate-etching</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>The technical evolution of Renaissance printmaking: analyzing tonal block registration, acid mordants, burin mechanics, and the democratization of visual culture.</summary>
+    <author>
+      <name>Anne Hardy</name>
+    </author>
+  </entry>
+  <entry>
     <title>Cognitive Ergonomics: Attentional Residue, Context Switching &amp; Spatial Focus</title>
     <link href="https://questo-blog.netlify.app/articles/cognitive-ergonomics-and-the-architecture-of-deep-work" />
     <id>https://questo-blog.netlify.app/articles/cognitive-ergonomics-and-the-architecture-of-deep-work</id>
@@ -77,6 +107,16 @@
     </author>
   </entry>
   <entry>
+    <title>Cosmic Microwave Background Polarization: B-Mode Primordial Gravitational Waves and Cosmic Inflation</title>
+    <link href="https://questo-blog.netlify.app/articles/cosmic-microwave-background-polarization-and-b-mode-inflation" />
+    <id>https://questo-blog.netlify.app/articles/cosmic-microwave-background-polarization-and-b-mode-inflation</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Deciphering the primordial echo of the Big Bang: how tensor perturbations, Thomson scattering, and cryogenic bolometer arrays hunt for cosmological inflation.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
+    </author>
+  </entry>
+  <entry>
     <title>CRISPR Base Editing &amp; Prime Editing in Precision Genetic Therapeutics</title>
     <link href="https://questo-blog.netlify.app/articles/crispr-base-editing-and-prime-editing-therapeutics" />
     <id>https://questo-blog.netlify.app/articles/crispr-base-editing-and-prime-editing-therapeutics</id>
@@ -84,6 +124,16 @@
     <summary>A clinical molecular biology analysis of deaminase-mediated nucleotide transitions, reverse-transcriptase pegRNA searching, and in vivo lipid nanoparticle delivery.</summary>
     <author>
       <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Cyclopean Masonry and Dry-Stone Retaining Hydraulics in Mediterranean Terraces</title>
+    <link href="https://questo-blog.netlify.app/articles/cyclopean-masonry-and-dry-stone-retaining-hydraulics" />
+    <id>https://questo-blog.netlify.app/articles/cyclopean-masonry-and-dry-stone-retaining-hydraulics</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Structural mechanics of mortarless stone engineering: analyzing shear friction, gravity retaining kinetics, and seismic energy dissipation across millennia.</summary>
+    <author>
+      <name>Elena Vance</name>
     </author>
   </entry>
   <entry>
@@ -107,6 +157,16 @@
     </author>
   </entry>
   <entry>
+    <title>Formal Verification of Distributed Consensus: TLA+, Isabelle/HOL and Mechanized Invariants</title>
+    <link href="https://questo-blog.netlify.app/articles/formal-verification-of-distributed-consensus-tla-and-isabelle" />
+    <id>https://questo-blog.netlify.app/articles/formal-verification-of-distributed-consensus-tla-and-isabelle</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Bridging mathematical specification and production software: how temporal logic of actions, refinement mappings, and interactive theorem provers eliminate subtle Byzantine faults.</summary>
+    <author>
+      <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
     <title>Heirloom Grain Genomics: Landrace Wheats, Gluten Network Rheology &amp; Soil Microbiomes</title>
     <link href="https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology" />
     <id>https://questo-blog.netlify.app/articles/heirloom-grain-genomics-and-heritage-flour-rheology</id>
@@ -124,6 +184,16 @@
     <summary>A programming language theory exploration into linear logic, affine resource tracking, memory consumption guarantees, and safe zero-cost abstractions in compile-time systems.</summary>
     <author>
       <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Microeconomics of Cloud Hyperscalers: Amortization, Power Purchase Agreements and Data Center CapEx</title>
+    <link href="https://questo-blog.netlify.app/articles/microeconomics-of-cloud-hyperscalers-and-datacenter-capex" />
+    <id>https://questo-blog.netlify.app/articles/microeconomics-of-cloud-hyperscalers-and-datacenter-capex</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Deconstructing modern hyperscale economics: GPU depreciation cycles, nuclear power purchase agreements, and the capital expenditure moat of artificial intelligence.</summary>
+    <author>
+      <name>Claire Dupont</name>
     </author>
   </entry>
   <entry>
@@ -177,6 +247,26 @@
     </author>
   </entry>
   <entry>
+    <title>Oleocanthal Phenolics and Polyphenol Chromatography in Extra Virgin Olive Oil Extraction</title>
+    <link href="https://questo-blog.netlify.app/articles/oleocanthal-phenolics-and-polyphenol-chromatography-in-olive-oil" />
+    <id>https://questo-blog.netlify.app/articles/oleocanthal-phenolics-and-polyphenol-chromatography-in-olive-oil</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>The biochemistry of bitter and pungent EVOO: examining malaxation thermodynamics, secoiridoid hydrolysis, and the anti-inflammatory pharmacology of oleocanthal.</summary>
+    <author>
+      <name>Saskia Lindqvist</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Optogenetics and Neural Circuit Dissection: Channelrhodopsins, Optodes, and Behavioral Modulation</title>
+    <link href="https://questo-blog.netlify.app/articles/optogenetics-and-neural-circuit-dissection-mechanics" />
+    <id>https://questo-blog.netlify.app/articles/optogenetics-and-neural-circuit-dissection-mechanics</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Millisecond optical control of genetically targeted neuronal ensembles: examining opsin biophysics, viral vector delivery, and the functional mapping of memory engrams.</summary>
+    <author>
+      <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
     <title>Perovskite-Silicon Tandem Solar Cells: Exceeding the Shockley-Queisser Limit</title>
     <link href="https://questo-blog.netlify.app/articles/perovskite-silicon-tandem-solar-cells-and-photovoltaic-efficiency" />
     <id>https://questo-blog.netlify.app/articles/perovskite-silicon-tandem-solar-cells-and-photovoltaic-efficiency</id>
@@ -224,6 +314,16 @@
     <summary>An engineering deep-dive into wafer-level packaging, through-silicon vias, high-bandwidth memory thermal dissipation, and the geopolitical choke points of advanced foundry capacity.</summary>
     <author>
       <name>Tariq Mahmood</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Skeletal Muscle Capillarization and Angiogenic Signaling in Ultra-Endurance Athletes</title>
+    <link href="https://questo-blog.netlify.app/articles/skeletal-muscle-capillarization-and-angiogenic-signaling" />
+    <id>https://questo-blog.netlify.app/articles/skeletal-muscle-capillarization-and-angiogenic-signaling</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Examining VEGF cascades, shear stress mechanotransduction, and microvascular diffusion kinetics that govern aerobic performance at the physiological limit.</summary>
+    <author>
+      <name>Liam O’Connor</name>
     </author>
   </entry>
   <entry>

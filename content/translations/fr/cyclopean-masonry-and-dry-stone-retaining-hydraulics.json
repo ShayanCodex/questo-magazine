@@ -1,0 +1,73 @@
+{
+  "slug": "cyclopean-masonry-and-dry-stone-retaining-hydraulics",
+  "title": "Maçonnerie cyclopéenne et hydraulique de retenue de pierre sèche dans les terrasses méditerranéennes",
+  "excerpt": "Mécanique structurelle de l'ingénierie de la pierre sans mortier : analyse du frottement de cisaillement, de la cinétique de retenue par gravité et de la dissipation de l'énergie sismique à travers des millénaires.",
+  "date": "2026-11-16",
+  "author": "Elena Vance",
+  "tags": [
+    "architecture",
+    "vernacular-architecture",
+    "masonry",
+    "structural-design",
+    "civil-engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Coteaux agricoles en terrasses méditerranéennes soutenus par des murs de pierres sèches et une architecture paysagère vernaculaire",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La maîtrise ancienne de la retenue par gravité sans mortier"
+    },
+    {
+      "type": "p",
+      "text": "Pendant des milliers d'années, les civilisations du bassin méditerranéen, des Andes et de la mer Égée ont transformé les coteaux escarpés et arides en terres arables productives grâce à la construction de terrasses en pierre sèche. Construites entièrement sans mortier ni ciment liant, ces structures monumentales démontrent une profonde compréhension de la mécanique géotechnique, du verrouillage par friction et de l'équilibre gravitationnel que le béton armé moderne a souvent du mal à reproduire."
+    },
+    {
+      "type": "h2",
+      "text": "Principes géotechniques de l'ingénierie en pierre sèche"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Ancienne maçonnerie en pierre mégalithique à emboîtement et joints de drainage dans la construction de terrasses historiques",
+      "caption": "Mécanique structurelle vernaculaire : les joints de friction à emboîtement permettent le drainage hydrostatique de l'eau tout en résistant à la pression latérale du sol."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Perméabilité hydraulique auto-drainante : contrairement aux murs de soutènement en béton rigide qui emprisonnent les eaux souterraines et subissent des éruptions catastrophiques de pression hydrostatique, les joints en pierre sèche permettent à l'eau de pluie de s'écouler librement à travers la face du mur.",
+        "Friction de cisaillement imbriquée : Des pierres brutes et non taillées posées avec une pâte vers le bas et vers l'intérieur transfèrent le sol latéral poussé vers le bas dans la fondation rocheuse.",
+        "Dissipation de l'énergie sismique : L'absence de liaisons chimiques rigides permet aux blocs de pierre adjacents de se déplacer et de glisser pendant les tremblements de terre, absorbant les ondes de choc cinétiques grâce à l'amortissement par friction.",
+        "Pierres traversantes (liantes) : de longues pierres de tête placées perpendiculairement tous les mètres attachent solidement la face de pierre dans l'agrégat de remblai, empêchant ainsi le renversement par rotation vers l'extérieur."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Un mur de béton combat la montagne jusqu'à ce qu'elle se fissure ; une terrasse en pierre sèche respire avec l'eau et bouge avec la terre pendant mille saisons.",
+      "cite": "Elena Vance, Géométries vernaculaires et théorie du paysage"
+    },
+    {
+      "type": "h2",
+      "text": "L'enveloppe microclimatique et la préservation des sols"
+    },
+    {
+      "type": "p",
+      "text": "Au-delà de la stabilisation des sols, les terrasses en pierre sèche créent des microclimats uniques. La masse thermique élevée du calcaire et du granit absorbe le rayonnement solaire lors d'une exposition diurne intense et renvoie la chaleur dans les zones racinaires pendant les nuits froides de la Méditerranée, évitant ainsi les dommages causés par le gel et créant des refuges microclimatiques pour les vignes, les olives et les agrumes."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "Maçonnerie en pierre sèche : mécanique des structures et patrimoine culturel",
+      "caption": "Documentaire d'ingénierie architecturale sur la construction en pierre sèche, les murs de soutènement gravitaires et la résilience sismique."
+    },
+    {
+      "type": "h2",
+      "text": "Renouveau contemporain du génie civil durable"
+    },
+    {
+      "type": "p",
+      "text": "Alors que le génie civil moderne est confronté à l’empreinte carbone intrinsèque du ciment Portland, la construction en pierre sèche connaît une renaissance. Utilisant de la pierre locale sans émissions de transport et durcissant sans carbone, les architectes paysagistes et les ingénieurs civils contemporains reviennent aux murs gravitaires sans mortier pour des remblais d'autoroute résilients et une conservation écologique des sols."
+    }
+  ],
+  "sourceHash": "8a4bab070d1aa0b959499a0290c220993484cad7"
+}

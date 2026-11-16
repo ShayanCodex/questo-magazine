@@ -1,0 +1,73 @@
+{
+  "slug": "cosmic-microwave-background-polarization-and-b-mode-inflation",
+  "title": "Polarización del fondo cósmico de microondas: ondas gravitacionales primordiales en modo B e inflación cósmica",
+  "excerpt": "Descifrando el eco primordial del Big Bang: cómo las perturbaciones tensoriales, la dispersión de Thomson y las matrices de bolómetros criogénicos buscan la inflación cosmológica.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "science",
+    "astrophysics",
+    "cosmology",
+    "general-relativity",
+    "quantum-mechanics"
+  ],
+  "image": "https://images.unsplash.com/photo-1447433819943-74a20887a81e?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Fondo cósmico de microondas Radiación del espacio profundo y campo estelar del cosmos temprano",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La antigua radiación reliquia de la recombinación cósmica"
+    },
+    {
+      "type": "p",
+      "text": "Aproximadamente 380.000 años después del Big Bang, el universo en expansión se enfrió a aproximadamente 3.000 Kelvin, lo que permitió que los electrones libres se unieran a los protones en la época de la recombinación. Los fotones se desacoplaron de la materia bariónica y se propagan libremente a través del espacio-tiempo como el Fondo Cósmico de Microondas (CMB). Esta radiación reliquia, hoy desplazada al rojo en la banda de microondas a 2,725 Kelvin, conserva una instantánea prístina de las fluctuaciones cuánticas primordiales."
+    },
+    {
+      "type": "h2",
+      "text": "Perturbaciones de densidad escalar versus modos tensoriales primordiales"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1536383389102-0ac333c44981?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Observatorio del telescopio astrofísico bajo un cielo polar oscuro observando el fondo cósmico de microondas",
+      "caption": "Detección cósmica: conjuntos de bolómetros criogénicos polarimétricos que mapean patrones de polarización primordiales en modo E y modo B."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cuadrupolos de dispersión de Thomson: La polarización lineal en el CMB surge exclusivamente de las anisotropías de temperatura de los cuadrupolos que inciden sobre los electrones libres durante la recombinación.",
+        "Polarización en modo E: Patrones de polarización en forma de gradiente, sin rizos, generados por perturbaciones de densidad escalar primordial, mapeados con extraordinaria precisión por WMAP y Planck.",
+        "Polarización en modo B: Patrones de polarización en forma de rizo, libres de divergencia, cuya fuente principal son las perturbaciones métricas tensoriales: ondas gravitacionales primordiales producidas durante la inflación cósmica.",
+        "Contaminación por lentes gravitacionales: Las estructuras cósmicas intermedias lentejan gravitacionalmente modos E puros en modos B secundarios, lo que requiere complejos algoritmos estadísticos de eliminación de lentes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Detectar la polarización primordial en modo B es nuestro único telescopio experimental capaz de observar directamente los primeros 10^-32 segundos de la historia cósmica.",
+      "cite": "Revisión de astrofísica teórica y cosmología observacional"
+    },
+    {
+      "type": "h2",
+      "text": "Planos focales criogénicos y supresión de ruido atmosférico"
+    },
+    {
+      "type": "p",
+      "text": "La observación de los modos B primordiales exige sensibilidad a las fluctuaciones de temperatura del orden de decenas de nanokelvins. Los experimentos terrestres en el Polo Sur y en el alto desierto de Atacama utilizan conjuntos de bolómetros de sensores de borde de transición (TES) enfriados por refrigeradores de dilución de helio a 100 mikelvin, minimizando el ruido de fonones térmicos mientras miden el brillo del cielo en múltiples frecuencias para restar las emisiones de polvo galáctico."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "La inflación cósmica y la búsqueda de ondas gravitacionales primordiales",
+      "caption": "Seminario de astrofísica que explica la polarimetría CMB, las restricciones de la relación tensor-escalar y la resta de polvo en primer plano."
+    },
+    {
+      "type": "h2",
+      "text": "La relación tensor-escalar y la gran física unificada"
+    },
+    {
+      "type": "p",
+      "text": "El objetivo final de la polarimetría CMB moderna es limitar la relación tensor-escalar r. Establecer un límite superior en r limita directamente la escala de energía de la inflación cósmica, proporcionando campos de prueba empíricos para las compactaciones de la teoría de cuerdas y las Grandes Teorías Unificadas en energías de doce órdenes de magnitud más allá del alcance de los aceleradores de partículas terrestres."
+    }
+  ],
+  "sourceHash": "a6dc12ab94e18a7f58a375cffbb2a5755989504b"
+}

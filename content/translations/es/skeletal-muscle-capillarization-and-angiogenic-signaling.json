@@ -1,0 +1,73 @@
+{
+  "slug": "skeletal-muscle-capillarization-and-angiogenic-signaling",
+  "title": "Capilarización del músculo esquelético y señalización angiogénica en atletas de ultrarresistencia",
+  "excerpt": "Examinando las cascadas de VEGF, la mecanotransducción del estrés cortante y la cinética de difusión microvascular que gobiernan el rendimiento aeróbico en el límite fisiológico.",
+  "date": "2026-11-16",
+  "author": "Liam O’Connor",
+  "tags": [
+    "fitness",
+    "endurance",
+    "sports-science",
+    "physiology",
+    "capillarization"
+  ],
+  "image": "https://images.unsplash.com/photo-1549035323-d35c521d1b8b?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Atletas de resistencia de élite que entrenan en pista con un consumo máximo de oxígeno y adaptaciones microvasculares",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El cuello de botella de la difusión capilar en la locomoción humana"
+    },
+    {
+      "type": "p",
+      "text": "Si bien el gasto cardíaco determina el suministro volumétrico de sangre oxigenada a los músculos en contracción, el último paso limitante de la frecuencia en la síntesis aeróbica sostenida de ATP es la extracción de oxígeno periférico. El oxígeno debe difundirse a través del endotelio capilar, el líquido intersticial y el sarcolema para llegar a las crestas mitocondriales. En los maratonistas de talla mundial, esta vía de difusión se acorta drásticamente por la capilarización extrema del músculo esquelético."
+    },
+    {
+      "type": "h2",
+      "text": "Señales moleculares que impulsan la angiogénesis inducida por el ejercicio"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1792041006147-d545166e7c78?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Mecánica de zancada biomecánica y cinética de perfusión microvascular en deportes de resistencia",
+      "caption": "Arquitectura microvascular: el entrenamiento aeróbico crónico de alto volumen expande la relación capilar-fibra en más del sesenta por ciento."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Factor de crecimiento endotelial vascular (VEGF): la citocina angiogénica maestra, transcrita en respuesta al factor inducible por hipoxia muscular 1α (HIF-1α) y al estiramiento mecánico.",
+        "Estrés de cizallamiento capilar: el flujo sanguíneo microvascular elevado durante el ejercicio prolongado estimula la óxido nítrico sintasa endotelial (eNOS), lo que desencadena la digestión de las metaloproteinasas de la matriz y la brotación de vasos.",
+        "Relación capilar-fibra: los individuos no entrenados poseen de 1,1 a 1,4 capilares por fibra muscular, mientras que los esquiadores de fondo de élite exhiben proporciones superiores a 2,4 a 2,8.",
+        "Tiempo de tránsito de los glóbulos rojos: la superficie capilar expandida prolonga el tiempo de tránsito de los eritrocitos dentro del lecho muscular, asegurando la descarga completa de oxihemoglobina a pesar del gasto cardíaco astronómico."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "VO2 máx es el motor, pero el lecho capilar microvascular es el colector de inyección de combustible. Sin densidad capilar, la densidad mitocondrial permanece biológicamente latente.",
+      "cite": "Journal of Applied Physiology & Sports Science"
+    },
+    {
+      "type": "h2",
+      "text": "Metodologías de entrenamiento para la máxima proliferación capilar"
+    },
+    {
+      "type": "p",
+      "text": "La angiogénesis no es estimulada por carreras anaeróbicas de alta intensidad, que inducen una rápida acidosis intracelular que suprime el crecimiento endotelial. Más bien, la expansión capilar máxima requiere un entrenamiento de alto volumen y baja intensidad (Zona 2) que dure de 90 a 180 minutos. Esta tensión de corte mecánica sostenida y el flujo metabólico moderado mantienen la elevación del ARNm de VEGF-A en estado estacionario sin agotamiento del sistema nervioso autónomo."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "Capilarización del músculo esquelético y cinética del oxígeno",
+      "caption": "Análisis de fisiología deportiva de adaptaciones microvasculares, proporciones capilares-fibra y economía de carrera de resistencia."
+    },
+    {
+      "type": "h2",
+      "text": "Moduladores nutricionales y ambientales"
+    },
+    {
+      "type": "p",
+      "text": "La exposición hipóxica intermitente (entrenamiento en altitud) magnifica la activación transcripcional de HIF-1α, aumentando las cascadas angiogénicas inducidas por el ejercicio. Por el contrario, el consumo excesivo de altas dosis de antioxidantes exógenos (vitaminas C y E) inmediatamente después del ejercicio debilita la señalización fisiológica de las especies reactivas de oxígeno, lo que amortigua la adaptación capilar y la remodelación vascular adaptativa."
+    }
+  ],
+  "sourceHash": "057d9e594a260d92132a45c3e3d0c0b13671e770"
+}

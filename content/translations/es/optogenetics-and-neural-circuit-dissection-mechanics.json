@@ -1,0 +1,73 @@
+{
+  "slug": "optogenetics-and-neural-circuit-dissection-mechanics",
+  "title": "Optogenética y disección de circuitos neuronales: canalrodopsinas, optodos y modulación del comportamiento",
+  "excerpt": "Control óptico de milisegundos de conjuntos neuronales genéticamente específicos: examen de la biofísica de opsinas, la entrega de vectores virales y el mapeo funcional de engramas de memoria.",
+  "date": "2026-11-16",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "health",
+    "neuroscience",
+    "optogenetics",
+    "cellular-biology",
+    "medicine"
+  ],
+  "image": "https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Iluminación de laboratorio de neurociencia celular e instrumentación óptica para la investigación de optogenética",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La revolución de la precisión en la neurociencia de sistemas"
+    },
+    {
+      "type": "p",
+      "text": "Durante más de un siglo, los neurocientíficos estuvieron restringidos a herramientas contundentes: lesiones farmacológicas que afectaban a núcleos cerebrales completos durante horas, o estimulación eléctrica que despolarizaba indiscriminadamente todos los axones que pasaban independientemente de la identidad celular. La optogenética revolucionó este paradigma al combinar la focalización genética con canales iónicos activados por luz, lo que permitió a los investigadores activar o silenciar subpoblaciones neuronales definidas en escalas de tiempo de milisegundos."
+    },
+    {
+      "type": "h2",
+      "text": "Biofísica molecular de opsinas microbianas"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1639322537504-6427a16b0a28?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Topología de red de potencial de acción sináptica que representa la conectividad del circuito neuronal",
+      "caption": "Circuitos neuronales: la expresión del promotor específico del tipo de célula permite que la iluminación óptica evoque potenciales de acción deterministas."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Canalrodopsina-2 (ChR2): un canal catiónico activado por luz de Chlamydomonas reinhardtii que absorbe luz azul de 470 nm para provocar rápidas corrientes de sodio entrantes y activación de potencial de acción.",
+        "Halorrodopsina (NpHR): una bomba de cloruro dirigida hacia adentro activada por una luz amarilla de 589 nm que hiperpolariza la membrana neuronal y apaga instantáneamente los potenciales de acción.",
+        "Arqueerhodopsina (Arco): Una bomba de protones hacia afuera impulsada por luz que logra un silenciamiento eléctrico completo sin causar una acumulación post-inhibitoria de cloruro.",
+        "Promotores específicos de células: el empaquetamiento de genes de opsina dentro de virus adenoasociados (AAV) bajo promotores específicos (p. ej., CaMKIIα para células piramidales excitadoras, PV para células en cesta) garantiza una orientación precisa."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Al transformar los circuitos neuronales en circuitos ópticos, la optogenética convirtió la correlación en causalidad, demostrando cómo patrones de activación específicos sintetizan la percepción, la emoción y la memoria.",
+      "cite": "Dr. Marcus Vance, Monografías de neurobiología de sistemas"
+    },
+    {
+      "type": "h2",
+      "text": "Etiquetado de engramas y manipulación de la memoria"
+    },
+    {
+      "type": "p",
+      "text": "Una de las aplicaciones más profundas de la tecnología optogenética es la disección de engramas de memoria. Utilizando promotores de genes tempranos inmediatos, como c-Fos, vinculados a sistemas transactivadores de tetraciclina, los neurobiólogos pueden etiquetar selectivamente el conjunto disperso exacto de neuronas del hipocampo activadas durante el condicionamiento del miedo. Iluminar estas células marcadas en un entorno completamente nuevo evoca instantáneamente el recuerdo del miedo, lo que demuestra la suficiencia funcional de engramas."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "Optogenética: iluminando los circuitos neuronales y el comportamiento",
+      "caption": "Simposio de neurociencia sobre cinética de canalrodopsina, tecnologías de implantes de fibra óptica y conectómica funcional."
+    },
+    {
+      "type": "h2",
+      "text": "Fronteras terapéuticas: de la retinitis pigmentosa a la modulación cerebral profunda"
+    },
+    {
+      "type": "p",
+      "text": "La traducción clínica de la optogenética ya está en marcha. En oftalmología, la inyección intravítrea de canalrodopsinas desplazadas al rojo en células ganglionares de la retina supervivientes ha restaurado con éxito la agudeza visual parcial en pacientes cegados por retinitis pigmentosa. En neurocirugía, se están desarrollando optodos micro-LED inalámbricos para reemplazar la estimulación cerebral profunda convencional, ofreciendo supresión de los temblores sin efectos secundarios cognitivos."
+    }
+  ],
+  "sourceHash": "039003af7f0c4219ce90ddbdc8b6d3e6af1feab4"
+}

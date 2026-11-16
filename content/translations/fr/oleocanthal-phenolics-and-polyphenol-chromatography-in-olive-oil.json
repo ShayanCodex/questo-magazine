@@ -1,0 +1,73 @@
+{
+  "slug": "oleocanthal-phenolics-and-polyphenol-chromatography-in-olive-oil",
+  "title": "Produits phénoliques oléocanthals et chromatographie des polyphénols dans l'extraction d'huile d'olive extra vierge",
+  "excerpt": "La biochimie de l'EVOO amère et piquante : examen de la thermodynamique du malaxation, de l'hydrolyse sécoiridoïde et de la pharmacologie anti-inflammatoire de l'oléocanthal.",
+  "date": "2026-11-16",
+  "author": "Saskia Lindqvist",
+  "tags": [
+    "food",
+    "culinary-science",
+    "biochemistry",
+    "olive-oil",
+    "gastronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1541259418332-97b56947904f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Branches d'olivier fraîches et olives vertes sur arbres méditerranéens récoltées pour extraction à froid",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Les marqueurs biochimiques de qualité sensorielle"
+    },
+    {
+      "type": "p",
+      "text": "Dans la véritable huile d'olive extra vierge, l'amertume sensorielle et le piquant oropharyngé poivré ne sont pas des défauts de saveur ; ce sont les signatures sensorielles directes de composés phénoliques de haute puissance. Au premier rang de ces sécoiridoïdes se trouve l'oléocanthal (désacétoxy-ligstroside aglycone), un polyphénol dialdéhydique qui se lie sélectivement au canal ionique TRPA1 humain situé dans le pharynx postérieur, imitant le profil sensoriel et pharmacologique exact de l'ibuprofène."
+    },
+    {
+      "type": "h2",
+      "text": "Thermodynamique de la mouture et du malaxage à froid"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Décantation de l'huile d'olive extra vierge pressée à froid et phase lipidique dorée liquide",
+      "caption": "Extraction des lipides : Un contrôle précis de la température pendant le malaxage empêche l'oxydation des polyphénols tout en maximisant le rendement des sécoiridoïdes."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Hydrolyse enzymatique : l'écrasement des drupes intactes active les enzymes β-glucosidase endogènes qui convertissent l'oleuropéine et les glycosides de ligstroside en composés phénoliques aglycones biodisponibles.",
+        "Plafond de température : Le maintien des températures de malaxation en dessous de 27°C (extraction à froid) préserve les esters hexanalaux volatils et empêche la dégradation thermique des polyphénols antioxydants.",
+        "Couverture de gaz inerte : le déplacement de l'oxygène atmosphérique avec de l'azote ou de l'argon à l'intérieur du malaxeur élimine l'activité de la polyphénol oxydase (PPO) et l'oxydation volatile.",
+        "Centrifugation par décantation biphasée : l'élimination de l'eau de traitement ajoutée empêche les polyphénols hydrophiles (tels que l'hydroxytyrosol et l'oléocanthal) d'être éliminés dans les eaux usées végétales."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La brûlure dans la gorge lors de la dégustation d'une huile d'olive authentique n'est pas de l'acidité ; il s’agit de médecine moléculaire – l’activation spécifique des canaux TRPA1 par les composés phénoliques oléocanthals.",
+      "cite": "Revue de la chimie culinaire et de la gastronomie méditerranéenne"
+    },
+    {
+      "type": "h2",
+      "text": "Quantification chromatographique et vérification de l'authenticité"
+    },
+    {
+      "type": "p",
+      "text": "La falsification industrielle de l'huile d'olive extra vierge avec des huiles de grignons d'olive raffinées ou des huiles de graines est contrée par chromatographie liquide haute performance (HPLC) couplée à la spectrométrie de masse. En quantifiant le rapport entre les 1,2-diacylglycérols (1,2-DAG) et les 1,3-DAG et en mesurant la dégradation de la pyrophéophytine, les chimistes analytiques peuvent détecter de manière fiable la désodorisation thermique et vérifier la fraîcheur des récoltes avec une précision de quelques parties par milliard."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "La biochimie de l'huile d'olive : phénoliques, extraction et sciences sensorielles",
+      "caption": "Masterclass de chimie alimentaire couvrant l'extraction des sécoiridoïdes, la chromatographie HPLC et les propriétés anti-inflammatoires de l'oléocanthal."
+    },
+    {
+      "type": "h2",
+      "text": "Préservation culinaire et pharmacologique"
+    },
+    {
+      "type": "p",
+      "text": "Une fois extraits, les composés phénoliques EVOO sont vulnérables à la photo-oxydation et à la dégradation thermique. Le stockage de l'huile dans des récipients en verre violet foncé entre 14 °C et 18 °C maintient la demi-vie de l'oléocanthal pendant plus de dix-huit mois. Dans les applications culinaires, un filet d’huiles à haute teneur phénolique sur des plats chauds préserve les arômes floraux délicats tout en maximisant la biodisponibilité des antioxydants cellulaires."
+    }
+  ],
+  "sourceHash": "eccfe41f71c35816ee23212032d9853f8c98be7e"
+}

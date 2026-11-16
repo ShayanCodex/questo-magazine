@@ -1,0 +1,74 @@
+{
+  "slug": "oleocanthal-phenolics-and-polyphenol-chromatography-in-olive-oil",
+  "title": "Oleocanthal Phenolics and Polyphenol Chromatography in Extra Virgin Olive Oil Extraction",
+  "excerpt": "The biochemistry of bitter and pungent EVOO: examining malaxation thermodynamics, secoiridoid hydrolysis, and the anti-inflammatory pharmacology of oleocanthal.",
+  "date": "2026-11-16",
+  "author": "Saskia Lindqvist",
+  "category": "food",
+  "subcategory": "culinary-science",
+  "tags": [
+    "food",
+    "culinary-science",
+    "biochemistry",
+    "olive-oil",
+    "gastronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1541259418332-97b56947904f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Fresh olive branches and green olives on Mediterranean trees harvested for cold extraction",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Biochemical Markers of Sensory Quality"
+    },
+    {
+      "type": "p",
+      "text": "In true extra virgin olive oil, sensory bitterness and peppery oropharyngeal pungency are not flavor defects; they are the direct sensory signatures of high-potency phenolic compounds. Foremost among these secoiridoids is oleocanthal (deacetoxy-ligstroside aglycone), a dialdehydic polyphenol that selectively binds to the human TRPA1 ion channel located in the posterior pharynx, mimicking the exact sensory and pharmacological profile of ibuprofen."
+    },
+    {
+      "type": "h2",
+      "text": "Thermodynamics of Milling and Cold Malaxation"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cold-pressed extra virgin olive oil decantation and liquid golden lipid phase",
+      "caption": "Lipid extraction: Precise temperature control during malaxation prevents polyphenol oxidation while maximizing secoiridoid yield."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Enzymatic Hydrolysis: Crushing intact drupes activates endogenous β-glucosidase enzymes that convert oleuropein and ligstroside glycosides into bioavailable aglycone phenolics.",
+        "Temperature Ceiling: Maintaining malaxation temperatures below 27°C (cold extraction) preserves volatile hexanal esters and prevents thermal degradation of antioxidant polyphenols.",
+        "Inert Gas Blanketing: Displacing atmospheric oxygen with nitrogen or argon inside the malaxer eliminates polyphenol oxidase (PPO) activity and volatile oxidation.",
+        "Two-Phase Decanter Centrifugation: Eliminating added process water prevents hydrophilic polyphenols (such as hydroxytyrosol and oleocanthal) from being washed out in vegetable wastewater."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The burn in the throat upon tasting authentic olive oil is not acidity; it is molecular medicine—the specific activation of TRPA1 channels by oleocanthal phenolics.",
+      "cite": "Culinary Chemistry & Mediterranean Gastronomy Review"
+    },
+    {
+      "type": "h2",
+      "text": "Chromatographic Quantification and Authenticity Verification"
+    },
+    {
+      "type": "p",
+      "text": "Industrial adulteration of extra virgin olive oil with refined olive pomace or seed oils is countered using High-Performance Liquid Chromatography (HPLC) coupled with mass spectrometry. By quantifying the ratio of 1,2-diacylglycerols (1,2-DAGs) to 1,3-DAGs and measuring pyropheophytin a degradation, analytical chemists can reliably detect thermal deodorization and verify harvest freshness down to parts-per-billion precision."
+    },
+    {
+      "type": "video",
+      "title": "The Biochemistry of Olive Oil: Phenolics, Extraction, and Sensory Science",
+      "caption": "Food chemistry masterclass covering secoiridoid extraction, HPLC chromatography, and anti-inflammatory properties of oleocanthal.",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8"
+    },
+    {
+      "type": "h2",
+      "text": "Culinary and Pharmacological Preservation"
+    },
+    {
+      "type": "p",
+      "text": "Once extracted, EVOO phenolics are vulnerable to photo-oxidation and thermal decay. Storing oil in dark violet glass containers at 14°C to 18°C maintains oleocanthal half-life for over eighteen months. In culinary applications, drizzling high-phenolic oils raw over warm dishes preserves delicate floral aromas while maximizing cellular antioxidant bioavailability."
+    }
+  ]
+}

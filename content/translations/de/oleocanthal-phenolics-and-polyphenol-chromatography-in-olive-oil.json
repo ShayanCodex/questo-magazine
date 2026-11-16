@@ -1,0 +1,73 @@
+{
+  "slug": "oleocanthal-phenolics-and-polyphenol-chromatography-in-olive-oil",
+  "title": "Oleocanthal-Phenole und Polyphenol-Chromatographie bei der Extraktion von nativem Olivenöl Extra",
+  "excerpt": "Die Biochemie von bitterem und scharfem EVOO: Untersuchung der Malaxierungs-Thermodynamik, der Secoiridoid-Hydrolyse und der entzündungshemmenden Pharmakologie von Oleocanthal.",
+  "date": "2026-11-16",
+  "author": "Saskia Lindqvist",
+  "tags": [
+    "food",
+    "culinary-science",
+    "biochemistry",
+    "olive-oil",
+    "gastronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1541259418332-97b56947904f?auto=format&fit=crop&w=1200&q=80",
+  "imageAlt": "Frische Olivenzweige und grüne Oliven von mediterranen Bäumen, die zur Kaltextraktion geerntet wurden",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Die biochemischen Marker der sensorischen Qualität"
+    },
+    {
+      "type": "p",
+      "text": "Bei echtem nativem Olivenöl extra sind sensorische Bitterkeit und pfeffrige oropharyngeale Schärfe keine Geschmacksfehler; Sie sind die direkten sensorischen Signaturen hochwirksamer Phenolverbindungen. Unter diesen Secoiridoiden ist vor allem Oleocanthal (Deacetoxy-Ligstrosid-Aglykon) hervorzuheben, ein dialdehydisches Polyphenol, das selektiv an den menschlichen TRPA1-Ionenkanal im hinteren Rachenraum bindet und so das genaue sensorische und pharmakologische Profil von Ibuprofen nachahmt."
+    },
+    {
+      "type": "h2",
+      "text": "Thermodynamik des Mahlens und Kaltmalaxierens"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Kaltgepresstes natives Olivenöl extra, Dekantierung und flüssige goldene Lipidphase",
+      "caption": "Lipidextraktion: Präzise Temperaturkontrolle während des Malaxierens verhindert die Polyphenoloxidation und maximiert gleichzeitig die Secoiridoid-Ausbeute."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Enzymatische Hydrolyse: Das Zerkleinern intakter Steinfrüchte aktiviert endogene β-Glucosidase-Enzyme, die Oleuropein- und Ligstroside-Glykoside in bioverfügbare Aglyconphenole umwandeln.",
+        "Temperaturobergrenze: Durch die Einhaltung von Malaxierungstemperaturen unter 27 °C (Kaltextraktion) bleiben flüchtige Hexanalester erhalten und verhindert den thermischen Abbau antioxidativer Polyphenole.",
+        "Inertgasüberlagerung: Der Ersatz von Luftsauerstoff durch Stickstoff oder Argon im Malaxer eliminiert die Aktivität der Polyphenoloxidase (PPO) und die Oxidation flüchtiger Stoffe.",
+        "Zweiphasen-Dekanterzentrifugation: Der Verzicht auf zugesetztes Prozesswasser verhindert, dass hydrophile Polyphenole (wie Hydroxytyrosol und Oleocanthal) im pflanzlichen Abwasser ausgewaschen werden."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Das Brennen im Hals beim Verkosten von echtem Olivenöl ist keine Säure; es handelt sich um molekulare Medizin – die spezifische Aktivierung von TRPA1-Kanälen durch Oleocanthal-Phenole.",
+      "cite": "Rückblick auf kulinarische Chemie und mediterrane Gastronomie"
+    },
+    {
+      "type": "h2",
+      "text": "Chromatografische Quantifizierung und Authentizitätsprüfung"
+    },
+    {
+      "type": "p",
+      "text": "Der industriellen Verfälschung von nativem Olivenöl extra mit raffinierten Oliventrester- oder Kernölen wird mithilfe von Hochleistungsflüssigkeitschromatographie (HPLC) in Verbindung mit Massenspektrometrie entgegengewirkt. Durch die Quantifizierung des Verhältnisses von 1,2-Diacylglycerinen (1,2-DAGs) zu 1,3-DAGs und die Messung des Pyropheophytin-a-Abbaus können analytische Chemiker thermische Desodorierung zuverlässig erkennen und die Frische der Ernte mit einer Genauigkeit von Teilen pro Milliarde überprüfen."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
+      "title": "Die Biochemie des Olivenöls: Phenole, Extraktion und sensorische Wissenschaft",
+      "caption": "Meisterkurs zur Lebensmittelchemie über Secoiridoid-Extraktion, HPLC-Chromatographie und entzündungshemmende Eigenschaften von Oleocanthal."
+    },
+    {
+      "type": "h2",
+      "text": "Kulinarische und pharmakologische Konservierung"
+    },
+    {
+      "type": "p",
+      "text": "Nach der Extraktion sind EVOO-Phenole anfällig für Photooxidation und thermischen Zerfall. Durch die Lagerung von Öl in dunkelvioletten Glasbehältern bei 14 °C bis 18 °C bleibt die Halbwertszeit von Oleocanthal über 18 Monate erhalten. Bei kulinarischen Anwendungen bewahrt das Aufträufeln hochphenolischer Öle roh über warme Gerichte die zarten Blumenaromen und maximiert gleichzeitig die zelluläre Bioverfügbarkeit von Antioxidantien."
+    }
+  ],
+  "sourceHash": "eccfe41f71c35816ee23212032d9853f8c98be7e"
+}
