@@ -18,6 +18,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { BookCover } from '../components/BookCover';
 import { NotFound } from './NotFound';
 import { OriginalPdfReader } from '../components/OriginalPdfReader';
+import { getSafePdfUrl, isLocalCorePdf } from '../lib/ebook-reader';
 import { cn } from '../lib/utils';
 import ebooksMasterData from '../data/ebooks.json';
 
@@ -49,6 +50,9 @@ export function EBookDetail() {
     return <NotFound />;
   }
 
+  const safePdf = getSafePdfUrl(ebook.slug, ebook.pdfUrl);
+  const isLocal = isLocalCorePdf(ebook.slug);
+
   const breadcrumbs = [
     { label: t.home, href: localePath('/') },
     { label: t.ebooks || 'Public Domain E-Books', href: localePath('/ebooks') },
@@ -57,7 +61,8 @@ export function EBookDetail() {
 
   const handleCopyLink = async () => {
     try {
-      await navigator.clipboard.writeText(ebook.pdfUrl);
+      const urlToCopy = safePdf.startsWith('/') ? window.location.origin + safePdf : safePdf;
+      await navigator.clipboard.writeText(urlToCopy);
       setCopiedLink(true);
       setTimeout(() => setCopiedLink(false), 2000);
     } catch {
@@ -164,14 +169,14 @@ export function EBookDetail() {
             </div>
             <div className="p-4 bg-editorial-surface border-t border-editorial-border space-y-2">
               <a
-                href={ebook.pdfUrl}
+                href={safePdf}
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-editorial-text text-editorial-bg text-xs font-sans font-semibold hover:opacity-90 transition-opacity shadow-xs"
+                className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-sans font-semibold transition-colors shadow-xs"
               >
                 <ArrowDownTrayIcon className="h-4 w-4" />
-                <span>Download Scanned PDF</span>
+                <span>{isLocal ? 'Download Local PDF (Fast)' : 'Download Scanned PDF'}</span>
               </a>
 
               <button

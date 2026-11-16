@@ -59,11 +59,16 @@ export function EBooks() {
   const [mediaItems, setMediaItems] = useState<CulturalMediaItem[]>([]);
 
   useEffect(() => {
-    fetchCulinaryRecipe('bread').then(setRecipes).catch(() => {});
-    fetchClinicalDrugInfo('metformin').then(setClinicalInfo).catch(() => {});
-    fetchAcademicSummary('Stoicism').then(setAcademicSummary).catch(() => {});
-    fetchCulturalMedia('cyberpunk').then(setMediaItems).catch(() => {});
-  }, []);
+    if (hubTab === 'gastronomy' && recipes.length === 0) {
+      fetchCulinaryRecipe('bread').then(setRecipes).catch(() => {});
+    } else if (hubTab === 'clinical' && !clinicalInfo) {
+      fetchClinicalDrugInfo('metformin').then(setClinicalInfo).catch(() => {});
+    } else if (hubTab === 'encyclopedic' && !academicSummary) {
+      fetchAcademicSummary('Stoicism').then(setAcademicSummary).catch(() => {});
+    } else if (hubTab === 'cinema' && mediaItems.length === 0) {
+      fetchCulturalMedia('cyberpunk').then(setMediaItems).catch(() => {});
+    }
+  }, [hubTab, recipes.length, clinicalInfo, academicSummary, mediaItems.length]);
 
   const filteredEbooks = useMemo(() => {
     let list = EBOOKS_LIST;

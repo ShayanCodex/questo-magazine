@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
 import { ArrowRightIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import { SPOTLIGHT_LOCALIZED } from '../lib/page-translations';
+import { LazyImage } from './LazyImage';
 
 export function EditorialSpotlight() {
   const { localePath, language } = useLanguage();
@@ -15,7 +16,7 @@ export function EditorialSpotlight() {
       <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
         {/* Visual Architectural Imagery */}
         <div className="lg:col-span-7 relative min-h-[340px] sm:min-h-[440px] overflow-hidden bg-neutral-900 group">
-          <img
+          <LazyImage
             src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&w=1600&q=85"
             alt={spotlight.title}
             className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700 ease-out"

@@ -260,11 +260,10 @@ export function Home() {
               title="Explore Questo Magazine Issue 03"
             >
               <div className="absolute inset-0">
-                <img
+                <LazyImage
                   src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?auto=format&fit=crop&w=900&q=85"
                   alt="Questo Magazine Issue 03 Cover Art"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/35 pointer-events-none" />
               </div>

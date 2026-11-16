@@ -211,6 +211,9 @@ export default defineConfig(({ mode }) => {
             if (id.includes('node_modules/@heroicons/') || id.includes('node_modules/lucide-react/')) {
               return 'vendor-icons';
             }
+            if (id.includes('src/data/ebooks.json')) {
+              return 'data-ebooks';
+            }
           },
         },
       },

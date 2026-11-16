@@ -10,6 +10,7 @@ import { useLanguage } from '../lib/lang-context';
 import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory } from '../lib/categories';
 import { BookmarkButton } from './BookmarkButton';
+import { LazyImage } from './LazyImage';
 import { cn } from '../lib/utils';
 import { SLIDER_TAGS } from '../lib/page-translations';
 
@@ -132,7 +133,7 @@ export function FeaturedShowcaseSlider({
       <div className="relative h-[480px] sm:h-[520px] lg:h-[560px] w-full overflow-hidden">
         {showcaseArticles.map((article, idx) => {
           const isActive = idx === currentIndex;
-          const articleImage = article.image;
+          const articleImage = article.image || 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=85';
           const articleAlt = article.imageAlt || article.title;
 
           return (
@@ -143,14 +144,14 @@ export function FeaturedShowcaseSlider({
                 isActive ? 'opacity-100 z-10 pointer-events-auto' : 'opacity-0 z-0 pointer-events-none'
               )}
             >
-              <img
+              <LazyImage
                 src={articleImage}
                 alt={articleAlt}
                 className={cn(
                   'w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-out',
                   isActive ? 'scale-[1.035]' : 'scale-100'
                 )}
-                loading={idx === 0 ? 'eager' : 'lazy'}
+                wrapperClassName="w-full h-full"
               />
 
               {/* Natural localized vignette: 75%+ of the image is left in pure, vivid natural light */}

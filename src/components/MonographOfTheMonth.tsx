@@ -6,6 +6,7 @@ import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory, getCategoryShortName, getSubcategoryName } from '../lib/categories';
 import { ArticleViewCount } from './ArticleViewCount';
 import { BookmarkButton } from './BookmarkButton';
+import { LazyImage } from './LazyImage';
 
 export interface MonographOfTheMonthProps {
   article: ArticleData;
@@ -110,15 +111,14 @@ export function MonographOfTheMonth({ article }: MonographOfTheMonthProps) {
       {/* 2. Full-Width Grand Cinematic Editorial Photograph (Centerpiece) */}
       <div className="w-full overflow-hidden rounded-2xl border border-editorial-border/80 group relative aspect-[16/9] sm:aspect-[21/9] lg:aspect-[2.35/1] shadow-xl bg-neutral-950">
         <Link to={articleUrl} className="block w-full h-full relative" aria-label={article.title}>
-          <img
+          <LazyImage
             src={curated.image}
             alt={curated.alt}
             className="w-full h-full object-cover group-hover:scale-[1.015] transition-transform duration-700 ease-out"
-            loading="lazy"
           />
 
           {/* Pure photographic clarity with gentle hover accentuation */}
-          <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors" />
+          <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10 pointer-events-none" />
         </Link>
       </div>
     </section>

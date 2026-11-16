@@ -56,6 +56,38 @@ const VERIFIED_ARCHIVE_IDS: Record<string, string> = {
   'timaeus-plato': 'timaeusofplato00platiala',
 };
 
+export const LOCAL_CORE_PDFS: Record<string, string> = {
+  'meditations': '/books/meditations.pdf',
+  'the-art-of-war': '/books/the-art-of-war.pdf',
+  'frankenstein-or-the-modern-prometheus': '/books/frankenstein.pdf',
+  'frankenstein': '/books/frankenstein.pdf',
+  'the-prince-il-principe': '/books/the-prince.pdf',
+  'the-prince': '/books/the-prince.pdf',
+  'the-communist-manifesto': '/books/the-communist-manifesto.pdf',
+};
+
+export function getSafePdfUrl(slug: string, fallbackPdfUrl: string): string {
+  const cleanSlug = slug.replace(/-edition-\d+$/, '');
+  if (LOCAL_CORE_PDFS[cleanSlug]) {
+    return LOCAL_CORE_PDFS[cleanSlug];
+  }
+  for (const [key, localPath] of Object.entries(LOCAL_CORE_PDFS)) {
+    if (cleanSlug.startsWith(key) || cleanSlug.includes(key)) {
+      return localPath;
+    }
+  }
+  return fallbackPdfUrl;
+}
+
+export function isLocalCorePdf(slug: string): boolean {
+  const cleanSlug = slug.replace(/-edition-\d+$/, '');
+  if (LOCAL_CORE_PDFS[cleanSlug]) return true;
+  for (const key of Object.keys(LOCAL_CORE_PDFS)) {
+    if (cleanSlug.startsWith(key) || cleanSlug.includes(key)) return true;
+  }
+  return false;
+}
+
 export function getVerifiedArchiveIdentifier(slug: string, rawIdentifier?: string): string {
   // Strip edition suffix e.g. "meditations-edition-2" -> "meditations"
   const cleanSlug = slug.replace(/-edition-\d+$/, '');

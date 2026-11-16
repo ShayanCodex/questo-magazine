@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
 import { ArrowUpRightIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
 import { DISCIPLINES_LOCALIZED } from '../lib/page-translations';
+import { LazyImage } from './LazyImage';
 
 export function EditorialDisciplines() {
   const { t, localePath, language } = useLanguage();
@@ -38,11 +39,10 @@ export function EditorialDisciplines() {
               className="block relative aspect-[16/10] overflow-hidden bg-editorial-surface-subtle"
               title={item.title}
             >
-              <img
+              <LazyImage
                 src={item.image}
                 alt={item.title}
                 className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
-                loading="lazy"
               />
               {/* Subtle directional gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/25 pointer-events-none" />

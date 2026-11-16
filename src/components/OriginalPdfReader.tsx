@@ -16,7 +16,12 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 import type { EBook } from '../lib/types';
-import { getVerifiedArchiveIdentifier, generateCompleteChapters } from '../lib/ebook-reader';
+import {
+  getVerifiedArchiveIdentifier,
+  generateCompleteChapters,
+  getSafePdfUrl,
+  isLocalCorePdf,
+} from '../lib/ebook-reader';
 import { cn } from '../lib/utils';
 
 export interface OriginalPdfReaderProps {
@@ -54,6 +59,12 @@ export function OriginalPdfReader({
     () => getVerifiedArchiveIdentifier(ebook.slug, ebook.identifier),
     [ebook.slug, ebook.identifier]
   );
+
+  const safePdfUrl = useMemo(
+    () => getSafePdfUrl(ebook.slug, ebook.pdfUrl),
+    [ebook.slug, ebook.pdfUrl]
+  );
+  const isLocal = useMemo(() => isLocalCorePdf(ebook.slug), [ebook.slug]);
 
   const chapters = useMemo(() => generateCompleteChapters(ebook), [ebook]);
 
@@ -133,7 +144,9 @@ export function OriginalPdfReader({
 
   const handleCopyLink = async () => {
     try {
-      await navigator.clipboard.writeText(ebook.pdfUrl);
+      await navigator.clipboard.writeText(
+        safePdfUrl.startsWith('/') ? window.location.origin + safePdfUrl : safePdfUrl
+      );
       setCopiedLink(true);
       setTimeout(() => setCopiedLink(false), 2000);
     } catch {
@@ -237,16 +250,21 @@ export function OriginalPdfReader({
           </button>
 
           <a
-            href={ebook.pdfUrl}
+            href={safePdfUrl}
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-sans font-semibold transition-colors shadow-sm"
-            title="Download Full Original PDF Document"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-sans font-semibold transition-colors shadow-sm"
+            title={isLocal ? "Download Full Original PDF (Instant Local Host)" : "Download Full Original PDF Document"}
           >
             <ArrowDownTrayIcon className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">Download PDF</span>
+            <span className="hidden sm:inline">{isLocal ? 'Download Local PDF' : 'Download PDF'}</span>
             <span className="sm:hidden">PDF</span>
+            {isLocal && (
+              <span className="text-[10px] bg-emerald-700/80 px-1.5 py-0.2 rounded text-emerald-200">
+                Fast
+              </span>
+            )}
           </a>
 
           {onToggleFullscreen && (

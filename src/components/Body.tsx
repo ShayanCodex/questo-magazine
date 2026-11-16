@@ -1,5 +1,6 @@
 import type { ContentBlock } from '../lib/types';
 import { slugifyHeading } from '../lib/content';
+import { LazyImage } from './LazyImage';
 
 export interface BodyProps {
   blocks: ContentBlock[];
@@ -87,14 +88,16 @@ export function Body({ blocks }: BodyProps) {
             );
 
           case 'image':
+            if (!block.src) return null;
             return (
               <figure key={index} className="my-10 space-y-3">
-                <img
-                  src={block.src}
-                  alt={block.alt || 'Editorial illustration'}
-                  loading="lazy"
-                  className="w-full h-auto rounded-sm border border-editorial-border object-cover max-h-[560px]"
-                />
+                <div className="w-full rounded-sm border border-editorial-border overflow-hidden bg-editorial-surface-subtle max-h-[560px]">
+                  <LazyImage
+                    src={block.src}
+                    alt={block.alt || 'Editorial illustration'}
+                    className="w-full h-auto object-cover max-h-[560px]"
+                  />
+                </div>
                 {block.caption && (
                   <figcaption className="text-xs sm:text-sm font-sans text-editorial-muted italic tracking-wide">
                     — {block.caption}
