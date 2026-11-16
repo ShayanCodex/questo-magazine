@@ -1,0 +1,74 @@
+{
+  "slug": "test-time-compute-and-mcts-in-autonomous-reasoning-models",
+  "title": "Computación en tiempo de prueba y búsqueda de árboles de Monte Carlo: cómo el razonamiento autónomo transforma los LLM de frontera",
+  "excerpt": "Análisis del cambio tectónico de la escala de parámetros previos al entrenamiento a la computación en tiempo de inferencia: modelos de recompensa de procesos (PRM), verificación de búsqueda de árboles y autocorrección recursiva en agentes de investigación autónomos.",
+  "date": "2026-11-16",
+  "author": "Hiroshi Tanaka",
+  "tags": [
+    "ai",
+    "machine-learning",
+    "autonomous-agents",
+    "reasoning",
+    "search-algorithms",
+    "deep-learning"
+  ],
+  "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Rutas neuronales abstractas futuristas y estructuras de flujo de datos que iluminan procesos de decisión de alta velocidad",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Los rendimientos decrecientes del preentrenamiento autorregresivo"
+    },
+    {
+      "type": "p",
+      "text": "Durante siete años, la hipótesis de escala dictaba que predecir el siguiente token a través de billones de documentos web desbloquearía inevitablemente el razonamiento generalizado. Sin embargo, los puntos de referencia empíricos en matemáticas de alto nivel, programación competitiva y lógica formal encontraron fuertes estancamientos: los modelos autorregresivos acumulan errores cuadráticamente con la longitud de la secuencia. La frontera de la inteligencia artificial ha girado decisivamente hacia la computación en tiempo de prueba, intercambiando la generación instantánea de tokens por una búsqueda heurística deliberada de varios pasos y una verificación recursiva."
+    },
+    {
+      "type": "h2",
+      "text": "Fundamentos clave del razonamiento de tiempo de inferencia"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Modelos de recompensa de proceso (PRM): Evaluar la validez matemática de cada paso deductivo intermedio en lugar de confiar exclusivamente en la corrección del resultado final.",
+        "Monte Carlo Tree Search (MCTS): explorar sistemáticamente trayectorias lógicas alternativas, retroceder al encontrar contradicciones formales y podar ramas poco prometedoras.",
+        "Deliberación del Sistema 2: Asignar presupuestos de cálculo dinámico proporcionales a la complejidad de la tarea, lo que permite a los modelos reflexionar sobre teoremas desafiantes durante minutos en lugar de milisegundos.",
+        "Verificadores de autocorrección: acoplar redes generativas con verificadores de pruebas formales (como Lean 4 y Coq) para hacer cumplir la corrección verificable."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La transición de la recuperación asociativa intuitiva del Sistema 1 a la búsqueda de árbol algorítmico del Sistema 2 representa el momento en que el aprendizaje automático deja de imitar el texto humano y comienza a ejecutar un descubrimiento computacional genuino.",
+      "cite": "Revista de Arquitectura Cognitiva Autónoma"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Estación de trabajo informática de alta tecnología con árboles de visualización de gráficos interactivos y canales de razonamiento algorítmico",
+      "caption": "Búsqueda heurística: visualización de expansiones de árboles de Monte Carlo en espacios complejos de prueba de múltiples ramas."
+    },
+    {
+      "type": "h2",
+      "text": "Funciones de valor supervisadas por procesos versus supervisión de resultados"
+    },
+    {
+      "type": "p",
+      "text": "Los modelos de recompensa basados ​​en resultados sufren de un severo refuerzo falso positivo: un LLM puede llegar a la respuesta aritmética correcta a través de pasos intermedios completamente alucinados o ilógicos. Al entrenar funciones de valor discriminativo en anotaciones sintéticas y humanas granulares por paso, los investigadores permiten que los modelos detecten sus propios errores cognitivos en las primeras etapas del árbol de razonamiento, podando caminos divergentes antes de que se agoten las ventanas de contexto."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/zjkBMFhNj_g",
+      "title": "Aprendizaje por refuerzo, árboles de búsqueda y razonamiento del sistema 2 en Frontier AI",
+      "caption": "Conferencia académica integral que cubre algoritmos de búsqueda, aprendizaje por refuerzo de juego autónomo y marcos de verificación formales."
+    },
+    {
+      "type": "h2",
+      "text": "Agentes de investigación autónomos y el futuro del descubrimiento"
+    },
+    {
+      "type": "p",
+      "text": "Equipados con bucles de búsqueda en el momento de la prueba, los agentes de investigación autónomos pueden recorrer vastos gráficos de literatura científica, ejecutar simulaciones empíricas de Python en entornos aislados, sintetizar moléculas bioquímicas candidatas y escribir monografías revisadas por pares sin intervención humana. El cuello de botella del descubrimiento de conocimiento está pasando de la capacidad de lectura humana al rendimiento de verificación algorítmica."
+    }
+  ],
+  "sourceHash": "dbe651e5fbe0748dceb5e59f1aed8cd3b5382c5a"
+}

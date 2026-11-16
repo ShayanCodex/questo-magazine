@@ -1,0 +1,74 @@
+{
+  "slug": "small-modular-reactors-and-gigawatt-ai-datacenters",
+  "title": "Petits réacteurs modulaires et micro-réseaux : l'ingénierie énergétique alimentant les clusters d'IA Gigawatt",
+  "excerpt": "À l'intérieur du lien critique entre le calcul génératif et l'ingénierie atomique : les SMR à sels fondus, la dissipation thermique à grande échelle et les interconnexions CC haute tension alimentant les centres de données frontières de nouvelle génération.",
+  "date": "2026-11-16",
+  "author": "Julian Mercer",
+  "tags": [
+    "clean-energy",
+    "nuclear",
+    "datacenters",
+    "infrastructure",
+    "electrical-engineering",
+    "sustainability"
+  ],
+  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Des tours de super-réseau de transmission électrique à haute tension se dressant contre un ciel couchant symbolisant la macro-distribution d'énergie",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le mur thermodynamique du calcul génératif"
+    },
+    {
+      "type": "p",
+      "text": "Le goulot d'étranglement ultime limitant l'intelligence artificielle de pointe n'est plus les architectures de transformateurs ou la lithographie de semi-conducteurs ; c'est la capacité thermodynamique brute du réseau électrique municipal. Les clusters d’IA modernes contenant des centaines de milliers d’accélérateurs de haute puissance nécessitent plus d’un à deux gigawatts d’électricité de base, soit l’équivalent de la consommation d’une grande ville métropolitaine. Les sources renouvelables conventionnelles telles que l'énergie solaire et éolienne, en proie à l'intermittence et aux réductions de transmission, ne peuvent pas fournir la disponibilité de 99,999 % requise par la formation continue du modèle de base."
+    },
+    {
+      "type": "h2",
+      "text": "Piliers de l'infrastructure énergétique de base"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Petits réacteurs modulaires (SMR) : réacteurs nucléaires fabriqués en usine générant de 50 à 300 mégawatts électriques (MWe) déployés sur site à côté des campus de centres de données à grande échelle.",
+        "Systèmes à sels fondus à sécurité passive : conceptions de combustible liquide à basse pression incapables de fusion catastrophique du cœur, s'appuyant sur la physique thermodynamique ambiante pour la désintégration thermique d'urgence.",
+        "Courant continu haute tension (HVDC) : architecture de sous-station éliminant les pertes de transformation CA et harmonisant la fourniture de puissance en mégawatts directement aux racks d'accélérateurs.",
+        "Refroidissement liquide direct en boucle fermée : rejet du gaspillage d'eau par évaporation municipale en transférant la chaleur des serveurs vers des systèmes énergétiques urbains à haute température."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le datacenter de 2030 n'est pas un entrepôt rempli d'ordinateurs connectés au service public ; il s’agit d’une centrale nucléaire dont la principale exportation industrielle est constituée de multiplications matricielles mathématiques synchronisées.",
+      "cite": "Institute for Clean Energy Infrastructure & High-Density Compute"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Racks matériels informatiques hautes performances avec conduits de refroidissement liquide et unités de distribution électrique de précision",
+      "caption": "Alimentation haute densité : boucles de refroidissement directes sur puce gérant le flux thermique à travers des matrices d'accélérateurs de plusieurs mégawatts."
+    },
+    {
+      "type": "h2",
+      "text": "Micro-réseaux nucléaires sur site et déploiement réglementaire souverain"
+    },
+    {
+      "type": "p",
+      "text": "En colocalisant les micro-réseaux SMR derrière le compteur public, les hyperscalers contournent les files d'attente d'interconnexion des réseaux régionaux qui durent dix ans. La modularisation des usines permet de transporter des navires de confinement en acier standardisés par chemin de fer, réduisant ainsi les délais de déploiement des capitaux de douze ans pour les centrales conventionnelles de gigawatts à moins de trente-six mois."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/N-yALPEpV4w",
+      "title": "Ingénierie nucléaire avancée, petits réacteurs modulaires et futurs réseaux énergétiques",
+      "caption": "Répartition technique des réacteurs atomiques modulaires, refroidissement des gaz à haute température et économie énergétique de base."
+    },
+    {
+      "type": "h2",
+      "text": "Récupération de la chaleur résiduelle et thermodynamique industrielle circulaire"
+    },
+    {
+      "type": "p",
+      "text": "L'intégration de réacteurs refroidis au gaz à haute température permet des cascades énergétiques à double usage : la vapeur surchauffée entraîne des turbines à haut rendement pour produire de l'électricité pour les GPU, tandis que des boucles de refroidissement secondaires de faible qualité fournissent de l'énergie thermique propre pour la production régionale d'hydrogène, le dessalement de l'eau de mer et l'agriculture en serre."
+    }
+  ],
+  "sourceHash": "cb3a20ca41c4b839f7d10ac0e601613be6fc19fe"
+}

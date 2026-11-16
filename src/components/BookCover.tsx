@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { cn } from '../lib/utils';
 
 export interface BookCoverProps {
@@ -79,6 +79,36 @@ export function BookCover({
   priority = false,
 }: BookCoverProps) {
   const [hasError, setHasError] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [inView, setInView] = useState(priority);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Progressive Lazy Loading: IntersectionObserver triggers loading 300px before scroll into viewport
+  useEffect(() => {
+    if (priority || typeof IntersectionObserver === 'undefined') {
+      setInView(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: '300px 0px',
+        threshold: 0.01,
+      }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [priority]);
 
   // Deterministic palette selection based on title/slug
   const palette = useMemo(() => {
@@ -87,23 +117,63 @@ export function BookCover({
     return LUXURY_PALETTES[Math.abs(hash) % LUXURY_PALETTES.length];
   }, [slug, title]);
 
-  const hasValidCover = Boolean(coverUrl && coverUrl.trim().length > 0 && !hasError);
+  // Optimize OpenLibrary covers: for small/medium cards, convert -L.jpg to -M.jpg (~180px, ~15KB vs 400KB+)
+  // This delivers 10x-20x faster download speed and elimination of UI network lag
+  const optimizedCoverUrl = useMemo(() => {
+    if (!coverUrl) return '';
+    if ((size === 'sm' || size === 'md') && coverUrl.includes('covers.openlibrary.org') && coverUrl.endsWith('-L.jpg')) {
+      return coverUrl.replace(/-L\.jpg$/, '-M.jpg');
+    }
+    return coverUrl;
+  }, [coverUrl, size]);
+
+  const hasValidCover = Boolean(optimizedCoverUrl && optimizedCoverUrl.trim().length > 0 && !hasError);
   const disciplineTag = subdiscipline || category;
 
   if (hasValidCover) {
     return (
-      <div className={cn('relative w-full h-full overflow-hidden bg-neutral-950', className)}>
-        <img
-          src={coverUrl}
-          alt={`${title} by ${author}`}
-          loading={priority ? 'eager' : 'lazy'}
-          decoding="async"
-          onError={() => setHasError(true)}
-          className="w-full h-full object-cover transition-transform duration-500 ease-out"
-        />
+      <div
+        ref={containerRef}
+        className={cn('relative w-full h-full overflow-hidden bg-neutral-950 select-none', className)}
+      >
+        {/* Skeleton Shimmer while downloading/decoding */}
+        {!isLoaded && (
+          <div className="absolute inset-0 bg-neutral-900/90 animate-pulse z-0 flex flex-col items-center justify-center p-2 text-neutral-600">
+            <svg
+              className="w-5 h-5 opacity-40 mb-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+              />
+            </svg>
+            <div className="w-10 h-1 rounded-full bg-neutral-800" />
+          </div>
+        )}
+
+        {inView && (
+          <img
+            src={optimizedCoverUrl}
+            alt={`${title} by ${author}`}
+            loading={priority ? 'eager' : 'lazy'}
+            decoding="async"
+            onLoad={() => setIsLoaded(true)}
+            onError={() => setHasError(true)}
+            className={cn(
+              'w-full h-full object-cover transition-opacity duration-300 ease-out',
+              isLoaded ? 'opacity-100' : 'opacity-0'
+            )}
+          />
+        )}
+
         {/* Subtle spine gradient overlay on the left */}
-        <div className="absolute inset-y-0 start-0 w-2.5 bg-gradient-to-r from-black/50 via-white/5 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 ring-1 ring-inset ring-white/10 pointer-events-none" />
+        <div className="absolute inset-y-0 start-0 w-2.5 bg-gradient-to-r from-black/50 via-white/5 to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-0 ring-1 ring-inset ring-white/10 pointer-events-none z-10" />
       </div>
     );
   }

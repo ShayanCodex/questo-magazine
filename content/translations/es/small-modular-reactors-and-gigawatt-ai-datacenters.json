@@ -1,0 +1,74 @@
+{
+  "slug": "small-modular-reactors-and-gigawatt-ai-datacenters",
+  "title": "Pequeños reactores modulares y microrredes: la ingeniería energética que impulsa los grupos de IA de gigavatios",
+  "excerpt": "Dentro del nexo crítico entre la computación generativa y la ingeniería atómica: SMR de sales fundidas, disipación térmica a escala e interconexiones de CC de alto voltaje que alimentan los centros de datos fronterizos de próxima generación.",
+  "date": "2026-11-16",
+  "author": "Julian Mercer",
+  "tags": [
+    "clean-energy",
+    "nuclear",
+    "datacenters",
+    "infrastructure",
+    "electrical-engineering",
+    "sustainability"
+  ],
+  "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Torres de superredes de transmisión eléctrica de alto voltaje contra el cielo del atardecer que simbolizan la macrodistribución de energía",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El muro termodinámico de la computación generativa"
+    },
+    {
+      "type": "p",
+      "text": "El cuello de botella definitivo que limita la inteligencia artificial de frontera ya no son las arquitecturas de transformadores ni la litografía de semiconductores; es la capacidad termodinámica bruta de la red eléctrica municipal. Los modernos grupos de inteligencia artificial fronterizos que contienen cientos de miles de aceleradores de alta potencia exigen más de uno o dos gigavatios de electricidad de carga básica, equivalente al consumo de una gran ciudad metropolitana. Las fuentes renovables convencionales, como la solar y la eólica, plagadas de intermitencia y reducción de la transmisión, no pueden proporcionar el 99,999% de tiempo de actividad requerido por la capacitación continua del modelo de base."
+    },
+    {
+      "type": "h2",
+      "text": "Pilares centrales de infraestructura energética"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Reactores modulares pequeños (SMR): reactores nucleares fabricados en fábrica que generan de 50 a 300 megavatios eléctricos (MWe) desplegados en el sitio adyacente a los campus de los centros de datos de hiperescala.",
+        "Sistemas de sales fundidas pasivamente seguros: diseños de combustible líquido de baja presión incapaces de provocar una fusión catastrófica del núcleo, que dependen de la física termodinámica ambiental para la descomposición del calor de emergencia.",
+        "Corriente continua de alto voltaje (HVDC): Arquitectura de subestación que elimina las pérdidas por transformación de CA y armoniza la entrega de energía de megavatios directamente a los racks de aceleradores.",
+        "Refrigeración líquida directa de circuito cerrado: Rechazar el desperdicio de agua por evaporación municipal transfiriendo el calor del servidor a sistemas de energía de distrito de alta temperatura."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El centro de datos de 2030 no es un almacén lleno de computadoras conectadas al servicio público; es una central nuclear cuya principal exportación industrial son las multiplicaciones matemáticas sincronizadas de matrices.",
+      "cite": "Instituto de Infraestructura de Energía Limpia y Computación de Alta Densidad"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Bastidores de hardware informático de alto rendimiento con conductos de enfriamiento líquido y unidades de distribución eléctrica de precisión",
+      "caption": "Energía de alta densidad: circuitos de enfriamiento directo al chip que administran el flujo térmico a través de conjuntos de aceleradores de varios megavatios."
+    },
+    {
+      "type": "h2",
+      "text": "Microrredes nucleares in situ e implementación regulatoria soberana"
+    },
+    {
+      "type": "p",
+      "text": "Al colocar microrredes SMR detrás del medidor de servicios públicos, los hiperescaladores evitan las colas de interconexión de redes regionales que duran una década. La modularización de la fábrica permite transportar por ferrocarril buques de contención de acero estandarizados, lo que reduce los plazos de implementación de capital de doce años para las plantas convencionales de gigavatios a menos de treinta y seis meses."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/N-yALPEpV4w",
+      "title": "Ingeniería nuclear avanzada, pequeños reactores modulares y futuras redes energéticas",
+      "caption": "Ingeniería de desglose de reactores atómicos modulares, enfriamiento de gas a alta temperatura y economía energética de carga base."
+    },
+    {
+      "type": "h2",
+      "text": "Recuperación de calor residual y termodinámica industrial circular"
+    },
+    {
+      "type": "p",
+      "text": "La integración de reactores refrigerados por gas de alta temperatura permite cascadas de energía de doble propósito: el vapor sobrecalentado impulsa turbinas de alta eficiencia para generar electricidad para las GPU, mientras que los circuitos de refrigerante secundarios de baja calidad proporcionan energía térmica limpia para la producción regional de hidrógeno, la desalinización de agua de mar y la agricultura de invernadero."
+    }
+  ],
+  "sourceHash": "cb3a20ca41c4b839f7d10ac0e601613be6fc19fe"
+}

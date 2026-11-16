@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { useLoaderData, useSearchParams, Link, useLocation } from 'react-router-dom';
+import { useLoaderData, useSearchParams, Link, useLocation, useNavigate } from 'react-router-dom';
 import {
   FolderIcon,
   SparklesIcon,
@@ -11,6 +11,20 @@ import {
   PaintBrushIcon,
   SwatchIcon,
   CpuChipIcon,
+  CommandLineIcon,
+  BanknotesIcon,
+  BriefcaseIcon,
+  QrCodeIcon,
+  TrophyIcon,
+  HeartIcon,
+  BeakerIcon,
+  FilmIcon,
+  FireIcon,
+  CakeIcon,
+  GlobeAmericasIcon,
+  NewspaperIcon,
+  MagnifyingGlassIcon,
+  XMarkIcon,
 } from '@heroicons/react/24/outline';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -23,7 +37,6 @@ import { cn } from '../lib/utils';
 import {
   CATEGORIES,
   getArticleCategory,
-  getCategoryById,
   getCategoryName,
   getSubcategoryName,
   type Category,
@@ -45,6 +58,34 @@ function getCategoryIcon(catId: string) {
       return SwatchIcon;
     case 'engineering-and-technology':
       return CpuChipIcon;
+    case 'technology':
+      return CpuChipIcon;
+    case 'software':
+      return CommandLineIcon;
+    case 'finance':
+      return BanknotesIcon;
+    case 'business':
+      return BriefcaseIcon;
+    case 'crypto':
+      return QrCodeIcon;
+    case 'sports':
+      return TrophyIcon;
+    case 'health':
+      return HeartIcon;
+    case 'science':
+      return BeakerIcon;
+    case 'entertainment':
+      return FilmIcon;
+    case 'lifestyle':
+      return SparklesIcon;
+    case 'fitness':
+      return FireIcon;
+    case 'food':
+      return CakeIcon;
+    case 'travel':
+      return GlobeAmericasIcon;
+    case 'news':
+      return NewspaperIcon;
     default:
       return FolderIcon;
   }
@@ -53,6 +94,7 @@ function getCategoryIcon(catId: string) {
 export function Categories() {
   const loaderData = useLoaderData() as CategoriesLoaderData | undefined;
   const location = useLocation();
+  const navigate = useNavigate();
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
 
@@ -71,22 +113,19 @@ export function Categories() {
   const articles = loaderData?.articles || clientArticles;
   const pathname = loaderData?.pathname || location.pathname;
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
-  const initialCat = searchParams.get('category');
-  const initialSub = searchParams.get('subcategory');
+  // Backward compatibility: If an old URL has ?category=slug, redirect cleanly to dedicated page
+  useEffect(() => {
+    const legacyCat = searchParams.get('category');
+    if (legacyCat) {
+      const sub = searchParams.get('subcategory');
+      navigate(localePath(`/categories/${legacyCat}${sub ? `?subcategory=${sub}` : ''}`), { replace: true });
+    }
+  }, [searchParams, navigate, localePath]);
 
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(initialCat);
-  const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(initialSub);
+  const [categorySearchQuery, setCategorySearchQuery] = useState('');
   const [sortOrder, setSortOrder] = useState<'az' | 'count'>('az');
-
-  // Sync selection to URL query parameters
-  const updateParams = (cat: string | null, sub: string | null) => {
-    const next = new URLSearchParams();
-    if (cat) next.set('category', cat);
-    if (sub) next.set('subcategory', sub);
-    setSearchParams(next, { replace: true });
-  };
 
   // Compute live article counts per category and subcategory
   const counts = useMemo(() => {
@@ -114,67 +153,55 @@ export function Categories() {
   const sortedCategories = useMemo(() => {
     const list = [...CATEGORIES];
     if (sortOrder === 'az') {
-      return list.sort((a, b) => a.name.localeCompare(b.name));
+      return list.sort((a, b) => {
+        const nameA = getCategoryName(a.id, language.code);
+        const nameB = getCategoryName(b.id, language.code);
+        return nameA.localeCompare(nameB);
+      });
     }
     return list.sort((a, b) => {
       const countA = counts.catMap.get(a.id) || 0;
       const countB = counts.catMap.get(b.id) || 0;
       return countB - countA;
     });
-  }, [sortOrder, counts.catMap]);
+  }, [sortOrder, counts.catMap, language.code]);
 
-  // Active Category Definition
-  const activeCategory = useMemo(() => {
-    return selectedCategory ? getCategoryById(selectedCategory) : null;
-  }, [selectedCategory]);
-
-  // Articles filtered by active category and subcategory
-  const filteredArticles = useMemo(() => {
-    return articles.filter((art) => {
-      const { category, subcategory } = getArticleCategory(art);
-      if (selectedCategory && category.id !== selectedCategory) {
-        return false;
-      }
-      if (selectedSubcategory && subcategory?.id !== selectedSubcategory) {
-        return false;
-      }
-      return true;
+  // Real-time filtered categories based on instant search bar
+  const filteredCategories = useMemo(() => {
+    if (!categorySearchQuery.trim()) return sortedCategories;
+    const q = categorySearchQuery.toLowerCase().trim();
+    return sortedCategories.filter((cat) => {
+      const name = getCategoryName(cat.id, language.code).toLowerCase();
+      const desc = cat.description.toLowerCase();
+      const hasSubMatch = cat.subcategories.some((sub) => {
+        const subName = getSubcategoryName(sub.id, language.code).toLowerCase();
+        return subName.includes(q) || sub.description.toLowerCase().includes(q);
+      });
+      return name.includes(q) || desc.includes(q) || hasSubMatch;
     });
-  }, [articles, selectedCategory, selectedSubcategory]);
-
-  const handleSelectCategory = (catId: string) => {
-    if (selectedCategory === catId) {
-      // Toggle off to show all
-      setSelectedCategory(null);
-      setSelectedSubcategory(null);
-      updateParams(null, null);
-    } else {
-      setSelectedCategory(catId);
-      setSelectedSubcategory(null);
-      updateParams(catId, null);
-    }
-  };
-
-  const handleSelectSubcategory = (subId: string) => {
-    if (selectedSubcategory === subId) {
-      setSelectedSubcategory(null);
-      updateParams(selectedCategory, null);
-    } else {
-      setSelectedSubcategory(subId);
-      updateParams(selectedCategory, subId);
-    }
-  };
-
-  const handleClearFilters = () => {
-    setSelectedCategory(null);
-    setSelectedSubcategory(null);
-    updateParams(null, null);
-  };
+  }, [sortedCategories, categorySearchQuery, language.code]);
 
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },
     { label: t.categories || 'Categories' },
   ];
+
+  const searchPlaceholder = useMemo(() => {
+    switch (language.code) {
+      case 'ur':
+        return 'تمام 18 زمرہ جات اور 50+ ذیلی شعبوں میں تلاش کریں (مثلاً سائنس، کھیل، ٹیکنالوجی)...';
+      case 'ar':
+        return 'ابحث في كافة التصنيفات والنيشات الـ 18 (مثل الرياضة، العلوم، التكنولوجيا)...';
+      case 'es':
+        return 'Buscar en las 18 categorías y más de 50 nichos (ej. deportes, ciencia, tecnología)...';
+      case 'fr':
+        return 'Rechercher parmi les 18 catégories et 50+ créneaux (ex. sport, science, technologie)...';
+      case 'de':
+        return 'In 18 Kategorien und 50+ Nischen suchen (z. B. Sport, Wissenschaft, Technologie)...';
+      default:
+        return 'Search 18 editorial disciplines and 50+ niches (e.g. Sports, Science, Technology)...';
+    }
+  }, [language.code]);
 
   return (
     <div className="space-y-12 sm:space-y-16">
@@ -191,6 +218,8 @@ export function Categories() {
           'Art & Culture',
           'Design & Typography',
           'Engineering & Technology',
+          'Sports & Athletics',
+          'Science & Education',
           'Questo categories',
           'disciplines directory',
         ]}
@@ -214,7 +243,7 @@ export function Categories() {
             </p>
           </div>
 
-          {/* Editorial Meta Stats Badge Capsule in Poppins */}
+          {/* Meta Stats Badge Capsule */}
           <div className="flex flex-wrap items-center gap-2 text-xs font-sans text-editorial-muted font-medium">
             <div className="px-3.5 py-1 rounded-full bg-editorial-surface border border-editorial-border shadow-2xs">
               <span className="font-bold text-editorial-text">{CATEGORIES.length}</span> {t.categories || 'Categories'}
@@ -229,319 +258,251 @@ export function Categories() {
         </div>
       </header>
 
-      {/* Categories Toolbar: Sort & Status Switcher */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
-        <div className="flex items-center gap-2">
-          <Squares2X2Icon className="h-5 w-5 text-editorial-text" />
-          <h2 className="font-sans font-bold text-xl tracking-tight text-editorial-text">
-            {t.categories || 'Editorial Categories'}
-          </h2>
-          {selectedCategory && (
+      {/* Categories Search & Interactive Toolbar */}
+      <div className="space-y-4">
+        {/* Instant Category & Niche Search Bar */}
+        <div className="relative flex items-center">
+          <MagnifyingGlassIcon className="h-4.5 w-4.5 text-editorial-muted absolute start-3.5 pointer-events-none" />
+          <input
+            type="text"
+            value={categorySearchQuery}
+            onChange={(e) => setCategorySearchQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') {
+                setCategorySearchQuery('');
+              }
+            }}
+            placeholder={searchPlaceholder}
+            className="w-full bg-editorial-surface border border-editorial-border focus:border-editorial-text focus:ring-1 focus:ring-editorial-text/20 rounded-xl ps-10 pe-10 py-3 font-sans text-sm text-editorial-text placeholder:text-editorial-muted/70 transition-all outline-none shadow-2xs"
+            aria-label={t.search}
+          />
+          {categorySearchQuery && (
             <button
               type="button"
-              onClick={handleClearFilters}
-              className="text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text underline ms-2 cursor-pointer"
+              onClick={() => setCategorySearchQuery('')}
+              className="absolute end-3 p-1 text-editorial-muted hover:text-editorial-text transition-colors cursor-pointer"
+              aria-label={t.clearSearch || 'Clear search'}
             >
-              {t.allCategories || 'View All Categories'}
+              <XMarkIcon className="h-4 w-4" />
             </button>
           )}
         </div>
 
-        {/* Sort Controls (A-Z vs Most Articles in Poppins) */}
-        <div className="flex items-center gap-2 text-xs font-sans">
-          <span className="text-editorial-muted font-medium">{t.sortBy}:</span>
-          <div className="inline-flex rounded-full border border-editorial-border bg-editorial-surface overflow-hidden p-0.5">
-            <button
-              type="button"
-              onClick={() => setSortOrder('az')}
-              className={cn(
-                'px-3.5 py-1 rounded-full transition-colors cursor-pointer flex items-center gap-1 font-medium',
-                sortOrder === 'az'
-                  ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                  : 'text-editorial-muted hover:text-editorial-text'
-              )}
-            >
-              <BarsArrowDownIcon className="h-3.5 w-3.5" />
-              <span>{t.alphabetical || 'A–Z Alphabetical'}</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setSortOrder('count')}
-              className={cn(
-                'px-3.5 py-1 rounded-full transition-colors cursor-pointer flex items-center gap-1 font-medium',
-                sortOrder === 'count'
-                  ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
-                  : 'text-editorial-muted hover:text-editorial-text'
-              )}
-            >
-              <BarsArrowUpIcon className="h-3.5 w-3.5" />
-              <span>{t.byArticleCount || 'By Article Count'}</span>
-            </button>
+        {/* Toolbar: Category Count Feedback & Sorting Controls */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
+          <div className="flex items-center gap-2">
+            <Squares2X2Icon className="h-5 w-5 text-editorial-text" />
+            <h2 className="font-sans font-bold text-lg sm:text-xl tracking-tight text-editorial-text">
+              {t.categories || 'Editorial Disciplines'}
+            </h2>
+            <span className="text-xs font-sans text-editorial-muted font-medium">
+              ({filteredCategories.length} of {CATEGORIES.length})
+            </span>
+          </div>
+
+          {/* Sort Controls (A-Z vs Most Articles) */}
+          <div className="flex items-center gap-2 text-xs font-sans">
+            <span className="text-editorial-muted font-medium">{t.sortBy}:</span>
+            <div className="inline-flex rounded-full border border-editorial-border bg-editorial-surface overflow-hidden p-0.5">
+              <button
+                type="button"
+                onClick={() => setSortOrder('az')}
+                className={cn(
+                  'px-3.5 py-1 rounded-full transition-colors cursor-pointer flex items-center gap-1 font-medium',
+                  sortOrder === 'az'
+                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
+                    : 'text-editorial-muted hover:text-editorial-text'
+                )}
+              >
+                <BarsArrowDownIcon className="h-3.5 w-3.5" />
+                <span>{t.alphabetical || 'A–Z Alphabetical'}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setSortOrder('count')}
+                className={cn(
+                  'px-3.5 py-1 rounded-full transition-colors cursor-pointer flex items-center gap-1 font-medium',
+                  sortOrder === 'count'
+                    ? 'bg-editorial-text text-editorial-bg font-semibold shadow-xs'
+                    : 'text-editorial-muted hover:text-editorial-text'
+                )}
+              >
+                <BarsArrowUpIcon className="h-3.5 w-3.5" />
+                <span>{t.byArticleCount || 'By Article Count'}</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Section 1: All Categories Cards Grid (A to Z) */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {sortedCategories.map((cat: Category) => {
-          const isSelected = selectedCategory === cat.id;
-          const articleCount = counts.catMap.get(cat.id) || 0;
-          const CategoryIcon = getCategoryIcon(cat.id);
-
-          return (
-            <div
-              key={cat.id}
-              role="button"
-              tabIndex={0}
-              onClick={() => handleSelectCategory(cat.id)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault();
-                  handleSelectCategory(cat.id);
-                }
-              }}
-              className={cn(
-                'group relative p-6 sm:p-8 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between gap-6 text-start shadow-xs hover:shadow-md hover:-translate-y-0.5',
-                isSelected
-                  ? 'border-editorial-text bg-editorial-surface-hover ring-2 ring-editorial-text/20 shadow-md'
-                  : 'border-editorial-border bg-editorial-surface hover:border-editorial-text/70'
-              )}
-            >
-              <div className="space-y-4">
-                {/* Top Action Row: Distinctive Category Icon on left, Badges & Explore on right */}
-                <div className="flex items-center justify-between gap-3">
-                  <div
-                    className={cn(
-                      'w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-2xs shrink-0',
-                      isSelected
-                        ? 'bg-editorial-text text-editorial-bg shadow-sm scale-105'
-                        : 'bg-editorial-surface-subtle text-editorial-text border border-editorial-border group-hover:border-editorial-text group-hover:bg-editorial-text group-hover:text-editorial-bg'
-                    )}
-                  >
-                    <CategoryIcon className="h-5.5 w-5.5 transition-transform duration-300 group-hover:scale-110" />
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-sans text-editorial-muted font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border/80 shadow-2xs">
-                      {articleCount} {t.articles || 'articles'}
-                    </span>
-                    <span
-                      className={cn(
-                        'text-xs font-sans font-semibold px-3.5 py-1 rounded-full transition-all duration-200 flex items-center gap-1 shadow-2xs',
-                        isSelected
-                          ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
-                          : 'border border-editorial-border text-editorial-muted group-hover:border-editorial-text group-hover:text-editorial-text group-hover:bg-editorial-surface-hover'
-                      )}
-                    >
-                      <span>{isSelected ? (t.active || 'Active') : (t.explore || 'Explore')}</span>
-                      <ArrowRightIcon
-                        className={cn(
-                          'h-3.5 w-3.5 transition-transform duration-200',
-                          isRtl ? 'rotate-180' : '',
-                          isSelected ? '' : 'group-hover:translate-x-0.5'
-                        )}
-                      />
-                    </span>
-                  </div>
-                </div>
-
-                {/* Category Title & Description - Full Width */}
-                <div className="space-y-2">
-                  <h3 className="font-sans font-bold text-2xl sm:text-[1.65rem] tracking-tight text-editorial-text group-hover:text-accent transition-colors leading-tight">
-                    {getCategoryName(cat.id, language.code)}
-                  </h3>
-                  <p className="font-serif text-editorial-muted text-sm sm:text-base leading-relaxed">
-                    {cat.description}
-                  </p>
-                </div>
-
-                {/* Subcategories quick badges (Rounded Full + Poppins) */}
-                <div className="pt-1">
-                  <span className="text-xs font-sans text-editorial-muted/80 block mb-2 font-medium">
-                    {t.subcategories || 'Subcategories'}:
-                  </span>
-                  <div className="flex flex-wrap gap-1.5">
-                    {cat.subcategories.map((sub: Subcategory) => {
-                      const isSubSelected = selectedSubcategory === sub.id && isSelected;
-                      return (
-                        <span
-                          key={sub.id}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedCategory(cat.id);
-                            handleSelectSubcategory(sub.id);
-                          }}
-                          className={cn(
-                            'text-xs font-sans font-medium px-3.5 py-1 rounded-full transition-all cursor-pointer shadow-2xs',
-                            isSubSelected
-                              ? 'bg-editorial-text text-editorial-bg font-bold'
-                              : 'bg-editorial-surface-subtle border border-editorial-border/80 hover:border-editorial-text text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover'
-                          )}
-                        >
-                          {getSubcategoryName(sub.id, language.code)}
-                        </span>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-
-              {/* Action row at bottom of card */}
-              <div className="pt-4 border-t border-editorial-border/60 flex items-center justify-between text-xs font-sans font-medium">
-                <span className="text-editorial-muted group-hover:text-editorial-text transition-colors">
-                  {isSelected
-                    ? (language.code === 'ur' ? 'زمرے کا انتخاب منسوخ کریں' : language.code === 'ar' ? 'إلغاء تحديد التصنيف' : 'Click to deselect category')
-                    : (language.code === 'ur' ? 'ذیلی زمرہ جات اور مضامین دیکھیں' : language.code === 'ar' ? 'عرض التصنيفات الفرعية والمقالات' : 'Click to show subcategories & articles')}
-                </span>
-                <ArrowRightIcon
-                  className={cn(
-                    'h-4 w-4 transition-transform duration-200',
-                    isRtl ? 'rotate-180' : '',
-                    isSelected ? 'translate-x-1 text-editorial-text' : 'group-hover:translate-x-1 text-editorial-muted group-hover:text-editorial-text'
-                  )}
-                />
-              </div>
-            </div>
-          );
-        })}
-      </section>
-
-      {/* Section 2: Subcategories Cards (Revealed when a category is selected) */}
-      {activeCategory && (
-        <section className="space-y-6 pt-6 border-t border-editorial-border animate-fade-in">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div className="space-y-1">
-              <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted block">
-                {language.code === 'ur' ? 'تفصیلی زمرہ بندی' : language.code === 'ar' ? 'تفاصيل التصنيف' : 'Category Drilldown'}
-              </span>
-              <h3 className="font-sans font-bold text-2xl sm:text-3xl tracking-tight text-editorial-text flex items-center gap-2">
-                <span>{getCategoryName(activeCategory.id, language.code)}</span>
-                <span className="text-editorial-muted font-normal text-lg">
-                  ({activeCategory.subcategories.length} {language.code === 'ur' ? 'ذیلی زمرہ جات' : language.code === 'ar' ? 'تصنيفات فرعية' : 'Subcategories'})
-                </span>
-              </h3>
-            </div>
-
-            {selectedSubcategory && (
-              <button
-                type="button"
-                onClick={() => handleSelectSubcategory(selectedSubcategory)}
-                className="text-xs font-sans font-medium text-editorial-muted hover:text-editorial-text underline cursor-pointer self-start sm:self-auto"
-              >
-                {language.code === 'ur' ? `تمام ${getCategoryName(activeCategory.id, language.code)} ذیلی زمرے دکھائیں` : language.code === 'ar' ? `عرض كافة التصنيفات الفرعية لـ ${getCategoryName(activeCategory.id, language.code)}` : `Show All ${activeCategory.name} Subcategories`}
-              </button>
-            )}
+      {/* Section 1: All Categories Cards Grid (Opens dedicated category page on click) */}
+      {filteredCategories.length === 0 ? (
+        <div className="text-center py-16 px-4 border border-dashed border-editorial-border rounded-2xl bg-editorial-surface/40 space-y-4 animate-fade-in">
+          <MagnifyingGlassIcon className="h-10 w-10 text-editorial-muted mx-auto stroke-1" />
+          <div className="space-y-1">
+            <h3 className="font-sans font-bold text-lg text-editorial-text">
+              {language.code === 'ur'
+                ? 'کوئی زمرہ نہیں ملا'
+                : language.code === 'ar'
+                ? 'لم يتم العثور على تصنيفات'
+                : 'No categories found'}
+            </h3>
+            <p className="font-serif text-sm text-editorial-muted max-w-md mx-auto leading-relaxed">
+              {language.code === 'ur'
+                ? `"${categorySearchQuery}" سے مطابقت رکھنے والا کوئی زمرہ یا ذیلی شعبہ نہیں ملا۔`
+                : language.code === 'ar'
+                ? `لم يتم العثور على تصنيف يطابق "${categorySearchQuery}".`
+                : `No editorial categories or niches match "${categorySearchQuery}". Try a different keyword.`}
+            </p>
           </div>
+          <button
+            type="button"
+            onClick={() => setCategorySearchQuery('')}
+            className="px-5 py-2 rounded-full border border-editorial-border hover:border-editorial-text bg-editorial-surface text-editorial-text font-sans text-xs font-semibold uppercase tracking-wider transition-colors cursor-pointer shadow-2xs hover:shadow-xs"
+          >
+            {t.resetFilters || 'Reset Search'}
+          </button>
+        </div>
+      ) : (
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {filteredCategories.map((cat: Category) => {
+            const articleCount = counts.catMap.get(cat.id) || 0;
+            const CategoryIcon = getCategoryIcon(cat.id);
+            const categoryHref = localePath(`/categories/${cat.id}`);
 
-          {/* Subcategories Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {activeCategory.subcategories.map((sub: Subcategory) => {
-              const subKey = `${activeCategory.id}:${sub.id}`;
-              const count = counts.subMap.get(subKey) || 0;
-              const isSubSelected = selectedSubcategory === sub.id;
-
-              return (
-                <div
-                  key={sub.id}
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => handleSelectSubcategory(sub.id)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      handleSelectSubcategory(sub.id);
-                    }
-                  }}
-                  className={cn(
-                    'p-6 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between gap-4 text-start shadow-xs hover:shadow-md hover:-translate-y-0.5',
-                    isSubSelected
-                      ? 'border-editorial-text bg-editorial-surface-hover ring-2 ring-editorial-text/20 shadow-xs'
-                      : 'border-editorial-border bg-editorial-surface hover:border-editorial-text/70'
-                  )}
-                >
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="text-xs font-sans text-editorial-muted font-medium">
-                        {language.code === 'ur' ? 'ذیلی زمرہ' : language.code === 'ar' ? 'تصنيف فرعي' : 'Subcategory'}
-                      </span>
-                      <span
-                        className={cn(
-                          'text-xs font-sans px-2.5 py-0.5 rounded-full font-medium',
-                          isSubSelected
-                            ? 'bg-editorial-text text-editorial-bg font-semibold'
-                            : 'bg-editorial-surface-subtle text-editorial-muted'
-                        )}
-                      >
-                        {count} {language.code === 'ur' ? 'مضامین' : language.code === 'ar' ? 'مقالات' : count === 1 ? 'article' : 'articles'}
-                      </span>
+            return (
+              <Link
+                key={cat.id}
+                to={categoryHref}
+                className="group relative p-6 sm:p-8 rounded-2xl border border-editorial-border bg-editorial-surface hover:border-editorial-text/70 transition-all duration-300 flex flex-col justify-between gap-6 text-start shadow-xs hover:shadow-md hover:-translate-y-0.5 block focus:outline-none focus:ring-2 focus:ring-editorial-text/20"
+              >
+                <div className="space-y-4">
+                  {/* Top Action Row: Distinctive Category Icon on left, Badges & Explore on right */}
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-2xs shrink-0 bg-editorial-surface-subtle text-editorial-text border border-editorial-border group-hover:border-editorial-text group-hover:bg-editorial-text group-hover:text-editorial-bg">
+                      <CategoryIcon className="h-5.5 w-5.5 transition-transform duration-300 group-hover:scale-110" />
                     </div>
 
-                    <h4 className="font-sans font-bold text-lg tracking-tight text-editorial-text">
-                      {getSubcategoryName(sub.id, language.code)}
-                    </h4>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-sans text-editorial-muted font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border/80 shadow-2xs">
+                        {articleCount} {t.articles || 'articles'}
+                      </span>
+                      <span className="text-xs font-sans font-semibold px-3.5 py-1 rounded-full transition-all duration-200 flex items-center gap-1 shadow-2xs border border-editorial-border text-editorial-muted group-hover:border-editorial-text group-hover:text-editorial-text group-hover:bg-editorial-surface-hover">
+                        <span>{t.explore || 'Explore'}</span>
+                        <ArrowRightIcon
+                          className={cn(
+                            'h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5',
+                            isRtl ? 'rotate-180 group-hover:-translate-x-0.5' : ''
+                          )}
+                        />
+                      </span>
+                    </div>
+                  </div>
 
-                    <p className="font-serif text-xs sm:text-sm text-editorial-muted leading-relaxed">
-                      {sub.description}
+                  {/* Category Title & Description */}
+                  <div className="space-y-2">
+                    <h3 className="font-sans font-bold text-2xl sm:text-[1.65rem] tracking-tight text-editorial-text group-hover:text-accent transition-colors leading-tight">
+                      {getCategoryName(cat.id, language.code)}
+                    </h3>
+                    <p className="font-serif text-editorial-muted text-sm sm:text-base leading-relaxed line-clamp-3">
+                      {cat.description}
                     </p>
                   </div>
 
-                  <div className="pt-3.5 border-t border-editorial-border/60 flex items-center justify-between text-xs font-sans font-medium">
-                    <span className={isSubSelected ? 'text-editorial-text font-semibold' : 'text-editorial-muted'}>
-                      {isSubSelected
-                        ? (language.code === 'ur' ? 'منتخب شدہ' : language.code === 'ar' ? 'محدد' : 'Selected')
-                        : (language.code === 'ur' ? 'مضامین دیکھیں' : language.code === 'ar' ? 'عرض المقالات' : 'View Articles')}
+                  {/* Subcategories quick badges (Clicking a subcategory opens that niche directly) */}
+                  <div className="pt-1">
+                    <span className="text-xs font-sans text-editorial-muted/80 block mb-2 font-medium">
+                      {t.subcategories || 'Subcategories'}:
                     </span>
-                    <ArrowRightIcon
-                      className={cn(
-                        'h-3.5 w-3.5',
-                        isRtl ? 'rotate-180' : '',
-                        isSubSelected ? 'text-editorial-text' : 'text-editorial-muted'
-                      )}
-                    />
+                    <div className="flex flex-wrap gap-1.5">
+                      {cat.subcategories.map((sub: Subcategory) => {
+                        return (
+                          <span
+                            key={sub.id}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              navigate(localePath(`/categories/${cat.id}?subcategory=${sub.id}`));
+                            }}
+                            className="text-xs font-sans font-medium px-3.5 py-1 rounded-full transition-all cursor-pointer shadow-2xs bg-editorial-surface-subtle border border-editorial-border/80 hover:border-editorial-text text-editorial-muted hover:text-editorial-text hover:bg-editorial-surface-hover"
+                            title={`Filter by ${getSubcategoryName(sub.id, language.code)}`}
+                          >
+                            {getSubcategoryName(sub.id, language.code)}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
-              );
-            })}
-          </div>
+
+                {/* Action row at bottom of card */}
+                <div className="pt-4 border-t border-editorial-border/60 flex items-center justify-between text-xs font-sans font-medium">
+                  <span className="text-editorial-muted group-hover:text-editorial-text transition-colors">
+                    {language.code === 'ur'
+                      ? 'اس زمرے کے تمام مضامین اور ذیلی شعبے دیکھیں'
+                      : language.code === 'ar'
+                      ? 'عرض كافة مقالات وتصنيفات هذا التخصص'
+                      : language.code === 'es'
+                      ? 'Ver todas las monografías y nichos'
+                      : language.code === 'fr'
+                      ? 'Voir toutes les monographies et créneaux'
+                      : language.code === 'de'
+                      ? 'Alle Monographien und Nischen ansehen'
+                      : 'View all category monographs & niches'}
+                  </span>
+                  <ArrowRightIcon
+                    className={cn(
+                      'h-4 w-4 transition-transform duration-200 text-editorial-muted group-hover:text-editorial-text group-hover:translate-x-1',
+                      isRtl ? 'rotate-180 group-hover:-translate-x-1' : ''
+                    )}
+                  />
+                </div>
+              </Link>
+            );
+          })}
         </section>
       )}
 
-      {/* Section 3: Related Articles Cards Stream */}
+      {/* Section 2: Recent Monographs Across All Disciplines */}
       <section className="space-y-6 pt-8 border-t border-editorial-border">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h3 className="font-sans font-bold text-2xl sm:text-3xl tracking-tight text-editorial-text flex items-center gap-2">
               <SparklesIcon className="h-5 w-5 text-editorial-text" />
-              <span>
-                {selectedCategory
-                  ? `${getCategoryName(selectedCategory, language.code)} ${selectedSubcategory ? `› ${getSubcategoryName(selectedSubcategory, language.code)}` : ''}`
-                  : (t.allArticles || 'All Editorial Articles')}
-              </span>
+              <span>{t.allArticles || 'Recent Editorial Monographs'}</span>
             </h3>
             <p className="font-sans text-xs text-editorial-muted font-medium mt-1">
-              {filteredArticles.length} {t.articlesFound}
+              {articles.length} {t.articlesFound || 'monographs published across disciplines'}
             </p>
           </div>
 
           <div className="flex items-center gap-3">
             <Link
-              to={localePath(
-                selectedCategory
-                  ? `/articles?category=${selectedCategory}${selectedSubcategory ? `&subcategory=${selectedSubcategory}` : ''}`
-                  : '/articles'
-              )}
+              to={localePath('/articles')}
               className="text-xs font-sans uppercase tracking-wider text-accent hover:underline flex items-center gap-1.5 font-semibold group"
             >
-              <span>{language.code === 'ur' ? 'مکمل آرکائیو میں دیکھیں' : language.code === 'ar' ? 'عرض في الأرشيف الكامل' : language.code === 'es' ? 'Ver en Archivo Completo' : language.code === 'fr' ? 'Voir dans l’Archive Complète' : language.code === 'de' ? 'Im vollständigen Archiv ansehen' : 'View in Full Archive'}</span>
+              <span>
+                {language.code === 'ur'
+                  ? 'مکمل آرکائیو میں دیکھیں'
+                  : language.code === 'ar'
+                  ? 'عرض في الأرشيف الكامل'
+                  : language.code === 'es'
+                  ? 'Ver en Archivo Completo'
+                  : language.code === 'fr'
+                  ? 'Voir dans l’Archive Complète'
+                  : language.code === 'de'
+                  ? 'Im vollständigen Archiv ansehen'
+                  : 'View in Full Archive'}
+              </span>
               <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180 transition-transform group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5" />
             </Link>
           </div>
         </div>
 
-        {/* Article Cards with Right-Side Images, Reading Time, and Real-Time View Count */}
+        {/* Article Cards */}
         <ArticleList
-          articles={filteredArticles}
-          emptyMessage={t.noArticlesFound || (language.code === 'ur' ? 'اس زمرے میں فی الحال کوئی مقالہ موجود نہیں ہے۔' : language.code === 'ar' ? 'لم يتم العثور على مقالات في هذا التصنيف.' : 'No articles found in this collection.')}
+          articles={articles.slice(0, 10)}
+          emptyMessage={t.noArticlesFound}
         />
       </section>
     </div>

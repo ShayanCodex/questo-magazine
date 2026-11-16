@@ -5,7 +5,7 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>An editorial static publication on craft, design systems, and typography.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:31:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 04:39:10 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[Aerobic Glycolysis, Lactate Threshold 2 & The Physiology of Sub-2 Marathons]]></title>
@@ -125,6 +125,15 @@
       <category>architecture-and-space</category>
     </item>
     <item>
+      <title><![CDATA[Multi-Head Latent Attention & DualPipe: The Architecture Behind DeepSeek-V3 and 10x Efficiency in Open Weights]]></title>
+      <link>https://questo-blog.netlify.app/articles/deepseek-v3-moe-fp8-distributed-training-efficiency</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/deepseek-v3-moe-fp8-distributed-training-efficiency</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Deconstructing the algorithmic breakthroughs of DeepSeek-V3: Multi-head Latent Attention (MLA), DeepSeekMoE 256 routed experts, DualPipe overlapping computation, and the mathematical economics of FP8 mixed-precision training.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>technology</category>
+    </item>
+    <item>
       <title><![CDATA[Distributed Consensus & Formal Verification in High-Throughput Blockchains]]></title>
       <link>https://questo-blog.netlify.app/articles/distributed-consensus-and-formal-verification-in-blockchains</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/distributed-consensus-and-formal-verification-in-blockchains</guid>
@@ -141,6 +150,15 @@
       <description><![CDATA[A biomechanical tissue mechanics investigation into myofascial meridians, collagen cross-linking, fluid shear stress, and injury prevention in elite sprinters.]]></description>
       <author><![CDATA[Liam O’Connor]]></author>
       <category>fitness</category>
+    </item>
+    <item>
+      <title><![CDATA[Neutral Atoms & Optical Tweezers: The Frontier of Fault-Tolerant Quantum Processors]]></title>
+      <link>https://questo-blog.netlify.app/articles/fault-tolerant-quantum-computing-and-neutral-atom-processors</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/fault-tolerant-quantum-computing-and-neutral-atom-processors</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Investigating laser-cooled rubidium arrays, Rydberg interaction gates, and 2D spatial reconfigurability: how neutral atom architectures are accelerating physical logical qubits.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>science</category>
     </item>
     <item>
       <title><![CDATA[Formal Verification of Distributed Consensus: TLA+, Isabelle/HOL and Mechanized Invariants]]></title>
@@ -177,6 +195,15 @@
       <description><![CDATA[Deconstructing modern hyperscale economics: GPU depreciation cycles, nuclear power purchase agreements, and the capital expenditure moat of artificial intelligence.]]></description>
       <author><![CDATA[Claire Dupont]]></author>
       <category>business</category>
+    </item>
+    <item>
+      <title><![CDATA[The Microsoft Outlook Global Crash: Root Cause Analysis, Exchange Online Infrastructure Failures & Distributed Cloud Vulnerabilities]]></title>
+      <link>https://questo-blog.netlify.app/articles/microsoft-outlook-global-outage-exchange-infrastructure-crash</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/microsoft-outlook-global-outage-exchange-infrastructure-crash</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A forensic systems investigation into the worldwide Exchange Online outage: BGP telemetry storms, cascading Azure AD authentication loops, and the structural perils of centralized enterprise communication.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>software</category>
     </item>
     <item>
       <title><![CDATA[Monumental Direct Carving & The Textural Permanence of Granite]]></title>
@@ -296,6 +323,15 @@
       <category>fitness</category>
     </item>
     <item>
+      <title><![CDATA[Small Modular Reactors & Microgrids: The Energy Engineering Powering Gigawatt AI Clusters]]></title>
+      <link>https://questo-blog.netlify.app/articles/small-modular-reactors-and-gigawatt-ai-datacenters</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/small-modular-reactors-and-gigawatt-ai-datacenters</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Inside the critical nexus between generative compute and atomic engineering: molten salt SMRs, thermal dissipation at scale, and high-voltage DC interconnects powering next-generation frontier datacenters.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>technology</category>
+    </item>
+    <item>
       <title><![CDATA[Sovereign Liquidity Swaps, FX Basis & The Global Dollar Funding Network]]></title>
       <link>https://questo-blog.netlify.app/articles/sovereign-liquidity-swaps-and-the-global-dollar-funding-network</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/sovereign-liquidity-swaps-and-the-global-dollar-funding-network</guid>
@@ -339,6 +375,15 @@
       <description><![CDATA[A clinical review of Horvath methylation algorithms, cell-free DNA biomarkers, telomere attrition rates, and evidence-based interventions for healthspan preservation.]]></description>
       <author><![CDATA[Dr. Marcus Vance]]></author>
       <category>health</category>
+    </item>
+    <item>
+      <title><![CDATA[Test-Time Compute & Monte Carlo Tree Search: How Autonomous Reasoning Transforms Frontier LLMs]]></title>
+      <link>https://questo-blog.netlify.app/articles/test-time-compute-and-mcts-in-autonomous-reasoning-models</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/test-time-compute-and-mcts-in-autonomous-reasoning-models</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Analyzing the tectonic shift from pre-training parameter scale to inference-time compute: Process Reward Models (PRMs), tree search verification, and recursive self-correction in autonomous research agents.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>technology</category>
     </item>
     <item>
       <title><![CDATA[The Biochemistry of Traditional Aceto Balsamico: Microbial Succession & Wood Barrel Aging]]></title>

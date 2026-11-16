@@ -5,7 +5,7 @@
   <link href="https://questo-blog.netlify.app/" />
   <link href="https://questo-blog.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
   <id>https://questo-blog.netlify.app/</id>
-  <updated>2026-11-16T01:31:47.201Z</updated>
+  <updated>2026-11-16T04:39:10.282Z</updated>
   <entry>
     <title>Aerobic Glycolysis, Lactate Threshold 2 &amp; The Physiology of Sub-2 Marathons</title>
     <link href="https://questo-blog.netlify.app/articles/aerobic-glycolysis-and-lactate-threshold-dynamics-in-endurance" />
@@ -137,6 +137,16 @@
     </author>
   </entry>
   <entry>
+    <title>Multi-Head Latent Attention &amp; DualPipe: The Architecture Behind DeepSeek-V3 and 10x Efficiency in Open Weights</title>
+    <link href="https://questo-blog.netlify.app/articles/deepseek-v3-moe-fp8-distributed-training-efficiency" />
+    <id>https://questo-blog.netlify.app/articles/deepseek-v3-moe-fp8-distributed-training-efficiency</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Deconstructing the algorithmic breakthroughs of DeepSeek-V3: Multi-head Latent Attention (MLA), DeepSeekMoE 256 routed experts, DualPipe overlapping computation, and the mathematical economics of FP8 mixed-precision training.</summary>
+    <author>
+      <name>Elena Vance</name>
+    </author>
+  </entry>
+  <entry>
     <title>Distributed Consensus &amp; Formal Verification in High-Throughput Blockchains</title>
     <link href="https://questo-blog.netlify.app/articles/distributed-consensus-and-formal-verification-in-blockchains" />
     <id>https://questo-blog.netlify.app/articles/distributed-consensus-and-formal-verification-in-blockchains</id>
@@ -154,6 +164,16 @@
     <summary>A biomechanical tissue mechanics investigation into myofascial meridians, collagen cross-linking, fluid shear stress, and injury prevention in elite sprinters.</summary>
     <author>
       <name>Liam O’Connor</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Neutral Atoms &amp; Optical Tweezers: The Frontier of Fault-Tolerant Quantum Processors</title>
+    <link href="https://questo-blog.netlify.app/articles/fault-tolerant-quantum-computing-and-neutral-atom-processors" />
+    <id>https://questo-blog.netlify.app/articles/fault-tolerant-quantum-computing-and-neutral-atom-processors</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Investigating laser-cooled rubidium arrays, Rydberg interaction gates, and 2D spatial reconfigurability: how neutral atom architectures are accelerating physical logical qubits.</summary>
+    <author>
+      <name>Dr. Marcus Vance</name>
     </author>
   </entry>
   <entry>
@@ -194,6 +214,16 @@
     <summary>Deconstructing modern hyperscale economics: GPU depreciation cycles, nuclear power purchase agreements, and the capital expenditure moat of artificial intelligence.</summary>
     <author>
       <name>Claire Dupont</name>
+    </author>
+  </entry>
+  <entry>
+    <title>The Microsoft Outlook Global Crash: Root Cause Analysis, Exchange Online Infrastructure Failures &amp; Distributed Cloud Vulnerabilities</title>
+    <link href="https://questo-blog.netlify.app/articles/microsoft-outlook-global-outage-exchange-infrastructure-crash" />
+    <id>https://questo-blog.netlify.app/articles/microsoft-outlook-global-outage-exchange-infrastructure-crash</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>A forensic systems investigation into the worldwide Exchange Online outage: BGP telemetry storms, cascading Azure AD authentication loops, and the structural perils of centralized enterprise communication.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
     </author>
   </entry>
   <entry>
@@ -327,6 +357,16 @@
     </author>
   </entry>
   <entry>
+    <title>Small Modular Reactors &amp; Microgrids: The Energy Engineering Powering Gigawatt AI Clusters</title>
+    <link href="https://questo-blog.netlify.app/articles/small-modular-reactors-and-gigawatt-ai-datacenters" />
+    <id>https://questo-blog.netlify.app/articles/small-modular-reactors-and-gigawatt-ai-datacenters</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Inside the critical nexus between generative compute and atomic engineering: molten salt SMRs, thermal dissipation at scale, and high-voltage DC interconnects powering next-generation frontier datacenters.</summary>
+    <author>
+      <name>Julian Mercer</name>
+    </author>
+  </entry>
+  <entry>
     <title>Sovereign Liquidity Swaps, FX Basis &amp; The Global Dollar Funding Network</title>
     <link href="https://questo-blog.netlify.app/articles/sovereign-liquidity-swaps-and-the-global-dollar-funding-network" />
     <id>https://questo-blog.netlify.app/articles/sovereign-liquidity-swaps-and-the-global-dollar-funding-network</id>
@@ -374,6 +414,16 @@
     <summary>A clinical review of Horvath methylation algorithms, cell-free DNA biomarkers, telomere attrition rates, and evidence-based interventions for healthspan preservation.</summary>
     <author>
       <name>Dr. Marcus Vance</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Test-Time Compute &amp; Monte Carlo Tree Search: How Autonomous Reasoning Transforms Frontier LLMs</title>
+    <link href="https://questo-blog.netlify.app/articles/test-time-compute-and-mcts-in-autonomous-reasoning-models" />
+    <id>https://questo-blog.netlify.app/articles/test-time-compute-and-mcts-in-autonomous-reasoning-models</id>
+    <updated>2026-11-16T00:00:00.000Z</updated>
+    <summary>Analyzing the tectonic shift from pre-training parameter scale to inference-time compute: Process Reward Models (PRMs), tree search verification, and recursive self-correction in autonomous research agents.</summary>
+    <author>
+      <name>Hiroshi Tanaka</name>
     </author>
   </entry>
   <entry>
