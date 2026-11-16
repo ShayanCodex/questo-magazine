@@ -1,6 +1,6 @@
 {
   "slug": "microeconomics-of-cloud-hyperscalers-and-datacenter-capex",
-  "title": "La microeconomía de los hiperescaladores de la nube: amortización, acuerdos de compra de energía y gastos de capital del centro de datos",
+  "title": "La microeconomía de los hiperescaladores de la nube",
   "excerpt": "Deconstrucción de la economía de hiperescala moderna: ciclos de depreciación de GPU, acuerdos de compra de energía nuclear y el foso de gasto de capital de la inteligencia artificial.",
   "date": "2026-11-16",
   "author": "Claire Dupont",
@@ -35,7 +35,7 @@
     {
       "type": "ul",
       "items": [
-        "Calendarios de depreciación acelerada: los hiperescaladores amortizan los servidores de uso general en un plazo de 4 a 6 años, pero los aceleradores de IA (GPU/TPU) enfrentan ciclos comprimidos de 3 años debido a la rápida obsolescencia generacional.",
+        "Programas de depreciación acelerada: los hiperescaladores amortizan los servidores de uso general en un plazo de 4 a 6 años, pero los aceleradores de IA (GPU/TPU) enfrentan ciclos comprimidos de 3 años debido a la rápida obsolescencia generacional.",
         "Acuerdos de compra de energía (PPA): asegurar contratos de carga base a 20 años a escala de gigavatios con empresas de servicios públicos nucleares y geotérmicas para garantizar energía ininterrumpida independientemente de la volatilidad de la red.",
         "Efectividad del uso de energía (PUE): la refrigeración líquida de circuito cerrado personalizada y las placas frías directas al chip impulsan el PUE a hiperescala por debajo de 1,15, en comparación con 1,50+ para los centros de datos empresariales heredados.",
         "Corredores submarinos y de fibra oscura: los enlaces de fibra óptica transoceánicos de propiedad de hiperescala eliminan las tarifas de tránsito y ofrecen un ancho de banda de interconexión de submilisegundos entre zonas de disponibilidad regional."
@@ -48,7 +48,7 @@
     },
     {
       "type": "h2",
-      "text": "The Power Wall: Restricciones de la red eléctrica y generación dedicada"
+      "text": "El muro eléctrico: restricciones de la red eléctrica y generación dedicada"
     },
     {
       "type": "p",
@@ -69,5 +69,5 @@
       "text": "El requerimiento astronómico de capital para entrenar modelos de frontera y servir a la inferencia a escala global está creando una barrera de entrada económica insuperable. A medida que las nuevas empresas de software enfrentan crecientes costos de computación, el valor se acumula desproporcionadamente para los propietarios de infraestructura que monetizan la tierra, la energía y el silicio amortizado a través de API programáticas en la nube."
     }
   ],
-  "sourceHash": "cc5b29b34386e724685eabde709595046b7adf7c"
+  "sourceHash": "d9378ce9bfc4b0e5905316662447a3504165e05c"
 }

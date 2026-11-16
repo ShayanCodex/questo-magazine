@@ -1,0 +1,74 @@
+{
+  "slug": "circadian-photobiology-and-melanopsin-signaling",
+  "title": "Luz circadiana y biología del sueño",
+  "excerpt": "Una revisión de neurobiología del arrastre óptico: células ganglionares de la retina intrínsecamente fotosensibles (ipRGC), fototransducción de melanopsina y el reloj maestro supraquiasmático.",
+  "date": "2026-11-17",
+  "author": "Anne Hardy",
+  "tags": [
+    "neuroscience",
+    "circadian-rhythm",
+    "sleep-science",
+    "biology",
+    "health",
+    "wellness"
+  ],
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Los rayos dorados del amanecer de la mañana atraviesan pinos brumosos sobre un sereno paisaje natural",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El sistema fotorreceptivo no visual del ojo"
+    },
+    {
+      "type": "p",
+      "text": "Durante más de un siglo, la ciencia de la visión creyó que la fotorrecepción en el ojo de los mamíferos estaba mediada exclusivamente por bastones y conos para la formación de imágenes. A finales de la década de 1990, los neurocientíficos descubrieron una tercera clase de fotorreceptores oculares: las células ganglionares de la retina intrínsecamente fotosensibles (ipRGC). Estas células expresan melanopsina, un fotopigmento específicamente sensible a la luz azul de longitud de onda corta (pico ~480 nm), dedicado no a la vista consciente, sino a sincronizar el marcapasos circadiano central."
+    },
+    {
+      "type": "h2",
+      "text": "Vías neuroquímicas y arrastre circadiano"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "El tracto retinohipotalámico (RHT): los axones de los ipRGC que contienen melanopsina se proyectan monosinápticamente directamente al núcleo supraquiasmático (SCN) del hipotálamo.",
+        "Respuesta matutina al despertar del cortisol: Los fotones solares de ángulo bajo de las primeras horas del día desencadenan un pulso saludable inmediato de cortisol, lo que aumenta el estado de alerta, la movilización inmune y la preparación metabólica.",
+        "La cuenta regresiva de melatonina de 16 horas: la activación matutina de SCN sincroniza la expresión del gen del reloj (PER y CRY), iniciando un temporizador biológico interno que libera melatonina de 14 a 16 horas después.",
+        "Toxicidad de la luz nocturna: la exposición a fotones enriquecidos en azul entre las 10 p. m. y las 4 a. m. suprime la secreción de melatonina pineal hasta en un 85 %, alterando la arquitectura del sueño profundo de ondas lentas."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La luz es la droga biológica más potente de la Tierra. Altera la expresión genética en cada célula de tu cuerpo a los pocos minutos de llegar a tus retinas.",
+      "cite": "Questo Circadian Neurobiology & Human Sleep Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Iluminación nocturna ambiental cálida y suave en un dormitorio tranquilo y ordenado que promueve la producción de melatonina por la noche",
+      "caption": "Higiene de la iluminación: la transición a fuentes de luz ámbar tenues y ubicadas a baja altura después del atardecer protege los picos nocturnos de melatonina."
+    },
+    {
+      "type": "h2",
+      "text": "Los límites físicos de la iluminación interior artificial"
+    },
+    {
+      "type": "p",
+      "text": "La iluminación comercial interior estándar generalmente ofrece entre 300 y 500 lux, lo cual es insuficientemente brillante para estimular completamente los ipRGC matutinos, pero excesivamente brillante por la noche para permitir la liberación adecuada de melatonina. Por el contrario, la luz solar matutina al aire libre proporciona entre 10.000 y 100.000 lux, órdenes de magnitud más efectivas para establecer ritmos diurnos robustos."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/ysCZHgEzEs4",
+      "title": "Podcast científico: Andrew Huberman sobre la luz solar de la mañana y la salud circadiana",
+      "caption": "El neurobiólogo Andrew Huberman explica el mecanismo de la melanopsina retiniana y los protocolos para ver la luz del sol por la mañana para optimizar el sueño y la concentración."
+    },
+    {
+      "type": "h2",
+      "text": "Implicaciones clínicas para la salud metabólica y mental"
+    },
+    {
+      "type": "p",
+      "text": "La desalineación circadiana crónica, a menudo inducida por el trabajo por turnos o la iluminación de la pantalla a altas horas de la noche, está clínicamente relacionada con la resistencia sistémica a la insulina, las enfermedades cardiovasculares y el trastorno depresivo mayor. Restaurar la sincronía biológica entre luz y oscuridad es la base fundamental de la medicina preventiva."
+    }
+  ],
+  "sourceHash": "aeb446546a46e1b21c1e2005f86d11d150e4e68f"
+}

@@ -1,7 +1,7 @@
 {
   "slug": "test-time-compute-and-mcts-in-autonomous-reasoning-models",
-  "title": "Calcul au moment du test et recherche d'arborescence de Monte Carlo : comment le raisonnement autonome transforme les LLM frontières",
-  "excerpt": "Analyse du changement tectonique de l'échelle des paramètres de pré-entraînement au calcul du temps d'inférence : modèles de récompense de processus (PRM), vérification de la recherche d'arbre et autocorrection récursive dans les agents de recherche autonomes.",
+  "title": "Calcul au moment du test et raisonnement autonome",
+  "excerpt": "Analyse du passage tectonique de l'échelle des paramètres de pré-entraînement au calcul du temps d'inférence : modèles de récompense de processus (PRM), vérification de la recherche arborescente et autocorrection récursive dans les agents de recherche autonomes.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -53,13 +53,13 @@
     },
     {
       "type": "p",
-      "text": "Les modèles de récompense basés sur les résultats souffrent d'un renforcement faux-positif sévère : un LLM peut arriver à la bonne réponse arithmétique à travers des étapes intermédiaires complètement hallucinées ou illogiques. En entraînant des fonctions de valeur discriminantes sur des annotations humaines et synthétiques granulaires par étape, les chercheurs permettent aux modèles de détecter leurs propres faux pas cognitifs dès le début de l'arbre de raisonnement, en éliminant les chemins divergents avant que les fenêtres contextuelles ne soient épuisées."
+      "text": "Les modèles de récompense basés sur les résultats souffrent d'un renforcement faussement positif sévère : un LLM peut arriver à la réponse arithmétique correcte à travers des étapes intermédiaires complètement hallucinées ou illogiques. En entraînant des fonctions de valeur discriminantes sur des annotations humaines et synthétiques granulaires par étape, les chercheurs permettent aux modèles de détecter leurs propres faux pas cognitifs dès le début de l'arbre de raisonnement, en éliminant les chemins divergents avant que les fenêtres contextuelles ne soient épuisées."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/zjkBMFhNj_g",
       "title": "Apprentissage par renforcement, arbres de recherche et raisonnement du système 2 dans Frontier AI",
-      "caption": "Cours académique complet couvrant les algorithmes de recherche, l'apprentissage par renforcement par jeu autonome et les cadres de vérification formelle."
+      "caption": "Cours académique complet couvrant les algorithmes de recherche, l'apprentissage par renforcement par le jeu autonome et les cadres de vérification formelle."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Équipés de boucles de recherche au temps de test, les agents de recherche autonomes peuvent parcourir de vastes graphiques de littérature scientifique, exécuter des simulations Python empiriques dans des environnements sandbox, synthétiser des molécules biochimiques candidates et rédiger des monographies évaluées par des pairs sans intervention humaine. Le goulot d’étranglement de la découverte des connaissances passe de la capacité de lecture humaine au débit de vérification algorithmique."
     }
   ],
-  "sourceHash": "dbe651e5fbe0748dceb5e59f1aed8cd3b5382c5a"
+  "sourceHash": "968ed931346d6cf26d9ca4c7a73d8e77dfd3172f"
 }

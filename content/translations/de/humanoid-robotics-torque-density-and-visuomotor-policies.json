@@ -1,7 +1,7 @@
 {
   "slug": "humanoid-robotics-torque-density-and-visuomotor-policies",
-  "title": "Humanoide Robotik, Aktuatordrehmomentdichte und visuomotorische neuronale End-to-End-Richtlinien in Echtzeit",
-  "excerpt": "Eine technische Untersuchung der Mechanik der bipedalen humanoiden Fortbewegung: Planetenaktuatoren mit quasi-direktem Antrieb, zykloide Zahnradkinematik und transformatorbasierte visuomotorische neuronale Richtlinien, die bei 100 Hz ausgeführt werden.",
+  "title": "Humanoide Robotik und Aktuatordynamik",
+  "excerpt": "Eine technische Untersuchung der Mechanik der zweibeinigen humanoiden Fortbewegung: Planetenaktuatoren mit Quasi-Direktantrieb, Kinematik von Zykloidengetrieben und transformatorbasierte visuomotorische neuronale Richtlinien, die bei 100 Hz ausgeführt werden.",
   "date": "2026-11-17",
   "author": "Elena Vance",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Während Hardwareplattformen mit mehrstündigen Lithium-Titanat-Batterielaufzeiten und Skelettrahmen aus Kohlenstoffverbundwerkstoff ihre strukturelle Reife erreichen, verlagert sich das limitierende Reagenz vollständig auf die taktile Datenerfassung und Richtlinienverallgemeinerung. Die endgültige Verwirklichung des humanoiden Paradigmas wird nicht in isolierten Fabriken erreicht, sondern in autonomen Systemen, die in der chaotischen physischen Welt kontinuierlich selbstüberwachtes taktiles Lernen ermöglichen."
     }
   ],
-  "sourceHash": "ddd4c2e5bb67e3e5999387adb27f2b26b593ff2e"
+  "sourceHash": "dd0951bd88216edf532939e421077bacc2fdcb30"
 }

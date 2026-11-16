@@ -1,6 +1,6 @@
 {
   "slug": "microsoft-outlook-global-outage-exchange-infrastructure-crash",
-  "title": "La caída global de Microsoft Outlook: análisis de la causa raíz, fallas de la infraestructura de Exchange Online y vulnerabilidades de la nube distribuida",
+  "title": "Inside the Global Outlook Crash",
   "excerpt": "Una investigación de sistemas forenses sobre la interrupción mundial de Exchange Online: tormentas de telemetría BGP, bucles de autenticación en cascada de Azure AD y los peligros estructurales de la comunicación empresarial centralizada.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
@@ -79,5 +79,5 @@
       "text": "La verdadera alta disponibilidad requiere abandonar los monocultivos monolíticos de la nube pública. Las organizaciones deben implementar respaldos de correo electrónico secundarios descentralizados, estrictos intervalos de interrupción del lado del cliente, federación de identidades desacopladas y aislamiento regional del dominio de fallas. Hasta que la arquitectura empresarial imponga el almacenamiento en caché local autónomo y protocolos fuera de línea de dependencia cero, la conveniencia del SaaS centralizado seguirá siendo rehén de la próxima cascada distribuida."
     }
   ],
-  "sourceHash": "13e6000c329a0bfb08e856abcb53a098af53993c"
+  "sourceHash": "96e7eadb90d582fd44bad0c879cc10a00d527d9b"
 }

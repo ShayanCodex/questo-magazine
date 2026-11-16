@@ -1,7 +1,7 @@
 {
   "slug": "small-modular-reactors-and-gigawatt-ai-datacenters",
-  "title": "Pequeños reactores modulares y microrredes: la ingeniería energética que impulsa los grupos de IA de gigavatios",
-  "excerpt": "Dentro del nexo crítico entre la computación generativa y la ingeniería atómica: SMR de sales fundidas, disipación térmica a escala e interconexiones de CC de alto voltaje que alimentan los centros de datos fronterizos de próxima generación.",
+  "title": "Pequeños reactores modulares para clústeres de IA",
+  "excerpt": "Dentro del nexo crítico entre la computación generativa y la ingeniería atómica: SMR de sales fundidas, disipación térmica a escala e interconexiones de CC de alto voltaje que alimentan los centros de datos de vanguardia de próxima generación.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "La integración de reactores refrigerados por gas de alta temperatura permite cascadas de energía de doble propósito: el vapor sobrecalentado impulsa turbinas de alta eficiencia para generar electricidad para las GPU, mientras que los circuitos de refrigerante secundarios de baja calidad proporcionan energía térmica limpia para la producción regional de hidrógeno, la desalinización de agua de mar y la agricultura de invernadero."
     }
   ],
-  "sourceHash": "cb3a20ca41c4b839f7d10ac0e601613be6fc19fe"
+  "sourceHash": "64a8786a76228fabd39378a5a9294a6670706dff"
 }

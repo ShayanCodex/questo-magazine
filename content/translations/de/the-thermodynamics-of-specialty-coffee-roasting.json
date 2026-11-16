@@ -1,0 +1,70 @@
+{
+  "slug": "the-thermodynamics-of-specialty-coffee-roasting",
+  "title": "Thermodynamik von Spezialkaffee",
+  "excerpt": "Die chemische Physik des Kaffeeröstens: konduktive vs. konvektive Wärmeübertragung, Maillard-Kaskade, Strecker-Abbau und Verwaltung von Anstiegskurven.",
+  "date": "2026-11-17",
+  "author": "Chef Mateo Silva",
+  "tags": [
+    "coffee-science",
+    "culinary",
+    "thermodynamics",
+    "roasting",
+    "chemistry",
+    "gastronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Goldgeröstete Spezialkaffeebohnen, die in eine Kühlschale eines Industrierösters gegossen werden",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Von grünen Samen zur aromatischen Komplexität"
+    },
+    {
+      "type": "p",
+      "text": "Rohe Rohkaffeesamen sind dichte, adstringierende und geruchlose Pellets mit etwa 11 % Feuchtigkeit, Polysacchariden und Chlorogensäuren. Das Rösten von Kaffee ist eine präzise thermodynamische Choreografie: Durch die Anwendung kontrollierter Leitungs-, Konvektions- und Strahlungswärme werden durch kaskadierende thermochemische Reaktionen mehr als 800 flüchtige aromatische Verbindungen freigesetzt."
+    },
+    {
+      "type": "h2",
+      "text": "Thermische Phasen und Reaktionskinetik"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Trocknungsphase: Austreiben von endotherm gebundenem Wasser, bis die Samen den Gelbfärbungspunkt bei etwa 160 °C erreichen.",
+        "Maillard-Reaktionskaskade: Reduzierende Zucker reagieren mit Aminosäuren, um Melanoidine (Körper, Mundgefühl) und komplexe nussige Karamellaromen zu erzeugen.",
+        "Strecker-Abbau: Aminosäuren decarboxylieren und desaminieren zu wirksamen Aromaaldehyden und Pyrazinen.",
+        "Erster Riss und exotherme Verschiebung: Wasserdampf und Kohlendioxid brechen bei ~196 °C die Zellulosewände auf und verschieben die Bohne von der endothermen zur exothermen Wärmefreisetzung."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Das Rösten von Kaffee ist die Kunst, mit der thermodynamischen Dynamik umzugehen. Sobald der erste Riss beginnt, muss der Röster mit der inneren exothermen Energie der Bohne rechnen.",
+      "cite": "Questo Sensory Science & Specialty Coffee Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Handwerklicher Kaffeeröster prüft die Bohnenfarbe und probiert das Aroma mit einem Trier-Tool",
+      "caption": "Echtzeit-Telemetrie: Überwachung der Abgastemperatur und der Trommelbohnensonden, um eine immer geringere Anstiegsrate aufrechtzuerhalten."
+    },
+    {
+      "type": "h2",
+      "text": "Beherrschung der Anstiegsrate (RoR)"
+    },
+    {
+      "type": "p",
+      "text": "Experten im Rösten von Spezialitätenkaffee beurteilen Röstkurven anhand der Anstiegsrate (RoR) – der Geschwindigkeit in Grad pro Minute, mit der die Bohnentemperatur ansteigt. Eine sanft abfallende RoR-Kurve verhindert gebackene oder verbrannte Defekte und bewahrt die zarten blumigen Terpene und Apfelfruchtsäuren, die in hochgelegenen Geisha-Rebsorten so geschätzt werden."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/S5YPPj3MpA0",
+      "title": "Wie man das perfekte Röstprofil für Spezialitätenkaffee erstellt",
+      "caption": "Meisterkurs zum Kaffeerösten, in dem Trommelluftstrom, Bohnensonden, Fülltemperaturen und abfallende Anstiegskurven analysiert werden."
+    },
+    {
+      "type": "p",
+      "text": "Durch die Steuerung des Luftstroms und der Brennerhitze können Röstmeister aus alten Arabica-Partien eine zarte Säure und eine anhaltende Süße formen."
+    }
+  ],
+  "sourceHash": "f896b8fe691380d6891c7f7c23ad1c5e3901933a"
+}

@@ -1,7 +1,7 @@
 {
   "slug": "bathymetric-mapping-of-the-mariana-trench-and-hadal-geomorphology",
-  "title": "Bathymetrische Kartierung des Marianengrabens: Geomorphologie der Hadalzone und Subduktionsgräben",
-  "excerpt": "Erkundung des Abgrunds: Mehrstrahl-Echolote, Subduktionsmechanik tektonischer Platten und hydrostatische Drücke von mehr als 1.100 Atmosphären im Challenger Deep.",
+  "title": "Kartierung des Marianengrabens",
+  "excerpt": "Erkundung des Abgrunds: Mehrstrahl-Echolote, Subduktionsmechanik der tektonischen Platte und hydrostatische Drücke von über 1.100 Atmosphären im Challenger Deep.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
   "tags": [
@@ -36,8 +36,8 @@
       "type": "ul",
       "items": [
         "Multi-Beam Echo Sounding (MBES): Am Rumpf montierte Sonar-Arrays, die Fächer hochfrequenter akustischer Pings aussenden, um Meeresbodenstreifen zu kartieren und Temperatur-Salzgehalt-Schallgeschwindigkeitsprofile zu korrigieren.",
-        "Challenger-Tieftopographie: Der Grabenboden liegt bei 11°22′N und 142°35′E und besteht aus drei unterschiedlichen axialen Becken, wobei die zentrale Senke eine nachgewiesene Tiefe von 10.928 Metern erreicht.",
-        "Serpentinenschlammvulkane: Durch die Subduktion der ozeanischen Kruste werden hydratisierte Flüssigkeiten freigesetzt, die Peridotit im Mantel serpentinisieren und Mineralschlämme durch die darüber liegende Platte ausbrechen.",
+        "Challenger-Tiefentopographie: Der Grabenboden liegt bei 11°22′N, 142°35′E und besteht aus drei unterschiedlichen axialen Becken, wobei die zentrale Senke eine nachgewiesene Tiefe von 10.928 Metern erreicht.",
+        "Serpentinenschlammvulkane: Durch die Subduktion der ozeanischen Kruste werden hydratisierte Flüssigkeiten freigesetzt, die den Mantelperidotit serpentinisieren und Mineralschlämme durch die darüber liegende Platte ausbrechen.",
         "Tauchfähiger syntaktischer Schaum: Tieftauchfahrzeuge wie Limiting Factor nutzen syntaktischen Glas-Mikroballon-Schaum, um einen positiven Auftrieb unter einer Drucklast von 1.100 Atmosphären zu erreichen."
       ]
     },
@@ -69,5 +69,5 @@
       "text": "Präzise bathymetrische und geodätische Messungen der Grabensubduktionsraten liefern grundlegende Daten für die globale Plattentektonik. Durch die Verfolgung von Plattenkopplungskoeffizienten und Sedimentschmierung verbessern Geophysiker die prädiktive Gefahrenmodellierung für Mega-Erdbeben und ozeanüberquerende Tsunamis am pazifischen Rand."
     }
   ],
-  "sourceHash": "e50d3e6a28447314f81a1fa49de94b97bf95dd2a"
+  "sourceHash": "c50bfbc55a17f827d31370914a25b59199130811"
 }

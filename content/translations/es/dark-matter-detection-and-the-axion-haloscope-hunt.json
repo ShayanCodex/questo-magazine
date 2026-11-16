@@ -1,0 +1,74 @@
+{
+  "slug": "dark-matter-detection-and-the-axion-haloscope-hunt",
+  "title": "La búsqueda de materia oscura",
+  "excerpt": "Una investigación de la física de partículas en el universo invisible: el problema CP fuerte, la mecánica de conversión de Primakoff, los haloscopios de microondas criogénicos y la búsqueda de axiones QCD.",
+  "date": "2026-11-17",
+  "author": "Julian Mercer",
+  "tags": [
+    "particle-physics",
+    "dark-matter",
+    "axions",
+    "cosmology",
+    "quantum-physics",
+    "astronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Espacio astronómico profundo que muestra cúmulos galácticos distantes, halos de lentes gravitacionales y misteriosos vacíos cósmicos",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La sombra gravitacional del universo invisible"
+    },
+    {
+      "type": "p",
+      "text": "Observaciones astrofísicas a través de múltiples escalas independientes, desde las curvas planas de velocidad de rotación de las galaxias espirales hasta las lentes gravitacionales en el Cúmulo Bala y los picos acústicos del Fondo Cósmico de Microondas, demuestran que la materia bariónica ordinaria constituye menos del 15% de toda la materia en el universo. El 85% restante es materia oscura: no luminosa, no bariónica y prácticamente sin colisiones."
+    },
+    {
+      "type": "h2",
+      "text": "La hipótesis del axión y la física del haloscopio"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "El problema del CP fuerte: En cromodinámica cuántica (QCD), el momento dipolar eléctrico del neutrón es misteriosamente cero, lo que implica una simetría ininterrumpida que el modelo estándar no explica.",
+        "Mecanismo de Peccei-Quinn: Introducción de un campo escalar dinámico cuya ruptura espontánea de simetría produce el axión: una partícula hipotética ultraligera, neutra y de vida extremadamente larga.",
+        "El efecto Primakoff: en presencia de campos magnéticos intensos (8 a 14 Tesla), los axiones de materia oscura que pasan se convierten espontáneamente en fotones de microondas detectables.",
+        "Haloscopios de refrigerador de dilución: enfriamiento de cavidades de cobre resonantes por debajo de 20 mikelvin para reducir el ruido térmico de Johnson, utilizando amplificadores paramétricos SQUID y Josephson para detectar señales de zeptovatios individuales."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La materia oscura es el armazón cósmico sobre el que se condensaron las galaxias. Encontrar el axión resolverá tanto el enigma más profundo de la simetría nuclear como la composición del cosmos.",
+      "cite": "Laboratorio Questo de física de partículas y haloscopio criogénico"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Configuración de refrigerador de dilución criogénica de física de alta energía con escudos térmicos dorados y cableado superconductor",
+      "caption": "Detección de microondas con limitación cuántica: escaneo de bandas de frecuencia dentro de cavidades resonantes de alta Q enfriadas hasta casi el cero absoluto."
+    },
+    {
+      "type": "h2",
+      "text": "Estrechando el espacio de parámetros en ADMX"
+    },
+    {
+      "type": "p",
+      "text": "Las principales colaboraciones internacionales, como el Experimento de Materia Oscura Axion (ADMX), ajustan sistemáticamente varillas de cavidades físicas para escanear rangos de masa de microelectronvoltios. Si un axión coincide con la frecuencia de resonancia de la cavidad, emerge un diminuto pico de potencia electromagnética por encima del ruido cuántico, lo que proporciona un descubrimiento concluyente del halo de materia oscura de nuestra galaxia."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/e7yXqF32Yvw",
+      "title": "PBS Espacio Tiempo: ¿Son los axiones el secreto de la materia oscura?",
+      "caption": "El astrofísico Matt O'Dowd analiza el fuerte problema de CP, la simetría de Peccei-Quinn y cómo los haloscopios criogénicos buscan partículas de axiones."
+    },
+    {
+      "type": "h2",
+      "text": "Una nueva época en la física fundamental"
+    },
+    {
+      "type": "p",
+      "text": "La detección de materia oscura axiónica revolucionará instantáneamente tanto la cosmología teórica como la física de altas energías, confirmando que el universo está impregnado de un condensado cuántico continuo forjado en los primeros microsegundos después del Big Bang."
+    }
+  ],
+  "sourceHash": "821f3a3b0c241078f9224022093fb99175193a43"
+}

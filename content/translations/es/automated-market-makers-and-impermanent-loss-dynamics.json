@@ -1,0 +1,70 @@
+{
+  "slug": "automated-market-makers-and-impermanent-loss-dynamics",
+  "title": "Creadores de mercado automatizados y DEX",
+  "excerpt": "Un desglose algorítmico de fórmulas de productos constantes, matemáticas del fondo de liquidez, curvas de deslizamiento y mitigación del riesgo de pérdida impermanente.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "tags": [
+    "defi",
+    "amm",
+    "cryptocurrency",
+    "liquidity-pools",
+    "fintech",
+    "algorithms"
+  ],
+  "image": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Gráficos de negociación de datos financieros digitales y gráficos algorítmicos de análisis de fondos de liquidez",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Reemplazo de libros de órdenes de límite centralizados"
+    },
+    {
+      "type": "p",
+      "text": "Las bolsas de valores tradicionales requieren que los creadores de mercado centralizados mantengan colas de ofertas y demandas. Las finanzas descentralizadas (DeFi) introdujeron los creadores de mercado automatizados (AMM), grupos de liquidez de contratos inteligentes autónomos que determinan los precios de los activos algorítmicamente utilizando curvas matemáticas invariantes sin intermediarios."
+    },
+    {
+      "type": "h2",
+      "text": "Mecánica matemática del invariante del producto constante"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "La ecuación x * y = k: invariante estilo Uniswap donde x representa la reserva del activo A, y representa el activo B y k permanece constante durante un intercambio.",
+        "Descubrimiento algorítmico de precios: cuando los comerciantes compran el token A, x disminuye e y aumenta, lo que mueve el precio marginal a lo largo de la curva de enlace hiperbólica.",
+        "Pérdida impermanente (IL): el costo de oportunidad que sufren los proveedores de liquidez cuando los precios relativos de los tokens divergen en comparación con simplemente mantener los activos subyacentes.",
+        "Liquidez concentrada: algoritmos de estilo V3 que permiten a los proveedores asignar capital dentro de precios discretos, lo que aumenta drásticamente la eficiencia del capital."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Un creador de mercado automatizado convierte la liquidez en un bien programable, regido por leyes matemáticas deterministas y deterministas en lugar de balances institucionales.",
+      "cite": "Instituto Questo de Finanzas Descentralizadas y Mercados Algorítmicos"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Gráficos de velas financieras e interfaces de comercio algorítmico criptográfico",
+      "caption": "Análisis de distribución de liquidez: medición del deslizamiento de precios y rendimiento de tarifas en grupos de intercambio descentralizados."
+    },
+    {
+      "type": "h2",
+      "text": "Los árbitros como equilibradores invariantes"
+    },
+    {
+      "type": "p",
+      "text": "Cuando los precios del mercado externo cambian, los pools de AMM no actualizan los precios automáticamente. En cambio, los robots de arbitraje externos detectan discrepancias y negocian contra el grupo hasta que las proporciones de tokens internos coincidan con el consenso del mercado global, capturando ganancias y alineando el grupo."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/1PbZMudPP5E",
+      "title": "¿Qué es un creador de mercado automatizado? Explicación del algoritmo del fondo de liquidez",
+      "caption": "Pizarra Desglose criptográfico que explica las matemáticas constantes del producto, el aprovisionamiento de liquidez y la pérdida impermanente."
+    },
+    {
+      "type": "p",
+      "text": "Los niveles de tarifas dinámicos y los rangos de liquidez concentrados permiten a los AMM modernos alcanzar una profundidad comercial que rivaliza con los libros de pedidos de Wall Street."
+    }
+  ],
+  "sourceHash": "254211f056d5ab2344989935201e33c1d72e2cf9"
+}

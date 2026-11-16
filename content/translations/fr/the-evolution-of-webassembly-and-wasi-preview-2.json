@@ -1,6 +1,6 @@
 {
   "slug": "the-evolution-of-webassembly-and-wasi-preview-2",
-  "title": "WebAssembly au-delà du navigateur : WASI Preview 2, modèles de composants et micro-VM Edge",
+  "title": "WebAssembly au-delà du navigateur",
   "excerpt": "Évaluation de la compilation de bytecode sur les environnements d'exécution Edge sans serveur, les types d'interface de modèle de composant, les démarrages à froid inférieurs à la milliseconde et l'isolation des conteneurs polyglottes.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
@@ -12,7 +12,7 @@
     "microservices"
   ],
   "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "High-density edge computing server nodes executing WebAssembly bytecode containers",
+  "imageAlt": "Nœuds de serveur Edge Computing haute densité exécutant des conteneurs de bytecode WebAssembly",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "La transition des bacs à sable de navigateur vers des environnements d'exécution sans serveur"
+      "text": "Innovations de base dans WASI Preview 2"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Binary WebAssembly bytecode structure and linear memory safety sandbox execution model",
-      "caption": "Linear memory isolation: Wasm modules executing within strict address space bounds enforced by runtime guard pages."
+      "alt": "WebAssembly au-delà du navigateur : WASI Preview 2, modèles de composants et micro-VM Edge - Opérationnel Figure 4",
+      "caption": "Observation empirique : mécanismes opérationnels et télémétrie fondamentale prenant en charge WebAssembly au-delà du navigateur : WASI Preview 2, modèles de composants et micro-VM Edge."
     },
     {
       "type": "ul",
       "items": [
-        "The WebAssembly System Interface (WASI): Standardizes modular POSIX-like system calls for filesystem access, network sockets, clocks, and cryptographic random number generators across diverse operating systems.",
-        "Wasm Component Model: Replaces raw memory pointer exchanges with rich high-level Interface Definition Language (WIT) types, enabling language-agnostic function composition without serialization overhead.",
-        "Micro-Millisecond Cold Starts: Unlike Docker containers that require spinning up guest Linux kernels or complex namespace cgroups, Wasm instances instantiate in microseconds with negligible memory footprints.",
-        "Capability-Based Security: Wasm modules cannot invoke filesystem read or network bind operations unless explicit handles are granted by the host runtime, neutralizing entire classes of supply-chain attacks."
+        "L'interface système WebAssembly (WASI) : normalise les appels système modulaires de type POSIX pour l'accès au système de fichiers, les sockets réseau, les horloges et les générateurs de nombres aléatoires cryptographiques sur divers systèmes d'exploitation.",
+        "Modèle de composant Wasm : remplace les échanges de pointeurs de mémoire brute par des types riches de langage de définition d'interface (WIT) de haut niveau, permettant une composition de fonctions indépendante du langage sans surcharge de sérialisation.",
+        "Démarrages à froid en micro-millisecondes : contrairement aux conteneurs Docker qui nécessitent la rotation de noyaux Linux invités ou de groupes de contrôle d'espace de noms complexes, les instances Wasm s'instancient en microsecondes avec des empreintes mémoire négligeables.",
+        "Sécurité basée sur les capacités : les modules Wasm ne peuvent pas invoquer d'opérations de lecture du système de fichiers ou de liaison réseau à moins que des poignées explicites ne soient accordées par le runtime hôte, neutralisant des classes entières d'attaques de la chaîne d'approvisionnement."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Microservice orchestration platform scaling thousands of sub-millisecond edge Wasm instances",
-      "caption": "WASI Preview 2: standardized capability-based interfaces allowing polyglot component composition at microsecond cold-start speeds."
+      "alt": "WebAssembly au-delà du navigateur : WASI Preview 2, modèles de composants et micro-VM Edge - Opérationnel Figure 7",
+      "caption": "Observation empirique : mécanismes opérationnels et télémétrie fondamentale prenant en charge WebAssembly au-delà du navigateur : WASI Preview 2, modèles de composants et micro-VM Edge."
     },
     {
       "type": "h2",
-      "text": "La transition des bacs à sable de navigateur vers des environnements d'exécution sans serveur"
+      "text": "Architectures de calcul Edge et mise à l'échelle multi-locataires"
     },
     {
       "type": "p",
-      "text": "Conçu à l'origine comme un niveau d'exécution hautes performances pour le rendu 3D et la physique informatique basés sur un navigateur, WebAssembly (Wasm) est devenu la cible de compilation universelle la plus convaincante pour les architectures backend distribuées. En faisant abstraction de l'exécution dans une machine virtuelle indépendante du matériel avec des limites de mémoire linéaires et une sécurité basée sur les capacités, Wasm permet une exécution quasi native des charges de travail C++, Rust, Go et Python sur des nœuds périphériques distribués."
+      "text": "Les plates-formes de calcul de pointe modernes déploient les environnements d'exécution Wasm (tels que Wasmtime et WasmEdge) directement dans des espaces d'adressage de processus unifiés, hébergeant des milliers de charges de travail client isolées par cœur de processeur. L'isolation de la mémoire est renforcée via des pages de protection matérielle de table de pages, offrant une densité de locataires supérieure par rapport aux microVM traditionnelles."
     },
     {
       "type": "video",
-      "title": "WASI Preview 2 and the WebAssembly Component Model Explained",
-      "caption": "Architectural overview of WASI interfaces, component composition, and secure polyglot serverless deployment.",
-      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE"
+      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE",
+      "title": "WASI Preview 2 et le modèle de composant WebAssembly expliqués",
+      "caption": "Présentation de l'architecture des interfaces WASI, de la composition des composants et du déploiement sans serveur polyglotte sécurisé."
     },
     {
       "type": "h2",
-      "text": "La transition des bacs à sable de navigateur vers des environnements d'exécution sans serveur"
+      "text": "L'horizon des microservices polyglottes universels"
     },
     {
       "type": "p",
-      "text": "Conçu à l'origine comme un niveau d'exécution hautes performances pour le rendu 3D et la physique informatique basés sur un navigateur, WebAssembly (Wasm) est devenu la cible de compilation universelle la plus convaincante pour les architectures backend distribuées. En faisant abstraction de l'exécution dans une machine virtuelle indépendante du matériel avec des limites de mémoire linéaires et une sécurité basée sur les capacités, Wasm permet une exécution quasi native des charges de travail C++, Rust, Go et Python sur des nœuds périphériques distribués."
+      "text": "Alors que le modèle de composants Wasm atteint une maturité d'outillage généralisée, les systèmes distribués passent d'images de conteneurs Linux lourdes à des packages de bytecode allégés et immuables. L’avenir de l’infrastructure cloud est léger, isolé de manière sécurisée dès sa conception et distribué de manière transparente sur les topologies de périphérie mondiales."
     }
   ],
-  "sourceHash": "c7f2c7c0a5c730d414ebf9b404e3f7d83d7ea8ec"
+  "sourceHash": "07072136c72a8b72fd505df436f64bedd3517a28"
 }

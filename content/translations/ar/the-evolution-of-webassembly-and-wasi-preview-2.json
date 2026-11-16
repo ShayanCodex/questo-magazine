@@ -1,7 +1,7 @@
 {
   "slug": "the-evolution-of-webassembly-and-wasi-preview-2",
-  "title": "WebAssembly خارج المتصفح: WASI Preview 2، ونماذج المكونات وأجهزة Edge Micro-VM",
-  "excerpt": "تقييم تجميع كود البايت في أوقات تشغيل الحافة بدون خادم، وأنواع واجهة نموذج المكونات، وبدء التشغيل البارد بمقدار أقل من مللي ثانية، وعزل الحاويات متعددة اللغات.",
+  "title": "WebAssembly خارج المتصفح",
+  "excerpt": "تقييم تجميع الكود الثانوي في أوقات تشغيل الحافة بدون خادم، وأنواع واجهة نموذج المكونات، وبدء التشغيل البارد بأقل من مللي ثانية، وعزل الحاويات متعددة اللغات.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,68 +12,68 @@
     "microservices"
   ],
   "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "High-density edge computing server nodes executing WebAssembly bytecode containers",
+  "imageAlt": "عقد خادم حوسبة حافة عالية الكثافة تنفذ حاويات WebAssembly bytecode",
   "body": [
     {
       "type": "h2",
-      "text": "الانتقال من صناديق الحماية للمتصفح إلى أوقات تشغيل بدون خوادم"
+      "text": "الانتقال من صناديق حماية المتصفح إلى أوقات تشغيل بدون خادم"
     },
     {
       "type": "p",
-      "text": "تم تصميم WebAssembly (Wasm) في الأصل كطبقة تنفيذ عالية الأداء للعرض ثلاثي الأبعاد والفيزياء الحسابية المستندة إلى المتصفح، ليصبح هدف التجميع العالمي الأكثر إقناعًا للبنيات الخلفية الموزعة. من خلال تجريد التنفيذ في جهاز افتراضي مستقل عن الأجهزة مع حدود ذاكرة خطية وأمان قائم على القدرات، يتيح Wasm التنفيذ شبه الأصلي لأحمال عمل C++ وRust وGo وPython على عقد الحافة الموزعة."
+      "text": "تم تصميم WebAssembly (Wasm) في الأصل كطبقة تنفيذ عالية الأداء للعرض ثلاثي الأبعاد والفيزياء الحسابية المستندة إلى المتصفح، ليصبح هدف التجميع العالمي الأكثر إلحاحًا للبنيات الخلفية الموزعة. من خلال تجريد التنفيذ في جهاز افتراضي مستقل عن الأجهزة مع حدود ذاكرة خطية وأمان قائم على القدرات، يتيح Wasm التنفيذ شبه الأصلي لأحمال عمل C++ وRust وGo وPython على عقد الحافة الموزعة."
     },
     {
       "type": "h2",
-      "text": "الانتقال من صناديق الحماية للمتصفح إلى أوقات تشغيل بدون خوادم"
+      "text": "الابتكارات الأساسية في WASI Preview 2"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Binary WebAssembly bytecode structure and linear memory safety sandbox execution model",
-      "caption": "Linear memory isolation: Wasm modules executing within strict address space bounds enforced by runtime guard pages."
+      "alt": "WebAssembly خارج المتصفح: WASI Preview 2، نماذج المكونات وأجهزة Edge Micro-VMs - الشكل التشغيلي 4",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد الأساسي الذي يدعم WebAssembly خارج المتصفح: WASI Preview 2، نماذج المكونات وEdge Micro-VMs."
     },
     {
       "type": "ul",
       "items": [
-        "The WebAssembly System Interface (WASI): Standardizes modular POSIX-like system calls for filesystem access, network sockets, clocks, and cryptographic random number generators across diverse operating systems.",
-        "Wasm Component Model: Replaces raw memory pointer exchanges with rich high-level Interface Definition Language (WIT) types, enabling language-agnostic function composition without serialization overhead.",
-        "Micro-Millisecond Cold Starts: Unlike Docker containers that require spinning up guest Linux kernels or complex namespace cgroups, Wasm instances instantiate in microseconds with negligible memory footprints.",
-        "Capability-Based Security: Wasm modules cannot invoke filesystem read or network bind operations unless explicit handles are granted by the host runtime, neutralizing entire classes of supply-chain attacks."
+        "واجهة نظام WebAssembly (WASI): تعمل على توحيد مكالمات النظام المشابهة لـ POSIX للوصول إلى نظام الملفات، ومآخذ الشبكة، والساعات، ومولدات الأرقام العشوائية المشفرة عبر أنظمة تشغيل متنوعة.",
+        "نموذج مكون Wasm: يستبدل تبادلات مؤشر الذاكرة الأولية بأنواع غنية عالية المستوى من لغة تعريف الواجهة (WIT)، مما يتيح تكوين وظيفة غير محددة اللغة دون تحميل التسلسل.",
+        "عمليات التشغيل الباردة بالميلي ثانية: على عكس حاويات Docker التي تتطلب تدوير نواة Linux الضيف أو مجموعات مساحة الاسم المعقدة، يتم إنشاء مثيلات Wasm في ميكروثانية مع آثار ذاكرة لا تذكر.",
+        "الأمن القائم على القدرة: لا يمكن لوحدات Wasm استدعاء عمليات قراءة نظام الملفات أو ربط الشبكة ما لم يتم منح مقابض صريحة من قبل وقت تشغيل المضيف، مما يؤدي إلى تحييد فئات كاملة من هجمات سلسلة التوريد."
       ]
     },
     {
       "type": "quote",
       "text": "لو كان WASM وWASI موجودين في عام 2008، لما كنا بحاجة إلى إنشاء Docker. هذه هي الطريقة الأساسية التي يحدث بها WebAssembly التحويلي على الخادم.",
-      "cite": "Solomon Hykes، المؤسس المشارك لشركة Docker"
+      "cite": "سولومون هايكس، أحد مؤسسي Docker"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Microservice orchestration platform scaling thousands of sub-millisecond edge Wasm instances",
-      "caption": "WASI Preview 2: standardized capability-based interfaces allowing polyglot component composition at microsecond cold-start speeds."
+      "alt": "WebAssembly Beyond the Browser: WASI Preview 2، Component Models & Edge Micro-VMs - الشكل التشغيلي 7",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد الأساسي الذي يدعم WebAssembly Beyond the Browser: WASI Preview 2، نماذج المكونات وEdge Micro-VMs."
     },
     {
       "type": "h2",
-      "text": "الانتقال من صناديق الحماية للمتصفح إلى أوقات تشغيل بدون خوادم"
+      "text": "بنيات حوسبة الحافة والتوسع متعدد المستأجرين"
     },
     {
       "type": "p",
-      "text": "تم تصميم WebAssembly (Wasm) في الأصل كطبقة تنفيذ عالية الأداء للعرض ثلاثي الأبعاد والفيزياء الحسابية المستندة إلى المتصفح، ليصبح هدف التجميع العالمي الأكثر إقناعًا للبنيات الخلفية الموزعة. من خلال تجريد التنفيذ في جهاز افتراضي مستقل عن الأجهزة مع حدود ذاكرة خطية وأمان قائم على القدرات، يتيح Wasm التنفيذ شبه الأصلي لأحمال عمل C++ وRust وGo وPython على عقد الحافة الموزعة."
+      "text": "تنشر منصات حوسبة الحافة الحديثة أوقات تشغيل Wasm (مثل Wasmtime وWasmEdge) مباشرة داخل مساحات عناوين العمليات الموحدة، مما يستضيف الآلاف من أحمال عمل العملاء المعزولة لكل نواة وحدة المعالجة المركزية. يتم فرض عزل الذاكرة من خلال صفحات حماية أجهزة جدول الصفحات، مما يؤدي إلى كثافة مستأجرة فائقة مقارنة بأجهزة microVM التقليدية."
     },
     {
       "type": "video",
-      "title": "WASI Preview 2 and the WebAssembly Component Model Explained",
-      "caption": "Architectural overview of WASI interfaces, component composition, and secure polyglot serverless deployment.",
-      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE"
+      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE",
+      "title": "شرح معاينة WASI 2 ونموذج مكون WebAssembly",
+      "caption": "نظرة عامة معمارية على واجهات WASI، وتكوين المكونات، والنشر الآمن بدون خادم متعدد اللغات."
     },
     {
       "type": "h2",
-      "text": "الانتقال من صناديق الحماية للمتصفح إلى أوقات تشغيل بدون خوادم"
+      "text": "أفق Universal Polyglot Microservices"
     },
     {
       "type": "p",
-      "text": "تم تصميم WebAssembly (Wasm) في الأصل كطبقة تنفيذ عالية الأداء للعرض ثلاثي الأبعاد والفيزياء الحسابية المستندة إلى المتصفح، ليصبح هدف التجميع العالمي الأكثر إقناعًا للبنيات الخلفية الموزعة. من خلال تجريد التنفيذ في جهاز افتراضي مستقل عن الأجهزة مع حدود ذاكرة خطية وأمان قائم على القدرات، يتيح Wasm التنفيذ شبه الأصلي لأحمال عمل C++ وRust وGo وPython على عقد الحافة الموزعة."
+      "text": "نظرًا لأن نموذج مكون Wasm يحقق نضجًا واسع النطاق للأدوات، فإن الأنظمة الموزعة تنتقل من صور حاوية Linux ثقيلة الوزن إلى حزم بايت كود بسيطة وغير قابلة للتغيير. يتميز مستقبل البنية التحتية السحابية بخفة الوزن، ومعزولة بشكل آمن حسب التصميم، وموزعة بسلاسة عبر طبولوجيا الحافة العالمية."
     }
   ],
-  "sourceHash": "c7f2c7c0a5c730d414ebf9b404e3f7d83d7ea8ec"
+  "sourceHash": "07072136c72a8b72fd505df436f64bedd3517a28"
 }

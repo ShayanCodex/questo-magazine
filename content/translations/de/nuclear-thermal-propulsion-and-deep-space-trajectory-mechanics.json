@@ -1,7 +1,7 @@
 {
   "slug": "nuclear-thermal-propulsion-and-deep-space-trajectory-mechanics",
-  "title": "Kernthermischer Antrieb und Flugbahnmechanik im Weltraum",
-  "excerpt": "Eine orbitale astrophysikalische Analyse von Spaltreaktoren mit niedrig angereichertem Uran mit hoher Probenausbeute, kryogenen Wasserstoff-Turbopumpen und schnellen interplanetaren Transferfenstern.",
+  "title": "Kernthermischer Antrieb im Weltraum",
+  "excerpt": "Eine orbitale astrophysikalische Analyse von Spaltreaktoren für niedrig angereichertes Uran mit hoher Probenausbeute, kryogenen Wasserstoff-Turbopumpen und schnellen interplanetaren Transferfenstern.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -20,7 +20,7 @@
     },
     {
       "type": "p",
-      "text": "Die chemische Raketentechnik ist an die grundlegenden Bindungsenergien molekularer Treibstoffe gebunden und erreicht eine asymptotische spezifische Impulsobergrenze von etwa 450 Sekunden. Der nukleare thermische Antrieb (NTP) durchbricht diese Barriere, indem er einen kompakten Spaltreaktorkern verwendet, um flüssigen Wasserstofftreibstoff direkt auf über 2.700 Kelvin zu überhitzen. Da die Abgasgeschwindigkeit umgekehrt mit der Quadratwurzel der Molekülmasse skaliert, erzeugt reiner Wasserstoff spezifische Impulse von mehr als 900 Sekunden."
+      "text": "Die chemische Raketentechnik ist an die grundlegenden Bindungsenergien molekularer Treibstoffe gebunden und erreicht eine asymptotische spezifische Impulsobergrenze von etwa 450 Sekunden. Der nukleare thermische Antrieb (NTP) durchbricht diese Barriere, indem er einen kompakten Spaltreaktorkern verwendet, um flüssigen Wasserstofftreibstoff direkt auf über 2.700 Kelvin zu überhitzen. Da die Abgasgeschwindigkeit umgekehrt mit der Quadratwurzel der Molekülmasse wächst, erzeugt reiner Wasserstoff spezifische Impulse von mehr als 900 Sekunden."
     },
     {
       "type": "h2",
@@ -31,7 +31,7 @@
       "items": [
         "Hoher spezifischer Impuls: NTP-Systeme liefern die doppelte Treibstoffeffizienz moderner kryogener Hydrolox-Raketentriebwerke.",
         "Verkürzte Transitfenster: Die Verdoppelung der Abgasgeschwindigkeit verkürzt die Transitdauer Erde-Mars von neun Monaten auf weniger als hundert Tage.",
-        "HALEU-Brennstoffkerne: Niedrig angereichertes Uran mit hohem Gehalt (unter 20 % Anreicherung), beschichtet mit feuerfestem Zirkoniumkarbid, sorgt für strukturelle Stabilität bei extremen Wärmeflüssen.",
+        "HALEU-Brennstoffkerne: Niedrig angereichertes Uran mit hohem Gehalt (unter 20 % Anreicherung), beschichtet mit feuerfestem Zirkoniumkarbid, gewährleistet strukturelle Stabilität unter extremen Wärmeflüssen.",
         "Abbruchflexibilität: Die erheblich erhöhten Delta-V-Budgets ermöglichen eine Entwicklung der Oppositionsklasse mit sofortiger Rückkehrfähigkeit."
       ]
     },
@@ -62,12 +62,12 @@
     },
     {
       "type": "h2",
-      "text": "Interplanetare Orbit-Transferfenster und Strahlenschutz"
+      "text": "Interplanetare Orbit-Transferfenster und Strahlungsabschirmung"
     },
     {
       "type": "p",
-      "text": "Die Schattenabschirmung mit geschichtetem Wolfram, Lithiumhydrid und erschöpften Treibstofftanks schwächt Kern-Gammastrahlen und Neutronen auf Werte ab, die unter dem natürlichen kosmischen Strahlungshintergrund liegen, der während längerer interplanetarer Reisephasen absorbiert wird."
+      "text": "Die Schattenabschirmung mit geschichteten Wolfram-, Lithiumhydrid- und erschöpften Treibstofftanks schwächt Kern-Gammastrahlen und Neutronen auf Werte ab, die unter dem natürlichen kosmischen Strahlungshintergrund liegen, der während längerer interplanetarer Reisephasen absorbiert wird."
     }
   ],
-  "sourceHash": "a15479b6870ab465e6cfee720e68ee55f7f7d586"
+  "sourceHash": "1a8b296a9c506f2226f74295bb070c23348f4a22"
 }

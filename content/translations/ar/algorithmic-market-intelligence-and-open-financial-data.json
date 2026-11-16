@@ -1,6 +1,6 @@
 {
   "slug": "algorithmic-market-intelligence-and-open-financial-data",
-  "title": "ذكاء السوق الخوارزمي والبيانات المالية المفتوحة",
+  "title": "ذكاء السوق الخوارزمي",
   "excerpt": "كيف تعمل بيانات التجزئة الديمقراطية، وتصور المتجهات من جانب العميل، وموجزات التبادل اللامركزية على تفكيك نظام حظر الاشتراك غير المدفوع لبيانات السوق المؤسسية.",
   "date": "2026-11-13",
   "updated": "2026-11-14",
@@ -12,7 +12,7 @@
     "algorithms"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Candlestick financial chart displaying upward technical momentum against a dark interface",
+  "imageAlt": "مخطط مالي شمعدان يُظهر زخمًا تقنيًا تصاعديًا مقابل واجهة مظلمة",
   "body": [
     {
       "type": "p",
@@ -24,13 +24,13 @@
     },
     {
       "type": "p",
-      "text": "لعقود من الزمن، حافظت مؤسسات وول ستريت على ميزة غير متماثلة على المشاركين العالميين في مجال التجزئة من خلال محطات الأجهزة المملوكة ورسوم مشاركة بيانات السوق الباهظة. كان الوصول إلى اكتشاف الأسعار في الوقت الفعلي، وعمق تدفق طلبات الكتب، ونماذج الارتباط بين الأصول، خاضعًا لحراسة مشددة خلف اشتراكات شهرية مكونة من خمسة أرقام."
+      "text": "اليوم، تعمل ثورة تكنولوجية هادئة على تفكيك هذا الحاجز. تتيح بروتوكولات WebSocket عالية الإنتاجية وخطوط عرض ناقل WebAssembly وعمليات إرسال التبادل المؤسسي المفتوحة تقييم المخططات متعددة الأطر الزمنية مباشرة ضمن أوقات تشغيل المتصفح القياسية دون الحاجة إلى برامج خارجية باهظة الثمن."
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Algorithmic Market Intelligence and Open Financial Data - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Algorithmic Market Intelligence and Open Financial Data."
+      "alt": "ذكاء السوق الخوارزمي والبيانات المالية المفتوحة - الشكل الهيكلي 1",
+      "caption": "التحليل المرئي: المخططات المعمارية وتمثيلات المجال الفني لذكاء السوق الخوارزمي والبيانات المالية المفتوحة."
     },
     {
       "type": "code",
@@ -45,25 +45,25 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Algorithmic Market Intelligence and Open Financial Data - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Algorithmic Market Intelligence and Open Financial Data."
+      "alt": "ذكاء السوق الخوارزمي والبيانات المالية المفتوحة - الشكل التشغيلي 2",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم ذكاء السوق الخوارزمي والبيانات المالية المفتوحة."
     },
     {
       "type": "h3",
-      "text": "المقاييس الحاسمة للذكاء المفتوح الحديث"
+      "text": "المقاييس الحرجة للذكاء المفتوح الحديث"
     },
     {
       "type": "ul",
       "items": [
-        "Sub-millisecond mathematical oscillators (RSI, MACD, Bollinger Bands) computed locally on historical arrays.",
-        "Zero-compromise data integrity through verified public exchange regulatory disclosures and delayed tapes.",
-        "Cross-asset multi-market correlation matrices tracking sovereign bonds, commodities, and currency liquidity."
+        "المذبذبات الرياضية دون المللي ثانية (RSI، MACD، Bollinger Bands) محسوبة محليًا على المصفوفات التاريخية.",
+        "سلامة البيانات بدون أي اختراق من خلال الإفصاحات التنظيمية للتبادل العام التي تم التحقق منها والأشرطة المؤجلة.",
+        "مصفوفات الارتباط المتعددة الأسواق عبر الأصول التي تتبع السندات السيادية والسلع وسيولة العملات."
       ]
     },
     {
       "type": "p",
-      "text": "لعقود من الزمن، حافظت مؤسسات وول ستريت على ميزة غير متماثلة على المشاركين العالميين في مجال التجزئة من خلال محطات الأجهزة المملوكة ورسوم مشاركة بيانات السوق الباهظة. كان الوصول إلى اكتشاف الأسعار في الوقت الفعلي، وعمق تدفق طلبات الكتب، ونماذج الارتباط بين الأصول، خاضعًا لحراسة مشددة خلف اشتراكات شهرية مكونة من خمسة أرقام."
+      "text": "مع نضوج البنى المالية المفتوحة، تخلق منصات النشر الرقمية التي تدمج مؤشرات الاقتصاد الكلي الحية بشكل مباشر جنبًا إلى جنب مع التحقيقات الصحفية قيمة سياقية لا مثيل لها للمحللين العالميين الفضوليين."
     }
   ],
-  "sourceHash": "e354fb121c1df4ece3a0fa71cc8f4e48be1bc568"
+  "sourceHash": "9c2ed29adccccc482f6996eedb725b7e988e80eb"
 }

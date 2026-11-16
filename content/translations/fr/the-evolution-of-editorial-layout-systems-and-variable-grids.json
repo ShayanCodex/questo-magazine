@@ -1,7 +1,7 @@
 {
   "slug": "the-evolution-of-editorial-layout-systems-and-variable-grids",
-  "title": "L'évolution des systèmes de mise en page éditoriale : de Tschichold aux grilles variables",
-  "excerpt": "Un traité typographique retraçant le canon d'or de la division du livre, les systèmes asymétriques suisses du milieu du siècle et l'architecture éditoriale fluide des sous-grilles CSS modernes.",
+  "title": "L'évolution des systèmes de mise en page éditoriale",
+  "excerpt": "Un traité typographique retraçant le canon d'or de la division du livre, les systèmes asymétriques suisses du milieu du siècle et l'architecture éditoriale fluide de la sous-grille CSS moderne.",
   "date": "2026-11-16",
   "author": "Saskia Lindqvist",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Sur le Web numérique, le savoir-faire éditorial a longtemps souffert de cadres de cartes réactifs, rigides et décousus. Avec l'adoption universelle par les navigateurs de CSS Subgrid et de mise à l'échelle de type fluide CSS `clamp()`, les concepteurs Web peuvent désormais créer des compositions éditoriales continues qui préservent l'harmonie proportionnelle, des écrans de poche aux moniteurs de bureau ultra-larges."
     }
   ],
-  "sourceHash": "2ad5251f03966d71bae35e8ac963c1e1bc885d9e"
+  "sourceHash": "4bcf5f52292f406d4eb0a31a5c2dc75df49626a1"
 }

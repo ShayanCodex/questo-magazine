@@ -1,0 +1,74 @@
+{
+  "slug": "commercial-fusion-and-rebco-superconducting-magnets",
+  "title": "La física de la fusión comercial",
+  "excerpt": "Una investigación sobre cintas superconductoras de alta temperatura de óxido de cobre y bario de tierras raras (REBCO), campos magnéticos de 20 Tesla y el camino de la ingeniería hacia reactores tokamak de energía neta positiva.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "nuclear-fusion",
+    "physics",
+    "clean-energy",
+    "superconductors",
+    "plasma-physics",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Laboratorio de física de alta energía con plasma toroidal violeta resplandeciente dentro de un recipiente con cámara de vacío",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Escalamiento del confinamiento magnético y la revolución de alto campo"
+    },
+    {
+      "type": "p",
+      "text": "En la fusión por confinamiento magnético, el criterio de Lawson dicta que la presión del plasma escala con la cuarta potencia de la intensidad del campo magnético (B^4). Históricamente, los grandes tokamaks como el ITER requerían inmensas huellas del tamaño de un edificio porque los superconductores de niobio y estaño de baja temperatura saturaban alrededor de 12 Tesla. La llegada de la cinta superconductora de alta temperatura (HTS) de óxido de cobre y bario de tierras raras (REBCO) permite a los ingenieros generar campos sostenidos de 20 Tesla en bobinas compactas ensambladas en fábrica."
+    },
+    {
+      "type": "h2",
+      "text": "Física magnética y plasma central"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Epitaxia de cinta REBCO: superconductores cerámicos de película delgada depositados sobre cintas flexibles de acero hastelloy, que conducen más de 500 amperios por milímetro cuadrado a 20 Kelvin.",
+        "Escalado volumétrico de plasma Tokamak: cuadruplicar la intensidad del campo magnético permite una reducción de cuarenta veces el volumen del núcleo del reactor y al mismo tiempo lograr exactamente la misma potencia de salida de fusión.",
+        "Estabilidad magnetohidrodinámica (MHD): supresión de los modos localizados en el borde (ELM) y las inestabilidades de desgarro neoclásico a través de bobinas de perturbación magnética resonante en tiempo real.",
+        "Mantas reproductoras de tritio: Utiliza mantas eutécticas líquidas de litio y plomo para capturar neutrones de fusión de 14,1 MeV, generando combustible de tritio mientras extrae energía térmica para turbinas de vapor."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La fusión ha dejado de ser un ejercicio de ciencia del plasma y se ha transformado en un desafío de ingeniería de fabricación de superconductores, ciencia de materiales y blindaje de neutrones.",
+      "cite": "Questo Laboratorio de Física de Plasma y Energía Avanzada"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Líneas abstractas de campo magnético digital que rodean un núcleo de fusión central iluminado en un simulador de física oscura",
+      "caption": "Geometría de flujo magnético toroidal: bobinas magnéticas de precisión en forma de D que contienen plasma de deuterio-tritio de 150 millones de grados."
+    },
+    {
+      "type": "h2",
+      "text": "Protección de enfriamiento e integridad mecánica criogénica"
+    },
+    {
+      "type": "p",
+      "text": "A 20 Tesla, las fuerzas magnéticas de Lorentz ejercen presiones estructurales comparables a las fosas más profundas del océano. Las bobinas superconductoras deben encerrarse en carcasas criogénicas de acero inoxidable y monitorearse con sensores Bragg de fibra óptica para detectar fugas térmicas locales (apagamientos) en milisegundos antes de que pueda ocurrir la autodestrucción del imán."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/mXF__xidP1c",
+      "title": "Documental: Imanes superconductores y fusión comercial",
+      "caption": "Documental de ingeniería que cubre la fabricación, pruebas y despliegue de imanes HTS de 20 Tesla para reactores comerciales de fusión de energía neta."
+    },
+    {
+      "type": "h2",
+      "text": "El horizonte de la energía de carga base comercial"
+    },
+    {
+      "type": "p",
+      "text": "Con plantas piloto programadas para demostración comercial en la próxima década, la fusión ofrece una fuente de energía de carga base libre de carbono y completamente libre de desechos radiactivos de alto nivel de larga vida, fusiones o emisiones de carbono atmosférico."
+    }
+  ],
+  "sourceHash": "9fdaf91f9b4b6b9eb394275349b1b2ff7f7f5b63"
+}

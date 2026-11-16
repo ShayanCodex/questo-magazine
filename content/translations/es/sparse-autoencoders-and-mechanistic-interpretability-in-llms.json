@@ -1,7 +1,7 @@
 {
   "slug": "sparse-autoencoders-and-mechanistic-interpretability-in-llms",
-  "title": "Codificadores automáticos dispersos e interpretabilidad mecanicista en modelos básicos",
-  "excerpt": "Una investigación de la interpretabilidad mecanicista de la superposición de redes neuronales, diccionarios de características monosemánticas y dirección de activación en modelos de lenguaje de frontera.",
+  "title": "Codificadores automáticos dispersos en modelos básicos",
+  "excerpt": "Una investigación de interpretabilidad mecanicista sobre la superposición de redes neuronales, diccionarios de características monosemánticas y dirección de activación en modelos de lenguaje de frontera.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "La verdadera prueba de interpretabilidad radica en la verificación causal: fijar o atenuar un único vector de características identificado durante la inferencia altera sistemáticamente la trayectoria de razonamiento del modelo. Esto proporciona una base matemáticamente verificable para la seguridad, la auditoría y la supresión de alucinaciones de la IA."
     }
   ],
-  "sourceHash": "183ef7795abb6a6fc8d1fdfedd389e6b1e923c34"
+  "sourceHash": "03b0159a05371f46de05504b5aab9b328c5282cd"
 }

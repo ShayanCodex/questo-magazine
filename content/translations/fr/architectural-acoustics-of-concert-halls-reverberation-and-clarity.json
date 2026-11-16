@@ -1,6 +1,6 @@
 {
   "slug": "architectural-acoustics-of-concert-halls-reverberation-and-clarity",
-  "title": "L'acoustique architecturale des salles de concert : indice de réverbération et de clarté",
+  "title": "Acoustique architecturale des salles de concert",
   "excerpt": "Une monographie acoustique spatiale examinant les géométries des vignobles et des boîtes à chaussures, les fractions d'énergie sonore latérales et les réseaux de diffuseurs de résidus quadratiques dans les salles symphoniques.",
   "date": "2026-11-16",
   "author": "Mateo Silva",
@@ -32,7 +32,7 @@
         "Le paradigme de la boîte à chaussures : des salles rectangulaires étroites comme le Musikverein de Vienne produisent de fortes réflexions latérales précoces qui améliorent la corrélation croisée binaurale.",
         "La révolution des vignobles : Initiée par Hans Scharoun à Berlin, l'aménagement de vignobles en terrasses rapproche les auditeurs de la scène tout en utilisant des murs de balustrade pour les réflexions latérales.",
         "Diffuseurs de résidus quadratiques : les surfaces mathématiques de la théorie des nombres diffusent les ondes sonores uniformément sans absorber l'énergie vibratoire.",
-        "Mise à l'échelle du volume acoustique : une réverbération symphonique optimale nécessite environ dix mètres cubes de volume d'air par client."
+        "Mise à l'échelle du volume acoustique : une réverbération symphonique optimale nécessite environ dix mètres cubes de volume d'air par client."
       ]
     },
     {
@@ -69,5 +69,5 @@
       "text": "Pour éviter les échos spéculaires et les réflexions flottantes, les salles modernes intègrent des panneaux diffuseurs Schroeder fraisés par ordinateur et calculés à partir de séquences modulo de nombres premiers. Ces micro-textures diffusent les ondes sonores de manière isotrope sur le spectre audible, créant une transparence acoustique époustouflante."
     }
   ],
-  "sourceHash": "30629aabd8eeccea71454bd33a8a9a4619973707"
+  "sourceHash": "faff6b1705ea8e51155f0ed01bb096ef5224bded"
 }

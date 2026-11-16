@@ -1,0 +1,70 @@
+{
+  "slug": "tectonic-subduction-zones-and-ring-of-fire-volcanism",
+  "title": "La physique des zones de subduction",
+  "excerpt": "La géodynamique de la subduction des plaques lithosphériques : forces de traction des dalles, fusion par hydratation des coins du manteau, zones de Wadati-Benioff et risques sismiques de méga-poussée.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "geology",
+    "plate-tectonics",
+    "subduction",
+    "earthquakes",
+    "volcanism",
+    "geophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Crête volcanique spectaculaire avec vapeur géothermique s'échappant contre des lignes de faille géologiques abruptes.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le moteur du recyclage planétaire"
+    },
+    {
+      "type": "p",
+      "text": "Les zones de subduction sont les incinérateurs planétaires où la lithosphère océanique froide redescend dans le manteau convectif de la Terre. Responsable de la génération des tranchées océaniques les plus profondes de la planète, des séismes de méga-poussée de magnitude 9+ les plus puissants au monde et des arcs stratovolcaniques explosifs le long de la ceinture de feu du Pacifique, la subduction est le principal mécanisme moteur de la dérive des continents."
+    },
+    {
+      "type": "h2",
+      "text": "Forces géophysiques entraînant la subduction"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mécanique d'extraction de dalle : croûte océanique basaltique dense et refroidie se transformant en éclogite ultra-dense, tirant gravitationnellement la plaque arrière dans l'asthénosphère.",
+        "Fusion du flux mantellique : Les minéraux océaniques hydratés s'assèchent à 100 km de profondeur, abaissant le point de fusion de la roche du manteau péridotite pour former un magma andésitique explosif.",
+        "Zones sismiques Wadati-Benioff : zones planaires de tremblements de terre profonds retraçant le noyau intérieur fragile des dalles descendantes jusqu'à 670 kilomètres de profondeur.",
+        "Prismes d'accrétion de l'avant-arc : sédiments grattés de la plaque océanique descendante, s'accumulant en complexes de mélange géologique chaotique massif le long des côtes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La Terre est la seule planète connue dotée d’une tectonique des plaques active. Sans le moteur de subduction lubrifié à l’eau, les continents et les atmosphères stagneraient.",
+      "cite": "Observatoire de géophysique et de sismologie planétaire Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sismomètre de haute précision et station de géodésie GPS ancrés dans un substrat rocheux accidenté",
+      "caption": "Surveillance géodésique GPS continue : mesure de millimètres d'accumulation de déformation élastique côtière le long des zones verrouillées par la faille de méga-poussée de Cascadia."
+    },
+    {
+      "type": "h2",
+      "text": "Rupture de méga-poussée et tsunamigenèse"
+    },
+    {
+      "type": "p",
+      "text": "Lorsque l'interface verrouillée entre la plaque continentale dominante et la dalle en subduction se brise, des dizaines de mètres de déplacement vertical du fond marin se produisent en quelques secondes, déclenchant des ondes de choc de tsunami transocéaniques à travers les bassins océaniques."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VDx8-ZRoCCw",
+      "title": "Tectonique et géologie des zones de subduction : introduction complète",
+      "caption": "Cours de sciences géologiques analysant la dynamique des dalles lithosphériques, la fusion par déshydratation et la pétrologie de l'arc volcanique."
+    },
+    {
+      "type": "p",
+      "text": "L'étude des dépôts paléosismiques des tsunamis et des tremblements de terre à glissement lent fournit des cadres d'alerte précoce essentiels pour les populations côtières du monde entier."
+    }
+  ],
+  "sourceHash": "05b0be7123de7cd5240cd745c7d40207713bc166"
+}

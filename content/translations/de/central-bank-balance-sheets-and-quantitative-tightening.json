@@ -1,0 +1,70 @@
+{
+  "slug": "central-bank-balance-sheets-and-quantitative-tightening",
+  "title": "Zentralbankbilanzen",
+  "excerpt": "Eine institutionelle Aufschlüsselung der quantitativen Lockerung vs. Straffung: Reverse-Repo-Geschäfte über Nacht, Bankreserven, Abschöpfung von Staatsanleihen und globale Dollar-Liquiditätsabflüsse.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "tags": [
+    "finance",
+    "central-banks",
+    "macroeconomics",
+    "quantitative-tightening",
+    "liquidity",
+    "banking"
+  ],
+  "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Fassade des neoklassizistischen Zentralbank-Schatzhauses beleuchtet in der Abenddämmerung mit Finanzdatenprognosen",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der wahre Treiber globaler Vermögensbewertungen"
+    },
+    {
+      "type": "p",
+      "text": "Während Privatanleger besessen von den Leitzinssätzen der Zentralbanken sind, verfolgen institutionelle Makroinvestoren eine noch stärkere hydraulische Kraft: die Größe und Geschwindigkeit der Zentralbankbilanzen. Wenn die Federal Reserve, die EZB oder die Bank of Japan eine quantitative Lockerung (QE) oder eine quantitative Straffung (QT) durchführen, erweitern oder verringern sie direkt die Netto-Fiat-Liquidität der Welt."
+    },
+    {
+      "type": "h2",
+      "text": "Bilanzierungsmechanismen der Zentralbankbilanz"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Vermögenswerte: Inländische Staatsanleihen (Treasuries) und hypothekenbesicherte Wertpapiere (MBS), die von Primärhändlern gekauft wurden.",
+        "Verbindlichkeiten: Bargeldumlauf, bei der Zentralbank gehaltene Geschäftsbankreserven und das Treasury General Account (TGA).",
+        "Overnight Reverse Repo Facility (ON RRP): Ein Liquiditätsabflussschwamm, der überschüssiges Bargeld aus Geldmarktfonds aufnimmt, um die Leitzinsuntergrenzen aufrechtzuerhalten.",
+        "Passiver QT-Roll-Off: Ermöglicht das Auslaufen fälliger Staatsanleihen ohne Reinvestition des Kapitals, wodurch die entsprechenden Handelsreserven aufgebraucht werden."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Liquidität ist der Sauerstoff der Finanzmärkte. Zentralbanken passen nicht nur die Kreditkosten an; Sie dehnen sich aus und ziehen das gesamte Luftvolumen im Raum zusammen.",
+      "cite": "Questo Institute of Monetary Economics & Central Banking"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Echtzeit-Finanzdiagramme zur Verfolgung der Interbank-Kreditzinsen und Zentralbankliquiditätsindikatoren",
+      "caption": "Globale Liquiditätsindexmodellierung: Korrelation der Vermögenskontraktion der Zentralbank mit der Volatilität des Staatsschuldenmarktes."
+    },
+    {
+      "type": "h2",
+      "text": "Das Ample-Reserves-Regime und Repo-Spitzen"
+    },
+    {
+      "type": "p",
+      "text": "Wenn das QT zu lange anhält und die Bankreserven unter das „niedrigste komfortable Reserveniveau“ (LCLoR) fallen, stagnieren die Märkte für kurzfristige Tageskredite – wie es während des berüchtigten Repo-Spitzens im September 2019 der Fall war."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7HEfvgynbsU",
+      "title": "Finanzstabilität und Liquiditätsdynamik der Federal Reserve: CNBC",
+      "caption": "CNBC-Makroaufschlüsselung zur Untersuchung der Bilanzen der Zentralbanken, der Liquiditätspuffer der Banken und der Anfälligkeiten der Finanzmärkte."
+    },
+    {
+      "type": "p",
+      "text": "Die Beherrschung der Bilanzmechanismen der Zentralbanken offenbart die makroökonomische Strömung, die alle Anlageklassen hebt oder senkt."
+    }
+  ],
+  "sourceHash": "897bfac03fda2e722d47bac8c2a8e7dedc145161"
+}

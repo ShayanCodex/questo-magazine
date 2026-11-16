@@ -1,0 +1,70 @@
+{
+  "slug": "crispr-cas9-and-precision-base-editing-genetics",
+  "title": "Edición genética CRISPR de precisión",
+  "excerpt": "Más allá de las roturas del ADN de doble hebra: la bioquímica de los editores de bases de citidina y adenina, las transcriptasas inversas de edición principal y las terapias curativas in vivo.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "genetics",
+    "crispr",
+    "biotechnology",
+    "medicine",
+    "gene-editing",
+    "molecular-biology"
+  ],
+  "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Visualización digital brillante de ADN de doble hélice que representa la edición específica de bases de nucleótidos",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Superando las roturas de ADN de doble hebra"
+    },
+    {
+      "type": "p",
+      "text": "CRISPR-Cas9 de primera generación revolucionó la biología molecular al funcionar como tijeras moleculares: un ARN guía navega por la endonucleasa Cas9 para cortar ambas hebras de ADN genómico. Sin embargo, las roturas de doble cadena desencadenan uniones de extremos no homólogos (NHEJ) propensas a errores, lo que corre el riesgo de indeles incontrolados y reordenamientos cromosómicos. La edición de bases de precisión reescribe letras genéticas individuales sin cortar la columna vertebral del ADN."
+    },
+    {
+      "type": "h2",
+      "text": "Arquitecturas de editores de precisión avanzados"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cas9 Nickase catalíticamente deteriorada (dCas9/nCas9): navegación hasta loci genéticos objetivo sin escindir el esqueleto de fosfodiéster bicatenario.",
+        "Citidina Desaminasas (CBE): Catalizando la desaminación de citidina a uridina, dirigiendo las ADN polimerasas para convertir pares de bases C-G en pares T-A.",
+        "Editores de bases de adenina (ABE): desaminando adenina en inosina, convirtiendo mediante programación mutaciones patógenas A-T en pares G-C de tipo salvaje.",
+        "Prime Editing Search-and-Replace: Fusionar una nickasa Cas9 con una transcriptasa inversa diseñada guiada por un pegRNA para escribir nuevas secuencias directamente en el ADN."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Si CRISPR clásico son tijeras moleculares, la edición básica es un lápiz y una goma de borrar, corrigiendo errores tipográficos individuales en el genoma humano de tres mil millones de letras.",
+      "cite": "Centro Questo para la Terapéutica y la Edición Genómica de Precisión"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Estación de trabajo de pipeteo genético robótico que realiza secuenciación automatizada de oligonucleótidos",
+      "caption": "Secuenciación de próxima generación de alto rendimiento: cuantificación de la eficiencia de conversión de la base objetivo y cero ediciones genómicas fuera del objetivo."
+    },
+    {
+      "type": "h2",
+      "text": "Curas clínicas para la anemia falciforme y la hipercolesterolemia"
+    },
+    {
+      "type": "p",
+      "text": "Los editores de bases administrados a través de nanopartículas lipídicas (LNP) directamente a los hepatocitos han desactivado con éxito el gen PCSK9 en ensayos clínicos en humanos, ofreciendo reducciones permanentes y de dosis única en los factores de riesgo cardiovascular."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Vq8erNeq_NY",
+      "title": "¿Cómo edita CRISPR-Cas9 el ADN? Explicación de la edición de genes",
+      "caption": "Animación de ciencias educativas que detalla la guía de coincidencia de ARN, dominios catalíticos de Cas9 y modificaciones genéticas de precisión."
+    },
+    {
+      "type": "p",
+      "text": "La edición básica de precisión está transformando la medicina del tratamiento sintomático crónico a la corrección genética definitiva."
+    }
+  ],
+  "sourceHash": "4398a7ee4978d1cc4d15a2c53ab377ccafabceb5"
+}

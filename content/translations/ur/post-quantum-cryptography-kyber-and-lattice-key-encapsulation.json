@@ -1,7 +1,7 @@
 {
   "slug": "post-quantum-cryptography-kyber-and-lattice-key-encapsulation",
-  "title": "پیداوار میں پوسٹ کوانٹم کرپٹوگرافی: Kyber, Dilithium, and the Mathematics of Module-lattice Key Encapsulation",
-  "excerpt": "NIST کے معیاری کوانٹم ریزسٹنٹ الگورتھم کا ایک سافٹ ویئر انجینئرنگ بریک ڈاؤن: Module Learning with Errors (MLWE)، پولی نامیئل رِنگ، کنسنٹنٹ رینگ، ٹی ایل ایس-ٹیم-ریسٹنٹ، کنسیٹم-ریسٹنٹ ایلگورتھمز ہائبرڈ ہجرت",
+  "title": "Post-Quantum Cryptography in Production",
+  "excerpt": "A software engineering breakdown of NIST-standardized quantum-resistant algorithms: Module Learning with Errors (MLWE), polynomial ring arithmetic, constant-time side-channel resistance, and TLS hybrid migration.",
   "date": "2026-11-17",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -13,62 +13,62 @@
     "backend"
   ],
   "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
-  "imageAlt": "میٹرکس کوڈ اور روشن چمکتی ہوئی ڈیٹا اسٹریمز جو کرپٹوگرافک انکرپشن کیز اور الگورتھمک جالیوں کی نمائندگی کرتے ہیں",
+  "imageAlt": "Matrix code and illuminated glowing data streams representing cryptographic encryption keys and algorithmic lattices",
   "body": [
     {
       "type": "h2",
-      "text": "بیضوی وکر ڈسکریٹ لوگارتھمز کا قریب آنے والا انتقال"
+      "text": "The Impending Demise of Elliptic Curve Discrete Logarithms"
     },
     {
       "type": "p",
-      "text": "جدید انٹرنیٹ ٹرانسپورٹ سیکیورٹی RSA اور Elliptic Curve-Di-Hellman (Elliptic Curve) کی ایکسچینج (Elliptic Curve) پر بہت زیادہ انحصار کرتی ہے۔ کلاسیکی سپر کمپیوٹرز کے خلاف محفوظ رہتے ہوئے، ایک کرپٹ اینالیٹیکلی متعلقہ کوانٹم کمپیوٹر (CRQC) پر چلنے والا شور الگورتھم متعدد وقت میں مجرد لوگارتھمز اور انٹیجر فیکٹرائزیشن کو حل کر سکتا ہے۔ \"ابھی کٹائی، بعد میں ڈکرپٹ کریں\" مخالف مہموں کے خلاف ذخیرہ شدہ روکے ہوئے ٹریفک کو بچانے کے لیے، انٹرپرائز انفراسٹرکچر تیزی سے پوسٹ کوانٹم کرپٹوگرافی (PQC) کی طرف منتقل ہو رہا ہے۔"
+      "text": "Modern internet transport security relies overwhelmingly on RSA and Elliptic Curve Diffie-Hellman (ECDH) key exchanges. While secure against classical supercomputers, Shor algorithm running on a cryptanalytically relevant quantum computer (CRQC) can solve discrete logarithms and integer factorizations in polynomial time. To protect stored intercepted traffic against \"harvest now, decrypt later\" adversary campaigns, enterprise infrastructure is migrating rapidly to Post-Quantum Cryptography (PQC)."
     },
     {
       "type": "h2",
-      "text": "بنیادی ریاضی اور نفاذ کے ستون"
+      "text": "Core Mathematical and Implementation Pillars"
     },
     {
       "type": "ul",
       "items": [
-        "غلطیوں کے ساتھ ماڈیول لرننگ (ML-KEM / Kyber): سیکورٹی اعلی جہتی جیومیٹرک انٹیجر جالیوں میں مختصر ویکٹر تلاش کرنے کی سختی پر منحصر ہے، یہ مسئلہ معلوم کوانٹم اسپیڈ اپس کے خلاف مزاحم ہے۔",
-        "Z_q پر کثیر الثانی رنگ ریاضی: شماریات نمبر تھیوریٹک ٹرانسفارمز (NTT) کو ڈگری-256 کثیر ناموں پر ماڈیولس q = 3329 کے ساتھ لیوریج کرتے ہیں، جس سے SIMD اور AVX-512 ہارڈویئر ایکسلریشن کو فعال کیا جاتا ہے۔",
-        "مستقل وقتی مائیکرو کوڈ ایگزیکیوشن: کثیر الثانی ریجیکشن سیمپلنگ کے دوران خفیہ کلیدی رساو کو روکنے کے لیے مشروط برانچنگ اور کیش ٹائمنگ سائیڈ چینلز کو ختم کرنا۔",
-        "ہائبرڈ کلاسیکی-پوسٹ-کوانٹم ہینڈ شیکس: TLS 1.3 ClientHello ریکارڈز کے اندر X25519 اور ML-KEM-768 دونوں کے ذریعے سیشن کیز کو انکیپسول کرنا اس بات کو یقینی بناتا ہے کہ نئی جعلی ریاضی میں صفر دن کی خامی میراثی حفاظتی ضمانتوں سے سمجھوتہ نہیں کر سکتی۔"
+        "Module Learning with Errors (ML-KEM / Kyber): Security rests on the hardness of finding short vectors in high-dimensional geometric integer lattices, a problem resistant to known quantum speedups.",
+        "Polynomial Ring Arithmetic over Z_q: Computations leverage Number Theoretic Transforms (NTT) over degree-256 polynomials with modulus q = 3329, enabling SIMD and AVX-512 hardware acceleration.",
+        "Constant-Time Microcode Execution: Eliminating conditional branching and cache-timing side channels to prevent secret-key leakage during polynomial rejection sampling.",
+        "Hybrid Classical-Post-Quantum Handshakes: Encapsulating session keys via both X25519 and ML-KEM-768 inside TLS 1.3 ClientHello records ensures that a zero-day flaw in new lattice mathematics cannot compromise legacy security guarantees."
       ]
     },
     {
       "type": "quote",
-      "text": "کوانٹم سیکیورٹی کو راتوں رات دوبارہ نہیں بنایا جا سکتا۔ کرپٹوگرافک چستی کا تقاضا ہے کہ ہم آج اپنے سیریلائزیشن اسٹیک میں ہر غیر متناسب قدیم کو تبدیل کریں۔",
+      "text": "Quantum security cannot be retrofitted overnight; cryptographic agility demands that we replace every asymmetric primitive in our serialization stacks today.",
       "cite": "Questo Applied Cryptography & Distributed Systems Group"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-      "alt": "اعلی کثافت انٹرپرائز سرور ریک ایک محفوظ مالیاتی ڈیٹا سینٹر کی سہولت میں سائین ایل ای ڈی کے ساتھ روشن",
-      "caption": "انٹرپرائز TLS 1.3 ایج ختم: ہائبرڈ لیٹیس کلیدی ایکسچینجز کو لاگو کرنا اعلی درجے کی پروگریس میں۔"
+      "alt": "High-density enterprise server rack illuminated with cyan LEDs in a secure financial data center facility",
+      "caption": "Enterprise TLS 1.3 edge termination: Implementing hybrid lattice key exchanges across high-throughput ingress proxies."
     },
     {
       "type": "h2",
-      "text": "پیکٹ اوور ہیڈ اور MTU فریگمنٹیشن چیلنجز"
+      "text": "Packet Overhead and MTU Fragmentation Challenges"
     },
     {
       "type": "p",
-      "text": "جب کہ کلاسیکل ECDH پبلک کیز ایک کمپیکٹ 32 بائٹس کی پیمائش کرتی ہیں، Kyber-768 پبلک کیز کو 1,184 بائٹس کی ضرورت ہوتی ہے، اور سائفر ٹیکسٹس 1,088 بائٹس پر قابض ہوتے ہیں۔ معیاری 1,500-بائٹ میکسمم ٹرانسمیشن یونٹس (MTUs) کے ساتھ TCP ماحول میں، مشترکہ TLS سرٹیفکیٹ چین اور ہائبرڈ کلید کا تبادلہ اگر احتیاط سے کمپریس یا جدید QUIC اور زیرو راؤنڈ ٹرپ (0-RTT) ٹرانسپورٹ کا استعمال کرتے ہوئے بات چیت نہیں کی گئی تو IP فریگمنٹیشن کا سبب بنے گی۔"
+      "text": "While classical ECDH public keys measure a compact 32 bytes, Kyber-768 public keys require 1,184 bytes, and ciphertexts occupy 1,088 bytes. In TCP environments with standard 1,500-byte Maximum Transmission Units (MTUs), the combined TLS certificate chain and hybrid key exchange will cause IP fragmentation if not carefully compressed or negotiated using modern QUIC and zero-round-trip (0-RTT) transports."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/ZRpcYSghGr8",
-      "title": "IBM ٹکنالوجی: لیٹیس کرپٹوگرافی پوسٹ کوانٹم ڈیٹا کو کیسے محفوظ کرتی ہے",
-      "caption": "تکنیکی خرابی کا تجزیہ کرنے والا ماڈیول لرننگ ود ایررز (ML-KEM/Kyber) اور کوانٹم ڈکرپشن سے حفاظت کرنے والی ریاضیاتی جالیوں کا۔"
+      "title": "IBM Technology: How Lattice Cryptography Secures Post-Quantum Data",
+      "caption": "Technical breakdown analyzing Module Learning with Errors (ML-KEM/Kyber) and the mathematical lattices protecting against quantum decryption."
     },
     {
       "type": "h2",
-      "text": "خودمختار پیداوار کی سختی کا راستہ"
+      "text": "The Path to Sovereign Production Hardening"
     },
     {
       "type": "p",
-      "text": "عالمی شناخت فراہم کنندگان، ویب براؤزرز، اور بینکنگ لیجرز کو منتقل کرنے کے لیے FIPS 203 (ML-KEM) اور FIPS 204 (ML-DSA) کے ساتھ سخت تعمیل کی ضرورت ہے۔ پوسٹ کوانٹم لائبریریوں کو تعینات کرنے والی تنظیموں کو بفر اووررن استحصال کے خلاف میموری کی حفاظت کی ضمانت دینے کے لیے Coq جیسے خودکار تصدیقی انجنوں کا استعمال کرتے ہوئے رسمی ریاضیاتی ثبوتوں کی تصدیق کرنی چاہیے۔"
+      "text": "Migrating global identity providers, web browsers, and banking ledgers requires rigorous compliance with FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA). Organizations deploying post-quantum libraries must verify formal mathematical proofs using automated verification engines like Coq to guarantee memory safety against buffer overrun exploits."
     }
   ],
-  "sourceHash": "87a29ce40660b7365348efcaa041e6dcee98060a"
+  "sourceHash": "0e3fc3b399443c7063a7727cbfa32b31fe5593a0"
 }

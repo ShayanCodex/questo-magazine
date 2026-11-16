@@ -1,7 +1,7 @@
 {
   "slug": "anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics",
-  "title": "وینچر کیپیٹل لیکویڈیٹی اینڈ سیکنڈری مارکیٹس کی اناٹومی",
-  "excerpt": "تاخیر سے ہونے والی عوامی پیشکشوں، کنٹیویشن فنڈز، ایل پی لیکویڈیٹی پریشر، اور پرائیویٹ سیکنڈری ایکسچینجز کے ظہور کی مالی تحقیقات۔",
+  "title": "وینچر کیپٹل اینڈ سیکنڈری مارکیٹس",
+  "excerpt": "تاخیر سے ہونے والی عوامی پیشکشوں، کنٹیویشن فنڈز، ایل پی لیکویڈیٹی پریشر، اور پرائیویٹ سیکنڈری ایکسچینج کے ظہور کی مالی تحقیقات۔",
   "date": "2026-11-15",
   "author": "Julian Sterling",
   "tags": [
@@ -12,7 +12,7 @@
     "finance"
   ],
   "image": "/images/articles/venture-capital-finance.jpg",
-  "imageAlt": "Modern financial district architectural atrium symbolizing private capital markets and investment banking",
+  "imageAlt": "جدید مالیاتی ضلعی آرکیٹیکچرل ایٹریئم جو نجی کیپٹل مارکیٹوں اور سرمایہ کاری بینکنگ کی علامت ہے",
   "body": [
     {
       "type": "h2",
@@ -24,56 +24,56 @@
     },
     {
       "type": "h2",
-      "text": "ساختی لیکویڈیٹی خسارہ"
+      "text": "کلیدی نکات"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "وینچر کیپٹل لیکویڈیٹی اور سیکنڈری مارکیٹس کی اناٹومی - ساختی شکل 1",
+      "caption": "بصری تجزیہ: وینچر کیپیٹل لیکویڈیٹی اور سیکنڈری مارکیٹس کی اناٹومی کے لیے آرکیٹیکچرل اسکیمیٹکس اور تکنیکی ڈومین کی نمائندگی۔"
     },
     {
       "type": "ul",
       "items": [
-        "DPI vs. TVPI Divergence: Institutional limited partners (LPs) increasingly demand Distributed to Paid-In capital (DPI) rather than theoretical mark-ups (TVPI).",
-        "Continuation Vehicles: General partners (GPs) are creating structured secondary continuation funds to roll prized assets while offering liquidity windows.",
-        "Discount Pressures: Private secondary market transactions frequently clear at 20% to 40% discounts to previous sovereign venture funding valuations.",
-        "Institutional Secondary Platforms: The rise of algorithmic matching engines and standardized transfer documentation has turned private shares into a distinct asset class."
+        "DPI بمقابلہ TVPI ڈائیورجنس: ادارہ جاتی محدود شراکت داروں (LPs) کی بڑھتی ہوئی مانگ تھیوریٹیکل مارک اپس (TVPI) کے بجائے ادا شدہ سرمایہ (DPI) میں تقسیم کی جاتی ہے۔",
+        "کنٹینیویشن وہیکلز: جنرل پارٹنرز (GPs) لیکویڈیٹی ونڈوز پیش کرتے ہوئے قیمتی اثاثوں کو رول کرنے کے لیے ثانوی تسلسل کے فنڈز تشکیل دے رہے ہیں۔",
+        "ڈسکاؤنٹ پریشر: پرائیویٹ سیکنڈری مارکیٹ ٹرانزیکشنز اکثر 20% تا 40% ڈسکاؤنٹ پر سابقہ ​​خودمختار وینچر فنڈنگ ​​ویلیوشنز پر صاف ہوتے ہیں۔",
+        "ادارہ جاتی ثانوی پلیٹ فارمز: الگورتھمک مماثل انجنوں اور معیاری منتقلی کی دستاویزات کے عروج نے نجی حصص کو ایک الگ اثاثہ کلاس میں تبدیل کر دیا ہے۔"
       ]
     },
     {
       "type": "quote",
       "text": "واپسی کی غیر حقیقی داخلی شرحیں ادارہ جاتی پنشن کی ادائیگیوں کو فنڈ نہیں دے سکتیں۔ ایک بالغ وینچر ماحولیاتی نظام میں، DPI واحد میٹرک ہے جو سرمایہ مختص کرنے والے کے اعتماد کو محفوظ رکھتا ہے۔",
-      "cite": "ادارہ جاتی پرائیویٹ مارکیٹس سہ ماہی جائزہ"
+      "cite": "ادارہ جاتی نجی مارکیٹس کا سہ ماہی جائزہ"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "وینچر کیپٹل لیکویڈیٹی اور سیکنڈری مارکیٹس کا اناٹومی - آپریشنل فگر 2",
+      "caption": "تجرباتی مشاہدہ: وینچر کیپیٹل لیکویڈیٹی اور سیکنڈری مارکیٹس کی اناٹومی کو سپورٹ کرنے والے آپریشنل میکینکس اور فاؤنڈیشنل ٹیلی میٹری۔"
     },
     {
       "type": "h2",
-      "text": "ساختی لیکویڈیٹی خسارہ"
+      "text": "GP-Led Secondaries and Fund Architecture"
     },
     {
       "type": "p",
-      "text": "ایک دہائی سے زیادہ عرصے سے، وینچر کیپیٹل ایک قابل پیشن گوئی فلائی وہیل پر چل رہا ہے: فنڈ اکٹھا کریں، اعلی ترقی والے سافٹ ویئر انٹرپرائزز میں سرمائے کی تعیناتی کریں، اور عوامی پیش کشوں کے ذریعے ابتدائی پیش کشیں 7 سے 10 سالہ فنڈ لائف سائیکل۔ آج، اس روایتی لیکویڈیٹی پائپ لائن نے نظاماتی گرڈ لاک کا تجربہ کیا ہے کیونکہ نجی کمپنیاں 14 یا اس سے زیادہ سالوں تک غیر فہرست میں رہتی ہیں۔"
+      "text": "آگ فروخت کرنے والی ہائی کنویکشن پورٹ فولیو کمپنیوں کو تیز IPO ماحول میں جانے سے بچنے کے لیے، سرمایہ کاری کے منتظمین GP کی قیادت والی واحد اثاثہ سیکنڈری گاڑیوں کا رخ کر رہے ہیں۔ یہ ٹرانزیکشنز بیرونی ثانوی سرمایہ کاروں کو نئے گروتھ کیپٹل لگانے کی اجازت دیتی ہیں، جبکہ موجودہ محدود شراکت دار اپنی ملکیت کی دلچسپی کو کیش آؤٹ کرنے یا رول کرنے کا انتخاب کر سکتے ہیں۔"
     },
     {
       "type": "video",
-      "title": "Private Equity and Venture Capital Secondary Markets Explained",
-      "caption": "Financial analysis breaking down how continuation funds, LP-led portfolio sales, and secondary transaction pricing operate in institutional finance.",
-      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI"
+      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI",
+      "title": "پرائیویٹ ایکویٹی اور وینچر کیپٹل سیکنڈری مارکیٹس کی وضاحت کی گئی",
+      "caption": "مالیاتی تجزیہ یہ بتاتا ہے کہ ادارہ جاتی مالیات میں تسلسل کے فنڈز، ایل پی کی زیر قیادت پورٹ فولیو سیلز، اور ثانوی لین دین کی قیمتوں کا تعین کیسے ہوتا ہے۔"
     },
     {
       "type": "h2",
-      "text": "ساختی لیکویڈیٹی خسارہ"
+      "text": "وینچر کیپیٹل میچوریشن کا مستقبل"
     },
     {
       "type": "p",
-      "text": "ایک دہائی سے زیادہ عرصے سے، وینچر کیپیٹل ایک قابل پیشن گوئی فلائی وہیل پر چل رہا ہے: فنڈ اکٹھا کریں، اعلی ترقی والے سافٹ ویئر انٹرپرائزز میں سرمائے کی تعیناتی کریں، اور عوامی پیش کشوں کے ذریعے ابتدائی پیش کشیں 7 سے 10 سالہ فنڈ لائف سائیکل۔ آج، اس روایتی لیکویڈیٹی پائپ لائن نے نظاماتی گرڈ لاک کا تجربہ کیا ہے کیونکہ نجی کمپنیاں 14 یا اس سے زیادہ سالوں تک غیر فہرست میں رہتی ہیں۔"
+      "text": "چونکہ ثانوی تبادلے کیپٹلائزیشن ٹیبل کی مفاہمتوں اور تعمیل کی رکاوٹوں کو خودکار بناتے ہیں، نجی ایکویٹی اور وینچر کیپٹل ایک ایپیسوڈک لیکویڈیٹی ایونٹ کے بجائے ایک مسلسل سیکنڈری مارکیٹ سے مشابہ ہوں گے، مستقل طور پر سلیکن ویلی کیپٹلائزیشن ڈائنامکس کی تنظیم نو کرتے ہیں۔"
     }
   ],
-  "sourceHash": "04ac31d7788c879d1bf2c553b8f1534c6753ec22"
+  "sourceHash": "e055dac954cef980b5122079851e24b65b910ad5"
 }

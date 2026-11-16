@@ -1,0 +1,70 @@
+{
+  "slug": "heart-rate-variability-and-autonomic-nervous-system",
+  "title": "Variabilité de la fréquence cardiaque et ANS",
+  "excerpt": "La neurocardiologie des arythmies RMSSD, SDNN et sinusales respiratoires : mesure du tonus vagal parasympathique pour optimiser la récupération sportive et la résilience du système nerveux.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Sterling",
+  "tags": [
+    "health",
+    "hrv",
+    "autonomic-nervous-system",
+    "recovery",
+    "cardiology",
+    "biohacking"
+  ],
+  "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Cardiologie médicale Affichage de la forme d'onde de l'électrocardiogramme ECG montrant les intervalles cardiaques battement par battement",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le mythe du cœur métronome"
+    },
+    {
+      "type": "p",
+      "text": "Un cœur humain en bonne santé ne bat pas comme un métronome mécanique. Si votre pouls est de 60 battements par minute, l'intervalle de temps entre les pics R consécutifs fluctue de manière dynamique : 890 millisecondes sur un battement, 1 020 sur le suivant. Cette variabilité battement par battement, appelée variabilité de la fréquence cardiaque (VRC), constitue la première fenêtre non invasive sur la santé de votre système nerveux autonome (SNA)."
+    },
+    {
+      "type": "h2",
+      "text": "Paramètres physiologiques du VRC"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Nerf vague et contrôle parasympathique : Le nerf vague libère de l'acétylcholine au niveau du nœud sino-auriculaire, ralentissant la fréquence cardiaque et induisant une variation battement par battement.",
+        "RMSSD (Root Mean Square of Successive Differences) : la mesure de référence quantifiant l'activation parasympathique à court terme et la préparation sportive.",
+        "Arythmie sinusale respiratoire (RSA) : l'inhalation supprime le tonus vagal et accélère la fréquence cardiaque ; l'expiration active les freins vagaux et ralentit la fréquence cardiaque.",
+        "Dominance sympathique et surentraînement : le VRC chroniquement supprimé signale une tension systémique physique excessive, une inflammation systémique ou un manque de sommeil."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Une variabilité élevée de la fréquence cardiaque signifie un système physiologique doté d’une grande adaptabilité, capable de passer à l’action ou de rétrograder vers une récupération profonde à volonté.",
+      "cite": "Questo Autonomic Neurocardiology & Performance Institute"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Athlète vérifiant les données biométriques de récupération sur un capteur de montre intelligente moderne",
+      "caption": "Photopléthysmographie continue (PPG) : suivi des tendances nocturnes du VRC pour autoréguler les charges d'entraînement athlétiques."
+    },
+    {
+      "type": "h2",
+      "text": "Protocoles pour l'amélioration du tonus vagal"
+    },
+    {
+      "type": "p",
+      "text": "Le VRC peut être entraîné et élevé au fil du temps. La respiration contrôlée à fréquence de résonance de 5,5 à 6 respirations par minute synchronise l'arythmie respiratoire sinusale avec les barorécepteurs artériels, produisant des pics cohérents immédiats du tonus vagal et abaissant la tension artérielle."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/-V-SS5HAoEE",
+      "title": "La science du VRC et de la récupération avec le Dr Andrew Huberman",
+      "caption": "Le Dr Andrew Huberman, neuroscientifique, explique l'équilibre autonome, l'arythmie sinusale respiratoire et l'utilisation du VRC pour la récupération physique."
+    },
+    {
+      "type": "p",
+      "text": "Les entraînements autorégulés basés sur les écarts de base du VRC du matin préviennent le surentraînement et les blessures du système nerveux central."
+    }
+  ],
+  "sourceHash": "e602eba6442caef560aaec3c2866392ee2be9deb"
+}

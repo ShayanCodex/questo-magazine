@@ -1,7 +1,7 @@
 {
   "slug": "formal-verification-of-distributed-consensus-tla-and-isabelle",
-  "title": "Formale Verifizierung des verteilten Konsenses: TLA+, Isabelle/HOL und mechanisierte Invarianten",
-  "excerpt": "Brücke zwischen mathematischer Spezifikation und Produktionssoftware: Wie zeitliche Logik von Aktionen, Verfeinerungsabbildungen und interaktive Theorembeweiser subtile byzantinische Fehler beseitigen.",
+  "title": "Formale Verifizierung verteilter Systeme",
+  "excerpt": "Brücke zwischen mathematischer Spezifikation und Produktionssoftware: Wie zeitliche Handlungslogik, Verfeinerungsabbildungen und interaktive Theorembeweiser subtile byzantinische Fehler beseitigen.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Die Grenze der Systemtechnik liegt in der verifizierten Kompilierung – der Extraktion leistungsstarker C-, Rust- oder Go-Binärdateien direkt aus Beweisassistenten ohne Übersetzungsaufwand. Durch die Zertifizierung verteilter Datenbanken auf der Ebene des Maschinencodes erreicht die moderne Cloud-Infrastruktur mathematische Immunität gegen ganze Taxonomien verteilter Konsensverschlechterung."
     }
   ],
-  "sourceHash": "460521e002b33c5d156b2b1e97d9cf87d19226cf"
+  "sourceHash": "d28681d94f4cdc946f54b724263201fca5478027"
 }

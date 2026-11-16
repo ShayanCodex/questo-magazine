@@ -1,7 +1,7 @@
 {
   "slug": "deepseek-v3-moe-fp8-distributed-training-efficiency",
-  "title": "Latente Aufmerksamkeit mit mehreren Köpfen und DualPipe: Die Architektur hinter DeepSeek-V3 und 10-fache Effizienz bei offenen Gewichten",
-  "excerpt": "Dekonstruktion der algorithmischen Durchbrüche von DeepSeek-V3: latente Aufmerksamkeit mit mehreren Köpfen (MLA), geroutete Experten von DeepSeekMoE 256, überlappende DualPipe-Berechnung und die mathematische Ökonomie des FP8-Trainings mit gemischter Präzision.",
+  "title": "Die Architektur von DeepSeek-V3",
+  "excerpt": "Dekonstruktion der algorithmischen Durchbrüche von DeepSeek-V3: Multi-Head Latent Attention (MLA), DeepSeekMoE 256 Routing-Experten, DualPipe-Überlappungsberechnung und die mathematische Ökonomie des FP8-Trainings mit gemischter Präzision.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -38,7 +38,7 @@
     },
     {
       "type": "quote",
-      "text": "Effizienz beim maschinellen Lernen ist keine Optimierungsfußnote; Es ist der grundlegende Zwang, der darüber entscheidet, ob künstliche Intelligenz eine monopolistische Ressource bleibt oder zu einer offenen wissenschaftlichen Ware wird.",
+      "text": "Effizienz beim maschinellen Lernen ist keine Fußnote zur Optimierung; Es ist der grundlegende Zwang, der darüber entscheidet, ob künstliche Intelligenz eine monopolistische Ressource bleibt oder zu einer offenen wissenschaftlichen Ware wird.",
       "cite": "Frontier AI Research & Systems Group"
     },
     {
@@ -70,5 +70,5 @@
       "text": "Verteilte Mixture-of-Experts-Cluster leiden typischerweise unter schwerer All-to-All-Kommunikationslatenz, wenn Token über InfiniBand-Netzwerke weitergeleitet werden. Der DualPipe-Planungsalgorithmus von DeepSeek teilt bidirektionale Pipeline-Stufen in gepaarte Mikro-Batches auf und stellt sicher, dass GPU-Tensorkerne während des genauen Fensters Matrixmultiplikationen berechnen und Netzwerkschnittstellenkarten Experten-Token-Nutzlasten asynchron übertragen."
     }
   ],
-  "sourceHash": "cbaa68302f386c96f6108b1c87adbb506da37e23"
+  "sourceHash": "54e9176200b049abc2456cf3cea5484dfd4b4983"
 }

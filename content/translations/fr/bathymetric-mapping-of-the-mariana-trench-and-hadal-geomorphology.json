@@ -1,7 +1,7 @@
 {
   "slug": "bathymetric-mapping-of-the-mariana-trench-and-hadal-geomorphology",
-  "title": "Cartographie bathymétrique de la fosse des Mariannes : géomorphologie de la zone Hadal et tranchées de subduction",
-  "excerpt": "Exploration des abysses : échosondeurs multifaisceaux, mécanique de subduction des plaques tectoniques et pressions hydrostatiques supérieures à 1 100 atmosphères au Challenger Deep.",
+  "title": "Cartographie de la fosse des Mariannes",
+  "excerpt": "Explorer les abysses : échosondeurs multifaisceaux, mécanique de subduction des plaques tectoniques et pressions hydrostatiques supérieures à 1 100 atmosphères au Challenger Deep.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
   "tags": [
@@ -36,29 +36,29 @@
       "type": "ul",
       "items": [
         "Sondage par écho multifaisceaux (MBES) : réseaux de sonars montés sur la coque émettant des ventilateurs de pings acoustiques à haute fréquence pour cartographier les bandes du fond marin, corrigeant les profils de vitesse du son température-salinité.",
-        "Challenger Deep Topography: Located at 11°22′N, 142°35′E, the trench floor comprises three distinct axial basins, with the central depression reaching a verified depth of 10,928 meters.",
-        "Serpentine Mud Volcanoes: Subduction of oceanic crust releases hydrated fluids that serpentinize mantle peridotite, erupting mineral slurries through the overriding plate.",
-        "Submersible Syntactic Foam: Deep-submergence vehicles like Limiting Factor utilize glass-microballoon syntactic foam to achieve positive buoyancy under 1,100 atmospheres of compressive load."
+        "Topographie profonde Challenger : Situé à 11°22′N, 142°35′E, le fond de la tranchée comprend trois bassins axiaux distincts, la dépression centrale atteignant une profondeur vérifiée de 10 928 mètres.",
+        "Volcans de boue serpentine : La subduction de la croûte océanique libère des fluides hydratés qui serpentinisent la péridotite du manteau, faisant éclater des boues minérales à travers la plaque dominante.",
+        "Mousse syntactique submersible : les véhicules en immersion profonde comme Limiting Factor utilisent de la mousse syntactique en verre-microballon pour obtenir une flottabilité positive sous 1 100 atmosphères de charge de compression."
       ]
     },
     {
       "type": "quote",
-      "text": "At the floor of the Challenger Deep, the weight of the water column is equivalent to an anvil resting on every square centimeter of surface area.",
-      "cite": "Julian Mercer, Expeditions into the Planetary Abyss"
+      "text": "Au fond du Challenger Deep, le poids de la colonne d'eau équivaut à une enclume reposant sur chaque centimètre carré de surface.",
+      "cite": "Julian Mercer, Expéditions dans les abysses planétaires"
     },
     {
       "type": "h2",
-      "text": "Benthic Chemosynthesis and Piezophilic Extremophiles"
+      "text": "Chimiosynthèse benthique et extrémophiles piézophiles"
     },
     {
       "type": "p",
-      "text": "Contrary to early assumptions that the hadal zone was an organic desert, trench axes act as giant sediment traps where drifting marine snow and tectonic debris accumulate. Piezophilic bacteria and endemic amphipods thrive under immense pressure, using specialized membrane polyunsaturated fatty acids to maintain cellular fluidity in complete darkness."
+      "text": "Contrairement aux premières hypothèses selon lesquelles la zone hadal était un désert organique, les haches de tranchée agissent comme des pièges à sédiments géants où s'accumulent la neige marine à la dérive et les débris tectoniques. Les bactéries piézophiles et les amphipodes endémiques se développent sous une immense pression, en utilisant des acides gras polyinsaturés membranaires spécialisés pour maintenir la fluidité cellulaire dans l’obscurité totale."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
-      "title": "Mapping the Mariana Trench: Bathymetry and Submersible Exploration",
-      "caption": "Oceanographic expedition documentary detailing deep-trench acoustic mapping, robotic landers, and hadal biodiversity."
+      "title": "Cartographie de la fosse des Mariannes : bathymétrie et exploration submersible",
+      "caption": "Documentaire d'expédition océanographique détaillant la cartographie acoustique des tranchées profondes, les atterrisseurs robotisés et la biodiversité hadale."
     },
     {
       "type": "h2",
@@ -69,5 +69,5 @@
       "text": "Des mesures bathymétriques et géodésiques précises des taux de subduction des tranchées fournissent des données fondamentales pour la tectonique mondiale des plaques. En suivant les coefficients de couplage des plaques et la lubrification des sédiments, les géophysiciens améliorent la modélisation prédictive des risques pour les tremblements de terre de méga-poussée et les tsunamis traversant l'océan à travers le Pacifique."
     }
   ],
-  "sourceHash": "e50d3e6a28447314f81a1fa49de94b97bf95dd2a"
+  "sourceHash": "c50bfbc55a17f827d31370914a25b59199130811"
 }

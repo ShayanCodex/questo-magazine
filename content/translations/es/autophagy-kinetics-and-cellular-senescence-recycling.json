@@ -1,0 +1,70 @@
+{
+  "slug": "autophagy-kinetics-and-cellular-senescence-recycling",
+  "title": "La biología de la autofagia",
+  "excerpt": "Los mecanismos celulares de la macroautofagia: formación de autofagosomas, fusión lisosomal, regulación negativa de mTOR y eliminación de desechos mitocondriales dañados.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Sterling",
+  "tags": [
+    "health",
+    "autophagy",
+    "cellular-biology",
+    "longevity",
+    "mitophagy",
+    "medicine"
+  ],
+  "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Visualización mediante microscopía de laboratorio celular de macromoléculas biológicas fluorescentes",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El protocolo de gestión de residuos celulares"
+    },
+    {
+      "type": "p",
+      "text": "Cada minuto de vida celular genera desgaste molecular: proteínas mal plegadas, membranas lipídicas oxidadas y mitocondrias defectuosas que filtran radicales libres citotóxicos. La autofagia (literalmente 'comerse a sí mismo') es la vía evolutiva de degradación lisosomal que busca los desechos intracelulares, los descompone en aminoácidos constituyentes y los recupera para obtener energía."
+    },
+    {
+      "type": "h2",
+      "text": "Pasos moleculares de la macroautofagia"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Activación del complejo ULK1: desencadenado por la escasez de nutrientes y la fosforilación de la proteína quinasa activada por AMP (AMPK) durante la señalización mTOR regulada negativamente.",
+        "Nucleación y alargamiento de fagóforos: barreras de aislamiento de doble membrana que se expanden alrededor de la carga citoplasmática específica mediada por proteínas LC3-II.",
+        "Fusión autofagosoma-lisosoma: tráfico del autofagosoma sellado a lo largo de pistas de microtúbulos para acoplarse con lisosomas de hidrolasa ácida.",
+        "Mitofagia y reciclaje de orgánulos: dirigido específicamente a las mitocondrias despolarizadas y dañadas para prevenir la fuga apoptótica y la inflamación sistémica."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La autofagia es la fuente biológica de la juventud: las células sobreviven al hambre y al estrés quemando su propia basura celular interna.",
+      "cite": "Instituto Questo de Biología Celular y Medicina de la Longevidad"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Técnico de laboratorio biomédico examinando viales de ensayo celular en una sala limpia",
+      "caption": "Ensayo del recambio enzimático lisosomal: cuantificación de marcadores de eliminación celular bajo protocolos controlados de privación de nutrientes."
+    },
+    {
+      "type": "h2",
+      "text": "Desencadenantes fisiológicos: ayuno, ejercicio y calor"
+    },
+    {
+      "type": "p",
+      "text": "Mientras que los inhibidores farmacológicos de mTOR como la rapamicina estimulan bioquímicamente la autofagia, los factores estresantes fisiológicos como la restricción calórica prolongada, el ejercicio de resistencia de la zona 2 y los baños de sauna hipertérmicos activan un fuerte flujo autofágico a través de los hepatocitos y el músculo esquelético."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/mrWQfwpdx_0",
+      "title": "Investigación sobre autofagia: lo que realmente significa el trabajo del Premio Nobel",
+      "caption": "Una inmersión biológica profunda en los descubrimientos del Premio Nobel de Yoshinori Ohsumi sobre la genética de la levadura, las proteínas ATG y la autofagia de los mamíferos."
+    },
+    {
+      "type": "p",
+      "text": "La regulación positiva autofágica dirigida proporciona nuestra vía terapéutica celular más prometedora contra proteopatías neurodegenerativas como el Alzheimer y el Parkinson."
+    }
+  ],
+  "sourceHash": "d12a2d3845ddcd0466f3dd6c2980b68d8734dd58"
+}

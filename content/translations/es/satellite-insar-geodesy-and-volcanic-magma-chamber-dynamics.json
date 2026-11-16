@@ -1,7 +1,7 @@
 {
   "slug": "satellite-insar-geodesy-and-volcanic-magma-chamber-dynamics",
-  "title": "Radar interferométrico de apertura sintética (InSAR) y dinámica de la cámara de magma: geodesia satelital de inflación supervolcánica",
-  "excerpt": "Un estudio de geofísica y teledetección satelital: desenvolvimiento de la fase de interferometría del radar, modelos de deformación de fuente puntual de Mogi, corrección del retraso atmosférico y presurización de magma preeruptiva.",
+  "title": "Radar satelital y dinámica del magma",
+  "excerpt": "Un estudio de geofísica y teledetección satelital: desenvolvimiento de fase de interferometría de radar, modelos de tensión de fuente puntual de Mogi, corrección del retraso atmosférico y presurización de magma preeruptiva.",
   "date": "2026-11-17",
   "author": "Elena Rostova",
   "tags": [
@@ -32,7 +32,7 @@
       "items": [
         "Franjas de fase del interferograma: cada franja alterna del arco iris en un interferograma diferencial corresponde a la mitad de una longitud de onda de radar (típicamente 2,8 cm para los satélites Sentinel-1 de banda C) de desplazamiento de la superficie de la línea de visión.",
         "Corrección de pantalla de fase atmosférica (APS): mitigar los retrasos del vapor de agua troposférico utilizando modelos numéricos de reanálisis meteorológico (como ECMWF GACOS) para evitar que los artefactos de las nubes se hagan pasar por un levantamiento tectónico.",
-        "Modelos de fuentes analíticas de Mogi & Yang: inversión de los perfiles de deformación de la superficie para calcular la profundidad, el cambio de volumen y la relación de aspecto de los depósitos de magma presurizados ubicados entre 5 y 15 kilómetros bajo tierra.",
+        "Modelos de fuentes analíticas de Mogi & Yang: inversión de perfiles de deformación de la superficie para calcular la profundidad, el cambio de volumen y la relación de aspecto de los depósitos de magma presurizados ubicados entre 5 y 15 kilómetros bajo tierra.",
         "Interferometría de dispersión persistente (PSI): seguimiento de objetivos reflectantes estables (afloramientos rocosos, infraestructura) durante décadas para aislar la fluencia submilimétrica a través de fallas tectónicas complejas."
       ]
     },
@@ -49,17 +49,17 @@
     },
     {
       "type": "h2",
-      "text": "De la tensión superficial al pronóstico de hidrofractura magmática"
+      "text": "De la deformación superficial al pronóstico de hidrofractura magmática"
     },
     {
       "type": "p",
-      "text": "Cuando la tasa de inflación de la superficie se acelera de manera no lineal, la tensión de tracción en la roca anfitriona excede la resistencia a la tracción, lo que desencadena la propagación del dique: el magma fundido escinde fracturas hacia la superficie. La combinación de mapas continuos de velocidad InSAR con redes de sismómetros de banda ancha en tiempo real permite a las agencias de protección civil emitir advertencias de evacuación semanas antes de que ocurra una erupción explosiva."
+      "text": "Cuando la tasa de inflación de la superficie se acelera de manera no lineal, la tensión de tracción en la roca anfitriona excede la resistencia a la tracción, lo que desencadena la propagación de diques: el magma fundido escinde fracturas hacia la superficie. La combinación de mapas continuos de velocidad InSAR con redes de sismómetros de banda ancha en tiempo real permite a las agencias de protección civil emitir advertencias de evacuación semanas antes de que ocurra una erupción explosiva."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kc_T4buG2gE",
       "title": "Geodesia del USGS: deformación del volcán y dinámica de la cámara de magma",
-      "caption": "Interferometría de radar satelital (InSAR) y modelado geomecánico que demuestra la inflación de la corteza terrestre sobre los reservorios de magma subsuperficiales presurizados."
+      "caption": "Interferometría de radar satelital (InSAR) y modelado geomecánico que demuestra la inflación de la corteza terrestre sobre los depósitos de magma del subsuelo presurizados."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Sobre las calderas de Yellowstone y Campi Flegrei, los registros InSAR a largo plazo revelan ciclos decenales continuos de elevación y deflación sin erupción, conocidos como bradisismo. InSAR permite a los geofísicos diferenciar entre la expansión benigna del gas hidrotermal y la peligrosa recarga profunda de magma, estableciendo criterios empíricos claros para la mitigación del riesgo geológico."
     }
   ],
-  "sourceHash": "7e81a8ba1da5cd0254de1a71416a0732f35df3b8"
+  "sourceHash": "56a95419b1674ce9432cdf9c71b0ff214cdf8144"
 }

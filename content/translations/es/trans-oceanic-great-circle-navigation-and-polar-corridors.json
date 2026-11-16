@@ -1,7 +1,7 @@
 {
   "slug": "trans-oceanic-great-circle-navigation-and-polar-corridors",
-  "title": "Corredores de aviación polar y navegación del gran círculo transoceánico",
-  "excerpt": "Un estudio de geografía aeronáutica de trigonometría esférica, termodinámica de corrientes en chorro, protección contra la radiación del clima espacial y economía de vuelos transpolares.",
+  "title": "Navegación del Gran Círculo y Corredores Polares",
+  "excerpt": "Un estudio de geografía aeronáutica sobre trigonometría esférica, termodinámica de corrientes en chorro, protección contra la radiación del clima espacial y economía de vuelos transpolares.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
   "tags": [
@@ -20,7 +20,7 @@
     },
     {
       "type": "p",
-      "text": "En las cartas de navegación bidimensionales estándar de Mercator, las líneas rectas parecen representar la ruta más corta entre dos continentes distantes. Sin embargo, en geometría esférica física, la distancia más corta entre dos puntos cualesquiera de un globo es un arco de círculo máximo (geodésico ortodrómico). Para las rutas intercontinentales de ultra larga distancia que conectan América del Norte con Asia Oriental y Europa con Oceanía, las trayectorias geodésicas se arquean abruptamente hacia el norte a través de la extensión helada del Círculo Polar Ártico, reduciendo miles de kilómetros y docenas de toneladas de combustible para aviones por vuelo."
+      "text": "En las cartas de navegación bidimensionales estándar de Mercator, las líneas rectas de rumbo parecen representar la ruta más corta entre dos continentes distantes. Sin embargo, en geometría esférica física, la distancia más corta entre dos puntos cualesquiera de un globo es un arco de círculo máximo (geodésico ortodrómico). Para las rutas intercontinentales de ultra larga distancia que conectan América del Norte con Asia Oriental y Europa con Oceanía, las trayectorias geodésicas se arquean abruptamente hacia el norte a través de la extensión helada del Círculo Polar Ártico, reduciendo miles de kilómetros y docenas de toneladas de combustible para aviones por vuelo."
     },
     {
       "type": "h2",
@@ -69,5 +69,5 @@
       "text": "A medida que la geopolítica moderna altera el acceso al espacio aéreo del norte, los algoritmos de planificación de vuelos deben recalcular el delicado equilibrio económico entre los tortuosos desvíos del sur y la optimización del combustible polar."
     }
   ],
-  "sourceHash": "9bd95df5ca3be3d1728fd40e78546b24a991c961"
+  "sourceHash": "80c71fb26e09c6f34f1650848c8cc365a05d954a"
 }

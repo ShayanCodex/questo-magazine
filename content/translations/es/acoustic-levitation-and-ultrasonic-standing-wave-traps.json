@@ -1,0 +1,70 @@
+{
+  "slug": "acoustic-levitation-and-ultrasonic-standing-wave-traps",
+  "title": "Levitación acústica ultrasónica",
+  "excerpt": "La física ondulatoria de la presión de la radiación acústica: transductores ultrasónicos en fase, nodos de presión, fuerzas de Bernoulli y manipulación sin contacto de la materia en el aire.",
+  "date": "2026-11-17",
+  "author": "Orion Kaelen",
+  "tags": [
+    "sound",
+    "acoustics",
+    "physics",
+    "ultrasound",
+    "levitation",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Conjunto de transductores de ondas acústicas de alta tecnología que ilumina un campo de ondas estacionarias acústicas invisibles",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Suspensión de materia puramente en ondas sonoras"
+    },
+    {
+      "type": "p",
+      "text": "El sonido generalmente se concibe como un fenómeno que escuchamos, pero físicamente es una oscilación de presión y un desplazamiento cinético de partículas. Cuando las ondas de ultrasonido de alta intensidad (40 kHz, más allá del oído humano) se enfocan y se reflejan sobre sí mismas, interfieren para producir una onda estacionaria con antinodos estacionarios de alta presión y nodos de velocidad cero capaces de atrapar y levitar materia física contra la gravedad."
+    },
+    {
+      "type": "h2",
+      "text": "La física de la presión de la radiación acústica"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Potencial acústico de Gor'kov: el marco matemático que describe cómo las partículas pequeñas experimentan fuerzas netas de radiación acústica que las impulsan hacia los nodos de presión acústica.",
+        "Transductores Phased Array: Conjuntos de docenas de emisores ultrasónicos piezoeléctricos que ajustan las fases de onda individuales para formar trampas acústicas 3D dinámicas y reconfigurables.",
+        "Síntesis química sin contenedores: levitación de gotas de líquido para estudiar nucleaciones de cristales y reacciones farmacéuticas sin contaminación de la superficie del recipiente.",
+        "Universalidad no magnética: a diferencia de la levitación magnética que requiere materiales ferromagnéticos o superconductores, la levitación acústica levita cualquier sólido o líquido independientemente de la carga magnética."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La levitación acústica revela el impulso físico transportado por los paquetes de ondas: el sonido deja de ser un fantasma y se convierte en unas pinzas mecánicas invisibles.",
+      "cite": "Grupo Questo de Física Acústica y Dinámica de Ondas No Lineales"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Banco óptico de laboratorio de precisión que enfoca láseres a través de una cámara de levitación acústica",
+      "caption": "Haz tractor acústico holográfico: dirige esferas de poliestireno levitadas a lo largo de trayectorias arbitrarias en 3D."
+    },
+    {
+      "type": "h2",
+      "text": "De microfluidos a pinzas acústicas biomédicas"
+    },
+    {
+      "type": "p",
+      "text": "Ahora se utilizan chips miniaturizados de ondas acústicas de superficie (SAW) en microfluidos de laboratorio en un chip para clasificar las células tumorales circulantes y guiar a los embriones vivos durante la FIV sin daños mecánicos por corte."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/icd0boNG8fM",
+      "title": "El sonido puede hacer que los objetos floten: Física de la levitación acústica",
+      "caption": "Demostración de física acústica de alta velocidad que muestra trampas de ondas estacionarias de ultrasonido y manipulación de gotas sin contacto."
+    },
+    {
+      "type": "p",
+      "text": "La presión de radiación ultrasónica abre fronteras radicales para la fabricación sin contacto, la medicina y la física de materiales sin contenedores."
+    }
+  ],
+  "sourceHash": "c9634fb58ef70685f1f675fc57b692eaa09182b6"
+}

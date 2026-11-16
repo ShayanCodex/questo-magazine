@@ -1,7 +1,7 @@
 {
   "slug": "the-evolution-of-editorial-layout-systems-and-variable-grids",
-  "title": "Die Entwicklung redaktioneller Layoutsysteme: Von Tschichold zu variablen Rastern",
-  "excerpt": "Eine typografische Abhandlung, die den goldenen Kanon der Buchaufteilung, asymmetrische Schweizer Systeme der Mitte des Jahrhunderts und moderne CSS-Subgrid-Fluid-Redaktionsarchitektur nachzeichnet.",
+  "title": "Die Entwicklung redaktioneller Layoutsysteme",
+  "excerpt": "Eine typografische Abhandlung, die den goldenen Kanon der Buchteilung, asymmetrische Schweizer Systeme der Mitte des Jahrhunderts und moderne CSS-Subgrid-Fluid-Redaktionsarchitektur nachzeichnet.",
   "date": "2026-11-16",
   "author": "Saskia Lindqvist",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Im digitalen Web litt die Redaktion lange Zeit unter starren, unzusammenhängenden Responsive-Card-Frameworks. Mit der universellen Browser-Einführung von CSS Subgrid und CSS „clamp()“ Fluid Type Scaling können Webdesigner jetzt kontinuierliche redaktionelle Kompositionen erstellen, die die proportionale Harmonie von Taschenbildschirmen bis hin zu ultrabreiten Desktop-Monitoren bewahren."
     }
   ],
-  "sourceHash": "2ad5251f03966d71bae35e8ac963c1e1bc885d9e"
+  "sourceHash": "4bcf5f52292f406d4eb0a31a5c2dc75df49626a1"
 }

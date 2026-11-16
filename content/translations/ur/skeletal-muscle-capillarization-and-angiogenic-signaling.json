@@ -1,7 +1,7 @@
 {
   "slug": "skeletal-muscle-capillarization-and-angiogenic-signaling",
-  "title": "الٹرا انڈیورینس ایتھلیٹس میں کنکال کے پٹھوں کی کیپلرائزیشن اور انجیوجینک سگنلنگ",
-  "excerpt": "وی ای جی ایف کیسکیڈز، شیئر اسٹریس میکانو ٹرانسڈکشن، اور مائیکرو واسکولر ڈفیوژن کائینیٹکس کی جانچ کرنا جو جسمانی حد پر ایروبک کارکردگی کو کنٹرول کرتے ہیں۔",
+  "title": "Muscle Capillarization in Endurance",
+  "excerpt": "Examining VEGF cascades, shear stress mechanotransduction, and microvascular diffusion kinetics that govern aerobic performance at the physiological limit.",
   "date": "2026-11-16",
   "author": "Liam O’Connor",
   "tags": [
@@ -12,62 +12,62 @@
     "capillarization"
   ],
   "image": "https://images.unsplash.com/photo-1549035323-d35c521d1b8b?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "ایلیٹ ایتھلیٹس زیادہ سے زیادہ آکسیجن کی کھپت اور مائکرو واسکولر موافقت کے ساتھ ٹریک پر تربیت کر رہے ہیں",
+  "imageAlt": "Elite endurance athletes training on track with maximal oxygen consumption and microvascular adaptations",
   "body": [
     {
       "type": "h2",
-      "text": "انسانی نقل و حرکت میں کیپلیری پھیلاؤ رکاوٹ"
+      "text": "The Capillary Diffusion Bottleneck in Human Locomotion"
     },
     {
       "type": "p",
-      "text": "جب کہ کارڈیک آؤٹ پٹ آکسیجن والے خون کی حجمی ترسیل کا تعین کرتا ہے جو پٹھوں کو سکڑتا ہے، پائیدار ایروبک اے ٹی پی ترکیب میں حتمی شرح کو محدود کرنے والا مرحلہ پیریفرل آکسیجن نکالنا ہے۔ مائٹوکونڈریل کرسٹی تک پہنچنے کے لیے آکسیجن کو کیپلیری اینڈوتھیلیم، بیچوالا سیال، اور سارکولیما میں پھیلانا ضروری ہے۔ عالمی سطح کے میراتھونرز میں، یہ پھیلاؤ کا راستہ انتہائی کنکال کے پٹھوں کی کیپلرائزیشن کے ذریعہ کافی حد تک چھوٹا ہوتا ہے۔"
+      "text": "While cardiac output determines the volumetric delivery of oxygenated blood to contracting muscles, the ultimate rate-limiting step in sustained aerobic ATP synthesis is peripheral oxygen extraction. Oxygen must diffuse across the capillary endothelium, interstitial fluid, and sarcolemma to reach the mitochondrial cristae. In world-class marathoners, this diffusion path is drastically shortened by extreme skeletal muscle capillarization."
     },
     {
       "type": "h2",
-      "text": "مالیکیولر سگنلز ڈرائیونگ ایکسرسائز کی حوصلہ افزائی انجیوجینیسیس"
+      "text": "Molecular Signals Driving Exercise-Induced Angiogenesis"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1792041006147-d545166e7c78?auto=format&fit=crop&w=1200&q=80",
-      "alt": "برداشت کے کھیل میں بائیو مکینیکل اسٹرائیڈ میکینکس اور مائکرو واسکولر پرفیوژن کائینیٹکس",
-      "caption": "مائیکرو واسکولر فن تعمیر: دائمی ہائی والیوم ایروبک ٹریننگ کیپلیری ٹو فائبر کے تناسب کو ساٹھ فیصد سے زیادہ بڑھاتی ہے۔"
+      "alt": "Biomechanical stride mechanics and microvascular perfusion kinetics in endurance sport",
+      "caption": "Microvascular architecture: Chronic high-volume aerobic training expands capillary-to-fiber ratio by over sixty percent."
     },
     {
       "type": "ul",
       "items": [
-        "ویسکولر اینڈوتھیلیل گروتھ فیکٹر (VEGF): ماسٹر انجیوجینک سائٹوکائن، جو پٹھوں کے ہائپوکسیا انڈیکیبل فیکٹر 1α (HIF-1α) اور مکینیکل اسٹریچ کے جواب میں نقل کیا گیا ہے۔",
-        "کیپلیری شیئر اسٹریس: طویل ورزش کے دوران ہائی مائیکرو واسکولر خون کا بہاؤ اینڈوتھیلیل نائٹرک آکسائیڈ سنتھیس (ای این او ایس) کو متحرک کرتا ہے، جو میٹرکس میٹالوپروٹینیز ہاضمہ اور برتنوں کے انکرن کو متحرک کرتا ہے۔",
-        "کیپلیری سے فائبر کا تناسب: غیر تربیت یافتہ افراد کے پاس 1.1 سے 1.4 کیپلیریاں فی پٹھوں کے ریشے ہوتے ہیں، جب کہ ایلیٹ کراس کنٹری اسکیئرز 2.4 سے 2.8 سے زیادہ تناسب کی نمائش کرتے ہیں۔",
-        "ریڈ بلڈ سیل ٹرانزٹ ٹائم: توسیع شدہ کیپلیری سطح کا رقبہ پٹھوں کے بستر کے اندر اریتھروسائٹ ٹرانزٹ کے وقت کو طول دیتا ہے، فلکیاتی کارڈیک آؤٹ پٹ کے باوجود آکسی ہیموگلوبن کی مکمل آف لوڈنگ کو یقینی بناتا ہے۔"
+        "Vascular Endothelial Growth Factor (VEGF): The master angiogenic cytokine, transcribed in response to muscular hypoxia inducible factor 1α (HIF-1α) and mechanical stretch.",
+        "Capillary Shear Stress: High microvascular blood flow during prolonged exercise stimulates endothelial nitric oxide synthase (eNOS), triggering matrix metalloproteinase digestion and vessel sprouting.",
+        "Capillary-to-Fiber Ratio: Untrained individuals possess 1.1 to 1.4 capillaries per muscle fiber, whereas elite cross-country skiers exhibit ratios exceeding 2.4 to 2.8.",
+        "Red Blood Cell Transit Time: Expanded capillary surface area prolongs erythrocyte transit time within the muscle bed, ensuring complete offloading of oxyhemoglobin despite astronomical cardiac outputs."
       ]
     },
     {
       "type": "quote",
-      "text": "VO2 max انجن ہے، لیکن مائیکرو واسکولر کیپلیری بیڈ فیول انجیکشن کئی گنا ہے۔ کیپلیری کثافت کے بغیر، مائٹوکونڈریل کثافت حیاتیاتی طور پر غیر فعال رہتی ہے۔",
-      "cite": "اپلائیڈ فزیالوجی اینڈ اسپورٹس سائنس کا جریدہ"
+      "text": "VO2 max is the engine, but the microvascular capillary bed is the fuel injection manifold. Without capillary density, mitochondrial density remains biologically dormant.",
+      "cite": "Journal of Applied Physiology & Sports Science"
     },
     {
       "type": "h2",
-      "text": "زیادہ سے زیادہ کیپلیری پھیلاؤ کے لئے تربیتی طریقہ کار"
+      "text": "Training Methodologies for Maximal Capillary Proliferation"
     },
     {
       "type": "p",
-      "text": "انجیوجینیسیس اعلی شدت والے انیروبک اسپرنٹ کے ذریعہ حوصلہ افزائی نہیں کرتا ہے، جو تیزی سے انٹرا سیلولر ایسڈوسس کی حوصلہ افزائی کرتا ہے جو اینڈوتھیلیل انکرت کو دباتا ہے۔ بلکہ، زیادہ سے زیادہ کیپلیری توسیع کے لیے اعلیٰ حجم، کم شدت والی تربیت (زون 2) کی ضرورت ہوتی ہے جو 90 سے 180 منٹ تک جاری رہتی ہے۔ یہ مسلسل مکینیکل قینچ کا تناؤ اور اعتدال پسند میٹابولک بہاؤ خود مختار اعصابی نظام کی تھکن کے بغیر VEGF-A mRNA کی بلندی کو مستحکم رکھتا ہے۔"
+      "text": "Angiogenesis is not stimulated by high-intensity anaerobic sprints, which induce rapid intracellular acidosis that suppresses endothelial sprouting. Rather, maximal capillary expansion requires high-volume, low-intensity training (Zone 2) lasting 90 to 180 minutes. This sustained mechanical shear stress and moderate metabolic flux maintain steady-state VEGF-A mRNA elevation without autonomic nervous system exhaustion."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
-      "title": "کنکال کے پٹھوں کی کیپلیرائزیشن اور آکسیجن کینیٹکس",
-      "caption": "مائیکرو ویسکولر موافقت، کیپلیری ٹو فائبر ریشوز، اور برداشت چلانے والی معیشت کا اسپورٹس فزیالوجی تجزیہ۔"
+      "title": "Skeletal Muscle Capillarization and Oxygen Kinetics",
+      "caption": "Sports physiology analysis of microvascular adaptations, capillary-to-fiber ratios, and endurance running economy."
     },
     {
       "type": "h2",
-      "text": "غذائیت اور ماحولیاتی ماڈیولرز"
+      "text": "Nutritional and Environmental Modulators"
     },
     {
       "type": "p",
-      "text": "وقفے وقفے سے ہائپوکسک نمائش (اونچائی کی تربیت) HIF-1α کے نقلی ایکٹیویشن کو بڑھاتا ہے، ورزش کی حوصلہ افزائی انجیوجینک جھرنوں کو بڑھاتا ہے۔ اس کے برعکس، زیادہ مقدار میں خارجی اینٹی آکسیڈنٹس (وٹامنز C اور E) کا بہت زیادہ استعمال فوری طور پر ورزش کے بعد جسمانی ری ایکٹو آکسیجن پرجاتیوں کے سگنلنگ، کیپلیری کی موافقت کو کم کرتا ہے اور انکولی عروقی ریموڈلنگ کو ختم کر دیتا ہے۔"
+      "text": "Intermittent hypoxic exposure (altitude training) magnifies the transcriptional activation of HIF-1α, augmenting exercise-induced angiogenic cascades. Conversely, excessive consumption of high-dose exogenous antioxidants (vitamins C and E) immediately post-exercise blunts physiological reactive oxygen species signaling, dampening capillary adaptation and adaptive vascular remodeling."
     }
   ],
-  "sourceHash": "057d9e594a260d92132a45c3e3d0c0b13671e770"
+  "sourceHash": "70f2528849943ecbfa2619fdda553efdfa25dfb6"
 }

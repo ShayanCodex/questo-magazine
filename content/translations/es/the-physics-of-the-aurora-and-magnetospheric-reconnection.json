@@ -1,0 +1,74 @@
+{
+  "slug": "the-physics-of-the-aurora-and-magnetospheric-reconnection",
+  "title": "La física de la aurora",
+  "excerpt": "Un estudio geomagnético y de física espacial: eyecciones de masa coronal (CME), reconexión magnética en la cola magnética, corrientes de Birkeland y emisión de fotones atómicos en la ionosfera superior de la Tierra.",
+  "date": "2026-11-17",
+  "author": "Elena Rostova",
+  "tags": [
+    "space-physics",
+    "aurora",
+    "geomagnetism",
+    "astronomy",
+    "earth-science",
+    "solar-wind"
+  ],
+  "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Vibrantes cortinas onduladas de aurora boreal verde y violeta bailando a través del cielo nocturno ártico sobre montañas nevadas",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El viento solar y el escudo magnético de la Tierra"
+    },
+    {
+      "type": "p",
+      "text": "El Sol emite continuamente una corriente supersónica de plasma magnetizado conocida como viento solar. Cuando esta corriente encuentra la Tierra, nuestra dinamo magnética de núcleo externo fundido desvía la gran mayoría de los protones y electrones cargados alrededor del planeta, tallando una vasta cavidad magnética en forma de lágrima conocida como magnetosfera. Sin embargo, durante las intensas tormentas solares, una inmensa energía traspasa esta barrera protectora."
+    },
+    {
+      "type": "h2",
+      "text": "Física espacial y principios geomagnéticos"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Reconexión magnética en la cola magnética: Líneas de campo magnético con direcciones opuestas se rompen y se cruzan en la cola del lado oscuro de la Tierra, lanzando violentamente partículas de plasma atrapadas hacia la ionosfera polar.",
+        "Corrientes alineadas con el campo de Birkeland: láminas de corriente eléctrica de gigavatios que fluyen a lo largo de las líneas dipolares magnéticas de la Tierra, acelerando electrones a energías keV hacia la atmósfera superior.",
+        "Emisión de oxígeno atómico de 557,7 nm: los electrones acelerados que chocan con el oxígeno atómico a una altitud de 100 a 200 kilómetros producen el icónico y etéreo brillo auroral verde esmeralda.",
+        "Resplandor violeta del nitrógeno molecular a gran altitud: las colisiones con nitrógeno molecular ionizado (N2+) por encima de 250 kilómetros de altitud pintan las cortinas aurorales superiores con franjas de color carmesí y púrpura intenso."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La aurora es la manifestación visual del clima espacial: una bombilla planetaria similar a un neón alimentada por energía magnética solar que se descarga en la atmósfera superior.",
+      "cite": "Questo Observatorio Geofísico Ionosférico y Magnetosférico"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579033461380-adb47c3eb938?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Luminosas cintas aurorales verdes que caen en cascada sobre los fríos fiordos glaciales nórdicos y las oscuras aguas del océano",
+      "caption": "El óvalo auroral: un anillo circumpolar persistente de precipitación de partículas energéticas que se expande hacia el ecuador durante las tormentas geomagnéticas."
+    },
+    {
+      "type": "h2",
+      "text": "Peligros de tormentas geomagnéticas para la infraestructura moderna"
+    },
+    {
+      "type": "p",
+      "text": "Si bien son visualmente deslumbrantes, las grandes subtormentas aurorales inducen poderosas corrientes inducidas geomagnéticamente (GIC) en el suelo, capaces de saturar los transformadores de la red eléctrica, corroer oleoductos y cegar la navegación GPS por satélite y los enlaces de radio de aviación de alta frecuencia."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/FoLrl6f1aM0",
+      "title": "Documental: Explicación de la aurora boreal - La ciencia de la aurora",
+      "caption": "Documental científico educativo que explora la dinámica del viento solar, las líneas del campo magnético de la Tierra y las colisiones atmosféricas que crean la aurora."
+    },
+    {
+      "type": "h2",
+      "text": "Monitoreo del ciclo solar 25 y clima espacial"
+    },
+    {
+      "type": "p",
+      "text": "Con el Sol operando en el pico del Ciclo Solar 25, los observatorios espaciales como SOHO y DSCOVR brindan telemetría de alerta temprana en Lagrange Point 1, lo que permite a los operadores de energía y a los astrónomos prepararse para la llegada de eyecciones de masa coronal."
+    }
+  ],
+  "sourceHash": "4b84975c99cef231421fd8becec38d7d1231a5da"
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "acoustic-ecology-and-the-soundscapes-of-wild-glaciers",
+  "title": "Ecología acústica de glaciares salvajes",
+  "excerpt": "Un estudio hidroacústico y geofísico ambiental: frecuencias de desprendimiento de icebergs criogénicos, cavitación de burbujas presurizadas y indicadores sónicos de la dinámica del hielo ártico.",
+  "date": "2026-11-17",
+  "author": "Elena Rostova",
+  "tags": [
+    "geophysics",
+    "arctic",
+    "acoustics",
+    "climate-science",
+    "glaciology",
+    "travel"
+  ],
+  "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "El vasto y espectacular frente de un glaciar ártico se encuentra con las aguas heladas de los fiordos oceánicos bajo los extensos cielos azul pálido nórdicos",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El mundo sónico debajo de los fiordos de hielo polares"
+    },
+    {
+      "type": "p",
+      "text": "Para los oídos humanos que se encuentran en una costa ártica, un glaciar aparece como un monumento de silencio absoluto. Pero sumerge un hidrófono calibrado bajo las aguas heladas de un fiordo polar y el océano estalla en una cacofonía acústica tan ensordecedora como un campo de batalla naval. Los fiordos glaciares se encuentran entre los entornos marinos naturales más ruidosos de la Tierra, generados en su totalidad por la física mecánica del derretimiento y fractura del hielo."
+    },
+    {
+      "type": "h2",
+      "text": "Mecanismos hidroacústicos y criogénicos"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cavitación de burbujas de alta presión (Bergy Seltzer): el aire antiguo atrapado debajo de miles de metros de hielo a hasta 20 atmósferas explota en agua de mar a medida que el hielo se derrite, produciendo agudos crepitantes ultrasónicos de entre 1 y 10 kHz.",
+        "Señales de desprendimiento infrasónico subaudible: Los desprendimientos masivos de icebergs generan infrasonidos de baja frecuencia (por debajo de 20 Hz) que viajan miles de kilómetros a través del canal SOFAR del océano.",
+        "Sensor remoto oceánico con hidrófono: el monitoreo acústico pasivo permite a los científicos medir continuamente las tasas de derretimiento de los glaciares durante los oscuros inviernos árticos sin arriesgar embarcaciones tripuladas cerca de peligrosas paredes de desprendimiento.",
+        "Ecología acústica de mamíferos marinos: Las focas anilladas y las ballenas beluga explotan el enmascaramiento acústico natural de los glaciares crepitantes para ocultar sus vocalizaciones de las orcas depredadoras del ápice."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Un glaciar no muere en silencio; habla con estruendosos estruendos y millones de burbujas de aire presurizado que estallan y cuentan la historia física exacta del calentamiento de nuestro planeta.",
+      "cite": "Expedición Questo de geofísica polar y ecología acústica"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Prístino iceberg glacial que flota silenciosamente en las frías aguas de los fiordos polares que reflejan las crujientes crestas de las montañas nevadas",
+      "caption": "Resonancia acústica criogénica: despliegue de amarres de hidrófonos para mapear la dinámica del derretimiento del subsuelo en los fiordos árticos."
+    },
+    {
+      "type": "h2",
+      "text": "De la presión sónica a los cálculos cuantitativos de fusión"
+    },
+    {
+      "type": "p",
+      "text": "Al aislar el espectro de energía acústica de la cavitación de burbujas, los oceanógrafos pueden calcular el flujo volumétrico exacto de agua dulce que ingresa al ecosistema marino. Esta telemetría acústica pasiva proporciona una verdad empírica sobre el terreno para los modelos satelitales InSAR, salvando la brecha entre el radar orbital y la física oceánica."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/q12XrHi3-wY",
+      "title": "Documental: Los sonidos de advertencia de un glaciar que se derrite",
+      "caption": "La glacióloga Erin Pettit revela el sorprendente mundo acústico debajo de los glaciares que se derriten y cómo la hidroacústica rastrea la pérdida de hielo."
+    },
+    {
+      "type": "h2",
+      "text": "La preservación de los paisajes sonoros naturales"
+    },
+    {
+      "type": "p",
+      "text": "A medida que los corredores marítimos globales se expanden hacia pasajes polares recientemente libres de hielo, la cavitación antropogénica de las hélices amenaza con ahogar los paisajes sonoros naturales de los glaciares. Proteger el silencio acústico en los santuarios marinos polares es vital para preservar el patrimonio auditivo de nuestro planeta."
+    }
+  ],
+  "sourceHash": "7f807f0a9646851e70df0cb4d50ea018e090f8cf"
+}

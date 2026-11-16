@@ -1,0 +1,70 @@
+{
+  "slug": "yield-curve-inversions-and-fixed-income-dynamics",
+  "title": "Inversions de courbe de rendement et macro",
+  "excerpt": "Les mécanismes financiers de l'inversion des spreads du Trésor : primes de terme, hypothèses d'anticipations, marges d'intérêt nettes des banques et prévision des contractions macroéconomiques.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "tags": [
+    "finance",
+    "yield-curve",
+    "macroeconomics",
+    "bonds",
+    "interest-rates",
+    "banking"
+  ],
+  "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Affichage du marché financier avec les rendements des bons du Trésor et les tendances des chandeliers",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le baromètre le plus fiable du marché obligataire"
+    },
+    {
+      "type": "p",
+      "text": "Dans des conditions économiques normales, les obligations à plus long terme offrent des rendements plus élevés que la dette à court terme pour compenser les investisseurs du risque d'inflation et de la volatilité de la durée. Lorsque le rendement du bon du Trésor à 2 ans dépasse celui du bon du Trésor à 10 ans, la courbe des rendements s’inverse – un état anormal qui a précédé chaque récession aux États-Unis depuis 1955."
+    },
+    {
+      "type": "h2",
+      "text": "Mécanismes derrière la compression des spreads"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "L’hypothèse des attentes : les investisseurs anticipant de futures baisses de taux d’intérêt des banques centrales font grimper agressivement les obligations à long terme, déprimant les rendements à long terme.",
+        "Politique monétaire stricte : les hausses agressives des taux directeurs de la Réserve fédérale ancrent les rendements du marché monétaire à court terme près des sommets cycliques.",
+        "Compression de la marge nette d'intérêt : les banques empruntent à court terme et prêtent à long terme ; une courbe inversée détruit la rentabilité des prêts commerciaux, étouffant la création de crédit.",
+        "Resserrement du marché du crédit : les normes de prêts commerciaux se resserrent rapidement à mesure que les banques se retirent des lignes de crédit immobilières commerciales et industrielles."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La courbe des taux ne provoque pas de récessions ; cela reflète la conclusion collective du marché selon laquelle la politique des banques centrales est devenue excessivement restrictive et restrictive.",
+      "cite": "Centre Questo pour la stratégie macroéconomique mondiale"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Terminal financier mondial affichant les spreads d'obligations et les taux de change multi-actifs",
+      "caption": "Analyse des spreads du Trésor : suivi des écarts de rendement à 10 ans moins 2 ans et à 10 ans moins 3 mois en temps réel."
+    },
+    {
+      "type": "h2",
+      "text": "La zone de danger : la désinversion"
+    },
+    {
+      "type": "p",
+      "text": "Historiquement, les chocs économiques les plus graves se produisent non pas lorsque la courbe est inversée, mais pendant la phase de « non-inversion » ou de pentification, lorsque les baisses d'urgence des taux de la banque centrale signalent que la détérioration du marché du travail est déjà en cours."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/bYmzy1ZVqxQ",
+      "title": "La courbe des rendements expliquée : inversion, signaux de récession et macro",
+      "caption": "Décomposition pédagogique en économie financière des rendements obligataires, mécanismes d'inversion des spreads et prévisions macroéconomiques."
+    },
+    {
+      "type": "p",
+      "text": "Comprendre la topologie de la courbe des rendements fournit aux investisseurs institutionnels un indicateur de délai essentiel pour la budgétisation des risques tout au long des cycles économiques."
+    }
+  ],
+  "sourceHash": "4d4796b04b5f6fb38e7233542141e6307c9bdf5f"
+}

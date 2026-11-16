@@ -1,6 +1,6 @@
 {
   "slug": "anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics",
-  "title": "Anatomie de la liquidité du capital-risque et des marchés secondaires",
+  "title": "Capital-risque et marchés secondaires",
   "excerpt": "Une enquête financière sur les offres publiques retardées, les fonds de continuation, les pressions sur la liquidité des LP et l'émergence d'échanges secondaires privés.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
@@ -12,7 +12,7 @@
     "finance"
   ],
   "image": "/images/articles/venture-capital-finance.jpg",
-  "imageAlt": "Modern financial district architectural atrium symbolizing private capital markets and investment banking",
+  "imageAlt": "Un atrium architectural de quartier financier moderne symbolisant les marchés de capitaux privés et la banque d'investissement",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Le déficit structurel de liquidité"
+      "text": "Points clés"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "Anatomie de la liquidité du capital-risque et des marchés secondaires - Figure structurelle 1",
+      "caption": "Analyse visuelle : schémas architecturaux et représentations du domaine technique pour l'anatomie de la liquidité du capital-risque et des marchés secondaires."
     },
     {
       "type": "ul",
       "items": [
-        "DPI vs. TVPI Divergence: Institutional limited partners (LPs) increasingly demand Distributed to Paid-In capital (DPI) rather than theoretical mark-ups (TVPI).",
-        "Continuation Vehicles: General partners (GPs) are creating structured secondary continuation funds to roll prized assets while offering liquidity windows.",
-        "Discount Pressures: Private secondary market transactions frequently clear at 20% to 40% discounts to previous sovereign venture funding valuations.",
-        "Institutional Secondary Platforms: The rise of algorithmic matching engines and standardized transfer documentation has turned private shares into a distinct asset class."
+        "Divergence DPI vs TVPI : les commanditaires institutionnels (LP) demandent de plus en plus de distribution en capital versé (DPI) plutôt que de majorations théoriques (TVPI).",
+        "Véhicules de continuation : les commandités (GP) créent des fonds de continuation secondaires structurés pour lancer des actifs précieux tout en offrant des fenêtres de liquidité.",
+        "Pressions en matière d'escompte : les transactions sur le marché secondaire privé sont souvent compensées avec une décote de 20 à 40 % par rapport aux précédentes valorisations des financements souverains à risque.",
+        "Plateformes secondaires institutionnelles : La montée en puissance des moteurs de correspondance algorithmique et de la documentation de transfert standardisée a transformé les actions privées en une classe d'actifs distincte."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "Anatomie de la liquidité du capital-risque et des marchés secondaires - Figure opérationnelle 2",
+      "caption": "Observation empirique : mécanismes opérationnels et télémétrie fondamentale soutenant l'anatomie de la liquidité du capital-risque et des marchés secondaires."
     },
     {
       "type": "h2",
-      "text": "Le déficit structurel de liquidité"
+      "text": "Secondaires dirigés par des GP et architecture de fonds"
     },
     {
       "type": "p",
-      "text": "Pendant plus d'une décennie, le capital-risque a fonctionné selon un volant d'inertie prévisible : lever des fonds, déployer des capitaux dans des entreprises de logiciels à forte croissance et restituer les bénéfices via des offres publiques initiales (IPO) ou des acquisitions stratégiques au cours d'un cycle de vie du fonds de 7 à 10 ans. Aujourd’hui, ce pipeline de liquidités conventionnel est confronté à une impasse systémique, les entreprises privées restant non cotées pendant 14 ans ou plus."
+      "text": "Pour éviter de brader des sociétés de portefeuille à forte conviction dans des environnements d'introduction en bourse tièdes, les gestionnaires d'investissement se tournent vers des véhicules secondaires à actif unique dirigés par des GP. Ces transactions permettent aux investisseurs secondaires externes d'injecter du nouveau capital de croissance, tandis que les commanditaires existants peuvent choisir d'encaisser ou de transférer leur participation."
     },
     {
       "type": "video",
-      "title": "Private Equity and Venture Capital Secondary Markets Explained",
-      "caption": "Financial analysis breaking down how continuation funds, LP-led portfolio sales, and secondary transaction pricing operate in institutional finance.",
-      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI"
+      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI",
+      "title": "Explication des marchés secondaires du capital-investissement et du capital-risque",
+      "caption": "Analyse financière décrivant le fonctionnement des fonds de continuation, des ventes de portefeuille dirigées par LP et de la tarification des transactions secondaires dans la finance institutionnelle."
     },
     {
       "type": "h2",
-      "text": "Le déficit structurel de liquidité"
+      "text": "L'avenir de la maturation du capital-risque"
     },
     {
       "type": "p",
-      "text": "Pendant plus d'une décennie, le capital-risque a fonctionné selon un volant d'inertie prévisible : lever des fonds, déployer des capitaux dans des entreprises de logiciels à forte croissance et restituer les bénéfices via des offres publiques initiales (IPO) ou des acquisitions stratégiques au cours d'un cycle de vie du fonds de 7 à 10 ans. Aujourd’hui, ce pipeline de liquidités conventionnel est confronté à une impasse systémique, les entreprises privées restant non cotées pendant 14 ans ou plus."
+      "text": "À mesure que les bourses secondaires automatisent les rapprochements des tables de capitalisation et les obstacles à la conformité, le capital-investissement et le capital-risque ressembleront à un marché secondaire continu plutôt qu'à un événement de liquidité épisodique, restructurant de manière permanente la dynamique de capitalisation de la Silicon Valley."
     }
   ],
-  "sourceHash": "04ac31d7788c879d1bf2c553b8f1534c6753ec22"
+  "sourceHash": "e055dac954cef980b5122079851e24b65b910ad5"
 }

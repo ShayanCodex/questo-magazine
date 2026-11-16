@@ -1,7 +1,7 @@
 {
   "slug": "cross-border-cbdc-rails-mbridge-and-the-de-dollarization-matrix",
-  "title": "Proyecto mBridge y el nexo multi-CBDC: deconstrucción de vías de compensación bilaterales, centros de liquidez y el futuro de la liquidación global",
-  "excerpt": "Un informe de arquitectura monetaria sobre las monedas digitales mayoristas de los bancos centrales (wCBDC): el libro mayor distribuido mBridge del BIS, corredores de divisas soberanos, creadores de mercado algorítmicos automatizados y la reconfiguración geopolítica de la liquidación comercial global.",
+  "title": "Proyecto mBridge & Global Settlements",
+  "excerpt": "Un informe de arquitectura monetaria sobre las monedas digitales mayoristas del banco central (wCBDC): el libro mayor distribuido mBridge del BIS, corredores de divisas soberanos, creadores de mercado algorítmicos automatizados y la reconfiguración geopolítica de la liquidación comercial global.",
   "date": "2026-11-17",
   "author": "Tariq Mahmood",
   "tags": [
@@ -45,7 +45,7 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Interior de la bóveda de alta seguridad con pilas de finos lingotes de oro que reflejan la iluminación de seguridad ambiental",
+      "alt": "Interior de una bóveda de alta seguridad con pilas de finos lingotes de oro que reflejan la iluminación de seguridad ambiental",
       "caption": "Diversificación del balance soberano: los bancos centrales mundiales aceleran las compras de oro junto con los corredores bilaterales de compensación digital en moneda local."
     },
     {
@@ -71,5 +71,5 @@
       "text": "La consecuencia última de la tecnología de contabilidad distribuida en la banca central no es el reemplazo completo de las instituciones fiduciarias existentes, sino la eliminación de los cuellos de botella de la compensación centralizada. En la próxima década, el comercio internacional operará a través de redes algorítmicas multimoneda interconectadas donde el costo de transacción, la velocidad criptográfica y la autonomía soberana dictan el flujo financiero global."
     }
   ],
-  "sourceHash": "666888b0c175dd59ee33e335649c14b8b3361111"
+  "sourceHash": "137fa3c691bf8003f188496a247e491c1ee57f76"
 }

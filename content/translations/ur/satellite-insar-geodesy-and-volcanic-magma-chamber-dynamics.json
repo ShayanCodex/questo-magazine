@@ -1,7 +1,7 @@
 {
   "slug": "satellite-insar-geodesy-and-volcanic-magma-chamber-dynamics",
-  "title": "انٹرفیومیٹرک سنتھیٹک اپرچر ریڈار (InSAR) اور میگما چیمبر ڈائنامکس: سیٹلائٹ جیوڈیسی آف سپر وولکینک انفلیشن",
-  "excerpt": "ایک جیو فزکس اور سیٹلائٹ ریموٹ سینسنگ اسٹڈی: ریڈار انٹرفیرومیٹری فیز انریپنگ، موگی پوائنٹ سورس سٹرین ماڈلز، ایٹماسفیرائزیشن اور پری میگما کو درست کرنا۔",
+  "title": "Satellite Radar & Magma Dynamics",
+  "excerpt": "A geophysics and satellite remote sensing study: radar interferometry phase unwrapping, Mogi point-source strain models, atmospheric delay correction, and pre-eruptive magma pressurization.",
   "date": "2026-11-17",
   "author": "Elena Rostova",
   "tags": [
@@ -13,62 +13,62 @@
     "earth-science"
   ],
   "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80",
-  "imageAlt": "وسیع آتش فشاں پہاڑی کیلڈیرا اور برفانی چوٹیاں ڈرامائی سورج کی روشنی کے تحت اونچائی والے فضائی نقطہ نظر سے پکڑی گئی ہیں",
+  "imageAlt": "Vast volcanic mountain caldera and glacial peaks captured from high-altitude aerial perspective under dramatic sunlight",
   "body": [
     {
       "type": "h2",
-      "text": "سیٹلائٹ ریڈار انٹرفیومیٹری کی درستگی جیوڈیسی"
+      "text": "The Precision Geodesy of Satellite Radar Interferometry"
     },
     {
       "type": "p",
-      "text": "آتش فشاں راکھ کے پھوڑوں کو نکالنے سے بہت پہلے یا ہارمونک تھرتھراہٹ کو متحرک کرتا ہے۔ چونکہ آتش فشاں خطہ زمینی عملے کے لیے اکثر ناقابل رسائی یا خطرناک ہوتا ہے، اس لیے جیو فزیکسٹ انٹرفیومیٹرک سنتھیٹک اپرچر ریڈار (InSAR) پر انحصار کرتے ہیں۔ مدار سے ہٹ کر ہفتوں یا سالوں میں لی گئی دو ریڈار امیجز کے ریڈار فیز کے فرق کا موازنہ کرکے، سائنس دان سینکڑوں مربع کلومیٹر میں ملی میٹر پیمانے پر زمینی اخترتی کا نقشہ بنا سکتے ہیں۔"
+      "text": "Long before a volcano vents ash plumes or triggers harmonic tremor swarms, the ascent of molten magma inflates the overlying crust. Because volcanic terrain is often inaccessible or hazardous for ground crews, geophysicists rely on Interferometric Synthetic Aperture Radar (InSAR). By comparing the radar phase differences of two radar images taken weeks or years apart from orbit, scientists can map millimeter-scale ground deformation across hundreds of square kilometers."
     },
     {
       "type": "h2",
-      "text": "جیوڈیٹک اور جیو مکینیکل اصول"
+      "text": "Geodetic and Geomechanical Principles"
     },
     {
       "type": "ul",
       "items": [
-        "انٹرفیروگرام فیز فرینجز: ایک ڈیفرینشل انٹرفیروگرام میں ہر باری باری قوس قزح کا کنارے لائن آف سائیٹ سطح کی نقل مکانی کے نصف ریڈار طول موج (عام طور پر 2.8 سینٹی میٹر سی بینڈ سینٹینیل 1 سیٹلائٹ کے لیے) کے مساوی ہے۔",
-        "ایٹموسفیرک فیز اسکرین (APS) کی تصحیح: عددی موسمی تجزیے کے ماڈلز (جیسے ECMWF GACOS) کا استعمال کرتے ہوئے ٹروپاسفیرک آبی بخارات میں تاخیر کو کم کرنا تاکہ بادل کے نمونے کو ٹیکٹونک اپلفٹ کے طور پر چھپانے سے روکا جا سکے۔",
-        "موگی اور یانگ تجزیاتی ماخذ ماڈلز: زمین سے 5 سے 15 کلومیٹر نیچے واقع میگما ذخائر کی گہرائی، حجم کی تبدیلی، اور دباؤ کے پہلو کے تناسب کا حساب لگانے کے لیے سطح کی اخترتی پروفائلز کو الٹنا۔",
-        "پرسسٹنٹ سکیٹرر انٹرفیرومیٹری (PSI): پیچیدہ ٹیکٹونک فالٹس میں ذیلی ملی میٹر کریپ کو الگ کرنے کے لیے دہائیوں کے دوران مستحکم عکاس اہداف (راک آؤٹ کرپس، انفراسٹرکچر) کا سراغ لگانا۔"
+        "Interferogram Phase Fringes: Each alternating rainbow fringe in a differential interferogram corresponds to half a radar wavelength (typically 2.8 cm for C-band Sentinel-1 satellites) of line-of-sight surface displacement.",
+        "Atmospheric Phase Screen (APS) Correction: Mitigating tropospheric water vapor delays using numerical weather reanalysis models (such as ECMWF GACOS) to prevent cloud artifacts from masquerading as tectonic uplift.",
+        "Mogi & Yang Analytical Source Models: Inverting surface deformation profiles to calculate the depth, volume change, and aspect ratio of pressurizing magma reservoirs located 5 to 15 kilometers below ground.",
+        "Persistent Scatterer Interferometry (PSI): Tracking stable reflective targets (rock outcrops, infrastructure) over decades to isolate sub-millimeter creep across complex tectonic faults."
       ]
     },
     {
       "type": "quote",
-      "text": "700 کلومیٹر کی اونچائی پر گردش کرنے والے سیٹلائٹ اب ٹھوس بیسالٹ کے کئی میل کے نیچے انگلی کے ناخن کی موٹائی سے سانس لینے والے میگما چیمبر کی سوجن کا پتہ لگاسکتے ہیں۔",
-      "cite": "کوئسٹو سیٹلائٹ جیوڈیسی اور آتش فشانی ریسرچ آبزرویٹری"
+      "text": "Satellites orbiting at 700 kilometers altitude can now detect a breathing magma chamber swelling by the thickness of a fingernail beneath several miles of solid basalt.",
+      "cite": "Questo Satellite Geodesy & Volcanology Research Observatory"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-      "alt": "جیوتھرمل آتش فشاں وادی جس میں بڑھتی ہوئی گندھک کے بھاپ کے پلمز اور ٹوٹے ہوئے معدنی کرسٹ کی تشکیل",
-      "caption": "ایکٹو ٹیکٹونک زمینی نقل مکانی: جیوتھرمل فیلڈز جو ہائیڈرو تھرمل سیال کے بہاؤ کی وجہ سے تیز رفتار چکراتی کمی اور افراط زر کا سامنا کر رہے ہیں۔"
+      "alt": "Geothermal volcanic valley with rising sulfur steam plumes and fractured mineral crust formations",
+      "caption": "Active tectonic ground displacement: Geothermal fields experiencing rapid cyclic subsidence and inflation driven by hydrothermal fluid flow."
     },
     {
       "type": "h2",
-      "text": "سطحی تناؤ سے میگمیٹک ہائیڈرو فریکچر کی پیشن گوئی تک"
+      "text": "From Surface Strain to Magmatic Hydrofracture Forecasting"
     },
     {
       "type": "p",
-      "text": "جب سطحی افراط زر کی شرح غیر خطوطی طور پر تیز ہوتی ہے تو میزبان چٹان میں تناؤ کا تناؤ تناؤ کی طاقت سے زیادہ ہو جاتا ہے، جس سے ڈائک کے پھیلاؤ کو متحرک کیا جاتا ہے — پگھلا ہوا میگما سطح کی طرف ٹوٹ جاتا ہے۔ ریئل ٹائم براڈ بینڈ سیسمومیٹر نیٹ ورکس کے ساتھ مسلسل InSAR رفتار کے نقشوں کو جوڑنے سے شہری تحفظ کی ایجنسیوں کو دھماکہ خیز پھٹنے سے ہفتوں پہلے انخلاء کی وارننگ جاری کرنے کی اجازت ملتی ہے۔"
+      "text": "When rate of surface inflation accelerates nonlinearly, tensile stress in the host rock exceeds tensile strength, triggering dike propagation—molten magma cleaving fractures toward the surface. Coupling continuous InSAR velocity maps with real-time broadband seismometer networks allows civil protection agencies to issue evacuation warnings weeks before an explosive eruption occurs."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kc_T4buG2gE",
       "title": "USGS Geodesy: Volcano Deformation and Magma Chamber Dynamics",
-      "caption": "سیٹلائٹ ریڈار انٹرفیومیٹری (InSAR) اور جیو مکینیکل ماڈلنگ زیر زمین میگما آبی ذخائر کے اوپر کرسٹل افراط زر کا مظاہرہ کرتی ہے۔"
+      "caption": "Satellite radar interferometry (InSAR) and geomechanical modeling demonstrating crustal inflation above pressurizing subsurface magma reservoirs."
     },
     {
       "type": "h2",
-      "text": "سپر آتش فشاں طاسوں میں کالڈارا کی حرکیات کو روکنا"
+      "text": "Constraining Caldara Dynamics Across Supervolcanic Basins"
     },
     {
       "type": "p",
-      "text": "ییلو اسٹون اور کیمپی فلیگری کالڈیراس کے دوران، طویل مدتی InSAR ریکارڈز بغیر پھٹنے کے مسلسل ترقی اور تنزلی کے مسلسل دہائیوں کے چکروں کو ظاہر کرتے ہیں، جسے بریڈیززم کہا جاتا ہے۔ InSAR جیو فزیکسٹوں کو سومی ہائیڈرو تھرمل گیس کی توسیع اور خطرناک گہرے میگما ری چارج کے درمیان فرق کرنے کی اجازت دیتا ہے، جو ارضیاتی خطرے میں کمی کے لیے واضح تجرباتی معیار قائم کرتا ہے۔"
+      "text": "Over the Yellowstone and Campi Flegrei calderas, long-term InSAR records reveal continuous decadal cycles of uplift and deflation without eruption, known as bradyseism. InSAR allows geophysicists to differentiate between benign hydrothermal gas expansion and perilous deep magma recharge, establishing clear empirical criteria for geological risk mitigation."
     }
   ],
-  "sourceHash": "7e81a8ba1da5cd0254de1a71416a0732f35df3b8"
+  "sourceHash": "56a95419b1674ce9432cdf9c71b0ff214cdf8144"
 }

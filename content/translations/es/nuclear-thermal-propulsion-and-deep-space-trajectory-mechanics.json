@@ -1,6 +1,6 @@
 {
   "slug": "nuclear-thermal-propulsion-and-deep-space-trajectory-mechanics",
-  "title": "Propulsión térmica nuclear y mecánica de trayectoria en el espacio profundo",
+  "title": "Propulsión térmica nuclear en el espacio profundo",
   "excerpt": "Un análisis de astrofísica orbital de reactores de fisión de uranio poco enriquecido de alto ensayo, turbobombas criogénicas de hidrógeno y ventanas de transferencia interplanetaria rápida.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
@@ -32,12 +32,12 @@
         "Alto impulso específico: los sistemas NTP ofrecen el doble de eficiencia de propulsor que los motores de cohetes hidrolox criogénicos modernos.",
         "Ventanas de tránsito acortadas: duplicar la velocidad de escape reduce la duración del tránsito Tierra-Marte de nueve meses a menos de cien días.",
         "Núcleos de combustible HALEU: uranio poco enriquecido de alto ensayo (menos del 20 % de enriquecimiento) recubierto con carburo de circonio refractario garantiza la estabilidad estructural bajo flujo térmico extremo.",
-        "Flexibilidad para abortar: Los presupuestos delta-v enormemente aumentados permiten trayectorias de clase de oposición con capacidades de retorno inmediato."
+        "Flexibilidad para abortar: Los presupuestos delta-v enormemente aumentados permiten trayectorias de clases de oposición con capacidades de retorno inmediato."
       ]
     },
     {
       "type": "quote",
-      "text": "Motores químicos llevaron a la humanidad a la Luna; La propulsión térmica nuclear es el prerrequisito termodinámico ineludible para convertirse en una verdadera civilización interplanetaria.",
+      "text": "Los motores químicos llevaron a la humanidad a la Luna; La propulsión térmica nuclear es el prerrequisito termodinámico ineludible para convertirse en una verdadera civilización interplanetaria.",
       "cite": "Anales de propulsión interplanetaria y exploración del espacio profundo"
     },
     {
@@ -62,12 +62,12 @@
     },
     {
       "type": "h2",
-      "text": "Ventanas de transferencia de órbita interplanetaria y protección contra la radiación"
+      "text": "Ventanas de transferencia de órbita interplanetaria y blindaje contra la radiación"
     },
     {
       "type": "p",
-      "text": "El blindaje de sombras que utiliza capas de tungsteno, hidruro de litio y tanques de propulsor agotados atenúa los rayos gamma y los neutrones del núcleo a niveles más bajos que el fondo de rayos cósmicos naturales absorbidos durante las fases de crucero interplanetario de larga duración."
+      "text": "El blindaje de sombra que utiliza tungsteno en capas, hidruro de litio y tanques de propulsor agotados atenúa los rayos gamma y los neutrones del núcleo a niveles más bajos que el fondo de rayos cósmicos naturales absorbidos durante las fases de crucero interplanetario de larga duración."
     }
   ],
-  "sourceHash": "a15479b6870ab465e6cfee720e68ee55f7f7d586"
+  "sourceHash": "1a8b296a9c506f2226f74295bb070c23348f4a22"
 }

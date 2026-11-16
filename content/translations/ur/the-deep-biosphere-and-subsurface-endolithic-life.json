@@ -1,0 +1,70 @@
+{
+  "slug": "the-deep-biosphere-and-subsurface-endolithic-life",
+  "title": "The Deep Biosphere Underground",
+  "excerpt": "Exploring the vast subsurface microbial biome surviving miles beneath continental crust via radiolytic hydrogen, serpentinization, and ultra-slow metabolic turnover.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "science",
+    "microbiology",
+    "astrobiology",
+    "geology",
+    "extremophiles",
+    "deep-biosphere"
+  ],
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Subterranean geological rock cavern with dramatic mineral formations and deep underground aquifers",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Subterranean Reservoir of Terrestrial Life"
+    },
+    {
+      "type": "p",
+      "text": "Deep beneath continents and abyssal ocean floors lies an unseen biosphere containing up to 20 billion tons of microbial carbon—hundreds of times more biomass than all humans combined. Living thousands of meters below surface sunlight, endolithic archaea and bacteria thrive inside microscopic rock pores under crushingly high pressure and temperatures reaching 120°C."
+    },
+    {
+      "type": "h2",
+      "text": "Chemolithoautotrophy and Radiolysis"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Radiolytic Water Splitting: Alpha and gamma radiation from decaying uranium and thorium splitting pore water molecules into hydrogen gas (H2) and hydrogen peroxide.",
+        "Sulfate-Reducing Extremophiles: Organisms like Candidatus Desulforudis audaxviator living in solitary isolation, reducing sulfate with radiolytic hydrogen.",
+        "Geological Millennial Lifespans: Microbes operating at near-zero basal metabolic rates, dividing once every hundreds or thousands of years.",
+        "Astrobiological Analogues: Deep subterranean survival strategies serving as direct models for possible life within the subsurface crusts of Mars and Europa."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Life on Earth is not merely a superficial crustal film; the rocks themselves are alive, powered by the slow atomic decay of the planet.",
+      "cite": "Questo Subsurface Geomicrobiology & Astrobiology Initiative"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Deep core drilling geological survey rig extracting bedrock samples from kilometers underground",
+      "caption": "Aseptic core sample drilling: Extracting pristine fractured granite from ultra-deep boreholes without surface microbial contamination."
+    },
+    {
+      "type": "h2",
+      "text": "The Limits of Organic Stability"
+    },
+    {
+      "type": "p",
+      "text": "At depths exceeding 5 kilometers, geothermal heat approaches 122°C—the known thermal limit where ATP hydrolyzes spontaneously and DNA bonds disintegrate. Scientists explore these deep boundaries to discover heat-shock proteins and reverse gyrase enzymes that stabilize macromolecular structures."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/-M7O86GlE14",
+      "title": "How Microbes Live Miles Beneath Earth: The Deep Biosphere",
+      "caption": "Scientific exploration of subsurface geomicrobiology, subterranean aquifers, and life powered by rock radiolysis without sunlight."
+    },
+    {
+      "type": "p",
+      "text": "The deep biosphere proves that life does not require sunlight or photosynthesis to thrive across geological epochs."
+    }
+  ],
+  "sourceHash": "3257e6bc430b665adaa80a6e1c4dd0ef198a30f9"
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "high-order-ambisonics-and-spherical-spatial-acoustics",
+  "title": "Ambisonique de haut niveau et audio 3D",
+  "excerpt": "Décomposition de champs sonores acoustiques à 360 degrés à l'aide d'harmoniques sphériques, d'équations polaires au format B et de fonctions de transfert liées à la tête pour une immersion en réalité virtuelle.",
+  "date": "2026-11-17",
+  "author": "Orion Kaelen",
+  "tags": [
+    "sound",
+    "acoustics",
+    "spatial-audio",
+    "ambisonics",
+    "virtual-reality",
+    "audio-engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Console de mixage de studio d'enregistrement acoustique professionnel avec moniteurs audio spatiaux et formes d'onde",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Découplage des champs sonores de la disposition des enceintes"
+    },
+    {
+      "type": "p",
+      "text": "Le son surround traditionnel (5.1 ou 7.1) envoie des pistes audio discrètes vers des positions d'enceintes fixes. Si un locuteur manque ou si les auditeurs se décentrent, l’illusion spatiale s’effondre. L'ambisonique, inventée par Michael Gerzon, traite l'audio comme un champ d'ondes sphérique continu, décomposant le son en trois dimensions à l'aide de fonctions mathématiques harmoniques sphériques."
+    },
+    {
+      "type": "h2",
+      "text": "Fondements acoustiques de l'ambisonique d'ordre supérieur (HOA)"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Format B du premier ordre : représentant la pression (W, omnidirectionnel) et les vecteurs de vitesse des particules le long de trois axes orthogonaux (X : avant-arrière, Y : gauche-droite, Z : haut-bas).",
+        "Expansion d'ordre supérieur : l'augmentation des ordres harmoniques sphériques (2e, 3e, jusqu'au 7e ordre) réduit la résolution angulaire spatiale, affinant la localisation acoustique.",
+        "Décodage indépendant des haut-parleurs : un seul mixage ambisonique peut être décodé dynamiquement vers un dôme de 64 haut-parleurs, un salon 5.1 ou des écouteurs binauraux en temps réel.",
+        "Synthèse binaurale HRTF : champs sonores ambisoniques convolutifs avec fonctions de transfert liées à la tête pour simuler les réflexions du pavillon et les délais interauraux pour la VR."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "L'ambisonique d'ordre supérieur capture non seulement les événements sonores, mais aussi l'architecture géométrique précise de l'espace dans lequel ils se répercutent.",
+      "cite": "Questo Spatial Acoustics & Immersive Sound Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Réseau de microphones 3D multi-capsules sphériques configuré pour un enregistrement sur le terrain à 360 degrés",
+      "caption": "Réseaux de microphones tétraédriques et sphériques : enregistrement des gradients de pression acoustique spatiale avec des capsules à condensateur assorties."
+    },
+    {
+      "type": "h2",
+      "text": "Suivi de la tête en temps réel et réalité virtuelle"
+    },
+    {
+      "type": "p",
+      "text": "Dans la réalité virtuelle, lorsqu'un utilisateur tourne la tête, la matrice de coordonnées ambisoniques tourne en temps réel avec une latence inférieure à 10 ms. La source sonore reste ancrée dans l’espace 3D, fournissant des signaux neurologiques qui incitent le cortex auditif à vivre une véritable immersion."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/yPhJj1RZfA0",
+      "title": "Explication de l'audio spatial et des microphones ambisoniques du 7e ordre",
+      "caption": "Revue de l'ingénierie acoustique expliquant les réseaux de microphones sphériques, le décodage au format B et la résolution spatiale dans l'audio immersif."
+    },
+    {
+      "type": "p",
+      "text": "HOA permet aux ingénieurs du son de capturer l'âme acoustique d'une cathédrale et de la reproduire de manière binaurale avec une précision extrême."
+    }
+  ],
+  "sourceHash": "f7227dc527393079c1bef92ea9b04afab79c7960"
+}

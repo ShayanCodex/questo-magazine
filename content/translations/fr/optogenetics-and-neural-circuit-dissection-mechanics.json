@@ -1,7 +1,7 @@
 {
   "slug": "optogenetics-and-neural-circuit-dissection-mechanics",
-  "title": "Optogénétique et dissection des circuits neuronaux : Channelrhodopsines, optodes et modulation comportementale",
-  "excerpt": "Contrôle optique en milliseconde d'ensembles neuronaux génétiquement ciblés : examen de la biophysique des opsines, de la délivrance de vecteurs viraux et de la cartographie fonctionnelle des engrammes de mémoire.",
+  "title": "Optogénétique et circuits neuronaux",
+  "excerpt": "Contrôle optique en milliseconde d'ensembles neuronaux génétiquement ciblés : examen de la biophysique de l'opsine, de la délivrance de vecteurs viraux et de la cartographie fonctionnelle des engrammes de mémoire.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "La traduction clinique de l'optogénétique est déjà en cours. En ophtalmologie, l'injection intravitréenne de canalrhodopsines décalées vers le rouge dans les cellules ganglionnaires rétiniennes survivantes a réussi à restaurer l'acuité visuelle partielle chez des patients aveuglés par une rétinite pigmentaire. En neurochirurgie, des optodes micro-LED sans fil sont en cours de développement pour remplacer la stimulation cérébrale profonde conventionnelle, offrant une suppression des tremblements sans effets secondaires cognitifs."
     }
   ],
-  "sourceHash": "039003af7f0c4219ce90ddbdc8b6d3e6af1feab4"
+  "sourceHash": "bd0870b81f752a390a68cc3e511c0329158fe81b"
 }

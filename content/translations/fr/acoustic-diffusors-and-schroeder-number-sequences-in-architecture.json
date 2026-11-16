@@ -1,6 +1,6 @@
 {
   "slug": "acoustic-diffusors-and-schroeder-number-sequences-in-architecture",
-  "title": "Diffuseurs acoustiques et séquences de Schroeder en architecture",
+  "title": "Diffuseurs acoustiques et séquences de Schroeder",
   "excerpt": "Principes mathématiques des résidus quadratiques et des diffuseurs de racines primitives, diffusion par réseau de phase et optimisation de l'espace acoustique dans les salles de concert.",
   "date": "2026-11-15",
   "author": "Elena Rostova",
@@ -12,7 +12,7 @@
     "concert-halls"
   ],
   "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "Sculptural acoustic timber wall panels and architectural baffles in a modern philharmonic auditorium",
+  "imageAlt": "Panneaux muraux acoustiques sculpturaux en bois et déflecteurs architecturaux dans un auditorium philharmonique moderne",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Au-delà de la réflexion spéculaire et de l'absorption"
+      "text": "Points clés"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Acoustic Diffusors & Schroeder Sequences in Architecture."
+      "alt": "Diffuseurs acoustiques et séquences de Schroeder en architecture - Opérationnel Figure 4",
+      "caption": "Observation empirique : mécanique opérationnelle et télémétrie fondamentale prenant en charge les diffuseurs acoustiques et les séquences de Schroeder en architecture."
     },
     {
       "type": "ul",
       "items": [
-        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths that shift phase evenly.",
-        "Primitive Root Diffusors (PRD): Utilize prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
-        "Preservation of Reverberant Energy: Unlike fiberglass absorbers, diffusors maintain room energy while eliminating flutter echoes and comb filtering.",
-        "Spatial Envelopment: Distributed phase grating arrays enhance the subjective impression of listener envelopment (LEV) in symphonic halls."
+        "Diffuseurs de résidus quadratiques (QRD) : conçus à l'aide de l'arithmétique mathématique modulaire $s_n = n^2 \\pmod{N}$, créant des profondeurs de puits qui changent de phase uniformément.",
+        "Diffuseurs de racines primitives (PRD) : utilisent la théorie des nombres premiers pour éliminer les réflexions spéculaires d'ordre zéro sur de larges bandes acoustiques de moyennes fréquences.",
+        "Préservation de l'énergie réverbérante : contrairement aux absorbeurs en fibre de verre, les diffuseurs maintiennent l'énergie de la pièce tout en éliminant les échos de flottement et le filtrage en peigne.",
+        "Enveloppement spatial : les réseaux de réseaux de phase distribués améliorent l'impression subjective d'enveloppement de l'auditeur (LEV) dans les salles symphoniques."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Acoustic Diffusors & Schroeder Sequences in Architecture."
+      "alt": "Diffuseurs acoustiques et séquences de Schroeder en architecture - Opérationnel Figure 2",
+      "caption": "Observation empirique : mécanique opérationnelle et télémétrie fondamentale prenant en charge les diffuseurs acoustiques et les séquences de Schroeder en architecture."
     },
     {
       "type": "h2",
-      "text": "Au-delà de la réflexion spéculaire et de l'absorption"
+      "text": "Mathématiques des réseaux de phase"
     },
     {
       "type": "p",
-      "text": "L'acoustique architecturale a évolué au-delà de la tension binaire de la réflexion spéculaire et de l'absorption poreuse. Alors que les surfaces planes dures réfléchissent le son comme des miroirs et que les tissus denses atténuent l'énergie sonore, les diffuseurs diffusent uniformément l'énergie des ondes incidentes dans le temps et les coordonnées spatiales sans drainer la vitalité acoustique ambiante."
+      "text": "Lancés par le physicien Manfred Schroeder à la fin des années 1970, les réseaux de phase mathématiques utilisent différentes profondeurs de puits séparées par de minces séparateurs acoustiques. Lorsqu'une onde incidente rencontre ces puits, les ondelettes réfléchies sortent avec des retards de phase distincts, ce qui entraîne une interférence destructrice le long de l'axe spéculaire et une large dispersion ailleurs."
     },
     {
       "type": "video",
-      "title": "Architectural Acoustics & Schroeder Diffusor Physics",
-      "caption": "An engineering overview of quadratic residue diffusors, well-depth calculations, and sound diffusion patterns in auditoriums.",
-      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
+      "title": "Acoustique architecturale et physique des diffuseurs Schroeder",
+      "caption": "Un aperçu technique des diffuseurs de résidus quadratiques, des calculs de profondeur de puits et des modèles de diffusion sonore dans les auditoriums."
     },
     {
       "type": "h2",
-      "text": "Au-delà de la réflexion spéculaire et de l'absorption"
+      "text": "Optimisation informatique dans le design contemporain"
     },
     {
       "type": "p",
-      "text": "L'acoustique architecturale a évolué au-delà de la tension binaire de la réflexion spéculaire et de l'absorption poreuse. Alors que les surfaces planes dures réfléchissent le son comme des miroirs et que les tissus denses atténuent l'énergie sonore, les diffuseurs diffusent uniformément l'énergie des ondes incidentes dans le temps et les coordonnées spatiales sans drainer la vitalité acoustique ambiante."
+      "text": "Les pratiques architecturales contemporaines utilisent la modélisation paramétrique d'ondes par éléments finis pour sculpter des panneaux de bois ondulés en 3D directement dans la géométrie intérieure des auditoriums, mêlant physique acoustique et esthétique sculpturale."
     }
   ],
-  "sourceHash": "a694b4a265a24dd1874e8c29c785c9ef5dd9ef57"
+  "sourceHash": "0556e0be29731cbb294daa6683e2e47b6fda9836"
 }

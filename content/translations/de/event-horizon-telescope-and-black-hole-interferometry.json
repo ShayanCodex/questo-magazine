@@ -1,0 +1,70 @@
+{
+  "slug": "event-horizon-telescope-and-black-hole-interferometry",
+  "title": "Abbildung supermassiver Schwarzer Löcher",
+  "excerpt": "Die Astrophysik der Very Long Baseline Interferometry, die Millimeter-Radioteleskope auf dem Planeten Erde synchronisiert, um Schattenstrukturen des Ereignishorizonts aufzulösen.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "astrophysics",
+    "black-holes",
+    "vlbi",
+    "astronomy",
+    "physics",
+    "relativity"
+  ],
+  "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Sternenfeld-Kosmos mit leuchtender gravitativer Akkretionsscheibe um eine himmlische Singularität",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Synthese einer erdgroßen Radioapertur"
+    },
+    {
+      "type": "p",
+      "text": "Das Auflösen des Ereignishorizonts von Messier 87 oder Sagittarius A* ist gleichbedeutend mit dem Erkennen einer Orange auf der Mondoberfläche von der Erde aus. Kein einzelnes optisches Teleskop könnte jemals die erforderliche Winkelauflösung erreichen. Das Event Horizon Telescope (EHT) erreicht dies, indem es synchronisierte Radioobservatorien auf sechs Kontinenten zu einem virtuellen Teleskop vereint, das so groß ist wie unser Planet."
+    },
+    {
+      "type": "h2",
+      "text": "Technische Eckpfeiler von Millimeter VLBI"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Wasserstoff-Maser-Atomuhren: Bereitstellung einer extrem stabilen Zeitgenauigkeit im Sub-Pikosekundenbereich, um Petabytes an rohen astronomischen Wellenfrontdaten zu markieren.",
+        "1,3-Millimeter-atmosphärische Transparenz: Abstimmung der Empfänger auf 230 GHz, um galaktischen Synchrotronstaub und Erdfeuchtigkeitswolken zu durchdringen.",
+        "Supercomputer-Datenkorrelation: Verarbeitung von Festplatten, die aus der Antarktis und Atacama geliefert werden, durch spezielle ASIC-Korrelations-Supercomputer.",
+        "Computergestützte interferometrische Bildgebung: Verwendung spärlicher Bayes'scher Modellierung und neuronaler Netze zur Rekonstruktion von Bildern aus unvollständiger Fourier-Basislinienabdeckung."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Wir haben den Planeten Erde in ein einziges kosmisches Vergrößerungsglas verwandelt, um Einsteins allgemeine Relativitätstheorie an der ultimativen Grenze der Raumzeit zu testen.",
+      "cite": "Questo Astrophysics & High-Energy Gravitation Observatory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Submillimeter-Radioteleskop-Antennenschüssel in großer Höhe, die auf den Sternenhimmel zeigt",
+      "caption": "Submillimeter-Array ALMA in der Atacama-Wüste: Die phasengesteuerte Ankerstation mit höchster Empfindlichkeit für globale EHT-Beobachtungen."
+    },
+    {
+      "type": "h2",
+      "text": "Testen des Kerr-Metric-Frame-Draggings"
+    },
+    {
+      "type": "p",
+      "text": "Die resultierenden Schattenbilder bestätigen direkt die Photonenringgeometrie, die von Einsteins Feldgleichungen für ein rotierendes Kerr-Schwarzes Loch vorhergesagt wurde, und demonstrieren relativistische Doppler-Strahlung entlang des sich nähernden Akkretionsplasmaflusses."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Q1bSDnuIPbo",
+      "title": "Veritasium: Wie haben sie eigentlich dieses Schwarze-Loch-Foto gemacht?",
+      "caption": "Derek Muller erforscht die Interferometrie mit sehr langer Basislinie, die Phasenkalibrierung der Atomuhr und die Abbildung des Schattens des Ereignishorizonts."
+    },
+    {
+      "type": "p",
+      "text": "Die Interferometrie mit sehr langer Basislinie wird weiterhin auf weltraumgestützte Orbiter ausgeweitet, um die dynamische zeitliche Bewegung von Plasmastrahlen Schwarzer Löcher aufzudecken."
+    }
+  ],
+  "sourceHash": "117c9997a3e6952ba5ee73457f3802fa05e2b798"
+}

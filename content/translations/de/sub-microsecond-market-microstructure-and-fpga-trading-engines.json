@@ -1,7 +1,7 @@
 {
   "slug": "sub-microsecond-market-microstructure-and-fpga-trading-engines",
-  "title": "Marktmikrostruktur im Submikrosekundenbereich: FPGA-Kernel-Pipelining, Kernel-Bypass und Orderbuch-Matching-Engines",
-  "excerpt": "Eine quantitative systemtechnische Studie: Finanzarchitektur mit extrem geringer Latenz, Solarflare EF_VI-Kernel-Bypass, benutzerdefinierte Verilog-Limit-Orderbuch-Engines und Nanosekunden-Mikrowellen-Sichtliniennetzwerke.",
+  "title": "Inside Sub-Microsecond Trading Engines",
+  "excerpt": "Eine quantitative systemtechnische Studie: Finanzarchitektur mit extrem geringer Latenz, Solarflare EF_VI-Kernel-Bypass, benutzerdefinierte Verilog-Limit-Order-Book-Engines und Nanosekunden-Mikrowellen-Sichtliniennetzwerke.",
   "date": "2026-11-17",
   "author": "Tariq Mahmood",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Da bei Live-Tests an Finanzbörsen das Risiko verheerender Verluste durch betrügerische Algorithmen besteht, setzen quantitative Unternehmen Hardware-in-the-Loop-Teststände ein. Dedizierte Netzwerkerfassungsgeräte geben Gigabytes von PCAP-Rohpaketerfassungen mit Leitungsgeschwindigkeit wieder und überprüfen so, dass jeder Zustandsmaschinenübergang formalen, bitgenauen mathematischen Spezifikationen entspricht."
     }
   ],
-  "sourceHash": "38becfb28a9169eef4b4f8b6fa39db424b8bbffb"
+  "sourceHash": "0e2ba5dc0aa5365018310a08f3ec407e2310fd6d"
 }

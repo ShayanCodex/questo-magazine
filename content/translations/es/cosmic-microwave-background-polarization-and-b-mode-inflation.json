@@ -1,6 +1,6 @@
 {
   "slug": "cosmic-microwave-background-polarization-and-b-mode-inflation",
-  "title": "Polarización del fondo cósmico de microondas: ondas gravitacionales primordiales en modo B e inflación cósmica",
+  "title": "El fondo cósmico de microondas y la inflación",
   "excerpt": "Descifrando el eco primordial del Big Bang: cómo las perturbaciones tensoriales, la dispersión de Thomson y las matrices de bolómetros criogénicos buscan la inflación cosmológica.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
@@ -36,7 +36,7 @@
       "type": "ul",
       "items": [
         "Cuadrupolos de dispersión de Thomson: La polarización lineal en el CMB surge exclusivamente de las anisotropías de temperatura de los cuadrupolos que inciden sobre los electrones libres durante la recombinación.",
-        "Polarización en modo E: Patrones de polarización en forma de gradiente, sin rizos, generados por perturbaciones de densidad escalar primordial, mapeados con extraordinaria precisión por WMAP y Planck.",
+        "Polarización en modo E: Patrones de polarización en forma de gradiente, sin curvaturas, generados por perturbaciones de densidad escalar primordial, mapeados con extraordinaria precisión por WMAP y Planck.",
         "Polarización en modo B: Patrones de polarización en forma de rizo, libres de divergencia, cuya fuente principal son las perturbaciones métricas tensoriales: ondas gravitacionales primordiales producidas durante la inflación cósmica.",
         "Contaminación por lentes gravitacionales: Las estructuras cósmicas intermedias lentejan gravitacionalmente modos E puros en modos B secundarios, lo que requiere complejos algoritmos estadísticos de eliminación de lentes."
       ]
@@ -58,7 +58,7 @@
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
       "title": "La inflación cósmica y la búsqueda de ondas gravitacionales primordiales",
-      "caption": "Seminario de astrofísica que explica la polarimetría CMB, las restricciones de la relación tensor-escalar y la resta de polvo en primer plano."
+      "caption": "Seminario de astrofísica que explica la polarimetría CMB, las limitaciones de la relación tensor-escalar y la sustracción de polvo en primer plano."
     },
     {
       "type": "h2",
@@ -69,5 +69,5 @@
       "text": "El objetivo final de la polarimetría CMB moderna es limitar la relación tensor-escalar r. Establecer un límite superior en r limita directamente la escala de energía de la inflación cósmica, proporcionando campos de prueba empíricos para las compactaciones de la teoría de cuerdas y las Grandes Teorías Unificadas en energías de doce órdenes de magnitud más allá del alcance de los aceleradores de partículas terrestres."
     }
   ],
-  "sourceHash": "a6dc12ab94e18a7f58a375cffbb2a5755989504b"
+  "sourceHash": "d2026976065dd039c76567da775350556db2c1e5"
 }

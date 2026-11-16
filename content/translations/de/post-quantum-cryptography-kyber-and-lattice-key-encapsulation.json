@@ -1,6 +1,6 @@
 {
   "slug": "post-quantum-cryptography-kyber-and-lattice-key-encapsulation",
-  "title": "Post-Quantum-Kryptographie in der Produktion: Kyber, Dilithium und die Mathematik der Modul-Gitter-Schlüsselkapselung",
+  "title": "Post-Quantum-Kryptographie in der Produktion",
   "excerpt": "Eine softwaretechnische Aufschlüsselung NIST-standardisierter quantenresistenter Algorithmen: Module Learning with Errors (MLWE), polynomiale Ringarithmetik, zeitkonstanter Seitenkanalwiderstand und TLS-Hybridmigration.",
   "date": "2026-11-17",
   "author": "Hiroshi Tanaka",
@@ -32,7 +32,7 @@
       "items": [
         "Modul Lernen mit Fehlern (ML-KEM / Kyber): Die Sicherheit beruht auf der Schwierigkeit, kurze Vektoren in hochdimensionalen geometrischen Ganzzahlgittern zu finden, ein Problem, das gegen bekannte Quantenbeschleunigungen resistent ist.",
         "Polynomringarithmetik über Z_q: Berechnungen nutzen zahlentheoretische Transformationen (NTT) über Polynome vom Grad 256 mit Modulus q = 3329 und ermöglichen so SIMD- und AVX-512-Hardwarebeschleunigung.",
-        "Mikrocode-Ausführung in konstanter Zeit: Eliminierung bedingter Verzweigungen und Cache-Timing-Seitenkanäle, um den Verlust geheimer Schlüssel während der Polynom-Ablehnungsabtastung zu verhindern.",
+        "Ausführung von Mikrocode in konstanter Zeit: Eliminierung von bedingter Verzweigung und Cache-Timing-Seitenkanälen, um den Verlust geheimer Schlüssel während der Polynom-Ablehnungsabtastung zu verhindern.",
         "Hybride klassische Post-Quantum-Handshakes: Die Kapselung von Sitzungsschlüsseln über X25519 und ML-KEM-768 in TLS 1.3 ClientHello-Datensätzen stellt sicher, dass ein Zero-Day-Fehler in der neuen Gittermathematik die alten Sicherheitsgarantien nicht gefährden kann."
       ]
     },
@@ -59,7 +59,7 @@
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/ZRpcYSghGr8",
       "title": "IBM-Technologie: Wie Gitterkryptographie Post-Quantum-Daten sichert",
-      "caption": "Technische Aufschlüsselung zur Analyse des Modullernens mit Fehlern (ML-KEM/Kyber) und der mathematischen Gitter, die vor Quantenentschlüsselung schützen."
+      "caption": "Technische Aufschlüsselung zur Analyse des Modullernens mit Fehlern (ML-KEM/Kyber) und der mathematischen Gitter zum Schutz vor Quantenentschlüsselung."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Die Migration globaler Identitätsanbieter, Webbrowser und Bankbücher erfordert die strikte Einhaltung von FIPS 203 (ML-KEM) und FIPS 204 (ML-DSA). Organisationen, die Post-Quantum-Bibliotheken einsetzen, müssen formale mathematische Beweise mithilfe automatisierter Verifizierungs-Engines wie Coq verifizieren, um die Speichersicherheit vor Pufferüberlauf-Exploits zu gewährleisten."
     }
   ],
-  "sourceHash": "87a29ce40660b7365348efcaa041e6dcee98060a"
+  "sourceHash": "0e3fc3b399443c7063a7727cbfa32b31fe5593a0"
 }

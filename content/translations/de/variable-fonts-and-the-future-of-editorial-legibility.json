@@ -1,6 +1,6 @@
 {
   "slug": "variable-fonts-and-the-future-of-editorial-legibility",
-  "title": "Variable Schriftarten und die Zukunft der redaktionellen Lesbarkeit",
+  "title": "Variable Schriftarten und redaktionelle Lesbarkeit",
   "excerpt": "Wie OpenType-Variationsachsen, dynamische optische Größenanpassung und reaktionsfähige Gewichtsmodulation die Typografie und den Lesekomfort digitaler Zeitschriften revolutionieren.",
   "date": "2026-11-12",
   "updated": "2026-11-14",
@@ -12,7 +12,7 @@
     "accessibility"
   ],
   "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Macro photograph of finely carved metallic movable type sorts and typographic ink",
+  "imageAlt": "Makrofotografie von fein geschnitzten metallischen beweglichen Lettern und typografischer Tinte",
   "body": [
     {
       "type": "p",
@@ -24,13 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Fünf Jahrhunderte lang nach Johannes Gutenbergs Erfindung der beweglichen Lettern war eine Schriftart ein physisches, unflexibles Artefakt. Wenn ein Drucker einen 8-Punkt-Kursivdruck und einen 24-Punkt-Fettdruck-Schnitt benötigte, mussten zwei völlig separate Sätze Bleistanzen gegossen werden. Das Web verbrachte die ersten drei Jahrzehnte damit, dieses starre Paradigma zu reproduzieren, indem es für jede einzelne Schriftstärke separate Web-Fontdateien herunterlud."
+      "text": "Die OpenType Font Variations-Spezifikation löste diese historischen Grenzen auf. Eine einzelne Datei mit variablen Schriftarten enthält kontinuierliche mehrdimensionale Achsen – Gewicht (wght), Breite (wdth), Neigung (slnt) und vor allem optische Größe (opsz). Anstatt diskret von 400 auf 700 zu springen, können Designer die Gewichtung basierend auf Umgebungslichtsensoren oder Bildschirm-DPI dynamisch bei 523 oder 648 interpolieren."
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Variable Fonts and the Future of Editorial Legibility - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Variable Fonts and the Future of Editorial Legibility."
+      "alt": "Variable Schriftarten und die Zukunft der redaktionellen Lesbarkeit – Abbildung 4",
+      "caption": "Empirische Beobachtung: Betriebsmechanik und grundlegende Telemetrie zur Unterstützung variabler Schriftarten und die Zukunft der redaktionellen Lesbarkeit."
     },
     {
       "type": "code",
@@ -45,25 +45,25 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
+      "alt": "Variable Schriftarten und die Zukunft der redaktionellen Lesbarkeit – Abbildung 7",
+      "caption": "Empirische Beobachtung: Betriebsmechanik und grundlegende Telemetrie zur Unterstützung variabler Schriftarten und der Zukunft der redaktionellen Lesbarkeit."
     },
     {
       "type": "h3",
-      "text": "Wichtige ergonomische und Leistungsvorteile"
+      "text": "Wichtige Ergonomie- und Leistungsvorteile"
     },
     {
       "type": "ul",
       "items": [
-        "Network efficiency: Replacing 12 separate font files (totaling 400KB+) with a single, highly-optimized 42KB WOFF2 variable payload.",
-        "Automatic optical correction: At small body sizes (12-14px), letter counters widen and x-heights increase automatically to prevent ink trapping and eye strain.",
-        "Responsive dark mode adaptation: Automatically decreasing text font-weight by 15-20 units in dark mode to counteract bright text halation against black backgrounds."
+        "Netzwerkeffizienz: Ersetzen von 12 separaten Schriftartdateien (insgesamt über 400 KB) durch eine einzige, hochoptimierte variable Nutzlast von 42 KB WOFF2.",
+        "Automatische optische Korrektur: Bei kleinen Körpergrößen (12–14 Pixel) werden die Buchstabenzähler breiter und die X-Höhen automatisch erhöht, um Tintenansammlungen und eine Überanstrengung der Augen zu vermeiden.",
+        "Responsive Dunkelmodus-Anpassung: Automatische Reduzierung der Textschriftstärke um 15–20 Einheiten im Dunkelmodus, um hellen Textlichthöfen vor schwarzem Hintergrund entgegenzuwirken."
       ]
     },
     {
       "type": "p",
-      "text": "Fünf Jahrhunderte lang nach Johannes Gutenbergs Erfindung der beweglichen Lettern war eine Schriftart ein physisches, unflexibles Artefakt. Wenn ein Drucker einen 8-Punkt-Kursivdruck und einen 24-Punkt-Fettdruck-Schnitt benötigte, mussten zwei völlig separate Sätze Bleistanzen gegossen werden. Das Web verbrachte die ersten drei Jahrzehnte damit, dieses starre Paradigma zu reproduzieren, indem es für jede einzelne Schriftstärke separate Web-Fontdateien herunterlud."
+      "text": "Durch variable Typografie verbindet das digitale Publizieren endlich die historische Handwerkskunst luxuriöser gedruckter Monographien mit der fließenden Reaktionsfähigkeit moderner Webtechnik."
     }
   ],
-  "sourceHash": "693d8e0abd96891755d7864ea0e0fe3017dd364a"
+  "sourceHash": "ebdf7ef39f6b4bd385cccb75767f9bb0a22ceff5"
 }

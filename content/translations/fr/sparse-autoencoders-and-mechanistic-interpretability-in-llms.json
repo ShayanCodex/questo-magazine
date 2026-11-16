@@ -1,6 +1,6 @@
 {
   "slug": "sparse-autoencoders-and-mechanistic-interpretability-in-llms",
-  "title": "Auto-encodeurs clairsemés et interprétabilité mécaniste dans les modèles de base",
+  "title": "Auto-encodeurs clairsemés dans les modèles de base",
   "excerpt": "Une enquête d'interprétabilité mécaniste sur la superposition de réseaux neuronaux, les dictionnaires de fonctionnalités monosémantiques et le pilotage d'activation dans les modèles de langage frontière.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
@@ -69,5 +69,5 @@
       "text": "Le véritable test d'interprétabilité réside dans la vérification causale : le blocage ou l'atténuation d'un seul vecteur de caractéristiques identifié lors de l'inférence modifie systématiquement la trajectoire de raisonnement du modèle. Cela fournit une base mathématiquement vérifiable pour la sécurité, l’audit et la suppression des hallucinations de l’IA."
     }
   ],
-  "sourceHash": "183ef7795abb6a6fc8d1fdfedd389e6b1e923c34"
+  "sourceHash": "03b0159a05371f46de05504b5aab9b328c5282cd"
 }

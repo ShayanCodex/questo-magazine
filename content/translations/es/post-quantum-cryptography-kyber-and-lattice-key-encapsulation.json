@@ -1,7 +1,7 @@
 {
   "slug": "post-quantum-cryptography-kyber-and-lattice-key-encapsulation",
-  "title": "Criptografía poscuántica en producción: Kyber, dilithium y las matemáticas de la encapsulación de claves de celosía de módulo",
-  "excerpt": "Un desglose de la ingeniería de software de los algoritmos de resistencia cuántica estandarizados por el NIST: aprendizaje de módulos con errores (MLWE), aritmética de anillo polinomial, resistencia de canal lateral de tiempo constante y migración híbrida TLS.",
+  "title": "Criptografía poscuántica en producción",
+  "excerpt": "Un desglose de la ingeniería de software de los algoritmos resistentes a lo cuántico estandarizados por el NIST: aprendizaje de módulos con errores (MLWE), aritmética de anillos polinómicos, resistencia de canal lateral de tiempo constante y migración híbrida TLS.",
   "date": "2026-11-17",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -49,7 +49,7 @@
     },
     {
       "type": "h2",
-      "text": "Desafíos de fragmentación de MTU y sobrecarga de paquetes"
+      "text": "Desafíos de sobrecarga de paquetes y fragmentación de MTU"
     },
     {
       "type": "p",
@@ -58,8 +58,8 @@
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/ZRpcYSghGr8",
-      "title": "Tecnología IBM: Cómo la criptografía de celosía protege los datos poscuánticos",
-      "caption": "Desglose técnico que analiza el aprendizaje de módulos con errores (ML-KEM/Kyber) y las celosías matemáticas que protegen contra el descifrado cuántico."
+      "title": "Tecnología IBM: cómo la criptografía de celosía protege los datos poscuánticos",
+      "caption": "Desglose técnico que analiza el módulo de aprendizaje con errores (ML-KEM/Kyber) y las redes matemáticas que protegen contra el descifrado cuántico."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "La migración de proveedores de identidad globales, navegadores web y libros de contabilidad bancarios requiere un cumplimiento riguroso de FIPS 203 (ML-KEM) y FIPS 204 (ML-DSA). Las organizaciones que implementan bibliotecas poscuánticas deben verificar pruebas matemáticas formales utilizando motores de verificación automatizados como Coq para garantizar la seguridad de la memoria contra vulnerabilidades de desbordamiento del búfer."
     }
   ],
-  "sourceHash": "87a29ce40660b7365348efcaa041e6dcee98060a"
+  "sourceHash": "0e3fc3b399443c7063a7727cbfa32b31fe5593a0"
 }

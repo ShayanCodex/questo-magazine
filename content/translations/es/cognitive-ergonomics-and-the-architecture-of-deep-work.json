@@ -1,6 +1,6 @@
 {
   "slug": "cognitive-ergonomics-and-the-architecture-of-deep-work",
-  "title": "Ergonomía cognitiva: residuos de atención, cambio de contexto y enfoque espacial",
+  "title": "Ergonomía cognitiva y trabajo profundo",
   "excerpt": "Un modelo arquitectónico y de comportamiento para una producción intelectual profunda: eliminación de interrupciones de notificaciones sincrónicas, procesamiento por lotes y diseño de santuario físico.",
   "date": "2026-11-16",
   "author": "Elena Vance",
@@ -12,7 +12,7 @@
     "minimalism"
   ],
   "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Spacious architectural library workspace illuminated by soft daylight for deep uninterrupted focus",
+  "imageAlt": "Amplio espacio de trabajo arquitectónico de biblioteca iluminado por una suave luz natural para un enfoque profundo e ininterrumpido",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "El costo neurológico de la fragmentación atencional"
+      "text": "Principios de diseño ergonómico cognitivo"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Minimalist wooden desk setup with fountain pens, leather journal, and zero digital notifications",
-      "caption": "Analog sanctuaries: physical workspace segregation eliminating digital context switching and attentional residue."
+      "alt": "Configuración minimalista de escritorio de madera con plumas estilográficas, diario de cuero y cero notificaciones digitales",
+      "caption": "Santuarios analógicos: segregación física del espacio de trabajo que elimina el cambio de contexto digital y los residuos de atención."
     },
     {
       "type": "ul",
       "items": [
-        "Attentional Residue Mitigation: Sophie Leroy’s seminal research proves that human working memory cannot instantly flush context; shifting between open loops degrades subsequent problem-solving acuity.",
-        "Asynchronous Communication Protocols: Replacing real-time chat urgency with scheduled, long-form batch updates preserves prolonged blocks of unbroken flow state.",
-        "Physical and Digital Sanctuaries: Spatial segregation between creation zones (unconnected analog workstations) and communication zones (laptops with open network interfaces).",
-        "Biophilic Lighting & Acoustic Quieting: Calibrating natural circadian daylighting and low-frequency broadband acoustic masking lowers sympathetic nervous arousal, promoting sustained theta-wave concentration."
+        "Mitigación de residuos de atención: la investigación fundamental de Sophie Leroy demuestra que la memoria de trabajo humana no puede eliminar instantáneamente el contexto; El cambio entre circuitos abiertos degrada la agudeza posterior para la resolución de problemas.",
+        "Protocolos de comunicación asincrónica: reemplazar la urgencia del chat en tiempo real con actualizaciones por lotes programadas y de formato largo preserva bloques prolongados de estado de flujo ininterrumpido.",
+        "Santuarios físicos y digitales: Segregación espacial entre zonas de creación (estaciones de trabajo analógicas desconectadas) y zonas de comunicación (portátiles con interfaces de red abiertas).",
+        "Iluminación biofílica y silenciamiento acústico: la calibración de la iluminación natural circadiana y el enmascaramiento acústico de banda ancha de baja frecuencia reduce la excitación nerviosa simpática, promoviendo la concentración sostenida de ondas theta."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Deep work workstation configured for asynchronous focus and deep cognitive output",
-      "caption": "Ultradian flow blocks: structuring work into 90-minute concentrated intervals to align with biological focus rhythms."
+      "alt": "Estación de trabajo de trabajo profundo configurada para enfoque asincrónico y rendimiento cognitivo profundo",
+      "caption": "Bloques de flujo ultradianos: estructurar el trabajo en intervalos concentrados de 90 minutos para alinearse con los ritmos de enfoque biológico."
     },
     {
       "type": "h2",
-      "text": "El costo neurológico de la fragmentación atencional"
+      "text": "Estructuración de la jornada de trabajo profundo y de alto rendimiento"
     },
     {
       "type": "p",
-      "text": "En la economía del conocimiento moderna, la principal limitación a la productividad humana ya no es el acceso a la información, sino la escasez de ancho de banda atencional ininterrumpido. Cada vez que un profesional cambia de tarea (comprobar un mensaje de chat entrante, escanear una tarjeta de notificación o echar un vistazo a una alerta de correo electrónico), una importante penalización cognitiva denominada \"residuo de atención\" permanece anclada a la tarea anterior, perjudicando la función ejecutiva y la memoria de trabajo durante hasta veinte minutos."
+      "text": "Estudios empíricos de destacados científicos, autores e ingenieros de sistemas revelan un límite fisiológico superior de aproximadamente cuatro horas de verdadero trabajo intelectual profundo por día. Organizar cronogramas en torno a dos ciclos ultradianos ininterrumpidos de noventa minutos, seguidos de una recuperación física activa, produce avances creativos y analíticos mucho mayores que diez horas de multitarea fracturada."
     },
     {
       "type": "video",
-      "title": "Deep Work: How to Focus Intensely and Eliminate Attentional Residue",
-      "caption": "Behavioral science breakdown of working memory capacity, flow state triggers, and environment design.",
-      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E",
+      "title": "Trabajo profundo: cómo concentrarse intensamente y eliminar los residuos de atención",
+      "caption": "Desglose de la capacidad de la memoria de trabajo, los desencadenantes del estado de flujo y el diseño del entorno en las ciencias del comportamiento."
     },
     {
       "type": "h2",
-      "text": "El costo neurológico de la fragmentación atencional"
+      "text": "La soberanía del pensamiento enfocado"
     },
     {
       "type": "p",
-      "text": "En la economía del conocimiento moderna, la principal limitación a la productividad humana ya no es el acceso a la información, sino la escasez de ancho de banda atencional ininterrumpido. Cada vez que un profesional cambia de tarea (comprobar un mensaje de chat entrante, escanear una tarjeta de notificación o echar un vistazo a una alerta de correo electrónico), una importante penalización cognitiva denominada \"residuo de atención\" permanece anclada a la tarea anterior, perjudicando la función ejecutiva y la memoria de trabajo durante hasta veinte minutos."
+      "text": "En una era dominada por fuentes de dopamina algorítmicas hiperoptimizadas y ajetreo performativo, la capacidad de concentración intensa, solitaria e ininterrumpida se ha convertido en una superpotencia rara y decisiva. Cultivar la ergonomía cognitiva es un acto de soberanía intelectual."
     }
   ],
-  "sourceHash": "7bfd150cc1f2e83c8fe1169fee73ce08167051d1"
+  "sourceHash": "932512034e666b7ed2369405a9bafdbd2a1487d5"
 }

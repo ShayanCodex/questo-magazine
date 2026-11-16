@@ -1,7 +1,7 @@
 {
   "slug": "oleocanthal-phenolics-and-polyphenol-chromatography-in-olive-oil",
-  "title": "Fenólicos del oleocantal y cromatografía de polifenoles en la extracción de aceite de oliva virgen extra",
-  "excerpt": "La bioquímica del AOVE amargo y picante: examen de la termodinámica de la malaxación, la hidrólisis secoiridoide y la farmacología antiinflamatoria del oleocantal.",
+  "title": "Oleocantal y polifenoles del aceite de oliva",
+  "excerpt": "La bioquímica del AOVE amargo y picante: examinando la termodinámica de la malaxación, la hidrólisis secoiridoide y la farmacología antiinflamatoria del oleocantal.",
   "date": "2026-11-16",
   "author": "Saskia Lindqvist",
   "tags": [
@@ -36,7 +36,7 @@
       "type": "ul",
       "items": [
         "Hidrólisis enzimática: La trituración de drupas intactas activa las enzimas β-glucosidasas endógenas que convierten la oleuropeína y los glucósidos ligstrosidos en agliconas fenólicas biodisponibles.",
-        "Techo de temperatura: Mantener temperaturas de malaxación por debajo de 27 °C (extracción en frío) preserva los ésteres de hexanal volátiles y previene la degradación térmica de los polifenoles antioxidantes.",
+        "Temperatura máxima: Mantener las temperaturas de malaxación por debajo de 27°C (extracción en frío) preserva los ésteres de hexanal volátiles y previene la degradación térmica de los polifenoles antioxidantes.",
         "Cobertura de gas inerte: desplazar el oxígeno atmosférico con nitrógeno o argón dentro del mezclador elimina la actividad de la polifenol oxidasa (PPO) y la oxidación volátil.",
         "Centrifugación con decantador de dos fases: La eliminación del agua de proceso agregada evita que los polifenoles hidrófilos (como el hidroxitirosol y el oleocantal) se eliminen con las aguas residuales vegetales."
       ]
@@ -58,16 +58,16 @@
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
       "title": "La bioquímica del aceite de oliva: fenólicos, extracción y ciencia sensorial",
-      "caption": "Clase magistral de química alimentaria que cubre la extracción de secoiridoide, la cromatografía HPLC y las propiedades antiinflamatorias del oleocantal."
+      "caption": "Clase magistral de química de alimentos que cubre la extracción de secoiridoide, la cromatografía HPLC y las propiedades antiinflamatorias del oleocantal."
     },
     {
       "type": "h2",
-      "text": "Preservación culinaria y farmacológica"
+      "text": "Conservación Culinaria y Farmacológica"
     },
     {
       "type": "p",
-      "text": "Una vez extraídos, los fenólicos del AOVE son vulnerables a la fotooxidación y la descomposición térmica. El almacenamiento del aceite en recipientes de vidrio violeta oscuro a una temperatura de entre 14 °C y 18 °C mantiene la vida media del oleocantal durante más de dieciocho meses. En aplicaciones culinarias, rociar aceites con alto contenido fenólico crudos sobre platos calientes preserva los delicados aromas florales al tiempo que maximiza la biodisponibilidad de los antioxidantes celulares."
+      "text": "Una vez extraídos, los fenólicos del AOVE son vulnerables a la fotooxidación y la descomposición térmica. El almacenamiento del aceite en recipientes de vidrio violeta oscuro a una temperatura de entre 14 °C y 18 °C mantiene la vida media del oleocantal durante más de dieciocho meses. En aplicaciones culinarias, rociar aceites con alto contenido fenólico crudos sobre platos calientes preserva los delicados aromas florales y al mismo tiempo maximiza la biodisponibilidad de los antioxidantes celulares."
     }
   ],
-  "sourceHash": "eccfe41f71c35816ee23212032d9853f8c98be7e"
+  "sourceHash": "cd363aba925c6c80780e4449bb601fa4a675dfdc"
 }

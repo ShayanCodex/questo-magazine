@@ -1,6 +1,6 @@
 {
   "slug": "vagus-nerve-stimulation-and-heart-rate-variability-autonomics",
-  "title": "Stimulation du nerf vague et variabilité de la fréquence cardiaque Dynamique autonome",
+  "title": "Stimulation du nerf vague et dynamique du VRC",
   "excerpt": "Une enquête neurocardiologique sur le tonus vagal parasympathique, l'arythmie des sinus respiratoires, la sensibilité des barorécepteurs et les biomarqueurs d'adaptation au stress.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
@@ -32,7 +32,7 @@
         "Racine moyenne quadratique des différences successives (RMSSD) : une métrique validée dans le domaine temporel reflétant la modulation vagale battement à battement indépendante du tonus sympathique.",
         "Arythmie sinusale respiratoire (RSA) : La fréquence cardiaque s'accélère naturellement lors de l'inspiration (retrait vagal) et décélère lors d'une expiration lente (activation vagale).",
         "La voie anti-inflammatoire cholinergique : la stimulation vagale efférente libère de l'acétylcholine qui se lie aux récepteurs nicotiniques alpha-7 des macrophages, arrêtant ainsi la production de cytokines inflammatoires.",
-        "Stimulation transcutanée du canal vague auriculaire (taVNS) : La stimulation électrique non invasive de la branche vague auriculaire module la libération de noradrénaline du locus coeruleus du tronc cérébral."
+        "Stimulation transcutanée du canal vague auriculaire (taVNS) : La stimulation électrique non invasive de la branche du canal vague auriculaire module la libération de noradrénaline du locus coeruleus du tronc cérébral."
       ]
     },
     {
@@ -66,8 +66,8 @@
     },
     {
       "type": "p",
-      "text": "Le suivi du VRC nocturne matinal fournit aux médecins et aux athlètes un biomarqueur objectif inpiratable de la récupération physiologique, de l'inflammation systémique et de l'adaptation au stress neuronal."
+      "text": "Le suivi du VRC matinal et nocturne fournit aux médecins et aux athlètes un biomarqueur objectif inpiratable de la récupération physiologique, de l'inflammation systémique et de l'adaptation au stress neuronal."
     }
   ],
-  "sourceHash": "dd4051b4c0db41f985a3e197eea31caed985cf20"
+  "sourceHash": "7eec0a70a27a6975460b0402bbd426694f6853a6"
 }

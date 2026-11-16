@@ -1,6 +1,6 @@
 {
   "slug": "small-modular-reactors-and-gigawatt-ai-datacenters",
-  "title": "Petits réacteurs modulaires et micro-réseaux : l'ingénierie énergétique alimentant les clusters d'IA Gigawatt",
+  "title": "Petits réacteurs modulaires pour clusters d'IA",
   "excerpt": "À l'intérieur du lien critique entre le calcul génératif et l'ingénierie atomique : les SMR à sels fondus, la dissipation thermique à grande échelle et les interconnexions CC haute tension alimentant les centres de données frontières de nouvelle génération.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
@@ -70,5 +70,5 @@
       "text": "L'intégration de réacteurs refroidis au gaz à haute température permet des cascades énergétiques à double usage : la vapeur surchauffée entraîne des turbines à haut rendement pour produire de l'électricité pour les GPU, tandis que des boucles de refroidissement secondaires de faible qualité fournissent de l'énergie thermique propre pour la production régionale d'hydrogène, le dessalement de l'eau de mer et l'agriculture en serre."
     }
   ],
-  "sourceHash": "cb3a20ca41c4b839f7d10ac0e601613be6fc19fe"
+  "sourceHash": "64a8786a76228fabd39378a5a9294a6670706dff"
 }

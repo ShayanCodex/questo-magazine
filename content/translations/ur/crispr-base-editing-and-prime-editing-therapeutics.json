@@ -1,7 +1,7 @@
 {
   "slug": "crispr-base-editing-and-prime-editing-therapeutics",
-  "title": "CRISPR بیس ایڈیٹنگ اور پرائم ایڈیٹنگ ان پریسجن جینیٹک تھیراپیوٹکس",
-  "excerpt": "ڈیمینیز میڈیٹیڈ نیوکلیوٹائڈ ٹرانزیشنز کا کلینیکل مالیکیولر بائیولوجی تجزیہ، ریورس ٹرانسکرپٹیس pegRNA سرچنگ، اور vivo لپڈ نینو پارٹیکل ڈیلیوری میں۔",
+  "title": "CRISPR Base & Prime Editing",
+  "excerpt": "A clinical molecular biology analysis of deaminase-mediated nucleotide transitions, reverse-transcriptase pegRNA searching, and in vivo lipid nanoparticle delivery.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -12,62 +12,62 @@
     "crispr"
   ],
   "image": "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "مالیکیولر بائیولوجی لیبارٹری کی ورک اسپیس جس میں جینیاتی ترتیب کی جانچ اور بایومیڈیکل تشخیصات دکھائے جاتے ہیں",
+  "imageAlt": "Molecular biology laboratory workspace showing genetic sequencing assays and biomedical diagnostics",
   "body": [
     {
       "type": "h2",
-      "text": "جین کی اصلاح میں ڈبل اسٹرینڈ ڈی این اے بریکس کو ختم کرنا"
+      "text": "Eliminating Double-Strand DNA Breaks in Gene Correction"
     },
     {
       "type": "p",
-      "text": "پہلی نسل کی CRISPR-Cas9 جینوم ایڈیٹنگ مالیکیولر کینچی کی طرح چلتی ہے: ٹارگٹ ڈی بی این اے کو توڑنے کے لیے ڈبل اسٹرینڈ ڈی این اے کو توڑنا۔ تاہم، ڈبل اسٹرینڈ بریکس غیر متوقع غیر ہم جنس اختتامی شمولیت کو متحرک کرتے ہیں، جس سے کروموسومل ٹرانسلوکیشن اور جینوٹوکسک داخلوں کا خطرہ ہوتا ہے۔ بیس ایڈیٹنگ اور پرائم ایڈیٹنگ ایک پیراڈائم شفٹ کی نمائندگی کرتی ہے: کیمیائی سرجری جو ڈی این اے ڈبل ہیلکس بیک بون کو توڑے بغیر براہ راست ہدف والے نیوکلیوٹائڈس کو دوبارہ لکھتی ہے۔"
+      "text": "First-generation CRISPR-Cas9 genome editing operated like molecular scissors: creating double-strand DNA breaks (DSBs) to disrupt target genes. However, double-strand breaks trigger unpredictable non-homologous end joining, which risks chromosomal translocations and genotoxic insertions. Base editing and prime editing represent a paradigm shift: chemical surgery that rewrites target nucleotides directly without severing the DNA double-helix backbone."
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "Key Points"
     },
     {
       "type": "ul",
       "items": [
-        "Deaminase Catalysis: Cytosine اور adenine بیس ایڈیٹرز سنگل بیس کی درستگی کے ساتھ براہ راست C-to-T یا A-to-G ٹرانزیشن انجام دیتے ہیں۔",
-        "سرچ اینڈ ریپلیس میکینکس: پرائم ایڈیٹنگ پرائم ایڈیٹنگ گائیڈ RNA (pegRNA) کے ذریعے گائیڈ کردہ انجنیئرڈ ریورس ٹرانسکرپٹیس میں اتپریرک طور پر خراب Cas9 نکاس کو فیوز کرتی ہے۔",
-        "ھدف شدہ اندراج اور حذف کرنا: پرائم ایڈیٹرز بارہ ممکنہ بیس کنورژنز میں سے کسی کو بھی انسٹال کر سکتے ہیں، درجنوں بیس جوڑوں تک کے اندراجات، یا ڈونر ٹیمپلیٹس کے بغیر حذف کر سکتے ہیں۔",
-        "ہدف سے باہر کے واقعات میں کمی: ڈبل اسٹرینڈ کلیویج کو ختم کرنے سے کروموسومل ری آرنجمنٹس اور آنکوجینک اتپریورتنوں کو قابل شناخت حد سے کم کیا جاتا ہے۔"
+        "Deaminase Catalysis: Cytosine and adenine base editors perform direct C-to-T or A-to-G transitions with single-base precision.",
+        "Search-and-Replace Mechanics: Prime editing fuses a catalytically impaired Cas9 nickase to an engineered reverse transcriptase guided by prime editing guide RNA (pegRNA).",
+        "Targeted Insertions & Deletions: Prime editors can install any of the twelve possible base conversions, insertions up to dozens of base pairs, or deletions without donor templates.",
+        "Reduced Off-Target Events: Eliminating double-strand cleavage reduces chromosomal rearrangements and oncogenic mutations below detectable thresholds."
       ]
     },
     {
       "type": "quote",
-      "text": "اگر معیاری CRISPR ایک دو ٹوک اسکیلپل تھا، تو بیس اور پرائم ایڈیٹنگ مالیکیولر ورڈ پروسیسرز ہیں جو ایک وقت میں ایک حرف کی ہجے کی غلطیوں کو درست کرنے کے قابل ہیں۔",
-      "cite": "نیو انگلینڈ جرنل آف مالیکیولر تھیراپیوٹکس"
+      "text": "If standard CRISPR was a blunt scalpel, base and prime editing are molecular word processors capable of correcting monogenic disease spelling errors one letter at a time.",
+      "cite": "The New England Journal of Molecular Therapeutics"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80",
-      "alt": "جراثیم سے پاک کلین روم میں کلینکل فارماسیوٹیکل تیاری اور بائیو کیمیکل فارمولیشن شیشی",
-      "caption": "ٹارگیٹڈ علاج: ٹشو مخصوص mRNA جین ایڈیٹر کی ترسیل کے لیے لپڈ نینو پارٹیکلز کی تشکیل۔"
+      "alt": "Clinical pharmaceutical preparation and biochemical formulation vials in sterile cleanroom",
+      "caption": "Targeted therapeutics: formulating lipid nanoparticles for tissue-specific mRNA gene editor delivery."
     },
     {
       "type": "h2",
-      "text": "پرائم ایڈیٹنگ آرکیٹیکچر: ریورس ٹرانسکرپٹیس اور پیگ آر این اے آرکیسٹریشن"
+      "text": "Prime Editing Architecture: Reverse Transcriptase and pegRNA Orchestration"
     },
     {
       "type": "p",
-      "text": "پرائم ایڈیٹنگ کمپلیکس ٹارگٹ جینومک لوکس کو جوڑتا ہے، نان ٹارگٹ ڈی این اے اسٹرینڈ کو نکس کرتا ہے، اور pegRNA کی پرائمر بائنڈنگ سائٹ (PBS) کو اینیل کرتا ہے۔ ریورس ٹرانسکرپٹیس ڈومین پھر انجنیئرڈ جینیاتی ترتیب کو براہ راست جینوم میں کاپی کرتا ہے، سیلولر مماثلت کی مرمت کا آغاز کرتا ہے جو ترمیم کو مستقل کرتا ہے۔"
+      "text": "The prime editing complex binds the target genomic locus, nicks the non-target DNA strand, and anneals the primer binding site (PBS) of the pegRNA. The reverse transcriptase domain then copies the engineered genetic sequence directly into the genome, initiating cellular mismatch repair that permanentizes the edit."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "پریسجن جینومکس اور سیلولر بائیولوجی میکانزم",
-      "caption": "ڈی این اے کی مرمت کے راستوں، انزیمیٹک ترمیمات، اور جین تھراپی میں کلینیکل ٹرائل کے نتائج کا تعلیمی جائزہ۔"
+      "title": "Precision Genomics and Cellular Biology Mechanisms",
+      "caption": "Educational overview of DNA repair pathways, enzymatic modifications, and clinical trial outcomes in gene therapy."
     },
     {
       "type": "h2",
-      "text": "Vivo ڈلیوری رکاوٹوں میں: ٹارگیٹڈ لپڈ نینو پارٹیکلز اور امیونوجنیسیٹی"
+      "text": "In Vivo Delivery Barriers: Targeted Lipid Nanoparticles and Immunogenicity"
     },
     {
       "type": "p",
-      "text": "پرائم ایڈیٹرز کا علاج معالجہ انسانی علاج میں ترجمہ ترسیل پر منحصر ہے۔ ٹشو ہومنگ پیپٹائڈس کے ساتھ کام کرنے والے انجینئرڈ آئنائز ایبل لپڈ نینو پارٹیکلز (LNPs) پہلے سے موجود Cas9 انڈیپٹیو مدافعتی ردعمل سے بچتے ہوئے جگر، پھیپھڑوں اور ہیماٹوپوئٹک اسٹیم سیل کی ترسیل کو قابل بنا رہے ہیں۔"
+      "text": "Translating prime editors into curative human therapeutics hinges on delivery. Engineered ionizable lipid nanoparticles (LNPs) functionalized with tissue-homing peptides are enabling liver, lung, and hematopoietic stem cell delivery while evading pre-existing Cas9 adaptive immune responses."
     }
   ],
-  "sourceHash": "4ab9ece123cb5d7edf2d84e07e5309719de47616"
+  "sourceHash": "ee05a9424eee1f73943890c87f08552d4454f07c"
 }

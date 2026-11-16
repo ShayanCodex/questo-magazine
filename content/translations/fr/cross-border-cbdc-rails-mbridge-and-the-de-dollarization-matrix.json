@@ -1,7 +1,7 @@
 {
   "slug": "cross-border-cbdc-rails-mbridge-and-the-de-dollarization-matrix",
-  "title": "Projet mBridge et le Nexus multi-CBDC : Déconstruire les rails de compensation bilatéraux, les centres de liquidité et l'avenir du règlement mondial",
-  "excerpt": "Un rapport sur l'architecture monétaire sur les monnaies numériques de gros des banques centrales (wCBDC) : le grand livre distribué BRI mBridge, les corridors de change souverains, les teneurs de marché automatisés algorithmiques et la reconfiguration géopolitique du règlement commercial mondial.",
+  "title": "Projet mBridge & Global Settlements",
+  "excerpt": "Un rapport sur l'architecture monétaire des monnaies numériques de gros des banques centrales (wCBDC) : le grand livre distribué BRI mBridge, les corridors de change souverains, les teneurs de marché automatisés algorithmiques et la reconfiguration géopolitique du règlement commercial mondial.",
   "date": "2026-11-17",
   "author": "Tariq Mahmood",
   "tags": [
@@ -46,7 +46,7 @@
       "type": "image",
       "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
       "alt": "Intérieur d'un coffre-fort de haute sécurité avec des piles de lingots d'or fins reflétant l'éclairage de sécurité ambiant",
-      "caption": "Diversification des bilans souverains : les banques centrales mondiales accélèrent leurs achats d’or parallèlement aux corridors bilatéraux de compensation numérique en monnaie locale."
+      "caption": "Diversification du bilan souverain : les banques centrales mondiales accélèrent les achats d'or aux côtés de couloirs de compensation numérique bilatéraux en monnaie locale."
     },
     {
       "type": "h2",
@@ -54,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "La prolifération des plateformes de gros multi-CBDC accélère la dédollarisation des flux commerciaux bilatéraux, en particulier dans les corridors énergétiques du Moyen-Orient et de l'Asie. Lorsque les pays souverains peuvent régler les contrats pétroliers, de semi-conducteurs et agricoles directement en dirhams numériques, en yuans ou en roupies avec un règlement cryptographique instantané, la demande structurelle de détention de milliers de milliards de titres du Trésor étranger diminue, transformant de manière permanente les rendements obligataires mondiaux."
+      "text": "La prolifération des plateformes multi-CBDC de gros accélère la dédollarisation des flux commerciaux bilatéraux, en particulier dans les corridors énergétiques du Moyen-Orient et de l’Asie. Lorsque les pays souverains peuvent régler les contrats pétroliers, de semi-conducteurs et agricoles directement en dirhams numériques, en yuans ou en roupies avec un règlement cryptographique instantané, la demande structurelle de détention de milliers de milliards de titres du Trésor étranger diminue, transformant de manière permanente les rendements obligataires mondiaux."
     },
     {
       "type": "video",
@@ -71,5 +71,5 @@
       "text": "La conséquence ultime de la technologie des registres distribués dans les banques centrales n'est pas le remplacement complet des institutions fiduciaires existantes, mais l'élimination des goulots d'étranglement de la compensation centralisée. Au cours de la prochaine décennie, le commerce international s’opérera à travers des réseaux multi-devises interconnectés et algorithmiques où le coût des transactions, la vitesse cryptographique et l’autonomie souveraine dicteront les flux financiers mondiaux."
     }
   ],
-  "sourceHash": "666888b0c175dd59ee33e335649c14b8b3361111"
+  "sourceHash": "137fa3c691bf8003f188496a247e491c1ee57f76"
 }

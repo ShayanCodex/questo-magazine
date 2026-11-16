@@ -1,7 +1,7 @@
 {
   "slug": "optogenetics-and-neural-circuit-dissection-mechanics",
-  "title": "Optogenética y disección de circuitos neuronales: canalrodopsinas, optodos y modulación del comportamiento",
-  "excerpt": "Control óptico de milisegundos de conjuntos neuronales genéticamente específicos: examen de la biofísica de opsinas, la entrega de vectores virales y el mapeo funcional de engramas de memoria.",
+  "title": "Optogenética y circuitos neuronales",
+  "excerpt": "Control óptico de milisegundos de conjuntos neuronales genéticamente específicos: examen de la biofísica de la opsina, la administración de vectores virales y el mapeo funcional de los engramas de la memoria.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "La traducción clínica de la optogenética ya está en marcha. En oftalmología, la inyección intravítrea de canalrodopsinas desplazadas al rojo en células ganglionares de la retina supervivientes ha restaurado con éxito la agudeza visual parcial en pacientes cegados por retinitis pigmentosa. En neurocirugía, se están desarrollando optodos micro-LED inalámbricos para reemplazar la estimulación cerebral profunda convencional, ofreciendo supresión de los temblores sin efectos secundarios cognitivos."
     }
   ],
-  "sourceHash": "039003af7f0c4219ce90ddbdc8b6d3e6af1feab4"
+  "sourceHash": "bd0870b81f752a390a68cc3e511c0329158fe81b"
 }

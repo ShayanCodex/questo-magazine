@@ -1,0 +1,70 @@
+{
+  "slug": "event-horizon-telescope-and-black-hole-interferometry",
+  "title": "Imaging Supermassive Black Holes",
+  "excerpt": "The astrophysics of Very Long Baseline Interferometry, synchronizing millimeter radiotelescopes across planet Earth to resolve event horizon shadow structures.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "astrophysics",
+    "black-holes",
+    "vlbi",
+    "astronomy",
+    "physics",
+    "relativity"
+  ],
+  "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Starfield cosmos with glowing gravitational accretion disk around a celestial singularity",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Synthesizing an Earth-Sized Radio Aperture"
+    },
+    {
+      "type": "p",
+      "text": "Resolving the event horizon of Messier 87 or Sagittarius A* is equivalent to spotting an orange on the surface of the Moon from Earth. No single optical telescope could ever achieve the angular resolution required. The Event Horizon Telescope (EHT) achieves this by combining synchronized radio observatories across six continents into a virtual telescope as large as our planet."
+    },
+    {
+      "type": "h2",
+      "text": "Technical Cornerstones of Millimeter VLBI"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Hydrogen Maser Atomic Clocks: Providing ultra-stable sub-picosecond timing precision to tag petabytes of raw astronomical wavefront data.",
+        "1.3-Millimeter Atmospheric Transparency: Tuning receivers to 230 GHz to pierce through galactic synchrotron dust and Earth moisture clouds.",
+        "Supercomputer Data Correlation: Processing hard drives shipped from Antarctica and Atacama through specialized ASIC correlation supercomputers.",
+        "Computational Interferometric Imaging: Utilizing sparse Bayesian modeling and neural networks to reconstruct images from incomplete Fourier baseline coverage."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We turned planet Earth into a single cosmic magnifying glass to test Einstein’s general relativity at the ultimate boundary of spacetime.",
+      "cite": "Questo Astrophysics & High-Energy Gravitation Observatory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-altitude submillimeter radio telescope antenna dish pointing at starry sky",
+      "caption": "ALMA submillimeter array in the Atacama Desert: The phased anchor station providing peak sensitivity for global EHT observations."
+    },
+    {
+      "type": "h2",
+      "text": "Testing Kerr Metric Frame Dragging"
+    },
+    {
+      "type": "p",
+      "text": "The resulting shadow images directly confirm the photon ring geometry predicted by Einstein's field equations for a spinning Kerr black hole, demonstrating relativistic Doppler beaming along the approaching accretion plasma flow."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Q1bSDnuIPbo",
+      "title": "Veritasium: How Did They Actually Take This Black Hole Picture?",
+      "caption": "Derek Muller explores Very Long Baseline Interferometry, atomic clock phase calibration, and imaging the event horizon shadow."
+    },
+    {
+      "type": "p",
+      "text": "Very Long Baseline Interferometry continues to expand into space-based orbiters to reveal the dynamic temporal motion of black hole plasma jets."
+    }
+  ],
+  "sourceHash": "117c9997a3e6952ba5ee73457f3802fa05e2b798"
+}

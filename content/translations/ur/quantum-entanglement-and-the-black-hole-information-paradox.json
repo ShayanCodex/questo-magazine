@@ -1,7 +1,7 @@
 {
   "slug": "quantum-entanglement-and-the-black-hole-information-paradox",
-  "title": "بلیک ہول انفارمیشن پیراڈوکس: ہولوگرافک ڈوئلٹی، پیج کروز اور کوانٹم فائر والز",
-  "excerpt": "کوانٹم یونٹیریٹی اور ہاکنگ ریڈی ایشن کے درمیان تیس سالہ بحث کا سراغ لگانا: AdS/CFT خط و کتابت، الجھنے والے جزیرے، اور خمیدہ اسپیس ٹائم میں کوانٹم کی غلطی کی اصلاح۔",
+  "title": "The Black Hole Information Paradox",
+  "excerpt": "Tracing the thirty-year debate between quantum unitarity and Hawking radiation: AdS/CFT correspondence, entanglement islands, and quantum error correction in curved spacetime.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -12,68 +12,68 @@
     "astrophysics"
   ],
   "image": "https://images.unsplash.com/photo-1543722530-d2c3201371e7?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "برہمانڈیی گہری خلائی فلکیاتی واقعہ افق، کشش ثقل لینسنگ، اور تارامی نیبولا جو بلیک ہول کی معلومات کے تضاد کی نمائندگی کرتا ہے",
+  "imageAlt": "Cosmic deep space astronomical event horizon, gravitational lensing, and starry nebula representing the black hole information paradox",
   "body": [
     {
       "type": "h2",
-      "text": "جدید طبیعیات کا ناقابل تسخیر تصادم"
+      "text": "The Irreconcilable Clash of Modern Physics"
     },
     {
       "type": "p",
-      "text": "بنیادی طبیعیات کے مرکز میں ہمارے دو کامیاب ترین نظریات کے درمیان گہرا تضاد ہے: جنرل ریلیٹیویٹی اور کوانٹم میکانکس۔ 1974 میں، اسٹیفن ہاکنگ نے یہ ظاہر کیا کہ واقعہ افق کے قریب کوانٹم اتار چڑھاو کی وجہ سے بلیک ہولز تھرمل ریڈی ایشن خارج کرتے ہیں اور آہستہ آہستہ بخارات بن جاتے ہیں۔ تاہم، اگر یہ تابکاری خالصتاً تھرمل ہے، تو اس معاملے سے متعلق تمام معلومات جس نے اصل میں بلیک ہول کو تشکیل دیا تھا، جب یہ غائب ہو جاتا ہے تو مستقل طور پر ختم ہو جاتا ہے - وحدت کے ناقابلِ تسخیر کوانٹم اصول کی خلاف ورزی۔"
+      "text": "At the heart of fundamental physics lies a profound contradiction between our two most successful theories: General Relativity and Quantum Mechanics. In 1974, Stephen Hawking demonstrated that quantum fluctuations near the event horizon cause black holes to emit thermal radiation and slowly evaporate. However, if this radiation is purely thermal, all information regarding the matter that originally formed the black hole is permanently obliterated when it vanishes—violating the inviolable quantum principle of unitarity."
     },
     {
       "type": "h2",
-      "text": "تضاد کو حل کرنے میں بنیادی نظریاتی سنگ میل"
+      "text": "Core Theoretical Milestones in Resolving the Paradox"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80",
-      "alt": "بلیک ہول انفارمیشن پیراڈوکس: ہولوگرافک ڈوئلٹی، پیج کروز اور کوانٹم فائر والز - آپریشنل شکل 4",
-      "caption": "تجرباتی مشاہدہ: بلیک ہول انفارمیشن پیراڈوکس کو سپورٹ کرنے والی آپریشنل میکینکس اور فاؤنڈیشنل ٹیلی میٹری: ہولوگرافک ڈوئلٹی، پیج کروز اور کوانٹم فائر وال۔"
+      "alt": "The Black Hole Information Paradox: Holographic Duality, Page Curves & Quantum Firewalls - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Black Hole Information Paradox: Holographic Duality, Page Curves & Quantum Firewalls."
     },
     {
       "type": "ul",
       "items": [
-        "کوانٹم یونٹیریٹی: بنیادی نظریہ جس میں کہا گیا ہے کہ تمام ممکنہ نتائج کے امکانات کا مجموعہ ہمیشہ ایک کے برابر ہونا چاہیے، اس بات کو یقینی بناتے ہوئے کہ کوانٹم میکانکس میں معلومات کو کبھی ضائع نہیں کیا جائے۔",
-        "صفحہ کا منحنی خطوط: ڈان پیج کا ریاضیاتی ثبوت کہ اگر بلیک ہول بخارات معلومات کو محفوظ رکھتا ہے، تو تابکاری کی الجھی ہوئی اینٹروپی ابتدائی طور پر صفر تک گرنے سے پہلے بڑھنی چاہیے کیونکہ سوراخ کے بخارات بنتے ہیں۔",
-        "ہولوگرافک ڈوئلٹی (AdS/CFT): یہ اصول کہ اینٹی ڈی سیٹر اسپیس میں کوانٹم گریویٹی ریاضی کے لحاظ سے ایک کنفارمل فیلڈ تھیوری کے مترادف ہے جو اس کی باؤنڈری پر رہتی ہے، جو وحدت کی ضمانت دیتا ہے۔",
-        "الجھنے والے جزائر: حالیہ سیمکلاسیکل یوکلیڈین کشش ثقل کے حسابات سے پتہ چلتا ہے کہ اندرونی کوانٹم ریاستیں کوانٹم ایکسٹریمل سطحوں کے ذریعے بیرونی تابکاری میں انکوڈ ہو جاتی ہیں۔"
+        "Quantum Unitarity: The fundamental theorem stating that the sum of probabilities for all possible outcomes must always equal one, ensuring that information is never destroyed in quantum mechanics.",
+        "The Page Curve: Don Page’s mathematical proof that if black hole evaporation preserves information, the entanglement entropy of radiation must initially rise before declining to zero as the hole evaporates.",
+        "Holographic Duality (AdS/CFT): The principle that quantum gravity in anti-de Sitter space is mathematically equivalent to a conformal field theory living on its boundary, guaranteeing unitarity.",
+        "Entanglement Islands: Recent semiclassical Euclidean gravity calculations revealing that interior quantum states become encoded in exterior radiation via quantum extremal surfaces."
       ]
     },
     {
       "type": "quote",
-      "text": "بلیک ہول انفارمیشن پیراڈاکس ایک نظریاتی کروسیبل ہے جس میں اسپیس ٹائم اور کوانٹم میکانکس کے بنیادی قوانین کو یا تو ملایا جائے گا یا پھر سے لکھا جائے گا۔",
-      "cite": "تھیوریٹیکل فزکس اور کوانٹم گریوٹی ریویو"
+      "text": "The black hole information paradox is the theoretical crucible in which the fundamental laws of spacetime and quantum mechanics will either be reconciled or rewritten.",
+      "cite": "Theoretical Physics & Quantum Gravity Review"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=80",
-      "alt": "بلیک ہول انفارمیشن پیراڈوکس: ہولوگرافک ڈوئلٹی، پیج کروز اور کوانٹم فائر والز - آپریشنل شکل 7",
-      "caption": "تجرباتی مشاہدہ: بلیک ہول انفارمیشن پیراڈوکس کو سپورٹ کرنے والی آپریشنل میکینکس اور فاؤنڈیشنل ٹیلی میٹری: ہولوگرافک ڈوئلٹی، پیج کروز اور کوانٹم فائر وال۔"
+      "alt": "The Black Hole Information Paradox: Holographic Duality, Page Curves & Quantum Firewalls - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Black Hole Information Paradox: Holographic Duality, Page Curves & Quantum Firewalls."
     },
     {
       "type": "h2",
-      "text": "اسپیس ٹائم بطور ایمرجنٹ کوانٹم ایرر درست کرنے والے کوڈ"
+      "text": "Spacetime as an Emergent Quantum Error-Correcting Code"
     },
     {
       "type": "p",
-      "text": "جدید نظریاتی طبیعیات کی سب سے انقلابی تصوراتی ترقی یہ ہے کہ ہموار جیومیٹرک اسپیس ٹائم بنیادی نہیں ہے۔ بلکہ، اسپیس ٹائم جیومیٹری کثیر الجہتی کوانٹم اینگلمنٹ کے بنیادی نمونوں سے ابھرتی ہے، بالکل ہولوگرافک کوانٹم غلطی کو درست کرنے والے کوڈ کی طرح برتاؤ کرتی ہے۔"
+      "text": "The most revolutionary conceptual development of modern theoretical physics is that smooth geometric spacetime is not fundamental. Rather, spacetime geometry emerges from underlying patterns of multi-partite quantum entanglement, behaving precisely like a holographic quantum error-correcting code."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
-      "title": "بلیک ہول انفارمیشن پیراڈوکس: فزکس نے اپنی سب سے بڑی پہیلی کو کیسے حل کیا۔",
-      "caption": "ہاکنگ ریڈی ایشن، پیج کریو، اور ہولوگرافک کوانٹم ایکسٹریمل جزائر پر تفصیلی نظریاتی فزکس لیکچر۔"
+      "title": "The Black Hole Information Paradox: How Physics Solved Its Greatest Puzzle",
+      "caption": "Detailed theoretical physics lecture on Hawking radiation, the Page Curve, and holographic quantum extremal islands."
     },
     {
       "type": "h2",
-      "text": "ایک متحد کوانٹم حقیقت کی طرف"
+      "text": "Toward a Unified Quantum Reality"
     },
     {
       "type": "p",
-      "text": "معلومات کے تضاد کو حل کرنا طبیعیات دانوں کو ایک ایسے پیراڈائم کی طرف کھینچ رہا ہے جہاں جگہ اور وقت گہرے معلوماتی قوانین کے ابھرتے ہوئے قریب ہیں۔ بلیک ہولز کا مطالعہ حقیقت کے حتمی تانے بانے میں ہماری واضح ترین کھڑکی ہے۔"
+      "text": "Resolving the information paradox is pulling physicists toward a paradigm where space and time are emergent approximations of deeper informational laws. The study of black holes continues to be our clearest window into the ultimate fabric of reality."
     }
   ],
-  "sourceHash": "912fa5833049d25b8532739062196e6456b5bee0"
+  "sourceHash": "1fb11cf4b980b4a974e08058d125a1e1394818d5"
 }

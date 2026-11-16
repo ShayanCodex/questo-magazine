@@ -1,0 +1,70 @@
+{
+  "slug": "optical-metamaterials-and-negative-index-refraction",
+  "title": "Optische Metamaterialien und Tarnung",
+  "excerpt": "Entwicklung von Subwellenlängen-Split-Ring-Resonatoren und photonischen Kristallen, um elektromagnetische Wellen nach hinten zu beugen und so hochauflösende Linsen und Tarngeräte zu ermöglichen.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "optics",
+    "metamaterials",
+    "physics",
+    "photonics",
+    "nanotechnology",
+    "materials-science"
+  ],
+  "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Laserstrahlen werden durch optische Präzisionsprismen und leuchtende kristalline Mikrostrukturen gebrochen.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Das Snelliussche Gesetz mit künstlichen Atomen außer Kraft setzen."
+    },
+    {
+      "type": "p",
+      "text": "Jedes natürliche Material besitzt einen positiven Brechungsindex: Licht, das von Luft in Wasser oder Glas gelangt, beugt sich in Richtung der Oberflächennormalen. Optische Metamaterialien, die aus metallischen und dielektrischen Architekturen unterhalb der Wellenlänge hergestellt werden, erreichen gleichzeitig eine negative elektrische Permittivität und eine negative magnetische Permeabilität, wodurch sich das Licht beim Eintritt in die Grenzfläche nach hinten beugt."
+    },
+    {
+      "type": "h2",
+      "text": "Strukturelle Grundlagen von Medien mit negativem Index"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Subwellenlängen-Split-Ring-Resonatoren (SRRs): Leiterschleifen im Mikrometerbereich, die als LC-Schaltkreise fungieren und die magnetische Komponente elektromagnetischer Strahlung manipulieren.",
+        "Veselago-Superlinsen: Flache Metamaterialplatten, die in der Lage sind, evaneszente Wellen zu verstärken und so die klassische Abbe-Beugungsgrenze zu durchbrechen, um Subbeugungsmerkmale aufzulösen.",
+        "Transformationsoptik: Formulieren räumlicher Koordinatentransformationen, die Licht sanft um ein eingeschlossenes Hindernis leiten, wie Wasser um einen glatten Kieselstein.",
+        "Plasmonische hyperbolische Metamaterialien: Geschichtete Metall-Dielektrikum-Stapel, die unbestimmte Dispersionsbeziehungen für extremen Lichteinschluss unterstützen."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "In Metamaterialien ergeben sich Materialeigenschaften nicht aus den chemischen Elementen, aus denen sie bestehen, sondern aus der bewussten geometrischen Form ihrer Subwellenlängenstruktur.",
+      "cite": "Questo Photonic Nanomaterials & Electrodynamics Institute"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Nanoskalige Halbleiter-Lithographie-Strukturierung unter Elektronenmikroskop-Inspektion",
+      "caption": "Elektronenstrahl-Lithographie-Ätzung nanoskaliger Goldresonanzantennen für optische Frequenz-Metamaterial-Umhüllungen."
+    },
+    {
+      "type": "h2",
+      "text": "Von Tarnkappen zum optischen Rechnen"
+    },
+    {
+      "type": "p",
+      "text": "Während makroskopische Unsichtbarkeit im gesamten Spektrum eine technische Herausforderung bleibt, revolutionieren optische Metamaterialien bereits flache planare Metalllinsen in Smartphone-Kameras, LiDAR-Steuerung ohne bewegliche Spiegel und ultraschnelle photonische Schalter für optisches Rechnen."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/5NS3m1CSYJ0",
+      "title": "Metamaterialien und negative Brechung: Konstruktion künstlicher Materialien",
+      "caption": "Vorlesung über akademische Physik, die den negativen Brechungsindex, den Wellenvektorimpuls und die Transformationsoptik analysiert."
+    },
+    {
+      "type": "p",
+      "text": "Optische Subwellenlängen-Metaoberflächen ersetzen sperrige Glaslinsenelemente durch nanostrukturierte flache Siliziumwafer."
+    }
+  ],
+  "sourceHash": "851e07d50cf5db48cc2feec938d80cb77a0f7348"
+}

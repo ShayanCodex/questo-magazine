@@ -1,7 +1,7 @@
 {
   "slug": "rust-memory-safety-without-garbage-collection",
-  "title": "مورچا میں باضابطہ میموری کی حفاظت: افائن ٹائپس، بورو چیکرز اور RAII سیمنٹکس",
-  "excerpt": "ایک تکنیکی مونوگراف جس میں کمپائل ٹائم اونرشپ انویریئنٹس، الیاسنگ رولز، غیر لغوی لائف ٹائمز، اور سسٹم پروگرامنگ میں صفر لاگت تجرید کی ضمانت ہے۔",
+  "title": "Formal Memory Safety in Rust",
+  "excerpt": "A technical monograph dissecting compile-time ownership invariants, aliasing rules, non-lexical lifetimes, and zero-cost abstraction guarantees in systems programming.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -16,21 +16,21 @@
   "body": [
     {
       "type": "h2",
-      "text": "سیفٹی اور پرفارمنس کے درمیان تاریخی تناؤ"
+      "text": "The Historic Tension Between Safety and Performance"
     },
     {
       "type": "p",
-      "text": "پانچ دہائیوں تک، سسٹم انجینئرنگ کو ایک پیچیدہ اختلاف کی وجہ سے روکا گیا: دستی میموری کو قبول کریں جس میں موروثی، دوہرے بہاؤ کے خطرات، دوگنا فری استعمال کے خطرات ہیں۔ C اور C++ میں کمزوریاں، یا جاوا، گو، اور C# جیسے کوڑے سے جمع کیے گئے رن ٹائمز کو اپنائیں جو رن ٹائم لیٹنسی جیٹر، میموری فوٹ پرنٹ بلوٹ، اور سٹاپ-دی-ورلڈ توقف نافذ کرتے ہیں۔ زنگ نے صفر رن ٹائم اوور ہیڈ پر ریاضی کی میموری کی حفاظت فراہم کرنے کے لیے ایفائن ٹائپ تھیوری اور کمپائل ٹائم اونرشپ ٹریکنگ کو لاگو کرکے اس سمجھوتہ کو توڑ دیا۔"
+      "text": "For five decades, systems engineering was constrained by an intractable dichotomy: accept manual memory management with inherent risks of use-after-free, double-free, and buffer overflow vulnerabilities in C and C++, or adopt garbage-collected runtimes like Java, Go, and C# that impose runtime latency jitter, memory footprint bloat, and stop-the-world pauses. Rust broke this compromise by implementing affine type theory and compile-time ownership tracking to deliver mathematical memory safety at zero runtime overhead."
     },
     {
       "type": "h2",
-      "text": "سیفٹی اور پرفارمنس کے درمیان تاریخی تناؤ"
+      "text": "Mathematical Foundations of the Borrow Checker"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Diagram of stack frame memory layout, heap pointers, and exclusive mutable references",
-      "caption": "Aliasing XOR Mutability: compile-time borrow checking mathematically eliminating data races and dangling pointers."
+      "alt": "Formal Memory Safety in Rust: Affine Types, Borrow Checkers & RAII Semantics - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Formal Memory Safety in Rust: Affine Types, Borrow Checkers & RAII Semantics."
     },
     {
       "type": "ul",
@@ -43,37 +43,37 @@
     },
     {
       "type": "quote",
-      "text": "میموری کی حفاظتی کیڑے انفرادی پروگرامرز کی اخلاقی ناکامیاں نہیں ہیں۔ وہ پروگرامنگ زبانوں کا ریاضیاتی نتیجہ ہیں جو مشترکہ تغیر پذیر حالت کی اجازت دیتے ہیں۔",
-      "cite": "تھیوریٹیکل کمپیوٹر سائنس اینڈ لینگویج آرکیٹیکچر"
+      "text": "Memory safety bugs are not moral failings of individual programmers; they are the mathematical consequence of programming languages that permit shared mutable state.",
+      "cite": "Theoretical Computer Science & Language Architecture"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
-      "alt": "LLVM intermediate representation optimizing monomorphized zero-cost Rust abstractions into machine code",
-      "caption": "Monomorphization: compiler generating specialized machine instructions for generic traits without dynamic vtable cost."
+      "alt": "Formal Memory Safety in Rust: Affine Types, Borrow Checkers & RAII Semantics - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Formal Memory Safety in Rust: Affine Types, Borrow Checkers & RAII Semantics."
     },
     {
       "type": "h2",
-      "text": "سیفٹی اور پرفارمنس کے درمیان تاریخی تناؤ"
+      "text": "Zero-Cost Abstractions and Monomorphization"
     },
     {
       "type": "p",
-      "text": "پانچ دہائیوں تک، سسٹم انجینئرنگ کو ایک پیچیدہ اختلاف کی وجہ سے روکا گیا: دستی میموری کو قبول کریں جس میں موروثی، دوہرے بہاؤ کے خطرات، دوگنا فری استعمال کے خطرات ہیں۔ C اور C++ میں کمزوریاں، یا جاوا، گو، اور C# جیسے کوڑے سے جمع کیے گئے رن ٹائمز کو اپنائیں جو رن ٹائم لیٹنسی جیٹر، میموری فوٹ پرنٹ بلوٹ، اور سٹاپ-دی-ورلڈ توقف نافذ کرتے ہیں۔ زنگ نے صفر رن ٹائم اوور ہیڈ پر ریاضی کی میموری کی حفاظت فراہم کرنے کے لیے ایفائن ٹائپ تھیوری اور کمپائل ٹائم اونرشپ ٹریکنگ کو لاگو کرکے اس سمجھوتہ کو توڑ دیا۔"
+      "text": "Rust achieves performance parity with C++ through aggressive monomorphization of trait-bounded generics. Rather than dispatching method calls through dynamic vtables, the compiler duplicates concrete function implementations for each specialized type, enabling cross-crate inlining, auto-vectorization into SIMD instructions, and dead-code stripping during link-time optimization (LTO)."
     },
     {
       "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/JlybK6Wp9f4",
       "title": "How the Rust Borrow Checker Works: Lifetimes, Ownership, and Memory Layout",
-      "caption": "Deep-dive compiler analysis into mid-level intermediate representation (MIR) borrow checking and ownership graph evaluation.",
-      "src": "https://www.youtube-nocookie.com/embed/JlybK6Wp9f4"
+      "caption": "Deep-dive compiler analysis into mid-level intermediate representation (MIR) borrow checking and ownership graph evaluation."
     },
     {
       "type": "h2",
-      "text": "سیفٹی اور پرفارمنس کے درمیان تاریخی تناؤ"
+      "text": "Transforming Critical Infrastructure Software"
     },
     {
       "type": "p",
-      "text": "پانچ دہائیوں تک، سسٹم انجینئرنگ کو ایک پیچیدہ اختلاف کی وجہ سے روکا گیا: دستی میموری کو قبول کریں جس میں موروثی، دوہرے بہاؤ کے خطرات، دوگنا فری استعمال کے خطرات ہیں۔ C اور C++ میں کمزوریاں، یا جاوا، گو، اور C# جیسے کوڑے سے جمع کیے گئے رن ٹائمز کو اپنائیں جو رن ٹائم لیٹنسی جیٹر، میموری فوٹ پرنٹ بلوٹ، اور سٹاپ-دی-ورلڈ توقف نافذ کرتے ہیں۔ زنگ نے صفر رن ٹائم اوور ہیڈ پر ریاضی کی میموری کی حفاظت فراہم کرنے کے لیے ایفائن ٹائپ تھیوری اور کمپائل ٹائم اونرشپ ٹریکنگ کو لاگو کرکے اس سمجھوتہ کو توڑ دیا۔"
+      "text": "From the Linux kernel and cloud hypervisors to high-frequency trading engines and aerospace flight software, Rust’s ownership model is fundamentally transforming mission-critical software engineering. By turning catastrophic memory safety vulnerabilities into compile-time syntax errors, systems architects can now build high-concurrency architectures with complete formal confidence."
     }
   ],
-  "sourceHash": "980fa0d6b5ed8c89826c4d46df22bbfbac7467b9"
+  "sourceHash": "233b2266b4e8db649983020fa7125eca9a86105c"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "sub-microsecond-market-microstructure-and-fpga-trading-engines",
-  "title": "Microestructura de mercado de submicrosegundos: canalización del kernel FPGA, derivación del kernel y motores de coincidencia de libros de pedidos",
-  "excerpt": "Un estudio de ingeniería de sistemas cuantitativos: arquitectura financiera de latencia ultrabaja, bypass del kernel Solarflare EF_VI, motores de libros de pedidos límite Verilog personalizados y redes de línea de visión de microondas de nanosegundos.",
+  "title": "Dentro de los motores comerciales de submicrosegundos",
+  "excerpt": "Un estudio de ingeniería de sistemas cuantitativos: arquitectura financiera de latencia ultrabaja, derivación del kernel Solarflare EF_VI, motores de libro de órdenes límite Verilog personalizados y redes de línea de visión de microondas de nanosegundos.",
   "date": "2026-11-17",
   "author": "Tariq Mahmood",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Debido a que las pruebas en vivo en bolsas financieras corren el riesgo de pérdidas devastadoras por algoritmos no autorizados, las empresas cuantitativas implementan bancos de pruebas de hardware en el bucle. Los dispositivos de captura de red dedicados reproducen gigabytes de capturas de paquetes PCAP sin procesar a velocidad de cable, validando que cada transición de estado-máquina coincida con las especificaciones matemáticas formales con precisión de bits."
     }
   ],
-  "sourceHash": "38becfb28a9169eef4b4f8b6fa39db424b8bbffb"
+  "sourceHash": "0e2ba5dc0aa5365018310a08f3ec407e2310fd6d"
 }

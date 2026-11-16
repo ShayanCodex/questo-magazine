@@ -1,0 +1,70 @@
+{
+  "slug": "neuromorphic-computing-and-spiking-neural-networks",
+  "title": "Puces informatiques neuromorphiques",
+  "excerpt": "Comment les architectures basées sur les événements inspirées du cerveau, les réseaux neuronaux à pointe asynchrone et les barres transversales memristives réduisent de 99 % la consommation d'énergie du deep learning.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "tags": [
+    "semiconductors",
+    "neuromorphic",
+    "artificial-intelligence",
+    "hardware-engineering",
+    "spiking-neural-networks",
+    "computing"
+  ],
+  "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Une plaquette de silicium de microprocesseur brille sous l'éclairage d'une inspection en salle blanche",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le goulot d'étranglement de Von Neumann dans l'IA moderne"
+    },
+    {
+      "type": "p",
+      "text": "Les architectures informatiques conventionnelles séparent les cœurs de traitement informatique des blocs de mémoire. Le déplacement de milliards de poids sur des bus mémoire consomme plus de 80 % de l’énergie lors de l’inférence du réseau neuronal. L’informatique neuromorphique résout cette crise en reflétant la topologie biologique du cerveau, en colocalisant le traitement et la mémoire au sein de neurones artificiels."
+    },
+    {
+      "type": "h2",
+      "text": "Innovations architecturales clés"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Neurones à pic asynchrone : les puces calculent exclusivement lorsqu'un pic d'événement se produit, consommant une énergie de veille statique proche de zéro.",
+        "Synapses analogiques Memristor : dispositifs RAM résistifs à semi-conducteurs fonctionnant comme des poids synaptiques variables avec rétention analogique non volatile.",
+        "Multiplication vectorielle en mémoire : exécution d'opérations physiques d'Ohm-Kirchhoff directement sur des réseaux crossbar en un seul cycle d'horloge.",
+        "Efficacité énergétique biologique : fonctionne avec des budgets de puissance en milliwatts adaptés à la robotique autonome, aux capteurs de bord et aux prothèses neuronales."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Le cerveau humain effectue des quadrillions d'opérations synaptiques avec vingt watts de puissance. Les architectures neuromorphiques imitent ce chef-d’œuvre évolutif.",
+      "cite": "Questo Neuromorphic Systems & Cognitive Hardware Group"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Carte de circuit intégré microélectronique haute densité avec bus de signaux interconnectés",
+      "caption": "Routage de substrat neuromorphique : canaux de communication asynchrones pilotés par événements reliant des colonnes corticales artificielles."
+    },
+    {
+      "type": "h2",
+      "text": "Réseaux de neurones à pointes vs apprentissage profond"
+    },
+    {
+      "type": "p",
+      "text": "Contrairement aux réseaux de rétropropagation standard qui calculent des activations denses et continues à virgule flottante, les réseaux de neurones à pointes (SNN) transmettent des informations temporelles via des impulsions discrètes chronométrées à la microseconde, déverrouillant ainsi la reconnaissance de modèles temporels biologiques."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/FUmXDJphpQM",
+      "title": "Qu'est-ce que l'informatique neuromorphique ? Explication des puces inspirées du cerveau",
+      "caption": "Documentaire d'ingénierie analysant les architectures neuromorphiques, les caméras basées sur les événements et les comparaisons de puces biologiques."
+    },
+    {
+      "type": "p",
+      "text": "En couplant le traitement sensoriel basé sur les événements avec du silicium neuromorphique à faible fuite, les appareils de périphérie autonomes peuvent naviguer dans des environnements complexes avec des budgets de microwatts."
+    }
+  ],
+  "sourceHash": "d4501e4b159b5268043500c95ddf96576c360f3b"
+}

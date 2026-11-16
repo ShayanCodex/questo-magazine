@@ -1,7 +1,7 @@
 {
   "slug": "distributed-consensus-and-formal-verification-in-blockchains",
-  "title": "ہائی تھرو پٹ بلاک چینز میں تقسیم شدہ اتفاق رائے اور رسمی تصدیق",
-  "excerpt": "پائپ لائن شدہ DAG پر مبنی بازنطینی فالٹ ٹولرنس، TLA+ حفاظتی ثبوت، اور مخالف نیٹ ورک لیٹنسی کے تحت ریاستی مشین کی نقل کا ایک سسٹم پروٹوکول تجزیہ۔",
+  "title": "Distributed Consensus & Verification",
+  "excerpt": "A systems protocol analysis of pipelined DAG-based Byzantine fault tolerance, TLA+ safety proofs, and state machine replication under adversarial network latency.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,62 +12,62 @@
     "cryptography"
   ],
   "image": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "تجریدی چمکتا ہوا ریاضیاتی نوڈ گراف تقسیم شدہ اتفاق رائے اور لیجر کی تصدیق کو ظاہر کرتا ہے",
+  "imageAlt": "Abstract glowing mathematical node graph illustrating distributed consensus and ledger verification",
   "body": [
     {
       "type": "h2",
-      "text": "عمل درآمد پائپ لائنوں سے اتفاق رائے کو ترتیب دینا"
+      "text": "Decoupling Consensus Ordering from Execution Pipelines"
     },
     {
       "type": "p",
-      "text": "کلاسیکی بازنطینی فالٹ ٹولرنٹ (BFT) پروٹوکول جیسے PBFT چوکور کمیونیکیشن اوور ہیڈ اور بنڈل لین دین کی تقسیم، آرڈرنگ، اور ایک ہی ہم وقت ساز رکاوٹ میں عمل درآمد کا شکار ہیں۔ جدید ہائی تھرو پٹ ڈسٹری بیوٹڈ لیجرز ان ذمہ داریوں کو ڈائریکٹڈ ایسکلک گراف (DAG) کننسس آرکیٹیکچرز جیسے ناروال، بل شارک، اور میسٹیسٹی کے ذریعے دوگنا کرتے ہیں، جو سو ہزار ٹرانزیکشن فی سیکنڈ اسکیلز پر ذیلی سیکنڈ فائنل کو حاصل کرتے ہیں۔"
+      "text": "Classical Byzantine fault tolerant (BFT) protocols like PBFT suffer from quadratic communication overhead and bundle transaction dissemination, ordering, and execution into a single synchronous bottleneck. Modern high-throughput distributed ledgers decouple these responsibilities through directed acyclic graph (DAG) consensus architectures like Narwhal, Bullshark, and Mysticeti, achieving sub-second finality at hundred-thousand transaction-per-second scales."
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "Key Points"
     },
     {
       "type": "ul",
       "items": [
-        "ڈی اے جی میموری پولز: اتفاق رائے سے آزادانہ طور پر راؤنڈ بیسڈ ڈی اے جی ڈھانچے میں ٹرانزیکشنز کا اشتراک اور توثیق کی جاتی ہے۔",
-        "زیرو کمیونیکیشن کمٹ: ایک بار جب ڈی اے جی سرٹیفکیٹ کا ڈھانچہ کورم حاصل کر لیتا ہے، تمام دیانتدار نوڈس بغیر کسی اضافی ووٹنگ کے مقامی طور پر کل ترتیب کا تعین کرتے ہیں۔",
-        "TLA+ کے ساتھ باضابطہ تصدیق: ریاستی منتقلی اور جاندار خصوصیات صوابدیدی غیر مطابقت پذیر نیٹ ورک پارٹیشنز کے تحت ریاضی کے اعتبار سے درست ثابت ہوتی ہیں۔",
-        "متوازی ایگزیکیوشن انجن: سافٹ ویئر ٹرانزیکشنل میموری (STM) اور پرامید کنکرنسی ماڈل ملٹی کور نوڈس میں غیر متضاد سمارٹ کنٹریکٹس کو انجام دیتے ہیں۔"
+        "DAG Memory Pools: Transactions are continuously shared and validated into round-based DAG structures independently of consensus ordering.",
+        "Zero-Communication Commit: Once the DAG certificate structure achieves quorum, all honest nodes determine total order locally without extra voting rounds.",
+        "Formal Verification with TLA+: State transitions and liveness properties are proven mathematically sound under arbitrary asynchronous network partitions.",
+        "Parallel Execution Engines: Software transactional memory (STM) and optimistic concurrency models execute non-conflicting smart contracts across multi-core nodes."
       ]
     },
     {
       "type": "quote",
-      "text": "تقسیم شدہ پروٹوکول میں رفتار درستگی کے باضابطہ ثبوتوں کے بغیر بے معنی ہے۔ ریاضی کی تصدیق پرامید نظاموں کو غیر متزلزل خودمختار لیجرز میں بدل دیتی ہے۔",
-      "cite": "سسٹمز آرکیٹیکچر اور تقسیم شدہ اتفاق رائے کا جائزہ"
+      "text": "Speed in distributed protocols is meaningless without formal proofs of correctness. Mathematical verification turns optimistic systems into unshakeable sovereign ledgers.",
+      "cite": "Systems Architecture & Distributed Consensus Review"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1200&q=80",
-      "alt": "سخت ریاضی کے ثبوتوں اور ریاستی مشین کی منتقلی کے فارمولوں سے ڈھکے ہوئے چاک بورڈ",
-      "caption": "ریاضی کے ثبوت: من مانی مخالفانہ تاخیر کے تحت بازنطینی حفاظت کے غیر متزلزل تحفظ کی تصدیق کرنا۔"
+      "alt": "Chalkboard covered in rigorous mathematical proofs and state-machine transition formulas",
+      "caption": "Mathematical proofs: verifying Byzantine safety invariant preservation under arbitrary adversarial delays."
     },
     {
       "type": "h2",
-      "text": "سمارٹ معاہدوں کے لیے TLA+ اور Dafny کے ساتھ باضابطہ تصدیق"
+      "text": "Formal Verification with TLA+ and Dafny for Smart Contracts"
     },
     {
       "type": "p",
-      "text": "Leslie Lamport's TLA+ اور Dafny جیسے ڈیڈکٹیو ویریفائرز کو لاگو کرنا تقسیم شدہ سسٹم انجینئرز کو مکمل طور پر ریاستی مشینوں کو حفاظت اور زندگی کی خلاف ورزیوں کے خلاف ماڈل چیک کرنے کی اجازت دیتا ہے۔"
+      "text": "Applying formal methods like Leslie Lamport’s TLA+ and deductive verifiers like Dafny allows distributed systems engineers to exhaustively model check state machines against safety and liveness violations, catching subtle race conditions that fuzzing and unit testing miss."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/PHe0bXAIuk0",
-      "title": "ڈسٹری بیوٹڈ سسٹمز آرکیٹیکچر اور کرپٹوگرافک اسٹیٹ مشینیں",
-      "caption": "بازنطینی فالٹ ٹولرنس، ریاستی مشین کی نقل، اور رسمی تصدیقی ثبوتوں میں تکنیکی گہرا غوطہ۔"
+      "title": "Distributed Systems Architecture and Cryptographic State Machines",
+      "caption": "Technical deep dive into Byzantine fault tolerance, state machine replication, and formal verification proofs."
     },
     {
       "type": "h2",
-      "text": "غیر مطابقت پذیر لائیونس اور جزوی مطابقت پذیری حقیقتیں"
+      "text": "Asynchronous Liveness and Partial Synchrony Realities"
     },
     {
       "type": "p",
-      "text": "مکمل غیر مطابقت پذیر حالات میں حفاظت کی ضمانت دے کر اور جب بھی نیٹ ورک میں تاخیر کسی حد (ڈیلٹا) سے نیچے آجاتی ہے تو زندہ رہنے کی ضمانت دے کر، جدید پروٹوکول انٹرنیٹ کے بنیادی ڈھانچے کی روٹنگ کی شدید بندش کے دوران بھی سخت حتمی کو برقرار رکھتے ہیں۔"
+      "text": "By guaranteeing safety under complete asynchronous conditions and guaranteeing liveness whenever network latency drops below a bound (delta), modern protocols maintain rock-solid finality even during severe internet infrastructure routing outages."
     }
   ],
-  "sourceHash": "a22641abbb6c18b07d927dd752a5818a142e0b07"
+  "sourceHash": "6be6c94303a5c5028c18353a861f7c4b932cba1e"
 }

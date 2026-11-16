@@ -1,7 +1,7 @@
 {
   "slug": "sparse-autoencoders-and-mechanistic-interpretability-in-llms",
-  "title": "Sparse Autoencoder und mechanistische Interpretierbarkeit in Basismodellen",
-  "excerpt": "Eine mechanistische Interpretierbarkeitsuntersuchung zur Überlagerung neuronaler Netze, monosemantischen Merkmalswörterbüchern und Aktivierungssteuerung in Frontier-Sprachmodellen.",
+  "title": "Sparse Autoencoder in Basismodellen",
+  "excerpt": "Eine mechanistische Interpretierbarkeitsuntersuchung der Überlagerung neuronaler Netze, monosemantischer Merkmalswörterbücher und der Aktivierungssteuerung in Frontier-Sprachmodellen.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -37,7 +37,7 @@
     },
     {
       "type": "quote",
-      "text": "Überlagerung galt lange Zeit als undurchdringliche rechnerische Blackbox. Sparse-Autoencoder zeigen, dass neuronale Darstellungen strengen geometrischen Gesetzen gehorchen, die einer präzisen Zerlegung zugänglich sind.",
+      "text": "Überlagerung galt lange Zeit als undurchdringliche rechnerische Black Box. Sparse-Autoencoder zeigen, dass neuronale Darstellungen strengen geometrischen Gesetzen gehorchen, die einer präzisen Zerlegung zugänglich sind.",
       "cite": "Anthropic & Alignment Research Collaborative"
     },
     {
@@ -69,5 +69,5 @@
       "text": "Der wahre Test der Interpretierbarkeit liegt in der kausalen Überprüfung: Das Klemmen oder Abschwächen eines einzelnen identifizierten Merkmalsvektors während der Inferenz verändert systematisch die Argumentationsbahn des Modells. Dies bietet eine mathematisch überprüfbare Grundlage für KI-Sicherheit, Auditierung und Halluzinationsunterdrückung."
     }
   ],
-  "sourceHash": "183ef7795abb6a6fc8d1fdfedd389e6b1e923c34"
+  "sourceHash": "03b0159a05371f46de05504b5aab9b328c5282cd"
 }

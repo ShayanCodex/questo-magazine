@@ -1,7 +1,7 @@
 {
   "slug": "sub-microsecond-market-microstructure-and-fpga-trading-engines",
-  "title": "Microstructure de marché submicroseconde : pipeline de noyau FPGA, contournement de noyau et moteurs de correspondance de carnet de commandes",
-  "excerpt": "Une étude quantitative d'ingénierie des systèmes : architecture financière à très faible latence, contournement du noyau Solarflare EF_VI, moteurs de carnet de commandes limités Verilog personnalisés et réseaux de visibilité directe micro-ondes nanosecondes.",
+  "title": "À l'intérieur des moteurs de trading sub-microseconde",
+  "excerpt": "Une étude quantitative d'ingénierie des systèmes : architecture financière à très faible latence, contournement du noyau Solarflare EF_VI, moteurs de carnet d'ordres limités Verilog personnalisés et réseaux de visibilité directe micro-ondes nanosecondes.",
   "date": "2026-11-17",
   "author": "Tariq Mahmood",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Parce que les tests en direct sur les bourses financières risquent des pertes dévastatrices d'algorithmes malveillants, les entreprises quantitatives déploient des bancs de test hardware-in-the-loop. Des appareils de capture réseau dédiés relisent des gigaoctets de captures de paquets PCAP bruts à la vitesse du câble, validant ainsi que chaque transition entre la machine d'état correspond aux spécifications mathématiques formelles précises au bit près."
     }
   ],
-  "sourceHash": "38becfb28a9169eef4b4f8b6fa39db424b8bbffb"
+  "sourceHash": "0e2ba5dc0aa5365018310a08f3ec407e2310fd6d"
 }

@@ -1,0 +1,70 @@
+{
+  "slug": "sarcopenia-and-the-biology-of-muscle-hypertrophy",
+  "title": "La ciencia de la sarcopenia",
+  "excerpt": "La biología celular del desgaste muscular relacionado con la edad: activación de mTOR, agotamiento de las células satélite, señalización de miostatina e intervenciones de entrenamiento de resistencia.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Sterling",
+  "tags": [
+    "longevity",
+    "sarcopenia",
+    "hypertrophy",
+    "exercise-physiology",
+    "biology",
+    "health"
+  ],
+  "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Atleta que realiza un entrenamiento pesado con barra en una instalación de rendimiento deportivo",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La pérdida silenciosa del músculo esquelético funcional"
+    },
+    {
+      "type": "p",
+      "text": "La sarcopenia es la pérdida progresiva e involuntaria de masa, fuerza y ​​velocidad neuromuscular del músculo esquelético que ocurre con el envejecimiento. A partir de los 30 años, los adultos pierden entre el 3% y el 8% de la masa muscular por década, acelerándose marcadamente después de los 60 años. El músculo no es simplemente un tejido estético; es el principal sumidero metabólico del cuerpo para la eliminación de glucosa y la independencia funcional."
+    },
+    {
+      "type": "h2",
+      "text": "Impulsores celulares y moleculares"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Resistencia anabólica: disminución de la sensibilidad de la vía intracelular mTORC1 a la leucina dietética e hiperaminoacidemia en miocitos envejecidos.",
+        "Agotamiento de las células satélite: inactividad y senescencia progresiva de las células madre musculares responsables de la reparación de las miofibrillas después de un microtrauma.",
+        "Denervación de fibras de contracción rápida tipo II: apoptosis de la unidad motora que conduce a atrofia preferencial de fibras musculares explosivas de alto umbral.",
+        "Inflamación crónica de bajo grado: citocinas elevadas de TNF-alfa e IL-6 que regulan positivamente la degradación de la ubiquitina-proteosoma específica del músculo."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La masa muscular es tu fondo de pensión metabólica. Si no se invierte activamente en la tensión mecánica y la síntesis de proteínas desde el principio, la fragilidad se vuelve inevitable.",
+      "cite": "Centro Questo de Biología Musculoesquelética y Longevidad"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Equipo de entrenamiento de gimnasio que muestra aparatos de entrenamiento de resistencia pesada",
+      "caption": "Sobrecarga mecánica progresiva: el estímulo mecánico estándar para estimular la síntesis de proteínas musculares y preservar las unidades motoras."
+    },
+    {
+      "type": "h2",
+      "text": "Intervenciones de hipertrofia basadas en evidencia"
+    },
+    {
+      "type": "p",
+      "text": "Revertir la resistencia anabólica requiere dos pilares sinérgicos: entrenamiento de resistencia progresiva dirigido a 1-3 repeticiones en reserva, combinado con una ingesta diaria de proteínas de 1,6 a 2,2 gramos por kilogramo de peso corporal distribuida en pulsos de proteínas ricas en leucina."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/yNq2Nuwy9Rc",
+      "title": "Desarrollar músculo y prevenir la sarcopenia con el Dr. Brad Schoenfeld",
+      "caption": "El destacado científico del ejercicio, el Dr. Brad Schoenfeld, analiza los protocolos de entrenamiento de resistencia, la sincronización de las proteínas y la lucha contra la pérdida muscular a lo largo de la vida."
+    },
+    {
+      "type": "p",
+      "text": "El entrenamiento de resistencia de alta intensidad estimula el reclutamiento de células satélite y restablece la comunicación neuromuscular hasta bien entrada la edad octogenaria."
+    }
+  ],
+  "sourceHash": "98e78fb1259000bf4f6465e4cc273994141cb81c"
+}

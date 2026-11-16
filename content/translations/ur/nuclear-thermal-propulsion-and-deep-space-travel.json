@@ -1,0 +1,70 @@
+{
+  "slug": "nuclear-thermal-propulsion-and-deep-space-travel",
+  "title": "Nuclear Thermal Propulsion",
+  "excerpt": "The thermodynamics of solid-core nuclear thermal rockets: high-assay low-enriched uranium fuel, cryogenic hydrogen propellants, and rapid Mars transit architectures.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "tags": [
+    "aerospace",
+    "nuclear-propulsion",
+    "rocketry",
+    "deep-space",
+    "physics",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1517976487504-59a1a0812917?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Rocket engine nozzle firing glowing plasma plume against dark night sky",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Overcoming the Chemical Rocket Equation"
+    },
+    {
+      "type": "p",
+      "text": "Chemical rocket engines (LOX/Methane or LOX/LH2) are limited by the fundamental bond energy of chemical reactions, topping out at a specific impulse (Isp) of around 450 seconds. Reaching Mars with chemical propulsion requires grueling nine-month transit trajectories that expose astronauts to debilitating deep-space cosmic radiation and muscle atrophy. Nuclear Thermal Propulsion (NTP) shatters this barrier."
+    },
+    {
+      "type": "h2",
+      "text": "Thermodynamics of Solid-Core NTP Engines"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "HALEU Fission Reactor: Utilizing High-Assay Low-Enriched Uranium ceramic-metallic (cermet) fuel elements capable of operating at 2,700 Kelvin.",
+        "Cryogenic Liquid Hydrogen: Pumping pure low-molecular-weight hydrogen (H2) through the superheated reactor core, generating massive volumetric expansion.",
+        "Specific Impulse Doubling: Achieving an Isp of 900+ seconds—twice the efficiency of the best chemical rocket engines in existence.",
+        "Transit Time Halving: Cutting human Mars transit windows down to 90-120 days, drastically reducing radiation exposure and life support mass requirements."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Nuclear thermal propulsion is not an incremental refinement; it is the physics threshold that transforms interplanetary voyages from survival missions into sustainable routes.",
+      "cite": "Questo Deep Space Propulsion & Nuclear Engineering Lab"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Earth viewed from orbit with spacecraft solar arrays in the foreground",
+      "caption": "High-energy orbital transfer: Nuclear propulsion burns allowing high-velocity hyperbolic injection burns for outer planet trajectories."
+    },
+    {
+      "type": "h2",
+      "text": "Safety, Launch Containment, and DRACO Testing"
+    },
+    {
+      "type": "p",
+      "text": "Modern NTP designs remain completely inert and cold during launch inside conventional rocket fairings. The fission reactor is only ignited with beryllium control drums once the spacecraft achieves a stable, long-duration nuclear-safe storage orbit above 700 kilometers."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/g32ZhNow2_A",
+      "title": "60-Sec Tech: Nuclear Thermal Propulsion Explained by NASA",
+      "caption": "NASA aerospace overview breaking down the mechanics of liquid hydrogen heating and fission reactors for human exploration of Mars."
+    },
+    {
+      "type": "p",
+      "text": "Doubling rocket exhaust velocity through low molecular weight propellants unlocks the outer solar system for scientific exploration."
+    }
+  ],
+  "sourceHash": "4ffcb7e7b8c40198b0d15f98c9ecb86e92eac730"
+}

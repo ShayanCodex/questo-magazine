@@ -1,6 +1,6 @@
 {
   "slug": "neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics",
-  "title": "Éclaboussures gaussiennes 3D en robotique : cartographie spatiale inférieure à la milliseconde et systèmes SLAM",
+  "title": "Éclaboussures gaussiennes 3D en robotique",
   "excerpt": "Remplacement des grilles d'occupation discrètes par des ellipsoïdes 3D différenciables : estimation de la pose de la caméra en temps réel, rendu du rayonnement volumétrique et navigation autonome dans des espaces encombrés.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
@@ -12,7 +12,7 @@
     "autonomous-systems"
   ],
   "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Autonomous robotic perception system scanning complex spatial environment with stereo cameras",
+  "imageAlt": "Système de perception robotique autonome analysant un environnement spatial complexe avec des caméras stéréo",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Les limites de la représentation spatiale traditionnelle"
+      "text": "La percée des gaussiennes 3D différenciables"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Differentiable 3D Gaussian ellipsoids visualizing continuous scene geometry and radiance fields",
-      "caption": "3D Gaussian Splatting: modeling physical spaces as millions of differentiable ellipsoids for real-time robotic SLAM."
+      "alt": "Éclaboussures gaussiennes 3D en robotique : cartographie spatiale inférieure à la milliseconde et systèmes SLAM - Opérationnel Figure 4",
+      "caption": "Observation empirique : mécanique opérationnelle et télémétrie fondamentale prenant en charge les éclaboussures gaussiennes 3D en robotique : cartographie spatiale inférieure à la milliseconde et systèmes SLAM."
     },
     {
       "type": "ul",
       "items": [
-        "Differentiable Ellipsoids: 3D Gaussian Splatting represents physical scenes as millions of anisotropic 3D Gaussians, each characterized by position, covariance matrix (shape/scale), opacity, and spherical harmonic colors.",
-        "Tile-Based Rasterization: Unlike Neural Radiance Fields (NeRFs) requiring intensive volumetric ray-marching per pixel, Gaussians are projected to 2D screen space and sorted in hardware, rendering at over 120 FPS.",
-        "Gradient-Based Optimization: Camera pose estimates and scene geometry are jointly refined in real time through backpropagation against incoming camera frames.",
-        "Continuous Physics Integration: Continuous Gaussian density fields provide closed-form signed distance approximations, enabling physical collision checking without converting to complex meshes."
+        "Ellipsoïdes différenciables : le splatting gaussien 3D représente des scènes physiques sous la forme de millions de gaussiennes 3D anisotropes, chacune caractérisée par sa position, sa matrice de covariance (forme/échelle), son opacité et ses couleurs harmoniques sphériques.",
+        "Rastérisation basée sur des tuiles : contrairement aux champs de radiance neuronale (NeRF) nécessitant un déplacement de rayons volumétrique intensif par pixel, les gaussiennes sont projetées sur un espace d'écran 2D et triées dans le matériel, pour un rendu à plus de 120 FPS.",
+        "Optimisation basée sur le dégradé : les estimations de pose de la caméra et la géométrie de la scène sont affinées conjointement en temps réel grâce à la rétropropagation des images de caméra entrantes.",
+        "Intégration physique continue : les champs de densité gaussienne continue fournissent des approximations de distance signées de forme fermée, permettant la vérification des collisions physiques sans conversion en maillages complexes."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Robotic trajectory planning through indoor obstacle field using real-time volumetric scene reconstruction",
-      "caption": "Tile-based rasterization: GPU acceleration delivering sub-millisecond pose updates and continuous collision avoidance."
+      "alt": "Éclaboussures gaussiennes 3D en robotique : cartographie spatiale inférieure à la milliseconde et systèmes SLAM - Opérationnel Figure 7",
+      "caption": "Observation empirique : mécanique opérationnelle et télémétrie fondamentale prenant en charge les éclaboussures gaussiennes 3D en robotique : cartographie spatiale inférieure à la milliseconde et systèmes SLAM."
     },
     {
       "type": "h2",
-      "text": "Les limites de la représentation spatiale traditionnelle"
+      "text": "SLAM inférieur à la milliseconde dans les environnements dynamiques"
     },
     {
       "type": "p",
-      "text": "Pendant des décennies, la robotique mobile s'est appuyée sur des cartes de grille d'occupation 2D et 3D discrètes, des nuages ​​de points et des maillages polygonaux pour la localisation et la cartographie simultanées (SLAM). Bien qu'efficaces pour éviter les obstacles de base, ces représentations éliminent les textures de surface photoréalistes, les réflexions spéculaires dépendant de la vue et les fines nuances structurelles nécessaires à la manipulation robotique agile, à la robotique chirurgicale et à la navigation humanoïde dynamique."
+      "text": "En exécutant une optimisation gaussienne sur des GPU de pointe intégrés, les drones aériens autonomes modernes et les robots à pattes peuvent reconstruire en temps réel des cartes 3D photoréalistes d'environnements intérieurs inconnus. Lorsque le robot traverse les couloirs de la pièce, les surfaces nouvellement observées sont initialisées dynamiquement avec de nouvelles primitives gaussiennes, tandis que les points occlus sont élagués de manière itérative."
     },
     {
       "type": "video",
-      "title": "3D Gaussian Splatting in Robotics: Real-Time SLAM and Mapping Breakdown",
-      "caption": "Engineering demonstration of real-time camera tracking, anisotropic Gaussian optimization, and collision avoidance.",
-      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88"
+      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88",
+      "title": "Éclaboussures gaussiennes 3D en robotique : SLAM en temps réel et répartition de la cartographie",
+      "caption": "Démonstration technique du suivi de caméra en temps réel, de l'optimisation gaussienne anisotrope et de l'évitement des collisions."
     },
     {
       "type": "h2",
-      "text": "Les limites de la représentation spatiale traditionnelle"
+      "text": "L'avenir de l'intelligence spatiale incarnée"
     },
     {
       "type": "p",
-      "text": "Pendant des décennies, la robotique mobile s'est appuyée sur des cartes de grille d'occupation 2D et 3D discrètes, des nuages ​​de points et des maillages polygonaux pour la localisation et la cartographie simultanées (SLAM). Bien qu'efficaces pour éviter les obstacles de base, ces représentations éliminent les textures de surface photoréalistes, les réflexions spéculaires dépendant de la vue et les fines nuances structurelles nécessaires à la manipulation robotique agile, à la robotique chirurgicale et à la navigation humanoïde dynamique."
+      "text": "Alors que les plates-formes robotiques passent de cages industrielles rigides à des environnements humains non structurés, la perception spatiale doit correspondre à la richesse continue de la vision biologique. Les éclaboussures gaussiennes 3D fournissent la base mathématique des machines qui non seulement naviguent dans l'espace, mais comprennent véritablement sa forme physique."
     }
   ],
-  "sourceHash": "43081c936b0147175e178f8716666471c30c8b11"
+  "sourceHash": "db9995631f54d3a33bb716c44b1ac5ee20fde5bf"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "vagus-nerve-stimulation-and-heart-rate-variability-autonomics",
-  "title": "Estimulación del nervio vago y variabilidad de la frecuencia cardíaca Dinámica autónoma",
+  "title": "Estimulación del nervio vago y dinámica de la VFC",
   "excerpt": "Una investigación neurocardiológica sobre el tono vagal parasimpático, la arritmia de los senos respiratorios, la sensibilidad de los barorreceptores y los biomarcadores de adaptación al estrés.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
@@ -31,8 +31,8 @@
       "items": [
         "Media cuadrática de diferencias sucesivas (RMSSD): una métrica validada en el dominio del tiempo que refleja la modulación vagal latido a latido independiente del tono simpático.",
         "Arritmia sinusal respiratoria (RSA): la frecuencia cardíaca se acelera naturalmente durante la inhalación (retirada vagal) y se desacelera durante la exhalación lenta (activación vagal).",
-        "La vía antiinflamatoria colinérgica: la estimulación vagal eferente libera acetilcolina que se une a los receptores nicotínicos alfa-7 en los macrófagos, deteniendo la producción de citoquinas inflamatorias.",
-        "Estimulación vago auricular transcutánea (taVNS): la estimulación eléctrica no invasiva de la rama auricular vago modula la liberación de norepinefrina del locus coeruleus del tronco encefálico."
+        "La vía antiinflamatoria colinérgica: la estimulación vagal eferente libera acetilcolina que se une a los receptores nicotínicos alfa-7 en los macrófagos, deteniendo la producción de citocinas inflamatorias.",
+        "Estimulación transcutánea del vago auricular (taVNS): la estimulación eléctrica no invasiva de la rama vago auricular modula la liberación de norepinefrina del locus coeruleus del tronco encefálico."
       ]
     },
     {
@@ -62,12 +62,12 @@
     },
     {
       "type": "h2",
-      "text": "Biomarcadores clínicos de longevidad y equilibrio mental"
+      "text": "Biomarcadores clínicos para la longevidad y el equilibrio mental"
     },
     {
       "type": "p",
       "text": "El seguimiento de la VFC matutina y nocturna proporciona a los médicos y atletas un biomarcador objetivo imposible de piratear de recuperación fisiológica, inflamación sistémica y adaptación al estrés neuronal."
     }
   ],
-  "sourceHash": "dd4051b4c0db41f985a3e197eea31caed985cf20"
+  "sourceHash": "7eec0a70a27a6975460b0402bbd426694f6853a6"
 }

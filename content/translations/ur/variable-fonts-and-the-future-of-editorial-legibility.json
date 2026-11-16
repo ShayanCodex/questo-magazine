@@ -1,7 +1,7 @@
 {
   "slug": "variable-fonts-and-the-future-of-editorial-legibility",
-  "title": "متغیر فونٹس اور ادارتی لیجیبلٹی کا مستقبل",
-  "excerpt": "اوپن ٹائپ تغیرات کے محور، ڈائنامک آپٹیکل سائزنگ، اور ریسپانسیو ویٹ ماڈیولیشن کس طرح ڈیجیٹل میگزین ٹائپوگرافی اور پڑھنے کے آرام میں انقلاب برپا کر رہے ہیں۔",
+  "title": "Variable Fonts & Editorial Legibility",
+  "excerpt": "How OpenType variation axes, dynamic optical sizing, and responsive weight modulation are revolutionizing digital magazine typography and reading comfort.",
   "date": "2026-11-12",
   "updated": "2026-11-14",
   "author": "Saskia Lindqvist",
@@ -16,21 +16,21 @@
   "body": [
     {
       "type": "p",
-      "text": "جوہانس گٹن برگ کی حرکت پذیر قسم کی ایجاد کے بعد پانچ صدیوں تک، ایک فونٹ ایک جسمانی، لچکدار نمونہ تھا۔ اگر کسی پرنٹر کو 8 نکاتی اٹالک اور 24 نکاتی بولڈ ڈسپلے کٹ کی ضرورت ہوتی ہے، تو لیڈ پنچ کے دو مکمل طور پر الگ سیٹ کاسٹ کرنے پڑتے ہیں۔ ویب نے اپنی پہلی تین دہائیاں ہر ایک وزن کے لیے علیحدہ ویب فونٹ فائل ڈاؤن لوڈ کے ساتھ اس سخت تمثیل کو نقل کرنے میں صرف کیں۔"
+      "text": "For five centuries following Johannes Gutenberg's invention of movable type, a font was a physical, inflexible artifact. If a printer required an 8-point italic and a 24-point bold display cut, two entirely separate sets of lead punches had to be cast. The web spent its first three decades replicating this rigid paradigm with separate web font file downloads for every single weight."
     },
     {
       "type": "h2",
-      "text": "لامحدود مسلسل محور"
+      "text": "The Infinite Continuous Axis"
     },
     {
       "type": "p",
-      "text": "جوہانس گٹن برگ کی حرکت پذیر قسم کی ایجاد کے بعد پانچ صدیوں تک، ایک فونٹ ایک جسمانی، لچکدار نمونہ تھا۔ اگر کسی پرنٹر کو 8 نکاتی اٹالک اور 24 نکاتی بولڈ ڈسپلے کٹ کی ضرورت ہوتی ہے، تو لیڈ پنچ کے دو مکمل طور پر الگ سیٹ کاسٹ کرنے پڑتے ہیں۔ ویب نے اپنی پہلی تین دہائیاں ہر ایک وزن کے لیے علیحدہ ویب فونٹ فائل ڈاؤن لوڈ کے ساتھ اس سخت تمثیل کو نقل کرنے میں صرف کیں۔"
+      "text": "The OpenType Font Variations specification dissolved these historical boundaries. A single variable font file contains continuous multi-dimensional axes—weight (wght), width (wdth), slant (slnt), and crucially, optical size (opsz). Instead of jumping discretely from 400 to 700, designers can interpolate weight dynamically at 523 or 648 based on ambient lighting sensors or screen DPI."
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Variable Fonts and the Future of Editorial Legibility - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Variable Fonts and the Future of Editorial Legibility."
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
     },
     {
       "type": "code",
@@ -39,18 +39,18 @@
     },
     {
       "type": "quote",
-      "text": "نوع ٹائپ خلا میں موجود نہیں ہے۔ یہ ویو پورٹ کے ساتھ سانس لیتا ہے۔ آپٹیکل سائزنگ ان نازک مائیکرو تناسب کو بحال کرتی ہے جسے اعلیٰ درجے کے پنچ کٹر نے صدیوں پہلے مکمل کیا تھا۔",
-      "cite": "ساسکیا لنڈکوسٹ، دی لونگ لیٹرفارم"
+      "text": "Typography does not exist in a vacuum; it breathes with the viewport. Optical sizing restores the delicate micro-proportions that high-end punchcutters perfected centuries ago.",
+      "cite": "Saskia Lindqvist, The Living Letterform"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 2",
+      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 7",
       "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
     },
     {
       "type": "h3",
-      "text": "کلیدی ایرگونومک اور کارکردگی کے فوائد"
+      "text": "Key Ergonomic and Performance Advantages"
     },
     {
       "type": "ul",
@@ -62,8 +62,8 @@
     },
     {
       "type": "p",
-      "text": "جوہانس گٹن برگ کی حرکت پذیر قسم کی ایجاد کے بعد پانچ صدیوں تک، ایک فونٹ ایک جسمانی، لچکدار نمونہ تھا۔ اگر کسی پرنٹر کو 8 نکاتی اٹالک اور 24 نکاتی بولڈ ڈسپلے کٹ کی ضرورت ہوتی ہے، تو لیڈ پنچ کے دو مکمل طور پر الگ سیٹ کاسٹ کرنے پڑتے ہیں۔ ویب نے اپنی پہلی تین دہائیاں ہر ایک وزن کے لیے علیحدہ ویب فونٹ فائل ڈاؤن لوڈ کے ساتھ اس سخت تمثیل کو نقل کرنے میں صرف کیں۔"
+      "text": "Through variable typography, digital publishing finally bridges the historical craftsmanship of luxury print monographs with the fluid responsiveness of modern web engineering."
     }
   ],
-  "sourceHash": "693d8e0abd96891755d7864ea0e0fe3017dd364a"
+  "sourceHash": "ebdf7ef39f6b4bd385cccb75767f9bb0a22ceff5"
 }

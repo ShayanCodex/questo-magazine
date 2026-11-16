@@ -1,0 +1,74 @@
+{
+  "slug": "zero-knowledge-rollups-and-zkevm-state-compression",
+  "title": "L'architecture de zk-Rollups",
+  "excerpt": "Une répartition des systèmes distribués de la mise à l'échelle de la blockchain de couche 2 : circuits arithmétiques, systèmes de preuve récursive Plonky2, preuves de validité des différences d'état et exécution de zkEVM au niveau du bytecode.",
+  "date": "2026-11-17",
+  "author": "Tariq Mahmood",
+  "tags": [
+    "cryptography",
+    "blockchains",
+    "zk-rollups",
+    "zero-knowledge",
+    "distributed-systems",
+    "software-engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Visualisation cryptographique 3D abstraite de cubes géométriques lumineux et de registres d'état compressés de la blockchain",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le trilemme d'évolutivité de la blockchain et le règlement de couche 2"
+    },
+    {
+      "type": "p",
+      "text": "Les registres publics décentralisés sont confrontés à un goulot d'étranglement de débit inhérent : si chaque nœud de validation dans le monde doit réexécuter chaque transaction, les limites de gaz de bloc ne peuvent pas augmenter sans centraliser le matériel de validation des nœuds. Les Zero-Knowledge Rollups (zk-Rollups) résolvent ce problème en séparant l'exécution informatique du règlement par consensus. Des milliers de transactions hors chaîne sont regroupées, compressées et vérifiées sur la couche 1 via une seule preuve cryptographique succincte."
+    },
+    {
+      "type": "h2",
+      "text": "Mécanique mathématique et systèmes de preuve"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Garanties de preuve de validité : contrairement aux cumuls optimistes qui dépendent d'une fenêtre de litige anti-fraude de 7 jours, les zk-Rollups s'appuient sur des preuves de validité mathématique (STARK/SNARK) qui se règlent instantanément.",
+        "Arithmétisation via R1CS & Plonk : Compilation d'opcodes EVM à usage général dans des systèmes de contraintes sur des courbes elliptiques finies pour générer des traces d'exécution arithmétiques vérifiables.",
+        "Composition de preuves récursives : compilation de milliers de preuves de transactions individuelles en une seule preuve parent à l'aide de Plonky2, réduisant ainsi les coûts de gaz de vérification en chaîne à des montants constants.",
+        "Compression de l'état des données d'appel : publication uniquement des différentiels d'état minimaux (adresses, noms occasionnels, changements d'équilibre) dans le stockage blob de couche 1 plutôt que de signatures entières et de codes de script."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La confiance n'évolue pas de manière linéaire ; les mathématiques le font. Les zk-Rollups permettent aux réseaux financiers mondiaux d'atteindre un débit à l'échelle de Visa avec la sécurité cryptographique de la couche de base Ethereum.",
+      "cite": "Questo Distributed Cryptography & Zero-Knowledge Systems Group"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Flux matriciels de données algorithmiques à grande vitesse illuminant une interface de serveur cryptographique numérique",
+      "caption": "Vérification succincte sans connaissance : vérification de milliers de lots de transactions dans moins de 200 000 unités de gaz."
+    },
+    {
+      "type": "h2",
+      "text": "L'émergence des zkEVM de type 1 et de type 2"
+    },
+    {
+      "type": "p",
+      "text": "Les premiers zk-Rollups ne prenaient en charge que de simples transferts de jetons, car la création de circuits arithmétiques pour la machine virtuelle Ethereum complexe était jugée insoluble sur le plan informatique. Aujourd'hui, les zkEVM modernes atteignent la compatibilité du bytecode avec les contrats intelligents Solidity, permettant le déploiement d'échanges décentralisés et de protocoles de prêt sans réécrire le code."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7pWxCklcNsU",
+      "title": "Documentaire : Rollups et feuille de route pour la mise à l'échelle de la connaissance zéro",
+      "caption": "Analyse approfondie de Finematics expliquant les mécanismes de mise à l'échelle de la couche 2, la compression d'état, les preuves de validité et la révolution de la connaissance nulle."
+    },
+    {
+      "type": "h2",
+      "text": "Accélération des prouveurs matériels et finalité en temps réel"
+    },
+    {
+      "type": "p",
+      "text": "La dernière frontière de l'ingénierie sans connaissance réside dans les performances des prouveurs. En utilisant des pipelines matériels FPGA et ASIC personnalisés optimisés pour les transformations théoriques des nombres (NTT) et la multiplication multi-scalaire (MSM), les temps de génération de preuves passent de quelques minutes à quelques secondes, apportant une finalité instantanée à l'échelle du Web au commerce décentralisé."
+    }
+  ],
+  "sourceHash": "abeada04f5e5b8fa27e46503ad95269ed997d886"
+}

@@ -1,6 +1,6 @@
 {
   "slug": "bathymetric-mapping-of-the-mariana-trench-and-hadal-geomorphology",
-  "title": "Mapeo batimétrico de la fosa de las Marianas: geomorfología de la zona Hadal y trincheras de subducción",
+  "title": "Mapeo de la Fosa de las Marianas",
   "excerpt": "Exploración del abismo: ecosondas de haces múltiples, mecánica de subducción de placas tectónicas y presiones hidrostáticas que superan las 1100 atmósferas en el abismo Challenger.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
@@ -36,8 +36,8 @@
       "type": "ul",
       "items": [
         "Sondeo de eco de haz múltiple (MBES): Conjuntos de sonar montados en el casco que emiten ventiladores de pings acústicos de alta frecuencia para mapear franjas del fondo marino, corrigiendo los perfiles de velocidad del sonido de temperatura-salinidad.",
-        "Topografía profunda del Challenger: ubicada a 11°22′N, 142°35′E, el fondo de la zanja comprende tres cuencas axiales distintas, y la depresión central alcanza una profundidad verificada de 10,928 metros.",
-        "Volcanes de lodo serpentinos: La subducción de la corteza oceánica libera fluidos hidratados que serpentinizan la peridotita del manto, haciendo erupción lodos minerales a través de la placa superior.",
+        "Topografía profunda del Challenger: Ubicado a 11°22′N, 142°35′E, el fondo de la zanja comprende tres cuencas axiales distintas, y la depresión central alcanza una profundidad verificada de 10,928 metros.",
+        "Volcanes de lodo serpentinos: la subducción de la corteza oceánica libera fluidos hidratados que serpentinizan la peridotita del manto, haciendo erupción lodos minerales a través de la placa superior.",
         "Espuma sintáctica sumergible: Los vehículos de inmersión profunda como Limiting Factor utilizan espuma sintáctica de microglobos de vidrio para lograr flotabilidad positiva bajo 1100 atmósferas de carga de compresión."
       ]
     },
@@ -69,5 +69,5 @@
       "text": "Las mediciones batimétricas y geodésicas precisas de las tasas de subducción de trincheras proporcionan datos fundamentales para la tectónica de placas global. Al rastrear los coeficientes de acoplamiento de placas y la lubricación de sedimentos, los geofísicos mejoran los modelos predictivos de peligros para megaterremotos y tsunamis que cruzan océanos en la Cuenca del Pacífico."
     }
   ],
-  "sourceHash": "e50d3e6a28447314f81a1fa49de94b97bf95dd2a"
+  "sourceHash": "c50bfbc55a17f827d31370914a25b59199130811"
 }

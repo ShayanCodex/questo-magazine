@@ -1,7 +1,7 @@
 {
   "slug": "test-time-compute-and-mcts-in-autonomous-reasoning-models",
-  "title": "ٹیسٹ ٹائم کمپیوٹ اور مونٹی کارلو ٹری سرچ: کس طرح خود مختار استدلال فرنٹیئر LLMs کو تبدیل کرتا ہے",
-  "excerpt": "ٹیکٹونک شفٹ کا پری ٹریننگ پیرامیٹر اسکیل سے انفرنس ٹائم کمپیوٹ میں تجزیہ کرنا: پراسیس ریوارڈ ماڈلز (PRMs)، درختوں کی تلاش کی توثیق، اور خودکار تحقیق میں ایک بار بار ہونے والی خود کی اصلاح۔",
+  "title": "Test-Time Compute & Autonomous Reasoning",
+  "excerpt": "Analyzing the tectonic shift from pre-training parameter scale to inference-time compute: Process Reward Models (PRMs), tree search verification, and recursive self-correction in autonomous research agents.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -13,62 +13,62 @@
     "deep-learning"
   ],
   "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80",
-  "imageAlt": "مستقبل کے تجریدی عصبی راستے اور ڈیٹا کے بہاؤ کے ڈھانچے جو تیز رفتار فیصلے کے عمل کو روشن کرتے ہیں",
+  "imageAlt": "Futuristic abstract neural pathways and data flow structures illuminating high-speed decision processes",
   "body": [
     {
       "type": "h2",
-      "text": "آٹوریگریسو پری ٹریننگ کی کم ہوتی ہوئی واپسی"
+      "text": "The Diminishing Returns of Autoregressive Pre-Training"
     },
     {
       "type": "p",
-      "text": "سات سالوں تک، اسکیلنگ مفروضے نے یہ حکم دیا کہ ٹریلین ویب دستاویزات میں اگلے ٹوکن کی پیشن گوئی کرنا ناگزیر طور پر غیر مقفل ہو جائے گا۔ تاہم، اعلیٰ درجے کی ریاضی، مسابقتی پروگرامنگ، اور رسمی منطق میں تجرباتی معیارات کو سخت سطح مرتفع کا سامنا کرنا پڑا: خود بخود ماڈلز ترتیب کی لمبائی کے ساتھ چوکور طریقے سے غلطیوں کو جمع کرتے ہیں۔ مصنوعی ذہانت کے فرنٹیئر نے فیصلہ کن طور پر ٹیسٹ ٹائم کمپیوٹ کی طرف موڑ دیا ہے، جان بوجھ کر، ملٹی سٹیپ ہیورسٹک تلاش اور تکراری تصدیق کے لیے فوری ٹوکن جنریشن کی تجارت کی ہے۔"
+      "text": "For seven years, the scaling hypothesis dictated that predicting the next token across trillions of web documents would inevitably unlock generalized reasoning. However, empirical benchmarks in high-level mathematics, competitive programming, and formal logic encountered hard plateaus: autoregressive models accumulate errors quadratically with sequence length. The frontier of artificial intelligence has decisively pivoted toward test-time compute, trading instantaneous token generation for deliberate, multi-step heuristic search and recursive verification."
     },
     {
       "type": "h2",
-      "text": "Inference-Time Reasoning کی کلیدی بنیادیں"
+      "text": "Key Foundations of Inference-Time Reasoning"
     },
     {
       "type": "ul",
       "items": [
-        "Process Reward Models (PRMs): حتمی نتائج کی درستگی پر خصوصی طور پر انحصار کرنے کے بجائے ہر انٹرمیڈیٹ کٹوتی قدم کی ریاضیاتی درستگی کا جائزہ لینا۔",
-        "مونٹی کارلو ٹری سرچ (MCTS): منظم طریقے سے متبادل منطقی راستے تلاش کرنا، باضابطہ تضادات کا سامنا کرنے پر پیچھے ہٹنا، اور غیر متوقع شاخوں کی کٹائی۔",
-        "سسٹم 2 ڈیلیبریشن: کام کی پیچیدگی کے متناسب متحرک حسابی بجٹ مختص کرنا، ماڈلز کو اس قابل بناتا ہے کہ وہ ملی سیکنڈ کے بجائے منٹوں کے لیے چیلنجنگ تھیورمز پر غور کر سکیں۔",
-        "خود تصحیح کے تصدیق کنندگان: قابل تصدیق درستگی کو نافذ کرنے کے لیے جنریٹیو نیٹ ورکس کو باضابطہ ثبوت چیکرس (جیسے کہ Lean 4 اور Coq) کے ساتھ جوڑنا۔"
+        "Process Reward Models (PRMs): Evaluating the mathematical validity of each intermediate deductive step rather than relying exclusively on final outcome correctness.",
+        "Monte Carlo Tree Search (MCTS): Systematically exploring alternate logical trajectories, backtracking upon encountering formal contradictions, and pruning unpromising branches.",
+        "System 2 Deliberation: Allocating dynamic computation budgets proportional to task complexity, enabling models to ponder challenging theorems for minutes rather than milliseconds.",
+        "Self-Correction Verifiers: Coupling generative networks with formal proof checkers (such as Lean 4 and Coq) to enforce verifiable correctness."
       ]
     },
     {
       "type": "quote",
-      "text": "سسٹم 1 بدیہی ایسوسی ایٹیو بازیافت سے سسٹم 2 الگورتھمک ٹری سرچ میں منتقلی اس لمحے کی نمائندگی کرتی ہے جب مشین لرننگ انسانی متن کی نقل کرنا چھوڑ دیتی ہے اور حقیقی کمپیوٹیشنل دریافت کو انجام دینا شروع کردیتی ہے۔",
-      "cite": "جرنل آف آٹونومس کوگنیٹو آرکیٹیکچر"
+      "text": "The transition from System 1 intuitive associative retrieval to System 2 algorithmic tree search represents the moment machine learning ceases to mimic human text and begins executing genuine computational discovery.",
+      "cite": "Journal of Autonomous Cognitive Architecture"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
-      "alt": "انٹرایکٹو گراف ویژولائزیشن ٹریز اور الگورتھمک ریجننگ پائپ لائنز کے ساتھ ہائی ٹیک کمپیوٹر ورک سٹیشن",
-      "caption": "ہیورسٹک تلاش: پیچیدہ کثیر شاخوں کے پروف اسپیسز میں مونٹی کارلو درخت کی توسیع کا تصور۔"
+      "alt": "High-tech computer workstation with interactive graph visualization trees and algorithmic reasoning pipelines",
+      "caption": "Heuristic search: visualizing Monte Carlo tree expansions across complex multi-branch proof spaces."
     },
     {
       "type": "h2",
-      "text": "عمل کے زیر نگرانی قدر کے افعال بمقابلہ نتائج کی نگرانی"
+      "text": "Process-Supervised Value Functions vs Outcome Supervision"
     },
     {
       "type": "p",
-      "text": "نتائج پر مبنی انعامی ماڈلز شدید غلط مثبت کمک کا شکار ہیں: ایک LLM مکمل طور پر فریب یا غیر منطقی درمیانی مراحل کے ذریعے صحیح ریاضی کے جواب پر پہنچ سکتا ہے۔ دانے دار، فی قدم انسانی اور مصنوعی تشریحات پر امتیازی قدر کے افعال کی تربیت دے کر، محققین ماڈلز کو اس قابل بناتے ہیں کہ وہ استدلال کے درخت میں ابتدائی طور پر اپنی علمی غلطیوں کا پتہ لگا سکیں، سیاق و سباق کی کھڑکیوں کے ختم ہونے سے پہلے مختلف راستوں کی کٹائی کریں۔"
+      "text": "Outcome-based reward models suffer from severe false-positive reinforcement: an LLM may arrive at the correct arithmetic answer through completely hallucinated or illogical intermediate steps. By training discriminative value functions on granular, per-step human and synthetic annotations, researchers enable models to detect their own cognitive missteps early in the reasoning tree, pruning divergent paths before context windows are exhausted."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/zjkBMFhNj_g",
-      "title": "فرنٹیئر اے آئی میں کمک سیکھنا، درختوں کی تلاش، اور سسٹم 2 ریزننگ",
-      "caption": "جامع تعلیمی لیکچر جس میں سرچ الگورتھم، سیلف پلے ری انفورسمنٹ لرننگ، اور رسمی تصدیقی فریم ورک شامل ہیں۔"
+      "title": "Reinforcement Learning, Search Trees, and System 2 Reasoning in Frontier AI",
+      "caption": "Comprehensive academic lecture covering search algorithms, self-play reinforcement learning, and formal verification frameworks."
     },
     {
       "type": "h2",
-      "text": "خود مختار ریسرچ ایجنٹس اور دریافت کا مستقبل"
+      "text": "Autonomous Research Agents and the Future of Discovery"
     },
     {
       "type": "p",
-      "text": "ٹیسٹ ٹائم سرچ لوپس سے لیس، خود مختار ریسرچ ایجنٹس وسیع سائنسی لٹریچر گرافس کو عبور کر سکتے ہیں، سینڈ باکس والے ماحول میں تجرباتی ازگر کی نقلیں چلا سکتے ہیں، بائیو کیمیکل امیدوار مالیکیولز کی ترکیب کر سکتے ہیں، اور انسانی مداخلت کے بغیر ہم مرتبہ نظرثانی شدہ مونوگراف لکھ سکتے ہیں۔ علم کی دریافت کی رکاوٹ انسانی پڑھنے کی صلاحیت سے الگورتھمک تصدیق کے ذریعے منتقل ہو رہی ہے۔"
+      "text": "Equipped with test-time search loops, autonomous research agents can traverse vast scientific literature graphs, execute empirical Python simulations in sandboxed environments, synthesize biochemical candidate molecules, and write peer-reviewed monographs without human intervention. The bottleneck of knowledge discovery is shifting from human reading capacity to algorithmic verification throughput."
     }
   ],
-  "sourceHash": "dbe651e5fbe0748dceb5e59f1aed8cd3b5382c5a"
+  "sourceHash": "968ed931346d6cf26d9ca4c7a73d8e77dfd3172f"
 }

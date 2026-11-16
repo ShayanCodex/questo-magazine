@@ -1,0 +1,70 @@
+{
+  "slug": "central-bank-balance-sheets-and-quantitative-tightening",
+  "title": "Balances de los bancos centrales",
+  "excerpt": "Un desglose institucional de la flexibilización cuantitativa versus el endurecimiento: repos inversos a un día, reservas bancarias, liquidaciones de tesorería y drenajes globales de liquidez en dólares.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "tags": [
+    "finance",
+    "central-banks",
+    "macroeconomics",
+    "quantitative-tightening",
+    "liquidity",
+    "banking"
+  ],
+  "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Fachada neoclásica del edificio de la tesorería del banco central iluminada al anochecer con proyecciones de datos financieros",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El verdadero impulsor de las valoraciones de activos globales"
+    },
+    {
+      "type": "p",
+      "text": "Mientras los inversores minoristas se obsesionan con las tasas de interés de referencia de los bancos centrales, los macroinversores institucionales siguen una fuerza hidráulica aún más potente: el tamaño y la velocidad de los balances de los bancos centrales. Cuando la Reserva Federal, el BCE o el Banco de Japón llevan a cabo una flexibilización cuantitativa (QE) o un endurecimiento cuantitativo (QT), expanden o contraen directamente la liquidez fiduciaria neta del mundo."
+    },
+    {
+      "type": "h2",
+      "text": "Mecánica contable del balance del banco central"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Activos: Títulos de deuda pública nacional (Tesoros) y valores respaldados por hipotecas (MBS) adquiridos a intermediarios primarios.",
+        "Pasivos: Moneda en circulación, reservas de los bancos comerciales mantenidas en el banco central y Cuenta General del Tesoro (TGA).",
+        "Overnight Reverse Repo Facility (ON RRP): una esponja de drenaje de liquidez que absorbe el exceso de efectivo de los fondos del mercado monetario para mantener los tipos mínimos de política.",
+        "Reducción pasiva del QT: Permitir que los bonos gubernamentales vencidos expiren sin reinvertir el principal, agotando las reservas comerciales correspondientes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La liquidez es el oxígeno de los mercados financieros. Los bancos centrales no se limitan a ajustar los costos de endeudamiento; expanden y contraen el volumen total de aire de la habitación.",
+      "cite": "Instituto Questo de Economía Monetaria y Banca Central"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Gráficos financieros en tiempo real que rastrean las tasas de préstamos interbancarios y los indicadores de liquidez del banco central",
+      "caption": "Modelado del índice de liquidez global: correlación de la contracción de los activos del banco central con la volatilidad del mercado de deuda soberana."
+    },
+    {
+      "type": "h2",
+      "text": "El régimen de reservas amplias y los picos de repos"
+    },
+    {
+      "type": "p",
+      "text": "Si el QT continúa demasiado tiempo y las reservas bancarias caen por debajo del 'Nivel más bajo y cómodo de reservas' (LCLoR), los mercados de préstamos a un día a corto plazo se paralizan, como ocurrió durante el infame pico de repos de septiembre de 2019."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/7HEfvgynbsU",
+      "title": "Estabilidad financiera y dinámica de liquidez de la Reserva Federal: CNBC",
+      "caption": "Desglose macroeconómico de la CNBC que examina los balances de los bancos centrales, las reservas de liquidez bancaria y las vulnerabilidades de los mercados financieros."
+    },
+    {
+      "type": "p",
+      "text": "Dominar la mecánica de los balances de los bancos centrales revela la marea macroeconómica que eleva o hunde todas las clases de activos."
+    }
+  ],
+  "sourceHash": "897bfac03fda2e722d47bac8c2a8e7dedc145161"
+}

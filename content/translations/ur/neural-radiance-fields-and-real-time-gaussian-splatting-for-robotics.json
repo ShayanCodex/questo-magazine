@@ -1,7 +1,7 @@
 {
   "slug": "neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics",
-  "title": "روبوٹکس میں 3D Gaussian Splatting: Sub-Millisecond Spatial Mapping & SLAM سسٹمز",
-  "excerpt": "متفرق 3D ellipsoids کے ساتھ مجرد قبضے کے گرڈ کو تبدیل کرنا: ریئل ٹائم کیمرہ پوز کا تخمینہ، والیومیٹرک ریڈیئنس رینڈرنگ، اور بے ترتیبی والی جگہوں پر خود مختار نیویگیشن۔",
+  "title": "3D Gaussian Splatting in Robotics",
+  "excerpt": "Replacing discrete occupancy grids with differentiable 3D ellipsoids: real-time camera pose estimation, volumetric radiance rendering, and autonomous navigation in cluttered spaces.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -16,21 +16,21 @@
   "body": [
     {
       "type": "h2",
-      "text": "روایتی مقامی نمائندگی کی حدود"
+      "text": "The Limitations of Traditional Spatial Representation"
     },
     {
       "type": "p",
-      "text": "کئی دہائیوں سے، موبائل روبوٹکس نے بیک وقت لوکلائزیشن اور میپنگ (SLAM) کے لیے مجرد 2D اور 3D قبضے کے گرڈ نقشوں، پوائنٹ کلاؤڈز، اور کثیرالاضلاع میشوں پر انحصار کیا۔ بنیادی رکاوٹوں سے بچنے کے لیے موثر ہونے کے باوجود، یہ نمائشیں فوٹو ریئلسٹک سطح کی ساخت، منظر پر منحصر قیاس آرائیوں، اور چست روبوٹک ہیرا پھیری، سرجیکل روبوٹکس، اور متحرک ہیومنائڈ نیویگیشن کے لیے ضروری ساختی باریکیوں کو مسترد کرتی ہیں۔"
+      "text": "For decades, mobile robotics relied upon discrete 2D and 3D occupancy grid maps, point clouds, and polygonal meshes for Simultaneous Localization and Mapping (SLAM). While effective for basic obstacle avoidance, these representations discard photorealistic surface textures, view-dependent specular reflections, and fine structural nuances necessary for agile robotic manipulation, surgical robotics, and dynamic humanoid navigation."
     },
     {
       "type": "h2",
-      "text": "روایتی مقامی نمائندگی کی حدود"
+      "text": "The Breakthrough of Differentiable 3D Gaussians"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Differentiable 3D Gaussian ellipsoids visualizing continuous scene geometry and radiance fields",
-      "caption": "3D Gaussian Splatting: modeling physical spaces as millions of differentiable ellipsoids for real-time robotic SLAM."
+      "alt": "3D Gaussian Splatting in Robotics: Sub-Millisecond Spatial Mapping & SLAM Systems - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting 3D Gaussian Splatting in Robotics: Sub-Millisecond Spatial Mapping & SLAM Systems."
     },
     {
       "type": "ul",
@@ -43,37 +43,37 @@
     },
     {
       "type": "quote",
-      "text": "3D Gaussian Splatting فوٹو ریئلسٹک کمپیوٹر گرافکس رینڈرنگ اور ہائی فریکوئنسی ریئل ٹائم روبوٹک سٹیٹ تخمینہ کے درمیان کھائی کو ختم کرتا ہے۔",
-      "cite": "روبوٹکس اینڈ کمپیوٹر ویژن لیبارٹری مونوگراف"
+      "text": "3D Gaussian Splatting bridges the chasm between photorealistic computer graphics rendering and high-frequency real-time robotic state estimation.",
+      "cite": "Robotics & Computer Vision Laboratory Monograph"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Robotic trajectory planning through indoor obstacle field using real-time volumetric scene reconstruction",
-      "caption": "Tile-based rasterization: GPU acceleration delivering sub-millisecond pose updates and continuous collision avoidance."
+      "alt": "3D Gaussian Splatting in Robotics: Sub-Millisecond Spatial Mapping & SLAM Systems - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting 3D Gaussian Splatting in Robotics: Sub-Millisecond Spatial Mapping & SLAM Systems."
     },
     {
       "type": "h2",
-      "text": "روایتی مقامی نمائندگی کی حدود"
+      "text": "Sub-Millisecond SLAM in Dynamic Environments"
     },
     {
       "type": "p",
-      "text": "کئی دہائیوں سے، موبائل روبوٹکس نے بیک وقت لوکلائزیشن اور میپنگ (SLAM) کے لیے مجرد 2D اور 3D قبضے کے گرڈ نقشوں، پوائنٹ کلاؤڈز، اور کثیرالاضلاع میشوں پر انحصار کیا۔ بنیادی رکاوٹوں سے بچنے کے لیے موثر ہونے کے باوجود، یہ نمائشیں فوٹو ریئلسٹک سطح کی ساخت، منظر پر منحصر قیاس آرائیوں، اور چست روبوٹک ہیرا پھیری، سرجیکل روبوٹکس، اور متحرک ہیومنائڈ نیویگیشن کے لیے ضروری ساختی باریکیوں کو مسترد کرتی ہیں۔"
+      "text": "By executing Gaussian optimization on embedded edge GPUs, modern autonomous aerial drones and legged robots can reconstruct photorealistic 3D maps of unfamiliar indoor environments in real time. As the robot traverses room corridors, newly observed surfaces are dynamically initialized with new Gaussian primitives, while occluded points are iteratively pruned."
     },
     {
       "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88",
       "title": "3D Gaussian Splatting in Robotics: Real-Time SLAM and Mapping Breakdown",
-      "caption": "Engineering demonstration of real-time camera tracking, anisotropic Gaussian optimization, and collision avoidance.",
-      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88"
+      "caption": "Engineering demonstration of real-time camera tracking, anisotropic Gaussian optimization, and collision avoidance."
     },
     {
       "type": "h2",
-      "text": "روایتی مقامی نمائندگی کی حدود"
+      "text": "The Future of Embodied Spatial Intelligence"
     },
     {
       "type": "p",
-      "text": "کئی دہائیوں سے، موبائل روبوٹکس نے بیک وقت لوکلائزیشن اور میپنگ (SLAM) کے لیے مجرد 2D اور 3D قبضے کے گرڈ نقشوں، پوائنٹ کلاؤڈز، اور کثیرالاضلاع میشوں پر انحصار کیا۔ بنیادی رکاوٹوں سے بچنے کے لیے موثر ہونے کے باوجود، یہ نمائشیں فوٹو ریئلسٹک سطح کی ساخت، منظر پر منحصر قیاس آرائیوں، اور چست روبوٹک ہیرا پھیری، سرجیکل روبوٹکس، اور متحرک ہیومنائڈ نیویگیشن کے لیے ضروری ساختی باریکیوں کو مسترد کرتی ہیں۔"
+      "text": "As robotic platforms move from rigid industrial cages into unstructured human environments, spatial perception must match the continuous richness of biological vision. 3D Gaussian splatting provides the mathematical foundation for machines that not only navigate space, but genuinely understand its physical form."
     }
   ],
-  "sourceHash": "43081c936b0147175e178f8716666471c30c8b11"
+  "sourceHash": "db9995631f54d3a33bb716c44b1ac5ee20fde5bf"
 }

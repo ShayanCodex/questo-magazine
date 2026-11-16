@@ -1,7 +1,7 @@
 {
   "slug": "sub-microsecond-market-microstructure-and-fpga-trading-engines",
-  "title": "ذیلی مائیکرو سیکنڈ مارکیٹ مائیکرو اسٹرکچر: ایف پی جی اے کرنل پائپ لائننگ، کرنل بائی پاس، اور آرڈر بک میچنگ انجن",
-  "excerpt": "ایک مقداری نظام انجینئرنگ کا مطالعہ: انتہائی کم لیٹنسی فنانشل آرکیٹیکچر، سولر فلیئر EF_VI کرنل بائی پاس، کسٹم ویریلوگ اور مائیکرو نائٹ آرڈر کے نیٹ ورک کی لائن بک آرڈر کی حد۔",
+  "title": "Inside Sub-Microsecond Trading Engines",
+  "excerpt": "A quantitative systems engineering study: ultra-low-latency financial architecture, Solarflare EF_VI kernel bypass, custom Verilog limit order book engines, and nanosecond microwave line-of-sight networks.",
   "date": "2026-11-17",
   "author": "Tariq Mahmood",
   "tags": [
@@ -13,62 +13,62 @@
     "hardware-engineering"
   ],
   "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
-  "imageAlt": "متحرک تیز رفتار مالیاتی کینڈل سٹک چارٹس اور ایک سے زیادہ تجارتی اسکرینوں پر الگورتھمک مقداری ٹیلی میٹری اشارے",
+  "imageAlt": "Dynamic high-speed financial candlestick charts and algorithmic quantitative telemetry indicators on multiple trading screens",
   "body": [
     {
       "type": "h2",
-      "text": "دی فزکس آف دی ریس ٹو زیرو لیٹنسی"
+      "text": "The Physics of the Race to Zero Latency"
     },
     {
       "type": "p",
-      "text": "عصری الیکٹرانک ایکویٹی اور ڈیریویٹیوز ایکسچینجز میں، لیکویڈیٹی ایلوکیشن پرائس پرائیوٹی ٹائم انجن کے مطابق ہوتی ہے۔ جب مارکیٹ میں منتقل ہونے والا میکرو اکنامک ڈیٹا آتا ہے، تو آرڈرز ایک ہندسے والے نینو سیکنڈز کے فاصلہ پر آتے ہیں۔ اس انتہائی حد پر، معیاری لینکس آپریٹنگ سسٹم نیٹ ورکنگ اسٹیکس- ان کے سیاق و سباق کے سوئچز، انٹرپٹ ہینڈلنگ، اور میموری کاپیز کے ساتھ- ناقابل قبول طور پر سست رفتار کو متعارف کراتے ہیں۔ اعلی تعدد مقداری نظام آپریٹنگ سسٹم کو مکمل طور پر نظرانداز کرتے ہیں، اپنی مرضی کے مطابق FPGA سلیکون کے اندر آنے والے مارکیٹ ڈیٹا پر کارروائی کرتے ہیں۔"
+      "text": "In contemporary electronic equity and derivatives exchanges, liquidity allocation is governed by price-time priority matching engines. When market-moving macroeconomic data arrives, orders arrive in bursts spaced by single-digit nanoseconds. At this extreme boundary, standard Linux operating system networking stacks—with their context switches, interrupt handling, and memory copies—introduce unacceptably sluggish jitter. High-frequency quantitative systems bypass the operating system entirely, processing incoming market data inside custom FPGA silicon."
     },
     {
       "type": "h2",
-      "text": "سسٹمز آرکیٹیکچر اور نیٹ ورک انجینئرنگ"
+      "text": "Systems Architecture and Network Engineering"
     },
     {
       "type": "ul",
       "items": [
-        "Kernel-Bypass نیٹ ورکنگ (Solarflare Onload / EF_VI): ایتھرنیٹ فریموں کو براہ راست نیٹ ورک انٹرفیس کارڈ (NIC) رنگ بفرز سے یوزر اسپیس ایپلی کیشن میموری میں لینکس کرنل کی مداخلت کے بغیر منتقل کرنا۔",
-        "مکمل ہارڈ ویئر FPGA میچنگ انجن: ITCH مارکیٹ ڈیٹا پارسرز اور FIX/OUCH آرڈر روٹنگ انجنوں کو براہ راست Verilog/VHDL میں لاگو کرنا AMD Xilinx UltraScale+ FPGAs پر سب 80-nanosecond ٹک ٹو ٹریڈ لیٹنسی کے ساتھ چل رہا ہے۔",
-        "مائیکرو ویو لائن آف سائیٹ ٹیلی کمیونیکیشنز: شکاگو اور نیویارک کے درمیان براہ راست راستوں پر آپٹیکل فائبر کیبلز کو ملی میٹر ویو ٹرانسیور سے بدلنا تاکہ ہوا کے مقابلے میں سلکا گلاس کے ذریعے روشنی کی تیز رفتاری سے فائدہ اٹھایا جا سکے۔",
-        "الٹرا ریم میں آرڈر بک ڈیپتھ ٹریکنگ: سنگل سائیکل کینسل اور بدلنے کے لیے ہارڈویئر مواد ایڈریس ایبل میموری (CAM) کا استعمال کرتے ہوئے deterministic Level-3 آرڈر بک کو برقرار رکھنا۔"
+        "Kernel-Bypass Networking (Solarflare Onload / EF_VI): Transferring Ethernet frames directly from Network Interface Card (NIC) ring buffers into user-space application memory without Linux kernel intervention.",
+        "Full-Hardware FPGA Matching Engines: Implementing ITCH market data parsers and FIX/OUCH order routing engines directly in Verilog/VHDL running on AMD Xilinx UltraScale+ FPGAs with sub-80-nanosecond tick-to-trade latency.",
+        "Microwave Line-of-Sight Telecommunications: Replacing optical fiber cables with millimeter-wave transceivers across direct paths between Chicago and New York to exploit the faster speed of light through air versus silica glass.",
+        "Order Book Depth Tracking in Ultra-RAM: Maintaining deterministic Level-3 order books using hardware content-addressable memory (CAM) for single-cycle cancel and replace execution."
       ]
     },
     {
       "type": "quote",
-      "text": "کم تاخیر والی مقداری مالیات میں، روشنی شیشے کے ذریعے ایک فٹ کا سفر کرنے میں ایک نینو سیکنڈ لیتی ہے۔ طبعی فاصلہ، پرنٹ شدہ سرکٹ بورڈز پر ٹریس کی لمبائی، اور گیٹ کی گنتی ثالثی کی حتمی حدیں ہیں۔",
-      "cite": "Questo Quantitative Finance & Low-Letency Systems Research"
+      "text": "In low-latency quantitative finance, light traveling one foot through glass takes one nanosecond. Physical distance, trace lengths on printed circuit boards, and gate counts are the ultimate limits of arbitrage.",
+      "cite": "Questo Quantitative Finance & Low-Latency Systems Research"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "تیز رفتار فائبر آپٹک کیبلز اور ہائی پرفارمنس سرور مدر بورڈ سرکٹری فنانشل ایکسچینج کیج میں",
-      "caption": "زیرو جِٹر ڈیٹرمنسٹک ایگزیکیوشن: ڈائریکٹ ایتھرنیٹ MAC-to-FPGA پائپ لائننگ OS-سطح کے لیٹینسی جٹر کو ختم کرتی ہے۔"
+      "alt": "High-speed fiber optic cables and high-performance server motherboard circuitry in a financial exchange colocation cage",
+      "caption": "Zero-jitter deterministic execution: Direct Ethernet MAC-to-FPGA pipelining eliminates OS-level latency jitter."
     },
     {
       "type": "h2",
-      "text": "منفی انتخاب، لیٹنسی آربٹریج، اور قطار کی پوزیشن میکانکس"
+      "text": "Adverse Selection, Latency Arbitrage, and Queue Position Mechanics"
     },
     {
       "type": "p",
-      "text": "حد آرڈر بک کے دونوں طرف حوالہ دینے والے مارکیٹ سازوں کو باخبر تاجروں کی طرف سے مسلسل منفی انتخاب کا سامنا کرنا پڑتا ہے جو پہلے کراس ایکسچینج قیمت میں تضادات کا پتہ لگاتے ہیں۔ کھوئے ہوئے آرڈرز کو پُر کرنے سے بچنے کے لیے، مارکیٹ بنانے والے الگورتھم کو ان کے خلاف آنے والے جارحانہ جھاڑو کے میچوں سے پہلے آرام کی قیمتوں کو منسوخ کرنا چاہیے، جو مائیکرو سیکنڈز کو نیٹ الگورتھمک الفا میں لاکھوں ڈالر میں تبدیل کر دیتے ہیں۔"
+      "text": "Market makers quoting on both sides of a limit order book face constant adverse selection from informed traders who detect cross-exchange price discrepancies first. To avoid filling losing orders, market-making algorithms must cancel resting quotes before the incoming aggressive sweep matches against them, turning microseconds into millions of dollars in net algorithmic alpha."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/dydgO_7aw4E",
-      "title": "CBS 60 منٹ: ہائی فریکونسی ٹریڈنگ اور The Nanosecond Economy",
-      "caption": "انتہائی کم لیٹنسی مالیاتی فن تعمیر، کالوکیشن ڈیٹا سینٹرز، مائیکرو ویو لنکس، اور FPGA کے عمل میں تفتیشی دستاویزی فلم۔"
+      "title": "CBS 60 Minutes: High-Frequency Trading and The Nanosecond Economy",
+      "caption": "Investigative documentary into ultra-low-latency financial architecture, colocation data centers, microwave links, and FPGA execution."
     },
     {
       "type": "h2",
-      "text": "ہارڈ ویئر-ان-دی-لوپ سمولیشن کے ذریعے ڈیٹرمنسٹک ٹیسٹنگ"
+      "text": "Deterministic Testing via Hardware-in-the-Loop Simulation"
     },
     {
       "type": "p",
-      "text": "چونکہ مالیاتی تبادلے پر براہ راست جانچ سے تباہ کن روگ-الگورتھم نقصانات کا خطرہ ہوتا ہے، مقداری فرمیں ہارڈ ویئر-ان-دی-لوپ ٹیسٹ بینچوں کو تعینات کرتی ہیں۔ نیٹ ورک کیپچر کے لیے وقف شدہ آلات گیگا بائٹس کے خام PCAP پیکٹ کیپچرز کو تار کی رفتار سے دوبارہ چلاتے ہیں، اس بات کی توثیق کرتے ہیں کہ ہر ریاستی مشین کی منتقلی رسمی حد تک درست ریاضیاتی تصریحات سے میل کھاتی ہے۔"
+      "text": "Because live testing on financial exchanges risks devastating rogue-algorithm losses, quantitative firms deploy hardware-in-the-loop test benches. Dedicated network capture appliances replay gigabytes of raw PCAP packet captures at wire speed, validating that every state-machine transition matches formal bit-accurate mathematical specifications."
     }
   ],
-  "sourceHash": "38becfb28a9169eef4b4f8b6fa39db424b8bbffb"
+  "sourceHash": "0e2ba5dc0aa5365018310a08f3ec407e2310fd6d"
 }

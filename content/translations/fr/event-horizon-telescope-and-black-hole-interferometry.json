@@ -1,0 +1,70 @@
+{
+  "slug": "event-horizon-telescope-and-black-hole-interferometry",
+  "title": "Imagerie des trous noirs supermassifs",
+  "excerpt": "L'astrophysique de l'interférométrie à très longue base, synchronisant des radiotélescopes millimétriques à travers la planète Terre pour résoudre les structures d'ombre de l'horizon des événements.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "astrophysics",
+    "black-holes",
+    "vlbi",
+    "astronomy",
+    "physics",
+    "relativity"
+  ],
+  "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Cosmos de champ stellaire avec un disque d'accrétion gravitationnelle brillant autour d'une singularité céleste",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Synthèse d'une ouverture radio de la taille de la Terre"
+    },
+    {
+      "type": "p",
+      "text": "Résoudre l'horizon des événements de Messier 87 ou de Sagittaire A* équivaut à repérer une orange sur la surface de la Lune depuis la Terre. Aucun télescope optique ne pourra jamais atteindre la résolution angulaire requise. Le Event Horizon Telescope (EHT) y parvient en combinant des observatoires radio synchronisés sur six continents dans un télescope virtuel aussi grand que notre planète."
+    },
+    {
+      "type": "h2",
+      "text": "Pierres angulaires techniques du VLBI millimétrique"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Horloges atomiques Maser à hydrogène : fournissent une précision de synchronisation ultra-stable inférieure à la picoseconde pour marquer des pétaoctets de données brutes de front d'onde astronomique.",
+        "Transparence atmosphérique de 1,3 millimètre : réglage des récepteurs à 230 GHz pour percer la poussière du synchrotron galactique et les nuages ​​​​d'humidité terrestre.",
+        "Corrélation des données des supercalculateurs : traitement des disques durs expédiés de l'Antarctique et de l'Atacama via des supercalculateurs de corrélation ASIC spécialisés.",
+        "Imagerie interférométrique informatique : utilisation d'une modélisation bayésienne clairsemée et de réseaux de neurones pour reconstruire des images à partir d'une couverture de base de Fourier incomplète."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Nous avons transformé la planète Terre en une seule loupe cosmique pour tester la relativité générale d’Einstein à la limite ultime de l’espace-temps.",
+      "cite": "Observatoire d'astrophysique et de gravitation à haute énergie Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Antenne de radiotélescope submillimétrique à haute altitude pointant vers le ciel étoilé",
+      "caption": "Réseau submillimétrique ALMA dans le désert d'Atacama : la station d'ancrage par étapes offrant une sensibilité maximale pour les observations EHT mondiales."
+    },
+    {
+      "type": "h2",
+      "text": "Test du glissement de cadre métrique de Kerr"
+    },
+    {
+      "type": "p",
+      "text": "Les images d'ombre résultantes confirment directement la géométrie de l'anneau de photons prédite par les équations de champ d'Einstein pour un trou noir de Kerr en rotation, démontrant un rayonnement Doppler relativiste le long du flux de plasma d'accrétion qui s'approche."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Q1bSDnuIPbo",
+      "title": "Veritasium : Comment ont-ils réellement pris cette photo du trou noir ?",
+      "caption": "Derek Muller explore l'interférométrie à très longue base, l'étalonnage des phases de l'horloge atomique et l'imagerie de l'ombre de l'horizon des événements."
+    },
+    {
+      "type": "p",
+      "text": "L'interférométrie à très longue base continue de s'étendre aux orbiteurs spatiaux pour révéler le mouvement temporel dynamique des jets de plasma de trous noirs."
+    }
+  ],
+  "sourceHash": "117c9997a3e6952ba5ee73457f3802fa05e2b798"
+}

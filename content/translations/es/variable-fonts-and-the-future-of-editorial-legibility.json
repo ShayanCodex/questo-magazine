@@ -1,6 +1,6 @@
 {
   "slug": "variable-fonts-and-the-future-of-editorial-legibility",
-  "title": "Las fuentes variables y el futuro de la legibilidad editorial",
+  "title": "Fuentes variables y legibilidad editorial",
   "excerpt": "Cómo los ejes de variación OpenType, el tamaño óptico dinámico y la modulación de peso sensible están revolucionando la tipografía de revistas digitales y la comodidad de lectura.",
   "date": "2026-11-12",
   "updated": "2026-11-14",
@@ -12,11 +12,11 @@
     "accessibility"
   ],
   "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Macro photograph of finely carved metallic movable type sorts and typographic ink",
+  "imageAlt": "Fotografía macro de tipos móviles metálicos finamente tallados y tinta tipográfica",
   "body": [
     {
       "type": "p",
-      "text": "Durante los cinco siglos posteriores a la invención de los tipos móviles por parte de Johannes Gutenberg, una fuente era un artefacto físico e inflexible. Si una imprenta requería un corte en cursiva de 8 puntos y un corte en negrita de 24 puntos, se debían crear dos juegos de punzones de plomo completamente separados. La web pasó sus primeras tres décadas replicando este rígido paradigma con descargas de archivos de fuentes web independientes para cada peso."
+      "text": "Durante los cinco siglos posteriores a la invención de los tipos móviles por parte de Johannes Gutenberg, una fuente era un artefacto físico e inflexible. Si una imprenta requería un corte de visualización en cursiva de 8 puntos y negrita de 24, se tenían que crear dos juegos de punzones de plomo completamente separados. La web pasó sus primeras tres décadas replicando este rígido paradigma con descargas de archivos de fuentes web independientes para cada peso."
     },
     {
       "type": "h2",
@@ -24,13 +24,13 @@
     },
     {
       "type": "p",
-      "text": "Durante los cinco siglos posteriores a la invención de los tipos móviles por parte de Johannes Gutenberg, una fuente era un artefacto físico e inflexible. Si una imprenta requería un corte en cursiva de 8 puntos y un corte en negrita de 24 puntos, se debían crear dos juegos de punzones de plomo completamente separados. La web pasó sus primeras tres décadas replicando este rígido paradigma con descargas de archivos de fuentes web independientes para cada peso."
+      "text": "La especificación OpenType Font Variations disolvió estos límites históricos. Un archivo de fuente de una sola variable contiene ejes multidimensionales continuos: peso (wght), ancho (wdth), inclinación (slnt) y, lo que es más importante, tamaño óptico (opsz). En lugar de saltar discretamente de 400 a 700, los diseñadores pueden interpolar el peso dinámicamente en 523 o 648 según los sensores de iluminación ambiental o los DPI de la pantalla."
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Variable Fonts and the Future of Editorial Legibility - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Variable Fonts and the Future of Editorial Legibility."
+      "alt": "Fuentes variables y el futuro de la legibilidad editorial - Figura operativa 4",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respaldan las fuentes variables y el futuro de la legibilidad editorial."
     },
     {
       "type": "code",
@@ -45,25 +45,25 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Variable Fonts and the Future of Editorial Legibility - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Variable Fonts and the Future of Editorial Legibility."
+      "alt": "Fuentes variables y el futuro de la legibilidad editorial - Figura operativa 7",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respalda las fuentes variables y el futuro de la legibilidad editorial."
     },
     {
       "type": "h3",
-      "text": "Principales ventajas ergonómicas y de rendimiento"
+      "text": "Ventajas clave de rendimiento y ergonomía"
     },
     {
       "type": "ul",
       "items": [
-        "Network efficiency: Replacing 12 separate font files (totaling 400KB+) with a single, highly-optimized 42KB WOFF2 variable payload.",
-        "Automatic optical correction: At small body sizes (12-14px), letter counters widen and x-heights increase automatically to prevent ink trapping and eye strain.",
-        "Responsive dark mode adaptation: Automatically decreasing text font-weight by 15-20 units in dark mode to counteract bright text halation against black backgrounds."
+        "Eficiencia de la red: Reemplazo de 12 archivos de fuentes separados (con un total de más de 400 KB) con una única carga útil variable WOFF2 de 42 KB altamente optimizada.",
+        "Corrección óptica automática: en tamaños de cuerpo pequeños (12-14 px), los contadores de letras se ensanchan y las alturas de las x aumentan automáticamente para evitar que la tinta quede atrapada y canse la vista.",
+        "Adaptación responsiva del modo oscuro: Disminución automática del peso de la fuente del texto entre 15 y 20 unidades en el modo oscuro para contrarrestar la halo de texto brillante sobre fondos negros."
       ]
     },
     {
       "type": "p",
-      "text": "Durante los cinco siglos posteriores a la invención de los tipos móviles por parte de Johannes Gutenberg, una fuente era un artefacto físico e inflexible. Si una imprenta requería un corte en cursiva de 8 puntos y un corte en negrita de 24 puntos, se debían crear dos juegos de punzones de plomo completamente separados. La web pasó sus primeras tres décadas replicando este rígido paradigma con descargas de archivos de fuentes web independientes para cada peso."
+      "text": "A través de la tipografía variable, la publicación digital finalmente une la artesanía histórica de las monografías impresas de lujo con la fluida capacidad de respuesta de la ingeniería web moderna."
     }
   ],
-  "sourceHash": "693d8e0abd96891755d7864ea0e0fe3017dd364a"
+  "sourceHash": "ebdf7ef39f6b4bd385cccb75767f9bb0a22ceff5"
 }

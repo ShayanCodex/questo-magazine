@@ -1,0 +1,70 @@
+{
+  "slug": "sarcopenia-and-the-biology-of-muscle-hypertrophy",
+  "title": "Die Wissenschaft der Sarkopenie",
+  "excerpt": "Die Zellbiologie des altersbedingten Muskelschwunds: mTOR-Aktivierung, Erschöpfung von Satellitenzellen, Myostatin-Signalisierung und Krafttrainingsinterventionen.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Sterling",
+  "tags": [
+    "longevity",
+    "sarcopenia",
+    "hypertrophy",
+    "exercise-physiology",
+    "biology",
+    "health"
+  ],
+  "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Sportler, der schweres Langhanteltraining in einer Sportanlage durchführt",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der stille Verlust der funktionellen Skelettmuskulatur"
+    },
+    {
+      "type": "p",
+      "text": "Sarkopenie ist der unfreiwillige, fortschreitende Verlust von Skelettmuskelmasse, Kraft und neuromuskulärer Geschwindigkeit, der mit zunehmendem Alter auftritt. Bereits ab dem 30. Lebensjahr verlieren Erwachsene pro Jahrzehnt 3 bis 8 % der Muskelmasse, ab dem 60. Lebensjahr nimmt der Verlust stark zu. Muskeln sind nicht einfach nur ästhetisches Gewebe; Es ist die wichtigste Stoffwechselsenke des Körpers für die Glukoseentsorgung und funktionelle Unabhängigkeit."
+    },
+    {
+      "type": "h2",
+      "text": "Zelluläre und molekulare Treiber"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Anabole Resistenz: Abnehmende Empfindlichkeit des intrazellulären mTORC1-Signalwegs gegenüber Leucin aus der Nahrung und Hyperaminoazidämie in alternden Myozyten.",
+        "Satellitenzelldepletion: Fortschreitende Ruhe und Seneszenz von Muskelstammzellen, die für die Reparatur von Myofibrillen nach einem Mikrotrauma verantwortlich sind.",
+        "Denervierung von schnell zuckenden Fasern vom Typ II: Apoptose der motorischen Einheit, die zu einer bevorzugten Atrophie von explosiven Muskelfasern mit hoher Reizschwelle führt.",
+        "Chronische geringgradige Entzündung: Erhöhte TNF-alpha- und IL-6-Zytokinsignale, die den muskelspezifischen Ubiquitin-Proteasom-Abbau hochregulieren."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Muskelmasse ist Ihre Stoffwechsel-Pensionskasse. Wenn Sie nicht frühzeitig aktiv in mechanische Spannung und Proteinsynthese investieren, ist Gebrechlichkeit vorprogrammiert.",
+      "cite": "Questo Center for Musculoskeletal Biology & Longevity"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Turnhallen-Trainingsgeräte mit schweren Krafttrainingsgeräten",
+      "caption": "Progressive mechanische Überlastung: Der mechanische Goldstandard-Stimulus zur Stimulierung der Muskelproteinsynthese und zum Erhalt motorischer Einheiten."
+    },
+    {
+      "type": "h2",
+      "text": "Evidenzbasierte Hypertrophie-Interventionen"
+    },
+    {
+      "type": "p",
+      "text": "Die Umkehrung des anabolen Widerstands erfordert zwei synergistische Säulen: progressives Krafttraining, das auf eine Reserve von 1–3 Wiederholungen abzielt, gepaart mit einer täglichen Proteinzufuhr von 1,6 bis 2,2 Gramm pro Kilogramm Körpergewicht, verteilt auf leucinreiche Proteinimpulse."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/yNq2Nuwy9Rc",
+      "title": "Muskelaufbau und Vorbeugung von Sarkopenie mit Dr. Brad Schoenfeld",
+      "caption": "Der führende Sportwissenschaftler Dr. Brad Schoenfeld diskutiert Krafttrainingsprotokolle, Protein-Timing und die Bekämpfung von Muskelschwund über die gesamte Lebensspanne."
+    },
+    {
+      "type": "p",
+      "text": "Hochintensives Krafttraining stimuliert die Rekrutierung von Satellitenzellen und stellt die neuromuskuläre Kommunikation bis weit ins Achtzigjährigealter wieder her."
+    }
+  ],
+  "sourceHash": "98e78fb1259000bf4f6465e4cc273994141cb81c"
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "modular-synthesizers-and-control-voltage-patching",
+  "title": "Sintetizadores modulares y CV",
+  "excerpt": "La física electroacústica de los sintetizadores modulares Eurorack: estándares de 1 V/octava, síntesis sustractiva analógica, puertas de paso bajo y topologías de parcheo generativo.",
+  "date": "2026-11-17",
+  "author": "Orion Kaelen",
+  "tags": [
+    "sound",
+    "modular-synths",
+    "eurorack",
+    "audio-engineering",
+    "acoustics",
+    "music-technology"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Consola de sintetizador modular Eurorack compleja interconectada con cables de conexión multicolores vibrantes",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Regreso a las corrientes eléctricas físicas"
+    },
+    {
+      "type": "p",
+      "text": "Mientras que los sintetizadores de software digitales simulan el sonido a través de algoritmos de código dentro de una computadora, la síntesis modular trata el sonido como electricidad física continua. En el formato Eurorack creado por Dieter Doepfer, los módulos no se comunican a través de mensajes MIDI digitales, sino a través de voltajes de control (CV) analógicos, puertas y corrientes eléctricas de velocidad de audio enrutadas a través de cables de conexión de 3,5 mm."
+    },
+    {
+      "type": "h2",
+      "text": "Los componentes básicos de la síntesis de Eurorack"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "El estándar de 1 V/octava: seguimiento del tono donde cada voltio adicional de corriente continua duplica la frecuencia del oscilador, abarcando escalas cromáticas musicales.",
+        "Osciladores (VCO): generación de formas de onda armónicas sin procesar (diente de sierra, cuadrado, triángulo y sinusoidal) a través de circuitos de relajación analógicos.",
+        "Filtros controlados por voltaje (VCF): Elimina los armónicos superiores utilizando filtros de escalera de cuatro polos (Moog) o filtros de estado variable (Buchla).",
+        "Puertas de paso bajo (LPG): circuitos optoacopladores basados ​​en Vactrol que proporcionan punteos de bongó orgánicos y de percusión con colas de decadencia física natural."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Un sintetizador modular no es un instrumento musical con una interfaz fija; Es una máquina informática analógica abierta parcheada para realizar una autocomposición acústica generativa.",
+      "cite": "Centro de diseño de sonido y síntesis electroacústica Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Osciloscopio sintetizador analógico que muestra voltajes y formas de onda de frecuencia cambiante",
+      "caption": "Monitoreo de osciloscopio: visualización de distorsión armónica y relaciones de fase a través de redes de filtrado analógico."
+    },
+    {
+      "type": "h2",
+      "text": "Sustractivo de la Costa Este versus Aditivo de la Costa Oeste"
+    },
+    {
+      "type": "p",
+      "text": "La síntesis modular encarna dos filosofías históricas: la Costa Este (Bob Moog), que filtra formas de onda ricas a través de filtros resonantes, y la Costa Oeste (Don Buchla), que genera complejidad a partir de ondas sinusoidales simples a través de carpetas de ondas, modulación de frecuencia y fuentes de voltaje aleatorio estocástico."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/umkTjJ-Z6fs",
+      "title": "Explicación de los sintetizadores modulares: masterización de parches en Eurorack en 10 minutos",
+      "caption": "Video tutorial completo que explica voltajes de control, VCA, generadores de envolvente y flujos de trabajo de parches generativos creativos."
+    },
+    {
+      "type": "p",
+      "text": "La naturaleza táctil y no determinista de la conexión de voltaje analógico hace de Eurorack un laboratorio inigualable para la exploración sonora moderna."
+    }
+  ],
+  "sourceHash": "238cfdfa39a8030069d68c44c4e8d453cfcf6739"
+}

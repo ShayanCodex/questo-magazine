@@ -1,0 +1,70 @@
+{
+  "slug": "modular-synthesizers-and-control-voltage-patching",
+  "title": "Modular Synthesizers & CV",
+  "excerpt": "The electroacoustic physics of Eurorack modular synthesizers: 1V/Octave standards, analog subtractive synthesis, low-pass gates, and generative patching topologies.",
+  "date": "2026-11-17",
+  "author": "Orion Kaelen",
+  "tags": [
+    "sound",
+    "modular-synths",
+    "eurorack",
+    "audio-engineering",
+    "acoustics",
+    "music-technology"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Complex Eurorack modular synthesizer console interconnected with vibrant multicolored patch cables",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Returning to Physical Electrical Currents"
+    },
+    {
+      "type": "p",
+      "text": "While digital software synthesizers simulate sound through code algorithms inside a computer, modular synthesis treats sound as physical continuous electricity. In the Eurorack format created by Dieter Doepfer, modules communicate not through digital MIDI messages, but through analog Control Voltages (CV), gates, and audio-rate electric currents routed via 3.5mm patch cables."
+    },
+    {
+      "type": "h2",
+      "text": "The Building Blocks of Eurorack Synthesis"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The 1V/Octave Standard: Pitch tracking where each additional volt of direct current doubles oscillator frequency, spanning musical chromatic scales.",
+        "Oscillators (VCO): Generating raw harmonic waveforms—sawtooth, square, triangle, and sine—via analog relaxation circuits.",
+        "Voltage Controlled Filters (VCF): Carving away upper harmonics using four-pole ladder filters (Moog) or state-variable filters (Buchla).",
+        "Low Pass Gates (LPG): Vactrol-based optocoupler circuits providing organic, percussive bongo plucks with natural physical decay tails."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "A modular synthesizer is not a musical instrument with a fixed interface; it is an open analog computing machine patched to perform generative acoustic self-composition.",
+      "cite": "Questo Electroacoustic Synthesis & Sound Design Center"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Analog synthesizer oscilloscope showing shifting frequency waveforms and voltages",
+      "caption": "Oscilloscope monitoring: Visualizing harmonic distortion and phase relationships across analog filtering networks."
+    },
+    {
+      "type": "h2",
+      "text": "East Coast Subtractive vs West Coast Additive"
+    },
+    {
+      "type": "p",
+      "text": "Modular synthesis embodies two historical philosophies: East Coast (Bob Moog), filtering rich waveforms through resonant filters, and West Coast (Don Buchla), generating complexity from simple sine waves through wavefolders, frequency modulation, and stochastic aleatoric voltage sources."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/umkTjJ-Z6fs",
+      "title": "Modular Synths Explained: Master Eurorack Patching in 10 Minutes",
+      "caption": "Comprehensive video tutorial explaining control voltages, VCAs, envelope generators, and creative generative patching workflows."
+    },
+    {
+      "type": "p",
+      "text": "The tactile, non-deterministic nature of analog voltage patching makes Eurorack an unmatched laboratory for modern sonic exploration."
+    }
+  ],
+  "sourceHash": "238cfdfa39a8030069d68c44c4e8d453cfcf6739"
+}

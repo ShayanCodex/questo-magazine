@@ -1,7 +1,7 @@
 {
   "slug": "wave-field-synthesis-and-spatial-binaural-audio-acoustics",
-  "title": "Síntesis de campo de ondas, modelado psicoacústico del pabellón HRTF y física de la holofonía de audio espacial",
-  "excerpt": "Un análisis de ingeniería acústica de la holofonía acústica: síntesis de ondas de Huygens-Fresnel, funciones de transferencia relacionadas con la cabeza (HRTF), filtrado de diferencia de tiempo interaural (ITD) y campos de sonido inmersivos de próxima generación.",
+  "title": "La física del audio espacial y 3D",
+  "excerpt": "Un análisis de ingeniería acústica de la holofonía acústica: síntesis de ondas Huygens-Fresnel, funciones de transferencia relacionadas con la cabeza (HRTF), filtrado de diferencia de tiempo interaural (ITD) y campos de sonido inmersivos de próxima generación.",
   "date": "2026-11-17",
   "author": "Siddharth Nair",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Dado que los auriculares de realidad aumentada integran seguimiento de cabeza de 6 grados de libertad, los motores de audio deben generar rutas de reflexión de reverberación dinámica con latencias inferiores a 20 milisegundos. Al ejecutar núcleos de convolución de trazado de rayos en tiempo real en chips DSP especializados, los desarrolladores crean objetos de audio virtuales que se reflejan con precisión en paredes, alfombras y techos del mundo real."
     }
   ],
-  "sourceHash": "48a117165731e26906d86f26ccb4cff5c8fa4f4a"
+  "sourceHash": "c3cf14021cfc4b8989e1aa96dbdbef091f2f999c"
 }

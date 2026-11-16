@@ -1,7 +1,7 @@
 {
   "slug": "linear-types-and-affine-type-systems-in-compiler-design",
-  "title": "Types linéaires et systèmes de types affines dans la programmation de systèmes",
-  "excerpt": "Une exploration de la théorie du langage de programmation dans la logique linéaire, le suivi des ressources affines, les garanties de consommation de mémoire et les abstractions sûres et sans coût dans les systèmes au moment de la compilation.",
+  "title": "Types linéaires et affines dans le code des systèmes",
+  "excerpt": "Une exploration de la théorie du langage de programmation dans la logique linéaire, le suivi affine des ressources, les garanties de consommation de mémoire et les abstractions sûres et sans coût dans les systèmes au moment de la compilation.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Les canaux linéaires appliquent des types de session : des séquences de protocole où les primitives d'envoi et de réception alternent de manière déterministe. Cela garantit l’absence de blocages et de conditions de concurrence entre les microservices distribués."
     }
   ],
-  "sourceHash": "0eff32dad713ba2cba4f1f46e2081b3713575034"
+  "sourceHash": "612839826d2c3698202d72028d4286f872d7d6bb"
 }

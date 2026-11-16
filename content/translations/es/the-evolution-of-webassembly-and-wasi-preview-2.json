@@ -1,7 +1,7 @@
 {
   "slug": "the-evolution-of-webassembly-and-wasi-preview-2",
-  "title": "WebAssembly más allá del navegador: WASI Preview 2, modelos de componentes y micro-VM perimetrales",
-  "excerpt": "Evaluación de la compilación de códigos de bytes en tiempos de ejecución perimetrales sin servidor, tipos de interfaz de modelos de componentes, arranques en frío de menos de milisegundos y aislamiento de contenedores políglotas.",
+  "title": "WebAssembly más allá del navegador",
+  "excerpt": "Evaluación de la compilación de código de bytes en tiempos de ejecución perimetrales sin servidor, tipos de interfaz de modelo de componentes, arranques en frío de menos de milisegundos y aislamiento de contenedores políglotas.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,7 +12,7 @@
     "microservices"
   ],
   "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "High-density edge computing server nodes executing WebAssembly bytecode containers",
+  "imageAlt": "Nodos de servidor de computación de borde de alta densidad que ejecutan contenedores de código de bytes de WebAssembly",
   "body": [
     {
       "type": "h2",
@@ -20,25 +20,25 @@
     },
     {
       "type": "p",
-      "text": "Concebido originalmente como un nivel de ejecución de alto rendimiento para renderizado 3D basado en navegador y física computacional, WebAssembly (Wasm) ha evolucionado hasta convertirse en el objetivo de compilación universal más atractivo para arquitecturas backend distribuidas. Al abstraer la ejecución en una máquina virtual independiente del hardware con límites de memoria lineales y seguridad basada en capacidades, Wasm permite la ejecución casi nativa de cargas de trabajo de C++, Rust, Go y Python en nodos de borde distribuidos."
+      "text": "Originalmente concebido como un nivel de ejecución de alto rendimiento para renderizado 3D basado en navegador y física computacional, WebAssembly (Wasm) ha evolucionado hasta convertirse en el objetivo de compilación universal más atractivo para arquitecturas backend distribuidas. Al abstraer la ejecución en una máquina virtual independiente del hardware con límites de memoria lineales y seguridad basada en capacidades, Wasm permite la ejecución casi nativa de cargas de trabajo de C++, Rust, Go y Python en nodos de borde distribuidos."
     },
     {
       "type": "h2",
-      "text": "La transición de entornos de pruebas de navegador a tiempos de ejecución sin servidor"
+      "text": "Innovaciones principales en WASI Preview 2"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Binary WebAssembly bytecode structure and linear memory safety sandbox execution model",
-      "caption": "Linear memory isolation: Wasm modules executing within strict address space bounds enforced by runtime guard pages."
+      "alt": "WebAssembly más allá del navegador: WASI Preview 2, modelos de componentes y micro-VM de borde - Figura operativa 4",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respalda WebAssembly más allá del navegador: WASI Preview 2, modelos de componentes y micro-VM de borde."
     },
     {
       "type": "ul",
       "items": [
-        "The WebAssembly System Interface (WASI): Standardizes modular POSIX-like system calls for filesystem access, network sockets, clocks, and cryptographic random number generators across diverse operating systems.",
-        "Wasm Component Model: Replaces raw memory pointer exchanges with rich high-level Interface Definition Language (WIT) types, enabling language-agnostic function composition without serialization overhead.",
-        "Micro-Millisecond Cold Starts: Unlike Docker containers that require spinning up guest Linux kernels or complex namespace cgroups, Wasm instances instantiate in microseconds with negligible memory footprints.",
-        "Capability-Based Security: Wasm modules cannot invoke filesystem read or network bind operations unless explicit handles are granted by the host runtime, neutralizing entire classes of supply-chain attacks."
+        "La interfaz del sistema WebAssembly (WASI): estandariza las llamadas al sistema modular tipo POSIX para acceso al sistema de archivos, sockets de red, relojes y generadores de números aleatorios criptográficos en diversos sistemas operativos.",
+        "Modelo de componentes Wasm: reemplaza los intercambios de punteros de memoria sin procesar con tipos ricos de lenguaje de definición de interfaz (WIT) de alto nivel, lo que permite la composición de funciones independientes del lenguaje sin sobrecarga de serialización.",
+        "Arranques en frío de micromilisegundos: a diferencia de los contenedores Docker que requieren activar núcleos de Linux invitados o grupos c de espacios de nombres complejos, las instancias de Wasm se crean instancias en microsegundos con huellas de memoria insignificantes.",
+        "Seguridad basada en capacidades: los módulos Wasm no pueden invocar operaciones de lectura del sistema de archivos ni de enlace de red a menos que el tiempo de ejecución del host otorgue controles explícitos, neutralizando clases enteras de ataques a la cadena de suministro."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Microservice orchestration platform scaling thousands of sub-millisecond edge Wasm instances",
-      "caption": "WASI Preview 2: standardized capability-based interfaces allowing polyglot component composition at microsecond cold-start speeds."
+      "alt": "WebAssembly más allá del navegador: WASI Preview 2, modelos de componentes y micro-VM de borde - Figura operativa 7",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respalda WebAssembly más allá del navegador: WASI Preview 2, modelos de componentes y micro-VM de borde."
     },
     {
       "type": "h2",
-      "text": "La transición de entornos de pruebas de navegador a tiempos de ejecución sin servidor"
+      "text": "Arquitecturas informáticas perimetrales y escalado multiinquilino"
     },
     {
       "type": "p",
-      "text": "Concebido originalmente como un nivel de ejecución de alto rendimiento para renderizado 3D basado en navegador y física computacional, WebAssembly (Wasm) ha evolucionado hasta convertirse en el objetivo de compilación universal más atractivo para arquitecturas backend distribuidas. Al abstraer la ejecución en una máquina virtual independiente del hardware con límites de memoria lineales y seguridad basada en capacidades, Wasm permite la ejecución casi nativa de cargas de trabajo de C++, Rust, Go y Python en nodos de borde distribuidos."
+      "text": "Las plataformas informáticas de borde modernas implementan tiempos de ejecución de Wasm (como Wasmtime y WasmEdge) directamente dentro de espacios de direcciones de procesos unificados, alojando miles de cargas de trabajo de clientes aisladas por núcleo de CPU. El aislamiento de la memoria se aplica a través de páginas de protección de hardware de tabla de páginas, lo que genera una densidad de inquilinos superior en comparación con las microVM tradicionales."
     },
     {
       "type": "video",
-      "title": "WASI Preview 2 and the WebAssembly Component Model Explained",
-      "caption": "Architectural overview of WASI interfaces, component composition, and secure polyglot serverless deployment.",
-      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE"
+      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE",
+      "title": "WASI Preview 2 y explicación del modelo de componentes WebAssembly",
+      "caption": "Descripción general de la arquitectura de las interfaces WASI, composición de componentes e implementación políglota segura sin servidor."
     },
     {
       "type": "h2",
-      "text": "La transición de entornos de pruebas de navegador a tiempos de ejecución sin servidor"
+      "text": "El horizonte de los microservicios políglotas universales"
     },
     {
       "type": "p",
-      "text": "Concebido originalmente como un nivel de ejecución de alto rendimiento para renderizado 3D basado en navegador y física computacional, WebAssembly (Wasm) ha evolucionado hasta convertirse en el objetivo de compilación universal más atractivo para arquitecturas backend distribuidas. Al abstraer la ejecución en una máquina virtual independiente del hardware con límites de memoria lineales y seguridad basada en capacidades, Wasm permite la ejecución casi nativa de cargas de trabajo de C++, Rust, Go y Python en nodos de borde distribuidos."
+      "text": "A medida que el modelo de componentes Wasm logra una madurez generalizada de las herramientas, los sistemas distribuidos están pasando de imágenes de contenedores de Linux pesadas a paquetes de códigos de bytes inmutables y sencillos. El futuro de la infraestructura de la nube es liviano, está aislado de forma segura por diseño y se distribuye sin problemas en topologías de borde globales."
     }
   ],
-  "sourceHash": "c7f2c7c0a5c730d414ebf9b404e3f7d83d7ea8ec"
+  "sourceHash": "07072136c72a8b72fd505df436f64bedd3517a28"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "aerodynamics-of-sub-two-hour-marathon-and-carbon-plate-kinetics",
-  "title": "La biomécanique du marathon de moins de 2 heures : mousses PEBA viscoélastiques, bascules métatarsiennes en carbone et dessin aérodynamique en formation de V",
-  "excerpt": "Déconstruire les limites physiologiques et techniques humaines de la course d'endurance : résilience amide de bloc polyéther, levier de plaque incurvée en fibre de carbone, cinétique de dégagement du lactate et rythme aérodynamique optimisé en soufflerie.",
+  "title": "Biomécanique du marathon Sub-2",
+  "excerpt": "Déconstruire les limites physiologiques et techniques humaines de la course d'endurance : résilience du bloc polyéther amide, levier incurvé de la plaque en fibre de carbone, cinétique de clairance du lactate et stimulation aérodynamique optimisée en soufflerie.",
   "date": "2026-11-17",
   "author": "Liam O’Connor",
   "tags": [
@@ -33,7 +33,7 @@
       "items": [
         "Mousses viscoélastiques supercritiques : les chaussures de course modernes utilisent du polyéther bloc amide (PEBA) expansé en autoclave, offrant plus de 85 % de retour d'énergie mécanique par coup de pied par rapport aux mousses EVA traditionnelles (qui se dégradent à 60 %).",
         "Plaques à bascule incurvées en fibre de carbone : la cuillère interne incurvée en carbone agit comme un bras de levier rigide, raidissant les articulations métatarsophalangiennes et réduisant le travail de moment de l'articulation de la cheville, économisant ainsi l'énergie métabolique sans augmenter la fatigue musculaire.",
-        "Stimulation aérodynamique en forme de V : Courir derrière un bouclier de stimulation aérodynamique synchronisé en forme de flèche réduit les coefficients de traînée jusqu'à 57 %, économisant environ quatre minutes sur la distance standard du marathon.",
+        "Stimulation aérodynamique en forme de V : Courir derrière un bouclier de stimulation aérodynamique synchronisé en forme de flèche réduit les coefficients de traînée jusqu'à 57 %, économisant ainsi environ quatre minutes sur la distance standard du marathon.",
         "Saturation de la navette de lactate mitochondrial : les coureurs d'élite possèdent des ratios capillaires/fibres exceptionnellement élevés, permettant une oxydation continue du lactate circulant comme carburant musculaire sans déclencher d'acidose cellulaire."
       ]
     },
@@ -50,7 +50,7 @@
     },
     {
       "type": "h2",
-      "text": "Dynamique du temps de contact avec le sol et de la fréquence de foulée"
+      "text": "Temps de contact avec le sol et dynamique de la fréquence de foulée"
     },
     {
       "type": "p",
@@ -71,5 +71,5 @@
       "text": "À mesure que la surveillance continue de la glycémie (CGM), le ravitaillement personnalisé en hydrogels en glucides et l'optimisation informatique de la topographie du parcours arrivent à maturité, le record du monde officiel franchira le seuil inférieur à 2 heures dans une compétition civique ouverte. La barrière n’a jamais été une limitation biologique ; c'était un casse-tête technique attendant sa convergence scientifique."
     }
   ],
-  "sourceHash": "7dea78b3b016f5cb1548ce7e8d6c3b6351b66548"
+  "sourceHash": "7a06163dc198982be3bb3f300dc74b729928fbbe"
 }

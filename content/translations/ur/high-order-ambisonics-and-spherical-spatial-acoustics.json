@@ -1,0 +1,70 @@
+{
+  "slug": "high-order-ambisonics-and-spherical-spatial-acoustics",
+  "title": "High-Order Ambisonics & 3D Audio",
+  "excerpt": "Decomposing 360-degree acoustic soundfields using spherical harmonics, B-format polar equations, and head-related transfer functions for virtual reality immersion.",
+  "date": "2026-11-17",
+  "author": "Orion Kaelen",
+  "tags": [
+    "sound",
+    "acoustics",
+    "spatial-audio",
+    "ambisonics",
+    "virtual-reality",
+    "audio-engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Professional acoustic recording studio mixing console with spatial audio monitors and waveforms",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Decoupling Soundfields from Speaker Layouts"
+    },
+    {
+      "type": "p",
+      "text": "Traditional surround sound (5.1 or 7.1) sends discrete audio tracks to fixed speaker positions. If a speaker is missing or listeners move off-center, the spatial illusion collapses. Ambisonics, invented by Michael Gerzon, treats audio as a continuous spherical wavefield, decomposing sound in three dimensions using spherical harmonic mathematical functions."
+    },
+    {
+      "type": "h2",
+      "text": "Acoustic Foundations of Higher Order Ambisonics (HOA)"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "First-Order B-Format: Representing pressure (W, omnidirectional) and particle velocity vectors along three orthogonal axes (X: front-back, Y: left-right, Z: up-down).",
+        "Higher-Order Expansion: Increasing spherical harmonic orders (2nd, 3rd, up to 7th order) narrows spatial angular resolution, sharpening acoustic localization.",
+        "Speaker-Agnostic Decoding: A single ambisonic mix can be dynamically decoded to a 64-speaker dome, a 5.1 living room, or binaural headphones in real time.",
+        "Binaural HRTF Synthesis: Convolving ambisonic soundfields with Head-Related Transfer Functions to simulate pinna reflections and interaural time delays for VR."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Higher-order ambisonics captures not merely sound events, but the precise geometric architecture of the space in which they reverberate.",
+      "cite": "Questo Spatial Acoustics & Immersive Sound Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Spherical multi-capsule 3D microphone array configured for 360-degree field recording",
+      "caption": "Tetrahedral and spherical microphone arrays: Recording spatial acoustic pressure gradients with matched condenser capsules."
+    },
+    {
+      "type": "h2",
+      "text": "Real-Time Head Tracking and Virtual Reality"
+    },
+    {
+      "type": "p",
+      "text": "In virtual reality, as a user turns their head, the ambisonic coordinate matrix rotates in real-time with sub-10ms latency. The sound source remains anchored in 3D space, providing neurological cues that trick the auditory cortex into experiencing true immersion."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/yPhJj1RZfA0",
+      "title": "7th-Order Spatial Audio and Ambisonic Microphones Explained",
+      "caption": "Acoustic engineering review explaining spherical microphone arrays, B-format decoding, and spatial resolution in immersive audio."
+    },
+    {
+      "type": "p",
+      "text": "HOA allows sound engineers to capture the acoustic soul of a cathedral and reproduce it binaurally with pinpoint precision."
+    }
+  ],
+  "sourceHash": "f7227dc527393079c1bef92ea9b04afab79c7960"
+}

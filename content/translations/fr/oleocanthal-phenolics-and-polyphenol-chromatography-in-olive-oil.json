@@ -1,6 +1,6 @@
 {
   "slug": "oleocanthal-phenolics-and-polyphenol-chromatography-in-olive-oil",
-  "title": "Produits phénoliques oléocanthals et chromatographie des polyphénols dans l'extraction d'huile d'olive extra vierge",
+  "title": "Polyphénols d'oléocanthal et d'huile d'olive",
   "excerpt": "La biochimie de l'EVOO amère et piquante : examen de la thermodynamique du malaxation, de l'hydrolyse sécoiridoïde et de la pharmacologie anti-inflammatoire de l'oléocanthal.",
   "date": "2026-11-16",
   "author": "Saskia Lindqvist",
@@ -36,7 +36,7 @@
       "type": "ul",
       "items": [
         "Hydrolyse enzymatique : l'écrasement des drupes intactes active les enzymes β-glucosidase endogènes qui convertissent l'oleuropéine et les glycosides de ligstroside en composés phénoliques aglycones biodisponibles.",
-        "Plafond de température : Le maintien des températures de malaxation en dessous de 27°C (extraction à froid) préserve les esters hexanalaux volatils et empêche la dégradation thermique des polyphénols antioxydants.",
+        "Plafond de Température : Le maintien des températures de malaxation en dessous de 27°C (extraction à froid) préserve les esters hexanalaux volatils et évite la dégradation thermique des polyphénols antioxydants.",
         "Couverture de gaz inerte : le déplacement de l'oxygène atmosphérique avec de l'azote ou de l'argon à l'intérieur du malaxeur élimine l'activité de la polyphénol oxydase (PPO) et l'oxydation volatile.",
         "Centrifugation par décantation biphasée : l'élimination de l'eau de traitement ajoutée empêche les polyphénols hydrophiles (tels que l'hydroxytyrosol et l'oléocanthal) d'être éliminés dans les eaux usées végétales."
       ]
@@ -62,12 +62,12 @@
     },
     {
       "type": "h2",
-      "text": "Préservation culinaire et pharmacologique"
+      "text": "Conservation Culinaire et Pharmacologique"
     },
     {
       "type": "p",
       "text": "Une fois extraits, les composés phénoliques EVOO sont vulnérables à la photo-oxydation et à la dégradation thermique. Le stockage de l'huile dans des récipients en verre violet foncé entre 14 °C et 18 °C maintient la demi-vie de l'oléocanthal pendant plus de dix-huit mois. Dans les applications culinaires, un filet d’huiles à haute teneur phénolique sur des plats chauds préserve les arômes floraux délicats tout en maximisant la biodisponibilité des antioxydants cellulaires."
     }
   ],
-  "sourceHash": "eccfe41f71c35816ee23212032d9853f8c98be7e"
+  "sourceHash": "cd363aba925c6c80780e4449bb601fa4a675dfdc"
 }

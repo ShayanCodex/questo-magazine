@@ -1,7 +1,7 @@
 {
   "slug": "the-evolution-of-editorial-layout-systems-and-variable-grids",
-  "title": "ادارتی لے آؤٹ سسٹمز کا ارتقاء: Tschichold سے متغیر گرڈز تک",
-  "excerpt": "ایک ٹائپوگرافک مقالہ جو کتابی تقسیم کے سنہری اصول، وسط صدی کے سوئس غیر متناسب نظاموں، اور جدید CSS سب گرڈ فلوڈ ایڈیٹوریل فن تعمیر کا سراغ لگاتا ہے۔",
+  "title": "The Evolution of Editorial Layout Systems",
+  "excerpt": "A typographic treatise tracing the golden canon of book division, mid-century Swiss asymmetric systems, and modern CSS subgrid fluid editorial architecture.",
   "date": "2026-11-16",
   "author": "Saskia Lindqvist",
   "tags": [
@@ -12,62 +12,62 @@
     "swiss-design"
   ],
   "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "جدیدیت پسند ڈیزائن آرکائیو لائبریری میں آرکیٹیکچرل اور ٹائپوگرافک مونوگراف کے کھلے صفحات",
+  "imageAlt": "Open pages of architectural and typographic monographs in a modernist design archive library",
   "body": [
     {
       "type": "h2",
-      "text": "کلاسیکل پیج ہارمونی کی جیومیٹرک بنیادیں"
+      "text": "The Geometric Foundations of Classical Page Harmony"
     },
     {
       "type": "p",
-      "text": "ادارتی ڈیزائن کا نظم و ضبط سجاوٹ میں کبھی بھی من مانی مشق نہیں تھا۔ قرون وسطی کے اسکرپٹوریا سے لے کر جان شیچولڈ کی کتاب کی تقسیم کے سنہری اصول کی دوبارہ دریافت تک، کلاسیکی ترتیب نے غیر متزلزل ہارمونک تناسب کی پابندی کی: صفحہ کا تناسب 2:3، 2:3:4:6 کے اندرونی تا بیرونی حاشیہ ترازو، اور ٹیکسٹ بلاکس جن کے طول و عرض سنہرے رنگ کے ہوتے ہیں۔ ان ہندسی رشتوں نے قارئین کی آنکھ کو چھپے ہوئے جہاز میں آسانی سے رہنمائی کی۔"
+      "text": "The discipline of editorial design was never an arbitrary exercise in decoration. From the medieval scriptoria to Jan Tschichold’s rediscovery of the golden canon of book division, classical layouts obeyed unshakeable harmonic ratios: page proportions of 2:3, inner-to-outer margin scales of 2:3:4:6, and text blocks whose dimensions mirrored the golden rectangle. These geometric relationships guided the reader’s eye effortlessly across the printed plane."
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "Key Points"
     },
     {
       "type": "ul",
       "items": [
-        "The Tschichold Canon: ہندسی ترچھی تقسیم کے ذریعے قرون وسطی کے صفحہ کی ہم آہنگی کو عددی حکمرانوں کے بغیر دوبارہ تشکیل دینا۔",
-        "سوئس گرڈ انقلاب: جوزف مولر-بروک مین اور ایمل روڈر نے ماڈیولر ٹائپوگرافک گرڈ کو منظم کیا جس نے ریاضیاتی ترتیب کو غیر متناسب ترتیب میں متعارف کرایا۔",
-        "بیس لائن گرڈ ڈسپلن: متن کی لکیروں، معروف طول و عرض، اور تصویری فریموں کو ایک سخت عمودی تال میں سیدھ میں لانا شاندار پڑھنے میں سکون پیدا کرتا ہے۔",
-        "CSS سبگریڈ اور فلوئڈ ٹائپوگرافی: جدید ویب ترتیب کی صلاحیتیں آخر کار وسط صدی کے سوئس ادارتی نظاموں کی لامحدود ویو پورٹ چوڑائیوں میں درستگی کا احساس کرتی ہیں۔"
+        "The Tschichold Canon: Reconstructing medieval page harmony through geometric diagonal division without numerical rulers.",
+        "The Swiss Grid Revolution: Josef Müller-Brockmann and Emil Ruder systematized modular typographic grids that introduced mathematical order to asymmetric layouts.",
+        "Baseline Grid Discipline: Aligning text lines, leading dimensions, and image frames to a strict vertical rhythm creates subliminal reading serenity.",
+        "CSS Subgrid and Fluid Typography: Modern web layout capabilities finally realize the precision of mid-century Swiss editorial systems across infinite viewport widths."
       ]
     },
     {
       "type": "quote",
-      "text": "گرڈ سسٹم ایک امداد ہے، ضمانت نہیں۔ یہ متعدد ممکنہ استعمال کی اجازت دیتا ہے اور ہر ڈیزائنر اپنے ذاتی انداز کے مطابق حل تلاش کر سکتا ہے۔ لیکن گرڈ کو استعمال کرنے کا طریقہ سیکھنا چاہیے۔ یہ ایک فن ہے جس میں مشق کی ضرورت ہے۔",
+      "text": "The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.",
       "cite": "Josef Müller-Brockmann, Grid Systems in Graphic Design (1961)"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80",
-      "alt": "صاف minimalist ٹائپوگرافک نمونہ پوسٹر جس میں سخت ماڈیولر گرڈ الائنمنٹ دکھایا گیا ہے",
-      "caption": "ماڈیولر گرڈ ڈھانچہ: منفی سفید جگہ، حاشیے اور کالم کے درمیان ریاضیاتی توازن۔"
+      "alt": "Clean minimalist typographic specimen poster showing strict modular grid alignment",
+      "caption": "Modular grid structure: mathematical balance between negative white space, margins, and column boundaries."
     },
     {
       "type": "h2",
-      "text": "غیر متناسب سختی: سوئس عقلیت پسند انقلاب"
+      "text": "Asymmetric Rigor: The Swiss Rationalist Revolution"
     },
     {
       "type": "p",
-      "text": "جنگ کے بعد زیورخ اور باسل میں، بین الاقوامی ٹائپوگرافک انداز نے متحرک غیر متناسب تناؤ کے حق میں مرکز وکٹورین ہم آہنگی کو مسترد کر دیا۔ عام عمودی صف بندی کے محوروں کے ساتھ شہ سرخیوں، باڈی کاپی، اور آرکیٹیکچرل فوٹوگرافی کو اینکرنگ کرکے، سوئس ماسٹرز نے جراحی کی وضاحت کے ساتھ بصری درجہ بندی حاصل کی۔"
+      "text": "In post-war Zurich and Basel, the International Typographic Style rejected centered Victorian symmetry in favor of dynamic asymmetric tension. By anchoring headlines, body copy, and architectural photography along common vertical alignment axes, Swiss masters achieved visual hierarchy with surgical clarity."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "سوئس ٹائپوگرافک ڈیزائن اور ماڈیولر گرڈز کے اصول",
-      "caption": "گرافک ڈیزائن سیمینار جس میں غیر متناسب ترتیب کے نظام، بیس لائن تال، اور بصری درجہ بندی کو دریافت کیا گیا ہے۔"
+      "title": "The Principles of Swiss Typographic Design and Modular Grids",
+      "caption": "Graphic design seminar exploring asymmetric layout systems, baseline rhythm, and visual hierarchy."
     },
     {
       "type": "h2",
-      "text": "فلوڈ ایڈیٹوریل آرکیٹیکچر: CSS سب گرڈ اور متناسب ٹائپوگرافک تال"
+      "text": "Fluid Editorial Architecture: CSS Subgrid and Proportional Typographic Rhythm"
     },
     {
       "type": "p",
-      "text": "ڈیجیٹل ویب پر، ادارتی دستکاری طویل عرصے سے سخت، غیر منقسم جوابی کارڈ فریم ورک کا شکار تھی۔ سی ایس ایس سبگریڈ اور سی ایس ایس `کلیمپ()` فلوئڈ ٹائپ اسکیلنگ کے عالمگیر براؤزر کو اپنانے کے ساتھ، ویب ڈیزائنرز اب مسلسل ادارتی کمپوزیشنز بنا سکتے ہیں جو جیب اسکرین سے لے کر الٹرا وائیڈ ڈیسک ٹاپ مانیٹر تک متناسب ہم آہنگی کو محفوظ رکھتی ہے۔"
+      "text": "On the digital web, editorial craft long suffered from rigid, disjointed responsive card frameworks. With the universal browser adoption of CSS Subgrid and CSS `clamp()` fluid type scaling, web designers can now construct continuous editorial compositions that preserve proportional harmony from pocket screens to ultra-wide desktop monitors."
     }
   ],
-  "sourceHash": "2ad5251f03966d71bae35e8ac963c1e1bc885d9e"
+  "sourceHash": "4bcf5f52292f406d4eb0a31a5c2dc75df49626a1"
 }

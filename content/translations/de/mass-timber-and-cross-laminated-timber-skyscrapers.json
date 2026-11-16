@@ -1,0 +1,74 @@
+{
+  "slug": "mass-timber-and-cross-laminated-timber-skyscrapers",
+  "title": "Der Aufstieg von Holzwolkenkratzern",
+  "excerpt": "Eine architekturtechnische Untersuchung von Massivholz: Brettsperrholz (CLT), biophile Strukturakustik, Kohlenstoffbindungsmetriken und die Verkohlungsphysik des Brandschutzes in Lagenkratzern.",
+  "date": "2026-11-17",
+  "author": "Mateo Silva",
+  "tags": [
+    "architecture",
+    "mass-timber",
+    "clt",
+    "sustainability",
+    "civil-engineering",
+    "urban-design"
+  ],
+  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Modernes architektonisches Interieur mit hoch aufragenden, gebogenen Holzbalken aus massivem Holz und weitläufigen Glasfenstern",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Die Tragwerkstechnik aus Brettsperrholz (CLT)"
+    },
+    {
+      "type": "p",
+      "text": "Seit über einem Jahrhundert werden städtische Hochhaussilhouetten ausschließlich durch Stahlbeton und Baustahl definiert – Materialien, die für fast 15 % aller globalen Treibhausgasemissionen verantwortlich sind. Massenholz durchbricht dieses Paradigma grundlegend. Durch die Verleimung von maßhaltigem Schnittholz in abwechselnden orthogonalen Querfaserschichten unter hydraulischen Pressen erreicht Brettsperrholz (CLT) Druck- und Zugfestigkeiten, die mit denen von Beton mithalten können, und wiegt dabei nur einen Bruchteil dessen."
+    },
+    {
+      "type": "h2",
+      "text": "Wichtige architektonische und strukturelle Merkmale"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Orthogonale Lastverteilung: Abwechselnde 90-Grad-Lamellenausrichtungen bieten strukturelle Spannmöglichkeiten in beide Richtungen, sodass CLT-Platten als starre Membranen und Scherwände fungieren können.",
+        "Vorhersehbare Verkohlungspyrolyse: Massivholz brennt von außen nach innen mit einer vorhersehbaren Geschwindigkeit von etwa 0,65 mm/Minute und bildet eine isolierende äußere Holzkohlekruste, die den Strukturkern schützt.",
+        "CO2-negative Baumasse: Während Beton eine halbe Tonne CO2 pro produzierter Tonne freisetzt, bindet nachhaltig geerntetes Massivholz eine Tonne atmosphärisches CO2 in jedem Kubikmeter Holz.",
+        "Präzise Off-Site-Vorfertigung: CNC-gefräste Paneele kommen mit Millimetertoleranzen vor Ort an, wodurch die Zeitpläne für den Bau von Wolkenkratzern und der Lärm vor Ort um bis zu 50 % gesenkt werden."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Beton und Stahl werden durch Feuer und Hitze aus der Erde gewonnen; Holz wächst durch Sonne und Regen. Ein Wolkenkratzer aus Holz ist nicht nur ein Gebäude; es handelt sich um eine vertikale Kohlenstoffsenke.",
+      "cite": "Questo Sustainable Structural Architecture Review"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hochhausfassade moderner Wolkenkratzerarchitektur, die warme Lamellen aus organischem Naturholz mit Strukturglas verbindet",
+      "caption": "Hybride Holz-Beton-Kerne: Kombination von Massivholzböden mit schlanken Betonaufzugsschächten für die seismische Widerstandsfähigkeit von Hochhäusern."
+    },
+    {
+      "type": "h2",
+      "text": "Akustische Entkopplung und biophile Psychologie"
+    },
+    {
+      "type": "p",
+      "text": "Da leichte Holzböden Aufprallvibrationen leichter übertragen als schwerer Gussbeton, verwenden Ingenieure Akustik-Elastomer-Pads und Sandballast-Deckschichten, um eine hervorragende Schalldämmung zu erreichen. Darüber hinaus senkt die freiliegende Holzmaserung an Decken und Säulen den Speichel-Cortisolspiegel und die Herzfrequenz der Bewohner durch angeborenes biophiles Design."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/v3JqSsc8ZKk",
+      "title": "Dokumentarfilm: Die höchsten Holzgebäude der Welt",
+      "caption": "Die B1M-Architekturdokumentation über moderne Massivholzbauweise, Brandversuche und über 20-stöckige Holztürme, die die Skylines der Welt neu gestalten."
+    },
+    {
+      "type": "h2",
+      "text": "Die Zukunft regenerativer städtischer Skylines"
+    },
+    {
+      "type": "p",
+      "text": "Da die Bauvorschriften in Europa und Nordamerika den zulässigen Holzbau auf bis zu 24 Stockwerke erweitern, stellt Massivholz den gangbarsten Weg zum Bau hochdichter, CO2-neutraler Städte dar, die über Jahrhunderte atmosphärischen Kohlenstoff binden."
+    }
+  ],
+  "sourceHash": "aa1ed20ee74f899773240e9056fb2a2f424ebc15"
+}

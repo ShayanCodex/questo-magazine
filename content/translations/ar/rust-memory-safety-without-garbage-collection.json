@@ -1,7 +1,7 @@
 {
   "slug": "rust-memory-safety-without-garbage-collection",
-  "title": "سلامة الذاكرة الرسمية في الصدأ: أنواع Affine، ومدققات الاقتراض، ودلالات RAII",
-  "excerpt": "دراسة فنية تشريح ثوابت ملكية وقت الترجمة، وقواعد الأسماء المستعارة، وعمر الحياة غير المعجمي، وضمانات التجريد بدون تكلفة في برمجة الأنظمة.",
+  "title": "سلامة الذاكرة الرسمية في الصدأ",
+  "excerpt": "دراسة فنية تشريح ثوابت ملكية وقت الترجمة، وقواعد التعرج، وعمر غير معجمي، وضمانات التجريد بدون تكلفة في برمجة الأنظمة.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,7 +12,7 @@
     "computer-science"
   ],
   "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Modern dark-themed code editor displaying Rust ownership lifetimes, references, and type invariants",
+  "imageAlt": "محرر كود حديث ذو سمة داكنة يعرض عمر ملكية Rust، والمراجع، ومتغيرات النوع",
   "body": [
     {
       "type": "h2",
@@ -20,25 +20,25 @@
     },
     {
       "type": "p",
-      "text": "على مدى خمسة عقود، كانت هندسة الأنظمة مقيدة بثنائية مستعصية: قبول إدارة الذاكرة اليدوية مع المخاطر الكامنة في الاستخدام بعد الاستخدام، والخالي المزدوج، ونقاط ضعف تجاوز سعة المخزن المؤقت في C وC++، أو اعتماد أوقات تشغيل مجمعة للقمامة مثل Java وGo وC# التي تفرض ارتعاش وقت التشغيل، وتضخم بصمة الذاكرة، وتوقف العالم مؤقتًا. لقد كسر Rust هذا الحل الوسط من خلال تطبيق نظرية النوع المتقارب وتتبع ملكية وقت الترجمة لتوفير أمان رياضي للذاكرة دون أي عبء إضافي على وقت التشغيل."
+      "text": "على مدار خمسة عقود، كانت هندسة الأنظمة مقيدة بثنائية مستعصية: قبول إدارة الذاكرة اليدوية مع المخاطر الكامنة في ثغرات أمنية بعد الاستخدام، وخالية من المضاعفة، وتجاوز سعة المخزن المؤقت في C وC++، أو اعتماد أوقات تشغيل مجمعة للقمامة مثل Java وGo وC# التي تفرض تشويشًا في زمن الوصول أثناء التشغيل، وتضخم بصمة الذاكرة، وتوقفًا مؤقتًا عن العالم. لقد كسر Rust هذا الحل الوسط من خلال تطبيق نظرية النوع المتقارب وتتبع ملكية وقت الترجمة لتوفير أمان رياضي للذاكرة دون أي عبء إضافي على وقت التشغيل."
     },
     {
       "type": "h2",
-      "text": "التوتر التاريخي بين السلامة والأداء"
+      "text": "الأسس الرياضية لمدقق الاقتراض"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Diagram of stack frame memory layout, heap pointers, and exclusive mutable references",
-      "caption": "Aliasing XOR Mutability: compile-time borrow checking mathematically eliminating data races and dangling pointers."
+      "alt": "سلامة الذاكرة الرسمية في الصدأ: أنواع Affine، ومدققات الاقتراض ودلالات RAII - الشكل التشغيلي 4",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم سلامة الذاكرة الرسمية في الصدأ: أنواع Affine، ومدققات الاقتراض ودلالات RAII."
     },
     {
       "type": "ul",
       "items": [
-        "Linear and Affine Type Semantics: Every resource in memory has exactly one binding owner; transferring a binding constitutes a destructive move that invalidates the originating identifier at compile time.",
-        "Exclusive Mutability Invariant: The borrow checker enforces the aliasing XOR mutability theorem: code may possess either any number of immutable references (&T) or exactly one mutable reference (&mut T), never both concurrently.",
-        "Non-Lexical Lifetimes (NLL): The compiler constructs control flow graphs (CFGs) to track the precise liveness of references, allowing borrows to end as soon as their last operational use occurs rather than at lexical scope boundaries.",
-        "Deterministic Resource Acquisition Is Initialization (RAII): Destructors are synthesized at compile time and inserted precisely where owner bindings go out of scope, eliminating memory leaks without a background collector."
+        "دلالات النوع الخطي والمتقارب: كل مورد في الذاكرة له مالك ربط واحد بالضبط؛ يشكل نقل الارتباط خطوة مدمرة تؤدي إلى إبطال المعرف الأصلي في وقت الترجمة.",
+        "ثابت قابلية التغيير الحصري: يفرض مدقق الاقتراض نظرية قابلية التغيير XOR المستعارة: قد يمتلك الكود أي عدد من المراجع غير القابلة للتغيير (&T) أو مرجع واحد قابل للتغيير (&mut T)، وليس كلاهما بشكل متزامن.",
+        "فترات الحياة غير المعجمية (NLL): يقوم المترجم بإنشاء رسوم بيانية لتدفق التحكم (CFGs) لتتبع الحيوية الدقيقة للمراجع، مما يسمح للاقتراضات بالانتهاء بمجرد حدوث آخر استخدام تشغيلي لها بدلاً من حدود النطاق المعجمي.",
+        "الحصول على الموارد الحتمية هو التهيئة (RAII): يتم تصنيع أدوات التدمير في وقت الترجمة وإدراجها بدقة حيث تخرج روابط المالك عن النطاق، مما يمنع تسرب الذاكرة بدون أداة تجميع الخلفية."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
-      "alt": "LLVM intermediate representation optimizing monomorphized zero-cost Rust abstractions into machine code",
-      "caption": "Monomorphization: compiler generating specialized machine instructions for generic traits without dynamic vtable cost."
+      "alt": "سلامة الذاكرة الرسمية في الصدأ: أنواع Affine، ومدققات الاقتراض ودلالات RAII - الشكل التشغيلي 7",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد الأساسي الذي يدعم سلامة الذاكرة الرسمية في الصدأ: أنواع Affine، ومدققات الاقتراض ودلالات RAII."
     },
     {
       "type": "h2",
-      "text": "التوتر التاريخي بين السلامة والأداء"
+      "text": "التجريدات ذات التكلفة الصفرية والتوحيد"
     },
     {
       "type": "p",
-      "text": "على مدى خمسة عقود، كانت هندسة الأنظمة مقيدة بثنائية مستعصية: قبول إدارة الذاكرة اليدوية مع المخاطر الكامنة في الاستخدام بعد الاستخدام، والخالي المزدوج، ونقاط ضعف تجاوز سعة المخزن المؤقت في C وC++، أو اعتماد أوقات تشغيل مجمعة للقمامة مثل Java وGo وC# التي تفرض ارتعاش وقت التشغيل، وتضخم بصمة الذاكرة، وتوقف العالم مؤقتًا. لقد كسر Rust هذا الحل الوسط من خلال تطبيق نظرية النوع المتقارب وتتبع ملكية وقت الترجمة لتوفير أمان رياضي للذاكرة دون أي عبء إضافي على وقت التشغيل."
+      "text": "يحقق Rust تكافؤًا في الأداء مع C++ من خلال التوحيد القوي للأدوية العامة ذات السمات المحددة. بدلاً من إرسال استدعاءات الطريقة من خلال جداول vtables الديناميكية، يقوم المترجم بتكرار تطبيقات الوظائف الملموسة لكل نوع متخصص، مما يتيح التضمين عبر الصناديق، والتحويل التلقائي إلى تعليمات SIMD، وتجريد التعليمات البرمجية الميتة أثناء تحسين وقت الارتباط (LTO)."
     },
     {
       "type": "video",
-      "title": "How the Rust Borrow Checker Works: Lifetimes, Ownership, and Memory Layout",
-      "caption": "Deep-dive compiler analysis into mid-level intermediate representation (MIR) borrow checking and ownership graph evaluation.",
-      "src": "https://www.youtube-nocookie.com/embed/JlybK6Wp9f4"
+      "src": "https://www.youtube-nocookie.com/embed/JlybK6Wp9f4",
+      "title": "كيف يعمل مدقق اقتراض الصدأ: مدى الحياة والملكية وتخطيط الذاكرة",
+      "caption": "تحليل المترجم العميق في فحص الاقتراض من التمثيل المتوسط ​​المستوى (MIR) وتقييم الرسم البياني للملكية."
     },
     {
       "type": "h2",
-      "text": "التوتر التاريخي بين السلامة والأداء"
+      "text": "تحويل برامج البنية التحتية الحيوية"
     },
     {
       "type": "p",
-      "text": "على مدى خمسة عقود، كانت هندسة الأنظمة مقيدة بثنائية مستعصية: قبول إدارة الذاكرة اليدوية مع المخاطر الكامنة في الاستخدام بعد الاستخدام، والخالي المزدوج، ونقاط ضعف تجاوز سعة المخزن المؤقت في C وC++، أو اعتماد أوقات تشغيل مجمعة للقمامة مثل Java وGo وC# التي تفرض ارتعاش وقت التشغيل، وتضخم بصمة الذاكرة، وتوقف العالم مؤقتًا. لقد كسر Rust هذا الحل الوسط من خلال تطبيق نظرية النوع المتقارب وتتبع ملكية وقت الترجمة لتوفير أمان رياضي للذاكرة دون أي عبء إضافي على وقت التشغيل."
+      "text": "من نواة Linux وبرامج Hypervisor السحابية إلى محركات التداول عالية التردد وبرامج الطيران الفضائية، يعمل نموذج ملكية Rust على تحويل هندسة البرمجيات ذات المهام الحرجة بشكل أساسي. من خلال تحويل ثغرات أمان الذاكرة الكارثية إلى أخطاء في بناء الجملة في وقت الترجمة، يمكن لمهندسي الأنظمة الآن إنشاء بنيات عالية التزامن بثقة رسمية كاملة."
     }
   ],
-  "sourceHash": "980fa0d6b5ed8c89826c4d46df22bbfbac7467b9"
+  "sourceHash": "233b2266b4e8db649983020fa7125eca9a86105c"
 }

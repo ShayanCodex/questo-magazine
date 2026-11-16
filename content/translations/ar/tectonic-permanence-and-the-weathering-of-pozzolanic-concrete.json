@@ -1,7 +1,7 @@
 {
   "slug": "tectonic-permanence-and-the-weathering-of-pozzolanic-concrete",
-  "title": "الثبات التكتوني للخرسانة البوزولانية: المتانة الفيتروفية في الهندسة المدنية الحديثة",
-  "excerpt": "التحقيق في ترطيب الرماد البركاني، وطبقات الجير ذاتية الشفاء في البيئات البحرية، وكيف تُعلم كيمياء الخرسانة الرومانية القديمة البنية التحتية منخفضة الكربون في القرن الحادي والعشرين.",
+  "title": "متانة الخرسانة البوزولانية",
+  "excerpt": "دراسة ترطيب الرماد البركاني، وطبقات الجير ذاتية الشفاء في البيئات البحرية، وكيف تُعلم كيمياء الخرسانة الرومانية القديمة البنية التحتية منخفضة الكربون في القرن الحادي والعشرين.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
   "tags": [
@@ -12,7 +12,7 @@
     "ancient-engineering"
   ],
   "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Monumental monolithic exposed concrete architectural wall showing rough board-marked textures",
+  "imageAlt": "جدار معماري خرساني مكشوف ضخم متجانس يظهر أنسجة خشنة ذات علامات خشبية",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "مفارقة طول عمر الخرسانة القديمة"
+      "text": "الميكانيكا الكيميائية للمصفوفة البوزولانية الرومانية"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Ancient Roman concrete vaulted arches standing intact after two thousand years of seismic exposure",
-      "caption": "Vitruvian pozzolana: reactive volcanic ash and quicklime forming dense, durable calcium-silicate-hydrate matrix."
+      "alt": "الدوام التكتوني للخرسانة البوزولانية: المتانة الفيتروفية في الهندسة المدنية الحديثة - الشكل التشغيلي 4",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم الدوام التكتوني للخرسانة البوزولانية: المتانة الفيتروفية في الهندسة المدنية الحديثة."
     },
     {
       "type": "ul",
       "items": [
-        "Volcanic Ash Hydration: Reactive pozzolanic ash (pulvis puteolanus) containing aluminum-silicates combines with quicklime and water to form dense calcium-silicate-hydrate (C-S-H) binders.",
-        "Hot-Mixing & Lime Clasts: Ancient hot-mixing at elevated temperatures created microscopic millimetric lime clasts throughout the mortar, providing an internal chemical reservoir for autonomous crack healing.",
-        "Self-Healing in Saline Water: When seawater micro-cracks the concrete matrix, water dissolves the lime clasts, precipitating aluminum-tobermorite crystals that interlock and physically heal fractures over centuries.",
-        "Elimination of Corrosive Internal Rebar: By relying purely on monumental compression geometries (catenary arches, unreinforced dome shells) rather than embedded tensile steel, internal oxidation failure is eliminated."
+        "ترطيب الرماد البركاني: يتحد الرماد البوزولاني التفاعلي (pulvis puteolanus) الذي يحتوي على سيليكات الألومنيوم مع الجير الحي والماء لتشكيل مواد رابطة كثيفة من هيدرات سيليكات الكالسيوم (C-S-H).",
+        "الخلط الساخن وطبقات الجير: أدى الخلط الساخن القديم عند درجات حرارة مرتفعة إلى إنشاء كتل جيري ملليمترية مجهرية في جميع أنحاء الملاط، مما يوفر خزانًا كيميائيًا داخليًا لشفاء الشقوق بشكل مستقل.",
+        "الشفاء الذاتي في المياه المالحة: عندما تتسبب مياه البحر في حدوث شقوق دقيقة في القالب الخرساني، يقوم الماء بإذابة كتل الجير، مما يؤدي إلى ترسيب بلورات الألومنيوم توبرموريت التي تتشابك وتعالج الكسور جسديًا على مر القرون.",
+        "القضاء على حديد التسليح الداخلي المسبب للتآكل: من خلال الاعتماد بشكل كامل على هندسة الضغط الضخمة (أقواس سلسال، وقذائف قبة غير معززة) بدلاً من فولاذ الشد المدمج، يتم التخلص من فشل الأكسدة الداخلية."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Microscopic thin-section of self-healing lime clasts precipitating tobermorite crystals in cracks",
-      "caption": "Autonomous self-healing: seawater reacting with embedded lime clasts to crystallize and seal micro-fractures over centuries."
+      "alt": "الدوام التكتوني للخرسانة البوزولانية: المتانة الفيتروفية في الهندسة المدنية الحديثة - الشكل التشغيلي 7",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم الدوام التكتوني للخرسانة البوزولانية: المتانة الفيتروفية في الهندسة المدنية الحديثة."
     },
     {
       "type": "h2",
-      "text": "مفارقة طول عمر الخرسانة القديمة"
+      "text": "إزالة الكربون من البنية التحتية المدنية في القرن الحادي والعشرين"
     },
     {
       "type": "p",
-      "text": "البنية التحتية الحديثة للأسمنت البورتلاندي - من جسور الطرق السريعة إلى حواجز الأمواج البحرية - تعاني في كثير من الأحيان من تدهور هيكلي شديد، وتكسير الكربنة، وتآكل حديد التسليح الفولاذي خلال خمسين إلى خمسة وسبعين عامًا من التثبيت. وفي تناقض مذهل، فإن الهياكل البحرية الرومانية القديمة والقباب الأثرية مثل البانثيون تحملت ألفي عام من الصدمات الزلزالية، وتآكل المد والجزر، وغمر المياه المالحة. لقد كشفت الإنجازات الحديثة في علم المواد أخيرًا عن الأسرار الكيميائية لهذا الدوام التكتوني الدائم."
+      "text": "يمثل إنتاج الكلنكر البورتلاندي التقليدي ما يقرب من ثمانية في المائة من انبعاثات ثاني أكسيد الكربون البشرية المنشأ على مستوى العالم بسبب تكليس الحجر الجيري بدرجة حرارة عالية. إن إعادة إدخال الطين البركاني البوزولاني، والطين المكلس، والخبث المعدني يسمح للمهندسين المعاصرين بخفض نسب الكلنكر بنسبة خمسين بالمائة مع توسيع عمر تصميم الموانئ والأنفاق والمؤسسات المدنية بشكل كبير."
     },
     {
       "type": "video",
-      "title": "How Ancient Roman Concrete Stood the Test of Time: The Chemistry of Lime Clasts",
-      "caption": "Materials science investigation into pozzolanic reactions, tobermorite crystal growth, and self-healing concrete.",
-      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w"
+      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w",
+      "title": "كيف صمدت الخرسانة الرومانية القديمة أمام اختبار الزمن: كيمياء كتل الجير.",
+      "caption": "دراسة علم المواد في التفاعلات البوزولانية، ونمو بلورات التوبرموريت، والخرسانة ذاتية الشفاء."
     },
     {
       "type": "h2",
-      "text": "مفارقة طول عمر الخرسانة القديمة"
+      "text": "المسؤولية الضخمة للشكل"
     },
     {
       "type": "p",
-      "text": "البنية التحتية الحديثة للأسمنت البورتلاندي - من جسور الطرق السريعة إلى حواجز الأمواج البحرية - تعاني في كثير من الأحيان من تدهور هيكلي شديد، وتكسير الكربنة، وتآكل حديد التسليح الفولاذي خلال خمسين إلى خمسة وسبعين عامًا من التثبيت. وفي تناقض مذهل، فإن الهياكل البحرية الرومانية القديمة والقباب الأثرية مثل البانثيون تحملت ألفي عام من الصدمات الزلزالية، وتآكل المد والجزر، وغمر المياه المالحة. لقد كشفت الإنجازات الحديثة في علم المواد أخيرًا عن الأسرار الكيميائية لهذا الدوام التكتوني الدائم."
+      "text": "يتطلب البناء ذو ​​الديمومة البوزولانية تواضعًا أخلاقيًا متناسبًا في التصميم المعماري. عندما يتم بناء هيكل هندسي ليدوم لألف عام، فإن كل كتلة وظل ونسبة تصبح نصبًا ماديًا لا يمحى متروكًا للحضارات الإنسانية المستقبلية."
     }
   ],
-  "sourceHash": "d28691e4e0b850ee5ca6b1264318f376fd34b646"
+  "sourceHash": "6577ce0e75a1e26492d97bb913a44cca9ed591af"
 }

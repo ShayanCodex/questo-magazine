@@ -1,0 +1,70 @@
+{
+  "slug": "flash-loans-and-atomic-defi-arbitrage",
+  "title": "Préstamos flash y arbitraje DeFi",
+  "excerpt": "Cómo los préstamos flash sin garantía ejecutan arbitrajes atómicos multimillonarios y liquidaciones de garantías dentro de un único bloque de transacciones de blockchain Ethereum.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "tags": [
+    "defi",
+    "flash-loans",
+    "ethereum",
+    "smart-contracts",
+    "arbitrage",
+    "blockchain"
+  ],
+  "image": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Flujo de ejecución de código algorítmico de alta frecuencia en un monitor oscuro de desarrollador con símbolos de moneda",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Préstamos sin garantía en un solo bloque"
+    },
+    {
+      "type": "p",
+      "text": "En las finanzas tradicionales, pedir prestado 50 millones de dólares requiere presentar una garantía sustancial, someterse a semanas de suscripción de crédito y firmar contratos legales. En las finanzas descentralizadas, un préstamo rápido permite a cualquiera pedir prestados 100 millones de dólares al instante sin garantía inicial, bajo la estricta condición de que el capital más una pequeña comisión (normalmente 0,09%) se devuelva en la misma transacción atómica."
+    },
+    {
+      "type": "h2",
+      "text": "La arquitectura de las transacciones atómicas"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Garantía de reversión de estado: si el prestatario no paga el monto total del préstamo al final de la ejecución de la transacción, la máquina virtual Ethereum (EVM) revierte todos los cambios de estado como si la transacción nunca hubiera ocurrido.",
+        "Riesgo de incumplimiento cero: los prestamistas (como Aave o MakerDAO) asumen un riesgo crediticio cero porque los fondos no garantizados nunca abandonan el ecosistema de contratos inteligentes sin pagar.",
+        "Arbitraje Cross-DEX: Explotación instantánea de las discrepancias de precios entre los grupos Uniswap, Sushiswap y Curve sin inmovilizar capital personal.",
+        "Intercambio de garantías y autoliquidación: permite a los prestatarios bajo el agua intercambiar garantías de deuda que se están hundiendo o cerrar posiciones de préstamos en problemas con un solo clic."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Los préstamos flash democratizan la liquidez del mercado: el acceso al capital ya no está limitado por el tamaño del balance, sino puramente por la corrección algorítmica de su código de contrato inteligente.",
+      "cite": "Laboratorio de seguridad de contratos inteligentes y finanzas computacionales de Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Interfaz de código de contrato inteligente de solidez que muestra protocolos de préstamos descentralizados automatizados",
+      "caption": "Simulación de transacciones de contratos inteligentes: validación de los costos de gas EVM y la rentabilidad del arbitraje antes de transmitir a mempool."
+    },
+    {
+      "type": "h2",
+      "text": "Subastas de gas prioritario Mev Bots y Mempool"
+    },
+    {
+      "type": "p",
+      "text": "Debido a que las oportunidades de arbitraje de préstamos rápidos son públicas, miles de robots de búsqueda MEV (valor máximo extraíble) escanean el mempool público simultáneamente. Los buscadores compiten en subastas prioritarias de gas (PGA) y paquetes privados de Flashbots, ofreciendo hasta el 90% de las ganancias comerciales para bloquear validadores y garantizar la ejecución atómica."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/MorrHE2T2V4",
+      "title": "Comercio de arbitraje versus préstamos flash: ¿Cuál es la diferencia?",
+      "caption": "Desglose de Fintech que detalla cómo funcionan los préstamos flash sin garantía, la lógica de contrato inteligente y la mecánica de arbitraje DEX."
+    },
+    {
+      "type": "p",
+      "text": "Los préstamos flash imponen una eficiencia absoluta del mercado a través de protocolos descentralizados sin necesidad de creadores de mercado custodios."
+    }
+  ],
+  "sourceHash": "40261414ed44455414cc5064a6e42fe1aa6cc9b0"
+}

@@ -1,6 +1,6 @@
 {
   "slug": "architectural-acoustics-of-concert-halls-reverberation-and-clarity",
-  "title": "La acústica arquitectónica de las salas de conciertos: índice de reverberación y claridad",
+  "title": "Acústica arquitectónica de salas de conciertos",
   "excerpt": "Una monografía acústica espacial que examina las geometrías de viñedo versus caja de zapatos, fracciones de energía sonora lateral y conjuntos de difusores de residuos cuadráticos en salas sinfónicas.",
   "date": "2026-11-16",
   "author": "Mateo Silva",
@@ -20,7 +20,7 @@
     },
     {
       "type": "p",
-      "text": "En la arquitectura cívica monumental, las salas de conciertos representan la convergencia definitiva de la ingeniería estructural y la física sensorial. El acústico debe conciliar dos exigencias psicoacústicas diametralmente opuestas: claridad acústica (C80), que requiere reflexiones tempranas y directas del sonido dentro de ochenta milisegundos para la articulación melódica, y tiempo de reverberación (RT60), que requiere una decadencia difusa prolongada para envolver al oyente en calidez sonora y envoltura espacial."
+      "text": "En la arquitectura cívica monumental, las salas de conciertos representan la convergencia definitiva de la ingeniería estructural y la física sensorial. El acústico debe conciliar dos demandas psicoacústicas diametralmente opuestas: claridad acústica (C80), que requiere reflexiones tempranas y directas del sonido dentro de ochenta milisegundos para la articulación melódica, y tiempo de reverberación (RT60), que requiere una decadencia difusa prolongada para envolver al oyente en calidez sonora y envoltura espacial."
     },
     {
       "type": "h2",
@@ -69,5 +69,5 @@
       "text": "Para evitar ecos especulares y reflejos fluctuantes, las salas modernas incorporan paneles difusores Schroeder fresados ​​por computadora calculados a partir de secuencias de módulos de números primos. Estas microtexturas dispersan ondas sonoras de forma isotrópica a lo largo del espectro audible, creando una transparencia acústica impresionante."
     }
   ],
-  "sourceHash": "30629aabd8eeccea71454bd33a8a9a4619973707"
+  "sourceHash": "faff6b1705ea8e51155f0ed01bb096ef5224bded"
 }

@@ -1,0 +1,70 @@
+{
+  "slug": "swiss-style-and-international-typographic-systems",
+  "title": "La geometría del estilo suizo",
+  "excerpt": "Los principios revolucionarios del estilo tipográfico internacional: matemáticas de cuadrícula asimétrica, tipografía sans-serif objetiva y claridad visual.",
+  "date": "2026-11-17",
+  "author": "Julian Rivera",
+  "tags": [
+    "typography",
+    "graphic-design",
+    "swiss-style",
+    "grid-systems",
+    "modernism",
+    "visual-design"
+  ],
+  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Composición gráfica arquitectónica limpia de carteles que muestra tipografía y diseño de cuadrícula geométrica limpia",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El rechazo de la subjetividad decorativa"
+    },
+    {
+      "type": "p",
+      "text": "Originado en Zurich y Basilea durante la década de 1950 bajo pioneros como Josef Müller-Brockmann y Armin Hofmann, el estilo suizo, o estilo tipográfico internacional, redefinió la comunicación moderna. Rechazó los ornamentos decorativos en favor de la claridad objetiva, el racionalismo riguroso y la precisión matemática."
+    },
+    {
+      "type": "h2",
+      "text": "Principios arquitectónicos básicos"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "La cuadrícula matemática: estructuración del espacio gráfico con columnas modulares y matrices de referencia para garantizar una jerarquía visual rítmica.",
+        "Tipografía al ras a la izquierda y desigual a la derecha: abandonar los bloques justificados para mantener el espaciado óptico natural entre letras y el ritmo de las palabras.",
+        "Fuentes Sans-Serif objetivas: defender tipos de letra neutrales como Akzidenz-Grotesk, Univers y Helvetica para transmitir información sin sesgos ideológicos.",
+        "Espacio en blanco activo: Tratar el espacio negativo como un componente estructural intencional que guía la atención cognitiva del espectador."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El sistema de red es una ayuda, no una garantía. Permite múltiples usos posibles y cada diseñador puede buscar una solución adecuada a su estilo personal.",
+      "cite": "Josef Müller-Brockmann, Sistemas de cuadrícula en diseño gráfico"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Fachada de hormigón modernista con ritmo de ventana geométrico repetido",
+      "caption": "Ritmo estructural modular: la contraparte arquitectónica de los sistemas de cuadrícula tipográfica en el modernismo de mediados de siglo."
+    },
+    {
+      "type": "h2",
+      "text": "Legado duradero en UI/UX contemporáneo"
+    },
+    {
+      "type": "p",
+      "text": "Desde los sistemas de diseño de Apple, Braun y Google hasta los motores de diseño web responsivos contemporáneos, el compromiso suizo con la claridad tipográfica y la proporción matemática sigue siendo la filosofía estética dominante de las interfaces digitales modernas."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/4tN4CQg9QuU",
+      "title": "¿Qué es el diseño gráfico de estilo suizo? Explicación de la tipografía moderna",
+      "caption": "Documental de artes visuales sobre el ascenso histórico del diseño suizo, la mecánica de cuadrículas modulares y los maestros tipográficos legendarios."
+    },
+    {
+      "type": "p",
+      "text": "Al eliminar la ornamentación superflua, la tipografía suiza logra una verdad visual duradera que trasciende las tendencias estéticas fugaces."
+    }
+  ],
+  "sourceHash": "e023884c7cdbc2bd71f014746b14021ae22ff4fb"
+}

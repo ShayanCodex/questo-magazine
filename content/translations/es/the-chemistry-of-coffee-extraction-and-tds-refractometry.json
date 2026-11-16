@@ -1,0 +1,74 @@
+{
+  "slug": "the-chemistry-of-coffee-extraction-and-tds-refractometry",
+  "title": "La ciencia de la extracción del café",
+  "excerpt": "Una investigación de la termodinámica química del café de especialidad: sólidos disueltos totales (TDS), óptica del índice de refracción brix, porcentajes de rendimiento de extracción de solubles y física de distribución de molienda.",
+  "date": "2026-11-17",
+  "author": "Sofia Rossi",
+  "tags": [
+    "food-chemistry",
+    "coffee-science",
+    "extraction",
+    "culinary-physics",
+    "gastronomy",
+    "thermodynamics"
+  ],
+  "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Café de especialidad artesanal que gotea a través de un matraz con filtro de vidrio transparente en una cafetería de especialidad de alta gama",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La termodinámica de la extracción de compuestos solubles"
+    },
+    {
+      "type": "p",
+      "text": "Los granos de café tostados se componen de aproximadamente un 70 % de estructuras de celulosa insolubles y un 30 % de compuestos químicos solubles en agua, incluidos ácidos de frutas, ésteres aromáticos volátiles, cafeína y melanoidinas amargas. Cuando el agua caliente entra en contacto con el café molido, la extracción se produce en una secuencia química no lineal: los ácidos orgánicos brillantes (málico, cítrico) se disuelven casi instantáneamente, seguidos de los azúcares dulces y los compuestos de la reacción de Maillard, y finalmente los productos de degradación del ácido clorogénico, astringentes pesados."
+    },
+    {
+      "type": "h2",
+      "text": "Parámetros clave de metrología y extracción"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sólidos disueltos totales (TDS): la fracción de masa de sólidos de café disueltos en el líquido preparado, medida con precisión mediante refractómetros ópticos que calculan los ángulos de refracción de la luz.",
+        "Porcentaje de rendimiento de extracción (EY): El porcentaje de masa de café molido seco extraída en la taza (EY = TDS * Masa de preparación / Masa de dosis), con la especialidad ideal reposando estrictamente entre 18% y 22%.",
+        "Distribuciones bimodales del tamaño de molienda: Molinillos de rebabas de alta gama diseñados para producir picos de partículas ajustados y al mismo tiempo minimizar los finos que causan canalización y sobreextracción amarga.",
+        "Estequiometría de la química del agua: Equilibra las proporciones de cationes de magnesio (Mg2+) y calcio (Ca2+) para unir los átomos de oxígeno volátiles del sabor mientras se mantiene la capacidad tampón de bicarbonato para preservar la acidez."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Preparar café no es una intuición culinaria; es una extracción en fase sólido-líquido donde la superficie de las partículas, la mineralogía del agua y el tiempo de contacto dictan el rendimiento molecular del sabor.",
+      "cite": "Laboratorio de Extracción de Café y Química Culinaria Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Taza de café especial que muestra crema dorada y espresso humeante junto a un refractómetro óptico digital",
+      "caption": "Refractometría óptica: medición digital del índice de refracción que arroja porcentajes exactos de TDS para la calibración de recetas."
+    },
+    {
+      "type": "h2",
+      "text": "Canalización de la dinámica en el espresso de alta presión"
+    },
+    {
+      "type": "p",
+      "text": "Bajo 9 bares de presión de la bomba hidrostática, el agua busca agresivamente el camino de menor resistencia a través del disco de café compactado. Las fisuras microscópicas (canalizaciones) provocan una sobreextracción localizada de ácidos quínicos amargos junto con una extracción insuficiente de azúcares dulces. Los baristas modernos utilizan herramientas de aguja con la técnica de distribución Weiss (WDT) para lograr una porosidad isotrópica del disco."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/YOMsbSb6pis",
+      "title": "Ciencia del café: una guía sobre refractómetros de café y TDS",
+      "caption": "Guía educativa sobre cafés especiales que explica cómo los refractómetros digitales miden los sólidos disueltos totales y calculan el rendimiento de la extracción."
+    },
+    {
+      "type": "h2",
+      "text": "La revolución de la precisión en la gastronomía moderna"
+    },
+    {
+      "type": "p",
+      "text": "Al tratar la extracción a través de la lente de la química analítica, los tostadores de café y los baristas pueden marcar de manera determinista las cervezas, eliminando el amargor y la acidez para resaltar el terroir, la genética varietal y los métodos de procesamiento de las granjas de origen."
+    }
+  ],
+  "sourceHash": "4de2eeaa75ba010e6722667fa2d299341ed68330"
+}

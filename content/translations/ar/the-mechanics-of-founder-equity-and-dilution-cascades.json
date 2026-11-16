@@ -1,7 +1,7 @@
 {
   "slug": "the-mechanics-of-founder-equity-and-dilution-cascades",
-  "title": "آليات حقوق الملكية للمؤسس: جداول الحد الأقصى، وتفضيلات التصفية وشلالات التخفيف",
-  "excerpt": "فحص رياضي صارم للأدوات القابلة للتحويل، وخلطات مجمعة الخيارات، والعلامات المائية للتصفية، وميكانيكا مكافحة التخفيف.",
+  "title": "آليات حقوق المؤسس",
+  "excerpt": "فحص رياضي صارم للأدوات القابلة للتحويل، وخلطات مجموعة الخيارات، والعلامات المائية للتصفية، وميكانيكا مكافحة التخفيف.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -12,7 +12,7 @@
     "startups"
   ],
   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Modern glass skyscraper headquarters representing venture finance and corporate equity governance",
+  "imageAlt": "مقر ناطحة سحاب زجاجية حديثة يمثل تمويل المشاريع وحوكمة أسهم الشركات",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "رياضيات جداول الرسملة"
+      "text": "الآليات الهيكلية للتخفيف في المرحلة المبكرة"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Executive venture financing agreement and capitalization table term sheet modeling",
-      "caption": "Option pool shuffle: pre-money ESOP allocation concentrating dilution risk entirely upon founding common equity."
+      "alt": "آليات أسهم المؤسس: جداول رأس المال وتفضيلات التصفية وسلاسل التخفيف - الشكل التشغيلي 4",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم آليات أسهم المؤسس: جداول رأس المال وتفضيلات التصفية وشلالات التخفيف."
     },
     {
       "type": "ul",
       "items": [
-        "The Option Pool Shuffle: Expanding employee stock ownership plans (ESOP) immediately prior to rather than following a financing round systematically shifts dilution entirely onto existing common stockholders.",
-        "Convertible Valuation Caps vs Discounts: Early SAFEs that convert into subsequent priced equity without pre-money consensus can inadvertently trigger massive ownership compression for founders.",
-        "Liquidation Preference Watermarks: 1x non-participating preferred shares establish a floor of downside protection, whereas participating preferred structures grant investors double-dipping rights into residual common value.",
-        "Broad-Based Weighted Average Antidilution: Mathematical adjustment formulas protect preferred series in down-rounds while mitigating the destructive wipeout risk of full-ratchet provisions."
+        "خلط مجمع الخيارات: يؤدي توسيع خطط ملكية أسهم الموظفين (ESOP) مباشرة قبل جولة التمويل بدلاً من اتباعها إلى تحويل التخفيف بالكامل إلى المساهمين العاديين الحاليين.",
+        "الحدود القصوى للتقييم القابلة للتحويل مقابل الخصومات: يمكن أن تؤدي السندات الآمنة المبكرة التي تتحول إلى أسهم مسعرة لاحقة دون إجماع مسبق على النقد إلى ضغط هائل على ملكية المؤسسين عن غير قصد.",
+        "العلامات المائية المفضلة للتصفية: 1x أسهم ممتازة غير مشاركة تنشئ حدًا أدنى من الحماية من الجانب السلبي، في حين تمنح الهياكل المفضلة المشاركة المستثمرين حقوق الغمس المزدوج في القيمة المشتركة المتبقية.",
+        "مكافحة التخفيف المتوسط ​​​​المرجح واسع النطاق: تعمل صيغ التعديل الرياضي على حماية السلسلة المفضلة في الجولات السفلية مع تخفيف خطر المسح المدمر لأحكام السقاطة الكاملة."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Corporate governance board meeting evaluating liquidation waterfall payouts and dilution curves",
-      "caption": "Liquidation waterfalls: modeling payout thresholds across non-participating preferred seniority tranches."
+      "alt": "آليات حقوق ملكية المؤسس: جداول رأس المال وتفضيلات التصفية وسلاسل التخفيف - الشكل التشغيلي 7",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم آليات أسهم المؤسس: جداول رأس المال وتفضيلات التصفية وسلاسل التخفيف."
     },
     {
       "type": "h2",
-      "text": "رياضيات جداول الرسملة"
+      "text": "نمذجة الشلال والطوارئ"
     },
     {
       "type": "p",
-      "text": "في دورة الحياة المبكرة لمشاريع التكنولوجيا، غالبًا ما يتم التعامل مع جداول الرسملة على أنها دفاتر محاسبية ثابتة بدلاً من أنظمة ديناميكية للمطالبات التفاضلية. مع تقدم الشركات من السندات القابلة للتحويل قبل التأسيس من خلال الجولات المفضلة المتعاقبة، فإن التأثيرات المركبة لتوسعات مجموعة الخيارات غير المخصصة، والمضاعفات المفضلة المشاركة، وتفضيلات التصفية العليا تخلق عدم خطية عميقة في تحقيق الأسهم النهائية."
+      "text": "عندما تفشل قيمة الخروج من المؤسسة في تجاوز إجمالي رأس المال المفضل المستثمر بالإضافة إلى الأرباح التراكمية، فإن ميكانيكا الشلال تملي أن تحصل الأسهم العادية على عائد صفر بغض النظر عن مدة التشغيل. يقوم المؤسسون المتمرسون بوضع نموذج لتوزيعات التصفية عبر منحنيات التقييم المستمر، وتقييم مرونة الدفع قبل الموافقة على شروط الحوكمة الصارمة أو شرائح أقدمية التصفية."
     },
     {
       "type": "video",
-      "title": "Venture Capital Cap Table Mechanics and Liquidation Preference Analysis",
-      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution.",
-      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E",
+      "title": "ميكانيكا جدول رأس المال الاستثماري وتحليل تفضيلات التصفية",
+      "caption": "شرح كمي تفصيلي لتحويل الأسهم المفضلة، وأولوية شلال التصفية، وتخفيف المؤسس."
     },
     {
       "type": "h2",
-      "text": "رياضيات جداول الرسملة"
+      "text": "الحفاظ على التوافق التنفيذي على المدى الطويل"
     },
     {
       "type": "p",
-      "text": "في دورة الحياة المبكرة لمشاريع التكنولوجيا، غالبًا ما يتم التعامل مع جداول الرسملة على أنها دفاتر محاسبية ثابتة بدلاً من أنظمة ديناميكية للمطالبات التفاضلية. مع تقدم الشركات من السندات القابلة للتحويل قبل التأسيس من خلال الجولات المفضلة المتعاقبة، فإن التأثيرات المركبة لتوسعات مجموعة الخيارات غير المخصصة، والمضاعفات المفضلة المشاركة، وتفضيلات التصفية العليا تخلق عدم خطية عميقة في تحقيق الأسهم النهائية."
+      "text": "تتطلب الحوكمة المستدامة للشركات وضع نماذج شفافة لتسلسلات التخفيف منذ البداية. من خلال الحفاظ على فئات الأسهم النظيفة، وتجنب مواثيق المشاركة غير القياسية، وإجراء عمليات محاكاة شكلية صارمة ومتعددة الجولات، تحمي الفرق التنفيذية الاستقلالية التشغيلية مع إنشاء توزيع شفاف للقيمة عبر جميع أصحاب المصلحة من المؤسسات والموظفين."
     }
   ],
-  "sourceHash": "e62f37573d49b9a50ddc0354e6511265a37bc9f3"
+  "sourceHash": "108116cf63485f8b18c824787539dd90c178a43b"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "skeletal-muscle-capillarization-and-angiogenic-signaling",
-  "title": "Capilarización del músculo esquelético y señalización angiogénica en atletas de ultrarresistencia",
-  "excerpt": "Examinando las cascadas de VEGF, la mecanotransducción del estrés cortante y la cinética de difusión microvascular que gobiernan el rendimiento aeróbico en el límite fisiológico.",
+  "title": "Capilarización muscular en resistencia",
+  "excerpt": "Examinar las cascadas de VEGF, la mecanotransducción del estrés cortante y la cinética de difusión microvascular que gobiernan el rendimiento aeróbico en el límite fisiológico.",
   "date": "2026-11-16",
   "author": "Liam O’Connor",
   "tags": [
@@ -36,7 +36,7 @@
       "type": "ul",
       "items": [
         "Factor de crecimiento endotelial vascular (VEGF): la citocina angiogénica maestra, transcrita en respuesta al factor inducible por hipoxia muscular 1α (HIF-1α) y al estiramiento mecánico.",
-        "Estrés de cizallamiento capilar: el flujo sanguíneo microvascular elevado durante el ejercicio prolongado estimula la óxido nítrico sintasa endotelial (eNOS), lo que desencadena la digestión de las metaloproteinasas de la matriz y la brotación de vasos.",
+        "Estrés de cizallamiento capilar: el flujo sanguíneo microvascular elevado durante el ejercicio prolongado estimula la óxido nítrico sintasa endotelial (eNOS), lo que desencadena la digestión de la metaloproteinasa de la matriz y la brotación de vasos.",
         "Relación capilar-fibra: los individuos no entrenados poseen de 1,1 a 1,4 capilares por fibra muscular, mientras que los esquiadores de fondo de élite exhiben proporciones superiores a 2,4 a 2,8.",
         "Tiempo de tránsito de los glóbulos rojos: la superficie capilar expandida prolonga el tiempo de tránsito de los eritrocitos dentro del lecho muscular, asegurando la descarga completa de oxihemoglobina a pesar del gasto cardíaco astronómico."
       ]
@@ -69,5 +69,5 @@
       "text": "La exposición hipóxica intermitente (entrenamiento en altitud) magnifica la activación transcripcional de HIF-1α, aumentando las cascadas angiogénicas inducidas por el ejercicio. Por el contrario, el consumo excesivo de altas dosis de antioxidantes exógenos (vitaminas C y E) inmediatamente después del ejercicio debilita la señalización fisiológica de las especies reactivas de oxígeno, lo que amortigua la adaptación capilar y la remodelación vascular adaptativa."
     }
   ],
-  "sourceHash": "057d9e594a260d92132a45c3e3d0c0b13671e770"
+  "sourceHash": "70f2528849943ecbfa2619fdda553efdfa25dfb6"
 }

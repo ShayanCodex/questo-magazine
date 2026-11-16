@@ -1,7 +1,7 @@
 {
   "slug": "vagus-nerve-stimulation-and-heart-rate-variability-autonomics",
-  "title": "وگس اعصابی محرک اور دل کی دھڑکن کی تغیر پزیر آٹونومک ڈائنامکس",
-  "excerpt": "پیراسیمپیتھیٹک اندام نہانی ٹون، سانس کی ہڈیوں کی اریتھمیا، بیرورسیپٹر حساسیت، اور تناؤ کے موافقت کے بائیو مارکر کے بارے میں نیورو کارڈیالوجی کی تحقیقات۔",
+  "title": "Vagus Nerve Stimulation & HRV Dynamics",
+  "excerpt": "A neurocardiology investigation into parasympathetic vagal tone, respiratory sinus arrhythmia, baroreceptor sensitivity, and stress adaptation biomarkers.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -12,62 +12,62 @@
     "preventive-medicine"
   ],
   "image": "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "نرم، ہپنوٹک گھومنے والی سمندری لہریں جو توازن اور پیراسیمپیتھٹک جسمانی ہم آہنگی کو ظاہر کرتی ہیں",
+  "imageAlt": "Gentle, hypnotic rolling ocean waves illustrating equilibrium and parasympathetic physiological harmony",
   "body": [
     {
       "type": "h2",
-      "text": "نیورو کارڈیک ایکسس: ویگل بریکنگ اور خود مختار توازن"
+      "text": "The Neurocardiac Axis: Vagal Braking and Autonomic Balance"
     },
     {
       "type": "p",
-      "text": "وسیع پیمانے پر پھیلے ہوئے تاثر کے برعکس، ایک صحت مند انسانی دل میکینیکل پریمیٹیشن کے ساتھ نہیں دھڑکتا ہے۔ ایک لچکدار خود مختار اعصابی نظام میں، لگاتار دل کی دھڑکنوں (R-R وقفوں) کے درمیان وقفے پیچیدہ، فریکٹل تغیر کو ظاہر کرتے ہیں جسے ہارٹ ریٹ ویری ایبلٹی (HRV) کہا جاتا ہے۔ یہ بیٹ ٹو بیٹ اتار چڑھاؤ بنیادی طور پر دسویں کرینیل اعصاب کے ذریعہ ترتیب دیا جاتا ہے: گھومنے والا وگس اعصاب، جس کے پیراسیمپیتھیٹک ایفیرینٹ ریشے سائنوٹریل نوڈ پر جسمانی بریک کے طور پر کام کرتے ہیں۔"
+      "text": "Contrary to widespread lay perception, a healthy human heart does not beat with the mechanical precision of a metronome. In a resilient autonomic nervous system, the intervals between successive heartbeats (R-R intervals) exhibit complex, fractal variability known as Heart Rate Variability (HRV). This beat-to-beat fluctuation is orchestrated primarily by the tenth cranial nerve: the wandering vagus nerve, whose parasympathetic efferent fibers act as a physiological brake upon the sinoatrial node."
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "Key Points"
     },
     {
       "type": "ul",
       "items": [
-        "یکے بعد دیگرے فرقوں کا جڑ کا مطلب مربع (RMSSD): ایک توثیق شدہ ٹائم ڈومین میٹرک جو ہمدردانہ لہجے سے آزاد بیٹ ٹو بیٹ ویگل ماڈیولیشن کی عکاسی کرتا ہے۔",
-        "سانس لینے والی سائنوس اریتھمیا (RSA): دل کی دھڑکن قدرتی طور پر سانس لینے (اندام نہانی سے نکلنے) کے دوران تیز ہوتی ہے اور آہستہ سانس چھوڑنے (اندام نہانی کی فعالیت) کے دوران سست ہوجاتی ہے۔",
-        "Cholinergic anti-inflammatory Pathway: Efferent vagal stimulation acetylcholine کو جاری کرتا ہے جو macrophages پر الفا-7 نیکوٹینک ریسیپٹرز کو باندھتا ہے، سوزش والی سائٹوکائن کی پیداوار کو روکتا ہے۔",
-        "Transcutaneous Auricular Vagus Stimulation (taVNS): اوریکولر وگس برانچ کا غیر حملہ آور برقی محرک برین اسٹیم لوکس کوریلیئس نوریپینفرین کی رہائی کو ماڈیول کرتا ہے۔"
+        "Root Mean Square of Successive Differences (RMSSD): A validated time-domain metric reflecting beat-to-beat vagal modulation independent of sympathetic tone.",
+        "Respiratory Sinus Arrhythmia (RSA): Heart rate naturally accelerates during inhalation (vagal withdrawal) and decelerates during slow exhalation (vagal activation).",
+        "The Cholinergic Anti-Inflammatory Pathway: Efferent vagal stimulation releases acetylcholine that binds alpha-7 nicotinic receptors on macrophages, halting inflammatory cytokine production.",
+        "Transcutaneous Auricular Vagus Stimulation (taVNS): Non-invasive electrical stimulation of the auricular vagus branch modulates brainstem locus coeruleus norepinephrine release."
       ]
     },
     {
       "type": "quote",
-      "text": "ہائی دل کی دھڑکن کی تغیر عصبی موافقت کی جسمانی علامت ہے۔ ایک سخت دل کی دھڑکن ایک خود مختار اعصابی نظام کی نشاندہی کرتی ہے جو دائمی ہمدردانہ تکلیف میں بند ہے۔",
-      "cite": "جرنل آف نیورو کارڈیالوجی اینڈ آٹونومک نیورو سائنس"
+      "text": "High heart rate variability is the physiological signature of neural adaptability. A rigid heartbeat indicates an autonomic nervous system locked in chronic sympathetic distress.",
+      "cite": "Journal of Neurocardiology & Autonomic Neuroscience"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=1200&q=80",
-      "alt": "شاندار سمندری کچھوا قدرتی ہومیوسٹاسس کی حالت میں پرسکون گہرے سمندری دھاروں کے ذریعے پرامن طور پر گلائیڈ کر رہا ہے",
-      "caption": "خود مختار سکون: بحالی پیراسیمپیتھٹک اندام نہانی غلبہ کے ساتھ ہمدردانہ سرگرمی کو متوازن کرنا۔"
+      "alt": "Majestic sea turtle gliding peacefully through tranquil deep ocean currents in state of natural homeostasis",
+      "caption": "Autonomic tranquility: balancing sympathetic activation with restorative parasympathetic vagal dominance."
     },
     {
       "type": "h2",
-      "text": "سست رفتار گونجنے والی سانس لینے اور Baroreflex Entrainment"
+      "text": "Slow-Paced Resonant Breathing and Baroreflex Entrainment"
     },
     {
       "type": "p",
-      "text": "تقریباً چھ سانس فی منٹ (0.1 ہرٹز) کی رفتار سے سانس لینے سے پلمونری وینٹیلیشن کو عروقی مائر کی لہروں کے ساتھ ہم آہنگ کرتا ہے، بیوروسیپٹر کی حساسیت کو زیادہ سے زیادہ بڑھاتا ہے اور بڑے پیمانے پر گڑبڑ پیدا کرتا ہے۔"
+      "text": "Pacing respiration at approximately six breaths per minute (0.1 Hz) synchronizes pulmonary ventilation with vascular Mayer waves, maximizing baroreceptor sensitivity and generating massive increases in parasympathetic vagal tone."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "نیورو کارڈیالوجی، ایچ آر وی بائیو مارکرز، اور خود مختار اعصابی نظام کا ضابطہ",
-      "caption": "میڈیکل سائنس لیکچر آن آٹونومک اعصابی نظام اناٹومی، الیکٹرو فزیالوجی، اور غیر فارماسولوجیکل تناؤ کی مداخلت۔"
+      "title": "Neurocardiology, HRV Biomarkers, and Autonomic Nervous System Regulation",
+      "caption": "Medical science lecture on autonomic nervous system anatomy, electrophysiology, and non-pharmacological stress interventions."
     },
     {
       "type": "h2",
-      "text": "لمبی عمر اور ذہنی توازن کے لیے کلینیکل بائیو مارکر"
+      "text": "Clinical Biomarkers for Longevity and Mental Equilibrium"
     },
     {
       "type": "p",
-      "text": "صبح کی رات کے HRV کا سراغ لگانا ڈاکٹروں اور کھلاڑیوں کو جسمانی بحالی، نظاماتی سوزش، اور اعصابی تناؤ کے موافقت کا ایک ناقابل استعمال مقصد بائیو مارکر فراہم کرتا ہے۔"
+      "text": "Tracking morning nocturnal HRV provides physicians and athletes with an unhackable objective biomarker of physiological recovery, systemic inflammation, and neural stress adaptation."
     }
   ],
-  "sourceHash": "dd4051b4c0db41f985a3e197eea31caed985cf20"
+  "sourceHash": "7eec0a70a27a6975460b0402bbd426694f6853a6"
 }

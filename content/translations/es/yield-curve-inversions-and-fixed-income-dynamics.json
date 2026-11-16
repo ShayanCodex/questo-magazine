@@ -1,0 +1,70 @@
+{
+  "slug": "yield-curve-inversions-and-fixed-income-dynamics",
+  "title": "Inversiones de la curva de rendimiento y macro",
+  "excerpt": "La mecánica financiera de la inversión de los diferenciales del Tesoro: primas por plazo, hipótesis de expectativas, márgenes de interés neto de los bancos y pronóstico de contracciones macroeconómicas.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "tags": [
+    "finance",
+    "yield-curve",
+    "macroeconomics",
+    "bonds",
+    "interest-rates",
+    "banking"
+  ],
+  "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Visualización del mercado de operaciones financieras con rendimientos de los bonos del Tesoro y tendencias de las velas",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El barómetro más confiable del mercado de bonos"
+    },
+    {
+      "type": "p",
+      "text": "En condiciones económicas normales, los bonos a más largo plazo ofrecen rendimientos más altos que la deuda a corto plazo para compensar a los inversores por el riesgo de inflación y la volatilidad de la duración. Cuando el rendimiento del bono del Tesoro a 2 años supera el del bono del Tesoro a 10 años, la curva de rendimiento se invierte, un estado anómalo que ha precedido a todas las recesiones de Estados Unidos desde 1955."
+    },
+    {
+      "type": "h2",
+      "text": "Mecánica detrás de la compresión del diferencial"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "La hipótesis de las expectativas: Los inversores que anticipan futuros recortes de las tasas de interés del banco central ofertan agresivamente bonos a largo plazo, lo que deprime los rendimientos a largo plazo.",
+        "Política monetaria estricta: Las agresivas subidas de tipos de interés de la Reserva Federal anclan los rendimientos del mercado monetario a corto plazo cerca de máximos cíclicos.",
+        "Compresión del margen de interés neto: los bancos piden prestado a corto plazo y prestan a largo plazo; una curva invertida destruye la rentabilidad de los préstamos comerciales y asfixia la creación de crédito.",
+        "Ajuste del mercado crediticio: Los estándares de préstamos comerciales se endurecen rápidamente a medida que los bancos retiran sus líneas de crédito industriales y de bienes raíces comerciales."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La curva de tipos no provoca recesiones; refleja la conclusión colectiva del mercado de que la política del banco central se ha endurecido demasiado hasta llegar a territorio restrictivo.",
+      "cite": "Centro Questo para la Estrategia Macroeconómica Global"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Terminal financiera global que muestra diferenciales de bonos multiactivos y tipos de cambio",
+      "caption": "Análisis de diferenciales del Tesoro: seguimiento de los diferenciales de rendimiento a 10 años menos 2 años y a 10 años menos 3 meses en tiempo real."
+    },
+    {
+      "type": "h2",
+      "text": "La zona de peligro: la no inversión"
+    },
+    {
+      "type": "p",
+      "text": "Históricamente, los shocks económicos más severos no ocurren mientras la curva está invertida, sino durante la fase de 'no inversión' o de pronunciamiento, cuando los recortes de emergencia de las tasas del banco central indican que el deterioro del mercado laboral ya está en marcha."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/bYmzy1ZVqxQ",
+      "title": "Explicación de la curva de rendimiento: inversión, señales de recesión y macro",
+      "caption": "Desglose educativo en economía financiera de los rendimientos de los bonos, mecánica de inversión de diferenciales y pronóstico macroeconómico."
+    },
+    {
+      "type": "p",
+      "text": "Comprender la topología de la curva de rendimiento proporciona a los inversores institucionales un indicador de tiempo de entrega crítico para la presupuestación de riesgos a lo largo de los ciclos económicos."
+    }
+  ],
+  "sourceHash": "4d4796b04b5f6fb38e7233542141e6307c9bdf5f"
+}

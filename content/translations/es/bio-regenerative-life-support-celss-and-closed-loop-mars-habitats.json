@@ -1,6 +1,6 @@
 {
   "slug": "bio-regenerative-life-support-celss-and-closed-loop-mars-habitats",
-  "title": "Soporte vital bioregenerativo de circuito cerrado: fotobiorreactores de algas, hidroponía y metanación Sabatier en Marte",
+  "title": "Soporte vital de circuito cerrado para Marte",
   "excerpt": "Un análisis de ingeniería de sistemas aeroespaciales de sistemas de soporte vital ecológico controlado (CELSS): reciclaje de oxígeno fotobiorreactivo, destilación al vacío de aguas grises y síntesis de alimentos con carbono negativo para puestos de avanzada planetarios.",
   "date": "2026-11-17",
   "author": "Mateo Silva",
@@ -31,7 +31,7 @@
       "type": "ul",
       "items": [
         "Módulos de fotobiorreactor de algas: cultivos de espirulina (Arthrospira platensis) y Chlorella que consumen CO2 exhalado por astronautas para sintetizar proteínas comestibles mientras generan oxígeno presurizado de grado médico a través de la fotosíntesis.",
-        "Reducción de CO2 y catálisis de metano de Sabatier: reacción de CO2 metabólico con hidrógeno subproducto a 400°C sobre un catalizador de rutenio para generar agua limpia y combustible de metano.",
+        "Reducción de CO2 y catálisis de metano de Sabatier: Reacción de CO2 metabólico con hidrógeno subproducto a 400 °C sobre un catalizador de rutenio para generar agua limpia y combustible de metano.",
         "Recuperación de agua por destilación por compresión de vapor (VCD): Recuperación del 98% de la orina y el sudor de la tripulación a través de reactores de oxidación catalítica y compresión de vapor mecánica de múltiples etapas.",
         "Agricultura vertical aeropónica LED: cultivo de trigo, tubérculos y legumbres enanos bajo espectros de radiación fotosintética activa (PAR) sintonizados sin suelo, reciclando sales nutritivas de materia orgánica sólida compostada."
       ]
@@ -70,5 +70,5 @@
       "text": "Las severas limitaciones de recursos del soporte de vida extraterrestre producen beneficios directos para la Tierra. Las tecnologías diseñadas para el reciclaje de circuito cerrado marciano ya están revolucionando la agricultura árida afectada por la sequía, la purificación del agua fuera de la red y la arquitectura urbana circular neutra en carbono en todo el mundo."
     }
   ],
-  "sourceHash": "5526a7ab8c4fff44dad4100220c73b2e425c7544"
+  "sourceHash": "8b242147174359f346b9f2748c9644b1fd205db7"
 }

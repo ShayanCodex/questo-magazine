@@ -1,7 +1,7 @@
 {
   "slug": "aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators",
-  "title": "Aérodynamique F1 : génération d'épandage, contre-dépouilles des sidepods et scellement par effet de sol",
-  "excerpt": "Analyse télémétrique haute résolution de la répartition de la force d'appui, perte de vortex le long des jupes de plancher du bord de fuite et compromis en matière de refroidissement des freins thermiques dans le sport automobile moderne.",
+  "title": "F1 Aérodynamique et effets de sol",
+  "excerpt": "Analyse télémétrique haute résolution de la répartition de la force d'appui, de la perte de vortex le long des jupes de plancher du bord de fuite et des compromis en matière de refroidissement des freins thermiques dans le sport automobile moderne.",
   "date": "2026-11-16",
   "author": "Liam O’Connor",
   "tags": [
@@ -12,11 +12,11 @@
     "telemetry"
   ],
   "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "High-speed Formula 1 car apex cornering through chicane with ground effect underfloor suction",
+  "imageAlt": "Sommet d'une voiture de Formule 1 à grande vitesse dans les virages à travers une chicane avec aspiration sous le plancher à effet de sol",
   "body": [
     {
       "type": "h2",
-      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+      "text": "La mécanique des tunnels Venturi modernes à effet de sol"
     },
     {
       "type": "p",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+      "text": "Physique des flux clés de l'aérodynamique de la Formule 1"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Carbon-fiber sidepod undercut sculpting and rear diffuser expansion tunnel",
-      "caption": "Underfloor Venturi throat: accelerated mass airflow generating massive negative pressure beneath the chassis."
+      "alt": "Sculpture en contre-dépouille des pontons en fibre de carbone et tunnel d'expansion du diffuseur arrière",
+      "caption": "Gorge Venturi sous le plancher : flux d'air massique accéléré générant une pression négative massive sous le châssis."
     },
     {
       "type": "ul",
       "items": [
-        "Venturi Suction & Bernoulli Principle: Restricting underfloor cross-sectional area forces incoming air to accelerate rapidly, generating immense negative pressure that suctions the chassis toward the asphalt.",
-        "Sidepod Undercut Channeling: Deep volumetric carving beneath sidepod radiators directs clean, unseparated airflow over the top of the rear diffuser, boosting mass expansion ratios.",
-        "Vortex Edge Sealing: Engineered floor edges utilize vortex generators to shed high-energy rotational air streams along floor perimeters, acting as an invisible aerodynamic skirt to prevent ambient air ingress.",
-        "Porpoising & Aerodynamic Stall: When extreme downforce compresses suspension past critical ride-height thresholds, the underfloor stalls abruptly, triggering catastrophic cyclical vehicle bouncing."
+        "Principe d'aspiration Venturi et de Bernoulli : la restriction de la section transversale du plancher force l'air entrant à accélérer rapidement, générant une immense pression négative qui aspire le châssis vers l'asphalte.",
+        "Canalisation en contre-dépouille des sidepods : une sculpture volumétrique profonde sous les radiateurs des sidepods dirige un flux d'air propre et non séparé sur le dessus du diffuseur arrière, augmentant ainsi les taux d'expansion de masse.",
+        "Scellement des bords Vortex : les bords de sol d'ingénierie utilisent des générateurs de vortex pour évacuer des flux d'air rotatifs à haute énergie le long des périmètres du sol, agissant comme une jupe aérodynamique invisible pour empêcher l'entrée d'air ambiant.",
+        "Marsouinage et décrochage aérodynamique : lorsqu'une force d'appui extrême comprime la suspension au-delà des seuils critiques de hauteur de caisse, le plancher cale brusquement, déclenchant des rebonds cycliques catastrophiques du véhicule."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Pitlane aerodynamics telemetry monitors showing real-time ride-height sensors and downforce distribution",
-      "caption": "Vortex edge sealing: floor perimeter strakes shedding high-energy vortices to isolate underfloor negative pressure."
+      "alt": "Moniteurs de télémétrie aérodynamique de la voie des stands affichant des capteurs de hauteur de caisse en temps réel et la répartition de la force d'appui",
+      "caption": "Scellement des bords des vortex : les virures du périmètre du plancher éliminent les vortex à haute énergie pour isoler la pression négative sous le plancher."
     },
     {
       "type": "h2",
-      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+      "text": "Dynamique des fluides computationnelle (CFD) et corrélation"
     },
     {
       "type": "p",
-      "text": "Dans le sport automobile monoplace d'élite, le développement aérodynamique est une bataille incessante pour extraire l'appui tout en minimisant la traînée parasite et la sensibilité aérodynamique au tangage et au roulis du véhicule. Suite à la réintroduction de tunnels Venturi entièrement souterrains dans les règlements techniques contemporains de la Formule 1, le point central de la performance est passé des ailettes complexes au-dessus de la carrosserie à la gestion du flux d'air massique à travers des canaux convergents-divergents sous la carrosserie."
+      "text": "Étant donné que les réglementations sportives imposent des restrictions strictes en matière d'essais aérodynamiques (ATR) sur l'occupation de la soufflerie et les heures de calcul intensif des GPU, les équipes d'ingénierie s'appuient fortement sur les Reynolds-Averaged Navier-Stokes (URANS) et les simulations à grandes échelles (LES) instables. La corrélation de la modélisation de la turbulence virtuelle avec la télémétrie physique des traces nécessite une détection continue de la hauteur de caisse au laser et un étalonnage du réseau de tubes de Pitot."
     },
     {
       "type": "video",
-      "title": "Formula 1 Aerodynamics Explained: Venturi Tunnels, Vortices, and Floor Sealing",
-      "caption": "Detailed fluid dynamics walkthrough of ground effect downforce generation and sidepod airflow conditioning.",
-      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w"
+      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w",
+      "title": "Explication de l'aérodynamique de la Formule 1 : tunnels Venturi, vortex et étanchéité du sol.",
+      "caption": "Présentation détaillée de la dynamique des fluides, de la génération de force d'appui par effet de sol et du conditionnement du flux d'air des pontons."
     },
     {
       "type": "h2",
-      "text": "La mécanique des tunnels Venturi à effet de sol modernes"
+      "text": "L'interaction entre la gestion thermique et l'efficacité aérodynamique"
     },
     {
       "type": "p",
-      "text": "Dans le sport automobile monoplace d'élite, le développement aérodynamique est une bataille incessante pour extraire l'appui tout en minimisant la traînée parasite et la sensibilité aérodynamique au tangage et au roulis du véhicule. Suite à la réintroduction de tunnels Venturi entièrement souterrains dans les règlements techniques contemporains de la Formule 1, le point central de la performance est passé des ailettes complexes au-dessus de la carrosserie à la gestion du flux d'air massique à travers des canaux convergents-divergents sous la carrosserie."
+      "text": "Chaque millimètre carré de surface aérodynamique représente un compromis délibéré entre le temps au tour induit par la traînée et le refroidissement thermique pour les groupes motopropulseurs hybrides, les turbocompresseurs et les freins en carbone-céramique. Les voitures gagnantes des championnats du sport automobile moderne sont celles qui maîtrisent la couche limite invisible où se rencontrent la dynamique des fluides et l’emballage mécanique."
     }
   ],
-  "sourceHash": "69041648c357f2adf487a524662232a5d79362fb"
+  "sourceHash": "0d0448d25dd966e4925273b73436fcd53f0751a1"
 }

@@ -1,0 +1,70 @@
+{
+  "slug": "yield-curve-inversions-and-fixed-income-dynamics",
+  "title": "Yield Curve Inversions & Macro",
+  "excerpt": "The financial mechanics of treasury spread inversion: term premia, expectations hypothesis, bank net interest margins, and forecasting macroeconomic contractions.",
+  "date": "2026-11-17",
+  "author": "Claire Fontaine",
+  "tags": [
+    "finance",
+    "yield-curve",
+    "macroeconomics",
+    "bonds",
+    "interest-rates",
+    "banking"
+  ],
+  "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Financial trading market display with treasury bond yields and candlestick trends",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Bond Market's Most Reliable Barometer"
+    },
+    {
+      "type": "p",
+      "text": "Under normal economic conditions, longer-dated bonds offer higher yields than short-dated debt to compensate investors for inflation risk and duration volatility. When the yield on the 2-Year Treasury note surpasses that of the 10-Year Treasury note, the yield curve inverts—an anomalous state that has preceded every United States recession since 1955."
+    },
+    {
+      "type": "h2",
+      "text": "Mechanics Behind the Spread Compression"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The Expectations Hypothesis: Investors anticipating future central bank interest rate cuts aggressively bid up long-dated bonds, depressing long yields.",
+        "Tight Monetary Policy: Aggressive Federal Reserve policy rate hikes anchor short-term money market yields near cyclical highs.",
+        "Net Interest Margin Compression: Banks borrow short and lend long; an inverted curve destroys commercial lending profitability, choking credit creation.",
+        "Credit Market Tightening: Commercial loan standards rapidly tighten as banks pull back on commercial real estate and industrial credit lines."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The yield curve does not cause recessions; it reflects the market's collective conclusion that central bank policy has overtightened into restrictive territory.",
+      "cite": "Questo Center for Global Macroeconomic Strategy"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Global financial terminal displaying multi-asset bond spreads and exchange rates",
+      "caption": "Treasury spread analytics: Tracking the 10-Year minus 2-Year and 10-Year minus 3-Month yield differentials in real time."
+    },
+    {
+      "type": "h2",
+      "text": "The Danger Zone: The Un-Inversion"
+    },
+    {
+      "type": "p",
+      "text": "Historically, the most severe economic shocks occur not while the curve is inverted, but during the 'un-inversion' or steepening phase, when emergency emergency central bank rate cuts signal that labor market deterioration is already underway."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/bYmzy1ZVqxQ",
+      "title": "The Yield Curve Explained: Inversion, Recession Signals & Macro",
+      "caption": "Financial economics educational breakdown of bond yields, spread inversion mechanics, and macroeconomic forecasting."
+    },
+    {
+      "type": "p",
+      "text": "Understanding yield curve topology provides institutional investors with a critical lead-time indicator for risk budgeting across business cycles."
+    }
+  ],
+  "sourceHash": "4d4796b04b5f6fb38e7233542141e6307c9bdf5f"
+}

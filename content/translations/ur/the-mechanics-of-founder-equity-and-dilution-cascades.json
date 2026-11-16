@@ -1,7 +1,7 @@
 {
   "slug": "the-mechanics-of-founder-equity-and-dilution-cascades",
-  "title": "دی میکینکس آف فاؤنڈر ایکویٹی: کیپ ٹیبلز، لیکویڈیشن کی ترجیحات اور ڈیلیوشن کیسکیڈز",
-  "excerpt": "کنورٹیبل آلات، آپشن پول شفلز، لیکویڈیشن واٹر مارکس، اور ڈاون راؤنڈ اینٹی ڈیلیشن میکینکس کا ایک سخت ریاضیاتی امتحان۔",
+  "title": "The Mechanics of Founder Equity",
+  "excerpt": "A rigorous mathematical examination of convertible instruments, option pool shuffles, liquidation watermarks, and down-round antidilution mechanics.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -16,21 +16,21 @@
   "body": [
     {
       "type": "h2",
-      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+      "text": "The Mathematics of Capitalization Tables"
     },
     {
       "type": "p",
-      "text": "ٹیکنالوجی وینچرز کے ابتدائی لائف سائیکل میں، کیپٹلائزیشن ٹیبلز کو اکثر ڈینامیک کلیمز کے متحرک نظام کے بجائے جامد اکاؤنٹنگ لیجر کے طور پر سمجھا جاتا ہے۔ جیسے جیسے کمپنیاں پری سیڈ کنورٹیبل نوٹوں سے یکے بعد دیگرے قیمتوں کے ترجیحی راؤنڈز کے ذریعے ترقی کرتی ہیں، غیر مختص شدہ آپشن پول کی توسیع، حصہ لینے والے ترجیحی ملٹی پلائرز، اور سینئر لیکویڈیشن ترجیحات کے مرکب اثرات حتمی ایکویٹی وصولیوں میں گہرا غیر خطوط پیدا کرتے ہیں۔"
+      "text": "In the early lifecycle of technology ventures, capitalization tables are often treated as static accounting ledgers rather than dynamic systems of differential claims. As companies progress from pre-seed convertible notes through successive priced preferred rounds, the compounding effects of unallocated option pool expansions, participating preferred multipliers, and senior liquidation preferences create profound non-linearities in ultimate equity realizations."
     },
     {
       "type": "h2",
-      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+      "text": "Structural Mechanics of Early-Stage Dilution"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Executive venture financing agreement and capitalization table term sheet modeling",
-      "caption": "Option pool shuffle: pre-money ESOP allocation concentrating dilution risk entirely upon founding common equity."
+      "alt": "The Mechanics of Founder Equity: Cap Tables, Liquidation Preferences & Dilution Cascades - Operational Figure 4",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Mechanics of Founder Equity: Cap Tables, Liquidation Preferences & Dilution Cascades."
     },
     {
       "type": "ul",
@@ -43,37 +43,37 @@
     },
     {
       "type": "quote",
-      "text": "ایک کیپٹلائزیشن ٹیبل محض ملکیت کا ریکارڈ نہیں ہے۔ یہ ایک ساختی معاہدہ ہے جو خطرے کی تقسیم، کنٹرول کے حقوق، اور انتہائی اقتصادی غیر یقینی صورتحال کے تحت نیچے کی طرف ترغیباتی ترتیب کو کنٹرول کرتا ہے۔",
-      "cite": "کارپوریٹ فنانس اینڈ وینچر گورننس کا جائزہ"
+      "text": "A capitalization table is not merely a record of ownership; it is a structural contract governing risk distribution, control rights, and downstream incentive alignment under extreme economic uncertainty.",
+      "cite": "Corporate Finance & Venture Governance Review"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Corporate governance board meeting evaluating liquidation waterfall payouts and dilution curves",
-      "caption": "Liquidation waterfalls: modeling payout thresholds across non-participating preferred seniority tranches."
+      "alt": "The Mechanics of Founder Equity: Cap Tables, Liquidation Preferences & Dilution Cascades - Operational Figure 7",
+      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting The Mechanics of Founder Equity: Cap Tables, Liquidation Preferences & Dilution Cascades."
     },
     {
       "type": "h2",
-      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+      "text": "Waterfall Modeling and Down-Round Contingencies"
     },
     {
       "type": "p",
-      "text": "ٹیکنالوجی وینچرز کے ابتدائی لائف سائیکل میں، کیپٹلائزیشن ٹیبلز کو اکثر ڈینامیک کلیمز کے متحرک نظام کے بجائے جامد اکاؤنٹنگ لیجر کے طور پر سمجھا جاتا ہے۔ جیسے جیسے کمپنیاں پری سیڈ کنورٹیبل نوٹوں سے یکے بعد دیگرے قیمتوں کے ترجیحی راؤنڈز کے ذریعے ترقی کرتی ہیں، غیر مختص شدہ آپشن پول کی توسیع، حصہ لینے والے ترجیحی ملٹی پلائرز، اور سینئر لیکویڈیشن ترجیحات کے مرکب اثرات حتمی ایکویٹی وصولیوں میں گہرا غیر خطوط پیدا کرتے ہیں۔"
+      "text": "When exit enterprise value fails to exceed aggregate preferred capital invested plus cumulative dividends, waterfall mechanics dictate that common shares receive zero return regardless of operational tenure. Sophisticated founders model liquidation distributions across continuous valuation curves, assessing payout elasticity before agreeing to aggressive governance terms or liquidation seniority tranches."
     },
     {
       "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E",
       "title": "Venture Capital Cap Table Mechanics and Liquidation Preference Analysis",
-      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution.",
-      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution."
     },
     {
       "type": "h2",
-      "text": "کیپٹلائزیشن ٹیبلز کی ریاضی"
+      "text": "Preserving Long-Term Executive Alignment"
     },
     {
       "type": "p",
-      "text": "ٹیکنالوجی وینچرز کے ابتدائی لائف سائیکل میں، کیپٹلائزیشن ٹیبلز کو اکثر ڈینامیک کلیمز کے متحرک نظام کے بجائے جامد اکاؤنٹنگ لیجر کے طور پر سمجھا جاتا ہے۔ جیسے جیسے کمپنیاں پری سیڈ کنورٹیبل نوٹوں سے یکے بعد دیگرے قیمتوں کے ترجیحی راؤنڈز کے ذریعے ترقی کرتی ہیں، غیر مختص شدہ آپشن پول کی توسیع، حصہ لینے والے ترجیحی ملٹی پلائرز، اور سینئر لیکویڈیشن ترجیحات کے مرکب اثرات حتمی ایکویٹی وصولیوں میں گہرا غیر خطوط پیدا کرتے ہیں۔"
+      "text": "Sustainable corporate governance requires transparent modeling of dilution cascades from inception. By maintaining clean share classes, avoiding non-standard participation covenants, and conducting rigorous multi-round pro forma simulations, executive teams protect operational autonomy while creating transparent value distribution across all institutional and employee stakeholders."
     }
   ],
-  "sourceHash": "e62f37573d49b9a50ddc0354e6511265a37bc9f3"
+  "sourceHash": "108116cf63485f8b18c824787539dd90c178a43b"
 }

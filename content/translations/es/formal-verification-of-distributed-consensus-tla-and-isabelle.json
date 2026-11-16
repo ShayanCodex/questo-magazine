@@ -1,7 +1,7 @@
 {
   "slug": "formal-verification-of-distributed-consensus-tla-and-isabelle",
-  "title": "Verificación formal del consenso distribuido: TLA+, Isabelle/HOL e invariantes mecanizados",
-  "excerpt": "Uniendo la especificación matemática y el software de producción: cómo la lógica temporal de las acciones, los mapeos de refinamiento y los demostradores interactivos de teoremas eliminan fallas bizantinas sutiles.",
+  "title": "Verificación formal de sistemas distribuidos",
+  "excerpt": "Uniendo la especificación matemática y el software de producción: cómo la lógica temporal de las acciones, los mapeos de refinamiento y los demostradores de teoremas interactivos eliminan las fallas bizantinas sutiles.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -36,7 +36,7 @@
       "type": "ul",
       "items": [
         "Lógica temporal de acciones (TLA+): el lenguaje de especificación matemática de Leslie Lamport modela sistemas como máquinas de estados impulsadas por lógica de primer orden y predicados de transición variables preparadas.",
-        "Verificación de modelos con TLC: exploración exhaustiva de estados discretos alcanzables para verificar invariantes de seguridad acotadas y la ausencia de interbloqueos antes de escribir una sola línea de código de producción.",
+        "Verificación de modelos con TLC: exploración exhaustiva de estados alcanzables discretos para verificar invariantes de seguridad acotadas y la ausencia de interbloqueos antes de escribir una sola línea de código de producción.",
         "Mapeos de refinamiento: prueba formal de que un algoritmo de implementación asincrónica de alto rendimiento implementa lógicamente la especificación de consenso abstracto idealizada.",
         "Demostración interactiva de teoremas (Isabelle/HOL & Coq): construcción de pruebas inductivas verificadas por máquina para tamaños de conglomerados ilimitados y reordenamientos de mensajes asincrónicos arbitrarios."
       ]
@@ -69,5 +69,5 @@
       "text": "La frontera de la ingeniería de sistemas reside en la compilación verificada: extraer binarios C, Rust o Go de alto rendimiento directamente de los asistentes de prueba sin gastos de traducción. Al certificar bases de datos distribuidas a nivel de código de máquina, la infraestructura de nube moderna logra inmunidad matemática contra taxonomías enteras de degradación del consenso distribuido."
     }
   ],
-  "sourceHash": "460521e002b33c5d156b2b1e97d9cf87d19226cf"
+  "sourceHash": "d28681d94f4cdc946f54b724263201fca5478027"
 }

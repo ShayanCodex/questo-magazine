@@ -1,7 +1,7 @@
 {
   "slug": "satellite-insar-geodesy-and-volcanic-magma-chamber-dynamics",
-  "title": "Interferometrisches Radar mit synthetischer Apertur (InSAR) und Dynamik der Magmakammer: Satellitengeodäsie der supervulkanischen Inflation",
-  "excerpt": "Eine Geophysik- und Satellitenfernerkundungsstudie: Radarinterferometrie-Phasenentfaltung, Mogi-Punktquellen-Dehnungsmodelle, atmosphärische Verzögerungskorrektur und präeruptive Magmadruckbeaufschlagung.",
+  "title": "Satellitenradar und Magmadynamik",
+  "excerpt": "Eine Geophysik- und Satellitenfernerkundungsstudie: Radarinterferometrie-Phasenentfaltung, Mogi-Punktquellen-Dehnungsmodelle, atmosphärische Verzögerungskorrektur und präeruptive Magma-Druckbeaufschlagung.",
   "date": "2026-11-17",
   "author": "Elena Rostova",
   "tags": [
@@ -31,8 +31,8 @@
       "type": "ul",
       "items": [
         "Interferogramm-Phasenstreifen: Jeder abwechselnde Regenbogenstreifen in einem Differentialinterferogramm entspricht einer halben Radarwellenlänge (typischerweise 2,8 cm für Sentinel-1-Satelliten im C-Band) der Oberflächenverschiebung in Sichtlinie.",
-        "Atmospheric Phase Screen (APS)-Korrektur: Abschwächung troposphärischer Wasserdampfverzögerungen mithilfe numerischer Wetter-Reanalysemodelle (wie ECMWF GACOS), um zu verhindern, dass Wolkenartefakte als tektonische Hebung getarnt werden.",
-        "Mogi & Yang Analytical Source Models: Invertieren von Oberflächendeformationsprofilen zur Berechnung der Tiefe, Volumenänderung und Seitenverhältnis von unter Druck stehenden Magmareservoirs, die sich 5 bis 15 Kilometer unter der Erde befinden.",
+        "Atmospheric Phase Screen (APS)-Korrektur: Abschwächung von Wasserdampfverzögerungen in der Troposphäre mithilfe numerischer Wetter-Reanalysemodelle (wie ECMWF GACOS), um zu verhindern, dass Wolkenartefakte als tektonische Hebung getarnt werden.",
+        "Mogi & Yang Analytical Source Models: Invertieren von Oberflächenverformungsprofilen zur Berechnung der Tiefe, Volumenänderung und Seitenverhältnis von unter Druck stehenden Magmareservoirs, die sich 5 bis 15 Kilometer unter der Erde befinden.",
         "Persistent Scatterer Interferometry (PSI): Verfolgung stabiler reflektierender Ziele (Felsvorsprünge, Infrastruktur) über Jahrzehnte, um Kriechen im Submillimeterbereich über komplexe tektonische Verwerfungen hinweg zu isolieren."
       ]
     },
@@ -49,17 +49,17 @@
     },
     {
       "type": "h2",
-      "text": "Von der Oberflächendehnung zur Vorhersage magmatischer Hydrofrakturen"
+      "text": "Von der Oberflächenspannung zur Vorhersage magmatischer Hydrofrakturen"
     },
     {
       "type": "p",
-      "text": "Wenn sich die Inflationsrate an der Oberfläche nichtlinear beschleunigt, übersteigt die Zugspannung im Wirtsgestein die Zugfestigkeit, was eine Deichausbreitung auslöst – geschmolzenes Magma spaltet Brüche zur Oberfläche hin. Durch die Kopplung kontinuierlicher InSAR-Geschwindigkeitskarten mit Echtzeit-Breitband-Seismometernetzwerken können Katastrophenschutzbehörden Wochen vor einem explosiven Ausbruch Evakuierungswarnungen ausgeben."
+      "text": "Wenn sich die Rate der Oberflächeninflation nichtlinear beschleunigt, übersteigt die Zugspannung im Wirtsgestein die Zugfestigkeit, was eine Deichausbreitung auslöst – geschmolzenes Magma spaltet Brüche zur Oberfläche hin. Durch die Kopplung kontinuierlicher InSAR-Geschwindigkeitskarten mit Echtzeit-Breitband-Seismometernetzwerken können Katastrophenschutzbehörden Wochen vor einem explosiven Ausbruch Evakuierungswarnungen ausgeben."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kc_T4buG2gE",
-      "title": "USGS-Geodäsie: Vulkandeformation und Magmakammerdynamik",
-      "caption": "Satellitenradarinterferometrie (InSAR) und geomechanische Modellierung zur Demonstration der Krusteninflation über unter Druck stehenden unterirdischen Magmareservoirs."
+      "title": "USGS Geodäsie: Vulkandeformation und Magmakammerdynamik",
+      "caption": "Satellitenradarinterferometrie (InSAR) und geomechanische Modellierung zur Demonstration der Krusteninflation über unter Druck stehenden Magmareservoirs unter der Oberfläche."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Über den Yellowstone- und Campi-Flegrei-Calderas zeigen langfristige InSAR-Aufzeichnungen kontinuierliche dekadische Zyklen von Hebung und Deflation ohne Eruption, bekannt als Bradyseismus. Mit InSAR können Geophysiker zwischen harmloser hydrothermaler Gasexpansion und gefährlicher Magmaneubildung in der Tiefe unterscheiden und so klare empirische Kriterien für die Minderung geologischer Risiken festlegen."
     }
   ],
-  "sourceHash": "7e81a8ba1da5cd0254de1a71416a0732f35df3b8"
+  "sourceHash": "56a95419b1674ce9432cdf9c71b0ff214cdf8144"
 }

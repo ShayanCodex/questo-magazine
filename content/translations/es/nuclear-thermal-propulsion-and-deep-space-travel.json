@@ -1,0 +1,70 @@
+{
+  "slug": "nuclear-thermal-propulsion-and-deep-space-travel",
+  "title": "Propulsión térmica nuclear",
+  "excerpt": "La termodinámica de los cohetes térmicos nucleares de núcleo sólido: combustible de uranio poco enriquecido de alto ensayo, propulsores criogénicos de hidrógeno y arquitecturas de tránsito rápido a Marte.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "tags": [
+    "aerospace",
+    "nuclear-propulsion",
+    "rocketry",
+    "deep-space",
+    "physics",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1517976487504-59a1a0812917?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "La boquilla del motor de cohete dispara una columna de plasma brillante contra el oscuro cielo nocturno",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Superar la ecuación del cohete químico"
+    },
+    {
+      "type": "p",
+      "text": "Los motores de cohetes químicos (LOX/Metano o LOX/LH2) están limitados por la energía de enlace fundamental de las reacciones químicas, alcanzando un máximo en un impulso específico (Isp) de alrededor de 450 segundos. Llegar a Marte con propulsión química requiere agotadoras trayectorias de tránsito de nueve meses que exponen a los astronautas a una debilitante radiación cósmica del espacio profundo y atrofia muscular. La propulsión térmica nuclear (NTP) rompe esta barrera."
+    },
+    {
+      "type": "h2",
+      "text": "Termodinámica de motores NTP de núcleo sólido"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Reactor de fisión HALEU: utiliza elementos combustibles cerámico-metálicos (cermet) de uranio poco enriquecido y de alto ensayo capaces de funcionar a 2700 Kelvin.",
+        "Hidrógeno líquido criogénico: bombeo de hidrógeno puro de bajo peso molecular (H2) a través del núcleo sobrecalentado del reactor, generando una expansión volumétrica masiva.",
+        "Duplicación de impulsos específicos: lograr un Isp de más de 900 segundos, el doble de eficiencia de los mejores motores de cohetes químicos que existen.",
+        "Reducción a la mitad del tiempo de tránsito: Reducir las ventanas de tránsito humano a Marte a 90-120 días, reduciendo drásticamente la exposición a la radiación y los requisitos de masa de soporte vital."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La propulsión térmica nuclear no es un refinamiento incremental; es el umbral de la física que transforma los viajes interplanetarios de misiones de supervivencia en rutas sostenibles.",
+      "cite": "Questo Laboratorio de ingeniería nuclear y propulsión en el espacio profundo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "La Tierra vista desde la órbita con paneles solares de naves espaciales en primer plano",
+      "caption": "Transferencia orbital de alta energía: quemaduras de propulsión nuclear que permiten quemaduras de inyección hiperbólica de alta velocidad para trayectorias planetarias exteriores."
+    },
+    {
+      "type": "h2",
+      "text": "Seguridad, contención de lanzamiento y pruebas DRACO"
+    },
+    {
+      "type": "p",
+      "text": "Los diseños NTP modernos permanecen completamente inertes y fríos durante el lanzamiento dentro de carenados de cohetes convencionales. El reactor de fisión sólo se enciende con tambores de control de berilio una vez que la nave espacial alcanza una órbita de almacenamiento nuclear segura y estable de larga duración por encima de los 700 kilómetros."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/g32ZhNow2_A",
+      "title": "Tecnología de 60 segundos: Propulsión térmica nuclear explicada por la NASA",
+      "caption": "Descripción general aeroespacial de la NASA que analiza la mecánica del calentamiento de hidrógeno líquido y los reactores de fisión para la exploración humana de Marte."
+    },
+    {
+      "type": "p",
+      "text": "Duplicar la velocidad de escape de los cohetes mediante propulsores de bajo peso molecular abre el sistema solar exterior para la exploración científica."
+    }
+  ],
+  "sourceHash": "4ffcb7e7b8c40198b0d15f98c9ecb86e92eac730"
+}

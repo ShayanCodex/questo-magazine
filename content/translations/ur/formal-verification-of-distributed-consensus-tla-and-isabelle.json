@@ -1,7 +1,7 @@
 {
   "slug": "formal-verification-of-distributed-consensus-tla-and-isabelle",
-  "title": "تقسیم شدہ اتفاق رائے کی باضابطہ تصدیق: TLA+، Isabelle/HOL اور میکانائزڈ انویریئنٹس",
-  "excerpt": "ریاضی کی تفصیلات اور پروڈکشن سافٹ ویئر کو پورا کرنا: اعمال کی دنیاوی منطق، اصلاحی نقشہ سازی، اور انٹرایکٹو تھیوریم پروورز کس طرح لطیف بازنطینی خرابیوں کو ختم کرتے ہیں۔",
+  "title": "Formal Verification of Distributed Systems",
+  "excerpt": "Bridging mathematical specification and production software: how temporal logic of actions, refinement mappings, and interactive theorem provers eliminate subtle Byzantine faults.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,62 +12,62 @@
     "consensus"
   ],
   "image": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "سافٹ ویئر انجینئرنگ کوڈ اور رسمی الگورتھم اسکرین پر ریاضیاتی ریاست کی مشین کی توثیق کی نمائندگی کرتے ہیں",
+  "imageAlt": "Software engineering code and formal algorithms on screen representing mathematical state machine verification",
   "body": [
     {
       "type": "h2",
-      "text": "غیر مطابقت پذیر تقسیم شدہ نظاموں میں تجرباتی جانچ کی حدود"
+      "text": "The Limits of Empirical Testing in Asynchronous Distributed Systems"
     },
     {
       "type": "p",
-      "text": "تقسیم شدہ کمپیوٹنگ میں، بے ترتیب دھندلاہٹ اور افراتفری انجینئرنگ کے ذریعے تجرباتی توثیق بنیادی طور پر ایک غیر متوقع طور پر قابل عمل ہے۔ نیٹ ورک پارٹیشنز، کلاک اسکیوز، اور غیر مطابقت پذیر میسج انٹرلیونگز ایک ایسی کفایتی ریاست کی جگہ بناتے ہیں جہاں حفاظت کی خلاف ورزیاں — جیسے کہ دوہری رہنما یا خاموش تقسیم دماغی کمٹٹس — اکثر ریاستی ٹرانزیشن کے کھربوں کے بعد ہی ظاہر ہوتے ہیں۔ رسمی تصدیق ریاضیاتی ثبوت کے ساتھ اسٹاکسٹک امید کی جگہ لے لیتی ہے۔"
+      "text": "In distributed computing, empirical validation through randomized fuzzing and chaos engineering is fundamentally incapable of proving the absence of concurrency anomalies. Network partitions, clock skews, and asynchronous message interleavings create an exponential state space where safety violations—such as dual leaders or silent split-brain commits—often manifest only after trillions of state transitions. Formal verification replaces stochastic optimism with mathematical proof."
     },
     {
       "type": "h2",
-      "text": "میکانائزڈ ڈسٹری بیوٹڈ پروف کے بنیادی ستون"
+      "text": "Core Pillars of Mechanized Distributed Proof"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&q=80",
-      "alt": "سافٹ ویئر آرکیٹیکچر میں کرپٹوگرافک تصدیق اور باضابطہ سیفٹی انویرینٹ اسٹیٹ لاک",
-      "caption": "رسمی تصدیق: میکانائزڈ انڈکٹیو انویرینٹس من مانی نیٹ ورک میں تاخیر کے تحت تقسیم شدہ حفاظت کی ضمانت دیتے ہیں۔"
+      "alt": "Cryptographic verification and formal safety invariant state locks in software architecture",
+      "caption": "Formal verification: Mechanized inductive invariants guarantee distributed safety under arbitrary network delays."
     },
     {
       "type": "ul",
       "items": [
-        "عارضی منطق آف ایکشنز (TLA+): لیسلی لیمپورٹ کی ریاضی کی تصریح زبان کے ماڈلز کے نظام کو ریاستی مشینوں کے طور پر جو فرسٹ آرڈر منطق اور پرائمڈ متغیر منتقلی کی پیشین گوئی سے چلتی ہے۔",
-        "TLC کے ساتھ ماڈل کی جانچ: پروڈکشن کوڈ کی ایک لائن لکھنے سے پہلے پابند حفاظتی انویریئنٹس اور تعطل کی عدم موجودگی کی تصدیق کرنے کے لیے مکمل طور پر مجرد قابل رسائی ریاستوں کو تلاش کرنا۔",
-        "ریفائنمنٹ میپنگ: باضابطہ طور پر یہ ثابت کرنا کہ ایک اعلی کارکردگی، غیر مطابقت پذیر عمل درآمد الگورتھم منطقی طور پر مثالی تجریدی اتفاق رائے کی تفصیلات کو لاگو کرتا ہے۔",
-        "انٹرایکٹو تھیوریم ثابت کرنا (Isabelle/HOL & Coq): مشین سے چیک شدہ، غیر محدود کلسٹر سائزز اور صوابدیدی غیر مطابقت پذیر پیغام کی دوبارہ ترتیب کے لیے دلکش ثبوت بنانا۔"
+        "Temporal Logic of Actions (TLA+): Leslie Lamport’s mathematical specification language models systems as state machines driven by first-order logic and primed variable transition predicates.",
+        "Model Checking with TLC: Exhaustively exploring discrete reachable states to verify bounded safety invariants and absence of deadlocks before writing a single line of production code.",
+        "Refinement Mappings: Formally proving that a high-performance, asynchronous implementation algorithm logically implements the idealized abstract consensus specification.",
+        "Interactive Theorem Proving (Isabelle/HOL & Coq): Constructing machine-checked, inductive proofs for unbounded cluster sizes and arbitrary asynchronous message re-orderings."
       ]
     },
     {
       "type": "quote",
-      "text": "رسمی ریاستی مشین کی تصریح کے بغیر کوڈ لکھنا محض اس امید کی مشق ہے کہ نیٹ ورک انسانی ریاضی سے زیادہ پیش گوئی کے ساتھ برتاؤ کرتا ہے۔",
-      "cite": "طارق محمود، میکانائزڈ سسٹمز مونوگراف"
+      "text": "Writing code without a formal state machine specification is merely an exercise in hoping that the network behaves more predictably than human mathematics.",
+      "cite": "Tariq Mahmood, Mechanized Systems Monograph"
     },
     {
       "type": "h2",
-      "text": "انڈکٹیو انویرینٹس اور آئرن کلیڈ ویریفائر آرکیٹیکچر"
+      "text": "Inductive Invariants and the IronClad Verifier Architecture"
     },
     {
       "type": "p",
-      "text": "انٹرایکٹو تھیوریم کو ثابت کرنے میں بنیادی چیلنج انڈکٹیو انویریئنٹس کی دریافت ہے — پیشین گوئیاں جو ابتدائی حالت میں ہوتی ہیں اور ہر قانونی منتقلی میں سختی سے محفوظ رہتی ہیں۔ Paxos اور Raft جیسے نظاموں میں، مرکزی حفاظتی خاصیت (معاہدہ) براہ راست متاثر کن نہیں ہے۔ اس کے لیے معاون انویرینٹس کی ضرورت ہوتی ہے جو کہ کورم انٹرسیکشنز جیتنے والے لیڈر لیز کو مستقل طور پر محفوظ رکھیں۔"
+      "text": "The fundamental challenge in interactive theorem proving is the discovery of inductive invariants—predicates that hold in the initial state and are strictly preserved across every legal transition. In systems like Paxos and Raft, the central safety property (agreement) is not directly inductive; it requires auxiliary invariants enforcing that quorum intersections perpetually preserve the winning leader lease."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
-      "title": "تقسیم شدہ نظاموں اور اتفاق رائے کی تبدیلیوں کی رسمی تصدیق",
-      "caption": "کمپیوٹر سائنس سمپوزیم جس میں TLA+ ماڈل چیکنگ، انڈکٹیو انویریئنٹس، اور میکانائزڈ ازابیل/HOL ثبوتوں کی تفصیل ہے۔"
+      "title": "Formal Verification of Distributed Systems and Consensus Invariants",
+      "caption": "Computer science symposium detailing TLA+ model checking, inductive invariants, and mechanized Isabelle/HOL proofs."
     },
     {
       "type": "h2",
-      "text": "میکانائزڈ پروف سے لے کر پروڈکشن کرنل تک"
+      "text": "From Mechanized Proofs to Production Kernels"
     },
     {
       "type": "p",
-      "text": "سسٹمز انجینئرنگ کی سرحد تصدیق شدہ تالیف میں مضمر ہے—زیرو ٹرانسلیشن اوور ہیڈ کے ساتھ پروف اسسٹنٹس سے براہ راست اعلی کارکردگی والے C، Rust، یا Go binaries کو نکالنا۔ تقسیم شدہ ڈیٹا بیسز کو مشین کوڈ کی سطح پر تصدیق کرتے ہوئے، جدید کلاؤڈ انفراسٹرکچر تقسیم شدہ اتفاق رائے کے انحطاط کے پورے درجہ بندی کے خلاف ریاضیاتی استثنیٰ حاصل کرتا ہے۔"
+      "text": "The frontier of systems engineering lies in verified compilation—extracting high-performance C, Rust, or Go binaries directly from proof assistants with zero translation overhead. By certifying distributed databases at the level of machine code, modern cloud infrastructure achieves mathematical immunity against entire taxonomies of distributed consensus degradation."
     }
   ],
-  "sourceHash": "460521e002b33c5d156b2b1e97d9cf87d19226cf"
+  "sourceHash": "d28681d94f4cdc946f54b724263201fca5478027"
 }

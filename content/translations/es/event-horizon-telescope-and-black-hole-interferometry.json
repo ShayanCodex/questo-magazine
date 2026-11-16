@@ -1,0 +1,70 @@
+{
+  "slug": "event-horizon-telescope-and-black-hole-interferometry",
+  "title": "Imágenes de agujeros negros supermasivos",
+  "excerpt": "La astrofísica de la interferometría de línea de base muy larga, que sincroniza radiotelescopios milimétricos en todo el planeta Tierra para resolver las estructuras de sombra del horizonte de eventos.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "astrophysics",
+    "black-holes",
+    "vlbi",
+    "astronomy",
+    "physics",
+    "relativity"
+  ],
+  "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Cosmos de campo estelar con un brillante disco de acreción gravitacional alrededor de una singularidad celeste",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Sintetizando una apertura de radio del tamaño de la Tierra"
+    },
+    {
+      "type": "p",
+      "text": "Resolver el horizonte de eventos de Messier 87 o Sagitario A* es equivalente a detectar una naranja en la superficie de la Luna desde la Tierra. Ningún telescopio óptico podría alcanzar por sí solo la resolución angular requerida. El Event Horizon Telescope (EHT) logra esto combinando observatorios de radio sincronizados en seis continentes en un telescopio virtual tan grande como nuestro planeta."
+    },
+    {
+      "type": "h2",
+      "text": "Piedras angulares técnicas del VLBI milimétrico"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Relojes atómicos máser de hidrógeno: Proporcionan una precisión de sincronización ultraestable de menos de picosegundos para etiquetar petabytes de datos de frente de onda astronómicos sin procesar.",
+        "Transparencia atmosférica de 1,3 milímetros: sintonización de receptores a 230 GHz para atravesar el polvo de sincrotrón galáctico y las nubes de humedad de la Tierra.",
+        "Correlación de datos de supercomputadoras: Procesamiento de discos duros enviados desde la Antártida y Atacama a través de supercomputadoras de correlación ASIC especializadas.",
+        "Imágenes interferométricas computacionales: utilización de modelos bayesianos dispersos y redes neuronales para reconstruir imágenes a partir de una cobertura de línea base de Fourier incompleta."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Convertimos el planeta Tierra en una única lupa cósmica para probar la relatividad general de Einstein en el límite último del espacio-tiempo.",
+      "cite": "Questo Astrophysics & High-Energy Gravitation Observatory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Antena parabólica de radiotelescopio submilimétrico de gran altitud apuntando al cielo estrellado",
+      "caption": "Conjunto submilimétrico de ALMA en el desierto de Atacama: la estación de anclaje en fases que proporciona máxima sensibilidad para observaciones globales de EHT."
+    },
+    {
+      "type": "h2",
+      "text": "Prueba del arrastre del marco métrico de Kerr"
+    },
+    {
+      "type": "p",
+      "text": "Las imágenes de sombras resultantes confirman directamente la geometría del anillo de fotones predicha por las ecuaciones de campo de Einstein para un agujero negro de Kerr giratorio, lo que demuestra una emisión Doppler relativista a lo largo del flujo de plasma de acreción que se aproxima."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/Q1bSDnuIPbo",
+      "title": "Veritasium: ¿Cómo tomaron realmente esta fotografía del agujero negro?",
+      "caption": "Derek Muller explora la interferometría de línea de base muy larga, la calibración de la fase del reloj atómico y la obtención de imágenes de la sombra del horizonte de eventos."
+    },
+    {
+      "type": "p",
+      "text": "La interferometría de línea de base muy larga continúa expandiéndose a orbitadores espaciales para revelar el movimiento temporal dinámico de los chorros de plasma de los agujeros negros."
+    }
+  ],
+  "sourceHash": "117c9997a3e6952ba5ee73457f3802fa05e2b798"
+}

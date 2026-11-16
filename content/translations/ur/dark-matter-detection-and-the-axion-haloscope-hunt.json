@@ -1,0 +1,74 @@
+{
+  "slug": "dark-matter-detection-and-the-axion-haloscope-hunt",
+  "title": "The Search for Dark Matter",
+  "excerpt": "A particle physics investigation into the invisible universe: the strong CP problem, Primakoff conversion mechanics, cryogenic microwave haloscopes, and the hunt for QCD axions.",
+  "date": "2026-11-17",
+  "author": "Julian Mercer",
+  "tags": [
+    "particle-physics",
+    "dark-matter",
+    "axions",
+    "cosmology",
+    "quantum-physics",
+    "astronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Deep astronomical space showing distant galactic clusters, gravitational lensing halos, and mysterious cosmic voids",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Gravitational Shadow of the Unseen Universe"
+    },
+    {
+      "type": "p",
+      "text": "Astrophysical observations across multiple independent scales—from the flat rotational velocity curves of spiral galaxies to gravitational lensing in the Bullet Cluster and the acoustic peaks of the Cosmic Microwave Background—demonstrate that ordinary baryonic matter constitutes less than 15% of all matter in the universe. The remaining 85% is dark matter: non-luminous, non-baryonic, and virtually collisionless."
+    },
+    {
+      "type": "h2",
+      "text": "The Axion Hypothesis and Haloscope Physics"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "The Strong CP Problem: In quantum chromodynamics (QCD), the neutron electric dipole moment is mysteriously zero, implying an unbroken symmetry unexplained by the Standard Model.",
+        "Peccei-Quinn Mechanism: Introducing a dynamic scalar field whose spontaneous symmetry breaking yields the axion: an ultra-light, neutral, extremely long-lived hypothetical particle.",
+        "The Primakoff Effect: In the presence of intense magnetic fields (8 to 14 Tesla), passing dark matter axions convert spontaneously into detectable microwave photons.",
+        "Dilution Refrigerator Haloscopes: Cooling resonant copper cavities below 20 millikelvin to reduce thermal Johnson noise, using SQUID and Josephson parametric amplifiers to detect single zeptowatt signals."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Dark matter is the cosmic scaffold upon which galaxies condensed. Finding the axion will solve both the deepest riddle of nuclear symmetry and the composition of the cosmos.",
+      "cite": "Questo Particle Physics & Cryogenic Haloscope Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-energy physics cryogenic dilution refrigerator setup with golden thermal shields and superconducting wiring",
+      "caption": "Quantum-limited microwave sensing: Scanning frequency bands inside high-Q resonant cavities chilled to near absolute zero."
+    },
+    {
+      "type": "h2",
+      "text": "Narrowing the Parameter Space at ADMX"
+    },
+    {
+      "type": "p",
+      "text": "Major international collaborations, such as the Axion Dark Matter Experiment (ADMX), systematically tune physical cavity rods to scan through micro-electronvolt mass ranges. If an axion matches the cavity resonance frequency, a minute electromagnetic power peak emerges above the quantum noise floor, providing conclusive discovery of our galaxy dark matter halo."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/e7yXqF32Yvw",
+      "title": "PBS Space Time: Are Axions the Secret to Dark Matter?",
+      "caption": "Astrophysicist Matt O'Dowd breaks down the strong CP problem, the Peccei-Quinn symmetry, and how cryogenic haloscopes hunt for axion particles."
+    },
+    {
+      "type": "h2",
+      "text": "A New Epoch in Fundamental Physics"
+    },
+    {
+      "type": "p",
+      "text": "Detecting axionic dark matter will instantly revolutionize both theoretical cosmology and high-energy physics, confirming that the universe is permeated by a continuous quantum condensate forged in the earliest microseconds after the Big Bang."
+    }
+  ],
+  "sourceHash": "821f3a3b0c241078f9224022093fb99175193a43"
+}

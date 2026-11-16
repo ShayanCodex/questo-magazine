@@ -1,6 +1,6 @@
 {
   "slug": "cosmic-microwave-background-polarization-and-b-mode-inflation",
-  "title": "Kosmische Mikrowellen-Hintergrundpolarisation: Ursprüngliche B-Mode-Gravitationswellen und kosmische Inflation",
+  "title": "Der kosmische Mikrowellenhintergrund und die Inflation",
   "excerpt": "Das ursprüngliche Echo des Urknalls entschlüsseln: Wie Tensorstörungen, Thomson-Streuung und kryogene Bolometer-Arrays nach kosmologischer Inflation suchen.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
@@ -36,7 +36,7 @@
       "type": "ul",
       "items": [
         "Thomson-Streuquadrupole: Die lineare Polarisation im CMB entsteht ausschließlich durch Quadrupol-Temperaturanisotropien, die während der Rekombination auf freie Elektronen einwirken.",
-        "E-Mode-Polarisation: Lockenfreie, gradientenartige Polarisationsmuster, die durch ursprüngliche Skalardichtestörungen erzeugt werden und mit außerordentlicher Präzision von WMAP und Planck kartiert werden.",
+        "E-Mode-Polarisation: Lockenfreie, gradientenartige Polarisationsmuster, die durch ursprüngliche Skalardichtestörungen erzeugt werden und mit außergewöhnlicher Präzision von WMAP und Planck kartiert werden.",
         "B-Mode-Polarisation: Divergenzfreie, kräuselartige Polarisationsmuster, deren Hauptquelle tensormetrische Störungen sind – ursprüngliche Gravitationswellen, die während der kosmischen Inflation erzeugt werden.",
         "Kontamination durch Gravitationslinsen: Zwischenliegende kosmische Strukturen linsen reine E-Moden gravitativ in sekundäre B-Moden, was komplizierte statistische De-Lensing-Algorithmen erfordert."
       ]
@@ -58,16 +58,16 @@
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
       "title": "Kosmische Inflation und die Suche nach ursprünglichen Gravitationswellen",
-      "caption": "Astrophysik-Seminar zur Erläuterung der CMB-Polarimetrie, Beschränkungen des Tensor-zu-Skalar-Verhältnisses und der Subtraktion von Vordergrundstaub."
+      "caption": "Astrophysik-Seminar zur Erläuterung der CMB-Polarimetrie, Beschränkungen des Tensor-zu-Skalar-Verhältnisses und der Staubsubtraktion im Vordergrund."
     },
     {
       "type": "h2",
-      "text": "Das Tensor-zu-Skalar-Verhältnis und die große vereinheitlichte Physik"
+      "text": "Das Tensor-zu-Skalar-Verhältnis und die große einheitliche Physik"
     },
     {
       "type": "p",
       "text": "Das ultimative Ziel der modernen CMB-Polarimetrie ist die Beschränkung des Tensor-zu-Skalar-Verhältnisses r. Die Festlegung einer Obergrenze für r schränkt direkt die Energieskala der kosmischen Inflation ein und bietet empirische Testgrundlagen für Verdichtungen der Stringtheorie und Grand Unified Theories bei Energien, die zwölf Größenordnungen außerhalb der Reichweite terrestrischer Teilchenbeschleuniger liegen."
     }
   ],
-  "sourceHash": "a6dc12ab94e18a7f58a375cffbb2a5755989504b"
+  "sourceHash": "d2026976065dd039c76567da775350556db2c1e5"
 }

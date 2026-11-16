@@ -1,7 +1,7 @@
 {
   "slug": "small-modular-reactors-and-gigawatt-ai-datacenters",
-  "title": "Kleine modulare Reaktoren und Mikronetze: Die Energietechnik, die Gigawatt-KI-Cluster antreibt",
-  "excerpt": "Innerhalb der kritischen Verbindung zwischen generativem Rechnen und Atomtechnik: Flüssigsalz-SMRs, Wärmeableitung im großen Maßstab und Hochspannungs-Gleichstromverbindungen, die Grenzrechenzentren der nächsten Generation mit Strom versorgen.",
+  "title": "Kleine modulare Reaktoren für KI-Cluster",
+  "excerpt": "Im kritischen Zusammenhang zwischen generativem Computing und Atomtechnik: Flüssigsalz-SMRs, Wärmeableitung im großen Maßstab und Hochspannungs-Gleichstromverbindungen, die Grenzrechenzentren der nächsten Generation mit Strom versorgen.",
   "date": "2026-11-16",
   "author": "Julian Mercer",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Die Integration gasgekühlter Hochtemperaturreaktoren ermöglicht Energiekaskaden mit doppeltem Zweck: Überhitzter Dampf treibt hocheffiziente Turbinen an, um Strom für GPUs zu erzeugen, während sekundäre minderwertige Kühlmittelkreisläufe saubere Wärmeenergie für die regionale Wasserstoffproduktion, Meerwasserentsalzung und Gewächshauslandwirtschaft bereitstellen."
     }
   ],
-  "sourceHash": "cb3a20ca41c4b839f7d10ac0e601613be6fc19fe"
+  "sourceHash": "64a8786a76228fabd39378a5a9294a6670706dff"
 }

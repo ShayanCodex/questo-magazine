@@ -1,0 +1,70 @@
+{
+  "slug": "tectonic-subduction-zones-and-ring-of-fire-volcanism",
+  "title": "La física de las zonas de subducción",
+  "excerpt": "La geodinámica de la subducción de placas litosféricas: fuerzas de atracción de losas, fusión por hidratación de la cuña del manto, zonas de Wadati-Benioff y peligros sísmicos de megaempuje.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "geology",
+    "plate-tectonics",
+    "subduction",
+    "earthquakes",
+    "volcanism",
+    "geophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Espectacular cresta montañosa volcánica con vapor geotérmico que se ventila contra fallas geológicas empinadas",
+  "body": [
+    {
+      "type": "h2",
+      "text": "El motor del reciclaje planetario"
+    },
+    {
+      "type": "p",
+      "text": "Las zonas de subducción son los incineradores planetarios donde la fría litosfera oceánica desciende nuevamente al manto convectivo de la Tierra. Responsable de generar las fosas oceánicas más profundas del planeta, los megaterremotos de magnitud 9+ más poderosos del mundo y arcos de estratovolcanes explosivos a lo largo del Anillo de Fuego del Pacífico, la subducción es el principal mecanismo impulsor de la deriva continental."
+    },
+    {
+      "type": "h2",
+      "text": "Fuerzas geofísicas que impulsan la subducción"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mecánica de atracción de losas: Corteza oceánica basáltica densa y enfriada que se transforma en eclogita ultradensa, empujando gravitacionalmente la placa posterior hacia la astenosfera.",
+        "Fusión del flujo de cuña del manto: minerales oceánicos hidratados que se deshidratan a 100 km de profundidad, lo que reduce el punto de fusión de la roca del manto de peridotita para formar magma andesítico explosivo.",
+        "Zonas sísmicas de Wadati-Benioff: Zonas planas de terremotos profundos que trazan el frágil núcleo interior de losas descendentes hasta 670 kilómetros de profundidad.",
+        "Prismas de acreción del antearco: sedimentos raspados de la placa oceánica descendente, acumulándose en enormes complejos geológicos caóticos a lo largo de las costas."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La Tierra es el único planeta conocido con tectónica de placas activa. Sin el motor de subducción lubricado por agua, los continentes y las atmósferas se estancarían.",
+      "cite": "Observatorio de Geofísica y Sismología Planetaria de Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Sismómetro de alta precisión y estación de geodesia GPS anclada en un lecho de roca escarpada de montaña",
+      "caption": "Monitoreo geodésico GPS continuo: medición de milímetros de acumulación de tensión elástica costera a lo largo de las zonas bloqueadas por fallas de megaempuje de Cascadia."
+    },
+    {
+      "type": "h2",
+      "text": "Ruptura por megaempuje y tsunamigénesis"
+    },
+    {
+      "type": "p",
+      "text": "Cuando la interfaz bloqueada entre la placa continental superior y la losa en subducción se rompe, se producen decenas de metros de desplazamiento vertical del fondo marino en cuestión de segundos, lanzando ondas de choque de tsunamis transoceánicos a través de las cuencas oceánicas."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VDx8-ZRoCCw",
+      "title": "Tectónica y geología de zonas de subducción: Introducción completa",
+      "caption": "Conferencia de ciencias geológicas que analiza la dinámica de las losas litosféricas, la fusión por deshidratación y la petrología de arco volcánico."
+    },
+    {
+      "type": "p",
+      "text": "El estudio de los depósitos de tsunamis paleosísmicos y los temblores de deslizamiento lento proporciona marcos vitales de alerta temprana para las poblaciones costeras de todo el mundo."
+    }
+  ],
+  "sourceHash": "05b0be7123de7cd5240cd745c7d40207713bc166"
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "solid-oxide-fuel-cells-and-high-temperature-electrolysis",
+  "title": "Pilas de combustible de óxido sólido",
+  "excerpt": "La física electroquímica de estado sólido de electrolitos de circonio estabilizados con itria, que convierten hidrógeno verde y biogás directamente en electricidad limpia a 800 °C.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "tags": [
+    "clean-energy",
+    "fuel-cells",
+    "electrochemistry",
+    "hydrogen",
+    "materials-science",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1517976487504-59a1a0812917?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Instalación industrial avanzada de generación de energía limpia con relucientes módulos y conductos de pilas de combustible",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Generación de energía electroquímica directa"
+    },
+    {
+      "type": "p",
+      "text": "Los motores de combustión y las turbinas de gas están fundamentalmente limitados por los límites de eficiencia de Carnot, perdiendo más de la mitad de la energía del combustible en forma de calor. Las pilas de combustible de óxido sólido (SOFC) evitan por completo la combustión y utilizan electrolitos cerámicos sólidos para oxidar electroquímicamente hidrógeno, gas natural o biogás directamente en electricidad con eficiencias eléctricas superiores al 60 % (y más del 85 % en sistemas combinados de calor y energía)."
+    },
+    {
+      "type": "h2",
+      "text": "Arquitectura cerámica de estado sólido"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Circonio estabilizado con itria (YSZ): un electrolito cerámico especializado que conduce aniones de oxígeno (O2-) a temperaturas elevadas (650 °C-800 °C) mientras aísla los electrones.",
+        "Ánodos Cermet de níquel-YSZ: Proporcionan una alta actividad catalítica para la oxidación de combustible y el reformado interno de hidrocarburos con vapor.",
+        "Cátodos de manganita de lantano (LSM) dopados con estroncio: división del oxígeno molecular atmosférico (O2) en iones de oxígeno a través de estructuras porosas de perovskita.",
+        "Electrólisis reversible de alta temperatura (SOEC): Funciona en modo inverso para dividir el vapor y el CO2 en hidrógeno verde y gas de síntesis con una eficiencia termodinámica récord."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La tecnología de óxido sólido convierte el combustible en electricidad a nivel atómico, entregando energía de carga base constante sin chimeneas de combustión ni turbinas giratorias.",
+      "cite": "Laboratorio de Física del Estado Sólido y Energía Electroquímica Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Horno de sinterización industrial de alta temperatura que sintetiza membranas cerámicas avanzadas",
+      "caption": "Fundición y sinterización de cintas cerámicas: fabricación de membranas de electrolitos YSZ planas con tolerancias de espesor submicrónicas."
+    },
+    {
+      "type": "h2",
+      "text": "Descarbonización de los centros de datos de IA de misión crítica"
+    },
+    {
+      "type": "p",
+      "text": "Dado que los centros de datos de hiperescala de IA exigen gigavatios de electricidad ininterrumpida, las microrredes SOFC proporcionan energía de carga base modular in situ que opera independientemente de las redes de transmisión municipales sobrecargadas."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/mdXWVi1u_yw",
+      "title": "Cómo Bloom Energy convierte el combustible en energía confiable para la IA",
+      "caption": "Documental sobre tecnología limpia industrial que examina pilas de combustible de óxido sólido, microrredes modulares y energía de carga base de centros de datos."
+    },
+    {
+      "type": "p",
+      "text": "La transición a la conversión electroquímica de estado sólido representa un salto cualitativo en la generación de energía limpia y confiable."
+    }
+  ],
+  "sourceHash": "25c8a323689c3d4cd2ef218b9caaac6f99c95aeb"
+}

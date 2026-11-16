@@ -1,0 +1,70 @@
+{
+  "slug": "quantum-radar-and-entangled-microwave-detection",
+  "title": "La física del radar cuántico",
+  "excerpt": "Cómo la iluminación cuántica utiliza pares de fotones ópticos-microondas entrelazados para detectar aviones furtivos a través de una intensa interferencia electromagnética de fondo.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "quantum-physics",
+    "quantum-radar",
+    "photonics",
+    "electromagnetism",
+    "radar",
+    "defense-tech"
+  ],
+  "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Red cuántica matemática brillante abstracta que representa estados de fotones de microondas entrelazados",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Más allá de los límites del radar clásico"
+    },
+    {
+      "type": "p",
+      "text": "Los sistemas de radar clásicos se basan en la transmisión de pulsos de microondas de alta potencia y en la detección de ecos reflejados coherentes. Los aviones furtivos derrotan este mecanismo mediante materiales facetados absorbentes de radar (RAM) y una geometría de forma que desvía los reflejos lejos del receptor. El radar cuántico reemplaza esta limitación utilizando iluminación cuántica: genera pares de fotones entrelazados donde un fotón sirve como loco interno y el segundo se emite a la atmósfera como una sonda de señal."
+    },
+    {
+      "type": "h2",
+      "text": "Mecanismos centrales de la iluminación cuántica"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Amplificadores paramétricos Josephson: circuitos superconductores que funcionan a temperaturas de mikelvin y que dividen los fotones de la bomba de microondas en pares de señal-inactivos entrelazados.",
+        "Convertidores electrooptomecánicos: conversión del entrelazamiento de láser óptico en frecuencias de microondas adecuadas para la propagación atmosférica.",
+        "Recepción cuántica correlacionada: medición de la discordia cuántica y las correlaciones de estado cuántico entre el idler almacenado y los fotones de señal que regresan.",
+        "Inmunidad a interferencias: el ruido electromagnético térmico y las interferencias artificiales no pueden falsificar firmas de entrelazamiento cuántico, aislando retornos de objetivos auténticos."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Incluso cuando el ruido térmico de fondo destruye el entrelazamiento macroscópico, las correlaciones cuánticas que sobreviven siguen siendo detectables con significación estadística.",
+      "cite": "Laboratorio de radar y electrodinámica cuántica Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Instrumentación de medición de microondas cuánticas superconductoras en un laboratorio criogénico",
+      "caption": "Configuración del amplificador paramétrico criogénico Josephson: Preservación de la coherencia de las microondas cuánticas sub-kelvin antes de la transmisión atmosférica."
+    },
+    {
+      "type": "h2",
+      "text": "Sobrevivir a la decoherencia atmosférica"
+    },
+    {
+      "type": "p",
+      "text": "El desafío fundamental del radar cuántico es la pérdida atmosférica: la lluvia, la niebla y los fotones térmicos degradan rápidamente los delicados estados cuánticos. Sin embargo, la iluminación cuántica no requiere que el entrelazamiento en sí sobreviva el viaje de ida y vuelta. El entrelazamiento inicial otorga una ventaja demostrable en la relación señal-ruido de 3 a 6 dB sobre la iluminación clásica, suficiente para exponer objetivos invisibles al radar."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/wgJ3VQU7tc8",
+      "title": "Explicación del radar cuántico: el futuro de la tecnología de detección",
+      "caption": "Una descripción técnica concisa de la iluminación cuántica, el entrelazamiento de microondas y las ventajas tácticas sobre los conjuntos en fase tradicionales."
+    },
+    {
+      "type": "p",
+      "text": "Al detectar discordia cuántica en lugar de solo la amplitud de la onda, el radar cuántico redefine el reconocimiento electrónico en entornos de alto ruido."
+    }
+  ],
+  "sourceHash": "a210658b3218280d0bdf2f96cc9237cb4f7266f9"
+}

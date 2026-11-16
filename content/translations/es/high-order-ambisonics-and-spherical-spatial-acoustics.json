@@ -1,0 +1,70 @@
+{
+  "slug": "high-order-ambisonics-and-spherical-spatial-acoustics",
+  "title": "Ambisónica de alto orden y audio 3D",
+  "excerpt": "Descomposición de campos sonoros acústicos de 360 ​​grados utilizando armónicos esféricos, ecuaciones polares de formato B y funciones de transferencia relacionadas con la cabeza para una inmersión en realidad virtual.",
+  "date": "2026-11-17",
+  "author": "Orion Kaelen",
+  "tags": [
+    "sound",
+    "acoustics",
+    "spatial-audio",
+    "ambisonics",
+    "virtual-reality",
+    "audio-engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Consola de mezclas de estudio de grabación acústica profesional con monitores de audio espacial y formas de onda",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Desacoplamiento de campos sonoros de diseños de altavoces"
+    },
+    {
+      "type": "p",
+      "text": "El sonido envolvente tradicional (5.1 o 7.1) envía pistas de audio discretas a posiciones fijas de los altavoces. Si falta un hablante o los oyentes se desvían del centro, la ilusión espacial colapsa. Ambisonics, inventado por Michael Gerzon, trata el audio como un campo de ondas esférico continuo, descomponiendo el sonido en tres dimensiones mediante funciones matemáticas armónicas esféricas."
+    },
+    {
+      "type": "h2",
+      "text": "Fundamentos acústicos de la ambisónica de orden superior (HOA)"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Formato B de primer orden: Representa los vectores de presión (W, omnidireccional) y velocidad de las partículas a lo largo de tres ejes ortogonales (X: adelante-atrás, Y: izquierda-derecha, Z: arriba-abajo).",
+        "Expansión de orden superior: el aumento de los órdenes armónicos esféricos (segundo, tercer, hasta séptimo orden) reduce la resolución angular espacial, agudizando la localización acústica.",
+        "Decodificación independiente del altavoz: una única mezcla ambisónica se puede decodificar dinámicamente en un domo de 64 altavoces, una sala de estar 5.1 o auriculares binaurales en tiempo real.",
+        "Síntesis binaural HRTF: campos sonoros ambisónicos convolucionales con funciones de transferencia relacionadas con la cabeza para simular reflejos del pabellón auricular y retrasos de tiempo interaurales para realidad virtual."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Los ambisónicos de orden superior capturan no sólo eventos sonoros, sino también la arquitectura geométrica precisa del espacio en el que reverberan.",
+      "cite": "Laboratorio de sonido inmersivo y acústica espacial Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Conjunto de micrófonos 3D esféricos de múltiples cápsulas configurados para grabación de campo de 360 ​​grados",
+      "caption": "Conjuntos de micrófonos tetraédricos y esféricos: grabación de gradientes de presión acústica espacial con cápsulas de condensador combinadas."
+    },
+    {
+      "type": "h2",
+      "text": "Seguimiento de la cabeza en tiempo real y realidad virtual"
+    },
+    {
+      "type": "p",
+      "text": "En la realidad virtual, cuando un usuario gira la cabeza, la matriz de coordenadas ambisónicas gira en tiempo real con una latencia inferior a 10 ms. La fuente de sonido permanece anclada en el espacio 3D, proporcionando señales neurológicas que engañan a la corteza auditiva para que experimente una verdadera inmersión."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/yPhJj1RZfA0",
+      "title": "Explicación del audio espacial de séptimo orden y micrófonos ambisónicos",
+      "caption": "Revisión de ingeniería acústica que explica conjuntos de micrófonos esféricos, decodificación de formato B y resolución espacial en audio inmersivo."
+    },
+    {
+      "type": "p",
+      "text": "HOA permite a los ingenieros de sonido capturar el alma acústica de una catedral y reproducirla binauralmente con precisión milimétrica."
+    }
+  ],
+  "sourceHash": "f7227dc527393079c1bef92ea9b04afab79c7960"
+}

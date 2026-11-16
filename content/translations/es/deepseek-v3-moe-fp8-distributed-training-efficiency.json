@@ -1,7 +1,7 @@
 {
   "slug": "deepseek-v3-moe-fp8-distributed-training-efficiency",
-  "title": "Atención latente de múltiples cabezales y DualPipe: la arquitectura detrás de DeepSeek-V3 y una eficiencia 10x en pesos abiertos",
-  "excerpt": "Deconstrucción de los avances algorítmicos de DeepSeek-V3: atención latente de múltiples cabezales (MLA), expertos enrutados DeepSeekMoE 256, cálculo superpuesto de DualPipe y la economía matemática del entrenamiento de precisión mixta del FP8.",
+  "title": "La arquitectura de DeepSeek-V3",
+  "excerpt": "Deconstrucción de los avances algorítmicos de DeepSeek-V3: atención latente de múltiples cabezales (MLA), expertos enrutados de DeepSeekMoE 256, cálculo superpuesto DualPipe y la economía matemática del entrenamiento de precisión mixta del FP8.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Los clústeres distribuidos de mezcla de expertos suelen sufrir una latencia de comunicación grave entre todos cuando enrutan tokens a través de redes InfiniBand. El algoritmo de programación DualPipe de DeepSeek divide las etapas de la canalización bidireccional en microlotes emparejados, lo que garantiza que durante la ventana exacta, los núcleos tensores de GPU calculen multiplicaciones de matrices y las tarjetas de interfaz de red transfieran de forma asincrónica cargas útiles de tokens expertos."
     }
   ],
-  "sourceHash": "cbaa68302f386c96f6108b1c87adbb506da37e23"
+  "sourceHash": "54e9176200b049abc2456cf3cea5484dfd4b4983"
 }

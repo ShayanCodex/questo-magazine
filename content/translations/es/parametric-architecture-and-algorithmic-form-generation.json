@@ -1,0 +1,70 @@
+{
+  "slug": "parametric-architecture-and-algorithmic-form-generation",
+  "title": "La lógica del diseño paramétrico",
+  "excerpt": "Cómo la programación visual, los algoritmos generativos y la física computacional simulan cargas estructurales y la iluminación natural para dar forma a fachadas arquitectónicas biomiméticas.",
+  "date": "2026-11-17",
+  "author": "Julian Rivera",
+  "tags": [
+    "architecture",
+    "parametric-design",
+    "computational-design",
+    "grasshopper",
+    "generative-design",
+    "bim"
+  ],
+  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Marquesina arquitectónica orgánica paramétrica curva construida con paneles geométricos algorítmicos",
+  "body": [
+    {
+      "type": "h2",
+      "text": "De planos estáticos a lógica algorítmica"
+    },
+    {
+      "type": "p",
+      "text": "La arquitectura paramétrica abandona formas geométricas fijas en favor de relaciones algorítmicas. En lugar de dibujar manualmente un techo curvilíneo o una fachada de lamas, los arquitectos programan parámetros basados ​​en reglas, como ángulos solares, vectores de deflexión del viento y distribuciones de carga estructural, generando revestimientos arquitectónicos fluidos y altamente sensibles."
+    },
+    {
+      "type": "h2",
+      "text": "El marco computacional"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Programación de nodos visuales: utilización de plataformas como Grasshopper y Dynamo para interconectar atractores matemáticos y matrices de transformación geométrica.",
+        "Solucionadores evolutivos multiobjetivo: algoritmos genéticos que iteran a través de miles de permutaciones geométricas para maximizar la ganancia solar pasiva y minimizar el tonelaje de acero.",
+        "Racionalización de paneles: Traducir superficies de doble curvatura de forma libre en paneles cuadriláteros planos y construibles que reducen los costos de fabricación.",
+        "Tuberías directas a la fabricación: archivos de salida algorítmicos que alimentan fresadoras de madera CNC de 5 ejes y cortadoras láser robóticas sin conversiones de dibujo manual."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La arquitectura ya no se trata de dibujar cómo se ve un objeto; se trata de escribir el guión matemático que permita al edificio generar su propia forma.",
+      "cite": "Instituto Questo de Arquitectura Computacional y Urbanismo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Rascacielos paramétricos de gran altura que muestran una fachada estructural retorcida y aletas protectoras del sol",
+      "caption": "Ingeniería de fachada algorítmica: envolvente del edificio con sombreado automático optimizada para cargas térmicas de aire acondicionado reducidas."
+    },
+    {
+      "type": "h2",
+      "text": "Biomímesis y eficiencia estructural"
+    },
+    {
+      "type": "p",
+      "text": "Los algoritmos paramétricos reflejan patrones estructurales que se encuentran en la naturaleza: mallas de hueso trabecular, redes de panal y redes de venación de hojas. Al colocar el material sólo donde las trayectorias de tensión mecánica lo requieren, las estructuras computacionales logran una reducción de peso sin precedentes sin sacrificar la rigidez estructural."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/woLUZ6SqqYs",
+      "title": "¿Qué es Grasshopper? Explicación del diseño paramétrico",
+      "caption": "Desglose educativo del modelado algorítmico, flujos de trabajo de nodos y geometría generativa en el diseño arquitectónico moderno."
+    },
+    {
+      "type": "p",
+      "text": "El diseño paramétrico armoniza la escultura artística con la optimización estructural, creando edificios que respiran y se adaptan."
+    }
+  ],
+  "sourceHash": "2c3d1ed2cc4e1e6e77307d44bd62654791dbd042"
+}

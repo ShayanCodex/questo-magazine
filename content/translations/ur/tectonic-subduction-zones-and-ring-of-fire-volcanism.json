@@ -1,0 +1,70 @@
+{
+  "slug": "tectonic-subduction-zones-and-ring-of-fire-volcanism",
+  "title": "The Physics of Subduction Zones",
+  "excerpt": "The geodynamics of lithospheric plate subduction: slab pull forces, mantle wedge hydration melting, Wadati-Benioff zones, and megathrust seismic hazards.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "geology",
+    "plate-tectonics",
+    "subduction",
+    "earthquakes",
+    "volcanism",
+    "geophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Dramatic volcanic mountain ridge with geothermal steam venting against steep geological fault lines",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Engine of Planetary Recycling"
+    },
+    {
+      "type": "p",
+      "text": "Subduction zones are the planetary incinerators where cold oceanic lithosphere descends back into Earth's convective mantle. Responsible for generating the planet's deepest oceanic trenches, the world's most powerful magnitude 9+ megathrust earthquakes, and explosive stratovolcano arcs along the Pacific Ring of Fire, subduction is the primary driving mechanism of continental drift."
+    },
+    {
+      "type": "h2",
+      "text": "Geophysical Forces Driving Subduction"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Slab Pull Mechanics: Dense, cooled basaltic oceanic crust transforming into ultra-dense eclogite, gravitationally pulling the trailing plate into the asthenosphere.",
+        "Mantle Wedge Flux Melting: Hydrated oceanic minerals dewatering at 100km depth, lowering the melting point of peridotite mantle rock to form explosive andesitic magma.",
+        "Wadati-Benioff Seismic Zones: Planar zones of deep earthquakes tracing the brittle interior core of descending slabs down to 670 kilometers depth.",
+        "Forearc Accretionary Prisms: Sediments scraped off the descending oceanic plate, accumulating into massive chaotic geological mélange complexes along coasts."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Earth is the only known planet with active plate tectonics. Without the water-lubricated engine of subduction, continents and atmospheres would stagnate.",
+      "cite": "Questo Geophysics & Planetary Seismology Observatory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High-precision seismometer and GPS geodesy station anchored in rugged mountain bedrock",
+      "caption": "Continuous GPS geodetic monitoring: Measuring millimeters of coastal elastic strain accumulation along Cascadia megathrust fault locked zones."
+    },
+    {
+      "type": "h2",
+      "text": "Megathrust Rupture and Tsunamigenesis"
+    },
+    {
+      "type": "p",
+      "text": "When the locked interface between the overriding continental plate and subducting slab snaps, tens of meters of vertical seafloor displacement occur within seconds, launching trans-oceanic tsunami shockwaves across ocean basins."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VDx8-ZRoCCw",
+      "title": "Tectonics and Geology of Subduction Zones: Comprehensive Introduction",
+      "caption": "Geological science lecture analyzing lithospheric slab dynamics, dehydration melting, and volcanic arc petrology."
+    },
+    {
+      "type": "p",
+      "text": "Studying paleoseismic tsunami deposits and slow-slip tremor events provides vital early warning frameworks for coastal populations worldwide."
+    }
+  ],
+  "sourceHash": "05b0be7123de7cd5240cd745c7d40207713bc166"
+}

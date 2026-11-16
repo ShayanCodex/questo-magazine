@@ -1,7 +1,7 @@
 {
   "slug": "distributed-consensus-and-formal-verification-in-blockchains",
-  "title": "Consenso distribuido y verificación formal en cadenas de bloques de alto rendimiento",
-  "excerpt": "Un análisis de protocolo de sistemas de tolerancia a fallas bizantinas basadas en DAG canalizadas, pruebas de seguridad TLA+ y replicación de máquinas de estado bajo latencia de red adversaria.",
+  "title": "Consenso y verificación distribuidos",
+  "excerpt": "Un análisis de protocolo de sistemas de tolerancia a fallas bizantinas basadas en DAG, pruebas de seguridad TLA+ y replicación de máquinas de estado bajo latencia de red adversaria.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Al garantizar la seguridad en condiciones completamente asincrónicas y garantizar la vida cada vez que la latencia de la red cae por debajo de un límite (delta), los protocolos modernos mantienen una finalidad sólida incluso durante interrupciones severas de enrutamiento de la infraestructura de Internet."
     }
   ],
-  "sourceHash": "a22641abbb6c18b07d927dd752a5818a142e0b07"
+  "sourceHash": "6be6c94303a5c5028c18353a861f7c4b932cba1e"
 }

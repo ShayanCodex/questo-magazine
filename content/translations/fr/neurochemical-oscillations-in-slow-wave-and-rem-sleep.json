@@ -1,6 +1,6 @@
 {
   "slug": "neurochemical-oscillations-in-slow-wave-and-rem-sleep",
-  "title": "Architecture du sommeil : acétylcholine, noradrénaline et homéostasie synaptique corticale",
+  "title": "La neurochimie du sommeil",
   "excerpt": "La chorégraphie neurochimique du sommeil réparateur : génération du fuseau thalamocortical, clairance métabolique glymphatique et sélection synaptique négative pendant les cycles profonds d'ondes lentes.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
@@ -12,7 +12,7 @@
     "mental-wellness"
   ],
   "image": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Quiet dark sleeping environment designed for circadian entrainment and deep restorative sleep",
+  "imageAlt": "Environnement de sommeil calme et sombre conçu pour l'entraînement circadien et un sommeil réparateur profond",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "La neurobiologie dynamique des états de sommeil"
+      "text": "Jalons neurochimiques et physiologiques clés"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Polysomnography EEG monitor displaying synchronized high-amplitude delta waves and sleep spindles",
-      "caption": "Delta wave synchrony: millions of cortical neurons alternating between active firing and profound hyperpolarized down-states."
+      "alt": "Architecture du sommeil : acétylcholine, noradrénaline et homéostasie synaptique corticale - Opérationnel Figure 4",
+      "caption": "Observation empirique : mécanique opérationnelle et télémétrie fondamentale soutenant l'architecture du sommeil : acétylcholine, noradrénaline et homéostasie synaptique corticale."
     },
     {
       "type": "ul",
       "items": [
-        "Aminergic-Cholinergic Flip-Flop: Wakefulness is driven by high norepinephrine and serotonin; slow-wave sleep witnesses a dramatic decline in all monoamines, while REM is characterized by an isolated surge in acetylcholine.",
-        "Thalamocortical Delta Synchrony: High-amplitude, low-frequency (<4 Hz) electroencephalographic oscillations reflect millions of cortical neurons firing in synchronized silence, resting synaptic circuits.",
-        "Glymphatic Flux & Beta-Amyloid Clearance: Astrocyte aquaporin-4 (AQP4) water channels expand interstitial space by sixty percent during deep NREM sleep, flushing metabolic waste products out of brain parenchyma.",
-        "Synaptic Homeostasis Hypothesis (SHY): Sleep provides necessary down-scaling of synaptic weights potentiated during wakeful learning, restoring baseline energetic and spatial equilibrium."
+        "Bascule aminergique-cholinergique : l'éveil est entraîné par un taux élevé de noradrénaline et de sérotonine ; Le sommeil lent est témoin d'une diminution spectaculaire de toutes les monoamines, tandis que le sommeil paradoxal se caractérise par une augmentation isolée de l'acétylcholine.",
+        "Synchronie Delta thalamocorticale : les oscillations électroencéphalographiques de haute amplitude et basse fréquence (<4 Hz) reflètent des millions de neurones corticaux se déclenchant dans un silence synchronisé, des circuits synaptiques au repos.",
+        "Flux glymphatique et clairance bêta-amyloïde : les canaux hydriques de l'aquaporine-4 des astrocytes (AQP4) élargissent l'espace interstitiel de soixante pour cent pendant le sommeil NREM profond, évacuant les déchets métaboliques du parenchyme cérébral.",
+        "Hypothèse de l'homéostasie synaptique (SHY) : le sommeil fournit une réduction nécessaire des poids synaptiques potentialisés pendant l'apprentissage éveillé, rétablissant l'équilibre énergétique et spatial de base."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Microscopic astrocyte aquaporin-4 channels flushing cerebrospinal fluid through interstitial brain pathways",
-      "caption": "Glymphatic metabolic clearance: 60% expansion of interstitial space during deep NREM sleep flushing neurotoxic waste."
+      "alt": "Architecture du sommeil : acétylcholine, noradrénaline et homéostasie synaptique corticale - Opérationnelle Figure 7",
+      "caption": "Observation empirique : mécanique opérationnelle et télémétrie fondamentale soutenant l'architecture du sommeil : acétylcholine, noradrénaline et homéostasie synaptique corticale."
     },
     {
       "type": "h2",
-      "text": "La neurobiologie dynamique des états de sommeil"
+      "text": "Consolidation de la mémoire et calibrage émotionnel REM"
     },
     {
       "type": "p",
-      "text": "Le sommeil n'est ni une cessation passive de conscience ni un vide neurochimique uniforme. Il représente plutôt une alternance active et superbement chorégraphiée entre des états neurophysiologiques distincts : le sommeil lent à mouvements oculaires non rapides (NREM) et le sommeil onirique à mouvements oculaires rapides (REM). Les transitions entre ces états sont orchestrées par des commutateurs de neurotransmetteurs réciproques dans le tronc cérébral, l'hypothalamus et le cerveau antérieur basal."
+      "text": "Pendant le sommeil NREM, des ondulations aiguës de l'hippocampe à haute fréquence rejouent les traces de la mémoire diurne, transférant les données épisodiques consolidées dans des archives néocorticales distribuées. Par la suite, pendant le sommeil paradoxal, l’amygdale et les circuits émotionnels traitent les souvenirs affectifs dans un environnement neurochimique dépourvu de noradrénaline induisant le stress."
     },
     {
       "type": "video",
-      "title": "The Neuroscience of Sleep: Stages, Brain Waves, and Memory Consolidation",
-      "caption": "Detailed clinical explanation of EEG sleep spindles, delta waves, glymphatic fluid clearance, and sleep architecture.",
-      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE"
+      "src": "https://www.youtube-nocookie.com/embed/7V3YQ0vG3pE",
+      "title": "La neuroscience du sommeil : étapes, ondes cérébrales et consolidation de la mémoire",
+      "caption": "Explication clinique détaillée des fuseaux de sommeil EEG, des ondes delta, de la clairance du liquide lymphatique et de l'architecture du sommeil."
     },
     {
       "type": "h2",
-      "text": "La neurobiologie dynamique des états de sommeil"
+      "text": "Donner la priorité à l'architecture de récupération"
     },
     {
       "type": "p",
-      "text": "Le sommeil n'est ni une cessation passive de conscience ni un vide neurochimique uniforme. Il représente plutôt une alternance active et superbement chorégraphiée entre des états neurophysiologiques distincts : le sommeil lent à mouvements oculaires non rapides (NREM) et le sommeil onirique à mouvements oculaires rapides (REM). Les transitions entre ces états sont orchestrées par des commutateurs de neurotransmetteurs réciproques dans le tronc cérébral, l'hypothalamus et le cerveau antérieur basal."
+      "text": "Dans notre société moderne chroniquement privée de sommeil, la compréhension de la nature moléculaire indispensable de l'architecture du sommeil lent et paradoxal rétablit l'hygiène du sommeil en tant qu'intervention cognitive et métabolique la plus puissante disponible pour les êtres humains."
     }
   ],
-  "sourceHash": "5acb4058de3ea294dc746de43d84a8c78e0490d9"
+  "sourceHash": "dc5dff1921d4063b62a2e3eda11246b8d56d444c"
 }

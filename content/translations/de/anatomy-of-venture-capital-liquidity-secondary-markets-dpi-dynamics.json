@@ -1,7 +1,7 @@
 {
   "slug": "anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics",
-  "title": "Anatomie der Risikokapitalliquidität und Sekundärmärkte",
-  "excerpt": "Eine finanzielle Untersuchung zu verzögerten öffentlichen Angeboten, Fortsetzungsfonds, LP-Liquiditätsdruck und der Entstehung privater Sekundärbörsen.",
+  "title": "Risikokapital und Sekundärmärkte",
+  "excerpt": "Eine finanzielle Untersuchung zu verzögerten öffentlichen Angeboten, Fortführungsfonds, LP-Liquiditätsdruck und der Entstehung privater Sekundärbörsen.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
   "tags": [
@@ -12,7 +12,7 @@
     "finance"
   ],
   "image": "/images/articles/venture-capital-finance.jpg",
-  "imageAlt": "Modern financial district architectural atrium symbolizing private capital markets and investment banking",
+  "imageAlt": "Modernes architektonisches Atrium im Finanzviertel, das private Kapitalmärkte und Investmentbanking symbolisiert",
   "body": [
     {
       "type": "h2",
@@ -20,25 +20,25 @@
     },
     {
       "type": "p",
-      "text": "Über ein Jahrzehnt lang operierte Risikokapital nach einem vorhersehbaren Schwungrad: Kapitalbeschaffung, Kapitaleinsatz in wachstumsstarken Softwareunternehmen und Rückgabe der Erlöse durch Börsengänge (IPOs) oder strategische Akquisitionen innerhalb eines Fondslebenszyklus von 7 bis 10 Jahren. Heute ist diese herkömmliche Liquiditätspipeline systemisch zum Stillstand gekommen, da private Unternehmen 14 oder mehr Jahre lang nicht börsennotiert sind."
+      "text": "Über ein Jahrzehnt lang operierte Risikokapital nach einem vorhersehbaren Schwungrad: Kapitalbeschaffung, Kapitaleinsatz in wachstumsstarken Softwareunternehmen und Rückgabe der Erlöse durch Börsengänge (IPOs) oder strategische Akquisitionen innerhalb eines Fondslebenszyklus von 7 bis 10 Jahren. Heute ist diese herkömmliche Liquiditätspipeline systemisch blockiert, da private Unternehmen 14 oder mehr Jahre lang nicht börsennotiert sind."
     },
     {
       "type": "h2",
-      "text": "Das strukturelle Liquiditätsdefizit"
+      "text": "Wichtige Punkte"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "Anatomie der Risikokapitalliquidität und Sekundärmärkte – Strukturelle Abbildung 1",
+      "caption": "Visuelle Analyse: Architekturschemata und technische Domänendarstellungen für Anatomie der Risikokapitalliquidität und Sekundärmärkte."
     },
     {
       "type": "ul",
       "items": [
-        "DPI vs. TVPI Divergence: Institutional limited partners (LPs) increasingly demand Distributed to Paid-In capital (DPI) rather than theoretical mark-ups (TVPI).",
-        "Continuation Vehicles: General partners (GPs) are creating structured secondary continuation funds to roll prized assets while offering liquidity windows.",
-        "Discount Pressures: Private secondary market transactions frequently clear at 20% to 40% discounts to previous sovereign venture funding valuations.",
-        "Institutional Secondary Platforms: The rise of algorithmic matching engines and standardized transfer documentation has turned private shares into a distinct asset class."
+        "DPI vs. TVPI-Divergenz: Institutionelle Kommanditisten (LPs) fordern zunehmend „Distributed to Payed-In Capital“ (DPI) anstelle von theoretischen Aufschlägen (TVPI).",
+        "Continuation Vehicles: General Partners (GPs) schaffen strukturierte sekundäre Continuation Funds, um wertvolle Vermögenswerte zu mobilisieren und gleichzeitig Liquiditätsfenster anzubieten.",
+        "Abzinsungsdruck: Private Sekundärmarkttransaktionen werden häufig mit Abschlägen von 20 bis 40 % gegenüber früheren Bewertungen staatlicher Risikofinanzierungen abgerechnet.",
+        "Institutionelle Sekundärplattformen: Der Aufstieg algorithmischer Matching-Engines und standardisierter Übertragungsdokumentation hat Privataktien zu einer eigenständigen Anlageklasse gemacht."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "Anatomie der Risikokapitalliquidität und Sekundärmärkte – operative Abbildung 2",
+      "caption": "Empirische Beobachtung: Betriebsmechanik und grundlegende Telemetrie zur Unterstützung der Anatomie der Risikokapitalliquidität und Sekundärmärkte."
     },
     {
       "type": "h2",
-      "text": "Das strukturelle Liquiditätsdefizit"
+      "text": "Von GP geführte Sekundärinstrumente und Fondsarchitektur"
     },
     {
       "type": "p",
-      "text": "Über ein Jahrzehnt lang operierte Risikokapital nach einem vorhersehbaren Schwungrad: Kapitalbeschaffung, Kapitaleinsatz in wachstumsstarken Softwareunternehmen und Rückgabe der Erlöse durch Börsengänge (IPOs) oder strategische Akquisitionen innerhalb eines Fondslebenszyklus von 7 bis 10 Jahren. Heute ist diese herkömmliche Liquiditätspipeline systemisch zum Stillstand gekommen, da private Unternehmen 14 oder mehr Jahre lang nicht börsennotiert sind."
+      "text": "Um zu vermeiden, dass Portfoliounternehmen mit hoher Überzeugung in einem lauen IPO-Umfeld durch Notverkäufe verkauft werden, wenden sich Investmentmanager GP-geführten Single-Asset-Sekundärvehikeln zu. Diese Transaktionen ermöglichen es externen Sekundärinvestoren, frisches Wachstumskapital zuzuführen, während bestehende Kommanditisten wählen können, ob sie ihre Eigentumsanteile auszahlen oder übertragen möchten."
     },
     {
       "type": "video",
-      "title": "Private Equity and Venture Capital Secondary Markets Explained",
-      "caption": "Financial analysis breaking down how continuation funds, LP-led portfolio sales, and secondary transaction pricing operate in institutional finance.",
-      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI"
+      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI",
+      "title": "Private Equity- und Risikokapital-Sekundärmärkte erklärt",
+      "caption": "Finanzanalyse mit Aufschlüsselung der Funktionsweise von Fortsetzungsfonds, LP-geführten Portfolioverkäufen und Sekundärtransaktionspreisen in der institutionellen Finanzierung."
     },
     {
       "type": "h2",
-      "text": "Das strukturelle Liquiditätsdefizit"
+      "text": "Die Zukunft der Risikokapitalreifung"
     },
     {
       "type": "p",
-      "text": "Über ein Jahrzehnt lang operierte Risikokapital nach einem vorhersehbaren Schwungrad: Kapitalbeschaffung, Kapitaleinsatz in wachstumsstarken Softwareunternehmen und Rückgabe der Erlöse durch Börsengänge (IPOs) oder strategische Akquisitionen innerhalb eines Fondslebenszyklus von 7 bis 10 Jahren. Heute ist diese herkömmliche Liquiditätspipeline systemisch zum Stillstand gekommen, da private Unternehmen 14 oder mehr Jahre lang nicht börsennotiert sind."
+      "text": "Da Sekundärbörsen den Abgleich von Kapitalisierungstabellen und Compliance-Hürden automatisieren, werden Private Equity und Risikokapital eher einem kontinuierlichen Sekundärmarkt als einem episodischen Liquiditätsereignis ähneln und die Kapitalisierungsdynamik im Silicon Valley dauerhaft umstrukturieren."
     }
   ],
-  "sourceHash": "04ac31d7788c879d1bf2c553b8f1534c6753ec22"
+  "sourceHash": "e055dac954cef980b5122079851e24b65b910ad5"
 }

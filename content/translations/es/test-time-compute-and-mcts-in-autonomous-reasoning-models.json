@@ -1,6 +1,6 @@
 {
   "slug": "test-time-compute-and-mcts-in-autonomous-reasoning-models",
-  "title": "Computación en tiempo de prueba y búsqueda de árboles de Monte Carlo: cómo el razonamiento autónomo transforma los LLM de frontera",
+  "title": "Computación en tiempo de prueba y razonamiento autónomo",
   "excerpt": "Análisis del cambio tectónico de la escala de parámetros previos al entrenamiento a la computación en tiempo de inferencia: modelos de recompensa de procesos (PRM), verificación de búsqueda de árboles y autocorrección recursiva en agentes de investigación autónomos.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
@@ -59,7 +59,7 @@
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/zjkBMFhNj_g",
       "title": "Aprendizaje por refuerzo, árboles de búsqueda y razonamiento del sistema 2 en Frontier AI",
-      "caption": "Conferencia académica integral que cubre algoritmos de búsqueda, aprendizaje por refuerzo de juego autónomo y marcos de verificación formales."
+      "caption": "Conferencia académica integral que cubre algoritmos de búsqueda, aprendizaje por refuerzo mediante juego autónomo y marcos de verificación formal."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Equipados con bucles de búsqueda en el momento de la prueba, los agentes de investigación autónomos pueden recorrer vastos gráficos de literatura científica, ejecutar simulaciones empíricas de Python en entornos aislados, sintetizar moléculas bioquímicas candidatas y escribir monografías revisadas por pares sin intervención humana. El cuello de botella del descubrimiento de conocimiento está pasando de la capacidad de lectura humana al rendimiento de verificación algorítmica."
     }
   ],
-  "sourceHash": "dbe651e5fbe0748dceb5e59f1aed8cd3b5382c5a"
+  "sourceHash": "968ed931346d6cf26d9ca4c7a73d8e77dfd3172f"
 }

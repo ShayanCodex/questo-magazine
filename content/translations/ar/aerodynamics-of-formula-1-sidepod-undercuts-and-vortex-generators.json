@@ -1,7 +1,7 @@
 {
   "slug": "aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators",
-  "title": "الديناميكيات الهوائية للفورمولا 1: توليد الغسل الخارجي، القطع السفلية للجوانب الجانبية والختم بتأثير الأرض",
-  "excerpt": "تحليل القياس عن بعد عالي الدقة لتوزيع القوة الضاغطة، وتساقط الدوامات على طول تنانير أرضية الحافة الخلفية، ومقايضات تبريد الفرامل الحرارية في رياضة السيارات الحديثة.",
+  "title": "الديناميكيات الهوائية والتأثيرات الأرضية للفورمولا 1",
+  "excerpt": "تحليل القياس عن بعد عالي الدقة لتوزيع القوة السفلية، وتساقط الدوامات على طول حواف أرضية الحافة الخلفية، ومقايضات تبريد الفرامل الحرارية في رياضة السيارات الحديثة.",
   "date": "2026-11-16",
   "author": "Liam O’Connor",
   "tags": [
@@ -12,7 +12,7 @@
     "telemetry"
   ],
   "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "High-speed Formula 1 car apex cornering through chicane with ground effect underfloor suction",
+  "imageAlt": "الانعطاف عالي السرعة لسيارة الفورمولا 1 من خلال المنعطفات مع تأثير الشفط تحت الأرضية",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "ميكانيكا أنفاق فنتوري ذات التأثير الأرضي الحديثة"
+      "text": "فيزياء التدفق الرئيسي للديناميكيات الهوائية للفورمولا 1"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Carbon-fiber sidepod undercut sculpting and rear diffuser expansion tunnel",
-      "caption": "Underfloor Venturi throat: accelerated mass airflow generating massive negative pressure beneath the chassis."
+      "alt": "نحت الجانب من ألياف الكربون ونفق توسيع الناشر الخلفي",
+      "caption": "حنجرة فنتوري تحت الأرضية: تدفق هواء جماعي متسارع يولد ضغطًا سلبيًا هائلاً أسفل الهيكل."
     },
     {
       "type": "ul",
       "items": [
-        "Venturi Suction & Bernoulli Principle: Restricting underfloor cross-sectional area forces incoming air to accelerate rapidly, generating immense negative pressure that suctions the chassis toward the asphalt.",
-        "Sidepod Undercut Channeling: Deep volumetric carving beneath sidepod radiators directs clean, unseparated airflow over the top of the rear diffuser, boosting mass expansion ratios.",
-        "Vortex Edge Sealing: Engineered floor edges utilize vortex generators to shed high-energy rotational air streams along floor perimeters, acting as an invisible aerodynamic skirt to prevent ambient air ingress.",
-        "Porpoising & Aerodynamic Stall: When extreme downforce compresses suspension past critical ride-height thresholds, the underfloor stalls abruptly, triggering catastrophic cyclical vehicle bouncing."
+        "مبدأ شفط فنتوري وبيرنولي: يؤدي تقييد منطقة المقطع العرضي تحت الأرضية إلى إجبار الهواء الداخل على التسارع بسرعة، مما يولد ضغطًا سلبيًا هائلاً يعمل على شفط الهيكل نحو الأسفلت.",
+        "توجيه الجزء السفلي من الجانب: يوجه النحت الحجمي العميق أسفل مشعاعات الجانب الجانبي تدفق الهواء النظيف وغير المنفصل فوق الجزء العلوي من الناشر الخلفي، مما يعزز نسب التمدد الشامل.",
+        "إغلاق حافة الدوامة: تستخدم حواف الأرضية الهندسية مولدات دوامية للتخلص من تيارات الهواء الدورانية عالية الطاقة على طول محيط الأرضية، لتكون بمثابة تنورة ديناميكية هوائية غير مرئية لمنع دخول الهواء المحيط.",
+        "المماطلة الديناميكية الهوائية والخنازير: عندما تضغط القوة الضاغطة الشديدة على نظام التعليق بعد عتبات ارتفاع الركوب الحرجة، تتوقف الأرضية فجأة، مما يؤدي إلى ارتداد دوري كارثي للمركبة."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Pitlane aerodynamics telemetry monitors showing real-time ride-height sensors and downforce distribution",
-      "caption": "Vortex edge sealing: floor perimeter strakes shedding high-energy vortices to isolate underfloor negative pressure."
+      "alt": "شاشات القياس عن بعد للديناميكيات الهوائية في Pitlane التي تعرض أجهزة استشعار لارتفاع الركوب في الوقت الفعلي وتوزيع القوة الضاغطة",
+      "caption": "إغلاق حافة الدوامة: تتخلص شرائط محيط الأرضية من دوامات عالية الطاقة لعزل الضغط السلبي تحت الأرضية."
     },
     {
       "type": "h2",
-      "text": "ميكانيكا أنفاق فنتوري ذات التأثير الأرضي الحديثة"
+      "text": "ديناميكيات الموائع الحسابية (CFD) والارتباط"
     },
     {
       "type": "p",
-      "text": "في رياضة السيارات ذات المقعد الواحد النخبة، يعد التطوير الديناميكي الهوائي معركة لا هوادة فيها لاستخراج القوة الضاغطة مع تقليل السحب الطفيلي والحساسية الديناميكية الهوائية إلى ميل السيارة وتدحرجها. بعد إعادة إدخال أنفاق فنتوري تحت الأرضية بالكامل في اللوائح الفنية المعاصرة للفورمولا 1، تحولت النقطة المحورية للأداء من الجنيحات المعقدة فوق الجسم إلى إدارة تدفق الهواء الشامل من خلال القنوات السفلية المتقاربة والمتباعدة."
+      "text": "نظرًا لأن اللوائح الرياضية تفرض قيودًا صارمة على اختبارات الديناميكا الهوائية (ATR) على إشغال نفق الرياح وساعات عمل الحوسبة الفائقة لوحدة معالجة الرسومات، تعتمد الفرق الهندسية بشكل كبير على عمليات محاكاة رينولدز-متوسط ​​نافير-ستوكس (URANS) غير المستقرة ومحاكاة إيدي الكبيرة (LES). يتطلب ربط نمذجة الاضطراب الافتراضي مع قياس المسار المادي عن بعد استشعارًا مستمرًا لارتفاع الركوب بالليزر ومعايرة مجموعة أنبوب بيتوت."
     },
     {
       "type": "video",
-      "title": "Formula 1 Aerodynamics Explained: Venturi Tunnels, Vortices, and Floor Sealing",
-      "caption": "Detailed fluid dynamics walkthrough of ground effect downforce generation and sidepod airflow conditioning.",
-      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w"
+      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w",
+      "title": "شرح الديناميكا الهوائية للفورمولا 1: أنفاق فنتوري، والدوامات، وختم الأرضيات.",
+      "caption": "شرح تفصيلي لديناميكيات السوائل لتوليد القوة الضاغطة ذات التأثير الأرضي وتكييف تدفق الهواء الجانبي."
     },
     {
       "type": "h2",
-      "text": "ميكانيكا أنفاق فنتوري ذات التأثير الأرضي الحديثة"
+      "text": "التفاعل بين الإدارة الحرارية والكفاءة الهوائية"
     },
     {
       "type": "p",
-      "text": "في رياضة السيارات ذات المقعد الواحد النخبة، يعد التطوير الديناميكي الهوائي معركة لا هوادة فيها لاستخراج القوة الضاغطة مع تقليل السحب الطفيلي والحساسية الديناميكية الهوائية إلى ميل السيارة وتدحرجها. بعد إعادة إدخال أنفاق فنتوري تحت الأرضية بالكامل في اللوائح الفنية المعاصرة للفورمولا 1، تحولت النقطة المحورية للأداء من الجنيحات المعقدة فوق الجسم إلى إدارة تدفق الهواء الشامل من خلال القنوات السفلية المتقاربة والمتباعدة."
+      "text": "يمثل كل ملليمتر مربع من السطح الديناميكي الهوائي حلاً وسطًا متعمدًا بين وقت الدورة الناجم عن السحب والتبريد الحراري لوحدات الطاقة الهجينة والشواحن التوربينية والمكابح المصنوعة من الكربون والسيراميك. السيارات الفائزة بالبطولات في رياضة السيارات الحديثة هي تلك التي تتقن الطبقة الحدودية غير المرئية حيث تلتقي ديناميكيات السوائل والتعبئة الميكانيكية."
     }
   ],
-  "sourceHash": "69041648c357f2adf487a524662232a5d79362fb"
+  "sourceHash": "0d0448d25dd966e4925273b73436fcd53f0751a1"
 }

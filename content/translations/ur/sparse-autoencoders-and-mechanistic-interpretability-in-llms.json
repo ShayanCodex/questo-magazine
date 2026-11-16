@@ -1,7 +1,7 @@
 {
   "slug": "sparse-autoencoders-and-mechanistic-interpretability-in-llms",
-  "title": "فاؤنڈیشن ماڈلز میں اسپارس آٹو اینکوڈرز اور میکانسٹک انٹرپریٹیبلٹی",
-  "excerpt": "نیورل نیٹ ورک سپرپوزیشن، مونوسیمینٹک فیچر لغات، اور فرنٹیئر لینگویج ماڈلز میں ایکٹیویشن اسٹیئرنگ میں میکانکی تشریحی تحقیقات۔",
+  "title": "Sparse Autoencoders in Foundation Models",
+  "excerpt": "A mechanistic interpretability investigation into neural network superposition, monosemantic feature dictionaries, and activation steering in frontier language models.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -12,53 +12,53 @@
     "mechanistic-interpretability"
   ],
   "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "اعلی جہتی نیورل ایکٹیویشن ٹینسرز اور خفیہ نمائندگی کئی گنا کوڈ میں پیش کی گئی ہے",
+  "imageAlt": "High-dimensional neural activation tensors and latent representation manifolds rendered in code",
   "body": [
     {
       "type": "h2",
-      "text": "ڈیپ نیٹ ورکس میں پولی سیمینٹک سپرپوزیشن کا مسئلہ"
+      "text": "The Polysemantic Superposition Problem in Deep Networks"
     },
     {
       "type": "p",
-      "text": "معیاری ٹرانسفارمر آرکیٹیکچرز جیومیٹرک جہت کے مالک ہونے سے کہیں زیادہ حقیقی دنیا کے تصورات کو اپنی پوشیدہ نمائندگیوں میں کمپریس کرتے ہیں۔ یہ رجحان، جسے سپرپوزیشن کے نام سے جانا جاتا ہے، انفرادی بقایا سٹریم نیورونز کو پولی سیمینٹک طور پر کام کرنے پر مجبور کرتا ہے: کوانٹم فزکس، پاک جڑی بوٹیوں اور قانونی شقوں کے لیے بیک وقت فائرنگ۔ فرنٹیئر آرٹیفیشل انٹیلی جنس کی اندرونی نمائندگیوں کو ڈی کوڈ کرنے کے لیے، میکانکی تشریحی محققین اوور کمپلیٹ اسپارس آٹو اینکوڈرز (SAEs) کو تربیت دے رہے ہیں جو ان الجھے ہوئے ایکٹیویشن کو الگ تھلگ، مونوسیمینٹک خصوصیات میں کھول دیتے ہیں۔"
+      "text": "Standard transformer architectures compress vastly more real-world concepts into their hidden representations than they possess geometric dimensions. This phenomenon, known as superposition, forces individual residual stream neurons to act polysemantically: firing for quantum physics, culinary herbs, and legal clauses simultaneously. To decode the internal representations of frontier artificial intelligence, mechanistic interpretability researchers are training overcomplete sparse autoencoders (SAEs) that unpack these tangled activations into isolated, monosemantic features."
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "Key Points"
     },
     {
       "type": "ul",
       "items": [
-        "لکیری نمائندگی کا مفروضہ: تصورات کو الگ تھلگ انفرادی نیوران کی بجائے عصبی ایکٹیویشن کئی گنا میں لکیری سمتوں کے طور پر پیش کیا جاتا ہے۔",
-        "اوورکمپلیٹ ڈکشنری لرننگ: اسپارس آٹو اینکوڈرز کم جہتی بقایا ندیوں کو تیز جہتی رکاوٹوں کے ساتھ اعلی جہتی اویکت جگہوں میں پروجیکٹ کرتے ہیں۔",
-        "Monosemanticity: کامیابی کے ساتھ نکالی گئی خصوصیات واحد، انسانی تشریح کے قابل تصورات جیسے کہ جغرافیائی مقامات، نحوی ڈھانچے، یا حفاظتی تنقیدی انکار کے نمونوں سے مطابقت رکھتی ہیں۔",
-        "ایکٹیویشن اسٹیئرنگ: مخصوص کانسیپٹ ویکٹر کی نشاندہی کرنے سے ماڈل کے رویے کے براہ راست ریاضیاتی اسٹیئرنگ کو فائن ٹیوننگ وزن کے بغیر قابل بنایا جاتا ہے۔"
+        "Linear Representation Hypothesis: Concepts are represented as linear directions within neural activation manifolds rather than isolated individual neurons.",
+        "Overcomplete Dictionary Learning: Sparse autoencoders project low-dimensional residual streams into high-dimensional latent spaces with sparsity constraints.",
+        "Monosemanticity: Successfully extracted features correspond to single, human-interpretable concepts such as geographic locations, syntax structures, or safety-critical refusal patterns.",
+        "Activation Steering: Pinpointing specific concept vectors enables direct mathematical steering of model behavior without fine-tuning weights."
       ]
     },
     {
       "type": "quote",
-      "text": "سپرپوزیشن کو طویل عرصے سے ناقابل تسخیر کمپیوٹیشنل بلیک باکس سمجھا جاتا تھا۔ اسپارس آٹو اینکوڈرز یہ ظاہر کرتے ہیں کہ عصبی نمائندگی سخت جیومیٹرک قوانین کی پابندی کرتی ہے جو قطعی طور پر جدا کرنے کے لیے قابل عمل ہیں۔",
-      "cite": "انتھروپک اینڈ الائنمنٹ ریسرچ کولیبریٹیو"
+      "text": "Superposition was long considered an impenetrable computational black box. Sparse autoencoders demonstrate that neural representations obey rigorous geometric laws amenable to precise disassembly.",
+      "cite": "Anthropic & Alignment Research Collaborative"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
-      "alt": "مشین لرننگ ریسرچ ٹیم انٹرایکٹو ڈسپلے پر اعلی جہتی لغت کی خصوصیات کا تجزیہ کر رہی ہے",
-      "caption": "خصوصیت نکالنا: اعلی جہتی ویرل آٹو اینکوڈر لغات میں بقایا سٹریم ایکٹیویشن کو پیش کرنا۔"
+      "alt": "Machine learning research team analyzing high-dimensional dictionary features on interactive displays",
+      "caption": "Feature extraction: projecting residual stream activations across high-dimensional sparse autoencoder dictionaries."
     },
     {
       "type": "h2",
-      "text": "TopK ایکٹیویشنز کے ساتھ اوورکمپلیٹ اسپارس ڈکشنریز کی تربیت"
+      "text": "Training Overcomplete Sparse Dictionaries with TopK Activations"
     },
     {
       "type": "p",
-      "text": "حالیہ پیش رفت روایتی L1 ریگولرائزیشن سزاؤں کو TopK ایکٹیویشن فنکشنز کے ساتھ بدل دیتی ہے۔ TopK SAEs میں، صرف K سب سے زیادہ لیٹنٹ کو فی فارورڈ پاس کو چالو کرنے کی اجازت ہے، سکڑنے والے تعصب کو ختم کرتے ہوئے اور سو ملین-پیرامیٹر ڈکشنریوں میں انتہائی تصوراتی فرق کو برقرار رکھتے ہوئے، تعمیر نو کی مخلصی میں زبردست بہتری لاتے ہیں۔"
+      "text": "Recent breakthroughs replace traditional L1 regularization penalties with TopK activation functions. In TopK SAEs, only the K highest-magnitude latents are permitted to activate per forward pass, eliminating shrinkage bias and drastically improving reconstruction fidelity while preserving extreme concept sparsity across hundred-million-parameter dictionaries."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/iphcyNWFD10",
-      "title": "میکانکی تشریح اور نیورل نیٹ ورک جیومیٹری",
-      "caption": "بنیادی لیکچر جس میں لکیری نمائندگی جیومیٹری، ویرل لغات، اور ٹرانسفارمرز میں سرکٹ کی دریافت کا جائزہ لیا جاتا ہے۔"
+      "title": "Mechanistic Interpretability and Neural Network Geometry",
+      "caption": "Foundational lecture examining linear representation geometry, sparse dictionaries, and circuit discovery in transformers."
     },
     {
       "type": "h2",
@@ -66,8 +66,8 @@
     },
     {
       "type": "p",
-      "text": "تشریح کی اصل جانچ وجہ کی تصدیق میں مضمر ہے: قیاس کے دوران کسی ایک شناخت شدہ فیچر ویکٹر کو کلیمپ کرنا یا کم کرنا ماڈل کے استدلال کی رفتار کو منظم طریقے سے بدل دیتا ہے۔ یہ AI سیفٹی، آڈیٹنگ، اور فریب کاری کو دبانے کے لیے ایک ریاضیاتی طور پر قابل تصدیق بنیاد فراہم کرتا ہے۔"
+      "text": "The true test of interpretability lies in causal verification: clamping or attenuating a single identified feature vector during inference systematically alters the model’s reasoning trajectory. This provides a mathematically verifiable foundation for AI safety, auditing, and hallucination suppression."
     }
   ],
-  "sourceHash": "183ef7795abb6a6fc8d1fdfedd389e6b1e923c34"
+  "sourceHash": "03b0159a05371f46de05504b5aab9b328c5282cd"
 }

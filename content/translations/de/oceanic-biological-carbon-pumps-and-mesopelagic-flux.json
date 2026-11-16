@@ -1,7 +1,7 @@
 {
   "slug": "oceanic-biological-carbon-pumps-and-mesopelagic-flux",
-  "title": "Ozeanische biologische Kohlenstoffpumpen und mesopelagische Kohlenstoffsequestrierung",
-  "excerpt": "Eine marine biogeochemische Analyse der Dynamik der Phytoplanktonblüte, der gravitativen Setzung von Meeresschnee und der langfristigen Kohlenstoffsequestrierung in der Abgrundzone.",
+  "title": "Ozeanische biologische Kohlenstoffpumpen",
+  "excerpt": "Eine marine biogeochemische Analyse der Dynamik der Phytoplanktonblüte, der gravitativen Setzung von Meeresschnee und der langfristigen Kohlenstoffbindung in der Abgrundzone.",
   "date": "2026-11-16",
   "author": "Anne Hardy",
   "tags": [
@@ -31,7 +31,7 @@
       "items": [
         "Partikulärer organischer Kohlenstoff (POC)-Fluss: Durch die gravitative Ablagerung von Diatomeenaggregaten und Zooplankton-Kotpellets werden Gigatonnen organischen Kohlenstoffs an der Pyknokline vorbei transportiert.",
         "Der Twilight Zone Filter: Heterotrophe Bakterien und mesopelagische Fische veratmen über neunzig Prozent der absinkenden organischen Materie zurück in gelösten anorganischen Kohlenstoff.",
-        "Zeithorizonte der abyssalen Sequestrierung: Kohlenstoff, der in eine Tiefe von weniger als 1000 Metern eindringt, wird für tausendjährige Ozeanzirkulationszyklen vom atmosphärischen Kontakt abgesondert.",
+        "Zeithorizonte der abyssalen Sequestrierung: Kohlenstoff, der in eine Tiefe von weniger als tausend Metern eindringt, wird für tausendjährige Ozeanzirkulationszyklen vom atmosphärischen Kontakt abgesondert.",
         "Einschränkungen der Eisendüngung: Experimente mit hohem Nährstoffgehalt und niedrigem Chlorophyllgehalt (HNLC) zeigen, dass die künstliche Aussaat von Eisen häufig eher eine schnelle Remineralisierung der Bakterien als eine tiefe Vergrabung auslöst."
       ]
     },
@@ -62,12 +62,12 @@
     },
     {
       "type": "h2",
-      "text": "Verbesserung der Alkalinität der Ozeane und Entfernung von marinem Kohlendioxid"
+      "text": "Verbesserung der Meeresalkalität und Entfernung von marinem Kohlendioxid"
     },
     {
       "type": "p",
-      "text": "Der Schutz und die Verbesserung der biologischen Pumpe erfordert sorgfältige Mess-, Berichts- und Verifizierungsprotokolle (MRV), bevor groß angelegte Technologien zur Entfernung von marinem Kohlendioxid (mCDR) eingesetzt werden."
+      "text": "Der Schutz und die Verbesserung der biologischen Pumpe erfordern sorgfältige Mess-, Berichts- und Verifizierungsprotokolle (MRV), bevor groß angelegte Technologien zur Entfernung von marinem Kohlendioxid (mCDR) eingesetzt werden."
     }
   ],
-  "sourceHash": "8bfae5dc70c354bb34210bc25b870b9efe19d814"
+  "sourceHash": "35ac6b9b988a0966f8f3a44ff100513c4f5f11ff"
 }

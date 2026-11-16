@@ -1,7 +1,7 @@
 {
   "slug": "optogenetics-and-neural-circuit-dissection-mechanics",
-  "title": "Optogenetik und Dissektion neuronaler Schaltkreise: Kanalrhodopsine, Optoden und Verhaltensmodulation",
-  "excerpt": "Optische Kontrolle genetisch zielgerichteter neuronaler Ensembles im Millisekundenbereich: Untersuchung der Opsin-Biophysik, der viralen Vektorabgabe und der funktionellen Kartierung von Gedächtnis-Engrammen.",
+  "title": "Optogenetik und neuronale Schaltkreise",
+  "excerpt": "Optische Kontrolle von genetisch gezielten neuronalen Ensembles im Millisekundenbereich: Untersuchung der Opsin-Biophysik, der viralen Vektorübertragung und der funktionellen Kartierung von Gedächtnis-Engrammen.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Die klinische Umsetzung der Optogenetik ist bereits im Gange. In der Augenheilkunde hat die intravitreale Injektion von rotverschobenen Channelrhodopsinen in überlebende Ganglienzellen der Netzhaut die teilweise Sehschärfe bei Patienten, die durch Retinitis pigmentosa erblindet waren, erfolgreich wiederhergestellt. In der Neurochirurgie werden drahtlose Mikro-LED-Optoden entwickelt, die die herkömmliche Tiefenhirnstimulation ersetzen und eine Tremorunterdrückung ohne kognitive Nebenwirkungen ermöglichen sollen."
     }
   ],
-  "sourceHash": "039003af7f0c4219ce90ddbdc8b6d3e6af1feab4"
+  "sourceHash": "bd0870b81f752a390a68cc3e511c0329158fe81b"
 }

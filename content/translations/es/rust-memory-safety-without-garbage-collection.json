@@ -1,6 +1,6 @@
 {
   "slug": "rust-memory-safety-without-garbage-collection",
-  "title": "Seguridad de la memoria formal en Rust: tipos afines, verificadores de préstamos y semántica RAII",
+  "title": "Seguridad de la memoria formal en Rust",
   "excerpt": "Una monografía técnica que analiza las invariantes de propiedad en tiempo de compilación, las reglas de alias, la vida útil no léxica y las garantías de abstracción de costo cero en la programación de sistemas.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
@@ -12,7 +12,7 @@
     "computer-science"
   ],
   "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Modern dark-themed code editor displaying Rust ownership lifetimes, references, and type invariants",
+  "imageAlt": "Editor de código moderno con temática oscura que muestra la vida útil de la propiedad de Rust, referencias e invariantes de tipo",
   "body": [
     {
       "type": "h2",
@@ -20,25 +20,25 @@
     },
     {
       "type": "p",
-      "text": "Durante cinco décadas, la ingeniería de sistemas estuvo limitada por una dicotomía intratable: aceptar la gestión manual de la memoria con riesgos inherentes de vulnerabilidades de uso después de la liberación, doble liberación y desbordamiento del búfer en C y C++, o adoptar tiempos de ejecución con recolección de basura como Java, Go y C# que imponen latencia de tiempo de ejecución inquietud, aumento de la huella de memoria y pausas que detienen el mundo. Rust rompió este compromiso al implementar la teoría de tipos afines y el seguimiento de la propiedad en tiempo de compilación para brindar seguridad de la memoria matemática sin sobrecarga de tiempo de ejecución."
+      "text": "Durante cinco décadas, la ingeniería de sistemas estuvo limitada por una dicotomía intratable: aceptar la gestión manual de la memoria con riesgos inherentes de vulnerabilidades de uso después de la liberación, doble liberación y desbordamiento del búfer en C y C++, o adoptar tiempos de ejecución con recolección de basura como Java, Go y C# que imponen el tiempo de ejecución fluctuación de latencia, aumento de la huella de memoria y pausas que detienen el mundo. Rust rompió este compromiso al implementar la teoría de tipos afines y el seguimiento de la propiedad en tiempo de compilación para brindar seguridad de la memoria matemática sin sobrecarga de tiempo de ejecución."
     },
     {
       "type": "h2",
-      "text": "La tensión histórica entre seguridad y rendimiento"
+      "text": "Fundamentos matemáticos de Borrow Checker"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Diagram of stack frame memory layout, heap pointers, and exclusive mutable references",
-      "caption": "Aliasing XOR Mutability: compile-time borrow checking mathematically eliminating data races and dangling pointers."
+      "alt": "Seguridad de la memoria formal en Rust: tipos afines, verificadores de préstamos y semántica RAII - Figura operativa 4",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respaldan la seguridad de la memoria formal en Rust: tipos afines, verificadores de préstamos y semántica RAII."
     },
     {
       "type": "ul",
       "items": [
-        "Linear and Affine Type Semantics: Every resource in memory has exactly one binding owner; transferring a binding constitutes a destructive move that invalidates the originating identifier at compile time.",
-        "Exclusive Mutability Invariant: The borrow checker enforces the aliasing XOR mutability theorem: code may possess either any number of immutable references (&T) or exactly one mutable reference (&mut T), never both concurrently.",
-        "Non-Lexical Lifetimes (NLL): The compiler constructs control flow graphs (CFGs) to track the precise liveness of references, allowing borrows to end as soon as their last operational use occurs rather than at lexical scope boundaries.",
-        "Deterministic Resource Acquisition Is Initialization (RAII): Destructors are synthesized at compile time and inserted precisely where owner bindings go out of scope, eliminating memory leaks without a background collector."
+        "Semántica de tipos lineales y afines: cada recurso en la memoria tiene exactamente un propietario vinculante; transferir un enlace constituye un movimiento destructivo que invalida el identificador de origen en el momento de la compilación.",
+        "Invariante de mutabilidad exclusiva: el verificador de préstamos aplica el teorema de mutabilidad XOR de alias: el código puede poseer cualquier número de referencias inmutables (&T) o exactamente una referencia mutable (&mut T), nunca ambas al mismo tiempo.",
+        "Vidas no léxicas (NLL): el compilador construye gráficos de flujo de control (CFG) para rastrear la vida precisa de las referencias, lo que permite que los préstamos finalicen tan pronto como se produzca su último uso operativo en lugar de en los límites del alcance léxico.",
+        "La adquisición determinista de recursos es inicialización (RAII): los destructores se sintetizan en el momento de la compilación y se insertan precisamente donde los enlaces del propietario quedan fuera de alcance, lo que elimina las pérdidas de memoria sin un recopilador en segundo plano."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
-      "alt": "LLVM intermediate representation optimizing monomorphized zero-cost Rust abstractions into machine code",
-      "caption": "Monomorphization: compiler generating specialized machine instructions for generic traits without dynamic vtable cost."
+      "alt": "Seguridad de la memoria formal en Rust: tipos afines, verificadores prestados y semántica RAII - Figura operativa 7",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respaldan la seguridad de la memoria formal en Rust: tipos afines, verificadores prestados y semántica RAII."
     },
     {
       "type": "h2",
-      "text": "La tensión histórica entre seguridad y rendimiento"
+      "text": "Abstracciones y monomorfización de costo cero"
     },
     {
       "type": "p",
-      "text": "Durante cinco décadas, la ingeniería de sistemas estuvo limitada por una dicotomía intratable: aceptar la gestión manual de la memoria con riesgos inherentes de vulnerabilidades de uso después de la liberación, doble liberación y desbordamiento del búfer en C y C++, o adoptar tiempos de ejecución con recolección de basura como Java, Go y C# que imponen latencia de tiempo de ejecución inquietud, aumento de la huella de memoria y pausas que detienen el mundo. Rust rompió este compromiso al implementar la teoría de tipos afines y el seguimiento de la propiedad en tiempo de compilación para brindar seguridad de la memoria matemática sin sobrecarga de tiempo de ejecución."
+      "text": "Rust logra la paridad de rendimiento con C++ mediante una monomorfización agresiva de genéricos vinculados a rasgos. En lugar de enviar llamadas a métodos a través de vtables dinámicas, el compilador duplica implementaciones de funciones concretas para cada tipo especializado, lo que permite la inserción entre cajas, la vectorización automática en instrucciones SIMD y la eliminación de códigos muertos durante la optimización del tiempo de enlace (LTO)."
     },
     {
       "type": "video",
-      "title": "How the Rust Borrow Checker Works: Lifetimes, Ownership, and Memory Layout",
-      "caption": "Deep-dive compiler analysis into mid-level intermediate representation (MIR) borrow checking and ownership graph evaluation.",
-      "src": "https://www.youtube-nocookie.com/embed/JlybK6Wp9f4"
+      "src": "https://www.youtube-nocookie.com/embed/JlybK6Wp9f4",
+      "title": "Cómo funciona Rust Borrow Checker: duración, propiedad y diseño de la memoria",
+      "caption": "Análisis profundo del compilador en la verificación de préstamos de representación intermedia de nivel medio (MIR) y la evaluación del gráfico de propiedad."
     },
     {
       "type": "h2",
-      "text": "La tensión histórica entre seguridad y rendimiento"
+      "text": "Transformando el software de infraestructura crítica"
     },
     {
       "type": "p",
-      "text": "Durante cinco décadas, la ingeniería de sistemas estuvo limitada por una dicotomía intratable: aceptar la gestión manual de la memoria con riesgos inherentes de vulnerabilidades de uso después de la liberación, doble liberación y desbordamiento del búfer en C y C++, o adoptar tiempos de ejecución con recolección de basura como Java, Go y C# que imponen latencia de tiempo de ejecución inquietud, aumento de la huella de memoria y pausas que detienen el mundo. Rust rompió este compromiso al implementar la teoría de tipos afines y el seguimiento de la propiedad en tiempo de compilación para brindar seguridad de la memoria matemática sin sobrecarga de tiempo de ejecución."
+      "text": "Desde el kernel de Linux y los hipervisores en la nube hasta los motores comerciales de alta frecuencia y el software de vuelos aeroespaciales, el modelo de propiedad de Rust está transformando fundamentalmente la ingeniería de software de misión crítica. Al convertir las catastróficas vulnerabilidades de seguridad de la memoria en errores de sintaxis en tiempo de compilación, los arquitectos de sistemas ahora pueden crear arquitecturas de alta concurrencia con total confianza formal."
     }
   ],
-  "sourceHash": "980fa0d6b5ed8c89826c4d46df22bbfbac7467b9"
+  "sourceHash": "233b2266b4e8db649983020fa7125eca9a86105c"
 }

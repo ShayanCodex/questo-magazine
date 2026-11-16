@@ -1,7 +1,7 @@
 {
   "slug": "microeconomics-of-cloud-hyperscalers-and-datacenter-capex",
-  "title": "Die Mikroökonomie von Cloud-Hyperskalern: Amortisation, Stromabnahmeverträge und Rechenzentrums-CapEx",
-  "excerpt": "Dekonstruktion der modernen Hyperscale-Ökonomie: GPU-Abschreibungszyklen, Atomstrom-Abkaufverträge und der Investitionsgraben der künstlichen Intelligenz.",
+  "title": "Die Mikroökonomie von Cloud-Hyperscalern",
+  "excerpt": "Dekonstruktion der modernen Hyperscale-Ökonomie: GPU-Abschreibungszyklen, Kaufverträge für Kernenergie und der Investitionsgraben der künstlichen Intelligenz.",
   "date": "2026-11-16",
   "author": "Claire Dupont",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Der astronomische Kapitalbedarf, um Grenzmodelle zu trainieren und Schlussfolgerungen auf globaler Ebene zu liefern, schafft eine unüberwindbare wirtschaftliche Eintrittsbarriere. Da Software-Startups mit steigenden Rechenkosten konfrontiert sind, steigt der Wert überproportional für Infrastrukturvermieter, die Land, Strom und amortisiertes Silizium über programmatische Cloud-APIs monetarisieren."
     }
   ],
-  "sourceHash": "cc5b29b34386e724685eabde709595046b7adf7c"
+  "sourceHash": "d9378ce9bfc4b0e5905316662447a3504165e05c"
 }

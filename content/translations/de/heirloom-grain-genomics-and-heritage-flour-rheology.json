@@ -1,6 +1,6 @@
 {
   "slug": "heirloom-grain-genomics-and-heritage-flour-rheology",
-  "title": "Genomik von Erbstückgetreide: Landrassenweizen, Rheologie des Glutennetzwerks und Bodenmikrobiome",
+  "title": "Genomik von Erbstückgetreide und Bodenökologie",
   "excerpt": "Analyse der Molekulargenetik von Einkorn, Emmer und Khorasan: Teigelastizitätsmetriken, enzymatische Amylaseaktivität und regenerative Widerstandsfähigkeit im Trockenanbau.",
   "date": "2026-11-16",
   "author": "Sofia Rossi",
@@ -12,7 +12,7 @@
     "soil-microbiome"
   ],
   "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Close-up golden heads of heirloom Einkorn and Emmer landrace wheats ripening in fertile field",
+  "imageAlt": "Nahaufnahme der goldenen Köpfe alter Einkorn- und Emmer-Landsorten, die auf fruchtbaren Feldern reifen",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Die evolutionäre Divergenz von altem und modernem Weizen"
+      "text": "Molekulare Architektur von Erbweizen"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Granite stone mill gently milling whole wheat berries at low temperatures to protect germ oils",
-      "caption": "Stone-milling craft: cold grain milling preserving living wheat germ tocopherols, dietary fiber, and natural amylase enzymes."
+      "alt": "Genomik von Erbstückgetreide: Landrassenweizen, Rheologie des Glutennetzwerks und Bodenmikrobiome – Abbildung 4",
+      "caption": "Empirische Beobachtung: Betriebsmechanik und grundlegende Telemetrie zur Unterstützung der Genomik von Erbstückgetreide: Landrassenweizen, Rheologie des Glutennetzwerks und Bodenmikrobiome."
     },
     {
       "type": "ul",
       "items": [
-        "Einkorn (Triticum monococcum): Diploid ancient grain containing a simpler fourteen-chromosome genome, yielding high carotenoid antioxidant concentrations and fragile, water-soluble gluten proteins.",
-        "Emmer & Khorasan (Tetraploid Grains): Twenty-eight-chromosome ancestors of durum wheat, rich in polyphenols and distinct alpha-gliadin epitopes that alter digestive enzymatic hydrolysis.",
-        "Gliadin-to-Glutenin Balance: Modern bread wheat is bred for extreme tenacity (P/L ratio on the alveograph), whereas heritage stone-ground flours possess superior extensibility and enzymatic fermentability.",
-        "Deep Rooting & Mycorrhizal Fungi: Unmodified heirloom landraces develop root systems up to two meters deep, mining subsoil trace minerals and thriving in drought without synthetic inputs."
+        "Einkorn (Triticum monococcum): Diploides Urgetreide mit einem einfacheren Genom aus vierzehn Chromosomen, das hohe Konzentrationen an Carotinoid-Antioxidantien und fragile, wasserlösliche Glutenproteine ​​liefert.",
+        "Emmer & Khorasan (Tetraploide Körner): Vorfahren des Hartweizens mit 28 Chromosomen, reich an Polyphenolen und ausgeprägten Alpha-Gliadin-Epitopen, die die enzymatische Hydrolyse des Verdauungssystems verändern.",
+        "Gliadin-zu-Glutenin-Gleichgewicht: Moderner Brotweizen wird für extreme Zähigkeit gezüchtet (P/L-Verhältnis im Alveographen), während traditionelle, steingemahlene Mehle eine überlegene Dehnbarkeit und enzymatische Fermentierbarkeit aufweisen.",
+        "Tiefwurzelnde und Mykorrhiza-Pilze: Unveränderte alte Landrassen entwickeln bis zu zwei Meter tiefe Wurzelsysteme, bauen Spurenelemente aus dem Untergrund ab und gedeihen auch bei Trockenheit ohne synthetische Zusätze."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Artisan sourdough loaf showing deep rustic caramelization, open crumb, and blistered crust",
-      "caption": "Gluten network rheology: ancient landrace wheats delivering balanced extensibility and enhanced bioavailability through long sourdough fermentation."
+      "alt": "Genomik von Erbstückgetreide: Landrassenweizen, Rheologie des Glutennetzwerks und Bodenmikrobiome – Abbildung 7",
+      "caption": "Empirische Beobachtung: Betriebsmechanik und grundlegende Telemetrie zur Unterstützung der Genomik von Erbstückgetreide: Landrassenweizen, Rheologie des Glutennetzwerks und Bodenmikrobiome."
     },
     {
       "type": "h2",
-      "text": "Die evolutionäre Divergenz von altem und modernem Weizen"
+      "text": "Steinfräsen versus Walzenreduktion"
     },
     {
       "type": "p",
-      "text": "Die Grüne Revolution Mitte des 20. Jahrhunderts vervierfachte erfolgreich die weltweiten Ernteerträge durch Zwergsorten, die für synthetische Stickstoffdünger, mechanische Ernte und schnelles industrielles Walzenmahlen optimiert waren. Dieser Züchtungsschwerpunkt reduzierte jedoch die genetische Vielfalt drastisch und verschob das Glutenproteinprofil hin zu hyperelastischen Strukturen mit hohem Gluteningehalt, die die menschliche Verdauung herausfordern und gleichzeitig die Gesundheit des landwirtschaftlichen Oberbodens beeinträchtigen."
+      "text": "Im Gegensatz zu Hochgeschwindigkeits-Walzenmühlen aus Stahl, die Keime und Kleie vom Endosperm abscheren, um lagerstabiles Weißmehl zu produzieren, zerkleinern langsam drehende Mühlsteine ​​aus Granit den ganzen Kornkern kalt. Dadurch bleiben das lebende Weizenkeimöl, die natürlichen Vitamin-E-Tocopherole und die native Enzymflora erhalten, die für eine authentische Wildsauerteiggärung erforderlich sind."
     },
     {
       "type": "video",
-      "title": "Ancient Grains vs Modern Wheat: Bread Rheology, Digestion, and Genetics",
-      "caption": "Laboratory comparison of dough mixing properties, alveograph curves, and sourdough fermentation kinetics across ancient wheats.",
-      "src": "https://www.youtube-nocookie.com/embed/8w5k9U3Zp7M"
+      "src": "https://www.youtube-nocookie.com/embed/8w5k9U3Zp7M",
+      "title": "Urgetreide vs. moderner Weizen: Brotrheologie, Verdauung und Genetik",
+      "caption": "Laborvergleich der Teigmischeigenschaften, Alveographenkurven und Sauerteigfermentationskinetik bei alten Weizensorten."
     },
     {
       "type": "h2",
-      "text": "Die evolutionäre Divergenz von altem und modernem Weizen"
+      "text": "Rückeroberung der landwirtschaftlichen Souveränität"
     },
     {
       "type": "p",
-      "text": "Die Grüne Revolution Mitte des 20. Jahrhunderts vervierfachte erfolgreich die weltweiten Ernteerträge durch Zwergsorten, die für synthetische Stickstoffdünger, mechanische Ernte und schnelles industrielles Walzenmahlen optimiert waren. Dieser Züchtungsschwerpunkt reduzierte jedoch die genetische Vielfalt drastisch und verschob das Glutenproteinprofil hin zu hyperelastischen Strukturen mit hohem Gluteningehalt, die die menschliche Verdauung herausfordern und gleichzeitig die Gesundheit des landwirtschaftlichen Oberbodens beeinträchtigen."
+      "text": "Indem sie die Verwaltung von altem Getreide mit dem Backen von wildem Sauerteig mit langer Gärung kombinieren, leisten kulinarische Handwerker und regenerative Landwirte Pionierarbeit für eine widerstandsfähige Lebensmittelzukunft. Die Würdigung der genetischen Komplexität der Getreidevorfahren würdigt sowohl die Vitalität des Bodens als auch die Ernährung des menschlichen Körpers."
     }
   ],
-  "sourceHash": "88492efd1f9dcc4a686813481f088241f50f005f"
+  "sourceHash": "3fbb1c0ca9c038a7b1f3ee91ea6fe52f92fd0c55"
 }

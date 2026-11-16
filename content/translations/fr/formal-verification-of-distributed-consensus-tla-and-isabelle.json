@@ -1,7 +1,7 @@
 {
   "slug": "formal-verification-of-distributed-consensus-tla-and-isabelle",
-  "title": "Vérification formelle du consensus distribué : TLA+, Isabelle/HOL et invariants mécanisés",
-  "excerpt": "Relier les spécifications mathématiques et les logiciels de production : comment la logique temporelle des actions, les mappages de raffinement et les démonstrateurs de théorèmes interactifs éliminent les fautes byzantines subtiles.",
+  "title": "Vérification formelle des systèmes distribués",
+  "excerpt": "Relier les spécifications mathématiques et les logiciels de production : comment la logique temporelle des actions, les mappages de raffinement et les prouveurs de théorèmes interactifs éliminent les fautes byzantines subtiles.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "La frontière de l'ingénierie système réside dans la compilation vérifiée : l'extraction de binaires C, Rust ou Go hautes performances directement à partir d'assistants de preuve sans aucune surcharge de traduction. En certifiant les bases de données distribuées au niveau du code machine, l'infrastructure cloud moderne obtient une immunité mathématique contre des taxonomies entières de dégradation du consensus distribué."
     }
   ],
-  "sourceHash": "460521e002b33c5d156b2b1e97d9cf87d19226cf"
+  "sourceHash": "d28681d94f4cdc946f54b724263201fca5478027"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "satellite-insar-geodesy-and-volcanic-magma-chamber-dynamics",
-  "title": "Radar interférométrique à synthèse d'ouverture (InSAR) et dynamique des chambres magmatiques : géodésie par satellite de l'inflation supervolcanique",
+  "title": "Radar satellite et dynamique du magma",
   "excerpt": "Une étude de géophysique et de télédétection par satellite : déroulement de la phase d'interférométrie radar, modèles de déformation de source ponctuelle Mogi, correction du retard atmosphérique et pressurisation pré-éruptive du magma.",
   "date": "2026-11-17",
   "author": "Elena Rostova",
@@ -31,7 +31,7 @@
       "type": "ul",
       "items": [
         "Franges de phase d'interférogramme : Chaque frange arc-en-ciel alternée dans un interférogramme différentiel correspond à une demi-longueur d'onde radar (généralement 2,8 cm pour les satellites Sentinel-1 en bande C) de déplacement de surface en ligne de visée.",
-        "Correction de l'écran de phase atmosphérique (APS) : atténuation des retards liés à la vapeur d'eau troposphérique à l'aide de modèles de réanalyse météorologique numérique (tels que l'ECMWF GACOS) pour empêcher les artefacts nuageux de se faire passer pour un soulèvement tectonique.",
+        "Correction de l'écran de phase atmosphérique (APS) : atténuation des retards liés à la vapeur d'eau troposphérique à l'aide de modèles numériques de réanalyse météorologique (tels que l'ECMWF GACOS) pour empêcher les artefacts nuageux de se faire passer pour un soulèvement tectonique.",
         "Modèles de sources analytiques Mogi & Yang : inversion des profils de déformation de surface pour calculer la profondeur, le changement de volume et le rapport d'aspect des réservoirs de magma sous pression situés entre 5 et 15 kilomètres sous terre.",
         "Interférométrie à diffusion persistante (PSI) : suivi de cibles réfléchissantes stables (affleurements rocheux, infrastructures) pendant des décennies pour isoler le fluage submillimétrique à travers des failles tectoniques complexes."
       ]
@@ -53,13 +53,13 @@
     },
     {
       "type": "p",
-      "text": "Lorsque le taux d’inflation de la surface s’accélère de manière non linéaire, la contrainte de traction dans la roche hôte dépasse la résistance à la traction, déclenchant la propagation des digues – du magma fondu fendant les fractures vers la surface. Le couplage de cartes de vitesse InSAR continues avec des réseaux de sismomètres à large bande en temps réel permet aux agences de protection civile d'émettre des avertissements d'évacuation des semaines avant qu'une éruption explosive ne se produise."
+      "text": "Lorsque le taux d'inflation de surface s'accélère de manière non linéaire, la contrainte de traction dans la roche hôte dépasse la résistance à la traction, déclenchant la propagation des digues – le magma fondu fendant les fractures vers la surface. Le couplage de cartes de vitesse InSAR continues avec des réseaux de sismomètres à large bande en temps réel permet aux agences de protection civile d'émettre des avertissements d'évacuation des semaines avant qu'une éruption explosive ne se produise."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/kc_T4buG2gE",
       "title": "Géodésie USGS : déformation des volcans et dynamique des chambres magmatiques",
-      "caption": "Interférométrie radar par satellite (InSAR) et modélisation géomécanique démontrant l'inflation de la croûte au-dessus des réservoirs de magma souterrains sous pression."
+      "caption": "Interférométrie radar par satellite (InSAR) et modélisation géomécanique démontrant l'inflation de la croûte terrestre au-dessus des réservoirs de magma souterrains sous pression."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Sur les caldeiras de Yellowstone et de Campi Flegrei, les enregistrements InSAR à long terme révèlent des cycles décennaux continus de soulèvement et de déflation sans éruption, connus sous le nom de bradyséisme. InSAR permet aux géophysiciens de faire la différence entre une expansion bénigne des gaz hydrothermaux et une recharge périlleuse du magma profond, établissant ainsi des critères empiriques clairs pour l’atténuation des risques géologiques."
     }
   ],
-  "sourceHash": "7e81a8ba1da5cd0254de1a71416a0732f35df3b8"
+  "sourceHash": "56a95419b1674ce9432cdf9c71b0ff214cdf8144"
 }

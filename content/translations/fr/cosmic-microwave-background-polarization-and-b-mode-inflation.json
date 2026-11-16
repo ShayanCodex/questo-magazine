@@ -1,7 +1,7 @@
 {
   "slug": "cosmic-microwave-background-polarization-and-b-mode-inflation",
-  "title": "Polarisation du fond cosmique des micro-ondes : ondes gravitationnelles primordiales en mode B et inflation cosmique",
-  "excerpt": "Déchiffrer l'écho primordial du Big Bang : comment les perturbations tensorielles, la diffusion de Thomson et les réseaux de bolomètres cryogéniques recherchent l'inflation cosmologique.",
+  "title": "Le fond cosmique des micro-ondes et l'inflation",
+  "excerpt": "Décrypter l'écho primordial du Big Bang : comment les perturbations tensorielles, la diffusion de Thomson et les réseaux de bolomètres cryogéniques recherchent l'inflation cosmologique.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -36,8 +36,8 @@
       "type": "ul",
       "items": [
         "Quadrupôles de diffusion de Thomson : la polarisation linéaire dans le CMB provient exclusivement des anisotropies de température quadripolaires incidentes sur les électrons libres lors de la recombinaison.",
-        "Polarisation en mode E : modèles de polarisation sans boucles, semblables à un gradient, générés par des perturbations de densité scalaire primordiales, cartographiés avec une précision extraordinaire par WMAP et Planck.",
-        "Polarisation en mode B : modèles de polarisation en forme de boucle, sans divergence, dont la source principale est les perturbations tensorielles métriques – ondes gravitationnelles primordiales produites lors de l'inflation cosmique.",
+        "Polarisation en mode E : modèles de polarisation sans boucles, de type gradient, générés par des perturbations de densité scalaire primordiales, cartographiés avec une précision extraordinaire par WMAP et Planck.",
+        "Polarisation en mode B : modèles de polarisation en forme de boucle, sans divergence, dont la source principale est des perturbations tensorielles métriques : des ondes gravitationnelles primordiales produites lors de l'inflation cosmique.",
         "Contamination par lentille gravitationnelle : les structures cosmiques intermédiaires transforment gravitationnellement les modes E purs en modes B secondaires, nécessitant des algorithmes statistiques complexes de délentille."
       ]
     },
@@ -66,8 +66,8 @@
     },
     {
       "type": "p",
-      "text": "L'objectif ultime de la polarimétrie CMB moderne est de contraindre le rapport tenseur/scalaire r. L'établissement d'une limite supérieure sur r contraint directement l'échelle énergétique de l'inflation cosmique, fournissant ainsi un terrain d'essai empirique pour les compactifications de la théorie des cordes et les théories de grande unification à des énergies de douze ordres de grandeur hors de portée des accélérateurs de particules terrestres."
+      "text": "L'objectif ultime de la polarimétrie CMB moderne est de contraindre le rapport tenseur sur scalaire r. L'établissement d'une limite supérieure sur r contraint directement l'échelle énergétique de l'inflation cosmique, fournissant ainsi un terrain d'essai empirique pour les compactifications de la théorie des cordes et les théories de grande unification à des énergies de douze ordres de grandeur hors de portée des accélérateurs de particules terrestres."
     }
   ],
-  "sourceHash": "a6dc12ab94e18a7f58a375cffbb2a5755989504b"
+  "sourceHash": "d2026976065dd039c76567da775350556db2c1e5"
 }

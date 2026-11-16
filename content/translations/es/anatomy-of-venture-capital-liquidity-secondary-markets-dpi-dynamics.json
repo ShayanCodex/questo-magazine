@@ -1,6 +1,6 @@
 {
   "slug": "anatomy-of-venture-capital-liquidity-secondary-markets-dpi-dynamics",
-  "title": "Anatomía de la liquidez del capital de riesgo y los mercados secundarios",
+  "title": "Capital de riesgo y mercados secundarios",
   "excerpt": "Una investigación financiera sobre ofertas públicas retrasadas, fondos de continuación, presiones de liquidez de LP y el surgimiento de intercambios secundarios privados.",
   "date": "2026-11-15",
   "author": "Julian Sterling",
@@ -12,7 +12,7 @@
     "finance"
   ],
   "image": "/images/articles/venture-capital-finance.jpg",
-  "imageAlt": "Modern financial district architectural atrium symbolizing private capital markets and investment banking",
+  "imageAlt": "Atrio arquitectónico del moderno distrito financiero que simboliza los mercados de capital privados y la banca de inversión",
   "body": [
     {
       "type": "h2",
@@ -24,56 +24,56 @@
     },
     {
       "type": "h2",
-      "text": "El déficit de liquidez estructural"
+      "text": "Puntos clave"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "Anatomía de la liquidez del capital riesgo y los mercados secundarios - Figura estructural 1",
+      "caption": "Análisis visual: esquemas arquitectónicos y representaciones de dominio técnico para la anatomía de la liquidez del capital riesgo y los mercados secundarios."
     },
     {
       "type": "ul",
       "items": [
-        "DPI vs. TVPI Divergence: Institutional limited partners (LPs) increasingly demand Distributed to Paid-In capital (DPI) rather than theoretical mark-ups (TVPI).",
-        "Continuation Vehicles: General partners (GPs) are creating structured secondary continuation funds to roll prized assets while offering liquidity windows.",
-        "Discount Pressures: Private secondary market transactions frequently clear at 20% to 40% discounts to previous sovereign venture funding valuations.",
-        "Institutional Secondary Platforms: The rise of algorithmic matching engines and standardized transfer documentation has turned private shares into a distinct asset class."
+        "DPI vs. Divergencia TVPI: Los socios comanditarios institucionales (LP) exigen cada vez más capital distribuido (DPI) en lugar de márgenes teóricos (TVPI).",
+        "Vehículos de continuación: Los socios generales (GP) están creando fondos de continuación secundarios estructurados para renovar activos preciados y al mismo tiempo ofrecer ventanas de liquidez.",
+        "Presiones de descuento: Las transacciones del mercado secundario privado frecuentemente se liquidan con descuentos del 20% al 40% sobre valoraciones anteriores de financiación de riesgo soberano.",
+        "Plataformas secundarias institucionales: el auge de los motores de comparación algorítmicos y la documentación de transferencia estandarizada ha convertido las acciones privadas en una clase de activos distinta."
       ]
     },
     {
       "type": "quote",
       "text": "Las tasas internas de rendimiento no realizadas no pueden financiar los pagos de pensiones institucionales. En un ecosistema de riesgo maduro, el DPI es la única métrica que preserva la confianza de quienes asignan capital.",
-      "cite": "Revisión trimestral de mercados privados institucionales"
+      "cite": "Revisión trimestral de los mercados privados institucionales"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Anatomy of Venture Capital Liquidity & Secondary Markets - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Anatomy of Venture Capital Liquidity & Secondary Markets."
+      "alt": "Anatomía de la liquidez del capital de riesgo y los mercados secundarios - Figura operativa 2",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respaldan la anatomía de la liquidez del capital de riesgo y los mercados secundarios."
     },
     {
       "type": "h2",
-      "text": "El déficit de liquidez estructural"
+      "text": "Secundarios liderados por GP y arquitectura de fondos"
     },
     {
       "type": "p",
-      "text": "Durante más de una década, el capital de riesgo operó con un volante predecible: recaudar fondos, desplegar capital en empresas de software de alto crecimiento y devolver los ingresos a través de ofertas públicas iniciales (IPO) o adquisiciones estratégicas dentro de un ciclo de vida del fondo de 7 a 10 años. Hoy en día, ese canal de liquidez convencional ha experimentado un estancamiento sistémico a medida que las empresas privadas permanecen sin cotizar durante 14 años o más."
+      "text": "Para evitar vender compañías de cartera de alta convicción en entornos tibios de IPO, los administradores de inversiones están recurriendo a vehículos secundarios de activo único liderados por GP. Estas transacciones permiten a los inversores secundarios externos inyectar capital de crecimiento fresco, mientras que los socios comanditarios existentes pueden optar por retirar efectivo o renovar su participación en la propiedad."
     },
     {
       "type": "video",
-      "title": "Private Equity and Venture Capital Secondary Markets Explained",
-      "caption": "Financial analysis breaking down how continuation funds, LP-led portfolio sales, and secondary transaction pricing operate in institutional finance.",
-      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI"
+      "src": "https://www.youtube-nocookie.com/embed/CBYhVcO4WgI",
+      "title": "Explicación de los mercados secundarios de capital privado y capital de riesgo",
+      "caption": "Análisis financiero que desglosa cómo operan los fondos de continuación, las ventas de cartera lideradas por LP y los precios de transacciones secundarias en las finanzas institucionales."
     },
     {
       "type": "h2",
-      "text": "El déficit de liquidez estructural"
+      "text": "El futuro de la maduración del capital riesgo"
     },
     {
       "type": "p",
-      "text": "Durante más de una década, el capital de riesgo operó con un volante predecible: recaudar fondos, desplegar capital en empresas de software de alto crecimiento y devolver los ingresos a través de ofertas públicas iniciales (IPO) o adquisiciones estratégicas dentro de un ciclo de vida del fondo de 7 a 10 años. Hoy en día, ese canal de liquidez convencional ha experimentado un estancamiento sistémico a medida que las empresas privadas permanecen sin cotizar durante 14 años o más."
+      "text": "A medida que las bolsas secundarias automaticen las conciliaciones de las tablas de capitalización y los obstáculos de cumplimiento, el capital privado y el capital de riesgo se parecerán a un mercado secundario continuo en lugar de un evento de liquidez episódico, reestructurando permanentemente la dinámica de capitalización de Silicon Valley."
     }
   ],
-  "sourceHash": "04ac31d7788c879d1bf2c553b8f1534c6753ec22"
+  "sourceHash": "e055dac954cef980b5122079851e24b65b910ad5"
 }

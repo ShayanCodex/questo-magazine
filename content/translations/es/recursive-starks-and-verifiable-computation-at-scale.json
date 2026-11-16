@@ -1,7 +1,7 @@
 {
   "slug": "recursive-starks-and-verifiable-computation-at-scale",
-  "title": "STARK recursivos y Halo2: las matemáticas de la verificación criptográfica sucinta",
-  "excerpt": "Un viaje matemático a través de esquemas de compromiso polinomial, pruebas de proximidad Reed-Solomon, IOP rápida de Reed-Solomon y composición de prueba recursiva.",
+  "title": "STARK recursivos y computación verificable",
+  "excerpt": "Un viaje matemático a través de esquemas de compromiso polinómico, pruebas de proximidad Reed-Solomon, IOP rápida de Reed-Solomon y composición de pruebas recursivas.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -20,7 +20,7 @@
     },
     {
       "type": "p",
-      "text": "La computación verificable representa el avance fundamental que permite que las máquinas estatales públicas descentralizadas escale horizontalmente. En redes de ejecución ingenuas, cada nodo de validación debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado. Los argumentos de conocimiento transparentes escalables (STARK) invierten este cuello de botella: un único probador no confiable genera una prueba criptográfica sucinta que da fe de la corrección computacional de millones de transiciones de estado, que cualquier verificador puede verificar en tiempo logarítmico."
+      "text": "La computación verificable representa el avance fundamental que permite que las máquinas estatales públicas descentralizadas escale horizontalmente. En redes de ejecución ingenuas, cada nodo de validación debe volver a ejecutar cada transacción secuencialmente para verificar la corrección del estado. Los Argumentos de Conocimiento Transparentes Escalables (STARK) invierten este cuello de botella: un único probador no confiable genera una prueba criptográfica sucinta que da fe de la corrección computacional de millones de transiciones de estado, que cualquier verificador puede verificar en tiempo logarítmico."
     },
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "Más allá de los libros de contabilidad financieros, los argumentos criptográficos sucintos proporcionan las primitivas matemáticas fundamentales para una inteligencia artificial verificable, sistemas de identidad que preservan la privacidad y auditorías interinstitucionales sin confianza. Al separar la computación de la verificación, las arquitecturas de conocimiento cero proporcionan la base estructural para la confianza criptográfica descentralizada."
     }
   ],
-  "sourceHash": "33404de307add18b4cf6527db88512b60aaceb9a"
+  "sourceHash": "f8a1409eef775d844de1f17afe6a2b80ee44f9b2"
 }

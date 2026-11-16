@@ -1,7 +1,7 @@
 {
   "slug": "neural-radiance-fields-and-real-time-gaussian-splatting-for-robotics",
-  "title": "3D Gaussian Splatting في الروبوتات: رسم الخرائط المكانية دون المللي ثانية وأنظمة SLAM",
-  "excerpt": "استبدال شبكات الإشغال المنفصلة بأشكال إهليلجية ثلاثية الأبعاد قابلة للتمييز: تقدير وضعية الكاميرا في الوقت الفعلي، وعرض الإشعاع الحجمي، والملاحة المستقلة في المساحات المزدحمة.",
+  "title": "3D Gaussian Splatting في الروبوتات",
+  "excerpt": "استبدال شبكات الإشغال المنفصلة بأشكال إهليلجية ثلاثية الأبعاد قابلة للتمييز: تقدير وضعية الكاميرا في الوقت الفعلي، وعرض الإشعاع الحجمي، والتنقل المستقل في المساحات المزدحمة.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -12,7 +12,7 @@
     "autonomous-systems"
   ],
   "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Autonomous robotic perception system scanning complex spatial environment with stereo cameras",
+  "imageAlt": "نظام إدراك آلي مستقل يقوم بمسح البيئة المكانية المعقدة باستخدام كاميرات استريو",
   "body": [
     {
       "type": "h2",
@@ -20,25 +20,25 @@
     },
     {
       "type": "p",
-      "text": "لعقود من الزمن، اعتمدت الروبوتات المتنقلة على خرائط شبكة الإشغال المنفصلة ثنائية وثلاثية الأبعاد، والسحب النقطية، والشبكات متعددة الأضلاع للتوطين ورسم الخرائط المتزامنين (SLAM). على الرغم من فعاليتها في تجنب العوائق الأساسية، إلا أن هذه التمثيلات تتجاهل الأنسجة السطحية الواقعية، والانعكاسات المرآوية المعتمدة على العرض، والفروق الدقيقة الهيكلية اللازمة للتلاعب الآلي السريع، والروبوتات الجراحية، والملاحة البشرية الديناميكية."
+      "text": "لعقود من الزمن، اعتمدت الروبوتات المتنقلة على خرائط شبكية منفصلة ثنائية وثلاثية الأبعاد، وسحب نقطية، وشبكات متعددة الأضلاع للتوطين ورسم الخرائط المتزامنة (SLAM). على الرغم من فعاليتها في تجنب العوائق الأساسية، إلا أن هذه التمثيلات تتجاهل الأنسجة السطحية الواقعية، والانعكاسات المرآوية المعتمدة على العرض، والفروق الدقيقة الهيكلية اللازمة للتلاعب الآلي السريع، والروبوتات الجراحية، والملاحة البشرية الديناميكية."
     },
     {
       "type": "h2",
-      "text": "حدود التمثيل المكاني التقليدي"
+      "text": "اختراق أجهزة Gaussian ثلاثية الأبعاد القابلة للتمييز"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Differentiable 3D Gaussian ellipsoids visualizing continuous scene geometry and radiance fields",
-      "caption": "3D Gaussian Splatting: modeling physical spaces as millions of differentiable ellipsoids for real-time robotic SLAM."
+      "alt": "3D Gaussian Splatting في الروبوتات: رسم الخرائط المكانية دون مللي ثانية وأنظمة SLAM - الشكل التشغيلي 4",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد التأسيسي الذي يدعم الرش الغاوسي ثلاثي الأبعاد في الروبوتات: رسم الخرائط المكانية دون مللي ثانية وأنظمة SLAM."
     },
     {
       "type": "ul",
       "items": [
-        "Differentiable Ellipsoids: 3D Gaussian Splatting represents physical scenes as millions of anisotropic 3D Gaussians, each characterized by position, covariance matrix (shape/scale), opacity, and spherical harmonic colors.",
-        "Tile-Based Rasterization: Unlike Neural Radiance Fields (NeRFs) requiring intensive volumetric ray-marching per pixel, Gaussians are projected to 2D screen space and sorted in hardware, rendering at over 120 FPS.",
-        "Gradient-Based Optimization: Camera pose estimates and scene geometry are jointly refined in real time through backpropagation against incoming camera frames.",
-        "Continuous Physics Integration: Continuous Gaussian density fields provide closed-form signed distance approximations, enabling physical collision checking without converting to complex meshes."
+        "الأشكال الإهليلجية القابلة للتمييز: يمثل 3D Gaussian Splatting مشاهد مادية كملايين من الأشكال الناقصية ثلاثية الأبعاد متباينة الخواص، ويتميز كل منها بالموضع، ومصفوفة التغاير (الشكل/المقياس)، والعتامة، والألوان التوافقية الكروية.",
+        "التنقيط القائم على البلاط: على عكس حقول الإشعاع العصبية (NeRFs) التي تتطلب تحركًا مكثفًا للأشعة الحجمية لكل بكسل، يتم عرض Gaussians على مساحة شاشة ثنائية الأبعاد وفرزها في الأجهزة، مما يؤدي إلى عرض أكثر من 120 إطارًا في الثانية.",
+        "التحسين القائم على التدرج: يتم تحسين تقديرات وضعية الكاميرا وهندسة المشهد بشكل مشترك في الوقت الفعلي من خلال الانتشار الخلفي مقابل إطارات الكاميرا الواردة.",
+        "التكامل الفيزيائي المستمر: توفر حقول الكثافة الغوسية المستمرة تقديرات تقريبية للمسافة الموقعة ذات الشكل المغلق، مما يتيح التحقق من الاصطدام المادي دون التحويل إلى شبكات معقدة."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Robotic trajectory planning through indoor obstacle field using real-time volumetric scene reconstruction",
-      "caption": "Tile-based rasterization: GPU acceleration delivering sub-millisecond pose updates and continuous collision avoidance."
+      "alt": "الرش الغاوسي ثلاثي الأبعاد في الروبوتات: رسم الخرائط المكانية دون المللي ثانية وأنظمة SLAM - الشكل التشغيلي 7",
+      "caption": "الملاحظة التجريبية: الميكانيكا التشغيلية والقياس عن بعد الأساسي الذي يدعم الرش الغاوسي ثلاثي الأبعاد في الروبوتات: رسم الخرائط المكانية دون المللي ثانية وأنظمة SLAM."
     },
     {
       "type": "h2",
-      "text": "حدود التمثيل المكاني التقليدي"
+      "text": "SLAM دون المللي ثانية في البيئات الديناميكية"
     },
     {
       "type": "p",
-      "text": "لعقود من الزمن، اعتمدت الروبوتات المتنقلة على خرائط شبكة الإشغال المنفصلة ثنائية وثلاثية الأبعاد، والسحب النقطية، والشبكات متعددة الأضلاع للتوطين ورسم الخرائط المتزامنين (SLAM). على الرغم من فعاليتها في تجنب العوائق الأساسية، إلا أن هذه التمثيلات تتجاهل الأنسجة السطحية الواقعية، والانعكاسات المرآوية المعتمدة على العرض، والفروق الدقيقة الهيكلية اللازمة للتلاعب الآلي السريع، والروبوتات الجراحية، والملاحة البشرية الديناميكية."
+      "text": "من خلال تنفيذ التحسين Gaussian على وحدات معالجة الرسومات الطرفية المدمجة، يمكن للطائرات بدون طيار الحديثة والروبوتات ذات الأرجل إعادة بناء خرائط ثلاثية الأبعاد واقعية للبيئات الداخلية غير المألوفة في الوقت الفعلي. عندما يجتاز الروبوت ممرات الغرفة، تتم تهيئة الأسطح التي تمت ملاحظتها حديثًا ديناميكيًا باستخدام أوليات غاوسية جديدة، في حين يتم تقليم النقاط المسدودة بشكل متكرر."
     },
     {
       "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88",
       "title": "3D Gaussian Splatting in Robotics: Real-Time SLAM and Mapping Breakdown",
-      "caption": "Engineering demonstration of real-time camera tracking, anisotropic Gaussian optimization, and collision avoidance.",
-      "src": "https://www.youtube-nocookie.com/embed/5F_fB2xZp88"
+      "caption": "عرض هندسي لتتبع الكاميرا في الوقت الفعلي، وتحسين غاوسي متباين الخواص، وتجنب الاصطدام."
     },
     {
       "type": "h2",
-      "text": "حدود التمثيل المكاني التقليدي"
+      "text": "مستقبل الذكاء المكاني المتجسد"
     },
     {
       "type": "p",
-      "text": "لعقود من الزمن، اعتمدت الروبوتات المتنقلة على خرائط شبكة الإشغال المنفصلة ثنائية وثلاثية الأبعاد، والسحب النقطية، والشبكات متعددة الأضلاع للتوطين ورسم الخرائط المتزامنين (SLAM). على الرغم من فعاليتها في تجنب العوائق الأساسية، إلا أن هذه التمثيلات تتجاهل الأنسجة السطحية الواقعية، والانعكاسات المرآوية المعتمدة على العرض، والفروق الدقيقة الهيكلية اللازمة للتلاعب الآلي السريع، والروبوتات الجراحية، والملاحة البشرية الديناميكية."
+      "text": "مع انتقال المنصات الروبوتية من الأقفاص الصناعية الصلبة إلى بيئات بشرية غير منظمة، يجب أن يتوافق الإدراك المكاني مع الثراء المستمر للرؤية البيولوجية. يوفر الرش الغاوسي ثلاثي الأبعاد الأساس الرياضي للآلات التي لا تتنقل في الفضاء فحسب، بل تفهم شكله المادي بصدق."
     }
   ],
-  "sourceHash": "43081c936b0147175e178f8716666471c30c8b11"
+  "sourceHash": "db9995631f54d3a33bb716c44b1ac5ee20fde5bf"
 }

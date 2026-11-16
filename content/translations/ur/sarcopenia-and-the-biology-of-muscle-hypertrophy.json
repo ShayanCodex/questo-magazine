@@ -1,0 +1,70 @@
+{
+  "slug": "sarcopenia-and-the-biology-of-muscle-hypertrophy",
+  "title": "The Science of Sarcopenia",
+  "excerpt": "The cellular biology of age-related muscle wasting: mTOR activation, satellite cell exhaustion, myostatin signaling, and resistance training interventions.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Sterling",
+  "tags": [
+    "longevity",
+    "sarcopenia",
+    "hypertrophy",
+    "exercise-physiology",
+    "biology",
+    "health"
+  ],
+  "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Athlete performing heavy barbell training in an athletic performance facility",
+  "body": [
+    {
+      "type": "h2",
+      "text": "The Silent Loss of Functional Skeletal Muscle"
+    },
+    {
+      "type": "p",
+      "text": "Sarcopenia is the involuntary, progressive loss of skeletal muscle mass, strength, and neuromuscular speed that occurs with aging. Beginning as early as age 30, adults lose 3% to 8% of muscle mass per decade, accelerating sharply after age 60. Muscle is not simply aesthetic tissue; it is the body's premier metabolic sink for glucose disposal and functional independence."
+    },
+    {
+      "type": "h2",
+      "text": "Cellular and Molecular Drivers"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Anabolic Resistance: Declining sensitivity of the mTORC1 intracellular pathway to dietary leucine and hyperaminoacidemia in aging myocytes.",
+        "Satellite Cell Depletion: Progressive quiescence and senescence of muscle stem cells responsible for myofibril repair after micro-trauma.",
+        "Denervation of Type II Fast-Twitch Fibers: Motor unit apoptosis leading to preferential atrophy of high-threshold explosive muscle fibers.",
+        "Chronic Low-Grade Inflammation: Elevated TNF-alpha and IL-6 cytokine signaling upregulating muscle-specific ubiquitin-proteasome degradation."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Muscle mass is your metabolic pension fund. If you do not actively invest in mechanical tension and protein synthesis early, frailty becomes inevitable.",
+      "cite": "Questo Center for Musculoskeletal Biology & Longevity"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Gymnasium training equipment showcasing heavy resistance training apparatus",
+      "caption": "Progressive mechanical overload: The gold-standard mechanical stimulus for stimulating muscle protein synthesis and preserving motor units."
+    },
+    {
+      "type": "h2",
+      "text": "Evidence-Based Hypertrophy Interventions"
+    },
+    {
+      "type": "p",
+      "text": "Reversing anabolic resistance requires two synergistic pillars: progressive resistance training targeting within 1-3 reps in reserve, paired with a daily protein intake of 1.6 to 2.2 grams per kilogram of body weight distributed across leucine-rich protein pulses."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/yNq2Nuwy9Rc",
+      "title": "Building Muscle and Preventing Sarcopenia with Dr. Brad Schoenfeld",
+      "caption": "Leading exercise scientist Dr. Brad Schoenfeld discusses resistance training protocols, protein timing, and combating muscle loss across the lifespan."
+    },
+    {
+      "type": "p",
+      "text": "High-intensity resistance training stimulates satellite cell recruitment and restores neuromuscular communication well into octogenarian years."
+    }
+  ],
+  "sourceHash": "98e78fb1259000bf4f6465e4cc273994141cb81c"
+}

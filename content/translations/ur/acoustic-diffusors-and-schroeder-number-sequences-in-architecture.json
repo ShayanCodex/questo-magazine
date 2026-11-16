@@ -1,6 +1,6 @@
 {
   "slug": "acoustic-diffusors-and-schroeder-number-sequences-in-architecture",
-  "title": "آرکیٹیکچر میں صوتی ڈفیوسر اور شروڈر کے سلسلے",
+  "title": "صوتی ڈفیوسر اور شروڈر کے سلسلے",
   "excerpt": "کنسرٹ ہالوں میں چوکور باقیات اور قدیم جڑ کے پھیلاؤ، مرحلے کی جھاڑیوں کے بکھرنے، اور صوتی جگہ کی اصلاح کے ریاضیاتی اصول۔",
   "date": "2026-11-15",
   "author": "Elena Rostova",
@@ -12,7 +12,7 @@
     "concert-halls"
   ],
   "image": "/images/articles/acoustic-wood-architecture.jpg",
-  "imageAlt": "Sculptural acoustic timber wall panels and architectural baffles in a modern philharmonic auditorium",
+  "imageAlt": "ایک جدید فلہارمونک آڈیٹوریم میں مجسمہ سازی کے صوتی لکڑی کے دیوار کے پینل اور تعمیراتی چکر",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "سپیکولر عکاسی اور جذب سے آگے"
+      "text": "کلیدی نکات"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Structural Figure 1",
-      "caption": "Visual analysis: architectural schematics and technical domain representations for Acoustic Diffusors & Schroeder Sequences in Architecture."
+      "alt": "آرکیٹیکچر میں صوتی ڈفیوسر اور شروڈر کے سلسلے - آپریشنل شکل 4",
+      "caption": "تجرباتی مشاہدہ: آپریشنل میکینکس اور فاؤنڈیشنل ٹیلی میٹری جو آرکیٹیکچر میں ایکوسٹک ڈفیوسر اور شروڈر سیکوینس کو سپورٹ کرتی ہے۔"
     },
     {
       "type": "ul",
       "items": [
-        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths that shift phase evenly.",
-        "Primitive Root Diffusors (PRD): Utilize prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
-        "Preservation of Reverberant Energy: Unlike fiberglass absorbers, diffusors maintain room energy while eliminating flutter echoes and comb filtering.",
-        "Spatial Envelopment: Distributed phase grating arrays enhance the subjective impression of listener envelopment (LEV) in symphonic halls."
+        "Quadratic Residue Diffusors (QRD): ریاضی کے ماڈیولر ریاضی کا استعمال کرتے ہوئے ڈیزائن کیا گیا $s_n = n^2 \\pmod{N}$، اچھی گہرائیوں کو تخلیق کرتا ہے جو مرحلے کو یکساں طور پر منتقل کرتی ہے۔",
+        "پرائمیٹو روٹ ڈفیوسر (PRD): پرائم نمبر تھیوری کو استعمال کریں تاکہ وسیع وسط فریکوئنسی اکوسٹک بینڈز میں قیاس آرائی کے زیرو آرڈر ریفلیکشنز کو ختم کیا جا سکے۔",
+        "ریوربرنٹ انرجی کا تحفظ: فائبر گلاس جذب کرنے والوں کے برعکس، ڈفیوسر پھڑپھڑانے کی بازگشت اور کنگھی فلٹرنگ کو ختم کرتے ہوئے کمرے کی توانائی کو برقرار رکھتے ہیں۔",
+        "مقامی لفافہ: تقسیم شدہ فیز گریٹنگ ارے سمفونک ہالوں میں سامعین کے لفافے (LEV) کے ساپیکش تاثر کو بڑھاتے ہیں۔"
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Acoustic Diffusors & Schroeder Sequences in Architecture - Operational Figure 2",
-      "caption": "Empirical observation: operational mechanics and foundational telemetry supporting Acoustic Diffusors & Schroeder Sequences in Architecture."
+      "alt": "آرکیٹیکچر میں صوتی ڈفیوسر اور شروڈر کے سلسلے - آپریشنل شکل 2",
+      "caption": "تجرباتی مشاہدہ: آپریشنل میکینکس اور فاؤنڈیشنل ٹیلی میٹری جو آرکیٹیکچر میں ایکوسٹک ڈفیوسر اور شروڈر سیکوینس کو سپورٹ کرتی ہے۔"
     },
     {
       "type": "h2",
-      "text": "سپیکولر عکاسی اور جذب سے آگے"
+      "text": "فیز گریٹنگ ریاضی"
     },
     {
       "type": "p",
-      "text": "آرکیٹیکچرل صوتی سائنس مخصوص عکاسی اور غیر محفوظ جذب کے بائنری تناؤ سے آگے بڑھی ہے۔ جب کہ سخت پلانر سطحیں آئینے جیسی آواز کی عکاسی کرتی ہیں اور گھنے کپڑے صوتی توانائی کو کم کرتے ہیں، ڈفیوسر وقوعہ کی لہر کی توانائی کو وقت کے ساتھ یکساں طور پر پھیلاتے ہیں اور محیطی صوتی قوت کو ختم کیے بغیر مقامی نقاط۔"
+      "text": "1970 کی دہائی کے اواخر میں ماہر طبیعیات مینفریڈ شروڈر کی طرف سے شروع کیا گیا، ریاضی کے مرحلے کی گریٹنگز پتلی صوتی تقسیم کرنے والوں سے الگ الگ اچھی طرح سے گہرائیوں کا استعمال کرتی ہیں۔ جب کسی واقعہ کی لہر کا ان کنوؤں سے سامنا ہوتا ہے، تو جھلکتی لہریں الگ الگ مرحلے میں تاخیر کے ساتھ باہر نکلتی ہیں، جس کے نتیجے میں مخصوص محور کے ساتھ تباہ کن مداخلت ہوتی ہے اور کہیں اور پھیل جاتی ہے۔"
     },
     {
       "type": "video",
-      "title": "Architectural Acoustics & Schroeder Diffusor Physics",
-      "caption": "An engineering overview of quadratic residue diffusors, well-depth calculations, and sound diffusion patterns in auditoriums.",
-      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ"
+      "src": "https://www.youtube-nocookie.com/embed/dihQuwrf9yQ",
+      "title": "آرکیٹیکچرل ایکوسٹکس اور شروڈر ڈفیوسر فزکس",
+      "caption": "آڈیٹوریم میں چوکور باقیات کے پھیلاؤ، اچھی طرح سے گہرائی کے حساب کتاب، اور آواز کے پھیلاؤ کے نمونوں کا ایک انجینئرنگ جائزہ۔"
     },
     {
       "type": "h2",
-      "text": "سپیکولر عکاسی اور جذب سے آگے"
+      "text": "معاصر ڈیزائن میں کمپیوٹیشنل آپٹیمائزیشن"
     },
     {
       "type": "p",
-      "text": "آرکیٹیکچرل صوتی سائنس مخصوص عکاسی اور غیر محفوظ جذب کے بائنری تناؤ سے آگے بڑھی ہے۔ جب کہ سخت پلانر سطحیں آئینے جیسی آواز کی عکاسی کرتی ہیں اور گھنے کپڑے صوتی توانائی کو کم کرتے ہیں، ڈفیوسر وقوعہ کی لہر کی توانائی کو وقت کے ساتھ یکساں طور پر پھیلاتے ہیں اور محیطی صوتی قوت کو ختم کیے بغیر مقامی نقاط۔"
+      "text": "عصری آرکیٹیکچرل پریکٹس پیرامیٹرک فائنائٹ ایلیمنٹ ویو ماڈلنگ کا استعمال کرتے ہوئے 3D انڈولیٹنگ ٹمبر پینلز کو براہ راست آڈیٹوریم کے اندرونی جیومیٹری میں تراشتے ہیں، صوتی طبیعیات کو مجسمہ سازی کے جمالیات کے ساتھ ملاتے ہیں۔"
     }
   ],
-  "sourceHash": "a694b4a265a24dd1874e8c29c785c9ef5dd9ef57"
+  "sourceHash": "0556e0be29731cbb294daa6683e2e47b6fda9836"
 }

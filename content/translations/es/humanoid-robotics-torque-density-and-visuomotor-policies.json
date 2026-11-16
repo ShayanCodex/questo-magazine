@@ -1,7 +1,7 @@
 {
   "slug": "humanoid-robotics-torque-density-and-visuomotor-policies",
-  "title": "Robótica humanoide, densidad de par de actuadores y políticas neuronales visuomotoras de extremo a extremo en tiempo real",
-  "excerpt": "Una investigación de ingeniería sobre la mecánica de la locomoción humanoide bípeda: actuadores planetarios de accionamiento casi directo, cinemática de engranajes cicloidales y políticas neuronales visuomotoras basadas en transformadores que se ejecutan a 100 Hz.",
+  "title": "Robótica humanoide y dinámica de actuadores",
+  "excerpt": "Una investigación de ingeniería sobre la mecánica de la locomoción humanoide bípeda: actuadores planetarios de accionamiento casi directo, cinemática de engranajes cicloidales y políticas neuronales visomotoras basadas en transformadores que se ejecutan a 100 Hz.",
   "date": "2026-11-17",
   "author": "Elena Vance",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "A medida que las plataformas de hardware alcanzan la madurez estructural con tiempos de funcionamiento de baterías de titanato de litio de varias horas y estructuras esqueléticas compuestas de carbono, el reactivo limitante pasa por completo a la adquisición de datos táctiles y la generalización de políticas. La realización definitiva del paradigma humanoide no se logrará en fábricas aisladas, sino en sistemas autónomos capaces de realizar un aprendizaje táctil continuo y autosupervisado en todo el caótico mundo físico."
     }
   ],
-  "sourceHash": "ddd4c2e5bb67e3e5999387adb27f2b26b593ff2e"
+  "sourceHash": "dd0951bd88216edf532939e421077bacc2fdcb30"
 }

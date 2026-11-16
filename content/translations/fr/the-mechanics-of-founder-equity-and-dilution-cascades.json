@@ -1,7 +1,7 @@
 {
   "slug": "the-mechanics-of-founder-equity-and-dilution-cascades",
-  "title": "Les mécanismes des capitaux propres des fondateurs : tableaux de plafonds, préférences de liquidation et cascades de dilution",
-  "excerpt": "Un examen mathématique rigoureux des instruments convertibles, des remaniements de pools d'options, des filigranes de liquidation et des mécanismes d'antidilution descendants.",
+  "title": "Les mécanismes des capitaux propres des fondateurs",
+  "excerpt": "Un examen mathématique rigoureux des instruments convertibles, des mélanges de pools d'options, des filigranes de liquidation et des mécanismes d'antidilution descendants.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -12,68 +12,68 @@
     "startups"
   ],
   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Modern glass skyscraper headquarters representing venture finance and corporate equity governance",
+  "imageAlt": "Siège social moderne de gratte-ciel en verre représentant le financement de risque et la gouvernance des capitaux propres d'entreprise",
   "body": [
     {
       "type": "h2",
-      "text": "Les mathématiques des tables de capitalisation"
+      "text": "Les mathématiques des tableaux de capitalisation"
     },
     {
       "type": "p",
-      "text": "Au début du cycle de vie des entreprises technologiques, les tables de capitalisation sont souvent traitées comme des grands livres comptables statiques plutôt que comme des systèmes dynamiques de créances différentielles. Au fur et à mesure que les entreprises progressent depuis les obligations convertibles de pré-amorçage jusqu'aux tours de table privilégiés successifs, les effets cumulés de l'expansion du pool d'options non allouées, des multiplicateurs privilégiés participants et des préférences de liquidation senior créent de profondes non-linéarités dans la réalisation finale des actions."
+      "text": "Au début du cycle de vie des entreprises technologiques, les tableaux de capitalisation sont souvent traités comme des grands livres comptables statiques plutôt que comme des systèmes dynamiques de créances différentielles. Au fur et à mesure que les entreprises progressent depuis les obligations convertibles de pré-amorçage jusqu'aux tours de table privilégiés successifs, les effets cumulés de l'expansion du pool d'options non allouées, des multiplicateurs privilégiés participants et des préférences de liquidation senior créent de profondes non-linéarités dans la réalisation finale des actions."
     },
     {
       "type": "h2",
-      "text": "Les mathématiques des tables de capitalisation"
+      "text": "Mécanique structurelle de la dilution précoce"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Executive venture financing agreement and capitalization table term sheet modeling",
-      "caption": "Option pool shuffle: pre-money ESOP allocation concentrating dilution risk entirely upon founding common equity."
+      "alt": "La mécanique des capitaux propres des fondateurs : tableaux de plafonds, préférences de liquidation et cascades de dilution - Opérationnel Figure 4",
+      "caption": "Observation empirique : mécanismes opérationnels et télémétrie fondamentale soutenant les mécanismes des capitaux propres des fondateurs : tableaux de plafonds, préférences de liquidation et cascades de dilution."
     },
     {
       "type": "ul",
       "items": [
-        "The Option Pool Shuffle: Expanding employee stock ownership plans (ESOP) immediately prior to rather than following a financing round systematically shifts dilution entirely onto existing common stockholders.",
-        "Convertible Valuation Caps vs Discounts: Early SAFEs that convert into subsequent priced equity without pre-money consensus can inadvertently trigger massive ownership compression for founders.",
-        "Liquidation Preference Watermarks: 1x non-participating preferred shares establish a floor of downside protection, whereas participating preferred structures grant investors double-dipping rights into residual common value.",
-        "Broad-Based Weighted Average Antidilution: Mathematical adjustment formulas protect preferred series in down-rounds while mitigating the destructive wipeout risk of full-ratchet provisions."
+        "Le remaniement des pools d'options : l'expansion des plans d'actionnariat salarié (ESOP) immédiatement avant plutôt qu'après un cycle de financement transfère systématiquement la dilution entièrement sur les actionnaires ordinaires existants.",
+        "Plafonds de valorisation convertibles et réductions : les premiers SAFE convertis en actions évaluées ultérieurement sans consensus préalable à l'argent peuvent déclencher par inadvertance une compression massive de la propriété pour les fondateurs.",
+        "Filigranes de préférence de liquidation : les actions privilégiées 1x non participantes établissent un plancher de protection contre les baisses, tandis que les structures privilégiées participantes accordent aux investisseurs des droits de double déduction dans la valeur commune résiduelle.",
+        "Antidilution moyenne pondérée à large base : des formules d'ajustement mathématiques protègent les séries préférées lors des baisses tout en atténuant le risque d'effacement destructeur des dispositions à cliquet complet."
       ]
     },
     {
       "type": "quote",
       "text": "Une table de capitalisation n'est pas simplement un enregistrement de propriété ; il s’agit d’un contrat structurel régissant la répartition des risques, les droits de contrôle et l’alignement des incitations en aval dans un contexte d’incertitude économique extrême.",
-      "cite": "Examen du financement d'entreprise et de la gouvernance de risque"
+      "cite": "Examen de la finance d'entreprise et de la gouvernance de risque"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Corporate governance board meeting evaluating liquidation waterfall payouts and dilution curves",
-      "caption": "Liquidation waterfalls: modeling payout thresholds across non-participating preferred seniority tranches."
+      "alt": "Les mécanismes des capitaux propres des fondateurs : tableaux de plafonds, préférences de liquidation et cascades de dilution - Opérationnel Figure 7",
+      "caption": "Observation empirique : mécanismes opérationnels et télémétrie fondamentale soutenant les mécanismes des capitaux propres des fondateurs : tableaux de plafonds, préférences de liquidation et cascades de dilution."
     },
     {
       "type": "h2",
-      "text": "Les mathématiques des tables de capitalisation"
+      "text": "Modélisation en cascade et contingences descendantes"
     },
     {
       "type": "p",
-      "text": "Au début du cycle de vie des entreprises technologiques, les tables de capitalisation sont souvent traitées comme des grands livres comptables statiques plutôt que comme des systèmes dynamiques de créances différentielles. Au fur et à mesure que les entreprises progressent depuis les obligations convertibles de pré-amorçage jusqu'aux tours de table privilégiés successifs, les effets cumulés de l'expansion du pool d'options non allouées, des multiplicateurs privilégiés participants et des préférences de liquidation senior créent de profondes non-linéarités dans la réalisation finale des actions."
+      "text": "Lorsque la valeur de l’entreprise de sortie ne dépasse pas le capital privilégié global investi plus les dividendes cumulatifs, la mécanique en cascade impose que les actions ordinaires reçoivent un rendement nul, quelle que soit la durée d’exploitation. Les fondateurs sophistiqués modélisent les distributions de liquidation sur des courbes de valorisation continues, évaluant l'élasticité des paiements avant d'accepter des conditions de gouvernance agressives ou des tranches de priorité de liquidation."
     },
     {
       "type": "video",
-      "title": "Venture Capital Cap Table Mechanics and Liquidation Preference Analysis",
-      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution.",
-      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E",
+      "title": "Mécanismes du tableau de capital-risque et analyse des préférences de liquidation",
+      "caption": "Examen quantitatif détaillé de la conversion des actions privilégiées, de la priorité de la cascade de liquidation et de la dilution du fondateur."
     },
     {
       "type": "h2",
-      "text": "Les mathématiques des tables de capitalisation"
+      "text": "Préserver l'alignement des dirigeants à long terme"
     },
     {
       "type": "p",
-      "text": "Au début du cycle de vie des entreprises technologiques, les tables de capitalisation sont souvent traitées comme des grands livres comptables statiques plutôt que comme des systèmes dynamiques de créances différentielles. Au fur et à mesure que les entreprises progressent depuis les obligations convertibles de pré-amorçage jusqu'aux tours de table privilégiés successifs, les effets cumulés de l'expansion du pool d'options non allouées, des multiplicateurs privilégiés participants et des préférences de liquidation senior créent de profondes non-linéarités dans la réalisation finale des actions."
+      "text": "Une gouvernance d'entreprise durable nécessite une modélisation transparente des cascades de dilution dès le départ. En maintenant des classes d'actions propres, en évitant les clauses de participation non standard et en effectuant des simulations pro forma rigoureuses à plusieurs tours, les équipes de direction protègent l'autonomie opérationnelle tout en créant une distribution transparente de la valeur entre toutes les parties prenantes institutionnelles et salariales."
     }
   ],
-  "sourceHash": "e62f37573d49b9a50ddc0354e6511265a37bc9f3"
+  "sourceHash": "108116cf63485f8b18c824787539dd90c178a43b"
 }

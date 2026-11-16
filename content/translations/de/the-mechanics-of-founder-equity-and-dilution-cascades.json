@@ -1,7 +1,7 @@
 {
   "slug": "the-mechanics-of-founder-equity-and-dilution-cascades",
-  "title": "Die Mechanismen des Gründerkapitals: Cap-Tabellen, Liquidationspräferenzen und Verwässerungskaskaden",
-  "excerpt": "Eine strenge mathematische Untersuchung von wandelbaren Instrumenten, Optionspool-Mischungen, Liquidationswasserzeichen und Down-Round-Antiverwässerungsmechanismen.",
+  "title": "Die Mechanismen des Gründerkapitals",
+  "excerpt": "Eine strenge mathematische Untersuchung von wandelbaren Instrumenten, Optionspool-Mischungen, Liquidationswasserzeichen und Down-Round-Antidilution-Mechaniken.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -12,11 +12,11 @@
     "startups"
   ],
   "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Modern glass skyscraper headquarters representing venture finance and corporate equity governance",
+  "imageAlt": "Moderne gläserne Wolkenkratzer-Hauptquartiere, die Risikofinanzierung und Corporate Equity Governance repräsentieren",
   "body": [
     {
       "type": "h2",
-      "text": "Die Mathematik von Kapitalisierungstabellen"
+      "text": "Die Mathematik der Kapitalisierungstabellen"
     },
     {
       "type": "p",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Die Mathematik von Kapitalisierungstabellen"
+      "text": "Strukturelle Mechanismen der Verwässerung im Frühstadium"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Executive venture financing agreement and capitalization table term sheet modeling",
-      "caption": "Option pool shuffle: pre-money ESOP allocation concentrating dilution risk entirely upon founding common equity."
+      "alt": "Die Mechanismen des Gründerkapitals: Cap-Tabellen, Liquidationspräferenzen und Verwässerungskaskaden – Abbildung 4",
+      "caption": "Empirische Beobachtung: Betriebsmechanik und grundlegende Telemetrie zur Unterstützung der Mechanismen des Gründerkapitals: Cap-Tabellen, Liquidationspräferenzen und Verwässerungskaskaden."
     },
     {
       "type": "ul",
       "items": [
-        "The Option Pool Shuffle: Expanding employee stock ownership plans (ESOP) immediately prior to rather than following a financing round systematically shifts dilution entirely onto existing common stockholders.",
-        "Convertible Valuation Caps vs Discounts: Early SAFEs that convert into subsequent priced equity without pre-money consensus can inadvertently trigger massive ownership compression for founders.",
-        "Liquidation Preference Watermarks: 1x non-participating preferred shares establish a floor of downside protection, whereas participating preferred structures grant investors double-dipping rights into residual common value.",
-        "Broad-Based Weighted Average Antidilution: Mathematical adjustment formulas protect preferred series in down-rounds while mitigating the destructive wipeout risk of full-ratchet provisions."
+        "Der Option Pool Shuffle: Die Ausweitung von Mitarbeiterbeteiligungsplänen (ESOP) unmittelbar vor einer Finanzierungsrunde und nicht nach dieser verlagert die Verwässerung systematisch vollständig auf die bestehenden Stammaktionäre.",
+        "Bewertungsobergrenzen für Wandelanleihen im Vergleich zu Abschlägen: Frühe SAFEs, die ohne Konsens vor der Geldanlage in nachträglich bewertetes Eigenkapital umgewandelt werden, können unbeabsichtigt eine massive Eigentumskompression für Gründer auslösen.",
+        "Liquidationspräferenz-Wasserzeichen: 1x nicht partizipierende Vorzugsaktien bilden eine Untergrenze für den Abwärtsschutz, während partizipierende Vorzugsstrukturen Anlegern das Recht einräumen, doppelt in den verbleibenden Stammwert einzutauchen.",
+        "Breit angelegter gewichteter durchschnittlicher Antidilutionsschutz: Mathematische Anpassungsformeln schützen bevorzugte Serien in Abwärtsrunden und mindern gleichzeitig das destruktive Auslöschungsrisiko von Full-Ratchet-Bestimmungen."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Corporate governance board meeting evaluating liquidation waterfall payouts and dilution curves",
-      "caption": "Liquidation waterfalls: modeling payout thresholds across non-participating preferred seniority tranches."
+      "alt": "Die Mechanismen des Gründerkapitals: Cap-Tabellen, Liquidationspräferenzen und Verwässerungskaskaden – Abbildung 7",
+      "caption": "Empirische Beobachtung: Betriebsmechanik und grundlegende Telemetrie zur Unterstützung der Mechanismen des Gründerkapitals: Cap-Tabellen, Liquidationspräferenzen und Verwässerungskaskaden."
     },
     {
       "type": "h2",
-      "text": "Die Mathematik von Kapitalisierungstabellen"
+      "text": "Wasserfallmodellierung und Down-Round-Kontingenzen"
     },
     {
       "type": "p",
-      "text": "Im frühen Lebenszyklus von Technologieunternehmen werden Kapitalisierungstabellen häufig als statische Buchhaltungsbücher und nicht als dynamische Systeme für Differenzforderungen behandelt. Während Unternehmen von Pre-Seed-Wandelanleihen zu aufeinanderfolgenden Vorzugsrunden mit Preisgestaltung übergehen, führen die sich verstärkenden Effekte von nicht zugewiesenen Optionspoolerweiterungen, teilnehmenden Vorzugsmultiplikatoren und vorrangigen Liquidationspräferenzen zu tiefgreifenden Nichtlinearitäten bei der endgültigen Kapitalverwertung."
+      "text": "Wenn der Wert des Exit-Unternehmens das gesamte investierte Vorzugskapital zuzüglich der kumulierten Dividenden nicht übersteigt, schreiben Wasserfallmechanismen vor, dass Stammaktien unabhängig von der Betriebsdauer keine Rendite erzielen. Erfahrene Gründer modellieren Liquidationsverteilungen über kontinuierliche Bewertungskurven und bewerten die Auszahlungselastizität, bevor sie aggressiven Governance-Bedingungen oder Liquidations-Senioritätstranchen zustimmen."
     },
     {
       "type": "video",
-      "title": "Venture Capital Cap Table Mechanics and Liquidation Preference Analysis",
-      "caption": "Detailed quantitative walk-through of preferred stock conversion, liquidation waterfall priority, and founder dilution.",
-      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E",
+      "title": "Mechanismen der Venture-Capital-Cap-Tabelle und Analyse der Liquidationspräferenzen",
+      "caption": "Detaillierter quantitativer Überblick über die Umwandlung von Vorzugsaktien, die Liquidationswasserfallpriorität und die Gründerverwässerung."
     },
     {
       "type": "h2",
-      "text": "Die Mathematik von Kapitalisierungstabellen"
+      "text": "Wahrung der langfristigen Ausrichtung der Führungskräfte"
     },
     {
       "type": "p",
-      "text": "Im frühen Lebenszyklus von Technologieunternehmen werden Kapitalisierungstabellen häufig als statische Buchhaltungsbücher und nicht als dynamische Systeme für Differenzforderungen behandelt. Während Unternehmen von Pre-Seed-Wandelanleihen zu aufeinanderfolgenden Vorzugsrunden mit Preisgestaltung übergehen, führen die sich verstärkenden Effekte von nicht zugewiesenen Optionspoolerweiterungen, teilnehmenden Vorzugsmultiplikatoren und vorrangigen Liquidationspräferenzen zu tiefgreifenden Nichtlinearitäten bei der endgültigen Kapitalverwertung."
+      "text": "Nachhaltige Unternehmensführung erfordert eine transparente Modellierung von Verwässerungskaskaden von Anfang an. Durch die Aufrechterhaltung sauberer Aktienklassen, die Vermeidung nicht standardmäßiger Beteiligungsvereinbarungen und die Durchführung strenger Pro-forma-Simulationen in mehreren Runden schützen die Führungsteams die operative Autonomie und schaffen gleichzeitig eine transparente Wertverteilung über alle institutionellen und Mitarbeiter-Stakeholder."
     }
   ],
-  "sourceHash": "e62f37573d49b9a50ddc0354e6511265a37bc9f3"
+  "sourceHash": "108116cf63485f8b18c824787539dd90c178a43b"
 }

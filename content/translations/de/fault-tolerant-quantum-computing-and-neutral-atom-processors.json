@@ -1,7 +1,7 @@
 {
   "slug": "fault-tolerant-quantum-computing-and-neutral-atom-processors",
-  "title": "Neutrale Atome und optische Pinzetten: Die Grenze fehlertoleranter Quantenprozessoren",
-  "excerpt": "Untersuchung lasergekühlter Rubidium-Arrays, Rydberg-Wechselwirkungstore und räumlicher 2D-Rekonfigurierbarkeit: Wie neutrale Atomarchitekturen physikalisch-logische Qubits beschleunigen.",
+  "title": "Neutrale Atome und Quantenprozessoren",
+  "excerpt": "Untersuchung lasergekühlter Rubidium-Arrays, Rydberg-Wechselwirkungstore und räumlicher 2D-Rekonfigurierbarkeit: Wie Architekturen neutraler Atome physikalisch-logische Qubits beschleunigen.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -70,5 +70,5 @@
       "text": "Da neutrale Atomarchitekturen über tausend physikalische Qubits hinaus skalieren, ermöglichen sie exakte Simulationen komplexer molekularer Katalysatoren, stickstofffixierender Enzyme und Hochtemperatur-Supraleiter und bieten einen praktischen wissenschaftlichen Nutzen, der weit über die Reichweite klassischer Supercomputer hinausgeht."
     }
   ],
-  "sourceHash": "4242a284f6d5ea2e4c06cb3acc4f693a6affe1ec"
+  "sourceHash": "707677a3b0e3d16229e6f35340538b18b718c94c"
 }

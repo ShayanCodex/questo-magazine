@@ -1,0 +1,74 @@
+{
+  "slug": "dark-matter-detection-and-the-axion-haloscope-hunt",
+  "title": "Die Suche nach Dunkler Materie",
+  "excerpt": "Eine teilchenphysikalische Untersuchung des unsichtbaren Universums: das starke CP-Problem, Primakoff-Umwandlungsmechanik, kryogene Mikrowellenhaloskope und die Jagd nach QCD-Axionen.",
+  "date": "2026-11-17",
+  "author": "Julian Mercer",
+  "tags": [
+    "particle-physics",
+    "dark-matter",
+    "axions",
+    "cosmology",
+    "quantum-physics",
+    "astronomy"
+  ],
+  "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Der tiefe astronomische Raum zeigt entfernte Galaxienhaufen, Halos mit Gravitationslinsenwirkung und mysteriöse kosmische Hohlräume.",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der Gravitationsschatten des unsichtbaren Universums."
+    },
+    {
+      "type": "p",
+      "text": "Astrophysikalische Beobachtungen auf mehreren unabhängigen Skalen – von den flachen Rotationsgeschwindigkeitskurven von Spiralgalaxien über die Gravitationslinse im Bullet-Cluster bis hin zu den akustischen Spitzen des kosmischen Mikrowellenhintergrunds – zeigen, dass gewöhnliche baryonische Materie weniger als 15 % davon ausmacht alle Materie im Universum. Die restlichen 85 % sind dunkle Materie: nicht leuchtend, nicht baryonisch und praktisch kollisionsfrei."
+    },
+    {
+      "type": "h2",
+      "text": "Die Axion-Hypothese und die Haloskopphysik"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Das starke CP-Problem: In der Quantenchromodynamik (QCD) ist das elektrische Dipolmoment des Neutrons auf mysteriöse Weise Null, was eine ungebrochene Symmetrie impliziert, die durch das Standardmodell nicht erklärt wird.",
+        "Peccei-Quinn-Mechanismus: Einführung eines dynamischen Skalarfeldes, dessen spontane Symmetriebrechung das Axion ergibt: ein ultraleichtes, neutrales, extrem langlebiges hypothetisches Teilchen.",
+        "Der Primakoff-Effekt: In Gegenwart intensiver Magnetfelder (8 bis 14 Tesla) wandeln sich vorbeiziehende Axionen der Dunklen Materie spontan in nachweisbare Mikrowellenphotonen um.",
+        "Verdünnungskühlschrank-Haloskope: Kühlung resonanter Kupferhohlräume unter 20 Millikelvin zur Reduzierung des thermischen Johnson-Rauschens unter Verwendung parametrischer SQUID- und Josephson-Verstärker zur Erkennung einzelner Zeptowatt-Signale."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Dunkle Materie ist das kosmische Gerüst, auf dem sich Galaxien verdichten. Das Finden des Axions wird sowohl das tiefste Rätsel der Kernsymmetrie als auch die Zusammensetzung des Kosmos lösen.",
+      "cite": "Questo Labor für Teilchenphysik und kryogenes Haloskop"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Aufbau eines kryogenen Verdünnungskühlschranks für Hochenergiephysik mit goldenen Wärmeabschirmungen und supraleitender Verkabelung",
+      "caption": "Quantenbegrenzte Mikrowellenmessung: Scannen von Frequenzbändern in Resonanzhohlräumen mit hohem Q, die auf nahezu den absoluten Nullpunkt gekühlt sind."
+    },
+    {
+      "type": "h2",
+      "text": "Einengung des Parameterraums bei ADMX"
+    },
+    {
+      "type": "p",
+      "text": "Große internationale Kooperationen wie das Axion Dark Matter Experiment (ADMX) stimmen physikalische Hohlraumstäbe systematisch auf das Durchsuchen von Mikroelektronenvolt-Massenbereichen ab. Wenn ein Axion mit der Resonanzfrequenz des Hohlraums übereinstimmt, entsteht ein winziger elektromagnetischer Leistungspeak über dem Quantenrauschboden, was die schlüssige Entdeckung des Halos aus dunkler Materie unserer Galaxie ermöglicht."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/e7yXqF32Yvw",
+      "title": "PBS Space Time: Sind Axionen das Geheimnis der Dunklen Materie?",
+      "caption": "Der Astrophysiker Matt O'Dowd erklärt das Problem der starken CP, die Peccei-Quinn-Symmetrie und wie kryogene Haloskope nach Axion-Partikeln suchen."
+    },
+    {
+      "type": "h2",
+      "text": "Eine neue Epoche in der Grundlagenphysik"
+    },
+    {
+      "type": "p",
+      "text": "Der Nachweis axionischer Dunkler Materie wird sowohl die theoretische Kosmologie als auch die Hochenergiephysik augenblicklich revolutionieren und bestätigen, dass das Universum von einem kontinuierlichen Quantenkondensat durchdrungen ist, das in den ersten Mikrosekunden nach dem Urknall gebildet wurde."
+    }
+  ],
+  "sourceHash": "821f3a3b0c241078f9224022093fb99175193a43"
+}

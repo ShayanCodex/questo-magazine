@@ -1,6 +1,6 @@
 {
   "slug": "vo2-max-kinetics-and-mitochondrial-density-in-elite-endurance",
-  "title": "Cinética del VO2 máx.: densidad capilar, gasto cardíaco y dinámica del aclaramiento de lactato",
+  "title": "Cinética máxima del VO2 y densidad mitocondrial",
   "excerpt": "Investigación de los reguladores fisiológicos de la resistencia humana: adaptaciones del volumen sistólico, índices de extracción de oxígeno periférico y distribución polarizada del entrenamiento.",
   "date": "2026-11-16",
   "author": "Liam O’Connor",
@@ -12,7 +12,7 @@
     "metabolism"
   ],
   "image": "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Endurance trail runner scaling high-altitude mountain path in early morning light",
+  "imageAlt": "Corredor de senderos de resistencia escalando un sendero de montaña a gran altitud a primera hora de la mañana",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "La tríada del rendimiento aeróbico humano"
+      "text": "Factores limitantes centrales versus periféricos"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Athlete wearing cardiopulmonary metabolic cart mask measuring oxygen uptake and respiratory quotient",
-      "caption": "Metabolic gas exchange: quantifying maximal oxygen consumption (VO2 max) and ventilatory thresholds on treadmill."
+      "alt": "Cinética máxima del VO2: densidad capilar, gasto cardíaco y dinámica de eliminación de lactato - Figura operativa 4",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respalda la cinética máxima del VO2: densidad capilar, gasto cardíaco y dinámica de eliminación de lactato."
     },
     {
       "type": "ul",
       "items": [
-        "Cardiac Stroke Volume: In healthy elite athletes, maximal cardiac output is primarily limited by left ventricular compliance and end-diastolic filling volume, which determines systemic oxygen delivery.",
-        "Capillary-to-Fiber Ratios: Angiogenesis increases the functional transit time of red blood cells through active skeletal muscle capillary beds, optimizing offloading of oxygen to myoglobin.",
-        "Mitochondrial Reticular Density: Aerobic conditioning stimulates peroxisome proliferator-activated receptor gamma coactivator 1-alpha (PGC-1α), triggering mitochondrial biogenesis and cristae surface expansion.",
-        "MCT1 & MCT4 Lactate Transporters: Cellular adaptations upregulate monocarboxylate transporters that shuttle lactate and hydrogen ions from glycolytic fibers into oxidative fibers for direct substrate oxidation."
+        "Volumen sistólico cardíaco: en los atletas de élite sanos, el gasto cardíaco máximo está limitado principalmente por la distensibilidad del ventrículo izquierdo y el volumen de llenado telediastólico, que determina el suministro de oxígeno sistémico.",
+        "Relación capilar-fibra: la angiogénesis aumenta el tiempo de tránsito funcional de los glóbulos rojos a través de los lechos capilares activos del músculo esquelético, optimizando la descarga de oxígeno a la mioglobina.",
+        "Densidad reticular mitocondrial: el acondicionamiento aeróbico estimula el coactivador 1-alfa del receptor gamma activado por el proliferador de peroxisomas (PGC-1α), lo que desencadena la biogénesis mitocondrial y la expansión de la superficie de las crestas.",
+        "Transportadores de lactato MCT1 y MCT4: las adaptaciones celulares regulan positivamente los transportadores de monocarboxilato que transportan iones de lactato e hidrógeno desde las fibras glicolíticas a las fibras oxidativas para la oxidación directa del sustrato."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=1200&q=80",
-      "alt": "High-performance biometric telemetry tracking stroke volume and neuromuscular cadence",
-      "caption": "Polarized training: 80% volume executed in low-intensity Zone 2 to stimulate capillary angiogenesis and PGC-1α biogenesis."
+      "alt": "Cinética máxima del VO2: densidad capilar, gasto cardíaco y dinámica de eliminación de lactato - Figura operativa 7",
+      "caption": "Observación empírica: mecánica operativa y telemetría fundamental que respalda la cinética máxima del VO2: densidad capilar, gasto cardíaco y dinámica de eliminación de lactato."
     },
     {
       "type": "h2",
-      "text": "La tríada del rendimiento aeróbico humano"
+      "text": "La ciencia de la distribución del entrenamiento polarizado"
     },
     {
       "type": "p",
-      "text": "La capacidad de resistencia humana en eventos deportivos sostenidos se rige por tres variables fisiológicas interrelacionadas: consumo máximo de oxígeno (VO2 máx.), el porcentaje de VO2 máx. sostenible sin acumulación excesiva de lactato en sangre (utilización fraccionada o umbral de lactato) y economía mecánica (el costo de oxígeno requerido para mantener una velocidad determinada). Si bien las predisposiciones genéticas establecen límites teóricos, la plasticidad adaptativa del sistema cardiovascular y del tejido del músculo esquelético permite una remodelación profunda a largo plazo."
+      "text": "Los metanálisis de atletas de resistencia de clase mundial en remo, esquí de fondo, ciclismo y carreras de fondo demuestran una adherencia constante a arquitecturas de entrenamiento polarizadas. Aproximadamente el ochenta por ciento del volumen total de entrenamiento se ejecuta estrictamente por debajo del primer umbral ventilatorio (Zona 2), optimizando la oxidación de lípidos y la densidad mitocondrial al tiempo que se preserva el equilibrio nervioso autónomo para estímulos de intervalos de alta intensidad."
     },
     {
       "type": "video",
-      "title": "Physiological Adaptations to Aerobic Exercise: VO2 Max and Mitochondrial Biogenesis",
-      "caption": "Comprehensive lecture on cardiovascular remodeling, microvascular adaptation, and energy system partitioning during endurance exercise.",
-      "src": "https://www.youtube-nocookie.com/embed/W9J_oO3kQdM"
+      "src": "https://www.youtube-nocookie.com/embed/W9J_oO3kQdM",
+      "title": "Adaptaciones fisiológicas al ejercicio aeróbico: VO2 Max y biogénesis mitocondrial",
+      "caption": "Charla integral sobre remodelación cardiovascular, adaptación microvascular y partición del sistema energético durante el ejercicio de resistencia."
     },
     {
       "type": "h2",
-      "text": "La tríada del rendimiento aeróbico humano"
+      "text": "Traducir la fisiología en longevidad atlética"
     },
     {
       "type": "p",
-      "text": "La capacidad de resistencia humana en eventos deportivos sostenidos se rige por tres variables fisiológicas interrelacionadas: consumo máximo de oxígeno (VO2 máx.), el porcentaje de VO2 máx. sostenible sin acumulación excesiva de lactato en sangre (utilización fraccionada o umbral de lactato) y economía mecánica (el costo de oxígeno requerido para mantener una velocidad determinada). Si bien las predisposiciones genéticas establecen límites teóricos, la plasticidad adaptativa del sistema cardiovascular y del tejido del músculo esquelético permite una remodelación profunda a largo plazo."
+      "text": "Comprender la cinética del VO2 máximo desmantela el mito generalizado de que el acondicionamiento atlético máximo requiere un agotamiento incesante. Al respetar el ritmo biológico de la biogénesis mitocondrial, los protocolos de recuperación estructurados y la dosificación en intervalos específicos, los atletas desarrollan una resistencia cardiovascular sostenible que dura décadas."
     }
   ],
-  "sourceHash": "7315480ca257bd7c6eb88e959039cf2f21a6774f"
+  "sourceHash": "763267c0c567eae7cb896de776d54e00bdf281cc"
 }

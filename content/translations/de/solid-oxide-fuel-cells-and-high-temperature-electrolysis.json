@@ -1,0 +1,70 @@
+{
+  "slug": "solid-oxide-fuel-cells-and-high-temperature-electrolysis",
+  "title": "Festoxidbrennstoffzellen",
+  "excerpt": "Die elektrochemische Festkörperphysik von Yttriumoxid-stabilisierten Zirkonoxidelektrolyten, die grünen Wasserstoff und Biogas bei 800 °C direkt in sauberen Strom umwandeln.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "tags": [
+    "clean-energy",
+    "fuel-cells",
+    "electrochemistry",
+    "hydrogen",
+    "materials-science",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1517976487504-59a1a0812917?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Fortschrittliche industrielle Anlage zur Erzeugung sauberer Energie mit glänzenden Brennstoffzellenmodulen und Leitungen",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Direkte elektrochemische Stromerzeugung"
+    },
+    {
+      "type": "p",
+      "text": "Verbrennungsmotoren und Gasturbinen unterliegen grundsätzlich den Carnot-Effizienzgrenzen und verlieren über die Hälfte der Brennstoffenergie als Wärme. Festoxid-Brennstoffzellen (SOFCs) umgehen die Verbrennung vollständig und nutzen feste Keramikelektrolyte, um Wasserstoff, Erdgas oder Biogas elektrochemisch direkt in Elektrizität zu oxidieren, mit elektrischen Wirkungsgraden von über 60 % (und über 85 % in Kraft-Wärme-Kopplungssystemen)."
+    },
+    {
+      "type": "h2",
+      "text": "Festkörperkeramikarchitektur"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Yttriumstabilisiertes Zirkonoxid (YSZ): Ein spezieller Keramikelektrolyt, der Sauerstoffanionen (O2-) bei erhöhten Temperaturen (650 °C–800 °C) leitet und gleichzeitig Elektronen isoliert.",
+        "Nickel-YSZ-Cermet-Anoden: Bietet hohe katalytische Aktivität für die Kraftstoffoxidation und interne Dampfreformierung von Kohlenwasserstoffen.",
+        "Strontium-dotierte Lanthan-Manganit-Kathoden (LSM): Spaltung von atmosphärischem molekularem Sauerstoff (O2) in Sauerstoffionen durch poröse Perowskitstrukturen.",
+        "Reversible Hochtemperaturelektrolyse (SOEC): Betrieb im umgekehrten Modus, um Dampf und CO2 mit rekordverdächtiger thermodynamischer Effizienz in grünen Wasserstoff und Synthesegas aufzuspalten."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Die Festoxidtechnologie wandelt Brennstoff auf atomarer Ebene in Elektrizität um und liefert so eine konstante Grundlastleistung ohne Verbrennungskamine oder rotierende Turbinen.",
+      "cite": "Questo Electrochemical Energy & Solid-State Physics Lab"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Industrieller Hochtemperatur-Sinterofen zur Synthese fortschrittlicher Keramikmembranen",
+      "caption": "Bandgießen und Sintern von Keramik: Herstellung planarer YSZ-Elektrolytmembranen mit Dickentoleranzen im Submikrometerbereich."
+    },
+    {
+      "type": "h2",
+      "text": "Dekarbonisierung geschäftskritischer KI-Rechenzentren"
+    },
+    {
+      "type": "p",
+      "text": "Da KI-Hyperscale-Rechenzentren Gigawatt unterbrechungsfreien Stroms benötigen, stellen SOFC-Mikronetze vor Ort modularen Grundlaststrom bereit, der unabhängig von überlasteten kommunalen Übertragungsnetzen arbeitet."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/mdXWVi1u_yw",
+      "title": "Wie Bloom Energy Kraftstoff in zuverlässigen Strom für die KI umwandelt",
+      "caption": "Dokumentarfilm über industrielle saubere Technologien, in dem Festoxid-Brennstoffzellenstapel, modulare Mikronetze und Grundlaststrom für Rechenzentren untersucht werden."
+    },
+    {
+      "type": "p",
+      "text": "Der Übergang zur elektrochemischen Festkörperumwandlung stellt einen Quantensprung in der sauberen, zuverlässigen Stromerzeugung dar."
+    }
+  ],
+  "sourceHash": "25c8a323689c3d4cd2ef218b9caaac6f99c95aeb"
+}

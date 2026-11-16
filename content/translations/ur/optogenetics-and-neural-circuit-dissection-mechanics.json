@@ -1,7 +1,7 @@
 {
   "slug": "optogenetics-and-neural-circuit-dissection-mechanics",
-  "title": "آپٹوجنیٹکس اور نیورل سرکٹ ڈسیکشن: چینلروڈوپسنز، آپٹوڈس، اور طرز عمل کی ماڈیولیشن",
-  "excerpt": "جینیاتی طور پر ٹارگٹڈ نیورونل اینسبلز کا ملی سیکنڈ آپٹیکل کنٹرول: اوپسن بائیو فزکس کی جانچ، وائرل ویکٹر ڈیلیوری، اور میموری انگرامس کی فنکشنل میپنگ۔",
+  "title": "Optogenetics & Neural Circuits",
+  "excerpt": "Millisecond optical control of genetically targeted neuronal ensembles: examining opsin biophysics, viral vector delivery, and the functional mapping of memory engrams.",
   "date": "2026-11-16",
   "author": "Dr. Marcus Vance",
   "tags": [
@@ -12,62 +12,62 @@
     "medicine"
   ],
   "image": "https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "آپٹوجنیٹکس ریسرچ کے لیے سیلولر نیورو سائنس لیبارٹری الیومینیشن اور آپٹک آلات",
+  "imageAlt": "Cellular neuroscience laboratory illumination and optic instrumentation for optogenetics research",
   "body": [
     {
       "type": "h2",
-      "text": "سسٹمز نیورو سائنس میں صحت سے متعلق انقلاب"
+      "text": "The Precision Revolution in Systems Neuroscience"
     },
     {
       "type": "p",
-      "text": "ایک صدی سے زیادہ عرصے تک، نیورو سائنسدان صرف دو ٹوک ٹولز تک ہی محدود رہے: فارماسولوجیکل زخم جو پورے دماغ کے مرکزے کو گھنٹوں تک متاثر کرتے ہیں، یا برقی محرک جس نے خلیے کی شناخت سے قطع نظر تمام گزرنے والے محوروں کو اندھا دھند غیر قطبی کردیا۔ Optogenetics نے جینیاتی اہداف کو ہلکے گیٹڈ آئن چینلز کے ساتھ جوڑ کر، محققین کو ملی سیکنڈ ٹائم اسکیل پر متعین نیورونل ذیلی آبادیوں کو چالو یا خاموش کرنے کی اجازت دے کر اس تمثیل میں انقلاب برپا کیا۔"
+      "text": "For more than a century, neuroscientists were restricted to blunt tools: pharmacological lesions that affected entire brain nuclei over hours, or electrical stimulation that indiscriminately depolarized all passing axons regardless of cell identity. Optogenetics revolutionized this paradigm by combining genetic targeting with light-gated ion channels, permitting researchers to activate or silence defined neuronal subpopulations on millisecond timescales."
     },
     {
       "type": "h2",
-      "text": "مائکروبیل اوپسنز کی مالیکیولر بائیو فزکس"
+      "text": "Molecular Biophysics of Microbial Opsins"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1639322537504-6427a16b0a28?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Synaptic ایکشن ممکنہ نیٹ ورک ٹوپولوجی جو نیورل سرکٹ کنیکٹوٹی کی نمائندگی کرتی ہے۔",
-      "caption": "عصبی سرکٹری: سیل کی قسم کے مخصوص پروموٹر ایکسپریشن آپٹیکل الیومینیشن کے قابل بناتا ہے تاکہ تعییناتی عمل کی صلاحیتوں کو جنم دے سکے۔"
+      "alt": "Synaptic action potential network topology representing neural circuit connectivity",
+      "caption": "Neural circuitry: Cell-type-specific promoter expression enables optical illumination to evoke deterministic action potentials."
     },
     {
       "type": "ul",
       "items": [
-        "Channelrhodopsin-2 (ChR2): Chlamydomonas reinhardtii کا ایک ہلکا گیٹڈ کیشن چینل جو 470 nm نیلی روشنی کو جذب کرتا ہے تاکہ اندر کی طرف تیزی سے سوڈیم کرنٹ اور ایکشن ممکنہ فائرنگ کو نکال سکے۔",
-        "Halorhodopsin (NpHR): 589 nm پیلی روشنی کے ذریعہ ایک باطنی سمت میں چلنے والا کلورائڈ پمپ جو نیورونل جھلی کو ہائپر پولرائز کرتا ہے، فوری طور پر عمل کی صلاحیتوں کو بجھاتا ہے۔",
-        "Archaerhodopsin (Arch): ایک روشنی سے چلنے والا بیرونی پروٹون پمپ جو بعد میں روکے جانے والے کلورائد کو جمع کیے بغیر مکمل برقی خاموشی حاصل کرتا ہے۔",
-        "سیل کے لیے مخصوص پروموٹرز: مخصوص پروموٹرز کے تحت اڈینو سے وابستہ وائرس (AAV) کے اندر پیکنگ opsin جینز (مثال کے طور پر، حوصلہ افزائی پرامڈل سیلز کے لیے CaMKIIα، باسکٹ سیلز کے لیے PV) عین ہدف کو یقینی بناتا ہے۔"
+        "Channelrhodopsin-2 (ChR2): A light-gated cation channel from Chlamydomonas reinhardtii that absorbs 470 nm blue light to elicit rapid inward sodium currents and action potential firing.",
+        "Halorhodopsin (NpHR): An inward-directed chloride pump activated by 589 nm yellow light that hyperpolarizes the neuronal membrane, instantaneously quenching action potentials.",
+        "Archaerhodopsin (Arch): A light-driven outward proton pump that achieves complete electrical silencing without causing post-inhibitory chloride accumulation.",
+        "Cell-Specific Promoters: Packaging opsin genes within adeno-associated viruses (AAV) under specific promoters (e.g., CaMKIIα for excitatory pyramidal cells, PV for basket cells) ensures precise targeting."
       ]
     },
     {
       "type": "quote",
-      "text": "عصبی سرکٹس کو آپٹیکل سرکٹس میں تبدیل کر کے، آپٹوجنیٹکس نے باہمی تعلق کو سبب میں تبدیل کر دیا، جس سے یہ ظاہر ہوتا ہے کہ فائرنگ کے مخصوص نمونے کس طرح ادراک، جذبات اور یادداشت کی ترکیب کرتے ہیں۔",
-      "cite": "ڈاکٹر مارکس وینس، سسٹمز نیورو بائیولوجی مونوگرافس"
+      "text": "By transforming neural circuits into optical circuits, optogenetics turned correlation into causation, demonstrating how specific firing patterns synthesize perception, emotion, and memory.",
+      "cite": "Dr. Marcus Vance, Systems Neurobiology Monographs"
     },
     {
       "type": "h2",
-      "text": "اینگرام ٹیگنگ اور میموری مینیپولیشن"
+      "text": "Engram Tagging and Memory Manipulation"
     },
     {
       "type": "p",
-      "text": "آپٹوجینیٹک ٹیکنالوجی کے سب سے زیادہ گہرے ایپلی کیشنز میں سے ایک میموری انگرامس کا ڈسیکشن ہے۔ فوری طور پر ابتدائی جین پروموٹرز کا استعمال کرتے ہوئے جیسے کہ ٹیٹراسائکلائن ٹرانس ایکٹیویٹر سسٹمز سے منسلک c-Fos، نیورو بائیولوجسٹ ڈر کنڈیشنگ کے دوران چالو ہونے والے ہپپوکیمپل نیوران کے عین ویران جوڑ کو منتخب طور پر ٹیگ کر سکتے ہیں۔ مکمل طور پر نئے ماحول میں ان ٹیگ شدہ خلیوں کو روشن کرنا فوری طور پر خوف کی یادداشت کو ابھارتا ہے، جس سے فنکشنل اینگرم کی استعداد کا مظاہرہ ہوتا ہے۔"
+      "text": "One of the most profound applications of optogenetic technology is the dissection of memory engrams. Using immediate early gene promoters such as c-Fos linked to tetracycline transactivator systems, neurobiologists can selectively tag the exact sparse ensemble of hippocampal neurons activated during fear conditioning. Illuminating these tagged cells in an entirely novel environment instantly evokes the fear memory, demonstrating functional engram sufficiency."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/VUEmR9_P8p8",
-      "title": "Optogenetics: عصبی سرکٹس اور طرز عمل کو روشن کرنا",
-      "caption": "چینلروڈوپسن کائینیٹکس، فائبر آپٹک امپلانٹ ٹیکنالوجیز، اور فنکشنل کنیکٹومکس پر نیورو سائنس سمپوزیم۔"
+      "title": "Optogenetics: Illuminating Neural Circuits and Behavior",
+      "caption": "Neuroscience symposium on channelrhodopsin kinetics, fiber-optic implant technologies, and functional connectomics."
     },
     {
       "type": "h2",
-      "text": "علاج کی سرحدیں: Retinitis Pigmentosa سے لے کر گہری دماغی ماڈیولیشن تک"
+      "text": "Therapeutic Frontiers: From Retinitis Pigmentosa to Deep Brain Modulation"
     },
     {
       "type": "p",
-      "text": "optogenetics کا کلینیکل ترجمہ پہلے ہی جاری ہے۔ امراض چشم میں، زندہ بچ جانے والے ریٹنا گینگلیئن خلیوں میں سرخ شفٹ شدہ چینلروڈوپسن کے انٹرا وٹریل انجیکشن نے ریٹینائٹس پگمنٹوسا سے نابینا مریضوں میں جزوی بصری تیکشنی کو کامیابی سے بحال کیا ہے۔ نیورو سرجری میں، روایتی گہرے دماغی محرک کو تبدیل کرنے کے لیے وائرلیس مائیکرو ایل ای ڈی آپٹوڈس تیار کیے جا رہے ہیں، جو ادراک کے ضمنی اثرات سے پاک زلزلے کو دبانے کی پیشکش کرتے ہیں۔"
+      "text": "Clinical translation of optogenetics is already underway. In ophthalmology, intravitreal injection of red-shifted channelrhodopsins into surviving retinal ganglion cells has successfully restored partial visual acuity in patients blinded by retinitis pigmentosa. In neurosurgery, wireless micro-LED optodes are being developed to replace conventional deep brain stimulation, offering tremor suppression free from cognitive side effects."
     }
   ],
-  "sourceHash": "039003af7f0c4219ce90ddbdc8b6d3e6af1feab4"
+  "sourceHash": "bd0870b81f752a390a68cc3e511c0329158fe81b"
 }

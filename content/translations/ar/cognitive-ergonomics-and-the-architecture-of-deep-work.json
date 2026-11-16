@@ -1,7 +1,7 @@
 {
   "slug": "cognitive-ergonomics-and-the-architecture-of-deep-work",
-  "title": "بيئة العمل المعرفية: البقايا الانتباهية، وتبديل السياق، والتركيز المكاني",
-  "excerpt": "مخطط سلوكي ومعماري للمخرجات الفكرية العميقة: القضاء على مقاطعات الإشعارات المتزامنة، ومعالجة الدفعات، وتصميم الملاذ المادي.",
+  "title": "بيئة العمل المعرفية والعمل العميق",
+  "excerpt": "مخطط سلوكي ومعماري للإنتاج الفكري العميق: القضاء على مقاطعات الإشعارات المتزامنة، ومعالجة الدفعات، وتصميم الملاذ المادي.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -12,7 +12,7 @@
     "minimalism"
   ],
   "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Spacious architectural library workspace illuminated by soft daylight for deep uninterrupted focus",
+  "imageAlt": "مساحة عمل مكتبة معمارية واسعة مضاءة بضوء النهار الناعم للتركيز العميق غير المنقطع",
   "body": [
     {
       "type": "h2",
@@ -20,25 +20,25 @@
     },
     {
       "type": "p",
-      "text": "في اقتصاد المعرفة الحديث، لم يعد القيد الأساسي على الإنتاجية البشرية هو الوصول إلى المعلومات، بل ندرة النطاق الترددي المتعمد غير المنقطع. في كل مرة يقوم فيها أحد المحترفين بتبديل المهام - التحقق من رسالة محادثة واردة، أو مسح شارة الإشعارات، أو إلقاء نظرة سريعة على تنبيه عبر البريد الإلكتروني - تظل هناك عقوبة معرفية كبيرة تسمى \"بقايا الانتباه\" مرتبطة بالمهمة السابقة، مما يضعف الوظيفة التنفيذية والذاكرة العاملة لمدة تصل إلى عشرين دقيقة."
+      "text": "في اقتصاد المعرفة الحديث، لم يعد القيد الأساسي على الإنتاجية البشرية هو الوصول إلى المعلومات، بل ندرة عرض النطاق الترددي غير المنقطع. في كل مرة يقوم فيها أحد المحترفين بتبديل المهام - التحقق من رسالة محادثة واردة، أو مسح شارة الإشعارات، أو إلقاء نظرة سريعة على تنبيه عبر البريد الإلكتروني - تظل هناك عقوبة معرفية كبيرة تسمى \"بقايا الانتباه\" مرتبطة بالمهمة السابقة، مما يضعف الوظيفة التنفيذية والذاكرة العاملة لمدة تصل إلى عشرين دقيقة."
     },
     {
       "type": "h2",
-      "text": "التكلفة العصبية للتجزئة الانتباهية"
+      "text": "مبادئ التصميم المعرفي المريح"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Minimalist wooden desk setup with fountain pens, leather journal, and zero digital notifications",
-      "caption": "Analog sanctuaries: physical workspace segregation eliminating digital context switching and attentional residue."
+      "alt": "إعداد مكتب خشبي بسيط مع أقلام حبر ومجلة جلدية وعدم وجود إخطارات رقمية",
+      "caption": "الملاذات التناظرية: الفصل المادي في مساحة العمل مما يلغي تبديل السياق الرقمي وبقايا الانتباه."
     },
     {
       "type": "ul",
       "items": [
-        "Attentional Residue Mitigation: Sophie Leroy’s seminal research proves that human working memory cannot instantly flush context; shifting between open loops degrades subsequent problem-solving acuity.",
-        "Asynchronous Communication Protocols: Replacing real-time chat urgency with scheduled, long-form batch updates preserves prolonged blocks of unbroken flow state.",
-        "Physical and Digital Sanctuaries: Spatial segregation between creation zones (unconnected analog workstations) and communication zones (laptops with open network interfaces).",
-        "Biophilic Lighting & Acoustic Quieting: Calibrating natural circadian daylighting and low-frequency broadband acoustic masking lowers sympathetic nervous arousal, promoting sustained theta-wave concentration."
+        "التخفيف من البقايا المتعمدة: أثبت بحث صوفي ليروي الأساسي أن الذاكرة العاملة البشرية لا يمكنها مسح السياق على الفور؛ يؤدي الانتقال بين الحلقات المفتوحة إلى تقليل حدة حل المشكلات اللاحقة.",
+        "بروتوكولات الاتصال غير المتزامنة: يؤدي استبدال ضرورة الدردشة في الوقت الفعلي بتحديثات مجمعة مجدولة وطويلة إلى الحفاظ على كتل طويلة من حالة التدفق غير المنقطع.",
+        "الملاذات المادية والرقمية: الفصل المكاني بين مناطق الإنشاء (محطات العمل التناظرية غير المتصلة) ومناطق الاتصال (أجهزة الكمبيوتر المحمولة ذات واجهات الشبكة المفتوحة).",
+        "الإضاءة الحيوية والهدوء الصوتي: تعمل معايرة ضوء النهار الطبيعي والإخفاء الصوتي واسع النطاق منخفض التردد على تقليل الإثارة العصبية الودية، مما يعزز التركيز المستمر لموجة ثيتا."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Deep work workstation configured for asynchronous focus and deep cognitive output",
-      "caption": "Ultradian flow blocks: structuring work into 90-minute concentrated intervals to align with biological focus rhythms."
+      "alt": "محطة عمل عميقة مهيأة للتركيز غير المتزامن والمخرجات المعرفية العميقة",
+      "caption": "كتل تدفق Ultradian: هيكلة العمل في فترات مركزة مدتها 90 دقيقة للتوافق مع إيقاعات التركيز البيولوجي."
     },
     {
       "type": "h2",
-      "text": "التكلفة العصبية للتجزئة الانتباهية"
+      "text": "هيكلة يوم العمل العميق عالي الإنتاج"
     },
     {
       "type": "p",
-      "text": "في اقتصاد المعرفة الحديث، لم يعد القيد الأساسي على الإنتاجية البشرية هو الوصول إلى المعلومات، بل ندرة النطاق الترددي المتعمد غير المنقطع. في كل مرة يقوم فيها أحد المحترفين بتبديل المهام - التحقق من رسالة محادثة واردة، أو مسح شارة الإشعارات، أو إلقاء نظرة سريعة على تنبيه عبر البريد الإلكتروني - تظل هناك عقوبة معرفية كبيرة تسمى \"بقايا الانتباه\" مرتبطة بالمهمة السابقة، مما يضعف الوظيفة التنفيذية والذاكرة العاملة لمدة تصل إلى عشرين دقيقة."
+      "text": "تكشف الدراسات التجريبية لكبار العلماء والمؤلفين ومهندسي الأنظمة عن حدود فسيولوجية عليا تبلغ حوالي أربع ساعات من العمل الفكري العميق الحقيقي يوميًا. إن تنظيم الجداول الزمنية حول دورتين متواصلتين مدتهما تسعون دقيقة - يتبعهما تعافي جسدي نشط - يؤدي إلى إنجازات إبداعية وتحليلية أكبر بكثير من عشر ساعات من المهام المتعددة المتقطعة."
     },
     {
       "type": "video",
-      "title": "Deep Work: How to Focus Intensely and Eliminate Attentional Residue",
-      "caption": "Behavioral science breakdown of working memory capacity, flow state triggers, and environment design.",
-      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E",
+      "title": "العمل العميق: كيفية التركيز بشكل مكثف والتخلص من بقايا الانتباه",
+      "caption": "انهيار العلوم السلوكية لقدرة الذاكرة العاملة، ومحفزات حالة التدفق، وتصميم البيئة."
     },
     {
       "type": "h2",
-      "text": "التكلفة العصبية للتجزئة الانتباهية"
+      "text": "سيادة الفكر المركز"
     },
     {
       "type": "p",
-      "text": "في اقتصاد المعرفة الحديث، لم يعد القيد الأساسي على الإنتاجية البشرية هو الوصول إلى المعلومات، بل ندرة النطاق الترددي المتعمد غير المنقطع. في كل مرة يقوم فيها أحد المحترفين بتبديل المهام - التحقق من رسالة محادثة واردة، أو مسح شارة الإشعارات، أو إلقاء نظرة سريعة على تنبيه عبر البريد الإلكتروني - تظل هناك عقوبة معرفية كبيرة تسمى \"بقايا الانتباه\" مرتبطة بالمهمة السابقة، مما يضعف الوظيفة التنفيذية والذاكرة العاملة لمدة تصل إلى عشرين دقيقة."
+      "text": "في عصر تهيمن عليه تغذيات الدوبامين الخوارزمية فائقة التحسين والانشغال الأدائي، أصبحت القدرة على التركيز المكثف والانفرادي والمتواصل قوة عظمى نادرة وحاسمة. إن تنمية بيئة العمل المعرفية هي عمل من أعمال السيادة الفكرية."
     }
   ],
-  "sourceHash": "7bfd150cc1f2e83c8fe1169fee73ce08167051d1"
+  "sourceHash": "932512034e666b7ed2369405a9bafdbd2a1487d5"
 }

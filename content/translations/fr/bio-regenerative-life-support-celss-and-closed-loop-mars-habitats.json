@@ -1,7 +1,7 @@
 {
   "slug": "bio-regenerative-life-support-celss-and-closed-loop-mars-habitats",
-  "title": "Support de vie bio-régénératif en boucle fermée : photobioréacteurs d'algues, culture hydroponique et méthanation Sabatier sur Mars",
-  "excerpt": "Une analyse technique des systèmes aérospatiaux des systèmes de support de vie écologique contrôlé (CELSS) : recyclage photobioréactif de l'oxygène, distillation sous vide des eaux grises et synthèse alimentaire à carbone négatif pour les avant-postes planétaires.",
+  "title": "Support de vie en boucle fermée pour Mars",
+  "excerpt": "Une analyse technique des systèmes aérospatiaux des systèmes de support de vie écologiques contrôlés (CELSS) : recyclage photobioréactif de l'oxygène, distillation sous vide des eaux grises et synthèse alimentaire à carbone négatif pour les avant-postes planétaires.",
   "date": "2026-11-17",
   "author": "Mateo Silva",
   "tags": [
@@ -31,7 +31,7 @@
       "type": "ul",
       "items": [
         "Modules de photobioréacteur d'algues : les cultures de spiruline (Arthrospira platensis) et de chlorelle consommant l'astronaute ont exhalé du CO2 pour synthétiser des protéines comestibles tout en générant de l'oxygène sous pression de qualité médicale via la photosynthèse.",
-        "Réduction du CO2 et catalyse du méthane Sabatier : réaction du CO2 métabolique avec l'hydrogène sous-produit à 400 °C sur un catalyseur au ruthénium pour générer de l'eau propre et du méthane.",
+        "Réduction du CO2 Sabatier et catalyse du méthane : réaction du CO2 métabolique avec l'hydrogène sous-produit à 400°C sur un catalyseur au ruthénium pour générer de l'eau propre et du méthane.",
         "Récupération de l'eau par distillation par compression de vapeur (VCD) : récupération de 98 % de l'urine et de la sueur de l'équipage grâce à des réacteurs à compression mécanique de vapeur et à oxydation catalytique à plusieurs étages.",
         "Agriculture verticale aéroponique à LED : Cultiver du blé nain, des tubercules et des légumineuses sous un spectre de rayonnement photosynthétique actif (PAR) ajusté sans sol, en recyclant les sels nutritifs de la matière organique solide compostée."
       ]
@@ -53,13 +53,13 @@
     },
     {
       "type": "p",
-      "text": "Au-delà de la stœchiométrie chimique, les plantes vivantes et les légumes verts frais fournissent des contre-mesures psychologiques essentielles contre la privation sensorielle et l’isolement dans les sombres tubes de lave martiens. De plus, le maintien d’un microbiome environnemental diversifié et non pathogène dans l’air et le sol de l’habitat protège le système immunitaire de l’équipage contre les monocultures bactériennes opportunistes."
+      "text": "Au-delà de la stœchiométrie chimique, les plantes vivantes et les légumes verts frais fournissent des contre-mesures psychologiques critiques contre la privation sensorielle et l'isolement dans les tubes de lave martiens sombres. De plus, le maintien d’un microbiome environnemental diversifié et non pathogène dans l’air et le sol de l’habitat protège le système immunitaire de l’équipage contre les monocultures bactériennes opportunistes."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/MB68LeUOvZI",
-      "title": "NASA Science : Environmental Control & Life Support Systems (ECLSS)",
-      "caption": "Documentaire officiel de la NASA explorant la récupération de l'eau en boucle fermée, la synthèse de l'oxygène Sabatier et le maintien de la vie bio-régénératif pour les avant-postes de l'espace lointain."
+      "title": "NASA Science : Systèmes de contrôle environnemental et de survie (ECLSS)",
+      "caption": "Documentaire officiel de la NASA explorant la récupération de l'eau en boucle fermée, la synthèse de l'oxygène Sabatier et le maintien de la vie bio-régénérative pour les avant-postes de l'espace lointain."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Les graves contraintes de ressources liées au maintien de la vie extraterrestre génèrent des avantages directs pour la Terre. Les technologies conçues pour le recyclage en boucle fermée sur Mars révolutionnent déjà l’agriculture aride frappée par la sécheresse, la purification de l’eau hors réseau et l’architecture urbaine circulaire neutre en carbone à travers le monde."
     }
   ],
-  "sourceHash": "5526a7ab8c4fff44dad4100220c73b2e425c7544"
+  "sourceHash": "8b242147174359f346b9f2748c9644b1fd205db7"
 }

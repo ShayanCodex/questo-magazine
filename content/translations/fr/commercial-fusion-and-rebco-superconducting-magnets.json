@@ -1,0 +1,74 @@
+{
+  "slug": "commercial-fusion-and-rebco-superconducting-magnets",
+  "title": "La physique de la fusion commerciale",
+  "excerpt": "Une enquête sur les bandes supraconductrices à haute température d'oxyde de cuivre et de baryum de terres rares (REBCO), les champs magnétiques de 20 tesla et la voie technique vers des réacteurs tokamak à énergie nette positive.",
+  "date": "2026-11-17",
+  "author": "Dr. Marcus Vance",
+  "tags": [
+    "nuclear-fusion",
+    "physics",
+    "clean-energy",
+    "superconductors",
+    "plasma-physics",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Laboratoire de physique des hautes énergies avec une lueur de plasma toroïdal violet brillant à l'intérieur d'une chambre à vide",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Mise à l'échelle du confinement magnétique et révolution des champs élevés"
+    },
+    {
+      "type": "p",
+      "text": "Dans la fusion par confinement magnétique, le critère de Lawson dicte que la pression du plasma évolue avec la quatrième puissance de l'intensité du champ magnétique (B ^ 4). Historiquement, les grands tokamaks comme ITER nécessitaient d'immenses empreintes de la taille d'un bâtiment, car les supraconducteurs niobium-étain à basse température saturaient environ 12 Tesla. L’avènement du ruban supraconducteur haute température (HTS) à base d’oxyde de cuivre et de baryum de terres rares (REBCO) permet aux ingénieurs de générer des champs soutenus de 20 Tesla dans des bobines compactes assemblées en usine."
+    },
+    {
+      "type": "h2",
+      "text": "Physique du plasma et du magnétisme"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Épitaxie sur bande REBCO : supraconducteurs céramiques à couches minces déposés sur des rubans flexibles en acier hastelloy, conduisant plus de 500 ampères par millimètre carré à 20 Kelvin.",
+        "Mise à l'échelle volumétrique du plasma tokamak : quadrupler l'intensité du champ magnétique permet de réduire de quarante fois le volume du cœur du réacteur tout en obtenant exactement la même puissance de fusion.",
+        "Stabilité magnétohydrodynamique (MHD) : ​​suppression des modes localisés aux bords (ELM) et des instabilités de déchirure néoclassiques grâce à des bobines de perturbation magnétique résonantes en temps réel.",
+        "Couvertures de reproduction au tritium : Utilisation de couvertures eutectiques au lithium-plomb liquide pour capturer des neutrons de fusion de 14,1 MeV, produisant du combustible au tritium tout en extrayant de l'énergie thermique pour les turbines à vapeur."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "La fusion a cessé d'être un exercice de science des plasmas et s'est transformée en un défi technique de fabrication de supraconducteurs, de science des matériaux et de protection contre les neutrons.",
+      "cite": "Questo Plasma Physics & Advanced Energy Laboratory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Lignes de champ magnétique numériques abstraites entourant un noyau de fusion central éclairé dans un simulateur de physique sombre",
+      "caption": "Géométrie du flux magnétique toroïdal : bobines magnétiques de précision en forme de D contenant un plasma deutérium-tritium à 150 millions de degrés."
+    },
+    {
+      "type": "h2",
+      "text": "Protection contre la trempe et intégrité mécanique cryogénique"
+    },
+    {
+      "type": "p",
+      "text": "À 20 Tesla, les forces magnétiques de Lorentz exercent des pressions structurelles comparables aux tranchées les plus profondes de l'océan. Les bobines supraconductrices doivent être enfermées dans des boîtiers cryogéniques en acier inoxydable et surveillées avec des capteurs de Bragg à fibre optique pour détecter l'emballement thermique local (trempes) en quelques millisecondes avant que l'autodestruction de l'aimant ne puisse se produire."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/mXF__xidP1c",
+      "title": "Documentaire : Aimants supraconducteurs et fusion commerciale",
+      "caption": "Documentaire d'ingénierie couvrant la fabrication, les tests et le déploiement d'aimants HTS de 20 Tesla pour les réacteurs commerciaux à fusion à énergie nette."
+    },
+    {
+      "type": "h2",
+      "text": "L'horizon de l'énergie de base commerciale"
+    },
+    {
+      "type": "p",
+      "text": "Avec des centrales pilotes dont la démonstration commerciale est prévue au cours de la prochaine décennie, la fusion offre une source d'énergie de base sans carbone, totalement exempte de déchets radioactifs de haute activité à vie longue, de fusions ou d'émissions de carbone atmosphérique."
+    }
+  ],
+  "sourceHash": "9fdaf91f9b4b6b9eb394275349b1b2ff7f7f5b63"
+}

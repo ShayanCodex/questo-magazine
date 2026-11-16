@@ -1,6 +1,6 @@
 {
   "slug": "linear-types-and-affine-type-systems-in-compiler-design",
-  "title": "Lineare Typen und affine Typsysteme in der Systemprogrammierung",
+  "title": "Lineare und affine Typen im Systemcode",
   "excerpt": "Eine theoretische Untersuchung der Programmiersprache in linearer Logik, affiner Ressourcenverfolgung, Speicherverbrauchsgarantien und sicheren Nullkosten-Abstraktionen in Systemen zur Kompilierungszeit.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
@@ -69,5 +69,5 @@
       "text": "Lineare Kanäle erzwingen Sitzungstypen: Protokollsequenzen, bei denen sich Sende- und Empfangsprimitive deterministisch abwechseln. Dies garantiert Freiheit von Deadlocks und Race Conditions über verteilte Microservices hinweg."
     }
   ],
-  "sourceHash": "0eff32dad713ba2cba4f1f46e2081b3713575034"
+  "sourceHash": "612839826d2c3698202d72028d4286f872d7d6bb"
 }

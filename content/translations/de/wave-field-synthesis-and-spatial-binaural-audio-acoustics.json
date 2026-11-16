@@ -1,6 +1,6 @@
 {
   "slug": "wave-field-synthesis-and-spatial-binaural-audio-acoustics",
-  "title": "Wellenfeldsynthese, psychoakustische HRTF-Pinna-Modellierung und die Physik der räumlichen Audioholophonie",
+  "title": "Die Physik des räumlichen und 3D-Audios",
   "excerpt": "Eine akustisch-technische Analyse der akustischen Holophonie: Huygens-Fresnel-Wellensynthese, kopfbezogene Übertragungsfunktionen (HRTFs), interaurale Zeitdifferenzfilterung (ITD) und immersive Schallfelder der nächsten Generation.",
   "date": "2026-11-17",
   "author": "Siddharth Nair",
@@ -70,5 +70,5 @@
       "text": "Da Augmented-Reality-Headsets 6-DOF-Kopfverfolgung integrieren, müssen Audio-Engines dynamische Nachhallreflexionspfade mit Latenzen unter 20 Millisekunden rendern. Durch die Ausführung von Echtzeit-Raytracing-Faltungskernen auf speziellen DSP-Chips erstellen Entwickler virtuelle Audioobjekte, die von Wänden, Teppichen und Decken in der realen Welt präzise reflektiert werden."
     }
   ],
-  "sourceHash": "48a117165731e26906d86f26ccb4cff5c8fa4f4a"
+  "sourceHash": "c3cf14021cfc4b8989e1aa96dbdbef091f2f999c"
 }

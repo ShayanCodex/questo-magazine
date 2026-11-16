@@ -1,7 +1,7 @@
 {
   "slug": "test-time-compute-and-mcts-in-autonomous-reasoning-models",
-  "title": "Testzeitberechnung und Monte-Carlo-Baumsuche: Wie autonomes Denken Grenz-LLMs verändert",
-  "excerpt": "Analyse der tektonischen Verschiebung von der Parameterskala vor dem Training zur Inferenzzeitberechnung: Prozessbelohnungsmodelle (PRMs), Verifizierung der Baumsuche und rekursive Selbstkorrektur in autonomen Forschungsagenten.",
+  "title": "Testzeitberechnung und autonomes Denken",
+  "excerpt": "Analyse der tektonischen Verschiebung von der Parameterskala vor dem Training zur Inferenzzeitberechnung: Prozessbelohnungsmodelle (PRMs), Baumsuchverifizierung und rekursive Selbstkorrektur in autonomen Forschungsagenten.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -32,7 +32,7 @@
       "items": [
         "Prozessbelohnungsmodelle (PRMs): Bewertung der mathematischen Gültigkeit jedes deduktiven Zwischenschritts, anstatt sich ausschließlich auf die Richtigkeit des Endergebnisses zu verlassen.",
         "Monte-Carlo-Baumsuche (MCTS): Systematische Erforschung alternativer logischer Verläufe, Zurückverfolgen bei formalen Widersprüchen und Beschneiden vielversprechender Zweige.",
-        "System 2 Überlegung: Zuweisung dynamischer Rechenbudgets proportional zur Aufgabenkomplexität, sodass Modelle minutenlang statt Millisekunden über anspruchsvolle Theoreme nachdenken können.",
+        "System 2-Beratung: Zuweisung dynamischer Rechenbudgets proportional zur Aufgabenkomplexität, sodass Modelle minuten- statt millisekundenlang über anspruchsvolle Theoreme nachdenken können.",
         "Selbstkorrekturverifizierer: Kopplung generativer Netzwerke mit formalen Beweisprüfern (wie Lean 4 und Coq), um überprüfbare Korrektheit durchzusetzen."
       ]
     },
@@ -53,13 +53,13 @@
     },
     {
       "type": "p",
-      "text": "Ergebnisbasierte Belohnungsmodelle leiden unter einer starken falsch-positiven Verstärkung: Ein LLM kann durch völlig halluzinierte oder unlogische Zwischenschritte zur richtigen arithmetischen Antwort gelangen. Durch das Training diskriminierender Wertfunktionen auf granularen, menschlichen und synthetischen Annotationen pro Schritt ermöglichen Forscher den Modellen, ihre eigenen kognitiven Fehltritte frühzeitig im Argumentationsbaum zu erkennen und abweichende Pfade zu beschneiden, bevor Kontextfenster erschöpft sind."
+      "text": "Ergebnisbasierte Belohnungsmodelle leiden unter schwerer falsch-positiver Verstärkung: Ein LLM kann durch völlig halluzinierte oder unlogische Zwischenschritte zur richtigen arithmetischen Antwort gelangen. Durch das Training diskriminierender Wertfunktionen auf granularen, menschlichen und synthetischen Annotationen pro Schritt ermöglichen Forscher den Modellen, ihre eigenen kognitiven Fehltritte frühzeitig im Argumentationsbaum zu erkennen und abweichende Pfade zu beschneiden, bevor Kontextfenster erschöpft sind."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/zjkBMFhNj_g",
-      "title": "Reinforcement Learning, Search Trees und System 2 Reasoning in Frontier AI",
-      "caption": "Umfassende akademische Vorlesung über Suchalgorithmen, Self-Play Reinforcement Learning und formale Verifikationsrahmen."
+      "title": "Reinforcement Learning, Suchbäume und System 2 Reasoning in Frontier AI",
+      "caption": "Umfassende akademische Vorlesung über Suchalgorithmen, Self-Play-Reinforcement-Learning und formale Verifizierungsrahmen."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Ausgestattet mit Testschleifen können autonome Forschungsagenten riesige wissenschaftliche Literaturgraphen durchsuchen, empirische Python-Simulationen in Sandbox-Umgebungen ausführen, biochemische Kandidatenmoleküle synthetisieren und von Experten begutachtete Monographien ohne menschliches Eingreifen schreiben. Der Engpass bei der Wissensentdeckung verlagert sich von der menschlichen Lesefähigkeit hin zum algorithmischen Verifizierungsdurchsatz."
     }
   ],
-  "sourceHash": "dbe651e5fbe0748dceb5e59f1aed8cd3b5382c5a"
+  "sourceHash": "968ed931346d6cf26d9ca4c7a73d8e77dfd3172f"
 }

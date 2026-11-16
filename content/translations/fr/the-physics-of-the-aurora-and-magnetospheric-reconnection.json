@@ -1,0 +1,74 @@
+{
+  "slug": "the-physics-of-the-aurora-and-magnetospheric-reconnection",
+  "title": "La physique des aurores",
+  "excerpt": "Une étude de physique spatiale et géomagnétique : éjections de masse coronale (CME), reconnexion magnétique dans la queue magnétique, courants de Birkeland et émission de photons atomiques dans la haute ionosphère de la Terre.",
+  "date": "2026-11-17",
+  "author": "Elena Rostova",
+  "tags": [
+    "space-physics",
+    "aurora",
+    "geomagnetism",
+    "astronomy",
+    "earth-science",
+    "solar-wind"
+  ],
+  "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Des rideaux d'aurores boréales vertes et violettes ondulantes dansant dans le ciel nocturne arctique au-dessus des montagnes enneigées",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Le vent solaire et le bouclier magnétique terrestre"
+    },
+    {
+      "type": "p",
+      "text": "Le Soleil émet en continu un flux supersonique de plasma magnétisé connu sous le nom de vent solaire. Lorsque ce flux rencontre la Terre, notre dynamo magnétique à noyau externe en fusion dévie la grande majorité des protons et des électrons chargés autour de la planète, creusant une vaste cavité magnétique en forme de larme connue sous le nom de magnétosphère. Pourtant, lors de tempêtes solaires intenses, une immense énergie franchit cette barrière protectrice."
+    },
+    {
+      "type": "h2",
+      "text": "Physique spatiale et principes géomagnétiques"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Reconnexion magnétique dans la queue magnétique : des lignes de champ magnétique dirigées de manière opposée se cassent et se croisent dans la queue du côté obscur de la Terre, renvoyant violemment les particules de plasma piégées vers l'ionosphère polaire.",
+        "Courants alignés sur le champ de Birkeland : des feuilles de courant électrique de gigawatts circulant le long des lignes dipolaires magnétiques terrestres, accélérant les électrons jusqu'à des énergies keV dans la haute atmosphère.",
+        "Émission d'oxygène atomique à 557,7 nm : des électrons accélérés entrant en collision avec l'oxygène atomique à une altitude de 100 à 200 kilomètres produisent la lueur aurorale vert émeraude emblématique et éthérée.",
+        "Lueur violette d'azote moléculaire à haute altitude : les collisions avec l'azote moléculaire ionisé (N2+) au-dessus de 250 kilomètres d'altitude peignent les rideaux auroraux supérieurs avec des franges pourpres et violettes profondes."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "L'aurore est la manifestation visuelle de la météo spatiale : une ampoule planétaire semblable à un néon, alimentée par l'énergie magnétique solaire se déchargeant dans la haute atmosphère.",
+      "cite": "Observatoire de géophysique ionosphérique et magnétosphérique Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579033461380-adb47c3eb938?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Des rubans auroraux verts lumineux tombant en cascade sur les fjords glaciaires nordiques froids et les eaux sombres de l'océan",
+      "caption": "L'ovale auroral : un anneau circumpolaire persistant de précipitations de particules énergétiques s'étendant vers l'équateur pendant les tempêtes géomagnétiques."
+    },
+    {
+      "type": "h2",
+      "text": "Risques liés aux tempêtes géomagnétiques pour les infrastructures modernes"
+    },
+    {
+      "type": "p",
+      "text": "Bien que visuellement époustouflantes, les sous-orages auroralaux majeurs induisent de puissants courants induits géomagnétiquement (GIC) dans le sol, capables de saturer les transformateurs du réseau électrique, de corroder les oléoducs et d'aveugler la navigation GPS par satellite et les liaisons radio aériennes à haute fréquence."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/FoLrl6f1aM0",
+      "title": "Documentaire : Les aurores boréales expliquées - La science des aurores",
+      "caption": "Documentaire scientifique pédagogique explorant la dynamique du vent solaire, les lignes du champ magnétique terrestre et les collisions atmosphériques créant les aurores."
+    },
+    {
+      "type": "h2",
+      "text": "Surveillance du cycle solaire 25 et de la météo spatiale"
+    },
+    {
+      "type": "p",
+      "text": "Alors que le Soleil fonctionne au sommet du cycle solaire 25, des observatoires spatiaux comme SOHO et DSCOVR fournissent une télémétrie d'alerte précoce au point de Lagrange 1, permettant aux opérateurs d'énergie et aux astronomes de se préparer à l'arrivée d'éjections de masse coronale."
+    }
+  ],
+  "sourceHash": "4b84975c99cef231421fd8becec38d7d1231a5da"
+}

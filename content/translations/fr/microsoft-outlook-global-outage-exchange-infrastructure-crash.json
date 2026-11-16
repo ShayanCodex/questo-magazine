@@ -1,7 +1,7 @@
 {
   "slug": "microsoft-outlook-global-outage-exchange-infrastructure-crash",
-  "title": "Le crash mondial de Microsoft Outlook : analyse des causes profondes, pannes de l'infrastructure Exchange Online et vulnérabilités du cloud distribué",
-  "excerpt": "Une enquête des systèmes médico-légaux sur la panne mondiale d'Exchange Online : tempêtes de télémétrie BGP, boucles d'authentification Azure AD en cascade et périls structurels de la communication d'entreprise centralisée.",
+  "title": "À l'intérieur du crash global d'Outlook",
+  "excerpt": "Une enquête judiciaire sur les systèmes d'analyse de la panne mondiale d'Exchange Online : tempêtes de télémétrie BGP, boucles d'authentification Azure AD en cascade et périls structurels de la communication d'entreprise centralisée.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -79,5 +79,5 @@
       "text": "La véritable haute disponibilité nécessite l'abandon des monocultures monolithiques du cloud public. Les organisations doivent mettre en œuvre des solutions de secours décentralisées pour les e-mails secondaires, des intervalles d'attente stricts et instables côté client, une fédération d'identité découplée et une isolation régionale des domaines de pannes. Jusqu’à ce que l’architecture d’entreprise mette en place une mise en cache locale autonome et des protocoles hors ligne sans dépendance, la commodité du SaaS centralisé restera l’otage de la prochaine cascade distribuée."
     }
   ],
-  "sourceHash": "13e6000c329a0bfb08e856abcb53a098af53993c"
+  "sourceHash": "96e7eadb90d582fd44bad0c879cc10a00d527d9b"
 }

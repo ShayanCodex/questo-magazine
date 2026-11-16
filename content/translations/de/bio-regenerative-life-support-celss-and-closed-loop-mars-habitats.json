@@ -1,7 +1,7 @@
 {
   "slug": "bio-regenerative-life-support-celss-and-closed-loop-mars-habitats",
-  "title": "Bioregenerative Lebenserhaltung im geschlossenen Kreislauf: Algen-Photobioreaktoren, Hydrokultur und Sabatier-Methanisierung auf dem Mars",
-  "excerpt": "Eine luft- und raumfahrtsystemtechnische Analyse von kontrollierten ökologischen Lebenserhaltungssystemen (CELSS): photobioreaktives Sauerstoffrecycling, Grauwasser-Vakuumdestillation und kohlenstoffnegative Nahrungsmittelsynthese für Planetenaußenposten.",
+  "title": "Lebenserhaltung im geschlossenen Kreislauf für den Mars",
+  "excerpt": "Eine luft- und raumfahrttechnische Analyse von kontrollierten ökologischen Lebenserhaltungssystemen (CELSS): photobioreaktives Sauerstoffrecycling, Grauwasser-Vakuumdestillation und kohlenstoffnegative Nahrungsmittelsynthese für Außenposten auf dem Planeten.",
   "date": "2026-11-17",
   "author": "Mateo Silva",
   "tags": [
@@ -31,7 +31,7 @@
       "type": "ul",
       "items": [
         "Algen-Photobioreaktormodule: Spirulina- (Arthrospira platensis) und Chlorella-Kulturen, die von Astronauten ausgeatmetes CO2 verbrauchen, um essbares Protein zu synthetisieren und gleichzeitig durch Photosynthese unter Druck stehenden Sauerstoff in medizinischer Qualität zu erzeugen.",
-        "CO2-Reduktion und Methankatalyse von Sabatier: Reaktion von metabolischem CO2 mit Wasserstoff als Nebenprodukt bei 400 °C über einem Rutheniumkatalysator zur Erzeugung von sauberem Wasser und Methanbrennstoff.",
+        "Sabatier CO2-Reduktion und Methankatalyse: Reaktion von metabolischem CO2 mit Wasserstoff als Nebenprodukt bei 400 °C über einem Rutheniumkatalysator, um sauberes Wasser und Methan-Brennstoff zu erzeugen.",
         "Dampfkompressionsdestillation (VCD) Wasserrückgewinnung: Rückgewinnung von 98 % des Urins und Schweißes der Besatzung durch mehrstufige mechanische Dampfkompression und katalytische Oxidationsreaktoren.",
         "Aeroponische LED-Vertikallandwirtschaft: Anbau von Zwergweizen, Knollen und Hülsenfrüchten unter abgestimmten photosynthetisch aktiven Strahlungsspektren (PAR) ohne Erde, Recycling von Nährsalzen aus kompostierter fester organischer Substanz."
       ]
@@ -49,7 +49,7 @@
     },
     {
       "type": "h2",
-      "text": "Psychologische und Mikrobiomstabilität in beengten Wohnverhältnissen"
+      "text": "Psychologische und mikrobiologische Stabilität in begrenzten Wohnräumen"
     },
     {
       "type": "p",
@@ -59,7 +59,7 @@
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/MB68LeUOvZI",
       "title": "NASA-Wissenschaft: Umweltkontroll- und Lebenserhaltungssysteme (ECLSS)",
-      "caption": "Offizielle NASA-Dokumentation über Wasserrückgewinnung im geschlossenen Kreislauf, Sabatier-Sauerstoffsynthese und bioregenerative Lebenserhaltung für Außenposten im Weltraum."
+      "caption": "Offizielle NASA-Dokumentation über geschlossene Wasserrückgewinnung, Sabatier-Sauerstoffsynthese und bioregenerative Lebenserhaltung für Außenposten im Weltraum."
     },
     {
       "type": "h2",
@@ -70,5 +70,5 @@
       "text": "Die schwerwiegenden Ressourcenbeschränkungen außerirdischer Lebenserhaltung bringen direkte Vorteile für die Erde mit sich. Technologien, die für das geschlossene Recycling auf dem Mars entwickelt wurden, revolutionieren bereits die von Dürre betroffene, trockene Landwirtschaft, die netzunabhängige Wasseraufbereitung und die zirkuläre CO2-neutrale Stadtarchitektur auf der ganzen Welt."
     }
   ],
-  "sourceHash": "5526a7ab8c4fff44dad4100220c73b2e425c7544"
+  "sourceHash": "8b242147174359f346b9f2748c9644b1fd205db7"
 }

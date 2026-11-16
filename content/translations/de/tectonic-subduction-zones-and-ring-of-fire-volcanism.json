@@ -1,0 +1,70 @@
+{
+  "slug": "tectonic-subduction-zones-and-ring-of-fire-volcanism",
+  "title": "Die Physik von Subduktionszonen",
+  "excerpt": "Die Geodynamik der Subduktion lithosphärischer Platten: Plattenzugkräfte, Schmelzen der Mantelkeilhydratation, Wadati-Benioff-Zonen und seismische Megathrust-Gefahren.",
+  "date": "2026-11-17",
+  "author": "Dr. Zachary Vance",
+  "tags": [
+    "geology",
+    "plate-tectonics",
+    "subduction",
+    "earthquakes",
+    "volcanism",
+    "geophysics"
+  ],
+  "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Dramatischer vulkanischer Gebirgskamm mit geothermischem Dampfaustritt gegen steile geologische Verwerfungslinien",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Der Motor des planetaren Recyclings"
+    },
+    {
+      "type": "p",
+      "text": "Subduktionszonen sind die Verbrennungsanlagen des Planeten, in denen kalte ozeanische Lithosphäre zurück in den konvektiven Erdmantel sinkt. Die Subduktion ist für die Entstehung der tiefsten ozeanischen Gräben des Planeten, der weltweit stärksten Megathrust-Erdbeben der Stärke 9+ und der explosiven Stratovulkanbögen entlang des Pazifischen Feuerrings verantwortlich und der primäre Antriebsmechanismus der Kontinentaldrift."
+    },
+    {
+      "type": "h2",
+      "text": "Geophysikalische Kräfte, die die Subduktion vorantreiben"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Plattenzugmechanik: Dichte, abgekühlte basaltische ozeanische Kruste verwandelt sich in ultradichten Eklogit und zieht die nachlaufende Platte gravitativ in die Asthenosphäre.",
+        "Schmelzen des Mantelkeilflusses: Hydratisierte ozeanische Mineralien entwässern in 100 km Tiefe und senken den Schmelzpunkt des Peridotit-Mantelgesteins, um explosives andesitisches Magma zu bilden.",
+        "Seismische Zonen Wadati-Benioff: Planare Zonen tiefer Erdbeben, die den spröden inneren Kern absteigender Platten bis in eine Tiefe von 670 Kilometern verfolgen.",
+        "Forearc Akkretionsprismen: Sedimente, die von der absteigenden ozeanischen Platte abgekratzt werden und sich entlang der Küsten zu massiven chaotischen geologischen Melangekomplexen ansammeln."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Die Erde ist der einzige bekannte Planet mit aktiver Plattentektonik. Ohne den wassergeschmierten Motor der Subduktion würden Kontinente und Atmosphären stagnieren.",
+      "cite": "Questo Geophysics & Planetary Seismology Observatory"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Hochpräzises Seismometer und GPS-Geodäsiestation, verankert im schroffen Gebirgsgrundgestein.",
+      "caption": "Kontinuierliche geodätische GPS-Überwachung: Messung der Anhäufung elastischer Küstenspannungen in Millimetern entlang der Megathrust-Verwerfungszonen von Cascadia."
+    },
+    {
+      "type": "h2",
+      "text": "Megathrust-Bruch und Tsunamigenese"
+    },
+    {
+      "type": "p",
+      "text": "Wenn die verriegelte Schnittstelle zwischen der überlagernden Kontinentalplatte und der subduzierenden Platte reißt, kommt es innerhalb von Sekunden zu einer vertikalen Verschiebung des Meeresbodens um Dutzende Meter, die transozeanische Tsunami-Schockwellen über Ozeanbecken auslöst."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/VDx8-ZRoCCw",
+      "title": "Tektonik und Geologie von Subduktionszonen: Umfassende Einführung",
+      "caption": "Geologische Wissenschaftsvorlesung zur Analyse der Dynamik lithosphärischer Platten, Dehydrationsschmelzen und Vulkanbogenpetrologie."
+    },
+    {
+      "type": "p",
+      "text": "Die Untersuchung paläoseismischer Tsunami-Ablagerungen und Slow-Slip-Tremor-Ereignisse liefert wichtige Frühwarnrahmen für Küstenbevölkerungen weltweit."
+    }
+  ],
+  "sourceHash": "05b0be7123de7cd5240cd745c7d40207713bc166"
+}

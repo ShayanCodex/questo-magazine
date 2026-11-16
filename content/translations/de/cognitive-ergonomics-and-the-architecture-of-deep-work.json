@@ -1,7 +1,7 @@
 {
   "slug": "cognitive-ergonomics-and-the-architecture-of-deep-work",
-  "title": "Kognitive Ergonomie: Aufmerksamkeitsreste, Kontextwechsel und räumlicher Fokus",
-  "excerpt": "Ein Verhaltens- und Architekturentwurf für umfassende intellektuelle Leistung: Eliminierung synchroner Benachrichtigungsunterbrechungen, Stapelverarbeitung und physischer Schutzraumgestaltung.",
+  "title": "Kognitive Ergonomie und Deep Work",
+  "excerpt": "Ein Verhaltens- und Architekturentwurf für tiefgreifende intellektuelle Leistung: Eliminierung synchroner Benachrichtigungsunterbrechungen, Stapelverarbeitung und physischer Schutzraumgestaltung.",
   "date": "2026-11-16",
   "author": "Elena Vance",
   "tags": [
@@ -12,7 +12,7 @@
     "minimalism"
   ],
   "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Spacious architectural library workspace illuminated by soft daylight for deep uninterrupted focus",
+  "imageAlt": "Geräumiger architektonischer Bibliotheksarbeitsplatz, beleuchtet durch sanftes Tageslicht für tiefe, ununterbrochene Konzentration",
   "body": [
     {
       "type": "h2",
@@ -24,21 +24,21 @@
     },
     {
       "type": "h2",
-      "text": "Die neurologischen Kosten der Aufmerksamkeitsfragmentierung"
+      "text": "Prinzipien des kognitiven ergonomischen Designs"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Minimalist wooden desk setup with fountain pens, leather journal, and zero digital notifications",
-      "caption": "Analog sanctuaries: physical workspace segregation eliminating digital context switching and attentional residue."
+      "alt": "Minimalistischer Schreibtischaufbau aus Holz mit Füllfederhaltern, Ledertagebuch und null digitalen Benachrichtigungen",
+      "caption": "Analoge Zufluchtsorte: physische Arbeitsplatztrennung, die digitale Kontextwechsel und Aufmerksamkeitsrückstände eliminiert."
     },
     {
       "type": "ul",
       "items": [
-        "Attentional Residue Mitigation: Sophie Leroy’s seminal research proves that human working memory cannot instantly flush context; shifting between open loops degrades subsequent problem-solving acuity.",
-        "Asynchronous Communication Protocols: Replacing real-time chat urgency with scheduled, long-form batch updates preserves prolonged blocks of unbroken flow state.",
-        "Physical and Digital Sanctuaries: Spatial segregation between creation zones (unconnected analog workstations) and communication zones (laptops with open network interfaces).",
-        "Biophilic Lighting & Acoustic Quieting: Calibrating natural circadian daylighting and low-frequency broadband acoustic masking lowers sympathetic nervous arousal, promoting sustained theta-wave concentration."
+        "Minderung von Aufmerksamkeitsrückständen: Sophie Leroys bahnbrechende Forschung beweist, dass das menschliche Arbeitsgedächtnis den Kontext nicht sofort löschen kann; Der Wechsel zwischen offenen Schleifen beeinträchtigt die spätere Problemlösungskompetenz.",
+        "Asynchrone Kommunikationsprotokolle: Durch das Ersetzen der Chat-Dringlichkeit in Echtzeit durch geplante, lange Batch-Updates bleiben längere Blöcke mit ununterbrochenem Flussstatus erhalten.",
+        "Physische und digitale Zufluchtsorte: Räumliche Trennung zwischen Schöpfungszonen (nicht verbundene analoge Arbeitsplätze) und Kommunikationszonen (Laptops mit offenen Netzwerkschnittstellen).",
+        "Biophile Beleuchtung und akustische Beruhigung: Die Kalibrierung des natürlichen zirkadianen Tageslichts und der niederfrequenten breitbandigen akustischen Maskierung verringert die sympathische Nervenerregung und fördert eine anhaltende Theta-Wellen-Konzentration."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Deep work workstation configured for asynchronous focus and deep cognitive output",
-      "caption": "Ultradian flow blocks: structuring work into 90-minute concentrated intervals to align with biological focus rhythms."
+      "alt": "Deep-Work-Workstation, konfiguriert für asynchronen Fokus und tiefe kognitive Leistung",
+      "caption": "Ultradian-Flow-Blöcke: Strukturierung der Arbeit in konzentrierte 90-Minuten-Intervalle, um sie an den biologischen Fokusrhythmen auszurichten."
     },
     {
       "type": "h2",
-      "text": "Die neurologischen Kosten der Aufmerksamkeitsfragmentierung"
+      "text": "Strukturierung des High-Output-Deep-Work-Tages"
     },
     {
       "type": "p",
-      "text": "In der modernen Wissensökonomie ist die primäre Einschränkung der menschlichen Produktivität nicht mehr der Zugang zu Informationen, sondern der Mangel an ununterbrochener Aufmerksamkeitsbandbreite. Jedes Mal, wenn ein Fachmann die Aufgabe wechselt – eine eingehende Chat-Nachricht überprüfen, einen Benachrichtigungsausweis scannen oder einen Blick auf eine E-Mail-Benachrichtigung werfen – bleibt ein erheblicher kognitiver Nachteil, der als „Aufmerksamkeitsrückstand“ bezeichnet wird, bei der vorherigen Aufgabe verankert und beeinträchtigt die Führungsfunktion und das Arbeitsgedächtnis bis zu zwanzig Minuten lang."
+      "text": "Empirische Studien führender Wissenschaftler, Autoren und Systemingenieure zeigen eine obere physiologische Grenze von etwa vier Stunden echter Deep-Intellektueller-Arbeit pro Tag. Die Organisation von Zeitplänen um zwei ununterbrochene 90-Minuten-Ultradian-Zyklen herum – gefolgt von aktiver körperlicher Erholung – führt zu weitaus größeren kreativen und analytischen Durchbrüchen als zehn Stunden gebrochenes Multitasking."
     },
     {
       "type": "video",
-      "title": "Deep Work: How to Focus Intensely and Eliminate Attentional Residue",
-      "caption": "Behavioral science breakdown of working memory capacity, flow state triggers, and environment design.",
-      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E"
+      "src": "https://www.youtube-nocookie.com/embed/Y0T6PZkRz9E",
+      "title": "Deep Work: Wie man sich intensiv konzentriert und Aufmerksamkeitsreste beseitigt",
+      "caption": "Verhaltenswissenschaftliche Aufschlüsselung der Arbeitsgedächtniskapazität, Flusszustandsauslöser und Umgebungsdesign."
     },
     {
       "type": "h2",
-      "text": "Die neurologischen Kosten der Aufmerksamkeitsfragmentierung"
+      "text": "Die Souveränität des fokussierten Denkens"
     },
     {
       "type": "p",
-      "text": "In der modernen Wissensökonomie ist die primäre Einschränkung der menschlichen Produktivität nicht mehr der Zugang zu Informationen, sondern der Mangel an ununterbrochener Aufmerksamkeitsbandbreite. Jedes Mal, wenn ein Fachmann die Aufgabe wechselt – eine eingehende Chat-Nachricht überprüfen, einen Benachrichtigungsausweis scannen oder einen Blick auf eine E-Mail-Benachrichtigung werfen – bleibt ein erheblicher kognitiver Nachteil, der als „Aufmerksamkeitsrückstand“ bezeichnet wird, bei der vorherigen Aufgabe verankert und beeinträchtigt die Führungsfunktion und das Arbeitsgedächtnis bis zu zwanzig Minuten lang."
+      "text": "In einer Zeit, die von hyperoptimierten algorithmischen Dopamin-Feeds und performativer Geschäftigkeit dominiert wird, ist die Fähigkeit zu intensiver, einsamer, ununterbrochener Konzentration zu einer seltenen und entscheidenden Superkraft geworden. Die Kultivierung kognitiver Ergonomie ist ein Akt intellektueller Souveränität."
     }
   ],
-  "sourceHash": "7bfd150cc1f2e83c8fe1169fee73ce08167051d1"
+  "sourceHash": "932512034e666b7ed2369405a9bafdbd2a1487d5"
 }

@@ -1,0 +1,74 @@
+{
+  "slug": "mass-timber-and-cross-laminated-timber-skyscrapers",
+  "title": "El auge de los rascacielos de madera",
+  "excerpt": "Una investigación de ingeniería arquitectónica sobre la madera en masa: madera contralaminada (CLT), acústica estructural biofílica, métricas de secuestro de carbono y la física de carbonización de la seguridad contra incendios en raspadores de madera.",
+  "date": "2026-11-17",
+  "author": "Mateo Silva",
+  "tags": [
+    "architecture",
+    "mass-timber",
+    "clt",
+    "sustainability",
+    "civil-engineering",
+    "urban-design"
+  ],
+  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Interior arquitectónico moderno con altísimas vigas de madera curvadas y amplias ventanas de vidrio",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La ingeniería estructural de madera contralaminada (CLT)"
+    },
+    {
+      "type": "p",
+      "text": "Durante más de un siglo, los horizontes urbanos de gran altura se han definido exclusivamente por el hormigón armado y el acero estructural, materiales responsables de casi el 15% de todas las emisiones mundiales de gases de efecto invernadero. La madera en masa altera fundamentalmente este paradigma. Al pegar madera dimensionada en capas ortogonales alternas de fibra transversal bajo prensas hidráulicas, la madera contralaminada (CLT) logra resistencias a la compresión y a la tracción competitivas con el hormigón y al mismo tiempo pesa una fracción más."
+    },
+    {
+      "type": "h2",
+      "text": "Atributos arquitectónicos y estructurales clave"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Distribución de carga ortogonal: las orientaciones alternas de las laminillas de 90 grados brindan capacidades de luz estructural bidireccional, lo que permite que las losas de CLT funcionen como diafragmas rígidos y muros de corte.",
+        "Pirólisis de carbonización predecible: la madera en masa se quema desde afuera hacia adentro a una velocidad predecible de aproximadamente 0,65 mm/minuto, formando una costra de carbón exterior aislante que protege el núcleo estructural.",
+        "Masa de construcción con emisiones de carbono negativas: mientras que el hormigón libera media tonelada de CO2 por tonelada producida, la madera en masa recolectada de forma sostenible retiene una tonelada de CO2 atmosférico por cada metro cúbico de madera.",
+        "Prefabricación de precisión fuera del sitio: los paneles fresados ​​por CNC llegan al sitio con tolerancias milimétricas, lo que reduce los cronogramas de construcción de rascacielos y el ruido del sitio hasta en un 50%."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "El hormigón y el acero se extraen de la tierra mediante el fuego y el calor; La madera se cultiva con el sol y la lluvia. Un rascacielos de madera no es simplemente un edificio; es un sumidero de carbono vertical.",
+      "cite": "Revisión de arquitectura estructural sostenible de Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Fachada de rascacielos arquitectónico moderno de gran altura que combina cálidas persianas de madera natural orgánica con vidrio estructural",
+      "caption": "Núcleos híbridos de madera y hormigón: combinación de pisos de madera maciza con esbeltos huecos de ascensores de hormigón para lograr resistencia sísmica de los rascacielos."
+    },
+    {
+      "type": "h2",
+      "text": "Desacoplamiento acústico y psicología biofílica"
+    },
+    {
+      "type": "p",
+      "text": "Debido a que los pisos de madera livianos transfieren la vibración del impacto más fácilmente que el concreto moldeado pesado, los ingenieros implementan almohadillas de elastómero acústico y capas superiores de lastre de arena para lograr un aislamiento acústico superior. Además, dejar vetas de madera expuestas en techos y columnas reduce los niveles de cortisol en la saliva de los ocupantes y la frecuencia cardíaca a través de un diseño biofílico innato."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/v3JqSsc8ZKk",
+      "title": "Documental: Los edificios de madera más altos del mundo",
+      "caption": "El documental de arquitectura de B1M que explora la ingeniería moderna en madera maciza, pruebas de fuego y torres de madera de más de 20 pisos que remodelan los horizontes globales."
+    },
+    {
+      "type": "h2",
+      "text": "El futuro de los horizontes urbanos regenerativos"
+    },
+    {
+      "type": "p",
+      "text": "A medida que los códigos de construcción en Europa y América del Norte amplían la construcción con madera permitida hasta 24 pisos, la madera en masa representa el camino más viable hacia la construcción de ciudades de alta densidad y neutras en carbono que secuestran el carbono atmosférico durante siglos."
+    }
+  ],
+  "sourceHash": "aa1ed20ee74f899773240e9056fb2a2f424ebc15"
+}

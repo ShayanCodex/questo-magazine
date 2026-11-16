@@ -1,0 +1,74 @@
+{
+  "slug": "analog-synthesizers-and-voltage-controlled-oscillators",
+  "title": "La física de los sintetizadores analógicos",
+  "excerpt": "Un desglose de la ingeniería electroacústica de la síntesis de sonido analógico: CV de tono de 1 voltio por octava, filtros de escalera de transistores, carga de condensadores integradores y circuitos de conformación de ondas.",
+  "date": "2026-11-17",
+  "author": "Siddharth Nair",
+  "tags": [
+    "audio-engineering",
+    "synthesizers",
+    "analog-electronics",
+    "music-technology",
+    "physics",
+    "acoustics"
+  ],
+  "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Sintetizador analógico modular con intrincados cables de conexión coloridos y perillas de control analógicas brillantes",
+  "body": [
+    {
+      "type": "h2",
+      "text": "La generación de sonido a partir de voltaje eléctrico continuo"
+    },
+    {
+      "type": "p",
+      "text": "Antes de la llegada de los microprocesadores y el muestreo digital, el sonido electrónico no se generaba a través de un código binario discreto, sino a través de corrientes eléctricas continuas sin procesar. En un sintetizador analógico, el sonido comienza dentro de un oscilador controlado por voltaje (VCO), un circuito electrónico donde un voltaje de entrada variable dicta con precisión la frecuencia cíclica de carga y descarga de un capacitor eléctrico."
+    },
+    {
+      "type": "h2",
+      "text": "Piedras angulares de la ingeniería de circuitos"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "El estándar de 1 voltio por octava: Establecer una relación exponencial donde cada entrada adicional de 1 voltio duplica la frecuencia del oscilador, igualando la escala de tono musical humano.",
+        "Mecánica de reinicio de rampa de capacitor: una fuente de corriente constante carga un capacitor linealmente hasta que un comparador activa un transistor de reinicio de alta velocidad, produciendo una onda geométrica en forma de diente de sierra.",
+        "Conformación de onda de diodo diferencial: pasar corrientes en forma de diente de sierra a través de redes de escalera de diodos de silicio emparejadas para redondear crestas de onda afiladas en formas de onda sinusoidales y triangulares armónicamente puras.",
+        "Filtro de escalera de transistores de 4 polos de Moog: un conjunto de transistores en cascada que introduce una pronunciada pendiente de corte de paso bajo de 24 dB/octava con resonancia de retroalimentación ajustable cercana a la autooscilación."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Los sintetizadores analógicos no calculan el sonido; vibran físicamente con voltajes fluctuantes. Las microderivaciones y la inestabilidad térmica son las que infunden calidez acústica a los instrumentos analógicos.",
+      "cite": "Laboratorio de sintetizadores electroacústicos Questo"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Teclado sintetizador de audio analógico antiguo que muestra atenuadores de modulación de tono detallados y potenciómetros giratorios",
+      "caption": "Síntesis sustractiva: filtrado de ondas crudas armónicamente ricas a través de filtros resonantes controlados por voltaje y generadores de envolvente."
+    },
+    {
+      "type": "h2",
+      "text": "Deriva térmica y pares diferenciales coincidentes"
+    },
+    {
+      "type": "p",
+      "text": "Debido a que las caídas de voltaje en las uniones de semiconductores varían con la temperatura ambiente en aproximadamente -2,1 mV por grado Celsius, los sintetizadores analógicos no compensados ​​fácilmente se desvían de la melodía musical. Los primeros pioneros resolvieron esto emparejando transistores convertidores exponenciales en una matriz de silicio térmica compartida o usando resistencias tempco de compensación de temperatura."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/EeYL6lJsNT8",
+      "title": "Tutorial de electrónica: Explicación del oscilador controlado por voltaje (VCO)",
+      "caption": "Desglose técnico que analiza el diseño del circuito, los ciclos de carga y descarga del capacitor y la mecánica del voltaje de control de osciladores analógicos."
+    },
+    {
+      "type": "h2",
+      "text": "El renacimiento táctil de la síntesis modular"
+    },
+    {
+      "type": "p",
+      "text": "En nuestro panorama contemporáneo de estaciones de trabajo de audio digital (DAW) de software y clics del mouse en pantalla, la inmediatez física tangible de conectar voltajes de control analógico con cables físicos continúa inspirando a músicos y diseñadores de sonido de todo el mundo."
+    }
+  ],
+  "sourceHash": "63129b1a08b45ac723a91283804b9d90eed18245"
+}

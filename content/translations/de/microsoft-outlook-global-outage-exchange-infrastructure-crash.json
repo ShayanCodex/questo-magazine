@@ -1,7 +1,7 @@
 {
   "slug": "microsoft-outlook-global-outage-exchange-infrastructure-crash",
-  "title": "Der globale Absturz von Microsoft Outlook: Ursachenanalyse, Ausfälle der Exchange Online-Infrastruktur und Schwachstellen in der verteilten Cloud",
-  "excerpt": "Eine forensische Systemuntersuchung des weltweiten Exchange Online-Ausfalls: BGP-Telemetriestürme, kaskadierende Azure AD-Authentifizierungsschleifen und die strukturellen Gefahren der zentralisierten Unternehmenskommunikation.",
+  "title": "Einblick in den globalen Outlook-Absturz",
+  "excerpt": "Eine forensische Systemuntersuchung des weltweiten Exchange Online-Ausfalls: BGP-Telemetriestürme, kaskadierende Azure AD-Authentifizierungsschleifen und die strukturellen Gefahren zentralisierter Unternehmenskommunikation.",
   "date": "2026-11-16",
   "author": "Hiroshi Tanaka",
   "tags": [
@@ -79,5 +79,5 @@
       "text": "Echte Hochverfügbarkeit erfordert den Verzicht auf monolithische öffentliche Cloud-Monokulturen. Unternehmen müssen dezentrale sekundäre E-Mail-Fallbacks, strenge clientseitige Jitter-Backoff-Intervalle, eine entkoppelte Identitätsföderation und eine regionale Fehlerdomänenisolierung implementieren. Bis die Unternehmensarchitektur autonomes lokales Caching und Offline-Protokolle ohne Abhängigkeiten durchsetzt, bleibt der Komfort zentralisierter SaaS eine Geisel der nächsten verteilten Kaskade."
     }
   ],
-  "sourceHash": "13e6000c329a0bfb08e856abcb53a098af53993c"
+  "sourceHash": "96e7eadb90d582fd44bad0c879cc10a00d527d9b"
 }

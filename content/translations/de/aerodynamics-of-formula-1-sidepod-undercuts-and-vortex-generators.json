@@ -1,6 +1,6 @@
 {
   "slug": "aerodynamics-of-formula-1-sidepod-undercuts-and-vortex-generators",
-  "title": "F1-Aerodynamik: Outwash-Erzeugung, Seitenkastenunterschnitte und Bodeneffektabdichtung",
+  "title": "F1-Aerodynamik und Bodeneffekte",
   "excerpt": "Hochauflösende Telemetrieanalyse der Abtriebsverteilung, Wirbelablösung entlang der Hinterkanten-Bodenschürzen und thermische Kompromisse bei der Bremsenkühlung im modernen Motorsport.",
   "date": "2026-11-16",
   "author": "Liam O’Connor",
@@ -12,33 +12,33 @@
     "telemetry"
   ],
   "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "High-speed Formula 1 car apex cornering through chicane with ground effect underfloor suction",
+  "imageAlt": "Hochgeschwindigkeits-Scheitelpunktkurven eines Formel-1-Wagens durch eine Schikane mit Bodeneffekt-Unterbodenabsaugung",
   "body": [
     {
       "type": "h2",
-      "text": "Die Mechanik moderner Bodeneffekt-Venturi-Tunnel."
+      "text": "Die Mechanik moderner Bodeneffekt-Venturi-Tunnel"
     },
     {
       "type": "p",
-      "text": "Im Elite-Einsitzer-Motorsport ist die aerodynamische Entwicklung ein unerbittlicher Kampf um die Gewinnung von Abtrieb bei gleichzeitiger Minimierung des parasitären Widerstands und der aerodynamischen Empfindlichkeit gegenüber Fahrzeugneigung und -neigung. Nach der Wiedereinführung vollständiger Unterboden-Venturi-Tunnel in den aktuellen technischen Vorschriften der Formel 1 verlagerte sich der Schwerpunkt der Leistung von komplexen Winglets über dem Körper hin zur Steuerung des Massenluftstroms durch konvergierende und divergierende Unterbodenkanäle."
+      "text": "Im Elite-Einsitzer-Motorsport ist die aerodynamische Entwicklung ein unerbittlicher Kampf um die Gewinnung von Abtrieb bei gleichzeitiger Minimierung des parasitären Luftwiderstands und der aerodynamischen Empfindlichkeit gegenüber Fahrzeugneigung und -neigung. Nach der Wiedereinführung vollständiger Unterboden-Venturi-Tunnel in den aktuellen technischen Vorschriften der Formel 1 verlagerte sich der Schwerpunkt der Leistung von komplexen Winglets über dem Körper hin zur Steuerung des Massenluftstroms durch konvergierende und divergierende Unterbodenkanäle."
     },
     {
       "type": "h2",
-      "text": "Die Mechanik moderner Bodeneffekt-Venturi-Tunnel."
+      "text": "Schlüsselströmungsphysik der Formel-1-Aerodynamik"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Carbon-fiber sidepod undercut sculpting and rear diffuser expansion tunnel",
-      "caption": "Underfloor Venturi throat: accelerated mass airflow generating massive negative pressure beneath the chassis."
+      "alt": "Unterschnittformung des Seitenkastens aus Kohlefaser und Erweiterungstunnel des Heckdiffusors",
+      "caption": "Venturi-Hals unter dem Boden: Beschleunigter Massenluftstrom, der einen massiven Unterdruck unter dem Chassis erzeugt."
     },
     {
       "type": "ul",
       "items": [
-        "Venturi Suction & Bernoulli Principle: Restricting underfloor cross-sectional area forces incoming air to accelerate rapidly, generating immense negative pressure that suctions the chassis toward the asphalt.",
-        "Sidepod Undercut Channeling: Deep volumetric carving beneath sidepod radiators directs clean, unseparated airflow over the top of the rear diffuser, boosting mass expansion ratios.",
-        "Vortex Edge Sealing: Engineered floor edges utilize vortex generators to shed high-energy rotational air streams along floor perimeters, acting as an invisible aerodynamic skirt to prevent ambient air ingress.",
-        "Porpoising & Aerodynamic Stall: When extreme downforce compresses suspension past critical ride-height thresholds, the underfloor stalls abruptly, triggering catastrophic cyclical vehicle bouncing."
+        "Venturi-Saug- und Bernoulli-Prinzip: Die Beschränkung der Querschnittsfläche unter dem Boden zwingt die einströmende Luft zu einer schnellen Beschleunigung, wodurch ein enormer Unterdruck entsteht, der das Chassis in Richtung Asphalt saugt.",
+        "Sidepod Undercut Channeling: Tiefe volumetrische Schnitzereien unter den Sidepod-Kühlern leiten einen sauberen, ungetrennten Luftstrom über die Oberseite des Heckdiffusors und erhöhen so die Massenausdehnungsverhältnisse.",
+        "Wirbelkantenversiegelung: Konstruierte Bodenkanten nutzen Wirbelgeneratoren, um hochenergetische Rotationsluftströme entlang der Bodenränder abzuleiten und als unsichtbare aerodynamische Schürze zu verhindern, dass Umgebungsluft eindringt.",
+        "Porpoising & aerodynamischer Strömungsabriss: Wenn extremer Abtrieb die Aufhängung über kritische Fahrhöhenschwellen hinaus komprimiert, kommt es zu einem plötzlichen Strömungsabriss des Unterbodens, was ein katastrophales zyklisches Aufprallen des Fahrzeugs auslöst."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Pitlane aerodynamics telemetry monitors showing real-time ride-height sensors and downforce distribution",
-      "caption": "Vortex edge sealing: floor perimeter strakes shedding high-energy vortices to isolate underfloor negative pressure."
+      "alt": "Telemetriemonitore für die Aerodynamik in der Boxengasse, die Echtzeit-Höhensensoren und Abtriebsverteilung anzeigen",
+      "caption": "Wirbelkantenversiegelung: Bodenrandstreifen, die hochenergetische Wirbel abwerfen, um den Unterbodenunterdruck zu isolieren."
     },
     {
       "type": "h2",
-      "text": "Die Mechanik moderner Bodeneffekt-Venturi-Tunnel."
+      "text": "Computational Fluid Dynamics (CFD) und Korrelation"
     },
     {
       "type": "p",
-      "text": "Im Elite-Einsitzer-Motorsport ist die aerodynamische Entwicklung ein unerbittlicher Kampf um die Gewinnung von Abtrieb bei gleichzeitiger Minimierung des parasitären Widerstands und der aerodynamischen Empfindlichkeit gegenüber Fahrzeugneigung und -neigung. Nach der Wiedereinführung vollständiger Unterboden-Venturi-Tunnel in den aktuellen technischen Vorschriften der Formel 1 verlagerte sich der Schwerpunkt der Leistung von komplexen Winglets über dem Körper hin zur Steuerung des Massenluftstroms durch konvergierende und divergierende Unterbodenkanäle."
+      "text": "Da die Sportvorschriften strenge aerodynamische Testbeschränkungen (ATR) für die Belegung des Windkanals und die GPU-Stunden des Supercomputings vorschreiben, verlassen sich die Ingenieurteams stark auf instationäre Reynolds-Averaged Navier-Stokes (URANS) und Large Eddy Simulations (LES). Die Korrelation der virtuellen Turbulenzmodellierung mit der physischen Gleistelemetrie erfordert eine kontinuierliche Laser-Fahrhöhenmessung und eine Kalibrierung des Pitotrohr-Arrays."
     },
     {
       "type": "video",
-      "title": "Formula 1 Aerodynamics Explained: Venturi Tunnels, Vortices, and Floor Sealing",
-      "caption": "Detailed fluid dynamics walkthrough of ground effect downforce generation and sidepod airflow conditioning.",
-      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w"
+      "src": "https://www.youtube-nocookie.com/embed/5c_8bO_hZ9w",
+      "title": "Formel-1-Aerodynamik erklärt: Venturi-Tunnel, Wirbel und Bodenabdichtung",
+      "caption": "Detaillierte Fluiddynamik-Anleitung zur Erzeugung von Bodeneffekt-Abtrieb und Seitenpod-Luftstromkonditionierung."
     },
     {
       "type": "h2",
-      "text": "Die Mechanik moderner Bodeneffekt-Venturi-Tunnel."
+      "text": "Das Zusammenspiel von Wärmemanagement und Aero-Effizienz"
     },
     {
       "type": "p",
-      "text": "Im Elite-Einsitzer-Motorsport ist die aerodynamische Entwicklung ein unerbittlicher Kampf um die Gewinnung von Abtrieb bei gleichzeitiger Minimierung des parasitären Widerstands und der aerodynamischen Empfindlichkeit gegenüber Fahrzeugneigung und -neigung. Nach der Wiedereinführung vollständiger Unterboden-Venturi-Tunnel in den aktuellen technischen Vorschriften der Formel 1 verlagerte sich der Schwerpunkt der Leistung von komplexen Winglets über dem Körper hin zur Steuerung des Massenluftstroms durch konvergierende und divergierende Unterbodenkanäle."
+      "text": "Jeder Quadratmillimeter aerodynamischer Oberfläche stellt einen bewussten Kompromiss zwischen durch Luftwiderstand verursachter Rundenzeit und thermischer Kühlung für Hybridantriebseinheiten, Turbolader und Carbon-Keramik-Bremsen dar. Die siegreichen Autos des modernen Motorsports beherrschen die unsichtbare Grenzschicht, an der Fluiddynamik und mechanische Verpackung aufeinandertreffen."
     }
   ],
-  "sourceHash": "69041648c357f2adf487a524662232a5d79362fb"
+  "sourceHash": "0d0448d25dd966e4925273b73436fcd53f0751a1"
 }

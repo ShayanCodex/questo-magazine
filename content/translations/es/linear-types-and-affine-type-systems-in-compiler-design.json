@@ -1,7 +1,7 @@
 {
   "slug": "linear-types-and-affine-type-systems-in-compiler-design",
-  "title": "Tipos lineales y sistemas de tipos afines en la programación de sistemas",
-  "excerpt": "Una exploración de la teoría del lenguaje de programación en lógica lineal, seguimiento de recursos afines, garantías de consumo de memoria y abstracciones seguras de costo cero en sistemas en tiempo de compilación.",
+  "title": "Tipos lineales y afines en código de sistemas",
+  "excerpt": "Una exploración de la teoría del lenguaje de programación sobre lógica lineal, seguimiento de recursos afines, garantías de consumo de memoria y abstracciones seguras de costo cero en sistemas en tiempo de compilación.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "Los canales lineales imponen tipos de sesión: secuencias de protocolos donde las primitivas de envío y recepción se alternan de forma determinista. Esto garantiza la ausencia de puntos muertos y condiciones de carrera en los microservicios distribuidos."
     }
   ],
-  "sourceHash": "0eff32dad713ba2cba4f1f46e2081b3713575034"
+  "sourceHash": "612839826d2c3698202d72028d4286f872d7d6bb"
 }

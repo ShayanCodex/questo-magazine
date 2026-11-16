@@ -1,6 +1,6 @@
 {
   "slug": "treasury-basis-trade-and-shadow-banking-leverage",
-  "title": "L'échange de base du Trésor : effet de levier des hedge funds, écarts entre les liquidités et les contrats à terme et fragilité des pensions",
+  "title": "La base du Trésor et la fragilité des opérations de pension",
   "excerpt": "Déconstruire le commerce d'arbitrage en espèces et à terme de plusieurs milliards de dollars : transformation des garanties, limites de compensation de la contrepartie centrale et retraits de liquidité systémique.",
   "date": "2026-11-16",
   "author": "Claire Dupont",
@@ -12,7 +12,7 @@
     "central-banking"
   ],
   "image": "https://images.unsplash.com/photo-1565372195458-9de0b320ef04?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Institutional multi-monitor trading desk displaying sovereign bond spreads, repo rates, and futures arbitrage",
+  "imageAlt": "Pupitre de négociation institutionnel multi-moniteurs affichant les spreads des obligations souveraines, les taux de pension et les arbitrages de contrats à terme",
   "body": [
     {
       "type": "h2",
@@ -20,25 +20,25 @@
     },
     {
       "type": "p",
-      "text": "Les transactions sur base de trésorerie et de contrats à terme du Trésor représentent l'une des plus grandes concentrations de levier financier sur les marchés de capitaux mondiaux. À la base, la stratégie exploite les écarts de prix infimes entre les titres du Trésor américain au comptant et les contrats à terme sur obligations du Trésor. Étant donné que les gestionnaires d'actifs en argent réel et les fonds de pension préfèrent détenir des contrats à terme standardisés pour obtenir une exposition à la durée sans liaison de capital, les contrats à terme se négocient systématiquement avec une légère prime par rapport au panier de garanties en espèces sous-jacent."
+      "text": "Les échanges sur base de trésorerie et de contrats à terme du Trésor représentent l'une des plus grandes concentrations de levier financier sur les marchés de capitaux mondiaux. À la base, la stratégie exploite les écarts de prix infimes entre les titres du Trésor américain au comptant et les contrats à terme sur obligations du Trésor. Étant donné que les gestionnaires d'actifs en argent réel et les fonds de pension préfèrent détenir des contrats à terme standardisés pour obtenir une exposition à la durée sans liaison de capital, les contrats à terme se négocient systématiquement avec une légère prime par rapport au panier de garanties en espèces sous-jacent."
     },
     {
       "type": "h2",
-      "text": "L'anatomie mécanique de l'arbitrage de base"
+      "text": "Dynamique structurelle de l'arbitrage financé par les pensions"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Yield curve inversion chart and basis trade spread differentials between cash and futures Treasuries",
-      "caption": "Basis spread dynamics: capturing minute pricing discrepancies between cash Treasury bonds and futures contracts."
+      "alt": "L'échange sur la base du Trésor : effet de levier des hedge funds, écarts en espèces-futures et fragilité des pensions - Opérationnel Figure 4",
+      "caption": "Observation empirique : mécanismes opérationnels et télémétrie fondamentale soutenant l'échange sur la base du Trésor : effet de levier des hedge funds, écarts en espèces-futures et fragilité des pensions."
     },
     {
       "type": "ul",
       "items": [
-        "Cash-Futures Premium Extraction: Arbitrageurs purchase relatively cheaper cash Treasuries while simultaneously shorting Treasury futures contracts to lock in an annualized spread of twenty to sixty basis points.",
-        "Extreme Bilateral Leverage: To convert fractional yield differentials into twenty percent return-on-equity benchmarks, funds deploy leverage ratios ranging from twenty-to-one to over sixty-to-one through bilateral overnight repo agreements.",
-        "Collateral Transformation: Primary dealer banks finance the trade by accepting cash Treasuries as collateral, exposing themselves to collateral valuation haircuts during sudden volatility spikes.",
-        "Margin Call Cascades: When interest rate volatility spikes or cash-futures basis relationships diverge, simultaneous margin calls from clearinghouses and repo counterparties force immediate unhedged liquidations."
+        "Extraction de primes de trésorerie et de contrats à terme : les arbitres achètent des bons du Trésor au comptant relativement moins chers tout en vendant simultanément des contrats à terme du Trésor pour verrouiller un écart annualisé de vingt à soixante points de base.",
+        "Levier bilatéral extrême : pour convertir les différentiels de rendement fractionnaires en références de rendement des capitaux propres de vingt pour cent, les fonds déploient des ratios de levier allant de vingt pour un à plus de soixante pour un par le biais d'accords bilatéraux de pension au jour le jour.",
+        "Transformation des garanties : les banques de spécialistes primaires financent le commerce en acceptant des bons du Trésor en espèces comme garantie, s'exposant ainsi à des décotes de valorisation des garanties lors de pics soudains de volatilité.",
+        "Cascades d'appels de marge : lorsque la volatilité des taux d'intérêt augmente ou que les relations sur la base des liquidités et des contrats à terme divergent, des appels de marge simultanés de la part des chambres de compensation et des contreparties des pensions entraînent des liquidations immédiates non couvertes."
       ]
     },
     {
@@ -49,31 +49,31 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Primary dealer banking headquarters managing bilateral repo collateral financing for hedge funds",
-      "caption": "Overnight repo leverage: transforming 30-basis-point yield differentials into 20% equity returns via 50:1 leverage."
+      "alt": "L'échange de base du Trésor : effet de levier des hedge funds, écarts de trésorerie-futures et fragilité des pensions - Opérationnel Figure 7",
+      "caption": "Observation empirique : mécanismes opérationnels et télémétrie fondamentale soutenant l'échange de base du Trésor : effet de levier des hedge funds, écarts de trésorerie-futures et fragilité des pensions."
     },
     {
       "type": "h2",
-      "text": "L'anatomie mécanique de l'arbitrage de base"
+      "text": "Mandats de compensation centrale et tampons systémiques"
     },
     {
       "type": "p",
-      "text": "Les transactions sur base de trésorerie et de contrats à terme du Trésor représentent l'une des plus grandes concentrations de levier financier sur les marchés de capitaux mondiaux. À la base, la stratégie exploite les écarts de prix infimes entre les titres du Trésor américain au comptant et les contrats à terme sur obligations du Trésor. Étant donné que les gestionnaires d'actifs en argent réel et les fonds de pension préfèrent détenir des contrats à terme standardisés pour obtenir une exposition à la durée sans liaison de capital, les contrats à terme se négocient systématiquement avec une légère prime par rapport au panier de garanties en espèces sous-jacent."
+      "text": "Conscients des risques de gel des liquidités manifestés lors de la perturbation des marchés de mars 2020, les organismes de réglementation mondiaux appliquent des mandats de compensation centrale complets pour les transactions de trésorerie au comptant et les opérations de pension. En interposant une contrepartie centrale (CCP) entre les contreparties bilatérales, les régulateurs visent à faire respecter des exigences de marge initiale standardisées et à empêcher une évaporation soudaine des liquidités."
     },
     {
       "type": "video",
-      "title": "Explaining the Treasury Basis Trade: Leverage, Risk, and Market Plumbing",
-      "caption": "Detailed macroeconomic exploration of cash Treasuries, futures basis spreads, and primary dealer repo mechanics.",
-      "src": "https://www.youtube-nocookie.com/embed/Pj1L7Uq2Zkc"
+      "src": "https://www.youtube-nocookie.com/embed/Pj1L7Uq2Zkc",
+      "title": "Expliquer le commerce de base du Trésor : effet de levier, risque et plomberie du marché",
+      "caption": "Exploration macroéconomique détaillée des bons du Trésor au comptant, des spreads de base des contrats à terme et des mécanismes de pension des principaux concessionnaires."
     },
     {
       "type": "h2",
-      "text": "L'anatomie mécanique de l'arbitrage de base"
+      "text": "L'avenir structurel de la dette souveraine"
     },
     {
       "type": "p",
-      "text": "Les transactions sur base de trésorerie et de contrats à terme du Trésor représentent l'une des plus grandes concentrations de levier financier sur les marchés de capitaux mondiaux. À la base, la stratégie exploite les écarts de prix infimes entre les titres du Trésor américain au comptant et les contrats à terme sur obligations du Trésor. Étant donné que les gestionnaires d'actifs en argent réel et les fonds de pension préfèrent détenir des contrats à terme standardisés pour obtenir une exposition à la durée sans liaison de capital, les contrats à terme se négocient systématiquement avec une légère prime par rapport au panier de garanties en espèces sous-jacent."
+      "text": "Alors que les émissions de dette souveraine atteignent des sommets historiques dans les économies occidentales, les bilans privés à effet de levier resteront cruciaux pour absorber l'offre des courtiers principaux. Équilibrer l’apport de liquidité systémique du commerce de base avec le risque catastrophique de ventes incendiaires de marges non couvertes reste le défi central auquel sont confrontés les banquiers centraux modernes."
     }
   ],
-  "sourceHash": "bed123d83dfb5c118feb7166331a7fd9a97d6a5c"
+  "sourceHash": "5d27347493eca4891223c80ceb212bfe243709b9"
 }

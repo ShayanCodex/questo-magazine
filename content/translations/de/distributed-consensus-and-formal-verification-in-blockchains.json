@@ -1,6 +1,6 @@
 {
   "slug": "distributed-consensus-and-formal-verification-in-blockchains",
-  "title": "Verteilter Konsens und formale Verifizierung in Hochdurchsatz-Blockchains",
+  "title": "Verteilter Konsens und Verifizierung",
   "excerpt": "Eine Systemprotokollanalyse von Pipeline-DAG-basierter byzantinischer Fehlertoleranz, TLA+-Sicherheitsnachweisen und Zustandsmaschinenreplikation unter gegnerischer Netzwerklatenz.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
@@ -37,7 +37,7 @@
     },
     {
       "type": "quote",
-      "text": "Geschwindigkeit in verteilten Protokollen ist ohne formale Korrektheitsnachweise bedeutungslos. Durch mathematische Verifizierung werden optimistische Systeme zu unerschütterlichen Staatsbüchern.",
+      "text": "Geschwindigkeit in verteilten Protokollen ist ohne formale Korrektheitsnachweise bedeutungslos. Durch mathematische Verifikation werden optimistische Systeme zu unerschütterlichen Staatsbüchern.",
       "cite": "Überprüfung der Systemarchitektur und des verteilten Konsenses"
     },
     {
@@ -69,5 +69,5 @@
       "text": "Durch die Gewährleistung der Sicherheit unter vollständig asynchronen Bedingungen und die Gewährleistung der Lebendigkeit, wenn die Netzwerklatenz unter eine Grenze (Delta) fällt, behalten moderne Protokolle auch bei schwerwiegenden Ausfällen der Internet-Infrastruktur-Routing eine grundsolide Endgültigkeit bei."
     }
   ],
-  "sourceHash": "a22641abbb6c18b07d927dd752a5818a142e0b07"
+  "sourceHash": "6be6c94303a5c5028c18353a861f7c4b932cba1e"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "humanoid-robotics-torque-density-and-visuomotor-policies",
-  "title": "Robotique humanoïde, densité de couple des actionneurs et politiques neuromotrices visuomotrices de bout en bout en temps réel",
+  "title": "Robotique humanoïde et dynamique des actionneurs",
   "excerpt": "Une enquête technique sur la mécanique de la locomotion humanoïde bipède : actionneurs planétaires à entraînement quasi direct, cinématique des engrenages cycloïdaux et politiques neuronales visuomotrices basées sur un transformateur s'exécutant à 100 Hz.",
   "date": "2026-11-17",
   "author": "Elena Vance",
@@ -70,5 +70,5 @@
       "text": "À mesure que les plates-formes matérielles atteignent leur maturité structurelle avec des autonomies de batterie au lithium-titanate de plusieurs heures et des cadres squelettiques en composite de carbone, le réactif limitant se déplace entièrement vers l'acquisition de données tactiles et la généralisation des politiques. La réalisation ultime du paradigme humanoïde ne sera pas réalisée dans des usines isolées, mais dans des systèmes autonomes capables d’un apprentissage tactile auto-supervisé continu à travers le monde physique chaotique."
     }
   ],
-  "sourceHash": "ddd4c2e5bb67e3e5999387adb27f2b26b593ff2e"
+  "sourceHash": "dd0951bd88216edf532939e421077bacc2fdcb30"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "perovskite-silicon-tandem-solar-cells-and-photovoltaic-efficiency",
-  "title": "پیرووسکائٹ-سلیکون ٹینڈم سولر سیلز: شاکلی-کوئیزر کی حد سے تجاوز",
-  "excerpt": "وسیع بینڈ گیپ میٹل-ہالائڈ پیرووسکائٹ انضمام، ٹنل جنکشن، اور صنعتی رول ٹو رول فوٹو وولٹک مینوفیکچرنگ میں میٹریل انجینئرنگ کی تحقیقات۔",
+  "title": "Perovskite-Silicon Tandem Solar Cells",
+  "excerpt": "A materials engineering investigation into wide-bandgap metal-halide perovskite integration, tunnel junctions, and industrial roll-to-roll photovoltaic manufacturing.",
   "date": "2026-11-16",
   "author": "Tariq Mahmood",
   "tags": [
@@ -12,62 +12,62 @@
     "clean-energy"
   ],
   "image": "https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "وسیع اسپیکٹرم ٹینڈم تہوں میں سورج کی روشنی کو تبدیل کرنے والی اعلی کارکردگی والا فوٹو وولٹک شمسی سرنی",
+  "imageAlt": "High-efficiency photovoltaic solar array converting sunlight across wide-spectrum tandem layers",
   "body": [
     {
       "type": "h2",
-      "text": "سپیکٹرل مماثلت اور سنگل جنکشن تھرموڈینامک باؤنڈری"
+      "text": "Spectral Mismatch and the Single-Junction Thermodynamic Boundary"
     },
     {
       "type": "p",
-      "text": "چھ دہائیوں سے، کمرشل فوٹوولٹکس کو سنگل جنکشن سلیکون سیلز کے لیے شاکلی کوئزر کی حد تقریباً 33٪ کی وجہ سے محدود کر دیا گیا ہے۔ چونکہ سلکان میں 1.1 الیکٹران وولٹ کا ایک فکسڈ بینڈ گیپ ہوتا ہے، اس لیے ہائی انرجی والے نیلے فوٹون تھرمل حرارت کے طور پر اضافی توانائی کھو دیتے ہیں، جب کہ ذیلی بینڈ گیپ اورکت فوٹون مکمل طور پر جذب نہیں ہوتے۔ ٹینڈم سولر آرکیٹیکچر نیچے سلکان ابزربر کے اوپر ایک وسیع بینڈ گیپ میٹل-ہالائیڈ پیرووسکائٹ سیل کو اسٹیک کرکے اس تھرموڈینامک چھت پر قابو پاتا ہے۔"
+      "text": "For six decades, commercial photovoltaics have been constrained by the Shockley-Queisser limit of roughly 33% for single-junction silicon cells. Because silicon has a fixed bandgap of 1.1 electron-volts, high-energy blue photons lose excess energy as thermal heat, while sub-bandgap infrared photons pass entirely unabsorbed. Tandem solar architecture overcomes this thermodynamic ceiling by stacking a wide-bandgap metal-halide perovskite cell on top of a bottom silicon absorber."
     },
     {
       "type": "h2",
-      "text": "کلیدی نکات"
+      "text": "Key Points"
     },
     {
       "type": "ul",
       "items": [
-        "بینڈ گیپ ٹیوننگ: کم سے کم تھرملائزیشن نقصانات کے ساتھ توانائی بخش نیلے سبز سورج کی روشنی کو جذب کرنے کے لیے میٹل ہالائیڈ پیرووسکائٹس کو 1.5 سے 1.8 eV تک ٹیون کیا جا سکتا ہے۔",
-        "کارکردگی کے ریکارڈز: دو ٹرمینل پیرووسکائٹ-سلیکون ٹینڈم نے 34% لیب کی تبدیلی کی کارکردگی کو پیچھے چھوڑ دیا ہے، یک سنگی سلکان سے بہتر کارکردگی کا مظاہرہ کیا ہے۔",
-        "دوبارہ ملانے والے جنکشن: الٹراتھن شفاف کنڈکٹنگ آکسائیڈز (ITO/IZO) ذیلی خلیوں کو قریب صفر آپٹیکل جذب اور برقی مزاحمت کے ساتھ جوڑتے ہیں۔",
-        "صنعتی ریٹروفٹنگ: ٹینڈم تہوں کو موجودہ TOPCon اور heterojunction (HJT) سلکان ویفر مینوفیکچرنگ لائنوں پر حل کے ذریعے جمع کیا جا سکتا ہے۔"
+        "Bandgap Tuning: Metal-halide perovskites can be tuned from 1.5 to 1.8 eV to absorb energetic blue-green sunlight with minimal thermalization losses.",
+        "Efficiency Records: Two-terminal perovskite-silicon tandems have surpassed 34% lab conversion efficiency, outperforming monolithic silicon.",
+        "Recombination Junctions: Ultrathin transparent conducting oxides (ITO/IZO) connect sub-cells with near-zero optical absorption and electrical resistance.",
+        "Industrial Retrofitting: Tandem layers can be solution-deposited onto existing TOPCon and heterojunction (HJT) silicon wafer manufacturing lines."
       ]
     },
     {
       "type": "quote",
-      "text": "ٹینڈم فوٹوولٹکس سلکان کی جگہ نہیں لیتے ہیں۔ وہ اسے بلند کرتے ہیں. ایک مائکروسکوپک پیرووسکائٹ اوورلیئر میں اعلی توانائی والے شمسی سپیکٹرم کو کیپچر کر کے، ہم اگلی نصف صدی کی کلین پاور کو کھول دیتے ہیں۔",
-      "cite": "میٹریلز سائنس اور قابل تجدید توانائی کا جائزہ"
+      "text": "Tandem photovoltaics do not replace silicon; they elevate it. By capturing the high-energy solar spectrum in a microscopic perovskite overlayer, we unlock the next half-century of clean power.",
+      "cite": "Materials Science & Renewable Energy Review"
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1200&q=80",
-      "alt": "ملٹی جنکشن فوٹوولٹک سلکان سطح کی ساخت کا کلوز اپ میکرو ویو",
-      "caption": "مائیکرو ٹیکسچرڈ ویفر سطح: فوٹوون پاتھ کی لمبائی کو بہتر بنانا اور اینٹی ریفلیکٹیو آپٹیکل ٹریپنگ۔"
+      "alt": "Close-up macro view of multi-junction photovoltaic silicon surface textures",
+      "caption": "Micro-textured wafer surface: optimizing photon path lengths and anti-reflective optical trapping."
     },
     {
       "type": "h2",
-      "text": "پیرووسکائٹ کمپوزیشنل انجینئرنگ اور ہیلائیڈ فیز سیگریگیشن"
+      "text": "Perovskite Compositional Engineering and Halide Phase Segregation"
     },
     {
       "type": "p",
-      "text": "تاریخی پیرووسکائٹ فارمولیشنز روشنی سے متاثر ہالائیڈ علیحدگی کا شکار ہیں، جہاں آئیوڈائڈ-برومائیڈ کی مخلوط جالی روشنی کے تحت کم بینڈ گیپ کلسٹرز میں تقسیم ہوتی ہے۔ جدید فارمولیشنز سیزیم-فارمامیڈینیم کیٹیشن مکسنگ کا استعمال کرتے ہوئے کرسٹل جالی کو مستحکم کرتی ہیں اور سیوڈو ہیلائیڈ ایڈیٹوز کو ٹریس کرتی ہیں، طویل مدتی ساختی ہم آہنگی کو یقینی بناتی ہیں۔"
+      "text": "Historical perovskite formulations suffered from light-induced halide segregation, where mixed iodide-bromide lattices split into low-bandgap clusters under illumination. Modern formulations stabilize the crystal lattice using cesium-formamidinium cation mixing and trace pseudohalide additives, ensuring long-term structural symmetry."
     },
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/uchjTIlPzFo",
-      "title": "ایڈوانسڈ میٹریلز انجینئرنگ اور کلین انرجی سسٹمز",
-      "caption": "کرسٹل لائن سیمی کنڈکٹر فزکس، چارج کیریئر ٹرانسپورٹ، اور قابل تجدید توانائی کی پیمائش کی تلاش۔"
+      "title": "Advanced Materials Engineering and Clean Energy Systems",
+      "caption": "Exploration of crystalline semiconductor physics, charge carrier transport, and renewable energy scaling."
     },
     {
       "type": "h2",
-      "text": "کمرشل انکیپسولیشن اور ہزار گھنٹے تھرمل انحطاط"
+      "text": "Commercial Encapsulation and Thousand-Hour Thermal Degradation"
     },
     {
       "type": "p",
-      "text": "سخت IEC 61215 ڈیمپ ہیٹ ٹیسٹنگ کے معیارات کو پاس کرنے کے لیے ایڈوانس کراس لنکڈ پولیولفین ایلسٹومر (POE) encapsulants اور اٹامک لیئر ڈیپوزیشن (ALD) ایلومینیم آکسائیڈ بیریئر فلموں کی ضرورت ہوتی ہے جو پچیس سال کی آپریشنل زندگی میں نمی کے داخلے کو روکتی ہیں۔"
+      "text": "Passing the rigorous IEC 61215 damp-heat testing standards requires advanced cross-linked polyolefin elastomer (POE) encapsulants and atomic layer deposition (ALD) aluminum oxide barrier films that prevent moisture ingress over twenty-five-year operational lifespans."
     }
   ],
-  "sourceHash": "54e2f9907a7a45745a268220a546e7160cade704"
+  "sourceHash": "e93992fa6b207a92566306d9be9ab6ab0de139b2"
 }

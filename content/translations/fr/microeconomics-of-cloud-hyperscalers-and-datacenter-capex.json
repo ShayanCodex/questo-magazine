@@ -1,6 +1,6 @@
 {
   "slug": "microeconomics-of-cloud-hyperscalers-and-datacenter-capex",
-  "title": "La microéconomie des hyperscalers cloud : amortissement, accords d'achat d'énergie et dépenses d'investissement des centres de données",
+  "title": "La microéconomie des hyperscalers cloud",
   "excerpt": "Déconstruire l'économie hyperscale moderne : cycles de dépréciation des GPU, accords d'achat d'énergie nucléaire et fossé des dépenses en capital de l'intelligence artificielle.",
   "date": "2026-11-16",
   "author": "Claire Dupont",
@@ -69,5 +69,5 @@
       "text": "Le besoin astronomique de capital pour former des modèles frontières et servir l'inférence à l'échelle mondiale crée une barrière économique insurmontable à l'entrée. Alors que les startups de logiciels sont confrontées à une augmentation des coûts de calcul, la valeur revient de manière disproportionnée aux propriétaires d'infrastructures qui monétisent les terrains, l'énergie et le silicium amorti via des API cloud programmatiques."
     }
   ],
-  "sourceHash": "cc5b29b34386e724685eabde709595046b7adf7c"
+  "sourceHash": "d9378ce9bfc4b0e5905316662447a3504165e05c"
 }

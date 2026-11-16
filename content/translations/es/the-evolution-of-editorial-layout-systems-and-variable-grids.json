@@ -1,7 +1,7 @@
 {
   "slug": "the-evolution-of-editorial-layout-systems-and-variable-grids",
-  "title": "La evolución de los sistemas de diseño editorial: de Tschichold a las cuadrículas variables",
-  "excerpt": "Un tratado tipográfico que rastrea el canon dorado de la división de libros, los sistemas asimétricos suizos de mediados de siglo y la moderna arquitectura editorial fluida de subcuadrículas CSS.",
+  "title": "La evolución de los sistemas de diseño editorial",
+  "excerpt": "Un tratado tipográfico que rastrea el canon dorado de la división de libros, los sistemas asimétricos suizos de mediados de siglo y la moderna arquitectura editorial fluida de subcuadrícula CSS.",
   "date": "2026-11-16",
   "author": "Saskia Lindqvist",
   "tags": [
@@ -69,5 +69,5 @@
       "text": "En la web digital, el arte editorial sufrió durante mucho tiempo debido a marcos de tarjetas responsivos rígidos e inconexos. Con la adopción universal del navegador de CSS Subgrid y el escalado de tipo fluido CSS `clamp()`, los diseñadores web ahora pueden construir composiciones editoriales continuas que preserven la armonía proporcional desde pantallas de bolsillo hasta monitores de escritorio ultra anchos."
     }
   ],
-  "sourceHash": "2ad5251f03966d71bae35e8ac963c1e1bc885d9e"
+  "sourceHash": "4bcf5f52292f406d4eb0a31a5c2dc75df49626a1"
 }

@@ -1,0 +1,70 @@
+{
+  "slug": "nuclear-thermal-propulsion-and-deep-space-travel",
+  "title": "Kernthermischer Antrieb",
+  "excerpt": "Die Thermodynamik von thermischen Kernraketen mit festem Kern: niedrig angereicherter Urantreibstoff mit hohem Probengehalt, kryogene Wasserstofftreibstoffe und Architekturen für den schnellen Marstransit.",
+  "date": "2026-11-17",
+  "author": "Elena Vance",
+  "tags": [
+    "aerospace",
+    "nuclear-propulsion",
+    "rocketry",
+    "deep-space",
+    "physics",
+    "engineering"
+  ],
+  "image": "https://images.unsplash.com/photo-1517976487504-59a1a0812917?auto=format&fit=crop&w=1600&q=80",
+  "imageAlt": "Die Düse eines Raketentriebwerks feuert eine leuchtende Plasmawolke gegen den dunklen Nachthimmel ab",
+  "body": [
+    {
+      "type": "h2",
+      "text": "Die chemische Raketengleichung überwinden"
+    },
+    {
+      "type": "p",
+      "text": "Chemische Raketentriebwerke (LOX/Methan oder LOX/LH2) sind durch die grundlegende Bindungsenergie chemischer Reaktionen begrenzt und erreichen ihren Höhepunkt bei einem spezifischen Impuls (Isp) von etwa 450 Sekunden. Um den Mars mit chemischem Antrieb zu erreichen, sind anstrengende neunmonatige Transitflugbahnen erforderlich, bei denen Astronauten schwächender kosmischer Strahlung aus dem Weltraum und Muskelschwund ausgesetzt sind. Nuclear Thermal Propulsion (NTP) durchbricht diese Barriere."
+    },
+    {
+      "type": "h2",
+      "text": "Thermodynamik von Festkern-NTP-Triebwerken"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "HALEU-Spaltreaktor: Verwendung von keramikmetallischen (Cermet)-Brennelementen mit hohem Gehalt an niedrig angereichertem Uran, die bei 2.700 Kelvin betrieben werden können.",
+        "Kryogener flüssiger Wasserstoff: Reiner Wasserstoff mit niedrigem Molekulargewicht (H2) wird durch den überhitzten Reaktorkern gepumpt, wodurch eine massive Volumenausdehnung erzeugt wird.",
+        "Spezifische Impulsverdopplung: Erreichen eines ISP von über 900 Sekunden – doppelt so viel Effizienz wie die besten chemischen Raketentriebwerke, die es gibt.",
+        "Halbierung der Transitzeit: Verkürzung des menschlichen Marstransitfensters auf 90–120 Tage, wodurch die Strahlenbelastung und der Bedarf an lebenserhaltender Masse drastisch reduziert werden."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Der nukleare thermische Antrieb ist keine schrittweise Verbesserung; Es ist die physikalische Schwelle, die interplanetare Reisen von Überlebensmissionen in nachhaltige Routen verwandelt.",
+      "cite": "Questo Deep Space Propulsion & Nuclear Engineering Lab"
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Erde aus der Umlaufbahn mit Solaranlagen von Raumfahrzeugen im Vordergrund betrachtet",
+      "caption": "Hochenergetischer Orbitaltransfer: Kernantriebsbrennstoffe ermöglichen hyperbolische Hochgeschwindigkeitsinjektionsbrennstoffe für Flugbahnen äußerer Planeten."
+    },
+    {
+      "type": "h2",
+      "text": "Sicherheit, Starteindämmung und DRACO-Tests"
+    },
+    {
+      "type": "p",
+      "text": "Moderne NTP-Designs bleiben während des Starts in herkömmlichen Raketenverkleidungen völlig inert und kalt. Der Spaltreaktor wird erst dann mit Beryllium-Steuertrommeln gezündet, wenn das Raumschiff eine stabile, langfristig atomsichere Speicherumlaufbahn über 700 Kilometer erreicht."
+    },
+    {
+      "type": "video",
+      "src": "https://www.youtube-nocookie.com/embed/g32ZhNow2_A",
+      "title": "60-Sek.-Technologie: Nuklearer thermischer Antrieb von der NASA erklärt",
+      "caption": "NASA-Überblick über die Luft- und Raumfahrt mit Aufschlüsselung der Mechanik der Flüssigwasserstoff-Heizung und Spaltungsreaktoren für die menschliche Erforschung des Mars."
+    },
+    {
+      "type": "p",
+      "text": "Die Verdoppelung der Raketenabgasgeschwindigkeit durch Treibstoffe mit niedrigem Molekulargewicht erschließt das äußere Sonnensystem für die wissenschaftliche Erforschung."
+    }
+  ],
+  "sourceHash": "4ffcb7e7b8c40198b0d15f98c9ecb86e92eac730"
+}
