@@ -107,6 +107,8 @@ jobs:
       - name: Setup GitHub Pages
         if: github.event.inputs.target == null || github.event.inputs.target == 'all' || github.event.inputs.target == 'github-pages'
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload Pages artifact
         if: github.event.inputs.target == null || github.event.inputs.target == 'all' || github.event.inputs.target == 'github-pages'
