@@ -1,0 +1,35 @@
+name: Private GitHub Repository Security Sync
+
+on:
+  schedule:
+    # Daily security sync at 04:00 UTC
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync-to-private-vault:
+    name: Mirror Repository to Private Vault
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository with Complete Git Tree
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push Mirror to Private Backup Repository
+        env:
+          BACKUP_TOKEN: ${{ secrets.GH_BACKUP_PAT }}
+          PRIVATE_REPO: ${{ secrets.PRIVATE_BACKUP_REPO }}
+        run: |
+          echo "=== Executing Private Security Mirroring ==="
+          if [ -n "$BACKUP_TOKEN" ] && [ -n "$PRIVATE_REPO" ]; then
+            git config --global user.email "security-bot@questo.internal"
+            git config --global user.name "Questo Security Bot"
+            git push --mirror "https://${BACKUP_TOKEN}@github.com/${PRIVATE_REPO}.git"
+            echo "Successfully mirrored all branches, tags, and commits to private vault: $PRIVATE_REPO"
+          else
+            echo "Notice: Set GH_BACKUP_PAT and PRIVATE_BACKUP_REPO in repository secrets to activate private mirror."
+          fi

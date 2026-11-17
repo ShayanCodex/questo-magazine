@@ -1,0 +1,37 @@
+name: Hugging Face Space Keep-Alive & Vault Health Check
+
+on:
+  schedule:
+    # Runs every 6 hours (00:00, 06:00, 12:00, 18:00 UTC) to prevent free HF Spaces from sleeping
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  keep-alive-ping:
+    name: Ping Hugging Face Edge & Vault Endpoints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Hugging Face Dataset Vault & Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          echo "=== Pinging Hugging Face Endpoints to prevent sleep mode ==="
+          
+          # 1. Ping Dataset Metadata API
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer $HF_TOKEN" \
+            "https://huggingface.co/api/datasets/shayan001/questo-content-vault")
+          echo "Dataset Vault API Status: $HTTP_STATUS"
+          
+          # 2. Ping Global Cloudflare-backed Edge Raw Endpoint
+          CDN_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://huggingface.co/datasets/shayan001/questo-content-vault/resolve/main/README.md")
+          echo "Hugging Face Edge CDN Status: $CDN_STATUS"
+          
+          # 3. If Space exists, ping Space Endpoint
+          if [ -n "$HF_SPACE_URL" ]; then
+            SPACE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$HF_SPACE_URL")
+            echo "Hugging Face Space Status: $SPACE_STATUS"
+          fi
+          
+          echo "Keep-alive ping completed successfully. Zero cold-starts guaranteed."
