@@ -1,0 +1,30 @@
+name: Multi-Cloud Disaster Recovery Vault Sync
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC to sync all articles and metadata to Hugging Face Content Vault
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync-hf-vault:
+    name: Sync to Hugging Face Content Vault
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Hugging Face Vault Synchronization
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: node scripts/sync-huggingface-vault.mjs

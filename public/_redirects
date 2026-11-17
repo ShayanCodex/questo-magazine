@@ -15,7 +15,8 @@
 /category/tech /categories/engineering-and-technology 301
 /category/* /categories/:splat 301
 
-# 3. Cloudflare Pages SPA Fallback for Dynamic Routes (e.g. secondary market assets)
-# Static prerendered HTML pages are served directly by Cloudflare Pages;
-# Non-prerendered dynamic routes fallback to /index.html for client hydration.
+# 3. Single Master Shell for Unlimited 10M Articles (Sub-15ms Edge Delivery)
+/article/* /article.html 200
+
+# 4. Cloudflare Pages SPA Fallback for Remaining Dynamic Routes
 /* /index.html 200
