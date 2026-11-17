@@ -1,0 +1,136 @@
+name: Batched Production Deployment
+
+on:
+  schedule:
+    # Batched deployment every 4 hours (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
+    # Collects all editorial updates and deploys periodically in a single build.
+    - cron: '0 */4 * * *'
+  push:
+    branches: [main, master]
+    # Only trigger immediate push deployment if infrastructure/code changes,
+    # OR if commit message contains [deploy]. Content changes are batched.
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'package.json'
+      - 'vite.config.ts'
+      - 'tsconfig*.json'
+      - 'index.html'
+      - '.github/workflows/batched-deploy.yml'
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: 'Force deployment even if no changes were detected'
+        type: boolean
+        required: false
+        default: false
+      target:
+        description: 'Deployment destination'
+        type: choice
+        options:
+          - 'all'
+          - 'github-pages'
+          - 'cloudflare-pages'
+          - 'render'
+        default: 'all'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deployment-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check-changes:
+    name: Check Content & Code Changes
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.diff_check.outputs.has_changes }}
+      changed_count: ${{ steps.diff_check.outputs.changed_count }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Change Detection
+        id: diff_check
+        env:
+          FORCE_DEPLOY: ${{ github.event.inputs.force_deploy || 'false' }}
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message || '' }}
+        run: node scripts/check-deployment-changes.mjs
+
+  build-and-deploy:
+    name: Build & Deploy Batched Release
+    needs: check-changes
+    if: needs.check-changes.outputs.has_changes == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Code Quality & Lint Audit
+        run: npm run lint
+
+      - name: TypeScript Typecheck
+        run: npm run typecheck
+
+      - name: Content Schema & Integrity Validation
+        run: npm run validate-content
+
+      - name: Build Static Site (SSG + Master Bundles + Sitemaps)
+        run: npm run build
+
+      - name: Setup GitHub Pages
+        if: github.event.inputs.target == null || github.event.inputs.target == 'all' || github.event.inputs.target == 'github-pages'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: github.event.inputs.target == null || github.event.inputs.target == 'all' || github.event.inputs.target == 'github-pages'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: github.event.inputs.target == null || github.event.inputs.target == 'all' || github.event.inputs.target == 'github-pages'
+        uses: actions/deploy-pages@v4
+
+      - name: Trigger Cloudflare Pages & Render Deployments
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+          DEPLOY_TARGET: ${{ github.event.inputs.target || 'all' }}
+        run: node scripts/trigger-external-deployments.mjs
+
+      - name: Update Deployed Marker Tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -f deployed-latest HEAD
+          git push -f origin deployed-latest
