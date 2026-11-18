@@ -56,9 +56,8 @@ Strict Quality Rubrics:
 4. Structure:
    - Compelling Title (under 60 characters)
    - Meta description (under 155 characters)
-   - 4 to 6 detailed H2 sections and sub-H3 sections
+   - 5 comprehensive H2 sections, each containing at least two detailed, factual paragraphs (aim for 900 to 1,300 total words)
    - At least one historical or philosophical quotation
-   - HTML body must be between 900 and 1,300 words
    - FAQ: Exactly 3 high-intent search questions answered with precision.
 
 Return STRICT JSON format:
@@ -113,7 +112,7 @@ Return STRICT JSON format:
           ],
           response_format: { type: "json_object" },
           temperature: 0.72,
-          max_tokens: 2800
+          max_tokens: 3800
         })
       });
 
