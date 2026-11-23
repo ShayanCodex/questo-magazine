@@ -28,6 +28,9 @@ export function FeaturedShowcaseSlider({
 
   // Select 4 primary editorial articles for the showcase carousel with diverse categories
   const showcaseArticles = useMemo(() => {
+    if (articles.length > 0 && articles.length <= 5) {
+      return articles.filter((a) => Boolean(a.image));
+    }
     const list = articles.filter((a) => Boolean(a.image));
     const selected: ArticleData[] = [];
     const seenCategories = new Set<string>();
@@ -50,6 +53,12 @@ export function FeaturedShowcaseSlider({
     }
     return selected;
   }, [articles]);
+
+  // Reset slide index if showcase articles change on client rotation
+  useEffect(() => {
+    setCurrentIndex(0);
+    setProgress(0);
+  }, [showcaseArticles]);
   const totalSlides = showcaseArticles.length;
 
   const [currentIndex, setCurrentIndex] = useState(0);

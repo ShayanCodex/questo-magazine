@@ -27,37 +27,69 @@ interface HomeLoaderData {
   pathname: string;
 }
 
-function pickDiverseFeatureSet(pool: ArticleData[], randomize = false): {
-  hero?: ArticleData;
-  secondary: ArticleData[];
-} {
-  if (pool.length === 0) return { hero: undefined, secondary: [] };
+interface EditorialSections {
+  sliderArticles: ArticleData[];
+  heroArticle?: ArticleData;
+  secondaryArticles: ArticleData[];
+}
 
-  const list = randomize ? [...pool].sort(() => Math.random() - 0.5) : [...pool];
-  const hero = list[0];
-  const remaining = list.slice(1);
-
-  const secondary: ArticleData[] = [];
-  const seenCategories = new Set<string>();
-
-  if (hero) {
-    const { category } = getArticleCategory(hero);
-    seenCategories.add(category.id);
+function pickEditorialSections(allArticles: ArticleData[], randomize = false): EditorialSections {
+  if (allArticles.length === 0) {
+    return { sliderArticles: [], heroArticle: undefined, secondaryArticles: [] };
   }
 
-  // Pass 1: select from distinct categories
-  for (const art of remaining) {
+  let pool = allArticles.filter((a) => Boolean(a.image));
+  if (randomize) {
+    pool = [...pool].sort(() => Math.random() - 0.5);
+  }
+
+  // 1. Pick 4 diverse articles for the Top Hero Slider
+  const slider: ArticleData[] = [];
+  const sliderCats = new Set<string>();
+  for (const art of pool) {
     const { category } = getArticleCategory(art);
-    if (!seenCategories.has(category.id)) {
-      seenCategories.add(category.id);
+    if (!sliderCats.has(category.id)) {
+      sliderCats.add(category.id);
+      slider.push(art);
+      if (slider.length >= 4) break;
+    }
+  }
+  if (slider.length < 4) {
+    for (const art of pool) {
+      if (!slider.some((s) => s.slug === art.slug)) {
+        slider.push(art);
+        if (slider.length >= 4) break;
+      }
+    }
+  }
+
+  // 2. Remaining pool strictly excluding slider articles
+  const sliderSlugs = new Set(slider.map((s) => s.slug));
+  const nonSliderPool = pool.filter((a) => !sliderSlugs.has(a.slug));
+
+  // 3. Pick Monograph of the Month (Hero)
+  const hero = nonSliderPool[0] || allArticles[0];
+  const remainingAfterHero = nonSliderPool.slice(1);
+
+  // 4. Pick 4 Secondary stories ensuring category diversity
+  const secondary: ArticleData[] = [];
+  const secCats = new Set<string>();
+  if (hero) {
+    const { category } = getArticleCategory(hero);
+    secCats.add(category.id);
+  }
+
+  for (const art of remainingAfterHero) {
+    const { category } = getArticleCategory(art);
+    if (!secCats.has(category.id)) {
+      secCats.add(category.id);
       secondary.push(art);
       if (secondary.length >= 4) break;
     }
   }
 
-  // Pass 2: fill up to 4 if needed
   if (secondary.length < 4) {
-    for (const art of remaining) {
+    for (const art of remainingAfterHero) {
       if (!secondary.some((s) => s.slug === art.slug)) {
         secondary.push(art);
         if (secondary.length >= 4) break;
@@ -65,7 +97,11 @@ function pickDiverseFeatureSet(pool: ArticleData[], randomize = false): {
     }
   }
 
-  return { hero, secondary };
+  return {
+    sliderArticles: slider,
+    heroArticle: hero,
+    secondaryArticles: secondary,
+  };
 }
 
 export function Home() {
@@ -74,52 +110,19 @@ export function Home() {
   const pathname = loaderData.pathname || '/';
   const { language, t, localePath } = useLanguage();
 
-  // Articles displayed in the top Hero Showcase Slider
-  const sliderArticles = useMemo(() => {
-    const list = articles.filter((a) => Boolean(a.image));
-    const selected: ArticleData[] = [];
-    const seenCategories = new Set<string>();
-
-    for (const art of list) {
-      const { category } = getArticleCategory(art);
-      if (!seenCategories.has(category.id)) {
-        seenCategories.add(category.id);
-        selected.push(art);
-        if (selected.length >= 4) break;
-      }
-    }
-    if (selected.length < 4) {
-      for (const art of list) {
-        if (!selected.some((s) => s.slug === art.slug)) {
-          selected.push(art);
-          if (selected.length >= 4) break;
-        }
-      }
-    }
-    return selected;
-  }, [articles]);
-
-  const sliderSlugs = useMemo(() => {
-    return new Set(sliderArticles.map((a) => a.slug));
-  }, [sliderArticles]);
-
-  // Non-slider article pool: strictly exclude any blog already appearing in the top slider
-  const nonSliderArticles = useMemo(() => {
-    return articles.filter((a) => !sliderSlugs.has(a.slug) && Boolean(a.image));
-  }, [articles, sliderSlugs]);
-
   // Initial deterministic selection for SSG
-  const [featureSet, setFeatureSet] = useState(() =>
-    pickDiverseFeatureSet(nonSliderArticles, false)
+  const [sections, setSections] = useState<EditorialSections>(() =>
+    pickEditorialSections(articles, false)
   );
 
-  // Dynamic on every page mount / reload on client: rotate and randomize fresh articles
+  // Dynamic on every page mount / reload on client: rotate slider, hero, and secondary articles
   useEffect(() => {
-    setFeatureSet(pickDiverseFeatureSet(nonSliderArticles, true));
-  }, [nonSliderArticles]);
+    setSections(pickEditorialSections(articles, true));
+  }, [articles]);
 
-  const heroArticle = featureSet.hero || nonSliderArticles[0] || articles[0];
-  const secondaryArticles = featureSet.secondary;
+  const sliderArticles = sections.sliderArticles.length > 0 ? sections.sliderArticles : articles.slice(0, 4);
+  const heroArticle = sections.heroArticle || articles[0];
+  const secondaryArticles = sections.secondaryArticles;
 
   // Live article counts by category
   const categoryCounts = useMemo(() => {
@@ -203,7 +206,7 @@ export function Home() {
         <EditorialMarquee articles={articles} />
 
         {/* 3. Awwwards Featured Showcase Slider */}
-        <FeaturedShowcaseSlider articles={articles} />
+        <FeaturedShowcaseSlider articles={sliderArticles} />
 
         {/* 3b. Simple, Clean & Thin Browse Disciplines Bar */}
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-2 border-b border-editorial-border text-xs font-sans">
