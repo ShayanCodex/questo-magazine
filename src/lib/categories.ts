@@ -283,8 +283,34 @@ const ARTICLE_SLUG_CATEGORY_MAP: Record<string, { categoryId: string; subcategor
   'autonomous-container-vessels-and-panama-canal-draft-economics': { categoryId: 'news', subcategoryId: 'world-economy' },
 };
 
+export const CATEGORY_ALIAS_MAP: Record<string, string> = {
+  'breaking-news-global-affairs': 'news',
+  'news-and-world-affairs': 'news',
+  'global-affairs': 'news',
+  'world-news': 'news',
+  'automotive-mobility': 'engineering-and-technology',
+  'sports-athletics': 'sports',
+  'finance-trading': 'finance',
+  'modern-lifestyle': 'lifestyle',
+  'gastronomy-culinary-arts': 'food',
+  'culinary': 'food',
+  'global-travel-destinations': 'travel',
+  'art-design-culture': 'art-and-culture',
+  'fitness-performance': 'fitness',
+  'design': 'design-and-typography',
+  'sound': 'entertainment',
+  'medical-science': 'health',
+};
+
+export function normalizeCategoryId(id?: string): string {
+  if (!id) return 'art-and-culture';
+  const clean = id.trim().toLowerCase();
+  return CATEGORY_ALIAS_MAP[clean] || clean;
+}
+
 export function getCategoryById(id: string): Category | undefined {
-  return CATEGORIES.find((cat) => cat.id === id);
+  const normalizedId = normalizeCategoryId(id);
+  return CATEGORIES.find((cat) => cat.id === normalizedId || cat.id === id);
 }
 
 export const CATEGORY_LOCALIZATIONS: Record<string, Record<string, { name: string; short: string }>> = {
@@ -500,18 +526,20 @@ export const SUBCATEGORY_LOCALIZATIONS: Record<string, Record<string, string>> =
 };
 
 export function getCategoryName(categoryId: string, langCode = 'en'): string {
-  const loc = CATEGORY_LOCALIZATIONS[categoryId];
+  const norm = normalizeCategoryId(categoryId);
+  const loc = CATEGORY_LOCALIZATIONS[norm] || CATEGORY_LOCALIZATIONS[categoryId];
   if (loc && loc[langCode]?.name) return loc[langCode].name;
   if (loc && loc.en?.name) return loc.en.name;
-  const cat = getCategoryById(categoryId);
+  const cat = getCategoryById(norm);
   return cat ? cat.name : formatTopicName(categoryId);
 }
 
 export function getCategoryShortName(categoryId: string, langCode = 'en'): string {
-  const loc = CATEGORY_LOCALIZATIONS[categoryId];
+  const norm = normalizeCategoryId(categoryId);
+  const loc = CATEGORY_LOCALIZATIONS[norm] || CATEGORY_LOCALIZATIONS[categoryId];
   if (loc && loc[langCode]?.short) return loc[langCode].short;
   if (loc && loc.en?.short) return loc.en.short;
-  switch (categoryId) {
+  switch (norm) {
     case 'art-and-culture':
       return 'Art & Life';
     case 'architecture-and-space':
@@ -547,9 +575,9 @@ export function getCategoryShortName(categoryId: string, langCode = 'en'): strin
     case 'travel':
       return 'Travel';
     case 'news':
-      return 'World News';
+      return 'Global Affairs';
     default:
-      return 'Editorial';
+      return formatTopicName(categoryId) || 'Editorial';
   }
 }
 
@@ -586,7 +614,8 @@ export function getArticleCategory(article: { slug?: string; category?: string; 
   subcategory?: Subcategory;
 } {
   const fallback = article.slug ? ARTICLE_SLUG_CATEGORY_MAP[article.slug] : undefined;
-  const categoryId = article.category || fallback?.categoryId || 'art-and-culture';
+  const rawCat = article.category || fallback?.categoryId;
+  const categoryId = normalizeCategoryId(rawCat);
   const subcategoryId = article.subcategory || fallback?.subcategoryId;
 
   const category = getCategoryById(categoryId) || CATEGORIES[0];

@@ -12,6 +12,7 @@ import { FeaturedShowcaseSlider } from '../components/FeaturedShowcaseSlider';
 import { MonographOfTheMonth } from '../components/MonographOfTheMonth';
 import { EditorialSpotlight } from '../components/EditorialSpotlight';
 import { LatestArticlesFeed } from '../components/LatestArticlesFeed';
+import { MultiCategoryShowcase } from '../components/MultiCategoryShowcase';
 import { EditorialMastheadStrip } from '../components/EditorialMastheadStrip';
 import { ManifestoBanner } from '../components/ManifestoBanner';
 import { EditorialDisciplines } from '../components/EditorialDisciplines';
@@ -346,8 +347,11 @@ export function Home() {
         </div>
       </section>
 
-      {/* 6. Latest Chronological Articles & Dispatches */}
+      {/* 6. Latest Chronological Articles & Dispatches (Distinct Categories) */}
       <LatestArticlesFeed articles={articles} limit={4} />
+
+      {/* 6b. Multi-Category Showcase & Disciplines Matrix */}
+      <MultiCategoryShowcase articles={articles} />
 
       {/* 7. Curated Architectural Monograph Spotlight */}
       <EditorialSpotlight />

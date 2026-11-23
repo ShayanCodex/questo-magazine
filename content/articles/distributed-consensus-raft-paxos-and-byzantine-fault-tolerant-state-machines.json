@@ -74,5 +74,7 @@
       "type": "p",
       "text": "Modern federated ledgers replace simple crash assumptions with cryptographically signed votes and view-change protocols (e.g., PBFT, Tendermint, HotStuff), bounding pipeline latency to $O(N)$ communication complexity under optimistic execution."
     }
-  ]
+  ],
+  "category": "software",
+  "subcategory": "backend-and-apis"
 }

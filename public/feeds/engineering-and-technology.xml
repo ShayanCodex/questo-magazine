@@ -5,10 +5,55 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>Curated dispatches on Engineering &amp; Static Systems</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 19:32:05 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 19:50:04 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feeds/engineering-and-technology.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title><![CDATA[Aerogel Nanostructures and Superinsulative Silica Matrices in Aerospace Engineering]]></title>
+      <title><![CDATA[The Aerodynamics of eVTOL Flight]]></title>
+      <link>https://questo-blog.netlify.app/articles/distributed-electric-propulsion-and-evtol-aerodynamics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/distributed-electric-propulsion-and-evtol-aerodynamics</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An aeronautical investigation into distributed electric propulsion (DEP), vortex ring state mitigation, acoustic directivity profiles, and FAA airworthiness standards for passenger eVTOL aircraft.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Nano Assemblers]]></title>
+      <link>https://questo-blog.netlify.app/articles/nano-assemblers</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/nano-assemblers</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Diamondoid molecular assemblers represent a paradigmatic shift in nanomechanics, enabling precise manipulation of molecular structures. This technology has far-reaching implications for materials science, medicine, and energy applications.]]></description>
+      <author><![CDATA[Evelyn J. Martin]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Solid Oxide Electrolysis & Green Hydrogen]]></title>
+      <link>https://questo-blog.netlify.app/articles/solid-oxide-electrolysis-and-industrial-green-hydrogen</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/solid-oxide-electrolysis-and-industrial-green-hydrogen</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An industrial systems analysis of Solid Oxide Electrolysis Cells: operating thermodynamics at 800°C, yttria-stabilized zirconia solid electrolytes, integration with nuclear and industrial waste heat, and the economics of zero-carbon chemical feedstocks.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[The Solid-State Battery Era]]></title>
+      <link>https://questo-blog.netlify.app/articles/solid-state-batteries-and-lithium-metal-anodes</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/solid-state-batteries-and-lithium-metal-anodes</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An electrochemistry investigation into solid-state energy storage: ceramic sulfide solid electrolytes, dendrite suppression mechanics, and pure lithium-metal anode architectures.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[SSB Revolution]]></title>
+      <link>https://questo-blog.netlify.app/articles/solid-state-battery-chemistries-sulfide-electrolytes-silicon-anodes-and-fast-charging</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/solid-state-battery-chemistries-sulfide-electrolytes-silicon-anodes-and-fast-charging</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Discover solid-state battery chemistries]]></description>
+      <author><![CDATA[Dr. Elena Vasileva]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Aerogel Matrices in Aerospace Engineering]]></title>
       <link>https://questo-blog.netlify.app/articles/aerogel-nanostructures-and-superinsulative-silica-matrices</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/aerogel-nanostructures-and-superinsulative-silica-matrices</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
@@ -17,7 +62,7 @@
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[Perovskite-Silicon Tandem Solar Cells: Exceeding the Shockley-Queisser Limit]]></title>
+      <title><![CDATA[Perovskite-Silicon Tandem Solar Cells]]></title>
       <link>https://questo-blog.netlify.app/articles/perovskite-silicon-tandem-solar-cells-and-photovoltaic-efficiency</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/perovskite-silicon-tandem-solar-cells-and-photovoltaic-efficiency</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
@@ -53,7 +98,7 @@
       <category>engineering-and-technology</category>
     </item>
     <item>
-      <title><![CDATA[Algorithmic Market Intelligence and Open Financial Data]]></title>
+      <title><![CDATA[Algorithmic Market Intelligence]]></title>
       <link>https://questo-blog.netlify.app/articles/algorithmic-market-intelligence-and-open-financial-data</link>
       <guid isPermaLink="true">https://questo-blog.netlify.app/articles/algorithmic-market-intelligence-and-open-financial-data</guid>
       <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
