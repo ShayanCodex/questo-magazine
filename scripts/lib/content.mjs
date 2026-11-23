@@ -204,6 +204,9 @@ export function getIncludedRoutes() {
   routes.push('/');
   routes.push('/articles');
   routes.push('/markets');
+  routes.push('/markets/screener');
+  routes.push('/markets/heatmap');
+  routes.push('/markets/terminal');
   routes.push('/categories');
   routes.push('/tools');
   routes.push('/about');
@@ -242,6 +245,9 @@ export function getIncludedRoutes() {
     routes.push(p);
     routes.push(`${p}/articles`);
     routes.push(`${p}/markets`);
+    routes.push(`${p}/markets/screener`);
+    routes.push(`${p}/markets/heatmap`);
+    routes.push(`${p}/markets/terminal`);
     routes.push(`${p}/categories`);
     routes.push(`${p}/about`);
   }

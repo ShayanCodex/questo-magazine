@@ -1,8 +1,13 @@
+import { Link } from 'react-router-dom';
 import { useTheme } from '../lib/theme-context';
 import { useLanguage } from '../lib/lang-context';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { TradingViewTickerTape } from '../components/markets/TradingViewTickerTape';
+import { LiveMarketHeartbeat } from '../components/markets/LiveMarketHeartbeat';
+import { LiveMarketScreenerWidget } from '../components/markets/LiveMarketScreenerWidget';
+import { LiveFearGreedIndex } from '../components/markets/LiveFearGreedIndex';
+import { CrossAssetCorrelationMatrix } from '../components/markets/CrossAssetCorrelationMatrix';
 import { GlobalMarketOverview } from '../components/markets/GlobalMarketOverview';
 import { ForexMatrixWidget } from '../components/markets/ForexMatrixWidget';
 import { CryptoMarketWidget } from '../components/markets/CryptoMarketWidget';
@@ -14,6 +19,9 @@ import { MarketCoverageSection } from '../components/markets/MarketCoverageSecti
 import {
   CheckBadgeIcon,
   SparklesIcon,
+  ViewColumnsIcon,
+  ChartBarIcon,
+  Squares2X2Icon,
 } from '@heroicons/react/24/outline';
 
 export function Markets() {
@@ -100,10 +108,14 @@ export function Markets() {
   const jumpToLabel = isUr ? 'براہ راست جائیں:' : isAr ? 'الانتقال إلى:' : isEs ? 'Ir a:' : isFr ? 'Aller à :' : isDe ? 'Springe zu:' : 'Jump to:';
 
   const sections = [
+    { id: 'heartbeat', label: isUr ? 'ہارٹ بیٹ' : isAr ? 'النبض' : isEs ? 'Pulso' : isFr ? 'Pouls' : isDe ? 'Puls' : 'Pulse Engine' },
+    { id: 'screener-widget', label: isUr ? 'اسکرینر' : isAr ? 'الماسح' : isEs ? 'Escáner' : isFr ? 'Scanner' : isDe ? 'Screener' : 'Live Screener' },
+    { id: 'sentiment', label: isUr ? 'جذبات' : isAr ? 'المشاعر' : isEs ? 'Sentimiento' : isFr ? 'Sentiment' : isDe ? 'Stimmung' : 'Fear & Greed' },
     { id: 'indices', label: isUr ? 'انڈیکسز' : isAr ? 'المؤشرات' : isEs ? 'Índices' : isFr ? 'Indices' : isDe ? 'Indizes' : 'Indices' },
     { id: 'forex', label: isUr ? 'فاریکس کرنسی' : isAr ? 'العملات الأجنبية' : isEs ? 'Divisas y FX' : isFr ? 'Devises Forex' : isDe ? 'Devisen & FX' : 'Forex & FX Converter' },
     { id: 'crypto', label: isUr ? 'کرپٹو کرنسی' : isAr ? 'العملات المشفرة' : isEs ? 'Criptomonedas' : isFr ? 'Cryptomonnaies' : isDe ? 'Kryptowährungen' : 'Cryptocurrency' },
     { id: 'commodities', label: isUr ? 'اشیاء اور توانائی' : isAr ? 'السلع والطاقة' : isEs ? 'Materias Primas' : isFr ? 'Matières Premières' : isDe ? 'Rohstoffe' : 'Commodities' },
+    { id: 'correlation', label: isUr ? 'ربط' : isAr ? 'الترابط' : isEs ? 'Correlación' : isFr ? 'Corrélation' : isDe ? 'Korrelation' : 'Cross-Asset Radar' },
     { id: 'macro', label: isUr ? 'معاشی اشاریے' : isAr ? 'المؤشرات الكلية' : isEs ? 'Indicadores Macro' : isFr ? 'Indicateurs Macro' : isDe ? 'Makro-Indikatoren' : 'Macro Indicators' },
     { id: 'calendar', label: isUr ? 'معاشی کیلنڈر' : isAr ? 'التقويم الاقتصادي' : isEs ? 'Calendario Económico' : isFr ? 'Calendrier Économique' : isDe ? 'Wirtschaftskalender' : 'Economic Calendar' },
     { id: 'news', label: isUr ? 'مالیاتی خبریں' : isAr ? 'شريط الأخبار' : isEs ? 'Noticias Financieras' : isFr ? 'Fil d’Actualités' : isDe ? 'Nachrichten' : 'News Wire' },
@@ -149,6 +161,42 @@ export function Markets() {
           </p>
         </div>
 
+        {/* Dedicated In-Depth Analytics Navigation Hub */}
+        <div className="p-3.5 rounded-xl bg-editorial-surface-subtle border border-editorial-border flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="text-xs font-mono">
+            <span className="font-bold text-editorial-text uppercase block">
+              ⚡ Dedicated Real-Time Analysis Pages:
+            </span>
+            <span className="text-[11px] text-editorial-muted">
+              Deep dive into second-by-second execution tapes, treemap heatmaps, and institutional terminals.
+            </span>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2 font-sans text-xs">
+            <Link
+              to={localePath('/markets/terminal')}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-editorial-text text-editorial-bg font-semibold hover:opacity-90 shadow-2xs"
+            >
+              <ViewColumnsIcon className="w-3.5 h-3.5" />
+              <span>Questo Terminal</span>
+            </Link>
+            <Link
+              to={localePath('/markets/screener')}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text font-medium"
+            >
+              <ChartBarIcon className="w-3.5 h-3.5" />
+              <span>Full Screener</span>
+            </Link>
+            <Link
+              to={localePath('/markets/heatmap')}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-text font-medium"
+            >
+              <Squares2X2Icon className="w-3.5 h-3.5" />
+              <span>Global Heatmap</span>
+            </Link>
+          </div>
+        </div>
+
         {/* Quick Nav Jump Anchor Bar */}
         <nav
           aria-label="Market Sections Navigation"
@@ -175,46 +223,67 @@ export function Markets() {
         <TradingViewTickerTape colorTheme={theme} />
       </div>
 
-      {/* 1. Global Equity Overview */}
+      {/* 0. Live Market Heartbeat (World Sessions & 1s Clock) */}
+      <section id="heartbeat" className="scroll-mt-24">
+        <LiveMarketHeartbeat />
+      </section>
+
+      {/* 1. Live Market Screener & Scanner Widget */}
+      <section id="screener-widget" className="scroll-mt-24">
+        <LiveMarketScreenerWidget />
+      </section>
+
+      {/* 2. Live Market Sentiment & Fear & Greed Radar */}
+      <section id="sentiment" className="scroll-mt-24">
+        <LiveFearGreedIndex />
+      </section>
+
+      {/* 3. Global Equity Overview */}
       <section id="indices" className="scroll-mt-24">
         <GlobalMarketOverview colorTheme={theme} />
       </section>
 
-      {/* 2. Forex Cross Rates & Multi-Currency Converter */}
+      {/* 4. Forex Cross Rates & Multi-Currency Converter */}
       <section id="forex" className="scroll-mt-24">
         <ForexMatrixWidget />
       </section>
 
-      {/* 3. Cryptocurrency Digital Asset Intelligence */}
+      {/* 5. Cryptocurrency Digital Asset Intelligence */}
       <section id="crypto" className="scroll-mt-24">
         <CryptoMarketWidget />
       </section>
 
-      {/* 4. Commodities, Energy & Metals */}
+      {/* 6. Commodities, Energy & Metals */}
       <section id="commodities" className="scroll-mt-24">
         <CommoditiesEnergyWidget colorTheme={theme} />
       </section>
 
-      {/* 5. Macroeconomic Indicator Explorer */}
+      {/* 7. Cross-Asset Correlation Matrix */}
+      <section id="correlation" className="scroll-mt-24">
+        <CrossAssetCorrelationMatrix />
+      </section>
+
+      {/* 8. Macroeconomic Indicator Explorer */}
       <section id="macro" className="scroll-mt-24">
         <MacroIndicatorExplorer />
       </section>
 
-      {/* 6. Worldwide Economic Calendar */}
+      {/* 9. Worldwide Economic Calendar */}
       <section id="calendar" className="scroll-mt-24">
         <GlobalEconomicCalendar colorTheme={theme} />
       </section>
 
-      {/* 7. Worldwide Financial News Wire */}
+      {/* 10. Worldwide Financial News Wire */}
       <section id="news" className="scroll-mt-24">
         <FinancialNewsWire />
       </section>
 
-      {/* 8. Full Market Coverage & Regulatory Transparency Matrix */}
+      {/* 11. Full Market Coverage & Regulatory Transparency Matrix */}
       <section id="coverage" className="scroll-mt-24">
         <MarketCoverageSection />
       </section>
     </div>
   );
 }
+
 export default Markets;

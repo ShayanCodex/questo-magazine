@@ -13,6 +13,9 @@ import { Home } from './pages/Home';
 import { Articles } from './pages/Articles';
 import { Markets } from './pages/Markets';
 import { MarketDetail } from './pages/MarketDetail';
+import { MarketScreener } from './pages/MarketScreener';
+import { MarketHeatmap } from './pages/MarketHeatmap';
+import { MarketTerminal } from './pages/MarketTerminal';
 import { Tools } from './pages/Tools';
 import { ImageConverter } from './pages/tools/ImageConverter';
 import { VideoToAudioExtractor } from './pages/tools/VideoToAudioExtractor';
@@ -87,6 +90,18 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
       {
         path: 'markets',
         element: <Markets />,
+      },
+      {
+        path: 'markets/screener',
+        element: <MarketScreener />,
+      },
+      {
+        path: 'markets/heatmap',
+        element: <MarketHeatmap />,
+      },
+      {
+        path: 'markets/terminal',
+        element: <MarketTerminal />,
       },
       {
         path: 'markets/:slug',

@@ -6,6 +6,7 @@ import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { GoogleFinanceInteractiveChart } from '../components/markets/GoogleFinanceInteractiveChart';
 import { InstitutionalTechnicalGauge } from '../components/markets/InstitutionalTechnicalGauge';
+import { LiveOrderFlowTape } from '../components/markets/LiveOrderFlowTape';
 import {
   ArrowLeftIcon,
   ClockIcon,
@@ -14,6 +15,9 @@ import {
   ShieldCheckIcon,
   BuildingLibraryIcon,
   CheckCircleIcon,
+  ViewColumnsIcon,
+  ChartBarIcon,
+  Squares2X2Icon,
 } from '@heroicons/react/24/outline';
 
 export function MarketDetail() {
@@ -163,6 +167,48 @@ export function MarketDetail() {
           colorTheme={theme}
         />
       </section>
+
+      {/* Real-Time Second-by-Second Executions (Time & Sales) & Order Book Depth Ladder */}
+      <section className="space-y-2">
+        <LiveOrderFlowTape
+          symbol={`${asset.symbol} • ${asset.name}`}
+          basePrice={typeof asset.price === 'number' ? asset.price : 100}
+          currency={asset.currency}
+        />
+      </section>
+
+      {/* Pro Terminal Navigation Banner */}
+      <div className="p-3.5 rounded-xl bg-editorial-surface border border-editorial-border flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="font-mono text-editorial-muted">
+            Analyzing <strong>{asset.name}</strong> on Questo Market Network. Switch to multi-asset views:
+          </span>
+        </div>
+        <div className="flex flex-wrap items-center gap-2 font-mono">
+          <Link
+            to={localePath('/markets/terminal')}
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-editorial-text text-editorial-bg font-semibold hover:opacity-90"
+          >
+            <ViewColumnsIcon className="w-3.5 h-3.5" />
+            <span>Questo Terminal</span>
+          </Link>
+          <Link
+            to={localePath('/markets/screener')}
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-editorial-surface-subtle border border-editorial-border hover:border-editorial-text text-editorial-text"
+          >
+            <ChartBarIcon className="w-3.5 h-3.5" />
+            <span>Screener</span>
+          </Link>
+          <Link
+            to={localePath('/markets/heatmap')}
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-editorial-surface-subtle border border-editorial-border hover:border-editorial-text text-editorial-text"
+          >
+            <Squares2X2Icon className="w-3.5 h-3.5" />
+            <span>Heatmap</span>
+          </Link>
+        </div>
+      </div>
 
       {/* 2-Column Deep Intelligence Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-4">
