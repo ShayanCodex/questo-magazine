@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
 import { DocumentTextIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import type { ArticleData } from '../lib/types';
@@ -27,15 +27,99 @@ interface HomeLoaderData {
   pathname: string;
 }
 
+function pickDiverseFeatureSet(pool: ArticleData[], randomize = false): {
+  hero?: ArticleData;
+  secondary: ArticleData[];
+} {
+  if (pool.length === 0) return { hero: undefined, secondary: [] };
+
+  const list = randomize ? [...pool].sort(() => Math.random() - 0.5) : [...pool];
+  const hero = list[0];
+  const remaining = list.slice(1);
+
+  const secondary: ArticleData[] = [];
+  const seenCategories = new Set<string>();
+
+  if (hero) {
+    const { category } = getArticleCategory(hero);
+    seenCategories.add(category.id);
+  }
+
+  // Pass 1: select from distinct categories
+  for (const art of remaining) {
+    const { category } = getArticleCategory(art);
+    if (!seenCategories.has(category.id)) {
+      seenCategories.add(category.id);
+      secondary.push(art);
+      if (secondary.length >= 4) break;
+    }
+  }
+
+  // Pass 2: fill up to 4 if needed
+  if (secondary.length < 4) {
+    for (const art of remaining) {
+      if (!secondary.some((s) => s.slug === art.slug)) {
+        secondary.push(art);
+        if (secondary.length >= 4) break;
+      }
+    }
+  }
+
+  return { hero, secondary };
+}
+
 export function Home() {
   const loaderData = (useLoaderData() as HomeLoaderData) || {};
   const articles = loaderData.articles || [];
   const pathname = loaderData.pathname || '/';
   const { language, t, localePath } = useLanguage();
 
-  // Primary feature story (featured or first)
-  const heroArticle = articles.find((a) => a.featured) || articles[0];
-  const secondaryArticles = articles.filter((a) => a.slug !== heroArticle?.slug);
+  // Articles displayed in the top Hero Showcase Slider
+  const sliderArticles = useMemo(() => {
+    const list = articles.filter((a) => Boolean(a.image));
+    const selected: ArticleData[] = [];
+    const seenCategories = new Set<string>();
+
+    for (const art of list) {
+      const { category } = getArticleCategory(art);
+      if (!seenCategories.has(category.id)) {
+        seenCategories.add(category.id);
+        selected.push(art);
+        if (selected.length >= 4) break;
+      }
+    }
+    if (selected.length < 4) {
+      for (const art of list) {
+        if (!selected.some((s) => s.slug === art.slug)) {
+          selected.push(art);
+          if (selected.length >= 4) break;
+        }
+      }
+    }
+    return selected;
+  }, [articles]);
+
+  const sliderSlugs = useMemo(() => {
+    return new Set(sliderArticles.map((a) => a.slug));
+  }, [sliderArticles]);
+
+  // Non-slider article pool: strictly exclude any blog already appearing in the top slider
+  const nonSliderArticles = useMemo(() => {
+    return articles.filter((a) => !sliderSlugs.has(a.slug) && Boolean(a.image));
+  }, [articles, sliderSlugs]);
+
+  // Initial deterministic selection for SSG
+  const [featureSet, setFeatureSet] = useState(() =>
+    pickDiverseFeatureSet(nonSliderArticles, false)
+  );
+
+  // Dynamic on every page mount / reload on client: rotate and randomize fresh articles
+  useEffect(() => {
+    setFeatureSet(pickDiverseFeatureSet(nonSliderArticles, true));
+  }, [nonSliderArticles]);
+
+  const heroArticle = featureSet.hero || nonSliderArticles[0] || articles[0];
+  const secondaryArticles = featureSet.secondary;
 
   // Live article counts by category
   const categoryCounts = useMemo(() => {

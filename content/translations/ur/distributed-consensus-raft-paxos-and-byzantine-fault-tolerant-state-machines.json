@@ -11,8 +11,8 @@
     "backend-and-apis",
     "system-architecture"
   ],
-  "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "High-density server racks with optical fiber cabling in a hyperscale distributed cloud datacenter",
+  "image": "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "High-density distributed server room datacenter with glowing network cabling",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "جدید کلاؤڈ آرکیٹیکچرز کے مرکز میں—کاکروچ ڈی بی اور وغیرہ جیسے ڈسٹری بیوٹ شدہ ڈیٹا اسٹورز سے لے کر بلاک چین تک—مشین ریپلیکیشن کے چیلنج کو تقسیم کیا گیا۔ آزاد سرور نوڈس کا ایک جھرمٹ پیکٹ ڈراپس، لیٹنسی اسپائکس، اور مشین کریش کے تابع غیر مطابقت پذیر نیٹ ورک میں ریاستی منتقلی کے ترتیب شدہ ترتیب پر کیسے متفق ہو سکتا ہے؟"
     }
   ],
-  "sourceHash": "a275c70b24e2902b2558ec1e0b4ebb0d0c1724f2"
+  "sourceHash": "17db3190e4ab685ef3ed3178d8ee18ab89cfadca"
 }

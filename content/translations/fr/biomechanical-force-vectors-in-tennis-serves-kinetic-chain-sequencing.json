@@ -11,8 +11,8 @@
     "kinematics",
     "athletic-performance"
   ],
-  "image": "/images/articles/tennis-biomechanics-serve.jpg",
-  "imageAlt": "Professional tennis player in dynamic trophy pose preparing for an explosive first serve on court",
+  "image": "https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Elite tennis player executing a high-velocity biomechanical serve on court",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "Le service de tennis professionnel est l'une des actions cinématiques en boucle fermée multi-articulaires les plus explosives de l'athlétisme de compétition. Atteindre des vitesses de lancement supérieures à 220 km/h nécessite bien plus que la force des membres supérieurs ; cela nécessite le transfert séquentiel et sans entrave d’énergie mécanique le long d’une chaîne cinétique ininterrompue depuis la surface du terrain jusqu’au point d’impact de la raquette."
     }
   ],
-  "sourceHash": "eafb965e9ad454c902604d79da02611cb550f42a"
+  "sourceHash": "efa62ff72b5426aa5421c496b2c0ae0d7048bab1"
 }

@@ -12,8 +12,8 @@
     "machine-learning",
     "algorithms"
   ],
-  "image": "/images/articles/neuromorphic-chip.jpg",
-  "imageAlt": "Futuristic electronic printed circuit board and high performance microprocessor chip with illuminated neural connection pathways",
+  "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Neuromorphic spiking silicon architecture and advanced integrated circuits",
   "body": [
     {
       "type": "p",
@@ -100,5 +100,5 @@
       ]
     }
   ],
-  "sourceHash": "3bb956e1704e7649469dfb80daf7e5efdcd72047"
+  "sourceHash": "a5ba188df84cc16c67bf221337e0a6b7c05b3d9b"
 }

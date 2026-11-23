@@ -11,8 +11,8 @@
     "molecular-biology",
     "sports-science"
   ],
-  "image": "/images/articles/fitness-hypertrophy-gym.jpg",
-  "imageAlt": "High-intensity resistance training with barbell weights in a modern athletic conditioning facility",
+  "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Heavy barbell strength training and mechanical tension stimulus in athletics gym",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "L'hypertrophie musculaire squelettique est fondamentalement une réponse adaptative régie par la mécanotransduction, la cascade physiologique par laquelle les mécanocapteurs de la surface cellulaire convertissent la tension physique externe en signalisation biochimique intracellulaire. Alors que le stress métabolique et les lésions musculaires localisées contribuent au stimulus, les tensions mécaniques passives et actives restent les principaux moteurs en amont de la synthèse des protéines myofibrillaires."
     }
   ],
-  "sourceHash": "5cf0b3e255d17e29be22cd3c8abc974408c8dd4a"
+  "sourceHash": "b99d05317ef19dadecee144d815db0bd9b40bec4"
 }

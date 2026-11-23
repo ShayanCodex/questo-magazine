@@ -13,8 +13,8 @@
     "biology",
     "news"
   ],
-  "image": "/images/articles/crispr-dna-editing.jpg",
-  "imageAlt": "Double helix molecular DNA strand illuminated under high magnification biotechnology electron microscope",
+  "image": "https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "CRISPR molecular genetics research and DNA precision base editing",
   "body": [
     {
       "type": "p",
@@ -101,5 +101,5 @@
       ]
     }
   ],
-  "sourceHash": "b36c794de05f6cbaec20ddd0693f3d05cd05d72e"
+  "sourceHash": "1a633ec1480834b9ae84cbd2ca9b9553948ef2e1"
 }

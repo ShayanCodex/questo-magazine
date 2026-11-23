@@ -11,8 +11,8 @@
     "expeditions",
     "hypoxia"
   ],
-  "image": "/images/articles/himalayan-mountaineering-glacier.jpg",
-  "imageAlt": "Snowcapped alpine peaks and glaciated ridgelines of the high Himalaya under clear azure mountain skies",
+  "image": "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Majestic snow-covered Himalayan mountain range and high-altitude alpine terrain",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "Ascender por encima de los 8.000 metros sumerge al organismo humano en la \"zona de la muerte\", un entorno donde la presión barométrica cae a aproximadamente un tercio del valor del nivel del mar (aprox. 250 mmHg). A pesar de que la fracción de oxígeno ambiental permanece constante en 20,9%, la caída precipitada de la presión parcial inspirada ($P_iO_2$) priva de oxigenación de los tejidos, lo que exige una aclimatación compensatoria sistémica."
     }
   ],
-  "sourceHash": "4775f0a6be80b1cd9cff50ad35a36372d3eef476"
+  "sourceHash": "39f2577c9d201c1b17c4b1ef5644e46e13afaaa5"
 }

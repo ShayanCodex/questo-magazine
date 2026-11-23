@@ -11,8 +11,8 @@
     "molecular-biology",
     "sports-science"
   ],
-  "image": "/images/articles/fitness-hypertrophy-gym.jpg",
-  "imageAlt": "High-intensity resistance training with barbell weights in a modern athletic conditioning facility",
+  "image": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Heavy barbell strength training and mechanical tension stimulus in athletics gym",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "La hipertrofia del músculo esquelético es fundamentalmente una respuesta adaptativa gobernada por la mecanotransducción, la cascada fisiológica mediante la cual los mecanosensores de la superficie celular convierten la tensión física externa en señales bioquímicas intracelulares. Si bien el estrés metabólico y el daño muscular localizado contribuyen al estímulo, la tensión mecánica pasiva y activa siguen siendo los principales impulsores de la síntesis de proteínas miofibrilares."
     }
   ],
-  "sourceHash": "5cf0b3e255d17e29be22cd3c8abc974408c8dd4a"
+  "sourceHash": "b99d05317ef19dadecee144d815db0bd9b40bec4"
 }

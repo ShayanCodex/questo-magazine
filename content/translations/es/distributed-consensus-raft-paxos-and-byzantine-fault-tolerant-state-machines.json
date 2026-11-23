@@ -11,8 +11,8 @@
     "backend-and-apis",
     "system-architecture"
   ],
-  "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "High-density server racks with optical fiber cabling in a hyperscale distributed cloud datacenter",
+  "image": "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "High-density distributed server room datacenter with glowing network cabling",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "En el corazón de las arquitecturas de nube modernas, desde almacenes de datos distribuidos como CockroachDB y etcd hasta libros de liquidación de blockchain, se encuentra el desafío de la replicación de máquinas de estado distribuidas. ¿Cómo puede un grupo de nodos de servidores independientes acordar una secuencia ordenada de transiciones de estado a través de una red asíncrona sujeta a caídas de paquetes, picos de latencia y fallas de las máquinas?"
     }
   ],
-  "sourceHash": "a275c70b24e2902b2558ec1e0b4ebb0d0c1724f2"
+  "sourceHash": "17db3190e4ab685ef3ed3178d8ee18ab89cfadca"
 }

@@ -5,7 +5,7 @@
   "date": "2026-11-18",
   "updated": "2026-11-18",
   "author": "Eleanor R. Thompson",
-  "image": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80",
+  "image": "https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=1600",
   "imageAlt": "Heavy industrial manufacturing plant and steel blast furnaces",
   "tags": [
     "breaking-news-global-affairs",
@@ -28,6 +28,12 @@
     {
       "type": "p",
       "text": "Carbon tariffs are essentially taxes or duties imposed on goods imported from countries with less stringent environmental regulations or higher carbon emissions."
+    },
+    {
+      "type": "video",
+      "src": "https://videos.pexels.com/video-files/3195394/3195394-hd_1920_1080_25fps.mp4",
+      "title": "Heavy Industrial Steel Production & Heat Dynamics",
+      "caption": "Blast furnace operations and heavy manufacturing thermal processing."
     },
     {
       "type": "quote",

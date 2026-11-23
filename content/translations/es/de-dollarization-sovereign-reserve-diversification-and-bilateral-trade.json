@@ -13,8 +13,8 @@
     "markets",
     "news"
   ],
-  "image": "/images/articles/gold-reserves-central-bank.jpg",
-  "imageAlt": "Rows of refined physical gold bullion bars stacked securely inside modern central bank sovereign depository vault",
+  "image": "https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Solid gold bullion ingots stored in sovereign treasury reserve vaults",
   "body": [
     {
       "type": "p",
@@ -101,5 +101,5 @@
       ]
     }
   ],
-  "sourceHash": "d3702ce554b41ef4257e1aa926108921769c7584"
+  "sourceHash": "57fecb35d7327bbc8db1d943a0ee35179db10597"
 }

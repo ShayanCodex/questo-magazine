@@ -12,8 +12,8 @@
     "materials-science",
     "engineering"
   ],
-  "image": "/images/articles/solid-state-battery.jpg",
-  "imageAlt": "Precision engineered high energy density electrochemical battery cell laboratory test setup",
+  "image": "https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Electrochemical chemistry research laboratory and sulfide electrolyte formulation",
   "body": [
     {
       "type": "p",
@@ -108,5 +108,5 @@
       ]
     }
   ],
-  "sourceHash": "e0806f8db83836b836c0cab1afb220067ff2ed18"
+  "sourceHash": "243fce6d80544187aba69e31c19871a29d80dbd1"
 }

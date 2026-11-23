@@ -11,8 +11,8 @@
     "ergonomics",
     "wellness"
   ],
-  "image": "/images/articles/circadian-lighting-workspace.jpg",
-  "imageAlt": "Spacious architectural workspace illuminated by natural floor-to-ceiling daylight and adaptive task illumination",
+  "image": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Modern ergonomic workspace with balanced circadian daylight illumination",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "Los trabajadores del conocimiento profesional moderno pasan hasta el 90% de sus horas de vigilia dentro de estructuras con clima controlado bajo lámparas fluorescentes estáticas o LED mal sintonizadas. Mientras que las pautas arquitectónicas estándar especifican la iluminancia en lux fotópico (optimizado estrictamente para la claridad de la tarea visual), el ojo humano alberga un tercer sistema de fotorreceptores dedicado enteramente a la biología circadiana."
     }
   ],
-  "sourceHash": "a113966670ad68b1239a1e2e5f8dd75456f1580e"
+  "sourceHash": "c6281263f93f3ac1559ec77d78b9795758f908c0"
 }

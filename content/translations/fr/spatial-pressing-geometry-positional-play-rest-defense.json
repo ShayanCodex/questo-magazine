@@ -11,8 +11,8 @@
     "sports-science",
     "biomechanics"
   ],
-  "image": "/images/articles/football-pressing-geometry.jpg",
-  "imageAlt": "Aerial perspective of architectural football pitch grid lines and structural playing zones",
+  "image": "https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Football pitch grass markings and spatial positioning tactical lines",
   "body": [
     {
       "type": "p",
@@ -98,5 +98,5 @@
       ]
     }
   ],
-  "sourceHash": "9dbec62008d8952b5f910cdc5b7438df204c1a70"
+  "sourceHash": "a866616c377a2a9118e79690413c1b3ef37adb6a"
 }

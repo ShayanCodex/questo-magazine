@@ -11,8 +11,8 @@
     "ergonomics",
     "wellness"
   ],
-  "image": "/images/articles/circadian-lighting-workspace.jpg",
-  "imageAlt": "Spacious architectural workspace illuminated by natural floor-to-ceiling daylight and adaptive task illumination",
+  "image": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Modern ergonomic workspace with balanced circadian daylight illumination",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "Les travailleurs du savoir professionnels modernes passent jusqu'à 90 % de leurs heures d'éveil à l'intérieur de structures climatisées sous des luminaires fluorescents statiques ou des luminaires LED mal réglés. Alors que les directives architecturales standard spécifient l'éclairement en lux photopiques (optimisé strictement pour la clarté des tâches visuelles), l'œil humain abrite un troisième système photorécepteur entièrement dédié à la biologie circadienne."
     }
   ],
-  "sourceHash": "a113966670ad68b1239a1e2e5f8dd75456f1580e"
+  "sourceHash": "c6281263f93f3ac1559ec77d78b9795758f908c0"
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowRightIcon,
@@ -26,8 +26,30 @@ export function FeaturedShowcaseSlider({
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
 
-  // Select 4 primary editorial articles for the showcase carousel
-  const showcaseArticles = articles.filter((a) => Boolean(a.image)).slice(0, 4);
+  // Select 4 primary editorial articles for the showcase carousel with diverse categories
+  const showcaseArticles = useMemo(() => {
+    const list = articles.filter((a) => Boolean(a.image));
+    const selected: ArticleData[] = [];
+    const seenCategories = new Set<string>();
+
+    for (const art of list) {
+      const { category } = getArticleCategory(art);
+      if (!seenCategories.has(category.id)) {
+        seenCategories.add(category.id);
+        selected.push(art);
+        if (selected.length >= 4) break;
+      }
+    }
+    if (selected.length < 4) {
+      for (const art of list) {
+        if (!selected.some((s) => s.slug === art.slug)) {
+          selected.push(art);
+          if (selected.length >= 4) break;
+        }
+      }
+    }
+    return selected;
+  }, [articles]);
   const totalSlides = showcaseArticles.length;
 
   const [currentIndex, setCurrentIndex] = useState(0);

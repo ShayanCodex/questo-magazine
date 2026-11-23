@@ -12,8 +12,8 @@
     "physics",
     "optics"
   ],
-  "image": "/images/articles/quantum-computing-qubit.jpg",
-  "imageAlt": "Ultra-clean quantum physics research laboratory with cryogenic dilution refrigeration apparatus",
+  "image": "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Quantum computing cryogenic laboratory and optical laser hardware",
   "body": [
     {
       "type": "p",
@@ -108,5 +108,5 @@
       ]
     }
   ],
-  "sourceHash": "615eef5421f18d7b3090ffa5b42b8a64327fed07"
+  "sourceHash": "3ce6f81613a2d5cfb69a8df09c5893e1be52744c"
 }

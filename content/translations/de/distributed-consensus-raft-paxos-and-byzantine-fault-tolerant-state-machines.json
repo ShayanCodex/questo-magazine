@@ -11,8 +11,8 @@
     "backend-and-apis",
     "system-architecture"
   ],
-  "image": "/images/articles/distributed-servers-datacenter.jpg",
-  "imageAlt": "High-density server racks with optical fiber cabling in a hyperscale distributed cloud datacenter",
+  "image": "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "High-density distributed server room datacenter with glowing network cabling",
   "body": [
     {
       "type": "h2",
@@ -75,5 +75,5 @@
       "text": "Im Zentrum moderner Cloud-Architekturen – von verteilten Datenspeichern wie CockroachDB und etcd bis hin zu Blockchain-Abrechnungsbüchern – liegt die Herausforderung der verteilten Zustandsmaschinenreplikation. Wie kann sich ein Cluster unabhängiger Serverknoten auf eine geordnete Abfolge von Zustandsübergängen in einem asynchronen Netzwerk einigen, das Paketverlusten, Latenzspitzen und Maschinenabstürzen ausgesetzt ist?"
     }
   ],
-  "sourceHash": "a275c70b24e2902b2558ec1e0b4ebb0d0c1724f2"
+  "sourceHash": "17db3190e4ab685ef3ed3178d8ee18ab89cfadca"
 }

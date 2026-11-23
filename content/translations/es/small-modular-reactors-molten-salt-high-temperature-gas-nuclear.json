@@ -13,8 +13,8 @@
     "infrastructure",
     "news"
   ],
-  "image": "/images/articles/nuclear-smr-reactor.jpg",
-  "imageAlt": "High precision advanced industrial nuclear power facility steam turbine and containment cooling infrastructure",
+  "image": "https://images.pexels.com/photos/414807/pexels-photo-414807.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "imageAlt": "Modern clean thermal power generation facility and nuclear engineering plant",
   "body": [
     {
       "type": "p",
@@ -101,5 +101,5 @@
       ]
     }
   ],
-  "sourceHash": "2839fd28f3881f13ddadb5dbe46036f082ca1dd9"
+  "sourceHash": "4aebe2efe89cea86820b167246622d998e6a6cfd"
 }

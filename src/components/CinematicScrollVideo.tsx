@@ -14,8 +14,8 @@ export interface CinematicScrollVideoProps {
 }
 
 export function CinematicScrollVideo({
-  videoSrc = 'https://vjs.zencdn.net/v/oceans.mp4',
-  posterSrc = 'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&w=2000&q=90',
+  videoSrc = 'https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4',
+  posterSrc = 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=2000',
   title = 'The Geometry of Silence',
   subtitle = 'A visual exploration of brutalist mass, void space, and monumental architectural permanence.',
 }: CinematicScrollVideoProps) {
