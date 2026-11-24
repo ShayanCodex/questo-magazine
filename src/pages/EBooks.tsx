@@ -17,6 +17,7 @@ import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { PdfReaderModal } from '../components/PdfReaderModal';
 import { BookCard } from '../components/BookCard';
+import { AdSlot } from '../components/ads/AdSlot';
 import { cn } from '../lib/utils';
 import ebooksCardsData from '../data/ebooks-cards.json';
 import {
@@ -212,6 +213,9 @@ export function EBooks() {
             </div>
           </div>
         </header>
+
+        {/* Above-the-Fold Ad Container (Zero CLS) */}
+        <AdSlot slotType="above-fold" />
 
         {/* E-Books Grid */}
         <section className="space-y-6">

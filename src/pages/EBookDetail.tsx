@@ -145,6 +145,16 @@ export function EBookDetail() {
         description={ebook.curatedContext}
         pathname={pathname}
         image={ebook.coverUrl}
+        type="book"
+        bookMeta={{
+          author: ebook.author,
+          year: ebook.year,
+          numberOfPages: ebook.pageCount,
+          category: ebook.category,
+          subdiscipline: ebook.subdiscipline,
+          pdfUrl: safePdf,
+        }}
+        breadcrumbs={breadcrumbs.map((b) => ({ name: b.label, url: b.href || pathname }))}
         customJsonLd={JSON.stringify(bookJsonLd)}
       />
 

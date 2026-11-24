@@ -1,25 +1,43 @@
 import type { ArticleData } from './types';
 import { defaultLanguage } from './site';
-
-// Grouped compressed master JSON bundles generated during build
-import masterEn from '../data/master-articles.en.json';
-import masterEs from '../data/master-articles.es.json';
-import masterFr from '../data/master-articles.fr.json';
-import masterDe from '../data/master-articles.de.json';
-import masterAr from '../data/master-articles.ar.json';
-import masterUr from '../data/master-articles.ur.json';
 import availableLangsData from '../data/available-languages.json';
 
-const MASTER_BUNDLES: Record<string, ArticleData[]> = {
-  en: masterEn as unknown as ArticleData[],
-  es: masterEs as unknown as ArticleData[],
-  fr: masterFr as unknown as ArticleData[],
-  de: masterDe as unknown as ArticleData[],
-  ar: masterAr as unknown as ArticleData[],
-  ur: masterUr as unknown as ArticleData[],
-};
-
 const AVAILABLE_LANGS: Record<string, string[]> = availableLangsData as Record<string, string[]>;
+
+// Dynamic chunk cache to prevent multi-megabyte bundle bloat on initial page load
+const BUNDLE_CACHE: Record<string, ArticleData[]> = {};
+
+async function fetchBundle(langCode: string): Promise<ArticleData[]> {
+  if (BUNDLE_CACHE[langCode]) {
+    return BUNDLE_CACHE[langCode];
+  }
+
+  let bundle: ArticleData[];
+  switch (langCode) {
+    case 'es':
+      bundle = ((await import('../data/master-articles.es.json')).default as unknown) as ArticleData[];
+      break;
+    case 'fr':
+      bundle = ((await import('../data/master-articles.fr.json')).default as unknown) as ArticleData[];
+      break;
+    case 'de':
+      bundle = ((await import('../data/master-articles.de.json')).default as unknown) as ArticleData[];
+      break;
+    case 'ar':
+      bundle = ((await import('../data/master-articles.ar.json')).default as unknown) as ArticleData[];
+      break;
+    case 'ur':
+      bundle = ((await import('../data/master-articles.ur.json')).default as unknown) as ArticleData[];
+      break;
+    case 'en':
+    default:
+      bundle = ((await import('../data/master-articles.en.json')).default as unknown) as ArticleData[];
+      break;
+  }
+
+  BUNDLE_CACHE[langCode] = bundle;
+  return bundle;
+}
 
 export function slugifyHeading(text?: string, index = 0): string {
   if (!text || typeof text !== 'string') return `heading-${index}`;
@@ -81,42 +99,43 @@ export function calculateReadingTime(
 }
 
 /**
- * Extract all unique slugs across content/articles
+ * Extract all unique slugs across content/articles synchronously from metadata index
  */
 export function getAllArticleSlugs(): string[] {
-  const baseArticles = MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
-  return baseArticles.map((a) => a.slug).sort();
+  return Object.keys(AVAILABLE_LANGS).sort();
 }
 
 /**
- * Load a single article for a specific language from grouped master JSON array.
+ * Load a single article for a specific language from dynamically chunked master JSON.
  * Falls back to default English article if translation is missing.
  */
 export async function loadArticle(
   slug: string,
   langCode: string
 ): Promise<ArticleData | null> {
-  const bundle = MASTER_BUNDLES[langCode] || MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
+  const bundle = await fetchBundle(langCode);
   const article = bundle.find((a) => a.slug === slug);
   if (article) {
     return article;
   }
 
   // Fallback to default language
-  const defaultBundle = MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
-  const fallback = defaultBundle.find((a) => a.slug === slug);
-  if (fallback) {
-    return { ...fallback, isFallback: true };
+  if (langCode !== defaultLanguage) {
+    const defaultBundle = await fetchBundle(defaultLanguage);
+    const fallback = defaultBundle.find((a) => a.slug === slug);
+    if (fallback) {
+      return { ...fallback, isFallback: true };
+    }
   }
 
   return null;
 }
 
 /**
- * Load all articles for a specific language from grouped master JSON array, sorted by date descending.
+ * Load all articles for a specific language from chunked bundle, sorted by date descending.
  */
 export async function loadAllArticles(langCode: string): Promise<ArticleData[]> {
-  const bundle = MASTER_BUNDLES[langCode] || MASTER_BUNDLES[defaultLanguage] || (masterEn as unknown as ArticleData[]);
+  const bundle = await fetchBundle(langCode);
   return [...bundle].sort((a, b) => b.date.localeCompare(a.date));
 }
 
@@ -142,4 +161,3 @@ export async function loadAllTags(): Promise<string[]> {
 export function getAvailableRealLanguages(slug: string): string[] {
   return AVAILABLE_LANGS[slug] || [defaultLanguage];
 }
-

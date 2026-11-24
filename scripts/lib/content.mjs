@@ -203,6 +203,7 @@ export function getIncludedRoutes() {
   // 1. Default Language Core Shell Pages
   routes.push('/');
   routes.push('/articles');
+  routes.push('/ebooks');
   routes.push('/markets');
   routes.push('/markets/screener');
   routes.push('/markets/heatmap');
@@ -213,6 +214,8 @@ export function getIncludedRoutes() {
   routes.push('/contact');
   routes.push('/terms');
   routes.push('/privacy');
+  routes.push('/editorial-policy');
+  routes.push('/disclaimer');
 
   // Dedicated Category Hubs (Essential for SEO architecture)
   for (const catId of categoryIds) {
@@ -234,9 +237,10 @@ export function getIncludedRoutes() {
     routes.push(`/authors/${authorSlug}`);
   }
 
-  // Flagship Foundation Monographs
-  for (const slug of FLAGSHIP_MONOGRAPHS) {
-    routes.push(`/articles/${slug}`);
+  // Full Indexation: Pre-render all base articles for maximum organic search dominance
+  const allBaseArticles = getAllArticles();
+  for (const art of allBaseArticles) {
+    routes.push(`/articles/${art.slug}`);
   }
 
   // 2. Primary Language Root Entrypoint Hubs

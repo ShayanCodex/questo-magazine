@@ -69,6 +69,7 @@ function generatePagesSitemap(baseUrl, languages, defaultLang) {
   const pages = [
     { id: 'home', prio: '1.0', freq: 'daily', tpl: (_code, isDef) => (isDef ? '' : _code) },
     { id: 'articles', prio: '0.8', freq: 'daily', tpl: (c, isDef) => (isDef ? 'articles' : `${c}/articles`) },
+    { id: 'ebooks', prio: '0.9', freq: 'daily', tpl: (c, isDef) => (isDef ? 'ebooks' : `${c}/ebooks`) },
     { id: 'markets', prio: '0.9', freq: 'hourly', tpl: (c, isDef) => (isDef ? 'markets' : `${c}/markets`) },
     { id: 'markets-screener', prio: '0.85', freq: 'daily', tpl: (c, isDef) => (isDef ? 'markets/screener' : `${c}/markets/screener`) },
     { id: 'markets-heatmap', prio: '0.85', freq: 'daily', tpl: (c, isDef) => (isDef ? 'markets/heatmap' : `${c}/markets/heatmap`) },
@@ -78,6 +79,8 @@ function generatePagesSitemap(baseUrl, languages, defaultLang) {
     { id: 'contact', prio: '0.5', freq: 'monthly', tpl: (c, isDef) => (isDef ? 'contact' : `${c}/contact`) },
     { id: 'terms', prio: '0.4', freq: 'yearly', tpl: (c, isDef) => (isDef ? 'terms' : `${c}/terms`) },
     { id: 'privacy', prio: '0.4', freq: 'yearly', tpl: (c, isDef) => (isDef ? 'privacy' : `${c}/privacy`) },
+    { id: 'editorial-policy', prio: '0.6', freq: 'monthly', tpl: (c, isDef) => (isDef ? 'editorial-policy' : `${c}/editorial-policy`) },
+    { id: 'disclaimer', prio: '0.5', freq: 'monthly', tpl: (c, isDef) => (isDef ? 'disclaimer' : `${c}/disclaimer`) },
     { id: 'tools', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools' : `${c}/tools`) },
     { id: 'tool-image-converter', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools/image-converter' : `${c}/tools/image-converter`) },
     { id: 'tool-audio-extractor', prio: '0.85', freq: 'weekly', tpl: (c, isDef) => (isDef ? 'tools/audio-extractor' : `${c}/tools/audio-extractor`) },
@@ -140,6 +143,30 @@ function generateArticlesSitemap(baseUrl, languages, defaultLang, articles) {
 ${hreflangs}
   </url>`);
     }
+  }
+
+  return wrapUrlset(entries);
+}
+
+/**
+ * 2b. Sitemap: Public Domain E-Books Library Collection
+ */
+function generateEbooksSitemap(baseUrl) {
+  const ebooksCardsPath = path.join(rootDir, 'src', 'data', 'ebooks-cards.json');
+  if (!fs.existsSync(ebooksCardsPath)) return wrapUrlset([]);
+  const books = JSON.parse(fs.readFileSync(ebooksCardsPath, 'utf8'));
+  const today = '2026-11-24';
+  const entries = [];
+
+  for (const book of books) {
+    const slug = book.slug;
+    const loc = cleanUrl(baseUrl, `ebooks/${slug}`);
+    entries.push(`  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
   }
 
   return wrapUrlset(entries);
@@ -468,6 +495,7 @@ function run() {
   const sitemaps = [
     { filename: 'sitemap-pages.xml', content: generatePagesSitemap(baseUrl, languages, defaultLang) },
     { filename: 'sitemap-articles.xml', content: generateArticlesSitemap(baseUrl, languages, defaultLang, articles) },
+    { filename: 'sitemap-ebooks.xml', content: generateEbooksSitemap(baseUrl) },
     { filename: 'sitemap-categories.xml', content: generateCategoriesSitemap(baseUrl, languages, defaultLang, articles) },
     { filename: 'sitemap-authors.xml', content: generateAuthorsSitemap(baseUrl, languages, defaultLang, articles) },
     { filename: 'sitemap-markets.xml', content: generateMarketsSitemap(baseUrl, languages, defaultLang) },

@@ -25,6 +25,7 @@ import { ImageLightbox } from '../components/ImageLightbox';
 import { ArticleToc } from '../components/ArticleToc';
 import { ArticleComments } from '../components/ArticleComments';
 import { LazyImage } from '../components/LazyImage';
+import { AdSlot } from '../components/ads/AdSlot';
 import { cn } from '../lib/utils';
 
 interface ArticleLoaderData {
@@ -369,6 +370,9 @@ export function Article() {
             </div>
           )}
 
+          {/* Top Leaderboard Ad Slot (Zero CLS) */}
+          <AdSlot slotType="above-fold" />
+
           {/* Executive Summary / Key Takeaways Box */}
           <ArticleTakeaways article={article} />
 
@@ -383,6 +387,9 @@ export function Article() {
           >
             <Body blocks={article.body} />
           </div>
+
+          {/* In-Content Native Feature Ad Slot (Zero CLS) */}
+          <AdSlot slotType="in-content" />
 
           {/* Article Footer */}
           <footer className="pt-8 border-t border-editorial-border space-y-8">

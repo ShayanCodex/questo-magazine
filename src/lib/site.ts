@@ -20,8 +20,11 @@ export function getLanguagePrefix(langCode: string): string {
 }
 
 export function getCanonicalUrl(pathname: string): string {
-  const baseUrl = siteConfig.url.replace(/\/+$/, '');
+  // Support dynamic runtime / build-time environment variable for Cloudflare Pages subdomain deployment
+  const envUrl = typeof import.meta !== 'undefined' && import.meta.env
+    ? (import.meta.env.VITE_SITE_URL || import.meta.env.SITE_URL)
+    : '';
+  const baseUrl = (envUrl || siteConfig.url || 'https://questo.pages.dev').replace(/\/+$/, '');
   const cleanPath = pathname.replace(/^\/+/, '');
   return cleanPath ? `${baseUrl}/${cleanPath}` : `${baseUrl}/`;
 }
-

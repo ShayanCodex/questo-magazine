@@ -422,6 +422,16 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                   </Link>
                 </li>
                 <li>
+                  <Link to={localePath('/editorial-policy')} className="hover:text-editorial-text transition-colors">
+                    Editorial Standards & Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to={localePath('/disclaimer')} className="hover:text-editorial-text transition-colors">
+                    Legal & Health Disclaimers
+                  </Link>
+                </li>
+                <li>
                   <Link to={localePath('/privacy')} className="hover:text-editorial-text transition-colors">
                     {t.privacyDisclosures || 'Privacy Disclosures'}
                   </Link>

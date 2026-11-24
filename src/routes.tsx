@@ -31,6 +31,8 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Terms } from './pages/Terms';
 import { Privacy } from './pages/Privacy';
+import { EditorialPolicy } from './pages/EditorialPolicy';
+import { Disclaimer } from './pages/Disclaimer';
 import { AdminDashboard } from './pages/AdminDashboard';
 import { EBooks } from './pages/EBooks';
 import { EBookDetail } from './pages/EBookDetail';
@@ -269,6 +271,14 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
       {
         path: 'privacy',
         element: <Privacy />,
+      },
+      {
+        path: 'editorial-policy',
+        element: <EditorialPolicy />,
+      },
+      {
+        path: 'disclaimer',
+        element: <Disclaimer />,
       },
       {
         path: 'admin',

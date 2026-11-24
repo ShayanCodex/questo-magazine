@@ -217,6 +217,24 @@ export default defineConfig(({ mode }) => {
             if (id.includes('src/data/ebooks-cards.json')) {
               return 'data-ebooks-cards';
             }
+            if (id.includes('master-articles.en.json')) {
+              return 'data-articles-en';
+            }
+            if (id.includes('master-articles.es.json')) {
+              return 'data-articles-es';
+            }
+            if (id.includes('master-articles.fr.json')) {
+              return 'data-articles-fr';
+            }
+            if (id.includes('master-articles.de.json')) {
+              return 'data-articles-de';
+            }
+            if (id.includes('master-articles.ar.json')) {
+              return 'data-articles-ar';
+            }
+            if (id.includes('master-articles.ur.json')) {
+              return 'data-articles-ur';
+            }
           },
         },
       },

@@ -3,13 +3,32 @@ import { useLanguage } from '../lib/lang-context';
 import { siteConfig, getCanonicalUrl } from '../lib/site';
 import { authorNameToSlug } from '../data/authors';
 
+export interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface BookMetadata {
+  author: string;
+  year?: string;
+  numberOfPages?: number;
+  pdfUrl?: string;
+  category?: string;
+  subdiscipline?: string;
+}
+
 export interface SeoProps {
   title: string;
   description: string;
   pathname: string;
   canonicalPath?: string;
   image?: string;
-  type?: 'website' | 'article';
+  type?: 'website' | 'article' | 'book' | 'collection';
   articleDate?: string;
   articleUpdated?: string;
   articleAuthor?: string;
@@ -18,6 +37,9 @@ export interface SeoProps {
   breadcrumbsJsonLd?: string;
   customJsonLd?: string;
   keywords?: string[] | string;
+  breadcrumbs?: BreadcrumbItem[];
+  faqItems?: FaqItem[];
+  bookMeta?: BookMetadata;
 }
 
 export function Seo({
@@ -35,9 +57,15 @@ export function Seo({
   breadcrumbsJsonLd,
   customJsonLd,
   keywords,
+  breadcrumbs,
+  faqItems,
+  bookMeta,
 }: SeoProps) {
   const { language } = useLanguage();
-  const siteUrl = siteConfig.url.replace(/\/+$/, '');
+  const envUrl = typeof import.meta !== 'undefined' && import.meta.env
+    ? (import.meta.env.VITE_SITE_URL || import.meta.env.SITE_URL)
+    : '';
+  const siteUrl = (envUrl || siteConfig.url || 'https://questo.pages.dev').replace(/\/+$/, '');
   const pageTitle = `${title} — ${siteConfig.name}`;
   const canonicalUrl = getCanonicalUrl(canonicalPath || pathname);
 
@@ -58,11 +86,12 @@ export function Seo({
 
   const defaultKeywords = [
     'Questo Magazine',
-    'editorial architecture',
-    'minimalist design systems',
-    'typography monographs',
+    'editorial journalism',
+    'public domain library',
+    'classical monographs',
+    'longevity and health',
+    'macro markets',
     'systems architecture',
-    'visual culture',
     siteConfig.name,
   ];
 
@@ -70,13 +99,13 @@ export function Seo({
     ? (Array.isArray(keywords) ? keywords.join(', ') : keywords)
     : defaultKeywords.join(', ');
 
-  // Build JSON-LD Structured Data
+  // 1. Build Primary JSON-LD Schema
   let mainSchema: Record<string, unknown>;
 
   if (type === 'article') {
     mainSchema = {
       '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
+      '@type': 'NewsArticle',
       headline: title,
       description,
       image: ogImage,
@@ -89,7 +118,7 @@ export function Seo({
       },
       author: {
         '@type': 'Person',
-        name: articleAuthor || 'Author',
+        name: articleAuthor || 'Staff Critic',
         url: articleAuthor ? `${siteUrl}/authors/${authorNameToSlug(articleAuthor)}` : siteUrl,
       },
       publisher: {
@@ -106,10 +135,39 @@ export function Seo({
       datePublished: articleDate,
       dateModified: articleUpdated || articleDate,
     };
+  } else if (type === 'book') {
+    mainSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: title,
+      description,
+      image: ogImage,
+      url: canonicalUrl,
+      inLanguage: language.code,
+      bookFormat: 'https://schema.org/EBook',
+      isAccessibleForFree: true,
+      author: {
+        '@type': 'Person',
+        name: bookMeta?.author || 'Historical Author',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: `${siteConfig.name} Classical Archives`,
+        url: siteUrl,
+      },
+      numberOfPages: bookMeta?.numberOfPages || 300,
+      genre: bookMeta?.category || 'Public Domain Literature',
+      offers: {
+        '@type': 'Offer',
+        price: '0.00',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+      },
+    };
   } else {
     mainSchema = {
       '@context': 'https://schema.org',
-      '@type': 'Blog',
+      '@type': 'WebSite',
       name: siteConfig.name,
       description: siteConfig.description,
       url: siteUrl,
@@ -125,7 +183,46 @@ export function Seo({
           height: 512,
         },
       },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${siteUrl}/articles?q={search_term_string}`,
+        'query-input': 'required name=search_term_string',
+      },
     };
+  }
+
+  // 2. Build Breadcrumbs JSON-LD
+  let generatedBreadcrumbsJson: string | null = null;
+  if (breadcrumbs && breadcrumbs.length > 0) {
+    const breadcrumbList = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.map((crumb, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: crumb.name,
+        item: crumb.url.startsWith('http') ? crumb.url : `${siteUrl}${crumb.url.startsWith('/') ? crumb.url : `/${crumb.url}`}`,
+      })),
+    };
+    generatedBreadcrumbsJson = JSON.stringify(breadcrumbList);
+  }
+
+  // 3. Build FAQ JSON-LD
+  let generatedFaqJson: string | null = null;
+  if (faqItems && faqItems.length > 0) {
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
+    };
+    generatedFaqJson = JSON.stringify(faqSchema);
   }
 
   return (
@@ -176,7 +273,7 @@ export function Seo({
       <meta property="og:site_name" content={siteConfig.name} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:type" content={type} />
+      <meta property="og:type" content={type === 'book' ? 'book' : type === 'article' ? 'article' : 'website'} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:alt" content={title} />
@@ -190,15 +287,26 @@ export function Seo({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
 
-      {/* JSON-LD Schemas */}
+      {/* Primary JSON-LD Schema */}
       <script type="application/ld+json">
         {JSON.stringify(mainSchema)}
       </script>
-      {breadcrumbsJsonLd && (
+
+      {/* Breadcrumbs Schema */}
+      {(generatedBreadcrumbsJson || breadcrumbsJsonLd) && (
         <script type="application/ld+json">
-          {breadcrumbsJsonLd}
+          {generatedBreadcrumbsJson || breadcrumbsJsonLd}
         </script>
       )}
+
+      {/* FAQ Schema */}
+      {generatedFaqJson && (
+        <script type="application/ld+json">
+          {generatedFaqJson}
+        </script>
+      )}
+
+      {/* Custom Overrides */}
       {customJsonLd && (
         <script type="application/ld+json">
           {customJsonLd}
