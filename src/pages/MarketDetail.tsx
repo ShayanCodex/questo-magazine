@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
 import { useTheme } from '../lib/theme-context';
 import { getMarketAssetBySlug } from '../lib/markets';
+import { cn } from '../lib/utils';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { GoogleFinanceInteractiveChart } from '../components/markets/GoogleFinanceInteractiveChart';
@@ -24,6 +26,7 @@ export function MarketDetail() {
   const { slug } = useParams<{ slug: string }>();
   const { localePath, t } = useLanguage();
   const { theme } = useTheme();
+  const [complianceExpanded, setComplianceExpanded] = useState(false);
 
   const asset = slug ? getMarketAssetBySlug(slug) : null;
 
@@ -269,13 +272,20 @@ export function MarketDetail() {
 
           {/* Legal Compliance & Zero-Copyright Notice Box */}
           <div className="p-4 rounded-lg border border-editorial-border bg-editorial-surface-subtle text-xs font-sans text-editorial-muted space-y-2">
-            <div className="flex items-center gap-2 font-bold text-editorial-text uppercase tracking-wider text-[11px]">
+            <div className="flex items-center gap-2 font-bold text-editorial-text uppercase tracking-wider text-[11px] min-w-0">
               <CheckCircleIcon className="h-4 w-4 text-emerald-500 shrink-0" />
-              <span>Data Rights, Legal Attribution &amp; Redistribution Compliance</span>
+              <span className="truncate">Data Rights, Legal Attribution &amp; Redistribution Compliance</span>
             </div>
-            <p className="leading-relaxed">
+            <p className={cn("leading-relaxed", !complianceExpanded && "line-clamp-1 sm:line-clamp-none")}>
               Market data displayed for <strong>{asset.name}</strong> is licensed under authorized TradingView embed terms, European Central Bank public domain reference rules, and official exchange daily quotation disclosures. No proprietary data is scraped or redistributed without permission. Users have full access to interactive technical indicators directly within this platform without external software requirements.
             </p>
+            <button
+              type="button"
+              onClick={() => setComplianceExpanded((prev) => !prev)}
+              className="sm:hidden text-[10px] text-accent font-semibold underline cursor-pointer block hover:opacity-80 transition-opacity"
+            >
+              {complianceExpanded ? 'Show less' : 'Read more'}
+            </button>
           </div>
         </div>
 
