@@ -12,6 +12,7 @@
     "bundle-data": "node scripts/bundle-master-data.mjs",
     "validate-content": "node scripts/validate-content.mjs",
     "assert-media": "node scripts/assert-unique-media.mjs",
+    "assert-ebook-covers": "node scripts/assert-unique-ebook-covers.mjs",
     "translate": "node scripts/translate.mjs",
     "curate": "node scripts/autonomous-curator.mjs",
     "audit": "node scripts/audit-site.mjs",
@@ -19,12 +20,12 @@
     "self-heal": "node scripts/self-healing-audit.mjs",
     "ssg:build": "vite-react-ssg build",
     "postbuild": "node scripts/postbuild.mjs",
-    "build": "npm run lint && npm run typecheck && npm run validate-content && npm run assert-media && npm run bundle-data && npm run ssg:build && npm run postbuild",
+    "build": "npm run lint && npm run typecheck && npm run validate-content && npm run assert-media && npm run assert-ebook-covers && npm run bundle-data && npm run ssg:build && npm run postbuild",
     "preview": "vite preview",
     "prepare": "simple-git-hooks"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run lint && npm run validate-content"
+    "pre-commit": "npm run lint && npm run validate-content && npm run assert-ebook-covers"
   },
   "keywords": [
     "blog",
