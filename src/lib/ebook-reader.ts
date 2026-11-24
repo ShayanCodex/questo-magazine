@@ -12,7 +12,35 @@ export interface CompleteChapter {
 
 // Canonical verified Internet Archive IDs for world foundational works
 const VERIFIED_ARCHIVE_IDS: Record<string, string> = {
+  // Marcus Aurelius - Walter Scott / Camelot Series (1887)
   'meditations': 'meditationsofmar00marc',
+  'meditations-books-i-iv': 'meditationsofmar00marc',
+  'meditations-books-v-viii': 'meditationsofmar00marc',
+  'meditations-books-ix-xii': 'meditationsofmar00marc',
+  'meditations-books-i-iv-marcus-aurelius': 'meditationsofmar00marc',
+  'meditations-books-v-viii-marcus-aurelius': 'meditationsofmar00marc',
+  'meditations-books-ix-xii-marcus-aurelius': 'meditationsofmar00marc',
+
+  // Aristotle - Authentic Harvard Loeb Classical Library & Oxford Scans
+  'physics': 'in.ernet.dli.2015.183335',
+  'the-physics': 'in.ernet.dli.2015.183335',
+  'physics-books-i-iv': 'in.ernet.dli.2015.183335',
+  'physics-books-i-iv-aristotle': 'in.ernet.dli.2015.183335',
+  'physics-books-v-viii': 'in.ernet.dli.2015.183610',
+  'physics-books-v-viii-aristotle': 'in.ernet.dli.2015.183610',
+  'the-metaphysics-of-aristotle': 'aristotlesmetaph0001aris',
+  'metaphysics': 'aristotlesmetaph0001aris',
+  'metaphysics-books-i-vi-aristotle': 'aristotlesmetaph0001aris',
+  'metaphysics-books-vii-xiv-aristotle': 'aristotlesmetaph0001aris',
+  'nicomachean-ethics': 'in.ernet.dli.2015.183333',
+  'nicomachean-ethics-aristotle': 'in.ernet.dli.2015.183333',
+  'politics': 'aristotlespoliti00arisuoft',
+  'politics-aristotle': 'aristotlespoliti00arisuoft',
+  'poetics': 'aristotlespoetic00arisiala',
+  'poetics-aristotle': 'aristotlespoetic00arisiala',
+  'organon': 'AristotleOrganon',
+  'organon-aristotle': 'AristotleOrganon',
+
   'the-wealth-of-nations': 'wealthofnations00smituoft',
   'the-ten-books-on-architecture-de-architectura': 'vitruviustenbook00vitruoft',
   'on-the-origin-of-species': 'onoriginofspecie00darw',
@@ -213,22 +241,30 @@ export function isLocalCorePdf(slug: string): boolean {
   return false;
 }
 
-export function getVerifiedArchiveIdentifier(slug: string, rawIdentifier?: string): string {
+export function getVerifiedArchiveIdentifier(slug: string, rawIdentifier?: string): string | null {
   // Strip edition suffix e.g. "meditations-edition-2" -> "meditations"
-  const cleanSlug = slug.replace(/-edition-\d+$/, '');
+  const cleanSlug = slug.replace(/-edition-\d+$/, '').trim().toLowerCase();
   if (VERIFIED_ARCHIVE_IDS[cleanSlug]) {
     return VERIFIED_ARCHIVE_IDS[cleanSlug];
   }
   for (const [key, id] of Object.entries(VERIFIED_ARCHIVE_IDS)) {
-    if (cleanSlug.includes(key) || key.includes(cleanSlug)) {
+    if (cleanSlug === key || cleanSlug.startsWith(key + '-') || cleanSlug.endsWith('-' + key)) {
       return id;
     }
   }
-  if (rawIdentifier && rawIdentifier.length > 5 && !rawIdentifier.includes('-')) {
+  if (
+    rawIdentifier &&
+    rawIdentifier.length > 5 &&
+    !rawIdentifier.includes('books-i') &&
+    !rawIdentifier.includes('books-v') &&
+    !rawIdentifier.includes('books-ix') &&
+    !rawIdentifier.includes('edition') &&
+    rawIdentifier !== cleanSlug
+  ) {
     return rawIdentifier;
   }
-  // Safe canonical world masterwork fallback
-  return 'meditationsofmar00marc';
+  // Return null when unverified - NEVER fall back blindly to Marcus Aurelius!
+  return null;
 }
 
 const ROMAN_NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];

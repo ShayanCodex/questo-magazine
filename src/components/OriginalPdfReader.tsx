@@ -40,7 +40,26 @@ export function OriginalPdfReader({
   onToggleFullscreen,
   onClose,
 }: OriginalPdfReaderProps) {
-  const [activeMode, setActiveMode] = useState<'facsimile' | 'unabridged' | 'pdf'>(initialMode);
+  const totalPages = ebook.pageCount || 240;
+  const safeIdentifier = useMemo(
+    () => getVerifiedArchiveIdentifier(ebook.slug, ebook.identifier),
+    [ebook.slug, ebook.identifier]
+  );
+  const hasFacsimile = Boolean(safeIdentifier);
+
+  const [activeMode, setActiveMode] = useState<'facsimile' | 'unabridged' | 'pdf'>(() => {
+    if (initialMode === 'facsimile') {
+      return hasFacsimile ? 'facsimile' : 'unabridged';
+    }
+    return initialMode;
+  });
+
+  useEffect(() => {
+    if (!hasFacsimile && activeMode === 'facsimile') {
+      setActiveMode('unabridged');
+    }
+  }, [hasFacsimile, activeMode]);
+
   const [currentPage, setCurrentPage] = useState(1);
   const [zoomLevel, setZoomLevel] = useState(100);
   const [copiedLink, setCopiedLink] = useState(false);
@@ -54,12 +73,6 @@ export function OriginalPdfReader({
   const [activeChapterIndex, setActiveChapterIndex] = useState(0);
   const [readerFontSize, setReaderFontSize] = useState<'sm' | 'base' | 'lg'>('base');
   const [readerTheme, setReaderTheme] = useState<'dark' | 'sepia' | 'light'>('dark');
-
-  const totalPages = ebook.pageCount || 240;
-  const safeIdentifier = useMemo(
-    () => getVerifiedArchiveIdentifier(ebook.slug, ebook.identifier),
-    [ebook.slug, ebook.identifier]
-  );
 
   const safePdfUrl = useMemo(
     () => getSafePdfUrl(ebook.slug, ebook.pdfUrl),
@@ -119,6 +132,7 @@ export function OriginalPdfReader({
   // Fast scanned page URL generator: Uses edge-cached 800px web raster scans (4x faster, ~80 KB)
   const getPageUrl = useCallback(
     (pageNumber: number, highRes = false) => {
+      if (!safeIdentifier) return '';
       const pageIndex = Math.max(0, pageNumber - 1);
       if (highRes) {
         return `https://archive.org/download/${safeIdentifier}/page/n${pageIndex}.jpg`;
@@ -446,20 +460,22 @@ export function OriginalPdfReader({
 
         {/* Mode Selector */}
         <div className="flex items-center bg-neutral-800/80 p-0.5 rounded-lg border border-neutral-700 text-xs font-sans">
-          <button
-            type="button"
-            onClick={() => setActiveMode('facsimile')}
-            className={cn(
-              'px-3 py-1.5 rounded-md font-medium transition-all cursor-pointer flex items-center gap-1.5',
-              activeMode === 'facsimile'
-                ? 'bg-emerald-600 text-white shadow-sm font-semibold'
-                : 'text-neutral-300 hover:text-white hover:bg-neutral-700/50'
-            )}
-            title="Read Original Scanned Document"
-          >
-            <DocumentTextIcon className="h-3.5 w-3.5" />
-            <span>Original Facsimile</span>
-          </button>
+          {hasFacsimile && (
+            <button
+              type="button"
+              onClick={() => setActiveMode('facsimile')}
+              className={cn(
+                'px-3 py-1.5 rounded-md font-medium transition-all cursor-pointer flex items-center gap-1.5',
+                activeMode === 'facsimile'
+                  ? 'bg-emerald-600 text-white shadow-sm font-semibold'
+                  : 'text-neutral-300 hover:text-white hover:bg-neutral-700/50'
+              )}
+              title="Read Authentic Original Scanned Facsimile"
+            >
+              <DocumentTextIcon className="h-3.5 w-3.5" />
+              <span>Original Facsimile</span>
+            </button>
+          )}
           {isLocal && (
             <button
               type="button"
