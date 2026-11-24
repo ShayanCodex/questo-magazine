@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '../lib/lang-context';
-import { CheckCircleIcon, EnvelopeIcon, SparklesIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, EnvelopeIcon, SparklesIcon, GlobeAltIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 interface NicheTile {
   niche: string;
@@ -154,25 +154,26 @@ export function EditorialDispatch() {
   };
 
   return (
-    <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen overflow-hidden border-y border-neutral-800 bg-neutral-950 text-white rounded-none mt-16 sm:mt-24 shadow-2xl">
+    <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen overflow-hidden border-y border-neutral-800 bg-neutral-950 text-white mt-16 sm:mt-24 shadow-2xl">
       {/* 1. Masthead & Subscription Section */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left Column: Editorial Masthead */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 border border-white/20 text-xs font-mono uppercase tracking-wider text-white rounded-none">
+            {/* Beautiful Rounded-Full Tags with Tight Tracking */}
+            <div className="flex flex-wrap items-center gap-2.5">
+              <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-white/[0.08] hover:bg-white/[0.14] border border-white/20 text-xs font-sans font-medium tracking-tight text-white rounded-full backdrop-blur-md transition-all shadow-xs">
                 <EnvelopeIcon className="h-3.5 w-3.5 text-accent" />
                 <span>{t.weeklyJournal || 'Weekly Editorial Journal'}</span>
               </span>
 
-              <span className="inline-flex items-center gap-1 px-3 py-1 bg-white/5 border border-white/15 text-[11px] font-mono uppercase tracking-wider text-white/80 rounded-none">
-                <SparklesIcon className="h-3 w-3 text-emerald-400" />
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-white/[0.05] hover:bg-white/[0.10] border border-white/15 text-xs font-sans font-medium tracking-tight text-white/90 rounded-full backdrop-blur-md transition-all shadow-xs">
+                <SparklesIcon className="h-3.5 w-3.5 text-emerald-400" />
                 <span>{t.zeroSpam || 'Zero Spam'}</span>
               </span>
 
-              <span className="inline-flex items-center gap-1 px-3 py-1 bg-accent/20 border border-accent/40 text-[11px] font-mono uppercase tracking-wider text-amber-200 rounded-none">
-                <GlobeAltIcon className="h-3 w-3 text-amber-300" />
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-amber-400/10 hover:bg-amber-400/20 border border-amber-400/30 text-xs font-sans font-medium tracking-tight text-amber-200 rounded-full backdrop-blur-md transition-all shadow-xs">
+                <GlobeAltIcon className="h-3.5 w-3.5 text-amber-300" />
                 <span>All Niches A–Z Compendium</span>
               </span>
             </div>
@@ -185,51 +186,68 @@ export function EditorialDispatch() {
               {t.newsletterSubtitle}
             </p>
 
-            {/* Subscription Form (Strictly rounded-none) */}
+            {/* Awwwards-Style Floating Luxury Input Capsule */}
             {submitted ? (
-              <div className="p-5 bg-emerald-950/90 border border-emerald-400 text-emerald-100 flex items-center gap-3 text-sm font-medium rounded-none shadow-xl">
-                <CheckCircleIcon className="h-5 w-5 shrink-0 text-emerald-400" />
-                <span>{t.newsletterSuccess}</span>
+              <div className="p-4 sm:p-5 bg-emerald-950/80 border border-emerald-400/60 text-emerald-100 flex items-center justify-between gap-3 text-sm font-sans font-medium tracking-tight rounded-full shadow-[0_0_30px_rgba(16,185,129,0.2)] max-w-xl">
+                <div className="flex items-center gap-3">
+                  <CheckCircleIcon className="h-5 w-5 shrink-0 text-emerald-400" />
+                  <span>{t.newsletterSuccess}</span>
+                </div>
+                <span className="text-xs font-sans text-emerald-300/80 font-normal">Active Reader</span>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-0 pt-2 max-w-xl">
-                <div className="relative flex-1">
+              <form onSubmit={handleSubmit} className="relative max-w-xl group">
+                {/* Ambient Backlight Glow on Hover / Focus */}
+                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-amber-500/25 via-white/15 to-amber-400/20 blur-md opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                {/* Awwwards Unified Glassmorphic Capsule */}
+                <div className="relative flex items-center bg-neutral-900/90 backdrop-blur-2xl border border-white/20 group-hover:border-white/35 focus-within:border-white/60 rounded-full p-1.5 sm:p-2 shadow-[0_0_40px_rgba(0,0,0,0.8),0_0_15px_rgba(255,255,255,0.03)] focus-within:shadow-[0_0_35px_rgba(255,255,255,0.12)] transition-all duration-300">
+                  <EnvelopeIcon className="h-5 w-5 text-neutral-400 group-focus-within:text-amber-300 ms-3 sm:ms-4 shrink-0 transition-colors duration-300" />
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={t.newsletterPlaceholder}
                     required
-                    className="w-full bg-neutral-900 border border-neutral-700 px-5 py-4 font-serif text-sm sm:text-base text-white placeholder:text-neutral-400 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors rounded-none"
+                    className="w-full bg-transparent border-0 outline-none focus:outline-none focus:ring-0 text-white font-sans text-sm sm:text-base placeholder:text-neutral-500 tracking-tight px-3 py-2 sm:py-2.5 selection:bg-amber-400 selection:text-black"
                   />
+                  <button
+                    type="submit"
+                    className="rounded-full px-5 sm:px-7 py-3 sm:py-3.5 bg-white text-neutral-950 font-sans font-bold text-xs uppercase tracking-tight hover:bg-neutral-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-2 group/btn shadow-[0_4px_25px_rgba(255,255,255,0.18)] shrink-0 cursor-pointer"
+                  >
+                    <span>{t.newsletterButton}</span>
+                    <ArrowRightIcon className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-1 rtl:rotate-180 rtl:group-hover/btn:-translate-x-1" />
+                  </button>
                 </div>
-                <button
-                  type="submit"
-                  className="px-8 py-4 bg-white text-neutral-950 font-sans text-xs uppercase font-bold tracking-widest hover:bg-neutral-200 transition-colors cursor-pointer shrink-0 rounded-none border border-white"
-                >
-                  {t.newsletterButton}
-                </button>
               </form>
             )}
 
-            {/* Trust Badges Footer (Strictly rounded-none) */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-[11px] font-mono uppercase tracking-widest text-neutral-400 pt-2">
-              <span>{t.newsletterBullet1 || '• Delivered every Sunday'}</span>
-              <span>{t.newsletterBullet2 || '• Unsubscribe anytime'}</span>
-              <span>{t.newsletterBullet3 || '• 1,500+ Curated Readers'}</span>
-              <span className="hidden sm:inline text-neutral-600">•</span>
-              <span className="hidden sm:inline text-neutral-400">Human Curated</span>
+            {/* Trust Badges Footer with Rounded-Full Tags & Tight Tracking */}
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-white/[0.04] border border-white/10 text-xs font-sans text-neutral-300 rounded-full tracking-tight">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 inline-block animate-pulse"></span>
+                <span>{t.newsletterBullet1 || 'Delivered every Sunday'}</span>
+              </span>
+              <span className="inline-flex items-center px-3.5 py-1.5 bg-white/[0.04] border border-white/10 text-xs font-sans text-neutral-300 rounded-full tracking-tight">
+                {t.newsletterBullet2 || 'Unsubscribe anytime'}
+              </span>
+              <span className="inline-flex items-center px-3.5 py-1.5 bg-white/[0.04] border border-white/10 text-xs font-sans text-neutral-300 rounded-full tracking-tight">
+                {t.newsletterBullet3 || '1,500+ Curated Readers'}
+              </span>
+              <span className="hidden sm:inline-flex items-center px-3.5 py-1.5 bg-amber-400/10 border border-amber-400/20 text-xs font-sans text-amber-300 rounded-full tracking-tight">
+                Human Curated • 100% Essays
+              </span>
             </div>
           </div>
 
           {/* Right Column: Visual Compendium Card */}
-          <div className="lg:col-span-5 border border-neutral-800 bg-neutral-900/60 p-6 sm:p-8 space-y-5 rounded-none backdrop-blur-xs">
+          <div className="lg:col-span-5 border border-neutral-800/80 bg-neutral-900/60 p-6 sm:p-8 space-y-5 rounded-2xl backdrop-blur-md">
             <div className="flex items-center justify-between border-b border-neutral-800 pb-3">
-              <span className="font-mono text-xs uppercase tracking-widest text-amber-300 font-semibold">
+              <span className="font-sans text-xs uppercase tracking-tight text-amber-300 font-bold">
                 Archival Disciplines
               </span>
-              <span className="font-mono text-xs text-neutral-400">
-                12 Categories
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-sans font-medium tracking-tight bg-white/10 text-neutral-300 border border-white/15">
+                12 Pillars A–Z
               </span>
             </div>
 
@@ -237,44 +255,33 @@ export function EditorialDispatch() {
               Every Sunday monograph synthesizes deep research spanning architectural theory, computational physics, gastronomy, macroeconomics, and planetary ecology into one coherent journal.
             </p>
 
-            <div className="grid grid-cols-2 gap-2 text-[11px] font-mono text-neutral-300 pt-1">
-              {ATOZ_NICHES.slice(0, 10).map((niche) => (
-                <div key={niche} className="flex items-center gap-1.5 truncate">
-                  <span className="text-amber-400 text-xs">▪</span>
-                  <span className="truncate">{niche}</span>
-                </div>
+            {/* Beautiful Rounded-Full Tags with Tight Tracking */}
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {ATOZ_NICHES.map((niche) => (
+                <span
+                  key={niche}
+                  className="inline-flex items-center px-3 py-1 rounded-full text-xs font-sans font-medium tracking-tight bg-white/[0.05] hover:bg-white/[0.12] border border-white/10 hover:border-amber-400/40 text-neutral-300 hover:text-white transition-all cursor-default"
+                >
+                  {niche}
+                </span>
               ))}
             </div>
 
-            <div className="border-t border-neutral-800 pt-3 flex items-center justify-between text-[11px] font-mono text-neutral-400">
-              <span>ISSN 2841-9032</span>
+            <div className="border-t border-neutral-800 pt-3 flex items-center justify-between text-xs font-sans tracking-tight text-neutral-400">
+              <span className="font-mono text-[11px]">ISSN 2841-9032</span>
               <span className="text-white font-semibold">Volume 03 // 2026</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* 2. Full-Width Niche Photography Collage Showcase (Properly Shown Images, No Dark Scrim, Strictly Rounded-None) */}
+      {/* 2. Full-Width 12-Tile Visual Collage Grid (Section Bar Completely Removed) */}
       <div className="border-t border-neutral-800 bg-black">
-        {/* Collage Banner Masthead */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-3 text-xs font-mono border-b border-neutral-800">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 bg-amber-400 inline-block"></span>
-            <span className="uppercase tracking-widest text-white font-bold">
-              Visual Compendium // All Publication Niches (A to Z)
-            </span>
-          </div>
-          <span className="text-neutral-400 uppercase tracking-wider text-[11px]">
-            High-Definition Field Photography • 12 Active Pillars
-          </span>
-        </div>
-
-        {/* 12-Tile Edge-to-Edge Visual Collage Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full">
           {NICHE_COLLAGE.map((item) => (
             <div
               key={item.tag}
-              className="group relative aspect-[4/3] sm:aspect-[3/4] md:aspect-[4/3] lg:aspect-[16/11] overflow-hidden border-b sm:border-b-0 border-r border-neutral-800/80 bg-neutral-900 rounded-none select-none cursor-pointer"
+              className="group relative aspect-[4/3] sm:aspect-[3/4] md:aspect-[4/3] lg:aspect-[16/11] overflow-hidden border-b sm:border-b-0 border-r border-neutral-800/80 bg-neutral-900 select-none cursor-pointer"
             >
               {/* Vibrant Full-Color High-Res Photography */}
               <img
@@ -294,18 +301,20 @@ export function EditorialDispatch() {
               {/* Gentle gradient at bottom only to guarantee text contrast without darkening the photo */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-85 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none" />
 
-              {/* Top-Right Index Pill */}
+              {/* Top-Right Beautiful Rounded-Full Index Pill */}
               <div className="absolute top-2.5 end-2.5 z-10">
-                <span className="font-mono text-[9px] uppercase tracking-wider text-white bg-black/80 px-1.5 py-0.5 border border-white/20 rounded-none backdrop-blur-xs">
+                <span className="inline-flex items-center font-sans font-semibold text-[10px] uppercase tracking-tight text-white bg-black/75 px-2.5 py-0.5 border border-white/20 rounded-full backdrop-blur-md">
                   {item.tag}
                 </span>
               </div>
 
-              {/* Bottom Card Typography */}
-              <div className="absolute bottom-0 inset-x-0 p-3 sm:p-3.5 z-10 space-y-0.5">
-                <span className="block font-mono text-[9px] uppercase tracking-widest text-amber-300 font-bold">
-                  {item.index} // NICHE
-                </span>
+              {/* Bottom Card Typography with Beautiful Rounded-Full Tag */}
+              <div className="absolute bottom-0 inset-x-0 p-3 sm:p-3.5 z-10 space-y-1">
+                <div>
+                  <span className="inline-flex items-center font-sans font-bold text-[9px] uppercase tracking-tight text-amber-300 bg-amber-400/15 border border-amber-400/30 px-2 py-0.5 rounded-full">
+                    {item.index} // NICHE
+                  </span>
+                </div>
                 <h3 className="font-display font-bold text-xs sm:text-sm text-white tracking-tight leading-tight group-hover:text-amber-200 transition-colors line-clamp-1">
                   {item.niche}
                 </h3>
@@ -315,7 +324,7 @@ export function EditorialDispatch() {
               </div>
 
               {/* Hover Highlight Frame */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-amber-400/50 pointer-events-none transition-colors duration-300 rounded-none" />
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-amber-400/50 pointer-events-none transition-colors duration-300" />
             </div>
           ))}
         </div>
