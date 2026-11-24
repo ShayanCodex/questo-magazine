@@ -8,7 +8,6 @@ import {
   FolderIcon,
   TagIcon,
   DocumentTextIcon,
-  ArrowLeftIcon,
   ArrowRightIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
@@ -19,6 +18,7 @@ import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ArticleList } from '../components/ArticleList';
+import { Pagination } from '../components/Pagination';
 import { cn } from '../lib/utils';
 import {
   CATEGORIES,
@@ -753,57 +753,16 @@ export function Articles() {
           <>
             <ArticleList articles={paginatedArticles} />
 
-            {/* Standard Numbered Pagination Controls (10 cards per page) */}
-            {totalPages > 1 && (
-              <div className="pt-8 border-t border-editorial-border flex flex-col sm:flex-row items-center justify-between gap-4">
-                <span className="text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
-                  Showing {(safeCurrentPage - 1) * ARTICLES_PER_PAGE + 1}–
-                  {Math.min(safeCurrentPage * ARTICLES_PER_PAGE, filteredArticles.length)} of{' '}
-                  {filteredArticles.length} {t.articlesFound} (Page {safeCurrentPage} of {totalPages})
-                </span>
-
-                <div className="flex items-center gap-1.5 text-xs font-sans">
-                  {/* Previous Page Button */}
-                  <button
-                    type="button"
-                    onClick={() => handlePageChange(safeCurrentPage - 1)}
-                    disabled={safeCurrentPage === 1}
-                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
-                  >
-                    <ArrowLeftIcon className="h-3.5 w-3.5 rtl:rotate-180" />
-                    <span>{t.prevPage || (isRtl ? 'التالي' : 'Previous')}</span>
-                  </button>
-
-                  {/* Page Numbers */}
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-                    <button
-                      key={pageNum}
-                      type="button"
-                      onClick={() => handlePageChange(pageNum)}
-                      className={cn(
-                        'w-8 h-8 rounded-full text-xs font-sans font-medium transition-colors cursor-pointer flex items-center justify-center',
-                        pageNum === safeCurrentPage
-                          ? 'bg-editorial-text text-editorial-bg font-bold shadow-xs'
-                          : 'border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text bg-editorial-surface'
-                      )}
-                    >
-                      {pageNum}
-                    </button>
-                  ))}
-
-                  {/* Next Page Button */}
-                  <button
-                    type="button"
-                    onClick={() => handlePageChange(safeCurrentPage + 1)}
-                    disabled={safeCurrentPage === totalPages}
-                    className="px-4 py-1.5 rounded-full border border-editorial-border text-editorial-muted hover:text-editorial-text hover:border-editorial-text disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer flex items-center gap-1.5 font-sans text-xs font-medium"
-                  >
-                    <span>{t.nextPage || (isRtl ? 'السابق' : 'Next')}</span>
-                    <ArrowRightIcon className="h-3.5 w-3.5 rtl:rotate-180" />
-                  </button>
-                </div>
-              </div>
-            )}
+            {/* Numbered Pagination with Smart Ellipsis Window & Mobile Responsive Truncation */}
+            <Pagination
+              currentPage={safeCurrentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+              totalItems={filteredArticles.length}
+              pageSize={ARTICLES_PER_PAGE}
+              itemsLabel={t.articlesFound}
+              isRtl={isRtl}
+            />
           </>
         )}
       </section>
