@@ -17,6 +17,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { BookCover } from '../components/BookCover';
 import { NotFound } from './NotFound';
 import { OriginalPdfReader } from '../components/OriginalPdfReader';
+import { AdSlot } from '../components/ads/AdSlot';
 import { getSafePdfUrl, isLocalCorePdf } from '../lib/ebook-reader';
 import { cn } from '../lib/utils';
 import ebooksMasterData from '../data/ebooks.json';
@@ -314,6 +315,9 @@ export function EBookDetail() {
             onToggleFullscreen={() => setEmbedFullscreen((prev) => !prev)}
           />
         </section>
+
+        {/* AdSense In-Content Placement (Zero-CLS) */}
+        <AdSlot slotType="in-content" />
 
         {/* Public Domain & Licensing Integrity Statement */}
         <section className="p-6 rounded-xl border border-editorial-border bg-editorial-surface space-y-3">

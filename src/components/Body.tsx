@@ -1,5 +1,7 @@
 import type { ContentBlock } from '../lib/types';
 import { slugifyHeading } from '../lib/content';
+import { useLanguage } from '../lib/lang-context';
+import { linkifyParagraph } from '../lib/internal-linking';
 import { LazyImage } from './LazyImage';
 
 export interface BodyProps {
@@ -7,6 +9,9 @@ export interface BodyProps {
 }
 
 export function Body({ blocks }: BodyProps) {
+  const { localePath } = useLanguage();
+  const linkedTopics = new Set<string>();
+
   if (!blocks || blocks.length === 0) {
     return null;
   }
@@ -18,7 +23,7 @@ export function Body({ blocks }: BodyProps) {
           case 'p':
             return (
               <p key={index} className="text-editorial-text leading-[1.75]">
-                {block.text}
+                {linkifyParagraph(block.text || '', linkedTopics, localePath)}
               </p>
             );
 

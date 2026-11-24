@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import type { ArticleData } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
@@ -6,6 +7,7 @@ import { getArticleCategory, getCategoryShortName, getCategoryName, getSubcatego
 import { ArticleViewCount } from './ArticleViewCount';
 import { BookmarkButton } from './BookmarkButton';
 import { LazyImage } from './LazyImage';
+import { AdSlot } from './ads/AdSlot';
 import { cn } from '../lib/utils';
 
 export interface ArticleListProps {
@@ -34,7 +36,7 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
         className
       )}
     >
-      {articles.map((article) => {
+      {articles.map((article, index) => {
         const articlePath = localePath(`/articles/${article.slug}`);
         const formattedDate = formatDate(article.date, language.code);
         const readingTime = calculateReadingTime(article, t.minRead);
@@ -42,10 +44,10 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
         const hasImage = Boolean(article.image);
 
         return (
-          <article
-            key={article.slug}
-            className="article-row group/row relative py-8 sm:py-10 transition-opacity"
-          >
+          <Fragment key={article.slug}>
+            <article
+              className="article-row group/row relative py-8 sm:py-10 transition-opacity"
+            >
             {/* The primary link covering the whole row for accessibility & 1-click navigate */}
             <Link
               to={articlePath}
@@ -166,6 +168,14 @@ export function ArticleList({ articles, emptyMessage, className }: ArticleListPr
               )}
             </div>
           </article>
+
+          {/* Zero-CLS Native Feed Ad Slot inserted every 4th article */}
+          {(index + 1) % 4 === 0 && index + 1 < articles.length && (
+            <div className="py-6 border-b border-editorial-border bg-editorial-surface/30">
+              <AdSlot slotType="feed" />
+            </div>
+          )}
+        </Fragment>
         );
       })}
     </div>
