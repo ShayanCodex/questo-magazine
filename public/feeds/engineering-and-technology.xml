@@ -5,7 +5,7 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>Curated dispatches on Engineering &amp; Static Systems</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 18:21:08 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 19:32:14 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feeds/engineering-and-technology.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[The Aerodynamics of eVTOL Flight]]></title>
@@ -140,6 +140,546 @@
       <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[A deep engineering dive into functional programming principles, pure functions, deterministic state models, and why immutable software pipelines eliminate whole categories of production failures.]]></description>
       <author><![CDATA[Elena Vance]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Autonomous Port Cranes: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/autonomous-port-cranes-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/autonomous-port-cranes-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Autonomous Port Cranes in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Autonomous Port Cranes: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/autonomous-port-cranes-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/autonomous-port-cranes-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Autonomous Port Cranes in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Autonomous Port Cranes: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/autonomous-port-cranes-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/autonomous-port-cranes-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Autonomous Port Cranes in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Autonomous Port Cranes: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/autonomous-port-cranes-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/autonomous-port-cranes-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Autonomous Port Cranes in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Autonomous Port Cranes: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/autonomous-port-cranes-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/autonomous-port-cranes-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Autonomous Port Cranes in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Cable-Stayed Bridge Dampers: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Cable-Stayed Bridge Dampers in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Cable-Stayed Bridge Dampers: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Cable-Stayed Bridge Dampers in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Cable-Stayed Bridge Dampers: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Cable-Stayed Bridge Dampers in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Cable-Stayed Bridge Dampers: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Cable-Stayed Bridge Dampers in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Cable-Stayed Bridge Dampers: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cable-stayed-bridge-dampers-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Cable-Stayed Bridge Dampers in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Geared Turbofan Acoustics: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Geared Turbofan Acoustics in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Geared Turbofan Acoustics: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Geared Turbofan Acoustics in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Geared Turbofan Acoustics: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Geared Turbofan Acoustics in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Geared Turbofan Acoustics: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Geared Turbofan Acoustics in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Geared Turbofan Acoustics: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/geared-turbofan-acoustics-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Geared Turbofan Acoustics in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Grid-Scale Iron-Air Batteries: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Grid-Scale Iron-Air Batteries in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Grid-Scale Iron-Air Batteries: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Grid-Scale Iron-Air Batteries in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Grid-Scale Iron-Air Batteries: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Grid-Scale Iron-Air Batteries in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Grid-Scale Iron-Air Batteries: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Grid-Scale Iron-Air Batteries in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Grid-Scale Iron-Air Batteries: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/grid-scale-iron-air-batteries-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Grid-Scale Iron-Air Batteries in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[High-Speed Rail Pantographs: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of High-Speed Rail Pantographs in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[High-Speed Rail Pantographs: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of High-Speed Rail Pantographs in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[High-Speed Rail Pantographs: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of High-Speed Rail Pantographs in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[High-Speed Rail Pantographs: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of High-Speed Rail Pantographs in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[High-Speed Rail Pantographs: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/high-speed-rail-pantographs-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of High-Speed Rail Pantographs in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[HVDC Subsea Interconnectors: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of HVDC Subsea Interconnectors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[HVDC Subsea Interconnectors: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of HVDC Subsea Interconnectors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[HVDC Subsea Interconnectors: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of HVDC Subsea Interconnectors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[HVDC Subsea Interconnectors: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of HVDC Subsea Interconnectors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[HVDC Subsea Interconnectors: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/hvdc-subsea-interconnectors-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of HVDC Subsea Interconnectors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Laser Powder Bed Fusion: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Laser Powder Bed Fusion in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Laser Powder Bed Fusion: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Laser Powder Bed Fusion in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Laser Powder Bed Fusion: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Laser Powder Bed Fusion in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Laser Powder Bed Fusion: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Laser Powder Bed Fusion in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Laser Powder Bed Fusion: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/laser-powder-bed-fusion-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Laser Powder Bed Fusion in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Offshore Floating Wind: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/offshore-floating-wind-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/offshore-floating-wind-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Offshore Floating Wind in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Offshore Floating Wind: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/offshore-floating-wind-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/offshore-floating-wind-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Offshore Floating Wind in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Offshore Floating Wind: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/offshore-floating-wind-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/offshore-floating-wind-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Offshore Floating Wind in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Offshore Floating Wind: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/offshore-floating-wind-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/offshore-floating-wind-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Offshore Floating Wind in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Offshore Floating Wind: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/offshore-floating-wind-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/offshore-floating-wind-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Offshore Floating Wind in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Precision CNC Metrology: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/precision-cnc-metrology-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/precision-cnc-metrology-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Precision CNC Metrology in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Precision CNC Metrology: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/precision-cnc-metrology-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/precision-cnc-metrology-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Precision CNC Metrology in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Precision CNC Metrology: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/precision-cnc-metrology-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/precision-cnc-metrology-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Precision CNC Metrology in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Precision CNC Metrology: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/precision-cnc-metrology-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/precision-cnc-metrology-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Precision CNC Metrology in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Precision CNC Metrology: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/precision-cnc-metrology-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/precision-cnc-metrology-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Precision CNC Metrology in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Pumped Hydro Energy Storage: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Pumped Hydro Energy Storage in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Pumped Hydro Energy Storage: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Pumped Hydro Energy Storage in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Pumped Hydro Energy Storage: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Pumped Hydro Energy Storage in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Pumped Hydro Energy Storage: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Pumped Hydro Energy Storage in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Pumped Hydro Energy Storage: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/pumped-hydro-energy-storage-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Pumped Hydro Energy Storage in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Regenerative Braking Systems: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/regenerative-braking-systems-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/regenerative-braking-systems-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Regenerative Braking Systems in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Regenerative Braking Systems: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/regenerative-braking-systems-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/regenerative-braking-systems-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Regenerative Braking Systems in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Regenerative Braking Systems: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/regenerative-braking-systems-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/regenerative-braking-systems-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Regenerative Braking Systems in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Regenerative Braking Systems: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/regenerative-braking-systems-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/regenerative-braking-systems-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Regenerative Braking Systems in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Regenerative Braking Systems: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/regenerative-braking-systems-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/regenerative-braking-systems-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Regenerative Braking Systems in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Small Modular Nuclear Reactors: Failure Mode Analysis]]></title>
+      <link>https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-failure-mode-analysis</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-failure-mode-analysis</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical failure mode analysis of Small Modular Nuclear Reactors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Small Modular Nuclear Reactors: Field Reliability Report]]></title>
+      <link>https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-field-reliability-report</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-field-reliability-report</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical field reliability report of Small Modular Nuclear Reactors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Small Modular Nuclear Reactors: Mechanical Breakdown]]></title>
+      <link>https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-mechanical-breakdown</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-mechanical-breakdown</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical mechanical breakdown of Small Modular Nuclear Reactors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Small Modular Nuclear Reactors: Scaling Economics]]></title>
+      <link>https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-scaling-economics</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-scaling-economics</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical scaling economics of Small Modular Nuclear Reactors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Hiroshi Tanaka]]></author>
+      <category>engineering-and-technology</category>
+    </item>
+    <item>
+      <title><![CDATA[Small Modular Nuclear Reactors: Thermodynamic Limits]]></title>
+      <link>https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-thermodynamic-limits</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/small-modular-nuclear-reactors-thermodynamic-limits</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analytical thermodynamic limits of Small Modular Nuclear Reactors in engineering and technology, examining practical trade-offs, measurable benchmarks, and long-term impact.]]></description>
+      <author><![CDATA[Tariq Mahmood]]></author>
       <category>engineering-and-technology</category>
     </item>
   </channel>
