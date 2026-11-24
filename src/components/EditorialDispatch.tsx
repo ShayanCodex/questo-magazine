@@ -177,7 +177,7 @@ export function EditorialDispatch() {
         </div>
 
         {/* Foreground Content Container (Centered Luxury Presentation) */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-20 sm:py-28 space-y-8">
+        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-14 sm:py-28 space-y-6 sm:space-y-8">
           {/* Beautiful Rounded-Full Tags with Tight Tracking & Blur Borders (No Yellow) */}
           <div className="flex flex-wrap items-center justify-center gap-2.5">
             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-white/[0.08] hover:bg-white/[0.14] border border-white/20 text-xs font-sans font-medium tracking-tight text-white rounded-full backdrop-blur-md transition-all shadow-xs">
@@ -205,35 +205,37 @@ export function EditorialDispatch() {
             {t.newsletterSubtitle}
           </p>
 
-          {/* Awwwards-Style Floating Luxury Input Capsule (Monochrome, Frosted Glass, Blur Border, No Yellow) */}
+          {/* Awwwards-Style Floating Luxury Input Capsule (Responsive Stack on Mobile, Unified Pill on Desktop) */}
           <div className="pt-2 max-w-xl mx-auto">
             {submitted ? (
-              <div className="p-4 sm:p-5 bg-emerald-950/80 border border-emerald-400/60 text-emerald-100 flex items-center justify-between gap-3 text-sm font-sans font-medium tracking-tight rounded-full shadow-[0_0_30px_rgba(16,185,129,0.25)] backdrop-blur-xl">
-                <div className="flex items-center gap-3">
+              <div className="p-4 sm:p-5 bg-emerald-950/80 border border-emerald-400/60 text-emerald-100 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-3 text-sm font-sans font-medium tracking-tight rounded-2xl sm:rounded-full shadow-[0_0_30px_rgba(16,185,129,0.25)] backdrop-blur-xl text-center sm:text-left">
+                <div className="flex items-center gap-2.5 sm:gap-3">
                   <CheckCircleIcon className="h-5 w-5 shrink-0 text-emerald-400" />
                   <span>{t.newsletterSuccess}</span>
                 </div>
-                <span className="text-xs font-sans text-emerald-300/80 font-normal">Active Reader</span>
+                <span className="text-xs font-sans text-emerald-300/80 font-normal shrink-0">Active Reader</span>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="relative group">
                 {/* Ambient Backlight Glow on Hover / Focus */}
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-white/10 via-white/20 to-white/10 blur-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                <div className="absolute -inset-1 rounded-3xl sm:rounded-full bg-gradient-to-r from-white/10 via-white/20 to-white/10 blur-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                 {/* Awwwards Unified Glassmorphic Capsule */}
-                <div className="relative flex items-center bg-neutral-950/85 backdrop-blur-2xl border border-white/25 group-hover:border-white/45 focus-within:border-white/70 rounded-full p-1.5 sm:p-2 shadow-[0_0_50px_rgba(0,0,0,0.9),0_0_20px_rgba(255,255,255,0.06)] focus-within:shadow-[0_0_35px_rgba(255,255,255,0.14)] transition-all duration-300">
-                  <EnvelopeIcon className="h-5 w-5 text-neutral-400 group-focus-within:text-white ms-3 sm:ms-4 shrink-0 transition-colors duration-300" />
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder={t.newsletterPlaceholder}
-                    required
-                    className="w-full bg-transparent border-0 outline-none focus:outline-none focus:ring-0 text-white font-sans text-sm sm:text-base placeholder:text-neutral-400 tracking-tight px-3 py-2 sm:py-2.5 selection:bg-white selection:text-black"
-                  />
+                <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-0 bg-neutral-950/85 backdrop-blur-2xl border border-white/25 group-hover:border-white/45 focus-within:border-white/70 rounded-2xl sm:rounded-full p-2 shadow-[0_0_50px_rgba(0,0,0,0.9),0_0_20px_rgba(255,255,255,0.06)] focus-within:shadow-[0_0_35px_rgba(255,255,255,0.14)] transition-all duration-300">
+                  <div className="flex items-center flex-1 min-w-0">
+                    <EnvelopeIcon className="h-5 w-5 text-neutral-400 group-focus-within:text-white ms-2.5 sm:ms-4 shrink-0 transition-colors duration-300" />
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder={t.newsletterPlaceholder}
+                      required
+                      className="w-full min-w-0 bg-transparent border-0 outline-none focus:outline-none focus:ring-0 text-white font-sans text-sm sm:text-base placeholder:text-neutral-400 tracking-tight px-3 py-2.5 selection:bg-white selection:text-black"
+                    />
+                  </div>
                   <button
                     type="submit"
-                    className="rounded-full px-5 sm:px-7 py-3 sm:py-3.5 bg-white text-neutral-950 font-sans font-bold text-xs uppercase tracking-tight hover:bg-neutral-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-2 group/btn shadow-[0_4px_25px_rgba(255,255,255,0.22)] shrink-0 cursor-pointer"
+                    className="w-full sm:w-auto justify-center rounded-xl sm:rounded-full px-5 sm:px-7 py-3 sm:py-3.5 bg-white text-neutral-950 font-sans font-bold text-xs uppercase tracking-tight hover:bg-neutral-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-2 group/btn shadow-[0_4px_25px_rgba(255,255,255,0.22)] shrink-0 cursor-pointer"
                   >
                     <span>{t.newsletterButton}</span>
                     <ArrowRightIcon className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-1 rtl:rotate-180 rtl:group-hover/btn:-translate-x-1" />
