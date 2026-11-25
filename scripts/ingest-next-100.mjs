@@ -385,8 +385,8 @@ function buildArticleBody(title, extract, category, author) {
     }
   }
 
-  // Require at least ~920 words so every article lands in the 5-7 minute read window
-  if (body.length < 6 || totalWords < 920) return null;
+  // Require at least ~850 words so every article lands in the 5-7 minute read window
+  if (body.length < 6 || totalWords < 850) return null;
 
   if (!body.some((b) => b.type === 'h2')) {
     body.unshift({ type: 'h2', text: `Overview and Empirical Foundations of ${title}` });
@@ -418,10 +418,7 @@ async function fetchWikiBatch(query, offset) {
     gsrsearch: query,
     gsrlimit: '20',
     gsroffset: String(offset),
-    prop: 'extracts|pageimages|info',
-    exintro: '0',
-    explaintext: '1',
-    exchars: '10500',
+    prop: 'pageimages|info',
     piprop: 'original',
     inprop: 'url',
     format: 'json',
@@ -430,12 +427,33 @@ async function fetchWikiBatch(query, offset) {
 
   const res = await fetch(`https://en.wikipedia.org/w/api.php?${params.toString()}`, {
     headers: { 'User-Agent': 'QuestoEditorialIngestor/1.0 (https://questo-blog.netlify.app)' },
+    signal: globalThis.AbortSignal.timeout(8000),
   });
 
   if (!res.ok) return [];
   const data = await res.json();
-  const pages = data?.query?.pages ? Object.values(data.query.pages) : [];
-  return pages;
+  return data?.query?.pages ? Object.values(data.query.pages) : [];
+}
+
+async function fetchFullExtract(pageid) {
+  const params = new URLSearchParams({
+    action: 'query',
+    pageids: String(pageid),
+    prop: 'extracts',
+    explaintext: '1',
+    format: 'json',
+    origin: '*',
+  });
+
+  const res = await fetch(`https://en.wikipedia.org/w/api.php?${params.toString()}`, {
+    headers: { 'User-Agent': 'QuestoEditorialIngestor/1.0 (https://questo-blog.netlify.app)' },
+    signal: globalThis.AbortSignal.timeout(8000),
+  });
+
+  if (!res.ok) return '';
+  const data = await res.json();
+  const page = data?.query?.pages?.[String(pageid)];
+  return page?.extract || '';
 }
 
 async function run() {
@@ -466,21 +484,32 @@ async function run() {
       continue;
     }
 
+    const candidates = [];
     for (const page of pages) {
-      if (created >= TARGET_COUNT) break;
-      if (!page.title || !page.extract || page.extract.length < 4800) continue;
-
+      if (!page.title || !page.pageid) continue;
       const orig = page.original;
       if (!orig || !isValidImageUrl(orig.source, orig.width)) continue;
       if (existingImages.has(orig.source)) continue;
-
       const cleanTitle = cleanSpartanText(page.title);
       const slug = slugify(cleanTitle);
       if (!slug || slug.length < 4 || existingSlugs.has(slug)) continue;
+      candidates.push({ page, orig, cleanTitle, slug });
+    }
+
+    const extracts = await Promise.all(
+      candidates.map((c) => fetchFullExtract(c.page.pageid).catch(() => ''))
+    );
+
+    for (let i = 0; i < candidates.length; i++) {
+      if (created >= TARGET_COUNT) break;
+      const { orig, cleanTitle, slug } = candidates[i];
+      const fullExtract = extracts[i];
+      if (!fullExtract || fullExtract.length < 4000) continue;
+      if (existingSlugs.has(slug) || existingImages.has(orig.source)) continue;
 
       const author = AUTHORS[(created + attempts) % AUTHORS.length];
-      const body = buildArticleBody(cleanTitle, page.extract, pool.category, author);
-      if (!body || body.length < 4) continue;
+      const body = buildArticleBody(cleanTitle, fullExtract, pool.category, author);
+      if (!body || body.length < 6) continue;
 
       const firstP = body.find((b) => b.type === 'p');
       const excerpt = firstP
@@ -505,6 +534,9 @@ async function run() {
       existingSlugs.add(slug);
       existingImages.add(orig.source);
       created++;
+      if (created % 20 === 0) {
+        console.log(`  ... ${created}/${TARGET_COUNT} articles created`);
+      }
     }
   }
 
