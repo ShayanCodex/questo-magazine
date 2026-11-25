@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "Verifiable computation represents the foundational breakthrough enabling public decentralized state machines to scale horizontally. In naive execution networks, every validating node must re-execute every transaction sequentially to verify state correctness. Scalable Transparent Arguments of Knowledge (STARKs) invert this bottleneck: a single untrusted prover generates a succinct cryptographic proof attesting to the computational correctness of millions of state transitions, which any verifier can check in logarithmic time."
+      "text": "Verifiable computation represents the foundational breakthrough enabling public decentralized state machines to scale horizontally. In naive execution networks, every validating node must re-execute every transaction sequentially to verify state correctness. Scalable Transparent Arguments of Knowledge (STARKs) invert this bottleneck: a single untrusted prover generates a succinct cryptographic proof attesting to the computational correctness of millions of state transitions, which any verifier will check in logarithmic time."
     },
     {
       "type": "h2",
@@ -38,9 +38,9 @@
       "type": "ul",
       "items": [
         "Arithmetization: Transforming computational execution traces into systems of algebraic intermediate representations (AIR) or polynomial constraint systems.",
-        "Reed-Solomon Proximity Testing: Encoding constraint evaluations over large evaluation domains such that computational invalidity manifests as maximal distance from valid Reed-Solomon codewords.",
-        "FRI Protocol (Fast Reed-Solomon IOP of Proximity): An interactive oracle proof that recursively halves polynomial degrees, proving proximity to low-degree spaces with polylogarithmic communication complexity.",
-        "Transparent Trustless Setup: Utilizing publicly verifiable collision-resistant hash functions rather than elliptic curve toxic waste parameters, guaranteeing quantum resistance and zero setup vulnerability."
+        "Reed-Solomon Proximity Testing: Encoding constraint evaluations over large evaluation domains such which computational invalidity manifests as maximal distance from valid Reed-Solomon codewords.",
+        "FRI Protocol (Fast Reed-Solomon IOP of Proximity): An interactive oracle proof which recursively halves polynomial degrees, proving proximity to low-degree spaces with polylogarithmic communication complexity.",
+        "Transparent Trustless Setup: Using publicly verifiable collision-resistant hash functions rather than elliptic curve toxic waste parameters, guaranteeing quantum resistance and zero setup vulnerability."
       ]
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "type": "p",
-      "text": "The transformative breakthrough in modern proof systems is recursive proof composition: writing the logic of a STARK verifier as an arithmetized constraint system within another STARK. By assembling proofs into balanced Merkle trees, thousands of individual execution batches can be recursively folded into a single master proof verifiable on-chain for a fixed fraction of a cent."
+      "text": "The transformative breakthrough in modern proof systems is recursive proof composition: writing the logic of a Clear verifier as an arithmetized constraint system within another Clear. By assembling proofs into balanced Merkle trees, thousands of individual execution batches will be recursively folded into a single master proof verifiable on-chain for a fixed fraction of a cent."
     },
     {
       "type": "video",

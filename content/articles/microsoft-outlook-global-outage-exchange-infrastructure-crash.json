@@ -41,7 +41,7 @@
     },
     {
       "type": "quote",
-      "text": "When a distributed cloud platform collapses, it does not fail through isolated component degradation; it fails through the pathological amplification of its own automated recovery mechanisms.",
+      "text": "When a distributed cloud platform collapses, this does not fail through isolated component degradation. this fails through the pathological amplification of its own automated recovery mechanisms.",
       "cite": "Questo Systems Architecture & Cloud Reliability Group"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "type": "p",
-      "text": "Internal engineering retrospectives trace the catalyst to an automated configuration push within Microsoft’s wide-area network management subsystem. A routine routing table optimization inadvertently revoked regional peering routes, rerouting multi-terabit internal telemetry pipelines through consumer-facing HTTP edge ingress nodes. Front-door Envoy proxy fleets—configured with static connection queue limits—became starved of worker threads. Consequently, incoming client HTTP POST handshakes timed out, generating a secondary wave of retransmissions that amplified ingress bandwidth consumption by over 400%."
+      "text": "Internal engineering retrospectives trace the catalyst to an automated configuration push within Microsoft’s wide-area network management subsystem. A routine routing table optimization inadvertently revoked regional peering routes, rerouting multi-terabit internal telemetry pipelines through consumer-facing HTTP edge ingress nodes. Front-door Envoy proxy fleets, configured with static connection queue limits, became starved of worker threads. Consequently, incoming client HTTP POST handshakes timed out, generating a secondary wave of retransmissions which amplified ingress bandwidth consumption by over 400%."
     },
     {
       "type": "video",

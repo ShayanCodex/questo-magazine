@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Chemical rocket engines (LOX/Methane or LOX/LH2) are limited by the fundamental bond energy of chemical reactions, topping out at a specific impulse (Isp) of around 450 seconds. Reaching Mars with chemical propulsion requires grueling nine-month transit trajectories that expose astronauts to debilitating deep-space cosmic radiation and muscle atrophy. Nuclear Thermal Propulsion (NTP) shatters this barrier."
+      "text": "Chemical rocket engines (LOX/Methane or LOX/LH2) are limited by the fundamental bond energy of chemical reactions, topping out at a specific impulse (Isp) of around 450 seconds. Reaching Mars with chemical propulsion requires grueling nine-month transit trajectories which expose astronauts to debilitating deep-space cosmic radiation and muscle atrophy. Nuclear Thermal Propulsion (NTP) shatters this barrier."
     },
     {
       "type": "h2",
@@ -32,15 +32,15 @@
     {
       "type": "ul",
       "items": [
-        "HALEU Fission Reactor: Utilizing High-Assay Low-Enriched Uranium ceramic-metallic (cermet) fuel elements capable of operating at 2,700 Kelvin.",
+        "HALEU Fission Reactor: Using High-Assay Low-Enriched Uranium ceramic-metallic (cermet) fuel elements capable of operating at 2,700 Kelvin.",
         "Cryogenic Liquid Hydrogen: Pumping pure low-molecular-weight hydrogen (H2) through the superheated reactor core, generating massive volumetric expansion.",
-        "Specific Impulse Doubling: Achieving an Isp of 900+ seconds—twice the efficiency of the best chemical rocket engines in existence.",
+        "Specific Impulse Doubling: Achieving an Isp of 900+ seconds, twice the efficiency of the best chemical rocket engines in existence.",
         "Transit Time Halving: Cutting human Mars transit windows down to 90-120 days, drastically reducing radiation exposure and life support mass requirements."
       ]
     },
     {
       "type": "quote",
-      "text": "Nuclear thermal propulsion is not an incremental refinement; it is the physics threshold that transforms interplanetary voyages from survival missions into sustainable routes.",
+      "text": "Nuclear thermal propulsion is not an incremental refinement. this is the physics threshold which transforms interplanetary voyages from survival missions into sustainable routes.",
       "cite": "Questo Deep Space Propulsion & Nuclear Engineering Lab"
     },
     {

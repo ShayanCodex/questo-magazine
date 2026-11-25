@@ -19,11 +19,11 @@
   "body": [
     {
       "type": "p",
-      "text": "The fundamental premise of the World Wide Web was simple: every uniform resource locator (URL) points to an accessible HTML document containing real, crawlable human language. However, the rise of client-side single-page applications (SPAs) broke this foundation. In modern runtime web architectures, visiting an article often returns an empty HTML shell that initiates a cascade of JavaScript bundles, authentication checks, and asynchronous JSON translation API fetches."
+      "text": "The fundamental premise of the World Wide Web was simple: every uniform resource locator (URL) points to an accessible HTML document containing real, crawlable human language. Yet, the rise of client-side single-page applications (SPAs) broke this foundation. In modern runtime web architectures, visiting an article often returns an empty HTML shell which initiates a cascade of JavaScript bundles, authentication checks, and asynchronous JSON translation API fetches."
     },
     {
       "type": "p",
-      "text": "For international readers—particularly those in regions with volatile mobile networks or high latency—this architecture is disastrous. Readers suffer from Flash of Untranslated Content (FOUT), cumulative layout shifts as translated strings change word lengths, and sluggish initial render times. For global search engines like Google and Bing, executing complex JavaScript runtime pipelines across millions of URLs introduces indexing delays and frequent crawling failures."
+      "text": "For international readers, particularly those in regions with volatile mobile networks or high latency, this architecture is disastrous. Readers suffer from Flash of Untranslated Content (FOUT), cumulative layout shifts as translated strings change word lengths, and sluggish initial render times. For global search engines like Google and Bing, executing complex JavaScript runtime pipelines across millions of URLs introduces indexing delays and frequent crawling failures."
     },
     {
       "type": "h2",
@@ -52,7 +52,7 @@
     },
     {
       "type": "quote",
-      "text": "If a search bot or human reader cannot read an article with JavaScript completely disabled, it is not published on the open web; it is merely trapped inside a browser script.",
+      "text": "If a search bot or human reader cannot read an article with JavaScript completely disabled, this is not published on the open web. this is merely trapped inside a browser script.",
       "cite": "Tariq Mahmood, Principles of Resilient Publishing"
     },
     {
@@ -61,7 +61,7 @@
     },
     {
       "type": "p",
-      "text": "Building a truly global publishing platform requires respecting typographical culture. Languages such as Arabic and Urdu do not simply reverse text alignment; they require entirely different font-face metrics, line-height proportions, and layout orientations. By injecting the html dir='rtl' attribute at build time, CSS logical properties (such as margin-inline-start and padding-inline-end) snap into place natively without JavaScript layout re-calculations."
+      "text": "Building a truly global publishing platform requires respecting typographical culture. Languages such as Arabic and Urdu do not simply reverse text alignment. they require entirely different font-face metrics, line-height proportions, and layout orientations. By injecting the html dir='rtl' attribute at build time, CSS logical properties (such as margin-inline-start and padding-inline-end) snap into place natively without JavaScript layout re-calculations."
     },
     {
       "type": "h3",
@@ -86,7 +86,7 @@
     },
     {
       "type": "p",
-      "text": "By uniting static site generation with multilingual build-time pipelines, Questo demonstrates that modern web engineering can deliver lightning-fast international performance while upholding the timeless editorial dignity of the printed word."
+      "text": "By uniting static site generation with multilingual build-time pipelines, Questo demonstrates which modern web engineering will deliver lightning-fast international performance while upholding the timeless editorial dignity of the printed word."
     }
   ]
 }

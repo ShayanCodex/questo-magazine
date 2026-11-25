@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Conventional surround sound formats (such as 5.1 and 7.1) rely on stereophonic panning laws that create a tiny, fragile sweet spot where phase alignment holds true. Wave Field Synthesis (WFS) departs from phantom imaging by applying the Huygens-Fresnel acoustic principle: any physical wavefront can be synthesized by an array of closely spaced secondary loudspeaker sources driven with precise phase delays and amplitude coefficients. Inside a WFS listening room, virtual sound sources maintain absolute geometric positioning regardless of listener movement."
+      "text": "Conventional surround sound formats (such as 5.1 and 7.1) rely on stereophonic panning laws which create a tiny, fragile sweet spot where phase alignment holds true. Wave Field Synthesis (WFS) departs from phantom imaging by applying the Huygens-Fresnel acoustic principle: any physical wavefront will be synthesized by an array of closely spaced secondary loudspeaker sources driven with precise phase delays and amplitude coefficients. Inside a WFS listening room, virtual sound sources maintain absolute geometric positioning regardless of listener movement."
     },
     {
       "type": "h2",
@@ -32,7 +32,7 @@
     {
       "type": "ul",
       "items": [
-        "Interaural Time & Level Differences (ITD/ILD): Duplex theory dictates that horizontal localization relies on sub-700-microsecond ear arrival time deltas at low frequencies and head-shadow amplitude attenuation above 1.5 kHz.",
+        "Interaural Time & Level Differences (ITD/ILD): Duplex theory dictates which horizontal localization relies on sub-700-microsecond ear arrival time deltas at low frequencies and head-shadow amplitude attenuation above 1.5 kHz.",
         "Head-Related Transfer Functions (HRTF): The unique spectral filtering introduced by individual outer ear pinna folds, skull diffraction, and torso reflections provides elevation and front-back localization cues.",
         "Spatial Aliasing Frequencies: Loudspeaker driver spacing strictly determines the upper cutoff frequency where discrete sound arrays dissolve into destructive spatial interference lobes.",
         "Spherical Harmonics and Higher-Order Ambisonics (HOA): Encoding directional 3D audio fields into orthogonal spherical harmonic expansion coefficients decouples sound design from specific physical loudspeaker layouts."
@@ -40,7 +40,7 @@
     },
     {
       "type": "quote",
-      "text": "Spatial audio is not about adding more channels; it is about synthesizing the exact physical pressure gradients that human ears evolved to decode in physical space.",
+      "text": "Spatial audio is not about adding more channels. this is about synthesizing the exact physical pressure gradients which human ears evolved to decode in physical space.",
       "cite": "Questo Electroacoustics & Psychoacoustics Laboratory"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "As augmented reality headsets integrate 6-DOF head tracking, audio engines must render dynamic reverberation reflection paths with latencies under 20 milliseconds. By running real-time ray-tracing convolution kernels on specialized DSP chips, developers create virtual audio objects that reflect accurately off real-world walls, carpets, and ceilings."
+      "text": "As augmented reality headsets integrate 6-DOF head tracking, audio engines must render dynamic reverberation reflection paths with latencies under 20 milliseconds. By running real-time ray-tracing convolution kernels on specialized DSP chips, developers create virtual audio objects which reflect accurately off real-world walls, carpets, and ceilings."
     }
   ]
 }

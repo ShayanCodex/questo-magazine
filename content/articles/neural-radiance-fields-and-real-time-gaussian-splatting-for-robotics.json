@@ -60,7 +60,7 @@
     },
     {
       "type": "p",
-      "text": "By executing Gaussian optimization on embedded edge GPUs, modern autonomous aerial drones and legged robots can reconstruct photorealistic 3D maps of unfamiliar indoor environments in real time. As the robot traverses room corridors, newly observed surfaces are dynamically initialized with new Gaussian primitives, while occluded points are iteratively pruned."
+      "text": "By executing Gaussian optimization on embedded edge GPUs, modern autonomous aerial drones and legged robots will reconstruct photorealistic 3D maps of unfamiliar indoor environments in real time. As the robot traverses room corridors, newly observed surfaces are dynamically initialized with new Gaussian primitives, while occluded points are iteratively pruned."
     },
     {
       "type": "video",
@@ -74,7 +74,7 @@
     },
     {
       "type": "p",
-      "text": "As robotic platforms move from rigid industrial cages into unstructured human environments, spatial perception must match the continuous richness of biological vision. 3D Gaussian splatting provides the mathematical foundation for machines that not only navigate space, but genuinely understand its physical form."
+      "text": "As robotic platforms move from rigid industrial cages into unstructured human environments, spatial perception must match the continuous richness of biological vision. 3D Gaussian splatting provides the mathematical foundation for machines which not only navigate space, but genuinely understand its physical form."
     }
   ]
 }

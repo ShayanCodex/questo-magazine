@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "In magnetic confinement fusion, the Lawson criterion dictates that plasma pressure scales with the fourth power of magnetic field strength (B^4). Historically, large tokamaks like ITER required immense building-sized footprints because low-temperature niobium-tin superconductors saturated around 12 Tesla. The advent of Rare-Earth Barium Copper Oxide (REBCO) high-temperature superconducting (HTS) tape allows engineers to generate sustained 20-Tesla fields in compact, factory-assembled coils."
+      "text": "In magnetic confinement fusion, the Lawson criterion dictates which plasma pressure scales with the fourth power of magnetic field strength (B^4). Historically, large tokamaks like ITER required immense building-sized footprints because low-temperature niobium-tin superconductors saturated around 12 Tesla. The advent of Rare-Earth Barium Copper Oxide (REBCO) high-temperature superconducting (HTS) tape allows engineers to generate sustained 20-Tesla fields in compact, factory-assembled coils."
     },
     {
       "type": "h2",
@@ -35,7 +35,7 @@
         "REBCO Tape Epitaxy: Thin-film ceramic superconductors deposited onto flexible hastelloy steel ribbons, conducting over 500 amperes per square millimeter at 20 Kelvin.",
         "Tokamak Plasma Volumetric Scaling: Quadrupling magnetic field strength enables a forty-fold reduction in reactor core volume while achieving the exact same fusion power output.",
         "Magnetohydrodynamic (MHD) Stability: Suppressing edge-localized modes (ELMs) and neoclassical tearing instabilities through real-time resonant magnetic perturbation coils.",
-        "Tritium Breeding Blankets: Utilizing liquid lithium-lead eutectic blankets to capture 14.1 MeV fusion neutrons, breeding tritium fuel while extracting thermal energy for steam turbines."
+        "Tritium Breeding Blankets: Using liquid lithium-lead eutectic blankets to capture 14.1 MeV fusion neutrons, breeding tritium fuel while extracting thermal energy for steam turbines."
       ]
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "At 20 Tesla, magnetic Lorentz forces exert structural pressures comparable to the deepest trenches of the ocean. Superconducting coils must be encased in cryogenic stainless-steel casings and monitored with fiber-optic Bragg sensors to detect local thermal runaway (quenches) within milliseconds before magnet self-destruction can occur."
+      "text": "At 20 Tesla, magnetic Lorentz forces exert structural pressures comparable to the deepest trenches of the ocean. Superconducting coils must be encased in cryogenic stainless-steel casings and monitored with fiber-optic Bragg sensors to detect local thermal runaway (quenches) within milliseconds before magnet self-destruction will occur."
     },
     {
       "type": "video",

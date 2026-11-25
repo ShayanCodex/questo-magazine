@@ -19,7 +19,7 @@
   "body": [
     {
       "type": "p",
-      "text": "Building a frontier generative foundation model from first principles is an exercise in applied numerical optimization, distributed systems engineering, and statistical language modeling. At its core, a generative pretrained transformer does not understand semantics in a human sense; it estimates a high-dimensional joint probability distribution over discrete vocabulary tokens by minimizing autoregressive cross-entropy loss across trillions of training bytes."
+      "text": "Building a frontier generative foundation model from first principles is an exercise in applied numerical optimization, distributed systems engineering, and statistical language modeling. At its core, a generative pretrained transformer does not understand semantics in a human sense. this estimates a high-dimensional joint probability distribution over discrete vocabulary tokens by minimizing autoregressive cross-entropy loss across trillions of training bytes."
     },
     {
       "type": "p",
@@ -37,7 +37,7 @@
     },
     {
       "type": "p",
-      "text": "Raw natural language cannot be processed directly by linear matrix operations. It must first be discretized into integer token identifiers via Byte-Pair Encoding (BPE):"
+      "text": "Raw natural language cannot be processed directly by linear matrix operations. This must first be discretized into integer token identifiers via Byte-Pair Encoding (BPE):"
     },
     {
       "type": "code",
@@ -52,7 +52,7 @@
     },
     {
       "type": "p",
-      "text": "Targeting an optimal vocabulary size requires navigating an engineering trade-off: larger vocabularies compress sequence length and lower inference latency, but expand the memory footprint of the input embedding matrix and final output unembedding projection layer."
+      "text": "Targeting an optimal vocabulary size requires handling an engineering trade-off: larger vocabularies compress sequence length and lower inference latency, but expand the memory footprint of the input embedding matrix and final output unembedding projection layer."
     },
     {
       "type": "quote",
@@ -92,7 +92,7 @@
     },
     {
       "type": "p",
-      "text": "A raw pretrained base model is merely an uninhibited document completer. To convert it into an effective assistant, engineers fine-tune the model on curated multi-turn conversational transcripts using cross-entropy loss with masked input prompts."
+      "text": "A raw pretrained base model is merely an uninhibited document completer. To convert this into an effective assistant, engineers fine-tune the model on curated multi-turn conversational transcripts using cross-entropy loss with masked input prompts."
     },
     {
       "type": "p",
@@ -106,7 +106,7 @@
       "type": "ul",
       "items": [
         "Data Quality Dominance: High-quality deduplicated synthetic reasoning datasets outperform raw scraped web text by an order of magnitude in token efficiency.",
-        "Precision Formats: Utilize FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
+        "Precision Formats: Use FP8 and BF16 mixed-precision training routines with dynamic loss scaling to double tensor throughput while preventing underflow.",
         "Learning Rate Annealing: Employ cosine decay schedules with warm-up periods to prevent gradient divergence during initial optimization epochs."
       ]
     }

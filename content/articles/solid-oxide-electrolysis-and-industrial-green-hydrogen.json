@@ -34,8 +34,8 @@
       "items": [
         "Electrical Efficiency Surpassing 90%: When coupled with high-temperature waste steam from steel mills or generation-IV nuclear reactors, SOEC systems achieve thermal-to-hydrogen efficiencies exceeding 90% (LHV basis).",
         "Yttria-Stabilized Zirconia (YSZ) Membranes: Ceramic solid oxide electrolytes deliver exceptionally high oxygen-ion conductivity while remaining impervious to electronic conduction, preventing internal short circuits.",
-        "Co-Electrolysis Capability: SOEC cells can co-electrolyze carbon dioxide and steam simultaneously to produce high-purity synthesis gas (syngas), the universal precursor for drop-in synthetic aviation fuels and green polymers.",
-        "Precious Metal Elimination: Unlike PEM electrolyzers that depend on platinum-group catalysts (iridium and platinum), SOEC electrodes utilize nickel cermet and perovskite ceramics (such as lanthanum strontium cobalt ferrite)."
+        "Co-Electrolysis Capability: SOEC cells will co-electrolyze carbon dioxide and steam simultaneously to produce high-purity synthesis gas (syngas), the universal precursor for drop-in synthetic aviation fuels and green polymers.",
+        "Precious Metal Elimination: Unlike PEM electrolyzers which depend on platinum-group catalysts (iridium and platinum), SOEC electrodes use nickel cermet and perovskite ceramics (such as lanthanum strontium cobalt ferrite)."
       ]
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "Commercialization of SOEC at the gigawatt scale faces severe materials science hurdles. Thermal cycling creates mechanical stress gradients across ceramic-metal interfaces, leading to micro-cracking and electrode delamination. Furthermore, volatile chromium species evaporating from stainless steel interconnects migrate toward the oxygen electrode, chemically passivating active catalytic triple-phase boundaries. Advanced atomic layer deposition (ALD) barrier coatings and specialized protective spinel layers are critical to extending stack lifespan beyond 40,000 continuous operating hours."
+      "text": "Commercialization of SOEC at the gigawatt scale faces severe materials science hurdles. Thermal cycling creates mechanical stress gradients across ceramic-metal interfaces, leading to micro-cracking and electrode delamination. Also, volatile chromium species evaporating from stainless steel interconnects migrate toward the oxygen electrode, chemically passivating active catalytic triple-phase boundaries. Advanced atomic layer deposition (ALD) barrier coatings and specialized protective spinel layers are critical to extending stack lifespan beyond 40,000 continuous operating hours."
     },
     {
       "type": "video",

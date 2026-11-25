@@ -26,7 +26,7 @@
     },
     {
       "type": "p",
-      "text": "The OpenType Font Variations specification dissolved these historical boundaries. A single variable font file contains continuous multi-dimensional axes—weight (wght), width (wdth), slant (slnt), and crucially, optical size (opsz). Instead of jumping discretely from 400 to 700, designers can interpolate weight dynamically at 523 or 648 based on ambient lighting sensors or screen DPI."
+      "text": "The OpenType Font Variations specification dissolved these historical boundaries. A single variable font file contains continuous multi-dimensional axes, weight (wght), width (wdth), slant (slnt), and crucially, optical size (opsz). Instead of jumping discretely from 400 to 700, designers will interpolate weight dynamically at 523 or 648 based on ambient lighting sensors or screen DPI."
     },
     {
       "type": "image",
@@ -41,7 +41,7 @@
     },
     {
       "type": "quote",
-      "text": "Typography does not exist in a vacuum; it breathes with the viewport. Optical sizing restores the delicate micro-proportions that high-end punchcutters perfected centuries ago.",
+      "text": "Typography does not exist in a vacuum. this breathes with the viewport. Optical sizing restores the delicate micro-proportions which high-end punchcutters perfected centuries ago.",
       "cite": "Saskia Lindqvist, The Living Letterform"
     },
     {

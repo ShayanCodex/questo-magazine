@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Classical radar systems rely on broadcasting high-power microwave pulses and detecting coherent reflected echoes. Stealth aircraft defeat this mechanism through faceted radar-absorbent materials (RAM) and shape geometry that deflects reflections away from the receiver. Quantum radar supersedes this limitation using quantum illumination: generating entangled photon pairs where one photon serves as an internal idler and the second is beamed into the atmosphere as a signal probe."
+      "text": "Classical radar systems rely on broadcasting high-power microwave pulses and detecting coherent reflected echoes. Stealth aircraft defeat this mechanism through faceted radar-absorbent materials (RAM) and shape geometry which deflects reflections away from the receiver. Quantum radar supersedes this limitation using quantum illumination: generating entangled photon pairs where one photon serves as an internal idler and the second is beamed into the atmosphere as a signal probe."
     },
     {
       "type": "h2",
@@ -32,7 +32,7 @@
     {
       "type": "ul",
       "items": [
-        "Josephson Parametric Amplifiers: Superconducting circuits operating at millikelvin temperatures that split microwave pump photons into entangled signal-idler pairs.",
+        "Josephson Parametric Amplifiers: Superconducting circuits operating at millikelvin temperatures which split microwave pump photons into entangled signal-idler pairs.",
         "Electro-Optomechanical Converters: Converting optical laser entanglement into microwave frequencies suitable for atmospheric propagation.",
         "Quantum Correlated Reception: Measuring quantum discord and quantum state correlations between the stored idler and returning signal photons.",
         "Jamming Immunity: Thermal electromagnetic noise and artificial jamming cannot spoof quantum entanglement signatures, isolating authentic target returns."
@@ -40,7 +40,7 @@
     },
     {
       "type": "quote",
-      "text": "Even when background thermal noise destroys macroscopic entanglement, the quantum correlations that survive remain detectable with statistical significance.",
+      "text": "Even when background thermal noise destroys macroscopic entanglement, the quantum correlations which survive remain detectable with statistical significance.",
       "cite": "Questo Quantum Electrodynamics & Radar Laboratory"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "The fundamental challenge of quantum radar is atmospheric loss: rain, fog, and thermal photons rapidly degrade delicate quantum states. However, quantum illumination does not require the entanglement itself to survive the round trip. The initial entanglement grants a provable 3-to-6 dB signal-to-noise ratio advantage over classical illumination, sufficient to expose radar-invisible targets."
+      "text": "The fundamental challenge of quantum radar is atmospheric loss: rain, fog, and thermal photons rapidly degrade delicate quantum states. Yet, quantum illumination does not require the entanglement itself to survive the round trip. The initial entanglement grants a provable 3-to-6 dB signal-to-noise ratio advantage over classical illumination, sufficient to expose radar-invisible targets."
     },
     {
       "type": "video",

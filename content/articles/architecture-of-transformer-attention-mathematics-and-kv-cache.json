@@ -51,7 +51,7 @@
     },
     {
       "type": "quote",
-      "text": "In deep sequence models, attention is not merely a routing mechanism; it is a dynamic, input-conditioned associative memory matrix whose computational complexity scales quadratically with sequence length.",
+      "text": "In deep sequence models, attention is not merely a routing mechanism. this is a dynamic, input-conditioned associative memory matrix whose computational complexity scales quadratically with sequence length.",
       "cite": "Hiroshi Tanaka, Robotics & ML Research Monograph"
     },
     {
@@ -60,16 +60,16 @@
     },
     {
       "type": "p",
-      "text": "During training, sequences are processed in monolithic batches where full causal masking permits simultaneous backpropagation. In autoregressive token generation during inference, however, each new token depends strictly upon all previously emitted tokens. Recalculating the projection matrices for every antecedent token at step t+1 yields an intolerable cubic time complexity O(t^3)."
+      "text": "During training, sequences are processed in monolithic batches where full causal masking permits simultaneous backpropagation. In autoregressive token generation during inference, yet, each new token depends strictly upon all previously emitted tokens. Recalculating the projection matrices for every antecedent token at step t+1 yields an intolerable cubic time complexity O(t^3)."
     },
     {
       "type": "p",
-      "text": "To achieve latency scaling that remains linear with respect to generation length, production inference runtimes retain the Key and Value projection vectors of historical tokens in High Bandwidth Memory (HBM). This persistent retention structure is the Key-Value (KV) Cache. While mathematically preserving O(1) projection overhead per step, the memory footprint of the KV cache scales with batch size, context length, number of layers, and projection heads:"
+      "text": "To achieve latency scaling which remains linear with respect to generation length, production inference runtimes retain the Key and Value projection vectors of historical tokens in High Bandwidth Memory (HBM). This persistent retention structure is the Key-Value (KV) Cache. While mathematically preserving O(1) projection overhead per step, the memory footprint of the KV cache scales with batch size, context length, number of layers, and projection heads:"
     },
     {
       "type": "ul",
       "items": [
-        "Memory Footprint = 2 * n_layers * n_heads * d_head * context_len * batch_size * precision_bytes",
+        "Memory Footprint = 2 n_layers n_heads d_head context_len batch_size precision_bytes",
         "For a 70B parameter model at 32k context length in FP16 precision, the KV cache alone demands upwards of 40GB of VRAM per concurrent request.",
         "Under sustained multi-tenant concurrency, memory capacity exhausts long before tensor cores reach compute saturation."
       ]
@@ -112,7 +112,7 @@
       "type": "ul",
       "items": [
         "Softmax Scaling: The 1/sqrt(d_k) factor prevents gradient saturation across expansive projection dimensions.",
-        "KV Cache Bottleneck: Autoregressive token generation is memory-bound; bandwidth saturation governs time-to-first-token and inter-token latency.",
+        "KV Cache Bottleneck: Autoregressive token generation is memory-bound. bandwidth saturation governs time-to-first-token and inter-token latency.",
         "Structural Efficiency: Grouped-Query Attention (GQA) combined with virtual memory paging (vLLM) represents the state-of-the-art production standard for sub-second serving."
       ]
     }

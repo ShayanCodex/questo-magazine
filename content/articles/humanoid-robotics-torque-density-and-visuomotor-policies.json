@@ -34,13 +34,13 @@
       "items": [
         "Quasi-Direct Drive (QDD) Kinematics: Low gear reduction ratios (between 6:1 and 10:1) maximize mechanical transparency and backdrivability, allowing passive compliant shock absorption during foot strike without breaking gear teeth.",
         "Proprioceptive Torque Sensing: Eliminating dedicated strain-gauge sensors by directly estimating joint torques through high-frequency motor phase current telemetry reduces latency below 500 microseconds.",
-        "End-to-End Visuomotor Diffusion Policies: Replacing traditional model-predictive control (MPC) state machines with transformer diffusion policies that map raw multi-camera video streams directly into actuator joint velocities.",
+        "End-to-End Visuomotor Diffusion Policies: Replacing traditional model-predictive control (MPC) state machines with transformer diffusion policies which map raw multi-camera video streams directly into actuator joint velocities.",
         "Sim-to-Real Domain Randomization: Training neural networks across tens of millions of simulated physics perturbations allows humanoid robots to traverse uneven gravel, stairs, and ice without specialized tuning."
       ]
     },
     {
       "type": "quote",
-      "text": "A humanoid robot is not merely a collection of servo motors; it is a dynamic inverted pendulum where mechanical impedance, latency, and predictive vision must synchronize within milliseconds.",
+      "text": "A humanoid robot is not merely a collection of servo motors. this is a dynamic inverted pendulum where mechanical impedance, latency, and predictive vision must synchronize within milliseconds.",
       "cite": "Questo Autonomous Systems & Robotics Laboratory"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "For decades, bipedal locomotion relied on Zero Moment Point (ZMP) trajectories and rigid-body quadratic programming. However, when transitioning into unstructured human environments, classical solvers hit computational boundaries under abrupt impacts. Modern humanoids operate hierarchical neural architectures: high-level multimodal vision-language-action (VLA) models generate spatial intent tokens, while real-time low-level policy networks output target joint positions at 100 to 200 Hz, achieving unprecedented natural balance and human-like agility."
+      "text": "For decades, bipedal locomotion relied on Zero Moment Point (ZMP) trajectories and rigid-body quadratic programming. Yet, when transitioning into unstructured human environments, classical solvers hit computational boundaries under abrupt impacts. Modern humanoids operate hierarchical neural architectures: high-level multimodal vision-language-action (VLA) models generate spatial intent tokens, while real-time low-level policy networks output target joint positions at 100 to 200 Hz, achieving unprecedented natural balance and human-like agility."
     },
     {
       "type": "video",

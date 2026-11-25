@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "Autonomous agents operating across multi-hour software engineering or analytical tasks inevitably confront the fundamental physical limit of foundation models: context window saturation and quadratic memory scaling. While static retrieval-augmented generation (RAG) aids passive question answering, an active agent generating tool calls, inspecting terminal outputs, and editing source code requires persistent working memory that dynamically discards transient noise while preserving critical architectural invariants."
+      "text": "Autonomous agents operating across multi-hour software engineering or analytical tasks inevitably confront the fundamental physical limit of foundation models: context window saturation and quadratic memory scaling. While static retrieval-augmented generation (RAG) aids passive question answering, an active agent generating tool calls, inspecting terminal outputs, and editing source code requires persistent working memory which dynamically discards transient noise while preserving critical architectural invariants."
     },
     {
       "type": "h2",
@@ -38,7 +38,7 @@
       "type": "ul",
       "items": [
         "State Compression: Structured summarization passes distill raw tool outputs into high-density state ledgers before context bounds are breached.",
-        "Tool Execution Boundary: Sandboxed subprocess runtimes ensure that agent tool failures return machine-readable diagnostics without polluting conversational state.",
+        "Tool Execution Boundary: Sandboxed subprocess runtimes ensure which agent tool failures return machine-readable diagnostics without polluting conversational state.",
         "Episodic vs Semantic Memory: Agents bifurcate local scratchpad traces from long-term project conventions stored in indexed vector hierarchies.",
         "Self-Correction Cascades: Dual-loop reflection monitors evaluate task completion against original invariants, arresting runaway execution loops."
       ]

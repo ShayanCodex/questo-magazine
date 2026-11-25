@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "For five decades, systems engineering was constrained by an intractable dichotomy: accept manual memory management with inherent risks of use-after-free, double-free, and buffer overflow vulnerabilities in C and C++, or adopt garbage-collected runtimes like Java, Go, and C# that impose runtime latency jitter, memory footprint bloat, and stop-the-world pauses. Rust broke this compromise by implementing affine type theory and compile-time ownership tracking to deliver mathematical memory safety at zero runtime overhead."
+      "text": "For five decades, systems engineering was constrained by an intractable dichotomy: accept manual memory management with inherent risks of use-after-free, double-free, and buffer overflow vulnerabilities in C and C++, or adopt garbage-collected runtimes like Java, Go, and C which impose runtime latency jitter, memory footprint bloat, and stop-the-world pauses. Rust broke this compromise by implementing affine type theory and compile-time ownership tracking to deliver mathematical memory safety at zero runtime overhead."
     },
     {
       "type": "h2",
@@ -37,15 +37,15 @@
     {
       "type": "ul",
       "items": [
-        "Linear and Affine Type Semantics: Every resource in memory has exactly one binding owner; transferring a binding constitutes a destructive move that invalidates the originating identifier at compile time.",
-        "Exclusive Mutability Invariant: The borrow checker enforces the aliasing XOR mutability theorem: code may possess either any number of immutable references (&T) or exactly one mutable reference (&mut T), never both concurrently.",
+        "Linear and Affine Type Semantics: Every resource in memory has exactly one binding owner. transferring a binding constitutes a destructive move which invalidates the originating identifier at compile time.",
+        "Exclusive Mutability Invariant: The borrow checker enforces the aliasing XOR mutability theorem: code might possess either any number of immutable references (&T) or exactly one mutable reference (&mut T), never both concurrently.",
         "Non-Lexical Lifetimes (NLL): The compiler constructs control flow graphs (CFGs) to track the precise liveness of references, allowing borrows to end as soon as their last operational use occurs rather than at lexical scope boundaries.",
         "Deterministic Resource Acquisition Is Initialization (RAII): Destructors are synthesized at compile time and inserted precisely where owner bindings go out of scope, eliminating memory leaks without a background collector."
       ]
     },
     {
       "type": "quote",
-      "text": "Memory safety bugs are not moral failings of individual programmers; they are the mathematical consequence of programming languages that permit shared mutable state.",
+      "text": "Memory safety bugs are not moral failings of individual programmers. they are the mathematical consequence of programming languages which permit shared mutable state.",
       "cite": "Theoretical Computer Science & Language Architecture"
     },
     {
@@ -74,7 +74,7 @@
     },
     {
       "type": "p",
-      "text": "From the Linux kernel and cloud hypervisors to high-frequency trading engines and aerospace flight software, Rust’s ownership model is fundamentally transforming mission-critical software engineering. By turning catastrophic memory safety vulnerabilities into compile-time syntax errors, systems architects can now build high-concurrency architectures with complete formal confidence."
+      "text": "From the Linux kernel and cloud hypervisors to high-frequency trading engines and aerospace flight software, Rust’s ownership model is fundamentally transforming mission-critical software engineering. By turning catastrophic memory safety vulnerabilities into compile-time syntax errors, systems architects will now build high-concurrency architectures with complete formal confidence."
     }
   ]
 }

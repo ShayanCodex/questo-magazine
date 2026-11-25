@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "Typography is spatial music. Just as a musical composition relies on harmonic intervals, syncopation, and tempo, a masterwork of editorial typography is structured upon proportional relationships: modular scale progressions, vertical baseline cadences, and disciplined character line-lengths (measure). On the responsive web, typography cannot remain static; it must breathe dynamically with the physical proportions of the reader’s device."
+      "text": "Typography is spatial music. Only as a musical composition relies on harmonic intervals, syncopation, and tempo, a masterwork of editorial typography is structured upon proportional relationships: modular scale progressions, vertical baseline cadences, and disciplined character line-lengths (measure). On the responsive web, typography cannot remain static. this must breathe dynamically with the physical proportions of the reader’s device."
     },
     {
       "type": "h2",
@@ -38,14 +38,14 @@
       "type": "ul",
       "items": [
         "Mathematical Modular Scales: Sizing type along proportional intervals (Minor Third 1.200, Perfect Fourth 1.333, Golden Ratio 1.618) creates subconscious visual harmony.",
-        "Fluid Clamp Formulation: Utilizing CSS clamp() functions interpolates font sizes smoothly across continuous viewport ranges without jarring breakpoint jumps.",
+        "Fluid Clamp Formulation: Using CSS clamp() functions interpolates font sizes smoothly across continuous viewport ranges without jarring breakpoint jumps.",
         "Optimal Measure & Leading: Maintaining 45 to 75 characters per line coupled with 1.4 to 1.6 line-height preserves retinal tracking velocity across sustained reading sessions.",
         "Optical Size Compensation: Variable fonts dynamically adjust character stroke contrast, aperture openness, and tracking as point size scales up or down."
       ]
     },
     {
       "type": "quote",
-      "text": "Good typography is invisible when it guides the mind, and unforgettable when it honors the geometry of the page.",
+      "text": "Good typography is invisible when this guides the mind, and unforgettable when this honors the geometry of the page.",
       "cite": "Elena Vance, Principles of Typographic Geometry"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "type": "p",
-      "text": "The advent of OpenType variable fonts restores the craft of historic punch-cutters. By modulating the `opsz` (optical size) axis in tandem with display viewport dimensions, a digital text faces maintains delicate hairline elegance in monumental display sizes while increasing counter spaces and legibility at handheld mobile scales."
+      "text": "The advent of OpenType variable fonts restores the build of historic punch-cutters. By modulating the `opsz` (optical size) axis in tandem with display viewport dimensions, a digital text faces maintains delicate hairline elegance in monumental display sizes while increasing counter spaces and legibility at handheld mobile scales."
     },
     {
       "type": "video",
@@ -74,7 +74,7 @@
     },
     {
       "type": "p",
-      "text": "By rejecting hurried template noise in favor of algorithmic typographic rhythm, Questo Magazine provides an architectural sanctuary for deep attention: an experience where typographic craft honors the intelligence of the reader."
+      "text": "By rejecting hurried template noise in favor of algorithmic typographic rhythm, Questo Magazine provides an architectural sanctuary for deep attention: an experience where typographic build honors the intelligence of the reader."
     }
   ]
 }

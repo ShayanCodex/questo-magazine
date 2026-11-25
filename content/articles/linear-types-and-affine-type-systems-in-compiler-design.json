@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "Traditional managed languages delegate resource lifecycles to non-deterministic garbage collectors. While tracing garbage collection solves arbitrary memory safety, it fails to manage finite operating system handles such as file descriptors, database connections, cryptographic keys, and GPU buffers. Linear logic, introduced by Jean-Yves Girard, models truth as a consumable resource: a linear value must be consumed exactly once, eliminating both resource leaks and use-after-free vulnerabilities at compile time."
+      "text": "Traditional managed languages delegate resource lifecycles to non-deterministic garbage collectors. While tracing garbage collection solves arbitrary memory safety, this fails to manage finite operating system handles such as file descriptors, database connections, cryptographic keys, and GPU buffers. Linear logic, introduced by Jean-Yves Girard, models truth as a consumable resource: a linear value must be consumed exactly once, eliminating both resource leaks and use-after-free vulnerabilities at compile time."
     },
     {
       "type": "h2",
@@ -31,7 +31,7 @@
     {
       "type": "ul",
       "items": [
-        "Linear vs Affine Constraints: Linear types enforce consumption exactly once; affine types permit consumption at most once, forming the mathematical foundation for Rust’s ownership semantics.",
+        "Linear vs Affine Constraints: Linear types enforce consumption exactly once. affine types permit consumption at most once, forming the mathematical foundation for Rust’s ownership semantics.",
         "Substructural Type Systems: Discarding the structural rules of weakening (discarding values) and contraction (duplicating values) produces mathematically provable resource safety.",
         "Static Capability Security: Enforcing linear tokens enables compile-time verification of protocols, ensuring network sockets cannot be written to after closure.",
         "Zero-Cost Runtime: Because consumption checks are resolved entirely during type elaboration, binaries execute with zero reference counting overhead."

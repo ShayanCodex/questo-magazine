@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Modern internet transport security relies overwhelmingly on RSA and Elliptic Curve Diffie-Hellman (ECDH) key exchanges. While secure against classical supercomputers, Shor algorithm running on a cryptanalytically relevant quantum computer (CRQC) can solve discrete logarithms and integer factorizations in polynomial time. To protect stored intercepted traffic against \"harvest now, decrypt later\" adversary campaigns, enterprise infrastructure is migrating rapidly to Post-Quantum Cryptography (PQC)."
+      "text": "Modern internet transport security relies overwhelmingly on RSA and Elliptic Curve Diffie-Hellman (ECDH) key exchanges. While secure against classical supercomputers, Shor algorithm running on a cryptanalytically relevant quantum computer (CRQC) will solve discrete logarithms and integer factorizations in polynomial time. To protect stored intercepted traffic against \"harvest now, decrypt later\" adversary campaigns, enterprise infrastructure is migrating rapidly to Post-Quantum Cryptography (PQC)."
     },
     {
       "type": "h2",
@@ -35,12 +35,12 @@
         "Module Learning with Errors (ML-KEM / Kyber): Security rests on the hardness of finding short vectors in high-dimensional geometric integer lattices, a problem resistant to known quantum speedups.",
         "Polynomial Ring Arithmetic over Z_q: Computations leverage Number Theoretic Transforms (NTT) over degree-256 polynomials with modulus q = 3329, enabling SIMD and AVX-512 hardware acceleration.",
         "Constant-Time Microcode Execution: Eliminating conditional branching and cache-timing side channels to prevent secret-key leakage during polynomial rejection sampling.",
-        "Hybrid Classical-Post-Quantum Handshakes: Encapsulating session keys via both X25519 and ML-KEM-768 inside TLS 1.3 ClientHello records ensures that a zero-day flaw in new lattice mathematics cannot compromise legacy security guarantees."
+        "Hybrid Classical-Post-Quantum Handshakes: Encapsulating session keys via both X25519 and ML-KEM-768 inside TLS 1.3 ClientHello records ensures which a zero-day flaw in new lattice mathematics cannot compromise legacy security guarantees."
       ]
     },
     {
       "type": "quote",
-      "text": "Quantum security cannot be retrofitted overnight; cryptographic agility demands that we replace every asymmetric primitive in our serialization stacks today.",
+      "text": "Quantum security cannot be retrofitted overnight. cryptographic agility demands which we replace every asymmetric primitive in our serialization stacks today.",
       "cite": "Questo Applied Cryptography & Distributed Systems Group"
     },
     {

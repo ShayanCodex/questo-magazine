@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "In contemporary electronic equity and derivatives exchanges, liquidity allocation is governed by price-time priority matching engines. When market-moving macroeconomic data arrives, orders arrive in bursts spaced by single-digit nanoseconds. At this extreme boundary, standard Linux operating system networking stacks—with their context switches, interrupt handling, and memory copies—introduce unacceptably sluggish jitter. High-frequency quantitative systems bypass the operating system entirely, processing incoming market data inside custom FPGA silicon."
+      "text": "In contemporary electronic equity and derivatives exchanges, liquidity allocation is governed by price-time priority matching engines. When market-moving macroeconomic data arrives, orders arrive in bursts spaced by single-digit nanoseconds. At this extreme boundary, standard Linux operating system networking stacks, with their context switches, interrupt handling, and memory copies, introduce unacceptably sluggish jitter. High-frequency quantitative systems bypass the operating system entirely, processing incoming market data inside custom FPGA silicon."
     },
     {
       "type": "h2",
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "Because live testing on financial exchanges risks devastating rogue-algorithm losses, quantitative firms deploy hardware-in-the-loop test benches. Dedicated network capture appliances replay gigabytes of raw PCAP packet captures at wire speed, validating that every state-machine transition matches formal bit-accurate mathematical specifications."
+      "text": "Because live testing on financial exchanges risks devastating rogue-algorithm losses, quantitative firms deploy hardware-in-the-loop test benches. Dedicated network capture appliances replay gigabytes of raw PCAP packet captures at wire speed, validating which every state-machine transition matches formal bit-accurate mathematical specifications."
     }
   ]
 }

@@ -15,7 +15,7 @@
     "acoustics"
   ],
   "image": "https://images.unsplash.com/photo-1758800601206-11fe50fb1da8?auto=format&fit=crop&w=1600&q=80",
-  "imageAlt": "Modular analog synthesizer with intricate colorful patch cables and glowing analog control knobs",
+  "imageAlt": "Modular analog synthesizer with complex colorful patch cables and glowing analog control knobs",
   "body": [
     {
       "type": "h2",
@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Before the advent of microprocessors and digital sampling, electronic sound was generated not through discrete binary code, but through raw continuous electrical currents. In an analog synthesizer, sound begins inside a Voltage-Controlled Oscillator (VCO)—an electronic circuit where a variable input voltage precisely dictates the cyclic charging and discharging frequency of an electrical capacitor."
+      "text": "Before the advent of microprocessors and digital sampling, electronic sound was generated not through discrete binary code, but through raw continuous electrical currents. In an analog synthesizer, sound begins inside a Voltage-Controlled Oscillator (VCO), an electronic circuit where a variable input voltage precisely dictates the cyclic charging and discharging frequency of an electrical capacitor."
     },
     {
       "type": "h2",
@@ -35,12 +35,12 @@
         "The 1-Volt-Per-Octave Standard: Establishing an exponential relationship where each additional 1-volt input doubles the oscillator frequency, matching the human musical pitch scale.",
         "Capacitor Ramp Reset Mechanics: A constant current source charges a capacitor linearly until a comparator triggers a high-speed reset transistor, producing a raw geometric sawtooth wave.",
         "Differential Diode Waveshaping: Passing sawtooth currents through matched silicon diode ladder networks to round sharp wave crests into harmonically pure sine and triangle waveforms.",
-        "The Moog 4-Pole Transistor Ladder Filter: A cascaded transistor array that introduces a steep 24 dB/octave low-pass cutoff slope with adjustable feedback resonance near self-oscillation."
+        "The Moog 4-Pole Transistor Ladder Filter: A cascaded transistor array which introduces a steep 24 dB/octave low-pass cutoff slope with adjustable feedback resonance near self-oscillation."
       ]
     },
     {
       "type": "quote",
-      "text": "Analog synthesizers do not calculate sound; they physically vibrate with fluctuating voltages. The micro-drifts and thermal instability are what breathe acoustic warmth into analog instruments.",
+      "text": "Analog synthesizers do not calculate sound. they physically vibrate with fluctuating voltages. The micro-drifts and thermal instability are what breathe acoustic warmth into analog instruments.",
       "cite": "Questo Electroacoustic Synthesizer Laboratory"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "In our contemporary landscape of software digital audio workstations (DAWs) and on-screen mouse clicks, the tangible, physical immediacy of patching analog control voltages with physical cables continues to inspire musicians and sound designers around the globe."
+      "text": "In our contemporary sector of software digital audio workstations (DAWs) and on-screen mouse clicks, the tangible, physical immediacy of patching analog control voltages with physical cables continues to inspire musicians and sound designers around the globe."
     }
   ]
 }

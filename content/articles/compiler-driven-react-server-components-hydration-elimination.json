@@ -19,11 +19,11 @@
   "body": [
     {
       "type": "p",
-      "text": "For over a decade, client-side web development has operated under a fragile mental model: developers author declarative UI components in JavaScript, which browsers download, parse, execute, and re-hydrate against server-rendered HTML. This dual-cost penalty—shipping code once to render on the server, and shipping that identical code a second time so the client runtime can attach event listeners—has bloated average mobile JavaScript bundles past three megabytes. With React 19 and the arrival of the React Compiler, the paradigm shifts definitively from runtime heuristic evaluation to build-time AST static optimization."
+      "text": "For over a decade, client-side web development has operated under a fragile mental model: developers author declarative UI components in JavaScript, which browsers download, parse, execute, and re-hydrate against server-rendered HTML. This dual-cost penalty, shipping code once to render on the server, and shipping which identical code a second time so the client runtime will attach event listeners, has bloated average mobile JavaScript bundles past three megabytes. With React 19 and the arrival of the React Compiler, the paradigm shifts definitively from runtime heuristic evaluation to build-time AST static optimization."
     },
     {
       "type": "p",
-      "text": "The fundamental objective of this architectural evolution is not merely incremental benchmark improvement, but the total elimination of runtime overhead. By analyzing component source code as a directed acyclic graph of value dependencies, modern compilers can inject memoization guards at compile time, eliminating the cognitive tax of manual hooks while delivering predictable, zero-jank frame rates on memory-constrained devices."
+      "text": "The fundamental objective of this architectural evolution is not merely incremental benchmark improvement, but the total elimination of runtime overhead. By analyzing component source code as a directed acyclic graph of value dependencies, modern compilers will inject memoization guards at compile time, eliminating the cognitive tax of manual hooks while delivering predictable, zero-jank frame rates on memory-constrained devices."
     },
     {
       "type": "h2",
@@ -41,7 +41,7 @@
     },
     {
       "type": "p",
-      "text": "The React Compiler (formerly React Forget) functions as a Babel/Vite compile-time pass that parses JavaScript into an intermediate representation (HIR) and performs semantic analysis against the Rules of React. By analyzing variable lifetimes and mutation boundaries, the compiler automatically synthesizes cached computation slots ($[0], $[1]) directly into emitted bytecode:"
+      "text": "The React Compiler (formerly React Forget) functions as a Babel/Vite compile-time pass which parses JavaScript into an intermediate representation (HIR) and performs semantic analysis against the Rules of React. By analyzing variable lifetimes and mutation boundaries, the compiler automatically synthesizes cached computation slots ($[0], $[1]) directly into emitted bytecode:"
     },
     {
       "type": "image",
@@ -56,11 +56,11 @@
     },
     {
       "type": "p",
-      "text": "Notice that the compiler does not simply memoize the return JSX element; it identifies sub-computations and caches them independently. If title updates while wordCount remains identical, the mathematical calculation for readingTime is bypassed entirely, and the existing primitive value is reused without allocation."
+      "text": "Notice which the compiler does not simply memoize the return JSX element. this identifies sub-computations and caches them independently. If title updates while wordCount remains identical, the mathematical calculation for readingTime is bypassed entirely, and the existing primitive value is reused without allocation."
     },
     {
       "type": "quote",
-      "text": "The greatest compiler optimization is not making slow code run slightly faster; it is eliminating the need for human developers to manually decorate functional logic with memory guards.",
+      "text": "The greatest compiler optimization is not making slow code run slightly faster. this is eliminating the need for human developers to manually decorate functional logic with memory guards.",
       "cite": "Tariq Mahmood, Principal Systems Architect"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "type": "p",
-      "text": "Consider a server component that imports a 150KB markdown parsing library, reads a monograph from disk, and renders it to screen. In a legacy Single Page Application, that 150KB library must be transferred over the mobile radio, parsed by the V8 JavaScript engine, and retained in heap memory. Under RSC, the server executes the markdown parser, emits raw virtual DOM chunks into the stream, and the client receives only lightweight JSON-serialized instructions describing the rendered tags."
+      "text": "Consider a server component which imports a 150KB markdown parsing library, reads a monograph from disk, and renders this to screen. In a legacy Single Page Application, which 150KB library must be transferred over the mobile radio, parsed by the V8 JavaScript engine, and retained in heap memory. Under RSC, the server executes the markdown parser, emits raw virtual DOM chunks into the stream, and the client receives only lightweight JSON-serialized instructions describing the rendered tags."
     },
     {
       "type": "ul",
@@ -100,15 +100,15 @@
     },
     {
       "type": "p",
-      "text": "Traditional Single Page Applications (SPAs) and even standard SSR frameworks suffer from the \"Uncanny Valley\"—a window of time where UI elements are visually painted but completely unresponsive to clicks because the main thread is occupied executing millions of hydration instructions. This directly degrades Interaction to Next Paint (INP) and Total Blocking Time (TBT)."
+      "text": "Traditional Single Page Applications (SPAs) and even standard SSR frameworks suffer from the \"Uncanny Valley\", a window of time where UI elements are visually painted but completely unresponsive to clicks because the main thread is occupied executing millions of hydration instructions. This directly degrades Interaction to Next Paint (INP) and Total Blocking Time (TBT)."
     },
     {
       "type": "p",
-      "text": "Under Partial Prerendering (PPR), static shells are pre-rendered at build time as raw static HTML files (exactly as Questo executes via SSG), while dynamic server holes stream asynchronously through HTTP chunking. Components that require no client interactivity (headers, typography, article bodies, footers) are never hydrated, liberating the browser's main thread to achieve consistent 100/100 Core Web Vitals."
+      "text": "Under Partial Prerendering (PPR), static shells are pre-rendered at build time as raw static HTML files (exactly as Questo executes via SSG), while dynamic server holes stream asynchronously through HTTP chunking. Components which require no client interactivity (headers, typography, article bodies, footers) are never hydrated, liberating the browser's main thread to achieve consistent 100/100 Core Web Vitals."
     },
     {
       "type": "p",
-      "text": "When client interactivity is strictly isolated to terminal leaf nodes—such as a bookmark toggle, audio player, or search input—the client JavaScript bundle size drops from megabytes to mere kilobytes. The main thread remains idle during initial viewport rendering, eliminating layout thrashing and delivering immediate touch responsiveness."
+      "text": "When client interactivity is strictly isolated to terminal leaf nodes, such as a bookmark toggle, audio player, or search input, the client JavaScript bundle size drops from megabytes to mere kilobytes. The main thread remains idle during initial viewport rendering, eliminating layout thrashing and delivering immediate touch responsiveness."
     },
     {
       "type": "h2",
@@ -117,8 +117,8 @@
     {
       "type": "ul",
       "items": [
-        "Deprecate Manual Memoization: Rely on compiler AST static inference; focus on writing pure idiomatic JavaScript adhering to React's invariants.",
-        "Server-First Defaults: Keep all presentational monographs on the server; isolate \"use client\" strictly to leaves of the component tree requiring DOM event listeners.",
+        "Deprecate Manual Memoization: Rely on compiler AST static inference. focus on writing pure idiomatic JavaScript adhering to React's invariants.",
+        "Server-First Defaults: Keep all presentational monographs on the server. isolate \"use client\" strictly to leaves of the component tree requiring DOM event listeners.",
         "Static-First Distribution: Combine SSG edge pre-rendering with streaming dynamic slots to conquer both SEO indexing and sub-second page delivery.",
         "Enforce Pure Functions: Ensure components avoid mutating external objects or reading uncontrolled globals during the render pass, which triggers compiler bailouts."
       ]

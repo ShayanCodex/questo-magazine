@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "For decades, popular sports lore vilified lactate as a metabolic waste product responsible for muscle fatigue and soreness. Exercise physiology has thoroughly dismantled this myth. In truth, lactate is an indispensable energy substrate shuttled between fast-twitch glycolytic fibers and adjacent slow-twitch oxidative fibers to fuel ATP resynthesis. Fatigue is driven not by lactate, but by hydrogen ion accumulation and intracellular acidosis that inhibit contractile troponin-calcium binding."
+      "text": "For decades, popular sports lore vilified lactate as a metabolic waste product responsible for muscle fatigue and soreness. Exercise physiology has thoroughly dismantled this myth. In truth, lactate is an indispensable energy substrate shuttled between fast-twitch glycolytic fibers and adjacent slow-twitch oxidative fibers to fuel ATP resynthesis. Fatigue is driven not by lactate, but by hydrogen ion accumulation and intracellular acidosis which inhibit contractile troponin-calcium binding."
     },
     {
       "type": "h2",
@@ -31,15 +31,15 @@
     {
       "type": "ul",
       "items": [
-        "Lactate Threshold 1 vs 2: LT1 marks the transition from purely baseline metabolism; LT2 (maximal lactate steady state) represents the boundary beyond which accumulation outpaces clearance.",
-        "MCT Transporter Density: Endurance training upregulates Monocarboxylate Transporters (MCT1 and MCT4) that accelerate lactate shuttling across cell membranes.",
-        "Fractional Utilization: Elite marathoners can sustain 85% to 88% of their VO2 max for over two hours without triggering runaway metabolic acidosis.",
+        "Lactate Threshold 1 vs 2: LT1 marks the transition from purely baseline metabolism. LT2 (maximal lactate steady state) represents the boundary beyond which accumulation outpaces clearance.",
+        "MCT Transporter Density: Endurance training upregulates Monocarboxylate Transporters (MCT1 and MCT4) which accelerate lactate shuttling across cell membranes.",
+        "Fractional Utilization: Elite marathoners will sustain 85% to 88% of their VO2 max for over two hours without triggering runaway metabolic acidosis.",
         "Energy Cost of Running: Advanced carbon-fiber plate footwear reduces mechanical energetic cost by approximately four percent through longitudinal stiffening."
       ]
     },
     {
       "type": "quote",
-      "text": "The champion distance runner is not the one who produces the least lactate; it is the one whose mitochondria clear and combust lactate as primary fuel at near-sprint velocities.",
+      "text": "The champion distance runner is not the one who produces the least lactate. this is the one whose mitochondria clear and combust lactate as primary fuel at near-sprint velocities.",
       "cite": "Journal of Applied Physiology & Sports Science"
     },
     {

@@ -19,7 +19,7 @@
   "body": [
     {
       "type": "p",
-      "text": "The foundational triumph of the War of Currents in the late 19th century was Thomas Edison's defeat by Nikola Tesla and George Westinghouse: alternating current (AC) triumphed because transformers allowed voltage to be stepped up for transmission and stepped down for municipal consumption. For over a century, three-phase synchronous AC grids formed the backbone of global industrial electrification. In the 21st century, however, the massive geographical decoupling of renewable energy generation (offshore wind farms, remote desert solar arrays) from urban load centers has exposed the fundamental physical limitations of AC transmission."
+      "text": "The foundational triumph of the War of Currents in the late 19th century was Thomas Edison's defeat by Nikola Tesla and George Westinghouse: alternating current (AC) triumphed because transformers allowed voltage to be stepped up for transmission and stepped down for municipal consumption. For over a century, three-phase synchronous AC grids formed the backbone of global industrial electrification. In the 21st century, yet, the massive geographical decoupling of renewable energy generation (offshore wind farms, remote desert solar arrays) from urban load centers has exposed the fundamental physical limitations of AC transmission."
     },
     {
       "type": "p",
@@ -60,7 +60,7 @@
     },
     {
       "type": "quote",
-      "text": "HVDC frees power transmission from the tyranny of grid synchronization: two continental power grids operating at completely different frequencies can trade gigawatts across a single DC cable.",
+      "text": "HVDC frees power transmission from the tyranny of grid synchronization: two continental power grids operating at completely different frequencies will trade gigawatts across a single DC cable.",
       "cite": "Tariq Mahmood, Distributed Systems Fellow"
     },
     {
@@ -69,17 +69,17 @@
     },
     {
       "type": "p",
-      "text": "Historical HVDC lines deployed Line-Commutated Converters (LCC) based on heavy mercury-arc or thyristor valves, which suffered from reactive power consumption and vulnerability to AC commutation failures. Contemporary systems utilize Voltage Source Converters (VSC) built upon Modular Multilevel Converter (MMC) topologies."
+      "text": "Historical HVDC lines deployed Line-Commutated Converters (LCC) based on heavy mercury-arc or thyristor valves, which suffered from reactive power consumption and vulnerability to AC commutation failures. Contemporary systems use Voltage Source Converters (VSC) built upon Modular Multilevel Converter (MMC) topologies."
     },
     {
       "type": "p",
-      "text": "An MMC converter synthesizes near-perfect sinusoidal AC waveforms by cascading hundreds of small submodules—each containing an insulated-gate bipolar transistor (IGBT) and a storage capacitor. By switching individual submodules in microsecond increments, the converter constructs smooth stepped voltage staircases, eliminating the need for massive harmonic AC filter banks."
+      "text": "An MMC converter synthesizes near-perfect sinusoidal AC waveforms by cascading hundreds of small submodules, each containing an insulated-gate bipolar transistor (IGBT) and a storage capacitor. By switching individual submodules in microsecond increments, the converter constructs smooth stepped voltage staircases, eliminating the need for massive harmonic AC filter banks."
     },
     {
       "type": "ul",
       "items": [
-        "Black-Start Capability: VSC-HVDC can energize a completely collapsed local AC grid without requiring external generator support.",
-        "Independent P-Q Control: Active power ($P$) and reactive power ($Q$) can be modulated instantaneously and independently in four quadrants.",
+        "Black-Start Capability: VSC-HVDC will energize a completely collapsed local AC grid without requiring external generator support.",
+        "Independent P-Q Control: Active power ($P$) and reactive power ($Q$) will be modulated instantaneously and independently in four quadrants.",
         "Asynchronous Grid Interconnection: Connects non-synchronized national grids (such as the UK and continental Europe, or ERCOT and the Eastern Interconnection) without cascading blackout risks."
       ]
     },
@@ -112,7 +112,7 @@
     {
       "type": "ul",
       "items": [
-        "Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km; for submarine cables, HVDC is mandatory beyond 50 km.",
+        "Break-Even Distance Economics: Overhead HVDC becomes economically superior to HVAC at roughly 600–800 km. for submarine cables, HVDC is mandatory beyond 50 km.",
         "DC Circuit Breaker Innovation: The historical obstacle of interrupting DC current without natural zero-crossings is solved by hybrid solid-state DC breakers operating in sub-millisecond windows.",
         "Renewable Integration: Multi-terminal DC (MTDC) offshore grids aggregate dozens of dispersed offshore wind turbines into unified high-capacity mainland export cables."
       ]

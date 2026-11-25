@@ -20,7 +20,7 @@
     },
     {
       "type": "p",
-      "text": "Skeletal muscle hypertrophy is fundamentally an adaptive response governed by mechanotransduction—the physiological cascade whereby cell-surface mechanosensors convert external physical strain into intracellular biochemical signaling. While metabolic stress and localized muscle damage contribute to the stimulus, passive and active mechanical tension remain the primary upstream drivers of myofibrillar protein synthesis."
+      "text": "Skeletal muscle hypertrophy is fundamentally an adaptive response governed by mechanotransduction, the physiological cascade whereby cell-surface mechanosensors convert external physical strain into intracellular biochemical signaling. While metabolic stress and localized muscle damage contribute to the stimulus, passive and active mechanical tension remain the primary upstream drivers of myofibrillar protein synthesis."
     },
     {
       "type": "h2",
@@ -36,14 +36,14 @@
       "type": "ul",
       "items": [
         "Costameric Complexes: Integrin-vinculin-talin focal adhesion complexes transmit longitudinal and lateral force from sarcomeres to the extracellular matrix.",
-        "mTORC1 Translocation: Mechanical loading stimulates phosphatidic acid synthesis and initiates Rheb-mediated activation of the mechanistic target of rapamycin complex 1 (mTORC1).",
-        "Ribosome Biogenesis: Chronic hypertrophy is ultimately bounded not just by translation initiation, but by the transcriptional rate of ribosomal RNA (rDNA) synthesis.",
+        "MTORC1 Translocation: Mechanical loading stimulates phosphatidic acid synthesis and initiates Rheb-mediated activation of the mechanistic target of rapamycin complex 1 (mTORC1).",
+        "Ribosome Biogenesis: Chronic hypertrophy is ultimately bounded not only by translation initiation, but by the transcriptional rate of ribosomal RNA (rDNA) synthesis.",
         "Fractional Synthetic Rate (FSR): Post-exercise myofibrillar protein synthesis elevates within 2 to 4 hours, peaking near 24 hours before returning to baseline in trained individuals."
       ]
     },
     {
       "type": "quote",
-      "text": "Muscle fibers do not measure repetitions or load in kilograms; their intracellular sensors detect the magnitude, duration, and vector of mechanical tension applied across the Z-disc and costamere.",
+      "text": "Muscle fibers do not measure repetitions or load in kilograms. their intracellular sensors detect the magnitude, duration, and vector of mechanical tension applied across the Z-disc and costamere.",
       "cite": "Journal of Applied Physiology & Molecular Kinesiology"
     },
     {

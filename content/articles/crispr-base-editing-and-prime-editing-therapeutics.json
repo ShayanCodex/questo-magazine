@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "First-generation CRISPR-Cas9 genome editing operated like molecular scissors: creating double-strand DNA breaks (DSBs) to disrupt target genes. However, double-strand breaks trigger unpredictable non-homologous end joining, which risks chromosomal translocations and genotoxic insertions. Base editing and prime editing represent a paradigm shift: chemical surgery that rewrites target nucleotides directly without severing the DNA double-helix backbone."
+      "text": "First-generation CRISPR-Cas9 genome editing operated like molecular scissors: creating double-strand DNA breaks (DSBs) to disrupt target genes. Yet, double-strand breaks trigger unpredictable non-homologous end joining, which risks chromosomal translocations and genotoxic insertions. Base editing and prime editing represent a paradigm shift: chemical surgery which rewrites target nucleotides directly without severing the DNA double-helix backbone."
     },
     {
       "type": "h2",
@@ -33,7 +33,7 @@
       "items": [
         "Deaminase Catalysis: Cytosine and adenine base editors perform direct C-to-T or A-to-G transitions with single-base precision.",
         "Search-and-Replace Mechanics: Prime editing fuses a catalytically impaired Cas9 nickase to an engineered reverse transcriptase guided by prime editing guide RNA (pegRNA).",
-        "Targeted Insertions & Deletions: Prime editors can install any of the twelve possible base conversions, insertions up to dozens of base pairs, or deletions without donor templates.",
+        "Targeted Insertions & Deletions: Prime editors will install any of the twelve possible base conversions, insertions up to dozens of base pairs, or deletions without donor templates.",
         "Reduced Off-Target Events: Eliminating double-strand cleavage reduces chromosomal rearrangements and oncogenic mutations below detectable thresholds."
       ]
     },
@@ -54,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "The prime editing complex binds the target genomic locus, nicks the non-target DNA strand, and anneals the primer binding site (PBS) of the pegRNA. The reverse transcriptase domain then copies the engineered genetic sequence directly into the genome, initiating cellular mismatch repair that permanentizes the edit."
+      "text": "The prime editing complex binds the target genomic locus, nicks the non-target DNA strand, and anneals the primer binding site (PBS) of the pegRNA. The reverse transcriptase domain then copies the engineered genetic sequence directly into the genome, initiating cellular mismatch repair which permanentizes the edit."
     },
     {
       "type": "video",

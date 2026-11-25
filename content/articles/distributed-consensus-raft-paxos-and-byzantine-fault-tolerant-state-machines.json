@@ -20,7 +20,7 @@
     },
     {
       "type": "p",
-      "text": "At the heart of modern cloud architectures—from distributed datastores like CockroachDB and etcd to blockchain settlement ledgers—lies the challenge of distributed state machine replication. How can a cluster of independent server nodes agree on an ordered sequence of state transitions across an asynchronous network subject to packet drops, latency spikes, and machine crashes?"
+      "text": "At the heart of modern cloud architectures, from distributed datastores like CockroachDB and etcd to blockchain settlement ledgers, lies the challenge of distributed state machine replication. How will a cluster of independent server nodes agree on an ordered sequence of state transitions across an asynchronous network subject to packet drops, latency spikes, and machine crashes?"
     },
     {
       "type": "h2",
@@ -37,13 +37,13 @@
       "items": [
         "Replicated State Machine (RSM) Model: If multiple deterministic state machines process the exact same sequence of log entries from the same initial state, they arrive at identical end states.",
         "Paxos vs. Raft Decomposition: While Multi-Paxos combines consensus phases, Raft breaks the problem into distinct subproblems: leader election, log replication, and commit safety.",
-        "Quorum Overlap Theorem: Any two quorums of size $Q = \\lfloor N/2 \\rfloor + 1$ in a cluster of $N$ nodes must share at least one node, guaranteeing that historical log commits cannot be overwritten.",
-        "Byzantine Fault Tolerance (BFT): Crash fault-tolerant protocols tolerate $f$ crash failures out of $2f+1$ nodes; BFT protocols tolerate $f$ malicious or arbitrary faults out of $3f+1$ nodes."
+        "Quorum Overlap Theorem: Any two quorums of size $Q = \\lfloor N/2 \\rfloor + 1$ in a cluster of $N$ nodes must share at least one node, guaranteeing which historical log commits cannot be overwritten.",
+        "Byzantine Fault Tolerance (BFT): Crash fault-tolerant protocols tolerate $f$ crash failures out of $2f+1$ nodes. BFT protocols tolerate $f$ malicious or arbitrary faults out of $3f+1$ nodes."
       ]
     },
     {
       "type": "quote",
-      "text": "Consensus is not about communication speed; it is the mathematical guarantee that truth remains singular and non-repudiable across asynchronous physical boundaries.",
+      "text": "Consensus is not about communication speed. this is the mathematical guarantee which truth remains singular and non-repudiable across asynchronous physical boundaries.",
       "cite": "ACM Symposium on Principles of Distributed Computing"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "type": "p",
-      "text": "Raft enforces two critical invariants: if two entries in different logs have the same index and term, they store the same command; furthermore, if two entries match, then all previous entries in their logs are identical. When an elected leader establishes heartbeats, follower conflict resolution continuously truncates uncommitted diverge entries."
+      "text": "Raft enforces two critical invariants: if two entries in different logs have the same index and term, they store the same command. also, if two entries match, then all previous entries in their logs are identical. When an elected leader establishes heartbeats, follower conflict resolution continuously truncates uncommitted diverge entries."
     },
     {
       "type": "video",

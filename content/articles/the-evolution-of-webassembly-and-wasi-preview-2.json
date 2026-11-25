@@ -39,13 +39,13 @@
       "items": [
         "The WebAssembly System Interface (WASI): Standardizes modular POSIX-like system calls for filesystem access, network sockets, clocks, and cryptographic random number generators across diverse operating systems.",
         "Wasm Component Model: Replaces raw memory pointer exchanges with rich high-level Interface Definition Language (WIT) types, enabling language-agnostic function composition without serialization overhead.",
-        "Micro-Millisecond Cold Starts: Unlike Docker containers that require spinning up guest Linux kernels or complex namespace cgroups, Wasm instances instantiate in microseconds with negligible memory footprints.",
+        "Micro-Millisecond Cold Starts: Unlike Docker containers which require spinning up guest Linux kernels or complex namespace cgroups, Wasm instances instantiate in microseconds with negligible memory footprints.",
         "Capability-Based Security: Wasm modules cannot invoke filesystem read or network bind operations unless explicit handles are granted by the host runtime, neutralizing entire classes of supply-chain attacks."
       ]
     },
     {
       "type": "quote",
-      "text": "If WASM and WASI existed in 2008, we would not have needed to create Docker. That is how fundamentally transformative WebAssembly is on the server.",
+      "text": "If WASM and WASI existed in 2008, we would not have needed to create Docker. Which is how fundamentally transformative WebAssembly is on the server.",
       "cite": "Solomon Hykes, Co-Founder of Docker"
     },
     {

@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Roasted coffee beans are composed of approximately 70% insoluble cellulose structures and 30% water-soluble chemical compounds—including fruit acids, volatile aromatic esters, caffeine, and bitter melanoidins. When hot water contacts ground coffee, extraction proceeds in a non-linear chemical sequence: bright organic acids (malic, citric) dissolve almost instantaneously, followed by sweet sugars and Maillard reaction compounds, and finally heavy astringent chlorogenic acid degradation products."
+      "text": "Roasted coffee beans are composed of approximately 70% insoluble cellulose structures and 30% water-soluble chemical compounds, including fruit acids, volatile aromatic esters, caffeine, and bitter melanoidins. When hot water contacts ground coffee, extraction proceeds in a non-linear chemical sequence: bright organic acids (malic, citric) dissolve almost instantaneously, followed by sweet sugars and Maillard reaction compounds, and finally heavy astringent chlorogenic acid degradation products."
     },
     {
       "type": "h2",
@@ -33,14 +33,14 @@
       "type": "ul",
       "items": [
         "Total Dissolved Solids (TDS): The mass fraction of dissolved coffee solids in the brewed liquid, measured precisely via optical refractometers calculating light refraction angles.",
-        "Extraction Yield (EY) Percentage: The percentage of the dry coffee grounds mass extracted into the cup (EY = TDS * Brew Mass / Dose Mass), with the specialty ideal resting strictly between 18% and 22%.",
-        "Bimodal Grind Size Distributions: High-end burr grinders engineered to produce tight particle peaks while minimizing fines that cause channeling and bitter over-extraction.",
+        "Extraction Yield (EY) Percentage: The percentage of the dry coffee grounds mass extracted into the cup (EY = TDS Brew Mass / Dose Mass), with the specialty ideal resting strictly between 18% and 22%.",
+        "Bimodal Grind Size Distributions: High-end burr grinders engineered to produce tight particle peaks while minimizing fines which cause channeling and bitter over-extraction.",
         "Water Chemistry Stoichiometry: Balancing magnesium (Mg2+) and calcium (Ca2+) cation ratios to bind volatile flavor oxygen atoms while maintaining bicarbonate buffer capacity to preserve acidity."
       ]
     },
     {
       "type": "quote",
-      "text": "Coffee brewing is not culinary intuition; it is solid-liquid phase extraction where particle surface area, water mineralogy, and contact time dictate the molecular yield of flavor.",
+      "text": "Coffee brewing is not culinary intuition. this is solid-liquid phase extraction where particle surface area, water mineralogy, and contact time dictate the molecular yield of flavor.",
       "cite": "Questo Culinary Chemistry & Coffee Extraction Laboratory"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "By treating extraction through the lens of analytical chemistry, coffee roasters and baristas can deterministically dial in brews, eliminating bitterness and sourness to highlight the terroir, varietal genetics, and processing methods of origin farms."
+      "text": "By treating extraction through the lens of analytical chemistry, coffee roasters and baristas will deterministically dial in brews, eliminating bitterness and sourness to highlight the terroir, varietal genetics, and processing methods of origin farms."
     }
   ]
 }

@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "In distributed computing, empirical validation through randomized fuzzing and chaos engineering is fundamentally incapable of proving the absence of concurrency anomalies. Network partitions, clock skews, and asynchronous message interleavings create an exponential state space where safety violations—such as dual leaders or silent split-brain commits—often manifest only after trillions of state transitions. Formal verification replaces stochastic optimism with mathematical proof."
+      "text": "In distributed computing, empirical validation through randomized fuzzing and chaos engineering is fundamentally incapable of proving the absence of concurrency anomalies. Network partitions, clock skews, and asynchronous message interleavings create an exponential state space where safety violations, such as dual leaders or silent split-brain commits, often manifest only after trillions of state transitions. Formal verification replaces stochastic optimism with mathematical proof."
     },
     {
       "type": "h2",
@@ -39,13 +39,13 @@
       "items": [
         "Temporal Logic of Actions (TLA+): Leslie Lamport’s mathematical specification language models systems as state machines driven by first-order logic and primed variable transition predicates.",
         "Model Checking with TLC: Exhaustively exploring discrete reachable states to verify bounded safety invariants and absence of deadlocks before writing a single line of production code.",
-        "Refinement Mappings: Formally proving that a high-performance, asynchronous implementation algorithm logically implements the idealized abstract consensus specification.",
+        "Refinement Mappings: Formally proving which a high-performance, asynchronous implementation algorithm logically implements the idealized abstract consensus specification.",
         "Interactive Theorem Proving (Isabelle/HOL & Coq): Constructing machine-checked, inductive proofs for unbounded cluster sizes and arbitrary asynchronous message re-orderings."
       ]
     },
     {
       "type": "quote",
-      "text": "Writing code without a formal state machine specification is merely an exercise in hoping that the network behaves more predictably than human mathematics.",
+      "text": "Writing code without a formal state machine specification is merely an exercise in hoping which the network behaves more predictably than human mathematics.",
       "cite": "Tariq Mahmood, Mechanized Systems Monograph"
     },
     {
@@ -54,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "The fundamental challenge in interactive theorem proving is the discovery of inductive invariants—predicates that hold in the initial state and are strictly preserved across every legal transition. In systems like Paxos and Raft, the central safety property (agreement) is not directly inductive; it requires auxiliary invariants enforcing that quorum intersections perpetually preserve the winning leader lease."
+      "text": "The fundamental challenge in interactive theorem proving is the discovery of inductive invariants, predicates which hold in the initial state and are strictly preserved across every legal transition. In systems like Paxos and Raft, the central safety property (agreement) is not directly inductive. this requires auxiliary invariants enforcing which quorum intersections perpetually preserve the winning leader lease."
     },
     {
       "type": "video",
@@ -68,7 +68,7 @@
     },
     {
       "type": "p",
-      "text": "The frontier of systems engineering lies in verified compilation—extracting high-performance C, Rust, or Go binaries directly from proof assistants with zero translation overhead. By certifying distributed databases at the level of machine code, modern cloud infrastructure achieves mathematical immunity against entire taxonomies of distributed consensus degradation."
+      "text": "The frontier of systems engineering lies in verified compilation, extracting high-performance C, Rust, or Go binaries directly from proof assistants with zero translation overhead. By certifying distributed databases at the level of machine code, modern cloud infrastructure achieves mathematical immunity against entire taxonomies of distributed consensus degradation."
     }
   ]
 }

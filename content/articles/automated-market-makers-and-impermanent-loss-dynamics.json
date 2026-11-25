@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Traditional stock exchanges require centralized market makers to maintain bid and ask queues. Decentralized finance (DeFi) introduced Automated Market Makers (AMMs), autonomous smart contract liquidity pools that determine asset prices algorithmically using mathematical invariant curves without intermediaries."
+      "text": "Traditional stock exchanges require centralized market makers to maintain bid and ask queues. Decentralized finance (DeFi) introduced Automated Market Makers (AMMs), autonomous smart contract liquidity pools which determine asset prices algorithmically using mathematical invariant curves without intermediaries."
     },
     {
       "type": "h2",
@@ -32,7 +32,7 @@
     {
       "type": "ul",
       "items": [
-        "The x * y = k Equation: Uniswap-style invariant where x represents the reserve of Asset A, y represents Asset B, and k remains constant throughout a swap.",
+        "The x y = k Equation: Uniswap-style invariant where x represents the reserve of Asset A, y represents Asset B, and k remains constant throughout a swap.",
         "Algorithmic Price Discovery: As traders buy token A, x decreases and y increases, moving the marginal price along the hyperbolic bonding curve.",
         "Impermanent Loss (IL): The opportunity cost suffered by liquidity providers when relative token prices diverge compared to simply holding the underlying assets.",
         "Concentrated Liquidity: V3-style algorithms enabling providers to allocate capital within discrete price ticks, dramatically boosting capital efficiency."

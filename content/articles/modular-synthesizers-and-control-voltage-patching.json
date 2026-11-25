@@ -33,14 +33,14 @@
       "type": "ul",
       "items": [
         "The 1V/Octave Standard: Pitch tracking where each additional volt of direct current doubles oscillator frequency, spanning musical chromatic scales.",
-        "Oscillators (VCO): Generating raw harmonic waveforms—sawtooth, square, triangle, and sine—via analog relaxation circuits.",
+        "Oscillators (VCO): Generating raw harmonic waveforms, sawtooth, square, triangle, and sine, via analog relaxation circuits.",
         "Voltage Controlled Filters (VCF): Carving away upper harmonics using four-pole ladder filters (Moog) or state-variable filters (Buchla).",
         "Low Pass Gates (LPG): Vactrol-based optocoupler circuits providing organic, percussive bongo plucks with natural physical decay tails."
       ]
     },
     {
       "type": "quote",
-      "text": "A modular synthesizer is not a musical instrument with a fixed interface; it is an open analog computing machine patched to perform generative acoustic self-composition.",
+      "text": "A modular synthesizer is not a musical instrument with a fixed interface. this is an open analog computing machine patched to perform generative acoustic self-composition.",
       "cite": "Questo Electroacoustic Synthesis & Sound Design Center"
     },
     {

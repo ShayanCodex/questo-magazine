@@ -1,7 +1,7 @@
 {
   "slug": "event-horizon-telescope-and-black-hole-interferometry",
   "title": "Imaging Supermassive Black Holes",
-  "excerpt": "The astrophysics of Very Long Baseline Interferometry, synchronizing millimeter radiotelescopes across planet Earth to resolve event horizon shadow structures.",
+  "excerpt": "The astrophysics of Long Baseline Interferometry, synchronizing millimeter radiotelescopes across planet Earth to resolve event horizon shadow structures.",
   "date": "2026-11-17",
   "author": "Dr. Zachary Vance",
   "category": "science",
@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "Resolving the event horizon of Messier 87 or Sagittarius A* is equivalent to spotting an orange on the surface of the Moon from Earth. No single optical telescope could ever achieve the angular resolution required. The Event Horizon Telescope (EHT) achieves this by combining synchronized radio observatories across six continents into a virtual telescope as large as our planet."
+      "text": "Resolving the event horizon of Messier 87 or Sagittarius A is equivalent to spotting an orange on the surface of the Moon from Earth. No single optical telescope might ever achieve the angular resolution required. The Event Horizon Telescope (EHT) achieves this by combining synchronized radio observatories across six continents into a virtual telescope as large as our planet."
     },
     {
       "type": "h2",
@@ -35,7 +35,7 @@
         "Hydrogen Maser Atomic Clocks: Providing ultra-stable sub-picosecond timing precision to tag petabytes of raw astronomical wavefront data.",
         "1.3-Millimeter Atmospheric Transparency: Tuning receivers to 230 GHz to pierce through galactic synchrotron dust and Earth moisture clouds.",
         "Supercomputer Data Correlation: Processing hard drives shipped from Antarctica and Atacama through specialized ASIC correlation supercomputers.",
-        "Computational Interferometric Imaging: Utilizing sparse Bayesian modeling and neural networks to reconstruct images from incomplete Fourier baseline coverage."
+        "Computational Interferometric Imaging: Using sparse Bayesian modeling and neural networks to reconstruct images from incomplete Fourier baseline coverage."
       ]
     },
     {
@@ -60,12 +60,12 @@
     {
       "type": "video",
       "src": "https://www.youtube-nocookie.com/embed/Q1bSDnuIPbo",
-      "title": "Veritasium: How Did They Actually Take This Black Hole Picture?",
-      "caption": "Derek Muller explores Very Long Baseline Interferometry, atomic clock phase calibration, and imaging the event horizon shadow."
+      "title": "Veritasium: How Did They Take This Black Hole Picture?",
+      "caption": "Derek Muller explores Long Baseline Interferometry, atomic clock phase calibration, and imaging the event horizon shadow."
     },
     {
       "type": "p",
-      "text": "Very Long Baseline Interferometry continues to expand into space-based orbiters to reveal the dynamic temporal motion of black hole plasma jets."
+      "text": "Long Baseline Interferometry continues to expand into space-based orbiters to reveal the dynamic temporal motion of black hole plasma jets."
     }
   ]
 }

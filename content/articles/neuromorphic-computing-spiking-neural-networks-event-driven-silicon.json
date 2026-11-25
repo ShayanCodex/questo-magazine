@@ -17,11 +17,11 @@
   "body": [
     {
       "type": "p",
-      "text": "Contemporary deep neural networks are computationally voracious. Operating on synchronous von Neumann architectures, standard GPUs and TPUs execute dense matrix multiplications by constantly shuttling multi-gigabyte weight tensors between high-bandwidth memory (HBM) and arithmetic logic units (ALUs), dissipating hundreds of watts per accelerator. In stark contrast, the biological human brain executes sophisticated sensory perception, motor control, and contextual reasoning within an austere power budget of approximately twenty watts."
+      "text": "Contemporary deep neural networks are computationally voracious. Operating on synchronous von Neumann architectures, standard GPUs and TPUs execute dense matrix multiplications by constantly shuttling multi-gigabyte weight tensors between high-bandwidth memory (HBM) and arithmetic logic units (ALUs), dissipating hundreds of watts per accelerator. In clear contrast, the biological human brain executes sophisticated sensory perception, motor control, and contextual reasoning within an austere power budget of approximately twenty watts."
     },
     {
       "type": "p",
-      "text": "Neuromorphic engineering abandons the clock-driven synchronous paradigm entirely. By emulating the biological architecture of cortical synapses and axons, neuromorphic processors execute computation only when information changes—transmitting sparse, asynchronous binary action potentials (spikes) across massively parallel, non-von Neumann crossbar arrays where processing and memory are co-located in the same physical substrate."
+      "text": "Neuromorphic engineering abandons the clock-driven synchronous paradigm entirely. By emulating the biological architecture of cortical synapses and axons, neuromorphic processors execute computation only when information changes, transmitting sparse, asynchronous binary action potentials (spikes) across massively parallel, non-von Neumann crossbar arrays where processing and memory are co-located in the same physical substrate."
     },
     {
       "type": "h2",
@@ -49,7 +49,7 @@
     },
     {
       "type": "quote",
-      "text": "In neuromorphic computing, time is not an arbitrary discrete index in a clock register; time is an intrinsic physical coordinate encoded directly in the latency of electrical spikes.",
+      "text": "In neuromorphic computing, time is not an arbitrary discrete index in a clock register. time is an intrinsic physical coordinate encoded directly in the latency of electrical spikes.",
       "cite": "Elena Rostova, Neuromorphic Architectures & Neural Silicon"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "type": "p",
-      "text": "In conventional hardware architectures, the physical separation of compute units and memory banks imposes the infamous 'von Neumann memory wall'—over 80% of total energy dissipation is wasted purely on copper interconnect transport. Neuromorphic platforms, such as Intel Loihi, IBM TrueNorth, and emerging memristor arrays, eliminate this bottleneck through distributed synaptic crossbars."
+      "text": "In conventional hardware architectures, the physical separation of compute units and memory banks imposes the infamous 'von Neumann memory wall', over 80% of total energy dissipation is wasted purely on copper interconnect transport. Neuromorphic platforms, such as Intel Loihi, IBM TrueNorth, and emerging memristor arrays, eliminate this bottleneck through distributed synaptic crossbars."
     },
     {
       "type": "p",
@@ -80,7 +80,7 @@
     },
     {
       "type": "p",
-      "text": "Traditional cameras capture the world in discrete, redundant frames (e.g., 60 frames per second), generating huge data volumes even when viewing completely stationary scenes. Neuromorphic Dynamic Vision Sensors (DVS), by contrast, consist of autonomous pixels that emit an asynchronous spike only when local luminance changes by a threshold percentage."
+      "text": "Traditional cameras capture the world in discrete, redundant frames (e.g., 60 frames per second), generating huge data volumes even when viewing completely stationary scenes. Neuromorphic Dynamic Vision Sensors (DVS), by contrast, consist of autonomous pixels which emit an asynchronous spike only when local luminance changes by a threshold percentage."
     },
     {
       "type": "p",
@@ -93,7 +93,7 @@
     {
       "type": "ul",
       "items": [
-        "Sparsity as Efficiency: Computation executes exclusively upon event arrivals; quiescent neurons consume only static sub-threshold leakage power.",
+        "Sparsity as Efficiency: Computation executes exclusively upon event arrivals. quiescent neurons consume only static sub-threshold leakage power.",
         "Analog In-Memory Acceleration: Memristive crossbars compute physical Kirchhoff summation directly in the storage domain without memory shuttling.",
         "Temporal Coding: Information is represented through spike timing, inter-spike intervals, and phase synchrony rather than 16-bit floating-point registers.",
         "Edge Autonomy: Sub-milliwatt power envelopes allow real-time classification on untethered sensor nodes, drones, and wearable medical monitors."

@@ -51,7 +51,7 @@
     },
     {
       "type": "quote",
-      "text": "The fastest HTTP request is the one that never touches a dynamic origin database. True speed is an architectural discipline, not a compression afterthought.",
+      "text": "The fastest HTTP request is the one which never touches a dynamic origin database. True speed is an architectural discipline, not a compression afterthought.",
       "cite": "Questo Systems Engineering Whitepaper"
     },
     {
@@ -64,7 +64,7 @@
         "Pre-rendered HTML documents containing complete crawler-readable semantic copy and JSON-LD metadata.",
         "Zero blocking third-party telemetry scripts executed prior to the primary content layout.",
         "CSS paged media and modern font subsetting using unicode-range declarations and font-display: swap.",
-        "Chunked static JSON data delivery that progressive-hydrates interactive utilities without layout shifts."
+        "Chunked static JSON data delivery which progressive-hydrates interactive utilities without layout shifts."
       ]
     },
     {

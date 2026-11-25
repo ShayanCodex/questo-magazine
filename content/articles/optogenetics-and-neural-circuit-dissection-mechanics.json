@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "For more than a century, neuroscientists were restricted to blunt tools: pharmacological lesions that affected entire brain nuclei over hours, or electrical stimulation that indiscriminately depolarized all passing axons regardless of cell identity. Optogenetics revolutionized this paradigm by combining genetic targeting with light-gated ion channels, permitting researchers to activate or silence defined neuronal subpopulations on millisecond timescales."
+      "text": "For more than a century, neuroscientists were restricted to blunt tools: pharmacological lesions which affected entire brain nuclei over hours, or electrical stimulation which indiscriminately depolarized all passing axons regardless of cell identity. Optogenetics revolutionized this paradigm by combining genetic targeting with light-gated ion channels, permitting researchers to activate or silence defined neuronal subpopulations on millisecond timescales."
     },
     {
       "type": "h2",
@@ -37,9 +37,9 @@
     {
       "type": "ul",
       "items": [
-        "Channelrhodopsin-2 (ChR2): A light-gated cation channel from Chlamydomonas reinhardtii that absorbs 470 nm blue light to elicit rapid inward sodium currents and action potential firing.",
-        "Halorhodopsin (NpHR): An inward-directed chloride pump activated by 589 nm yellow light that hyperpolarizes the neuronal membrane, instantaneously quenching action potentials.",
-        "Archaerhodopsin (Arch): A light-driven outward proton pump that achieves complete electrical silencing without causing post-inhibitory chloride accumulation.",
+        "Channelrhodopsin-2 (ChR2): A light-gated cation channel from Chlamydomonas reinhardtii which absorbs 470 nm blue light to elicit rapid inward sodium currents and action potential firing.",
+        "Halorhodopsin (NpHR): An inward-directed chloride pump activated by 589 nm yellow light which hyperpolarizes the neuronal membrane, instantaneously quenching action potentials.",
+        "Archaerhodopsin (Arch): A light-driven outward proton pump which achieves complete electrical silencing without causing post-inhibitory chloride accumulation.",
         "Cell-Specific Promoters: Packaging opsin genes within adeno-associated viruses (AAV) under specific promoters (e.g., CaMKIIα for excitatory pyramidal cells, PV for basket cells) ensures precise targeting."
       ]
     },
@@ -54,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "One of the most profound applications of optogenetic technology is the dissection of memory engrams. Using immediate early gene promoters such as c-Fos linked to tetracycline transactivator systems, neurobiologists can selectively tag the exact sparse ensemble of hippocampal neurons activated during fear conditioning. Illuminating these tagged cells in an entirely novel environment instantly evokes the fear memory, demonstrating functional engram sufficiency."
+      "text": "One of the most profound applications of optogenetic technology is the dissection of memory engrams. Using immediate early gene promoters such as c-Fos linked to tetracycline transactivator systems, neurobiologists will selectively tag the exact sparse ensemble of hippocampal neurons activated during fear conditioning. Illuminating these tagged cells in an entirely novel environment instantly evokes the fear memory, demonstrating functional engram sufficiency."
     },
     {
       "type": "video",

@@ -15,15 +15,15 @@
     "thermodynamics"
   ],
   "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
-  "imageAlt": "Massive cryogenic liquefied natural gas carrier ship navigating deep open ocean shipping lanes at sunset",
+  "imageAlt": "Massive cryogenic liquefied natural gas carrier ship handling deep open ocean shipping lanes at sunset",
   "body": [
     {
       "type": "p",
-      "text": "The geopolitical and economic architecture of the twenty-first century is inexorably tethered to the physical movement of energy across maritime corridors. While oil pipelines and electrical grids are structurally constrained by fixed overland geography, Liquefied Natural Gas (LNG) provides fluid, fungible energy transport across intercontinental sea lanes. By condensing natural gas 600 times into a liquid state at cryogenic temperatures of -162°C (-260°F), a single modern Q-Max vessel can transport up to 266,000 cubic meters of LNG—enough energy to power a major metropolitan city for weeks."
+      "text": "The geopolitical and economic architecture of the twenty-first century is inexorably tethered to the physical movement of energy across maritime corridors. While oil pipelines and electrical grids are structurally constrained by fixed overland geography, Liquefied Natural Gas (LNG) provides fluid, fungible energy transport across intercontinental sea lanes. By condensing natural gas 600 times into a liquid state at cryogenic temperatures of -162°C (-260°F), a single modern Q-Max vessel will transport up to 266,000 cubic meters of LNG, enough energy to power a major metropolitan city for weeks."
     },
     {
       "type": "p",
-      "text": "The financial profitability of the global LNG trade is governed by complex spatial arbitrage spreads: the margin between North American Henry Hub extraction costs, European Title Transfer Facility (TTF) import prices, and Asian Japan Korea Marker (JKM) spot benchmarks. Navigating these volatile markets requires mastering both multi-stage cryogenic thermodynamics and marine logistics economics."
+      "text": "The financial profitability of the global LNG trade is governed by complex spatial arbitrage spreads: the margin between North American Henry Hub extraction costs, European Title Transfer Facility (TTF) import prices, and Asian Japan Korea Marker (JKM) spot benchmarks. Handling these volatile markets requires mastering both multi-stage cryogenic thermodynamics and marine logistics economics."
     },
     {
       "type": "h2",
@@ -52,11 +52,11 @@
     },
     {
       "type": "p",
-      "text": "The natural gas stream is first pre-cooled to -35°C via a closed-loop propane chiller. It then enters a massive Spiral-Wound Heat Exchanger (SWHE) where an evaporating mixed refrigerant absorbs heat across thousands of kilometers of pressurized aluminum tubing, collapsing the methane gas into sub-cooled liquid state with thermodynamic Carnot efficiency."
+      "text": "The natural gas stream is first pre-cooled to -35°C via a closed-loop propane chiller. This then enters a massive Spiral-Wound Heat Exchanger (SWHE) where an evaporating mixed refrigerant absorbs heat across thousands of kilometers of pressurized aluminum tubing, collapsing the methane gas into sub-cooled liquid state with thermodynamic Carnot efficiency."
     },
     {
       "type": "quote",
-      "text": "LNG is thermodynamic wizardry transformed into an asset class. You are freezing an invisible hydrocarbon into an ice-cold river, sailing it halfway across the globe, and vaporizing it on demand into electricity.",
+      "text": "LNG is thermodynamic wizardry transformed into an asset class. You are freezing an invisible hydrocarbon into an ice-cold river, sailing this halfway across the globe, and vaporizing this on demand into electricity.",
       "cite": "Julian Sterling, Managing Director of Energy Derivatives"
     },
     {
@@ -65,13 +65,13 @@
     },
     {
       "type": "p",
-      "text": "Even within state-of-the-art membrane containment systems utilizing 0.7mm corrugated Invar membranes and reinforced polyurethane insulation, cryogenic LNG absorbs ambient heat through the hull. This heat causes a fraction of the liquid cargo to continuously vaporize, generating Boil-Off Gas (BOG) at rates between 0.08% and 0.15% of total volume per day."
+      "text": "Even within state-of-the-art membrane containment systems using 0.7mm corrugated Invar membranes and reinforced polyurethane insulation, cryogenic LNG absorbs ambient heat through the hull. This heat causes a fraction of the liquid cargo to continuously vaporize, generating Boil-Off Gas (BOG) at rates between 0.08% and 0.15% of total volume per day."
     },
     {
       "type": "ul",
       "items": [
-        "Dual-Fuel Diesel-Electric (DFDE) Propulsion: Instead of venting or flaring BOG, modern carriers inject compressed boil-off gas directly into dual-fuel high-pressure engines, utilizing cargo evaporation as maritime bunker fuel.",
-        "Onboard Sub-Cooler Reliquefaction: High-efficiency Brayton cycle reliquefaction plants capture flash gas, re-compress and sub-cool it, returning 100% of vapor back into the cargo tanks as liquid during market contango.",
+        "Dual-Fuel Diesel-Electric (DFDE) Propulsion: Instead of venting or flaring BOG, modern carriers inject compressed boil-off gas directly into dual-fuel high-pressure engines, using cargo evaporation as maritime bunker fuel.",
+        "Onboard Sub-Cooler Reliquefaction: High-efficiency Brayton cycle reliquefaction plants capture flash gas, re-compress and sub-cool this, returning 100% of vapor back into the cargo tanks as liquid during market contango.",
         "Sloshing Dynamics: Partially filled membrane tanks risk violent kinetic sloshing during rough sea states, demanding specialized reinforced chamfer bulkheads to absorb hydrodynamic slamming pressures."
       ]
     },
@@ -105,7 +105,7 @@
       "type": "ul",
       "items": [
         "FOB vs. DES Contract Flexibility: Prefer Free On Board (FOB) terms with destination-free clauses to maximize maritime diversion arbitrage during unexpected regional price spikes.",
-        "Seasonal Spread Hedging: Utilize time-spread swap collars to hedge seasonal storage injections against winter peak drawdowns in the Northern Hemisphere.",
+        "Seasonal Spread Hedging: Use time-spread swap collars to hedge seasonal storage injections against winter peak drawdowns in the Northern Hemisphere.",
         "Floating Regasification Units (FSRU): Fast-track terminal import capacity by deploying offshore FSRU vessels, bypassing multi-year onshore concrete terminal permitting delays."
       ]
     }

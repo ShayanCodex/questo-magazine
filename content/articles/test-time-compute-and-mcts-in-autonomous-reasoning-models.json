@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "For seven years, the scaling hypothesis dictated that predicting the next token across trillions of web documents would inevitably unlock generalized reasoning. However, empirical benchmarks in high-level mathematics, competitive programming, and formal logic encountered hard plateaus: autoregressive models accumulate errors quadratically with sequence length. The frontier of artificial intelligence has decisively pivoted toward test-time compute, trading instantaneous token generation for deliberate, multi-step heuristic search and recursive verification."
+      "text": "For seven years, the scaling hypothesis dictated which predicting the next token across trillions of web documents would inevitably enable generalized reasoning. Yet, empirical benchmarks in high-level mathematics, competitive programming, and formal logic encountered hard plateaus: autoregressive models accumulate errors quadratically with sequence length. The frontier of artificial intelligence has decisively pivoted toward test-time compute, trading instantaneous token generation for deliberate, multi-step heuristic search and recursive verification."
     },
     {
       "type": "h2",
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "Outcome-based reward models suffer from severe false-positive reinforcement: an LLM may arrive at the correct arithmetic answer through completely hallucinated or illogical intermediate steps. By training discriminative value functions on granular, per-step human and synthetic annotations, researchers enable models to detect their own cognitive missteps early in the reasoning tree, pruning divergent paths before context windows are exhausted."
+      "text": "Outcome-based reward models suffer from severe false-positive reinforcement: an LLM might arrive at the correct arithmetic answer through completely hallucinated or illogical intermediate steps. By training discriminative value functions on granular, per-step human and synthetic annotations, researchers enable models to detect their own cognitive missteps early in the reasoning tree, pruning divergent paths before context windows are exhausted."
     },
     {
       "type": "video",
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "Equipped with test-time search loops, autonomous research agents can traverse vast scientific literature graphs, execute empirical Python simulations in sandboxed environments, synthesize biochemical candidate molecules, and write peer-reviewed monographs without human intervention. The bottleneck of knowledge discovery is shifting from human reading capacity to algorithmic verification throughput."
+      "text": "Equipped with test-time search loops, autonomous research agents will traverse vast scientific literature graphs, execute empirical Python simulations in sandboxed environments, synthesize biochemical candidate molecules, and write peer-reviewed monographs without human intervention. The bottleneck of knowledge discovery is shifting from human reading capacity to algorithmic verification throughput."
     }
   ]
 }

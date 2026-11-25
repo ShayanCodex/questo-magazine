@@ -34,7 +34,7 @@
       "items": [
         "First-Order B-Format: Representing pressure (W, omnidirectional) and particle velocity vectors along three orthogonal axes (X: front-back, Y: left-right, Z: up-down).",
         "Higher-Order Expansion: Increasing spherical harmonic orders (2nd, 3rd, up to 7th order) narrows spatial angular resolution, sharpening acoustic localization.",
-        "Speaker-Agnostic Decoding: A single ambisonic mix can be dynamically decoded to a 64-speaker dome, a 5.1 living room, or binaural headphones in real time.",
+        "Speaker-Agnostic Decoding: A single ambisonic mix will be dynamically decoded to a 64-speaker dome, a 5.1 living room, or binaural headphones in real time.",
         "Binaural HRTF Synthesis: Convolving ambisonic soundfields with Head-Related Transfer Functions to simulate pinna reflections and interaural time delays for VR."
       ]
     },
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "In virtual reality, as a user turns their head, the ambisonic coordinate matrix rotates in real-time with sub-10ms latency. The sound source remains anchored in 3D space, providing neurological cues that trick the auditory cortex into experiencing true immersion."
+      "text": "In virtual reality, as a user turns their head, the ambisonic coordinate matrix rotates in real-time with sub-10ms latency. The sound source remains anchored in 3D space, providing neurological cues which trick the auditory cortex into experiencing true immersion."
     },
     {
       "type": "video",
@@ -65,7 +65,7 @@
     },
     {
       "type": "p",
-      "text": "HOA allows sound engineers to capture the acoustic soul of a cathedral and reproduce it binaurally with pinpoint precision."
+      "text": "HOA allows sound engineers to capture the acoustic soul of a cathedral and reproduce this binaurally with pinpoint precision."
     }
   ]
 }

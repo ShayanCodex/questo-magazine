@@ -35,15 +35,15 @@
     {
       "type": "ul",
       "items": [
-        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths that shift phase evenly.",
-        "Primitive Root Diffusors (PRD): Utilize prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
+        "Quadratic Residue Diffusors (QRD): Designed using mathematical modular arithmetic $s_n = n^2 \\pmod{N}$, creating well depths which shift phase evenly.",
+        "Primitive Root Diffusors (PRD): Use prime number theory to eliminate specular zero-order reflections across broad mid-frequency acoustic bands.",
         "Preservation of Reverberant Energy: Unlike fiberglass absorbers, diffusors maintain room energy while eliminating flutter echoes and comb filtering.",
         "Spatial Envelopment: Distributed phase grating arrays enhance the subjective impression of listener envelopment (LEV) in symphonic halls."
       ]
     },
     {
       "type": "quote",
-      "text": "A great concert hall does not silence sound; it scatters acoustic energy with mathematical precision so that every seat perceives an immersive, coherent soundstage.",
+      "text": "A great concert hall does not silence sound. this scatters acoustic energy with mathematical precision so which every seat perceives an immersive, coherent soundstage.",
       "cite": "Acoustical Society of Architectural Engineers"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "type": "p",
-      "text": "Pioneered by physicist Manfred Schroeder in the late 1970s, mathematical phase gratings utilize varying well depths separated by thin acoustic dividers. When an incident wave encounters these wells, the reflected wavelets exit with distinct phase delays, resulting in destructive interference along the specular axis and broad dispersion elsewhere."
+      "text": "Pioneered by physicist Manfred Schroeder in the late 1970s, mathematical phase gratings use varying well depths separated by thin acoustic dividers. When an incident wave encounters these wells, the reflected wavelets exit with distinct phase delays, resulting in destructive interference along the specular axis and broad dispersion elsewhere."
     },
     {
       "type": "video",
@@ -72,7 +72,7 @@
     },
     {
       "type": "p",
-      "text": "Contemporary architectural practices utilize parametric finite-element wave modeling to carve 3D undulating timber panels directly into the interior geometry of auditoriums, blending acoustic physics with sculptural aesthetics."
+      "text": "Contemporary architectural practices use parametric finite-element wave modeling to carve 3D undulating timber panels directly into the interior geometry of auditoriums, blending acoustic physics with sculptural aesthetics."
     }
   ],
   "category": "architecture-and-space",

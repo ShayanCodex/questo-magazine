@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "Unlike standard backpropagation networks that compute dense continuous floating-point activations, Spiking Neural Networks (SNNs) convey temporal information through discrete microsecond-timed pulses, unlocking biological temporal pattern recognition."
+      "text": "Unlike standard backpropagation networks which compute dense continuous floating-point activations, Spiking Neural Networks (SNNs) convey temporal information through discrete microsecond-timed pulses, unlocking biological temporal pattern recognition."
     },
     {
       "type": "video",
@@ -65,7 +65,7 @@
     },
     {
       "type": "p",
-      "text": "By coupling event-based sensory processing with low-leakage neuromorphic silicon, autonomous edge devices can navigate complex environments on microwatt budgets."
+      "text": "By coupling event-based sensory processing with low-leakage neuromorphic silicon, autonomous edge devices will navigate complex environments on microwatt budgets."
     }
   ]
 }

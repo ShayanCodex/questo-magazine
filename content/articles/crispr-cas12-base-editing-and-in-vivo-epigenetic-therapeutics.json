@@ -18,11 +18,11 @@
   "body": [
     {
       "type": "p",
-      "text": "The initial promise of genomic medicine—first demonstrated by classical CRISPR-Cas9 programmable endonuclease systems—was constrained by a dangerous molecular vulnerability: the creation of double-stranded DNA breaks (DSBs). While effective at gene knockout via non-homologous end joining (NHEJ), blunt DSBs trigger uncontrolled chromosomal translocations, large p53-dependent deletions, and unpredictable off-target insertions that limit direct systemic in-vivo therapeutic applications."
+      "text": "The initial promise of genomic medicine, first demonstrated by classical CRISPR-Cas9 programmable endonuclease systems, was constrained by a dangerous molecular vulnerability: the creation of double-stranded DNA breaks (DSBs). While effective at gene knockout via non-homologous end joining (NHEJ), blunt DSBs trigger uncontrolled chromosomal translocations, large p53-dependent deletions, and unpredictable off-target insertions which limit direct systemic in-vivo therapeutic applications."
     },
     {
       "type": "p",
-      "text": "The advent of precision base editing and engineered Cas12 orthologs has inaugurated the second genomic revolution. By tethering catalytically impaired Cas nickases to engineered deaminases, molecular biologists can now rewrite single nucleotide pairings—transitioning C•G into T•A or A•T into G•C—with surgical accuracy, zero double-stranded breaks, and minimal insertion-deletion (indel) footprints."
+      "text": "The advent of precision base editing and engineered Cas12 orthologs has inaugurated the second genomic revolution. By tethering catalytically impaired Cas nickases to engineered deaminases, molecular biologists will now rewrite single nucleotide pairings, transitioning C•G into T•A or A•T into G•C, with surgical accuracy, zero double-stranded breaks, and minimal insertion-deletion (indel) footprints."
     },
     {
       "type": "h2",
@@ -50,7 +50,7 @@
     },
     {
       "type": "quote",
-      "text": "We have transitioned from genomic demolition—cutting chromosomes with molecular scissors—to genomic word processing: rewriting individual chemical letters in the human genetic code with chemical precision.",
+      "text": "We have transitioned from genomic demolition, cutting chromosomes with molecular scissors, to genomic word processing: rewriting individual chemical letters in the human genetic code with chemical precision.",
       "cite": "Dr. Aris Thorne, Cellular Therapeutics & Precision Genomics"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "type": "p",
-      "text": "Furthermore, Cas12 exhibits unique non-specific single-stranded DNA collateral trans-cleavage activity upon target binding. While exploited for ultra-sensitive point-of-care diagnostic biosensors (such as DETECTR assays), therapeutic engineering utilizes engineered high-fidelity Cas12 variants where trans-cleavage is suppressed, ensuring strictly localized target modification within living human tissues."
+      "text": "Also, Cas12 exhibits unique non-specific single-stranded DNA collateral trans-cleavage activity upon target binding. While exploited for ultra-sensitive point-of-care diagnostic biosensors (such as DETECTR assays), therapeutic engineering utilizes engineered high-fidelity Cas12 variants where trans-cleavage is suppressed, ensuring strictly localized target modification within living human tissues."
     },
     {
       "type": "h2",
@@ -81,11 +81,11 @@
     },
     {
       "type": "p",
-      "text": "The primary hurdle in clinical translation is not editing efficiency in-vitro, but systemic delivery in-vivo. Viral vectors (such as Adeno-Associated Viruses, AAVs) suffer from limited cargo packaging limits (~4.7 kb), pre-existing neutralising human immunity, and prolonged intracellular Cas expression that elevates long-term off-target risks."
+      "text": "The primary hurdle in clinical translation is not editing efficiency in-vitro, but systemic delivery in-vivo. Viral vectors (such as Adeno-Associated Viruses, AAVs) suffer from limited cargo packaging limits (~4.7 kb), pre-existing neutralising human immunity, and prolonged intracellular Cas expression which elevates long-term off-target risks."
     },
     {
       "type": "p",
-      "text": "Synthetic Lipid Nanoparticles (LNPs) packaging transient mRNA and guide RNA offer the premier solution. Ionizable cationic lipids encapsulate genetic cargo at low pH, protecting nucleic acids in circulation and facilitating receptor-mediated endocytosis. By modulating lipid chemistry—incorporating tissue-specific targeting ligands (such as GalNAc for hepatocyte asialoglycoprotein receptors)—LNPs deliver transient pulses of base editors directly to affected organs, achieving durable therapeutic gene silencing without genomic integration."
+      "text": "Synthetic Lipid Nanoparticles (LNPs) packaging transient mRNA and guide RNA offer the premier solution. Ionizable cationic lipids encapsulate genetic cargo at low pH, protecting nucleic acids in circulation and facilitating receptor-mediated endocytosis. By modulating lipid chemistry, incorporating tissue-specific targeting ligands (such as GalNAc for hepatocyte asialoglycoprotein receptors), LNPs deliver transient pulses of base editors directly to affected organs, achieving durable therapeutic gene silencing without genomic integration."
     },
     {
       "type": "h2",

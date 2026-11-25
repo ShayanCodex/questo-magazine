@@ -38,14 +38,14 @@
       "type": "ul",
       "items": [
         "Through-Silicon Vias (TSVs): Microscopic vertical electrical connections etched completely through silicon wafers, enabling ultra-low latency die-to-die signaling across three-dimensional stacks.",
-        "CoWoS (Chip-on-Wafer-on-Substrate): High-density 2.5D packaging methodology utilizing passive silicon interposers to interconnect high-performance compute dies directly with High Bandwidth Memory (HBM).",
+        "CoWoS (Chip-on-Wafer-on-Substrate): High-density 2.5D packaging methodology using passive silicon interposers to interconnect high-performance compute dies directly with High Bandwidth Memory (HBM).",
         "Thermal Dissipation Ceilings: Stacking compute and memory dies exponentially increases heat flux density, demanding microchannel liquid cooling and diamond-composite heat spreaders.",
         "Foundry Capacity Concentration: Global packaging bottlenecks are overwhelmingly concentrated in specialized packaging facilities, creating acute single-point dependencies in the AI hardware supply chain."
       ]
     },
     {
       "type": "quote",
-      "text": "The primary bottleneck in cutting-edge compute is no longer transistor count or clock frequency, but the interconnect bandwidth density and thermal dissipation efficiency of the packaging substrate.",
+      "text": "The primary bottleneck in modern compute is no longer transistor count or clock frequency, but the interconnect bandwidth density and thermal dissipation efficiency of the packaging substrate.",
       "cite": "International Institute of Semiconductor Architects"
     },
     {
@@ -74,7 +74,7 @@
     },
     {
       "type": "p",
-      "text": "Because wafer-level packaging is now as technologically complex and capital-intensive as front-end lithography, leading industrial nations are allocating hundreds of billions in subsidies to establish domestic advanced assembly ecosystems. The sovereign resilience of computational infrastructure will ultimately depend on whether distributed packaging clusters can replicate the nanoscale precision of consolidated Asian supply chains."
+      "text": "Because wafer-level packaging is now as technologically complex and capital-intensive as front-end lithography, leading industrial nations are allocating hundreds of billions in subsidies to establish domestic advanced assembly ecosystems. The sovereign resilience of computational infrastructure will ultimately depend on whether distributed packaging clusters will replicate the nanoscale precision of consolidated Asian supply chains."
     }
   ]
 }

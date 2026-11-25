@@ -1,6 +1,6 @@
 {
   "slug": "ebpf-programmable-kernels-and-sub-millisecond-observability",
-  "title": "eBPF & Modern Kernel Observability",
+  "title": "EBPF & Modern Kernel Observability",
   "excerpt": "A systems programming monograph on bytecode sandboxing, in-kernel packet filtering, non-intrusive tracepoints, and zero-context-switch telemetry.",
   "date": "2026-11-15",
   "author": "Hiroshi Tanaka",
@@ -31,7 +31,7 @@
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
-      "alt": "eBPF & Modern Kernel Observability - Operational Figure 4",
+      "alt": "EBPF & Modern Kernel Observability - Operational Figure 4",
       "caption": "Empirical observation: operational mechanics and foundational telemetry supporting eBPF & Modern Kernel Observability."
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "type": "quote",
-      "text": "eBPF does to the operating system kernel what JavaScript did to the browser: it transforms a static, monolithic environment into a programmable platform.",
+      "text": "EBPF does to the operating system kernel what JavaScript did to the browser: this transforms a static, monolithic environment into a programmable platform.",
       "cite": "Kernel Systems Engineering & Network Architecture Journal"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "type": "p",
-      "text": "In hyperscale cloud architectures, traditional sidecar proxies impose unsustainable CPU and memory taxes. By attaching eBPF programs to raw socket buffers, distributed traces and cryptographic TLS handshakes can be inspected without instrumenting application source code or introducing latency into customer request flows."
+      "text": "In hyperscale cloud architectures, traditional sidecar proxies impose unsustainable CPU and memory taxes. By attaching eBPF programs to raw socket buffers, distributed traces and cryptographic TLS handshakes will be inspected without instrumenting application source code or introducing latency into customer request flows."
     },
     {
       "type": "video",
@@ -74,7 +74,7 @@
     },
     {
       "type": "p",
-      "text": "As cloud infrastructure demands lower latencies and tighter security isolation, eBPF is rapidly replacing conventional iptables, network proxies, and intrusive profiling daemons. It represents the defining systems engineering breakthrough of modern server platforms."
+      "text": "As cloud infrastructure demands lower latencies and tighter security isolation, eBPF is rapidly replacing conventional iptables, network proxies, and intrusive profiling daemons. This represents the defining systems engineering breakthrough of modern server platforms."
     }
   ]
 }

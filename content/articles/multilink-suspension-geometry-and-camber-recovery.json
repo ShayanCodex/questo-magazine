@@ -19,11 +19,11 @@
   "body": [
     {
       "type": "p",
-      "text": "In competitive motorsport and high-performance automotive engineering, tire grip is the supreme physical constraint limiting cornering velocity. A pneumatic racing tire delivers peak lateral adhesion only when its tread contact patch remains oriented perfectly perpendicular to the road plane under extreme cornering forces. However, as centrifugal acceleration forces the chassis to roll outward, conventional suspension systems lose negative camber, rolling the tire onto its outer shoulder and causing catastrophic loss of adhesion."
+      "text": "In competitive motorsport and high-performance automotive engineering, tire grip is the supreme physical constraint limiting cornering velocity. A pneumatic racing tire delivers peak lateral adhesion only when its tread contact patch remains oriented perfectly perpendicular to the road plane under extreme cornering forces. Yet, as centrifugal acceleration forces the chassis to roll outward, conventional suspension systems lose negative camber, rolling the tire onto its outer shoulder and causing catastrophic loss of adhesion."
     },
     {
       "type": "p",
-      "text": "Multilink suspension geometry decouples kinematic parameters that were historically compromised in MacPherson strut and rigid axle configurations. By distributing wheel hub location across five distinct spatial control links, engineers can independently program instant center migration, roll center height, dynamic camber recovery, and toe compliance steer with mathematical precision."
+      "text": "Multilink suspension geometry decouples kinematic parameters which were historically compromised in MacPherson strut and rigid axle configurations. By distributing wheel hub location across five distinct spatial control links, engineers will independently program instant center migration, roll center height, dynamic camber recovery, and toe compliance steer with mathematical precision."
     },
     {
       "type": "h2",
@@ -52,11 +52,11 @@
     },
     {
       "type": "p",
-      "text": "By shortening the upper control link relative to the lower link and angling its inner pivot downward, the suspension gains progressive negative camber as it compresses into bump travel ($d\\gamma / dz < 0$). This camber gain perfectly cancels out the angular roll of the sprung chassis, maintaining a flat tire contact patch throughout apex cornering."
+      "text": "By shortening the upper control link relative to the lower link and angling its inner pivot downward, the suspension gains progressive negative camber as this compresses into bump travel ($d\\gamma / dz < 0$). This camber gain perfectly cancels out the angular roll of the sprung chassis, maintaining a flat tire contact patch throughout apex cornering."
     },
     {
       "type": "quote",
-      "text": "A great chassis does not resist roll with brick-stiff anti-roll bars; it embraces roll through kinematic geometry that extracts maximum grip from the outside tire.",
+      "text": "A great chassis does not resist roll with brick-stiff anti-roll bars. this embraces roll through kinematic geometry which extracts maximum grip from the outside tire.",
       "cite": "Liam O'Connor, Vehicle Dynamics Specialist"
     },
     {
@@ -70,8 +70,8 @@
     {
       "type": "ul",
       "items": [
-        "High Roll Center: Transmits cornering forces instantaneously through suspension linkages with minimal body roll, but induces severe vertical jacking forces that narrow the track width.",
-        "Low or Sub-Ground Roll Center: Eliminates jacking forces, but creates an enormous roll moment arm ($h_{roll} = CG - RC$), demanding excessively stiff anti-roll bars that degrade tire compliance over kerbs.",
+        "High Roll Center: Transmits cornering forces instantaneously through suspension linkages with minimal body roll, but induces severe vertical jacking forces which narrow the track width.",
+        "Low or Sub-Ground Roll Center: Eliminates jacking forces, but creates an enormous roll moment arm ($h_{roll} = CG - RC$), demanding excessively stiff anti-roll bars which degrade tire compliance over kerbs.",
         "Dynamic Migration Envelope: A properly tuned five-link design restricts the roll center from migrating laterally by more than 20mm across ±3 degrees of chassis roll."
       ]
     },
@@ -91,7 +91,7 @@
     },
     {
       "type": "p",
-      "text": "In physical vehicles, suspension arms do not articulate about infinitely rigid spherical joints; they rely on elastomeric bushings or composite bearings with non-zero compliance under load. When a vehicle undergoes heavy lateral acceleration ($1.5g+$ in racing applications), the intense cornering force acts through the tire contact patch, exerting a massive yaw torque on the hub assembly."
+      "text": "In physical vehicles, suspension arms do not articulate about infinitely rigid spherical joints. they rely on elastomeric bushings or composite bearings with non-zero compliance under load. When a vehicle undergoes heavy lateral acceleration ($1.5g+$ in racing applications), the intense cornering force acts through the tire contact patch, exerting a massive yaw torque on the hub assembly."
     },
     {
       "type": "p",

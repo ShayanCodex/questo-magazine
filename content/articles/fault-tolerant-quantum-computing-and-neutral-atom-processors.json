@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "While superconducting transmon circuits pioneered early quantum demonstrations, their physical limitations—fixed planar geometries, microwave crosstalk, and lithographic manufacturing variations—create immense engineering obstacles on the path to thousands of logical qubits. Neutral atom quantum computing has emerged as a formidable successor: by trapping individual, identical rubidium or ytterbium atoms inside dynamic grids of laser optical tweezers in ultra-high vacuum, researchers achieve flawless qubit uniformity and dynamic all-to-all connectivity."
+      "text": "While superconducting transmon circuits pioneered early quantum demonstrations, their physical limitations, fixed planar geometries, microwave crosstalk, and lithographic manufacturing variations, create immense engineering obstacles on the path to thousands of logical qubits. Neutral atom quantum computing has emerged as a formidable successor: by trapping individual, identical rubidium or ytterbium atoms inside dynamic grids of laser optical tweezers in ultra-high vacuum, researchers achieve flawless qubit uniformity and dynamic all-to-all connectivity."
     },
     {
       "type": "h2",
@@ -32,7 +32,7 @@
     {
       "type": "ul",
       "items": [
-        "Rydberg State Blockade: Exciting atoms to high principal quantum numbers creates massive electric dipole moments, preventing adjacent atoms from excitation and executing high-fidelity two-qubit entanglement gates.",
+        "Rydberg State Blockade: Notable atoms to high principal quantum numbers creates massive electric dipole moments, preventing adjacent atoms from excitation and executing high-fidelity two-qubit entanglement gates.",
         "Acousto-Optic Deflector Tweezers: Dynamically rearranging physical atom positions during computation allows arbitrary non-local gate operations without swapping errors.",
         "Identical Natural Qubits: Every single neutral atom is geologically and quantum-mechanically identical, completely eliminating qubit frequency calibration drift.",
         "Fault-Tolerant Surface Codes: Transversal gate operations on encoded logical qubits demonstrate physical error rates below the fault-tolerant threshold."
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "Unlike static semiconductor chips where qubit connectivity is locked into fixed nearest-neighbor metal traces, optical tweezers can physically move entangled atoms across space mid-computation. This dynamic reconfigurability dramatically reduces the overhead required to implement quantum error correction surface codes, cutting the physical-to-logical qubit ratio by an order of magnitude."
+      "text": "Unlike static semiconductor chips where qubit connectivity is locked into fixed nearest-neighbor metal traces, optical tweezers will physically move entangled atoms across space mid-computation. This dynamic reconfigurability dramatically reduces the overhead required to implement quantum error correction surface codes, cutting the physical-to-logical qubit ratio by an order of magnitude."
     },
     {
       "type": "video",
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "As neutral atom architectures scale past one thousand physical qubits, they unlock exact simulations of complex molecular catalysts, nitrogen-fixing enzymes, and high-temperature superconductors, delivering practical scientific utility far beyond the reach of classical supercomputers."
+      "text": "As neutral atom architectures scale past one thousand physical qubits, they enable exact simulations of complex molecular catalysts, nitrogen-fixing enzymes, and high-temperature superconductors, delivering practical scientific utility far beyond the reach of classical supercomputers."
     }
   ]
 }

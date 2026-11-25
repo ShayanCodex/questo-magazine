@@ -19,11 +19,11 @@
   "body": [
     {
       "type": "p",
-      "text": "The architecture of a great concert hall is not merely a visual monument; it is a monumental acoustic instrument. When an orchestra performs, the physical enclosure of the hall reflects, diffuses, and absorbs sound waves, transforming mechanical instrument vibrations into an immersive spatial field. Historically, hall design was dominated by empirical trial and error—resulting in triumphs like Vienna's Musikverein and catastrophes where halls produced dead acoustic shadows or muddy flutter echoes. The modern science of architectural acoustics synthesizes wave mechanics, room eigenmodes, and number-theoretic diffusion surfaces."
+      "text": "The architecture of a great concert hall is not merely a visual monument. this is a monumental acoustic instrument. When an orchestra performs, the physical enclosure of the hall reflects, diffuses, and absorbs sound waves, transforming mechanical instrument vibrations into an immersive spatial field. Historically, hall design was dominated by empirical trial and error, resulting in triumphs like Vienna's Musikverein and catastrophes where halls produced dead acoustic shadows or muddy flutter echoes. The modern science of architectural acoustics synthesizes wave mechanics, room eigenmodes, and number-theoretic diffusion surfaces."
     },
     {
       "type": "p",
-      "text": "Achieving acoustic excellence requires balancing two contradictory objectives: clarity (the ability to distinguish individual instrumental timbres) and reverberance (the sense of being enveloped in a warm, blooming acoustic void). A hall that favors clarity feels clinical and dry; a hall that favors reverberance degrades speech intelligibility and rapid musical articulation."
+      "text": "Achieving acoustic excellence requires balancing two contradictory objectives: clarity (the ability to distinguish individual instrumental timbres) and reverberance (the sense of being enveloped in a warm, blooming acoustic void). A hall which favors clarity feels clinical and dry. a hall which favors reverberance degrades speech intelligibility and rapid musical articulation."
     },
     {
       "type": "h2",
@@ -52,11 +52,11 @@
     },
     {
       "type": "p",
-      "text": "For symphonic orchestral repertoire, the optimal $RT_{60}$ target is precisely 1.8 to 2.2 seconds. If $RT_{60}$ drops below 1.5 seconds, the acoustic space feels lifeless and dry; if it exceeds 2.5 seconds, rapid staccato passages blend into an unintelligible acoustic blur."
+      "text": "For symphonic orchestral repertoire, the optimal $RT_{60}$ target is precisely 1.8 to 2.2 seconds. If $RT_{60}$ drops below 1.5 seconds, the acoustic space feels lifeless and dry. if this exceeds 2.5 seconds, rapid staccato passages blend into an unintelligible acoustic blur."
     },
     {
       "type": "quote",
-      "text": "A concert hall does not create music; it creates the spatial void in which silence can slowly decay into resonance.",
+      "text": "A concert hall does not create music. this creates the spatial void in which silence will slowly decay into resonance.",
       "cite": "Mateo Silva, Expedition Fellow & Architecture Critic"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "Above the Schroeder frequency, mode density becomes so densely packed that sound can be modeled statistically as a diffuse geometrical sound field:"
+      "text": "Above the Schroeder frequency, mode density becomes so densely packed which sound will be modeled statistically as a diffuse geometrical sound field:"
     },
     {
       "type": "code",
@@ -78,7 +78,7 @@
     },
     {
       "type": "p",
-      "text": "In large symphonic halls, the Schroeder frequency drops into the sub-audible range, ensuring that the entire audible orchestral spectrum operates in the diffuse statistical regime."
+      "text": "In large symphonic halls, the Schroeder frequency drops into the sub-audible range, ensuring which the entire audible orchestral spectrum operates in the diffuse statistical regime."
     },
     {
       "type": "h2",
@@ -96,7 +96,7 @@
     },
     {
       "type": "p",
-      "text": "Flat parallel surfaces create specular reflections (like a mirror), generating harsh flutter echoes. Simple curved surfaces disperse sound but can create localized acoustic hotspots. In the 1970s, physicist Manfred Schroeder revolutionized acoustic architecture by applying number theory—specifically quadratic residues from modular arithmetic—to surface diffusion."
+      "text": "Flat parallel surfaces create specular reflections (like a mirror), generating harsh flutter echoes. Simple curved surfaces disperse sound but will create localized acoustic hotspots. In the 1970s, physicist Manfred Schroeder revolutionized acoustic architecture by applying number theory, specifically quadratic residues from modular arithmetic, to surface diffusion."
     },
     {
       "type": "p",
@@ -118,9 +118,9 @@
     {
       "type": "ul",
       "items": [
-        "Shoebox Typology (Musikverein, Boston Symphony Hall): High narrow rectangular halls that produce intense early lateral reflections from side walls, maximizing binaural cross-correlation (IACF) and envelopment.",
-        "Vineyard Typology (Berlin Philharmonie, Elbphilharmonie): Surrounds the orchestra with terraced seating pods, bringing listeners closer to the stage while utilizing sloping terrace parapets as early reflection surfaces.",
-        "Lateral Energy Fraction (LEF): Acoustic parameter measuring the proportion of sound arriving at listeners from side directions; high LEF creates the sensation of being surrounded by the acoustic source rather than viewing it through a distant window."
+        "Shoebox Typology (Musikverein, Boston Symphony Hall): High narrow rectangular halls which produce intense early lateral reflections from side walls, maximizing binaural cross-correlation (IACF) and envelopment.",
+        "Vineyard Typology (Berlin Philharmonie, Elbphilharmonie): Surrounds the orchestra with terraced seating pods, bringing listeners closer to the stage while using sloping terrace parapets as early reflection surfaces.",
+        "Lateral Energy Fraction (LEF): Acoustic parameter measuring the proportion of sound arriving at listeners from side directions. high LEF creates the sensation of being surrounded by the acoustic source rather than viewing this through a distant window."
       ]
     }
   ]

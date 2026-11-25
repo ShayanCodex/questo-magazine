@@ -19,7 +19,7 @@
   "body": [
     {
       "type": "p",
-      "text": "The electrification of commercial aviation, heavy haul freight, and high-range passenger transit is fundamentally constrained by the energy density and thermal runaway hazards of conventional liquid-electrolyte lithium-ion cells. Commercial graphite-intercalated cells top out at approximately 280 Wh/kg and rely on volatile, flammable organic carbonates that ignite under mechanical puncture or internal short circuits."
+      "text": "The electrification of commercial aviation, heavy haul freight, and high-range passenger transit is fundamentally constrained by the energy density and thermal runaway hazards of conventional liquid-electrolyte lithium-ion cells. Commercial graphite-intercalated cells top out at approximately 280 Wh/kg and rely on volatile, flammable organic carbonates which ignite under mechanical puncture or internal short circuits."
     },
     {
       "type": "p",
@@ -52,11 +52,11 @@
     },
     {
       "type": "p",
-      "text": "Because sulfide crystals possess softer, more polarizable sulfur anion frameworks, lithium ions encounter low migration activation barriers ($E_a < 0.25$ eV), permitting rapid transport that rivals traditional liquid electrolytes."
+      "text": "Because sulfide crystals possess softer, more polarizable sulfur anion frameworks, lithium ions encounter low migration activation barriers ($E_a < 0.25$ eV), permitting rapid transport which rivals traditional liquid electrolytes."
     },
     {
       "type": "quote",
-      "text": "Solid-state is not just a safer battery; it is the unlocking mechanism for pure lithium metal anodes, doubling gravimetric density by discarding heavy graphite hosts.",
+      "text": "Solid-state is not only a safer battery. this is the unlocking mechanism for pure lithium metal anodes, doubling gravimetric density by discarding heavy graphite hosts.",
       "cite": "Hiroshi Tanaka, Advanced Materials & Electrochemical Systems Fellow"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "type": "p",
-      "text": "Early theory posited that a rigid solid ceramic electrolyte would mechanically suppress lithium dendrite formation via the Monroe-Newman criterion (shear modulus $G_{SE} > 2 \\cdot G_{Li}$). However, operando X-ray tomography revealed that lithium metal readily infiltrates intergranular grain boundaries and microcracks under fast charging conditions."
+      "text": "Early theory posited which a rigid solid ceramic electrolyte would mechanically suppress lithium dendrite formation via the Monroe-Newman criterion (shear modulus $G_{SE} > 2 \\cdot G_{Li}$). Yet, operando X-ray tomography revealed which lithium metal readily infiltrates intergranular grain boundaries and microcracks under fast charging conditions."
     },
     {
       "type": "ul",
@@ -91,11 +91,11 @@
     },
     {
       "type": "p",
-      "text": "While pure lithium metal remains the ultimate goal, silicon provides an exceptional intermediate bridge. Silicon boasts a theoretical specific capacity of 3,579 mAh/g ($Li_{15}Si_4$), nearly ten times that of commercial graphite (372 mAh/g)."
+      "text": "While pure lithium metal remains the ultimate goal, silicon provides an exceptional intermediate bridge. Silicon boasts a theoretical specific capacity of 3,579 mAh/g ($Li_{15}Si_4$), nearly ten times which of commercial graphite (372 mAh/g)."
     },
     {
       "type": "p",
-      "text": "However, lithiation induces severe 300% volumetric expansion, pulverizing traditional electrodes. When embedded within an elastomeric solid-state binder matrix with high interfacial elasticity, micro-silicon composite anodes accommodate cyclic breathing without losing electrical percolating pathways."
+      "text": "Yet, lithiation induces severe 300% volumetric expansion, pulverizing traditional electrodes. When embedded within an elastomeric solid-state binder matrix with high interfacial elasticity, micro-silicon composite anodes accommodate cyclic breathing without losing electrical percolating pathways."
     },
     {
       "type": "h2",

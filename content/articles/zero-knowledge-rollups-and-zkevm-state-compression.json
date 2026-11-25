@@ -32,7 +32,7 @@
     {
       "type": "ul",
       "items": [
-        "Validity Proof Guarantees: Unlike Optimistic Rollups which depend on a 7-day fraud-proof dispute window, zk-Rollups rely on mathematical validity proofs (STARKs/SNARKs) that settle instantly.",
+        "Validity Proof Guarantees: Unlike Optimistic Rollups which depend on a 7-day fraud-proof dispute window, zk-Rollups rely on mathematical validity proofs (STARKs/SNARKs) which settle instantly.",
         "Arithmetization via R1CS & Plonk: Compiling general-purpose EVM opcodes into constraint systems over finite elliptic curves to generate verifiable arithmetic execution traces.",
         "Recursive Proof Composition: Compiling thousands of individual transaction proofs into a single parent proof using Plonky2, slashing on-chain verification gas costs to constant amounts.",
         "Calldata State Compression: Posting only the minimal state differentials (addresses, nonces, balance changes) to Layer-1 blob storage rather than entire signatures and script codes."
@@ -40,7 +40,7 @@
     },
     {
       "type": "quote",
-      "text": "Trust does not scale linearly; mathematics does. zk-Rollups allow global financial networks to achieve Visa-scale throughput with the cryptographic security of Ethereum base layer.",
+      "text": "Trust does not scale linearly. mathematics does. zk-Rollups allow global financial networks to achieve Visa-scale throughput with the cryptographic security of Ethereum base layer.",
       "cite": "Questo Distributed Cryptography & Zero-Knowledge Systems Group"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "The final frontier of zero-knowledge engineering lies in prover performance. By utilizing custom FPGA and ASIC hardware pipelines optimized for Number Theoretic Transforms (NTT) and Multi-Scalar Multiplication (MSM), proof generation times are dropping from minutes to seconds, bringing instantaneous web-scale finality to decentralized commerce."
+      "text": "The final frontier of zero-knowledge engineering lies in prover performance. By using custom FPGA and ASIC hardware pipelines optimized for Number Theoretic Transforms (NTT) and Multi-Scalar Multiplication (MSM), proof generation times are dropping from minutes to seconds, bringing instantaneous web-scale finality to decentralized commerce."
     }
   ]
 }

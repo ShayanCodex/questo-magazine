@@ -18,7 +18,7 @@
   "body": [
     {
       "type": "p",
-      "text": "Cardiovascular disease remains the principal cause of global mortality, yet clinical screening paradigms frequently rely on surrogate lipid metrics that obscure primary underlying mechanisms. Conventional total cholesterol and low-density lipoprotein cholesterol (LDL-C) quantifications quantify the aggregate cholesterol mass within circulating particles, failing to capture the absolute atherogenic particle number. Recent advances in molecular lipidology demonstrate that apolipoprotein B-100 (ApoB) particle concentration, coupled with endothelial nitric oxide synthase (eNOS) uncoupling, provides an exponentially more accurate predictive model of atheromatous plaque nucleation."
+      "text": "Cardiovascular disease remains the principal cause of global mortality, yet clinical screening paradigms frequently rely on surrogate lipid metrics which obscure primary underlying mechanisms. Conventional total cholesterol and low-density lipoprotein cholesterol (LDL-C) quantifications quantify the aggregate cholesterol mass within circulating particles, failing to capture the absolute atherogenic particle number. Recent advances in molecular lipidology demonstrate which apolipoprotein B-100 (ApoB) particle concentration, coupled with endothelial nitric oxide synthase (eNOS) uncoupling, provides an exponentially more accurate predictive model of atheromatous plaque nucleation."
     },
     {
       "type": "h2",
@@ -26,7 +26,7 @@
     },
     {
       "type": "p",
-      "text": "Every atherogenic lipoprotein particle—encompassing low-density lipoproteins (LDL), very-low-density lipoproteins (VLDL), intermediate-density lipoproteins (IDL), and lipoprotein(a)—carries precisely one molecule of apolipoprotein B-100 on its surface. When quantifying ApoB via immunoturbidimetric assay, clinicians measure the exact molar concentration of circulating atherogenic entities capable of crossing the arterial intima."
+      "text": "Every atherogenic lipoprotein particle, encompassing low-density lipoproteins (LDL), -low-density lipoproteins (VLDL), intermediate-density lipoproteins (IDL), and lipoprotein(a), carries precisely one molecule of apolipoprotein B-100 on its surface. When quantifying ApoB via immunoturbidimetric assay, clinicians measure the exact molar concentration of circulating atherogenic entities capable of crossing the arterial intima."
     },
     {
       "type": "image",
@@ -36,11 +36,11 @@
     },
     {
       "type": "p",
-      "text": "Atherosclerosis does not initiate on the luminal surface of the vessel wall; it occurs strictly within the sub-endothelial space. The rate of lipoprotein particle flux across the endothelial barrier is directly proportional to circulating particle concentration. Once sequestered within the extracellular matrix of the intima, proteoglycans bind to ApoB via electrostatic interactions, immobilizing the particle and predisposing it to oxidative modification by reactive oxygen species (ROS)."
+      "text": "Atherosclerosis does not initiate on the luminal surface of the vessel wall. this occurs strictly within the sub-endothelial space. The rate of lipoprotein particle flux across the endothelial barrier is directly proportional to circulating particle concentration. Once sequestered within the extracellular matrix of the intima, proteoglycans bind to ApoB via electrostatic interactions, immobilizing the particle and predisposing this to oxidative modification by reactive oxygen species (ROS)."
     },
     {
       "type": "quote",
-      "text": "ApoB particle count represents the absolute structural payload of atherogenesis. Two individuals with identical LDL-C can exhibit radically disparate particle burdens, directly dictating sub-endothelial penetration rates.",
+      "text": "ApoB particle count represents the absolute structural payload of atherogenesis. Two individuals with identical LDL-C will exhibit radically disparate particle burdens, directly dictating sub-endothelial penetration rates.",
       "cite": "Dr. Marcus Vance, Preventive Health Fellow"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "type": "p",
-      "text": "The vascular endothelium is an active endocrine organ that synthesizes nitric oxide (NO) via endothelial nitric oxide synthase (eNOS) using L-arginine and oxygen. Nitric oxide serves several foundational vascular defense functions:"
+      "text": "The vascular endothelium is an active endocrine organ which synthesizes nitric oxide (NO) via endothelial nitric oxide synthase (eNOS) using L-arginine and oxygen. Nitric oxide serves several foundational vascular defense functions:"
     },
     {
       "type": "ul",
@@ -67,7 +67,7 @@
     },
     {
       "type": "p",
-      "text": "Under chronic metabolic stress—characterized by insulin resistance, systemic hypertension, or elevated asymmetrical dimethylarginine (ADMA)—eNOS becomes uncoupled from its essential cofactor, tetrahydrobiopterin (BH4). Uncoupled eNOS produces superoxide radicals rather than protective nitric oxide, precipitating a state of profound endothelial vulnerability."
+      "text": "Under chronic metabolic stress, characterized by insulin resistance, systemic hypertension, or elevated asymmetrical dimethylarginine (ADMA), eNOS becomes uncoupled from its essential cofactor, tetrahydrobiopterin (BH4). Uncoupled eNOS produces superoxide radicals rather than protective nitric oxide, precipitating a state of profound endothelial vulnerability."
     },
     {
       "type": "h2",
@@ -89,7 +89,7 @@
     },
     {
       "type": "p",
-      "text": "Plaque rupture—the proximal trigger for acute coronary syndromes—is governed not by luminal occlusion percentage, but by biological vulnerability. Thin-cap fibroatheromas (TCFA) characterized by high macrophage infiltration, matrix metalloproteinase (MMP) secretion, and diminished extracellular collagen matrix exhibit extreme propensity for tectonic mechanical failure under hemodynamic stress."
+      "text": "Plaque rupture, the proximal trigger for acute coronary syndromes, is governed not by luminal occlusion percentage, but by biological vulnerability. Thin-cap fibroatheromas (TCFA) characterized by high macrophage infiltration, matrix metalloproteinase (MMP) secretion, and diminished extracellular collagen matrix exhibit extreme propensity for tectonic mechanical failure under hemodynamic stress."
     },
     {
       "type": "h2",
@@ -105,7 +105,7 @@
     },
     {
       "type": "p",
-      "text": "Medical Disclaimer: This article is published for educational and scientific research purposes only. It does not constitute individual medical diagnosis, clinical evaluation, or treatment advice. Consult a licensed medical physician or cardiologist for individualized cardiovascular risk evaluation."
+      "text": "Medical Disclaimer: This article is published for educational and scientific research purposes only. This does not constitute individual medical diagnosis, clinical evaluation, or treatment advice. Consult a licensed medical physician or cardiologist for individualized cardiovascular risk evaluation."
     }
   ]
 }

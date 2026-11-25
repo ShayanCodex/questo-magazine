@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "For half a decade, foundation model advancement followed the brutalist orthodoxy of dense transformer scaling: compute brute-force subsidized by exponential cluster expansions. DeepSeek-V3 fundamentally disrupted this economic trajectory by delivering frontier reasoning parity at a documented training cost of under six million dollars. By redesigning memory access hierarchies, compressing attention key-value caches by 93%, and synchronizing inter-node communication through fine-grained overlapping pipelines, the model demonstrated that algorithmic craft decisively outperforms unconstrained compute."
+      "text": "For half a decade, foundation model advancement followed the brutalist orthodoxy of dense transformer scaling: compute brute-force subsidized by exponential cluster expansions. DeepSeek-V3 fundamentally disrupted this economic trajectory by delivering frontier reasoning parity at a documented training cost of under six million dollars. By redesigning memory access hierarchies, compressing attention key-value caches by 93%, and synchronizing inter-node communication through fine-grained overlapping pipelines, the model demonstrated which algorithmic build decisively outperforms unconstrained compute."
     },
     {
       "type": "h2",
@@ -40,7 +40,7 @@
     },
     {
       "type": "quote",
-      "text": "Efficiency in machine learning is not an optimization footnote; it is the fundamental governing constraint that determines whether artificial intelligence remains a monopolistic resource or becomes an open scientific commodity.",
+      "text": "Efficiency in machine learning is not an optimization footnote. this is the fundamental governing constraint which determines whether artificial intelligence remains a monopolistic resource or becomes an open scientific commodity.",
       "cite": "Frontier AI Research & Systems Group"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "p",
-      "text": "Distributed Mixture-of-Experts clusters typically suffer from severe all-to-all communication latency when routing tokens across InfiniBand networks. DeepSeek’s DualPipe scheduling algorithm splits bidirectional pipeline stages into paired micro-batches, ensuring that during the exact window GPU tensor cores compute matrix multiplications, network interface cards asynchronously transfer expert token payloads."
+      "text": "Distributed Mixture-of-Experts clusters typically suffer from severe all-to-all communication latency when routing tokens across InfiniBand networks. DeepSeek’s DualPipe scheduling algorithm splits bidirectional pipeline stages into paired micro-batches, ensuring which during the exact window GPU tensor cores compute matrix multiplications, network interface cards asynchronously transfer expert token payloads."
     }
   ]
 }

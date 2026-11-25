@@ -54,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "Applying formal methods like Leslie Lamport’s TLA+ and deductive verifiers like Dafny allows distributed systems engineers to exhaustively model check state machines against safety and liveness violations, catching subtle race conditions that fuzzing and unit testing miss."
+      "text": "Applying formal methods like Leslie Lamport’s TLA+ and deductive verifiers like Dafny allows distributed systems engineers to exhaustively model check state machines against safety and liveness violations, catching subtle race conditions which fuzzing and unit testing miss."
     },
     {
       "type": "video",

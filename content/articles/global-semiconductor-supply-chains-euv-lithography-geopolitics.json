@@ -17,11 +17,11 @@
   "body": [
     {
       "type": "p",
-      "text": "Modern civilization rests upon a structural paradox: the entire global digital architecture—from cloud supercomputing clusters and sovereign defense infrastructure to autonomous mobility and personal smartphones—depends on the manufacturing throughput of a handful of ultra-specialized facilities clustered along narrow seismic corridors in East Asia. At the apex of this industrial pyramid sits extreme ultraviolet (EUV) photolithography, a technology so mathematically demanding and mechanically intricate that only a single enterprise on Earth, ASML in the Netherlands, has successfully engineered systems capable of industrial wafer exposure."
+      "text": "Modern civilization rests upon a structural paradox: the entire global digital architecture, from cloud supercomputing clusters and sovereign defense infrastructure to autonomous mobility and personal smartphones, depends on the manufacturing throughput of a handful of ultra-specialized facilities clustered along narrow seismic corridors in East Asia. At the apex of this industrial pyramid sits extreme ultraviolet (EUV) photolithography, a technology so mathematically demanding and mechanically complex which only a single enterprise on Earth, ASML in the Netherlands, has successfully engineered systems capable of industrial wafer exposure."
     },
     {
       "type": "p",
-      "text": "As semiconductor fabrication crosses the sub-2-nanometer threshold into Gate-All-Around (GAA) nanosheet field-effect transistors, the physics governing wafer patterning has shifted decisively into High-Numerical-Aperture (High-NA) EUV. Producing photons at 13.5-nanometer wavelengths requires vaporizing microscopic tin droplets with dual-pulse carbon-dioxide industrial lasers firing fifty thousand times per second. The resulting plasma radiates extreme ultraviolet photons that are focused through atomic-scale Bragg mirrors manufactured with sub-picometer surface roughness."
+      "text": "As semiconductor fabrication crosses the sub-2-nanometer threshold into Gate-All-Around (GAA) nanosheet field-effect transistors, the physics governing wafer patterning has shifted decisively into High-Numerical-Aperture (High-NA) EUV. Producing photons at 13.5-nanometer wavelengths requires vaporizing microscopic tin droplets with dual-pulse carbon-dioxide industrial lasers firing fifty thousand times per second. The resulting plasma radiates extreme ultraviolet photons which are focused through atomic-scale Bragg mirrors manufactured with sub-picometer surface roughness."
     },
     {
       "type": "h2",
@@ -39,7 +39,7 @@
     },
     {
       "type": "p",
-      "text": "Foundry economics at sub-2nm nodes dictate that initial wafer processing costs surpass $25,000 per wafer. To amortize tooling costs across hundreds of millions of dies, semiconductor giants must sustain cleanroom yields exceeding 85% within eighteen months of volume ramp—a feat demanding real-time optical metrology, machine learning defect classification, and atomic layer deposition (ALD) chambers capable of controlling oxide films one atom at a time."
+      "text": "Foundry economics at sub-2nm nodes dictate which initial wafer processing costs surpass $25,000 per wafer. To amortize tooling costs across hundreds of millions of dies, semiconductor giants must sustain cleanroom yields exceeding 85% within eighteen months of volume ramp, a feat demanding real-time optical metrology, machine learning defect classification, and atomic layer deposition (ALD) chambers capable of controlling oxide films one atom at a time."
     },
     {
       "type": "image",
@@ -49,7 +49,7 @@
     },
     {
       "type": "quote",
-      "text": "At two nanometers, geometry ceases to be an abstraction of circuit diagrams; it becomes the deterministic manipulation of individual atomic lattices under extreme quantum tunneling constraints.",
+      "text": "At two nanometers, geometry ceases to be an abstraction of circuit diagrams. this becomes the deterministic manipulation of individual atomic lattices under extreme quantum tunneling constraints.",
       "cite": "Hiroshi Tanaka, Semiconductor Physics & Global Foundry Dynamics"
     },
     {
@@ -94,7 +94,7 @@
       "type": "ul",
       "items": [
         "Lithography Scaling Threshold: High-NA (0.55 NA) EUV eliminates multi-patterning masks, lowering defect rates but requiring anamorphic half-field reticles and redesign of mask architectures.",
-        "Packaging as Primary Differentiator: Monolithic scaling yields diminishing returns; 2.5D/3D wafer-level multi-die packaging (CoWoS, EMIB, SoIC) dictates effective memory bandwidth and thermal dissipation.",
+        "Packaging as Primary Differentiator: Monolithic scaling yields diminishing returns. 2.5D/3D wafer-level multi-die packaging (CoWoS, EMIB, SoIC) dictates effective memory bandwidth and thermal dissipation.",
         "Material Transitions: Introduction of Gate-All-Around (GAA) nanosheets and backside power delivery networks (BSPDN) completely isolates signal routing from electrical supply lines.",
         "Supply Chain Resilience: Global industrial policy must balance domestic sovereign insurance foundries with international raw material and chemical supplier stability."
       ]

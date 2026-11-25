@@ -19,11 +19,11 @@
   "body": [
     {
       "type": "p",
-      "text": "The invention of the Automated Market Maker (AMM) represents one of the most radical structural innovations in financial market microstructures. In traditional centralized finance, market making relies on centralized limit order books (CLOBs) managed by high-frequency market-making firms who continuously post bids and asks. In peer-to-peer decentralized blockchains where block latency and gas costs render high-frequency order cancellation prohibitively expensive, deterministic mathematical formulas—Constant Function Market Makers (CFMMs)—replace order books with passive, algorithmic liquidity pools."
+      "text": "The invention of the Automated Market Maker (AMM) represents one of the most radical structural innovations in financial market microstructures. In traditional centralized finance, market making relies on centralized limit order books (CLOBs) managed by high-frequency market-making firms who continuously post bids and asks. In peer-to-peer decentralized blockchains where block latency and gas costs render high-frequency order cancellation prohibitively expensive, deterministic mathematical formulas, Constant Function Market Makers (CFMMs), replace order books with passive, algorithmic liquidity pools."
     },
     {
       "type": "p",
-      "text": "While the foundational constant-product model popularized by Uniswap v2 ($x \\cdot y = k$) delivered bulletproof robustness, it suffered from catastrophic capital inefficiency: capital was distributed uniformly across the entire price spectrum from zero to infinity, meaning less than 1% of pooled capital was active at current market prices. The transition to concentrated liquidity in Uniswap v3 resolved this constraint, transforming liquidity provision from passive holding into active geometric portfolio management."
+      "text": "While the foundational constant-product model popularized by Uniswap v2 ($x \\cdot y = k$) delivered bulletproof robustness, this suffered from catastrophic capital inefficiency: capital was distributed uniformly across the entire price spectrum from zero to infinity, meaning less than 1% of pooled capital was active at current market prices. The transition to concentrated liquidity in Uniswap v3 resolved this constraint, transforming liquidity provision from passive holding into active geometric portfolio management."
     },
     {
       "type": "h2",
@@ -52,7 +52,7 @@
     },
     {
       "type": "p",
-      "text": "By confining capital to a narrow price band around the spot price, an LP can achieve up to 4,000 times the capital efficiency of an unconstrained v2 pool. The identical trading volume produces exponentially greater fee generation per dollar deposited, drastically narrowing bid-ask spreads for institutional traders."
+      "text": "By confining capital to a narrow price band around the spot price, an LP will achieve up to 4,000 times the capital efficiency of an unconstrained v2 pool. The identical trading volume produces exponentially greater fee generation per dollar deposited, drastically narrowing bid-ask spreads for institutional traders."
     },
     {
       "type": "quote",
@@ -65,7 +65,7 @@
     },
     {
       "type": "p",
-      "text": "The central economic risk assumed by liquidity providers is Impermanent Loss (IL)—more accurately designated as divergence loss. Whenever the external market price moves away from the initial deposit ratio, the AMM deterministic pricing curve forces the LP to sell the appreciating asset and buy the depreciating asset."
+      "text": "The central economic risk assumed by liquidity providers is Impermanent Loss (IL), more accurately designated as divergence loss. Whenever the external market price moves away from the initial deposit ratio, the AMM deterministic pricing curve forces the LP to sell the appreciating asset and buy the depreciating asset."
     },
     {
       "type": "p",
@@ -74,7 +74,7 @@
     {
       "type": "ul",
       "items": [
-        "Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs can rebalance.",
+        "Asymmetric Arbitrage Flow: External market price movements allow toxic arbitrage order flow to pick off stale on-chain ticks before passive LPs will rebalance.",
         "Range Out-of-Bounds Risk: When spot price breaks outside $[p_a, p_b]$, the LP is 100% converted into the losing asset, terminating all fee accrual until rebalanced.",
         "Fee-to-Volatility Break-Even: For an LP position to remain net-profitable, fee yields must exceed the variance drag dictated by asset return volatility ($\\frac{1}{8}\\sigma^2$)."
       ]
@@ -113,9 +113,9 @@
     {
       "type": "ul",
       "items": [
-        "Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) can safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
+        "Correlated Assets Excel in Narrow Bands: Stablecoin pairs (e.g., USDT/USDC) will safely concentrate liquidity within ±0.1% bands, producing astronomical APYs with minimal directional risk.",
         "Dynamic Hedging Eliminates Delta: Sophisticated market makers offset directional gamma risk by shorting underlying perpetual futures on centralized venues while capturing LP fees on-chain.",
-        "Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers can rapidly erode accumulated LP fees; deploy automated liquidity management vaults."
+        "Manage Gas Amortization: Frequent tick rebalancing on high-fee settlement layers will rapidly erode accumulated LP fees. deploy automated liquidity management vaults."
       ]
     }
   ]

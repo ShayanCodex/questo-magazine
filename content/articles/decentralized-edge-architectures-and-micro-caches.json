@@ -19,7 +19,7 @@
   "body": [
     {
       "type": "p",
-      "text": "For the past two decades, cloud computing dogma instructed software architects to centralize application logic and persistent state into massive regional data facilities: us-east-1 in Virginia, eu-west-1 in Dublin, or ap-southeast-1 in Singapore. While centralized data centers simplified database locking and ACID consistency models, they introduced a physical, immutable constraint that no amount of CPU optimization could solve: the speed of light in fiber optic cables."
+      "text": "For the past two decades, cloud computing dogma instructed software architects to centralize application logic and persistent state into massive regional data facilities: us-east-1 in Virginia, eu-west-1 in Dublin, or ap-southeast-1 in Singapore. While centralized data centers simplified database locking and ACID consistency models, they introduced a physical, immutable constraint which no amount of CPU optimization might solve: the speed of light in fiber optic cables."
     },
     {
       "type": "p",
@@ -68,7 +68,7 @@
       "items": [
         "Near-zero TTFB: Time to First Byte drops from 400–600ms on dynamic origins to 15–25ms globally.",
         "Infinite DDoS resilience: Volumetric denial-of-service traffic is naturally distributed across hundreds of global PoPs, neutralizing attacks without stressing origin servers.",
-        "Origin shielding: Centralized build runners compile HTML once; edge caches absorb 99.8% of all read traffic.",
+        "Origin shielding: Centralized build runners compile HTML once. edge caches absorb 99.8% of all read traffic.",
         "Zero cold starts: V8 isolates eliminate the dreaded 3-second cold start delays common in legacy serverless architectures."
       ]
     },

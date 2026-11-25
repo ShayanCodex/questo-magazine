@@ -19,7 +19,7 @@
   "body": [
     {
       "type": "p",
-      "text": "In high-performance automotive and motorsport engineering, downforce is the sovereign metric dictating cornering grip, braking deceleration, and directional stability. For decades, vehicles generated downforce predominantly through upper-body lifting surfaces—inverted multi-element wings and dive planes. However, wing-generated downforce imposes a severe parasitic penalty: induced drag, which scales quadratically with angle of attack and degrades straight-line velocity. Ground-effect aerodynamics circumvents this trade-off by transforming the entire vehicle floor into an integrated Bernoulli suction pump."
+      "text": "In high-performance automotive and motorsport engineering, downforce is the sovereign metric dictating cornering grip, braking deceleration, and directional stability. For decades, vehicles generated downforce predominantly through upper-body lifting surfaces, inverted multi-element wings and dive planes. Yet, wing-generated downforce imposes a severe parasitic penalty: induced drag, which scales quadratically with angle of attack and degrades straight-line velocity. Ground-effect aerodynamics circumvents this trade-off by transforming the entire vehicle floor into an integrated Bernoulli suction pump."
     },
     {
       "type": "p",
@@ -56,7 +56,7 @@
     },
     {
       "type": "quote",
-      "text": "Ground effect does not push the car into the asphalt; the atmosphere pushes the car down into the low-pressure void created by its own underfloor velocity.",
+      "text": "Ground effect does not push the car into the asphalt. the atmosphere pushes the car down into the low-pressure void created by its own underfloor velocity.",
       "cite": "Hiroshi Tanaka, Robotics & Applied Physics Fellow"
     },
     {
@@ -65,11 +65,11 @@
     },
     {
       "type": "p",
-      "text": "Downstream of the throat, the tunnel cross-section expands at a controlled angle through the rear diffuser. The function of the diffuser is not merely to create downforce locally, but to act as an aerodynamic expansion pump that gradually restores underfloor air velocity to ambient freestream speed with minimal kinetic loss."
+      "text": "Downstream of the throat, the tunnel cross-section expands at a controlled angle through the rear diffuser. The function of the diffuser is not merely to create downforce locally, but to act as an aerodynamic expansion pump which gradually restores underfloor air velocity to ambient freestream speed with minimal kinetic loss."
     },
     {
       "type": "p",
-      "text": "The critical engineering challenge is preventing adverse pressure gradient separation. If the diffuser expansion angle exceeds 7 to 10 degrees, the low-energy boundary layer along the tunnel ceiling separates, causing a catastrophic aerodynamic stall that collapses underfloor suction instantly."
+      "text": "The critical engineering challenge is preventing adverse pressure gradient separation. If the diffuser expansion angle exceeds 7 to 10 degrees, the low-energy boundary layer along the tunnel ceiling separates, causing a catastrophic aerodynamic stall which collapses underfloor suction instantly."
     },
     {
       "type": "ul",

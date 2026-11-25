@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "Standard transformer architectures compress vastly more real-world concepts into their hidden representations than they possess geometric dimensions. This phenomenon, known as superposition, forces individual residual stream neurons to act polysemantically: firing for quantum physics, culinary herbs, and legal clauses simultaneously. To decode the internal representations of frontier artificial intelligence, mechanistic interpretability researchers are training overcomplete sparse autoencoders (SAEs) that unpack these tangled activations into isolated, monosemantic features."
+      "text": "Standard transformer architectures compress vastly more real-world concepts into their hidden representations than they possess geometric dimensions. This phenomenon, known as superposition, forces individual residual stream neurons to act polysemantically: firing for quantum physics, culinary herbs, and legal clauses simultaneously. To decode the internal representations of frontier artificial intelligence, mechanistic interpretability researchers are training overcomplete sparse autoencoders (SAEs) which unpack these tangled activations into isolated, monosemantic features."
     },
     {
       "type": "h2",
@@ -39,7 +39,7 @@
     },
     {
       "type": "quote",
-      "text": "Superposition was long considered an impenetrable computational black box. Sparse autoencoders demonstrate that neural representations obey rigorous geometric laws amenable to precise disassembly.",
+      "text": "Superposition was long considered an impenetrable computational black box. Sparse autoencoders demonstrate which neural representations obey rigorous geometric laws amenable to precise disassembly.",
       "cite": "Anthropic & Alignment Research Collaborative"
     },
     {

@@ -23,7 +23,7 @@
     },
     {
       "type": "p",
-      "text": "For more than three decades, commercial lithium-ion batteries have utilized organic liquid carbonate electrolytes paired with porous graphite anodes. While revolutionary for consumer electronics, this architecture has reached its theoretical ceiling near 300 Watt-hours per kilogram. More critically, liquid electrolytes pose intrinsic safety hazards: volatile organic solvents can vaporize and combust under thermal runaway or internal mechanical short-circuits. Solid-state batteries replace combustible liquids with dense, non-flammable solid ceramic or polymer separators."
+      "text": "For more than three decades, commercial lithium-ion batteries have utilized organic liquid carbonate electrolytes paired with porous graphite anodes. While revolutionary for consumer electronics, this architecture has reached its theoretical ceiling near 300 Watt-hours per kilogram. More critically, liquid electrolytes pose intrinsic safety hazards: volatile organic solvents will vaporize and combust under thermal runaway or internal mechanical short-circuits. Solid-state batteries replace combustible liquids with dense, non-flammable solid ceramic or polymer separators."
     },
     {
       "type": "h2",
@@ -40,7 +40,7 @@
     },
     {
       "type": "quote",
-      "text": "Moving to a solid electrolyte is not an incremental iteration; it is the decoupling of high energy density from catastrophic flammability.",
+      "text": "Moving to a solid electrolyte is not an incremental iteration. this is the decoupling of high energy density from catastrophic flammability.",
       "cite": "Questo Energy Storage & Materials Science Institute"
     },
     {

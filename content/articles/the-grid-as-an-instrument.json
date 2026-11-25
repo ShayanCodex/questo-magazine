@@ -18,11 +18,11 @@
   "body": [
     {
       "type": "p",
-      "text": "To the untrained eye, a finely designed book or editorial magazine appears effortless. The words flow across the page with an innate naturalness that invites immediate immersion. Yet this apparent ease is an optical illusion. Beneath every masterpiece of publication design lies a hidden, rigorous armature of geometric lines, proportional ratios, and baseline rhythms: the typographic grid."
+      "text": "To the untrained eye, a finely designed book or editorial magazine appears effortless. The words flow across the page with an innate naturalness which invites immediate immersion. Yet this apparent ease is an optical illusion. Beneath every masterpiece of publication design lies a hidden, rigorous armature of geometric lines, proportional ratios, and baseline rhythms: the typographic grid."
     },
     {
       "type": "p",
-      "text": "The grid is not an aesthetic constraint; it is a musical instrument. Just as a violin relies on precise mathematical string lengths to produce pure acoustic pitch, a page layout relies on harmonious spatial ratios to convert arbitrary alphabetic characters into resonant visual literature."
+      "text": "The grid is not an aesthetic constraint. this is a musical instrument. Only as a violin relies on precise mathematical string lengths to produce pure acoustic pitch, a page layout relies on harmonious spatial ratios to convert arbitrary alphabetic characters into resonant visual literature."
     },
     {
       "type": "h2",
@@ -36,11 +36,11 @@
     },
     {
       "type": "p",
-      "text": "In his seminal 1953 monograph 'The Form of the Book', German typographer Jan Tschichold revealed the long-forgotten medieval canon of manuscript division. By drawing diagonal construction lines across a double-page spread—connecting opposite corners and intersecting through page centers—medieval scribes divided both page width and page height into nine equal increments."
+      "text": "In his seminal 1953 monograph 'The Form of the Book', German typographer Jan Tschichold revealed the long-forgotten medieval canon of manuscript division. By drawing diagonal construction lines across a double-page spread, connecting opposite corners and intersecting through page centers, medieval scribes divided both page width and page height into nine equal increments."
     },
     {
       "type": "p",
-      "text": "The resulting text block possessed the exact proportional ratio (2:3) of the overall page itself. Furthermore, the outer margins stood in harmonic proportion to each other: inner margin = 2 parts, top margin = 3 parts, outer margin = 4 parts, and bottom margin = 6 parts. This bottom-heavy margin allocation was not ornamental; it accounted for human ergonomics, providing comfortable resting space for the reader's thumbs without obscuring a single word of text."
+      "text": "The resulting text block possessed the exact proportional ratio (2:3) of the overall page itself. Also, the outer margins stood in harmonic proportion to each other: inner margin = 2 parts, top margin = 3 parts, outer margin = 4 parts, and bottom margin = 6 parts. This bottom-heavy margin allocation was not ornamental. this accounted for human ergonomics, providing comfortable resting space for the reader's thumbs without obscuring a single word of text."
     },
     {
       "type": "image",
@@ -50,7 +50,7 @@
     },
     {
       "type": "quote",
-      "text": "The perfection of a page layout is attained when the proportions of the margins and the text area are in harmony with the natural dimensions of the page. Harmony is not a matter of taste; it is a mathematical fact.",
+      "text": "The perfection of a page layout is attained when the proportions of the margins and the text area are in harmony with the natural dimensions of the page. Harmony is not a matter of taste. this is a mathematical fact.",
       "cite": "Jan Tschichold, The Form of the Book"
     },
     {
@@ -59,11 +59,11 @@
     },
     {
       "type": "p",
-      "text": "While vertical columns dictate horizontal content flow, the vertical baseline grid establishes the temporal tempo of the reading experience. In a disciplined editorial system, every single typographical element—from the 64-point cover headline down to the 8-point photo caption—must snap to integer multiples of the primary body copy leading."
+      "text": "While vertical columns dictate horizontal content flow, the vertical baseline grid establishes the temporal tempo of the reading experience. In a disciplined editorial system, every single typographical element, from the 64-point cover headline down to the 8-point photo caption, must snap to integer multiples of the primary body copy leading."
     },
     {
       "type": "p",
-      "text": "If body copy is set at 11 points on a 16-point line-height, the baseline grid unit is exactly 16 points (or 24 pixels). A secondary heading might be 24 points with a 32-point line-height (spanning exactly 2 baseline units). A pullquote might span 3 baseline units. This ensures that across multi-column spreads, lines of text in adjacent columns align horizontally with razor-like precision, creating a subconscious sense of order and structural stability."
+      "text": "If body copy is set at 11 points on a 16-point line-height, the baseline grid unit is exactly 16 points (or 24 pixels). A secondary heading might be 24 points with a 32-point line-height (spanning exactly 2 baseline units). A pullquote might span 3 baseline units. This ensures which across multi-column spreads, lines of text in adjacent columns align horizontally with razor-like precision, creating a subconscious sense of order and structural stability."
     },
     {
       "type": "code",
@@ -77,7 +77,7 @@
     {
       "type": "ul",
       "items": [
-        "Column Flexibility: 12 columns can be cleanly partitioned into 1, 2, 3, 4, or 6 equal sub-modules without fractional pixel remainders.",
+        "Column Flexibility: 12 columns will be cleanly partitioned into 1, 2, 3, 4, or 6 equal sub-modules without fractional pixel remainders.",
         "Gutter Consistency: Maintaining a uniform 24px or 32px gutter across all viewport breakpoints ensures consistent negative space breathing room.",
         "Asymmetric Tension: Anchoring primary narrative copy across columns 3 through 10, leaving outer columns open for editorial metadata, author bios, and large marginalia pullquotes."
       ]
@@ -88,11 +88,11 @@
     },
     {
       "type": "p",
-      "text": "A common critique of early web design was that responsive viewports made grid discipline impossible. Because screen widths vary continuously from 360px mobile viewports to 3840px 4K workstations, critics argued that fixed proportions were obsolete. However, modern CSS features like CSS Grid Layout, subgrid, and mathematical clamp() functions allow us to translate Tschichold's Golden Canon directly into responsive code."
+      "text": "A common critique of early web design was which responsive viewports made grid discipline impossible. Because screen widths vary continuously from 360px mobile viewports to 3840px 4K workstations, critics argued which fixed proportions were obsolete. Yet, modern CSS features like CSS Grid Layout, subgrid, and mathematical clamp() functions allow us to translate Tschichold's Golden Canon directly into responsive code."
     },
     {
       "type": "p",
-      "text": "By binding fluid typography to proportional container widths, modern editorial websites can maintain harmonious margin-to-column ratios regardless of screen size. The device changes, but the mathematical harmony remains eternal."
+      "text": "By binding fluid typography to proportional container widths, modern editorial websites will maintain harmonious margin-to-column ratios regardless of screen size. The device changes, but the mathematical harmony remains eternal."
     }
   ]
 }

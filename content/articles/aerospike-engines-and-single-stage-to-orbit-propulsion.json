@@ -22,7 +22,7 @@
     },
     {
       "type": "p",
-      "text": "Conventional bell nozzles suffer from an inescapable physical compromise: nozzle expansion ratio is fixed during manufacturing. At sea level, atmospheric pressure over-expands the exhaust plume, inducing destructive separation shocks; in vacuum, the nozzle is under-expanded, surrendering substantial specific impulse (Isp). The aerospike engine eliminates this physical bottleneck through dynamic aerodynamic altitude compensation."
+      "text": "Conventional bell nozzles suffer from an inescapable physical compromise: nozzle expansion ratio is fixed during manufacturing. At sea level, atmospheric pressure over-expands the exhaust plume, inducing destructive separation shocks. in vacuum, the nozzle is under-expanded, surrendering substantial specific impulse (Isp). The aerospike engine eliminates this physical bottleneck through dynamic aerodynamic altitude compensation."
     },
     {
       "type": "h2",
@@ -40,7 +40,7 @@
         "Aerodynamic Boundary: Ambient atmospheric pressure acts as an invisible outer nozzle wall, allowing the exhaust plume to expand naturally from sea level to orbit.",
         "Constant Specific Impulse: Linear and toroidal aerospike architectures maintain near-optimal expansion across the entire flight trajectory.",
         "Thermal Management: Concentrating combustion gases along a central spike demands regenerative cooling with cryogenic liquid methane or hydrogen.",
-        "Single-Stage Viability: By eliminating staged vehicle drop-offs, aerospike-equipped craft approach the theoretical mass ratio required for single-stage-to-orbit (SSTO)."
+        "Single-Stage Viability: By eliminating staged vehicle drop-offs, aerospike-equipped build approach the theoretical mass ratio required for single-stage-to-orbit (SSTO)."
       ]
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "type": "p",
-      "text": "Historical aerospike development in the twentieth century foundered on metallurgical limits: the central spike tip experienced thermal flux exceeding nuclear reactor cores. Modern laser powder bed fusion (LPBF) copper alloy printing enables micro-channel cooling pathways that route sub-zero cryogenic propellants within millimeters of the supersonic combustion shear layer."
+      "text": "Historical aerospike development in the twentieth century foundered on metallurgical limits: the central spike tip experienced thermal flux exceeding nuclear reactor cores. Modern laser powder bed fusion (LPBF) copper alloy printing enables micro-channel cooling pathways which route sub-zero cryogenic propellants within millimeters of the supersonic combustion shear layer."
     },
     {
       "type": "video",

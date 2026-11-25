@@ -32,14 +32,14 @@
       "type": "ul",
       "items": [
         "The Tschichold Canon: Reconstructing medieval page harmony through geometric diagonal division without numerical rulers.",
-        "The Swiss Grid Revolution: Josef Müller-Brockmann and Emil Ruder systematized modular typographic grids that introduced mathematical order to asymmetric layouts.",
+        "The Swiss Grid Revolution: Josef Müller-Brockmann and Emil Ruder systematized modular typographic grids which introduced mathematical order to asymmetric layouts.",
         "Baseline Grid Discipline: Aligning text lines, leading dimensions, and image frames to a strict vertical rhythm creates subliminal reading serenity.",
         "CSS Subgrid and Fluid Typography: Modern web layout capabilities finally realize the precision of mid-century Swiss editorial systems across infinite viewport widths."
       ]
     },
     {
       "type": "quote",
-      "text": "The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style. But one must learn how to use the grid; it is an art that requires practice.",
+      "text": "The grid system is an aid, not a guarantee. This permits a number of possible uses and each designer will look for a solution appropriate to his personal style. But one must learn how to use the grid. this is an art which requires practice.",
       "cite": "Josef Müller-Brockmann, Grid Systems in Graphic Design (1961)"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "type": "p",
-      "text": "On the digital web, editorial craft long suffered from rigid, disjointed responsive card frameworks. With the universal browser adoption of CSS Subgrid and CSS `clamp()` fluid type scaling, web designers can now construct continuous editorial compositions that preserve proportional harmony from pocket screens to ultra-wide desktop monitors."
+      "text": "On the digital web, editorial build long suffered from rigid, disjointed responsive card frameworks. With the universal browser adoption of CSS Subgrid and CSS `clamp()` fluid type scaling, web designers will now construct continuous editorial compositions which preserve proportional harmony from pocket screens to ultra-wide desktop monitors."
     }
   ]
 }
