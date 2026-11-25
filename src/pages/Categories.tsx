@@ -146,6 +146,42 @@ export function Categories() {
     return { catMap, subMap };
   }, [articles]);
 
+  // Map distinct, relatable cover images to every category and subcategory
+  const mediaMaps = useMemo(() => {
+    const catImages = new Map<string, string>();
+    const subImages = new Map<string, string>();
+    const usedUrls = new Set<string>();
+
+    for (const art of articles) {
+      if (!art.image) continue;
+      const { category, subcategory } = getArticleCategory(art);
+      if (!catImages.has(category.id) && !usedUrls.has(art.image)) {
+        catImages.set(category.id, art.image);
+        usedUrls.add(art.image);
+      }
+      if (subcategory) {
+        const subKey = `${category.id}:${subcategory.id}`;
+        if (!subImages.has(subKey) && !usedUrls.has(art.image)) {
+          subImages.set(subKey, art.image);
+          usedUrls.add(art.image);
+        }
+      }
+    }
+
+    // Fallback pass if any subcategory had no unused image
+    for (const art of articles) {
+      if (!art.image) continue;
+      const { category, subcategory } = getArticleCategory(art);
+      if (!catImages.has(category.id)) catImages.set(category.id, art.image);
+      if (subcategory) {
+        const subKey = `${category.id}:${subcategory.id}`;
+        if (!subImages.has(subKey)) subImages.set(subKey, art.image);
+      }
+    }
+
+    return { catImages, subImages };
+  }, [articles]);
+
   // Total unique subcategories count
   const totalSubcategories = useMemo(() => {
     return CATEGORIES.reduce((acc, cat) => acc + cat.subcategories.length, 0);
@@ -371,24 +407,48 @@ export function Categories() {
             const articleCount = counts.catMap.get(cat.id) || 0;
             const CategoryIcon = getCategoryIcon(cat.id);
             const categoryHref = localePath(`/categories/${cat.id}`);
+            const catImage = mediaMaps.catImages.get(cat.id);
 
             return (
               <Link
                 key={cat.id}
                 to={categoryHref}
-                className="group relative p-6 sm:p-8 rounded-2xl border border-editorial-border bg-editorial-surface hover:border-editorial-text/70 transition-all duration-300 flex flex-col justify-between gap-6 text-start shadow-xs hover:shadow-md hover:-translate-y-0.5 block focus:outline-none focus:ring-2 focus:ring-editorial-text/20"
+                className="group relative p-5 sm:p-6 rounded-2xl border border-editorial-border bg-editorial-surface hover:border-editorial-text/70 transition-all duration-300 flex flex-col justify-between gap-5 text-start shadow-xs hover:shadow-md hover:-translate-y-0.5 block focus:outline-none focus:ring-2 focus:ring-editorial-text/20"
               >
                 <div className="space-y-4">
-                  {/* Top Action Row: Distinctive Category Icon on left, Badges & Explore on right */}
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-2xs shrink-0 bg-editorial-surface-subtle text-editorial-text border border-editorial-border group-hover:border-editorial-text group-hover:bg-editorial-text group-hover:text-editorial-bg">
-                      <CategoryIcon className="h-5.5 w-5.5 transition-transform duration-300 group-hover:scale-110" />
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs font-sans text-editorial-muted font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border/80 shadow-2xs">
+                  {/* Relatable Category Cover Image */}
+                  {catImage && (
+                    <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-editorial-border/60 bg-editorial-surface-subtle">
+                      <img
+                        src={catImage}
+                        alt={getCategoryName(cat.id, language.code)}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+                      <div className="absolute top-3 start-3 w-9 h-9 rounded-lg flex items-center justify-center bg-editorial-bg/90 text-editorial-text border border-editorial-border/70 backdrop-blur-xs shadow-xs">
+                        <CategoryIcon className="h-4.5 w-4.5" />
+                      </div>
+                      <span className="absolute bottom-3 end-3 text-[11px] font-sans font-semibold px-2.5 py-0.5 rounded-full bg-black/70 text-white backdrop-blur-xs">
                         {articleCount} {t.articles || 'articles'}
                       </span>
+                    </div>
+                  )}
+
+                  {/* Top Action Row */}
+                  <div className="flex items-center justify-between gap-3">
+                    {!catImage && (
+                      <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-2xs shrink-0 bg-editorial-surface-subtle text-editorial-text border border-editorial-border group-hover:border-editorial-text group-hover:bg-editorial-text group-hover:text-editorial-bg">
+                        <CategoryIcon className="h-5.5 w-5.5 transition-transform duration-300 group-hover:scale-110" />
+                      </div>
+                    )}
+
+                    <div className="flex items-center gap-2 ms-auto">
+                      {!catImage && (
+                        <span className="text-xs font-sans text-editorial-muted font-medium px-3 py-1 rounded-full bg-editorial-surface-subtle border border-editorial-border/80 shadow-2xs">
+                          {articleCount} {t.articles || 'articles'}
+                        </span>
+                      )}
                       <span className="text-xs font-sans font-semibold px-3.5 py-1 rounded-full transition-all duration-200 flex items-center gap-1 shadow-2xs border border-editorial-border text-editorial-muted group-hover:border-editorial-text group-hover:text-editorial-text group-hover:bg-editorial-surface-hover">
                         <span>{t.explore || 'Explore'}</span>
                         <ArrowRightIcon
@@ -462,6 +522,70 @@ export function Categories() {
               </Link>
             );
           })}
+        </section>
+      )}
+
+      {/* Section 1B: Clickable Subcategory Cards Grid with Relatable Images */}
+      {filteredCategories.length > 0 && (
+        <section className="space-y-6 pt-8 border-t border-editorial-border">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h2 className="font-sans font-bold text-2xl sm:text-3xl tracking-tight text-editorial-text">
+                {t.subcategories || 'Subcategory Niches'}
+              </h2>
+              <p className="font-serif text-sm text-editorial-muted mt-1">
+                {totalSubcategories} specialized subtopics across {CATEGORIES.length} disciplines. Click any card to open filtered monographs.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredCategories.flatMap((cat) =>
+              cat.subcategories.map((sub) => {
+                const subKey = `${cat.id}:${sub.id}`;
+                const subCount = counts.subMap.get(subKey) || 0;
+                const subImg = mediaMaps.subImages.get(subKey) || mediaMaps.catImages.get(cat.id);
+                return (
+                  <Link
+                    key={subKey}
+                    to={localePath(`/categories/${cat.id}?subcategory=${sub.id}`)}
+                    className="group rounded-xl border border-editorial-border bg-editorial-surface hover:border-editorial-text/70 overflow-hidden transition-all duration-200 shadow-2xs hover:shadow-sm flex flex-col"
+                  >
+                    {subImg && (
+                      <div className="relative aspect-[16/9] w-full overflow-hidden bg-editorial-surface-subtle">
+                        <img
+                          src={subImg}
+                          alt={getSubcategoryName(sub.id, language.code)}
+                          loading="lazy"
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                        <span className="absolute bottom-2.5 start-3 text-[10px] font-sans font-semibold uppercase tracking-wider px-2 py-0.5 rounded bg-black/65 text-white">
+                          {getCategoryName(cat.id, language.code)}
+                        </span>
+                      </div>
+                    )}
+                    <div className="p-4 flex items-center justify-between gap-3">
+                      <div className="min-w-0">
+                        <h3 className="font-sans font-bold text-sm text-editorial-text group-hover:text-accent transition-colors truncate">
+                          {getSubcategoryName(sub.id, language.code)}
+                        </h3>
+                        <p className="font-sans text-xs text-editorial-muted mt-0.5">
+                          {subCount} {t.articles || 'articles'}
+                        </p>
+                      </div>
+                      <ArrowRightIcon
+                        className={cn(
+                          'h-4 w-4 text-editorial-muted group-hover:text-editorial-text shrink-0 transition-transform group-hover:translate-x-0.5',
+                          isRtl ? 'rotate-180 group-hover:-translate-x-0.5' : ''
+                        )}
+                      />
+                    </div>
+                  </Link>
+                );
+              })
+            )}
+          </div>
         </section>
       )}
 

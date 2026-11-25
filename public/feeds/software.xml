@@ -5,8 +5,125 @@
     <link>https://questo-blog.netlify.app/</link>
     <description>Curated dispatches on Software</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 19:44:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 21:34:01 GMT</lastBuildDate>
     <atom:link href="https://questo-blog.netlify.app/feeds/software.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[64-bit computing]]></title>
+      <link>https://questo-blog.netlify.app/articles/64-bit-computing</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/64-bit-computing</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[In computer architecture, 64-bit integers, memory addresses, or other data units are those that are 64 bits wide. Also, 64-bit central processing units.]]></description>
+      <author><![CDATA[Ava Morales]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Armbian]]></title>
+      <link>https://questo-blog.netlify.app/articles/armbian</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/armbian</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Reliable software systems depend on foundational primitives like Armbian. Understanding how it manages state, latency, and fault tolerance separates.]]></description>
+      <author><![CDATA[Anne Hardy]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Compatible Time-Sharing System]]></title>
+      <link>https://questo-blog.netlify.app/articles/compatible-time-sharing-system</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/compatible-time-sharing-system</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[The Compatible Time-Sharing System (CTSS) was the first general purpose time-sharing operating system. Compatible Time Sharing is time sharing which is.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[GNU Compiler Collection]]></title>
+      <link>https://questo-blog.netlify.app/articles/gnu-compiler-collection</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/gnu-compiler-collection</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[The GNU Compiler Collection (GCC, formerly GNU C Compiler) is a collection of compilers from the GNU Project that support various programming languages,.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Java applet]]></title>
+      <link>https://questo-blog.netlify.app/articles/java-applet</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/java-applet</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Java applets are small applications written in the Java programming language, or another programming language that compiles to Java bytecode, and.]]></description>
+      <author><![CDATA[Dr. Marcus Vance]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Kernel-based Virtual Machine]]></title>
+      <link>https://questo-blog.netlify.app/articles/kernel-based-virtual-machine</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/kernel-based-virtual-machine</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Kernel-based Virtual Machine (KVM) is a free and open-source virtualization module in the Linux kernel that allows the kernel to function as a hypervisor..]]></description>
+      <author><![CDATA[Anne Hardy]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Memory management unit]]></title>
+      <link>https://questo-blog.netlify.app/articles/memory-management-unit</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/memory-management-unit</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A memory management unit (MMU), sometimes called paged memory management unit (PMMU), is a computer hardware unit that examines all references to memory,.]]></description>
+      <author><![CDATA[Mateo Silva]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Minix]]></title>
+      <link>https://questo-blog.netlify.app/articles/minix</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/minix</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Reliable software systems depend on foundational primitives like Minix. Understanding how it manages state, latency, and fault tolerance separates.]]></description>
+      <author><![CDATA[Elena Vance]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[NetBSD]]></title>
+      <link>https://questo-blog.netlify.app/articles/netbsd</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/netbsd</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[NetBSD is a free and open-source Unix-like operating system based on the Berkeley Software Distribution (BSD). It was the first open-source BSD descendant.]]></description>
+      <author><![CDATA[Saskia Lindqvist]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[OpenHarmony]]></title>
+      <link>https://questo-blog.netlify.app/articles/openharmony</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/openharmony</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[OpenHarmony is an family of open-source, distributed operating system framework incubated and operated by the OpenAtom Foundation under the Apache.]]></description>
+      <author><![CDATA[Julian Mercer]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[RSTS/E]]></title>
+      <link>https://questo-blog.netlify.app/articles/rsts-e</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/rsts-e</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[RSTS is a multi-user time-sharing operating system developed by Digital Equipment Corporation (DEC, now part of Hewlett-Packard) for the PDP-11 series of.]]></description>
+      <author><![CDATA[Saskia Lindqvist]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Unix]]></title>
+      <link>https://questo-blog.netlify.app/articles/unix</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/unix</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Unix (YOO-niks, trademarked as UNIX) is a family of multitasking, multi-user computer operating systems that derive from the original AT&T Unix, the.]]></description>
+      <author><![CDATA[Eleanor Thompson]]></author>
+      <category>software</category>
+    </item>
+    <item>
+      <title><![CDATA[Zram]]></title>
+      <link>https://questo-blog.netlify.app/articles/zram</link>
+      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/zram</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[a RAM disk with on-the-fly disk compression. The block device created with zram can then be used for swap or as a general-purpose RAM disk. The two most.]]></description>
+      <author><![CDATA[Ava Morales]]></author>
+      <category>software</category>
+    </item>
     <item>
       <title><![CDATA[Post-Quantum Cryptography in Production]]></title>
       <link>https://questo-blog.netlify.app/articles/post-quantum-cryptography-kyber-and-lattice-key-encapsulation</link>
@@ -788,123 +905,6 @@
       <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[Read this risk and failure analysis for Local-First Sync Engines in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
       <author><![CDATA[Elena Vance]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Lock-Free Ring Buffers: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/lock-free-ring-buffers-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/lock-free-ring-buffers-operator-implementation-guide</guid>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Lock-Free Ring Buffers in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Hiroshi Tanaka]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[LSM-Tree Compaction: Risk and Failure Analysis]]></title>
-      <link>https://questo-blog.netlify.app/articles/lsm-tree-compaction-risk-and-failure-analysis</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/lsm-tree-compaction-risk-and-failure-analysis</guid>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this risk and failure analysis for LSM-Tree Compaction in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Tariq Mahmood]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Wasm Component Interfaces: Risk and Failure Analysis]]></title>
-      <link>https://questo-blog.netlify.app/articles/wasm-component-interfaces-risk-and-failure-analysis</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/wasm-component-interfaces-risk-and-failure-analysis</guid>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this risk and failure analysis for Wasm Component Interfaces in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Hiroshi Tanaka]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Zero-Copy Buffers: Risk and Failure Analysis]]></title>
-      <link>https://questo-blog.netlify.app/articles/zero-copy-buffers-risk-and-failure-analysis</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/zero-copy-buffers-risk-and-failure-analysis</guid>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this risk and failure analysis for Zero-Copy Buffers in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Elena Vance]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Cloudflare Worker Routing: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/cloudflare-worker-routing-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/cloudflare-worker-routing-operator-implementation-guide</guid>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Cloudflare Worker Routing in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Elena Vance]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Expand-Contract Schemas: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/expand-contract-schemas-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/expand-contract-schemas-operator-implementation-guide</guid>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Expand-Contract Schemas in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Tariq Mahmood]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Memory Arena Allocators: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/memory-arena-allocators-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/memory-arena-allocators-operator-implementation-guide</guid>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Memory Arena Allocators in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Tariq Mahmood]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[SIMD Vector Parsing: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/simd-vector-parsing-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/simd-vector-parsing-operator-implementation-guide</guid>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for SIMD Vector Parsing in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Elena Vance]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Speculation Rules Prefetch: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/speculation-rules-prefetch-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/speculation-rules-prefetch-operator-implementation-guide</guid>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Speculation Rules Prefetch in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Hiroshi Tanaka]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Composite Index Order: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/composite-index-order-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/composite-index-order-operator-implementation-guide</guid>
-      <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Composite Index Order in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Hiroshi Tanaka]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Graceful SIGTERM Drains: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/graceful-sigterm-drains-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/graceful-sigterm-drains-operator-implementation-guide</guid>
-      <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Graceful SIGTERM Drains in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Elena Vance]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Optimistic UI Mutations: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/optimistic-ui-mutations-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/optimistic-ui-mutations-operator-implementation-guide</guid>
-      <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Optimistic UI Mutations in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Tariq Mahmood]]></author>
-      <category>software</category>
-    </item>
-    <item>
-      <title><![CDATA[Sliding Window Rate Limits: Operator Implementation Guide]]></title>
-      <link>https://questo-blog.netlify.app/articles/sliding-window-rate-limits-operator-implementation-guide</link>
-      <guid isPermaLink="true">https://questo-blog.netlify.app/articles/sliding-window-rate-limits-operator-implementation-guide</guid>
-      <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Read this operator implementation guide for Sliding Window Rate Limits in software. Get clear benchmarks, real examples, and actionable steps for your workflow.]]></description>
-      <author><![CDATA[Hiroshi Tanaka]]></author>
       <category>software</category>
     </item>
   </channel>

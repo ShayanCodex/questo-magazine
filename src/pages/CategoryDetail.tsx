@@ -44,7 +44,7 @@ export function CategoryDetail() {
         if (!active) return;
         const filtered = all.filter((a) => getArticleCategory(a).category.id === category.id);
         if (filtered.length > 0) setClientArticles(filtered);
-      }).catch(() => {});
+      }).catch(() => { });
     }
     return () => {
       active = false;
@@ -236,10 +236,10 @@ export function CategoryDetail() {
             ).length;
 
             if (!category) {
-    return null;
-  }
+              return null;
+            }
 
-  return (
+            return (
               <button
                 key={sub.id}
                 type="button"

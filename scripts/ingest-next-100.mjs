@@ -472,7 +472,24 @@ function buildArticleBody(title, extract, category, author) {
     text: 'Source attribution: This editorial monograph adapts factual reference material from Wikipedia (CC BY-SA 4.0) and Wikimedia Commons open-access archives, structured for clarity and fast reading.',
   });
 
-  return body;
+  // Prune any orphan h2/h3 headings that have no content blocks underneath
+  const CONTENT_TYPES = new Set(['p', 'ul', 'ol', 'quote', 'chart', 'image']);
+  const pass1 = body.filter((b, i) => {
+    if (b.type !== 'h3') return true;
+    for (let j = i + 1; j < body.length; j++) {
+      if (body[j].type === 'h2' || body[j].type === 'h3') return false;
+      if (CONTENT_TYPES.has(body[j].type)) return true;
+    }
+    return false;
+  });
+  return pass1.filter((b, i) => {
+    if (b.type !== 'h2') return true;
+    for (let j = i + 1; j < pass1.length; j++) {
+      if (pass1[j].type === 'h2') return false;
+      if (CONTENT_TYPES.has(pass1[j].type) || pass1[j].type === 'h3') return true;
+    }
+    return false;
+  });
 }
 
 async function fetchWikiBatch(query, offset) {
@@ -555,6 +572,7 @@ async function run() {
       if (!orig || !isValidImageUrl(orig.source, orig.width)) continue;
       if (existingImages.has(orig.source)) continue;
       const cleanTitle = cleanSpartanText(page.title);
+      if (/^(list|timeline|outline|glossary|index) of\b/i.test(cleanTitle)) continue;
       const slug = slugify(cleanTitle);
       if (!slug || slug.length < 4 || existingSlugs.has(slug)) continue;
       candidates.push({ page, orig, cleanTitle, slug });
