@@ -140,11 +140,37 @@ export function Articles() {
       return titleMatch || excerptMatch || authorMatch || tagsMatch || catMatch || subMatch;
     });
 
-    return filtered.sort((a, b) => {
+    const sorted = filtered.sort((a, b) => {
       const dateA = new Date(a.date).getTime();
       const dateB = new Date(b.date).getTime();
       return sortBy === 'newest' ? dateB - dateA : dateA - dateB;
     });
+
+    // When browsing All Categories without active filters, interleave categories round-robin
+    // so every single page of 10 cards shows diverse categories and topics
+    if (!selectedCategory && !selectedSubcategory && !selectedTag && !cleanQuery) {
+      const buckets = new Map<string, ArticleData[]>();
+      for (const art of sorted) {
+        const catId = getArticleCategory(art).category.id;
+        const list = buckets.get(catId) || [];
+        list.push(art);
+        buckets.set(catId, list);
+      }
+      const interleaved: ArticleData[] = [];
+      const iterators = Array.from(buckets.values()).map((list) => ({ list, idx: 0 }));
+      let remaining = sorted.length;
+      while (remaining > 0) {
+        for (const bucket of iterators) {
+          if (bucket.idx < bucket.list.length) {
+            interleaved.push(bucket.list[bucket.idx++]);
+            remaining--;
+          }
+        }
+      }
+      return interleaved;
+    }
+
+    return sorted;
   }, [articles, searchQuery, selectedTag, selectedCategory, selectedSubcategory, sortBy]);
 
   // Pagination calculation (10 cards per page)

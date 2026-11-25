@@ -3,6 +3,7 @@ import { slugifyHeading } from '../lib/content';
 import { useLanguage } from '../lib/lang-context';
 import { linkifyParagraph } from '../lib/internal-linking';
 import { LazyImage } from './LazyImage';
+import { ArticleChart } from './ArticleChart';
 import { MagnifyingGlassPlusIcon } from '@heroicons/react/24/outline';
 
 export interface BodyProps {
@@ -145,6 +146,10 @@ export function Body({ blocks, onImageClick }: BodyProps) {
                 )}
               </figure>
             );
+
+          case 'chart':
+            if (!block.chart) return null;
+            return <ArticleChart key={index} chart={block.chart} />;
 
           case 'video': {
             const isEmbed = block.src?.includes('embed') || block.src?.includes('youtube.com') || block.src?.includes('vimeo.com');

@@ -12,7 +12,22 @@ export interface SiteConfig {
   languages: SiteLanguage[];
 }
 
-export type BlockType = 'p' | 'h2' | 'h3' | 'ul' | 'ol' | 'quote' | 'code' | 'image' | 'video';
+export type BlockType = 'p' | 'h2' | 'h3' | 'ul' | 'ol' | 'quote' | 'code' | 'image' | 'video' | 'chart';
+
+export interface ChartSeries {
+  label: string;
+  color?: string;
+  values: number[];
+}
+
+export interface ChartSpec {
+  title: string;
+  subtitle?: string;
+  unit?: string;
+  source?: string;
+  labels: string[];
+  series: ChartSeries[];
+}
 
 export interface ContentBlock {
   type: BlockType;
@@ -26,6 +41,7 @@ export interface ContentBlock {
   caption?: string;
   title?: string;
   poster?: string;
+  chart?: ChartSpec;
 }
 
 export interface ArticleData {

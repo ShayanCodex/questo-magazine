@@ -12,7 +12,7 @@ const translationsDir = path.join(rootDir, 'content', 'translations');
 
 const SLUG_REGEX = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE_REGEX = /^\d{4}-\d{2}-\d{2}$/;
-const ALLOWED_BLOCK_TYPES = new Set(['p', 'h2', 'h3', 'ul', 'ol', 'quote', 'code', 'image', 'video']);
+const ALLOWED_BLOCK_TYPES = new Set(['p', 'h2', 'h3', 'ul', 'ol', 'quote', 'code', 'image', 'video', 'chart']);
 
 let hasError = false;
 
@@ -92,6 +92,11 @@ function validateBlock(block, index, filePath) {
       }
       if (block.poster !== undefined && typeof block.poster !== 'string') {
         reportError(filePath, `body[${index}].poster`, 'Block "video" poster must be a string if provided');
+      }
+      break;
+    case 'chart':
+      if (!block.chart || typeof block.chart !== 'object' || !block.chart.title || !Array.isArray(block.chart.labels) || !Array.isArray(block.chart.series)) {
+        reportError(filePath, `body[${index}].chart`, 'Block "chart" must have a valid chart object with title, labels, and series');
       }
       break;
   }

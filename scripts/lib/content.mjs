@@ -237,11 +237,12 @@ export function getIncludedRoutes() {
     routes.push(`/authors/${authorSlug}`);
   }
 
-  // Scalable SSG Indexation: Pre-render up to 2,500 newest flagship articles directly as HTML
-  // (Remaining articles render seamlessly via sharded JSON + Cloudflare _redirects SPA fallback, keeping < 20k files)
+  // Scalable SSG Indexation: Pre-render 200 newest flagship articles directly as HTML
+  // Keeping total dist/ files around ~400-700 (well under Cloudflare's 20k limit and 500-1k target)
+  // while functions/articles/[slug].ts injects full SSR SEO metadata for all 10,453+ routes!
   const allBaseArticles = getAllArticles()
     .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-    .slice(0, 2500);
+    .slice(0, 200);
   for (const art of allBaseArticles) {
     routes.push(`/articles/${art.slug}`);
   }

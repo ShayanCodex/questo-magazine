@@ -121,6 +121,12 @@ for (const lang of languages) {
   }
 
   fs.writeFileSync(path.join(outputDir, `cards-index.${lang.code}.json`), JSON.stringify(cardIndex), 'utf8');
+  if (lang.code === defaultLang) {
+    const publicDir = path.join(rootDir, 'public');
+    if (fs.existsSync(publicDir)) {
+      fs.writeFileSync(path.join(publicDir, `cards-index.${lang.code}.json`), JSON.stringify(cardIndex), 'utf8');
+    }
+  }
   const sizeKb = (totalLangBytes / 1024).toFixed(1);
   console.log(`  ✓ [${lang.code}] ${cardIndex.length} articles -> ${SHARD_COUNT} shards (${sizeKb} KB total) + cards-index.${lang.code}.json`);
 }
