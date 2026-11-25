@@ -1,5 +1,5 @@
 {
-  "poolCursor": 22,
+  "poolCursor": 47,
   "queryOffsets": {
     "finance:0": 20,
     "business:0": 20,
@@ -22,7 +22,32 @@
     "finance:1": 20,
     "business:1": 20,
     "crypto:1": 20,
-    "technology:1": 20
+    "technology:1": 20,
+    "software:1": 20,
+    "engineering-and-technology:1": 20,
+    "science:1": 20,
+    "health:1": 20,
+    "fitness:1": 20,
+    "food:1": 20,
+    "travel:1": 20,
+    "architecture-and-space:1": 20,
+    "art-and-culture:1": 20,
+    "design-and-typography:1": 20,
+    "sports:1": 20,
+    "entertainment:1": 20,
+    "lifestyle:1": 20,
+    "news:1": 20,
+    "finance:2": 20,
+    "business:2": 20,
+    "crypto:2": 20,
+    "technology:2": 20,
+    "software:2": 20,
+    "engineering-and-technology:2": 20,
+    "science:2": 20,
+    "health:2": 20,
+    "fitness:2": 20,
+    "food:2": 20,
+    "travel:2": 20
   },
-  "totalIngested": 100
+  "totalIngested": 200
 }
