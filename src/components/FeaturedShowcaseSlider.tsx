@@ -11,6 +11,7 @@ import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory } from '../lib/categories';
 import { BookmarkButton } from './BookmarkButton';
 import { LazyImage } from './LazyImage';
+import { cn } from '../lib/utils';
 
 export interface FeaturedShowcaseSliderProps {
   articles: ArticleData[];
