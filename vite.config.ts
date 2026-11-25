@@ -217,14 +217,6 @@ export default defineConfig(({ mode }) => {
             if (id.includes('src/data/ebooks-cards.json')) {
               return 'data-ebooks-cards';
             }
-            const shardMatch = id.match(/src\/data\/master-articles\.([a-z]{2})\.(\d+)\.json$/);
-            if (shardMatch) {
-              return `data-articles-${shardMatch[1]}-${shardMatch[2]}`;
-            }
-            const cardsMatch = id.match(/src\/data\/cards-index\.([a-z]{2})\.json$/);
-            if (cardsMatch) {
-              return `data-cards-${cardsMatch[1]}`;
-            }
           },
         },
       },

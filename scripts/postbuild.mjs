@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import zlib from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 import {
   getSiteConfig,
@@ -491,22 +492,33 @@ function run() {
   const articles = getAllArticles().sort((a, b) => b.date.localeCompare(a.date));
   const tags = getAllTags();
 
-  // 1. Generate Granular Sub-Sitemaps
+  // 1. Generate Granular Sub-Sitemaps (gzip large article/tag sitemaps for compact dist/)
   const sitemaps = [
     { filename: 'sitemap-pages.xml', content: generatePagesSitemap(baseUrl, languages, defaultLang) },
-    { filename: 'sitemap-articles.xml', content: generateArticlesSitemap(baseUrl, languages, defaultLang, articles) },
+    { filename: 'sitemap-articles.xml.gz', content: generateArticlesSitemap(baseUrl, languages, defaultLang, articles), gzip: true },
     { filename: 'sitemap-ebooks.xml', content: generateEbooksSitemap(baseUrl) },
     { filename: 'sitemap-categories.xml', content: generateCategoriesSitemap(baseUrl, languages, defaultLang, articles) },
     { filename: 'sitemap-authors.xml', content: generateAuthorsSitemap(baseUrl, languages, defaultLang, articles) },
     { filename: 'sitemap-markets.xml', content: generateMarketsSitemap(baseUrl, languages, defaultLang) },
-    { filename: 'sitemap-tags.xml', content: generateTagsSitemap(baseUrl, languages, defaultLang, tags) },
+    { filename: 'sitemap-tags.xml.gz', content: generateTagsSitemap(baseUrl, languages, defaultLang, tags), gzip: true },
   ];
 
   for (const sm of sitemaps) {
     const distPath = path.join(distDir, sm.filename);
     const pubPath = path.join(publicDir, sm.filename);
-    fs.writeFileSync(distPath, sm.content, 'utf8');
-    fs.writeFileSync(pubPath, sm.content, 'utf8');
+    if (sm.gzip) {
+      const gz = zlib.gzipSync(sm.content, { level: 9 });
+      fs.writeFileSync(distPath, gz);
+      fs.writeFileSync(pubPath, gz);
+      const legacyName = sm.filename.replace(/\.gz$/, '');
+      for (const dir of [distDir, publicDir]) {
+        const legacyPath = path.join(dir, legacyName);
+        if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
+      }
+    } else {
+      fs.writeFileSync(distPath, sm.content, 'utf8');
+      fs.writeFileSync(pubPath, sm.content, 'utf8');
+    }
     console.log(`✓ Generated sub-sitemap: ${sm.filename}`);
   }
 
@@ -531,9 +543,10 @@ Sitemap: ${cleanUrl(baseUrl, 'sitemap.xml')}
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt, 'utf8');
   console.log(`✓ Generated robots.txt pointing to: ${cleanUrl(baseUrl, 'sitemap.xml')}`);
 
-  // 4. Generate Master RSS 2.0 Feed (feed.xml & rss.xml)
+  // 4. Generate Master RSS 2.0 Feed (feed.xml & rss.xml) capped to latest 100 items
+  const latestFeedArticles = articles.slice(0, 100);
   const rssXml = generateRssFeed(
-    articles,
+    latestFeedArticles,
     `${siteConfig.name} Magazine — Master Feed`,
     siteConfig.description,
     'feed.xml'
@@ -542,15 +555,15 @@ Sitemap: ${cleanUrl(baseUrl, 'sitemap.xml')}
   fs.writeFileSync(path.join(distDir, 'rss.xml'), rssXml, 'utf8');
   fs.writeFileSync(path.join(publicDir, 'feed.xml'), rssXml, 'utf8');
   fs.writeFileSync(path.join(publicDir, 'rss.xml'), rssXml, 'utf8');
-  console.log(`✓ Generated master RSS feeds at: dist/feed.xml & dist/rss.xml`);
+  console.log(`✓ Generated master RSS feeds (${latestFeedArticles.length} items) at: dist/feed.xml & dist/rss.xml`);
 
-  // 5. Generate Master Atom 1.0 Feed (atom.xml)
-  const atomXml = generateAtomFeed(articles);
+  // 5. Generate Master Atom 1.0 Feed (atom.xml) capped to latest 100 items
+  const atomXml = generateAtomFeed(latestFeedArticles);
   fs.writeFileSync(path.join(distDir, 'atom.xml'), atomXml, 'utf8');
   fs.writeFileSync(path.join(publicDir, 'atom.xml'), atomXml, 'utf8');
-  console.log(`✓ Generated master Atom feed at: dist/atom.xml`);
+  console.log(`✓ Generated master Atom feed (${latestFeedArticles.length} items) at: dist/atom.xml`);
 
-  // 6. Generate Granular Per-Category RSS Feeds
+  // 6. Generate Granular Per-Category RSS Feeds (latest 100 items per category)
   const feedsDir = path.join(distDir, 'feeds');
   const pubFeedsDir = path.join(publicDir, 'feeds');
   if (!fs.existsSync(feedsDir)) fs.mkdirSync(feedsDir, { recursive: true });
@@ -565,7 +578,7 @@ Sitemap: ${cleanUrl(baseUrl, 'sitemap.xml')}
   }));
 
   for (const cat of categories) {
-    const catArticles = articles.filter((a) => a.category === cat.id);
+    const catArticles = articles.filter((a) => a.category === cat.id).slice(0, 100);
     const catRss = generateRssFeed(
       catArticles,
       `${siteConfig.name} — ${cat.name}`,

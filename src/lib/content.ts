@@ -11,50 +11,37 @@ const SHARD_COUNT = 5;
 const SHARD_CACHE: Record<string, ArticleData[]> = {};
 const CARDS_CACHE: Record<string, ArticleData[]> = {};
 
+async function loadJsonAsset<T>(filename: string): Promise<T> {
+  if (import.meta.env.SSR) {
+    const fs = await import(/* @vite-ignore */ 'node:fs');
+    const path = await import(/* @vite-ignore */ 'node:path');
+    const filePath = path.join(process.cwd(), 'src', 'data', filename);
+    const raw = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(raw) as T;
+  }
+
+  const res = await fetch(`/data/${filename}.gz`);
+  if (!res.ok) {
+    throw new Error(`Failed to fetch /data/${filename}.gz (${res.status})`);
+  }
+
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  const isGzip = bytes.length >= 2 && bytes[0] === 0x1f && bytes[1] === 0x8b;
+  if (isGzip && typeof DecompressionStream !== 'undefined') {
+    const decompressed = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+    return (await new Response(decompressed).json()) as T;
+  }
+
+  return JSON.parse(new TextDecoder().decode(bytes)) as T;
+}
+
 async function fetchShard(langCode: string, shardIdx: number): Promise<ArticleData[]> {
   const cacheKey = `${langCode}:${shardIdx}`;
   if (SHARD_CACHE[cacheKey]) {
     return SHARD_CACHE[cacheKey];
   }
 
-  let shard: ArticleData[];
-  const key = `${langCode}.${shardIdx}`;
-  switch (key) {
-    case 'es.0': shard = ((await import('../data/master-articles.es.0.json')).default as unknown) as ArticleData[]; break;
-    case 'es.1': shard = ((await import('../data/master-articles.es.1.json')).default as unknown) as ArticleData[]; break;
-    case 'es.2': shard = ((await import('../data/master-articles.es.2.json')).default as unknown) as ArticleData[]; break;
-    case 'es.3': shard = ((await import('../data/master-articles.es.3.json')).default as unknown) as ArticleData[]; break;
-    case 'es.4': shard = ((await import('../data/master-articles.es.4.json')).default as unknown) as ArticleData[]; break;
-    case 'fr.0': shard = ((await import('../data/master-articles.fr.0.json')).default as unknown) as ArticleData[]; break;
-    case 'fr.1': shard = ((await import('../data/master-articles.fr.1.json')).default as unknown) as ArticleData[]; break;
-    case 'fr.2': shard = ((await import('../data/master-articles.fr.2.json')).default as unknown) as ArticleData[]; break;
-    case 'fr.3': shard = ((await import('../data/master-articles.fr.3.json')).default as unknown) as ArticleData[]; break;
-    case 'fr.4': shard = ((await import('../data/master-articles.fr.4.json')).default as unknown) as ArticleData[]; break;
-    case 'de.0': shard = ((await import('../data/master-articles.de.0.json')).default as unknown) as ArticleData[]; break;
-    case 'de.1': shard = ((await import('../data/master-articles.de.1.json')).default as unknown) as ArticleData[]; break;
-    case 'de.2': shard = ((await import('../data/master-articles.de.2.json')).default as unknown) as ArticleData[]; break;
-    case 'de.3': shard = ((await import('../data/master-articles.de.3.json')).default as unknown) as ArticleData[]; break;
-    case 'de.4': shard = ((await import('../data/master-articles.de.4.json')).default as unknown) as ArticleData[]; break;
-    case 'ar.0': shard = ((await import('../data/master-articles.ar.0.json')).default as unknown) as ArticleData[]; break;
-    case 'ar.1': shard = ((await import('../data/master-articles.ar.1.json')).default as unknown) as ArticleData[]; break;
-    case 'ar.2': shard = ((await import('../data/master-articles.ar.2.json')).default as unknown) as ArticleData[]; break;
-    case 'ar.3': shard = ((await import('../data/master-articles.ar.3.json')).default as unknown) as ArticleData[]; break;
-    case 'ar.4': shard = ((await import('../data/master-articles.ar.4.json')).default as unknown) as ArticleData[]; break;
-    case 'ur.0': shard = ((await import('../data/master-articles.ur.0.json')).default as unknown) as ArticleData[]; break;
-    case 'ur.1': shard = ((await import('../data/master-articles.ur.1.json')).default as unknown) as ArticleData[]; break;
-    case 'ur.2': shard = ((await import('../data/master-articles.ur.2.json')).default as unknown) as ArticleData[]; break;
-    case 'ur.3': shard = ((await import('../data/master-articles.ur.3.json')).default as unknown) as ArticleData[]; break;
-    case 'ur.4': shard = ((await import('../data/master-articles.ur.4.json')).default as unknown) as ArticleData[]; break;
-    case 'en.0': shard = ((await import('../data/master-articles.en.0.json')).default as unknown) as ArticleData[]; break;
-    case 'en.1': shard = ((await import('../data/master-articles.en.1.json')).default as unknown) as ArticleData[]; break;
-    case 'en.2': shard = ((await import('../data/master-articles.en.2.json')).default as unknown) as ArticleData[]; break;
-    case 'en.3': shard = ((await import('../data/master-articles.en.3.json')).default as unknown) as ArticleData[]; break;
-    case 'en.4':
-    default:
-      shard = ((await import('../data/master-articles.en.4.json')).default as unknown) as ArticleData[];
-      break;
-  }
-
+  const shard = await loadJsonAsset<ArticleData[]>(`master-articles.${langCode}.${shardIdx}.json`);
   SHARD_CACHE[cacheKey] = shard;
   return shard;
 }
@@ -67,19 +54,7 @@ export async function loadArticleCards(langCode: string): Promise<ArticleData[]>
     return CARDS_CACHE[langCode];
   }
 
-  let cards: ArticleData[];
-  switch (langCode) {
-    case 'es': cards = ((await import('../data/cards-index.es.json')).default as unknown) as ArticleData[]; break;
-    case 'fr': cards = ((await import('../data/cards-index.fr.json')).default as unknown) as ArticleData[]; break;
-    case 'de': cards = ((await import('../data/cards-index.de.json')).default as unknown) as ArticleData[]; break;
-    case 'ar': cards = ((await import('../data/cards-index.ar.json')).default as unknown) as ArticleData[]; break;
-    case 'ur': cards = ((await import('../data/cards-index.ur.json')).default as unknown) as ArticleData[]; break;
-    case 'en':
-    default:
-      cards = ((await import('../data/cards-index.en.json')).default as unknown) as ArticleData[];
-      break;
-  }
-
+  const cards = await loadJsonAsset<ArticleData[]>(`cards-index.${langCode}.json`);
   CARDS_CACHE[langCode] = cards;
   return cards;
 }

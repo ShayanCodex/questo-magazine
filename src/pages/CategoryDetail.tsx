@@ -9,7 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
-import { loadAllArticles } from '../lib/content';
+import { loadArticleCards } from '../lib/content';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ArticleList } from '../components/ArticleList';
@@ -38,19 +38,20 @@ export function CategoryDetail() {
 
   // Hydration & language switch fallback to ensure fresh localized articles
   useEffect(() => {
-    if (!loaderData?.articles || loaderData.articles.length === 0) {
-      if (category?.id) {
-        loadAllArticles(language.code).then((all) => {
-          const filtered = all.filter((a) => getArticleCategory(a).category.id === category.id);
-          setClientArticles(filtered);
-        });
-      }
-    } else {
-      setClientArticles(loaderData.articles);
+    let active = true;
+    if (category?.id) {
+      loadArticleCards(language.code).then((all) => {
+        if (!active) return;
+        const filtered = all.filter((a) => getArticleCategory(a).category.id === category.id);
+        if (filtered.length > 0) setClientArticles(filtered);
+      }).catch(() => {});
     }
-  }, [loaderData, language.code, category?.id]);
+    return () => {
+      active = false;
+    };
+  }, [category?.id, language.code]);
 
-  const articles = loaderData?.articles && loaderData.articles.length > 0 ? loaderData.articles : clientArticles;
+  const articles = clientArticles.length > 0 ? clientArticles : (loaderData?.articles || []);
   const pathname = loaderData?.pathname || `/categories/${category?.id || ''}`;
 
   const activeSubcategory = searchParams.get('subcategory');
@@ -117,13 +118,19 @@ export function CategoryDetail() {
         const subcat = getArticleCategory(art).subcategory;
         const subcatMatch = subcat
           ? getSubcategoryName(subcat.id, language.code).toLowerCase().includes(q) ||
-            subcat.name.toLowerCase().includes(q)
+          subcat.name.toLowerCase().includes(q)
           : false;
         return titleMatch || excerptMatch || authorMatch || tagMatch || subcatMatch;
       });
     }
     return list;
   }, [articles, activeSubcategory, searchQuery, language.code]);
+
+  const breadcrumbs: BreadcrumbItem[] = [
+    { label: t.home, href: localePath('/') },
+    { label: t.categories || 'Categories', href: localePath('/categories') },
+    { label: localizedCategoryName },
+  ];
 
   const searchPlaceholder = useMemo(() => {
     switch (language.code) {
@@ -162,12 +169,6 @@ export function CategoryDetail() {
   if (!category) {
     return null;
   }
-
-  const breadcrumbs: BreadcrumbItem[] = [
-    { label: t.home, href: localePath('/') },
-    { label: t.categories || 'Categories', href: localePath('/categories') },
-    { label: localizedCategoryName },
-  ];
 
   return (
     <div className="space-y-10 max-w-6xl mx-auto">
@@ -234,7 +235,11 @@ export function CategoryDetail() {
               (a) => getArticleCategory(a).subcategory?.id === sub.id
             ).length;
 
-            return (
+            if (!category) {
+    return null;
+  }
+
+  return (
               <button
                 key={sub.id}
                 type="button"
@@ -330,21 +335,21 @@ export function CategoryDetail() {
                 {language.code === 'ur'
                   ? 'کوئی مقالہ نہیں ملا'
                   : language.code === 'ar'
-                  ? 'لم يتم العثور على مقالات'
-                  : 'No monographs found'}
+                    ? 'لم يتم العثور على مقالات'
+                    : 'No monographs found'}
               </h3>
               <p className="font-serif text-sm text-editorial-muted max-w-md mx-auto leading-relaxed">
                 {searchQuery
                   ? language.code === 'ur'
                     ? `"${searchQuery}" سے مطابقت رکھنے والا کوئی مضمون نہیں ملا۔ تلاش کے الفاظ تبدیل کریں یا فلٹر صاف کریں۔`
                     : language.code === 'ar'
-                    ? `لم يتم العثور على مقالات تطابق "${searchQuery}". حاول تغيير كلمات البحث.`
-                    : `No monographs match "${searchQuery}". Try adjusting your search query or removing filters.`
+                      ? `لم يتم العثور على مقالات تطابق "${searchQuery}". حاول تغيير كلمات البحث.`
+                      : `No monographs match "${searchQuery}". Try adjusting your search query or removing filters.`
                   : language.code === 'ur'
-                  ? 'اس فلٹر کے تحت کوئی مقالہ دستیاب نہیں ہے۔'
-                  : language.code === 'ar'
-                  ? 'لا توجد مقالات تحت هذا التصنيف الفرعي.'
-                  : 'No monographs are available under the active niche filter.'}
+                    ? 'اس فلٹر کے تحت کوئی مقالہ دستیاب نہیں ہے۔'
+                    : language.code === 'ar'
+                      ? 'لا توجد مقالات تحت هذا التصنيف الفرعي.'
+                      : 'No monographs are available under the active niche filter.'}
               </p>
             </div>
             <button

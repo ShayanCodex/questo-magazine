@@ -29,7 +29,7 @@ import {
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
-import { loadAllArticles } from '../lib/content';
+import { loadArticleCards } from '../lib/content';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ArticleList } from '../components/ArticleList';
@@ -101,16 +101,18 @@ export function Categories() {
   const [clientArticles, setClientArticles] = useState<ArticleData[]>(loaderData?.articles || []);
 
   useEffect(() => {
-    if (!loaderData?.articles || loaderData.articles.length === 0) {
-      loadAllArticles(language.code).then((loaded) => {
+    let active = true;
+    loadArticleCards(language.code).then((loaded) => {
+      if (active && loaded.length > 0) {
         setClientArticles(loaded);
-      });
-    } else {
-      setClientArticles(loaderData.articles);
-    }
-  }, [loaderData, language.code]);
+      }
+    }).catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [language.code]);
 
-  const articles = loaderData?.articles || clientArticles;
+  const articles = clientArticles.length > 0 ? clientArticles : (loaderData?.articles || []);
   const pathname = loaderData?.pathname || location.pathname;
 
   const [searchParams] = useSearchParams();

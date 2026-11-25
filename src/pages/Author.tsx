@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
 import {
   MapPinIcon,
@@ -9,7 +10,7 @@ import { useLanguage } from '../lib/lang-context';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { LazyImage } from '../components/LazyImage';
-import { formatDate, calculateReadingTime } from '../lib/content';
+import { formatDate, calculateReadingTime, loadArticleCards } from '../lib/content';
 import { getArticleCategory, getCategoryShortName } from '../lib/categories';
 import { type Author } from '../data/authors';
 
@@ -20,8 +21,23 @@ interface AuthorLoaderData {
 }
 
 export function Author() {
-  const { author, articles, pathname } = useLoaderData() as AuthorLoaderData;
+  const { author, articles: initialArticles, pathname } = useLoaderData() as AuthorLoaderData;
   const { t, localePath, language } = useLanguage();
+  const [articles, setArticles] = useState<ArticleData[]>(initialArticles);
+
+  useEffect(() => {
+    let active = true;
+    loadArticleCards(language.code).then((all) => {
+      if (!active) return;
+      const filtered = all.filter(
+        (a) => a.author.toLowerCase() === author.name.toLowerCase()
+      );
+      if (filtered.length > 0) setArticles(filtered);
+    }).catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [author.name, language.code]);
 
   const breadcrumbs: BreadcrumbItem[] = [
     { label: t.home, href: localePath('/') },

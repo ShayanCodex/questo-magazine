@@ -28,9 +28,19 @@ export const onRequestGet = async (context: {
   request: Request;
   env: Env;
   params: { slug: string };
+  waitUntil?: (promise: Promise<unknown>) => void;
 }) => {
-  const { request, env, params } = context;
+  const { request, env, params, waitUntil } = context;
   const slug = params.slug;
+
+  // 0. Serve from Cloudflare edge cache if already computed
+  const cacheStorage = (caches as unknown as { default?: Cache }).default;
+  if (cacheStorage) {
+    const cached = await cacheStorage.match(request);
+    if (cached) {
+      return cached;
+    }
+  }
 
   // 1. If pre-rendered static HTML exists in dist/, serve it directly at 0ms edge latency
   const assetRes = await env.ASSETS.fetch(request);
@@ -41,11 +51,11 @@ export const onRequestGet = async (context: {
     }
   }
 
-  // 2. Otherwise load the SPA shell + cards-index.en.json from edge assets and inject full SEO + BlogPosting JSON-LD for Googlebot & AdSense
+  // 2. Otherwise load the SPA shell + gzipped cards-index.en.json.gz and inject full SEO + BlogPosting JSON-LD
   const origin = new URL(request.url).origin;
   const [shellRes, indexRes] = await Promise.all([
     env.ASSETS.fetch(new Request(`${origin}/index.html`)),
-    env.ASSETS.fetch(new Request(`${origin}/cards-index.en.json`)),
+    env.ASSETS.fetch(new Request(`${origin}/data/cards-index.en.json.gz`)),
   ]);
 
   if (!shellRes.ok) {
@@ -55,7 +65,13 @@ export const onRequestGet = async (context: {
   let html = await shellRes.text();
   if (indexRes.ok) {
     try {
-      const cards = (await indexRes.json()) as CardMeta[];
+      const bytes = new Uint8Array(await indexRes.arrayBuffer());
+      const isGzip = bytes.length >= 2 && bytes[0] === 0x1f && bytes[1] === 0x8b;
+      const cards = isGzip
+        ? ((await new Response(
+            new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))
+          ).json()) as CardMeta[])
+        : (JSON.parse(new TextDecoder().decode(bytes)) as CardMeta[]);
       const article = cards.find((c) => c.slug === slug);
       if (article) {
         const canonical = `${origin}/articles/${article.slug}`;
@@ -93,11 +109,17 @@ export const onRequestGet = async (context: {
     }
   }
 
-  return new Response(html, {
+  const response = new Response(html, {
     status: 200,
     headers: {
       'content-type': 'text/html; charset=utf-8',
-      'cache-control': 'public, max-age=3600, s-maxage=86400',
+      'cache-control': 'public, max-age=3600, s-maxage=604800',
     },
   });
+
+  if (cacheStorage && waitUntil) {
+    waitUntil(cacheStorage.put(request, response.clone()));
+  }
+
+  return response;
 };

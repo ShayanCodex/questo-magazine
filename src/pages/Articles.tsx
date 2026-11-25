@@ -15,6 +15,7 @@ import {
 import type { ArticleData, BreadcrumbItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { createBreadcrumbJsonLd } from '../lib/breadcrumbs';
+import { loadArticleCards } from '../lib/content';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ArticleList } from '../components/ArticleList';
@@ -40,10 +41,22 @@ const ARTICLES_PER_PAGE = 10;
 
 export function Articles() {
   const loaderData = (useLoaderData() as ArticlesLoaderData) || {};
-  const articles = loaderData.articles || [];
+  const [articles, setArticles] = useState<ArticleData[]>(loaderData.articles || []);
   const pathname = loaderData.pathname || '/articles';
   const { t, localePath, language } = useLanguage();
   const isRtl = language.dir === 'rtl';
+
+  useEffect(() => {
+    let active = true;
+    loadArticleCards(language.code).then((fullCards) => {
+      if (active && fullCards.length > 0) {
+        setArticles(fullCards);
+      }
+    }).catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [language.code]);
 
   const [searchParams, setSearchParams] = useSearchParams();
 

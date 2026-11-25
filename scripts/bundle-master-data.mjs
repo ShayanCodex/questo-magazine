@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import zlib from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -113,22 +114,35 @@ for (const lang of languages) {
     });
   }
 
+  const publicDataDir = path.join(rootDir, 'public', 'data');
+  if (!fs.existsSync(publicDataDir)) {
+    fs.mkdirSync(publicDataDir, { recursive: true });
+  }
+
   let totalLangBytes = 0;
+  let totalGzBytes = 0;
   for (let s = 0; s < SHARD_COUNT; s++) {
     const shardJson = JSON.stringify(shards[s]);
     totalLangBytes += Buffer.byteLength(shardJson);
     fs.writeFileSync(path.join(outputDir, `master-articles.${lang.code}.${s}.json`), shardJson, 'utf8');
+    const shardGz = zlib.gzipSync(shardJson, { level: 9 });
+    totalGzBytes += shardGz.byteLength;
+    fs.writeFileSync(path.join(publicDataDir, `master-articles.${lang.code}.${s}.json.gz`), shardGz);
   }
 
-  fs.writeFileSync(path.join(outputDir, `cards-index.${lang.code}.json`), JSON.stringify(cardIndex), 'utf8');
-  if (lang.code === defaultLang) {
-    const publicDir = path.join(rootDir, 'public');
-    if (fs.existsSync(publicDir)) {
-      fs.writeFileSync(path.join(publicDir, `cards-index.${lang.code}.json`), JSON.stringify(cardIndex), 'utf8');
-    }
+  const cardsJson = JSON.stringify(cardIndex);
+  fs.writeFileSync(path.join(outputDir, `cards-index.${lang.code}.json`), cardsJson, 'utf8');
+  const cardsGz = zlib.gzipSync(cardsJson, { level: 9 });
+  fs.writeFileSync(path.join(publicDataDir, `cards-index.${lang.code}.json.gz`), cardsGz);
+
+  // Remove legacy uncompressed public/cards-index.en.json if present
+  const legacyPublicCards = path.join(rootDir, 'public', `cards-index.${lang.code}.json`);
+  if (fs.existsSync(legacyPublicCards)) {
+    fs.unlinkSync(legacyPublicCards);
   }
   const sizeKb = (totalLangBytes / 1024).toFixed(1);
-  console.log(`  ✓ [${lang.code}] ${cardIndex.length} articles -> ${SHARD_COUNT} shards (${sizeKb} KB total) + cards-index.${lang.code}.json`);
+  const gzKb = (totalGzBytes / 1024).toFixed(1);
+  console.log(`  ✓ [${lang.code}] ${cardIndex.length} articles -> ${SHARD_COUNT} shards (${sizeKb} KB raw / ${gzKb} KB gz) + cards-index.${lang.code}.json.gz`);
 }
 
 // Automatically sync ultra-lightweight ebooks card index for high-speed catalog browsing

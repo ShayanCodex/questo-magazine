@@ -69,7 +69,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
         loader: async ({ request }) => {
           const url = new URL(request.url);
           const articles = await loadArticleCards(lang.code);
-          return { articles, pathname: url.pathname };
+          return { articles: articles.slice(0, 60), pathname: url.pathname };
         },
       },
       {
@@ -130,7 +130,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
         loader: async ({ request }) => {
           const url = new URL(request.url);
           const articles = await loadArticleCards(lang.code);
-          return { articles, pathname: url.pathname };
+          return { articles: articles.slice(0, 60), pathname: url.pathname };
         },
       },
       {
@@ -152,7 +152,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           const url = new URL(request.url);
           return {
             category,
-            articles: filtered,
+            articles: filtered.slice(0, 40),
             pathname: url.pathname,
           };
         },
@@ -177,7 +177,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           const url = new URL(request.url);
           return {
             author,
-            articles: filtered,
+            articles: filtered.slice(0, 40),
             pathname: url.pathname,
           };
         },
