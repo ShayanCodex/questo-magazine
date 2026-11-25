@@ -3,13 +3,17 @@ import { cn } from '../../lib/utils';
 
 export type AdSlotType = 'above-fold' | 'in-content' | 'sidebar' | 'feed';
 
+// Global flag to control ad banner rendering across the entire site
+export const ADS_ENABLED = false;
+
 export interface AdSlotProps {
   slotType: AdSlotType;
   slotId?: string;
   className?: string;
+  enabled?: boolean;
 }
 
-export function AdSlot({ slotType, slotId, className }: AdSlotProps) {
+export function AdSlot({ slotType, slotId, className, enabled = ADS_ENABLED }: AdSlotProps) {
   // Height configurations strictly matching IAB / Google AdSense standards to ensure 0.00 CLS
   const config = {
     'above-fold': {
@@ -35,6 +39,7 @@ export function AdSlot({ slotType, slotId, className }: AdSlotProps) {
   }[slotType];
 
   useEffect(() => {
+    if (!enabled) return;
     // If running in browser and window.adsbygoogle is available, attempt push
     try {
       if (typeof window !== 'undefined' && slotId) {
@@ -46,7 +51,11 @@ export function AdSlot({ slotType, slotId, className }: AdSlotProps) {
     } catch {
       // Graceful fallback for adblockers / dev environment
     }
-  }, [slotId]);
+  }, [slotId, enabled]);
+
+  if (!enabled) {
+    return null;
+  }
 
   return (
     <div
