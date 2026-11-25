@@ -556,12 +556,13 @@ Sitemap: ${cleanUrl(baseUrl, 'sitemap.xml')}
   if (!fs.existsSync(feedsDir)) fs.mkdirSync(feedsDir, { recursive: true });
   if (!fs.existsSync(pubFeedsDir)) fs.mkdirSync(pubFeedsDir, { recursive: true });
 
-  const categories = [
-    { id: 'architecture-and-space', name: 'Architecture & Spatial Design' },
-    { id: 'art-and-culture', name: 'Art, Culture & Sculpture' },
-    { id: 'design-and-typography', name: 'Design & Typographic Systems' },
-    { id: 'engineering-and-technology', name: 'Engineering & Static Systems' },
-  ];
+  const categories = ALL_CATEGORY_IDS.map((id) => ({
+    id,
+    name: id
+      .split('-')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' '),
+  }));
 
   for (const cat of categories) {
     const catArticles = articles.filter((a) => a.category === cat.id);

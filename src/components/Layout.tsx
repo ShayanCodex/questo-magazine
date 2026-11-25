@@ -228,7 +228,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center justify-center sm:justify-between gap-2 px-3 sm:px-3.5 h-10 min-h-[44px] min-w-[44px] sm:w-auto md:w-56 lg:w-64 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0"
+              className="group flex items-center justify-center sm:justify-between gap-2 px-3 sm:px-3.5 h-10 min-h-[44px] min-w-[44px] sm:w-40 md:w-44 lg:w-64 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0"
               aria-label={t.search}
               title={t.searchPlaceholder || 'Search articles...'}
             >
@@ -238,7 +238,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
                   {t.searchPlaceholder || 'Search...'}
                 </span>
               </div>
-              <kbd className="hidden md:inline-flex items-center px-2 py-0.5 text-[10px] font-sans font-medium text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-full group-hover:border-editorial-text transition-colors shrink-0">
+              <kbd className="hidden lg:inline-flex items-center px-2 py-0.5 text-[10px] font-sans font-medium text-editorial-muted bg-editorial-surface-subtle border border-editorial-border rounded-full group-hover:border-editorial-text transition-colors shrink-0">
                 ⌘K
               </kbd>
             </button>

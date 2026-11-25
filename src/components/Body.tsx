@@ -3,12 +3,14 @@ import { slugifyHeading } from '../lib/content';
 import { useLanguage } from '../lib/lang-context';
 import { linkifyParagraph } from '../lib/internal-linking';
 import { LazyImage } from './LazyImage';
+import { MagnifyingGlassPlusIcon } from '@heroicons/react/24/outline';
 
 export interface BodyProps {
   blocks: ContentBlock[];
+  onImageClick?: (img: { src: string; alt?: string }) => void;
 }
 
-export function Body({ blocks }: BodyProps) {
+export function Body({ blocks, onImageClick }: BodyProps) {
   const { localePath } = useLanguage();
   const linkedTopics = new Set<string>();
 
@@ -96,16 +98,49 @@ export function Body({ blocks }: BodyProps) {
             if (!block.src) return null;
             return (
               <figure key={index} className="my-10 space-y-3">
-                <div className="w-full rounded-sm border border-editorial-border overflow-hidden bg-editorial-surface-subtle max-h-[560px]">
+                <div
+                  role={onImageClick ? 'button' : undefined}
+                  tabIndex={onImageClick ? 0 : undefined}
+                  onClick={() =>
+                    onImageClick?.({
+                      src: block.src!,
+                      alt: block.alt || 'Editorial illustration',
+                    })
+                  }
+                  onKeyDown={(e) => {
+                    if (onImageClick && (e.key === 'Enter' || e.key === ' ')) {
+                      e.preventDefault();
+                      onImageClick({
+                        src: block.src!,
+                        alt: block.alt || 'Editorial illustration',
+                      });
+                    }
+                  }}
+                  className={
+                    onImageClick
+                      ? 'w-full rounded-sm border border-editorial-border overflow-hidden bg-editorial-surface-subtle max-h-[560px] cursor-zoom-in group/img relative'
+                      : 'w-full rounded-sm border border-editorial-border overflow-hidden bg-editorial-surface-subtle max-h-[560px]'
+                  }
+                >
                   <LazyImage
                     src={block.src}
                     alt={block.alt || 'Editorial illustration'}
-                    className="w-full h-auto object-cover max-h-[560px]"
+                    className={
+                      onImageClick
+                        ? 'w-full h-auto object-cover max-h-[560px] group-hover/img:scale-[1.02] transition-transform duration-500 ease-out'
+                        : 'w-full h-auto object-cover max-h-[560px]'
+                    }
                   />
+                  {onImageClick && (
+                    <div className="absolute bottom-3 end-3 px-2.5 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/15 text-white text-[11px] font-sans font-medium flex items-center gap-1.5 opacity-85 group-hover/img:opacity-100 transition-opacity shadow-md pointer-events-none">
+                      <MagnifyingGlassPlusIcon className="h-3.5 w-3.5" />
+                      <span>View Full</span>
+                    </div>
+                  )}
                 </div>
                 {block.caption && (
                   <figcaption className="text-xs sm:text-sm font-sans text-editorial-muted italic tracking-wide">
-                    — {block.caption}
+                    {block.caption}
                   </figcaption>
                 )}
               </figure>

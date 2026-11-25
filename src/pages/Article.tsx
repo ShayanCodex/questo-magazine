@@ -385,7 +385,7 @@ export function Article() {
               fontSize === 'lg' && 'text-lg sm:text-xl [&_p]:text-lg sm:[&_p]:text-xl [&_p]:leading-relaxed'
             )}
           >
-            <Body blocks={article.body} />
+            <Body blocks={article.body} onImageClick={setLightboxImg} />
           </div>
 
           {/* In-Content Native Feature Ad Slot (Zero CLS) */}
