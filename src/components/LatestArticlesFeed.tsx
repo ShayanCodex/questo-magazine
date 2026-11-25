@@ -84,13 +84,15 @@ export function LatestArticlesFeed({ articles, limit = 4 }: LatestArticlesFeedPr
             >
               <div>
                 {art.image && (
-                  <Link to={artUrl} className="block aspect-[16/10] overflow-hidden bg-neutral-900 relative">
-                    <LazyImage
-                      src={art.image}
-                      alt={art.title}
-                      className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500 ease-out"
-                    />
-                    <div className="absolute top-3 start-3">
+                  <div className="relative aspect-[16/10] overflow-hidden bg-neutral-900">
+                    <Link to={artUrl} className="block w-full h-full">
+                      <LazyImage
+                        src={art.image}
+                        alt={art.title}
+                        className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500 ease-out"
+                      />
+                    </Link>
+                    <div className="absolute top-3 start-3 z-10">
                       <Link
                         to={localePath(`/categories/${category.id}`)}
                         className="px-2.5 py-0.5 text-[10px] font-sans font-semibold uppercase tracking-wider bg-black/80 backdrop-blur-xs text-white rounded-full border border-white/20 hover:bg-black transition-colors"
@@ -98,7 +100,7 @@ export function LatestArticlesFeed({ articles, limit = 4 }: LatestArticlesFeedPr
                         {getCategoryShortName(category.id, language.code)}
                       </Link>
                     </div>
-                  </Link>
+                  </div>
                 )}
 
                 <div className="p-5 space-y-2.5">
