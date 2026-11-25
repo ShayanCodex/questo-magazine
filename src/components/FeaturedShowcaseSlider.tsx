@@ -11,7 +11,6 @@ import { formatDate, calculateReadingTime } from '../lib/content';
 import { getArticleCategory } from '../lib/categories';
 import { BookmarkButton } from './BookmarkButton';
 import { LazyImage } from './LazyImage';
-import { cn } from '../lib/utils';
 
 export interface FeaturedShowcaseSliderProps {
   articles: ArticleData[];
@@ -74,11 +73,6 @@ export function FeaturedShowcaseSlider({
     setCurrentIndex((prev) => (totalSlides > 0 ? (prev - 1 + totalSlides) % totalSlides : 0));
     setProgress(0);
   }, [totalSlides]);
-
-  const goToSlide = useCallback((idx: number) => {
-    setCurrentIndex(idx);
-    setProgress(0);
-  }, []);
 
   // Smooth progress bar increment & autoplay
   useEffect(() => {
@@ -263,25 +257,7 @@ export function FeaturedShowcaseSlider({
           </div>
         </div>
 
-        {/* 5. Minimalist Direct Slide Jump Indicators (Bottom Center/Left) */}
-        <div className="absolute bottom-3 start-6 sm:start-12 z-20 flex items-center gap-1.5 pointer-events-auto">
-          {showcaseArticles.map((_, idx) => (
-            <button
-              key={idx}
-              type="button"
-              onClick={() => goToSlide(idx)}
-              className={cn(
-                'h-1 rounded-full transition-all duration-300 cursor-pointer',
-                idx === currentIndex
-                  ? 'w-7 sm:w-9 bg-white shadow-sm'
-                  : 'w-2 sm:w-3 bg-white/30 hover:bg-white/60'
-              )}
-              aria-label={`Jump to slide 0${idx + 1}`}
-            />
-          ))}
-        </div>
-
-        {/* 6. Precision Autoplay Progress Line (Running Along Entire Bottom Border) */}
+        {/* 5. Precision Autoplay Progress Line (Running Along Entire Bottom Border) */}
         <div className="absolute bottom-0 inset-x-0 h-[2.5px] bg-white/10 z-30 pointer-events-none">
           <div
             className="h-full bg-accent transition-[width] duration-75 ease-linear"
