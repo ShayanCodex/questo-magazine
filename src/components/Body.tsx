@@ -89,7 +89,7 @@ export function Body({ blocks, onImageClick }: BodyProps) {
                 <p>"{block.text}"</p>
                 {block.cite && (
                   <cite className="block not-italic text-xs font-sans uppercase tracking-wider text-editorial-muted mt-2">
-                    — {block.cite}
+                    {block.cite}
                   </cite>
                 )}
               </blockquote>

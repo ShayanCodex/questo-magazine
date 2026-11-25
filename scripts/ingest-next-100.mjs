@@ -255,14 +255,66 @@ const CHART_TEMPLATES = {
 
 function cleanSpartanText(text) {
   return String(text || '')
+    // Remove IPA / phonetic / citation brackets and audio pronunciation stubs
+    .replace(/\[[^\]]*[\u0250-\u02AF\u02B0-\u02FF\u0300-\u036Fˈˌːˀ]+[^\]]*\]/g, '')
+    .replace(/\/[^/\n]*[\u0250-\u02AFˈˌːˀ]+[^/\n]*\//g, '')
     .replace(/\[\d+\]/g, '')
+    .replace(/\[[^\]]{1,40}\]/g, '')
+    // Remove pronunciation parentheticals like "( , US also , Danish: , locally also )"
+    .replace(/\(\s*(?:[^()]*?(?:US also|UK also|pronounced|listen|locally also|literally|IPA)[^()]*?)\)/gi, '')
+    .replace(/\([\s,;:/\-]*\)/g, '')
+    .replace(/\(\s*[,;:]+\s*/g, '(')
+    .replace(/\s*[,;:]+\s*\)/g, ')')
+    .replace(/\(\s*\)/g, '')
+    // Enforce spartan punctuation (no em/en dashes, no semicolons, no markdown chars)
     .replace(/\u2014|\u2013/g, ', ')
     .replace(/;/g, ',')
     .replace(/\*/g, '')
     .replace(/#/g, '')
+    .replace(/\s+([,.!?])/g, '$1')
+    .replace(/,\s*,+/g, ',')
     .replace(/\s+/g, ' ')
     .trim();
 }
+
+const HOOK_OPENERS = {
+  finance: (title) =>
+    `Why does ${title} still shape capital allocation and market pricing across global desks? Behind the headline numbers lies a structural mechanism that quietly governs liquidity, risk, and long-term purchasing power.`,
+  business: (title) =>
+    `Most operators overlook how ${title} drives unit economics and competitive moats at scale. Understanding its real-world mechanics reveals why disciplined organizations outperform during market shifts.`,
+  crypto: (title) =>
+    `Trustless networks live or die by the cryptographic guarantees behind ${title}. Here is how the underlying protocol design solves coordination and verification without central intermediaries.`,
+  technology: (title) =>
+    `Every leap in modern computing traces back to breakthroughs like ${title}. Look past the hype and you find concrete engineering trade-offs in speed, energy efficiency, and system architecture.`,
+  software: (title) =>
+    `Reliable software systems depend on foundational primitives like ${title}. Understanding how it manages state, latency, and fault tolerance separates resilient architecture from fragile code.`,
+  'engineering-and-technology': (title) =>
+    `Modern physical infrastructure relies on precision systems such as ${title} to deliver scale safely. Here is how engineers balance thermodynamics, material limits, and lifecycle cost.`,
+  science: (title) =>
+    `What makes ${title} one of the most revealing subjects in empirical research? Primary observations and reproducible data continue to reshape how scientists model the physical world.`,
+  health: (title) =>
+    `Long-term human resilience often comes down to biological mechanisms like ${title}. Clinical evidence shows how small cellular and systemic shifts compound into measurable health outcomes.`,
+  fitness: (title) =>
+    `Sustainable athletic performance is built on physiological adaptations like ${title}. When you align training load with real biomechanics, endurance and recovery improve together.`,
+  food: (title) =>
+    `Great culinary craft is applied chemistry in motion, and ${title} proves it. From raw ingredients to temperature control, tiny structural changes transform flavor and texture.`,
+  travel: (title) =>
+    `Few places or corridors tell a richer story of geography and human movement than ${title}. Stepping into its history reveals how trade, terrain, and culture shaped the modern map.`,
+  'architecture-and-space': (title) =>
+    `Form follows physics in ${title}, where structural load, light, and material permanence meet human experience. Look closely at the spatial geometry and you see how design endures across decades.`,
+  'art-and-culture': (title) =>
+    `Enduring works like ${title} capture more than a single historical moment. They reveal how technique, patronage, and cultural memory evolve across generations.`,
+  'design-and-typography': (title) =>
+    `Clarity on the page is never accidental, and ${title} demonstrates why visual hierarchy matters. Strong typographic and grid systems guide the reader's eye effortlessly.`,
+  sports: (title) =>
+    `At elite levels, victory is measured in milliseconds and millimeters, which is why ${title} matters so much. Physics, aerodynamics, and split-second execution decide the margin.`,
+  entertainment: (title) =>
+    `Great storytelling depends on craft behind the scenes, and ${title} changed how audiences experience sound and motion. Technical precision unlocks emotional impact.`,
+  lifestyle: (title) =>
+    `Daily focus and environment quietly determine long-term output, making ${title} worth examining closely. Practical, evidence-backed habits consistently beat short-lived trends.`,
+  news: (title) =>
+    `Global supply chains and geopolitical balances increasingly pivot around ${title}. Tracking the primary facts helps separate durable structural shifts from daily noise.`,
+};
 
 function slugify(title) {
   return title
@@ -317,7 +369,10 @@ function splitIntoShortParagraphs(text, maxWordsPerPara = 55) {
   for (const s of sentences) {
     const trimmed = s.trim();
     if (!trimmed) continue;
-    const words = trimmed.split(/\s+/).length;
+    // Skip broken/truncated stub sentences like "It is located." or single-word fragments
+    const wordCount = trimmed.split(/\s+/).length;
+    if (wordCount < 5 || /^(it is located|see also|further reading|in \d{4})\.$/i.test(trimmed)) continue;
+    const words = wordCount;
     if (currentWords > 0 && currentWords + words > maxWordsPerPara) {
       chunks.push(current.join(' '));
       current = [trimmed];
@@ -390,6 +445,15 @@ function buildArticleBody(title, extract, category, author) {
 
   if (!body.some((b) => b.type === 'h2')) {
     body.unshift({ type: 'h2', text: `Overview and Empirical Foundations of ${title}` });
+  }
+
+  // Insert compelling humanized hook right at the top for high reader retention
+  const hookFn = HOOK_OPENERS[category] || HOOK_OPENERS.science;
+  const hookPara = { type: 'p', text: hookFn(title) };
+  if (body[0]?.type === 'h2') {
+    body.splice(1, 0, hookPara);
+  } else {
+    body.unshift(hookPara);
   }
 
   if (highlights.length >= 3) {
