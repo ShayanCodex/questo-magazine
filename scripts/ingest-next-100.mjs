@@ -308,13 +308,43 @@ function isValidImageUrl(url, width) {
   return true;
 }
 
+function splitIntoShortParagraphs(text, maxWordsPerPara = 55) {
+  const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [text];
+  const chunks = [];
+  let current = [];
+  let currentWords = 0;
+
+  for (const s of sentences) {
+    const trimmed = s.trim();
+    if (!trimmed) continue;
+    const words = trimmed.split(/\s+/).length;
+    if (currentWords > 0 && currentWords + words > maxWordsPerPara) {
+      chunks.push(current.join(' '));
+      current = [trimmed];
+      currentWords = words;
+    } else {
+      current.push(trimmed);
+      currentWords += words;
+    }
+  }
+  if (current.length > 0) {
+    chunks.push(current.join(' '));
+  }
+  return chunks;
+}
+
 function buildArticleBody(title, extract, category, author) {
   const rawLines = extract.split('\n').map((l) => l.trim()).filter(Boolean);
   const body = [];
   const highlights = [];
 
+  let totalWords = 0;
   let currentParagraphs = 0;
+  const MAX_WORDS = 1320; // Keeps reading time in the 5-7 min sweet spot (1,000-1,400 words)
+
   for (const line of rawLines) {
+    if (totalWords >= MAX_WORDS) break;
+
     const headingMatch = line.match(/^={2,4}\s*(.+?)\s*={2,4}$/);
     if (headingMatch) {
       const headingText = cleanSpartanText(headingMatch[1]);
@@ -323,6 +353,7 @@ function buildArticleBody(title, extract, category, author) {
         !/^(see also|references|external links|further reading|notes|bibliography|sources)$/i.test(headingText)
       ) {
         body.push({ type: line.startsWith('===') ? 'h3' : 'h2', text: headingText });
+        totalWords += headingText.split(/\s+/).length;
       }
       continue;
     }
@@ -330,28 +361,38 @@ function buildArticleBody(title, extract, category, author) {
     const cleaned = cleanSpartanText(line);
     if (cleaned.length < 70) continue;
 
-    body.push({ type: 'p', text: cleaned });
-    currentParagraphs++;
+    // Break dense blocks into crisp 2-3 line paragraphs (~40-55 words each) for mobile retention
+    const shortParas = splitIntoShortParagraphs(cleaned, 55);
+    for (const sp of shortParas) {
+      if (totalWords >= MAX_WORDS) break;
+      const wCount = sp.split(/\s+/).length;
+      if (wCount < 12) continue;
 
-    if (highlights.length < 4 && cleaned.length > 90) {
-      const firstSentence = cleaned.split('. ')[0];
-      if (firstSentence && firstSentence.length > 35 && firstSentence.length < 180) {
-        highlights.push(`${firstSentence}.`);
+      body.push({ type: 'p', text: sp });
+      totalWords += wCount;
+      currentParagraphs++;
+
+      if (highlights.length < 5 && sp.length > 75) {
+        const firstSentence = sp.split('. ')[0];
+        if (firstSentence && firstSentence.length > 35 && firstSentence.length < 170) {
+          highlights.push(`${firstSentence}.`);
+        }
       }
-    }
 
-    if (currentParagraphs === 2 && CHART_TEMPLATES[category]) {
-      body.push({ type: 'chart', chart: CHART_TEMPLATES[category] });
+      if (currentParagraphs === 3 && CHART_TEMPLATES[category]) {
+        body.push({ type: 'chart', chart: CHART_TEMPLATES[category] });
+      }
     }
   }
 
-  if (body.length === 0) return null;
+  // Require at least ~920 words so every article lands in the 5-7 minute read window
+  if (body.length < 6 || totalWords < 920) return null;
 
   if (!body.some((b) => b.type === 'h2')) {
     body.unshift({ type: 'h2', text: `Overview and Empirical Foundations of ${title}` });
   }
 
-  if (highlights.length >= 2) {
+  if (highlights.length >= 3) {
     body.push({ type: 'h2', text: 'Key Analytical Takeaways' });
     body.push({ type: 'ul', items: highlights });
   }
@@ -364,7 +405,7 @@ function buildArticleBody(title, extract, category, author) {
 
   body.push({
     type: 'p',
-    text: 'Source attribution: This editorial monograph adapts factual reference material from Wikipedia (CC BY-SA 4.0) and Wikimedia Commons open-access archives, structured for clarity and long-form reading.',
+    text: 'Source attribution: This editorial monograph adapts factual reference material from Wikipedia (CC BY-SA 4.0) and Wikimedia Commons open-access archives, structured for clarity and fast reading.',
   });
 
   return body;
@@ -380,7 +421,7 @@ async function fetchWikiBatch(query, offset) {
     prop: 'extracts|pageimages|info',
     exintro: '0',
     explaintext: '1',
-    exchars: '5200',
+    exchars: '10500',
     piprop: 'original',
     inprop: 'url',
     format: 'json',
@@ -401,7 +442,7 @@ async function run() {
   const { existingSlugs, existingImages, state } = loadExistingState();
   let created = 0;
   let attempts = 0;
-  const maxAttempts = 65;
+  const maxAttempts = 95;
 
   const today = new Date().toISOString().slice(0, 10);
 
@@ -427,7 +468,7 @@ async function run() {
 
     for (const page of pages) {
       if (created >= TARGET_COUNT) break;
-      if (!page.title || !page.extract || page.extract.length < 1100) continue;
+      if (!page.title || !page.extract || page.extract.length < 4800) continue;
 
       const orig = page.original;
       if (!orig || !isValidImageUrl(orig.source, orig.width)) continue;
