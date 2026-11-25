@@ -11,7 +11,7 @@ import { ArticleViewCount } from '../components/ArticleViewCount';
 import { FeaturedShowcaseSlider } from '../components/FeaturedShowcaseSlider';
 import { MonographOfTheMonth } from '../components/MonographOfTheMonth';
 import { EditorialSpotlight } from '../components/EditorialSpotlight';
-import { LatestArticlesFeed } from '../components/LatestArticlesFeed';
+import { LatestArticlesFeed, selectLatestFeedArticles } from '../components/LatestArticlesFeed';
 import { MultiCategoryShowcase } from '../components/MultiCategoryShowcase';
 import { EditorialMastheadStrip } from '../components/EditorialMastheadStrip';
 import { ManifestoBanner } from '../components/ManifestoBanner';
@@ -123,6 +123,26 @@ export function Home() {
   const sliderArticles = sections.sliderArticles.length > 0 ? sections.sliderArticles : articles.slice(0, 4);
   const heroArticle = sections.heroArticle || articles[0];
   const secondaryArticles = sections.secondaryArticles;
+
+  // Deduplicate blogs across Latest Monographs & Dispatches and Curated Articles by Category
+  const topUsedSlugs = useMemo(() => {
+    const set = new Set<string>();
+    sliderArticles.forEach((a) => set.add(a.slug));
+    if (heroArticle) set.add(heroArticle.slug);
+    secondaryArticles.forEach((a) => set.add(a.slug));
+    return set;
+  }, [sliderArticles, heroArticle, secondaryArticles]);
+
+  const latestFeedArticles = useMemo(
+    () => selectLatestFeedArticles(articles, 4, topUsedSlugs),
+    [articles, topUsedSlugs]
+  );
+
+  const multiCategoryArticles = useMemo(() => {
+    const excluded = new Set(topUsedSlugs);
+    latestFeedArticles.forEach((a) => excluded.add(a.slug));
+    return articles.filter((a) => !excluded.has(a.slug));
+  }, [articles, topUsedSlugs, latestFeedArticles]);
 
   // Live article counts by category
   const categoryCounts = useMemo(() => {
@@ -435,10 +455,10 @@ export function Home() {
       </section>
 
       {/* 6. Latest Chronological Articles & Dispatches (Distinct Categories) */}
-      <LatestArticlesFeed articles={articles} limit={4} />
+      <LatestArticlesFeed articles={latestFeedArticles} limit={4} />
 
       {/* 6b. Multi-Category Showcase & Disciplines Matrix */}
-      <MultiCategoryShowcase articles={articles} />
+      <MultiCategoryShowcase articles={multiCategoryArticles} />
 
       {/* 7. Curated Architectural Monograph Spotlight */}
       <EditorialSpotlight />

@@ -11,42 +11,52 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 export interface LatestArticlesFeedProps {
   articles: ArticleData[];
   limit?: number;
+  excludeSlugs?: Set<string>;
 }
 
-export function LatestArticlesFeed({ articles, limit = 4 }: LatestArticlesFeedProps) {
-  const { t, localePath, language } = useLanguage();
+export function selectLatestFeedArticles(
+  articles: ArticleData[],
+  limit = 4,
+  excludeSlugs?: Set<string>
+): ArticleData[] {
+  const chronological = [...articles]
+    .filter((a) => !excludeSlugs || !excludeSlugs.has(a.slug))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // Distinct-category selection: ensure each card in the feed represents a different category
-  const sorted = useMemo(() => {
-    const chronological = [...articles].sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-    );
+  const selected: ArticleData[] = [];
+  const seenCategories = new Set<string>();
 
-    const selected: ArticleData[] = [];
-    const seenCategories = new Set<string>();
+  // Pass 1: Select the freshest article from distinct categories
+  for (const art of chronological) {
+    const { category } = getArticleCategory(art);
+    if (!seenCategories.has(category.id)) {
+      seenCategories.add(category.id);
+      selected.push(art);
+      if (selected.length >= limit) break;
+    }
+  }
 
-    // Pass 1: Select the freshest article from distinct categories
+  // Pass 2: If distinct categories are fewer than limit, fill with remaining newest
+  if (selected.length < limit) {
     for (const art of chronological) {
-      const { category } = getArticleCategory(art);
-      if (!seenCategories.has(category.id)) {
-        seenCategories.add(category.id);
+      if (!selected.some((s) => s.slug === art.slug)) {
         selected.push(art);
         if (selected.length >= limit) break;
       }
     }
+  }
 
-    // Pass 2: If distinct categories are fewer than limit, fill with remaining newest
-    if (selected.length < limit) {
-      for (const art of chronological) {
-        if (!selected.some((s) => s.slug === art.slug)) {
-          selected.push(art);
-          if (selected.length >= limit) break;
-        }
-      }
-    }
+  return selected;
+}
 
-    return selected;
-  }, [articles, limit]);
+export function LatestArticlesFeed({ articles, limit = 4, excludeSlugs }: LatestArticlesFeedProps) {
+  const { t, localePath, language } = useLanguage();
+
+  // Distinct-category selection: ensure each card in the feed represents a different category
+  const sorted = useMemo(
+    () => selectLatestFeedArticles(articles, limit, excludeSlugs),
+    [articles, limit, excludeSlugs]
+  );
 
   return (
     <section className="pt-12 sm:pt-16 border-t border-editorial-border space-y-8 font-sans">
