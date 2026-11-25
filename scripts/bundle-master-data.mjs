@@ -10,33 +10,37 @@ const articlesDir = path.join(contentDir, 'articles');
 const translationsDir = path.join(contentDir, 'translations');
 const outputDir = path.join(rootDir, 'src', 'data');
 
-// Ensure output directory exists
+const SHARD_COUNT = 5;
+
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-// Read site config
 const siteConfigPath = path.join(rootDir, 'site.config.json');
 const siteConfig = JSON.parse(fs.readFileSync(siteConfigPath, 'utf8'));
 const defaultLang = siteConfig.defaultLanguage || 'en';
 const languages = siteConfig.languages || [{ code: 'en', name: 'English', dir: 'ltr' }];
 
-// Read all base English articles
 const articleFiles = fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json')).sort();
 const baseArticles = articleFiles.map((file) => {
   const filePath = path.join(articlesDir, file);
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 });
 
-console.log(`📦 Bundling master article data for ${articleFiles.length} base articles across ${languages.length} locales...`);
+// Sort base articles newest-first so shard 0 always holds newest flagship articles
+baseArticles.sort((a, b) => b.date.localeCompare(a.date));
+
+console.log(`📦 Bundling master article data for ${articleFiles.length} base articles across ${languages.length} locales (${SHARD_COUNT} shards)...`);
 
 const availableLanguagesMap = {};
+const slugShardMap = {};
 
-// Map out available real languages for each slug
-for (const article of baseArticles) {
+for (let i = 0; i < baseArticles.length; i++) {
+  const article = baseArticles[i];
   const slug = article.slug;
-  const available = [defaultLang];
+  slugShardMap[slug] = i % SHARD_COUNT;
 
+  const available = [defaultLang];
   for (const lang of languages) {
     if (lang.code === defaultLang) continue;
     const transPath = path.join(translationsDir, lang.code, `${slug}.json`);
@@ -44,13 +48,11 @@ for (const article of baseArticles) {
       available.push(lang.code);
     }
   }
-
   availableLanguagesMap[slug] = available;
 }
 
-// Write available languages map
-const availLangsPath = path.join(outputDir, 'available-languages.json');
-fs.writeFileSync(availLangsPath, JSON.stringify(availableLanguagesMap, null, 2), 'utf8');
+fs.writeFileSync(path.join(outputDir, 'available-languages.json'), JSON.stringify(availableLanguagesMap), 'utf8');
+fs.writeFileSync(path.join(outputDir, 'slug-shard-map.json'), JSON.stringify(slugShardMap), 'utf8');
 
 function stripMockPrefix(val) {
   if (typeof val === 'string') {
@@ -69,66 +71,58 @@ function stripMockPrefix(val) {
   return val;
 }
 
-// For each language, bundle all articles into a grouped master array
 for (const lang of languages) {
   const isDefault = lang.code === defaultLang;
-  const bundledArticles = [];
+  const shards = Array.from({ length: SHARD_COUNT }, () => []);
+  const cardIndex = [];
 
-  for (const baseArticle of baseArticles) {
+  for (let i = 0; i < baseArticles.length; i++) {
+    const baseArticle = baseArticles[i];
     const slug = baseArticle.slug;
+    const shardIdx = i % SHARD_COUNT;
     const transPath = path.join(translationsDir, lang.code, `${slug}.json`);
 
+    let resolved;
     if (!isDefault && fs.existsSync(transPath)) {
       try {
         const transArticle = JSON.parse(fs.readFileSync(transPath, 'utf8'));
         const cleaned = stripMockPrefix(transArticle);
-        bundledArticles.push({
-          ...cleaned,
-          isFallback: false,
-        });
-      } catch (err) {
-        console.warn(`⚠️ Error reading translation for ${slug} [${lang.code}], falling back to base:`, err.message);
-        bundledArticles.push({
-          ...baseArticle,
-          isFallback: true,
-        });
+        resolved = { ...cleaned, isFallback: false };
+      } catch {
+        resolved = { ...baseArticle, isFallback: true };
       }
     } else {
-      bundledArticles.push({
-        ...baseArticle,
-        isFallback: !isDefault,
-      });
+      resolved = { ...baseArticle, isFallback: !isDefault };
     }
+
+    shards[shardIdx].push(resolved);
+    cardIndex.push({
+      slug: resolved.slug,
+      title: resolved.title,
+      excerpt: resolved.excerpt,
+      date: resolved.date,
+      updated: resolved.updated,
+      author: resolved.author,
+      tags: resolved.tags,
+      category: resolved.category,
+      subcategory: resolved.subcategory,
+      image: resolved.image,
+      imageAlt: resolved.imageAlt,
+      featured: resolved.featured,
+      isFallback: resolved.isFallback,
+    });
   }
 
-  // Sort descending by publication date
-  bundledArticles.sort((a, b) => b.date.localeCompare(a.date));
+  let totalLangBytes = 0;
+  for (let s = 0; s < SHARD_COUNT; s++) {
+    const shardJson = JSON.stringify(shards[s]);
+    totalLangBytes += Buffer.byteLength(shardJson);
+    fs.writeFileSync(path.join(outputDir, `master-articles.${lang.code}.${s}.json`), shardJson, 'utf8');
+  }
 
-  // Write minified grouped master JSON file
-  const outPath = path.join(outputDir, `master-articles.${lang.code}.json`);
-  fs.writeFileSync(outPath, JSON.stringify(bundledArticles), 'utf8');
-
-  // Also write a lightweight card index (omits full body blocks for lightweight network transfers)
-  const cardIndex = bundledArticles.map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    updated: a.updated,
-    author: a.author,
-    tags: a.tags,
-    category: a.category,
-    subcategory: a.subcategory,
-    image: a.image,
-    imageAlt: a.imageAlt,
-    featured: a.featured,
-    isFallback: a.isFallback,
-  }));
-  const cardIndexPath = path.join(outputDir, `cards-index.${lang.code}.json`);
-  fs.writeFileSync(cardIndexPath, JSON.stringify(cardIndex), 'utf8');
-
-  const sizeKb = (Buffer.byteLength(JSON.stringify(bundledArticles)) / 1024).toFixed(1);
-  console.log(`  ✓ [${lang.code}] ${bundledArticles.length} articles bundled -> master-articles.${lang.code}.json (${sizeKb} KB)`);
+  fs.writeFileSync(path.join(outputDir, `cards-index.${lang.code}.json`), JSON.stringify(cardIndex), 'utf8');
+  const sizeKb = (totalLangBytes / 1024).toFixed(1);
+  console.log(`  ✓ [${lang.code}] ${cardIndex.length} articles -> ${SHARD_COUNT} shards (${sizeKb} KB total) + cards-index.${lang.code}.json`);
 }
 
 // Automatically sync ultra-lightweight ebooks card index for high-speed catalog browsing
@@ -149,9 +143,9 @@ if (fs.existsSync(fullEbooksPath)) {
     pageCount: b.pageCount || 200,
     readingTimeHours: b.readingTimeHours || 4,
   }));
-  fs.writeFileSync(cardsEbooksPath, JSON.stringify(cards));
-  console.log(`  ✓ E-Books card index synced -> ebooks-cards.json (${(fs.statSync(cardsEbooksPath).size / 1024).toFixed(1)} KB)`);
+  fs.writeFileSync(cardsEbooksPath, JSON.stringify(cards, null, 2), 'utf8');
+  const ebSizeKb = (Buffer.byteLength(JSON.stringify(cards)) / 1024).toFixed(1);
+  console.log(`  ✓ E-Books card index synced -> ebooks-cards.json (${ebSizeKb} KB)`);
 }
 
-console.log('✅ Master JSON bundling complete.\n');
-
+console.log('✅ Master JSON bundling complete.');

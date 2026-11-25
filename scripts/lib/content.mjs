@@ -237,8 +237,11 @@ export function getIncludedRoutes() {
     routes.push(`/authors/${authorSlug}`);
   }
 
-  // Full Indexation: Pre-render all base articles for maximum organic search dominance
-  const allBaseArticles = getAllArticles();
+  // Scalable SSG Indexation: Pre-render up to 2,500 newest flagship articles directly as HTML
+  // (Remaining articles render seamlessly via sharded JSON + Cloudflare _redirects SPA fallback, keeping < 20k files)
+  const allBaseArticles = getAllArticles()
+    .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+    .slice(0, 2500);
   for (const art of allBaseArticles) {
     routes.push(`/articles/${art.slug}`);
   }

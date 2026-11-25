@@ -1,7 +1,7 @@
 import type { RouteRecord } from 'vite-react-ssg';
 import { siteConfig } from './lib/site';
 import {
-  loadAllArticles,
+  loadArticleCards,
   loadArticle,
   loadAllTags,
   getAvailableRealLanguages,
@@ -50,17 +50,8 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
     path,
     element: <LanguageRoot language={lang} />,
     loader: async () => {
-      const tags = await loadAllTags();
-      const allArticles = await loadAllArticles(lang.code);
-      const searchIndex = allArticles.map((a) => ({
-        slug: a.slug,
-        title: a.title,
-        excerpt: a.excerpt,
-        date: a.date,
-        tags: a.tags,
-        author: a.author,
-      }));
-      return { tags, searchIndex };
+      const allTags = await loadAllTags();
+      return { tags: allTags.slice(0, 120) };
     },
     children: [
       {
@@ -68,8 +59,8 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
         element: <Home />,
         loader: async ({ request }) => {
           const url = new URL(request.url);
-          const articles = await loadAllArticles(lang.code);
-          return { articles, pathname: url.pathname };
+          const cards = await loadArticleCards(lang.code);
+          return { articles: cards.slice(0, 120), pathname: url.pathname };
         },
       },
       {
@@ -77,7 +68,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
         element: <Articles />,
         loader: async ({ request }) => {
           const url = new URL(request.url);
-          const articles = await loadAllArticles(lang.code);
+          const articles = await loadArticleCards(lang.code);
           return { articles, pathname: url.pathname };
         },
       },
@@ -138,7 +129,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
         element: <Categories />,
         loader: async ({ request }) => {
           const url = new URL(request.url);
-          const articles = await loadAllArticles(lang.code);
+          const articles = await loadArticleCards(lang.code);
           return { articles, pathname: url.pathname };
         },
       },
@@ -154,7 +145,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           if (!category) {
             throw new Response('Not Found', { status: 404 });
           }
-          const allArticles = await loadAllArticles(lang.code);
+          const allArticles = await loadArticleCards(lang.code);
           const filtered = allArticles.filter(
             (a) => getArticleCategory(a).category.id === slug
           );
@@ -179,7 +170,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           if (!author) {
             throw new Response('Not Found', { status: 404 });
           }
-          const allArticles = await loadAllArticles(lang.code);
+          const allArticles = await loadArticleCards(lang.code);
           const filtered = allArticles.filter(
             (a) => a.author.toLowerCase() === author.name.toLowerCase()
           );
@@ -216,7 +207,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           if (!article) {
             throw new Response('Not Found', { status: 404 });
           }
-          const allArticles = await loadAllArticles(lang.code);
+          const allArticles = await loadArticleCards(lang.code);
           const articleCatId = getArticleCategory(article).category.id;
           const sortedCandidates = allArticles
             .filter((a) => a.slug !== slug && a.image !== article.image)
@@ -257,7 +248,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
           if (!tag) {
             throw new Response('Not Found', { status: 404 });
           }
-          const all = await loadAllArticles(lang.code);
+          const all = await loadArticleCards(lang.code);
           const filtered = all.filter((a) => a.tags?.includes(tag));
           const url = new URL(request.url);
           return {

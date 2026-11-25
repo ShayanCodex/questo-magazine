@@ -15,6 +15,7 @@ import type { SearchItem } from '../lib/types';
 import { useLanguage } from '../lib/lang-context';
 import { useReadingList } from '../lib/reading-list';
 import { siteConfig } from '../lib/site';
+import { loadArticleCards } from '../lib/content';
 import { Button } from './ui/button';
 import {
   Sheet,
@@ -41,6 +42,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [readingListOpen, setReadingListOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+  const [lazySearchIndex, setLazySearchIndex] = useState<SearchItem[]>(searchIndex);
   const [navVisible, setNavVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const lastScrollY = useRef(0);
@@ -50,6 +52,31 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
 
   const location = useLocation();
   const { language, t, switchLanguagePath, localePath } = useLanguage();
+
+  useEffect(() => {
+    if (searchIndex.length > 0) {
+      setLazySearchIndex(searchIndex);
+      return;
+    }
+    if (!searchOpen && !readingListOpen) return;
+    let active = true;
+    loadArticleCards(language.code).then((cards) => {
+      if (!active) return;
+      setLazySearchIndex(
+        cards.map((a) => ({
+          slug: a.slug,
+          title: a.title,
+          excerpt: a.excerpt,
+          date: a.date,
+          tags: a.tags,
+          author: a.author,
+        }))
+      );
+    });
+    return () => {
+      active = false;
+    };
+  }, [searchOpen, readingListOpen, searchIndex, language.code]);
 
   const currentPath = location.pathname;
 
@@ -814,7 +841,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
       <SearchModal
         open={searchOpen}
         onOpenChange={setSearchOpen}
-        items={searchIndex}
+        items={lazySearchIndex}
         tags={tags}
       />
 
@@ -822,7 +849,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
       <ReadingListDrawer
         open={readingListOpen}
         onOpenChange={setReadingListOpen}
-        searchIndex={searchIndex}
+        searchIndex={lazySearchIndex}
       />
     </div>
   );

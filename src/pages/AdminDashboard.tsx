@@ -14,7 +14,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { CATEGORIES } from '../lib/categories';
 import { AUTHORS } from '../data/authors';
-import masterEn from '../data/master-articles.en.json';
+import masterEn from '../data/cards-index.en.json';
 import type { ArticleData } from '../lib/types';
 import { Seo } from '../components/Seo';
 
@@ -28,7 +28,7 @@ export function AdminDashboard() {
   const [inspectingArticle, setInspectingArticle] = useState<ArticleData | null>(null);
 
   // Pipeline metrics
-  const targetArticles = 1000;
+  const targetArticles = 10000;
   const publishedCount = articlesList.length;
   const draftCount = 5;
   const researchedCount = 45;
