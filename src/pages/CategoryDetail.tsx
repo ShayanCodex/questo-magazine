@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { useLoaderData, useSearchParams, Link } from 'react-router-dom';
 import {
   RssIcon,
@@ -13,6 +13,7 @@ import { loadArticleCards } from '../lib/content';
 import { Seo } from '../components/Seo';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { ArticleList } from '../components/ArticleList';
+import { Pagination } from '../components/Pagination';
 import { cn } from '../lib/utils';
 import {
   type Category,
@@ -56,45 +57,74 @@ export function CategoryDetail() {
 
   const activeSubcategory = searchParams.get('subcategory');
   const initialQuery = searchParams.get('q') || '';
+  const initialPage = parseInt(searchParams.get('page') || '1', 10);
   const [searchQuery, setSearchQuery] = useState(initialQuery);
+  const [currentPage, setCurrentPage] = useState(
+    isNaN(initialPage) || initialPage < 1 ? 1 : initialPage
+  );
+  const articleSectionRef = useRef<HTMLElement>(null);
+  const ARTICLES_PER_PAGE = 10;
 
   // Sync state with URL params
   useEffect(() => {
     setSearchQuery(searchParams.get('q') || '');
+    const p = parseInt(searchParams.get('page') || '1', 10);
+    setCurrentPage(isNaN(p) || p < 1 ? 1 : p);
   }, [searchParams]);
 
   const handleSearchChange = (query: string) => {
     setSearchQuery(query);
+    setCurrentPage(1);
     const next = new URLSearchParams(searchParams);
     if (query.trim()) {
       next.set('q', query.trim());
     } else {
       next.delete('q');
     }
+    next.delete('page');
     setSearchParams(next, { replace: true });
   };
 
   const handleClearSearch = () => {
     setSearchQuery('');
+    setCurrentPage(1);
     const next = new URLSearchParams(searchParams);
     next.delete('q');
+    next.delete('page');
     setSearchParams(next, { replace: true });
   };
 
   const handleSubcategoryClick = (subId: string | null) => {
+    setCurrentPage(1);
     const next = new URLSearchParams(searchParams);
     if (!subId || subId === activeSubcategory) {
       next.delete('subcategory');
     } else {
       next.set('subcategory', subId);
     }
+    next.delete('page');
     setSearchParams(next, { replace: true });
   };
 
   const handleResetAllFilters = () => {
     setSearchQuery('');
+    setCurrentPage(1);
     const next = new URLSearchParams();
     setSearchParams(next, { replace: true });
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    const next = new URLSearchParams(searchParams);
+    if (page > 1) {
+      next.set('page', String(page));
+    } else {
+      next.delete('page');
+    }
+    setSearchParams(next, { replace: true });
+    if (articleSectionRef.current) {
+      articleSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   const localizedCategoryName = category ? getCategoryName(category.id, language.code) : '';
@@ -259,7 +289,7 @@ export function CategoryDetail() {
       </header>
 
       {/* Articles Feed with Live Search Bar */}
-      <section className="space-y-6">
+      <section ref={articleSectionRef} className="space-y-6">
         {/* Search Bar & Feed Header */}
         <div className="space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-editorial-border pb-3">
@@ -361,7 +391,23 @@ export function CategoryDetail() {
             </button>
           </div>
         ) : (
-          <ArticleList articles={filteredArticles} />
+          <div className="space-y-10">
+            <ArticleList
+              articles={filteredArticles.slice(
+                (Math.min(currentPage, Math.max(1, Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE))) - 1) * ARTICLES_PER_PAGE,
+                Math.min(currentPage, Math.max(1, Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE))) * ARTICLES_PER_PAGE
+              )}
+            />
+            <Pagination
+              currentPage={Math.min(currentPage, Math.max(1, Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE)))}
+              totalPages={Math.max(1, Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE))}
+              onPageChange={handlePageChange}
+              totalItems={filteredArticles.length}
+              pageSize={ARTICLES_PER_PAGE}
+              itemsLabel={t.articles || 'articles'}
+              isRtl={language.dir === 'rtl'}
+            />
+          </div>
         )}
       </section>
     </div>
