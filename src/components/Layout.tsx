@@ -228,7 +228,7 @@ export function Layout({ tags = [], searchIndex = [] }: LayoutProps) {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="group flex items-center justify-center sm:justify-between gap-2 px-3 h-10 min-h-[44px] min-w-[44px] sm:w-36 md:w-44 lg:w-56 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0"
+              className="group flex items-center justify-center sm:justify-between gap-2 px-3 sm:px-3.5 h-10 min-h-[44px] min-w-[44px] sm:w-auto md:w-56 lg:w-64 rounded-full bg-editorial-surface border border-editorial-border hover:border-editorial-text text-editorial-muted hover:text-editorial-text transition-all cursor-pointer shadow-2xs shrink-0"
               aria-label={t.search}
               title={t.searchPlaceholder || 'Search articles...'}
             >

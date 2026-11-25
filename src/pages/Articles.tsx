@@ -306,7 +306,7 @@ export function Articles() {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted">
+          <div className="flex items-center gap-3 text-xs font-sans font-medium uppercase tracking-wider text-editorial-muted shrink-0 whitespace-nowrap">
             <span>
               {filteredArticles.length} / {articles.length} {t.articlesFound}
             </span>
@@ -527,7 +527,7 @@ export function Articles() {
           <div
             ref={categoryScrollRef}
             onScroll={checkCategoryScroll}
-            className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1.5 px-3 font-sans"
+            className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1.5 ps-2 pe-9 font-sans"
           >
             <button
               type="button"
