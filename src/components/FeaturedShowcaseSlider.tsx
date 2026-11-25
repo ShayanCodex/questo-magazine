@@ -12,7 +12,6 @@ import { getArticleCategory } from '../lib/categories';
 import { BookmarkButton } from './BookmarkButton';
 import { LazyImage } from './LazyImage';
 import { cn } from '../lib/utils';
-import { SLIDER_TAGS } from '../lib/page-translations';
 
 export interface FeaturedShowcaseSliderProps {
   articles: ArticleData[];
@@ -118,17 +117,9 @@ export function FeaturedShowcaseSlider({
   if (showcaseArticles.length === 0) return null;
 
   const currentArticle = showcaseArticles[currentIndex];
-  const { category } = getArticleCategory(currentArticle);
   const formattedDate = formatDate(currentArticle.date, language.code);
   const readingTime = calculateReadingTime(currentArticle, t.minRead);
   const articleUrl = localePath(`/articles/${currentArticle.slug}`);
-
-  // Fetch curated photography or fallback
-  const curatedMeta = {
-    image: currentArticle.image,
-    alt: currentArticle.imageAlt || currentArticle.title,
-    issueTag: `${category.name.toUpperCase()} // EDITORIAL`,
-  };
 
   // Handle touch swipe on mobile
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -200,11 +191,6 @@ export function FeaturedShowcaseSlider({
 
         {/* 3. Primary Editorial Typography Suite (Lower-Third Golden Ratio Placement) */}
         <div className="absolute bottom-8 sm:bottom-12 start-5 sm:start-12 end-28 sm:end-44 z-20 space-y-2.5 sm:space-y-3.5 max-w-2xl">
-          {/* Refined Category & Discipline Eyebrow */}
-          <div className="flex items-center gap-2 font-mono text-[9px] sm:text-xs font-semibold tracking-[0.24em] text-accent uppercase drop-shadow-sm">
-            <span>{(SLIDER_TAGS[language.code] && SLIDER_TAGS[language.code][currentArticle.slug]) || curatedMeta.issueTag}</span>
-          </div>
-
           {/* Majestic Editorial Headline: Bold, Elegant Leading, Human Scale */}
           <h2 className="font-sans font-bold text-2xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-[1.15] drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] text-balance">
             <Link
