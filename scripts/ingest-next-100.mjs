@@ -8,7 +8,8 @@ const rootDir = path.resolve(__dirname, '..');
 const articlesDir = path.join(rootDir, 'content', 'articles');
 const statePath = path.join(__dirname, 'ingest-state.json');
 
-const TARGET_COUNT = 100;
+const countArg = process.argv.find((a) => a.startsWith('--count='));
+const TARGET_COUNT = countArg ? Math.max(1, parseInt(countArg.split('=')[1], 10) || 1000) : 1000;
 
 const AUTHORS = [
   'Mateo Silva',
@@ -497,7 +498,7 @@ async function fetchWikiBatch(query, offset) {
     action: 'query',
     generator: 'search',
     gsrsearch: query,
-    gsrlimit: '20',
+    gsrlimit: '50',
     gsroffset: String(offset),
     prop: 'pageimages|info',
     piprop: 'original',
@@ -541,7 +542,7 @@ async function run() {
   const { existingSlugs, existingImages, state } = loadExistingState();
   let created = 0;
   let attempts = 0;
-  const maxAttempts = 95;
+  const maxAttempts = 450;
 
   const today = new Date().toISOString().slice(0, 10);
 
@@ -555,7 +556,7 @@ async function run() {
     const offset = state.queryOffsets[offsetKey] || 0;
 
     state.poolCursor = (state.poolCursor + 1) % (CATEGORY_POOLS.length * 5);
-    state.queryOffsets[offsetKey] = offset + 20;
+    state.queryOffsets[offsetKey] = offset + 50;
     attempts++;
 
     let pages;
@@ -616,13 +617,15 @@ async function run() {
       existingSlugs.add(slug);
       existingImages.add(orig.source);
       created++;
-      if (created % 20 === 0) {
+      if (created % 50 === 0) {
         console.log(`  ... ${created}/${TARGET_COUNT} articles created`);
+        state.totalIngested = (state.totalIngested || 0) + 50;
+        fs.writeFileSync(statePath, JSON.stringify(state, null, 2), 'utf8');
       }
     }
   }
 
-  state.totalIngested = (state.totalIngested || 0) + created;
+  state.totalIngested = (state.totalIngested || 0) + (created % 50);
   fs.writeFileSync(statePath, JSON.stringify(state, null, 2), 'utf8');
   console.log(`✅ Created ${created} new high-quality articles (Total ingested across batches: ${state.totalIngested}).`);
 }
