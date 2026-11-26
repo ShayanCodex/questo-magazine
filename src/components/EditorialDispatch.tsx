@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
-import { CheckCircleIcon, EnvelopeIcon, SparklesIcon, GlobeAltIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, EnvelopeIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 interface NicheTile {
   niche: string;
@@ -209,24 +209,6 @@ export function EditorialDispatch() {
 
         {/* Foreground Content Container (Centered Luxury Presentation) */}
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-14 sm:py-28 space-y-6 sm:space-y-8">
-          {/* Beautiful Rounded-Full Tags with Tight Tracking & Blur Borders (No Yellow) */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5">
-            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-white/[0.08] hover:bg-white/[0.14] border border-white/20 text-xs font-sans font-medium tracking-tight text-white rounded-full backdrop-blur-md transition-all shadow-xs">
-              <EnvelopeIcon className="h-3.5 w-3.5 text-neutral-300" />
-              <span>{t.weeklyJournal || 'Weekly Editorial Journal'}</span>
-            </span>
-
-            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-white/[0.06] hover:bg-white/[0.12] border border-white/15 text-xs font-sans font-medium tracking-tight text-white/90 rounded-full backdrop-blur-md transition-all shadow-xs">
-              <SparklesIcon className="h-3.5 w-3.5 text-emerald-400" />
-              <span>{t.zeroSpam || 'Zero Spam'}</span>
-            </span>
-
-            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-white/[0.08] hover:bg-white/[0.14] border border-white/20 text-xs font-sans font-medium tracking-tight text-white/95 rounded-full backdrop-blur-md transition-all shadow-xs">
-              <GlobeAltIcon className="h-3.5 w-3.5 text-neutral-300" />
-              <span>18 Curated Pillars A–Z</span>
-            </span>
-          </div>
-
           {/* Masthead Heading */}
           <h2 className="font-display font-bold text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tight text-white leading-tight drop-shadow-sm">
             {t.newsletterTitle}
