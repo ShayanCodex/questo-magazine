@@ -1,21 +1,23 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../lib/lang-context';
 import { CheckCircleIcon, EnvelopeIcon, SparklesIcon, GlobeAltIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 interface NicheTile {
   niche: string;
   description: string;
+  href: string;
   imageUrl: string;
   fallbackUrl: string;
   alt: string;
 }
 
-// 18 Photographic pillars representing publication niches from A to Z across 3 complete lines
+// 20 Photographic pillars (divisible by 2, 4, and 5 so zero empty slots appear at any breakpoint)
 const NICHE_COLLAGE: NicheTile[] = [
-  // --- Line 1 (Pillars 01 to 06) ---
   {
     niche: 'Architecture & Spatial Design',
     description: 'Brutalist concrete, parametric forms & minimalist interiors',
+    href: '/categories/architecture-and-space',
     imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Minimalist brutalist architecture and light geometry',
@@ -23,6 +25,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Artificial Intelligence & Deep Tech',
     description: 'Silicon microchips, quantum hardware & neural architectures',
+    href: '/categories/technology',
     imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Silicon microchip wafer and quantum computing circuits',
@@ -30,6 +33,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Art, Typography & Criticism',
     description: 'Modernist sculpture, editorial typography & museum curation',
+    href: '/categories/art-and-culture',
     imageUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Sculptural museum composition and modernist form',
@@ -37,6 +41,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Economics, Markets & Finance',
     description: 'Macro rates, sovereign debt & algorithmic liquidity',
+    href: '/categories/finance',
     imageUrl: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Global financial district lights and algorithmic trading data',
@@ -44,6 +49,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Astronomy, Physics & Cosmos',
     description: 'Deep cosmic nebulae, gravitational waves & orbital mechanics',
+    href: '/categories/science',
     imageUrl: 'https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Deep space cosmic nebula and stellar astrophotography',
@@ -51,15 +57,15 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Gastronomy & Culinary Science',
     description: 'Michelin plating, fermentation kinetics & viticulture',
+    href: '/categories/food',
     imageUrl: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Artisanal culinary gastronomy and plating',
   },
-
-  // --- Line 2 (Pillars 07 to 12) ---
   {
     niche: 'Philosophy & Classical Thought',
     description: 'Stoic dialectics, epistemological frameworks & archives',
+    href: '/categories/art-and-culture',
     imageUrl: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Classical historical library and philosophical monographs',
@@ -67,6 +73,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Automotive & Future Mobility',
     description: 'Aerodynamic coachbuilding, EV powertrains & telemetry',
+    href: '/categories/engineering-and-technology',
     imageUrl: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Aerodynamic automotive design and engineering',
@@ -74,6 +81,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Athletics, Longevity & Biology',
     description: 'Mitochondrial efficiency, VO2 max & cellular resilience',
+    href: '/categories/fitness',
     imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Human athletic conditioning and biomechanical performance',
@@ -81,6 +89,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Expeditions & Alpine Geography',
     description: 'Himalayan topography, arctic traverse & remote cartography',
+    href: '/categories/travel',
     imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Alpine mountain peak and overland expedition topography',
@@ -88,6 +97,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Geopolitics & World Affairs',
     description: 'Chokepoints, supply chain sovereignty & global pacts',
+    href: '/categories/news',
     imageUrl: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Global cartography, trade chokepoints and diplomacy',
@@ -95,22 +105,23 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Nature & Planetary Ecology',
     description: 'Canopy biomes, oceanic currents & carbon reservoirs',
+    href: '/categories/science',
     imageUrl: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Temperate rainforest canopy and ecological biosphere',
   },
-
-  // --- Line 3 (Pillars 13 to 18) ---
   {
     niche: 'Industrial Design & Materiality',
     description: 'Brushed titanium, ergonomic tolerances & physical crafts',
+    href: '/categories/design-and-typography',
     imageUrl: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Industrial design prototyping and modern material craft',
   },
   {
-    niche: 'Neuroscience & Cognitive Science',
-    description: 'Synaptic plasticity, neural interfaces & perception',
+    niche: 'Neuroscience & Cognitive Health',
+    description: 'Synaptic plasticity, neural interfaces & longevity',
+    href: '/categories/health',
     imageUrl: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Neuroscience laboratory optics and cellular analysis',
@@ -118,6 +129,7 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Oceanography & Deep Sea',
     description: 'Abyssal hydrothermal vents, marine trenches & currents',
+    href: '/categories/science',
     imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Deep ocean underwater topography and marine exploration',
@@ -125,28 +137,47 @@ const NICHE_COLLAGE: NicheTile[] = [
   {
     niche: 'Cinema & Visual Grammar',
     description: 'Anamorphic lenses, 35mm film grain & frame rhythm',
+    href: '/categories/entertainment',
     imageUrl: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Cinematography camera vintage glass lens and film syntax',
   },
   {
-    niche: 'Aerospace Engineering & Spaceflight',
+    niche: 'Aerospace & Spaceflight',
     description: 'Atmospheric reentry, orbital telemetry & propulsion',
+    href: '/categories/architecture-and-space',
     imageUrl: 'https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=900&q=85',
     fallbackUrl: 'https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&w=900',
     alt: 'Aerospace orbital rocket launch propulsion system',
   },
   {
-    niche: 'Archaeology & Ancient Civilizations',
-    description: 'Lidar terrain surveys, epigraphy & classical ruins',
-    imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=900&q=85',
-    fallbackUrl: 'https://images.pexels.com/photos/161815/stonehenge-salisbury-plain-wiltshire-england-161815.jpeg?auto=compress&cs=tinysrgb&w=900',
-    alt: 'Classical archaeological monuments and stone heritage',
+    niche: 'Software & Distributed Systems',
+    description: 'Kernel engineering, consensus protocols & compilers',
+    href: '/categories/software',
+    imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=85',
+    fallbackUrl: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=900',
+    alt: 'Software engineering code and distributed system architecture',
+  },
+  {
+    niche: 'Cryptography & Web3 Protocols',
+    description: 'Zero-knowledge proofs, rollups & decentralized liquidity',
+    href: '/categories/crypto',
+    imageUrl: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=900&q=85',
+    fallbackUrl: 'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=900',
+    alt: 'Cryptographic network nodes and digital ledger architecture',
+  },
+  {
+    niche: 'Global Strategy & Business',
+    description: 'Capital allocation, supply chains & industrial scale',
+    href: '/categories/business',
+    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85',
+    fallbackUrl: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=900',
+    alt: 'Modern corporate architecture and global enterprise strategy',
   },
 ];
 
 export function EditorialDispatch() {
-  const { t } = useLanguage();
+  const { t, localePath } = useLanguage();
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
@@ -264,13 +295,14 @@ export function EditorialDispatch() {
         </div>
       </div>
 
-      {/* 2. Full-Width 18-Tile Visual Collage Grid (3 Complete Lines of Images, Zero Yellow, No Cluttering Niche Badges, Blur Borders) */}
+      {/* 2. Full-Width 20-Tile Visual Collage Grid (Divisible by 2, 4, and 5 across all breakpoints, clickable to Blogs) */}
       <div className="border-t border-white/10 bg-black">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 w-full">
           {NICHE_COLLAGE.map((item) => (
-            <div
+            <Link
               key={item.niche}
-              className="group relative aspect-[4/3] sm:aspect-[3/4] md:aspect-[4/3] lg:aspect-[16/11] overflow-hidden border-b sm:border-b-0 border-r border-neutral-800/80 bg-neutral-900 select-none cursor-pointer"
+              to={localePath(item.href)}
+              className="group relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden border-b border-r border-neutral-800/80 bg-neutral-900 select-none cursor-pointer block"
             >
               {/* Vibrant Full-Color High-Res Photography */}
               <img
@@ -288,21 +320,21 @@ export function EditorialDispatch() {
               />
 
               {/* Gentle gradient at bottom to guarantee text contrast */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-85 group-hover:opacity-75 transition-opacity duration-300 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none" />
 
-              {/* Minimalist Card Typography (Clean Title & Hover Synopsis, Zero Yellow Badges) */}
-              <div className="absolute bottom-0 inset-x-0 p-3 sm:p-4 z-10 space-y-1">
-                <h3 className="font-display font-bold text-xs sm:text-sm text-white tracking-tight leading-tight group-hover:text-white transition-colors line-clamp-1">
+              {/* Clean Responsive Card Typography */}
+              <div className="absolute bottom-0 inset-x-0 p-2.5 sm:p-3.5 z-10 space-y-0.5">
+                <h3 className="font-display font-bold text-xs sm:text-[13px] text-white tracking-tight leading-snug group-hover:text-white transition-colors line-clamp-2">
                   {item.niche}
                 </h3>
-                <p className="font-serif text-[11px] text-neutral-300 leading-snug line-clamp-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block">
+                <p className="font-serif text-[11px] text-neutral-300 leading-snug line-clamp-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:block">
                   {item.description}
                 </p>
               </div>
 
-              {/* Blur / Frosted Border Highlight Frame on Hover (No Yellow) */}
+              {/* Frosted Border Highlight Frame on Hover */}
               <div className="absolute inset-0 border border-transparent group-hover:border-white/40 shadow-none group-hover:shadow-[0_0_25px_rgba(255,255,255,0.08)] pointer-events-none transition-all duration-300" />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
