@@ -237,27 +237,18 @@ export function getIncludedRoutes() {
     routes.push(`/authors/${authorSlug}`);
   }
 
-  // Scalable SSG Indexation: Pre-render 200 newest flagship articles directly as HTML
-  // Keeping total dist/ files around ~400-700 (well under Cloudflare's 20k limit and 500-1k target)
-  // while functions/articles/[slug].ts injects full SSR SEO metadata for all 10,453+ routes!
+  // Scalable SSG Indexation: Pre-render 40 newest flagship articles directly as HTML
+  // Keeping total dist/ compact (under 50 MB and ~100 HTML files)
   const allBaseArticles = getAllArticles()
     .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-    .slice(0, 200);
+    .slice(0, 10);
   for (const art of allBaseArticles) {
     routes.push(`/articles/${art.slug}`);
   }
 
-  // 2. Primary Language Root Entrypoint Hubs
+  // 2. Primary Language Root Entrypoint Hubs (sub-routes hydrate cleanly via SPA fallback)
   for (const lang of otherLangs) {
-    const p = `/${lang.code}`;
-    routes.push(p);
-    routes.push(`${p}/articles`);
-    routes.push(`${p}/markets`);
-    routes.push(`${p}/markets/screener`);
-    routes.push(`${p}/markets/heatmap`);
-    routes.push(`${p}/markets/terminal`);
-    routes.push(`${p}/categories`);
-    routes.push(`${p}/about`);
+    routes.push(`/${lang.code}`);
   }
 
   // If full rendering is explicitly forced via environment variable

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   DocumentTextIcon,
@@ -14,13 +14,20 @@ import {
 } from '@heroicons/react/24/outline';
 import { CATEGORIES } from '../lib/categories';
 import { AUTHORS } from '../data/authors';
-import masterEn from '../data/cards-index.en.json';
+import { loadArticleCards } from '../lib/content';
 import type { ArticleData } from '../lib/types';
 import { Seo } from '../components/Seo';
 
-const articlesList = masterEn as unknown as ArticleData[];
-
 export function AdminDashboard() {
+  const [articlesList, setArticlesList] = useState<ArticleData[]>([]);
+
+  useEffect(() => {
+    let active = true;
+    loadArticleCards('en').then((cards) => {
+      if (active) setArticlesList(cards);
+    }).catch(() => {});
+    return () => { active = false; };
+  }, []);
   const [activeTab, setActiveTab] = useState<'pipeline' | 'articles' | 'registry' | 'audit'>('pipeline');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -45,7 +52,7 @@ export function AdminDashboard() {
         a.tags?.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
       return matchCat && matchAuth && matchQuery;
     });
-  }, [searchQuery, selectedCategory, selectedAuthor]);
+  }, [articlesList, searchQuery, selectedCategory, selectedAuthor]);
 
   return (
     <div className="space-y-10 font-sans pb-16">

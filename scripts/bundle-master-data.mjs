@@ -11,7 +11,7 @@ const articlesDir = path.join(contentDir, 'articles');
 const translationsDir = path.join(contentDir, 'translations');
 const outputDir = path.join(rootDir, 'src', 'data');
 
-const SHARD_COUNT = 5;
+const SHARD_COUNT = 40;
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
@@ -52,8 +52,28 @@ for (let i = 0; i < baseArticles.length; i++) {
   availableLanguagesMap[slug] = available;
 }
 
-fs.writeFileSync(path.join(outputDir, 'available-languages.json'), JSON.stringify(availableLanguagesMap), 'utf8');
-fs.writeFileSync(path.join(outputDir, 'slug-shard-map.json'), JSON.stringify(slugShardMap), 'utf8');
+const publicDataDir = path.join(rootDir, 'public', 'data');
+if (!fs.existsSync(publicDataDir)) {
+  fs.mkdirSync(publicDataDir, { recursive: true });
+}
+const availJson = JSON.stringify(availableLanguagesMap);
+const shardMapJson = JSON.stringify(slugShardMap);
+fs.writeFileSync(path.join(outputDir, 'available-languages.json'), availJson, 'utf8');
+fs.writeFileSync(path.join(outputDir, 'slug-shard-map.json'), shardMapJson, 'utf8');
+fs.writeFileSync(path.join(publicDataDir, 'available-languages.json.gz'), zlib.gzipSync(availJson, { level: 9 }));
+fs.writeFileSync(path.join(publicDataDir, 'slug-shard-map.json.gz'), zlib.gzipSync(shardMapJson, { level: 9 }));
+
+// Clean old shards/indexes in public/data/ and src/data/master-articles.* before writing
+for (const f of fs.readdirSync(publicDataDir)) {
+  if (/^(master-articles|cards-index|translations|cards-translations)\./.test(f)) {
+    fs.unlinkSync(path.join(publicDataDir, f));
+  }
+}
+for (const f of fs.readdirSync(outputDir)) {
+  if (/^(master-articles|cards-index|translations|cards-translations)\./.test(f)) {
+    fs.unlinkSync(path.join(outputDir, f));
+  }
+}
 
 function stripMockPrefix(val) {
   if (typeof val === 'string') {
@@ -74,82 +94,112 @@ function stripMockPrefix(val) {
 
 for (const lang of languages) {
   const isDefault = lang.code === defaultLang;
-  const shards = Array.from({ length: SHARD_COUNT }, () => []);
-  const cardIndex = [];
 
-  for (let i = 0; i < baseArticles.length; i++) {
-    const baseArticle = baseArticles[i];
-    const slug = baseArticle.slug;
-    const shardIdx = i % SHARD_COUNT;
-    const transPath = path.join(translationsDir, lang.code, `${slug}.json`);
+  if (isDefault) {
+    const shards = Array.from({ length: SHARD_COUNT }, () => []);
+    const cardIndex = [];
 
-    let resolved;
-    if (!isDefault && fs.existsSync(transPath)) {
+    for (let i = 0; i < baseArticles.length; i++) {
+      const baseArticle = baseArticles[i];
+      const shardIdx = i % SHARD_COUNT;
+      const resolved = { ...baseArticle, isFallback: false };
+
+      shards[shardIdx].push(resolved);
+      cardIndex.push({
+        slug: resolved.slug,
+        title: resolved.title,
+        excerpt: resolved.excerpt,
+        date: resolved.date,
+        updated: resolved.updated,
+        author: resolved.author,
+        tags: resolved.tags,
+        category: resolved.category,
+        subcategory: resolved.subcategory,
+        image: resolved.image,
+        imageAlt: resolved.imageAlt,
+        featured: resolved.featured,
+        isFallback: false,
+      });
+    }
+
+    let totalLangBytes = 0;
+    let totalGzBytes = 0;
+    for (let s = 0; s < SHARD_COUNT; s++) {
+      const shardJson = JSON.stringify(shards[s]);
+      totalLangBytes += Buffer.byteLength(shardJson);
+      fs.writeFileSync(path.join(outputDir, `master-articles.${lang.code}.${s}.json`), shardJson, 'utf8');
+      const shardGz = zlib.gzipSync(shardJson, { level: 9 });
+      totalGzBytes += shardGz.byteLength;
+      fs.writeFileSync(path.join(publicDataDir, `master-articles.${lang.code}.${s}.json.gz`), shardGz);
+    }
+
+    const cardsJson = JSON.stringify(cardIndex);
+    fs.writeFileSync(path.join(outputDir, `cards-index.${lang.code}.json`), cardsJson, 'utf8');
+    const cardsGz = zlib.gzipSync(cardsJson, { level: 9 });
+    fs.writeFileSync(path.join(publicDataDir, `cards-index.${lang.code}.json.gz`), cardsGz);
+
+    const legacyPublicCards = path.join(rootDir, 'public', `cards-index.${lang.code}.json`);
+    if (fs.existsSync(legacyPublicCards)) {
+      fs.unlinkSync(legacyPublicCards);
+    }
+    const sizeKb = (totalLangBytes / 1024).toFixed(1);
+    const gzKb = (totalGzBytes / 1024).toFixed(1);
+    console.log(`  ✓ [${lang.code}] ${cardIndex.length} articles -> ${SHARD_COUNT} master shards (${sizeKb} KB raw / ${gzKb} KB gz) + cards-index.${lang.code}.json.gz`);
+  } else {
+    // Delta-only translation overlay (eliminates 5x duplicate English fallback storage)
+    const transMap = {};
+    const cardsTransMap = {};
+    let count = 0;
+
+    for (let i = 0; i < baseArticles.length; i++) {
+      const slug = baseArticles[i].slug;
+      const transPath = path.join(translationsDir, lang.code, `${slug}.json`);
+      if (!fs.existsSync(transPath)) continue;
       try {
         const transArticle = JSON.parse(fs.readFileSync(transPath, 'utf8'));
         const cleaned = stripMockPrefix(transArticle);
-        resolved = { ...cleaned, isFallback: false };
+        const resolved = { ...cleaned, isFallback: false };
+        transMap[slug] = resolved;
+        cardsTransMap[slug] = {
+          slug: resolved.slug,
+          title: resolved.title,
+          excerpt: resolved.excerpt,
+          date: resolved.date,
+          updated: resolved.updated,
+          author: resolved.author,
+          tags: resolved.tags,
+          category: resolved.category,
+          subcategory: resolved.subcategory,
+          image: resolved.image,
+          imageAlt: resolved.imageAlt,
+          featured: resolved.featured,
+          isFallback: false,
+        };
+        count++;
       } catch {
-        resolved = { ...baseArticle, isFallback: true };
+        // Ignore corrupt translation
       }
-    } else {
-      resolved = { ...baseArticle, isFallback: !isDefault };
     }
 
-    shards[shardIdx].push(resolved);
-    cardIndex.push({
-      slug: resolved.slug,
-      title: resolved.title,
-      excerpt: resolved.excerpt,
-      date: resolved.date,
-      updated: resolved.updated,
-      author: resolved.author,
-      tags: resolved.tags,
-      category: resolved.category,
-      subcategory: resolved.subcategory,
-      image: resolved.image,
-      imageAlt: resolved.imageAlt,
-      featured: resolved.featured,
-      isFallback: resolved.isFallback,
-    });
+    const transJson = JSON.stringify(transMap);
+    const cardsTransJson = JSON.stringify(cardsTransMap);
+    fs.writeFileSync(path.join(outputDir, `translations.${lang.code}.json`), transJson, 'utf8');
+    fs.writeFileSync(path.join(outputDir, `cards-translations.${lang.code}.json`), cardsTransJson, 'utf8');
+    const transGz = zlib.gzipSync(transJson, { level: 9 });
+    const cardsTransGz = zlib.gzipSync(cardsTransJson, { level: 9 });
+    fs.writeFileSync(path.join(publicDataDir, `translations.${lang.code}.json.gz`), transGz);
+    fs.writeFileSync(path.join(publicDataDir, `cards-translations.${lang.code}.json.gz`), cardsTransGz);
+    console.log(`  ✓ [${lang.code}] ${count} real translations -> delta (${(transGz.byteLength / 1024).toFixed(1)} KB gz)`);
   }
-
-  const publicDataDir = path.join(rootDir, 'public', 'data');
-  if (!fs.existsSync(publicDataDir)) {
-    fs.mkdirSync(publicDataDir, { recursive: true });
-  }
-
-  let totalLangBytes = 0;
-  let totalGzBytes = 0;
-  for (let s = 0; s < SHARD_COUNT; s++) {
-    const shardJson = JSON.stringify(shards[s]);
-    totalLangBytes += Buffer.byteLength(shardJson);
-    fs.writeFileSync(path.join(outputDir, `master-articles.${lang.code}.${s}.json`), shardJson, 'utf8');
-    const shardGz = zlib.gzipSync(shardJson, { level: 9 });
-    totalGzBytes += shardGz.byteLength;
-    fs.writeFileSync(path.join(publicDataDir, `master-articles.${lang.code}.${s}.json.gz`), shardGz);
-  }
-
-  const cardsJson = JSON.stringify(cardIndex);
-  fs.writeFileSync(path.join(outputDir, `cards-index.${lang.code}.json`), cardsJson, 'utf8');
-  const cardsGz = zlib.gzipSync(cardsJson, { level: 9 });
-  fs.writeFileSync(path.join(publicDataDir, `cards-index.${lang.code}.json.gz`), cardsGz);
-
-  // Remove legacy uncompressed public/cards-index.en.json if present
-  const legacyPublicCards = path.join(rootDir, 'public', `cards-index.${lang.code}.json`);
-  if (fs.existsSync(legacyPublicCards)) {
-    fs.unlinkSync(legacyPublicCards);
-  }
-  const sizeKb = (totalLangBytes / 1024).toFixed(1);
-  const gzKb = (totalGzBytes / 1024).toFixed(1);
-  console.log(`  ✓ [${lang.code}] ${cardIndex.length} articles -> ${SHARD_COUNT} shards (${sizeKb} KB raw / ${gzKb} KB gz) + cards-index.${lang.code}.json.gz`);
 }
 
 // Automatically sync ultra-lightweight ebooks card index for high-speed catalog browsing
 const fullEbooksPath = path.join(outputDir, 'ebooks.json');
 const cardsEbooksPath = path.join(outputDir, 'ebooks-cards.json');
 if (fs.existsSync(fullEbooksPath)) {
-  const rawEbooks = JSON.parse(fs.readFileSync(fullEbooksPath, 'utf8'));
+  const rawEbooksStr = fs.readFileSync(fullEbooksPath, 'utf8');
+  fs.writeFileSync(path.join(publicDataDir, 'ebooks.json.gz'), zlib.gzipSync(rawEbooksStr, { level: 9 }));
+  const rawEbooks = JSON.parse(rawEbooksStr);
   const cards = rawEbooks.map((b) => ({
     slug: b.slug,
     title: b.title,

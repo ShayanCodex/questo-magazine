@@ -1,17 +1,24 @@
 import type { ArticleData } from './types';
 import { defaultLanguage } from './site';
-import availableLangsData from '../data/available-languages.json';
-import slugShardMapData from '../data/slug-shard-map.json';
 
-const AVAILABLE_LANGS: Record<string, string[]> = availableLangsData as Record<string, string[]>;
-const SLUG_SHARD_MAP: Record<string, number> = slugShardMapData as Record<string, number>;
-const SHARD_COUNT = 5;
+const SHARD_COUNT = 40;
 
 // Dynamic chunk caches to prevent multi-megabyte bundle bloat on initial page load
 const SHARD_CACHE: Record<string, ArticleData[]> = {};
 const CARDS_CACHE: Record<string, ArticleData[]> = {};
+const TRANS_CACHE: Record<string, Record<string, ArticleData>> = {};
+const CARDS_TRANS_CACHE: Record<string, Record<string, ArticleData>> = {};
+let SLUG_SHARD_MAP_CACHE: Record<string, number> | null = null;
+let AVAILABLE_LANGS_CACHE: Record<string, string[]> | null = null;
 
-async function loadJsonAsset<T>(filename: string): Promise<T> {
+async function getSlugShardMap(): Promise<Record<string, number>> {
+  if (!SLUG_SHARD_MAP_CACHE) {
+    SLUG_SHARD_MAP_CACHE = await loadJsonAsset<Record<string, number>>('slug-shard-map.json');
+  }
+  return SLUG_SHARD_MAP_CACHE;
+}
+
+export async function loadJsonAsset<T>(filename: string): Promise<T> {
   if (import.meta.env.SSR) {
     const fs = await import(/* @vite-ignore */ 'node:fs');
     const path = await import(/* @vite-ignore */ 'node:path');
@@ -41,9 +48,25 @@ async function fetchShard(langCode: string, shardIdx: number): Promise<ArticleDa
     return SHARD_CACHE[cacheKey];
   }
 
-  const shard = await loadJsonAsset<ArticleData[]>(`master-articles.${langCode}.${shardIdx}.json`);
-  SHARD_CACHE[cacheKey] = shard;
-  return shard;
+  const baseShard = await loadJsonAsset<ArticleData[]>(`master-articles.${defaultLanguage}.${shardIdx}.json`);
+  if (langCode === defaultLanguage) {
+    SHARD_CACHE[cacheKey] = baseShard;
+    return baseShard;
+  }
+
+  if (!TRANS_CACHE[langCode]) {
+    try {
+      TRANS_CACHE[langCode] = await loadJsonAsset<Record<string, ArticleData>>(`translations.${langCode}.json`);
+    } catch {
+      TRANS_CACHE[langCode] = {};
+    }
+  }
+  const transMap = TRANS_CACHE[langCode];
+  const merged = baseShard.map((art) =>
+    transMap[art.slug] ? { ...transMap[art.slug], isFallback: false } : { ...art, isFallback: true }
+  );
+  SHARD_CACHE[cacheKey] = merged;
+  return merged;
 }
 
 /**
@@ -54,9 +77,25 @@ export async function loadArticleCards(langCode: string): Promise<ArticleData[]>
     return CARDS_CACHE[langCode];
   }
 
-  const cards = await loadJsonAsset<ArticleData[]>(`cards-index.${langCode}.json`);
-  CARDS_CACHE[langCode] = cards;
-  return cards;
+  const baseCards = await loadJsonAsset<ArticleData[]>(`cards-index.${defaultLanguage}.json`);
+  if (langCode === defaultLanguage) {
+    CARDS_CACHE[langCode] = baseCards;
+    return baseCards;
+  }
+
+  if (!CARDS_TRANS_CACHE[langCode]) {
+    try {
+      CARDS_TRANS_CACHE[langCode] = await loadJsonAsset<Record<string, ArticleData>>(`cards-translations.${langCode}.json`);
+    } catch {
+      CARDS_TRANS_CACHE[langCode] = {};
+    }
+  }
+  const transMap = CARDS_TRANS_CACHE[langCode];
+  const merged = baseCards.map((card) =>
+    transMap[card.slug] ? { ...transMap[card.slug], isFallback: false } : { ...card, isFallback: true }
+  );
+  CARDS_CACHE[langCode] = merged;
+  return merged;
 }
 
 export function slugifyHeading(text?: string, index = 0): string {
@@ -112,15 +151,19 @@ export function calculateReadingTime(
   return `${minutes} ${minReadLabel}`;
 }
 
-export function getAllArticleSlugs(): string[] {
-  return Object.keys(AVAILABLE_LANGS).sort();
+export async function getAllArticleSlugs(): Promise<string[]> {
+  if (!AVAILABLE_LANGS_CACHE) {
+    AVAILABLE_LANGS_CACHE = await loadJsonAsset<Record<string, string[]>>('available-languages.json');
+  }
+  return Object.keys(AVAILABLE_LANGS_CACHE).sort();
 }
 
 export async function loadArticle(
   slug: string,
   langCode: string
 ): Promise<ArticleData | null> {
-  const shardIdx = SLUG_SHARD_MAP[slug];
+  const shardMap = await getSlugShardMap();
+  const shardIdx = shardMap[slug];
   if (shardIdx !== undefined) {
     const shard = await fetchShard(langCode, shardIdx);
     const article = shard.find((a) => a.slug === slug);
@@ -164,5 +207,5 @@ export async function loadAllTags(): Promise<string[]> {
 }
 
 export function getAvailableRealLanguages(slug: string): string[] {
-  return AVAILABLE_LANGS[slug] || [defaultLanguage];
+  return AVAILABLE_LANGS_CACHE?.[slug] || [defaultLanguage];
 }

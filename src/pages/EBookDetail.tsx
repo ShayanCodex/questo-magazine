@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import {
   BookOpenIcon,
@@ -20,11 +20,24 @@ import { OriginalPdfReader } from '../components/OriginalPdfReader';
 import { AdSlot } from '../components/ads/AdSlot';
 import { getSafePdfUrl, isLocalCorePdf } from '../lib/ebook-reader';
 import { cn } from '../lib/utils';
-import ebooksMasterData from '../data/ebooks.json';
-
-const EBOOKS_LIST = ebooksMasterData as EBook[];
+import { loadJsonAsset } from '../lib/content';
 
 export function EBookDetail() {
+  const [ebooksList, setEbooksList] = useState<EBook[]>([]);
+  const [ebooksLoaded, setEbooksLoaded] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    loadJsonAsset<EBook[]>('ebooks.json').then((list) => {
+      if (active) {
+        setEbooksList(list);
+        setEbooksLoaded(true);
+      }
+    }).catch(() => {
+      if (active) setEbooksLoaded(true);
+    });
+    return () => { active = false; };
+  }, []);
   const { slug } = useParams<{ slug: string }>();
   const { pathname } = useLocation();
   const { t, localePath } = useLanguage();
@@ -34,12 +47,12 @@ export function EBookDetail() {
   const ebook = useMemo(() => {
     if (!slug) return undefined;
     return (
-      EBOOKS_LIST.find((b) => b.slug === slug) ||
-      EBOOKS_LIST.find((b) => b.slug === `${slug}-plato`) ||
-      EBOOKS_LIST.find((b) => b.slug.startsWith(`${slug}-`)) ||
-      EBOOKS_LIST.find((b) => b.identifier === slug)
+      ebooksList.find((b) => b.slug === slug) ||
+      ebooksList.find((b) => b.slug === `${slug}-plato`) ||
+      ebooksList.find((b) => b.slug.startsWith(`${slug}-`)) ||
+      ebooksList.find((b) => b.identifier === slug)
     );
-  }, [slug]);
+  }, [slug, ebooksList]);
 
   const relatedEbooks = useMemo(() => {
     if (!ebook) return [];
@@ -50,10 +63,10 @@ export function EBookDetail() {
 
     const seenTitles = new Set<string>([currentBaseTitle]);
     const seenAuthors = new Set<string>([currentAuthorKey]);
-    const results: typeof EBOOKS_LIST = [];
+    const results: EBook[] = [];
 
     // Filter candidate books in the same category
-    const candidates = EBOOKS_LIST.filter((b) => {
+    const candidates = ebooksList.filter((b) => {
       if (b.slug === ebook.slug) return false;
       if (b.category !== ebook.category) return false;
       const bBaseSlug = b.slug.replace(/-edition-\d+$/, '').replace(/-london-.*$/, '').trim();
@@ -88,7 +101,15 @@ export function EBookDetail() {
     }
 
     return results;
-  }, [ebook]);
+  }, [ebook, ebooksList]);
+
+  if (!ebooksLoaded && !ebook) {
+    return (
+      <div className="max-w-4xl mx-auto py-20 text-center text-sm font-sans text-editorial-muted">
+        Loading monograph...
+      </div>
+    );
+  }
 
   if (!ebook) {
     return <NotFound />;

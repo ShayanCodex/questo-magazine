@@ -60,7 +60,7 @@ function createLanguageSubtree(lang: typeof defaultLangObj): RouteRecord {
         loader: async ({ request }) => {
           const url = new URL(request.url);
           const cards = await loadArticleCards(lang.code);
-          return { articles: cards.slice(0, 240), pathname: url.pathname };
+          return { articles: cards.slice(0, 48), pathname: url.pathname };
         },
       },
       {
