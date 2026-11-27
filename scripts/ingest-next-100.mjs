@@ -574,6 +574,7 @@ async function run() {
       if (existingImages.has(orig.source)) continue;
       const cleanTitle = cleanSpartanText(page.title);
       if (/^(list|timeline|outline|glossary|index) of\b/i.test(cleanTitle)) continue;
+      if (/\b(erotica|pornography|hentai|fetish|nsfw|sexual violence)\b/i.test(cleanTitle)) continue;
       const slug = slugify(cleanTitle);
       if (!slug || slug.length < 4 || existingSlugs.has(slug)) continue;
       candidates.push({ page, orig, cleanTitle, slug });
